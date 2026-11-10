@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, math591]
 
 *Lecture 26: the exponential map of Lie groups. Last time: every left-invariant field on $G$ is complete (Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]]). The exponential map comes from the integral curve of a left-invariant field $\mathbf{X}$ starting at the identity, which is special.*
 
-*Notation.* The Lie algebra has two incarnations: the left-invariant fields with their bracket, and the tangent space at the identity (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]; Remark [[§61 Lie Group Morphisms and Linear Groups#^rem-61-1|remark]]). Capital letters $A, B \in T_eG = \mathfrak{g}$ are vectors at the identity, and
+*Notation.* The Lie algebra has two incarnations: the left-invariant fields with their bracket, and the tangent space at the identity (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]; the remark [[§61 Lie Group Morphisms and Linear Groups#^rem-61-1|From Now On]] ($\mathfrak{g}$ is $T_eG$) in [[§61 Lie Group Morphisms and Linear Groups|§61]]). Capital letters $A, B \in T_eG = \mathfrak{g}$ are vectors at the identity, and
 
 $$
 \mathbf{X}^A = \text{the corresponding left-invariant field, with } \mathbf{X}^A_e = A, \qquad \varphi^A = \text{the flow of } \mathbf{X}^A
@@ -54,7 +54,7 @@ So $\varphi^A_t(e)$ is the integral curve of $\mathbf{X}^A$ starting at $e$, eva
 
 This is the case $g = \varphi^e(s)$ of $\varphi^g(t) = g\,\varphi^e(t)$ in Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]], combined with the group law $\varphi^{\varphi^e(s)}(t) = \varphi^e(t + s)$. Since $s + t = t + s$, the elements $\varphi_s(e)$ and $\varphi_t(e)$ commute: a one-parameter subgroup is abelian, even in a non-abelian $G$.
 
-Conversely, every group morphism $\mathbb{R} \to G$ arises this way; this was not pursued in lecture. *(Filled in, for smooth morphisms.)* If $\gamma : \mathbb{R} \to G$ is a smooth group morphism and $A = \dot\gamma(0)$, then differentiating $\gamma(t + s) = \gamma(t)\gamma(s) = L_{\gamma(t)}(\gamma(s))$ in $s$ at $s = 0$ gives $\dot\gamma(t) = d(L_{\gamma(t)})_e(A) = \mathbf{X}^A_{\gamma(t)}$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]). So $\gamma$ is the integral curve of $\mathbf{X}^A$ starting at $\gamma(0) = e$, and $\gamma(t) = \varphi^A_t(e)$. Lee, Theorem 20.1, also covers continuous morphisms.
+Conversely, every smooth group morphism $\mathbb{R} \to G$ arises this way; this was not pursued in lecture. *(Filled in, for smooth morphisms.)* If $\gamma : \mathbb{R} \to G$ is a smooth group morphism and $A = \dot\gamma(0)$, then differentiating $\gamma(t + s) = \gamma(t)\gamma(s) = L_{\gamma(t)}(\gamma(s))$ in $s$ at $s = 0$ gives $\dot\gamma(t) = d(L_{\gamma(t)})_e(A) = \mathbf{X}^A_{\gamma(t)}$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]). So $\gamma$ is the integral curve of $\mathbf{X}^A$ starting at $\gamma(0) = e$, and $\gamma(t) = \varphi^A_t(e)$. Lee, Theorem 20.1, also covers continuous morphisms.
 
 The one-parameter subgroup is an orbit: the left-invariant field $\mathbf{X}^A$ is complete, so it generates an $\mathbb{R}$-action (Proposition [[§70 Complete Vector Fields#^prop-70-7|§70.7]]), and $t \mapsto \varphi^A_t(e)$ is the orbit of the identity.
 
@@ -169,7 +169,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 *Uses:* [[§71 The Exponential Map#^thm-71-9|§71.9]]
 
 > [!theorem] Lemma §71.5: Integral Curves of a Left-Invariant Field on a Lie Subgroup
-> Let $H$ be a Lie group and $G \subseteq H$ a subgroup that is a Lie group with the inclusion $\iota : G \hookrightarrow H$ smooth and $d\iota_e$ injective — a Lie subgroup, as in Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]] — so that $\mathfrak{g} = T_eG$ is identified with $d\iota_e(\mathfrak{g}) \subseteq \mathfrak{h} = T_eH$. For $A \in \mathfrak{g}$ let $\mathbf{A}^G \in \mathfrak{X}(G)$ and $\mathbf{A}^H \in \mathfrak{X}(H)$ be the left-invariant fields with $\mathbf{A}^G_e = A$ and $\mathbf{A}^H_e = d\iota_e(A)$. Then $\mathbf{A}^G$ is $\iota$-related to $\mathbf{A}^H$, and for every integral curve $\gamma$ of $\mathbf{A}^G$, $\iota \circ \gamma$ is an integral curve of $\mathbf{A}^H$.
+> Let $H$ be a Lie group and $G \subseteq H$ a subgroup that is a Lie group with the inclusion $\iota : G \hookrightarrow H$ smooth and $d\iota_e$ injective — a Lie subgroup, as in Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]] — so that $\mathfrak{g} = T_eG$ is identified with $d\iota_e(\mathfrak{g}) \subseteq \mathfrak{h} = T_eH$. For $A \in \mathfrak{g}$ let $\mathbf{A}^G \in \mathfrak{X}(G)$ and $\mathbf{A}^H \in \mathfrak{X}(H)$ be the left-invariant fields with $\mathbf{A}^G_e = A$ and $\mathbf{A}^H_e = d\iota_e(A)$ (the fields written $\mathbf{X}^A$ in the notation of this section, one on each group). Then $\mathbf{A}^G$ is $\iota$-related to $\mathbf{A}^H$, and for every integral curve $\gamma$ of $\mathbf{A}^G$, $\iota \circ \gamma$ is an integral curve of $\mathbf{A}^H$.
 
 ^lem-71-5
 
@@ -239,7 +239,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 *Uses:* [[§71 The Exponential Map#^cor-71-6|§71.6]], [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]], [[§70 Complete Vector Fields#^thm-70-11|§70.11]], [[§71 The Exponential Map#^prop-71-2|§71.2]], [[§70 Complete Vector Fields#^prop-70-10|§70.10]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
 
 > [!theorem] Proposition §71.8: Integral Curves of Left-Invariant Fields on a Linear Group
-> Let $G \subseteq \mathrm{GL}(n, \mathbb{R})$ be a linear group that is a Lie subgroup (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]]), with $\mathfrak{g}$ identified with a subspace of $\operatorname{Mat}(n, \mathbb{R})$, and $A \in \mathfrak{g}$. For every $g \in G$ the integral curve of the left-invariant field $\mathbf{A}^G$ starting at $g$ is
+> Let $G \subseteq \mathrm{GL}(n, \mathbb{R})$ be a linear group that is a Lie subgroup (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]]), with $\mathfrak{g}$ identified with a subspace of $\operatorname{Mat}(n, \mathbb{R})$, and $A \in \mathfrak{g}$. For every $g \in G$ the integral curve of the left-invariant field $\mathbf{A}^G$ (with $\mathbf{A}^G_e = A$, as in Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]]) starting at $g$ is
 >
 > $$
 > t \longmapsto g\, e^{tA} = g \Big(\sum_{\ell=0}^\infty \frac{t^\ell}{\ell!} A^\ell\Big), \qquad t \in \mathbb{R} .
@@ -279,7 +279,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 *Uses:* [[§71 The Exponential Map#^lem-71-4|§71.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§70 Complete Vector Fields#^thm-70-11|§70.11]], [[§71 The Exponential Map#^lem-71-5|§71.5]], [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]
 
 > [!theorem] Theorem §71.9: The Exponential Map of a Linear Group
-> Let $G \subseteq \mathrm{GL}(n, \mathbb{R})$ be a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]) and $A \in \mathfrak{g}$, a matrix. Then
+> Let $G \subseteq \mathrm{GL}(n, \mathbb{R})$ be a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]) that is a Lie subgroup (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]]), and $A \in \mathfrak{g}$, a matrix. Then
 >
 > $$
 > \exp(A) = \sum_{\ell=0}^\infty \frac{1}{\ell!} A^\ell ,
@@ -324,7 +324,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 > \exp(A)\exp(B) = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix} \neq \begin{pmatrix} \cosh 1 & \sinh 1 \\ \sinh 1 & \cosh 1 \end{pmatrix} = \exp(A + B) ,
 > $$
 >
-> a concrete failure of the identity of the warning in [[§71 The Exponential Map|§71]]. Here $[A, B] = AB - BA = \begin{psmallmatrix} 1 & 0 \\ 0 & -1 \end{psmallmatrix} \neq 0$.
+> a concrete failure of the identity of the [[§71 The Exponential Map#^rem-71-1|warning]] above. Here $[A, B] = AB - BA = \begin{psmallmatrix} 1 & 0 \\ 0 & -1 \end{psmallmatrix} \neq 0$.
 >
 > *The exponential is the series.* For $G = \mathrm{GL}(2, \mathbb{R})$, $\mathfrak{g} = \operatorname{Mat}(2, \mathbb{R})$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]), and Theorem [[§71 The Exponential Map#^thm-71-9|§71.9]] gives $\exp(C) = \sum_{\ell \ge 0} C^\ell/\ell!$.
 >
@@ -349,7 +349,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 > [!remark]- Connections
 > - Ordinary differential equations: $x(t) = e^{tA}x_0$ solves $x' = Ax$ — [[Matrix Exponential Solution]]. Here the same series is the integral curve of the left-invariant field $\mathbf{X}^A_g = gA$ on $\mathrm{GL}(n, \mathbb{R})$, i.e. the solution of the matrix equation $\gamma' = \gamma A$, $\gamma(0) = I$.
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^def-71-1|Def. §71.1]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^thm-71-9|§71.9]]
 
 For many groups, but not for all groups, $\exp$ is surjective: for instance for all unitary groups, and more generally for compact connected groups, a fact that needs proof. But globally it is not one-to-one for a compact group: the exponential wraps the tangent space around the group, as $t \mapsto e^{it}$ wraps $\mathfrak{u}(1) = i\mathbb{R}$ around $\mathrm{U}(1)$. *(Not from lecture.)* Surjectivity can fail: $\exp$ takes values in the identity component, so it misses $\mathrm{O}(n) \setminus \mathrm{SO}(n)$; and even for the connected group $\mathrm{SL}(2, \mathbb{R})$ the matrix $\begin{psmallmatrix} -1 & 1 \\ 0 & -1 \end{psmallmatrix}$ is not an exponential.
 

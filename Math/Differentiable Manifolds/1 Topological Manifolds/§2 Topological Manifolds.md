@@ -44,7 +44,7 @@ tags: [differentiable-manifolds, math591]
 > - Concrete example: [[§110★ Riemann Surfaces#^ex-110-1|342 Ex. §110.1]] (the Riemann surface of log z, a 2-manifold built from infinitely many cut planes glued along their slits, on which log z becomes single-valued).
 
 > [!remark] Remark: Why These Three Conditions?
-> Locally Euclidean is the substantive geometric condition: near every point the space looks like $\mathbb{R}^n$, so calculus can (eventually) be imported chart by chart. The other two are global point-set hygiene. Hausdorff rules out non-uniqueness of limits (and, later, guarantees that compact subsets are closed, that one-point sets are closed, etc.); second countability rules out spaces that are “uncountably large” and is the hypothesis behind partitions of unity. Neither of the two hygiene conditions is implied by local Euclideanness—this is the content of the [[§2 Topological Manifolds#^prop-2-4|independence remark]] and the examples preceding it.
+> Locally Euclidean is the substantive geometric condition: near every point the space looks like $\mathbb{R}^n$, so calculus can (eventually) be imported chart by chart. The other two are global point-set hygiene. Hausdorff rules out non-uniqueness of limits (and, later, guarantees that compact subsets are closed, that one-point sets are closed, etc.); second countability rules out spaces that are “uncountably large” and is the hypothesis behind partitions of unity. Neither of the two hygiene conditions is implied by local Euclideanness—this is the content of Proposition [[§2 Topological Manifolds#^prop-2-4|§2.4]] and the examples preceding it.
 
 ^rem-2-2
 
@@ -78,19 +78,19 @@ The fact that the dimension of a manifold is well-defined rests on the following
 >
 > 1. *Shrink to a ball.* $B$ is open and $b \in B$, so there is $r > 0$ with $D = B(b, r) \subseteq B$. Let $J = h^{-1}(D)$. It is open in $A$, as $h$ is continuous, hence open in $\mathbb{R}$, as $A$ is; and $a \in J$. By Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](3), $h$ restricts to a homeomorphism $J \to D$, and, since $h$ is a bijection with $h(a) = b$, to a homeomorphism $J \setminus \{a\} \to D \setminus \{b\}$.
 > 2. *$J \setminus \{a\}$ is not connected.* As $J$ is open in $\mathbb{R}$ and $a \in J$, there is $\delta > 0$ with $(a - \delta, a + \delta) \subseteq J$. The sets $L = J \cap (-\infty, a)$ and $R = J \cap (a, \infty)$ are open in $J \setminus \{a\}$ (intersections with open subsets of $\mathbb{R}$), disjoint, cover $J \setminus \{a\}$, and are nonempty: $a - \delta/2 \in L$ and $a + \delta/2 \in R$. So $J \setminus \{a\}$ is disconnected.
-> 3. *$D \setminus \{b\}$ is connected.* We show it is path connected, which implies connected (590 §14). Let $x, y \in D \setminus \{b\}$ with $x \neq y$. The ball $D$ is convex, so every segment $[x', y'] = \{(1-t)x' + ty' : t \in [0, 1]\}$ with endpoints in $D$ lies in $D$. If $b \notin [x, y]$, then $t \mapsto (1-t)x + ty$ is a path from $x$ to $y$ in $D \setminus \{b\}$. Otherwise $b$ lies on the line $\ell$ through $x$ and $y$. Since $m \ge 2$, there is a unit vector $u$ orthogonal to $y - x$; put $z = b + \tfrac{r}{2}u$. Then $z \in D$, as $|z - b| = r/2 < r$, and $z \notin \ell$, as the points of $\ell$ are $b + s(y - x)$, $s \in \mathbb{R}$, and $\tfrac r2 u$ is not a multiple of $y - x$. The segment $[x, z]$ avoids $b$: otherwise, since $b \neq x$, the line through $x$ and $b$, which is $\ell$, would contain $z$. In the same way $[z, y]$ avoids $b$. So
+> 3. *$D \setminus \{b\}$ is connected.* We show it is path connected, which implies connected ([[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]]). Let $x, y \in D \setminus \{b\}$ with $x \neq y$. The ball $D$ is convex, so every segment $[x', y'] = \{(1-t)x' + ty' : t \in [0, 1]\}$ with endpoints in $D$ lies in $D$. If $b \notin [x, y]$, then $t \mapsto (1-t)x + ty$ is a path from $x$ to $y$ in $D \setminus \{b\}$. Otherwise $b$ lies on the line $\ell$ through $x$ and $y$. Since $m \ge 2$, there is a unit vector $u$ orthogonal to $y - x$; put $z = b + \tfrac{r}{2}u$. Then $z \in D$, as $|z - b| = r/2 < r$, and $z \notin \ell$, as the points of $\ell$ are $b + s(y - x)$, $s \in \mathbb{R}$, and $\tfrac r2 u$ is not a multiple of $y - x$. The segment $[x, z]$ avoids $b$: otherwise, since $b \neq x$, the line through $x$ and $b$, which is $\ell$, would contain $z$. In the same way $[z, y]$ avoids $b$. So
 >
 > $$
 > \gamma(t) = \begin{cases} x + 2t\,(z - x), & t \in [0, \tfrac12], \\ z + (2t - 1)(y - z), & t \in [\tfrac12, 1], \end{cases}
 > $$
 >
-> runs in $D \setminus \{b\}$ from $x$ to $y$, and it is continuous by the pasting lemma (590 §9), the two formulas agreeing at $t = \tfrac12$.
+> runs in $D \setminus \{b\}$ from $x$ to $y$, and it is continuous by the [[Pasting Lemma|pasting lemma]] ([[§10 Continuous Functions#^thm-10-5|590 §10.5]]), the two formulas agreeing at $t = \tfrac12$.
 >
 > A homeomorphism carries connected spaces to connected spaces (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]](1), applied to $h^{-1}$). By 1 and 3, $J \setminus \{a\} = h^{-1}(D \setminus \{b\})$ would be connected, contradicting 2.
 
 ^pf-2-1-2
 
-*Uses:* [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]]
+*Uses:* [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]], [[Pasting Lemma|590 §10.5 (Pasting Lemma)]]
 
 **Not proved in this course.** The theorem follows from Brouwer's *invariance of domain*; Lee proves it in Chapter 17 (Theorem 17.26) using de Rham cohomology. Note that the statement is purely about point-set topology—no differentiability is assumed—which is what makes it hard: the obvious linear-algebra argument ($\mathbb{R}^n \cong \mathbb{R}^m$ as vector spaces implies $n=m$) is unavailable, because homeomorphisms need not be linear or even differentiable. Compare: $\mathbb{R}$ and $\mathbb{R}^2$ are not homeomorphic by a connectedness argument (remove a point), but already $\mathbb{R}^2$ vs. $\mathbb{R}^3$ needs more. The connectedness argument is the proof of the cases $n \le 1$ or $m \le 1$ above.
 
@@ -317,7 +317,7 @@ The line with two origins through the course: defined by its neighbourhood bases
 
 ^ex-2-5
 
-The failure of second countability in the last example is detected by counting components. This is the mechanism behind the slogan that a space with a countable basis has countably many connected components; the precise statement needs local connectedness, which locally Euclidean spaces have.
+The failure of second countability in Example [[§2 Topological Manifolds#^ex-2-3|§2.3]] is detected by counting components. This is the mechanism behind the slogan that a space with a countable basis has countably many connected components; the precise statement needs local connectedness, which locally Euclidean spaces have.
 
 > [!theorem] Proposition §2.6: Countably Many Components
 > If $X$ is locally Euclidean and second countable, then $X$ has at most countably many connected components.
@@ -339,7 +339,7 @@ The failure of second countability in the last example is detected by counting c
 
 The sphere $S^2$ with its hemisphere charts, and the spheres $S^n$ as topological manifolds, are collected in [[§8 Spheres|§8]].
 
-Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone point, a closed disk—the last of these is a manifold *with boundary*). Such examples are treated in the homework.
+Many spaces are *not* topological manifolds (e.g. two lines crossing, a double cone, a closed disk—the last of these is a manifold *with boundary*). Such examples are treated in the homework.
 
 ## Connectedness and Path Connectedness
 
@@ -399,7 +399,7 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 ^cor-2-9
 
 > [!proof]+ Proof
-> A component $C$ is open: for $p \in C$ the connected set $U_p$ (homeomorphic to $\mathbb{R}^n$, connected by [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7]](4)) contains $p$, hence lies in $C$. Being open in $M$, $C$ is a manifold of the same dimension by the open-submanifold remark of [[§3 Subspaces and Products#^prop-3-6|§3.6]], and it is connected, hence path connected by [[§2 Topological Manifolds#^thm-2-8|Theorem §2.8]]; so $C$ is contained in the path component of any of its points. Conversely a path-connected set is connected, so the path component of $p$ is contained in $C$.
+> A component $C$ is open: for $p \in C$ the connected set $U_p$ (homeomorphic to $\mathbb{R}^n$, connected by [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7]](4)) contains $p$, hence lies in $C$. Being open in $M$, $C$ is a manifold of the same dimension by Proposition [[§3 Subspaces and Products#^prop-3-6|§3.6]] (proved in the next section, independently of this corollary), and it is connected, hence path connected by [[§2 Topological Manifolds#^thm-2-8|Theorem §2.8]]; so $C$ is contained in the path component of any of its points. Conversely a path-connected set is connected, so the path component of $p$ is contained in $C$.
 
 ^pf-2-9
 
@@ -490,7 +490,7 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 > [!remark] Remark: Preview: What Makes a Manifold *Differentiable*
 > For a topological manifold, transition functions are homeomorphisms between open subsets of $\mathbb{R}^n$—and that is all one can say. To speak of *differentiable* manifolds, we will **require** that all transition functions be differentiable (in fact $C^\infty$).
 >
-> Why is this the right move? Differentiability is not a topological notion: it makes no sense to ask whether a map $X \to \mathbb{R}$ on an abstract topological space is differentiable, because $X$ has no linear structure. What *does* make sense is to pull $f$ back to Euclidean space via a chart, $f \circ \varphi^{-1} : A \to \mathbb{R}$, and ask whether *that* is differentiable. For this to be independent of the chart chosen, one needs $f \circ \psi^{-1} = (f \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ to be differentiable whenever $f \circ \varphi^{-1}$ is—which is exactly the requirement that transition functions be differentiable. (He expected to begin this on Wednesday; in the event, Lecture 2 stayed with topology—see [[§3 Subspaces and Products|§3]].)
+> Why is this the right move? Differentiability is not a topological notion: it makes no sense to ask whether a map $X \to \mathbb{R}$ on an abstract topological space is differentiable, because $X$ has no linear structure. What *does* make sense is to pull $f$ back to Euclidean space via a chart, $f \circ \varphi^{-1} : A \to \mathbb{R}$, and ask whether *that* is differentiable. For this to be independent of the chart chosen, one needs $f \circ \psi^{-1} = (f \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ to be differentiable whenever $f \circ \varphi^{-1}$ is—which is exactly the requirement that transition functions be differentiable.
 
 ^rem-2-9
 

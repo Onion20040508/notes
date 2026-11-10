@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: abstract, dual — The cotangent space recovered from germs alone, $T_p^{\ast}M \cong I_p/I_p^2$, with no dualizing; covectors then pull back along smooth maps, as germs do.*
 
-*Assignment 3, Problem 3. The cotangent space was defined in Lecture 10 as the dual $(T_pM)^{\ast}$. This subsection shows that it also has a description with no dualizing at all, in terms of germs alone: the natural definition $I_p/I_p^2$. The proof splits into four results: a characterization of $I_p^2$, a basis of the quotient, a non-degenerate pairing, and the isomorphism, which then comes from the [[§21 Linear Algebra Toolkit#^thm-21-5|Linear Algebra Toolkit]] for free.*
+*Assignment 3, Problem 3. The cotangent space was defined in Lecture 10 as the dual $(T_pM)^{\ast}$. This section shows that it also has a description with no dualizing at all, in terms of germs alone: the natural definition $I_p/I_p^2$. The proof splits into four results: a characterization of $I_p^2$, a basis of the quotient, a non-degenerate pairing, and the isomorphism, which then comes from the [[§21 Linear Algebra Toolkit#^thm-21-5|Linear Algebra Toolkit]] for free.*
 
 > [!definition] Definition §34.1: The Space $I_p/I_p^2$
 > $I_p/I_p^2$ is the quotient vector space (Definition [[§21 Linear Algebra Toolkit#^def-21-6|§21.6]]) of $I_p$ by its subspace $I_p^2$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-1|§28.1]]). The class of $[f] \in I_p$ is written ${[}[f]{]} = [f] + I_p^2$, and ${[}[f]{]} = {[}[f']{]}$ iff $[f'] - [f] \in I_p^2$.
@@ -33,7 +33,7 @@ tags: [differentiable-manifolds, math591]
 > *(2)$\iff$(3).* Both conditions contain $f(p) = 0$; compare the rest. By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], in any chart at $p$,
 >
 > $$
-> df_p = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p ,
+> df_p = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p ,
 > $$
 >
 > and the $dx^i|_p$ are linearly independent, so this combination is $0$ exactly when every coefficient is $0$: $df_p = 0 \iff \partial f/\partial x^i(p) = 0$ for all $i$. Condition (2) mentions no chart, so (3) in one chart gives (2), which gives (3) in every chart — which is why “one” chart implies “every”.
@@ -49,13 +49,13 @@ tags: [differentiable-manifolds, math591]
 > *(3)$\Rightarrow$(1).* *(Assignment 3, Problem 3.)* Fix a chart $(U,\varphi)$ at $p$, a representative $f : V \to \mathbb{R}$, and put $a = \varphi(p)$ and $f_\varphi = f \circ \varphi^{-1}$. The hypotheses say $f_\varphi(a) = f(p) = 0$ and $\partial f_\varphi/\partial r^i(a) = \partial f/\partial x^i(p) = 0$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]). On an open ball $B \subseteq \varphi(U \cap V)$ centred at $a$, Hadamard's lemma (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]]) gives smooth $f_i$ on $B$ with $f_\varphi(r) = f_\varphi(a) + \sum_i (r^i - a^i) f_i(r)$; here the constant term $f_\varphi(a)$ is $0$, so
 >
 > $$
-> f_\varphi(r) = \sum_{i=1}^n (r^i - a^i)\, f_i(r) \quad (r \in B), \qquad f_i(a) = \frac{\partial f_\varphi}{\partial r^i}(a) = 0 .
+> f_\varphi(r) = \sum_{i=1}^m (r^i - a^i)\, f_i(r) \quad (r \in B), \qquad f_i(a) = \frac{\partial f_\varphi}{\partial r^i}(a) = 0 .
 > $$
 >
 > On the open neighbourhood $W = \varphi^{-1}(B)$ of $p$, substitute $r = \varphi(q)$; then $r^i = x^i(q)$, $a^i = x^i(p)$ and $f_\varphi(\varphi(q)) = f(q)$, so
 >
 > $$
-> f(q) = \sum_{i=1}^n \big(x^i(q) - x^i(p)\big)\,(f_i \circ \varphi)(q) \qquad (q \in W).
+> f(q) = \sum_{i=1}^m \big(x^i(q) - x^i(p)\big)\,(f_i \circ \varphi)(q) \qquad (q \in W).
 > $$
 >
 > Two functions that agree on a neighbourhood of $p$ have the same germ, so $[f] = \sum_i [x^i - x^i(p)]\,[f_i \circ \varphi]$. In each term both factors lie in $I_p$: $x^i(p) - x^i(p) = 0$, and $(f_i \circ \varphi)(p) = f_i(a) = 0$. So $[f]$ is a finite sum of products of two elements of $I_p$, that is, $[f] \in I_p^2$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-4|§28.4]]).
@@ -73,13 +73,13 @@ tags: [differentiable-manifolds, math591]
 *Classes in $I_p/I_p^2$, for $M = \mathbb{R}$. The blue germs $f_1$ and $f_2$ both vanish at $p$ with the same slope $c$, so $f_1 - f_2$ vanishes to second order and ${[}[f_1]{]} = {[}[f_2]{]} = c\,{[}[x - p]{]}$: the class keeps only the red tangent line and forgets the curvature. The green $g$ has value and slope zero at $p$, so $[g] \in I_p^2$ and ${[}[g]{]} = 0$ (Proposition [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]]).*
 
 > [!theorem] Proposition §34.2: A Basis of $I_p/I_p^2$
-> Let $(U, \varphi)$ be a chart at $p$ with coordinate functions $x^1, \ldots, x^n$. For every $[f] \in I_p$,
+> Let $(U, \varphi)$ be a chart at $p$ with coordinate functions $x^1, \ldots, x^m$. For every $[f] \in I_p$,
 >
 > $$
-> {[}[f]{]} = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p)\, {[}[x^i - x^i(p)]{]},
+> {[}[f]{]} = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, {[}[x^i - x^i(p)]{]},
 > $$
 >
-> and the classes ${[}[x^1 - x^1(p)]{]}, \ldots, {[}[x^n - x^n(p)]{]}$ form a basis of $I_p/I_p^2$. In particular $\dim I_p/I_p^2 = n$.
+> and the classes ${[}[x^1 - x^1(p)]{]}, \ldots, {[}[x^m - x^m(p)]{]}$ form a basis of $I_p/I_p^2$. In particular $\dim I_p/I_p^2 = m$.
 >
 > *Lee: cf. Problem 11-4(a)*
 
@@ -97,20 +97,20 @@ tags: [differentiable-manifolds, math591]
 > *The expansion.* Let $[f] \in I_p$, write $c_i = \partial f/\partial x^i(p)$, and put $g = f - \sum_i c_i\,(x^i - x^i(p))$ near $p$. Then $g(p) = f(p) - \sum_i c_i \cdot 0 = 0$, and for each $j$
 >
 > $$
-> \frac{\partial g}{\partial x^j}(p) = \frac{\partial f}{\partial x^j}(p) - \sum_{i=1}^n c_i\, \delta^i_j = c_j - c_j = 0 .
+> \frac{\partial g}{\partial x^j}(p) = \frac{\partial f}{\partial x^j}(p) - \sum_{i=1}^m c_i\, \delta^i_j = c_j - c_j = 0 .
 > $$
 >
 > By Proposition [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]] ((3)$\Rightarrow$(1)), $[g] \in I_p^2$, that is, ${[}[g]{]} = 0$. The projection $[f] \mapsto {[}[f]{]}$ is linear (Proposition [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]](1)), so from $[f] = [g] + \sum_i c_i\,[x^i - x^i(p)]$,
 >
 > $$
-> {[}[f]{]} = {[}[g]{]} + \sum_{i=1}^n c_i\, {[}[x^i - x^i(p)]{]} = \sum_{i=1}^n \frac{\partial f}{\partial x^i}(p)\, {[}[x^i - x^i(p)]{]} .
+> {[}[f]{]} = {[}[g]{]} + \sum_{i=1}^m c_i\, {[}[x^i - x^i(p)]{]} = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, {[}[x^i - x^i(p)]{]} .
 > $$
 >
 > *Spanning.* Every element of $I_p/I_p^2$ is a class ${[}[f]{]}$ with $[f] \in I_p$, so by the expansion the classes ${[}[x^i - x^i(p)]{]}$ span.
 >
 > *Independence.* Suppose $\sum_i c_i\,{[}[x^i - x^i(p)]{]} = 0$. By linearity of the projection, the germ $[h] = \sum_i c_i\,[x^i - x^i(p)]$ has ${[}[h]{]} = 0$, i.e. $[h] \in I_p^2$. By Proposition [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]] ((1)$\Rightarrow$(3)), $\partial h/\partial x^j(p) = 0$ for every $j$; and by the two facts above, $\partial h/\partial x^j(p) = \sum_i c_i\, \delta^i_j = c_j$. So every $c_j = 0$.
 >
-> So the $n$ classes form a basis, and $\dim I_p/I_p^2 = n$.
+> So the $m$ classes form a basis, and $\dim I_p/I_p^2 = m$.
 
 ^pf-34-2
 
@@ -225,7 +225,7 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 ^rem-34-2
 
 > [!remark] Remark: Review Session: The More Natural Space
-> *Review session, Oct 16, recalling this homework problem.* $I_p$, the germs vanishing at $p$, is an ideal, and $T_p^{\ast}M \cong I_p/I_p^2$ naturally, with nothing about curves and nothing about ambient spaces — a very general and very quick description. This is a sense in which the cotangent space really is the more natural space: it has a one-page definition, and the cotangent bundle carries a symplectic structure with no choices made — even though one is less used to working with the dual object.
+> *Review session, Oct 16, recalling this homework problem.* $I_p$, the germs vanishing at $p$, is an ideal, and $T_p^{\ast}M \cong I_p/I_p^2$ naturally, with nothing about curves and nothing about ambient spaces — a general and short description. This is a sense in which the cotangent space is the more natural space: it has a one-page definition, and the cotangent bundle carries a symplectic structure with no choices made.
 
 ^rem-34-3
 
@@ -249,9 +249,9 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 
 Equal dimension is what makes the isomorphisms of Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]] possible, but the dimension count alone does not produce them: any two spaces of dimension $m$ are isomorphic, by choosing bases. What Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]] adds is that $\Phi$ needs no choice. Between $T_pM$ and $T_p^{\ast}M$ themselves there is no such choice-free isomorphism, which is why the tangent and cotangent bundles are isomorphic, but not naturally ([[§52 The Cotangent Bundle|§52]]).
 
-**Assignment 3, Problem 3.** Part (a) is the well-definedness in Proposition [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]]. Part (b) is its non-degeneracy, and the “therefore” of (b) is Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], which uses *both* halves: right non-degeneracy bounds $\dim I_p/I_p^2 \le n$, left non-degeneracy gives $n \le \dim I_p/I_p^2$. The submitted solution reaches the isomorphism by another route: it shows $\Phi$ injective by right non-degeneracy and surjective by checking that $\Phi({[}[x^i - x^i(p)]{]})$ is the dual basis — which is part (3) of the theorem.
+**Assignment 3, Problem 3.** Part (a) is the well-definedness in Proposition [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]]. Part (b) is its non-degeneracy, and the “therefore” of (b) is Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], which uses *both* halves: right non-degeneracy bounds $\dim I_p/I_p^2 \le m$, left non-degeneracy gives $m \le \dim I_p/I_p^2$. The submitted solution reaches the isomorphism by another route: it shows $\Phi$ injective by right non-degeneracy and surjective by checking that $\Phi({[}[x^i - x^i(p)]{]})$ is the dual basis — which is part (3) of the theorem.
 
-**Comparison with Lee.** In the text of Chapter 11, Lee defines the cotangent space as the dual $(T_pM)^{\ast}$, motivated as the coordinate-independent replacement for the gradient. The description of this subsection is his Problem 11-4. Part (a) is Proposition [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]], down to the phrase “vanishes to second order”, and part (b) is Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]](1)–(2). There are two differences. First, Lee's $I_p$ consists of smooth functions on all of $M$ vanishing at $p$, not germs, so his version needs bump functions to pass between local and global, as everywhere in his treatment (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]]). Second, Lee proves the isomorphism directly, showing that $f \mapsto df_p$ vanishes on $I_p^2$ and descends to the quotient, where Assignment 3 goes through a non-degenerate pairing and the pairing theorem. His remark to the problem adds two points: some treatments define $T_p^{\ast}M$ first, as $I_p/I_p^2$, and then $T_pM$ as its dual — in some ways the more natural order — and covectors, as classes of functions $M \to \mathbb{R}$, are dual to tangent vectors as classes of curves $\mathbb{R} \to M$ (his Problem 3-8; here Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]). The quotient $I_p/I_p^2$ is also the manifold analogue of the Zariski cotangent space of algebraic geometry.
+**Comparison with Lee.** In the text of Chapter 11, Lee defines the cotangent space as the dual $(T_pM)^{\ast}$, motivated as the coordinate-independent replacement for the gradient. The description of this section is his Problem 11-4. Part (a) is Proposition [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]], down to the phrase “vanishes to second order”, and part (b) is Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]](1)–(2). There are two differences. First, Lee's $I_p$ consists of smooth functions on all of $M$ vanishing at $p$, not germs, so his version needs bump functions to pass between local and global, as everywhere in his treatment (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]]). Second, Lee proves the isomorphism directly, showing that $f \mapsto df_p$ vanishes on $I_p^2$ and descends to the quotient, where Assignment 3 goes through a non-degenerate pairing and the pairing theorem. His remark to the problem adds two points: some treatments define $T_p^{\ast}M$ first, as $I_p/I_p^2$, and then $T_pM$ as its dual — in some ways the more natural order — and covectors, as classes of functions $M \to \mathbb{R}$, are dual to tangent vectors as classes of curves $\mathbb{R} \to M$ (his Problem 3-8; here Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-6|§31.6]]). The quotient $I_p/I_p^2$ is also the manifold analogue of the Zariski cotangent space of algebraic geometry.
 
 ## Pulling Back Covectors
 
@@ -320,7 +320,7 @@ its $j$-th column holding the components of $F_p^{\ast}\,dy^j|_{F(p)}$.
 ^rem-34-5
 
 > [!theorem] Corollary §34.7: The Chain Rule for Gradients
-> Let $F$ be smooth on an open subset $W$ of $\mathbb{R}^m$ with values in $\mathbb{R}^n$, $J_F(p)$ its Jacobian at $p \in W$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]), and $f$ smooth near $F(p)$. Then, with the gradients of Definition [[§33 Covectors in Coordinates#^def-33-2|§33.2]] written as columns,
+> Let $F$ be smooth on an open subset $W$ of $\mathbb{R}^m$ with values in $\mathbb{R}^n$, $J_F(p)$ its Jacobian at $p \in W$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]; the matrix written $F'(p)$ in Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), and $f$ smooth near $F(p)$. Then, with the gradients of Definition [[§33 Covectors in Coordinates#^def-33-2|§33.2]] written as columns,
 >
 > $$
 > \nabla(f \circ F)(p) = J_F(p)^{\mathsf T}\, \nabla f\big(F(p)\big) .

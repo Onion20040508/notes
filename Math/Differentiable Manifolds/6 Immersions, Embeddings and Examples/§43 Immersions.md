@@ -124,12 +124,13 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 **Transcription note.** Page 38 of the handwritten notes begins the proof with “start with any coordinates with $\varphi(U) \subset V$”; the condition is $F(U) \subseteq V$. In the lecture the shifted coordinates were first spoken as $G^{i-m}(y^1, \ldots, y^n)$; the arguments are the first $m$ coordinates, $y^1, \ldots, y^m$, as on page 38.
 
 ![[m591-18-1.svg]]
-*The immersion normal form, as on the board: the mirror image of the submersion normal form ([[§36 Submersions#^thm-36-6|Theorem §36.6]]). There $\tilde F$ forgot the last $m - n$ coordinates; here it appends $n - m$ zeros. *(Computed; not from lecture.)* In Jacobians, at every point, the $n \times m$ matrix here and the $n \times m$ matrix of Theorem [[§36 Submersions#^thm-36-6|§36.6]] there (with the letters of each theorem):
+*The immersion normal form, as on the board: the mirror image of the submersion normal form ([[§36 Submersions#^thm-36-6|Theorem §36.6]]). There $\tilde F$ forgot the last $m - n$ coordinates; here it appends $n - m$ zeros.*
+
+*(Computed; not from lecture.)* In Jacobians, at every point, the $n \times m$ matrix here and the $n \times m$ matrix of Theorem [[§36 Submersions#^thm-36-6|§36.6]] there (with the letters of each theorem):
 
 $$
 \tilde F'(r) = \left(\begin{array}{ccc} 1 & \cdots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \cdots & 1 \\ \hline 0 & \cdots & 0 \\ \vdots & & \vdots \\ 0 & \cdots & 0 \end{array}\right) = \begin{pmatrix} I_m \\ 0 \end{pmatrix} \quad \text{(immersion)}, \qquad \tilde F'(r) = \big(I_n \mid 0\big) \quad \text{(submersion)}.
 $$
-*
 
 *Status.* Stated in Lecture 13 and proved at the start of Lecture 14, above. It is the counterpart of [[§36 Submersions#^thm-36-6|Theorem §36.6]]: there $F$ was locally a projection, here it is locally an inclusion.
 
@@ -143,7 +144,7 @@ What the image of an immersion looks like — locally a submanifold, globally no
 *Lecture 13, continuing [[§43 Immersions#Immersions|Immersions]]. What the image of an immersion looks like. These results use submanifolds ([[§37 Regular Submanifolds|§37]]).*
 
 > [!theorem] Corollary §43.2: The Local Image of an Immersion
-> In the charts of [[§43 Immersions#^thm-43-1|Theorem §43.1]], $F|_U$ is injective and $F(U)$ is a regular submanifold of $N$ of codimension $n - m$.
+> In the charts of [[§43 Immersions#^thm-43-1|Theorem §43.1]], $F|_U$ is injective and $F(U)$ is a regular submanifold of $N$ of codimension $n - m$. More precisely, the set $V' = \{\, q \in V : (y^1(q), \ldots, y^m(q)) \in \varphi(U) \,\}$ is open in $N$ and contains $F(U)$, and $F(U) = \{\, q \in V' : y^{m+1}(q) = \cdots = y^n(q) = 0 \,\}$.
 
 ^cor-43-2
 

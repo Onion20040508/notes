@@ -113,9 +113,9 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 > [!example] Example §42.1: Two Complete Norms That Are Not Equivalent
 > *(Not from lecture.)* Completeness of both norms alone does not suffice in Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-4|§42.4]]; the compatibility condition is needed.
 >
-> On an infinite-dimensional Banach space $(X, \|\cdot\|_1)$, choose a Hamel basis normalized to $\|e\|_1 = 1$, pick countably many of its elements $e_1, e_2, \ldots$, and let $\varphi : X \to X$ be the linear map with $\varphi(e_k) = k\, e_k$ that fixes the other basis elements. Put $\|x\|_2 = \|\varphi x\|_1$.
+> On an infinite-dimensional Banach space $(X, \|\cdot\|_1)$, choose a Hamel basis (a linearly independent set whose finite linear combinations give all of $X$; it exists by Zorn's lemma, by the argument of Example [[§24 The Parallelogram Law and Jordan–von Neumann#^ex-24-1|§24.1]]) normalized to $\|e\|_1 = 1$, pick countably many of its elements $e_1, e_2, \ldots$, and let $\varphi : X \to X$ be the linear map with $\varphi(e_k) = k\, e_k$ that fixes the other basis elements. Put $\|x\|_2 = \|\varphi x\|_1$.
 >
-> 1. *$\varphi$ is a linear bijection and is unbounded.* Let $\psi$ be the linear map with $\psi(e_k) = e_k / k$ that fixes the other basis elements (its inverse multiplies $e_k$ by $1/k$). Then $\psi\varphi$ and $\varphi\psi$ fix every basis element, so both are the identity, and $\varphi$ is bijective with inverse $\psi$. It is unbounded, since $\|e_k\|_1 = 1$ and $\|\varphi e_k\|_1 = k$.
+> 1. *$\varphi$ is a linear bijection and is unbounded.* Let $\psi$ be the linear map with $\psi(e_k) = e_k / k$ that fixes the other basis elements. Then $\psi\varphi$ and $\varphi\psi$ fix every basis element, so both are the identity, and $\varphi$ is bijective with inverse $\psi$. It is unbounded, since $\|e_k\|_1 = 1$ and $\|\varphi e_k\|_1 = k$.
 > 2. *$\|\cdot\|_2$ is a complete norm.* It is a norm: $\|x\|_2 \ge 0$, with $\|x\|_2 = 0$ iff $\varphi x = 0$ iff $x = 0$ ($\varphi$ is one-to-one); homogeneity and the triangle inequality follow from the linearity of $\varphi$ and the corresponding properties of $\|\cdot\|_1$. By definition $\varphi$ is an isometry of $(X, \|\cdot\|_2)$ onto $(X, \|\cdot\|_1)$. If $\{x_n\}$ is Cauchy in $\|\cdot\|_2$, then $\{\varphi x_n\}$ is Cauchy in $\|\cdot\|_1$, so $\varphi x_n \to z$ for some $z \in X$; with $x = \psi z$, $\|x_n - x\|_2 = \|\varphi x_n - z\|_1 \to 0$.
 > 3. *The norms are not equivalent.* $\|e_k\|_2 = \|k\, e_k\|_1 = k$ while $\|e_k\|_1 = 1$, so there is no $c$ with $\|x\|_2 \le c\, \|x\|_1$ for all $x$.
 > 4. *The compatibility condition fails.* Otherwise Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-4|§42.4]] would make the two complete norms equivalent, contradicting (3).
@@ -166,13 +166,13 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 >
 > So $x_n \to x_0$ in $\|\cdot\|_2$, and $(X, \|\cdot\|_2)$ is a Banach space. (The limit $A_\alpha x_0$ comes from continuity of $A_\alpha$, not from completeness of $Y$; this is why $Y$ need only be normed.)
 >
-> *Conclusion.* By the equivalent norm theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]), there is $C_0 > 0$ such that for all $x \in X$
+> *Conclusion.* By the equivalent norm theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]), there is $C > 0$ such that for all $x \in X$
 >
 > $$
-> \|x\|_2 = \|x\|_X + \sup_{\alpha \in \Lambda} \|A_\alpha x\|_Y \le C_0\, \|x\|_X .
+> \|x\|_2 = \|x\|_X + \sup_{\alpha \in \Lambda} \|A_\alpha x\|_Y \le C\, \|x\|_X .
 > $$
 >
-> Hence $\|A_\alpha x\|_Y \le (C_0 - 1)\|x\|_X$ for all $\alpha$ and $x$, i.e. $\sup_{\alpha \in \Lambda} \|A_\alpha\| \le C_0 - 1 < \infty$.
+> Hence $\|A_\alpha x\|_Y \le (C - 1)\|x\|_X$ for all $\alpha$ and $x$, i.e. $\sup_{\alpha \in \Lambda} \|A_\alpha\| \le C - 1 < \infty$. The statement holds with $C_0 = C$.
 
 ^pf-42-5
 
@@ -201,7 +201,7 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 > Let $X$ be a Banach space and $Y$ a normed linear space. Let $\{A_n\}$ be a sequence of bounded linear maps $X \to Y$, and $A \in \mathcal{L}(X, Y)$. Then $\lim_{n \to \infty} A_n x = Ax$ for all $x \in X$ if and only if
 >
 > 1. $\sup_{n \in \mathbb{N}} \|A_n\| < \infty$, and
-> 2. $\lim_{n \to \infty} A_n x = Ax$ for all $x \in D$, where $D$ is a [[§11 Normed Linear Spaces#^def-11-8|dense subset]] of $X$.
+> 2. there is a [[§11 Normed Linear Spaces#^def-11-8|dense subset]] $D$ of $X$ with $\lim_{n \to \infty} A_n x = Ax$ for all $x \in D$.
 >
 > *Lax: §15.2, Thm 6 (the direction $\Leftarrow$); §15.3, Thm 7 and Cor 7$'$ (the direction $\Rightarrow$)*
 
@@ -297,6 +297,6 @@ $$
 *Uses:* [[§39 Solving Mx = y#^thm-39-2|§39.2]], [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]
 
 > [!remark] Remark: Consistency $+$ Stability $=$ Convergence
-> In numerical analysis the three conditions have names. $T_n x \to Tx$ for every $x$ is *consistency*: the discrete operator approximates the true one. $\sup_n \|T_n^{-1}\| < \infty$ is *stability*: errors in the data are not amplified uniformly in $n$, which by the uniform boundedness principle is the same as $\sup_n \|T_n^{-1} y\| < \infty$ for each $y$. $T_n^{-1} y \to T^{-1} y$ is *convergence* of the approximate solutions. The theorem says: for a consistent scheme, stability is equivalent to convergence. The identity $T_n^{-1} - T^{-1} = T_n^{-1}(T - T_n)T^{-1}$ is the heart of the proof. (Lax proved the version for initial value problems in 1956, with Richtmyer. In Lax's book it is Theorem 8 of §34.3: an approximation $u^{(n)} = C_h^n x$ of a semigroup $Z(t)$, consistent with its generator, converges to $Z(t)x$ for all $x$ if and only if it is stable, $|C_h^n| \le \text{const}$ for $nh \le 1$. Necessity is again the uniform boundedness principle, and sufficiency rests on a telescoping identity for $C_h^n - Z(nh)$ of the same kind as the identity above. The version in the lecture is the stationary one, for equations $Tx = y$.)
+> In numerical analysis the three conditions have names. $T_n x \to Tx$ for every $x$ is *consistency*: the discrete operator approximates the true one. $\sup_n \|T_n^{-1}\| < \infty$ is *stability*: errors in the data are amplified by at most a factor independent of $n$, which by the uniform boundedness principle is the same as $\sup_n \|T_n^{-1} y\| < \infty$ for each $y$. $T_n^{-1} y \to T^{-1} y$ is *convergence* of the approximate solutions. The theorem says: for a consistent scheme, stability is equivalent to convergence. The identity $T_n^{-1} - T^{-1} = T_n^{-1}(T - T_n)T^{-1}$ is the heart of the proof. (Lax proved the version for initial value problems in 1956, with Richtmyer. In Lax's book it is Theorem 8 of §34.3: an approximation $u^{(n)} = C_h^n x$ of a semigroup $Z(t)$, consistent with its generator, converges to $Z(t)x$ for all $x$ if and only if it is stable, $|C_h^n| \le \text{const}$ for $nh \le 1$. Necessity is again the uniform boundedness principle, and sufficiency rests on a telescoping identity for $C_h^n - Z(nh)$ of the same kind as the identity above. The version in the lecture is the stationary one, for equations $Tx = y$.)
 
 ^rem-42-4

@@ -126,7 +126,7 @@ tags: [functional-analysis, math556]
 ^thm-31-4
 
 > [!proof]+ Proof (outline; not proved in lecture)
-> Not proved in lecture. Lecture 13 proves the sequence version, Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]; the $L^p$ case is similar: those who know measure theory find the candidate $g$ with the Radon–Nikodym theorem and then argue as for sequences. This needs measure theory beyond the course (it will not be tested).
+> Not proved in lecture. Lecture 13 proves the sequence version, Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]; the $L^p$ case is similar: those who know measure theory find the candidate $g$ with the Radon–Nikodym theorem and then argue as for sequences. This needs measure theory beyond the course.
 >
 > *Outline, along that route.* Measure-theoretic facts are used freely. Suppose first that $\Omega$ has finite measure $m(\Omega)$, and let $\ell \in (L^p)'$.
 >
@@ -199,11 +199,11 @@ A first dual norm computed by hand. The space is $C[0,1]$ with the maximum norm 
 > \ell(x_\varepsilon) \ge \int_0^1 \bigl( |f_0(t)| - \varepsilon \bigr)\, dt = A - \varepsilon .
 > $$
 >
-> By the definition of the norm and $\|x_\varepsilon\| \le 1$, $|\ell(x_\varepsilon)| \le \|\ell\|\, \|x_\varepsilon\| \le \|\ell\|$. So $\|\ell\| \ge A - \varepsilon$ for every $\varepsilon > 0$, hence $\|\ell\| \ge A$. With Step 1, $\|\ell\| = A$.
+> By Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]](b) with $Y = \mathbb{F}$ and $\|x_\varepsilon\| \le 1$, $|\ell(x_\varepsilon)| \le \|\ell\|\, \|x_\varepsilon\| \le \|\ell\|$. So $\|\ell\| \ge A - \varepsilon$ for every $\varepsilon > 0$, hence $\|\ell\| \ge A$. With Step 1, $\|\ell\| = A$.
 
 ^pf-31-5
 
-*Uses:* [[§31 Dual Spaces#^def-31-1|Def. §31.1]]
+*Uses:* [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
 
 > [!example] Example §31.2: The Norm of the Integral Functional Need Not be Attained
 > *(Not from lecture.)* Let $f_0(t) = t - \frac12$ in Proposition [[§31 Dual Spaces#^prop-31-5|§31.5]], so $\|\ell\| = \int_0^1 |t - \frac12|\, dt = \frac14$. There is no $x \in C[0,1]$ with $\|x\| \le 1$ and $|\ell(x)| = \|\ell\|$: the supremum defining $\|\ell\|$ is not a maximum.

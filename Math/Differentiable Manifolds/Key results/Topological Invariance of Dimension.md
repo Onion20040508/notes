@@ -14,6 +14,11 @@ tags: [differentiable-manifolds, hub]
 - [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]
 - [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7: Connectedness and Components]]
 
+## Its proof uses (other subjects)
+- [[Pasting Lemma]] (Topology)
+- [[§10 Continuous Functions#^thm-10-5|590 §10.5: Pasting Lemma]]
+- [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4: Path-Connected Implies Connected]]
+
 ## Used in (Differentiable Manifolds)
 - [[§2 Topological Manifolds#^cor-2-2|Corollary §2.2: Dimension is Locally Constant]]
 

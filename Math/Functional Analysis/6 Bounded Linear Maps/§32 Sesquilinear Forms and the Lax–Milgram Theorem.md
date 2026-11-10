@@ -106,7 +106,7 @@ The theorem below is the infinite-dimensional version. The naive route — expan
 ^thm-32-2
 
 > [!proof]+ Proof
-> *(Lecture 11.)* On the board the coercivity constant was renamed $\alpha$ midway, to avoid confusion with $B$; here it stays $\beta$. By conditions (1)–(3) and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|Theorem §32.1]] there is $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$ for all $x, y$. By the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]] every $\ell \in H'$ is $\ell(x) = (x, z_0)$ for a unique $z_0 \in H$. So it suffices to show that $A$ is one-to-one and onto: then every $z_0$ is $Ay_0$ for exactly one $y_0$.
+> *(Lecture 11.) By conditions (1)–(3) and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|Theorem §32.1]] there is $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$ for all $x, y$. By the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]] every $\ell \in H'$ is $\ell(x) = (x, z_0)$ for a unique $z_0 \in H$. So it suffices to show that $A$ is one-to-one and onto: then every $z_0$ is $Ay_0$ for exactly one $y_0$.
 >
 > **Step 1: $A$ is one-to-one, with a lower bound.** By coercivity and Cauchy–Schwarz, for every $x \in H$,
 >

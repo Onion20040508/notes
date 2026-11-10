@@ -12,7 +12,7 @@ tags: [functional-analysis, math556]
 For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, since $\ell(y)$ is complex; the correct hypothesis and conclusion use the modulus, and the homogeneity of $p$ must be strengthened to complex scalars.
 
 > [!theorem] Lemma §9.1: Consequences of Complex Homogeneity
-> Let $p : X \to \mathbb{R}$ satisfy (1) and (2) of Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]] below. Then:
+> Let $X$ be a linear space over $\mathbb{C}$ and let $p : X \to \mathbb{R}$ satisfy (1) $p(ax) = |a|\,p(x)$ for all $a \in \mathbb{C}$, $x \in X$, and (2) $p(x + y) \le p(x) + p(y)$ for all $x, y \in X$; these are the hypotheses (1) and (2) of Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]] below. Then:
 > - (a) $p(0) = 0$;
 > - (b) $p(-x) = p(x)$ for all $x \in X$;
 > - (c) $p(x) \ge 0$ for all $x \in X$;
@@ -21,7 +21,7 @@ For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, sin
 ^lem-9-1
 
 > [!proof]+ Proof
-> (Not covered in lecture.) (1) with $a = 0$ gives $p(0) = 0$, and with $a = -1$ gives $p(-x) = p(x)$. By (2), $0 = p(x + (-x)) \le p(x) + p(-x) = 2p(x)$. Restricting (1) to real $a \ge 0$ gives positive homogeneity, and (2) is subadditivity.
+> (Not covered in lecture.) (a) By (1) with $a = 0$, $p(0) = p(0 \cdot x) = 0 \cdot p(x) = 0$. (b) By (1) with $a = -1$, $p(-x) = |-1|\,p(x) = p(x)$. (c) By (a), (2) and (b), $0 = p(0) = p(x + (-x)) \le p(x) + p(-x) = 2p(x)$, so $p(x) \ge 0$. (d) Restricting (1) to real $a \ge 0$, where $|a| = a$, gives positive homogeneity, and (2) is subadditivity.
 
 ^pf-9-1
 
@@ -139,7 +139,7 @@ For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, sin
 *Multiplying $x$ by $a = e^{-i\theta}$ multiplies $L(x)$ by $a$, by complex linearity, rotating it onto the positive real axis. There $L(ax)$ is real, so $L(ax) = U(ax)$, and the real bound $U \le p$ applies.*
 
 > [!remark] Remark: Why Rotate
-> Step 5 is the only place the complex structure does real work. For an arbitrary $x$, $L(x)$ is complex and the real bound $U \le p$ says nothing about its modulus. The trick is to rotate $x$ by the unimodular scalar $a = e^{-i\theta}$, chosen for this one $x$, so that $L(ax)$ becomes real and non-negative; then the real bound applies to $ax$, and homogeneity of $p$ with $|a| = 1$ undoes the rotation on the right-hand side. The tempting direct route $|L(x)|^2 = U(x)^2 + U(ix)^2 \le p(x)^2 + p(ix)^2 = 2p(x)^2$; this gives only $|L(x)| \le \sqrt{2}\,p(x)$, which is too weak (and even that needs $U \ge -p$, i.e. $|U| \le p$, which follows from $U(-x) \le p(-x) = p(x)$). The rotation gets the constant $1$ because it uses the bound once, on a single well-chosen vector, rather than twice.
+> Step 5 is the only place the complex structure does real work. For an arbitrary $x$, $L(x)$ is complex and the real bound $U \le p$ says nothing about its modulus. The trick is to rotate $x$ by the unimodular scalar $a = e^{-i\theta}$, chosen for this one $x$, so that $L(ax)$ becomes real and non-negative; then the real bound applies to $ax$, and homogeneity of $p$ with $|a| = 1$ undoes the rotation on the right-hand side. The tempting direct route is $|L(x)|^2 = U(x)^2 + U(ix)^2 \le p(x)^2 + p(ix)^2 = 2p(x)^2$; this gives only $|L(x)| \le \sqrt{2}\,p(x)$, which is too weak (and even that needs $U \ge -p$, i.e. $|U| \le p$, which follows from $U(-x) \le p(-x) = p(x)$). The rotation gets the constant $1$ because it uses the bound once, on a single well-chosen vector, rather than twice.
 
 ^rem-9-2
 

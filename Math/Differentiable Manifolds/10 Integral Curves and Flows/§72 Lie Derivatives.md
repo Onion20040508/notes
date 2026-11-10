@@ -14,10 +14,10 @@ tags: [differentiable-manifolds, math591]
 *Motivation.* Go back to the definition of $\partial/\partial x^1$ on functions $f : \mathbb{R}^m \to \mathbb{R}$ (or on an open subset; the definition is local). If $p = (a^1, \ldots, a^m)$,
 
 $$
-\frac{\partial f}{\partial x^1}(p) = \lim_{t \to 0} \frac{1}{t}\Big( f(a^1 + t, a^2, \ldots, a^m) - f(a^1, \ldots, a^m) \Big) ,
+\frac{\partial f}{\partial x^1}(p) = \lim_{t \to 0} \frac{1}{t}\Big( f(a^1 + t, a^2, \ldots, a^m) - f(a^1, \ldots, a^m) \Big) .
 $$
 
-*Observation:* the integral curve of $\mathbf{X} = \partial/\partial x^1$ starting at $p$ is $\varphi_t(a) = (a^1 + t, a^2, \ldots, a^m)$, exactly what sits inside the first $f$. So, with the pullback $(\varphi_t^{\ast}f)(p) = f(\varphi_t(p))$ (Definition [[§53 One-Forms#^def-53-3|§53.3]]),
+*Observation:* the integral curve of $\mathbf{X} = \partial/\partial x^1$ starting at $p$ is $\varphi_t(p) = (a^1 + t, a^2, \ldots, a^m)$, exactly what sits inside the first $f$. So, with the pullback $(\varphi_t^{\ast}f)(p) = f(\varphi_t(p))$ (Definition [[§53 One-Forms#^def-53-3|§53.3]]),
 
 $$
 \frac{\partial f}{\partial x^1}(p) = \lim_{t \to 0} \frac{1}{t}\Big( (\varphi_t^{\ast}f)(p) - f(p) \Big) ,
@@ -149,7 +149,7 @@ That the limit exists is not obvious; it is the content of the next lemma.
 ^lem-72-4
 
 > [!proof]+ Proof
-> *(Stated without proof in Lecture 27; Lee's proof, filled in.)* Fix $p \in M$ and a chart $(U, (x^i))$ at $p$. Since $\mathcal{D}$ is open, $(0, p) \in \mathcal{D}$ and $\varphi$ is continuous with $\varphi(0, p) = p$, there are $\delta > 0$ and open sets $U_1 \subseteq U_0 \subseteq U$ containing $p$ with $(-\delta, \delta) \times U_0 \subseteq \mathcal{D}$, $\varphi\big((-\delta, \delta) \times U_0\big) \subseteq U$ and $\varphi\big((-\delta, \delta) \times U_1\big) \subseteq U_0$. Write $\varphi^i(t, x)$ for the components of $\varphi$ on $(-\delta, \delta) \times U_0$ in the chart.
+> *(Stated without proof in Lecture 27; Lee's proof, filled in.)* Fix $p \in M$ and a chart $(U, (x^i))$ at $p$. Since $\mathcal{D}$ is open and $\varphi$ is continuous (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)), with $(0, p) \in \mathcal{D}$ and $\varphi(0, p) = p$, there are $\delta > 0$ and open sets $U_1 \subseteq U_0 \subseteq U$ containing $p$ with $(-\delta, \delta) \times U_0 \subseteq \mathcal{D}$, $\varphi\big((-\delta, \delta) \times U_0\big) \subseteq U$ and $\varphi\big((-\delta, \delta) \times U_1\big) \subseteq U_0$. Write $\varphi^i(t, x)$ for the components of $\varphi$ on $(-\delta, \delta) \times U_0$ in the chart.
 >
 > Let $|t| < \delta$ and $x \in U_1$. Then $\varphi_t(x) \in U_0$, and on the open set $U_0$ the map $\varphi_{-t} = \varphi(-t, \cdot\,)$ is defined with values in $U$; the Jacobian of its coordinate representation at $\varphi_t(x)$ is the matrix $\big(\frac{\partial \varphi^i}{\partial x^j}(-t, \varphi(t, x))\big)$. Hence, by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] (the matrix of a differential in coordinates is the Jacobian of the coordinate representation),
 >
@@ -161,7 +161,7 @@ That the limit exists is not obvious; it is the content of the next lemma.
 
 ^pf-72-4
 
-*Uses:* [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§72 Lie Derivatives#^def-72-2|Def. §72.2]]
+*Uses:* [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§72 Lie Derivatives#^def-72-2|Def. §72.2]]
 
 > [!example] Example §72.1: The Lie Derivative along $\partial/\partial x^1$
 > On $\mathbb{R}^m$ let $\mathbf{X} = \partial/\partial x^1$ and $\mathbf{Y} = \sum_i g^i\, \partial/\partial x^i$. The flow is translation in the first variable,
@@ -183,7 +183,7 @@ That the limit exists is not obvious; it is the content of the next lemma.
 The Lie derivative of a vector field turns out to be a known operation, the bracket. The proof uses a normal form for a vector field near a point where it does not vanish; its proof, by the flow, was postponed to Lecture 28 and is given after the lemma.
 
 > [!theorem] Lemma §72.5: Canonical Form Near a Regular Point
-> Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$ with $\mathbf{X}_p \neq 0$. There is a coordinate chart $(U, \varphi = (x^1, \ldots, x^m))$ with $p \in U$ such that
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$ with $\mathbf{X}_p \neq 0$. There is a coordinate chart $(U, x^1, \ldots, x^m)$ with $p \in U$ such that
 >
 > $$
 > \mathbf{X}|_U = \frac{\partial}{\partial x^1} .
@@ -214,7 +214,7 @@ The Lie derivative of a vector field turns out to be a known operation, the brac
 >
 > with coordinates $(y^2, \ldots, y^m)$. On $V$, $\mathbf{X}|_V = \sum_i f^i\, \partial/\partial y^i$ with $f^1(p) = 1$ and $f^i(p) = 0$ for $i = 2, \ldots, m$. Shrinking $V$, we may assume $f^1 \neq 0$ on $S$: then $\mathbf{X}$ is transverse to $S$ at every point of $S$. (The assumption is geometric, a field crossing $S$ everywhere; the argument below only uses $f^1(p) \neq 0$.)
 >
-> *Step 2: flow out $S$.* Flow out $S$ by the flow of $\mathbf{X}$: the integral curves through all the points of $S$ fill a neighbourhood of $p$. By a flow box at $p$ (Lemma [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]]), shrinking $S$ around $p$ (a step added in class after a student's question), there is $\varepsilon > 0$ such that
+> *Step 2: flow out $S$.* Flow out $S$ by the flow of $\mathbf{X}$: the integral curves through all the points of $S$ fill a neighbourhood of $p$. By a flow box at $p$ (Lemma [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]]), shrinking $S$ around $p$, there is $\varepsilon > 0$ such that
 >
 > $$
 > \theta : (-\varepsilon, \varepsilon) \times S \longrightarrow M, \qquad (t, q) \longmapsto \varphi_t(q)
@@ -253,7 +253,8 @@ The Lie derivative of a vector field turns out to be a known operation, the brac
 *(Not from lecture; animation added, vault only.)* The flowout of the figure in motion, for the same field: as $t$ runs from $0$ to $\varepsilon = 1.1$, the slices $\varphi_t(S)$ and $\varphi_{-t}(S)$ (red) move off $S$ in both directions and the integral curves through points of $S$ (blue) grow behind them. On the left the same happens in $(-\varepsilon, \varepsilon) \times S$, with straight lines: the right picture is the image of the left one under $\theta$, and the grey slices $t = \pm 0.5, \pm 1$ left behind become the grid of the chart $(x^1, \ldots, x^m) = \theta^{-1}$.
 
 ![[m591-72-3.svg]]
-*[[§72 Lie Derivatives#^lem-72-5|Lemma §72.5]] in a picture. Left: integral curves of $\mathbf{X}$ in $M$ near $p$ (continuing outside $U$), and the chart domain $U$. Right: in the chart $\varphi$, the same curves are the parallel lines on which $x^2, \ldots, x^m$ are constant, run at unit speed in $x^1$.*
+
+*Lemma [[§72 Lie Derivatives#^lem-72-5|§72.5]] in a picture. Left: integral curves of $\mathbf{X}$ in $M$ near $p$ (continuing outside $U$), and the chart domain $U$. Right: in the chart $(x^1, \ldots, x^m)$, the same curves are the parallel lines on which $x^2, \ldots, x^m$ are constant, run at unit speed in $x^1$.*
 
 A field that is nonzero at $p$ is nonzero on a neighbourhood of $p$, by continuity, and in suitable coordinates there it is the constant field $\partial_1$: its integral curves are straightened into parallel lines.
 
@@ -271,7 +272,7 @@ A field that is nonzero at $p$ is nonzero on a neighbourhood of $p$, by continui
 > [!proof]+ Proof
 > *(Lecture 27, modulo Lemmas [[§72 Lie Derivatives#^lem-72-4|§72.4]] and [[§72 Lie Derivatives#^lem-72-5|§72.5]]. The locality in Case 2 and the continuity argument in Case 3 are filled in.)* Take $p \in M$.
 >
-> *Case 1: $\mathbf{X}$ is zero in a neighbourhood $W$ of $p$.* Then $\varphi_t(q) = q$ for all $q \in W$, since the constant curve is an integral curve there: since $\mathbf{X} = 0$ there So $\varphi_{-t}$ is the identity on the open set $W$, $d(\varphi_{-t})_p = \mathrm{id}$, $V_t = \mathbf{Y}_p$, and $(\mathcal{L}_{\mathbf{X}}\mathbf{Y})_p = 0 \in T_pM$. Also $[\mathbf{X}, \mathbf{Y}]_p f = \mathbf{X}_p(\mathbf{Y}f) - \mathbf{Y}_p(\mathbf{X}f) = 0$, as $\mathbf{X}_p = 0$ and $\mathbf{X}f$ vanishes on $W$, so its germ at $p$ is $0$.
+> *Case 1: $\mathbf{X}$ is zero in a neighbourhood $W$ of $p$.* Then $\varphi_t(q) = q$ for all $q \in W$, since $\mathbf{X} = 0$ there and so the constant curve is an integral curve there. So $\varphi_{-t}$ is the identity on the open set $W$, $d(\varphi_{-t})_p = \mathrm{id}$, $V_t = \mathbf{Y}_p$, and $(\mathcal{L}_{\mathbf{X}}\mathbf{Y})_p = 0 \in T_pM$. Also $[\mathbf{X}, \mathbf{Y}]_p f = \mathbf{X}_p(\mathbf{Y}f) - \mathbf{Y}_p(\mathbf{X}f) = 0$, as $\mathbf{X}_p = 0$ and $\mathbf{X}f$ vanishes on $W$, so its germ at $p$ is $0$.
 >
 > *Case 2: $\mathbf{X}_p \neq 0$.* Take the chart $(U, x^1, \ldots, x^m)$ of Lemma [[§72 Lie Derivatives#^lem-72-5|§72.5]], with $\mathbf{X}|_U = \partial/\partial x^1$, and write $\mathbf{Y} = \sum_i g^i\, \partial/\partial x^i$ on $U$. *(Filled in.)* The Lie derivative at $p$ only involves $\varphi_t$ near $p$ and $\varphi_{-t}$ near $\varphi_t(p)$, for small $t$. Choose a neighbourhood $U' \subseteq U$ of $p$ and $\varepsilon > 0$ with $\varphi_t(U') \subseteq U$ for $|t| < \varepsilon$. For $q \in U'$, the curve $t \mapsto \varphi_t(q)$, $|t| < \varepsilon$, is an integral curve of $\partial/\partial x^1$ inside $U$, so in coordinates it is $x(q) + te_1$ (Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] and uniqueness). So in the chart the flow is the translation of Example [[§72 Lie Derivatives#^ex-72-1|§72.1]], and the problem reduces to that Euclidean computation:
 >
@@ -381,7 +382,7 @@ The derivative of the curve $V_t$ at $t = 0$ is $(\mathcal{L}_{\mathbf{X}}\mathb
 ^def-72-3
 
 > [!definition] Definition §72.4: Invariance under a Flow
-> Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, and let $\varphi$ be the flow of $\mathbf{X}$. Then $\mathbf{Y}$ is **invariant under the flow** $\varphi$ of $\mathbf{X}$ if for every $t$, $\mathbf{Y}$ is $\varphi_t$-related to itself (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]): $d(\varphi_t)_p(\mathbf{Y}_p) = \mathbf{Y}_{\varphi_t(p)}$ for all $(t, p)$ in the flow domain $\mathcal{D}$. For incomplete $\mathbf{X}$ the condition is read where $\varphi_t$ is defined, on the open sets of Lemma [[§72 Lie Derivatives#^lem-72-2|§72.2]] above. A complete field is invariant under its own flow (Lemma [[§70 Complete Vector Fields#^lem-70-8|§70.8]]; Lee, Corollary 9.43, without completeness).
+> Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, and let $\varphi$ be the flow of $\mathbf{X}$. Then $\mathbf{Y}$ is **invariant under the flow** $\varphi$ of $\mathbf{X}$ if for every $t$, $\mathbf{Y}$ is $\varphi_t$-related to itself (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]): $d(\varphi_t)_p(\mathbf{Y}_p) = \mathbf{Y}_{\varphi_t(p)}$ for all $(t, p)$ in the flow domain $\mathcal{D}$. For incomplete $\mathbf{X}$ the condition is read where $\varphi_t$ is defined, on the open sets $M_t$ of Lemma [[§72 Lie Derivatives#^lem-72-3|§72.3]] above. A complete field is invariant under its own flow (Lemma [[§70 Complete Vector Fields#^lem-70-8|§70.8]]); without completeness this is Corollary [[§72 Lie Derivatives#^cor-72-10|§72.10]] below (Lee, Corollary 9.43).
 >
 > *Lee: Ch. 9, Commuting Vector Fields*
 
@@ -392,7 +393,7 @@ The derivative of the curve $V_t$ at $t = 0$ is $(\mathcal{L}_{\mathbf{X}}\mathb
 >
 > 1. $[\mathbf{X}, \mathbf{Y}] = 0$;
 > 2. $\mathbf{Y}$ is invariant under the flow of $\mathbf{X}$;
-> 3. the flows commute: $\varphi_s \circ \psi_t = \psi_t \circ \varphi_s$. Precisely: for all intervals $I, J \subseteq \mathbb{R}$ containing $0$ and every $p \in M$, if $\varphi_s \circ \psi_t(p)$ or $\psi_t \circ \varphi_s(p)$ exists for all $(s, t) \in I \times J$, then the other exists too, and they are equal.
+> 3. the flows commute: $\varphi_s \circ \psi_t = \psi_t \circ \varphi_s$. Precisely: for all open intervals $I, J \subseteq \mathbb{R}$ containing $0$ and every $p \in M$, if $\varphi_s \circ \psi_t(p)$ or $\psi_t \circ \varphi_s(p)$ exists for all $(s, t) \in I \times J$, then the other exists too, and they are equal.
 >
 > If $\mathbf{X}$ and $\mathbf{Y}$ are complete, (3) just says $\varphi_s \circ \psi_t = \psi_t \circ \varphi_s$ for all $s, t \in \mathbb{R}$. Since $[\mathbf{Y}, \mathbf{X}] = -[\mathbf{X}, \mathbf{Y}]$, (1)–(3) are also equivalent to: $\mathbf{X}$ is invariant under the flow $\psi$ of $\mathbf{Y}$ (Lee, Theorem 9.42(c)).
 >
@@ -540,7 +541,7 @@ The statement is local, so on a manifold it holds in any chart at $p$, with the 
 ^cor-72-13
 
 > [!proof]+ Proof
-> *(Filled in; a second proof of (3) $\Rightarrow$ (1) in Theorem [[§72 Lie Derivatives#^thm-72-9|§72.9]].)* Fix $p$ and a chart $(U, \phi)$ at $p$. The pushforwards of $\mathbf{X}|_U$ and $\mathbf{Y}|_U$ by the diffeomorphism $\phi : U \to \phi(U)$ are fields on $\phi(U) \subseteq \mathbb{R}^n$ whose integral curves are the images under $\phi$ of those of $\mathbf{X}$ and $\mathbf{Y}$ in $U$ (Proposition [[§70 Complete Vector Fields#^prop-70-10|§70.10]]); for $(s, t)$ near $(0, 0)$ all the points involved stay in $U$, so near $(0, 0)$ the compositions of their flows at $\phi(p)$ are $\phi(\psi_s \circ \varphi_t(p))$ and $\phi(\varphi_t \circ \psi_s(p))$, which agree by hypothesis. By Proposition [[§72 Lie Derivatives#^prop-72-12|§72.12]] the bracket of the pushed-forward fields vanishes at $\phi(p)$, and it is the pushforward of $[\mathbf{X}, \mathbf{Y}]$ (Corollary [[§59 Related Vector Fields#^cor-59-4|§59.4]]); so $[\mathbf{X}, \mathbf{Y}]_p = 0$.
+> *(Filled in; a second proof of (3) $\Rightarrow$ (1) in Theorem [[§72 Lie Derivatives#^thm-72-9|§72.9]].)* Fix $p$ and a chart $(U, \chi)$ at $p$. The pushforwards of $\mathbf{X}|_U$ and $\mathbf{Y}|_U$ by the diffeomorphism $\chi : U \to \chi(U)$ are fields on $\chi(U) \subseteq \mathbb{R}^n$ whose integral curves are the images under $\chi$ of those of $\mathbf{X}$ and $\mathbf{Y}$ in $U$ (Proposition [[§70 Complete Vector Fields#^prop-70-10|§70.10]]); for $(s, t)$ near $(0, 0)$ all the points involved stay in $U$, so near $(0, 0)$ the compositions of their flows at $\chi(p)$ are $\chi(\psi_s \circ \varphi_t(p))$ and $\chi(\varphi_t \circ \psi_s(p))$, which agree by hypothesis. By Proposition [[§72 Lie Derivatives#^prop-72-12|§72.12]] the bracket of the pushed-forward fields vanishes at $\chi(p)$, and it is the pushforward of $[\mathbf{X}, \mathbf{Y}]$ (Corollary [[§59 Related Vector Fields#^cor-59-4|§59.4]]); so $[\mathbf{X}, \mathbf{Y}]_p = 0$.
 
 ^pf-72-13
 

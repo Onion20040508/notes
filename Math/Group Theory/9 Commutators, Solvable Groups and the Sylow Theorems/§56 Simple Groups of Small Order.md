@@ -208,13 +208,13 @@ This rules out a large part of the table.
 ^prop-56-7
 
 > [!proof]+ Proof
-> *Idea:* a transitive action on $n_p > 1$ points is not trivial, so its kernel is a normal subgroup other than $G$.
+> *Idea:* a [[§27 Orbits#^def-27-3|transitive action]] on $n_p > 1$ points is not trivial, so its kernel is a normal subgroup other than $G$.
 >
 > An action on a set with $n_p$ elements is a homomorphism to $S_{n_p}$ (Theorem [[§25 Actions#^thm-25-3|§25.3]]). By the Second Sylow Theorem (Theorem [[§55 The Sylow Theorems#^thm-55-6|§55.6]]) the action is transitive, and there are $n_p > 1$ points, so some $g$ moves some point: $\varphi$ is not trivial, i.e. $\operatorname{Ker}\varphi \neq G$. Kernels are normal (Proposition [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]), so if $G$ is simple then $\operatorname{Ker}\varphi = \{e\}$, and $\varphi$ is injective. Then $G \cong \varphi(G) \leq S_{n_p}$ (First Isomorphism Theorem, Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]), so $|G|$ divides $|S_{n_p}| = n_p!$ by Lagrange (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]).
 
 ^pf-56-7
 
-*Uses:* [[§25 Actions#^thm-25-3|§25.3]], [[§55 The Sylow Theorems#^thm-55-6|§55.6]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
+*Uses:* [[§25 Actions#^thm-25-3|§25.3]], [[§55 The Sylow Theorems#^thm-55-6|§55.6]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§27 Orbits#^def-27-3|Def. §27.3]]
 
 > [!example] Example §56.3: Orders $12$ and $80$
 > 1. $|G| = 12$. If $n_2 = 1$, the Sylow $2$-subgroup is normal. If $n_2 = 3$, we get $\varphi: G \to S_3$, and $12 > 6 = |S_3|$, so $\varphi$ is not injective: $\operatorname{Ker}\varphi$ is a proper nontrivial normal subgroup. Either way $G$ is not simple. (Marked $\blacksquare 2$.)
@@ -354,7 +354,7 @@ The proof gives more:
 *Uses:* [[§56 Simple Groups of Small Order#^prop-56-10|§56.10]], [[§56 Simple Groups of Small Order#^lem-56-8|§56.8]]
 
 > [!theorem] Lemma §56.12: The Sign of Left Multiplication
-> Let $G$ be finite, $\phi: G \to S_{|G|}$ the left-multiplication embedding, $\phi(g)(x) = gx$, and let $g \in G$ have order $d$. Then the orbits of $\phi(g)$ are the right cosets $\langle g \rangle x$, each with $d$ elements, $\phi(g)$ is a product of $|G|/d$ disjoint $d$-cycles, and
+> Let $G$ be finite, $\phi: G \to S_{|G|}$ the left-multiplication embedding, $\phi(g)(x) = gx$, and let $g \in G$ have order $d$. Then the orbits of $\phi(g)$ are the [[§28 Left and Right Cosets#^def-28-2|right cosets]] $\langle g \rangle x$, each with $d$ elements, $\phi(g)$ is a product of $|G|/d$ disjoint $d$-cycles, and
 >
 > $$
 > \operatorname{sgn}\phi(g) = (-1)^{(d-1)|G|/d}.
@@ -509,7 +509,7 @@ The count shows more. First, the general tool:
 >
 > *(Problem Set 7, Problem 7.1(1), as submitted.)* Let $k = |A_n/H| = [A_n : H]$. For $x \in A_n$, recall that $xH = H$ if and only if $x \in H$.
 >
-> Let $A_n$ act on $A_n/H$ by left multiplication, $g \cdot xH = gxH$ for $g \in A_n$ and $xH \in A_n/H$. This is well defined: if $xH = yH$, then $x^{-1}y \in H$, so $(gx)^{-1}(gy) = x^{-1}y \in H$ and $gxH = gyH$. It is a group action, since $e \cdot xH = xH$ and $(g_1g_2) \cdot xH = g_1g_2xH = g_1 \cdot (g_2 \cdot xH)$. As in Problem 3.1, defining $\hat g \colon A_n/H \to A_n/H$ by $\hat g(xH) = gxH$, each $\hat g$ is a bijection and
+> Let $A_n$ act on $A_n/H$ by left multiplication, $g \cdot xH = gxH$ for $g \in A_n$ and $xH \in A_n/H$. This is well defined: if $xH = yH$, then $x^{-1}y \in H$, so $(gx)^{-1}(gy) = x^{-1}y \in H$ and $gxH = gyH$. It is a [[§25 Actions#^def-25-1|group action]], since $e \cdot xH = xH$ and $(g_1g_2) \cdot xH = g_1g_2xH = g_1 \cdot (g_2 \cdot xH)$. As in Problem 3.1, defining $\hat g \colon A_n/H \to A_n/H$ by $\hat g(xH) = gxH$, each $\hat g$ is a bijection and
 >
 > $$
 > \psi \colon A_n \to S_{A_n/H}, \qquad \psi(g) = \hat g,
@@ -546,6 +546,8 @@ The count shows more. First, the general tool:
 > contradicting $\frac{n!}{2} \leq k!$. Hence $k \geq n$, that is, $[A_n : H] \geq n$.
 
 ^pf-56-17
+
+*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]]
 
 > [!remark] Remark: A Shortcut
 > *(Not from class.)* By Corollary [[§56 Simple Groups of Small Order#^cor-56-9|§56.9]], the injective homomorphism $A_n \to S_k$ has image in $A_k$, so $n!/2$ divides $k!/2$ (Lagrange), i.e. $n!$ divides $k!$, which forces $k \geq n$; this replaces the counting step.
@@ -779,7 +781,7 @@ Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6
 ^rem-56-8
 
 > [!remark] Remark: Where the Groups of Lie Type Come From
-> *(Overview only.)* A **Lie group** is a group that is also a manifold, with the group operations smooth. There is a much easier classification, due to Killing and Cartan (late 19th century), of the compact Lie groups. Roughly, they fall into three infinite families,
+> *(Overview only.)* A **[[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]]** is a group that is also a manifold, with the group operations smooth. There is a much easier classification, due to Killing and Cartan (late 19th century), of the compact Lie groups. Roughly, they fall into three infinite families,
 >
 > $$
 > \begin{aligned}O_n(\mathbb{R}) &= \{ g \in GL_n(\mathbb{R}) : g g^{T} = I_n \} && \text{(orthogonal group)}, \\

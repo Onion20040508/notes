@@ -208,7 +208,7 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 
 ^pf-37-6
 
-*Uses:* [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Def. §37.1]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]], [[§31 Dual Spaces#^cor-31-1|§31.1]]
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Def. §37.1]], [[§31 Dual Spaces#^cor-31-1|§31.1]]
 
 > [!example] Example §37.3: Hilbert Spaces are Reflexive
 > Let $H$ be a Hilbert space. Then $H$ is reflexive: $H' = H$ and $(H')' = H$.
@@ -270,9 +270,9 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 
 > [!proof]+ Proof
 > Suppose it is: $\bigl( (C[0,1])' \bigr)' = C[0,1]$. Now $C[0,1]$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], because the polynomials with rational coefficients are dense.
-> (By the [[§27 Weierstrass's Approximation Theorem (Not Covered)|Weierstrass approximation theorem]], for $f \in C[0,1]$ and $\varepsilon > 0$ there is a polynomial $P(x) = \sum_{k=0}^n c_k x^k$ with $\|f - P\|_\infty < \varepsilon$; choosing $q_k \in \mathbb{Q}_{\mathbb{F}}$ with $|c_k - q_k| < \varepsilon/(n+1)$ and using $|x^k| \le 1$ on $[0,1]$, $Q = \sum q_k x^k$ has $\|P - Q\|_\infty < \varepsilon$. The polynomials with coefficients in $\mathbb{Q}_{\mathbb{F}}$ form a countable set, as in Step 2 above.) Then $(C[0,1])'$ would be separable: its dual $((C[0,1])')'$ is $i(C[0,1])$, isometrically isomorphic to $C[0,1]$ and hence separable (as in the proof of Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]]), and Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], applied to the normed space $X = (C[0,1])'$, gives that $X$ is separable.
+> (By the [[§27 Weierstrass's Approximation Theorem (Not Covered)|Weierstrass approximation theorem]], for $f \in C[0,1]$ and $\varepsilon > 0$ there is a polynomial $P(x) = \sum_{k=0}^n c_k x^k$ with $\|f - P\|_\infty < \varepsilon$; choosing $q_k \in \mathbb{Q}_{\mathbb{F}}$ with $|c_k - q_k| < \varepsilon/(n+1)$ and using $|x^k| \le 1$ on $[0,1]$, $Q = \sum q_k x^k$ has $\|P - Q\|_\infty < \varepsilon$. The polynomials with coefficients in $\mathbb{Q}_{\mathbb{F}}$ form a countable set, as in Step 2 of the proof of Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], where $\mathbb{Q}_{\mathbb{F}}$ is defined.) Then $(C[0,1])'$ would be separable: its dual $((C[0,1])')'$ is $i(C[0,1])$, isometrically isomorphic to $C[0,1]$ and hence separable (as in the proof of Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]]), and Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], applied to the normed space $X = (C[0,1])'$, gives that $X$ is separable.
 >
-> This is not true. For $s \in [0,1]$ define $\ell_s(f) = f(s)$ for $f \in C[0,1]$. Then $\ell_s : C[0,1] \to \mathbb{R}$ is linear, and
+> This is not true. For $s \in [0,1]$ define $\ell_s(f) = f(s)$ for $f \in C[0,1]$. Then $\ell_s : C[0,1] \to \mathbb{F}$ is linear, and
 >
 > $$
 > |\ell_s(f)| = |f(s)| \le \max_{x \in [0,1]} |f(x)| = \|f\|_\infty ,
@@ -371,10 +371,8 @@ Why $\|\ell_s - \ell_t\| = 2$: the function $f$ (blue) has $\|f\|_\infty = 1$, e
 
 The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction $R$ to an element of $X''$, which reflexivity of $X$ represents by some $x_0$; functionals vanishing on $Y$ die under $R$, which puts $x_0$ in $Y$ (Step 1), and Hahn–Banach makes $R$ onto, so $x_0$ represents $\eta_0$ on all of $Y'$ (Step 2).
 
-*Lecture 18 (Thu Nov 5) opened with the following problem, placed here next to the theorem it uses.*
-
 > [!remark] Remark: Notation: $x_0 \in X''$
-> For $\ell \in X'$ write $\ell(x) = \langle x, \ell \rangle$. For fixed $x_0 \in X$, $\ell \mapsto \langle x_0, \ell \rangle$ is a bounded linear functional on $X'$, the element $\eta_{x_0} = i(x_0)$ of $(X')'$ (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]): $\eta_{x_0}(\ell) = \langle \ell, \eta_{x_0} \rangle = \langle x_0, \ell \rangle$. Instead of introducing other notation, one simply says $x_0 \in (X')'$, identifying $\eta_{x_0}$ with $x_0$; the isometric isomorphism $i$ is not written. This notation is used from now on. With it, “$X$ reflexive” reads $(X')' = X$.
+> For $\ell \in X'$ write $\ell(x) = \langle x, \ell \rangle$. For fixed $x_0 \in X$, $\ell \mapsto \langle x_0, \ell \rangle$ is a bounded linear functional on $X'$, the element $\eta_{x_0} = i(x_0)$ of $(X')'$ (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]): $\eta_{x_0}(\ell) = \langle \ell, \eta_{x_0} \rangle = \langle x_0, \ell \rangle$. Instead of introducing other notation, one simply says $x_0 \in (X')'$, identifying $\eta_{x_0}$ with $x_0$; the isometric embedding $i$ is not written. This notation is used from now on. With it, “$X$ reflexive” reads $(X')' = X$.
 
 ^rem-37-5
 
@@ -396,7 +394,7 @@ The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction 
 > So $\Phi$ is evaluation at $\ell$ on $X''$, i.e. $\Phi = i_{X'}(\ell)$, where $i_{X'} : X' \to (X')''$ is the canonical map of $X'$. Hence $i_{X'}$ is onto, and $X'$ is reflexive.
 >
 > **($\Leftarrow$)** Assume $X'$ is reflexive. *Step 1:* $X''$ is reflexive, by the direction ($\Rightarrow$) just proved, applied to the Banach space $X'$ (in place of $X$; $X'$ is complete by Corollary [[§31 Dual Spaces#^cor-31-1|§31.1]]): $X'$ reflexive implies $(X')' = X''$ reflexive. *Step 2:* $X \subset X''$, isometrically (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]). Since $X$ is a Banach space, $X$ is a closed linear subspace of $X''$: if $i(x_n) \to \eta$ in $X''$, then $\{i(x_n)\}$ is Cauchy in $X''$, hence $\{x_n\}$ is Cauchy in $X$ (the two spaces are isometric), so $x_n \to x$ for some $x \in X$, and $\eta = i(x)$ (since $\|i(x_n) - i(x)\| = \|x_n - x\| \to 0$ and limits are unique). *Step 3:* by Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|§37.8]], a closed linear subspace of a reflexive Banach space is reflexive; so $X$ is reflexive.
-> (Precisely, the theorem makes $i(X)$ reflexive, and reflexivity passes along an isometric isomorphism $T : X \to Z$: given $\eta \in X''$, define $\zeta \in Z''$ by $\zeta(m) = \eta(m \circ T)$ for $m \in Z'$; if $\zeta = i_Z(z)$, then for every $\ell \in X'$, writing $\ell = (\ell \circ T^{-1}) \circ T$, $\eta(\ell) = \zeta(\ell \circ T^{-1}) = \ell(T^{-1} z)$, so $\eta = i_X(T^{-1} z)$.)
+> (Precisely, the theorem makes $i(X)$ reflexive, and reflexivity passes along an isometric isomorphism $T : X \to Z$: given $\eta \in X''$, define $\zeta$ by $\zeta(m) = \eta(m \circ T)$ for $m \in Z'$; it is linear in $m$, and $|\zeta(m)| \le \|\eta\|\, \|m \circ T\| \le \|\eta\|\, \|m\|$ because $\|T\| = 1$, so $\zeta \in Z''$; if $\zeta = i_Z(z)$, then for every $\ell \in X'$, writing $\ell = (\ell \circ T^{-1}) \circ T$, $\eta(\ell) = \zeta(\ell \circ T^{-1}) = \ell(T^{-1} z)$, so $\eta = i_X(T^{-1} z)$.)
 
 ^pf-37-9
 
@@ -413,7 +411,7 @@ The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]
 > \min_{m \in Y^\perp} \|\ell - m\| = \sup_{\substack{z \in Y \\ \|z\| = 1}} |\ell(z)| ,
 > $$
 >
-> the norm of the restriction $\ell|_Y \in Y'$. Compare $\displaystyle \inf_{y \in Y} \|z - y\| = \max_{\substack{\ell \in Y^\perp \\ \|\ell\| \le 1}} |\ell(z)|$: now the minimum is attained on the side of the dual.
+> the norm $\|\ell|_Y\|_Y$ of the restriction $\ell|_Y \in Y'$ (for $Y = \{0\}$ the supremum is over the empty set and is read as $0$). Compare $\displaystyle \inf_{y \in Y} \|z - y\| = \max_{\substack{\ell \in Y^\perp \\ \|\ell\| \le 1}} |\ell(z)|$: now the minimum is attained on the side of the dual.
 
 ^prop-37-10
 

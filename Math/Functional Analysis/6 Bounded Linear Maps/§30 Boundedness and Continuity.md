@@ -198,7 +198,7 @@ The completeness of $C^m(\overline{\Omega})$ in this norm is not needed for Exam
 ^prop-30-4
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in. Completeness was stated in lecture without proof.)* Identify each $\partial^\alpha f$ with its continuous extension to $\overline{\Omega}$, which is unique because $\Omega$ is dense in $\overline{\Omega}$, and write $\|g\|_\infty = \max_{\overline{\Omega}} |g|$.
+> *(Not from lecture; filled in. Completeness was stated in lecture without proof.)* Identify each $\partial^\alpha f$ with its continuous extension to $\overline{\Omega}$, which is unique because $\Omega$ is dense in $\overline{\Omega}$, and write $\|g\|_\infty = \max_{\overline{\Omega}} |g|$. For complex-valued functions, Step 2 below is applied to real and imaginary parts.
 >
 > **Step 1: limits of the derivatives.** Let $\{f_k\}$ be Cauchy in $C^m(\overline{\Omega})$. For each $|\alpha| \le m$, $\|\partial^\alpha f_k - \partial^\alpha f_j\|_\infty \le \|f_k - f_j\|_{C^m(\overline{\Omega})}$, so $\{\partial^\alpha f_k\}_k$ is Cauchy in $(C(\overline{\Omega}), \|\cdot\|_\infty)$. This space is complete: $\overline{\Omega}$ is compact (closed and bounded), and the proof of Theorem [[§12 Completeness#^thm-12-1|§12.1]] carries over with $[a,b]$ replaced by $\overline{\Omega}$. So $\partial^\alpha f_k \to g_\alpha$ uniformly on $\overline{\Omega}$, for some $g_\alpha \in C(\overline{\Omega})$.
 >
@@ -219,7 +219,7 @@ The completeness of $C^m(\overline{\Omega})$ in this norm is not needed for Exam
 *Uses:* [[§30 Boundedness and Continuity#^ex-30-1|Ex. §30.1]], [[§12 Completeness#^thm-12-1|§12.1]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 §34.4]]
 
 > [!theorem] Proposition §30.5: Differentiation is Unbounded in the Maximum Norm
-> Give $C^\infty(\overline{\Omega})$ the norm $\|f\| = \max_{x \in \overline{\Omega}} |f(x)|$ (a norm under which $C^\infty(\overline{\Omega})$ is not complete). Then $Tf = \partial_{x_1} f$ is a linear map $C^\infty(\overline{\Omega}) \to C^\infty(\overline{\Omega})$ that is *not* bounded: there is no $M$ with $\max_{\overline{\Omega}} |\partial_{x_1} f| \le M \max_{\overline{\Omega}} |f|$ for all $f$.
+> Let $\Omega \subset \mathbb{R}^n$ be bounded, open and nonempty, and let $C^\infty(\overline{\Omega}) = \bigcap_{m \ge 0} C^m(\overline{\Omega})$, with $C^m(\overline{\Omega})$ as in Example [[§30 Boundedness and Continuity#^ex-30-1|§30.1]]. Give $C^\infty(\overline{\Omega})$ the norm $\|f\| = \max_{x \in \overline{\Omega}} |f(x)|$ (a norm under which $C^\infty(\overline{\Omega})$ is not complete). Then $Tf = \partial_{x_1} f$ is a linear map $C^\infty(\overline{\Omega}) \to C^\infty(\overline{\Omega})$ that is *not* bounded: there is no $M$ with $\max_{\overline{\Omega}} |\partial_{x_1} f| \le M \max_{\overline{\Omega}} |f|$ for all $f$.
 
 ^prop-30-5
 
@@ -352,7 +352,7 @@ The same happens in one variable with only one derivative available, which is th
 >
 > *Positivity.* $\|T\| \ge 0$ as a supremum of non-negative numbers. If $\|T\| = 0$, then by Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]](b), $\|Tx\|_Y \le 0$ for all $x$, so $Tx = 0$ for all $x$ and $T$ is the zero map; conversely the zero map has norm $0$.
 >
-> *Homogeneity.* (Left to us in lecture.) By Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]](a), $\|aT\| = \sup_{\|x\|_X = 1} \|a\, Tx\|_Y = \sup_{\|x\|_X = 1} |a|\,\|Tx\|_Y = |a| \sup_{\|x\|_X = 1} \|Tx\|_Y = |a|\,\|T\|$, since multiplying a set of non-negative numbers by $|a| \ge 0$ multiplies its supremum by $|a|$.
+> *Homogeneity.* (Left as an exercise in lecture.) By Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]](a), $\|aT\| = \sup_{\|x\|_X = 1} \|a\, Tx\|_Y = \sup_{\|x\|_X = 1} |a|\,\|Tx\|_Y = |a| \sup_{\|x\|_X = 1} \|Tx\|_Y = |a|\,\|T\|$, since multiplying a set of non-negative numbers by $|a| \ge 0$ multiplies its supremum by $|a|$.
 >
 > *Subadditivity.* By Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]](a),
 >

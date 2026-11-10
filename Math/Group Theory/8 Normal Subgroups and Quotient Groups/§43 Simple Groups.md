@@ -130,7 +130,7 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 *Uses:* [[§43 Simple Groups#^def-43-1|Def. §43.1]], [[§15 Homomorphisms#^prop-15-2|§15.2]]
 
 > [!theorem] Proposition §43.6: $A_5$ Is Simple
-> The conjugacy classes of $A_5$ are as follows (as given on the worksheet):
+> The [[§33 Conjugacy Classes#^def-33-1|conjugacy classes]] of $A_5$ are as follows (as given on the worksheet):
 >
 > | representative | $e$ | $(1\,2\,3)$ | $(1\,2)(3\,4)$ | $(1\,2\,3\,4\,5)$ | $(1\,2\,3\,5\,4)$ |
 > |---|---|---|---|---|---|
@@ -192,7 +192,7 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 > Let $n \geq 5$, let $N$ be a nontrivial normal subgroup of $A_n$, and let $g \in N$ with $g \neq e$.
 > 1. There is a $3$-cycle $(i\,j\,k) \in A_n$ that does not commute with $g$. Set $h = g\,(i\,j\,k)\,g^{-1}\,(i\,j\,k)^{-1}$.
 > 2. $h \in N$.
-> 3. $h$ has one of the cycle types $(a\,b\,c)(d\,e\,f)$, $(a\,b\,c\,d\,e)$, $(a\,b)(c\,d)$, $(a\,b\,c)$. (Here and below, $a, b, c, d, e, f$ denote distinct points of $\{1, \ldots, n\}$; the point $e$ is not the identity.)
+> 3. $h$ has one of the [[§33 Conjugacy Classes#^def-33-2|cycle types]] $(a\,b\,c)(d\,e\,f)$, $(a\,b\,c\,d\,e)$, $(a\,b)(c\,d)$, $(a\,b\,c)$. (Here and below, $a, b, c, d, e, f$ denote distinct points of $\{1, \ldots, n\}$; the point $e$ is not the identity.)
 > 4. $N$ contains a $3$-cycle. (The case of type $(a\,b)(c\,d)$ uses $n \geq 5$.)
 > 5. $N = A_n$.
 >
@@ -203,7 +203,7 @@ The second proof names the proper subgroups, $\langle g^2 \rangle$ and $\langle 
 ^thm-43-9
 
 > [!proof]+ Proof
-> *Idea:* Commutator $h \in N$ of $g$ and a $3$-cycle moves $\leq 6$ points; reduce it to a $3$-cycle.
+> *Idea:* [[§47 Commutators#^def-47-1|Commutator]] $h \in N$ of $g$ and a $3$-cycle moves $\leq 6$ points; reduce it to a $3$-cycle.
 >
 > *(Lecture 9/30 proved (1)–(3), the case $(a\,b)(c\,d)$ of (4), and (5). The cases of a $5$-cycle and of two $3$-cycles in (4) were left to a PDF on the course page; they are computed here. The PDF's own route is in the remark after this proof, [[§43 Simple Groups#^rem-43-5|Remark (the course handout)]].)* Since $N$ is normal, $sxs^{-1} \in N$ for every $s \in A_n$ and $x \in N$.
 >

@@ -103,13 +103,13 @@ tags: [differentiable-manifolds, math591]
 > - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§52 The Cotangent Bundle#^def-52-4|Def. §52.4]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]].
 
 > [!remark] Remark
-> Equivalently, by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] with the coordinate $r$ on the target, the matrix of $f_{*p}$ is the $1 \times m$ row
+> The formula of Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] can also be read off from Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]: with the coordinate $r$ on the target, the matrix of $f_{*p}$ is the $1 \times m$ row
 >
 > $$
 > \Big( \frac{\partial f}{\partial x^1}(p) \ \ \cdots \ \ \frac{\partial f}{\partial x^m}(p) \Big).
 > $$
 >
-> The matrix is $1 \times m$, not $m \times 1$ — gradients go across — since the target is one-dimensional. The lecture's proof took this route and paused over the shape of the matrix; the version above goes through Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] instead, which avoids the question.
+> The matrix is $1 \times m$, not $m \times 1$ — gradients go across — since the target is one-dimensional. The lecture's proof of Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] took this route; the proof given for the lemma goes through Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] instead, where the shape of the matrix does not arise.
 
 ^rem-33-1
 

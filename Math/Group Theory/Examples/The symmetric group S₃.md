@@ -9,7 +9,7 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 - The mixed hypothesis $gh_1 = h_2g$ does not cancel ([[§2 First Consequences of the Axioms#^ex-2-1|§2]])
 - $(gh)^2 \neq g^2h^2$ and $(gh)^{-1} \neq g^{-1}h^{-1}$ for two transpositions ([[§4 Subgroups#^rem-4-1|§4]])
 - Products of powers of the generators in a fixed order do not give $\langle g_1, g_2 \rangle$ ([[§4 Subgroups#^ex-4-3|§4]])
-- $S_3$ is the smallest group in which the fixed-order products fail ([[§4 Subgroups#^lem-4-7|Lem. §4.7]])
+- $S_3$ is the smallest group in which the fixed-order products fail ([[§4 Subgroups#^rem-4-2|§4]])
 - Elements in two-line and cycle notation, non-commutativity, and the multiplication table ([[§10 Cycle Notation and the Group S₃#^ex-10-1|§10]])
 - $S_3$ has exactly six subgroups ([[§13 The Symmetric Group S₃#^prop-13-1|§13]])
 - The subgroup lattice: orders $1, 2, 3, 6$ all divide $6$ ([[§13 The Symmetric Group S₃#^rem-13-1|§13]])
@@ -39,7 +39,7 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 - $S_3$ as the quotient $S_4/K$ ([[§43 Simple Groups#^prop-43-10|§43]])
 - $PSL_2(\mathbb{F}_2) \cong S_3$, which is not simple ([[§43 Simple Groups#^ex-43-3|§43]])
 - $\langle (1\,2) \rangle \cong S_3/A_3$, and $S_4/K \cong S_3$, by the Second Isomorphism Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-1|§45]])
-- The identity $S_3 \to S_3$ is not constant on conjugacy classes, so characters need an abelian target ([[§46 Characters#^rem-46-3|§46]])
+- The identity $S_3 \to S_3$ is not constant on conjugacy classes, so characters need an abelian target ([[§46 Characters#^ex-46-2|§46]])
 - $S_3$ is solvable, through $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ ([[§48 Solvable Groups#^prop-48-2|§48]])
 - The derived series $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$ ([[§49 The Derived Series#^ex-49-1|§49]])
 
@@ -57,7 +57,7 @@ Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmet
 ![[§4 Subgroups#^ex-4-3]]
 
 ## $S_3$ is the smallest group in which the fixed-order products fail
-![[§4 Subgroups#^lem-4-7]]
+![[§4 Subgroups#^rem-4-2]]
 
 ## Elements in two-line and cycle notation, non-commutativity, and the multiplication table
 ![[§10 Cycle Notation and the Group S₃#^ex-10-1]]
@@ -147,7 +147,7 @@ Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmet
 ![[§45 S₃, S₄, A₄ and A₅#^ex-45-1]]
 
 ## The identity $S_3 \to S_3$ is not constant on conjugacy classes, so characters need an abelian target
-![[§46 Characters#^rem-46-3]]
+![[§46 Characters#^ex-46-2]]
 
 ## $S_3$ is solvable, through $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$
 ![[§48 Solvable Groups#^prop-48-2]]

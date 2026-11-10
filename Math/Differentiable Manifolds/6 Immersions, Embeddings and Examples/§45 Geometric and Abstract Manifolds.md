@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: recap — The two pictures of a manifold — a subset of Euclidean space, and a space with an atlas — set side by side, definition by definition and theorem by theorem, with the result that bridges each pair.*
 
-*Not from lecture: a comparison written for these notes at the end of Chapter 5, when every bridge between the two pictures is in place. Nothing here is new; every object is defined, and every fact proved, where the cross-reference points.*
+*Not from lecture: a comparison written for these notes in Chapter 6, after immersions and embeddings, when every bridge between the two pictures is in place. Nothing here is new; every object is defined, and every fact proved, where the cross-reference points.*
 
 The course has built manifolds in two ways. The *geometric* picture is the equations thread of the roadmap: a manifold is a subset of some $\mathbb{R}^N$, cut out by equations or swept out by a parametrization, and everything — smoothness, tangent vectors, differentials, regular values — is inherited from the ambient space. The *abstract* picture needs no ambient space: a manifold is a topological space with a maximal smooth atlas, and every notion is defined through charts. Almost every definition and theorem of the geometric picture has a counterpart in the abstract one, usually proved by reducing to the geometric version in charts. Each part below lists the pairs one to one, recalls the central ones verbatim, and names the result that shows the two agree wherever both make sense.
 
@@ -164,7 +164,7 @@ the $N \times m$ matrix in the middle being $(DF_p)^{\mathsf T}$. An abstract ma
 
 ![[§38 The Regular Value Theorem for Manifolds#^thm-38-2]]
 
-The pattern is the one of the whole course: a definition is transplanted by replacing the Jacobian $DF_p$ with the pushforward $F_{\ast p}$, and a theorem is proved by reading it in charts, where it becomes the Euclidean one. Proposition [[§30 The Differential in Coordinates#^prop-30-9|§30.9]] is the bridge for regular points — a point is regular for $F$ exactly when it is regular for the coordinate representation, because the matrix of $F_{\ast p}$ is that Jacobian. The local normal form for submersions plays the role of the implicit function theorem, and it upgrades the conclusion from “topological manifold” to “submanifold” with its tangent space. The remark *The Regular Value Theorems — Old and New* ([[§37 Regular Submanifolds|§37]]) lists all five versions with their roles.
+The pattern is the one of the whole course: a definition is transplanted by replacing the Jacobian $DF_p$ with the pushforward $F_{\ast p}$, and a theorem is proved by reading it in charts, where it becomes the Euclidean one. Proposition [[§30 The Differential in Coordinates#^prop-30-9|§30.9]] is the bridge for regular points — a point is regular for $F$ exactly when it is regular for the coordinate representation, because the matrix of $F_{\ast p}$ is that Jacobian. The local normal form for submersions plays the role of the implicit function theorem, and it upgrades the conclusion from “topological manifold” to “submanifold” with its tangent space. The remark *The Regular Value Theorems — Old and New* ([[§38 The Regular Value Theorem for Manifolds#^rem-38-1|§38]]) lists all five versions with their roles.
 
 ## The Global Picture: Embeddings
 

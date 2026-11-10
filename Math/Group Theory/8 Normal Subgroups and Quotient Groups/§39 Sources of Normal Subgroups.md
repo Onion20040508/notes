@@ -79,7 +79,7 @@ tags: [group-theory, math493]
 *Uses:* [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]]
 
 > [!remark]- Connections
-> - 590 counterpart: [[§27 Free Groups and Presentations#^rem-27-17|Remark after Definition §21.12]] (kernels are normal).
+> - 590 counterpart: [[§27 Free Groups and Presentations#^rem-27-17|Remark after Definition §27.7]] (kernels are normal).
 > - Converse: [[§40 Quotient Groups#^prop-40-2|Every Normal Subgroup Is a Kernel]]; used in [[§43 Simple Groups#^prop-43-3|Homomorphisms out of a Simple Group]].
 
 The converse also holds: every normal subgroup is the kernel of a homomorphism, namely of the projection onto the quotient group ([[§40 Quotient Groups#^prop-40-2|Every Normal Subgroup Is a Kernel]], §40).
@@ -99,7 +99,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 ^prop-39-3
 
 > [!proof]+ Proof
-> The inclusion is a homomorphism because the operation of $\langle (1\,2) \rangle$ is that of $S_3$. Its image $\{e, (1\,2)\}$ is not normal: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin \{e, (1\,2)\}$ (A Non-Normal Subgroup of $S_3$, [[§38 Normal Subgroups#^ex-38-1|Ex. §38.1]]). The lecture of Fri Sept 25 used the same example in the form $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$ ([[§41 The First and Second Isomorphism Theorems#^rem-41-1|§41]]).
+> The inclusion is a homomorphism because the operation of $\langle (1\,2) \rangle$ is that of $S_3$. Its image $\{e, (1\,2)\}$ is not normal: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin \{e, (1\,2)\}$ (A Non-Normal Subgroup of $S_3$, [[§38 Normal Subgroups#^ex-38-1|Ex. §38.1]]). The lecture of Fri Sept 25 used the same example in the form $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-1|Ex. §41.1]]).
 
 ^pf-39-3
 
@@ -175,11 +175,11 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 ^prop-39-6
 
 > [!proof]+ Proof
-> **(1)** The kernel of an action is the intersection of all stabilizers, and $\operatorname{Stab}(xH) = xHx^{-1}$ ([[§31 G Acting on Coset Spaces#^prop-31-1|WS 5.4]]). **(2)** If $M \trianglelefteq G$ and $M \subseteq H$, then $M = xMx^{-1} \subseteq xHx^{-1}$ for every $x$, so $M \subseteq N$ by (1). **(3)** The image of $\bar\varphi$ is $\varphi(G)$, a subgroup of $S_{G/H}$, so $[G : N] = |\varphi(G)|$ divides $|S_{G/H}| = n!$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]]. With the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]] this is the statement $G/N \cong \varphi(G)$ ([[§41 The First and Second Isomorphism Theorems#^rem-41-3|PS 3.1 and PS 3.2 as Instances]], §41).
+> **(1)** The kernel of an action is the intersection of all [[§26 Stabilizers and Fixed Points#^def-26-1|stabilizers]], and $\operatorname{Stab}(xH) = xHx^{-1}$ ([[§31 G Acting on Coset Spaces#^prop-31-1|WS 5.4]]). **(2)** If $M \trianglelefteq G$ and $M \subseteq H$, then $M = xMx^{-1} \subseteq xHx^{-1}$ for every $x$, so $M \subseteq N$ by (1). **(3)** The image of $\bar\varphi$ is $\varphi(G)$, a subgroup of $S_{G/H}$, so $[G : N] = |\varphi(G)|$ divides $|S_{G/H}| = n!$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]]. With the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]] this is the statement $G/N \cong \varphi(G)$ ([[§41 The First and Second Isomorphism Theorems#^rem-41-3|PS 3.1 and PS 3.2 as Instances]], §41).
 
 ^pf-39-6
 
-*Uses:* [[§25 Actions#^def-25-4|Def. §25.4]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]
+*Uses:* [[§25 Actions#^def-25-4|Def. §25.4]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]
 
 > [!remark]- Connections
 > - Part (3) recorded again as item 4 of [[§41 The First and Second Isomorphism Theorems#^ex-41-2|The First Isomorphism Theorem in Action]].

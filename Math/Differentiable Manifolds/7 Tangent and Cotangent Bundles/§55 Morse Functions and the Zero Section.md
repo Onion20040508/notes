@@ -82,7 +82,7 @@ $$
 
 *Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]
 
-The zero section is the first of a family of submanifolds of $T^{\ast}M$, one for each regular submanifold $S$ of $M$: put all the conormal spaces of $S$ together, as the cotangent spaces are put together in $T^{\ast}M$. *(Not from the assignment; the conormal spaces are those of [[§37 Regular Submanifolds|§37]], see the remark *The Conormal Bundle* in [[§39 Transversality and Lagrange Multipliers|§39]].)*
+The zero section is the first of a family of submanifolds of $T^{\ast}M$, one for each regular submanifold $S$ of $M$: put all the conormal spaces of $S$ together, as the cotangent spaces are put together in $T^{\ast}M$. *(Not from the assignment; the conormal spaces are those of [[§37 Regular Submanifolds|§37]], see the remark [[§39 Transversality and Lagrange Multipliers#^rem-39-2|The Conormal Bundle]] in [[§39 Transversality and Lagrange Multipliers|§39]].)*
 
 > [!definition] Definition §55.1: Conormal Bundle
 > Let $S \subseteq M$ be a regular submanifold. The **conormal bundle** of $S$ is the subset
@@ -118,7 +118,7 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 
 ^pf-55-2
 
-*Uses:* [[§55 Morse Functions and the Zero Section#^def-55-1|Def. §55.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-11|§37.11]], [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§52 The Cotangent Bundle#^prop-52-1|§52.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]]
+*Uses:* [[§55 Morse Functions and the Zero Section#^def-55-1|Def. §55.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-11|§37.11]], [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]]
 
 The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-2|§55.2]](2)). The two extreme values of $k$ are the following two examples.
 
@@ -143,7 +143,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 ^ex-55-2
 
 > [!remark] Remark: The Conormal Bundle Is Lagrangian
-> *(Not from the assignment.)* In the language of symplectic geometry, not developed in these notes, $N^{\ast}S$ is a Lagrangian submanifold of $T^{\ast}M$ — the cotangent side where, as the remark *No Normal Vectors Without a Metric* notes, Hamiltonian mechanics takes place.
+> *(Not from the assignment.)* In the language of symplectic geometry, not developed in these notes, $N^{\ast}S$ is a Lagrangian submanifold of $T^{\ast}M$ — the cotangent side where, as the remark [[§37 Regular Submanifolds#^rem-37-1|No Normal Vectors Without a Metric]] notes, Hamiltonian mechanics takes place.
 
 ^rem-55-1
 
@@ -246,7 +246,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 >
 > $w^{\mathrm{ver}}$ is the **vertical part** of $w$. In coordinates, if $w = \sum_i a^i\, \partial/\partial \bar x^i|_{(p,0)} + \sum_j b_j\, \partial/\partial \xi_j|_{(p,0)}$, then $w^{\mathrm{hor}} = \sum_i a^i\, \partial/\partial \bar x^i|_{(p,0)}$ and $w^{\mathrm{ver}} = \sum_j b_j\, dx^j|_p$.
 >
-> The space $V_{(p,0)}$, the map $j_p$ and the splitting are defined without charts; the coordinates only compute them. So, canonically, $T_{(p,0)}(T^{\ast}M) \cong T_{(p,0)}\mathcal{Z} \oplus T_p^{\ast}M$.
+> The space $V_{(p,0)}$, the map $j_p$ and the splitting are defined without charts; the coordinates only compute them. So, naturally, $T_{(p,0)}(T^{\ast}M) \cong T_{(p,0)}\mathcal{Z} \oplus T_p^{\ast}M$.
 
 ^prop-55-6
 
@@ -463,7 +463,7 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 > [!remark] Remark: Review Session: Why the Hessian Needs a Critical Point
 > *Review session, Oct 16, in answer to a question asking for a careful definition of the Hessian.* The fact: for $f : M \to \mathbb{R}$, $\operatorname{Hess}_p f$ is only *intrinsically* defined if $df_p = 0$. If $df_p = 0$ it is a well-defined quadratic form, a symmetric bilinear form on $T_pM$ (Proposition [[§54 Critical Points and the Hessian#^prop-54-3|§54.3]]); if $df_p \neq 0$ it is not: the Hessian matrix can always be written down in coordinates, but under a change of coordinates the new matrix involves first derivatives of $f$, so it does not transform as a quadratic form (Proposition [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]], Example [[§54 Critical Points and the Hessian#^ex-54-1|§54.1]]).
 >
-> There is also a geometric reason, in $T^{\ast}M$. At a critical point $p$ the section $S_f = s_f(M)$ meets the zero section $\mathcal{Z}$ at $(p, 0)$, and along $\mathcal{Z}$ the tangent space of $T^{\ast}M$ splits naturally into the part tangent to $\mathcal{Z}$ and the vertical part, the tangent space to the fibre, which is $T_p^{\ast}M$ itself (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]]): $T_{(p,0)}(T^{\ast}M) = \zeta_{\ast p}(T_pM) \oplus j_p(T_p^{\ast}M)$. This splitting is what identifies the quadratic form: push $v \in T_pM$ forward by $s_f$; the vertical component of $(s_f)_{\ast p}v$ is the covector $\operatorname{Hess}_p f(v, \cdot)$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]]). *(Filled in.)* Away from the zero section the vertical space is still canonical, but there is no canonical complement to project along, so the vertical component of $(s_f)_{\ast p}v$ depends on the chart — the geometric counterpart of the first-derivative term in the transformation law. The full argument is the one already in these notes.
+> There is also a geometric reason, in $T^{\ast}M$. At a critical point $p$ the section $S_f = s_f(M)$ meets the zero section $\mathcal{Z}$ at $(p, 0)$, and along $\mathcal{Z}$ the tangent space of $T^{\ast}M$ splits naturally into the part tangent to $\mathcal{Z}$ and the vertical part, the tangent space to the fibre, which is $T_p^{\ast}M$ itself (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]]): $T_{(p,0)}(T^{\ast}M) = \zeta_{\ast p}(T_pM) \oplus j_p(T_p^{\ast}M)$. This splitting is what identifies the quadratic form: push $v \in T_pM$ forward by $s_f$; the vertical component of $(s_f)_{\ast p}v$ is the covector $\operatorname{Hess}_p f(v, \cdot)$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]]). *(Filled in.)* Away from the zero section the vertical space is still natural, but there is no natural complement to project along, so the vertical component of $(s_f)_{\ast p}v$ depends on the chart — the geometric counterpart of the first-derivative term in the transformation law.
 
 ^rem-55-3
 
@@ -471,7 +471,7 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 
 The picture from the review session. At $(p, 0)$ the tangent vector $(s_f)_{\ast p}v$ to $S_f$ splits into a part along the zero section, $\zeta_{\ast p}v$, and a vertical part in the fibre $T_p^{\ast}M$; the vertical part is $\operatorname{Hess}_p f(v, \cdot)$.
 
-**Transcription note (review session).** Page 52 of the handwritten notes writes the key identification as “$T_pZ \cong T_p^{\ast}M$”. The tangent space of the zero section is $T_p\mathcal{Z} \cong T_pM$; it is the *vertical* space at $(p,0)$, equivalently the quotient $T_{(p,0)}(T^{\ast}M)/T_p\mathcal{Z}$, that is naturally $T_p^{\ast}M$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]]).
+**Transcription note (review session).** Page 52 of the handwritten notes writes the key identification as “$T_pZ \cong T_p^{\ast}M$”. The tangent space of the zero section is $T_{(p,0)}\mathcal{Z} \cong T_pM$; it is the *vertical* space at $(p,0)$, equivalently the quotient $T_{(p,0)}(T^{\ast}M)/T_{(p,0)}\mathcal{Z}$, that is naturally $T_p^{\ast}M$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]]).
 
 ## Critical Points of Morse Functions
 
@@ -533,7 +533,7 @@ The converse fails: in Example [[§55 Morse Functions and the Zero Section#^ex-5
 
 ## The Hessian from the Zero Section
 
-*Lecture 20, the day of the midterm: topics that do not fit in the narrative of vector fields. Vector fields resume, from the dynamical point of view, on Monday. First the Hessian, mentioned in the previous lecture without being written down.*
+*Lecture 20: topics that do not fit in the narrative of vector fields. First the Hessian, mentioned in the previous lecture without being written down.*
 
 *The claim* (Proposition [[§54 Critical Points and the Hessian#^prop-54-3|§54.3]] and Definition [[§54 Critical Points and the Hessian#^def-54-2|§54.2]]): if $f : M \to \mathbb{R}$ is smooth and $df_p = 0$, there is a well-defined quadratic form, a symmetric bilinear form $\operatorname{Hess}_p f : T_pM \times T_pM \to \mathbb{R}$, whose matrix in any coordinates is $\big(\partial^2 f/\partial x^i \partial x^j(p)\big)$. This matrix can be written in any coordinate system at any point, but it defines a coordinate-independent quadratic form only at a critical point. Lecture 20 explained why, coordinate-free.
 
@@ -613,7 +613,7 @@ the first sum does not vanish in general, so the matrix does not transform like 
 > \partial^\alpha (x - c)^\beta = \begin{cases} \dfrac{\beta!}{(\beta - \alpha)!}\, (x - c)^{\beta - \alpha} & \text{if } \alpha \le \beta, \\[4pt] 0 & \text{otherwise,} \end{cases}
 > $$
 >
-> with $(\beta - \alpha)_i = \beta_i - \alpha_i$. In particular $\partial^\alpha (x - c)^\beta(p) = \beta!$ if $\alpha = \beta$ and $0$ if $\alpha \ne \beta$; so the coefficients of a polynomial $P = \sum_{|\beta| \le k} c_\beta\, (x - c)^\beta$ are $c_\beta = \partial^\beta P(p)/\beta!$.
+> with $(\beta - \alpha)_i = \beta_i - \alpha_i$. In particular $\partial^\alpha (x - c)^\beta(p) = \beta!$ if $\alpha = \beta$ and $0$ if $\alpha \ne \beta$; so the coefficients of a polynomial $P = \sum_{|\beta| \le k} a_\beta\, (x - c)^\beta$ are $a_\beta = \partial^\beta P(p)/\beta!$.
 
 ^lem-55-12
 
@@ -624,7 +624,7 @@ the first sum does not vanish in general, so the matrix does not transform like 
 > \frac{\partial^{|\alpha|}}{\partial r^\alpha} \prod_{i=1}^m (r^i - c^i)^{\beta_i} = \prod_{i=1}^m \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i}, \qquad \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i} = \begin{cases} \dfrac{\beta_i!}{(\beta_i - \alpha_i)!} (r^i - c^i)^{\beta_i - \alpha_i} & \alpha_i \le \beta_i, \\ 0 & \alpha_i > \beta_i . \end{cases}
 > $$
 >
-> That is, $\partial^\alpha (x - c)^\beta = \frac{\beta!}{(\beta - \alpha)!} (x - c)^{\beta - \alpha}$ if $\alpha \le \beta$, and $0$ otherwise. At $x = c$, i.e. at the point $p$, the factor $(r^i - c^i)^{\beta_i - \alpha_i}$ is $1$ if $\alpha_i = \beta_i$ and $0$ if $\alpha_i < \beta_i$; so $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. For the last statement, apply $\partial^\alpha$ to $P$ and evaluate at $p$: $\partial^\alpha P(p) = \sum_\beta c_\beta\, \partial^\alpha (x - c)^\beta(p) = c_\alpha\, \alpha!$.
+> That is, $\partial^\alpha (x - c)^\beta = \frac{\beta!}{(\beta - \alpha)!} (x - c)^{\beta - \alpha}$ if $\alpha \le \beta$, and $0$ otherwise. At $x = c$, i.e. at the point $p$, the factor $(r^i - c^i)^{\beta_i - \alpha_i}$ is $1$ if $\alpha_i = \beta_i$ and $0$ if $\alpha_i < \beta_i$; so $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. For the last statement, apply $\partial^\alpha$ to $P$ and evaluate at $p$: $\partial^\alpha P(p) = \sum_\beta a_\beta\, \partial^\alpha (x - c)^\beta(p) = a_\alpha\, \alpha!$.
 
 ^pf-55-12
 
@@ -636,13 +636,25 @@ the first sum does not vanish in general, so the matrix does not transform like 
 ^prop-55-13
 
 > [!proof]+ Proof
-> *(Lecture 20: the quotient isolates the partial sum of the Taylor series, killing derivatives of order $k+1$ and higher. Filled in.)* It suffices to show that $[g] \in I_p^{k+1}$ if and only if all partials of $g$ of orders $0, \ldots, k$ vanish at $p$. *Only if.* A product $g_1 \cdots g_{k+1}$ of germs vanishing at $p$: by the Leibniz rule, a partial derivative of order $\le k$ of the product is a sum of products in each of which some factor $g_i$ is not differentiated, and so vanishes at $p$; sums of such products behave the same. *If.* Applying Hadamard's lemma (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]]) repeatedly to the coefficient functions, as in the proof of Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|§29.5]], gives, on a ball about $p$,
+> *(Lecture 20: the quotient isolates the partial sum of the Taylor series, killing derivatives of order $k+1$ and higher. Filled in.)* It suffices to show that $[g] \in I_p^{k+1}$ if and only if all partials of $g$ of orders $0, \ldots, k$ vanish at $p$. *Only if.* A product $g_1 \cdots g_{k+1}$ of germs vanishing at $p$: by the Leibniz rule, a partial derivative of order $\le k$ of the product is a sum of products in each of which some factor $g_i$ is not differentiated, and so vanishes at $p$; sums of such products behave the same. *If.* First, by induction on $k \ge 0$: on a ball about $p$ (the preimage under the chart of a ball $B$ centred at $0$ in its image) there are a polynomial $P_k$ of degree $\le k$ in $x^1, \ldots, x^m$ and smooth functions $g_\beta$, $|\beta| = k+1$, with
+>
+> $$
+> g = P_k + \sum_{|\beta| = k+1} x^\beta\, g_\beta .
+> $$
+>
+> For $k = 0$ this is Hadamard's lemma (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]]), applied to the coordinate representation of $g$ on the ball $B$, whose centre is $0$: $g = g(p) + \sum_i x^i g_i$ with $g_i$ smooth. If it holds for $k$, apply Hadamard's lemma on $B$ to each $g_\beta$, $g_\beta = g_\beta(p) + \sum_i x^i g_{\beta, i}$ with $g_{\beta, i}$ smooth, and substitute:
+>
+> $$
+> g = \Big( P_k + \sum_{|\beta| = k+1} g_\beta(p)\, x^\beta \Big) + \sum_{|\beta| = k+1} \sum_{i=1}^m x^{\beta + e_i}\, g_{\beta, i} ,
+> $$
+>
+> where $\beta + e_i$ is $\beta$ with its $i$-th entry raised by $1$, a multi-index of order $k + 2$. The bracket is a polynomial of degree $\le k + 1$; adding up, for each $\gamma$ with $|\gamma| = k + 2$, the $g_{\beta, i}$ with $\beta + e_i = \gamma$ gives the statement for $k + 1$. (The proof of Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|§29.5]] is the step from $k = 0$ to $k = 1$.) Next, the coefficients of $P_k = \sum_{|\alpha| \le k} a_\alpha\, x^\alpha$. Each $x^\beta g_\beta$ with $|\beta| = k+1$ is a product of $k + 1$ functions vanishing at $p$ ($k$ coordinate functions, and one coordinate function times $g_\beta$), so by the “only if” part all its partials of order $\le k$ vanish at $p$. Hence $\partial^\alpha g(p) = \partial^\alpha P_k(p) = \alpha!\, a_\alpha$ for $|\alpha| \le k$ (Lemma [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]], with $c = 0$ for the chart centred at $p$), and so, on that ball,
 >
 > $$
 > g = \sum_{|\alpha| \le k} \frac{\partial^\alpha g(p)}{\alpha!}\, x^\alpha + \sum_{|\beta| = k+1} x^\beta\, g_\beta
 > $$
 >
-> with $g_\beta$ smooth. If all $\partial^\alpha g(p)$ with $|\alpha| \le k$ vanish, then $[g] = \sum_\beta [x^\beta][g_\beta]$, and each $x^\beta$, $|\beta| = k+1$, is a product of $k + 1$ coordinate functions vanishing at $p$; so $[g] \in I_p^{k+1}$. Finally, a polynomial $P = \sum_{|\beta| \le k} c_\beta\, x^\beta$ is the Taylor polynomial of its own germ, since $\partial^\beta P(p)/\beta! = c_\beta$ (Lemma [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]], with $c = 0$ for the chart centred at $p$); so the map from $J^k_p$ to Taylor polynomials is onto.
+> with $g_\beta$ smooth. If all $\partial^\alpha g(p)$ with $|\alpha| \le k$ vanish, then $[g] = \sum_\beta [x^\beta][g_\beta]$, and each $x^\beta$, $|\beta| = k+1$, is a product of $k + 1$ coordinate functions vanishing at $p$; so $[g] \in I_p^{k+1}$. Finally, a polynomial $P = \sum_{|\beta| \le k} a_\beta\, x^\beta$ is the Taylor polynomial of its own germ, since $\partial^\beta P(p)/\beta! = a_\beta$ (Lemma [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]], with $c = 0$ for the chart centred at $p$); so the map from $J^k_p$ to Taylor polynomials is onto.
 
 ^pf-55-13
 
@@ -653,7 +665,7 @@ the first sum does not vanish in general, so the matrix does not transform like 
 *(Not from lecture; figure added.)* The jets of a function $f$ of one variable at $p$, drawn as its Taylor polynomials (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-13|§55.13]]): the $0$-jet $T_0$ is the value $f(p)$, the $1$-jet $T_1$ the tangent line, the $2$-jet $T_2$ the osculating parabola. Two germs have the same $k$-jet when their difference lies in $I_p^{k+1}$, that is, vanishes to order $k + 1$ at $p$. For $k = 1$, removing the value leaves $I_p/I_p^2 \cong T_p^{\ast}M$ (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]): the $1$-jet of a germ vanishing at $p$ is its differential.
 
 > [!remark] Remark: Jets and the Hessian
-> Jets are useful in some areas. For $k = 2$, the jet packages the information contained in the function at $p$ — the value, the first derivatives, the second derivatives — in one abstract object. Within $J^2_p$, however, the first and the second partials cannot be separated naturally, except in a special situation; a critical point is the special situation, and it gives the Hessian.
+> For $k = 2$, the jet packages the information contained in the function at $p$ — the value, the first derivatives, the second derivatives — in one abstract object. Within $J^2_p$, however, the first and the second partials cannot be separated naturally, except in a special situation; a critical point is the special situation, and it gives the Hessian.
 
 ^rem-55-5
 

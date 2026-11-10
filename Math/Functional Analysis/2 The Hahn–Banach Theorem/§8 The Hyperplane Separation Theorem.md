@@ -22,7 +22,7 @@ This is the first application of [[§5 Statement and Motivation#^thm-5-3|Hahn–
 
 ^thm-8-1
 
-In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies strictly on one side of it. The point $y_0$ may be a boundary point of $K$ (it is excluded from $K$ only because $K$ has no boundary points), and the statement still holds; the hyperplane is then a supporting hyperplane at $y_0$.
+In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies strictly on one side of it. Here $\ell \neq 0$, since $K$ is nonempty and $\ell(x) < c_0 = \ell(y_0)$ for $x \in K$; so $\{\ell = c_0\}$ is a hyperplane in the sense of Definition [[§5 Statement and Motivation#^def-5-3|§5.3]]. The point $y_0$ may be a boundary point of $K$ (it is excluded from $K$ only because $K$ has no boundary points), and the statement still holds; the hyperplane is then a supporting hyperplane at $y_0$.
 
 ![[m556-6-1.svg]]
 *Left: the point $y_0$ lies on the hyperplane $\{\ell = c_0\}$ (red), and $K$ — dashed, since every point of $K$ is interior — lies strictly in the half-space $\{\ell < c_0\}$. Right: $y_0$ may sit on the edge of $K$ (it is still not in $K$); the hyperplane is then a supporting hyperplane, touching $K$'s boundary at $y_0$ without meeting $K$.*
@@ -60,7 +60,7 @@ In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies s
 > \ell(a y_0) = a \le 0 \le p_K(a y_0),
 > $$
 >
-> since $p_K \ge 0$. So $\ell \le p_K$ on $Y$. By the Hahn–Banach theorem (Theorem [[§5 Statement and Motivation#^thm-5-3|§5.3]]), $\ell$ extends to a linear functional $L$ on $X$ with $L(x) \le p_K(x)$ for all $x \in X$. For this $L$,
+> since $p_K \ge 0$ (Proposition [[§7 Convex Sets and the Gauge#^prop-7-5|§7.5]](a)). So $\ell \le p_K$ on $Y$. By the Hahn–Banach theorem (Theorem [[§5 Statement and Motivation#^thm-5-3|§5.3]]), $\ell$ extends to a linear functional $L$ on $X$ with $L(x) \le p_K(x)$ for all $x \in X$. For this $L$,
 >
 > $$
 > L(y_0) = \ell(y_0) = 1, \qquad L(x) \le p_K(x) < 1 \quad \text{for all } x \in K,
@@ -68,7 +68,7 @@ In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies s
 >
 > which is the claim with $c_0 = 1$ and $L$ in the role of the functional in the statement.
 >
-> **Step 4: The general case.** (Left to us in lecture; written out here.) If $0 \notin K$, pick any $x_1 \in K$ and translate: $K' = K - x_1 = \{ x - x_1 : x \in K \}$. Translation preserves convexity, sends interior points to interior points (the definition of interior point involves only differences $x_0 + ty$), and sends $x_1$ to $0$, so $K'$ is convex with every point interior and $0 \in K'$; also $y_0 - x_1 \notin K'$. Steps 2–3 give a linear $L : X \to \mathbb{R}$ with $L(y_0 - x_1) = 1$ and $L(x - x_1) < 1$ for all $x \in K$. By linearity, with $c_0 = 1 + L(x_1)$,
+> **Step 4: The general case.** (Left as an exercise in lecture; written out here.) If $0 \notin K$, pick any $x_1 \in K$ and translate: $K' = K - x_1 = \{ x - x_1 : x \in K \}$. Translation preserves convexity, sends interior points to interior points (the definition of interior point involves only differences $x_0 + ty$), and sends $x_1$ to $0$, so $K'$ is convex with every point interior and $0 \in K'$; also $y_0 - x_1 \notin K'$. Steps 2–3 give a linear $L : X \to \mathbb{R}$ with $L(y_0 - x_1) = 1$ and $L(x - x_1) < 1$ for all $x \in K$. By linearity, with $c_0 = 1 + L(x_1)$,
 >
 > $$
 > L(y_0) = c_0, \qquad L(x) < c_0 \quad \text{for all } x \in K.

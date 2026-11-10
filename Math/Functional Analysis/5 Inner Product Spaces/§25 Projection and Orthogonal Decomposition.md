@@ -264,7 +264,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 *The decomposition $x_0 = y_0 + v$: $y_0 \in Y$ is the closest point of $Y$ to $x_0$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]), and the error $v = x_0 - y_0$ (red arrow) is perpendicular to $Y$, i.e. parallel to the line $Y^\perp$.*
 
 > [!proof]+ Proof
-> **(1), existence.** Since $Y$ is a linear subspace it is convex, and it is closed by hypothesis. By Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]] there is a unique $y_0 \in Y$ with $\|x_0 - y_0\| = \operatorname{dist}(x_0, Y)$. Put $v = x_0 - y_0$, so $x_0 = y_0 + v$. It remains to show $v \in Y^\perp$, i.e. $(v, y) = 0$ for every $y \in Y$.
+> **(1), existence.** Let $x_0 \in H$. Since $Y$ is a linear subspace it is nonempty ($0 \in Y$) and convex, and it is closed by hypothesis. By Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]] there is a unique $y_0 \in Y$ with $\|x_0 - y_0\| = \operatorname{dist}(x_0, Y)$. Put $v = x_0 - y_0$, so $x_0 = y_0 + v$. It remains to show $v \in Y^\perp$, i.e. $(v, y) = 0$ for every $y \in Y$.
 >
 > *Perturbing the minimizer.* Fix $y \in Y$ and $t \in \mathbb{F}$. Since $y_0 + ty \in Y$ (a subspace), the minimality of $y_0$ gives
 >
@@ -272,7 +272,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > \|v\|^2 = \|x_0 - y_0\|^2 \le \|x_0 - (y_0 + ty)\|^2 = \|v - ty\|^2 .
 > $$
 >
-> Expanding the right side by [[§23 Cauchy–Schwarz and the Induced Norm#^pf-23-1|(5.1)]] with $-t$ in place of $t$,
+> Expanding the right side by [[§23 Cauchy–Schwarz and the Induced Norm#^pf-23-1|(5.1)]] with $v$, $-t$ in place of $x$, $t$, and using $\operatorname{Re}\bigl( t\,(y, v) \bigr) = \operatorname{Re}\bigl( \bar{t}\,(v, y) \bigr)$ (the two numbers are conjugate),
 >
 > $$
 > \|v - ty\|^2 = \|v\|^2 - 2\operatorname{Re}\bigl( \bar{t}\,(v, y) \bigr) + |t|^2\|y\|^2 ,
@@ -313,7 +313,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > - Computational version: [[§52 Orthogonal Projections#^thm-52-1|235 Thm. §52.1]] (the ℝⁿ case, with the projection computed from an orthogonal basis) and, for (2), [[§50 Orthogonal Complements and Angles#^cor-50-4|235 Cor. §50.4]].
 
 > [!remark] Remark: The Promise of Lecture 1 is Kept
-> Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] suggested; the remark following Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] identified exactly this theorem as the missing piece. The hypotheses are sharp: for the subspace $c_{00} \subset \ell^2$, which is not closed, both (1) and (2) fail (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-4|§25.4]]). For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]]).
+> Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (HW1; the statement was suggested in Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] suggested; the remark following Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] identified exactly this theorem as the missing piece. The hypotheses are sharp: for the subspace $c_{00} \subset \ell^2$, which is not closed, both (1) and (2) fail (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-4|§25.4]]). For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]]).
 
 ^rem-25-5
 

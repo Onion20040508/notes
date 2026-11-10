@@ -1229,7 +1229,7 @@ Fix $n \geq 1$ and $a \in \mathbb{Z}$. Then $[a]$ is invertible modulo $n$ if an
 \textit{Idea:} A common divisor of $a, n$ divides $ax - kn = 1$; conversely, B\'ezout gives $ax + ny = 1$.\par
 ($\Rightarrow$) Suppose $ax = 1 + kn$, so $ax - kn = 1$. Any positive integer $d$ dividing both $a$ and $n$ divides $ax - kn = 1$, hence $d = 1$. So $\gcd(a, n) = 1$.
 
-($\Leftarrow$) Suppose $\gcd(a, n) = 1$. By B\'ezout's identity (proved later in this section as a corollary of the classification of subgroups of $\mathbb{Z}$), there are integers $x, y$ with $ax + ny = 1$. Reading this modulo $n$: $ax = 1 - ny \equiv 1 \pmod n$, so $[x]$ is an inverse of $[a]$.
+($\Leftarrow$) Suppose $\gcd(a, n) = 1$. By B\'ezout's identity (Corollary~\ref{cor:generated-subgroups-z-bezout} in \ref{sec:zoo}, a corollary of the classification of subgroups of $\mathbb{Z}$), there are integers $x, y$ with $ax + ny = 1$. Reading this modulo $n$: $ax = 1 - ny \equiv 1 \pmod n$, so $[x]$ is an inverse of $[a]$.
 \end{proof}
 
 \begin{exbox}[{Deciding Invertibility Modulo 5, 6, 7, and 8}]\label{ex:deciding-invertibility-modulo-5-6-7-8}
@@ -9070,7 +9070,7 @@ Let $p < q$ be primes, let $G$ be a group of order $pq$, let $P$ be a Sylow $p$-
 
 \begin{proof}
 \textit{Idea:} $n_q$ divides $p$ and is $\equiv 1 \pmod q$, so $n_q = 1$; the product formula gives $QP = G$, and $(y, x) \mapsto yx$ turns the semidirect multiplication into the multiplication of $G$.\par
-\textit{(Problem Set 8, Problem 8.3(2), as submitted, where $q \equiv 1 \pmod p$ is assumed; the argument does not use this assumption. ``As in (1)'' refers to Problem 8.3(1), the second proof of Proposition~\ref{prop:groups-order-pq}.)}
+\textit{(Problem Set 8, Problem 8.3(2), as submitted, under the assumption $q \equiv 1 \pmod p$ of Problem 8.3(2). The assumption enters only in the sentence that both divisors of $q$ are congruent to $1$ modulo $p$; without it, $n_p \in \{1, q\}$ still holds because $n_p$ divides $q$, and the rest of the argument is unchanged. ``As in (1)'' refers to Problem 8.3(1), the second proof of Proposition~\ref{prop:groups-order-pq}.)}
 
 \textbf{Sylow counts.} As in (1), $n_q \mid p$ and $n_q \equiv 1 \pmod q$ force $n_q = 1$, so $Q$ is normal in $G$. On the other hand, $n_p \mid q$ and $n_p \equiv 1 \pmod p$, and now both divisors $1$ and $q$ of $q$ are congruent to $1$ modulo $p$, so $n_p \in \{1, q\}$ and $P$ need not be normal.
 
@@ -9103,6 +9103,9 @@ Hence $\Phi$ is an isomorphism, and $G \cong Q \rtimes_\varphi P$ for the homomo
 By Proposition~\ref{prop:order-pq-semidirect}, the group $G$ is known once the homomorphism $\varphi \colon P \to \operatorname{Aut}(Q)$ is known. Here $P \cong \mathbb{Z}/p\mathbb{Z}$ and $Q \cong \mathbb{Z}/q\mathbb{Z}$, since groups of prime order are cyclic (Theorem~\ref{thm:groups-prime-order}).
 
 \textit{(Problem Set 8, Problem 8.3(3), as submitted.)} \textbf{Reduction.} Fix isomorphisms $\iota_Q \colon \mathbb{Z}/q\mathbb{Z} \to Q$ and $\iota_P \colon \mathbb{Z}/p\mathbb{Z} \to P$. Then $\alpha \mapsto \iota_Q^{-1} \circ \alpha \circ \iota_Q$ is a group isomorphism $\operatorname{Aut}(Q) \to \operatorname{Aut}(\mathbb{Z}/q\mathbb{Z})$, and composing with $\iota_P$ identifies homomorphisms $P \to \operatorname{Aut}(Q)$ with homomorphisms $\mathbb{Z}/p\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/q\mathbb{Z})$. Hence we may take $Q = \mathbb{Z}/q\mathbb{Z}$ and $P = \mathbb{Z}/p\mathbb{Z}$, both written additively.
+
+\textit{(Not submitted.)} The reduction matches the groups as well. If $\psi \colon \mathbb{Z}/p\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/q\mathbb{Z})$ corresponds to $\varphi \colon P \to \operatorname{Aut}(Q)$, that is, $\psi(k) = \iota_Q^{-1} \circ \varphi(\iota_P(k)) \circ \iota_Q$, then $(x, k) \mapsto (\iota_Q(x), \iota_P(k))$ is an isomorphism $\mathbb{Z}/q\mathbb{Z} \rtimes_\psi \mathbb{Z}/p\mathbb{Z} \to Q \rtimes_\varphi P$. It is a bijection because $\iota_Q$ and $\iota_P$ are, and it respects the multiplications because $\iota_P$ is a homomorphism and
+\[ \iota_Q\big(x_1 + \psi(k_1)(x_2)\big) = \iota_Q(x_1)\,\iota_Q\big(\psi(k_1)(x_2)\big) = \iota_Q(x_1)\,\varphi(\iota_P(k_1))\big(\iota_Q(x_2)\big). \]
 
 \begin{lembox}[{Automorphisms of $\mathbb{Z}/q\mathbb{Z}$}]\label{lem:aut-zq}
 Let $q$ be a prime. For $a \in (\mathbb{Z}/q\mathbb{Z})^\times$ define $\alpha_a \colon \mathbb{Z}/q\mathbb{Z} \to \mathbb{Z}/q\mathbb{Z}$ by $\alpha_a(x) = ax$.
@@ -10047,7 +10050,7 @@ $(1\,2)$ swaps the first two coordinates, so it negates $b_1$ and fixes $b_2$: i
 
 \textit{Source: Lecture (Fri Nov 6); the MATH 420 slides \emph{Complex inner products}, posted for this course. Reference for the linear algebra: Axler, \emph{Linear Algebra Done Right}, Ch.~6.}
 
-Over $\mathbb{C}$ the averaging argument of \ref{sec:invariant-inner-products} needs a replacement for the inner product, because no bilinear form on a complex vector space is positive definite. This section sets up the replacement: sesquilinear and Hermitian forms, their matrices, orthogonal projection, and orthonormal bases by Gram--Schmidt. With a positive definite Hermitian form in place of the inner product, a finite group acts on a complex representation by unitary matrices.
+Over $\mathbb{C}$ the averaging argument of \ref{sec:invariant-inner-products} needs a replacement for the inner product, because no bilinear form on a nonzero complex vector space is positive definite. This section sets up the replacement: sesquilinear and Hermitian forms, their matrices, orthogonal projection, and orthonormal bases by Gram--Schmidt. With a positive definite Hermitian form in place of the inner product, a finite group acts on a finite-dimensional complex representation by unitary matrices in a suitable basis; this is stated in the remark \emph{Why Not Bilinear, and Unitary Matrices}, and its averaging argument is not written out here.
 
 \begin{exbox}[{The Dot Product on $\mathbb{C}^2$}]\label{ex:complex-dot-product}
 Bilinear forms and symmetric bilinear forms make sense over $\mathbb{C}$, with the same definitions as over $\mathbb{R}$. The dot product $x \cdot y = x_1 y_1 + x_2 y_2$ on $\mathbb{C}^2$ is one. Two facts from the real case fail for it.
@@ -10393,7 +10396,7 @@ Representation theory also proves theorems about groups. A first example: every 
 
 \textit{Source: Lecture and Worksheet 15 (Mon Nov 9); Worksheet 16.}
 
-By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}).
+By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), finite-dimensional representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces, when the field contains $\mathbb{Q}$ (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}).
 
 % ============================================================================
 % SECTION: INVARIANT VECTORS (Worksheet 15; lecture Mon Nov 9)

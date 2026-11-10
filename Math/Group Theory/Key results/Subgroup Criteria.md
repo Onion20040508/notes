@@ -15,7 +15,7 @@ tags: [group-theory, hub]
 - [[§4 Subgroups#^def-4-1|Definition §4.1: Subgroup]]
 
 ## Used in (Group Theory)
-- (not cited later in the course)
+- [[§35 The Center#^prop-35-2|Proposition §35.2: The Center Is a Subgroup]]
 
 ## Connections
 - **In practice.** The one-step test (H ≠ ∅ and a, b ∈ H ⇒ ab⁻¹ ∈ H) is the shortcut recommended in the [[Group Theory Toolkit|Toolkit]]. The notes themselves mostly check e ∈ H and closure under products and inverses directly ([[§4 Subgroups#^def-4-1|Def. §4.1]]): kernels and images ([[§15 Homomorphisms#^prop-15-2|§15.2]]), stabilizers ([[§26 Stabilizers and Fixed Points#^prop-26-1|§26.1]]), the center ([[§35 The Center#^prop-35-2|§35.2]]).

@@ -104,9 +104,11 @@ The function $f_\varphi$ is smooth on the open set $\varphi(U)$ (Proposition [[Â
 >
 > $$
 > J_{ki} = \frac{\partial y^k}{\partial x^i}(p) \qquad \text{in row } k \text{ and column } i .
-> \]
+> $$
+>
 > Written out,
-> \[
+>
+> $$
 > J = \begin{pmatrix}
 > \dfrac{\partial y^1}{\partial x^1}(p) & \cdots & \dfrac{\partial y^1}{\partial x^m}(p) \\
 > \vdots & \ddots & \vdots \\
@@ -120,7 +122,7 @@ The function $f_\varphi$ is smooth on the open set $\varphi(U)$ (Proposition [[Â
 > H^{(x)}_{ij}(p) = \sum_{k,l=1}^m J_{ki}\, J_{lj}\, H^{(y)}_{kl}(p) \;+\; \sum_{k=1}^m \frac{\partial f}{\partial y^k}(p)\, \frac{\partial^2 y^k}{\partial x^i\, \partial x^j}(p),
 > $$
 >
-> where $\partial^2 y^k/\partial x^i \partial x^j(p) = \partial/\partial x^i|_p\big[\partial y^k/\partial x^j\big]$ is the Hessian matrix of the function $y^k$ in the chart $\varphi$ restricted to $U \cap V$. In matrix form, $H^{(x)}_p = J^{\mathsf T} H^{(y)}_p J + \sum_k \frac{\partial f}{\partial y^k}(p)\, \Big(\frac{\partial^2 y^k}{\partial x^i \partial x^j}(p)\Big)_{i,j}$. If $p$ is a critical point of $f$, the second sum vanishes:
+> where $\partial^2 y^k/\partial x^i \partial x^j(p) = \partial/\partial x^i|_p\big[\partial y^k/\partial x^j\big]$ is the $(i, j)$ entry of the Hessian matrix of the function $y^k$ in the chart $\varphi$ restricted to $U \cap V$. In matrix form, $H^{(x)}_p = J^{\mathsf T} H^{(y)}_p J + \sum_k \frac{\partial f}{\partial y^k}(p)\, \Big(\frac{\partial^2 y^k}{\partial x^i \partial x^j}(p)\Big)_{i,j}$. If $p$ is a critical point of $f$, the second sum vanishes:
 >
 > $$
 > H^{(x)}_p = J^{\mathsf T} H^{(y)}_p\, J ,

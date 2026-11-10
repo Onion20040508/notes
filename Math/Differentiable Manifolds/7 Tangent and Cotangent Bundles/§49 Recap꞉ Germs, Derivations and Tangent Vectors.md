@@ -25,7 +25,7 @@ is the rate of change of $f$ along a curve $\gamma$ through $p$ with velocity $v
 
 ![[§25 The Geometric Tangent Space#^def-25-4]]
 
-**Step 2: only the behaviour near $p$ matters, so use germs.** $D_v(f)$ depends on $f$ only on a neighbourhood of $p$, however small. Two functions defined near $p$ *agree near $p$* if they coincide on some open set around $p$ ([[§27 Germs#^def-27-1|Definition §27.1]]); a *germ* at $p$ is an equivalence class $[f]$ of this relation, and $C^\infty_p(M)$ is the set of germs ([[§27 Germs#^def-27-2|Definition §27.2]]). A germ remembers $f$ near $p$ without committing to a particular neighbourhood — no single neighbourhood serves every representative ([[§27 Germs#^ex-27-1|Example §27.1]]). Germs can be added and multiplied, and evaluated at $p$: $[f](p) = f(p)$ ([[§27 Germs#^prop-27-2|Proposition §27.2]]). The germs vanishing at $p$ form the ideal $I_p$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-3|Definition §28.3]]), which returns in the cotangent space.
+**Step 2: only the behaviour near $p$ matters, so use germs.** $D_v(f)$ depends on $f$ only on a neighbourhood of $p$, however small. Two functions defined near $p$ *agree near $p$* if they coincide on some open set around $p$ ([[§27 Germs#^def-27-1|Definition §27.1]]); a *germ* at $p$ is an equivalence class $[f]$ of this relation, and $C^\infty_p(M)$ is the set of germs ([[§27 Germs#^def-27-2|Definition §27.2]]). A germ remembers $f$ near $p$ without committing to a particular neighbourhood — no single neighbourhood serves every representative ([[§27 Germs#^ex-27-1|Example §27.1]]). Germs can be added and multiplied, and evaluated at $p$: $[f](p) = f(p)$ ([[§27 Germs#^prop-27-2|Proposition §27.2]]). The germs vanishing at $p$ form the ideal $I_p$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-3|Definition §28.3]]), which returns, with its square $I_p^2$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-4|§28.4]]), in the cotangent space.
 
 ![[§27 Germs#^def-27-1]]
 
@@ -78,7 +78,7 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 
 ![[§22 The Differential of a Map Between Vector Spaces#^def-22-5]]
 
-**Step 6: back to arrows, through curves.** A smooth curve $\gamma$ with $\gamma(0) = p$ has the velocity $D_\gamma = \gamma_{\ast 0}(d/dt|_0)$, which differentiates $f$ by $D_\gamma[f] = (f \circ \gamma)'(0)$ ([[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Definition §31.2]]), and every tangent vector is the velocity of some curve ([[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|Theorem §31.4]]). So the arrow picture survives on every manifold, as “the velocity of a curve”, even where there is no ambient space to draw the arrow in.
+**Step 6: back to arrows, through curves.** A smooth curve $\gamma$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|§31.1]]) with $\gamma(0) = p$ has the velocity $D_\gamma = \gamma_{\ast 0}(d/dt|_0)$, which differentiates $f$ by $D_\gamma[f] = (f \circ \gamma)'(0)$ ([[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Definition §31.2]]), and every tangent vector is the velocity of some curve ([[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|Theorem §31.4]]). So the arrow picture survives on every manifold, as “the velocity of a curve”, even where there is no ambient space to draw the arrow in.
 
 ![[§31 Tangent Vectors as Velocities of Curves#^def-31-1]]
 
@@ -106,10 +106,12 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 >
 >    $$
 >    F_{*p} v = (2 \cdot 3 + 0)\, \frac{\partial}{\partial u}\Big|_{F(p)} + (3 - 1)\, \frac{\partial}{\partial w}\Big|_{F(p)} = 6\, \frac{\partial}{\partial u} + 2\, \frac{\partial}{\partial w} .
-> \]
-> In matrix form, the Jacobian acts on the column of components of $v$:
-> \[
-> \begin{pmatrix} 2 & 0 \ 1 & 1 \end{pmatrix} \begin{pmatrix} 3 \ -1 \end{pmatrix} = \begin{pmatrix} 6 \ 2 \end{pmatrix} .
+>    $$
+>
+>    In matrix form, the Jacobian acts on the column of components of $v$:
+>
+>    $$
+>    \begin{pmatrix} 2 & 0 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} 3 \\ -1 \end{pmatrix} = \begin{pmatrix} 6 \\ 2 \end{pmatrix} .
 >    $$
 >
 >    By the definition instead: $(F_{\ast p}v)[u] = v[u \circ F] = v[x^2] = 3 \cdot 2 = 6$ and $(F_{\ast p}v)[w] = v[x + y] = 3 - 1 = 2$, the same components by the universal formula.
@@ -118,18 +120,18 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 
 ^ex-49-1
 
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
+
 *(Not from lecture; the conversion diagram of the midterm check sheet, added on request.)* One tangent vector at $p$, in four equivalent forms. Chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$; the numbers on the arrows refer to the remark below.
 
 ![[m591-47-2.svg]]
-
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
 
 > [!remark] Remark: Conversion Diagram for a Tangent Vector
 > 1. *Curve to derivation.* $D_\gamma[f] = (f \circ \gamma)'(0)$, the velocity (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]]).
 > 2. *Derivation to curve.* Every $D$ is a velocity: $\gamma(t) = \varphi^{-1}\big(\varphi(p) + t\,(v^1, \ldots, v^m)\big)$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]).
 > 3. *Derivation to components.* $v^j = D[x^j] = dx^j|_p(D)$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]).
 > 4. *Components to derivation.* $D = \sum_j v^j\, \partial/\partial x^j|_p$, where $\partial/\partial x^j|_p[f] = \partial (f \circ \varphi^{-1})/\partial r^j\,(\varphi(p))$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]).
-> 5. *Arrow to derivation.* For $M \subseteq \mathbb{R}^N$: $w \mapsto D_w$, $D_w[f] = \frac{d}{dt}\big|_{t=0} \tilde f(p + tw)$ for any smooth extension $\tilde f$; on a submanifold $T^{\mathrm{geo}}_pM \cong T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), $w$ being $\gamma'(0)$ for a curve $\gamma$ in $M$. In the identity chart of $\mathbb{R}^N$, the components of $D_w$ are the entries of $w$.
+> 5. *Arrow to derivation.* For $M \subseteq \mathbb{R}^N$: $w \mapsto D_w$, $D_w[f] = \frac{d}{dt}\big|_{t=0} \tilde f(p + tw)$ for any smooth extension $\tilde f$; on a regular level set $T^{\mathrm{geo}}_pM \cong T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), $w$ being $\gamma'(0)$ for a curve $\gamma$ in $M$. In the identity chart of $\mathbb{R}^N$, the components of $D_w$ are the entries of $w$.
 >
 > *Change of chart.* $\tilde v^j = \sum_i \frac{\partial \tilde x^j}{\partial x^i}(p)\, v^i$, the Jacobian of the transition function acting on the components (Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]).
 

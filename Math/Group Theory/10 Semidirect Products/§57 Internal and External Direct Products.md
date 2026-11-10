@@ -12,7 +12,7 @@ tags: [group-theory, math493]
 > [!remark] Remark: Two Meanings of “Direct Sum”
 > Let $V$ be a vector space and $L_1, L_2$ subspaces with $V = L_1 + L_2$ and $L_1 \cap L_2 = \{0\}$; for instance, a plane and a line through the origin in $\mathbb{R}^3$, the line not lying in the plane. Then every $v \in V$ can be written uniquely as $v = v_1 + v_2$ with $v_1 \in L_1$, $v_2 \in L_2$, and one writes $V = L_1 \oplus L_2$. Mathematicians use “direct sum” in two ways:
 > - the **external direct sum** $L_1 \oplus L_2 = \{(v_1, v_2) : v_1 \in L_1,\ v_2 \in L_2\}$, with $(v_1, v_2) + (v_1', v_2') = (v_1 + v_1', v_2 + v_2')$ and $c(v_1, v_2) = (cv_1, cv_2)$, built from $L_1$ and $L_2$ with no ambient space;
-> - the **internal direct sum**: $V$ is given in advance, and $L_1, L_2$ already sit inside it as above.
+> - the **[[§62 Direct Sums and Maschke's Theorem#^def-62-1|internal direct sum]]**: $V$ is given in advance, and $L_1, L_2$ already sit inside it as above.
 >
 > Strictly, the elements of the external direct sum are ordered pairs and the elements of $V$ are not, so in the internal situation one should write $V \cong L_1 \oplus L_2$. The same distinction appears for groups, and it causes the most confusion for semidirect products. The distinction is kept for now, but most authors do not keep it, and the course will soon stop keeping it as well. (Compare embedded versus abstract manifolds.)
 >

@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: bundles — The vectors perpendicular to a submanifold of $\mathbb{R}^n$, collected into an $n$-dimensional manifold that fibres over it; its endpoint map and focal points; and, through the dot product, normal vectors as conormal covectors.*
 
-*Assignment 5, Problem 5.* A submanifold $M \subseteq \mathbb{R}^n$ has, at each of its points, the vectors perpendicular to it; collecting all pairs (point, perpendicular vector) gives the *normal bundle*. Part (a) of the problem shows that it is a manifold of dimension $n$, whatever the dimension of $M$; part (b) introduces the endpoint map and finds the focal points of a parabola. The normal bundle is the Euclidean shadow of the conormal bundle (the remark *The Conormal Bundle* in [[§39 Transversality and Lagrange Multipliers|§39]]; Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]], later, in [[§54 Critical Points and the Hessian|§54]]): the observation that with a metric the conormal space would become the normal space (the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]) is realized here by the dot product of $\mathbb{R}^n$, and Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-3|§42.3]] makes the identification explicit. That the projection to $M$ is a fibration (Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-2|§42.2]]) — which is why the normal bundle stands next to the examples of fibrations ([[§41 Examples of Fibrations|§41]]) — and what focal points mean geometrically (Example [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^ex-42-2|§42.2]] below), are added.
+*Assignment 5, Problem 5.* A submanifold $M \subseteq \mathbb{R}^n$ has, at each of its points, the vectors perpendicular to it; collecting all pairs (point, perpendicular vector) gives the *normal bundle*. Part (a) of the problem shows that it is a manifold of dimension $n$, whatever the dimension of $M$; part (b) introduces the endpoint map and finds the focal points of a parabola. The normal bundle is the Euclidean shadow of the conormal bundle (the remark *The Conormal Bundle* in [[§39 Transversality and Lagrange Multipliers|§39]]; Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]], later, in [[§55 Morse Functions and the Zero Section|§55]]): the observation that with a metric the conormal space would become the normal space (the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]) is realized here by the dot product of $\mathbb{R}^n$, and Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-3|§42.3]] makes the identification explicit. That the projection to $M$ is a fibration (Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-2|§42.2]]) — which is why the normal bundle stands next to the examples of fibrations ([[§41 Examples of Fibrations|§41]]) — and what focal points mean geometrically (Example [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^ex-42-2|§42.2]] below), are added.
 
 *Three meanings of “normal”.* *(Not from lecture.)* For a regular submanifold $S$ of a manifold $M$ and $p \in S$, three spaces in these notes carry the name:
 
@@ -47,13 +47,13 @@ the $(n-m) \times n$ Jacobian of $G$ in the standard coordinates of $\mathbb{R}^
 > (T^{\mathrm{geo}}_pM)^\perp = \{\, v \in \mathbb{R}^n : v \cdot w = 0 \text{ for all } w \in T^{\mathrm{geo}}_pM \,\}
 > $$
 >
-> for the orthogonal complement of the geometric tangent space with respect to the dot product. The **normal bundle** of $M$ is
+> for the orthogonal complement of the geometric tangent space with respect to the dot product, the **Euclidean normal space** of $M$ at $p$. The **normal bundle** of $M$ is
 >
 > $$
 > \mathcal{N} = \{\, (p, v) \in \mathbb{R}^n \times \mathbb{R}^n : p \in M \text{ and } v \in (T^{\mathrm{geo}}_pM)^\perp \,\} \subseteq \mathbb{R}^{2n},
 > $$
 >
-> with the **projection** $\pi : \mathcal{N} \to M$, $\pi(p, v) = p$. Its fibre over $p$ is $\pi^{-1}(p) = \{p\} \times (T^{\mathrm{geo}}_pM)^\perp$, a copy of the normal space at $p$.
+> with the **projection** $\pi : \mathcal{N} \to M$, $\pi(p, v) = p$. Its fibre over $p$ is $\pi^{-1}(p) = \{p\} \times (T^{\mathrm{geo}}_pM)^\perp$, a copy of the Euclidean normal space at $p$.
 >
 > *Lee: Ch. 6, Tubular Neighborhoods*
 
@@ -77,8 +77,8 @@ the $(n-m) \times n$ Jacobian of $G$ in the standard coordinates of $\mathbb{R}^
 >
 > the $j$-th column of the Jacobian $(\varphi^{-1})'(\varphi(q))$, with components $X_j^l(q)$, $l = 1, \ldots, n$. This is the hint's coordinate field $\partial/\partial x^j$ “regarded as a vector field on $U$ in the sense of Calc III”: the velocity of the $j$-th coordinate line $t \mapsto \varphi^{-1}(\varphi(q) + t e_j)$ at $t = 0$, by the chain rule. Each $X_j^l$ is smooth on $U$, as the composite of the smooth $\varphi$ with the partial derivative $\partial(\varphi^{-1})^l/\partial r^j$ of the smooth map $\varphi^{-1}$.
 >
-> 1. [(i)] *$X_1(q), \ldots, X_n(q)$ form a basis of $\mathbb{R}^n$, for every $q \in U$.* By Lemma [[§37 Regular Submanifolds#^lem-37-13|§37.13]](1), $\varphi'(q)$ is invertible, and the chain rule applied to $\varphi \circ \varphi^{-1} = \mathrm{id}_{\varphi(U)}$ at $\varphi(q)$ gives $\varphi'(q)\,(\varphi^{-1})'(\varphi(q)) = I_n$; so $(\varphi^{-1})'(\varphi(q))$ is the inverse of $\varphi'(q)$, hence invertible, and its columns $X_1(q), \ldots, X_n(q)$ form a basis of $\mathbb{R}^n$. In particular $X_1(q), \ldots, X_m(q)$ are linearly independent at every $q \in U$, not only on $M$; this is what Step 4 uses.
-> 2. [(ii)] *For $q \in U \cap M$, $X_1(q), \ldots, X_m(q)$ form a basis of $T^{\mathrm{geo}}_qM$.* This is Lemma [[§37 Regular Submanifolds#^lem-37-13|§37.13]](3), for the chart $(U, \varphi)$ and the point $q$:
+> - (i) *$X_1(q), \ldots, X_n(q)$ form a basis of $\mathbb{R}^n$, for every $q \in U$.* By Lemma [[§37 Regular Submanifolds#^lem-37-13|§37.13]](1), $\varphi'(q)$ is invertible, and the chain rule applied to $\varphi \circ \varphi^{-1} = \mathrm{id}_{\varphi(U)}$ at $\varphi(q)$ gives $\varphi'(q)\,(\varphi^{-1})'(\varphi(q)) = I_n$; so $(\varphi^{-1})'(\varphi(q))$ is the inverse of $\varphi'(q)$, hence invertible, and its columns $X_1(q), \ldots, X_n(q)$ form a basis of $\mathbb{R}^n$. In particular $X_1(q), \ldots, X_m(q)$ are linearly independent at every $q \in U$, not only on $M$; this is what Step 4 uses.
+> - (ii) *For $q \in U \cap M$, $X_1(q), \ldots, X_m(q)$ form a basis of $T^{\mathrm{geo}}_qM$.* This is Lemma [[§37 Regular Submanifolds#^lem-37-13|§37.13]](3), for the chart $(U, \varphi)$ and the point $q$:
 >
 > $$
 > T^{\mathrm{geo}}_qM = \operatorname{Span}\{X_1(q), \ldots, X_m(q)\}.
@@ -596,7 +596,7 @@ Through $T^{\mathrm{geo}}_pM = \iota_{\ast p}(T_pM)$ (the remark *The Tangent Sp
 
 *Uses:* [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-5|Def. §42.5]], [[§37 Regular Submanifolds#^prop-37-12|§37.12]]
 
-For $M = S^1 \subseteq \mathbb{R}^2$, $UM$ is two circles, $\{(p, \pm Jp)\}$ with $J$ the rotation by $\pi/2$: dimension $1 = 2 \cdot 1 - 1$. In general $UM \to M$ has fibre the unit sphere $S^{m-1}$ of $T^{\mathrm{geo}}_pM$.
+For $M = S^1 \subseteq \mathbb{R}^2$, $UM$ is two circles, $\{(p, \pm Rp)\}$ with $R$ the rotation by $\pi/2$: dimension $1 = 2 \cdot 1 - 1$. In general $UM \to M$ has fibre the unit sphere $S^{m-1}$ of $T^{\mathrm{geo}}_pM$.
 
 > [!theorem] Lemma §42.6: Orthogonal Projection onto a Tangent Space
 > For $q \in M$ let $\pi_q : \mathbb{R}^n \to T^{\mathrm{geo}}_qM$ be the orthogonal projection: $\mathbf{a} - \pi_q(\mathbf{a}) \in (T^{\mathrm{geo}}_qM)^\perp$.
@@ -629,4 +629,4 @@ For $M = S^1 \subseteq \mathbb{R}^2$, $UM$ is two circles, $\{(p, \pm Jp)\}$ wit
 
 ^pf-42-6
 
-*Uses:* [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-1|§42.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]]
+*Uses:* [[§37 Regular Submanifolds#^lem-37-13|§37.13]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-1|§42.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]]

@@ -129,7 +129,7 @@ This is why normality, a condition that looks technical, is the natural one.
 *Uses:* [[§40 Quotient Groups#^def-40-2|Def. §40.2]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]]
 
 > [!remark]- Connections
-> - 590 version: [[§27 Free Groups and Presentations#^rem-27-19|multiply representatives, take the coset]] (590 §26).
+> - 590 version: [[§27 Free Groups and Presentations#^rem-27-19|multiply representatives, take the coset]] (590 §27).
 > - Vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|Addition and scalar multiplication on V∕U]] (LADR 3.102).
 
 > [!example] Example §40.2: $(\mathbb{Z}/4\mathbb{Z})/(2\mathbb{Z}/4\mathbb{Z})$

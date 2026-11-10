@@ -50,7 +50,7 @@ tags: [group-theory, math493]
 ^prop-35-2
 
 > [!proof]+ Proof
-> *Idea:* Subgroup test: a central element can be moved past any $g$.
+> *Idea:* [[§4 Subgroups#^prop-4-2|Subgroup test]]: a central element can be moved past any $g$.
 >
 > *Subgroup:* $eg = g = ge$ for all $g$, so $e \in Z(G)$. If $z_1, z_2 \in Z(G)$ and $g \in G$, then
 >
@@ -66,7 +66,7 @@ tags: [group-theory, math493]
 
 ^pf-35-2
 
-*Uses:* [[§35 The Center#^def-35-1|Def. §35.1]], [[§35 The Center#^def-35-2|Def. §35.2]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§1 The Definition of a Group#^def-1-2|Def. §1.2]]
+*Uses:* [[§35 The Center#^def-35-1|Def. §35.1]], [[§35 The Center#^def-35-2|Def. §35.2]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§1 The Definition of a Group#^def-1-2|Def. §1.2]], [[§4 Subgroups#^prop-4-2|§4.2]]
 
 > [!proof]+ Second proof (that $Z(G)$ is a subgroup)
 > *Idea:* $Z(G)$ is a kernel.

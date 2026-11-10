@@ -13,22 +13,14 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§2 Topological Manifolds#^prop-2-11|Proposition §2.11: Transition Functions Are Homeomorphisms]]
 - [[§17 Differentiable Structures#^def-17-3|Definition §17.3: Diffeomorphism of Open Subsets of Euclidean Space]]
-- [[§17 Differentiable Structures#^def-17-4|Definition §17.4: Smoothly Compatible Charts]]
-- [[§17 Differentiable Structures#^def-17-6|Definition §17.6: Atlas]]
 - [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2: The Abstract Tangent Space]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Definition §29.2: Coordinate Derivations]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7: Basis Theorem]]
 - [[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1: Partial Derivatives Upstairs and Downstairs]]
-- [[§51 The Tangent Bundle#^prop-51-3|Proposition §51.3: The Topology and Smooth Structure of TM]]
-- [[§51 The Tangent Bundle#^def-51-4|Definition §51.4: Local Trivializations of TM]]
 - [[§51 The Tangent Bundle#^def-51-5|Definition §51.5: Charts of TM]]
-
-## Its proof uses (other subjects)
-- [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84 Change-of-basis formula]]
 
 ## Used in (Differentiable Manifolds)
 - [[§51 The Tangent Bundle#^prop-51-3|Proposition §51.3: The Topology and Smooth Structure of TM]]
-- [[§51 The Tangent Bundle#^cor-51-4|Corollary §51.4: The Tangent Bundle Is a Fibration]]
 - [[§51 The Tangent Bundle#^prop-51-5|Proposition §51.5: The Tangent Bundle Is a Manifold (Claim)]]
 - [[§52 The Cotangent Bundle#^prop-52-1|Proposition §52.1: The Transition Maps of T^(ast)M]]
 - [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]

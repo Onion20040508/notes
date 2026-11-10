@@ -258,7 +258,7 @@ $T$ need not be the smallest period. For the rotation field (Example [[§68 Loca
 
 ![[m591-67-5.svg]]
 
-*(Not from lecture; figure added.)* The three kinds of maximal integral curve (Lee, Problem 9-1). An integral curve that comes back to a point comes back with the same velocity, the value of the field there; by Corollary [[§68 Local Existence and Uniqueness#^cor-68-4|§68.4]] it then repeats itself. The loop of the previous figure, which comes back with a different velocity, is none of the three: it is not an integral curve.
+*(Not from lecture; figure added.)* The three kinds of maximal integral curve (Lee, Problem 9-1). An integral curve that comes back to a point comes back with the same velocity, the value of the field there; by Corollary [[§68 Local Existence and Uniqueness#^cor-68-4|§68.4]] it then repeats itself. The loop of Example [[§67 Integral Curves#^ex-67-3|§67.3]], which comes back with a different velocity, is none of the three: it is not an integral curve.
 
 > [!example] Example §68.5: The Euler Field
 > On $\mathbb{R}^2$ let $\mathbf{X} = x\, \dfrac{\partial}{\partial x} + y\, \dfrac{\partial}{\partial y}$. The integral curves solve $\dot x = x$, $\dot y = y$, so $\varphi_t(x_0, y_0) = e^t(x_0, y_0)$, $t \in \mathbb{R}$. For $(x_0, y_0) \neq 0$ the image is the open ray from the origin through $(x_0, y_0)$, since $e^t$ takes every value in $(0, \infty)$ and never $0$; at the origin the integral curve is constant.

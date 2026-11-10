@@ -212,7 +212,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 >
 > In particular the smallest subspace containing $S$ exists, so the definition of span is meaningful.
 >
-> *Lax: Ch. 1, Thm 2(i)*
+> *Lax: Ch. 1, Thm 1(iii) and Thm 2(i)*
 
 ^prop-1-4
 

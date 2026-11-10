@@ -25,9 +25,6 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§7 The Regular Value Theorem#^cor-7-6|Corollary §7.6: Open Domains and Arbitrary Values]]
-- [[§7 The Regular Value Theorem#^ex-7-6|Example §7.6: A Level Set in ℝ⁴]]
-- [[§7 The Regular Value Theorem#^prop-7-7|Proposition §7.7: Regular Points When N ≤ m]]
-- [[§7 The Regular Value Theorem#^cor-7-11|Corollary §7.11: Holomorphic Regular Value Theorem]]
 - [[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|Corollary §12.4: Every Nonzero Value Is a Regular Value of det]]
 - [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|Corollary §12.5: SL(n,ℝ) Is a Manifold of Dimension n² − 1]]
 - [[§20 Manifolds in Euclidean Space#^thm-20-1|Theorem §20.1: The Two Descriptions Agree]]

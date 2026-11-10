@@ -208,7 +208,7 @@ tags: [group-theory, math493]
 ^ex-20-4
 
 ![[m493-19-1.svg]]
-*$M(\sigma)$ for $\sigma = (1\,2\,3)$, as in Ex. §20.2. Column $i$ is $e_{\sigma(i)}$, so its single $1$ (red) sits in row $\sigma(i)$. Multiplying a vector by $M(\sigma)$ therefore carries the entry in position $i$ to position $\sigma(i)$ (right): $a$ moves from $1$ to $2$, $b$ from $2$ to $3$, $c$ from $3$ to $1$.*
+*$M(\sigma)$ for $\sigma = (1\,2\,3)$, as in [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-4|Ex. §20.4]]. Column $i$ is $e_{\sigma(i)}$, so its single $1$ (red) sits in row $\sigma(i)$. Multiplying a vector by $M(\sigma)$ therefore carries the entry in position $i$ to position $\sigma(i)$ (right): $a$ moves from $1$ to $2$, $b$ from $2$ to $3$, $c$ from $3$ to $1$.*
 
 ![[m493-19-a1.gif|480]]
 

@@ -26,6 +26,7 @@ tags: [topology, hub]
 - [[§37 The Fundamental Group of Sⁿ#^ex-37-1|Example §37.1: Wedge of Two Spheres is Simply Connected]]
 
 ## Used in (Differentiable Manifolds)
+- [[§2 Topological Manifolds#^thm-2-1|Theorem §2.1: Topological Invariance of Dimension]]
 - [[§2 Topological Manifolds#^lem-2-7|Lemma §2.7: Concatenation and Reversal of Paths]]
 
 ## Connections

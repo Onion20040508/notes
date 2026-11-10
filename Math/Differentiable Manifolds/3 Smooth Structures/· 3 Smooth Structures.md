@@ -9,8 +9,8 @@ tags: [chapter, differentiable-manifolds]
 
 
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (75), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (24), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (4), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (104), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (114), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (46), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (55), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (39), [[· 9 Sard's Theorem|9 Sard's Theorem]] (4), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (1)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (73), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (24), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (1)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (4), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (106), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (115), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (46), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (51), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (38), [[· 9 Sard's Theorem|9 Sard's Theorem]] (4), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (1)
 **Builds on (other subjects):** [[Linear Algebra]] (10), [[Topology]] (17), [[Multivariable Analysis]] (12)
 
 ## Sections

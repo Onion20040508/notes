@@ -37,7 +37,7 @@ tags: [group-theory, hub]
 - [[§40 Quotient Groups#^prop-40-4|Proposition §40.4: Multiplying Through Representatives]]
 - [[§41 The First and Second Isomorphism Theorems#^thm-41-1|Theorem §41.1: First Isomorphism Theorem]]
 - [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|Theorem §42.3: The Correspondence Theorem]]
-- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4: [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4∣Quotients Along the Correspondence]]]]
+- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4: Quotients Along the Correspondence]]
 - [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|Theorem §42.6: Third Isomorphism Theorem]]
 - [[§47 Commutators#^prop-47-6|Proposition §47.6: The Abelianization Is Abelian]]
 

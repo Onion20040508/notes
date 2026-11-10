@@ -77,7 +77,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§6 Open Quotients#^thm-6-1|§6.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (2), [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
 
 > [!remark] Remark: This Is the Tool
-> This theorem is the main tool for deciding whether a quotient space is $T_2$. The workflow it suggests, and which the [[§9 Complex Projective Space#^prop-9-1|ℂPⁿ example below]] executes: (i) show the relation is open — usually via the saturation slogan; (ii) show the graph is closed — often by exhibiting $\Gamma$ as a preimage of a closed set, or as a compact set inside a Hausdorff space.
+> Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] is the main tool for deciding whether a quotient space is $T_2$. The workflow it suggests, and which the proof of Proposition [[§9 Complex Projective Space#^prop-9-1|§9.1]] for $\mathbb{CP}^n$ executes: (i) show the relation is open — usually via the saturation slogan; (ii) show the graph is closed — often by exhibiting $\Gamma$ as a preimage of a closed set, or as a compact set inside a Hausdorff space.
 
 ^rem-6-2
 

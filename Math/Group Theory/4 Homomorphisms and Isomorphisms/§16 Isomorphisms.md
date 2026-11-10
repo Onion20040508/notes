@@ -54,7 +54,7 @@ tags: [group-theory, math493]
 
 > [!theorem] Proposition §16.2: Composition; $\cong$ Is an Equivalence Relation
 > 1. If $\varphi: G \to H$ and $\psi: H \to K$ are homomorphisms, then $\psi \circ \varphi: G \to K$ is a homomorphism. If both are isomorphisms, so is $\psi \circ \varphi$.
-> 2. Isomorphism of groups is an equivalence relation: $G \cong G$; $G \cong H$ implies $H \cong G$; and $G \cong H$, $H \cong K$ imply $G \cong K$.
+> 2. Isomorphism of groups is an [[§24 Equivalence Relations and Partitions#^def-24-1|equivalence relation]]: $G \cong G$; $G \cong H$ implies $H \cong G$; and $G \cong H$, $H \cong K$ imply $G \cong K$.
 
 ^prop-16-2
 

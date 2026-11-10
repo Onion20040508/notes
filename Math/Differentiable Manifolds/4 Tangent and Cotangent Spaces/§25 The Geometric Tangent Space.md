@@ -9,10 +9,10 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: geometric — Tangent vectors as velocities inside the ambient space, $T^{\mathrm{geo}}_pM = \ker F'(p)$ — available only for manifolds presented by equations.*
 
-*Reference: Lee Ch. 3, “Tangent Vectors.” Begun at the end of Lecture 7; the abstract definition is promised for Friday. HW3 Problem 1 is the diffeomorphism $\mathbb{R} \cong \widetilde{\mathbb{R}}$ of [[§19 Smooth Functions and Smooth Maps#^ex-19-1|Example §19.1]].*
+*Reference: Lee Ch. 3, “Tangent Vectors.” Begun at the end of Lecture 7.*
 
 > [!remark] Remark: Why This Section
-> The goal is to attach to each point $p$ of a smooth manifold $M$ a vector space $T_pM$, the *abstract tangent space*, so that maps between manifolds acquire differentials $dF_p : T_pM \to T_{F(p)}N$ as in [[§22 The Differential of a Map Between Vector Spaces|§22]]. The obstacle is that the familiar picture — a plane resting on a surface — lives in an ambient space: the tangent plane to a sphere is a subspace of $\mathbb{R}^3$, and without the $\mathbb{R}^3$ there is no room to put the vectors. An abstract manifold has no ambient space, so the construction takes some work. This section therefore treats the case where an ambient space *is* available, and defines there the *geometric tangent space* $T^{\mathrm{geo}}_pM$ — as motivation, and because it covers all the matrix groups. The abstract $T_pM$ is built in [[§27 Germs|§27]], and the cotangent space in [[§32 The Cotangent Space|§32]]. (It is in some ways more natural to define the dual space first — the cotangent space — but the course follows Lee in not doing so.)
+> The goal is to attach to each point $p$ of a smooth manifold $M$ a vector space $T_pM$, the *abstract tangent space*, so that maps between manifolds acquire differentials $dF_p : T_pM \to T_{F(p)}N$ as in [[§22 The Differential of a Map Between Vector Spaces|§22]]. The obstacle is that the familiar picture — a plane resting on a surface — lives in an ambient space: the tangent plane to a sphere is a subspace of $\mathbb{R}^3$, and without the $\mathbb{R}^3$ there is no room to put the vectors. An abstract manifold has no ambient space, so the construction takes some work. This section therefore treats the case where an ambient space *is* available, and defines there the *geometric tangent space* $T^{\mathrm{geo}}_pM$ — as motivation, and because it covers all the matrix groups. The abstract $T_pM$ is built in [[§27 Germs|§27]]–[[§28 Derivations and the Abstract Tangent Space|§28]] (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]), and the cotangent space in [[§32 The Cotangent Space|§32]]. (It is in some ways more natural to define the dual space first — the cotangent space — but the course follows Lee in not doing so.)
 
 ^rem-25-1
 
@@ -146,7 +146,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]], [[Multivariable Chain Rule|452 §12.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark] Remark
-> This lemma was set as an exercise in Lecture 8; the proof above is short but both inclusions are needed, and the $\supseteq$ half — lifting a straight line from the chart — is the construction that reappears in [[§27 Germs|§27]] as the curve defining $D_v$. In words: *the geometric tangent space to a graph is the graph of the differential.*
+> This lemma was set as an exercise in Lecture 8; the proof above is short but both inclusions are needed, and the $\supseteq$ half — lifting a straight line from the chart — is the construction that reappears in Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]] as the curve defining $D_v$. In words: *the geometric tangent space to a graph is the graph of the differential.*
 
 ^rem-25-3
 
@@ -219,7 +219,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 ^rem-25-4
 
 > [!theorem] Corollary §25.4: Three Descriptions of the Geometric Tangent Space
-> In the notation of [[§25 The Geometric Tangent Space#^pf-25-3|the proof]], with $\alpha : V \to \mathbb{R}^{n+k}$, $\alpha(x) = (x, h(x))$ the parametrization inverse to the graph chart,
+> Number the coordinates of $\mathbb{R}^{n+k}$ as after the permutation $\rho$ in Step 2 of [[§25 The Geometric Tangent Space#^pf-25-3|the proof]] of Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], so that near $p$ the manifold is the graph $\{(x, h(x)) \mid x \in V\}$ of a smooth $h : V \to V'$ (the map called $G$ there) and $p = (a, h(a))$ with $a \in V$ (the point called $x_0$ there). Let $\alpha : V \to \mathbb{R}^{n+k}$, $\alpha(x) = (x, h(x))$, be the parametrization inverse to the graph chart, and write $D\alpha_a = \alpha'(a)$ and $Dh_a = h'(a)$ for the Jacobians at $a$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]). Then
 >
 > $$
 > T^{\mathrm{geo}}_pM \;=\; \{\text{velocities of curves in } M \text{ through } p\} \;=\; \ker F'(p) \;=\; \operatorname{im} D\alpha_a ,
@@ -359,7 +359,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 >
 > so $T^{\mathrm{geo}}_g\mathrm{SL} = \mathfrak{sl}(n)\cdot g$. At $g = I$ either formula gives $T^{\mathrm{geo}}_I\mathrm{SL} = \mathfrak{sl}(n)$. The trace condition removes one dimension, consistently with $n^2 - 1$: $\operatorname{tr} : \operatorname{Mat}(n,\mathbb{R}) \to \mathbb{R}$ is linear and surjective ($\operatorname{tr}(cE_{11}) = c$), so by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) $\dim\mathfrak{sl}(n) = n^2 - 1$.
 >
-> *$\mathrm{O}(n)$ and $\mathrm{SO}(n)$.* Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]] gives that $\mathrm{O}(n)$ is a smooth manifold of dimension $\tfrac{n(n-1)}{2}$, and Corollary [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3|§23.3]] that $\mathrm{SO}(n)$ is an open subset of $\mathrm{O}(n)$, a smooth manifold of the same dimension. Example [[§25 The Geometric Tangent Space#^ex-25-2|§25.2]] gives $T^{\mathrm{geo}}_g\mathrm{O}(n) = g\cdot\operatorname{Skew}(n,\mathbb{R})$ and $T^{\mathrm{geo}}_I\mathrm{O}(n) = \operatorname{Skew}(n,\mathbb{R})$. Since $\mathrm{SO}(n)$ is open in $\mathrm{O}(n)$ its geometric tangent spaces are those of $\mathrm{O}(n)$ (Lemma [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]]): for $g \in \mathrm{SO}(n)$, $T^{\mathrm{geo}}_g\mathrm{SO}(n) = T^{\mathrm{geo}}_g\mathrm{O}(n)$, and in particular $T^{\mathrm{geo}}_I\mathrm{SO}(n) = \operatorname{Skew}(n,\mathbb{R})$. For the right translate, $\operatorname{Skew}(n,\mathbb{R})$ is preserved by conjugation by orthogonal $g$, exactly as in the proof of Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-5|§23.5]]: if $X^{\mathsf T} = -X$ and $g^{-1} = g^{\mathsf T}$ (Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]]), then
+> *$\mathrm{O}(n)$ and $\mathrm{SO}(n)$.* Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]] gives that $\mathrm{O}(n)$ is a smooth manifold of dimension $\tfrac{n(n-1)}{2}$, and Corollary [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3|§23.3]], with its proof, that $\mathrm{SO}(n)$ is an open subset of $\mathrm{O}(n)$, a smooth manifold of the same dimension. Example [[§25 The Geometric Tangent Space#^ex-25-2|§25.2]] gives $T^{\mathrm{geo}}_g\mathrm{O}(n) = g\cdot\operatorname{Skew}(n,\mathbb{R})$ and $T^{\mathrm{geo}}_I\mathrm{O}(n) = \operatorname{Skew}(n,\mathbb{R})$. Since $\mathrm{SO}(n)$ is open in $\mathrm{O}(n)$ its geometric tangent spaces are those of $\mathrm{O}(n)$ (Lemma [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]]): for $g \in \mathrm{SO}(n)$, $T^{\mathrm{geo}}_g\mathrm{SO}(n) = T^{\mathrm{geo}}_g\mathrm{O}(n)$, and in particular $T^{\mathrm{geo}}_I\mathrm{SO}(n) = \operatorname{Skew}(n,\mathbb{R})$. For the right translate, $\operatorname{Skew}(n,\mathbb{R})$ is preserved by conjugation by orthogonal $g$, exactly as in the proof of Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-5|§23.5]]: if $X^{\mathsf T} = -X$ and $g^{-1} = g^{\mathsf T}$ (Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]]), then
 >
 > $$
 > (gXg^{-1})^{\mathsf T} = (gXg^{\mathsf T})^{\mathsf T} = gX^{\mathsf T}g^{\mathsf T} = -gXg^{-1} .
@@ -400,7 +400,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 > [!proof]+ Proof
 > There are four things to check: $\mathrm{Ad}_g$ maps $\mathfrak{g}$ into itself, it is linear, it is bijective on $\mathfrak{g}$ (with the composition law), and $L_g = R_g \circ \mathrm{Ad}_g$.
 >
-> *$\mathrm{Ad}_g$ maps $\mathfrak{g}$ into itself.* That $\mathrm{Ad}_g$ maps $\mathfrak{g}$ into itself is checked case by case, with $\mathfrak{g}$ as in Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]. For $\mathfrak{sl}(n)$: if $\operatorname{tr} X = 0$ then, by $\operatorname{tr}(YZ) = \operatorname{tr}(ZY)$ with $Y = gX$ and $Z = g^{-1}$, $\operatorname{tr}(gXg^{-1}) = \operatorname{tr}(Xg^{-1}g) = \operatorname{tr} X = 0$. For $g$ orthogonal (in $\mathrm{O}(n)$ or $\mathrm{SO}(n)$, so $g^{-1} = g^{\mathsf T}$) and $X$ skew:
+> *$\mathrm{Ad}_g$ maps $\mathfrak{g}$ into itself.* That $\mathrm{Ad}_g$ maps $\mathfrak{g}$ into itself is checked case by case, with $\mathfrak{g}$ as in Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]. For $\mathfrak{sl}(n)$: if $\operatorname{tr} X = 0$ then, by $\operatorname{tr}(YZ) = \operatorname{tr}(ZY)$ with $Y = gX$ and $Z = g^{-1}$, $\operatorname{tr}(gXg^{-1}) = \operatorname{tr}(g^{-1}gX) = \operatorname{tr} X = 0$. For $g$ orthogonal (in $\mathrm{O}(n)$ or $\mathrm{SO}(n)$, so $g^{-1} = g^{\mathsf T}$) and $X$ skew:
 >
 > $$
 > (gXg^{-1})^{\mathsf T} = (gXg^{\mathsf T})^{\mathsf T} = gX^{\mathsf T}g^{\mathsf T} = -gXg^{-1} .
@@ -519,9 +519,9 @@ The count is the geometric meaning of “$k$ independent equations in $n + k$ un
 
 ## From Tangent Vectors to Derivations
 
-*Motivation only; nothing in this subsection is used later, but it is where the abstract definition comes from.*
+*Motivation: this is where the abstract definition comes from. Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]] and Propositions [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]] and [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]] are used again where geometric and abstract tangent vectors are compared, first in Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]].*
 
-Keep $M = F^{-1}(c)$ and, by Lemmas [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]] and [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]], assume $M$ is the graph of a smooth $G : A \to \mathbb{R}^k$ over an open $A \subseteq \mathbb{R}^n$, with chart $\varphi : M \to A$ the projection $(x, G(x)) \mapsto x$ and $p = (x_0, G(x_0))$. Let $f : M \to \mathbb{R}$ be smooth, so that $f_\varphi = f \circ \varphi^{-1} : A \to \mathbb{R}$ is smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]).
+Keep $M = F^{-1}(c)$ and, as in Step 2 of the proof of Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] (a permutation of coordinates, then Lemma [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]]), assume $M$ is the graph of a smooth $G : A \to \mathbb{R}^k$ over an open $A \subseteq \mathbb{R}^n$, with chart $\varphi : M \to A$ the projection $(x, G(x)) \mapsto x$ and $p = (x_0, G(x_0))$. Let $f : M \to \mathbb{R}$ be smooth, so that $f_\varphi = f \circ \varphi^{-1} : A \to \mathbb{R}$ is smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]).
 
 Given $v \in T^{\mathrm{geo}}_pM$, Lemma [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]] provides a unique $u \in \mathbb{R}^n$ with $v = (u, G'(x_0)u)$. Lift the straight line $t \mapsto x_0 + tu$ from the chart to the manifold:
 
@@ -539,7 +539,7 @@ $$
 > D_v(f) \;=\; \frac{d}{dt}\Big|_{t=0} f(\gamma(t)) \;=\; \frac{d}{dt}\Big|_{t=0} f_\varphi(x_0 + tu) \;=\; u \cdot \nabla f_\varphi(x_0),
 > $$
 >
-> the second equality because $\varphi(\gamma(t)) = x_0 + tu$ and $f = f_\varphi \circ \varphi$, the third by the [[Multivariable Chain Rule|chain rule]]. So $D_v$ takes a smooth function defined near $p$ and returns a real number, and it depends only on the values of $f$ near $p$ — which is what the germs of the next subsection make precise.
+> the second equality because $\varphi(\gamma(t)) = x_0 + tu$ and $f = f_\varphi \circ \varphi$, the third by the [[Multivariable Chain Rule|chain rule]]. So $D_v$ takes a smooth function defined near $p$ and returns a real number, and it depends only on the values of $f$ near $p$ — which is what the germs of [[§27 Germs|§27]] (Definition [[§27 Germs#^def-27-2|§27.2]]) make precise.
 >
 > *Lee: Proposition 3.2 (in $\mathbb{R}^n$)*
 
@@ -551,7 +551,7 @@ $$
 
 > [!theorem] Proposition §25.8: Basic Properties of $D_v$
 > In the setting of Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]]:
-> 1. $D_v(f)$ depends only on the germ of $f$ at $p$;
+> 1. $D_v(f)$ depends only on the values of $f$ near $p$, that is, on the germ of $f$ at $p$ (Definition [[§27 Germs#^def-27-2|§27.2]]);
 > 2. if $\sigma$ is *any* smooth curve in $M$ with $\sigma(0) = p$ and $\sigma'(0) = v$, then $D_v(f) = \frac{d}{dt}\big|_{t=0} f(\sigma(t))$; so $D_v$ depends on $v$ alone, not on the curve used to define it;
 > 3. $D_v$ is linear and obeys the product rule $D_v(fg) = f(p)\,D_v(g) + g(p)\,D_v(f)$.
 

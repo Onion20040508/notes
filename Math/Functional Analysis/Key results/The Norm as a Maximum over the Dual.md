@@ -16,7 +16,6 @@ tags: [functional-analysis, hub]
 ## Used in (Functional Analysis)
 - [[§36 Duality in Normed Spaces#^cor-36-3|Corollary §36.3: Bounded Functionals Separate Points]]
 - [[§36 Duality in Normed Spaces#^cor-36-6|Corollary §36.6: Duality Formula for the ℓ^p Norm]]
-- [[§36 Duality in Normed Spaces#^thm-36-8|Theorem §36.8: Distance to a Subspace]]
 - [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|Proposition §37.5: The Canonical Embedding X → X'']]
 - [[§43 Weak and Weak-Star Convergence#^prop-43-1|Proposition §43.1: Basic Properties of Weak Limits]]
 - [[§43 Weak and Weak-Star Convergence#^thm-43-4|Theorem §43.4: The Norm of a Weak Limit]]

@@ -70,7 +70,7 @@ tags: [differentiable-manifolds, math591]
 ^rem-4-1
 
 > [!remark] Remark: Warning: Nothing Is Automatically Inherited
-> **Neither $T_2$ nor second countability of $X$ is automatically inherited by $X/{\sim}$.** This is the reason the lecture spends most of its time here: the constructions that produce interesting manifolds are quotients, so we need theorems telling us *when* the quotient is $T_2$ (and second countable) — these properties must be earned, not assumed.
+> **Neither $T_2$ nor second countability of $X$ is automatically inherited by $X/{\sim}$.** This is why quotients need the most work: the constructions that produce interesting manifolds are quotients, so we need theorems telling us *when* the quotient is $T_2$ (and second countable) — these properties must be earned, not assumed.
 
 ^rem-4-2
 
@@ -230,7 +230,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi(U))$ appearing in it; the notion is worth having on its own (it recurs for orbit spaces in [[§13 Group Actions and Orbit Spaces|§13]]), which is why it is defined first here, with its elementary properties.
 
 > [!remark] Remark: In Words
-> The saturation of $U$ is $U$ together with everything equivalent to something in $U$ — that is, $\pi^{-1}(\pi(U))$: push forward and then take the preimage. [[§4 Quotient Spaces and Open Maps#^prop-4-6|Proposition §4.6]] then reads as a slogan: *$\sim$ is open iff the saturation of every open set is open.* In the [[§4 Quotient Spaces and Open Maps#^ex-4-2|non-example above]], saturating $\left(-\tfrac12,\tfrac12\right)$ adjoined the isolated point $1$ and destroyed openness. In the [[§9 Complex Projective Space#^prop-9-1|ℂPⁿ example below]], saturating an open set means rotating it in every possible way, which *preserves* openness — that contrast is the whole point of the definition.
+> The saturation of $U$ is $U$ together with everything equivalent to something in $U$ — that is, $\pi^{-1}(\pi(U))$: push forward and then take the preimage. [[§4 Quotient Spaces and Open Maps#^prop-4-6|Proposition §4.6]] then reads as a slogan: *$\sim$ is open iff the saturation of every open set is open.* In the [[§4 Quotient Spaces and Open Maps#^ex-4-2|non-example above]], saturating $\left(-\tfrac12,\tfrac12\right)$ adjoined the isolated point $1$ and destroyed openness. For $\mathbb{CP}^n$ (Proposition [[§9 Complex Projective Space#^prop-9-1|§9.1]]), saturating an open set means rotating it in every possible way, which *preserves* openness — that contrast is the whole point of the definition.
 
 ^rem-4-3
 
@@ -245,7 +245,7 @@ In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi
 > [!proof]+ Proof (PSet 1, Problem 4)
 > Write $\pi : \mathbb{R} \to X$, so $\pi^{-1}(x_0) = \mathbb{Z}$ and $\pi^{-1}(\pi(x)) = \{x\}$ for $x \notin \mathbb{Z}$. Two preliminary facts. (i) If $V \subseteq X$ is a neighborhood of $x_0$, then $\pi^{-1}(V)$ is open in $\mathbb{R}$ and contains $\mathbb{Z}$. (ii) If $U \subseteq \mathbb{R}$ is open with $\mathbb{Z} \subseteq U$, then $U$ is saturated—each class is either $\mathbb{Z} \subseteq U$ or a singleton $\{x\} \subseteq U$—so $\pi^{-1}(\pi(U)) = U$ and $\pi(U)$ is a neighborhood of $x_0$ ([[§4 Quotient Spaces and Open Maps#^def-4-6|Definition §4.6]] and [[§4 Quotient Spaces and Open Maps#^lem-4-4|Lemma §4.4]](4)).
 >
-> Suppose $X$ were first countable at $x_0$, with $\{\widetilde U_j\}_{j \in \mathbb{N}}$ a countable basis of neighborhoods of $x_0$, and set $U_j = \pi^{-1}(\widetilde U_j)$, open with $\mathbb{Z} \subseteq U_j$ by (i). For each $j \in \mathbb{N}$ and $n \in \mathbb{Z}$, openness gives a radius $a_{j,n} \in (0, \tfrac14]$ with $(n - a_{j,n}, n + a_{j,n}) \subseteq U_j$; write $A_j = \bigcup_{n \in \mathbb{Z}} (n - a_{j,n}, n + a_{j,n}) \subseteq U_j$. (Radii are capped at $\tfrac14$ so that arms around distinct integers are disjoint: two of them reach out at most $\tfrac12 < 1$.)
+> Suppose $X$ were first countable at $x_0$, with $\{O_j\}_{j \in \mathbb{N}}$ a countable basis of neighborhoods of $x_0$, and set $U_j = \pi^{-1}(O_j)$, open with $\mathbb{Z} \subseteq U_j$ by (i). For each $j \in \mathbb{N}$ and $n \in \mathbb{Z}$, openness gives a radius $a_{j,n} \in (0, \tfrac14]$ with $(n - a_{j,n}, n + a_{j,n}) \subseteq U_j$; write $A_j = \bigcup_{n \in \mathbb{Z}} (n - a_{j,n}, n + a_{j,n}) \subseteq U_j$. (Radii are capped at $\tfrac14$ so that arms around distinct integers are disjoint: two of them reach out at most $\tfrac12 < 1$.)
 >
 > *The diagonal neighborhood.* Put
 >
@@ -258,7 +258,7 @@ In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi
 >
 > *No $U_j$ is contained in $W$.* Fix $j \in \mathbb{N}$ and set $w_j = j + \tfrac34 a_{j,j}$. Then $w_j \in A_j \subseteq U_j$, since $|w_j - j| = \tfrac34 a_{j,j} < a_{j,j}$. But $w_j \notin W$: it is not in the arm at $j$, because $j + b_j = j + \tfrac12 a_{j,j} < w_j$; and it is in no other arm, since $|w_j - j| \le \tfrac34 \cdot \tfrac14 < \tfrac14$ while a point of the arm at $m$ is within $b_m \le \tfrac18$ of $m$, so $w_j$ in that arm would force $|j - m| < \tfrac14 + \tfrac18 < 1$, impossible for distinct integers.
 >
-> *Conclusion.* By (ii), $\widetilde W = \pi(W)$ is a neighborhood of $x_0$. If $\widetilde U_j \subseteq \widetilde W$ for some $j$, taking preimages would give $U_j \subseteq \pi^{-1}(\widetilde W) = W$, contradicting the previous paragraph. So no member of the family sits inside $\widetilde W$, and $\{\widetilde U_j\}$ is not a basis of neighborhoods of $x_0$—a contradiction. Hence $X$ is not first countable at $x_0$, and by [[§1 Point-Set Topology Review#^prop-1-4|Proposition §1.4]] it is not second countable.
+> *Conclusion.* By (ii), $\pi(W)$ is a neighborhood of $x_0$. If $O_j \subseteq \pi(W)$ for some $j$, taking preimages would give $U_j \subseteq \pi^{-1}(\pi(W)) = W$, contradicting the previous paragraph. So no member of the family sits inside $\pi(W)$, and $\{O_j\}$ is not a basis of neighborhoods of $x_0$—a contradiction. Hence $X$ is not first countable at $x_0$, and by [[§1 Point-Set Topology Review#^prop-1-4|Proposition §1.4]] it is not second countable.
 
 ^pf-ex-4-3
 

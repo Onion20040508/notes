@@ -24,7 +24,7 @@ tags: [group-theory, math493]
 ^prop-42-1
 
 > [!proof]+ Proof
-> *Idea:* $\pi$ turns conjugation in $G$ into conjugation in $G/N$; $N \subseteq A$ keeps $a'n$ in $A$.
+> *Idea:* $\pi$ turns [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|conjugation]] in $G$ into conjugation in $G/N$; $N \subseteq A$ keeps $a'n$ in $A$.
 >
 > **(1)** $\pi(A) = \operatorname{Im}(\pi|_A)$, the image of a homomorphism, hence a subgroup (Image and Kernel Are Subgroups, [[§15 Homomorphisms#^prop-15-2|§15.2]]).
 >
@@ -38,7 +38,7 @@ tags: [group-theory, math493]
 
 ^pf-42-1
 
-*Uses:* [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-1|Rem. §42 (Notation A/N)]]
+*Uses:* [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-1|Rem. §42 (Notation A/N)]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Def. §18.2]]
 
 > [!theorem] Proposition §42.2: Preimages of Subgroups of $G/N$
 > Let $N \trianglelefteq G$, $\pi: G \to G/N$, and let $B$ be a subgroup of $G/N$.
@@ -94,7 +94,7 @@ tags: [group-theory, math493]
 
 *Uses:* [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]]
 
-> [!theorem] Proposition §42.4: [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Quotients Along the Correspondence]]
+> [!theorem] Proposition §42.4: Quotients Along the Correspondence
 > Let $N \subseteq A_1 \subseteq A_2 \subseteq G$ be subgroups containing the normal subgroup $N$, let $\pi: G \to G/N$ be the projection, and let $B_1 = \pi(A_1)$, $B_2 = \pi(A_2)$.
 > 1. $gA_1 \mapsto \pi(g)B_1$ is a bijection $A_2/A_1 \to B_2/B_1$.
 > 2. $A_1 \trianglelefteq A_2$ if and only if $B_1 \trianglelefteq B_2$.
@@ -158,7 +158,7 @@ tags: [group-theory, math493]
 *Uses:* [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]]
 
 > [!example] Example §42.1: Indices Along the Correspondence for $S_4$ and $K$
-> Take $G = S_4$ and $N = K$. The pair-partition homomorphism $\alpha: S_4 \to S_3$ is surjective with kernel $K$, so $S_4/K \cong S_3$ via $gK \mapsto \alpha(g)$, and $\alpha(A_4) = A_3$ (Proposition [[§43 Simple Groups#^prop-43-10|§43.10]]). Under this identification the subgroup $A_4 \supseteq K$ corresponds to $A_4/K \leftrightarrow \alpha(A_4) = A_3$, the subgroup $K$ to $K/K \leftrightarrow \{e\}$, and $S_4$ to $S_3$. By Lagrange,
+> Take $G = S_4$ and $N = K$. The pair-partition homomorphism $\alpha: S_4 \to S_3$ is surjective with kernel $K$, so $S_4/K \cong S_3$ via $gK \mapsto \alpha(g)$, and $\alpha(A_4) = A_3$ (Proposition [[§43 Simple Groups#^prop-43-10|§43.10]]). Under this identification the subgroup $A_4 \supseteq K$ corresponds to $A_4/K \leftrightarrow \alpha(A_4) = A_3$, the subgroup $K$ to $K/K \leftrightarrow \{e\}$, and $S_4$ to $S_3$. By [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]],
 >
 > $$
 > [A_4 : K] = \tfrac{12}{4} = 3 = [A_3 : \{e\}], \qquad [S_4 : A_4] = \tfrac{24}{12} = 2 = \tfrac{6}{3} = [S_3 : A_3],

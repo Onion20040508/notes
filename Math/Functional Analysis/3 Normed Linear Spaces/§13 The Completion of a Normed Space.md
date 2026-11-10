@@ -180,7 +180,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 > \Phi : \overline{X} \to Z, \qquad \Phi\bigl([\{x_n\}]\bigr) = \lim_{n \to \infty} J x_n,
 > $$
 >
-> is an isometric isomorphism of $\overline{X}$ onto $Z$, and it sends the class of the constant sequence $(x, x, \ldots)$ to $Jx$. In particular, if $X \subset Z$ is a dense linear subspace carrying the restricted norm ($J$ the inclusion), then $\overline{X}$ is isometrically isomorphic to $Z$ by an isomorphism that is the identity on $X$.
+> is an isometric isomorphism of $\overline{X}$ onto $Z$ (a linear bijection with $\|\Phi(\xi)\|_Z = \|\xi\|$ for all $\xi \in \overline{X}$), and it sends the class of the constant sequence $(x, x, \ldots)$ to $Jx$. In particular, if $X \subset Z$ is a dense linear subspace carrying the restricted norm ($J$ the inclusion), then $\overline{X}$ is isometrically isomorphic to $Z$ by an isomorphism that is the identity on $X$.
 
 ^prop-13-2
 

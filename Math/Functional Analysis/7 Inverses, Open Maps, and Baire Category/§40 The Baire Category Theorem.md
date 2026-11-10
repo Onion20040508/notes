@@ -82,7 +82,7 @@ Two facts are used in the proof below.
 ^lem-40-3
 
 > [!proof]+ Proof
-> *(Not from lecture.)* $\overline{E}$ is closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]]), so the closure of $\overline{E}$ is $\overline{E}$ itself: $E$ and $\overline{E}$ have the same closure. By Definition [[§40 The Baire Category Theorem#^def-40-1|§40.1]](1), both statements say that this common closure has no interior points.
+> *(Not from lecture.)* $\overline{E}$ is closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](a); its proof uses only the triangle inequality, so it holds in a metric space), so the closure of $\overline{E}$ is $\overline{E}$ itself: $E$ and $\overline{E}$ have the same closure. By Definition [[§40 The Baire Category Theorem#^def-40-1|§40.1]](1), both statements say that this common closure has no interior points.
 
 ^pf-40-3
 
@@ -106,7 +106,7 @@ This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ 
 >
 > We want to show there is at least one point of $X$ that lies in no $E_n$, a contradiction. The idea is to construct a sequence of nested closed balls, the $n$-th one avoiding $E_n$, and to use completeness to find a point in all of them.
 >
-> **Step 1: nested balls.** Take the open ball $B(x_0, 1)$ with radius $1$ about some $x_0 \in X$ (in a normed space one can take $B(0,1)$; in a metric space any center will do). By Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]] there is $B(x_1, r_1)$, $r_1 > 0$, with $\overline{B(x_1, r_1)} \subset B(x_0, 1) \cap \overline{E}_1^{\,c}$, i.e.
+> **Step 1: nested balls.** Take the open ball $B(x_0, 1)$ with radius $1$ about some $x_0 \in X$ (in a normed space one can take $B(0,1)$; in a metric space any center will do). By Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]] there is $B(x_1, r_1)$, $0 < r_1 < 1$ (shrink the radius if necessary, Lemma [[§40 The Baire Category Theorem#^lem-40-2|§40.2]]), with $\overline{B(x_1, r_1)} \subset B(x_0, 1) \cap \overline{E}_1^{\,c}$, i.e.
 >
 > $$
 > \overline{B(x_1, r_1)} \subset B(x_0, 1), \qquad \overline{B(x_1, r_1)} \cap \overline{E}_1 = \varnothing .
@@ -152,7 +152,7 @@ This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ 
 > d(x_j, x_n) < r_n < \tfrac1n \qquad \text{for all } j > n .
 > $$
 >
-> Hence $\{x_j\}_{j=1}^\infty$ is Cauchy (for $j, k > n$, $d(x_j, x_k) \le d(x_j, x_n) + d(x_n, x_k) < \frac2n$). Since $X$ is complete, $x_j \to x^{\ast}$ as $j \to \infty$ for some $x^{\ast} \in X$. Now fix $n$. The sequence $\{x_j\}_{j=n}^\infty$ lies in the closed set $\overline{B(x_n, r_n)}$, so its limit $x^{\ast}$ lies in $\overline{B(x_n, r_n)}$ (Definition [[§11 Normed Linear Spaces#^def-11-6|§11.6]]). This holds for every $n$, so
+> Hence $\{x_j\}_{j=1}^\infty$ is Cauchy (for $j, k > n$, $d(x_j, x_k) \le d(x_j, x_n) + d(x_n, x_k) < \frac2n$). Since $X$ is complete, $x_j \to x^{\ast}$ as $j \to \infty$ for some $x^{\ast} \in X$. Now fix $n$. The sequence $\{x_j\}_{j=n}^\infty$ lies in $\overline{B(x_n, r_n)}$, which is closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](a), valid in a metric space with the same proof), so its limit $x^{\ast}$ lies in $\overline{B(x_n, r_n)}$ (Definition [[§11 Normed Linear Spaces#^def-11-6|§11.6]]). This holds for every $n$, so
 >
 > $$
 > x^{\ast} \in \bigcap_{n=1}^\infty \overline{B(x_n, r_n)} = A ,
@@ -162,7 +162,7 @@ This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ 
 
 ^pf-40-4
 
-*Uses:* [[§40 The Baire Category Theorem#^lem-40-1|§40.1]], [[§40 The Baire Category Theorem#^lem-40-2|§40.2]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]]
+*Uses:* [[§40 The Baire Category Theorem#^lem-40-1|§40.1]], [[§40 The Baire Category Theorem#^lem-40-2|§40.2]], [[§11 Normed Linear Spaces#^prop-11-7|§11.7]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]]
 
 ![[m556-40-2.svg]]
 

@@ -61,14 +61,14 @@ $$
 > 1. the matrix of the differential (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), which is a one-line proof because of it;
 > 2. regular values in one chart (Proposition [[§30 The Differential in Coordinates#^prop-30-9|§30.9]]): the rank of $F_{*p}$ is the rank of $\tilde F'(\varphi(p))$;
 > 3. the proof of the local normal form (Theorem [[§36 Submersions#^thm-36-6|§36.6]]), where the matrix $\big[\partial F^j/\partial x^i(p)\big]$ is built from the components $F^j$ but is the Jacobian of $\tilde F$;
-> 4. [[§30 The Differential in Coordinates#^rem-30-6|Assignment 3, Problem 4]], whose “matching coefficients” step computes $F_{*p}(\partial/\partial u_k|_p)[x^j]$ as an ordinary partial derivative of $F_\varphi$.
+> 4. Example [[§30 The Differential in Coordinates#^ex-30-2|§30.2]] (Assignment 3, Problem 4), whose Step 4 reads off the matrix of $F_{*p}$ as the ordinary Jacobian $\tilde F'(w)$ of the coordinate representation.
 >
 > Both sides depend on the charts: changing $\varphi$ or $\psi$ changes the matrix (Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), while $F_{*p}$ itself does not.
 
 ^rem-30-1
 
 > [!theorem] Theorem §30.2: The Matrix of the Differential
-> $F_{*p}$ is linear, and
+> Let $F : M \to N$ be smooth and $p \in M$, with smooth charts $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ of $N$ such that $F(U) \subseteq V$, components $F^j = y^j \circ F$, coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1}$, and the coordinate bases $\mathcal{B}_M = \{\partial/\partial x^i|_p\}$ of $T_pM$ and $\mathcal{B}_N = \{\partial/\partial y^j|_{F(p)}\}$ of $T_{F(p)}N$. Then $F_{*p}$ is linear, and
 >
 > $$
 > F_{*p}\Big(\frac{\partial}{\partial x^i}\Big|_p\Big) = \sum_{j=1}^n \frac{\partial F^j}{\partial x^i}(p)\, \frac{\partial}{\partial y^j}\Big|_{F(p)} .
@@ -232,16 +232,17 @@ $$
 >
 > $$
 > v\big[\tilde x^j\big] = \sum_{i=1}^n \frac{\partial \tilde x^j}{\partial x^i}(p)\, v\big[x^i\big] \qquad (v \in T_pM,\ j = 1, \ldots, n).
-> \]
+> $$
 > In matrix form, the column of new components is the matrix $A$ of (3) times the column of old components:
-> \[
-> \begin{pmatrix} v[\tilde x^1] \ \vdots \ v[\tilde x^n] \end{pmatrix}
+>
+> $$
+> \begin{pmatrix} v[\tilde x^1] \\ \vdots \\ v[\tilde x^n] \end{pmatrix}
 > = \begin{pmatrix}
 > \dfrac{\partial \tilde x^1}{\partial x^1}(p) & \cdots & \dfrac{\partial \tilde x^1}{\partial x^n}(p) \\[2mm]
 > \vdots & & \vdots \\[1mm]
 > \dfrac{\partial \tilde x^n}{\partial x^1}(p) & \cdots & \dfrac{\partial \tilde x^n}{\partial x^n}(p)
 > \end{pmatrix}
-> \begin{pmatrix} v[x^1] \ \vdots \ v[x^n] \end{pmatrix} .
+> \begin{pmatrix} v[x^1] \\ \vdots \\ v[x^n] \end{pmatrix} .
 > $$
 >
 > 3. The $n \times n$ matrices $A = \big[\partial \tilde x^j/\partial x^i(p)\big]$ (row $j$, column $i$) and $B = \big[\partial x^i/\partial \tilde x^j(p)\big]$ (row $i$, column $j$) are inverse to each other:
@@ -435,12 +436,12 @@ $$
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-3|§29.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]
 
 > [!remark] Remark
-> This is what licenses the shared notation $dF_p$: on open subsets of Euclidean spaces the abstract differential *is* the Jacobian, and between vector spaces it is the map of Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]]. It also closes a loop opened in [[§25 The Geometric Tangent Space#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]], where a tangent vector $v$ was traded for the operator $D_v$; in $\mathbb{R}^n$ that trade is exactly the identification $e_i \leftrightarrow \partial/\partial r^i$.
+> Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] is what licenses the shared notation $dF_p$: on open subsets of Euclidean spaces the abstract differential *is* the Jacobian, and between vector spaces it is the map of Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]]. It also closes a loop opened in [[§25 The Geometric Tangent Space#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]], where a tangent vector $v$ was traded for the operator $D_v$; in $\mathbb{R}^n$ that trade is exactly the identification $e_i \leftrightarrow \partial/\partial r^i$.
 
 ^rem-30-3
 
 > [!remark] Remark: Any Vector Space Will Do
-> *Lecture 17.* Nothing above needs $\mathbb{R}^N$: the ambient space can be any finite-dimensional vector space $V$, because the velocity
+> *Lecture 17.* The geometric tangent space of Definition [[§25 The Geometric Tangent Space#^def-25-1|§25.1]] does not need $\mathbb{R}^N$: the ambient space can be any finite-dimensional vector space $V$, because the velocity
 >
 > $$
 > \gamma'(0) = \lim_{h \to 0} \frac{1}{h}\big(\gamma(h) - \gamma(0)\big)
@@ -557,7 +558,7 @@ For fixed $v$, the field $p \mapsto D_v|_p$ is a left-invariant vector field: it
 ^pf-30-8
 
 > [!remark] Remark: The Map Is Intrinsic — the Matrix Is Not
-> The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. Explicitly, this is Lemma [[§30 The Differential in Coordinates#^lem-30-8|§30.8]]. So only properties of $F_{\ast p}$ that survive such changes — its rank, kernel and image, injectivity and surjectivity — are properties of $F$, which is why the definition above is phrased through $F_{\ast p}$ rather than through a matrix. By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] it agrees with Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]] in the Euclidean case. A regular point is exactly a point at which $F$ is a *submersion*, in the sense of Definition [[§36 Submersions#^def-36-1|§36.1]]; maps with bijective, surjective and injective differentials are the subject of [[§35 Local Diffeomorphisms|§35]].
+> The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. Explicitly, this is Lemma [[§30 The Differential in Coordinates#^lem-30-8|§30.8]]. So only properties of $F_{\ast p}$ that survive such changes — its rank, kernel and image, injectivity and surjectivity — are properties of $F$, which is why Definitions [[§30 The Differential in Coordinates#^def-30-2|§30.2]], [[§30 The Differential in Coordinates#^def-30-3|§30.3]] and [[§30 The Differential in Coordinates#^def-30-4|§30.4]] are phrased through $F_{\ast p}$ rather than through a matrix. By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] the last two agree with Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]] in the Euclidean case. A regular point is exactly a point at which $F$ is a *submersion*, in the sense of Definition [[§36 Submersions#^def-36-1|§36.1]]; maps with bijective, surjective and injective differentials are the subject of [[§35 Local Diffeomorphisms|§35]].
 
 ^rem-30-5
 
@@ -643,7 +644,7 @@ For fixed $v$, the field $p \mapsto D_v|_p$ is a left-invariant vector field: it
 > \tilde F(w) = F\big(\varphi_0^{-1}(w)\big) = \Big( \frac{|w_1|^2}{1 + |w|^2}, \ldots, \frac{|w_n|^2}{1 + |w|^2} \Big), \qquad |w|^2 = \sum_{l=1}^n |w_l|^2 .
 > $$
 >
-> On $O$ it factors as $\tilde F = \Phi \circ \psi$, with $\mathbb{R}^n_{>0} = \{x \in \mathbb{R}^n : x_j > 0 \text{ for all } j\}$ and
+> On $O$ it factors as $\tilde F = \Phi \circ \psi$ — here $\psi$ is the modulus map below, in the lettering of the official solution, not a chart of the target, whose chart is the identity — with $\mathbb{R}^n_{>0} = \{x \in \mathbb{R}^n : x_j > 0 \text{ for all } j\}$ and
 >
 > $$
 > \psi : O \to \mathbb{R}^n_{>0}, \quad \psi(w) = \big(|w_1|, \ldots, |w_n|\big), \qquad

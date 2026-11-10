@@ -105,11 +105,11 @@ Things that *are* somewhere move forward with the points; things that *eat* move
 
 ^ex-50-1
 
+*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]
+
 *(Not from lecture; the conversion diagram of the midterm check sheet, added on request.)* The differential of a smooth $F : M \to N$ at $p$, in four equivalent forms. Charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$, $F^i = y^i \circ F$.
 
 ![[m591-48-1.svg]]
-
-*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]
 
 > [!remark] Remark: Conversion Diagram for the Differential
 > 1. *Germs and curves.* $(F_{\ast p}D)[g] = D[g \circ F]$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]); for $D = D_\gamma$, $F_{\ast p}D_\gamma = D_{F \circ \gamma}$, i.e. $F_{\ast}(\gamma'(0)) = (F \circ \gamma)'(0)$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]).

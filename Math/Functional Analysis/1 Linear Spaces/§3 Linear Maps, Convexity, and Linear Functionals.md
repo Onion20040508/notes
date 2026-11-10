@@ -30,7 +30,7 @@ tags: [functional-analysis, math556]
 > - Computational version: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-4|235 Def. §30.4]] (linear transformations between vector spaces, with kernel and range computed), and the matrix case [[§9 Introduction to Linear Transformations#^def-9-4|235 Def. §9.4]].
 
 > [!definition] Definition §3.2: Isomorphism
-> A map $M : X \to Y$ is an **isomorphism** (or **linear isomorphism**) if $M$ is linear, one-to-one, and onto.
+> Let $X, Y$ be linear spaces over the same field. A map $M : X \to Y$ is an **isomorphism** (or **linear isomorphism**) if $M$ is linear, one-to-one, and onto. If such an $M$ exists, $X$ and $Y$ are called **isomorphic**, written $X \cong Y$.
 >
 > *Lax: Ch. 1, definition of isomorphism; Remark 2*
 
@@ -91,7 +91,7 @@ tags: [functional-analysis, math556]
 ^rem-3-2
 
 > [!definition] Definition §3.4: Convex Hull
-> The **convex hull** of a subset $S \subset X$ is the smallest convex set containing $S$.
+> Let $X$ be a linear space over $\mathbb{R}$. The **convex hull** of a subset $S \subset X$ is the smallest convex set containing $S$.
 >
 > *Lax: Ch. 1, definition of convex hull*
 
@@ -112,7 +112,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-4|Def. §3.4]]
 
 > [!example] Example §3.1: Convex Hull of a Star
-> Let $S \subset \mathbb{R}^2$ be a four-pointed star (the boundary of the region obtained from a square by pushing the midpoints of its edges inward). The convex hull of $S$ is the filled square with the star's four tips as vertices. Indeed, taking any two tips, the whole segment between them must be included; taking any point of $S$ and any point already included, the segment between them must be included; iterating fills the square, which is itself convex.
+> Let $S \subset \mathbb{R}^2$ be a four-pointed star (the boundary of the region obtained from a square by pushing the midpoints of its edges inward). The convex hull of $S$ is the filled square with the star's four tips as vertices. Indeed, taking any two tips, the whole segment between them must be included; taking any point of $S$ and any point already included, the segment between them must be included; iterating fills the square, so the square is contained in the convex hull. Conversely the square is convex and contains $S$, so it contains the convex hull.
 >
 > ![[m556-2-1.svg]]
 > *Left: a convex set contains the segment (red) between any two of its points. Right: the star $S$ (solid) and its convex hull, the filled square on its four tips (shaded, dashed red edge) — the hull fills in the four notches, which no convex set containing the tips can avoid.*

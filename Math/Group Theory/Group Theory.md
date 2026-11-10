@@ -58,6 +58,7 @@ graph TD
   C4 -.->|on credit| C2
   C6 -.->|on credit| C1
   C6 -.->|on credit| C4
+  C7 -.->|on credit| C3
   C7 -.->|on credit| C4
   C7 -.->|on credit| C6
   C8 -.->|on credit| C6
@@ -69,7 +70,7 @@ graph TD
   X1 -.->|7| C6
   X1 -.->|5| C7
   X1 -.->|2| C9
-  X1 -.->|5| C11
+  X1 -.->|8| C11
   X2 -.->|10| C1
   X2 -.->|5| C2
   X2 -.->|2| C4

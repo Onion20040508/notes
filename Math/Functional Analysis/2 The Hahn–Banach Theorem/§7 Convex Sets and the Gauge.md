@@ -232,18 +232,18 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 ^ex-7-1
 
 > [!example] Example §7.2: A Gauge Vanishing Off the Origin
-> Let $X = \mathbb{R}^2$ and $K = \{ (x_1, x_2) : x_1 < 1 \}$, an open half-plane containing $0$ as an interior point. For $x = (x_1, x_2)$ with $x_1 \le 0$, every point $sx$, $s \ge 0$, has first coordinate $sx_1 \le 0 < 1$, so the whole ray lies in $K$ and $p_K(x) = 0$. For $x_1 > 0$, $x/a \in K$ iff $x_1/a < 1$ iff $a > x_1$, so $A(x) = (x_1, \infty)$ and $p_K(x) = x_1$. Altogether $p_K(x) = \max\{x_1, 0\}$: positive homogeneous, subadditive, non-negative, and zero on a whole half-plane.
+> Let $X = \mathbb{R}^2$ and $K = \{ (x_1, x_2) : x_1 < 1 \}$, an open half-plane. It is convex, and $0$ is an interior point: for $y = (y_1, y_2)$, $ty \in K$ for $|t| < 1/|y_1|$ if $y_1 \neq 0$, and for all $t$ if $y_1 = 0$. For $x = (x_1, x_2)$ with $x_1 \le 0$, every point $sx$, $s \ge 0$, has first coordinate $sx_1 \le 0 < 1$, so the whole ray lies in $K$ and $p_K(x) = 0$. For $x_1 > 0$, $x/a \in K$ iff $x_1/a < 1$ iff $a > x_1$, so $A(x) = (x_1, \infty)$ and $p_K(x) = x_1$. Altogether $p_K(x) = \max\{x_1, 0\}$: positive homogeneous, subadditive, non-negative, and zero on a whole half-plane.
 
 ^ex-7-2
 
 > [!example] Example §7.3: Gauge of the Unit Disk
-> Let $X = \mathbb{R}^2$ and $K = \{ x_1^2 + x_2^2 \le 1 \}$, the closed unit disk; $0$ is an interior point in the classical sense, hence in the algebraic sense. For $x = (x_1, x_2)$ and $a > 0$,
+> Let $X = \mathbb{R}^2$ and $K = \{ x_1^2 + x_2^2 \le 1 \}$, the closed unit disk; $0$ is an interior point of $K$ (Example [[§7 Convex Sets and the Gauge#^ex-7-1|§7.1]], where $K = \overline{D}$). For $x = (x_1, x_2)$ and $a > 0$,
 >
 > $$
 > \frac{x}{a} \in K \iff \Bigl(\frac{x_1}{a}\Bigr)^2 + \Bigl(\frac{x_2}{a}\Bigr)^2 \le 1 \iff a^2 \ge x_1^2 + x_2^2 \iff a \ge \sqrt{x_1^2 + x_2^2}.
 > $$
 >
-> The infimum of such $a$ is attained, and
+> For $x \neq 0$ the infimum of such $a$ is attained; for $x = 0$ every $a > 0$ is admissible and the infimum is $0$. In both cases
 >
 > $$
 > p_K(x) = \bigl(x_1^2 + x_2^2\bigr)^{1/2} = \|x\|.
@@ -254,13 +254,13 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 ^ex-7-3
 
 > [!example] Example §7.4: Gauge of a Square
-> Let $X = \mathbb{R}^2$ and $K = \{ (x_1, x_2) : |x_1| \le 2,\ |x_2| \le 2 \}$, the closed square with vertices $(\pm 2, \pm 2)$; $0$ is an interior point. For $a > 0$,
+> Let $X = \mathbb{R}^2$ and $K = \{ (x_1, x_2) : |x_1| \le 2,\ |x_2| \le 2 \}$, the closed square with vertices $(\pm 2, \pm 2)$. It is convex, and $0$ is an interior point: for $y = (y_1, y_2) \neq 0$, $ty \in K$ for $|t| < 2/\max\{|y_1|, |y_2|\}$, and for $y = 0$ for all $t$. For $a > 0$,
 >
 > $$
 > \frac{x}{a} \in K \iff \Bigl|\frac{x_1}{a}\Bigr| \le 2 \text{ and } \Bigl|\frac{x_2}{a}\Bigr| \le 2 \iff a \ge \frac{|x_1|}{2} \text{ and } a \ge \frac{|x_2|}{2} \iff a \ge \max\Bigl\{\frac{|x_1|}{2}, \frac{|x_2|}{2}\Bigr\}.
 > $$
 >
-> Both conditions must hold (“and,” not “or”), so the smallest admissible $a$ is the larger of the two lower bounds, and
+> Both conditions must hold (“and,” not “or”), so the infimum of the admissible $a$ is the larger of the two lower bounds, and
 >
 > $$
 > p_K(x) = \tfrac{1}{2} \max\{ |x_1|, |x_2| \}.
@@ -297,7 +297,7 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 > p_K(bx) = \inf\Bigl\{ a > 0 : \frac{bx}{a} \in K \Bigr\} = \inf\Bigl\{ a > 0 : \frac{x}{a/b} \in K \Bigr\}.
 > $$
 >
-> Substituting $a' = a/b$, which runs over $(0,\infty)$ as $a$ does, the set is $\{ b a' : x/a' \in K \} = b\,A(x)$, whose infimum is $b \inf A(x) = b\, p_K(x)$. (Left to us in lecture.)
+> Substituting $a' = a/b$, which runs over $(0,\infty)$ as $a$ does, the set is $\{ b a' : x/a' \in K \} = b\,A(x)$, whose infimum is $b \inf A(x) = b\, p_K(x)$. (Left as an exercise in lecture.)
 >
 > **Subadditivity.** It is hard to work with the infimum directly, so take arbitrary admissible scales and pass to the infimum at the end. Let $a > 0$, $b > 0$ be such that
 >
@@ -364,7 +364,7 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 > a \cdot \frac{x}{a} + (1 - a)\, ty \in K, \qquad \text{i.e.} \qquad x + (1 - a)\, t y \in K \qquad \text{for all } |t| < \delta(y).
 > $$
 >
-> Replacing $(1-a)t$ by $t$, this says $x + ty \in K$ for all $|t| < (1 - a)\,\delta(y)$. So $\varepsilon(y) = (1 - a)\,\delta(y) > 0$ works, and $x$ is an interior point.
+> Replacing $(1-a)t$ by $t$, this says $x + ty \in K$ for all $|t| < (1 - a)\,\delta(y)$. So $\varepsilon(y) = (1 - a)\,\delta(y) > 0$ works. Taking $t = 0$ shows $x \in K$, as the definition of interior point requires. Hence $x$ is an interior point.
 
 ^pf-7-7
 

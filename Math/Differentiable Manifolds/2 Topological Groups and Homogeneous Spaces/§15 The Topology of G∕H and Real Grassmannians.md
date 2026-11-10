@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§14 Homogeneous Spaces]] · ↑ [[· 2 Topological Groups and Homogeneous Spaces]] · [[§16 The Classical Groups]] →
 
-*Thread: quotients — The coset space $G/H$ as a topological space: open quotient, Hausdorff when $H$ is closed, and homeomorphic to a homogeneous space. The Grassmannians are the payoff. The two threads meet in the next chapter.*
+*Thread: quotients — The coset space $G/H$ as a topological space: open quotient, Hausdorff when $G$ is compact Hausdorff and $H$ is compact, and homeomorphic to a homogeneous space. The Grassmannians are the payoff. The two threads meet in the next chapter.*
 
 Definitions [[§14 Homogeneous Spaces#^def-14-5|§14.5]], [[§14 Homogeneous Spaces#^def-14-6|§14.6]] and [[§14 Homogeneous Spaces#^def-14-7|§14.7]] are purely algebraic. If $G$ carries a topology, $G/H$ inherits one in the only reasonable way.
 
@@ -51,14 +51,14 @@ Definitions [[§14 Homogeneous Spaces#^def-14-5|§14.5]], [[§14 Homogeneous Spa
 *Uses:* [[§14 Homogeneous Spaces#^def-14-7|Def. §14.7]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|Def. §15.1]], [[§14 Homogeneous Spaces#^lem-14-3|§14.3]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def. §4.6]], [[§4 Quotient Spaces and Open Maps#^lem-4-4|§4.4]], [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|Def. §11.1]]
 
 > [!theorem] Corollary §15.2: $\pi$ Is a Quotient Map
-> $\pi : G \to G/H$ is a quotient map in the sense of Definition [[§5 Quotient Maps#^def-5-1|§5.1]], and consequently a map $g : G/H \to Z$ into a topological space is continuous if and only if $g \circ \pi : G \to Z$ is continuous.
+> $\pi : G \to G/H$ is a quotient map in the sense of Definition [[§5 Quotient Maps#^def-5-1|§5.1]], and consequently a map $f : G/H \to Z$ into a topological space is continuous if and only if $f \circ \pi : G \to Z$ is continuous.
 >
 > *Lee: Theorem 21.17*
 
 ^cor-15-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* $\pi$ is a continuous open surjection by Proposition [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]], hence a quotient map by Proposition [[§5 Quotient Maps#^prop-5-6|§5.6]]. (It is also one directly from Definition [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|§15.1]], which is the defining property.) The second statement is the universal property, Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]].
+> *(Not from lecture; filled in.)* $\pi$ is a continuous open surjection by Proposition [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]], hence a quotient map by Proposition [[§5 Quotient Maps#^prop-5-6|§5.6]]. (It is also one directly from Definition [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|§15.1]], which is the defining property.) The second statement is the universal property, Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]].
 
 ^pf-15-2
 
@@ -68,7 +68,7 @@ Definitions [[§14 Homogeneous Spaces#^def-14-5|§14.5]], [[§14 Homogeneous Spa
 > - In 590: open surjections are quotient maps, [[§13 Quotient Topology#^prop-13-2|590 §13.2]]; the universal property, [[Universal Property of Quotient Maps]].
 
 > [!remark] Remark
-> **Openness of $\pi$, for free.** The action of $H$ on $G$ in Proposition [[§14 Homogeneous Spaces#^prop-14-4|§14.4]] is continuous, being the restriction to $H \times G$ of the map $(h,g) \mapsto gh^{-1}$ on $G \times G$, a composite of inversion and multiplication. So by the [[§14 Homogeneous Spaces#^rem-14-3|organizing fact]], Definition [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|§15.1]] *is* the orbit-space topology, and Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] — every orbit relation of a continuous action is open — already gives that $\pi$ is an open map. The proof above is that argument written out in the group case, with the translations $L_h$ of Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]] appearing as right translations $g \mapsto gh$; it is included because the formula $\pi^{-1}(\pi(U)) = UH$ is worth seeing explicitly.
+> **Openness of $\pi$, for free.** The action of $H$ on $G$ in Proposition [[§14 Homogeneous Spaces#^prop-14-4|§14.4]] is continuous, being the restriction to $H \times G$ of the map $(h,g) \mapsto gh^{-1}$ on $G \times G$, a composite of inversion and multiplication. So by the [[§14 Homogeneous Spaces#^rem-14-3|organizing fact]], Definition [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|§15.1]] *is* the orbit-space topology, and Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] — every orbit relation of a continuous action is open — already gives that $\pi$ is an open map. The proof of Proposition [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]] is that argument written out in the group case, with the translations $L_h$ of Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]] appearing as right translations $g \mapsto gh$; it is included because the formula $\pi^{-1}(\pi(U)) = UH$ is worth seeing explicitly.
 
 ^rem-15-1
 
@@ -77,7 +77,7 @@ Definitions [[§14 Homogeneous Spaces#^def-14-5|§14.5]], [[§14 Homogeneous Spa
 > 1. $\Phi$ is a continuous bijection.
 > 2. If $G/H$ is compact and $X$ is Hausdorff, then $\Phi$ is a homeomorphism.
 >
-> In particular (2) applies whenever $G$ itself is compact.
+> In particular, if $G$ itself is compact then so is $G/H$, and (2) applies whenever $X$ is Hausdorff.
 >
 > *Lee: Theorem 21.18, a smooth version without compactness (see the comparison below)*
 
@@ -90,7 +90,7 @@ Upstairs is the group, downstairs its coset space, and the triangle commutes: $\
 
 > [!proof]+ Proof
 > *(Stated in Lecture 4, with a hypothesis missing — the board said “$G$ compact $\Rightarrow$ $G/H \cong X$”, and $X$ must also be Hausdorff; filled in.)*
-> (1) Bijectivity is Lemma [[§14 Homogeneous Spaces#^lem-14-5|§14.5]]. The composite $\Phi \circ \pi : G \to X$ is the orbit map $g \mapsto g \cdot x_0$, which is continuous: it is $G \to G \times X \to X$, $g \mapsto (g, x_0) \mapsto g \cdot x_0$, a composite of a map continuous by Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]] with the action. By the universal property of the quotient (Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]]), $\Phi$ is continuous.
+> (1) Bijectivity is Lemma [[§14 Homogeneous Spaces#^lem-14-5|§14.5]]. The composite $\Phi \circ \pi : G \to X$ is the orbit map $g \mapsto g \cdot x_0$, which is continuous: it is $G \to G \times X \to X$, $g \mapsto (g, x_0) \mapsto g \cdot x_0$, a composite of a map continuous by Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]] with the action. By the universal property of the quotient (Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]]), $\Phi$ is continuous.
 >
 > (2) By (1), $\Phi$ is a continuous bijection from the compact space $G/H$ onto the Hausdorff space $X$, hence a homeomorphism (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](6)). Spelled out: if $C \subseteq G/H$ is closed, then $C$ is compact by Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5), so $\Phi(C)$ is compact by (2) of that proposition, hence closed in $X$ by (4); so $\Phi$ is a closed map, and the inverse of a closed continuous bijection is continuous, since $(\Phi^{-1})^{-1}(C) = \Phi(C)$ for every $C$.
 >
@@ -197,7 +197,7 @@ The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topolo
 
 ^pf-15-5
 
-*Uses:* [[§14 Homogeneous Spaces#^prop-14-4|§14.4]], [[§15 The Topology of G∕H and Real Grassmannians#^rem-15-1|Remark after §15.1]], [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]
+*Uses:* [[§14 Homogeneous Spaces#^prop-14-4|§14.4]], [[§15 The Topology of G∕H and Real Grassmannians#^rem-15-1|Remark after §15.2]], [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]
 
 The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
 
@@ -292,9 +292,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 > g^T g = \begin{pmatrix} A^T & 0 \\ 0 & B^T \end{pmatrix}\begin{pmatrix} A & 0 \\ 0 & B \end{pmatrix} = \begin{pmatrix} A^T A & 0 \\ 0 & B^T B \end{pmatrix} = \begin{pmatrix} I_k & 0 \\ 0 & I_{n-k} \end{pmatrix},
 > $$
 >
-> that is,
->
-> $A^T A = I_k$ and $B^T B = I_{n-k}$, i.e. $A \in \mathrm{O}(k)$, $B \in \mathrm{O}(n-k)$. Conversely every such block-diagonal matrix is orthogonal and fixes $V_0$. The map $(A, B) \mapsto \mathrm{diag}(A, B)$ is a group isomorphism from the product group and a homeomorphism (it is a linear embedding of coordinates).
+> that is, $A^T A = I_k$ and $B^T B = I_{n-k}$, i.e. $A \in \mathrm{O}(k)$, $B \in \mathrm{O}(n-k)$. Conversely every such block-diagonal matrix is orthogonal and fixes $V_0$. The map $(A, B) \mapsto \mathrm{diag}(A, B)$ is a group isomorphism from the product group and a homeomorphism (it is a linear embedding of coordinates).
 
 ^pf-15-7
 

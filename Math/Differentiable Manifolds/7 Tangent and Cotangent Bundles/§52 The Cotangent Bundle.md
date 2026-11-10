@@ -44,7 +44,7 @@ tags: [differentiable-manifolds, math591]
 > \zeta : M \longrightarrow T^*M, \qquad \zeta(p) = (p, 0) .
 > $$
 >
-> It is one-to-one, as for $TM$ ([[§51 The Tangent Bundle#^def-51-3|Definition §51.3]]): every cotangent space has a distinguished element, its zero.
+> It is well defined, as for $TM$ ([[§51 The Tangent Bundle#^def-51-3|Definition §51.3]]), because every cotangent space has a distinguished element, its zero; it is one-to-one because $\pi \circ \zeta = \mathrm{id}_M$.
 >
 > *Lee: Ch. 11, The Cotangent Bundle*
 
@@ -169,7 +169,7 @@ The definitions and results of this section run parallel to those for the tangen
 
 ^pf-52-1
 
-*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§51 The Tangent Bundle#^prop-51-2|§51.2]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§51 The Tangent Bundle#^cor-51-4|§51.4]]
+*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§51 The Tangent Bundle#^prop-51-2|§51.2]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]
 
 > [!remark]- Connections
 > - The matrix of a dual map in dual bases is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].
@@ -191,7 +191,7 @@ The definitions and results of this section run parallel to those for the tangen
 >
 > *(4)* As in the proof of Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]], a countable basis of $M$ gives countably many charts $(U_B, \varphi_B)$ whose domains cover $M$. A covector $(p, \xi)$ lies in $T^{\ast}U_B$ whenever $p \in U_B$, so the countably many sets $T^{\ast}U_B$ cover $T^{\ast}M$.
 >
-> *(5)* Let $(p, \xi) \ne (q, \zeta)$. If $p = q$, both lie in $T^{\ast}U$ for any chart $(U, \varphi)$ at $p$. If $p \ne q$, take disjoint open sets $U_0 \ni p$, $V_0 \ni q$ ($M$ is Hausdorff) and charts $(U, \varphi)$ at $p$, $(V, \psi)$ at $q$, shrunk to $U \cap U_0$ and $V \cap V_0$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)); then $T^{\ast}(U \cap U_0) \ni (p, \xi)$ and $T^{\ast}(V \cap V_0) \ni (q, \zeta)$ are disjoint, since a common point $(x, \eta)$ would have $x \in U_0 \cap V_0 = \emptyset$.
+> *(5)* Let $(p, \xi) \ne (q, \xi')$. If $p = q$, both lie in $T^{\ast}U$ for any chart $(U, \varphi)$ at $p$. If $p \ne q$, take disjoint open sets $U_0 \ni p$, $V_0 \ni q$ ($M$ is Hausdorff) and charts $(U, \varphi)$ at $p$, $(V, \psi)$ at $q$, shrunk to $U \cap U_0$ and $V \cap V_0$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)); then $T^{\ast}(U \cap U_0) \ni (p, \xi)$ and $T^{\ast}(V \cap V_0) \ni (q, \xi')$ are disjoint, since a common point $(x, \eta)$ would have $x \in U_0 \cap V_0 = \emptyset$.
 >
 > So Lemma [[§51 The Tangent Bundle#^lem-51-1|§51.1]] applies: $T^{\ast}M$ has a unique topology in which every $T^{\ast}U$ is open and every $\hat\varphi$ is a homeomorphism onto $\varphi(U) \times \mathbb{R}^m$; with it, $T^{\ast}M$ is a topological manifold of dimension $2m$, and the charts $(T^{\ast}U, \hat\varphi)$, whose domains cover $T^{\ast}M$, form a smooth atlas. The fibration and linearity statements follow as in Corollary [[§51 The Tangent Bundle#^cor-51-4|§51.4]]; they are written out in the next corollary.
 
@@ -202,7 +202,7 @@ The definitions and results of this section run parallel to those for the tangen
 > [!theorem] Corollary §52.3: The Cotangent Bundle Is a Fibration
 > With the smooth structure of Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]]:
 >
-> 1. $T^{\ast}M$ is a smooth manifold of dimension $2m$, and $\pi : T^{\ast}M \to M$ is smooth; for each smooth chart $(U, \varphi)$ of $M$, its coordinate representation in the charts $\hat\varphi$ of $T^{\ast}M$ (Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]) and $\varphi$ of $M$ is $\varphi \circ \pi \circ \hat\varphi^{-1}(r, \xi) = r$, $(r, \xi) \in \varphi(U) \times \mathbb{R}^m$;
+> 1. $T^{\ast}M$ is a smooth manifold of dimension $2m$, and $\pi : T^{\ast}M \to M$ is smooth; for each smooth chart $(U, \varphi)$ of $M$, its coordinate representation in the charts $\hat\varphi$ of $T^{\ast}M$ (Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]) and $\varphi$ of $M$ is $\varphi \circ \pi \circ \hat\varphi^{-1}(r, b) = r$, $(r, b) \in \varphi(U) \times \mathbb{R}^m$;
 > 2. the $\Psi$ are local trivializations, so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and each $\Psi$ restricts on the fibre $T_p^{\ast}M$ to a linear isomorphism $T_p^{\ast}M \to \{p\} \times \mathbb{R}^m$; so $T^{\ast}M$ is a vector bundle;
 > 3. the image $\zeta(M)$ of the zero section is a submanifold of $T^{\ast}M$ of codimension $m$.
 >
@@ -213,13 +213,13 @@ The definitions and results of this section run parallel to those for the tangen
 > [!proof]+ Proof
 > *(Not from lecture; filled in, as Corollary [[§51 The Tangent Bundle#^cor-51-4|§51.4]].)*
 >
-> *(1)* By Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]], $T^{\ast}M$ is a topological manifold of dimension $2m$ with a smooth atlas, hence a smooth manifold of dimension $2m$. To see that $\pi$ is smooth, check Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. *Continuity:* on each open set $T^{\ast}U$, $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \hat\varphi$ (Definitions [[§52 The Cotangent Bundle#^def-52-2|§52.2]] and [[§52 The Cotangent Bundle#^def-52-5|§52.5]]), a composite of continuous maps, and the $T^{\ast}U$ cover $T^{\ast}M$. *Coordinate representation:* for $(p, \xi) \in T^{\ast}M$ take a chart $(U, \varphi)$ at $p$; then $(T^{\ast}U, \hat\varphi)$ is a chart at $(p, \xi)$ with $\pi(T^{\ast}U) \subseteq U$, and, as $\hat\varphi^{-1}(r, \xi) = \big(\varphi^{-1}(r), \sum_i \xi_i\, dx^i|_{\varphi^{-1}(r)}\big)$,
+> *(1)* By Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]], $T^{\ast}M$ is a topological manifold of dimension $2m$ with a smooth atlas, hence a smooth manifold of dimension $2m$. To see that $\pi$ is smooth, check Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. *Continuity:* on each open set $T^{\ast}U$, $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \hat\varphi$ (Definitions [[§52 The Cotangent Bundle#^def-52-2|§52.2]] and [[§52 The Cotangent Bundle#^def-52-5|§52.5]]), a composite of continuous maps, and the $T^{\ast}U$ cover $T^{\ast}M$. *Coordinate representation:* for $(p, \xi) \in T^{\ast}M$ take a chart $(U, \varphi)$ at $p$; then $(T^{\ast}U, \hat\varphi)$ is a chart at $(p, \xi)$ with $\pi(T^{\ast}U) \subseteq U$, and, as $\hat\varphi^{-1}(r, b) = \big(\varphi^{-1}(r), \sum_i b_i\, dx^i|_{\varphi^{-1}(r)}\big)$ for $(r, b) \in \varphi(U) \times \mathbb{R}^m$,
 >
 > $$
-> \varphi \circ \pi \circ \hat\varphi^{-1}(r, \xi) = \varphi\big(\varphi^{-1}(r)\big) = r .
+> \varphi \circ \pi \circ \hat\varphi^{-1}(r, b) = \varphi\big(\varphi^{-1}(r)\big) = r .
 > $$
 >
-> So in the charts $\hat\varphi$ and $\varphi$, $\pi$ is $(r, \xi) \mapsto r$, which is smooth.
+> So in the charts $\hat\varphi$ and $\varphi$, $\pi$ is $(r, b) \mapsto r$, which is smooth.
 >
 > *(2)* By Definition [[§40 Fibrations#^def-40-1|§40.1]], take the open cover of $M$ by chart domains $U$ and the maps $\Psi$ of Definition [[§52 The Cotangent Bundle#^def-52-4|§52.4]]. Since $\hat\varphi = (\varphi \times \mathrm{id}) \circ \Psi$ (Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]),
 >
@@ -229,7 +229,7 @@ The definitions and results of this section run parallel to those for the tangen
 >
 > a composite of diffeomorphisms (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]: $\hat\varphi$ is a chart of $T^{\ast}U$, and $\varphi^{-1} \times \mathrm{id}$ is the inverse of the product chart $\varphi \times \mathrm{id}$ of $U \times \mathbb{R}^m$), hence a diffeomorphism (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], applied to the composite and to its inverse). For $(p, \xi) \in T^{\ast}U$, $\mathrm{pr}_1(\Psi(p, \xi)) = \mathrm{pr}_1(p, \xi_1, \ldots, \xi_m) = p = \pi(p, \xi)$, so $\mathrm{pr}_1 \circ \Psi = \pi$; the $T^{\ast}U$ cover $T^{\ast}M$ and the $U$ cover $M$. So $\pi$ is a fibration with fibre $\mathbb{R}^m$.
 >
-> *Linearity on fibres.* Fix $p \in U$. On $T_p^{\ast}M$, $\Psi$ is $\xi \mapsto (p, \xi_1, \ldots, \xi_m)$ with $\xi_i = \xi(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]), taking components in a basis. Each $\xi \mapsto \xi(\partial/\partial x^i|_p)$ is linear, since covectors are added and scaled pointwise (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]): $(a\xi + b\zeta)(\partial/\partial x^i|_p) = a\,\xi(\partial/\partial x^i|_p) + b\,\zeta(\partial/\partial x^i|_p)$. It is bijective onto $\mathbb{R}^m$ because the $dx^i|_p$ form a basis of $T_p^{\ast}M$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]): the components of $\xi$ exist and are unique, and every list $(b_1, \ldots, b_m)$ is the list of components of $\sum_i b_i\, dx^i|_p$. So $\Psi$ restricts to a linear isomorphism $T_p^{\ast}M \to \{p\} \times \mathbb{R}^m$. The fibres are vector spaces and the trivializations are fibrewise linear isomorphisms — the two features of a vector bundle (the remark *Vector Bundles* in [[§51 The Tangent Bundle|§51]]); so $T^{\ast}M$ is a vector bundle.
+> *Linearity on fibres.* Fix $p \in U$. On $T_p^{\ast}M$, $\Psi$ is $\xi \mapsto (p, \xi_1, \ldots, \xi_m)$ with $\xi_i = \xi(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]), taking components in a basis. Each $\xi \mapsto \xi(\partial/\partial x^i|_p)$ is linear, since covectors are added and scaled pointwise (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]): $(a\xi + b\xi')(\partial/\partial x^i|_p) = a\,\xi(\partial/\partial x^i|_p) + b\,\xi'(\partial/\partial x^i|_p)$. It is bijective onto $\mathbb{R}^m$ because the $dx^i|_p$ form a basis of $T_p^{\ast}M$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]): the components of $\xi$ exist and are unique, and every list $(b_1, \ldots, b_m)$ is the list of components of $\sum_i b_i\, dx^i|_p$. So $\Psi$ restricts to a linear isomorphism $T_p^{\ast}M \to \{p\} \times \mathbb{R}^m$. The fibres are vector spaces and the trivializations are fibrewise linear isomorphisms — the two features of a vector bundle (the remark *Vector Bundles* in [[§51 The Tangent Bundle|§51]]); so $T^{\ast}M$ is a vector bundle.
 >
 > *(3)* A point of $\zeta(M)$ is $\zeta(p) = (p, 0)$; take a chart $(U, \varphi)$ at $p$, so $(p, 0) \in T^{\ast}U$, and $\zeta(M) \cap T^{\ast}U = \{(q, 0) : q \in U\}$. For $(q, \xi) \in T^{\ast}U$, the last $m$ coordinates of $\hat\varphi(q, \xi)$ are the components $\xi_i$, and $\xi = \sum_i \xi_i\, dx^i|_q$, so $\xi = 0$ exactly when $\xi_1 = \cdots = \xi_m = 0$. Hence, in the chart $\hat\varphi$,
 >
@@ -249,7 +249,7 @@ The definitions and results of this section run parallel to those for the tangen
 
 **Transcription note.** Page 40 of the handwritten notes writes the standard coordinates as a map on $T^{\ast}M$; they are defined on $T^{\ast}U$, the part of the bundle over the chart domain, as Uribe corrected in lecture.
 
-The cotangent bundle has a natural structure that the tangent bundle does not have. $TM$ and $T^*M$ are isomorphic as vector bundles, but not naturally isomorphic: constructing an isomorphism requires choices (a metric, for instance, as in the [[§37 Regular Submanifolds#^rem-37-1|remark on conormal spaces]]). This is stated, not proved, here.
+The cotangent bundle has a natural structure that the tangent bundle does not have (the symplectic form; see the remark [[§52 The Cotangent Bundle#^rem-52-1|Review Session: The Standard Atlases]] below). $TM$ and $T^*M$ are isomorphic as vector bundles, but not naturally isomorphic: constructing an isomorphism requires choices (a metric, for instance, as in the [[§37 Regular Submanifolds#^rem-37-1|remark on conormal spaces]]). This is stated, not proved, here.
 
 > [!remark] Remark: Review Session: The Standard Atlases
 > *Review session, Friday Oct 16, on the construction of the atlases of the tangent and cotangent bundles.* Any manifold has an enormous number of coordinate charts; the *standard* ones are the most useful. Start with any chart $(U, \varphi = (x^1, \ldots, x^m))$. Then
@@ -261,8 +261,8 @@ The cotangent bundle has a natural structure that the tangent bundle does not ha
 > \end{aligned}
 > $$
 >
-> where the first arrow is, in the language of bundles, a trivialization (Definitions [[§51 The Tangent Bundle#^def-51-4|§51.4]] and [[§51 The Tangent Bundle#^def-51-5|§51.5]]). The $v^i$ are defined as the coefficients of $v = \sum_i v^i\, \partial/\partial x^i|_p$, and they have an explicit formula, $v^i = v[x^i]$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). For $T^{\ast}M$ the same, with covectors: $\alpha = \sum_i \alpha_i\, dx^i|_p$, and dually $\alpha_i = \alpha(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). There is a unique topology on $TM$ making these charts homeomorphisms (accepted without proof in lecture; Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]] for $T^{\ast}M$), and the transition functions are smooth (Proposition [[§52 The Cotangent Bundle#^prop-52-1|§52.1]]).
+> where the first arrow is, in the language of bundles, a trivialization (Definitions [[§51 The Tangent Bundle#^def-51-4|§51.4]] and [[§51 The Tangent Bundle#^def-51-5|§51.5]]). The $v^i$ are defined as the coefficients of $v = \sum_i v^i\, \partial/\partial x^i|_p$, and they have an explicit formula, $v^i = v[x^i]$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). For $T^{\ast}M$ the same, with covectors: $\alpha = \sum_i \alpha_i\, dx^i|_p$, and dually $\alpha_i = \alpha(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). There is a unique topology on $TM$ making these charts homeomorphisms (accepted without proof in lecture; Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]], and Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]] for $T^{\ast}M$), and the transition functions are smooth (Propositions [[§51 The Tangent Bundle#^prop-51-2|§51.2]] and [[§52 The Cotangent Bundle#^prop-52-1|§52.1]]).
 >
-> *Coordinates on $T^{\ast}M$.* By a slight abuse of notation the first $m$ components of the chart of $T^{\ast}U$ are written $x^1, \ldots, x^m$ again, and the last $m$ are traditionally called $p_1, \ldots, p_m$, $p_i(\alpha) = \alpha_i$ — the $\xi_i$ of these notes. Tangent vectors to $T^{\ast}M$ and germs on it come from the general theory, applied to $T^{\ast}M$ as a manifold of dimension $2m$: $\sum_i a^i\, \partial/\partial x^i + \sum_j \beta_j\, \partial/\partial p_j$. One can keep taking tangent bundles forever. In November, with differential forms, the cotangent bundle will turn out to carry an intrinsically defined two-form, the *symplectic form*, which is how it enters Hamiltonian mechanics.
+> *Coordinates on $T^{\ast}M$.* By a slight abuse of notation the first $m$ components of the chart of $T^{\ast}U$ are written $x^1, \ldots, x^m$ again, and the last $m$ are traditionally called $p_1, \ldots, p_m$, $p_i(\alpha) = \alpha_i$ — the $\xi_i$ of these notes. Tangent vectors to $T^{\ast}M$ and germs on it come from the general theory, applied to $T^{\ast}M$ as a manifold of dimension $2m$: $\sum_i a^i\, \partial/\partial x^i + \sum_j \beta_j\, \partial/\partial p_j$. One can keep taking tangent bundles forever. The cotangent bundle carries an intrinsically defined two-form, the *symplectic form* (defined later, with differential forms), which is how it enters Hamiltonian mechanics.
 
 ^rem-52-1

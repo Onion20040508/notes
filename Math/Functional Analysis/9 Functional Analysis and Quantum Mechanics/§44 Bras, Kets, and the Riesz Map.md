@@ -44,7 +44,7 @@ tags: [functional-analysis, math556, companion]
 > - The same norm in Chapter 6: the operator norm for $Y = \mathbb{F}$, [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]].
 
 > [!theorem] Lemma §44.1: The Dual Norm
-> For $\ell \in X^*$, the infimum $\|\ell\|$ is itself an admissible constant: $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$. Moreover $X^*$ is a linear space and $\|\cdot\|$ is a norm on it.
+> Let $X$ be a normed linear space over $\mathbb{F}$. For $\ell \in X^*$, the infimum $\|\ell\|$ is itself an admissible constant: $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$. Moreover $X^*$ is a linear space and $\|\cdot\|$ is a norm on it.
 
 ^lem-44-1
 
@@ -80,7 +80,7 @@ tags: [functional-analysis, math556, companion]
 > - Finite-dimensional version: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]]).
 
 > [!remark] Remark
-> The Riesz map needs no basis, only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast [[§21 Linear Algebra Toolkit#^prop-21-2|MATH 591]]: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis — the inner product is exactly the extra structure that removes the choice. The price is that $R$ is conjugate-linear, so over $\mathbb{C}$ the identification is with the complex conjugate space $\overline{H}$; in finite dimensions this is the conjugate transpose (Example [[§44 Bras, Kets, and the Riesz Map#^ex-44-1|§44.1]]). For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object; this is where the course is heading.
+> The Riesz map needs no basis, only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast [[§21 Linear Algebra Toolkit#^prop-21-2|MATH 591]]: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis — the inner product is exactly the extra structure that removes the choice. The price is that $R$ is conjugate-linear, so over $\mathbb{C}$ the identification is with the complex conjugate space $\overline{H}$; in finite dimensions this is the conjugate transpose (Example [[§44 Bras, Kets, and the Riesz Map#^ex-44-1|§44.1]]). For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object ([[§31 Dual Spaces|§31]], [[§36 Duality in Normed Spaces|§36]]).
 
 ^rem-44-2
 

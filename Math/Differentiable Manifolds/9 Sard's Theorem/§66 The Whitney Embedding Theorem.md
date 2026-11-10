@@ -9,9 +9,9 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: analysis — Every manifold sits inside some Euclidean space; Sard's theorem pushes the dimension down to $2m + 1$.*
 
-*Lecture 21: the Whitney embedding and immersion theorems. (To cover more of the syllabus some proofs are skipped; degree theory, officially on the syllabus, is left to assigned reading.)*
+*Lecture 21: the Whitney embedding and immersion theorems.*
 
-The proof, for $M$ compact, has two parts with entirely different ideas: bump functions embed $M$ in some $\mathbb{R}^k$ (Lemma [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]]), and projections along well-chosen lines lower the dimension (Lemmas [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]] and [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]]). The lemmas come first; Theorem [[§66 The Whitney Embedding Theorem#^thm-66-6|§66.6]] assembles them. The general case, Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], is sketched in [[§66 The Whitney Embedding Theorem|§66]].
+The proof, for $M$ compact, has two parts with entirely different ideas: bump functions embed $M$ in some $\mathbb{R}^k$ (Lemma [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]]), and projections along well-chosen lines lower the dimension (Lemmas [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]] and [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]]). The lemmas come first; Theorem [[§66 The Whitney Embedding Theorem#^thm-66-6|§66.6]] assembles them. The general case, Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], is sketched in [[§66 The Whitney Embedding Theorem#The Noncompact Case: A Sketch|§66, The Noncompact Case]].
 
 > [!theorem] Lemma §66.1: Compact Manifolds Embed in Some $\mathbb{R}^k$
 > Let $M$ be a compact smooth manifold of dimension $m$. Then there is an embedding $F : M \to \mathbb{R}^k$ for some $k$.
@@ -71,7 +71,7 @@ We want: *if $N > 2m + 1$, there is an $\ell$ such that $\pi_\ell$ is an embeddi
 
 ^pf-66-2
 
-*Uses:* [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§63 Sard's Theorem#^cor-63-4|§63.4]], [[§62 Sets of Measure Zero#^def-62-2|Def. §62.2]]
+*Uses:* [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§63 Sard's Theorem#^cor-63-4|§63.4]], [[§62 Sets of Measure Zero#^def-62-2|Def. §62.2]]
 
 > [!theorem] Lemma §66.3: Projections That Stay Injective
 > Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, with $N > 2m + 1$. Then the lines $\ell \subseteq \mathbb{R}^N$ through $0$ for which $\ell \subseteq \mathbb{R}^{N-1}$, or $\pi_\ell : M \to \mathbb{R}^{N-1}$ is not injective, form a set of measure zero in $\mathbb{RP}^{N-1}$. In particular there are lines $\ell \not\subseteq \mathbb{R}^{N-1}$ with $\pi_\ell$ injective.
@@ -87,11 +87,11 @@ We want: *if $N > 2m + 1$, there is an $\ell$ such that $\pi_\ell$ is an embeddi
 > \sigma : (M \times M) \setminus \Delta \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, q) \longmapsto \operatorname{span}(q - p),
 > $$
 >
-> the line through $0$ parallel to the secant from $p$ to $q$, the vector $\vec{pq}$; $q - p \neq 0$ because $p \neq q$. *(Filled in.)* $\sigma$ is smooth: it is $(p, q) \mapsto q - p \in \mathbb{R}^N \setminus \{0\}$ followed by the quotient map to $\mathbb{RP}^{N-1}$, which in the chart $\varphi_i$ of Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]] is $w \mapsto (w_k/w_i)_{k \neq i}$, rational with nonvanishing denominator. Its domain is open in $M \times M$, of dimension $2m$, and $\dim \mathbb{RP}^{N-1} = N - 1$. If $2m < N - 1$, the image of $\sigma$ has measure zero (Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]]). So do the lines contained in $\mathbb{R}^{N-1}$: they form a copy of $\mathbb{RP}^{N-2}$, of lower dimension, whose image under the smooth inclusion has measure zero by the same corollary (Lemma [[§66 The Whitney Embedding Theorem#^lem-66-2|§66.2]]). A union of two sets of measure zero has measure zero (Proposition [[§62 Sets of Measure Zero#^prop-62-4|§62.4]]), so its complement is dense (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4), in charts): pick $\ell$ not in the image of $\sigma$ and transverse to $\mathbb{R}^{N-1}$. For such $\ell$, $\pi_\ell$ is injective: $\pi_\ell(p) = \pi_\ell(q)$ means $q - p \in \ker = \ell$, so for $p \neq q$, $\ell = \operatorname{span}(q - p) = \sigma(p, q)$, contrary to the choice. So injectivity is lost exactly when the secant of some pair $p \neq q$ is parallel to the line of projection. The condition $2m < N - 1$ is $N > 2m + 1$, exactly the bound in the statement.
+> the line through $0$ parallel to the secant from $p$ to $q$, the vector $\vec{pq}$; $q - p \neq 0$ because $p \neq q$. *(Filled in.)* $\sigma$ is smooth: it is $(p, q) \mapsto q - p \in \mathbb{R}^N \setminus \{0\}$ followed by the quotient map to $\mathbb{RP}^{N-1}$, which in the chart $\varphi_i$ of Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]] is $w \mapsto (w^k/w^i)_{k \neq i}$, rational with nonvanishing denominator. Its domain is open in $M \times M$, of dimension $2m$, and $\dim \mathbb{RP}^{N-1} = N - 1$. If $2m < N - 1$, the image of $\sigma$ has measure zero (Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]]). So do the lines contained in $\mathbb{R}^{N-1}$: they form a copy of $\mathbb{RP}^{N-2}$, of lower dimension, whose image under the smooth inclusion has measure zero by the same corollary (Lemma [[§66 The Whitney Embedding Theorem#^lem-66-2|§66.2]]). A union of two sets of measure zero has measure zero (Proposition [[§62 Sets of Measure Zero#^prop-62-4|§62.4]]), so its complement is dense (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4), in charts): pick $\ell$ not in the image of $\sigma$ and transverse to $\mathbb{R}^{N-1}$. For such $\ell$, $\pi_\ell$ is injective: $\pi_\ell(p) = \pi_\ell(q)$ means $q - p \in \ker = \ell$, so for $p \neq q$, $\ell = \operatorname{span}(q - p) = \sigma(p, q)$, contrary to the choice. So injectivity is lost exactly when the secant of some pair $p \neq q$ is parallel to the line of projection. The condition $2m < N - 1$ is $N > 2m + 1$, exactly the bound in the statement.
 
 ^pf-66-3
 
-*Uses:* [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§63 Sard's Theorem#^cor-63-4|§63.4]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§62 Sets of Measure Zero#^lem-62-1|§62.1]], [[§66 The Whitney Embedding Theorem#^thm-66-6|§66.6]]
+*Uses:* [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§63 Sard's Theorem#^cor-63-4|§63.4]], [[§66 The Whitney Embedding Theorem#^lem-66-2|§66.2]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§62 Sets of Measure Zero#^lem-62-1|§62.1]]
 
 ![[m591-61-2.svg]]
 
@@ -155,7 +155,7 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 
 ^pf-66-5
 
-*Uses:* [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-5|§42.5]], [[§66 The Whitney Embedding Theorem#^lem-66-4|§66.4]], [[§63 Sard's Theorem#^cor-63-4|§63.4]], [[§66 The Whitney Embedding Theorem#^lem-66-2|§66.2]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§62 Sets of Measure Zero#^lem-62-1|§62.1]]
+*Uses:* [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-5|§42.5]], [[§66 The Whitney Embedding Theorem#^lem-66-4|§66.4]], [[§63 Sard's Theorem#^cor-63-4|§63.4]], [[§66 The Whitney Embedding Theorem#^lem-66-2|§66.2]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§62 Sets of Measure Zero#^lem-62-1|§62.1]]
 
 ![[m591-61-a1.gif|640]]
 
@@ -331,7 +331,7 @@ Left: a sublevel set of an exhaustion function on a surface with holes, as on th
 
 ^pf-66-10
 
-*Uses:* [[§66 The Whitney Embedding Theorem#^thm-66-6|§66.6]], [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-5|§42.5]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§66 The Whitney Embedding Theorem#^lem-66-4|§66.4]], [[§63 Sard's Theorem#^cor-63-4|§63.4]], [[§66 The Whitney Embedding Theorem#^lem-66-2|§66.2]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§44 Embeddings#^cor-44-3|§44.3]]
+*Uses:* [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-5|§42.5]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§66 The Whitney Embedding Theorem#^lem-66-4|§66.4]], [[§63 Sard's Theorem#^cor-63-4|§63.4]], [[§66 The Whitney Embedding Theorem#^lem-66-2|§66.2]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§44 Embeddings#^cor-44-3|§44.3]]
 
 This gives the immersion half of Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]] below (Lee, Theorem 6.18) from an embedding into any Euclidean space, without the dimension $2m + 1$ of the embedding half; for compact $M$, Lemma [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]] supplies the embedding.
 
@@ -368,7 +368,7 @@ This gives the immersion half of Theorem [[§66 The Whitney Embedding Theorem#^t
 In other words, every manifold is diffeomorphic to a submanifold of some Euclidean space (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]). The course proves the compact case in full (Theorem [[§66 The Whitney Embedding Theorem#^thm-66-6|§66.6]]). The noncompact case, which first makes the embedding proper, was sketched in Lecture 22 and assigned as reading in Lee (Lemma 6.14 and Theorem 6.15, with a figure of the tube construction); the proof above is Lee's, with two facts about manifolds with boundary cited (Proposition [[§66 The Whitney Embedding Theorem#^prop-66-9|§66.9]]).
 
 > [!remark] Remark: The Hard Version
-> In the “hard” version the dimensions are one less: an embedding into $\mathbb{R}^{2m}$ and an immersion into $\mathbb{R}^{2m-1}$ (for $m > 1$ in the second; Lee, Theorems 6.19 and 6.20). The course does not discuss it: the proof is very specialized and long. The smaller the codimension, the tighter the fit, and the harder the manifold must be manipulated to fit in.
+> In the “hard” version the dimensions are one less: an embedding into $\mathbb{R}^{2m}$ and an immersion into $\mathbb{R}^{2m-1}$ (for $m > 0$ in the first and $m > 1$ in the second; Lee, Theorems 6.19 and 6.20). The course does not discuss it: the proof is very specialized and long. The smaller the codimension, the tighter the fit, and the harder the manifold must be manipulated to fit in.
 
 ^rem-66-2
 

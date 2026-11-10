@@ -12,6 +12,7 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses
 - [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|Theorem §19.1: Hölder's Inequality for Functions]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|Proposition §33.1: Extension by Zero]]
 - [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|Definition §33.5: Test Functions]]
 
 ## Its proof uses (other subjects)

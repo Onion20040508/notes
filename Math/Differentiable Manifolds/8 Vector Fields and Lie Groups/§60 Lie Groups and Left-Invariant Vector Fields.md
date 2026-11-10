@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: symmetry — Groups that are manifolds, and the vector fields that respect the group: the start of Lie theory.*
 
-*Lecture 16, last three minutes, to be continued. References: Lee Ch. 7 and Ch. 8. Lie algebras and Lie groups are related, and in one direction the relationship is very nice: every Lie group has a Lie algebra associated to it.*
+*Lecture 16. References: Lee Ch. 7 and Ch. 8. Lie algebras and Lie groups are related, and in one direction the relationship is very nice: every Lie group has a Lie algebra associated to it.*
 
 > [!definition] Definition §60.1: Lie Group
 > A **Lie group** is a [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|topological group]] $G$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-1|Definition §11.1]]) together with a [[§17 Differentiable Structures#^def-17-9|smooth structure]], such that multiplication $G \times G \to G$, $(g, h) \mapsto gh$, and inversion $G \to G$, $g \mapsto g^{-1}$, are [[§19 Smooth Functions and Smooth Maps#^def-19-3|smooth maps]].
@@ -41,7 +41,7 @@ For a topological group the two maps had to be continuous; now they are required
 >
 > So the composite $(g, h) \mapsto gh$ is smooth into $\operatorname{Mat}$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). It lands in $G$, because $G$ is a group under matrix multiplication; so it is smooth into $G$, by the last sentence of the setting.
 >
-> *Inversion* is the restriction of a smooth map on the open set of invertible matrices — $g \mapsto \operatorname{adj}(g)/\det g$ by the cofactor formula, a rational map with nonvanishing denominator — landing in $G$, hence smooth into $G$ in the same way. In detail: the set of invertible matrices in $\operatorname{Mat}$ is $\det^{-1}$ of the nonzero numbers, open since $\det$ is continuous. On it, the entries of $\operatorname{adj}(g)$ and $\det g$ are polynomials in the entries of $g$, and $\det g \ne 0$, so $g \mapsto \operatorname{adj}(g)/\det g = g^{-1}$ is smooth; in the complex case, dividing by $\det g$ is multiplying by $\overline{\det g}/|\det g|^2$, again rational in the real coordinates with nonvanishing denominator $|\det g|^2$. Every $G$ of the list consists of invertible matrices, so $g \mapsto g^{-1}$ on $G$ is this map composed with $\iota$, smooth into $\operatorname{Mat}$; it lands in $G$, because $G$ is closed under inverses; so it is smooth into $G$. (For $\mathrm{O}(n)$ and $\mathrm{U}(n)$ it is even linear: $g \mapsto g^{\mathsf T}$, $g \mapsto g^{\ast}$.)
+> *Inversion* is the restriction of a smooth map on the open set of invertible matrices — $g \mapsto \operatorname{adj}(g)/\det g$ by the [[§27 Cramer’s Rule, Volume, and Linear Transformations#^thm-27-2|cofactor formula]], a rational map with nonvanishing denominator — landing in $G$, hence smooth into $G$ in the same way. In detail: the set of invertible matrices in $\operatorname{Mat}$ is $\det^{-1}$ of the nonzero numbers, open since $\det$ is continuous. On it, the entries of $\operatorname{adj}(g)$ and $\det g$ are polynomials in the entries of $g$, and $\det g \ne 0$, so $g \mapsto \operatorname{adj}(g)/\det g = g^{-1}$ is smooth; in the complex case, dividing by $\det g$ is multiplying by $\overline{\det g}/|\det g|^2$, again rational in the real coordinates with nonvanishing denominator $|\det g|^2$. Every $G$ of the list consists of invertible matrices, so $g \mapsto g^{-1}$ on $G$ is this map composed with $\iota$, smooth into $\operatorname{Mat}$; it lands in $G$, because $G$ is closed under inverses; so it is smooth into $G$. (For $\mathrm{O}(n)$ and $\mathrm{U}(n)$ it is even linear: $g \mapsto g^{\mathsf T}$, $g \mapsto g^{\ast}$.)
 
 ^pf-60-1
 
@@ -165,7 +165,7 @@ The unit quaternions $S^3$ are a Lie group as well ([[§47 The Unit Quaternions 
 
 *Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2|§60.2]]
 
-For a matrix group both are first-order expansions: $(I + tA)(I + tB) = I + t(A + B) + O(t^2)$ and $(I + tA)^{-1} = I - tA + O(t^2)$. At a general point the same proofs give the formulas of Propositions [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-12|§60.12]] and [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-14|§60.14]], in [[§60 Lie Groups and Left-Invariant Vector Fields|§60]], once right translations are available.
+For a matrix group both are first-order expansions: $(I + tA)(I + tB) = I + t(A + B) + O(t^2)$ and $(I + tA)^{-1} = I - tA + O(t^2)$. At a general point the same proofs give the formulas of Propositions [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-12|§60.12]] and [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-14|§60.14]], in the subsection [[§60 Lie Groups and Left-Invariant Vector Fields#Right-Invariant Vector Fields|Right-Invariant Vector Fields]] below, once right translations are available.
 
 > [!definition] Definition §60.2: Left Translation
 > For $g$ in a [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]] $G$, **left translation** by $g$ is $L_g : G \to G$, $L_g(h) = gh$.
@@ -202,7 +202,7 @@ For a matrix group both are first-order expansions: $(I + tA)(I + tB) = I + t(A 
 > A [[§56 Vector Fields#^def-56-1|vector field]] $\mathbf{X} \in \mathfrak{X}(G)$ is **left-invariant** if for all $g, h \in G$
 >
 > $$
-> (L_g)_{*h}\, \mathbf{X}_h = \mathbf{X}_{gh} .
+> (L_g)_{\ast h}\, \mathbf{X}_h = \mathbf{X}_{gh} .
 > $$
 >
 > *Lee: Ch. 8, Lie Algebras*
@@ -250,7 +250,7 @@ Left invariance in one line: pushing vectors of the field forward by left transl
 
 ^pf-ex-60-1
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|Def. §60.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|Def. §60.3]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|Def. §60.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|Def. §60.3]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
 
 Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^{\mathrm{geo}}_g G = g \cdot T^{\mathrm{geo}}_I G$ for the classical groups: a left-invariant field moves the tangent space at the identity around the group by left multiplication. Later in this section, $\mathbf{X}^A$ is the left-invariant extension of $A \in T_IG$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]): by the differential of $L_g$ computed in the proof above, $(L_g)_{\ast I}(A) = gA = \mathbf{X}^A_g$.
 
@@ -270,7 +270,7 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 > [!remark]- Connections
 > - The physicists' definition for matrix Lie groups, directly as $T_{\mathbb 1}G$ with the matrix commutator: [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|QFT Def. §CB.1.11]].
 
-*Status.* Defined in Lecture 16, where $\mathfrak{g}$ was announced to be soon identified with the tangent space at the identity; originally, though, its elements are a very special type of vector field, because that is where the Lie bracket comes from. For $\mathrm{GL}(n,\mathbb{R})$ the identification is $\mathbf{X}^A \mapsto A$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]). The two facts announced then were proved in Lecture 17, in [[§60 Lie Groups and Left-Invariant Vector Fields|§60]] below: $\mathfrak{g}$ is closed under the bracket, and $\mathbf{X} \mapsto \mathbf{X}_e$ is an isomorphism onto $T_eG$ (its last step, smoothness, completed in Lecture 18).
+*Status.* Defined in Lecture 16, where $\mathfrak{g}$ was announced to be soon identified with the tangent space at the identity; originally, though, its elements are a very special type of vector field, because that is where the Lie bracket comes from. For $\mathrm{GL}(n,\mathbb{R})$ the identification is $\mathbf{X}^A \mapsto A$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]). The two facts announced then were proved in Lecture 17, in the subsection [[§60 Lie Groups and Left-Invariant Vector Fields#The Lie Algebra and the Tangent Space at the Identity|The Lie Algebra and the Tangent Space at the Identity]] below: $\mathfrak{g}$ is closed under the bracket, and $\mathbf{X} \mapsto \mathbf{X}_e$ is an isomorphism onto $T_eG$ (its last step, smoothness, completed in Lecture 18).
 
 ## The Lie Algebra and the Tangent Space at the Identity
 
@@ -503,7 +503,7 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§58 Lie Bracket and L
 ^thm-60-10
 
 > [!proof]+ Proof
-> *(Lecture 19: here diagram chasing no longer suffices, and something has to be computed. The lecture's computation, with the index bookkeeping written out. Lecture 19 proved this together with Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]], which reduces every linear group to this case.)*
+> *(Lecture 19: here diagram chasing no longer suffices, and something has to be computed. The lecture's computation, with the index bookkeeping written out. Lecture 19 proved this together with Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]], which reduces every linear group in $\mathrm{GL}(d, \mathbb{R})$ to this case.)*
 >
 > *Coordinates.* Write $A = (a^i_j)$, with $i$ the row index and $j$ the column index, and call a general group element $X = (x^i_j) \in \mathrm{GL}(d, \mathbb{R})$ rather than $g$, to think of it as a variable. Written out,
 >
@@ -552,7 +552,7 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§58 Lie Bracket and L
 
 ^pf-60-10
 
-*Uses:* [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Def. §60.6]]
+*Uses:* [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Def. §60.6]]
 
 Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset of $\operatorname{Mat}(d,\mathbb{R})$ is linear in $X$, and the bracket of the linear fields $X \mapsto XA$ and $X \mapsto XB$ is the linear field $X \mapsto X(AB - BA)$.
 
@@ -561,7 +561,7 @@ Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset 
 > - For matrix Lie groups the physics notes prove the answer: the bracket of left-invariant fields becomes $XY - YX$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|QFT Theorem §CB.1.16]], part 3), and $\mathfrak g$ is closed under it ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|QFT Theorem §CB.1.12]]).
 
 > [!remark] Remark: Left or Right: The Sign of the Bracket
-> The formula $[A, B] = AB - BA$ holds because left-invariant fields are used; with right-invariant fields the bracket would be minus that. Why left, then? Many things would work better if functions were written to the right of their arguments, $(x)f$ instead of $f(x)$: in that notation, composites read in the order the maps are applied. *(Proved in [[§60 Lie Groups and Left-Invariant Vector Fields|§60]]: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]], Assignment 6, Problem 2(b).)*
+> The formula $[A, B] = AB - BA$ holds because left-invariant fields are used; with right-invariant fields the bracket would be minus that. Why left, then? Many things would work better if functions were written to the right of their arguments, $(x)f$ instead of $f(x)$: in that notation, composites read in the order the maps are applied. *(Proved in the subsection [[§60 Lie Groups and Left-Invariant Vector Fields#Right-Invariant Vector Fields|Right-Invariant Vector Fields]] below: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]], Assignment 6, Problem 2(b).)*
 
 ^rem-60-2
 

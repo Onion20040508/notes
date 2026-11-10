@@ -62,7 +62,7 @@ In general it is hard to tell whether a given vector field is complete, so resul
 
 *(Not from lecture; animation added, vault only.)* The step of the proof, repeated. Knowing only that every integral curve lives at least for $|t| < \varepsilon$ ($\varepsilon = 1.2$ here), restarting the flow at a time $t_k$ just before the end of what is known (orange dots on the curve, orange segments on the time axis) extends the curve by $2\varepsilon/3$ each time, so the known domain (blue bar) grows without bound. The field is the spiral field of the group-law animation, which is complete.
 
-*The new homework asks for a similar argument, the escape lemma.*
+*A similar argument proves the escape lemma (Theorem [[§70 Complete Vector Fields#^thm-70-4|§70.4]]).*
 
 ![[m591-68-3.svg]]
 
@@ -98,7 +98,7 @@ So on a compact manifold there is no need to check where the flow is defined.
 
 ![[m591-70-5.svg]]
 
-*(Not from lecture; figure added.)* Each point has a flow box of its own width $\varepsilon_p$, which can shrink from point to point; compactness leaves finitely many, and the smallest width is a uniform time. Lee proves more: compactly supported fields are complete (Theorem 9.16).
+*(Not from lecture; figure added.)* Each point has a flow box of its own width $\varepsilon_p$, which can shrink from point to point; compactness leaves finitely many, and the smallest width is a uniform time. More is true: compactly supported fields are complete (Corollary [[§70 Complete Vector Fields#^cor-70-6|§70.6]]; Lee, Theorem 9.16).
 
 ![[m591-70-2.svg]]
 
@@ -325,7 +325,7 @@ Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] is the case of a diffeomorphism 
 
 ![[m591-70-6.svg]]
 
-The theorem says more: left-translating by $g$ the integral curve through the identity gives the integral curve through $g$, as in the figure. For $G = \mathrm{GL}(n, \mathbb{R})$ and the left-invariant field with $\mathbf{X}_I = A$, the curve $\varphi^I(t)$ is the matrix exponential $e^{tA}$ (not yet in the course), and $\varphi^g(t) = g\, e^{tA}$.
+The theorem says more: left-translating by $g$ the integral curve through the identity gives the integral curve through $g$, as in the figure. For $G = \mathrm{GL}(n, \mathbb{R})$ and the left-invariant field with $\mathbf{X}_I = A$, the curve $\varphi^I(t)$ is the matrix exponential $e^{tA}$ (Theorem [[§71 The Exponential Map#^thm-71-9|§71.9]]), and $\varphi^g(t) = g\, e^{tA}$.
 
 ![[m591-70-3.svg]]
 

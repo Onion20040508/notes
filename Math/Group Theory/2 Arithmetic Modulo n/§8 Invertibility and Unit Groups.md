@@ -51,7 +51,7 @@ tags: [group-theory, math493]
 >
 > ($\Rightarrow$) Suppose $ax = 1 + kn$, so $ax - kn = 1$. Any positive integer $d$ dividing both $a$ and $n$ divides $ax - kn = 1$, hence $d = 1$. So $\gcd(a, n) = 1$.
 >
-> ($\Leftarrow$) Suppose $\gcd(a, n) = 1$. By [[§5 A Zoo of Subgroups#^cor-5-2|Bézout's identity]] (proved later in this section as a corollary of the classification of subgroups of $\mathbb{Z}$), there are integers $x, y$ with $ax + ny = 1$. Reading this modulo $n$: $ax = 1 - ny \equiv 1 \pmod n$, so $[x]$ is an inverse of $[a]$.
+> ($\Leftarrow$) Suppose $\gcd(a, n) = 1$. By [[§5 A Zoo of Subgroups#^cor-5-2|Bézout's identity]] (Corollary [[§5 A Zoo of Subgroups#^cor-5-2|§5.2]] in [[§5 A Zoo of Subgroups|§5]], a corollary of the classification of subgroups of $\mathbb{Z}$), there are integers $x, y$ with $ax + ny = 1$. Reading this modulo $n$: $ax = 1 - ny \equiv 1 \pmod n$, so $[x]$ is an inverse of $[a]$.
 
 ^pf-8-1
 

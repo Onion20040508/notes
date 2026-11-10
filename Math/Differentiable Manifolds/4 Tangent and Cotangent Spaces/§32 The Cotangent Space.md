@@ -103,7 +103,7 @@ Concretely, $a\,\partial/\partial r|_c$ is the derivation $h \mapsto a\,h'(c)$: 
 > - Used in Relativity: the differential of a scalar field is why its gradient $\partial_\mu\phi$ carries a lower index — [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-5|REL Remark: Why the gradient carries a lower index]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]].
 
 > [!theorem] Proposition §32.2: The Differential Evaluates Derivations
-> For every $D \in T_pM$, $\ df_p(D) = D[f]$. In particular $df_p\big(\partial/\partial x^j|_p\big) = \partial f/\partial x^j(p)$ in any chart.
+> Let $M$ be a smooth manifold, $p \in M$, and $f$ a smooth function defined near $p$. For every $D \in T_pM$, $\ df_p(D) = D[f]$. In particular $df_p\big(\partial/\partial x^j|_p\big) = \partial f/\partial x^j(p)$ in any chart.
 >
 > *Lee: Ch. 11, Covectors*
 

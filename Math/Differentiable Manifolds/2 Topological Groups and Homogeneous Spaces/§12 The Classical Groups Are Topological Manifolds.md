@@ -10,7 +10,7 @@ tags: [differentiable-manifolds, math591]
 *Thread: equations — The classical groups as regular level sets of polynomial maps ([[§7 The Regular Value Theorem|§7]]): each is a topological manifold.*
 
 > [!remark] Remark: The Method: Level Sets and the Implicit Function Theorem
-> This is the first use of calculus in the course. $\mathrm{SL}(n,\mathbb{R})$ is a *level set*, $\det^{-1}(1)$, of a smooth function on $\mathbb{R}^{n^2}$. Multivariable calculus says that a level set of $F$ is locally a graph—hence locally Euclidean—near any point where $\nabla F \neq 0$. So the work is to compute $\nabla \det$ and show it does not vanish on $\mathrm{SL}(n,\mathbb{R})$. Computing $\nabla\det$ directly from the [[§37 Determinants#^ladr-9-46|Leibniz formula]] is unmanageable; instead, *differentiate along curves* and use the [[Multivariable Chain Rule|chain rule]]. Computing gradients or differentials along curves is a method that recurs several times in the course.
+> In lecture this was the first use of calculus in the course. $\mathrm{SL}(n,\mathbb{R})$ is a *level set*, $\det^{-1}(1)$, of a smooth function on $\mathbb{R}^{n^2}$. Multivariable calculus says that a level set of $F$ is locally a graph—hence locally Euclidean—near any point where $\nabla F \neq 0$. So the work is to compute $\nabla \det$ and show it does not vanish on $\mathrm{SL}(n,\mathbb{R})$. Computing $\nabla\det$ directly from the [[§37 Determinants#^ladr-9-46|Leibniz formula]] is unmanageable; instead, *differentiate along curves* and use the [[Multivariable Chain Rule|chain rule]]. Computing gradients or differentials along curves is a method that recurs several times in the course.
 
 ^rem-12-1
 
@@ -42,8 +42,7 @@ Throughout, identify $\operatorname{Mat}(n,\mathbb{R}) = \mathbb{R}^{n^2}$ via [
 > \det(g + tA) = \det(g)\, \det(I + tV),
 > $$
 >
-> and $\det(g)$ is a constant, so it suffices to show $\frac{d}{dt}\big|_{t=0} \det(I + tV) = \operatorname{tr} V$. By the Leibniz formula, with $(I + tV)_{ij} = \delta_{ij} + t V_{ij}$,
-> that is,
+> and $\det(g)$ is a constant, so it suffices to show $\frac{d}{dt}\big|_{t=0} \det(I + tV) = \operatorname{tr} V$. Entrywise, $(I + tV)_{ij} = \delta_{ij} + t V_{ij}$, that is,
 >
 > $$
 > I + tV = \begin{pmatrix}
@@ -51,8 +50,10 @@ Throughout, identify $\operatorname{Mat}(n,\mathbb{R}) = \mathbb{R}^{n^2}$ via [
 > tV_{21} & 1 + tV_{22} & \cdots & tV_{2n} \\
 > \vdots & \vdots & \ddots & \vdots \\
 > tV_{n1} & tV_{n2} & \cdots & 1 + tV_{nn}
-> \end{pmatrix},
+> \end{pmatrix}.
 > $$
+>
+> By the Leibniz formula,
 >
 > $$
 > \det(I + tV) = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{i=1}^n \big( \delta_{i,\sigma(i)} + t\, V_{i,\sigma(i)} \big).
@@ -122,7 +123,7 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 *Uses:* [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[§9 Matrices#^ladr-3-54|LADR 3.54]], [[§9 Matrices#^ladr-3-46|LADR 3.46]]
 
 > [!remark] Remark: The Gradient Itself
-> Differentiating the determinant with respect to one entry recovers the cofactor expansion along that entry's row. The directional form of [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|Proposition §12.1]] is the one used in proofs; the gradient form is what one checks against a direct computation for $n = 2$, carried out in Example [[§12 The Classical Groups Are Topological Manifolds#^ex-12-1|§12.1]].
+> Differentiating the determinant with respect to one entry recovers that entry's cofactor, its coefficient in the cofactor expansion along its row. The directional form of [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|Proposition §12.1]] is the one used in proofs; the gradient form is what one checks against a direct computation for $n = 2$, carried out in Example [[§12 The Classical Groups Are Topological Manifolds#^ex-12-1|§12.1]].
 
 ^rem-12-2
 
@@ -175,7 +176,7 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 
 *Uses:* [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-5|§7.5]]
 
-The passage from “nonvanishing gradient” to “locally a graph” is the Implicit Function Theorem, proved in MATH 452 and used here as a black box. We record it in the general vector-valued form ([[§7 The Regular Value Theorem#^thm-7-2|§7.2]]), since that is what the [[§7 The Regular Value Theorem#^thm-7-5|regular value theorem]] (PSet 1, Problem 6) needs, and then specialize ([[§7 The Regular Value Theorem#^cor-7-4|§7.4]]).
+The passage from “nonvanishing gradient” to “locally a graph” is the Implicit Function Theorem, proved in MATH 452 and used here as a black box. It is recorded in [[§7 The Regular Value Theorem|§7]] in the general vector-valued form (Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]), since that is what the [[§7 The Regular Value Theorem#^thm-7-5|regular value theorem]] (PSet 1, Problem 6) needs, and then specialized to the scalar case (Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]]).
 
 > [!theorem] Corollary §12.5: $\mathrm{SL}(n,\mathbb{R})$ Is a Manifold of Dimension $n^2 - 1$
 > $\mathrm{SL}(n,\mathbb{R})$ is a topological manifold of dimension $n^2 - 1$.
@@ -196,7 +197,7 @@ The argument given in lecture is the same one specialized by hand; it is recorde
 > [!proof]+ Proof as given in lecture
 > Let $g \in \mathrm{SL}(n,\mathbb{R})$. Number the $N = n^2$ coordinates of $\mathbb{R}^N$ as in [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Definition §11.2]], so that coordinate $x_k$ with $k = n(i-1)+j$ is the matrix entry $x_{ij}$. By [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|Corollary §12.3]] some component of $\nabla\det(g)$ is nonzero: $\dfrac{\partial \det}{\partial x_k}(g) \neq 0$ for some $k \in \{1, \ldots, N\}$. If $k \neq N$, let $\tau : \mathbb{R}^N \to \mathbb{R}^N$ be the linear map that swaps coordinates $k$ and $N$. It is a homeomorphism (linear, and its own inverse), so $\tau(\mathrm{SL}(n,\mathbb{R}))$ is homeomorphic to $\mathrm{SL}(n,\mathbb{R})$, and it equals the level set $\{\det \circ \tau^{-1} = 1\}$ of the polynomial $\det \circ \tau^{-1}$, whose gradient at $\tau(g)$ is $\nabla\det(g)$ with coordinates $k$ and $N$ swapped, hence has nonzero last component. Since being locally Euclidean is a topological property, we may replace $(\mathrm{SL}(n,\mathbb{R}), \det)$ by $(\tau(\mathrm{SL}(n,\mathbb{R})), \det \circ \tau^{-1})$; that is, WLOG $k = N$.
 >
-> Apply [[§7 The Regular Value Theorem#^cor-7-4|Theorem §7.4]] to $F = \det$ (a polynomial, hence $C^\infty$), $a = g$, $c = 1$: there are $W' \ni g'$ open in $\mathbb{R}^{N-1}$, an interval $J \ni g_N$, and a smooth $h : W' \to J$ with
+> Write $g = (g', g_N) \in \mathbb{R}^{N-1} \times \mathbb{R}$. Apply Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]] to $F = \det$ (a polynomial, hence $C^\infty$), $a = g$, $c = 1$: there are $W' \ni g'$ open in $\mathbb{R}^{N-1}$, an interval $J \ni g_N$, and a smooth $h : W' \to J$ with
 >
 > $$
 > \mathrm{SL}(n,\mathbb{R}) \cap (W' \times J) = \{\, (x', h(x')) \mid x' \in W' \,\}.

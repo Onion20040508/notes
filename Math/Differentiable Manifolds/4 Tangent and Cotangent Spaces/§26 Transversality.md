@@ -276,14 +276,14 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 > [!example] Example §26.2: Two Ways Transversality Can Fail
 > Let $S$ be the $x$-axis in $\mathbb{R}^2$, cut out by $G(x,y) = y$, so $T^{\mathrm{geo}}_qS$ is the $x$-axis at every $q \in S$, and $\ell = 1$. For $F : \mathbb{R} \to \mathbb{R}^2$ the theorem predicts $\dim F^{-1}(S) = 1 - 1 = 0$.
-> - (a) $F(t) = (t, 0)$. Then $F^{-1}(S) = \mathbb{R}$, of dimension $1$: the *dimension* is wrong. Here $\operatorname{im} F'(t)$ is the $x$-axis, so $\operatorname{im} F'(t) + T S$ is the $x$-axis, not $\mathbb{R}^2$.
+> - (a) $F(t) = (t, 0)$. Then $F^{-1}(S) = \mathbb{R}$, of dimension $1$: the *dimension* is wrong. Here $\operatorname{im} F'(t)$ is the $x$-axis, so $\operatorname{im} F'(t) + T^{\mathrm{geo}}_{F(t)}S$ is the $x$-axis, not $\mathbb{R}^2$.
 > - (b) $F(t) = (t, t^2)$. Then $F^{-1}(S) = \{0\}$, which has the predicted dimension $0$; but $F'(0) = (1,0)$ lies in $T^{\mathrm{geo}}_0S$, so $F'(0)^{-1}(T^{\mathrm{geo}}_0S) = \mathbb{R}$, while the geometric tangent space of a point is $0$: the *tangent formula* is wrong. Correspondingly $(G \circ F)(t) = t^2$ has $(G\circ F)'(0) = 0$, as [[§26 Transversality#^prop-26-3|Proposition §26.3]] predicts.
 > *(Computed; not from lecture.)* As a product of Jacobians, with the $1 \times 2$ Jacobian $G'(x,y) = \begin{pmatrix} 0 & 1 \end{pmatrix}$ of $G(x,y) = y$ and the $2 \times 1$ Jacobian $F'(t) = \begin{pmatrix} 1 \\ 2t \end{pmatrix}$,
 >
 > $$
 > (G \circ F)'(0) = G'(F(0))\,F'(0) = \begin{pmatrix} 0 & 1 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = 0 .
 > $$
-> - (c) $F(t) = (t, t^2 - \varepsilon)$ with $\varepsilon > 0$. Now $F^{-1}(S) = \{\pm\sqrt\varepsilon\}$, and at these points $F'(t) = (1, 2t)$ has nonzero second component, so $\operatorname{im} F'(t) + TS = \mathbb{R}^2$: transverse, two points, and every conclusion of the theorem holds.
+> - (c) $F(t) = (t, t^2 - \varepsilon)$ with $\varepsilon > 0$. Now $F^{-1}(S) = \{\pm\sqrt\varepsilon\}$, and at these points $F'(t) = (1, 2t)$ has nonzero second component, so $\operatorname{im} F'(t) + T^{\mathrm{geo}}_{F(t)}S = \mathbb{R}^2$: transverse, two points, and every conclusion of the theorem holds.
 
 ^ex-26-2
 
@@ -292,7 +292,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ![[m591-11-a1.gif|420]]
 
-*(Not from lecture; animation added, vault only.)* (b) and (c) of the example as one family: $F(t) = (t, t^2 - c)$ for $c$ from $-0.6$ to $1$ and back. For $c < 0$ the curve misses $S$. At $c = 0$ it is tangent: $F'(0) = (1, 0)$ lies in $T_0S$, so $F$ is not transverse. For $c > 0$ there are two crossings at $t = \pm\sqrt c$, where $F'(t) = (1, 2t)$ (orange) is not in $TS$: transverse.
+*(Not from lecture; animation added, vault only.)* (b) and (c) of the example as one family: $F(t) = (t, t^2 - c)$ for $c$ from $-0.6$ to $1$ and back. For $c < 0$ the curve misses $S$. At $c = 0$ it is tangent: $F'(0) = (1, 0)$ lies in $T^{\mathrm{geo}}_0S$, so $F$ is not transverse. For $c > 0$ there are two crossings at $t = \pm\sqrt c$, where $F'(t) = (1, 2t)$ (orange) is not in $T^{\mathrm{geo}}_{F(t)}S$: transverse.
 
 > [!remark] Remark
 > Transversality protects the dimension and the tangent formula *independently*: (a) loses the first, (b) keeps the first and loses the second. And (c) shows what happens to the tangency of (b) under an arbitrarily small perturbation: it disappears, replaced by two transverse crossings (for $\varepsilon > 0$) or by no intersection at all (for $\varepsilon < 0$). The same happens to the tangent plane of [[§26 Transversality#^ex-26-1|Example §26.1]] when it is moved slightly up or down.
@@ -306,7 +306,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 > dF_p(T_pX) + T_{F(p)}S = T_{F(p)}Y \qquad \text{for all } p \in F^{-1}(S),
 > $$
 >
-> and [[§26 Transversality#^thm-26-1|Theorem §26.1]] becomes the statement that *the preimage of a submanifold under a transverse map is a submanifold of the same codimension*. Second, as [[§26 Transversality#^ex-26-2|Example §26.2]](c) suggests, transversality is the *typical* situation: any smooth map can be made transverse to a given submanifold by an arbitrarily small perturbation, and tangencies are non-generic accidents. This is the transversality theorem of Thom, and it is the entry point to intersection theory (Guillemin–Pollack, Ch. 2). Neither is part of the course yet.
+> and [[§26 Transversality#^thm-26-1|Theorem §26.1]] becomes the statement that *the preimage of a submanifold under a transverse map is a submanifold of the same codimension*. Second, as [[§26 Transversality#^ex-26-2|Example §26.2]](c) suggests, transversality is the *typical* situation: any smooth map can be made transverse to a given submanifold by an arbitrarily small perturbation, and tangencies are non-generic accidents. This is the transversality theorem of Thom, and it is the entry point to intersection theory (Guillemin–Pollack, Ch. 2). The first is Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]; the second is not part of the course.
 
 ^rem-26-5
 

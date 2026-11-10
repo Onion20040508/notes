@@ -23,6 +23,9 @@ tags: [linear-algebra, hub]
 - [[§18 Second-Order Sufficient Conditions#^thm-18-1|Theorem §18.1: Second-Order Sufficient Conditions — Unconstrained]]
 - [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^rem-28-2|Remark: Green's Second Identity as Symmetry]]
 
+## Used in (Group Theory)
+- [[§64 Sesquilinear and Hermitian Forms#^ex-64-1|Example §64.1: The Dot Product on ℂ²]]
+
 ## Connections
 - Complex version [[Complex spectral theorem|7.31]]. Applications: principal axes of quadratic forms ([[§35 Bilinear Forms and Quadratic Forms#^ladr-9-23|Diagonalization of quadratic form]]), normal modes of coupled oscillators (the stiffness matrix is symmetric), the inertia tensor.
 - **Also in [[Applied Linear Algebra]]:** [[§58★ Diagonalization of Symmetric Matrices#^thm-58-3|235 Thm. §58.3]] (symmetric matrices, with worked orthogonal diagonalizations).

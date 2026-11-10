@@ -168,7 +168,7 @@ Item (3) is a trivial way to be regular, but an important one: it matters in Sar
 > [!remark]- Connections
 > - In $\mathbb{R}^n$, critical points are where extrema can occur: [[§17 Optimization and Lagrange Multipliers#^thm-17-1|452 §17.1]] (Fermat's theorem).
 
-This is the definition of critical point sent to the class by email, and it agrees with Definition [[§7 The Regular Value Theorem#^def-7-3|§7.3]] for $m = 1$: there $p$ is regular iff $\nabla F(p) \ne 0$.
+This is the definition of critical point sent to the class by email, and it agrees with Definition [[§7 The Regular Value Theorem#^def-7-3|§7.3]] for scalar-valued $F$ (target dimension $1$, called $m$ in [[§7 The Regular Value Theorem|§7]]): there $p$ is regular iff $\nabla F(p) \ne 0$.
 
 > [!definition] Definition §36.5: Critical Set
 > Let $f : M \to \mathbb{R}$ be smooth. The **critical set** of $f$ is
@@ -437,7 +437,7 @@ Lemma [[§36 Submersions#^lem-36-5|§36.5]] is an intellectual step that should 
 > $$
 > \tilde F'(r) = \left(\begin{array}{cccc|ccc} 1 & 0 & \cdots & 0 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 & 0 & \cdots & 0 \\ \vdots & & \ddots & \vdots & \vdots & & \vdots \\ 0 & 0 & \cdots & 1 & 0 & \cdots & 0 \end{array}\right) = (I_n \mid 0) \qquad (n \text{ rows}, \ m \text{ columns}).
 > $$
-> Now fix $q \in U$. The same two charts are charts at $q$ and at $F(q)$ with $F(U) \subseteq V$, so by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] the matrix of $F_{\ast q}$ in the coordinate bases is $\tilde F'(\hat\varphi(q)) = (I_n \mid 0)$. Hence $\operatorname{rank} F_{\ast q} = n$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)), and the image of $F_{\ast q}$ is an $n$-dimensional subspace of the $n$-dimensional space $T_{F(q)}N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]), so it is all of it. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $F_{\ast q}$ is onto for every $q \in U$.
+> Now fix $q \in U$. The same two charts are charts at $q$ and at $F(q)$ with $F(U) \subseteq V$, so by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] the matrix of $F_{\ast q}$ in the coordinate bases is $\tilde F'(\hat\varphi(q)) = (I_n \mid 0)$. Hence $\operatorname{rank} F_{\ast q} = n$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)), and the image of $F_{\ast q}$ is an $n$-dimensional subspace of the $n$-dimensional space $T_{F(q)}N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]), so it is all of it. Thus $F_{\ast q}$ is onto for every $q \in U$.
 
 ^pf-36-7
 

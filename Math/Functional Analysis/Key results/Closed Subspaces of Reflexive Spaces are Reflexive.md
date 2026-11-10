@@ -11,8 +11,9 @@ tags: [functional-analysis, hub]
 - [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|Theorem §37.8: Closed Subspaces of Reflexive Spaces are Reflexive]], in [[§37 Separable Duals and Reflexive Spaces]]
 
 ## Its proof uses
-- [[§31 Dual Spaces#^cor-31-3|Corollary §31.3: The Riesz Map: H' ≅ H]]
+- [[§36 Duality in Normed Spaces#^def-36-1|Definition §36.1: Annihilator]]
 - [[§36 Duality in Normed Spaces#^thm-36-1|Theorem §36.1: Hahn–Banach for Normed Spaces]]
+- [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Definition §37.1: Reflexive Space]]
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|Corollary §37.2: Two Forms of the Spanning Criterion]]
 
 ## Used in (Functional Analysis)

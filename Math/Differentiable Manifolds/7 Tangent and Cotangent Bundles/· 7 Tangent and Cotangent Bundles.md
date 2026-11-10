@@ -9,9 +9,9 @@ tags: [chapter, differentiable-manifolds]
 
 
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (19), [[· 3 Smooth Structures|3 Smooth Structures]] (55), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (87), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (37)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (14), [[· 3 Smooth Structures|3 Smooth Structures]] (51), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (87), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (37)
 **Used by:** [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (11), [[· 9 Sard's Theorem|9 Sard's Theorem]] (9), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (2)
-**Builds on (other subjects):** [[Linear Algebra]] (2), [[Multivariable Analysis]] (1)
+**Builds on (other subjects):** [[Multivariable Analysis]] (1)
 
 ## Sections
 - [[§49 Recap꞉ Germs, Derivations and Tangent Vectors]]
@@ -28,7 +28,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Smooth Manifold Chart Lemma|Lemma §51.1: Building a Manifold from Charts]]: 111 later results
 - [[Tangent Bundle Is a Smooth Manifold|Proposition §51.2: The Transition Maps of TM]]: 111 later results
-- [[§51 The Tangent Bundle#^prop-51-3|Proposition §51.3: The Topology and Smooth Structure of TM]]: 111 later results
-- [[§51 The Tangent Bundle#^cor-51-4|Corollary §51.4: The Tangent Bundle Is a Fibration]]: 111 later results
+- [[Smooth Manifold Chart Lemma|Lemma §51.1: Building a Manifold from Charts]]: 110 later results
+- [[§51 The Tangent Bundle#^prop-51-3|Proposition §51.3: The Topology and Smooth Structure of TM]]: 110 later results
+- [[§51 The Tangent Bundle#^cor-51-4|Corollary §51.4: The Tangent Bundle Is a Fibration]]: 110 later results

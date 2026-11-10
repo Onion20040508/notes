@@ -30,7 +30,7 @@ tags: [group-theory, math493]
 > - The multiplicativity in (2): [[§37 Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
 
 > [!remark] Remark: Why Characters
-> A character takes the non-commutative multiplication of $G$ and maps it into a commutative group, where computation is much easier. The price is information: as shown below, a character cannot distinguish conjugate elements and sends every commutator to $e_A$, so it sees only the “abelian part” of $G$.
+> A character takes the non-commutative multiplication of $G$ and maps it into a commutative group, where computation is much easier. The price is information: as shown below, a character cannot distinguish [[§18 Conjugation, Products, and Pointwise Products#^def-18-3|conjugate elements]] and sends every commutator to $e_A$, so it sees only the “abelian part” of $G$.
 
 ^rem-46-1
 

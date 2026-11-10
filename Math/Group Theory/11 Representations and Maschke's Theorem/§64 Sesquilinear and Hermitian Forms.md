@@ -9,7 +9,7 @@ tags: [group-theory, math493]
 
 *Source: Lecture (Fri Nov 6); the MATH 420 slides *Complex inner products*, posted for this course. Reference for the linear algebra: Axler, Linear Algebra Done Right, Ch. 6.*
 
-Over $\mathbb{C}$ the averaging argument of [[§63 Invariant Inner Products and Maschke over ℝ|§63]] needs a replacement for the inner product, because no bilinear form on a complex vector space is positive definite. This section sets up the replacement: sesquilinear and Hermitian forms, their matrices, orthogonal projection, and orthonormal bases by Gram–Schmidt. With a positive definite Hermitian form in place of the inner product, a finite group acts on a complex representation by unitary matrices.
+Over $\mathbb{C}$ the averaging argument of [[§63 Invariant Inner Products and Maschke over ℝ|§63]] needs a replacement for the inner product, because no bilinear form on a nonzero complex vector space is positive definite. This section sets up the replacement: sesquilinear and Hermitian forms, their matrices, orthogonal projection, and orthonormal bases by Gram–Schmidt. With a positive definite Hermitian form in place of the inner product, a finite group acts on a finite-dimensional complex representation by unitary matrices in a suitable basis; this is stated in the remark *Why Not Bilinear, and Unitary Matrices*, and its averaging argument is not written out here.
 
 > [!example] Example §64.1: The Dot Product on $\mathbb{C}^2$
 > Bilinear forms and symmetric bilinear forms make sense over $\mathbb{C}$, with the same definitions as over $\mathbb{R}$. The dot product $x \cdot y = x_1 y_1 + x_2 y_2$ on $\mathbb{C}^2$ is one. Two facts from the real case fail for it.
@@ -21,9 +21,9 @@ Over $\mathbb{C}$ the averaging argument of [[§63 Invariant Inner Products and 
 > \det(xI - A) = \det\begin{pmatrix} x - 1 & -i \\ -i & x + 1 \end{pmatrix} = (x - 1)(x + 1) - (-i)^2 = x^2 - 1 + 1 = x^2,
 > $$
 >
-> so $0$ is its only eigenvalue. The second row of $A$ is $i$ times the first, $(i, -1) = i\,(1, i)$, so $A$ has rank $1$ and its $0$-eigenspace $\ker A$ is $1$-dimensional; it is spanned by $(-i, 1) = -i\,(1, i)$, the line of item 1. A diagonalizable $2 \times 2$ matrix whose only eigenvalue is $0$ is the zero matrix, so $A$ is not diagonalizable. Over $\mathbb{R}$, by contrast, every symmetric matrix is diagonalizable (the real spectral theorem; Axler, Ch. 7).
+> so $0$ is its only eigenvalue. The second row of $A$ is $i$ times the first, $(i, -1) = i\,(1, i)$, so $A$ has rank $1$ and its $0$-eigenspace $\ker A$ is $1$-dimensional; it is spanned by $(-i, 1) = -i\,(1, i)$, the line of item 1. A diagonalizable $2 \times 2$ matrix whose only eigenvalue is $0$ is the zero matrix, so $A$ is not diagonalizable. Over $\mathbb{R}$, by contrast, every symmetric matrix is diagonalizable (the [[Real spectral theorem|real spectral theorem]]; Axler, Ch. 7).
 >
-> Sesquilinear forms, defined next, repair the first failure: for the standard Hermitian form, $(1, i)$ has $\langle (1, i), (1, i) \rangle = 2$ (Example [[§64 Sesquilinear and Hermitian Forms#^ex-64-3|§64.3]]). For the second, the complex counterparts of symmetric matrices are the Hermitian matrices $Q = Q^\dagger$ (Definition [[§64 Sesquilinear and Hermitian Forms#^def-64-5|§64.5]]), and $A$ is not one: $A^\dagger = \begin{pmatrix} 1 & -i \\ -i & -1 \end{pmatrix} \neq A$. (Hermitian matrices are diagonalizable, by the complex spectral theorem, Axler, Ch. 7; it is not proved in these notes.)
+> Sesquilinear forms, defined next, repair the first failure: for the standard Hermitian form, $(1, i)$ has $\langle (1, i), (1, i) \rangle = 2$ (Example [[§64 Sesquilinear and Hermitian Forms#^ex-64-3|§64.3]]). For the second, the complex counterparts of symmetric matrices are the Hermitian matrices $Q = Q^\dagger$ (Definition [[§64 Sesquilinear and Hermitian Forms#^def-64-5|§64.5]]), and $A$ is not one: $A^\dagger = \begin{pmatrix} 1 & -i \\ -i & -1 \end{pmatrix} \neq A$. (Hermitian matrices are diagonalizable, by the [[Complex spectral theorem|complex spectral theorem]], Axler, Ch. 7; it is not proved in these notes.)
 >
 > *Source: MATH 420 slides*
 

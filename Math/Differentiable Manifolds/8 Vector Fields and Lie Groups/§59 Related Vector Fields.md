@@ -327,7 +327,7 @@ The reason for the characterization through operators is the following propositi
 ^prop-59-6
 
 > [!proof]+ Proof
-> *(Lecture 21, in outline; the bookkeeping is filled in.)* Use adapted coordinates: near $p \in S$ take a slice chart $(x, y) = (x^1, \ldots, x^k, y^1, \ldots, y^{m-k})$ with $S = \{ y = 0 \}$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]); on the exam, $M$ was two-dimensional, but $x$ and $y$ may be vector-valued: neither the dimension nor the codimension matters. Write
+> *(Lecture 21, in outline; the bookkeeping is filled in.)* Use adapted coordinates: near $p \in S$ take a slice chart $(x, y) = (x^1, \ldots, x^k, y^1, \ldots, y^{m-k})$ with $S = \{ y = 0 \}$ (Definitions [[§37 Regular Submanifolds#^def-37-2|§37.2]] and [[§37 Regular Submanifolds#^def-37-3|§37.3]]); on the exam, $M$ was two-dimensional, but $x$ and $y$ may be vector-valued: neither the dimension nor the codimension matters. Write
 >
 > $$
 > \mathbf{X} = \sum_i f^i\, \frac{\partial}{\partial x^i} + \sum_a g^a\, \frac{\partial}{\partial y^a}, \qquad
@@ -344,7 +344,7 @@ The reason for the characterization through operators is the following propositi
 
 ^pf-59-6
 
-*Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], [[§59 Related Vector Fields#^lem-59-5|§59.5]]
+*Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], [[§59 Related Vector Fields#^lem-59-5|§59.5]]
 
 ![[m591-56-5.svg]]
 *A field tangent to $S$, near $S$. Left: $S$ in $M$ and the domain $U$ of a slice chart $\varphi = (x, y)$. Right: in the chart, $\varphi(S \cap U) = \{y = 0\}$, and $\mathbf{X} = f\,\partial_x + g\,\partial_y$ is tangent to $S$ exactly when $g(x, 0) = 0$: on the slice its arrows point along it.*

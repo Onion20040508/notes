@@ -11,6 +11,7 @@ tags: [group-theory, hub]
 - [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|Theorem §62.10: Maschke's Theorem]], in [[§62 Direct Sums and Maschke's Theorem]]
 
 ## Its proof uses
+- [[§25 Actions#^def-25-1|Definition §25.1: Action]]
 - [[§61 Representations and Subrepresentations#^prop-61-4|Proposition §61.4: Kernels and Images Are Subrepresentations]]
 - [[§62 Direct Sums and Maschke's Theorem#^lem-62-5|Lemma §62.5: An Idempotent Fixes Its Image]]
 - [[§62 Direct Sums and Maschke's Theorem#^prop-62-6|Proposition §62.6: An Idempotent Splits the Space]]

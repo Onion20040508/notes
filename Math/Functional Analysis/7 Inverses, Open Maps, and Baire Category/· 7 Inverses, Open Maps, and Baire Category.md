@@ -9,7 +9,7 @@ tags: [chapter, functional-analysis]
 
 The previous chapter studied bounded linear functionals in depth. This chapter returns to bounded linear maps $M : X \to Y$ between two spaces and asks when the equation $Mx = y$ can be solved, uniquely and stably. The central result is Banach's theorem that a bounded linear bijection between Banach spaces has a bounded inverse. Its proof rests on the Baire category theorem, which says that a complete metric space cannot be a countable union of “thin” sets. The same circle of ideas gives the closed graph theorem and the uniform boundedness principle, and with them a criterion for when approximate solutions converge (the Lax equivalence theorem, [[§42 Uniform Boundedness and Approximation|§42]]).
 
-**Builds on:** [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (9), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (1), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (1), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (2)
+**Builds on:** [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (11), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (1), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (1), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (6)
 **Used by:** [[· 8 Weak Convergence|8 Weak Convergence]] (4)
 **Builds on (other subjects):** —
 

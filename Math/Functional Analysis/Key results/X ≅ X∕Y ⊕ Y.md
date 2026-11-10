@@ -15,7 +15,9 @@ tags: [functional-analysis, hub]
 - [[§2 Quotient Spaces and Complements#^prop-2-1|Proposition §2.1: X/Y is a Linear Space]]
 - [[§2 Quotient Spaces and Complements#^def-2-2|Definition §2.2: Equivalence Class]]
 - [[§2 Quotient Spaces and Complements#^def-2-3|Definition §2.3: Quotient Space]]
+- [[§2 Quotient Spaces and Complements#^def-2-4|Definition §2.4: Complement]]
 - [[§2 Quotient Spaces and Complements#^lem-2-5|Lemma §2.5: Unique Decomposition]]
+- [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Definition §3.1: Linear Map]]
 - [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|Lemma §3.1: Inverse of an Isomorphism]]
 - [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Definition §3.2: Isomorphism]]
 
@@ -27,4 +29,4 @@ tags: [functional-analysis, hub]
 - **How.** Fix a complement W ([[Every Subspace Has a Complement]]). Decompose x = w + y uniquely ([[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]], [[Functional Analysis Problem-Solving Techniques#^rem-t2|Technique 2]]) and send x ↦ ([w], y). Linearity follows from uniqueness of the decomposition ([[Functional Analysis Problem-Solving Techniques#^rem-t4|Technique 4]]). Surjectivity replaces a representative by its W-component ([[Functional Analysis Problem-Solving Techniques#^rem-t1|Technique 1]]).
 - **Not canonical.** M depends on the choice of W. X/Y is canonical and isomorphic to every complement ([[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]]), but equal to none ([[§2 Quotient Spaces and Complements#^rem-2-4|Remark §2]]).
 - **Finite dimensions.** It gives dim V/U = dim V − dim U ([[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105]]), with a complement obtained by extending a basis ([[§5 Bases#^ladr-2-33|LADR 2.33]]).
-- **With more structure.** If X = Y + Y⊥ for an inner product, then Y⊥ is a complement and X/Y ≅ Y⊥ ([[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]]). The [[Orthogonal Decomposition Theorem]] supplies this for closed Y in a Hilbert space, and c₀₀ ⊂ ℓ² shows that it can fail otherwise ([[§2 Quotient Spaces and Complements#^rem-2-5|Remark §2]]). With a norm, X/Y is normed when Y is closed ([[Quotient Norm]]).
+- **With more structure.** If X = Y + Y⊥ for an inner product, then Y⊥ is a complement and X/Y ≅ Y⊥ ([[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]]). The [[Orthogonal Decomposition Theorem]] supplies this for closed Y in a Hilbert space, and c₀₀ ⊂ ℓ² shows that it can fail otherwise ([[§2 Quotient Spaces and Complements#^ex-2-3|Ex. §2.3]]). With a norm, X/Y is normed when Y is closed ([[Quotient Norm]]).

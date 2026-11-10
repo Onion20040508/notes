@@ -104,7 +104,7 @@ Anything defined in terms of convergence cannot tell equivalent norms apart. Con
 ^thm-14-4
 
 > [!proof]+ Proof
-> (HW2, Problem 2(a).) Since $X$ is finite dimensional, it has a basis $\{e_1, \ldots, e_n\}$, and every $x \in X$ can be written uniquely as $x = \sum_{i=1}^n a_i e_i$ with $a_i \in \mathbb{F}$. Two norms $\|\cdot\|_a$ and $\|\cdot\|_b$ on $X$ are equivalent, written $\|\cdot\|_a \sim \|\cdot\|_b$, if there are constants $c, C > 0$ with $c\,\|x\|_a \le \|x\|_b \le C\,\|x\|_a$ for all $x$.
+> (HW2, Problem 2(a).) If $X = \{0\}$ every norm is identically $0$ and there is nothing to prove; assume $n = \dim X \ge 1$. Since $X$ is finite dimensional, it has a basis $\{e_1, \ldots, e_n\}$, and every $x \in X$ can be written uniquely as $x = \sum_{i=1}^n a_i e_i$ with $a_i \in \mathbb{F}$. Two norms $\|\cdot\|_a$ and $\|\cdot\|_b$ on $X$ are equivalent, written $\|\cdot\|_a \sim \|\cdot\|_b$, if there are constants $c, C > 0$ with $c\,\|x\|_a \le \|x\|_b \le C\,\|x\|_a$ for all $x$.
 >
 > **Step 1: equivalence of norms is an equivalence relation.** *Reflexivity:* $1 \cdot \|x\|_a \le \|x\|_a \le 1 \cdot \|x\|_a$. *Symmetry:* suppose $c_1\|x\|_a \le \|x\|_b \le c_2\|x\|_a$ for all $x$, with $c_1, c_2 > 0$. Dividing the right-hand inequality by $c_2$ gives $\frac{1}{c_2}\|x\|_b \le \|x\|_a$, and dividing the left-hand one by $c_1$ gives $\|x\|_a \le \frac{1}{c_1}\|x\|_b$; hence $\frac{1}{c_2}\|x\|_b \le \|x\|_a \le \frac{1}{c_1}\|x\|_b$. *Transitivity:* if $c_1\|x\|_a \le \|x\|_b \le c_2\|x\|_a$ and $d_1\|x\|_b \le \|x\|_c \le d_2\|x\|_b$ for all $x$, with all four constants positive, then
 >
@@ -306,7 +306,7 @@ The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from t
 > \|[a x_0]\| = \inf_{y' \in Y} \|a(x_0 + y')\| = \inf_{y' \in Y} |a|\,\|x_0 + y'\| = |a| \inf_{y' \in Y} \|x_0 + y'\| = |a|\, \|[x_0]\|.
 > $$
 >
-> (Left to us in lecture.)
+> (Left as an exercise in lecture.)
 >
 > **Subadditivity.** Let $[x], [y] \in X/Y$; we show $\|[x + y]\| \le \|[x]\| + \|[y]\|$. Fix $\varepsilon > 0$. Since $\|[x]\|$ is the greatest lower bound of $\{\|x'\| : x' \in [x]\}$, the number $\|[x]\| + \varepsilon$ is not a lower bound, so there is $x_0 \in [x]$ with
 >

@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Thread: quotients — A transitive action identifies a space with a coset space $G/H$, here as a set; its topology and the Grassmannians follow in [[§15 The Topology of G∕H and Real Grassmannians|§15]].*
 
-*Reference: Lee Ch. 21, the section on homogeneous spaces; Lee Example 1.36 (Grassmannians). Logistics: a substitute lectures on Friday Sep 11; smooth structures are scheduled to begin then.*
+*Reference: Lee Ch. 21, the section on homogeneous spaces; Lee Example 1.36 (Grassmannians).*
 
 > [!remark] Remark: Why This Section
 > *Homogeneous spaces* are spaces on which a group acts transitively. They are identified with coset spaces $G/H$, which are themselves orbit spaces (of $H$ acting on $G$), so everything in [[§13 Group Actions and Orbit Spaces|§13]] applies. This is how spheres, projective spaces, and Grassmannians acquire their topology in one stroke; it is the natural way to give a topology to a homogeneous space.
@@ -92,7 +92,7 @@ tags: [differentiable-manifolds, math591]
 > [!theorem] Theorem §14.2: Isotropy Subgroups Are Closed
 > Let $G$ be a topological group acting continuously on a topological space $X$ in which points are closed (for instance, $X$ Hausdorff). Then for every $x_0 \in X$ the isotropy subgroup $H_{x_0}$ is a *closed* subgroup of $G$.
 >
-> *Lee: proof of Theorem 21.18 (“closed by continuity)*
+> *Lee: proof of Theorem 21.18 (“closed by continuity”)*
 
 ^thm-14-2
 
@@ -132,7 +132,7 @@ tags: [differentiable-manifolds, math591]
 The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
 
 > [!example] Example §14.2: Isotropy of the North Pole under $\mathrm{SO}(3)$
-> Let $\mathrm{SO}(3)$ act on $S^2 = \{x \in \mathbb{R}^3 \mid |x| = 1\}$ by rotations (matrix multiplication; it preserves the sphere since orthogonal matrices preserve norms). For $x_0 = (0,0,1)$, the answer from the floor: the isotropy consists of the rotations about the $z$-axis. In matrices, $g \cdot e_3 = e_3$ says the third column of $g$ is $e_3$; orthogonality then forces the third row to be $e_3^T$ as well (the columns are orthonormal, so the first two columns are orthogonal to $e_3$, i.e. have zero third entry), and the remaining $2 \times 2$ block is orthogonal with determinant $1$:
+> Let $\mathrm{SO}(3)$ act on $S^2 = \{x \in \mathbb{R}^3 \mid |x| = 1\}$ by rotations (matrix multiplication; it preserves the sphere since orthogonal matrices preserve norms). For $x_0 = (0,0,1)$ the isotropy consists of the rotations about the $z$-axis. In matrices, $g \cdot e_3 = e_3$ says the third column of $g$ is $e_3$; orthogonality then forces the third row to be $e_3^T$ as well (the columns are orthonormal, so the first two columns are orthogonal to $e_3$, i.e. have zero third entry), and the remaining $2 \times 2$ block is orthogonal with determinant $1$:
 >
 > $$
 > H_{x_0} = \left\{ \begin{pmatrix} A & 0 \\ 0 & 1 \end{pmatrix} \;\middle|\; A \in \mathrm{SO}(2) \right\} \;\cong\; \mathrm{SO}(2) \;\cong\; S^1 .
@@ -295,7 +295,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 > - Used in Quantum Field Theory: the orbit of a particle's momentum as a coset space of the Lorentz group, the mass hyperboloid $SO^+(1,3)/SO(3)$ as the sphere is $SO(3)/SO(2)$ — [[§C3.6★ Particle States and the Little Group#^rem-c3-6-1|QFT Remark: What the definition fixes, and what it leaves free]].
 
 > [!example] Example §14.5: The Sphere as a Homogeneous Space
-> $\mathrm{SO}(3)$ acts transitively on $S^2$: the orbit of $e_3$ is the whole sphere (the argument of Example [[§13 Group Actions and Orbit Spaces#^ex-13-7|§13.7]] with $r = 1$). By Example [[§14 Homogeneous Spaces#^ex-14-2|§14.2]] the isotropy of $e_3$ is the copy $H$ of $\mathrm{SO}(2)$ in the upper-left block. Hence, as sets (and, by the [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|theorem below]], as spaces),
+> $\mathrm{SO}(3)$ acts transitively on $S^2$: the orbit of $e_3$ is the whole sphere (the argument of Example [[§13 Group Actions and Orbit Spaces#^ex-13-7|§13.7]] with $r = 1$). By Example [[§14 Homogeneous Spaces#^ex-14-2|§14.2]] the isotropy of $e_3$ is the copy $H$ of $\mathrm{SO}(2)$ in the upper-left block. Hence, as sets (and, by Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|§15.3]], as spaces),
 >
 > $$
 > S^2 \;\cong\; \mathrm{SO}(3)/\mathrm{SO}(2).

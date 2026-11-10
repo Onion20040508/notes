@@ -18,7 +18,7 @@ tags: [group-theory, hub]
 - [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|Proposition §42.2: Preimages of Subgroups of G/N]]
 
 ## Used in (Group Theory)
-- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4: [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4∣Quotients Along the Correspondence]]]]
+- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4: Quotients Along the Correspondence]]
 - [[§48 Solvable Groups#^thm-48-7|Theorem §48.7: Extensions of Solvable Groups Are Solvable]]
 - [[§50 Composition Series#^lem-50-3|Lemma §50.3: Finite Groups Have Composition Series]]
 

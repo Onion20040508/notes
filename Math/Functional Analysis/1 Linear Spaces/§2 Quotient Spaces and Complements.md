@@ -28,7 +28,7 @@ tags: [functional-analysis, math556]
 > - Congruence modulo a subgroup, here for the subgroup Y of the additive group of X: [[§28 Left and Right Cosets#^def-28-1|493 Def. §28.1]].
 
 > [!definition] Definition §2.2: Equivalence Class
-> For $x_0 \in X$, the **equivalence class** of $x_0$ is
+> Let $Y$ be a linear subspace of a linear space $X$. For $x_0 \in X$, the **equivalence class** of $x_0$ mod $Y$ (Definition [[§2 Quotient Spaces and Complements#^def-2-1|§2.1]]) is
 >
 > $$
 > [x_0] = \{ x \in X \mid x - x_0 \in Y \} = x_0 + Y.
@@ -43,7 +43,7 @@ tags: [functional-analysis, math556]
 > - The classes are the cosets of Y: [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2]].
 
 > [!definition] Definition §2.3: Quotient Space
-> The **quotient space** $X / Y$ ($X$ mod $Y$) is the set of all equivalence classes (Definition [[§2 Quotient Spaces and Complements#^def-2-2|§2.2]]):
+> Let $Y$ be a linear subspace of a linear space $X$. The **quotient space** $X / Y$ ($X$ mod $Y$) is the set of all equivalence classes (Definition [[§2 Quotient Spaces and Complements#^def-2-2|§2.2]]):
 >
 > $$
 > X / Y = \{ [x] \mid x \in X \}.
@@ -122,7 +122,7 @@ tags: [functional-analysis, math556]
 ^rem-2-1
 
 > [!remark] Remark: Quotients and Orthogonal Complements
-> In $\mathbb{R}^n$, one may think of $X / Y$ as playing the role of the orthogonal complement $Y^\perp$: each parallel translate $x_0 + Y$ meets $Y^\perp$ in exactly one point. But “orthogonal” requires an inner product, and a bare linear space has no such structure. The quotient space is the substitute that is available in full generality. That $(X/Y) \oplus Y \cong X$ in a suitable sense was suggested in lecture and became HW1; the precise statement needs no inner product at all — only a subspace $W$ playing the role of $Y^\perp$. The tools are extracted below.
+> In $\mathbb{R}^n$, one may think of $X / Y$ as playing the role of the orthogonal complement $Y^\perp$: each parallel translate $x_0 + Y$ meets $Y^\perp$ in exactly one point. But “orthogonal” requires an inner product, and a bare linear space has no such structure. The quotient space is the substitute that is available in full generality. That $(X/Y) \oplus Y \cong X$ in a suitable sense is made precise in the next subsection (HW1); the precise statement needs no inner product at all — only a subspace $W$ playing the role of $Y^\perp$. The tools are extracted below.
 
 ^rem-2-2
 
@@ -173,11 +173,11 @@ Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material i
 ^prop-2-3
 
 > [!proof]+ Proof
-> Let $P = \{ W \subset X \text{ a linear subspace} : W \cap Y = \{0\} \}$, partially ordered by inclusion; $\{0\} \in P$. Chains in $P$ have upper bounds: the union of a chain of subspaces is a subspace (the argument in the [[§6 Proof of the Hahn–Banach Theorem#^pf-5-3|proof]] of Theorem [[§5 Statement and Motivation#^thm-5-3|§5.3]]), and it meets $Y$ only in $0$ since each member does. By Zorn's lemma (Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]]) $P$ has a maximal element $W$. If $W + Y \neq X$, pick $x_0 \in X \setminus (W + Y)$; Lemma [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]] gives a strictly larger element of $P$, contradicting maximality. Hence $W + Y = X$, and $W$ is a complement.
+> Let $P = \{ W \subset X \text{ a linear subspace} : W \cap Y = \{0\} \}$, partially ordered by inclusion; $\{0\} \in P$. Chains in $P$ have upper bounds. The empty chain has the upper bound $\{0\}$. For a nonempty chain $\{W_i\}_{i \in I}$ in $P$ put $U = \bigcup_i W_i$. If $u_1, u_2 \in U$ and $k \in \mathbb{F}$, then, the chain being totally ordered by inclusion, $u_1$ and $u_2$ lie in a common $W_i$, so $u_1 + u_2 \in W_i \subset U$ and $k u_1 \in W_i \subset U$; thus $U$ is a linear subspace. It meets $Y$ only in $0$ since each $W_i$ does. So $U \in P$ is an upper bound. By Zorn's lemma (Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]]) $P$ has a maximal element $W$. If $W + Y \neq X$, pick $x_0 \in X \setminus (W + Y)$; Lemma [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]] gives a strictly larger element of $P$, contradicting maximality. Hence $W + Y = X$, and $W$ is a complement.
 
 ^pf-2-3
 
-*Uses:* [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§5 Statement and Motivation#^thm-5-3|§5.3]], [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]], [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]]
+*Uses:* [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]], [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]]
 
 > [!remark]- Connections
 > - The finite-dimensional version, by extending a basis: [[§5 Bases#^ladr-2-33|LADR 2.33]].
@@ -216,7 +216,7 @@ Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material i
 *Uses:* [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§2 Quotient Spaces and Complements#^prop-2-3|§2.3]], [[§1 Linear Spaces#^prop-1-2|§1.2]], [[§1 Linear Spaces#^prop-1-5|§1.5]]
 
 > [!example] Example §2.2: Complements of a Line in the Plane
-> In $\mathbb{R}^2$ with $Y$ the $x$-axis, every line through the origin other than $Y$ is a complement of $Y$.
+> In $\mathbb{R}^2$ with $Y$ the $x$-axis, every line through the origin other than $Y$ is a complement of $Y$. Indeed, let $W = \operatorname{span}\{w\}$ with $w = (w_1, w_2)$, $w_2 \neq 0$. A multiple $a w$ lies on the $x$-axis only if $a w_2 = 0$, i.e. $a = 0$, so $W \cap Y = \{0\}$; and every $(x_1, x_2) = \tfrac{x_2}{w_2}\, w + \bigl(x_1 - \tfrac{x_2}{w_2} w_1,\, 0\bigr)$ lies in $W + Y$.
 >
 > *Source: HW1*
 
@@ -280,18 +280,20 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 > - The orthogonal version for [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert spaces]]: [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]].
 
 > [!theorem] Corollary §2.7: A Complement is a Model of the Quotient
-> If $W$ is a complement of $Y$, then the restricted quotient map $W \to X/Y$, $w \mapsto [w]$, is an isomorphism. In particular all complements of $Y$ are isomorphic to one another.
+> If $W$ is a complement of $Y$, then the map $W \to X/Y$, $w \mapsto [w]$ (the restriction to $W$ of the quotient map $x \mapsto [x]$), is an isomorphism. In particular all complements of $Y$ are isomorphic to one another.
 >
 > *Source: HW1*
 
 ^cor-2-7
 
 > [!proof]+ Proof
-> Linearity is inherited from the quotient map. Injectivity and surjectivity are exactly the two computations in the proof of Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]: $[w_1] = [w_2]$ forces $w_1 - w_2 \in W \cap Y = \{0\}$, and every class $[x]$ equals $[w]$ for the $W$-component $w$ of $x$.
+> The map is linear: $[a w_1 + b w_2] = a[w_1] + b[w_2]$ by the definition of the operations on $X/Y$ (Proposition [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]]). Injectivity and surjectivity are exactly the two computations in the proof of Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]: $[w_1] = [w_2]$ forces $w_1 - w_2 \in W \cap Y = \{0\}$, and every class $[x]$ equals $[w]$ for the $W$-component $w$ of $x$.
+>
+> For the last claim, let $W_1, W_2$ be complements of $Y$, with isomorphisms $q_i : W_i \to X/Y$, $q_i(w) = [w]$. Then $q_2^{-1} \circ q_1 : W_1 \to W_2$ is a bijection, and it is linear as a composition of linear maps ($q_2^{-1}$ is linear by Lemma [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]); so it is an isomorphism.
 
 ^pf-2-7
 
-*Uses:* [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]]
+*Uses:* [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
 
 > [!remark] Remark: The Isomorphism is Not Canonical
 > $M$ depends on the choice of complement $W$. The quotient $X/Y$ itself is canonical — it is built from $X$ and $Y$ alone — but identifying it with a subspace of $X$ requires choosing $W$, and different choices give different embeddings. This is the precise content of “$X/Y$ is like a complement of $Y$”: it is isomorphic to every complement, and equal to none.
@@ -309,7 +311,7 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 ^cor-2-8
 
 > [!proof]+ Proof
-> If $z \in Y \cap Y^\perp$ then $\langle z, z \rangle = 0$, so $z = 0$ by positive-definiteness of the inner product (to be introduced later). With $X = Y + Y^\perp$ assumed, $Y^\perp$ is a complement; apply Corollary [[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]] and Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]].
+> $Y^\perp$ is a linear subspace: if $z_1, z_2 \in Y^\perp$ and $k \in \mathbb{F}$, then $\langle z_1 + z_2, y \rangle = \langle z_1, y \rangle + \langle z_2, y \rangle = 0$ and $\langle k z_1, y \rangle = k \langle z_1, y \rangle = 0$ for all $y \in Y$, by linearity of the inner product in its first argument. If $z \in Y \cap Y^\perp$ then $\langle z, z \rangle = 0$, so $z = 0$ by positive-definiteness of the inner product (to be introduced later). With $X = Y + Y^\perp$ assumed, $Y^\perp$ is a complement; apply Corollary [[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]] and Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]].
 
 ^pf-2-8
 

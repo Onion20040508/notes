@@ -142,7 +142,7 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 
 ^pf-63-3
 
-*Uses:* [[§62 Sets of Measure Zero#^lem-62-1|§62.1]], [[§62 Sets of Measure Zero#^lem-62-3|§62.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§62 Sets of Measure Zero#^lem-62-5|§62.5]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§62 Sets of Measure Zero#^lem-62-2|§62.2]], [[§63 Sard's Theorem#^lem-63-1|§63.1]], [[§63 Sard's Theorem#^lem-63-2|§63.2]]
+*Uses:* [[§62 Sets of Measure Zero#^lem-62-1|§62.1]], [[§62 Sets of Measure Zero#^lem-62-3|§62.3]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§62 Sets of Measure Zero#^lem-62-5|§62.5]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§63 Sard's Theorem#^lem-63-1|§63.1]], [[§63 Sard's Theorem#^lem-63-2|§63.2]]
 
 > [!theorem] Corollary §63.4: Maps from Lower Dimension
 > If $F : M \to N$ is smooth and $\dim M < \dim N$, then the regular values of $F$ are exactly the points of $N \setminus F(M)$, and $F(M)$ has measure zero in $N$.
@@ -152,16 +152,14 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 ^cor-63-4
 
 > [!proof]+ Proof
-> *(Lecture 19.)* By linear algebra, no point in the image can be a regular value, for dimension reasons: for $p \in M$, the image of $dF_p : T_pM \to T_{F(p)}N$ has dimension at most $\dim M < \dim N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]), so $dF_p$ is never onto. So the regular values are exactly the points with empty preimage, where the condition is vacuous, and $F(M)$ is the set of singular values, of measure zero by Sard's theorem.
+> *(Lecture 19.)* By linear algebra, no point in the image can be a regular value, for dimension reasons: for $p \in M$, the image of $dF_p : T_pM \to T_{F(p)}N$ has dimension at most $\dim M < \dim N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]), so $dF_p$ is never onto. So the regular values are exactly the points with empty preimage, where the condition is vacuous, and $F(M)$ is the set of singular values, of measure zero by Sard's theorem (Theorem [[§63 Sard's Theorem#^thm-63-3|§63.3]]).
 
 ^pf-63-4
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§63 Sard's Theorem#^thm-63-3|§63.3]]
 
 > [!remark]- Connections
 > - A measure-theory relative: the graph of a measurable function has measure zero, [[§26 Applications of Tonelli's Theorem#^cor-26-4|551 §26.4]].
-
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]
 
 For instance, a smooth curve $\gamma : \mathbb{R} \to \mathbb{R}^2$ never fills an open set of the plane: its image has measure zero, and so does every subset of it (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](1)), while an open set does not (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4)) — in contrast with continuous space-filling curves.
 

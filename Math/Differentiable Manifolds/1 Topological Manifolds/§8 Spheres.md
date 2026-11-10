@@ -37,13 +37,13 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 >
 > *Injective:* if $(x, y, z), (x, y, z') \in U$, then $z = \sqrt{1 - x^2 - y^2} = z'$, using $z, z' > 0$.
 >
-> *Continuous with continuous inverse:* $\varphi$ is the restriction of the projection $\mathbb{R}^3 \to \mathbb{R}^2$, hence continuous. The inverse $\varphi^{-1} : D \to U$, $(x, y) \mapsto (x, y, \sqrt{1 - x^2 - y^2})$, is continuous as a map into $\mathbb{R}^3$ (each component is continuous on $D$), hence continuous into the subspace $U$.
+> *Continuous with continuous inverse:* $\varphi$ is the restriction of the projection $\mathbb{R}^3 \to \mathbb{R}^2$, hence continuous. The inverse $\varphi^{-1} : D \to U$, $(x, y) \mapsto (x, y, \sqrt{1 - x^2 - y^2})$, is continuous as a map into $\mathbb{R}^3$ (each component is continuous on $D$), hence continuous into the subspace $U$ ([[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]](2)).
 >
 > Since $D$ is open in $\mathbb{R}^2$, [[§2 Topological Manifolds#^prop-2-3|Proposition §2.3]] shows $S^2$ is locally Euclidean of dimension $2$ at $p$.
 
 ^pf-ex-8-1
 
-*Uses:* [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (4), [[§10 Continuous Functions#^thm-10-4|590 §10.4]], [[§22 Countability Axioms#^thm-22-3|590 §22.3]]
+*Uses:* [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (4), [[§3 Subspaces and Products#^prop-3-3|§3.3]] (2), [[§10 Continuous Functions#^thm-10-4|590 §10.4]], [[§22 Countability Axioms#^thm-22-3|590 §22.3]]
 
 ![[m591-2-1.svg]]
 *The hemisphere chart: projection $(x,y,z) \mapsto (x,y)$ carries the open northern hemisphere $U = \{z > 0\}$ homeomorphically onto the open unit disk in $\mathbb{R}^2$.*

@@ -14,7 +14,7 @@ tags: [functional-analysis, math556]
 ## Sobolev Spaces as Completions
 
 > [!definition] Definition §33.1: The Sobolev Norm
-> Let $\overline{\Omega} \subset \mathbb{R}^n$ be bounded and closed, with interior $\Omega$, and let $X = C^\infty(\overline{\Omega})$. For $1 \le p < \infty$ and an integer $k \ge 0$ define
+> Let $\Omega \subset \mathbb{R}^n$ be bounded and open, with closure $\overline{\Omega}$, and let $X = C^\infty(\overline{\Omega})$ (as in Proposition [[§30 Boundedness and Continuity#^prop-30-5|§30.5]]). For $1 \le p < \infty$ and an integer $k \ge 0$ define
 >
 > $$
 > |f|_{W^{k,p}} = \sum_{|\alpha| \le k} \|\partial^\alpha f\|_{L^p(\Omega)}, \qquad \partial^\alpha f = \partial_{x_1}^{\alpha_1} \cdots \partial_{x_n}^{\alpha_n} f, \quad \alpha = (\alpha_1, \ldots, \alpha_n).
@@ -132,7 +132,7 @@ tags: [functional-analysis, math556]
 > - Integration by parts in $\mathbb{R}^n$ with the boundary term kept: [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-2|Green's first identity, 452 §28.2]].
 
 > [!theorem] Proposition §33.3: Limits in $W^{1,p}$ Satisfy Integration by Parts
-> Let $g_n \in C^\infty(\overline{\Omega})$ with $g_n \to f$ and $\partial_{x_j} g_n \to f_j$ in $L^p(\Omega)$, $1 \le p < \infty$. Then for every $\varphi \in C_c^\infty(\Omega)$,
+> Let $\Omega \subset \mathbb{R}^n$ be bounded and open, and let $g_n \in C^\infty(\overline{\Omega})$ with $g_n \to f$ and $\partial_{x_j} g_n \to f_j$ in $L^p(\Omega)$, $1 \le p < \infty$. Then for every $\varphi \in C_c^\infty(\Omega)$,
 >
 > $$
 > \int_\Omega f_j(x)\, \varphi(x)\, dx = -\int_\Omega f(x)\, \partial_{x_j}\varphi(x)\, dx .
@@ -230,7 +230,7 @@ tags: [functional-analysis, math556]
 ^rem-33-6
 
 > [!theorem] Corollary §33.6: The Completion Sits Inside the Weak-Derivative Space
-> Let $\overline{\Omega} \subset \mathbb{R}^n$ be bounded and closed with interior $\Omega$, $1 \le p < \infty$, and let $\{g_n\} \subset C^\infty(\overline{\Omega})$ be Cauchy in $|\cdot|_{W^{1,p}}$ (Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-1|§33.1]]). Then there are $f \in L^p(\Omega)$ and, for each $j$, $f_j \in L^p(\Omega)$ with $g_n \to f$ and $\partial_{x_j} g_n \to f_j$ in $L^p(\Omega)$; $f_j$ is the weak derivative $\partial_{x_j} f$, so $f \in W^{1,p}(\Omega)$ in the sense of Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-7|§33.7]]; and $f$, $f_j$ depend only on the element of the completion represented by $\{g_n\}$.
+> Let $\Omega \subset \mathbb{R}^n$ be bounded and open with closure $\overline{\Omega}$, $1 \le p < \infty$, and let $\{g_n\} \subset C^\infty(\overline{\Omega})$ be Cauchy in $|\cdot|_{W^{1,p}}$ (Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-1|§33.1]]). Then there are $f \in L^p(\Omega)$ and, for each $j$, $f_j \in L^p(\Omega)$ with $g_n \to f$ and $\partial_{x_j} g_n \to f_j$ in $L^p(\Omega)$; $f_j$ is the weak derivative $\partial_{x_j} f$, so $f \in W^{1,p}(\Omega)$ in the sense of Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-7|§33.7]]; and $f$, $f_j$ depend only on the element of the completion represented by $\{g_n\}$. Conversely, that element is determined by $f$: if $f = 0$, then every $f_j = 0$ a.e. and $|g_n|_{W^{1,p}} \to 0$.
 
 ^cor-33-6
 
@@ -240,10 +240,12 @@ tags: [functional-analysis, math556]
 > *Weak derivatives.* By Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], $\int_\Omega f_j \varphi = -\int_\Omega f\, \partial_{x_j}\varphi$ for every $\varphi \in C_c^\infty(\Omega)$; by Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|§33.6]], $f_j$ is the weak derivative of $f$ in the $x_j$-direction. Since $f$ and all $f_j$ lie in $L^p(\Omega)$, $f \in W^{1,p}(\Omega)$ (Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-7|§33.7]] with $k = 1$).
 >
 > *Independence of the representative.* If $\{h_n\}$ is an equivalent Cauchy sequence, $|g_n - h_n|_{W^{1,p}} \to 0$, then $\|g_n - h_n\|_{L^p} \to 0$ and $\|\partial_{x_j} g_n - \partial_{x_j} h_n\|_{L^p} \to 0$, so $\{h_n\}$ and $\{\partial_{x_j} h_n\}$ have the same $L^p$ limits $f$ and $f_j$.
+>
+> *The element is determined by $f$.* Let $f = 0$. By the second step, each $f_j$ is a weak derivative of the zero function in the $x_j$-direction, and so is the zero function, since both sides of the defining identity then vanish. By Lemma [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-4|§33.4]], $f_j = 0$ a.e. Hence $\|g_n\|_{L^p} \to 0$ and $\|\partial_{x_j} g_n\|_{L^p} \to 0$ for each $j$, so $|g_n|_{W^{1,p}} \to 0$: the sequence $\{g_n\}$ represents the zero element of the completion. By linearity, two elements of the completion with the same limit $f$ are equal, so the completion is identified with a linear subspace of $L^p(\Omega)$.
 
 ^pf-33-6
 
-*Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|Def. §33.6]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-7|Def. §33.7]]
+*Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|Def. §33.6]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-7|Def. §33.7]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-4|§33.4]]
 
 > [!remark]- Connections
 > - The continuum limit of the multipole-lattice model takes its configurations in $W^{1,2}$: unit-vector fields whose components have square-integrable weak first derivatives on every ball ([[§M7.1 Configurations as Maps; Potential and Stiffness; When the Continuum Limit is Well Posed#^def-m7-1-5|Thesis Def. §M7.1.5]]).
@@ -365,7 +367,7 @@ tags: [functional-analysis, math556]
 ^thm-33-8
 
 > [!proof]+ Proof
-> **Step 1: put $\Omega$ in a box and extend by zero.** Since $\Omega$ is bounded, $\Omega \subset (-L, L)^n$ for some $L > 0$. Extend $f$ by $f(x) = 0$ for $x \notin \Omega$; because the support of $f$ is a compact subset of $\Omega$, the extension is $C^\infty$ on $\mathbb{R}^n$ and vanishes outside $\Omega$, in particular on the face $x_1 = -L$ of the box.
+> **Step 1: put $\Omega$ in a box and extend by zero.** Since $\Omega$ is bounded, $\Omega \subset (-L, L)^n$ for some $L > 0$. Extend $f$ by $f(x) = 0$ for $x \notin \Omega$; by Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|§33.1]] the extension is $C^\infty$ on $\mathbb{R}^n$, and it vanishes outside $\Omega$, in particular on the face $x_1 = -L$ of the box.
 >
 > **Step 2: the [[§34 Fundamental Theorem of Calculus#^thm-34-1|fundamental theorem of calculus]] in $x_1$.** For $x = (x_1, x') \in [-L, L]^n$, $x' = (x_2, \ldots, x_n)$,
 >

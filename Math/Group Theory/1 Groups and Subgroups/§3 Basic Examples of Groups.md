@@ -135,7 +135,7 @@ In each example, associativity is inherited from a known associative operation (
 ^def-3-7
 
 > [!remark]- Connections
-> - The same group as a topological group and manifold in 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|591 Def. §11.6]], and [[Classical Groups Are Manifolds]] (591 Thm. §11.6; workhorse example [[Classical groups O(n), U(n), SL(n,ℝ)]]).
+> - The same group as a topological group and manifold in 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|591 Def. §11.6]], and [[Classical Groups Are Manifolds]] (591 Thm. §12.6; workhorse example [[Classical groups O(n), U(n), SL(n,ℝ)]]).
 
 > [!definition] Definition §3.8: Orthogonal Group
 > For $n \geq 1$, the **orthogonal group** is $O(n) = O_n(\mathbb{R}) = \{A \in GL_n(\mathbb{R}) : A^{\mathsf{T}}A = I_n\}$.

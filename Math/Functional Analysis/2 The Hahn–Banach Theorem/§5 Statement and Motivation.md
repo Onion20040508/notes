@@ -109,7 +109,7 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 > ![[m556-3-1.svg]]
 > *The three sets $\{p < 1\}$ in $\mathbb{R}^2$: the open disk, square and diamond. The boundaries are dashed because the points with $p = 1$ are not included.*
 >
-> All three sets are [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|convex]]. This is not a coincidence: there is a correspondence between convex sets and positive homogeneous subadditive functions, to be made precise [[§7 Convex Sets and the Gauge#^cor-7-8|later in the course]]. In finite dimensions the picture already suggests it.
+> All three sets are [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|convex]]. This is not a coincidence: there is a correspondence between convex sets and positive homogeneous subadditive functions, made precise in [[§7 Convex Sets and the Gauge|§7]] (Corollary [[§7 Convex Sets and the Gauge#^cor-7-8|§7.8]]). In finite dimensions the picture already suggests it.
 
 ^ex-5-2
 

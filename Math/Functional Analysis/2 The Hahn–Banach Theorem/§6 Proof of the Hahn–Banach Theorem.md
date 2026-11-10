@@ -25,7 +25,7 @@ Before the proof, two remarks on why the set of linear functionals on $X$ is wor
 > - Every functional on $\mathbb{R}^n$ is a dot product: [[§3 Linear Maps, Convexity, and Linear Functionals#^ex-3-2|Ex. §3.2]]; on finite-dimensional inner product spaces [[Riesz representation theorem|LADR 6.42]]; on [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert spaces]] (bounded functionals) [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]].
 
 > [!remark] Remark: Convergence Without Topology
-> A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement “$x_n \to x$” has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This will be developed later in the course ([[§43 Weak and Weak-Star Convergence#^def-43-1|weak convergence]]).
+> A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement “$x_n \to x$” has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This is developed in [[§43 Weak and Weak-Star Convergence|§43]] ([[§43 Weak and Weak-Star Convergence#^def-43-1|weak convergence]]).
 
 ^rem-6-2
 
@@ -42,7 +42,7 @@ The theorem is a *construction* device. The simplest use:
 >
 > This is a linear functional on the one-dimensional subspace $Y$. Given any positive homogeneous subadditive $p$ on $X$ with $\ell(y) \le p(y)$ on $Y$, [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] extends $\ell$ to a linear functional $L : X \to \mathbb{R}$ with $L \le p$ on all of $X$. (One can prescribe any value at $y_0$, not only $1$; the normalization is a convenience.)
 >
-> Thus associated to every nonzero vector of $X$ there is at least one linear functional on $X$ taking a prescribed nonzero value there. The extension is not unique.
+> Thus, whenever a dominating $p$ is available, there is at least one linear functional on $X$ taking a prescribed nonzero value at $y_0$. (In a normed space $p$ can always be taken to be a multiple of the norm; this is Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]. In a bare linear space such a functional also exists, without any $p$: choose a complement $W$ of $Y$ by Proposition [[§2 Quotient Spaces and Complements#^prop-2-3|§2.3]] and set $L(a y_0 + w) = a$ for $a \in \mathbb{R}$, $w \in W$.) The extension is not unique.
 
 ^ex-6-1
 

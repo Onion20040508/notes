@@ -309,7 +309,7 @@ A section in the sense of [[§40 Fibrations#^def-40-3|Definition §40.3]] is a l
 ^prop-40-5
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in. The identity in (1) is the heart of Assignment 5, Problem 1.)* *(1)* By the chain rule (Proposition [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) applied to $\pi \circ s = \mathrm{id}_M$,
+> *(Not from lecture; filled in. The identity in (1) is the heart of Assignment 5, Problem 1.)* *(1)* By the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) applied to $\pi \circ s = \mathrm{id}_M$,
 >
 > $$
 > \pi_{\ast y} \circ s_{\ast p} = (\pi \circ s)_{\ast p} = (\mathrm{id}_M)_{\ast p} = \mathrm{id}_{T_pM} .

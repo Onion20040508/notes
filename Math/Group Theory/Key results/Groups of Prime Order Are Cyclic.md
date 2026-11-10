@@ -31,7 +31,7 @@ tags: [group-theory, hub]
 - [[§56 Simple Groups of Small Order#^prop-56-1|Proposition §56.1: Primes and Prime Powers]]
 
 ## Connections
-- **Used for.** [[§29 The Index and Lagrange's Theorem#^cor-29-8|No Proper Nontrivial Subgroups]] (§29.8). The abelian simple groups are exactly the ℤ/pℤ ([[§43 Simple Groups#^thm-43-1|§43.1]]). Every non-identity element is a generator ([[§29 The Index and Lagrange's Theorem#^rem-29-3|A Classification, for Once]]).
+- **Used for.** [[§29 The Index and Lagrange's Theorem#^cor-29-8|No Proper Nontrivial Subgroups]] (§29.8). The abelian simple groups are exactly the ℤ/pℤ ([[§43 Simple Groups#^thm-43-1|§43.1]]). Every non-identity element is a generator ([[§29 The Index and Lagrange's Theorem#^cor-29-9|§29.9]]).
 - **Prime is needed.** Order 4 has two groups, ℤ/4ℤ and ℤ/2ℤ × ℤ/2ℤ ≅ U₈ ([[§16 Isomorphisms#^prop-16-8|§16.8]]), though both are abelian ([[§34 Conjugation as an Action and the Class Equation#^prop-34-6|§34.6]]). Order 6 has two, ℤ/6ℤ and S₃.
 - **Same idea elsewhere.** The 590 computation of π₁(P²) ends with the case p = 2 ([[§38 Fundamental Group of Some Surfaces#^thm-38-2|590 Thm. §38.2]]): the lifting correspondence shows |π₁(P²)| = 2 ([[Properties of the Lifting Correspondence]]), and a group of order 2 is ℤ/2ℤ.
 - **Coming later in the course.** The Sylow theorems extend such classifications to other small orders, for example in classifying small simple groups.

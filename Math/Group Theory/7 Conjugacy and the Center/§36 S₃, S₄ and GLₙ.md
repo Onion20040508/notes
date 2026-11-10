@@ -31,7 +31,7 @@ Both items are embedded in the $S_3$ part above: [[§33 Conjugacy Classes#^ex-33
 
 ## GLₙ, SLₙ and O(n)
 
-In $GL_n(\mathbb{C})$ conjugacy is similarity of matrices. A diagonal matrix with distinct eigenvalues is conjugate exactly to the matrices with the same characteristic polynomial, scalar matrices are central, and in general Jordan form classifies the classes.
+In $GL_n(\mathbb{C})$ conjugacy is similarity of matrices. A diagonal matrix with distinct eigenvalues is conjugate exactly to the matrices with the same characteristic polynomial, scalar matrices are central, and in general [[Jordan form]] classifies the classes.
 
 ![[§33 Conjugacy Classes#^def-33-3]]
 

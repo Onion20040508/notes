@@ -28,18 +28,18 @@ tags: [differentiable-manifolds, math591]
 ^def-61-1
 
 > [!example] Example §61.1: The Universal Cover of $\mathrm{SL}({2,\mathbb{R}})$
-> *(Filled in; not from lecture.)* The universal cover $\widetilde G$ of $\mathrm{SL}(2,\mathbb{R})$ is a Lie group isomorphic to no group of matrices: it admits no injective Lie group morphism into any $\mathrm{GL}(n,\mathbb{C})$, hence none into $\mathrm{GL}(n,\mathbb{R}) \subseteq \mathrm{GL}(n,\mathbb{C})$. So not every Lie group is a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]).
+> *(Filled in; not from lecture.)* The universal cover $\widetilde G$ of $\mathrm{SL}(2,\mathbb{R})$ is a Lie group isomorphic to no group of matrices: it admits no injective Lie group morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]] below) into any $\mathrm{GL}(n,\mathbb{C})$, hence none into $\mathrm{GL}(n,\mathbb{R}) \subseteq \mathrm{GL}(n,\mathbb{C})$. So not every Lie group is a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]).
 >
 > *Justification (a sketch: covering spaces and the passage from Lie algebra morphisms to Lie group morphisms are beyond these notes).* An isomorphism of $\widetilde G$ onto a linear group, followed by the inclusion, would be an injective Lie group morphism into some $\mathrm{GL}(n,\mathbb{C})$; so it suffices to show that every Lie group morphism $\rho : \widetilde G \to \mathrm{GL}(n,\mathbb{C})$ fails to be injective.
 >
 > 1. *The group.* By the polar decomposition, $\mathrm{SL}(2,\mathbb{R})$ is homeomorphic to $\mathrm{SO}(2) \times P$, where $P$, the positive definite symmetric $2 \times 2$ matrices of determinant $1$, is homeomorphic to $\mathbb{R}^2$; so $\pi_1(\mathrm{SL}(2,\mathbb{R})) \cong \pi_1(S^1) \cong \mathbb{Z}$. The universal covering map $p : \widetilde G \to \mathrm{SL}(2,\mathbb{R})$ of the connected Lie group $\mathrm{SL}(2,\mathbb{R})$ makes $\widetilde G$ a connected Lie group and $p$ a Lie group morphism, with $\ker p \cong \pi_1(\mathrm{SL}(2,\mathbb{R})) \cong \mathbb{Z}$, a nontrivial subgroup.
-> 2. *Every $\rho$ factors through $p$.* The differential of $\rho$ at the identity is a Lie algebra morphism $\mathfrak{sl}(2,\mathbb{R}) \to \mathfrak{gl}(n,\mathbb{C})$; it extends complex-linearly to a Lie algebra morphism on $\mathfrak{sl}(2,\mathbb{C}) = \mathfrak{sl}(2,\mathbb{R}) \oplus i\,\mathfrak{sl}(2,\mathbb{R})$. Since $\mathrm{SL}(2,\mathbb{C})$ is simply connected, this extension is the differential of a Lie group morphism $\sigma : \mathrm{SL}(2,\mathbb{C}) \to \mathrm{GL}(n,\mathbb{C})$. With $\iota : \mathrm{SL}(2,\mathbb{R}) \hookrightarrow \mathrm{SL}(2,\mathbb{C})$ the inclusion, $\rho$ and $\sigma \circ \iota \circ p$ are Lie group morphisms with the same differential at the identity, on the connected group $\widetilde G$; so they are equal.
+> 2. *Every $\rho$ factors through $p$.* The differential of $\rho$ at the identity is a Lie algebra morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-3|§61.3]] below) $\mathfrak{sl}(2,\mathbb{R}) \to \mathfrak{gl}(n,\mathbb{C})$; it extends complex-linearly to a Lie algebra morphism on $\mathfrak{sl}(2,\mathbb{C}) = \mathfrak{sl}(2,\mathbb{R}) \oplus i\,\mathfrak{sl}(2,\mathbb{R})$. Since $\mathrm{SL}(2,\mathbb{C})$ is simply connected, this extension is the differential of a Lie group morphism $\sigma : \mathrm{SL}(2,\mathbb{C}) \to \mathrm{GL}(n,\mathbb{C})$. With $\iota : \mathrm{SL}(2,\mathbb{R}) \hookrightarrow \mathrm{SL}(2,\mathbb{C})$ the inclusion, $\rho$ and $\sigma \circ \iota \circ p$ are Lie group morphisms with the same differential at the identity, on the connected group $\widetilde G$; so they are equal.
 > 3. *Conclusion.* Hence $\rho = \sigma \circ \iota \circ p$ is trivial on $\ker p \neq \{e\}$, and $\rho$ is not injective.
 
 ^ex-61-1
 
 > [!remark] Remark: Nonlinear Groups
-> Matrix groups are also called linear groups (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]). Not every Lie group is isomorphic to a matrix group: nonlinear groups arise naturally as covers of matrix groups, as Example [[§61 Lie Group Morphisms and Linear Groups#^ex-61-1|§61.1]] shows. The question of Lecture 17, restated: for a matrix group, can the bracket be identified directly on the tangent space at the identity? The answer is the matrix commutator (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]); to get there, the course uses the general idea below.
+> Matrix groups are also called linear groups (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]). Not every Lie group is isomorphic to a matrix group: nonlinear groups arise naturally as covers of matrix groups, as Example [[§61 Lie Group Morphisms and Linear Groups#^ex-61-1|§61.1]] shows. The question of Lecture 17, restated: for a matrix group, can the bracket be identified directly on the tangent space at the identity? The answer is the matrix commutator (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]] below, for linear groups in $\mathrm{GL}(d, \mathbb{R})$; its base case $\mathrm{GL}(d, \mathbb{R})$ is Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]); to get there, the course uses the general idea below.
 
 ^rem-61-2
 
@@ -66,7 +66,7 @@ a linear map between the Lie algebras, and the natural question is whether this 
 ^def-61-3
 
 > [!theorem] Lemma §61.1: Left-Invariant Fields Related by a Morphism
-> Let $F : H \to G$ be a Lie group morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]]) and $A \in T_eH$, and put $\tilde A = dF_e(A) \in T_eG$. Let $\mathbf{X}^A \in \mathfrak{X}(H)$ and $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$ be the left-invariant extensions of $A$ and of $\tilde A$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]; smooth by Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]]). Then $\mathbf{X}^A$ and $\mathbf{Y}^{\tilde A}$ are $F$-related (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]):
+> Let $F : H \to G$ be a Lie group morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]]) and $A \in T_eH$, and put $\tilde A = dF_e(A) \in T_eG$. Let $\mathbf{X}^A \in \mathfrak{X}(H)$ and $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$ be the left-invariant extensions of $A$ and of $\tilde A$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]; smooth by Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]]). Here the letter $\mathbf{Y}$ only marks a field on $G$: $\mathbf{Y}^{\tilde A}$ is the left-invariant extension of $\tilde A$, not its right-invariant extension of Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-9|§60.9]]. Then $\mathbf{X}^A$ and $\mathbf{Y}^{\tilde A}$ are $F$-related (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]):
 >
 > $$
 > dF_h\big(\mathbf{X}^A_h\big) = \mathbf{Y}^{\tilde A}_{F(h)} \in T_{F(h)}G \qquad \text{for every } h \in H .
@@ -144,7 +144,7 @@ a linear map between the Lie algebras, and the natural question is whether this 
 
 *Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Def. §60.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§59 Related Vector Fields#^prop-59-3|§59.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Def. §60.6]], [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]]
 
-Next: the commutator, first for the general linear group, and then for any linear group (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]).
+The commutator for the general linear group $\mathrm{GL}(d, \mathbb{R})$ is Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]; next, the commutator for any linear group in $\mathrm{GL}(d, \mathbb{R})$ (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]]).
 
 **Transcription note (Lecture 18).** Page 47 of the handwritten notes begins the proof with “take $A \in T_hH$”; $A \in T_eH$. Page 48 writes the second field as $\mathbf{Y}^{\hat B}$ in one place; it is $\mathbf{Y}^{\tilde B}$, with $\tilde B = dF_e(B)$.
 
@@ -153,12 +153,12 @@ Next: the commutator, first for the general linear group, and then for any linea
 *Lecture 19 began with a review: the Lie algebra $\mathfrak{g}$ of left-invariant fields, closed under commutators (Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-6|§60.6]]); the isomorphism $\mathrm{ev} : \mathfrak{g} \to T_eG$ with inverse $A \mapsto \mathbf{X}^A$ (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]), including the check that $\mathbf{X}^A$ is left-invariant (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](2)); and the bracket on $T_eG$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]), defined so that $\mathrm{ev}$ is an isomorphism of Lie algebras.*
 
 > [!remark] Remark: The Lie Algebra in Practice
-> In practice, the Lie algebra of a group such as the orthogonal group is never described as a space of left-invariant fields; it is always the tangent space at the identity — with the bracket of Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]], which for matrix groups is the matrix commutator (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]] below). The notation $\mathfrak{gl}(d, \mathbb{R}) = T_I\mathrm{GL}(d,\mathbb{R}) = \operatorname{Mat}(d,\mathbb{R})$ is standard.
+> In practice, the Lie algebra of a group such as the orthogonal group is never described as a space of left-invariant fields; it is always the tangent space at the identity — with the bracket of Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]], which for linear groups in $\mathrm{GL}(d, \mathbb{R})$ is the matrix commutator (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]] below). The notation $\mathfrak{gl}(d, \mathbb{R}) = T_I\mathrm{GL}(d,\mathbb{R}) = \operatorname{Mat}(d,\mathbb{R})$ is standard.
 
 ^rem-61-3
 
 > [!theorem] Theorem §61.3: The Bracket of a Linear Group
-> Let $G \subseteq \mathrm{GL}(d, \mathbb{R})$ be a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]) that is a *Lie subgroup*: the inclusion $i : G \hookrightarrow \mathrm{GL}(d, \mathbb{R})$ is smooth and $di_I$ is injective — for instance, $G$ a regular submanifold of $\operatorname{Mat}(d, \mathbb{R})$, as are the classical groups (Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]]). Identify $T_IG$ with its image $di_I(T_IG) \subseteq \mathfrak{gl}(d,\mathbb{R}) = \operatorname{Mat}(d,\mathbb{R})$. Then the Lie bracket on $T_IG$ is
+> Let $G \subseteq \mathrm{GL}(d, \mathbb{R})$ be a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]) that is a *Lie subgroup*: the inclusion $i : G \hookrightarrow \mathrm{GL}(d, \mathbb{R})$ is smooth and $di_I$ is injective — for instance, $G$ a regular submanifold of $\operatorname{Mat}(d, \mathbb{R})$, as are the real classical groups $\mathrm{GL}(d,\mathbb{R})$, $\mathrm{SL}(d,\mathbb{R})$, $\mathrm{O}(d)$ and $\mathrm{SO}(d)$ of Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]]. The complex groups of that list, $\mathrm{GL}(n,\mathbb{C})$, $\mathrm{U}(n)$ and $\mathrm{SU}(2)$, are not given as subgroups of a $\mathrm{GL}(d, \mathbb{R})$, and the theorem as stated and proved here does not cover them. Identify $T_IG$ with its image $di_I(T_IG) \subseteq \mathfrak{gl}(d,\mathbb{R}) = \operatorname{Mat}(d,\mathbb{R})$. Then the Lie bracket on $T_IG$ is
 >
 > $$
 > [A, B] = AB - BA ,
@@ -177,7 +177,7 @@ Next: the commutator, first for the general linear group, and then for any linea
 > di_I\big([A, B]_G\big) = \big[di_I(A), di_I(B)\big]_{\mathrm{GL}(d,\mathbb{R})} = di_I(A)\, di_I(B) - di_I(B)\, di_I(A),
 > $$
 >
-> the last step by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]. Under the identification of $T_IG$ with its image, which $di_I$ injective makes legitimate, this is $[A, B] = AB - BA$. So once the bracket of the general linear group is known to be the commutator, the bracket of every linear group is the commutator too, by algebra alone. *(Filled in: a regular submanifold qualifies, since $i$ is smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), with coordinate representation $r \mapsto (r, \vec 0)$ in an adapted chart, whose differential is injective.)*
+> the last step by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]. Under the identification of $T_IG$ with its image, which $di_I$ injective makes legitimate, this is $[A, B] = AB - BA$. So once the bracket of the general linear group is known to be the commutator, the bracket of every linear group that is a Lie subgroup of $\mathrm{GL}(d, \mathbb{R})$ is the commutator too, by algebra alone. *(Filled in: a regular submanifold qualifies, since $i$ is smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), with coordinate representation $r \mapsto (r, \vec 0)$ in an adapted chart, whose differential is injective.)*
 
 ^pf-61-3
 
@@ -201,7 +201,7 @@ In particular $di_I(T_IG)$ is closed under the matrix commutator, as the image o
 ^ex-61-2
 
 > [!proof]+ Proof
-> *(Lecture 19.)* $[A, B]^{\mathsf T} = (AB - BA)^{\mathsf T} = B^{\mathsf T}A^{\mathsf T} - A^{\mathsf T}B^{\mathsf T} = (-B)(-A) - (-A)(-B) = BA - AB = -[A, B]$. The same computation works for the unitary group, with the conjugate transpose $^{\ast}$ in place of the transpose; that was a homework problem.
+> *(Lecture 19.)* $[A, B]^{\mathsf T} = (AB - BA)^{\mathsf T} = B^{\mathsf T}A^{\mathsf T} - A^{\mathsf T}B^{\mathsf T} = (-B)(-A) - (-A)(-B) = BA - AB = -[A, B]$. The same computation works for the unitary group, with the conjugate transpose $^{\ast}$ in place of the transpose.
 
 ^pf-ex-61-2
 

@@ -156,13 +156,13 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* For $k = 0$ the chart has no last coordinates: $x_a = \varphi$ and $x_b$ is empty, so the condition $x_b(q) = \vec 0$ in Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] holds for every $q$. A chart $(U, \varphi)$ is therefore adapted to $S$ with $k = 0$ exactly when $U \cap S = U$, that is, when $U \subseteq S$.
 >
-> *(1)* Let $S$ be open and $p \in S$. For a smooth chart $(U, \varphi)$ of $M$ at $p$, its restriction $(U \cap S, \varphi|_{U \cap S})$ is a smooth chart of $M$ (Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]](2)) with domain inside $S$, hence adapted with $k = 0$. So $S$ is a regular submanifold of codimension $0$. The induced chart of an adapted chart $(U, \varphi)$ with $U \subseteq S$ is $\varphi_S = x_a|_{U \cap S} = \varphi$, the chart itself; so the atlas $\mathcal{A}_S$ of Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]] consists of the smooth charts of $M$ with domain in $S$, which generate the open-submanifold structure (Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]](2)). The two smooth structures are therefore equal (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]).
+> *(1)* Let $S$ be open and $p \in S$. For a smooth chart $(U, \varphi)$ of $M$ at $p$, its restriction $(U \cap S, \varphi|_{U \cap S})$ is a smooth chart of $M$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)) with domain inside $S$, hence adapted with $k = 0$. So $S$ is a regular submanifold of codimension $0$. The induced chart of an adapted chart $(U, \varphi)$ with $U \subseteq S$ is $\varphi_S = x_a|_{U \cap S} = \varphi$, the chart itself; so the atlas $\mathcal{A}_S$ of Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]] consists of the smooth charts of $M$ with domain in $S$, which generate the open-submanifold structure (Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]](2)). The two smooth structures are therefore equal (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]).
 >
 > *(2)* Let $S$ be a regular submanifold of codimension $0$. Each $p \in S$ lies in the domain $U_p$ of an adapted chart, and $U_p \subseteq S$ by the observation above. So $S = \bigcup_{p \in S} U_p$ is a union of open sets of $M$, hence open.
 
 ^pf-37-4
 
-*Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§17 Differentiable Structures#^prop-17-8|§17.8]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]]
+*Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§17 Differentiable Structures#^prop-17-8|§17.8]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]]
 
 ![[m591-15-1.svg]]
 *An adapted chart ($m = 2$, $k = 1$). The chart $\varphi$ straightens $U \cap S$ onto the part of the $x_a$-axis inside $\varphi(U)$ — exactly the set $\varphi(U) \cap \{x_b = 0\}$, running from rim to rim — and the induced chart $\varphi_S$ keeps only the coordinate $x_a$, landing on an open interval of $\mathbb{R}^{m-k}$.*
@@ -171,7 +171,7 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 > - The subspace topology: [[§5 Subspace Topology#^def-5-1|590 Def. §5.1]].
 > - The Euclidean prototype, level sets with graph charts: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; the two structures agree by [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]].
 
-**Extending charts.** Every chart of $S$ extends to an adapted chart of $M$: since everything reduces to the local Euclidean picture, the $m - k$ functions of a chart of $S$ extend to a neighbourhood in $M$. This is stated, not proved, here; likewise, smooth functions on $S$ extend to smooth functions near $S$.
+**Extending charts.** Every chart of $S$ extends, near each point of its domain, to an adapted chart of $M$: since everything reduces to the local Euclidean picture, the $m - k$ functions of a chart of $S$ extend to a neighbourhood in $M$ of each point of its domain. This is stated, not proved, here. Likewise, smooth functions on $S$ extend to smooth functions near each point of $S$; this is proved below (Lemma [[§37 Regular Submanifolds#^lem-37-8|§37.8]]).
 
 > [!theorem] Lemma §37.5: Smooth Maps and Regular Submanifolds
 > Let $S \subseteq M$ be a regular submanifold, with its induced structure, and $\iota : S \to M$ the inclusion.
@@ -374,7 +374,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 > - The annihilator of a subspace: [[§12 Duality#^ladr-3-121|LADR 3.121]].
 
 > [!theorem] Proposition §37.11: A Basis of the Conormal Space
-> Let $(x^1, \ldots, x^m)$ be an adapted chart at $p$, and write a covector $\xi \in T_p^{\ast}M$ as $\xi = \sum_i \xi_i\, dx^i|_p$, with components $\xi_i = \xi(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]).
+> Let $S \subseteq M$ be a regular submanifold of codimension $k$ and $p \in S$. Let $(x^1, \ldots, x^m)$ be an adapted chart at $p$, and write a covector $\xi \in T_p^{\ast}M$ as $\xi = \sum_i \xi_i\, dx^i|_p$, with components $\xi_i = \xi(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]).
 >
 > 1. $\xi \in N_pS$ if and only if $\xi_i = 0$ for every $i \le m - k$.
 > 2. $N_pS$ has basis $dx^{m-k+1}|_p, \ldots, dx^m|_p$. In particular $\dim N_pS = k$, the codimension of $S$.
@@ -432,7 +432,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 ## Regular Submanifolds of Euclidean Space
 
-*Not from lecture: the link back to the geometric stage.* Inside a Euclidean space, [[§20 Manifolds in Euclidean Space|§20]] described a manifold $X \subseteq \mathbb{R}^{n+k}$ near a point in three ways — externally, by equations ([[§20 Manifolds in Euclidean Space#^def-20-1|Definition §20.1]]); internally, by a parametrization ([[§20 Manifolds in Euclidean Space#^def-20-2|Definition §20.2]]); and as a graph — and [[§20 Manifolds in Euclidean Space#^thm-20-1|Theorem §20.1]] showed that they agree. [[§37 Regular Submanifolds#^def-37-2|Definition §37.2]] adds a fourth, the *slice* description: a chart of the ambient space in which $X$ is a coordinate plane. The fourth agrees with the other three, so in $\mathbb{R}^{n+k}$ the submanifolds of codimension $k$ are exactly the manifolds of [[§20 Manifolds in Euclidean Space|§20]], and Definition §35.1 is their description made intrinsic to the ambient manifold.
+*Not from lecture: the link back to the geometric stage.* Inside a Euclidean space, [[§20 Manifolds in Euclidean Space|§20]] described a manifold $X \subseteq \mathbb{R}^{n+k}$ near a point in three ways — externally, by equations ([[§20 Manifolds in Euclidean Space#^def-20-1|Definition §20.1]]); internally, by a parametrization ([[§20 Manifolds in Euclidean Space#^def-20-2|Definition §20.2]]); and as a graph — and [[§20 Manifolds in Euclidean Space#^thm-20-1|Theorem §20.1]] showed that they agree. [[§37 Regular Submanifolds#^def-37-2|Definition §37.2]] adds a fourth, the *slice* description: a chart of the ambient space in which $X$ is a coordinate plane. The fourth agrees with the other three, so in $\mathbb{R}^{n+k}$ the submanifolds of codimension $k$ are exactly the manifolds of [[§20 Manifolds in Euclidean Space|§20]], and Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] is their description made intrinsic to the ambient manifold.
 
 > [!theorem] Proposition §37.12: Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description
 > Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. The following are equivalent:
@@ -491,7 +491,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph is $z = \sqrt{1 - x^2 - y^2}$, and $(x, y, z) \mapsto (x, y, z - \sqrt{1 - x^2 - y^2})$ is an adapted chart; so is $(x, y, z) \mapsto (x, y, x^2 + y^2 + z^2 - 1)$ near any point with $z \neq 0$, whose last coordinate is the defining function of the external description.
 
 > [!theorem] Lemma §37.13: An Adapted Chart of a Submanifold of $\mathbb{R}^n$
-> Let $M \subseteq \mathbb{R}^n$ be a regular submanifold of dimension $m$, that is, of codimension $n - m$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), and let $(U, \varphi = (x^1, \ldots, x^n))$ be a smooth chart of $\mathbb{R}^n$ adapted to $M$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), so that
+> *(Letters as in [[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]], where this lemma is used: here $M$ is the submanifold and $\mathbb{R}^n$ the ambient space, while above $M$ was the ambient manifold.)* Let $M \subseteq \mathbb{R}^n$ be a regular submanifold of dimension $m$, that is, of codimension $n - m$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), and let $(U, \varphi = (x^1, \ldots, x^n))$ be a smooth chart of $\mathbb{R}^n$ adapted to $M$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), so that
 >
 > $$
 > U \cap M = \{\, q \in U : x^{m+1}(q) = \cdots = x^n(q) = 0 \,\}.

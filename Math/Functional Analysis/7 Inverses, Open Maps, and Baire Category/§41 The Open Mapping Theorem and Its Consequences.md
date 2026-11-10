@@ -177,7 +177,7 @@ The open mapping theorem from Theorem [[§41 The Open Mapping Theorem and Its Co
 Banach's theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]) follows at once.
 
 > [!proof]+ Proof of Banach's theorem from the open mapping theorem
-> Let $M : X \to Y$ be bounded, linear, one-to-one and onto, so that $M^{-1} : Y \to X$ exists; it is linear ([[§39 Solving Mx = y|§39]]). A linear map is bounded if and only if it is continuous (Proposition [[§30 Boundedness and Continuity#^prop-30-2|§30.2]]), and continuous if and only if the inverse image of every open set is open (Lemma [[§39 Solving Mx = y#^lem-39-3|§39.3]]). For $O \subset X$ open, the inverse image of $O$ under $M^{-1}$ is
+> Let $M : X \to Y$ be bounded, linear, one-to-one and onto, so that $M^{-1} : Y \to X$ exists; it is linear ([[§39 Solving Mx = y|§39]]). A linear map is bounded if and only if it is continuous (Proposition [[§30 Boundedness and Continuity#^prop-30-2|§30.2]]) (Proposition [[§30 Boundedness and Continuity#^prop-30-2|§30.2]]), and continuous if and only if the inverse image of every open set is open (Lemma [[§39 Solving Mx = y#^lem-39-3|§39.3]]). For $O \subset X$ open, the inverse image of $O$ under $M^{-1}$ is
 >
 > $$
 > (M^{-1})^{-1}(O) = M(O) ,
@@ -216,16 +216,18 @@ In other words, if both norms are complete and one of them is stronger than the 
 
 ^pf-41-3
 
-*Uses:* [[§39 Solving Mx = y#^thm-39-2|§39.2]]
+*Uses:* [[§30 Boundedness and Continuity#^prop-30-2|§30.2]], [[§39 Solving Mx = y#^thm-39-2|§39.2]]
 
 > [!example] Example §41.1: $C^1[a,b]$ is Not Complete in the Maximum Norm
-> This example explains the corresponding homework and midterm problems. $C^1[a,b]$ is complete in the norm $\|f\|_{C^1} = \max |f| + \max |f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]), and $\max |f| \le \|f\|_{C^1}$. If $C^1[a,b]$ were also complete in $\max|f|$, Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]] would make the two norms equivalent.
+> $C^1[a,b]$ is complete in the norm $\|f\|_{C^1} = \max |f| + \max |f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]), and $\max |f| \le \|f\|_{C^1}$. If $C^1[a,b]$ were also complete in $\max|f|$, Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]] would make the two norms equivalent.
 > They are not: $f_n(t) = \sin\bigl( n(t - a) \bigr)$ has $\max |f_n| \le 1$ but $\|f_n\|_{C^1} \ge |f_n'(a)| = n$. So $(C^1[a,b], \max|\cdot|)$ is not complete; its completion is $C[a,b]$ (Midterm Problem 1, [[§39 Solving Mx = y|§39]]).
 
 ^ex-41-1
 
 > [!example] Example §41.2: $C[0,1]$ is Not Complete in the $L^1$ Norm
 > $(C[0,1], \|\cdot\|_1)$, where $\|f\|_1 = \int_0^1 |f(x)|\, dx$, is not a Banach space.
+>
+> *Source: HW9, Problem 2*
 
 ^ex-41-2
 
@@ -310,6 +312,8 @@ The closed graph theorem and the open mapping principle together decide when a r
 > $$
 > d\bigl( x, N(M) \bigr) \le a\, \|Mx\| \qquad \text{for all } x \in X .
 > $$
+>
+> *Source: HW9, Problem 3*
 
 ^prop-41-5
 

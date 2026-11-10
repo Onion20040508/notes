@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Reference: Lee Appendix A (“Subspaces, Products, Disjoint Unions, and Quotients”); MATH 590 notes [[§5 Subspace Topology|§5]] (subspaces), [[§4 Product Topology|§4]] (products), [[§13 Quotient Topology|§13]] (quotients).*
 
 > [!remark] Remark: Why This Section
-> Many of the most important manifolds are not defined by charts directly but are *constructed* out of other spaces: complex projective space, Grassmannians, moduli spaces are all quotients, and quotients are the most important of the constructions below. The guiding question of the lecture, for each construction, is whether the two point-set conditions in the definition of a manifold are *heritable*: if $X$ is $T_2$ and second countable, is the new space too? For subspaces and products the answer is an easy yes; for quotients *everything can go wrong*, and the substance of the lecture is a usable criterion for when it doesn't.
+> Many of the most important manifolds are not defined by charts directly but are *constructed* out of other spaces: complex projective space, Grassmannians, moduli spaces are all quotients, and quotients are the most important of the constructions below. The guiding question, for each construction, is whether the two point-set conditions in the definition of a manifold are *heritable*: if $X$ is $T_2$ and second countable, is the new space too? For subspaces and products the answer is an easy yes; for quotients *everything can go wrong*, and the main result is a usable criterion for when it doesn't.
 
 ^rem-3-1
 
@@ -237,7 +237,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 > \pi_X : X \times Y \to X, \ \ \pi_X(x, y) = x, \qquad\qquad \pi_Y : X \times Y \to Y, \ \ \pi_Y(x, y) = y .
 > $$
 >
-> For a product $M_1 \times M_2$ they are also written $\pi_1$ and $\pi_2$, or $\mathrm{pr}_1$ and $\mathrm{pr}_2$ when the letter $\pi$ already names another map (as for a [[§40 Fibrations#^def-40-1|fibration]], Definition §38.1).
+> For a product $M_1 \times M_2$ they are also written $\pi_1$ and $\pi_2$, or $\mathrm{pr}_1$ and $\mathrm{pr}_2$ when the letter $\pi$ already names another map (as for a [[§40 Fibrations#^def-40-1|fibration]], Definition §40.1).
 
 ^def-3-4
 
@@ -288,7 +288,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 > [!remark] Remark: Why the Universal Property Matters
 > To check that $F$ is continuous, it suffices to check it component by component. The same pattern reappears for *differentiability*: a map into a product of manifolds is smooth iff its components are. In Lee's language this is the *characteristic property* of the product topology (Lee Prop. A.16), and it characterizes the product topology uniquely ([[§3 Subspaces and Products#^cor-3-11|Corollary §3.11]] below). Together with the previous proposition this gives two independent abstract descriptions of the same topology—“coarsest making projections continuous” and “the one that lets you check maps componentwise.”
 >
-> Compare [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]]: the subspace topology is the coarsest making the inclusion continuous, and continuity of a map *into* $S$ is checked by composing with $\iota$. The quotient topology will complete the pattern in the opposite direction (Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]]): it is the *finest* making $\pi$ continuous, and continuity of a map *out of* $X/{\sim}$ is checked by precomposing with $\pi$.
+> Compare [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]]: the subspace topology is the coarsest making the inclusion continuous, and continuity of a map *into* $S$ is checked by composing with $\iota$. The quotient topology will complete the pattern in the opposite direction (Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]]): it is the *finest* making $\pi$ continuous, and continuity of a map *out of* $X/{\sim}$ is checked by precomposing with $\pi$.
 
 ^rem-3-4
 

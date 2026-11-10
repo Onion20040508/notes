@@ -11,7 +11,10 @@ tags: [functional-analysis, hub]
 - [[§14 New Normed Spaces from Old#^thm-14-4|Theorem §14.4: All Norms on a Finite-Dimensional Space are Equivalent]], in [[§14 New Normed Spaces from Old]]
 
 ## Its proof uses
-- (only definitions)
+- [[§11 Normed Linear Spaces#^def-11-1|Definition §11.1: Norm; Normed Linear Space]]
+- [[§11 Normed Linear Spaces#^lem-11-3|Lemma §11.3: Reverse Triangle Inequality]]
+- [[§14 New Normed Spaces from Old#^def-14-1|Definition §14.1: Equivalent Norms]]
+- [[§20 Compactness and the Unit Ball#^def-20-1|Definition §20.1: Sequentially Compact]]
 
 ## Its proof uses (other subjects)
 - [[Bolzano–Weierstrass Theorem]] (Single Variable Analysis)

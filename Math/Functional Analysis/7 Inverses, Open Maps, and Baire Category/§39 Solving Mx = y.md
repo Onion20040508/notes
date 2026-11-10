@@ -13,7 +13,7 @@ tags: [functional-analysis, math556]
 > Two problems from the midterm.
 >
 > 1. *The completion of $C^1[a,b]$ under $\|f\| = \max_{[a,b]} |f|$ is $C[a,b]$.* All that was needed: $C^1[a,b]$ is dense in $(C[a,b], \|\cdot\|_\infty)$, because already the polynomials are dense in this norm (Weierstrass), and $C[a,b]$ is complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]); so $C[a,b]$ is the completion (Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]]). The abstract completion by equivalence classes of Cauchy sequences is not needed in practice; one identifies a complete space in which the given space is dense.
-> 2. *If $\{e_\alpha\}_{\alpha \in \Lambda}$ are nonzero vectors of a Hilbert space with $(x, y) = \sum_{\alpha \in \Lambda} (x, e_\alpha)\, \overline{(y, e_\alpha)}$ for all $x, y$, then $\{e_\alpha\}$ is a complete orthonormal set.* Most solutions proved completeness but not orthonormality, which was not assumed. The vectors are assumed nonzero, since a zero vector cannot belong to an orthonormal set. The full problem is on this week's homework.
+> 2. *If $\{e_\alpha\}_{\alpha \in \Lambda}$ are nonzero vectors of a Hilbert space with $(x, y) = \sum_{\alpha \in \Lambda} (x, e_\alpha)\, \overline{(y, e_\alpha)}$ for all $x, y$, then $\{e_\alpha\}$ is a complete orthonormal set.* Orthonormality is not assumed and has to be proved along with completeness. The vectors are assumed nonzero, since a zero vector cannot belong to an orthonormal set.
 
 ^rem-39-1
 
@@ -96,7 +96,7 @@ $$
 *Uses:* [[§30 Boundedness and Continuity#^prop-30-2|§30.2]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]
 
 > [!remark] Remark: The First Isomorphism Theorem, with Norms
-> Algebraically, Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]](2) is the first isomorphism theorem of linear algebra: $X/N(M) \cong R(M)$. The null space often represents a symmetry of the problem, and quotienting it out removes the non-uniqueness; restricting the target to $R(M)$ removes the non-existence. What the theorem does not give is a bounded inverse: $M_0^{-1} : R(M) \to X/N$ is linear but need not be bounded, and $R(M)$ need not be closed in $Y$. If $X$ and $Y$ are Banach spaces and $R(M)$ is closed, then $X/N$ and $R(M)$ are Banach spaces, and Banach's theorem below shows that $M_0^{-1}$ is bounded. So question (3) is the real one.
+> Algebraically, Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]](2) is the first isomorphism theorem of linear algebra: $X/N(M) \cong R(M)$. The null space often represents a symmetry of the problem, and quotienting it out removes the non-uniqueness; restricting the target to $R(M)$ removes the non-existence. What the theorem does not give is a bounded inverse: $M_0^{-1} : R(M) \to X/N$ is linear but need not be bounded, and $R(M)$ need not be closed in $Y$. If $X$ and $Y$ are Banach spaces and $R(M)$ is closed, then $X/N$ and $R(M)$ are Banach spaces (the completeness of the quotient $X/N$ is not proved in these notes), and Banach's theorem below shows that $M_0^{-1}$ is bounded. A proof that does not use the completeness of $X/N$ is the direction ($\Rightarrow$) of Proposition [[§41 The Open Mapping Theorem and Its Consequences#^prop-41-5|§41.5]]: its inequality reads $\|[x]\| \le a\, \|M_0[x]\|$, because $d(x, N) = \|[x]\|$. So question (3) is the real one.
 
 ^rem-39-2
 

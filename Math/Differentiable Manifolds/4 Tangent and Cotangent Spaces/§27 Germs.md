@@ -74,7 +74,7 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 ^rem-27-1
 
 > [!theorem] Proposition §27.2: $C_p^\infty(M)$ Is an $\mathbb{R}$-Algebra
-> The operations
+> For germs $[f], [g] \in C_p^\infty(M)$ with representatives $(f,U)$ and $(g,V)$, and $\lambda \in \mathbb{R}$, the operations
 >
 > $$
 > [f] + [g] = [f|_W + g|_W], \qquad [f]\,[g] = [f|_W \cdot g|_W], \qquad \lambda[f] = [\lambda f],

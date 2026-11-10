@@ -102,7 +102,7 @@ The name: the number one is written as a sum of smooth functions. Partitions of 
 
 The simplest example, on $M = \mathbb{R}$: a function $\chi_1$ that is $1$ far to the left and $0$ far to the right, and $\chi_2 = 1 - \chi_1$.
 
-The main result of this section is that every open cover has a subordinate partition of unity (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] below). Its proof has two steps of different kinds: an analysis step in $\mathbb{R}^m$ (Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]]), and genuine point-set topology on $M$ (paracompactness, Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]]). The ingredients come first.
+The main result of this section is that every open cover has a subordinate partition of unity (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] below). Its proof has two steps of different kinds: an analysis step in $\mathbb{R}^m$ (the function $h$ of step 1 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]; the lecture's first version used the plateau functions of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]]), and genuine point-set topology on $M$ (paracompactness, Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]]). The ingredients come first.
 
 > [!theorem] Lemma §65.3: Plateau Functions
 > For all $\varepsilon > \delta > 0$ there is $\rho \in C^\infty(\mathbb{R})$ with $0 \le \rho \le 1$, $\rho \equiv 1$ on $[-\delta, \delta]$ and $\operatorname{supp}\rho \subseteq (-\varepsilon, \varepsilon)$. Then $f(x) = \rho(|x|)$ is smooth on $\mathbb{R}^m$, $f \equiv 1$ on the closed ball $\overline{B}_\delta$, and $\operatorname{supp} f \subseteq B_\varepsilon = \{ x \in \mathbb{R}^m : |x| < \varepsilon \}$.
@@ -112,7 +112,7 @@ The main result of this section is that every open cover has a subordinate parti
 ^lem-65-3
 
 > [!proof]+ Proof
-> *(Not proved in Lecture 22, which described the method: start from the function equal to $e^{-1/x}$ for $x$ positive and zero for $x$ negative, then reflect, divide and add; not complicated, only a routine check. This is step 2 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]].)* With $h$ as there and $\delta < r' < \varepsilon$, take $\rho(t) = h(r'^2 - t^2)\big/\big(h(r'^2 - t^2) + h(t^2 - \delta^2)\big)$: smooth, between $0$ and $1$, equal to $1$ for $|t| \le \delta$ and $0$ for $|t| \ge r'$, so $\operatorname{supp}\rho \subseteq [-r', r'] \subseteq (-\varepsilon, \varepsilon)$. Then $f(x) = \rho(|x|)$ is the function $H$ of that proof (with $r = \delta$), smooth on $\mathbb{R}^m$ — $|x|$ is not smooth at the origin, but $\rho$ is constant equal to one near $0$, so $f$ is constant near $x = 0$ — with $f \equiv 1$ on $\overline{B}_\delta$ and $\operatorname{supp} f = \overline{B}_{r'} \subseteq B_\varepsilon$.
+> *(Not proved in Lecture 22, which described the method: start from the function equal to $e^{-1/x}$ for $x$ positive and zero for $x$ negative, then reflect, divide and add. This is step 2 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]].)* With $h$ as there and $\delta < r' < \varepsilon$, take $\rho(t) = h(r'^2 - t^2)\big/\big(h(r'^2 - t^2) + h(t^2 - \delta^2)\big)$: smooth, between $0$ and $1$, equal to $1$ for $|t| \le \delta$ and $0$ for $|t| \ge r'$, so $\operatorname{supp}\rho \subseteq [-r', r'] \subseteq (-\varepsilon, \varepsilon)$. Then $f(x) = \rho(|x|)$ is the function $H$ of that proof (with $r = \delta$), smooth on $\mathbb{R}^m$ — $|x|$ is not smooth at the origin, but $\rho$ is constant equal to one near $0$, so $f$ is constant near $x = 0$ — with $f \equiv 1$ on $\overline{B}_\delta$ and $\operatorname{supp} f = \overline{B}_{r'} \subseteq B_\varepsilon$.
 
 ^pf-65-3
 
@@ -162,6 +162,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in, following Lee.)* *A countable basis of precompact sets.* Let $\mathcal{B}$ be a countable basis, and $\mathcal{B}'$ the set of $B \in \mathcal{B}$ with compact closure. $\mathcal{B}'$ is still a basis: if $x \in W$ open, local compactness gives an open $V \ni x$ with $\overline V$ compact, and some $B \in \mathcal{B}$ has $x \in B \subseteq V \cap W$; then $\overline B$ is a closed subset of the compact $\overline V$ (closures computed in the Hausdorff space $X$), so compact. Enumerate $\mathcal{B}' = \{B_1, B_2, \ldots\}$ (if it is finite, $X$ is compact and $K_j = X$ works).
+>
 > *The exhaustion.* Put $K_1 = \overline{B_1}$. Given $K_j$ compact, it is covered by the $B_i$, hence by $B_1, \ldots, B_n$ for some $n$; take the least such $n$ with $n \ge j + 1$, and $K_{j+1} = \overline{B_1} \cup \cdots \cup \overline{B_n}$, compact as a finite union of compact sets. Then $K_j \subseteq B_1 \cup \cdots \cup B_n \subseteq \operatorname{Int}K_{j+1}$, and $B_j \subseteq K_j$ for all $j$, so $\bigcup_j K_j = X$.
 
 ^pf-65-4
@@ -211,7 +212,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 ^ex-65-6
 
 > [!definition] Definition §65.5: Regular Coordinate Ball
-> An open set $B \subseteq M$ is a **regular coordinate ball** if there are a chart $(U, \varphi)$ with $B \subseteq U$ and numbers $0 < \delta < \varepsilon$ such that $\varphi(B) = B_\delta(0)$, the $\delta$-ball centred at $0$, and $B_\varepsilon(0) \subseteq \varphi(U)$ — an $\varepsilon$-ball centred at $0$ containing $\varphi(B)$, with room to spare. The room is needed to pull back the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]], equal to $1$ on $\overline{B}_\delta$ and supported in $B_\varepsilon$.
+> An open set $B \subseteq M$ is a **regular coordinate ball** if there are a chart $(U, \varphi)$ with $B \subseteq U$ and numbers $0 < \delta < \varepsilon$ such that $\varphi(B) = B_\delta(0)$, the $\delta$-ball centred at $0$, and $B_\varepsilon(0) \subseteq \varphi(U)$ — an $\varepsilon$-ball centred at $0$ containing $\varphi(B)$, with room to spare. The room makes $\varphi^{-1}\big(\overline{B}_\delta(0)\big)$ a compact subset of $U$, which is then the closure of $B$ in $M$ (Step 2 of the proof of Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]]); the lecture's first version of that proof also uses it to pull back the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]], equal to $1$ on $\overline{B}_\delta$ and supported in $B_\varepsilon$.
 >
 > *Lee: Ch. 1, Regular Coordinate Balls*
 
@@ -219,7 +220,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 ![[m591-66-4.svg]]
 
-*(Figure redrawn with the manifold side.)* Definition [[§65 Partitions of Unity#^def-65-5|§65.5]] in pictures. Left, in $M$: the chart domain $U$, the regular coordinate ball $B$ around $p = \varphi^{-1}(0)$, and the larger set $\varphi^{-1}(B_\varepsilon(0))$, which still lies in $U$. Right, their images under $\varphi$: the open set $\varphi(U) \subseteq \mathbb{R}^m$, the $\varepsilon$-ball inside it, and $\varphi(B) = B_\delta(0)$. The room between the two balls is where the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]] climbs from $1$ to $0$.
+*(Figure redrawn with the manifold side.)* Definition [[§65 Partitions of Unity#^def-65-5|§65.5]] in pictures. Left, in $M$: the chart domain $U$, the regular coordinate ball $B$ around $p = \varphi^{-1}(0)$, and the larger set $\varphi^{-1}(B_\varepsilon(0))$, which still lies in $U$. Right, their images under $\varphi$: the open set $\varphi(U) \subseteq \mathbb{R}^m$, the $\varepsilon$-ball inside it, and $\varphi(B) = B_\delta(0)$. The room between the two balls is where the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]], used in the lecture's first version of the proof of Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]], falls from $1$ to $0$.
 
 > [!theorem] Lemma §65.6: Regular Coordinate Balls Form a Basis
 > Let $\{U_\alpha\}$ be an open cover of $M$. The regular coordinate balls $B$ whose chart $(U, \varphi)$ can be chosen with $U$ inside some $U_\alpha$ form a basis of the topology of $M$.
@@ -302,7 +303,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 ^pf-65-8
 
-*Uses:* [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], [[§65 Partitions of Unity#^thm-65-7|§65.7]]
+*Uses:* [[§65 Partitions of Unity#^thm-65-7|§65.7]]
 
 ## Application: Extending Functions and Vector Fields from a Submanifold
 
@@ -348,7 +349,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 ^pf-65-10
 
-*Uses:* [[§65 Partitions of Unity#^thm-65-11|§65.11]], [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§37 Regular Submanifolds#^lem-37-7|§37.7]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§37 Regular Submanifolds#^lem-37-8|§37.8]], [[§65 Partitions of Unity#^lem-65-9|§65.9]], [[§65 Partitions of Unity#^lem-65-2|§65.2]]
+*Uses:* [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§37 Regular Submanifolds#^lem-37-7|§37.7]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§37 Regular Submanifolds#^lem-37-8|§37.8]], [[§65 Partitions of Unity#^lem-65-9|§65.9]], [[§65 Partitions of Unity#^lem-65-2|§65.2]]
 
 > [!theorem] Theorem §65.11: Extension of Vector Fields from a Submanifold
 > Let $S \subseteq M$ be a regular submanifold, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(S)$.
@@ -375,7 +376,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 ^pf-65-11
 
-*Uses:* [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§37 Regular Submanifolds#^lem-37-7|§37.7]], [[§37 Regular Submanifolds#^lem-37-8|§37.8]], [[§59 Related Vector Fields#^lem-59-7|§59.7]], [[§65 Partitions of Unity#^lem-65-9|§65.9]], [[§65 Partitions of Unity#^ex-65-7|Ex. §65.7]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§37 Regular Submanifolds#^def-37-1|Def. §37.1]]
+*Uses:* [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§59 Related Vector Fields#^lem-59-7|§59.7]], [[§65 Partitions of Unity#^lem-65-9|§65.9]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§37 Regular Submanifolds#^def-37-1|Def. §37.1]]
 
 > [!example] Example §65.7: A Vector Field on a Non-Closed Submanifold That Does Not Extend
 > *(Not from the assignment.)* In $M = \mathbb{R}^2$ let $S = \{(x, 0) : x > 0\}$, and on $S$ let $\mathbf{X} = \frac{1}{x}\, \frac{\partial}{\partial x}\big|^S$. There is no $\widetilde{\mathbf{X}} \in \mathfrak{X}(\mathbb{R}^2)$ with $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $p \in S$. So the hypothesis “$S$ closed” in Theorem [[§65 Partitions of Unity#^thm-65-11|§65.11]](2) cannot be dropped; by part (1), $\mathbf{X}$ does extend to the open set $W = \{(x, y) : x > 0\}$, for instance by $\frac{1}{x}\, \partial/\partial x$.
@@ -418,7 +419,7 @@ The proof starts from a countable cover by open sets with compact closures, whic
 
 ^pf-65-12
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§2 Topological Manifolds#^prop-2-12|§2.12]], [[§65 Partitions of Unity#^lem-65-4|§65.4]], [[§65 Partitions of Unity#^thm-65-5|§65.5]]
+*Uses:* [[§2 Topological Manifolds#^prop-2-12|§2.12]], [[§65 Partitions of Unity#^lem-65-4|§65.4]], [[§65 Partitions of Unity#^thm-65-5|§65.5]]
 
 > [!theorem] Proposition §65.13: Exhaustion Functions Exist
 > Every smooth manifold admits an exhaustion function.
@@ -461,7 +462,7 @@ The proof starts from a countable cover by open sets with compact closures, whic
 
 ^pf-65-13
 
-*Uses:* [[§65 Partitions of Unity#^lem-65-12|§65.12]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]]
+*Uses:* [[§65 Partitions of Unity#^lem-65-12|§65.12]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]], [[§65 Partitions of Unity#^lem-65-2|§65.2]]
 
 > [!remark] Remark: Why the Closures
 > Should the contrapositive use the union of the *closures*? The proof shows the inclusion in $\bigcup_{i \le N} V_i$, which is contained in the union of the closures, so it makes no difference. The open sets give the stronger statement; the closures are where compactness lives, since the $V_i$ were chosen so that the $\overline{V_i}$ are compact, and $\bigcup_{i \le N} V_i$ alone need not be compact. Lee runs the contrapositive from $p \notin \bigcup_{j \le N} \overline{V_j}$ instead (Proposition 2.28); either way the sublevel set lands inside the compact set $\bigcup_{j \le N} \overline{V_j}$.
@@ -476,6 +477,6 @@ The proof starts from a countable cover by open sets with compact closures, whic
 
 *(Not from lecture; animation added, vault only.)* The construction of the figure on $M = \mathbb{R}$ (drawn on $[-5.8, 5.8]$): bumps $\psi_j$ positive exactly on the $V_j$, then normalized, $\chi_j = \psi_j / \sum_k \psi_k$. Their sum (black) goes from a wavy curve, between $0.04$ and $1$, to the constant $1$.
 
-Partitions of unity are a very common technique in the subject, best learned by using them in homework problems with hints; the next assignment contains at least one application of partitions of unity.
+Partitions of unity are a very common technique in the subject; an application from the assignments is the extension of vector fields from a closed submanifold (Theorem [[§65 Partitions of Unity#^thm-65-11|§65.11]], Assignment 7, Problem 1).
 
 **Transcription note (Lecture 23).** The board defined $f = \sum_{j \ge 0} j\chi_j$ but wrote the union in the claim from $i = 1$. These notes index the cover and the partition from $1$, as Lee does. If the index starts at $0$, the union in the claim must start at $i = 0$ too. Otherwise a point of $V_0$ outside $V_1, \ldots, V_N$ can have $f(p) = \sum_{j > N} j\chi_j(p) < N + 1$, since then $\sum_{j > N}\chi_j(p) = 1 - \chi_0(p)$.

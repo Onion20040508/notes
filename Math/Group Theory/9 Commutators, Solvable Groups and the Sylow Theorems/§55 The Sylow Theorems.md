@@ -70,7 +70,7 @@ tags: [group-theory, math493]
 ^prop-55-3
 
 > [!proof]+ Proof
-> *Idea:* Some $G$-orbit in $\Gamma/\Pi$ has size prime to $p$; its stabilizer is Sylow in $G$.
+> *Idea:* Some $G$-orbit in $\Gamma/\Pi$ has size prime to $p$; its [[§26 Stabilizers and Fixed Points#^def-26-1|stabilizer]] is Sylow in $G$.
 >
 > *(Class 10/14.)* Write $|\Gamma| = p^k m$ and $|G| = p^l n$ with $p \nmid m$ and $p \nmid n$, so $|\Pi| = p^k$; we must find a subgroup of $G$ of order $p^l$. Let $X = \Gamma/\Pi$, so $|X| = [\Gamma : \Pi] = m \not\equiv 0 \pmod p$ (Lagrange, [[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]). Let $G$ act on $X$ by left multiplication, the restriction to $G$ of the action of $\Gamma$ on its cosets.
 >
@@ -92,7 +92,7 @@ tags: [group-theory, math493]
 
 ^pf-55-3
 
-*Uses:* [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§27 Orbits#^prop-27-1|§27.1]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]]
+*Uses:* [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§27 Orbits#^prop-27-1|§27.1]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]
 
 *Worksheet hint for (1): consider $G$ [[§31 G Acting on Coset Spaces#^prop-31-1|acting]] on $\Gamma/\Pi$. Worksheet hint for the next three results: use [[§55 The Sylow Theorems#^prop-55-3|Proposition §55.3]].*
 

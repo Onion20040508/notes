@@ -182,7 +182,7 @@ Lee, Theorem C.34; taken from analysis, not proved in the course. It should not 
 ![[m591-14-2.svg]]
 *The converse in one picture. Downstairs the Inverse Function Theorem supplies $\tilde F^{-1}$; the charts carry it upstairs as the local inverse $G = \varphi^{-1} \circ \tilde F^{-1} \circ \psi$. The only input from the hypothesis is that the bottom arrow has an invertible Jacobian at $\varphi(p)$ — which is where Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] enters.*
 
-The Jacobian $\tilde F'(\varphi(p))$ is invertible by the lemma just cited: the Jacobian *is* the matrix of $F_{\ast p}$ in coordinate bases, and $F_{\ast p}$ is bijective by hypothesis. The practical content of the theorem is that being a local diffeomorphism is detectable by computing one Jacobian at each point, rather than by exhibiting local inverses.
+The Jacobian $\tilde F'(\varphi(p))$ is invertible by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]: the Jacobian *is* the matrix of $F_{\ast p}$ in coordinate bases, and $F_{\ast p}$ is bijective by hypothesis. The practical content of the theorem is that being a local diffeomorphism is detectable by computing one Jacobian at each point, rather than by exhibiting local inverses.
 
 > [!theorem] Corollary §35.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms
 > A smooth map $F : M \to N$ is a diffeomorphism if and only if it is a bijective local diffeomorphism. Consequently, a smooth bijection with $F_{*p}$ bijective at every $p \in M$ is a diffeomorphism.
@@ -205,7 +205,7 @@ The Jacobian $\tilde F'(\varphi(p))$ is invertible by the lemma just cited: the 
 *Uses:* [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
 
 > [!remark] Remark
-> Not stated in lecture. Injectivity is the entire difference between the two notions, as the helix of Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]] shows: there every local inverse exists, but they cannot be assembled into a global one, because the second preimage of $q$ lies outside the domain of the local inverse. The same argument shows that a bijective local homeomorphism is a homeomorphism (Lemma [[§35 Local Diffeomorphisms#^lem-35-4|§35.4]]).
+> Not stated in lecture. Bijectivity is the entire difference between the two notions. In the helix of Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]] it is injectivity that fails: there every local inverse exists, but they cannot be assembled into a global one, because the second preimage of $q$ lies outside the domain of the local inverse. The same argument shows that a bijective local homeomorphism is a homeomorphism (Lemma [[§35 Local Diffeomorphisms#^lem-35-4|§35.4]]).
 
 ^rem-35-3
 

@@ -119,7 +119,7 @@ Both examples of [[§27 Orthonormal Sets and Bases|§27]] (Example [[§27 Orthon
 ^thm-28-3
 
 > [!proof]+ Proof of (⇒)
-> Assume $H$ has a countable orthonormal basis $\{e_1, e_2, \ldots\}$ (finite or infinite). Then $H = \overline{\operatorname{span}}\{e_1, e_2, \ldots\}$: every $x \in H$ is $x = \sum_j (x, e_j)\, e_j$ (Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]), a finite sum if the basis is finite and a limit of partial sums otherwise. Let
+> Assume $H$ has a countable orthonormal basis $\{e_1, e_2, \ldots\}$ (finite or infinite). Then $H = \overline{\operatorname{span}}\{e_1, e_2, \ldots\}$: every $x \in H$ is $x = \sum_j (x, e_j)\, e_j$ (Definition [[§27 Orthonormal Sets and Bases#^def-27-4|§27.4]]), a finite sum if the basis is finite and a limit of partial sums otherwise. Let $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q}$ if $\mathbb{F} = \mathbb{R}$ and $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q} + i\mathbb{Q}$ if $\mathbb{F} = \mathbb{C}$, a countable dense subset of $\mathbb{F}$, and let
 >
 > $$
 > D = \bigcup_{n} \Bigl\{ \sum_{j=1}^n a_j e_j : a_j \in \mathbb{Q}_{\mathbb{F}} \Bigr\},
@@ -137,7 +137,7 @@ Both examples of [[§27 Orthonormal Sets and Bases|§27]] (Example [[§27 Orthon
 
 ^pf-28-3
 
-*Uses:* [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]], [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[Countable Union of Countable Sets is Countable|551 §3.1]]
+*Uses:* [[§27 Orthonormal Sets and Bases#^def-27-4|Def. §27.4]], [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]], [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[Countable Union of Countable Sets is Countable|551 §3.1]]
 
 For the converse, the countable dense set has to be turned into an orthonormal set, which is the Gram–Schmidt process (Lemma [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|§28.2]] above).
 
@@ -228,7 +228,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 ^thm-28-5
 
 > [!proof]+ Proof
-> (HW5, Problem 2, for infinite-dimensional $H$; the finite-dimensional case is Claude's.) By Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|§28.3]], $H$ has a countable orthonormal basis.
+> (HW5, Problem 2, for infinite-dimensional $H$; the finite-dimensional case is added, not from lecture or homework.) By Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|§28.3]], $H$ has a countable orthonormal basis.
 >
 > **Step 1: the size of the basis.** If the basis is finite, $\{e_1, \ldots, e_n\}$ ($n = 0$ meaning the empty set, $H = \{0\}$), every $x = \sum_{j=1}^n (x, e_j)\, e_j$ lies in $\operatorname{span}\{e_1, \ldots, e_n\}$. If $H$ is infinite-dimensional, the basis is therefore infinite, and we index it as $\{e_j\}_{j \in \mathbb{N}}$. Let $\mathcal{M}$ denote $\mathbb{F}^n$ in the finite case and $\ell^2$ in the infinite case, with $(a, b) = \sum_j a_j \overline{b_j}$.
 >

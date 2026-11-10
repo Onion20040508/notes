@@ -11,6 +11,7 @@ tags: [functional-analysis, hub]
 - [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Theorem §32.2: Lax–Milgram]], in [[§32 Sesquilinear Forms and the Lax–Milgram Theorem]]
 
 ## Its proof uses
+- [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Theorem §23.1: Cauchy–Schwarz]]
 - [[§25 Projection and Orthogonal Decomposition#^thm-25-4|Theorem §25.4: Orthogonal Decomposition]]
 - [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Theorem §26.5: Riesz Representation Theorem]]
 - [[§30 Boundedness and Continuity#^prop-30-2|Proposition §30.2: Continuous if and only if Bounded]]

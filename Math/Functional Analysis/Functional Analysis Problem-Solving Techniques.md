@@ -280,7 +280,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t19
 
-> [!example] Example §T19: Applications (Lectures 11–18)
+> [!example] Example T19: Applications (Lectures 11–18)
 > - Poincaré on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|§33.9]]), from [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-8|Poincaré]] on $C_c^\infty$.
 > - Limits in $W^{1,p}$ satisfy integration by parts (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]).
 > - A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], Step 3); the same fails in $\ell^\infty$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
@@ -351,7 +351,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 ^rem-t24
 
 > [!example] Example T24: Application (Lecture 15)
-> - The induced map $M_0 : X/N(M) \to R(M)$ (Lecture 15, Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]]), with $\|M_0\| = \|M\|$.
+> - The induced map $M_0 : X/N(M) \to R(M)$ (Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]]), with $\|M_0\| = \|M\|$.
 
 ^ex-t24
 
@@ -386,7 +386,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t27
 
-> [!example] Example §T27: Applications (Lectures 16–17)
+> [!example] Example T27: Applications (Lectures 16–17)
 > - The closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]).
 > - $C^1[a,b]$ is not complete in the maximum norm (Example [[§41 The Open Mapping Theorem and Its Consequences#^ex-41-1|§41.1]]).
 > - The uniform boundedness principle (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]): the norm $\|x\| + \sup_\alpha \|A_\alpha x\|$.
@@ -407,7 +407,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t28
 
-> [!example] Example §T28: Application (Lecture 17)
+> [!example] Example T28: Application (Lecture 17)
 > The Lax equivalence theorem (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-8|§42.8]]).
 
 ^ex-t28
@@ -419,7 +419,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t29
 
-> [!example] Example §T29: Applications (Lecture 18)
+> [!example] Example T29: Applications (Lecture 18)
 > - Criterion for weak convergence (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]]).
 > - Weakly convergent sequences are bounded (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-4|§43.4]]).
 > - $X$ reflexive $\iff$ $X'$ reflexive (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-9|§37.9]]): $X$ is a closed subspace of $X''$.
@@ -433,7 +433,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t30
 
-> [!example] Example §T30: Application (Lecture 18)
+> [!example] Example T30: Application (Lecture 18)
 > Hyperplane separation in a normed space (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]), from Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]; and through it Mazur's theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-7|§43.7]]).
 
 ^ex-t30

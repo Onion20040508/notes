@@ -426,7 +426,7 @@ Let $S \subset X$. The intersection of any family of linear subspaces of $X$ is 
 \operatorname{span}\{S\} = \bigcap \{ W : W \text{ a linear subspace of } X,\ S \subset W \}.
 \]
 In particular the smallest subspace containing $S$ exists, so the definition of span is meaningful.
-\laxref{Ch.~1, Thm~2(i)}
+\laxref{Ch.~1, Thm~1(iii) and Thm~2(i)}
 \end{propbox}
 
 \begin{proof}
@@ -492,7 +492,7 @@ if $x_1 - x_2 \in Y$.
 \end{defbox}
 
 \begin{defbox}[Equivalence Class]\boxlabel{def:equivalence-class-and-quotient}
-For $x_0 \in X$, the \textbf{equivalence class} of $x_0$ is
+Let $Y$ be a linear subspace of a linear space $X$. For $x_0 \in X$, the \textbf{equivalence class} of $x_0$ mod $Y$ (Definition~\ref{def:equivalence-mod}) is
 \[
 [x_0] = \{ x \in X \mid x - x_0 \in Y \} = x_0 + Y.
 \]
@@ -500,7 +500,7 @@ For $x_0 \in X$, the \textbf{equivalence class} of $x_0$ is
 \end{defbox}
 
 \begin{defbox}[Quotient Space]\boxlabel{def:quotient-space}
-The \textbf{quotient space} $X / Y$ ($X$ mod $Y$) is the set of all equivalence classes (Definition~\ref{def:equivalence-class-and-quotient}):
+Let $Y$ be a linear subspace of a linear space $X$. The \textbf{quotient space} $X / Y$ ($X$ mod $Y$) is the set of all equivalence classes (Definition~\ref{def:equivalence-class-and-quotient}):
 \[
 X / Y = \{ [x] \mid x \in X \}.
 \]
@@ -570,7 +570,7 @@ The pattern of the verification is the same in every line: the outer equalities 
 \end{rembox}
 
 \begin{rembox}[Quotients and Orthogonal Complements]\label{rem:quotients-orthogonal-complements}
-In $\mathbb{R}^n$, one may think of $X / Y$ as playing the role of the orthogonal complement $Y^\perp$: each parallel translate $x_0 + Y$ meets $Y^\perp$ in exactly one point. But ``orthogonal'' requires an inner product, and a bare linear space has no such structure. The quotient space is the substitute that is available in full generality. That $(X/Y) \oplus Y \cong X$ in a suitable sense was suggested in lecture and became HW1; the precise statement needs no inner product at all --- only a subspace $W$ playing the role of $Y^\perp$. The tools are extracted below.
+In $\mathbb{R}^n$, one may think of $X / Y$ as playing the role of the orthogonal complement $Y^\perp$: each parallel translate $x_0 + Y$ meets $Y^\perp$ in exactly one point. But ``orthogonal'' requires an inner product, and a bare linear space has no such structure. The quotient space is the substitute that is available in full generality. That $(X/Y) \oplus Y \cong X$ in a suitable sense is made precise in the next subsection (HW1); the precise statement needs no inner product at all --- only a subspace $W$ playing the role of $Y^\perp$. The tools are extracted below.
 \end{rembox}
 
 \subsection{Complements and the Isomorphism $X \cong X/Y \oplus Y$}\label{subsec:complements}
@@ -605,7 +605,7 @@ For every linear subspace $Y \subset X$ there exists a complement $W$ of $Y$.
 \end{propbox}
 
 \begin{proof}
-Let $P = \{ W \subset X \text{ a linear subspace} : W \cap Y = \{0\} \}$, partially ordered by inclusion; $\{0\} \in P$. Chains in $P$ have upper bounds: the union of a chain of subspaces is a subspace (the argument in the proof of Theorem~\ref{thm:hb}), and it meets $Y$ only in $0$ since each member does. By Zorn's lemma (Theorem~\ref{thm:zorn}) $P$ has a maximal element $W$. If $W + Y \neq X$, pick $x_0 \in X \setminus (W + Y)$; Lemma~\ref{lem:enlarge} gives a strictly larger element of $P$, contradicting maximality. Hence $W + Y = X$, and $W$ is a complement.
+Let $P = \{ W \subset X \text{ a linear subspace} : W \cap Y = \{0\} \}$, partially ordered by inclusion; $\{0\} \in P$. Chains in $P$ have upper bounds. The empty chain has the upper bound $\{0\}$. For a nonempty chain $\{W_i\}_{i \in I}$ in $P$ put $U = \bigcup_i W_i$. If $u_1, u_2 \in U$ and $k \in \mathbb{F}$, then, the chain being totally ordered by inclusion, $u_1$ and $u_2$ lie in a common $W_i$, so $u_1 + u_2 \in W_i \subset U$ and $k u_1 \in W_i \subset U$; thus $U$ is a linear subspace. It meets $Y$ only in $0$ since each $W_i$ does. So $U \in P$ is an upper bound. By Zorn's lemma (Theorem~\ref{thm:zorn}) $P$ has a maximal element $W$. If $W + Y \neq X$, pick $x_0 \in X \setminus (W + Y)$; Lemma~\ref{lem:enlarge} gives a strictly larger element of $P$, contradicting maximality. Hence $W + Y = X$, and $W$ is a complement.
 \end{proof}
 
 \begin{rembox}\label{rem:lin-spaces-4}
@@ -633,7 +633,7 @@ So $W'$ is a second complement of $Y$. (Not covered in lecture.)
 \end{proof}
 
 \begin{exbox}[Complements of a Line in the Plane]\boxlabel{ex:complements-line-plane}
-In $\mathbb{R}^2$ with $Y$ the $x$-axis, every line through the origin other than $Y$ is a complement of $Y$.
+In $\mathbb{R}^2$ with $Y$ the $x$-axis, every line through the origin other than $Y$ is a complement of $Y$. Indeed, let $W = \operatorname{span}\{w\}$ with $w = (w_1, w_2)$, $w_2 \neq 0$. A multiple $a w$ lies on the $x$-axis only if $a w_2 = 0$, i.e.\ $a = 0$, so $W \cap Y = \{0\}$; and every $(x_1, x_2) = \tfrac{x_2}{w_2}\, w + \bigl(x_1 - \tfrac{x_2}{w_2} w_1,\, 0\bigr)$ lies in $W + Y$.
 \end{exbox}
 
 \begin{lembox}[Unique Decomposition]\boxlabel{lem:unique-decomp}
@@ -671,11 +671,13 @@ $M$ is a linear bijection, hence an isomorphism, and $M^{-1}$ is an isomorphism 
 \end{proof}
 
 \begin{corbox}[A Complement is a Model of the Quotient]\boxlabel{cor:complement-quotient}
-If $W$ is a complement of $Y$, then the restricted quotient map $W \to X/Y$, $w \mapsto [w]$, is an isomorphism. In particular all complements of $Y$ are isomorphic to one another.
+If $W$ is a complement of $Y$, then the map $W \to X/Y$, $w \mapsto [w]$ (the restriction to $W$ of the quotient map $x \mapsto [x]$), is an isomorphism. In particular all complements of $Y$ are isomorphic to one another.
 \end{corbox}
 
 \begin{proof}
-Linearity is inherited from the quotient map. Injectivity and surjectivity are exactly the two computations in the proof of Theorem~\ref{thm:quotient-iso}: $[w_1] = [w_2]$ forces $w_1 - w_2 \in W \cap Y = \{0\}$, and every class $[x]$ equals $[w]$ for the $W$-component $w$ of $x$.
+The map is linear: $[a w_1 + b w_2] = a[w_1] + b[w_2]$ by the definition of the operations on $X/Y$ (Proposition~\ref{prop:quotient}). Injectivity and surjectivity are exactly the two computations in the proof of Theorem~\ref{thm:quotient-iso}: $[w_1] = [w_2]$ forces $w_1 - w_2 \in W \cap Y = \{0\}$, and every class $[x]$ equals $[w]$ for the $W$-component $w$ of $x$.
+
+For the last claim, let $W_1, W_2$ be complements of $Y$, with isomorphisms $q_i : W_i \to X/Y$, $q_i(w) = [w]$. Then $q_2^{-1} \circ q_1 : W_1 \to W_2$ is a bijection, and it is linear as a composition of linear maps ($q_2^{-1}$ is linear by Lemma~\ref{lem:inverse-iso}); so it is an isomorphism.
 \end{proof}
 
 \begin{rembox}[The Isomorphism is Not Canonical]\label{rem:isomorphism-not-canonical}
@@ -687,7 +689,7 @@ Let $X$ carry an inner product $\langle \cdot, \cdot \rangle$ and let $Y^\perp =
 \end{corbox}
 
 \begin{proof}
-If $z \in Y \cap Y^\perp$ then $\langle z, z \rangle = 0$, so $z = 0$ by positive-definiteness of the inner product (to be introduced later). With $X = Y + Y^\perp$ assumed, $Y^\perp$ is a complement; apply Corollary~\ref{cor:complement-quotient} and Theorem~\ref{thm:quotient-iso}.
+$Y^\perp$ is a linear subspace: if $z_1, z_2 \in Y^\perp$ and $k \in \mathbb{F}$, then $\langle z_1 + z_2, y \rangle = \langle z_1, y \rangle + \langle z_2, y \rangle = 0$ and $\langle k z_1, y \rangle = k \langle z_1, y \rangle = 0$ for all $y \in Y$, by linearity of the inner product in its first argument. If $z \in Y \cap Y^\perp$ then $\langle z, z \rangle = 0$, so $z = 0$ by positive-definiteness of the inner product (to be introduced later). With $X = Y + Y^\perp$ assumed, $Y^\perp$ is a complement; apply Corollary~\ref{cor:complement-quotient} and Theorem~\ref{thm:quotient-iso}.
 \end{proof}
 
 \begin{rembox}\label{rem:lin-spaces-5}
@@ -726,7 +728,7 @@ That is, $M$ preserves the linear operations.
 \end{defbox}
 
 \begin{defbox}[Isomorphism]\boxlabel{def:isomorphism}
-A map $M : X \to Y$ is an \textbf{isomorphism} (or \textbf{linear isomorphism}) if $M$ is linear, one-to-one, and onto.
+Let $X, Y$ be linear spaces over the same field. A map $M : X \to Y$ is an \textbf{isomorphism} (or \textbf{linear isomorphism}) if $M$ is linear, one-to-one, and onto. If such an $M$ exists, $X$ and $Y$ are called \textbf{isomorphic}, written $X \cong Y$.
 \laxref{Ch.~1, definition of isomorphism; Remark~2}
 \end{defbox}
 
@@ -761,7 +763,7 @@ As $a$ runs over $[0, 1]$, the point $a x_1 + (1 - a) x_2$ runs over the line se
 \end{rembox}
 
 \begin{defbox}[Convex Hull]\boxlabel{def:convex-hull}
-The \textbf{convex hull} of a subset $S \subset X$ is the smallest convex set containing $S$.
+Let $X$ be a linear space over $\mathbb{R}$. The \textbf{convex hull} of a subset $S \subset X$ is the smallest convex set containing $S$.
 \laxref{Ch.~1, definition of convex hull}
 \end{defbox}
 
@@ -775,7 +777,7 @@ Let $\{K_i\}$ be convex and $K = \bigcap_i K_i$. If $x_1, x_2 \in K$ and $a \in 
 \end{proof}
 
 \begin{exbox}[Convex Hull of a Star]\boxlabel{ex:convex-hull-star}
-Let $S \subset \mathbb{R}^2$ be a four-pointed star (the boundary of the region obtained from a square by pushing the midpoints of its edges inward). The convex hull of $S$ is the filled square with the star's four tips as vertices. Indeed, taking any two tips, the whole segment between them must be included; taking any point of $S$ and any point already included, the segment between them must be included; iterating fills the square, which is itself convex.
+Let $S \subset \mathbb{R}^2$ be a four-pointed star (the boundary of the region obtained from a square by pushing the midpoints of its edges inward). The convex hull of $S$ is the filled square with the star's four tips as vertices. Indeed, taking any two tips, the whole segment between them must be included; taking any point of $S$ and any point already included, the segment between them must be included; iterating fills the square, so the square is contained in the convex hull. Conversely the square is convex and contains $S$, so it contains the convex hull.
 
 \begin{center}
 \begin{tikzpicture}[scale=1.0, >=stealth]
@@ -955,7 +957,7 @@ For each of the three examples, the set $\{x \in \mathbb{R}^2 : p(x) < 1\}$ is:
 \end{tikzpicture}
 \end{center}
 
-All three sets are convex. This is not a coincidence: there is a correspondence between convex sets and positive homogeneous subadditive functions, to be made precise later in the course. In finite dimensions the picture already suggests it.
+All three sets are convex. This is not a coincidence: there is a correspondence between convex sets and positive homogeneous subadditive functions, made precise in \S\ref{sec:gauge} (Corollary~\ref{cor:sublevel}). In finite dimensions the picture already suggests it.
 \end{exbox}
 
 \subsection{The Hahn--Banach Theorem (Real Version)}
@@ -1028,7 +1030,7 @@ A general linear space has no dot product. But it does have linear functionals, 
 \end{rembox}
 
 \begin{rembox}[Convergence Without Topology]\label{rem:convergence-without-topology}
-A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement ``$x_n \to x$'' has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This will be developed later in the course (weak convergence).
+A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement ``$x_n \to x$'' has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This is developed in \S\ref{sec:weak} (weak convergence).
 \end{rembox}
 
 \subsection{A First Application: One Functional per Vector}
@@ -1042,7 +1044,7 @@ Let $y_0 \in X$, $y_0 \neq 0$, and let $Y = \operatorname{span}\{y_0\} = \{ a y_
 \]
 This is a linear functional on the one-dimensional subspace $Y$. Given any positive homogeneous subadditive $p$ on $X$ with $\ell(y) \le p(y)$ on $Y$, Hahn--Banach extends $\ell$ to a linear functional $L : X \to \mathbb{R}$ with $L \le p$ on all of $X$. (One can prescribe any value at $y_0$, not only $1$; the normalization is a convenience.)
 
-Thus associated to every nonzero vector of $X$ there is at least one linear functional on $X$ taking a prescribed nonzero value there. The extension is not unique.
+Thus, whenever a dominating $p$ is available, there is at least one linear functional on $X$ taking a prescribed nonzero value at $y_0$. (In a normed space $p$ can always be taken to be a multiple of the norm; this is Theorem~\ref{thm:norm-max}. In a bare linear space such a functional also exists, without any $p$: choose a complement $W$ of $Y$ by Proposition~\ref{prop:complement} and set $L(a y_0 + w) = a$ for $a \in \mathbb{R}$, $w \in W$.) The extension is not unique.
 \end{exbox}
 
 \subsection{The One-Step Extension}
@@ -1395,15 +1397,15 @@ This gives the two intervals, and $p_{\overline{D}}(x) = p_D(x) = \|x\|$. In lin
 \end{exbox}
 
 \begin{exbox}[A Gauge Vanishing Off the Origin]\boxlabel{ex:gauge-vanishing-off-origin}
-Let $X = \mathbb{R}^2$ and $K = \{ (x_1, x_2) : x_1 < 1 \}$, an open half-plane containing $0$ as an interior point. For $x = (x_1, x_2)$ with $x_1 \le 0$, every point $sx$, $s \ge 0$, has first coordinate $sx_1 \le 0 < 1$, so the whole ray lies in $K$ and $p_K(x) = 0$. For $x_1 > 0$, $x/a \in K$ iff $x_1/a < 1$ iff $a > x_1$, so $A(x) = (x_1, \infty)$ and $p_K(x) = x_1$. Altogether $p_K(x) = \max\{x_1, 0\}$: positive homogeneous, subadditive, non-negative, and zero on a whole half-plane.
+Let $X = \mathbb{R}^2$ and $K = \{ (x_1, x_2) : x_1 < 1 \}$, an open half-plane. It is convex, and $0$ is an interior point: for $y = (y_1, y_2)$, $ty \in K$ for $|t| < 1/|y_1|$ if $y_1 \neq 0$, and for all $t$ if $y_1 = 0$. For $x = (x_1, x_2)$ with $x_1 \le 0$, every point $sx$, $s \ge 0$, has first coordinate $sx_1 \le 0 < 1$, so the whole ray lies in $K$ and $p_K(x) = 0$. For $x_1 > 0$, $x/a \in K$ iff $x_1/a < 1$ iff $a > x_1$, so $A(x) = (x_1, \infty)$ and $p_K(x) = x_1$. Altogether $p_K(x) = \max\{x_1, 0\}$: positive homogeneous, subadditive, non-negative, and zero on a whole half-plane.
 \end{exbox}
 
 \begin{exbox}[Gauge of the Unit Disk]\boxlabel{ex:gauge-unit-disk}
-Let $X = \mathbb{R}^2$ and $K = \{ x_1^2 + x_2^2 \le 1 \}$, the closed unit disk; $0$ is an interior point in the classical sense, hence in the algebraic sense. For $x = (x_1, x_2)$ and $a > 0$,
+Let $X = \mathbb{R}^2$ and $K = \{ x_1^2 + x_2^2 \le 1 \}$, the closed unit disk; $0$ is an interior point of $K$ (Example~\ref{ex:r1-admissible-scales-closed-open-disk}, where $K = \overline{D}$). For $x = (x_1, x_2)$ and $a > 0$,
 \[
 \frac{x}{a} \in K \iff \Bigl(\frac{x_1}{a}\Bigr)^2 + \Bigl(\frac{x_2}{a}\Bigr)^2 \le 1 \iff a^2 \ge x_1^2 + x_2^2 \iff a \ge \sqrt{x_1^2 + x_2^2}.
 \]
-The infimum of such $a$ is attained, and
+For $x \neq 0$ the infimum of such $a$ is attained; for $x = 0$ every $a > 0$ is admissible and the infimum is $0$. In both cases
 \[
 p_K(x) = \bigl(x_1^2 + x_2^2\bigr)^{1/2} = \|x\|.
 \]
@@ -1413,11 +1415,11 @@ So the gauge of the unit disk recovers the Euclidean length: the function $p_1$ 
 % Lecture 3 (2026-09-08)
 
 \begin{exbox}[Gauge of a Square]\boxlabel{ex:gauge-square}
-Let $X = \mathbb{R}^2$ and $K = \{ (x_1, x_2) : |x_1| \le 2,\ |x_2| \le 2 \}$, the closed square with vertices $(\pm 2, \pm 2)$; $0$ is an interior point. For $a > 0$,
+Let $X = \mathbb{R}^2$ and $K = \{ (x_1, x_2) : |x_1| \le 2,\ |x_2| \le 2 \}$, the closed square with vertices $(\pm 2, \pm 2)$. It is convex, and $0$ is an interior point: for $y = (y_1, y_2) \neq 0$, $ty \in K$ for $|t| < 2/\max\{|y_1|, |y_2|\}$, and for $y = 0$ for all $t$. For $a > 0$,
 \[
 \frac{x}{a} \in K \iff \Bigl|\frac{x_1}{a}\Bigr| \le 2 \text{ and } \Bigl|\frac{x_2}{a}\Bigr| \le 2 \iff a \ge \frac{|x_1|}{2} \text{ and } a \ge \frac{|x_2|}{2} \iff a \ge \max\Bigl\{\frac{|x_1|}{2}, \frac{|x_2|}{2}\Bigr\}.
 \]
-Both conditions must hold (``and,'' not ``or''), so the smallest admissible $a$ is the larger of the two lower bounds, and
+Both conditions must hold (``and,'' not ``or''), so the infimum of the admissible $a$ is the larger of the two lower bounds, and
 \[
 p_K(x) = \tfrac{1}{2} \max\{ |x_1|, |x_2| \}.
 \]
@@ -1458,7 +1460,7 @@ p_K(bx) = b\, p_K(x) \quad (b \ge 0), \qquad p_K(x + y) \le p_K(x) + p_K(y) \qqu
 \[
 p_K(bx) = \inf\Bigl\{ a > 0 : \frac{bx}{a} \in K \Bigr\} = \inf\Bigl\{ a > 0 : \frac{x}{a/b} \in K \Bigr\}.
 \]
-Substituting $a' = a/b$, which runs over $(0,\infty)$ as $a$ does, the set is $\{ b a' : x/a' \in K \} = b\,A(x)$, whose infimum is $b \inf A(x) = b\, p_K(x)$. (Left to us in lecture.)
+Substituting $a' = a/b$, which runs over $(0,\infty)$ as $a$ does, the set is $\{ b a' : x/a' \in K \} = b\,A(x)$, whose infimum is $b \inf A(x) = b\, p_K(x)$. (Left as an exercise in lecture.)
 
 \textbf{Subadditivity.} It is hard to work with the infimum directly, so take arbitrary admissible scales and pass to the infimum at the end. Let $a > 0$, $b > 0$ be such that
 \[
@@ -1509,7 +1511,7 @@ Fix $y \in X$. Since $0$ is an interior point of $K$, there is $\delta(y) > 0$ s
 \[
 a \cdot \frac{x}{a} + (1 - a)\, ty \in K, \qquad \text{i.e.} \qquad x + (1 - a)\, t y \in K \qquad \text{for all } |t| < \delta(y).
 \]
-Replacing $(1-a)t$ by $t$, this says $x + ty \in K$ for all $|t| < (1 - a)\,\delta(y)$. So $\varepsilon(y) = (1 - a)\,\delta(y) > 0$ works, and $x$ is an interior point.
+Replacing $(1-a)t$ by $t$, this says $x + ty \in K$ for all $|t| < (1 - a)\,\delta(y)$. So $\varepsilon(y) = (1 - a)\,\delta(y) > 0$ works. Taking $t = 0$ shows $x \in K$, as the definition of interior point requires. Hence $x$ is an interior point.
 \end{proof}
 
 \begin{center}
@@ -1572,7 +1574,7 @@ Let $X$ be a linear space over $\mathbb{R}$, let $K \subset X$ be a nonempty con
 \laxref{\S3.2, Thm~5}
 \end{thmbox}
 
-In words: $y_0$ lies \emph{on} the hyperplane $\{\ell = c_0\}$, and all of $K$ lies strictly on one side of it. The point $y_0$ may be a boundary point of $K$ (it is excluded from $K$ only because $K$ has no boundary points), and the statement still holds; the hyperplane is then a supporting hyperplane at $y_0$.
+In words: $y_0$ lies \emph{on} the hyperplane $\{\ell = c_0\}$, and all of $K$ lies strictly on one side of it. Here $\ell \neq 0$, since $K$ is nonempty and $\ell(x) < c_0 = \ell(y_0)$ for $x \in K$; so $\{\ell = c_0\}$ is a hyperplane in the sense of Definition~\ref{def:hyperplane}. The point $y_0$ may be a boundary point of $K$ (it is excluded from $K$ only because $K$ has no boundary points), and the statement still holds; the hyperplane is then a supporting hyperplane at $y_0$.
 
 \begin{center}
 \begin{tikzpicture}[scale=1.3, >=stealth]
@@ -1606,13 +1608,13 @@ and for $a \le 0$,
 \[
 \ell(a y_0) = a \le 0 \le p_K(a y_0),
 \]
-since $p_K \ge 0$. So $\ell \le p_K$ on $Y$. By the Hahn--Banach theorem (Theorem~\ref{thm:hb}), $\ell$ extends to a linear functional $L$ on $X$ with $L(x) \le p_K(x)$ for all $x \in X$. For this $L$,
+since $p_K \ge 0$ (Proposition~\ref{prop:gauge-values}(a)). So $\ell \le p_K$ on $Y$. By the Hahn--Banach theorem (Theorem~\ref{thm:hb}), $\ell$ extends to a linear functional $L$ on $X$ with $L(x) \le p_K(x)$ for all $x \in X$. For this $L$,
 \[
 L(y_0) = \ell(y_0) = 1, \qquad L(x) \le p_K(x) < 1 \quad \text{for all } x \in K,
 \]
 which is the claim with $c_0 = 1$ and $L$ in the role of the functional in the statement.
 
-\textbf{Step 4: The general case.} (Left to us in lecture; written out here.) If $0 \notin K$, pick any $x_1 \in K$ and translate: $K' = K - x_1 = \{ x - x_1 : x \in K \}$. Translation preserves convexity, sends interior points to interior points (the definition of interior point involves only differences $x_0 + ty$), and sends $x_1$ to $0$, so $K'$ is convex with every point interior and $0 \in K'$; also $y_0 - x_1 \notin K'$. Steps 2--3 give a linear $L : X \to \mathbb{R}$ with $L(y_0 - x_1) = 1$ and $L(x - x_1) < 1$ for all $x \in K$. By linearity, with $c_0 = 1 + L(x_1)$,
+\textbf{Step 4: The general case.} (Left as an exercise in lecture; written out here.) If $0 \notin K$, pick any $x_1 \in K$ and translate: $K' = K - x_1 = \{ x - x_1 : x \in K \}$. Translation preserves convexity, sends interior points to interior points (the definition of interior point involves only differences $x_0 + ty$), and sends $x_1$ to $0$, so $K'$ is convex with every point interior and $0 \in K'$; also $y_0 - x_1 \notin K'$. Steps 2--3 give a linear $L : X \to \mathbb{R}$ with $L(y_0 - x_1) = 1$ and $L(x - x_1) < 1$ for all $x \in K$. By linearity, with $c_0 = 1 + L(x_1)$,
 \[
 L(y_0) = c_0, \qquad L(x) < c_0 \quad \text{for all } x \in K. \qedhere
 \]
@@ -1637,7 +1639,7 @@ The statement is Lax's Theorem~5, including the hypothesis that $K$ is nonempty,
 For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, since $\ell(y)$ is complex; the correct hypothesis and conclusion use the modulus, and the homogeneity of $p$ must be strengthened to complex scalars.
 
 \begin{lembox}[Consequences of Complex Homogeneity]\boxlabel{lem:p-complex}
-Let $p : X \to \mathbb{R}$ satisfy (1) and (2) of Theorem~\ref{thm:hb-complex} below. Then:
+Let $X$ be a linear space over $\mathbb{C}$ and let $p : X \to \mathbb{R}$ satisfy (1) $p(ax) = |a|\,p(x)$ for all $a \in \mathbb{C}$, $x \in X$, and (2) $p(x + y) \le p(x) + p(y)$ for all $x, y \in X$; these are the hypotheses (1) and (2) of Theorem~\ref{thm:hb-complex} below. Then:
 \begin{enumerate}[label=(\alph*)]
     \item $p(0) = 0$;
     \item $p(-x) = p(x)$ for all $x \in X$;
@@ -1647,7 +1649,7 @@ Let $p : X \to \mathbb{R}$ satisfy (1) and (2) of Theorem~\ref{thm:hb-complex} b
 \end{lembox}
 
 \begin{proof}
-(Not covered in lecture.) (1) with $a = 0$ gives $p(0) = 0$, and with $a = -1$ gives $p(-x) = p(x)$. By (2), $0 = p(x + (-x)) \le p(x) + p(-x) = 2p(x)$. Restricting (1) to real $a \ge 0$ gives positive homogeneity, and (2) is subadditivity.
+(Not covered in lecture.) (a) By (1) with $a = 0$, $p(0) = p(0 \cdot x) = 0 \cdot p(x) = 0$. (b) By (1) with $a = -1$, $p(-x) = |-1|\,p(x) = p(x)$. (c) By (a), (2) and (b), $0 = p(0) = p(x + (-x)) \le p(x) + p(-x) = 2p(x)$, so $p(x) \ge 0$. (d) Restricting (1) to real $a \ge 0$, where $|a| = a$, gives positive homogeneity, and (2) is subadditivity.
 \end{proof}
 
 \begin{rembox}\label{rem:hb-complex}
@@ -1749,7 +1751,7 @@ Now apply the bound from Step 3 to the vector $ax$, then homogeneity (1) of $p$:
 Multiplying $x$ by $a = e^{-i\theta}$ multiplies $L(x)$ by $a$, by complex linearity, rotating it onto the positive real axis. There $L(ax)$ is real, so $L(ax) = U(ax)$, and the real bound $U \le p$ applies.
 
 \begin{rembox}[Why Rotate]\label{rem:why-rotate}
-Step 5 is the only place the complex structure does real work. For an arbitrary $x$, $L(x)$ is complex and the real bound $U \le p$ says nothing about its modulus. The trick is to rotate $x$ by the unimodular scalar $a = e^{-i\theta}$, chosen for this one $x$, so that $L(ax)$ becomes real and non-negative; then the real bound applies to $ax$, and homogeneity of $p$ with $|a| = 1$ undoes the rotation on the right-hand side. The tempting direct route $|L(x)|^2 = U(x)^2 + U(ix)^2 \le p(x)^2 + p(ix)^2 = 2p(x)^2$; this gives only $|L(x)| \le \sqrt{2}\,p(x)$, which is too weak (and even that needs $U \ge -p$, i.e.\ $|U| \le p$, which follows from $U(-x) \le p(-x) = p(x)$). The rotation gets the constant $1$ because it uses the bound once, on a single well-chosen vector, rather than twice.
+Step 5 is the only place the complex structure does real work. For an arbitrary $x$, $L(x)$ is complex and the real bound $U \le p$ says nothing about its modulus. The trick is to rotate $x$ by the unimodular scalar $a = e^{-i\theta}$, chosen for this one $x$, so that $L(ax)$ becomes real and non-negative; then the real bound applies to $ax$, and homogeneity of $p$ with $|a| = 1$ undoes the rotation on the right-hand side. The tempting direct route is $|L(x)|^2 = U(x)^2 + U(ix)^2 \le p(x)^2 + p(ix)^2 = 2p(x)^2$; this gives only $|L(x)| \le \sqrt{2}\,p(x)$, which is too weak (and even that needs $U \ge -p$, i.e.\ $|U| \le p$, which follows from $U(-x) \le p(-x) = p(x)$). The rotation gets the constant $1$ because it uses the bound once, on a single well-chosen vector, rather than twice.
 \end{rembox}
 
 
@@ -1890,6 +1892,7 @@ Let $X$ be a normed linear space. A sequence $\{x_n\}_{n=1}^\infty \subset X$ \t
 \[
 \lim_{n \to \infty} \|x_n - x_0\| = 0.
 \]
+In a metric space $(M, d)$ the same definition is used with $d(x_n, x_0)$ in place of $\|x_n - x_0\|$.
 \end{defbox}
 
 \begin{lembox}[Reverse Triangle Inequality]\boxlabel{lem:reverse-triangle}
@@ -1926,7 +1929,7 @@ Given $\varepsilon > 0$ take $\delta = \varepsilon$. If $\|x - y\| < \delta$ the
 \begin{rembox}[What This Does and Does Not Say]\label{rem:what-this-does-does-not-say}
 The statement is not circular, although it can sound so. It compares two metric spaces: $X$ with $d(x,y) = \|x - y\|$, and $\mathbb{R}$ with $|s - t|$; neither metric is defined in terms of the continuity being asserted. Only subadditivity and homogeneity are used --- positivity is not --- so the same proof shows any seminorm, and any positive homogeneous subadditive $p$ that happens to satisfy $p(-x) = p(x)$, is $1$-Lipschitz (Lemma~\ref{lem:r1-seminorm-reverse-triangle} below).
 
-The question has content whenever a second topology is present. Whether a norm $\|\cdot\|_1$ is continuous with respect to another norm $\|\cdot\|_2$ is settled by Proposition~\ref{prop:norm-cont-other}: exactly when $\|x\|_1 \le C\|x\|_2$ for some constant $C$, which is one half of equivalence of the two norms; on $\mathbb{R}^n$ this always holds, in infinite dimensions it need not. Later in the course $X$ will also carry the weak topology, in which the norm is \emph{not} continuous. (Not covered in lecture.)
+The question has content whenever a second topology is present. Whether a norm $\|\cdot\|_1$ is continuous with respect to another norm $\|\cdot\|_2$ is settled by Proposition~\ref{prop:norm-cont-other}: exactly when $\|x\|_1 \le C\|x\|_2$ for some constant $C$, which is one half of equivalence of the two norms; on $\mathbb{R}^n$ this always holds, in infinite dimensions it need not. Later in the course $X$ will also carry the weak topology, in which (for infinite-dimensional $X$) the norm is \emph{not} continuous. (Not covered in lecture.)
 \end{rembox}
 
 \begin{lembox}[Reverse Triangle Inequality for Seminorms]\boxlabel{lem:r1-seminorm-reverse-triangle}
@@ -1944,10 +1947,11 @@ The question has content whenever a second topology is present. Whether a norm $
 \end{proof}
 
 \begin{defbox}[Cauchy Sequence]\boxlabel{def:cauchy-sequence}
-A sequence $\{x_n\} \subset X$ is \textbf{Cauchy} if for every $\varepsilon > 0$ there is $N = N(\varepsilon) \in \mathbb{N}$ such that
+A sequence $\{x_n\}$ in a normed linear space $X$ is \textbf{Cauchy} if for every $\varepsilon > 0$ there is $N = N(\varepsilon) \in \mathbb{N}$ such that
 \[
 \|x_m - x_k\| < \varepsilon \qquad \text{for all } m, k \ge N.
 \]
+In a metric space $(M, d)$ the condition reads $d(x_m, x_k) < \varepsilon$ for all $m, k \ge N$.
 \end{defbox}
 
 \begin{propbox}[Limits are Unique; Convergent Sequences are Cauchy]\boxlabel{prop:conv-basic}
@@ -2025,11 +2029,11 @@ The \textbf{closed linear span} of a subset $S$ of a normed linear space $X$ is 
 \end{defbox}
 
 \begin{defbox}[Open Ball]\boxlabel{def:open-ball}
-For $x_0 \in X$ and $r > 0$, the \textbf{open ball} of radius $r$ about $x_0$ is $B_r(x_0) = \{ x \in X : \|x - x_0\| < r \}$.
+Let $X$ be a normed linear space. For $x_0 \in X$ and $r > 0$, the \textbf{open ball} of radius $r$ about $x_0$ is $B_r(x_0) = \{ x \in X : \|x - x_0\| < r \}$.
 \end{defbox}
 
 \begin{defbox}[Metric Interior Point]\boxlabel{def:metric-interior}
-A point $x_0$ of a subset $K \subset X$ is a \textbf{metric interior point} of $K$ if $B_r(x_0) \subset K$ for some $r > 0$ (Definition~\ref{def:open-ball}).
+A point $x_0$ of a subset $K$ of a normed linear space $X$ is a \textbf{metric interior point} of $K$ if $B_r(x_0) \subset K$ for some $r > 0$ (Definition~\ref{def:open-ball}).
 \end{defbox}
 
 \begin{propbox}[Metric Interior Points are Interior Points]\boxlabel{prop:metric-interior}
@@ -2177,7 +2181,7 @@ Two Cauchy sequences $\{x_n\}, \{y_n\}$ in a metric space $(M, d)$ are \textbf{e
 \]
 \end{defbox}
 
-Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit in $M$: both terms lie in $M$. The relation says the two sequences are heading for the same place. If one of them converges in $M$, so does the other, to the same limit.
+Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit in $M$: both terms lie in $M$. The relation says the two sequences are heading for the same place. If one of them converges in $M$, so does the other, to the same limit. The relation $\sim$ is an equivalence relation: $d(x_n, x_n) = 0$ gives reflexivity, $d(x_n, y_n) = d(y_n, x_n)$ gives symmetry, and $d(x_n, z_n) \le d(x_n, y_n) + d(y_n, z_n)$ gives transitivity.
 
 \begin{defbox}[Completion]\boxlabel{def:completion}
 The \textbf{completion} $\overline{M}$ of a metric space $M$ is the set of equivalence classes of Cauchy sequences in $M$ under $\sim$:
@@ -2392,7 +2396,7 @@ Let $(X, \|\cdot\|_X)$ be a normed linear space, $(Z, \|\cdot\|_Z)$ a Banach spa
 \[
 \Phi : \overline{X} \to Z, \qquad \Phi\bigl([\{x_n\}]\bigr) = \lim_{n \to \infty} J x_n,
 \]
-is an isometric isomorphism of $\overline{X}$ onto $Z$, and it sends the class of the constant sequence $(x, x, \ldots)$ to $Jx$. In particular, if $X \subset Z$ is a dense linear subspace carrying the restricted norm ($J$ the inclusion), then $\overline{X}$ is isometrically isomorphic to $Z$ by an isomorphism that is the identity on $X$.
+is an isometric isomorphism of $\overline{X}$ onto $Z$ (a linear bijection with $\|\Phi(\xi)\|_Z = \|\xi\|$ for all $\xi \in \overline{X}$), and it sends the class of the constant sequence $(x, x, \ldots)$ to $Jx$. In particular, if $X \subset Z$ is a dense linear subspace carrying the restricted norm ($J$ the inclusion), then $\overline{X}$ is isometrically isomorphic to $Z$ by an isomorphism that is the identity on $X$.
 \end{propbox}
 
 \begin{proof}
@@ -2624,7 +2628,7 @@ Let $X$ be a finite-dimensional linear space over $\mathbb{F}$. Any two norms on
 \end{thmbox}
 
 \begin{proof}
-(HW2, Problem 2(a).) Since $X$ is finite dimensional, it has a basis $\{e_1, \ldots, e_n\}$, and every $x \in X$ can be written uniquely as $x = \sum_{i=1}^n a_i e_i$ with $a_i \in \mathbb{F}$. Two norms $\|\cdot\|_a$ and $\|\cdot\|_b$ on $X$ are equivalent, written $\|\cdot\|_a \sim \|\cdot\|_b$, if there are constants $c, C > 0$ with $c\,\|x\|_a \le \|x\|_b \le C\,\|x\|_a$ for all $x$.
+(HW2, Problem 2(a).) If $X = \{0\}$ every norm is identically $0$ and there is nothing to prove; assume $n = \dim X \ge 1$. Since $X$ is finite dimensional, it has a basis $\{e_1, \ldots, e_n\}$, and every $x \in X$ can be written uniquely as $x = \sum_{i=1}^n a_i e_i$ with $a_i \in \mathbb{F}$. Two norms $\|\cdot\|_a$ and $\|\cdot\|_b$ on $X$ are equivalent, written $\|\cdot\|_a \sim \|\cdot\|_b$, if there are constants $c, C > 0$ with $c\,\|x\|_a \le \|x\|_b \le C\,\|x\|_a$ for all $x$.
 
 \textbf{Step 1: equivalence of norms is an equivalence relation.} \emph{Reflexivity:} $1 \cdot \|x\|_a \le \|x\|_a \le 1 \cdot \|x\|_a$. \emph{Symmetry:} suppose $c_1\|x\|_a \le \|x\|_b \le c_2\|x\|_a$ for all $x$, with $c_1, c_2 > 0$. Dividing the right-hand inequality by $c_2$ gives $\frac{1}{c_2}\|x\|_b \le \|x\|_a$, and dividing the left-hand one by $c_1$ gives $\|x\|_a \le \frac{1}{c_1}\|x\|_b$; hence $\frac{1}{c_2}\|x\|_b \le \|x\|_a \le \frac{1}{c_1}\|x\|_b$. \emph{Transitivity:} if $c_1\|x\|_a \le \|x\|_b \le c_2\|x\|_a$ and $d_1\|x\|_b \le \|x\|_c \le d_2\|x\|_b$ for all $x$, with all four constants positive, then
 \[
@@ -2783,7 +2787,7 @@ $\|[x]\|$ is well defined: the set $\{\|x'\| : x' \in [x]\}$ is nonempty and bou
 \[
 \|[a x_0]\| = \inf_{y' \in Y} \|a(x_0 + y')\| = \inf_{y' \in Y} |a|\,\|x_0 + y'\| = |a| \inf_{y' \in Y} \|x_0 + y'\| = |a|\, \|[x_0]\|.
 \]
-(Left to us in lecture.)
+(Left as an exercise in lecture.)
 
 \textbf{Subadditivity.} Let $[x], [y] \in X/Y$; we show $\|[x + y]\| \le \|[x]\| + \|[y]\|$. Fix $\varepsilon > 0$. Since $\|[x]\|$ is the greatest lower bound of $\{\|x'\| : x' \in [x]\}$, the number $\|[x]\| + \varepsilon$ is not a lower bound, so there is $x_0 \in [x]$ with
 \[
@@ -2889,7 +2893,7 @@ and since $\ln$ turns products into sums, the left side is $(1 - \theta) \ln a +
 \[
 (1 - \theta) \ln a + \theta \ln b \le \ln\bigl((1 - \theta) a + \theta b\bigr),
 \]
-which is concavity of $\ln$: the chord joining $(a, \ln a)$ and $(b, \ln b)$ lies below the graph. The point on the chord above $(1-\theta)a + \theta b$ has height $(1-\theta)\ln a + \theta \ln b$ by linearity of the chord, and the graph point above it has height $\ln\bigl((1-\theta)a + \theta b\bigr)$. (Concavity of $\ln$: $(\ln t)'' = -1/t^2 < 0$; see the MATH 551 notes for the chord characterization.)
+which is concavity of $\ln$: the chord joining $(a, \ln a)$ and $(b, \ln b)$ lies below the graph. The point on the chord above $(1-\theta)a + \theta b$ has height $(1-\theta)\ln a + \theta \ln b$ by linearity of the chord, and the graph point above it has height $\ln\bigl((1-\theta)a + \theta b\bigr)$. (Proof of this inequality: put $c = (1-\theta)a + \theta b > 0$. For every $s > 0$, $\ln s \le s - 1$, because $s - 1 - \ln s$ has derivative $1 - 1/s$, which is negative on $(0,1)$ and positive on $(1,\infty)$, so its minimum is its value $0$ at $s = 1$. With $s = t/c$ this gives $\ln t \le \ln c + (t - c)/c$ for all $t > 0$. Apply it at $t = a$ and at $t = b$, multiply by $1-\theta$ and $\theta$, and add: $(1-\theta)\ln a + \theta\ln b \le \ln c + \bigl((1-\theta)a + \theta b - c\bigr)/c = \ln c$.)
 \end{proof}
 
 \begin{center}
@@ -3058,7 +3062,7 @@ using $(p-1)q = p$ from \eqref{eq:mink-exp}. The same computation gives $\mathrm
 \[
 a^{(n)} = (a_1, \ldots, a_n, 0, 0, \ldots), \qquad b^{(n)} = (b_1, \ldots, b_n, 0, 0, \ldots).
 \]
-These are finitely supported, so all norms involved are finite sums, and Steps 1--3 apply to them:
+These are finitely supported, so all norms involved are finite sums, and Steps 1--3 apply to them (this special case is recorded as Lemma~\ref{lem:minkowski-finite} below):
 \[
 \Bigl( \sum_{i=1}^{n} |a_i + b_i|^p \Bigr)^{1/p} = \|a^{(n)} + b^{(n)}\|_p \le \|a^{(n)}\|_p + \|b^{(n)}\|_p \le \|a\|_p + \|b\|_p,
 \]
@@ -3187,7 +3191,7 @@ Let $\{a^{(n)}\}_{n \ge 1}$ be Cauchy in $\ell^p$: for every $\varepsilon > 0$ t
 \[
 a^{(n,k)} = \bigl( a^{(n)}_1, \ldots, a^{(n)}_k \bigr) \in \mathbb{F}^k,
 \]
-and give $\mathbb{F}^k$ the norm $\|(c_1, \ldots, c_k)\|_p = \bigl( \sum_{i=1}^k |c_i|^p \bigr)^{1/p}$. Fix $k$. A partial sum of non-negative terms is at most the full sum, so
+and give $\mathbb{F}^k$ the norm $\|(c_1, \ldots, c_k)\|_p = \bigl( \sum_{i=1}^k |c_i|^p \bigr)^{1/p}$ (a norm: it is the norm of Proposition~\ref{prop:lp-normed} evaluated on the sequence $(c_1, \ldots, c_k, 0, 0, \ldots)$). Fix $k$. A partial sum of non-negative terms is at most the full sum, so
 \[
 \bigl\| a^{(n,k)} - a^{(m,k)} \bigr\|_p = \Bigl( \sum_{i=1}^{k} \bigl| a^{(n)}_i - a^{(m)}_i \bigr|^p \Bigr)^{1/p} \le \bigl\| a^{(n)} - a^{(m)} \bigr\|_p \xrightarrow[n, m \to \infty]{} 0 .
 \]
@@ -3362,7 +3366,7 @@ $C(\Omega)$ is not dense in $L^\infty(\Omega)$.
 \end{propbox}
 
 \begin{proof}
-Take $\Omega = [0,1]$ and the step function $f = \chi_{[1/2, 1]}$, i.e.\ $f(x) = 0$ for $x < 1/2$ and $f(x) = 1$ for $x \ge 1/2$; $f$ is bounded, so $f \in L^\infty[0,1]$. We claim $\|f - g\|_{L^\infty} \ge 1/2$ for every $g \in C[0,1]$, so no sequence of continuous functions converges to $f$ in $L^\infty$. Suppose instead $\|f - g\|_{L^\infty} = \sup_x |f(x) - g(x)| < 1/2$ for some continuous $g$. Then for $x < 1/2$, $|g(x)| = |f(x) - g(x)| < 1/2$, and for $x \ge 1/2$, $|g(x) - 1| < 1/2$, so $g(x) > 1/2$. By continuity of $g$ at $1/2$, $g(1/2) = \lim_{x \to 1/2^-} g(x) \le 1/2$, while $g(1/2) > 1/2$ from the second condition: a contradiction. (With the Lebesgue definition of $L^\infty$ the same argument works after replacing ``for all $x$'' by ``for almost every $x$'' and using that a continuous function satisfying a strict inequality almost everywhere on an interval satisfies the non-strict one everywhere on it.)
+Take $\Omega = [0,1]$ and the step function $f = \chi_{[1/2, 1]}$, i.e.\ $f(x) = 0$ for $x < 1/2$ and $f(x) = 1$ for $x \ge 1/2$; $f$ is bounded, so $f \in L^\infty[0,1]$. We claim $\|f - g\|_{L^\infty} \ge 1/2$ for every $g \in C[0,1]$, so no sequence of continuous functions converges to $f$ in $L^\infty$. Suppose instead $\|f - g\|_{L^\infty} = \sup_x |f(x) - g(x)| < 1/2$ for some continuous $g$. Then for $x < 1/2$, $|g(x)| = |f(x) - g(x)| < 1/2$, and for $x \ge 1/2$, $|g(x) - 1| < 1/2$, so $|g(x)| \ge 1 - |g(x) - 1| > 1/2$. By continuity of $g$ at $1/2$, $|g(1/2)| = \lim_{x \to 1/2^-} |g(x)| \le 1/2$, while $|g(1/2)| > 1/2$ from the second condition: a contradiction. (With the Lebesgue definition of $L^\infty$ the same argument works after replacing ``for all $x$'' by ``for almost every $x$'' and using that a continuous function satisfying a strict inequality almost everywhere on an interval satisfies the non-strict one everywhere on it.)
 
 Alternatively: $C[0,1]$ with the supremum norm is complete (Theorem~\ref{thm:Cab-banach}), hence a closed subspace of $L^\infty[0,1]$ (Lemma~\ref{lem:complete-closed}), and a closed proper subspace is not dense; $f$ above shows the inclusion is proper.
 \end{proof}
@@ -3758,7 +3762,7 @@ What has no sequence counterpart is density (Theorem~\ref{thm:density}), and wit
 
 \chapter{Inner Product Spaces}
 
-A norm measures length. An inner product measures length \emph{and} angle, and in particular gives a meaning to perpendicularity --- the structure whose absence forced the quotient space to stand in for the orthogonal complement in \S\ref{subsec:quotient} and forced Riesz's lemma to stand in for an orthogonal unit vector in \ref{sec:noncompact}. Spaces carrying one are much closer to $\mathbb{R}^n$ than a general normed space is, and are the setting for the strongest results of the subject.
+A norm measures length. An inner product measures length \emph{and} angle, and in particular gives a meaning to perpendicularity --- the structure whose absence forced the quotient space to stand in for the orthogonal complement in \S\ref{subsec:quotient} and forced Riesz's lemma to stand in for an orthogonal unit vector in \S\ref{sec:noncompact}. Spaces carrying one are much closer to $\mathbb{R}^n$ than a general normed space is, and are the setting for the strongest results of the subject.
 
 \section{Definition and Examples}\label{sec:inner-def}
 
@@ -3947,7 +3951,7 @@ An inner product space that is complete in the induced norm $\|x\| = (x,x)^{1/2}
 \end{defbox}
 
 \begin{exbox}[Hilbert Spaces]\boxlabel{ex:hilbert-spaces}
-$\mathbb{R}^n$ and $\mathbb{C}^n$ with the dot product are Hilbert spaces, being finite-dimensional (Corollary~\ref{cor:findim-complete}); so are $\ell^2$ and $L^2(\Omega)$ with the inner products of \ref{sec:inner-def}, complete by Theorems~\ref{thm:lp-complete} and~\ref{thm:Lp-complete}.
+$\mathbb{R}^n$ and $\mathbb{C}^n$ with the dot product are Hilbert spaces, being finite-dimensional (Corollary~\ref{cor:findim-complete}); so are $\ell^2$ and $L^2(\Omega)$ with the inner products of \S\ref{sec:inner-def}, complete by Theorems~\ref{thm:lp-complete} and~\ref{thm:Lp-complete}.
 \end{exbox}
 
 % Lecture 7 (2026-09-22)
@@ -3969,7 +3973,7 @@ which makes sense for every $\alpha$ because $f$ is $C^\infty$, and is again in 
 \[
 (f, g) = \sum_{|\alpha| \le k} \int_\Omega \partial^\alpha f(x)\, \overline{\partial^\alpha g(x)}\,dx .
 \]
-Each summand is the $L^2$ inner product of two functions in $C_c^\infty$, so this is an inner product on $X$ (a finite sum of inner products with the same sesquilinearity and symmetry; positivity from the $\alpha = 0$ term). The induced norm is $\|f\|^2 = \sum_{|\alpha| \le k} \|\partial^\alpha f\|_{L^2}^2$, which controls $f$ and all its derivatives up to order $k$ in $L^2$. For $k = 0$ this is the previous example. $X$ is not complete; its completion is a \textbf{Sobolev space}, denoted $H^k_0(\Omega)$, the subscript recording that it comes from functions with compact support in $\Omega$. Lax (\S5.1, example (g)) instead completes the $C^\infty$ functions on $\Omega$ for which the norm is finite, with no support condition, and calls the result $W^{k,p}$; for $p = 2$ it is written $H^k(\Omega)$. Informally, elements of either completion are functions whose derivatives up to order $k$ lie in $L^2$; making this precise requires weak derivatives, which are developed in \ref{sec:sobolev} (Lecture 11).
+Each summand is the $L^2$ inner product of two functions in $C_c^\infty$, so this is an inner product on $X$ (a finite sum of inner products with the same sesquilinearity and symmetry; positivity from the $\alpha = 0$ term). The induced norm is $\|f\|^2 = \sum_{|\alpha| \le k} \|\partial^\alpha f\|_{L^2}^2$, which controls $f$ and all its derivatives up to order $k$ in $L^2$. For $k = 0$ and $\Omega = \mathbb{R}^n$ this is the previous example with $C_c^\infty$ in place of $C_c$. $X$ is not complete; its completion is a \textbf{Sobolev space}, denoted $H^k_0(\Omega)$, the subscript recording that it comes from functions with compact support in $\Omega$. Lax (\S5.1, example (g)) instead completes the $C^\infty$ functions on $\Omega$ for which the norm is finite, with no support condition, and calls the result $W^{k,p}$; for $p = 2$ it is written $H^k(\Omega)$. Informally, elements of either completion are functions whose derivatives up to order $k$ lie in $L^2$; making this precise requires weak derivatives, which are developed in \S\ref{sec:sobolev} (Lecture 11).
 
 Motivation: if $f$ is a velocity, $\int |f|^2$ is an energy, and a physical process with finite, conserved energy naturally lives in a space of this type; the completion is what makes limits of approximate solutions available. This is the setting of the modern theory of partial differential equations, but the course stays with functional analysis.
 \laxref{\S5.1, example (g)}
@@ -4349,13 +4353,13 @@ Let $H$ be a Hilbert space and $Y \subset H$ a closed linear subspace. Then
 \end{center}
 
 \begin{proof}
-\textbf{(1), existence.} Since $Y$ is a linear subspace it is convex, and it is closed by hypothesis. By Theorem~\ref{thm:projection} there is a unique $y_0 \in Y$ with $\|x_0 - y_0\| = \operatorname{dist}(x_0, Y)$. Put $v = x_0 - y_0$, so $x_0 = y_0 + v$. It remains to show $v \in Y^\perp$, i.e.\ $(v, y) = 0$ for every $y \in Y$.
+\textbf{(1), existence.} Let $x_0 \in H$. Since $Y$ is a linear subspace it is nonempty ($0 \in Y$) and convex, and it is closed by hypothesis. By Theorem~\ref{thm:projection} there is a unique $y_0 \in Y$ with $\|x_0 - y_0\| = \operatorname{dist}(x_0, Y)$. Put $v = x_0 - y_0$, so $x_0 = y_0 + v$. It remains to show $v \in Y^\perp$, i.e.\ $(v, y) = 0$ for every $y \in Y$.
 
 \emph{Perturbing the minimizer.} Fix $y \in Y$ and $t \in \mathbb{F}$. Since $y_0 + ty \in Y$ (a subspace), the minimality of $y_0$ gives
 \[
 \|v\|^2 = \|x_0 - y_0\|^2 \le \|x_0 - (y_0 + ty)\|^2 = \|v - ty\|^2 .
 \]
-Expanding the right side by \eqref{eq:cs-expand} with $-t$ in place of $t$,
+Expanding the right side by \eqref{eq:cs-expand} with $v$, $-t$ in place of $x$, $t$, and using $\operatorname{Re}\bigl( t\,(y, v) \bigr) = \operatorname{Re}\bigl( \bar{t}\,(v, y) \bigr)$ (the two numbers are conjugate),
 \[
 \|v - ty\|^2 = \|v\|^2 - 2\operatorname{Re}\bigl( \bar{t}\,(v, y) \bigr) + |t|^2\|y\|^2 ,
 \]
@@ -4380,7 +4384,7 @@ using $y \perp v$. But $(x, v) = 0$, because $x \in (Y^\perp)^\perp$ and $v \in 
 \end{proof}
 
 \begin{rembox}[The Promise of Lecture 1 is Kept]\label{rem:promise-lecture-1-kept}
-Corollary~\ref{cor:orth} (Lecture 1) said: \emph{if} $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in \S\ref{subsec:quotient} suggested; the remark following Corollary~\ref{cor:orth} identified exactly this theorem as the missing piece. The hypotheses are sharp: for the subspace $c_{00} \subset \ell^2$, which is not closed, both (1) and (2) fail (Example~\ref{ex:c00-in-l2-orth-decomp-fails}). For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem~\ref{thm:double-perp}).
+Corollary~\ref{cor:orth} (HW1; the statement was suggested in Lecture 1) said: \emph{if} $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in \S\ref{subsec:quotient} suggested; the remark following Corollary~\ref{cor:orth} identified exactly this theorem as the missing piece. The hypotheses are sharp: for the subspace $c_{00} \subset \ell^2$, which is not closed, both (1) and (2) fail (Example~\ref{ex:c00-in-l2-orth-decomp-fails}). For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem~\ref{thm:double-perp}).
 \end{rembox}
 
 \begin{exbox}[The Non-Closed Subspace $c_{00}$ of $\ell^2$]\boxlabel{ex:c00-in-l2-orth-decomp-fails}
@@ -5169,7 +5173,7 @@ A Hilbert space $H$ has a countable orthonormal basis if and only if it is separ
 \end{thmbox}
 
 \begin{proof}[Proof of ($\Rightarrow$)]
-Assume $H$ has a countable orthonormal basis $\{e_1, e_2, \ldots\}$ (finite or infinite). Then $H = \overline{\operatorname{span}}\{e_1, e_2, \ldots\}$: every $x \in H$ is $x = \sum_j (x, e_j)\, e_j$ (Theorem~\ref{thm:onbasis-equiv}), a finite sum if the basis is finite and a limit of partial sums otherwise. Let
+Assume $H$ has a countable orthonormal basis $\{e_1, e_2, \ldots\}$ (finite or infinite). Then $H = \overline{\operatorname{span}}\{e_1, e_2, \ldots\}$: every $x \in H$ is $x = \sum_j (x, e_j)\, e_j$ (Definition~\ref{def:onbasis}), a finite sum if the basis is finite and a limit of partial sums otherwise. Let $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q}$ if $\mathbb{F} = \mathbb{R}$ and $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q} + i\mathbb{Q}$ if $\mathbb{F} = \mathbb{C}$, a countable dense subset of $\mathbb{F}$, and let
 \[
 D = \bigcup_{n} \Bigl\{ \sum_{j=1}^n a_j e_j : a_j \in \mathbb{Q}_{\mathbb{F}} \Bigr\},
 \]
@@ -5243,7 +5247,7 @@ Every separable Hilbert space $H$ over $\mathbb{F}$ is isomorphic either to $\ma
 \end{thmbox}
 
 \begin{proof}
-(HW5, Problem 2, for infinite-dimensional $H$; the finite-dimensional case is Claude's.) By Theorem~\ref{thm:sep-countable-onb}, $H$ has a countable orthonormal basis.
+(HW5, Problem 2, for infinite-dimensional $H$; the finite-dimensional case is added, not from lecture or homework.) By Theorem~\ref{thm:sep-countable-onb}, $H$ has a countable orthonormal basis.
 
 \textbf{Step 1: the size of the basis.} If the basis is finite, $\{e_1, \ldots, e_n\}$ ($n = 0$ meaning the empty set, $H = \{0\}$), every $x = \sum_{j=1}^n (x, e_j)\, e_j$ lies in $\operatorname{span}\{e_1, \ldots, e_n\}$. If $H$ is infinite-dimensional, the basis is therefore infinite, and we index it as $\{e_j\}_{j \in \mathbb{N}}$. Let $\mathcal{M}$ denote $\mathbb{F}^n$ in the finite case and $\ell^2$ in the infinite case, with $(a, b) = \sum_j a_j \overline{b_j}$.
 
@@ -5283,15 +5287,15 @@ The theorem was stated in lecture for the real case: $H$ is isomorphic either to
 
 \subsection{$\mathbb{R}^n$ and $\mathbb{C}^n$}
 
-The dot product is the model inner product, with the conjugate on the second slot over $\mathbb{C}$ (Example~\ref{ex:euclidean-spaces}). Being finite-dimensional, $\mathbb{R}^n$ and $\mathbb{C}^n$ are Hilbert spaces (Example~\ref{ex:hilbert-spaces}), and for $n \ge 2$ the norm $\|\cdot\|_p$ comes from an inner product only for $p = 2$ (Corollary~\ref{cor:only-p2}). In $\mathbb{R}^n$ a complete orthonormal set is a basis (Remark~\ref{rem:onb}); \ref{sec:onb} asks what replaces this in a Hilbert space.
+The dot product is the model inner product, with the conjugate on the second slot over $\mathbb{C}$ (Example~\ref{ex:euclidean-spaces}). Being finite-dimensional, $\mathbb{R}^n$ and $\mathbb{C}^n$ are Hilbert spaces (Example~\ref{ex:hilbert-spaces}), and for $n \ge 2$ the norm $\|\cdot\|_p$ comes from an inner product only for $p = 2$ (Corollary~\ref{cor:only-p2}). In $\mathbb{R}^n$ a complete orthonormal set is a basis (Remark~\ref{rem:onb}); \S\ref{sec:onb} asks what replaces this in a Hilbert space.
 
-\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\S\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\S\ref{sec:rev-ch6}) $\rightarrow$
 
 \subsection{$C[a,b]$ and $C^2[a,b]$}
 
 The $L^2$ inner product restricted to $C[a,b]$ proves a sharp integral inequality for $C^2$ functions by Cauchy--Schwarz (Proposition~\ref{prop:sharp-integral}); Remark~\ref{rem:where-g-comes} finds the test function by orthogonal projection onto $\operatorname{span}\{1, x\}$.
 
-\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\S\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\S\ref{sec:rev-ch6}) $\rightarrow$
 
 \subsection{$\ell^p$, $\ell^2$, $\ell^\infty$ and $c_0$}
 
@@ -5399,7 +5403,7 @@ $\ell^\infty$ is not separable.
 
 The shift on $\ell^2$ preserves the inner product without being onto (Example~\ref{ex:isometry-not-isomorphism}), and every infinite-dimensional separable Hilbert space is isomorphic to $\ell^2$ (Theorem~\ref{thm:sep-classification}).
 
-\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\S\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\S\ref{sec:rev-ch6}) $\rightarrow$
 
 \subsection{$L^p$ and $L^2$}
 
@@ -5461,7 +5465,7 @@ If $E \subset \mathbb{R}^n$ is measurable with $m(E) > 0$, then $L^\infty(E)$ is
 \end{propbox}
 
 \begin{proof}
-(Stated in lecture without proof. HW5, Problem 1(b) is the case $E = [0,1]$; the general case below is Claude's.) Here $\|f\|_\infty = \inf\{M \ge 0 : |f| \le M \text{ a.e.}\}$, functions equal almost everywhere being identified.
+(Stated in lecture without proof. HW5, Problem 1(b) is the case $E = [0,1]$; the general case below is added, not from lecture or homework.) Here $\|f\|_\infty = \inf\{M \ge 0 : |f| \le M \text{ a.e.}\}$, functions equal almost everywhere being identified.
 
 \textbf{Step 1: the case $E = [0,1]$ (HW5).} For $t \in (0,1]$ let $f_t = \chi_{[0,t]}$. Let $0 < s < t \le 1$. Then $|f_t - f_s| = \chi_{(s,t]}$, which is at most $1$ everywhere, so $\|f_t - f_s\|_\infty \le 1$. It equals $1$ on $(s,t]$, a set of measure $t - s > 0$; so for any $M < 1$ the inequality $|f_t - f_s| \le M$ fails on a set of positive measure, and $\|f_t - f_s\|_\infty \ge 1$. Hence $\|f_t - f_s\|_\infty = 1$ for $s \neq t$.
 
@@ -5510,19 +5514,19 @@ The hypothesis $m(E) > 0$ is added here; without it the proposition fails (Examp
 Let $E \subset \mathbb{R}^n$ be measurable with $m(E) = 0$, and identify functions equal almost everywhere, as in the proof of Proposition~\ref{prop:Linfty-nonsep}. Then $L^\infty(E) = \{0\}$, which is separable. Indeed, for every measurable $f$ on $E$ the set $\{x \in E : f(x) \neq 0\}$ is contained in $E$, a set of measure zero, so $f = 0$ almost everywhere and its class is $0$. The countable set $\{0\}$ is then dense in $L^\infty(E) = \{0\}$.
 \end{exbox}
 
-\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\S\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\S\ref{sec:rev-ch6}) $\rightarrow$
 
 \subsection{Even and Odd Functions}
 
 In $L^2[-1,1]$ the even and the odd functions are closed subspaces, each the orthogonal complement of the other, and $f = f_e + f_o$ is the orthogonal decomposition (Proposition~\ref{prop:even-odd}).
 
-\noindent\textit{Chain:} Chapter~7, parity (Example~\ref{ex:parity}) $\rightarrow$
+\noindent\textit{Chain:} Chapter~\ref{ch:qm}, parity (Example~\ref{ex:parity}) $\rightarrow$
 
 \subsection{The Fourier Basis}
 
 The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of $L^2[0,2\pi]$ (Theorem~\ref{thm:fourier}). Read through Theorem~\ref{thm:onbasis-equiv}, this is the $L^2$ theory of Fourier series (Corollary~\ref{cor:fourier-series-L2}), and taking coefficients identifies $L^2[0,2\pi]$ with $\ell^2(\mathbb{Z})$ (Remark~\ref{rem:onb-11}).
 
-\noindent\textit{Chain:} Chapter~6, the Fourier transform (Example~\ref{ex:fourier-L1}, \ref{sec:rev-ch6}) $\cdot$ Chapter~7, a particle on a ring (Example~\ref{ex:particle-ring}) $\rightarrow$
+\noindent\textit{Chain:} Chapter~6, the Fourier transform (Example~\ref{ex:fourier-L1}, \S\ref{sec:rev-ch6}) $\cdot$ Chapter~\ref{ch:qm}, a particle on a ring (Example~\ref{ex:particle-ring}) $\rightarrow$
 
 
 % ============================================================================
@@ -5685,7 +5689,7 @@ Let $\Omega \subset \mathbb{R}^n$ be bounded and open and $m \ge 0$. Then $C^m(\
 
 \begin{proof}
 %% FILL-IN: stated in lecture without proof; the proof is written out here.
-\textit{(Not from lecture; filled in. Completeness was stated in lecture without proof.)} Identify each $\partial^\alpha f$ with its continuous extension to $\overline{\Omega}$, which is unique because $\Omega$ is dense in $\overline{\Omega}$, and write $\|g\|_\infty = \max_{\overline{\Omega}} |g|$.
+\textit{(Not from lecture; filled in. Completeness was stated in lecture without proof.)} Identify each $\partial^\alpha f$ with its continuous extension to $\overline{\Omega}$, which is unique because $\Omega$ is dense in $\overline{\Omega}$, and write $\|g\|_\infty = \max_{\overline{\Omega}} |g|$. For complex-valued functions, Step 2 below is applied to real and imaginary parts.
 
 \textbf{Step 1: limits of the derivatives.} Let $\{f_k\}$ be Cauchy in $C^m(\overline{\Omega})$. For each $|\alpha| \le m$, $\|\partial^\alpha f_k - \partial^\alpha f_j\|_\infty \le \|f_k - f_j\|_{C^m(\overline{\Omega})}$, so $\{\partial^\alpha f_k\}_k$ is Cauchy in $(C(\overline{\Omega}), \|\cdot\|_\infty)$. This space is complete: $\overline{\Omega}$ is compact (closed and bounded), and the proof of Theorem~\ref{thm:Cab-banach} carries over with $[a,b]$ replaced by $\overline{\Omega}$. So $\partial^\alpha f_k \to g_\alpha$ uniformly on $\overline{\Omega}$, for some $g_\alpha \in C(\overline{\Omega})$.
 
@@ -5701,7 +5705,7 @@ As $k \to \infty$ the left side tends to $h(x + t e_i) - h(x)$, and the right si
 \end{proof}
 
 \begin{propbox}[{{Differentiation is Unbounded in the Maximum Norm}}]\boxlabel{prop:diff-unbounded}
-Give $C^\infty(\overline{\Omega})$ the norm $\|f\| = \max_{x \in \overline{\Omega}} |f(x)|$ (a norm under which $C^\infty(\overline{\Omega})$ is not complete). Then $Tf = \partial_{x_1} f$ is a linear map $C^\infty(\overline{\Omega}) \to C^\infty(\overline{\Omega})$ that is \emph{not} bounded: there is no $M$ with $\max_{\overline{\Omega}} |\partial_{x_1} f| \le M \max_{\overline{\Omega}} |f|$ for all $f$.
+Let $\Omega \subset \mathbb{R}^n$ be bounded, open and nonempty, and let $C^\infty(\overline{\Omega}) = \bigcap_{m \ge 0} C^m(\overline{\Omega})$, with $C^m(\overline{\Omega})$ as in Example~\ref{ex:diff-bounded}. Give $C^\infty(\overline{\Omega})$ the norm $\|f\| = \max_{x \in \overline{\Omega}} |f(x)|$ (a norm under which $C^\infty(\overline{\Omega})$ is not complete). Then $Tf = \partial_{x_1} f$ is a linear map $C^\infty(\overline{\Omega}) \to C^\infty(\overline{\Omega})$ that is \emph{not} bounded: there is no $M$ with $\max_{\overline{\Omega}} |\partial_{x_1} f| \le M \max_{\overline{\Omega}} |f|$ for all $f$.
 \end{propbox}
 
 \begin{proof}
@@ -5798,7 +5802,7 @@ We may assume $X \neq \{0\}$; otherwise $\mathcal{L}(X, Y) = \{0\}$.
 
 \emph{Positivity.} $\|T\| \ge 0$ as a supremum of non-negative numbers. If $\|T\| = 0$, then by Proposition~\ref{prop:op-norm}(b), $\|Tx\|_Y \le 0$ for all $x$, so $Tx = 0$ for all $x$ and $T$ is the zero map; conversely the zero map has norm $0$.
 
-\emph{Homogeneity.} (Left to us in lecture.) By Proposition~\ref{prop:op-norm}(a), $\|aT\| = \sup_{\|x\|_X = 1} \|a\, Tx\|_Y = \sup_{\|x\|_X = 1} |a|\,\|Tx\|_Y = |a| \sup_{\|x\|_X = 1} \|Tx\|_Y = |a|\,\|T\|$, since multiplying a set of non-negative numbers by $|a| \ge 0$ multiplies its supremum by $|a|$.
+\emph{Homogeneity.} (Left as an exercise in lecture.) By Proposition~\ref{prop:op-norm}(a), $\|aT\| = \sup_{\|x\|_X = 1} \|a\, Tx\|_Y = \sup_{\|x\|_X = 1} |a|\,\|Tx\|_Y = |a| \sup_{\|x\|_X = 1} \|Tx\|_Y = |a|\,\|T\|$, since multiplying a set of non-negative numbers by $|a| \ge 0$ multiplies its supremum by $|a|$.
 
 \emph{Subadditivity.} By Proposition~\ref{prop:op-norm}(a),
 \begin{align*}
@@ -5930,7 +5934,7 @@ Let $1 \le p < \infty$ and $\frac1p + \frac{1}{p'} = 1$. Then $(L^p)' = L^{p'}$:
 
 \begin{proof}[Proof (outline; not proved in lecture)]
 %% Lecture 13 (2026-10-13): the placeholder "Next lecture." is replaced. Wu proved the sequence version and said the L^p case is similar.
-Not proved in lecture. Lecture 13 proves the sequence version, Theorem~\ref{thm:lp-seq-dual}; the $L^p$ case is similar: those who know measure theory find the candidate $g$ with the Radon--Nikodym theorem and then argue as for sequences. This needs measure theory beyond the course (it will not be tested).
+Not proved in lecture. Lecture 13 proves the sequence version, Theorem~\ref{thm:lp-seq-dual}; the $L^p$ case is similar: those who know measure theory find the candidate $g$ with the Radon--Nikodym theorem and then argue as for sequences. This needs measure theory beyond the course.
 
 %% FILL-IN: outline of the L^p proof along Wu's route (not given in lecture).
 \emph{Outline, along that route.} Measure-theoretic facts are used freely. Suppose first that $\Omega$ has finite measure $m(\Omega)$, and let $\ell \in (L^p)'$.
@@ -5989,7 +5993,7 @@ For a number $s \ge 0$, $\frac{s^2}{s + \varepsilon} = s - \frac{\varepsilon s}{
 \[
 \ell(x_\varepsilon) \ge \int_0^1 \bigl( |f_0(t)| - \varepsilon \bigr)\, dt = A - \varepsilon .
 \]
-By the definition of the norm and $\|x_\varepsilon\| \le 1$, $|\ell(x_\varepsilon)| \le \|\ell\|\, \|x_\varepsilon\| \le \|\ell\|$. So $\|\ell\| \ge A - \varepsilon$ for every $\varepsilon > 0$, hence $\|\ell\| \ge A$. With Step 1, $\|\ell\| = A$.
+By Proposition~\ref{prop:op-norm}(b) with $Y = \mathbb{F}$ and $\|x_\varepsilon\| \le 1$, $|\ell(x_\varepsilon)| \le \|\ell\|\, \|x_\varepsilon\| \le \|\ell\|$. So $\|\ell\| \ge A - \varepsilon$ for every $\varepsilon > 0$, hence $\|\ell\| \ge A$. With Step 1, $\|\ell\| = A$.
 \end{proof}
 
 \begin{exbox}[The Norm of the Integral Functional Need Not be Attained]\boxlabel{ex:integral-functional-not-attained}
@@ -6138,7 +6142,7 @@ Then for every $\ell \in H'$ there is a unique $y \in H$ with
 
 \begin{proof}
 % Lecture 11 (2026-10-06)
-(Lecture 11.) On the board the coercivity constant was renamed $\alpha$ midway, to avoid confusion with $B$; here it stays $\beta$. By conditions (1)--(3) and Theorem~\ref{thm:form-operator} there is $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$ for all $x, y$. By the Riesz representation theorem every $\ell \in H'$ is $\ell(x) = (x, z_0)$ for a unique $z_0 \in H$. So it suffices to show that $A$ is one-to-one and onto: then every $z_0$ is $Ay_0$ for exactly one $y_0$.
+(Lecture 11.) By conditions (1)--(3) and Theorem~\ref{thm:form-operator} there is $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$ for all $x, y$. By the Riesz representation theorem every $\ell \in H'$ is $\ell(x) = (x, z_0)$ for a unique $z_0 \in H$. So it suffices to show that $A$ is one-to-one and onto: then every $z_0$ is $Ay_0$ for exactly one $y_0$.
 
 \textbf{Step 1: $A$ is one-to-one, with a lower bound.} By coercivity and Cauchy--Schwarz, for every $x \in H$,
 \[
@@ -6225,7 +6229,7 @@ Lax--Milgram is applied to elliptic PDE in Sobolev spaces. They were first met a
 \subsection{Sobolev Spaces as Completions}
 
 \begin{defbox}[{{The Sobolev Norm}}]\boxlabel{def:sobolev-norm}
-Let $\overline{\Omega} \subset \mathbb{R}^n$ be bounded and closed, with interior $\Omega$, and let $X = C^\infty(\overline{\Omega})$. For $1 \le p < \infty$ and an integer $k \ge 0$ define
+Let $\Omega \subset \mathbb{R}^n$ be bounded and open, with closure $\overline{\Omega}$, and let $X = C^\infty(\overline{\Omega})$ (as in Proposition~\ref{prop:diff-unbounded}). For $1 \le p < \infty$ and an integer $k \ge 0$ define
 \[
 |f|_{W^{k,p}} = \sum_{|\alpha| \le k} \|\partial^\alpha f\|_{L^p(\Omega)}, \qquad \partial^\alpha f = \partial_{x_1}^{\alpha_1} \cdots \partial_{x_n}^{\alpha_n} f, \quad \alpha = (\alpha_1, \ldots, \alpha_n).
 \]
@@ -6317,7 +6321,7 @@ The argument is the divergence theorem, $\int_\Omega \operatorname{div} \vec{F}\
 \end{proof}
 
 \begin{propbox}[{{Limits in $W^{1,p}$ Satisfy Integration by Parts}}]\boxlabel{prop:limit-ibp}
-Let $g_n \in C^\infty(\overline{\Omega})$ with $g_n \to f$ and $\partial_{x_j} g_n \to f_j$ in $L^p(\Omega)$, $1 \le p < \infty$. Then for every $\varphi \in C_c^\infty(\Omega)$,
+Let $\Omega \subset \mathbb{R}^n$ be bounded and open, and let $g_n \in C^\infty(\overline{\Omega})$ with $g_n \to f$ and $\partial_{x_j} g_n \to f_j$ in $L^p(\Omega)$, $1 \le p < \infty$. Then for every $\varphi \in C_c^\infty(\Omega)$,
 \[
 \int_\Omega f_j(x)\, \varphi(x)\, dx = -\int_\Omega f(x)\, \partial_{x_j}\varphi(x)\, dx .
 \]
@@ -6384,7 +6388,7 @@ Both descriptions of $W^{k,p}$ are used: the completion of Definition~\ref{def:s
 \end{rembox}
 
 \begin{corbox}[The Completion Sits Inside the Weak-Derivative Space]\boxlabel{cor:sobolev-completion-in-weak}
-Let $\overline{\Omega} \subset \mathbb{R}^n$ be bounded and closed with interior $\Omega$, $1 \le p < \infty$, and let $\{g_n\} \subset C^\infty(\overline{\Omega})$ be Cauchy in $|\cdot|_{W^{1,p}}$ (Definition~\ref{def:sobolev-norm}). Then there are $f \in L^p(\Omega)$ and, for each $j$, $f_j \in L^p(\Omega)$ with $g_n \to f$ and $\partial_{x_j} g_n \to f_j$ in $L^p(\Omega)$; $f_j$ is the weak derivative $\partial_{x_j} f$, so $f \in W^{1,p}(\Omega)$ in the sense of Definition~\ref{def:sobolev-weak}; and $f$, $f_j$ depend only on the element of the completion represented by $\{g_n\}$.
+Let $\Omega \subset \mathbb{R}^n$ be bounded and open with closure $\overline{\Omega}$, $1 \le p < \infty$, and let $\{g_n\} \subset C^\infty(\overline{\Omega})$ be Cauchy in $|\cdot|_{W^{1,p}}$ (Definition~\ref{def:sobolev-norm}). Then there are $f \in L^p(\Omega)$ and, for each $j$, $f_j \in L^p(\Omega)$ with $g_n \to f$ and $\partial_{x_j} g_n \to f_j$ in $L^p(\Omega)$; $f_j$ is the weak derivative $\partial_{x_j} f$, so $f \in W^{1,p}(\Omega)$ in the sense of Definition~\ref{def:sobolev-weak}; and $f$, $f_j$ depend only on the element of the completion represented by $\{g_n\}$. Conversely, that element is determined by $f$: if $f = 0$, then every $f_j = 0$ a.e.\ and $|g_n|_{W^{1,p}} \to 0$.
 \end{corbox}
 
 \begin{proof}
@@ -6394,6 +6398,8 @@ Let $\overline{\Omega} \subset \mathbb{R}^n$ be bounded and closed with interior
 \emph{Weak derivatives.} By Proposition~\ref{prop:limit-ibp}, $\int_\Omega f_j \varphi = -\int_\Omega f\, \partial_{x_j}\varphi$ for every $\varphi \in C_c^\infty(\Omega)$; by Definition~\ref{def:weak-derivative}, $f_j$ is the weak derivative of $f$ in the $x_j$-direction. Since $f$ and all $f_j$ lie in $L^p(\Omega)$, $f \in W^{1,p}(\Omega)$ (Definition~\ref{def:sobolev-weak} with $k = 1$).
 
 \emph{Independence of the representative.} If $\{h_n\}$ is an equivalent Cauchy sequence, $|g_n - h_n|_{W^{1,p}} \to 0$, then $\|g_n - h_n\|_{L^p} \to 0$ and $\|\partial_{x_j} g_n - \partial_{x_j} h_n\|_{L^p} \to 0$, so $\{h_n\}$ and $\{\partial_{x_j} h_n\}$ have the same $L^p$ limits $f$ and $f_j$.
+
+\emph{The element is determined by $f$.} Let $f = 0$. By the second step, each $f_j$ is a weak derivative of the zero function in the $x_j$-direction, and so is the zero function, since both sides of the defining identity then vanish. By Lemma~\ref{lem:weak-unique}, $f_j = 0$ a.e. Hence $\|g_n\|_{L^p} \to 0$ and $\|\partial_{x_j} g_n\|_{L^p} \to 0$ for each $j$, so $|g_n|_{W^{1,p}} \to 0$: the sequence $\{g_n\}$ represents the zero element of the completion. By linearity, two elements of the completion with the same limit $f$ are equal, so the completion is identified with a linear subspace of $L^p(\Omega)$.
 \end{proof}
 
 \subsection{Examples}\label{sec:weak-examples}
@@ -6500,7 +6506,7 @@ One can take $C = 2L$ for any $L$ with $\Omega \subset (-L, L)^n$.
 \end{thmbox}
 
 \begin{proof}
-\textbf{Step 1: put $\Omega$ in a box and extend by zero.} Since $\Omega$ is bounded, $\Omega \subset (-L, L)^n$ for some $L > 0$. Extend $f$ by $f(x) = 0$ for $x \notin \Omega$; because the support of $f$ is a compact subset of $\Omega$, the extension is $C^\infty$ on $\mathbb{R}^n$ and vanishes outside $\Omega$, in particular on the face $x_1 = -L$ of the box.
+\textbf{Step 1: put $\Omega$ in a box and extend by zero.} Since $\Omega$ is bounded, $\Omega \subset (-L, L)^n$ for some $L > 0$. Extend $f$ by $f(x) = 0$ for $x \notin \Omega$; by Proposition~\ref{prop:extension-zero} the extension is $C^\infty$ on $\mathbb{R}^n$, and it vanishes outside $\Omega$, in particular on the face $x_1 = -L$ of the box.
 
 \textbf{Step 2: the fundamental theorem of calculus in $x_1$.} For $x = (x_1, x') \in [-L, L]^n$, $x' = (x_2, \ldots, x_n)$,
 \[
@@ -6953,7 +6959,7 @@ In Example~\ref{ex:restricted-measure}, $\nu \ll m$: if $m(E) = 0$ then $0 \le \
 
 \begin{rembox}[Facts Assumed from Measure Theory]\label{rem:facts-assumed-measure-theory}
 %% ADDED: the background the proof uses (not stated in lecture).
-Integration against an abstract measure is assumed as in a course on measure theory: for a measure $\lambda$, $L^2(\lambda)$ (real functions with $\int f^2 d\lambda < \infty$, identified when equal $\lambda$-a.e.) is a Hilbert space with $(f, g) = \int f g\, d\lambda$; the monotone convergence theorem; and continuity of measure from below. If $\mu, \nu$ are measures, so is $\mu + \nu$ (sums of non-negative series can be rearranged), and $\int h\, d(\mu+\nu) = \int h\, d\mu + \int h\, d\nu$ for every measurable $h \ge 0$, hence for every $h \in L^1(\mu + \nu)$.
+Integration against an abstract measure is assumed as in a course on measure theory: for a measure $\lambda$, $L^2(\lambda)$ (real functions with $\int f^2 d\lambda < \infty$, identified when equal $\lambda$-a.e.) is a Hilbert space with $(f, g) = \int f g\, d\lambda$; the monotone convergence theorem; and continuity of measure from below. If $\mu, \nu$ are measures, so is $\mu + \nu$ (sums of non-negative series can be rearranged), and $\int h\, d(\mu+\nu) = \int h\, d\mu + \int h\, d\nu$ for every measurable $h \ge 0$, hence for every $h \in L^1(\mu + \nu)$. If $\nu(E) = \int_E w\, d\mu$ for all $E$ with a measurable $w \ge 0$, then $\int h\, d\nu = \int h\, w\, d\mu$ for every measurable $h \ge 0$.
 \end{rembox}
 
 \begin{thmbox}[Radon--Nikodym]\boxlabel{thm:radon-nikodym}
@@ -7000,7 +7006,7 @@ If $\mu(F_2) > 0$, the left side is $< 0$, since $1 - g_0 < 0$ on $F_2$ --- a co
 \[
 g(x) = \frac{1 - g_0(x)}{g_0(x)} \ge 0,
 \]
-measurable as a quotient of measurable functions with a denominator that never vanishes. The test function to choose is $f = \chi_E / g_0$ for $E \in \mathcal{A}$: then $f g_0 = \chi_E$ and $f(1 - g_0) = \chi_E\, g$, so \eqref{eq:rn-identity} reads $\int_E g\, d\mu = \nu(E)$. One check was left to the class: $f \in H$.
+measurable as a quotient of measurable functions with a denominator that never vanishes. The test function to choose is $f = \chi_E / g_0$ for $E \in \mathcal{A}$: then $f g_0 = \chi_E$ and $f(1 - g_0) = \chi_E\, g$, so \eqref{eq:rn-identity} reads $\int_E g\, d\mu = \nu(E)$. It remains to check that $f \in H$.
 %% FILL-IN: the check is not automatic -- f need not be in H -- and is replaced by a truncation.
 This needs care, because $g_0$ may take arbitrarily small values, and then $\chi_E/g_0$ need not be in $L^2(\mu + \nu)$. Truncate: for $k \in \mathbb{N}$ let $E_k = E \cap \{ g_0 \ge \frac1k \}$ and $f_k = \chi_{E_k}/g_0$. Then $0 \le f_k \le k$, so $f_k \in H$, and \eqref{eq:rn-identity} with $f = f_k$ gives
 \[
@@ -7105,7 +7111,7 @@ Recall (\ref{sec:dual}) that for a normed linear space $X$ over $\mathbb{F} = \m
 and that $X'$ is a Banach space (Corollary~\ref{cor:dual-banach}).
 %% FILL-IN: why the two suprema agree, and the version with ||x|| <= 1 used below.
 (The suprema agree because $|\ell(x)|/\|x\| = |\ell(x/\|x\|)|$ and $x/\|x\|$ has norm $1$. Taking the supremum over $\|x\| \le 1$ gives the same number: for $0 < \|x\| \le 1$, $|\ell(x)| = \|x\|\, |\ell(x/\|x\|)| \le \sup_{\|x'\| = 1} |\ell(x')|$, and $\ell(0) = 0$. In particular $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$.)
-This lecture explains why $X'$ is called the \emph{dual} space: just as $\|\ell\|$ is computed by testing $\ell$ on the unit ball of $X$, norms and distances in $X$ can be computed by testing on the unit ball of $X'$.
+This section explains why $X'$ is called the \emph{dual} space: just as $\|\ell\|$ is computed by testing $\ell$ on the unit ball of $X$, norms and distances in $X$ can be computed by testing on the unit ball of $X'$.
 
 \subsection{Hahn--Banach for Normed Spaces}
 
@@ -7274,7 +7280,7 @@ This is the precise form of the remark in \ref{sec:hb-proof} that Hahn--Banach g
 
 \subsection{The Dual of \texorpdfstring{$\ell^p$}{lp}}
 
-Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem~\ref{thm:Lp-dual}). This was Problem~3 of the homework current at the time, waived after the derivation in class. Let $e_j = (0, \ldots, 0, 1, 0, \ldots)$ denote the sequence with $1$ in the $j$-th place and $0$ elsewhere, and let $p'$ be the conjugate exponent of $p$ (Definition~\ref{def:conjugate-exponents}).
+Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem~\ref{thm:Lp-dual}). Let $e_j = (0, \ldots, 0, 1, 0, \ldots)$ denote the sequence with $1$ in the $j$-th place and $0$ elsewhere, and let $p'$ be the conjugate exponent of $p$ (Definition~\ref{def:conjugate-exponents}).
 
 \begin{thmbox}[{{The Dual of $\ell^p$}}]\boxlabel{thm:lp-seq-dual}
 Let $1 \le p < \infty$ and $\frac1p + \frac1{p'} = 1$, so that $1 < p' \le \infty$.
@@ -7448,7 +7454,7 @@ Corollary~\ref{cor:lp-duality} in $\mathbb{R}^2$ for $p = 3$, $p' = \tfrac32$. F
 \begin{rembox}[{{The Dual of $L^p$, Revisited}}]\label{rem:Lp-dual-measure}
 Similarly, for any measure space $(X, \mu)$, e.g.\ $\Omega \subset \mathbb{R}^n$ with Lebesgue measure, and $1 \le p < \infty$, $(L^p(X, \mu))' = L^{p'}(X, \mu)$; this is Theorem~\ref{thm:Lp-dual}. For those who have learned measure theory, the candidate is found with the Radon--Nikodym theorem, and the rest goes as for sequences; the proof was left to the class (an outline is given after Theorem~\ref{thm:Lp-dual}).
 %% ADDED: the sigma-finiteness caveat (not said in lecture).
-For $p = 1$ the measure must be $\sigma$-finite (Lebesgue measure on $\Omega$ is); for $1 < p < \infty$ no condition is needed. Midterm scope: results that need measure theory (the $L^p$ spaces, beyond their basic properties) and the PDE applications will not be tested; $\ell^p$ will.
+For $p = 1$ the measure must be $\sigma$-finite (Lebesgue measure on $\Omega$ is); for $1 < p < \infty$ no condition is needed.
 \end{rembox}
 
 \begin{exbox}[{{$(\ell^\infty)'$ is Larger than $\ell^1$}}]\boxlabel{ex:linfty-dual}
@@ -7697,7 +7703,7 @@ Let $X$ be a normed linear space and $Y$ a linear subspace. Then $\overline{Y}$ 
 \end{proof}
 %% <<< END ADDED
 
-Motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem~\ref{thm:orth-decomp}), and in any linear space $X \cong X/Y \oplus Y$ (Theorem~\ref{thm:quotient-iso}); so $X/Y$ and $Y^\perp$ look like each other's dual. This material (Lecture 13) is on the midterm.
+Motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem~\ref{thm:orth-decomp}), and in any linear space $X \cong X/Y \oplus Y$ (Theorem~\ref{thm:quotient-iso}); so $X/Y$ and $Y^\perp$ look like each other's dual.
 
 % ============================================================================
 % SECTION: SEPARABLE DUALS AND REFLEXIVE SPACES (Lecture 14)
@@ -7931,9 +7937,9 @@ $(C[0,1], \|\cdot\|_\infty)$ is not reflexive.
 \begin{proof}
 Suppose it is: $\bigl( (C[0,1])' \bigr)' = C[0,1]$. Now $C[0,1]$ is separable, because the polynomials with rational coefficients are dense.
 %% FILL-IN: density of rational polynomials, and why separability passes to the dual.
-(By the Weierstrass approximation theorem, for $f \in C[0,1]$ and $\varepsilon > 0$ there is a polynomial $P(x) = \sum_{k=0}^n c_k x^k$ with $\|f - P\|_\infty < \varepsilon$; choosing $q_k \in \mathbb{Q}_{\mathbb{F}}$ with $|c_k - q_k| < \varepsilon/(n+1)$ and using $|x^k| \le 1$ on $[0,1]$, $Q = \sum q_k x^k$ has $\|P - Q\|_\infty < \varepsilon$. The polynomials with coefficients in $\mathbb{Q}_{\mathbb{F}}$ form a countable set, as in Step 2 above.) Then $(C[0,1])'$ would be separable: its dual $((C[0,1])')'$ is $i(C[0,1])$, isometrically isomorphic to $C[0,1]$ and hence separable (as in the proof of Corollary~\ref{cor:linfty-dual-nonsep}), and Theorem~\ref{thm:dual-sep}, applied to the normed space $X = (C[0,1])'$, gives that $X$ is separable.
+(By the Weierstrass approximation theorem, for $f \in C[0,1]$ and $\varepsilon > 0$ there is a polynomial $P(x) = \sum_{k=0}^n c_k x^k$ with $\|f - P\|_\infty < \varepsilon$; choosing $q_k \in \mathbb{Q}_{\mathbb{F}}$ with $|c_k - q_k| < \varepsilon/(n+1)$ and using $|x^k| \le 1$ on $[0,1]$, $Q = \sum q_k x^k$ has $\|P - Q\|_\infty < \varepsilon$. The polynomials with coefficients in $\mathbb{Q}_{\mathbb{F}}$ form a countable set, as in Step 2 of the proof of Theorem~\ref{thm:dual-sep}, where $\mathbb{Q}_{\mathbb{F}}$ is defined.) Then $(C[0,1])'$ would be separable: its dual $((C[0,1])')'$ is $i(C[0,1])$, isometrically isomorphic to $C[0,1]$ and hence separable (as in the proof of Corollary~\ref{cor:linfty-dual-nonsep}), and Theorem~\ref{thm:dual-sep}, applied to the normed space $X = (C[0,1])'$, gives that $X$ is separable.
 
-This is not true. For $s \in [0,1]$ define $\ell_s(f) = f(s)$ for $f \in C[0,1]$. Then $\ell_s : C[0,1] \to \mathbb{R}$ is linear, and
+This is not true. For $s \in [0,1]$ define $\ell_s(f) = f(s)$ for $f \in C[0,1]$. Then $\ell_s : C[0,1] \to \mathbb{F}$ is linear, and
 \[
 |\ell_s(f)| = |f(s)| \le \max_{x \in [0,1]} |f(x)| = \|f\|_\infty ,
 \]
@@ -8071,10 +8077,8 @@ The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction 
 %% <<< END ADDED
 
 % Lecture 18 (2026-11-05). Source: Tianshuo's handwritten notes of the lecture (pages 48--50) and the Otter.ai transcript.
-\textit{Lecture 18 (Thu Nov 5) opened with the following problem, placed here next to the theorem it uses.}
-
 \begin{rembox}[Notation: $x_0 \in X''$]\label{rem:bidual-notation}
-For $\ell \in X'$ write $\ell(x) = \langle x, \ell \rangle$. For fixed $x_0 \in X$, $\ell \mapsto \langle x_0, \ell \rangle$ is a bounded linear functional on $X'$, the element $\eta_{x_0} = i(x_0)$ of $(X')'$ (Proposition~\ref{prop:canonical-embedding}): $\eta_{x_0}(\ell) = \langle \ell, \eta_{x_0} \rangle = \langle x_0, \ell \rangle$. Instead of introducing other notation, one simply says $x_0 \in (X')'$, identifying $\eta_{x_0}$ with $x_0$; the isometric isomorphism $i$ is not written. This notation is used from now on. With it, ``$X$ reflexive'' reads $(X')' = X$.
+For $\ell \in X'$ write $\ell(x) = \langle x, \ell \rangle$. For fixed $x_0 \in X$, $\ell \mapsto \langle x_0, \ell \rangle$ is a bounded linear functional on $X'$, the element $\eta_{x_0} = i(x_0)$ of $(X')'$ (Proposition~\ref{prop:canonical-embedding}): $\eta_{x_0}(\ell) = \langle \ell, \eta_{x_0} \rangle = \langle x_0, \ell \rangle$. Instead of introducing other notation, one simply says $x_0 \in (X')'$, identifying $\eta_{x_0}$ with $x_0$; the isometric embedding $i$ is not written. This notation is used from now on. With it, ``$X$ reflexive'' reads $(X')' = X$.
 \end{rembox}
 
 \begin{thmbox}[{{$X$ is Reflexive if and only if $X'$ is}}]\boxlabel{thm:reflexive-dual}
@@ -8093,7 +8097,7 @@ So $\Phi$ is evaluation at $\ell$ on $X''$, i.e.\ $\Phi = i_{X'}(\ell)$, where $
 
 \textbf{($\Leftarrow$)} Assume $X'$ is reflexive. \emph{Step 1:} $X''$ is reflexive, by the direction ($\Rightarrow$) just proved, applied to the Banach space $X'$ (in place of $X$; $X'$ is complete by Corollary~\ref{cor:dual-banach}): $X'$ reflexive implies $(X')' = X''$ reflexive. \emph{Step 2:} $X \subset X''$, isometrically (Proposition~\ref{prop:canonical-embedding}). Since $X$ is a Banach space, $X$ is a closed linear subspace of $X''$: if $i(x_n) \to \eta$ in $X''$, then $\{i(x_n)\}$ is Cauchy in $X''$, hence $\{x_n\}$ is Cauchy in $X$ (the two spaces are isometric), so $x_n \to x$ for some $x \in X$, and $\eta = i(x)$ (since $\|i(x_n) - i(x)\| = \|x_n - x\| \to 0$ and limits are unique). \emph{Step 3:} by Theorem~\ref{thm:reflexive-subspace}, a closed linear subspace of a reflexive Banach space is reflexive; so $X$ is reflexive.
 %% FILL-IN: Step 3 applies the subspace theorem to i(X); the transfer back to X along the isometric isomorphism i is written out.
-(Precisely, the theorem makes $i(X)$ reflexive, and reflexivity passes along an isometric isomorphism $T : X \to Z$: given $\eta \in X''$, define $\zeta \in Z''$ by $\zeta(m) = \eta(m \circ T)$ for $m \in Z'$; if $\zeta = i_Z(z)$, then for every $\ell \in X'$, writing $\ell = (\ell \circ T^{-1}) \circ T$, $\eta(\ell) = \zeta(\ell \circ T^{-1}) = \ell(T^{-1} z)$, so $\eta = i_X(T^{-1} z)$.)
+(Precisely, the theorem makes $i(X)$ reflexive, and reflexivity passes along an isometric isomorphism $T : X \to Z$: given $\eta \in X''$, define $\zeta$ by $\zeta(m) = \eta(m \circ T)$ for $m \in Z'$; it is linear in $m$, and $|\zeta(m)| \le \|\eta\|\, \|m \circ T\| \le \|\eta\|\, \|m\|$ because $\|T\| = 1$, so $\zeta \in Z''$; if $\zeta = i_Z(z)$, then for every $\ell \in X'$, writing $\ell = (\ell \circ T^{-1}) \circ T$, $\eta(\ell) = \zeta(\ell \circ T^{-1}) = \ell(T^{-1} z)$, so $\eta = i_X(T^{-1} z)$.)
 \end{proof}
 
 \subsection{Distance in the Dual}
@@ -8105,7 +8109,7 @@ Let $X$ be a normed linear space and $Y$ a linear subspace. Then for every $\ell
 \[
 \min_{m \in Y^\perp} \|\ell - m\| = \sup_{\substack{z \in Y \\ \|z\| = 1}} |\ell(z)| ,
 \]
-the norm of the restriction $\ell|_Y \in Y'$. Compare $\displaystyle \inf_{y \in Y} \|z - y\| = \max_{\substack{\ell \in Y^\perp \\ \|\ell\| \le 1}} |\ell(z)|$: now the minimum is attained on the side of the dual.
+the norm $\|\ell|_Y\|_Y$ of the restriction $\ell|_Y \in Y'$ (for $Y = \{0\}$ the supremum is over the empty set and is read as $0$). Compare $\displaystyle \inf_{y \in Y} \|z - y\| = \max_{\substack{\ell \in Y^\perp \\ \|\ell\| \le 1}} |\ell(z)|$: now the minimum is attained on the side of the dual.
 \end{propbox}
 
 \begin{proof}
@@ -8166,7 +8170,7 @@ The dual of a subspace is a quotient of the dual, just as the dual of a quotient
 %% <<< END ADDED
 
 % ============================================================================
-% SECTION 29: R^n, C^m AND L^p (EXAMPLES REVISITED)
+% SECTION 38: R^n, C^m AND L^p (EXAMPLES REVISITED)
 % ============================================================================
 
 \section{$\mathbb{R}^n$, $C^m$ and $L^p$}\label{sec:rev-ch6}
@@ -8195,7 +8199,7 @@ Lecture~12 used $L^2$ twice more. The Dirichlet problem is solved in $H^1_0(\Ome
 \textit{(Not from lecture; summary of Lecture 14.)} Lecture~14 sorted the course's spaces by reflexivity. Hilbert spaces, in particular $L^2$ and $\ell^2$, and $\ell^p$ for $1 < p < \infty$ are reflexive (Examples~\ref{ex:hilbert-reflexive} and~\ref{ex:lp-reflexive}); $C[0,1]$, $\ell^1$ and $c_0$ are not (Example~\ref{ex:C-nonreflexive}, Corollary~\ref{cor:reflexive-sep}), and the duals of $\ell^\infty$ and $L^\infty$ are not separable, so they are not $\ell^1$ and $L^1$ (Corollary~\ref{cor:linfty-dual-nonsep}).
 %% <<< END ADDED
 
-\noindent\textit{Chain:} $\leftarrow$ Chapter~5 (\ref{sec:rev-ch5}) $\cdot$ Chapter~7, $L^2(\mathbb{R}^n)$ as a state space (Theorem~\ref{thm:L2-separable}) $\rightarrow$
+\noindent\textit{Chain:} $\leftarrow$ Chapter~5 (\ref{sec:rev-ch5}) $\cdot$ Chapter~\ref{ch:qm}, $L^2(\mathbb{R}^n)$ as a state space (Theorem~\ref{thm:L2-separable}) $\rightarrow$
 
 
 % ============================================================================
@@ -8222,7 +8226,7 @@ The previous chapter studied bounded linear functionals in depth. This chapter r
 Two problems from the midterm.
 \begin{enumerate}[label=(\arabic*)]
     \item \emph{The completion of $C^1[a,b]$ under $\|f\| = \max_{[a,b]} |f|$ is $C[a,b]$.} All that was needed: $C^1[a,b]$ is dense in $(C[a,b], \|\cdot\|_\infty)$, because already the polynomials are dense in this norm (Weierstrass), and $C[a,b]$ is complete (Theorem~\ref{thm:Cab-banach}); so $C[a,b]$ is the completion (Proposition~\ref{prop:identify-completion}). The abstract completion by equivalence classes of Cauchy sequences is not needed in practice; one identifies a complete space in which the given space is dense.
-    \item \emph{If $\{e_\alpha\}_{\alpha \in \Lambda}$ are nonzero vectors of a Hilbert space with $(x, y) = \sum_{\alpha \in \Lambda} (x, e_\alpha)\, \overline{(y, e_\alpha)}$ for all $x, y$, then $\{e_\alpha\}$ is a complete orthonormal set.} Most solutions proved completeness but not orthonormality, which was not assumed. The vectors are assumed nonzero, since a zero vector cannot belong to an orthonormal set. The full problem is on this week's homework.
+    \item \emph{If $\{e_\alpha\}_{\alpha \in \Lambda}$ are nonzero vectors of a Hilbert space with $(x, y) = \sum_{\alpha \in \Lambda} (x, e_\alpha)\, \overline{(y, e_\alpha)}$ for all $x, y$, then $\{e_\alpha\}$ is a complete orthonormal set.} Orthonormality is not assumed and has to be proved along with completeness. The vectors are assumed nonzero, since a zero vector cannot belong to an orthonormal set.
 \end{enumerate}
 \end{rembox}
 
@@ -8258,7 +8262,7 @@ Let $X, Y$ be normed linear spaces and $M \in \mathcal{L}(X, Y)$. Then:
 
 \begin{proof}
 (1) %% FILL-IN: Wu: "clear"; the argument she gave orally.
-\emph{Linear subspace:} $M0 = 0$, and if $Mx_1 = Mx_2 = 0$ then $M(c_1 x_1 + c_2 x_2) = c_1 Mx_1 + c_2 Mx_2 = 0$. \emph{Closed:} if $x_n \in N$ and $x_n \to x_0$, then, $M$ being bounded and hence continuous (Proposition~\ref{prop:bounded-continuous}), $0 = Mx_n \to Mx_0$, so $Mx_0 = 0$.
+\emph{Linear subspace:} $M0 = 0$, and if $Mx_1 = Mx_2 = 0$ then $M(c_1 x_1 + c_2 x_2) = c_1 Mx_1 + c_2 Mx_2 = 0$. \emph{Closed:} if $x_n \in N$ and $x_n \to x_0$, then, $M$ being bounded and hence continuous (Proposition~\ref{prop:cont-bounded}), $0 = Mx_n \to Mx_0$, so $Mx_0 = 0$.
 
 (2) Since $N$ is closed, $X/N$ is a normed linear space (Theorem~\ref{thm:quotient-norm}): its elements are the equivalence classes $[x] = \{ x + w : w \in N \}$, $x \in X$, with $[x_1] = [x_2]$ if and only if $x_1 - x_2 \in N$, and
 \[
@@ -8298,7 +8302,7 @@ so $\|M\| = \sup_{\|x\| = 1} \|Mx\| \le \|M_0\|$. With the previous step, $\|M_0
 
 %% >>> ADDED: remark (Claude commentary)
 \begin{rembox}[{{The First Isomorphism Theorem, with Norms}}]\label{rem:first-iso-norms}
-Algebraically, Theorem~\ref{thm:induced-map}(2) is the first isomorphism theorem of linear algebra: $X/N(M) \cong R(M)$. The null space often represents a symmetry of the problem, and quotienting it out removes the non-uniqueness; restricting the target to $R(M)$ removes the non-existence. What the theorem does not give is a bounded inverse: $M_0^{-1} : R(M) \to X/N$ is linear but need not be bounded, and $R(M)$ need not be closed in $Y$. If $X$ and $Y$ are Banach spaces and $R(M)$ is closed, then $X/N$ and $R(M)$ are Banach spaces, and Banach's theorem below shows that $M_0^{-1}$ is bounded. So question (3) is the real one.
+Algebraically, Theorem~\ref{thm:induced-map}(2) is the first isomorphism theorem of linear algebra: $X/N(M) \cong R(M)$. The null space often represents a symmetry of the problem, and quotienting it out removes the non-uniqueness; restricting the target to $R(M)$ removes the non-existence. What the theorem does not give is a bounded inverse: $M_0^{-1} : R(M) \to X/N$ is linear but need not be bounded, and $R(M)$ need not be closed in $Y$. If $X$ and $Y$ are Banach spaces and $R(M)$ is closed, then $X/N$ and $R(M)$ are Banach spaces (the completeness of the quotient $X/N$ is not proved in these notes), and Banach's theorem below shows that $M_0^{-1}$ is bounded. A proof that does not use the completeness of $X/N$ is the direction ($\Rightarrow$) of Proposition~\ref{prop:closed-range}: its inequality reads $\|[x]\| \le a\, \|M_0[x]\|$, because $d(x, N) = \|[x]\|$. So question (3) is the real one.
 \end{rembox}
 %% <<< END ADDED
 
@@ -8554,7 +8558,7 @@ Let $(X, d)$ be a metric space and $E \subset X$. Then $E$ is nowhere dense if a
 \end{lembox}
 
 \begin{proof}
-\textit{(Not from lecture.)} $\overline{E}$ is closed (Proposition~\ref{prop:closure}), so the closure of $\overline{E}$ is $\overline{E}$ itself: $E$ and $\overline{E}$ have the same closure. By Definition~\ref{def:category}(1), both statements say that this common closure has no interior points.
+\textit{(Not from lecture.)} $\overline{E}$ is closed (Proposition~\ref{prop:closure}(a); its proof uses only the triangle inequality, so it holds in a metric space), so the closure of $\overline{E}$ is $\overline{E}$ itself: $E$ and $\overline{E}$ have the same closure. By Definition~\ref{def:category}(1), both statements say that this common closure has no interior points.
 \end{proof}
 
 This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ in the proof below.
@@ -8575,7 +8579,7 @@ X = \bigcup_{n=1}^\infty E_n, \qquad E_n \subset X \text{ nowhere dense for ever
 We want to show there is at least one point of $X$ that lies in no $E_n$, a contradiction. The idea is to construct a sequence of nested closed balls, the $n$-th one avoiding $E_n$, and to use completeness to find a point in all of them.
 
 \textbf{Step 1: nested balls.} Take the open ball $B(x_0, 1)$ with radius $1$ about some $x_0 \in X$ (in a normed space one can take $B(0,1)$; %% FILL-IN: a metric space has no origin, so any center will do.
-in a metric space any center will do). By Lemma~\ref{lem:nowhere-dense-balls} there is $B(x_1, r_1)$, $r_1 > 0$, with $\overline{B(x_1, r_1)} \subset B(x_0, 1) \cap \overline{E}_1^{\,c}$, i.e.
+in a metric space any center will do). By Lemma~\ref{lem:nowhere-dense-balls} there is $B(x_1, r_1)$, $0 < r_1 < 1$ (shrink the radius if necessary, Lemma~\ref{lem:nowhere-dense-smaller-ball}), with $\overline{B(x_1, r_1)} \subset B(x_0, 1) \cap \overline{E}_1^{\,c}$, i.e.
 \[
 \overline{B(x_1, r_1)} \subset B(x_0, 1), \qquad \overline{B(x_1, r_1)} \cap \overline{E}_1 = \varnothing .
 \]
@@ -8608,7 +8612,7 @@ and the union contains $\bigcup_n E_n = X$. So $A \cap X = \varnothing$, i.e.\ $
 d(x_j, x_n) < r_n < \tfrac1n \qquad \text{for all } j > n .
 \]
 %% FILL-IN: why this gives a Cauchy sequence.
-Hence $\{x_j\}_{j=1}^\infty$ is Cauchy (for $j, k > n$, $d(x_j, x_k) \le d(x_j, x_n) + d(x_n, x_k) < \frac2n$). Since $X$ is complete, $x_j \to x^*$ as $j \to \infty$ for some $x^* \in X$. Now fix $n$. The sequence $\{x_j\}_{j=n}^\infty$ lies in the closed set $\overline{B(x_n, r_n)}$, so its limit $x^*$ lies in $\overline{B(x_n, r_n)}$ (Definition~\ref{def:closed}). This holds for every $n$, so
+Hence $\{x_j\}_{j=1}^\infty$ is Cauchy (for $j, k > n$, $d(x_j, x_k) \le d(x_j, x_n) + d(x_n, x_k) < \frac2n$). Since $X$ is complete, $x_j \to x^*$ as $j \to \infty$ for some $x^* \in X$. Now fix $n$. The sequence $\{x_j\}_{j=n}^\infty$ lies in $\overline{B(x_n, r_n)}$, which is closed (Proposition~\ref{prop:closure}(a), valid in a metric space with the same proof), so its limit $x^*$ lies in $\overline{B(x_n, r_n)}$ (Definition~\ref{def:closed}). This holds for every $n$, so
 \[
 x^* \in \bigcap_{n=1}^\infty \overline{B(x_n, r_n)} = A ,
 \]
@@ -8830,7 +8834,7 @@ The open mapping theorem from Theorem~\ref{thm:ball-in-image}: the map $x \mapst
 Banach's theorem (Theorem~\ref{thm:banach-inverse}) follows at once.
 
 \begin{proof}[Proof of Banach's theorem from the open mapping theorem]
-Let $M : X \to Y$ be bounded, linear, one-to-one and onto, so that $M^{-1} : Y \to X$ exists; it is linear (\ref{sec:solving}). A linear map is bounded if and only if it is continuous, and continuous if and only if the inverse image of every open set is open (Lemma~\ref{lem:cont-open}). For $O \subset X$ open, the inverse image of $O$ under $M^{-1}$ is
+Let $M : X \to Y$ be bounded, linear, one-to-one and onto, so that $M^{-1} : Y \to X$ exists; it is linear (\ref{sec:solving}). A linear map is bounded if and only if it is continuous (Proposition~\ref{prop:cont-bounded}), and continuous if and only if the inverse image of every open set is open (Lemma~\ref{lem:cont-open}). For $O \subset X$ open, the inverse image of $O$ under $M^{-1}$ is
 \[
 (M^{-1})^{-1}(O) = M(O) ,
 \]
@@ -8859,7 +8863,7 @@ Let $i : X \to X$, $i(x) = x$, be the identity. As a map $i : (X, \|\cdot\|_2) \
 \end{proof}
 
 \begin{exbox}[{{$C^1[a,b]$ is Not Complete in the Maximum Norm}}]\boxlabel{ex:C1-max-incomplete}
-This example explains the corresponding homework and midterm problems. $C^1[a,b]$ is complete in the norm $\|f\|_{C^1} = \max |f| + \max |f'|$ (Part 2 of the proof of Proposition~\ref{prop:C2-incomplete}), and $\max |f| \le \|f\|_{C^1}$. If $C^1[a,b]$ were also complete in $\max|f|$, Theorem~\ref{thm:equiv-norm} would make the two norms equivalent.
+$C^1[a,b]$ is complete in the norm $\|f\|_{C^1} = \max |f| + \max |f'|$ (Part 2 of the proof of Proposition~\ref{prop:C2-incomplete}), and $\max |f| \le \|f\|_{C^1}$. If $C^1[a,b]$ were also complete in $\max|f|$, Theorem~\ref{thm:equiv-norm} would make the two norms equivalent.
 %% FILL-IN: why they are not.
 They are not: $f_n(t) = \sin\bigl( n(t - a) \bigr)$ has $\max |f_n| \le 1$ but $\|f_n\|_{C^1} \ge |f_n'(a)| = n$. So $(C^1[a,b], \max|\cdot|)$ is not complete; its completion is $C[a,b]$ (Midterm Problem 1, \ref{sec:solving}).
 \end{exbox}
@@ -9084,9 +9088,9 @@ By the equivalent norm theorem (Theorem~\ref{thm:equiv-norm}), $\|\cdot\|_1$ and
 \begin{exbox}[Two Complete Norms That Are Not Equivalent]\boxlabel{ex:two-complete-norms-not-equivalent}
 \textit{(Not from lecture.)} Completeness of both norms alone does not suffice in Theorem~\ref{thm:equiv-norm-2}; the compatibility condition is needed.
 
-On an infinite-dimensional Banach space $(X, \|\cdot\|_1)$, choose a Hamel basis normalized to $\|e\|_1 = 1$, pick countably many of its elements $e_1, e_2, \ldots$, and let $\varphi : X \to X$ be the linear map with $\varphi(e_k) = k\, e_k$ that fixes the other basis elements. Put $\|x\|_2 = \|\varphi x\|_1$.
+On an infinite-dimensional Banach space $(X, \|\cdot\|_1)$, choose a Hamel basis (a linearly independent set whose finite linear combinations give all of $X$; it exists by Zorn's lemma, by the argument of Example~\ref{ex:additive-not-linear-hamel}) normalized to $\|e\|_1 = 1$, pick countably many of its elements $e_1, e_2, \ldots$, and let $\varphi : X \to X$ be the linear map with $\varphi(e_k) = k\, e_k$ that fixes the other basis elements. Put $\|x\|_2 = \|\varphi x\|_1$.
 \begin{enumerate}[label=(\arabic*)]
-    \item \emph{$\varphi$ is a linear bijection and is unbounded.} Let $\psi$ be the linear map with $\psi(e_k) = e_k / k$ that fixes the other basis elements (its inverse multiplies $e_k$ by $1/k$). Then $\psi\varphi$ and $\varphi\psi$ fix every basis element, so both are the identity, and $\varphi$ is bijective with inverse $\psi$. It is unbounded, since $\|e_k\|_1 = 1$ and $\|\varphi e_k\|_1 = k$.
+    \item \emph{$\varphi$ is a linear bijection and is unbounded.} Let $\psi$ be the linear map with $\psi(e_k) = e_k / k$ that fixes the other basis elements. Then $\psi\varphi$ and $\varphi\psi$ fix every basis element, so both are the identity, and $\varphi$ is bijective with inverse $\psi$. It is unbounded, since $\|e_k\|_1 = 1$ and $\|\varphi e_k\|_1 = k$.
     \item \emph{$\|\cdot\|_2$ is a complete norm.} It is a norm: $\|x\|_2 \ge 0$, with $\|x\|_2 = 0$ iff $\varphi x = 0$ iff $x = 0$ ($\varphi$ is one-to-one); homogeneity and the triangle inequality follow from the linearity of $\varphi$ and the corresponding properties of $\|\cdot\|_1$. By definition $\varphi$ is an isometry of $(X, \|\cdot\|_2)$ onto $(X, \|\cdot\|_1)$. If $\{x_n\}$ is Cauchy in $\|\cdot\|_2$, then $\{\varphi x_n\}$ is Cauchy in $\|\cdot\|_1$, so $\varphi x_n \to z$ for some $z \in X$; with $x = \psi z$, $\|x_n - x\|_2 = \|\varphi x_n - z\|_1 \to 0$.
     \item \emph{The norms are not equivalent.} $\|e_k\|_2 = \|k\, e_k\|_1 = k$ while $\|e_k\|_1 = 1$, so there is no $c$ with $\|x\|_2 \le c\, \|x\|_1$ for all $x$.
     \item \emph{The compatibility condition fails.} Otherwise Theorem~\ref{thm:equiv-norm-2} would make the two complete norms equivalent, contradicting (3).
@@ -9128,11 +9132,11 @@ Let $m \to \infty$: $\|x_n - x_0\|_X + \|A_\alpha x_n - A_\alpha x_0\|_Y \le \va
 So $x_n \to x_0$ in $\|\cdot\|_2$, and $(X, \|\cdot\|_2)$ is a Banach space. %% FILL-IN: completeness of Y is not used.
 (The limit $A_\alpha x_0$ comes from continuity of $A_\alpha$, not from completeness of $Y$; this is why $Y$ need only be normed.)
 
-\emph{Conclusion.} By the equivalent norm theorem (Theorem~\ref{thm:equiv-norm}), there is $C_0 > 0$ such that for all $x \in X$
+\emph{Conclusion.} By the equivalent norm theorem (Theorem~\ref{thm:equiv-norm}), there is $C > 0$ such that for all $x \in X$
 \[
-\|x\|_2 = \|x\|_X + \sup_{\alpha \in \Lambda} \|A_\alpha x\|_Y \le C_0\, \|x\|_X .
+\|x\|_2 = \|x\|_X + \sup_{\alpha \in \Lambda} \|A_\alpha x\|_Y \le C\, \|x\|_X .
 \]
-Hence $\|A_\alpha x\|_Y \le (C_0 - 1)\|x\|_X$ for all $\alpha$ and $x$, i.e.\ $\sup_{\alpha \in \Lambda} \|A_\alpha\| \le C_0 - 1 < \infty$.
+Hence $\|A_\alpha x\|_Y \le (C - 1)\|x\|_X$ for all $\alpha$ and $x$, i.e.\ $\sup_{\alpha \in \Lambda} \|A_\alpha\| \le C - 1 < \infty$. The statement holds with $C_0 = C$.
 \end{proof}
 
 %% >>> ADDED: example and remark (Claude)
@@ -9158,7 +9162,7 @@ The proof here is the closed-graph route; the more common proof, Lax's (\S10.1, 
 Let $X$ be a Banach space and $Y$ a normed linear space. Let $\{A_n\}$ be a sequence of bounded linear maps $X \to Y$, and $A \in \mathcal{L}(X, Y)$. Then $\lim_{n \to \infty} A_n x = Ax$ for all $x \in X$ if and only if
 \begin{enumerate}[label=(\arabic*)]
     \item $\sup_{n \in \mathbb{N}} \|A_n\| < \infty$, and
-    \item $\lim_{n \to \infty} A_n x = Ax$ for all $x \in D$, where $D$ is a dense subset of $X$.
+    \item there is a dense subset $D$ of $X$ with $\lim_{n \to \infty} A_n x = Ax$ for all $x \in D$.
 \end{enumerate}
 \laxref{\S15.2, Thm~6 (the direction $\Leftarrow$); \S15.3, Thm~7 and Cor~7$'$ (the direction $\Rightarrow$)}
 \end{thmbox}
@@ -9236,7 +9240,7 @@ by assumption.
 
 %% >>> ADDED: remark (Claude commentary)
 \begin{rembox}[{{Consistency $+$ Stability $=$ Convergence}}]\label{rem:lax-equivalence-names}
-In numerical analysis the three conditions have names. $T_n x \to Tx$ for every $x$ is \emph{consistency}: the discrete operator approximates the true one. $\sup_n \|T_n^{-1}\| < \infty$ is \emph{stability}: errors in the data are not amplified uniformly in $n$, which by the uniform boundedness principle is the same as $\sup_n \|T_n^{-1} y\| < \infty$ for each $y$. $T_n^{-1} y \to T^{-1} y$ is \emph{convergence} of the approximate solutions. The theorem says: for a consistent scheme, stability is equivalent to convergence. The identity $T_n^{-1} - T^{-1} = T_n^{-1}(T - T_n)T^{-1}$ is the heart of the proof. (Lax proved the version for initial value problems in 1956, with Richtmyer. In Lax's book it is Theorem~8 of \S34.3: an approximation $u^{(n)} = C_h^n x$ of a semigroup $Z(t)$, consistent with its generator, converges to $Z(t)x$ for all $x$ if and only if it is stable, $|C_h^n| \le \text{const}$ for $nh \le 1$. Necessity is again the uniform boundedness principle, and sufficiency rests on a telescoping identity for $C_h^n - Z(nh)$ of the same kind as the identity above. The version in the lecture is the stationary one, for equations $Tx = y$.)
+In numerical analysis the three conditions have names. $T_n x \to Tx$ for every $x$ is \emph{consistency}: the discrete operator approximates the true one. $\sup_n \|T_n^{-1}\| < \infty$ is \emph{stability}: errors in the data are amplified by at most a factor independent of $n$, which by the uniform boundedness principle is the same as $\sup_n \|T_n^{-1} y\| < \infty$ for each $y$. $T_n^{-1} y \to T^{-1} y$ is \emph{convergence} of the approximate solutions. The theorem says: for a consistent scheme, stability is equivalent to convergence. The identity $T_n^{-1} - T^{-1} = T_n^{-1}(T - T_n)T^{-1}$ is the heart of the proof. (Lax proved the version for initial value problems in 1956, with Richtmyer. In Lax's book it is Theorem~8 of \S34.3: an approximation $u^{(n)} = C_h^n x$ of a semigroup $Z(t)$, consistent with its generator, converges to $Z(t)x$ for all $x$ if and only if it is stable, $|C_h^n| \le \text{const}$ for $nh \le 1$. Necessity is again the uniform boundedness principle, and sufficiency rests on a telescoping identity for $C_h^n - Z(nh)$ of the same kind as the identity above. The version in the lecture is the stationary one, for equations $Tx = y$.)
 \end{rembox}
 %% <<< END ADDED
 
@@ -9334,7 +9338,7 @@ so $(x, e_n) \to 0$ as $n \to \infty$ for every $x \in H$. Since $H' = H$ (every
 \end{proof}
 
 \begin{exbox}[{{$\sin(mx) \rightharpoonup 0$ in $L^2[0, 2\pi]$}}]\boxlabel{ex:sin-weak}
-In $L^2([0, 2\pi])$ the functions $f_m(x) = \frac{1}{\sqrt\pi} \sin(mx)$, $m = 1, 2, \ldots$, form an orthonormal set (left to the class).
+In $L^2([0, 2\pi])$ the functions $f_m(x) = \frac{1}{\sqrt\pi} \sin(mx)$, $m = 1, 2, \ldots$, form an orthonormal set.
 %% FILL-IN: the orthonormality check, and the bar.
 (For $m, k \ge 1$, $\int_0^{2\pi} \sin(mx) \sin(kx)\, dx = \frac12 \int_0^{2\pi} \bigl( \cos((m-k)x) - \cos((m+k)x) \bigr) dx$, which is $0$ for $m \neq k$ and $\pi$ for $m = k$.) By Proposition~\ref{prop:on-weak}, for every $g \in L^2([0, 2\pi])$
 \[
@@ -9444,7 +9448,7 @@ It is important that $\ell$ is \emph{bounded}, and that $K$ is \emph{closed} and
 \[
 K_\varepsilon = \{ x \in X : \text{there is } y \in K \text{ with } \|x - y\| < \varepsilon \} .
 \]
-Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, and the previous theorem applies; or redo the previous proof from scratch.
+Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, and Theorem~\ref{thm:separation} applies; or redo its proof from scratch.
 
 %% FIGURE (board): redrawn from the sketch in Tianshuo's notes; labels by Claude
 \begin{center}
@@ -9585,7 +9589,7 @@ By Theorem~\ref{thm:weak-criterion}, $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\
 \begin{rembox}[Two Questions for Homework]\label{rem:weak-questions}
 \begin{enumerate}[label=(\arabic*)]
     \item \emph{$p = 1$.} Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition~\ref{prop:C-not-dense}), so the argument above does not apply; one has to test against $L^\infty$ functions. Homework.
-    \item \emph{Products.} If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, H\"older gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$. Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$. Finding an example is homework.
+    \item \emph{Products.} If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, H\"older gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem~\ref{thm:holder-fn} to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$. Finding an example is homework.
 \end{enumerate}
 Weak limits are useful but limited. A bounded sequence in infinite dimensions need not have a convergent subsequence; under certain circumstances it will have a weakly convergent one, but weak convergence does not commute with nonlinear operations.
 \end{rembox}
@@ -9631,7 +9635,7 @@ $\ell_n \overset{*}{\rightharpoonup} \ell_0$ does not imply $\ell_n \rightharpoo
     \item $e_n \not\rightharpoonup 0$ in $\ell^1$: for $a = (a_1, a_2, \ldots) \in \ell^\infty = (\ell^1)'$, $\langle e_n, a \rangle = a_n$, which need not converge, since $a$ is only bounded.
 \end{itemize}
 %% FILL-IN: a specific test element, and why there is no other weak limit.
-For instance $a = (1, 1, 1, \ldots)$ gives $\langle e_n, a \rangle = 1 \not\to 0$, and $a = (1, -1, 1, -1, \ldots)$ gives a sequence with no limit at all, so $\{e_n\}$ has no weak limit in $\ell^1$ (any weak limit would also be a weak-$*$ limit, hence $0$ by uniqueness). (The pairings are the bar-free ones, $\langle x, b \rangle = \sum_j x_j b_j$, of Corollary~\ref{cor:lp-dual-unbarred}.)
+For instance $a = (1, 1, 1, \ldots)$ gives $\langle e_n, a \rangle = 1 \not\to 0$, and $a = (1, -1, 1, -1, \ldots)$ gives a sequence with no limit at all, so $\{e_n\}$ has no weak limit in $\ell^1$ (any weak limit would also be a weak-$*$ limit by Proposition~\ref{prop:weak-implies-weak-star-dual}, hence $0$, since a weak-$*$ limit is a pointwise limit and therefore unique). (The pairings are the bar-free ones, $\langle x, b \rangle = \sum_j x_j b_j$, of Corollary~\ref{cor:lp-dual-unbarred}.)
 
 \textit{(Not from lecture.)} Lax's example (\S10.3, Example~5) is of the same kind: the averages $m_n(h) = \frac{n}{2} \int_{-1/n}^{1/n} h(t)\, dt$ are functionals on $C[-1, 1]$ that converge weak-$*$ to the point evaluation $h \mapsto h(0)$, but not weakly, since against a bounded function with a jump at $0$ the averages do not converge to its value at $0$.
 \end{exbox}
@@ -9743,7 +9747,7 @@ Let $X$ be a Banach space, $\{\ell_n\}_{n=1}^\infty \subset X'$, $\ell_0 \in X'$
 For $\|x\| \le 1$, $|\ell_0(x)| = \lim_n |\ell_n(x)| = \liminf_n |\ell_n(x)| \le \liminf_n \|\ell_n\|\, \|x\| \le \liminf_n \|\ell_n\|$. Take the supremum over $\|x\| \le 1$.
 \end{proof}
 
-Next lecture: under what conditions does a bounded sequence have a weak-$*$ convergent subsequence?
+The remaining question is under what conditions a bounded sequence has a weak-$*$ convergent subsequence.
 
 % ============================================================================
 % CHAPTER 9: FUNCTIONAL ANALYSIS AND QUANTUM MECHANICS
@@ -9785,7 +9789,7 @@ For $\ell \in X^*$ (Definition~\ref{def:dual-space}), its \textbf{norm} is
 \end{defbox}
 
 \begin{lembox}[The Dual Norm]\boxlabel{lem:dual-norm}
-For $\ell \in X^*$, the infimum $\|\ell\|$ is itself an admissible constant: $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$. Moreover $X^*$ is a linear space and $\|\cdot\|$ is a norm on it.
+Let $X$ be a normed linear space over $\mathbb{F}$. For $\ell \in X^*$, the infimum $\|\ell\|$ is itself an admissible constant: $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$. Moreover $X^*$ is a linear space and $\|\cdot\|$ is a norm on it.
 \end{lembox}
 
 \begin{proof}
@@ -9808,7 +9812,7 @@ $R(a) \in H^*$ is part (1) of the Riesz representation theorem (Theorem~\ref{thm
 \end{proof}
 
 \begin{rembox}\label{rem:qm-riesz}
-The Riesz map needs no basis, only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast MATH 591: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis --- the inner product is exactly the extra structure that removes the choice. The price is that $R$ is conjugate-linear, so over $\mathbb{C}$ the identification is with the complex conjugate space $\overline{H}$; in finite dimensions this is the conjugate transpose (Example~\ref{ex:riesz-map-cn-conjugate-transpose}). For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object; this is where the course is heading.
+The Riesz map needs no basis, only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast MATH 591: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis --- the inner product is exactly the extra structure that removes the choice. The price is that $R$ is conjugate-linear, so over $\mathbb{C}$ the identification is with the complex conjugate space $\overline{H}$; in finite dimensions this is the conjugate transpose (Example~\ref{ex:riesz-map-cn-conjugate-transpose}). For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object (\S\ref{sec:dual}, \S\ref{sec:duality}).
 \end{rembox}
 
 \begin{exbox}[The Riesz Map on $\mathbb{C}^n$ is the Conjugate Transpose]\boxlabel{ex:riesz-map-cn-conjugate-transpose}
@@ -9896,7 +9900,7 @@ $Y$ is finite-dimensional, hence closed (Corollary~\ref{cor:findim-closed}). By 
 \end{proof}
 
 \begin{exbox}[Parity]\boxlabel{ex:parity}
-For a particle in the symmetric box $[-1,1]$, the parity operator $(\Pi\psi)(x) = \psi(-x)$ has the even and odd states as its eigenspaces, with eigenvalues $+1$ and $-1$. By Proposition~\ref{prop:even-odd} these eigenspaces are closed and orthogonal, and $L^2[-1,1] = E \oplus O$. Writing $P_E$, $P_O$ for the orthogonal projections, $P_E + P_O = \Id$ and $\Pi = P_E - P_O$: the simplest resolution of the identity, with two projections, and the simplest spectral decomposition. It is why energy eigenstates of a symmetric potential can be chosen even or odd.
+For a particle in the symmetric box $[-1,1]$, the parity operator $(\Pi\psi)(x) = \psi(-x)$ has the even and odd states as its eigenspaces, with eigenvalues $+1$ and $-1$. By Proposition~\ref{prop:even-odd} these eigenspaces are closed and orthogonal, and $L^2[-1,1] = E \oplus O$, where $E$ and $O$ are the subspaces of even and of odd functions. Writing $P_E$, $P_O$ for the orthogonal projections, $P_E + P_O = \Id$ and $\Pi = P_E - P_O$: the simplest resolution of the identity, with two projections, and the simplest spectral decomposition. It is why energy eigenstates of a symmetric potential can be chosen even or odd.
 \end{exbox}
 
 \subsection{The Completeness Relation}
@@ -9913,7 +9917,7 @@ For fixed $x$, the partial sums $P_N x = \sum_{n \le N} (x, e_n) e_n$ differ fro
 \end{proof}
 
 \begin{propbox}[The Completeness Relation Does Not Hold in Norm]\boxlabel{prop:not-norm}
-If $\{e_n\}_{n \ge 1}$ is an infinite orthonormal set, then $\|\Id - P_N\| = 1$ for every $N$. In particular $P_N \not\to \Id$ in operator norm, even when $\{e_n\}$ is complete.
+If $\{e_n\}_{n \ge 1}$ is an infinite orthonormal set in a Hilbert space $H$ and $P_N = \sum_{n=1}^N |e_n\rangle\langle e_n|$, then $\|\Id - P_N\| = 1$ for every $N$. In particular $P_N \not\to \Id$ in operator norm, even when $\{e_n\}$ is complete.
 \end{propbox}
 
 \begin{proof}
@@ -9925,7 +9929,7 @@ Each truncation $P_N$ misses the directions $e_{N+1}, e_{N+2}, \ldots$ entirely,
 \end{rembox}
 
 \begin{corbox}[Inserting a Complete Set of States]\boxlabel{cor:insert}
-Let $\{e_n\}_{n \ge 1}$ be a complete orthonormal set in $H$. For all $x, y \in H$,
+Let $\{e_n\}_{n \ge 1}$ be a complete orthonormal set in a Hilbert space $H$. For all $x, y \in H$,
 \[
 \langle y | x \rangle = \sum_{n=1}^\infty \langle y | e_n \rangle \langle e_n | x \rangle ,
 \]
@@ -9941,7 +9945,7 @@ In the notation of these notes the claim is $(x, y) = \sum_n (x, e_n)(e_n, y)$. 
 \end{proof}
 
 \begin{exbox}[A Particle on a Ring]\boxlabel{ex:particle-ring}
-The Fourier basis $e_n(\theta) = e^{in\theta}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, of $L^2[0,2\pi]$ (Theorem~\ref{thm:fourier}) consists of the momentum eigenstates of a particle on a circle: $-i\,\frac{d}{d\theta} e_n = n\,e_n$, and $e_n$ is an eigenfunction of the free Hamiltonian $-\frac12 \frac{d^2}{d\theta^2}$ with energy $n^2/2$. Its completeness relation $\sum_{n \in \mathbb{Z}} |e_n\rangle\langle e_n| = \Id$ is the $L^2$ convergence of Fourier series, and Corollary~\ref{cor:insert} is Parseval's identity $\int_0^{2\pi} f\,\bar{g} = \sum_n c_n(f)\,\overline{c_n(g)}$. The spectrum is discrete because the configuration space is compact; compare \ref{sec:qm-continuous}.
+The Fourier basis $e_n(\theta) = e^{in\theta}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, of $L^2[0,2\pi]$ (Theorem~\ref{thm:fourier}) consists of the momentum eigenstates of a particle on a circle: $-i\,\frac{d}{d\theta} e_n = n\,e_n$, and $e_n$ is an eigenfunction of the free Hamiltonian $-\frac12 \frac{d^2}{d\theta^2}$ with energy $n^2/2$. Its completeness relation $\sum_{n \in \mathbb{Z}} |e_n\rangle\langle e_n| = \Id$ is the $L^2$ convergence of Fourier series, and Corollary~\ref{cor:insert} is Parseval's identity $\int_0^{2\pi} f\,\bar{g} = \sum_n c_n(f)\,\overline{c_n(g)}$. The spectrum is discrete because the configuration space is compact; compare \S\ref{sec:qm-continuous}.
 \end{exbox}
 
 % ============================================================================
@@ -9986,11 +9990,11 @@ $L^2(\mathbb{R}^n)$ is separable, and every orthonormal basis of it is countably
 \end{thmbox}
 
 \begin{proof}
-Separability is now also the case $p = 2$, $E = \mathbb{R}^n$ of Proposition~\ref{prop:Lp-separable} (Lecture 9). It is proved in the MATH 551 notes (Chapter \emph{$L^p$ Spaces}, subsection \emph{Density and Separability}): finite linear combinations of indicator functions of boxes with rational endpoints, with rational coefficients (with coefficients in $\mathbb{Q} + i\mathbb{Q}$ in the complex case), form a countable dense set. By Proposition~\ref{prop:sep-countable} every orthonormal basis is countable. It is not finite: the normalized indicators of disjoint unit cubes form an infinite orthonormal set, and a finite orthonormal basis $\{e_1, \ldots, e_N\}$ would make every $x$ a finite combination $\sum_{j \le N} (x, e_j) e_j$, so $L^2(\mathbb{R}^n)$ would have dimension at most $N$ and could not contain $N+1$ orthonormal (hence linearly independent) vectors.
+Separability is the case $p = 2$, $E = \mathbb{R}^n$ of Proposition~\ref{prop:Lp-separable}. It is also proved in the MATH 551 notes (Chapter \emph{$L^p$ Spaces}, subsection \emph{Density and Separability}): finite linear combinations of indicator functions of boxes with rational endpoints, with rational coefficients (with coefficients in $\mathbb{Q} + i\mathbb{Q}$ in the complex case), form a countable dense set. By Proposition~\ref{prop:sep-countable} every orthonormal basis is countable. It is not finite: the normalized indicators of disjoint unit cubes form an infinite orthonormal set, and a finite orthonormal basis $\{e_1, \ldots, e_N\}$ would make every $x$ a finite combination $\sum_{j \le N} (x, e_j) e_j$, so $L^2(\mathbb{R}^n)$ would have dimension at most $N$ and could not contain $N+1$ orthonormal (hence linearly independent) vectors.
 \end{proof}
 
 \begin{rembox}[There is No Dimension Mismatch]\label{rem:no-dimension-mismatch}
-The \emph{Hilbert dimension} of $H$ is the cardinality of an orthonormal basis; in $L^2(\mathbb{R}^n)$ it is countable, and by the theorem every orthonormal set, let alone basis, in $L^2(\mathbb{R}^n)$ is countable. So the uncountable family $\{|x\rangle\}$ cannot be an orthonormal set of $L^2$ --- and indeed its elements are not in $L^2$ at all, as the next two propositions show. The correct comparison is not ``countable basis versus uncountable basis'' but ``orthonormal basis versus a different kind of object.''
+The \emph{Hilbert dimension} of $H$ is the cardinality of an orthonormal basis; in $L^2(\mathbb{R}^n)$ it is countable, and by the theorem and Proposition~\ref{prop:sep-countable} every orthonormal set, let alone basis, in $L^2(\mathbb{R}^n)$ is countable. So the uncountable family $\{|x\rangle\}$ cannot be an orthonormal set of $L^2$ --- and indeed its elements are not in $L^2$ at all, as the next two propositions show. The correct comparison is not ``countable basis versus uncountable basis'' but ``orthonormal basis versus a different kind of object.''
 \end{rembox}
 
 \subsection{Position Has No Eigenvectors}
@@ -10093,11 +10097,11 @@ For a normalized state $\psi$, $\sum_{n,l,m} |(\psi, \psi_{nlm})|^2$ is the prob
 \[
 \sum_{n,l,m} |nlm\rangle\langle nlm| + \int_0^\infty dE\, \sum_{l,m} |E\,l\,m\rangle\langle E\,l\,m| = \Id,
 \]
-where, as with $|x\rangle$, the continuum ``states'' are not in $L^2$ and the integral stands for a projection-valued measure on $[0,\infty)$. By contrast, a system confined to a compact region (the ring of the example in \ref{sec:qm-completeness}, a particle in a box) or by a potential growing at infinity (the harmonic oscillator) has purely discrete spectrum, and its eigenstates alone form an orthonormal basis --- as the ring example shows, compactness forces discreteness. Hydrogen's potential decays at infinity, which is what lets the electron escape and creates the continuum.
+where, as with $|x\rangle$, the continuum ``states'' are not in $L^2$ and the integral stands for a projection-valued measure on $[0,\infty)$. By contrast, a system confined to a compact region (the ring of Example~\ref{ex:particle-ring}, a particle in a box) or by a potential growing at infinity (the harmonic oscillator) has purely discrete spectrum, and its eigenstates alone form an orthonormal basis --- as the ring example shows, compactness forces discreteness. Hydrogen's potential decays at infinity, which is what lets the electron escape and creates the continuum.
 \end{rembox}
 
 \begin{rembox}[To Be Continued]\label{rem:continued}
-Planned additions as the course proceeds: bounded operators and their adjoints (observables and the dagger, $\langle y | A x \rangle = \langle A^\dagger y | x \rangle$); self-adjoint and unitary operators (observables and time evolution); compact self-adjoint operators and the spectral theorem (the rigorous version of ``diagonalize the Hamiltonian''); and the precise relation between the spectrum of an operator and the measurement outcomes of the corresponding observable.
+Planned additions as the course proceeds: adjoints of bounded operators (observables and the dagger, $\langle y | A x \rangle = \langle A^\dagger y | x \rangle$); self-adjoint and unitary operators (observables and time evolution); compact self-adjoint operators and the spectral theorem (the rigorous version of ``diagonalize the Hamiltonian''); and the precise relation between the spectrum of an operator and the measurement outcomes of the corresponding observable.
 \end{rembox}
 
 % ============================================================================
@@ -10489,7 +10493,7 @@ To turn a map that is not one-to-one into one that is, pass to the quotient by i
 
 \begin{exbox}[Application (Lecture 15)]\boxlabel{ex:tech24}
 \begin{itemize}
-\item The induced map $M_0 : X/N(M) \to R(M)$ (Lecture 15, Theorem~\ref{thm:induced-map}), with $\|M_0\| = \|M\|$.
+\item The induced map $M_0 : X/N(M) \to R(M)$ (Theorem~\ref{thm:induced-map}), with $\|M_0\| = \|M\|$.
 \end{itemize}
 \end{exbox}
 
@@ -10582,7 +10586,7 @@ Hyperplane separation in a normed space (Theorem~\ref{thm:separation-normed}), f
 
 \chapter{Concordance with Lax}
 
-The course follows Lax, \emph{Functional Analysis}, Chapters 1, 3, 5, 6 and 15, but not always by the same route. This chapter records the differences so that the notes and the book can be read side by side: notation (Table~C.1), where the two routes diverge (C.2), which parts of the notes correspond to which parts of the book (C.3), and an index of every Lax result cited in the notes, ordered by Lax's chapter and section (C.4); within a section, items Lax does not number (definitions, displayed conditions) come first in the order the notes use them, followed by numbered results in Lax's numbering. The index is generated by \texttt{qa556.py} from the reference lines at the foot of the boxes, so it cannot drift from the notes.
+The course follows Lax, \emph{Functional Analysis}, Chapters 1, 3, 5, 6, 8, 10 and 15, but not always by the same route. This chapter records the differences so that the notes and the book can be read side by side: notation (Table~C.1), where the two routes diverge (C.2), which parts of the notes correspond to which parts of the book (C.3), and an index of every Lax result cited in the notes, ordered by Lax's chapter and section (C.4); within a section, items Lax does not number (definitions, displayed conditions) come first in the order the notes use them, followed by numbered results in Lax's numbering. The index is generated by \texttt{qa556.py} from the reference lines at the foot of the boxes, so it cannot drift from the notes.
 
 \section*{C.1 Notation}
 \addcontentsline{toc}{section}{C.1 Notation}
@@ -10649,13 +10653,13 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:noncompact} Compactness & \S5.2, Thm~6, Lemma~7 & Uniform convexity and Mazur--Ulam (\S5.2 and \S5.3) not covered. \\
 \ref{sec:inner-def}--\ref{sec:parallelogram-law} Inner products & \S6.1 & Jordan--von Neumann is Lax's Exercise~1 (HW3). \\
 \ref{sec:projection} Projection & \S6.2, Thms~2--3 & \\
-\ref{sec:riesz-rep} Riesz representation & \S6.3, Thm~4 & Lax--Milgram (Thm~6) not covered. \\
+\ref{sec:riesz-rep} Riesz representation & \S6.3, Thm~4 & Lax--Milgram (Thm~6) is treated in \S\ref{sec:lax-milgram}. \\
 \ref{sec:onb}--\ref{sec:onb-existence} Orthonormal bases & \S6.4; \S5.1 (separability) & Isometries of $H$ (Thm~10) not covered. Separability of $\ell^p$, $L^p$ proved in the notes (Lax asserts). The classification of separable Hilbert spaces is Lax's Exercise~10 (HW5). \\
 \ref{sec:bounded-maps} Bounded linear maps & \S15.1, Thms~1--3 & Lax assumes Banach spaces throughout \S15.1; not needed for Thm~1. \\
 \ref{sec:lax-milgram} Lax--Milgram & \S6.3, Thm~6 & Proved through the operator $A$ of Theorem~\ref{thm:form-operator}: one-to-one with a lower bound, closed range, dense range. \\
 \ref{sec:sobolev} Sobolev spaces & \S5.1, example (g) & Weak derivatives, $H^1_0$ and the Poincar\'e inequality are not in Lax's Chapters 1--15 as treated here. \\
-\ref{sec:duality} Duality in normed spaces & Ch.~8; \S5.1, Thm~5 & Normed Hahn--Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch.~8 has not been checked against the text here, so no Ch.~8 numbers are cited. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. \\
-\ref{sec:reflexive} Separable duals, reflexive spaces & Ch.~8 & Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch.~8 numbering not checked. $X$ reflexive $\iff$ $X'$ reflexive (Lecture 18) is not in Lax. \\
+\ref{sec:duality} Duality in normed spaces & Ch.~8; \S5.1, Thm~5 & Normed Hahn--Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch.~8 has not been checked against the text for this section, so no Ch.~8 numbers are cited for it. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. \\
+\ref{sec:reflexive} Separable duals, reflexive spaces & Ch.~8 & Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch.~8 numbering not checked for this section. $X$ reflexive $\iff$ $X'$ reflexive (Lecture 18) is not in Lax. \\
 \ref{sec:solving}--\ref{sec:open-mapping} Solving $Mx = y$; Baire category; open mapping & Ch.~15 & \S15.5 The open mapping principle: the image of the unit ball contains a ball (Thm~9), open mapping (Thm~10), Banach's inverse mapping theorem (Thm~11), closed maps and the closed graph theorem (definition before Thm~12, Thm~12), equivalent norms (Thm~13, for compatible norms), the Baire category principle (used in the proof of Thm~9, p.~169; sets of second category, Thm~16). \\
 \ref{sec:ubp} Uniform boundedness and approximation & \S10.1; \S15.2--15.3; \S15.5; \S34.3 & The second-category open mapping theorem is Lax's Thm~16 (\S15.5, an exercise there, with $Y$ Banach; in the lecture $Y$ is normed, and it turns out complete). The second equivalent norm theorem is Thm~13 of \S15.5. Uniform boundedness: Lax proves it from Baire in \S10.1 (Thms~2--3) and for operators in \S15.3 (Thm~7); the lecture derives it from the equivalent norm theorem with the norm $\|x\| + \sup_\alpha \|A_\alpha x\|$. Banach--Steinhaus: \S15.2 Thm~6 and \S15.3 Cor~7$'$. The Lax equivalence theorem is Thm~8 of \S34.3, for semigroups; the lecture's version is for equations $T_n x = y$. \\
 \ref{sec:weak} Weak and weak-star convergence & Ch.~10 (opening), \S10.1, \S10.3; \S8.4 & Definition and Examples~1--2 open Lax's Ch.~10. The weak convergence criterion is \S10.1 Thm~1 ($\Leftarrow$) with Thm~4$'$ (bounded); the norm bound Thm~5; Mazur's theorem Thm~6, proved there with support functions (\S8.4 Thm~17), here with the separation theorem in normed spaces (as in the proof of Thm~17). Weak-$*$: the definition and Thm~11 of \S10.3, the norm bound Exercise~6 there; Lax's example of weak-$*$ but not weak convergence (Example~5) uses measures on $[-1,1]$ instead of $\ell^1 = (c_0)'$. The weak-$*$ criterion is not in Lax. \\

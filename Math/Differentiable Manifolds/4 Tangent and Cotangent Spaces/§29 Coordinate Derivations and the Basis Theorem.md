@@ -312,9 +312,9 @@ The path must be the segment $a + t(r - a)$, equal to $a$ at $t = 0$ and to $r$ 
 ^thm-29-7
 
 > [!proof]+ Proof
-> *(Lecture 9. In lecture the derivation $\tilde D$ was introduced inside this proof, as the pushforward of $D$, and the pushforward construction was taken up only afterwards. The notes define the pushforward first, in [[§28 Derivations and the Abstract Tangent Space|§28]], so that the proof can cite it.)* Let $D \in T_pM$ and put $a = \varphi(p) = (r_0^1, \ldots, r_0^n)$. What has to be shown: the $n$ derivations $\partial/\partial x^i|_p$, which lie in $T_pM$ by Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-3|§29.3]], span $T_pM$ — this is the universal formula, Steps 1–3 — and are linearly independent, Step 4.
+> *(Lecture 9. In lecture the derivation $\tilde D$ was introduced inside this proof, as the pushforward of $D$, and the pushforward construction was taken up only afterwards. The notes define the pushforward first, in [[§28 Derivations and the Abstract Tangent Space|§28]], so that the proof can cite it.)* Let $D \in T_pM$ and put $a = \varphi(p)$. What has to be shown: the $n$ derivations $\partial/\partial x^i|_p$, which lie in $T_pM$ by Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-3|§29.3]], span $T_pM$ — this is the universal formula, Steps 1–3 — and are linearly independent, Step 4.
 >
-> *Step 1: push $D$ down.* Let $\tilde D = \varphi_{\ast p}D \in T_a\,\varphi(U)$, the chart pushforward of Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]] (with $D$ regarded as a derivation on germs on $U$, by the identification $T_pM = T_pU$ of Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]). By Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] with $F = \varphi$, $\tilde D[g] = D\big(\varphi_p^{\ast}[g]\big) = D[g \circ \varphi]$ for germs $g$ at $a$.
+> *Step 1: push $D$ down.* Let $\tilde D = \varphi_{\ast p}D \in T_a\,\varphi(U)$, the chart pushforward of Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]] (with $D$ regarded as a derivation on germs on $U$, by the identification $T_pM = T_pU$ of Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]). By Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] with $F = \varphi$, $\tilde D[g] = D\big(\varphi_p^{\ast}[g]\big) = D[g \circ \varphi]$ for germs $[g]$ at $a$.
 >
 > *Step 2: apply the Euclidean formula downstairs.* By Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-6|§29.6]] on the open set $\varphi(U)$, applied to the derivation $\tilde D$ at $a$: for every germ $[g]$ at $a$,
 >
@@ -356,7 +356,7 @@ The path must be the segment $a + t(r - a)$, equal to $a$ at $t = 0$ and to $r$ 
 ![[m591-12-8.svg]]
 
 $$
-\varphi^*[r^i] = [x^i], \qquad \varphi^*[f_\varphi] = [f]
+\varphi_p^*[r^i] = [x^i], \qquad \varphi_p^*[f_\varphi] = [f]
 $$
 
 *The proof in one diagram — the defining triangle of the pushforward, for the chart. Downstairs the Euclidean formula computes $\tilde D$ on everything; the two pullback identities displayed under the diagram carry the answer back upstairs, turning $\tilde D[r^i]$ into $D[x^i]$ and $\tilde D[f_\varphi]$ into $D[f]$.*
@@ -376,14 +376,14 @@ $$
 > T^{\mathrm{geo}}_pM \longrightarrow T_pM, \qquad v \longmapsto D_v,
 > $$
 >
-> from the geometric tangent space (a subspace of $\mathbb{R}^{n+k}$) to the abstract tangent space (derivations at $p$) is an isomorphism of vector spaces.
+> from the geometric tangent space (a subspace of $\mathbb{R}^{n+k}$) to the abstract tangent space (derivations at $p$) is an isomorphism of vector spaces. Here $D_v$ is the directional derivative of Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]], formed on a piece of $M$ around $p$ that is a graph: $D_v(f) = \frac{d}{dt}\big|_{t=0} f(\sigma(t))$ for any smooth curve $\sigma$ in $M$ with $\sigma(0) = p$ and $\sigma'(0) = v$ (Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]](2)).
 >
 > *Lee: Propositions 3.2, 5.37 and 5.38*
 
 ^thm-29-8
 
 > [!proof]+ Proof
-> **Announced in lecture.** Stated in lecture: the ambient and the abstract tangent spaces are the same space defined differently, but this has to be proved. Injectivity is Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]; that $D_v$ really is a derivation is Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]]; surjectivity follows from the basis theorem (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), both spaces having dimension $n$. In detail:
+> *(Announced in lecture: the ambient and the abstract tangent spaces are the same space defined differently, but this has to be proved.)* Injectivity is Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]; that $D_v$ really is a derivation is Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]]; surjectivity follows from the basis theorem (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), both spaces having dimension $n$. In detail:
 >
 > *The map lands in $T_pM$.* Near $p$, $M$ is the graph of a smooth function, after permuting coordinates (Step 2 of the proof of Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), and passing to this open piece changes neither the geometric tangent space (Lemma [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]]) nor the germs at $p$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]); so $D_v$ is defined by Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]]. By Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]](1), $D_v(f)$ depends only on the germ $[f]$, so $D_v$ is a map $C_p^\infty(M) \to \mathbb{R}$; by (3) it is linear and obeys the Leibniz rule, so it is a derivation at $p$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]), $D_v \in T_pM$; and by (2) it does not depend on the graph piece used, only on $v$.
 >
@@ -450,7 +450,7 @@ $$
 This is less obvious than it looks: the space of germs $C^\infty_p(M)$ ([[§27 Germs#^def-27-2|Def. §27.2]]) on which the derivations act is infinite-dimensional, and it is the Hadamard lemma ([[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]]) behind the basis theorem that cuts the derivations down to exactly $n$ dimensions.
 
 > [!theorem] Corollary §29.11: Smooth Invariance of Dimension
-> If $U \subseteq \mathbb{R}^m$ and $V \subseteq \mathbb{R}^n$ are nonempty open sets and $F : U \to V$ is a diffeomorphism ([[§17 Differentiable Structures#^def-17-3|Def. §17.3]]), then $m = n$. Consequently two smooth charts ([[§19 Smooth Functions and Smooth Maps#^def-19-1|Def. §19.1]]) of a smooth manifold at the same point have targets of the same dimension.
+> If $U \subseteq \mathbb{R}^m$ and $V \subseteq \mathbb{R}^n$ are nonempty open sets and $F : U \to V$ is a diffeomorphism, that is, a bijection with $F$ and $F^{-1}$ smooth (the condition of Definition [[§17 Differentiable Structures#^def-17-3|§17.3]], without assuming $m = n$; by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], a diffeomorphism in the sense of Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]] for the standard smooth structures), then $m = n$. Consequently two smooth charts ([[§19 Smooth Functions and Smooth Maps#^def-19-1|Def. §19.1]]) of a smooth manifold at the same point have targets of the same dimension.
 
 ^cor-29-11
 

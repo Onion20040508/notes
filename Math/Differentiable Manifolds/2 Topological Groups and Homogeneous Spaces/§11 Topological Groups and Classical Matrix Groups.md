@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Reference: Lee Ch. 7 (“Lie Groups”). For the calculus: MATH 452 notes ([[§15 The Implicit Function Theorem|Implicit Function Theorem]]).*
 
 > [!remark] Remark: Why This Section
-> Topological groups are the precursor of *Lie groups*, one of the main topics later in the course; and the classical matrix groups introduced here recur throughout the course. Besides being examples of manifolds in their own right ([[§12 The Classical Groups Are Topological Manifolds|§12, The Classical Groups Are Topological Manifolds]]), they are the groups whose *actions* produce the quotient manifolds of [[§13 Group Actions and Orbit Spaces|§13]]–[[§14 Homogeneous Spaces|§14]]: spheres, projective spaces, Grassmannians.
+> Topological groups are the precursor of *Lie groups*, one of the main topics later in the course; and the classical matrix groups introduced here recur throughout the course. Besides being examples of manifolds in their own right ([[§12 The Classical Groups Are Topological Manifolds|§12, The Classical Groups Are Topological Manifolds]]), they are the groups whose *actions* produce the quotient manifolds of [[§13 Group Actions and Orbit Spaces|§13]]–[[§15 The Topology of G∕H and Real Grassmannians|§15]]: spheres, projective spaces, Grassmannians.
 
 ^rem-11-1
 
@@ -192,7 +192,7 @@ tags: [differentiable-manifolds, math591]
 > - The smooth structure on $\operatorname{Mat}(n,\mathbb{R})$, of which $\mathrm{GL}(n,\mathbb{R})$ is an open subset: [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]; all the classical groups together: [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]].
 > - The inverse by cofactors, $g^{-1} = \operatorname{adj}(g)/\det(g)$, used for continuity of inversion: [[§27 Cramer’s Rule, Volume, and Linear Transformations#^thm-27-2|235 Thm. §27.2]], with the adjugate of [[§27 Cramer’s Rule, Volume, and Linear Transformations#^def-27-2|235 Def. §27.2]].
 
-The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$, and $\mathrm{U}(1) = S^1$ are collected in [[§16 The Classical Groups|§16]].
+The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, and why $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$ (the groups of Definitions [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|§11.7]] and [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|§11.8]] below), are collected in [[§16 The Classical Groups|§16]]; $\mathrm{U}(1) = S^1$ is Example [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|§11.3]].
 
 > [!definition] Definition §11.6: Special Linear Group
 > $\mathrm{SL}(n,\mathbb{R}) = \det^{-1}(1) \subseteq \mathrm{GL}(n,\mathbb{R})$, the matrices of determinant $1$. It is a subgroup ($\det$ is multiplicative), hence a topological group with the subspace topology ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-1|Proposition §11.1]]), and it is closed in $\operatorname{Mat}(n,\mathbb{R})$ (preimage of the closed set $\{1\}$).
@@ -203,7 +203,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 
 > [!remark]- Connections
 > - The group in 493: [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]]; $\mathrm{SL}_n = \ker\det$, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]].
-> - $\mathrm{SL}(n,\mathbb{R})$ is a manifold: [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]] below.
+> - $\mathrm{SL}(n,\mathbb{R})$ is a manifold: [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]].
 
 > [!definition] Definition §11.7: Orthogonal Group
 > The **orthogonal group** is
@@ -300,7 +300,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 > \mathrm{U}(n) = \{\, g \in \mathrm{GL}(n,\mathbb{C}) \mid g^{-1} = \bar{g}^{\,T} \,\},
 > $$
 >
-> where $\bar g$ is the entrywise complex conjugate; $\bar g^{\,T}$ is also written $g^\dagger$ or $g^*$. It is the analogue of $\mathrm{O}(n)$ with the dot product replaced by the Hermitian inner product $\langle z, w \rangle = \sum_j z_j \bar w_j$: $g \in \mathrm{U}(n)$ iff $\langle gz, gw \rangle = \langle z, w \rangle$ for all $z, w$ (same proof as [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|Proposition §11.5]], with $e_i^T \bar{g}^{\,T} g\, e_j$ in place of $e_i^T g^T g\, e_j$).
+> where $\bar g$ is the entrywise complex conjugate; $\bar g^{\,T}$ is also written $g^\dagger$ or $g^*$. It is the analogue of $\mathrm{O}(n)$ with the dot product replaced by the Hermitian inner product $\langle z, w \rangle = \sum_j z_j \bar w_j$: $g \in \mathrm{U}(n)$ iff $\langle gz, gw \rangle = \langle z, w \rangle$ for all $z, w$ (same proof as [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|Proposition §11.5]], with $\langle ge_i, ge_j \rangle = e_i^T g^T \bar{g}\, e_j$ in place of $e_i^T g^T g\, e_j$: it gives $g^T \bar{g} = I$, and taking complex conjugates, $\bar{g}^{\,T} g = I$).
 >
 > *Lee: Examples 7.29 and 7.30*
 

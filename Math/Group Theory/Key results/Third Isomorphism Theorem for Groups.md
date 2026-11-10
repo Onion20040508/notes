@@ -21,7 +21,7 @@ tags: [group-theory, hub]
 - [[§41 The First and Second Isomorphism Theorems#^thm-41-1|Theorem §41.1: First Isomorphism Theorem]]
 - [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|Proposition §42.1: Images of Subgroups Containing N]]
 - [[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-1|Remark: Notation A/N]]
-- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4: [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4∣Quotients Along the Correspondence]]]]
+- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4: Quotients Along the Correspondence]]
 
 ## Used in (Group Theory)
 - [[§48 Solvable Groups#^prop-48-6|Proposition §48.6: The Quotients of the Image Chain in G/N]]

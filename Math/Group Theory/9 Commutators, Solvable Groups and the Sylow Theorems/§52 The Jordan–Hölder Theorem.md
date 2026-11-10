@@ -61,7 +61,7 @@ tags: [group-theory, math493]
 *(Figure after the board, in three steps.)* The case $m = n = 3$; the top row of the grid is the $X$-series and the right column the $Y$-series. (a) The horizontal edges: in each column, “$=$” (dashed) up to the changeover, then $S_i$. (b) The vertical edges: in each row, “$=$” up to the changeover, then $T_j$. (c) The changeover squares (shaded) coincide; they are crossing squares, one in each row and each column, like the $1$s of a permutation matrix. Each pipe comes down from $S_i$ and turns right to $T_{\sigma(i)}$; here $S_1 \cong T_2$, $S_2 \cong T_3$, $S_3 \cong T_1$, the matching drawn on the board. Where two pipes cross (a square of type (i)), nothing happens.
 
 > [!remark] Remark: Peeling Off Atoms
-> Read a composition series from the top: $G = G_N \trianglerighteq G_{N-1} \trianglerighteq \cdots \trianglerighteq G_0 = \{e\}$ peels off one simple quotient $G_N/G_{N-1}$ at a time, each step passing to a smaller normal subgroup. The theorem says that in whatever order the pieces are peeled off, the same atoms come off, with the same multiplicities. This is the lecture's justification for treating simple groups as the right objects to understand first.
+> Read a composition series from the top: $G = G_N \trianglerighteq G_{N-1} \trianglerighteq \cdots \trianglerighteq G_0 = \{e\}$ peels off one simple quotient $G_N/G_{N-1}$ at a time, each step passing to a smaller [[§38 Normal Subgroups#^def-38-1|normal subgroup]]. The theorem says that in whatever order the pieces are peeled off, the same atoms come off, with the same multiplicities. This is the lecture's justification for treating simple groups as the right objects to understand first.
 >
 > *Source: lecture 10/30*
 
@@ -141,7 +141,7 @@ tags: [group-theory, math493]
 ^ex-52-4
 
 > [!remark]- Connections
-> - The permutation relating two complete flags is their relative position in the Bruhat decomposition: [[§55 The Sylow Theorems#^rem-55-3|the remark The Bruhat Decomposition]] (§55, office hours 11/4).
+> - The permutation relating two complete flags is their relative position in the Bruhat decomposition: [[§55 The Sylow Theorems#^rem-55-3|the remark Flags and Relative Position]] and Proposition [[§55 The Sylow Theorems#^prop-55-13|§55.13]] (§55, office hours 11/4).
 
 ![[m493-50-4.svg]]
 

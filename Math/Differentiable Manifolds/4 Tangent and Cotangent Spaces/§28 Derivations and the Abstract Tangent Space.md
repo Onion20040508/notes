@@ -130,7 +130,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!theorem] Lemma §28.2: First Properties of Derivations
 > Let $D$ be a derivation at $p$, and $I_p$, $I_p^2$ as in Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-3|§28.3]] and [[§28 Derivations and the Abstract Tangent Space#^def-28-4|§28.4]].
-> 1. $D$ annihilates constants: if $c \in \mathbb{R}$ and $\underline{c}$ denotes the germ of the constant function $c$, then $D[\underline{c}] = 0$. Consequently $D[f] = D\big[f - \underline{f(p)}\big]$, so $D$ is determined by its values on $I_p$.
+> 1. $D$ annihilates constants: if $c \in \mathbb{R}$ and $\underline{c}$ denotes the constant function with value $c$, then $D[\underline{c}] = 0$. Consequently $D[f] = D\big[f - \underline{f(p)}\big]$, so $D$ is determined by its values on $I_p$.
 > 2. $D$ annihilates products of vanishing germs: if $[f], [g] \in I_p$, then $D([f][g]) = 0$. Consequently $D$ vanishes on all of $I_p^2$.
 >
 > *Lee: Lemmas 3.1 and 3.4*
@@ -164,7 +164,7 @@ tags: [differentiable-manifolds, math591]
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§27 Germs#^prop-27-2|§27.2]]
 
-Both parts were set as an exercise in Lecture 9; (2) is a direct consequence of the product rule and is part of a problem on Assignment 3, which introduces the ideal $I_p$ under that name. In commutative algebra the same ideal is written $\mathfrak{m}_p$, the notation used in the [[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|remark]] at the end of [[§29 Coordinate Derivations and the Basis Theorem|§29, Coordinate Derivations and the Basis Theorem]].
+Both parts were set as an exercise in Lecture 9; (2) is a direct consequence of the product rule and is part of a problem on Assignment 3, which introduces the ideal $I_p$ under that name. In commutative algebra the same ideal is written $\mathfrak{m}_p$; the [[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|remark]] *A Derivation Sees Only the First Derivatives* in [[§29 Coordinate Derivations and the Basis Theorem|§29, Coordinate Derivations and the Basis Theorem]] returns to it, under the name $I_p$.
 
 > [!remark] Remark
 > These two are exactly what must be shown before the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|basis theorem]]. They are the entire reason the [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|Taylor–Hadamard]] expansion collapses: the constant term dies by (1), the quadratic remainder dies by (2), and only the linear term survives.
@@ -244,7 +244,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 ^prop-28-4
 
 > [!proof]+ Proof
-> *Well defined.* For a representative $(g, V)$, the set $F^{-1}(V)$ is open and contains $p$ because $F$ is continuous, and $g \circ F$ is smooth there by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]. If $(g, V)$ and $(g', V')$ represent the same germ at $F(p)$, then $g = g'$ on some open $W$ with $F(p) \in W \subseteq V \cap V'$; so $g \circ F = g' \circ F$ on the open set $F^{-1}(W) \ni p$, and the two pulled-back germs at $p$ are equal.
+> *Well defined.* For a representative $(g, V)$, the set $F^{-1}(V)$ is open and contains $p$ because $F$ is continuous, and $g \circ F$ is smooth there by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], applied to $g$ and the restriction $F|_{F^{-1}(V)} : F^{-1}(V) \to V$, which is smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]](2),(3). If $(g, V)$ and $(g', V')$ represent the same germ at $F(p)$, then $g = g'$ on some open $W$ with $F(p) \in W \subseteq V \cap V'$; so $g \circ F = g' \circ F$ on the open set $F^{-1}(W) \ni p$, and the two pulled-back germs at $p$ are equal.
 >
 > *Algebra homomorphism.* Composition with $F$ respects the pointwise operations: $(g + h)\circ F = g \circ F + h \circ F$, $(gh) \circ F = (g\circ F)(h \circ F)$, $(\lambda g)\circ F = \lambda (g \circ F)$, and $1 \circ F = 1$, since each side takes the same value at every point $q$ (for instance $((g+h) \circ F)(q) = g(F(q)) + h(F(q))$). To pass to germs, let $(g, V)$ and $(h, V')$ represent $[g]$ and $[h]$, and let $W$ be open with $F(p) \in W \subseteq V \cap V'$, so that $[g] + [h] = [g|_W + h|_W]$ (Proposition [[§27 Germs#^prop-27-2|§27.2]]). The set $F^{-1}(W)$ is open, contains $p$, and lies in the domains of $g \circ F$ and $h \circ F$, so by the definition of the sum of germs at $p$,
 >
@@ -260,7 +260,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 
 ^pf-28-4
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^prop-27-2|§27.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§27 Germs#^def-27-3|Def. §27.3]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^prop-27-2|§27.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]], [[§27 Germs#^def-27-3|Def. §27.3]]
 
 > [!definition] Definition §28.6: Pushforward — the Differential
 > Let $F : M \to N$ be smooth and $p \in M$, and let $D \in T_pM$ be a tangent vector at $p$ — that is, a derivation at $p$, a linear map $D : C^\infty_p(M) \to \mathbb{R}$ satisfying the Leibniz rule. The **pushforward** of $D$ along $F$ is the map
@@ -345,7 +345,7 @@ Every object of this section, with what it is and where it lives. The rows go in
 | $F_{*p}D$ | a tangent vector at $F(p)$: a derivation, a linear map $C^\infty_{F(p)}(N) \to \mathbb{R}$ | $T_{F(p)}N$ |
 | $(F_{*p}D)[g]$ | a real number, equal to $D[g \circ F]$ | $\mathbb{R}$ |
 
-The board justified the derivation property with “since $F_p^{\ast}$ is a ring morphism.” That is one of the two facts used, and not quite enough on its own: the Leibniz rule *at $F(p)$* needs the coefficients $g(F(p))$ and $h(F(p))$, and these appear only because pullback is compatible with evaluation, $(g \circ F)(p) = g(F(p))$ — the third equality above. It is automatic here, but it is a separate property from multiplicativity, and it is the one that moves the base point from $p$ to $F(p)$.
+The board justified the derivation property with “since $F_p^{\ast}$ is a ring morphism.” That is one of the two facts used, and not quite enough on its own: the Leibniz rule *at $F(p)$* needs the coefficients $g(F(p))$ and $h(F(p))$, and these appear only because pullback is compatible with evaluation, $(g \circ F)(p) = g(F(p))$ — the last equality in the Leibniz computation of the proof above. It is automatic here, but it is a separate property from multiplicativity, and it is the one that moves the base point from $p$ to $F(p)$.
 
 > [!theorem] Theorem §28.6: The Chain Rule
 > If $F : M \to N$ and $G : N \to P$ are smooth and $p \in M$, then
@@ -398,7 +398,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 ^cor-28-7
 
 > [!proof]+ Proof
-> Since $\Phi$ is a diffeomorphism, $\Phi$ and $\Phi^{-1}$ are both smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]), so their pushforwards are defined, and they are linear by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]. Apply Proposition [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]] to $\Phi^{-1} \circ \Phi = \mathrm{id}_M$ at $p$ and to $\Phi \circ \Phi^{-1} = \mathrm{id}_N$ at $\Phi(p)$, using $\Phi^{-1}(\Phi(p)) = p$:
+> Since $\Phi$ is a diffeomorphism, $\Phi$ and $\Phi^{-1}$ are both smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]), so their pushforwards are defined, and they are linear by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]. Apply Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]] to $\Phi^{-1} \circ \Phi = \mathrm{id}_M$ at $p$ and to $\Phi \circ \Phi^{-1} = \mathrm{id}_N$ at $\Phi(p)$, using $\Phi^{-1}(\Phi(p)) = p$:
 >
 > $$
 > (\Phi^{-1})_{\ast \Phi(p)} \circ \Phi_{\ast p} = (\Phi^{-1} \circ \Phi)_{\ast p} = (\mathrm{id}_M)_{\ast p} = \mathrm{id}_{T_pM}, \qquad

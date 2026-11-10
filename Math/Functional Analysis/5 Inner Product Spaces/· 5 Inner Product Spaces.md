@@ -9,9 +9,9 @@ tags: [chapter, functional-analysis]
 
 A norm measures length. An inner product measures length *and* angle, and in particular gives a meaning to perpendicularity — the structure whose absence forced the quotient space to stand in for the orthogonal complement in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] and forced [[§20 Compactness and the Unit Ball#^lem-20-2|Riesz's lemma]] to stand in for an orthogonal unit vector in [[§20 Compactness and the Unit Ball|§20]]. Spaces carrying one are much closer to $\mathbb{R}^n$ than a general normed space is, and are the setting for the strongest results of the subject.
 
-**Builds on:** [[· 1 Linear Spaces|1 Linear Spaces]] (8), [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (2), [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (30), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (15), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (1)
-**Used by:** [[· 1 Linear Spaces|1 Linear Spaces]] (2), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (49), [[· 7 Inverses, Open Maps, and Baire Category|7 Inverses, Open Maps, and Baire Category]] (1), [[· 8 Weak Convergence|8 Weak Convergence]] (2), [[· 9 Functional Analysis and Quantum Mechanics|9 Functional Analysis and Quantum Mechanics]] (33)
-**Builds on (other subjects):** [[Measure Theory]] (11), [[Single Variable Analysis]] (4)
+**Builds on:** [[· 1 Linear Spaces|1 Linear Spaces]] (10), [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (2), [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (32), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (16), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (1)
+**Used by:** [[· 1 Linear Spaces|1 Linear Spaces]] (2), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (52), [[· 7 Inverses, Open Maps, and Baire Category|7 Inverses, Open Maps, and Baire Category]] (1), [[· 8 Weak Convergence|8 Weak Convergence]] (4), [[· 9 Functional Analysis and Quantum Mechanics|9 Functional Analysis and Quantum Mechanics]] (33)
+**Builds on (other subjects):** [[Measure Theory]] (13), [[Single Variable Analysis]] (6)
 
 ## Sections
 - [[§22 Definition and Examples]]
@@ -35,7 +35,7 @@ A norm measures length. An inner product measures length *and* angle, and in par
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Theorem §23.1: Cauchy–Schwarz]]: 54 later results
-- [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-2|Theorem §23.2: The Inner Product Induces a Norm]]: 49 later results
-- [[§25 Projection and Orthogonal Decomposition#^lem-25-1|Lemma §25.1: The Inner Product is Continuous]]: 47 later results
-- [[§24 The Parallelogram Law and Jordan–von Neumann#^prop-24-1|Proposition §24.1: Parallelogram Law and Polarization]]: 46 later results
+- [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Theorem §23.1: Cauchy–Schwarz]]: 56 later results
+- [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-2|Theorem §23.2: The Inner Product Induces a Norm]]: 50 later results
+- [[§25 Projection and Orthogonal Decomposition#^lem-25-1|Lemma §25.1: The Inner Product is Continuous]]: 48 later results
+- [[§24 The Parallelogram Law and Jordan–von Neumann#^prop-24-1|Proposition §24.1: Parallelogram Law and Polarization]]: 47 later results

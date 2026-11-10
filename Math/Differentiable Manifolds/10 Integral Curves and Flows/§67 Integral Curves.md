@@ -46,7 +46,7 @@ This is the key notion of the chapter, familiar from ordinary differential equat
 > [!proof]+ Proof
 > *(Not from lecture; added to answer how $\dot c$ is defined when $M$ is a general manifold.)* *Over $c$.* $\dot c(t) \in T_{c(t)}M$ by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]], so $\pi(\dot c(t)) = c(t)$ (Definition [[§51 The Tangent Bundle#^def-51-2|§51.2]]).
 >
-> *Smooth.* Let $t_0 \in I$ and $(U, \varphi = (x^1, \ldots, x^m))$ a chart at $c(t_0)$; on the open interval $I_0 = c^{-1}(U) \ni t_0$, $\dot c$ takes values in $TU$. In the chart $\tilde\varphi$ of $TM$ over $U$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]), whose last $m$ entries are the components in the coordinate basis, Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-2|§31.2]] gives
+> *Smooth.* Let $t_0 \in I$ and $(U, \varphi = (x^1, \ldots, x^m))$ a chart at $c(t_0)$; on the open set $I_0 = c^{-1}(U) \ni t_0$, $\dot c$ takes values in $TU$. In the chart $\tilde\varphi$ of $TM$ over $U$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]), whose last $m$ entries are the components in the coordinate basis, Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-2|§31.2]] gives
 >
 > $$
 > \tilde\varphi\big(\dot c(t)\big) = \Big(x^1(c(t)), \ldots, x^m(c(t)),\ (x^1 \circ c)'(t), \ldots, (x^m \circ c)'(t)\Big), \qquad t \in I_0 ,
@@ -138,7 +138,7 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 
 ![[m591-67-a5.gif|420]]
 
-*(Not from lecture; animation added, vault only.)* The lift in the tangent bundle, for the field of [[§56 Vector Fields#^def-56-1|Definition §56.1]]'s figure on $S^1$, $c(\theta) = 0.55 + 0.35\sin\theta$, with $TS^1$ drawn as a cylinder. The integral curve $c(t)$ (blue, with its velocity arrow) runs around the circle, faster where $c$ is larger. Its lift $\tilde c(t) = (c(t), \dot c(t))$ (red) runs along the section $\mathbf{X}(S^1)$ (green), as Proposition §67.1 says. One turn takes $2\pi/\sqrt{0.55^2 - 0.35^2} = 14.81$.
+*(Not from lecture; animation added, vault only.)* The lift in the tangent bundle, for the field $(0.55 + 0.35\sin\theta)\,\partial/\partial\theta$ of Definition [[§56 Vector Fields#^def-56-1|§56.1]]'s figure on $S^1$, with $TS^1$ drawn as a cylinder. The integral curve $c(t)$ (blue, with its velocity arrow) runs around the circle, faster where the coefficient $0.55 + 0.35\sin\theta$ is larger. Its lift $\tilde c(t) = (c(t), \dot c(t))$ (red) runs along the section $\mathbf{X}(S^1)$ (green), as Proposition §67.1 says. One turn takes $2\pi/\sqrt{0.55^2 - 0.35^2} = 14.81$.
 
 > [!theorem] Proposition §67.3: An Integral Curve Returns with the Same Velocity
 > Let $c : I \to M$ be an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$. If $c(t_1) = c(t_2)$ for some $t_1, t_2 \in I$, then $\dot c(t_1) = \dot c(t_2)$. Hence a smooth curve that passes through a point twice with different velocities is an integral curve of no vector field.
@@ -190,7 +190,7 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 ^lem-67-4
 
 > [!proof]+ Proof
-> *(Lecture 24: immediate from the chain rule; filled in.)* Both domains are open intervals (for $\lambda = 0$ the second is all of $\mathbb{R}$). Fix $t$ in the domain and a germ $f$ at $\tilde c(t)$; by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and the chain rule for real functions of one variable:
+> *(Lecture 24: immediate from the chain rule; filled in.)* Both domains are open intervals (for $\lambda = 0$ the second is all of $\mathbb{R}$ if $0 \in I$, and empty if $0 \notin I$, when there is nothing to prove). Fix $t$ in the domain and a germ $f$ at $\tilde c(t)$; by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and the chain rule for real functions of one variable:
 >
 > $$
 > \dot{\tilde c}(t)[f] = \frac{d}{dt} f\big(c(t + t_0)\big) = (f \circ c)'(t + t_0) = \dot c(t + t_0)[f] = \mathbf{X}_{c(t + t_0)}[f] = \mathbf{X}_{\tilde c(t)}[f]
@@ -238,6 +238,6 @@ Time can always be translated, and this is used often below. Rescaling a field p
 
 ^pf-67-5
 
-*Uses:* [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§59 Related Vector Fields#^def-59-1|Def. §59.1]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§59 Related Vector Fields#^def-59-1|Def. §59.1]]
 
-This is a kind of naturality that recurs later in greater generality (Lee, Proposition 9.6: a smooth $F$ takes integral curves of $\mathbf{X}$ to integral curves of $\mathbf{Y}$ for all integral curves exactly when $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related.)
+This is a kind of naturality that recurs later in greater generality (Proposition [[§70 Complete Vector Fields#^prop-70-10|§70.10]]; Lee, Proposition 9.6: a smooth $F$ takes integral curves of $\mathbf{X}$ to integral curves of $\mathbf{Y}$ for all integral curves exactly when $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related.)

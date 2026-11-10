@@ -172,7 +172,7 @@ A metric space that is not complete can be enlarged to one that is, by adjoining
 
 ^def-12-3
 
-Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit in $M$: both terms lie in $M$. The relation says the two sequences are heading for the same place. If one of them converges in $M$, so does the other, to the same limit.
+Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit in $M$: both terms lie in $M$. The relation says the two sequences are heading for the same place. If one of them converges in $M$, so does the other, to the same limit. The relation $\sim$ is an equivalence relation: $d(x_n, x_n) = 0$ gives reflexivity, $d(x_n, y_n) = d(y_n, x_n)$ gives symmetry, and $d(x_n, z_n) \le d(x_n, y_n) + d(y_n, z_n)$ gives transitivity.
 
 > [!definition] Definition §12.4: Completion
 > The **completion** $\overline{M}$ of a metric space $M$ is the set of equivalence classes of Cauchy sequences in $M$ under $\sim$:

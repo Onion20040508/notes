@@ -25,7 +25,7 @@ In [[§55 The Sylow Theorems|§55]], a group of order $pq$ with $q \not\equiv 1 
 > [!proof]+ Proof
 > *Idea:* $n_q$ divides $p$ and is $\equiv 1 \pmod q$, so $n_q = 1$; the product formula gives $QP = G$, and $(y, x) \mapsto yx$ turns the semidirect multiplication into the multiplication of $G$.
 >
-> *(Problem Set 8, Problem 8.3(2), as submitted, where $q \equiv 1 \pmod p$ is assumed; the argument does not use this assumption. “As in (1)” refers to Problem 8.3(1), the second proof of Proposition [[§55 The Sylow Theorems#^prop-55-11|§55.11]].)*
+> *(Problem Set 8, Problem 8.3(2), as submitted, under the assumption $q \equiv 1 \pmod p$ of Problem 8.3(2). The assumption enters only in the sentence that both divisors of $q$ are congruent to $1$ modulo $p$; without it, $n_p \in \{1, q\}$ still holds because $n_p$ divides $q$, and the rest of the argument is unchanged. “As in (1)” refers to Problem 8.3(1), the second proof of Proposition [[§55 The Sylow Theorems#^prop-55-11|§55.11]].)*
 >
 > **Sylow counts.** As in (1), $n_q \mid p$ and $n_q \equiv 1 \pmod q$ force $n_q = 1$, so $Q$ is normal in $G$. On the other hand, $n_p \mid q$ and $n_p \equiv 1 \pmod p$, and now both divisors $1$ and $q$ of $q$ are congruent to $1$ modulo $p$, so $n_p \in \{1, q\}$ and $P$ need not be normal.
 >
@@ -67,6 +67,12 @@ In [[§55 The Sylow Theorems|§55]], a group of order $pq$ with $q \not\equiv 1 
 By Proposition [[§60 Groups of Order pq as Semidirect Products#^prop-60-1|§60.1]], the group $G$ is known once the homomorphism $\varphi \colon P \to \operatorname{Aut}(Q)$ is known. Here $P \cong \mathbb{Z}/p\mathbb{Z}$ and $Q \cong \mathbb{Z}/q\mathbb{Z}$, since groups of prime order are cyclic (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]]).
 
 *(Problem Set 8, Problem 8.3(3), as submitted.)* **Reduction.** Fix isomorphisms $\iota_Q \colon \mathbb{Z}/q\mathbb{Z} \to Q$ and $\iota_P \colon \mathbb{Z}/p\mathbb{Z} \to P$. Then $\alpha \mapsto \iota_Q^{-1} \circ \alpha \circ \iota_Q$ is a group isomorphism $\operatorname{Aut}(Q) \to \operatorname{Aut}(\mathbb{Z}/q\mathbb{Z})$, and composing with $\iota_P$ identifies homomorphisms $P \to \operatorname{Aut}(Q)$ with homomorphisms $\mathbb{Z}/p\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/q\mathbb{Z})$. Hence we may take $Q = \mathbb{Z}/q\mathbb{Z}$ and $P = \mathbb{Z}/p\mathbb{Z}$, both written additively.
+
+*(Not submitted.)* The reduction matches the groups as well. If $\psi \colon \mathbb{Z}/p\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/q\mathbb{Z})$ corresponds to $\varphi \colon P \to \operatorname{Aut}(Q)$, that is, $\psi(k) = \iota_Q^{-1} \circ \varphi(\iota_P(k)) \circ \iota_Q$, then $(x, k) \mapsto (\iota_Q(x), \iota_P(k))$ is an isomorphism $\mathbb{Z}/q\mathbb{Z} \rtimes_\psi \mathbb{Z}/p\mathbb{Z} \to Q \rtimes_\varphi P$. It is a bijection because $\iota_Q$ and $\iota_P$ are, and it respects the multiplications because $\iota_P$ is a homomorphism and
+
+$$
+\iota_Q\big(x_1 + \psi(k_1)(x_2)\big) = \iota_Q(x_1)\,\iota_Q\big(\psi(k_1)(x_2)\big) = \iota_Q(x_1)\,\varphi(\iota_P(k_1))\big(\iota_Q(x_2)\big).
+$$
 
 > [!theorem] Lemma §60.2: Automorphisms of $\mathbb{Z}/q\mathbb{Z}$
 > Let $q$ be a prime. For $a \in (\mathbb{Z}/q\mathbb{Z})^\times$ define $\alpha_a \colon \mathbb{Z}/q\mathbb{Z} \to \mathbb{Z}/q\mathbb{Z}$ by $\alpha_a(x) = ax$.

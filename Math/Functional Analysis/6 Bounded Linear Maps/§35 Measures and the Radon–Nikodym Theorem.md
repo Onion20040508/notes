@@ -84,7 +84,7 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 > - $\nu$ is the measure induced by the non-negative function $\chi_\Omega$: [[§21 Consequences of the Monotone Convergence Theorem#^def-21-1|551 Def. §21.1]].
 
 > [!remark] Remark: Facts Assumed from Measure Theory
-> Integration against an abstract measure is assumed as in a course on measure theory: for a measure $\lambda$, $L^2(\lambda)$ (real functions with $\int f^2 d\lambda < \infty$, identified when equal $\lambda$-a.e.) is a [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] with $(f, g) = \int f g\, d\lambda$; the [[Monotone Convergence Theorem (Lebesgue)|monotone convergence theorem]]; and [[Continuity of Measure|continuity of measure from below]]. If $\mu, \nu$ are measures, so is $\mu + \nu$ (sums of non-negative series can be rearranged), and $\int h\, d(\mu+\nu) = \int h\, d\mu + \int h\, d\nu$ for every measurable $h \ge 0$, hence for every $h \in L^1(\mu + \nu)$.
+> Integration against an abstract measure is assumed as in a course on measure theory: for a measure $\lambda$, $L^2(\lambda)$ (real functions with $\int f^2 d\lambda < \infty$, identified when equal $\lambda$-a.e.) is a [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] with $(f, g) = \int f g\, d\lambda$; the [[Monotone Convergence Theorem (Lebesgue)|monotone convergence theorem]]; and [[Continuity of Measure|continuity of measure from below]]. If $\mu, \nu$ are measures, so is $\mu + \nu$ (sums of non-negative series can be rearranged), and $\int h\, d(\mu+\nu) = \int h\, d\mu + \int h\, d\nu$ for every measurable $h \ge 0$, hence for every $h \in L^1(\mu + \nu)$. If $\nu(E) = \int_E w\, d\mu$ for all $E$ with a measurable $w \ge 0$, then $\int h\, d\nu = \int h\, w\, d\mu$ for every measurable $h \ge 0$.
 
 ^rem-35-1
 
@@ -145,7 +145,7 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 > g(x) = \frac{1 - g_0(x)}{g_0(x)} \ge 0,
 > $$
 >
-> measurable as a quotient of measurable functions with a denominator that never vanishes. The test function to choose is $f = \chi_E / g_0$ for $E \in \mathcal{A}$: then $f g_0 = \chi_E$ and $f(1 - g_0) = \chi_E\, g$, so ($\ast$) reads $\int_E g\, d\mu = \nu(E)$. One check was left to the class: $f \in H$.
+> measurable as a quotient of measurable functions with a denominator that never vanishes. The test function to choose is $f = \chi_E / g_0$ for $E \in \mathcal{A}$: then $f g_0 = \chi_E$ and $f(1 - g_0) = \chi_E\, g$, so ($\ast$) reads $\int_E g\, d\mu = \nu(E)$. It remains to check that $f \in H$.
 > This needs care, because $g_0$ may take arbitrarily small values, and then $\chi_E/g_0$ need not be in $L^2(\mu + \nu)$. Truncate: for $k \in \mathbb{N}$ let $E_k = E \cap \{ g_0 \ge \frac1k \}$ and $f_k = \chi_{E_k}/g_0$. Then $0 \le f_k \le k$, so $f_k \in H$, and ($\ast$) with $f = f_k$ gives
 >
 > $$

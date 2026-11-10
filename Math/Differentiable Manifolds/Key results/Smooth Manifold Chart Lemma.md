@@ -20,6 +20,7 @@ tags: [differentiable-manifolds, hub]
 - [[§17 Differentiable Structures#^def-17-3|Definition §17.3: Diffeomorphism of Open Subsets of Euclidean Space]]
 - [[§17 Differentiable Structures#^def-17-4|Definition §17.4: Smoothly Compatible Charts]]
 - [[§17 Differentiable Structures#^def-17-6|Definition §17.6: Atlas]]
+- [[§17 Differentiable Structures#^thm-17-6|Theorem §17.6: Every Atlas Lies in a Unique Maximal Atlas]]
 
 ## Used in (Differentiable Manifolds)
 - [[§51 The Tangent Bundle#^prop-51-3|Proposition §51.3: The Topology and Smooth Structure of TM]]

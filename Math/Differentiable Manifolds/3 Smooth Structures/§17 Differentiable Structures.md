@@ -95,7 +95,7 @@ tags: [differentiable-manifolds, math591]
 >
 > The two transition functions are automatically inverse bijections, $x\big(y(x)\big) = x$ and $y\big(x(y)\big) = y$, since both are composites of the bijections $\varphi|_{U \cap V}$, $\psi|_{U \cap V}$ and their inverses; (1) and (2) are the condition that both are smooth.
 >
-> *Lee: Ch. 1, Smooth Structures (“smoothly compatible)*
+> *Lee: Ch. 1, Smooth Structures (“smoothly compatible”)*
 
 ^def-17-4
 
@@ -269,7 +269,7 @@ Later this matrix reappears as the change-of-basis matrix between the two coordi
 > [!definition] Definition §17.6: Atlas
 > An **atlas** on a topological $n$-manifold $M$ is a collection $\mathcal{A} = \{(U_i, \varphi_i)\}_{i \in I}$ of pairwise $C^\infty$-compatible charts with $\bigcup_{i} U_i = M$.
 >
-> *Lee: Ch. 1, Smooth Structures (“smooth atlas)*
+> *Lee: Ch. 1, Smooth Structures (“smooth atlas”)*
 
 ^def-17-6
 
@@ -396,7 +396,7 @@ The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axi
 *Uses:* [[§17 Differentiable Structures#^ex-17-3|Ex. §17.3]], [[§17 Differentiable Structures#^prop-17-4|§17.4]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§16 Connected Subspaces of ℝ#^rem-16-1|590 §16 (connected subsets of ℝ are intervals)]]
 
 > [!example] Example §17.4: Angle Atlas on the Circle
-> Parametrize by angle, which cannot be done globally — the same meta-principle — so use two overlapping ranges:
+> Parametrize by angle, which cannot be done globally (Proposition [[§17 Differentiable Structures#^prop-17-4|§17.4]]), so use two overlapping ranges:
 >
 > $$
 > \begin{aligned}
@@ -415,7 +415,7 @@ The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axi
 
 ^ex-17-4
 
-*Uses:* [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]]
+*Uses:* [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^prop-17-4|§17.4]]
 
 > [!remark]- Connections
 > - Polar angle as a coordinate (452): [[Polar and spherical coordinates]]; parametrizations as inverse charts: [[§20 Manifolds in Euclidean Space#^rem-20-2|§20, Remark: A Parametrization Is an Inverse Chart]].
@@ -505,15 +505,15 @@ The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topolo
 >
 > *$\overline{\mathcal{A}}$ is maximal.* If a chart $(V,\psi)$ is compatible with every chart of $\overline{\mathcal{A}}$, then in particular with every chart of $\mathcal{A} \subseteq \overline{\mathcal{A}}$, so $(V,\psi) \in \overline{\mathcal{A}}$ by definition. This is the condition of Definition [[§17 Differentiable Structures#^def-17-8|§17.8]].
 >
-> *Uniqueness.* Let $\mathcal{M}$ be any maximal atlas with $\mathcal{A} \subseteq \mathcal{M}$. If $(V,\psi) \in \mathcal{M}$ then it is compatible with every chart of $\mathcal{M}$ (with the others because $\mathcal{M}$ is an atlas, with itself by reflexivity), hence with every chart of $\mathcal{A} \subseteq \mathcal{M}$, so $(V,\psi) \in \overline{\mathcal{A}}$; thus $\mathcal{M} \subseteq \overline{\mathcal{A}}$. Since $\overline{\mathcal{A}}$ is an atlas containing $\mathcal{M}$ and $\mathcal{M}$ is maximal (contained in no strictly larger atlas, Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]), $\mathcal{M} = \overline{\mathcal{A}}$.
+> *Uniqueness.* Let $\mathcal{B}$ be any maximal atlas with $\mathcal{A} \subseteq \mathcal{B}$. If $(V,\psi) \in \mathcal{B}$ then it is compatible with every chart of $\mathcal{B}$ (with the others because $\mathcal{B}$ is an atlas, with itself by reflexivity), hence with every chart of $\mathcal{A} \subseteq \mathcal{B}$, so $(V,\psi) \in \overline{\mathcal{A}}$; thus $\mathcal{B} \subseteq \overline{\mathcal{A}}$. Since $\overline{\mathcal{A}}$ is an atlas containing $\mathcal{B}$ and $\mathcal{B}$ is maximal (contained in no strictly larger atlas, Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]), $\mathcal{B} = \overline{\mathcal{A}}$.
 >
-> *Compatible atlases.* Let $\mathcal{A}'$ be a second atlas. If $\mathcal{A}$ and $\mathcal{A}'$ are compatible (Definition [[§17 Differentiable Structures#^def-17-7|§17.7]]), every chart of $\mathcal{A}'$ is compatible with every chart of $\mathcal{A}$, so $\mathcal{A}' \subseteq \overline{\mathcal{A}}$; as also $\mathcal{A} \subseteq \overline{\mathcal{A}}$, both lie in the maximal atlas $\overline{\mathcal{A}}$. Conversely, if $\mathcal{A}$ and $\mathcal{A}'$ both lie in one maximal atlas $\mathcal{M}$, then a chart of $\mathcal{A}$ and a chart of $\mathcal{A}'$ are two charts of the atlas $\mathcal{M}$, hence compatible (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]); so $\mathcal{A}$ and $\mathcal{A}'$ are compatible.
+> *Compatible atlases.* Let $\mathcal{A}'$ be a second atlas. If $\mathcal{A}$ and $\mathcal{A}'$ are compatible (Definition [[§17 Differentiable Structures#^def-17-7|§17.7]]), every chart of $\mathcal{A}'$ is compatible with every chart of $\mathcal{A}$, so $\mathcal{A}' \subseteq \overline{\mathcal{A}}$; as also $\mathcal{A} \subseteq \overline{\mathcal{A}}$, both lie in the maximal atlas $\overline{\mathcal{A}}$. Conversely, if $\mathcal{A}$ and $\mathcal{A}'$ both lie in one maximal atlas $\mathcal{B}$, then a chart of $\mathcal{A}$ and a chart of $\mathcal{A}'$ are two charts of the atlas $\mathcal{B}$, hence compatible (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]); so $\mathcal{A}$ and $\mathcal{A}'$ are compatible.
 
 ^pf-17-6
 
 *Uses:* [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^def-17-7|Def. §17.7]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]], [[§17 Differentiable Structures#^prop-17-3|§17.3]], [[Multivariable Chain Rule|452 §12.2]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]
 
-Lecture 5 argued uniqueness only (each of two such maximal atlases is contained in the other, so they are equal), taking for granted that the collection of all compatible charts is an atlas. Lecture 6 returned to the lemma: it defined $\overline{\mathcal{A}}$ as above, treated maximality as the easy part and the atlas property as the substantial one, and sketched the latter — a point of the overlap lies in some chart of $\mathcal{A}$, compatible with both charts, followed by a diagram chase — without the details. The proof above completes that sketch. That step is the one with content, and the [[§17 Differentiable Structures#^rem-17-7|remark on non-transitivity above]] shows it really needs the mediating chart $(U,\varphi) \in \mathcal{A}$: without an atlas to pass through, pairwise compatibility with a single chart proves nothing. Compare Lee, Proposition 1.17.
+Lecture 5 argued uniqueness only (each of two such maximal atlases is contained in the other, so they are equal), taking for granted that the collection of all compatible charts is an atlas. Lecture 6 returned to this theorem: it defined $\overline{\mathcal{A}}$ as above, treated maximality as the easy part and the atlas property as the substantial one, and sketched the latter — a point of the overlap lies in some chart of $\mathcal{A}$, compatible with both charts, followed by a diagram chase — without the details. The proof above completes that sketch. That step is the one with content, and the [[§17 Differentiable Structures#^rem-17-7|remark on non-transitivity above]] shows it really needs the mediating chart $(U,\varphi) \in \mathcal{A}$: without an atlas to pass through, pairwise compatibility with a single chart proves nothing. Compare Lee, Proposition 1.17.
 
 > [!definition] Definition §17.9: Smooth Manifold Structure
 > A **differentiable (smooth) structure** on a topological manifold $M$ is a maximal atlas $\mathcal{A}$ on $M$. A **smooth manifold** is a pair $\mathcal{M} = (M, \mathcal{A})$. By [[§17 Differentiable Structures#^thm-17-6|§17.6]], specifying any atlas specifies a smooth structure, and two atlases specify the same structure exactly when they are compatible.
@@ -592,7 +592,7 @@ Lecture 5 argued uniqueness only (each of two such maximal atlases is contained 
 
 ^pf-17-8
 
-*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3|§23.3]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
+*Uses:* [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 
 > [!remark] Remark: On the Connectedness Assumption
 > The board wrote “let $M$ be a topological manifold (connected).” Nothing in this section uses connectedness, and the definitions above are stated without it. It is a harmless convenience — with $n$ fixed in advance ([[§2 Topological Manifolds#^def-2-2|Def. §2.2]]) the dimension is already constant — and it can be dropped. It does matter under the convention where $n$ is allowed to vary with the point ([[§2 Topological Manifolds#^cor-2-2|§2.2]]).

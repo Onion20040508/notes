@@ -69,7 +69,7 @@ As for functionals (Lemma [[§44 Bras, Kets, and the Riesz Map#^lem-44-1|§44.1]
 > - Used in Quantum Field Theory: completeness of a spin basis of $\mathbb C^2$, $\sum_s\xi^s\xi^{s\dagger} = \mathbb 1$, behind the spin sums of Dirac spinors — [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-3|QFT Def. §C5a.10.3]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|QFT Theorem §C5a.12.7]].
 
 > [!example] Example §45.1: Parity
-> For a particle in the symmetric box $[-1,1]$, the parity operator $(\Pi\psi)(x) = \psi(-x)$ has the even and odd states as its eigenspaces, with eigenvalues $+1$ and $-1$. By Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-9|§25.9]] these eigenspaces are closed and orthogonal, and $L^2[-1,1] = E \oplus O$. Writing $P_E$, $P_O$ for the orthogonal projections, $P_E + P_O = \mathbf{1}$ and $\Pi = P_E - P_O$: the simplest resolution of the identity, with two projections, and the simplest spectral decomposition. It is why energy eigenstates of a symmetric potential can be chosen even or odd.
+> For a particle in the symmetric box $[-1,1]$, the parity operator $(\Pi\psi)(x) = \psi(-x)$ has the even and odd states as its eigenspaces, with eigenvalues $+1$ and $-1$. By Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-9|§25.9]] these eigenspaces are closed and orthogonal, and $L^2[-1,1] = E \oplus O$, where $E$ and $O$ are the subspaces of even and of odd functions. Writing $P_E$, $P_O$ for the orthogonal projections, $P_E + P_O = \mathbf{1}$ and $\Pi = P_E - P_O$: the simplest resolution of the identity, with two projections, and the simplest spectral decomposition. It is why energy eigenstates of a symmetric potential can be chosen even or odd.
 
 ^ex-45-1
 
@@ -96,7 +96,7 @@ As for functionals (Lemma [[§44 Bras, Kets, and the Riesz Map#^lem-44-1|§44.1]
 > - Used in Electromagnetism: closure relations of separated eigenfunctions, read as identities of distributions, and the eigenfunction expansion of a Green function — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]], [[§C7.4 Constructing Green Functions#^thm-c7-4-1|EM Theorem §C7.4.1]].
 
 > [!theorem] Proposition §45.3: The Completeness Relation Does Not Hold in Norm
-> If $\{e_n\}_{n \ge 1}$ is an infinite orthonormal set, then $\|\mathbf{1} - P_N\| = 1$ for every $N$. In particular $P_N \not\to \mathbf{1}$ in operator norm, even when $\{e_n\}$ is complete.
+> If $\{e_n\}_{n \ge 1}$ is an infinite orthonormal set in a Hilbert space $H$ and $P_N = \sum_{n=1}^N |e_n\rangle\langle e_n|$, then $\|\mathbf{1} - P_N\| = 1$ for every $N$. In particular $P_N \not\to \mathbf{1}$ in operator norm, even when $\{e_n\}$ is complete.
 
 ^prop-45-3
 
@@ -120,7 +120,7 @@ As for functionals (Lemma [[§44 Bras, Kets, and the Riesz Map#^lem-44-1|§44.1]
 *(Not from lecture; animation added, vault only.)* Left: a fixed unit vector $x$ with coefficients proportional to $1/n$ (chosen for the picture). $P_N$ keeps the blue bars and misses the red tail, and $\|x - P_N x\|^2 \to 0$ as $N$ grows. Right: the vector $e_{N+1}$, whose single bar always sits just beyond $N$, so $\|(I - P_N)e_{N+1}\| = 1$ for every $N$. Hence $P_N \to I$ strongly but not in norm.
 
 > [!theorem] Corollary §45.4: Inserting a Complete Set of States
-> Let $\{e_n\}_{n \ge 1}$ be a complete orthonormal set in $H$. For all $x, y \in H$,
+> Let $\{e_n\}_{n \ge 1}$ be a complete orthonormal set in a Hilbert space $H$. For all $x, y \in H$,
 >
 > $$
 > \langle y | x \rangle = \sum_{n=1}^\infty \langle y | e_n \rangle \langle e_n | x \rangle ,

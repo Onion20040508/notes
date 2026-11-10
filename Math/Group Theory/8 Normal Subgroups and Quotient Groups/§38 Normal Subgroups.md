@@ -44,7 +44,7 @@ tags: [group-theory, math493]
 > 1. $H$ is a normal subgroup of $G$, i.e. $gHg^{-1} \subseteq H$ for all $g \in G$;
 > 2. $gHg^{-1} = H$ for all $g \in G$;
 > 3. $gH = Hg$ for all $g \in G$;
-> 4. the set of left cosets of $H$ equals the set of right cosets of $H$.
+> 4. the set of [[§28 Left and Right Cosets#^def-28-2|left cosets]] of $H$ equals the set of right cosets of $H$.
 >
 > *Source: lecture*
 
@@ -106,7 +106,7 @@ tags: [group-theory, math493]
 > Let $G$ be a group and $N$ a subgroup. The following are equivalent:
 > 1. for all $g \in G$, $gNg^{-1} = N$;
 > 2. $N$ is a union of (some of the) conjugacy classes of $G$;
-> 3. all elements of $G/N$ have the same stabilizer, for the left action of $G$ on $G/N$;
+> 3. all elements of $G/N$ have the same [[§26 Stabilizers and Fixed Points#^def-26-1|stabilizer]], for the left action of $G$ on $G/N$;
 > 4. every left coset of $N$ in $G$ is also a right coset;
 > 5. if $g_1N = g_1'N$ and $g_2N = g_2'N$, then $g_1g_2N = g_1'g_2'N$.
 >

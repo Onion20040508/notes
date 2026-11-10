@@ -156,7 +156,7 @@ tags: [group-theory, math493]
 *Conjugation relabels: $\tau\sigma\tau^{-1}$ has the same arrow diagram as $\sigma$, with each point $i$ renamed $\tau(i)$. In particular it has the same cycle type.*
 
 > [!example] Example §33.2: Conjugacy Classes of $S_3$ and $S_4$
-> $S_3$ has three conjugacy classes, by cycle type: $\{e\}$; the three transpositions $\{(1\,2), (1\,3), (2\,3)\}$; the two $3$-cycles $\{(1\,2\,3), (1\,3\,2)\}$. Sizes $1 + 3 + 2 = 6$. In $S_4$ the cycle types are $1^4$, $2\,1^2$, $2^2$, $3\,1$, $4$, with classes of sizes $1, 6, 3, 8, 6$, summing to $24$. Note that the class sizes need not divide each other, but each divides $|S_n|$ — explained by the orbit–stabilizer theorem in [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]].
+> $S_3$ has three conjugacy classes, by cycle type: $\{e\}$; the three transpositions $\{(1\,2), (1\,3), (2\,3)\}$; the two $3$-cycles $\{(1\,2\,3), (1\,3\,2)\}$. Sizes $1 + 3 + 2 = 6$. In $S_4$ the cycle types are $1^4$, $2\,1^2$, $2^2$, $3\,1$, $4$, with classes of sizes $1, 6, 3, 8, 6$, summing to $24$. Note that the class sizes need not divide each other, but each divides $|S_n|$ — explained by the [[§30 Orbit–Stabilizer#^thm-30-3|orbit–stabilizer theorem]] in [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]].
 
 ^ex-33-2
 

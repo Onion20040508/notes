@@ -17,7 +17,7 @@ $$
 
 and that $X'$ is a Banach space (Corollary [[§31 Dual Spaces#^cor-31-1|§31.1]]).
 (The suprema agree because $|\ell(x)|/\|x\| = |\ell(x/\|x\|)|$ and $x/\|x\|$ has norm $1$. Taking the supremum over $\|x\| \le 1$ gives the same number: for $0 < \|x\| \le 1$, $|\ell(x)| = \|x\|\, |\ell(x/\|x\|)| \le \sup_{\|x'\| = 1} |\ell(x')|$, and $\ell(0) = 0$. In particular $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$.)
-This lecture explains why $X'$ is called the *dual* space: just as $\|\ell\|$ is computed by testing $\ell$ on the unit ball of $X$, norms and distances in $X$ can be computed by testing on the unit ball of $X'$.
+This section explains why $X'$ is called the *dual* space: just as $\|\ell\|$ is computed by testing $\ell$ on the unit ball of $X$, norms and distances in $X$ can be computed by testing on the unit ball of $X'$.
 
 ## Hahn–Banach for Normed Spaces
 
@@ -178,7 +178,7 @@ This is the precise form of the remark in [[§6 Proof of the Hahn–Banach Theor
 
 ## The Dual of $\ell^p$
 
-Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]). This was Problem 3 of the homework current at the time, waived after the derivation in class. Let $e_j = (0, \ldots, 0, 1, 0, \ldots)$ denote the sequence with $1$ in the $j$-th place and $0$ elsewhere, and let $p'$ be the conjugate exponent of $p$ (Definition [[§17 Hölder's Inequality for Sequences#^def-17-3|§17.3]]).
+Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]). Let $e_j = (0, \ldots, 0, 1, 0, \ldots)$ denote the sequence with $1$ in the $j$-th place and $0$ elsewhere, and let $p'$ be the conjugate exponent of $p$ (Definition [[§17 Hölder's Inequality for Sequences#^def-17-3|§17.3]]).
 
 > [!theorem] Theorem §36.4: The Dual of $\ell^p$
 > Let $1 \le p < \infty$ and $\frac1p + \frac1{p'} = 1$, so that $1 < p' \le \infty$.
@@ -385,7 +385,7 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 
 > [!remark] Remark: The Dual of $L^p$, Revisited
 > Similarly, for any measure space $(X, \mu)$, e.g. $\Omega \subset \mathbb{R}^n$ with Lebesgue measure, and $1 \le p < \infty$, $(L^p(X, \mu))' = L^{p'}(X, \mu)$; this is Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]. For those who have learned measure theory, the candidate is found with the Radon–Nikodym theorem, and the rest goes as for sequences; the proof was left to the class (an outline is given after Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]).
-> For $p = 1$ the measure must be $\sigma$-finite (Lebesgue measure on $\Omega$ is); for $1 < p < \infty$ no condition is needed. Midterm scope: results that need measure theory (the $L^p$ spaces, beyond their basic properties) and the PDE applications will not be tested; $\ell^p$ will.
+> For $p = 1$ the measure must be $\sigma$-finite (Lebesgue measure on $\Omega$ is); for $1 < p < \infty$ no condition is needed.
 
 ^rem-36-5
 
@@ -632,4 +632,4 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]] read
 
 *Uses:* [[§11 Normed Linear Spaces#^prop-11-7|§11.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^thm-36-11|§36.11]]
 
-Motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]), and in any linear space $X \cong X/Y \oplus Y$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]); so $X/Y$ and $Y^\perp$ look like each other's dual. This material (Lecture 13) is on the midterm.
+Motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]), and in any linear space $X \cong X/Y \oplus Y$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]); so $X/Y$ and $Y^\perp$ look like each other's dual.

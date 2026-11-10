@@ -17,10 +17,10 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 - Nesting: $\ell^p \subsetneq \ell^q$ for $p < q$, with norms that are not equivalent ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-4|§18]])
 - $\ell^p$ is a Banach space ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18]])
 - The closed unit ball of $\ell^p$ is not compact ([[§20 Compactness and the Unit Ball#^ex-20-2|§20]])
-- $\ell^2$ with $(a, b) = \sum_i a_i \overline{b_i}$, the one $\ell^p$ where this converges ([[§22 Definition and Examples#^ex-22-2|§22]])
+- $\ell^2$ with $(a, b) = \sum_i a_i \overline{b_i}$, the one $\ell^p$ whose conjugate exponent is $p$ itself ([[§22 Definition and Examples#^ex-22-2|§22]])
 - $\ell^2$ is a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-1|§23]])
 - For $p \neq 2$ the norm of $\ell^p$ does not come from an inner product ([[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|§24]])
-- In $\ell^1$ closest points need not be unique ([[§25 Projection and Orthogonal Decomposition#^rem-25-2|§25]])
+- In $\ell^1$ closest points need not be unique ([[§25 Projection and Orthogonal Decomposition#^ex-25-1|Ex. §25.1]])
 - The standard basis of $\ell^2$ is an orthonormal basis ([[§27 Orthonormal Sets and Bases#^ex-27-1|§27]])
 - $\ell^p$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] for $1 \le p < \infty$ ([[§29 Sequence and Function Spaces#^prop-29-1|§29]])
 - $c_0$ is a separable Banach space ([[§29 Sequence and Function Spaces#^prop-29-2|§29]])
@@ -58,7 +58,7 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 ## The closed unit ball of $\ell^p$ is not compact
 ![[§20 Compactness and the Unit Ball#^ex-20-2]]
 
-## $\ell^2$ with $(a, b) = \sum_i a_i \overline{b_i}$, the one $\ell^p$ where this converges
+## $\ell^2$ with $(a, b) = \sum_i a_i \overline{b_i}$, the one $\ell^p$ whose conjugate exponent is $p$ itself
 ![[§22 Definition and Examples#^ex-22-2]]
 
 ## $\ell^2$ is a Hilbert space
@@ -68,7 +68,7 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 ![[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3]]
 
 ## In $\ell^1$ closest points need not be unique
-![[§25 Projection and Orthogonal Decomposition#^rem-25-2]]
+![[§25 Projection and Orthogonal Decomposition#^ex-25-1]]
 
 ## The standard basis of $\ell^2$ is an orthonormal basis
 ![[§27 Orthonormal Sets and Bases#^ex-27-1]]

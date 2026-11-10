@@ -20,7 +20,7 @@ tags: [group-theory, hub]
 - [[§40 Quotient Groups#^cor-40-3|Corollary §40.3: Kernels and Normal Subgroups Are the Same Thing]]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-2|Corollary §41.2: ∣G∣ = ∣Keralpha∣ · ∣Imalpha∣]]
 - [[§41 The First and Second Isomorphism Theorems#^cor-41-6|Corollary §41.6: The Order of SN]]
-- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4: [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4∣Quotients Along the Correspondence]]]]
+- [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4: Quotients Along the Correspondence]]
 - [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|Theorem §42.6: Third Isomorphism Theorem]]
 - [[§47 Commutators#^prop-47-6|Proposition §47.6: The Abelianization Is Abelian]]
 

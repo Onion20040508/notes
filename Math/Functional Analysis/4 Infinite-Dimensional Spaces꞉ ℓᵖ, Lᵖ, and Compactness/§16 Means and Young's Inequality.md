@@ -65,7 +65,7 @@ The second form says that the geometric mean of two non-negative numbers is at m
 > (1 - \theta) \ln a + \theta \ln b \le \ln\bigl((1 - \theta) a + \theta b\bigr),
 > $$
 >
-> which is concavity of $\ln$: the chord joining $(a, \ln a)$ and $(b, \ln b)$ lies below the graph. The point on the chord above $(1-\theta)a + \theta b$ has height $(1-\theta)\ln a + \theta \ln b$ by linearity of the chord, and the graph point above it has height $\ln\bigl((1-\theta)a + \theta b\bigr)$. (Concavity of $\ln$: $(\ln t)'' = -1/t^2 < 0$; see the [[§34 Normed Linear Spaces and Lᵖ Spaces#^lem-34-4|MATH 551 notes]] for the chord characterization.)
+> which is concavity of $\ln$: the chord joining $(a, \ln a)$ and $(b, \ln b)$ lies below the graph. The point on the chord above $(1-\theta)a + \theta b$ has height $(1-\theta)\ln a + \theta \ln b$ by linearity of the chord, and the graph point above it has height $\ln\bigl((1-\theta)a + \theta b\bigr)$. (Proof of this inequality: put $c = (1-\theta)a + \theta b > 0$. For every $s > 0$, $\ln s \le s - 1$, because $s - 1 - \ln s$ has derivative $1 - 1/s$, which is negative on $(0,1)$ and positive on $(1,\infty)$, so its minimum is its value $0$ at $s = 1$. With $s = t/c$ this gives $\ln t \le \ln c + (t - c)/c$ for all $t > 0$. Apply it at $t = a$ and at $t = b$, multiply by $1-\theta$ and $\theta$, and add: $(1-\theta)\ln a + \theta\ln b \le \ln c + \bigl((1-\theta)a + \theta b - c\bigr)/c = \ln c$. The concavity form of the same fact is in the [[§34 Normed Linear Spaces and Lᵖ Spaces#^lem-34-4|MATH 551 notes]].)
 
 ^pf-16-3
 

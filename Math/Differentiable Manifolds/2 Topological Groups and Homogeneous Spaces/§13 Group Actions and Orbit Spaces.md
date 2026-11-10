@@ -183,7 +183,8 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 > [!example] Example §13.7: $\mathrm{SO}(3)$ Acting on $\mathbb{R}^3$
 > This is the previous example one dimension up, with spheres in place of circles. Let $\mathrm{SO}(3,\mathbb{R})$ act on $\mathbb{R}^3$ by matrix multiplication. Orthogonal matrices preserve the norm ($|gx|^2 = (gx)\cdot(gx) = x \cdot x = |x|^2$), so each orbit lies in a sphere $S_r = \{|x| = r\}$ centered at the origin. In fact:
 > - $\mathcal{O}_0 = \{0\}$.
-> - For $x \neq 0$, $\mathcal{O}_x = S_{|x|}$, the whole sphere of radius $|x|$: given $y$ with $|y| = |x| = r$, let $u = x/r$, $v = y/r$, extend $u$ to an orthonormal basis $(u, u_2, u_3)$ and $v$ to an orthonormal basis $(v, v_2, v_3)$ of $\mathbb{R}^3$ (Gram–Schmidt), replacing $u_3$ by $-u_3$ if necessary so that both bases are positively oriented; then the matrix $g$ with $g u = v$, $g u_2 = v_2$, $g u_3 = v_3$ maps an orthonormal basis to an orthonormal basis, so $g \in \mathrm{O}(3)$, and it maps a positive basis to a positive basis, so $\det g > 0$, i.e. $g \in \mathrm{SO}(3)$; and $g x = r\, g u = r v = y$.
+> - For $x \neq 0$, $\mathcal{O}_x = S_{|x|}$, the whole sphere of radius $|x|$: given $y$ with $|y| = |x| = r$, let $u = x/r$, $v = y/r$, extend $u$ to an orthonormal basis $(u, u_2, u_3)$ and $v$ to an orthonormal basis $(v, v_2, v_3)$ of $\mathbb{R}^3$ (Gram–Schmidt), replacing $u_3$ by $-u_3$ and $v_3$ by $-v_3$ if necessary so that both bases are positively oriented; then the matrix $g$ with $g u = v$, $g u_2 = v_2$, $g u_3 = v_3$ maps an orthonormal basis to an orthonormal basis, so $g \in \mathrm{O}(3)$, and it maps a positive basis to a positive basis, so $\det g > 0$, i.e. $g \in \mathrm{SO}(3)$; and $g x = r\, g u = r v = y$.
+>
 > *(Computed; not from lecture.)* Explicitly, the matrix with orthonormal columns $u, u_2, u_3$ has its transpose as inverse, so
 >
 > $$
@@ -200,7 +201,7 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 ^ex-13-7
 
 > [!proof]+ Proof that $\mathbb{R}^3/\mathrm{SO}(3) \cong [0,\infty)$
-> *(Not from lecture; filled in.)* Define $\rho : \mathbb{R}^3/\mathrm{SO}(3) \to [0,\infty)$ by $\rho([x]) = |x|$. It is well defined because $|gx| = |x|$, and it is a bijection by the description of the orbits ($\rho$ is injective since $[x] = [y]$ iff $|x| = |y|$, and surjective since $\rho([(r,0,0)]) = r$). It is continuous by Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]], since $\rho \circ \pi = |\cdot| : \mathbb{R}^3 \to [0,\infty)$ is continuous. Its inverse $[0,\infty) \to \mathbb{R}^3/\mathrm{SO}(3)$, $r \mapsto [(r,0,0)]$, is the composite of the continuous map $r \mapsto (r,0,0)$ with the continuous map $\pi$. Hence $\rho$ is a homeomorphism.
+> *(Not from lecture; filled in.)* Define $\rho : \mathbb{R}^3/\mathrm{SO}(3) \to [0,\infty)$ by $\rho([x]) = |x|$. It is well defined because $|gx| = |x|$, and it is a bijection by the description of the orbits ($\rho$ is injective since $[x] = [y]$ iff $|x| = |y|$, and surjective since $\rho([(r,0,0)]) = r$). It is continuous by Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]], since $\rho \circ \pi = |\cdot| : \mathbb{R}^3 \to [0,\infty)$ is continuous. Its inverse $[0,\infty) \to \mathbb{R}^3/\mathrm{SO}(3)$, $r \mapsto [(r,0,0)]$, is the composite of the continuous map $r \mapsto (r,0,0)$ with the continuous map $\pi$. Hence $\rho$ is a homeomorphism.
 
 ^pf-ex-13-7
 
@@ -219,7 +220,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 ## Orbit Relations Are Open
 
-Throughout, $G$ is a topological group acting continuously on a topological space $X$ (Definition [[§13 Group Actions and Orbit Spaces#^def-13-1|§13.1]] and [[§13 Group Actions and Orbit Spaces#^def-13-2|the definition following it]]), and $\sim$ is the orbit relation: $x \sim y \iff \exists\, g \in G$ with $y = g \cdot x$ (Proposition [[§13 Group Actions and Orbit Spaces#^prop-13-1|§13.1]]).
+Throughout, $G$ is a topological group acting continuously on a topological space $X$ (Definitions [[§13 Group Actions and Orbit Spaces#^def-13-1|§13.1]] and [[§13 Group Actions and Orbit Spaces#^def-13-2|§13.2]]), and $\sim$ is the orbit relation: $x \sim y \iff \exists\, g \in G$ with $y = g \cdot x$ (Definition [[§13 Group Actions and Orbit Spaces#^def-13-4|§13.4]]).
 
 > [!theorem] Lemma §13.2: Left Translations Are Homeomorphisms
 > For $g \in G$ define $L_g : X \to X$, $L_g(x) = g \cdot x$. Then:
@@ -232,7 +233,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 ^lem-13-2
 
 > [!proof]+ Proof
-> *(Lecture 4, in full, as a model for written homework; see Remark [[§13 Group Actions and Orbit Spaces#^rem-13-6|remark]].)* (1) $L_g$ is the composite
+> *(Lecture 4, in full, as a model for written homework; see the remark [[§13 Group Actions and Orbit Spaces#^rem-13-6|A Model Proof]].)* (1) $L_g$ is the composite
 >
 > $$
 > X \longrightarrow G \times X \longrightarrow X, \qquad x \longmapsto (g, x) \longmapsto g \cdot x .
@@ -246,7 +247,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 ^pf-13-2
 
-*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]], [[§13 Group Actions and Orbit Spaces#^rem-13-6|§13.6]]
+*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]]
 
 > [!remark]- Connections
 > - The algebraic half (2)–(3) is [[§25 Actions#^prop-25-2|493 §25.2 (Each Group Element Acts Bijectively)]]; (2) says $g \mapsto L_g$ is a homomorphism, as in [[§25 Actions#^thm-25-3|493 §25.3]].
@@ -314,7 +315,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 *Uses:* [[§6 Open Quotients#^thm-6-1|§6.1]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§3 Subspaces and Products#^thm-3-12|§3.12]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§18 Compact Spaces#^thm-18-9|590 §18.9]]
 
 > [!remark]- Connections
-> - Applied to coset spaces in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5|§15.5]] and to $\mathbb{RP}^{n-1} = S^{n-1}/\{\pm I\}$ in [[§15 The Topology of G∕H and Real Grassmannians#^rem-15-3|On the Index]]; the special case $\mathbb{CP}^n$ was [[§9 Complex Projective Space#^prop-9-1|§9.1]].
+> - Applied to coset spaces in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5|§15.5]] and to $\mathbb{RP}^{n-1} = S^{n-1}/\{\pm I\}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-3|Ex. §15.3]]; the special case $\mathbb{CP}^n$ was [[§9 Complex Projective Space#^prop-9-1|§9.1]].
 
 > [!example] Example §13.8: Compactness Is Needed: a Non-Hausdorff Orbit Space
 > Let the multiplicative group $\mathbb{R}^{+}$ of positive reals act on $X = \mathbb{R}^2 \setminus \{0\}$ by
@@ -350,7 +351,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 *Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§3 Subspaces and Products#^prop-3-8|§3.8]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§9 Hausdorff Spaces#^thm-9-3|590 §9.3]]
 
 > [!remark] Remark: What the Example Shows
-> Every hypothesis of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] except compactness of $G$ holds here, so compactness is not removable. Seen through the criterion, it is the closed-graph hypothesis of Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] that fails (Example [[§13 Group Actions and Orbit Spaces#^ex-13-9|§13.9]] below). The mechanism is that the orbits, the hyperbolas $xy = c$ together with the two half-axes, *accumulate on each other*: the hyperbola through $z_n$ approaches both axes at once. Compactness of $G$ is what prevents an orbit from running off to infinity and limiting onto a different orbit; properness is the general condition that does the same job for non-compact $G$.
+> Every hypothesis of Theorem [[§13 Group Actions and Orbit Spaces#^thm-13-5|§13.5]] below except compactness of $G$ holds here (the action is continuous and $X$ is Hausdorff), so compactness of $G$ is not removable there; of the hypotheses of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], both compactness hypotheses fail, $X = \mathbb{R}^2 \setminus \{0\}$ not being compact either. Seen through the criterion, it is the closed-graph hypothesis of Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] that fails (Example [[§13 Group Actions and Orbit Spaces#^ex-13-9|§13.9]] below). The mechanism is that the orbits, the branches of the hyperbolas $xy = c$ ($c \neq 0$) together with the four open half-axes, *accumulate on each other*: the hyperbola through $z_n$ approaches both axes at once. Compactness of $G$ is what prevents an orbit from running off to infinity and limiting onto a different orbit; properness is the general condition that does the same job for non-compact $G$.
 >
 > Note also that openness of the relation is *automatic* here (Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]]) and buys nothing by itself: the two hypotheses of Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] are genuinely independent, and for orbit spaces it is always the closed-graph half that carries the content.
 
@@ -373,9 +374,9 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 ^thm-13-5
 
-**Not proved in this course.** Stated in lecture as a strengthening of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], with the proof omitted. The gap is exactly the step where compactness of $X$ was used — in Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] it made $\Psi(G \times X) = \Gamma$ compact, hence closed; without it one shows directly that $\Gamma$ is closed, using compactness of $G$ alone (a tube-lemma argument). Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] is the version proved in lecture, and it suffices for every application below, since all the groups met are compact and all the spaces are compact Hausdorff. For completeness, the tube-lemma argument is short enough to give here.
+**Not proved in lecture.** Stated in lecture as a strengthening of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], with the proof omitted. The gap is exactly the step where compactness of $X$ was used — in Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] it made $\Psi(G \times X) = \Gamma$ compact, hence closed; without it one shows directly that $\Gamma$ is closed, using compactness of $G$ alone (a tube-lemma argument). Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] is the version proved in lecture, and it suffices for every application below, since all the groups met are compact and all the spaces are compact Hausdorff. For completeness, the tube-lemma argument is short enough to give here.
 
-> [!proof]+ Proof of Theorem §10.5 (filled in; not from lecture)
+> [!proof]+ Proof of Theorem §13.5 (filled in; not from lecture)
 > *(Stated in Lecture 4, as the remark that compactness of $X$ is not necessary; filled in.)* By Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] the orbit relation is open, so by Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] it suffices to show that $\Gamma = \{(x, g\cdot x)\}$ is closed in $X \times X$. Let $(x, y) \notin \Gamma$, so that $g \cdot x \ne y$ for every $g \in G$. For each $g$, choose disjoint open sets $U_g \ni g \cdot x$ and $V_g \ni y$, using that $X$ is Hausdorff. By continuity of the action at $(g, x)$, choose open $A_g \ni g$ and $B_g \ni x$ with $a \cdot x' \in U_g$ for all $a \in A_g$ and $x' \in B_g$. The sets $A_g$ cover the compact $G$, so finitely many, $A_{g_1}, \ldots, A_{g_m}$, suffice; put $B = \bigcap_i B_{g_i}$ and $V = \bigcap_i V_{g_i}$, open neighbourhoods of $x$ and $y$. If some $(x', y') \in B \times V$ had $y' = a \cdot x'$, then $a \in A_{g_i}$ for some $i$, whence $y' \in U_{g_i}$; but also $y' \in V \subseteq V_{g_i}$, which is disjoint from $U_{g_i}$. So $B \times V$ misses $\Gamma$, and $\Gamma$ is closed.
 
 ^pf-13-5
@@ -400,14 +401,14 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 ^def-13-7
 
 > [!remark] Remark: Proper Actions
-> The preceding result is the simplest of many theorems on when quotient spaces are Hausdorff. Properness is the notion that replaces compactness of $G$ altogether: every action of a compact group on a Hausdorff space is proper (Proposition [[§13 Group Actions and Orbit Spaces#^prop-13-6|§13.6]]), and proper actions of non-compact groups are what Lee Ch. 21 treats. The examples in this course are mostly compact.
+> Theorem [[§13 Group Actions and Orbit Spaces#^thm-13-5|§13.5]] is the simplest of many theorems on when quotient spaces are Hausdorff. Properness is the notion that replaces compactness of $G$ altogether: every action of a compact group on a Hausdorff space is proper (Proposition [[§13 Group Actions and Orbit Spaces#^prop-13-6|§13.6]]), and proper actions of non-compact groups are what Lee Ch. 21 treats. The examples in this course are mostly compact.
 
 ^rem-13-8
 
 > [!theorem] Proposition §13.6: Actions of Compact Groups Are Proper
 > Every continuous action of a compact topological group $G$ on a Hausdorff space $X$ is proper (Definition [[§13 Group Actions and Orbit Spaces#^def-13-7|§13.7]]).
 >
-> *Lee: cf.\ Corollary 21.6, for compact Lie groups acting on manifolds*
+> *Lee: cf. Corollary 21.6, for compact Lie groups acting on manifolds*
 
 ^prop-13-6
 

@@ -127,7 +127,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 ^pf-56-1
 
-*Uses:* [[§56 Vector Fields#^def-56-1|Def. §56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^prop-51-2|§51.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§3 Subspaces and Products#^def-3-2|Def. §3.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]]
+*Uses:* [[§56 Vector Fields#^def-56-1|Def. §56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^prop-51-2|§51.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§3 Subspaces and Products#^def-3-2|Def. §3.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]]
 
 > [!theorem] Proposition §56.2: The Space of Vector Fields Is a Real Vector Space
 > Let $M$ be a smooth manifold.
@@ -297,13 +297,13 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 *A bump function at $p$, after the board sketch, with the front quarter cut away. $M$ is a plane, and the graph of $\chi$ is a surface over it: $\chi \equiv 1$ on a disc around $p$ (the blue plateau, at height $1$); from its edge the graph falls smoothly to $0$ (orange); and $\chi = 0$ outside the compact set $\operatorname{supp}\chi$, whose boundary is the dashed circle on $M$. The two cut faces show the profile of $\chi$ along two rays from $p$, and $p$ lies on $M$ at their inner corner, directly below the plateau, where $\chi(p) = 1$. The cross-section below shows the same profile along a whole line through $p$.*
 
 ![[m591-45-1.svg]]
-*A bump function, drawn over a one-dimensional slice of $M$ (the graph is the plateau of the lecture's picture, in cross-section). It equals $1$ on a neighbourhood of $p$, is smooth everywhere, and vanishes outside its support, which is compact and lies inside the given open set $U$. This one is built from $h(t) = e^{-1/t}$ for $t > 0$, $h(t) = 0$ for $t \le 0$, as $\chi(x) = h(b - |x|)/\big(h(b - |x|) + h(|x| - a)\big)$, which is $1$ for $|x| \le a$ and $0$ for $|x| \ge b$.
+*A bump function, drawn over a one-dimensional slice of $M$ (the graph is the plateau of the lecture's picture, in cross-section). It equals $1$ on a neighbourhood of $p$, is smooth everywhere, and vanishes outside its support, which is compact and lies inside the given open set $U$. This one is built from $h(t) = e^{-1/t}$ for $t > 0$, $h(t) = 0$ for $t \le 0$, as $\chi(x) = h(b - |x|)/\big(h(b - |x|) + h(|x| - a)\big)$, which is $1$ for $|x| \le a$ and $0$ for $|x| \ge b$.*
 
 ![[m591-45-a1.gif|480]]
 
 *(Not from lecture; animation added, vault only.)* Left: $h(t) = e^{-1/t}$ (dashed) and the smooth step $g = h(t)/(h(t) + h(1 - t))$, $0$ for $t \le 0$ and $1$ for $t \ge 1$. Right: the bump $\chi(x) = g\big((r_2 - |x|)/(r_2 - r_1)\big)$ as the radii vary, $1$ on the plateau $[-r_1, r_1]$ (blue) and $0$ outside $(-r_2, r_2)$, smooth everywhere.
 
-**Transcription note.** Page 41 of the handwritten notes defines $\operatorname{supp}(\chi) = \{q \in M : \chi(q) \neq 0\}$; the support is the *closure* of that set, as stated in lecture. Without the closure, the support of a bump function would not be compact.
+**Transcription note.** Page 41 of the handwritten notes defines $\operatorname{supp}(\chi) = \{q \in M : \chi(q) \neq 0\}$; the support is the *closure* of that set, as stated in lecture. Without the closure, the support of a bump function would in general not be compact: the set $\{q : \chi(q) \neq 0\}$ is open.
 
 > [!theorem] Proposition §56.4: Bump Functions Exist
 > For every open $U \subseteq M$ and every $p \in U$ there is a [[§56 Vector Fields#^def-56-9|bump function]] $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq U$.
@@ -313,7 +313,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 ^prop-56-4
 
 > [!proof]+ Proof
-> *(Stated in Lecture 15, and again in Lecture 16, among technical results not needed in the homework. Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function is constructed in Euclidean space first, and then pulled back with the chart. Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
+> *(Stated in Lecture 15, and again in Lecture 16, among technical results not needed in the homework. Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function is constructed in Euclidean space first, and then pulled back with the chart. Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in the proof of Lemma [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
 >
 > *1. A smooth function vanishing to infinite order.* Let $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$. By induction, for $t > 0$, $h^{(k)}(t) = P_k(1/t)\, e^{-1/t}$ with $P_k$ a polynomial, since $\frac{d}{dt}\big(P(1/t) e^{-1/t}\big) = \big(-P'(1/t)/t^2 + P(1/t)/t^2\big) e^{-1/t}$. As $s^j e^{-s} \to 0$ for $s = 1/t \to \infty$, every $h^{(k)}(t) \to 0$ as $t \to 0^+$, and the right difference quotient $\big(h^{(k)}(t) - 0\big)/t = (1/t)\, P_k(1/t)\, e^{-1/t} \to 0$ as well. So by induction every $h^{(k)}$ exists at $0$ and equals $0$, and $h$ is smooth on $\mathbb{R}$, with $h > 0$ exactly on $(0, \infty)$.
 >
@@ -329,7 +329,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 
 ^pf-56-4
 
-*Uses:* [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], [[§56 Vector Fields#^def-56-9|Def. §56.9]]
+*Uses:* [[§56 Vector Fields#^def-56-9|Def. §56.9]]
 
 ![[m591-53-1.svg]]
 
@@ -341,7 +341,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 
 *Terminology (Lecture 16).* A function $\chi$ with $\operatorname{supp}\chi \subseteq U$ is said to be *subordinate to $U$*; the condition shows up several times.
 
-*Lecture 16: the corollary of the [[§56 Vector Fields#^prop-56-4|bump function lemma]] that the proof of [[§56 Vector Fields#^prop-56-7|Proposition §56.7]] uses.*
+*Lecture 16: the corollary of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]] (bump functions exist) that the proof of [[§56 Vector Fields#^prop-56-7|Proposition §56.7]] uses.*
 
 > [!theorem] Corollary §56.5: Every Germ Has a Global Representative
 > Let $p \in M$ and $\gamma \in C^\infty_p(M)$, represented by $f \in C^\infty(U)$ with $U \ni p$ open. If $\chi$ is a [[§56 Vector Fields#^def-56-9|bump function]] at $p$ subordinate to $U$, then

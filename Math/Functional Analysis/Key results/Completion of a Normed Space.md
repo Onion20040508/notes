@@ -16,6 +16,7 @@ tags: [functional-analysis, hub]
 - [[§11 Normed Linear Spaces#^lem-11-3|Lemma §11.3: Reverse Triangle Inequality]]
 - [[§11 Normed Linear Spaces#^def-11-5|Definition §11.5: Cauchy Sequence]]
 - [[§12 Completeness#^def-12-1|Definition §12.1: Complete Metric Space]]
+- [[§12 Completeness#^def-12-2|Definition §12.2: Banach Space]]
 - [[§12 Completeness#^def-12-3|Definition §12.3: Equivalent Cauchy Sequences]]
 - [[§12 Completeness#^def-12-4|Definition §12.4: Completion]]
 

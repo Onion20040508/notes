@@ -11,11 +11,13 @@ tags: [functional-analysis, hub]
 - [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|Theorem §37.3: A Separable Dual Forces a Separable Space]], in [[§37 Separable Duals and Reflexive Spaces]]
 
 ## Its proof uses
+- [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Definition §28.1: Separable Space]]
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|Corollary §37.2: Two Forms of the Spanning Criterion]]
 
 ## Used in (Functional Analysis)
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|Corollary §37.4: The Duals of ℓ^∞ and L^∞]]
 - [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|Example §37.5: C[0,1] is Not Reflexive]]
+- [[§37 Separable Duals and Reflexive Spaces#^prop-37-6|Proposition §37.6: A Reflexive Space is a Banach Space]]
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-7|Corollary §37.7: Separability of X and X' for Reflexive X]]
 
 ## Connections

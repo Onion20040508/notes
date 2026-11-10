@@ -65,7 +65,7 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 > a^{(n)} = (a_1, \ldots, a_n, 0, 0, \ldots), \qquad b^{(n)} = (b_1, \ldots, b_n, 0, 0, \ldots).
 > $$
 >
-> These are finitely supported, so all norms involved are finite sums, and Steps 1–3 apply to them:
+> These are finitely supported, so all norms involved are finite sums, and Steps 1–3 apply to them (this special case is recorded as Lemma [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^lem-18-2|§18.2]] below):
 >
 > $$
 > \Bigl( \sum_{i=1}^{n} |a_i + b_i|^p \Bigr)^{1/p} = \|a^{(n)} + b^{(n)}\|_p \le \|a^{(n)}\|_p + \|b^{(n)}\|_p \le \|a\|_p + \|b\|_p,
@@ -75,7 +75,7 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 
 ^pf-18-1
 
-*Uses:* [[§17 Hölder's Inequality for Sequences#^def-17-1|Def. §17.1]], [[§17 Hölder's Inequality for Sequences#^def-17-2|Def. §17.2]], [[§17 Hölder's Inequality for Sequences#^def-17-3|Def. §17.3]], [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]]
+*Uses:* [[§17 Hölder's Inequality for Sequences#^def-17-1|Def. §17.1]], [[§17 Hölder's Inequality for Sequences#^def-17-2|Def. §17.2]], [[§17 Hölder's Inequality for Sequences#^def-17-3|Def. §17.3]], [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]], [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^lem-18-2|§18.2]]
 
 > [!remark]- Connections
 > - The integral version, home in the vault: [[Minkowski's Inequality|551 §35.2]] (same split-and-Hölder computation; its series corollaries [[§35 Lᵖ as a Banach Space#^cor-35-5|551 §35.5]]–[[§35 Lᵖ as a Banach Space#^cor-35-6|§35.6]]); in this course [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-2|§19.2]] (cited) and Part 1 of the proof of [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]] (continuous functions, HW3).
@@ -232,7 +232,7 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 > a^{(n,k)} = \bigl( a^{(n)}_1, \ldots, a^{(n)}_k \bigr) \in \mathbb{F}^k,
 > $$
 >
-> and give $\mathbb{F}^k$ the norm $\|(c_1, \ldots, c_k)\|_p = \bigl( \sum_{i=1}^k |c_i|^p \bigr)^{1/p}$. Fix $k$. A partial sum of non-negative terms is at most the full sum, so
+> and give $\mathbb{F}^k$ the norm $\|(c_1, \ldots, c_k)\|_p = \bigl( \sum_{i=1}^k |c_i|^p \bigr)^{1/p}$ (a norm: it is the norm of Proposition [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-3|§18.3]] evaluated on the sequence $(c_1, \ldots, c_k, 0, 0, \ldots)$). Fix $k$. A partial sum of non-negative terms is at most the full sum, so
 >
 > $$
 > \bigl\| a^{(n,k)} - a^{(m,k)} \bigr\|_p = \Bigl( \sum_{i=1}^{k} \bigl| a^{(n)}_i - a^{(m)}_i \bigr|^p \Bigr)^{1/p} \le \bigl\| a^{(n)} - a^{(m)} \bigr\|_p \xrightarrow[n, m \to \infty]{} 0 .

@@ -70,16 +70,15 @@ graph TD
   X3 -.->|16| C4
   X3 -.->|2| C5
   X3 -.->|10| C6
-  X3 -.->|2| C7
   X3 -.->|2| C8
-  X2 -.->|5| C1
+  X2 -.->|6| C1
   X2 -.->|6| C2
   X2 -.->|12| C3
   X2 -.->|10| C4
   X2 -.->|3| C6
   X2 -.->|2| C8
   X5 -.->|2| C4
-  X1 -.->|66| C1
+  X1 -.->|69| C1
   X1 -.->|16| C2
   X1 -.->|17| C3
   X1 -.->|4| C4
@@ -179,7 +178,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§10 Continuous Functions#^def-10-1|Definition §10.1: Continuous Function]] (4)
 
 **[[Multivariable Analysis]]**
-- [[Multivariable Chain Rule]] (24)
+- [[Multivariable Chain Rule]] (25)
 - [[Inverse Function Theorem (several variables)]] (4)
 - [[Schwarz–Clairaut Theorem]] (3)
 - [[Polar and spherical coordinates]] (2)

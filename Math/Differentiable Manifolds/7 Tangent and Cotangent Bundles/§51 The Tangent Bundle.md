@@ -44,7 +44,7 @@ tags: [differentiable-manifolds, math591]
 > \zeta : M \longrightarrow TM, \qquad \zeta(p) = (p, 0) .
 > $$
 >
-> It is one-to-one because every tangent space has a distinguished element, its zero.
+> It is well defined because every tangent space has a distinguished element, its zero; it is one-to-one because $\pi \circ \zeta = \mathrm{id}_M$.
 >
 > *Lee: Ch. 3, The Tangent Bundle*
 
@@ -167,7 +167,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-51-1
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^thm-17-6|§17.6]]
 
 ![[m591-49-5.svg]]
 
@@ -246,7 +246,7 @@ The chart lemma in one picture. The set $X$ has no topology yet; it is only cove
 
 ^pf-51-2
 
-*Uses:* [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]
 
 ![[m591-17-3.svg]]
 *The transition map of the charts $\tilde\varphi$ and $\tilde\psi$ of $TM$, as drawn in lecture over a point $(p, v)$ of $TU \cap TV$.*
@@ -282,7 +282,7 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 
 ^pf-51-3
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§51 The Tangent Bundle#^prop-51-2|§51.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§51 The Tangent Bundle#^lem-51-1|§51.1]]
+*Uses:* [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§51 The Tangent Bundle#^prop-51-2|§51.2]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§51 The Tangent Bundle#^lem-51-1|§51.1]]
 
 Lemma [[§51 The Tangent Bundle#^lem-51-1|§51.1]] builds the topology and smooth structure of the cotangent bundle ([[§52 The Cotangent Bundle|§52]]) in the same way, with the dual bases in place of the coordinate bases (Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]]).
 
@@ -300,13 +300,13 @@ Lemma [[§51 The Tangent Bundle#^lem-51-1|§51.1]] builds the topology and smoot
 > [!proof]+ Proof
 > *((1) and (2) are the lecture's observations: in these coordinates the projection is the projection onto the first $m$ components, so $TM$ is a fibration; the details and (3) are filled in.)*
 >
-> *(1)* By Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]], $TM$ is a topological manifold of dimension $2m$ and the charts $(TU, \tilde\varphi)$ form a smooth atlas on it; so $TM$ is a smooth manifold of dimension $2m$, with the smooth structure determined by this atlas (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]). To see that $\pi$ is smooth, check Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. *Continuity:* on each open set $TU$, by Definitions [[§51 The Tangent Bundle#^def-51-2|§51.2]] and [[§51 The Tangent Bundle#^def-51-5|§51.5]], $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \tilde\varphi$ with $\mathrm{pr}_1(r, v) = r$, a composite of continuous maps; the open sets $TU$ cover $TM$, so $\pi$ is continuous. *Coordinate representation:* for $(p, v) \in TM$ take a chart $(U, \varphi)$ of $M$ at $p$; then $(TU, \tilde\varphi)$ is a chart at $(p, v)$ with $\pi(TU) \subseteq U$, and for $(r, v) \in \varphi(U) \times \mathbb{R}^m$, with $\tilde\varphi^{-1}(r, v) = (\varphi^{-1}(r), u)$ for some $u$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]),
+> *(1)* By Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]], $TM$ is a topological manifold of dimension $2m$ and the charts $(TU, \tilde\varphi)$ form a smooth atlas on it; so $TM$ is a smooth manifold of dimension $2m$, with the smooth structure determined by this atlas (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]). To see that $\pi$ is smooth, check Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. *Continuity:* on each open set $TU$, by Definitions [[§51 The Tangent Bundle#^def-51-2|§51.2]] and [[§51 The Tangent Bundle#^def-51-5|§51.5]], $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \tilde\varphi$ with $\mathrm{pr}_1(r, v) = r$, a composite of continuous maps; the open sets $TU$ cover $TM$, so $\pi$ is continuous. *Coordinate representation:* for $(p, v) \in TM$ take a chart $(U, \varphi)$ of $M$ at $p$; then $(TU, \tilde\varphi)$ is a chart at $(p, v)$ with $\pi(TU) \subseteq U$, and for $(r, a) \in \varphi(U) \times \mathbb{R}^m$, with $\tilde\varphi^{-1}(r, a) = (\varphi^{-1}(r), u)$ for some $u$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]),
 >
 > $$
-> \varphi \circ \pi \circ \tilde\varphi^{-1}(r, v) = \varphi\big(\pi(\varphi^{-1}(r), u)\big) = \varphi\big(\varphi^{-1}(r)\big) = r .
+> \varphi \circ \pi \circ \tilde\varphi^{-1}(r, a) = \varphi\big(\pi(\varphi^{-1}(r), u)\big) = \varphi\big(\varphi^{-1}(r)\big) = r .
 > $$
 >
-> So in the charts $\tilde\varphi$ and $\varphi$, $\pi$ is $(r, v) \mapsto r$, a linear projection, which is smooth.
+> So in the charts $\tilde\varphi$ and $\varphi$, $\pi$ is $(r, a) \mapsto r$, a linear projection, which is smooth.
 >
 > *(2)* By Definition [[§40 Fibrations#^def-40-1|§40.1]] we need an open cover of $M$ and, over each member $U$, a diffeomorphism $\pi^{-1}(U) = TU \to U \times \mathbb{R}^m$ commuting with the projections. Take the chart domains $U$, which cover $M$, and the maps $\Phi$ of Definition [[§51 The Tangent Bundle#^def-51-4|§51.4]]. Since $\tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]) and $\varphi \times \mathrm{id} : U \times \mathbb{R}^m \to \varphi(U) \times \mathbb{R}^m$ is a bijection with inverse $\varphi^{-1} \times \mathrm{id}$,
 >
@@ -328,7 +328,7 @@ Lemma [[§51 The Tangent Bundle#^lem-51-1|§51.1]] builds the topology and smoot
 
 ^pf-51-4
 
-*Uses:* [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]], [[§51 The Tangent Bundle#^prop-51-2|§51.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-7|Def. §19.7]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§51 The Tangent Bundle#^def-51-2|Def. §51.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
+*Uses:* [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-7|Def. §19.7]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§51 The Tangent Bundle#^def-51-2|Def. §51.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
 > [!theorem] Proposition §51.5: The Tangent Bundle Is a Manifold (Claim)
 > $TM$ has a natural topology and smooth structure making it a smooth manifold of dimension $2m$, for which $\pi : TM \to M$ is a fibration with fibre $\mathbb{R}^m$, and the image $\zeta(M)$ of the zero section is a submanifold of $TM$.

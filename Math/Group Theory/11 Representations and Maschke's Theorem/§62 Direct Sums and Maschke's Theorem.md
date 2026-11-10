@@ -128,7 +128,7 @@ This is the internal direct sum of the remark *Two Meanings of “Direct Sum”*
 > [!theorem] Proposition §62.4: The Lower Right Block Is the Quotient Representation
 > Let $W$, $U$ and the basis $(u_1, \ldots, u_m, v_1, \ldots, v_n)$ be as in Proposition [[§62 Direct Sums and Maschke's Theorem#^prop-62-3|§62.3]].
 >
-> 1. $g(w + U) := gw + U$ is a well-defined action of $G$ on the quotient space $W/U$ by linear maps, so $W/U$ is a representation of $G$.
+> 1. $g(w + U) := gw + U$ is a well-defined action of $G$ on the [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|quotient space]] $W/U$ by linear maps, so $W/U$ is a representation of $G$.
 > 2. The lower right block of $\rho_W(g)$ is the matrix of $g$ acting on $W/U$, in the basis $v_1 + U, \ldots, v_n + U$.
 > 3. If $V$ is a subrepresentation with $W = U \oplus V$, then $v \mapsto v + U$ is an isomorphism of representations $V \to W/U$ (Definition [[§61 Representations and Subrepresentations#^def-61-5|§61.5]]).
 >
@@ -276,6 +276,7 @@ Maschke's theorem is proved by building a projection onto $U$ that commutes with
 
 > [!remark]- Connections
 > - The two facts quoted in the proof: [[§5 Bases#^ladr-2-32|LADR 2.32]] (extending to a basis) and [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]] (a linear map is determined by a basis).
+> - The infinite-dimensional case of the proof: [[Zorn's Lemma]] (556).
 
 Such a $P$ depends on the choice of the extra basis vectors $e_{m+1}, \ldots, e_n$, which span its kernel. When $W$ is a representation and $U$ a subrepresentation, $\operatorname{Ker}(P)$ is in general not a subrepresentation: in Example [[§62 Direct Sums and Maschke's Theorem#^ex-62-3|§62.3]] below no complement of $U$ is. Averaging over $G$ repairs this.
 
@@ -342,7 +343,7 @@ Such a $P$ depends on the choice of the extra basis vectors $e_{m+1}, \ldots, e_
 >
 > By Lemma [[§62 Direct Sums and Maschke's Theorem#^lem-62-9|§62.9]], $\pi$ is linear.
 >
-> **Step 2: $\pi$ is an idempotent with image $U$** (PS 9.3(2)). *$\pi(u) = u$ for $u \in U$.* Let $u \in U$ and $h \in G$. Since $U$ is a subrepresentation, $hu \in U = \operatorname{Im}(P)$. Since $P$ is idempotent, it is the identity on $\operatorname{Im}(P)$ (Lemma [[§62 Direct Sums and Maschke's Theorem#^lem-62-5|§62.5]]); hence $P(hu) = hu$. By the axioms of a group action, $h^{-1}(hu) = (h^{-1}h)u = eu = u$. Hence
+> **Step 2: $\pi$ is an idempotent with image $U$** (PS 9.3(2)). *$\pi(u) = u$ for $u \in U$.* Let $u \in U$ and $h \in G$. Since $U$ is a subrepresentation, $hu \in U = \operatorname{Im}(P)$. Since $P$ is idempotent, it is the identity on $\operatorname{Im}(P)$ (Lemma [[§62 Direct Sums and Maschke's Theorem#^lem-62-5|§62.5]]); hence $P(hu) = hu$. By the axioms of a [[§25 Actions#^def-25-1|group action]], $h^{-1}(hu) = (h^{-1}h)u = eu = u$. Hence
 >
 > $$
 > \pi(u) = \frac{1}{|G|} \sum_{h \in G} h^{-1}P(hu) = \frac{1}{|G|} \sum_{h \in G} u = \frac{1}{|G|}\big(|G| \cdot 1_k\big)\, u = u,
@@ -360,7 +361,7 @@ Such a $P$ depends on the choice of the extra basis vectors $e_{m+1}, \ldots, e_
 
 ^pf-62-10
 
-*Uses:* [[§62 Direct Sums and Maschke's Theorem#^lem-62-8|§62.8]], [[§62 Direct Sums and Maschke's Theorem#^lem-62-9|§62.9]], [[§62 Direct Sums and Maschke's Theorem#^lem-62-5|§62.5]], [[§61 Representations and Subrepresentations#^prop-61-4|§61.4]], [[§62 Direct Sums and Maschke's Theorem#^prop-62-6|§62.6]]
+*Uses:* [[§62 Direct Sums and Maschke's Theorem#^lem-62-8|§62.8]], [[§62 Direct Sums and Maschke's Theorem#^lem-62-9|§62.9]], [[§62 Direct Sums and Maschke's Theorem#^lem-62-5|§62.5]], [[§61 Representations and Subrepresentations#^prop-61-4|§61.4]], [[§62 Direct Sums and Maschke's Theorem#^prop-62-6|§62.6]], [[§25 Actions#^def-25-1|Def. §25.1]]
 
 For $k = \mathbb{R}$ there is a second, geometric proof, by averaging an inner product instead of an idempotent: Corollary [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-6|§63.6]], in [[§63 Invariant Inner Products and Maschke over ℝ|§63]].
 

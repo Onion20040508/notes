@@ -69,7 +69,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 >
 > *$\mathrm{O}(n) = F^{-1}(I)$.* By Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], $g \in \mathrm{O}(n) \iff g^{-1} = g^{\mathsf T} \iff gg^{\mathsf T} = I$. In detail, both inclusions: if $g \in \mathrm{O}(n)$, then $g^{-1} = g^{\mathsf T}$ by (i)$\Rightarrow$(iii) of Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], so $F(g) = gg^{\mathsf T} = gg^{-1} = I$. Conversely, let $F(g) = gg^{\mathsf T} = I$. Taking determinants, $\det(g)\det(g^{\mathsf T}) = \det I = 1$, so $\det g \neq 0$ and $g \in \mathrm{GL}(n,\mathbb{R})$; multiplying $gg^{\mathsf T} = I$ on the left by $g^{-1}$ gives $g^{\mathsf T} = g^{-1}$, which is (iii) of Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], so $g \in \mathrm{O}(n)$ by (iii)$\Rightarrow$(i).
 >
-> *The differential as a linear map.* *(Lecture 6: no Jacobian is computed; the differential is computed along curves.)* $\operatorname{Mat}(n,\mathbb{R})$ and $\operatorname{Sym}(n,\mathbb{R})$ are finite-dimensional vector spaces and $F$ is smooth between them (first step), so by Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], with $X = \operatorname{Mat}(n,\mathbb{R})$, $Y = \operatorname{Sym}(n,\mathbb{R})$, $p = g$ and $v = A$, the differential is computed along lines: for $g \in F^{-1}(I)$ and any $A \in \operatorname{Mat}(n,\mathbb{R})$,
+> *The differential as a linear map.* *(Lecture 6: no Jacobian is computed; the differential is computed along curves.)* $\operatorname{Mat}(n,\mathbb{R})$ and $\operatorname{Sym}(n,\mathbb{R})$ are finite-dimensional vector spaces and $F$ is smooth between them (first step), so by Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], applied to these two vector spaces with $p = g$ and $v = A$, the differential is computed along lines: for $g \in F^{-1}(I)$ and any $A \in \operatorname{Mat}(n,\mathbb{R})$,
 >
 > $$
 > dF_g(A) = \frac{d}{dt}\Big|_{t=0} F(g+tA).
@@ -112,7 +112,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 >
 > ![[m591-10-5.svg]]
 >
-> The same argument as a diagram: a bijection followed by symmetrization, which is onto. The unitary case in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds|§23]] has exactly this shape, with $^{\mathsf T}$ replaced by $^{\ast}$.
+> The same argument as a diagram: a bijection followed by symmetrization, which is onto. The unitary case, Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|§23.3]], has exactly this shape, with $^{\mathsf T}$ replaced by $^{\ast}$.
 >
 > *Conclusion.* $dF_g$ is surjective onto $\operatorname{Sym}(n,\mathbb{R})$ for every $g \in F^{-1}(I)$. By Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]] (here $\dim \operatorname{Mat} = n^2 \ge \tfrac{n(n+1)}{2} = \dim \operatorname{Sym}$, since the difference is $\tfrac{n(n-1)}{2} \ge 0$), this says that in any linear coordinates the Jacobian has maximal rank $k = \tfrac{n(n+1)}{2}$ at every point of $F^{-1}(I)$, i.e. $I$ is a regular value (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]). Concretely, with the linear coordinates $L$ and $K$ of the first step, the coordinate representation $\widetilde F = K \circ F \circ L^{-1} : \mathbb{R}^{n^2} \to \mathbb{R}^{n(n+1)/2}$ is smooth, its Jacobian $\widetilde F'(L(g))$ has rank $k$ for every $g \in F^{-1}(I)$, and since $K$ is injective,
 >
@@ -245,7 +245,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 
 ^pf-23-3
 
-*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§17 Differentiable Structures#^prop-17-8|§17.8]]
+*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§17 Differentiable Structures#^prop-17-8|§17.8]]
 
 > [!remark]- Connections
 > - Compactness is [[Heine–Borel Theorem|590 §18.12 (Heine–Borel)]].
@@ -262,7 +262,7 @@ The unitary group $\mathrm{U}(n)$ is treated the same way, with $F(g) = gg^*$ ma
 
 ## The Unitary Group as a Smooth Manifold
 
-*Assignment 2, Problem 4. The argument is that of [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds|The Orthogonal Group as a Smooth Manifold]] with one change that is easy to get wrong: the spaces involved are complex, but the map is not complex-linear, so everything must be done over $\mathbb{R}$.*
+*Assignment 2, Problem 4. The argument is that of Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]] with one change that is easy to get wrong: the spaces involved are complex, but the map is not complex-linear, so everything must be done over $\mathbb{R}$.*
 
 Write $A^{\ast} = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mathrm{U}(n) = \{g \in \operatorname{Mat}(n,\mathbb{C}) \mid g^{\ast} g = I\}$. Throughout, $\operatorname{Mat}(n,\mathbb{C})$ is regarded as a *real* vector space of dimension $2n^2$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]]).
 
@@ -353,7 +353,7 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 >
 > *$\mathrm{U}(n) = F^{-1}(I)$.* Lemma [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|§23.4]]: $g \in \mathrm{U}(n) \iff gg^{\ast} = I \iff F(g) = I$.
 >
-> *The differential.* By Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], applied with $X = \operatorname{Mat}(n,\mathbb{C})$ and $Y = \operatorname{Herm}(n)$ as real vector spaces, for $g \in F^{-1}(I)$ and $h \in \operatorname{Mat}(n,\mathbb{C})$, $dF_g(h) = \frac{d}{dt}\big|_{t=0} F(g+th)$ with $t$ *real* — the line $g + th$ is formed with the real scalars of $X$. Since $(th)^{\ast} = \bar t\, h^{\ast} = t h^{\ast}$ for real $t$, and $^{\ast}$ is additive, $(g + th)^{\ast} = g^{\ast} + th^{\ast}$. Multiplying out,
+> *The differential.* By Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], applied to $\operatorname{Mat}(n,\mathbb{C})$ and $\operatorname{Herm}(n)$ as real vector spaces, for $g \in F^{-1}(I)$ and $h \in \operatorname{Mat}(n,\mathbb{C})$, $dF_g(h) = \frac{d}{dt}\big|_{t=0} F(g+th)$ with $t$ *real* — the line $g + th$ is formed with the real scalars of $\operatorname{Mat}(n,\mathbb{C})$. Since $(th)^{\ast} = \bar t\, h^{\ast} = t h^{\ast}$ for real $t$, and $^{\ast}$ is additive, $(g + th)^{\ast} = g^{\ast} + th^{\ast}$. Multiplying out,
 >
 > $$
 > F(g+th) = (g+th)(g^{\ast} + th^{\ast}) = gg^{\ast} + t\big(hg^{\ast} + gh^{\ast}\big) + t^2\, hh^{\ast},

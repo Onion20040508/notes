@@ -108,7 +108,7 @@ with simple quotients $S_i = X_i/X_{i-1}$ and $T_j = Y_j/Y_{j-1}$.
 ^prop-51-4
 
 > [!proof]+ Proof
-> *Idea:* restricting $Z_{ij} \to H_{ij}$ to $Z_{i(j-1)}$ has kernel $Z_{(i-1)(j-1)}$; so the column $H_{i0} \hookrightarrow \cdots \hookrightarrow H_{in} = S_i$ is a chain of normal subgroups ending in a simple group.
+> *Idea:* restricting $Z_{ij} \to H_{ij}$ to $Z_{i(j-1)}$ has kernel $Z_{(i-1)(j-1)}$; so the column $H_{i0} \hookrightarrow \cdots \hookrightarrow H_{in} = S_i$ is a chain of [[§38 Normal Subgroups#^def-38-1|normal subgroups]] ending in a [[§43 Simple Groups#^def-43-1|simple group]].
 >
 > *(Board 10/28.)* **(1), (2).** Let $\pi: Z_{ij} \to H_{ij} = Z_{ij}/Z_{(i-1)j}$ be the projection, and restrict it to $Z_{i(j-1)}$. By Restricting a Homomorphism (Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-4|§41.4]]), the restriction has kernel
 >
@@ -136,7 +136,7 @@ with simple quotients $S_i = X_i/X_{i-1}$ and $T_j = Y_j/Y_{j-1}$.
 
 ^pf-51-4
 
-*Uses:* [[§41 The First and Second Isomorphism Theorems#^lem-41-4|§41.4]], [[§51 The Grid of Intersections#^lem-51-1|§51.1]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§51 The Grid of Intersections#^prop-51-2|§51.2]], [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§48 Solvable Groups#^prop-48-5|§48.5]]
+*Uses:* [[§41 The First and Second Isomorphism Theorems#^lem-41-4|§41.4]], [[§51 The Grid of Intersections#^lem-51-1|§51.1]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§51 The Grid of Intersections#^prop-51-2|§51.2]], [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§48 Solvable Groups#^prop-48-5|§48.5]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§43 Simple Groups#^def-43-1|Def. §43.1]]
 
 > [!remark] Remark: The Possible Squares
 > Consider one square of the grid. To keep the subscripts out of the way, the lecture names its corners
@@ -201,7 +201,7 @@ with simple quotients $S_i = X_i/X_{i-1}$ and $T_j = Y_j/Y_{j-1}$.
 *(Not from lecture; figure added.)* Case (a) of the proof. Left: the square. Right: the subgroups between $A$ and $D$, with the quotients on the edges. Since $B = A$, the whole quotient $D/A$ is the simple group $T_j$. But $C$ lies strictly between $A$ and $D$ (both $C/A$ and $D/C$ are nontrivial), so $C/A$ would be a normal subgroup of $D/A$ that is neither trivial nor everything.
 
 > [!remark] Remark: The Same Argument by Counting
-> For finite $G$, case (a) is also a count of indices, as a student suggested on the board. By Lagrange's theorem along the two paths from $A$ to $D$,
+> For finite $G$, case (a) is also a count of indices, as a student suggested on the board. By [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange's theorem]] along the two paths from $A$ to $D$,
 >
 > $$
 > [D : A] = [D : C]\,[C : A] = |S_i| \cdot |T_j|, \qquad [D : A] = [D : B]\,[B : A] = |T_j| \cdot 1,

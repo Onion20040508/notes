@@ -375,7 +375,7 @@ The universal property as a triangle: a linear map that kills $W$ descends to $V
 
 > [!remark]- Connections
 > - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103 (quotient space is a vector space)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105 (dimension)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-106|LADR 3.106]] and [[First isomorphism theorem|LADR 3.107 (first isomorphism theorem)]] for the induced map.
-> - Topological counterpart: [[Universal Property of Quotient Maps|590 §12 (universal property of quotient maps)]]; applied in [[§34 The Cotangent Space from Germs#^def-34-1|Def. §34.1]].
+> - Topological counterpart: [[Universal Property of Quotient Maps|590 §13.3 (universal property of quotient maps)]]; applied in [[§34 The Cotangent Space from Germs#^def-34-1|Def. §34.1]].
 
 > [!definition] Definition §21.7: Direct Sum
 > The **direct sum** of vector spaces $V$ and $W$ is $V \oplus W = V \times W$ with the componentwise operations $(v, w) + (v', w') = (v + v', w + w')$ and $c(v, w) = (cv, cw)$. It comes with the **inclusions** $\iota_V(v) = (v, 0)$, $\iota_W(w) = (0, w)$ and the **projections** $\pi_V(v, w) = v$, $\pi_W(v, w) = w$, all linear.

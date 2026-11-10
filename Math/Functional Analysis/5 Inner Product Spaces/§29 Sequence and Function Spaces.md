@@ -225,7 +225,7 @@ A continuous $g$ and a step function on cubes with rational endpoints and ration
 ^prop-29-6
 
 > [!proof]+ Proof
-> (Stated in lecture without proof. HW5, Problem 1(b) is the case $E = [0,1]$; the general case below is Claude's.) Here $\|f\|_\infty = \inf\{M \ge 0 : |f| \le M \text{ a.e.}\}$, functions equal almost everywhere being identified.
+> (Stated in lecture without proof. HW5, Problem 1(b) is the case $E = [0,1]$; the general case below is added, not from lecture or homework.) Here $\|f\|_\infty = \inf\{M \ge 0 : |f| \le M \text{ a.e.}\}$, functions equal almost everywhere being identified.
 >
 > **Step 1: the case $E = [0,1]$ (HW5).** For $t \in (0,1]$ let $f_t = \chi_{[0,t]}$. Let $0 < s < t \le 1$. Then $|f_t - f_s| = \chi_{(s,t]}$, which is at most $1$ everywhere, so $\|f_t - f_s\|_\infty \le 1$. It equals $1$ on $(s,t]$, a set of measure $t - s > 0$; so for any $M < 1$ the inequality $|f_t - f_s| \le M$ fails on a set of positive measure, and $\|f_t - f_s\|_\infty \ge 1$. Hence $\|f_t - f_s\|_\infty = 1$ for $s \neq t$.
 >
@@ -272,7 +272,7 @@ In $L^2[-1,1]$ the even and the odd functions are closed subspaces, each the ort
 
 ![[§25 Projection and Orthogonal Decomposition#^prop-25-9]]
 
-*Chain:* [[§45 The Completeness Relation#^ex-45-1|Chapter 7 (parity)]] →
+*Chain:* [[§45 The Completeness Relation#^ex-45-1|Chapter 9 (parity)]] →
 
 ## The Fourier Basis
 
@@ -282,4 +282,4 @@ The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal bas
 
 ![[§27 Orthonormal Sets and Bases#^cor-27-12]]
 
-*Chain:* [[§30 Boundedness and Continuity#^ex-30-2|Chapter 6 (the Fourier transform)]] · [[§45 The Completeness Relation#^ex-45-2|Chapter 7 (a particle on a ring)]] →
+*Chain:* [[§30 Boundedness and Continuity#^ex-30-2|Chapter 6 (the Fourier transform)]] · [[§45 The Completeness Relation#^ex-45-2|Chapter 9 (a particle on a ring)]] →

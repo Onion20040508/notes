@@ -19,6 +19,9 @@ tags: [linear-algebra, hub]
 - [[§27 Singular Value Decomposition#^ladr-7-69|7.69 Isometries characterized by having all singular values equal 1]]
 - [[§37 Determinants#^ladr-9-59|9.59 Every positive operator has nonnegative determinant]]
 
+## Used in (Group Theory)
+- [[§64 Sesquilinear and Hermitian Forms#^ex-64-1|Example §64.1: The Dot Product on ℂ²]]
+
 ## Connections
 - Physics: an observable (or any normal operator, e.g. a unitary time evolution) has an orthonormal eigenbasis; commuting normal operators share one ([[§18 Commuting Operators#^ladr-5-76|5.76]]).
 - In infinite dimensions the eigenvectors of a self-adjoint operator need not span: the bound states of hydrogen are not complete, [[§47 Bound States Need Not Be Complete꞉ Hydrogen#^cor-47-2|556 Cor. §47.2]].

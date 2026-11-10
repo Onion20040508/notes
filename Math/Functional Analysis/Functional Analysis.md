@@ -58,18 +58,19 @@ graph TD
   C3 -.->|on credit| C2
   C4 -.->|on credit| C3
   C5 -.->|on credit| C1
+  C6 -.->|on credit| C2
   C6 -.->|on credit| C5
   X1 -.->|2| C6
   X2 -.->|13| C4
-  X2 -.->|11| C5
+  X2 -.->|13| C5
   X2 -.->|13| C6
   X2 -.->|3| C9
   X5 -.->|2| C6
   X4 -.->|2| C2
-  X4 -.->|11| C3
+  X4 -.->|10| C3
   X4 -.->|11| C4
-  X4 -.->|4| C5
-  X4 -.->|10| C6
+  X4 -.->|6| C5
+  X4 -.->|11| C6
 ```
 
 ## Chapters
@@ -149,28 +150,28 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§4 Span and Linear Independence#^ladr-2-22|Theorem 2.22: Length of linearly independent list ≤ length of spanning list]] (1)
 
 **[[Measure Theory]]**
-- [[Countable Union of Countable Sets is Countable]] (4)
+- [[Countable Union of Countable Sets is Countable]] (5)
 - [[Dominated Convergence Theorem]] (3)
 - [[§35 Lᵖ as a Banach Space#^thm-35-12|Theorem §35.12: Density in Lᵖ]] (3)
 - [[Hölder's Inequality]] (2)
 - [[Minkowski's Inequality]] (2)
 - [[Monotone Convergence Theorem (Lebesgue)]] (2)
 - [[Riesz–Fischer Theorem]] (2)
-- [[§13 Approximation and Continuity of Measure#^prop-13-4|Proposition §13.4: Continuity of Measure from Below]] (2)
+- [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2: ℚ is countable]] (2)
 
 **[[Topology]]**
 - [[§19 Limit Point Compactness#^thm-19-4|Theorem §19.4: Equivalence for Metrizable Spaces]] (1)
 - [[§18 Compact Spaces#^thm-18-3|Theorem §18.3: Continuous Image of Compact is Compact]] (1)
 
 **[[Single Variable Analysis]]**
-- [[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3: Cauchy Implies Convergent]] (6)
+- [[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3: Cauchy Implies Convergent]] (7)
 - [[§34 Fundamental Theorem of Calculus#^thm-34-1|Theorem §34.1: Fundamental Theorem of Calculus I]] (4)
-- [[Bolzano–Weierstrass Theorem]] (3)
 - [[§33 Properties of the Riemann Integral#^thm-33-3|Theorem §33.3: Monotonicity of the Integral]] (3)
 - [[§34 Fundamental Theorem of Calculus#^thm-34-3|Theorem §34.3: Integration by Parts]] (3)
 - [[Fundamental Theorem of Calculus]] (2)
+- [[§27 Weierstrass's Approximation Theorem (Not Covered)]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-4|Theorem §33.4: Absolute Values]] (2)
-- [[§33 Properties of the Riemann Integral#^thm-33-5|Theorem §33.5: Additivity over Subintervals]] (2)
+- [[Bolzano–Weierstrass Theorem]] (2)
 
 **[[Multivariable Analysis]]**
 - [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|Theorem §28.1: Divergence Theorem in ℝⁿ]] (2)

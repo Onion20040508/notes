@@ -273,7 +273,7 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§62 Direct Sums and Maschke's T
 
 > [!remark] Remark: Beyond $\mathbb{R}$ and Beyond Finite Groups
 > - *Other fields.* Maschke's theorem in full (Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]) needs only $|G| \neq 0$ in $k$; for $S_3$, of order $6$, this excludes the fields of characteristic $2$ and $3$. Its proof (Problem Set 9) averages an idempotent instead of an inner product, and Examples [[§62 Direct Sums and Maschke's Theorem#^ex-62-3|§62.3]] and [[§62 Direct Sums and Maschke's Theorem#^ex-62-4|§62.4]] show what goes wrong for an infinite group or when $|G| = 0$ in $k$ (both in [[§62 Direct Sums and Maschke's Theorem|§62]]).
-> - *Compact Lie groups.* Beyond this course, which has no manifold prerequisite: for a compact Lie group the same proof works, with the sum over $G$ replaced by an integral over $G$ against an invariant measure.
+> - *Compact Lie groups.* Beyond this course, which has no manifold prerequisite: for a compact [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]] the same proof works, with the sum over $G$ replaced by an integral over $G$ against an invariant measure.
 >
 > *Source: lecture 11/6*
 

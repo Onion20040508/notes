@@ -12,11 +12,9 @@ tags: [differentiable-manifolds, math591]
 ## Two Descriptions of a Manifold in Euclidean Space
 
 > [!remark] Remark: The Closing Remark
-> The lecture ended before the main theorem, the [[§7 The Regular Value Theorem#^thm-7-2|implicit function theorem]], and summarized its message instead:
+> There are two ways to look at a manifold sitting in a big ambient space: either it is defined by the simultaneous zeros of some functions, or it is parametrized. The [[§7 The Regular Value Theorem#^thm-7-2|implicit function theorem]] says that it does not matter — they are the same thing.
 >
-> > There are two ways to look at a manifold sitting in a big ambient space. Either it is defined by the simultaneous zeros of some functions, or it is parametrized. The implicit function theorem says it does not matter — they are the same thing.
->
-> So one may think of a manifold *internally*, through parametrizations, or *externally*, through the equations that cut it out of the ambient space. The circle shows both: it is cut out by the equation $x^2 + y^2 = 1$, and it is parametrized by the angle $\theta$. The rest of this subsection makes the slogan precise; none of it was proved in lecture, and the two halves are in quite different states in these notes.
+> So one may think of a manifold *internally*, through parametrizations, or *externally*, through the equations that cut it out of the ambient space. The circle shows both: it is cut out by the equation $x^2 + y^2 = 1$, and it is parametrized by the angle $\theta$. The rest of this subsection makes this precise; none of it was proved in lecture.
 
 ^rem-20-1
 
@@ -69,13 +67,13 @@ tags: [differentiable-manifolds, math591]
 >
 > whose top $n \times n$ block is $I_n$.
 >
-> *Internal $\Rightarrow$ (G).* Since $D\alpha_q$ has rank $n$, some $n$ of its $n+k$ rows are independent; permute coordinates so these are the first $n$, and write $\alpha = (\alpha_1, \alpha_2)$ with $\alpha_1 : V \to \mathbb{R}^n$, $\alpha_2 : V \to \mathbb{R}^k$. In blocks,
+> *Internal $\Rightarrow$ (G).* Let $q = \alpha^{-1}(p)$. Since $D\alpha_q$ has rank $n$, some $n$ of its $n+k$ rows are independent; permute coordinates so these are the first $n$, and write $\alpha = (\alpha_1, \alpha_2)$ with $\alpha_1 : V \to \mathbb{R}^n$, $\alpha_2 : V \to \mathbb{R}^k$. In blocks,
 >
 > $$
 > D\alpha_q = \begin{pmatrix} D(\alpha_1)_q \\[1mm] D(\alpha_2)_q \end{pmatrix},
 > $$
 >
-> with $D(\alpha_1)_q$ the $n \times n$ block of the $n$ independent rows and $D(\alpha_2)_q$ the remaining $k \times n$ block. Then $D(\alpha_1)_q$ is invertible, so by the [[§35 Local Diffeomorphisms#^thm-35-1|inverse function theorem]] (Lee, Theorem C.34) $\alpha_1$ restricts to a diffeomorphism of a neighborhood $V_1 \ni q$ onto an open $V_2 \subseteq \mathbb{R}^n$. Put $h = \alpha_2 \circ (\alpha_1|_{V_1})^{-1} : V_2 \to \mathbb{R}^k$, smooth. Then $\alpha(V_1) = \{(x, h(x)) \mid x \in V_2\}$, and because $\alpha$ is a homeomorphism onto $X \cap W$, the set $\alpha(V_1)$ is open in $X \cap W$, so it equals $X \cap (V_2 \times V')$ for a suitable box.
+> with $D(\alpha_1)_q$ the $n \times n$ block of the $n$ independent rows and $D(\alpha_2)_q$ the remaining $k \times n$ block. Then $D(\alpha_1)_q$ is invertible, so by the [[§35 Local Diffeomorphisms#^thm-35-1|inverse function theorem]] (Lee, Theorem C.34) $\alpha_1$ restricts to a diffeomorphism of a neighborhood $V_1 \ni q$ onto an open $V_2 \subseteq \mathbb{R}^n$. Put $h = \alpha_2 \circ (\alpha_1|_{V_1})^{-1} : V_2 \to \mathbb{R}^k$, smooth. Then $\alpha(V_1) = \{(x, h(x)) \mid x \in V_2\}$, and because $\alpha$ is a homeomorphism onto $X \cap W$, the set $\alpha(V_1)$ is open in $X \cap W$: $\alpha(V_1) = X \cap O$ for an open $O \subseteq W$, and $p = \alpha(q) \in O$. The base $V_2$ has to be shrunk as well, because $X$ may have points over $V_2$ that are not in $O$. Write $p = (x_0, h(x_0))$ with $x_0 = \alpha_1(q) \in V_2$, choose open sets $B \subseteq \mathbb{R}^n$ and $V' \subseteq \mathbb{R}^k$ with $p \in B \times V' \subseteq O$ (open boxes form a basis of $\mathbb{R}^n \times \mathbb{R}^k$), and put $V = V_2 \cap B \cap h^{-1}(V')$, an open set containing $x_0$ because $h$ is continuous. Then $h(V) \subseteq V'$, $p \in V \times V' \subseteq O$, and $X \cap (V \times V') = \{(x, h(x)) \mid x \in V\}$: a point $(x,y)$ of the left side lies in $X \cap O = \alpha(V_1)$, so $y = h(x)$, and $x \in V$; conversely, for $x \in V$ the point $(x, h(x))$ lies in $\alpha(V_1) \subseteq X$ and in $V \times V'$. So $V$, $V'$ and $h|_V : V \to V'$ are as (G) requires.
 
 ^pf-20-1
 
@@ -97,13 +95,13 @@ The circle in its three descriptions is collected in [[§24 The Circle|§24]].
 
 *Lecture 6. Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] produced a* topological *manifold from a regular level set. The charts it produced were not arbitrary, and the point of this subsection is that they are automatically smoothly compatible — so the regular value theorem is in fact a machine for manufacturing smooth manifolds.*
 
-Recall the construction in the proof of Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]]. Index the coordinates of $\mathbb{R}^{n+k}$ by $\{1, \ldots, n+k\}$. For $p \in M = F^{-1}(c)$, the hypothesis $\operatorname{rank} F'(p) = k$ says that some $k$ of the $n+k$ columns of $F'(p)$ are linearly independent. Choose such a set of indices $J$, $|J| = k$, and let $I = \{1,\ldots,n+k\} \setminus J$ be the complementary $n$ indices. Write $x_J \in \mathbb{R}^J$ and $x_I \in \mathbb{R}^I$ for the corresponding groups of coordinates. The [[§7 The Regular Value Theorem#^thm-7-2|implicit function theorem]] then solves for $x_J$ in terms of $x_I$: there are an open box $U_J \times V_J' \ni p$ and a smooth $h_J : V_J \to \mathbb{R}^J$ with
+Recall the construction in the proof of Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]]. Index the coordinates of $\mathbb{R}^{n+k}$ by $\{1, \ldots, n+k\}$. For $p \in M = F^{-1}(c)$, the hypothesis $\operatorname{rank} F'(p) = k$ says that some $k$ of the $n+k$ columns of $F'(p)$ are linearly independent. Choose such a set of indices $J$, $|J| = k$, and let $I = \{1,\ldots,n+k\} \setminus J$ be the complementary $n$ indices. Write $x_J \in \mathbb{R}^J$ and $x_I \in \mathbb{R}^I$ for the corresponding groups of coordinates. The [[§7 The Regular Value Theorem#^thm-7-2|implicit function theorem]] then solves for $x_J$ in terms of $x_I$: there are an open box $V_J \times V_J' \ni p$, with $V_J \subseteq \mathbb{R}^I$ and $V_J' \subseteq \mathbb{R}^J$ open, and a smooth $h_J : V_J \to V_J'$ with
 
 $$
 F(x) = c \iff x_J = h_J(x_I) \qquad \text{for } x \text{ in the box},
 $$
 
-and the chart is the restriction to $M$ of the linear projection $\pi_I : \mathbb{R}^{n+k} \to \mathbb{R}^I$,
+and the chart, with domain $U_J = M \cap (V_J \times V_J')$, is the restriction to $M$ of the linear projection $\pi_I : \mathbb{R}^{n+k} \to \mathbb{R}^I$,
 
 $$
 \begin{aligned}
@@ -117,7 +115,7 @@ The inverse $\varphi_J^{-1}$ is a parametrization of that piece of $M$, in the f
 > [!definition] Definition §20.3: Parametrization
 > Let $(U, \varphi)$ be a chart of a manifold $M$. The inverse $\varphi^{-1} : \varphi(U) \to U$ is the **parametrization** of $U$ determined by the chart. When $M \subseteq \mathbb{R}^N$, it is also regarded as a map $\varphi(U) \to \mathbb{R}^N$.
 >
-> *Lee: Ch. 1, Coordinate Charts (“local parametrization)*
+> *Lee: Ch. 1, Coordinate Charts (“local parametrization”)*
 
 ^def-20-3
 
@@ -211,7 +209,7 @@ The same level sets are submanifolds in the sense of Lecture 12, and their graph
 
 The board picture for this example. The patch $M$ is drawn over a rectangle of $(x,y)$, and the two shaded regions are its images under the two charts: straight down onto the $xy$-plane, giving $\varphi(U)$ and presenting $M$ as $z = g(x,y)$; and sideways onto the $xz$-plane, giving $\psi(U)$ and presenting the *same* patch as $y = h(x,z)$. The transition function is the trip up from one shadow and down to the other.
 
-The picture only works because $\partial F/\partial z$ and $\partial F/\partial y$ are *both* nonzero throughout the patch. If $\partial F/\partial y$ vanished anywhere — if the surface were vertical in the $y$-direction there — the sideways projection would fold over and $\psi$ would not be injective, so there would be no second chart and nothing to compare. Which pairs of variables work is a condition at each point, and in general it changes from point to point; that is the content of the index set $J$ in Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]].
+The picture only works because $\partial F/\partial z$ and $\partial F/\partial y$ are *both* nonzero throughout the patch. If $\partial F/\partial y$ vanished anywhere — if the surface were vertical in the $y$-direction there — the sideways projection could fold over, and even where $\psi$ stays injective its inverse is not smooth there (for $F = z - y^3$, where $\partial F/\partial y = 0$ along $y = 0$, $\psi$ is injective with inverse $(x,z) \mapsto (x, z^{1/3}, z)$); so $\psi$ would not be a chart of the smooth structure, and there would be no second chart and nothing to compare. Which pairs of variables work is a condition at each point, and in general it changes from point to point; that is the content of the index set $J$ in Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]].
 
 **Transcription note.** The board wrote the parametrization as “$\psi^{-1}(x,y) = (x,y,g(x,y))$”; it is $\varphi^{-1}$, as the recording confirms. The board also wrote “$\varphi^{-1}|_{U \cap V} : U \cap V \to \mathbb{R}^{n+k}$” — but $\varphi^{-1}$ is defined on $\varphi(U \cap V) \subseteq \mathbb{R}^n$, not on $U \cap V$, which consists of points of the manifold. Two further slips in the statement of the regular value theorem: the value $c$ lies in $\mathbb{R}^k$, not $\mathbb{R}^{n+k}$; and the rank condition is on the Jacobian $F'(p)$, not on $F^{-1}(p)$.
 
@@ -227,7 +225,7 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 > [!proof]+ Proof
 > Both parts are checked against Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]: continuity, and at each point one pair of charts in which the coordinate representation is smooth. On the Euclidean side the chart is the identity chart $(\mathbb{R}^l, \mathrm{id})$ or $(\mathbb{R}^{n+k}, \mathrm{id})$ (Example [[§17 Differentiable Structures#^ex-17-1|§17.1]]); on the side of $M$ it is a graph chart $(U_J, \varphi_J)$ of Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], whose parametrization $\varphi_J^{-1} : V_J \to \mathbb{R}^{n+k}$ is smooth in the Euclidean sense (observation 1 in that proof) and whose coordinate map is $\varphi_J = \pi_I|_{U_J}$.
 >
-> *(1)* $M \cap W'$ is open in $M$ (an open set of $\mathbb{R}^{n+k}$ intersected with $M$, Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]), and it is a smooth manifold with the charts of $M$ restricted to it. *Continuity:* $H|_{M \cap W'}$ is the composite of the inclusion $M \cap W' \hookrightarrow W'$, continuous by Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]](1), with the continuous map $H$. *Charts:* fix $p \in M \cap W'$ and a graph chart $(U_J, \varphi_J)$ with $p \in U_J$. Its restriction to the open set $U = U_J \cap W'$ is again a smooth chart of $M$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)), and $H(U) \subseteq \mathbb{R}^l$, the domain of the identity chart. The coordinate representation is
+> *(1)* $M \cap W'$ is open in $M$ (an open set of $\mathbb{R}^{n+k}$ intersected with $M$, Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]), and it is a smooth manifold with the charts of $M$ restricted to it (Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]]). *Continuity:* $H|_{M \cap W'}$ is the composite of the inclusion $M \cap W' \hookrightarrow W'$, continuous by Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]](1), with the continuous map $H$. *Charts:* fix $p \in M \cap W'$ and a graph chart $(U_J, \varphi_J)$ with $p \in U_J$. Its restriction to the open set $U = U_J \cap W'$ is again a smooth chart of $M$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)), and $H(U) \subseteq \mathbb{R}^l$, the domain of the identity chart. The coordinate representation is
 >
 > $$
 > \mathrm{id} \circ H \circ (\varphi_J|_U)^{-1} = H \circ \varphi_J^{-1} : \varphi_J(U_J \cap W') \to \mathbb{R}^l .
@@ -245,7 +243,7 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 
 ^pf-20-3
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§17 Differentiable Structures#^prop-17-8|§17.8]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
 
 > [!remark]- Connections
 > - The same statement for embedded submanifolds of any manifold: [[§37 Regular Submanifolds#^lem-37-5|§37.5]].

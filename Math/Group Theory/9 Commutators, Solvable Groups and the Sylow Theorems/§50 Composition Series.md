@@ -88,7 +88,7 @@ The course has used the analogy that simple groups are atoms and other groups ar
 ^lem-50-3
 
 > [!proof]+ Proof
-> *Idea:* split $G$ at a proper nontrivial normal subgroup $N$ and stitch a series of $N$ to the preimage of a series of $G/N$.
+> *Idea:* split $G$ at a proper nontrivial [[§38 Normal Subgroups#^def-38-1|normal subgroup]] $N$ and stitch a series of $N$ to the preimage of a series of $G/N$.
 >
 > *(Board 10/28.)* Strong induction on $|G|$. If $G$ is trivial, $\{e\} = G_0 = G$ is a composition series (with no quotients); if $G$ is simple, $\{e\} \trianglelefteq G$ is one. Otherwise there is a normal subgroup $N$ with $\{e\} \subsetneq N \subsetneq G$. Then $|N| < |G|$ and $|G/N| < |G|$, so by induction there are composition series
 >
@@ -112,7 +112,7 @@ The course has used the analogy that simple groups are atoms and other groups ar
 
 ^pf-50-3
 
-*Uses:* [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]]
+*Uses:* [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]]
 
 ![[m493-56-3.svg]]
 

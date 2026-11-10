@@ -46,7 +46,7 @@ tags: [group-theory, math493]
 ^rem-41-1
 
 > [!example] Example §41.1: $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$: a Non-Normal Image
-> The map $\alpha: \mathbb{Z}/2\mathbb{Z} \to S_3$, $\alpha(a) = (1\,2)^a$, is a homomorphism whose image is not normal. It is well defined because $(1\,2)^2 = e$: if $a' = a + 2m$, then $(1\,2)^{a'} = (1\,2)^a\big((1\,2)^2\big)^m = (1\,2)^a$. It is a homomorphism by the Exponent Laws, $(1\,2)^{a + b} = (1\,2)^a(1\,2)^b$. Its image is $\{e, (1\,2)\} = \langle (1\,2) \rangle$, which is not normal in $S_3$: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin \langle (1\,2) \rangle$ (Images Need Not Be Normal, Proposition [[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]]). Its kernel $\{0\}$ is, like every kernel, normal.
+> The map $\alpha: \mathbb{Z}/2\mathbb{Z} \to S_3$, $\alpha(a) = (1\,2)^a$, is a homomorphism whose image is not normal. It is well defined because $(1\,2)^2 = e$: if $a' = a + 2m$, then $(1\,2)^{a'} = (1\,2)^a\big((1\,2)^2\big)^m = (1\,2)^a$. It is a homomorphism by the [[§4 Subgroups#^lem-4-4|Exponent Laws]], $(1\,2)^{a + b} = (1\,2)^a(1\,2)^b$. Its image is $\{e, (1\,2)\} = \langle (1\,2) \rangle$, which is not normal in $S_3$: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin \langle (1\,2) \rangle$ (Images Need Not Be Normal, Proposition [[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]]). Its kernel $\{0\}$ is, like every kernel, normal.
 >
 > *Source: lecture*
 

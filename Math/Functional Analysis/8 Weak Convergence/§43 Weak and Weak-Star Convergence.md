@@ -104,7 +104,7 @@ The same holds in any Hilbert space, by an abstract argument.
 *Uses:* [[§27 Orthonormal Sets and Bases#^thm-27-5|§27.5]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]
 
 > [!example] Example §43.2: $\sin(mx) \rightharpoonup 0$ in $L^2[0, 2\pi]$
-> In $L^2([0, 2\pi])$ the functions $f_m(x) = \frac{1}{\sqrt\pi} \sin(mx)$, $m = 1, 2, \ldots$, form an orthonormal set (left to the class).
+> In $L^2([0, 2\pi])$ the functions $f_m(x) = \frac{1}{\sqrt\pi} \sin(mx)$, $m = 1, 2, \ldots$, form an orthonormal set.
 > (For $m, k \ge 1$, $\int_0^{2\pi} \sin(mx) \sin(kx)\, dx = \frac12 \int_0^{2\pi} \bigl( \cos((m-k)x) - \cos((m+k)x) \bigr) dx$, which is $0$ for $m \neq k$ and $\pi$ for $m = k$.) By Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-2|§43.2]], for every $g \in L^2([0, 2\pi])$
 >
 > $$
@@ -200,7 +200,7 @@ $$
 K_\varepsilon = \{ x \in X : \text{there is } y \in K \text{ with } \|x - y\| < \varepsilon \} .
 $$
 
-Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, and the previous theorem applies; or redo the previous proof from scratch.
+Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, and Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]] applies; or redo its proof from scratch.
 
 ![[m556-43-3.svg]]
 
@@ -303,7 +303,7 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 
 > [!remark] Remark: Two Questions for Homework
 > 1. *$p = 1$.* Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|§19.5]]), so the argument above does not apply; one has to test against $L^\infty$ functions. Homework.
-> 2. *Products.* If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, Hölder gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$. Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$. Finding an example is homework.
+> 2. *Products.* If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, Hölder gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]] to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$. Finding an example is homework.
 >
 > Weak limits are useful but limited. A bounded sequence in infinite dimensions need not have a convergent subsequence; under certain circumstances it will have a weakly convergent one, but weak convergence does not commute with nonlinear operations.
 
@@ -356,7 +356,7 @@ On $X'$ two notions are available: weak convergence ($X'$ is a normed space, tes
 > - $e_n \overset{\ast}{\rightharpoonup} 0$ in $\ell^1 = (c_0)'$: for every $a = (a_1, a_2, \ldots) \in c_0$, $\langle a, e_n \rangle = a_n \to 0$.
 > - $e_n \not\rightharpoonup 0$ in $\ell^1$: for $a = (a_1, a_2, \ldots) \in \ell^\infty = (\ell^1)'$, $\langle e_n, a \rangle = a_n$, which need not converge, since $a$ is only bounded.
 >
-> For instance $a = (1, 1, 1, \ldots)$ gives $\langle e_n, a \rangle = 1 \not\to 0$, and $a = (1, -1, 1, -1, \ldots)$ gives a sequence with no limit at all, so $\{e_n\}$ has no weak limit in $\ell^1$ (any weak limit would also be a weak-$\ast$ limit, hence $0$ by uniqueness). (The pairings are the bar-free ones, $\langle x, b \rangle = \sum_j x_j b_j$, of Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]].)
+> For instance $a = (1, 1, 1, \ldots)$ gives $\langle e_n, a \rangle = 1 \not\to 0$, and $a = (1, -1, 1, -1, \ldots)$ gives a sequence with no limit at all, so $\{e_n\}$ has no weak limit in $\ell^1$ (any weak limit would also be a weak-$\ast$ limit by Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-8|§43.8]], hence $0$, since a weak-$\ast$ limit is a pointwise limit and therefore unique). (The pairings are the bar-free ones, $\langle x, b \rangle = \sum_j x_j b_j$, of Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]].)
 >
 > *(Not from lecture.)* Lax's example (§10.3, Example 5) is of the same kind: the averages $m_n(h) = \frac{n}{2} \int_{-1/n}^{1/n} h(t)\, dt$ are functionals on $C[-1, 1]$ that converge weak-$\ast$ to the point evaluation $h \mapsto h(0)$, but not weakly, since against a bounded function with a jump at $0$ the averages do not converge to its value at $0$.
 
@@ -424,4 +424,4 @@ As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of t
 
 *Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]
 
-Next lecture: under what conditions does a bounded sequence have a weak-$\ast$ convergent subsequence?
+The remaining question is under what conditions a bounded sequence has a weak-$\ast$ convergent subsequence.

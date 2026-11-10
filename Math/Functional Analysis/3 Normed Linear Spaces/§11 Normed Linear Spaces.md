@@ -141,6 +141,8 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > $$
 > \lim_{n \to \infty} \|x_n - x_0\| = 0.
 > $$
+>
+> In a metric space $(M, d)$ the same definition is used with $d(x_n, x_0)$ in place of $\|x_n - x_0\|$.
 
 ^def-11-4
 
@@ -197,7 +199,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > [!remark] Remark: What This Does and Does Not Say
 > The statement is not circular, although it can sound so. It compares two metric spaces: $X$ with $d(x,y) = \|x - y\|$, and $\mathbb{R}$ with $|s - t|$; neither metric is defined in terms of the continuity being asserted. Only subadditivity and homogeneity are used — positivity is not — so the same proof shows any seminorm, and any positive homogeneous subadditive $p$ that happens to satisfy $p(-x) = p(x)$, is $1$-Lipschitz (Lemma [[§11 Normed Linear Spaces#^lem-11-5|§11.5]] below).
 >
-> The question has content whenever a second topology is present. Whether a norm $\|\cdot\|_1$ is continuous with respect to another norm $\|\cdot\|_2$ is settled by Proposition [[§14 New Normed Spaces from Old#^prop-14-2|§14.2]]: exactly when $\|x\|_1 \le C\|x\|_2$ for some constant $C$, which is one half of equivalence of the two norms; on $\mathbb{R}^n$ this always holds, in infinite dimensions it need not. Later in the course $X$ will also carry the weak topology, in which the norm is *not* continuous. (Not covered in lecture.)
+> The question has content whenever a second topology is present. Whether a norm $\|\cdot\|_1$ is continuous with respect to another norm $\|\cdot\|_2$ is settled by Proposition [[§14 New Normed Spaces from Old#^prop-14-2|§14.2]]: exactly when $\|x\|_1 \le C\|x\|_2$ for some constant $C$, which is one half of equivalence of the two norms; on $\mathbb{R}^n$ this always holds, in infinite dimensions it need not. Later in the course $X$ will also carry the weak topology, in which (for infinite-dimensional $X$) the norm is *not* continuous. (Not covered in lecture.)
 
 ^rem-11-3
 
@@ -217,11 +219,13 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 *Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§11 Normed Linear Spaces#^def-11-2|Def. §11.2]], [[§5 Statement and Motivation#^lem-5-1|§5.1]]
 
 > [!definition] Definition §11.5: Cauchy Sequence
-> A sequence $\{x_n\} \subset X$ is **Cauchy** if for every $\varepsilon > 0$ there is $N = N(\varepsilon) \in \mathbb{N}$ such that
+> A sequence $\{x_n\}$ in a normed linear space $X$ is **Cauchy** if for every $\varepsilon > 0$ there is $N = N(\varepsilon) \in \mathbb{N}$ such that
 >
 > $$
 > \|x_m - x_k\| < \varepsilon \qquad \text{for all } m, k \ge N.
 > $$
+>
+> In a metric space $(M, d)$ the condition reads $d(x_m, x_k) < \varepsilon$ for all $m, k \ge N$.
 
 ^def-11-5
 
@@ -336,7 +340,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > - The (algebraic) span it closes up: [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§4 Span and Linear Independence#^ladr-2-6|LADR 2.6]].
 
 > [!definition] Definition §11.10: Open Ball
-> For $x_0 \in X$ and $r > 0$, the **open ball** of radius $r$ about $x_0$ is $B_r(x_0) = \{ x \in X : \|x - x_0\| < r \}$.
+> Let $X$ be a normed linear space. For $x_0 \in X$ and $r > 0$, the **open ball** of radius $r$ about $x_0$ is $B_r(x_0) = \{ x \in X : \|x - x_0\| < r \}$.
 
 ^def-11-10
 
@@ -344,7 +348,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > - Balls in a metric space and in $\mathbb{R}^n$: [[§12 Metric Topology#^def-12-2|590 Def. §12.2]], [[§2 Open and Closed Sets#^def-2-1|452 Def. §2.1]].
 
 > [!definition] Definition §11.11: Metric Interior Point
-> A point $x_0$ of a subset $K \subset X$ is a **metric interior point** of $K$ if $B_r(x_0) \subset K$ for some $r > 0$ (Definition [[§11 Normed Linear Spaces#^def-11-10|§11.10]]).
+> A point $x_0$ of a subset $K$ of a normed linear space $X$ is a **metric interior point** of $K$ if $B_r(x_0) \subset K$ for some $r > 0$ (Definition [[§11 Normed Linear Spaces#^def-11-10|§11.10]]).
 
 ^def-11-11
 

@@ -12,7 +12,6 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses
 - [[§36 Duality in Normed Spaces#^thm-36-1|Theorem §36.1: Hahn–Banach for Normed Spaces]]
-- [[§36 Duality in Normed Spaces#^thm-36-2|Theorem §36.2: The Norm as a Maximum over the Dual]]
 
 ## Used in (Functional Analysis)
 - [[§36 Duality in Normed Spaces#^cor-36-9|Corollary §36.9: A Point Outside a Closed Subspace is Separated by a Functional]]

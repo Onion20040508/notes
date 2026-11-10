@@ -23,6 +23,7 @@ tags: [functional-analysis, hub]
 - [[§31 Dual Spaces#^thm-31-2|Theorem §31.2: Riesz Representation Theorem, with Norms]]
 - [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Theorem §32.2: Lax–Milgram]]
 - [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|Theorem §35.1: Radon–Nikodym]]
+- [[§43 Weak and Weak-Star Convergence#^prop-43-2|Proposition §43.2: Orthonormal Sequences Converge Weakly to 0]]
 - [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|Theorem §44.2: The Riesz Map]]
 
 ## Connections

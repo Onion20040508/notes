@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: fields — Vector fields and multiplications by functions generate a ring of operators on $C^\infty(M)$; its elements have an order, and in a chart they are the linear partial differential operators with smooth coefficients.*
 
-*Lecture 15 introduced the ring of differential operators in passing, as an aside to the locality of derivations ([[§56 Vector Fields#^lem-56-6|Lemma §56.6]]): its definition, the fact that its elements are local, and, without proof, Peetre's theorem. Those are collected here. Everything else in this subsection — the algebra of multiplications and vector fields, the order of an operator, the coordinate form and the commutator estimate in [[§58 Lie Bracket and Lie Algebra#^prop-58-6|§58]] — is not from lecture; it makes precise the remark that differential operators are given by differential expressions in local coordinates.*
+*Lecture 15 introduced the ring of differential operators in passing, as an aside to the locality of derivations ([[§56 Vector Fields#^lem-56-6|Lemma §56.6]]): its definition, the fact that its elements are local, and, without proof, Peetre's theorem. Those are collected here. Everything else in this section — the algebra of multiplications and vector fields, the order of an operator, the coordinate form and the commutator estimate in [[§58 Lie Bracket and Lie Algebra#^prop-58-6|§58]] — is not from lecture; it makes precise the remark that differential operators are given by differential expressions in local coordinates.*
 
 > [!definition] Definition §57.1: Multiplication Operator
 > For $g \in C^\infty(M)$, the **multiplication operator** $m_g : C^\infty(M) \to C^\infty(M)$ is $m_g f = g f$.
@@ -162,7 +162,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 
 ^pf-57-3
 
-*Uses:* [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§57 Differential Operators#^prop-57-1|§57.1]], [[§57 Differential Operators#^prop-57-2|§57.2]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§56 Vector Fields#^prop-56-7|§56.7]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§57 Differential Operators#^def-57-2|Def. §57.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§56 Vector Fields#^def-56-2|Def. §56.2]]
+*Uses:* [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§57 Differential Operators#^def-57-2|Def. §57.2]]
 
 > [!theorem] Proposition §57.4: Differential Operators of Order 0 and 1
 > Let $M$ be a smooth manifold.
@@ -217,11 +217,11 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 ^lem-57-5
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* *(1)* $\partial_i$ is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on the manifold $U$ (a vector field by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], its coefficients being the constants $0$ and $1$), so it is a derivation of $C^\infty(U)$ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]): $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$. *(2)* The $\partial_i$ commute: by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $(\partial_i u) \circ \varphi^{-1} = \partial u_\varphi/\partial r^i$, so $(\partial_i \partial_j u) \circ \varphi^{-1} = \partial^2 u_\varphi/\partial r^i \partial r^j$, and mixed partials of the smooth function $u_\varphi = u \circ \varphi^{-1}$ are equal (Clairaut's theorem); hence $\partial_i \circ \partial_j = \partial_j \circ \partial_i$. Finally, $\partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}$, and moving the extra factor $\partial_i$ past $\partial_1^{\alpha_1}, \ldots, \partial_{i-1}^{\alpha_{i-1}}$ one factor at a time gives $\partial_i \circ \partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_i^{\alpha_i + 1} \circ \cdots \circ \partial_m^{\alpha_m} = \partial^{\alpha + e_i}$.
+> *(Not from lecture; filled in.)* *(1)* $\partial_i$ is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on the manifold $U$ (a vector field by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], its coefficients being the constants $0$ and $1$), so it is a derivation of $C^\infty(U)$ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]): $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$. *(2)* The $\partial_i$ commute: by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $(\partial_i u) \circ \varphi^{-1} = \partial u_\varphi/\partial r^i$, so $(\partial_i \partial_j u) \circ \varphi^{-1} = \partial^2 u_\varphi/\partial r^i \partial r^j$, and mixed partials of the smooth function $u_\varphi = u \circ \varphi^{-1}$ are equal ([[Schwarz–Clairaut Theorem|Clairaut's theorem]]); hence $\partial_i \circ \partial_j = \partial_j \circ \partial_i$. Finally, $\partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}$, and moving the extra factor $\partial_i$ past $\partial_1^{\alpha_1}, \ldots, \partial_{i-1}^{\alpha_{i-1}}$ one factor at a time gives $\partial_i \circ \partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_i^{\alpha_i + 1} \circ \cdots \circ \partial_m^{\alpha_m} = \partial^{\alpha + e_i}$.
 
 ^pf-57-5
 
-*Uses:* [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
+*Uses:* [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[Schwarz–Clairaut Theorem|452 §6.1]]
 
 > [!theorem] Proposition §57.6: Differential Operators in a Chart
 > Let $P \in \mathrm{Diff}_k(M)$ ([[§57 Differential Operators#^def-57-3|Definition §57.3]]) and let $(U, (x^1, \ldots, x^m))$ be a chart. Then there are *unique* functions $a_\alpha \in C^\infty(U)$, one for each [[§55 Morse Functions and the Zero Section#^def-55-3|multi-index]] $\alpha$ with $|\alpha| \le k$, such that
@@ -261,7 +261,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 
 ^pf-57-6
 
-*Uses:* [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§55 Morse Functions and the Zero Section#^def-55-3|Def. §55.3]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§56 Vector Fields#^cor-56-5|§56.5]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§57 Differential Operators#^lem-57-5|§57.5]], [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]]
+*Uses:* [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§55 Morse Functions and the Zero Section#^def-55-3|Def. §55.3]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§56 Vector Fields#^cor-56-5|§56.5]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§57 Differential Operators#^lem-57-5|§57.5]], [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]]
 
 > [!theorem] Corollary §57.7: Differential Operators on Euclidean Space
 > On $\mathbb{R}^m$, with its standard coordinates and $\partial_i = D_{\partial/\partial x^i}$,

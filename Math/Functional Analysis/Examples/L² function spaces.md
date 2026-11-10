@@ -14,7 +14,7 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 - Among the $L^p(\Omega)$, only $L^2$ has a norm coming from an inner product ([[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|§24]])
 - Sobolev spaces: completing $C_c^\infty(\Omega)$ in $L^2$ norms of derivatives ([[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3|§23]])
 - Even and odd functions: $L^2[-1,1] = E \oplus O$ ([[§25 Projection and Orthogonal Decomposition#^prop-25-9|§25]])
-- On $L^2$ every bounded linear functional is $f \mapsto \int f\,\bar{g}$ ([[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^rem-26-3|§26]])
+- On $L^2$ every bounded linear functional is $f \mapsto \int f\,\bar{g}$ ([[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-2|Ex. §26.2]])
 - The Fourier basis of $L^2[0,2\pi]$ ([[§27 Orthonormal Sets and Bases#^thm-27-11|§27]])
 - Fourier series converge in $L^2$, with Parseval's equality ([[§27 Orthonormal Sets and Bases#^cor-27-12|Cor. §27.12]])
 - $L^p(E)$, in particular $L^2(E)$, is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] ([[§29 Sequence and Function Spaces#^prop-29-5|§29]])
@@ -46,7 +46,7 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 ![[§25 Projection and Orthogonal Decomposition#^prop-25-9]]
 
 ## On $L^2$ every bounded linear functional is $f \mapsto \int f\,\bar{g}$
-![[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^rem-26-3]]
+![[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-2]]
 
 ## The Fourier basis of $L^2[0,2\pi]$
 ![[§27 Orthonormal Sets and Bases#^thm-27-11]]

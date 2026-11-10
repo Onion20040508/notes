@@ -37,7 +37,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Worksheet form: [[§17 Cyclic Groups#^prop-17-3|The Homomorphism k ↦ gᵏ (WS 3.1)]] (§17.3).
-> - MATH 590 statement (without proof): [[§27 Free Groups and Presentations#^rem-27-9|Remark after Definition §21.7]] (590 §26), with [[§27 Free Groups and Presentations#^def-27-2|Cyclic Groups and Generators]] (590 §27.2).
+> - MATH 590 statement (without proof): [[§27 Free Groups and Presentations#^rem-27-9|Remark after Definition §27.2]] (590 §27), with [[§27 Free Groups and Presentations#^def-27-2|Cyclic Groups and Generators]] (590 §27.2).
 
 > [!theorem] Corollary §17.2: Cyclic iff There Is an Element of Order $|G|$
 > A group $G$ of finite order $n$ is cyclic if and only if it contains an element of order $n$; the elements of order $n$ are then exactly the generators.
