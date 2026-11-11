@@ -94,7 +94,8 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§72 Lie Derivatives\|§72]] Lie derivatives | Chapter 9, *Lie Derivatives* (Lemma 9.36, Theorem 9.38, Corollary 9.39); *Canonical Form Near a Regular Point* (Theorem 9.22); *Commuting Vector Fields* (Theorem 9.42, Corollary 9.43, Theorem 9.44) |
 | [[§73 Stokes' Theorem in Calculus III\|§73]] Stokes' theorem in Calculus III | Chapter 16, *Surface Integrals* (Theorem 16.34); the general theorem: *Stokes's Theorem* (Theorem 16.11) |
 | [[§74 The Integrand Is a Two-Form\|§74]] The integrand is a two-form | Chapter 14, *The Wedge Product* |
-| [[§75 Multilinear Algebra\|§75]] Multilinear algebra | Chapter 12, *Symmetric and Alternating Tensors*; Chapter 14, *The Algebra of Alternating Tensors* (Proposition 14.8) |
+| [[§75 Multilinear Algebra\|§75]] Multilinear algebra | Chapter 12, *Symmetric and Alternating Tensors*; Chapter 14, *The Algebra of Alternating Tensors* (Lemma 14.1, Lemma 14.7, Proposition 14.8) |
+| [[§76 The Wedge Product\|§76]] The wedge product | Chapter 14, *The Algebra of Alternating Tensors* (alternation, Proposition 14.3) and *The Wedge Product* (Proposition 14.11; the determinant and Alt conventions); Chapter 12, *Multilinear Algebra* (tensor products) |
 
 ## A.4 Index from Lee to these notes
 
@@ -253,7 +254,10 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4\|Def. §28.4]], [[§34 The Cotangent Space from Germs#^prop-34-1\|Prop. §34.1]], [[§34 The Cotangent Space from Germs#^prop-34-2\|Prop. §34.2]], [[§34 The Cotangent Space from Germs#^thm-34-4\|Thm. §34.4]] |
 | Exercise 12.17 | [[§75 Multilinear Algebra#^lem-75-1\|Lem. §75.1]] |
 | Lemma 14.1 | [[§75 Multilinear Algebra#^lem-75-2\|Lem. §75.2]] |
-| Proposition 14.8 | [[§75 Multilinear Algebra#^prop-75-4\|Prop. §75.4]] |
+| Proposition 14.3 | [[§76 The Wedge Product#^lem-76-2\|Lem. §76.2]] |
+| Lemma 14.7 | [[§75 Multilinear Algebra#^lem-75-5\|Lem. §75.5]] |
+| Proposition 14.8 | [[§75 Multilinear Algebra#^prop-75-6\|Prop. §75.6]] |
+| Proposition 14.11 | [[§76 The Wedge Product#^prop-76-4\|Prop. §76.4]] |
 | Theorem 16.34 | [[§73 Stokes' Theorem in Calculus III#^thm-73-2\|Thm. §73.2]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |
 | Theorem 20.1 | [[§71 The Exponential Map#^prop-71-1\|Prop. §71.1]] |

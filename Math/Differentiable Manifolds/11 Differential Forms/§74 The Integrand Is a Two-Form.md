@@ -31,7 +31,7 @@ $$
 > [!remark]- Connections
 > - MATH 452 defines the wedge product of forms on $\mathbb{R}^n$ by its rules: [[§37 The Algebra of Differential Forms#^def-37-1|452 Def. §37.1]]. Its [[§36 Introduction to Differential Forms#^def-36-2|452 §36]] has the shadow picture of Lemma [[§74 The Integrand Is a Two-Form#^lem-74-1|§74.1]] with an animation of a turning parallelogram (in 452's notation).
 
-*(Lecture 28, on the board for $(i, j) = (2, 3)$, named $dx^2 \wedge dx^3$ after the two indices involved; the other pairs are filled in the same way.)* The name will be explained by the wedge product of covectors: $dx^i$ is the covector $u \mapsto u^i$ (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]), and $dx^i \wedge dx^j$ is built from $dx^i$ and $dx^j$.
+*(Lecture 28, on the board for $(i, j) = (2, 3)$, named $dx^2 \wedge dx^3$ after the two indices involved; the other pairs are filled in the same way.)* The name is explained by the wedge product of covectors: $dx^i$ is the covector $u \mapsto u^i$ (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]), and $dx^i \wedge dx^j$ is the wedge product of $dx^i$ and $dx^j$ (Example [[§76 The Wedge Product#^ex-76-2|§76.2]]).
 
 > [!theorem] Lemma §74.1: Properties of $dx^i \wedge dx^j$
 > For $i, j \in \{1, 2, 3\}$ and $u, v \in \mathbb{R}^3$:

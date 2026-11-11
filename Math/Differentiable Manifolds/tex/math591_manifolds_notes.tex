@@ -33799,7 +33799,7 @@ dx^i \wedge dx^j : \mathbb{R}^3 \times \mathbb{R}^3 \longrightarrow \mathbb{R}, 
 \leeref{Ch.~14, \emph{The Wedge Product}}
 \end{defbox}
 
-\textit{(Lecture~28, on the board for $(i, j) = (2, 3)$, named $dx^2 \wedge dx^3$ after the two indices involved; the other pairs are filled in the same way.)} The name will be explained by the wedge product of covectors: $dx^i$ is the covector $u \mapsto u^i$ (Definition~\ref{def:dual}), and $dx^i \wedge dx^j$ is built from $dx^i$ and $dx^j$.
+\textit{(Lecture~28, on the board for $(i, j) = (2, 3)$, named $dx^2 \wedge dx^3$ after the two indices involved; the other pairs are filled in the same way.)} The name is explained by the wedge product of covectors: $dx^i$ is the covector $u \mapsto u^i$ (Definition~\ref{def:dual}), and $dx^i \wedge dx^j$ is the wedge product of $dx^i$ and $dx^j$ (Example~\ref{ex:wedge-one-forms}).
 
 \begin{lembox}[Properties of $dx^i \wedge dx^j$]\thmlabel{lem:dx-wedge-properties}
 For $i, j \in \{1, 2, 3\}$ and $u, v \in \mathbb{R}^3$:
@@ -33967,7 +33967,7 @@ with $\sgn$ the sign of a permutation (Definition~\ref{def:sgn}). Conversely, a 
 \emph{The converse.} If the identity holds for every $\sigma$, take $\sigma = (i\ j)$ with $i \neq j$: its sign is $-1$ (Proposition~\ref{prop:sgn}(2)), and the rearranged list is $(v^1, \ldots, v^k)$ with the entries $i$ and $j$ exchanged. So exchanging two entries changes the sign: the map is alternating.
 \end{proof}
 
-For $k = 2$ the lemma is the definition. For the determinant (Example~\ref{ex:linear-k-forms}(2)) it says that permuting the columns multiplies the determinant by the sign of the permutation, the fact behind the Leibniz formula. The sign does not depend on how $\sigma$ is written as a product of transpositions (Proposition~\ref{prop:sgn}(3)); without that, Step~2 would give two different values for one number. Lee uses the lemma to find a basis of $\Lambda^k(V^*)$ (Lemma~14.7 and Proposition~14.8).
+For $k = 2$ the lemma is the definition. For the determinant (Example~\ref{ex:linear-k-forms}(2)) it says that permuting the columns multiplies the determinant by the sign of the permutation, the fact behind the Leibniz formula. The sign does not depend on how $\sigma$ is written as a product of transpositions (Proposition~\ref{prop:sgn}(3)); without that, Step~2 would give two different values for one number. Lee uses the lemma to find a basis of $\Lambda^k(V^*)$ (Lemma~14.7 and Proposition~14.8); it is used in the same way in the proof of Proposition~\ref{prop:dim-k-forms}.
 
 %% >>> ADDED: figure (not from lecture)
 \begin{center}
@@ -34090,16 +34090,745 @@ If $k > m = \dim V$, the only linear $k$-form on $V$ is $0$.
 \textit{(Not from lecture; figure added.)} The $2$-form $\alpha = \det$ on $\mathbb{R}^2$ (Example~\ref{ex:linear-k-forms}(2)) as signed area. Left: $\alpha(v, w)$ is the area of the parallelogram spanned by $v$ and $w$, positive because $v$ turns to $w$ counterclockwise. Middle: exchanging the entries reverses the direction of turning and the sign, $\alpha(w, v) = -\alpha(v, w)$, the alternating condition of Definition~\ref{def:linear-k-form}. Right: for dependent vectors, here $w = 0.55\, v$, the parallelogram is flat and $\alpha(v, w) = 0$ (Lemma~\ref{lem:alternating-dependent}).
 %% <<< END ADDED
 
-\begin{propbox}[The Space of $k$-Forms]\thmlabel{prop:dim-k-forms}
-The set $\Lambda^k V$ of all linear $k$-forms on the $m$-dimensional space $V$ is a vector space, of dimension $\binom{m}{k}$.
+% ============================================================================
+% Lecture 29 (Wed Nov 11, 2026): a basis of Lambda^k V^*
+% ============================================================================
+
+\textit{(Lecture 29.)} The linear algebra continues, with $V$ an $m$-dimensional real vector space (to be thought of as a tangent space, $V = T_pM$) and $k = 0, 1, 2, \ldots$. The lecture restated the definition of a $k$-form with all permutations at once: a multilinear map $\alpha : V \times \cdots \times V \to \mathbb{R}$ of $k$ entries is a $k$-form when, for every $\sigma \in S_k$ and all $v^1, \ldots, v^k \in V$,
+\[
+\alpha\big(v^{\sigma(1)}, \ldots, v^{\sigma(k)}\big) = \sgn(\sigma)\, \alpha(v^1, \ldots, v^k) .
+\]
+By Lemma~\ref{lem:k-form-permutation} this is equivalent to Definition~\ref{def:linear-k-form}, which is the case of a transposition. Here $S_k$ is the group of permutations of $\{1, \ldots, k\}$ (Definition~\ref{def:symmetric-group}) and $\sgn(\sigma)$ is the sign of $\sigma$ (Definition~\ref{def:sgn}): every permutation is a composition of transpositions; the decomposition is not unique, but the parity of the number of transpositions is, and $\sgn(\sigma)$ is $+1$ when that number is even and $-1$ when it is odd (Proposition~\ref{prop:sgn}(3)).
+
+\begin{defbox}[The Space $\Lambda^k V^*$]\deflabel{def:lambda-k}
+$\Lambda^k V^*$ is the set of all linear $k$-forms on $V$ (Definition~\ref{def:linear-k-form}), with the pointwise operations
+\[
+(\alpha + \beta)(v^1, \ldots, v^k) = \alpha(v^1, \ldots, v^k) + \beta(v^1, \ldots, v^k), \qquad (c\, \alpha)(v^1, \ldots, v^k) = c\, \alpha(v^1, \ldots, v^k) .
+\]
+In particular $\Lambda^1 V^* = V^*$, the dual space of all linear maps $V \to \mathbb{R}$ (Definition~\ref{def:dual}), and by convention $\Lambda^0 V^* = \mathbb{R}$.
+\leeref{Ch.~14, \emph{The Algebra of Alternating Tensors}}
+\end{defbox}
+
+Sums and scalar multiples of alternating multilinear maps are again alternating and multilinear, so $\Lambda^k V^*$ is a vector space, a subspace of the space of all functions $V^k \to \mathbb{R}$ \textit{(Lecture~28)}. For $k = 1$ the group $S_1$ has one element and the alternating condition is empty, which is why $\Lambda^1 V^* = V^*$. The convention $\Lambda^0 V^* = \mathbb{R}$ is a useful one: with it the dimension formula of Proposition~\ref{prop:dim-k-forms} and the wedge product of \ref{sec:wedge-product} also hold in degree $0$. For $k > m$, $\Lambda^k V^* = \{0\}$ (Corollary~\ref{cor:forms-above-dimension}); this comes out again from the basis constructed below.
+
+\begin{rembox}[Notation in This Section]\label{rem:notation-forms}
+The board's notation and the notation of these notes differ in a few places.
+\begin{itemize}[nosep]
+\item \emph{The space of $k$-forms.} Lecture~28 wrote $\Lambda^k V$; Lecture~29 corrected this to $\Lambda^k V^*$, which is Lee's $\Lambda^k(V^*)$. These notes write $\Lambda^k V^*$ (Definition~\ref{def:lambda-k}).
+\item \emph{The symmetric group.} The permutations are those of $\{1, \ldots, k\}$, the group $S_k$ (the board first wrote $S_n$). The board's $(-1)^\sigma$ is $\sgn(\sigma)$.
+\item \emph{Vectors and components.} The board writes the vectors as $v_1, \ldots, v_k$ and expands $v_i = \sum_a v_i^a e_a$. These notes keep the convention of Definition~\ref{def:linear-k-form} and Example~\ref{ex:linear-k-forms}(3): the vectors are $v^1, \ldots, v^k$ (label up), and $v^j = \sum_{c=1}^m v^j_c\, e_c$ (component index down), so that $\varepsilon^i(v^j) = v^j_i$.
+\item \emph{Index sets.} A $k$-element subset $A \subseteq \{1, \ldots, m\}$ is always listed increasingly, $A = \{a_1 < \cdots < a_k\}$. On the board the letters $a_1, \ldots, a_k$ also served as summation indices running over all of $\{1, \ldots, m\}$ in any order; these notes call those $c_1, \ldots, c_k$. Lee indexes the basis by increasing multi-indices $I = (i_1 < \cdots < i_k)$ and writes $\sum'_I$ for a sum over them.
+\end{itemize}
+\end{rembox}
+
+\emph{The building blocks.} The $k$-forms are built from a basis $(\varepsilon^i)_{i = 1, \ldots, m}$ of $V^*$, as determinants.
+
+\begin{defbox}[The Elementary $k$-Forms $\varepsilon^A$]\deflabel{def:epsilon-A}
+Let $(\varepsilon^1, \ldots, \varepsilon^m)$ be a basis of $V^*$, let $1 \le k \le m$, and let $A \subseteq \{1, \ldots, m\}$ be a subset with exactly $k$ elements, listed increasingly: $A = \{a_1 < a_2 < \cdots < a_k\}$. For $v^1, \ldots, v^k \in V$ define
+\[
+\varepsilon^A(v^1, \ldots, v^k) = \det\big( \varepsilon^{a_i}(v^j) \big)_{i, j = 1, \ldots, k} = \det \begin{pmatrix} \varepsilon^{a_1}(v^1) & \cdots & \varepsilon^{a_1}(v^k) \\ \vdots & & \vdots \\ \varepsilon^{a_k}(v^1) & \cdots & \varepsilon^{a_k}(v^k) \end{pmatrix} ,
+\]
+the $k \times k$ determinant with row index $i$ and column index $j$. For $k = 0$ the only subset is $A = \varnothing$, and $\varepsilon^{\varnothing} = 1 \in \mathbb{R} = \Lambda^0 V^*$.
+\leeref{Ch.~14, \emph{Elementary Alternating Tensors}}
+\end{defbox}
+
+The order of the elements of $A$ has to be fixed: with the elements listed in another order the rows of the determinant are permuted, and it changes by the sign of the reordering. The convention is the increasing order. That $i$ is the row index is also only a convention, since transposing a matrix does not change its determinant. Lee calls $\varepsilon^A$ an \emph{elementary $k$-covector} and indexes it by the increasing multi-index $(a_1, \ldots, a_k)$.
+
+\begin{lembox}[The Basis of $V$ Dual to a Basis of $V^*$]\thmlabel{lem:predual-basis}
+Let $(\varepsilon^1, \ldots, \varepsilon^m)$ be a basis of $V^*$. There is exactly one basis $(e_1, \ldots, e_m)$ of $V$ with
+\[
+\varepsilon^i(e_j) = \delta^i_j ,
+\]
+that is, with dual basis $(\varepsilon^i)$ (Definition~\ref{def:dual-basis}). It is called the basis of $V$ \textbf{dual to} $(\varepsilon^i)$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Used in Lecture~29 without comment; filled in.)} Let $(\eta_1, \ldots, \eta_m)$ be the basis of $V^{**} = (V^*)^*$ dual to the basis $(\varepsilon^i)$ of $V^*$: $\eta_j(\varepsilon^i) = \delta^i_j$ (Definition~\ref{def:dual-basis} and Proposition~\ref{prop:dual-basis}, applied to the vector space $V^*$). The map $\iota : V \to V^{**}$, $\iota(v)(\lambda) = \lambda(v)$, is a linear isomorphism (Proposition~\ref{prop:double-dual}). Put $e_j = \iota^{-1}(\eta_j)$. An isomorphism carries a basis to a basis, so $(e_j)$ is a basis of $V$, and
+\[
+\varepsilon^i(e_j) = \iota(e_j)(\varepsilon^i) = \eta_j(\varepsilon^i) = \delta^i_j .
+\]
+\emph{Uniqueness.} If $(e'_j)$ is another basis with $\varepsilon^i(e'_j) = \delta^i_j$, then the linear maps $\iota(e'_j)$ and $\eta_j$ on $V^*$ agree on the basis $(\varepsilon^i)$, so they are equal (Proposition~\ref{fact:linalg}(2)), and $e'_j = \iota^{-1}(\eta_j) = e_j$.
+\end{proof}
+
+In the coordinates of this basis, $v^j = \sum_{c=1}^m v^j_c\, e_c$ gives $\varepsilon^{a_i}(v^j) = v^j_{a_i}$ (Proposition~\ref{prop:dual-basis}), so $\varepsilon^A(v^1, \ldots, v^k)$ is the minor in the rows $a_1, \ldots, a_k$ of the $m \times k$ matrix of components whose columns are $v^1, \ldots, v^k$: the form of Example~\ref{ex:linear-k-forms}(3).
+
+\begin{lembox}[The Elementary $k$-Forms on the Dual Basis]\thmlabel{lem:epsilon-A-dual}
+Let $(\varepsilon^i)$ be a basis of $V^*$ and $(e_j)$ the basis of $V$ dual to it (Lemma~\ref{lem:predual-basis}). Let $A = \{a_1 < \cdots < a_k\}$ and $B = \{b_1 < \cdots < b_k\}$ be $k$-element subsets of $\{1, \ldots, m\}$.
+\begin{enumerate}[nosep]
+\item $\varepsilon^A$ (Definition~\ref{def:epsilon-A}) is a linear $k$-form: $\varepsilon^A \in \Lambda^k V^*$.
+\item The value of $\varepsilon^A$ on the basis vectors singled out by $B$ is
+\[
+\varepsilon^A(e_{b_1}, \ldots, e_{b_k}) = \delta_{AB} = \begin{cases} 1, & A = B, \\ 0, & \text{otherwise}. \end{cases}
+\]
+\end{enumerate}
+\leeref{Lemma 14.7}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture~29.)} (1) By the properties of the determinant. The $j$-th column of the matrix $\big(\varepsilon^{a_i}(v^j)\big)$ is $\big(\varepsilon^{a_1}(v^j), \ldots, \varepsilon^{a_k}(v^j)\big)$; it depends linearly on $v^j$, and on no other vector. The determinant is linear in each column, so $\varepsilon^A$ is multilinear. Exchanging $v^j$ and $v^{j'}$ exchanges two columns, which changes the sign of the determinant, so $\varepsilon^A$ is alternating.
+
+(2) The matrix is $\big(\varepsilon^{a_i}(e_{b_j})\big)_{i, j} = \big(\delta^{a_i}_{b_j}\big)_{i, j}$. If $A = B$, then $a_i = b_i$ for all $i$, because both sets are listed increasingly; the matrix is the identity matrix, with determinant $1$. If $A \neq B$, some $b_j$ is not in $A$, because $A$ and $B$ have the same number of elements; then $\delta^{a_i}_{b_j} = 0$ for every $i$, the $j$-th column is zero, and the determinant is $0$.
+\end{proof}
+
+By~(2), the forms $\varepsilon^A$ behave like a dual basis: each is $1$ on its own $k$-tuple of basis vectors and $0$ on the others.
+
+\begin{propbox}[A Basis of $\Lambda^k V^*$]\thmlabel{prop:dim-k-forms}
+The set $\Lambda^k V^*$ of all linear $k$-forms on the $m$-dimensional space $V$ is a vector space, of dimension $\binom{m}{k}$. More precisely, for any basis $(\varepsilon^i)$ of $V^*$,
+\[
+\big\{ \varepsilon^A : A \subseteq \{1, \ldots, m\},\ |A| = k \big\}
+\]
+is a basis of $\Lambda^k V^*$, and if $(e_j)$ is the basis of $V$ dual to $(\varepsilon^i)$, every $\alpha \in \Lambda^k V^*$ is
+\[
+\alpha = \sum_{|A| = k} \alpha(e_{a_1}, \ldots, e_{a_k})\, \varepsilon^A ,
+\]
+the sum over all $k$-element subsets $A = \{a_1 < \cdots < a_k\}$ of $\{1, \ldots, m\}$.
 \leeref{Proposition 14.8}
 \end{propbox}
 
-\begin{proof}[Proof (to be filled)]
-That linear combinations of alternating multilinear maps are again alternating and multilinear is immediate, so $\Lambda^k V$ is a subspace of the space of all functions $V^k \to \mathbb{R}$. The dimension, by writing down a basis, is for Lecture~29.
+\begin{proof}
+\textit{(Lecture~28 for the vector space; Lecture~29 for the basis, which is constructed in the course of the proof. The notation follows the remark \emph{Notation in This Section} above.)} That $\Lambda^k V^*$ is a vector space was noted after Definition~\ref{def:lambda-k}. There are exactly $\binom{m}{k}$ subsets $A$ of $\{1, \ldots, m\}$ with $k$ elements, by the definition of the binomial coefficient, so it is enough to show that the forms $\varepsilon^A$, which lie in $\Lambda^k V^*$ by Lemma~\ref{lem:epsilon-A-dual}(1), are linearly independent and span. Let $(e_j)$ be the basis of $V$ dual to $(\varepsilon^i)$ (Lemma~\ref{lem:predual-basis}).
+
+\emph{Linear independence.} Suppose $\sum_A c_A\, \varepsilon^A = 0$ with $c_A \in \mathbb{R}$. Fix a $k$-element subset $B = \{b_1 < \cdots < b_k\}$ and evaluate both sides on $(e_{b_1}, \ldots, e_{b_k})$. By Lemma~\ref{lem:epsilon-A-dual}(2),
+\[
+0 = \sum_A c_A\, \varepsilon^A(e_{b_1}, \ldots, e_{b_k}) = \sum_A c_A\, \delta_{AB} = c_B .
+\]
+So $c_B = 0$ for every $B$.
+
+\emph{Span.} Let $\alpha \in \Lambda^k V^*$ and $v^1, \ldots, v^k \in V$, and expand each vector in the basis, $v^j = \sum_{c=1}^m v^j_c\, e_c$. Each of the $k$ entries needs its own summation index, $c_1, \ldots, c_k$. By multilinearity,
+\[
+\alpha(v^1, \ldots, v^k) = \alpha\Big( \sum_{c_1=1}^m v^1_{c_1} e_{c_1}, \ldots, \sum_{c_k=1}^m v^k_{c_k} e_{c_k} \Big) = \sum_{c_1, \ldots, c_k = 1}^m \Big( \prod_{j=1}^k v^j_{c_j} \Big)\, \alpha(e_{c_1}, \ldots, e_{c_k}) .
+\]
+Here $c_1, \ldots, c_k$ run independently over $\{1, \ldots, m\}$, in no particular order. If two of them are equal, two entries of $\alpha(e_{c_1}, \ldots, e_{c_k})$ are equal and the term is $0$, by Lemma~\ref{lem:alternating-dependent}(1). If they are all different, $\{c_1, \ldots, c_k\}$ is a $k$-element set $A$; list it increasingly, $A = \{a_1 < \cdots < a_k\}$. Then $c_j = a_{\sigma(j)}$ for exactly one $\sigma \in S_k$, and by Lemma~\ref{lem:k-form-permutation}, applied to the vectors $e_{a_1}, \ldots, e_{a_k}$,
+\[
+\alpha(e_{c_1}, \ldots, e_{c_k}) = \alpha\big(e_{a_{\sigma(1)}}, \ldots, e_{a_{\sigma(k)}}\big) = \sgn(\sigma)\, \alpha(e_{a_1}, \ldots, e_{a_k}) .
+\]
+So in each term with all indices different, the indices are rearranged into increasing order at the price of the factor $\sgn(\sigma)$. Conversely, each pair of a $k$-element set $A$ and a permutation $\sigma \in S_k$ gives one such term, the one with $c_j = a_{\sigma(j)}$. Gathering the terms with the same set $A$:
+\[
+\alpha(v^1, \ldots, v^k) = \sum_{|A| = k} \Big( \sum_{\sigma \in S_k} \sgn(\sigma) \prod_{j=1}^k v^j_{a_{\sigma(j)}} \Big)\, \alpha(e_{a_1}, \ldots, e_{a_k}) .
+\]
+The inner sum is a determinant. Let $M$ be the $k \times k$ matrix with entries $M_{ij} = v^j_{a_i} = \varepsilon^{a_i}(v^j)$, so that $\prod_j v^j_{a_{\sigma(j)}} = \prod_j M_{\sigma(j), j}$. The Leibniz formula (stated in the proof of Proposition~\ref{prop:det-cont}), applied to the transpose $M^{\mathsf T}$, whose $(j, i)$ entry is $M_{ij}$, reads $\det M^{\mathsf T} = \sum_{\sigma} \sgn(\sigma) \prod_j M_{\sigma(j), j}$, and $\det M^{\mathsf T} = \det M$. Hence the inner sum is
+\[
+\det\big( v^j_{a_i} \big)_{i, j} = \det\big( \varepsilon^{a_i}(v^j) \big)_{i, j} = \varepsilon^A(v^1, \ldots, v^k) ,
+\]
+by Definition~\ref{def:epsilon-A}. Therefore
+\[
+\alpha(v^1, \ldots, v^k) = \sum_{|A| = k} \alpha(e_{a_1}, \ldots, e_{a_k})\, \varepsilon^A(v^1, \ldots, v^k)
+\]
+for all $v^1, \ldots, v^k$. This is the formula of the proposition; in particular the $\varepsilon^A$ span. The coefficients are the ones forced by Lemma~\ref{lem:epsilon-A-dual}(2): evaluating $\alpha = \sum_A c_A \varepsilon^A$ on $(e_{b_1}, \ldots, e_{b_k})$ gives $c_B = \alpha(e_{b_1}, \ldots, e_{b_k})$.
+
+\emph{The edge cases.} For $k = 0$ the only subset is $\varnothing$, with $\varepsilon^\varnothing = 1$, a basis of $\Lambda^0 V^* = \mathbb{R}$, and $\binom{m}{0} = 1$. For $k > m$ there are no subsets, $\binom{m}{k} = 0$, and $\Lambda^k V^* = \{0\}$ by Corollary~\ref{cor:forms-above-dimension}.
 \end{proof}
 
-In particular $\Lambda^k V = 0$ for $k > m$ (this is Corollary~\ref{cor:forms-above-dimension}, proved directly), and $\Lambda^m V$ is one-dimensional, spanned by the determinant in any basis. Lee writes $\Lambda^k(V^*)$ for this space.
+The proof gives more than the dimension: every $k$-form is a linear combination of determinants of size $k$, the forms $\varepsilon^A$.
+
+\textbf{Transcription note (Lecture 29).} In the span step the board wrote the coefficient as $v_j^{\sigma(a_j)}$, letting $\sigma$ act on the elements of $A$; with $\sigma \in S_k$ acting on the positions it is $v^j_{a_{\sigma(j)}}$ in the convention of these notes (remark \emph{Notation in This Section}). The step was corrected during the lecture; the version above is the one settled on in class.
+
+\begin{corbox}[The Top Degree]\thmlabel{cor:top-degree-forms}
+Let $\dim V = m$. The space $\Lambda^m V^*$ is one-dimensional. For any basis $(\varepsilon^i)$ of $V^*$, with $(e_j)$ the basis of $V$ dual to it, it is spanned by
+\[
+\varepsilon^{\{1, \ldots, m\}}(v^1, \ldots, v^m) = \det\big( \varepsilon^i(v^j) \big)_{i, j = 1, \ldots, m} ,
+\]
+and every $\alpha \in \Lambda^m V^*$ is $\alpha = \alpha(e_1, \ldots, e_m)\, \varepsilon^{\{1, \ldots, m\}}$.
+\end{corbox}
+
+\begin{proof}
+\textit{(Stated in Lecture~28; it follows from the basis of Lecture~29.)} This is Proposition~\ref{prop:dim-k-forms} for $k = m$: the only $m$-element subset of $\{1, \ldots, m\}$ is $A = \{1, \ldots, m\}$, and $\binom{m}{m} = 1$.
+\end{proof}
+
+On $V = \mathbb{R}^m$ with the standard basis this says that every linear $m$-form is a constant multiple of the determinant of Example~\ref{ex:linear-k-forms}(2).
+
+\begin{exbox}[The Euclidean Case]\exlabel{ex:basis-euclidean-forms}
+On $V = \mathbb{R}^m$ take $\varepsilon^i = dx^i : \mathbb{R}^m \to \mathbb{R}$, the differential of the $i$-th coordinate function, which extracts the $i$-th coordinate: $dx^i(u) = u^i$. The basis of $\mathbb{R}^m$ dual to $(dx^i)$ is the standard basis. For $i < j$,
+\[
+\varepsilon^{\{i, j\}}(u, v) = \det \begin{pmatrix} u^i & v^i \\ u^j & v^j \end{pmatrix} = u^i v^j - u^j v^i ,
+\]
+which is the form $dx^i \wedge dx^j$ of Definition~\ref{def:dx-wedge-dx} (there for $m = 3$; the formula is the same for every $m$). For example, $\Lambda^2 (\mathbb{R}^4)^*$, written $\Lambda^2 \mathbb{R}^4$ on the board, has dimension $\binom{4}{2} = 6$, with basis
+\[
+dx^1 \wedge dx^2, \quad dx^1 \wedge dx^3, \quad dx^1 \wedge dx^4, \quad dx^2 \wedge dx^3, \quad dx^2 \wedge dx^4, \quad dx^3 \wedge dx^4 .
+\]
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\fill[blue!70!black!14, rounded corners=1.5pt] (-0.360,-0.190) rectangle (0.860,0.190);
+\fill[blue!70!black!14, rounded corners=1.5pt] (-0.360,-0.610) rectangle (0.860,-0.230);
+\node[font=\scriptsize, text=black] at (0.000,0.000) {$u^{1}$};
+\node[font=\scriptsize, text=black] at (0.500,0.000) {$v^{1}$};
+\node[font=\scriptsize, text=black] at (0.000,-0.420) {$u^{2}$};
+\node[font=\scriptsize, text=black] at (0.500,-0.420) {$v^{2}$};
+\node[font=\scriptsize, text=gray!60] at (0.000,-0.840) {$u^{3}$};
+\node[font=\scriptsize, text=gray!60] at (0.500,-0.840) {$v^{3}$};
+\node[font=\scriptsize, text=gray!60] at (0.000,-1.260) {$u^{4}$};
+\node[font=\scriptsize, text=gray!60] at (0.500,-1.260) {$v^{4}$};
+\draw[thick] (-0.420,0.270) .. controls (-0.580,-0.080) and (-0.580,-1.180) .. (-0.420,-1.530);
+\draw[thick] (0.920,0.270) .. controls (1.080,-0.080) and (1.080,-1.180) .. (0.920,-1.530);
+\node[font=\scriptsize, blue!70!black] at (0.250,-1.850) {$dx^{1} \wedge dx^{2}$};
+\node[font=\tiny] at (0.250,-2.210) {$u^{1} v^{2} - u^{2} v^{1}$};
+\node[font=\tiny, gray!70!black] at (0.250,0.520) {$A = \{1, 2\}$};
+\fill[blue!70!black!14, rounded corners=1.5pt] (1.690,-0.190) rectangle (2.910,0.190);
+\fill[blue!70!black!14, rounded corners=1.5pt] (1.690,-1.030) rectangle (2.910,-0.650);
+\node[font=\scriptsize, text=black] at (2.050,0.000) {$u^{1}$};
+\node[font=\scriptsize, text=black] at (2.550,0.000) {$v^{1}$};
+\node[font=\scriptsize, text=gray!60] at (2.050,-0.420) {$u^{2}$};
+\node[font=\scriptsize, text=gray!60] at (2.550,-0.420) {$v^{2}$};
+\node[font=\scriptsize, text=black] at (2.050,-0.840) {$u^{3}$};
+\node[font=\scriptsize, text=black] at (2.550,-0.840) {$v^{3}$};
+\node[font=\scriptsize, text=gray!60] at (2.050,-1.260) {$u^{4}$};
+\node[font=\scriptsize, text=gray!60] at (2.550,-1.260) {$v^{4}$};
+\draw[thick] (1.630,0.270) .. controls (1.470,-0.080) and (1.470,-1.180) .. (1.630,-1.530);
+\draw[thick] (2.970,0.270) .. controls (3.130,-0.080) and (3.130,-1.180) .. (2.970,-1.530);
+\node[font=\scriptsize, blue!70!black] at (2.300,-1.850) {$dx^{1} \wedge dx^{3}$};
+\node[font=\tiny] at (2.300,-2.210) {$u^{1} v^{3} - u^{3} v^{1}$};
+\node[font=\tiny, gray!70!black] at (2.300,0.520) {$A = \{1, 3\}$};
+\fill[blue!70!black!14, rounded corners=1.5pt] (3.740,-0.190) rectangle (4.960,0.190);
+\fill[blue!70!black!14, rounded corners=1.5pt] (3.740,-1.450) rectangle (4.960,-1.070);
+\node[font=\scriptsize, text=black] at (4.100,0.000) {$u^{1}$};
+\node[font=\scriptsize, text=black] at (4.600,0.000) {$v^{1}$};
+\node[font=\scriptsize, text=gray!60] at (4.100,-0.420) {$u^{2}$};
+\node[font=\scriptsize, text=gray!60] at (4.600,-0.420) {$v^{2}$};
+\node[font=\scriptsize, text=gray!60] at (4.100,-0.840) {$u^{3}$};
+\node[font=\scriptsize, text=gray!60] at (4.600,-0.840) {$v^{3}$};
+\node[font=\scriptsize, text=black] at (4.100,-1.260) {$u^{4}$};
+\node[font=\scriptsize, text=black] at (4.600,-1.260) {$v^{4}$};
+\draw[thick] (3.680,0.270) .. controls (3.520,-0.080) and (3.520,-1.180) .. (3.680,-1.530);
+\draw[thick] (5.020,0.270) .. controls (5.180,-0.080) and (5.180,-1.180) .. (5.020,-1.530);
+\node[font=\scriptsize, blue!70!black] at (4.350,-1.850) {$dx^{1} \wedge dx^{4}$};
+\node[font=\tiny] at (4.350,-2.210) {$u^{1} v^{4} - u^{4} v^{1}$};
+\node[font=\tiny, gray!70!black] at (4.350,0.520) {$A = \{1, 4\}$};
+\fill[blue!70!black!14, rounded corners=1.5pt] (5.790,-0.610) rectangle (7.010,-0.230);
+\fill[blue!70!black!14, rounded corners=1.5pt] (5.790,-1.030) rectangle (7.010,-0.650);
+\node[font=\scriptsize, text=gray!60] at (6.150,0.000) {$u^{1}$};
+\node[font=\scriptsize, text=gray!60] at (6.650,0.000) {$v^{1}$};
+\node[font=\scriptsize, text=black] at (6.150,-0.420) {$u^{2}$};
+\node[font=\scriptsize, text=black] at (6.650,-0.420) {$v^{2}$};
+\node[font=\scriptsize, text=black] at (6.150,-0.840) {$u^{3}$};
+\node[font=\scriptsize, text=black] at (6.650,-0.840) {$v^{3}$};
+\node[font=\scriptsize, text=gray!60] at (6.150,-1.260) {$u^{4}$};
+\node[font=\scriptsize, text=gray!60] at (6.650,-1.260) {$v^{4}$};
+\draw[thick] (5.730,0.270) .. controls (5.570,-0.080) and (5.570,-1.180) .. (5.730,-1.530);
+\draw[thick] (7.070,0.270) .. controls (7.230,-0.080) and (7.230,-1.180) .. (7.070,-1.530);
+\node[font=\scriptsize, blue!70!black] at (6.400,-1.850) {$dx^{2} \wedge dx^{3}$};
+\node[font=\tiny] at (6.400,-2.210) {$u^{2} v^{3} - u^{3} v^{2}$};
+\node[font=\tiny, gray!70!black] at (6.400,0.520) {$A = \{2, 3\}$};
+\fill[blue!70!black!14, rounded corners=1.5pt] (7.840,-0.610) rectangle (9.060,-0.230);
+\fill[blue!70!black!14, rounded corners=1.5pt] (7.840,-1.450) rectangle (9.060,-1.070);
+\node[font=\scriptsize, text=gray!60] at (8.200,0.000) {$u^{1}$};
+\node[font=\scriptsize, text=gray!60] at (8.700,0.000) {$v^{1}$};
+\node[font=\scriptsize, text=black] at (8.200,-0.420) {$u^{2}$};
+\node[font=\scriptsize, text=black] at (8.700,-0.420) {$v^{2}$};
+\node[font=\scriptsize, text=gray!60] at (8.200,-0.840) {$u^{3}$};
+\node[font=\scriptsize, text=gray!60] at (8.700,-0.840) {$v^{3}$};
+\node[font=\scriptsize, text=black] at (8.200,-1.260) {$u^{4}$};
+\node[font=\scriptsize, text=black] at (8.700,-1.260) {$v^{4}$};
+\draw[thick] (7.780,0.270) .. controls (7.620,-0.080) and (7.620,-1.180) .. (7.780,-1.530);
+\draw[thick] (9.120,0.270) .. controls (9.280,-0.080) and (9.280,-1.180) .. (9.120,-1.530);
+\node[font=\scriptsize, blue!70!black] at (8.450,-1.850) {$dx^{2} \wedge dx^{4}$};
+\node[font=\tiny] at (8.450,-2.210) {$u^{2} v^{4} - u^{4} v^{2}$};
+\node[font=\tiny, gray!70!black] at (8.450,0.520) {$A = \{2, 4\}$};
+\fill[blue!70!black!14, rounded corners=1.5pt] (9.890,-1.030) rectangle (11.110,-0.650);
+\fill[blue!70!black!14, rounded corners=1.5pt] (9.890,-1.450) rectangle (11.110,-1.070);
+\node[font=\scriptsize, text=gray!60] at (10.250,0.000) {$u^{1}$};
+\node[font=\scriptsize, text=gray!60] at (10.750,0.000) {$v^{1}$};
+\node[font=\scriptsize, text=gray!60] at (10.250,-0.420) {$u^{2}$};
+\node[font=\scriptsize, text=gray!60] at (10.750,-0.420) {$v^{2}$};
+\node[font=\scriptsize, text=black] at (10.250,-0.840) {$u^{3}$};
+\node[font=\scriptsize, text=black] at (10.750,-0.840) {$v^{3}$};
+\node[font=\scriptsize, text=black] at (10.250,-1.260) {$u^{4}$};
+\node[font=\scriptsize, text=black] at (10.750,-1.260) {$v^{4}$};
+\draw[thick] (9.830,0.270) .. controls (9.670,-0.080) and (9.670,-1.180) .. (9.830,-1.530);
+\draw[thick] (11.170,0.270) .. controls (11.330,-0.080) and (11.330,-1.180) .. (11.170,-1.530);
+\node[font=\scriptsize, blue!70!black] at (10.500,-1.850) {$dx^{3} \wedge dx^{4}$};
+\node[font=\tiny] at (10.500,-2.210) {$u^{3} v^{4} - u^{4} v^{3}$};
+\node[font=\tiny, gray!70!black] at (10.500,0.520) {$A = \{3, 4\}$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} The six basis forms of $\Lambda^2 (\mathbb{R}^4)^*$ in Example~\ref{ex:basis-euclidean-forms}. The two vectors $u, v \in \mathbb{R}^4$ are the columns of a $4 \times 2$ matrix. Each two-element subset $A = \{i < j\}$ of $\{1, 2, 3, 4\}$ selects two rows (shaded), and $\varepsilon^A(u, v) = (dx^i \wedge dx^j)(u, v)$ is the $2 \times 2$ minor in those rows. There are $\binom{4}{2} = 6$ ways to choose the rows, which is the dimension. In general $\varepsilon^A(v^1, \ldots, v^k)$ is the minor in the rows $a_1 < \cdots < a_k$ of the $m \times k$ matrix with columns $v^1, \ldots, v^k$, and Proposition~\ref{prop:dim-k-forms} says that every $k$-form is a combination of these $\binom{m}{k}$ minors.
+%% <<< END ADDED
+
+The six-dimensional space $\Lambda^2 (\mathbb{R}^4)^*$ is the one that appears in Yang--Mills theory: two-forms in four variables. \textit{(Not from lecture.)} The first instance is electromagnetism: the field strength is a two-form on spacetime $\mathbb{R}^4$, and its six components are the three components of the electric field and the three of the magnetic field.
+
+% ============================================================================
+% SECTION: THE WEDGE PRODUCT
+% ============================================================================
+\section{The Wedge Product}\label{sec:wedge-product}
+
+\roadmark{Stage: forms}{Multiplying a $k$-form and an $l$-form into a $(k + l)$-form, by signed shuffles; bilinear, associative, graded anticommutative.}
+
+\textit{(Lecture 29.)} The wedge in $dx^i \wedge dx^j$ has been written many times (Definition~\ref{def:dx-wedge-dx}), but as an operation it has not been defined. This section defines it: a product that takes a $k$-form $\alpha$ and an $l$-form $\beta$ on $V$ (Definition~\ref{def:lambda-k}) to a $(k + l)$-form $\alpha \wedge \beta$. The forms of all degrees with this product make up the \emph{Grassmann algebra} of $V$ (Lee: the exterior algebra). It was developed in the 19th century, and brought into its present form, for differential forms, by \'Elie Cartan in the first half of the 20th century. Throughout, $V$ is an $m$-dimensional real vector space and $k, l \ge 0$.
+
+\begin{defbox}[Shuffles]\deflabel{def:shuffle}
+For $k, l \ge 0$, a \textbf{$(k, l)$-shuffle} is a permutation $\sigma \in S_{k+l}$ (Definition~\ref{def:symmetric-group}) with
+\[
+\sigma(1) < \sigma(2) < \cdots < \sigma(k) \qquad \text{and} \qquad \sigma(k+1) < \sigma(k+2) < \cdots < \sigma(k+l) .
+\]
+$\mathrm{Sh}(k, l)$ denotes the set of $(k, l)$-shuffles.
+\end{defbox}
+
+The name comes from shuffling a deck of cards. Put $k$ cards on the left and $l$ cards on the right and interleave the two piles: the cards mix, but the internal order of each pile does not change. The card in place $i$ before the shuffle lands in place $\sigma(i)$ of the deck; the first pile is the cards $1, \ldots, k$ and the second the cards $k + 1, \ldots, k + l$. A shuffle is determined by the set $\{\sigma(1), \ldots, \sigma(k)\}$ of places taken by the first pile (Lemma~\ref{lem:shuffle-factorization}(2)).
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick, red!70!black, fill=red!70!black!8, rounded corners=1pt] (0.27,1.62) rectangle (0.83,2.38); \node[font=\scriptsize] at (0.55,2.00) {$1$};
+\draw[thick, red!70!black, fill=red!70!black!8, rounded corners=1pt] (1.02,1.62) rectangle (1.58,2.38); \node[font=\scriptsize] at (1.30,2.00) {$2$};
+\draw[thick, blue!70!black, fill=blue!70!black!8, rounded corners=1pt] (2.07,1.62) rectangle (2.63,2.38); \node[font=\scriptsize] at (2.35,2.00) {$3$};
+\draw[thick, blue!70!black, fill=blue!70!black!8, rounded corners=1pt] (2.82,1.62) rectangle (3.38,2.38); \node[font=\scriptsize] at (3.10,2.00) {$4$};
+\draw[thick, blue!70!black, fill=blue!70!black!8, rounded corners=1pt] (3.57,1.62) rectangle (4.13,2.38); \node[font=\scriptsize] at (3.85,2.00) {$5$};
+\node[font=\scriptsize, red!70!black] at (0.93,2.65) {$\alpha$: $k = 2$ slots};
+\node[font=\scriptsize, blue!70!black] at (3.1,2.65) {$\beta$: $l = 3$ slots};
+\node[font=\scriptsize, gray!70!black] at (0.95,-0.75) {$1$};
+\node[font=\scriptsize, gray!70!black] at (1.70,-0.75) {$2$};
+\node[font=\scriptsize, gray!70!black] at (2.45,-0.75) {$3$};
+\node[font=\scriptsize, gray!70!black] at (3.20,-0.75) {$4$};
+\node[font=\scriptsize, gray!70!black] at (3.95,-0.75) {$5$};
+\draw[->, red!70!black!60, thick] (0.55,1.58) -- (1.70,0.42);
+\draw[thick, red!70!black, fill=red!70!black!8, rounded corners=1pt] (1.42,-0.38) rectangle (1.98,0.38); \node[font=\scriptsize] at (1.70,0.00) {$v^{2}$};
+\draw[->, red!70!black!60, thick] (1.30,1.58) -- (3.20,0.42);
+\draw[thick, red!70!black, fill=red!70!black!8, rounded corners=1pt] (2.92,-0.38) rectangle (3.48,0.38); \node[font=\scriptsize] at (3.20,0.00) {$v^{4}$};
+\draw[->, blue!70!black!60, thick] (2.35,1.58) -- (0.95,0.42);
+\draw[thick, blue!70!black, fill=blue!70!black!8, rounded corners=1pt] (0.67,-0.38) rectangle (1.23,0.38); \node[font=\scriptsize] at (0.95,0.00) {$v^{1}$};
+\draw[->, blue!70!black!60, thick] (3.10,1.58) -- (2.45,0.42);
+\draw[thick, blue!70!black, fill=blue!70!black!8, rounded corners=1pt] (2.17,-0.38) rectangle (2.73,0.38); \node[font=\scriptsize] at (2.45,0.00) {$v^{3}$};
+\draw[->, blue!70!black!60, thick] (3.85,1.58) -- (3.95,0.42);
+\draw[thick, blue!70!black, fill=blue!70!black!8, rounded corners=1pt] (3.67,-0.38) rectangle (4.23,0.38); \node[font=\scriptsize] at (3.95,0.00) {$v^{5}$};
+\node[font=\scriptsize, anchor=west, align=left] at (4.8,0.6) {$\sigma = (2, 4, 1, 3, 5)$: $\sigma(1) < \sigma(2)$,\\ $\sigma(3) < \sigma(4) < \sigma(5)$;\\ the term is $\sgn(\sigma)\,\alpha(v^2, v^4)\,\beta(v^1, v^3, v^5)$};
+\node[font=\scriptsize, gray!70!black, anchor=west] at (4.8,-0.75) {positions in the deck};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} One $(2, 3)$-shuffle, $\sigma = (2, 4, 1, 3, 5)$ in one-line notation ($\sigma(1) = 2$, $\sigma(2) = 4$, $\sigma(3) = 1$, $\sigma(4) = 3$, $\sigma(5) = 5$): the cards $1, 2$ of the first pile land in places $2, 4$, the cards $3, 4, 5$ of the second pile in places $1, 3, 5$, each pile keeping its order. It has three inversions (Definition~\ref{def:sgn}), the pairs $(1, 3)$, $(2, 3)$ and $(2, 4)$, so $\sgn(\sigma) = -1$. In the picture the inversions are the crossings: two arrows cross exactly when the card that starts further left lands further right, and for a shuffle only a red arrow and a blue arrow can cross.
+
+\begin{lembox}[Shuffles and the Subgroup $S_k \times S_l$]\thmlabel{lem:shuffle-factorization}
+Let $S_k \times S_l \subseteq S_{k+l}$ denote the set of permutations $\rho$ with $\rho(\{1, \ldots, k\}) = \{1, \ldots, k\}$. Such a $\rho$ permutes $\{1, \ldots, k\}$ by some $\tau \in S_k$ and $\{k+1, \ldots, k+l\}$ by $\rho(k + j) = k + \tau'(j)$ for some $\tau' \in S_l$.
+\begin{enumerate}[nosep]
+\item $S_k \times S_l$ is a subgroup of $S_{k+l}$ with $k!\, l!$ elements, and $\sgn(\rho) = \sgn(\tau)\, \sgn(\tau')$.
+\item A $(k, l)$-shuffle $\sigma$ is determined by the set $\sigma(\{1, \ldots, k\})$, and every $k$-element subset of $\{1, \ldots, k+l\}$ is $\sigma(\{1, \ldots, k\})$ for a shuffle $\sigma$. Hence $|\mathrm{Sh}(k, l)| = \binom{k+l}{k}$.
+\item Every $\pi \in S_{k+l}$ factors in exactly one way as
+\[
+\pi = \sigma \circ \rho, \qquad \sigma \in \mathrm{Sh}(k, l), \quad \rho \in S_k \times S_l .
+\]
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Write $n = k + l$, $I = \{1, \ldots, k\}$ and $J = \{k+1, \ldots, n\}$.
+
+(1) If $\rho(I) = I$ then also $\rho(J) = J$, because $\rho$ is a bijection of $I \cup J$. If $\rho$ and $\rho'$ map $I$ onto $I$, so do $\rho \circ \rho'$ and $\rho^{-1}$, and so does the identity: $S_k \times S_l$ is a subgroup. The element $\rho$ is determined by the pair $(\tau, \tau')$, and every pair occurs, so there are $k!\, l!$ elements. For the sign, count inversions (Definition~\ref{def:sgn}). A pair $i < j$ with $i \in I$ and $j \in J$ is not an inversion of $\rho$, since $\rho(i) \le k < \rho(j)$. The inversions with $i, j \in I$ are the inversions of $\tau$, and those with $i, j \in J$ correspond to the inversions of $\tau'$. So the number of inversions of $\rho$ is the sum of those of $\tau$ and $\tau'$, and $\sgn(\rho) = \sgn(\tau)\sgn(\tau')$.
+
+(2) Let $\sigma$ be a shuffle and $P = \sigma(I)$. Since $\sigma(1) < \cdots < \sigma(k)$, these values are the elements of $P$ in increasing order; since $\sigma(k+1) < \cdots < \sigma(n)$, those values are the elements of the complement of $P$ in increasing order. So $P$ determines $\sigma$. Conversely, for any $k$-element subset $P = \{p_1 < \cdots < p_k\}$ of $\{1, \ldots, n\}$, with complement $\{q_1 < \cdots < q_l\}$, the permutation $\sigma(i) = p_i$ for $i \le k$, $\sigma(k + j) = q_j$ for $j \le l$, is a shuffle with $\sigma(I) = P$. So $\sigma \mapsto \sigma(I)$ is a bijection from $\mathrm{Sh}(k, l)$ to the set of $k$-element subsets of $\{1, \ldots, n\}$, which has $\binom{n}{k}$ elements.
+
+(3) \emph{Existence.} Given $\pi$, let $\sigma$ be the shuffle with $\sigma(I) = \pi(I)$, from~(2), and put $\rho = \sigma^{-1} \circ \pi$. Then $\rho(I) = \sigma^{-1}(\pi(I)) = \sigma^{-1}(\sigma(I)) = I$, so $\rho \in S_k \times S_l$, and $\pi = \sigma \circ \rho$. \emph{Uniqueness.} If $\pi = \sigma \circ \rho$ with $\sigma$ a shuffle and $\rho(I) = I$, then $\sigma(I) = \sigma(\rho(I)) = \pi(I)$, which determines $\sigma$ by~(2), and then $\rho = \sigma^{-1} \circ \pi$.
+\end{proof}
+
+By~(3) the shuffles are a set of representatives for the left cosets $\sigma \circ (S_k \times S_l)$ of the subgroup $S_k \times S_l$, one in each coset. The count agrees: $(k+l)! = \binom{k+l}{k} \cdot k!\, l!$.
+
+\begin{exbox}[Shuffles Do Not Form a Subgroup]\exlabel{ex:shuffles-not-subgroup}
+\textit{(Lecture~29: a student asked whether $\mathrm{Sh}(k, l)$ is a subgroup of $S_{k+l}$ isomorphic to $S_k \times S_l$. It is not; the example is filled in.)} Take $k = 1$ and $l = 2$. The only condition on a $(1, 2)$-shuffle is $\sigma(2) < \sigma(3)$, and in one-line notation $(\sigma(1), \sigma(2), \sigma(3))$,
+\[
+\mathrm{Sh}(1, 2) = \{ (1, 2, 3),\ (2, 1, 3),\ (3, 1, 2) \} ,
+\]
+three elements, in agreement with $\binom{3}{1} = 3$. Let $\sigma = (2, 1, 3)$ and $\sigma' = (3, 1, 2)$. Then
+\[
+(\sigma' \circ \sigma)(1) = \sigma'(2) = 1, \qquad (\sigma' \circ \sigma)(2) = \sigma'(1) = 3, \qquad (\sigma' \circ \sigma)(3) = \sigma'(3) = 2 ,
+\]
+so $\sigma' \circ \sigma = (1, 3, 2)$, which is not a shuffle: its values at $2$ and $3$ are $3 > 2$. So $\mathrm{Sh}(1, 2)$ is not closed under composition. The subgroup in the picture is $S_1 \times S_2 = \{(1, 2, 3), (1, 3, 2)\}$, with two elements, and the three shuffles represent its three left cosets (Lemma~\ref{lem:shuffle-factorization}(3)).
+\end{exbox}
+
+\begin{defbox}[Wedge Product]\deflabel{def:wedge-product}
+Given $\alpha \in \Lambda^k V^*$ and $\beta \in \Lambda^l V^*$ (Definition~\ref{def:lambda-k}), their \textbf{wedge product} is the function $\alpha \wedge \beta : V^{k+l} \to \mathbb{R}$,
+\[
+(\alpha \wedge \beta)(v^1, \ldots, v^{k+l}) = \sum_{\sigma \in \mathrm{Sh}(k, l)} \sgn(\sigma)\, \alpha\big(v^{\sigma(1)}, \ldots, v^{\sigma(k)}\big)\, \beta\big(v^{\sigma(k+1)}, \ldots, v^{\sigma(k+l)}\big) ,
+\]
+the sum over all $(k, l)$-shuffles (Definition~\ref{def:shuffle}). It is a linear $(k + l)$-form, $\alpha \wedge \beta \in \Lambda^{k+l} V^*$ (Proposition~\ref{prop:wedge-all-permutations}(3)).
+\leeref{Ch.~14, \emph{The Wedge Product}}
+\end{defbox}
+
+Degrees add under multiplication, as a degree should. Each term of the sum hands $k$ of the $k + l$ vectors to $\alpha$ and the remaining $l$ to $\beta$, both in increasing order of their labels; by Lemma~\ref{lem:shuffle-factorization}(2) there is one term for each way of choosing which $k$ vectors go to $\alpha$, and its sign is the sign of the shuffle. For $k = 0$, $\alpha$ is a number $c$, the only $(0, l)$-shuffle is the identity, and $c \wedge \beta = c\, \beta$. In practice the formula is used directly only in low degrees.
+
+\textbf{Transcription note (Lecture 29).} The board wrote $(-1)^\sigma$ for $\sgn(\sigma)$, lower labels $v_{\sigma(1)}, \ldots$ for the vectors, and $r_{\sigma(1)}, \ldots, r_{\sigma(k)}$ in the entries of $\alpha$, which are $v^{\sigma(1)}, \ldots, v^{\sigma(k)}$.
+
+One can also sum over all permutations of $\{1, \ldots, k+l\}$ instead of the shuffles, but then there are many repetitions: in each term the entries of $\alpha$, and those of $\beta$, can be put into increasing order at the price of a sign. This, and the algebraic meaning of the formula, are made precise next. The lecture presented the algebraic description for conceptual understanding only; it is not used in computations.
+
+\begin{defbox}[Tensor Product of Multilinear Maps]\deflabel{def:tensor-product-multilinear}
+Let $S : V^k \to \mathbb{R}$ and $T : V^l \to \mathbb{R}$ be multilinear. Their \textbf{tensor product} is the map $S \otimes T : V^{k+l} \to \mathbb{R}$,
+\[
+(S \otimes T)(v^1, \ldots, v^{k+l}) = S(v^1, \ldots, v^k)\, T(v^{k+1}, \ldots, v^{k+l}) .
+\]
+It is multilinear.
+\leeref{Ch.~12, \emph{Multilinear Algebra}}
+\end{defbox}
+
+$S \otimes T$ is linear in each of the first $k$ entries because $S$ is, and in each of the last $l$ entries because $T$ is. For forms $\alpha \in \Lambda^k V^*$ and $\beta \in \Lambda^l V^*$ the tensor product $\alpha \otimes \beta$ is multilinear but in general not alternating: for $k = l = 1$, $(\alpha \otimes \beta)(v, v) = \alpha(v)\beta(v)$, which is not $0$ when $\alpha(v) \neq 0 \neq \beta(v)$ (compare Lemma~\ref{lem:alternating-dependent}(1)). The board writes $V^* \otimes \cdots \otimes V^*$ ($n$ factors) for the vector space of all multilinear maps $V^n \to \mathbb{R}$.
+
+\begin{defbox}[The Skew-Symmetrizer]\deflabel{def:skew-symmetrizer}
+Let $T : V^n \to \mathbb{R}$ be multilinear. For $\pi \in S_n$ let $T^\pi$ be $T$ with its entries rearranged by $\pi$,
+\[
+T^\pi(v^1, \ldots, v^n) = T\big(v^{\pi(1)}, \ldots, v^{\pi(n)}\big) .
+\]
+The \textbf{skew-symmetrizer} is the map $\mathcal{A}$ that sends $T$ to
+\[
+\mathcal{A}(T) = \frac{1}{n!} \sum_{\pi \in S_n} \sgn(\pi)\, T^\pi .
+\]
+\leeref{Ch.~14, \emph{The Algebra of Alternating Tensors}}
+\end{defbox}
+
+\textit{(Lecture~29 named the map and described it as the natural projection onto the completely antisymmetric maps, without writing the formula; the formula is filled in. Lee calls it alternation and writes $\operatorname{Alt}$.)} Each $T^\pi$ is multilinear, so $\mathcal{A}(T)$ is multilinear, and $\mathcal{A}$ is a linear map from the space of multilinear maps $V^n \to \mathbb{R}$ to itself.
+
+\begin{lembox}[The Skew-Symmetrizer Projects onto the Forms]\thmlabel{lem:skew-symmetrizer}
+Let $T : V^n \to \mathbb{R}$ be multilinear and $\mathcal{A}$ the skew-symmetrizer (Definition~\ref{def:skew-symmetrizer}).
+\begin{enumerate}[nosep]
+\item $\mathcal{A}(T)$ is alternating: $\mathcal{A}(T) \in \Lambda^n V^*$.
+\item If $T$ is alternating, then $\mathcal{A}(T) = T$.
+\end{enumerate}
+So $\mathcal{A}$ is a linear projection of the space of multilinear maps $V^n \to \mathbb{R}$ onto $\Lambda^n V^*$: its image is $\Lambda^n V^*$, and $\mathcal{A} \circ \mathcal{A} = \mathcal{A}$.
+\leeref{Proposition 14.3}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not proved in lecture; filled in.)} \emph{A rule for rearranging twice.} For $\pi, \mu \in S_n$, $(T^\pi)^\mu = T^{\mu \circ \pi}$. Indeed, put $w^i = v^{\mu(i)}$; then
+\[
+\begin{aligned}
+(T^\pi)^\mu(v^1, \ldots, v^n) &= T^\pi(w^1, \ldots, w^n) = T\big(w^{\pi(1)}, \ldots, w^{\pi(n)}\big) \\
+&= T\big(v^{\mu(\pi(1))}, \ldots, v^{\mu(\pi(n))}\big) = T^{\mu \circ \pi}(v^1, \ldots, v^n) .
+\end{aligned}
+\]
+
+(1) Let $\mu \in S_n$. By the rule, and since $\sgn(\pi) = \sgn(\mu)\, \sgn(\mu \circ \pi)$ (Proposition~\ref{prop:sgn}(1), with $\sgn(\mu)^2 = 1$),
+\[
+\mathcal{A}(T)^\mu = \frac{1}{n!} \sum_{\pi \in S_n} \sgn(\pi)\, T^{\mu \circ \pi} = \sgn(\mu)\, \frac{1}{n!} \sum_{\pi \in S_n} \sgn(\mu \circ \pi)\, T^{\mu \circ \pi} = \sgn(\mu)\, \mathcal{A}(T) ;
+\]
+the last step holds because $\pi \mapsto \mu \circ \pi$ is a bijection of $S_n$, so the sum runs over all of $S_n$ again. Thus $\mathcal{A}(T)\big(v^{\mu(1)}, \ldots, v^{\mu(n)}\big) = \sgn(\mu)\, \mathcal{A}(T)(v^1, \ldots, v^n)$ for every $\mu$, and $\mathcal{A}(T)$ is multilinear. By the converse in Lemma~\ref{lem:k-form-permutation}, $\mathcal{A}(T)$ is alternating.
+
+(2) If $T$ is alternating, $T^\pi = \sgn(\pi)\, T$ for every $\pi$, by Lemma~\ref{lem:k-form-permutation}. Then $\mathcal{A}(T) = \frac{1}{n!} \sum_\pi \sgn(\pi)^2\, T = T$, as $S_n$ has $n!$ elements.
+
+\emph{The projection.} By~(1) the image of $\mathcal{A}$ lies in $\Lambda^n V^*$, and by~(2) every element of $\Lambda^n V^*$ is its own image. Applying~(2) to the alternating map $\mathcal{A}(T)$ gives $\mathcal{A}(\mathcal{A}(T)) = \mathcal{A}(T)$.
+\end{proof}
+
+\begin{propbox}[The Wedge Product as a Skew-Symmetrized Tensor Product]\thmlabel{prop:wedge-all-permutations}
+Let $\alpha \in \Lambda^k V^*$ and $\beta \in \Lambda^l V^*$.
+\begin{enumerate}[nosep]
+\item The wedge product (Definition~\ref{def:wedge-product}) is also the sum over all permutations, divided by $k!\, l!$:
+\[
+(\alpha \wedge \beta)(v^1, \ldots, v^{k+l}) = \frac{1}{k!\, l!} \sum_{\pi \in S_{k+l}} \sgn(\pi)\, \alpha\big(v^{\pi(1)}, \ldots, v^{\pi(k)}\big)\, \beta\big(v^{\pi(k+1)}, \ldots, v^{\pi(k+l)}\big) .
+\]
+\item In terms of the tensor product (Definition~\ref{def:tensor-product-multilinear}) and the skew-symmetrizer (Definition~\ref{def:skew-symmetrizer}),
+\[
+\alpha \wedge \beta = \frac{(k + l)!}{k!\, l!}\, \mathcal{A}(\alpha \otimes \beta) .
+\]
+\item $\alpha \wedge \beta$ is a linear $(k + l)$-form: $\alpha \wedge \beta \in \Lambda^{k+l} V^*$.
+\end{enumerate}
+\leeref{Ch.~14, \emph{The Wedge Product}}
+\end{propbox}
+
+\begin{proof}
+\textit{((1) was stated in Lecture~29, and (2) in the form $\alpha \wedge \beta = \mathcal{A}(\alpha \otimes \beta)$; the proofs and the factor in (2) are filled in.)} Write $n = k + l$.
+
+(1) Let $\pi \in S_n$ and factor it as $\pi = \sigma \circ \rho$ with $\sigma \in \mathrm{Sh}(k, l)$ and $\rho \in S_k \times S_l$ (Lemma~\ref{lem:shuffle-factorization}(3)), where $\rho$ acts by $\tau \in S_k$ on $\{1, \ldots, k\}$ and by $\rho(k + j) = k + \tau'(j)$, $\tau' \in S_l$. Put $u^i = v^{\sigma(i)}$ for $i \le k$ and $w^j = v^{\sigma(k + j)}$ for $j \le l$. Then $v^{\pi(i)} = v^{\sigma(\tau(i))} = u^{\tau(i)}$ and $v^{\pi(k + j)} = v^{\sigma(k + \tau'(j))} = w^{\tau'(j)}$, and by Lemma~\ref{lem:k-form-permutation}, applied to $\alpha$ and to $\beta$,
+\[
+\alpha\big(v^{\pi(1)}, \ldots, v^{\pi(k)}\big) = \alpha\big(u^{\tau(1)}, \ldots, u^{\tau(k)}\big) = \sgn(\tau)\, \alpha\big(v^{\sigma(1)}, \ldots, v^{\sigma(k)}\big) ,
+\]
+\[
+\beta\big(v^{\pi(k+1)}, \ldots, v^{\pi(k+l)}\big) = \beta\big(w^{\tau'(1)}, \ldots, w^{\tau'(l)}\big) = \sgn(\tau')\, \beta\big(v^{\sigma(k+1)}, \ldots, v^{\sigma(k+l)}\big) .
+\]
+Also $\sgn(\pi) = \sgn(\sigma)\, \sgn(\rho) = \sgn(\sigma)\, \sgn(\tau)\, \sgn(\tau')$ (Proposition~\ref{prop:sgn}(1) and Lemma~\ref{lem:shuffle-factorization}(1)). Multiplying the three equations, the signs of $\tau$ and $\tau'$ appear squared, and the term of $\pi$ in the sum over $S_n$ equals the term of $\sigma$ in the sum over shuffles:
+\[
+\sgn(\pi)\, \alpha\big(v^{\pi(1)}, \ldots\big)\, \beta\big(v^{\pi(k+1)}, \ldots\big) = \sgn(\sigma)\, \alpha\big(v^{\sigma(1)}, \ldots\big)\, \beta\big(v^{\sigma(k+1)}, \ldots\big) .
+\]
+By the uniqueness of the factorization, the permutations $\pi$ with a given shuffle $\sigma$ are the $\sigma \circ \rho$ with $\rho \in S_k \times S_l$, and there are $k!\, l!$ of them. So the sum over $S_n$ is $k!\, l!$ times the sum over $\mathrm{Sh}(k, l)$.
+
+(2) By Definitions~\ref{def:tensor-product-multilinear} and~\ref{def:skew-symmetrizer}, $(\alpha \otimes \beta)^\pi(v^1, \ldots, v^n) = \alpha\big(v^{\pi(1)}, \ldots, v^{\pi(k)}\big)\, \beta\big(v^{\pi(k+1)}, \ldots, v^{\pi(n)}\big)$, so the sum in~(1) is $\sum_\pi \sgn(\pi)\, (\alpha \otimes \beta)^\pi = n!\, \mathcal{A}(\alpha \otimes \beta)$. Dividing by $k!\, l!$ gives~(2).
+
+(3) $\mathcal{A}(\alpha \otimes \beta) \in \Lambda^n V^*$ by Lemma~\ref{lem:skew-symmetrizer}(1), and $\Lambda^n V^*$ is a vector space; so~(3) follows from~(2).
+\end{proof}
+
+\begin{rembox}[Two Conventions for the Wedge Product]\label{rem:wedge-conventions}
+The board wrote $\alpha \wedge \beta = \mathcal{A}(\alpha \otimes \beta)$: take the tensor product, then its skew-symmetric part. With $\mathcal{A}$ normalized as a projection (Lemma~\ref{lem:skew-symmetrizer}), this holds up to the factor $\binom{k+l}{k}$ of Proposition~\ref{prop:wedge-all-permutations}(2). Lee defines the wedge product by the formula with the factor and calls this the \emph{determinant convention}: the factor is what makes $\varepsilon^{a_1} \wedge \cdots \wedge \varepsilon^{a_k}$ equal to the determinant $\varepsilon^A$ with no factorials (Proposition~\ref{prop:wedge-properties}(4)), and it is the convention of the shuffle formula of Definition~\ref{def:wedge-product}, which has no factorials at all. Some books, for example Kobayashi--Nomizu, define the product as $\mathcal{A}(\alpha \otimes \beta)$ without the factor (the \emph{Alt convention}); their wedge product differs from this one by the constant $\binom{k+l}{k}$.
+\end{rembox}
+
+\begin{exbox}[The Wedge of Two One-Forms]\exlabel{ex:wedge-one-forms}
+Let $k = l = 1$, so $\alpha, \beta \in V^*$. The group $S_2$ has two elements, the identity $(1, 2)$ and the transposition $(2, 1)$ in one-line notation, and both are shuffles: $\mathrm{Sh}(1, 1) = S_2$, because with $k = l = 1$ there are no two values to compare. The identity has sign $+1$ and the transposition $-1$, so
+\[
+(\alpha \wedge \beta)(v^1, v^2) = \alpha(v^1)\beta(v^2) - \alpha(v^2)\beta(v^1) = \det \begin{pmatrix} \alpha(v^1) & \alpha(v^2) \\ \beta(v^1) & \beta(v^2) \end{pmatrix} .
+\]
+\leeref{Ch.~14, \emph{The Wedge Product}}
+\end{exbox}
+
+This is the formula of Lecture~28: for $\alpha = dx^i$ and $\beta = dx^j$ on $\mathbb{R}^3$ it gives $(dx^i \wedge dx^j)(u, v) = u^i v^j - u^j v^i$, which is Definition~\ref{def:dx-wedge-dx}. So the two-form named $dx^i \wedge dx^j$ there is the wedge product of the one-forms $dx^i$ and $dx^j$. This case of the wedge product is the one used most often. The next case, $k = 1$ and $l = 2$, is left for Lecture~30.
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\begin{scope}
+\clip (-0.900,-0.800) rectangle (3.300,3.750);
+\fill[gray!22] (0.000,0.000) -- (0.977,0.402) -- (0.632,1.437) -- (-0.345,1.034) -- cycle;
+\draw[blue!70!black, thin, opacity=0.75] (-0.172,-9.483) -- (-5.690,7.069);
+\draw[red!70!black, thin, opacity=0.75] (-6.782,-6.322) -- (8.851,0.115);
+\draw[blue!70!black, thin, opacity=0.75] (0.805,-9.080) -- (-4.713,7.471);
+\draw[red!70!black, thin, opacity=0.75] (-7.126,-5.287) -- (8.506,1.149);
+\draw[blue!70!black, thin, opacity=0.75] (1.782,-8.678) -- (-3.736,7.874);
+\draw[red!70!black, thin, opacity=0.75] (-7.471,-4.253) -- (8.161,2.184);
+\draw[blue!70!black, thin, opacity=0.75] (2.759,-8.276) -- (-2.759,8.276);
+\draw[red!70!black, thin, opacity=0.75] (-7.816,-3.218) -- (7.816,3.218);
+\draw[blue!70!black, thin, opacity=0.75] (3.736,-7.874) -- (-1.782,8.678);
+\draw[red!70!black, thin, opacity=0.75] (-8.161,-2.184) -- (7.471,4.253);
+\draw[blue!70!black, thin, opacity=0.75] (4.713,-7.471) -- (-0.805,9.080);
+\draw[red!70!black, thin, opacity=0.75] (-8.506,-1.149) -- (7.126,5.287);
+\draw[blue!70!black, thin, opacity=0.75] (5.690,-7.069) -- (0.172,9.483);
+\draw[red!70!black, thin, opacity=0.75] (-8.851,-0.115) -- (6.782,6.322);
+\draw[blue!70!black, thin, opacity=0.75] (6.667,-6.667) -- (1.149,9.885);
+\draw[red!70!black, thin, opacity=0.75] (-9.195,0.920) -- (6.437,7.356);
+\draw[blue!70!black, thin, opacity=0.75] (7.644,-6.264) -- (2.126,10.287);
+\draw[red!70!black, thin, opacity=0.75] (-9.540,1.954) -- (6.092,8.391);
+\fill[orange!85!black, opacity=0.22] (0,0) -- (1.782,1.322) -- (1.753,3.075) -- (-0.029,1.753) -- cycle;
+\draw[orange!85!black, thin] (1.782,1.322) -- (1.753,3.075) -- (-0.029,1.753);
+\end{scope}
+\draw[gray, thin] (-0.900,-0.800) rectangle (3.300,3.750);
+\draw[->, very thick] (0,0) -- (1.782,1.322) node[below right=-1pt, font=\scriptsize, fill=white, inner sep=1pt] {$v^1$};
+\draw[->, very thick] (0,0) -- (-0.029,1.753) node[above left=-1pt, font=\scriptsize, fill=white, inner sep=1pt] {$v^2$};
+\fill (0,0) circle (1.3pt);
+\node[font=\tiny, text=blue!70!black] at (0.267,-1.000) {$\alpha = 0$};
+\node[font=\tiny, text=blue!70!black] at (1.378,-1.000) {$\alpha = 1$};
+\node[font=\tiny, text=blue!70!black] at (2.489,-1.000) {$\alpha = 2$};
+\node[font=\tiny, text=red!70!black, anchor=west] at (3.350,1.359) {$\beta = 0$};
+\node[font=\tiny, text=red!70!black, anchor=west] at (3.350,2.535) {$\beta = 1$};
+\node[font=\tiny, text=red!70!black, anchor=west] at (3.350,3.712) {$\beta = 2$};
+\node[font=\small] at (1.200,4.050) {$V = \mathbb{R}^2$};
+\node[font=\scriptsize] at (1.200,-1.400) {$(\alpha \wedge \beta)(v^1, v^2) = 2.75$ cells};
+\draw[->, thick] (4.550,1.5) -- node[above, font=\scriptsize] {$v \mapsto \big(\alpha(v), \beta(v)\big)$} (6.850,1.5);
+\fill[gray!22] (8.150,0.350) rectangle (9.150,1.350);
+\draw[blue!70!black, thin, opacity=0.75] (8.150,-0.250) -- (8.150,2.850);
+\draw[blue!70!black, thin, opacity=0.75] (9.150,-0.250) -- (9.150,2.850);
+\draw[blue!70!black, thin, opacity=0.75] (10.150,-0.250) -- (10.150,2.850);
+\draw[blue!70!black, thin, opacity=0.75] (11.150,-0.250) -- (11.150,2.850);
+\draw[red!70!black, thin, opacity=0.75] (7.550,0.350) -- (11.250,0.350);
+\draw[red!70!black, thin, opacity=0.75] (7.550,1.350) -- (11.250,1.350);
+\draw[red!70!black, thin, opacity=0.75] (7.550,2.350) -- (11.250,2.350);
+\fill[orange!85!black, opacity=0.22] (8.150,0.350) -- (10.150,0.850) -- (10.650,2.350) -- (8.650,1.850) -- cycle;
+\draw[orange!85!black, thin] (10.150,0.850) -- (10.650,2.350) -- (8.650,1.850);
+\draw[->, very thick] (8.150,0.350) -- (10.150,0.850) node[below right=-1pt, font=\scriptsize, fill=white, inner sep=1pt] {$(2, 0.5)$};
+\draw[->, very thick] (8.150,0.350) -- (8.650,1.850) node[above left=-1pt, font=\scriptsize, fill=white, inner sep=1pt] {$(0.5, 1.5)$};
+\fill (8.150,0.350) circle (1.3pt);
+\node[font=\tiny, text=blue!70!black] at (8.150,-0.450) {$0$};
+\node[font=\tiny, text=blue!70!black] at (9.150,-0.450) {$1$};
+\node[font=\tiny, text=blue!70!black] at (10.150,-0.450) {$2$};
+\node[font=\tiny, text=blue!70!black] at (11.150,-0.450) {$3$};
+\node[font=\tiny, text=red!70!black, anchor=east] at (7.500,0.350) {$0$};
+\node[font=\tiny, text=red!70!black, anchor=east] at (7.500,1.350) {$1$};
+\node[font=\tiny, text=red!70!black, anchor=east] at (7.500,2.350) {$2$};
+\node[font=\tiny, text=blue!70!black, anchor=west] at (11.270,-0.450) {$\alpha$};
+\node[font=\tiny, text=red!70!black] at (7.400,3.000) {$\beta$};
+\node[font=\scriptsize, align=center] at (9.400,3.150) {area $= \det \begin{psmallmatrix} 2 & 0.5 \\ 0.5 & 1.5 \end{psmallmatrix} = 2.75$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Example~\ref{ex:wedge-one-forms} as an area, for the covectors $\alpha(x) = 0.9\, x^1 + 0.3\, x^2$ and $\beta(x) = -0.35\, x^1 + 0.85\, x^2$ on $V = \mathbb{R}^2$. Left: the level lines $\alpha = 0, 1, 2, \ldots$ (blue) and $\beta = 0, 1, 2, \ldots$ (red) cut $V$ into cells; the cell $0 \le \alpha \le 1$, $0 \le \beta \le 1$ is shaded grey. Right: the linear map $v \mapsto (\alpha(v), \beta(v))$ sends the cells to the unit squares of the $(\alpha, \beta)$-plane, and the vectors $v^1, v^2$ to $(\alpha(v^1), \beta(v^1)) = (2, 0.5)$ and $(\alpha(v^2), \beta(v^2)) = (0.5, 1.5)$. The determinant $(\alpha \wedge \beta)(v^1, v^2) = 2 \cdot 1.5 - 0.5 \cdot 0.5 = 2.75$ is the signed area of the parallelogram on the right, which is the area of the parallelogram spanned by $v^1$ and $v^2$ on the left measured in cells of the grid (orange). Exchanging $v^1$ and $v^2$ reverses the orientation and the sign.
+%% <<< END ADDED
+
+\begin{exbox}[The Wedge of Two Two-Forms]\exlabel{ex:wedge-two-forms}
+\textit{(Not from lecture; filled in.)} Let $k = l = 2$. A $(2, 2)$-shuffle is determined by the two places $\sigma(1) < \sigma(2)$, so there are $\binom{4}{2} = 6$ of them (Lemma~\ref{lem:shuffle-factorization}(2)); in one-line notation, with their signs, they are
+\[
+(1, 2, 3, 4)\ {+}, \quad (1, 3, 2, 4)\ {-}, \quad (1, 4, 2, 3)\ {+}, \quad (2, 3, 1, 4)\ {+}, \quad (2, 4, 1, 3)\ {-}, \quad (3, 4, 1, 2)\ {+} ,
+\]
+with $0, 1, 2, 2, 3, 4$ inversions. For $\alpha, \beta \in \Lambda^2 V^*$, Definition~\ref{def:wedge-product} gives
+\[
+\begin{aligned}
+(\alpha \wedge \beta)(v^1, v^2, v^3, v^4) ={}& \alpha(v^1, v^2)\beta(v^3, v^4) - \alpha(v^1, v^3)\beta(v^2, v^4) + \alpha(v^1, v^4)\beta(v^2, v^3) \\
+&+ \alpha(v^2, v^3)\beta(v^1, v^4) - \alpha(v^2, v^4)\beta(v^1, v^3) + \alpha(v^3, v^4)\beta(v^1, v^2) .
+\end{aligned}
+\]
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\draw[blue!70!black, thick] (0.840,1.150) -- (0.840,0.000);
+\draw[blue!70!black, thick] (1.260,1.150) -- (1.260,0.000);
+\draw[red!70!black, thick] (0.000,1.150) -- (0.000,0.000);
+\draw[red!70!black, thick] (0.420,1.150) -- (0.420,0.000);
+\fill[red!70!black] (0.000,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (0.000,1.370) {$1$};
+\fill[red!70!black] (0.000,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (0.000,-0.240) {$v^{1}$};
+\fill[red!70!black] (0.420,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (0.420,1.370) {$2$};
+\fill[red!70!black] (0.420,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (0.420,-0.240) {$v^{2}$};
+\fill[blue!70!black] (0.840,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (0.840,1.370) {$3$};
+\fill[blue!70!black] (0.840,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (0.840,-0.240) {$v^{3}$};
+\fill[blue!70!black] (1.260,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (1.260,1.370) {$4$};
+\fill[blue!70!black] (1.260,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (1.260,-0.240) {$v^{4}$};
+\node[font=\tiny] at (0.630,-0.620) {$\sigma = (1, 2, 3, 4)$};
+\node[font=\scriptsize, text=green!40!black, align=center] at (0.630,-1.180) {$+\,\alpha(v^{1}, v^{2})$\\ $\beta(v^{3}, v^{4})$};
+\draw[blue!70!black, thick] (2.940,1.150) -- (2.520,0.000);
+\draw[blue!70!black, thick] (3.360,1.150) -- (3.360,0.000);
+\draw[red!70!black, thick] (2.100,1.150) -- (2.100,0.000);
+\draw[red!70!black, thick] (2.520,1.150) -- (2.940,0.000);
+\fill[black] (2.730,0.575) circle (1.3pt);
+\fill[red!70!black] (2.100,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (2.100,1.370) {$1$};
+\fill[red!70!black] (2.100,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (2.100,-0.240) {$v^{1}$};
+\fill[red!70!black] (2.520,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (2.520,1.370) {$2$};
+\fill[red!70!black] (2.940,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (2.940,-0.240) {$v^{3}$};
+\fill[blue!70!black] (2.940,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (2.940,1.370) {$3$};
+\fill[blue!70!black] (2.520,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (2.520,-0.240) {$v^{2}$};
+\fill[blue!70!black] (3.360,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (3.360,1.370) {$4$};
+\fill[blue!70!black] (3.360,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (3.360,-0.240) {$v^{4}$};
+\node[font=\tiny] at (2.730,-0.620) {$\sigma = (1, 3, 2, 4)$};
+\node[font=\scriptsize, text=red!70!black, align=center] at (2.730,-1.180) {$-\,\alpha(v^{1}, v^{3})$\\ $\beta(v^{2}, v^{4})$};
+\draw[blue!70!black, thick] (5.040,1.150) -- (4.620,0.000);
+\draw[blue!70!black, thick] (5.460,1.150) -- (5.040,0.000);
+\draw[red!70!black, thick] (4.200,1.150) -- (4.200,0.000);
+\draw[red!70!black, thick] (4.620,1.150) -- (5.460,0.000);
+\fill[black] (4.900,0.767) circle (1.3pt);
+\fill[black] (5.180,0.383) circle (1.3pt);
+\fill[red!70!black] (4.200,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (4.200,1.370) {$1$};
+\fill[red!70!black] (4.200,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (4.200,-0.240) {$v^{1}$};
+\fill[red!70!black] (4.620,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (4.620,1.370) {$2$};
+\fill[red!70!black] (5.460,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (5.460,-0.240) {$v^{4}$};
+\fill[blue!70!black] (5.040,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (5.040,1.370) {$3$};
+\fill[blue!70!black] (4.620,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (4.620,-0.240) {$v^{2}$};
+\fill[blue!70!black] (5.460,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (5.460,1.370) {$4$};
+\fill[blue!70!black] (5.040,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (5.040,-0.240) {$v^{3}$};
+\node[font=\tiny] at (4.830,-0.620) {$\sigma = (1, 4, 2, 3)$};
+\node[font=\scriptsize, text=green!40!black, align=center] at (4.830,-1.180) {$+\,\alpha(v^{1}, v^{4})$\\ $\beta(v^{2}, v^{3})$};
+\draw[blue!70!black, thick] (7.140,1.150) -- (6.300,0.000);
+\draw[blue!70!black, thick] (7.560,1.150) -- (7.560,0.000);
+\draw[red!70!black, thick] (6.300,1.150) -- (6.720,0.000);
+\draw[red!70!black, thick] (6.720,1.150) -- (7.140,0.000);
+\fill[black] (6.580,0.383) circle (1.3pt);
+\fill[black] (6.860,0.767) circle (1.3pt);
+\fill[red!70!black] (6.300,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (6.300,1.370) {$1$};
+\fill[red!70!black] (6.720,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (6.720,-0.240) {$v^{2}$};
+\fill[red!70!black] (6.720,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (6.720,1.370) {$2$};
+\fill[red!70!black] (7.140,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (7.140,-0.240) {$v^{3}$};
+\fill[blue!70!black] (7.140,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (7.140,1.370) {$3$};
+\fill[blue!70!black] (6.300,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (6.300,-0.240) {$v^{1}$};
+\fill[blue!70!black] (7.560,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (7.560,1.370) {$4$};
+\fill[blue!70!black] (7.560,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (7.560,-0.240) {$v^{4}$};
+\node[font=\tiny] at (6.930,-0.620) {$\sigma = (2, 3, 1, 4)$};
+\node[font=\scriptsize, text=green!40!black, align=center] at (6.930,-1.180) {$+\,\alpha(v^{2}, v^{3})$\\ $\beta(v^{1}, v^{4})$};
+\draw[blue!70!black, thick] (9.240,1.150) -- (8.400,0.000);
+\draw[blue!70!black, thick] (9.660,1.150) -- (9.240,0.000);
+\draw[red!70!black, thick] (8.400,1.150) -- (8.820,0.000);
+\draw[red!70!black, thick] (8.820,1.150) -- (9.660,0.000);
+\fill[black] (8.680,0.383) circle (1.3pt);
+\fill[black] (9.030,0.862) circle (1.3pt);
+\fill[black] (9.380,0.383) circle (1.3pt);
+\fill[red!70!black] (8.400,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (8.400,1.370) {$1$};
+\fill[red!70!black] (8.820,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (8.820,-0.240) {$v^{2}$};
+\fill[red!70!black] (8.820,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (8.820,1.370) {$2$};
+\fill[red!70!black] (9.660,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (9.660,-0.240) {$v^{4}$};
+\fill[blue!70!black] (9.240,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (9.240,1.370) {$3$};
+\fill[blue!70!black] (8.400,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (8.400,-0.240) {$v^{1}$};
+\fill[blue!70!black] (9.660,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (9.660,1.370) {$4$};
+\fill[blue!70!black] (9.240,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (9.240,-0.240) {$v^{3}$};
+\node[font=\tiny] at (9.030,-0.620) {$\sigma = (2, 4, 1, 3)$};
+\node[font=\scriptsize, text=red!70!black, align=center] at (9.030,-1.180) {$-\,\alpha(v^{2}, v^{4})$\\ $\beta(v^{1}, v^{3})$};
+\draw[blue!70!black, thick] (11.340,1.150) -- (10.500,0.000);
+\draw[blue!70!black, thick] (11.760,1.150) -- (10.920,0.000);
+\draw[red!70!black, thick] (10.500,1.150) -- (11.340,0.000);
+\draw[red!70!black, thick] (10.920,1.150) -- (11.760,0.000);
+\fill[black] (10.920,0.575) circle (1.3pt);
+\fill[black] (11.130,0.287) circle (1.3pt);
+\fill[black] (11.130,0.862) circle (1.3pt);
+\fill[black] (11.340,0.575) circle (1.3pt);
+\fill[red!70!black] (10.500,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (10.500,1.370) {$1$};
+\fill[red!70!black] (11.340,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (11.340,-0.240) {$v^{3}$};
+\fill[red!70!black] (10.920,1.150) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (10.920,1.370) {$2$};
+\fill[red!70!black] (11.760,0.000) circle (1.6pt);
+\node[font=\tiny, text=red!70!black] at (11.760,-0.240) {$v^{4}$};
+\fill[blue!70!black] (11.340,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (11.340,1.370) {$3$};
+\fill[blue!70!black] (10.500,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (10.500,-0.240) {$v^{1}$};
+\fill[blue!70!black] (11.760,1.150) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (11.760,1.370) {$4$};
+\fill[blue!70!black] (10.920,0.000) circle (1.6pt);
+\node[font=\tiny, text=blue!70!black] at (10.920,-0.240) {$v^{2}$};
+\node[font=\tiny] at (11.130,-0.620) {$\sigma = (3, 4, 1, 2)$};
+\node[font=\scriptsize, text=green!40!black, align=center] at (11.130,-1.180) {$+\,\alpha(v^{3}, v^{4})$\\ $\beta(v^{1}, v^{2})$};
+\node[font=\tiny, text=red!70!black] at (0.210,1.650) {$\alpha$};
+\node[font=\tiny, text=blue!70!black] at (1.050,1.650) {$\beta$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} The six $(2, 2)$-shuffles of Example~\ref{ex:wedge-two-forms}. In each diagram the top row is the entries $1, 2$ of $\alpha$ (red) and $3, 4$ of $\beta$ (blue), and the strand from $i$ ends at the vector $v^{\sigma(i)}$ that this entry receives. Strands of the same colour never cross, which is the shuffle condition. Each crossing of a red strand with a blue one (black dot) is an inversion of $\sigma$, so the sign of the term is $+$ for an even number of crossings (green) and $-$ for an odd number (red).
+%% <<< END ADDED
+
+\begin{propbox}[Properties of the Wedge Product]\thmlabel{prop:wedge-properties}
+For $\alpha, \alpha_1, \alpha_2 \in \Lambda^k V^*$, $\beta \in \Lambda^l V^*$, $\gamma \in \Lambda^r V^*$ and $\lambda \in \mathbb{R}$:
+\begin{enumerate}[nosep]
+\item \emph{bilinear}: $(\alpha_1 + \lambda\alpha_2) \wedge \beta = \alpha_1 \wedge \beta + \lambda\, \alpha_2 \wedge \beta$, and likewise in $\beta$;
+\item \emph{associative}: $\alpha \wedge (\beta \wedge \gamma) = (\alpha \wedge \beta) \wedge \gamma$;
+\item \emph{graded anticommutative}: $\beta \wedge \alpha = (-1)^{kl}\, \alpha \wedge \beta$; in particular, forms of even degree commute with all forms;
+\item for a basis $(\varepsilon^i)$ of $V^*$ and $A = \{a_1 < \cdots < a_k\}$: $\varepsilon^A = \varepsilon^{a_1} \wedge \cdots \wedge \varepsilon^{a_k}$ (Definition~\ref{def:epsilon-A}).
+\end{enumerate}
+\leeref{Proposition 14.11}
+\end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+Lecture~29 stated the four properties without proof. (1) is immediate from Definition~\ref{def:wedge-product}, each term of the sum being linear in $\alpha$ and in $\beta$. In~(3), forms of even degree commute with all forms because $(-1)^{kl} = 1$ when $k$ or $l$ is even. (4) is a nontrivial computation: the shuffle formula is, in disguise, an expansion of a determinant. (2)--(4) are to be filled.
+\end{proof}
+
+\begin{corbox}[Forms of Odd Degree Square to Zero]\thmlabel{cor:odd-forms-square-zero}
+If $\alpha \in \Lambda^k V^*$ with $k$ odd, then $\alpha \wedge \alpha = 0$. In particular $\varepsilon \wedge \varepsilon = 0$ for every covector $\varepsilon \in V^*$.
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} By Proposition~\ref{prop:wedge-properties}(3) with $\beta = \alpha$ and $l = k$: $\alpha \wedge \alpha = (-1)^{k^2}\, \alpha \wedge \alpha = -\alpha \wedge \alpha$, since $k^2$ is odd. So $2\, \alpha \wedge \alpha = 0$. For a covector, $k = 1$; this can also be read off Example~\ref{ex:wedge-one-forms}: $(\varepsilon \wedge \varepsilon)(v^1, v^2) = \varepsilon(v^1)\varepsilon(v^2) - \varepsilon(v^2)\varepsilon(v^1) = 0$.
+\end{proof}
+
+For $\varepsilon = dx^i$ this is $dx^i \wedge dx^i = 0$, as in Lemma~\ref{lem:dx-wedge-properties}(2).
+
+\begin{exbox}[A Form of Even Degree with Nonzero Square]\exlabel{ex:even-form-nonzero-square}
+\textit{(Not from lecture; filled in.)} For even degree the corollary fails. On $\mathbb{R}^4$ let
+\[
+\omega = dx^1 \wedge dx^2 + dx^3 \wedge dx^4 \in \Lambda^2 (\mathbb{R}^4)^* , \qquad \omega(u, v) = u^1 v^2 - u^2 v^1 + u^3 v^4 - u^4 v^3
+\]
+(Example~\ref{ex:basis-euclidean-forms}). On the standard basis, $\omega(e_1, e_2) = \omega(e_3, e_4) = 1$, and $\omega(e_i, e_j) = 0$ for the other pairs $i < j$. By the six-term formula of Example~\ref{ex:wedge-two-forms} with $\alpha = \beta = \omega$, only the first and the last term are not zero:
+\[
+(\omega \wedge \omega)(e_1, e_2, e_3, e_4) = \omega(e_1, e_2)\,\omega(e_3, e_4) + \omega(e_3, e_4)\,\omega(e_1, e_2) = 2 .
+\]
+So $\omega \wedge \omega \neq 0$. By Corollary~\ref{cor:top-degree-forms}, $\omega \wedge \omega = 2\, \varepsilon^{\{1, 2, 3, 4\}}$, twice the determinant; with Proposition~\ref{prop:wedge-properties}(4) this reads $\omega \wedge \omega = 2\, dx^1 \wedge dx^2 \wedge dx^3 \wedge dx^4$.
+\end{exbox}
+
+Next (Lecture~30): more computations in low degree; then $V$ becomes the tangent space $T_pM$ again, and the point $p$ varies over a manifold, so that the forms become functions of the point.
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -34202,7 +34931,8 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:lie-derivative}\ Lie derivatives & Chapter 9, \emph{Lie Derivatives} (Lemma 9.36, Theorem 9.38, Corollary 9.39); \emph{Canonical Form Near a Regular Point} (Theorem 9.22); \emph{Commuting Vector Fields} (Theorem 9.42, Corollary 9.43, Theorem 9.44) \\
 \ref{sec:stokes-calc3}\ Stokes' theorem in Calculus III & Chapter 16, \emph{Surface Integrals} (Theorem 16.34); the general theorem: \emph{Stokes's Theorem} (Theorem 16.11) \\
 \ref{sec:two-form-integrand}\ The integrand is a two-form & Chapter 14, \emph{The Wedge Product} \\
-\ref{sec:multilinear}\ Multilinear algebra & Chapter 12, \emph{Symmetric and Alternating Tensors}; Chapter 14, \emph{The Algebra of Alternating Tensors} (Proposition 14.8) \\
+\ref{sec:multilinear}\ Multilinear algebra & Chapter 12, \emph{Symmetric and Alternating Tensors}; Chapter 14, \emph{The Algebra of Alternating Tensors} (Lemma 14.1, Lemma 14.7, Proposition 14.8) \\
+\ref{sec:wedge-product}\ The wedge product & Chapter 14, \emph{The Algebra of Alternating Tensors} (alternation, Proposition 14.3) and \emph{The Wedge Product} (Proposition 14.11; the determinant and Alt conventions); Chapter 12, \emph{Multilinear Algebra} (tensor products) \\
 \bottomrule
 \end{longtable}
 
@@ -34368,7 +35098,10 @@ Proposition 11.25 & Prop.~\ref{prop:pullback-d}, Cor.~\ref{cor:pullback-d-forms}
 Problem 11-4 & Def.~\ref{def:Ip}, Def.~\ref{def:Ip-square}, Prop.~\ref{prop:second-order}, Prop.~\ref{prop:ideal-basis}, Thm.~\ref{thm:cotangent-ideal} \\
 Exercise 12.17 & Lem.~\ref{lem:k-form-permutation} \\
 Lemma 14.1 & Lem.~\ref{lem:alternating-dependent} \\
+Proposition 14.3 & Lem.~\ref{lem:skew-symmetrizer} \\
+Lemma 14.7 & Lem.~\ref{lem:epsilon-A-dual} \\
 Proposition 14.8 & Prop.~\ref{prop:dim-k-forms} \\
+Proposition 14.11 & Prop.~\ref{prop:wedge-properties} \\
 Theorem 16.34 & Thm.~\ref{thm:stokes-calc3} \\
 Theorem 17.26 & Thm.~\ref{thm:inv-dim} \\
 Theorem 20.1 & Prop.~\ref{prop:one-parameter-subgroup} \\
