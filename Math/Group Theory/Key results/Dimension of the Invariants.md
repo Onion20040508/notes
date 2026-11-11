@@ -17,7 +17,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§66 Invariant Vectors#^cor-66-11|Corollary §66.11: Burnside's Lemma from the Trace Formula]]
-- [[§68 Actions on Matrix Spaces#^thm-68-4|Theorem §68.4: Dimension of Hom_G(V, W)]]
+- [[§68 Homomorphisms Between Representations#^thm-68-6|Theorem §68.6: Dimension of Hom_G(V, W)]]
 
 ## Connections
 - TODO

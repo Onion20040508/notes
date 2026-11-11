@@ -10821,81 +10821,262 @@ permutation, $\mathbb{R}^3 = \mathbb{R}(1,1,1) \oplus U$ & $3$ & $1$ & $0$
 \end{exbox}
 
 % ============================================================================
-% SECTION: ACTIONS ON MATRIX SPACES (Worksheet 16; handed out Mon Nov 9)
+% SECTION: HOMOMORPHISMS BETWEEN REPRESENTATIONS (Worksheet 16; lecture Wed Nov 11)
 % ============================================================================
-\section{Actions on Matrix Spaces}\label{sec:hom-representation}
+\section{Homomorphisms Between Representations}\label{sec:hom-representation}
 
-\textit{Source: Worksheet 16 (handed out Mon Nov 9). The worksheet's problems and its theorem are stated here; the lecture on it has not been held yet, so all proofs are filled in and will be replaced by the board proofs. Reference: Axler, \emph{Linear Algebra Done Right} (matrices of linear maps, eigenvalues).}
+\textit{Source: Lecture and Worksheet 16, \emph{Actions on matrix spaces} (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3--16.5 were not reached; they are stated in \ref{sub:characters-at-inverses} with proofs that are filled in. Reference: Axler, \emph{Linear Algebra Done Right} (matrices of linear maps, eigenvalues, trace).}
 
-Theorem~\ref{thm:dim-invariants-character} computes the dimension of the invariant vectors of any representation from its character. This section applies it to the representation $\operatorname{Hom}(V, W)$, whose invariant vectors are the homomorphisms of representations $V \to W$ (Proposition~\ref{prop:hom-invariants}). The result is a formula for the number of independent homomorphisms between two representations in terms of their characters. Over $\mathbb{R}$ and $\mathbb{C}$ the formula simplifies, because there $\chi_V(g^{-1})$ is $\chi_V(g)$ or its complex conjugate.
+Theorem~\ref{thm:dim-invariants-character} computes the dimension of the invariant vectors of any representation from its character. This section applies it to the representation $\operatorname{Hom}(V, W)$, whose invariant vectors are the homomorphisms of representations $V \to W$. The result is a formula for the number of independent homomorphisms between two representations in terms of their characters. Over $\mathbb{R}$ and $\mathbb{C}$ the formula simplifies, because there $\chi_V(g^{-1})$ is $\chi_V(g)$ or its complex conjugate.
 
-\begin{defbox}[{The Representation $\operatorname{Hom}(V, W)$}]\label{def:hom-representation}
-Let $V$ and $W$ be representations of a group $G$ over $k$, and let $\operatorname{Hom}(V, W)$ be the vector space of linear maps from $V$ to $W$. For $g \in G$ and $\alpha \in \operatorname{Hom}(V, W)$ set
-\[ g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1}). \]
-\srcline{WS 16}
-\end{defbox}
+\subsection{Two More Descriptions of the Trace}\label{sub:trace-descriptions}
 
-\textbf{Transcription note.} Worksheet 16 prints $g \ast \alpha = \rho_V(g) \circ \alpha \circ \rho_W(g^{-1})$. For $\alpha: V \to W$ these maps cannot be composed unless $V = W$: $\rho_W(g^{-1})$ acts on $W$, but $\alpha$ is defined on $V$. With $V$ and $W$ exchanged, as in Definition~\ref{def:hom-representation}, the composition makes sense, and the invariant maps are the $\alpha$ with $\alpha \circ \rho_V = \rho_W \circ \alpha$, as the worksheet says next. This is the action $(g \cdot A)(w) = g\,A(g^{-1}w)$ of Proposition~\ref{prop:hom-invariants}(1). The exchange also affects WS 16.2 (Proposition~\ref{prop:character-hom}) but not the worksheet's theorem (Theorem~\ref{thm:dim-hom-g}).
+The trace of a linear map $A: V \to V$ of a finite-dimensional vector space is $\sum_i A_{ii}$, computed in any basis of $V$, and $\operatorname{Tr}(SAS^{-1}) = \operatorname{Tr}(A)$ (Definition~\ref{def:trace-linear-map}, Corollary~\ref{cor:trace-conjugation}). The lecture of 11/11 recalled this and stated two further descriptions of the trace, without proof. They are written here for $n \times n$ matrices over a field $k$; for a linear map, take its matrix in any basis.
 
-\begin{propbox}[{$\operatorname{Hom}(V, W)$ Is a Representation}]\label{prop:hom-is-representation}
-The rule of Definition~\ref{def:hom-representation} is an action of $G$ on $\operatorname{Hom}(V, W)$ by linear maps. So $\operatorname{Hom}(V, W)$ is a representation of $G$.
-\srcline{WS 16.1}
+\begin{propbox}[{The Trace Is the Coefficient of $t$ in $\det(I + tA)$}]\label{prop:trace-det-coefficient}
+Let $A$ be an $n \times n$ matrix over $k$. Then $\det(I + tA)$ is a polynomial in $t$ with constant term $1$, and its coefficient of $t$ is $\operatorname{Tr}(A)$:
+\[ \det(I + tA) = 1 + t\operatorname{Tr}(A) + (\text{terms divisible by } t^2). \]
+Over $\mathbb{R}$, this says $\operatorname{Tr}(A) = \dfrac{d}{dt}\det(I + tA)\Big|_{t=0}$.
+\srcline{lecture 11/11 (stated)}
 \end{propbox}
 
 \begin{proof}
-\textit{(Filled in.)} This is Proposition~\ref{prop:hom-invariants}(1), with $V$, $W$ in place of $W$, $W'$: there the action is written $(g \cdot A)(w) = g\,A(g^{-1}w)$, which is $\big(\rho_W(g) \circ A \circ \rho_V(g^{-1})\big)(w)$. In the present notation the check of the action axioms reads as follows. Since $\rho_V(e) = \mathrm{id}_V$ and $\rho_W(e) = \mathrm{id}_W$, $e \ast \alpha = \alpha$. Since $\rho_V$ and $\rho_W$ are homomorphisms (Proposition~\ref{prop:representations-homomorphisms-glv}),
-\[ g \ast (h \ast \alpha) = \rho_W(g)\,\rho_W(h) \circ \alpha \circ \rho_V(h^{-1})\,\rho_V(g^{-1}) = \rho_W(gh) \circ \alpha \circ \rho_V\big((gh)^{-1}\big) = (gh) \ast \alpha. \]
-Each map $\alpha \mapsto g \ast \alpha$ is linear, because composition with a fixed linear map on either side is linear in $\alpha$.
+\textit{Idea:} In the permutation formula for the determinant, every permutation other than the identity uses at least two off-diagonal entries of $I + tA$, each of which is a multiple of $t$.\par
+\textit{(Not from class; filled in.)} Write $B = I + tA$. Its entries are polynomials in $t$: $B_{ii} = 1 + tA_{ii}$, and $B_{ij} = tA_{ij}$ for $i \neq j$. By the permutation formula for the determinant (a standard fact of linear algebra; Axler, Ch.~9),
+\[ \det B = \sum_{\sigma \in S_n} \sgn(\sigma) \prod_{i=1}^n B_{i\sigma(i)}. \]
+\emph{The terms with $\sigma \neq e$.} Such a $\sigma$ moves at least two indices: if $\sigma(i) = j \neq i$, then $\sigma(j) \neq j$, because $\sigma$ is injective and $j$ is already the image of $i$. So the product $\prod_i B_{i\sigma(i)}$ contains at least two off-diagonal entries, each a multiple of $t$, and the term is divisible by $t^2$.
+
+\emph{The term with $\sigma = e$.} It is
+\[ \prod_{i=1}^n (1 + tA_{ii}) = 1 + t\sum_{i=1}^n A_{ii} + (\text{terms divisible by } t^2). \]
+Adding up gives the formula. Over $\mathbb{R}$, the derivative at $t = 0$ of a polynomial $1 + c_1t + c_2t^2 + \cdots$ is $c_1$.
 \end{proof}
 
-\begin{defbox}[{$\operatorname{Hom}_G(V, W)$}]\label{def:hom-g}
-Let $V$ and $W$ be representations of $G$. The set of homomorphisms of $G$-representations $V \to W$ (Definition~\ref{def:homomorphism-representations}), that is, of linear maps $\alpha: V \to W$ with $\alpha \circ \rho_V(g) = \rho_W(g) \circ \alpha$ for all $g \in G$, is written $\operatorname{Hom}_G(V, W)$.
-\srcline{WS 16}
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+\draw[->, black!55, thin] (-0.3,0) -- (5.25,0);
+\draw[->, black!55, thin] (0,-0.3) -- (0,4.50);
+\fill[blue!70!black!12] (0,0) -- (3.750,0.225) -- (4.125,3.675) -- (0.375,3.450) -- cycle;
+\draw[black!55, dashed] (0,0) rectangle (3.0,3.0);
+\draw[blue!70!black, thick] (0,0) -- (3.750,0.225) -- (4.125,3.675) -- (0.375,3.450) -- cycle;
+\draw[->, very thick, blue!70!black] (0,0) -- (3.750,0.225) node[above right=-1pt] {$(I + tA)e_1$};
+\draw[->, very thick, blue!70!black] (0,0) -- (0.375,3.450) node[above=1pt] {$(I + tA)e_2$};
+\node[black!55] at (1.50,1.50) {unit square, area $1$};
+\draw[<->, orange!85!black] (3.00,-0.22) -- (3.750,-0.22) node[midway, below] {$ta_{11}$};
+\draw[<->, orange!85!black] (-0.22,3.00) -- (-0.22,3.450) node[midway, left] {$ta_{22}$};
+\node[align=left, anchor=west] at (5.85,3.15) {$A = \begin{pmatrix} 1 & 0.5 \\ 0.3 & 0.6 \end{pmatrix}$, \ $t = \tfrac14$};
+\node[align=left, anchor=west, blue!70!black] at (5.85,2.16) {area of the image $= \det(I + tA)$\\$= 1 + t\operatorname{Tr}A + t^2\det A$};
+\node[align=left, anchor=west] at (5.85,1.14) {$= 1 + 0.4 + 0.028125 = 1.428125$};
+\node[align=left, anchor=west, orange!85!black] at (5.85,0.36) {first order in $t$: only the stretches\\$ta_{11}$ and $ta_{22}$ of the two sides};
+\node[align=left, anchor=west, blue!70!black] at (5.85,4.25) {$(I + tA)e_1 = (1 + ta_{11},\ ta_{21})$\\$(I + tA)e_2 = (ta_{12},\ 1 + ta_{22})$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Proposition~\ref{prop:trace-det-coefficient} for $n = 2$ over $\mathbb{R}$, where $\det(I + tA) = (1 + ta_{11})(1 + ta_{22}) - t^2a_{12}a_{21} = 1 + t\operatorname{Tr}A + t^2\det A$ is the area of the image of the unit square under $I + tA$ (for small $t$). To first order in $t$ the area changes only through the stretches $ta_{11}$ and $ta_{22}$ of the two sides; the off-diagonal entries tilt the sides and change the area only at order $t^2$. For the matrix shown and $t = \frac14$: $1 + 0.4 + 0.028125 = 1.428125$.
+%% <<< END ADDED
+
+\begin{propbox}[{The Trace Is the Only Linear Function That Vanishes on All $AB - BA$}]\label{prop:trace-unique}
+Let $n \geq 1$, and let $E_{ij}$ be the $n \times n$ matrix with the entry $1$ in position $(i, j)$ and $0$ elsewhere (a \emph{matrix unit}).
+\begin{enumerate}
+    \item The trace is a linear function from the $n \times n$ matrices over $k$ to $k$ with $\operatorname{Tr}(AB - BA) = 0$ for all $A$, $B$, and $\operatorname{Tr}(E_{11}) = 1$.
+    \item It is the only one: if $f$ is a linear function from the $n \times n$ matrices to $k$ with $f(AB - BA) = 0$ for all $A$, $B$ and $f(E_{11}) = 1$, then $f = \operatorname{Tr}$.
+\end{enumerate}
+\srcline{lecture 11/11 (stated)}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} Every off-diagonal matrix unit, and every difference $E_{ii} - E_{jj}$, is of the form $AB - BA$.\par
+\textit{(Not from class; filled in.)} \textbf{(1)} The trace is linear, because the diagonal entries of $aA + bB$ are $aA_{ii} + bB_{ii}$. $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ is Proposition~\ref{prop:trace-ab-ba}, and $E_{11}$ has the single diagonal entry $1$.
+
+\textbf{(2)} The matrix units multiply by the rule $E_{ij}E_{kl} = E_{il}$ if $j = k$, and $E_{ij}E_{kl} = 0$ if $j \neq k$: the $(a, b)$ entry of the product is $\sum_c (E_{ij})_{ac}(E_{kl})_{cb}$, and the only possibly nonzero summand has $a = i$, $c = j = k$, $b = l$.
+
+\emph{Off-diagonal units.} For $i \neq j$, $E_{ii}E_{ij} = E_{ij}$ and $E_{ij}E_{ii} = 0$, so $E_{ij} = E_{ii}E_{ij} - E_{ij}E_{ii}$ and $f(E_{ij}) = 0$.
+
+\emph{Diagonal units.} For $i \neq j$, $E_{ij}E_{ji} = E_{ii}$ and $E_{ji}E_{ij} = E_{jj}$, so $E_{ii} - E_{jj} = E_{ij}E_{ji} - E_{ji}E_{ij}$ and $f(E_{ii}) = f(E_{jj})$. Hence $f(E_{ii}) = f(E_{11}) = 1$ for every $i$.
+
+\emph{Conclusion.} Every matrix is $A = \sum_{i,j} A_{ij}E_{ij}$, so by linearity $f(A) = \sum_{i,j} A_{ij}f(E_{ij}) = \sum_i A_{ii} = \operatorname{Tr}(A)$.
+\end{proof}
+
+\subsection{\texorpdfstring{The Representation $\operatorname{Hom}(V, W)$}{The Representation Hom(V, W)}}\label{sub:hom-representation}
+
+\begin{defbox}[{The Representation $\operatorname{Hom}(V, W)$}]\label{def:hom-representation}
+Let $V$ and $W$ be vector spaces over the same field $k$, and let $\operatorname{Hom}(V, W)$ be the vector space of linear maps $\alpha: V \to W$. If $V$ and $W$ are representations of a group $G$, set, for $g \in G$ and $\alpha \in \operatorname{Hom}(V, W)$,
+\[ g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1}). \]
+\srcline{WS 16; lecture 11/11}
 \end{defbox}
 
-By Proposition~\ref{prop:hom-invariants}(2), $\operatorname{Hom}_G(V, W)$ is the space of invariant vectors $\operatorname{Hom}(V, W)^G$ of the representation of Definition~\ref{def:hom-representation}. In particular it is a subspace of $\operatorname{Hom}(V, W)$ (Lemma~\ref{lem:invariants-subrepresentation}).
+If $V$ and $W$ are finite-dimensional, then in bases of $V$ and $W$ a linear map $\alpha: V \to W$ is a $(\dim W) \times (\dim V)$ matrix, so $\dim \operatorname{Hom}(V, W) = \dim V \cdot \dim W$ \textit{(board 11/11)}.
 
-\begin{lembox}[{The Trace of $\alpha \mapsto S \circ \alpha \circ R$}]\label{lem:trace-sandwich}
-Let $V$ and $W$ be finite-dimensional vector spaces over $k$, and let $R: V \to V$ and $S: W \to W$ be linear. The map
-\[ T: \operatorname{Hom}(V, W) \to \operatorname{Hom}(V, W), \qquad T(\alpha) = S \circ \alpha \circ R, \]
-is linear, and $\operatorname{Tr}(T) = \operatorname{Tr}(S)\operatorname{Tr}(R)$.
-\srcline{not from class; the computation behind WS 16.2}
+\textbf{Transcription note.} Worksheet 16 prints $g \ast \alpha = \rho_V(g) \circ \alpha \circ \rho_W(g^{-1})$. For $\alpha: V \to W$ these maps cannot be composed unless $V = W$: $\rho_W(g^{-1})$ acts on $W$, but $\alpha$ is defined on $V$. With $V$ and $W$ exchanged, as in Definition~\ref{def:hom-representation}, the composition makes sense, and the invariant maps are the $\alpha$ with $\alpha \circ \rho_V = \rho_W \circ \alpha$, as the worksheet says next and as the board of 11/11 has it. The exchange also affects WS 16.2 (Proposition~\ref{prop:character-hom}) but not the worksheet's theorem (Theorem~\ref{thm:dim-hom-g}). The handwritten notes of 11/11 write $\operatorname{Hom}_G(V, W) = \{\alpha: U \to V \mid \ldots\}$; $\alpha: V \to W$ is meant.
+
+\begin{defbox}[{$\operatorname{Hom}_G(V, W)$}]\label{def:hom-g}
+Let $V$ and $W$ be representations of $G$. The set of homomorphisms of $G$-representations $V \to W$ (Definition~\ref{def:homomorphism-representations}), that is, of linear maps $\alpha: V \to W$ with
+\[ \alpha\big(\rho_V(g)(v)\big) = \rho_W(g)\big(\alpha(v)\big) \qquad \text{for all } g \in G \text{ and } v \in V, \]
+is written $\operatorname{Hom}_G(V, W)$.
+\srcline{WS 16; board 11/11}
+\end{defbox}
+
+\begin{center}
+\begin{tikzcd}[column sep=large, row sep=large]
+V \arrow[r, "\alpha"] \arrow[d, "\rho_V(g)"'] & W \arrow[d, "\rho_W(g)"] \\
+V \arrow[r, "\alpha"'] & W
+\end{tikzcd}
+\end{center}
+\textit{(Board 11/11.)} The condition of Definition~\ref{def:hom-g}: for every $g \in G$ the square commutes, that is, applying $g$ and then $\alpha$ gives the same as applying $\alpha$ and then $g$.
+
+\begin{propbox}[{$\operatorname{Hom}(V, W)$ Is a Representation; Its Invariants}]\label{prop:hom-is-representation}
+Let $V$ and $W$ be representations of $G$.
+\begin{enumerate}
+    \item The rule of Definition~\ref{def:hom-representation} is an action of $G$ on $\operatorname{Hom}(V, W)$ by linear maps. So $\operatorname{Hom}(V, W)$ is a representation of $G$.
+    \item Its invariant vectors are exactly the homomorphisms of $G$-representations: $\operatorname{Hom}(V, W)^G = \operatorname{Hom}_G(V, W)$.
+\end{enumerate}
+\srcline{WS 16.1; worksheet session 11/11}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} The action axioms hold because $\rho_V$ and $\rho_W$ are homomorphisms; and $g \ast \alpha = \alpha$ rearranges to $\rho_W(g) \circ \alpha = \alpha \circ \rho_V(g)$.\par
+\textit{(Worksheet session 11/11.)} \textbf{(1)} Since $\rho_V(e) = \mathrm{id}_V$ and $\rho_W(e) = \mathrm{id}_W$, $e \ast \alpha = \mathrm{id}_W \circ \alpha \circ \mathrm{id}_V = \alpha$. Since $\rho_V$ and $\rho_W$ are homomorphisms (Proposition~\ref{prop:representations-homomorphisms-glv}) and $(gh)^{-1} = h^{-1}g^{-1}$,
+\[ (gh) \ast \alpha = \rho_W(g)\,\rho_W(h) \circ \alpha \circ \rho_V(h^{-1})\,\rho_V(g^{-1}) = g \ast (h \ast \alpha). \]
+Each map $\alpha \mapsto g \ast \alpha$ is linear, because composition is linear in the middle factor.
+
+\textbf{(2)} Since $\rho_V(g^{-1}) = \rho_V(g)^{-1}$, the equation $g \ast \alpha = \alpha$ reads $\rho_W(g) \circ \alpha \circ \rho_V(g)^{-1} = \alpha$. Composing on the right with $\rho_V(g)$, it is equivalent to $\rho_W(g) \circ \alpha = \alpha \circ \rho_V(g)$. This holds for all $g \in G$ exactly when $\alpha \in \operatorname{Hom}_G(V, W)$ (Definition~\ref{def:hom-g}).
+\end{proof}
+
+Written as $(g \cdot A)(w) = g\,A(g^{-1}w)$, this is Proposition~\ref{prop:hom-invariants}(1) and (2), with $V$, $W$ in place of $W$, $W'$. In particular $\operatorname{Hom}_G(V, W)$ is a subspace of $\operatorname{Hom}(V, W)$ (Lemma~\ref{lem:invariants-subrepresentation}).
+
+\subsection{\texorpdfstring{The Character of $\operatorname{Hom}(V, W)$ and the Dimension Formula}{The Character of Hom(V, W) and the Dimension Formula}}\label{sub:character-hom}
+
+\begin{lembox}[{The Trace of $X \mapsto RXS$}]\label{lem:trace-sandwich}
+Let $R$ be an $m \times m$ matrix and $S$ an $n \times n$ matrix over $k$, and let
+\[ L(X) = RXS \]
+on the space of $m \times n$ matrices $X$ over $k$. Then $L$ is linear, and $\operatorname{Tr}(L) = \operatorname{Tr}(R)\operatorname{Tr}(S)$.
+\srcline{WS 16.2, the computation; board 11/11}
 \end{lembox}
 
 \begin{proof}
-\textit{Idea:} In the basis of matrix units $E_{ij}$, the coefficient of $E_{ij}$ in $S E_{ij} R$ is $S_{ii}R_{jj}$, and the sum of these over all $i, j$ factors.\par
-\textit{(Filled in, following the worksheet's hint to name the matrices.)} $T$ is linear, since composition with fixed linear maps is linear in $\alpha$. Choose a basis $v_1, \ldots, v_n$ of $V$ and a basis $w_1, \ldots, w_m$ of $W$. Sending a linear map to its matrix in these bases identifies $\operatorname{Hom}(V, W)$ with the space of $m \times n$ matrices, and composition of maps becomes the product of matrices (Axler, Ch.~3). Write $R = (R_{jl})$, an $n \times n$ matrix, and $S = (S_{ki})$, an $m \times m$ matrix. Then $T$ becomes $X \mapsto SXR$ on $m \times n$ matrices.
-
-A basis of the $m \times n$ matrices is given by the matrix units $E_{ij}$, $1 \leq i \leq m$, $1 \leq j \leq n$, where $E_{ij}$ has the entry $1$ in position $(i, j)$ and $0$ elsewhere; every matrix $X$ is $\sum_{i,j} X_{ij}E_{ij}$, so the coefficient of $E_{ij}$ in $X$ is the entry $X_{ij}$. The $(k, l)$ entry of $SE_{ij}R$ is
-\[ (SE_{ij}R)_{kl} = \sum_{a, b} S_{ka}\,(E_{ij})_{ab}\,R_{bl} = S_{ki}R_{jl}, \]
-because $(E_{ij})_{ab}$ is $1$ for $(a, b) = (i, j)$ and $0$ otherwise. The diagonal entry of the matrix of $T$ at the basis vector $E_{ij}$ is the coefficient of $E_{ij}$ in $T(E_{ij}) = SE_{ij}R$, that is, its $(i, j)$ entry $S_{ii}R_{jj}$. The trace of $T$ is the sum of these diagonal entries (Definition~\ref{def:trace-linear-map}):
-\[ \operatorname{Tr}(T) = \sum_{i=1}^m \sum_{j=1}^n S_{ii}R_{jj} = \Big(\sum_{i=1}^m S_{ii}\Big)\Big(\sum_{j=1}^n R_{jj}\Big) = \operatorname{Tr}(S)\operatorname{Tr}(R). \]
+\textit{Idea:} With the entries of $X$ as coordinates, the matrix of $L$ has the entry $R_{i'i}S_{jj'}$ in row $(i', j')$ and column $(i, j)$; its diagonal entries $R_{ii}S_{jj}$ add up to a product of two sums.\par
+\textit{(Board 11/11, following the worksheet's hint to name the matrices.)} $L$ is linear, because the matrix product is linear in the middle factor. The entries of $RXS$ are
+\[ (RXS)_{i'j'} = \sum_{i=1}^m \sum_{j=1}^n R_{i'i}\,X_{ij}\,S_{jj'}. \]
+A basis of the $m \times n$ matrices is given by the matrix units $E_{ij}$, $1 \leq i \leq m$, $1 \leq j \leq n$ (the entry $1$ in position $(i, j)$ and $0$ elsewhere). Since $X = \sum_{i,j} X_{ij}E_{ij}$, the coordinates of $X$ in this basis are its $mn$ entries, written as a column $X_{11}, X_{12}, \ldots, X_{mn}$. In these coordinates the displayed formula says that the matrix of $L$, an $mn \times mn$ matrix, has the entry
+\[ R_{i'i}\,S_{jj'} \qquad \text{in row (output) } (i', j') \text{ and column (input) } (i, j). \]
+Its diagonal entries are those with $(i', j') = (i, j)$, namely $R_{ii}S_{jj}$. The trace of $L$ is their sum (Definition~\ref{def:trace-linear-map}):
+\[ \operatorname{Tr}(L) = \sum_{i=1}^m \sum_{j=1}^n R_{ii}S_{jj} = \Big(\sum_{i=1}^m R_{ii}\Big)\Big(\sum_{j=1}^n S_{jj}\Big) = \operatorname{Tr}(R)\operatorname{Tr}(S). \]
 \end{proof}
+
+\begin{exbox}[{The Case $m = 2$ and $n = 3$}]\label{ex:rxs-2-3}
+The board's example:
+\[ \begin{pmatrix} R_{11} & R_{12} \\ R_{21} & R_{22} \end{pmatrix} \begin{pmatrix} X_{11} & X_{12} & X_{13} \\ X_{21} & X_{22} & X_{23} \end{pmatrix} \begin{pmatrix} S_{11} & S_{12} & S_{13} \\ S_{21} & S_{22} & S_{23} \\ S_{31} & S_{32} & S_{33} \end{pmatrix}. \]
+With $X$ written as the column $(X_{11}, X_{12}, X_{13}, X_{21}, X_{22}, X_{23})$, the map $X \mapsto RXS$ is a $6 \times 6$ matrix. Its first row gives the entry $(RXS)_{11}$:
+\[ (RXS)_{11} = R_{11}S_{11}X_{11} + R_{11}S_{21}X_{12} + R_{11}S_{31}X_{13} + R_{12}S_{11}X_{21} + R_{12}S_{21}X_{22} + R_{12}S_{31}X_{23}. \]
+The six diagonal entries are $R_{11}S_{11}$, $R_{11}S_{22}$, $R_{11}S_{33}$, $R_{22}S_{11}$, $R_{22}S_{22}$, $R_{22}S_{33}$, with sum $(R_{11} + R_{22})(S_{11} + S_{22} + S_{33})$.
+\srcline{board 11/11}
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[font=\scriptsize]
+\fill[red!70!black!18] (0.000,0.000) rectangle (1.550,-0.620);
+\node[red!70!black] at (0.775,-0.310) {$R_{11}S_{11}$};
+\node[black] at (2.325,-0.310) {$R_{11}S_{21}$};
+\node[black] at (3.875,-0.310) {$R_{11}S_{31}$};
+\node[black] at (5.425,-0.310) {$R_{12}S_{11}$};
+\node[black] at (6.975,-0.310) {$R_{12}S_{21}$};
+\node[black] at (8.525,-0.310) {$R_{12}S_{31}$};
+\node[black] at (0.775,-0.930) {$R_{11}S_{12}$};
+\fill[red!70!black!18] (1.550,-0.620) rectangle (3.100,-1.240);
+\node[red!70!black] at (2.325,-0.930) {$R_{11}S_{22}$};
+\node[black] at (3.875,-0.930) {$R_{11}S_{32}$};
+\node[black] at (5.425,-0.930) {$R_{12}S_{12}$};
+\node[black] at (6.975,-0.930) {$R_{12}S_{22}$};
+\node[black] at (8.525,-0.930) {$R_{12}S_{32}$};
+\node[black] at (0.775,-1.550) {$R_{11}S_{13}$};
+\node[black] at (2.325,-1.550) {$R_{11}S_{23}$};
+\fill[red!70!black!18] (3.100,-1.240) rectangle (4.650,-1.860);
+\node[red!70!black] at (3.875,-1.550) {$R_{11}S_{33}$};
+\node[black] at (5.425,-1.550) {$R_{12}S_{13}$};
+\node[black] at (6.975,-1.550) {$R_{12}S_{23}$};
+\node[black] at (8.525,-1.550) {$R_{12}S_{33}$};
+\node[black] at (0.775,-2.170) {$R_{21}S_{11}$};
+\node[black] at (2.325,-2.170) {$R_{21}S_{21}$};
+\node[black] at (3.875,-2.170) {$R_{21}S_{31}$};
+\fill[red!70!black!18] (4.650,-1.860) rectangle (6.200,-2.480);
+\node[red!70!black] at (5.425,-2.170) {$R_{22}S_{11}$};
+\node[black] at (6.975,-2.170) {$R_{22}S_{21}$};
+\node[black] at (8.525,-2.170) {$R_{22}S_{31}$};
+\node[black] at (0.775,-2.790) {$R_{21}S_{12}$};
+\node[black] at (2.325,-2.790) {$R_{21}S_{22}$};
+\node[black] at (3.875,-2.790) {$R_{21}S_{32}$};
+\node[black] at (5.425,-2.790) {$R_{22}S_{12}$};
+\fill[red!70!black!18] (6.200,-2.480) rectangle (7.750,-3.100);
+\node[red!70!black] at (6.975,-2.790) {$R_{22}S_{22}$};
+\node[black] at (8.525,-2.790) {$R_{22}S_{32}$};
+\node[black] at (0.775,-3.410) {$R_{21}S_{13}$};
+\node[black] at (2.325,-3.410) {$R_{21}S_{23}$};
+\node[black] at (3.875,-3.410) {$R_{21}S_{33}$};
+\node[black] at (5.425,-3.410) {$R_{22}S_{13}$};
+\node[black] at (6.975,-3.410) {$R_{22}S_{23}$};
+\fill[red!70!black!18] (7.750,-3.100) rectangle (9.300,-3.720);
+\node[red!70!black] at (8.525,-3.410) {$R_{22}S_{33}$};
+\draw[blue!70!black, thick] (0.000,0.000) rectangle (4.650,-1.860);
+\node[blue!70!black, font=\scriptsize, anchor=south] at (2.325,0.420) {};
+\draw[blue!70!black, thick] (4.650,0.000) rectangle (9.300,-1.860);
+\node[blue!70!black, font=\scriptsize, anchor=south] at (6.975,0.420) {};
+\draw[blue!70!black, thick] (0.000,-1.860) rectangle (4.650,-3.720);
+\node[blue!70!black, font=\scriptsize, anchor=south] at (2.325,-4.340) {};
+\draw[blue!70!black, thick] (4.650,-1.860) rectangle (9.300,-3.720);
+\node[blue!70!black, font=\scriptsize, anchor=south] at (6.975,-4.340) {};
+\node[black!55] at (0.775,0.28) {$X_{11}$};
+\node[black!55] at (2.325,0.28) {$X_{12}$};
+\node[black!55] at (3.875,0.28) {$X_{13}$};
+\node[black!55] at (5.425,0.28) {$X_{21}$};
+\node[black!55] at (6.975,0.28) {$X_{22}$};
+\node[black!55] at (8.525,0.28) {$X_{23}$};
+\node[black!55, anchor=east] at (-0.12,-0.310) {$(RXS)_{11}$};
+\node[black!55, anchor=east] at (-0.12,-0.930) {$(RXS)_{12}$};
+\node[black!55, anchor=east] at (-0.12,-1.550) {$(RXS)_{13}$};
+\node[black!55, anchor=east] at (-0.12,-2.170) {$(RXS)_{21}$};
+\node[black!55, anchor=east] at (-0.12,-2.790) {$(RXS)_{22}$};
+\node[black!55, anchor=east] at (-0.12,-3.410) {$(RXS)_{23}$};
+\node[black!55, anchor=south] at (4.650,0.55) {input: the entry of $X$};
+\node[black!55, rotate=90, anchor=south] at (-1.45,-1.860) {output: the entry of $RXS$};
+\node[blue!70!black, anchor=north] at (2.325,-3.800) {block $R_{i'1}\,S^{T}$};
+\node[blue!70!black, anchor=north] at (6.975,-3.800) {block $R_{i'2}\,S^{T}$};
+\node[red!70!black, anchor=west] at (9.550,-1.860) {$\begin{aligned}\text{diagonal: }&R_{ii}S_{jj}\\ \text{sum }&= \operatorname{Tr}R \cdot \operatorname{Tr}S\end{aligned}$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added. The board wrote the first row.)} The whole $6 \times 6$ matrix of $X \mapsto RXS$ in Example~\ref{ex:rxs-2-3}. Columns are indexed by the entries of $X$ (inputs), rows by the entries of $RXS$ (outputs). The matrix consists of four $3 \times 3$ blocks $R_{i'i}\,S^T$, one for each entry of $R$. The diagonal entries (red) are the products $R_{ii}S_{jj}$.
+%% <<< END ADDED
+
+\begin{rembox}[{Matrices of Compositions}]\label{rem:matrices-of-compositions}
+The bookkeeping in Lemma~\ref{lem:trace-sandwich} uses the convention that the matrix of a linear map has one row for each output coordinate and one column for each input coordinate. For $\mathbb{R}^I \xrightarrow{A} \mathbb{R}^J \xrightarrow{B} \mathbb{R}^K$ the composite has the entries
+\[ (B \circ A)_{ki} = \sum_{j} B_{kj}A_{ji}, \]
+a sum over the index in the middle. The entry formula for $RXS$ is this rule applied twice.
+\srcline{lecture 11/11}
+\end{rembox}
 
 \begin{propbox}[{The Character of $\operatorname{Hom}(V, W)$}]\label{prop:character-hom}
 Let $V$ and $W$ be finite-dimensional representations of $G$ over $k$. Then for every $g \in G$
 \[ \chi_{\operatorname{Hom}(V, W)}(g) = \operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = \big(\operatorname{Tr}\rho_W(g)\big)\big(\operatorname{Tr}\rho_V(g^{-1})\big) = \chi_W(g)\,\chi_V(g^{-1}). \]
-\srcline{WS 16.2, with $V$ and $W$ exchanged (see the transcription note above)}
+\srcline{WS 16.2, with $V$ and $W$ exchanged (see the transcription note above); board 11/11}
 \end{propbox}
 
 \begin{proof}
-\textit{(Filled in.)} By Definition~\ref{def:hom-representation}, $\rho_{\operatorname{Hom}(V, W)}(g)$ is the map $\alpha \mapsto S \circ \alpha \circ R$ with $S = \rho_W(g)$ and $R = \rho_V(g^{-1})$. By Lemma~\ref{lem:trace-sandwich} its trace is $\operatorname{Tr}(S)\operatorname{Tr}(R) = \chi_W(g)\,\chi_V(g^{-1})$ (Definition~\ref{def:character-representation}).
+\textit{(Board 11/11.)} Choose a basis of $V$ and a basis of $W$, and let $n = \dim V$, $m = \dim W$. Then a linear map $\alpha: V \to W$ is an $m \times n$ matrix $X$, and composition of maps is the product of matrices (the remark \emph{Matrices of Compositions}). So $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$ is the matrix $RXS$, with $R$ the matrix of $\rho_W(g)$ and $S$ the matrix of $\rho_V(g^{-1})$. By Lemma~\ref{lem:trace-sandwich}, the trace of $\alpha \mapsto g \ast \alpha$ is $\operatorname{Tr}(R)\operatorname{Tr}(S) = \chi_W(g)\,\chi_V(g^{-1})$ (Definition~\ref{def:character-representation}).
 \end{proof}
 
 Worksheet 16.2 prints $\operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = (\operatorname{Tr}\rho_V(g))(\operatorname{Tr}\rho_W(g^{-1}))$, which is the formula for the action as the worksheet prints it. The two versions differ by replacing $g$ with $g^{-1}$, and they have the same sum over $G$. So the theorem holds as printed.
 
 \begin{thmbox}[{Dimension of $\operatorname{Hom}_G(V, W)$}]\label{thm:dim-hom-g}
 Let $k$ be a field containing $\mathbb{Q}$, let $G$ be a finite group, and let $V$ and $W$ be finite-dimensional representations of $G$ over $k$, with characters $\chi_V$ and $\chi_W$. Then
-\[ \dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_{g \in G} \chi_V(g)\,\chi_W(g^{-1}). \]
-\srcline{WS 16, theorem}
+\[ \dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_{g \in G} \chi_V(g^{-1})\,\chi_W(g) = \frac{1}{|G|}\sum_{g \in G} \chi_V(g)\,\chi_W(g^{-1}). \]
+The first form is the board's, the second the worksheet's.
+\srcline{WS 16, theorem; lecture 11/11}
 \end{thmbox}
 
 \begin{proof}
 \textit{Idea:} $\operatorname{Hom}_G(V, W)$ is the space of invariant vectors of $\operatorname{Hom}(V, W)$, whose dimension is the average of the character of $\operatorname{Hom}(V, W)$.\par
-\textit{(Filled in, along the worksheet's outline.)} $\operatorname{Hom}(V, W)$ is a finite-dimensional representation of $G$ (Proposition~\ref{prop:hom-is-representation}; its dimension is $\dim V \cdot \dim W$, the number of matrix units in the proof of Lemma~\ref{lem:trace-sandwich}), and $\operatorname{Hom}_G(V, W) = \operatorname{Hom}(V, W)^G$ (Proposition~\ref{prop:hom-invariants}(2)). By Dimension of the Invariants (Theorem~\ref{thm:dim-invariants-character}) and Proposition~\ref{prop:character-hom},
-\[ \dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_{g \in G} \chi_{\operatorname{Hom}(V, W)}(g) = \frac{1}{|G|}\sum_{g \in G} \chi_W(g)\,\chi_V(g^{-1}). \]
-Inversion $g \mapsto g^{-1}$ is a bijection of $G$, so the sum does not change when $g$ is replaced by $g^{-1}$ in every term:
-\[ \frac{1}{|G|}\sum_{g \in G} \chi_W(g)\,\chi_V(g^{-1}) = \frac{1}{|G|}\sum_{g \in G} \chi_W(g^{-1})\,\chi_V(g). \]
+\textit{(Lecture 11/11; the last step written out.)} $\operatorname{Hom}(V, W)$ is a representation of $G$ of finite dimension $\dim V \cdot \dim W$, and $\operatorname{Hom}_G(V, W) = \operatorname{Hom}(V, W)^G$ (WS 16.1, Proposition~\ref{prop:hom-is-representation}). By Dimension of the Invariants (WS 15.6, Theorem~\ref{thm:dim-invariants-character}) and WS 16.2 (Proposition~\ref{prop:character-hom}),
+\[ \dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_{g \in G} \chi_{\operatorname{Hom}(V, W)}(g) = \frac{1}{|G|}\sum_{g \in G} \chi_W(g)\,\chi_V(g^{-1}), \]
+which is the first form. Inversion $g \mapsto g^{-1}$ is a bijection of $G$, so the sum does not change when $g$ is replaced by $g^{-1}$ in every term; this gives the second form.
 \end{proof}
 
 \begin{corbox}[{Homomorphisms in Both Directions}]\label{cor:hom-g-symmetric}
@@ -10904,14 +11085,35 @@ In the setting of Theorem~\ref{thm:dim-hom-g}, $\dim \operatorname{Hom}_G(V, W) 
 \end{corbox}
 
 \begin{proof}
-\textit{(Not from class.)} By Theorem~\ref{thm:dim-hom-g} for the pair $(W, V)$, $\dim \operatorname{Hom}_G(W, V) = \frac{1}{|G|}\sum_{g} \chi_W(g)\,\chi_V(g^{-1})$. The last display of the proof of Theorem~\ref{thm:dim-hom-g} shows that this equals $\frac{1}{|G|}\sum_{g} \chi_V(g)\,\chi_W(g^{-1}) = \dim \operatorname{Hom}_G(V, W)$.
+\textit{(Not from class.)} By the first form of Theorem~\ref{thm:dim-hom-g} for the pair $(W, V)$, $\dim \operatorname{Hom}_G(W, V) = \frac{1}{|G|}\sum_{g} \chi_W(g^{-1})\,\chi_V(g)$. This is the second form of $\dim \operatorname{Hom}_G(V, W)$.
 \end{proof}
+
+\begin{exbox}[{$\operatorname{Hom}_G$ for $S_3$}]\label{ex:hom-g-s3}
+\textit{(Not from class.)} Over $\mathbb{R}$, take the characters of $S_3$ from Example~\ref{ex:characters-s3}, as values on the classes of $e$, $(1\,2)$, $(1\,2\,3)$, of sizes $1$, $3$, $2$: trivial $(1, 1, 1)$, sign $(1, -1, 1)$, $U = (1,1,1)^\perp$ with $(2, 0, -1)$, and $\mathbb{R}^3$ with $(3, 1, 0)$. In $S_3$ the inverse $g^{-1}$ has the same cycle type as $g$, so it is conjugate to $g$ (Theorem~\ref{thm:conjugacy-classes-sn-cycle-types}), and $\chi(g^{-1}) = \chi(g)$ for every character (Proposition~\ref{prop:character-class-function}(2)). A sum over $G$ of a function that is constant on conjugacy classes is the sum over the classes of (class size) $\times$ (value). So Theorem~\ref{thm:dim-hom-g} gives $\dim\operatorname{Hom}_{S_3}(V, W) = \frac16\big(\chi_V(e)\chi_W(e) + 3\,\chi_V((1\,2))\chi_W((1\,2)) + 2\,\chi_V((1\,2\,3))\chi_W((1\,2\,3))\big)$:
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{l|cccc}
+$\dim\operatorname{Hom}_{S_3}(V, W)$ & triv & sign & $U$ & $\mathbb{R}^3$ \\ \hline
+triv & $1$ & $0$ & $0$ & $1$ \\
+sign & $0$ & $1$ & $0$ & $0$ \\
+$U$ & $0$ & $0$ & $1$ & $1$ \\
+$\mathbb{R}^3$ & $1$ & $0$ & $1$ & $2$
+\end{tabular}
+\end{center}
+\begin{enumerate}
+    \item $\dim \operatorname{Hom}_{S_3}(U, U) = \frac16(2 \cdot 2 + 3 \cdot 0 \cdot 0 + 2 \cdot (-1)(-1)) = 1$. The homomorphisms $U \to U$ are the multiples of the identity.
+    \item $\dim \operatorname{Hom}_{S_3}(\mathrm{triv}, U) = \frac16(1 \cdot 2 + 3 \cdot 1 \cdot 0 + 2 \cdot 1 \cdot (-1)) = 0$, and $\dim \operatorname{Hom}_{S_3}(\mathrm{triv}, \mathrm{sign}) = \frac16(1 - 3 + 2) = 0$: the only homomorphism is $0$.
+    \item $\dim \operatorname{Hom}_{S_3}(\mathbb{R}^3, \mathbb{R}^3) = \frac16(3 \cdot 3 + 3 \cdot 1 \cdot 1 + 2 \cdot 0 \cdot 0) = 2$. Two independent homomorphisms are the identity and the averaging operator $\pi$ of Example~\ref{ex:invariants-s3}, whose matrix is $\frac13$ times the all-ones matrix; $\pi$ commutes with every $\rho(g)$ (the proof of Corollary~\ref{cor:invariants-split-off}) and is not a multiple of the identity.
+    \item The row of $\mathbb{R}^3$ is the sum of the rows of triv and $U$, because $\chi_{\mathbb{R}^3} = \chi_{\mathrm{triv}} + \chi_U$ (Proposition~\ref{prop:characters-add}) and the formula is additive in $\chi_V$.
+\end{enumerate}
+\srcline{not from class; the table checked by computer}
+\end{exbox}
 
 \subsection{\texorpdfstring{Characters at $g^{-1}$ over $\mathbb{R}$ and $\mathbb{C}$}{Characters at the Inverse over R and C}}\label{sub:characters-at-inverses}
 
-The formula of Theorem~\ref{thm:dim-hom-g} simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$.
+The formula of Theorem~\ref{thm:dim-hom-g} simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3--16.5 were not reached in the lecture of 11/11; the proofs in this subsection are filled in.
 
-\begin{propbox}[{Characters of Real Representations at Inverses}]\label{prop:character-inverse-real}
+\begin{propbox}[{Real Characters Are Invariant under Inversion}]\label{prop:character-inverse-real}
 Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{R}$. Choose a basis of $V$ in which $G$ acts by orthogonal matrices (Corollary~\ref{cor:orthogonal-matrices}). In this basis, for every $g \in G$,
 \[ \rho_V(g^{-1}) = \rho_V(g)^{-1} = \rho_V(g)^T. \]
 Consequently $\chi_V(g^{-1}) = \chi_V(g)$ for every $g \in G$.
@@ -10927,7 +11129,7 @@ Consequently $\chi_V(g^{-1}) = \chi_V(g)$ for every $g \in G$.
 \[ \chi_V(g^{-1}) = \operatorname{Tr}\rho_V(g^{-1}) = \operatorname{Tr}(M^T) = \operatorname{Tr}(M) = \chi_V(g). \]
 \end{proof}
 
-\begin{propbox}[{Complex Matrices of Finite Order}]\label{prop:finite-order-matrix}
+\begin{propbox}[{Matrices of Finite Order}]\label{prop:finite-order-matrix}
 Let $A$ be an $n \times n$ complex matrix with $A^m = I$ for some positive integer $m$.
 \begin{enumerate}
     \item $A$ is diagonalizable, and every eigenvalue $\lambda$ of $A$ satisfies $\lambda^m = 1$; in particular $|\lambda| = 1$.
@@ -10970,7 +11172,7 @@ Let $A$ be an $n \times n$ complex matrix with $A^m = I$ for some positive integ
 \textit{(Not from lecture; figure added.)} Proposition~\ref{prop:finite-order-matrix} for $A = \operatorname{diag}(\lambda_1, \lambda_2)$ with $\lambda_1 = e^{2\pi i/6}$ and $\lambda_2 = e^{2\pi i \cdot 2/6}$, so that $A^6 = I$. The eigenvalues of a matrix with $A^6 = I$ are among the six marked points of the unit circle. Inverting a point of the unit circle reflects it in the real axis (dashed), which is complex conjugation. So the eigenvalues of $A^{-1}$ (red) are the conjugates of those of $A$ (blue), and the two traces are conjugate: $i\sqrt{3}$ and $-i\sqrt{3}$.
 %% <<< END ADDED
 
-\begin{corbox}[{Characters of Complex Representations at Inverses}]\label{cor:character-inverse-complex}
+\begin{corbox}[{Complex Characters under Inversion}]\label{cor:character-inverse-complex}
 Let $G$ be a finite group and $V$ a finite-dimensional complex representation of $G$. Then for every $g \in G$
 \[ \chi_V(g^{-1}) = \overline{\chi_V(g)}. \]
 \srcline{WS 16.5}
@@ -10997,16 +11199,6 @@ Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations
 \begin{proof}
 \textit{(Filled in.)} Both fields contain $\mathbb{Q}$, so Theorem~\ref{thm:dim-hom-g} applies. Substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition~\ref{prop:character-inverse-real}) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary~\ref{cor:character-inverse-complex}).
 \end{proof}
-
-\begin{exbox}[{Homomorphisms between Representations of $S_3$}]\label{ex:hom-g-s3}
-\textit{(Not from class.)} Over $\mathbb{R}$, take the characters of $S_3$ from Example~\ref{ex:characters-s3}, as values on the classes of $e$, $(1\,2)$, $(1\,2\,3)$, of sizes $1$, $3$, $2$: trivial $(1, 1, 1)$, sign $(1, -1, 1)$, $U = (1,1,1)^\perp$ with $(2, 0, -1)$, and $\mathbb{R}^3$ with $(3, 1, 0)$. A sum over $G$ of a function that is constant on conjugacy classes is the sum over the classes of (class size) $\times$ (value). By Corollary~\ref{cor:dim-hom-g-real-complex}(1):
-\begin{enumerate}
-    \item $\dim \operatorname{Hom}_G(U, U) = \frac16(1 \cdot 4 + 3 \cdot 0 + 2 \cdot 1) = 1$. The homomorphisms $U \to U$ are the multiples of the identity.
-    \item $\dim \operatorname{Hom}_G(\mathrm{triv}, U) = \frac16(1 \cdot 2 + 3 \cdot 0 + 2 \cdot (-1)) = 0$, and $\dim \operatorname{Hom}_G(\mathrm{triv}, \mathrm{sign}) = \frac16(1 - 3 + 2) = 0$: the only homomorphism is $0$.
-    \item $\dim \operatorname{Hom}_G(\mathrm{sign}, \mathrm{sign}) = \frac16(1 + 3 + 2) = 1$.
-    \item $\dim \operatorname{Hom}_G(\mathbb{R}^3, \mathbb{R}^3) = \frac16(1 \cdot 9 + 3 \cdot 1 + 2 \cdot 0) = 2$. Two independent homomorphisms are the identity and the averaging operator $\pi$ of Example~\ref{ex:invariants-s3}, whose matrix is $\frac13$ times the all-ones matrix; $\pi$ commutes with every $\rho(g)$ (the proof of Corollary~\ref{cor:invariants-split-off}) and is not a multiple of the identity.
-\end{enumerate}
-\end{exbox}
 
 
 \appendix
@@ -11042,7 +11234,7 @@ Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations
     \item \textbf{To split off a subrepresentation $U$ (finite $G$, real $W$).} Average any inner product over $G$, $\langle v, w \rangle = \sum_g (gv, gw)$; then $U^\perp$ is a complementary subrepresentation (Corollary~\ref{cor:maschke-real}), and in a basis adapted to $W = U \oplus U^\perp$ all $\rho(g)$ are block diagonal (Proposition~\ref{prop:direct-sum-block-diagonal}). In general this is Maschke's theorem, valid when $|G| \neq 0$ in $k$ (Theorem~\ref{thm:maschke}).
     \item \textbf{To split off a subrepresentation $U$ (finite $G$, $|G| \neq 0$ in $k$).} Take any idempotent $P$ with image $U$ (extend a basis of $U$) and average it, $\pi(w) = \frac{1}{|G|}\sum_h h^{-1}P(hw)$; then $\operatorname{Ker}\pi$ is a complementary subrepresentation (the proof of Theorem~\ref{thm:maschke}). For $U = V^G$ the averaging map $\frac{1}{|G|}\sum_g g$ does it directly (\ref{sec:invariants}).
     \item \textbf{To compute $\dim V^G$ or a character ($G$ finite, $\mathbb{Q} \subseteq k$).} $\dim V^G = \frac{1}{|G|}\sum_g \chi_V(g)$ (Theorem~\ref{thm:dim-invariants-character}). Characters are constant on conjugacy classes and add over direct sums, so a character table needs one column per conjugacy class; for a permutation representation, $\chi(g)$ is the number of fixed points of $g$, and the formula counts orbits (Burnside's Lemma) (\ref{sec:invariants}, \ref{sec:characters-of-representations}).
-    \item \textbf{To count the homomorphisms between two representations ($G$ finite, $\mathbb{Q} \subseteq k$).} $\dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_g \chi_V(g)\chi_W(g^{-1})$ (Theorem~\ref{thm:dim-hom-g}); over $\mathbb{R}$ replace $\chi_W(g^{-1})$ by $\chi_W(g)$, over $\mathbb{C}$ by $\overline{\chi_W(g)}$ (Corollary~\ref{cor:dim-hom-g-real-complex}). Sum over conjugacy classes, weighting each by its size.
+    \item \textbf{To count the homomorphisms between two representations ($G$ finite, $\mathbb{Q} \subseteq k$).} $\operatorname{Hom}_G(V, W)$ is the space of invariant vectors of $\operatorname{Hom}(V, W)$, whose character is $\chi_W(g)\chi_V(g^{-1})$ (the map $X \mapsto RXS$ has trace $\operatorname{Tr}R \cdot \operatorname{Tr}S$), so $\dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_g \chi_V(g)\chi_W(g^{-1})$ (Theorem~\ref{thm:dim-hom-g}); over $\mathbb{R}$ replace $\chi_W(g^{-1})$ by $\chi_W(g)$, over $\mathbb{C}$ by $\overline{\chi_W(g)}$ (Corollary~\ref{cor:dim-hom-g-real-complex}). Sum over conjugacy classes, weighting each by its size.
     \item \textbf{To show a representation is simple.} Rule out subrepresentations other than $\{0\}$ and $V$; in dimension $2$ these are invariant lines, i.e.\ common eigenvectors of all $\rho(g)$ (a rotation by $120^\circ$ has no real eigenvector; Example~\ref{ex:s3-r3-simples}). Under Maschke's hypotheses, simple is the same as irreducible (not a direct sum of two nonzero subrepresentations; Proposition~\ref{prop:simple-iff-irreducible}), and every representation is a direct sum of simple ones (Corollary~\ref{cor:direct-sum-of-simples}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
@@ -11141,6 +11333,7 @@ Fri Nov 6 \newline lecture & WS 14.7--14.8 (the averaged inner product); finite 
 Wed Nov 4 \newline office hours & $GL_n(\mathbb{F}_p)$ acting on complete flags $G/B$; orbits of the unitriangular group of sizes $p^{\ell(w)}$ for $n = 2, 3$ & \ref{sub:flags-sylow-gln} \\
 Thu Nov 5 \newline Problem Set 8 (submitted) & The product formula $|AB| = |A|\,|B|/|A \cap B|$; subgroups of index $2$ are normal; groups of order $pq$ as semidirect products $\mathbb{Z}/q\mathbb{Z} \rtimes \mathbb{Z}/p\mathbb{Z}$, classified by the solutions of $a^p \equiv 1 \bmod q$; simple groups of order $60$ through the action on $A_6/G$; the trace, $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ & \ref{sub:product-formula} (8.1), \ref{sec:normal-sources} (8.2), \ref{sub:order-pq}, \ref{sec:order-pq-semidirect} (8.3), \ref{sub:order-60} (8.4), \ref{sec:invariants} (8.5) \\
 Mon Nov 9 \newline lecture; Worksheet 15 & Idempotents and their trace; invariant vectors and the averaging operator; $V = V^G \oplus \operatorname{Ker}\pi$; $\dim V^G$ as the average trace; characters, constant on conjugacy classes and additive over direct sums; the start of the character table of $S_3$ & \ref{sec:maschke}, \ref{sec:invariants}, \ref{sec:characters-of-representations} \\
+Wed Nov 11 \newline lecture; Worksheet 16 & Two more descriptions of the trace; the representation $\operatorname{Hom}(V, W)$ and $\operatorname{Hom}_G(V, W)$; the trace of $X \mapsto RXS$; $\dim\operatorname{Hom}_G(V, W)$ from characters & \ref{sec:hom-representation} (16.1--16.2; 16.3--16.5 not reached) \\
 Thu Nov 12 \newline Problem Set 9 (submitted) & Extensions of solvable groups; idempotents split $V = \operatorname{Ker} \oplus \operatorname{Im}$; the proof of Maschke's theorem; counterexamples for $\mathbb{Z}$ and for $\mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$; affine maps as semidirect products & \ref{sec:solvable} (9.1), \ref{sec:maschke} (9.2--9.4), \ref{sec:affine-maps} (9.5) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
@@ -11814,8 +12007,6 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Characters Are Constant on Conjugacy Classes\dotfill \pageref{prop:characters-constant-conjugacy-classes}\par
 \noindent\hangindent=1em Characters Kill Commutators\dotfill \pageref{prop:characters-kill-commutators}\par
 \noindent\hangindent=1em Characters of $A_n$ Are Trivial for $n \geq 5$\dotfill \pageref{thm:characters-an-trivial}\par
-\noindent\hangindent=1em Characters of Complex Representations at Inverses\dotfill \pageref{cor:character-inverse-complex}\par
-\noindent\hangindent=1em Characters of Real Representations at Inverses\dotfill \pageref{prop:character-inverse-real}\par
 \noindent\hangindent=1em Chinese Remainder Theorem\dotfill \pageref{thm:chinese-remainder-theorem}\par
 \noindent\hangindent=1em Class Sizes Divide the Group Order\dotfill \pageref{cor:class-sizes-divide-group-order}\par
 \noindent\hangindent=1em Classification of Cyclic Groups\dotfill \pageref{thm:classification-cyclic-groups}\par
@@ -11824,7 +12015,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Commutators of Two Normal Subgroups Lie in Their Intersection\dotfill \pageref{lem:commutators-two-normal-subgroups}\par
 \noindent\hangindent=1em Compatibility of the Action with Composition\dotfill \pageref{prop:compatibility-action-composition}\par
 \noindent\hangindent=1em Complete Flags Are $G/B$\dotfill \pageref{prop:flags-g-mod-b}\par
-\noindent\hangindent=1em Complex Matrices of Finite Order\dotfill \pageref{prop:finite-order-matrix}\par
+\noindent\hangindent=1em Complex Characters under Inversion\dotfill \pageref{cor:character-inverse-complex}\par
 \noindent\hangindent=1em Composition; $\cong$ Is an Equivalence Relation\dotfill \pageref{prop:composition-iso-equivalence-relation}\par
 \noindent\hangindent=1em Computing with Disjoint Cycles\dotfill \pageref{prop:computing-disjoint-cycles}\par
 \noindent\hangindent=1em Congruence Is an Equivalence Relation with Remainder Classes\dotfill \pageref{prop:congruence-equivalence-relation-remainder}\par
@@ -11953,6 +12144,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Maschke for Representations Preserving an Inner Product\dotfill \pageref{cor:maschke-preserved-inner-product}\par
 \noindent\hangindent=1em Maschke's Theorem\dotfill \pageref{thm:maschke}\par
 \noindent\hangindent=1em Maschke's Theorem over $\mathbb{R}$\dotfill \pageref{cor:maschke-real}\par
+\noindent\hangindent=1em Matrices of Finite Order\dotfill \pageref{prop:finite-order-matrix}\par
 \noindent\hangindent=1em Multiplication by a Nonzero Class Permutes the Nonzero Classes Modulo $p$\dotfill \pageref{prop:multiplication-nonzero-class-permutes-nonzero}\par
 \noindent\hangindent=1em Multiplication in the Form $ns$\dotfill \pageref{prop:semidirect-multiplication}\par
 \noindent\hangindent=1em Multiplying Through Representatives\dotfill \pageref{prop:multiplying-through-representatives}\par
@@ -11991,6 +12183,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em $p$-Subgroups of $GL_n(\mathbb{F}_p)$ Are Conjugate into Unitriangular Matrices\dotfill \pageref{cor:p-subgroups-gln-unitriangular}\par
 \noindent\hangindent=1em Quotients Along the Correspondence\dotfill \pageref{prop:quotients-along-correspondence}\par
 \noindent\hangindent=1em Quotients of Solvable Groups Are Solvable\dotfill \pageref{prop:quotients-solvable}\par
+\noindent\hangindent=1em Real Characters Are Invariant under Inversion\dotfill \pageref{prop:character-inverse-real}\par
 \noindent\hangindent=1em Representations Are Homomorphisms to $GL(V)$\dotfill \pageref{prop:representations-homomorphisms-glv}\par
 \noindent\hangindent=1em Representatives Forming a Subgroup\dotfill \pageref{prop:representatives-forming-subgroup}\par
 \noindent\hangindent=1em Restricting a Homomorphism\dotfill \pageref{lem:restricting-homomorphism}\par
@@ -12033,7 +12226,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Character of $\operatorname{Hom}(V, W)$\dotfill \pageref{prop:character-hom}\par
 \noindent\hangindent=1em The Class Equation\dotfill \pageref{thm:class-equation}\par
 \noindent\hangindent=1em The Class Equation, Reciprocal Form\dotfill \pageref{cor:class-equation-reciprocal-form}\par
-\noindent\hangindent=1em The Commutator Subgroup of $S_n$\dotfill \pageref{thm:commutator-subgroup-sn}\par
+\noindent\hangindent=1em The Commutator Subgroup and Characters of $S_n$\dotfill \pageref{thm:commutator-subgroup-sn}\par
 \noindent\hangindent=1em The Commutators of the Block Group Are the Matrices of Rank at Most $2q$\dotfill \pageref{prop:block-group-commutators-rank}\par
 \noindent\hangindent=1em The Complementary Idempotent\dotfill \pageref{lem:complementary-idempotent}\par
 \noindent\hangindent=1em The Conjugation Action\dotfill \pageref{prop:conjugation-action}\par
@@ -12073,10 +12266,12 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Sylow Test\dotfill \pageref{cor:sylow-test-simplicity}\par
 \noindent\hangindent=1em The Third Sylow Theorem\dotfill \pageref{thm:sylow-third}\par
 \noindent\hangindent=1em The Top-Down Characterization of $\langle g_1, \ldots, g_k \rangle$\dotfill \pageref{prop:top-down-characterization-gen-g1-gk}\par
+\noindent\hangindent=1em The Trace Is the Coefficient of $t$ in $\det(I + tA)$\dotfill \pageref{prop:trace-det-coefficient}\par
+\noindent\hangindent=1em The Trace Is the Only Linear Function That Vanishes on All $AB - BA$\dotfill \pageref{prop:trace-unique}\par
 \noindent\hangindent=1em The Trace of a Diagonalizable Matrix\dotfill \pageref{prop:trace-diagonalizable}\par
 \noindent\hangindent=1em The Trace of a Product in Either Order\dotfill \pageref{prop:trace-ab-ba}\par
-\noindent\hangindent=1em The Trace of $\alpha \mapsto S \circ \alpha \circ R$\dotfill \pageref{lem:trace-sandwich}\par
 \noindent\hangindent=1em The Trace of an Idempotent\dotfill \pageref{prop:trace-idempotent}\par
+\noindent\hangindent=1em The Trace of $X \mapsto RXS$\dotfill \pageref{lem:trace-sandwich}\par
 \noindent\hangindent=1em The Two Edge Paths\dotfill \pageref{prop:jh-edge-paths}\par
 \noindent\hangindent=1em The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$\dotfill \pageref{prop:unitriangular-sylow}\par
 \noindent\hangindent=1em There Is No Simple Group of Order $56$\dotfill \pageref{prop:no-simple-56}\par

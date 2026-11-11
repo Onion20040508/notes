@@ -1,0 +1,18 @@
+% Figure from MATH 493 notes, section 68. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+\draw[->, black!55, thin] (-0.3,0) -- (5.25,0);
+\draw[->, black!55, thin] (0,-0.3) -- (0,4.50);
+\fill[blue!70!black!12] (0,0) -- (3.750,0.225) -- (4.125,3.675) -- (0.375,3.450) -- cycle;
+\draw[black!55, dashed] (0,0) rectangle (3.0,3.0);
+\draw[blue!70!black, thick] (0,0) -- (3.750,0.225) -- (4.125,3.675) -- (0.375,3.450) -- cycle;
+\draw[->, very thick, blue!70!black] (0,0) -- (3.750,0.225) node[above right=-1pt] {$(I + tA)e_1$};
+\draw[->, very thick, blue!70!black] (0,0) -- (0.375,3.450) node[above=1pt] {$(I + tA)e_2$};
+\node[black!55] at (1.50,1.50) {unit square, area $1$};
+\draw[<->, orange!85!black] (3.00,-0.22) -- (3.750,-0.22) node[midway, below] {$ta_{11}$};
+\draw[<->, orange!85!black] (-0.22,3.00) -- (-0.22,3.450) node[midway, left] {$ta_{22}$};
+\node[align=left, anchor=west] at (5.85,3.15) {$A = \begin{pmatrix} 1 & 0.5 \\ 0.3 & 0.6 \end{pmatrix}$, \ $t = \tfrac14$};
+\node[align=left, anchor=west, blue!70!black] at (5.85,2.16) {area of the image $= \det(I + tA)$\\$= 1 + t\operatorname{Tr}A + t^2\det A$};
+\node[align=left, anchor=west] at (5.85,1.14) {$= 1 + 0.4 + 0.028125 = 1.428125$};
+\node[align=left, anchor=west, orange!85!black] at (5.85,0.36) {first order in $t$: only the stretches\\$ta_{11}$ and $ta_{22}$ of the two sides};
+\node[align=left, anchor=west, blue!70!black] at (5.85,4.25) {$(I + tA)e_1 = (1 + ta_{11},\ ta_{21})$\\$(I + tA)e_2 = (ta_{12},\ 1 + ta_{22})$};
+\end{tikzpicture}

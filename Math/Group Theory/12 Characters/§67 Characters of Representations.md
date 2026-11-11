@@ -5,7 +5,7 @@ chapter: 12
 section: 67
 tags: [group-theory, math493]
 ---
-← [[§66 Invariant Vectors]] · ↑ [[· 12 Characters]] · [[§68 Actions on Matrix Spaces]] →
+← [[§66 Invariant Vectors]] · ↑ [[· 12 Characters]] · [[§68 Homomorphisms Between Representations]] →
 
 *Source: Lecture (Mon Nov 9).*
 

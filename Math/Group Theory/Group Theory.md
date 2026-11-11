@@ -142,7 +142,7 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Classification of Groups of Order pq]] (§60.4)
 - [[Maschke's Theorem]] (§62.10)
 - [[Dimension of the Invariants]] (§66.10)
-- [[Dimension of Hom_G(V, W)]] (§68.4)
+- [[Dimension of Hom_G(V, W)]] (§68.6)
 
 ## Summaries
 - [[Group Theory Conventions and Notation]]: symbols and the course's conventions (right-to-left composition, $e$ for the identity, …), each linked to where it is defined.
@@ -175,7 +175,7 @@ The results from other subjects that this course's proofs and definitions cite m
 
 **[[Topology]]**
 - [[§26 Algebra Prerequisites꞉ Groups#^prop-26-4|Proposition §26.4: Bijectivity via Two-Sided Inverse]] (2)
-- [[§10 Continuous Functions#^def-10-2|Definition §10.2: Homeomorphism]] (1)
+- [[§26 Algebra Prerequisites꞉ Groups#^rem-26-5|Remark: Contrast with Topology]] (1)
 
 ## Workhorse examples
 - [[Matrix groups GLₙ, SLₙ and O(n)]]: $GL_n(k)$ and its subgroups $SL_n$, $O(n)$, $SO(n)$; the determinant as homomorphism and character

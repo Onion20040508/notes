@@ -22,7 +22,7 @@ tags: [group-theory, hub]
 - [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-6|Corollary §63.6: Maschke's Theorem over ℝ]]
 - [[§65 Simple Representations#^prop-65-1|Proposition §65.1: Simple Equals Irreducible]]
 - [[§65 Simple Representations#^cor-65-3|Corollary §65.3: Every Representation Is a Direct Sum of Simples, over Any Field with ∣G∣ ≠ 0]]
-- [[§68 Actions on Matrix Spaces#^prop-68-7|Proposition §68.7: Complex Matrices of Finite Order]]
+- [[§68 Homomorphisms Between Representations#^prop-68-9|Proposition §68.9: Matrices of Finite Order]]
 
 ## Connections
 - TODO
