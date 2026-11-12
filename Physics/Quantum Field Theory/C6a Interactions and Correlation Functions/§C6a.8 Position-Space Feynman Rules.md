@@ -95,7 +95,7 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 > \langle0|T\Bigl\{\prod_{h}\hat\phi_h\Bigr\}|0\rangle = \sum_{P\in\mathcal P(X_{E,n})}w(P), \qquad w(P) = \prod_{\{h,h'\}\in P}D_F\bigl(\mathrm{pt}(h) - \mathrm{pt}(h')\bigr), \qquad I(P) \equiv \int d^4z_1\cdots d^4z_n\,w(P) .
 > $$
 >
-> The factor of a block $\{h, h'\}$ does not depend on which element is written first, because $D_F$ is even ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]; [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 1):
+> The factor of a block $\{h, h'\}$ does not depend on which element is written first, because $D_F$ is even ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]; [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 1):
 >
 > $$
 > D_F\bigl(\mathrm{pt}(h) - \mathrm{pt}(h')\bigr) = D_F\bigl(-(\mathrm{pt}(h') - \mathrm{pt}(h))\bigr) = D_F\bigl(\mathrm{pt}(h') - \mathrm{pt}(h)\bigr) ,
@@ -155,7 +155,7 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 
 ^der-c6a-8-1
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^lem-ca-7-2|Lemma §CA.7.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§27 Orbits#^prop-27-1|493 Prop. §27.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^lem-ca-7-2|Lemma §CA.7.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§27 Orbits#^prop-27-1|493 Prop. §27.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]]
 
 *Procedure:* [[P5 Symmetry Factor of a Diagram#^p5-1|P5, steps 1–4]]
 
@@ -259,7 +259,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 >
 > A line may join any two points, external or internal, including a point to itself.
 >
-> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: all orders, as a formal power series; the numerator only; each line is the free-field, free-vacuum $D_F$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]).
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: all orders, as a formal power series; the numerator only; each line is the free-field, free-vacuum $D_F$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]).
 >
 > *Source: PHY 513 Lecture 14, slide 16 ("all diagrams with two external points and any number of internal points where four lines end") · the user's PHY 513 notes, Ch. 14 §14.4 (Principle "Feynman rules for correlation functions, position space"; a principle there, derived here) · PS §4.4, p. 94, rules 1–4 · Yu §7.3, eq. (7.120)*
 
@@ -365,7 +365,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 > - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]] — the $\frac{1}{n!}$ of the Dyson series is the volume of the ordered simplex; it is the factor the $n!$ relabellings of the vertices cancel (Connections).
 
 > [!remark]- Connections
-> - The rules turn a time-ordered expectation value into integrals over spacetime of products of Green's functions of the Klein–Gordon operator, the same structure as the iterated Born series of scattering theory, with $D_F$ for the free Green's function — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation|QM §C10.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]].
+> - The rules turn a time-ordered expectation value into integrals over spacetime of products of Green's functions of the Klein–Gordon operator, the same structure as the iterated Born series of scattering theory, with $D_F$ for the free Green's function — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation|QM §C10.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-5|Theorem §C2b.7.5]].
 > - The $\frac{1}{n!}$ cancelled here is the volume of the ordered simplex of the Dyson series; the time ordering that produced it is now invisible, absorbed into the $D_F$'s — [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-5|Theorem §C6a.3.5]].
 > - The vanishing of odd correlators is the diagrammatic face of the $\mathbb Z_2$ symmetry $\phi \to -\phi$ of the Lagrangian, the symmetry that singles out $\phi^4$ among the renormalizable self-interactions — [[§C1b.3 Mass Dimension, Locality and Power Counting|§C1b.3]].
 > - The same rules, with other lines and vertices, are QED; the slides say "In QED the symmetry factor is always S = 1", which holds for diagrams with external points (QED vacuum bubbles can have $S = 2$) — [[§C6a.9 Symmetry Factors in Practice#^cau-c6a-9-2|§C6a.9, Caution: "In QED the symmetry factor is always S = 1" holds for diagrams with external points]]; Yukawa theory: [[§C6d.4 First Order#^thm-c6d-4-7|§C6d.4, Theorem §C6d.4.7]]; QED: [[§C8.4 Feynman Rules for QED#^thm-c8-4-4|§C8.4, Theorem §C8.4.4]], item 3.

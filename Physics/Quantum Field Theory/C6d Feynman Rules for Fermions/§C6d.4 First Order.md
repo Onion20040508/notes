@@ -358,7 +358,7 @@ At first order the Dyson series of Yukawa theory has one vertex, and the procedu
 > \overbracket{\hat\psi(y)\hat{\bar\psi}(x)} = S_F(y - x) = \int\frac{d^4p}{(2\pi)^4}\,\frac{i(\slashed p + m)}{p^2 - m^2 + i\varepsilon}\,e^{-ip\cdot(y - x)} , \qquad \overbracket{\hat\phi(y)\hat\phi(x)} = D_F(y - x) = \int\frac{d^4p}{(2\pi)^4}\,\frac{i}{p^2 - m_\phi^2 + i\varepsilon}\,e^{-ip\cdot(y - x)}
 > $$
 >
-> ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]): a solid line from $x$ to $y$ with the arrow from the $\hat{\bar\psi}$ end to the $\hat\psi$ end and the momentum $p$ along it, and a dashed line. Its momentum is integrated over all four-vectors $p$. An internal line may join a vertex to itself (the tadpole loop, $S_F(0)$).
+> ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]): a solid line from $x$ to $y$ with the arrow from the $\hat{\bar\psi}$ end to the $\hat\psi$ end and the momentum $p$ along it, and a dashed line. Its momentum is integrated over all four-vectors $p$. An internal line may join a vertex to itself (the tadpole loop, $S_F(0)$).
 >
 > *Equivalently,* for scalar theories the internal lines of [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]] ("both ends on legs of vertices").
 >

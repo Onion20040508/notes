@@ -21,7 +21,7 @@ The rules for $S$-matrix elements, with external lines instead of external point
 
 **Setup** ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] with $\mathcal L_{\rm int}$ a polynomial without derivatives): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]]–[[§C6a.10 Feynman Rules in Momentum Space|§C6a.10]], the expansion in the couplings of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$ of interaction-picture fields; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
 
-*Conventions* ([[Larsen PHY 513]]): real fields $\hat\phi_j$ of mass $m_j$; a complex field $\hat\phi$ with particles $\hat a^\dagger$ and antiparticles $\hat b^\dagger$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]]); $D_F^{(m)}$ the Feynman propagator of mass $m$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]); $\mathcal L_{\rm int} = -\sum_tg_tM_t$, $\hat{\mathcal H}_I = -\mathcal L_{\rm int}(\hat\phi_I)$ (no derivatives); a complex line points from its $\hat\phi^\dagger$ end to its $\hat\phi$ end.
+*Conventions* ([[Larsen PHY 513]]): real fields $\hat\phi_j$ of mass $m_j$; a complex field $\hat\phi$ with particles $\hat a^\dagger$ and antiparticles $\hat b^\dagger$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]]); $D_F^{(m)}$ the Feynman propagator of mass $m$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]); $\mathcal L_{\rm int} = -\sum_tg_tM_t$, $\hat{\mathcal H}_I = -\mathcal L_{\rm int}(\hat\phi_I)$ (no derivatives); a complex line points from its $\hat\phi^\dagger$ end to its $\hat\phi$ end.
 
 The counting is that of [[§C6a.8 Position-Space Feynman Rules|§C6a.8]] with more kinds of legs, proved in [[§CA.8 Splitting Pairings and the Exponential Formula|§CA.8]] and listed at the end. A contraction pattern with several vertex types and several kinds of legs is a pairing of half-edges that respects a compatibility relation between kinds ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]); relabelling the $n_t$ vertices of each type and the legs of equal kind at each vertex is a group of order
 
@@ -66,7 +66,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > \langle0|\hat\phi_i(x)\hat\phi_j(y)|0\rangle = \int\frac{d^3p}{(2\pi)^3}\frac{d^3q}{(2\pi)^3}\frac{e^{-ip\cdot x}e^{iq\cdot y}}{\sqrt{2E_{i,\mathbf p}2E_{j,\mathbf q}}}\,\langle0|\hat a_{i,\mathbf p}\hat a^\dagger_{j,\mathbf q}|0\rangle = \delta_{ij}\int\frac{d^3p}{(2\pi)^3}\frac{e^{-ip\cdot(x - y)}}{2E_{i,\mathbf p}} = \delta_{ij}\,D_W^{(m_i)}(x - y) ,
 > $$
 >
-> using $\langle0|\hat a_{i,\mathbf p}\hat a^\dagger_{j,\mathbf q}|0\rangle = \langle0|[\hat a_{i,\mathbf p}, \hat a^\dagger_{j,\mathbf q}]|0\rangle = \delta_{ij}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ and [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]. The same for $y^0 > x^0$ with $x \leftrightarrow y$; with $\theta$'s, $\langle0|T\{\hat\phi_i(x)\hat\phi_j(y)\}|0\rangle = \delta_{ij}\bigl[\theta(x^0 - y^0)D_W^{(m_i)}(x - y) + \theta(y^0 - x^0)D_W^{(m_i)}(y - x)\bigr] = \delta_{ij}D_F^{(m_i)}(x - y)$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]).
+> using $\langle0|\hat a_{i,\mathbf p}\hat a^\dagger_{j,\mathbf q}|0\rangle = \langle0|[\hat a_{i,\mathbf p}, \hat a^\dagger_{j,\mathbf q}]|0\rangle = \delta_{ij}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ and [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]. The same for $y^0 > x^0$ with $x \leftrightarrow y$; with $\theta$'s, $\langle0|T\{\hat\phi_i(x)\hat\phi_j(y)\}|0\rangle = \delta_{ij}\bigl[\theta(x^0 - y^0)D_W^{(m_i)}(x - y) + \theta(y^0 - x^0)D_W^{(m_i)}(y - x)\bigr] = \delta_{ij}D_F^{(m_i)}(x - y)$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]).
 >
 > **Step 3** (part 2). The complex-field statements are [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3 (Steps 5–6 of its derivation). For a complex and a real field, Step 2 with $\langle0|\hat a_{\mathbf p}\hat a^\dagger_{j,\mathbf q}|0\rangle = \langle0|\hat a^\dagger_{j,\mathbf q}\hat a_{\mathbf p}|0\rangle = 0$ and $\langle0|\hat b_{\mathbf p}\hat a^\dagger_{j,\mathbf q}|0\rangle = 0$ (commuting operators, Step 1) gives $0$ in both time orders.
 >
@@ -84,7 +84,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 
 ^der-c6a-12-1
 
-*Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.6 Wick's Theorem#^lem-c6a-6-1|Lemma §C6a.6.1]]
+*Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.6 Wick's Theorem#^lem-c6a-6-1|Lemma §C6a.6.1]]
 
 > [!definition] Definition §C6a.12.1: Vertex Data of a Polynomial Interaction
 > Let the fields be as in [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]] and
@@ -334,14 +334,14 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > 2. every momentum not fixed by conservation is integrated with $\int\frac{d^4p}{(2\pi)^4}$: in each connected piece with $V$ vertices, $I$ internal lines and $r \ge 1$ external points, $L = I - V + 1$ loop momenta ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 2) and $r - 1$ external ones;
 > 3. the result is divided by $S$.
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in the opening; each line is the free-field $\tilde D_F$ of its own mass ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]); for $\phi^4$ it is [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]].
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in the opening; each line is the free-field $\tilde D_F$ of its own mass ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]); for $\phi^4$ it is [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]].
 >
 > *Source: PS §4.4, p. 95 (rules 1–6 for $\phi^4$) · Yu §7.2, rules 6–11 (pp. 287–288); §7.3, p. 296; §7.4, rules 1–5 (p. 300; complex scalar lines, the momentum drawn along the arrow) · proof written here, generalizing [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]]*
 
 ^thm-c6a-12-5
 
 > [!derivation]- Derivation
-> **Step 1** (each line in Fourier form). By [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]] with the mass of the line, for a line $\ell$ from $a_\ell$ to $b_\ell$,
+> **Step 1** (each line in Fourier form). By [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]] with the mass of the line, for a line $\ell$ from $a_\ell$ to $b_\ell$,
 >
 > $$
 > D_F^{(m_\ell)}(a_\ell - b_\ell) = \int\frac{d^4p_\ell}{(2\pi)^4}\,\frac{i}{p_\ell^2 - m_\ell^2 + i\varepsilon}\,e^{-ip_\ell\cdot a_\ell}e^{+ip_\ell\cdot b_\ell} .
@@ -372,7 +372,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 
 ^der-c6a-12-5
 
-*Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-1|Derivation §C6a.10.1]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]]
+*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-1|Derivation §C6a.10.1]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]]
 
 ![[ph-qft-c6a-12-1.svg]]
 *The rules of [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]] and [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]] as a picture. Top: the lines, one per field type (solid $\phi$, dashed $\Phi$, arrowed for a complex field, from the $\phi^\dagger$ end to the $\phi$ end), with their position- and momentum-space values. Bottom: the vertices of the four theories in the table of [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]], each $-i$ times its coupling times the number of ways to attach distinct lines to its legs. Added figure.*

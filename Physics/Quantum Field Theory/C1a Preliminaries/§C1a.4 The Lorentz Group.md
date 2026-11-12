@@ -214,7 +214,7 @@ The four components are a property of the group, a six-dimensional manifold. The
 > **What the derivation shows**
 > - The group acts on the set of orbits through its quotient $\mathbb Z_2\times\mathbb Z_2$, with $\mathcal P$ acting trivially and $\mathcal T \equiv \mathcal P\mathcal T$ exchanging past and future.
 > - "Past" and "future" are invariant because the timelike sheets are separate orbits; "earlier" is meaningless for spacelike separation because $S_a$ is one connected orbit containing $x$ and $-x$.
-> - Used next: positive energy ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]); the reversal $\Lambda x = -x$ is the whole proof of microcausality of the free field ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], steps 1–3).
+> - Used next: positive energy ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]); the reversal $\Lambda x = -x$ is the whole proof of microcausality of the free field ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]], steps 1–3).
 
 ^der-c1a-4-4
 
@@ -233,7 +233,7 @@ The four components are a property of the group, a six-dimensional manifold. The
 > [!remark] Remark: Why the orbits matter in field theory
 > - **Positive energy.** A particle's momentum lies on $H^+_m$ (or $C^+$ for $m = 0$), an orbit: "the energy is positive" survives every orthochronous change of frame, and $\theta(p^0)\delta(p^2 - m^2)\,d^4p$ is the invariant measure on it ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]).
 > - **Invariant functions are functions of the orbit.** A Lorentz-invariant two-point function depends on $x^2$ and, inside the cone, on $\operatorname{sgn}x^0$ only; this is why the Wightman function needs one evaluation per orbit type ([[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]]).
-> - **Microcausality.** At spacelike separation $x$ and $-x$ are in one orbit, so an invariant function cannot tell them apart and the commutator $D_W(x) - D_W(-x)$ vanishes; inside the cone they are in different orbits and it need not ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
+> - **Microcausality.** At spacelike separation $x$ and $-x$ are in one orbit, so an invariant function cannot tell them apart and the commutator $D_W(x) - D_W(-x)$ vanishes; inside the cone they are in different orbits and it need not ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]).
 > - **Particles.** The orbits of momenta classify one-particle states: $H^+_m$ massive, $C^+$ massless, $S_a$ tachyonic (no stable vacuum), $p = 0$ the vacuum ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-3|Theorem §C3.6.3]], [[§C3.6★ Particle States and the Little Group#^thm-c3-6-7|Theorem §C3.6.7]], [[§C3.6★ Particle States and the Little Group#^rem-c3-6-2|§C3.6★, Remark: The orbits at a glance]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.3 ("the same structure recurs three times in the course")*

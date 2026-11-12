@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 13 §13.3 · PHY 513 Lecture 13 (Larsen, 14 Oct 2026), Part B, slides 10–14, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.2, pp. 84–86, eqs. (4.17)–(4.26), Fig. 4.1 · Yu Zhao-Huan, 量子场论讲义, §6.2, eqs. (6.93)–(6.121), Fig. 6.2.*
 
-The interacting field is the free field conjugated by one unitary, $\hat\phi_H = U(t)^\dagger\hat\phi_IU(t)$ with $U(t) = e^{i\hat H_0t}e^{-i\hat Ht}$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-4|Theorem §C6a.2.4]]). This section finds $U$ in terms of things one knows. The key is a first-order differential equation, $i\partial_tU = \hat H_I(t)U$, whose generator is the interaction in the interaction picture ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]). Because $\hat H_I$ is an operator, and operators at different times need not commute, the obvious solution, an exponential of the time integral, is wrong; the correct one orders the operators in time, latest on the left, as in the time-ordered product of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]]. The result is Dyson's formula, $U = T\{e^{-i\int\hat H_I}\}$. Quantum mechanics proved the same formula for any time-dependent generator, with its convergence for bounded ones ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]]); the field theory adds the generator $\hat H_I$, a polynomial in free fields, and the evolution operator $U(t, t')$ between any two times, with which the interacting vacuum of [[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]] is built. The one piece of pure mathematics, the $n!$ that converts ordered integrals into integrals over a cube, has its home in [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]]. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]): as in [[§C6a.2 The Interaction Picture|§C6a.2]], $\hat H_0$ and $\hat H_{\rm int}$ on one Hilbert space; every statement is exact operator algebra, with no state and no vacuum; the evolution operator of a source switched on and off ([[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]) obeys the same equations with a time-dependent $\hat H_I(t)$.
+The interacting field is the free field conjugated by one unitary, $\hat\phi_H = U(t)^\dagger\hat\phi_IU(t)$ with $U(t) = e^{i\hat H_0t}e^{-i\hat Ht}$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-4|Theorem §C6a.2.4]]). This section finds $U$ in terms of things one knows. The key is a first-order differential equation, $i\partial_tU = \hat H_I(t)U$, whose generator is the interaction in the interaction picture ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]). Because $\hat H_I$ is an operator, and operators at different times need not commute, the obvious solution, an exponential of the time integral, is wrong; the correct one orders the operators in time, latest on the left, as in the time-ordered product of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-1|Def. §C2b.7.1]]. The result is Dyson's formula, $U = T\{e^{-i\int\hat H_I}\}$. Quantum mechanics proved the same formula for any time-dependent generator, with its convergence for bounded ones ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]]); the field theory adds the generator $\hat H_I$, a polynomial in free fields, and the evolution operator $U(t, t')$ between any two times, with which the interacting vacuum of [[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]] is built. The one piece of pure mathematics, the $n!$ that converts ordered integrals into integrals over a cube, has its home in [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]]. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]): as in [[§C6a.2 The Interaction Picture|§C6a.2]], $\hat H_0$ and $\hat H_{\rm int}$ on one Hilbert space; every statement is exact operator algebra, with no state and no vacuum; the evolution operator of a source switched on and off ([[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]) obeys the same equations with a time-dependent $\hat H_I(t)$.
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.2 The Interaction Picture|§C6a.2]]; $T\{\cdots\}$ is time ordering, braces always; the integrals of this section are over time, $\int_0^tdt'$, and $\hat H_I(t')$ is already integrated over space. Derivatives of operator-valued functions of time are taken on the regularized theory, where every operator is a matrix ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|§C6a.1, ★ Remark: In what sense φ̂⁴(x) is defined]]).
 
@@ -114,11 +114,11 @@ $$
 > [\hat H_I(t_1), \hat H_I(t_2)] = \Bigl(\frac{\lambda}{4!}\Bigr)^2\int d^3x\,d^3y\;4iD(x - y)\sum_{k=0}^3\hat\phi_I(y)^k\,\hat\phi_I(x)^3\,\hat\phi_I(y)^{3-k} ,
 > $$
 >
-> with $D$ the commutator function ([[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|Def. §C2b.4.1]]). The $c$-number coefficient $D(x - y)$ vanishes at spacelike separation, in particular for $t_1 = t_2$, $\mathbf x \ne \mathbf y$, but not inside the light cone. For $t_1 \ne t_2$ the integration region always reaches inside the cone.
+> with $D$ the commutator function ([[§C2b.5 Microcausality and the Commutator Function#^def-c2b-5-1|Def. §C2b.5.1]]). The $c$-number coefficient $D(x - y)$ vanishes at spacelike separation, in particular for $t_1 = t_2$, $\mathbf x \ne \mathbf y$, but not inside the light cone. For $t_1 \ne t_2$ the integration region always reaches inside the cone.
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: exact operator identity, every $\lambda$; it uses only the free commutator $iD(x - y)$ of $\hat\phi_I$ (free field, [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
 >
-> *Source: PHY 513 Lecture 13, transcript ("There's no guarantee that they will commute, and in fact, they really won't") · the user's PHY 513 notes, Ch. 13 §13.3 (paragraph "How to read $T\{e^{\cdots}\}$", numerical check) · the commutator written here from [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]]*
+> *Source: PHY 513 Lecture 13, transcript ("There's no guarantee that they will commute, and in fact, they really won't") · the user's PHY 513 notes, Ch. 13 §13.3 (paragraph "How to read $T\{e^{\cdots}\}$", numerical check) · the commutator written here from [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-2|Theorem §C2b.5.2]]*
 
 ^thm-c6a-3-3
 
@@ -149,7 +149,7 @@ $$
 >
 > which with Step 3 is the statement.
 >
-> **Step 5** (where the coefficient vanishes). $D(\xi) = 0$ for $\xi^2 < 0$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]). Inside the cone, with $\tau = \sqrt{\xi^2}$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]]),
+> **Step 5** (where the coefficient vanishes). $D(\xi) = 0$ for $\xi^2 < 0$ ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]). Inside the cone, with $\tau = \sqrt{\xi^2}$ ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-9|Theorem §C2b.5.9]]),
 >
 > $$
 > D(\xi) = \operatorname{sgn}(\xi^0)\,\frac{m\,J_1(m\tau)}{4\pi\tau} \not\equiv 0 .
@@ -163,7 +163,7 @@ $$
 
 ^der-c6a-3-3
 
-*Uses:* [[§C6a.2 The Interaction Picture#^thm-c6a-2-3|Theorem §C6a.2.3]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|Def. §C2b.4.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]]
+*Uses:* [[§C6a.2 The Interaction Picture#^thm-c6a-2-3|Theorem §C6a.2.3]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C2b.5 Microcausality and the Commutator Function#^def-c2b-5-1|Def. §C2b.5.1]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-2|Theorem §C2b.5.2]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-9|Theorem §C2b.5.9]]
 
 > [!theorem] Theorem §C6a.3.4: The Exponential Solves the Equation Only for Commuting Generators
 > Let $\hat A(t) = \int_0^tdt'\,\hat H_I(t')$.
@@ -247,7 +247,7 @@ $$
 > T\Bigl\{\exp\Bigl[-i\int_{t'}^tdt''\,\hat H_I(t'')\Bigr]\Bigr\} \equiv \sum_{n=0}^\infty\frac{(-i)^n}{n!}\int_{t'}^tdt_1\int_{t'}^tdt_2\cdots\int_{t'}^tdt_n\;T\bigl\{\hat H_I(t_1)\hat H_I(t_2)\cdots\hat H_I(t_n)\bigr\} ,
 > $$
 >
-> the exponential series with each term time-ordered: $T\{\hat H_I(t_1)\cdots\hat H_I(t_n)\}$ arranges the factors by decreasing time label, the latest on the left and the earliest on the right, as for fields ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]], applied to operators labelled by a time). The $n = 0$ term is $\mathbf 1$. It is not an exponential: it is the series together with the instruction to time-order each term.
+> the exponential series with each term time-ordered: $T\{\hat H_I(t_1)\cdots\hat H_I(t_n)\}$ arranges the factors by decreasing time label, the latest on the left and the earliest on the right, as for fields ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-1|Def. §C2b.7.1]], applied to operators labelled by a time). The $n = 0$ term is $\mathbf 1$. It is not an exponential: it is the series together with the instruction to time-order each term.
 >
 > *Model:* any; *applies:* any operator-valued $\hat H_I(t)$: that of [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]] or of a source ([[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]); a series of operators, convergent on the regularized theory ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]).
 >
@@ -315,7 +315,7 @@ $$
 >
 > Divide by $n!$ and rename $s_k \to t_k$.
 >
-> ⚑ By-product: at coincident times the order is irrelevant, both because $\hat H_I(t_1) = \hat H_I(t_2)$ there and because the coincidence set has zero volume; time ordering of $\hat H_I$'s therefore needs no convention at equal times, unlike $\hat\phi$ with $\hat\pi$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-1|§C2b.6, Caution: The step function at zero]]).
+> ⚑ By-product: at coincident times the order is irrelevant, both because $\hat H_I(t_1) = \hat H_I(t_2)$ there and because the coincidence set has zero volume; time ordering of $\hat H_I$'s therefore needs no convention at equal times, unlike $\hat\phi$ with $\hat\pi$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-1|§C2b.7, Caution: The step function at zero]]).
 >
 > **What the derivation shows.**
 > - The $\frac{1}{n!}$ of the exponential series is exactly what is needed to pick one of the $n!$ time orderings: the $1/n!$ compensates the sum over all possible orderings, leaving effectively one ordering, the time-ordered one.
@@ -323,7 +323,7 @@ $$
 
 ^der-c6a-3-5
 
-*Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]], [[§23 Fubini's Theorem#^thm-23-2|452 Thm. §23.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]]
+*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-1|Def. §C2b.7.1]], [[§23 Fubini's Theorem#^thm-23-2|452 Thm. §23.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]]
 
 > [!theorem] Theorem §C6a.3.6: Dyson's Formula
 > For $t \ge 0$,
@@ -568,7 +568,7 @@ $$
 *Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^der-c6a-3-6|Derivation §C6a.3.6]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-5|Theorem §C6a.3.5]]
 
 > [!caution] Caution: Backwards in time the order reverses
-> For $t < t'$, $U(t, t') = U(t', t)^\dagger$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 3), and the adjoint of a time-ordered product is anti-time-ordered (taking $\dagger$ reverses every product): $U(t, t') = \bar T\bigl\{\exp\bigl[+i\int_t^{t'}dt''\,\hat H_I(t'')\bigr]\bigr\}$, the earliest operator on the left ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-2|Def. §C2b.6.2]]). Such backward factors appear in the Heisenberg field, $U(0, t)$ for $t > 0$ (part 4); in the master formula they meet their forward partners and cancel ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-5|Theorem §C6a.4.5]]). The composition law holds for all orderings of $t_1$, $t_2$, $t_3$; only the $T$-form is restricted.
+> For $t < t'$, $U(t, t') = U(t', t)^\dagger$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 3), and the adjoint of a time-ordered product is anti-time-ordered (taking $\dagger$ reverses every product): $U(t, t') = \bar T\bigl\{\exp\bigl[+i\int_t^{t'}dt''\,\hat H_I(t'')\bigr]\bigr\}$, the earliest operator on the left ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-2|Def. §C2b.7.2]]). Such backward factors appear in the Heisenberg field, $U(0, t)$ for $t > 0$ (part 4); in the master formula they meet their forward partners and cancel ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-5|Theorem §C6a.4.5]]). The composition law holds for all orderings of $t_1$, $t_2$, $t_3$; only the $T$-form is restricted.
 >
 > *Source: written here from PS §4.2, eqs. (4.23)–(4.26) ("$t \ge t'$") · Yu §6.2, eqs. (6.99)–(6.100)*
 
@@ -597,7 +597,7 @@ $$
 >
 > with $z_k = (t_k, \mathbf z_k)$.
 >
-> **Step 3** (second order: the eight fields). The four fields in $\hat\phi_I(z_k)^4$ sit at the common time $t_k$ and commute ([[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], 1), so the bracket of Step 2 is the time-ordered product of the eight fields ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]]): $T\{\hat H_I(t_1)\hat H_I(t_2)\} = (\frac{\lambda}{4!})^2\int d^3z_1d^3z_2\,T\{\hat\phi_I(z_1)^4\hat\phi_I(z_2)^4\}$. Collect the constants:
+> **Step 3** (second order: the eight fields). The four fields in $\hat\phi_I(z_k)^4$ sit at the common time $t_k$ and commute ([[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], 1), so the bracket of Step 2 is the time-ordered product of the eight fields ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-1|Def. §C2b.7.1]]): $T\{\hat H_I(t_1)\hat H_I(t_2)\} = (\frac{\lambda}{4!})^2\int d^3z_1d^3z_2\,T\{\hat\phi_I(z_1)^4\hat\phi_I(z_2)^4\}$. Collect the constants:
 >
 > $$
 > \frac{(-i)^2}{2!}\Bigl(\frac{\lambda}{4!}\Bigr)^2 = \frac{1}{2!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^2, \qquad \int_{t'}^tdt_1\int d^3z_1\int_{t'}^tdt_2\int d^3z_2 = \int_{t'}^t\!d^4z_1\int_{t'}^t\!d^4z_2 .
@@ -631,7 +631,7 @@ $$
 
 > [!remark]- Connections
 > - Quantum mechanics has the same Dyson series for any time-dependent Hamiltonian, with a convergence proof for bounded ones, and the same series for a perturbation $V_I(t)$ in its interaction picture; the field theory adds a local, explicitly known generator — [[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]], [[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits#^thm-c9-4-3|QM Theorem §C9.4.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]].
-> - The rule "later to the left" is the same for the time-ordered exponential and for the time-ordered product of fields, and for the same reason: operators act on a ket from right to left, so the earliest acts first — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-1|§C2b.6, Remark: Why the later operator stands to the left]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]].
+> - The rule "later to the left" is the same for the time-ordered exponential and for the time-ordered product of fields, and for the same reason: operators act on a ket from right to left, so the earliest acts first — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-1|§C2b.7, Remark: Why the later operator stands to the left]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]].
 > - The $n!$ of the exponential series is the number of orderings of $n$ times; this is a statement about integrals, homed in the methods chapter — [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]].
 > - The time-ordered exponential is the continuum limit of a product of short-time exponentials, $\prod_k e^{-i\hat H_I(t_k)\Delta t}$ with the latest on the left; the Lie product formula is the same idea for constant generators, and Feynman's path integral is built the same way — [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8|Theorem §CB.1.8]], QFT C11 (planned).
 > - $U(t, t')$ in the limit $t \to +\infty$, $t' \to -\infty$ is Yu's definition of the $S$-matrix, $S = U(+\infty, -\infty)$ (Yu eqs. (6.122)–(6.125)); the course defines $\hat S$ by the full evolution between in and out states (Lecture 15), and the two agree up to a phase between free states — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]].

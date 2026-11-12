@@ -179,7 +179,7 @@ The classical model is [[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Mode
 > | Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations\|§C1b.2]]) | $\phi(x)$, $x = (t, \mathbf x)$ | integrated over in $S = \int d^4x\,\mathcal L$ |
 > | Hamiltonian, classical ([[§C1b.4 Hamiltonian Field Theory\|§C1b.4]]) | $\phi(\mathbf x)$, $\pi(\mathbf x)$ on a slice | parameter along the trajectory |
 > | Schrödinger picture (§C2a.1–§C2a.5; where a time $t \ne 0$ appears there, and in §C2a.6, the field is the Heisenberg field of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4\|Theorem §C2b.1.4]]) | $\hat\phi(\mathbf x)$, $\hat\pi(\mathbf x)$ | carried by the states |
-> | Heisenberg picture (§C2b.1–§C2b.4) | $\hat\phi(t, \mathbf x)$ | carried by the operators; Klein–Gordon holds |
+> | Heisenberg picture (§C2b.1–§C2b.5) | $\hat\phi(t, \mathbf x)$ | carried by the operators; Klein–Gordon holds |
 >
 > The label $\mathbf x$ is not an operator: field theory has a field operator at each position, and no position operator.
 >

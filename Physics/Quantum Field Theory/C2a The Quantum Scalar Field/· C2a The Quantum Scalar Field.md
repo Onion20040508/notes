@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C2a The Quantum Scalar Field
 ← [[· C1b Classical Field Theory]] · ↑ [[Quantum Field Theory]] · [[· C2b Two-Point Functions, Causality and Propagators]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (3), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (13), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (27), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (4), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (11), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (208)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (5), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (35), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (140), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (41), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (94), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (2), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (91), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (62), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (53), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (28), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (9), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (3), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (74), [[· CA Mathematical Methods|CA Mathematical Methods]] (6)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (3), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (13), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (29), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (4), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (11), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (219)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (5), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (35), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (149), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (41), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (94), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (2), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (91), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (62), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (54), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (28), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (9), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (3), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (74), [[· CA Mathematical Methods|CA Mathematical Methods]] (6)
 
 ## Sections
 - [[§C2a.1 Canonical Quantization of Fields]] — PS 2.3; Yu 2.1–2.2; 513 notes Ch. 4
@@ -26,6 +26,7 @@ tags: [chapter, quantum-field-theory]
 ## Theorems
 - [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|§C2a.1.3]] The Canonical Relations Are Identities after Smearing
 - [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-1|§C2a.2.1]] The Free Field Is a Set of Independent Oscillators
+- [[§C2a.2 Mode Expansion and the Mode Algebra#^lem-c2a-2-1|§C2a.2.1]] Split Exponentials and Relabelling
 - [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|§C2a.2.2]] Mode Expansion of the Real Field
 - [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|§C2a.2.3]] Conservation and Orthonormality of the Modes
 - [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|§C2a.2.4]] Orthonormality for Wave Packets
@@ -42,7 +43,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|§C2a.4.2]] Bose Symmetry and Multiple Occupation
 - [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|§C2a.4.3]] The Invariant Measure
 - [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|§C2a.4.4]] Invariance of the Relativistic Normalization
-- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|§C2a.4.5]] The Overlap of Momentum States Is a Distribution
+- [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|§C2a.4.5]] The Overlap of Momentum States Is a Distribution; One-Particle Completeness
 - [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|§C2a.4.6]] The Field Creates a Particle at a Point
 - [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|§C2a.4.7]] The Smeared Field Creates a State; the Field at a Point Does Not
 - [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|§C2a.5.2]] Mode Expansion of the Complex Field

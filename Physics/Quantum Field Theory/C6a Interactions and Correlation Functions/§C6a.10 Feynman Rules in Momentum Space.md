@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.6 (Derivation "From position space to momentum space", Principle "Feynman rules in momentum space", paragraph "The momentum-space two-point function") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part B, slides 19–20, slide 25 (bottom), and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 94–95, eqs. (4.46)–(4.47) · Yu Zhao-Huan, 量子场论讲义, §7.2, pp. 287–288 (rules 8, 10, 11 of the momentum-space rules of Yukawa theory); §7.3, p. 296 (the $\phi^4$ vertex); §10.5.1, eqs. (10.198)–(10.203).*
 
-The position-space rules ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]) leave an integral $\int d^4z$ at every vertex. Writing every propagator in its four-momentum form ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]; slide 19, PS eq. (4.46))
+The position-space rules ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]) leave an integral $\int d^4z$ at every vertex. Writing every propagator in its four-momentum form ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]; slide 19, PS eq. (4.46))
 $$
 D_F(x - y) = \int\frac{d^4p}{(2\pi)^4}\,\frac{i}{p^2 - m^2 + i\varepsilon}\,e^{-ip\cdot(x-y)}
 $$
@@ -44,7 +44,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 > \tilde G^{(2)}(p) = \int d^4x\;e^{ip\cdot x}\,G^{(2)}(x, 0) ,
 > $$
 >
-> and for the free field in the free vacuum this is the propagator in momentum space, $\tilde G^{(2)}_0(p) = \int d^4\xi\,e^{ip\cdot\xi}D_F(\xi) = \tilde D_F(p) = \dfrac{i}{p^2 - m^2 + i\varepsilon}$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], inverted by [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]]).
+> and for the free field in the free vacuum this is the propagator in momentum space, $\tilde G^{(2)}_0(p) = \int d^4\xi\,e^{ip\cdot\xi}D_F(\xi) = \tilde D_F(p) = \dfrac{i}{p^2 - m^2 + i\varepsilon}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], inverted by [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]]).
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* $G^{(n)}$ is the free-vacuum value $\langle0|T\{\cdots\}|0\rangle$ term by term in the expansion of the numerator, or the full $\langle\Omega|T\{\hat\phi_H\cdots\}|\Omega\rangle$; a tempered distribution, transformed in $\mathcal S'$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]]).
 >
@@ -80,7 +80,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 ^thm-c6a-10-1
 
 > [!derivation]- Derivation
-> **Step 1** (each line in Fourier form). By [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]] (the momentum-space two-point function $\tilde D_F$ of [[§C6a.10 Feynman Rules in Momentum Space#^def-c6a-10-1|Def. §C6a.10.1]]), $D_F(a - b) = \int\frac{d^4p}{(2\pi)^4}\tilde D_F(p)\,e^{-ip\cdot a}e^{+ip\cdot b}$. For the four lines at $z$, with momenta oriented into $z$ and $a_j$ the other endpoint,
+> **Step 1** (each line in Fourier form). By [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]] (the momentum-space two-point function $\tilde D_F$ of [[§C6a.10 Feynman Rules in Momentum Space#^def-c6a-10-1|Def. §C6a.10.1]]), $D_F(a - b) = \int\frac{d^4p}{(2\pi)^4}\tilde D_F(p)\,e^{-ip\cdot a}e^{+ip\cdot b}$. For the four lines at $z$, with momenta oriented into $z$ and $a_j$ the other endpoint,
 >
 > $$
 > D_F(a_j - z) = \int\frac{d^4p_j}{(2\pi)^4}\,\tilde D_F(p_j)\,e^{-ip_j\cdot a_j}\,e^{+ip_j\cdot z}, \qquad j = 1, \dots, 4 .
@@ -127,7 +127,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 
 ^der-c6a-10-1
 
-*Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]
+*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]
 
 > [!theorem] Theorem §C6a.10.2: Feynman Rules for Correlation Functions in Momentum Space
 > Each diagram of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] equals the following expression:
@@ -144,7 +144,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 >
 > If the external points are Fourier transformed as well ([[§C6a.10 Feynman Rules in Momentum Space#^def-c6a-10-1|Def. §C6a.10.1]]), the factors $e^{-ip\cdot x}$ disappear: $\tilde G^{(n)}(p_1, \dots, p_n)$ is the sum of the diagrams with every external line a factor $\tilde D_F(p_i)$, every momentum fixed or integrated as above, and one overall $(2\pi)^4\delta^4$ of the momenta entering each connected component (Step 8; Yu's box on p. 469).
 >
-> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; each line is the free-field, free-vacuum $\tilde D_F$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]).
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; each line is the free-field, free-vacuum $\tilde D_F$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]).
 >
 > *Source: PHY 513 Lecture 14, slide 20 · the user's PHY 513 notes, Ch. 14 §14.6 (Principle "Feynman rules in momentum space") · PS §4.4, p. 95, rules 1–6 · Yu §7.2, rules 8, 10, 11 (pp. 287–288), §7.3, p. 296 (vertex $-i\lambda$, divide by $S$); §10.5.1, box after eq. (10.203) ("the Fourier transform of a multi-point correlation function corresponds to the Feynman diagrams in momentum space")*
 
@@ -293,7 +293,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 ^thm-c6a-10-3
 
 > [!derivation]- Derivation
-> **Step 1** (Wick rotation). [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]] with $F = 1$ (analytic everywhere; $1/(k^2 - m^2)$ decays like $1/|k^0|^2$, faster than $1/|k^0|$): $k^0 = ik_4$, $k^2 = -k_E^2$, $dk^0 = i\,dk_4$, and
+> **Step 1** (Wick rotation). [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-1|Theorem §C2b.8.1]] with $F = 1$ (analytic everywhere; $1/(k^2 - m^2)$ decays like $1/|k^0|^2$, faster than $1/|k^0|$): $k^0 = ik_4$, $k^2 = -k_E^2$, $dk^0 = i\,dk_4$, and
 >
 > $$
 > \int\frac{d^4k}{(2\pi)^4}\frac{i}{k^2 - m^2 + i\varepsilon} = \int\frac{i\,dk_4\,d^3k}{(2\pi)^4}\,\frac{i}{-k_E^2 - m^2} = \int\frac{d^4k_E}{(2\pi)^4}\frac{1}{k_E^2 + m^2} .
@@ -318,10 +318,10 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 
 ^der-c6a-10-3
 
-*Uses:* [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]]
+*Uses:* [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-1|Theorem §C2b.8.1]]
 
 > [!remark] Remark: The first ultraviolet divergence
-> The loop factor $D_F(0)$ diverges at large $k$, quadratically with the cutoff ([[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-3|Theorem §C6a.10.3]]). In position space the same divergence is the value of $D_F$ at zero separation, where $D_F(\xi)$ behaves like $-1/(4\pi^2\xi^2)$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-3|Theorem §C2b.7.3]]) and has no value ([[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]]). The vacuum bubbles contain the same factor ($D_F$ of $z$ minus $z$, at a single vertex), which has no meaning either. This is the first appearance of the ultraviolet divergences that renormalization deals with, later in the course (QFT C10, planned).
+> The loop factor $D_F(0)$ diverges at large $k$, quadratically with the cutoff ([[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-3|Theorem §C6a.10.3]]). In position space the same divergence is the value of $D_F$ at zero separation, where $D_F(\xi)$ behaves like $-1/(4\pi^2\xi^2)$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]], [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-3|Theorem §C2b.8.3]]) and has no value ([[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]]). The vacuum bubbles contain the same factor ($D_F$ of $z$ minus $z$, at a single vertex), which has no meaning either. This is the first appearance of the ultraviolet divergences that renormalization deals with, later in the course (QFT C10, planned).
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.6 (paragraph "The momentum-space two-point function")*
 
@@ -354,16 +354,16 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 >
 > Every one of the 15 contractions of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]] contains a bracket $\overbracket{\hat\phi_{z_a}\hat\phi_{z_b}}$ inside the vertex, and all are removed: neither the tadpole nor the figure-eight appears, exactly the diagrams with $D_F(0)$.
 >
-> In general (stated, not proved here: Wick's theorem for products with normal-ordered blocks omits the contractions inside a block) no self-contraction at a vertex survives. This removes the vacuum part of $\hat\phi^4$ at a point ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|§C6a.1, ★ Remark: In what sense φ̂⁴(x) is defined]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-7|Theorem §C2b.6.7]]) but not the divergences of higher loops. The course and PS keep $\hat\phi^4$ without colons.
+> In general (stated, not proved here: Wick's theorem for products with normal-ordered blocks omits the contractions inside a block) no self-contraction at a vertex survives. This removes the vacuum part of $\hat\phi^4$ at a point ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|§C6a.1, ★ Remark: In what sense φ̂⁴(x) is defined]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-7|Theorem §C2b.7.7]]) but not the divergences of higher loops. The course and PS keep $\hat\phi^4$ without colons.
 >
 > *Source: written here*
 
 ^ex-c6a-10-2
 
 > [!remark] Remark: In what sense the momentum-space rules hold
-> At fixed $\varepsilon > 0$, $\tilde D_F$ is a smooth bounded function ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]], 1), so products of propagators at the same momentum (as in [[§C6a.10 Feynman Rules in Momentum Space#^ex-c6a-10-1|Example §C6a.10.1]]) are defined, and $\varepsilon \to 0^+$ is taken at the end, after integrating against the external factors. The vertex deltas are tempered distributions ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]); in a connected piece attached to external points they are independent and can be integrated one after the other. Two things remain formal: loop integrals, which diverge until the theory is regularized (Remark: The first ultraviolet divergence), and the deltas of vacuum bubbles, where conservation at the last vertex is automatic and the delta is evaluated at zero, $(2\pi)^4\delta^4(0)$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]).
+> At fixed $\varepsilon > 0$, $\tilde D_F$ is a smooth bounded function ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], 1), so products of propagators at the same momentum (as in [[§C6a.10 Feynman Rules in Momentum Space#^ex-c6a-10-1|Example §C6a.10.1]]) are defined, and $\varepsilon \to 0^+$ is taken at the end, after integrating against the external factors. The vertex deltas are tempered distributions ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]); in a connected piece attached to external points they are independent and can be integrated one after the other. Two things remain formal: loop integrals, which diverge until the theory is regularized (Remark: The first ultraviolet divergence), and the deltas of vacuum bubbles, where conservation at the last vertex is automatic and the delta is evaluated at zero, $(2\pi)^4\delta^4(0)$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]).
 >
-> *Source: written here, from [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]] and [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] · PS §4.4, p. 96*
+> *Source: written here, from [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]] and [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] · PS §4.4, p. 96*
 
 ^rem-c6a-10-2
 
@@ -387,5 +387,5 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 > [!remark]- Connections
 > - Momentum conservation at a vertex is translation invariance of the interaction, the same invariance that makes $\hat P$ a conserved Noether charge — [[§C1b.5 Noether's Theorem|§C1b.5]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]].
 > - A propagator $\frac{i}{p^2 - m^2 + i\varepsilon}$ is the Fourier transform of a Green's function, so the rules in momentum space turn integral equations into algebra, as the Fourier transform turns a linear differential equation into multiplication — [[§CA.3 Fourier Transforms and Fourier Tricks#^rem-ca-3-1|§CA.3, Remark: A linear equation becomes algebra]].
-> - Loop integrals are done after the Wick rotation, in Euclidean momentum space — [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]].
+> - Loop integrals are done after the Wick rotation, in Euclidean momentum space — [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-1|Theorem §C2b.8.1]].
 > - The momentum-space two-point function through first order, without the vacuum bubble, is assembled in [[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-4|Example §C6a.11.4]].

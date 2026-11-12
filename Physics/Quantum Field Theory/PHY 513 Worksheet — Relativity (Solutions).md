@@ -758,7 +758,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (time ordering). $T\{\hat\phi(x)\hat\phi(y)\} = \theta(x^0 - y^0)\hat\phi(x)\hat\phi(y) + \theta(y^0 - x^0)\hat\phi(y)\hat\phi(x)$. For timelike or null $x - y$ the step functions are the same in every frame (part (b), Step 3). For spacelike $x - y$ another frame may swap the order, but then $[\hat\phi(x), \hat\phi(y)] = 0$, so both orders give the same operator.
 >
-> *Checked against:* [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]] and its derivation, Steps 1–5; [[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]] (invariance of $D_W$); [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|Theorem §C2b.6.1]], 3; [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-1|§C1a.3, Remark: Why the future cannot be boosted into the past]].
+> *Checked against:* [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]] and its derivation, Steps 1–5; [[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]] (invariance of $D_W$); [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], 3; [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-1|§C1a.3, Remark: Why the future cannot be boosted into the past]].
 
 ^sol-wr-13-d
 

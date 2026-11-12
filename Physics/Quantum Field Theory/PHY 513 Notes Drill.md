@@ -589,7 +589,7 @@ The entire response to a disturbance at a point lies at future timelike or null 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^cau-c1a-3-1|§C1a.3, Caution: sgn x⁰, not ε(x⁰)]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-2|§C1a.3, Remark: Causality and time-reversal symmetry]]; orbits Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] The Orbits of SO⁺(1,3) on Spacetime, Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits; microcausality Principle [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|§C2b.4.1]] Microcausality.
+> - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^cau-c1a-3-1|§C1a.3, Caution: sgn x⁰, not ε(x⁰)]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-2|§C1a.3, Remark: Causality and time-reversal symmetry]]; orbits Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] The Orbits of SO⁺(1,3) on Spacetime, Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits; microcausality Principle [[§C2b.5 Microcausality and the Commutator Function#^pr-c2b-5-1|§C2b.5.1]] Microcausality.
 
 ### [B] Single-particle propagation amplitude
 $U(t, \mathbf x) = \langle\mathbf x|e^{-i\hat Ht}|\mathbf 0\rangle$ for $\hat H = E(\hat{\mathbf P})$, with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$, $\langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$; causality would need $U = 0$ for $|\mathbf x| > |t|$, see Definition [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|§C1a.3.1]] Single-Particle Propagation Amplitude. *Source: Lecture 2 (Sep 2), slide "Quantum Causality of Free Particle I" · the user's notes Ch. 2 §2.2 · PS §2.1*
@@ -616,7 +616,7 @@ With any number of particles, "one in, one out" happens in two orderings; at spa
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-3|§C1a.3, Remark: How field theory repairs causality]]; Principle [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|§C2b.4.1]] Microcausality, Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|§C2b.4.7]] Forward and Backward Amplitudes; orbits Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits, part 3.
+> - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-3|§C1a.3, Remark: How field theory repairs causality]]; Principle [[§C2b.5 Microcausality and the Commutator Function#^pr-c2b-5-1|§C2b.5.1]] Microcausality, Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|§C2b.5.7]] Forward and Backward Amplitudes; orbits Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits, part 3.
 
 ## Derivations T2
 
@@ -680,7 +680,7 @@ $U(z, r) = \frac{1}{2\pi^2r}\int_0^\infty dp\,p\sin(pr)e^{-iE_pz} = \frac{1}{4\p
 > - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Relativistic Amplitude as a Radial Integral, steps 1–3; [[§C1a.3 Causal Structure and the Causality of a Single Particle#^cau-c1a-3-2|§C1a.3, Caution: One symbol, two meanings]]; the boundary value Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude Is a Boundary Value.
 
 ### [PS] The exact radial integral: a Bessel function
-**[class exercise, Lecture 2]** "There's obviously a Bessel function … I won't do that because that should be your own joy and homework." The exact amplitude is $U = 2i\partial_tD_W$ with the Wightman function in closed form, see Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|§C2b.3.7]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function and Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|§C2b.3.8]] The Relativistic Amplitude at Spacelike Separation (digest B). *Source: Lecture 2 (Sep 2), slide "Saddle Point Approximation" ("Details in HW4") and transcript*
+**[class exercise, Lecture 2]** "There's obviously a Bessel function … I won't do that because that should be your own joy and homework." The exact amplitude is $U = 2i\partial_tD_W$ with the Wightman function in closed form, see Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|§C2b.4.1]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function and Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|§C2b.4.3]] The Relativistic Amplitude at Spacelike Separation (digest B). *Source: Lecture 2 (Sep 2), slide "Saddle Point Approximation" ("Details in HW4") and transcript*
 
 ^nd-cx-2-1
 
@@ -701,7 +701,7 @@ For $r > |t|$ and $m\rho \gg 1$, $\rho = \sqrt{r^2 - t^2}$, $U \simeq \frac{i m^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13 (saddle point on a contour)
-> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero, steps 1–7; the same exponent: Example [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|§CA.5.1]] The Exponent of the Wightman Function Outside the Light Cone; exact form Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|§C2b.3.8]] The Relativistic Amplitude at Spacelike Separation.
+> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero, steps 1–7; the same exponent: Example [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|§CA.5.1]] The Exponent of the Wightman Function Outside the Light Cone; exact form Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|§C2b.4.3]] The Relativistic Amplitude at Spacelike Separation.
 
 # T3. Classical field theory: action, Euler–Lagrange, Hamiltonian, mass dimension
 
@@ -1781,7 +1781,7 @@ $[\hat\phi_a(\mathbf x), \hat\pi_b(\mathbf y)] = i\delta_{ab}\delta^3(\mathbf x 
 > [!tip]- Hints: route in the notes
 > - Technique: none (postulate).
 > - Step 1: [[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-2|§C2a.1, Remark: Why a delta function, and not a Kronecker delta]] for the cells.
-> - Step 2: [[§C2b.1 Heisenberg Fields#^cau-c2b-1-1|§C2b.1, Caution: Equal times only]]; unequal times are Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|§C2b.4.10]] Commutators at Unequal Times.
+> - Step 2: [[§C2b.1 Heisenberg Fields#^cau-c2b-1-1|§C2b.1, Caution: Equal times only]]; unequal times are Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-11|§C2b.5.11]] Commutators at Unequal Times.
 > - Step 3: fermions, Principle [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|§C5b.1.6]] Equal-Time Canonical Anticommutation Relations.
 
 ### [A] The oscillator in natural units [class exercise, Lecture 4]
@@ -2090,7 +2090,7 @@ The equal-time relations hold if and only if $[\hat a_{\mathbf p}, \hat a^\dagge
 > - Technique: K9, K11.
 > - Step 1: second-route derivation, steps 1–4 (write both fields; expand all four terms; integrate the delta; the other two relations).
 > - Step 2: the first-route steps (extracted operators, KG product) are the PS3.3(c) drill; "the algebra is orthonormality in operator form".
-> - Step 3: Q6: Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|§C2b.4.5]] The Free Field Is Microcausal.
+> - Step 3: Q6: Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|§C2b.5.5]] The Free Field Is Microcausal.
 
 ### [B] The mode algebra smeared ★
 
@@ -2492,11 +2492,11 @@ $D_W(x - y) \equiv \langle0|\hat\phi(x)\hat\phi(y)|0\rangle$, the amplitude for 
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: [[§C2b.4 Microcausality and the Commutator Function#^cau-c2b-4-1|§C2b.4, Caution: One letter, four objects]]; register row "Green's functions"; [[§C2a.4 Particles and Relativistic Normalization#^rem-c2a-4-2|§C2a.4, Remark: Why ¦0⟩ is the vacuum]] (Poincaré-invariant vacuum).
+> - Step 1: [[§C2b.5 Microcausality and the Commutator Function#^cau-c2b-5-1|§C2b.5, Caution: One letter, four objects]]; register row "Green's functions"; [[§C2a.4 Particles and Relativistic Normalization#^rem-c2a-4-2|§C2a.4, Remark: Why ¦0⟩ is the vacuum]] (Poincaré-invariant vacuum).
 
 ### [B] Microcausality
 
-Local observables at spacelike separation commute; for observables built from $\hat\phi$, $[\hat\phi(x), \hat\phi(y)] = 0$ for $(x - y)^2 < 0$ suffices, see Principle [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|§C2b.4.1]] Microcausality. *Source: Lecture 5 (Sep 16), transcript ("causality clarified") · PS §2.4, p. 28 · the user's notes Ch. 5 §5.5*
+Local observables at spacelike separation commute; for observables built from $\hat\phi$, $[\hat\phi(x), \hat\phi(y)] = 0$ for $(x - y)^2 < 0$ suffices, see Principle [[§C2b.5 Microcausality and the Commutator Function#^pr-c2b-5-1|§C2b.5.1]] Microcausality. *Source: Lecture 5 (Sep 16), transcript ("causality clarified") · PS §2.4, p. 28 · the user's notes Ch. 5 §5.5*
 
 ^nd-pr-c2b-4-1
 
@@ -2506,11 +2506,11 @@ Local observables at spacelike separation commute; for observables built from $\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14.
-> - Step 1: [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-1|§C2b.4, Remark: Why the criterion is a commutator, not an amplitude]]; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|§C2b.3.3]] The Wightman Function at Spacelike Separation ($D_W \neq 0$ at spacelike separation).
+> - Step 1: [[§C2b.5 Microcausality and the Commutator Function#^rem-c2b-5-1|§C2b.5, Remark: Why the criterion is a commutator, not an amplitude]]; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|§C2b.3.3]] The Wightman Function at Spacelike Separation ($D_W \neq 0$ at spacelike separation).
 
 ### [B] Commutator function
 
-$iD(x - y) \equiv \langle0|[\hat\phi(x), \hat\phi(y)]|0\rangle$ (Pauli–Jordan function), see Definition [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|§C2b.4.1]] Commutator Function. *Source: Problem Set 4, eq. (9) · the user's notes Ch. 5 §5.5*
+$iD(x - y) \equiv \langle0|[\hat\phi(x), \hat\phi(y)]|0\rangle$ (Pauli–Jordan function), see Definition [[§C2b.5 Microcausality and the Commutator Function#^def-c2b-5-1|§C2b.5.1]] Commutator Function. *Source: Problem Set 4, eq. (9) · the user's notes Ch. 5 §5.5*
 
 ^nd-def-c2b-4-1
 
@@ -2520,11 +2520,11 @@ $iD(x - y) \equiv \langle0|[\hat\phi(x), \hat\phi(y)]|0\rangle$ (Pauli–Jordan 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Step 1: Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|§C2b.4.2]] The Field Commutator Is a c-Number; [[§C2b.4 Microcausality and the Commutator Function#^cau-c2b-4-1|§C2b.4, Caution: One letter, four objects]].
+> - Step 1: Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-2|§C2b.5.2]] The Field Commutator Is a c-Number; [[§C2b.5 Microcausality and the Commutator Function#^cau-c2b-5-1|§C2b.5, Caution: One letter, four objects]].
 
 ### [B] Hadamard function
 
-$D_1(x - y) \equiv \langle0|\{\hat\phi(x), \hat\phi(y)\}|0\rangle$, see Definition [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-2|§C2b.4.2]] Hadamard Function. *Source: Problem Set 4, eq. (10) · the user's notes Ch. 5 §5.5*
+$D_1(x - y) \equiv \langle0|\{\hat\phi(x), \hat\phi(y)\}|0\rangle$, see Definition [[§C2b.5 Microcausality and the Commutator Function#^def-c2b-5-2|§C2b.5.2]] Hadamard Function. *Source: Problem Set 4, eq. (10) · the user's notes Ch. 5 §5.5*
 
 ^nd-def-c2b-4-2
 
@@ -2534,11 +2534,11 @@ $D_1(x - y) \equiv \langle0|\{\hat\phi(x), \hat\phi(y)\}|0\rangle$, see Definiti
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-3|§C2b.4, Remark: Influence and correlation]] (influence and correlation).
+> - Step 1: [[§C2b.5 Microcausality and the Commutator Function#^rem-c2b-5-3|§C2b.5, Remark: Influence and correlation]] (influence and correlation).
 
 ### [B] One letter, four objects
 
-PS's $D(x - y)$ is the vault's $D_W$; PS name neither $D$ nor $D_1$; Yu's $D_{\mathrm{PJ}} = iD$; the Lecture 6 slides write a bare $D$ for a generic Green's function $D_C$, see [[§C2b.4 Microcausality and the Commutator Function#^cau-c2b-4-1|§C2b.4, Caution: One letter, four objects]]. *Source: Problem Set 4, Problem 2 ("Beware that PS uses an imprecise notation") · Lecture 6 (Sep 21) · Yu eq. (6.111)*
+PS's $D(x - y)$ is the vault's $D_W$; PS name neither $D$ nor $D_1$; Yu's $D_{\mathrm{PJ}} = iD$; the Lecture 6 slides write a bare $D$ for a generic Green's function $D_C$, see [[§C2b.5 Microcausality and the Commutator Function#^cau-c2b-5-1|§C2b.5, Caution: One letter, four objects]]. *Source: Problem Set 4, Problem 2 ("Beware that PS uses an imprecise notation") · Lecture 6 (Sep 21) · Yu eq. (6.111)*
 
 ^nd-cau-c2b-4-1
 
@@ -2552,7 +2552,7 @@ PS's $D(x - y)$ is the vault's $D_W$; PS name neither $D$ nor $D_1$; Yu's $D_{\m
 
 ### [B] Scalar field with a classical source
 
-$\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2 + j\phi$, so $(\partial^2 + m^2)\phi = j$, with $j$ external, smooth and of finite duration, see Model [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|§C2b.5.1]] Scalar Field with a Classical Source. *Source: Lecture 6 (Sep 21), slide "External Sources" · PS §2.4, eqs. (2.61)–(2.62) · the user's notes Ch. 6 §6.1*
+$\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2 + j\phi$, so $(\partial^2 + m^2)\phi = j$, with $j$ external, smooth and of finite duration, see Model [[§C2b.6 Green's Functions and Contours#^mod-c2b-6-1|§C2b.6.1]] Scalar Field with a Classical Source. *Source: Lecture 6 (Sep 21), slide "External Sources" · PS §2.4, eqs. (2.61)–(2.62) · the user's notes Ch. 6 §6.1*
 
 ^nd-mod-c2b-5-1
 
@@ -2566,7 +2566,7 @@ $\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2 + j\phi$, so $(\partial
 
 ### [B] Green's function of the Klein–Gordon operator
 
-$(\partial_x^2 + m^2)D_C(x - y) = -i\delta^4(x - y)$; then $\phi = \phi_0 + i\int d^4y\,D_C(x - y)j(y)$ solves the sourced equation for every $j$, see Definition [[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|§C2b.5.1]] Green's Function of the Klein–Gordon Operator. *Source: Lecture 6 (Sep 21), slide "Definition of Green's Functions" ("Proof: act with … and use linearity") · PS §2.4, eq. (2.56) · Problem Set 4, Problem 0 · the user's notes Ch. 6 §6.1*
+$(\partial_x^2 + m^2)D_C(x - y) = -i\delta^4(x - y)$; then $\phi = \phi_0 + i\int d^4y\,D_C(x - y)j(y)$ solves the sourced equation for every $j$, see Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-1|§C2b.6.1]] Green's Function of the Klein–Gordon Operator. *Source: Lecture 6 (Sep 21), slide "Definition of Green's Functions" ("Proof: act with … and use linearity") · PS §2.4, eq. (2.56) · Problem Set 4, Problem 0 · the user's notes Ch. 6 §6.1*
 
 ^nd-def-c2b-5-1
 
@@ -2578,12 +2578,12 @@ $(\partial_x^2 + m^2)D_C(x - y) = -i\delta^4(x - y)$; then $\phi = \phi_0 + i\in
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: [[§C2b.5 Green's Functions and Contours#^rem-c2b-5-1|§C2b.5, Remark: What a Green's "function" is, and why it is not unique]] (the check, non-uniqueness); Definition [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-6-1|§CA.6.1]] Fundamental Solution; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|§CA.6.8]] Convolution with a Fundamental Solution Solves the Sourced Equation.
+> - Step 1: [[§C2b.6 Green's Functions and Contours#^rem-c2b-6-1|§C2b.6, Remark: What a Green's "function" is, and why it is not unique]] (the check, non-uniqueness); Definition [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-6-1|§CA.6.1]] Fundamental Solution; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|§CA.6.8]] Convolution with a Fundamental Solution Solves the Sourced Equation.
 > - Step 2: the Dirac normalization: P2, "Pitfalls" (the Dirac normalization is $+i\delta^4$).
 
 ### [B] The Green's function of a contour
 
-For a contour $C$ in the $p^0$-plane that follows the real axis except near $p^0 = \pm E_{\mathbf p}$, $D_C(\xi) = \int\frac{d^3p}{(2\pi)^3}e^{i\mathbf p\cdot\boldsymbol\xi}\int_C\frac{dp^0}{2\pi}\frac{ie^{-ip^0\xi^0}}{(p^0)^2 - E_{\mathbf p}^2}$, see Definition [[§C2b.5 Green's Functions and Contours#^def-c2b-5-2|§C2b.5.2]] The Green's Function of a Contour. *Source: Lecture 6 (Sep 21), slides "Important Mathematical Limitation", "Green's functions and Complex Contours" · the user's notes Ch. 6 §6.4*
+For a contour $C$ in the $p^0$-plane that follows the real axis except near $p^0 = \pm E_{\mathbf p}$, $D_C(\xi) = \int\frac{d^3p}{(2\pi)^3}e^{i\mathbf p\cdot\boldsymbol\xi}\int_C\frac{dp^0}{2\pi}\frac{ie^{-ip^0\xi^0}}{(p^0)^2 - E_{\mathbf p}^2}$, see Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-2|§C2b.6.2]] The Green's Function of a Contour. *Source: Lecture 6 (Sep 21), slides "Important Mathematical Limitation", "Green's functions and Complex Contours" · the user's notes Ch. 6 §6.4*
 
 ^nd-def-c2b-5-2
 
@@ -2593,11 +2593,11 @@ For a contour $C$ in the $p^0$-plane that follows the real axis except near $p^0
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13 (contours).
-> - Step 1: [[§C2b.5 Green's Functions and Contours#^rem-c2b-5-2|§C2b.5, Remark: The pole problem; two problems that are one]] (the pole problem); P2, steps 2–3.
+> - Step 1: [[§C2b.6 Green's Functions and Contours#^rem-c2b-6-2|§C2b.6, Remark: The pole problem; two problems that are one]] (the pole problem); P2, steps 2–3.
 
 ### [B] Principal-value Green's function
 
-$\bar D \equiv \frac12(D_R + D_A)$, the average of the retarded and advanced functions, itself a Green's function, see Definition [[§C2b.5 Green's Functions and Contours#^def-c2b-5-3|§C2b.5.3]] Principal-Value Green's Function. *Source: the user's notes Ch. 6 §6.11*
+$\bar D \equiv \frac12(D_R + D_A)$, the average of the retarded and advanced functions, itself a Green's function, see Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-3|§C2b.6.3]] Principal-Value Green's Function. *Source: the user's notes Ch. 6 §6.11*
 
 ^nd-def-c2b-5-3
 
@@ -2607,11 +2607,11 @@ $\bar D \equiv \frac12(D_R + D_A)$, the average of the retarded and advanced fun
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|§C2b.7.5]] Relations in the Two-Point Family part 1; table in [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]].
+> - Step 1: Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-5|§C2b.8.5]] Relations in the Two-Point Family part 1; table in [[§C2b.8 Wick Rotation and the Two-Point Family#^rem-c2b-8-2|§C2b.8, Remark: The two-point functions at a glance]].
 
 ### [B] Time-ordered product
 
-$T\{\hat\phi(x)\hat\phi(y)\} \equiv \theta(x^0 - y^0)\hat\phi(x)\hat\phi(y) + \theta(y^0 - x^0)\hat\phi(y)\hat\phi(x)$, the later operator to the left, with $\theta(0) = \frac12$, see Definition [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|§C2b.6.1]] Time-Ordered Product. *Source: Lecture 6 (Sep 21), slide "Green's Functions and Boundary Conditions" · PS §2.4, eq. (2.60) · Yu eq. (6.108) · the user's notes Ch. 5 §5.6*
+$T\{\hat\phi(x)\hat\phi(y)\} \equiv \theta(x^0 - y^0)\hat\phi(x)\hat\phi(y) + \theta(y^0 - x^0)\hat\phi(y)\hat\phi(x)$, the later operator to the left, with $\theta(0) = \frac12$, see Definition [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-1|§C2b.7.1]] Time-Ordered Product. *Source: Lecture 6 (Sep 21), slide "Green's Functions and Boundary Conditions" · PS §2.4, eq. (2.60) · Yu eq. (6.108) · the user's notes Ch. 5 §5.6*
 
 ^nd-def-c2b-6-1
 
@@ -2622,11 +2622,11 @@ $T\{\hat\phi(x)\hat\phi(y)\} \equiv \theta(x^0 - y^0)\hat\phi(x)\hat\phi(y) + \t
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-1|§C2b.6, Caution: The step function at zero]] (the step function at zero); [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-3|§C2b.6, Caution: Names for the time-ordered product]] (names); [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-1|§C2b.6, Remark: Why the later operator stands to the left]] (why later to the left).
+> - Step 1: [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-1|§C2b.7, Caution: The step function at zero]] (the step function at zero); [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-3|§C2b.7, Caution: Names for the time-ordered product]] (names); [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-1|§C2b.7, Remark: Why the later operator stands to the left]] (why later to the left).
 
 ### [B] Anti-time-ordered product
 
-$\bar T\{\hat\phi(x)\hat\phi(y)\} \equiv \theta(y^0 - x^0)\hat\phi(x)\hat\phi(y) + \theta(x^0 - y^0)\hat\phi(y)\hat\phi(x)$, the earlier operator to the left, see Definition [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-2|§C2b.6.2]] Anti-Time-Ordered Product. *Source: the user's notes Ch. 6 §6.11*
+$\bar T\{\hat\phi(x)\hat\phi(y)\} \equiv \theta(y^0 - x^0)\hat\phi(x)\hat\phi(y) + \theta(x^0 - y^0)\hat\phi(y)\hat\phi(x)$, the earlier operator to the left, see Definition [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-2|§C2b.7.2]] Anti-Time-Ordered Product. *Source: the user's notes Ch. 6 §6.11*
 
 ^nd-def-c2b-6-2
 
@@ -2636,11 +2636,11 @@ $\bar T\{\hat\phi(x)\hat\phi(y)\} \equiv \theta(y^0 - x^0)\hat\phi(x)\hat\phi(y)
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|§C2b.6.3]] The Anti-Feynman Function; Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|§C2b.7.5]] Relations in the Two-Point Family part 2.
+> - Step 1: Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-3|§C2b.7.3]] The Anti-Feynman Function; Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-5|§C2b.8.5]] Relations in the Two-Point Family part 2.
 
 ### [B] Signs that slip
 
-$D_F(x - y) = D_R(x - y) + D_W(y - x)$ (arguments exchanged); $(\partial^2 + m^2)e^{-ip\cdot x} = (m^2 - p^2)e^{-ip\cdot x}$; closing a contour upward is always counterclockwise, see [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-2|§C2b.6, Caution: Signs that slip]]. *Source: Lecture 6 (Sep 21), slides "Evaluation of the Feynman Propagator", "Green's Functions and Boundary Conditions" · the user's notes Ch. 6 §6.7*
+$D_F(x - y) = D_R(x - y) + D_W(y - x)$ (arguments exchanged); $(\partial^2 + m^2)e^{-ip\cdot x} = (m^2 - p^2)e^{-ip\cdot x}$; closing a contour upward is always counterclockwise, see [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]]. *Source: Lecture 6 (Sep 21), slides "Evaluation of the Feynman Propagator", "Green's Functions and Boundary Conditions" · the user's notes Ch. 6 §6.7*
 
 ^nd-cau-c2b-6-2
 
@@ -2654,7 +2654,7 @@ $D_F(x - y) = D_R(x - y) + D_W(y - x)$ (arguments exchanged); $(\partial^2 + m^2
 
 ### [B] Euclidean propagator
 
-$D_E(x_E) \equiv \int\frac{d^4p_E}{(2\pi)^4}\frac{e^{ip_E\cdot x_E}}{p_E^2 + m^2}$ with $x_E = (\tau, \mathbf x)$, Euclidean products; its denominator never vanishes, see Definition [[§C2b.7 Wick Rotation and the Two-Point Family#^def-c2b-7-1|§C2b.7.1]] Euclidean Propagator. *Source: Lecture 6 (Sep 21), slide "Another perspective: the Euclidean Green's Function" · the user's notes Ch. 2 §2.2, Ch. 6 §6.10*
+$D_E(x_E) \equiv \int\frac{d^4p_E}{(2\pi)^4}\frac{e^{ip_E\cdot x_E}}{p_E^2 + m^2}$ with $x_E = (\tau, \mathbf x)$, Euclidean products; its denominator never vanishes, see Definition [[§C2b.8 Wick Rotation and the Two-Point Family#^def-c2b-8-1|§C2b.8.1]] Euclidean Propagator. *Source: Lecture 6 (Sep 21), slide "Another perspective: the Euclidean Green's Function" · the user's notes Ch. 2 §2.2, Ch. 6 §6.10*
 
 ^nd-def-c2b-7-1
 
@@ -2665,7 +2665,7 @@ $D_E(x_E) \equiv \int\frac{d^4p_E}{(2\pi)^4}\frac{e^{ip_E\cdot x_E}}{p_E^2 + m^2
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|§C2b.3.1]] The Wightman Function at Imaginary Time; [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-1|§C2b.7, Remark: Why the Feynman contour is singled out]].
+> - Step 1: Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|§C2b.3.1]] The Wightman Function at Imaginary Time; [[§C2b.8 Wick Rotation and the Two-Point Family#^rem-c2b-8-1|§C2b.8, Remark: Why the Feynman contour is singled out]].
 
 ### [B] Test functions: the spaces 𝒟 and 𝒮
 
@@ -2679,7 +2679,7 @@ $\mathcal D(\mathbb R^n)$: smooth functions vanishing outside a bounded set; $\m
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: the definition; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-1|§CA.2.1]] Regular and Singular Tempered Distributions part 1 (density of $\mathcal D$ in $\mathcal S$); Theorem [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|§C2b.8.4]] The Source Is a Test Function; Why $\bar N$ Is Finite.
+> - Step 1: the definition; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-1|§CA.2.1]] Regular and Singular Tempered Distributions part 1 (density of $\mathcal D$ in $\mathcal S$); Theorem [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-1|§C2b.9.1]] The Source Is a Test Function; Why $\bar N$ Is Finite.
 
 ### [B] Generalized function; tempered distribution
 
@@ -2707,7 +2707,7 @@ $\operatorname{supp}T$ is the complement of the largest open set on which $T$ va
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: the definition's examples; Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|§C2b.4.6]] Microcausality as a Support Statement; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|§C2b.3.6]] The Wightman Function as a Distribution: Off the Cone and on It part 2.
+> - Step 1: the definition's examples; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|§C2b.5.6]] Microcausality as a Support Statement; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|§C2b.3.6]] The Wightman Function as a Distribution: Off the Cone and on It part 2.
 
 ### [B] Derivative of a generalized function; product with a smooth function
 
@@ -2735,7 +2735,7 @@ $T_\varepsilon \to T$ means $T_\varepsilon[\varphi] \to T[\varphi]$ for every te
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§CA.2 Generalized Functions#^thm-ca-2-5|§CA.2.5]] Distributional Limits; Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|§CA.3.2]] The Fourier Transform of Tempered Distributions part 2; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|§C2b.6.10]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′.
+> - Step 1: Theorem [[§CA.2 Generalized Functions#^thm-ca-2-5|§CA.2.5]] Distributional Limits; Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|§CA.3.2]] The Fourier Transform of Tempered Distributions part 2; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|§C2b.7.9]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′.
 
 ### [B] Linear change of variables; invariant distribution
 
@@ -2763,7 +2763,7 @@ For a test function $\varphi$, $\mathcal P\int\frac{\varphi(s)}{s}ds \equiv \lim
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|§CA.6.2]] Sokhotski–Plemelj Formula; Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|§C2b.4.8]] Commutator and Hadamard Functions of the Massless Field ($D_1$ massless); Definition [[§C2b.5 Green's Functions and Contours#^def-c2b-5-3|§C2b.5.3]] Principal-Value Green's Function.
+> - Step 1: Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|§CA.6.2]] Sokhotski–Plemelj Formula; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|§C2b.5.8]] Commutator and Hadamard Functions of the Massless Field ($D_1$ massless); Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-3|§C2b.6.3]] Principal-Value Green's Function.
 
 ### [B] Operator-valued distribution
 
@@ -2914,7 +2914,7 @@ If $(\partial^2 + m^2)f = 0$ then $\tilde f(p) = 2\pi\delta(p^2 - m^2)g(p)$ and 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13 ($\delta(f(x))$).
-> - Step 1: derivation steps 1–5; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-6|§CA.2.6]] Composition of δ with a Function part 2; Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|§C2b.5.2]] A Green's Function Lives off the Shell.
+> - Step 1: derivation steps 1–5; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-6|§CA.2.6]] Composition of δ with a Function part 2; Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-2|§C2b.6.2]] A Green's Function Lives off the Shell.
 
 ### [A] Time dependence of the modes; the covariant mode expansion ★★
 
@@ -2992,7 +2992,7 @@ $\langle0|\hat\phi(f)\hat\phi(g)|0\rangle = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathb
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation steps 1–6; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|§C2b.6.4]] The Feynman Propagator as a Distribution: the Products θ·D_W.
+> - Step 1: derivation steps 1–6; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|§C2b.7.4]] The Feynman Propagator as a Distribution: the Products θ·D_W.
 
 ### [A] Lorentz invariance of the Wightman function ★★
 
@@ -3110,7 +3110,7 @@ Off the light cone $D_W$ is the real-analytic Bessel function; its singular supp
 
 ### [B] The single-particle amplitude is a time derivative of the Wightman function ★
 
-$U(z, \mathbf x) = 2i\partial_zW(z, \mathbf x)$ and $U = 2i\partial_tD_W$ in $\mathcal S'$, linking Lecture 2's single-particle amplitude to the field's two-point function, see Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|§C2b.3.7]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function. *Source: the user's notes Ch. 2 §2.2, Ch. 5 §5.4*
+$U(z, \mathbf x) = 2i\partial_zW(z, \mathbf x)$ and $U = 2i\partial_tD_W$ in $\mathcal S'$, linking Lecture 2's single-particle amplitude to the field's two-point function, see Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|§C2b.4.1]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function. *Source: the user's notes Ch. 2 §2.2, Ch. 5 §5.4*
 
 ^nd-thm-c2b-3-7
 
@@ -3124,7 +3124,7 @@ $U(z, \mathbf x) = 2i\partial_zW(z, \mathbf x)$ and $U = 2i\partial_tD_W$ in $\m
 
 ### [A] The relativistic single-particle amplitude outside the light cone ★★
 
-For $r > |t|$, $U = \frac{im^2t}{2\pi^2\rho^2}K_2(m\rho)$ with $\rho = \sqrt{r^2 - t^2}$, nonzero at every spacelike point with $t \neq 0$; for $m\rho \gg 1$, $U \propto e^{-m\rho}$, see Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|§C2b.3.8]] The Relativistic Amplitude at Spacelike Separation, Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-9|§C2b.3.9]] The Spacelike Amplitude at Large Distance. *Source: Lecture 2 (Sep 2), slides "The exact radial integral: a Bessel function", "Quantum Causality is Violated" · PS §2.1, p. 14 · the user's notes Ch. 2 §2.2*
+For $r > |t|$, $U = \frac{im^2t}{2\pi^2\rho^2}K_2(m\rho)$ with $\rho = \sqrt{r^2 - t^2}$, nonzero at every spacelike point with $t \neq 0$; for $m\rho \gg 1$, $U \propto e^{-m\rho}$, see Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|§C2b.4.3]] The Relativistic Amplitude at Spacelike Separation, Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-4|§C2b.4.4]] The Spacelike Amplitude at Large Distance. *Source: Lecture 2 (Sep 2), slides "The exact radial integral: a Bessel function", "Quantum Causality is Violated" · PS §2.1, p. 14 · the user's notes Ch. 2 §2.2*
 
 ^nd-thm-c2b-3-8
 
@@ -3135,12 +3135,12 @@ For $r > |t|$, $U = \frac{im^2t}{2\pi^2\rho^2}K_2(m\rho)$ with $\rho = \sqrt{r^2
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–7 of Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|§C2b.3.8]] The Relativistic Amplitude at Spacelike Separation; Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|§CA.5.3]] Properties of $K_\nu$ part 1.
-> - Step 2: resolution: Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|§C2b.4.7]] Forward and Backward Amplitudes; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-9|§C2b.3.9]] The Spacelike Amplitude at Large Distance for the asymptotics.
+> - Step 1: derivation steps 1–7 of Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|§C2b.4.3]] The Relativistic Amplitude at Spacelike Separation; Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|§CA.5.3]] Properties of $K_\nu$ part 1.
+> - Step 2: resolution: Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|§C2b.5.7]] Forward and Backward Amplitudes; Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-4|§C2b.4.4]] The Spacelike Amplitude at Large Distance for the asymptotics.
 
 ### [B] The spacelike amplitude at large distance ★
 
-For $r > |t|$ and $m\rho \gg 1$, $U = \frac{im^{3/2}t}{(2\pi\rho)^{3/2}\rho}e^{-m\rho}(1 + \frac{15}{8m\rho} + \cdots)$, nonzero at every spacelike point with $t \neq 0$; the leading term is the saddle-point result of Lecture 2, see Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-9|§C2b.3.9]] The Spacelike Amplitude at Large Distance. *Source: Lecture 2 (Sep 2), slide "Quantum Causality is Violated" · PS §2.1, p. 14 · the user's notes Ch. 2 §2.2*
+For $r > |t|$ and $m\rho \gg 1$, $U = \frac{im^{3/2}t}{(2\pi\rho)^{3/2}\rho}e^{-m\rho}(1 + \frac{15}{8m\rho} + \cdots)$, nonzero at every spacelike point with $t \neq 0$; the leading term is the saddle-point result of Lecture 2, see Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-4|§C2b.4.4]] The Spacelike Amplitude at Large Distance. *Source: Lecture 2 (Sep 2), slide "Quantum Causality is Violated" · PS §2.1, p. 14 · the user's notes Ch. 2 §2.2*
 
 ^nd-thm-c2b-3-9
 
@@ -3155,7 +3155,7 @@ For $r > |t|$ and $m\rho \gg 1$, $U = \frac{im^{3/2}t}{(2\pi\rho)^{3/2}\rho}e^{-
 
 ### [B] The single-particle amplitude inside the light cone ★
 
-For $|t| > r$, $U(t, \mathbf x) = \frac{m^2t}{4\pi\tau^2}H^{(2)}_2(m\tau)$ for $t > 0$, $U(-t, \mathbf x) = \overline{U(t, \mathbf x)}$, oscillating, see Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-10|§C2b.3.10]] The Relativistic Amplitude at Timelike Separation. *Source: the user's notes Ch. 2 §2.2*
+For $|t| > r$, $U(t, \mathbf x) = \frac{m^2t}{4\pi\tau^2}H^{(2)}_2(m\tau)$ for $t > 0$, $U(-t, \mathbf x) = \overline{U(t, \mathbf x)}$, oscillating, see Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-5|§C2b.4.5]] The Relativistic Amplitude at Timelike Separation. *Source: the user's notes Ch. 2 §2.2*
 
 ^nd-thm-c2b-3-10
 
@@ -3169,7 +3169,7 @@ For $|t| > r$, $U(t, \mathbf x) = \frac{m^2t}{4\pi\tau^2}H^{(2)}_2(m\tau)$ for $
 
 ### [B] Units restored in the single-particle amplitude ★
 
-Restoring $\hbar$ and $c$: $U = \frac{im^2c^3t}{2\pi^2\hbar^2\rho^2}K_2(mc\rho/\hbar)$; the leak has the range of the reduced Compton wavelength, see Example [[§C2b.3 Explicit Forms of the Wightman Function#^ex-c2b-3-1|§C2b.3.1]] Units Restored in the Single-Particle Amplitude. *Source: the user's notes Ch. 2 §2.4*
+Restoring $\hbar$ and $c$: $U = \frac{im^2c^3t}{2\pi^2\hbar^2\rho^2}K_2(mc\rho/\hbar)$; the leak has the range of the reduced Compton wavelength, see Example [[§C2b.4 The Single-Particle Amplitude in Closed Form#^ex-c2b-4-1|§C2b.4.1]] Units Restored in the Single-Particle Amplitude. *Source: the user's notes Ch. 2 §2.4*
 
 ^nd-ex-c2b-3-1
 
@@ -3184,7 +3184,7 @@ Restoring $\hbar$ and $c$: $U = \frac{im^2c^3t}{2\pi^2\hbar^2\rho^2}K_2(mc\rho/\
 
 ### [A] The field commutator is a c-number ★★
 
-$[\hat\phi(x), \hat\phi(y)] = D_W(x - y) - D_W(y - x) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}(e^{-ip\cdot(x - y)} - e^{ip\cdot(x - y)}) = iD(x - y)$, the same number in every state, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|§C2b.4.2]] The Field Commutator Is a c-Number. *Source: Lecture 5 (Sep 16), transcript ("the commutator, formed from opposite operator orderings") · PS §2.4, eq. (2.53) · the user's notes Ch. 5 §5.5*
+$[\hat\phi(x), \hat\phi(y)] = D_W(x - y) - D_W(y - x) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}(e^{-ip\cdot(x - y)} - e^{ip\cdot(x - y)}) = iD(x - y)$, the same number in every state, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-2|§C2b.5.2]] The Field Commutator Is a c-Number. *Source: Lecture 5 (Sep 16), transcript ("the commutator, formed from opposite operator orderings") · PS §2.4, eq. (2.53) · the user's notes Ch. 5 §5.5*
 
 ^nd-thm-c2b-4-2
 
@@ -3195,11 +3195,11 @@ $[\hat\phi(x), \hat\phi(y)] = D_W(x - y) - D_W(y - x) = \int\frac{d^3p}{(2\pi)^3
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9, K11.
-> - Step 1: derivation steps 1–4; [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-2|§C2b.4, Remark: Two orderings that cancel; why antiparticles must exist]] (two orderings that cancel).
+> - Step 1: derivation steps 1–4; [[§C2b.5 Microcausality and the Commutator Function#^rem-c2b-5-2|§C2b.5, Remark: Two orderings that cancel; why antiparticles must exist]] (two orderings that cancel).
 
 ### [B] The commutator and Hadamard functions as distributions ★
 
-$iD = D_W(\xi) - D_W(-\xi)$ and $D_1 = D_W(\xi) + D_W(-\xi)$ in $\mathcal S'$, real, with transforms $\tilde D = -2\pi i\operatorname{sgn}(p^0)\delta(p^2 - m^2)$, $\tilde D_1 = 2\pi\delta(p^2 - m^2)$; both solve the homogeneous equation, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|§C2b.4.4]] The Commutator and Hadamard Functions as Distributions. *Source: the user's notes Ch. 5 §5.5, §5.7 · Problem Set 4, Problem 2*
+$iD = D_W(\xi) - D_W(-\xi)$ and $D_1 = D_W(\xi) + D_W(-\xi)$ in $\mathcal S'$, real, with transforms $\tilde D = -2\pi i\operatorname{sgn}(p^0)\delta(p^2 - m^2)$, $\tilde D_1 = 2\pi\delta(p^2 - m^2)$; both solve the homogeneous equation, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|§C2b.5.4]] The Commutator and Hadamard Functions as Distributions. *Source: the user's notes Ch. 5 §5.5, §5.7 · Problem Set 4, Problem 2*
 
 ^nd-thm-c2b-4-4
 
@@ -3214,7 +3214,7 @@ $iD = D_W(\xi) - D_W(-\xi)$ and $D_1 = D_W(\xi) + D_W(-\xi)$ in $\mathcal S'$, r
 
 ### [A] The free field is microcausal ★★
 
-$D(\xi) = 0$ for $\xi^2 < 0$, while inside the cone $D$ does not vanish identically, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|§C2b.4.5]] The Free Field Is Microcausal. *Source: Lecture 5 (Sep 16), transcript ("the commutator … vanishes at spacelike separation and provides the causality condition") · PS §2.4, eq. (2.53), Fig. 2.4 · the user's notes Ch. 5 §5.5*
+$D(\xi) = 0$ for $\xi^2 < 0$, while inside the cone $D$ does not vanish identically, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|§C2b.5.5]] The Free Field Is Microcausal. *Source: Lecture 5 (Sep 16), transcript ("the commutator … vanishes at spacelike separation and provides the causality condition") · PS §2.4, eq. (2.53), Fig. 2.4 · the user's notes Ch. 5 §5.5*
 
 ^nd-thm-c2b-4-5
 
@@ -3227,11 +3227,11 @@ $D(\xi) = 0$ for $\xi^2 < 0$, while inside the cone $D$ does not vanish identica
 > [!tip]- Hints: route in the notes
 > - Technique: K14 (equal-time frame, microcausality), K1.
 > - Step 1: derivation steps 1–3 (a Lorentz transformation that reverses $\xi$, Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits part 3); step 4 (conclude); step 5 (inside the cone).
-> - Step 2: the second route (reality of $D_W$) is in the equivalence "Microcausality in three forms" below; [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-2|§C2b.4, Remark: Two orderings that cancel; why antiparticles must exist]].
+> - Step 2: the second route (reality of $D_W$) is in the equivalence "Microcausality in three forms" below; [[§C2b.5 Microcausality and the Commutator Function#^rem-c2b-5-2|§C2b.5, Remark: Two orderings that cancel; why antiparticles must exist]].
 
 ### [B] Microcausality as a support statement ★
 
-$\operatorname{supp}D \subseteq \{\xi^2 \ge 0\}$ (the cone surface for $m = 0$, the whole closed cone for $m > 0$); equivalently $[\hat\phi(f), \hat\phi(g)] = 0$ for test functions with spacelike-separated supports, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|§C2b.4.6]] Microcausality as a Support Statement. *Source: the user's notes Ch. 5 §5.5, App. A §A.4*
+$\operatorname{supp}D \subseteq \{\xi^2 \ge 0\}$ (the cone surface for $m = 0$, the whole closed cone for $m > 0$); equivalently $[\hat\phi(f), \hat\phi(g)] = 0$ for test functions with spacelike-separated supports, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|§C2b.5.6]] Microcausality as a Support Statement. *Source: the user's notes Ch. 5 §5.5, App. A §A.4*
 
 ^nd-thm-c2b-4-6
 
@@ -3245,7 +3245,7 @@ $\operatorname{supp}D \subseteq \{\xi^2 \ge 0\}$ (the cone surface for $m = 0$, 
 
 ### [B] Forward and backward amplitudes ★
 
-$U(t, \mathbf x) + U(-t, \mathbf x) = -2\partial_tD$, which vanishes outside the cone, and $U(t, \mathbf x) - U(-t, \mathbf x) = 2i\partial_tD_1$; outside the cone $U = i\partial_tD_1$, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|§C2b.4.7]] Forward and Backward Amplitudes. *Source: the user's notes Ch. 2 §2.2 (Caution "Particles moving backward in time") · Lecture 2 (Sep 2), slide "Resolution in Quantum Field Theory"*
+$U(t, \mathbf x) + U(-t, \mathbf x) = -2\partial_tD$, which vanishes outside the cone, and $U(t, \mathbf x) - U(-t, \mathbf x) = 2i\partial_tD_1$; outside the cone $U = i\partial_tD_1$, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|§C2b.5.7]] Forward and Backward Amplitudes. *Source: the user's notes Ch. 2 §2.2 (Caution "Particles moving backward in time") · Lecture 2 (Sep 2), slide "Resolution in Quantum Field Theory"*
 
 ^nd-thm-c2b-4-7
 
@@ -3255,11 +3255,11 @@ $U(t, \mathbf x) + U(-t, \mathbf x) = -2\partial_tD$, which vanishes outside the
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Step 1: derivation steps 1–5; [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-3|§C2b.4, Remark: Influence and correlation]].
+> - Step 1: derivation steps 1–5; [[§C2b.5 Microcausality and the Commutator Function#^rem-c2b-5-3|§C2b.5, Remark: Influence and correlation]].
 
 ### [PS] Commutator and Hadamard functions of the massless field
 
-$D = -\frac{1}{2\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2) = -\frac{1}{4\pi r}[\delta(t - r) - \delta(t + r)]$, $D_1 = -\frac{1}{2\pi^2}\mathcal P\frac{1}{\xi^2}$, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|§C2b.4.8]] Commutator and Hadamard Functions of the Massless Field.
+$D = -\frac{1}{2\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2) = -\frac{1}{4\pi r}[\delta(t - r) - \delta(t + r)]$, $D_1 = -\frac{1}{2\pi^2}\mathcal P\frac{1}{\xi^2}$, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|§C2b.5.8]] Commutator and Hadamard Functions of the Massless Field.
 
 ^nd-thm-c2b-4-8
 
@@ -3267,7 +3267,7 @@ $D = -\frac{1}{2\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2) = -\frac{1}{4\pi r}[\
 
 ### [PS] Commutator and Hadamard functions of the massive field
 
-Outside the cone $D = 0$, $D_1 = \frac{mK_1(mr)}{2\pi^2r}$; inside, $D = \operatorname{sgn}(\xi^0)\frac{mJ_1(m\tau)}{4\pi\tau}$, $D_1 = \frac{mY_1(m\tau)}{4\pi\tau}$; on the cone the massless delta, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|§C2b.4.9]] Commutator and Hadamard Functions of the Massive Field. The inside-the-cone forms follow from Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|§C2b.3.4]] The Wightman Function at Timelike Separation by the same relations.
+Outside the cone $D = 0$, $D_1 = \frac{mK_1(mr)}{2\pi^2r}$; inside, $D = \operatorname{sgn}(\xi^0)\frac{mJ_1(m\tau)}{4\pi\tau}$, $D_1 = \frac{mY_1(m\tau)}{4\pi\tau}$; on the cone the massless delta, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-9|§C2b.5.9]] Commutator and Hadamard Functions of the Massive Field. The inside-the-cone forms follow from Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|§C2b.3.4]] The Wightman Function at Timelike Separation by the same relations.
 
 ^nd-thm-c2b-4-9
 
@@ -3275,7 +3275,7 @@ Outside the cone $D = 0$, $D_1 = \frac{mK_1(mr)}{2\pi^2r}$; inside, $D = \operat
 
 ### [B] Commutators at unequal times ★
 
-$[\hat\phi(x), \hat\phi(y)] = iD(x - y)$, $[\hat\phi(x), \hat\pi(y)] = i\partial_{y^0}D(x - y)$, $[\hat\pi(x), \hat\pi(y)] = i\partial_{x^0}\partial_{y^0}D(x - y)$, reducing to the canonical relations at equal times, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|§C2b.4.10]] Commutators at Unequal Times. This answers the question left open in Lecture 5 ("how commutators behave at different times"). *Source: Lecture 5 (Sep 16), transcript · the user's notes Ch. 5 §5.7*
+$[\hat\phi(x), \hat\phi(y)] = iD(x - y)$, $[\hat\phi(x), \hat\pi(y)] = i\partial_{y^0}D(x - y)$, $[\hat\pi(x), \hat\pi(y)] = i\partial_{x^0}\partial_{y^0}D(x - y)$, reducing to the canonical relations at equal times, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-11|§C2b.5.11]] Commutators at Unequal Times. This answers the question left open in Lecture 5 ("how commutators behave at different times"). *Source: Lecture 5 (Sep 16), transcript · the user's notes Ch. 5 §5.7*
 
 ^nd-thm-c2b-4-10
 
@@ -3291,7 +3291,7 @@ $[\hat\phi(x), \hat\phi(y)] = iD(x - y)$, $[\hat\phi(x), \hat\pi(y)] = i\partial
 
 ### [B] Commutators at unequal times as distributions ★
 
-At fixed $t = x^0 - y^0$ the three kernels are tempered distributions in $\mathbf x - \mathbf y$ with spatial transforms $-\sin(E_{\mathbf p}t)/E_{\mathbf p}$, $\cos(E_{\mathbf p}t)$, $-E_{\mathbf p}\sin(E_{\mathbf p}t)$ (times $i$); as $t \to 0$ they tend to $0$, $i\delta^3$, $0$ in $\mathcal S'$, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|§C2b.4.11]] Commutators at Unequal Times as Distributions. *Source: the user's notes Ch. 5 §5.7*
+At fixed $t = x^0 - y^0$ the three kernels are tempered distributions in $\mathbf x - \mathbf y$ with spatial transforms $-\sin(E_{\mathbf p}t)/E_{\mathbf p}$, $\cos(E_{\mathbf p}t)$, $-E_{\mathbf p}\sin(E_{\mathbf p}t)$ (times $i$); as $t \to 0$ they tend to $0$, $i\delta^3$, $0$ in $\mathcal S'$, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-12|§C2b.5.12]] Commutators at Unequal Times as Distributions. *Source: the user's notes Ch. 5 §5.7*
 
 ^nd-thm-c2b-4-11
 
@@ -3305,7 +3305,7 @@ At fixed $t = x^0 - y^0$ the three kernels are tempered distributions in $\mathb
 
 ### [B] Cauchy data of the commutator function ★
 
-$D$ is the unique solution of $(\partial^2 + m^2)D = 0$ with $D(0, \boldsymbol\xi) = 0$, $\partial_0D(0, \boldsymbol\xi) = -\delta^3(\boldsymbol\xi)$, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|§C2b.4.12]] Cauchy Data of the Commutator Function. *Source: the user's notes Ch. 5 §5.7*
+$D$ is the unique solution of $(\partial^2 + m^2)D = 0$ with $D(0, \boldsymbol\xi) = 0$, $\partial_0D(0, \boldsymbol\xi) = -\delta^3(\boldsymbol\xi)$, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-13|§C2b.5.13]] Cauchy Data of the Commutator Function. *Source: the user's notes Ch. 5 §5.7*
 
 ^nd-thm-c2b-4-12
 
@@ -3320,7 +3320,7 @@ $D$ is the unique solution of $(\partial^2 + m^2)D = 0$ with $D(0, \boldsymbol\x
 
 ### [B] The commutator function propagates the field ★
 
-$\hat\phi(x) = -\int d^3y\,[D(x - y)\hat\pi(y) - \partial_{y^0}D(x - y)\hat\phi(y)]$ for every $y^0$; since $D$ vanishes outside the cone, $\hat\phi(x)$ is fixed by data inside the backward cone of $x$, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-13|§C2b.4.13]] The Commutator Function Propagates the Field. *Source: the user's notes Ch. 5 §5.7*
+$\hat\phi(x) = -\int d^3y\,[D(x - y)\hat\pi(y) - \partial_{y^0}D(x - y)\hat\phi(y)]$ for every $y^0$; since $D$ vanishes outside the cone, $\hat\phi(x)$ is fixed by data inside the backward cone of $x$, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-14|§C2b.5.14]] The Commutator Function Propagates the Field. *Source: the user's notes Ch. 5 §5.7*
 
 ^nd-thm-c2b-4-13
 
@@ -3331,11 +3331,11 @@ $\hat\phi(x) = -\int d^3y\,[D(x - y)\hat\pi(y) - \partial_{y^0}D(x - y)\hat\phi(
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Step 1: derivation steps 1–4; Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|§C2b.4.12]] Cauchy Data of the Commutator Function; [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-5|§C2b.4, Remark: Microcausality and the domain of dependence are one statement]].
+> - Step 1: derivation steps 1–4; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-13|§C2b.5.13]] Cauchy Data of the Commutator Function; [[§C2b.5 Microcausality and the Commutator Function#^rem-c2b-5-5|§C2b.5, Remark: Microcausality and the domain of dependence are one statement]].
 
 ### [A] A Green's function lives off the shell ★★
 
-For a tempered Green's function, $(m^2 - p^2)\tilde D_C(p) = -i$, so $\tilde D_C = \frac{i}{p^2 - m^2}$ wherever $p^2 \neq m^2$; on the shell the equation does not determine it, see Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|§C2b.5.2]] A Green's Function Lives off the Shell. *Source: Lecture 6 (Sep 21), slide "Green's Functions: Explicit Form" · PS §2.4, pp. 29–30 · the user's notes Ch. 6 §6.3–6.4*
+For a tempered Green's function, $(m^2 - p^2)\tilde D_C(p) = -i$, so $\tilde D_C = \frac{i}{p^2 - m^2}$ wherever $p^2 \neq m^2$; on the shell the equation does not determine it, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-2|§C2b.6.2]] A Green's Function Lives off the Shell. *Source: Lecture 6 (Sep 21), slide "Green's Functions: Explicit Form" · PS §2.4, pp. 29–30 · the user's notes Ch. 6 §6.3–6.4*
 
 ^nd-thm-c2b-5-2
 
@@ -3347,11 +3347,11 @@ For a tempered Green's function, $(m^2 - p^2)\tilde D_C(p) = -i$, so $\tilde D_C
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
 > - Step 1: derivation steps 1–2; P2, step 1; Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|§CA.3.4]] Rules of the Fourier Transform part 2.
-> - Step 2: Theorem [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|§C2b.1.3]] Free Fields Live on the Mass Shell; [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-2|§C2b.6, Caution: Signs that slip]].
+> - Step 2: Theorem [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|§C2b.1.3]] Free Fields Live on the Mass Shell; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]].
 
 ### [A] Contours are boundary conditions ★★
 
-Every contour passing the two poles gives a Green's function, and two contours give Green's functions that differ by a homogeneous solution built from on-shell waves: choosing a contour is choosing a boundary condition, see Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-3|§C2b.5.3]] Contours Are Boundary Conditions. *Source: Lecture 6 (Sep 21), slides "Green's functions and Complex Contours", "Green's Functions and Boundary Conditions" ("DF and DR differ only by a homogenous solution") · PS §2.4, p. 31 · the user's notes Ch. 6 §6.8*
+Every contour passing the two poles gives a Green's function, and two contours give Green's functions that differ by a homogeneous solution built from on-shell waves: choosing a contour is choosing a boundary condition, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-3|§C2b.6.3]] Contours Are Boundary Conditions. *Source: Lecture 6 (Sep 21), slides "Green's functions and Complex Contours", "Green's Functions and Boundary Conditions" ("DF and DR differ only by a homogenous solution") · PS §2.4, p. 31 · the user's notes Ch. 6 §6.8*
 
 ^nd-thm-c2b-5-3
 
@@ -3368,7 +3368,7 @@ Every contour passing the two poles gives a Green's function, and two contours g
 
 ### [B] Each contour is a fundamental solution ★
 
-$D_C$ is a tempered distribution; at fixed $\mathbf p$, $\tilde D_C = \frac{i}{(p^0 - E_{\mathbf p} + i0\sigma_+)(p^0 + E_{\mathbf p} + i0\sigma_-)}$, and $(\partial^2 + m^2)D_C = -i\delta^4$ in $\mathcal S'$; every tempered fundamental solution is $D_C + H$ with $H$ on the shell, see Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|§C2b.5.4]] Each Contour Is a Fundamental Solution. *Source: the user's notes Ch. 6 §6.2, §6.8–6.9*
+$D_C$ is a tempered distribution; at fixed $\mathbf p$, $\tilde D_C = \frac{i}{(p^0 - E_{\mathbf p} + i0\sigma_+)(p^0 + E_{\mathbf p} + i0\sigma_-)}$, and $(\partial^2 + m^2)D_C = -i\delta^4$ in $\mathcal S'$; every tempered fundamental solution is $D_C + H$ with $H$ on the shell, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-4|§C2b.6.4]] Each Contour Is a Fundamental Solution. *Source: the user's notes Ch. 6 §6.2, §6.8–6.9*
 
 ^nd-thm-c2b-5-4
 
@@ -3382,7 +3382,7 @@ $D_C$ is a tempered distribution; at fixed $\mathbf p$, $\tilde D_C = \frac{i}{(
 
 ### [A] The retarded Green's function ★★
 
-The contour $C_R$ passing above both poles gives $D_R(\xi) = \theta(\xi^0)[D_W(\xi) - D_W(-\xi)] = \theta(\xi^0)iD(\xi)$, zero unless $x$ is in the causal future of $y$; mode by mode $\theta(t)(-i\sin E_{\mathbf p}t)/E_{\mathbf p}$, see Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|§C2b.5.5]] The Retarded Green's Function. *Source: Lecture 6 (Sep 21), slides "Retarded Contour: Qualitative Behavior", "Retarded Green's Function: Explicit Evaluation" · PS §2.4, eqs. (2.54)–(2.56) · the user's notes Ch. 6 §6.6*
+The contour $C_R$ passing above both poles gives $D_R(\xi) = \theta(\xi^0)[D_W(\xi) - D_W(-\xi)] = \theta(\xi^0)iD(\xi)$, zero unless $x$ is in the causal future of $y$; mode by mode $\theta(t)(-i\sin E_{\mathbf p}t)/E_{\mathbf p}$, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|§C2b.6.5]] The Retarded Green's Function. *Source: Lecture 6 (Sep 21), slides "Retarded Contour: Qualitative Behavior", "Retarded Green's Function: Explicit Evaluation" · PS §2.4, eqs. (2.54)–(2.56) · the user's notes Ch. 6 §6.6*
 
 ^nd-thm-c2b-5-5
 
@@ -3398,11 +3398,11 @@ The contour $C_R$ passing above both poles gives $D_R(\xi) = \theta(\xi^0)[D_W(\
 > - Technique: K13 (contours, residues).
 > - Step 1: derivation steps 1–5 (P2, steps 2–6); step 6 (P2, step 7); step 7 (operator form).
 > - Step 2: residues Theorem [[§CA.4 Contour Integration#^thm-ca-4-4|§CA.4.4]] Computing Residues part 3; closing Theorem [[§CA.4 Contour Integration#^thm-ca-4-6|§CA.4.6]] Closing the Contour: the ML Estimate and Jordan's Lemma; orientation Theorem [[§CA.4 Contour Integration#^thm-ca-4-9|§CA.4.9]] Working Rules for Contour Integrals part 1.
-> - Step 3: [[§C2b.5 Green's Functions and Contours#^rem-c2b-5-3|§C2b.5, Remark: Retarded means late; the sign of the exponent carries causality]]; Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|§C2b.4.5]] The Free Field Is Microcausal.
+> - Step 3: [[§C2b.6 Green's Functions and Contours#^rem-c2b-6-3|§C2b.6, Remark: Retarded means late; the sign of the exponent carries causality]]; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|§C2b.5.5]] The Free Field Is Microcausal.
 
 ### [B] The product θ(ξ⁰)D is defined; retarded means supported in the future ★
 
-$\theta(\xi^0)D$ is defined slice by slice since $D$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$; it equals the contour's $D_R/i$; $D_R$ is the only tempered fundamental solution vanishing for $\xi^0 < 0$; for $m = 0$, $D_R = -\frac{i}{4\pi r}\delta(\xi^0 - r)$, see Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|§C2b.5.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future. *Source: the user's notes Ch. 6 §6.6, §6.2, App. A §A.4*
+$\theta(\xi^0)D$ is defined slice by slice since $D$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$; it equals the contour's $D_R/i$; $D_R$ is the only tempered fundamental solution vanishing for $\xi^0 < 0$; for $m = 0$, $D_R = -\frac{i}{4\pi r}\delta(\xi^0 - r)$, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|§C2b.6.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future. *Source: the user's notes Ch. 6 §6.6, §6.2, App. A §A.4*
 
 ^nd-thm-c2b-5-6
 
@@ -3417,7 +3417,7 @@ $\theta(\xi^0)D$ is defined slice by slice since $D$ is smooth in $\xi^0$ with v
 
 ### [A] The advanced Green's function ★ [class exercise, Lecture 6]
 
-The contour $C_A$ passing below both poles gives $D_A(\xi) = -\theta(-\xi^0)iD(\xi) = D_R(-\xi)$, zero unless $x$ is in the causal past of $y$, see Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|§C2b.5.7]] The Advanced Green's Function. Lecture 6 computed $D_R$ and $D_F$ and left the other contours as practice: "the key steps that you want to practice at home … assume something about this, then see what sign the exponential must have to be damped". *Source: Lecture 6 (Sep 21), transcript · the user's notes Ch. 6 §6.8, §6.11*
+The contour $C_A$ passing below both poles gives $D_A(\xi) = -\theta(-\xi^0)iD(\xi) = D_R(-\xi)$, zero unless $x$ is in the causal past of $y$, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-7|§C2b.6.7]] The Advanced Green's Function. Lecture 6 computed $D_R$ and $D_F$ and left the other contours as practice: "the key steps that you want to practice at home … assume something about this, then see what sign the exponential must have to be damped". *Source: Lecture 6 (Sep 21), transcript · the user's notes Ch. 6 §6.8, §6.11*
 
 ^nd-thm-c2b-5-7
 
@@ -3432,7 +3432,7 @@ The contour $C_A$ passing below both poles gives $D_A(\xi) = -\theta(-\xi^0)iD(\
 
 ### [A] Practise the contour choice for every contour [class exercise, Lecture 6]
 
-For each of the four contours (retarded, advanced, Feynman, anti-Feynman) and each sign of $t$: decide where $e^{-ip^0t}$ decays, close there, check the arc, collect the enclosed residues with the orientation sign, and recognize the result in terms of $D_W(\pm\xi)$. Larsen: "See if you can get the contour to make the whole thing go away. If not, where is the spot that obstruction?"; the transcript summary lists it as the action item. No single box; the procedure is P2 and the four results are Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|§C2b.5.5]] The Retarded Green's Function, Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|§C2b.5.7]] The Advanced Green's Function, Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|§C2b.6.2]] The Feynman Propagator, Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|§C2b.6.3]] The Anti-Feynman Function. *Source: Lecture 6 (Sep 21), transcript and summary*
+For each of the four contours (retarded, advanced, Feynman, anti-Feynman) and each sign of $t$: decide where $e^{-ip^0t}$ decays, close there, check the arc, collect the enclosed residues with the orientation sign, and recognize the result in terms of $D_W(\pm\xi)$. Larsen: "See if you can get the contour to make the whole thing go away. If not, where is the spot that obstruction?"; the transcript summary lists it as the action item. No single box; the procedure is P2 and the four results are Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|§C2b.6.5]] The Retarded Green's Function, Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-7|§C2b.6.7]] The Advanced Green's Function, Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|§C2b.7.2]] The Feynman Propagator, Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-3|§C2b.7.3]] The Anti-Feynman Function. *Source: Lecture 6 (Sep 21), transcript and summary*
 
 ^nd-cx-6-1
 
@@ -3445,11 +3445,11 @@ For each of the four contours (retarded, advanced, Feynman, anti-Feynman) and ea
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
 > - Step 1: P2, steps 2–6 and its "Instances" table.
-> - Step 2: orientation Theorem [[§CA.4 Contour Integration#^thm-ca-4-9|§CA.4.9]] Working Rules for Contour Integrals part 1; [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-2|§C2b.6, Caution: Signs that slip]].
+> - Step 2: orientation Theorem [[§CA.4 Contour Integration#^thm-ca-4-9|§CA.4.9]] Working Rules for Contour Integrals part 1; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]].
 
 ### [B] Properties of time ordering ★
 
-$T\{\hat\phi(x)\hat\phi(y)\}$ is symmetric; at equal times it gives $\hat\phi\hat\phi$ (ambiguous for $\hat\phi\hat\pi$); it is frame independent because of microcausality; $\partial_{x^0}T\{\hat A(x)\hat B(y)\} = T\{\partial_0\hat A\hat B\} + \delta(x^0 - y^0)[\hat A(x), \hat B(y)]$, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|§C2b.6.1]] Properties of Time Ordering. *Source: the user's notes Ch. 5 §5.6, Ch. 6 §6.7 · Yu eqs. (6.108)–(6.113)*
+$T\{\hat\phi(x)\hat\phi(y)\}$ is symmetric; at equal times it gives $\hat\phi\hat\phi$ (ambiguous for $\hat\phi\hat\pi$); it is frame independent because of microcausality; $\partial_{x^0}T\{\hat A(x)\hat B(y)\} = T\{\partial_0\hat A\hat B\} + \delta(x^0 - y^0)[\hat A(x), \hat B(y)]$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|§C2b.7.1]] Properties of Time Ordering. *Source: the user's notes Ch. 5 §5.6, Ch. 6 §6.7 · Yu eqs. (6.108)–(6.113)*
 
 ^nd-thm-c2b-6-1
 
@@ -3460,11 +3460,11 @@ $T\{\hat\phi(x)\hat\phi(y)\}$ is symmetric; at equal times it gives $\hat\phi\ha
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14 (microcausality), K11.
-> - Step 1: derivation steps 1–5; Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|§C2b.4.5]] The Free Field Is Microcausal; $\theta' = \delta$, Theorem [[§CA.2 Generalized Functions#^thm-ca-2-4|§CA.2.4]] Every Generalized Function Is Differentiable.
+> - Step 1: derivation steps 1–5; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|§C2b.5.5]] The Free Field Is Microcausal; $\theta' = \delta$, Theorem [[§CA.2 Generalized Functions#^thm-ca-2-4|§CA.2.4]] Every Generalized Function Is Differentiable.
 
 ### [A] The Feynman propagator by contour integration ★★
 
-The Feynman contour, below $-E_{\mathbf p}$ and above $+E_{\mathbf p}$, gives $D_F(\xi) = \theta(\xi^0)D_W(\xi) + \theta(-\xi^0)D_W(-\xi) = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$; $D_F$ is even, invariant, and $D_F = D_R + D_W(-\xi)$, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|§C2b.6.2]] The Feynman Propagator. The operator side ($\theta D_W + \theta D_W$ is the time-ordered product) → drilled as [[PHY 513 PS Drill#^ps4-4-a|PS4.4(a)]]. *Source: Lecture 6 (Sep 21), slides "The Feynman Propagator", "Evaluation of the Feynman Propagator", "Green's Functions and Boundary Conditions" · PS §2.4, eqs. (2.59)–(2.60) · the user's notes Ch. 6 §6.7*
+The Feynman contour, below $-E_{\mathbf p}$ and above $+E_{\mathbf p}$, gives $D_F(\xi) = \theta(\xi^0)D_W(\xi) + \theta(-\xi^0)D_W(-\xi) = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$; $D_F$ is even, invariant, and $D_F = D_R + D_W(-\xi)$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|§C2b.7.2]] The Feynman Propagator. The operator side ($\theta D_W + \theta D_W$ is the time-ordered product) → drilled as [[PHY 513 PS Drill#^ps4-4-a|PS4.4(a)]]. *Source: Lecture 6 (Sep 21), slides "The Feynman Propagator", "Evaluation of the Feynman Propagator", "Green's Functions and Boundary Conditions" · PS §2.4, eqs. (2.59)–(2.60) · the user's notes Ch. 6 §6.7*
 
 ^nd-thm-c2b-6-2
 
@@ -3479,11 +3479,11 @@ The Feynman contour, below $-E_{\mathbf p}$ and above $+E_{\mathbf p}$, gives $D
 > [!tip]- Hints: route in the notes
 > - Technique: K13, K14.
 > - Step 1: derivation steps 1–4 (set up, $t > 0$, $t < 0$, relabel; P2, steps 2–6); step 5 (operator side); step 6 (properties).
-> - Step 2: [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-2|§C2b.6, Caution: Signs that slip]]; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|§C2b.6.1]] Properties of Time Ordering part 3 for invariance.
+> - Step 2: [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]]; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|§C2b.7.1]] Properties of Time Ordering part 3 for invariance.
 
 ### [A] The anti-Feynman function ★ [class exercise, Lecture 6]
 
-The contour above $-E_{\mathbf p}$ and below $+E_{\mathbf p}$ gives $D_{\bar F}(\xi) = -\theta(\xi^0)D_W(-\xi) - \theta(-\xi^0)D_W(\xi) = -\langle0|\bar T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|§C2b.6.3]] The Anti-Feynman Function. One of the contours left to practise in Lecture 6. *Source: Lecture 6 (Sep 21), transcript · the user's notes Ch. 6 §6.8, §6.11*
+The contour above $-E_{\mathbf p}$ and below $+E_{\mathbf p}$ gives $D_{\bar F}(\xi) = -\theta(\xi^0)D_W(-\xi) - \theta(-\xi^0)D_W(\xi) = -\langle0|\bar T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-3|§C2b.7.3]] The Anti-Feynman Function. One of the contours left to practise in Lecture 6. *Source: Lecture 6 (Sep 21), transcript · the user's notes Ch. 6 §6.8, §6.11*
 
 ^nd-thm-c2b-6-3
 
@@ -3493,11 +3493,11 @@ The contour above $-E_{\mathbf p}$ and below $+E_{\mathbf p}$ gives $D_{\bar F}(
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–3; Definition [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-2|§C2b.6.2]] Anti-Time-Ordered Product.
+> - Step 1: derivation steps 1–3; Definition [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-2|§C2b.7.2]] Anti-Time-Ordered Product.
 
 ### [B] The Feynman propagator as a distribution: the products θ·D_W ★
 
-$D_W(\pm\xi)$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$, so $\theta(\pm\xi^0)D_W(\pm\xi)$ are defined slice by slice and $D_F \in \mathcal S'(\mathbb R^4)$; at $\xi = 0$ the slice definition is the unique extension that is a fundamental solution, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|§C2b.6.4]] The Feynman Propagator as a Distribution: the Products θ·D_W. *Source: the user's notes Ch. 5 §5.6, Ch. 6 §6.2, §6.7*
+$D_W(\pm\xi)$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$, so $\theta(\pm\xi^0)D_W(\pm\xi)$ are defined slice by slice and $D_F \in \mathcal S'(\mathbb R^4)$; at $\xi = 0$ the slice definition is the unique extension that is a fundamental solution, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|§C2b.7.4]] The Feynman Propagator as a Distribution: the Products θ·D_W. *Source: the user's notes Ch. 5 §5.6, Ch. 6 §6.2, §6.7*
 
 ^nd-thm-c2b-6-4
 
@@ -3507,11 +3507,11 @@ $D_W(\pm\xi)$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$, so
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–4; Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|§C2b.5.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future for the same argument with $D$.
+> - Step 1: derivation steps 1–4; Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|§C2b.6.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future for the same argument with $D$.
 
 ### [PS] The free Schwinger–Dyson equation
 
-For distinct times, $(\partial_x^2 + m^2)T\{\hat\phi(x)\hat\phi(y_1)\cdots\hat\phi(y_n)\} = -i\sum_k\delta^4(x - y_k)T\{\cdots\widehat{\hat\phi(y_k)}\cdots\}$; for $n = 1$, $(\partial^2 + m^2)D_F = -i\delta^4$, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|§C2b.6.5]] The Free Schwinger–Dyson Equation. The general-$n$ case repeats the $n = 1$ computation between consecutive times.
+For distinct times, $(\partial_x^2 + m^2)T\{\hat\phi(x)\hat\phi(y_1)\cdots\hat\phi(y_n)\} = -i\sum_k\delta^4(x - y_k)T\{\cdots\widehat{\hat\phi(y_k)}\cdots\}$; for $n = 1$, $(\partial^2 + m^2)D_F = -i\delta^4$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-5|§C2b.7.5]] The Free Schwinger–Dyson Equation. The general-$n$ case repeats the $n = 1$ computation between consecutive times.
 
 ^nd-thm-c2b-6-5
 
@@ -3519,7 +3519,7 @@ For distinct times, $(\partial_x^2 + m^2)T\{\hat\phi(x)\hat\phi(y_1)\cdots\hat\p
 
 ### [B] Contractions: normal ordering against time ordering ★
 
-$\hat\phi(x)\hat\phi(y) = :\!\hat\phi(x)\hat\phi(y)\!: + D_W(x - y)$ and $T\{\hat\phi(x)\hat\phi(y)\} = :\!\hat\phi(x)\hat\phi(y)\!: + D_F(x - y)$, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|§C2b.6.6]] Contractions: Normal Ordering against Time Ordering. *Source: the user's notes Ch. 6 §6.7 ("a first look at Wick's theorem") · Yu eqs. (6.132)–(6.133)*
+$\hat\phi(x)\hat\phi(y) = :\!\hat\phi(x)\hat\phi(y)\!: + D_W(x - y)$ and $T\{\hat\phi(x)\hat\phi(y)\} = :\!\hat\phi(x)\hat\phi(y)\!: + D_F(x - y)$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|§C2b.7.6]] Contractions: Normal Ordering against Time Ordering. *Source: the user's notes Ch. 6 §6.7 ("a first look at Wick's theorem") · Yu eqs. (6.132)–(6.133)*
 
 ^nd-thm-c2b-6-6
 
@@ -3535,7 +3535,7 @@ $\hat\phi(x)\hat\phi(y) = :\!\hat\phi(x)\hat\phi(y)\!: + D_W(x - y)$ and $T\{\ha
 
 ### [B] Normal ordering removes the coincident singularity ★
 
-Between wave-packet states $:\!\hat\phi(x)\hat\phi(y)\!:$ has smooth matrix elements, including at $x = y$, so $:\!\hat\phi^2\!:$ is defined; the whole coincident singularity sits in the c-number $D_W$, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-7|§C2b.6.7]] Normal Ordering Removes the Coincident Singularity. *Source: the user's notes Ch. 6 §6.2, §6.7*
+Between wave-packet states $:\!\hat\phi(x)\hat\phi(y)\!:$ has smooth matrix elements, including at $x = y$, so $:\!\hat\phi^2\!:$ is defined; the whole coincident singularity sits in the c-number $D_W$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-7|§C2b.7.7]] Normal Ordering Removes the Coincident Singularity. *Source: the user's notes Ch. 6 §6.2, §6.7*
 
 ^nd-thm-c2b-6-7
 
@@ -3549,7 +3549,7 @@ Between wave-packet states $:\!\hat\phi(x)\hat\phi(y)\!:$ has smooth matrix elem
 
 ### [A] The iε prescriptions ★★ [class exercise, Lecture 6]
 
-Moving the poles off the real axis is equivalent to deforming the contour: $\tilde D_F = \frac{i}{p^2 - m^2 + i\varepsilon}$, $\tilde D_{\bar F} = \frac{i}{p^2 - m^2 - i\varepsilon}$, $\tilde D_R = \frac{i}{(p^0 + i\varepsilon)^2 - E_{\mathbf p}^2}$, $\tilde D_A = \frac{i}{(p^0 - i\varepsilon)^2 - E_{\mathbf p}^2}$, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|§C2b.6.9]] The $i\varepsilon$ Prescriptions. Larsen left the pole positions to the class: "It's up to you to go and say, oh, where do I have my zeros?". *Source: Lecture 6 (Sep 21), slides "Deforming Integrand: the Feynman Propagator", "Relativistic Form of Feynman Propagator"; transcript · PS §2.4, eq. (2.59) · Yu eq. (6.210) · the user's notes Ch. 6 §6.9*
+Moving the poles off the real axis is equivalent to deforming the contour: $\tilde D_F = \frac{i}{p^2 - m^2 + i\varepsilon}$, $\tilde D_{\bar F} = \frac{i}{p^2 - m^2 - i\varepsilon}$, $\tilde D_R = \frac{i}{(p^0 + i\varepsilon)^2 - E_{\mathbf p}^2}$, $\tilde D_A = \frac{i}{(p^0 - i\varepsilon)^2 - E_{\mathbf p}^2}$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|§C2b.7.10]] The $i\varepsilon$ Prescriptions. Larsen left the pole positions to the class: "It's up to you to go and say, oh, where do I have my zeros?". *Source: Lecture 6 (Sep 21), slides "Deforming Integrand: the Feynman Propagator", "Relativistic Form of Feynman Propagator"; transcript · PS §2.4, eq. (2.59) · Yu eq. (6.210) · the user's notes Ch. 6 §6.9*
 
 ^nd-thm-c2b-6-9
 
@@ -3566,7 +3566,7 @@ Moving the poles off the real axis is equivalent to deforming the contour: $\til
 
 ### [B] The iε prescription is a limit in 𝒮′ ★
 
-For $\varepsilon > 0$, $i/(p^2 - m^2 + i\varepsilon)$ is a bounded smooth function; as $\varepsilon \to 0^+$ it tends to $i\mathcal P\frac{1}{p^2 - m^2} + \pi\delta(p^2 - m^2)$ in $\mathcal S'$, independently of how the infinitesimal is written, and its transform is the contour's $D_F$, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|§C2b.6.10]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′. *Source: the user's notes Ch. 6 §6.9*
+For $\varepsilon > 0$, $i/(p^2 - m^2 + i\varepsilon)$ is a bounded smooth function; as $\varepsilon \to 0^+$ it tends to $i\mathcal P\frac{1}{p^2 - m^2} + \pi\delta(p^2 - m^2)$ in $\mathcal S'$, independently of how the infinitesimal is written, and its transform is the contour's $D_F$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|§C2b.7.9]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′. *Source: the user's notes Ch. 6 §6.9*
 
 ^nd-thm-c2b-6-10
 
@@ -3580,7 +3580,7 @@ For $\varepsilon > 0$, $i/(p^2 - m^2 + i\varepsilon)$ is a bounded smooth functi
 
 ### [B] Differences on the mass shell ★
 
-$\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$, $\tilde D_R - \tilde D_A = 2\pi\operatorname{sgn}(p^0)\delta(p^2 - m^2)$, $\tilde D_W = 2\pi\theta(p^0)\delta(p^2 - m^2)$, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-11|§C2b.6.11]] Differences on the Mass Shell. *Source: the user's notes Ch. 6 §6.9*
+$\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$, $\tilde D_R - \tilde D_A = 2\pi\operatorname{sgn}(p^0)\delta(p^2 - m^2)$, $\tilde D_W = 2\pi\theta(p^0)\delta(p^2 - m^2)$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-11|§C2b.7.11]] Differences on the Mass Shell. *Source: the user's notes Ch. 6 §6.9*
 
 ^nd-thm-c2b-6-11
 
@@ -3594,7 +3594,7 @@ $\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$, $\tilde D_R - \tilde D
 
 ### [A] Wick rotation of a momentum integral ★★
 
-If $F$ is analytic in the first and third quadrants of the $p^0$-plane and decays fast enough, the real $p^0$ axis can be rotated counterclockwise onto $p^0 = ip_4$ without crossing a Feynman pole, and $\int\frac{d^4p}{(2\pi)^4}\frac{iF(p)}{p^2 - m^2 + i\varepsilon} = \int\frac{d^4p_E}{(2\pi)^4}\frac{F(ip_4, \mathbf p)}{p_E^2 + m^2}$, see Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|§C2b.7.1]] Wick Rotation of a Momentum Integral. *Source: Lecture 6 (Sep 21), slide "Another perspective: the Euclidean Green's Function" ("rotate 90° counter-clockwise") · the user's notes Ch. 6 §6.10*
+If $F$ is analytic in the first and third quadrants of the $p^0$-plane and decays fast enough, the real $p^0$ axis can be rotated counterclockwise onto $p^0 = ip_4$ without crossing a Feynman pole, and $\int\frac{d^4p}{(2\pi)^4}\frac{iF(p)}{p^2 - m^2 + i\varepsilon} = \int\frac{d^4p_E}{(2\pi)^4}\frac{F(ip_4, \mathbf p)}{p_E^2 + m^2}$, see Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-1|§C2b.8.1]] Wick Rotation of a Momentum Integral. *Source: Lecture 6 (Sep 21), slide "Another perspective: the Euclidean Green's Function" ("rotate 90° counter-clockwise") · the user's notes Ch. 6 §6.10*
 
 ^nd-thm-c2b-7-1
 
@@ -3608,11 +3608,11 @@ If $F$ is analytic in the first and third quadrants of the $p^0$-plane and decay
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
 > - Step 1: derivation steps 1–4; Cauchy Theorem [[§CA.4 Contour Integration#^thm-ca-4-2|§CA.4.2]] Cauchy's Theorem; Deformation of Contours.
-> - Step 2: P2, "Pitfalls" (Wick rotation with a time); Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-2|§C2b.7.2]] The Feynman Function at Imaginary Time.
+> - Step 2: P2, "Pitfalls" (Wick rotation with a time); Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-2|§C2b.8.2]] The Feynman Function at Imaginary Time.
 
 ### [B] The Feynman function at imaginary time ★
 
-With $t = -i\tau$, $\tau > 0$, $D_F(-i\tau, \boldsymbol\xi) = D_E(\tau, \boldsymbol\xi)$, see Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-2|§C2b.7.2]] The Feynman Function at Imaginary Time. *Source: Lecture 6 (Sep 21) · the user's notes Ch. 6 §6.10*
+With $t = -i\tau$, $\tau > 0$, $D_F(-i\tau, \boldsymbol\xi) = D_E(\tau, \boldsymbol\xi)$, see Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-2|§C2b.8.2]] The Feynman Function at Imaginary Time. *Source: Lecture 6 (Sep 21) · the user's notes Ch. 6 §6.10*
 
 ^nd-thm-c2b-7-2
 
@@ -3626,7 +3626,7 @@ With $t = -i\tau$, $\tau > 0$, $D_F(-i\tau, \boldsymbol\xi) = D_E(\tau, \boldsym
 
 ### [B] The Feynman function in position space ★
 
-$D_F(\xi) = \frac{mK_1(ms)}{4\pi^2s}$ with $s = \sqrt{-\xi^2 + i\varepsilon}$ for all real $\xi$; even, real at spacelike separation, with the same branch for both signs of $\xi^0$: the infinitesimal Wick rotation $t \to t(1 - i\varepsilon)$, see Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-3|§C2b.7.3]] The Feynman Function in Position Space. *Source: the user's notes Ch. 6 §6.10*
+$D_F(\xi) = \frac{mK_1(ms)}{4\pi^2s}$ with $s = \sqrt{-\xi^2 + i\varepsilon}$ for all real $\xi$; even, real at spacelike separation, with the same branch for both signs of $\xi^0$: the infinitesimal Wick rotation $t \to t(1 - i\varepsilon)$, see Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-3|§C2b.8.3]] The Feynman Function in Position Space. *Source: the user's notes Ch. 6 §6.10*
 
 ^nd-thm-c2b-7-3
 
@@ -3640,7 +3640,7 @@ $D_F(\xi) = \frac{mK_1(ms)}{4\pi^2s}$ with $s = \sqrt{-\xi^2 + i\varepsilon}$ fo
 
 ### [A] The late-time field of a classical source ★★
 
-$\hat\phi(x) = \hat\phi_0(x) + i\int d^4y\,D_R(x - y)j(y)$; after the source has acted, $\hat\phi$ is free with $\hat b_{\mathbf p} = \hat a_{\mathbf p} + \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}|_{p^0 = E_{\mathbf p}}$, and $[\hat b_{\mathbf p}, \hat b^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, see Theorem [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|§C2b.8.1]] The Late-Time Field. *Source: Lecture 6 (Sep 21), slides "Particle Production by Classical Source I–II" · PS §2.4, eqs. (2.63)–(2.64) · the user's notes Ch. 6 §6.13*
+$\hat\phi(x) = \hat\phi_0(x) + i\int d^4y\,D_R(x - y)j(y)$; after the source has acted, $\hat\phi$ is free with $\hat b_{\mathbf p} = \hat a_{\mathbf p} + \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}|_{p^0 = E_{\mathbf p}}$, and $[\hat b_{\mathbf p}, \hat b^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, see Theorem [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-2|§C2b.9.2]] The Late-Time Field. *Source: Lecture 6 (Sep 21), slides "Particle Production by Classical Source I–II" · PS §2.4, eqs. (2.63)–(2.64) · the user's notes Ch. 6 §6.13*
 
 ^nd-thm-c2b-8-1
 
@@ -3653,11 +3653,11 @@ $\hat\phi(x) = \hat\phi_0(x) + i\int d^4y\,D_R(x - y)j(y)$; after the source has
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9, K13.
-> - Step 1: derivation steps 1–6; Definition [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|§CA.3.1]] Fourier Transform in Space and Spacetime; [[§C2b.8 Particle Production by a Classical Source#^rem-c2b-8-2|§C2b.8, Remark: The boundary condition was physics]] (the boundary condition was physics).
+> - Step 1: derivation steps 1–6; Definition [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|§CA.3.1]] Fourier Transform in Space and Spacetime; [[§C2b.9 Particle Production by a Classical Source#^rem-c2b-9-2|§C2b.9, Remark: The boundary condition was physics]] (the boundary condition was physics).
 
 ### [B] The final state is a coherent state ★
 
-$\hat b_{\mathbf p}|0\rangle = \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}|0\rangle$: the in-vacuum is a coherent state of the out-particles with $\eta_{\mathbf p} = i\tilde j(E_{\mathbf p}, \mathbf p)$, and the number produced is Poisson distributed, see Theorem [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-2|§C2b.8.2]] The Final State Is a Coherent State. *Source: the user's notes Ch. 6 §6.13*
+$\hat b_{\mathbf p}|0\rangle = \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}|0\rangle$: the in-vacuum is a coherent state of the out-particles with $\eta_{\mathbf p} = i\tilde j(E_{\mathbf p}, \mathbf p)$, and the number produced is Poisson distributed, see Theorem [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-3|§C2b.9.3]] The Final State Is a Coherent State. *Source: the user's notes Ch. 6 §6.13*
 
 ^nd-thm-c2b-8-2
 
@@ -3671,7 +3671,7 @@ $\hat b_{\mathbf p}|0\rangle = \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}|0\rang
 
 ### [A] Energy and number of particles produced ★★
 
-$\Delta E = \int\frac{d^3p}{(2\pi)^3}\frac12|\tilde j(p)|^2$ and $\bar N = \int\frac{d^3p}{(2\pi)^3}\frac{|\tilde j(p)|^2}{2E_{\mathbf p}}$, $p^0 = E_{\mathbf p}$, see Theorem [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-3|§C2b.8.3]] Energy and Number of Particles Produced. *Source: Lecture 6 (Sep 21), slide "Particle Production by Classical Source: Interpretation" · PS §2.4, eqs. (2.65)–(2.66) · the user's notes Ch. 6 §6.13*
+$\Delta E = \int\frac{d^3p}{(2\pi)^3}\frac12|\tilde j(p)|^2$ and $\bar N = \int\frac{d^3p}{(2\pi)^3}\frac{|\tilde j(p)|^2}{2E_{\mathbf p}}$, $p^0 = E_{\mathbf p}$, see Theorem [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-4|§C2b.9.4]] Energy and Number of Particles Produced. *Source: Lecture 6 (Sep 21), slide "Particle Production by Classical Source: Interpretation" · PS §2.4, eqs. (2.65)–(2.66) · the user's notes Ch. 6 §6.13*
 
 ^nd-thm-c2b-8-3
 
@@ -3683,11 +3683,11 @@ $\Delta E = \int\frac{d^3p}{(2\pi)^3}\frac12|\tilde j(p)|^2$ and $\bar N = \int\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9, K11.
-> - Step 1: derivation steps 1–4; [[§C2b.8 Particle Production by a Classical Source#^rem-c2b-8-1|§C2b.8, Remark: Only the on-shell part of the source radiates]] (only the on-shell part radiates).
+> - Step 1: derivation steps 1–4; [[§C2b.9 Particle Production by a Classical Source#^rem-c2b-9-1|§C2b.9, Remark: Only the on-shell part of the source radiates]] (only the on-shell part radiates).
 
 ### [B] The source is a test function; why N̄ is finite ★
 
-For $j \in \mathcal D(\mathbb R^4)$, $\tilde j \in \mathcal S$, so $\bar N$ and $\Delta E$ are finite; $\bar N = \|\hat\phi_0(j)|0\rangle\|^2$; an instantaneous point source produces infinitely many particles, see Theorem [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|§C2b.8.4]] The Source Is a Test Function; Why $\bar N$ Is Finite. *Source: the user's notes Ch. 6 §6.13, §6.2 · Problem Set 4, Problem 0*
+For $j \in \mathcal D(\mathbb R^4)$, $\tilde j \in \mathcal S$, so $\bar N$ and $\Delta E$ are finite; $\bar N = \|\hat\phi_0(j)|0\rangle\|^2$; an instantaneous point source produces infinitely many particles, see Theorem [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-1|§C2b.9.1]] The Source Is a Test Function; Why $\bar N$ Is Finite. *Source: the user's notes Ch. 6 §6.13, §6.2 · Problem Set 4, Problem 0*
 
 ^nd-thm-c2b-8-4
 
@@ -3701,7 +3701,7 @@ For $j \in \mathcal D(\mathbb R^4)$, $\tilde j \in \mathcal S$, so $\bar N$ and 
 
 ### [B] A point source switched on and off ★
 
-For $j = g\delta^3(\mathbf x)e^{-t^2/2T^2}/\sqrt{2\pi}T$, $\bar N = \frac{g^2m^2}{16\pi^2}e^{-z}[K_1(z) - K_0(z)]$ with $z = \frac12m^2T^2$; sudden switching gives $\bar N \simeq g^2/8\pi^2T^2$, adiabatic switching an exponentially small $\bar N$, see Example [[§C2b.8 Particle Production by a Classical Source#^ex-c2b-8-1|§C2b.8.1]] A Point Source Switched On and Off. *Source: worked in the vault from the user's notes Ch. 6 §6.13 and PS eq. (2.66)*
+For $j = g\delta^3(\mathbf x)e^{-t^2/2T^2}/\sqrt{2\pi}T$, $\bar N = \frac{g^2m^2}{16\pi^2}e^{-z}[K_1(z) - K_0(z)]$ with $z = \frac12m^2T^2$; sudden switching gives $\bar N \simeq g^2/8\pi^2T^2$, adiabatic switching an exponentially small $\bar N$, see Example [[§C2b.9 Particle Production by a Classical Source#^ex-c2b-9-1|§C2b.9.1]] A Point Source Switched On and Off. *Source: worked in the vault from the user's notes Ch. 6 §6.13 and PS eq. (2.66)*
 
 ^nd-ex-c2b-8-1
 
@@ -3784,7 +3784,7 @@ If $\operatorname{supp}T \subseteq \{a\}$ then $T = \sum_{|\alpha| \le N}c_\alph
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|§C2b.5.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions part 3.
+> - Step 1: Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|§C2b.6.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions part 3.
 
 ### [C] Integration by parts; the gradient of a delta function ★
 
@@ -3812,7 +3812,7 @@ Every generalized function has derivatives of all orders; $\theta' = \delta$ and
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|§C2b.6.1]] Properties of Time Ordering part 4; P2, step 7.
+> - Step 1: derivation; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|§C2b.7.1]] Properties of Time Ordering part 4; P2, step 7.
 
 ### [C] Distributional limits; nascent delta functions ★
 
@@ -3869,7 +3869,7 @@ $gT$ is defined for smooth $g$; $ST$ is defined when the singular supports are d
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|§C2b.5.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future part 2.
+> - Step 1: derivation; Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|§C2b.6.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future part 2.
 
 ### [C] Products without a value: θ·δ, δ² and δ(0) ★
 
@@ -3883,7 +3883,7 @@ With smooth regularizations, $\theta_\varepsilon\delta_\varepsilon \to c\delta$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; Theorem [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|§C2a.3.3]] δ³(0) Has No Value; in a Box It Is the Volume; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|§C2b.6.1]] Properties of Time Ordering; [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-1|§C2b.6, Caution: The step function at zero]].
+> - Step 1: derivation; Theorem [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|§C2a.3.3]] δ³(0) Has No Value; in a Box It Is the Volume; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|§C2b.7.1]] Properties of Time Ordering; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-1|§C2b.7, Caution: The step function at zero]].
 
 ### [C] Box regularization of δ³(0) ★
 
@@ -3939,7 +3939,7 @@ $\tilde T[\varphi] \equiv T[\tilde\varphi]$ is a bijection of $\mathcal S'$, con
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|§C2b.6.10]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′ part 3.
+> - Step 1: derivation; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|§C2b.7.9]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′ part 3.
 
 ### [C] Plane waves integrate to a delta function ★
 
@@ -3968,7 +3968,7 @@ Plane waves give deltas; $\partial_\mu \leftrightarrow -ip_\mu$, so $\partial^2 
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; [[§CA.3 Fourier Transforms and Fourier Tricks#^rem-ca-3-1|§CA.3, Remark: A linear equation becomes algebra]]; [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-2|§C2b.6, Caution: Signs that slip]].
+> - Step 1: derivation; [[§CA.3 Fourier Transforms and Fourier Tricks#^rem-ca-3-1|§CA.3, Remark: A linear equation becomes algebra]]; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]].
 
 ### [C] Translation, phase, and the rules in 𝒮′ ★
 
@@ -4297,7 +4297,7 @@ $F_\varepsilon = 1/(-(t - i\varepsilon)^2 + r^2)$ converges in $\mathcal S'(\mat
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation; Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|§C2b.4.8]] Commutator and Hadamard Functions of the Massless Field, steps 2–5.
+> - Step 1: derivation; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|§C2b.5.8]] Commutator and Hadamard Functions of the Massless Field, steps 2–5.
 
 ### [B] Damping factors: the transform of the step function ★
 
@@ -4340,7 +4340,7 @@ Two fundamental solutions differ by a homogeneous solution, and conversely; for 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-2|§CA.2.2]] Distributions Supported at a Point; Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|§C2b.5.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future.
+> - Step 1: derivation; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-2|§CA.2.2]] Distributions Supported at a Point; Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|§C2b.6.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future.
 
 ### [C] Convolution with a fundamental solution solves the sourced equation ★
 
@@ -4354,7 +4354,7 @@ For a test-function source $j$, $\phi(x) = iG[j(x - \cdot)]$ is smooth and $P(\p
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; Definition [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-6-1|§CA.6.1]] Fundamental Solution; Definition [[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|§C2b.5.1]] Green's Function of the Klein–Gordon Operator.
+> - Step 1: derivation; Definition [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-6-1|§CA.6.1]] Fundamental Solution; Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-1|§C2b.6.1]] Green's Function of the Klein–Gordon Operator.
 
 ### [PS] Basic contour integrals and Lorentzian integrals
 
@@ -6856,7 +6856,7 @@ $S^+_W(x - y) = \langle0|\hat\psi(x)\hat{\bar\psi}(y)|0\rangle$, $S^-_W(x - y) =
 - [ ] Q4 **[conv]** The letter $S$ means several things in this chapter: list them.
 
 > [!tip]- Hints: route in the notes
-> - Scalar: $iD = \langle0|[\hat\phi, \hat\phi]|0\rangle$, Definition [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|§C2b.4.1]] Commutator Function.
+> - Scalar: $iD = \langle0|[\hat\phi, \hat\phi]|0\rangle$, Definition [[§C2b.5 Microcausality and the Commutator Function#^def-c2b-5-1|§C2b.5.1]] Commutator Function.
 > - The letter: [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^cau-c5b-7-1|§C5b.7, Caution: The letter S]].
 
 ## Derivations T9
@@ -7287,7 +7287,7 @@ $S_C = (i\slashed\partial + m)D_C$ satisfies $(i\slashed\partial_x - m)S_C(x - y
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5, K13.
-> - Steps 1–5 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|§C5b.8.1]] Green's Functions of the Dirac Operator; scalar Definition [[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|§C2b.5.1]] Green's Function of the Klein–Gordon Operator.
+> - Steps 1–5 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|§C5b.8.1]] Green's Functions of the Dirac Operator; scalar Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-1|§C2b.6.1]] Green's Function of the Klein–Gordon Operator.
 
 ### [B] The Dirac Feynman propagator ★
 
@@ -8364,7 +8364,7 @@ $\frac{1}{2\pi^2r}\int_0^\infty dp\,p\sin(pr)e^{-iE_pz} = \frac{1}{4\pi^2ir}\int
 > - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Relativistic Amplitude as a Radial Integral, step 3.
 
 ### [B] The single-particle amplitude and the Wightman function
-$U(t, \mathbf x) = 2i\partial_tD_W(t, \mathbf x)$: the leak of the single particle is the Wightman function's, which field theory keeps as a correlation while the commutator vanishes, see Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|§C2b.3.7]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function and Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|§C2b.4.7]] Forward and Backward Amplitudes. *Source: the user's notes Ch. 2 §2.2, Ch. 5*
+$U(t, \mathbf x) = 2i\partial_tD_W(t, \mathbf x)$: the leak of the single particle is the Wightman function's, which field theory keeps as a correlation while the commutator vanishes, see Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|§C2b.4.1]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function and Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|§C2b.5.7]] Forward and Backward Amplitudes. *Source: the user's notes Ch. 2 §2.2, Ch. 5*
 
 ^nd-eq-t2-2
 
@@ -8375,7 +8375,7 @@ $U(t, \mathbf x) = 2i\partial_tD_W(t, \mathbf x)$: the leak of the single partic
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9 (mode substitution)
-> - Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|§C2b.3.7]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function; Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|§C2b.4.7]] Forward and Backward Amplitudes; [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-3|§C1a.3, Remark: How field theory repairs causality]].
+> - Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|§C2b.4.1]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|§C2b.5.7]] Forward and Backward Amplitudes; [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-3|§C1a.3, Remark: How field theory repairs causality]].
 
 ### [C] Hamilton's equations and the Euler–Lagrange equation
 For the free real field, $\dot\phi = \pi$ and $\dot\pi = \nabla^2\phi - m^2\phi$ combine into $(\partial_t^2 - \nabla^2 + m^2)\phi = 0$; in general the $2n$ first-order equations are equivalent to the $n$ Euler–Lagrange equations, see Example [[§C1b.4 Hamiltonian Field Theory#^ex-c1b-4-1|§C1b.4.1]] Hamilton's Equations of the Free Real Field and Theorem [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-4|§C1b.4.4]] Hamilton's Equations for Fields. *Source: the user's notes Ch. 3 §3.4*
@@ -8565,7 +8565,7 @@ Lecture 4 quantized on one time slice and posited the mode expansion; the "field
 
 ### [A] The Feynman propagator three ways: time-ordered product, contour, iε integral [class exercise, Lecture 6]
 
-$D_F(x - y) = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle = \theta(\xi^0)D_W(\xi) + \theta(-\xi^0)D_W(-\xi)$ equals the Green's function of the Feynman contour and the limit $\varepsilon \to 0^+$ of $\int\frac{d^4p}{(2\pi)^4}\frac{ie^{-ip\cdot\xi}}{p^2 - m^2 + i\varepsilon}$, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|§C2b.6.2]] The Feynman Propagator, Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|§C2b.6.9]] The $i\varepsilon$ Prescriptions, Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|§C2b.6.10]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′, Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|§C2b.6.4]] The Feynman Propagator as a Distribution: the Products θ·D_W. Larsen: "you want to practice a bit back and forth … three perspectives … how do you go back and forth from them?". *Source: Lecture 6 (Sep 21), slides "Evaluation of the Feynman Propagator" to "Relativistic Form of Feynman Propagator"; transcript · PS §2.4, eqs. (2.59)–(2.60) · the user's notes Ch. 6 §6.7, §6.9*
+$D_F(x - y) = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle = \theta(\xi^0)D_W(\xi) + \theta(-\xi^0)D_W(-\xi)$ equals the Green's function of the Feynman contour and the limit $\varepsilon \to 0^+$ of $\int\frac{d^4p}{(2\pi)^4}\frac{ie^{-ip\cdot\xi}}{p^2 - m^2 + i\varepsilon}$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|§C2b.7.2]] The Feynman Propagator, Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|§C2b.7.10]] The $i\varepsilon$ Prescriptions, Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|§C2b.7.9]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′, Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|§C2b.7.4]] The Feynman Propagator as a Distribution: the Products θ·D_W. Larsen: "you want to practice a bit back and forth … three perspectives … how do you go back and forth from them?". *Source: Lecture 6 (Sep 21), slides "Evaluation of the Feynman Propagator" to "Relativistic Form of Feynman Propagator"; transcript · PS §2.4, eqs. (2.59)–(2.60) · the user's notes Ch. 6 §6.7, §6.9*
 
 ^nd-eq-t6-1
 
@@ -8578,12 +8578,12 @@ $D_F(x - y) = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle = \theta(\xi^0)D_W(\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13, K14.
-> - Step 1: Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|§C2b.6.2]] The Feynman Propagator, both derivations (contour; second route from the time-ordered product, Yu (6.198)–(6.211)).
-> - Step 2: Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|§C2b.6.9]] The $i\varepsilon$ Prescriptions step 2; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|§C2b.6.10]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|§C2b.6.4]] The Feynman Propagator as a Distribution: the Products θ·D_W; Green's-function property Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|§C2b.6.5]] The Free Schwinger–Dyson Equation.
+> - Step 1: Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|§C2b.7.2]] The Feynman Propagator, both derivations (contour; second route from the time-ordered product, Yu (6.198)–(6.211)).
+> - Step 2: Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|§C2b.7.10]] The $i\varepsilon$ Prescriptions step 2; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|§C2b.7.9]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|§C2b.7.4]] The Feynman Propagator as a Distribution: the Products θ·D_W; Green's-function property Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-5|§C2b.7.5]] The Free Schwinger–Dyson Equation.
 
 ### [B] The commutator and Hadamard functions are the parts of the Wightman function
 
-With $\xi = x - y$: $D = 2\operatorname{Im}D_W$, $D_1 = 2\operatorname{Re}D_W$, $D_W(\pm\xi) = \frac12(D_1(\xi) \pm iD(\xi))$; $D$ real and odd, $D_1$ real and even, both homogeneous solutions, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|§C2b.4.3]] The Commutator and Hadamard Functions Are the Parts of the Wightman Function. *Source: Problem Set 4, Problem 2 · the user's notes Ch. 5 §5.5*
+With $\xi = x - y$: $D = 2\operatorname{Im}D_W$, $D_1 = 2\operatorname{Re}D_W$, $D_W(\pm\xi) = \frac12(D_1(\xi) \pm iD(\xi))$; $D$ real and odd, $D_1$ real and even, both homogeneous solutions, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-3|§C2b.5.3]] The Commutator and Hadamard Functions Are the Parts of the Wightman Function. *Source: Problem Set 4, Problem 2 · the user's notes Ch. 5 §5.5*
 
 ^nd-eq-t6-2
 
@@ -8599,7 +8599,7 @@ With $\xi = x - y$: $D = 2\operatorname{Im}D_W$, $D_1 = 2\operatorname{Re}D_W$, 
 
 ### [B] The Green's functions in terms of the Wightman function
 
-$D_R = \theta(\xi^0)iD$, $D_A = -\theta(-\xi^0)iD$, $D_R - D_A = iD$, $\bar D = \frac12\operatorname{sgn}(\xi^0)iD$; $D_F = \frac12D_1 + \bar D = D_R + D_W(-\xi) = D_A + D_W(\xi)$; $D_{\bar F} = -\overline{D_F}$, $D_F - D_{\bar F} = D_1$; at spacelike separation $D_F = D_W = \frac12D_1$ and the others vanish, see Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|§C2b.7.5]] Relations in the Two-Point Family. *Source: the user's notes Ch. 6 §6.8, §6.11 · Lecture 6 (Sep 21), slide "Green's Functions and Boundary Conditions"*
+$D_R = \theta(\xi^0)iD$, $D_A = -\theta(-\xi^0)iD$, $D_R - D_A = iD$, $\bar D = \frac12\operatorname{sgn}(\xi^0)iD$; $D_F = \frac12D_1 + \bar D = D_R + D_W(-\xi) = D_A + D_W(\xi)$; $D_{\bar F} = -\overline{D_F}$, $D_F - D_{\bar F} = D_1$; at spacelike separation $D_F = D_W = \frac12D_1$ and the others vanish, see Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-5|§C2b.8.5]] Relations in the Two-Point Family. *Source: the user's notes Ch. 6 §6.8, §6.11 · Lecture 6 (Sep 21), slide "Green's Functions and Boundary Conditions"*
 
 ^nd-eq-t6-3
 
@@ -8613,11 +8613,11 @@ $D_R = \theta(\xi^0)iD$, $D_A = -\theta(-\xi^0)iD$, $D_R - D_A = iD$, $\bar D = 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
 > - Step 1: derivation steps 0–6 (position space); second derivation steps 1–3 (momentum space).
-> - Step 2: the table [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]]; Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-3|§C2b.5.3]] Contours Are Boundary Conditions.
+> - Step 2: the table [[§C2b.8 Wick Rotation and the Two-Point Family#^rem-c2b-8-2|§C2b.8, Remark: The two-point functions at a glance]]; Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-3|§C2b.6.3]] Contours Are Boundary Conditions.
 
 ### [B] Contour ⇔ iε ⇔ boundary condition ⇔ support: the retarded case
 
-The retarded function is at once the contour above both poles, the prescription $(p^0 + i\varepsilon)^2 - E_{\mathbf p}^2$, the boundary condition "nothing before the source", and the unique tempered fundamental solution supported in $\xi^0 \ge 0$, see Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|§C2b.5.5]] The Retarded Green's Function, Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|§C2b.6.9]] The $i\varepsilon$ Prescriptions, Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|§C2b.5.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future. *Source: Lecture 6 (Sep 21), slides "Retarded Contour: Qualitative Behavior", "Green's Functions and Boundary Conditions" · the user's notes Ch. 6 §6.6, §6.8*
+The retarded function is at once the contour above both poles, the prescription $(p^0 + i\varepsilon)^2 - E_{\mathbf p}^2$, the boundary condition "nothing before the source", and the unique tempered fundamental solution supported in $\xi^0 \ge 0$, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|§C2b.6.5]] The Retarded Green's Function, Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|§C2b.7.10]] The $i\varepsilon$ Prescriptions, Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|§C2b.6.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future. *Source: Lecture 6 (Sep 21), slides "Retarded Contour: Qualitative Behavior", "Green's Functions and Boundary Conditions" · the user's notes Ch. 6 §6.6, §6.8*
 
 ^nd-eq-t6-4
 
@@ -8629,8 +8629,8 @@ The retarded function is at once the contour above both poles, the prescription 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|§C2b.5.5]] The Retarded Green's Function steps 2–3; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|§C2b.6.9]] The $i\varepsilon$ Prescriptions step 4; Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|§C2b.5.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future part 3.
-> - Step 2: [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-3|§C2b.7, Remark: Which Green's function when]] (which Green's function when); [[§C2b.8 Particle Production by a Classical Source#^rem-c2b-8-2|§C2b.8, Remark: The boundary condition was physics]].
+> - Step 1: Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|§C2b.6.5]] The Retarded Green's Function steps 2–3; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|§C2b.7.10]] The $i\varepsilon$ Prescriptions step 4; Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|§C2b.6.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future part 3.
+> - Step 2: [[§C2b.8 Wick Rotation and the Two-Point Family#^rem-c2b-8-3|§C2b.8, Remark: Which Green's function when]] (which Green's function when); [[§C2b.9 Particle Production by a Classical Source#^rem-c2b-9-2|§C2b.9, Remark: The boundary condition was physics]].
 
 ### [B] The Wightman function four ways
 
@@ -8667,7 +8667,7 @@ $D_W = \frac{m}{4\pi^2r}K_1(mr)$ at spacelike separation follows by analytic con
 
 ### [B] Microcausality in three forms
 
-At spacelike separation $[\hat\phi(x), \hat\phi(y)] = 0$ ⇔ $D_W(\xi)$ is real (equal to $D_W(-\xi)$) ⇔ $\operatorname{supp}D$ lies in the closed light cone ⇔ $\hat\phi(x)$ is determined by the data in its backward cone, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|§C2b.4.5]] The Free Field Is Microcausal, Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|§C2b.4.6]] Microcausality as a Support Statement, Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-13|§C2b.4.13]] The Commutator Function Propagates the Field. *Source: Lecture 5 (Sep 16), transcript · the user's notes Ch. 5 §5.5, §5.7*
+At spacelike separation $[\hat\phi(x), \hat\phi(y)] = 0$ ⇔ $D_W(\xi)$ is real (equal to $D_W(-\xi)$) ⇔ $\operatorname{supp}D$ lies in the closed light cone ⇔ $\hat\phi(x)$ is determined by the data in its backward cone, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|§C2b.5.5]] The Free Field Is Microcausal, Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|§C2b.5.6]] Microcausality as a Support Statement, Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-14|§C2b.5.14]] The Commutator Function Propagates the Field. *Source: Lecture 5 (Sep 16), transcript · the user's notes Ch. 5 §5.5, §5.7*
 
 ^nd-eq-t6-7
 
@@ -8679,11 +8679,11 @@ At spacelike separation $[\hat\phi(x), \hat\phi(y)] = 0$ ⇔ $D_W(\xi)$ is real 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14.
-> - Step 1: both derivations of Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|§C2b.4.5]] The Free Field Is Microcausal; Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|§C2b.4.6]] Microcausality as a Support Statement; Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-13|§C2b.4.13]] The Commutator Function Propagates the Field; [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-5|§C2b.4, Remark: Microcausality and the domain of dependence are one statement]].
+> - Step 1: both derivations of Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|§C2b.5.5]] The Free Field Is Microcausal; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|§C2b.5.6]] Microcausality as a Support Statement; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-14|§C2b.5.14]] The Commutator Function Propagates the Field; [[§C2b.5 Microcausality and the Commutator Function#^rem-c2b-5-5|§C2b.5, Remark: Microcausality and the domain of dependence are one statement]].
 
 ### [B] Cauchy data: canonical relations ⇔ commutator function ⇔ retarded jump
 
-The equal-time relations are the Cauchy data $D(0, \boldsymbol\xi) = 0$, $\partial_0D(0, \boldsymbol\xi) = -\delta^3$ of the commutator function, and $i$ times them are the data $D_R = 0$, $\partial_0D_R = -i\delta^3$ at $t = 0^+$ that make $D_R$ a Green's function, see Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|§C2b.4.12]] Cauchy Data of the Commutator Function, Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|§C2b.4.10]] Commutators at Unequal Times, Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|§C2b.5.5]] The Retarded Green's Function. *Source: the user's notes Ch. 5 §5.7, Ch. 6 §6.6*
+The equal-time relations are the Cauchy data $D(0, \boldsymbol\xi) = 0$, $\partial_0D(0, \boldsymbol\xi) = -\delta^3$ of the commutator function, and $i$ times them are the data $D_R = 0$, $\partial_0D_R = -i\delta^3$ at $t = 0^+$ that make $D_R$ a Green's function, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-13|§C2b.5.13]] Cauchy Data of the Commutator Function, Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-11|§C2b.5.11]] Commutators at Unequal Times, Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|§C2b.6.5]] The Retarded Green's Function. *Source: the user's notes Ch. 5 §5.7, Ch. 6 §6.6*
 
 ^nd-eq-t6-8
 
@@ -8694,11 +8694,11 @@ The equal-time relations are the Cauchy data $D(0, \boldsymbol\xi) = 0$, $\parti
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11, K13.
-> - Step 1: Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|§C2b.4.12]] Cauchy Data of the Commutator Function steps 1–3; Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|§C2b.5.5]] The Retarded Green's Function step 6; P2, step 7.
+> - Step 1: Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-13|§C2b.5.13]] Cauchy Data of the Commutator Function steps 1–3; Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|§C2b.6.5]] The Retarded Green's Function step 6; P2, step 7.
 
 ### [B] Normal ordering and the zero-point energy: modes ⇔ coincident points
 
-The zero-point constant $V\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$ from reordering modes equals $\frac12\int d^3x\lim_{y\to x}(\partial_{x^0}\partial_{y^0} + \nabla_x\cdot\nabla_y + m^2)D_W(x - y)$; normal ordering subtracts exactly the contraction, $\hat\phi\hat\phi = :\!\hat\phi\hat\phi\!: + D_W$, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|§C2b.6.8]] The Zero-Point Energy Is the Wightman Function at Coincident Points, Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|§C2b.6.6]] Contractions: Normal Ordering against Time Ordering, Theorem [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|§C2a.3.4]] The Zero-Point Energy. *Source: the user's notes Ch. 4 §4.6, Ch. 6 §6.7*
+The zero-point constant $V\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$ from reordering modes equals $\frac12\int d^3x\lim_{y\to x}(\partial_{x^0}\partial_{y^0} + \nabla_x\cdot\nabla_y + m^2)D_W(x - y)$; normal ordering subtracts exactly the contraction, $\hat\phi\hat\phi = :\!\hat\phi\hat\phi\!: + D_W$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|§C2b.7.8]] The Zero-Point Energy Is the Wightman Function at Coincident Points, Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|§C2b.7.6]] Contractions: Normal Ordering against Time Ordering, Theorem [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|§C2a.3.4]] The Zero-Point Energy. *Source: the user's notes Ch. 4 §4.6, Ch. 6 §6.7*
 
 ^nd-eq-t6-9
 
@@ -8710,11 +8710,11 @@ The zero-point constant $V\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$ from
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Step 1: Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|§C2b.6.8]] The Zero-Point Energy Is the Wightman Function at Coincident Points steps 1–6; [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-3|§C2b.6, Remark: One mechanism, two products]]; [[§CA.2 Generalized Functions#^rem-ca-2-2|§CA.2, Remark: Point splitting: how a product at one point is regularized]] (point splitting).
+> - Step 1: Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|§C2b.7.8]] The Zero-Point Energy Is the Wightman Function at Coincident Points steps 1–6; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-3|§C2b.7, Remark: One mechanism, two products]]; [[§CA.2 Generalized Functions#^rem-ca-2-2|§CA.2, Remark: Point splitting: how a product at one point is regularized]] (point splitting).
 
 ### [B] Euclidean, Feynman and Wightman functions are one analytic function
 
-$\mathcal W(s^2) = \frac{mK_1(ms)}{4\pi^2s}$ gives $D_E$ at Euclidean points, $D_F = \mathcal W(-\xi^2 + i0)$ and $D_W = \mathcal W(-\xi^2 + i0\xi^0)$ off the cone; in momentum space $\tilde D_F$ is the boundary value of $i/(w^2 - E_{\mathbf p}^2)$ from the first and third quadrants and becomes the Euclidean integrand on the imaginary axis, see Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|§C2b.7.4]] Wick Rotation Continues One Distribution, Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-2|§C2b.7.2]] The Feynman Function at Imaginary Time, Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-3|§C2b.7.3]] The Feynman Function in Position Space. *Source: Lecture 6 (Sep 21), slide "Another perspective: the Euclidean Green's Function" ("Feynman prescription = Euclidean prescription, analytically continued") · the user's notes Ch. 6 §6.10*
+$\mathcal W(s^2) = \frac{mK_1(ms)}{4\pi^2s}$ gives $D_E$ at Euclidean points, $D_F = \mathcal W(-\xi^2 + i0)$ and $D_W = \mathcal W(-\xi^2 + i0\xi^0)$ off the cone; in momentum space $\tilde D_F$ is the boundary value of $i/(w^2 - E_{\mathbf p}^2)$ from the first and third quadrants and becomes the Euclidean integrand on the imaginary axis, see Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-4|§C2b.8.4]] Wick Rotation Continues One Distribution, Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-2|§C2b.8.2]] The Feynman Function at Imaginary Time, Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-3|§C2b.8.3]] The Feynman Function in Position Space. *Source: Lecture 6 (Sep 21), slide "Another perspective: the Euclidean Green's Function" ("Feynman prescription = Euclidean prescription, analytically continued") · the user's notes Ch. 6 §6.10*
 
 ^nd-eq-t6-10
 
@@ -8726,11 +8726,11 @@ $\mathcal W(s^2) = \frac{mK_1(ms)}{4\pi^2s}$ gives $D_E$ at Euclidean points, $D
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|§C2b.7.4]] Wick Rotation Continues One Distribution steps 1–5; Theorem [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|§C2b.7.1]] Wick Rotation of a Momentum Integral; [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-1|§C2b.7, Remark: Why the Feynman contour is singled out]].
+> - Step 1: Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-4|§C2b.8.4]] Wick Rotation Continues One Distribution steps 1–5; Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-1|§C2b.8.1]] Wick Rotation of a Momentum Integral; [[§C2b.8 Wick Rotation and the Two-Point Family#^rem-c2b-8-1|§C2b.8, Remark: Why the Feynman contour is singled out]].
 
 ### [B] Differences of Green's functions: on the shell ⇔ homogeneous solutions
 
-In momentum space $\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$ and $\tilde D_R - \tilde D_A = 2\pi\operatorname{sgn}(p^0)\delta(p^2 - m^2)$; in position space these are $D_1$ and $iD$, homogeneous solutions, see Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-11|§C2b.6.11]] Differences on the Mass Shell, Theorem [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-3|§C2b.5.3]] Contours Are Boundary Conditions, Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions. *Source: the user's notes Ch. 6 §6.8–6.9*
+In momentum space $\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$ and $\tilde D_R - \tilde D_A = 2\pi\operatorname{sgn}(p^0)\delta(p^2 - m^2)$; in position space these are $D_1$ and $iD$, homogeneous solutions, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-11|§C2b.7.11]] Differences on the Mass Shell, Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-3|§C2b.6.3]] Contours Are Boundary Conditions, Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions. *Source: the user's notes Ch. 6 §6.8–6.9*
 
 ^nd-eq-t6-11
 
@@ -8741,7 +8741,7 @@ In momentum space $\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$ and $
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-11|§C2b.6.11]] Differences on the Mass Shell; Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|§C2b.4.4]] The Commutator and Hadamard Functions as Distributions part 1; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions part 2.
+> - Step 1: Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-11|§C2b.7.11]] Differences on the Mass Shell; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|§C2b.5.4]] The Commutator and Hadamard Functions as Distributions part 1; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions part 2.
 
 ### [B] iε from damping: a pole off the axis ⇔ a step function
 
@@ -8756,7 +8756,7 @@ A damping $e^{-\varepsilon t}$ on $t > 0$ makes $\tilde\theta(\omega) = \frac{i}
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|§CA.6.5]] Damping Factors: the Transform of the Step Function; Example [[§CA.4 Contour Integration#^ex-ca-4-2|§CA.4.2]] A Step Function from a Pole; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|§C2b.6.9]] The $i\varepsilon$ Prescriptions.
+> - Step 1: Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|§CA.6.5]] Damping Factors: the Transform of the Step Function; Example [[§CA.4 Contour Integration#^ex-ca-4-2|§CA.4.2]] A Step Function from a Pole; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|§C2b.7.10]] The $i\varepsilon$ Prescriptions.
 
 ### [C] Three forms of the Lorentz algebra
 
@@ -9037,7 +9037,7 @@ $S_F = \langle0|T\{\hat\psi\hat{\bar\psi}\}|0\rangle = \theta S^+_W - \theta S^-
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Second route steps 1–4 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|§C5b.8.3]] The Dirac Feynman Propagator; $D_W(\xi) - D_W(-\xi) = iD(\xi)$, Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|§C2b.4.2]] The Field Commutator Is a c-Number.
+> - Second route steps 1–4 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|§C5b.8.3]] The Dirac Feynman Propagator; $D_W(\xi) - D_W(-\xi) = iD(\xi)$, Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-2|§C2b.5.2]] The Field Commutator Is a c-Number.
 
 ### [C] Spin–statistics: two arguments, one answer
 

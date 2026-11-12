@@ -84,7 +84,7 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 >
 > **Step 5** (the order $\hat{\bar\psi}\hat\psi$). $T\{\hat{\bar\psi}_b(y)\hat\psi_a(x)\} = -T\{\hat\psi_a(x)\hat{\bar\psi}_b(y)\}$ and $:\!\hat{\bar\psi}_b\hat\psi_a\!: = -:\!\hat\psi_a\hat{\bar\psi}_b\!:$ (one exchange each), so their difference is $-S_F(x - y)_{ab}$.
 >
-> **Step 6** (the zero contractions). For $\hat\psi_a(x)\hat\psi_b(y)$, $x^0 > y^0$, the only non-normal term is $\hat\psi^+_a(x)\hat\psi^-_b(y)$, and $\{\hat\psi^+_a, \hat\psi^-_b\}$ contains only $\{\hat a, \hat b^\dagger\} = 0$; the other time order and $\hat{\bar\psi}\hat{\bar\psi}$ ($\{\hat b, \hat a^\dagger\} = 0$) alike. A Dirac and a scalar field act on different Fock factors and commute: $T = :\;:$, contraction $0$. The scalar contraction is [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]].
+> **Step 6** (the zero contractions). For $\hat\psi_a(x)\hat\psi_b(y)$, $x^0 > y^0$, the only non-normal term is $\hat\psi^+_a(x)\hat\psi^-_b(y)$, and $\{\hat\psi^+_a, \hat\psi^-_b\}$ contains only $\{\hat a, \hat b^\dagger\} = 0$; the other time order and $\hat{\bar\psi}\hat{\bar\psi}$ ($\{\hat b, \hat a^\dagger\} = 0$) alike. A Dirac and a scalar field act on different Fock factors and commute: $T = :\;:$, contraction $0$. The scalar contraction is [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]].
 >
 > **What the derivation shows.**
 > - As for the scalar, the contraction is "the price of reordering": an anticommutator of a positive- with a negative-frequency part, a number, which the time ordering turns into the Feynman function.
@@ -92,7 +92,7 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 
 ^der-c6d-3-1
 
-*Uses:* [[§C6d.2 Contractions with External Fermions#^def-c6d-2-1|Def. §C6d.2.1]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]
+*Uses:* [[§C6d.2 Contractions with External Fermions#^def-c6d-2-1|Def. §C6d.2.1]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]]
 
 > [!caution] Caution: S_F is a 4 × 4 matrix; do not contract its indices
 > $\hat\psi_a$ is a column, $\hat{\bar\psi}_b$ a row, written in the contraction in the reverse order compared with the scalar $\bar\psi\psi$; their contraction $S_F(x - y)_{ab}$ is a $4\times4$ matrix, matching $i(\slashed p + m)_{ab}$ with $\slashed p = \gamma^\nu p_\nu$ and $m$ times the unit matrix. Its two indices are not contracted with each other, even where that looks possible; otherwise the rule makes no sense. Write the indices $ab$ explicitly; the indices are contracted only along a fermion line, by the vertices ([[§C6d.2 Contractions with External Fermions#^thm-c6d-2-4|Theorem §C6d.2.4]]).
@@ -127,7 +127,7 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 > [!derivation]- Derivation
 > **Step 1** (both sides change alike under exchange). Exchange two neighbouring fields $\hat\Phi_i$, $\hat\Phi_{i+1}$ in the written order. The left side changes by $\epsilon_{i,i+1}$: $T$ is the product in time order times the sign of the permutation used, and the new written order differs by one exchange ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]]). Each term on the right changes by the same $\epsilon_{i,i+1}$: (a) both uncontracted: $:\;:$ changes by $\epsilon_{i,i+1}$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]); (b) contracted with each other: the pair is written in the other order, and $\overbracket{\hat\Phi_{i+1}\hat\Phi_i} = \epsilon_{i,i+1}\overbracket{\hat\Phi_i\hat\Phi_{i+1}}$ ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]], Step 5), $\epsilon(C)$ unchanged; (c) otherwise $\epsilon(C)$ is the sign of a permutation composed with the exchange, so it changes by $\epsilon_{i,i+1}$. Hence it suffices to prove the theorem for $x_1^0 > x_2^0 > \cdots > x_n^0$.
 >
-> **Step 2** (start). $n = 1$: $T\{\hat\Phi_1\} = \hat\Phi_1 = \,:\!\hat\Phi_1\!:$. $n = 2$: [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]] (and [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]] for scalars).
+> **Step 2** (start). $n = 1$: $T\{\hat\Phi_1\} = \hat\Phi_1 = \,:\!\hat\Phi_1\!:$. $n = 2$: [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]] (and [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]] for scalars).
 >
 > **Step 3** (prepend the latest field). With $x_1^0$ the latest, $T\{\hat\Phi_1\cdots\hat\Phi_n\} = \hat\Phi_1\,T\{\hat\Phi_2\cdots\hat\Phi_n\}$, no sign ($\hat\Phi_1$ is already in place). By the induction hypothesis,
 >
@@ -157,7 +157,7 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 
 ^der-c6d-3-2
 
-*Uses:* [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]], [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]], [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]], [[§C6a.6 Wick's Theorem#^der-c6a-6-2b|Derivation §C6a.6.2b]]
+*Uses:* [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]], [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]], [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]], [[§C6a.6 Wick's Theorem#^der-c6a-6-2b|Derivation §C6a.6.2b]]
 
 > [!example] Example §C6d.3.1: Four Fermion Fields
 > With $\hat\psi_i \equiv \hat\psi(x_i)$, $\hat{\bar\psi}_i \equiv \hat{\bar\psi}(x_i)$, $S_F(i - j) \equiv S_F(x_i - x_j)$ (spinor indices suppressed), [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-2|Theorem §C6d.3.2]] gives (slide 22)

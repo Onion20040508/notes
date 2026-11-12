@@ -524,7 +524,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 >
 > **What the derivation shows**
 > - The relative sign in $\hat\pi$ and the factor $-i\sqrt{E/2}$ are exactly what make the two surviving terms add in step 2 and give $+i$ in step 3: the lecture's ansatz is fixed by the commutator.
-> - $[\hat\phi, \hat\phi] = 0$ needs the two orderings to cancel: the first instance of the cancellation that makes the field commutator vanish at spacelike separation ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
+> - $[\hat\phi, \hat\phi] = 0$ needs the two orderings to cancel: the first instance of the cancellation that makes the field commutator vanish at spacelike separation ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]).
 
 ^der-c2a-2-6b
 

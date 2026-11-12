@@ -77,7 +77,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 ^cau-c6a-7-2
 
 > [!remark] Remark: Reading the four-point function as a process
-> "Although this isn't exactly a measurable quantity, the diagrams do suggest an interpretation: Particles are created at two spacetime points, each propagates to one of the other points, and then they are annihilated. This can happen in three ways … The total amplitude for the process is the sum of the three diagrams" (PS p. 91). The reading is possible because $D_F$ is itself an amplitude: $D_F(x - y) = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$ creates a particle at the earlier point and annihilates it at the later one ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]).
+> "Although this isn't exactly a measurable quantity, the diagrams do suggest an interpretation: Particles are created at two spacetime points, each propagates to one of the other points, and then they are annihilated. This can happen in three ways … The total amplitude for the process is the sum of the three diagrams" (PS p. 91). The reading is possible because $D_F$ is itself an amplitude: $D_F(x - y) = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$ creates a particle at the earlier point and annihilates it at the later one ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]).
 >
 > *Source: PS §4.4, p. 91 · PHY 513 Lecture 14, transcript ("what I really need to tell you is the combinatorial data")*
 
@@ -207,7 +207,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > \langle0|T\{\hat\phi_x\hat\phi_y\hat\phi_I(z)^4\}|0\rangle = 3\,D_F(x - y)\,D_F(z - z)^2 + 12\,D_F(x - z)\,D_F(y - z)\,D_F(z - z) .
 > $$
 >
-> **Step 6** (coefficients). Insert into Step 2 and use $D_F(y - z) = D_F(z - y)$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]):
+> **Step 6** (coefficients). Insert into Step 2 and use $D_F(y - z) = D_F(z - y)$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]):
 >
 > $$
 > -\frac{i\lambda}{4!}\int d^4z\,\bigl[3\,D_F(x - y)D_F(z - z)^2 + 12\,D_F(x - z)D_F(y - z)D_F(z - z)\bigr] = -i\lambda\int d^4z\,\Bigl[\frac{3}{24}\,D_F(x - y)D_F(z - z)^2 + \frac{12}{24}\,D_F(x - z)D_F(z - z)D_F(z - y)\Bigr],
@@ -215,7 +215,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 >
 > with $\frac{3}{24} = \frac18$, $\frac{12}{24} = \frac12$. (All 15 terms checked by enumeration.)
 >
-> ⚑ By-product: $D_F(z - z) = D_F(0)$ is singular ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-3|Theorem §C2b.7.3]]) → [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-3|Theorem §C6a.10.3]].
+> ⚑ By-product: $D_F(z - z) = D_F(0)$ is singular ([[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-3|Theorem §C2b.8.3]]) → [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-3|Theorem §C6a.10.3]].
 >
 > ⚑ By-product: the $\frac18$ term is $D_F(x - y)$ times a piece with no external point, a vacuum bubble → [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]].
 >
@@ -227,7 +227,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 
 ^der-c6a-7-1
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]
 
 ![[ph-qft-c6-7-2.svg]]
 *The first-order numerator. Left: the six fields $\phi(x)$, $\phi(y)$ and the four factors of $\phi(z)^4$; class (a) pairs $x$ with $y$ and the four legs among themselves (3 ways), class (b) sends $x$ and $y$ to two of the legs (4·3 = 12 ways). Right: the two diagrams with their coefficients, $\frac{3}{4!} = \frac18$ and $\frac{12}{4!} = \frac12$. Added figure; diagrams as on slide 15 and PS p. 92.*
@@ -307,13 +307,13 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 ^thm-c6a-7-2
 
 > [!derivation]- Derivation
-> **Step 1** ($D_F$ is even). By [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]] and the relabelling $p \to -p$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1),
+> **Step 1** ($D_F$ is even). By [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]] and the relabelling $p \to -p$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1),
 >
 > $$
 > D_F(-\xi) = \int\frac{d^4p}{(2\pi)^4}\,\frac{i\,e^{+ip\cdot\xi}}{p^2 - m^2 + i\varepsilon} = \int\frac{d^4p}{(2\pi)^4}\,\frac{i\,e^{-ip\cdot\xi}}{(-p)^2 - m^2 + i\varepsilon} = D_F(\xi) ,
 > $$
 >
-> since $(-p)^2 = p^2$; equivalently $\tilde D_F(-p) = \tilde D_F(p)$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]). So $\langle0|T\{\hat\phi(y)\hat\phi(x)\}|0\rangle = D_F(y - x) = D_F(x - y) = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$. (The Wightman function is not even: $D_W(-\xi) = \overline{D_W(\xi)}$, [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]].)
+> since $(-p)^2 = p^2$; equivalently $\tilde D_F(-p) = \tilde D_F(p)$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]). So $\langle0|T\{\hat\phi(y)\hat\phi(x)\}|0\rangle = D_F(y - x) = D_F(x - y) = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$. (The Wightman function is not even: $D_W(-\xi) = \overline{D_W(\xi)}$, [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]].)
 >
 > **Step 2** (charge selection for $\hat\psi\hat\psi$). By [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]], $[\hat Q, \hat\psi] = -\hat\psi$, i.e. $\hat Q\hat\psi = \hat\psi(\hat Q - 1)$. Every term of the mode form of $\hat Q$ in [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]] ends in an annihilator $\hat a^s_{\mathbf p}$ or $\hat b^s_{\mathbf p}$ and begins with a creator, so $\hat Q|0\rangle = 0$ and $\langle0|\hat Q = 0$. Then
 >
@@ -363,7 +363,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > \langle0|T\{\hat\phi(x)\hat\phi^\dagger(y)\}|0\rangle = \theta(x^0 - y^0)D_W(x - y) + \theta(y^0 - x^0)D_W(y - x) = D_F(x - y)
 > $$
 >
-> ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]), the real field's propagator: both species have mass $m$, and each ordering is carried by one of them.
+> ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]), the real field's propagator: both species have mass $m$, and each ordering is carried by one of them.
 >
 > **Step 7** (arrows). By Step 5 every complex-scalar line joins a $\hat\phi$ and a $\hat\phi^\dagger$, so it has two different ends and is drawn with an arrow; by Step 6 and Step 1 its value $D_F(x - y) = D_F(y - x)$ does not depend on the direction in which it is read. The arrow is bookkeeping for which pairings exist (and so for symmetry factors, [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|Theorem §C6a.9.2]]), not a different function.
 >
@@ -373,10 +373,10 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 
 ^der-c6a-7-2
 
-*Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]], [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]
+*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]], [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]
 
 > [!remark] Remark: Why the Feynman propagator is symmetric and the Wightman function is not
-> Why may $D_F(y - z)$ be written $D_F(z - y)$? The Wightman function is not symmetric in $x$ and $y$: exchanging them gives the complex conjugate, $D_W(-\xi) = \overline{D_W(\xi)}$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]) — but the time-ordered combination $D_F$ is even ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]). So a line of a scalar diagram has no direction ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 1); PS make the same point for momenta: "Since $D_F(x - y) = D_F(y - x)$, the direction of $p$ is arbitrary" (p. 94).
+> Why may $D_F(y - z)$ be written $D_F(z - y)$? The Wightman function is not symmetric in $x$ and $y$: exchanging them gives the complex conjugate, $D_W(-\xi) = \overline{D_W(\xi)}$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]) — but the time-ordered combination $D_F$ is even ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]). So a line of a scalar diagram has no direction ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 1); PS make the same point for momenta: "Since $D_F(x - y) = D_F(y - x)$, the direction of $p$ is arbitrary" (p. 94).
 >
 > *Source: PHY 513 Lecture 14, transcript (question at 42:55) · the user's PHY 513 notes, Ch. 14 §14.3 (paragraph "Why $y$ and $z$ may be exchanged") · PS §4.4, p. 94*
 
@@ -454,7 +454,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]] — part 3, the derivative rule $i\partial_\mu \to p_\mu$ for tempered distributions: $\tilde S_F(-p) \ne \tilde S_F(p)$, so a Dirac line is oriented (Theorem §C6a.7.2).
 
 > [!remark]- Connections
-> - The figure-eight at one point and the zero-point energy are both $D_F$ or $D_W$ at zero separation; both are infinite for the same reason, the light-cone singularity of the two-point function — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]].
+> - The figure-eight at one point and the zero-point energy are both $D_F$ or $D_W$ at zero separation; both are infinite for the same reason, the light-cone singularity of the two-point function — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]].
 > - The coefficients $\frac18$ and $\frac12$ are orbit counts: $3 = 24/8$ and $12 = 24/2$ pairings in the two orbits of the leg-permutation group $S_4$ — [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]].
 > - The first-order term of the Dyson series is the same integral as first-order time-dependent perturbation theory in quantum mechanics, now with the free vacuum as the state — [[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]], [[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]].
 > - The tadpole is the first self-energy diagram: summed with its higher-order relatives it shifts the mass of the particle — QFT C10 (planned); Yu eqs. (10.198)–(10.207).

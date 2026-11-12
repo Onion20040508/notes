@@ -623,7 +623,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 ^ex-ca-7-1
 
 > [!remark]- ★ Remark: The same sum is the moment formula of a Gaussian
-> For a centred Gaussian random vector $\xi = (\xi_1, \dots, \xi_{2k})$ with covariance $C_{ij} = \mathbb E[\xi_i\xi_j]$, $\mathbb E[\xi_1\cdots\xi_{2k}] = \sum_{P\in\mathcal P([2k])}\prod_{\{i,j\}\in P}C_{ij}$ and odd moments vanish (Isserlis' theorem). The vacuum values of Wick's theorem have the same form with $C = D_F$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]); in the path integral they *are* Gaussian moments ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-4|§C2b.6, Remark: The propagator as a Gaussian covariance (preview)]]; QFT C11, planned). Not used in the course at this stage.
+> For a centred Gaussian random vector $\xi = (\xi_1, \dots, \xi_{2k})$ with covariance $C_{ij} = \mathbb E[\xi_i\xi_j]$, $\mathbb E[\xi_1\cdots\xi_{2k}] = \sum_{P\in\mathcal P([2k])}\prod_{\{i,j\}\in P}C_{ij}$ and odd moments vanish (Isserlis' theorem). The vacuum values of Wick's theorem have the same form with $C = D_F$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]); in the path integral they *are* Gaussian moments ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-4|§C2b.7, Remark: The propagator as a Gaussian covariance (preview)]]; QFT C11, planned). Not used in the course at this stage.
 >
 > *Source: L. Isserlis, Biometrika 12 (1918) 134 (stated, not proved here) · Gaussian integrals: [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]]*
 

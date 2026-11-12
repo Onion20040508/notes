@@ -164,7 +164,7 @@ Relations and time ordering:
 
 Microcausality:
 - $\operatorname{supp}S \subseteq \{\xi : \xi^2 \ge 0\}$; smeared over spacelike-separated regions, $\{\hat\psi(f), \hat{\bar\psi}(g)\} = 0$: fermion fields anticommute there, their commutators do not vanish — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3|Theorem §C5b.7.3]]
-- Bilinears $\hat{\mathcal O}_i(x) = \;:\!\hat{\bar\psi}(x)\Gamma_i\hat\psi(x)\!:$ commute, $[\hat{\mathcal O}_1(x), \hat{\mathcal O}_2(y)] = 0$ for $(x - y)^2 < 0$: microcausality of observables — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-4|Theorem §C5b.7.4]], [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]]
+- Bilinears $\hat{\mathcal O}_i(x) = \;:\!\hat{\bar\psi}(x)\Gamma_i\hat\psi(x)\!:$ commute, $[\hat{\mathcal O}_1(x), \hat{\mathcal O}_2(y)] = 0$ for $(x - y)^2 < 0$: microcausality of observables — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-4|Theorem §C5b.7.4]], [[§C2b.5 Microcausality and the Commutator Function#^pr-c2b-5-1|Principle §C2b.5.1]]
 - With commutators, $\langle0\vert[\hat\psi_a(x), \hat{\bar\psi}_b(y)]\vert0\rangle \ne 0$ at every spacelike $\xi$ ($m > 0$) — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]]
 
 ## 9b. Feynman rules with fermions (Yukawa theory, Lecture 17)

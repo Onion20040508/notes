@@ -248,7 +248,7 @@ The simplest invariant wave equation for a scalar field is the Klein–Gordon eq
 > [!caution] Caution: Localized solutions
 > The user's notes (Ch. 3 §3.1, Discussion) answer "Are there solutions with compact support?" with "No; any superposition of plane waves is spread out." Read literally this is too strong. A real solution with compactly supported Cauchy data $(\phi, \dot\phi)$ at $t = 0$ exists, and by finite propagation speed it stays inside the light cones of that region, so it has compact support in space at every time. What is true: (i) no nonzero solution has compact support in *spacetime* (it would vanish with its time derivative at some early time, and the Cauchy problem has a unique solution); (ii) a single plane wave, or any solution of one frequency sign, cannot be confined, which is the point the notes make and the one that matters for particles ([[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]]).
 >
-> *Source: the user's PHY 513 notes, Ch. 3 §3.1 (Discussion "Are there solutions with compact support?"); (i) and the finite propagation speed are standard (Hörmander I; here [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-13|Theorem §C2b.4.13]], whose propagator vanishes outside the cone)*
+> *Source: the user's PHY 513 notes, Ch. 3 §3.1 (Discussion "Are there solutions with compact support?"); (i) and the finite propagation speed are standard (Hörmander I; here [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-14|Theorem §C2b.5.14]], whose propagator vanishes outside the cone)*
 
 ^cau-c1b-1-2
 

@@ -33,7 +33,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > **Question as asked.** "Show that the probability that the source creates no particles at all is $P(0) = \bigl|\langle0|\,T\exp\bigl(i\int d^4x\,j(x)\,\phi_I(x)\bigr)|0\rangle\bigr|^2$ … Show that the probability of producing $n$ particles is $P(n) = \frac{1}{n!}\lambda^ne^{-\lambda}$", for $H_{\rm int} = -\int d^3x\,j(x)\phi(x)$ with "$j(x)$ … nonvanishing only during a finite interval of time, so that asymptotic in and out states can be defined" (PHY 513, Problem Set 8, Problem 3(a), (e)).
 >
-> **Situation** (question 1: yes, it switches off). An external apparatus acts for a finite time, [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] (the same system as [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]):
+> **Situation** (question 1: yes, it switches off). An external apparatus acts for a finite time, [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] (the same system as [[§C2b.6 Green's Functions and Contours#^mod-c2b-6-1|Model §C2b.6.1]]):
 >
 > $$
 > \hat H(t) = \hat H_0 + \hat H_{\rm int}(t) , \qquad \hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi_S(\mathbf x) = 0 \quad (t \notin [t_1, t_2]) .
@@ -71,13 +71,13 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > \mathcal A(0) = e^{\mathcal A_2} , \qquad 2\operatorname{Re}\mathcal A_2 = -\lambda , \qquad \mathcal A(\mathbf k_1, \dots, \mathbf k_n) = \prod_{i=1}^n\frac{i\tilde j(k_i)}{\sqrt{2E_{\mathbf k_i}}}\,e^{\mathcal A_2} , \qquad k_i^0 = E_{\mathbf k_i} .
 > $$
 >
-> *Heisenberg field and the retarded function* ([[§C2b.8 Particle Production by a Classical Source|§C2b.8]]): the state stays $|0\rangle$ and the late-time operators shift ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-2|Theorem §C2b.8.2]]),
+> *Heisenberg field and the retarded function* ([[§C2b.9 Particle Production by a Classical Source|§C2b.9]]): the state stays $|0\rangle$ and the late-time operators shift ([[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-2|Theorem §C2b.9.2]], [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-3|Theorem §C2b.9.3]]),
 >
 > $$
 > \hat b_{\mathbf p} = \hat a_{\mathbf p} + \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}} , \qquad \hat b_{\mathbf p}|0\rangle = \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\,|0\rangle :
 > $$
 >
-> a coherent state of the out-particles, Poisson with mean $\bar N = \lambda$ ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-3|Theorem §C2b.8.3]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-6|Theorem §C2a.6.6]]).
+> a coherent state of the out-particles, Poisson with mean $\bar N = \lambda$ ([[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-4|Theorem §C2b.9.4]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-6|Theorem §C2a.6.6]]).
 >
 > **Result.** $|\mathcal A|^2 = \prod_i\frac{|\tilde j(k_i)|^2}{2E_{\mathbf k_i}}\,e^{2\operatorname{Re}\mathcal A_2}$, and each momentum integral gives $\lambda$:
 >
@@ -255,7 +255,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > To all orders the bubbles factor out of the numerator and cancel ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]).
 >
-> **Result** ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-4|§C2b.6, Caution: With interactions, the two-point function is not D_F]]; momentum space: [[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-4|Example §C6a.11.4]]):
+> **Result** ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-4|§C2b.7, Caution: With interactions, the two-point function is not D_F]]; momentum space: [[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-4|Example §C6a.11.4]]):
 >
 > $$
 > \langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle = D_F(x - y) - \frac{i\lambda}{2}\int d^4z\,D_F(x - z)D_F(0)D_F(z - y) + O(\lambda^2)

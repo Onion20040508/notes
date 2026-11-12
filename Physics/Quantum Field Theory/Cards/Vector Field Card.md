@@ -83,7 +83,7 @@ One-page reference for the free vector field: the massive (Proca) field and the 
 
 ## 6. Two-point functions and propagators
 
-Homogeneous / Green's as in the scalar card; Green's functions satisfy $K D = i\delta^4$ for $S = \frac12\int A K A$ — [[§C4.11 Vector-Field Propagators#^rem-c4-11-5|§C4.11, Remark: One normalization for every propagator]]. The vector Feynman propagator is defined in [[§C4.11 Vector-Field Propagators#^def-c4-11-2|Def. §C4.11.2]]; the whole family at a glance: [[§C4.11 Vector-Field Propagators#^rem-c4-11-4|§C4.11, Remark: The vector two-point functions at a glance]]. Momentum space below means $\int\frac{d^4p}{(2\pi)^4}\tilde f(p)e^{-ip\cdot\xi}$; scalar functions from [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]].
+Homogeneous / Green's as in the scalar card; Green's functions satisfy $K D = i\delta^4$ for $S = \frac12\int A K A$ — [[§C4.11 Vector-Field Propagators#^rem-c4-11-5|§C4.11, Remark: One normalization for every propagator]]. The vector Feynman propagator is defined in [[§C4.11 Vector-Field Propagators#^def-c4-11-2|Def. §C4.11.2]]; the whole family at a glance: [[§C4.11 Vector-Field Propagators#^rem-c4-11-4|§C4.11, Remark: The vector two-point functions at a glance]]. Momentum space below means $\int\frac{d^4p}{(2\pi)^4}\tilde f(p)e^{-ip\cdot\xi}$; scalar functions from [[§C2b.8 Wick Rotation and the Two-Point Family#^rem-c2b-8-2|§C2b.8, Remark: The two-point functions at a glance]].
 
 | Name | Definition | Momentum space | Key property | As a distribution | Home |
 | --- | --- | --- | --- | --- | --- |

@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.2 (Principle "Wick's theorem", Derivations "Proof by induction (filled in)" and "Four fields", Principle "Vacuum expectation values: complete contractions", paragraphs "Contracting two pairs", "Theorem and application") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part A, slides 9–10, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.3, pp. 89–90, eqs. (4.38)–(4.41) · Yu Zhao-Huan, 量子场论讲义, §6.3.1, eqs. (6.166)–(6.168); §6.3.2 (optional reading): lemma (6.169)–(6.170) with proof (6.171)–(6.185), proof of the theorem (6.186)–(6.193).*
 
-For two fields the time-ordered product is the normal-ordered product plus one contraction ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]). For $n$ fields every misplaced $\hat\phi^+$ must be moved past every $\hat\phi^-$, each move costs a $c$-number ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]]), and time ordering turns each cost into a Feynman propagator. Wick's theorem says what the total is: the normal-ordered product plus every way of contracting pairs ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]). In the vacuum only the terms with every field contracted survive, so a free vacuum expectation value is a sum over pairings of the fields. The proof is an induction on the number of fields, built on a lemma about appending one more field of earlier time. Yu treats this in §6.3, eqs. (6.166)–(6.193), for bosons and fermions, and proves it with the same lemma (6.169); PS prove it by prepending the latest field instead (eq. (4.41)), kept here as a second proof. **Setup:** as in [[§C6a.5 Normal Ordering and Contractions|§C6a.5]]: identities between free-field operators ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]), in any state and independent of the dynamics; vacuum values in $|0\rangle$ only ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
+For two fields the time-ordered product is the normal-ordered product plus one contraction ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]]). For $n$ fields every misplaced $\hat\phi^+$ must be moved past every $\hat\phi^-$, each move costs a $c$-number ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]]), and time ordering turns each cost into a Feynman propagator. Wick's theorem says what the total is: the normal-ordered product plus every way of contracting pairs ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]). In the vacuum only the terms with every field contracted survive, so a free vacuum expectation value is a sum over pairings of the fields. The proof is an induction on the number of fields, built on a lemma about appending one more field of earlier time. Yu treats this in §6.3, eqs. (6.166)–(6.193), for bosons and fermions, and proves it with the same lemma (6.169); PS prove it by prepending the latest field instead (eq. (4.41)), kept here as a second proof. **Setup:** as in [[§C6a.5 Normal Ordering and Contractions|§C6a.5]]: identities between free-field operators ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]), in any state and independent of the dynamics; vacuum values in $|0\rangle$ only ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.5 Normal Ordering and Contractions|§C6a.5]]: $\hat\phi_i \equiv \hat\phi_I(x_i)$, free fields; $D_{ij} \equiv D_F(x_i - x_j)$ where it saves space; a hat over a factor, $\widehat{\hat\phi_k}$, is avoided: "$\prod_{i\ne k}$" or "omit $\hat\phi_k$" is written out.
 
@@ -88,13 +88,13 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > \sum_A[M_A, \hat\phi_b^-] = \sum_{k=1}^nD_W(x_k - x_b)\,:\!\prod_{i\ne k}\hat\phi_i\!: .
 > $$
 >
-> **Step 6** (the time condition). [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]] with $\xi = x_k - x_b$:
+> **Step 6** (the time condition). [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]] with $\xi = x_k - x_b$:
 >
 > $$
 > D_F(\xi) = \theta(\xi^0)\,D_W(\xi) + \theta(-\xi^0)\,D_W(-\xi) = D_W(\xi) \qquad (\xi^0 > 0) .
 > $$
 >
-> For $\xi^0 = 0$ the separation is spacelike or zero and the commutator function vanishes there ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]): $D_W(\xi) - D_W(-\xi) = iD(\xi) = 0$, so $D_W(\xi) = D_W(-\xi) = D_F(\xi)$ again. With the bracket $\overbracket{\hat\phi_k\hat\phi_b} = D_F(x_k - x_b)$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]), Steps 3 and 5 give part 1; for $n = 2$:
+> For $\xi^0 = 0$ the separation is spacelike or zero and the commutator function vanishes there ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]): $D_W(\xi) - D_W(-\xi) = iD(\xi) = 0$, so $D_W(\xi) = D_W(-\xi) = D_F(\xi)$ again. With the bracket $\overbracket{\hat\phi_k\hat\phi_b} = D_F(x_k - x_b)$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]), Steps 3 and 5 give part 1; for $n = 2$:
 >
 > $$
 > :\!\hat\phi_1\hat\phi_2\!:\,\hat\phi_b = \,:\!\hat\phi_1\hat\phi_2\hat\phi_b\!:\, + \overbracket{\hat\phi_1\hat\phi_b}\,:\!\hat\phi_2\!:\, + \overbracket{\hat\phi_2\hat\phi_b}\,:\!\hat\phi_1\!: .
@@ -110,7 +110,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 
 ^der-c6a-6-1
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]
 
 > [!caution] Caution: The lemma needs the earliest time
 > Slide 9 states the induction step as "$N(\phi_1\dots\phi_{n-1})\phi_n = N(\phi_1\dots\phi_{n-1}\phi_n)$ + contract $\phi_n$ with any other $\phi$", where "contract" means $D_F$. This holds when $\phi_n$ has the earliest time, which is how it is used in the induction ([[§C6a.6 Wick's Theorem#^lem-c6a-6-1|Lemma §C6a.6.1]]; Yu (6.169) states the condition $x_b^0 \le x_1^0, \dots, x_n^0$). For general times the added terms are $D_W(x_i - x_n)$, not $D_F$.
@@ -147,9 +147,9 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > T\{\hat\phi_{\pi(1)}\cdots\hat\phi_{\pi(n)}\} = T\{\hat\phi_1\cdots\hat\phi_n\}, \qquad D_F(x_i - x_j) = D_F(x_j - x_i), \qquad :\!\hat\phi_{\pi(1)}\cdots\hat\phi_{\pi(n)}\!: = \,:\!\hat\phi_1\cdots\hat\phi_n\!:
 > $$
 >
-> ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|Theorem §C2b.6.1]], 1, for any number of fields: $T$ orders by time labels; [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]; [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 3), and $C \mapsto \pi(C)$ maps the sets of disjoint pairs of $\{1, \dots, n\}$ bijectively onto themselves. So both sides of part 1 are unchanged, and it suffices to prove the identity for $x_1^0 \ge x_2^0 \ge \cdots \ge x_n^0$. (Fields at equal times commute, [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], 1, so ties do not matter.)
+> ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], 1, for any number of fields: $T$ orders by time labels; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]; [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 3), and $C \mapsto \pi(C)$ maps the sets of disjoint pairs of $\{1, \dots, n\}$ bijectively onto themselves. So both sides of part 1 are unchanged, and it suffices to prove the identity for $x_1^0 \ge x_2^0 \ge \cdots \ge x_n^0$. (Fields at equal times commute, [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], 1, so ties do not matter.)
 >
-> **Step 2** (start). $n = 1$: $T\{\hat\phi_1\} = \hat\phi_1 = \,:\!\hat\phi_1\!:$. $n = 2$: [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]].
+> **Step 2** (start). $n = 1$: $T\{\hat\phi_1\} = \hat\phi_1 = \,:\!\hat\phi_1\!:$. $n = 2$: [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]].
 >
 > **Step 3** (peel off the earliest field). With the times ordered, $T\{\hat\phi_1\cdots\hat\phi_n\} = \hat\phi_1\cdots\hat\phi_n = T\{\hat\phi_1\cdots\hat\phi_{n-1}\}\,\hat\phi_n$.
 >
@@ -190,7 +190,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 
 ^der-c6a-6-2
 
-*Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|Theorem §C2b.6.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]], [[§C6a.6 Wick's Theorem#^lem-c6a-6-1|Lemma §C6a.6.1]]
+*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]], [[§C6a.6 Wick's Theorem#^lem-c6a-6-1|Lemma §C6a.6.1]]
 
 > [!derivation]- Derivation (second route: prepending the latest field, PS)
 > This is the proof of PS §4.3, eq. (4.41), filled in as in the user's notes ("Proof by induction (filled in)").
@@ -385,7 +385,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 ^rem-c6a-6-2
 
 > [!caution] Caution: In what sense Wick's theorem holds
-> Both sides of [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]] are operator-valued distributions in $(x_1, \dots, x_n)$. The identity holds after smearing every point with a test function, at distinct points ([[§C6a.5 Normal Ordering and Contractions#^cau-c6a-5-3|§C6a.5, Caution: In what sense these identities hold]]). The time-ordered product at distinct points with equal times is fixed by the equal-time commutation of the fields ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|Theorem §C2b.6.1]], 2). Perturbation theory applies the theorem to products in which several fields sit at the same point, the four fields of a vertex:
+> Both sides of [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]] are operator-valued distributions in $(x_1, \dots, x_n)$. The identity holds after smearing every point with a test function, at distinct points ([[§C6a.5 Normal Ordering and Contractions#^cau-c6a-5-3|§C6a.5, Caution: In what sense these identities hold]]). The time-ordered product at distinct points with equal times is fixed by the equal-time commutation of the fields ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], 2). Perturbation theory applies the theorem to products in which several fields sit at the same point, the four fields of a vertex:
 >
 > $$
 > T\{\hat\phi_x\hat\phi_y\,\hat\phi_I(z)^4\} \ni \overbracket{\hat\phi_x\hat\phi_y}\;\overbracket{\hat\phi_{z_1}\hat\phi_{z_2}}\;\overbracket{\hat\phi_{z_3}\hat\phi_{z_4}}\Big|_{z_a = z} = D_F(x - y)\,D_F(0)^2 .
@@ -421,7 +421,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 >
 > and the same with earlier $c$-number factors riding along (Step 7 there).
 >
-> **Step 2** (start). $n = 1$: $\hat\phi_1 = \,:\!\hat\phi_1\!:$. $n = 2$: Step 1 with $n = 2$, $\hat\phi_1\hat\phi_2 = \,:\!\hat\phi_1\hat\phi_2\!:\, + D_W(x_1 - x_2)$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]).
+> **Step 2** (start). $n = 1$: $\hat\phi_1 = \,:\!\hat\phi_1\!:$. $n = 2$: Step 1 with $n = 2$, $\hat\phi_1\hat\phi_2 = \,:\!\hat\phi_1\hat\phi_2\!:\, + D_W(x_1 - x_2)$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]]).
 >
 > **Step 3** (induction). Assume the statement for $n - 1$ fields and multiply by $\hat\phi_n$ on the right:
 >
@@ -448,7 +448,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 
 ^der-c6a-6-4
 
-*Uses:* [[§C6a.6 Wick's Theorem#^der-c6a-6-1|Derivation §C6a.6.1]], [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]
+*Uses:* [[§C6a.6 Wick's Theorem#^der-c6a-6-1|Derivation §C6a.6.1]], [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]
 
 > [!remark] Remark: Yu's route
 > Yu §6.3 treats boson and fermion fields together, with a sign $\epsilon_{ab}$ for every exchange of two fermion fields (eqs. (6.140)–(6.143), (6.155), (6.163)), and defines the contraction as the vacuum expectation value of the time-ordered product (6.161), which equals PS's commutator definition (4.35). He proves the lemma ([[§C6a.6 Wick's Theorem#^lem-c6a-6-1|Lemma §C6a.6.1]]) in four steps: the $\Phi_b^{(+)}$ part (6.171)–(6.172); an induction over the positive-frequency factors (6.175)–(6.181); the general term (6.182)–(6.185); prior contractions (6.170). The theorem then follows by induction for $x_1^0 \ge \cdots \ge x_n^0$ (6.186)–(6.190) and, for any order, by exchanging fields in $T$ and $\mathsf N$ alike, which produces the same sign on both sides (6.191)–(6.193). Slide 9 follows Yu's direction (append the earliest field); PS (4.41) prepend the latest. Fermionic Wick contractions, with their signs, entered with Yukawa theory (Lecture 17): [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-2|§C6d.3, Theorem §C6d.3.2]].
@@ -463,7 +463,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — the pairings and their number, the two pieces of mathematics used (Theorem §C6a.6.2, its by-product count, Theorem §C6a.6.3, Examples §C6a.6.1–§C6a.6.2).
 
 > [!remark]- Connections
-> - The vacuum value of Wick's theorem has the form of the moment formula of a Gaussian: free fields are Gaussian, with covariance $D_F$, and in the path integral this is literal — [[§CA.7 Pairings, Diagrams and Symmetry Factors#^rem-ca-7-1|§CA.7, ★ Remark: The same sum is the moment formula of a Gaussian]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-4|§C2b.6, Remark: The propagator as a Gaussian covariance (preview)]].
-> - At coincident points the two-field case produced the zero-point energy; at a vertex of $\phi^4$ theory the same coincident contractions produce the first loops — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]].
+> - The vacuum value of Wick's theorem has the form of the moment formula of a Gaussian: free fields are Gaussian, with covariance $D_F$, and in the path integral this is literal — [[§CA.7 Pairings, Diagrams and Symmetry Factors#^rem-ca-7-1|§CA.7, ★ Remark: The same sum is the moment formula of a Gaussian]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-4|§C2b.7, Remark: The propagator as a Gaussian covariance (preview)]].
+> - At coincident points the two-field case produced the zero-point energy; at a vertex of $\phi^4$ theory the same coincident contractions produce the first loops — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]].
 > - The inputs of the theorem in perturbation theory are the terms of the Dyson series, products of free fields with four at each interaction point — [[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]].
 > - In the non-relativistic many-body problem the same theorem, for ladder operators, organizes perturbation theory around a Fermi sea or a condensate — [[§C12.2★ Second Quantization|QM §C12.2★]].

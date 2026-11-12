@@ -52,7 +52,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > i\mathcal M = (\sqrt Z)^{n+m}\times(\text{sum of the amputated, fully connected diagrams}) \qquad \text{(Yu eqs. (10.234)–(10.235))} .
 > $$
 >
-> **Step 4** (lowest order). $Z = 1 + O(\text{coupling})$ (in $\phi^4$ theory $1 + O(\lambda^2)$: [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|Caution: The rule is stated at lowest order]], below) and the full propagator is $\tilde D_F$ at lowest order ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]); "in the leading-order calculation one can take $Z = 1$ and $\delta m^2 = 0$" (Yu, box after eq. (10.228)). Then
+> **Step 4** (lowest order). $Z = 1 + O(\text{coupling})$ (in $\phi^4$ theory $1 + O(\lambda^2)$: [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|Caution: The rule is stated at lowest order]], below) and the full propagator is $\tilde D_F$ at lowest order ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]); "in the leading-order calculation one can take $Z = 1$ and $\delta m^2 = 0$" (Yu, box after eq. (10.228)). Then
 >
 > $$
 > \frac{iZ}{p^2 - m^2 + i\varepsilon} = \tilde D_F(p) + O(\lambda) , \qquad i\mathcal M = 1^{n+m}\times(\text{amputated diagrams}) = \frac{\text{fully connected diagrams of }\tilde G^{(n+m)}}{\prod_{\text{external}}\tilde D_F\cdot(2\pi)^4\delta^4(\cdots)} ,
@@ -66,7 +66,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 
 ^der-c6c-1-1
 
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]; the LSZ formula (Yu eq. (10.121); QFT C10, planned)
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]; the LSZ formula (Yu eq. (10.121); QFT C10, planned)
 
 > [!example] Example §C6c.1.1: φφ → φφ at First Order
 > ![[ph-qft-c6-16-1.svg]]
@@ -127,7 +127,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 >
 > coefficient $\frac{24}{1!\,(4!)^1} = 1 = \frac1S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]): $S = 1$, "the $4!$ ways of attaching four distinct external lines to the vertex cancel the $1/4!$" (Yu eq. (10.224)). Dividing by the denominator of the master formula, $1 + O(\lambda)$, changes nothing at this order: no bubble factor remains ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]).
 >
-> **Step 6** (momentum space). Insert $D_F(x_j - z) = \int\frac{d^4k_j}{(2\pi)^4}\frac{i\,e^{-ik_j\cdot(x_j - z)}}{k_j^2 - m^2 + i\varepsilon}$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]) and do the $z$ integral ([[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]]):
+> **Step 6** (momentum space). Insert $D_F(x_j - z) = \int\frac{d^4k_j}{(2\pi)^4}\frac{i\,e^{-ik_j\cdot(x_j - z)}}{k_j^2 - m^2 + i\varepsilon}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]) and do the $z$ integral ([[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]]):
 >
 > $$
 > -i\lambda\int d^4z\,\prod_{j=1}^4D_F(x_j - z) = \int\prod_{j=1}^4\frac{d^4k_j}{(2\pi)^4}\,\frac{i\,e^{-ik_j\cdot x_j}}{k_j^2 - m^2 + i\varepsilon}\;(-i\lambda)\,(2\pi)^4\delta^4(k_1 + k_2 + k_3 + k_4) .
@@ -217,7 +217,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 >
 > $D_{ij} = D_F(x_i - x_j)$; each factor of each term involves two of the four points, so the transform factorizes into two two-point transforms.
 >
-> **Step 2** (one line). Insert $D_F(x_i - x_j) = \int\frac{d^4k}{(2\pi)^4}\tilde D_F(k)\,e^{-ik\cdot(x_i - x_j)}$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]) and do the two position integrals with [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]; for phases $e^{iq_i\cdot x_i}$, $e^{iq_j\cdot x_j}$ (momenta $q_i$, $q_j$ entering),
+> **Step 2** (one line). Insert $D_F(x_i - x_j) = \int\frac{d^4k}{(2\pi)^4}\tilde D_F(k)\,e^{-ik\cdot(x_i - x_j)}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]) and do the two position integrals with [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]; for phases $e^{iq_i\cdot x_i}$, $e^{iq_j\cdot x_j}$ (momenta $q_i$, $q_j$ entering),
 >
 > $$
 > \int d^4x_i\,d^4x_j\;e^{iq_i\cdot x_i + iq_j\cdot x_j}\,D_F(x_i - x_j) = \int\frac{d^4k}{(2\pi)^4}\tilde D_F(k)\,(2\pi)^4\delta^4(q_i - k)\,(2\pi)^4\delta^4(q_j + k) = \tilde D_F(q_i)\,(2\pi)^4\delta^4(q_i + q_j) .
@@ -242,7 +242,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 
 ^der-c6c-1-2
 
-*Uses:* [[§C6a.7 Feynman Diagrams for Correlation Functions#^ex-c6a-7-1|Example §C6a.7.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.8 Wave Packets and the Cross Section#^lem-c6b-8-5|Lemma §C6b.8.5]]
+*Uses:* [[§C6a.7 Feynman Diagrams for Correlation Functions#^ex-c6a-7-1|Example §C6a.7.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.8 Wave Packets and the Cross Section#^lem-c6b-8-5|Lemma §C6b.8.5]]
 
 > [!remark] Remark: Disconnected pieces beyond zeroth order
 > The four-point correlator also contains disconnected pieces at higher orders, e.g. a line times a line with a tadpole at first order. They describe particles that pass through, at least partly, untouched; each connected component carries its own momentum delta function, and such pieces belong to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$ (or to products of lower-point processes), not to $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^der-c6b-1-4|Derivation §C6b.1.4]], second point).
@@ -312,8 +312,8 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 
 > [!remark]- Connections
 > - The diagrams of a scattering amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]]), the case $S = 1$ ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]) and the cubic–quartic diagrams of Problem Set 8 ([[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]], [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|Example §C6c.6.2]]) are in [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors|§C6c.5]] and [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]], with the tree-level rules for $i\mathcal M$ that the external-state contractions give (amputation and symmetry factors with the particles held fixed in §C6c.5, the rules in §C6c.6); the vertex factors of a polynomial interaction, $-ig_t\prod_km_{t,k}!$, are [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]], with the Feynman rules for any polynomial interaction.
-> - The external propagators that are stripped are the poles of the correlation functions at the particle masses; the same poles appear in the spectral picture of the two-point function, with residue $Z$ — QFT C10 (planned), [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]].
-> - In position space, stripping a propagator is applying $(\partial^2 + m^2)$, since $D_F$ is a Green's function of the Klein–Gordon operator — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription|§C2b.6]].
+> - The external propagators that are stripped are the poles of the correlation functions at the particle masses; the same poles appear in the spectral picture of the two-point function, with residue $Z$ — QFT C10 (planned), [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]].
+> - In position space, stripping a propagator is applying $(\partial^2 + m^2)$, since $D_F$ is a Green's function of the Klein–Gordon operator — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription|§C2b.7]].
 > - "Fully connected" is stronger than the "attached" of the bubble cancellation; disconnected pieces of the correlator are the $\mathbb 1$ and products of smaller processes — [[§C6a.11 The iε Limit and Vacuum Bubbles#^cau-c6a-11-1|§C6a.11, Caution: Connected means attached to an external point]].
 > - The symmetry factor of the diagram and the identical-particle factor of the final state enter the same cross section separately — [[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]].
 > - The contraction of a field with an outgoing particle, which the amputation rule hides, is written out for $n$ particles in both normalizations in [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]]; with it the decay $\Phi \to \phi\phi$ is computed directly from $\langle f|T\exp|i\rangle$ — [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|Example §C6b.6.1]].
