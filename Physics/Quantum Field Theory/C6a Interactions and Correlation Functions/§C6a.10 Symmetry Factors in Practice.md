@@ -3,22 +3,22 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C6a
-section: C6a.9
+section: C6a.10
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6a.8 Position-Space Feynman Rules]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.10 Feynman Rules in Momentum Space]] →
+← [[§C6a.9 Position-Space Feynman Rules]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.11 Feynman Rules in Momentum Space]] →
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.5 (Principle "The symmetry factor", practical rules; Figure "Symmetry factors"; Derivation "The melon: S = 48 by counting"; paragraph "How much this matters") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part B, slides 17–18, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 92–93, eq. (4.45) · Yu Zhao-Huan, 量子场论讲义, §7.3, eqs. (7.124)–(7.125), (7.127)–(7.128), (7.131)–(7.132), and pp. 293–294 · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §6 (Proposition "Constraints and standard elements of Stab(P)"), §7 (Examples "The fifteen pairings", "The diagrams of PHY 513 HW 8, Problem 1(a)"), §8 (Remark "The same proof for other vertices") · PHY 513, Problem Set 8, Problem 1 (submitted 2026-10-30; the user's solution).*
 
-The coefficient of a diagram is $1/S$, with $S$ the order of its symmetry group ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]). In practice $S$ is read off the drawing as a product of local factors (loops, bundles of parallel lines) and a global one (permutations of the vertices), a rule of thumb that is in fact exact ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]). This section states the slides' rules in that language and works the examples of the lecture, the user's notes and PS, each both by the product rule and by counting contractions; every count was checked by enumerating the pairings. The diagrams of Problem Set 8, Problem 1(a) are worked as the user solved them (both counts and stabilizers), and a last subsection treats the oriented lines of the complex scalar (Problem 1(b)). Yu treats symmetry factors in §7.3 for the self-energy contributions $\langle\mathbf k|iT|\mathbf k\rangle$ of the $S$-operator, counting contractions with the initial and final states rather than with fixed external points; the factors agree.
+The coefficient of a diagram is $1/S$, with $S$ the order of its symmetry group ([[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-1|Theorem §C6a.9.1]]). In practice $S$ is read off the drawing as a product of local factors (loops, bundles of parallel lines) and a global one (permutations of the vertices), a rule of thumb that is in fact exact ([[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-1|Theorem §C6a.10.1]]). This section states the slides' rules in that language and works the examples of the lecture, the user's notes and PS, each both by the product rule and by counting contractions; every count was checked by enumerating the pairings. The diagrams of Problem Set 8, Problem 1(a) are worked as the user solved them (both counts and stabilizers), and a last subsection treats the oriented lines of the complex scalar (Problem 1(b)). Yu treats symmetry factors in §7.3 for the self-energy contributions $\langle\mathbf k|iT|\mathbf k\rangle$ of the $S$-operator, counting contractions with the initial and final states rather than with fixed external points; the factors agree.
 
-*Conventions* ([[Larsen PHY 513]]): a diagram's value includes $-i\lambda\int d^4z$ per vertex and $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]); "$k$ of $N$" means $k$ of the $N = n!\,(4!)^n$ relabellings, i.e. $k$ complete contractions produce the diagram, and $S = N/k$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]]).
+*Conventions* ([[Larsen PHY 513]]): a diagram's value includes $-i\lambda\int d^4z$ per vertex and $1/S$ ([[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-4|Theorem §C6a.9.4]]); "$k$ of $N$" means $k$ of the $N = n!\,(4!)^n$ relabellings, i.e. $k$ complete contractions produce the diagram, and $S = N/k$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]]).
 
 The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-loops at one vertex, $m!$ for $m$ lines joining the same two points, and the number $|\Gamma|$ of vertex permutations that map the drawing to itself; it is proved in CA ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-9|Theorem §CA.8.9]]; its examples there are the vacuum bubbles: [[§CA.8 Pairings, Diagrams and Symmetry Factors#^ex-ca-8-1|Example §CA.8.1]]).
 
-> [!theorem] Theorem §C6a.9.1: The Symmetry Factor as a Product of Line and Vertex Factors
-> For a $\phi^4$ diagram $D$ with fixed external points and symmetry factor $S(D)$ ([[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]),
+> [!theorem] Theorem §C6a.10.1: The Symmetry Factor as a Product of Line and Vertex Factors
+> For a $\phi^4$ diagram $D$ with fixed external points and symmetry factor $S(D)$ ([[§C6a.9 Position-Space Feynman Rules#^def-c6a-9-1|Def. §C6a.9.1]]),
 >
 > $$
 > S(D) = |\Gamma_D|\;\prod_{\text{vertices } v}2^{\ell(v)}\,\ell(v)!\;\prod_{\{u, w\},\ u \ne w}m(u, w)! ,
@@ -26,22 +26,22 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 >
 > where $\ell(v)$ is the number of self-loops at the vertex $v$ (lines that begin and end at $v$), $m(u, w)$ the number of lines joining the two different points $u$, $w$, and $\Gamma_D$ the group of permutations of the vertices, external points held fixed, that preserve every $m(u, w)$ and every $\ell(v)$.
 >
-> How to read it: draw the diagram and multiply a factor $2$ for each self-loop (its two ends can be exchanged), $\ell!$ for $\ell$ self-loops at one vertex, $m!$ for a bundle of $m$ lines between the same two points, and the number of vertex permutations that leave the drawing unchanged; a vertex joined to an external point is never moved. The coefficient of the diagram is $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]); when in doubt, count contractions instead, $S = n!\,(4!)^n/N_D$.
+> How to read it: draw the diagram and multiply a factor $2$ for each self-loop (its two ends can be exchanged), $\ell!$ for $\ell$ self-loops at one vertex, $m!$ for a bundle of $m$ lines between the same two points, and the number of vertex permutations that leave the drawing unchanged; a vertex joined to an external point is never moved. The coefficient of the diagram is $1/S$ ([[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-1|Theorem §C6a.9.1]]); when in doubt, count contractions instead, $S = n!\,(4!)^n/N_D$.
 >
-> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* combinatorial, any order, $\phi^4$ vertices; oriented lines of the complex scalar: Theorem §C6a.9.2; other polynomial vertices: count orbits as in [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-4|Theorem §C6a.13.4]].
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* combinatorial, any order, $\phi^4$ vertices; oriented lines of the complex scalar: Theorem §C6a.10.2; other polynomial vertices: count orbits as in [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-4|Theorem §C6a.14.4]].
 >
 > *Proof:* [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-9|Theorem §CA.8.9]] (for each labelled version $P$ of $D$, with $\Gamma_D = \Gamma_P$; $S$ is the same for all of them, [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-4|Def. §CA.8.4]]).
 >
 > *Source: PS §4.4, p. 93 ("Two factors of 2 come from lines that start and end on the same vertex … The other factor of 2 comes from the two propagators connecting $w$ to $u$ … A third possible type of symmetry is the equivalence of two vertices"; $S = 2, 8, 6, 12$; "When in doubt, you can always determine the symmetry factor by counting equivalent contractions") · PHY 513 Lecture 14, slides 17–18 · the user's PHY 513 notes, Ch. 14 §14.5 (Principle "The symmetry factor", "In practice, multiply")*
 
-^thm-c6a-9-1
+^thm-c6a-10-1
 
 > [!remark] Remark: The slides' general rule in this language
-> Slide 17 states the principle: "Reordering of legs = topologically distinct diagram ⇒ S = 1"; "If symmetry ⇒ same diagram then S = order of symmetry." The first sentence is the case $\operatorname{Aut} = 1$: every one of the $n!\,(4!)^n$ relabellings gives a different contraction, and the prefactor cancels completely. The second is [[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]. The user's notes' "in practice, multiply: a factor 2 for each line that begins and ends at the same vertex; $k!$ for each set of $k$ lines joining the same two vertices; the number of permutations of internal vertices that map the diagram to itself" is [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]], with one clarification: $k$ loops at the same vertex count as a set of $k$ lines joining the same two vertices (figure-eight: $2\cdot2\cdot2!$). With external points held fixed, a vertex joined to an external point cannot be moved, so "more symmetric diagrams have larger $S$; diagrams anchored to many external points have smaller $S$."
+> Slide 17 states the principle: "Reordering of legs = topologically distinct diagram ⇒ S = 1"; "If symmetry ⇒ same diagram then S = order of symmetry." The first sentence is the case $\operatorname{Aut} = 1$: every one of the $n!\,(4!)^n$ relabellings gives a different contraction, and the prefactor cancels completely. The second is [[§C6a.9 Position-Space Feynman Rules#^def-c6a-9-1|Def. §C6a.9.1]]. The user's notes' "in practice, multiply: a factor 2 for each line that begins and ends at the same vertex; $k!$ for each set of $k$ lines joining the same two vertices; the number of permutations of internal vertices that map the diagram to itself" is [[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-1|Theorem §C6a.10.1]], with one clarification: $k$ loops at the same vertex count as a set of $k$ lines joining the same two vertices (figure-eight: $2\cdot2\cdot2!$). With external points held fixed, a vertex joined to an external point cannot be moved, so "more symmetric diagrams have larger $S$; diagrams anchored to many external points have smaller $S$."
 >
 > *Source: PHY 513 Lecture 14, slide 17, and transcript · the user's PHY 513 notes, Ch. 14 §14.5 (Principle "The symmetry factor")*
 
-^rem-c6a-9-1
+^rem-c6a-10-1
 
 > [!caution] Caution: Loops at one vertex are permuted too
 > The user's notes' rule "a factor 2 for each line that begins and ends at the same vertex; $k!$ for each set of $k$ lines joining the same two vertices" must count $k$ loops at one vertex as a set of $k$ lines joining that vertex to itself. Read literally, the figure-eight would get only the two loop factors:
@@ -50,7 +50,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > 2\cdot2 = 4 \;\ne\; 8 = \frac{4!}{3} ,
 > $$
 >
-> while [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]] gives $2^{\ell}\,\ell!$ for $\ell$ loops at one vertex, $2^2\cdot2! = 8$, in agreement with the 3 of 24 contractions ([[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]]) and with the notes' own figure ("$S = 2^3 = 8$", three reflections). The same applies to each figure-eight of "two figure-eights" ($S = 2\cdot8\cdot8 = 128$, [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-3|Example §C6a.9.3]]).
+> while [[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-1|Theorem §C6a.10.1]] gives $2^{\ell}\,\ell!$ for $\ell$ loops at one vertex, $2^2\cdot2! = 8$, in agreement with the 3 of 24 contractions ([[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-1|Example §C6a.10.1]]) and with the notes' own figure ("$S = 2^3 = 8$", three reflections). The same applies to each figure-eight of "two figure-eights" ($S = 2\cdot8\cdot8 = 128$, [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-3|Example §C6a.10.3]]).
 >
 > The exchange of the two loops is a permutation of the legs at the one vertex, not of vertices. The user's note on symmetry factors and orbit–stabilizer attributes it to a vertex permutation $\tau \ne e$ (paragraph after its Proposition "Constraints and standard elements of Stab(P)"); with $n = 1$ the only vertex permutation is the identity, and the exchange is
 >
@@ -62,17 +62,17 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 >
 > *Source: the user's PHY 513 notes, Ch. 14 §14.5 (Principle "The symmetry factor", "In practice, multiply"; Figure "Symmetry factors") · PHY 513 Lecture 14, slide 18 ("three reflection symmetries") · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §6, paragraph after Proposition "Constraints and standard elements of Stab(P)"*
 
-^cau-c6a-9-1
+^cau-c6a-10-1
 
 ![[ph-qft-ca-7-5.svg]]
-*The product formula of [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]. (a) The three kinds of factor: $2^{\ell}\ell!$ for $\ell$ loops at one vertex, $m!$ for $m$ lines between two points, and $|\Gamma_P|$ for the vertex permutations that keep the drawing. (b) Four diagrams with their $S$; with external points fixed, $\Gamma_P$ can be trivial.*
+*The product formula of [[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-1|Theorem §C6a.10.1]]. (a) The three kinds of factor: $2^{\ell}\ell!$ for $\ell$ loops at one vertex, $m!$ for $m$ lines between two points, and $|\Gamma_P|$ for the vertex permutations that keep the drawing. (b) Four diagrams with their $S$; with external points fixed, $\Gamma_P$ can be trivial.*
 
 ## Examples
 
-> [!example] Example §C6a.9.1: The First-Order Diagrams
+> [!example] Example §C6a.10.1: The First-Order Diagrams
 > ![[ph-qft-c6a-9-5.svg]]
 >
-> The 15 complete contractions of $\hat\phi_x\hat\phi_y\hat\phi_{z_1}\cdots\hat\phi_{z_4}$ are listed, pair by pair, in Step 4 of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]]; $N = 1!\,(4!)^1 = 24$. As pairings ("the fifteen pairings of $\langle\hat\phi(x)\hat\phi(y)\hat\phi(z)^4\rangle$"): $E = \{x, y\}$, $n = 1$, write $a$ for the leg $(1, a)$ of $z$; the relabelling group is $G_1 = S_4$ acting on the legs $1, 2, 3, 4$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-3|Def. §CA.8.3]]), and
+> The 15 complete contractions of $\hat\phi_x\hat\phi_y\hat\phi_{z_1}\cdots\hat\phi_{z_4}$ are listed, pair by pair, in Step 4 of [[§C6a.8 Feynman Diagrams for Correlation Functions#^der-c6a-8-1|Derivation §C6a.8.1]]; $N = 1!\,(4!)^1 = 24$. As pairings ("the fifteen pairings of $\langle\hat\phi(x)\hat\phi(y)\hat\phi(z)^4\rangle$"): $E = \{x, y\}$, $n = 1$, write $a$ for the leg $(1, a)$ of $z$; the relabelling group is $G_1 = S_4$ acting on the legs $1, 2, 3, 4$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-3|Def. §CA.8.3]]), and
 >
 > $$
 > |G_1| = 4! = 24, \qquad |\mathcal P(X_{E,1})| = 5!! = 5\cdot3\cdot1 = 15
@@ -111,7 +111,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > \operatorname{Aut}(P) = \{\mathrm{id},\ (3\,4)\}, \qquad S = 2 = \frac{24}{12} .
 > $$
 >
-> - Product rule ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]): $|\Gamma| = 1$, one loop, $m(x, z) = m(y, z) = 1$: $S = 1\cdot2^1\,1!\cdot1!\,1! = 2$ ("reflection of internal line a symmetry", slide 18).
+> - Product rule ([[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-1|Theorem §C6a.10.1]]): $|\Gamma| = 1$, one loop, $m(x, z) = m(y, z) = 1$: $S = 1\cdot2^1\,1!\cdot1!\,1! = 2$ ("reflection of internal line a symmetry", slide 18).
 >
 > *The figure-eight* (times the line $x$–$y$): two loops at $z$.
 > - Counting: the contractions are the three of row (a),
@@ -136,7 +136,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > The loop flips give only $2^2 = 4$; the extra factor 2 is the exchange of the two loops, $(1\,3)(2\,4)\cdot\{\{1,2\},\{3,4\}\} = \{\{3,4\},\{1,2\}\}$. With one vertex it is a permutation of legs, not of vertices ($\sigma = \mathrm{id}$).
 > - Product rule: $|\Gamma| = 1$, two loops at $z$: $S = 2^2\cdot2! = 8 = 2^3$ ("three reflection symmetries", slide 18).
 >
-> These are the two coefficients of [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]] (slide 17: "In the example (two point function at first order): S = 8 and 2 ⇒ factors $\frac18$, $\frac12$"). Every pairing lies in one of the two orbits ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-6|Corollary §CA.8.6]]):
+> These are the two coefficients of [[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-1|Theorem §C6a.8.1]] (slide 17: "In the example (two point function at first order): S = 8 and 2 ⇒ factors $\frac18$, $\frac12$"). Every pairing lies in one of the two orbits ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-6|Corollary §CA.8.6]]):
 >
 > $$
 > 15 = 12 + 3 = \frac{24}{2} + \frac{24}{8} = \frac{|G_1|}{S_{\rm tadpole}} + \frac{|G_1|}{S_{\text{line}\,\times\,\text{figure-eight}}} .
@@ -144,17 +144,17 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 >
 > *Source: PHY 513 Lecture 14, slides 17–18 · PS §4.4, p. 93 ($S = 2$, $S = 2\cdot2\cdot2 = 8$) · Yu §7.3, eqs. (7.124) ($S = 2$, Fig. 7.13) and (7.125) ($S = 8$, Fig. 7.14) · the user's PHY 513 notes, Ch. 14 §14.5, Figure "Symmetry factors" ("12 of 4!", "3 of 4!") · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), Example "The fifteen pairings" (orbits, stabilizers $\{e, (3\,4)\}$ and $D_4$, the count $15 = 24/2 + 24/8$) · stabilizers checked by enumeration over $S_4$*
 
-^ex-c6a-9-1
+^ex-c6a-10-1
 
 ![[ph-qft-c6-9-2.svg]]
-*The fifteen pairings of [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]] as two orbits of $G_1 = S_4$ (orange: leg $a$ of the vertex; $\{x1, y2, 34\}$ means the blocks $\{x, 1\}$, $\{y, 2\}$, $\{3, 4\}$). (a) Three of the 12 tadpole pairings, and the loop flip $(3\,4)$, which maps $P_0$ to itself. (b) The pairing $Q_0$ of the line times the figure-eight and three of its 8 symmetries: reverse the left loop, reverse the right loop, exchange the loops. Added figure; drawings from the user's note on symmetry factors and orbit–stabilizer (Oct 2026), Example "The fifteen pairings".*
+*The fifteen pairings of [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-1|Example §C6a.10.1]] as two orbits of $G_1 = S_4$ (orange: leg $a$ of the vertex; $\{x1, y2, 34\}$ means the blocks $\{x, 1\}$, $\{y, 2\}$, $\{3, 4\}$). (a) Three of the 12 tadpole pairings, and the loop flip $(3\,4)$, which maps $P_0$ to itself. (b) The pairing $Q_0$ of the line times the figure-eight and three of its 8 symmetries: reverse the left loop, reverse the right loop, exchange the loops. Added figure; drawings from the user's note on symmetry factors and orbit–stabilizer (Oct 2026), Example "The fifteen pairings".*
 
-> [!example] Example §C6a.9.2: The Melon: S = 48 by Counting
+> [!example] Example §C6a.10.2: The Melon: S = 48 by Counting
 > ![[ph-qft-c6a-9-6.svg]]
 >
 > Two vertices $z_1$, $z_2$, no external points, four lines from $z_1$ to $z_2$ (the slides' "melonic vacuum bubble (pumpkin diagram)"). Write $\hat\phi_{(v,a)}$ for the $a$-th factor of $\hat\phi_I(z_v)^4$.
 >
-> **Step 1** (prefactor). Second order ([[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], Step 1):
+> **Step 1** (prefactor). Second order ([[§C6a.9 Position-Space Feynman Rules#^der-c6a-9-1|Derivation §C6a.9.1]], Step 1):
 >
 > $$
 > \frac{1}{2!}\Bigl(\frac{1}{4!}\Bigr)^2 = \frac{1}{2\cdot576} = \frac{1}{1152} :
@@ -162,7 +162,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 >
 > $\frac12$ from expanding the exponential to second order, $\frac{1}{4!}$ from each vertex.
 >
-> **Step 2** (Wick's theorem for the eight fields). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]],
+> **Step 2** (Wick's theorem for the eight fields). By [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]],
 >
 > $$
 > \begin{aligned}
@@ -174,7 +174,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > \end{aligned}
 > $$
 >
-> **Step 3** (vacuum value). The terms with $8$, $6$, $4$ or $2$ fields in the colons give $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2); the 105 complete contractions survive.
+> **Step 3** (vacuum value). The terms with $8$, $6$, $4$ or $2$ fields in the colons give $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 2); the 105 complete contractions survive.
 >
 > **Step 4** (the melon's contractions). A complete contraction is a melon exactly when every contracted pair joins a leg of $z_1$ to a leg of $z_2$. Such a contraction pairs leg $a$ of $z_1$ with leg $\pi(a)$ of $z_2$ for a permutation $\pi \in S_4$:
 >
@@ -200,16 +200,16 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > S = |\operatorname{Aut}(P_\pi)| = 24 + 24 = 48 = \frac{1152}{24} .
 > $$
 >
-> Product rule ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]): the four lines form one bundle, $m(z_1, z_2) = 4$, and the two vertices can be exchanged, $|\Gamma| = 2$: $S = 2\cdot4! = 48$. A test: describe the diagram in words to someone who cannot see the drawing (from vertex one to vertex two, four times). The listener has $4!$ orders in which to draw the lines and can put either vertex on top; the prescription does not distinguish these, which is why they count as one diagram.
+> Product rule ([[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-1|Theorem §C6a.10.1]]): the four lines form one bundle, $m(z_1, z_2) = 4$, and the two vertices can be exchanged, $|\Gamma| = 2$: $S = 2\cdot4! = 48$. A test: describe the diagram in words to someone who cannot see the drawing (from vertex one to vertex two, four times). The listener has $4!$ orders in which to draw the lines and can put either vertex on top; the prescription does not distinguish these, which is why they count as one diagram.
 >
 > *Source: PHY 513 Lecture 14, slide 18 ("Permutation symmetry of all lines ⇒ $\frac12\frac{1}{4!^2}$ but only 4! cancel"), and transcript · the user's PHY 513 notes, Ch. 14 §14.5 (Derivation "The melon: S = 48 by counting") · term counts and stabilizer checked by enumeration*
 
-^ex-c6a-9-2
+^ex-c6a-10-2
 
-> [!example] Example §C6a.9.3: The Other Second-Order Vacuum Bubbles
+> [!example] Example §C6a.10.3: The Other Second-Order Vacuum Bubbles
 > ![[ph-qft-c6a-9-7.svg]]
 >
-> Notation and the 105 complete contractions of the eight fields as in [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-2|Example §C6a.9.2]], Steps 2–3; $N = 1152$.
+> Notation and the 105 complete contractions of the eight fields as in [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-2|Example §C6a.10.2]], Steps 2–3; $N = 1152$.
 >
 > *The dumbbell*: one loop at each of $z_1$, $z_2$ and two lines between them.
 > - Counting: the contractions are
@@ -237,7 +237,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > $3\cdot3 = 9$ of 1152, $\frac{9}{1152} = \frac{1}{128}$.
 > - Product rule: $|\Gamma| = 2$, two loops at each vertex: $S = 2\cdot(2^2\,2!)(2^2\,2!) = 2\cdot8\cdot8 = 128 = \frac{1152}{9}$.
 >
-> With the melon ([[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-2|Example §C6a.9.2]]) these exhaust the eight legs of two vertices:
+> With the melon ([[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-2|Example §C6a.10.2]]) these exhaust the eight legs of two vertices:
 >
 > $$
 > \underbrace{24}_{\text{melon}} + \underbrace{72}_{\text{dumbbell}} + \underbrace{9}_{\text{two figure-eights}} = 105 = 7!!
@@ -247,12 +247,12 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 >
 > *Source: the user's PHY 513 notes, Ch. 14 §14.5, Figure "Symmetry factors" ($S = 2\cdot2\cdot2!\cdot2 = 16$, "72 of $2\cdot4!^2$"; $S = 8\cdot8\cdot2 = 128$, "9 of $2\cdot4!^2$") · counts checked by enumeration*
 
-^ex-c6a-9-3
+^ex-c6a-10-3
 
-> [!example] Example §C6a.9.4: Three Second-Order Corrections to the Two-Point Function
+> [!example] Example §C6a.10.4: Three Second-Order Corrections to the Two-Point Function
 > ![[ph-qft-c6a-9-8.svg]]
 >
-> The fields are $\hat\phi_x$, $\hat\phi_y$ and $\hat\phi_{(v,a)}$, $v = 1, 2$, $a = 1, \dots, 4$; the surviving terms are complete contractions (Steps 3–4 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]); $N = 2!\,(4!)^2 = 1152$. Below, $v$ is one vertex and $w$ the other.
+> The fields are $\hat\phi_x$, $\hat\phi_y$ and $\hat\phi_{(v,a)}$, $v = 1, 2$, $a = 1, \dots, 4$; the surviving terms are complete contractions (Steps 3–4 of [[§C6a.9 Position-Space Feynman Rules#^der-c6a-9-1|Derivation §C6a.9.1]]); $N = 2!\,(4!)^2 = 1152$. Below, $v$ is one vertex and $w$ the other.
 >
 > *The snowman*: $x$ and $y$ joined to one vertex, two lines from it to the other, one loop at the other.
 > - Counting: the contractions are
@@ -267,7 +267,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > 2\cdot(4\cdot3)\cdot(4\cdot3) = 288 \text{ of } 1152, \qquad \frac{288}{1152} = \frac14 .
 > $$
 >
-> The terms with $v = 2$ become those with $v = 1$ on renaming $z_1 \leftrightarrow z_2$ (Step 5 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]).
+> The terms with $v = 2$ become those with $v = 1$ on renaming $z_1 \leftrightarrow z_2$ (Step 5 of [[§C6a.9 Position-Space Feynman Rules#^der-c6a-9-1|Derivation §C6a.9.1]]).
 > - Symmetry: for $v = 1$, $(a, b) = (1, 2)$, $(c, d) = (3, 4)$, $(e, f) = (1, 2)$, $(g, h) = (3, 4)$, the vertex swap is excluded ($z_1$ is joined to $x$ and $y$) and
 >
 > $$
@@ -336,16 +336,16 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > 288 + 288 + 192 + 72 + 24 + 72 + 9 = 945 = 9!! .
 > $$
 >
-> The last four cancel against the denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-3|Example §C6a.11.3]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]).
+> The last four cancel against the denominator ([[§C6a.12 The iε Limit and Vacuum Bubbles#^ex-c6a-12-3|Example §C6a.12.3]], [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|Theorem §C6a.12.5]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 14 §14.5, Figure "Symmetry factors" ($S = 2\cdot2! = 4$, $S = 2\cdot2 = 4$, "288 of $2\cdot4!^2$"; the sunset, $S = 6$) · Yu §7.3, eqs. (7.131)–(7.132) and Fig. 7.15(c) (the snowman, $S = 4$), eqs. (7.127)–(7.128) and Fig. 7.15(a) (the chain, $S = 4$), eqs. (7.129)–(7.130) and Fig. 7.15(b) (the sunset, $S = 6$) · PS §4.4, p. 93 (the sunset, $S = 3! = 6$) · PHY 513, Problem Set 8, Problem 1(a)(b) (the sunset, by counting, $N = 2\cdot4\cdot4\cdot3! = 192$, and by its stabilizer, $S_3$ on the three lines) · counts, stabilizers and the 945 checked by enumeration (`qft-C/tools/hw8/check_hw8.py`)*
 
-^ex-c6a-9-4
+^ex-c6a-10-4
 
-> [!example] Example §C6a.9.5: The Four Diagrams of Problem Set 8, Problem 1(a)
+> [!example] Example §C6a.10.5: The Four Diagrams of Problem Set 8, Problem 1(a)
 > ![[ph-qft-c6a-9-9.svg]]
 >
-> The user's setup: a diagram with $n$ vertices and external points $x_1, \dots, x_{n_{\rm ext}}$ comes from the order-$\lambda^n$ term $\frac{1}{n!}\bigl(\frac{-i\lambda}{4!}\bigr)^n\int d^4z_1\cdots d^4z_n\,\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|0\rangle$ of the numerator; if $N_D$ complete contractions produce it, all give the same integral, and ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]])
+> The user's setup: a diagram with $n$ vertices and external points $x_1, \dots, x_{n_{\rm ext}}$ comes from the order-$\lambda^n$ term $\frac{1}{n!}\bigl(\frac{-i\lambda}{4!}\bigr)^n\int d^4z_1\cdots d^4z_n\,\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|0\rangle$ of the numerator; if $N_D$ complete contractions produce it, all give the same integral, and ([[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-1|Theorem §C6a.9.1]])
 >
 > $$
 > \text{diagram} = \frac{1}{S}\,(-i\lambda)^n\int d^4z_1\cdots d^4z_n\prod D_F, \qquad S = \frac{n!\,(4!)^n}{N_D} = |\operatorname{Stab}(P)| ,
@@ -360,7 +360,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > | (c) fish, 4-point | $2$ | $1152$ | $2\cdot(4\cdot3)^2\cdot2 = 576$ | $S_2$ on the two lines | $2$ |
 > | (d) triangle, 6-point | $3$ | $82\,944$ | $3!\cdot(4\cdot3)^3\cdot8 = 82\,944$ | trivial | $1$ |
 >
-> (a) is the tadpole of [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]], (b) the sunset of [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-4|Example §C6a.9.4]], counted there in the same way.
+> (a) is the tadpole of [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-1|Example §C6a.10.1]], (b) the sunset of [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-4|Example §C6a.10.4]], counted there in the same way.
 >
 > *(c) The fish*: $x_1, x_2$ at one vertex, $x_3, x_4$ at the other, two lines between them.
 > - Counting: the contractions are
@@ -381,7 +381,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > \operatorname{Aut}(P) = \bigl\{(\mathrm{id}, \mathrm{id}),\ ((3\,4), (3\,4))\bigr\}, \qquad S = 2 = \frac{1152}{576} :
 > $$
 >
-> exchange the two lines, both ends together. Product rule ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]): $|\Gamma| = 1$, a double line, $S = 2! = 2$.
+> exchange the two lines, both ends together. Product rule ([[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-1|Theorem §C6a.10.1]]): $|\Gamma| = 1$, a double line, $S = 2! = 2$.
 >
 > *(d) The triangle*: vertices $A$, $B$, $C$ carrying the pairs $(x_1, x_2)$, $(x_3, x_4)$, $(x_5, x_6)$, joined pairwise.
 > - Counting: the three pairs go to the three vertices ($3!$); each pair to two of the four legs of its vertex ($4\cdot3$ per pair); the line $AB$ uses one free leg of $A$ and one of $B$ ($2\cdot2$), the line $BC$ the last leg of $B$ and one of the two free legs of $C$ (2), and $CA$ is then fixed (1). With legs $a_1, \dots, a_4$ of $A$ etc.,
@@ -408,12 +408,12 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 >
 > *Source: PHY 513, Problem Set 8, Problem 1(a) (the user's solution: both counts and the stabilizers, with exploded-vertex drawings) · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), Example "The diagrams of PHY 513 HW 8, Problem 1(a)" (the table) · counts and stabilizers checked by enumeration (`qft-C/tools/hw8/check_hw8.py`)*
 
-^ex-c6a-9-5
+^ex-c6a-10-5
 
 ![[ph-qft-c6-9-3.svg]]
-*The user's exploded-vertex drawings for [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-5|Example §C6a.9.5]]: each vertex a dashed circle, its legs separate dots (orange), internal lines red. (a) Sunset: a symmetry applies the same $\pi \in S_3$ to the legs $1, 2, 3$ and $a, b, c$, permuting the three lines. (b) Fish: the only symmetry exchanges the two lines. (c) A triangle pairing $P$; (d) exchanging the two internal legs at $C$ gives the same drawing but a different pairing, so it is not a symmetry, $S = 1$. Added figure, adapted from the user's solution of PHY 513, Problem Set 8, Problem 1(a).*
+*The user's exploded-vertex drawings for [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-5|Example §C6a.10.5]]: each vertex a dashed circle, its legs separate dots (orange), internal lines red. (a) Sunset: a symmetry applies the same $\pi \in S_3$ to the legs $1, 2, 3$ and $a, b, c$, permuting the three lines. (b) Fish: the only symmetry exchanges the two lines. (c) A triangle pairing $P$; (d) exchanging the two internal legs at $C$ gives the same drawing but a different pairing, so it is not a symmetry, $S = 1$. Added figure, adapted from the user's solution of PHY 513, Problem Set 8, Problem 1(a).*
 
-> [!example] Example §C6a.9.6: PS's Cactus, a Third-Order Example
+> [!example] Example §C6a.10.6: PS's Cactus, a Third-Order Example
 > ![[ph-qft-c6a-9-10.svg]]
 >
 > PS's third-order contraction (eq. (4.45)): $x$–$z$, a loop at $z$, $z$–$w$, $w$–$y$, two lines from $w$ to $u$, a loop at $u$, with value
@@ -452,17 +452,17 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 >
 > *Source: PS §4.4, pp. 92–93, eq. (4.45) and the "cactus" diagram · enumeration of the 135 135 pairings of 14 fields (10 368 produce the cactus)*
 
-^ex-c6a-9-6
+^ex-c6a-10-6
 
 ![[ph-qft-c6-9-1.svg]]
 *Symmetry factors of the examples, with the number of complete contractions that produce each diagram out of the $n!\,(4!)^n$ relabellings. Top: the first-order tadpole and figure-eight; the second-order vacuum bubbles (melon, dumbbell, two figure-eights). Bottom: the snowman, the chain and the sunset, the three second-order corrections to the two-point function, and PS's third-order cactus. Added figure; diagrams adapted from the user's PHY 513 notes, Figure "Symmetry factors", and PS pp. 92–93.*
 
 ## Oriented lines: the complex scalar
 
-In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $\hat\phi^\dagger$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3), so lines carry arrows and the relabellings may permute legs only within each kind ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]). Problem Set 8, Problem 1(b): "symmetry factors in complex scalar theory tend to be much smaller than in real scalar theory … because particles and anti-particles are distinct."
+In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $\hat\phi^\dagger$ ([[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-2|Theorem §C6a.8.2]], 3), so lines carry arrows and the relabellings may permute legs only within each kind ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]). Problem Set 8, Problem 1(b): "symmetry factors in complex scalar theory tend to be much smaller than in real scalar theory … because particles and anti-particles are distinct."
 
-> [!theorem] Theorem §C6a.9.2: Symmetry Factors with Oriented Lines
-> For the complex scalar with $\mathcal L_{\rm int} = -\frac\lambda4(\phi^\dagger\phi)^2$ ([[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-3|Model §C6a.8.3]]: [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]] plus this term), the order-$\lambda^n$ term of a numerator with external fields $\hat\phi_I(x_i)$, $\hat\phi_I^\dagger(y_j)$ is
+> [!theorem] Theorem §C6a.10.2: Symmetry Factors with Oriented Lines
+> For the complex scalar with $\mathcal L_{\rm int} = -\frac\lambda4(\phi^\dagger\phi)^2$ ([[§C6a.9 Position-Space Feynman Rules#^mod-c6a-9-3|Model §C6a.9.3]]: [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]] plus this term), the order-$\lambda^n$ term of a numerator with external fields $\hat\phi_I(x_i)$, $\hat\phi_I^\dagger(y_j)$ is
 >
 > $$
 > \frac{1}{n!}\Bigl(\frac{-i\lambda}{4}\Bigr)^n\int d^4z_1\cdots d^4z_n\,\langle0|T\Bigl\{\prod_i\hat\phi_I(x_i)\prod_j\hat\phi_I^\dagger(y_j)\prod_{v=1}^n\bigl(\hat\phi_I^\dagger\hat\phi_I\bigr)^2(z_v)\Bigr\}|0\rangle = \sum_D\frac{(-i\lambda)^n}{S(D)}\int d^4z_1\cdots d^4z_n\prod_{\text{lines}}D_F ,
@@ -472,22 +472,22 @@ In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $
 > 1. $S(D) = \dfrac{n!\,(2!\,2!)^n}{N_D} = |\operatorname{Stab}(P)|$, $N_D$ the number of contractions producing $D$;
 > 2. every symmetry maps $\hat\phi$ legs to $\hat\phi$ legs and $\hat\phi^\dagger$ legs to $\hat\phi^\dagger$ legs: it preserves every arrow.
 >
-> *Model:* [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-3|Model §C6a.8.3]]; *applies:* as for $\phi^4$ in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]: order $\lambda^n$ of the numerator of the master formula, in $|0\rangle$; combinatorial.
+> *Model:* [[§C6a.9 Position-Space Feynman Rules#^mod-c6a-9-3|Model §C6a.9.3]]; *applies:* as for $\phi^4$ in [[§C6a.9 Position-Space Feynman Rules|§C6a.9]]: order $\lambda^n$ of the numerator of the master formula, in $|0\rangle$; combinatorial.
 >
 > *Source: PHY 513, Problem Set 8, Problem 1(b) (the user's solution: "$\frac14 = \frac{1}{2!\,2!}$ … $|G| = k!\,(2!\,2!)^k$ is again the inverse of the prefactor … A relabeling cannot exchange a $\hat\phi$ leg with a $\hat\phi^\dagger$ leg, so a symmetry must preserve every arrow") · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §8 (complex-scalar bullet) · proof written here*
 
-^thm-c6a-9-2
+^thm-c6a-10-2
 
 > [!derivation]- Derivation
 > **Step 1** (prefactor). $\hat{\mathcal H}_I = \frac\lambda4(\hat\phi_I^\dagger\hat\phi_I)^2$ (no derivatives), so the order-$n$ Dyson term carries $\frac{1}{n!}\bigl(\frac{-i\lambda}{4}\bigr)^n = \frac{(-i\lambda)^n}{n!\,(2!\,2!)^n}$, and each $(\hat\phi_I^\dagger\hat\phi_I)^2(z_v) = \hat\phi_I^\dagger\hat\phi_I^\dagger\hat\phi_I\hat\phi_I(z_v)$ contributes two $\hat\phi$ legs and two $\hat\phi^\dagger$ legs (the fields at one point commute, [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]).
 >
-> **Step 2** (Wick). The vacuum value is the sum over complete pairings of all fields, each block a contraction ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]). A block $\hat\phi\hat\phi$ or $\hat\phi^\dagger\hat\phi^\dagger$ is $0$ and a block $\hat\phi(a)\hat\phi^\dagger(b)$ is $D_F(a - b)$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3): only the pairings of $\mathcal P_\smile$ with kinds $\hat\phi \smile \hat\phi^\dagger$ survive ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]]):
+> **Step 2** (Wick). The vacuum value is the sum over complete pairings of all fields, each block a contraction ([[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]]). A block $\hat\phi\hat\phi$ or $\hat\phi^\dagger\hat\phi^\dagger$ is $0$ and a block $\hat\phi(a)\hat\phi^\dagger(b)$ is $D_F(a - b)$ ([[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-2|Theorem §C6a.8.2]], 3): only the pairings of $\mathcal P_\smile$ with kinds $\hat\phi \smile \hat\phi^\dagger$ survive ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]]):
 >
 > $$
 > \langle0|T\{\cdots\}|0\rangle = \sum_{P\in\mathcal P_\smile}\;\prod_{\{a,b\}\in P}D_F\bigl(\mathrm{pt}(a) - \mathrm{pt}(b)\bigr) .
 > $$
 >
-> **Step 3** (invariance). Permuting the vertices and, at each vertex, the two $\hat\phi$ legs and the two $\hat\phi^\dagger$ legs ($G_n = (S_2\times S_2)^n \rtimes S_n$) maps $\mathcal P_\smile$ to itself and, after renaming the integration variables, does not change the integral (Step 5 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], with $D_F$ even).
+> **Step 3** (invariance). Permuting the vertices and, at each vertex, the two $\hat\phi$ legs and the two $\hat\phi^\dagger$ legs ($G_n = (S_2\times S_2)^n \rtimes S_n$) maps $\mathcal P_\smile$ to itself and, after renaming the integration variables, does not change the integral (Step 5 of [[§C6a.9 Position-Space Feynman Rules#^der-c6a-9-1|Derivation §C6a.9.1]], with $D_F$ even).
 >
 > **Step 4** (orbits). By [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1–2, $|G_n| = n!\,(2!\,2!)^n$ and the sum over each orbit $D$ is $N_D = |G_n|/S(D)$ equal terms:
 >
@@ -498,27 +498,27 @@ In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $
 > **Step 5** (part 2). [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 3: elements of $G_n$ preserve kinds, so a symmetry maps the $\hat\phi$ end of each line to a $\hat\phi$ end; the image of a line has its arrow the same way.
 >
 > **What the derivation shows.**
-> - The $\frac14$ in $\frac\lambda4(\phi^\dagger\phi)^2$ plays the role of the $\frac{1}{4!}$ of $\phi^4$: it is $\frac{1}{|S_2\times S_2|}$, and the vertex factor is again $-i\lambda$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]).
+> - The $\frac14$ in $\frac\lambda4(\phi^\dagger\phi)^2$ plays the role of the $\frac{1}{4!}$ of $\phi^4$: it is $\frac{1}{|S_2\times S_2|}$, and the vertex factor is again $-i\lambda$ ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]]).
 > - Fewer relabellings are allowed, so fewer can be symmetries: a loop cannot be flipped, and two lines can be exchanged only if they run the same way.
 
-^der-c6a-9-2
+^der-c6a-10-2
 
-*Uses:* [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]
+*Uses:* [[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-2|Theorem §C6a.8.2]], [[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]], [[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6a.9 Position-Space Feynman Rules#^der-c6a-9-1|Derivation §C6a.9.1]]
 
 *Procedure:* [[P5 Symmetry Factor of a Diagram#^p5-5|P5, step 5]]
 
-> [!example] Example §C6a.9.7: The Three Oriented Diagrams of Problem Set 8, Problem 1(b)
+> [!example] Example §C6a.10.7: The Three Oriented Diagrams of Problem Set 8, Problem 1(b)
 > ![[ph-qft-c6a-9-11.svg]]
 >
-> External fields $\hat\phi^\dagger(y)$ (arrow enters the diagram) and $\hat\phi(x)$ (arrow leaves); at a vertex an arrow enters at a $\hat\phi$ leg and leaves at a $\hat\phi^\dagger$ leg. $|G_1| = 1!\,(2!\,2!) = 4$, $|G_2| = 2!\,(2!\,2!)^2 = 32$ ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|Theorem §C6a.9.2]]).
+> External fields $\hat\phi^\dagger(y)$ (arrow enters the diagram) and $\hat\phi(x)$ (arrow leaves); at a vertex an arrow enters at a $\hat\phi$ leg and leaves at a $\hat\phi^\dagger$ leg. $|G_1| = 1!\,(2!\,2!) = 4$, $|G_2| = 2!\,(2!\,2!)^2 = 32$ ([[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-2|Theorem §C6a.10.2]]).
 >
 > *(a) Oriented tadpole*: $y \to z \to x$, a loop at $z$ from its $\hat\phi^\dagger$ leg to its $\hat\phi$ leg.
 > - Symmetry: the legs joined to $y$ and $x$ are fixed; what remains is one $\hat\phi$ leg and one $\hat\phi^\dagger$ leg, the two ends of the loop. Exchanging them would reverse the arrow, i.e. exchange a $\hat\phi$ leg with a $\hat\phi^\dagger$ leg, which is not in $G_1$: $\operatorname{Stab} = \{e\}$, $S = 1$.
-> - Counting: $\hat\phi^\dagger(y)$ with one of the 2 $\hat\phi$ legs, $\hat\phi(x)$ with one of the 2 $\hat\phi^\dagger$ legs, the rest forced: $N_D = 2\cdot2 = 4 = |G_1|$, $S = 1$ (the real field's tadpole has $S = 2$, [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]]).
+> - Counting: $\hat\phi^\dagger(y)$ with one of the 2 $\hat\phi$ legs, $\hat\phi(x)$ with one of the 2 $\hat\phi^\dagger$ legs, the rest forced: $N_D = 2\cdot2 = 4 = |G_1|$, $S = 1$ (the real field's tadpole has $S = 2$, [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-1|Example §C6a.10.1]]).
 >
 > *(b) Oriented fish*: $\hat\phi(x_1)$, $\hat\phi^\dagger(y_1)$ at one vertex and $\hat\phi(x_2)$, $\hat\phi^\dagger(y_2)$ at the other, so at each vertex one external line in and one out; two internal lines, one from left to right and one from right to left.
 > - Symmetry: both vertices carry external lines, so they are not exchanged, and the four legs joined to external lines are fixed. The only candidate is the exchange of the two internal lines, but they run in opposite directions: it would send an incoming leg to an outgoing leg at each vertex. $\operatorname{Stab} = \{e\}$, $S = 1$.
-> - Counting: the vertex of $(x_1, y_1)$ (2), $y_1$ and $x_1$ to its $\hat\phi$ and $\hat\phi^\dagger$ legs ($2\cdot2$), $y_2$ and $x_2$ likewise at the other ($2\cdot2$), the internal lines forced (1): $N_D = 2\cdot4\cdot4 = 32 = |G_2|$, $S = 1$ (real fish: $S = 2$, [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-5|Example §C6a.9.5]]).
+> - Counting: the vertex of $(x_1, y_1)$ (2), $y_1$ and $x_1$ to its $\hat\phi$ and $\hat\phi^\dagger$ legs ($2\cdot2$), $y_2$ and $x_2$ likewise at the other ($2\cdot2$), the internal lines forced (1): $N_D = 2\cdot4\cdot4 = 32 = |G_2|$, $S = 1$ (real fish: $S = 2$, [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-5|Example §C6a.10.5]]).
 >
 > *(c) Oriented sunset*: $y$ into the left vertex, $x$ out of the right one; line ① from right to left, lines ②, ③ from left to right.
 > - Symmetry: the vertices are fixed by the external lines, and so are the two legs joined to them. Lines ② and ③ both run left to right, so exchanging them (both ends together) maps outgoing legs to outgoing legs and incoming to incoming and maps the pairing to itself; ① runs the other way and cannot be exchanged with either. $\operatorname{Stab} = \{e, \rho_{23}\}$ with $\rho_{23}$ the exchange of ② and ③, $S = 2$.
@@ -526,17 +526,17 @@ In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $
 >
 > *Source: PHY 513, Problem Set 8, Problem 1(b) (the user's solution: the three stabilizers, with drawings: filled = in, open = out) · counts checked by enumeration (`qft-C/tools/hw8/check_hw8.py`; all $120$ second-order pairings of the complex two-point function have $S \in \{1, 2, 8\}$)*
 
-^ex-c6a-9-7
+^ex-c6a-10-7
 
 ![[ph-qft-c6-9-4.svg]]
-*The oriented diagrams of [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-7|Example §C6a.9.7]] with each vertex opened into its legs: filled dots are $\hat\phi$ legs, where an arrow enters the vertex; open dots are $\hat\phi^\dagger$ legs, where it leaves. (a) The loop flip would exchange a filled and an open dot: not allowed, $S = 1$. (b) The two internal lines run in opposite directions: no exchange, $S = 1$. (c) Lines ② and ③ run the same way and can be exchanged: $S = 2$. Added figure, adapted from the user's solution of PHY 513, Problem Set 8, Problem 1(b).*
+*The oriented diagrams of [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-7|Example §C6a.10.7]] with each vertex opened into its legs: filled dots are $\hat\phi$ legs, where an arrow enters the vertex; open dots are $\hat\phi^\dagger$ legs, where it leaves. (a) The loop flip would exchange a filled and an open dot: not allowed, $S = 1$. (b) The two internal lines run in opposite directions: no exchange, $S = 1$. (c) Lines ② and ③ run the same way and can be exchanged: $S = 2$. Added figure, adapted from the user's solution of PHY 513, Problem Set 8, Problem 1(b).*
 
 > [!remark] Remark: How much this matters
-> Slide 18: "Details of symmetry factors are not a high priority in this course." Problem Set 8 has some (Problem 1). PS: "Most people never need to evaluate a diagram with a symmetry factor greater than 2, so there's no need to worry too much about these technicalities … When in doubt, you can always determine the symmetry factor by counting equivalent contractions" (p. 93). Large symmetry factors belong to diagrams with few external points, above all the vacuum bubbles, which drop out of correlation functions ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]).
+> Slide 18: "Details of symmetry factors are not a high priority in this course." Problem Set 8 has some (Problem 1). PS: "Most people never need to evaluate a diagram with a symmetry factor greater than 2, so there's no need to worry too much about these technicalities … When in doubt, you can always determine the symmetry factor by counting equivalent contractions" (p. 93). Large symmetry factors belong to diagrams with few external points, above all the vacuum bubbles, which drop out of correlation functions ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|Theorem §C6a.12.5]]).
 >
 > *Source: PHY 513 Lecture 14, slide 18, and transcript · PS §4.4, p. 93 · the user's PHY 513 notes, Ch. 14 §14.5 (paragraph "How much this matters")*
 
-^rem-c6a-9-2
+^rem-c6a-10-2
 
 > [!caution] Caution: "In QED the symmetry factor is always S = 1" holds for diagrams with external points
 > Slide 18: "In QED the symmetry factor is always $S = 1$." The reason given: if the $\phi$'s at a vertex were not all the same but meant different things, these factors would not arise, and that is the case in QED: one leg carries charge plus, one charge minus, one is a photon, and no two can be exchanged, since they have different roles. The more pedagogical example used here has a complexity that is not representative of such theories.
@@ -547,30 +547,30 @@ In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $
 > \bigl\{\{\psi_1, \bar\psi_2\},\ \{\psi_2, \bar\psi_1\},\ \{A_1, A_2\}\bigr\}, \qquad N_D = 1, \qquad S = \frac{2!}{1} = 2 :
 > $$
 >
-> exchanging the two vertices maps the oriented loop and the photon line to themselves. Likewise two fermion loops joined by a photon, $\{\{\psi_1, \bar\psi_1\}, \{\psi_2, \bar\psi_2\}, \{A_1, A_2\}\}$, has $S = 2$. With an external point the slide's statement holds: a symmetry fixes the vertex of an external leg ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 3), hence (trivial leg group) all its legs, hence the partner leg of each and its vertex, and so on through the connected diagram: $S = 1$. Vacuum bubbles cancel ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]), so the slide is right for everything that is computed.
+> exchanging the two vertices maps the oriented loop and the photon line to themselves. Likewise two fermion loops joined by a photon, $\{\{\psi_1, \bar\psi_1\}, \{\psi_2, \bar\psi_2\}, \{A_1, A_2\}\}$, has $S = 2$. With an external point the slide's statement holds: a symmetry fixes the vertex of an external leg ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 3), hence (trivial leg group) all its legs, hence the partner leg of each and its vertex, and so on through the connected diagram: $S = 1$. Vacuum bubbles cancel ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|Theorem §C6a.12.5]]), so the slide is right for everything that is computed.
 >
 > *Source: PHY 513 Lecture 14, slide 18, and transcript · PHY 513, Problem Set 8, Problem 1(b), statement ("symmetry factors are usually small and they are often 1") · the counterexample written here (recorded in `qft-C/ERRATA.md`)*
 
-^cau-c6a-9-2
+^cau-c6a-10-2
 
 > [!remark] Remark: Yu's route
 > Yu computes symmetry factors for matrix elements of the $S$-operator: the first-order self-energy $\langle\mathbf k|iT_2^{(1)}|\mathbf k\rangle$ (eq. (7.124)), where $C_4^2 = 6$ ways of contracting two of the four fields at the vertex and $A_2^2 = 2$ ways of contracting the other two with the initial and final states reduce $\frac{1}{4!}$ to $\frac12$; the first-order vacuum bubble (eq. (7.125), $\frac18$); and the second-order self-energies (eqs. (7.126)–(7.132)), among them the chain ((7.127)–(7.128), $S = 4$) and the snowman ((7.131)–(7.132), $S = 4$). In each case the two ways of contracting with the initial and final states cancel the $\frac{1}{2!}$ of the second order. He states the principle in a box: "the factor obtained by analysing the symmetry of the Feynman diagram always agrees with the factor left over in the $T$-matrix computation" (p. 293), and remarks that tree diagrams contributing to scattering or decay have $S = 1$, while loop diagrams may have nontrivial symmetry factors (p. 294).
 >
 > *Source: Yu §7.3, pp. 292–296*
 
-^rem-c6a-9-3
+^rem-c6a-10-3
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-9|Theorem §CA.8.9]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^der-ca-8-9|Derivation §CA.8.9]] — the product rule for $S$, proved in CA (its examples there are the vacuum bubbles: [[§CA.8 Pairings, Diagrams and Symmetry Factors#^ex-ca-8-1|Example §CA.8.1]]); used in every example of this section and in the cautions on loops at one vertex and on external edges; physics form: [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]].
-> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — the number of complete contractions, $(2k - 1)!!$: the totals $15$ at first order and $945$ at second order that the diagram counts must add up to (Examples §C6a.9.1, §C6a.9.4).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-9|Theorem §CA.8.9]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^der-ca-8-9|Derivation §CA.8.9]] — the product rule for $S$, proved in CA (its examples there are the vacuum bubbles: [[§CA.8 Pairings, Diagrams and Symmetry Factors#^ex-ca-8-1|Example §CA.8.1]]); used in every example of this section and in the cautions on loops at one vertex and on external edges; physics form: [[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-1|Theorem §C6a.10.1]].
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — the number of complete contractions, $(2k - 1)!!$: the totals $15$ at first order and $945$ at second order that the diagram counts must add up to (Examples §C6a.10.1, §C6a.10.4).
 > - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-3|Def. §CA.8.3]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-4|Def. §CA.8.4]] — the relabelling group $G_n$ of order $n!\,(4!)^n$ and the automorphisms of a contraction as its stabilizer: the groups written out in the examples ($S_4$ on the legs at first order; the stabilizer of the melon).
 > - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-6|Corollary §CA.8.6]] — a diagram contains $n!\,(4!)^n/S$ contractions, and the diagrams exhaust all of them: "$k$ of $N$" in the conventions, $15 = 12 + 3$, and the seven diagrams of the $945$.
-> - [[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]] — the same counting when legs come in kinds: only $\hat\phi$–$\hat\phi^\dagger$ pairings, a relabelling group that permutes legs within each kind, and orbit–stabilizer for it (Theorem §C6a.9.2, Example §C6a.9.7, the QED caution).
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]] — the same counting when legs come in kinds: only $\hat\phi$–$\hat\phi^\dagger$ pairings, a relabelling group that permutes legs within each kind, and orbit–stabilizer for it (Theorem §C6a.10.2, Example §C6a.10.7, the QED caution).
 
 > [!remark]- Connections
 > - $S$ is the order of a stabilizer, and the product rule is the first isomorphism theorem applied to the map that forgets the legs: local symmetries form the kernel, vertex permutations the image — [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-9|Theorem §CA.8.9]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]].
 > - Identical particles in quantum mechanics are counted by the same permutation groups; a symmetry factor is the field-theory trace of indistinguishability — [[§C12.1★ Permutation Symmetry and the Symmetrization Postulate|QM §C12.1★]].
-> - The vacuum bubbles carry the largest symmetry factors and are removed by the denominator of the master formula — [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]].
-> - Charged fields have fewer relabellings, hence smaller symmetry factors: the complex scalar's arrows forbid loop flips and the exchange of opposite lines, and the QED vertex has no leg permutations at all; the counting is the same orbit–stabilizer argument with leg kinds — [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|Theorem §C6a.9.2]], [[§C6a.9 Symmetry Factors in Practice#^cau-c6a-9-2|Caution: "In QED the symmetry factor is always S = 1" holds for diagrams with external points]].
+> - The vacuum bubbles carry the largest symmetry factors and are removed by the denominator of the master formula — [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|Theorem §C6a.12.5]].
+> - Charged fields have fewer relabellings, hence smaller symmetry factors: the complex scalar's arrows forbid loop flips and the exchange of opposite lines, and the QED vertex has no leg permutations at all; the counting is the same orbit–stabilizer argument with leg kinds — [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-2|Theorem §C6a.10.2]], [[§C6a.10 Symmetry Factors in Practice#^cau-c6a-10-2|Caution: "In QED the symmetry factor is always S = 1" holds for diagrams with external points]].

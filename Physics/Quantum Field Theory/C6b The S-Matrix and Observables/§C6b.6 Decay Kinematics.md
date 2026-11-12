@@ -143,7 +143,7 @@ The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] nee
 > \mathcal L = \tfrac12(\partial_\mu\Phi)^2 - \tfrac12M^2\Phi^2 + \tfrac12(\partial_\mu\phi)^2 - \tfrac12m^2\phi^2 - \mu\,\Phi\phi^2 ,
 > $$
 >
-> each free part the field of [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; $[\mu] = 1$; vertex $-2i\mu$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]).
+> each free part the field of [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; $[\mu] = 1$; vertex $-2i\mu$ ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]]).
 >
 > *Assumptions:*
 > 1. $M > 2m$: $\Phi$ can decay into $\phi\phi$, so it is not a stable asymptotic particle (outside assumption 2 of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; [[§C6b.5 Decay Widths#^cau-c6b-5-1|Caution: Free states in a decay amplitude]]).
@@ -193,7 +193,7 @@ The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] nee
 > \mathcal A^{(1)} = -2i\mu\int d^4x\,e^{i(p_1 + p_2 - K)\cdot x} = -2i\mu\,(2\pi)^4\delta^4(K - p_1 - p_2) ,
 > $$
 >
-> and comparing with $\langle f|i\hat T|i\rangle = (2\pi)^4\delta^4(\sum p_{\rm in} - \sum p_{\rm out})\,i\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]): $i\mathcal M = -2i\mu$, $\mathcal M = -2\mu$, momentum independent (no derivatives in the vertex). The $2 = 2!$ is the vertex factor's count of ways to attach two distinct lines to the two $\phi$ legs ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]).
+> and comparing with $\langle f|i\hat T|i\rangle = (2\pi)^4\delta^4(\sum p_{\rm in} - \sum p_{\rm out})\,i\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]): $i\mathcal M = -2i\mu$, $\mathcal M = -2\mu$, momentum independent (no derivatives in the vertex). The $2 = 2!$ is the vertex factor's count of ways to attach two distinct lines to the two $\phi$ legs ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]]).
 >
 > **Step 6** (identical particles). $|\mathbf p_1\mathbf p_2\rangle = |\mathbf p_2\mathbf p_1\rangle$, so integrating $\mathbf p_1$ and $\mathbf p_2$ independently counts each final state twice: $S_{\rm id} = 2!$ ([[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]]; the $\frac{1}{n!}$ of the $n$-particle measure, [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]]).
 >

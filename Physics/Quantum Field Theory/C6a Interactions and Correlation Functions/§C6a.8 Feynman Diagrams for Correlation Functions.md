@@ -3,15 +3,15 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C6a
-section: C6a.7
+section: C6a.8
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6a.6 Wick's Theorem]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.8 Position-Space Feynman Rules]] →
+← [[§C6a.7 Wick's Theorem]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.9 Position-Space Feynman Rules]] →
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.3 (paragraph "The idea", Caution "A Feynman diagram is a formula", paragraph "Zeroth order", Derivation "First order in λ", paragraph "Why y and z may be exchanged", Caution "Numerator, not yet ⟨Ω|⋯|Ω⟩") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part B, slides 13–15, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 90–92, eqs. (4.42)–(4.44) · Yu Zhao-Huan, 量子场论讲义, §10.5.1, eqs. (10.187)–(10.192) (a different route, for comparison).*
 
-Every term of a free vacuum expectation value is a product of Feynman propagators ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]), and the only information in it is which arguments each $D_F$ has. So draw a point for each argument and a line for each contraction: a Feynman diagram. This section introduces the diagrams on the free four-point function and then computes the first-order correction to the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), a six-point function with four of its points at the interaction point. Its 15 complete contractions fall into two classes, which give the two first-order diagrams with coefficients $\frac18$ and $\frac12$. Yu treats this in §10.5.1, eqs. (10.187)–(10.192), for the two-point function of the asymptotic "in" fields, reached through the LSZ formula and with an extra mass-counterterm vertex (10.185). **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): the diagrams of this section and of §C6a.8–§C6a.13 are the terms of the expansion in $\lambda$ of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]); they compute $\langle\Omega|T\{\hat\phi_H\cdots\hat\phi_H\}|\Omega\rangle$ as numerator over denominator, each a free-vacuum value $\langle0|T\{\cdots\}|0\rangle$ ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]), and the bubbles of the denominator cancel ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order.
+Every term of a free vacuum expectation value is a product of Feynman propagators ([[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]]), and the only information in it is which arguments each $D_F$ has. So draw a point for each argument and a line for each contraction: a Feynman diagram. This section introduces the diagrams on the free four-point function and then computes the first-order correction to the numerator of the master formula ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]]), a six-point function with four of its points at the interaction point. Its 15 complete contractions fall into two classes, which give the two first-order diagrams with coefficients $\frac18$ and $\frac12$. Yu treats this in §10.5.1, eqs. (10.187)–(10.192), for the two-point function of the asymptotic "in" fields, reached through the LSZ formula and with an extra mass-counterterm vertex (10.185). **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): the diagrams of this section and of §C6a.9–§C6a.14 are the terms of the expansion in $\lambda$ of the master formula ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]]); they compute $\langle\Omega|T\{\hat\phi_H\cdots\hat\phi_H\}|\Omega\rangle$ as numerator over denominator, each a free-vacuum value $\langle0|T\{\cdots\}|0\rangle$ ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]), and the bubbles of the denominator cancel ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|Theorem §C6a.12.5]]); identities hold order by order.
 
 *Conventions* ([[Larsen PHY 513]]): fields entering through the master formula are written $\hat\phi_I$; $x, y$ are the external points, $z$ the interaction point; $D_F(z - z) \equiv D_F(0)$.
 
@@ -19,34 +19,34 @@ The count of pairings ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 
 ## Diagrams as formulas
 
-> [!definition] Definition §C6a.7.1: Feynman Diagram of a Complete Contraction
-> To a complete contraction of fields at points $x_1, \dots, x_n$ (a pairing, [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]) is associated a **Feynman diagram**: one point for each argument, one **line** (propagator) for each contracted pair, joining the arguments of its two fields. The **value** of the diagram is the product of $D_F(x_i - x_j)$ over its lines. Diagrams drawn alike stand for the same value; precisely, a diagram is an orbit of labelled diagrams under relabelling ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-4|Def. §CA.8.4]]), determined by its drawing ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]]).
+> [!definition] Definition §C6a.8.1: Feynman Diagram of a Complete Contraction
+> To a complete contraction of fields at points $x_1, \dots, x_n$ (a pairing, [[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]]) is associated a **Feynman diagram**: one point for each argument, one **line** (propagator) for each contracted pair, joining the arguments of its two fields. The **value** of the diagram is the product of $D_F(x_i - x_j)$ over its lines. Diagrams drawn alike stand for the same value; precisely, a diagram is an orbit of labelled diagrams under relabelling ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-4|Def. §CA.8.4]]), determined by its drawing ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]]).
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* any complete contraction of free fields; combinatorial, independent of the dynamics.
 >
 > *Source: PHY 513 Lecture 14, slide 13 ("contraction between $\phi^i$ and $\phi^j$ = $D_F(x_i - x_j)$ = line in diagram ending at $x_i$ and $x_j$") · the user's PHY 513 notes, Ch. 14 §14.3 · PS §4.4, pp. 90–91*
 
-^def-c6a-7-1
+^def-c6a-8-1
 
-> [!definition] Definition §C6a.7.2: External Point
-> In the diagrams of the master formula's numerator ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) there are two kinds of points. The **external points** are the arguments $x_1, \dots, x_{n_{\rm ext}}$ of the correlator; their number is written $n_{\rm ext}$, and exactly one line ends at each. The other kind is the vertices ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-3|Def. §C6a.7.3]]).
+> [!definition] Definition §C6a.8.2: External Point
+> In the diagrams of the master formula's numerator ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-7|Theorem §C6a.5.7]]) there are two kinds of points. The **external points** are the arguments $x_1, \dots, x_{n_{\rm ext}}$ of the correlator; their number is written $n_{\rm ext}$, and exactly one line ends at each. The other kind is the vertices ([[§C6a.8 Feynman Diagrams for Correlation Functions#^def-c6a-8-3|Def. §C6a.8.3]]).
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
 >
 > *Source: PS §4.4, p. 92 ("we must distinguish between the 'external' points, $x$ and $y$, and the 'internal' point $z$") · PHY 513 Lecture 14, slide 16 ("all diagrams with two external points and any number of internal points where four lines end") · the user's PHY 513 notes, Ch. 14 §14.4*
 
-^def-c6a-7-2
+^def-c6a-8-2
 
-> [!definition] Definition §C6a.7.3: Vertex
-> The **vertices** (internal points) of a diagram of the master formula's numerator ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) are the points $z$ of the interaction $\hat H_I = \int d^3z\,\frac{\lambda}{4!}\hat\phi_I^4$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]), every point that is not an external point ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-2|Def. §C6a.7.2]]); four lines end at each, one for each factor $\hat\phi_I(z)$.
+> [!definition] Definition §C6a.8.3: Vertex
+> The **vertices** (internal points) of a diagram of the master formula's numerator ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-7|Theorem §C6a.5.7]]) are the points $z$ of the interaction $\hat H_I = \int d^3z\,\frac{\lambda}{4!}\hat\phi_I^4$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]), every point that is not an external point ([[§C6a.8 Feynman Diagrams for Correlation Functions#^def-c6a-8-2|Def. §C6a.8.2]]); four lines end at each, one for each factor $\hat\phi_I(z)$.
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
 >
 > *Source: PS §4.4, p. 92 ("Internal points, where four lines meet, are called vertices") · PHY 513 Lecture 14, slide 16 ("Vertex = four lines end") · the user's PHY 513 notes, Ch. 14 §14.4*
 
-^def-c6a-7-3
+^def-c6a-8-3
 
-Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definition, it is a rule, derived in [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] (the vertex row of its table).
+Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definition, it is a rule, derived in [[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-4|Theorem §C6a.9.4]] (the vertex row of its table).
 
 ![[ph-qft-ca-7-3.svg]]
 *Half-edges and a labelled diagram ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-2|Def. §CA.8.2]]) for $E = \{x_1, x_2\}$, $n = 2$. (a) The ten half-edges: two external points and four legs at each vertex. (b) One labelled diagram $P$, a pairing of them. (c) Its multigraph $\Gamma(P)$, which forgets which leg is used. In a Feynman diagram the external points are the arguments $x_i$ and the vertices the interaction points $z_v$.*
@@ -56,69 +56,69 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.3 (Caution "A Feynman diagram is a formula")*
 
-^cau-c6a-7-1
+^cau-c6a-8-1
 
-> [!example] Example §C6a.7.1: The Free Four-Point Function as Three Diagrams
+> [!example] Example §C6a.8.1: The Free Four-Point Function as Three Diagrams
 > ![[ph-qft-c6-7-1.svg]]
 > *The free four-point function: the three pairings of $x_1, \dots, x_4$, each a product of two Feynman propagators. In the third, the lines cross on the page but do not meet. Added figure; layout as PS eq. (4.42).*
 >
-> From the time-ordered product to diagrams, in three steps ([[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]] has every line written out).
+> From the time-ordered product to diagrams, in three steps ([[§C6a.7 Wick's Theorem#^ex-c6a-7-2|Example §C6a.7.2]] has every line written out).
 >
-> **Step 1** (Wick's theorem). The time-ordered product is its normal-ordered product plus all contractions ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]): $:\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\!:$, six terms $D_F(x_i - x_j):\!\hat\phi_k\hat\phi_l\!:$ with one pair contracted, and three terms with both pairs contracted ([[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]).
+> **Step 1** (Wick's theorem). The time-ordered product is its normal-ordered product plus all contractions ([[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]]): $:\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\!:$, six terms $D_F(x_i - x_j):\!\hat\phi_k\hat\phi_l\!:$ with one pair contracted, and three terms with both pairs contracted ([[§C6a.7 Wick's Theorem#^ex-c6a-7-1|Example §C6a.7.1]]).
 >
-> **Step 2** (vacuum value). Every normal-ordered product vanishes between $\langle0|$ and $|0\rangle$: each of its terms ends in a $\hat\phi^+$, which annihilates $|0\rangle$, or begins with a $\hat\phi^-$, which annihilates $\langle0|$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2). The seven terms with uncontracted fields drop out, and only the complete contractions survive:
+> **Step 2** (vacuum value). Every normal-ordered product vanishes between $\langle0|$ and $|0\rangle$: each of its terms ends in a $\hat\phi^+$, which annihilates $|0\rangle$, or begins with a $\hat\phi^-$, which annihilates $\langle0|$ ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 2). The seven terms with uncontracted fields drop out, and only the complete contractions survive:
 >
 > $$
 > \langle0|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\}|0\rangle = \underbrace{D_F(x_1 - x_2)D_F(x_3 - x_4)}_{1\text{–}2,\ 3\text{–}4} + \underbrace{D_F(x_1 - x_3)D_F(x_2 - x_4)}_{1\text{–}3,\ 2\text{–}4} + \underbrace{D_F(x_1 - x_4)D_F(x_2 - x_3)}_{1\text{–}4,\ 2\text{–}3} .
 > $$
 >
-> **Step 3** (draw). Each surviving term is a product of two $D_F$'s. Draw a point for each $x_i$ and a line for each $D_F$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-1|Def. §C6a.7.1]]): three diagrams with two lines each, the three ways of distributing four points over two propagators (figure above).
+> **Step 3** (draw). Each surviving term is a product of two $D_F$'s. Draw a point for each $x_i$ and a line for each $D_F$ ([[§C6a.8 Feynman Diagrams for Correlation Functions#^def-c6a-8-1|Def. §C6a.8.1]]): three diagrams with two lines each, the three ways of distributing four points over two propagators (figure above).
 >
 > *Source: PHY 513 Lecture 14, slide 13 · PS §4.4, eq. (4.42) · the user's PHY 513 notes, Ch. 14 §14.3, eq. (fourpointdiag)*
 
-^ex-c6a-7-1
+^ex-c6a-8-1
 
 > [!caution] Caution: The third diagram on slide 13
 > Slide 13 labels its third diagram $x_1$–$x_2$ over $x_4$–$x_3$, which is the same pairing as the first diagram. The third pairing is $x_1$–$x_4$, $x_2$–$x_3$, as in the formula on slide 10 and in PS eq. (4.42).
 >
 > *Source: PHY 513 Lecture 14, slide 13 (page image) and slide 10*
 
-^cau-c6a-7-2
+^cau-c6a-8-2
 
 > [!remark] Remark: Reading the four-point function as a process
 > "Although this isn't exactly a measurable quantity, the diagrams do suggest an interpretation: Particles are created at two spacetime points, each propagates to one of the other points, and then they are annihilated. This can happen in three ways … The total amplitude for the process is the sum of the three diagrams" (PS p. 91). The reading is possible because $D_F$ is itself an amplitude: $D_F(x - y) = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$ creates a particle at the earlier point and annihilates it at the later one ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]).
 >
 > *Source: PS §4.4, p. 91 · PHY 513 Lecture 14, transcript ("what I really need to tell you is the combinatorial data")*
 
-^rem-c6a-7-1
+^rem-c6a-8-1
 
 ## Zeroth and first order
 
-> [!example] Example §C6a.7.2: The Two-Point Function at Zeroth Order
+> [!example] Example §C6a.8.2: The Two-Point Function at Zeroth Order
 > ![[ph-qft-c6a-7-1.svg]]
 >
-> Expand $e^{-i\int\hat H_I} = 1 - i\int dt\,\hat H_I + \cdots$ in the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]). At zeroth order the exponential is 1 in numerator and denominator.
+> Expand $e^{-i\int\hat H_I} = 1 - i\int dt\,\hat H_I + \cdots$ in the master formula ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]]). At zeroth order the exponential is 1 in numerator and denominator.
 >
-> **Step 1** (Wick's theorem for two fields, [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]).
+> **Step 1** (Wick's theorem for two fields, [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]]).
 >
 > $$
 > T\{\hat\phi_I(x)\hat\phi_I(y)\} = \,:\!\hat\phi_I(x)\hat\phi_I(y)\!: + D_F(x - y) \qquad \text{(the one pair, } \hat\phi_I(x) \text{ with } \hat\phi_I(y)\text{, contracted)} .
 > $$
 >
-> **Step 2** (vacuum value). $\langle0|:\!\hat\phi_I(x)\hat\phi_I(y)\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2; the four terms in [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]], Step 3), and $\langle0|0\rangle = 1$:
+> **Step 2** (vacuum value). $\langle0|:\!\hat\phi_I(x)\hat\phi_I(y)\!:|0\rangle = 0$ ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 2; the four terms in [[§C6a.7 Wick's Theorem#^ex-c6a-7-2|Example §C6a.7.2]], Step 3), and $\langle0|0\rangle = 1$:
 >
 > $$
 > \langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle\big|_{\lambda^0} = \frac{\langle0|T\{\hat\phi_I(x)\hat\phi_I(y)\}|0\rangle}{\langle0|0\rangle} = D_F(x - y) .
 > $$
 >
-> **Step 3** (draw). One line from $x$ to $y$: "no interactions", free propagation. This is the $\lambda = 0$ check of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-1|Example §C6a.4.1]]).
+> **Step 3** (draw). One line from $x$ to $y$: "no interactions", free propagation. This is the $\lambda = 0$ check of the master formula ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^ex-c6a-5-1|Example §C6a.5.1]]).
 >
 > *Source: PHY 513 Lecture 14, slide 14 · PS §4.4, after eq. (4.43) · the user's PHY 513 notes, Ch. 14 §14.3 (paragraph "Zeroth order")*
 
-^ex-c6a-7-2
+^ex-c6a-8-2
 
-> [!theorem] Theorem §C6a.7.1: The First-Order Numerator
-> The term of first order in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]) is
+> [!theorem] Theorem §C6a.8.1: The First-Order Numerator
+> The term of first order in $\lambda$ of the numerator of the master formula ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]]) is
 >
 > $$
 > \begin{aligned}
@@ -129,11 +129,11 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 >
 > In diagrams, with $-i\lambda\int d^4z$ at the vertex: $\frac18$ (a line from $x$ to $y$ times a **figure-eight**, two lines from $z$ back to $z$) $+ \frac12$ (the **tadpole**: $x$ to $z$, $z$ to $y$, and a line from $z$ back to $z$). The 15 complete contractions split $3 + 12$.
 >
-> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: first order in $\lambda$, the numerator only, in $|0\rangle$; the figure-eight is removed by the denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]).
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: first order in $\lambda$, the numerator only, in $|0\rangle$; the figure-eight is removed by the denominator ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|Theorem §C6a.12.5]]).
 >
 > *Source: PHY 513 Lecture 14, slide 15 · the user's PHY 513 notes, Ch. 14 §14.3 (Derivation "First order in λ", eq. (firstorderdiag)) · PS §4.4, eqs. (4.43)–(4.44) and p. 92 · Yu §10.5.1, eqs. (10.190)–(10.192) (the coefficients 12 and 3, $\frac12$ and $\frac18$)*
 
-^thm-c6a-7-1
+^thm-c6a-8-1
 
 > [!derivation]- Derivation
 > **Step 1** (first order of the exponential). By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]] and [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], with $z = (t, \mathbf z)$,
@@ -142,7 +142,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > T\Bigl\{e^{-i\int_{-T}^{T}dt\,\hat H_I(t)}\Bigr\} = 1 + (-i)\int_{-T}^{T}dt\,\hat H_I(t) + O(\lambda^2), \qquad (-i)\int_{-T}^{T}dt\,\hat H_I(t) = (-i)\int dt\int d^3z\,\frac{\lambda}{4!}\hat\phi_I(z)^4 = -\frac{i\lambda}{4!}\int d^4z\,\hat\phi_I(z)^4 .
 > $$
 >
-> (With $T \to \infty(1 - i\varepsilon)$ the $t$-integral runs along a tilted line; [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|Theorem §C6a.11.1]] shows this only fixes the $i\varepsilon$.)
+> (With $T \to \infty(1 - i\varepsilon)$ the $t$-integral runs along a tilted line; [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-1|Theorem §C6a.12.1]] shows this only fixes the $i\varepsilon$.)
 >
 > **Step 2** (integral outside the vacuum value). Write the four factors of $\hat\phi_I(z)^4$ as $\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}$, $\hat\phi_{z_a} \equiv \hat\phi_I(z)$, and $\hat\phi_x \equiv \hat\phi_I(x)$, $\hat\phi_y \equiv \hat\phi_I(y)$. By linearity,
 >
@@ -150,9 +150,9 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > \langle0|T\Bigl\{\hat\phi_x\hat\phi_y\Bigl(-\frac{i\lambda}{4!}\int d^4z\,\hat\phi_I(z)^4\Bigr)\Bigr\}|0\rangle = -\frac{i\lambda}{4!}\int d^4z\;\langle0|T\{\hat\phi_x\hat\phi_y\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\}|0\rangle
 > $$
 >
-> (formal at the coincident points: [[§C6a.6 Wick's Theorem#^cau-c6a-6-2|§C6a.6, Caution: In what sense Wick's theorem holds]]).
+> (formal at the coincident points: [[§C6a.7 Wick's Theorem#^cau-c6a-7-2|§C6a.7, Caution: In what sense Wick's theorem holds]]).
 >
-> **Step 3** (Wick's theorem: time order → normal order plus contractions). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], with each contracted pair replaced by its propagator ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]; a contraction is a number and stands in front, and inside $:\;:$ the fields may be reordered, [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]] 3), written $D_{xy} = D_F(x - y)$, $D_{xa} = D_F(x - z_a)$, $D_{ya} = D_F(y - z_a)$, $D_{ab} = D_F(z_a - z_b)$,
+> **Step 3** (Wick's theorem: time order → normal order plus contractions). By [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]], with each contracted pair replaced by its propagator ([[§C6a.6 Normal Ordering and Contractions#^def-c6a-6-1|Def. §C6a.6.1]]; a contraction is a number and stands in front, and inside $:\;:$ the fields may be reordered, [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]] 3), written $D_{xy} = D_F(x - y)$, $D_{xa} = D_F(x - z_a)$, $D_{ya} = D_F(y - z_a)$, $D_{ab} = D_F(z_a - z_b)$,
 >
 > $$
 > \begin{aligned}
@@ -163,13 +163,13 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > \end{aligned}
 > $$
 >
-> **Step 4** (vacuum value: every normal-ordered remainder vanishes). The contractions are numbers and come out of $\langle0|\cdots|0\rangle$; every term with a remainder $:\!\cdots\!:$ of $6$, $4$ or $2$ fields gives $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2; spelled out for two fields in [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]], Step 3):
+> **Step 4** (vacuum value: every normal-ordered remainder vanishes). The contractions are numbers and come out of $\langle0|\cdots|0\rangle$; every term with a remainder $:\!\cdots\!:$ of $6$, $4$ or $2$ fields gives $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 2; spelled out for two fields in [[§C6a.7 Wick's Theorem#^ex-c6a-7-2|Example §C6a.7.2]], Step 3):
 >
 > $$
 > \langle0|:\!\hat\phi_x\hat\phi_y\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!:|0\rangle = 0,\qquad D_F(x_i - x_j)\,\langle0|:\!\hat\phi_k\hat\phi_l\hat\phi_m\hat\phi_n\!:|0\rangle = 0,\qquad D_F(x_i - x_j)\,D_F(x_k - x_l)\,\langle0|:\!\hat\phi_m\hat\phi_n\!:|0\rangle = 0 .
 > $$
 >
-> Only the $15$ complete contractions survive ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]; $5!! = 15$ pairings, [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]). Written out, with $D_{xy} = D_F(x - y)$, $D_{xa} = D_F(x - z_a)$, $D_{ya} = D_F(y - z_a)$, $D_{ab} = D_F(z_a - z_b)$:
+> Only the $15$ complete contractions survive ([[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]]; $5!! = 15$ pairings, [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]). Written out, with $D_{xy} = D_F(x - y)$, $D_{xa} = D_F(x - z_a)$, $D_{ya} = D_F(y - z_a)$, $D_{ab} = D_F(z_a - z_b)$:
 >
 > $$
 > \begin{aligned}
@@ -224,39 +224,39 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 >
 > with $\frac{3}{24} = \frac18$, $\frac{12}{24} = \frac12$. (All 15 terms checked by enumeration.)
 >
-> ⚑ By-product: $D_F(z - z) = D_F(0)$ is singular ([[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-3|Theorem §C2b.8.3]]) → [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-3|Theorem §C6a.10.3]].
+> ⚑ By-product: $D_F(z - z) = D_F(0)$ is singular ([[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-3|Theorem §C2b.8.3]]) → [[§C6a.11 Feynman Rules in Momentum Space#^thm-c6a-11-3|Theorem §C6a.11.3]].
 >
-> ⚑ By-product: the $\frac18$ term is $D_F(x - y)$ times a piece with no external point, a vacuum bubble → [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]].
+> ⚑ By-product: the $\frac18$ term is $D_F(x - y)$ times a piece with no external point, a vacuum bubble → [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|Theorem §C6a.12.5]].
 >
-> ⚑ By-product: $\frac18 = \frac1S$, $\frac12 = \frac1S$ with $S = 8, 2$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^ex-ca-8-1|Example §CA.8.1]]) → [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]].
+> ⚑ By-product: $\frac18 = \frac1S$, $\frac12 = \frac1S$ with $S = 8, 2$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^ex-ca-8-1|Example §CA.8.1]]) → [[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-1|Theorem §C6a.9.1]].
 >
 > **What the derivation shows.**
 > - Fifteen contractions of six fields collapse to two terms because four of the six fields sit at the same point $z$.
 > - Only the Dyson series to first order, Wick's theorem and $D_F(-\xi) = D_F(\xi)$ were used; the result is the numerator, not yet the correlator.
 
-^der-c6a-7-1
+^der-c6a-8-1
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]
 
 ![[ph-qft-c6-7-2.svg]]
 *The first-order numerator. Left: the six fields $\phi(x)$, $\phi(y)$ and the four factors of $\phi(z)^4$; class (a) pairs $x$ with $y$ and the four legs among themselves (3 ways), class (b) sends $x$ and $y$ to two of the legs (4·3 = 12 ways). Right: the two diagrams with their coefficients, $\frac{3}{4!} = \frac18$ and $\frac{12}{4!} = \frac12$. Added figure; diagrams as on slide 15 and PS p. 92.*
 
 > [!caution] Caution: Numerator, not yet the interacting correlator
-> [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]] is the first-order term of the *numerator* of the master formula (slide 15: "first order correction to the numerator"), not of $\langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle$. After dividing by the denominator the figure-eight term drops out ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]). At this order the division can be done by hand.
+> [[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-1|Theorem §C6a.8.1]] is the first-order term of the *numerator* of the master formula (slide 15: "first order correction to the numerator"), not of $\langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle$. After dividing by the denominator the figure-eight term drops out ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|Theorem §C6a.12.5]]). At this order the division can be done by hand.
 >
-> **Denominator to first order.** Wick's theorem for the four factors of $\hat\phi_I(z)^4$ ([[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]], with $z_1 = \dots = z_4 = z$ afterwards):
+> **Denominator to first order.** Wick's theorem for the four factors of $\hat\phi_I(z)^4$ ([[§C6a.7 Wick's Theorem#^ex-c6a-7-1|Example §C6a.7.1]], with $z_1 = \dots = z_4 = z$ afterwards):
 >
 > $$
 > T\{\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\} = \,:\!\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: + D_F(z_1 - z_2)\,:\!\hat\phi_{z_3}\hat\phi_{z_4}\!: + \cdots\;(6\text{ terms}) + D_F(z_1 - z_2)\,D_F(z_3 - z_4) + D_F(z_1 - z_3)\,D_F(z_2 - z_4) + D_F(z_1 - z_4)\,D_F(z_2 - z_3) ;
 > $$
 >
-> the $1 + 6$ terms with a remainder have $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2), and each complete contraction is $D_F(z - z)^2 = D_F(0)^2$. So
+> the $1 + 6$ terms with a remainder have $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 2), and each complete contraction is $D_F(z - z)^2 = D_F(0)^2$. So
 >
 > $$
 > \langle0|T\Bigl\{1 - \frac{i\lambda}{4!}\int d^4z\,\hat\phi_I(z)^4\Bigr\}|0\rangle = 1 - \frac{i\lambda}{4!}\int d^4z\;3\,D_F(0)^2 = 1 - \frac{i\lambda}{8}\int d^4z\,D_F(0)^2 \equiv 1 + V_1 .
 > $$
 >
-> **Numerator to first order.** By Theorem §C6a.7.1,
+> **Numerator to first order.** By Theorem §C6a.8.1,
 >
 > $$
 > D_F(x - y) + D_F(x - y)\,V_1 + C_1, \qquad C_1 = -\frac{i\lambda}{2}\int d^4z\,D_F(x - z)D_F(0)D_F(z - y) .
@@ -274,13 +274,13 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > \langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle = D_F(x - y) - \frac{i\lambda}{2}\int d^4z\,D_F(x - z)D_F(0)D_F(z - y) + O(\lambda^2) .
 > $$
 >
-> The home of this result is the cancellation theorem ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); the same two-point function through first order, in momentum space, is [[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-4|Example §C6a.11.4]].
+> The home of this result is the cancellation theorem ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|Theorem §C6a.12.5]]); the same two-point function through first order, in momentum space, is [[§C6a.12 The iε Limit and Vacuum Bubbles#^ex-c6a-12-4|Example §C6a.12.4]].
 >
 > *Source: PHY 513 Lecture 14, slide 15 · the user's PHY 513 notes, Ch. 14 §14.3 (Caution "Numerator, not yet ⟨Ω|⋯|Ω⟩")*
 
-^cau-c6a-7-3
+^cau-c6a-8-3
 
-> [!theorem] Theorem §C6a.7.2: Real-Scalar Lines Are Undirected; Complex-Scalar and Dirac Lines Are Oriented
+> [!theorem] Theorem §C6a.8.2: Real-Scalar Lines Are Undirected; Complex-Scalar and Dirac Lines Are Oriented
 > 1. *(Real scalar.)* $D_F(-\xi) = D_F(\xi)$ and $\tilde D_F(-p) = \tilde D_F(p)$. Hence contracting $\hat\phi(x)$ with $\hat\phi(y)$ or $\hat\phi(y)$ with $\hat\phi(x)$ gives the same number, $D_F(x - y) = D_F(y - x)$: a line of a real-scalar diagram has no direction, and the momentum on it may be oriented either way.
 > 2. *(Dirac.)* The only nonzero contractions pair $\hat\psi$ with $\hat{\bar\psi}$:
 >
@@ -313,7 +313,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 >
 > *Source: PHY 513 Lecture 14, transcript (question at 42:55) · the user's PHY 513 notes, Ch. 14 §14.3 (paragraph "Why $y$ and $z$ may be exchanged") · PS §4.4, p. 94 ("Since $D_F(x - y) = D_F(y - x)$, the direction of $p$ is arbitrary") · part 2 from [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]] and [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]], written here · part 3: PHY 513, Problem Set 8, Problem 1(b) (statement: "the lines are oriented in the direction of the charge flow"; the user's solution: "$\langle0|T\hat\phi\hat\phi|0\rangle = \langle0|T\hat\phi^\dagger\hat\phi^\dagger|0\rangle = 0$, every nonvanishing pairing joins a $\hat\phi$ leg to a $\hat\phi^\dagger$ leg; this is the arrow on the line"), derived here from the mode expansion · PS §2.4, p. 29 (the complex field's two orderings)*
 
-^thm-c6a-7-2
+^thm-c6a-8-2
 
 > [!derivation]- Derivation
 > **Step 1** ($D_F$ is even). By [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]] and the relabelling $p \to -p$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], 1),
@@ -374,31 +374,31 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 >
 > ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]), the real field's propagator: both species have mass $m$, and each ordering is carried by one of them.
 >
-> **Step 7** (arrows). By Step 5 every complex-scalar line joins a $\hat\phi$ and a $\hat\phi^\dagger$, so it has two different ends and is drawn with an arrow; by Step 6 and Step 1 its value $D_F(x - y) = D_F(y - x)$ does not depend on the direction in which it is read. The arrow is bookkeeping for which pairings exist (and so for symmetry factors, [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|Theorem §C6a.9.2]]), not a different function.
+> **Step 7** (arrows). By Step 5 every complex-scalar line joins a $\hat\phi$ and a $\hat\phi^\dagger$, so it has two different ends and is drawn with an arrow; by Step 6 and Step 1 its value $D_F(x - y) = D_F(y - x)$ does not depend on the direction in which it is read. The arrow is bookkeeping for which pairings exist (and so for symmetry factors, [[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-2|Theorem §C6a.10.2]]), not a different function.
 >
 > **What the derivation shows.**
 > - "A line has no direction" is the evenness of $D_F$, which comes from $\tilde D_F$ depending on $p^2$ only. The numerator $\slashed{p} + m$ of $\tilde S_F$ is odd in $p$ in its $\slashed{p}$ part, and charge conservation forces each Dirac line to have one end of each kind.
 > - The complex scalar sits in between: charge conservation orients its lines as for Dirac, but the function on a line is the even $D_F$, as for the real scalar.
 
-^der-c6a-7-2
+^der-c6a-8-2
 
 *Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-5|Theorem §CA.4.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]], [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]
 
 > [!remark] Remark: Why the Feynman propagator is symmetric and the Wightman function is not
-> Why may $D_F(y - z)$ be written $D_F(z - y)$? The Wightman function is not symmetric in $x$ and $y$: exchanging them gives the complex conjugate, $D_W(-\xi) = \overline{D_W(\xi)}$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]) — but the time-ordered combination $D_F$ is even ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]). So a line of a scalar diagram has no direction ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 1); PS make the same point for momenta: "Since $D_F(x - y) = D_F(y - x)$, the direction of $p$ is arbitrary" (p. 94).
+> Why may $D_F(y - z)$ be written $D_F(z - y)$? The Wightman function is not symmetric in $x$ and $y$: exchanging them gives the complex conjugate, $D_W(-\xi) = \overline{D_W(\xi)}$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]) — but the time-ordered combination $D_F$ is even ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]). So a line of a scalar diagram has no direction ([[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-2|Theorem §C6a.8.2]], 1); PS make the same point for momenta: "Since $D_F(x - y) = D_F(y - x)$, the direction of $p$ is arbitrary" (p. 94).
 >
 > *Source: PHY 513 Lecture 14, transcript (question at 42:55) · the user's PHY 513 notes, Ch. 14 §14.3 (paragraph "Why $y$ and $z$ may be exchanged") · PS §4.4, p. 94*
 
-^rem-c6a-7-2
+^rem-c6a-8-2
 
 > [!remark] Remark: The tadpole read as a process
 > Of the four $\hat a$'s and $\hat a^\dagger$'s in $\hat\phi_I(z)^4$, one absorbed what came in from $x$ and one created what went out to $y$. The remaining two had nothing else to do: one created and the other annihilated a particle at the same point, which is the loop. The combinatorics has an intuitive content. PS read every diagram this way: "a process of particle creation, propagation, and annihilation which takes place in spacetime" (p. 92).
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.4 (paragraph "Reading the first-order tadpole as a process") · PS §4.4, p. 92*
 
-^rem-c6a-7-3
+^rem-c6a-8-3
 
-> [!theorem] Theorem §C6a.7.3: The Number of Complete Contractions at Order λⁿ
+> [!theorem] Theorem §C6a.8.3: The Number of Complete Contractions at Order λⁿ
 > The term of order $\lambda^n$ of the numerator of the two-point function,
 >
 > $$
@@ -411,7 +411,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 >
 > *Source: the user's PHY 513 notes, Ch. 14 §14.4 (paragraph "Higher orders": "$4n+2$ fields and $2n+1$ propagators") · PS §4.4, p. 92 (135 135 at third order) · PHY 513 Lecture 14, transcript*
 
-^thm-c6a-7-3
+^thm-c6a-8-3
 
 > [!derivation]- Derivation
 > **Step 1** (fields). The order-$n$ term of the Dyson series ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]] with [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]) has $n$ factors $\hat\phi_I(z_v)^4$, so with the two external fields
@@ -420,7 +420,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > N = 2 + 4n .
 > $$
 >
-> **Step 2** (lines). A complete contraction is a set of contracted pairs $\{h, h'\}$ using every field once ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]); each pair is one line and uses two fields:
+> **Step 2** (lines). A complete contraction is a set of contracted pairs $\{h, h'\}$ using every field once ([[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]]); each pair is one line and uses two fields:
 >
 > $$
 > \#\text{lines} = \frac N2 = \frac{2 + 4n}{2} = 2n + 1 .
@@ -433,37 +433,37 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > $$
 >
 > **What the derivation shows.**
-> - The number of terms grows faster than exponentially: $(4n + 1)!! = (2k - 1)!! \sim \sqrt2\,(2k/e)^k$ with $k = 2n + 1$ (Stirling); grouping them into diagrams with $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]) is what makes higher orders tractable.
+> - The number of terms grows faster than exponentially: $(4n + 1)!! = (2k - 1)!! \sim \sqrt2\,(2k/e)^k$ with $k = 2n + 1$ (Stirling); grouping them into diagrams with $1/S$ ([[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-1|Theorem §C6a.9.1]]) is what makes higher orders tractable.
 
-^der-c6a-7-3
+^der-c6a-8-3
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]
 
 > [!remark] Remark: Why diagrams, not terms
-> Listing the $(4n + 1)!!$ terms is hopeless; grouping them into diagrams is not. The rule is the same at every order: all diagrams that connect $x$ and $y$, through however many vertices, each with its coefficient ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]).
+> Listing the $(4n + 1)!!$ terms is hopeless; grouping them into diagrams is not. The rule is the same at every order: all diagrams that connect $x$ and $y$, through however many vertices, each with its coefficient ([[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-4|Theorem §C6a.9.4]]).
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.4 (paragraph "Higher orders")*
 
-^rem-c6a-7-4
+^rem-c6a-8-4
 
 > [!remark] Remark: Yu's route
-> Yu computes the same first-order terms for the two-point function $G^{(2)}(x_1, x_2)$ of the asymptotic in-fields, multiplied by its normalization $\mathcal N$ (eq. (10.187)), with two interactions: the $\phi^4$ vertex and a mass counterterm $\frac12\delta m^2\phi_{\rm in}^2$ with its own vertex (eqs. (10.183)–(10.186)). With $D_{ij} \equiv D_F(x_i - x_j)$ (10.189), he finds $\langle0|T[\phi_{\rm in}(x_1)\phi_{\rm in}(x_2)\phi_{\rm in}^4(x)]|0\rangle = 12D_{1x}D_{xx}D_{x2} + 3D_{12}D_{xx}D_{xx}$ (10.191), the two classes above, and draws the diagrams with $\frac12$ and $\frac18$ (10.192). The course has no counterterm at this stage, and reaches the ratio of free-vacuum expectation values by the $i\varepsilon$ projection of [[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]] instead of the LSZ route (eqs. (10.177)–(10.181)).
+> Yu computes the same first-order terms for the two-point function $G^{(2)}(x_1, x_2)$ of the asymptotic in-fields, multiplied by its normalization $\mathcal N$ (eq. (10.187)), with two interactions: the $\phi^4$ vertex and a mass counterterm $\frac12\delta m^2\phi_{\rm in}^2$ with its own vertex (eqs. (10.183)–(10.186)). With $D_{ij} \equiv D_F(x_i - x_j)$ (10.189), he finds $\langle0|T[\phi_{\rm in}(x_1)\phi_{\rm in}(x_2)\phi_{\rm in}^4(x)]|0\rangle = 12D_{1x}D_{xx}D_{x2} + 3D_{12}D_{xx}D_{xx}$ (10.191), the two classes above, and draws the diagrams with $\frac12$ and $\frac18$ (10.192). The course has no counterterm at this stage, and reaches the ratio of free-vacuum expectation values by the $i\varepsilon$ projection of [[§C6a.5 The Interacting Vacuum and the Two-Point Function|§C6a.5]] instead of the LSZ route (eqs. (10.177)–(10.181)).
 >
 > *Source: Yu §10.4–§10.5.1, pp. 464–466*
 
-^rem-c6a-7-5
+^rem-c6a-8-5
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on. The count of pairings carries the section; the other lines are the precise meaning of "diagram" and the Fourier rules used for the oriented lines.
 >
-> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — $2k$ objects have $(2k - 1)!!$ pairings: the $15$ complete contractions of the first-order numerator (Theorem §C6a.7.1) and the $(4n + 1)!!$ of order $\lambda^n$ (Theorem §C6a.7.3).
-> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-2|Def. §CA.8.2]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-4|Def. §CA.8.4]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]] — a labelled diagram is a pairing of half-edges, a diagram is an orbit of labelled diagrams under relabelling, and the orbit is determined by the drawing: what "diagrams drawn alike stand for the same value" means (Definition §C6a.7.1, the figure after Definition §C6a.7.3).
-> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^ex-ca-8-1|Example §CA.8.1]] — a diagram contains $n!\,(4!)^n/S$ labelled diagrams: $3 = 24/8$ and $12 = 24/2$, the coefficients $\frac18$ and $\frac12$ of Theorem §C6a.7.1.
-> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]] — part 1, relabelling $p \to -p$ under the momentum integral: $D_F(-\xi) = D_F(\xi)$, so a real-scalar line has no direction (Theorem §C6a.7.2).
-> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-5|Theorem §CA.4.5]] — part 3, the derivative rule $i\partial_\mu \to p_\mu$ for tempered distributions: $\tilde S_F(-p) \ne \tilde S_F(p)$, so a Dirac line is oriented (Theorem §C6a.7.2).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — $2k$ objects have $(2k - 1)!!$ pairings: the $15$ complete contractions of the first-order numerator (Theorem §C6a.8.1) and the $(4n + 1)!!$ of order $\lambda^n$ (Theorem §C6a.8.3).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-2|Def. §CA.8.2]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-4|Def. §CA.8.4]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]] — a labelled diagram is a pairing of half-edges, a diagram is an orbit of labelled diagrams under relabelling, and the orbit is determined by the drawing: what "diagrams drawn alike stand for the same value" means (Definition §C6a.8.1, the figure after Definition §C6a.8.3).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^ex-ca-8-1|Example §CA.8.1]] — a diagram contains $n!\,(4!)^n/S$ labelled diagrams: $3 = 24/8$ and $12 = 24/2$, the coefficients $\frac18$ and $\frac12$ of Theorem §C6a.8.1.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]] — part 1, relabelling $p \to -p$ under the momentum integral: $D_F(-\xi) = D_F(\xi)$, so a real-scalar line has no direction (Theorem §C6a.8.2).
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-5|Theorem §CA.4.5]] — part 3, the derivative rule $i\partial_\mu \to p_\mu$ for tempered distributions: $\tilde S_F(-p) \ne \tilde S_F(p)$, so a Dirac line is oriented (Theorem §C6a.8.2).
 
 > [!remark]- Connections
 > - The figure-eight at one point and the zero-point energy are both $D_F$ or $D_W$ at zero separation; both are infinite for the same reason, the light-cone singularity of the two-point function — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]].
 > - The coefficients $\frac18$ and $\frac12$ are orbit counts: $3 = 24/8$ and $12 = 24/2$ pairings in the two orbits of the leg-permutation group $S_4$ — [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]].
-> - The first-order term of the Dyson series is the same integral as first-order time-dependent perturbation theory in quantum mechanics, now with the free vacuum as the state — [[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]], [[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]].
+> - The first-order term of the Dyson series is the same integral as first-order time-dependent perturbation theory in quantum mechanics, now with the free vacuum as the state — [[§C6a.4 The Time-Evolution Operator Between Two Times#^ex-c6a-4-1|Example §C6a.4.1]], [[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]].
 > - The tadpole is the first self-energy diagram: summed with its higher-order relatives it shifts the mass of the particle — QFT C10 (planned); Yu eqs. (10.198)–(10.207).

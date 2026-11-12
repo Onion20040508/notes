@@ -117,6 +117,6 @@ tags: [quantum-field-theory, level-c]
 > - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the vertex integrals give the momentum deltas; for $S_F$ they fix the direction of $q$.
 
 > [!remark]- Connections
-> - The scalar rules are the special case without fermion lines; the vertex rule is the polynomial one with $\prod m! = 1$ — [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-3|Theorem §C6c.6.3]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]].
+> - The scalar rules are the special case without fermion lines; the vertex rule is the polynomial one with $\prod m! = 1$ — [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-3|Theorem §C6c.6.3]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]].
 > - The QED rules replace the scalar by the photon: vertex $-ie\gamma^\mu$, propagator $-ig_{\mu\nu}/(q^2 + i\varepsilon)$, external polarization vectors (PS §4.8, p. 123) — [[§C8.4 Feynman Rules for QED#^thm-c8-4-4|Theorem §C8.4.4]]; the vector propagator — [[§C4.11 Vector-Field Propagators|§C4.11]].
 > - Every rule except the vertex comes from the free fields, for scalars and fermions alike — [[§C6d.6 Momentum-Space Feynman Rules#^thm-c6d-6-1|Theorem §C6d.6.1]], [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-1|Theorem §C6c.6.1]].

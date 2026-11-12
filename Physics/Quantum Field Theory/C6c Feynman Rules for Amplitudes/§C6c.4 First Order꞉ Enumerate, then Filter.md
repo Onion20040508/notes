@@ -18,13 +18,13 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 ## First order: enumerate, then filter
 
 > [!theorem] Theorem §C6c.4.1: The First-Order Matrix Elements of a Monomial
-> Let $\mathcal L_{\rm int} = -g\,M$, $M = \prod_k\phi_k^{m_k}$ a monomial in real fields without derivatives ([[§C6a.13 Feynman Rules for Polynomial Interactions#^def-c6a-13-1|Def. §C6a.13.1]]). Let $|i\rangle$ and $\langle f|$ hold $n_k$ particles of kind $k$ in total. The formula below is the sum of the terms in which every particle is attached to the vertex (no $\delta$-line, [[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]]); these are all the terms if no outgoing momentum equals an incoming one (where they coincide, as on the support of the $1 \to 1$ element, the terms with $\delta$-lines are added: [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-2|Example §C6c.4.2]], Step 2). Then
+> Let $\mathcal L_{\rm int} = -g\,M$, $M = \prod_k\phi_k^{m_k}$ a monomial in real fields without derivatives ([[§C6a.14 Feynman Rules for Polynomial Interactions#^def-c6a-14-1|Def. §C6a.14.1]]). Let $|i\rangle$ and $\langle f|$ hold $n_k$ particles of kind $k$ in total. The formula below is the sum of the terms in which every particle is attached to the vertex (no $\delta$-line, [[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]]); these are all the terms if no outgoing momentum equals an incoming one (where they coincide, as on the support of the $1 \to 1$ element, the terms with $\delta$-lines are added: [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-2|Example §C6c.4.2]], Step 2). Then
 >
 > $$
 > \langle f|i\hat T^{(1)}|i\rangle = -ig\int d^4x\,\langle f|M\bigl(\hat\phi_I(x)\bigr)|i\rangle = -ig\prod_k\frac{m_k!}{2^{\ell_k}\,\ell_k!}\,D_F^{(m_k)}(0)^{\ell_k}\;(2\pi)^4\delta^4\Bigl(\sum_ik_i - \sum_jp_j\Bigr), \qquad \ell_k = \frac{m_k - n_k}{2} ,
 > $$
 >
-> nonzero only if every $m_k - n_k$ is even and $\ge 0$: each leg takes one external particle or is closed with another leg of its kind into a loop. In particular, for a tree ($\ell_k = 0$, every leg on a particle), $i\mathcal M = -ig\prod_km_k!$, the vertex factor ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]).
+> nonzero only if every $m_k - n_k$ is even and $\ge 0$: each leg takes one external particle or is closed with another leg of its kind into a loop. In particular, for a tree ($\ell_k = 0$, every leg on a particle), $i\mathcal M = -ig\prod_km_k!$, the vertex factor ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]]).
 >
 > **Procedure** (Yu's enumerate-then-filter): (1) list every split of the legs of $M$ into incoming particles, outgoing particles and pairs closed into loops, each giving a matrix element above; (2) keep those that four-momentum conservation allows on the mass shell ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2|Theorem §C6c.4.2]]).
 >
@@ -37,7 +37,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > [!derivation]- Derivation
 > **Step 1** (first order). $\hat S = \mathbb 1 + i\hat T$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]]) and the $n = 1$ term of the Dyson series ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]) with $\hat{\mathcal H}_I = gM(\hat\phi_I)$: $i\hat T^{(1)} = -i\int dt\,\hat H_I(t) = -ig\int d^4x\,M(\hat\phi_I(x))$; one time, so $T\{\cdot\}$ acts trivially.
 >
-> **Step 2** (Wick between the states). Label the $m_k$ factors of kind $k$ as legs. By [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]] (all fields at $x$; [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]] for several kinds), $\langle f|M|i\rangle$ is the sum over full contractions of legs and particles. Outgoing–incoming pairs give $\delta^3(\mathbf p - \mathbf k) = 0$ (distinct momenta); leg–leg pairs give $D_F^{(m_k)}(x - x) = D_F^{(m_k)}(0)$ (formal, [[§C6a.5 Normal Ordering and Contractions#^cau-c6a-5-3|§C6a.5, Caution: In what sense these identities hold]]); a particle pairs only with a leg of its kind.
+> **Step 2** (Wick between the states). Label the $m_k$ factors of kind $k$ as legs. By [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]] (all fields at $x$; [[§C6a.14 Feynman Rules for Polynomial Interactions#^lem-c6a-14-1|Lemma §C6a.14.1]] for several kinds), $\langle f|M|i\rangle$ is the sum over full contractions of legs and particles. Outgoing–incoming pairs give $\delta^3(\mathbf p - \mathbf k) = 0$ (distinct momenta); leg–leg pairs give $D_F^{(m_k)}(x - x) = D_F^{(m_k)}(0)$ (formal, [[§C6a.6 Normal Ordering and Contractions#^cau-c6a-6-3|§C6a.6, Caution: In what sense these identities hold]]); a particle pairs only with a leg of its kind.
 >
 > **Step 3** (count, per kind). The $n_k$ distinct particles of kind $k$ go injectively to the $m_k$ legs, $m_k(m_k - 1)\cdots(m_k - n_k + 1) = \frac{m_k!}{(2\ell_k)!}$ ways; the remaining $2\ell_k$ legs pair in $(2\ell_k - 1)!! = \frac{(2\ell_k)!}{2^{\ell_k}\ell_k!}$ ways ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]); the product is $\frac{m_k!}{2^{\ell_k}\ell_k!}$. If $m_k - n_k$ is odd or negative, no full contraction exists. Kinds are independent.
 >
@@ -47,14 +47,14 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > \int d^4x\,e^{i(\sum_jp_j - \sum_ik_i)\cdot x} = (2\pi)^4\delta^4\Bigl(\sum_ik_i - \sum_jp_j\Bigr) .
 > $$
 >
-> **Step 5** (tree). $\ell_k = 0$ for all $k$: $\langle f|i\hat T^{(1)}|i\rangle = -ig\prod_km_k!\,(2\pi)^4\delta^4(\cdots)$, and [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]] gives $i\mathcal M = -ig\prod_km_k!$. Checks ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]): $\phi^4$, $m = 4$, $n = 4$: $\frac{\lambda}{4!}\cdot24$; $n = 2$: $\frac{4!}{2} = 12$ (the tadpole, $\frac{12}{24} = \frac12$); $n = 0$: $\frac{4!}{4\cdot2} = 3$ (the figure-eight, $\frac{3}{24} = \frac18$), the counts of [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]].
+> **Step 5** (tree). $\ell_k = 0$ for all $k$: $\langle f|i\hat T^{(1)}|i\rangle = -ig\prod_km_k!\,(2\pi)^4\delta^4(\cdots)$, and [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]] gives $i\mathcal M = -ig\prod_km_k!$. Checks ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]): $\phi^4$, $m = 4$, $n = 4$: $\frac{\lambda}{4!}\cdot24$; $n = 2$: $\frac{4!}{2} = 12$ (the tadpole, $\frac{12}{24} = \frac12$); $n = 0$: $\frac{4!}{4\cdot2} = 3$ (the figure-eight, $\frac{3}{24} = \frac18$), the counts of [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-1|Example §C6a.10.1]].
 >
 > **What the derivation shows.**
 > - At first order the operator content of $\mathcal L_{\rm int}$ alone decides which processes have a matrix element; kinematics decides which of them happen → [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-3|Theorem §C6c.4.3]].
 
 ^der-c6c-4-1
 
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^lem-c6a-14-1|Lemma §C6a.14.1]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]
 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-3|P6, step 3]]
 
@@ -155,7 +155,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > \langle\mathbf p_1\mathbf p_2|i\hat T^{(1)}|\mathbf p_A\mathbf p_B\rangle = -\frac{i\lambda}{4!}\int d^4x\,\langle\mathbf p_1\mathbf p_2|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\}|\mathbf p_A\mathbf p_B\rangle .
 > $$
 >
-> **Step 2** (Wick: time order → normal order plus contractions). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], the contraction of any two of the four fields, $\hat\phi_a$ with $\hat\phi_b$, being $D_F(x - x) = D_F(0)$ (the contracted pairs $\{a, b\}$ are named under the propagators),
+> **Step 2** (Wick: time order → normal order plus contractions). By [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]], the contraction of any two of the four fields, $\hat\phi_a$ with $\hat\phi_b$, being $D_F(x - x) = D_F(0)$ (the contracted pairs $\{a, b\}$ are named under the propagators),
 >
 > $$
 > T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\} = {:}\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4{:} + \bigl(\underbrace{D_F(0)}_{\{1, 2\}}\,{:}\hat\phi_3\hat\phi_4{:} + \cdots\bigr)_{6\text{ terms}} + \bigl(\underbrace{D_F(0)^2}_{\{1, 2\}\,\{3, 4\}} + \underbrace{D_F(0)^2}_{\{1, 3\}\,\{2, 4\}} + \underbrace{D_F(0)^2}_{\{1, 4\}\,\{2, 3\}}\bigr)
@@ -200,7 +200,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > | $0 \to 4$, $4 \to 0$ | $0$ | $-i\lambda\,(2\pi)^4\delta^4$ | forbidden (part 1) |
 > | $1 \to 1$ | $1$ | $-\frac{i\lambda}{2}D_F(0)\,(2\pi)^4\delta^4$ | forward only (part 4): no scattering, a mass shift |
 > | $0 \to 2$, $2 \to 0$ | $1$ | $-\frac{i\lambda}{2}D_F(0)\,(2\pi)^4\delta^4$ | forbidden (part 1) |
-> | $0 \to 0$ | $2$ | $-\frac{i\lambda}{8}D_F(0)^2\,(2\pi)^4\delta^4(0)$ | the vacuum bubble, a phase ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3\|Theorem §C6a.11.3]]) |
+> | $0 \to 0$ | $2$ | $-\frac{i\lambda}{8}D_F(0)^2\,(2\pi)^4\delta^4(0)$ | the vacuum bubble, a phase ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-3\|Theorem §C6a.12.3]]) |
 >
 > *Two routes, one answer.* [[§C6c.1 Amplitudes from Correlation Functions#^ex-c6c-1-1|Example §C6c.1.1]] gets $i\mathcal M = -i\lambda$ from the four-point correlation function by amputation ([[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]]); there the $24$ are the bijections of four external points to four legs, here of four particles to four legs.
 >
@@ -220,13 +220,13 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > the vertex factor is $-i\lambda$, with no combinatorial factor;
 > 2. this is why $\mathcal L_{\rm int}$ carries the $\frac{1}{4!}$: to read the vertex off, strip the four fields from $\mathcal L_{\rm int}$, multiply by $i$ and by the $4!$ permutations of the fields;
-> 3. for $\mathcal L_{\rm int} = -g\prod_k\phi_k^{m_k}$ the attachments number $\prod_km_k!$ and the vertex is $-ig\prod_km_k!$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]).
+> 3. for $\mathcal L_{\rm int} = -g\prod_k\phi_k^{m_k}$ the attachments number $\prod_km_k!$ and the vertex is $-ig\prod_km_k!$ ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]]).
 >
 > If legs of the vertex are joined to each other or the diagram has another symmetry, fewer assignments are distinct and a factor $\frac1S$ is left over ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]]).
 >
-> *Equivalently,* for correlation functions, with external points in place of particles: the ⚑ by-product of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] (the $\frac{1}{4!}$ cancels the $4!$ ways of attaching four distinct lines). The Yukawa vertex: [[§C6d.4 First Order#^thm-c6d-4-4|§C6d.4, Theorem §C6d.4.4]].
+> *Equivalently,* for correlation functions, with external points in place of particles: the ⚑ by-product of [[§C6a.9 Position-Space Feynman Rules#^der-c6a-9-1|Derivation §C6a.9.1]] (the $\frac{1}{4!}$ cancels the $4!$ ways of attaching four distinct lines). The Yukawa vertex: [[§C6d.4 First Order#^thm-c6d-4-4|§C6d.4, Theorem §C6d.4.4]].
 >
-> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]] (part 3: [[§C6a.13 Feynman Rules for Polynomial Interactions#^def-c6a-13-1|Def. §C6a.13.1]]); *applies:* every order, any vertex whose legs go to particles or to lines that no symmetry of the diagram exchanges (every vertex of a tree: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]]).
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]] (part 3: [[§C6a.14 Feynman Rules for Polynomial Interactions#^def-c6a-14-1|Def. §C6a.14.1]]); *applies:* every order, any vertex whose legs go to particles or to lines that no symmetry of the diagram exchanges (every vertex of a tree: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]]).
 >
 > *Source: Yu §7.3, p. 292 after eq. (7.120) ("the four identical fields contracted with the initial and final particles give $4!$ equivalent contractions and a combinatorial factor $4!$, which cancels the $1/4!$ in $\mathcal L_1$; the $1/4!$ is introduced in $\mathcal L_1$ so that the vertex rule (7.120) has no extra combinatorial factor"; on the diagram the four external lines connect in $4\cdot3\cdot2\cdot1 = 4!$ ways), p. 296 ("strip the four fields $\phi$ from $\mathcal L_1 = -\lambda\phi^4/4!$, multiply by $i$ and by the $4!$ permutations of the four $\phi$") · PS §4.4, p. 93 ("This was the reason for the factor of 4! in the $\phi^4$ coupling"); §4.6, eq. (4.98) · from the statement of [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]*
 
@@ -241,7 +241,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > **Step 4** (part 2). By Step 3 the factor of the vertex is $i\cdot\bigl(-\frac{\lambda}{4!}\bigr)\cdot4! = -i\lambda$: the coefficient of $\phi^4$ in $\mathcal L_{\rm int}$, times $i$ (from $e^{i\int\mathcal L_{\rm int}}$), times $4!$. A coupling written without the $\frac{1}{4!}$, $-\lambda'\phi^4$, would give the vertex $-i\lambda'\cdot4! = -24i\lambda'$.
 >
-> **Step 5** (part 3). For several kinds a particle attaches only to a leg of its kind ([[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]]); within kind $k$ there are $m_k!$ bijections, all equal by Step 2, so $\prod_km_k!$ in all and the vertex $-ig\prod_km_k!$, as [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]] and Step 5 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]].
+> **Step 5** (part 3). For several kinds a particle attaches only to a leg of its kind ([[§C6a.14 Feynman Rules for Polynomial Interactions#^lem-c6a-14-1|Lemma §C6a.14.1]]); within kind $k$ there are $m_k!$ bijections, all equal by Step 2, so $\prod_km_k!$ in all and the vertex $-ig\prod_km_k!$, as [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]] and Step 5 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]].
 >
 > **Step 6** (a closed pair of legs). If legs $1$ and $2$ are contracted with each other ($D_F(0)$) and $3$, $4$ with two particles, the assignments $\sigma$ and $\sigma\circ(1\,2)$ give the same contraction: the $24$ bijections of legs to "partners" give only $\frac{24}{2} = 12$ distinct contractions ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-2|Example §C6c.4.2]]), and $\frac{12}{24} = \frac12$ is left over.
 >
@@ -250,7 +250,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 
 ^der-c6c-4-4
 
-*Uses:* [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]], [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]], [[§C6c.2 Contractions with External Particles#^thm-c6c-2-5|Theorem §C6c.2.5]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]
+*Uses:* [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]], [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]], [[§C6c.2 Contractions with External Particles#^thm-c6c-2-5|Theorem §C6c.2.5]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^lem-c6a-14-1|Lemma §C6a.14.1]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]]
 
 > [!example] Example §C6c.4.2: The Tadpole between One-Particle States: S = 2, a Mass Shift
 > ![[ph-qft-c6c-4-1.svg]]
@@ -263,7 +263,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > $C(4, 2)\cdot A(2, 2) = 6\cdot2 = 12$ of the $24$ attachments are distinct, the factor $\frac{12}{24} = \frac12$ is left over, and $S = 2$ (the two ends of the loop). The process is forward only ($k' = k$): no scattering, a shift of the mass.
 >
-> **Step 1** (the Wick terms). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]] with the four factors of $\hat\phi_I(x)^4$ labelled $\hat\phi_1, \dots, \hat\phi_4$ (Step 2 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]), $i\hat T^{(1)} = i\hat T^{(1)}_1 + i\hat T^{(1)}_2 + i\hat T^{(1)}_3$ with no, one and two contractions (Yu (7.115)–(7.118)); the one-contraction term has $C(4, 2) = 6$ equal pieces, one per contracted pair $\{1,2\}$, $\{1,3\}$, $\{1,4\}$, $\{2,3\}$, $\{2,4\}$, $\{3,4\}$:
+> **Step 1** (the Wick terms). By [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]] with the four factors of $\hat\phi_I(x)^4$ labelled $\hat\phi_1, \dots, \hat\phi_4$ (Step 2 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]), $i\hat T^{(1)} = i\hat T^{(1)}_1 + i\hat T^{(1)}_2 + i\hat T^{(1)}_3$ with no, one and two contractions (Yu (7.115)–(7.118)); the one-contraction term has $C(4, 2) = 6$ equal pieces, one per contracted pair $\{1,2\}$, $\{1,3\}$, $\{1,4\}$, $\{2,3\}$, $\{2,4\}$, $\{3,4\}$:
 >
 > $$
 > i\hat T^{(1)}_2 = -\frac{i\lambda}{4!}\int d^4x\,\bigl(\underbrace{D_F(0)}_{\{1, 2\}}\,{:}\hat\phi_3\hat\phi_4{:} + \cdots\bigr)_{6\text{ terms}} = -\frac{i\lambda}{4!}\cdot6\int d^4x\,D_F(0)\,{:}\hat\phi_I(x)^2{:} .
@@ -285,9 +285,9 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > \langle\mathbf k'|i\hat T^{(1)}|\mathbf k\rangle = -\frac{i\lambda}{4!}\cdot6\cdot2\,D_F(0)\int d^4x\,e^{i(k' - k)\cdot x} = -\frac{i\lambda}{2}\,D_F(0)\,(2\pi)^4\delta^4(k - k')
 > $$
 >
-> (Yu (7.124), with $\langle\mathbf k|\cdots|\mathbf k\rangle$). $D_F(0) = D_F(x - x)$ is formal (divergent): [[§C6a.5 Normal Ordering and Contractions#^cau-c6a-5-3|§C6a.5, Caution: In what sense these identities hold]].
+> (Yu (7.124), with $\langle\mathbf k|\cdots|\mathbf k\rangle$). $D_F(0) = D_F(x - x)$ is formal (divergent): [[§C6a.6 Normal Ordering and Contractions#^cau-c6a-6-3|§C6a.6, Caution: In what sense these identities hold]].
 >
-> **Step 5** (the symmetry factor). Of the $4! = 24$ ways to attach "partners" to the four legs, exchanging the two ends of the loop (legs $1 \leftrightarrow 2$ in the picture with $\{1,2\}$ closed) gives the same contraction, so only $12$ are distinct: $\frac{12}{24} = \frac12 = \frac1S$ with $S = 2$, the symmetry factor of the tadpole with the particles held fixed ([[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]; the same $S = 2$ as the correlator tadpole of [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]]). Drawn first and evaluated with the vertex $-i\lambda\int d^4x$, the diagram needs $\frac1S$: [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]].
+> **Step 5** (the symmetry factor). Of the $4! = 24$ ways to attach "partners" to the four legs, exchanging the two ends of the loop (legs $1 \leftrightarrow 2$ in the picture with $\{1,2\}$ closed) gives the same contraction, so only $12$ are distinct: $\frac{12}{24} = \frac12 = \frac1S$ with $S = 2$, the symmetry factor of the tadpole with the particles held fixed ([[§C6a.9 Position-Space Feynman Rules#^def-c6a-9-1|Def. §C6a.9.1]]; the same $S = 2$ as the correlator tadpole of [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-1|Example §C6a.10.1]]). Drawn first and evaluated with the vertex $-i\lambda\int d^4x$, the diagram needs $\frac1S$: [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]].
 >
 > **Step 6** (filter). $\delta^4(k - k')$ with both momenta on shell forces $k' = k$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2|Theorem §C6c.4.2]], 4): the element is forward, part of the $\mathbb 1$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], 2). The loop is momentum independent: it shifts the mass, the correction of the external state that the amplitude rules leave out ([[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]). In $\phi\phi \to \phi\phi$ the same piece appears with a spectator on a $\delta$-line (the table of [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]]; slide 16).
 >
@@ -302,7 +302,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > \frac{n!\,(4!)^n}{S(D)} ,
 > $$
 >
-> $S(D)$ the symmetry factor of $D$ with the particles held fixed ([[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]). With the prefactor $\frac{1}{n!}\bigl(\frac{-i\lambda}{4!}\bigr)^n$ of the Dyson series the contribution of $D$ is
+> $S(D)$ the symmetry factor of $D$ with the particles held fixed ([[§C6a.9 Position-Space Feynman Rules#^def-c6a-9-1|Def. §C6a.9.1]]). With the prefactor $\frac{1}{n!}\bigl(\frac{-i\lambda}{4!}\bigr)^n$ of the Dyson series the contribution of $D$ is
 >
 > $$
 > \frac{1}{n!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^n\cdot\frac{n!\,(4!)^n}{S(D)}\cdot(\text{value of one contraction}) = \frac{(-i\lambda)^n}{S(D)}\,(\text{value of one contraction}) :
@@ -310,7 +310,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > the factor left over in the $T$-matrix calculation is $\frac1S$, the symmetry factor of the diagram. So one may draw $D$ first, write it with the vertex $-i\lambda\int d^4x$ of [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-4|Theorem §C6c.4.4]], and divide by $S$. For a polynomial interaction $n!\,(4!)^n$ becomes $|G_{\mathbf n}| = \prod_tn_t!\,|H_t|^{n_t}$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1).
 >
-> *Equivalently,* for correlation functions, the external points held fixed in place of the particles: [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]].
+> *Equivalently,* for correlation functions, the external points held fixed in place of the particles: [[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-1|Theorem §C6a.9.1]].
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] with $\phi^4$ ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]); *applies:* every order, free relativistic states over $|0\rangle$ as in [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]; it counts every diagram of $\langle f|\hat S|i\rangle$, before [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]] and [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]] select those of $i\mathcal M$.
 >
@@ -319,7 +319,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 ^thm-c6c-4-5
 
 > [!derivation]- Derivation
-> **Step 1** (the prefactor). The Dyson series at order $n$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]]) with $\hat{\mathcal H}_I = \frac{\lambda}{4!}\hat\phi_I^4$:
+> **Step 1** (the prefactor). The Dyson series at order $n$ ([[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-2|Theorem §C6a.4.2]]) with $\hat{\mathcal H}_I = \frac{\lambda}{4!}\hat\phi_I^4$:
 >
 > $$
 > \langle f|\hat S|i\rangle^{(n)} = \frac{1}{n!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^n\int d^4z_1\cdots d^4z_n\;\langle f|\,T\{\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}\,|i\rangle ,
@@ -327,7 +327,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > and by [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]] the matrix element is the sum over the full contractions of the $4n$ legs and the particles, each a labelled diagram with the particles as external points.
 >
-> **Step 2** ($\frac1S$). Relabelling the $n$ vertices and the four legs at each vertex, a group of order $n!\,(4!)^n$, maps contractions to contractions with the same integral (Step 5 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]); the particles are not relabelled. By orbit–stabilizer a diagram $D$ arises from $n!\,(4!)^n/S(D)$ contractions ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]), and the prefactor of Step 1 becomes $\frac{1}{S(D)}(-i\lambda)^n$: each vertex $-i\lambda\int d^4x$, the whole $\frac1S$ (slide 22). A symmetry must fix every leg joined to a particle, so only loops and parallel internal lines can contribute to $S$: "$S$ simpler".
+> **Step 2** ($\frac1S$). Relabelling the $n$ vertices and the four legs at each vertex, a group of order $n!\,(4!)^n$, maps contractions to contractions with the same integral (Step 5 of [[§C6a.9 Position-Space Feynman Rules#^der-c6a-9-1|Derivation §C6a.9.1]]); the particles are not relabelled. By orbit–stabilizer a diagram $D$ arises from $n!\,(4!)^n/S(D)$ contractions ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]), and the prefactor of Step 1 becomes $\frac{1}{S(D)}(-i\lambda)^n$: each vertex $-i\lambda\int d^4x$, the whole $\frac1S$ (slide 22). A symmetry must fix every leg joined to a particle, so only loops and parallel internal lines can contribute to $S$: "$S$ simpler".
 >
 > **Step 3** (checks at first order). $n = 1$, $n!\,(4!)^n = 24$: the vertex with four particles, $S = 1$, $24$ contractions ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]); the tadpole, $S = 2$, $12$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-2|Example §C6c.4.2]]); the figure-eight, $S = 8$, $3$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-3|Example §C6c.4.3]]).
 >
@@ -336,7 +336,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 
 ^der-c6c-4-5
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]], [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]
+*Uses:* [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], [[§C6a.9 Position-Space Feynman Rules#^der-c6a-9-1|Derivation §C6a.9.1]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]
 
 *Procedure:* [[P5 Symmetry Factor of a Diagram|P5]]
 
@@ -359,11 +359,11 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > each a c-number, so $i\hat T^{(1)}_3 = -\frac{i\lambda}{4!}\cdot3\int d^4x\,D_F(0)^2 = -\frac{i\lambda}{8}D_F(0)^2\int d^4x$ (Yu (7.118), (7.125); PS (4.96)).
 >
-> **Step 2** (between states). A c-number times the identity: $\langle f|i\hat T^{(1)}_3|i\rangle = -\frac{i\lambda}{8}D_F(0)^2\int d^4x\;\langle f|i\rangle$; the overlap $\langle f|i\rangle$ is a product of $\delta$-lines ([[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]]), and $\int d^4x = (2\pi)^4\delta^4(0)$, the volume of spacetime ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]). For $2 \to 2$ this is the second row of the table of [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]] (slide 14: "$-\frac18i\lambda$").
+> **Step 2** (between states). A c-number times the identity: $\langle f|i\hat T^{(1)}_3|i\rangle = -\frac{i\lambda}{8}D_F(0)^2\int d^4x\;\langle f|i\rangle$; the overlap $\langle f|i\rangle$ is a product of $\delta$-lines ([[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]]), and $\int d^4x = (2\pi)^4\delta^4(0)$, the volume of spacetime ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-3|Theorem §C6a.12.3]]). For $2 \to 2$ this is the second row of the table of [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]] (slide 14: "$-\frac18i\lambda$").
 >
-> **Step 3** (the symmetry factor). $\frac{3}{24} = \frac18 = \frac1S$. On the diagram: each loop has two interchangeable ends ($2\cdot2$) and the two loops at the vertex can be exchanged ($2$), $S = 2\cdot2\cdot2 = 8$ ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]] with $\ell = 2$: $2^2\cdot2! = 8$), the same as for correlation functions ([[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]]); it confirms [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]] with no particles.
+> **Step 3** (the symmetry factor). $\frac{3}{24} = \frac18 = \frac1S$. On the diagram: each loop has two interchangeable ends ($2\cdot2$) and the two loops at the vertex can be exchanged ($2$), $S = 2\cdot2\cdot2 = 8$ ([[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-1|Theorem §C6a.10.1]] with $\ell = 2$: $2^2\cdot2! = 8$), the same as for correlation functions ([[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-1|Example §C6a.10.1]]); it confirms [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]] with no particles.
 >
-> **Step 4** (fate). The bubble has no particles; it is the first-order term of $\langle0|\hat S|0\rangle$, a phase ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]; the vacuum energy, [[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-2|Example §C6a.11.2]]), omitted by [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], 1.
+> **Step 4** (fate). The bubble has no particles; it is the first-order term of $\langle0|\hat S|0\rangle$, a phase ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-3|Theorem §C6a.12.3]]; the vacuum energy, [[§C6a.12 The iε Limit and Vacuum Bubbles#^ex-c6a-12-2|Example §C6a.12.2]]), omitted by [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], 1.
 >
 > *Source: Yu §7.3, eqs. (7.118), (7.125), Fig. 7.14 ("the two loops each contribute a factor 2, and the two loops are identical and contribute another 2, so the symmetry factor is $2\cdot2\cdot2 = 8$") · PHY 513 Lecture 16, slide 14 · PS §4.6, eq. (4.96)*
 
@@ -394,7 +394,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 ^thm-c6c-4-6
 
 > [!derivation]- Derivation
-> **Step 1** (part 1, bubbles). The pieces without particles share no line with the others; summed over all terms they factor out exactly as in [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]], and their sum is $\langle0|U(T, -T)|0\rangle$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]), the normalization that [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], 2, omits (Step 4 of its derivation).
+> **Step 1** (part 1, bubbles). The pieces without particles share no line with the others; summed over all terms they factor out exactly as in [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-4|Theorem §C6a.12.4]], and their sum is $\langle0|U(T, -T)|0\rangle$ ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-2|Theorem §C6a.12.2]]), the normalization that [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], 2, omits (Step 4 of its derivation).
 >
 > **Step 2** (part 2). A $1 \to 1$ piece carries $\delta^4(k - p)$ (or $\delta^3(\mathbf p - \mathbf k)$) with $k$, $p$ on the mass shell, so $p = k$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2|Theorem §C6c.4.2]], 4): if every piece is $1 \to 1$, every final momentum equals an initial one, the "nothing happened" part of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]]. Otherwise there are at least two deltas in independent combinations of the momenta, and the term is a product of processes on subsets of the particles; it is not $\delta^4(\sum k - \sum p)$ times a smooth function, the form of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]] that defines $\mathcal M$ ([[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-2|Theorem §C6c.1.2]] for the free four-point function).
 >
@@ -420,7 +420,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 
 ^der-c6c-4-6
 
-*Uses:* [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3|Theorem §C6c.3.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2|Theorem §C6c.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-2|Theorem §C6c.1.2]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]
+*Uses:* [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3|Theorem §C6c.3.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-2|Theorem §C6a.12.2]], [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-4|Theorem §C6a.12.4]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2|Theorem §C6c.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-2|Theorem §C6c.1.2]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]
 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-3|P6, step 3]]
 
@@ -442,7 +442,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > | $0 \to \Phi\phi\phi$, $\Phi\phi\phi \to 0$ | $0$ | $-2i\mu$ | forbidden (part 1) |
 > | $0 \to \Phi$, $\Phi \to 0$ | $1$ ($\phi$ loop) | $-i\mu D_F^{(m)}(0)$ | forbidden (part 1) |
 >
-> A $\phi$ leg cannot be left without partner, and the $\Phi$ leg cannot close on a $\phi$ leg ([[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]]); the counts are $\frac{1!\,2!}{2^{\ell}\ell!}$ of [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]].
+> A $\phi$ leg cannot be left without partner, and the $\Phi$ leg cannot close on a $\phi$ leg ([[§C6a.14 Feynman Rules for Polynomial Interactions#^lem-c6a-14-1|Lemma §C6a.14.1]]); the counts are $\frac{1!\,2!}{2^{\ell}\ell!}$ of [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]].
 >
 > **The decay.** With the $\Phi$ field $\hat\Phi_x$ and the two $\phi$ fields $\hat\phi_{x1}$, $\hat\phi_{x2}$ of $\hat\Phi\hat\phi^2(x)$, and [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]],
 >
@@ -459,7 +459,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > [!example] Example §C6c.4.5: The Cubic Interaction at First Order: Everything Is Forbidden
 > ![[ph-qft-c6b-2-3.svg]]
 >
-> For $\mathcal L_{\rm int} = -\frac{g}{3!}\phi^3$ (the cubic vertex of [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]]) and on-shell particles of mass $m > 0$, every first-order matrix element with no forward pair vanishes:
+> For $\mathcal L_{\rm int} = -\frac{g}{3!}\phi^3$ (the cubic vertex of [[§C6a.9 Position-Space Feynman Rules#^mod-c6a-9-2|Model §C6a.9.2]]) and on-shell particles of mass $m > 0$, every first-order matrix element with no forward pair vanishes:
 >
 > | in → out | loops | count $\frac{3!}{2^\ell\ell!}$ | matrix element | kinematics ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2\|Theorem §C6c.4.2]]) |
 > |---|---|---|---|---|
@@ -486,7 +486,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > - [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]] — the relabelling group $|G_{\mathbf n}|$ and orbit–stabilizer behind the coefficient $\frac1S$.
 
 > [!remark]- Connections
-> - The $\frac1S$ left over in a matrix element is the $\frac1S$ of correlation functions, with the particles in place of the external points — [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]], [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]].
+> - The $\frac1S$ left over in a matrix element is the $\frac1S$ of correlation functions, with the particles in place of the external points — [[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-1|Theorem §C6a.9.1]], [[§C6a.10 Symmetry Factors in Practice#^ex-c6a-10-1|Example §C6a.10.1]].
 > - Yu's first order is Yukawa theory: of ten dynamically allowed processes only $\phi \to f\bar f$ and its inverse survive the filter — [[§C6d.4 First Order#^ex-c6d-4-1|§C6d.4, Example §C6d.4.1]].
 > - The kinematic filter is the threshold of a decay, $M > \sum m_i$, the condition of the two-body decay formula — [[§C6b.6 Decay Kinematics#^thm-c6b-6-1|Theorem §C6b.6.1]].
 > - The fermion mirror of this section: the Wick split and the eight three-leg elements of Yukawa theory, the rules read off them, the filter keeping two of ten, the tadpoles, the vertex without $\frac{1}{3!}$ and $S = 1$ — [[§C6d.4 First Order#^thm-c6d-4-1|Theorem §C6d.4.1]], [[§C6d.4 First Order#^thm-c6d-4-3|Theorem §C6d.4.3]], [[§C6d.4 First Order#^thm-c6d-4-5|Theorem §C6d.4.5]], [[§C6d.4 First Order#^ex-c6d-4-3|Example §C6d.4.3]], [[§C6d.4 First Order#^thm-c6d-4-4|Theorem §C6d.4.4]], [[§C6d.4 First Order#^thm-c6d-4-7|Theorem §C6d.4.7]].

@@ -11,27 +11,28 @@ tags: [chapter, quantum-field-theory]
 **Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (32), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (62), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (118), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (9), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (7), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (20), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (4), [[· CA Mathematical Methods|CA Mathematical Methods]] (113), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (10)
 **Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (11), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (17), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (9), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (41), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (171), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (39), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (16), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (9), [[· CA Mathematical Methods|CA Mathematical Methods]] (12)
 
-**Start with [[§C6a.0 Setups and Observables|§C6a.0]]**: it classifies the physical situations by how the interaction behaves in time (a source switched off, a static source, a self-interacting field), says which vacuum and which states each one has, and turns questions as asked into the object to compute. C6a computes **correlation functions** $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\}|\Omega\rangle$ of an interacting theory, with $\phi^4$ theory as the course's first case (Lectures 13–14; the user's notes, Ch. 13–14). The interaction picture and the Dyson series write them through free fields (§C6a.1–§C6a.4, master formula [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]); Wick's theorem turns the free vacuum values into sums over contractions (§C6a.5–§C6a.6); diagrams and the Feynman rules in position and momentum space, with their symmetry factors, organize the sum, and the $i\varepsilon$ limit cancels the vacuum bubbles (§C6a.7–§C6a.11); the sum of all bubbles is the exponential of the connected ones, and these add up to the energy density of the interacting vacuum (§C6a.12); §C6a.13 states the rules for any polynomial interaction of real and complex scalars (several fields, oriented lines, vertex factor $-ig_t\prod_km_{t,k}!$). Correlation functions are not what an experiment measures: the $S$-matrix, the definition of the invariant amplitude $\mathcal M$, cross sections and decay rates are in [[· C6b The S-Matrix and Observables]]; $\mathcal M$ itself is computed in [[· C6c Feynman Rules for Amplitudes]], which reads it off from the amputated correlation functions of this chapter (with fermions: [[· C6d Feynman Rules for Fermions]]; quantum electrodynamics: [[· C8 Quantum Electrodynamics]]). In Yu's book the material of C6a is in §6.1–§6.3 and §10.4–§10.5.
+**Start with [[§C6a.0 Setups and Observables|§C6a.0]]**: it classifies the physical situations by how the interaction behaves in time (a source switched off, a static source, a self-interacting field), says which vacuum and which states each one has, and turns questions as asked into the object to compute. C6a computes **correlation functions** $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\}|\Omega\rangle$ of an interacting theory, with $\phi^4$ theory as the course's first case (Lectures 13–14; the user's notes, Ch. 13–14). The interaction picture and the Dyson series write them through free fields (§C6a.1–§C6a.5, master formula [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]]); Wick's theorem turns the free vacuum values into sums over contractions (§C6a.6–§C6a.7); diagrams and the Feynman rules in position and momentum space, with their symmetry factors, organize the sum, and the $i\varepsilon$ limit cancels the vacuum bubbles (§C6a.8–§C6a.12); the sum of all bubbles is the exponential of the connected ones, and these add up to the energy density of the interacting vacuum (§C6a.13); §C6a.14 states the rules for any polynomial interaction of real and complex scalars (several fields, oriented lines, vertex factor $-ig_t\prod_km_{t,k}!$). Correlation functions are not what an experiment measures: the $S$-matrix, the definition of the invariant amplitude $\mathcal M$, cross sections and decay rates are in [[· C6b The S-Matrix and Observables]]; $\mathcal M$ itself is computed in [[· C6c Feynman Rules for Amplitudes]], which reads it off from the amputated correlation functions of this chapter (with fermions: [[· C6d Feynman Rules for Fermions]]; quantum electrodynamics: [[· C8 Quantum Electrodynamics]]). In Yu's book the material of C6a is in §6.1–§6.3 and §10.4–§10.5.
 
 ## How C6a relates to Yu
-C6a follows the course (Lectures 13–14) and the user's notes (Ch. 13–14), not Yu's chapter split (user decisions, 2026-10-26 and 2026-10-28). Yu treats Wick's theorem in §6.3, the Feynman rules for $S$-matrix elements in ch. 7 (Yukawa first, §7.2; $\phi^4$ and symmetry factors, §7.3), and reaches correlation functions and the cancellation of vacuum bubbles only in ch. 10, through asymptotic in-fields and the LSZ formula; the course reaches them through the $i\varepsilon$ projection onto the interacting vacuum (§C6a.4). Each section states its Yu correspondence in its opening and, where the route differs, in a "Remark: Yu's route".
+C6a follows the course (Lectures 13–14) and the user's notes (Ch. 13–14), not Yu's chapter split (user decisions, 2026-10-26 and 2026-10-28). Yu treats Wick's theorem in §6.3, the Feynman rules for $S$-matrix elements in ch. 7 (Yukawa first, §7.2; $\phi^4$ and symmetry factors, §7.3), and reaches correlation functions and the cancellation of vacuum bubbles only in ch. 10, through asymptotic in-fields and the LSZ formula; the course reaches them through the $i\varepsilon$ projection onto the interacting vacuum (§C6a.5). Each section states its Yu correspondence in its opening and, where the route differs, in a "Remark: Yu's route".
 
 | Section | Yu § and eqs. | Yu's setting | PS |
 |---|---|---|---|
 | §C6a.0 | §6.2, p. 216; (6.284); §10.1, (10.4); p. 474 | asymptotic states; $\lvert0\rangle$ free in ch. 6–7, interacting in ch. 10 | §2.4, §4.2, §4.5 |
 | §C6a.1 | Ch. 6 opening, (6.1)–(6.5), (6.13); §6.1.1, (6.39)–(6.46) | | §4.1 |
 | §C6a.2 | §6.1, (6.22)–(6.38), (6.44)–(6.50) | $V(t) = e^{iH_0t}e^{-iHt}$ | §4.2 |
-| §C6a.3 | §6.2, (6.93)–(6.121) | $U(t, t_0)$, Dyson series; $S = U(\infty, -\infty)$ (6.122)–(6.125) | §4.2 |
-| §C6a.4 | §10.4, (10.176)–(10.181) (another route) | in-fields and LSZ; normalization a phase | §4.2 |
-| §C6a.5 | §6.3.1, (6.131)–(6.165) | bosons and fermions together | §4.3, (4.32)–(4.37) |
-| §C6a.6 | §6.3.1, (6.166)–(6.168); §6.3.2, lemma (6.169)–(6.170), proofs (6.171)–(6.193) | lemma appends an earlier field | §4.3, (4.38)–(4.41) |
-| §C6a.7 | §10.5.1, (10.187)–(10.192) | $G^{(2)}$ of in-fields, with a $\delta m^2$ vertex | §4.4, (4.42)–(4.44) |
-| §C6a.8 | §7.3, (7.112)–(7.120) | $T$-matrix elements | §4.4, (4.45), p. 94 |
-| §C6a.9 | §7.3, (7.124)–(7.125), (7.127)–(7.128), (7.131)–(7.132); p. 293 | self-energies $\langle\mathbf k\rvert iT\lvert\mathbf k\rangle$ | §4.4, pp. 92–93 |
-| §C6a.10 | §7.2, rules 8, 10, 11 (pp. 287–288); §7.3, p. 296; §10.5.1, (10.198)–(10.203) | Yukawa $S$-matrix rules; Fourier transform of $G^{(n)}$ | §4.4, (4.46)–(4.47), p. 95 |
-| §C6a.11 | §10.4, (10.176)–(10.181); §10.5.1, (10.193)–(10.197) | no $T(1 - i\varepsilon)$; binomial proof | §4.4, (4.48)–(4.57) |
-| §C6a.12 | §7.1, p. 286 (after (7.103)); §10.4, (10.178) | all bubble diagrams contribute only a phase factor | §4.4, p. 98, (4.55)–(4.56) |
-| §C6a.13 | §7.2, rules 6–12 (pp. 287–288); §7.3, (7.112)–(7.120), p. 296; §7.4, (7.133)–(7.143), rules 1–5 (p. 300) | $T$-matrix rules, field by field; vertex = $i\mathcal L_{\rm int}$ stripped, times the permutations | §4.4, pp. 92–95; §4.6, p. 115 |
+| §C6a.3 | §6.2, (6.100), (6.103)–(6.121) | $U(t, t_0)$ with a general $t_0$ throughout, Dyson series by iterating the integral equation | §4.2, (4.17)–(4.23) |
+| §C6a.4 | §6.2, (6.93)–(6.102), (6.119) | $U(t, t_0)$ from the start; $S = U(\infty, -\infty)$ (6.122)–(6.125) | §4.2, (4.23)–(4.26) |
+| §C6a.5 | §10.4, (10.176)–(10.181) (another route) | in-fields and LSZ; normalization a phase | §4.2 |
+| §C6a.6 | §6.3.1, (6.131)–(6.165) | bosons and fermions together | §4.3, (4.32)–(4.37) |
+| §C6a.7 | §6.3.1, (6.166)–(6.168); §6.3.2, lemma (6.169)–(6.170), proofs (6.171)–(6.193) | lemma appends an earlier field | §4.3, (4.38)–(4.41) |
+| §C6a.8 | §10.5.1, (10.187)–(10.192) | $G^{(2)}$ of in-fields, with a $\delta m^2$ vertex | §4.4, (4.42)–(4.44) |
+| §C6a.9 | §7.3, (7.112)–(7.120) | $T$-matrix elements | §4.4, (4.45), p. 94 |
+| §C6a.10 | §7.3, (7.124)–(7.125), (7.127)–(7.128), (7.131)–(7.132); p. 293 | self-energies $\langle\mathbf k\rvert iT\lvert\mathbf k\rangle$ | §4.4, pp. 92–93 |
+| §C6a.11 | §7.2, rules 8, 10, 11 (pp. 287–288); §7.3, p. 296; §10.5.1, (10.198)–(10.203) | Yukawa $S$-matrix rules; Fourier transform of $G^{(n)}$ | §4.4, (4.46)–(4.47), p. 95 |
+| §C6a.12 | §10.4, (10.176)–(10.181); §10.5.1, (10.193)–(10.197) | no $T(1 - i\varepsilon)$; binomial proof | §4.4, (4.48)–(4.57) |
+| §C6a.13 | §7.1, p. 286 (after (7.103)); §10.4, (10.178) | all bubble diagrams contribute only a phase factor | §4.4, p. 98, (4.55)–(4.56) |
+| §C6a.14 | §7.2, rules 6–12 (pp. 287–288); §7.3, (7.112)–(7.120), p. 296; §7.4, (7.133)–(7.143), rules 1–5 (p. 300) | $T$-matrix rules, field by field; vertex = $i\mathcal L_{\rm int}$ stripped, times the permutations | §4.4, pp. 92–95; §4.6, p. 115 |
 | §CA.8 (mathematics) | (6.167)–(6.168); (7.114)–(7.125) | | §4.3–§4.4 |
 | §CA.9 (mathematics) | §10.5.1, (10.192)–(10.196) | | §4.4, pp. 96–98, (4.50)–(4.52) |
 
@@ -40,16 +41,17 @@ C6a follows the course (Lectures 13–14) and the user's notes (Ch. 13–14), no
 - [[§C6a.1 From Free to Interacting Fields]] — 513 notes Ch. 13 §13.1; PS §4.1
 - [[§C6a.2 The Interaction Picture]] — 513 notes Ch. 13 §13.2; PS §4.2, pp. 83–84
 - [[§C6a.3 The Time-Evolution Operator and Time Ordering]] — 513 notes Ch. 13 §13.3; PS §4.2, pp. 84–86
-- [[§C6a.4 The Interacting Vacuum and the Two-Point Function]] — 513 notes Ch. 13 §§13.4–13.6; PS §4.2, pp. 86–87
-- [[§C6a.5 Normal Ordering and Contractions]] — 513 notes Ch. 14 §14.1–§14.2; PS §4.3, pp. 88–89
-- [[§C6a.6 Wick's Theorem]] — 513 notes Ch. 14 §14.2; PS §4.3, pp. 89–90
-- [[§C6a.7 Feynman Diagrams for Correlation Functions]] — 513 notes Ch. 14 §14.3; PS §4.4, pp. 90–92
-- [[§C6a.8 Position-Space Feynman Rules]] — 513 notes Ch. 14 §14.4–§14.5; PS §4.4, pp. 92–94
-- [[§C6a.9 Symmetry Factors in Practice]] — 513 notes Ch. 14 §14.5; PS §4.4, pp. 92–93
-- [[§C6a.10 Feynman Rules in Momentum Space]] — 513 notes Ch. 14 §14.6; PS §4.4, pp. 94–95
-- [[§C6a.11 The iε Limit and Vacuum Bubbles]] — 513 notes Ch. 14 §14.7–§14.8; PS §4.4, pp. 95–99
-- [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density]] — PS §4.4, p. 98, (4.55)–(4.56); 513 notes Ch. 14 §14.7; PHY 513 Problem Set 8
-- [[§C6a.13 Feynman Rules for Polynomial Interactions]] — Yu §7.2–§7.4; PS §4.4, pp. 92–95; §4.6, p. 115; PHY 513 Problem Set 8
+- [[§C6a.4 The Time-Evolution Operator Between Two Times]] — 513 notes Ch. 13 §13.3, §13.5; PS §4.2, pp. 85–86
+- [[§C6a.5 The Interacting Vacuum and the Two-Point Function]] — 513 notes Ch. 13 §§13.4–13.6; PS §4.2, pp. 86–87
+- [[§C6a.6 Normal Ordering and Contractions]] — 513 notes Ch. 14 §14.1–§14.2; PS §4.3, pp. 88–89
+- [[§C6a.7 Wick's Theorem]] — 513 notes Ch. 14 §14.2; PS §4.3, pp. 89–90
+- [[§C6a.8 Feynman Diagrams for Correlation Functions]] — 513 notes Ch. 14 §14.3; PS §4.4, pp. 90–92
+- [[§C6a.9 Position-Space Feynman Rules]] — 513 notes Ch. 14 §14.4–§14.5; PS §4.4, pp. 92–94
+- [[§C6a.10 Symmetry Factors in Practice]] — 513 notes Ch. 14 §14.5; PS §4.4, pp. 92–93
+- [[§C6a.11 Feynman Rules in Momentum Space]] — 513 notes Ch. 14 §14.6; PS §4.4, pp. 94–95
+- [[§C6a.12 The iε Limit and Vacuum Bubbles]] — 513 notes Ch. 14 §14.7–§14.8; PS §4.4, pp. 95–99
+- [[§C6a.13 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density]] — PS §4.4, p. 98, (4.55)–(4.56); 513 notes Ch. 14 §14.7; PHY 513 Problem Set 8
+- [[§C6a.14 Feynman Rules for Polynomial Interactions]] — Yu §7.2–§7.4; PS §4.4, pp. 92–95; §4.6, p. 115; PHY 513 Problem Set 8
 
 ## Principles
 - [[§C6a.1 From Free to Interacting Fields#^pr-c6a-1-6|§C6a.1.6]] Canonical Quantization of $\phi^4$ Theory at a Reference Time
@@ -75,49 +77,49 @@ C6a follows the course (Lectures 13–14) and the user's notes (Ch. 13–14), no
 - [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-5|§C6a.3.5]] The Exponential Solves the Equation Only for Commuting Generators
 - [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|§C6a.3.6]] Ordered Iterated Integrals Are Time-Ordered Cube Integrals
 - [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|§C6a.3.7]] Dyson's Formula
-- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|§C6a.3.8]] Properties of the Time-Evolution Operator
-- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|§C6a.3.9]] Dyson's Formula Between Two Times
-- [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|§C6a.4.1]] Projection onto the Ground State
-- [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|§C6a.4.2]] The Interacting Vacuum Evolved from the Far Past
-- [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-3|§C6a.4.3]] The Conjugate Vacuum Evolved into the Far Future
-- [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|§C6a.4.4]] The Normalization Is the Vacuum-to-Vacuum Amplitude
-- [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-5|§C6a.4.5]] The Two-Point Function as a Chain of Free Evolutions
-- [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|§C6a.4.6]] The Master Formula
-- [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|§C6a.4.7]] The n-Point Functions
-- [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|§C6a.5.1]] The Normal-Ordered Product of n Free Fields
-- [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|§C6a.5.2]] The Price of Reordering Is the Wightman Function
-- [[§C6a.6 Wick's Theorem#^lem-c6a-6-1|§C6a.6.1]] Appending a Field of Earlier Time
-- [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|§C6a.6.2]] Wick's Theorem
-- [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|§C6a.6.3]] Free Vacuum Values Are Sums over Pairings
-- [[§C6a.6 Wick's Theorem#^thm-c6a-6-4|§C6a.6.4]] ★ Wick's Theorem for Ordinary Products
-- [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|§C6a.7.1]] The First-Order Numerator
-- [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|§C6a.7.2]] Real-Scalar Lines Are Undirected; Complex-Scalar and Dirac Lines Are Oriented
-- [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-3|§C6a.7.3]] The Number of Complete Contractions at Order λⁿ
-- [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|§C6a.8.1]] The Coefficient of a Diagram Is 1/S
-- [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|§C6a.8.4]] Feynman Rules for Correlation Functions in Position Space
-- [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-5|§C6a.8.5]] Correlation Functions of an Odd Number of Fields Vanish in φ⁴ Theory
-- [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|§C6a.9.1]] The Symmetry Factor as a Product of Line and Vertex Factors
-- [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|§C6a.9.2]] Symmetry Factors with Oriented Lines
-- [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|§C6a.10.1]] Momentum Is Conserved at Every Vertex
-- [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|§C6a.10.2]] Feynman Rules for Correlation Functions in Momentum Space
-- [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-3|§C6a.10.3]] The Loop Factor D_F(0) Diverges Quadratically
-- [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|§C6a.11.1]] The T(1 − iε) Limit Is the Feynman Prescription
-- [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|§C6a.11.2]] The Denominator Is the Sum of the Vacuum Diagrams
-- [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|§C6a.11.3]] Every Vacuum Bubble Is Proportional to the Volume of Spacetime
-- [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|§C6a.11.4]] The Numerator Factorizes
-- [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|§C6a.11.5]] Vacuum Bubbles Cancel
-- [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-1|§C6a.12.1]] The Denominator Is the Exponential of the Connected Vacuum Bubbles
-- [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-2|§C6a.12.2]] The Vacuum Energy Density
-- [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|§C6a.13.1]] The Contractions of Several Free Fields
-- [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|§C6a.13.2]] Vertex Factors of a Polynomial Interaction
-- [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-3|§C6a.13.3]] Counting Legs, Lines and Loops
-- [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-4|§C6a.13.4]] Feynman Rules for a Polynomial Interaction in Position Space
-- [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|§C6a.13.5]] Feynman Rules for a Polynomial Interaction in Momentum Space
+- [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-1|§C6a.4.1]] Properties of the Time-Evolution Operator
+- [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-2|§C6a.4.2]] Dyson's Formula Between Two Times
+- [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|§C6a.5.1]] Projection onto the Ground State
+- [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-2|§C6a.5.2]] The Interacting Vacuum Evolved from the Far Past
+- [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-3|§C6a.5.3]] The Conjugate Vacuum Evolved into the Far Future
+- [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-4|§C6a.5.4]] The Normalization Is the Vacuum-to-Vacuum Amplitude
+- [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-5|§C6a.5.5]] The Two-Point Function as a Chain of Free Evolutions
+- [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|§C6a.5.6]] The Master Formula
+- [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-7|§C6a.5.7]] The n-Point Functions
+- [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|§C6a.6.1]] The Normal-Ordered Product of n Free Fields
+- [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-2|§C6a.6.2]] The Price of Reordering Is the Wightman Function
+- [[§C6a.7 Wick's Theorem#^lem-c6a-7-1|§C6a.7.1]] Appending a Field of Earlier Time
+- [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|§C6a.7.2]] Wick's Theorem
+- [[§C6a.7 Wick's Theorem#^thm-c6a-7-3|§C6a.7.3]] Free Vacuum Values Are Sums over Pairings
+- [[§C6a.7 Wick's Theorem#^thm-c6a-7-4|§C6a.7.4]] ★ Wick's Theorem for Ordinary Products
+- [[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-1|§C6a.8.1]] The First-Order Numerator
+- [[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-2|§C6a.8.2]] Real-Scalar Lines Are Undirected; Complex-Scalar and Dirac Lines Are Oriented
+- [[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-3|§C6a.8.3]] The Number of Complete Contractions at Order λⁿ
+- [[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-1|§C6a.9.1]] The Coefficient of a Diagram Is 1/S
+- [[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-4|§C6a.9.4]] Feynman Rules for Correlation Functions in Position Space
+- [[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-5|§C6a.9.5]] Correlation Functions of an Odd Number of Fields Vanish in φ⁴ Theory
+- [[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-1|§C6a.10.1]] The Symmetry Factor as a Product of Line and Vertex Factors
+- [[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-2|§C6a.10.2]] Symmetry Factors with Oriented Lines
+- [[§C6a.11 Feynman Rules in Momentum Space#^thm-c6a-11-1|§C6a.11.1]] Momentum Is Conserved at Every Vertex
+- [[§C6a.11 Feynman Rules in Momentum Space#^thm-c6a-11-2|§C6a.11.2]] Feynman Rules for Correlation Functions in Momentum Space
+- [[§C6a.11 Feynman Rules in Momentum Space#^thm-c6a-11-3|§C6a.11.3]] The Loop Factor D_F(0) Diverges Quadratically
+- [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-1|§C6a.12.1]] The T(1 − iε) Limit Is the Feynman Prescription
+- [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-2|§C6a.12.2]] The Denominator Is the Sum of the Vacuum Diagrams
+- [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-3|§C6a.12.3]] Every Vacuum Bubble Is Proportional to the Volume of Spacetime
+- [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-4|§C6a.12.4]] The Numerator Factorizes
+- [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|§C6a.12.5]] Vacuum Bubbles Cancel
+- [[§C6a.13 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-13-1|§C6a.13.1]] The Denominator Is the Exponential of the Connected Vacuum Bubbles
+- [[§C6a.13 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-13-2|§C6a.13.2]] The Vacuum Energy Density
+- [[§C6a.14 Feynman Rules for Polynomial Interactions#^lem-c6a-14-1|§C6a.14.1]] The Contractions of Several Free Fields
+- [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|§C6a.14.2]] Vertex Factors of a Polynomial Interaction
+- [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-3|§C6a.14.3]] Counting Legs, Lines and Loops
+- [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-4|§C6a.14.4]] Feynman Rules for a Polynomial Interaction in Position Space
+- [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-5|§C6a.14.5]] Feynman Rules for a Polynomial Interaction in Momentum Space
 
 ## Models
 - [[§C6a.0 Setups and Observables#^mod-c6a-0-1|§C6a.0.1]] A Free Field and a Source Switched Off at Early and Late Times
 - [[§C6a.0 Setups and Observables#^mod-c6a-0-2|§C6a.0.2]] ★ A Free Field and a Static Source
 - [[§C6a.0 Setups and Observables#^mod-c6a-0-3|§C6a.0.3]] A Self-Interacting Field
 - [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|§C6a.1.1]] $\phi^4$ Theory
-- [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|§C6a.8.2]] Cubic–Quartic Theory
-- [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-3|§C6a.8.3]] The Complex Scalar with a Quartic Self-Interaction
+- [[§C6a.9 Position-Space Feynman Rules#^mod-c6a-9-2|§C6a.9.2]] Cubic–Quartic Theory
+- [[§C6a.9 Position-Space Feynman Rules#^mod-c6a-9-3|§C6a.9.3]] The Complex Scalar with a Quartic Self-Interaction

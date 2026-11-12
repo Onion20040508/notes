@@ -3,21 +3,21 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C6a
-section: C6a.4
+section: C6a.5
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6a.3 The Time-Evolution Operator and Time Ordering]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.5 Normal Ordering and Contractions]] →
+← [[§C6a.4 The Time-Evolution Operator Between Two Times]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.6 Normal Ordering and Contractions]] →
 
 *Sources: the user's PHY 513 notes, Ch. 13 §§13.4–13.6 · PHY 513 Lecture 13 (Larsen, 14 Oct 2026), Part C, slides 17–23, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.2, pp. 82–83, 86–87, eqs. (4.10)–(4.11), (4.27)–(4.31) · Yu Zhao-Huan, 量子场论讲义, §6.2, eqs. (6.122)–(6.125), and §10, eqs. (10.180)–(10.197) (a different route, for comparison only).*
 
-What should be computed in the interacting theory? Ultimately cross sections and decay widths; first, the time-ordered two-point function $\langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle$, the interacting version of the Feynman propagator ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]). The fields in it are now known in terms of free fields ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 4); the state is not. The free vacuum $|0\rangle$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]] is not the ground state of $\hat H$. This section obtains the true vacuum $|\Omega\rangle$ from $|0\rangle$ by evolving with the full Hamiltonian for a long time in a slightly imaginary direction, writes that evolution with the operators $U(t, t')$ of [[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]], and assembles the result into the master formula (PS (4.31)): the interacting correlator as a ratio of free-vacuum expectation values of time-ordered free fields. The unknown overlaps and phases of the vacuum cancel in the ratio. Turning the formula into rules is the work of Lecture 14 ([[§C6a.5 Normal Ordering and Contractions|§C6a.5]]–[[§C6a.11 The iε Limit and Vacuum Bubbles|§C6a.11]]).
+What should be computed in the interacting theory? Ultimately cross sections and decay widths; first, the time-ordered two-point function $\langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle$, the interacting version of the Feynman propagator ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]). The fields in it are now known in terms of free fields ([[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-1|Theorem §C6a.4.1]], 4); the state is not. The free vacuum $|0\rangle$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]] is not the ground state of $\hat H$. This section obtains the true vacuum $|\Omega\rangle$ from $|0\rangle$ by evolving with the full Hamiltonian for a long time in a slightly imaginary direction, writes that evolution with the operators $U(t, t')$ of [[§C6a.4 The Time-Evolution Operator Between Two Times|§C6a.4]], and assembles the result into the master formula (PS (4.31)): the interacting correlator as a ratio of free-vacuum expectation values of time-ordered free fields. The unknown overlaps and phases of the vacuum cancel in the ratio. Turning the formula into rules is the work of Lecture 14 ([[§C6a.6 Normal Ordering and Contractions|§C6a.6]]–[[§C6a.12 The iε Limit and Vacuum Bubbles|§C6a.12]]).
 
-*Conventions* ([[Larsen PHY 513]]): as in [[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]]; $\hat\phi_H(x)$ is the Heisenberg field of the interacting theory (the slides write $\phi(x)$ without a label: "No 'I' on $\phi$"); $T$ without braces is a large time, $T\{\cdots\}$ time ordering ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^cau-c6a-4-2|Caution: Two T's]]); $\lim_{T\to\infty(1 - i\varepsilon)}$ means: replace $T$ by $T(1 - i\varepsilon)$ with $\varepsilon > 0$ fixed, then let $T \to +\infty$.
+*Conventions* ([[Larsen PHY 513]]): as in [[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]]; $\hat\phi_H(x)$ is the Heisenberg field of the interacting theory (the slides write $\phi(x)$ without a label: "No 'I' on $\phi$"); $T$ without braces is a large time, $T\{\cdots\}$ time ordering ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^cau-c6a-5-2|Caution: Two T's]]); $\lim_{T\to\infty(1 - i\varepsilon)}$ means: replace $T$ by $T(1 - i\varepsilon)$ with $\varepsilon > 0$ fixed, then let $T \to +\infty$.
 
 ## The target
 
-> [!definition] Definition §C6a.4.1: The Interacting Vacuum
+> [!definition] Definition §C6a.5.1: The Interacting Vacuum
 > The **interacting vacuum** $|\Omega\rangle$ is the normalized ground state of the full Hamiltonian $\hat H = \hat H_0 + \hat H_{\text{int}}$ ([[§C6a.1 From Free to Interacting Fields#^def-c6a-1-1|Def. §C6a.1.1]]), defined up to a phase, and its energy is
 >
 > $$
@@ -30,48 +30,48 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > *Source: PHY 513 Lecture 13, slide 17 ("$|\Omega\rangle$ = true ground state = correct ground state wave function of anharmonic oscillators. All $\vec p$ are coupled") · the user's PHY 513 notes, Ch. 13 §13.4 · PS §4.2, p. 82 (after eq. (4.10)) and p. 86 ("$E_0 \equiv \langle\Omega|H|\Omega\rangle$. (The zero of energy will be defined by $H_0|0\rangle = 0$.)")*
 
-^def-c6a-4-1
+^def-c6a-5-1
 
 > [!caution] Caution: Two E₀'s
 > $E_0$ here is the ground-state energy of the interacting theory, as on slides 18–21 and in PS §4.2. The same symbol names the zero-point energy of the free field in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]] (unnamed in the lectures). They are different numbers: the zero-point energy was removed by normal ordering, which is what makes $\hat H_0|0\rangle = 0$ ([[§C6a.1 From Free to Interacting Fields#^def-c6a-1-1|Def. §C6a.1.1]]), and the $E_0$ of this section is the shift of the ground-state energy caused by the interaction, measured from that zero. In this chapter $E_0$ always means the interacting one.
 >
 > *Source: PHY 513 Lecture 13, slides 18–21 · PS §4.2, p. 86 · [[Larsen PHY 513]]*
 
-^cau-c6a-4-1
+^cau-c6a-5-1
 
-> [!definition] Definition §C6a.4.2: Time-Ordered Two-Point Function of the Interacting Theory
+> [!definition] Definition §C6a.5.2: Time-Ordered Two-Point Function of the Interacting Theory
 > The **time-ordered two-point correlation function** (two-point Green's function) of $\phi^4$ theory is
 >
 > $$
 > \langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle ,
 > $$
 >
-> with $T\{\cdots\}$ of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-1|Def. §C2b.7.1]] and $\hat\phi_H$ the Heisenberg field of the interacting theory ([[§C6a.2 The Interaction Picture#^thm-c6a-2-4|Theorem §C6a.2.4]]). At $\lambda = 0$ it is the Feynman propagator $D_F(x - y)$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-1|Example §C6a.4.1]]). Like $D_F$ it is a distribution in $x$ and $y$, to be smeared with test functions ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]] for the free case).
+> with $T\{\cdots\}$ of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-1|Def. §C2b.7.1]] and $\hat\phi_H$ the Heisenberg field of the interacting theory ([[§C6a.2 The Interaction Picture#^thm-c6a-2-4|Theorem §C6a.2.4]]). At $\lambda = 0$ it is the Feynman propagator $D_F(x - y)$ ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^ex-c6a-5-1|Example §C6a.5.1]]). Like $D_F$ it is a distribution in $x$ and $y$, to be smeared with test functions ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]] for the free case).
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* Heisenberg fields of the full $\hat H$ in the interacting vacuum $|\Omega\rangle$; exact; not an observable ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^rem-c6b-1-2|§C6b.1, Remark: The fundamental observable?]]).
 >
 > *Source: PHY 513 Lecture 13, slide 17 ("Important variable in interacting theory: time-ordered two-point correlation function. No 'I' on $\phi$: the $\phi$ is in Heisenberg picture") · the user's PHY 513 notes, Ch. 13 §13.4 (paragraph "What to compute") · PS §4.2, eqs. (4.10)–(4.11)*
 
-^def-c6a-4-2
+^def-c6a-5-2
 
 > [!remark] Remark: Why correlation functions
-> They are not themselves observables, but they turn out to be very close to observables. The amplitude interpretation is PS's: the correlation function is the amplitude for a particle or excitation to propagate from $y$ to $x$. How to get from correlation functions to cross sections and decay widths is Lectures 15–16 ([[· C6b The S-Matrix and Observables|C6b]], [[· C6c Feynman Rules for Amplitudes|C6c]]; PS §4.5–§4.6). Once the two-point function is understood, the $n$-point functions follow by the same steps ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]).
+> They are not themselves observables, but they turn out to be very close to observables. The amplitude interpretation is PS's: the correlation function is the amplitude for a particle or excitation to propagate from $y$ to $x$. How to get from correlation functions to cross sections and decay widths is Lectures 15–16 ([[· C6b The S-Matrix and Observables|C6b]], [[· C6c Feynman Rules for Amplitudes|C6c]]; PS §4.5–§4.6). Once the two-point function is understood, the $n$-point functions follow by the same steps ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-7|Theorem §C6a.5.7]]).
 >
 > *Source: PHY 513 Lecture 13, transcript (Part C) · the user's PHY 513 notes, Ch. 13 §13.4 · PS §4.2, pp. 82–83*
 
-^rem-c6a-4-1
+^rem-c6a-5-1
 
 > [!remark] Remark: Two complications
 > There are two complications. The fields in the correlator should be the true fields; [[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]] wrote them in terms of the free ones. The vacuum should be the true vacuum. The free vacuum $|0\rangle$ is the ground state of a collection of harmonic oscillators, annihilated by every $\hat a_{\mathbf p}$; the interaction couples all the oscillators ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-3|Theorem §C6a.1.3]]), and $\hat H|0\rangle \ne E|0\rangle$ ([[§C6a.1 From Free to Interacting Fields#^der-c6a-1-7|Derivation §C6a.1.7]], ⚑). The lecture's analogy: perturb a harmonic oscillator by an anharmonic term. The ground state was a Gaussian. It is now roughly Gaussian, but not exactly, and how far it is from a Gaussian depends on how far the potential is from a parabola. In field theory, in addition, all the momentum modes are coupled. The hope of perturbation theory is that $|\Omega\rangle$ is not far from $|0\rangle$ when $\lambda$ is small.
 >
 > *Source: PHY 513 Lecture 13, slides 17–18, and transcript · the user's PHY 513 notes, Ch. 13 §13.4 (paragraph "The second complication: the vacuum")*
 
-^rem-c6a-4-2
+^rem-c6a-5-2
 
 ## The interacting vacuum from the free one
 
-> [!theorem] Theorem §C6a.4.1: Projection onto the Ground State
-> Assume that $\hat H$ has the ground state $|\Omega\rangle$ of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]], separated by a gap $\Delta > 0$ from the rest of the spectrum ($\hat H \ge E_0 + \Delta$ on the states orthogonal to $|\Omega\rangle$), and that $\langle\Omega|0\rangle \ne 0$. Then for every fixed $\varepsilon > 0$, with $T_\varepsilon = T(1 - i\varepsilon)$,
+> [!theorem] Theorem §C6a.5.1: Projection onto the Ground State
+> Assume that $\hat H$ has the ground state $|\Omega\rangle$ of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^def-c6a-5-1|Def. §C6a.5.1]], separated by a gap $\Delta > 0$ from the rest of the spectrum ($\hat H \ge E_0 + \Delta$ on the states orthogonal to $|\Omega\rangle$), and that $\langle\Omega|0\rangle \ne 0$. Then for every fixed $\varepsilon > 0$, with $T_\varepsilon = T(1 - i\varepsilon)$,
 >
 > $$
 > \lim_{T\to\infty}e^{iE_0T_\varepsilon}\,e^{-i\hat HT_\varepsilon}|0\rangle = |\Omega\rangle\langle\Omega|0\rangle \qquad\text{(in norm)};
@@ -83,7 +83,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > *Source: PHY 513 Lecture 13, slide 18 ("Realize intuition that $|0\rangle \to |\Omega\rangle$ after long time relaxation"; "Exact ground state dominates after long time $T \to \infty(1 - i\epsilon)$") · the user's PHY 513 notes, Ch. 13 §13.4 (Derivation "$|\Omega\rangle$ from $|0\rangle$", part "Relaxation") · PS §4.2, p. 86*
 
-^thm-c6a-4-1
+^thm-c6a-5-1
 
 > [!derivation]- Derivation
 > On the regularized theory ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|§C6a.1, ★ Remark: In what sense φ̂⁴(x) is defined]]) $\hat H$ is a Hermitian matrix with an orthonormal eigenbasis $|n\rangle$, $\hat H|n\rangle = E_n|n\rangle$, $n = 0$ being $|\Omega\rangle$ ([[§24 Spectral Theorem#^ladr-7-31|LADR 7.31]]); with a continuous spectrum the sums below become integrals over the spectral measure and the same bound holds.
@@ -126,16 +126,16 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > for every fixed $\varepsilon > 0$. (With a continuous spectrum: each term tends to zero and is dominated by $|\langle n|0\rangle|^2$, so dominated convergence, [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], 1, gives the limit even without a gap, provided the ground state is an isolated eigenvalue with no spectral weight at $E_0$ besides $|\Omega\rangle$.)
 >
-> ⚑ By-product: the assumption $\langle\Omega|0\rangle \ne 0$ is essential; PS: "if this were not the case, $H_I$ would in no sense be a small perturbation." It is the precise form of the hope of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^rem-c6a-4-2|Remark: Two complications]]. (★ In infinite volume both $E_0$ and $-\log|\langle\Omega|0\rangle|$ grow in proportion to the volume, so the overlap tends to zero; the formulas of this section are used in a finite volume, and the master formula is built so that both factors cancel, [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]].)
+> ⚑ By-product: the assumption $\langle\Omega|0\rangle \ne 0$ is essential; PS: "if this were not the case, $H_I$ would in no sense be a small perturbation." It is the precise form of the hope of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^rem-c6a-5-2|Remark: Two complications]]. (★ In infinite volume both $E_0$ and $-\log|\langle\Omega|0\rangle|$ grow in proportion to the volume, so the overlap tends to zero; the formulas of this section are used in a finite volume, and the master formula is built so that both factors cancel, [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]].)
 >
-> ⚑ By-product: the iε is a choice of direction in the complex $T$ plane, the analogue of the $i\varepsilon$ that selects the Feynman contour → [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^rem-c6a-4-4|Remark: Perturbation theory and the next lectures (preview)]].
+> ⚑ By-product: the iε is a choice of direction in the complex $T$ plane, the analogue of the $i\varepsilon$ that selects the Feynman contour → [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^rem-c6a-5-4|Remark: Perturbation theory and the next lectures (preview)]].
 >
 > **What the derivation shows.**
 > - The ground state wins because it is damped least. The tilt plays the role of friction.
-> - The limit is taken at fixed $\varepsilon$; the final formula does not depend on $\varepsilon$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-2|Example §C6a.4.2]]).
-> - Numerically (one anharmonic oscillator, [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-2|Example §C6a.4.2]]): the normalized $e^{-i\hat HT_\varepsilon}|0\rangle$ at $T = 40$ has overlap $1$ with $|\Omega\rangle$ to seven digits for $\varepsilon = 0.1$, and stays at $|\langle\Omega|0\rangle| = 0.99972$ for $\varepsilon = 0$.
+> - The limit is taken at fixed $\varepsilon$; the final formula does not depend on $\varepsilon$ ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^ex-c6a-5-2|Example §C6a.5.2]]).
+> - Numerically (one anharmonic oscillator, [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^ex-c6a-5-2|Example §C6a.5.2]]): the normalized $e^{-i\hat HT_\varepsilon}|0\rangle$ at $T = 40$ has overlap $1$ with $|\Omega\rangle$ to seven digits for $\varepsilon = 0.1$, and stays at $|\langle\Omega|0\rangle| = 0.99972$ for $\varepsilon = 0$.
 
-^der-c6a-4-1
+^der-c6a-5-1
 
 *Uses:* [[§24 Spectral Theorem#^ladr-7-31|LADR 7.31]], [[§48 The Completeness Relation#^cor-48-4|556 Cor. §48.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
 
@@ -144,25 +144,25 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > *Source: PHY 513 Lecture 13, transcript (slide 18) · the user's PHY 513 notes, Ch. 13 §13.4 (Caution "Two $T$'s")*
 
-^cau-c6a-4-2
+^cau-c6a-5-2
 
-> [!theorem] Theorem §C6a.4.2: The Interacting Vacuum Evolved from the Far Past
-> Under the assumptions of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]],
+> [!theorem] Theorem §C6a.5.2: The Interacting Vacuum Evolved from the Far Past
+> Under the assumptions of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]],
 >
 > $$
 > |\Omega\rangle = \lim_{T\to\infty(1 - i\varepsilon)}\frac{e^{-i\hat HT}|0\rangle}{e^{-iE_0T}\langle\Omega|0\rangle} = \lim_{T\to\infty(1 - i\varepsilon)}\frac{U(0, -T)\,|0\rangle}{e^{-iE_0T}\langle\Omega|0\rangle} ,
 > $$
 >
-> with $U(0, -T) = e^{-i\hat HT}e^{i\hat H_0T}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]] at $t = 0$, $t' = -T$): the free vacuum, evolved with the interactions from the far past to the reference time.
+> with $U(0, -T) = e^{-i\hat HT}e^{i\hat H_0T}$ ([[§C6a.4 The Time-Evolution Operator Between Two Times#^def-c6a-4-1|Def. §C6a.4.1]] at $t = 0$, $t' = -T$): the free vacuum, evolved with the interactions from the far past to the reference time.
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]: exact, given the gap and $\langle\Omega|0\rangle \ne 0$.
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]]: exact, given the gap and $\langle\Omega|0\rangle \ne 0$.
 >
 > *Source: PHY 513 Lecture 13, slide 19 ("Interacting Vacuum from Time Evolution") · the user's PHY 513 notes, Ch. 13 §13.4, eq. (Omegaket) · PS §4.2, eqs. (4.27)–(4.28)*
 
-^thm-c6a-4-2
+^thm-c6a-5-2
 
 > [!derivation]- Derivation
-> **Step 1** (solve for $|\Omega\rangle$). Divide [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]] by the number $\langle\Omega|0\rangle \ne 0$ and write $e^{iE_0T_\varepsilon} = 1/e^{-iE_0T_\varepsilon}$:
+> **Step 1** (solve for $|\Omega\rangle$). Divide [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]] by the number $\langle\Omega|0\rangle \ne 0$ and write $e^{iE_0T_\varepsilon} = 1/e^{-iE_0T_\varepsilon}$:
 >
 > $$
 > \frac{e^{iE_0T_\varepsilon}e^{-i\hat HT_\varepsilon}|0\rangle}{\langle\Omega|0\rangle} = \frac{e^{-i\hat HT_\varepsilon}|0\rangle}{e^{-iE_0T_\varepsilon}\langle\Omega|0\rangle} \;\xrightarrow{\;T\to\infty\;}\; |\Omega\rangle ,
@@ -176,7 +176,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > e^{i\hat H_0T_\varepsilon}|0\rangle = \sum_{k=0}^\infty\frac{(iT_\varepsilon)^k}{k!}\hat H_0^k|0\rangle = |0\rangle + 0 + 0 + \cdots = |0\rangle \quad\Longrightarrow\quad e^{-i\hat HT}|0\rangle = e^{-i\hat HT}e^{i\hat H_0T}|0\rangle .
 > $$
 >
-> **Step 3** (recognize $U$). [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]] at $t = 0$, $t' = -T$ (slide 19):
+> **Step 3** (recognize $U$). [[§C6a.4 The Time-Evolution Operator Between Two Times#^def-c6a-4-1|Def. §C6a.4.1]] at $t = 0$, $t' = -T$ (slide 19):
 >
 > $$
 > U(0, -T) = e^{i\hat H_0\cdot0}\,e^{-i\hat H(0 - (-T))}\,e^{-i\hat H_0(-T)} = e^{-i\hat HT}e^{i\hat H_0T} \quad\Longrightarrow\quad e^{-i\hat HT}|0\rangle = U(0, -T)|0\rangle ,
@@ -184,18 +184,18 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > the second form.
 >
-> ⚑ By-product: for complex $T_\varepsilon$ the factor $e^{i\hat H_0T_\varepsilon} = e^{i\hat H_0T}e^{\varepsilon\hat H_0T}$ is unbounded (it grows on states of high free energy); $U(0, -T_\varepsilon)$ is meaningful only on $|0\rangle$, where Step 2 makes it equal to the bounded $e^{-i\hat HT_\varepsilon}$. (In a numerical check one must apply it to $|0\rangle$ analytically, not as a matrix: [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-2|Example §C6a.4.2]].)
+> ⚑ By-product: for complex $T_\varepsilon$ the factor $e^{i\hat H_0T_\varepsilon} = e^{i\hat H_0T}e^{\varepsilon\hat H_0T}$ is unbounded (it grows on states of high free energy); $U(0, -T_\varepsilon)$ is meaningful only on $|0\rangle$, where Step 2 makes it equal to the bounded $e^{-i\hat HT_\varepsilon}$. (In a numerical check one must apply it to $|0\rangle$ analytically, not as a matrix: [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^ex-c6a-5-2|Example §C6a.5.2]].)
 >
 > **What the derivation shows.**
 > - Interpretation (slide 19): "exact time evolution takes free vacuum $|0\rangle$ to interacting vacuum $|\Omega\rangle$ after long time ($i\epsilon$ provides 'friction')": start very early with the free vacuum, the best guess, and evolve with the interactions to now.
-> - The prefactors are only carried along: they cancel in the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]).
+> - The prefactors are only carried along: they cancel in the master formula ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]]).
 > - PS keeps a general reference time $t_0$ by shifting $T$ (eq. (4.28)); with $t_0 = 0$ the shift is not needed ([[§C6a.2 The Interaction Picture#^cau-c6a-2-2|§C6a.2, Caution: The reference time]]).
 
-^der-c6a-4-2
+^der-c6a-5-2
 
-*Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]], [[§C6a.1 From Free to Interacting Fields#^def-c6a-1-1|Def. §C6a.1.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]]
+*Uses:* [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.1 From Free to Interacting Fields#^def-c6a-1-1|Def. §C6a.1.1]], [[§C6a.4 The Time-Evolution Operator Between Two Times#^def-c6a-4-1|Def. §C6a.4.1]]
 
-> [!theorem] Theorem §C6a.4.3: The Conjugate Vacuum Evolved into the Far Future
+> [!theorem] Theorem §C6a.5.3: The Conjugate Vacuum Evolved into the Far Future
 > Under the same assumptions,
 >
 > $$
@@ -204,11 +204,11 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > Here $T$ is the duration of a relaxation from $0$ to $+T$.
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]: exact, given the gap and $\langle\Omega|0\rangle \ne 0$.
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]]: exact, given the gap and $\langle\Omega|0\rangle \ne 0$.
 >
 > *Source: PHY 513 Lecture 13, slide 20 ("Conjugate Vacuum"; "Note: $T$ is duration of relaxation (now from 0 to $+T$)") · the user's PHY 513 notes, Ch. 13 §13.4, eq. (Omegabra) · PS §4.2, eq. (4.29)*
 
-^thm-c6a-4-3
+^thm-c6a-5-3
 
 > [!derivation]- Derivation
 > **Step 1** (the bra expanded). Each $\langle n|$ is a left eigenvector, $\langle n|\hat H = (\hat H|n\rangle)^\dagger = E_n\langle n|$ ($\hat H$ Hermitian, $E_n$ real), so with $\langle0| = \sum_n\langle0|n\rangle\langle n|$,
@@ -217,7 +217,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > \langle0|e^{-i\hat HT} = \sum_n\langle0|n\rangle\,e^{-iE_nT}\,\langle n| = e^{-iE_0T}\langle0|\Omega\rangle\langle\Omega| + \sum_{n\ne0}e^{-iE_nT}\langle0|n\rangle\langle n| .
 > $$
 >
-> **Step 2** (tilt and project). With $T \to T_\varepsilon = T(1 - i\varepsilon)$, as in Steps 3–5 of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-1|Derivation §C6a.4.1]],
+> **Step 2** (tilt and project). With $T \to T_\varepsilon = T(1 - i\varepsilon)$, as in Steps 3–5 of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-1|Derivation §C6a.5.1]],
 >
 > $$
 > e^{iE_0T_\varepsilon}\langle0|e^{-i\hat HT_\varepsilon} - \langle0|\Omega\rangle\langle\Omega| = \sum_{n\ne0}e^{-i(E_n - E_0)T}e^{-\varepsilon(E_n - E_0)T}\langle0|n\rangle\langle n|, \qquad \|\cdots\|^2 \le e^{-2\varepsilon\Delta T} \to 0
@@ -225,7 +225,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > (slide 20: "$\langle0|e^{-iHT} = \langle0|\Omega\rangle\langle\Omega|e^{-iHT}$, $\to e^{-iE_0T}$"). Divide by $\langle0|\Omega\rangle = \overline{\langle\Omega|0\rangle} \ne 0$: the first form.
 >
-> **Step 3** (the free evolution, from the left). $\hat H_0$ is Hermitian and $\hat H_0|0\rangle = 0$, so $\langle0|\hat H_0 = (\hat H_0|0\rangle)^\dagger = 0$ and, by the series as in Step 2 of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-2|Derivation §C6a.4.2]], $\langle0|e^{i\hat H_0T_\varepsilon} = \langle0|$. With [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]] at $t = T$, $t' = 0$:
+> **Step 3** (the free evolution, from the left). $\hat H_0$ is Hermitian and $\hat H_0|0\rangle = 0$, so $\langle0|\hat H_0 = (\hat H_0|0\rangle)^\dagger = 0$ and, by the series as in Step 2 of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-2|Derivation §C6a.5.2]], $\langle0|e^{i\hat H_0T_\varepsilon} = \langle0|$. With [[§C6a.4 The Time-Evolution Operator Between Two Times#^def-c6a-4-1|Def. §C6a.4.1]] at $t = T$, $t' = 0$:
 >
 > $$
 > \langle0|e^{-i\hat HT} = \langle0|e^{i\hat H_0T}e^{-i\hat HT}, \qquad U(T, 0) = e^{i\hat H_0T}\,e^{-i\hat H(T - 0)}\,e^{-i\hat H_0\cdot0} = e^{i\hat H_0T}e^{-i\hat HT} ,
@@ -234,34 +234,34 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > the second form.
 >
 > **What the derivation shows.**
-> - The bra is evolved *forward*, from the reference time to the far future, with the same tilt $1 - i\varepsilon$; both relaxations give the ground state → [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^rem-c6a-4-3|Remark: Why the bra is evolved into the future]].
+> - The bra is evolved *forward*, from the reference time to the far future, with the same tilt $1 - i\varepsilon$; both relaxations give the ground state → [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^rem-c6a-5-3|Remark: Why the bra is evolved into the future]].
 
-^der-c6a-4-3
+^der-c6a-5-3
 
-*Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-1|Derivation §C6a.4.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-2|Derivation §C6a.4.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]]
+*Uses:* [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-1|Derivation §C6a.5.1]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-2|Derivation §C6a.5.2]], [[§C6a.4 The Time-Evolution Operator Between Two Times#^def-c6a-4-1|Def. §C6a.4.1]]
 
 > [!remark] Remark: Why the bra is evolved into the future
-> The bra is not taken as the adjoint of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]]. That adjoint would be $\langle0|U(0, -T)^\dagger = \langle0|U(-T, 0)$, an evolution from the reference time back to the far past. It would also project onto $\langle\Omega|$, but the operators in the correlator would then run backwards in time on the left. Relaxing toward the far future instead makes the whole chain run forward: far past $\to$ reference time $\to$ far future. Every operator in the correlator can then be brought under one time ordering ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]).
+> The bra is not taken as the adjoint of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-2|Theorem §C6a.5.2]]. That adjoint would be $\langle0|U(0, -T)^\dagger = \langle0|U(-T, 0)$, an evolution from the reference time back to the far past. It would also project onto $\langle\Omega|$, but the operators in the correlator would then run backwards in time on the left. Relaxing toward the far future instead makes the whole chain run forward: far past $\to$ reference time $\to$ far future. Every operator in the correlator can then be brought under one time ordering ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]]).
 >
 > *Source: PHY 513 Lecture 13, slide 20, and transcript · the user's PHY 513 notes, Ch. 13 §13.4 ("The bra is not obtained as the adjoint of (Omegaket)")*
 
-^rem-c6a-4-3
+^rem-c6a-5-3
 
-> [!theorem] Theorem §C6a.4.4: The Normalization Is the Vacuum-to-Vacuum Amplitude
+> [!theorem] Theorem §C6a.5.4: The Normalization Is the Vacuum-to-Vacuum Amplitude
 > $$
 > \lim_{T\to\infty(1 - i\varepsilon)}\frac{\langle0|\,U(T, -T)\,|0\rangle}{e^{-2iE_0T}\,|\langle0|\Omega\rangle|^2} = \langle\Omega|\Omega\rangle = 1 .
 > $$
 >
 > The unknown factors $e^{-2iE_0T}|\langle0|\Omega\rangle|^2$ are, for large tilted $T$, the amplitude $\langle0|U(T, -T)|0\rangle$ for the free vacuum to evolve from the far past to the far future and still be the free vacuum.
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]: exact; the free-vacuum persistence amplitude of a permanent interaction is not 1, unlike $\langle0|\hat S|0\rangle$ in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]]).
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]]: exact; the free-vacuum persistence amplitude of a permanent interaction is not 1, unlike $\langle0|\hat S|0\rangle$ in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]]).
 >
 > *Source: PHY 513 Lecture 13, slide 20 ("Vacuum is normalized") · the user's PHY 513 notes, Ch. 13 §13.4, eq. (Omeganorm) · PS §4.2, p. 87 ("divide by 1 in the form")*
 
-^thm-c6a-4-4
+^thm-c6a-5-4
 
 > [!derivation]- Derivation
-> **Step 1** (multiply the two limits). The inner product is continuous, so the product of the convergent bra of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-3|Theorem §C6a.4.3]] and the convergent ket of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], taken at the same $T$, converges to $\langle\Omega|\Omega\rangle = 1$:
+> **Step 1** (multiply the two limits). The inner product is continuous, so the product of the convergent bra of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-3|Theorem §C6a.5.3]] and the convergent ket of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-2|Theorem §C6a.5.2]], taken at the same $T$, converges to $\langle\Omega|\Omega\rangle = 1$:
 >
 > $$
 > 1 = \lim\frac{\langle0|U(T, 0)}{e^{-iE_0T}\langle0|\Omega\rangle}\cdot\frac{U(0, -T)|0\rangle}{e^{-iE_0T}\langle\Omega|0\rangle} .
@@ -269,20 +269,20 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > **Step 2** (the denominators). $e^{-iE_0T}e^{-iE_0T} = e^{-2iE_0T}$ and $\langle0|\Omega\rangle\langle\Omega|0\rangle = \langle0|\Omega\rangle\overline{\langle0|\Omega\rangle} = |\langle0|\Omega\rangle|^2$.
 >
-> **Step 3** (the numerators compose). $U(T, 0)U(0, -T) = e^{i\hat H_0T}e^{-i\hat HT}\,e^{-i\hat HT}e^{i\hat H_0T} = e^{i\hat H_0T}e^{-2i\hat HT}e^{i\hat H_0T} = U(T, -T)$, by [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]] at $t = T$, $t' = -T$ (the composition law of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 2, written out; it holds for complex $T$ as the same algebra, the outer factors acting on $|0\rangle$ and $\langle0|$ as the identity).
+> **Step 3** (the numerators compose). $U(T, 0)U(0, -T) = e^{i\hat H_0T}e^{-i\hat HT}\,e^{-i\hat HT}e^{i\hat H_0T} = e^{i\hat H_0T}e^{-2i\hat HT}e^{i\hat H_0T} = U(T, -T)$, by [[§C6a.4 The Time-Evolution Operator Between Two Times#^def-c6a-4-1|Def. §C6a.4.1]] at $t = T$, $t' = -T$ (the composition law of [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-1|Theorem §C6a.4.1]], 2, written out; it holds for complex $T$ as the same algebra, the outer factors acting on $|0\rangle$ and $\langle0|$ as the identity).
 >
-> ⚑ By-product: by [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]], $U(T, -T) = T\{\exp[-i\int_{-T}^Tdt\,\hat H_I(t)]\}$, computable from free fields; whatever its value, it cancels out → the denominator of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]].
+> ⚑ By-product: by [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-2|Theorem §C6a.4.2]], $U(T, -T) = T\{\exp[-i\int_{-T}^Tdt\,\hat H_I(t)]\}$, computable from free fields; whatever its value, it cancels out → the denominator of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]].
 >
 > **What the derivation shows.**
 > - Two unknowns, $E_0$ and $\langle0|\Omega\rangle$, are traded for one computable amplitude.
 
-^der-c6a-4-4
+^der-c6a-5-4
 
-*Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-3|Theorem §C6a.4.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]]
+*Uses:* [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-2|Theorem §C6a.5.2]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-3|Theorem §C6a.5.3]], [[§C6a.4 The Time-Evolution Operator Between Two Times#^def-c6a-4-1|Def. §C6a.4.1]], [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-1|Theorem §C6a.4.1]]
 
 ## The master formula
 
-> [!theorem] Theorem §C6a.4.5: The Two-Point Function as a Chain of Free Evolutions
+> [!theorem] Theorem §C6a.5.5: The Two-Point Function as a Chain of Free Evolutions
 > For $x^0 > y^0$,
 >
 > $$
@@ -291,47 +291,47 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > Read from right to left: evolve with the interactions from the far past to $y^0$, insert the free field at $y$, evolve to $x^0$, insert the free field at $x$, evolve to the far future.
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]: exact, $x^0 > y^0$.
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]]: exact, $x^0 > y^0$.
 >
 > *Source: PHY 513 Lecture 13, slide 21, and transcript · the user's PHY 513 notes, Ch. 13 §13.5 (Derivation "$\langle\Omega|T\{\phi(x)\phi(y)\}|\Omega\rangle$ in terms of free fields") · PS §4.2, eq. (4.30)*
 
-^thm-c6a-4-5
+^thm-c6a-5-5
 
 > [!derivation]- Derivation
-> **Step 1** (the Heisenberg fields). By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 4, $\hat\phi_H(x) = U(0, x^0)\,\hat\phi_I(x)\,U(x^0, 0)$ and $\hat\phi_H(y) = U(0, y^0)\,\hat\phi_I(y)\,U(y^0, 0)$.
+> **Step 1** (the Heisenberg fields). By [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-1|Theorem §C6a.4.1]], 4, $\hat\phi_H(x) = U(0, x^0)\,\hat\phi_I(x)\,U(x^0, 0)$ and $\hat\phi_H(y) = U(0, y^0)\,\hat\phi_I(y)\,U(y^0, 0)$.
 >
-> **Step 2** (insert the vacua). Sandwich $\hat\phi_H(x)\hat\phi_H(y)$ between the bra of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-3|Theorem §C6a.4.3]] and the ket of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], at the same $T$ (the middle operator is fixed, so the limits pass through it by continuity of the inner product):
+> **Step 2** (insert the vacua). Sandwich $\hat\phi_H(x)\hat\phi_H(y)$ between the bra of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-3|Theorem §C6a.5.3]] and the ket of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-2|Theorem §C6a.5.2]], at the same $T$ (the middle operator is fixed, so the limits pass through it by continuity of the inner product):
 >
 > $$
 > \langle\Omega|\hat\phi_H(x)\hat\phi_H(y)|\Omega\rangle = \lim\frac{\langle0|\,U(T, 0)\,U(0, x^0)\,\hat\phi_I(x)\,U(x^0, 0)\,U(0, y^0)\,\hat\phi_I(y)\,U(y^0, 0)\,U(0, -T)\,|0\rangle}{e^{-iE_0T}\langle0|\Omega\rangle\cdot e^{-iE_0T}\langle\Omega|0\rangle} .
 > $$
 >
-> **Step 3** (adjacent $U$'s compose). By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 2, three times: $U(T, 0)U(0, x^0) = U(T, x^0)$, $U(x^0, 0)U(0, y^0) = U(x^0, y^0)$, $U(y^0, 0)U(0, -T) = U(y^0, -T)$. The denominator is $e^{-2iE_0T}|\langle0|\Omega\rangle|^2$ (Step 2 of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-4|Derivation §C6a.4.4]]). This is the statement.
+> **Step 3** (adjacent $U$'s compose). By [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-1|Theorem §C6a.4.1]], 2, three times: $U(T, 0)U(0, x^0) = U(T, x^0)$, $U(x^0, 0)U(0, y^0) = U(x^0, y^0)$, $U(y^0, 0)U(0, -T) = U(y^0, -T)$. The denominator is $e^{-2iE_0T}|\langle0|\Omega\rangle|^2$ (Step 2 of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-4|Derivation §C6a.5.4]]). This is the statement.
 >
-> ⚑ By-product: Steps 1–3 did not use $x^0 > y^0$; the formula holds for any $x^0$, $y^0$. The ordering matters only for the next step: when $T > x^0 > y^0 > -T$, every $U$ in the numerator evolves *forward* over its own interval, the intervals following each other from right to left → [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]].
+> ⚑ By-product: Steps 1–3 did not use $x^0 > y^0$; the formula holds for any $x^0$, $y^0$. The ordering matters only for the next step: when $T > x^0 > y^0 > -T$, every $U$ in the numerator evolves *forward* over its own interval, the intervals following each other from right to left → [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]].
 >
 > **What the derivation shows.**
 > - The $U$'s that dress the Heisenberg fields and the $U$'s that make the vacua merge into one chain; the reference time $0$ has disappeared.
 
-^der-c6a-4-5
+^der-c6a-5-5
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-3|Theorem §C6a.4.3]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-4|Derivation §C6a.4.4]]
+*Uses:* [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-1|Theorem §C6a.4.1]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-2|Theorem §C6a.5.2]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-3|Theorem §C6a.5.3]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-4|Derivation §C6a.5.4]]
 
-> [!theorem] Theorem §C6a.4.6: The Master Formula
+> [!theorem] Theorem §C6a.5.6: The Master Formula
 > $$
 > \langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle = \lim_{T\to\infty(1 - i\varepsilon)}\frac{\langle0|\,T\Bigl\{\hat\phi_I(x)\,\hat\phi_I(y)\,\exp\Bigl[-i\int_{-T}^Tdt\,\hat H_I(t)\Bigr]\Bigr\}\,|0\rangle}{\langle0|\,T\Bigl\{\exp\Bigl[-i\int_{-T}^Tdt\,\hat H_I(t)\Bigr]\Bigr\}\,|0\rangle} ,
 > $$
 >
 > where $T\{\hat\phi_I(x)\hat\phi_I(y)\exp[\cdots]\}$ means the exponential series with every term $\hat\phi_I(x)\hat\phi_I(y)\hat H_I(t_1)\cdots\hat H_I(t_n)$ time ordered ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]). The interacting correlator in the interacting vacuum is expressed entirely through free fields $\hat\phi_I$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-1|Theorem §C6a.2.1]]), the free vacuum $|0\rangle$ and the interaction $\hat H_I$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]). No approximation has been made.
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (stated for [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]); *applies:* exact, all orders, for the correlators of a permanent interaction, given the gap and $\langle\Omega|0\rangle \ne 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]); $|\Omega\rangle$ and Heisenberg fields on the left, $|0\rangle$ and free fields on the right ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]); $T \to \infty(1 - i\varepsilon)$ is the projection device of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]; expanded in $\lambda$ from [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]] on.
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (stated for [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]); *applies:* exact, all orders, for the correlators of a permanent interaction, given the gap and $\langle\Omega|0\rangle \ne 0$ ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]]); $|\Omega\rangle$ and Heisenberg fields on the left, $|0\rangle$ and free fields on the right ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]); $T \to \infty(1 - i\varepsilon)$ is the projection device of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]]; expanded in $\lambda$ from [[§C6a.8 Feynman Diagrams for Correlation Functions|§C6a.8]] on.
 >
 > *Source: PHY 513 Lecture 13, slide 21 ("Master formula") · the user's PHY 513 notes, Ch. 13 §13.5, eq. (master) · PS §4.2, eq. (4.31)*
 
-^thm-c6a-4-6
+^thm-c6a-5-6
 
 > [!derivation]- Derivation
-> **Step 1** (the case $x^0 > y^0$; each $U$ ordered on its interval). Take $T > |x^0|, |y^0|$ and write $\hat H_k \equiv \hat H_I(t_k)$, $\hat\phi_x \equiv \hat\phi_I(x)$, $\hat\phi_y \equiv \hat\phi_I(y)$. By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]] each factor of the numerator of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-5|Theorem §C6a.4.5]] is a time-ordered exponential over its own interval,
+> **Step 1** (the case $x^0 > y^0$; each $U$ ordered on its interval). Take $T > |x^0|, |y^0|$ and write $\hat H_k \equiv \hat H_I(t_k)$, $\hat\phi_x \equiv \hat\phi_I(x)$, $\hat\phi_y \equiv \hat\phi_I(y)$. By [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-2|Theorem §C6a.4.2]] each factor of the numerator of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-5|Theorem §C6a.5.5]] is a time-ordered exponential over its own interval,
 >
 > $$
 > U(T, x^0) = U(I_1),\ I_1 = [x^0, T]; \qquad U(x^0, y^0) = U(I_2),\ I_2 = [y^0, x^0]; \qquad U(y^0, -T) = U(I_3),\ I_3 = [-T, y^0] ;
@@ -395,24 +395,24 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > the last step because $T$ ignores the written order. So the right side is the same expression in both cases, and the left side must be time ordered too: "that's why the left-hand side must be time ordered" (the user's notes). At $x^0 = y^0$ the two fields commute ([[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], 1, and its Heisenberg counterpart [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], which holds for any Hamiltonian), and both orders agree.
 >
-> **Step 6** (replace the denominator). Write the right side of Step 5 as $N(T)/D(T)$ with $D(T) = e^{-2iE_0T}|\langle0|\Omega\rangle|^2$; then $N/D \to \langle\Omega|T\{\cdots\}|\Omega\rangle$. By [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], $\langle0|U(T, -T)|0\rangle/D \to 1$, and $U(T, -T) = T\{e^{-i\int_{-T}^T\hat H_I}\}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]]). The quotient of the two convergent ratios converges to the quotient of the limits:
+> **Step 6** (replace the denominator). Write the right side of Step 5 as $N(T)/D(T)$ with $D(T) = e^{-2iE_0T}|\langle0|\Omega\rangle|^2$; then $N/D \to \langle\Omega|T\{\cdots\}|\Omega\rangle$. By [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-4|Theorem §C6a.5.4]], $\langle0|U(T, -T)|0\rangle/D \to 1$, and $U(T, -T) = T\{e^{-i\int_{-T}^T\hat H_I}\}$ ([[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-2|Theorem §C6a.4.2]]). The quotient of the two convergent ratios converges to the quotient of the limits:
 >
 > $$
 > \frac{N(T)}{\langle0|U(T, -T)|0\rangle} = \frac{N(T)/D(T)}{\langle0|U(T, -T)|0\rangle/D(T)} \to \frac{\langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle}{1} .
 > $$
 >
-> ⚑ By-product: the unknown $E_0$ and $\langle0|\Omega\rangle$ have disappeared; the denominator divides out what would have happened anyway, the evolution of the vacuum without the fields. In perturbation theory it removes the vacuum bubbles (PS §4.4; [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]) → [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^rem-c6a-4-4|Remark: Perturbation theory and the next lectures (preview)]].
+> ⚑ By-product: the unknown $E_0$ and $\langle0|\Omega\rangle$ have disappeared; the denominator divides out what would have happened anyway, the evolution of the vacuum without the fields. In perturbation theory it removes the vacuum bubbles (PS §4.4; [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|Theorem §C6a.12.5]]) → [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^rem-c6a-5-4|Remark: Perturbation theory and the next lectures (preview)]].
 >
 > **What the derivation shows.**
 > - "The virtue of considering the time-ordered product is clear: it allows us to put everything inside one large $T$-operator" (PS).
-> - Only $\hat H = \hat H_0 + \hat H_{\text{int}}$ with $\hat H_0|0\rangle = 0$ and the vacuum assumptions of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]] were used, never that $\hat\phi$ is a field: the formula can be tested on one oscillator ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-2|Example §C6a.4.2]]).
-> - Used next: the $n$-point functions ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) and perturbation theory: Wick's theorem ([[§C6a.6 Wick's Theorem|§C6a.6]]) and Feynman diagrams ([[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]]–[[§C6a.11 The iε Limit and Vacuum Bubbles|§C6a.11]]).
+> - Only $\hat H = \hat H_0 + \hat H_{\text{int}}$ with $\hat H_0|0\rangle = 0$ and the vacuum assumptions of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]] were used, never that $\hat\phi$ is a field: the formula can be tested on one oscillator ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^ex-c6a-5-2|Example §C6a.5.2]]).
+> - Used next: the $n$-point functions ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-7|Theorem §C6a.5.7]]) and perturbation theory: Wick's theorem ([[§C6a.7 Wick's Theorem|§C6a.7]]) and Feynman diagrams ([[§C6a.8 Feynman Diagrams for Correlation Functions|§C6a.8]]–[[§C6a.12 The iε Limit and Vacuum Bubbles|§C6a.12]]).
 
-^der-c6a-4-6
+^der-c6a-5-6
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-5|Theorem §C6a.4.5]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]]
+*Uses:* [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-5|Theorem §C6a.5.5]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-4|Theorem §C6a.5.4]]
 
-> [!theorem] Theorem §C6a.4.7: The n-Point Functions
+> [!theorem] Theorem §C6a.5.7: The n-Point Functions
 > For any points $x_1, \dots, x_n$,
 >
 > $$
@@ -421,28 +421,28 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > for each extra field on the left, an extra free field on the right.
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]: exact, all orders, given the gap and $\langle\Omega|0\rangle \ne 0$; $n$ Heisenberg fields in $|\Omega\rangle$.
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]]: exact, all orders, given the gap and $\langle\Omega|0\rangle \ne 0$; $n$ Heisenberg fields in $|\Omega\rangle$.
 >
 > *Source: PS §4.2, p. 87 ("A similar formula holds for higher correlation functions of arbitrarily many fields; for each extra factor of $\phi$ on the left, put an extra factor of $\phi_I$ on the right") · the user's PHY 513 notes, Ch. 13 §13.5 ("The same derivation gives the $n$-point function")*
 
-^thm-c6a-4-7
+^thm-c6a-5-7
 
 > [!derivation]- Derivation
-> **Step 1** (order the points). Both sides are symmetric under permutations of the $x_k$ (time ordering ignores the written order), so assume $x_1^0 \ge x_2^0 \ge \cdots \ge x_n^0$; then $T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\} = \hat\phi_H(x_1)\cdots\hat\phi_H(x_n)$ (equal times: the fields commute, as in Step 5 of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-6|Derivation §C6a.4.6]]).
+> **Step 1** (order the points). Both sides are symmetric under permutations of the $x_k$ (time ordering ignores the written order), so assume $x_1^0 \ge x_2^0 \ge \cdots \ge x_n^0$; then $T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\} = \hat\phi_H(x_1)\cdots\hat\phi_H(x_n)$ (equal times: the fields commute, as in Step 5 of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-6|Derivation §C6a.5.6]]).
 >
-> **Step 2** (the chain). As in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-5|Derivation §C6a.4.5]], write each $\hat\phi_H(x_k) = U(0, x_k^0)\hat\phi_I(x_k)U(x_k^0, 0)$ and insert the vacua of Theorems §C6a.4.2–§C6a.4.3:
+> **Step 2** (the chain). As in [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-5|Derivation §C6a.5.5]], write each $\hat\phi_H(x_k) = U(0, x_k^0)\hat\phi_I(x_k)U(x_k^0, 0)$ and insert the vacua of Theorems §C6a.5.2–§C6a.5.3:
 >
 > $$
 > \langle\Omega|\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)|\Omega\rangle = \lim\frac{\langle0|\,U(T, 0)\,U(0, x_1^0)\,\hat\phi_I(x_1)\,U(x_1^0, 0)\,U(0, x_2^0)\,\hat\phi_I(x_2)\cdots U(0, x_n^0)\,\hat\phi_I(x_n)\,U(x_n^0, 0)\,U(0, -T)\,|0\rangle}{e^{-2iE_0T}|\langle0|\Omega\rangle|^2} .
 > $$
 >
-> Compose the $n + 1$ adjacent pairs ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 2): $U(T, 0)U(0, x_1^0) = U(T, x_1^0)$, $U(x_k^0, 0)U(0, x_{k+1}^0) = U(x_k^0, x_{k+1}^0)$ for $k = 1, \dots, n - 1$, $U(x_n^0, 0)U(0, -T) = U(x_n^0, -T)$:
+> Compose the $n + 1$ adjacent pairs ([[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-1|Theorem §C6a.4.1]], 2): $U(T, 0)U(0, x_1^0) = U(T, x_1^0)$, $U(x_k^0, 0)U(0, x_{k+1}^0) = U(x_k^0, x_{k+1}^0)$ for $k = 1, \dots, n - 1$, $U(x_n^0, 0)U(0, -T) = U(x_n^0, -T)$:
 >
 > $$
 > \text{numerator} = \langle0|\,U(T, x_1^0)\,\hat\phi_I(x_1)\,U(x_1^0, x_2^0)\,\hat\phi_I(x_2)\cdots U(x_{n-1}^0, x_n^0)\,\hat\phi_I(x_n)\,U(x_n^0, -T)\,|0\rangle .
 > $$
 >
-> **Step 3** (one time ordering). The $n + 1$ intervals $I_1 = [x_1^0, T]$, $I_{k+1} = [x_{k+1}^0, x_k^0]$, $I_{n+1} = [-T, x_n^0]$ follow each other from left to right in decreasing time. Steps 2–4 of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-6|Derivation §C6a.4.6]], with the multinomial split into $n + 1$ intervals,
+> **Step 3** (one time ordering). The $n + 1$ intervals $I_1 = [x_1^0, T]$, $I_{k+1} = [x_{k+1}^0, x_k^0]$, $I_{n+1} = [-T, x_n^0]$ follow each other from left to right in decreasing time. Steps 2–4 of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-6|Derivation §C6a.5.6]], with the multinomial split into $n + 1$ intervals,
 >
 > $$
 > \frac{(-i)^m}{m!}\int_{[-T, T]^m}d^mt\;T\{\cdots\} = \sum_{m_1 + \cdots + m_{n+1} = m}\;\prod_{j=1}^{n+1}\frac{(-i)^{m_j}}{m_j!}\int_{I_1^{m_1}}\cdots\int_{I_{n+1}^{m_{n+1}}}T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_n)\,\hat H_I\cdots\hat H_I\} ,
@@ -450,29 +450,29 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > merge the chain into $\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_n)\,e^{-i\int_{-T}^T\hat H_I}\}|0\rangle$.
 >
-> **Step 4** (normalize). Step 6 of Derivation §C6a.4.6 unchanged: divide by $\langle0|U(T, -T)|0\rangle/(e^{-2iE_0T}|\langle0|\Omega\rangle|^2) \to 1$.
+> **Step 4** (normalize). Step 6 of Derivation §C6a.5.6 unchanged: divide by $\langle0|U(T, -T)|0\rangle/(e^{-2iE_0T}|\langle0|\Omega\rangle|^2) \to 1$.
 >
 > **What the derivation shows.**
 > - Nothing in the two-point derivation depended on there being two fields; the formula generates every correlation function of the interacting theory from free correlators.
 
-^der-c6a-4-7
+^der-c6a-5-7
 
-*Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-5|Derivation §C6a.4.5]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-6|Derivation §C6a.4.6]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]]
+*Uses:* [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-5|Derivation §C6a.5.5]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-6|Derivation §C6a.5.6]], [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-1|Theorem §C6a.4.1]]
 
 > [!caution] Caution: What "cancels inside the time ordering" means
-> Slide 21 summarizes the derivation as "$\phi(y) = U^\dagger(t, 0)\phi_I(y)U(t, 0) = \phi_I(y)$ inside time-ordering." That is shorthand. The $U$'s do not disappear; they merge, with those of the vacua, into the single $U(T, -T)$ of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-5|Derivation §C6a.4.5]], Step 3; [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-6|Derivation §C6a.4.6]], Steps 2–4):
+> Slide 21 summarizes the derivation as "$\phi(y) = U^\dagger(t, 0)\phi_I(y)U(t, 0) = \phi_I(y)$ inside time-ordering." That is shorthand. The $U$'s do not disappear; they merge, with those of the vacua, into the single $U(T, -T)$ of the master formula ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-5|Derivation §C6a.5.5]], Step 3; [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-6|Derivation §C6a.5.6]], Steps 2–4):
 >
 > $$
 > \langle0|\,U(T, 0)\,\underbrace{U(0, x^0)\,\hat\phi_I(x)\,U(x^0, 0)}_{\hat\phi_H(x)}\,\underbrace{U(0, y^0)\,\hat\phi_I(y)\,U(y^0, 0)}_{\hat\phi_H(y)}\,U(0, -T)\,|0\rangle = \langle0|\,T\Bigl\{\hat\phi_I(x)\,\hat\phi_I(y)\,e^{-i\int_{-T}^Tdt\,\hat H_I(t)}\Bigr\}\,|0\rangle \qquad (x^0 > y^0) .
 > $$
 >
-> Under one time ordering, $U(0, x^0)$ and $U(x^0, 0) = U(0, x^0)^{-1}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 3) are inverse time-ordered exponentials over the same interval and cancel. What is left is the evolution over the whole interval $[-T, T]$, written once. Read literally, "$\hat\phi_H = \hat\phi_I$" is false: $\hat\phi_H(x) = U(x^0)^\dagger\hat\phi_I(x)U(x^0) \ne \hat\phi_I(x)$ for $\lambda \ne 0$. The one remaining evolution operator runs all the way from minus infinity to plus infinity; all of it can be collected in one place because the product is time ordered afterwards anyway.
+> Under one time ordering, $U(0, x^0)$ and $U(x^0, 0) = U(0, x^0)^{-1}$ ([[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-1|Theorem §C6a.4.1]], 3) are inverse time-ordered exponentials over the same interval and cancel. What is left is the evolution over the whole interval $[-T, T]$, written once. Read literally, "$\hat\phi_H = \hat\phi_I$" is false: $\hat\phi_H(x) = U(x^0)^\dagger\hat\phi_I(x)U(x^0) \ne \hat\phi_I(x)$ for $\lambda \ne 0$. The one remaining evolution operator runs all the way from minus infinity to plus infinity; all of it can be collected in one place because the product is time ordered afterwards anyway.
 >
 > *Source: PHY 513 Lecture 13, slide 21, and transcript · the user's PHY 513 notes, Ch. 13 §13.5 (paragraph "What 'cancels inside the time ordering' means")*
 
-^cau-c6a-4-3
+^cau-c6a-5-3
 
-> [!example] Example §C6a.4.1: The Free Theory as a Check
+> [!example] Example §C6a.5.1: The Free Theory as a Check
 > At $\lambda = 0$ the master formula returns the Feynman propagator.
 >
 > **Step 1** (the right side). $\hat H_I = 0$, so every term of the time-ordered exponential with $n \ge 1$ vanishes ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]):
@@ -495,9 +495,9 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > *Source: PS §4.2, eqs. (4.10)–(4.11) · the user's PHY 513 notes, Ch. 13 §13.4 · written out here*
 
-^ex-c6a-4-1
+^ex-c6a-5-1
 
-> [!example] Example §C6a.4.2: A Check on the Anharmonic Oscillator
+> [!example] Example §C6a.5.2: A Check on the Anharmonic Oscillator
 > The derivation never used that $\hat\phi$ is a field, only $\hat H = \hat H_0 + \hat H_{\text{int}}$ with $\hat H_0|0\rangle = 0$. So it can be tested in quantum mechanics, on the lecture's own analogy: one oscillator, truncated to the lowest 50 states of $\hat H_0$, where every operator is a $50 \times 50$ matrix,
 >
 > $$
@@ -512,62 +512,62 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > \langle\Omega|\hat x_H(t_1)\hat x_H(t_2)|\Omega\rangle = \langle\Omega|e^{i\hat Ht_1}\hat xe^{-i\hat H(t_1 - t_2)}\hat xe^{-i\hat Ht_2}|\Omega\rangle = 0.0860590 - 0.4607391\,i ;
 > $$
 >
-> the right side of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-5|Theorem §C6a.4.5]], normalized as in Theorem §C6a.4.6,
+> the right side of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-5|Theorem §C6a.5.5]], normalized as in Theorem §C6a.5.6,
 >
 > $$
 > \frac{\langle0|\,U(T, t_1)\,\hat x_I(t_1)\,U(t_1, t_2)\,\hat x_I(t_2)\,U(t_2, -T)\,|0\rangle}{\langle0|\,U(T, -T)\,|0\rangle}, \qquad T \to T(1 - i\varepsilon) ,
 > $$
 >
 > at $T = 40$, $\varepsilon = 0.3$ and at $T = 60$, $\varepsilon = 0.5$, agrees to $3 \times 10^{-13}$. The result does not depend on $\varepsilon$.
-> - *Vacuum projection.* The normalized $e^{-i\hat HT(1 - i\varepsilon)}|0\rangle$ at $T = 40$ has overlap $1.0000000$ with $|\Omega\rangle$ for $\varepsilon = 0.1$, and $0.99972 = |\langle\Omega|0\rangle|$ for $\varepsilon = 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]).
+> - *Vacuum projection.* The normalized $e^{-i\hat HT(1 - i\varepsilon)}|0\rangle$ at $T = 40$ has overlap $1.0000000$ with $|\Omega\rangle$ for $\varepsilon = 0.1$, and $0.99972 = |\langle\Omega|0\rangle|$ for $\varepsilon = 0$ ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]]).
 > - *Time evolution.* $i\partial_tU = \hat H_IU$ holds to the accuracy of the finite difference; the time-ordered product $\prod_ke^{-i\hat H_I(t_k)\Delta t}$ over $4000$ steps, latest on the left, reproduces $U(0.7) = e^{i\hat H_0\cdot0.7}e^{-i\hat H\cdot0.7}$ to $3 \times 10^{-7}$, while the naive $e^{-i\int\hat H_I}$ misses it by $0.91$ in the largest matrix element ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-5|Theorem §C6a.3.5]], 3); composition, unitarity and $U(t, t')^\dagger = U(t', t)$ hold to $10^{-14}$.
 >
-> One practical point: with complex $T$, $e^{i\hat H_0T}$ overflows on high states, and it must be applied to $|0\rangle$ and $\langle0|$ as the identity ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-2|Derivation §C6a.4.2]], ⚑).
+> One practical point: with complex $T$, $e^{i\hat H_0T}$ overflows on high states, and it must be applied to $|0\rangle$ and $\langle0|$ as the identity ([[§C6a.5 The Interacting Vacuum and the Two-Point Function#^der-c6a-5-2|Derivation §C6a.5.2]], ⚑).
 >
 > *Source: the user's PHY 513 notes, Ch. 13 §13.5 (Derivation "A check of the master formula (filled in)": same model, agreement "to eight digits"; §13.3–§13.4, numerical remarks) · rerun for this note with exact diagonalization; the numbers above are from the rerun*
 
-^ex-c6a-4-2
+^ex-c6a-5-2
 
 ## Preview
 
 > [!caution] Caution: The limits on slide 22
-> Slide 22 writes the expansion of $U(T, -T)$ with $\int_T^Tdt\,H_I(t)$ in both the first- and second-order terms; the limits are $\int_{-T}^T$, as in the exponent on the same slide. The slide's $n$-th-order numerator also omits the factor $\frac{1}{n!}\bigl(\frac{-i\lambda}{4!}\bigr)^n$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]]); it shows only the structure.
+> Slide 22 writes the expansion of $U(T, -T)$ with $\int_T^Tdt\,H_I(t)$ in both the first- and second-order terms; the limits are $\int_{-T}^T$, as in the exponent on the same slide. The slide's $n$-th-order numerator also omits the factor $\frac{1}{n!}\bigl(\frac{-i\lambda}{4!}\bigr)^n$ ([[§C6a.4 The Time-Evolution Operator Between Two Times#^ex-c6a-4-1|Example §C6a.4.1]]); it shows only the structure.
 >
 > *Source: PHY 513 Lecture 13, slide 22 (page image) · the user's PHY 513 notes, Ch. 13 §13.5 ("The slide writes the first integrals with limits $\int_T^T$; they are $\int_{-T}^T$")*
 
-^cau-c6a-4-4
+^cau-c6a-5-4
 
 > [!remark] Remark: Perturbation theory and the next lectures (preview)
-> Expanding the time-ordered exponential in $\lambda$ (slide 22; [[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]] with $t' = -T$, $t = T$), the numerator of the master formula at order $n$ is
+> Expanding the time-ordered exponential in $\lambda$ (slide 22; [[§C6a.4 The Time-Evolution Operator Between Two Times#^ex-c6a-4-1|Example §C6a.4.1]] with $t' = -T$, $t = T$), the numerator of the master formula at order $n$ is
 >
 > $$
 > \frac{1}{n!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^n\int d^4z_1\cdots d^4z_n\;\langle0|T\bigl\{\hat\phi_I(x)\hat\phi_I(y)\,\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\bigr\}|0\rangle .
 > $$
 >
-> The interacting two-point function is a sum of free correlators with more and more fields, and free correlators follow from the mode expansion ([[§C6a.2 The Interaction Picture#^thm-c6a-2-3|Theorem §C6a.2.3]] for two fields). Wick's theorem reduces them to products of $D_F$ (Yu §6.3; [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]; its $n = 2$ case is [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]]). Lecture 14 ([[§C6a.5 Normal Ordering and Contractions|§C6a.5]]–[[§C6a.11 The iε Limit and Vacuum Bubbles|§C6a.11]]) organizes the combinatorics, does the integrals, and represents the result by diagrams with a dictionary between diagrams and formulas, the Feynman rules (PS §4.3–§4.4; [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]). Lectures 15–16 relate correlation functions to cross sections and decay widths, with Feynman rules for physical amplitudes (PS §4.5–§4.6; [[· C6b The S-Matrix and Observables|C6b]], [[· C6c Feynman Rules for Amplitudes|C6c]]). The unpleasant features of this formula turn out fine, each curing the other: the denominator removes the vacuum bubbles ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]), and the tilt $T \to \infty(1 - i\varepsilon)$ is the same $i\varepsilon$ that defines $D_F$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]; [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|Theorem §C6a.11.1]]; PS §4.4).
+> The interacting two-point function is a sum of free correlators with more and more fields, and free correlators follow from the mode expansion ([[§C6a.2 The Interaction Picture#^thm-c6a-2-3|Theorem §C6a.2.3]] for two fields). Wick's theorem reduces them to products of $D_F$ (Yu §6.3; [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]]; its $n = 2$ case is [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]]). Lecture 14 ([[§C6a.6 Normal Ordering and Contractions|§C6a.6]]–[[§C6a.12 The iε Limit and Vacuum Bubbles|§C6a.12]]) organizes the combinatorics, does the integrals, and represents the result by diagrams with a dictionary between diagrams and formulas, the Feynman rules (PS §4.3–§4.4; [[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-4|Theorem §C6a.9.4]], [[§C6a.11 Feynman Rules in Momentum Space#^thm-c6a-11-2|Theorem §C6a.11.2]]). Lectures 15–16 relate correlation functions to cross sections and decay widths, with Feynman rules for physical amplitudes (PS §4.5–§4.6; [[· C6b The S-Matrix and Observables|C6b]], [[· C6c Feynman Rules for Amplitudes|C6c]]). The unpleasant features of this formula turn out fine, each curing the other: the denominator removes the vacuum bubbles ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-5|Theorem §C6a.12.5]]), and the tilt $T \to \infty(1 - i\varepsilon)$ is the same $i\varepsilon$ that defines $D_F$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]; [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-1|Theorem §C6a.12.1]]; PS §4.4).
 >
 > *Source: PHY 513 Lecture 13, slides 22–23, and transcript · the user's PHY 513 notes, Ch. 13 §13.5 (paragraphs "Preview: perturbation theory", "The next lectures")*
 
-^rem-c6a-4-4
+^rem-c6a-5-4
 
 > [!remark] Remark: Correspondence with Yu
-> Yu §6.1 sets up the three pictures with $V(t) = e^{iH_0t}e^{-iHt}$ (6.30), the $U(t)$ here; operators transform as $O^{\rm I} = VO^{\rm H}V^\dagger$ (6.31), interaction-picture states evolve with $H^{\rm I}_1$ (6.36), operators with $H_0$ (6.38). §6.2 defines $U(t, t_0) = V(t)V^\dagger(t_0)$ (6.95), with composition, inverse and unitarity (6.96)–(6.102), the equation (6.104), the iterated series (6.105)–(6.106), the $n!$ argument (6.116)–(6.118) and the Dyson series (6.119)–(6.121). It then defines the $S$-matrix as $S = U(+\infty, -\infty)$ (6.122)–(6.125), which the course introduces in Lecture 15 ([[§C6b.1 The S-Matrix and the Invariant Amplitude|§C6b.1]]). Yu does not use the $i\varepsilon$ projection onto $|\Omega\rangle$; he reaches correlation functions of the same form — a free-vacuum expectation value of time-ordered free fields with $e^{-i\int H_I}$, divided by the same quantity without fields — by another route, through asymptotic "in" fields and the LSZ formula ((10.180)–(10.181), with the bubble cancellation (10.193)–(10.197), which [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]] follows).
+> Yu §6.1 sets up the three pictures with $V(t) = e^{iH_0t}e^{-iHt}$ (6.30), the $U(t)$ here; operators transform as $O^{\rm I} = VO^{\rm H}V^\dagger$ (6.31), interaction-picture states evolve with $H^{\rm I}_1$ (6.36), operators with $H_0$ (6.38). §6.2 defines $U(t, t_0) = V(t)V^\dagger(t_0)$ (6.95), with composition, inverse and unitarity (6.96)–(6.102), the equation (6.104), the iterated series (6.105)–(6.106), the $n!$ argument (6.116)–(6.118) and the Dyson series (6.119)–(6.121). It then defines the $S$-matrix as $S = U(+\infty, -\infty)$ (6.122)–(6.125), which the course introduces in Lecture 15 ([[§C6b.1 The S-Matrix and the Invariant Amplitude|§C6b.1]]). Yu does not use the $i\varepsilon$ projection onto $|\Omega\rangle$; he reaches correlation functions of the same form — a free-vacuum expectation value of time-ordered free fields with $e^{-i\int H_I}$, divided by the same quantity without fields — by another route, through asymptotic "in" fields and the LSZ formula ((10.180)–(10.181), with the bubble cancellation (10.193)–(10.197), which [[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-4|Theorem §C6a.12.4]] follows).
 >
 > *Source: the user's PHY 513 notes, Ch. 13 §13.6 (paragraph "Correspondence with Yu") · Yu §6.1–§6.2, pp. 201–216*
 
-^rem-c6a-4-5
+^rem-c6a-5-5
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — part 1, dominated convergence: with a continuous spectrum the excited part of $e^{-i\hat HT(1 - i\varepsilon)}|0\rangle$ still tends to zero term by term under the bound $|\langle n|0\rangle|^2$ (Derivation §C6a.4.1).
-> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]] — part 1, the time-ordered product is symmetric in its time arguments: the assignments of the times to the three intervals that differ by renaming give the same integral, which is the multinomial count in the derivation of the master formula (Derivation §C6a.4.6).
-> - [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-5|Theorem §CA.7.5]] — the damping factor $e^{-\varepsilon t}$ that makes the Fourier integral of a step function converge; the tilt $T \to T(1 - i\varepsilon)$ is the same damping applied to the evolution operator (Theorem §C6a.4.1; Connections).
+> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — part 1, dominated convergence: with a continuous spectrum the excited part of $e^{-i\hat HT(1 - i\varepsilon)}|0\rangle$ still tends to zero term by term under the bound $|\langle n|0\rangle|^2$ (Derivation §C6a.5.1).
+> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]] — part 1, the time-ordered product is symmetric in its time arguments: the assignments of the times to the three intervals that differ by renaming give the same integral, which is the multinomial count in the derivation of the master formula (Derivation §C6a.5.6).
+> - [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-5|Theorem §CA.7.5]] — the damping factor $e^{-\varepsilon t}$ that makes the Fourier integral of a step function converge; the tilt $T \to T(1 - i\varepsilon)$ is the same damping applied to the evolution operator (Theorem §C6a.5.1; Connections).
 
 > [!remark]- Connections
-> - At $\lambda = 0$ the master formula is the Feynman propagator; the interacting two-point function is its deformation, and the time ordering chosen in C2b for the free field is the one the interacting theory forces — [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-1|Example §C6a.4.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]].
+> - At $\lambda = 0$ the master formula is the Feynman propagator; the interacting two-point function is its deformation, and the time ordering chosen in C2b for the free field is the one the interacting theory forces — [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^ex-c6a-5-1|Example §C6a.5.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]].
 > - The vacuum is projected out by an imaginary part of the time, the operator version of the damping factor that makes Fourier integrals of step functions converge and that turns real-time evolution into Euclidean evolution; the same rotation of the time axis is the Wick rotation — [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-5|Theorem §CA.7.5]], [[§C2b.8 Wick Rotation and the Two-Point Family|§C2b.8]].
-> - The projection onto the ground state by long evolution with damping is the quantum-mechanical "imaginary-time" method, and the anharmonic oscillator of the lecture's analogy is the testing ground — [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-2|Example §C6a.4.2]], [[§B8.1 Nondegenerate Perturbation Theory|QM §B8.1]].
-> - Quantum mechanics switches perturbations on adiabatically in the remote past with a factor $e^{\varepsilon t}$; the $1 - i\varepsilon$ tilt here does the same job for the vacuum — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation|QM §C10.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]].
-> - The free vacuum was postulated in C2a with the warning that in interacting theories the vacuum is not this one; this section constructs the one that is — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]].
-> - Correlation functions become scattering amplitudes through the LSZ reduction formula, Yu's route to the same ratio of free-vacuum expectation values; at lowest order, amplitudes are the correlation functions with the external propagators removed — [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]], QFT C10 (planned), [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^rem-c6a-4-5|Remark: Correspondence with Yu]].
+> - The projection onto the ground state by long evolution with damping is the quantum-mechanical "imaginary-time" method, and the anharmonic oscillator of the lecture's analogy is the testing ground — [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^ex-c6a-5-2|Example §C6a.5.2]], [[§B8.1 Nondegenerate Perturbation Theory|QM §B8.1]].
+> - Quantum mechanics switches perturbations on adiabatically in the remote past with a factor $e^{\varepsilon t}$; the $1 - i\varepsilon$ tilt here does the same job for the vacuum — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation|QM §C10.1]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-1|Theorem §C6a.5.1]].
+> - The free vacuum was postulated in C2a with the warning that in interacting theories the vacuum is not this one; this section constructs the one that is — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^def-c6a-5-1|Def. §C6a.5.1]].
+> - Correlation functions become scattering amplitudes through the LSZ reduction formula, Yu's route to the same ratio of free-vacuum expectation values; at lowest order, amplitudes are the correlation functions with the external propagators removed — [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]], QFT C10 (planned), [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^rem-c6a-5-5|Remark: Correspondence with Yu]].

@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C6c.6 Feynman Rules for Amplitudes]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6c.8 From the Question to the Formula]] →
 
-*Sources: PHY 513, Problem Set 8, Problem 3 (based on PS Problem 4.1; the user's solution, parts (a)–(f), submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, Problem 4.1; §2.4, pp. 32–33, eqs. (2.61)–(2.66) · the course's time-ordered exponential and Wick's theorem ([[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]], [[§C6a.6 Wick's Theorem|§C6a.6]]).*
+*Sources: PHY 513, Problem Set 8, Problem 3 (based on PS Problem 4.1; the user's solution, parts (a)–(f), submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, Problem 4.1; §2.4, pp. 32–33, eqs. (2.61)–(2.66) · the course's time-ordered exponential and Wick's theorem ([[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]], [[§C6a.7 Wick's Theorem|§C6a.7]]).*
 
 A classical source switched on for a finite time leaves the vacuum in a state with some particles. [[§C2b.9 Particle Production by a Classical Source|§C2b.9]] answered this with the retarded function: the late-time field has shifted annihilation operators and the final state is a coherent state, with Poisson-distributed particle number. This section reaches the same answer the way Problem Set 8 asks, through the interaction picture: the probabilities are squares of matrix elements of the time-ordered exponential ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]), Wick's theorem turns them into diagrams with one-legged **source vertices**, and the vacuum diagrams exponentiate. Two general tools are used: the contraction of a field with an outgoing particle ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], first written for this problem and since moved to [[§C6c.2 Contractions with External Particles|§C6c.2]], with Wick's theorem between particle states) and the measure on $n$-particle states ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]]; the overlap of two $n$-particle states it rests on, also written for this problem, is now [[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]]). Everything below is the user's solution, tagged by part.
 
@@ -19,13 +19,13 @@ A classical source switched on for a finite time leaves the vacuum in a state wi
 $$
 \hat H(t) = \hat H_0 + \hat H_{\rm int}(t) , \qquad \hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi(\mathbf x) = 0 \quad\text{for } t < t_1 \text{ and } t > t_2 ,
 $$
-so $\hat H = \hat H_0$ at early and late times; the free Fock states $\hat a^\dagger\cdots|0\rangle$ are the exact in and out states and the in and out vacuum is exactly $|0\rangle$ (the interacting vacuum $|\Omega\rangle$ of [[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]] plays no role); and the interaction-picture evolution operator ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]) satisfies $U(t, t') = \mathbb 1$ for $t, t' < t_1$ or $t, t' > t_2$, so
+so $\hat H = \hat H_0$ at early and late times; the free Fock states $\hat a^\dagger\cdots|0\rangle$ are the exact in and out states and the in and out vacuum is exactly $|0\rangle$ (the interacting vacuum $|\Omega\rangle$ of [[§C6a.5 The Interacting Vacuum and the Two-Point Function|§C6a.5]] plays no role); and the interaction-picture evolution operator ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]) satisfies $U(t, t') = \mathbb 1$ for $t, t' < t_1$ or $t, t' > t_2$, so
 $$
 \hat S = U(+\infty, -\infty) = U(t_2, t_1) = T\Bigl\{\exp\Bigl[i\int d^4x\,j(x)\,\hat\phi_I(x)\Bigr]\Bigr\}
 $$
 holds exactly, not only at lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]] with $\hat H_{\rm int}(t) \to 0$; no $\sqrt Z$, unlike [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]). The source is classical, so nothing is renormalized.
 
-A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected part, $\sum_D\frac{w(D)}{S(D)} = \exp\bigl(\sum_C\frac{w(C)}{S(C)}\bigr)$ for weights multiplicative over connected components ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], proved in CA and listed at the end; for the $\phi^4$ bubbles [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-1|Theorem §C6a.12.1]]), and the counting of [[§CA.8 Pairings, Diagrams and Symmetry Factors|§CA.8]] holds for vertices with one leg, $|G_n| = n!$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1 and 4).
+A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected part, $\sum_D\frac{w(D)}{S(D)} = \exp\bigl(\sum_C\frac{w(C)}{S(C)}\bigr)$ for weights multiplicative over connected components ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], proved in CA and listed at the end; for the $\phi^4$ bubbles [[§C6a.13 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-13-1|Theorem §C6a.13.1]]), and the counting of [[§CA.8 Pairings, Diagrams and Symmetry Factors|§CA.8]] holds for vertices with one leg, $|G_n| = n!$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1 and 4).
 
 ## No particles
 
@@ -51,7 +51,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > \hat H_I(t) = e^{i\hat H_0t}\hat H_{\rm int}(t)e^{-i\hat H_0t} = -\int d^3x\,j(t, \mathbf x)\,\hat\phi_I(t, \mathbf x) ,
 > $$
 >
-> $j$ being a number. The evolution operator is the time-ordered exponential ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]]; its derivation uses only $i\partial_tU = \hat H_I(t)U$, so an explicitly time-dependent $\hat H_I(t)$ is allowed):
+> $j$ being a number. The evolution operator is the time-ordered exponential ([[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-2|Theorem §C6a.4.2]]; its derivation uses only $i\partial_tU = \hat H_I(t)U$, so an explicitly time-dependent $\hat H_I(t)$ is allowed):
 >
 > $$
 > \hat U(t, t') = T\Bigl\{\exp\Bigl[-i\int_{t'}^tdt''\,\hat H_I(t'')\Bigr]\Bigr\} .
@@ -66,11 +66,11 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > the limit trivial because $j$ has compact support in time. So $\mathcal A(0)$ is as stated, $P(0) = |\mathcal A(0)|^2$; for any free final state the same steps give $\langle f|\hat U(\infty, -\infty)|0\rangle$.
 >
 > **What the derivation shows.**
-> - Unlike $\phi^4$ theory ([[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]]) no $T(1 - i\varepsilon)$ projection is needed: the interaction is switched off, and the free vacuum is the in- and out-vacuum (the setup of [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]], stated in the opening).
+> - Unlike $\phi^4$ theory ([[§C6a.5 The Interacting Vacuum and the Two-Point Function|§C6a.5]]) no $T(1 - i\varepsilon)$ projection is needed: the interaction is switched off, and the free vacuum is the in- and out-vacuum (the setup of [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]], stated in the opening).
 
 ^der-c6c-7-1
 
-*Uses:* [[§C6a.2 The Interaction Picture#^def-c6a-2-1|Def. §C6a.2.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]], [[§C2b.6 Green's Functions and Contours#^mod-c2b-6-1|Model §C2b.6.1]]
+*Uses:* [[§C6a.2 The Interaction Picture#^def-c6a-2-1|Def. §C6a.2.1]], [[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C2b.6 Green's Functions and Contours#^mod-c2b-6-1|Model §C2b.6.1]]
 
 > [!theorem] Theorem §C6c.7.2: The No-Particle Probability to Order j²
 > $$
@@ -100,13 +100,13 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > P(0) = (1 + \mathcal A_1 + \mathcal A_2 + \mathcal A_3)(1 + \mathcal A_1^{\ast} + \mathcal A_2^{\ast} + \mathcal A_3^{\ast}) + O(j^4) = 1 + 2\operatorname{Re}\mathcal A_1 + \bigl(2\operatorname{Re}\mathcal A_2 + |\mathcal A_1|^2\bigr) + \bigl(2\operatorname{Re}\mathcal A_3 + 2\operatorname{Re}(\mathcal A_1\mathcal A_2^{\ast})\bigr) + O(j^4) .
 > $$
 >
-> **Step 3** (odd orders). Every term of the mode expansion of $\hat\phi_I$ has one $\hat a$ or one $\hat a^\dagger$, so $\langle0|\hat\phi_I(x)|0\rangle = 0$ and $\mathcal A_1 = 0$. By Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), with $\hat\phi_i \equiv \hat\phi_I(x_i)$, $D_{ij} = D_F(x_i - x_j)$,
+> **Step 3** (odd orders). Every term of the mode expansion of $\hat\phi_I$ has one $\hat a$ or one $\hat a^\dagger$, so $\langle0|\hat\phi_I(x)|0\rangle = 0$ and $\mathcal A_1 = 0$. By Wick's theorem ([[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]]), with $\hat\phi_i \equiv \hat\phi_I(x_i)$, $D_{ij} = D_F(x_i - x_j)$,
 >
 > $$
 > T\{\hat\phi_1\hat\phi_2\hat\phi_3\} = \,:\!\hat\phi_1\hat\phi_2\hat\phi_3\!: + D_{12}\hat\phi_3 + D_{13}\hat\phi_2 + D_{23}\hat\phi_1 ;
 > $$
 >
-> every term keeps an uncontracted field, and $\langle0|{:}\cdots{:}|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2), $\langle0|\hat\phi_i|0\rangle = 0$: $\mathcal A_3 = 0$. So $P(0) = 1 + 2\operatorname{Re}\mathcal A_2 + O(j^4)$.
+> every term keeps an uncontracted field, and $\langle0|{:}\cdots{:}|0\rangle = 0$ ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 2), $\langle0|\hat\phi_i|0\rangle = 0$: $\mathcal A_3 = 0$. So $P(0) = 1 + 2\operatorname{Re}\mathcal A_2 + O(j^4)$.
 >
 > **Step 4** ($\mathcal A_2$). $\langle0|T\{\hat\phi_1\hat\phi_2\}|0\rangle = \langle0|{:}\hat\phi_1\hat\phi_2{:}|0\rangle + D_{12} = D_F(x_1 - x_2) = \int\frac{d^4p}{(2\pi)^4}\frac{i\,e^{-ip\cdot(x_1 - x_2)}}{p^2 - m^2 + i\varepsilon}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]). With $e^{-ip\cdot(x_1 - x_2)} = e^{-ip\cdot x_1}e^{ip\cdot x_2}$ and the $p$-integral outside,
 >
@@ -141,7 +141,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 
 ^der-c6c-7-2
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]]
 
 ## Diagrams with source vertices
 
@@ -176,7 +176,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > [!derivation]- Derivation
 > **Step 1** (the term of (b) as a diagram). $\mathcal A_2 = \frac{1}{2!}\int d^4x_1\,d^4x_2\,(ij(x_1))(ij(x_2))\,D_F(x_1 - x_2) = \frac12L$: one line between two source vertices. $G_2 = \{e, (x_1\,x_2)\}$, $|G_2| = 2!\,(1!)^2 = 2$; the single pairing $\{x_1, x_2\}$ is mapped to itself by the exchange, so its orbit has one element and $S_1 = |G_2|/1 = 2$.
 >
-> **Step 2** (odd orders). $n$ one-legged vertices and no external points: for odd $n$ one leg is left over, every Wick term keeps a field and vanishes ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-5|Theorem §C6a.8.5]], Step 1, with source vertices).
+> **Step 2** (odd orders). $n$ one-legged vertices and no external points: for odd $n$ one leg is left over, every Wick term keeps a field and vanishes ([[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-5|Theorem §C6a.9.5]], Step 1, with source vertices).
 >
 > **Step 3** ($S_m$ by counting). At order $2m$, $|G| = (2m)!$. The complete pairings of $2m$ vertices: choose a first pair, a second from the rest, …,
 >
@@ -186,7 +186,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 >
 > ordered lists of $m$ pairs; each pairing (a set of pairs) is listed $m!$ times: $N = \frac{(2m)!}{2^m\,m!}$. All pairings have the same shape ($m$ disjoint lines), one orbit, so $S_m = \frac{(2m)!}{N} = 2^m\,m!$. As a stabilizer: flip each line ($2^m$) and permute the $m$ identical lines ($m!$) — part 2 of [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]] with $S(\text{line}) = 2$.
 >
-> **Step 4** (sum). $\mathcal A_{2m} = \frac{1}{(2m)!}\int\prod d^4x_i\,(ij(x_i))\,\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{2m})\}|0\rangle$; by [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]] the vacuum value is the sum over the $N$ pairings of products of $m$ propagators, and after renaming the variables each gives $L^m$:
+> **Step 4** (sum). $\mathcal A_{2m} = \frac{1}{(2m)!}\int\prod d^4x_i\,(ij(x_i))\,\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{2m})\}|0\rangle$; by [[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]] the vacuum value is the sum over the $N$ pairings of products of $m$ propagators, and after renaming the variables each gives $L^m$:
 >
 > $$
 > \mathcal A_{2m} = \frac{N}{(2m)!}L^m = \frac{L^m}{2^m\,m!} = \frac{1}{S_m}L^m = \frac{(L/2)^m}{m!} = \frac{(\mathcal A_2)^m}{m!}, \qquad \mathcal A(0) = \sum_{m\ge0}\frac{(\mathcal A_2)^m}{m!} = e^{\mathcal A_2} .
@@ -203,7 +203,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 
 ^der-c6c-7-3
 
-*Uses:* [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^def-c6c-7-1|Def. §C6c.7.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-2|Theorem §C6c.7.2]]
+*Uses:* [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^def-c6c-7-1|Def. §C6c.7.1]], [[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-2|Theorem §C6c.7.2]]
 
 ## Outgoing particles
 
@@ -340,7 +340,7 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 > so $\langle N^2\rangle = \lambda^2 + \lambda$ and $\langle(N - \bar N)^2\rangle = \langle N^2\rangle - 2\bar N\langle N\rangle + \bar N^2 = \langle N^2\rangle - \bar N^2 = \lambda$.
 >
 > **What the derivation shows.** (Written here; the steps above are the submitted solution, unchanged.)
-> - $\sum_nP(n) = 1$ checks the measure of [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]] with its $\frac{1}{n!}$: the probabilities of all final states add up to $1$, as the unitarity of the evolution operator requires ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 3).
+> - $\sum_nP(n) = 1$ checks the measure of [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]] with its $\frac{1}{n!}$: the probabilities of all final states add up to $1$, as the unitarity of the evolution operator requires ([[§C6a.4 The Time-Evolution Operator Between Two Times#^thm-c6a-4-1|Theorem §C6a.4.1]], 3).
 > - $\bar N = \lambda$ identifies the $\lambda$ of [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-2|Theorem §C6c.7.2]] with the mean number of particles, the $\bar N$ of [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-4|Theorem §C2b.9.4]]; mean and variance are equal, as for every Poisson distribution.
 
 ^der-c6c-7-7
@@ -366,7 +366,7 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 > - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]] — $\delta(p^2 - m^2)$ is two deltas in $p^0$ with weight $\frac{1}{2E_{\mathbf p}}$.
 
 > [!remark]- Connections
-> - The vacuum series exponentiates by the same exponential formula as the vacuum bubbles of $\phi^4$ theory; here the only connected vacuum diagram is the line, so the whole series is $e^{L/2}$ — [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-1|Theorem §C6a.12.1]].
+> - The vacuum series exponentiates by the same exponential formula as the vacuum bubbles of $\phi^4$ theory; here the only connected vacuum diagram is the line, so the whole series is $e^{L/2}$ — [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], [[§C6a.13 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-13-1|Theorem §C6a.13.1]].
 > - $P(0) = e^{-\lambda}$ is the vacuum-persistence probability; at order $j^2$, $1 - P(0) = \lambda = P(1)$: the probability lost from the vacuum is the probability of emitting one particle, carried by the $\delta(p^2 - m^2)$ part of $D_F$ — [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]] (the $\delta(p^2 - m^2)$ part of $D_F$).
 > - The contraction of a field with an outgoing particle is the external-line rule of amplitudes: in relativistic normalization each external scalar line gives $e^{ip\cdot x}$, i.e. factor 1 after the vertex integral, as in the decay $\Phi \to \phi\phi$ — [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|Example §C6b.6.1]], [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]].
 > - The $n!$ of the $n$-particle measure and the identical-particle factor $S_{\rm id}$ are one fact, the symmetry of bosonic states — [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]].

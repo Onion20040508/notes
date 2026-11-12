@@ -472,7 +472,7 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 >
 > **Step 4** (momenta in (b)). The $x$ integral acts on $D_F$ alone: $\int d^4x\,D_F(x - y) = \int\frac{d^4k}{(2\pi)^4}\frac{ie^{ik\cdot y}}{k^2 - m_\phi^2 + i\varepsilon}(2\pi)^4\delta^4(k) = \frac{i}{-m_\phi^2}$: the scalar carries zero momentum. With $-\operatorname{tr}S_F(0)$: $\frac{-i}{m_\phi^2}\cdot(-\operatorname{tr}S_F(0)) = \frac{i}{m_\phi^2}\operatorname{tr}S_F(0)$; the $y$ integral gives $(2\pi)^4\delta^4(p - p')$ (Yu (7.97)–(7.99)).
 >
-> **Step 5** (fate). One incoming and one outgoing fermion at the same momentum: forward, part of the $\mathbb 1$ and of the correction of the external state ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], 2; [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]], 1). Each diagram has $V = 2$, $I = 2$, $L = 1$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-3|Theorem §C6a.13.3]]).
+> **Step 5** (fate). One incoming and one outgoing fermion at the same momentum: forward, part of the $\mathbb 1$ and of the correction of the external state ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], 2; [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]], 1). Each diagram has $V = 2$, $I = 2$, $L = 1$ ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-3|Theorem §C6a.14.3]]).
 >
 > *Equivalently,* the scalar case is [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^ex-c6c-5-2|Example §C6c.5.2]] (the second-order self-energies of $\phi^4$ with $S = 4, 6, 4$); here every $S = 1$ ([[§C6d.4 First Order#^thm-c6d-4-7|Theorem §C6d.4.7]]).
 >

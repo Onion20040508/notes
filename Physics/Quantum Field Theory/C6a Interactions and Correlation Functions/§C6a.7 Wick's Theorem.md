@@ -3,17 +3,17 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C6a
-section: C6a.6
+section: C6a.7
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6a.5 Normal Ordering and Contractions]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.7 Feynman Diagrams for Correlation Functions]] →
+← [[§C6a.6 Normal Ordering and Contractions]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.8 Feynman Diagrams for Correlation Functions]] →
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.2 (Principle "Wick's theorem", Derivations "Proof by induction (filled in)" and "Four fields", Principle "Vacuum expectation values: complete contractions", paragraphs "Contracting two pairs", "Theorem and application") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part A, slides 9–10, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.3, pp. 89–90, eqs. (4.38)–(4.41) · Yu Zhao-Huan, 量子场论讲义, §6.3.1, eqs. (6.166)–(6.168); §6.3.2 (optional reading): lemma (6.169)–(6.170) with proof (6.171)–(6.185), proof of the theorem (6.186)–(6.193).*
 
-For two fields the time-ordered product is the normal-ordered product plus one contraction ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]]). For $n$ fields every misplaced $\hat\phi^+$ must be moved past every $\hat\phi^-$, each move costs a $c$-number ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]]), and time ordering turns each cost into a Feynman propagator. Wick's theorem says what the total is: the normal-ordered product plus every way of contracting pairs ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]). In the vacuum only the terms with every field contracted survive, so a free vacuum expectation value is a sum over pairings of the fields. The proof is an induction on the number of fields, built on a lemma about appending one more field of earlier time. Yu treats this in §6.3, eqs. (6.166)–(6.193), for bosons and fermions, and proves it with the same lemma (6.169); PS prove it by prepending the latest field instead (eq. (4.41)), kept here as a second proof. **Setup:** as in [[§C6a.5 Normal Ordering and Contractions|§C6a.5]]: identities between free-field operators ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]), in any state and independent of the dynamics; vacuum values in $|0\rangle$ only ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
+For two fields the time-ordered product is the normal-ordered product plus one contraction ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]]). For $n$ fields every misplaced $\hat\phi^+$ must be moved past every $\hat\phi^-$, each move costs a $c$-number ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-2|Theorem §C6a.6.2]]), and time ordering turns each cost into a Feynman propagator. Wick's theorem says what the total is: the normal-ordered product plus every way of contracting pairs ([[§C6a.6 Normal Ordering and Contractions#^def-c6a-6-1|Def. §C6a.6.1]]). In the vacuum only the terms with every field contracted survive, so a free vacuum expectation value is a sum over pairings of the fields. The proof is an induction on the number of fields, built on a lemma about appending one more field of earlier time. Yu treats this in §6.3, eqs. (6.166)–(6.193), for bosons and fermions, and proves it with the same lemma (6.169); PS prove it by prepending the latest field instead (eq. (4.41)), kept here as a second proof. **Setup:** as in [[§C6a.6 Normal Ordering and Contractions|§C6a.6]]: identities between free-field operators ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]), in any state and independent of the dynamics; vacuum values in $|0\rangle$ only ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
 
-*Conventions* ([[Larsen PHY 513]]): as in [[§C6a.5 Normal Ordering and Contractions|§C6a.5]]: $\hat\phi_i \equiv \hat\phi_I(x_i)$, free fields; $D_{ij} \equiv D_F(x_i - x_j)$ where it saves space; a hat over a factor, $\widehat{\hat\phi_k}$, is avoided: "$\prod_{i\ne k}$" or "omit $\hat\phi_k$" is written out.
+*Conventions* ([[Larsen PHY 513]]): as in [[§C6a.6 Normal Ordering and Contractions|§C6a.6]]: $\hat\phi_i \equiv \hat\phi_I(x_i)$, free fields; $D_{ij} \equiv D_F(x_i - x_j)$ where it saves space; a hat over a factor, $\widehat{\hat\phi_k}$, is avoided: "$\prod_{i\ne k}$" or "omit $\hat\phi_k$" is written out.
 
 The pairings and their number, from [[§CA.8 Pairings, Diagrams and Symmetry Factors|§CA.8]], are the two pieces of mathematics used. A **pairing** of a finite set is a partition of it into blocks of exactly two elements ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]); a set of $2k$ fields has
 
@@ -21,25 +21,25 @@ $$
 (2k - 1)!! = (2k - 1)(2k - 3)\cdots3\cdot1 = \frac{(2k)!}{2^kk!}
 $$
 
-pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]; $3, 15, 105$ for $4, 6, 8$ fields). This count is the number of terms of a free vacuum value, [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]].
+pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]; $3, 15, 105$ for $4, 6, 8$ fields). This count is the number of terms of a free vacuum value, [[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]].
 
 ## The lemma
 
-> [!theorem] Lemma §C6a.6.1: Appending a Field of Earlier Time
+> [!theorem] Lemma §C6a.7.1: Appending a Field of Earlier Time
 > Let $x_b^0 \le x_i^0$ for $i = 1, \dots, n$. Then
 > 1. $\displaystyle:\!\hat\phi_1\cdots\hat\phi_n\!:\;\hat\phi_b = \,:\!\hat\phi_1\cdots\hat\phi_n\hat\phi_b\!: + \sum_{k=1}^nD_F(x_k - x_b)\,:\!\prod_{i\ne k}\hat\phi_i\!: ,$
 >
-> the normal-ordered product of all $n + 1$ fields plus the contraction of $\hat\phi_b$ with each of the others, the rest normal ordered ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]);
+> the normal-ordered product of all $n + 1$ fields plus the contraction of $\hat\phi_b$ with each of the others, the rest normal ordered ([[§C6a.6 Normal Ordering and Contractions#^def-c6a-6-1|Def. §C6a.6.1]]);
 > 2. the same holds when the product on the left already carries $c$-number factors from earlier contractions among $\hat\phi_1, \dots, \hat\phi_n$: they multiply every term on the right.
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening: an operator identity, any state.
 >
-> *Source: PHY 513 Lecture 14, slide 9 ("$N(\phi_1\dots\phi_{n-1})\phi_n = N(\phi_1\dots\phi_{n-1}\phi_n)$ + contract $\phi_n$ with any other $\phi$"; the condition on the times is implicit there, [[§C6a.6 Wick's Theorem#^cau-c6a-6-1|Caution: The lemma needs the earliest time]]) · Yu §6.3.2, eqs. (6.169)–(6.170) · proof written here (shorter than Yu's four steps (6.171)–(6.185))*
+> *Source: PHY 513 Lecture 14, slide 9 ("$N(\phi_1\dots\phi_{n-1})\phi_n = N(\phi_1\dots\phi_{n-1}\phi_n)$ + contract $\phi_n$ with any other $\phi$"; the condition on the times is implicit there, [[§C6a.7 Wick's Theorem#^cau-c6a-7-1|Caution: The lemma needs the earliest time]]) · Yu §6.3.2, eqs. (6.169)–(6.170) · proof written here (shorter than Yu's four steps (6.171)–(6.185))*
 
-^lem-c6a-6-1
+^lem-c6a-7-1
 
 > [!derivation]- Derivation
-> **Step 1** (split the new field and expand $M$). $\hat\phi_b = \hat\phi_b^+ + \hat\phi_b^-$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]), and ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 1)
+> **Step 1** (split the new field and expand $M$). $\hat\phi_b = \hat\phi_b^+ + \hat\phi_b^-$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]), and ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 1)
 >
 > $$
 > M \equiv \,:\!\hat\phi_1\cdots\hat\phi_n\!: = \sum_{A\subseteq\{1,\dots,n\}}M_A, \qquad M_A = \prod_{i\in A}\hat\phi_i^-\prod_{j\notin A}\hat\phi_j^+ ;
@@ -59,7 +59,7 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 > M\hat\phi_b = \sum_A\bigl(M_A\hat\phi_b^+ + \hat\phi_b^-M_A\bigr) + \sum_A[M_A, \hat\phi_b^-] = \,:\!\hat\phi_1\cdots\hat\phi_n\hat\phi_b\!:\, + \sum_A[M_A, \hat\phi_b^-] .
 > $$
 >
-> **Step 4** (the commutator is a derivation). For a product, $[F_1F_2\cdots F_r, G] = \sum_sF_1\cdots F_{s-1}[F_s, G]F_{s+1}\cdots F_r$. With $G = \hat\phi_b^-$: $[\hat\phi_i^-, \hat\phi_b^-] = 0$ and $[\hat\phi_j^+, \hat\phi_b^-] = D_W(x_j - x_b)\mathbf 1$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]]), a number, which can be pulled out. For $n = 2$, term by term:
+> **Step 4** (the commutator is a derivation). For a product, $[F_1F_2\cdots F_r, G] = \sum_sF_1\cdots F_{s-1}[F_s, G]F_{s+1}\cdots F_r$. With $G = \hat\phi_b^-$: $[\hat\phi_i^-, \hat\phi_b^-] = 0$ and $[\hat\phi_j^+, \hat\phi_b^-] = D_W(x_j - x_b)\mathbf 1$ ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-2|Theorem §C6a.6.2]]), a number, which can be pulled out. For $n = 2$, term by term:
 >
 > $$
 > \begin{aligned}
@@ -82,7 +82,7 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 > \sum_A[M_A, \hat\phi_b^-] = D_W(x_1 - x_b)\bigl(\hat\phi_2^+ + \hat\phi_2^-\bigr) + D_W(x_2 - x_b)\bigl(\hat\phi_1^+ + \hat\phi_1^-\bigr) = D_W(x_1 - x_b):\!\hat\phi_2\!: + D_W(x_2 - x_b):\!\hat\phi_1\!: .
 > $$
 >
-> In general, exchange the sums, $\sum_A\sum_{k\notin A} = \sum_k\sum_{A\not\ni k}$. For fixed $k$ the subsets $A$ of $\{1, \dots, n\}$ not containing $k$ are exactly the subsets of $\{1, \dots, n\}\setminus\{k\}$, and the summand is the $A$-term of $:\!\prod_{i\ne k}\hat\phi_i\!:$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 1, for $n - 1$ fields):
+> In general, exchange the sums, $\sum_A\sum_{k\notin A} = \sum_k\sum_{A\not\ni k}$. For fixed $k$ the subsets $A$ of $\{1, \dots, n\}$ not containing $k$ are exactly the subsets of $\{1, \dots, n\}\setminus\{k\}$, and the summand is the $A$-term of $:\!\prod_{i\ne k}\hat\phi_i\!:$ ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 1, for $n - 1$ fields):
 >
 > $$
 > \sum_A[M_A, \hat\phi_b^-] = \sum_{k=1}^nD_W(x_k - x_b)\,:\!\prod_{i\ne k}\hat\phi_i\!: .
@@ -94,34 +94,34 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 > D_F(\xi) = \theta(\xi^0)\,D_W(\xi) + \theta(-\xi^0)\,D_W(-\xi) = D_W(\xi) \qquad (\xi^0 > 0) .
 > $$
 >
-> For $\xi^0 = 0$ the separation is spacelike or zero and the commutator function vanishes there ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]): $D_W(\xi) - D_W(-\xi) = iD(\xi) = 0$, so $D_W(\xi) = D_W(-\xi) = D_F(\xi)$ again. With the contraction of $\hat\phi_k$ with $\hat\phi_b$ equal to $D_F(x_k - x_b)$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]), Steps 3 and 5 give part 1; for $n = 2$:
+> For $\xi^0 = 0$ the separation is spacelike or zero and the commutator function vanishes there ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]): $D_W(\xi) - D_W(-\xi) = iD(\xi) = 0$, so $D_W(\xi) = D_W(-\xi) = D_F(\xi)$ again. With the contraction of $\hat\phi_k$ with $\hat\phi_b$ equal to $D_F(x_k - x_b)$ ([[§C6a.6 Normal Ordering and Contractions#^def-c6a-6-1|Def. §C6a.6.1]]), Steps 3 and 5 give part 1; for $n = 2$:
 >
 > $$
 > :\!\hat\phi_1\hat\phi_2\!:\,\hat\phi_b = \,:\!\hat\phi_1\hat\phi_2\hat\phi_b\!:\, + D_F(x_1 - x_b)\,:\!\hat\phi_2\!:\, + D_F(x_2 - x_b)\,:\!\hat\phi_1\!: .
 > $$
 >
-> ⚑ By-product: Steps 1–5 never used the times. Without the condition the lemma holds with $D_W(x_k - x_b)$ in place of $D_F(x_k - x_b)$ → [[§C6a.6 Wick's Theorem#^thm-c6a-6-4|★ Theorem §C6a.6.4]].
+> ⚑ By-product: Steps 1–5 never used the times. Without the condition the lemma holds with $D_W(x_k - x_b)$ in place of $D_F(x_k - x_b)$ → [[§C6a.7 Wick's Theorem#^thm-c6a-7-4|★ Theorem §C6a.7.4]].
 >
 > **Step 7** (earlier contractions, part 2). A $c$-number factor commutes with every operator, so it can be taken out before Step 1 and put back on every term.
 >
 > **What the derivation shows.**
 > - "Each $\hat\phi^-$ on the wrong side has to be fixed, and each fix costs a $D_F$" (the user's notes): the fixes are the commutators of Step 4, and the time condition turns $D_W$ into $D_F$.
-> - Used next: the induction step of Wick's theorem (Theorem §C6a.6.2).
+> - Used next: the induction step of Wick's theorem (Theorem §C6a.7.2).
 
-^der-c6a-6-1
+^der-c6a-7-1
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]
 
 > [!caution] Caution: The lemma needs the earliest time
-> Slide 9 states the induction step as "$N(\phi_1\dots\phi_{n-1})\phi_n = N(\phi_1\dots\phi_{n-1}\phi_n)$ + contract $\phi_n$ with any other $\phi$", where "contract" means $D_F$. This holds when $\phi_n$ has the earliest time, which is how it is used in the induction ([[§C6a.6 Wick's Theorem#^lem-c6a-6-1|Lemma §C6a.6.1]]; Yu (6.169) states the condition $x_b^0 \le x_1^0, \dots, x_n^0$). For general times the added terms are $D_W(x_i - x_n)$, not $D_F$.
+> Slide 9 states the induction step as "$N(\phi_1\dots\phi_{n-1})\phi_n = N(\phi_1\dots\phi_{n-1}\phi_n)$ + contract $\phi_n$ with any other $\phi$", where "contract" means $D_F$. This holds when $\phi_n$ has the earliest time, which is how it is used in the induction ([[§C6a.7 Wick's Theorem#^lem-c6a-7-1|Lemma §C6a.7.1]]; Yu (6.169) states the condition $x_b^0 \le x_1^0, \dots, x_n^0$). For general times the added terms are $D_W(x_i - x_n)$, not $D_F$.
 >
 > *Source: PHY 513 Lecture 14, slide 9 (page image) · Yu §6.3.2, eq. (6.169)*
 
-^cau-c6a-6-1
+^cau-c6a-7-1
 
 ## The theorem
 
-> [!theorem] Theorem §C6a.6.2: Wick's Theorem
+> [!theorem] Theorem §C6a.7.2: Wick's Theorem
 > For free fields at any points $x_1, \dots, x_n$:
 > 1. the time-ordered product is the normal-ordered product plus all possible contractions,
 >
@@ -138,7 +138,7 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 >
 > *Source: PHY 513 Lecture 14, slide 9 ("Wick's Theorem: General Rule") · the user's PHY 513 notes, Ch. 14 §14.2 (Principle "Wick's theorem", eq. (wick); a principle there, a theorem here because it is derived) · PS §4.3, eq. (4.38) · Yu §6.3.1, eq. (6.166)*
 
-^thm-c6a-6-2
+^thm-c6a-7-2
 
 > [!derivation]- Derivation
 > **Step 1** (both sides are symmetric). For a permutation $\pi$ of the labels:
@@ -147,7 +147,7 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 > T\{\hat\phi_{\pi(1)}\cdots\hat\phi_{\pi(n)}\} = T\{\hat\phi_1\cdots\hat\phi_n\}, \qquad D_F(x_i - x_j) = D_F(x_j - x_i), \qquad :\!\hat\phi_{\pi(1)}\cdots\hat\phi_{\pi(n)}\!: = \,:\!\hat\phi_1\cdots\hat\phi_n\!:
 > $$
 >
-> ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], 1, for any number of fields: $T$ orders by time labels; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]; [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 3), and $C \mapsto \pi(C)$ maps the sets of disjoint pairs of $\{1, \dots, n\}$ bijectively onto themselves. So both sides of part 1 are unchanged, and it suffices to prove the identity for $x_1^0 \ge x_2^0 \ge \cdots \ge x_n^0$. (Fields at equal times commute, [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], 1, so ties do not matter.)
+> ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], 1, for any number of fields: $T$ orders by time labels; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]; [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 3), and $C \mapsto \pi(C)$ maps the sets of disjoint pairs of $\{1, \dots, n\}$ bijectively onto themselves. So both sides of part 1 are unchanged, and it suffices to prove the identity for $x_1^0 \ge x_2^0 \ge \cdots \ge x_n^0$. (Fields at equal times commute, [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], 1, so ties do not matter.)
 >
 > **Step 2** (start). $n = 1$: $T\{\hat\phi_1\} = \hat\phi_1 = \,:\!\hat\phi_1\!:$. $n = 2$: [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]].
 >
@@ -161,7 +161,7 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 >
 > $C'$ over the sets of disjoint pairs of $\{1, \dots, n-1\}$, $R(C')$ the uncontracted indices.
 >
-> **Step 5** (apply the lemma term by term). $x_n^0 \le x_k^0$ for all $k$, so [[§C6a.6 Wick's Theorem#^lem-c6a-6-1|Lemma §C6a.6.1]], 2, gives for each $C'$
+> **Step 5** (apply the lemma term by term). $x_n^0 \le x_k^0$ for all $k$, so [[§C6a.7 Wick's Theorem#^lem-c6a-7-1|Lemma §C6a.7.1]], 2, gives for each $C'$
 >
 > $$
 > \prod_{C'}D_F\;\Bigl[:\!\prod_{k\in R(C')}\hat\phi_k\,\hat\phi_n\!: + \sum_{l\in R(C')}D_F(x_l - x_n)\,:\!\prod_{k\in R(C'),\,k\ne l}\hat\phi_k\!:\Bigr] .
@@ -169,7 +169,7 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 >
 > **Step 6** (each term exactly once). Every set $C$ of disjoint pairs of $\{1, \dots, n\}$ is of exactly one of two kinds: $n$ uncontracted, $C = C'$ with $C'$ a set of pairs of $\{1, \dots, n-1\}$, which is the first term of Step 5; or $n$ paired with some $l$, $C = C'\cup\{\{l, n\}\}$ with $l \notin\cup C'$, which is the $l$-term of the sum in Step 5. Conversely each term of Step 5 is of one of these forms for exactly one $C$. So Step 5 summed over $C'$ is the right side of part 1 for $n$ fields.
 >
-> **Step 7** (the case $n = 3$ written out). With $D_{ij} \equiv D_F(x_i - x_j)$ for the contraction of $\hat\phi_i$ with $\hat\phi_j$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]) and $x_1^0 \ge x_2^0 \ge x_3^0$: the induction hypothesis for $\{1, 2\}$ has $C' = \varnothing$ and $C' = \{\{1,2\}\}$, and the lemma acts on each:
+> **Step 7** (the case $n = 3$ written out). With $D_{ij} \equiv D_F(x_i - x_j)$ for the contraction of $\hat\phi_i$ with $\hat\phi_j$ ([[§C6a.6 Normal Ordering and Contractions#^def-c6a-6-1|Def. §C6a.6.1]]) and $x_1^0 \ge x_2^0 \ge x_3^0$: the induction hypothesis for $\{1, 2\}$ has $C' = \varnothing$ and $C' = \{\{1,2\}\}$, and the lemma acts on each:
 >
 > $$
 > \begin{aligned}
@@ -181,16 +181,16 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 >
 > the four sets of disjoint pairs of $\{1, 2, 3\}$, each once ($1 + 3 = 4$ terms).
 >
-> ⚑ By-product: the number of terms is $\sum_k\binom n{2k}(2k - 1)!!$ (choose the $2k$ contracted fields, then pair them, [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]); for $n = 4$: $1 + 6 + 3 = 10$ ([[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]).
+> ⚑ By-product: the number of terms is $\sum_k\binom n{2k}(2k - 1)!!$ (choose the $2k$ contracted fields, then pair them, [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]); for $n = 4$: $1 + 6 + 3 = 10$ ([[§C6a.7 Wick's Theorem#^ex-c6a-7-1|Example §C6a.7.1]]).
 >
 > **What the derivation shows.**
 > - The proof is a plain induction, messy when written out, but the only input is that each reordering costs a number, $D_W$, and that time ordering makes it $D_F$.
 > - The order in which the field is added matters only through the lemma's time condition; the result is symmetric.
-> - Used next: vacuum expectation values (Theorem §C6a.6.3).
+> - Used next: vacuum expectation values (Theorem §C6a.7.3).
 
-^der-c6a-6-2
+^der-c6a-7-2
 
-*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]], [[§C6a.6 Wick's Theorem#^lem-c6a-6-1|Lemma §C6a.6.1]]
+*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]], [[§C6a.7 Wick's Theorem#^lem-c6a-7-1|Lemma §C6a.7.1]]
 
 > [!derivation]- Derivation (second route: prepending the latest field, PS)
 > This is the proof of PS §4.3, eq. (4.41), filled in as in the user's notes ("Proof by induction (filled in)").
@@ -203,9 +203,9 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 >
 > $C'$ over the sets of disjoint pairs of $\{2, \dots, n\}$.
 >
-> **Step 2** ($\hat\phi_1^-$). It already stands to the left, where normal order wants it: $\hat\phi_1^-\,:\!\prod_{R}\hat\phi_k\!: = \,:\!\hat\phi_1^-\prod_R\hat\phi_k\!:$ (each term of [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 1, keeps its $\hat\phi^-$'s on the left).
+> **Step 2** ($\hat\phi_1^-$). It already stands to the left, where normal order wants it: $\hat\phi_1^-\,:\!\prod_{R}\hat\phi_k\!: = \,:\!\hat\phi_1^-\prod_R\hat\phi_k\!:$ (each term of [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 1, keeps its $\hat\phi^-$'s on the left).
 >
-> **Step 3** ($\hat\phi_1^+$). It must be moved to the right through the normal-ordered product. It commutes with every $\hat\phi^+$ and with each $\hat\phi_k^-$ it leaves the number $[\hat\phi_1^+, \hat\phi_k^-] = D_W(x_1 - x_k)$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]]). The commutator is a derivation, and resumming over the subsets as in Step 5 of [[§C6a.6 Wick's Theorem#^der-c6a-6-1|Derivation §C6a.6.1]],
+> **Step 3** ($\hat\phi_1^+$). It must be moved to the right through the normal-ordered product. It commutes with every $\hat\phi^+$ and with each $\hat\phi_k^-$ it leaves the number $[\hat\phi_1^+, \hat\phi_k^-] = D_W(x_1 - x_k)$ ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-2|Theorem §C6a.6.2]]). The commutator is a derivation, and resumming over the subsets as in Step 5 of [[§C6a.7 Wick's Theorem#^der-c6a-7-1|Derivation §C6a.7.1]],
 >
 > $$
 > \hat\phi_1^+\,:\!\prod_{k\in R}\hat\phi_k\!: = \,:\!\prod_{k\in R}\hat\phi_k\!:\,\hat\phi_1^+ + \sum_{l\in R}D_W(x_1 - x_l)\,:\!\prod_{k\in R,\,k\ne l}\hat\phi_k\!: .
@@ -213,7 +213,7 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 >
 > The first term is $:\!\hat\phi_1^+\prod_R\hat\phi_k\!:$ (a $\hat\phi^+$ on the right is in order).
 >
-> **Step 4** (latest time). $x_1^0 \ge x_l^0$, so $D_W(x_1 - x_l) = D_F(x_1 - x_l)$ (as in Step 6 of Derivation §C6a.6.1).
+> **Step 4** (latest time). $x_1^0 \ge x_l^0$, so $D_W(x_1 - x_l) = D_F(x_1 - x_l)$ (as in Step 6 of Derivation §C6a.7.1).
 >
 > **Step 5** (collect). Steps 2 and 3 add to $:\!\hat\phi_1\prod_R\hat\phi_k\!:$; the sum of Step 3 contracts $\hat\phi_1$ with each uncontracted field. Contractions among $2, \dots, n$ came from the induction hypothesis and ride along; those involving $\hat\phi_1$ come from the commutators. Each set of pairs of $\{1, \dots, n\}$ appears once (the bijection of Step 6 above, with $1$ in place of $n$). For $n = 3$, with $D_{ij} \equiv D_F(x_i - x_j)$ for the contraction of $\hat\phi_i$ with $\hat\phi_j$:
 >
@@ -229,14 +229,14 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 > **What the derivation shows.**
 > - PS move the *latest* field to the right through the rest; Yu and slide 9 append the *earliest* field and move its $\hat\phi^-$ to the left. Both pay one $D_W$ per misplaced pair, which the extreme time turns into $D_F$.
 
-^der-c6a-6-2b
+^der-c6a-7-2b
 
-*Uses:* [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]], [[§C6a.6 Wick's Theorem#^der-c6a-6-1|Derivation §C6a.6.1]] (Steps 5–6), [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]] (Steps 1 and 6)
+*Uses:* [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.7 Wick's Theorem#^der-c6a-7-1|Derivation §C6a.7.1]] (Steps 5–6), [[§C6a.7 Wick's Theorem#^der-c6a-7-2|Derivation §C6a.7.2]] (Steps 1 and 6)
 
-> [!example] Example §C6a.6.1: Four Fields
+> [!example] Example §C6a.7.1: Four Fields
 > ![[ph-qft-c6a-6-1.svg]]
 >
-> For four fields, Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]) has $1 + 6 + 3 = 10$ terms. With $D_{ij} \equiv D_F(x_i - x_j)$ for the contraction of $\hat\phi_i$ with $\hat\phi_j$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]; a contraction is a number and stands in front, and inside $:\;:$ the fields may be reordered, [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 3, so the remaining fields keep their written order):
+> For four fields, Wick's theorem ([[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]]) has $1 + 6 + 3 = 10$ terms. With $D_{ij} \equiv D_F(x_i - x_j)$ for the contraction of $\hat\phi_i$ with $\hat\phi_j$ ([[§C6a.6 Normal Ordering and Contractions#^def-c6a-6-1|Def. §C6a.6.1]]; a contraction is a number and stands in front, and inside $:\;:$ the fields may be reordered, [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 3, so the remaining fields keep their written order):
 >
 > $$
 > \begin{aligned}
@@ -251,21 +251,21 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 >
 > *Source: PHY 513 Lecture 14, slide 10 ("One contraction: $D_F(x_1 - x_2)N(\phi_3\phi_4) + \dots$ (6 terms total). Two contractions: $D_F(x_1 - x_2)D_F(x_3 - x_4) + \dots$ (3 terms total)") · the user's PHY 513 notes, Ch. 14 §14.2 (Derivation "Four fields") · PS §4.3, eq. (4.39) · Yu §6.3.1, eq. (6.167)*
 
-^ex-c6a-6-1
+^ex-c6a-7-1
 
 ![[ph-qft-c6-6-1.svg]]
 *Wick's theorem for four fields as on slide 10 and in PS eq. (4.39): a bracket over a pair is its contraction $D_F(x_i - x_j)$, the rest normal ordered ($N(\cdots)$ = the colons of these notes). Top: no contraction; middle: the six one-pair terms; bottom: the three complete contractions $(12)(34)$, $(13)(24)$, $(14)(23)$, with brackets of different heights where pairs cross or nest. Added figure.*
 
 > [!remark] Remark: Contracting several pairs
-> Contracting two pairs simply gives two Feynman propagators: each contraction is a $D_F$, so a term with two contractions is a product of two $D_F$'s times the normal-ordered product of the remaining fields; the contracted pairs need not be adjacent in the written product ($D_{13}:\!\hat\phi_2\hat\phi_4\!:$ in [[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]; PS p. 89: "When the contraction symbol connects two operators that are not adjacent, we still define it to give a factor of $D_F$").
+> Contracting two pairs simply gives two Feynman propagators: each contraction is a $D_F$, so a term with two contractions is a product of two $D_F$'s times the normal-ordered product of the remaining fields; the contracted pairs need not be adjacent in the written product ($D_{13}:\!\hat\phi_2\hat\phi_4\!:$ in [[§C6a.7 Wick's Theorem#^ex-c6a-7-1|Example §C6a.7.1]]; PS p. 89: "When the contraction symbol connects two operators that are not adjacent, we still define it to give a factor of $D_F$").
 >
 > *Source: PHY 513 Lecture 14, slide 10, and transcript · the user's PHY 513 notes, Ch. 14 §14.2 · PS §4.3, p. 89*
 
-^rem-c6a-6-1
+^rem-c6a-7-1
 
 ## Vacuum expectation values
 
-> [!theorem] Theorem §C6a.6.3: Free Vacuum Values Are Sums over Pairings
+> [!theorem] Theorem §C6a.7.3: Free Vacuum Values Are Sums over Pairings
 > For free fields at points $x_1, \dots, x_n$,
 >
 > $$
@@ -274,14 +274,14 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 >
 > the sum over all pairings of the $n$ fields ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]), the "complete contractions". It has $(n - 1)!!$ terms for $n$ even (3, 15, 105 for $n = 4, 6, 8$) and is zero for $n$ odd.
 >
-> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening: the free vacuum $|0\rangle$ only; in $|\Omega\rangle$ the ratio of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]] is needed ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening: the free vacuum $|0\rangle$ only; in $|\Omega\rangle$ the ratio of [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-6|Theorem §C6a.5.6]] is needed ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
 >
 > *Source: PHY 513 Lecture 14, slide 10 ("$\langle0|T(\phi_1\dots\phi_n)|0\rangle$ = all complete contractions") · the user's PHY 513 notes, Ch. 14 §14.2 (Principle "Vacuum expectation values: complete contractions", eq. (wickvev)) · PS §4.3, eq. (4.40) · Yu §6.3.1, eq. (6.168); §10.5.1, after eq. (10.187) ("完全缩并", complete contraction)*
 
-^thm-c6a-6-3
+^thm-c6a-7-3
 
 > [!derivation]- Derivation
-> **Step 1** (Wick: time order → normal order plus contractions). [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], 1, with each contracted pair $\hat\phi_i, \hat\phi_j$ replaced by $D_F(x_i - x_j)$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]), sorted by the number $k$ of contracted pairs:
+> **Step 1** (Wick: time order → normal order plus contractions). [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]], 1, with each contracted pair $\hat\phi_i, \hat\phi_j$ replaced by $D_F(x_i - x_j)$ ([[§C6a.6 Normal Ordering and Contractions#^def-c6a-6-1|Def. §C6a.6.1]]), sorted by the number $k$ of contracted pairs:
 >
 > $$
 > T\{\hat\phi_1\cdots\hat\phi_n\} = \,:\!\hat\phi_1\cdots\hat\phi_n\!:\, + \sum_{\{i,j\}}D_F(x_i - x_j)\,:\!\prod_{k\ne i,j}\hat\phi_k\!:\, + \sum_{\{i,j\},\{k,l\}}D_F(x_i - x_j)\,D_F(x_k - x_l)\,:\!\cdots\!:\, + \cdots ,
@@ -289,7 +289,7 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 >
 > with $\binom n2$ one-pair terms, $\frac12\binom n2\binom{n-2}2$ two-pair terms, and so on.
 >
-> **Step 2** (take the vacuum value; normal-ordered remainders vanish). The contractions are numbers and come out of $\langle0|\cdots|0\rangle$; every remainder with $r \ge 1$ fields vanishes ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2):
+> **Step 2** (take the vacuum value; normal-ordered remainders vanish). The contractions are numbers and come out of $\langle0|\cdots|0\rangle$; every remainder with $r \ge 1$ fields vanishes ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 2):
 >
 > $$
 > \langle0|:\!\hat\phi_1\cdots\hat\phi_n\!:|0\rangle = 0, \qquad D_F(x_i - x_j)\,\langle0|:\!\textstyle\prod_{k\ne i,j}\hat\phi_k\!:|0\rangle = 0 \ (n > 2), \qquad \dots, \qquad \Bigl(\prod_{\{i,j\}\in C}D_F(x_i - x_j)\Bigr)\langle0|:\!\textstyle\prod_{k\notin\cup C}\hat\phi_k\!:|0\rangle = 0 \ (r \ge 1) .
@@ -301,27 +301,27 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 > \langle0|T\{\hat\phi_1\cdots\hat\phi_n\}|0\rangle = \sum_{C\text{ covering }\{1,\dots,n\}}\;\prod_{\{i,j\}\in C}D_F(x_i - x_j) .
 > $$
 >
-> **Step 3** (these are the pairings). A set of disjoint pairs covering all of $\{1, \dots, n\}$ is a pairing ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]). A set $C$ of $k$ pairs leaves $r = n - 2k$ fields; for $n$ odd, $r$ is odd, so $r \ge 1$ for every $C$ and every term vanishes. For $n$ even their number is $(n - 1)!!$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]): $n = 4$, the three of [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]]; $n = 6$, the fifteen listed in [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]].
+> **Step 3** (these are the pairings). A set of disjoint pairs covering all of $\{1, \dots, n\}$ is a pairing ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]). A set $C$ of $k$ pairs leaves $r = n - 2k$ fields; for $n$ odd, $r$ is odd, so $r \ge 1$ for every $C$ and every term vanishes. For $n$ even their number is $(n - 1)!!$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]): $n = 4$, the three of [[§C6a.7 Wick's Theorem#^ex-c6a-7-2|Example §C6a.7.2]]; $n = 6$, the fifteen listed in [[§C6a.8 Feynman Diagrams for Correlation Functions#^der-c6a-8-1|Derivation §C6a.8.1]].
 >
 > ⚑ By-product: for $n$ odd there is always a field left over, too many $\hat a$'s or too many $\hat a^\dagger$'s — the operator reason behind the counting reason.
 >
 > **What the derivation shows.**
 > - Every free correlator is fixed by the two-point function $D_F$; the work of perturbation theory is combinatorics.
-> - Used next: Feynman diagrams ([[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]]).
+> - Used next: Feynman diagrams ([[§C6a.8 Feynman Diagrams for Correlation Functions|§C6a.8]]).
 
-^der-c6a-6-3
+^der-c6a-7-3
 
-*Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]
+*Uses:* [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]
 
 ![[ph-qft-ca-7-2.svg]]
-*Pairings ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]) drawn as arcs. (a) The three pairings of four points. (b) The step of the proof of [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]: the partner of the first point has $2k-1$ choices, and the remaining $2k-2$ points are paired in $(2k-3)!!$ ways, here $5\cdot3 = 15$. (c) An odd set has no pairing. Each pairing is one term of a free vacuum value (Theorem §C6a.6.3).*
+*Pairings ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]) drawn as arcs. (a) The three pairings of four points. (b) The step of the proof of [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]: the partner of the first point has $2k-1$ choices, and the remaining $2k-2$ points are paired in $(2k-3)!!$ ways, here $5\cdot3 = 15$. (c) An odd set has no pairing. Each pairing is one term of a free vacuum value (Theorem §C6a.7.3).*
 
-> [!example] Example §C6a.6.2: The Free Four-Point Function
+> [!example] Example §C6a.7.2: The Free Four-Point Function
 > ![[ph-qft-c6a-6-2.svg]]
 >
-> Write $D_{ij} \equiv D_F(x_i - x_j)$ for the contraction of $\hat\phi_i$ with $\hat\phi_j$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]).
+> Write $D_{ij} \equiv D_F(x_i - x_j)$ for the contraction of $\hat\phi_i$ with $\hat\phi_j$ ([[§C6a.6 Normal Ordering and Contractions#^def-c6a-6-1|Def. §C6a.6.1]]).
 >
-> **Step 1** (time order → normal order plus contractions). By Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]; the ten terms of [[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]),
+> **Step 1** (time order → normal order plus contractions). By Wick's theorem ([[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]]; the ten terms of [[§C6a.7 Wick's Theorem#^ex-c6a-7-1|Example §C6a.7.1]]),
 >
 > $$
 > \begin{aligned}
@@ -341,13 +341,13 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 > \end{aligned}
 > $$
 >
-> **Step 3** (the normal-ordered terms vanish). Split each field, $\hat\phi_i = \hat\phi_i^+ + \hat\phi_i^-$, with $\hat\phi^+|0\rangle = 0$ and $\langle0|\hat\phi^- = 0$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]). For two fields the normal-ordered product has four terms, each with the $+$ parts on the right ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 1):
+> **Step 3** (the normal-ordered terms vanish). Split each field, $\hat\phi_i = \hat\phi_i^+ + \hat\phi_i^-$, with $\hat\phi^+|0\rangle = 0$ and $\langle0|\hat\phi^- = 0$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]). For two fields the normal-ordered product has four terms, each with the $+$ parts on the right ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 1):
 >
 > $$
 > \langle0|:\!\hat\phi_k\hat\phi_l\!:|0\rangle = \langle0|\bigl(\hat\phi_k^+\hat\phi_l^+ + \hat\phi_k^-\hat\phi_l^+ + \hat\phi_l^-\hat\phi_k^+ + \hat\phi_k^-\hat\phi_l^-\bigr)|0\rangle = 0 + 0 + 0 + 0 :
 > $$
 >
-> the first three end in a $\hat\phi^+$ acting on $|0\rangle$, the last begins with a $\hat\phi^-$ acting on $\langle0|$. The same holds for each of the $2^4 = 16$ terms of $:\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\!:$, so all seven normal-ordered terms of Step 2 vanish ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2).
+> the first three end in a $\hat\phi^+$ acting on $|0\rangle$, the last begins with a $\hat\phi^-$ acting on $\langle0|$. The same holds for each of the $2^4 = 16$ terms of $:\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\!:$, so all seven normal-ordered terms of Step 2 vanish ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 2).
 >
 > **Step 4** (the complete contractions survive). With $\langle0|0\rangle = 1$, each $D_{ij}$ written out:
 >
@@ -372,29 +372,29 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 >
 > *Source: PHY 513 Lecture 14, slide 10 · PS §4.3, eq. (4.40) · Yu §6.3.1, eq. (6.168) · the user's PHY 513 notes, Ch. 14 §14.2 (numerical check)*
 
-^ex-c6a-6-2
+^ex-c6a-7-2
 
 > [!remark] Remark: Theorem and application
-> Wick's theorem is the operator statement ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), valid in any state, and so a little stronger than its vacuum value: it says something about the fields without putting them in a particular state. The application in this course is almost always the vacuum value ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]): normal ordering was introduced because normal-ordered products are easy to evaluate in the vacuum state. The full operator form is used when the states are not the vacuum, as for scattering states ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]]; the contractions of a field with an external particle are [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]]).
+> Wick's theorem is the operator statement ([[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]]), valid in any state, and so a little stronger than its vacuum value: it says something about the fields without putting them in a particular state. The application in this course is almost always the vacuum value ([[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]]): normal ordering was introduced because normal-ordered products are easy to evaluate in the vacuum state. The full operator form is used when the states are not the vacuum, as for scattering states ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]]; the contractions of a field with an external particle are [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]]).
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.2 (paragraph "Theorem and application")*
 
-^rem-c6a-6-2
+^rem-c6a-7-2
 
 > [!caution] Caution: In what sense Wick's theorem holds
-> Both sides of [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]] are operator-valued distributions in $(x_1, \dots, x_n)$. The identity holds after smearing every point with a test function, at distinct points ([[§C6a.5 Normal Ordering and Contractions#^cau-c6a-5-3|§C6a.5, Caution: In what sense these identities hold]]). The time-ordered product at distinct points with equal times is fixed by the equal-time commutation of the fields ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], 2). Perturbation theory applies the theorem to products in which several fields sit at the same point, the four fields of a vertex:
+> Both sides of [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]] are operator-valued distributions in $(x_1, \dots, x_n)$. The identity holds after smearing every point with a test function, at distinct points ([[§C6a.6 Normal Ordering and Contractions#^cau-c6a-6-3|§C6a.6, Caution: In what sense these identities hold]]). The time-ordered product at distinct points with equal times is fixed by the equal-time commutation of the fields ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], 2). Perturbation theory applies the theorem to products in which several fields sit at the same point, the four fields of a vertex:
 >
 > $$
 > T\{\hat\phi_x\hat\phi_y\,\hat\phi_I(z)^4\} \ni D_F(x - y)\,D_F(z_1 - z_2)\,D_F(z_3 - z_4)\Big|_{z_a = z} = D_F(x - y)\,D_F(0)^2 \qquad \text{(the pairs } \{x, y\},\ \{z_1, z_2\},\ \{z_3, z_4\}\text{)} .
 > $$
 >
-> The contractions among them, $D_F(0)$, are then formal symbols for a divergent quantity (§C6a.5, Caution, item 2), made finite only in a regularized theory ([[§C6a.10 Feynman Rules in Momentum Space#^rem-c6a-10-1|§C6a.10, Remark: The first ultraviolet divergence]]).
+> The contractions among them, $D_F(0)$, are then formal symbols for a divergent quantity (§C6a.6, Caution, item 2), made finite only in a regularized theory ([[§C6a.11 Feynman Rules in Momentum Space#^rem-c6a-11-1|§C6a.11, Remark: The first ultraviolet divergence]]).
 >
 > *Source: written here*
 
-^cau-c6a-6-2
+^cau-c6a-7-2
 
-> [!theorem]- ★ Theorem §C6a.6.4: Wick's Theorem for Ordinary Products
+> [!theorem]- ★ Theorem §C6a.7.4: Wick's Theorem for Ordinary Products
 > For free fields at any points $x_1, \dots, x_n$, with no time ordering,
 >
 > $$
@@ -405,12 +405,12 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening: the operator identity in any state, the vacuum value in $|0\rangle$ only.
 >
-> *Source: written here (the induction of Theorem §C6a.6.2 with the lemma's ⚑ by-product)*
+> *Source: written here (the induction of Theorem §C6a.7.2 with the lemma's ⚑ by-product)*
 
-^thm-c6a-6-4
+^thm-c6a-7-4
 
 > [!derivation]- Derivation
-> **Step 1** (the lemma without the time condition). Steps 1–5 of [[§C6a.6 Wick's Theorem#^der-c6a-6-1|Derivation §C6a.6.1]] never used the times (its ⚑ by-product):
+> **Step 1** (the lemma without the time condition). Steps 1–5 of [[§C6a.7 Wick's Theorem#^der-c6a-7-1|Derivation §C6a.7.1]] never used the times (its ⚑ by-product):
 >
 > $$
 > :\!\hat\phi_1\cdots\hat\phi_{n-1}\!:\,\hat\phi_n = \,:\!\hat\phi_1\cdots\hat\phi_n\!:\, + \sum_{k=1}^{n-1}D_W(x_k - x_n)\,:\!\prod_{i\ne k,\,n}\hat\phi_i\!: ,
@@ -426,7 +426,7 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 > \hat\phi_1\cdots\hat\phi_n = \sum_{C'}\prod_{\{i<j\}\in C'}D_W(x_i - x_j)\;:\!\prod_{k\in R(C')}\hat\phi_k\!:\;\hat\phi_n = \sum_{C'}\prod_{C'}D_W\Bigl[:\!\prod_{k\in R(C')}\hat\phi_k\,\hat\phi_n\!: + \sum_{l\in R(C')}D_W(x_l - x_n)\,:\!\prod_{k\in R(C'),\,k\ne l}\hat\phi_k\!:\Bigr] ,
 > $$
 >
-> $C'$ over the sets of disjoint pairs of $\{1, \dots, n - 1\}$, $R(C')$ the uncontracted indices. Every new pair is $\{l, n\}$ with $l < n$ and carries $D_W(x_l - x_n)$, the earlier-written field first. Each set $C$ of pairs of $\{1, \dots, n\}$ appears exactly once (the bijection of Step 6 of [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]]).
+> $C'$ over the sets of disjoint pairs of $\{1, \dots, n - 1\}$, $R(C')$ the uncontracted indices. Every new pair is $\{l, n\}$ with $l < n$ and carries $D_W(x_l - x_n)$, the earlier-written field first. Each set $C$ of pairs of $\{1, \dots, n\}$ appears exactly once (the bijection of Step 6 of [[§C6a.7 Wick's Theorem#^der-c6a-7-2|Derivation §C6a.7.2]]).
 >
 > **Step 4** ($n = 3$ written out). Step 3 from $\hat\phi_1\hat\phi_2 = \,:\!\hat\phi_1\hat\phi_2\!:\, + D_W(x_1 - x_2)$:
 >
@@ -434,7 +434,7 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 > \hat\phi_1\hat\phi_2\hat\phi_3 = \,:\!\hat\phi_1\hat\phi_2\hat\phi_3\!:\, + D_W(x_1 - x_3):\!\hat\phi_2\!: + D_W(x_2 - x_3):\!\hat\phi_1\!: + D_W(x_1 - x_2):\!\hat\phi_3\!: .
 > $$
 >
-> **Step 5** (vacuum value). $\langle0|:\!\cdots\!:|0\rangle = 0$ for a nonempty remainder ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2), so only the pairings survive. For $n = 4$:
+> **Step 5** (vacuum value). $\langle0|:\!\cdots\!:|0\rangle = 0$ for a nonempty remainder ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 2), so only the pairings survive. For $n = 4$:
 >
 > $$
 > \langle0|\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4|0\rangle = D_W(x_1 - x_2)D_W(x_3 - x_4) + D_W(x_1 - x_3)D_W(x_2 - x_4) + D_W(x_1 - x_4)D_W(x_2 - x_3) .
@@ -443,24 +443,24 @@ pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and 
 > **What the derivation shows.**
 > - Time ordering is needed only to turn each $D_W$ into the even $D_F$. Without it the same combinatorics hold, but each pair remembers which field stood to the left.
 
-^der-c6a-6-4
+^der-c6a-7-4
 
-*Uses:* [[§C6a.6 Wick's Theorem#^der-c6a-6-1|Derivation §C6a.6.1]], [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]
+*Uses:* [[§C6a.7 Wick's Theorem#^der-c6a-7-1|Derivation §C6a.7.1]], [[§C6a.7 Wick's Theorem#^der-c6a-7-2|Derivation §C6a.7.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]], [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]
 
 > [!remark] Remark: Yu's route
-> Yu §6.3 treats boson and fermion fields together, with a sign $\epsilon_{ab}$ for every exchange of two fermion fields (eqs. (6.140)–(6.143), (6.155), (6.163)), and defines the contraction as the vacuum expectation value of the time-ordered product (6.161), which equals PS's commutator definition (4.35). He proves the lemma ([[§C6a.6 Wick's Theorem#^lem-c6a-6-1|Lemma §C6a.6.1]]) in four steps: the $\Phi_b^{(+)}$ part (6.171)–(6.172); an induction over the positive-frequency factors (6.175)–(6.181); the general term (6.182)–(6.185); prior contractions (6.170). The theorem then follows by induction for $x_1^0 \ge \cdots \ge x_n^0$ (6.186)–(6.190) and, for any order, by exchanging fields in $T$ and $\mathsf N$ alike, which produces the same sign on both sides (6.191)–(6.193). Slide 9 follows Yu's direction (append the earliest field); PS (4.41) prepend the latest. Fermionic Wick contractions, with their signs, entered with Yukawa theory (Lecture 17): [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-2|§C6d.3, Theorem §C6d.3.2]].
+> Yu §6.3 treats boson and fermion fields together, with a sign $\epsilon_{ab}$ for every exchange of two fermion fields (eqs. (6.140)–(6.143), (6.155), (6.163)), and defines the contraction as the vacuum expectation value of the time-ordered product (6.161), which equals PS's commutator definition (4.35). He proves the lemma ([[§C6a.7 Wick's Theorem#^lem-c6a-7-1|Lemma §C6a.7.1]]) in four steps: the $\Phi_b^{(+)}$ part (6.171)–(6.172); an induction over the positive-frequency factors (6.175)–(6.181); the general term (6.182)–(6.185); prior contractions (6.170). The theorem then follows by induction for $x_1^0 \ge \cdots \ge x_n^0$ (6.186)–(6.190) and, for any order, by exchanging fields in $T$ and $\mathsf N$ alike, which produces the same sign on both sides (6.191)–(6.193). Slide 9 follows Yu's direction (append the earliest field); PS (4.41) prepend the latest. Fermionic Wick contractions, with their signs, entered with Yukawa theory (Lecture 17): [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-2|§C6d.3, Theorem §C6d.3.2]].
 >
 > *Source: Yu §6.3.1–§6.3.2, pp. 218–227 · PS §4.3, p. 90 · PHY 513 Lecture 14, slide 9*
 
-^rem-c6a-6-3
+^rem-c6a-7-3
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — the pairings and their number, the two pieces of mathematics used (Theorem §C6a.6.2, its by-product count, Theorem §C6a.6.3, Examples §C6a.6.1–§C6a.6.2).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — the pairings and their number, the two pieces of mathematics used (Theorem §C6a.7.2, its by-product count, Theorem §C6a.7.3, Examples §C6a.7.1–§C6a.7.2).
 
 > [!remark]- Connections
 > - The vacuum value of Wick's theorem has the form of the moment formula of a Gaussian: free fields are Gaussian, with covariance $D_F$, and in the path integral this is literal — [[§CA.8 Pairings, Diagrams and Symmetry Factors#^rem-ca-8-1|§CA.8, ★ Remark: The same sum is the moment formula of a Gaussian]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-4|§C2b.7, Remark: The propagator as a Gaussian covariance (preview)]].
-> - At coincident points the two-field case produced the zero-point energy; at a vertex of $\phi^4$ theory the same coincident contractions produce the first loops — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]].
-> - The inputs of the theorem in perturbation theory are the terms of the Dyson series, products of free fields with four at each interaction point — [[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]].
+> - At coincident points the two-field case produced the zero-point energy; at a vertex of $\phi^4$ theory the same coincident contractions produce the first loops — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]], [[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-1|Theorem §C6a.8.1]].
+> - The inputs of the theorem in perturbation theory are the terms of the Dyson series, products of free fields with four at each interaction point — [[§C6a.4 The Time-Evolution Operator Between Two Times#^ex-c6a-4-1|Example §C6a.4.1]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^thm-c6a-5-7|Theorem §C6a.5.7]].
 > - In the non-relativistic many-body problem the same theorem, for ladder operators, organizes perturbation theory around a Fermi sea or a condensate — [[§C12.2★ Second Quantization|QM §C12.2★]].

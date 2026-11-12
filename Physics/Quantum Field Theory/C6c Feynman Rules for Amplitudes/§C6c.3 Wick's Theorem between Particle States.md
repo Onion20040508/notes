@@ -30,7 +30,7 @@ tags: [quantum-field-theory, level-c]
 > \hat\phi_I(x_a),\ \hat\phi_I(x_b) \;\longmapsto\; D_F(x_a - x_b), \qquad \hat\phi_I(x),\ |\mathbf k\rangle \;\longmapsto\; e^{-ik\cdot x}, \qquad \langle\mathbf p|,\ \hat\phi_I(x) \;\longmapsto\; e^{+ip\cdot x}, \qquad \langle\mathbf p|,\ |\mathbf k\rangle \;\longmapsto\; 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k) ,
 > $$
 >
-> with no pair of two incoming or two outgoing particles. Equivalently: in Wick's theorem $T\{\cdots\} = \sum_C\prod D_F\;{:}\text{rest}{:}$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), a normal-ordered remainder contributes only through the terms in which **every** one of its fields is contracted with an external particle ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]]). Several fields and complex fields: the same, with the contractions of [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]] and [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 3.
+> with no pair of two incoming or two outgoing particles. Equivalently: in Wick's theorem $T\{\cdots\} = \sum_C\prod D_F\;{:}\text{rest}{:}$ ([[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]]), a normal-ordered remainder contributes only through the terms in which **every** one of its fields is contracted with an external particle ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]]). Several fields and complex fields: the same, with the contractions of [[§C6a.14 Feynman Rules for Polynomial Interactions#^lem-c6a-14-1|Lemma §C6a.14.1]] and [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 3.
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free fields between free states, exact, independent of the dynamics; used with the Dyson series as in the opening.
 >
@@ -39,13 +39,13 @@ tags: [quantum-field-theory, level-c]
 ^thm-c6c-3-1
 
 > [!derivation]- Derivation
-> **Step 1** (Wick). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], an operator identity,
+> **Step 1** (Wick). By [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]], an operator identity,
 >
 > $$
 > \langle f|T\{\hat\phi_1\cdots\hat\phi_\ell\}|i\rangle = \sum_C\;\prod_{\{a,b\}\in C}D_F(x_a - x_b)\;\langle f|{:}\textstyle\prod_{c\in R_C}\hat\phi_c{:}|i\rangle , \qquad R_C = \{1, \dots, \ell\}\setminus\cup C .
 > $$
 >
-> **Step 2** (split the remainder). By [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 1,
+> **Step 2** (split the remainder). By [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 1,
 >
 > $$
 > {:}\prod_{c\in R}\hat\phi_c{:} = \sum_{A\subseteq R}\;\prod_{a\in A}\hat\phi_a^-\prod_{b\in R\setminus A}\hat\phi_b^+ .
@@ -86,15 +86,15 @@ tags: [quantum-field-theory, level-c]
 > the three full contractions, the pairs of each named under its value.
 >
 > **What the derivation shows.**
-> - The vacuum version ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]) is the case $n = m = 0$: then only $R = \varnothing$ survives.
+> - The vacuum version ([[§C6a.7 Wick's Theorem#^thm-c6a-7-3|Theorem §C6a.7.3]]) is the case $n = m = 0$: then only $R = \varnothing$ survives.
 > - The outgoing–incoming pairs are the particles that pass through untouched; with all outgoing momenta different from the incoming ones they vanish, and every particle must attach to a field → [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]].
 
 ^der-c6c-3-1
 
-*Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]]
+*Uses:* [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]]
 
 > [!theorem] Theorem §C6c.3.2: The Contraction Rule for S-Matrix Elements
-> Expand $\langle\mathbf p_1\cdots\mathbf p_m|\,T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_\ell)\}\,|\mathbf k_1\cdots\mathbf k_n\rangle$ by Wick's theorem, $T\{\cdots\} = \sum_C\prod D_F\;{:}\text{rest}{:}$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]). Then
+> Expand $\langle\mathbf p_1\cdots\mathbf p_m|\,T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_\ell)\}\,|\mathbf k_1\cdots\mathbf k_n\rangle$ by Wick's theorem, $T\{\cdots\} = \sum_C\prod D_F\;{:}\text{rest}{:}$ ([[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]]). Then
 > 1. a normal-ordered remainder contributes only through the terms in which **every** one of its fields is contracted with an external particle ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]]); a remainder of $r$ fields needs $r \le n + m$;
 > 2. if no outgoing momentum equals an incoming one, **every particle** is contracted with a field: a nonzero term contracts the fields one by one with the particles and the remaining fields with each other;
 > 3. for bosons no sign arises: the order in which the fields and the particles stand does not matter.
@@ -143,7 +143,7 @@ tags: [quantum-field-theory, level-c]
 ^def-c6c-3-1
 
 > [!caution] Caution: A line is a δ, not a D_F
-> The same drawn line means two things in Lecture 16. In the diagrams of ${}_0\langle f|T\{\cdots\}|i\rangle_0$ two kinds of line look alike. A line from an incoming particle straight to an outgoing one, touching no vertex, is the contraction of the outgoing with the incoming particle, the overlap $\langle\mathbf p|\mathbf k\rangle = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k)$; a line between two vertices, or a loop, is $D_F$. The slides: "Caution: line = $\delta$ (not standard rule where line = $D_F$)" (slide 10); "line = $D_F$ in figure 8 but line = $\delta$ inside round brackets" (slide 14); "direct line is a $\delta$-function" (slide 16). In the diagrams of correlation functions every line is a $D_F$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]); an external line of an amplitude diagram is neither: a plane wave $e^{\mp ip\cdot x}$ in position space ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 2) and $1$ in momentum space. Figure ph-qft-c6b-2-5 and the user's notes draw the $\delta$-lines ([[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]]) dashed and keep solid lines for propagators and wave functions. Diagram rules in which a single line is a delta function appear only in Lecture 16.
+> The same drawn line means two things in Lecture 16. In the diagrams of ${}_0\langle f|T\{\cdots\}|i\rangle_0$ two kinds of line look alike. A line from an incoming particle straight to an outgoing one, touching no vertex, is the contraction of the outgoing with the incoming particle, the overlap $\langle\mathbf p|\mathbf k\rangle = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k)$; a line between two vertices, or a loop, is $D_F$. The slides: "Caution: line = $\delta$ (not standard rule where line = $D_F$)" (slide 10); "line = $D_F$ in figure 8 but line = $\delta$ inside round brackets" (slide 14); "direct line is a $\delta$-function" (slide 16). In the diagrams of correlation functions every line is a $D_F$ ([[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-4|Theorem §C6a.9.4]]); an external line of an amplitude diagram is neither: a plane wave $e^{\mp ip\cdot x}$ in position space ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 2) and $1$ in momentum space. Figure ph-qft-c6b-2-5 and the user's notes draw the $\delta$-lines ([[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]]) dashed and keep solid lines for propagators and wave functions. Diagram rules in which a single line is a delta function appear only in Lecture 16.
 >
 > *Source: PHY 513 Lecture 16, slides 10, 14, 16, and transcript · the user's PHY 513 notes, Lecture 16 update, §16.3, Caution "The same line means two different things in the lecture" · PS §4.6, eqs. (4.91), (4.96)*
 
@@ -167,14 +167,14 @@ tags: [quantum-field-theory, level-c]
 > \text{term} = \prod_{\text{pieces }P}\Bigl(\int\prod_{v\in P}d^4z_v\;\prod_{\text{pairs in }P}(\text{value})\Bigr) .
 > $$
 >
-> **Step 2** (one delta per piece). A lone pair is the overlap $\langle\mathbf p|\mathbf k\rangle = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k)$ (Theorem §C6c.3.1). For a piece with vertices, insert the Fourier form of each internal line; the particles enter through $e^{-ik\cdot z}$, $e^{+ip\cdot z}$ ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 2); each vertex integral gives $(2\pi)^4\delta^4$ of the momenta at that vertex ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]], 1). Doing the internal momentum integrals along a spanning tree of the piece (Step 3 of [[§C6a.13 Feynman Rules for Polynomial Interactions#^der-c6a-13-3|Derivation §C6a.13.3]]) uses all deltas but one, which is $(2\pi)^4\delta^4(\sum_{\rm in}k - \sum_{\rm out}p)$ over the particles of the piece.
+> **Step 2** (one delta per piece). A lone pair is the overlap $\langle\mathbf p|\mathbf k\rangle = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k)$ (Theorem §C6c.3.1). For a piece with vertices, insert the Fourier form of each internal line; the particles enter through $e^{-ik\cdot z}$, $e^{+ip\cdot z}$ ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 2); each vertex integral gives $(2\pi)^4\delta^4$ of the momenta at that vertex ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-5|Theorem §C6a.14.5]], 1). Doing the internal momentum integrals along a spanning tree of the piece (Step 3 of [[§C6a.14 Feynman Rules for Polynomial Interactions#^der-c6a-14-3|Derivation §C6a.14.3]]) uses all deltas but one, which is $(2\pi)^4\delta^4(\sum_{\rm in}k - \sum_{\rm out}p)$ over the particles of the piece.
 >
 > **What the derivation shows.**
 > - The delta of a piece comes from the external plane waves of that piece alone; particles in different pieces exchange no momentum. Which such terms are not scattering: [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]]; the single piece that remains: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]].
 
 ^der-c6c-3-3
 
-*Uses:* [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^der-c6a-13-3|Derivation §C6a.13.3]]
+*Uses:* [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-5|Theorem §C6a.14.5]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^der-c6a-14-3|Derivation §C6a.14.3]]
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.

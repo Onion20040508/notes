@@ -145,7 +145,7 @@ The box turns the delta functions of this section into numbers.
 >
 > **What the derivation shows.**
 > - The squared amplitude carries one factor $\tilde V\tilde T$; the second delta function survives and becomes part of the phase space ([[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]], the annotated formula).
-> - The same box factor, written $2T\cdot V$, made every vacuum bubble proportional to the volume of spacetime ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]); $\tilde T = 2T$.
+> - The same box factor, written $2T\cdot V$, made every vacuum bubble proportional to the volume of spacetime ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-3|Theorem §C6a.12.3]]); $\tilde T = 2T$.
 
 ^der-c6b-2-3
 
@@ -447,7 +447,7 @@ The box turns the delta functions of this section into numbers.
 > - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the plane-wave integral $\int d^4x\,e^{\pm ip\cdot x} = (2\pi)^4\delta^4(p)$, whose value at $p = 0$ over the box is $\int d^4x = \tilde V\tilde T$ (Derivation §C6b.2.3, Step 4).
 
 > [!remark]- Connections
-> - The box is the regularization of [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]] and [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]]: the same $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ that made the zero-point energy a volume times a density ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]), and the same $(2\pi)^4\delta^4(0)$ as the vacuum bubbles ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]).
+> - The box is the regularization of [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]] and [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]]: the same $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ that made the zero-point energy a volume times a density ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]), and the same $(2\pi)^4\delta^4(0)$ as the vacuum bubbles ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-3|Theorem §C6a.12.3]]).
 > - A rate linear in the duration, with a density of final states, is Fermi's golden rule; here the density is $\tilde V\,d^3p/(2\pi)^3$ per particle and energy conservation is the $\delta(E_A + E_B - \sum E_j)$ of [[§C6b.2 Transition Probabilities in a Box#^der-c6b-2-5|Derivation §C6b.2.5]], Step 3 — [[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]].
 > - The careful version of every step, without the box: wave packets of unit norm ([[§C6b.8 Wave Packets and the Cross Section#^thm-c6b-8-2|Theorem §C6b.8.2]]) instead of $\langle i|i\rangle = 4E_AE_B\tilde V^2$, and an integral over the impact parameter instead of $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ — [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]], table in its opening.
 > - The decay rate is the same chain with one initial particle, $\langle i|i\rangle = 2E_A\tilde V$ — [[§C6b.5 Decay Widths#^thm-c6b-5-4|Theorem §C6b.5.4]].

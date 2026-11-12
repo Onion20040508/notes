@@ -21,12 +21,12 @@ $$
 $$
 This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] (the source switches off; [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6c.7]]). In [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (a permanent interaction) it is valid at **lowest order**; beyond it the external particles carry $\sqrt Z$ and the physical mass ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]]; [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]; the LSZ formula, named in Lecture 16 and left to the second semester; QFT C10, planned). The lemmas and Theorem §C6c.3.1 are statements about free fields and free states, exact in any case. Each box states its scope.
 
-*Conventions* ([[Larsen PHY 513]]): $\hat\phi_I^\pm$ the positive- and negative-frequency parts ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]); a contraction with an external particle is written, like a contraction between fields ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]), as the value it equals: the plane wave $e^{-ik\cdot x}$ for $\hat\phi_I(x)$ with an incoming particle $|\mathbf k\rangle$, $e^{+ip\cdot x}$ for an outgoing particle $\langle\mathbf p|$ with $\hat\phi_I(x)$, with the pair named in words or as "pair $\longmapsto$ value" (PS (4.94) and Yu (7.15), (7.18) draw the bracket of the slides over the field and the state; in these notes the bracket appears in figures only); for a complex field $|\mathbf p^+\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$ (particle), $|\mathbf p^-\rangle = \sqrt{2E_{\mathbf p}}\,\hat b^\dagger_{\mathbf p}|0\rangle$ (antiparticle), as Yu (7.133)–(7.134). The vertex integrals give momentum deltas, $\int d^4x\,e^{ip\cdot x} = (2\pi)^4\delta^4(p)$ as tempered distributions ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], listed at the end).
+*Conventions* ([[Larsen PHY 513]]): $\hat\phi_I^\pm$ the positive- and negative-frequency parts ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]); a contraction with an external particle is written, like a contraction between fields ([[§C6a.6 Normal Ordering and Contractions#^def-c6a-6-1|Def. §C6a.6.1]]), as the value it equals: the plane wave $e^{-ik\cdot x}$ for $\hat\phi_I(x)$ with an incoming particle $|\mathbf k\rangle$, $e^{+ip\cdot x}$ for an outgoing particle $\langle\mathbf p|$ with $\hat\phi_I(x)$, with the pair named in words or as "pair $\longmapsto$ value" (PS (4.94) and Yu (7.15), (7.18) draw the bracket of the slides over the field and the state; in these notes the bracket appears in figures only); for a complex field $|\mathbf p^+\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$ (particle), $|\mathbf p^-\rangle = \sqrt{2E_{\mathbf p}}\,\hat b^\dagger_{\mathbf p}|0\rangle$ (antiparticle), as Yu (7.133)–(7.134). The vertex integrals give momentum deltas, $\int d^4x\,e^{ip\cdot x} = (2\pi)^4\delta^4(p)$ as tempered distributions ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], listed at the end).
 
 ## External states
 
 > [!theorem] Lemma §C6c.2.1: Contraction of Fields with Outgoing Particles
-> Let $|\mathbf k_1\cdots\mathbf k_n\rangle = \hat a^\dagger_{\mathbf k_1}\cdots\hat a^\dagger_{\mathbf k_n}|0\rangle$ and $k_i^0 = E_{\mathbf k_i}$. For a normal-ordered product of $r$ free fields ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]]),
+> Let $|\mathbf k_1\cdots\mathbf k_n\rangle = \hat a^\dagger_{\mathbf k_1}\cdots\hat a^\dagger_{\mathbf k_n}|0\rangle$ and $k_i^0 = E_{\mathbf k_i}$. For a normal-ordered product of $r$ free fields ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]]),
 >
 > $$
 > \langle\mathbf k_1\cdots\mathbf k_n|\,{:}\hat\phi_I(y_1)\cdots\hat\phi_I(y_r){:}\,|0\rangle = \delta_{rn}\sum_{\sigma\in S_n}\prod_{i=1}^n\frac{e^{ik_i\cdot y_{\sigma(i)}}}{\sqrt{2E_{\mathbf k_i}}} :
@@ -67,11 +67,11 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > **Step 4** (count). Apply $\hat a_{\mathbf k_1}, \dots, \hat a_{\mathbf k_n}$ in turn. If $r < n$, an $\hat a$ meets $|0\rangle$ with no $\hat\phi^-$ left: $0$. If $r > n$, after all $\hat a$'s a $\hat\phi^- \propto \hat a^\dagger$ stands next to $\langle0|$: $0$. If $r = n$, $\hat a_{\mathbf k_1}$ picks $y_{\sigma(1)}$ ($n$ choices), $\hat a_{\mathbf k_2}$ one of the remaining ($n - 1$), …: one term per bijection $\sigma$, $n!$ terms, the stated sum. For $n = 1$: $\langle\mathbf k|\hat\phi_I^-(y)|0\rangle = e^{ik\cdot y}/\sqrt{2E_{\mathbf k}}$.
 >
-> **Step 5** (in Wick's theorem). $T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_\ell)\} = \sum(\text{products of }D_F)\cdot{:}\text{remaining }r\text{ fields}{:}$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), $r = \ell, \ell - 2, \dots$; by Step 4 only $r = n$ survives between $\langle\mathbf k_1\cdots\mathbf k_n|$ and $|0\rangle$. Relativistic normalization multiplies by $\prod_i\sqrt{2E_{\mathbf k_i}}$.
+> **Step 5** (in Wick's theorem). $T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_\ell)\} = \sum(\text{products of }D_F)\cdot{:}\text{remaining }r\text{ fields}{:}$ ([[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]]), $r = \ell, \ell - 2, \dots$; by Step 4 only $r = n$ survives between $\langle\mathbf k_1\cdots\mathbf k_n|$ and $|0\rangle$. Relativistic normalization multiplies by $\prod_i\sqrt{2E_{\mathbf k_i}}$.
 
 ^der-c6c-2-1
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], [[§C6a.7 Wick's Theorem#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]
 
 > [!caution] Caution: Two normalizations of one-particle states
 > Problem Set 8 uses both. Problem 3 (PS 4.1) takes $|\mathbf k\rangle = \hat a^\dagger_{\mathbf k}|0\rangle$, with
@@ -125,7 +125,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > For $n = 2$: $\hat\phi_I^+(y)|\mathbf k_1\mathbf k_2\rangle = \frac{e^{-ik_1\cdot y}}{\sqrt{2E_{\mathbf k_1}}}|\mathbf k_2\rangle + \frac{e^{-ik_2\cdot y}}{\sqrt{2E_{\mathbf k_2}}}|\mathbf k_1\rangle$ (Yu (7.87)).
 >
-> **Step 3** (part 1, the normal-ordered product). $\hat\phi_I$ is self-adjoint and $(\hat\phi_I^\pm)^\dagger = \hat\phi_I^\mp$, so the adjoint of a normal-ordered product is the normal-ordered product of the same fields in reverse order, which is the same operator ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 3):
+> **Step 3** (part 1, the normal-ordered product). $\hat\phi_I$ is self-adjoint and $(\hat\phi_I^\pm)^\dagger = \hat\phi_I^\mp$, so the adjoint of a normal-ordered product is the normal-ordered product of the same fields in reverse order, which is the same operator ([[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], 3):
 >
 > $$
 > \bigl({:}\hat\phi_I(y_1)\cdots\hat\phi_I(y_r){:}\bigr)^\dagger = {:}\hat\phi_I(y_r)\cdots\hat\phi_I(y_1){:} = {:}\hat\phi_I(y_1)\cdots\hat\phi_I(y_r){:} .
@@ -153,7 +153,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 
 ^der-c6c-2-2
 
-*Uses:* [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]]
+*Uses:* [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C6a.6 Normal Ordering and Contractions#^thm-c6a-6-1|Theorem §C6a.6.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]]
 
 > [!theorem] Lemma §C6c.2.3: The Overlap of Two n-Particle States
 > Let $|\mathbf k_1\cdots\mathbf k_n\rangle = \hat a^\dagger_{\mathbf k_1}\cdots\hat a^\dagger_{\mathbf k_n}|0\rangle$ and $|\mathbf p_1\cdots\mathbf p_{n'}\rangle = \hat a^\dagger_{\mathbf p_1}\cdots\hat a^\dagger_{\mathbf p_{n'}}|0\rangle$. Then
@@ -237,7 +237,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > **What the derivation shows.**
 > - The $n!$ belongs to the identical fields; at a vertex it cancels the $\frac{1}{4!}$ of $\phi^4$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-4|Theorem §C6c.4.4]]); when legs close on each other fewer assignments are distinct and the symmetry factor is left over ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]]).
-> - Several kinds of particles: one such sum per kind, since a particle attaches only to a field of its kind ([[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]]; the count per kind is Step 3 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]]).
+> - Several kinds of particles: one such sum per kind, since a particle attaches only to a field of its kind ([[§C6a.14 Feynman Rules for Polynomial Interactions#^lem-c6a-14-1|Lemma §C6a.14.1]]; the count per kind is Step 3 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]]).
 
 ^der-c6c-2-4
 
@@ -258,7 +258,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > \int d^4x\;e^{i(\sum_jp_j - \sum_ik_i)\cdot x} = (2\pi)^4\delta^4\Bigl(\sum_ik_i - \sum_jp_j\Bigr) ,
 > $$
 >
-> and an internal line ending at $x$ adds its momentum to the balance ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]], 1): four-momentum is conserved at every vertex.
+> and an internal line ending at $x$ adds its momentum to the balance ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-5|Theorem §C6a.14.5]], 1): four-momentum is conserved at every vertex.
 > 3. For a complex field ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]]) particle and antiparticle carry the same phases, $e^{-ip\cdot x}$ in and $e^{+ip\cdot x}$ out; they differ only in which of $\hat\phi$, $\hat\phi^\dagger$ they contract with ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 3).
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]; *applies:* free fields and free relativistic states, exact, independent of the dynamics; the vertex integral as an identity of tempered distributions ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]).
@@ -278,7 +278,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > **Step 3** (part 2, the vertex integral). With $q = \sum_jp_j - \sum_ik_i$, [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] gives $\int d^4x\,e^{iq\cdot x} = (2\pi)^4\delta^4(q)$, and $\delta^4(q) = \delta^4(-q)$ (the delta is even) gives the stated form.
 >
-> **Step 4** (part 2, internal lines). An internal line from $x$ to $y$ is $D_F(x - y) = \int\frac{d^4\ell}{(2\pi)^4}\tilde D_F(\ell)\,e^{-i\ell\cdot(x - y)}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]): at $x$ it contributes $e^{-i\ell\cdot x}$, the same form as an incoming particle of momentum $\ell$ (and $e^{+i\ell\cdot y}$ at $y$, outgoing). The integral over $x$ becomes $(2\pi)^4\delta^4(\sum_ik_i + \sum_{\rm lines\ in}\ell - \sum_jp_j - \sum_{\rm lines\ out}\ell)$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]], 1).
+> **Step 4** (part 2, internal lines). An internal line from $x$ to $y$ is $D_F(x - y) = \int\frac{d^4\ell}{(2\pi)^4}\tilde D_F(\ell)\,e^{-i\ell\cdot(x - y)}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]): at $x$ it contributes $e^{-i\ell\cdot x}$, the same form as an incoming particle of momentum $\ell$ (and $e^{+i\ell\cdot y}$ at $y$, outgoing). The integral over $x$ becomes $(2\pi)^4\delta^4(\sum_ik_i + \sum_{\rm lines\ in}\ell - \sum_jp_j - \sum_{\rm lines\ out}\ell)$ ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-5|Theorem §C6a.14.5]], 1).
 >
 > **Step 5** (part 3). [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 3: $\hat\phi(x)$ with $|\mathbf p^+\rangle$ and $\hat\phi^\dagger(x)$ with $|\mathbf p^-\rangle$ contract to $e^{-ip\cdot x}$, $\langle\mathbf p^+|$ with $\hat\phi^\dagger(x)$ and $\langle\mathbf p^-|$ with $\hat\phi(x)$ to $e^{+ip\cdot x}$; the other four combinations vanish.
 >
@@ -287,7 +287,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 
 ^der-c6c-2-5
 
-*Uses:* [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]]
+*Uses:* [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-5|Theorem §C6a.14.5]]
 
 > [!remark] Remark: Yu's route
 > Yu computes $S$-matrix elements this way before any correlation function: he defines the contractions of each field with initial and final particles (eqs. (7.13)–(7.18)), lists all first-order $T$-matrix elements of Yukawa theory and filters them kinematically (p. 272), reads the position- and then momentum-space rules off the results (eqs. (7.25)–(7.28), §7.2; this chapter follows the same order, [[§C6c.2 Contractions with External Particles|§C6c.2]]–[[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]]), and justifies them only in ch. 10 through LSZ ("our method for leading-order processes in chapters 7, 8, 9 is justified", p. 474). He keeps the field operators in the order of $\mathcal L_{\rm int}$ to fix fermion signs (boxed rule, p. 268; in the vault's form, crossing contractions: [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4|§C6d.3, Theorem §C6d.3.4]]); for scalars there are no signs. Yukawa theory with these rules: [[· C6d Feynman Rules for Fermions|C6d]]. The course stated the amputation rule from correlation functions at the end of Lecture 15 ([[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]]) and then took Yu's direct route in Lecture 16, for $2 \to 2$ in $\phi^4$; the two routes agree at lowest order ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]).
