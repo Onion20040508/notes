@@ -505,7 +505,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 ^thm-c6b-3-10
 
 > [!derivation]- Derivation
-> **Step 1** (part 1). $\sum_{m_f}|\langle m_f|\psi\rangle|^2 = \sum_{m_f}\langle\psi|m_f\rangle\langle m_f|\psi\rangle = \langle\psi|\bigl(\sum_{m_f}|m_f\rangle\langle m_f|\bigr)|\psi\rangle = \langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ (completeness of an orthonormal basis, [[§45 The Completeness Relation#^prop-45-1|556 Prop. §45.1]]).
+> **Step 1** (part 1). $\sum_{m_f}|\langle m_f|\psi\rangle|^2 = \sum_{m_f}\langle\psi|m_f\rangle\langle m_f|\psi\rangle = \langle\psi|\bigl(\sum_{m_f}|m_f\rangle\langle m_f|\bigr)|\psi\rangle = \langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ (completeness of an orthonormal basis, [[§47 The Completeness Relation#^prop-47-1|556 Prop. §47.1]]).
 >
 > **Step 2** (part 2). $\sum_{m_i}\langle m_i|X|m_i\rangle$ is the trace of $X$ in the basis $\{|m_i\rangle\}$.
 >
@@ -517,7 +517,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 
 ^der-c6b-3-10
 
-*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§45 The Completeness Relation#^prop-45-1|556 Prop. §45.1]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-2|QM Theorem §C1.4.2]]
+*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§47 The Completeness Relation#^prop-47-1|556 Prop. §47.1]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-2|QM Theorem §C1.4.2]]
 
 > [!theorem] Theorem §C6b.3.11: The Cross Section Is an Area for Every n
 > With $N = 2 + n$ external particles, $[d\sigma] = -2$ for every $n$: the dimension of an area.
@@ -650,7 +650,7 @@ Two more factors do not appear in $d\sigma$. $\frac{1}{S_{\rm id}}$ enters only 
 >
 > - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1 — δ under a linear change of variables, $\delta^4(\Lambda q) = |\det\Lambda|^{-1}\delta^4(q) = \delta^4(q)$: the momentum-conserving delta function is Lorentz invariant, so the cross section (Derivation §C6b.3.5, Step 3) and the phase space $d\Pi_n$ (Derivation §C6b.3.8, Step 2) are.
 >
-> From the Math vault: [[§45 The Completeness Relation#^prop-45-1|556 Prop. §45.1]] — completeness of an orthonormal basis, which turns the sum over final spins into $\langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ (Theorem §C6b.3.10, 1).
+> From the Math vault: [[§47 The Completeness Relation#^prop-47-1|556 Prop. §47.1]] — completeness of an orthonormal basis, which turns the sum over final spins into $\langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ (Theorem §C6b.3.10, 1).
 
 > [!remark]- Connections
 > - The operational cross section and its classical meaning as an area in the plane of impact parameters — [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-1|Def. §C6b.8.1]], [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-2|Def. §C6b.8.2]], [[§B4.2 Scattering Cross-Sections and Rutherford Scattering#^def-b4-2-1|CM Def. §B4.2.1]].

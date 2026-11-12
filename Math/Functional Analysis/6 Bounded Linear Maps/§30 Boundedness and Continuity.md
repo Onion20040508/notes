@@ -38,7 +38,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 ^def-30-2
 
 > [!remark]- Connections
-> - The case $Y = \mathbb{F}$: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]; the case $X = Y = H$, the bounded operators on a Hilbert space $H$ of the companion chapter: [[§45 The Completeness Relation|§45]].
+> - The case $Y = \mathbb{F}$: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]; the case $X = Y = H$, the bounded operators on a Hilbert space $H$ of the companion chapter: [[§47 The Completeness Relation|§47]].
 
 > [!definition] Definition §30.3: Operator Norm
 > For a bounded $T : X \to Y$ (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]), and $X \neq \{0\}$, its **norm** is
@@ -55,7 +55,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 > [!remark]- Connections
 > - Finite-dimensional home (where the sup is a max): [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
-> - The case $Y = \mathbb{F}$ is the dual norm, [[§31 Dual Spaces#^def-31-1|Def. §31.1]]; the case $X = Y = H$, the operator norm of a bounded operator on $H$ in the companion chapter: [[§45 The Completeness Relation|§45]].
+> - The case $Y = \mathbb{F}$ is the dual norm, [[§31 Dual Spaces#^def-31-1|Def. §31.1]]; the case $X = Y = H$, the operator norm of a bounded operator on $H$ in the companion chapter: [[§47 The Completeness Relation|§47]].
 
 > [!theorem] Proposition §30.1: The Operator Norm
 > Let $T : X \to Y$ be a bounded linear map, $X \neq \{0\}$. Then
@@ -87,7 +87,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 > [!remark]- Connections
 > - Finite-dimensional home: [[§28 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
-> - Parts (b) and (c) applied to the dual norm in the companion chapter (the norm is the smallest admissible constant): [[§44 Bras, Kets, and the Riesz Map|§44]].
+> - Parts (b) and (c) applied to the dual norm in the companion chapter (the norm is the smallest admissible constant): [[§46 Bras, Kets, and the Riesz Map|§46]].
 
 > [!theorem] Proposition §30.2: Continuous if and only if Bounded
 > A linear map $T : X \to Y$ between normed linear spaces is continuous if and only if it is bounded.
@@ -154,7 +154,7 @@ The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to
 *Uses:* [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
 
 > [!remark] Remark
-> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§31 Dual Spaces#^def-31-1|§31.1]]. The bounded operators on a Hilbert space $H$ of the companion chapter ([[§45 The Completeness Relation|§45]]) are the case $X = Y = H$. A bounded linear map is even Lipschitz continuous, uniformly on all of $X$ (Corollary [[§30 Boundedness and Continuity#^cor-30-3|§30.3]]).
+> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§31 Dual Spaces#^def-31-1|§31.1]]. The bounded operators on a Hilbert space $H$ of the companion chapter ([[§47 The Completeness Relation|§47]]) are the case $X = Y = H$. A bounded linear map is even Lipschitz continuous, uniformly on all of $X$ (Corollary [[§30 Boundedness and Continuity#^cor-30-3|§30.3]]).
 
 ^rem-30-1
 
@@ -334,7 +334,7 @@ The same happens in one variable with only one derivative available, which is th
 
 > [!remark]- Connections
 > - Finite-dimensional home (all linear maps, same operations): [[§7 Vector Space of Linear Maps#^ladr-3-5|LADR 3.5]].
-> - The dual space $X' = \mathcal{L}(X, \mathbb{F})$: [[§31 Dual Spaces#^def-31-1|Def. §31.1]], recalled in the companion chapter, [[§44 Bras, Kets, and the Riesz Map|§44]].
+> - The dual space $X' = \mathcal{L}(X, \mathbb{F})$: [[§31 Dual Spaces#^def-31-1|Def. §31.1]], recalled in the companion chapter, [[§46 Bras, Kets, and the Riesz Map|§46]].
 
 > [!theorem] Theorem §30.8: $\mathcal{L}(X, Y)$ is a Normed Linear Space
 > Let $X$ and $Y$ be normed linear spaces.
@@ -408,7 +408,7 @@ The same happens in one variable with only one derivative available, which is th
 
 > [!remark]- Connections
 > - Finite-dimensional home of the norm properties: [[§28 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].
-> - Banach spaces: [[§12 Completeness#^def-12-2|Def. §12.2]]; the special case $Y = \mathbb{F}$, the dual space: [[§31 Dual Spaces#^def-31-1|Def. §31.1]], recalled in the companion chapter, [[§44 Bras, Kets, and the Riesz Map|§44]].
+> - Banach spaces: [[§12 Completeness#^def-12-2|Def. §12.2]]; the special case $Y = \mathbb{F}$, the dual space: [[§31 Dual Spaces#^def-31-1|Def. §31.1]], recalled in the companion chapter, [[§46 Bras, Kets, and the Riesz Map|§46]].
 > - Part (2) with $Y = \mathbb{F}$: the dual is always a Banach space, [[§31 Dual Spaces#^cor-31-1|§31.1]].
 > - Used in ODEs: since $\|\mathbf{A}^k\| \le \|\mathbf{A}\|^k$, the series $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ converges absolutely in the Banach space of $n \times n$ matrices; the matrix exponential is [[§39★ Fundamental Matrices#^thm-39-3|331 Thm. §39.3]].
 

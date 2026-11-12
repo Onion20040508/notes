@@ -221,7 +221,7 @@ $L^2(\Omega)$ carries the integral inner product and is a Hilbert space. $C_c(\m
 
 > [!remark]- Connections
 > - Vault home: [[§35 Lᵖ as a Banach Space#^cor-35-13|551 §35.13]], via density of step functions and of $C_c$ in $L^p$, [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]] (its (iii) is the compactly supported density used in Step 1).
-> - The companion chapter's case $L^2(\mathbb{R}^n)$: [[§46 Position Eigenstates and Continuous Resolutions#^thm-46-2|§46.2]].
+> - The companion chapter's case $L^2(\mathbb{R}^n)$: [[§48 Position Eigenstates and Continuous Resolutions#^thm-48-2|§48.2]].
 
 ![[m556-20-4.svg]]
 *Step 2 and Step 3 for $n = 1$: a continuous $g$ and the step function $\varphi$ on dyadic intervals with rational heights.*
@@ -283,7 +283,7 @@ In $L^2[-1,1]$ the even and the odd functions are closed subspaces, each the ort
 
 ![[§25 Projection and Orthogonal Decomposition#^prop-25-9]]
 
-*Chain:* [[§45 The Completeness Relation#^ex-45-1|Chapter 9 (parity)]] →
+*Chain:* [[§47 The Completeness Relation#^ex-47-1|Chapter 9 (parity)]] →
 
 ## The Fourier Basis
 
@@ -293,4 +293,4 @@ The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal bas
 
 ![[§27 Orthonormal Sets and Bases#^cor-27-12]]
 
-*Chain:* [[§30 Boundedness and Continuity#^ex-30-2|Chapter 6 (the Fourier transform)]] · [[§45 The Completeness Relation#^ex-45-2|Chapter 9 (a particle on a ring)]] →
+*Chain:* [[§30 Boundedness and Continuity#^ex-30-2|Chapter 6 (the Fourier transform)]] · [[§47 The Completeness Relation#^ex-47-2|Chapter 9 (a particle on a ring)]] →

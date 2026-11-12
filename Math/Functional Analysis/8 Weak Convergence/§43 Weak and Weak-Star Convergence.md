@@ -5,7 +5,7 @@ chapter: 8
 section: 43
 tags: [functional-analysis, math556]
 ---
-← [[§42 Uniform Boundedness and Approximation]] · ↑ [[· 8 Weak Convergence]] · [[§44 Bras, Kets, and the Riesz Map]] →
+← [[§42 Uniform Boundedness and Approximation]] · ↑ [[· 8 Weak Convergence]] · [[§44 Weak Sequential Compactness]] →
 
 *Stage: maps — Thread: functionals. Convergence tested against $X'$ (weak) or against $X$ (weak-$\ast$); Banach–Steinhaus gives the working criteria, Hahn–Banach the uniqueness, the norm bound and Mazur's theorem.*
 

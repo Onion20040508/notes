@@ -218,7 +218,7 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[Riesz representation theorem|LADR 6.42]], revisited through orthogonal projection in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]].
-> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§44 Bras, Kets, and the Riesz Map#^thm-44-1|§44.1]].
+> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§46 Bras, Kets, and the Riesz Map#^thm-46-1|§46.1]].
 
 ![[m556-19-1.svg]]
 *The kernel $N$, the line $N^\perp$ spanned by $x_0$ (red), and the decomposition $x = kx_0 + y$ that locates $x$ on the level set $\{\ell = \ell(x)\}$ (dashed): $\ell(x)$ sees only the $N^\perp$-component $kx_0$. The representing vector $a$ (blue) is the multiple of $x_0$ normal to $N$.*

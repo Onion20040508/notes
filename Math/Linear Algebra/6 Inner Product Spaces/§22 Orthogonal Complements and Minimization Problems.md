@@ -129,7 +129,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Properties [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]]; closest point [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-61|6.61]]. Physics: $P_U=\sum_k|e_k\rangle\langle e_k|$ over an orthonormal basis of $U$, the projector of a measurement outcome.
-> - Same definition onto a closed subspace of a Hilbert space: [[§45 The Completeness Relation#^def-45-3|556 Def. §45.3]].
+> - Same definition onto a closed subspace of a Hilbert space: [[§47 The Completeness Relation#^def-47-1|556 Def. §47.1]].
 > - Computational version: [[§52 Orthogonal Projections#^def-52-1|235 Def. §52.1]] ($\operatorname{proj}_W\mathbf y$ in $\mathbb R^n$, with worked examples).
 
 > [!example] Example 6.56: Orthogonal projection onto one-dimensional subspace (p. 214)
@@ -191,7 +191,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - This proof uses only $V=U\oplus U^\perp$ for $U=\nullsp\varphi$, which is why it generalizes to Hilbert spaces (closed subspaces).
-> - Hilbert-space version: [[§44 Bras, Kets, and the Riesz Map#^thm-44-1|556 Thm. §44.1]], where the Riesz map is a conjugate-linear isometric bijection onto the dual.
+> - Hilbert-space version: [[§46 Bras, Kets, and the Riesz Map#^thm-46-1|556 Thm. §46.1]], where the Riesz map is a conjugate-linear isometric bijection onto the dual.
 
 > [!theorem] Theorem 6.61: Minimizing distance to a subspace
 > Let $U$ be a finite-dimensional subspace of $V$, $v\in V$, $u\in U$. Then
