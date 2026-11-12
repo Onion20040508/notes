@@ -138,7 +138,7 @@ For $1 + 2 \to 3 + 4$ on shell, $s = (p_1 + p_2)^2$, $t = (p_1 - p_3)^2$, $u = (
 ### [B] Heaviside–Lorentz natural units
 Field theory measures electromagnetism in Heaviside–Lorentz units with $\hbar = c = 1$: Maxwell's equations without $4\pi$, Coulomb's potential $Q/4\pi r$, $\alpha = e^2/4\pi \approx 1/137$, see Definition [[§C1a.8 Relativistic Electrodynamics in Index Form#^def-c1a-8-1|§C1a.8.1]] Heaviside–Lorentz Natural Units. *Source: register (units row) · the user's notes Ch. 1 §1.7*
 
-^nd-def-c1a-7-1
+^nd-def-c1a-8-1
 
 - [ ] Q1 **[def]** Write Maxwell's equations and the Lorentz force in Heaviside–Lorentz natural units.
 - [ ] Q2 **[def]** Where does the $4\pi$ go, and what is $e$ in terms of $\alpha$?
@@ -152,7 +152,7 @@ Field theory measures electromagnetism in Heaviside–Lorentz units with $\hbar 
 ### [B] Four-potential and field-strength tensor
 $A^\mu = (\Phi, \mathbf A)$, $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, $F^{0i} = -E^i$, $F^{ij} = -\varepsilon_{ijk}B^k$, gauge invariant under $A^\mu \to A^\mu + \partial^\mu\lambda$, see Definition [[§C1a.8 Relativistic Electrodynamics in Index Form#^def-c1a-8-2|§C1a.8.2]] Four-Potential and Field Tensor in Natural Units. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics" (Jackson 11.10) · PS2 Problem 4(b) (the identification) · the user's notes Ch. 1 §1.7*
 
-^nd-def-c1a-7-2
+^nd-def-c1a-8-2
 
 - [ ] Q1 **[def]** Define $F^{\mu\nu}$ from $A^\mu$ and give $F^{0i}$, $F^{ij}$, $F_{0i}$, $F_{ij}$ in terms of $\mathbf E$, $\mathbf B$.
 - [ ] Q2 Write the matrix $F_{\mu\nu}$ of the Lecture 1 slide. How do you recover $E^i$ and $B^i$ from $F$?
@@ -377,7 +377,7 @@ $(\star A)^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}A_{\rho\sigma}$ satis
 ### [A] Basic derivative identities and plane waves ★★
 $\partial_\mu x^\nu = \delta^\nu{}_\mu$, $\partial_\mu x^\mu = 4$, $\partial_\mu(x^2) = 2x_\mu$, and $\partial_\mu e^{-ik\cdot x} = -ik_\mu e^{-ik\cdot x}$, $\partial^2e^{-ik\cdot x} = -k^2e^{-ik\cdot x}$, see Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-1|§C1a.6.1]] Basic Derivative Identities. *Source: Lecture 2 (Sep 2), slides "Derivatives" ("Proof that $\partial_\mu$ transforms like $x_\mu$"), "Plane-Wave Solutions to the Klein Gordon Equation"; Lecture 3 (Sep 9), slide "Solutions to the Klein-Gordon Equation" · the user's notes Ch. 2 §2.3*
 
-^nd-thm-c1a-5-8
+^nd-thm-c1a-6-1
 
 - [ ] Q1 **[state]** State $\partial_\mu x^\nu$, $\partial^\mu x^\nu$, $\partial_\mu x^\mu$, $\partial_\mu(x^2)$, $\partial_\mu\partial_\nu(x^2)$.
 - [ ] Q2 Derive $\partial_\mu(x^2) = 2x_\mu$ by the product rule. Why does Lecture 2 call this the proof that $\partial_\mu$ has a lower index?
@@ -392,14 +392,14 @@ $\partial_\mu x^\nu = \delta^\nu{}_\mu$, $\partial_\mu x^\mu = 4$, $\partial_\mu
 ### [PS] The d'Alembertian of a function of x²
 $\partial^2f(\rho) = 8f' + 4\rho f''$ for $\rho = x^2$; $f = c_1/\rho + c_2$ are the harmonic functions of $\rho$ off the cone, see Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-2|§C1a.6.2]] The d'Alembertian of a Function of x². *Source: PS1 Problem 6*
 
-^nd-thm-c1a-5-9
+^nd-thm-c1a-6-2
 
 → drilled as [[PHY 513 PS Drill#^ps1-6|PS1.6]] (parts (a)–(f))
 
 ### [B] Taylor expansion in index notation ★
 $f(x + a) = \sum_n\frac1{n!}a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\partial_{\nu_n}f(x) = e^{a\cdot\partial}f(x)$; on a plane wave the series is exact, and $a\cdot\partial = -ia\cdot\hat p$ generates translations, see Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-3|§C1a.6.3]] Taylor Expansion in Index Notation. *Source: the user's notes Ch. 2 §2.3*
 
-^nd-thm-c1a-5-10
+^nd-thm-c1a-6-3
 
 - [ ] Q1 **[state]** State the expansion and the plane-wave statement.
 - [ ] Q2 Reduce to one variable with $g(s) = f(x + sa)$: what is $g^{(n)}(s)$?
@@ -414,7 +414,7 @@ $f(x + a) = \sum_n\frac1{n!}a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\part
 ### [A] Derivatives with respect to a four-vector ★★
 $\partial/\partial a^\mu$ is a covector; $\partial a^\nu/\partial a^\mu = \delta^\nu{}_\mu$, $\partial a_\nu/\partial a^\mu = g_{\mu\nu}$; $\partial(a_\nu a^\nu)/\partial a^\mu = 2a_\mu$, and for $\mathcal L = \frac12\partial_\nu\phi\,\partial^\nu\phi$, $\partial\mathcal L/\partial(\partial_\mu\phi) = \partial^\mu\phi$, see Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-4|§C1a.6.4]] Derivatives with Respect to a Four-Vector. *Source: Lecture 3 (Sep 9), slide "Example: the Scalar Field" · the user's notes Ch. 2 §2.3 · **[class exercise, Lecture 3]**: "you double check" the derivative of the kinetic term component by component*
 
-^nd-thm-c1a-5-11
+^nd-thm-c1a-6-4
 
 - [ ] Q1 **[state]** State the four index forms of $\partial a/\partial a$ and the factor-of-two rule.
 - [ ] Q2 Why does an index in the denominator flip height? Use the chain rule with $a = \Lambda^{-1}a'$.
@@ -429,7 +429,7 @@ $\partial/\partial a^\mu$ is a covector; $\partial a^\nu/\partial a^\mu = \delta
 ### [B] Derivatives with respect to tensor components ★
 For independent components, $\partial T^\alpha{}_\beta/\partial T^\mu{}_\nu = \delta^\alpha{}_\mu\delta_\beta{}^\nu$; $\partial(T_{\alpha\beta}T^{\alpha\beta})/\partial T_{\mu\nu} = 2T^{\mu\nu}$; for antisymmetric $F$ either convention gives $\delta(FF) = 2F\,\delta F$; and $\partial(F_{\alpha\beta}F^{\alpha\beta})/\partial(\partial_\mu A_\nu) = 4F^{\mu\nu}$, see Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-5|§C1a.6.5]] Derivatives with Respect to Tensor Components. *Source: the user's notes Ch. 2 §2.3 · PS2 Problem 4(a)*
 
-^nd-thm-c1a-5-12
+^nd-thm-c1a-6-5
 
 - [ ] Q1 **[state]** State parts 1–3.
 - [ ] Q2 Why is the derivative of a component with respect to a component a product of deltas, slot by slot?
@@ -444,7 +444,7 @@ For independent components, $\partial T^\alpha{}_\beta/\partial T^\mu{}_\nu = \d
 ### [B] Maxwell's equations in Heaviside–Lorentz form ★
 $\partial_\mu F^{\mu\nu} = J^\nu$ and $\partial_\mu\tilde F^{\mu\nu} = 0$, the latter equivalent to the cyclic Bianchi identity and automatic for $F = dA$; consistency requires $\partial_\nu J^\nu = 0$, see Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-2|§C1a.8.2]] Maxwell's Equations in Heaviside–Lorentz Form. *Source: the user's notes Ch. 1 §1.7*
 
-^nd-thm-c1a-7-2
+^nd-thm-c1a-8-2
 
 - [ ] Q1 **[state]** State both covariant equations, which of Maxwell's four each contains, and the consistency condition.
 - [ ] Q2 Show that $\partial_\mu\tilde F^{\mu\nu} = 0$ holds identically when $F_{\rho\sigma} = \partial_\rho A_\sigma - \partial_\sigma A_\rho$.
@@ -459,7 +459,7 @@ $\partial_\mu F^{\mu\nu} = J^\nu$ and $\partial_\mu\tilde F^{\mu\nu} = 0$, the l
 ### [B] Duality exchanges E and B; the two invariants ★
 $\tilde F^{0i} = -B^i$, $\tilde F^{ij} = \varepsilon_{ijk}E^k$; $F_{\mu\nu}F^{\mu\nu} = 2(\mathbf B^2 - \mathbf E^2)$, $F_{\mu\nu}\tilde F^{\mu\nu} = -4\,\mathbf E\cdot\mathbf B$ (course; $+$ in PS for the $\varepsilon FF$ form), see Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|§C1a.8.3]] Duality Exchanges E and B; the Two Invariants. *Source: the user's notes Ch. 1 §1.7*
 
-^nd-thm-c1a-7-3
+^nd-thm-c1a-8-3
 
 - [ ] Q1 **[state]** State the components of $\tilde F$ and the four invariants.
 - [ ] Q2 Compute $\tilde F^{0i}$: which $\rho\sigma$ contribute, and how is $\varepsilon^{0ijk}$ related to $\varepsilon_{ijk}$?
@@ -474,7 +474,7 @@ $\tilde F^{0i} = -B^i$, $\tilde F^{ij} = \varepsilon_{ijk}E^k$; $F_{\mu\nu}F^{\m
 ### [B] E ± iB: the self-dual halves of F ★
 $F \pm i\tilde F$ are the $\mp i$ eigenvectors of duality, carried by $\mathbf E \pm i\mathbf B$; proper Lorentz transformations act on $\mathbf E + i\mathbf B$ by complex orthogonal matrices, parity exchanges the halves, and the two invariants form one complex invariant, see Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-4|§C1a.8.4]] E ± iB: the Self-Dual Halves of F. *Source: the user's notes Ch. 1 §1.5 (the remark on $\mathbf E \pm i\mathbf B$); items 2–3 derived in the vault*
 
-^nd-thm-c1a-7-4
+^nd-thm-c1a-8-4
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Using $\star\star = -1$, show $F + i\tilde F$ is an eigenvector of $\star$ and find its eigenvalue.
@@ -488,7 +488,7 @@ $F \pm i\tilde F$ are the $\mp i$ eigenvectors of duality, carried by $\mathbf E
 ### [A] Lecture 1's boost of E_x ★★
 Under the active boost along $z$, $E'_x = F'_{01} = \Lambda_0{}^0\Lambda_1{}^1F_{01} + \Lambda_0{}^3\Lambda_1{}^1F_{31} = \gamma(E_x + vB_y)$; the slide's $\gamma(E_x - vB_y)$ is the passive sign, see Example [[§C1a.8 Relativistic Electrodynamics in Index Form#^ex-c1a-8-1|§C1a.8.1]] The Lecture's Boost Example, Done with the Active Boost and [[§C1a.8 Relativistic Electrodynamics in Index Form#^cau-c1a-8-2|§C1a.8, Caution: The sign of the v × B term]]. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics" · the user's notes Ch. 1 §1.7*
 
-^nd-ex-c1a-7-1
+^nd-ex-c1a-8-1
 
 - [ ] Q1 **[def]** Write the transformation law of $F_{\mu\nu}$ (Lecture 1). Why does it use $\Lambda_\mu{}^\lambda$, and how are those entries related to $\Lambda^{-1}$?
 - [ ] Q2 For the boost along $z$, which $\lambda$, $\sigma$ contribute to $F'_{01}$, and why does the second index force $\sigma = 1$?
@@ -503,7 +503,7 @@ Under the active boost along $z$, $E'_x = F'_{01} = \Lambda_0{}^0\Lambda_1{}^1F_
 ### [B] The SI–Heaviside–Lorentz dictionary ★
 $\mathbf E_{\rm HL} = \sqrt{\varepsilon_0}\mathbf E_{\rm SI}$, $\mathbf B_{\rm HL} = \mathbf B_{\rm SI}/\sqrt{\mu_0}$, $q_{\rm HL} = q_{\rm SI}/\sqrt{\varepsilon_0}$ turn SI electrodynamics into the rationalized form with $\alpha = e^2/4\pi\hbar c$, see Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-5|§C1a.8.5]] The SI–Heaviside–Lorentz Dictionary. *Source: the user's pre-course notes §1.2; dictionary derived in the vault*
 
-^nd-thm-c1a-7-5
+^nd-thm-c1a-8-5
 
 - [ ] Q1 **[state]** State the substitutions and the resulting four equations with $c$ kept.
 - [ ] Q2 Substitute into Gauss's law and Ampère–Maxwell's law: where does $\mu_0\varepsilon_0 = 1/c^2$ enter?
@@ -1301,8 +1301,8 @@ $T^\mu{}_\nu = \sum_a\frac{\partial\mathcal L}{\partial(\partial_\mu\phi_a)}\par
 > [!tip]- Hints: route in the notes
 > - [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^cau-c1b-7-1|§C1b.7, Caution: One picture at a time; the sign of the displacement]]; the table of canonical tensors [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-7-3|§C1b.7, Remark: The canonical tensor of the standard fields]].
 
-### [B] Angular-momentum and boost charges
-$J^{\nu\rho} = \int d^3x\,\mathcal M^{0\nu\rho} = L^{\nu\rho} + S^{\nu\rho}$; $J^i = \frac12\varepsilon_{ijk}J^{jk}$, $\mathbf J = (J^{23}, J^{31}, J^{12})$; boost charges $K^i = J^{i0}$, see Definition [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-2|§C1b.8.2]] Angular-Momentum and Boost Charges. *Source: the user's notes Ch. 3 §3.5 · Yu §1.7.3*
+### [B] Lorentz charges, angular momentum and boost charges
+$J^{\nu\rho} = \int d^3x\,\mathcal M^{0\nu\rho} = L^{\nu\rho} + S^{\nu\rho}$, see Definition [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|§C1b.8.1]] Lorentz Charges; Orbital and Spin Parts; $J^i = \frac12\varepsilon_{ijk}J^{jk}$, $\mathbf J = (J^{23}, J^{31}, J^{12})$; boost charges $K^i = J^{i0}$, see Definition [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-2|§C1b.8.2]] Angular Momentum and Boost Charges. *Source: the user's notes Ch. 3 §3.5 · Yu §1.7.3*
 
 ^nd-def-c1b-8-1
 
@@ -1529,7 +1529,7 @@ $d^4x' = [1 + \partial_\mu(\delta x^\mu)]d^4x$; the correction vanishes for tran
 - [ ] Q4 **[why]** What is the correction for a scale transformation $\delta x^\mu = -\alpha x^\mu$?
 
 > [!tip]- Hints: route in the notes
-> - Derivation of Theorem [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-2|§C1b.7.2]] The Volume Element to First Order, steps 1–4; [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|★ Theorem §C1b.8.5]] for Q4.
+> - Derivation of Theorem [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-2|§C1b.7.2]] The Volume Element to First Order, steps 1–4; ★ Theorem [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|§C1b.8.5]] The Dilatation Current of the Scalar Field for Q4.
 
 ### [B] Noether's theorem, general form ★
 If the point-moving transformation is a symmetry, $j^\mu = \sum_a\frac{\partial\mathcal L}{\partial(\partial_\mu\phi_a)}\bar\delta\phi_a + \mathcal L\,\delta x^\mu$ is conserved on shell, see Theorem [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-3|§C1b.7.3]] Noether's Theorem, General Form. *Source: Yu §1.7.1 · the user's notes Ch. 3 §3.5*
@@ -1712,10 +1712,10 @@ Canonical $T^{\mu\nu} = -F^{\mu\lambda}\partial^\nu A_\lambda + \frac14g^{\mu\nu
 
 → drilled as [[PHY 513 PS Drill#^ps2-4-c|PS2.4(c)]], [[PHY 513 PS Drill#^ps2-4-d|PS2.4(d)]] and [[PHY 513 PS Drill#^ps2-4-e|PS2.4(e)]]
 
-### [B] Dilatations ★
-**[exercise in the user's notes, Ch. 3]** "Scale transformation (not a symmetry when $m \ne 0$, but a good exercise)." With $\Delta\phi = \phi + x^\mu\partial_\mu\phi$, $\delta\mathcal L = \alpha\partial_\nu(x^\nu\mathcal L) + \alpha m^2\phi^2$: for $m = 0$ a symmetry with $\mathcal J^\mu = x^\mu\mathcal L$ and current $x_\nu T^{\mu\nu} + \phi\partial^\mu\phi$; for $m \ne 0$ broken by the mass, see [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|★ Theorem §C1b.8.5]]. *Source: the user's notes Ch. 3 §3.5 (the exercise is the user's notes', not Larsen's)*
+### [B] The dilatation current of the scalar field ★
+**[exercise in the user's notes, Ch. 3]** "Scale transformation (not a symmetry when $m \ne 0$, but a good exercise)." With $\Delta\phi = \phi + x^\mu\partial_\mu\phi$, $\delta\mathcal L = \alpha\partial_\nu(x^\nu\mathcal L) + \alpha m^2\phi^2$: for $m = 0$ a symmetry with $\mathcal J^\mu = x^\mu\mathcal L$ and current $x_\nu T^{\mu\nu} + \phi\partial^\mu\phi$; for $m \ne 0$ broken by the mass, see ★ Theorem [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|§C1b.8.5]] The Dilatation Current of the Scalar Field. *Source: the user's notes Ch. 3 §3.5 (the exercise is the user's notes', not Larsen's)*
 
-^nd-rem-c1b-8-4
+^nd-thm-c1b-8-5
 
 - [ ] Q1 **[state]** State the generator, $\delta\mathcal L$, and the outcome of the test for $m = 0$ and $m \ne 0$.
 - [ ] Q2 Derive the generator from $\phi'(x) = \lambda\phi(\lambda x)$ with $\lambda = e^\alpha$. Why the prefactor $\lambda^{[\phi]}$?
@@ -1726,7 +1726,7 @@ Canonical $T^{\mu\nu} = -F^{\mu\lambda}\partial^\nu A_\lambda + \frac14g^{\mu\nu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K12, K8
-> - [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|★ Theorem §C1b.8.5]]; Theorem [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|§C1b.5.1]] Generators of the Standard Transformations (scale row); the not-a-divergence argument of Example [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-1|§C1b.6.1]] Shift Symmetry of the Massless Field.
+> - ★ Theorem [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|§C1b.8.5]] The Dilatation Current of the Scalar Field; Theorem [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|§C1b.5.1]] Generators of the Standard Transformations (scale row); the not-a-divergence argument of Example [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-1|§C1b.6.1]] Shift Symmetry of the Massless Field.
 
 # T5. Canonical quantization of the scalar: modes, H, P, Q, states
 
@@ -1815,11 +1815,11 @@ $\hat\phi(f) = \int d^3x\,f(\mathbf x)\hat\phi(\mathbf x)$, $\hat\pi(g)$ likewis
 > - Technique: none.
 > - Step 1: Definition [[§CA.2 Generalized Functions#^def-ca-2-1|§CA.2.1]] Test Functions: the Spaces 𝒟 and 𝒮 for $\mathcal S$; Theorem [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|§C2a.1.3]] The Canonical Relations Are Identities after Smearing for the smeared canonical relations; Theorem [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|§C2a.4.7]] The Smeared Field Creates a State; the Field at a Point Does Not for the norm of $\hat\phi(\mathbf x)|0\rangle$.
 
-### [B] Two bookkeeping rules for mode integrals
+### [B] Split exponentials and relabelling
 
-At fixed time, $\int d^3x\,e^{\mp i(p \pm q)\cdot x} = e^{\mp i(E_{\mathbf p} \pm E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p \pm \mathbf q)$ (split exponentials), and $\mathbf p \to -\mathbf p$ may be substituted in one term of an integral over all $\mathbf p$ (relabel), see [[§C2a.2 Mode Expansion and the Mode Algebra#^lem-c2a-2-1|Lemma §C2a.2.1]]. *Source: the user's notes Ch. 4 §4.3 ("Tools, recalled") · Lecture 4 (Sep 14), board ("change my integration variable from p to minus p")*
+At fixed time, $\int d^3x\,e^{\mp i(p \pm q)\cdot x} = e^{\mp i(E_{\mathbf p} \pm E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p \pm \mathbf q)$ (split exponentials), and $\mathbf p \to -\mathbf p$ may be substituted in one term of an integral over all $\mathbf p$ (relabel), see Lemma [[§C2a.2 Mode Expansion and the Mode Algebra#^lem-c2a-2-1|§C2a.2.1]] Split Exponentials and Relabelling. *Source: the user's notes Ch. 4 §4.3 ("Tools, recalled") · Lecture 4 (Sep 14), board ("change my integration variable from p to minus p")*
 
-^nd-rem-c2a-2-2
+^nd-lem-c2a-2-1
 
 - [ ] Q1 **[state]** State both rules exactly, including which factor the $d^3x$ integral acts on.
 - [ ] Q2 After the delta function of the split rule is used, what phase is left in a $p + q$ term and in a $p - q$ term?
@@ -1864,7 +1864,7 @@ $\hat a(g) = \int\frac{d^3p}{(2\pi)^3}\overline{g(\mathbf p)}\hat a_{\mathbf p}$
 
 There is a normalized $|0\rangle$, unique up to a phase, with $\hat a_{\mathbf p}|0\rangle = 0$ for all $\mathbf p$; the state space is the Fock space $\bigoplus_n\operatorname{Sym}^n\mathcal H_1$ it generates, with inner products from the mode algebra, see Principle [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|§C2a.3.2]] The Vacuum and the Fock Space. *Source: Lecture 4 (Sep 14), slide "Spectrum, Ground State" · PS §2.3, p. 22 · the user's notes Ch. 4 §4.8*
 
-^nd-pr-c2a-3-3
+^nd-pr-c2a-3-2
 
 - [ ] Q1 **[def]** Define the vacuum and the Fock space, including the symmetrization of $\mathcal H_n$.
 - [ ] Q2 Compute $\langle0|\hat a_{\mathbf q}\hat a^\dagger_{\mathbf p}|0\rangle$ by moving the annihilator to the right.
@@ -1910,7 +1910,7 @@ $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$
 
 ### [B] Invariant measure and one-particle completeness
 
-$\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}} = \int\frac{d^4p}{(2\pi)^4}2\pi\delta(p^2 - m^2)\theta(p^0)$ and $\mathbb 1_{1\text{-particle}} = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}|\mathbf p\rangle\langle\mathbf p|$, see Definition [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|§C2a.4.2]] Invariant Measure and One-Particle Completeness. *Source: Lecture 4 (Sep 14), slide "Details on Normalization (HW)" · PS §2.3, eqs. (2.39)–(2.40) · the user's notes Ch. 4 §4.9*
+$\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}} = \int\frac{d^4p}{(2\pi)^4}2\pi\delta(p^2 - m^2)\theta(p^0)$ and $\mathbb 1_{1\text{-particle}} = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}|\mathbf p\rangle\langle\mathbf p|$, see Definition [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|§C2a.4.2]] Invariant Measure (the measure) and Theorem [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|§C2a.4.5]] The Overlap of Momentum States Is a Distribution; One-Particle Completeness part 3 (completeness). *Source: Lecture 4 (Sep 14), slide "Details on Normalization (HW)" · PS §2.3, eqs. (2.39)–(2.40) · the user's notes Ch. 4 §4.9*
 
 ^nd-def-c2a-4-2
 
@@ -1934,7 +1934,7 @@ For $g \in \mathcal S(\mathbb R^3)$, $|g\rangle = \int\frac{d^3p}{(2\pi)^3\,2E_{
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Step 1: Theorem [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|§C2a.4.5]] The Overlap of Momentum States Is a Distribution parts 1–3.
+> - Step 1: Theorem [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|§C2a.4.5]] The Overlap of Momentum States Is a Distribution; One-Particle Completeness parts 1–3.
 
 ### [PS] The free complex scalar quantum field
 
@@ -2067,7 +2067,7 @@ For $g, h \in \mathcal S$ and $f_g = \int\frac{d^3p}{(2\pi)^3}g(\mathbf p)f_{\ma
 
 ### [PS] Mode extraction
 
-$\hat a_{\mathbf p} = (f_{\mathbf p}, \hat\phi) = \frac{i}{\sqrt{2E_{\mathbf p}}}\int d^3x\,e^{ip\cdot x}(\hat\pi - iE_{\mathbf p}\hat\phi)$, $\hat a^\dagger_{\mathbf p} = -(f^\ast_{\mathbf p}, \hat\phi)$, independent of the slice, see Theorem [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|§C2a.2.5]] Mode Extraction.
+$\hat a_{\mathbf p} = (f_{\mathbf p}, \hat\phi) = \frac{i}{\sqrt{2E_{\mathbf p}}}\int d^3x\,e^{ip\cdot x}(\hat\pi - iE_{\mathbf p}\hat\phi)$, $\hat a^\dagger_{\mathbf p} = -(f^\ast_{\mathbf p}, \hat\phi)$: on the slice $t = 0$, see Theorem [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|§C2a.2.5]] Mode Extraction; independent of the slice, see Theorem [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|§C2b.1.4]] Time Dependence of the Modes; the Covariant Mode Expansion part 4.
 
 ^nd-thm-c2a-2-5
 
@@ -2131,7 +2131,7 @@ $\hat H$ read in the order written is $\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf
 
 The constant $(2\pi)^3\delta^3(\mathbf 0)$ left by reordering is δ at its singular point; in a periodic box with cutoff $\Lambda$, $E_0(V, \Lambda) = \frac12\sum_{|\mathbf k| < \Lambda}E_{\mathbf k}$ and $E_0/V \to \int_{|\mathbf p| < \Lambda}\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$, see Theorem [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|§C2a.3.3]] δ³(0) Has No Value; in a Box It Is the Volume. *Source: the user's notes Ch. 4 §4.6, §4.5, Ch. 6 §6.2*
 
-^nd-thm-c2a-3-2
+^nd-thm-c2a-3-3
 
 - [ ] Q1 **[state]** State both parts: why $\delta^3(\mathbf 0)$ has no value, and its box meaning.
 - [ ] Q2 In a box of side $L$ with periodic conditions, which momenta are allowed, and what replaces $(2\pi)^3\delta^3(\mathbf k - \mathbf k')$?
@@ -2258,7 +2258,7 @@ $2E_{\mathbf p}\delta^3(\mathbf p - \mathbf q)$ is Lorentz invariant, hence so a
 
 ### [B] The overlap of momentum states is a distribution ★
 
-$\langle g|h\rangle = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\bar gh$; $\langle\mathbf p|\mathbf q\rangle$ is the kernel; $\langle\mathbf p|\mathbf p\rangle$ has no value; $\langle\mathbf p|g\rangle = g(\mathbf p)$ and completeness holds between wave packets, see Theorem [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|§C2a.4.5]] The Overlap of Momentum States Is a Distribution. *Source: the user's notes Ch. 4 §4.8–4.9 · Yu, Exercise 2.3*
+$\langle g|h\rangle = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\bar gh$; $\langle\mathbf p|\mathbf q\rangle$ is the kernel; $\langle\mathbf p|\mathbf p\rangle$ has no value; $\langle\mathbf p|g\rangle = g(\mathbf p)$ and completeness holds between wave packets, see Theorem [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|§C2a.4.5]] The Overlap of Momentum States Is a Distribution; One-Particle Completeness. *Source: the user's notes Ch. 4 §4.8–4.9 · Yu, Exercise 2.3*
 
 ^nd-thm-c2a-4-5
 
@@ -2498,7 +2498,7 @@ $D_W(x - y) \equiv \langle0|\hat\phi(x)\hat\phi(y)|0\rangle$, the amplitude for 
 
 Local observables at spacelike separation commute; for observables built from $\hat\phi$, $[\hat\phi(x), \hat\phi(y)] = 0$ for $(x - y)^2 < 0$ suffices, see Principle [[§C2b.5 Microcausality and the Commutator Function#^pr-c2b-5-1|§C2b.5.1]] Microcausality. *Source: Lecture 5 (Sep 16), transcript ("causality clarified") · PS §2.4, p. 28 · the user's notes Ch. 5 §5.5*
 
-^nd-pr-c2b-4-1
+^nd-pr-c2b-5-1
 
 - [ ] Q1 **[state]** State the principle, and the extra condition for a complex field.
 - [ ] Q2 **[why]** Why is the criterion a vanishing commutator and not a vanishing amplitude? Is $D_W$ zero outside the light cone?
@@ -2512,7 +2512,7 @@ Local observables at spacelike separation commute; for observables built from $\
 
 $iD(x - y) \equiv \langle0|[\hat\phi(x), \hat\phi(y)]|0\rangle$ (Pauli–Jordan function), see Definition [[§C2b.5 Microcausality and the Commutator Function#^def-c2b-5-1|§C2b.5.1]] Commutator Function. *Source: Problem Set 4, eq. (9) · the user's notes Ch. 5 §5.5*
 
-^nd-def-c2b-4-1
+^nd-def-c2b-5-1
 
 - [ ] Q1 **[def]** Define $D$, including the factor $i$.
 - [ ] Q2 **[conv]** Yu calls the commutator itself the Pauli–Jordan function. How is his $D_{\mathrm{PJ}}$ related to $D$?
@@ -2526,7 +2526,7 @@ $iD(x - y) \equiv \langle0|[\hat\phi(x), \hat\phi(y)]|0\rangle$ (Pauli–Jordan 
 
 $D_1(x - y) \equiv \langle0|\{\hat\phi(x), \hat\phi(y)\}|0\rangle$, see Definition [[§C2b.5 Microcausality and the Commutator Function#^def-c2b-5-2|§C2b.5.2]] Hadamard Function. *Source: Problem Set 4, eq. (10) · the user's notes Ch. 5 §5.5*
 
-^nd-def-c2b-4-2
+^nd-def-c2b-5-2
 
 - [ ] Q1 **[def]** Define $D_1$.
 - [ ] Q2 **[why]** Unlike the commutator, the anticommutator of two free fields is not a c-number. Why, and why does that make the vacuum expectation value essential here?
@@ -2540,7 +2540,7 @@ $D_1(x - y) \equiv \langle0|\{\hat\phi(x), \hat\phi(y)\}|0\rangle$, see Definiti
 
 PS's $D(x - y)$ is the vault's $D_W$; PS name neither $D$ nor $D_1$; Yu's $D_{\mathrm{PJ}} = iD$; the Lecture 6 slides write a bare $D$ for a generic Green's function $D_C$, see [[§C2b.5 Microcausality and the Commutator Function#^cau-c2b-5-1|§C2b.5, Caution: One letter, four objects]]. *Source: Problem Set 4, Problem 2 ("Beware that PS uses an imprecise notation") · Lecture 6 (Sep 21) · Yu eq. (6.111)*
 
-^nd-cau-c2b-4-1
+^nd-cau-c2b-5-1
 
 - [ ] Q1 **[def]** For each of $D_W$, $D$, $D_1$, $D_C$: what do PS, Yu, Problem Set 4 and the Lecture 6 slides write?
 - [ ] Q2 **[conv]** PS eq. (2.53) writes the field commutator as "$D(x - y) - D(y - x)$". Rewrite it in the vault's names.
@@ -2554,7 +2554,7 @@ PS's $D(x - y)$ is the vault's $D_W$; PS name neither $D$ nor $D_1$; Yu's $D_{\m
 
 $\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2 + j\phi$, so $(\partial^2 + m^2)\phi = j$, with $j$ external, smooth and of finite duration, see Model [[§C2b.6 Green's Functions and Contours#^mod-c2b-6-1|§C2b.6.1]] Scalar Field with a Classical Source. *Source: Lecture 6 (Sep 21), slide "External Sources" · PS §2.4, eqs. (2.61)–(2.62) · the user's notes Ch. 6 §6.1*
 
-^nd-mod-c2b-5-1
+^nd-mod-c2b-6-1
 
 - [ ] Q1 **[def]** Write the Lagrangian and the field equation, with the sign of the source term.
 - [ ] Q2 Check the sign: derive the Euler–Lagrange equation from $\mathcal L$.
@@ -2568,7 +2568,7 @@ $\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2 + j\phi$, so $(\partial
 
 $(\partial_x^2 + m^2)D_C(x - y) = -i\delta^4(x - y)$; then $\phi = \phi_0 + i\int d^4y\,D_C(x - y)j(y)$ solves the sourced equation for every $j$, see Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-1|§C2b.6.1]] Green's Function of the Klein–Gordon Operator. *Source: Lecture 6 (Sep 21), slide "Definition of Green's Functions" ("Proof: act with … and use linearity") · PS §2.4, eq. (2.56) · Problem Set 4, Problem 0 · the user's notes Ch. 6 §6.1*
 
-^nd-def-c2b-5-1
+^nd-def-c2b-6-1
 
 - [ ] Q1 **[def]** Write the defining equation with its normalization, and the solution formula for a source $j$.
 - [ ] Q2 Verify the solution formula: act with $\partial_x^2 + m^2$ and use the defining equation (the slide's proof).
@@ -2585,7 +2585,7 @@ $(\partial_x^2 + m^2)D_C(x - y) = -i\delta^4(x - y)$; then $\phi = \phi_0 + i\in
 
 For a contour $C$ in the $p^0$-plane that follows the real axis except near $p^0 = \pm E_{\mathbf p}$, $D_C(\xi) = \int\frac{d^3p}{(2\pi)^3}e^{i\mathbf p\cdot\boldsymbol\xi}\int_C\frac{dp^0}{2\pi}\frac{ie^{-ip^0\xi^0}}{(p^0)^2 - E_{\mathbf p}^2}$, see Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-2|§C2b.6.2]] The Green's Function of a Contour. *Source: Lecture 6 (Sep 21), slides "Important Mathematical Limitation", "Green's functions and Complex Contours" · the user's notes Ch. 6 §6.4*
 
-^nd-def-c2b-5-2
+^nd-def-c2b-6-2
 
 - [ ] Q1 **[def]** Write $D_C$ as an iterated integral, with the $p^0$ integral along $C$.
 - [ ] Q2 **[why]** Why does $\int\frac{d^4p}{(2\pi)^4}\frac{ie^{-ip\cdot\xi}}{p^2 - m^2}$ mean nothing without a contour?
@@ -2599,7 +2599,7 @@ For a contour $C$ in the $p^0$-plane that follows the real axis except near $p^0
 
 $\bar D \equiv \frac12(D_R + D_A)$, the average of the retarded and advanced functions, itself a Green's function, see Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-3|§C2b.6.3]] Principal-Value Green's Function. *Source: the user's notes Ch. 6 §6.11*
 
-^nd-def-c2b-5-3
+^nd-def-c2b-6-3
 
 - [ ] Q1 **[def]** Define $\bar D$.
 - [ ] Q2 **[why]** Why is the average of two Green's functions again a Green's function, while their difference is not?
@@ -2613,7 +2613,7 @@ $\bar D \equiv \frac12(D_R + D_A)$, the average of the retarded and advanced fun
 
 $T\{\hat\phi(x)\hat\phi(y)\} \equiv \theta(x^0 - y^0)\hat\phi(x)\hat\phi(y) + \theta(y^0 - x^0)\hat\phi(y)\hat\phi(x)$, the later operator to the left, with $\theta(0) = \frac12$, see Definition [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-1|§C2b.7.1]] Time-Ordered Product. *Source: Lecture 6 (Sep 21), slide "Green's Functions and Boundary Conditions" · PS §2.4, eq. (2.60) · Yu eq. (6.108) · the user's notes Ch. 5 §5.6*
 
-^nd-def-c2b-6-1
+^nd-def-c2b-7-1
 
 - [ ] Q1 **[def]** Define the time-ordered product of two fields and of $n$ fields.
 - [ ] Q2 **[conv]** Which value of $\theta(0)$ does the definition need, and why? What does Problem Set 3's $\theta(0) = 1$ give at equal times?
@@ -2628,7 +2628,7 @@ $T\{\hat\phi(x)\hat\phi(y)\} \equiv \theta(x^0 - y^0)\hat\phi(x)\hat\phi(y) + \t
 
 $\bar T\{\hat\phi(x)\hat\phi(y)\} \equiv \theta(y^0 - x^0)\hat\phi(x)\hat\phi(y) + \theta(x^0 - y^0)\hat\phi(y)\hat\phi(x)$, the earlier operator to the left, see Definition [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-7-2|§C2b.7.2]] Anti-Time-Ordered Product. *Source: the user's notes Ch. 6 §6.11*
 
-^nd-def-c2b-6-2
+^nd-def-c2b-7-2
 
 - [ ] Q1 **[def]** Define $\bar T$.
 - [ ] Q2 Which Green's function is minus its vacuum expectation value, and which contour belongs to it?
@@ -2642,7 +2642,7 @@ $\bar T\{\hat\phi(x)\hat\phi(y)\} \equiv \theta(y^0 - x^0)\hat\phi(x)\hat\phi(y)
 
 $D_F(x - y) = D_R(x - y) + D_W(y - x)$ (arguments exchanged); $(\partial^2 + m^2)e^{-ip\cdot x} = (m^2 - p^2)e^{-ip\cdot x}$; closing a contour upward is always counterclockwise, see [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]]. *Source: Lecture 6 (Sep 21), slides "Evaluation of the Feynman Propagator", "Green's Functions and Boundary Conditions" · the user's notes Ch. 6 §6.7*
 
-^nd-cau-c2b-6-2
+^nd-cau-c2b-7-2
 
 - [ ] Q1 **[state]** Write the relation between $D_F$ and $D_R$ with the correct argument of $D_W$. What goes wrong for $t < 0$ with the other argument?
 - [ ] Q2 **[conv]** Compute $(\partial_t^2 - \nabla^2 + m^2)e^{-iEt + i\mathbf p\cdot\mathbf x}$. Which combination vanishes on shell?
@@ -2656,7 +2656,7 @@ $D_F(x - y) = D_R(x - y) + D_W(y - x)$ (arguments exchanged); $(\partial^2 + m^2
 
 $D_E(x_E) \equiv \int\frac{d^4p_E}{(2\pi)^4}\frac{e^{ip_E\cdot x_E}}{p_E^2 + m^2}$ with $x_E = (\tau, \mathbf x)$, Euclidean products; its denominator never vanishes, see Definition [[§C2b.8 Wick Rotation and the Two-Point Family#^def-c2b-8-1|§C2b.8.1]] Euclidean Propagator. *Source: Lecture 6 (Sep 21), slide "Another perspective: the Euclidean Green's Function" · the user's notes Ch. 2 §2.2, Ch. 6 §6.10*
 
-^nd-def-c2b-7-1
+^nd-def-c2b-8-1
 
 - [ ] Q1 **[def]** Define $D_E$.
 - [ ] Q2 **[why]** Why has the Euclidean integrand no poles on the real $p_4$ axis?
@@ -2683,7 +2683,7 @@ $\mathcal D(\mathbb R^n)$: smooth functions vanishing outside a bounded set; $\m
 
 ### [B] Generalized function; tempered distribution
 
-A generalized function is a continuous linear map $\varphi \mapsto T[\varphi]$ on test functions; a locally integrable function defines one by $\varphi \mapsto \int\psi\varphi$; a tempered distribution acts on $\mathcal S$, see Definition [[§CA.2 Generalized Functions#^def-ca-2-2|§CA.2.2]] Generalized Function; Tempered Distribution. *Source: Problem Set 4, Problem 0 · the user's notes App. A §A.4, Ch. 6 §6.2*
+A generalized function is a continuous linear map $\varphi \mapsto T[\varphi]$ on test functions; a locally integrable function defines one by $\varphi \mapsto \int\psi\varphi$; a tempered distribution acts on $\mathcal S$, see Definition [[§CA.2 Generalized Functions#^def-ca-2-2|§CA.2.2]] Generalized Function, Definition [[§CA.2 Generalized Functions#^def-ca-2-3|§CA.2.3]] Tempered Distribution; $\delta$ is Definition [[§CA.2 Generalized Functions#^def-ca-2-4|§CA.2.4]] The Delta Function. *Source: Problem Set 4, Problem 0 · the user's notes App. A §A.4, Ch. 6 §6.2*
 
 ^nd-def-ca-2-2
 
@@ -2693,13 +2693,13 @@ A generalized function is a continuous linear map $\varphi \mapsto T[\varphi]$ o
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: the definition; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-1|§CA.2.1]] Regular and Singular Tempered Distributions; [[§CA.2 Generalized Functions#^rem-ca-2-1|§CA.2, Remark: What changes from the working delta function]].
+> - Step 1: the definitions; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-1|§CA.2.1]] Regular and Singular Tempered Distributions; [[§CA.2 Generalized Functions#^rem-ca-2-1|§CA.2, Remark: What changes from the working delta function]].
 
 ### [B] Support and singular support
 
 $\operatorname{supp}T$ is the complement of the largest open set on which $T$ vanishes; $\operatorname{sing\,supp}T$ the complement of the largest open set on which $T$ is a smooth function, see Definition [[§CA.2 Generalized Functions#^def-ca-2-6|§CA.2.6]] Support and Singular Support.
 
-^nd-def-ca-2-3
+^nd-def-ca-2-6
 
 - [ ] Q1 **[def]** Define both.
 - [ ] Q2 Give support and singular support of $\delta$, $\theta$ and $\mathcal P\frac1x$.
@@ -2707,13 +2707,13 @@ $\operatorname{supp}T$ is the complement of the largest open set on which $T$ va
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: the definition's examples; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|§C2b.5.6]] Microcausality as a Support Statement; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|§C2b.3.6]] The Wightman Function as a Distribution: Off the Cone and on It part 2.
+> - Step 1: the definition's examples; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|§C2b.5.6]] Microcausality as a Support Statement; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|§C2b.3.6]] The Wightman Function as a Distribution: Off the Cone and on It part 1.
 
 ### [B] Derivative of a generalized function; product with a smooth function
 
 $T'[\varphi] \equiv -T[\varphi']$, $\partial_\mu T[\varphi] \equiv -T[\partial_\mu\varphi]$; $(gT)[\varphi] \equiv T[g\varphi]$ for smooth $g$, see Definition [[§CA.2 Generalized Functions#^def-ca-2-7|§CA.2.7]] Derivative of a Generalized Function, Definition [[§CA.2 Generalized Functions#^def-ca-2-8|§CA.2.8]] Product of a Generalized Function with a Smooth Function.
 
-^nd-def-ca-2-4
+^nd-def-ca-2-7
 
 - [ ] Q1 **[def]** Define the derivative and the product with a smooth function.
 - [ ] Q2 Show that the definition of the derivative agrees with integration by parts for a differentiable $\psi$.
@@ -2727,7 +2727,7 @@ $T'[\varphi] \equiv -T[\varphi']$, $\partial_\mu T[\varphi] \equiv -T[\partial_\
 
 $T_\varepsilon \to T$ means $T_\varepsilon[\varphi] \to T[\varphi]$ for every test function; $\tilde T[\varphi] \equiv T[\tilde\varphi]$, see Definition [[§CA.2 Generalized Functions#^def-ca-2-9|§CA.2.9]] Distributional Limit, Definition [[§CA.2 Generalized Functions#^def-ca-2-10|§CA.2.10]] Fourier Transform of a Generalized Function.
 
-^nd-def-ca-2-6
+^nd-def-ca-2-9
 
 - [ ] Q1 **[def]** Define both.
 - [ ] Q2 What is the distributional meaning of "$\varepsilon \to 0^+$ at the end" in an $i\varepsilon$ expression?
@@ -2741,7 +2741,7 @@ $T_\varepsilon \to T$ means $T_\varepsilon[\varphi] \to T[\varphi]$ for every te
 
 $T(Ax + a)[\varphi] \equiv |\det A|^{-1}T[\varphi(A^{-1}(\cdot - a))]$; $T$ is Lorentz invariant if $T[\varphi\circ\Lambda^{-1}] = T[\varphi]$ for every proper orthochronous $\Lambda$, see Definition [[§CA.2 Generalized Functions#^def-ca-2-11|§CA.2.11]] Linear Change of Variables, Definition [[§CA.2 Generalized Functions#^def-ca-2-12|§CA.2.12]] Invariant Distribution.
 
-^nd-def-ca-2-8
+^nd-def-ca-2-11
 
 - [ ] Q1 **[def]** Define both.
 - [ ] Q2 Derive $\delta(\lambda x) = |\lambda|^{-n}\delta(x)$ from the definition.
@@ -2755,7 +2755,7 @@ $T(Ax + a)[\varphi] \equiv |\det A|^{-1}T[\varphi(A^{-1}(\cdot - a))]$; $T$ is L
 
 For a test function $\varphi$, $\mathcal P\int\frac{\varphi(s)}{s}ds \equiv \lim_{\delta\to0^+}(\int_{-\infty}^{-\delta} + \int_\delta^\infty)\frac{\varphi(s)}{s}ds$, a real, odd generalized function, see Definition [[§CA.2 Generalized Functions#^def-ca-2-5|§CA.2.5]] Principal Value.
 
-^nd-def-ca-2-10
+^nd-def-ca-2-5
 
 - [ ] Q1 **[def]** Define $\mathcal P\frac1s$, and give its equivalent form with $\varphi(s) - \varphi(0)$.
 - [ ] Q2 **[why]** Why is $1/s$ alone not a distribution on $\mathbb R$?
@@ -2769,7 +2769,7 @@ For a test function $\varphi$, $\mathcal P\int\frac{\varphi(s)}{s}ds \equiv \lim
 
 A map $f \mapsto \Phi(f)$ from $\mathcal S(\mathbb R^n)$ to operators on a dense invariant domain, linear in $f$, with every matrix element a tempered distribution, see Definition [[§CA.3 Products of Distributions and Operator-Valued Distributions#^def-ca-3-1|§CA.3.1]] Operator-Valued Distribution.
 
-^nd-def-ca-2-11
+^nd-def-ca-3-1
 
 - [ ] Q1 **[def]** Define an operator-valued distribution.
 - [ ] Q2 Which fields of C2a–C2b are operator-valued distributions, on which space (three or four dimensions)?
@@ -2783,7 +2783,7 @@ A map $f \mapsto \Phi(f)$ from $\mathcal S(\mathbb R^n)$ to operators on a dense
 
 $f(\mathbf x) = \int\frac{d^3k}{(2\pi)^3}\tilde f(\mathbf k)e^{i\mathbf k\cdot\mathbf x}$, $f(x) = \int\frac{d^4p}{(2\pi)^4}\tilde f(p)e^{-ip\cdot x}$; all $2\pi$'s with the momentum integral, see Definition [[§CA.4 Fourier Transforms and Fourier Tricks#^def-ca-4-1|§CA.4.1]] Fourier Transform in Space and Spacetime, [[§CA.4 Fourier Transforms and Fourier Tricks#^cau-ca-4-1|§CA.4, Caution: Two conventions in the vault]]. *Source: register row "Fourier transform (4d)" · PS and Yu same*
 
-^nd-def-ca-3-1
+^nd-def-ca-4-1
 
 - [ ] Q1 **[def]** Write the forward and inverse transforms in space and in spacetime.
 - [ ] Q2 **[conv]** Why do time and space carry opposite signs in $e^{-ip\cdot x}$? Which convention does Waves and Optics use instead, and why?
@@ -2795,9 +2795,9 @@ $f(\mathbf x) = \int\frac{d^3k}{(2\pi)^3}\tilde f(\mathbf k)e^{i\mathbf k\cdot\m
 
 ### [B] Contour, analytic function, isolated singularities and residues
 
-A contour integral $\int_\gamma f\,dz = \int_a^bf(z(s))z'(s)ds$; analytic means complex-differentiable (Cauchy–Riemann); poles and essential singularities from the Laurent expansion; the residue is the coefficient $a_{-1}$, see Definition [[§CA.5 Contour Integration#^def-ca-5-1|§CA.5.1]] Contour; Contour Integral, Definition [[§CA.5 Contour Integration#^def-ca-5-3|§CA.5.3]] Analytic Function, Definition [[§CA.5 Contour Integration#^def-ca-5-6|§CA.5.6]] Laurent Expansion; Removable Singularity, Pole and Essential Singularity, Definition [[§CA.5 Contour Integration#^def-ca-5-8|§CA.5.8]] Residue. *Source: Problem Set 4, Problem 1 · Lecture 6 (Sep 21), slide "Complex Analysis: a Survival Guide"*
+A contour integral $\int_\gamma f\,dz = \int_a^bf(z(s))z'(s)ds$; analytic means complex-differentiable (Cauchy–Riemann); poles and essential singularities from the Laurent expansion; the residue is the coefficient $a_{-1}$, see Definition [[§CA.5 Contour Integration#^def-ca-5-1|§CA.5.1]] Contour, Definition [[§CA.5 Contour Integration#^def-ca-5-2|§CA.5.2]] Contour Integral, Definition [[§CA.5 Contour Integration#^def-ca-5-3|§CA.5.3]] Analytic Function, Definition [[§CA.5 Contour Integration#^def-ca-5-4|§CA.5.4]] The Cauchy–Riemann Equations, Definition [[§CA.5 Contour Integration#^def-ca-5-6|§CA.5.6]] Laurent Expansion, Definition [[§CA.5 Contour Integration#^def-ca-5-7|§CA.5.7]] Removable Singularity, Pole and Essential Singularity, Definition [[§CA.5 Contour Integration#^def-ca-5-8|§CA.5.8]] Residue. *Source: Problem Set 4, Problem 1 · Lecture 6 (Sep 21), slide "Complex Analysis: a Survival Guide"*
 
-^nd-def-ca-4-5
+^nd-def-ca-5-8
 
 - [ ] Q1 **[def]** Define a contour integral, an analytic function, a pole of order $k$ and the residue.
 - [ ] Q2 Show that $\bar z$ is not analytic.
@@ -2812,7 +2812,7 @@ A contour integral $\int_\gamma f\,dz = \int_a^bf(z(s))z'(s)ds$; analytic means 
 
 $K_\nu(z) = \int_0^\infty du\,e^{-z\cosh u}\cosh(\nu u)$ for $\operatorname{Re}z > 0$, so $\int_{-\infty}^\infty du\,\cosh u\,e^{-z\cosh u} = 2K_1(z)$, see Definition [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|§CA.6.2]] Modified Bessel Function of the Second Kind. *Source: Problem Set 4, Problem 3 · PS §2.4, eq. (2.52)*
 
-^nd-def-ca-5-1
+^nd-def-ca-6-2
 
 - [ ] Q1 **[def]** Write the integral representation of $K_\nu$.
 - [ ] Q2 What are the small- and large-argument behaviours of $K_1$?
@@ -2826,7 +2826,7 @@ $K_\nu(z) = \int_0^\infty du\,e^{-z\cosh u}\cosh(\nu u)$ for $\operatorname{Re}z
 
 A distribution $G$ with $P(\partial)G = -i\delta^n$; for Klein–Gordon $(\partial^2 + m^2)G = -i\delta^4$, the PS normalization, see Definition [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-7-1|§CA.7.1]] Fundamental Solution.
 
-^nd-def-ca-6-1
+^nd-def-ca-7-1
 
 - [ ] Q1 **[def]** Define a fundamental solution and state what $P(\partial)G = -i\delta^n$ means on test functions.
 - [ ] Q2 **[conv]** Which factor fixes the normalization, and how is it undone in the solution formula $\phi = iG[j(x - \cdot)]$?
@@ -2840,7 +2840,7 @@ A distribution $G$ with $P(\partial)G = -i\delta^n$; for Klein–Gordon $(\parti
 
 $\frac{1}{x - x_0 \pm i\varepsilon} \to \mathcal P\frac{1}{x - x_0} \mp i\pi\delta(x - x_0)$ is empty pointwise; its content sits at $x = x_0$, so an $i\varepsilon$ expression may be set to $\varepsilon = 0$ wherever the denominator does not vanish, see [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^cau-ca-7-1|§CA.7, Caution: What the formula does and does not say]].
 
-^nd-cau-ca-6-1
+^nd-cau-ca-7-1
 
 - [ ] Q1 **[state]** State the formula with the correct signs.
 - [ ] Q2 **[conv]** Mnemonic: a pole of $1/(x - x_0 - i\varepsilon)$ lies on which side of the real path, and which sign of $i\pi$ does it give?
@@ -2854,7 +2854,7 @@ $\frac{1}{x - x_0 \pm i\varepsilon} \to \mathcal P\frac{1}{x - x_0} \mp i\pi\del
 
 Jordan's lemma requires the non-exponential factor to tend to zero on the arc (no rate needed); a regulator such as $e^{-\varepsilon p}$ may not be kept on the arc, see [[§CA.5 Contour Integration#^cau-ca-5-1|§CA.5, Caution: Jordan's lemma needs g → 0]].
 
-^nd-cau-ca-4-1
+^nd-cau-ca-5-1
 
 - [ ] Q1 **[state]** State Jordan's lemma and its hypothesis.
 - [ ] Q2 For the equal-time Wightman integrand $pe^{ipr}/\sqrt{p^2 + m^2}$, does the lemma apply? What trick cures it?
@@ -3096,11 +3096,11 @@ As $\xi^2 \to 0$, $D_W = -\frac{1}{4\pi^2[(\xi^0 - i\varepsilon)^2 - \boldsymbol
 
 ### [B] The Wightman function as a distribution, off the cone and on it ★
 
-Off the light cone $D_W$ is the real-analytic Bessel function; its singular support is the whole cone; on $\mathbb R^4$, $D_W = -\frac{1}{4\pi^2}\mathcal P\frac{1}{\xi^2} - \frac{i}{4\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2) + L$ with $L$ locally integrable, see Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|§C2b.3.6]] The Wightman Function as a Distribution: Off the Cone and on It. *Source: the user's notes Ch. 5 §5.4, §5.7*
+Off the light cone $D_W$ is the real-analytic Bessel function (Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|§C2b.3.2]] The Wightman Function in the Lower Half-Plane); its singular support is the whole cone; on $\mathbb R^4$, $D_W = -\frac{1}{4\pi^2}\mathcal P\frac{1}{\xi^2} - \frac{i}{4\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2) + L$ with $L$ locally integrable, see Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|§C2b.3.6]] The Wightman Function as a Distribution: Off the Cone and on It. *Source: the user's notes Ch. 5 §5.4, §5.7*
 
 ^nd-thm-c2b-3-6
 
-- [ ] Q1 **[state]** State the three parts.
+- [ ] Q1 **[state]** State the lead sentence (off the cone) and the two parts.
 - [ ] Q2 Split off the light-cone term with the light-cone boundary value. What are its real and imaginary parts?
 - [ ] Q3 **[why]** Which part depends on the mass, and which does not?
 
@@ -3112,7 +3112,7 @@ Off the light cone $D_W$ is the real-analytic Bessel function; its singular supp
 
 $U(z, \mathbf x) = 2i\partial_zW(z, \mathbf x)$ and $U = 2i\partial_tD_W$ in $\mathcal S'$, linking Lecture 2's single-particle amplitude to the field's two-point function, see Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|§C2b.4.1]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function. *Source: the user's notes Ch. 2 §2.2, Ch. 5 §5.4*
 
-^nd-thm-c2b-3-7
+^nd-thm-c2b-4-1
 
 - [ ] Q1 **[state]** State the relation.
 - [ ] Q2 Compare the two mode integrals: which weights do $U$ and $D_W$ carry, and how does $\partial_t$ convert one into the other?
@@ -3126,7 +3126,7 @@ $U(z, \mathbf x) = 2i\partial_zW(z, \mathbf x)$ and $U = 2i\partial_tD_W$ in $\m
 
 For $r > |t|$, $U = \frac{im^2t}{2\pi^2\rho^2}K_2(m\rho)$ with $\rho = \sqrt{r^2 - t^2}$, nonzero at every spacelike point with $t \neq 0$; for $m\rho \gg 1$, $U \propto e^{-m\rho}$, see Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|§C2b.4.3]] The Relativistic Amplitude at Spacelike Separation, Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-4|§C2b.4.4]] The Spacelike Amplitude at Large Distance. *Source: Lecture 2 (Sep 2), slides "The exact radial integral: a Bessel function", "Quantum Causality is Violated" · PS §2.1, p. 14 · the user's notes Ch. 2 §2.2*
 
-^nd-thm-c2b-3-8
+^nd-thm-c2b-4-3
 
 - [ ] Q1 **[state]** State the closed form and its large-distance behaviour.
 - [ ] Q2 Differentiate $W = mK_1(ms)/4\pi^2s$ twice in $z$ using the recursion for $K_\nu$.
@@ -3135,14 +3135,14 @@ For $r > |t|$, $U = \frac{im^2t}{2\pi^2\rho^2}K_2(m\rho)$ with $\rho = \sqrt{r^2
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–7 of Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|§C2b.4.3]] The Relativistic Amplitude at Spacelike Separation; Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|§CA.6.4]] Properties of $K_\nu$ part 1.
+> - Step 1: derivation steps 1–3 of Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-2|§C2b.4.2]] The Relativistic Amplitude in the Lower Half-Plane ($U$ in the lower half-plane), then steps 1–4 of Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|§C2b.4.3]] The Relativistic Amplitude at Spacelike Separation; Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|§CA.6.4]] Properties of $K_\nu$ part 1.
 > - Step 2: resolution: Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|§C2b.5.7]] Forward and Backward Amplitudes; Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-4|§C2b.4.4]] The Spacelike Amplitude at Large Distance for the asymptotics.
 
 ### [B] The spacelike amplitude at large distance ★
 
 For $r > |t|$ and $m\rho \gg 1$, $U = \frac{im^{3/2}t}{(2\pi\rho)^{3/2}\rho}e^{-m\rho}(1 + \frac{15}{8m\rho} + \cdots)$, nonzero at every spacelike point with $t \neq 0$; the leading term is the saddle-point result of Lecture 2, see Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-4|§C2b.4.4]] The Spacelike Amplitude at Large Distance. *Source: Lecture 2 (Sep 2), slide "Quantum Causality is Violated" · PS §2.1, p. 14 · the user's notes Ch. 2 §2.2*
 
-^nd-thm-c2b-3-9
+^nd-thm-c2b-4-4
 
 - [ ] Q1 **[state]** State the large-distance form and the range of the leak.
 - [ ] Q2 Insert the large-argument form of $K_2$ into the closed form of $U$.
@@ -3157,7 +3157,7 @@ For $r > |t|$ and $m\rho \gg 1$, $U = \frac{im^{3/2}t}{(2\pi\rho)^{3/2}\rho}e^{-
 
 For $|t| > r$, $U(t, \mathbf x) = \frac{m^2t}{4\pi\tau^2}H^{(2)}_2(m\tau)$ for $t > 0$, $U(-t, \mathbf x) = \overline{U(t, \mathbf x)}$, oscillating, see Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-5|§C2b.4.5]] The Relativistic Amplitude at Timelike Separation. *Source: the user's notes Ch. 2 §2.2*
 
-^nd-thm-c2b-3-10
+^nd-thm-c2b-4-5
 
 - [ ] Q1 **[state]** State the timelike form.
 - [ ] Q2 Continue $K_2$ to imaginary argument: which Hankel function appears for $t > 0$?
@@ -3171,7 +3171,7 @@ For $|t| > r$, $U(t, \mathbf x) = \frac{m^2t}{4\pi\tau^2}H^{(2)}_2(m\tau)$ for $
 
 Restoring $\hbar$ and $c$: $U = \frac{im^2c^3t}{2\pi^2\hbar^2\rho^2}K_2(mc\rho/\hbar)$; the leak has the range of the reduced Compton wavelength, see Example [[§C2b.4 The Single-Particle Amplitude in Closed Form#^ex-c2b-4-1|§C2b.4.1]] Units Restored in the Single-Particle Amplitude. *Source: the user's notes Ch. 2 §2.4*
 
-^nd-ex-c2b-3-1
+^nd-ex-c2b-4-1
 
 - [ ] Q1 **[state]** What dimension must $U$ have, and why?
 - [ ] Q2 Make the argument of $K_2$ dimensionless with $\hbar$ and $c$.
@@ -3186,7 +3186,7 @@ Restoring $\hbar$ and $c$: $U = \frac{im^2c^3t}{2\pi^2\hbar^2\rho^2}K_2(mc\rho/\
 
 $[\hat\phi(x), \hat\phi(y)] = D_W(x - y) - D_W(y - x) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}(e^{-ip\cdot(x - y)} - e^{ip\cdot(x - y)}) = iD(x - y)$, the same number in every state, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-2|§C2b.5.2]] The Field Commutator Is a c-Number. *Source: Lecture 5 (Sep 16), transcript ("the commutator, formed from opposite operator orderings") · PS §2.4, eq. (2.53) · the user's notes Ch. 5 §5.5*
 
-^nd-thm-c2b-4-2
+^nd-thm-c2b-5-2
 
 - [ ] Q1 **[state]** State the commutator in terms of $D_W$ and as a mode integral.
 - [ ] Q2 Expand $[\hat\phi(x), \hat\phi(y)]$ with momenta $\mathbf p$, $\mathbf q$: which of the four commutators survive?
@@ -3201,7 +3201,7 @@ $[\hat\phi(x), \hat\phi(y)] = D_W(x - y) - D_W(y - x) = \int\frac{d^3p}{(2\pi)^3
 
 $iD = D_W(\xi) - D_W(-\xi)$ and $D_1 = D_W(\xi) + D_W(-\xi)$ in $\mathcal S'$, real, with transforms $\tilde D = -2\pi i\operatorname{sgn}(p^0)\delta(p^2 - m^2)$, $\tilde D_1 = 2\pi\delta(p^2 - m^2)$; both solve the homogeneous equation, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|§C2b.5.4]] The Commutator and Hadamard Functions as Distributions. *Source: the user's notes Ch. 5 §5.5, §5.7 · Problem Set 4, Problem 2*
 
-^nd-thm-c2b-4-4
+^nd-thm-c2b-5-4
 
 - [ ] Q1 **[state]** State the transforms of $D$ and $D_1$.
 - [ ] Q2 Derive them from the transform of $D_W(\pm\xi)$.
@@ -3216,7 +3216,7 @@ $iD = D_W(\xi) - D_W(-\xi)$ and $D_1 = D_W(\xi) + D_W(-\xi)$ in $\mathcal S'$, r
 
 $D(\xi) = 0$ for $\xi^2 < 0$, while inside the cone $D$ does not vanish identically, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|§C2b.5.5]] The Free Field Is Microcausal. *Source: Lecture 5 (Sep 16), transcript ("the commutator … vanishes at spacelike separation and provides the causality condition") · PS §2.4, eq. (2.53), Fig. 2.4 · the user's notes Ch. 5 §5.5*
 
-^nd-thm-c2b-4-5
+^nd-thm-c2b-5-5
 
 - [ ] Q1 **[state]** State the theorem.
 - [ ] Q2 For spacelike $\xi$, construct $\Lambda \in SO^+(1,3)$ with $\Lambda\xi = -\xi$: which frame do you first go to, and which rotation reverses the vector?
@@ -3231,9 +3231,9 @@ $D(\xi) = 0$ for $\xi^2 < 0$, while inside the cone $D$ does not vanish identica
 
 ### [B] Microcausality as a support statement ★
 
-$\operatorname{supp}D \subseteq \{\xi^2 \ge 0\}$ (the cone surface for $m = 0$, the whole closed cone for $m > 0$); equivalently $[\hat\phi(f), \hat\phi(g)] = 0$ for test functions with spacelike-separated supports, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|§C2b.5.6]] Microcausality as a Support Statement. *Source: the user's notes Ch. 5 §5.5, App. A §A.4*
+$\operatorname{supp}D \subseteq \{\xi^2 \ge 0\}$; equivalently $[\hat\phi(f), \hat\phi(g)] = 0$ for test functions with spacelike-separated supports, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|§C2b.5.6]] Microcausality as a Support Statement; exactly, the support is the cone surface for $m = 0$ and the whole closed cone for $m > 0$, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-10|§C2b.5.10]] The Support of D Exactly. *Source: the user's notes Ch. 5 §5.5, App. A §A.4*
 
-^nd-thm-c2b-4-6
+^nd-thm-c2b-5-6
 
 - [ ] Q1 **[state]** State both forms.
 - [ ] Q2 Show that $D$ vanishes as a distribution on the open spacelike region.
@@ -3241,13 +3241,13 @@ $\operatorname{supp}D \subseteq \{\xi^2 \ge 0\}$ (the cone surface for $m = 0$, 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14.
-> - Step 1: derivation steps 1–3; Definition [[§CA.2 Generalized Functions#^def-ca-2-6|§CA.2.6]] Support and Singular Support.
+> - Step 1: derivation steps 1–2; Definition [[§CA.2 Generalized Functions#^def-ca-2-6|§CA.2.6]] Support and Singular Support; the exact support: Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-10|§C2b.5.10]] The Support of D Exactly and its derivation.
 
 ### [B] Forward and backward amplitudes ★
 
 $U(t, \mathbf x) + U(-t, \mathbf x) = -2\partial_tD$, which vanishes outside the cone, and $U(t, \mathbf x) - U(-t, \mathbf x) = 2i\partial_tD_1$; outside the cone $U = i\partial_tD_1$, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|§C2b.5.7]] Forward and Backward Amplitudes. *Source: the user's notes Ch. 2 §2.2 (Caution "Particles moving backward in time") · Lecture 2 (Sep 2), slide "Resolution in Quantum Field Theory"*
 
-^nd-thm-c2b-4-7
+^nd-thm-c2b-5-7
 
 - [ ] Q1 **[state]** State the three relations.
 - [ ] Q2 Write the forward and backward amplitudes as mode integrals and form sum and difference.
@@ -3261,7 +3261,7 @@ $U(t, \mathbf x) + U(-t, \mathbf x) = -2\partial_tD$, which vanishes outside the
 
 $D = -\frac{1}{2\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2) = -\frac{1}{4\pi r}[\delta(t - r) - \delta(t + r)]$, $D_1 = -\frac{1}{2\pi^2}\mathcal P\frac{1}{\xi^2}$, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|§C2b.5.8]] Commutator and Hadamard Functions of the Massless Field.
 
-^nd-thm-c2b-4-8
+^nd-thm-c2b-5-8
 
 → drilled as [[PHY 513 PS Drill#^ps4-2-b|PS4.2(b)]]
 
@@ -3269,7 +3269,7 @@ $D = -\frac{1}{2\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2) = -\frac{1}{4\pi r}[\
 
 Outside the cone $D = 0$, $D_1 = \frac{mK_1(mr)}{2\pi^2r}$; inside, $D = \operatorname{sgn}(\xi^0)\frac{mJ_1(m\tau)}{4\pi\tau}$, $D_1 = \frac{mY_1(m\tau)}{4\pi\tau}$; on the cone the massless delta, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-9|§C2b.5.9]] Commutator and Hadamard Functions of the Massive Field. The inside-the-cone forms follow from Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|§C2b.3.4]] The Wightman Function at Timelike Separation by the same relations.
 
-^nd-thm-c2b-4-9
+^nd-thm-c2b-5-9
 
 → drilled as [[PHY 513 PS Drill#^ps4-3-b|PS4.3(b)]] (outside the cone)
 
@@ -3277,7 +3277,7 @@ Outside the cone $D = 0$, $D_1 = \frac{mK_1(mr)}{2\pi^2r}$; inside, $D = \operat
 
 $[\hat\phi(x), \hat\phi(y)] = iD(x - y)$, $[\hat\phi(x), \hat\pi(y)] = i\partial_{y^0}D(x - y)$, $[\hat\pi(x), \hat\pi(y)] = i\partial_{x^0}\partial_{y^0}D(x - y)$, reducing to the canonical relations at equal times, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-11|§C2b.5.11]] Commutators at Unequal Times. This answers the question left open in Lecture 5 ("how commutators behave at different times"). *Source: Lecture 5 (Sep 16), transcript · the user's notes Ch. 5 §5.7*
 
-^nd-thm-c2b-4-10
+^nd-thm-c2b-5-11
 
 - [ ] Q1 **[state]** State the three commutators.
 - [ ] Q2 **[why]** Why may $\partial_{y^0}$ be taken outside the commutator?
@@ -3293,7 +3293,7 @@ $[\hat\phi(x), \hat\phi(y)] = iD(x - y)$, $[\hat\phi(x), \hat\pi(y)] = i\partial
 
 At fixed $t = x^0 - y^0$ the three kernels are tempered distributions in $\mathbf x - \mathbf y$ with spatial transforms $-\sin(E_{\mathbf p}t)/E_{\mathbf p}$, $\cos(E_{\mathbf p}t)$, $-E_{\mathbf p}\sin(E_{\mathbf p}t)$ (times $i$); as $t \to 0$ they tend to $0$, $i\delta^3$, $0$ in $\mathcal S'$, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-12|§C2b.5.12]] Commutators at Unequal Times as Distributions. *Source: the user's notes Ch. 5 §5.7*
 
-^nd-thm-c2b-4-11
+^nd-thm-c2b-5-12
 
 - [ ] Q1 **[state]** State the spatial transforms and the equal-time limits.
 - [ ] Q2 Derive the transform of $[\hat\phi, \hat\pi]$ from the one of $D$ by a time derivative.
@@ -3307,7 +3307,7 @@ At fixed $t = x^0 - y^0$ the three kernels are tempered distributions in $\mathb
 
 $D$ is the unique solution of $(\partial^2 + m^2)D = 0$ with $D(0, \boldsymbol\xi) = 0$, $\partial_0D(0, \boldsymbol\xi) = -\delta^3(\boldsymbol\xi)$, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-13|§C2b.5.13]] Cauchy Data of the Commutator Function. *Source: the user's notes Ch. 5 §5.7*
 
-^nd-thm-c2b-4-12
+^nd-thm-c2b-5-13
 
 - [ ] Q1 **[state]** State the Cauchy data of $D$.
 - [ ] Q2 Derive them from the equal-time canonical relations.
@@ -3322,7 +3322,7 @@ $D$ is the unique solution of $(\partial^2 + m^2)D = 0$ with $D(0, \boldsymbol\x
 
 $\hat\phi(x) = -\int d^3y\,[D(x - y)\hat\pi(y) - \partial_{y^0}D(x - y)\hat\phi(y)]$ for every $y^0$; since $D$ vanishes outside the cone, $\hat\phi(x)$ is fixed by data inside the backward cone of $x$, see Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-14|§C2b.5.14]] The Commutator Function Propagates the Field. *Source: the user's notes Ch. 5 §5.7*
 
-^nd-thm-c2b-4-13
+^nd-thm-c2b-5-14
 
 - [ ] Q1 **[state]** State the propagation formula and its causal consequence.
 - [ ] Q2 Show the right side is independent of $y^0$. Which equation do both factors obey in $y$, and which integration by parts is used?
@@ -3337,7 +3337,7 @@ $\hat\phi(x) = -\int d^3y\,[D(x - y)\hat\pi(y) - \partial_{y^0}D(x - y)\hat\phi(
 
 For a tempered Green's function, $(m^2 - p^2)\tilde D_C(p) = -i$, so $\tilde D_C = \frac{i}{p^2 - m^2}$ wherever $p^2 \neq m^2$; on the shell the equation does not determine it, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-2|§C2b.6.2]] A Green's Function Lives off the Shell. *Source: Lecture 6 (Sep 21), slide "Green's Functions: Explicit Form" · PS §2.4, pp. 29–30 · the user's notes Ch. 6 §6.3–6.4*
 
-^nd-thm-c2b-5-2
+^nd-thm-c2b-6-2
 
 - [ ] Q1 **[state]** State the momentum-space form of a Green's function and where it is determined.
 - [ ] Q2 Insert $D_C(x - y) = \int\frac{d^4p}{(2\pi)^4}\tilde D_C(p)e^{-ip\cdot(x - y)}$ and $\delta^4 = \int\frac{d^4p}{(2\pi)^4}e^{-ip\cdot(x - y)}$ into the defining equation. What does $\partial_x^2 + m^2$ do to the exponential?
@@ -3353,7 +3353,7 @@ For a tempered Green's function, $(m^2 - p^2)\tilde D_C(p) = -i$, so $\tilde D_C
 
 Every contour passing the two poles gives a Green's function, and two contours give Green's functions that differ by a homogeneous solution built from on-shell waves: choosing a contour is choosing a boundary condition, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-3|§C2b.6.3]] Contours Are Boundary Conditions. *Source: Lecture 6 (Sep 21), slides "Green's functions and Complex Contours", "Green's Functions and Boundary Conditions" ("DF and DR differ only by a homogenous solution") · PS §2.4, p. 31 · the user's notes Ch. 6 §6.8*
 
-^nd-thm-c2b-5-3
+^nd-thm-c2b-6-3
 
 - [ ] Q1 **[state]** State both parts.
 - [ ] Q2 Apply $\partial^2 + m^2$ under the integral: what cancels the denominator, and why may the contour then be moved back to the real axis?
@@ -3370,7 +3370,7 @@ Every contour passing the two poles gives a Green's function, and two contours g
 
 $D_C$ is a tempered distribution; at fixed $\mathbf p$, $\tilde D_C = \frac{i}{(p^0 - E_{\mathbf p} + i0\sigma_+)(p^0 + E_{\mathbf p} + i0\sigma_-)}$, and $(\partial^2 + m^2)D_C = -i\delta^4$ in $\mathcal S'$; every tempered fundamental solution is $D_C + H$ with $H$ on the shell, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-4|§C2b.6.4]] Each Contour Is a Fundamental Solution. *Source: the user's notes Ch. 6 §6.2, §6.8–6.9*
 
-^nd-thm-c2b-5-4
+^nd-thm-c2b-6-4
 
 - [ ] Q1 **[state]** State the boundary-value form of $\tilde D_C$ and what $\sigma_\pm$ mean.
 - [ ] Q2 **[why]** Passing a pole above corresponds to moving it which way? Why?
@@ -3384,7 +3384,7 @@ $D_C$ is a tempered distribution; at fixed $\mathbf p$, $\tilde D_C = \frac{i}{(
 
 The contour $C_R$ passing above both poles gives $D_R(\xi) = \theta(\xi^0)[D_W(\xi) - D_W(-\xi)] = \theta(\xi^0)iD(\xi)$, zero unless $x$ is in the causal future of $y$; mode by mode $\theta(t)(-i\sin E_{\mathbf p}t)/E_{\mathbf p}$, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|§C2b.6.5]] The Retarded Green's Function. *Source: Lecture 6 (Sep 21), slides "Retarded Contour: Qualitative Behavior", "Retarded Green's Function: Explicit Evaluation" · PS §2.4, eqs. (2.54)–(2.56) · the user's notes Ch. 6 §6.6*
 
-^nd-thm-c2b-5-5
+^nd-thm-c2b-6-5
 
 - [ ] Q1 **[state]** State $D_R$ in terms of $D_W$ and of $D$, and its support.
 - [ ] Q2 Separate the $p^0$ integral. For $t < 0$, in which half-plane does $e^{-ip^0t}$ decay? Close there: which poles are enclosed?
@@ -3404,7 +3404,7 @@ The contour $C_R$ passing above both poles gives $D_R(\xi) = \theta(\xi^0)[D_W(\
 
 $\theta(\xi^0)D$ is defined slice by slice since $D$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$; it equals the contour's $D_R/i$; $D_R$ is the only tempered fundamental solution vanishing for $\xi^0 < 0$; for $m = 0$, $D_R = -\frac{i}{4\pi r}\delta(\xi^0 - r)$, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|§C2b.6.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future. *Source: the user's notes Ch. 6 §6.6, §6.2, App. A §A.4*
 
-^nd-thm-c2b-5-6
+^nd-thm-c2b-6-6
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 **[why]** Away from $\xi = 0$, why is $\theta(\xi^0)D$ a product with disjoint singular supports?
@@ -3419,7 +3419,7 @@ $\theta(\xi^0)D$ is defined slice by slice since $D$ is smooth in $\xi^0$ with v
 
 The contour $C_A$ passing below both poles gives $D_A(\xi) = -\theta(-\xi^0)iD(\xi) = D_R(-\xi)$, zero unless $x$ is in the causal past of $y$, see Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-7|§C2b.6.7]] The Advanced Green's Function. Lecture 6 computed $D_R$ and $D_F$ and left the other contours as practice: "the key steps that you want to practice at home … assume something about this, then see what sign the exponential must have to be damped". *Source: Lecture 6 (Sep 21), transcript · the user's notes Ch. 6 §6.8, §6.11*
 
-^nd-thm-c2b-5-7
+^nd-thm-c2b-6-7
 
 - [ ] Q1 **[state]** State $D_A$ in terms of $D$ and of $D_R$.
 - [ ] Q2 For $t > 0$ close downward: which poles are enclosed?
@@ -3451,7 +3451,7 @@ For each of the four contours (retarded, advanced, Feynman, anti-Feynman) and ea
 
 $T\{\hat\phi(x)\hat\phi(y)\}$ is symmetric; at equal times it gives $\hat\phi\hat\phi$ (ambiguous for $\hat\phi\hat\pi$); it is frame independent because of microcausality; $\partial_{x^0}T\{\hat A(x)\hat B(y)\} = T\{\partial_0\hat A\hat B\} + \delta(x^0 - y^0)[\hat A(x), \hat B(y)]$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|§C2b.7.1]] Properties of Time Ordering. *Source: the user's notes Ch. 5 §5.6, Ch. 6 §6.7 · Yu eqs. (6.108)–(6.113)*
 
-^nd-thm-c2b-6-1
+^nd-thm-c2b-7-1
 
 - [ ] Q1 **[state]** State the four properties.
 - [ ] Q2 **[why]** Why is $T\{\hat\phi(x)\hat\phi(y)\}$ the same in every inertial frame? Treat timelike and spacelike separation separately.
@@ -3466,7 +3466,7 @@ $T\{\hat\phi(x)\hat\phi(y)\}$ is symmetric; at equal times it gives $\hat\phi\ha
 
 The Feynman contour, below $-E_{\mathbf p}$ and above $+E_{\mathbf p}$, gives $D_F(\xi) = \theta(\xi^0)D_W(\xi) + \theta(-\xi^0)D_W(-\xi) = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$; $D_F$ is even, invariant, and $D_F = D_R + D_W(-\xi)$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|§C2b.7.2]] The Feynman Propagator. The operator side ($\theta D_W + \theta D_W$ is the time-ordered product) → drilled as [[PHY 513 PS Drill#^ps4-4-a|PS4.4(a)]]. *Source: Lecture 6 (Sep 21), slides "The Feynman Propagator", "Evaluation of the Feynman Propagator", "Green's Functions and Boundary Conditions" · PS §2.4, eqs. (2.59)–(2.60) · the user's notes Ch. 6 §6.7*
 
-^nd-thm-c2b-6-2
+^nd-thm-c2b-7-2
 
 - [ ] Q1 **[state]** State $D_F$ in terms of $D_W$, as a vacuum expectation value, and its relation to $D_R$.
 - [ ] Q2 For $t > 0$ close downward: which of the two poles lies inside, and why is the other outside?
@@ -3485,7 +3485,7 @@ The Feynman contour, below $-E_{\mathbf p}$ and above $+E_{\mathbf p}$, gives $D
 
 The contour above $-E_{\mathbf p}$ and below $+E_{\mathbf p}$ gives $D_{\bar F}(\xi) = -\theta(\xi^0)D_W(-\xi) - \theta(-\xi^0)D_W(\xi) = -\langle0|\bar T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-3|§C2b.7.3]] The Anti-Feynman Function. One of the contours left to practise in Lecture 6. *Source: Lecture 6 (Sep 21), transcript · the user's notes Ch. 6 §6.8, §6.11*
 
-^nd-thm-c2b-6-3
+^nd-thm-c2b-7-3
 
 - [ ] Q1 **[state]** State $D_{\bar F}$ in terms of $D_W$ and of $\bar T$.
 - [ ] Q2 Evaluate for $t > 0$ and $t < 0$: which pole is enclosed each time, with which orientation?
@@ -3499,7 +3499,7 @@ The contour above $-E_{\mathbf p}$ and below $+E_{\mathbf p}$ gives $D_{\bar F}(
 
 $D_W(\pm\xi)$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$, so $\theta(\pm\xi^0)D_W(\pm\xi)$ are defined slice by slice and $D_F \in \mathcal S'(\mathbb R^4)$; at $\xi = 0$ the slice definition is the unique extension that is a fundamental solution, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|§C2b.7.4]] The Feynman Propagator as a Distribution: the Products θ·D_W. *Source: the user's notes Ch. 5 §5.6, Ch. 6 §6.2, §6.7*
 
-^nd-thm-c2b-6-4
+^nd-thm-c2b-7-4
 
 - [ ] Q1 **[state]** State in which sense $\theta(\xi^0)D_W(\xi)$ is defined.
 - [ ] Q2 **[why]** Why does the value $\theta(0)$ not enter?
@@ -3513,7 +3513,7 @@ $D_W(\pm\xi)$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$, so
 
 For distinct times, $(\partial_x^2 + m^2)T\{\hat\phi(x)\hat\phi(y_1)\cdots\hat\phi(y_n)\} = -i\sum_k\delta^4(x - y_k)T\{\cdots\widehat{\hat\phi(y_k)}\cdots\}$; for $n = 1$, $(\partial^2 + m^2)D_F = -i\delta^4$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-5|§C2b.7.5]] The Free Schwinger–Dyson Equation. The general-$n$ case repeats the $n = 1$ computation between consecutive times.
 
-^nd-thm-c2b-6-5
+^nd-thm-c2b-7-5
 
 → drilled as [[PHY 513 PS Drill#^ps4-4-c|PS4.4(c)]] (the case $n = 1$)
 
@@ -3521,7 +3521,7 @@ For distinct times, $(\partial_x^2 + m^2)T\{\hat\phi(x)\hat\phi(y_1)\cdots\hat\p
 
 $\hat\phi(x)\hat\phi(y) = :\!\hat\phi(x)\hat\phi(y)\!: + D_W(x - y)$ and $T\{\hat\phi(x)\hat\phi(y)\} = :\!\hat\phi(x)\hat\phi(y)\!: + D_F(x - y)$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|§C2b.7.6]] Contractions: Normal Ordering against Time Ordering. *Source: the user's notes Ch. 6 §6.7 ("a first look at Wick's theorem") · Yu eqs. (6.132)–(6.133)*
 
-^nd-thm-c2b-6-6
+^nd-thm-c2b-7-6
 
 - [ ] Q1 **[state]** State both decompositions.
 - [ ] Q2 Split $\hat\phi = \hat\phi^+ + \hat\phi^-$ and expand $\hat\phi(x)\hat\phi(y)$. Which term is not normal ordered?
@@ -3537,7 +3537,7 @@ $\hat\phi(x)\hat\phi(y) = :\!\hat\phi(x)\hat\phi(y)\!: + D_W(x - y)$ and $T\{\ha
 
 Between wave-packet states $:\!\hat\phi(x)\hat\phi(y)\!:$ has smooth matrix elements, including at $x = y$, so $:\!\hat\phi^2\!:$ is defined; the whole coincident singularity sits in the c-number $D_W$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-7|§C2b.7.7]] Normal Ordering Removes the Coincident Singularity. *Source: the user's notes Ch. 6 §6.2, §6.7*
 
-^nd-thm-c2b-6-7
+^nd-thm-c2b-7-7
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Compute a one-particle matrix element of $:\!\hat\phi(x)\hat\phi(y)\!:$. Why is it smooth at $x = y$?
@@ -3545,13 +3545,13 @@ Between wave-packet states $:\!\hat\phi(x)\hat\phi(y)\!:$ has smooth matrix elem
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Step 1: derivation steps 1–5; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|§C2b.3.6]] The Wightman Function as a Distribution: Off the Cone and on It part 2.
+> - Step 1: derivation steps 1–5; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|§C2b.3.6]] The Wightman Function as a Distribution: Off the Cone and on It part 1.
 
 ### [A] The iε prescriptions ★★ [class exercise, Lecture 6]
 
 Moving the poles off the real axis is equivalent to deforming the contour: $\tilde D_F = \frac{i}{p^2 - m^2 + i\varepsilon}$, $\tilde D_{\bar F} = \frac{i}{p^2 - m^2 - i\varepsilon}$, $\tilde D_R = \frac{i}{(p^0 + i\varepsilon)^2 - E_{\mathbf p}^2}$, $\tilde D_A = \frac{i}{(p^0 - i\varepsilon)^2 - E_{\mathbf p}^2}$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|§C2b.7.10]] The $i\varepsilon$ Prescriptions. Larsen left the pole positions to the class: "It's up to you to go and say, oh, where do I have my zeros?". *Source: Lecture 6 (Sep 21), slides "Deforming Integrand: the Feynman Propagator", "Relativistic Form of Feynman Propagator"; transcript · PS §2.4, eq. (2.59) · Yu eq. (6.210) · the user's notes Ch. 6 §6.9*
 
-^nd-thm-c2b-6-9
+^nd-thm-c2b-7-10
 
 - [ ] Q1 **[state]** State the four $i\varepsilon$ forms.
 - [ ] Q2 Find the zeros of $p^2 - m^2 + i\varepsilon$ in $p^0$ to first order in $\varepsilon$. On which side of the real axis does each lie?
@@ -3568,7 +3568,7 @@ Moving the poles off the real axis is equivalent to deforming the contour: $\til
 
 For $\varepsilon > 0$, $i/(p^2 - m^2 + i\varepsilon)$ is a bounded smooth function; as $\varepsilon \to 0^+$ it tends to $i\mathcal P\frac{1}{p^2 - m^2} + \pi\delta(p^2 - m^2)$ in $\mathcal S'$, independently of how the infinitesimal is written, and its transform is the contour's $D_F$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|§C2b.7.9]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′. *Source: the user's notes Ch. 6 §6.9*
 
-^nd-thm-c2b-6-10
+^nd-thm-c2b-7-9
 
 - [ ] Q1 **[state]** State the limit and the claim about the form of the infinitesimal.
 - [ ] Q2 Apply Sokhotski–Plemelj in $p^0$ at fixed $\mathbf p$. What are the real and imaginary parts?
@@ -3582,7 +3582,7 @@ For $\varepsilon > 0$, $i/(p^2 - m^2 + i\varepsilon)$ is a bounded smooth functi
 
 $\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$, $\tilde D_R - \tilde D_A = 2\pi\operatorname{sgn}(p^0)\delta(p^2 - m^2)$, $\tilde D_W = 2\pi\theta(p^0)\delta(p^2 - m^2)$, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-11|§C2b.7.11]] Differences on the Mass Shell. *Source: the user's notes Ch. 6 §6.9*
 
-^nd-thm-c2b-6-11
+^nd-thm-c2b-7-11
 
 - [ ] Q1 **[state]** State the three shell transforms.
 - [ ] Q2 Derive the first two with Sokhotski–Plemelj.
@@ -3596,7 +3596,7 @@ $\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$, $\tilde D_R - \tilde D
 
 If $F$ is analytic in the first and third quadrants of the $p^0$-plane and decays fast enough, the real $p^0$ axis can be rotated counterclockwise onto $p^0 = ip_4$ without crossing a Feynman pole, and $\int\frac{d^4p}{(2\pi)^4}\frac{iF(p)}{p^2 - m^2 + i\varepsilon} = \int\frac{d^4p_E}{(2\pi)^4}\frac{F(ip_4, \mathbf p)}{p_E^2 + m^2}$, see Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-1|§C2b.8.1]] Wick Rotation of a Momentum Integral. *Source: Lecture 6 (Sep 21), slide "Another perspective: the Euclidean Green's Function" ("rotate 90° counter-clockwise") · the user's notes Ch. 6 §6.10*
 
-^nd-thm-c2b-7-1
+^nd-thm-c2b-8-1
 
 - [ ] Q1 **[state]** State the rotation and its hypotheses.
 - [ ] Q2 Locate the Feynman poles: in which quadrants are they, and which quadrants does the rotation sweep?
@@ -3614,7 +3614,7 @@ If $F$ is analytic in the first and third quadrants of the $p^0$-plane and decay
 
 With $t = -i\tau$, $\tau > 0$, $D_F(-i\tau, \boldsymbol\xi) = D_E(\tau, \boldsymbol\xi)$, see Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-2|§C2b.8.2]] The Feynman Function at Imaginary Time. *Source: Lecture 6 (Sep 21) · the user's notes Ch. 6 §6.10*
 
-^nd-thm-c2b-7-2
+^nd-thm-c2b-8-2
 
 - [ ] Q1 **[state]** State the identity and the direction of rotation of $t$.
 - [ ] Q2 Which piece of $D_F$ is used for $\tau > 0$, and on which ray is it evaluated?
@@ -3628,7 +3628,7 @@ With $t = -i\tau$, $\tau > 0$, $D_F(-i\tau, \boldsymbol\xi) = D_E(\tau, \boldsym
 
 $D_F(\xi) = \frac{mK_1(ms)}{4\pi^2s}$ with $s = \sqrt{-\xi^2 + i\varepsilon}$ for all real $\xi$; even, real at spacelike separation, with the same branch for both signs of $\xi^0$: the infinitesimal Wick rotation $t \to t(1 - i\varepsilon)$, see Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-3|§C2b.8.3]] The Feynman Function in Position Space. *Source: the user's notes Ch. 6 §6.10*
 
-^nd-thm-c2b-7-3
+^nd-thm-c2b-8-3
 
 - [ ] Q1 **[state]** State the formula and its branch.
 - [ ] Q2 Combine the two orderings for $\xi^0 > 0$ and $\xi^0 < 0$ into one formula.
@@ -3642,7 +3642,7 @@ $D_F(\xi) = \frac{mK_1(ms)}{4\pi^2s}$ with $s = \sqrt{-\xi^2 + i\varepsilon}$ fo
 
 $\hat\phi(x) = \hat\phi_0(x) + i\int d^4y\,D_R(x - y)j(y)$; after the source has acted, $\hat\phi$ is free with $\hat b_{\mathbf p} = \hat a_{\mathbf p} + \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}|_{p^0 = E_{\mathbf p}}$, and $[\hat b_{\mathbf p}, \hat b^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, see Theorem [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-2|§C2b.9.2]] The Late-Time Field. *Source: Lecture 6 (Sep 21), slides "Particle Production by Classical Source I–II" · PS §2.4, eqs. (2.63)–(2.64) · the user's notes Ch. 6 §6.13*
 
-^nd-thm-c2b-8-1
+^nd-thm-c2b-9-2
 
 - [ ] Q1 **[state]** State the retarded solution and the late-time mode operators.
 - [ ] Q2 **[why]** Why the retarded function and not $D_F$? Which condition on the state fixes it?
@@ -3659,7 +3659,7 @@ $\hat\phi(x) = \hat\phi_0(x) + i\int d^4y\,D_R(x - y)j(y)$; after the source has
 
 $\hat b_{\mathbf p}|0\rangle = \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}|0\rangle$: the in-vacuum is a coherent state of the out-particles with $\eta_{\mathbf p} = i\tilde j(E_{\mathbf p}, \mathbf p)$, and the number produced is Poisson distributed, see Theorem [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-3|§C2b.9.3]] The Final State Is a Coherent State. *Source: the user's notes Ch. 6 §6.13*
 
-^nd-thm-c2b-8-2
+^nd-thm-c2b-9-3
 
 - [ ] Q1 **[state]** State the eigenvalue equation and the identification of $\eta$.
 - [ ] Q2 Derive the eigenvalue from the late-time $\hat b_{\mathbf p}$.
@@ -3673,7 +3673,7 @@ $\hat b_{\mathbf p}|0\rangle = \frac{i\tilde j(p)}{\sqrt{2E_{\mathbf p}}}|0\rang
 
 $\Delta E = \int\frac{d^3p}{(2\pi)^3}\frac12|\tilde j(p)|^2$ and $\bar N = \int\frac{d^3p}{(2\pi)^3}\frac{|\tilde j(p)|^2}{2E_{\mathbf p}}$, $p^0 = E_{\mathbf p}$, see Theorem [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-4|§C2b.9.4]] Energy and Number of Particles Produced. *Source: Lecture 6 (Sep 21), slide "Particle Production by Classical Source: Interpretation" · PS §2.4, eqs. (2.65)–(2.66) · the user's notes Ch. 6 §6.13*
 
-^nd-thm-c2b-8-3
+^nd-thm-c2b-9-4
 
 - [ ] Q1 **[state]** State $\Delta E$ and $\bar N$.
 - [ ] Q2 Write the late-time Hamiltonian in the $\hat b$'s and express it through the $\hat a$'s.
@@ -3689,7 +3689,7 @@ $\Delta E = \int\frac{d^3p}{(2\pi)^3}\frac12|\tilde j(p)|^2$ and $\bar N = \int\
 
 For $j \in \mathcal D(\mathbb R^4)$, $\tilde j \in \mathcal S$, so $\bar N$ and $\Delta E$ are finite; $\bar N = \|\hat\phi_0(j)|0\rangle\|^2$; an instantaneous point source produces infinitely many particles, see Theorem [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-1|§C2b.9.1]] The Source Is a Test Function; Why $\bar N$ Is Finite. *Source: the user's notes Ch. 6 §6.13, §6.2 · Problem Set 4, Problem 0*
 
-^nd-thm-c2b-8-4
+^nd-thm-c2b-9-1
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Show $\bar N = \|\hat\phi_0(j)|0\rangle\|^2$.
@@ -3703,7 +3703,7 @@ For $j \in \mathcal D(\mathbb R^4)$, $\tilde j \in \mathcal S$, so $\bar N$ and 
 
 For $j = g\delta^3(\mathbf x)e^{-t^2/2T^2}/\sqrt{2\pi}T$, $\bar N = \frac{g^2m^2}{16\pi^2}e^{-z}[K_1(z) - K_0(z)]$ with $z = \frac12m^2T^2$; sudden switching gives $\bar N \simeq g^2/8\pi^2T^2$, adiabatic switching an exponentially small $\bar N$, see Example [[§C2b.9 Particle Production by a Classical Source#^ex-c2b-9-1|§C2b.9.1]] A Point Source Switched On and Off. *Source: worked in the vault from the user's notes Ch. 6 §6.13 and PS eq. (2.66)*
 
-^nd-ex-c2b-8-1
+^nd-ex-c2b-9-1
 
 - [ ] Q1 **[state]** State the source, the quantity to compute, and the two regimes to compare.
 - [ ] Q2 Compute $\tilde j(p)$ on the shell.
@@ -3861,7 +3861,7 @@ $\theta(\pm p^0)\delta(p^2 - m^2)$ acts as $\varphi \mapsto \int d^3p\,\varphi(\
 
 $gT$ is defined for smooth $g$; $ST$ is defined when the singular supports are disjoint; in general no associative product extends both, since $(x\delta)\mathcal P\frac1x = 0$ while $\delta(x\mathcal P\frac1x) = \delta$, see Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|§CA.3.1]] Products with Disjoint Singular Supports.
 
-^nd-thm-ca-2-8
+^nd-thm-ca-3-1
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Check $x\delta = 0$ and $x\mathcal P\frac1x = 1$.
@@ -3875,7 +3875,7 @@ $gT$ is defined for smooth $g$; $ST$ is defined when the singular supports are d
 
 With smooth regularizations, $\theta_\varepsilon\delta_\varepsilon \to c\delta$ with $c$ depending on the regularization (any value in $[0, 1]$); $\delta_\varepsilon^2$ diverges; $\delta^n_\varepsilon(0) = \varepsilon^{-n}\rho(0)$ has no limit, see Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|§CA.3.2]] Products Without a Value: θ·δ, δ² and δ(0).
 
-^nd-thm-ca-2-9
+^nd-thm-ca-3-2
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Compute $\lim\theta_\varepsilon\delta_\varepsilon$ for $\sigma = \rho$.
@@ -3889,7 +3889,7 @@ With smooth regularizations, $\theta_\varepsilon\delta_\varepsilon \to c\delta$ 
 
 In a periodic box of volume $V$, $\int_Vd^3x\,e^{i(\mathbf k - \mathbf k')\cdot\mathbf x} = V\delta_{\mathbf k\mathbf k'}$; as $L \to \infty$, $\sum_{\mathbf k} \leftrightarrow V\int\frac{d^3k}{(2\pi)^3}$ and $(2\pi)^3\delta^3(\mathbf 0) \leftrightarrow V$, see Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|§CA.3.3]] Box Regularization of δ³(0).
 
-^nd-thm-ca-2-10
+^nd-thm-ca-3-3
 
 - [ ] Q1 **[state]** State the dictionary.
 - [ ] Q2 Compute the box integral for $\mathbf k \neq \mathbf k'$ and for $\mathbf k = \mathbf k'$.
@@ -3903,7 +3903,7 @@ In a periodic box of volume $V$, $\int_Vd^3x\,e^{i(\mathbf k - \mathbf k')\cdot\
 
 A bilinear form on $\mathcal S(\mathbb R^n) \times \mathcal S(\mathbb R^m)$, continuous in each argument, has a unique kernel $K \in \mathcal S'(\mathbb R^{n+m})$ with $B(f, g) = K[f \otimes g]$, see Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-4|§CA.3.4]] The Kernel Theorem. (Stated; one example worked.)
 
-^nd-thm-ca-2-11
+^nd-thm-ca-3-4
 
 - [ ] Q1 **[state]** State the theorem.
 - [ ] Q2 Name two two-point quantities of C2a–C2b whose kernels it defines.
@@ -3917,7 +3917,7 @@ A bilinear form on $\mathcal S(\mathbb R^n) \times \mathcal S(\mathbb R^m)$, con
 
 The transform maps $\mathcal S$ onto $\mathcal S$ and inverts with the momentum measure $d^3k/(2\pi)^3$; $\int d^3x\,\bar fg = \int\frac{d^3k}{(2\pi)^3}\overline{\tilde f}\tilde g$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-1|§CA.4.1]] Fourier Inversion and Plancherel on 𝒮.
 
-^nd-thm-ca-3-1
+^nd-thm-ca-4-1
 
 - [ ] Q1 **[state]** State inversion, the multiplication formula and Plancherel in the vault's convention.
 - [ ] Q2 **[conv]** On which side does the factor $(2\pi)^{-3}$ sit in Plancherel, and why?
@@ -3931,7 +3931,7 @@ The transform maps $\mathcal S$ onto $\mathcal S$ and inverts with the momentum 
 
 $\tilde T[\varphi] \equiv T[\tilde\varphi]$ is a bijection of $\mathcal S'$, continuous under limits; $\tilde\delta = 1$ and the transform of $1$ is $(2\pi)^n\delta^n$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-2|§CA.4.2]] The Fourier Transform of Tempered Distributions.
 
-^nd-thm-ca-3-2
+^nd-thm-ca-4-2
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Compute $\tilde\delta$ from the definition.
@@ -3945,7 +3945,7 @@ $\tilde T[\varphi] \equiv T[\tilde\varphi]$ is a bijection of $\mathcal S'$, con
 
 $\int d^nx\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^n\delta^n(\mathbf k)$ and $\int d^4x\,e^{ip\cdot x} = (2\pi)^4\delta^4(p)$ as tempered distributions; the $\mathbf x$ integral alone converges for no $\mathbf k$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|§CA.4.3]] Plane Waves Integrate to a Delta Function.
 
-^nd-thm-ca-3-3
+^nd-thm-ca-4-3
 
 - [ ] Q1 **[state]** State the identity and its precise meaning (which integral is done first).
 - [ ] Q2 Derive it from Fourier inversion.
@@ -3960,7 +3960,7 @@ $\int d^nx\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^n\delta^n(\mathbf k)$ and $\in
 
 Plane waves give deltas; $\partial_\mu \leftrightarrow -ip_\mu$, so $\partial^2 + m^2 \leftrightarrow m^2 - p^2$; convolution becomes a product; real $f$ gives $\tilde f(-p) = \overline{\tilde f(p)}$, scalars give scalars, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-4|§CA.4.4]] Rules of the Fourier Transform.
 
-^nd-thm-ca-3-4
+^nd-thm-ca-4-4
 
 - [ ] Q1 **[state]** State the four rules.
 - [ ] Q2 Derive $\partial_\mu \leftrightarrow -ip_\mu$ from $f(x) = \int\frac{d^4p}{(2\pi)^4}\tilde fe^{-ip\cdot x}$.
@@ -3974,7 +3974,7 @@ Plane waves give deltas; $\partial_\mu \leftrightarrow -ip_\mu$, so $\partial^2 
 
 $f(x - a)$ has transform $e^{ip\cdot a}\tilde f(p)$; $e^{-iq\cdot x}f$ has $\tilde f(p - q)$; the derivative rule holds for every $T \in \mathcal S'$, the convolution rule for $D \in \mathcal S'$ and $j \in \mathcal S$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-5|§CA.4.5]] Translation, Phase, and the Rules in 𝒮′.
 
-^nd-thm-ca-3-5
+^nd-thm-ca-4-5
 
 - [ ] Q1 **[state]** State the translation and phase rules in the vault's convention.
 - [ ] Q2 **[why]** Under what condition does the convolution rule hold, and why is that the case for a Green's function acting on a source?
@@ -3988,7 +3988,7 @@ $f(x - a)$ has transform $e^{ip\cdot a}\tilde f(p)$; $e^{-iq\cdot x}f$ has $\til
 
 For wave packets $A, B \in \mathcal S$, $\int d^3x\,a(\mathbf x)b(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}A(\mathbf p)B(-\mathbf p)$, every integral absolutely convergent; the physicists' route through $(2\pi)^3\delta^3(\mathbf p + \mathbf q)$ computes the same number, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-7|§CA.4.7]] Exchanging the Space and Momentum Integrals.
 
-^nd-thm-ca-3-6
+^nd-thm-ca-4-7
 
 - [ ] Q1 **[state]** State the identity.
 - [ ] Q2 Derive it by Fubini and Fourier inversion.
@@ -3996,13 +3996,13 @@ For wave packets $A, B \in \mathcal S$, $\int d^3x\,a(\mathbf x)b(\mathbf x) = \
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Step 1: derivation; [[§C2a.2 Mode Expansion and the Mode Algebra#^lem-c2a-2-1|Lemma §C2a.2.1]].
+> - Step 1: derivation; Lemma [[§C2a.2 Mode Expansion and the Mode Algebra#^lem-c2a-2-1|§C2a.2.1]] Split Exponentials and Relabelling.
 
 ### [B] Changes of integration variable ★
 
 Over all of $\mathbb R^n$: relabel $\mathbf p \to -\mathbf p$, shift, rescale (with $|\lambda|^n$), rotate or boost; the domain is unchanged and $E_{-\mathbf p} = E_{R\mathbf p} = E_{\mathbf p}$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|§CA.4.6]] Changes of Integration Variable: Relabelling, Shifting, Rescaling, Rotating.
 
-^nd-thm-ca-3-7
+^nd-thm-ca-4-6
 
 - [ ] Q1 **[state]** State the four changes and the Jacobian of each.
 - [ ] Q2 **[why]** What is the one thing to track in a relabelling, and what does a dropped sign produce in a commutator?
@@ -4016,7 +4016,7 @@ Over all of $\mathbb R^n$: relabel $\mathbf p \to -\mathbf p$, shift, rescale (w
 
 For radial $f$, $\int d^3p\,f(|\mathbf p|)e^{i\mathbf p\cdot\mathbf r} = \frac{4\pi}{r}\int_0^\infty dp\,pf(p)\sin pr$; $\int d^3p\,p^if = 0$, $\int d^3p\,p^ip^jf = \frac13\delta^{ij}\int d^3p\,\mathbf p^2f$; $p^ie^{i\mathbf p\cdot\mathbf r} = -i\partial_{r^i}e^{i\mathbf p\cdot\mathbf r}$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-8|§CA.4.8]] Angular Integrals. In Lecture 5 the angular integral of the equal-time Wightman function was left to practise ("this integral, I think I did tell you that you practice"); its use for $D_W$ is part of PS4.3(a). *Source: Lecture 5 (Sep 16), transcript · Problem Set 4, Problem 3(a)*
 
-^nd-thm-ca-3-8
+^nd-thm-ca-4-8
 
 - [ ] Q1 **[state]** State the three formulas.
 - [ ] Q2 Derive part 1: choose the polar axis along $\mathbf r$ and do the $\cos\theta$ integral.
@@ -4031,7 +4031,7 @@ For radial $f$, $\int d^3p\,f(|\mathbf p|)e^{i\mathbf p\cdot\mathbf r} = \frac{4
 
 An invariant $\tilde f$ has an invariant $f$, a function of $x^2$ (and of $\operatorname{sgn}x^0$ inside the cone); the Euclidean radial transform is $\frac{4\pi^2}{R}\int_0^\infty dp\,p^2F(p)J_1(pR)$; in Minkowski signature choose the frame, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-9|§CA.4.9]] Fourier Transforms of Lorentz-Invariant Functions.
 
-^nd-thm-ca-3-9
+^nd-thm-ca-4-9
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Which frame is chosen at spacelike $x$, and which at timelike $x$, and what does each reduce the integral to?
@@ -4045,7 +4045,7 @@ An invariant $\tilde f$ has an invariant $f$, a function of $x^2$ (and of $\oper
 
 If $f$ is analytic on and inside a closed contour, $\oint f\,dz = 0$; integrals between two points do not depend on the path as long as no singularity is crossed, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-2|§CA.5.2]] Cauchy's Theorem; Deformation of Contours. *Source: Problem Set 4, Problem 1 (text) · Lecture 6 (Sep 21), slide "Complex Analysis: a Survival Guide"*
 
-^nd-thm-ca-4-2
+^nd-thm-ca-5-2
 
 - [ ] Q1 **[state]** State Cauchy's theorem and the deformation principle.
 - [ ] Q2 Derive it from Green's theorem and the Cauchy–Riemann equations.
@@ -4059,7 +4059,7 @@ If $f$ is analytic on and inside a closed contour, $\oint f\,dz = 0$; integrals 
 
 Analytic $f$, $g$ on a connected open set that agree on a set with an accumulation point agree everywhere; analytic continuation is unique, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-3|§CA.5.3]] Identity Theorem.
 
-^nd-thm-ca-4-3
+^nd-thm-ca-5-3
 
 - [ ] Q1 **[state]** State the theorem.
 - [ ] Q2 How is it used to get the Wightman function everywhere from one Euclidean evaluation?
@@ -4073,7 +4073,7 @@ Analytic $f$, $g$ on a connected open set that agree on a set with an accumulati
 
 At a simple pole $\operatorname{Res} = \lim(z - z_0)f = g(z_0)/h'(z_0)$; at a pole of order $k$ by $k - 1$ derivatives; for the propagator integrand, $\operatorname{Res}_{p^0 = \pm E}\frac{e^{-ip^0t}}{(p^0)^2 - E^2} = \pm\frac{e^{\mp iEt}}{2E}$, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-4|§CA.5.4]] Computing Residues.
 
-^nd-thm-ca-4-4
+^nd-thm-ca-5-4
 
 - [ ] Q1 **[state]** State the rules for simple poles and poles of order $k$.
 - [ ] Q2 Compute both residues of the propagator integrand.
@@ -4087,7 +4087,7 @@ At a simple pole $\operatorname{Res} = \lim(z - z_0)f = g(z_0)/h'(z_0)$; at a po
 
 $\oint_\Gamma f\,dz = \pm2\pi i\sum_k\operatorname{Res}_{z_k}f$ over the enclosed singularities, $+$ counterclockwise, $-$ clockwise, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-5|§CA.5.5]] Residue Theorem.
 
-^nd-thm-ca-4-5
+^nd-thm-ca-5-5
 
 - [ ] Q1 **[state]** State the theorem with the orientation sign.
 - [ ] Q2 Derive it from Cauchy's theorem and the basic integral $\oint(z - z_0)^n dz$.
@@ -4101,7 +4101,7 @@ $\oint_\Gamma f\,dz = \pm2\pi i\sum_k\operatorname{Res}_{z_k}f$ over the enclose
 
 On the upper semicircle $C_R$: if $|f| \le C/R^{1+\delta}$ the arc vanishes; if $\max|g| \to 0$ and $\lambda > 0$, $\int_{C_R}ge^{i\lambda z}dz \to 0$; so close $e^{-ip^0t}$ upward for $t < 0$ and downward for $t > 0$, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-6|§CA.5.6]] Closing the Contour: the ML Estimate and Jordan's Lemma.
 
-^nd-thm-ca-4-6
+^nd-thm-ca-5-6
 
 - [ ] Q1 **[state]** State both estimates.
 - [ ] Q2 Prove the ML estimate for the arc. Why is $1/R^{1+\delta}$ needed?
@@ -4116,7 +4116,7 @@ On the upper semicircle $C_R$: if $|f| \le C/R^{1+\delta}$ the arc vanishes; if 
 
 Passing a simple pole above (clockwise small semicircle) contributes $-i\pi\operatorname{Res}$, below $+i\pi\operatorname{Res}$; so the two passings differ by $2\pi i\operatorname{Res}$ and the principal value is their average, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-7|§CA.5.7]] Poles on the Contour: the Half-Residue Lemma.
 
-^nd-thm-ca-4-7
+^nd-thm-ca-5-7
 
 - [ ] Q1 **[state]** State the lemma.
 - [ ] Q2 Compute the small semicircle integral of $g/(z - x_0)$ as its radius tends to zero.
@@ -4130,7 +4130,7 @@ Passing a simple pole above (clockwise small semicircle) contributes $-i\pi\oper
 
 $\lim_{\varepsilon\to0^+}\int\frac{dx}{2\pi i}\frac{e^{ikx}}{x - i\varepsilon} = \theta(k)$, see Example [[§CA.5 Contour Integration#^ex-ca-5-2|§CA.5.2]] A Step Function from a Pole.
 
-^nd-ex-ca-4-2
+^nd-ex-ca-5-2
 
 - [ ] Q1 **[state]** State the result.
 - [ ] Q2 For $k > 0$ and $k < 0$: where do you close, and which pole is enclosed?
@@ -4144,7 +4144,7 @@ $\lim_{\varepsilon\to0^+}\int\frac{dx}{2\pi i}\frac{e^{ikx}}{x - i\varepsilon} =
 
 A branch point has no Laurent series and no residue; make the function single-valued by a cut and deform the contour onto it, so the integral becomes the integral of the discontinuity, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-8|§CA.5.8]] Integrals around a Branch Cut.
 
-^nd-thm-ca-4-8
+^nd-thm-ca-5-8
 
 - [ ] Q1 **[state]** State the procedure.
 - [ ] Q2 For $\sqrt{p^2 + m^2}$, where are the branch points, and where does the equal-time Wightman computation put the cut?
@@ -4158,7 +4158,7 @@ A branch point has no Laurent series and no residue; make the function single-va
 
 Orientation sign; close where the integrand decays; check the arc (ML or Jordan); deform freely through analyticity; residues by $g/h'$; poles on the path need a prescription; branch points need cuts, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-9|§CA.5.9]] Working Rules for Contour Integrals.
 
-^nd-thm-ca-4-9
+^nd-thm-ca-5-9
 
 - [ ] Q1 **[state]** List the seven rules from memory.
 - [ ] Q2 Apply them to $\int\frac{dp^0}{2\pi}\frac{ie^{-ip^0t}}{(p^0)^2 - E^2}$ on the Feynman contour for $t > 0$.
@@ -4172,21 +4172,21 @@ Orientation sign; close where the integrand decays; check the arc (ML or Jordan)
 
 $\int\frac{d^np}{(2\pi)^n}e^{-s\mathbf p^2 + i\mathbf p\cdot\mathbf x} = (4\pi s)^{-n/2}e^{-\mathbf x^2/4s}$ for $\operatorname{Re}s > 0$; $\frac{1}{A^\nu} = \frac{1}{\Gamma(\nu)}\int_0^\infty ds\,s^{\nu - 1}e^{-sA}$, see Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-2|§CA.6.2]] Gaussian Integrals in n Dimensions; Schwinger Parametrization.
 
-^nd-thm-ca-5-1
+^nd-thm-ca-6-2
 
 - [ ] Q1 **[state]** State both formulas.
-- [ ] Q2 Derive the Gaussian by completing the square in one dimension.
+- [ ] Q2 Derive the one-dimensional Gaussian by completing the square, and reduce the $n$-dimensional one to it.
 - [ ] Q3 **[why]** Why does Schwinger's trick help with $1/(p_E^2 + m^2)$?
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-6-1|§CA.6, Remark: Why the parametrization helps]]; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|§C2b.3.1]] The Wightman Function at Imaginary Time, steps 3–4.
+> - Step 1: the one-dimensional Gaussian Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-1|§CA.6.1]] The Gaussian Integral with Complex a and b; derivation; [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-6-1|§CA.6, Remark: Why the parametrization helps]]; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|§C2b.3.1]] The Wightman Function at Imaginary Time, steps 3–4.
 
 ### [C] Steepest descent and Laplace's method ★
 
 For $I(\lambda) = \int fe^{\lambda\Phi}$, $\lambda \gg 1$: Laplace at a real maximum, steepest descent through a complex saddle; $|I| \propto e^{\lambda\operatorname{Re}\Phi(p_0)}$, see Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-3|§CA.6.3]] Steepest Descent and Laplace's Method.
 
-^nd-thm-ca-5-2
+^nd-thm-ca-6-3
 
 - [ ] Q1 **[state]** State both versions with their prefactors.
 - [ ] Q2 Derive Laplace's method by expanding $\Phi$ to second order.
@@ -4200,7 +4200,7 @@ For $I(\lambda) = \int fe^{\lambda\Phi}$, $\lambda \gg 1$: Laplace at a real max
 
 For $0 < t < r$, the saddle of $S(p) = pr - t\sqrt{p^2 + m^2}$ is at $p_0 = imr/\rho$, $\rho = \sqrt{r^2 - t^2}$, giving $D_W \simeq \frac{\sqrt m}{2(2\pi\rho)^{3/2}}e^{-m\rho}$, see Example [[§C2b.3 Explicit Forms of the Wightman Function#^ex-c2b-3-1|§C2b.3.1]] The Exponent of the Wightman Function Outside the Light Cone.
 
-^nd-ex-ca-5-1
+^nd-ex-c2b-3-1
 
 - [ ] Q1 **[state]** State the leading behaviour.
 - [ ] Q2 Find the stationary points inside and outside the cone. Why is the saddle complex outside?
@@ -4215,7 +4215,7 @@ For $0 < t < r$, the saddle of $S(p) = pr - t\sqrt{p^2 + m^2}$ is at $p_0 = imr/
 
 Recursion $K_{\nu+1} - K_{\nu-1} = \frac{2\nu}{z}K_\nu$, $\frac{d}{dz}[z^{-\nu}K_\nu] = -z^{-\nu}K_{\nu+1}$; large argument $\sqrt{\pi/2z}e^{-z}[1 + \frac{4\nu^2 - 1}{8z}]$; small argument $K_1 \simeq 1/z$, $K_0 \simeq -\ln\frac z2 - \gamma_E$, see Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|§CA.6.4]] Properties of $K_\nu$.
 
-^nd-thm-ca-5-3
+^nd-thm-ca-6-4
 
 - [ ] Q1 **[state]** State the recursion, the derivative rule and the two asymptotic forms.
 - [ ] Q2 Derive the large-argument form by Laplace's method at $u = 0$.
@@ -4229,7 +4229,7 @@ Recursion $K_{\nu+1} - K_{\nu-1} = \frac{2\nu}{z}K_\nu$, $\frac{d}{dz}[z^{-\nu}K
 
 $\int_m^\infty\frac{\rho e^{-\rho r}d\rho}{\sqrt{\rho^2 - m^2}} = mK_1(mr)$; $K_0(x) = \int_0^\infty\frac{\cos xt}{\sqrt{t^2 + 1}}dt$; $K_1(ix) = -\frac\pi2[J_1(x) - iY_1(x)]$, see Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-5|§CA.6.5]] Further Representations; Imaginary Argument.
 
-^nd-thm-ca-5-4
+^nd-thm-ca-6-5
 
 - [ ] Q1 **[state]** State the cut representation of $mK_1(mr)$ and the continuation to imaginary argument.
 - [ ] Q2 Derive the cut representation by the substitution $\rho = m\cosh u$.
@@ -4243,7 +4243,7 @@ $\int_m^\infty\frac{\rho e^{-\rho r}d\rho}{\sqrt{\rho^2 - m^2}} = mK_1(mr)$; $K_
 
 If $F$ is analytic on a strip above the real axis with a polynomial bound in $x$ and $y^{-k}$, then $F(x + i0)$ exists in $\mathcal S'$; in $n$ variables, from a tube over an open convex cone, independently of the direction of approach, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-1|§CA.7.1]] Boundary Values of Analytic Functions Are Distributions.
 
-^nd-thm-ca-6-1
+^nd-thm-ca-7-1
 
 - [ ] Q1 **[state]** State the one-variable version.
 - [ ] Q2 Name three boundary values used in C2b.
@@ -4257,7 +4257,7 @@ If $F$ is analytic on a strip above the real axis with a polynomial bound in $x$
 
 $\frac{1}{x - x_0 \pm i\varepsilon} \to \mathcal P\frac{1}{x - x_0} \mp i\pi\delta(x - x_0)$ as generalized functions, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|§CA.7.2]] Sokhotski–Plemelj Formula. Problem Set 4 gives it as a tool (eq. (11)) for Problem 2(b). *Source: Problem Set 4, eq. (11) · the user's notes App. A §A.5*
 
-^nd-thm-ca-6-2
+^nd-thm-ca-7-2
 
 - [ ] Q1 **[state]** State the formula with signs.
 - [ ] Q2 Split $\frac{1}{s + i\varepsilon}$ into real and imaginary parts.
@@ -4275,7 +4275,7 @@ $\frac{1}{x - x_0 \pm i\varepsilon} \to \mathcal P\frac{1}{x - x_0} \mp i\pi\del
 
 $\log(x \pm i0) = \ln|x| \pm i\pi\theta(-x)$; its derivative is $\frac{1}{x \pm i0} = \mathcal P\frac1x \mp i\pi\delta$; $\frac{1}{(x \pm i0)^2}$ by one more derivative, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-3|§CA.7.3]] Logarithm and Powers at the Real Axis.
 
-^nd-thm-ca-6-3
+^nd-thm-ca-7-3
 
 - [ ] Q1 **[state]** State the three formulas.
 - [ ] Q2 Derive the first from the principal branch of $\log$.
@@ -4289,7 +4289,7 @@ $\log(x \pm i0) = \ln|x| \pm i\pi\theta(-x)$; its derivative is $\frac{1}{x \pm 
 
 $F_\varepsilon = 1/(-(t - i\varepsilon)^2 + r^2)$ converges in $\mathcal S'(\mathbb R^4)$ to $1/(-x^2 + i0x^0)$, with imaginary part $-\pi\operatorname{sgn}(x^0)\delta(x^2)$ and real part $-\mathcal P\frac{1}{x^2}$; Lorentz invariant, singular on the cone, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-4|§CA.7.4]] The Light-Cone Boundary Value.
 
-^nd-thm-ca-6-4
+^nd-thm-ca-7-4
 
 - [ ] Q1 **[state]** State the limit and its real and imaginary parts.
 - [ ] Q2 Use partial fractions in $t$ at fixed $r$ and apply Sokhotski–Plemelj to each term.
@@ -4303,7 +4303,7 @@ $F_\varepsilon = 1/(-(t - i\varepsilon)^2 + r^2)$ converges in $\mathcal S'(\mat
 
 $\int_0^\infty dt\,e^{i\omega t - \varepsilon t} = \frac{i}{\omega + i\varepsilon}$, so $\tilde\theta(\omega) = \frac{i}{\omega + i0} = i\mathcal P\frac1\omega + \pi\delta(\omega)$; conversely the inverse transform of $\frac{i}{\omega + i\varepsilon}$ is $\theta(t)e^{-\varepsilon t}$, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-5|§CA.7.5]] Damping Factors: the Transform of the Step Function.
 
-^nd-thm-ca-6-5
+^nd-thm-ca-7-5
 
 - [ ] Q1 **[state]** State the transform of $\theta$.
 - [ ] Q2 Compute the damped integral and take the limit.
@@ -4317,7 +4317,7 @@ $\int_0^\infty dt\,e^{i\omega t - \varepsilon t} = \frac{i}{\omega + i\varepsilo
 
 $\frac{i}{p^2 - m^2 + i\varepsilon} \to i\mathcal P\frac{1}{p^2 - m^2} + \pi\delta(p^2 - m^2)$; $\frac{1}{(p^0 + i\varepsilon)^2 - \mathbf p^2 - m^2} \to \mathcal P\frac{1}{p^2 - m^2} - i\pi\operatorname{sgn}(p^0)\delta(p^2 - m^2)$; replacing $\varepsilon$ by $\varepsilon c(\mathbf p)$, $c > 0$, changes nothing, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|§CA.7.6]] The iε Limits of the Propagator Denominators.
 
-^nd-thm-ca-6-6
+^nd-thm-ca-7-6
 
 - [ ] Q1 **[state]** State both limits and the claim about $c(\mathbf p)$.
 - [ ] Q2 At fixed $\mathbf p$, factor the denominator in $p^0$ and apply Sokhotski–Plemelj at each zero.
@@ -4332,7 +4332,7 @@ $\frac{i}{p^2 - m^2 + i\varepsilon} \to i\mathcal P\frac{1}{p^2 - m^2} + \pi\del
 
 Two fundamental solutions differ by a homogeneous solution, and conversely; for tempered Klein–Gordon solutions $(m^2 - p^2)\tilde H = 0$ puts $\tilde H$ on the shell; a homogeneous solution supported at a point is zero, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-7|§CA.7.7]] Fundamental Solutions Differ by Homogeneous Solutions.
 
-^nd-thm-ca-6-7
+^nd-thm-ca-7-7
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Show that $\operatorname{supp}\tilde H$ lies on the shell.
@@ -4346,7 +4346,7 @@ Two fundamental solutions differ by a homogeneous solution, and conversely; for 
 
 For a test-function source $j$, $\phi(x) = iG[j(x - \cdot)]$ is smooth and $P(\partial)\phi = j$, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-8|§CA.7.8]] Convolution with a Fundamental Solution Solves the Sourced Equation.
 
-^nd-thm-ca-6-8
+^nd-thm-ca-7-8
 
 - [ ] Q1 **[state]** State the theorem.
 - [ ] Q2 Prove it: move the derivatives onto $j$ and use the definition of a fundamental solution.
@@ -4360,7 +4360,7 @@ For a test-function source $j$, $\phi(x) = iG[j(x - \cdot)]$ is smooth and $P(\p
 
 $\oint(z - z_0)^n dz = 2\pi i\delta_{n,-1}$ on a counterclockwise circle (Theorem [[§CA.5 Contour Integration#^thm-ca-5-1|§CA.5.1]] The ML Inequality and the Basic Integral); $\int\frac{dx}{x^2 + a^2} = \pi/a$ and $\int\frac{e^{ikx}dx}{x^2 + a^2} = \frac\pi ae^{-a|k|}$ (Example [[§CA.5 Contour Integration#^ex-ca-5-1|§CA.5.1]] Two Lorentzian Integrals).
 
-^nd-thm-ca-4-1
+^nd-thm-ca-5-1
 
 → drilled as [[PHY 513 PS Drill#^ps4-1|PS4.1]] (parts (a)–(d) the basic integral; (e)–(i) the Lorentzian integral)
 
@@ -4372,7 +4372,7 @@ $\oint(z - z_0)^n dz = 2\pi i\delta_{n,-1}$ on a counterclockwise circle (Theore
 
 The six $4\times4$ matrices $(\mathcal J^{\alpha\beta})^\mu{}_\nu = i(g^{\alpha\mu}\delta^\beta{}_\nu - g^{\beta\mu}\delta^\alpha{}_\nu) = iM^{\alpha\beta}$, antisymmetric in the label $\alpha\beta$, with $\Lambda = \exp(\frac12\omega_{\alpha\beta}M^{\alpha\beta}) = \exp(-\frac i2\omega_{\alpha\beta}\mathcal J^{\alpha\beta})$, see Definition [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-1|§C1a.7.1]] Generators of the Vector Representation. *Source: Lecture 7 (Sep 23), slide "Vector Representation" · Problem Set 4, Problem 5, eq. (14) · the user's notes Ch. 1 §1.6, Ch. 7 · PS eq. (3.18)*
 
-^nd-def-c1a-6-1
+^nd-def-c1a-7-1
 
 - [ ] Q1 **[def]** Write the generators $(\mathcal J^{\alpha\beta})^\mu{}_\nu$ of the vector representation with the index positions the course uses, and say which pair of indices is the label and which the matrix entry.
 - [ ] Q2 **[def]** Write the finite transformation $\Lambda(\omega)$ in both the real convention ($M$) and the Hermitian convention ($\mathcal J$); what is the relation between $M$ and $\mathcal J$?
@@ -4389,7 +4389,7 @@ The six $4\times4$ matrices $(\mathcal J^{\alpha\beta})^\mu{}_\nu = i(g^{\alpha\
 
 $J_i = \frac12\varepsilon_{ijk}\mathcal J^{jk}$, $K_i = \mathcal J^{0i}$, so that $-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu} = -i\boldsymbol\theta\cdot\mathbf J - i\boldsymbol\eta\cdot\mathbf K$ with $\theta_i = \frac12\varepsilon_{ijk}\omega_{jk}$, $\eta_i = \omega_{0i}$, see Definition [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-2|§C1a.7.2]] Rotation and Boost Generators. *Source: Lecture 7, slide "Lorentz Algebra: Defining Representation" · the user's notes Ch. 1 §1.6 · Problem Set 5, Problem 1 (statement, with the other sign of K)*
 
-^nd-def-c1a-6-2
+^nd-def-c1a-7-2
 
 - [ ] Q1 **[def]** Define $\mathbf J$ and $\mathbf K$ from the six $\mathcal J^{\mu\nu}$, and the angles $\boldsymbol\theta$ and rapidities $\boldsymbol\eta$ from $\omega_{\mu\nu}$.
 - [ ] Q2 Rewrite $-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu}$ in terms of $\boldsymbol\theta\cdot\mathbf J$ and $\boldsymbol\eta\cdot\mathbf K$: which terms of the double sum combine, and where does the $\frac12$ go?
@@ -4406,7 +4406,7 @@ $J_i = \frac12\varepsilon_{ijk}\mathcal J^{jk}$, $K_i = \mathcal J^{0i}$, so tha
 
 The matrices $\Lambda = e^{-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu}}$ are the same in PS, the lectures and Yu; actively $\omega_{12} = \theta$ rotates by $+\theta$ about $z$ and $\omega_{03} = \eta$ boosts to $+z$, while Yu reads $\Lambda$ passively, see [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-7-1|§C1a.7, Caution: Which ω is a rotation by θ]]. *Source: Lecture 7, slides "Example: Rotation around z-axis", "Example: Boost Along x-axis" · the user's notes Ch. 7 (Caution "The index order in the boost example") · Yu §3.1*
 
-^nd-cau-c1a-6-1
+^nd-cau-c1a-7-1
 
 - [ ] Q1 **[def]** In the active reading, which parameter $\omega_{\mu\nu}$ gives a rotation by $+\theta$ about $z$, and which a boost to rapidity $+\eta$ along $+z$?
 - [ ] Q2 **[conv]** The Lecture 7 boost example labels its parameter $\omega_{10} = -\omega_{01} = \eta$. Which parameter does the displayed matrix actually belong to, and what would the label as written give?
@@ -4451,7 +4451,7 @@ For a representation $D$ of $SO^+(1,3)$ on a finite-dimensional complex space, t
 
 Six matrices $D(\mathcal J^{\mu\nu}) = -D(\mathcal J^{\nu\mu})$ on a complex space obeying the covariant Lorentz algebra form a representation of the Lorentz algebra, with $J_i = \frac12\varepsilon_{ijk}D(\mathcal J^{jk})$, $K_i = D(\mathcal J^{0i})$ and $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$, see Definition [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-8|§CB.5.8]] Representation of the Lorentz Algebra. *Source: Lecture 7, slide "Representations of Angular Momentum" (the rotation analogue) and "Lorentz Algebra: Defining Representation" ("All representations realize the abstract algebra")*
 
-^nd-def-cb-5-7
+^nd-def-cb-5-8
 
 - [ ] Q1 **[def]** What does it mean for six matrices to "represent the Lorentz algebra"? Write the covariant relation they must satisfy.
 - [ ] Q2 **[def]** For the rotation algebra, the lecture's "spin j" is a choice of what? How many matrices, of what size?
@@ -4530,7 +4530,7 @@ An operator built polynomially from the generators that commutes with every gene
 
 $V = \mathbb C^{2j_++1}\otimes\mathbb C^{2j_-+1}$ with $\mathbf J_+ = \mathbf J^{(j_+)}\otimes\mathbb 1$, $\mathbf J_- = \mathbb 1\otimes\mathbf J^{(j_-)}$, hence $\mathbf J = \mathbf J_+ + \mathbf J_-$ and $\mathbf K = -i(\mathbf J_+ - \mathbf J_-)$, see Definition [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-3|§CB.18.3]] The Representation (j₊, j₋). *Source: Lecture 7, slide "Transformation of General Fields" (HW5 clue) · Problem Set 5, Problem 1(b) (statement) · the user's notes Ch. 7 §7.4.3*
 
-^nd-def-cb-17-3
+^nd-def-cb-18-3
 
 - [ ] Q1 **[def]** Define the representation $(j_+, j_-)$: the space and the matrices $\mathbf J_\pm$.
 - [ ] Q2 Express $\mathbf J$ and $\mathbf K$ through $\mathbf J_\pm$. Which combination is the physical rotation generator?
@@ -4546,7 +4546,7 @@ $V = \mathbb C^{2j_++1}\otimes\mathbb C^{2j_-+1}$ with $\mathbf J_+ = \mathbf J^
 
 A subspace invariant under the $+$ copy is one on which "the $+$ copy acts as spin $j$" if, as a representation of $\mathfrak a_+ \cong \mathfrak{sl}(2, \mathbb C)$, it is a direct sum of copies of $V_j$ (isotypic); that $V$ "is" $(j_+, j_-)$ is the stronger statement of an invertible intertwiner to the model, see Definition [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-1|§CB.18.1]] Acting as Spin j. *Source: the user's notes Ch. 7 §7.4.3 (the informal "acts as spin j") · written for the rigor fix of 2026-10-13*
 
-^nd-def-cb-17-1
+^nd-def-cb-18-1
 
 - [ ] Q1 **[def]** State precisely what "the $+$ copy acts as spin $j$ on $W$" means.
 - [ ] Q2 **[def]** What stronger statement is meant by "$V$ is $(j_+, j_-)$"?
@@ -4576,9 +4576,9 @@ The labels $(j_+, j_-)$, the Casimirs $\mathbf J_\pm^2$ and the eigenvalues $m_\
 
 ### [B] Spinor and tensor representations
 
-A finite-dimensional representation is a tensor representation if the $2\pi$ rotation $e^{-2\pi iJ_3}$ acts as $+\mathbb 1$ and a spinor representation if it acts as $-\mathbb 1$; $(j_+, j_-)$ is tensorial for integer $j_+ + j_-$ and spinorial for half-odd $j_+ + j_-$, see Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-27|§CB.15.27]] Spinor and Tensor Representations and Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-11|§CB.18.11]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part. *Source: Problem Set 6, Problem 4(d) (vectors and spinors under 2π) · the user's notes Ch. 7*
+A finite-dimensional representation is a tensor representation if the $2\pi$ rotation $e^{-2\pi iJ_3}$ acts as $+\mathbb 1$ and a spinor representation if it acts as $-\mathbb 1$; $(j_+, j_-)$ is tensorial for integer $j_+ + j_-$ and spinorial for half-odd $j_+ + j_-$, see Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-27|§CB.15.27]] Tensorial and Spinorial Representations of the Lorentz Algebra and Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-11|§CB.18.11]] Every Finite-Dimensional Representation Splits into a Tensorial and a Spinorial Part. *Source: Problem Set 6, Problem 4(d) (vectors and spinors under 2π) · the user's notes Ch. 7*
 
-^nd-def-cb-14-26
+^nd-def-cb-15-27
 
 - [ ] Q1 **[def]** Define tensor and spinor representations by the $2\pi$ rotation.
 - [ ] Q2 Which of $(0,0)$, $(\frac12, 0)$, $(\frac12, \frac12)$, $(1, 0)\oplus(0, 1)$, $(\frac12, 0)\oplus(0, \frac12)$ are spinorial?
@@ -4587,7 +4587,7 @@ A finite-dimensional representation is a tensor representation if the $2\pi$ rot
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (exponentiating a generator)
-> - Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-27|§CB.15.27]] Spinor and Tensor Representations, Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-11|§CB.18.11]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part; the sign: step 4 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-8|Derivation §CB.18.8]]; up to sign: [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]].
+> - Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-27|§CB.15.27]] Tensorial and Spinorial Representations of the Lorentz Algebra, Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-11|§CB.18.11]] Every Finite-Dimensional Representation Splits into a Tensorial and a Spinorial Part; the sign: step 4 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-8|Derivation §CB.18.8]]; up to sign: [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]].
 
 ### [B] Spinor fields
 
@@ -4685,7 +4685,7 @@ With $K_i = \mathcal J^{0i}$ (these notes, PS) $(\frac12, 0)$ is PS's $\psi_L$; 
 
 For a path $\Lambda(s) = \mathbb 1 + s\omega + O(s^2)$ in $O(1,3)$, $\omega_{\mu\nu} = g_{\mu\rho}\omega^\rho{}_\nu = -\omega_{\nu\mu}$: six parameters, three rotations and three boosts; the mixed $\omega^\mu{}_\nu$ is not antisymmetric, see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-1|§C1a.7.1]] Infinitesimal Lorentz Transformations Are Antisymmetric. *Source: Lecture 7, slide "Vector Representation" ("ω_μν are 6 'angles'") · the user's notes Ch. 1 §1.6*
 
-^nd-thm-c1a-6-1
+^nd-thm-c1a-7-1
 
 - [ ] Q1 **[state]** State the condition on $\omega$ and say for which index positions it holds.
 - [ ] Q2 Insert $\Lambda(s)$ into the defining condition of the Lorentz group. Which form of that condition do you use?
@@ -4702,7 +4702,7 @@ For a path $\Lambda(s) = \mathbb 1 + s\omega + O(s^2)$ in $O(1,3)$, $\omega_{\mu
 
 As matrices on $v^\nu$, $-\frac i2\omega_{\alpha\beta}(\mathcal J^{\alpha\beta})^\mu{}_\nu = \omega^\mu{}_\nu$, so $\Lambda = e^\omega$ and $\delta v^\mu = \omega^\mu{}_\nu v^\nu$, see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-2|§C1a.7.2]] The Generators Reproduce ω. *Source: Lecture 7, slide "Vector Representation" ($\delta v^\alpha = -\frac i2\omega_{\mu\nu}(\mathcal J^{\mu\nu})^\alpha{}_\beta v^\beta$) · the user's notes Ch. 7 (Derivation "What the vector generators do")*
 
-^nd-thm-c1a-6-2
+^nd-thm-c1a-7-2
 
 - [ ] Q1 **[state]** What does $-\frac i2\omega_{\alpha\beta}\mathcal J^{\alpha\beta}$ equal as a matrix acting on $v^\nu$?
 - [ ] Q2 Contract $\omega_{\alpha\beta}$ with the first term $g^{\alpha\mu}\delta^\beta{}_\nu$ of $M^{\alpha\beta}$. What do you get?
@@ -4718,7 +4718,7 @@ As matrices on $v^\nu$, $-\frac i2\omega_{\alpha\beta}(\mathcal J^{\alpha\beta})
 
 $e^{\theta M^{12}}$ is the rotation by $\theta$ about $z$ ($\cos$, $\sin$ in the $(1,2)$ block, $(M^{12})^2 = -\mathbb 1$ there) and $e^{\eta M^{03}}$ the boost to rapidity $\eta$ along $z$ ($\cosh$, $\sinh$ in the $(0,3)$ block, $(M^{03})^2 = +\mathbb 1$ there), see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-3|§C1a.7.3]] Rotations and Boosts as Exponentials. The finite $4\times4$ matrices along the axes are also Problem Set 6, Problem 4(a), (c). *Source: Lecture 7, slides "Example: Rotation around z-axis", "Example: Boost Along x-axis" · the user's notes Ch. 1 §1.6, Ch. 7*
 
-^nd-thm-c1a-6-3
+^nd-thm-c1a-7-3
 
 - [ ] Q1 **[state]** Which parameters $\omega_{\mu\nu}$ give the rotation about $z$ and the boost along $z$, and which $2\times2$ blocks of $\Lambda$ do they fill?
 - [ ] Q2 Write the nonzero entries of $M^{12}$ and of $M^{03}$ (mixed indices). Why is one block antisymmetric and the other symmetric?
@@ -4736,7 +4736,7 @@ $e^{\theta M^{12}}$ is the rotation by $\theta$ about $z$ ($\cos$, $\sin$ in the
 
 For every real antisymmetric $\omega_{\mu\nu}$, $\Lambda = e^\omega$ lies in $SO^+(1,3)$, see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-4|§C1a.7.4]] Every Exponential Is Proper Orthochronous. *Source: the user's notes Ch. 7 · Yu §4.1, eqs. (4.9)–(4.12)*
 
-^nd-thm-c1a-6-4
+^nd-thm-c1a-7-4
 
 - [ ] Q1 **[state]** State the theorem: which three properties of $e^\omega$ are claimed?
 - [ ] Q2 Write the antisymmetry of $\omega_{\mu\nu}$ as a matrix identity for the mixed $\omega$, and push it through the exponential series.
@@ -4751,7 +4751,7 @@ For every real antisymmetric $\omega_{\mu\nu}$, $\Lambda = e^\omega$ lies in $SO
 
 $(J_k)^l{}_m = -i\varepsilon_{klm}$ with zero time row and column; $K_k = i(E_{0k} + E_{k0})$: each $J_k$ is $i$ times a real antisymmetric matrix (Hermitian), each $K_k$ is $i$ times a real symmetric matrix (anti-Hermitian), see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-5|§C1a.7.5]] The Rotation and Boost Generators as 4×4 Matrices. **[class exercise, Lecture 7]** ("this one here … becomes symmetric. Thing to check it out"). *Source: Lecture 7 transcript (Sep 23), the boost example · PS eqs. (3.20)–(3.21) · Problem Set 6, Problem 4*
 
-^nd-thm-c1a-6-5
+^nd-thm-c1a-7-5
 
 - [ ] Q1 **[state]** Give the nonzero entries of $J_3$ and $K_3$ as $4\times4$ matrices with mixed indices.
 - [ ] Q2 From $(\mathcal J^{0k})^\mu{}_\nu = i(g^{0\mu}\delta^k{}_\nu - g^{k\mu}\delta^0{}_\nu)$, find the two nonzero entries. Why do they come out with the same sign although $\mathcal J^{0k}$ is antisymmetric in its label?
@@ -4768,13 +4768,13 @@ $(J_k)^l{}_m = -i\varepsilon_{klm}$ with zero time row and column; $K_k = i(E_{0
 
 $R_z(\theta)$ and Rodrigues' formula for $R_{\hat{\mathbf n}}(\theta)$, see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|§C1a.7.6]] The Rotation Matrices in the Vector Representation. → drilled as [[PHY 513 PS Drill#^ps6-4-c|PS6.4(c)]] (and the 2π rotation as [[PHY 513 PS Drill#^ps6-4-d|PS6.4(d)]]).
 
-^nd-thm-c1a-6-6
+^nd-thm-c1a-7-6
 
 ### [PS] The boost matrices in the vector representation
 
 $\Lambda_z(\eta)$ and the boost along $\hat{\mathbf n}$, see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|§C1a.7.7]] The Boost Matrices in the Vector Representation. → drilled as [[PHY 513 PS Drill#^ps6-4-a|PS6.4(a)]].
 
-^nd-thm-c1a-6-7
+^nd-thm-c1a-7-7
 
 ### [B] The four-vector under rotations is 0 ⊕ 1 ★★
 
@@ -4796,7 +4796,7 @@ Restricted to rotations, the vector representation leaves $e_0$ invariant ($J_k 
 
 The generators of every representation obey $[\mathcal J^{\mu\nu}, \mathcal J^{\rho\sigma}] = i(g^{\nu\rho}\mathcal J^{\mu\sigma} - g^{\mu\rho}\mathcal J^{\nu\sigma} - g^{\nu\sigma}\mathcal J^{\mu\rho} + g^{\mu\sigma}\mathcal J^{\nu\rho})$, derived from the group law (conjugating a one-parameter subgroup), see Theorem [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-7|§CB.5.7]] The Lorentz Algebra. *Source: Lecture 7, slide "Lorentz Algebra: Defining Representation" (stated) · the user's notes Ch. 7 §7.3 ("automatically, by the group-law derivation")*
 
-^nd-der-cb-5-6
+^nd-der-cb-5-7
 
 - [ ] Q1 **[state]** Write the Lorentz algebra in covariant form, with all four terms and their signs.
 - [ ] Q2 Conjugate the one-parameter subgroup $e^{s\omega'}$ by $\Lambda$. What is the parameter of the conjugated subgroup, and why is it again antisymmetric?
@@ -4807,20 +4807,20 @@ The generators of every representation obey $[\mathcal J^{\mu\nu}, \mathcal J^{\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K3 (Lorentz commutators by index contraction)
-> - Steps 1–4 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7|Derivation §CB.5.7, from the group law]] (tensor law; also Theorem [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|§CB.5.6]] The Generators Transform as a Tensor), steps 5–9 (infinitesimal $\Lambda$).
+> - Steps 1–4 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6|Derivation §CB.5.6]] (the tensor law, Theorem [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|§CB.5.6]] The Generators Transform as a Tensor), steps 1–5 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7|Derivation §CB.5.7, from the group law]] (infinitesimal $\Lambda$).
 > - The general reason: Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-10|§CB.3.10]] A Group Representation Gives an Algebra Representation.
 
 ### [PS] The Lorentz algebra in the vector representation
 
 Direct $4\times4$ computation of $[\mathcal J^{\mu\nu}, \mathcal J^{\rho\sigma}]$, see [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7b|Derivation §CB.5.7, second route]]. → drilled as [[PHY 513 PS Drill#^ps4-5-a|PS4.5(a)]] (Lecture 7: "HW problem: $J^{\mu\nu}$ matrices satisfy Lorentz algebra").
 
-^nd-der-cb-5-6b
+^nd-der-cb-5-7b
 
 ### [PS] The J, K form and the J± split
 
 $[J_i, J_j] = i\varepsilon_{ijk}J_k$, $[J_i, K_j] = i\varepsilon_{ijk}K_k$, $[K_i, K_j] = -i\varepsilon_{ijk}J_k$ and the two commuting copies $\mathbf J_\pm$, see [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7c|Derivation §CB.5.7, the J, K form and the J± split]]. → drilled as [[PHY 513 PS Drill#^ps5-1-a|PS5.1(a)]]. Includes the **[class exercise, Lecture 7]** "you can check … if … this is rotation in a plane and this is rotation in another plane … this thing collapses to the algebra" (step 2 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7c|Derivation §CB.5.7, the J, K form and the J± split]]).
 
-^nd-der-cb-5-6c
+^nd-der-cb-5-7c
 
 ### [A] The orbital generators move the argument ★★
 
@@ -4941,7 +4941,7 @@ $D(e^\omega) = e^{-i\boldsymbol\theta\cdot\mathbf J - i\boldsymbol\eta\cdot\math
 
 $(j_+, j_-)$ has dimension $(2j_+ + 1)(2j_- + 1)$, is irreducible, has $\mathbf J_\pm^2 = j_\pm(j_\pm + 1)\mathbb 1$, and different labels give inequivalent representations, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-5|§CB.18.5]] (j₊, j₋) Is Irreducible. *Source: Problem Set 5, Problem 1(b) (dimension) · the user's notes Ch. 7 §7.4.3 ("every vector feels both copies")*
 
-^nd-thm-cb-17-5
+^nd-thm-cb-18-5
 
 - [ ] Q1 **[state]** State the four claims of the theorem.
 - [ ] Q2 Why do the formulas of the definition represent the Lorentz algebra (which two facts about tensor products)?
@@ -4957,7 +4957,7 @@ $(j_+, j_-)$ has dimension $(2j_+ + 1)(2j_- + 1)$, is irreducible, has $\mathbf 
 
 Every representation of the Lorentz algebra on a finite-dimensional complex space is a direct sum of pieces $(j_+, j_-)$ with fixed multiplicities, and carries an inner product in which all $J_{\pm i}$ are Hermitian, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-6|§CB.18.6]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋). *Source: Problem Set 5, Problem 1(b) ("labelled by a pair (j₊, j₋)", statement) · the user's notes Ch. 7 §7.4.3 (stated)*
 
-^nd-thm-cb-17-6
+^nd-thm-cb-18-6
 
 - [ ] Q1 **[state]** State the classification, including the claim about an inner product.
 - [ ] Q2 Which compact group integrates the six matrices $-iJ_{\pm i}$? What input from Lie theory is quoted and not derived?
@@ -4981,7 +4981,7 @@ The table of $\mathbf J_\pm$, $\mathbf J$, $\mathbf K$ and $D(e^\omega)$ on $(\f
 
 In the basis $(v^0, v^1, v^2, v^3)$, $\mathbf J^2 = \operatorname{diag}(0, 2, 2, 2)$, $\mathbf K^2 = -\operatorname{diag}(3, 1, 1, 1)$, $\mathbf J\cdot\mathbf K = \mathbf K\cdot\mathbf J = 0$, so $\mathbf J_\pm^2 = \frac34\mathbb 1$; with the classification and the dimension count, the vector representation is equivalent to $(\frac12, \frac12)$ by an invertible intertwiner, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-7|§CB.18.7]] The Vector Representation Is (½, ½) (the course's form Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|§C3.2.9]] The Vector Representation Is (½, ½)). *Source: the user's notes Ch. 7 §7.3, §7.4.3 · Yu §4.2.2 · the rigor fix of 2026-10-13 (the user's request)*
 
-^nd-thm-cb-17-7
+^nd-thm-cb-18-7
 
 - [ ] Q1 **[state]** State what "the vector representation is $(\frac12, \frac12)$" means precisely (equivalence by what kind of map).
 - [ ] Q2 Write $K_i$ and $J_i$ with matrix units $E_{ab}$. Compute $\mathbf J^2$ and $\mathbf K^2$.
@@ -5000,7 +5000,7 @@ In the basis $(v^0, v^1, v^2, v^3)$, $\mathbf J^2 = \operatorname{diag}(0, 2, 2,
 
 $T(v) = (v_\mu\sigma^\mu)\,i\sigma^2$, read in $\mathbb C^2\otimes\mathbb C^2$ through $\sum Y_{ab}e_a\otimes e_b \leftrightarrow (Y_{ab})$, is an invertible map with $T\,R(X) = \rho(X)\,T$ for all six generators, $R$ the vector and $\rho$ the $(\frac12, \frac12)$ representation, see [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-7b|proof of Theorem §CB.18.7, second route]]. *Source: written for the rigor fix of 2026-10-13 (the user's request) · reading of the $SL(2, \mathbb C)$ covering*
 
-^nd-pf-cb-17-7b
+^nd-pf-cb-18-7b
 
 - [ ] Q1 **[state]** What exactly must $T$ satisfy, and why is it enough to check six generators?
 - [ ] Q2 **[def]** Under the identification of $\mathbb C^2\otimes\mathbb C^2$ with $2\times2$ matrices $Y$, how do $A\otimes\mathbb 1$ and $\mathbb 1\otimes B$ act on $Y$? Write $\rho(J_i)Y$ and $\rho(K_i)Y$.
@@ -5025,7 +5025,7 @@ The short-response route: dimension $4$, then the $2\pi$ rotation decides $(\fra
 
 Under rotations $(j_+, j_-)$ is $D^{(j_+)}\otimes D^{(j_-)}$, containing spins $\lvert j_+ - j_-\rvert, \dots, j_+ + j_-$ once each; a $2\pi$ rotation acts as $(-1)^{2(j_+ + j_-)}$, so half-integer $j_+ + j_-$ gives a two-valued representation of $SO^+(1,3)$, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|§CB.18.8]] Rotation Content and the Sign of a 2π Rotation. *Source: Problem Set 6, Problem 4(d) · Problem Set 7, Problem 1(d) (the user's route) · the user's notes Ch. 7 §7.4.3*
 
-^nd-thm-cb-17-9
+^nd-thm-cb-18-8
 
 - [ ] Q1 **[state]** State the rotation content of $(j_+, j_-)$ and the action of a $2\pi$ rotation.
 - [ ] Q2 Set $\boldsymbol\eta = 0$ in the factorization. Which tensor product of rotation matrices results?
@@ -5041,7 +5041,7 @@ Under rotations $(j_+, j_-)$ is $D^{(j_+)}\otimes D^{(j_-)}$, containing spins $
 
 $(j_+, j_-)\otimes(j'_+, j'_-) = \bigoplus(J_+, J_-)$ with $J_\pm$ from $\lvert j_\pm - j'_\pm\rvert$ to $j_\pm + j'_\pm$; in particular $(\frac12, \frac12)\otimes(\frac12, \frac12) = (1, 1)\oplus(1, 0)\oplus(0, 1)\oplus(0, 0)$, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-12|§CB.18.12]] Tensor Products Add Each Copy Separately. *Source: the user's notes Ch. 7 · Lecture 8, slide "Fermion Bilinears" (scalar, vector, tensor from strings of γ's)*
 
-^nd-thm-cb-17-12
+^nd-thm-cb-18-12
 
 - [ ] Q1 **[state]** State the rule for the product of two representations $(j_+, j_-)$ and $(j'_+, j'_-)$.
 - [ ] Q2 What are the generators of $D\otimes D'$, and why do the $+$ copies add among themselves?
@@ -5105,7 +5105,7 @@ The parity automorphism $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\math
 
 $\bar D(\Lambda) = D(\Lambda)^\ast$ is a representation with generators $-D(\mathcal J^{\mu\nu})^\ast$; the conjugate of $(j_+, j_-)$ is equivalent to $(j_-, j_+)$, the equivalence being the rotation by $\pi$ about the 2-axis, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-14|§CB.18.14]] Complex Conjugation Exchanges the Two Copies. *Source: the user's notes Ch. 7 §7.4.6, Ch. 8 (the conjugate of a left-handed spinor)*
 
-^nd-thm-cb-17-14
+^nd-thm-cb-18-14
 
 - [ ] Q1 **[state]** State what conjugation does to the generators and to the labels.
 - [ ] Q2 Conjugate the first-order expansion of $D(e^{s\omega})$: why does the generator acquire a minus sign as well as a star?
@@ -5120,7 +5120,7 @@ $\bar D(\Lambda) = D(\Lambda)^\ast$ is a representation with generators $-D(\mat
 
 In an inner product with $\mathbf J_\pm$ Hermitian, $\mathbf J$ is Hermitian and $\mathbf K$ anti-Hermitian, a boost is Hermitian positive and not unitary; a finite-dimensional representation of $SO^+(1,3)$ that is unitary for some inner product is trivial, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-15|§CB.18.15]] No Finite-Dimensional Representation Is Unitary. *Source: Lecture 8, slide "The Hermitean Conjugate Spinor" ("Rotations S^ij hermitean and boosts S^0i antihermitean") · the user's notes Ch. 7 (Principle "Hermitian generators do not make boosts unitary")*
 
-^nd-thm-cb-17-15
+^nd-thm-cb-18-15
 
 - [ ] Q1 **[state]** State both parts of the theorem.
 - [ ] Q2 From $\mathbf K = -i(\mathbf J_+ - \mathbf J_-)$ with $\mathbf J_\pm$ Hermitian, decide the Hermiticity of $\mathbf K$ and of $e^{-i\boldsymbol\eta\cdot\mathbf K}$.
@@ -5241,7 +5241,7 @@ For the free real scalar the normal-ordered Noether charges $\hat P^\mu = \int d
 
 Four $n\times n$ matrices with $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 1_n$; $\mu$ is a spacetime index, rows and columns are spinor indices; $\gamma_\mu = g_{\mu\nu}\gamma^\nu$, see Definition [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-11|§CB.12.11]] The Dirac Matrices. *Source: Lecture 7, slide "The Dirac Representation" · Lecture 8, "Cheat Sheet I" ("4×4 identity matrix on RHS usually not written")*
 
-^nd-def-cb-11-11
+^nd-def-cb-12-11
 
 - [ ] Q1 **[def]** Write the Clifford relation, with the identity matrix shown.
 - [ ] Q2 What are $(\gamma^0)^2$, $(\gamma^i)^2$, and $\gamma^\mu\gamma^\nu$ for $\mu \ne \nu$ in terms of each other?
@@ -5301,7 +5301,7 @@ Spinor space is a four-dimensional complex vector space $V$; a Dirac spinor at o
 
 $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu] = \frac i2(\gamma^\mu\gamma^\nu - g^{\mu\nu}\mathbb 1)$, see Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-16|§CB.15.16]] The Spinor Generators; in the course's (Hermitian) convention $S^{\mu\nu} = D(\mathcal J^{\mu\nu})$ for the Dirac representation, and $\sigma^{\mu\nu} = 2S^{\mu\nu}$. *Source: Lecture 7, slide "The Dirac Representation" · Lecture 8, "Cheat Sheet I"*
 
-^nd-def-cb-14-16
+^nd-def-cb-15-16
 
 - [ ] Q1 **[def]** Define $S^{\mu\nu}$ in both forms and show the two agree.
 - [ ] Q2 **[conv]** The §C1b.1 spin generators are in the real convention. What is the factor between them and the lecture's $S^{\mu\nu}$?
@@ -5314,7 +5314,7 @@ $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu] = \frac i2(\gamma^\mu\gamma^\nu -
 
 ### [B] The Dirac representation
 
-$\Lambda_{1/2}(\omega) = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ acting on $\psi \in \mathbb C^4$; a Dirac field transforms as $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$, see Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|§C5a.3.1]] The Dirac Representation. *Source: Lecture 7, slides "Finite Lorentz Transformations in Dirac Representation", "Transformation of Vector and Spinor Fields" · Lecture 8, "Cheat Sheet II"*
+$\Lambda_{1/2}(\omega) = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ acting on $\psi \in \mathbb C^4$, see Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|§C5a.3.1]] The Dirac Representation; a Dirac field transforms as $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$, see Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|§C5a.3.2]] The Dirac Field. *Source: Lecture 7, slides "Finite Lorentz Transformations in Dirac Representation", "Transformation of Vector and Spinor Fields" · Lecture 8, "Cheat Sheet II"*
 
 ^nd-def-c5a-3-1
 
@@ -5325,13 +5325,13 @@ $\Lambda_{1/2}(\omega) = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ acting on $\p
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|§C5a.3.1]] The Dirac Representation; not the vector representation: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-5|§CB.19.5]] The Dirac Representation Is Not the Vector Representation, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-1|§C5a.4, Remark: One transformation, two matrices]]; the preview: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-3|§C5a.5, Caution: The upper components are not the particle]].
+> - Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|§C5a.3.1]] The Dirac Representation, Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|§C5a.3.2]] The Dirac Field; not the vector representation: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-5|§CB.19.5]] The Dirac Representation Is Not the Vector Representation, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-1|§C5a.4, Remark: One transformation, two matrices]]; the preview: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-3|§C5a.5, Caution: The upper components are not the particle]].
 
 ### [B] Spin matrices of the Dirac representation
 
 $S^i = \frac12\varepsilon^{ijk}S^{jk}$, $\Sigma^i = 2S^i$; in the chiral basis $\Sigma^i = \operatorname{diag}(\sigma^i, \sigma^i)$, see Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-3|§C5a.3.3]] Spin Matrices of the Dirac Representation. *Source: Lecture 7, slide "Spinors and Rotation" · Lecture 9, slide "Solution of the Dirac Equation: Step 3"*
 
-^nd-def-c5a-3-2
+^nd-def-c5a-3-3
 
 - [ ] Q1 **[def]** Define $\mathbf S$ and $\boldsymbol\Sigma$ from $S^{jk}$, and give them in the chiral basis.
 - [ ] Q2 What are the eigenvalues of $S^3$ on $\mathbb C^4$?
@@ -5359,9 +5359,9 @@ $\Lambda_L = e^{-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\bolds
 
 ### [B] The Dirac conjugate
 
-$\bar\psi \equiv \psi^\dagger\gamma^0$, a row; not the Hermitian conjugate; basis-free it is the functional $h_D(\psi, \cdot)$ of the Dirac form, and $\psi \mapsto \bar\psi$ is conjugate-linear, see Definition [[§C5a.2 The Dirac Form#^def-c5a-2-2|§C5a.2.2]] The Dirac Conjugate. *Source: Lecture 8, slide "The Dirac Conjugate Spinor"*
+$\bar\psi \equiv \psi^\dagger\gamma^0$, a row; not the Hermitian conjugate; basis-free it is the functional $h_D(\psi, \cdot)$ of the Dirac form (Definition [[§C5a.2 The Dirac Form#^def-c5a-2-1|§C5a.2.1]] The Dirac Form), and $\psi \mapsto \bar\psi$ is conjugate-linear, see Definition [[§C5a.2 The Dirac Form#^def-c5a-2-2|§C5a.2.2]] The Dirac Conjugate. *Source: Lecture 8, slide "The Dirac Conjugate Spinor"*
 
-^nd-def-c5a-2-1
+^nd-def-c5a-2-2
 
 - [ ] Q1 **[def]** Define $\bar\psi$. Is it a row or a column, linear or conjugate-linear in $\psi$?
 - [ ] Q2 What is $(\bar\psi)^\dagger$?
@@ -5388,9 +5388,9 @@ $\bar\psi\,\Gamma\,\chi$ with $\Gamma$ a constant $4\times4$ matrix, usually a s
 
 ### [B] The sixteen bilinears
 
-$\mathsf S = \bar\psi\psi$, $\mathsf P = \bar\psi i\gamma^5\psi$, $\mathsf V^\mu = \bar\psi\gamma^\mu\psi$, $\mathsf A^\mu = \bar\psi\gamma^\mu\gamma^5\psi$, $\mathsf T^{\mu\nu} = \bar\psi\sigma^{\mu\nu}\psi$, with $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu] = 2S^{\mu\nu}$: $1 + 1 + 4 + 4 + 6 = 16$, see Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|§C5a.6.3]] The Sixteen Bilinears. *Source: Lecture 8, slide "Fermion Bilinears" · Lecture 11, slide 19 (names) · PS §3.4*
+$\mathsf S = \bar\psi\psi$, $\mathsf P = \bar\psi i\gamma^5\psi$, $\mathsf V^\mu = \bar\psi\gamma^\mu\psi$, $\mathsf A^\mu = \bar\psi\gamma^\mu\gamma^5\psi$, $\mathsf T^{\mu\nu} = \bar\psi\sigma^{\mu\nu}\psi$, with $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu] = 2S^{\mu\nu}$ (Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|§C5a.6.2]] The Matrices σ^μν): $1 + 1 + 4 + 4 + 6 = 16$, see Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|§C5a.6.3]] The Sixteen Bilinears. *Source: Lecture 8, slide "Fermion Bilinears" · Lecture 11, slide 19 (names) · PS §3.4*
 
-^nd-def-c5a-6-2
+^nd-def-c5a-6-3
 
 - [ ] Q1 **[def]** List the five standard bilinears with their matrices, and count them.
 - [ ] Q2 **[conv]** Give the three normalizations of $\sigma^{\mu\nu}$ (PS, the generators, Problem Set 5). Which identities depend on the choice?
@@ -5399,13 +5399,13 @@ $\mathsf S = \bar\psi\psi$, $\mathsf P = \bar\psi i\gamma^5\psi$, $\mathsf V^\mu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|§C5a.6.3]] The Sixteen Bilinears; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; reality and the $i$: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|§C5a.6.4]] The Bilinears Are Real; basis of $4\times4$ matrices: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis, Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-14|§CB.19.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
+> - Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|§C5a.6.2]] The Matrices σ^μν, Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|§C5a.6.3]] The Sixteen Bilinears; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; reality and the $i$: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|§C5a.6.4]] The Bilinears Are Real; basis of $4\times4$ matrices: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis, Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-14|§CB.19.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
 
 ### [B] The matrix γ⁵
 
 $\gamma^5 \equiv i\gamma^0\gamma^1\gamma^2\gamma^3$; the 5 is a label, not a Lorentz index; in the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$, see Definition [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|§CB.13.14]] The Matrix γ⁵. *Source: Problem Set 5, Problem 5 (statement) · the user's notes Ch. 9 §9.6*
 
-^nd-def-cb-12-14
+^nd-def-cb-13-14
 
 - [ ] Q1 **[def]** Define $\gamma^5$ and give it in the chiral basis.
 - [ ] Q2 **[conv]** Why is "$\gamma_5$" a typo in the course's conventions?
@@ -5433,7 +5433,7 @@ $P_L = \frac12(\mathbb 1 - \gamma^5)$, $P_R = \frac12(\mathbb 1 + \gamma^5)$; $\
 
 ### [B] The Dirac equation
 
-$(i\gamma^\mu\partial_\mu - m)\psi(x) = 0$, four coupled first-order linear PDEs, $m$ times the $4\times4$ identity, $\psi$ a Dirac field, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|§C5a.7.1]] The Dirac Equation. *Source: Lecture 8, slide "Introducing the Dirac Equation"*
+$(i\gamma^\mu\partial_\mu - m)\psi(x) = 0$, four coupled first-order linear PDEs, $m$ times the $4\times4$ identity, $\psi$ a Dirac field, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|§C5a.7.1]] The Dirac Equation; the operator $i\gamma^\mu\partial_\mu - m$ is Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|§C5a.7.2]] The Dirac Operator. *Source: Lecture 8, slide "Introducing the Dirac Equation"*
 
 ^nd-def-c5a-7-1
 
@@ -5450,7 +5450,7 @@ $(i\gamma^\mu\partial_\mu - m)\psi(x) = 0$, four coupled first-order linear PDEs
 
 $\slashed a \equiv \gamma^\mu a_\mu = \gamma^0a_0 + \gamma^ia_i$; the Dirac equation is $(i\slashed\partial - m)\psi = 0$; in the chiral basis $\slashed p = \begin{pmatrix}0 & p\cdot\sigma\\ p\cdot\bar\sigma & 0\end{pmatrix}$, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Feynman Slash. *Source: Lecture 9, slide "Completeness for Dirac Spinors: the Result" ("Notation: γ^μp_μ ≡ p̸")*
 
-^nd-def-c5a-7-2
+^nd-def-c5a-7-3
 
 - [ ] Q1 **[def]** Define $\slashed a$ and write $\slashed p$ in the chiral basis.
 - [ ] Q2 What is $\slashed a\slashed a$?
@@ -5480,7 +5480,7 @@ $\mathcal L = \bar\psi(i\gamma^\mu\partial_\mu - m)\psi$, with $\psi$ and $\bar\
 
 $H_{\text{s.p.}} = \gamma^0(-i\boldsymbol\gamma\cdot\nabla + m) = -i\boldsymbol\alpha\cdot\nabla + \beta m$, $\boldsymbol\alpha = \gamma^0\boldsymbol\gamma$, $\beta = \gamma^0$, Hermitian; $\mathcal H = \psi^\dagger H_{\text{s.p.}}\psi$, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-4|§C5a.7.4]] Single-Particle Hamiltonian. *Source: Lecture 10, slide 16 · the user's notes Ch. 10 §10.5 · PS eqs. (3.84)–(3.85)*
 
-^nd-def-c5a-7-3
+^nd-def-c5a-7-4
 
 - [ ] Q1 **[def]** Define $H_{\text{s.p.}}$ in terms of $\gamma$'s and of $\boldsymbol\alpha$, $\beta$.
 - [ ] Q2 Rewrite the Dirac equation as $i\partial_t\psi = H_{\text{s.p.}}\psi$: which matrix do you multiply by?
@@ -5726,13 +5726,13 @@ $\operatorname{tr}(\sigma^\mu\bar\sigma^\nu) = 2g^{\mu\nu}$; $\sigma^\mu\bar\sig
 
 $[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$, see Theorem [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-17|§CB.15.17]] The Dirac Matrices Rotate as a Vector. → drilled as [[PHY 513 PS Drill#^ps4-5-b|PS4.5(b)]] (also Lecture 8, slide "'Transformation' of γ^μ: Derivation", "Compute (using Dirac algebra)").
 
-^nd-thm-cb-14-17
+^nd-thm-cb-15-17
 
 ### [PS] The spinor generators obey the Lorentz algebra
 
 $[S^{\mu\nu}, S^{\rho\sigma}]$ = the Lorentz algebra with $\mathcal J \to S$, see Theorem [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-18|§CB.15.18]] The Spinor Generators Obey the Lorentz Algebra. → drilled as [[PHY 513 PS Drill#^ps4-5-c|PS4.5(c)]] (Lecture 7, slide "The Dirac Representation": "Claim: S^μν satisfy Lorentz algebra"; transcript: "I have absolutely not shown that").
 
-^nd-thm-cb-14-18
+^nd-thm-cb-15-18
 
 ### [A] The generators in the chiral basis ★★
 
@@ -5824,7 +5824,7 @@ The rotation matrices entry by entry (Theorem [[§C5a.4 SL(2,C) and the Group Ac
 
 $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ for the same $\omega$ (also $S^{\mu\nu}$ as a tensor), the finite form of $[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$, see Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-7|§CB.19.7]] The Dirac Matrices Are an Invariant Vector of Matrices. **[class exercise, Lecture 8]** ("what we have checked is entirely just this is true to linear order, and the claim is that once it's true to linear order, it's true"). *Source: Lecture 8, slides "'Transformation' of γ^μ: Derivation", "'Transformation' of γ^μ: Interpretation" and transcript (Sep 28)*
 
-^nd-thm-cb-18-7
+^nd-thm-cb-19-7
 
 - [ ] Q1 **[state]** State the finite transformation law of $\gamma^\mu$ under $\Lambda_{1/2}$.
 - [ ] Q2 From $[\gamma^\mu, S^{\rho\sigma}]$, compute $[\gamma^\mu, A]$ for $A = -\frac i2\omega_{\rho\sigma}S^{\rho\sigma}$.
@@ -5860,7 +5860,7 @@ For $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$, $(i\gamma^\mu\partial_\mu - m
 
 In a Hermitian basis $S^{ij\dagger} = S^{ij}$ and $S^{0i\dagger} = -S^{0i}$: $\Lambda_{1/2}$ is unitary for rotations and Hermitian positive for boosts, see Theorem [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-22|§CB.15.22]] Adjoints of the Generators. *Source: Lecture 8, slide "The Hermitean Conjugate Spinor" ("Rotations S^ij hermitean and boosts S^0i antihermitean")*
 
-^nd-thm-cb-14-22
+^nd-thm-cb-15-22
 
 - [ ] Q1 **[state]** State the Hermiticity of $S^{ij}$ and $S^{0i}$ and the consequence for $\Lambda_{1/2}$.
 - [ ] Q2 Take the adjoint of $\frac i4[\gamma^\mu, \gamma^\nu]$: what happens to the order and to the factor $i$?
@@ -5875,7 +5875,7 @@ In a Hermitian basis $S^{ij\dagger} = S^{ij}$ and $S^{0i\dagger} = -S^{0i}$: $\L
 
 $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$, equivalently $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$: $\gamma^0$ is an indefinite Hermitian form preserved by every $\Lambda_{1/2}$, see Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-13|§CB.19.13]] Λ½ Is Pseudo-Unitary. *Source: Lecture 8, slide "The Dirac Conjugate Spinor" ("γ⁰ can compensate for anti-hermiticity of boosts")*
 
-^nd-thm-cb-18-13
+^nd-thm-cb-19-13
 
 - [ ] Q1 **[state]** State the identity in its three equivalent forms.
 - [ ] Q2 Show $\gamma^0$ commutes with $S^{ij}$ and anticommutes with $S^{0i}$ by counting anticommutations.
@@ -5983,7 +5983,7 @@ $P_{L,R}$ are complementary projectors; $P_L\gamma^\mu = \gamma^\mu P_R$; they c
 
 Any two sets of $4\times4$ Dirac matrices are related by $\gamma' = U\gamma U^{-1}$ (Theorem [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-12|§CB.14.12]] Pauli's Fundamental Theorem) → drilled as [[PHY 513 PS Drill#^ps6-3-a|PS6.3(a)]]; the Dirac basis from the chiral one by $U_D$ (Example [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|§C5a.5.1]] The Dirac Basis Is Equivalent to the Chiral Basis) → drilled as [[PHY 513 PS Drill#^ps6-3-b|PS6.3(b)]].
 
-^nd-thm-cb-13-12
+^nd-thm-cb-14-12
 
 ### [A] The Dirac Lagrangian is a Lorentz scalar ★★
 
@@ -6799,7 +6799,7 @@ $:\!X\!:$ puts creation operators left of annihilation operators with a factor $
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Uses: Theorem [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|§C5b.3.5]] The Hamiltonian of the Dirac Field (energy), Theorem [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|§C5b.5.3]] The Charge Counts Fermions Minus Antifermions and [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-1|§C5b.5, Remark: The vacuum charge, and why the order is forced]] (charge).
+> - Uses: Theorem [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|§C5b.3.5]] The Hamiltonian of the Dirac Field (energy), Theorem [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|§C5b.5.3]] The Charge Counts Fermions Minus Antifermions and [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-1|§C5b.5, ★ Remark: The vacuum charge, and why the order is forced]] (charge).
 
 ### [B] The Dirac vacuum and the fermionic Fock space
 
@@ -7006,7 +7006,7 @@ With commutators, either the antiparticle states have negative norm (if $\hat b$
 - [ ] Q2 Option 1: compute $\|\hat b^{s\dagger}(g)|0\rangle\|^2$ with $[\hat b, \hat b^\dagger] < 0$. What is the energy of that state?
 - [ ] Q3 Option 2: relabel $\hat d = \hat b^\dagger$. What sign does $[\hat d, \hat d^\dagger]$ have, and what does $\hat H$ look like in terms of $\hat d$?
 - [ ] Q4 **[why]** Why is there no third option?
-- [ ] Q5 **[why]** Compare with the classical field: what does Theorem [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|§C5b.5.2]] The Classical Dirac Energy Is Unbounded Below; the Classical Charge Is Positive say about the classical energy, and why is that not a contradiction?
+- [ ] Q5 **[why]** Compare with the classical field: what does ★ Theorem [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|§C5b.5.2]] The Classical Dirac Energy Is Unbounded Below; the Classical Charge Is Positive say about the classical energy, and why is that not a contradiction?
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
@@ -7106,7 +7106,7 @@ $\hat a^{r\dagger}_{\mathbf p}\hat a^{s\dagger}_{\mathbf q} = -\hat a^{s\dagger}
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Steps 1–4 under Theorem [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|§C5b.4.2]] Fermi–Dirac Statistics and the Pauli Exclusion Principle; Dirac sea: [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-3|§C5b.5, Remark: The Dirac sea, read in the field]].
+> - Steps 1–4 under Theorem [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|§C5b.4.2]] Fermi–Dirac Statistics and the Pauli Exclusion Principle; Dirac sea: [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-3|§C5b.5, ★ Remark: The Dirac sea, read in the field]].
 
 ### [B] Dirac quanta have spin one-half ★
 
@@ -7150,7 +7150,7 @@ $[\hat Q, \hat a^{s\dagger}_{\mathbf p}] = \hat a^{s\dagger}_{\mathbf p}$, $[\ha
 
 ### [B] The classical Dirac energy is unbounded below ★
 
-For c-number amplitudes $H = \sum_s\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(|a^s|^2 - |b^s|^2)$ is unbounded below, while $Q = \int d^3x\,\psi^\dagger\psi \ge 0$, see Theorem [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|§C5b.5.2]] The Classical Dirac Energy Is Unbounded Below; the Classical Charge Is Positive. *Source: PS §3.5, p. 54 (after eq. (3.90))*
+For c-number amplitudes $H = \sum_s\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(|a^s|^2 - |b^s|^2)$ is unbounded below, while $Q = \int d^3x\,\psi^\dagger\psi \ge 0$, see ★ Theorem [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|§C5b.5.2]] The Classical Dirac Energy Is Unbounded Below; the Classical Charge Is Positive. *Source: PS §3.5, p. 54 (after eq. (3.90))*
 
 ^nd-thm-c5b-5-2
 
@@ -7161,7 +7161,7 @@ For c-number amplitudes $H = \sum_s\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(|a^s|^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Steps 1–3 under Theorem [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|§C5b.5.2]] The Classical Dirac Energy Is Unbounded Below; the Classical Charge Is Positive; compare Theorem [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|§C5b.3.5]] The Hamiltonian of the Dirac Field and Theorem [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|§C5b.5.3]] The Charge Counts Fermions Minus Antifermions.
+> - Steps 1–3 under ★ Theorem [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|§C5b.5.2]] The Classical Dirac Energy Is Unbounded Below; the Classical Charge Is Positive; compare Theorem [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|§C5b.3.5]] The Hamiltonian of the Dirac Field and Theorem [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|§C5b.5.3]] The Charge Counts Fermions Minus Antifermions.
 
 ### [B] Time dependence of the modes; the covariant mode expansion ★
 
@@ -7543,7 +7543,7 @@ From Lecture 12 on, $\eta^s = \xi^{-s} = -i\sigma^2(\xi^s)^{\ast}$, so $\eta^1 =
 
 A charge-conjugation matrix is an invertible $B$ with $B(\gamma^\mu)^{\ast}B^{-1} = -\gamma^\mu$; it exists, is unique up to a factor, unitary in a Hermitian basis with $BB^{\ast} = \mathbb 1$; $c(\psi) = B\psi^{\ast}$ is an antilinear real structure commuting with the spinor Lorentz matrices; in the chiral basis $B = -i\gamma^2$, see Definition [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-18|§CB.19.18]] The Charge-Conjugation Matrix, Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|§CB.19.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation and Definition [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-20|§CB.19.20]] The Charge-Conjugation Map. *Source: written beyond Lecture 12 at the user's question (2026-10-12) · PS eqs. (3.144)–(3.145) (the matrix $-i\gamma^2$, unnamed) · Yu (9.98), (9.112)*
 
-^nd-def-cb-18-18
+^nd-def-cb-19-18
 
 - [ ] Q1 **[def]** Define a charge-conjugation matrix and the charge-conjugation map.
 - [ ] Q2 **[why]** Why are $(\gamma^\mu)^{\ast}$ and $-\gamma^\mu$ again Dirac matrices, and why does that give existence and uniqueness of $B$ (which theorem)?
@@ -8149,7 +8149,7 @@ $U(\mathcal T)\hat{\mathcal L}(t, \mathbf x)U(\mathcal T)^{-1} = \hat{\mathcal L
 
 ### [B] Time reversal twice is −1 on fermions ★
 
-$U(\mathcal T)^2\hat a^s_{\mathbf p}U(\mathcal T)^{-2} = -\hat a^s_{\mathbf p}$ (likewise $\hat b$), so $U(\mathcal T)^2 = (-1)^{\hat N_a + \hat N_b}$; on the complex scalar $U(\mathcal T)^2 = \mathbb 1$, see Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions and [[§C9.12 C, T and CPT for the Complex Scalar Field#^rem-c9-12-1|§C9.12, Remark: Time reversal twice is +1 on the scalar field]]. *Source: PS §3.6, p. 68 ("two successive spin flips return a spin to $(-1)$ times the original state")*
+$U(\mathcal T)^2\hat a^s_{\mathbf p}U(\mathcal T)^{-2} = -\hat a^s_{\mathbf p}$ (likewise $\hat b$), so $U(\mathcal T)^2 = (-1)^{\hat N_a + \hat N_b}$; on the complex scalar $U(\mathcal T)^2 = \mathbb 1$, see ★ Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions and [[§C9.12 C, T and CPT for the Complex Scalar Field#^rem-c9-12-1|§C9.12, Remark: Time reversal twice is +1 on the scalar field]]. *Source: PS §3.6, p. 68 ("two successive spin flips return a spin to $(-1)$ times the original state")*
 
 ^nd-thm-c9-9-10
 
@@ -8161,7 +8161,7 @@ $U(\mathcal T)^2\hat a^s_{\mathbf p}U(\mathcal T)^{-2} = -\hat a^s_{\mathbf p}$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15.
-> - Steps 1–3 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions; Kramers degeneracy (★, beyond the course): [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^rem-c9-9-3|§C9.9, ★ Remark: Kramers degeneracy]].
+> - Steps 1–3 under ★ Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions; Kramers degeneracy (★, beyond the course): [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^rem-c9-9-3|§C9.9, ★ Remark: Kramers degeneracy]].
 
 ### [B] The three matrices multiply to γ⁵ ★
 
@@ -9140,4 +9140,4 @@ The discrete laws of the two fields match line by line: the same operations on m
 - [ ] Q4 **[why]** Why do the currents $\hat j^\mu$ and $\mathsf V^\mu$ have the same signs under all four?
 
 > [!tip]- Hints: route in the notes
-> - The two tables; Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-4|§C9.3.4]] Parity on the Negative-Frequency Spinors; Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions; Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-4|§C9.12.4]] The U(1) Current under P, C and T.
+> - The two tables; Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-4|§C9.3.4]] Parity on the Negative-Frequency Spinors; ★ Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions; Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-4|§C9.12.4]] The U(1) Current under P, C and T.
