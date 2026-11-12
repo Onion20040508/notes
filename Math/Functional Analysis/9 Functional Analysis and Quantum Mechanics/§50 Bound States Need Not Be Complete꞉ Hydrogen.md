@@ -5,7 +5,7 @@ chapter: 9
 section: 50
 tags: [functional-analysis, math556, companion]
 ---
-← [[§49 Position Eigenstates and Continuous Resolutions]] · ↑ [[· 10 Functional Analysis and Quantum Mechanics]]
+← [[§49 Position Eigenstates and Continuous Resolutions]] · ↑ [[· 9 Functional Analysis and Quantum Mechanics]]
 
 *Companion — Thread: dimension. Discrete and continuous spectrum.*
 

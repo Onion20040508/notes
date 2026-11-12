@@ -4576,7 +4576,7 @@ The labels $(j_+, j_-)$, the Casimirs $\mathbf J_\pm^2$ and the eigenvalues $m_\
 
 ### [B] Spinor and tensor representations
 
-A finite-dimensional representation is a tensor representation if the $2\pi$ rotation $e^{-2\pi iJ_3}$ acts as $+\mathbb 1$ and a spinor representation if it acts as $-\mathbb 1$; $(j_+, j_-)$ is tensorial for integer $j_+ + j_-$ and spinorial for half-odd $j_+ + j_-$, see Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-26|§CB.15.26]] Spinor and Tensor Representations and Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-11|§CB.18.11]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part. *Source: Problem Set 6, Problem 4(d) (vectors and spinors under 2π) · the user's notes Ch. 7*
+A finite-dimensional representation is a tensor representation if the $2\pi$ rotation $e^{-2\pi iJ_3}$ acts as $+\mathbb 1$ and a spinor representation if it acts as $-\mathbb 1$; $(j_+, j_-)$ is tensorial for integer $j_+ + j_-$ and spinorial for half-odd $j_+ + j_-$, see Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-27|§CB.15.27]] Spinor and Tensor Representations and Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-11|§CB.18.11]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part. *Source: Problem Set 6, Problem 4(d) (vectors and spinors under 2π) · the user's notes Ch. 7*
 
 ^nd-def-cb-14-26
 
@@ -4587,7 +4587,7 @@ A finite-dimensional representation is a tensor representation if the $2\pi$ rot
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (exponentiating a generator)
-> - Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-26|§CB.15.26]] Spinor and Tensor Representations, Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-11|§CB.18.11]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part; the sign: step 4 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-8|Derivation §CB.18.8]]; up to sign: [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]].
+> - Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-27|§CB.15.27]] Spinor and Tensor Representations, Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-11|§CB.18.11]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part; the sign: step 4 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-8|Derivation §CB.18.8]]; up to sign: [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]].
 
 ### [B] Spinor fields
 

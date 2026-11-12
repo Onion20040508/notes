@@ -72,7 +72,7 @@ What is the Poincaré group as a group, and how are all its irreducible unitary 
 > [!definition] Definition §CB.21.4: The Double Cover of the Poincaré Group
 > $\mathbb R^{1,3}\rtimes SL(2, \mathbb C)$ with $\varphi_\lambda(a) = \pi(\lambda)a$, $\pi$ the covering of [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|Theorem §CB.17.9]]. The map $(a, \lambda) \mapsto (a, \pi(\lambda))$ is a two-to-one covering homomorphism onto the Poincaré group ([[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-3|Def. §CB.21.3]]; Theorem §CB.17.9 on the second factor); the source, homeomorphic to $\mathbb R^4\times SL(2, \mathbb C)$, is simply connected ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-12|Theorem §CB.10.12]]; [[§29 The Fundamental Group#^thm-29-7|590 Thm. §29.7]]), so it is the universal covering group ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-18|Def. §CB.3.18]]).
 >
-> The Clifford covering $\rho$ of [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-12|Theorem §CB.17.12]] is not the same homomorphism as $\pi$: read on $SL(2, \mathbb C)$ through the isomorphism $\phi$, it is $\rho\circ\phi^{-1} = \pi\circ\theta$ with $\theta(\lambda) = (\lambda^\dagger)^{-1}$. Putting $\pi\circ\theta$ in place of $\pi$ gives another action, $\varphi'_\lambda(a) = \pi(\theta(\lambda))a$, and a semidirect product that is isomorphic to this one, not equal to it: $(a, \lambda) \mapsto (a, \theta(\lambda))$ is an isomorphism from the second onto the first, because $\theta$ is an automorphism of $SL(2, \mathbb C)$ and $(a + \pi(\theta(\lambda))b, \theta(\lambda)\theta(\mu))$ is the product of $(a, \theta(\lambda))$ and $(b, \theta(\mu))$ in the first. The two conventions give, for instance, a lower- and an upper-triangular massless little group (used next: Theorem §CB.21.8).
+> The Clifford covering $\rho$ of [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-12|Theorem §CB.17.12]] is not the same homomorphism as $\pi$: read on $SL(2, \mathbb C)$ through the isomorphism $\phi$, it is $\rho\circ\phi^{-1} = \pi\circ\theta$ with $\theta(\lambda) = (\lambda^\dagger)^{-1}$. Putting $\pi\circ\theta$ in place of $\pi$ gives another action, $\varphi'_\lambda(a) = \pi(\theta(\lambda))a$, and a semidirect product that is isomorphic to this one, not equal to it: $(a, \lambda) \mapsto (a, \theta(\lambda))$ is an isomorphism from the second onto the first, because $\theta$ is an automorphism of $SL(2, \mathbb C)$ and $(a + \pi(\theta(\lambda))b, \theta(\lambda)\theta(\mu))$ is the product of $(a, \theta(\lambda))$ and $(b, \theta(\mu))$ in the first. The two conventions give, for instance, a lower- and an upper-triangular massless little group (used next: Theorem §CB.21.10).
 >
 > *Source: P. Woit, Quantum Theory, Groups and Representations, §42.1 (the double cover $\mathbb R^4\rtimes SL(2, \mathbb C)$) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · covering and simple connectivity from [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|Theorem §CB.17.9]] and [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-12|Theorem §CB.10.12]] · written here*
 
@@ -149,14 +149,21 @@ The orbit theorem is the physical input of this ★ section and stays embedded a
 
 The course's little group of a standard momentum, with its Wigner element, is physics: [[§C3.6★ Particle States and the Little Group#^def-c3-6-2|Def. §C3.6.2]].
 
-> [!definition] Definition §CB.21.6: Characters of the Translations and the Dual Action
-> For $p \in \mathbb R^{1,3}$ the **character** $\chi_p(a) = e^{ip\cdot a}$ is a continuous homomorphism $\mathbb R^{1,3} \to U(1)$, and every continuous homomorphism $\mathbb R^{1,3} \to U(1)$ is $\chi_p$ for exactly one $p$ (proved in the callout after this box). $H = SO^+(1,3)$ or $SL(2, \mathbb C)$ acts on characters by $(h\cdot\chi_p)(a) = \chi_p(\varphi_{h^{-1}}(a)) = \chi_{\Lambda p}(a)$, i.e. on momenta by $p \mapsto \Lambda p$ ($\Lambda = \pi(h)$ for $SL(2, \mathbb C)$).
+> [!definition] Definition §CB.21.6: Characters of the Translations
+> For $p \in \mathbb R^{1,3}$ the **character** $\chi_p(a) = e^{ip\cdot a}$, a continuous homomorphism $\mathbb R^{1,3} \to U(1)$.
 >
-> *Source: P. Woit, Quantum Theory, Groups and Representations, §20.4 (Definition "Character group"; the characters $\alpha_p(a) = e^{ip\cdot a}$ of $\mathbb R^d$, stated there as all the differentiable ones, and the dual action $\alpha \mapsto \alpha\circ\Phi_k^{-1}$, with the Euclidean product) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the sign $+ip\cdot a$ (Minkowski product) is the course's: $U(\mathbb 1, a)|p, \sigma\rangle = e^{ip\cdot a}|p, \sigma\rangle$ ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-3|Theorem §C3.6.3]], 1, from the exponential form of translations, [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|Theorem §C3.4.6]], 3); H. Osborn, Group Theory Lecture Notes (DAMTP, 2023), eq. (4.112), $T[a]|p\rangle = e^{ia_\mu p^\mu}|p\rangle$, has the same sign (https://www.damtp.cam.ac.uk/user/ho10/GNotes.pdf) · $(h\cdot\chi_p) = \chi_{\Lambda p}$ written here*
+> *Source: P. Woit, Quantum Theory, Groups and Representations, §20.4 (Definition "Character group"; the characters $\alpha_p(a) = e^{ip\cdot a}$ of $\mathbb R^d$, with the Euclidean product) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the sign $+ip\cdot a$ (Minkowski product) is the course's: $U(\mathbb 1, a)|p, \sigma\rangle = e^{ip\cdot a}|p, \sigma\rangle$ ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-3|Theorem §C3.6.3]], 1, from the exponential form of translations, [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|Theorem §C3.4.6]], 3); H. Osborn, Group Theory Lecture Notes (DAMTP, 2023), eq. (4.112), $T[a]|p\rangle = e^{ia_\mu p^\mu}|p\rangle$, has the same sign (https://www.damtp.cam.ac.uk/user/ho10/GNotes.pdf)*
 
 ^def-cb-21-6
 
-> [!proof]- Proof (every continuous character of ℝ⁴ is one χ_p)
+> [!theorem] Theorem §CB.21.7: Every Continuous Character of ℝ⁴ Is χ_p
+> Every continuous homomorphism $\mathbb R^{1,3} \to U(1)$ is $\chi_p$ ([[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-6|Def. §CB.21.6]]) for exactly one $p \in \mathbb R^{1,3}$.
+>
+> *Source: P. Woit, Quantum Theory, Groups and Representations, §20.4 (stated there for the differentiable characters) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · for continuous characters written here*
+
+^thm-cb-21-7
+
+> [!proof]- Proof
 > *Source: written here (Woit, §20.4, states the result for differentiable characters).*
 >
 > **1. One variable: differentiability.** Let $f : \mathbb R \to U(1)$ be a continuous homomorphism, $f(s + t) = f(s)f(t)$. Since $f(0) = 1$ and $f$ is continuous, there is $\delta > 0$ with $A = \int_0^\delta f(s)\,ds \ne 0$ (for small $\delta$ the integrand has real part at least $\frac12$). Then $f(t)A = \int_0^\delta f(t)f(s)\,ds = \int_0^\delta f(t + s)\,ds = \int_t^{t+\delta}f(s)\,ds$ (substitution $s \to s - t$), so $f(t) = A^{-1}\int_t^{t+\delta}f(s)\,ds$ is differentiable by the fundamental theorem of calculus, with $f'(t) = A^{-1}\bigl(f(t + \delta) - f(t)\bigr) = \kappa f(t)$, $\kappa = A^{-1}(f(\delta) - 1) = f'(0)$.
@@ -165,28 +172,37 @@ The course's little group of a standard momentum, with its Wigner element, is ph
 >
 > **3. Four variables.** Let $\chi : \mathbb R^{1,3} \to U(1)$ be a continuous homomorphism and $e_\mu$ the standard basis. Each $t \mapsto \chi(te_\mu)$ is a continuous homomorphism $\mathbb R \to U(1)$, so $\chi(te_\mu) = e^{ic_\mu t}$ by steps 1–2. For $a = a^\mu e_\mu$, the homomorphism property gives $\chi(a) = \prod_\mu\chi(a^\mu e_\mu) = e^{ic_\mu a^\mu} = e^{ip\cdot a}$ with the momentum $p$ of lower components $p_\mu = c_\mu$ ($p\cdot a = p_\mu a^\mu$): $\chi = \chi_p$. If $\chi_p = \chi_{p'}$, differentiating $e^{ip_\mu t} = e^{ip'_\mu t}$ at $t = 0$ gives $p_\mu = p'_\mu$.
 
-^pf-cb-21-6
+^pf-cb-21-7
 
-> [!definition] Definition §CB.21.7: The Euclidean Group of the Plane
+*Uses:* [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-6|Def. §CB.21.6]]
+
+> [!definition] Definition §CB.21.8: The Dual Action on Characters
+> $H = SO^+(1,3)$ or $SL(2, \mathbb C)$ acts on the characters ([[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-6|Def. §CB.21.6]]) by $(h\cdot\chi_p)(a) = \chi_p(\varphi_{h^{-1}}(a))$; since $p\cdot\Lambda^{-1}a = \Lambda p\cdot a$ ($\Lambda$ preserves the Minkowski product), $h\cdot\chi_p = \chi_{\Lambda p}$, i.e. $H$ acts on momenta by $p \mapsto \Lambda p$ ($\Lambda = \pi(h)$ for $SL(2, \mathbb C)$).
+>
+> *Source: P. Woit, Quantum Theory, Groups and Representations, §20.4 (the dual action $\alpha \mapsto \alpha\circ\Phi_k^{-1}$, with the Euclidean product) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · $(h\cdot\chi_p) = \chi_{\Lambda p}$ written here*
+
+^def-cb-21-8
+
+> [!definition] Definition §CB.21.9: The Euclidean Group of the Plane
 > $ISO(2) = E(2) = \mathbb R^2\rtimes SO(2)$ ([[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-1|Def. §CB.21.1]]), with $SO(2)$ acting by rotation; its double cover is $\mathbb C\rtimes U(1)$ with $e^{i\theta/2}$ acting on $\mathbb C$ by multiplication with $e^{i\theta}$.
 >
-> *Source: P. Woit, Quantum Theory, Groups and Representations, §18.1, Definition "Euclidean group" ($E(d) = ISO(d) = \mathbb R^d\rtimes SO(d)$) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the double cover written here; it is the little group of Theorem §CB.21.8, as in H. Osborn, Group Theory Lecture Notes (DAMTP, 2023), §4.5.5, eq. (4.190)*
+> *Source: P. Woit, Quantum Theory, Groups and Representations, §18.1, Definition "Euclidean group" ($E(d) = ISO(d) = \mathbb R^d\rtimes SO(d)$) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the double cover written here; it is the little group of Theorem §CB.21.10, as in H. Osborn, Group Theory Lecture Notes (DAMTP, 2023), §4.5.5, eq. (4.190)*
 
-^def-cb-21-7
+^def-cb-21-9
 
-> [!theorem] Theorem §CB.21.8: The Little Groups in SL(2,ℂ)
-> For the action of $SL(2, \mathbb C)$ on momenta (Def. §CB.21.6):
+> [!theorem] Theorem §CB.21.10: The Little Groups in SL(2,ℂ)
+> For the action of $SL(2, \mathbb C)$ on momenta (Def. §CB.21.8):
 > 1. the stabilizer of $k = (m, 0, 0, 0)$, $m > 0$, is $SU(2)$, the double cover of the little group $SO(3)$;
-> 2. the stabilizer of $k = (\kappa, 0, 0, \kappa)$, $\kappa > 0$, is conjugate in $SL(2, \mathbb C)$ to $\Bigl\{\begin{pmatrix} e^{i\theta/2} & z\\ 0 & e^{-i\theta/2}\end{pmatrix} : \theta \in \mathbb R, z \in \mathbb C\Bigr\}$, isomorphic to the double cover $\mathbb C\rtimes U(1)$ of $ISO(2)$ ([[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-7|Def. §CB.21.7]]); with the covering $\pi$ of [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-4|Theorem §CB.17.4]] ($x \leftrightarrow x_\mu\sigma^\mu$) it is exactly the lower-triangular group $\Bigl\{\begin{pmatrix} e^{-i\theta/2} & 0\\ c & e^{i\theta/2}\end{pmatrix}\Bigr\}$.
+> 2. the stabilizer of $k = (\kappa, 0, 0, \kappa)$, $\kappa > 0$, is conjugate in $SL(2, \mathbb C)$ to $\Bigl\{\begin{pmatrix} e^{i\theta/2} & z\\ 0 & e^{-i\theta/2}\end{pmatrix} : \theta \in \mathbb R, z \in \mathbb C\Bigr\}$, isomorphic to the double cover $\mathbb C\rtimes U(1)$ of $ISO(2)$ ([[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-9|Def. §CB.21.9]]); with the covering $\pi$ of [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-4|Theorem §CB.17.4]] ($x \leftrightarrow x_\mu\sigma^\mu$) it is exactly the lower-triangular group $\Bigl\{\begin{pmatrix} e^{-i\theta/2} & 0\\ c & e^{i\theta/2}\end{pmatrix}\Bigr\}$.
 >
 > In both cases $\pi$ maps the stabilizer two-to-one onto the little group $G_k$, the stabilizer of $k$ in $SO^+(1,3)$ ([[§26 Stabilizers and Fixed Points#^def-26-1|493 Def. §26.1]]).
 >
 > *Source: [[§C3.6★ Particle States and the Little Group#^thm-c3-6-8|Theorem §C3.6.8]], [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|Theorem §C3.7.1]] (the little groups in $SO^+(1,3)$) · H. Osborn, Group Theory Lecture Notes (DAMTP, 2023), §4.5.5, eqs. (4.183)–(4.190): the massless little group in $SL(2, \mathbb C)$, upper triangular in the convention $x \leftrightarrow x^0 + x^i\sigma^i$ (https://www.damtp.cam.ac.uk/user/ho10/GNotes.pdf) · P. Woit, Quantum Theory, Groups and Representations, §42.3.1, §42.3.5 ($SO(3)$, $E(2)$, half-integer helicity from the double cover) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the stabilizer computation written here · the course's little group: [[§C3.6★ Particle States and the Little Group#^def-c3-6-2|Def. §C3.6.2]]*
 
-^thm-cb-21-8
+^thm-cb-21-10
 
 > [!proof]- Proof
-> **0. The stabilizer as a matrix equation.** $\lambda \in SL(2, \mathbb C)$ acts on momenta by $p \mapsto \pi(\lambda)p$ (Def. §CB.21.6, Def. §CB.21.4), and $\pi$ is defined by $\lambda\,(x_\mu\sigma^\mu)\,\lambda^\dagger = (\pi(\lambda)x)_\mu\sigma^\mu$ ([[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-4|Theorem §CB.17.4]]). Since $x \mapsto x_\mu\sigma^\mu$ is a bijection onto the Hermitian matrices ([[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-3|Theorem §CB.17.3]]), with $K \equiv k_\mu\sigma^\mu$,
+> **0. The stabilizer as a matrix equation.** $\lambda \in SL(2, \mathbb C)$ acts on momenta by $p \mapsto \pi(\lambda)p$ (Def. §CB.21.8, Def. §CB.21.4), and $\pi$ is defined by $\lambda\,(x_\mu\sigma^\mu)\,\lambda^\dagger = (\pi(\lambda)x)_\mu\sigma^\mu$ ([[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-4|Theorem §CB.17.4]]). Since $x \mapsto x_\mu\sigma^\mu$ is a bijection onto the Hermitian matrices ([[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-3|Theorem §CB.17.3]]), with $K \equiv k_\mu\sigma^\mu$,
 >
 > $$
 > \pi(\lambda)k = k \iff \lambda K\lambda^\dagger = K .
@@ -224,7 +240,7 @@ The course's little group of a standard momentum, with its Wigner element, is ph
 > u(w_1, \zeta_1)\,u(w_2, \zeta_2) = \begin{pmatrix} w_1w_2 & w_1\zeta_2\bar w_2 + \zeta_1\bar w_1\bar w_2\\ 0 & \bar w_1\bar w_2\end{pmatrix} = u\bigl(w_1w_2,\ \zeta_1 + w_1^2\zeta_2\bigr) .
 > $$
 >
-> This is the product $(\zeta_1, w_1)(\zeta_2, w_2) = (\zeta_1 + \varphi_{w_1}(\zeta_2), w_1w_2)$ of [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-1|Def. §CB.21.1]] with $\varphi_w(\zeta) = w^2\zeta$, i.e. of $\mathbb C\rtimes U(1)$ (Def. §CB.21.7: $e^{i\theta/2}$ acts by $e^{i\theta}$). So $(\zeta, w) \mapsto u(w, \zeta)$ is an isomorphism $\mathbb C\rtimes U(1) \to B$, and $S_k \cong B \cong \mathbb C\rtimes U(1)$.
+> This is the product $(\zeta_1, w_1)(\zeta_2, w_2) = (\zeta_1 + \varphi_{w_1}(\zeta_2), w_1w_2)$ of [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-1|Def. §CB.21.1]] with $\varphi_w(\zeta) = w^2\zeta$, i.e. of $\mathbb C\rtimes U(1)$ (Def. §CB.21.9: $e^{i\theta/2}$ acts by $e^{i\theta}$). So $(\zeta, w) \mapsto u(w, \zeta)$ is an isomorphism $\mathbb C\rtimes U(1) \to B$, and $S_k \cong B \cong \mathbb C\rtimes U(1)$.
 >
 > **9. Massless: the double cover of $ISO(2)$.** $(\zeta, w) \mapsto (\zeta, r_{\arg w^2})$, with $\zeta \in \mathbb C = \mathbb R^2$ and $r_\alpha$ the rotation by $\alpha$, is a homomorphism onto $ISO(2) = \mathbb R^2\rtimes SO(2)$, because the rotation $r_{\arg w^2}$ of $\mathbb R^2$ is multiplication by $w^2$ on $\mathbb C$, so products go to $(\zeta_1 + r_{\arg w_1^2}\zeta_2, r_{\arg w_1^2}r_{\arg w_2^2})$. Its kernel is $\{(0, w) : w^2 = 1\} = \{(0, \pm1)\}$: two-to-one. Independently, Step 3's argument (onto by Theorem §CB.17.9, 1; kernel $\{\pm\mathbb 1\} \subset S_k$) shows that $\pi$ maps $S_k$ two-to-one onto $G_k$. Both maps have kernel $\{\pm\mathbb 1\}$, which corresponds to $\{(0, \pm1)\}$ under $S_k \cong \mathbb C\rtimes U(1)$ (Steps 7–8: $-\mathbb 1 = u(-1, 0)$ commutes with $\varepsilon$), so the first isomorphism theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]]) gives $G_k \cong S_k/\{\pm\mathbb 1\} \cong ISO(2)$: part 2.
 >
@@ -237,14 +253,14 @@ The course's little group of a standard momentum, with its Wigner element, is ph
 > - Upper or lower triangular is a convention: with the dictionary $x \leftrightarrow x^0 + x^i\sigma^i$ (Osborn, Theorem §CB.17.12) one has $K = \operatorname{diag}(2\kappa, 0)$ and the stabilizer is $B$ itself; with the course's $x_\mu\sigma^\mu$ it is $\varepsilon B\varepsilon^{-1}$.
 > - Used in: the particle classification of [[§C3.6★ Particle States and the Little Group#^thm-c3-6-7|Theorem §C3.6.7]] at the level of the covering group, and half-integer helicity.
 
-^pf-cb-21-8
+^pf-cb-21-10
 
-*Uses:* [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-3|Theorem §CB.17.3]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-4|Theorem §CB.17.4]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-5|Theorem §CB.17.5]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|Theorem §CB.17.9]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|Theorem §CB.3.13]], [[§26 Stabilizers and Fixed Points#^def-26-1|493 Def. §26.1]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]], [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-1|Def. §CB.21.1]], [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-7|Def. §CB.21.7]]
+*Uses:* [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-3|Theorem §CB.17.3]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-4|Theorem §CB.17.4]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-5|Theorem §CB.17.5]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|Theorem §CB.17.9]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|Theorem §CB.3.13]], [[§26 Stabilizers and Fixed Points#^def-26-1|493 Def. §26.1]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]], [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-1|Def. §CB.21.1]], [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-8|Def. §CB.21.8]], [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-9|Def. §CB.21.9]]
 
 ## Induced representations
 
-> [!definition] Definition §CB.21.9: Induced Representation of ℝⁿ ⋊ H
-> Let $G = \mathbb R^n\rtimes H$ with $H$ a matrix Lie group acting linearly on $\mathbb R^n$ and on momenta as in Def. §CB.21.6; let $\mathcal O$ be an $H$-orbit of momenta with an $H$-invariant measure $\mu$, $k \in \mathcal O$, $H_k$ the stabilizer of $k$, $\sigma$ a unitary representation of $H_k$ on a Hilbert space $\mathcal K$, and $p \mapsto L(p) \in H$ a measurable choice with $L(p)k = p$. The **induced representation** acts on $L^2(\mathcal O, \mu; \mathcal K)$ by
+> [!definition] Definition §CB.21.11: Induced Representation of ℝⁿ ⋊ H
+> Let $G = \mathbb R^n\rtimes H$ with $H$ a matrix Lie group acting linearly on $\mathbb R^n$ and on momenta as in Def. §CB.21.8; let $\mathcal O$ be an $H$-orbit of momenta with an $H$-invariant measure $\mu$, $k \in \mathcal O$, $H_k$ the stabilizer of $k$, $\sigma$ a unitary representation of $H_k$ on a Hilbert space $\mathcal K$, and $p \mapsto L(p) \in H$ a measurable choice with $L(p)k = p$. The **induced representation** acts on $L^2(\mathcal O, \mu; \mathcal K)$ by
 >
 > $$
 > \bigl(U(a, h)\psi\bigr)(p) = e^{ip\cdot a}\,\sigma\bigl(W(h, p)\bigr)\,\psi(h^{-1}p), \qquad W(h, p) = L(p)^{-1}\,h\,L(h^{-1}p) \in H_k .
@@ -252,17 +268,63 @@ The course's little group of a standard momentum, with its Wigner element, is ph
 >
 > *Source: L. M. Borasi, Review and concrete description of the irreducible unitary representations of the universal cover of the complexified Poincaré group, arXiv:2108.10726, Cor. 3.11, eq. (17) (Wigner–Mackey embedding $\beta = L$; the Radon–Nikodym factor is $1$ for an invariant $\mu$; the phase is the translation part of $\chi_k\otimes\sigma$) (https://arxiv.org/abs/2108.10726) · P. Woit, Quantum Theory, Groups and Representations, §20.4 (orbit and little group, the construction described) · the course's form: [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]; sign $e^{+ip\cdot a}$ and relativistic normalization checked against it in [[§CB.21★ The Poincaré Group and Induced Representations#^rem-cb-21-1|§CB.21, ★ Remark: The course's law as an induced representation]], where the course's Wigner element is $W(\Lambda, \Lambda p)$ in this notation*
 
-^def-cb-21-9
+^def-cb-21-11
 
-> [!theorem] Theorem §CB.21.10: The Induced Representation Is Unitary
-> $U$ of [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-9|Def. §CB.21.9]] is a unitary representation of $G$; $W(h, p)$ lies in $H_k$ and satisfies $W(hh', p) = W(h, p)W(h', h^{-1}p)$. If moreover the orbit $\mathcal O$ is locally closed in the space of momenta (as every orbit of the Lorentz group is), $\mu$ is finite on compact sets, $\sigma$ is strongly continuous and $L$ is continuous outside a closed $\mu$-null set, then $U$ is strongly continuous. A different choice of $L$, or of $k' = h_0k \in \mathcal O$ with $\sigma$ carried to $H_{k'} = h_0H_kh_0^{-1}$ as $\sigma'(x) = \sigma(h_0^{-1}xh_0)$, gives an equivalent representation.
+The one fact of measure theory that the continuity part of the next theorem uses:
+
+> [!theorem] Lemma §CB.21.12: Continuous Functions of Compact Support Are Dense in L²(𝒪, μ; 𝒦)
+> Let $\mathcal O \subset \mathbb R^n$ be locally closed (the intersection of an open and a closed subset of $\mathbb R^n$), $\mu$ a Borel measure on $\mathcal O$ that is finite on compact sets, and $\mathcal K$ a separable Hilbert space (for instance a finite-dimensional one). Let $L^2(\mathcal O, \mu; \mathcal K)$ be the space of functions $\psi : \mathcal O \to \mathcal K$ such that $p \mapsto \langle v, \psi(p)\rangle$ is Borel measurable for every $v \in \mathcal K$ and $\|\psi\|^2 = \int_{\mathcal O}\|\psi(p)\|^2\,d\mu(p) < \infty$, functions equal $\mu$-almost everywhere being identified. Then the continuous $\psi : \mathcal O \to \mathcal K$ with compact support are dense in $L^2(\mathcal O, \mu; \mathcal K)$.
+>
+> *Source: E. M. Stein and R. Shakarchi, Real Analysis: Measure Theory, Integration, and Hilbert Spaces (Princeton Lectures in Analysis III, 2005), Ch. 6, Proposition 1.3, p. 269 (a Borel measure on a metric space that is finite on all balls is regular), and Ch. 6, §2, p. 275 (monotone and dominated convergence on a σ-finite measure space) · for Lebesgue measure on $\mathbb R^n$ and scalar functions: [[§35 Lᵖ as a Banach Space#^thm-35-12|551 Thm. §35.12]], (iii) · the assembly written here*
+
+^lem-cb-21-12
+
+> [!proof]- Proof
+> *Source: the regularity of Borel measures is Stein–Shakarchi, Real Analysis, Ch. 6, Prop. 1.3 (p. 269), and the convergence theorems for a σ-finite measure space are their Ch. 6, §2 (p. 275); both were read in the text. The steps around them are written here.*
+>
+> **1. An exhaustion by compact sets.** Write $\mathcal O = U\cap C$ with $U$ open and $C$ closed in $\mathbb R^n$, and let $\delta(p) = \operatorname{dist}(p, \mathbb R^n\setminus U)$ ($\delta \equiv 1$ if $U = \mathbb R^n$), a continuous function, positive exactly on $U$. Put
+>
+> $$
+> K_m = \{p \in C : |p| \le m,\ \delta(p) \ge 1/m\}, \qquad V_m = \{p \in \mathcal O : |p| < m,\ \delta(p) > 1/m\} .
+> $$
+>
+> $K_m$ is closed and bounded in $\mathbb R^n$, hence compact, and lies in $\mathcal O$ ($\delta > 0$ on it, so $K_m \subset U$); $V_m$ is open in $\mathcal O$; $K_m \subset V_{m+1} \subset K_{m+1}$; and $\bigcup_mK_m = \mathcal O$, since every $p \in \mathcal O$ has $\delta(p) > 0$. So $\mu(K_m) < \infty$ for every $m$: $\mu$ is σ-finite, and the convergence theorems of Stein–Shakarchi, Ch. 6, §2 apply to it.
+>
+> **2. Simple functions (scalar case).** Let $f \in L^2(\mathcal O, \mu)$ be complex-valued. Writing $f = u^+ - u^- + i(w^+ - w^-)$, with the four parts nonnegative, measurable and $\le |f|$, it suffices to approximate a measurable $g \ge 0$ with $\int g^2\,d\mu < \infty$. Put $s_k = \min\bigl(k, 2^{-k}\lfloor 2^kg\rfloor\bigr)$: a simple function with $0 \le s_k \le g$, and $s_k \to g$ pointwise (where $g(p) \le k$, $0 \le g(p) - s_k(p) < 2^{-k}$). Then $|g - s_k|^2 \le g^2$, which is integrable, and $|g - s_k|^2 \to 0$ pointwise, so $\|g - s_k\|^2 = \int|g - s_k|^2\,d\mu \to 0$ by dominated convergence. Each nonzero value $c$ of $s_k$ is taken on a Borel set $E$ with $c^2\mu(E) \le \int s_k^2\,d\mu \le \int g^2\,d\mu < \infty$, so $\mu(E) < \infty$. Hence the finite linear combinations of indicator functions $\chi_E$ of Borel sets with $\mu(E) < \infty$ are dense in $L^2(\mathcal O, \mu)$.
+>
+> **3. Inside one compact set.** Let $\mu(E) < \infty$. The sets $E\setminus K_m$ decrease to $\emptyset$ (step 1), so $\mu(E\setminus K_m) \to 0$ (continuity from above, as $\mu(E) < \infty$), and $\|\chi_E - \chi_{E\cap K_m}\|^2 = \mu(E\setminus K_m)$. So it suffices to approximate $\chi_E$ for Borel $E \subset K_m$.
+>
+> **4. One indicator function.** Let $E \subset K_m$ be Borel and $\epsilon > 0$. On the compact metric space $X = K_{m+1}$ (the distance of $\mathbb R^n$) the restriction of $\mu$ is a finite Borel measure, hence finite on all balls, and Stein–Shakarchi's Proposition 1.3 gives $O'$ open in $X$ and $F$ closed in $X$ with $F \subset E \subset O'$, $\mu(O'\setminus E) < \epsilon/2$ and $\mu(E\setminus F) < \epsilon/2$. $F$ is closed in the compact $X$, hence compact. Put $O = O'\cap V_{m+1}$: it contains $E$ (as $E \subset K_m \subset V_{m+1}$), and it is open in $\mathcal O$ ($O' = X\cap W$ with $W$ open in $\mathbb R^n$, so $O = W\cap V_{m+1}$, since $V_{m+1} \subset X$). For $p \in \mathcal O$ let
+>
+> $$
+> g(p) = \frac{\operatorname{dist}(p, \mathcal O\setminus O)}{\operatorname{dist}(p, \mathcal O\setminus O) + \operatorname{dist}(p, F)}
+> $$
+>
+> (with $g \equiv 0$ if $F = \emptyset$, and the first distance read as $1$ if $O = \mathcal O$). The denominator never vanishes: $\operatorname{dist}(p, F) = 0$ means $p \in F$ ($F$ is closed), and then $p \in O$, which is open in $\mathcal O$, so $\operatorname{dist}(p, \mathcal O\setminus O) > 0$. Distances to a set are continuous, so $g$ is continuous, $0 \le g \le 1$, $g = 1$ on $F$ and $g = 0$ off $O$; its support lies in the closure of $O$ in $\mathcal O$, which is inside the compact $K_{m+1}$, so the support is compact. Pointwise $|\chi_E - g| \le \chi_{O\setminus F}$ (both functions are $1$ on $F$ and $0$ off $O$, and both lie in $[0, 1]$), hence
+>
+> $$
+> \|\chi_E - g\|^2 \le \mu(O\setminus F) \le \mu(O'\setminus E) + \mu(E\setminus F) < \epsilon .
+> $$
+>
+> With steps 2–3 this proves the lemma for $\mathcal K = \mathbb C$.
+>
+> **5. Values in $\mathcal K$.** $\mathcal K$ has a countable orthonormal basis $(e_j)$ ([[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|556 Thm. §28.3]]; finite if $\dim\mathcal K < \infty$). Put $\psi_j(p) = \langle e_j, \psi(p)\rangle$, measurable by hypothesis. By Parseval's equality ([[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]]), $\|\psi(p)\|^2 = \sum_j|\psi_j(p)|^2$, a measurable function, and by monotone convergence $\|\psi\|^2 = \sum_j\|\psi_j\|^2$; so every $\psi_j \in L^2(\mathcal O, \mu)$ and $\|\psi - \sum_{j\le N}\psi_je_j\|^2 = \sum_{j>N}\|\psi_j\|^2 \to 0$. Given $\epsilon > 0$, choose $N$ with this tail below $\epsilon^2/4$, and by the scalar case continuous $\phi_j$ of compact support with $\|\psi_j - \phi_j\| < \epsilon/(2N)$. Then $\phi = \sum_{j\le N}\phi_je_j$ is continuous with compact support (inside the union of $N$ compact supports), and $\|\psi - \phi\| \le \epsilon/2 + \sum_{j\le N}\|\psi_j - \phi_j\| < \epsilon$.
+>
+> **What the proof shows**
+> - The two hypotheses of the continuity part of the next theorem enter here: local closedness gives the compact exhaustion of step 1, finiteness on compact sets makes the restricted measure of step 4 finite.
+> - For Lebesgue measure on an open set this is the classical density of $C_c$ ([[§35 Lᵖ as a Banach Space#^thm-35-12|551 Thm. §35.12]]); the orbit measures of the course, $d^3p/2E_{\mathbf p}$ on the mass shell and $d^3p/2|\mathbf p|$ on the light cone, are of the general kind treated here.
+
+^pf-cb-21-12
+
+> [!theorem] Theorem §CB.21.13: The Induced Representation Is Unitary
+> $U$ of [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-11|Def. §CB.21.11]] is a unitary representation of $G$; $W(h, p)$ lies in $H_k$ and satisfies $W(hh', p) = W(h, p)W(h', h^{-1}p)$. If moreover the orbit $\mathcal O$ is locally closed in the space of momenta (as every orbit of the Lorentz group is), $\mu$ is finite on compact sets, $\sigma$ is strongly continuous and $L$ is continuous outside a closed $\mu$-null set, then $U$ is strongly continuous. A different choice of $L$, or of $k' = h_0k \in \mathcal O$ with $\sigma$ carried to $H_{k'} = h_0H_kh_0^{-1}$ as $\sigma'(x) = \sigma(h_0^{-1}xh_0)$, gives an equivalent representation.
 >
 > *Source: the computation follows the course's [[§C3.6★ Particle States and the Little Group#^thm-c3-6-4|Theorem §C3.6.4]] and [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]], transcribed to functions on the orbit · L. M. Borasi, Review and concrete description of the irreducible unitary representations of the universal cover of the complexified Poincaré group, arXiv:2108.10726, Prop. 3.8, Cor. 3.11 and Remark 3.9 (this realization; its continuity for a merely measurable section) (https://arxiv.org/abs/2108.10726) · the steps written out here*
 
-^thm-cb-21-10
+^thm-cb-21-13
 
 > [!proof]- Proof
-> **0. Conventions.** The group law of $G$ is $(a, h)(a', h') = (a + ha', hh')$ (Def. §CB.21.1 with $\varphi_h(a) = ha$, written additively). $h$ acts on momenta by $\chi_{hp} = h\cdot\chi_p$ (Def. §CB.21.6), i.e. $e^{i(hp)\cdot a} = e^{ip\cdot(h^{-1}a)}$ for all $a$, so
+> **0. Conventions.** The group law of $G$ is $(a, h)(a', h') = (a + ha', hh')$ (Def. §CB.21.1 with $\varphi_h(a) = ha$, written additively). $h$ acts on momenta by $\chi_{hp} = h\cdot\chi_p$ (Def. §CB.21.8), i.e. $e^{i(hp)\cdot a} = e^{ip\cdot(h^{-1}a)}$ for all $a$, so
 >
 > $$
 > (hp)\cdot a = p\cdot(h^{-1}a), \qquad\text{equivalently}\qquad (hp)\cdot(hb) = p\cdot b ;
@@ -308,7 +370,8 @@ The course's little group of a standard momentum, with its Wigner element, is ph
 > (U(a_n, h_n)\psi)(p) - \psi(p) = e^{ip\cdot a_n}\sigma(W_n)\bigl[\psi(h_n^{-1}p) - \psi(p)\bigr] + \bigl[e^{ip\cdot a_n}\sigma(W_n) - \mathbb 1\bigr]\psi(p) \to 0
 > $$
 >
-> (the first bracket by continuity of $\psi$, the second by the hypothesis that $\sigma$ is strongly continuous). The integrand $\|(U(a_n, h_n)\psi)(p) - \psi(p)\|^2 \le 4\sup\|\psi\|^2$ on $NS \cup S$, zero elsewhere, so dominated convergence gives $U(a_n, h_n)\psi \to \psi$. For general $\psi$ pick such $\phi$ with $\|\psi - \phi\| < \epsilon$ (continuous compactly supported functions are dense in $L^2(\mathcal O, \mu; \mathcal K)$: this is where the hypotheses that $\mathcal O$ is locally closed, hence locally compact, and that $\mu$ is finite on compact sets are used; the density is the standard fact for such measures and is not proved in CB); by Step 3, $\|U\psi - \psi\| \le \|U(\psi - \phi)\| + \|U\phi - \phi\| + \|\phi - \psi\| \le 2\epsilon + \|U\phi - \phi\|$.
+> (the first bracket by continuity of $\psi$, the second by the hypothesis that $\sigma$ is strongly continuous). The integrand $\|(U(a_n, h_n)\psi)(p) - \psi(p)\|^2 \le 4\sup\|\psi\|^2$ on $NS \cup S$, zero elsewhere, so dominated convergence gives $U(a_n, h_n)\psi \to \psi$. For general $\psi$ pick such $\phi$ with $\|\psi - \phi\| < \epsilon$ (continuous compactly supported functions are dense in $L^2(\mathcal O, \mu; \mathcal K)$, [[§CB.21★ The Poincaré Group and Induced Representations#^lem-cb-21-12|Lemma §CB.21.12]], which uses that $\mathcal O$ is locally closed and that $\mu$ is finite on compact sets; the lemma assumes $\mathcal K$ separable, as every $\mathcal K$ of the course is (finite-dimensional), and for a non-separable $\mathcal K$ the density is not proved in CB); by Step 3, $\|U\psi - \psi\| \le \|U(\psi - \phi)\| + \|U\phi - \phi\| + \|\phi - \psi\| \le 2\epsilon + \|U\phi - \phi\|$.
+> <!-- S8 (2026-11-12): density for a non-separable 𝒦 (strongly measurable ψ, Bochner L²) not written; it needs Pettis' measurability theorem to reduce to a separable subspace. Searched: Math vault 551 (§24, §35: Lebesgue measure on ℝⁿ only), 556 (§27–§29: Hilbert spaces, no vector-valued L²); Stein–Shakarchi, Real Analysis Ch. 6 and Functional Analysis Ch. 1 (scalar measures only); Axler, MIRA; Hall, Quantum Theory for Mathematicians — none treats vector-valued L² with non-separable values. -->
 >
 > **7. Another $L$ gives an equivalent representation.** Let $L'(p)k = p$ too, and $w(p) = L(p)^{-1}L'(p)$. Then $w(p)k = L(p)^{-1}p = k$, so $w(p) \in H_k$, $L' = Lw$, and
 >
@@ -334,14 +397,14 @@ The course's little group of a standard momentum, with its Wigner element, is ph
 > - Unitarity uses exactly three things: $|e^{ip\cdot a}| = 1$, unitarity of $\sigma$, and invariance of $\mu$ (otherwise a factor $\sqrt{d\mu(h^{-1}p)/d\mu(p)}$ is needed, Borasi eq. (17)); the group law uses only the cocycle identity.
 > - The choices ($L$, $k$) change the representation only by a pointwise unitary relabelling of $\mathcal K$ at each momentum, the statement of [[§C3.6★ Particle States and the Little Group#^rem-c3-6-1|§C3.6, Remark: What the definition fixes, and what it leaves free]].
 > - Assumptions used for continuity: $\mathcal O$ locally closed, $\mu$ finite on compact sets, $\sigma$ strongly continuous, $L$ continuous off a closed null set; true for the standard boosts of the massive orbit and for the massless choice of Def. §C3.7.1.
-> - Used next: irreducibility (Theorem §CB.21.11) and the classification (Theorem §CB.21.12).
+> - Used next: irreducibility (Theorem §CB.21.14) and the classification (Theorem §CB.21.15).
 
-^pf-cb-21-10
+^pf-cb-21-13
 
-*Uses:* [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-1|Def. §CB.21.1]], [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-6|Def. §CB.21.6]], [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-9|Def. §CB.21.9]]
+*Uses:* [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-1|Def. §CB.21.1]], [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-6|Def. §CB.21.6]], [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-8|Def. §CB.21.8]], [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-11|Def. §CB.21.11]], [[§CB.21★ The Poincaré Group and Induced Representations#^lem-cb-21-12|Lemma §CB.21.12]]
 
 > [!remark]- ★ Remark: The course's law as an induced representation
-> *A comparison with physics; not used in the proof of Theorem §CB.21.10.* For $\mathbb R^{1,3}\rtimes SO^+(1,3)$ (or $SL(2, \mathbb C)$), $L = V$ and $\sigma = D$, the induced representation $U$ of Theorem §CB.21.10 is the law of [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]] written for the coefficients of wave packets.
+> *A comparison with physics; not used in the proof of Theorem §CB.21.13.* For $\mathbb R^{1,3}\rtimes SO^+(1,3)$ (or $SL(2, \mathbb C)$), $L = V$ and $\sigma = D$, the induced representation $U$ of Theorem §CB.21.13 is the law of [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]] written for the coefficients of wave packets.
 >
 > **The course's law.** Take a particle of [[§C3.6★ Particle States and the Little Group#^pr-c3-6-1|Principle §C3.6.1]] with $L = V$ ([[§C3.6★ Particle States and the Little Group#^def-c3-6-1|Def. §C3.6.1]]), $\sigma = D$, and a wave packet $|\psi\rangle = \int d\mu(p)\sum_\sigma\psi_\sigma(p)|p, \sigma\rangle$; by the normalization of [[§C3.6★ Particle States and the Little Group#^thm-c3-6-6|Theorem §C3.6.6]], $\langle\psi|\phi\rangle = \int d\mu\sum_\sigma\overline{\psi_\sigma}\phi_\sigma$, so $|\psi\rangle \mapsto (\psi_\sigma)$ is unitary onto $L^2(\mathcal O, \mu; \mathbb C^N)$. By Theorem §C3.6.5, 2,
 >
@@ -355,41 +418,41 @@ The course's little group of a standard momentum, with its Wigner element, is ph
 > e^{iq\cdot a}\sum_\sigma D_{\sigma'\sigma}\bigl(W_{\rm C3}(\Lambda, \Lambda^{-1}q)\bigr)\,\psi_\sigma(\Lambda^{-1}q), \qquad W_{\rm C3}(\Lambda, \Lambda^{-1}q) = V(q)^{-1}\Lambda V(\Lambda^{-1}q) = W(\Lambda, q) ,
 > $$
 >
-> which is Def. §CB.21.9 with $(a, h) = (a, \Lambda)$: both mean $x \mapsto \Lambda x + a$ (Def. §CB.21.3, [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|Principle §C3.4.1]]), and the phase $e^{+iq\cdot a}$ is the course's sign.
+> which is Def. §CB.21.11 with $(a, h) = (a, \Lambda)$: both mean $x \mapsto \Lambda x + a$ (Def. §CB.21.3, [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|Principle §C3.4.1]]), and the phase $e^{+iq\cdot a}$ is the course's sign.
 >
 > ⚑ By-product: the two Wigner elements differ in their second argument, $W_{\rm C3}(\Lambda, p) = W(\Lambda, \Lambda p)$: the course labels it by the momentum *before* the transformation (acting on states), this section by the momentum *after* (acting on functions).
 
 ^rem-cb-21-1
 
-> [!theorem] Theorem §CB.21.11: Irreducibility (Mackey)
-> The induced representation of [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-9|Def. §CB.21.9]] is irreducible if and only if $\sigma$ is irreducible; induced representations from different orbits, or from inequivalent $\sigma$, are inequivalent.
+> [!theorem] Theorem §CB.21.14: Irreducibility (Mackey)
+> The induced representation of [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-11|Def. §CB.21.11]] is irreducible if and only if $\sigma$ is irreducible; induced representations from different orbits, or from inequivalent $\sigma$, are inequivalent.
 >
 > *Source: Mackey's theorem for regular semidirect products with abelian normal subgroup, stated in L. M. Borasi, Review and concrete description of the irreducible unitary representations of the universal cover of the complexified Poincaré group, arXiv:2108.10726, Theorem 3.5 (https://arxiv.org/abs/2108.10726), which cites E. Kaniuth and K. F. Taylor, Induced Representations of Locally Compact Groups (Cambridge, 2013), Theorem 4.28, p. 168, for the proof · P. Woit, Quantum Theory, Groups and Representations, §20.4 (stated: "We did not show this, but this construction gives an irreducible representation …") (https://www.math.columbia.edu/~woit/QM/qmbook.pdf)*
 
-^thm-cb-21-11
+^thm-cb-21-14
 
 > [!proof]- Proof (to be filled)
 > *To be filled. The half "$\sigma$ reducible ⇒ $U$ reducible" is the argument of Step 6 of [[§C3.6★ Particle States and the Little Group#^der-c3-6-5|Derivation §C3.6.5]]: a closed $\sigma(H_k)$-invariant subspace $\mathcal K_0 \subset \mathcal K$ gives the closed $U$-invariant subspace $L^2(\mathcal O, \mu; \mathcal K_0)$, since $\sigma(W(h, p))$ maps $\mathcal K_0$ to itself. The converse and the inequivalence need the commutant of the multiplication operators $e^{ip\cdot a}$ (decomposable operators) and an ergodicity argument on $\mathcal O$, or Mackey's imprimitivity theorem; proof in E. Kaniuth and K. F. Taylor, Induced Representations of Locally Compact Groups (Cambridge, 2013), Theorem 4.28.*
 > <!-- searched: Woit qmbook §20.4, Ch. 42 (stated, not proved); Bekaert–Boulanger hep-th/0611263 §3.1 (Weinberg-style, no proof of irreducibility); Borasi arXiv:2108.10726 §3 (statement, cites Kaniuth–Taylor Thm 4.28); Rosenberg, C*-algebras and Mackey's theory of group representations (survey, no proof); Osborn DAMTP Group Theory notes §4.5 (construction only); the user's PHY 513 notes Ch. 7 §7.7 and Yu §3.3 (converse stated, not proved) — no freely available text with a complete proof found -->
 
-^pf-cb-21-11
+^pf-cb-21-14
 
-> [!theorem] Theorem §CB.21.12: Every Irreducible Unitary Representation Is Induced (Wigner–Mackey)
-> If the $H$-orbits on momenta are locally closed (true for the Lorentz group acting on $\mathbb R^{1,3}$), every irreducible unitary representation of $\mathbb R^n\rtimes H$ is equivalent to an induced representation (Def. §CB.21.9) from exactly one orbit $\mathcal O$ and one irreducible $\sigma$, up to equivalence. For $\mathbb R^{1,3}\rtimes SL(2, \mathbb C)$ this is Wigner's classification of particles by mass and spin or helicity.
+> [!theorem] Theorem §CB.21.15: Every Irreducible Unitary Representation Is Induced (Wigner–Mackey)
+> If the $H$-orbits on momenta are locally closed (true for the Lorentz group acting on $\mathbb R^{1,3}$), every irreducible unitary representation of $\mathbb R^n\rtimes H$ is equivalent to an induced representation (Def. §CB.21.11) from exactly one orbit $\mathcal O$ and one irreducible $\sigma$, up to equivalence. For $\mathbb R^{1,3}\rtimes SL(2, \mathbb C)$ this is Wigner's classification of particles by mass and spin or helicity.
 >
 > *Source: L. M. Borasi, Review and concrete description of the irreducible unitary representations of the universal cover of the complexified Poincaré group, arXiv:2108.10726, Theorem 3.5 with Definitions 3.2, 3.4 and Proposition 3.3 (a sufficient condition for "Mackey compatibility": the orbit space almost Hausdorff, $G/N$ σ-compact) (https://arxiv.org/abs/2108.10726), citing E. Kaniuth and K. F. Taylor, Induced Representations of Locally Compact Groups (Cambridge, 2013), Theorem 4.28, p. 168, Proposition 4.6, p. 155, Remark 4.26, p. 159 · P. Woit, Quantum Theory, Groups and Representations, §20.4, §42.2–§42.3 (the classification by orbits and little groups, stated) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the course: [[§C3.6★ Particle States and the Little Group#^pr-c3-6-1|Principle §C3.6.1]], [[§C3.6★ Particle States and the Little Group#^thm-c3-6-3|Theorem §C3.6.3]]*
 
-^thm-cb-21-12
+^thm-cb-21-15
 
 > [!proof]- Proof (to be filled)
 > *Stated only (beyond the course). The first step is [[§C3.6★ Particle States and the Little Group#^thm-c3-6-3|Theorem §C3.6.3]]: the joint spectral measure of the translations of an irreducible representation is carried by the orbits of one invariant set. The remaining steps — that measure is quasi-invariant and ergodic, hence concentrated on one orbit when the orbit space is regular, and the representation is induced from the stabilizer by Mackey's imprimitivity theorem — are proved in E. Kaniuth and K. F. Taylor, Induced Representations of Locally Compact Groups (Cambridge, 2013), Theorem 4.28 (with Proposition 4.6 for the orbit condition), as cited in Borasi, Theorem 3.5.*
 > <!-- searched: Woit qmbook §20.4, Ch. 42 (stated); Bekaert–Boulanger hep-th/0611263 (Weinberg's argument, no completeness proof); Borasi arXiv:2108.10726 (statement with precise reference); Rosenberg, C*-algebras and Mackey's theory (survey); Osborn DAMTP notes §4.5; the user's PHY 513 notes Ch. 7 §7.7, Yu §3.3 — no freely available text with a complete proof found -->
 
-^pf-cb-21-12
+^pf-cb-21-15
 
 The course's induced representation on one-particle states and its massless little group are physics: [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]], [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|Theorem §C3.7.1]].
 
 > [!remark]- Connections
-> - The semidirect structure is why momentum labels states first and spin second: translations form an abelian normal subgroup, so they can be diagonalized first (the infinite-dimensional counterpart of [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-6|Theorem §CB.7.6]], which is proved in CB for finite dimension only: the joint spectral decomposition of the commuting translations, the first step of the placeholder Theorem §CB.21.12, not proved in CB), and the Lorentz group only permutes their eigenvalues.
-> - The double cover of $ISO(2)$ in Theorem §CB.21.8 is why helicities of massless particles may be half-integers ([[§C3.7★ Massless Particles and Helicity#^thm-c3-7-6|Theorem §C3.7.6]]).
-> - **Used in**: Definition §CB.21.3 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (Mathematical background); Definition §CB.21.4 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (Mathematical background); Theorem §CB.21.5 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (cited in [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]]; Mathematical background); Definition §CB.21.6 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (Mathematical background); Definition §CB.21.7 — [[§C3.7★ Massless Particles and Helicity|§C3.7★]] (cited in [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|Theorem §C3.7.1]]; Mathematical background); Theorem §CB.21.8 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-7|Theorem §C3.6.7]]; Mathematical background), [[§C3.7★ Massless Particles and Helicity|§C3.7★]] (cited in [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|Theorem §C3.7.1]]; Mathematical background); Definition §CB.21.9 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]; Mathematical background); Theorem §CB.21.10 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]; Mathematical background); §CB.21, ★ Remark: The course's law as an induced representation — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]; Mathematical background); Theorem §CB.21.11 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]; Mathematical background); Theorem §CB.21.12 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]; Mathematical background).
+> - The semidirect structure is why momentum labels states first and spin second: translations form an abelian normal subgroup, so they can be diagonalized first (the infinite-dimensional counterpart of [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-6|Theorem §CB.7.6]], which is proved in CB for finite dimension only: the joint spectral decomposition of the commuting translations, the first step of the placeholder Theorem §CB.21.15, not proved in CB), and the Lorentz group only permutes their eigenvalues.
+> - The double cover of $ISO(2)$ in Theorem §CB.21.10 is why helicities of massless particles may be half-integers ([[§C3.7★ Massless Particles and Helicity#^thm-c3-7-6|Theorem §C3.7.6]]).
+> - **Used in**: Definition §CB.21.3 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (Mathematical background); Definition §CB.21.4 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (Mathematical background); Theorem §CB.21.5 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (cited in [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]]; Mathematical background); Definition §CB.21.6 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (Mathematical background); Definition §CB.21.9 — [[§C3.7★ Massless Particles and Helicity|§C3.7★]] (cited in [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|Theorem §C3.7.1]]; Mathematical background); Theorem §CB.21.10 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-7|Theorem §C3.6.7]]; Mathematical background), [[§C3.7★ Massless Particles and Helicity|§C3.7★]] (cited in [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|Theorem §C3.7.1]]; Mathematical background); Definition §CB.21.11 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]; Mathematical background); Theorem §CB.21.13 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]; Mathematical background); §CB.21, ★ Remark: The course's law as an induced representation — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]; Mathematical background); Theorem §CB.21.14 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]; Mathematical background); Theorem §CB.21.15 — [[§C3.6★ Particle States and the Little Group|§C3.6★]] (cited in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]; Mathematical background).

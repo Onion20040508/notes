@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Functional Analysis]]"
-chapter: 9
+chapter: 8
 section: 45
 tags: [functional-analysis, math556]
 ---
-← [[§44 Weak Sequential Compactness]] · ↑ [[· 9 Convergence of Operators and Transposes]] · [[§46 The Transpose]] →
+← [[§44 Weak Sequential Compactness]] · ↑ [[· 8 Weak Convergence]] · [[§46 The Transpose]] →
 
 *Stage: maps — Thread: functionals. Sequences of bounded linear maps converge uniformly, strongly or weakly; each mode implies the next, and even the weakest forces a uniform bound on the norms when the domain is complete.*
 

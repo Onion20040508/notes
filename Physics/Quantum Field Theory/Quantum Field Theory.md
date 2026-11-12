@@ -128,8 +128,8 @@ graph TD
   C6c -->|1| CA
   C1a -->|23| CB
   C1b -->|1| CB
-  C3 -->|47| CB
-  C5a -->|51| CB
+  C3 -->|48| CB
+  C5a -->|55| CB
   C5b -->|1| CB
   C9 -->|4| CB
   CA -->|2| CB

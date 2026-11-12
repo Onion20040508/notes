@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Functional Analysis]]"
-chapter: 9
+chapter: 8
 section: 46
 tags: [functional-analysis, math556]
 ---
-← [[§45 Convergence of Operators]] · ↑ [[· 9 Convergence of Operators and Transposes]] · [[§47 Bras, Kets, and the Riesz Map]] →
+← [[§45 Convergence of Operators]] · ↑ [[· 8 Weak Convergence]] · [[§47 Bras, Kets, and the Riesz Map]] →
 
 *Stage: maps — Thread: functionals. $\langle Mx, \ell \rangle = \langle x, M'\ell \rangle$ defines $M' : Y' \to X'$, with $\|M'\| = \|M\|$, $N(M') = R(M)^\perp$ and $(NM)' = M'N'$; weak convergence passes to transposes, strong convergence does not.*
 

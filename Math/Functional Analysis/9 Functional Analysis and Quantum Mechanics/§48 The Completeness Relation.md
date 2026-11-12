@@ -5,7 +5,7 @@ chapter: 9
 section: 48
 tags: [functional-analysis, math556, companion]
 ---
-← [[§47 Bras, Kets, and the Riesz Map]] · ↑ [[· 10 Functional Analysis and Quantum Mechanics]] · [[§49 Position Eigenstates and Continuous Resolutions]] →
+← [[§47 Bras, Kets, and the Riesz Map]] · ↑ [[· 9 Functional Analysis and Quantum Mechanics]] · [[§49 Position Eigenstates and Continuous Resolutions]] →
 
 *Companion — Threads: dimension, completeness. $\sum_n |e_n\rangle\langle e_n| = \mathbf{1}$ holds strongly, not in norm.*
 

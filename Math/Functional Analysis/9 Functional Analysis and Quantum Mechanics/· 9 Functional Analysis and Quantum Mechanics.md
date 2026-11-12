@@ -1,15 +1,15 @@
 ---
 type: chapter
 subject: "[[Functional Analysis]]"
-chapter: 10
+chapter: 9
 tags: [chapter, functional-analysis, companion]
 ---
-# 10 Functional Analysis and Quantum Mechanics
+# 9 Functional Analysis and Quantum Mechanics
 ↑ [[Functional Analysis]]
 
 This chapter is a companion to the course, not part of it: nothing here was covered in lecture. Its purpose is to translate the formalism of quantum mechanics — kets and bras, “inserting a complete set of states,” position eigenstates — into the results of the preceding chapters, and to say precisely which physics statements are theorems, which need reinterpretation, and which are false as usually stated. It is written to grow: each new part of the course (operators, adjoints, spectral theory) will add a section here.
 
-**Builds on:** [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (3), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (1), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (32), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (2), [[· 9 Convergence of Operators and Transposes|9 Convergence of Operators and Transposes]] (2)
+**Builds on:** [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (3), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (1), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (32), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (2), [[· 8 Weak Convergence|8 Weak Convergence]] (2)
 **Used by:** —
 **Builds on (other subjects):** [[Linear Algebra]] (1), [[Measure Theory]] (3)
 

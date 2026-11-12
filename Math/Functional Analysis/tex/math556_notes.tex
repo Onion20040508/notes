@@ -9820,7 +9820,7 @@ In numerical analysis the three conditions have names. $M_n x \to Mx$ for every 
 \chapter{Weak Convergence}\label{ch:weak}
 %% >>> ADDED: chapter introduction (Claude)
 
-In finite dimensions every bounded sequence has a convergent subsequence; in infinite dimensions this fails (Theorem~\ref{thm:ball-noncompact}). This chapter weakens the notion of convergence, testing a sequence only against bounded linear functionals, to recover some of the compactness that is lost. The price is that weak limits are less well behaved: they need not respect norms or products. \S\ref{sec:weak-compact} collects the gain: bounded sequences have weak-$*$ convergent subsequences in the dual of a separable space and weakly convergent subsequences in a reflexive space, and closed convex sets in a reflexive space have closest points.
+In finite dimensions every bounded sequence has a convergent subsequence; in infinite dimensions this fails (Theorem~\ref{thm:ball-noncompact}). This chapter weakens the notion of convergence, testing a sequence only against bounded linear functionals, to recover some of the compactness that is lost. The price is that weak limits are less well behaved: they need not respect norms or products. \S\ref{sec:weak-compact} collects the gain: bounded sequences have weak-$*$ convergent subsequences in the dual of a separable space and weakly convergent subsequences in a reflexive space, and closed convex sets in a reflexive space have closest points. \S\ref{sec:op-convergence} carries the modes of convergence over to sequences of operators, and \S\ref{sec:transpose} introduces the transpose of a bounded map, which respects weak convergence of operators but not strong convergence.
 
 %% <<< END ADDED
 
@@ -10769,16 +10769,6 @@ With the previous step, $\inf_{y \in K} \|y\| = 1$.
 \end{proof}
 
 % ============================================================================
-% CHAPTER 9: CONVERGENCE OF OPERATORS AND TRANSPOSES (Lectures 19--20)
-% ============================================================================
-
-\chapter{Convergence of Operators and Transposes}\label{ch:transpose}
-
-%% >>> ADDED: chapter introduction (Claude)
-Bounded linear maps $A_n \in \mathcal{L}(X, Y)$ converge in three senses, according to how much of the structure is used to test them: in the operator norm (uniformly), at each vector (strongly), or at each vector tested by functionals (weakly); \S\ref{sec:op-convergence} compares them. The transpose $M' : Y' \to X'$ of $M \in \mathcal{L}(X, Y)$ (\S\ref{sec:transpose}) is the infinite-dimensional version of the transpose of a matrix, with the dual pairing in place of the dot product. It has the same norm as $M$, its null space is the annihilator of the range of $M$, and it respects weak convergence of operators but not strong convergence.
-%% <<< END ADDED
-
-% ============================================================================
 % SECTION: CONVERGENCE OF OPERATORS (Lecture 19, end)
 % ============================================================================
 
@@ -11621,7 +11611,7 @@ Since this holds for all $x \in X$, $(NM)'\ell = M'(N'\ell)$; since it holds for
 \end{proof}
 
 % ============================================================================
-% CHAPTER 10: FUNCTIONAL ANALYSIS AND QUANTUM MECHANICS
+% CHAPTER 9: FUNCTIONAL ANALYSIS AND QUANTUM MECHANICS
 % ============================================================================
 % Companion chapter, not lecture material. Started after Lecture 8 (2026-09-24);
 % to be extended as the course covers operators, adjoints, and spectral theory.

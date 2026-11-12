@@ -5,7 +5,7 @@ chapter: 9
 section: 47
 tags: [functional-analysis, math556, companion]
 ---
-← [[§46 The Transpose]] · ↑ [[· 10 Functional Analysis and Quantum Mechanics]] · [[§48 The Completeness Relation]] →
+← [[§46 The Transpose]] · ↑ [[· 9 Functional Analysis and Quantum Mechanics]] · [[§48 The Completeness Relation]] →
 
 *Companion — Thread: functionals. Bras as elements of the dual space.*
 

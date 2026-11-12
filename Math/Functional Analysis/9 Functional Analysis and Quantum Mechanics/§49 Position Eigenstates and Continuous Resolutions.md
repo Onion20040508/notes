@@ -5,7 +5,7 @@ chapter: 9
 section: 49
 tags: [functional-analysis, math556, companion]
 ---
-← [[§48 The Completeness Relation]] · ↑ [[· 10 Functional Analysis and Quantum Mechanics]] · [[§50 Bound States Need Not Be Complete꞉ Hydrogen]] →
+← [[§48 The Completeness Relation]] · ↑ [[· 9 Functional Analysis and Quantum Mechanics]] · [[§50 Bound States Need Not Be Complete꞉ Hydrogen]] →
 
 *Companion — Thread: dimension. Why $|x\rangle$ is not a vector, and what $\int |x\rangle\langle x|\,dx$ means.*
 
