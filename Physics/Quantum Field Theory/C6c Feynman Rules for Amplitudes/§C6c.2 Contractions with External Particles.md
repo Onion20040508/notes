@@ -201,7 +201,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > **What the derivation shows.**
 > - The $n!$ belongs to the identical fields; at a vertex it cancels the $\frac{1}{4!}$ of $\phi^4$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-4|Theorem §C6c.4.4]]); when legs close on each other fewer assignments are distinct and the symmetry factor is left over ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]]).
-> - Several kinds of particles: one such sum per kind, since a particle attaches only to a field of its kind ([[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]]; the count per kind is Step 3 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]]).
+> - Several kinds of particles: one such sum per kind, since a particle attaches only to a field of its kind ([[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]]; the count per kind is Step 3 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]]).
 
 ^der-c6c-2-3
 
@@ -222,7 +222,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > \int d^4x\;e^{i(\sum_jp_j - \sum_ik_i)\cdot x} = (2\pi)^4\delta^4\Bigl(\sum_ik_i - \sum_jp_j\Bigr) ,
 > $$
 >
-> and an internal line ending at $x$ adds its momentum to the balance ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]], 1): four-momentum is conserved at every vertex.
+> and an internal line ending at $x$ adds its momentum to the balance ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]], 1): four-momentum is conserved at every vertex.
 > 3. For a complex field ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]]) particle and antiparticle carry the same phases, $e^{-ip\cdot x}$ in and $e^{+ip\cdot x}$ out; they differ only in which of $\hat\phi$, $\hat\phi^\dagger$ they contract with ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 3).
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]; *applies:* free fields and free relativistic states, exact, independent of the dynamics; the vertex integral as an identity of tempered distributions ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]).
@@ -242,7 +242,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > **Step 3** (part 2, the vertex integral). With $q = \sum_jp_j - \sum_ik_i$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] gives $\int d^4x\,e^{iq\cdot x} = (2\pi)^4\delta^4(q)$, and $\delta^4(q) = \delta^4(-q)$ (the delta is even) gives the stated form.
 >
-> **Step 4** (part 2, internal lines). An internal line from $x$ to $y$ is $D_F(x - y) = \int\frac{d^4\ell}{(2\pi)^4}\tilde D_F(\ell)\,e^{-i\ell\cdot(x - y)}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]): at $x$ it contributes $e^{-i\ell\cdot x}$, the same form as an incoming particle of momentum $\ell$ (and $e^{+i\ell\cdot y}$ at $y$, outgoing). The integral over $x$ becomes $(2\pi)^4\delta^4(\sum_ik_i + \sum_{\rm lines\ in}\ell - \sum_jp_j - \sum_{\rm lines\ out}\ell)$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]], 1).
+> **Step 4** (part 2, internal lines). An internal line from $x$ to $y$ is $D_F(x - y) = \int\frac{d^4\ell}{(2\pi)^4}\tilde D_F(\ell)\,e^{-i\ell\cdot(x - y)}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]): at $x$ it contributes $e^{-i\ell\cdot x}$, the same form as an incoming particle of momentum $\ell$ (and $e^{+i\ell\cdot y}$ at $y$, outgoing). The integral over $x$ becomes $(2\pi)^4\delta^4(\sum_ik_i + \sum_{\rm lines\ in}\ell - \sum_jp_j - \sum_{\rm lines\ out}\ell)$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]], 1).
 >
 > **Step 5** (part 3). [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 3: $\overbracket{\hat\phi(x)|\mathbf p^+\rangle} = \overbracket{\hat\phi^\dagger(x)|\mathbf p^-\rangle} = e^{-ip\cdot x}$ and $\overbracket{\langle\mathbf p^+|\hat\phi^\dagger(x)} = \overbracket{\langle\mathbf p^-|\hat\phi(x)} = e^{+ip\cdot x}$; the other four combinations vanish.
 >
@@ -251,7 +251,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 
 ^der-c6c-2-4
 
-*Uses:* [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]]
+*Uses:* [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]]
 
 > [!remark] Remark: Yu's route
 > Yu computes $S$-matrix elements this way before any correlation function: he defines the contractions of each field with initial and final particles (eqs. (7.13)–(7.18)), lists all first-order $T$-matrix elements of Yukawa theory and filters them kinematically (p. 272), reads the position- and then momentum-space rules off the results (eqs. (7.25)–(7.28), §7.2; this chapter follows the same order, [[§C6c.2 Contractions with External Particles|§C6c.2]]–[[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]]), and justifies them only in ch. 10 through LSZ ("our method for leading-order processes in chapters 7, 8, 9 is justified", p. 474). He keeps the field operators in the order of $\mathcal L_{\rm int}$ to fix fermion signs (boxed rule, p. 268; in the vault's form, crossing contractions: [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4|§C6d.3, Theorem §C6d.3.4]]); for scalars there are no signs. Yukawa theory with these rules: [[· C6d Feynman Rules for Fermions|C6d]]. The course stated the amputation rule from correlation functions at the end of Lecture 15 ([[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]]) and then took Yu's direct route in Lecture 16, for $2 \to 2$ in $\phi^4$; the two routes agree at lowest order ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]).

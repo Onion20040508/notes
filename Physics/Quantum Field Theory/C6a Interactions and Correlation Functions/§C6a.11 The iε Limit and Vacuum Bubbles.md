@@ -7,11 +7,11 @@ section: C6a.11
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6a.10 Feynman Rules in Momentum Space]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.12 Feynman Rules for Polynomial Interactions]] →
+← [[§C6a.10 Feynman Rules in Momentum Space]] · ↑ [[· C6a Interactions and Correlation Functions]] · [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density]] →
 
-*Sources: the user's PHY 513 notes, Ch. 14 §14.7 (Derivation "Fine point 1: the $T \to \infty(1 - i\epsilon)$ limit is the Feynman prescription", Figure "tilt", paragraph "What the denominator is", Principle "Vacuum bubbles cancel", Derivation "The factorization at second order (filled in)", paragraph "Why the bubbles had to go", Caution "'Connected' means attached to an external point"), §14.8 (Principle "From the master formula to Feynman diagrams") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part C, slides 23–26, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 95–99, eqs. (4.48)–(4.57) · Yu Zhao-Huan, 量子场论讲义, §10.4, eqs. (10.176)–(10.181); §10.5.1, eqs. (10.192)–(10.197), (10.209) · PHY 513, Problem Set 8, Problem 3(c) (exponentiation of a vacuum series).*
+*Sources: the user's PHY 513 notes, Ch. 14 §14.7 (Derivation "Fine point 1: the $T \to \infty(1 - i\epsilon)$ limit is the Feynman prescription", Figure "tilt", paragraph "What the denominator is", Principle "Vacuum bubbles cancel", Derivation "The factorization at second order (filled in)", paragraph "Why the bubbles had to go", Caution "'Connected' means attached to an external point"), §14.8 (Principle "From the master formula to Feynman diagrams") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part C, slides 23–26, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 95–99, eqs. (4.48)–(4.57) · Yu Zhao-Huan, 量子场论讲义, §10.4, eqs. (10.176)–(10.181); §10.5.1, eqs. (10.192)–(10.197), (10.209).*
 
-The rules of [[§C6a.8 Position-Space Feynman Rules|§C6a.8]] and [[§C6a.10 Feynman Rules in Momentum Space|§C6a.10]] were derived for the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]) as if its time integrals ran over the real line and as if there were no denominator. What happened to the limit and to the denominator? These are the two fine points of Part C. The limit $T \to \infty(1 - i\varepsilon)$ tilts every vertex time slightly below the real axis; keeping the vertex integrals well defined forces every energy to be integrated slightly above it, which is the Feynman prescription already built into $D_F$. The denominator is the sum of the diagrams with no external points, the vacuum bubbles, each proportional to the volume of spacetime; the numerator factorizes into the diagrams attached to the external points times the same sum, so the bubbles cancel: the interacting correlator is the sum of the diagrams attached to the external points. Yu has no $T(1 - i\varepsilon)$ limit: his correlation functions are built from asymptotic in-fields with a phase normalization $\mathcal N$ (eqs. (10.177)–(10.181)). His cancellation of the bubbles, eqs. (10.193)–(10.197), splits the contractions binomially, and that is the proof written here. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
+The rules of [[§C6a.8 Position-Space Feynman Rules|§C6a.8]] and [[§C6a.10 Feynman Rules in Momentum Space|§C6a.10]] were derived for the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]) as if its time integrals ran over the real line and as if there were no denominator. What happened to the limit and to the denominator? These are the two fine points of Part C. The limit $T \to \infty(1 - i\varepsilon)$ tilts every vertex time slightly below the real axis; keeping the vertex integrals well defined forces every energy to be integrated slightly above it, which is the Feynman prescription already built into $D_F$. The denominator is the sum of the diagrams with no external points, the vacuum bubbles, each proportional to the volume of spacetime; the numerator factorizes into the diagrams attached to the external points times the same sum, so the bubbles cancel: the interacting correlator is the sum of the diagrams attached to the external points. What the cancelled bubbles are, the exponential of the connected ones and the energy density of the interacting vacuum, is [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density|§C6a.12]]. Yu has no $T(1 - i\varepsilon)$ limit: his correlation functions are built from asymptotic in-fields with a phase normalization $\mathcal N$ (eqs. (10.177)–(10.181)). His cancellation of the bubbles, eqs. (10.193)–(10.197), splits the contractions binomially, and that is the proof written here. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]; numerator and denominator are formal power series in $\lambda$; $V$ is the volume of space and $2T$ the length of the time interval, both taken finite and then large (a box, [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]); $E_0$ is the ground-state energy of $\hat H$ measured from $\hat H_0|0\rangle = 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]]; not the zero-point energy, [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^cau-c6a-4-1|§C6a.4, Caution: Two E₀'s]]).
 
@@ -150,13 +150,13 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 ^thm-c6a-11-2
 
 > [!derivation]- Derivation
-> **Step 1** (no external points). Steps 1–8 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] used nothing about $r$; with $E = \varnothing$ they give
+> **Step 1** (no external points). Steps 1–8 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] used nothing about $n_{\rm ext}$; with $E = \varnothing$ they give
 >
 > $$
 > \langle0|T\Bigl\{e^{-i\int_{-T}^Tdt\,\hat H_I}\Bigr\}|0\rangle = \sum_{n\ge0}\frac{1}{n!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^n\int d^4z_1\cdots d^4z_n\,\langle0|T\{\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|0\rangle = \sum_{n\ge0}\;\sum_{D:\,E=\varnothing,\ n\text{ vertices}}\frac{(-i\lambda)^n}{S(D)}\int d^4z_1\cdots d^4z_n\prod_{\text{lines of }D}D_F ,
 > $$
 >
-> the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] with $r = 0$.
+> the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] with $n_{\rm ext} = 0$.
 >
 > **Step 2** (order zero). The $n = 0$ term of the time-ordered exponential is $\mathbf 1$, and $\langle0|\mathbf 1|0\rangle = \langle0|0\rangle = 1$: the empty diagram.
 >
@@ -175,7 +175,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > **Step 1** (first order). Wick's theorem for the four factors of $\hat\phi_I(z_1)^4$: the $1 + 6$ terms with a normal-ordered remainder vanish in the vacuum and the $3!! = 3$ complete contractions survive ([[§C6a.7 Feynman Diagrams for Correlation Functions#^cau-c6a-7-3|§C6a.7, Caution: Numerator, not yet the interacting correlator]]):
 >
 > $$
-> \langle0|T\{\hat\phi_{(1,1)}\hat\phi_{(1,2)}\hat\phi_{(1,3)}\hat\phi_{(1,4)}\}|0\rangle = \overbracket{\hat\phi_{(1,1)}\hat\phi_{(1,2)}}\,\overbracket{\hat\phi_{(1,3)}\hat\phi_{(1,4)}} + \overbracket{\hat\phi_{(1,1)}\hat\phi_{(1,3)}}\,\overbracket{\hat\phi_{(1,2)}\hat\phi_{(1,4)}} + \overbracket{\hat\phi_{(1,1)}\hat\phi_{(1,4)}}\,\overbracket{\hat\phi_{(1,2)}\hat\phi_{(1,3)}} = 3\,D_{11}^2 ,
+> \langle0|T\{\hat\phi_{(1,1)}\hat\phi_{(1,2)}\hat\phi_{(1,3)}\hat\phi_{(1,4)}\}|0\rangle = \underbrace{D_{11}^2}_{\{(1,1), (1,2)\}\,\{(1,3), (1,4)\}} + \underbrace{D_{11}^2}_{\{(1,1), (1,3)\}\,\{(1,2), (1,4)\}} + \underbrace{D_{11}^2}_{\{(1,1), (1,4)\}\,\{(1,2), (1,3)\}} = 3\,D_{11}^2 ,
 > $$
 >
 > $$
@@ -310,9 +310,9 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 >
 > Both are infinite twice over, through $V$ and through $D_F(0)$ ([[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-3|Theorem §C6a.10.3]]); the computation shows what the bubbles are: the energy of the interacting vacuum relative to $|0\rangle$, the quantity the denominator was introduced to divide out.
 >
-> The term $\frac18(\text{figure-eight}) = V_1$ is the start of $e^{V_1}$; to all orders the denominator is $\exp(\sum_iV_i)$ and $E_0/V = i\sum_ib_{V_i}$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-6|Theorem §C6a.11.6]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-7|Theorem §C6a.11.7]]).
+> The term $\frac18(\text{figure-eight}) = V_1$ is the start of $e^{V_1}$; to all orders the denominator is $\exp(\sum_iV_i)$ and $E_0/V = i\sum_ib_{V_i}$ ([[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-1|Theorem §C6a.12.1]], [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-2|Theorem §C6a.12.2]]).
 >
-> *Source: written here, from [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]] and PS §4.4, eq. (4.49) · the identification at all orders, PS eqs. (4.55)–(4.56), is Theorem §C6a.11.7*
+> *Source: written here, from [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]] and PS §4.4, eq. (4.49) · the identification at all orders, PS eqs. (4.55)–(4.56), is Theorem §C6a.12.2*
 
 ^ex-c6a-11-2
 
@@ -320,7 +320,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > As formal power series in $\lambda$,
 >
 > $$
-> \langle0|T\Bigl\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\,e^{-i\int_{-T}^Tdt\,\hat H_I}\Bigr\}|0\rangle = \Bigl(\sum\text{diagrams attached to } x_1, \dots, x_r\Bigr)\times\langle0|T\Bigl\{e^{-i\int_{-T}^Tdt\,\hat H_I}\Bigr\}|0\rangle ,
+> \langle0|T\Bigl\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})\,e^{-i\int_{-T}^Tdt\,\hat H_I}\Bigr\}|0\rangle = \Bigl(\sum\text{diagrams attached to } x_1, \dots, x_{n_{\rm ext}}\Bigr)\times\langle0|T\Bigl\{e^{-i\int_{-T}^Tdt\,\hat H_I}\Bigr\}|0\rangle ,
 > $$
 >
 > the first factor the sum, by the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]], of the diagrams attached to the external points ([[§C6a.11 The iε Limit and Vacuum Bubbles#^def-c6a-11-2|Def. §C6a.11.2]]), the second the sum of the vacuum diagrams ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]).
@@ -332,7 +332,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 ^thm-c6a-11-4
 
 > [!derivation]- Derivation
-> **Step 1** (the numerator as a sum over pairings). By Steps 1–4 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] (Wick's theorem; every term with a normal-ordered remainder vanishes in the vacuum), with $t = -\frac{i\lambda}{4!}$ and $E = \{x_1, \dots, x_r\}$,
+> **Step 1** (the numerator as a sum over pairings). By Steps 1–4 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] (Wick's theorem; every term with a normal-ordered remainder vanishes in the vacuum), with $t = -\frac{i\lambda}{4!}$ and $E = \{x_1, \dots, x_{n_{\rm ext}}\}$,
 >
 > $$
 > \mathcal N_E = \sum_{k\ge0}\frac{t^k}{k!}\sum_{P\in\mathcal P(X_{E,k})}f_k(P), \qquad f_k(P) = \int d^4z_1\cdots d^4z_k\,w(P), \qquad w(P) = \prod_{\{h,h'\}\in P}D_F\bigl(\mathrm{pt}(h) - \mathrm{pt}(h')\bigr) .
@@ -369,7 +369,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > **Step 5** (identify the factors). The second factor is Step 1 with $E = \varnothing$, the denominator $\mathcal N_\varnothing$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]; Yu eq. (10.196)). In the first, attachment is a property of the drawing ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]]), so the attached pairings are a union of orbits, and Steps 5–8 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] turn $\frac{t^i}{i!}\sum_Qa_i(Q)$ into the sum of the attached diagrams with $i$ vertices, each with $(-i\lambda)^i/S$.
 >
 > **Step 6** (check at first order, $E = \{x, y\}$). The 15 pairings of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]], Step 4, split by $A$:
-> - $A = \varnothing$: the 12 of class (b), $\overbracket{\hat\phi_x\hat\phi_{z_a}}\,\overbracket{\hat\phi_y\hat\phi_{z_b}}\,\overbracket{\hat\phi_{z_c}\hat\phi_{z_d}}$, attached, $f_1 = a_1 = \int d^4z\,D_F(x - z)D_F(y - z)D_F(0)$;
+> - $A = \varnothing$: the 12 of class (b), $\{x, z_a\}\,\{y, z_b\}\,\{z_c, z_d\}$, attached, $f_1 = a_1 = \int d^4z\,D_F(x - z)D_F(y - z)D_F(0)$;
 > - $A = \{1\}$: the 3 of class (a), $P_{\rm att} = \{\{x, y\}\}$ and $P_{\rm vac}$ one of the three pairings of the legs, $f_1 = a_0\,b_1 = D_F(x - y)\cdot\int d^4z\,D_F(0)^2$.
 >
 > With $\alpha_0 = D_F(x - y)$, $\alpha_1 = 12\,a_1$, $\beta_0 = 1$, $\beta_1 = 3\,b_1$,
@@ -401,7 +401,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 >
 > an identity of formal power series in $\lambda$ (each $V_i$ is $O(\lambda)$, so each order receives finitely many terms).
 >
-> **Step 3** (the denominator, PS p. 98). With no external points the attached piece is empty (value 1), and Step 2 reads $\langle0|T\{e^{-i\int\hat H_I}\}|0\rangle = \exp(\sum_iV_i)$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-6|Theorem §C6a.11.6]] below). Dividing Step 2 by it gives [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]] and [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]].
+> **Step 3** (the denominator, PS p. 98). With no external points the attached piece is empty (value 1), and Step 2 reads $\langle0|T\{e^{-i\int\hat H_I}\}|0\rangle = \exp(\sum_iV_i)$ ([[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-1|Theorem §C6a.12.1]]). Dividing Step 2 by it gives [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]] and [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]].
 >
 > **Step 4** (check at second order, $E = \{x, y\}$). The terms of order $\lambda^2$ of $(D_F(x - y) + C_1 + C_2)(1 + V_1 + V_2^{\rm conn} + \frac12V_1^2)$, with $V_2^{\rm conn} = \frac1{16}(\text{dumbbell}) + \frac1{48}(\text{melon})$, are $C_2 + C_1V_1 + D_F(x - y)\bigl(V_2^{\rm conn} + \frac12V_1^2\bigr)$, and $\frac12\bigl(\frac18\bigr)^2 = \frac1{128}$ is the coefficient of two figure-eights ([[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-3|Example §C6a.11.3]]).
 >
@@ -419,7 +419,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > In $\phi^4$ theory, to every order in $\lambda$,
 >
 > $$
-> \langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_r)\}|\Omega\rangle = \sum\bigl(\text{diagrams attached to } x_1, \dots, x_r\bigr) ,
+> \langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_{n_{\rm ext}})\}|\Omega\rangle = \sum\bigl(\text{diagrams attached to } x_1, \dots, x_{n_{\rm ext}}\bigr) ,
 > $$
 >
 > by the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] (or [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]): only the diagrams in which every piece is attached to an external point are drawn. "Simplify: only draw diagrams connected to external lines."
@@ -434,13 +434,13 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > **Step 1** (the master formula). By [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]], with the limit understood as in [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|Theorem §C6a.11.1]],
 >
 > $$
-> \langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_r)\}|\Omega\rangle = \lim\frac{\mathcal N_E}{\mathcal N_\varnothing} .
+> \langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_{n_{\rm ext}})\}|\Omega\rangle = \lim\frac{\mathcal N_E}{\mathcal N_\varnothing} .
 > $$
 >
 > **Step 2** (divide). By [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]], $\mathcal N_E = C_E\,\mathcal N_\varnothing$ with $C_E$ the sum of the attached diagrams. The denominator has constant term 1 ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]), $\mathcal N_\varnothing = 1 + u$ with $u = O(\lambda)$, so it is invertible as a formal power series, $\mathcal N_\varnothing^{-1} = \sum_{k\ge0}(-u)^k$, and
 >
 > $$
-> \frac{\mathcal N_E}{\mathcal N_\varnothing} = C_E\,\mathcal N_\varnothing\,\mathcal N_\varnothing^{-1} = C_E = \sum\bigl(\text{diagrams attached to } x_1, \dots, x_r\bigr) .
+> \frac{\mathcal N_E}{\mathcal N_\varnothing} = C_E\,\mathcal N_\varnothing\,\mathcal N_\varnothing^{-1} = C_E = \sum\bigl(\text{diagrams attached to } x_1, \dots, x_{n_{\rm ext}}\bigr) .
 > $$
 >
 > ⚑ By-product: every vacuum bubble contains $2T\cdot V$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]); the attached diagrams contain no such factor (each vertex is tied by propagators to fixed points). The infinities of numerator and denominator cancel exactly.
@@ -470,7 +470,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > *Tadpole and figure-eight* (a tadpole at one vertex $z_v$, a figure-eight at the other, $z_w$). The contractions are
 >
 > $$
-> \overbracket{\hat\phi_x\hat\phi_{(v,a)}}\,\overbracket{\hat\phi_y\hat\phi_{(v,b)}}\,\overbracket{\hat\phi_{(v,c)}\hat\phi_{(v,d)}}\,\overbracket{\hat\phi_{(w,e)}\hat\phi_{(w,f)}}\,\overbracket{\hat\phi_{(w,g)}\hat\phi_{(w,h)}} = D_F(x - z_v)D_F(y - z_v)D_F(0)\cdot D_F(0)^2,
+> \{x, (v,a)\}\,\{y, (v,b)\}\,\{(v,c), (v,d)\}\,\{(w,e), (w,f)\}\,\{(w,g), (w,h)\} \;\longmapsto\; D_F(x - z_v)D_F(y - z_v)D_F(0)\cdot D_F(0)^2,
 > $$
 >
 > with $v \in \{1, 2\}$ (2), $(a, b)$ ordered distinct legs of $v$ (12), $\{c, d\}$ the rest, and $\{\{e,f\},\{g,h\}\}$ one of the 3 pairings of the legs of $w$: $2\cdot12\cdot3 = 72$. The 36 with $v = 1$ and the 36 with $v = 2$ give the same integral after $z_1 \leftrightarrow z_2$, so
@@ -481,7 +481,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 >
 > since $\frac{72}{1152} = \frac{1}{16} = \frac12\cdot\frac18$. The $\frac{1}{2!}$ of the second-order expansion is compensated by the two choices $v \in \{1, 2\}$ (the binomial factor $C_2^1 = 2$ of Step 4 of [[§C6a.11 The iε Limit and Vacuum Bubbles#^der-c6a-11-4|Derivation §C6a.11.4]]); the symmetry factor $16 = 2\cdot8$ is the product of the two pieces'.
 >
-> *A free line times a second-order bubble.* The contractions are $\overbracket{\hat\phi_x\hat\phi_y}$ times a complete contraction of the eight legs: $24 + 72 + 9 = 105$ ([[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-3|Example §C6a.9.3]]), and with $D_{vw} = D_F(z_v - z_w)$
+> *A free line times a second-order bubble.* The contractions are the pair $\{x, y\}$, a factor $D_F(x - y)$, times a complete contraction of the eight legs: $24 + 72 + 9 = 105$ ([[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-3|Example §C6a.9.3]]), and with $D_{vw} = D_F(z_v - z_w)$
 >
 > $$
 > \frac{(-i\lambda)^2}{1152}\,D_F(x - y)\int d^4z_1\,d^4z_2\bigl[24\,D_{12}^4 + 72\,D_{11}D_{22}D_{12}^2 + 9\,D_{11}^2D_{22}^2\bigr] = D_F(x - y)\,V_2
@@ -489,7 +489,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 >
 > (Step 2 of [[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-1|Example §C6a.11.1]]): coefficients $\frac{1}{48}$, $\frac{1}{16}$, $\frac{1}{128}$.
 >
-> Two identical figure-eights come with $\frac{9}{1152} = \frac{1}{128} = \frac12\bigl(\frac18\bigr)^2$: the $\frac{1}{2!}$ of $\frac{1}{2!}V_1^2$, the start of $e^{V_1}$. In general the bubbles exponentiate ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-6|Theorem §C6a.11.6]]).
+> Two identical figure-eights come with $\frac{9}{1152} = \frac{1}{128} = \frac12\bigl(\frac18\bigr)^2$: the $\frac{1}{2!}$ of $\frac{1}{2!}V_1^2$, the start of $e^{V_1}$. In general the bubbles exponentiate ([[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-1|Theorem §C6a.12.1]]).
 >
 > "The symmetry factors are what make the factorization work."
 >
@@ -524,83 +524,6 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > *Source: PHY 513 Lecture 14, slide 25 (bottom) · the user's PHY 513 notes, Ch. 14 §14.6 (paragraph "The momentum-space two-point function") · Yu §10.5.1, eq. (10.209) (first two diagrams)*
 
 ^ex-c6a-11-4
-
-## The bubbles exponentiate; the vacuum energy density
-
-> [!theorem] Theorem §C6a.11.6: The Denominator Is the Exponential of the Connected Vacuum Bubbles
-> As formal power series in $\lambda$,
->
-> $$
-> \langle0|T\Bigl\{\exp\Bigl[-i\int_{-T}^Tdt\,\hat H_I(t)\Bigr]\Bigr\}|0\rangle = \exp\Bigl(\sum_iV_i\Bigr), \qquad V_i = \frac{(-i\lambda)^{n_i}}{S(V_i)}\int d^4z_1\cdots d^4z_{n_i}\prod_{\text{lines}}D_F ,
-> $$
->
-> the sum over the connected vacuum diagrams $V_i$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^def-c6a-11-1|Def. §C6a.11.1]]), each with its symmetry factor.
->
-> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; in $|0\rangle$.
->
-> *Source: PS §4.4, p. 98 (the denominator "is just" the exponential, eq. after (4.53)) · the user's PHY 513 notes, Ch. 14 §14.7 ("the bubbles exponentiate, $\sum$ bubbles $= \exp(\sum$ connected bubbles$)$") · PHY 513, Problem Set 8, Problem 3(c) (the same mechanism for a source)*
-
-^thm-c6a-11-6
-
-> [!derivation]- Derivation
-> **Step 1** (as a sum over vacuum diagrams). By [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]] (Step 1 of its derivation), with $w(P) = (-i)^n\int d^4z_1\cdots d^4z_n\prod_{\{h,h'\}\in P}D_F$ for $P \in \mathcal P(X_{\varnothing,n})$,
->
-> $$
-> \langle0|T\{e^{-i\int\hat H_I}\}|0\rangle = \sum_n\frac{\lambda^n}{n!\,(4!)^n}\sum_Pw(P) = \sum_D\frac{w(D)}{S(D)}\,\lambda^{n(D)}
-> $$
->
-> ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-7|Theorem §CA.7.7]]).
->
-> **Step 2** (hypotheses of the exponential formula). $w$ is constant on orbits (Step 5 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]) and multiplicative over components: no line joins two components, so the integrand is a product of one factor per component in disjoint sets of variables, and the integral factorizes (Fubini, formally as in Step 3 of [[§C6a.11 The iε Limit and Vacuum Bubbles#^der-c6a-11-4|Derivation §C6a.11.4]]); the powers $(-i)^n$ multiply since the vertex numbers add.
->
-> **Step 3** (apply). [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], 1, with $t = \lambda$: $\sum_D\frac{w(D)}{S(D)}\lambda^{n(D)} = \exp\bigl(\sum_C\frac{w(C)}{S(C)}\lambda^{n(C)}\bigr) = \exp\bigl(\sum_iV_i\bigr)$.
->
-> **Step 4** (check, [[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-1|Example §C6a.11.1]]). Through $\lambda^2$, $\exp(V_1 + V_2^{\rm conn} + \dots) = 1 + V_1 + \bigl(V_2^{\rm conn} + \frac12V_1^2\bigr) + O(\lambda^3)$, with $V_2^{\rm conn} = \frac1{16}(\text{dumbbell}) + \frac1{48}(\text{melon})$ and $\frac12V_1^2 = \frac1{128}(\text{two figure-eights})$: Step 3 of that example.
-
-^der-c6a-11-6
-
-*Uses:* [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-7|Theorem §CA.7.7]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]]
-
-> [!theorem] Theorem §C6a.11.7: The Vacuum Energy Density
-> Write each connected vacuum diagram as $V_i = (2T\cdot V)\,b_{V_i}$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]). The ground-state energy of $\hat H$, measured from $\hat H_0|0\rangle = 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]]), is, as a formal series,
->
-> $$
-> \frac{E_0}{V} = i\sum_ib_{V_i} = i\,\frac{\sum_iV_i}{(2\pi)^4\delta^{(4)}(0)} ,
-> $$
->
-> independent of $T$ and of the volume: $E_0$ is proportional to the volume of space.
->
-> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; $E_0$ of $|\Omega\rangle$ above $|0\rangle$.
->
-> *Source: PS §4.4, p. 98, eqs. (4.55)–(4.56) · [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]]*
-
-^thm-c6a-11-7
-
-> [!derivation]- Derivation
-> **Step 1** (two expressions for the denominator). By [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], as $T \to \infty(1 - i\varepsilon)$, $\langle0|U(T, -T)|0\rangle \to e^{-iE_0(2T)}|\langle0|\Omega\rangle|^2$; by [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-6|Theorem §C6a.11.6]] and [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]],
->
-> $$
-> \exp\Bigl(\sum_iV_i\Bigr) = \exp\Bigl(2T\cdot V\sum_ib_{V_i}\Bigr) \;\propto\; e^{-iE_0(2T)} \qquad \text{(PS (4.55))} .
-> $$
->
-> **Step 2** (compare the $T$-dependence). Take logarithms (formal series with constant term 0 on the left): $2T\cdot V\sum_ib_{V_i} = -2iE_0T + \log|\langle0|\Omega\rangle|^2$. The left side is linear in $T$; the last term does not depend on $T$. Comparing the coefficients of $T$:
->
-> $$
-> 2V\sum_ib_{V_i} = -2iE_0 \quad\Longrightarrow\quad \frac{E_0}{V} = i\sum_ib_{V_i} = i\,\frac{\sum_iV_i}{2T\cdot V} ,
-> $$
->
-> and $2T\cdot V = (2\pi)^4\delta^{(4)}(0)$ in the box ([[§C6a.11 The iε Limit and Vacuum Bubbles#^der-c6a-11-3|Derivation §C6a.11.3]], Step 4): PS (4.56).
->
-> **Step 3** (first order). $V_1 = -\frac{i\lambda}{8}D_F(0)^2\cdot2T\cdot V$, so $b_{V_1} = -\frac{i\lambda}{8}D_F(0)^2$ and $E_0/V = i\cdot\bigl(-\frac{i\lambda}{8}D_F(0)^2\bigr) + O(\lambda^2) = \frac\lambda8D_F(0)^2 + O(\lambda^2)$: [[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-2|Example §C6a.11.2]], $\langle0|\hat H_{\rm int}|0\rangle/V$.
->
-> ⚑ By-product: $E_0 \propto V$, "reassuring" (PS p. 98): the vacuum energy is extensive, an energy density times the volume, like the zero-point energy ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]]); both are formal (UV divergent through $D_F(0)$ and loops).
->
-> **What the derivation shows.**
-> - The vacuum bubbles are not junk: their sum is $-iE_0\cdot2T$, the phase of the interacting vacuum, which is exactly why the denominator removes them.
-
-^der-c6a-11-7
-
-*Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-6|Theorem §C6a.11.6]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]
 
 > [!remark] Remark: Why the bubbles had to go
 > The denominator was there because $|0\rangle$ is the wrong vacuum: it fixes the normalization against the true one, $|\Omega\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]]). The bubbles are diagrams that know about the vacuum and nothing else, processes unrelated to the quantity being computed. To understand the true vacuum wave function one would have to analyse these diagrams ([[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-2|Example §C6a.11.2]] does it at first order), but that is not the question: the question concerns particles coming in and going out, not what the vacuum does on its own. The interacting vacuum is taken into account by not drawing them.
@@ -640,8 +563,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-2|Theorem §CA.8.2]] — and a sum over pairings with an exponential weight $\frac{t^k}{k!}$ factorizes accordingly.
 > - [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] — a delta function at zero momentum in a finite box is the volume.
 > - [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-1|Def. §CA.8.1]] — "attached" for labelled diagrams: every vertex joined by a path to an external point (Definition §C6a.11.2).
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]] — the exponential formula: the sum over all vacuum diagrams is the exponential of the sum over connected ones, and $n_i$ copies of a connected piece contribute $n_i!\,S(V_i)^{n_i}$ to the symmetry factor (Theorem §C6a.11.6; the second route of Derivation §C6a.11.4).
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-7|Theorem §CA.7.7]] — a sum over pairings of a weight constant on orbits, divided by $n!\,(4!)^n$, is the sum over diagrams with $\frac1S$ (Derivation §C6a.11.6).
+> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]] — the exponential formula: the sum over all vacuum diagrams is the exponential of the sum over connected ones, and $n_i$ copies of a connected piece contribute $n_i!\,S(V_i)^{n_i}$ to the symmetry factor (the second route of Derivation §C6a.11.4).
 > - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]] — a diagram is its drawing, so being attached is a property of the diagram and the attached pairings are a union of orbits (Derivation §C6a.11.4, Step 5).
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — the time integral of the plane waves at a vertex is an energy delta function, as the limit of box integrals (Derivation §C6a.11.1); shifting and renaming the vertex positions has unit Jacobian (Derivations §C6a.11.3 and §C6a.11.4).
 > - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]] — part 3, only the sign of the infinitesimal near the mass shell matters: the tilted energies give $p^2 - m^2 + i\varepsilon$ (Theorem §C6a.11.1).
@@ -650,6 +572,5 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > [!remark]- Connections
 > - The tilt of the times that projects onto the true vacuum is the same infinitesimal rotation that, finite, is the Wick rotation to Euclidean time; Euclidean correlators have no $i\varepsilon$ at all — [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]].
 > - Quantum mechanics switches perturbations on adiabatically with $e^{\varepsilon t}$; the same damping, in field theory, both selects the vacuum and fixes the propagator — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation|QM §C10.1]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|Theorem §CA.6.5]].
-> - Vacuum bubbles scale with the volume of spacetime like the zero-point energy with the volume of space; both are energies of the vacuum, one of the free and one of the interacting theory, measured from different zeros — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^cau-c6a-4-1|§C6a.4, Caution: Two E₀'s]].
 > - The factorization is a statement about sums over pairings with an exponential weight, proved in CA without physics — [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-2|Theorem §CA.8.2]].
 > - Correlation functions become scattering amplitudes through the LSZ reduction formula, which is also Yu's route to this section's results; at lowest order the rule is "strip off the external lines" — [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]], QFT C10 (planned), [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^rem-c6a-4-5|§C6a.4, Remark: Correspondence with Yu]].

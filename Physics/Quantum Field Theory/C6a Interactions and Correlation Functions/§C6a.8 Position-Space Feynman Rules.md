@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 At first order the 15 contractions collapsed into two diagrams with coefficients $\frac18$ and $\frac12$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]]). This section shows why that happens at every order. Relabelling the vertices and the four legs of each vertex is a group action on the contractions; contractions in one orbit give the same integral; the orbit has $n!\,(4!)^n/S$ elements by orbit–stabilizer, with $S$ the order of the diagram's symmetry group ([[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]]); and the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels everything but $1/S$. The combinatorics (half-edges, the relabelling group, orbits and stabilizers, the orbit count) is proved in CA, linked in the derivation and listed at the end; what the physics uses is stated in Def. §C6a.8.1 and Theorem §C6a.8.1: a diagram $D$ with $n$ vertices is produced by $n!\,(4!)^n/S(D)$ of the complete contractions, and two contractions give the same diagram exactly when their drawings (multigraphs with the external points labelled) agree ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]]). The result is a dictionary from diagrams to formulas, the Feynman rules in position space. Yu states the $\phi^4$ vertex rule in §7.3, eq. (7.120), for matrix elements $\langle f|iT|i\rangle$ of the $S$-operator rather than for correlation functions; the line rules there are those of §7.1. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
 
-*Conventions* ([[Larsen PHY 513]]): the numerator of the master formula for external points $E = \{x_1, \dots, x_r\}$ is $\mathcal N_E \equiv \langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\,e^{-i\int_{-T}^Tdt\,\hat H_I(t)}\}|0\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]); identities between such series are identities of formal power series in $\lambda$, each coefficient a (formal) integral; $S$ is the symmetry factor, not the $S$-matrix ([[§C6a.8 Position-Space Feynman Rules#^cau-c6a-8-1|Caution: Three S's]]).
+*Conventions* ([[Larsen PHY 513]]): the numerator of the master formula for external points $E = \{x_1, \dots, x_{n_{\rm ext}}\}$ ($E$ is the set, $n_{\rm ext}$ their number, [[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-2|Def. §C6a.7.2]]) is $\mathcal N_E \equiv \langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})\,e^{-i\int_{-T}^Tdt\,\hat H_I(t)}\}|0\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]); identities between such series are identities of formal power series in $\lambda$, each coefficient a (formal) integral; $S$ is the symmetry factor, not the $S$-matrix ([[§C6a.8 Position-Space Feynman Rules#^cau-c6a-8-1|Caution: Three S's]]).
 
 ## Symmetry factor and the coefficient of a diagram
 
@@ -40,10 +40,10 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 > The term of order $\lambda^n$ of the numerator $\mathcal N_E$ is
 >
 > $$
-> \frac{1}{n!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^n\int d^4z_1\cdots d^4z_n\;\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\,\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|0\rangle = \sum_D\frac{(-i\lambda)^n}{S(D)}\int d^4z_1\cdots d^4z_n\prod_{\text{lines of }D}D_F ,
+> \frac{1}{n!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^n\int d^4z_1\cdots d^4z_n\;\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})\,\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|0\rangle = \sum_D\frac{(-i\lambda)^n}{S(D)}\int d^4z_1\cdots d^4z_n\prod_{\text{lines of }D}D_F ,
 > $$
 >
-> the sum over the diagrams $D$ with the external points $x_1, \dots, x_r$ and $n$ vertices, $S(D)$ its symmetry factor ([[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]), and each line contributing $D_F$ of its two endpoints. Equivalently, $\frac1S = \frac{\text{number of complete contractions that produce }D}{n!\,(4!)^n}$.
+> the sum over the diagrams $D$ with the external points $x_1, \dots, x_{n_{\rm ext}}$ and $n$ vertices, $S(D)$ its symmetry factor ([[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]), and each line contributing $D_F$ of its two endpoints. Equivalently, $\frac1S = \frac{\text{number of complete contractions that produce }D}{n!\,(4!)^n}$.
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening: order $\lambda^n$ of the numerator, in $|0\rangle$.
 >
@@ -58,24 +58,24 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 > \frac{(-i)^n}{n!}\int dt_1\cdots dt_n\,T\{\hat H_I(t_1)\cdots\hat H_I(t_n)\} = \frac{(-i)^n}{n!}\Bigl(\frac{\lambda}{4!}\Bigr)^n\int dt_1d^3z_1\cdots dt_nd^3z_n\,T\{\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\} = \frac{1}{n!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^n\int d^4z_1\cdots d^4z_n\,T\{\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\} .
 > $$
 >
-> Multiplied by $\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)$ inside $T$ and taken between $\langle0|$ and $|0\rangle$, the integrals come out by linearity: this is the left side ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]] writes out $n = 2$).
+> Multiplied by $\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})$ inside $T$ and taken between $\langle0|$ and $|0\rangle$, the integrals come out by linearity: this is the left side ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]] writes out $n = 2$).
 >
-> **Step 2** (label the fields as half-edges). Write the four factors at $z_v$ as $\hat\phi_{(v,1)}\hat\phi_{(v,2)}\hat\phi_{(v,3)}\hat\phi_{(v,4)}$, $\hat\phi_{(v,a)} \equiv \hat\phi_I(z_v)$, and $\hat\phi_{x_i} \equiv \hat\phi_I(x_i)$. The fields are indexed by the half-edges $X_{E,n}$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]]), $N = r + 4n$ of them, and each half-edge has a point (the user's note calls the half-edges the "slots" $\mathcal M = E \sqcup L$ and $\mathrm{pt}$ the "point map" $v$):
+> **Step 2** (label the fields as half-edges). Write the four factors at $z_v$ as $\hat\phi_{(v,1)}\hat\phi_{(v,2)}\hat\phi_{(v,3)}\hat\phi_{(v,4)}$, $\hat\phi_{(v,a)} \equiv \hat\phi_I(z_v)$, and $\hat\phi_{x_i} \equiv \hat\phi_I(x_i)$. The fields are indexed by the half-edges $X_{E,n}$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]]), $N = n_{\rm ext} + 4n$ of them, and each half-edge has a point (the user's note calls the half-edges the "slots" $\mathcal M = E \sqcup L$ and $\mathrm{pt}$ the "point map" $v$):
 >
 > $$
 > \mathrm{pt}(x_i) = x_i, \qquad \mathrm{pt}\bigl((v, a)\bigr) = z_v .
 > $$
 >
-> **Step 3** (Wick's theorem: time order → normal order plus contractions). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], with $\overbracket{\hat\phi_h\hat\phi_{h'}} = D_F(\mathrm{pt}(h) - \mathrm{pt}(h'))$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]),
+> **Step 3** (Wick's theorem: time order → normal order plus contractions). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], with each contracted pair $\{h, h'\}$ replaced by $D_{hh'} \equiv D_F(\mathrm{pt}(h) - \mathrm{pt}(h'))$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]),
 >
 > $$
 > \begin{aligned}
-> T\Bigl\{\prod_{h\in X_{E,n}}\hat\phi_h\Bigr\} ={}& :\!\prod_{h}\hat\phi_h\!: + \sum_{\{h_1,h_2\}}\overbracket{\hat\phi_{h_1}\hat\phi_{h_2}}\;:\!\prod_{h\ne h_1,h_2}\hat\phi_h\!: + \sum_{\{h_1,h_2\},\{h_3,h_4\}}\overbracket{\hat\phi_{h_1}\hat\phi_{h_2}}\,\overbracket{\hat\phi_{h_3}\hat\phi_{h_4}}\;:\!\prod_{h\ne h_1,\dots,h_4}\hat\phi_h\!: + \cdots\\
-> &+ \sum_{P\in\mathcal P(X_{E,n})}\;\prod_{\{h,h'\}\in P}\overbracket{\hat\phi_h\hat\phi_{h'}} ,
+> T\Bigl\{\prod_{h\in X_{E,n}}\hat\phi_h\Bigr\} ={}& :\!\prod_{h}\hat\phi_h\!: + \sum_{\{h_1,h_2\}}D_{h_1h_2}\;:\!\prod_{h\ne h_1,h_2}\hat\phi_h\!: + \sum_{\{h_1,h_2\},\{h_3,h_4\}}D_{h_1h_2}\,D_{h_3h_4}\;:\!\prod_{h\ne h_1,\dots,h_4}\hat\phi_h\!: + \cdots\\
+> &+ \sum_{P\in\mathcal P(X_{E,n})}\;\prod_{\{h,h'\}\in P}D_{hh'} ,
 > \end{aligned}
 > $$
 >
-> the terms with $k$ brackets being $\binom{N}{2k}(2k - 1)!!$ in number ([[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]], by-product).
+> the terms with $k$ contracted pairs being $\binom{N}{2k}(2k - 1)!!$ in number ([[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]], by-product).
 >
 > **Step 4** (vacuum value: every remainder vanishes). Let $R \subseteq X_{E,n}$ be a nonempty remainder. By [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 1,
 >
@@ -166,7 +166,7 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 > Slide 17: "$\frac{1}{4!}$ largely cancels in combinatorics. It may not cancel entirely ⇒ multiply by $\frac1S$." If the four lines leaving the vertex each went to a different place, like $x$, $y$, $w$ and $u$, there would be no symmetry factor. In the tadpole two of the four legs go to $x$ and $y$, but the last two are joined to each other, and nothing distinguishes which end of their loop is which. Assign the four line-ends (to $x$, to $y$, loop end 1, loop end 2) to the legs $(a, b, c, d)$, a permutation of $(1, 2, 3, 4)$: $4! = 24$ assignments. Exchanging the two loop ends gives the same contraction,
 >
 > $$
-> (a, b, c, d) \mapsto \overbracket{\hat\phi_x\hat\phi_{z_a}}\,\overbracket{\hat\phi_y\hat\phi_{z_b}}\,\overbracket{\hat\phi_{z_c}\hat\phi_{z_d}} \;\longleftarrow\; (a, b, d, c),
+> (a, b, c, d) \mapsto \{x, z_a\}\,\{y, z_b\}\,\{z_c, z_d\} \;\longleftarrow\; (a, b, d, c),
 > $$
 >
 > so only $\frac{24}{2} = 12$ are different (rows (b) of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]]), and $\frac{12}{4!} = \frac12$.
@@ -184,7 +184,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 > \mathcal L = \tfrac12(\partial_\mu\phi)^2 - \tfrac12m^2\phi^2 - \frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4 ,
 > $$
 >
-> couplings of mass dimension $[g] = 1$, $[\lambda] = 0$ ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-2|Theorem §C6a.1.2]]); vertices $-ig$ and $-i\lambda$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]).
+> couplings of mass dimension $[g] = 1$, $[\lambda] = 0$ ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-2|Theorem §C6a.1.2]]); vertices $-ig$ and $-i\lambda$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]).
 >
 > *Assumptions:*
 > 1. Those of [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], assumptions 2–5 (permanent interaction, gapped unique $|\Omega\rangle$, isolated one-particle states, free Fock space as the interaction-picture space).
@@ -205,7 +205,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 > \mathcal L = \partial_\mu\phi^\dagger\,\partial^\mu\phi - m^2\phi^\dagger\phi - \frac{\lambda}{4}(\phi^\dagger\phi)^2 ;
 > $$
 >
-> particles and antiparticles of the same mass $m$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]]); vertex $-i\lambda$ with two $\phi$ and two $\phi^\dagger$ legs ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]); lines oriented from $\phi^\dagger$ to $\phi$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3).
+> particles and antiparticles of the same mass $m$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]]); vertex $-i\lambda$ with two $\phi$ and two $\phi^\dagger$ legs ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]); lines oriented from $\phi^\dagger$ to $\phi$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3).
 >
 > *Assumptions:*
 > 1. Those of [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], assumptions 2–5.
@@ -232,7 +232,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 >
 > "In every case … the inverse prefactor is $|G|$, diagrams are orbits, and $S = |G|/N = |\operatorname{Stab}(P)|$."
 >
-> The rules that follow, for any polynomial interaction of real and complex scalars (one line per field type, vertex factor $-ig_t\prod_km_{t,k}!$, $\frac1S$), are stated and derived in [[§C6a.12 Feynman Rules for Polynomial Interactions|§C6a.12]] ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]]).
+> The rules that follow, for any polynomial interaction of real and complex scalars (one line per field type, vertex factor $-ig_t\prod_km_{t,k}!$, $\frac1S$), are stated and derived in [[§C6a.13 Feynman Rules for Polynomial Interactions|§C6a.13]] ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-4|Theorem §C6a.13.4]]).
 >
 > *Source: the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §8, Remark "The same proof for other vertices" · PHY 513, Problem Set 8, Problems 1(b) and 2(c)*
 
@@ -242,10 +242,10 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 ## The rules
 
 > [!theorem] Theorem §C6a.8.4: Feynman Rules for Correlation Functions in Position Space
-> In $\phi^4$ theory the numerator of the master formula with external points $x_1, \dots, x_r$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) is, as a formal power series in $\lambda$,
+> In $\phi^4$ theory the numerator of the master formula with external points $x_1, \dots, x_{n_{\rm ext}}$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) is, as a formal power series in $\lambda$,
 >
 > $$
-> \langle0|T\Bigl\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\exp\Bigl[-i\int_{-T}^Tdt\,\hat H_I(t)\Bigr]\Bigr\}|0\rangle = \text{sum of all diagrams with } r \text{ external points and any number of vertices},
+> \langle0|T\Bigl\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})\exp\Bigl[-i\int_{-T}^Tdt\,\hat H_I(t)\Bigr]\Bigr\}|0\rangle = \text{sum of all diagrams with } n_{\rm ext} \text{ external points and any number of vertices},
 > $$
 >
 > each diagram ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-1|Def. §C6a.7.1]]; external points, [[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-2|Def. §C6a.7.2]]; vertices, [[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-3|Def. §C6a.7.3]]) being the product of:
@@ -269,16 +269,16 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 > **Step 1** (expand). By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]] and Step 1 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]],
 >
 > $$
-> \langle0|T\Bigl\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\,e^{-i\int_{-T}^Tdt\,\hat H_I}\Bigr\}|0\rangle = \sum_{n\ge0}\frac{1}{n!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^n\int d^4z_1\cdots d^4z_n\,\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\,\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|0\rangle .
+> \langle0|T\Bigl\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})\,e^{-i\int_{-T}^Tdt\,\hat H_I}\Bigr\}|0\rangle = \sum_{n\ge0}\frac{1}{n!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^n\int d^4z_1\cdots d^4z_n\,\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})\,\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|0\rangle .
 > $$
 >
 > **Step 2** (each order). By [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]] the order-$n$ term is a sum over the diagrams $D$ with $n$ vertices, and each term splits into the factors of the table:
 >
 > $$
-> \frac{(-i\lambda)^n}{S(D)}\int d^4z_1\cdots d^4z_n\prod_{\text{lines of }D}D_F = \frac{1}{S(D)}\;\underbrace{\prod_{v=1}^n\Bigl(-i\lambda\int d^4z_v\Bigr)}_{\text{vertices}}\;\underbrace{\prod_{\text{lines }\{a,b\}}D_F(a - b)}_{\text{lines}}\;\underbrace{\prod_{i=1}^r1}_{\text{external points}} ,
+> \frac{(-i\lambda)^n}{S(D)}\int d^4z_1\cdots d^4z_n\prod_{\text{lines of }D}D_F = \frac{1}{S(D)}\;\underbrace{\prod_{v=1}^n\Bigl(-i\lambda\int d^4z_v\Bigr)}_{\text{vertices}}\;\underbrace{\prod_{\text{lines }\{a,b\}}D_F(a - b)}_{\text{lines}}\;\underbrace{\prod_{i=1}^{n_{\rm ext}}1}_{\text{external points}} ,
 > $$
 >
-> the external points carrying no factor because they are not integrated. For $n = 0$ (no vertices) Steps 2–4 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] give $\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\}|0\rangle = \sum_{P\in\mathcal P(E)}\prod_{\{x_i,x_j\}\in P}D_F(x_i - x_j)$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]), and $G_0 = \{e\}$, so every diagram has $S = 1$.
+> the external points carrying no factor because they are not integrated. For $n = 0$ (no vertices) Steps 2–4 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] give $\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})\}|0\rangle = \sum_{P\in\mathcal P(E)}\prod_{\{x_i,x_j\}\in P}D_F(x_i - x_j)$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]), and $G_0 = \{e\}$, so every diagram has $S = 1$.
 >
 > **Step 3** (sum). The number of vertices is part of the diagram, so summing Step 2 over $n \ge 0$ lists each diagram once:
 >
@@ -302,7 +302,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 ^rem-c6a-8-3
 
 > [!theorem] Theorem §C6a.8.5: Correlation Functions of an Odd Number of Fields Vanish in φ⁴ Theory
-> For $r$ odd, the numerator $\mathcal N_E$ vanishes at every order in $\lambda$, and so does $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_r)\}|\Omega\rangle$.
+> For $n_{\rm ext}$ odd, the numerator $\mathcal N_E$ vanishes at every order in $\lambda$, and so does $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_{n_{\rm ext}})\}|\Omega\rangle$.
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; every order in $\lambda$, numerator and $\langle\Omega|\cdots|\Omega\rangle$; it uses $\phi \to -\phi$, so it fails with a $\phi^3$ term.
 >
@@ -311,26 +311,26 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 ^thm-c6a-8-5
 
 > [!derivation]- Derivation
-> **Step 1** (Wick). At order $n$ the free vacuum value has $N = r + 4n$ fields, an odd number for $r$ odd. Every term of Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]) with $k$ brackets leaves $N - 2k \ge 1$ fields in the colons, so
+> **Step 1** (Wick). At order $n$ the free vacuum value has $N = n_{\rm ext} + 4n$ fields, an odd number for $n_{\rm ext}$ odd. Every term of Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]) with $k$ contracted pairs, each a factor $D_{hh'} = D_F(\mathrm{pt}(h) - \mathrm{pt}(h'))$, leaves $N - 2k \ge 1$ fields in the colons, so
 >
 > $$
-> \langle0|T\Bigl\{\prod_{h\in X_{E,n}}\hat\phi_h\Bigr\}|0\rangle = \sum_{k=0}^{(N-1)/2}\;\sum_{k\text{ pairs}}\overbracket{\hat\phi_{h_1}\hat\phi_{h_2}}\cdots\overbracket{\hat\phi_{h_{2k-1}}\hat\phi_{h_{2k}}}\;\underbrace{\langle0|:\!\textstyle\prod_{\text{rest}}\hat\phi_h\!:|0\rangle}_{=\,0,\ N - 2k\,\ge\,1\text{ fields}} = 0
+> \langle0|T\Bigl\{\prod_{h\in X_{E,n}}\hat\phi_h\Bigr\}|0\rangle = \sum_{k=0}^{(N-1)/2}\;\sum_{k\text{ pairs}}D_{h_1h_2}\cdots D_{h_{2k-1}h_{2k}}\;\underbrace{\langle0|:\!\textstyle\prod_{\text{rest}}\hat\phi_h\!:|0\rangle}_{=\,0,\ N - 2k\,\ge\,1\text{ fields}} = 0
 > $$
 >
-> ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2; [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]: no pairing of an odd set). For example, $r = 1$, $n = 1$: $T\{\hat\phi_x\hat\phi_{z_1}\cdots\hat\phi_{z_4}\}$ has terms $:\!\hat\phi_x\hat\phi_{z_1}\cdots\hat\phi_{z_4}\!:$, $\overbracket{\hat\phi_x\hat\phi_{z_1}}:\!\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!:$, $\overbracket{\hat\phi_x\hat\phi_{z_1}}\,\overbracket{\hat\phi_{z_2}\hat\phi_{z_3}}:\!\hat\phi_{z_4}\!:$, …, each with at least one field in the colons.
+> ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2; [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]: no pairing of an odd set). For example, $n_{\rm ext} = 1$, $n = 1$: $T\{\hat\phi_x\hat\phi_{z_1}\cdots\hat\phi_{z_4}\}$ has terms $:\!\hat\phi_x\hat\phi_{z_1}\cdots\hat\phi_{z_4}\!:$, $D_F(x - z_1):\!\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!:$, $D_F(x - z_1)\,D_F(z_2 - z_3):\!\hat\phi_{z_4}\!:$, …, each with at least one field in the colons.
 >
 > **Step 2** (the same with diagrams). Count line-ends: every line has two, and there is one at each external point and four at each vertex:
 >
 > $$
-> 2\cdot\#\text{lines} = r\cdot1 + n\cdot4 .
+> 2\cdot\#\text{lines} = n_{\rm ext}\cdot1 + n\cdot4 .
 > $$
 >
-> The left side is even and the right side is odd for $r$ odd, so no diagram exists.
+> The left side is even and the right side is odd for $n_{\rm ext}$ odd, so no diagram exists.
 >
 > **Step 3** (the correlator). By [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]], with $\mathcal N_E = \sum_n\lambda^n\cdot0 = 0$ and $\mathcal N_\varnothing = 1 + c_1\lambda + c_2\lambda^2 + \cdots$, invertible as a power series, $\mathcal N_\varnothing^{-1} = 1 - c_1\lambda + (c_1^2 - c_2)\lambda^2 + \cdots$,
 >
 > $$
-> \langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_r)\}|\Omega\rangle = \mathcal N_E\,\mathcal N_\varnothing^{-1} = 0 .
+> \langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_{n_{\rm ext}})\}|\Omega\rangle = \mathcal N_E\,\mathcal N_\varnothing^{-1} = 0 .
 > $$
 >
 > **What the derivation shows.**

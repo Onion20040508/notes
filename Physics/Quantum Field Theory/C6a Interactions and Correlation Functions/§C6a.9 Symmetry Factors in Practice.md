@@ -28,7 +28,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 >
 > How to read it: draw the diagram and multiply a factor $2$ for each self-loop (its two ends can be exchanged), $\ell!$ for $\ell$ self-loops at one vertex, $m!$ for a bundle of $m$ lines between the same two points, and the number of vertex permutations that leave the drawing unchanged; a vertex joined to an external point is never moved. The coefficient of the diagram is $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]); when in doubt, count contractions instead, $S = n!\,(4!)^n/N_D$.
 >
-> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* combinatorial, any order, $\phi^4$ vertices; oriented lines of the complex scalar: Theorem §C6a.9.2; other polynomial vertices: count orbits as in [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]].
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* combinatorial, any order, $\phi^4$ vertices; oriented lines of the complex scalar: Theorem §C6a.9.2; other polynomial vertices: count orbits as in [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-4|Theorem §C6a.13.4]].
 >
 > *Proof:* [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]] (for each labelled version $P$ of $D$, with $\Gamma_D = \Gamma_P$; $S$ is the same for all of them, [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]]).
 >
@@ -72,7 +72,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > [!example] Example §C6a.9.1: The First-Order Diagrams
 > ![[ph-qft-c6a-9-5.svg]]
 >
-> The 15 complete contractions of $\hat\phi_x\hat\phi_y\hat\phi_{z_1}\cdots\hat\phi_{z_4}$ are listed, bracket by bracket, in Step 4 of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]]; $N = 1!\,(4!)^1 = 24$. As pairings ("the fifteen pairings of $\langle\hat\phi(x)\hat\phi(y)\hat\phi(z)^4\rangle$"): $E = \{x, y\}$, $n = 1$, write $a$ for the leg $(1, a)$ of $z$; the relabelling group is $G_1 = S_4$ acting on the legs $1, 2, 3, 4$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]]), and
+> The 15 complete contractions of $\hat\phi_x\hat\phi_y\hat\phi_{z_1}\cdots\hat\phi_{z_4}$ are listed, pair by pair, in Step 4 of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]]; $N = 1!\,(4!)^1 = 24$. As pairings ("the fifteen pairings of $\langle\hat\phi(x)\hat\phi(y)\hat\phi(z)^4\rangle$"): $E = \{x, y\}$, $n = 1$, write $a$ for the leg $(1, a)$ of $z$; the relabelling group is $G_1 = S_4$ acting on the legs $1, 2, 3, 4$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]]), and
 >
 > $$
 > |G_1| = 4! = 24, \qquad |\mathcal P(X_{E,1})| = 5!! = 5\cdot3\cdot1 = 15
@@ -84,7 +84,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > - Counting: the contractions are
 >
 > $$
-> \overbracket{\hat\phi_x\hat\phi_{z_a}}\,\overbracket{\hat\phi_y\hat\phi_{z_b}}\,\overbracket{\hat\phi_{z_c}\hat\phi_{z_d}} = D_F(x - z)\,D_F(y - z)\,D_F(z - z), \qquad \{c, d\} = \{1, 2, 3, 4\}\setminus\{a, b\},
+> \{x, z_a\}\,\{y, z_b\}\,\{z_c, z_d\} \;\longmapsto\; D_F(x - z)\,D_F(y - z)\,D_F(z - z), \qquad \{c, d\} = \{1, 2, 3, 4\}\setminus\{a, b\},
 > $$
 >
 > one for each ordered pair $(a, b)$, $a \ne b$:
@@ -99,7 +99,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > (1\,2)\cdot P_0 = \{x2, y1, 34\}, \qquad (2\,3)\cdot P_0 = \{x1, y3, 24\}, \qquad |G_1\cdot P_0| = 4\cdot3 = 12 .
 > $$
 >
-> - Symmetry: for $P = P_0 = \overbracket{\hat\phi_x\hat\phi_{z_1}}\,\overbracket{\hat\phi_y\hat\phi_{z_2}}\,\overbracket{\hat\phi_{z_3}\hat\phi_{z_4}}$ the leg permutations $\tau \in S_4$ with $\tau\cdot P = P$ must fix legs 1 and 2 and preserve $\{3, 4\}$. The leg paired with an external point is fixed, because $x$ and $y$ are fixed and each lies in only one block of $P$:
+> - Symmetry: for $P = P_0 = \{\{x, z_1\}, \{y, z_2\}, \{z_3, z_4\}\}$ the leg permutations $\tau \in S_4$ with $\tau\cdot P = P$ must fix legs 1 and 2 and preserve $\{3, 4\}$. The leg paired with an external point is fixed, because $x$ and $y$ are fixed and each lies in only one block of $P$:
 >
 > $$
 > \{x, \tau(1)\} \in \tau\cdot P = P \;\Rightarrow\; \tau(1) = 1, \qquad \{y, \tau(2)\} \in P \;\Rightarrow\; \tau(2) = 2, \qquad\text{so}\quad \tau \in \{\mathrm{id}, (3\,4)\} ,
@@ -117,7 +117,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > - Counting: the contractions are the three of row (a),
 >
 > $$
-> \overbracket{\hat\phi_x\hat\phi_y}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_2}}\,\overbracket{\hat\phi_{z_3}\hat\phi_{z_4}},\qquad \overbracket{\hat\phi_x\hat\phi_y}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_3}}\,\overbracket{\hat\phi_{z_2}\hat\phi_{z_4}},\qquad \overbracket{\hat\phi_x\hat\phi_y}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_4}}\,\overbracket{\hat\phi_{z_2}\hat\phi_{z_3}},
+> \{x, y\}\,\{z_1, z_2\}\,\{z_3, z_4\},\qquad \{x, y\}\,\{z_1, z_3\}\,\{z_2, z_4\},\qquad \{x, y\}\,\{z_1, z_4\}\,\{z_2, z_3\},
 > $$
 >
 > each $= D_F(x - y)\,D_F(z - z)^2$: $3!! = 3$ of 24, $\frac{3}{24} = \frac18$.
@@ -167,22 +167,22 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > $$
 > \begin{aligned}
 > T\{\hat\phi_{(1,1)}\cdots\hat\phi_{(1,4)}\hat\phi_{(2,1)}\cdots\hat\phi_{(2,4)}\} ={}& :\!\hat\phi_{(1,1)}\cdots\hat\phi_{(2,4)}\!: &&1\text{ term}\\
-> &+ \overbracket{\hat\phi_{(1,1)}\hat\phi_{(2,1)}}\,:\!\hat\phi_{(1,2)}\hat\phi_{(1,3)}\hat\phi_{(1,4)}\hat\phi_{(2,2)}\hat\phi_{(2,3)}\hat\phi_{(2,4)}\!: + \cdots &&\tbinom82 = 28\text{ terms}\\
-> &+ \overbracket{\hat\phi_{(1,1)}\hat\phi_{(2,1)}}\,\overbracket{\hat\phi_{(1,2)}\hat\phi_{(2,2)}}\,:\!\hat\phi_{(1,3)}\hat\phi_{(1,4)}\hat\phi_{(2,3)}\hat\phi_{(2,4)}\!: + \cdots &&\tbinom84\cdot3 = 210\text{ terms}\\
-> &+ \overbracket{\hat\phi_{(1,1)}\hat\phi_{(2,1)}}\,\overbracket{\hat\phi_{(1,2)}\hat\phi_{(2,2)}}\,\overbracket{\hat\phi_{(1,3)}\hat\phi_{(2,3)}}\,:\!\hat\phi_{(1,4)}\hat\phi_{(2,4)}\!: + \cdots &&\tbinom86\cdot15 = 420\text{ terms}\\
-> &+ \overbracket{\hat\phi_{(1,1)}\hat\phi_{(2,1)}}\,\overbracket{\hat\phi_{(1,2)}\hat\phi_{(2,2)}}\,\overbracket{\hat\phi_{(1,3)}\hat\phi_{(2,3)}}\,\overbracket{\hat\phi_{(1,4)}\hat\phi_{(2,4)}} + \cdots &&7!! = 105\text{ terms} .
+> &+ \underbrace{D_F(z_1 - z_2)}_{\{(1,1), (2,1)\}}\,:\!\hat\phi_{(1,2)}\hat\phi_{(1,3)}\hat\phi_{(1,4)}\hat\phi_{(2,2)}\hat\phi_{(2,3)}\hat\phi_{(2,4)}\!: + \cdots &&\tbinom82 = 28\text{ terms}\\
+> &+ \underbrace{D_F(z_1 - z_2)^2}_{\{(1,1), (2,1)\}\,\{(1,2), (2,2)\}}\,:\!\hat\phi_{(1,3)}\hat\phi_{(1,4)}\hat\phi_{(2,3)}\hat\phi_{(2,4)}\!: + \cdots &&\tbinom84\cdot3 = 210\text{ terms}\\
+> &+ \underbrace{D_F(z_1 - z_2)^3}_{\{(1,1), (2,1)\}\,\{(1,2), (2,2)\}\,\{(1,3), (2,3)\}}\,:\!\hat\phi_{(1,4)}\hat\phi_{(2,4)}\!: + \cdots &&\tbinom86\cdot15 = 420\text{ terms}\\
+> &+ \underbrace{D_F(z_1 - z_2)^4}_{\{(1,1), (2,1)\}\,\{(1,2), (2,2)\}\,\{(1,3), (2,3)\}\,\{(1,4), (2,4)\}} + \cdots &&7!! = 105\text{ terms} .
 > \end{aligned}
 > $$
 >
 > **Step 3** (vacuum value). The terms with $8$, $6$, $4$ or $2$ fields in the colons give $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2); the 105 complete contractions survive.
 >
-> **Step 4** (the melon's contractions). A complete contraction is a melon exactly when every bracket joins a leg of $z_1$ to a leg of $z_2$. Such a contraction pairs leg $a$ of $z_1$ with leg $\pi(a)$ of $z_2$ for a permutation $\pi \in S_4$:
+> **Step 4** (the melon's contractions). A complete contraction is a melon exactly when every contracted pair joins a leg of $z_1$ to a leg of $z_2$. Such a contraction pairs leg $a$ of $z_1$ with leg $\pi(a)$ of $z_2$ for a permutation $\pi \in S_4$:
 >
 > $$
-> P_\pi = \overbracket{\hat\phi_{(1,1)}\hat\phi_{(2,\pi(1))}}\,\overbracket{\hat\phi_{(1,2)}\hat\phi_{(2,\pi(2))}}\,\overbracket{\hat\phi_{(1,3)}\hat\phi_{(2,\pi(3))}}\,\overbracket{\hat\phi_{(1,4)}\hat\phi_{(2,\pi(4))}} = D_F(z_1 - z_2)^4, \qquad \pi \in S_4,
+> P_\pi = \{(1,1), (2,\pi(1))\}\,\{(1,2), (2,\pi(2))\}\,\{(1,3), (2,\pi(3))\}\,\{(1,4), (2,\pi(4))\} \;\longmapsto\; D_F(z_1 - z_2)^4, \qquad \pi \in S_4,
 > $$
 >
-> e.g. $\pi = \mathrm{id}$ gives the last line of Step 2, and $\pi = (1\,2)$ gives $\overbracket{\hat\phi_{(1,1)}\hat\phi_{(2,2)}}\,\overbracket{\hat\phi_{(1,2)}\hat\phi_{(2,1)}}\,\overbracket{\hat\phi_{(1,3)}\hat\phi_{(2,3)}}\,\overbracket{\hat\phi_{(1,4)}\hat\phi_{(2,4)}}$. Distinct $\pi$ give distinct pairings, so there are $4! = 24$ melon contractions.
+> e.g. $\pi = \mathrm{id}$ gives the last line of Step 2, and $\pi = (1\,2)$ gives $\{(1,1), (2,2)\}\,\{(1,2), (2,1)\}\,\{(1,3), (2,3)\}\,\{(1,4), (2,4)\}$. Distinct $\pi$ give distinct pairings, so there are $4! = 24$ melon contractions.
 >
 > **Step 5** (ratio).
 >
@@ -215,7 +215,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > - Counting: the contractions are
 >
 > $$
-> \overbracket{\hat\phi_{(1,a)}\hat\phi_{(1,b)}}\,\overbracket{\hat\phi_{(2,c)}\hat\phi_{(2,d)}}\,\overbracket{\hat\phi_{(1,a')}\hat\phi_{(2,c')}}\,\overbracket{\hat\phi_{(1,b')}\hat\phi_{(2,d')}} = D_F(z_1 - z_1)\,D_F(z_2 - z_2)\,D_F(z_1 - z_2)^2 ,
+> \{(1,a), (1,b)\}\,\{(2,c), (2,d)\}\,\{(1,a'), (2,c')\}\,\{(1,b'), (2,d')\} \;\longmapsto\; D_F(z_1 - z_1)\,D_F(z_2 - z_2)\,D_F(z_1 - z_2)^2 ,
 > $$
 >
 > with the loop legs $\{a, b\}$ and $\{c, d\}$ each one of the six two-element subsets
@@ -231,7 +231,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > - Counting: each vertex pairs its four legs among themselves in one of the three ways $\{\{1,2\},\{3,4\}\}$, $\{\{1,3\},\{2,4\}\}$, $\{\{1,4\},\{2,3\}\}$, e.g.
 >
 > $$
-> \overbracket{\hat\phi_{(1,1)}\hat\phi_{(1,2)}}\,\overbracket{\hat\phi_{(1,3)}\hat\phi_{(1,4)}}\,\overbracket{\hat\phi_{(2,1)}\hat\phi_{(2,3)}}\,\overbracket{\hat\phi_{(2,2)}\hat\phi_{(2,4)}} = D_F(z_1 - z_1)^2\,D_F(z_2 - z_2)^2 ;
+> \{(1,1), (1,2)\}\,\{(1,3), (1,4)\}\,\{(2,1), (2,3)\}\,\{(2,2), (2,4)\} \;\longmapsto\; D_F(z_1 - z_1)^2\,D_F(z_2 - z_2)^2 ;
 > $$
 >
 > $3\cdot3 = 9$ of 1152, $\frac{9}{1152} = \frac{1}{128}$.
@@ -243,7 +243,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > \underbrace{24}_{\text{melon}} + \underbrace{72}_{\text{dumbbell}} + \underbrace{9}_{\text{two figure-eights}} = 105 = 7!!
 > $$
 >
-> ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]]): a complete contraction with no bracket inside a vertex is a melon; with one bracket inside $z_1$, the two remaining legs of $z_1$ go to $z_2$ and $z_2$ has one inside bracket too (dumbbell); with two brackets inside $z_1$, all of $z_2$ is paired inside (two figure-eights).
+> ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]]): a complete contraction with no pair inside a vertex is a melon; with one pair inside $z_1$, the two remaining legs of $z_1$ go to $z_2$ and $z_2$ has one inside pair too (dumbbell); with two pairs inside $z_1$, all of $z_2$ is paired inside (two figure-eights).
 >
 > *Source: the user's PHY 513 notes, Ch. 14 §14.5, Figure "Symmetry factors" ($S = 2\cdot2\cdot2!\cdot2 = 16$, "72 of $2\cdot4!^2$"; $S = 8\cdot8\cdot2 = 128$, "9 of $2\cdot4!^2$") · counts checked by enumeration*
 
@@ -258,7 +258,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > - Counting: the contractions are
 >
 > $$
-> \overbracket{\hat\phi_x\hat\phi_{(v,a)}}\,\overbracket{\hat\phi_y\hat\phi_{(v,b)}}\,\overbracket{\hat\phi_{(v,c)}\hat\phi_{(w,e)}}\,\overbracket{\hat\phi_{(v,d)}\hat\phi_{(w,f)}}\,\overbracket{\hat\phi_{(w,g)}\hat\phi_{(w,h)}} = D_F(x - z_v)D_F(y - z_v)D_F(z_v - z_w)^2D_F(z_w - z_w),
+> \{x, (v,a)\}\,\{y, (v,b)\}\,\{(v,c), (w,e)\}\,\{(v,d), (w,f)\}\,\{(w,g), (w,h)\} \;\longmapsto\; D_F(x - z_v)D_F(y - z_v)D_F(z_v - z_w)^2D_F(z_w - z_w),
 > $$
 >
 > with $v \in \{1, 2\}$ (2 choices), $(a, b)$ an ordered pair of distinct legs of $v$ ($4\cdot3$), $\{c, d\}$ the other two legs, $c < d$, $(e, f)$ an ordered pair of distinct legs of $w$ ($4\cdot3$), $\{g, h\}$ the rest:
@@ -281,7 +281,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > - Counting: the contractions are
 >
 > $$
-> \overbracket{\hat\phi_x\hat\phi_{(v,a)}}\,\overbracket{\hat\phi_{(v,b)}\hat\phi_{(v,c)}}\,\overbracket{\hat\phi_{(v,d)}\hat\phi_{(w,e)}}\,\overbracket{\hat\phi_{(w,f)}\hat\phi_{(w,g)}}\,\overbracket{\hat\phi_y\hat\phi_{(w,h)}} = D_F(x - z_v)D_F(z_v - z_v)D_F(z_v - z_w)D_F(z_w - z_w)D_F(z_w - y),
+> \{x, (v,a)\}\,\{(v,b), (v,c)\}\,\{(v,d), (w,e)\}\,\{(w,f), (w,g)\}\,\{y, (w,h)\} \;\longmapsto\; D_F(x - z_v)D_F(z_v - z_v)D_F(z_v - z_w)D_F(z_w - z_w)D_F(z_w - y),
 > $$
 >
 > with $v \in \{1, 2\}$ (2), $a$ (4), $d \ne a$ (3), $\{b, c\}$ the rest of $v$; $h$ (4), $e \ne h$ (3), $\{f, g\}$ the rest of $w$:
@@ -302,7 +302,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > - Counting: the contractions are
 >
 > $$
-> \overbracket{\hat\phi_x\hat\phi_{(v,a)}}\,\overbracket{\hat\phi_y\hat\phi_{(w,e)}}\,\overbracket{\hat\phi_{(v,b)}\hat\phi_{(w,\pi(b))}}\,\overbracket{\hat\phi_{(v,c)}\hat\phi_{(w,\pi(c))}}\,\overbracket{\hat\phi_{(v,d)}\hat\phi_{(w,\pi(d))}} = D_F(x - z_v)\,D_F(z_v - z_w)^3\,D_F(z_w - y),
+> \{x, (v,a)\}\,\{y, (w,e)\}\,\{(v,b), (w,\pi(b))\}\,\{(v,c), (w,\pi(c))\}\,\{(v,d), (w,\pi(d))\} \;\longmapsto\; D_F(x - z_v)\,D_F(z_v - z_w)^3\,D_F(z_w - y),
 > $$
 >
 > with $v \in \{1, 2\}$ and $a$ ($x$ to a leg of either vertex, $2\cdot4$), $e$ ($y$ to a leg of the other vertex, 4), $\{b, c, d\}$ the other legs of $v$, and $\pi$ a bijection from $\{b, c, d\}$ onto the legs of $w$ other than $e$ ($3!$):
@@ -345,7 +345,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > [!example] Example §C6a.9.5: The Four Diagrams of Problem Set 8, Problem 1(a)
 > ![[ph-qft-c6a-9-9.svg]]
 >
-> The user's setup: a diagram with $n$ vertices and external points $x_1, \dots, x_r$ comes from the order-$\lambda^n$ term $\frac{1}{n!}\bigl(\frac{-i\lambda}{4!}\bigr)^n\int d^4z_1\cdots d^4z_n\,\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|0\rangle$ of the numerator; if $N_D$ complete contractions produce it, all give the same integral, and ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]])
+> The user's setup: a diagram with $n$ vertices and external points $x_1, \dots, x_{n_{\rm ext}}$ comes from the order-$\lambda^n$ term $\frac{1}{n!}\bigl(\frac{-i\lambda}{4!}\bigr)^n\int d^4z_1\cdots d^4z_n\,\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|0\rangle$ of the numerator; if $N_D$ complete contractions produce it, all give the same integral, and ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]])
 >
 > $$
 > \text{diagram} = \frac{1}{S}\,(-i\lambda)^n\int d^4z_1\cdots d^4z_n\prod D_F, \qquad S = \frac{n!\,(4!)^n}{N_D} = |\operatorname{Stab}(P)| ,
@@ -366,7 +366,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > - Counting: the contractions are
 >
 > $$
-> \overbracket{\hat\phi_{x_1}\hat\phi_{(v,a)}}\,\overbracket{\hat\phi_{x_2}\hat\phi_{(v,b)}}\,\overbracket{\hat\phi_{x_3}\hat\phi_{(w,e)}}\,\overbracket{\hat\phi_{x_4}\hat\phi_{(w,f)}}\,\overbracket{\hat\phi_{(v,c)}\hat\phi_{(w,g)}}\,\overbracket{\hat\phi_{(v,d)}\hat\phi_{(w,h)}} = D_F(x_1 - z_v)D_F(x_2 - z_v)\,D_F(z_v - z_w)^2\,D_F(x_3 - z_w)D_F(x_4 - z_w),
+> \{x_1, (v,a)\}\,\{x_2, (v,b)\}\,\{x_3, (w,e)\}\,\{x_4, (w,f)\}\,\{(v,c), (w,g)\}\,\{(v,d), (w,h)\} \;\longmapsto\; D_F(x_1 - z_v)D_F(x_2 - z_v)\,D_F(z_v - z_w)^2\,D_F(x_3 - z_w)D_F(x_4 - z_w),
 > $$
 >
 > with $v \in \{1, 2\}$ and $a$ ($x_1$ to a leg of either vertex, $2\cdot4$), $b \ne a$ (3), $(e, f)$ an ordered pair of distinct legs of $w$ ($4\cdot3$), $\{c, d\}$ the rest of $v$ with $c < d$, and $(g, h)$ one of the two orders of the rest of $w$ (2):
@@ -387,7 +387,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > - Counting: the three pairs go to the three vertices ($3!$); each pair to two of the four legs of its vertex ($4\cdot3$ per pair); the line $AB$ uses one free leg of $A$ and one of $B$ ($2\cdot2$), the line $BC$ the last leg of $B$ and one of the two free legs of $C$ (2), and $CA$ is then fixed (1). With legs $a_1, \dots, a_4$ of $A$ etc.,
 >
 > $$
-> \overbracket{\hat\phi_{x_1}\hat\phi_{(A,a_1)}}\,\overbracket{\hat\phi_{x_2}\hat\phi_{(A,a_2)}}\cdots\overbracket{\hat\phi_{x_6}\hat\phi_{(C,c_2)}}\;\overbracket{\hat\phi_{(A,a_3)}\hat\phi_{(B,b_4)}}\,\overbracket{\hat\phi_{(B,b_3)}\hat\phi_{(C,c_4)}}\,\overbracket{\hat\phi_{(C,c_3)}\hat\phi_{(A,a_4)}} = \prod_{i=1}^6D_F(x_i - z_{v(i)})\;D_F(z_A - z_B)D_F(z_B - z_C)D_F(z_C - z_A),
+> \{x_1, (A,a_1)\}\,\{x_2, (A,a_2)\}\cdots\{x_6, (C,c_2)\}\;\{(A,a_3), (B,b_4)\}\,\{(B,b_3), (C,c_4)\}\,\{(C,c_3), (A,a_4)\} \;\longmapsto\; \prod_{i=1}^6D_F(x_i - z_{v(i)})\;D_F(z_A - z_B)D_F(z_B - z_C)D_F(z_C - z_A),
 > $$
 >
 > $v(i)$ the vertex of $x_i$, and
@@ -426,7 +426,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 > - *The contractions.* Assign the roles $z, w, u$ to the vertices $1, 2, 3$ (a bijection, $3!$ ways) and write $\hat\phi_{(z,a)}$ for leg $a$ of the vertex playing $z$:
 >
 > $$
-> \overbracket{\hat\phi_x\hat\phi_{(z,a)}}\,\overbracket{\hat\phi_{(z,b)}\hat\phi_{(z,c)}}\,\overbracket{\hat\phi_{(z,d)}\hat\phi_{(w,e)}}\,\overbracket{\hat\phi_{(w,f)}\hat\phi_y}\,\overbracket{\hat\phi_{(w,g)}\hat\phi_{(u,i)}}\,\overbracket{\hat\phi_{(w,h)}\hat\phi_{(u,j)}}\,\overbracket{\hat\phi_{(u,k)}\hat\phi_{(u,l)}},
+> \{x, (z,a)\}\,\{(z,b), (z,c)\}\,\{(z,d), (w,e)\}\,\{(w,f), y\}\,\{(w,g), (u,i)\}\,\{(w,h), (u,j)\}\,\{(u,k), (u,l)\},
 > $$
 >
 > with $a$ (4), $d \ne a$ (3) and $\{b, c\}$ the rest at $z$; $e$ (4), $f \ne e$ (3) and $\{g, h\}$ the rest, $g < h$, at $w$; $(i, j)$ an ordered pair of distinct legs (4·3) and $\{k, l\}$ the rest at $u$:
@@ -498,7 +498,7 @@ In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $
 > **Step 5** (part 2). [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3: elements of $G_n$ preserve kinds, so a symmetry maps the $\hat\phi$ end of each line to a $\hat\phi$ end; the image of a line has its arrow the same way.
 >
 > **What the derivation shows.**
-> - The $\frac14$ in $\frac\lambda4(\phi^\dagger\phi)^2$ plays the role of the $\frac{1}{4!}$ of $\phi^4$: it is $\frac{1}{|S_2\times S_2|}$, and the vertex factor is again $-i\lambda$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]).
+> - The $\frac14$ in $\frac\lambda4(\phi^\dagger\phi)^2$ plays the role of the $\frac{1}{4!}$ of $\phi^4$: it is $\frac{1}{|S_2\times S_2|}$, and the vertex factor is again $-i\lambda$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]).
 > - Fewer relabellings are allowed, so fewer can be symmetries: a loop cannot be flipped, and two lines can be exchanged only if they run the same way.
 
 ^der-c6a-9-2

@@ -2380,11 +2380,11 @@ Show that all the diagrams of (b) have symmetry factor 1.
 > [!tip]- Hints: definitions, results and your solution for the whole problem
 > **Topic and definitions.** T11.
 > - Diagram of a scattering amplitude: Definition [[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|§C6c.6.1]] Diagram of a Scattering Amplitude; amputation Theorem [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|§C6c.1.1]] Amplitudes Are Amputated Correlation Functions
-> - Vertex factors: Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|§C6a.12.2]] Vertex Factors of a Polynomial Interaction
+> - Vertex factors: Theorem [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|§C6a.13.2]] Vertex Factors of a Polynomial Interaction
 >
 > **Key results.** Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|§C6c.6.1]] Cubic–Quartic Theory, 2 → 2 at Order g² and λ (this problem); disconnected pieces Theorem [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-2|§C6c.1.2]] The Disconnected Pieces of the Free Four-Point Function Do Not Scatter, [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-1|§C6c.1, Caution: "Connected" here means fully connected]].
 >
-> **Difficulty** (a) 1, (b) 2, (c) 1. Submitted solution: (a) three exchange diagrams and the contact diagram, each drawn and with the vertices opened into their legs; (b) $1 + 6 + 3 = 10$; (c) the stabilizer argument and $N = 6\cdot24 = 144 = |G|$. The vault integrates them as Definition [[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|§C6c.6.1]] Diagram of a Scattering Amplitude, Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|§C6a.12.2]] Vertex Factors of a Polynomial Interaction, Theorem [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|§C6c.5.5]] Vertices Saturated by External Lines Give S = 1, Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|§C6c.6.1]] Cubic–Quartic Theory, 2 → 2 at Order g² and λ, Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|§C6c.6.2]] Cubic–Quartic Theory, 2 → 3 at Order gλ.
+> **Difficulty** (a) 1, (b) 2, (c) 1. Submitted solution: (a) three exchange diagrams and the contact diagram, each drawn and with the vertices opened into their legs; (b) $1 + 6 + 3 = 10$; (c) the stabilizer argument and $N = 6\cdot24 = 144 = |G|$. The vault integrates them as Definition [[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|§C6c.6.1]] Diagram of a Scattering Amplitude, Theorem [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|§C6a.13.2]] Vertex Factors of a Polynomial Interaction, Theorem [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|§C6c.5.5]] Vertices Saturated by External Lines Give S = 1, Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|§C6c.6.1]] Cubic–Quartic Theory, 2 → 2 at Order g² and λ, Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|§C6c.6.2]] Cubic–Quartic Theory, 2 → 3 at Order gλ.
 
 ### PS8.3 Particle production by an external source (PS 4.1)
 
@@ -2431,7 +2431,7 @@ $\mathcal L = \frac12(\partial_\mu\Phi)^2 - \frac12M^2\Phi^2 + \frac12(\partial_
 > **Topic and definitions.** T11.
 > - Invariant amplitude Definition [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|§C6b.1.3]] The Invariant Amplitude; decay rate Theorem [[§C6b.5 Decay Widths#^thm-c6b-5-6|§C6b.5.6]] The Decay Rate Formula; relativistic normalization Definition [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|§C2a.4.1]] Relativistic Normalization
 >
-> **Key results.** Example [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|§C6b.6.1]] Φ → φφ, the Lifetime at Lowest Order (this problem); Theorem [[§C6b.6 Decay Kinematics#^thm-c6b-6-3|§C6b.6.3]] Two-Body Decay into Equal Masses; Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|§C6a.12.2]] Vertex Factors of a Polynomial Interaction; Lemma [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|§C6c.2.1]] Contraction of Fields with Outgoing Particles; [[§C6b.5 Decay Widths#^cau-c6b-5-1|§C6b.5, Caution: Free states in a decay amplitude]].
+> **Key results.** Example [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|§C6b.6.1]] Φ → φφ, the Lifetime at Lowest Order (this problem); Theorem [[§C6b.6 Decay Kinematics#^thm-c6b-6-3|§C6b.6.3]] Two-Body Decay into Equal Masses; Theorem [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|§C6a.13.2]] Vertex Factors of a Polynomial Interaction; Lemma [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|§C6c.2.1]] Contraction of Fields with Outgoing Particles; [[§C6b.5 Decay Widths#^cau-c6b-5-1|§C6b.5, Caution: Free states in a decay amplitude]].
 >
 > **Strategy (K13, K9).** First-order matrix element between relativistic states; read off $\mathcal M$; two-body phase space at rest with $\delta(f(p))$; identical-particle $\frac12$.
 >
@@ -2479,7 +2479,7 @@ $\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2 - \frac{\lambda}{24}\ph
 
 > [!tip]- Hints: definitions, results, route, your solution
 > **Topic and definitions.** T11.
-> - Amputation Definition [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|§C6c.5.1]] Amputation of an External Leg; diagram of an amplitude Definition [[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|§C6c.6.1]] Diagram of a Scattering Amplitude; legs, lines, loops Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|§C6a.12.3]] Counting Legs, Lines and Loops
+> - Amputation Definition [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|§C6c.5.1]] Amputation of an External Leg; diagram of an amplitude Definition [[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|§C6c.6.1]] Diagram of a Scattering Amplitude; legs, lines, loops Theorem [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-3|§C6a.13.3]] Counting Legs, Lines and Loops
 >
 > **Key results.** Example [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^ex-c6c-5-1|§C6c.5.1]] φφ → φφ at Order λ² (this problem); Theorem [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-1|§C6c.5.1]] The Second-Order Terms of φ⁴ Theory; Theorem [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-3|§C6c.6.3]] Feynman Rules for iℳ, All Orders.
 >
@@ -2501,7 +2501,7 @@ $\mathcal L = \frac12\sum_i(\partial\phi_i\partial\phi_i - m_i^2\phi_i^2) - g\ph
 
 > [!tip]- Hints: definitions, results, route, your solution
 > **Topic and definitions.** T11.
-> - The theory Model [[§C6c.6 Feynman Rules for Amplitudes#^mod-c6c-6-5|§C6c.6.5]] The Three-Scalar Theory; vertex factors Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|§C6a.12.2]] Vertex Factors of a Polynomial Interaction; external-particle contractions Lemma [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|§C6c.2.1]] Contraction of Fields with Outgoing Particles, Lemma [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|§C6c.2.2]] Contraction of Fields with Incoming Particles
+> - The theory Model [[§C6c.6 Feynman Rules for Amplitudes#^mod-c6c-6-5|§C6c.6.5]] The Three-Scalar Theory; vertex factors Theorem [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|§C6a.13.2]] Vertex Factors of a Polynomial Interaction; external-particle contractions Lemma [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|§C6c.2.1]] Contraction of Fields with Outgoing Particles, Lemma [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|§C6c.2.2]] Contraction of Fields with Incoming Particles
 >
 > **Key results.** Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-3|§C6c.6.3]] φ₁φ₁ → φ₂φ₂ at Order g² in the Three-Scalar Theory (this problem); Theorem [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-6|§C6c.6.6]] The Vertex Content Decides Which Channels Exist (no $s$-channel); Theorem [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|§C6b.4.7]] Equal Masses in Pairs (part 5: $t, u \le 0$); Theorem [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|§C6b.4.4]] The 2 → 2 Differential Cross Section in the Centre-of-Mass Frame.
 >

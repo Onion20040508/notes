@@ -94,10 +94,10 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > D_F(\xi) = \theta(\xi^0)\,D_W(\xi) + \theta(-\xi^0)\,D_W(-\xi) = D_W(\xi) \qquad (\xi^0 > 0) .
 > $$
 >
-> For $\xi^0 = 0$ the separation is spacelike or zero and the commutator function vanishes there ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]): $D_W(\xi) - D_W(-\xi) = iD(\xi) = 0$, so $D_W(\xi) = D_W(-\xi) = D_F(\xi)$ again. With the bracket $\overbracket{\hat\phi_k\hat\phi_b} = D_F(x_k - x_b)$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]), Steps 3 and 5 give part 1; for $n = 2$:
+> For $\xi^0 = 0$ the separation is spacelike or zero and the commutator function vanishes there ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]): $D_W(\xi) - D_W(-\xi) = iD(\xi) = 0$, so $D_W(\xi) = D_W(-\xi) = D_F(\xi)$ again. With the contraction of $\hat\phi_k$ with $\hat\phi_b$ equal to $D_F(x_k - x_b)$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]), Steps 3 and 5 give part 1; for $n = 2$:
 >
 > $$
-> :\!\hat\phi_1\hat\phi_2\!:\,\hat\phi_b = \,:\!\hat\phi_1\hat\phi_2\hat\phi_b\!:\, + \overbracket{\hat\phi_1\hat\phi_b}\,:\!\hat\phi_2\!:\, + \overbracket{\hat\phi_2\hat\phi_b}\,:\!\hat\phi_1\!: .
+> :\!\hat\phi_1\hat\phi_2\!:\,\hat\phi_b = \,:\!\hat\phi_1\hat\phi_2\hat\phi_b\!:\, + D_F(x_1 - x_b)\,:\!\hat\phi_2\!:\, + D_F(x_2 - x_b)\,:\!\hat\phi_1\!: .
 > $$
 >
 > ⚑ By-product: Steps 1–5 never used the times. Without the condition the lemma holds with $D_W(x_k - x_b)$ in place of $D_F(x_k - x_b)$ → [[§C6a.6 Wick's Theorem#^thm-c6a-6-4|★ Theorem §C6a.6.4]].
@@ -169,13 +169,13 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 >
 > **Step 6** (each term exactly once). Every set $C$ of disjoint pairs of $\{1, \dots, n\}$ is of exactly one of two kinds: $n$ uncontracted, $C = C'$ with $C'$ a set of pairs of $\{1, \dots, n-1\}$, which is the first term of Step 5; or $n$ paired with some $l$, $C = C'\cup\{\{l, n\}\}$ with $l \notin\cup C'$, which is the $l$-term of the sum in Step 5. Conversely each term of Step 5 is of one of these forms for exactly one $C$. So Step 5 summed over $C'$ is the right side of part 1 for $n$ fields.
 >
-> **Step 7** (the case $n = 3$ written out). With $\overbracket{\hat\phi_i\hat\phi_j} = D_F(x_i - x_j)$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]) and $x_1^0 \ge x_2^0 \ge x_3^0$: the induction hypothesis for $\{1, 2\}$ has $C' = \varnothing$ and $C' = \{\{1,2\}\}$, and the lemma acts on each:
+> **Step 7** (the case $n = 3$ written out). With $D_{ij} \equiv D_F(x_i - x_j)$ for the contraction of $\hat\phi_i$ with $\hat\phi_j$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]) and $x_1^0 \ge x_2^0 \ge x_3^0$: the induction hypothesis for $\{1, 2\}$ has $C' = \varnothing$ and $C' = \{\{1,2\}\}$, and the lemma acts on each:
 >
 > $$
 > \begin{aligned}
-> T\{\hat\phi_1\hat\phi_2\hat\phi_3\} = T\{\hat\phi_1\hat\phi_2\}\,\hat\phi_3 &= \bigl(:\!\hat\phi_1\hat\phi_2\!:\, + \overbracket{\hat\phi_1\hat\phi_2}\bigr)\,\hat\phi_3\\
-> &= \underbrace{:\!\hat\phi_1\hat\phi_2\hat\phi_3\!:}_{C = \varnothing} + \underbrace{\overbracket{\hat\phi_1\hat\phi_3}:\!\hat\phi_2\!:}_{C = \{13\}} + \underbrace{\overbracket{\hat\phi_2\hat\phi_3}:\!\hat\phi_1\!:}_{C = \{23\}} \quad\text{(from } C' = \varnothing\text{)}\\
-> &\quad + \underbrace{\overbracket{\hat\phi_1\hat\phi_2}:\!\hat\phi_3\!:}_{C = \{12\}} \quad\text{(from } C' = \{12\}\text{, no } l \text{ left)} ,
+> T\{\hat\phi_1\hat\phi_2\hat\phi_3\} = T\{\hat\phi_1\hat\phi_2\}\,\hat\phi_3 &= \bigl(:\!\hat\phi_1\hat\phi_2\!:\, + D_{12}\bigr)\,\hat\phi_3\\
+> &= \underbrace{:\!\hat\phi_1\hat\phi_2\hat\phi_3\!:}_{C = \varnothing} + \underbrace{D_{13}:\!\hat\phi_2\!:}_{C = \{13\}} + \underbrace{D_{23}:\!\hat\phi_1\!:}_{C = \{23\}} \quad\text{(from } C' = \varnothing\text{)}\\
+> &\quad + \underbrace{D_{12}:\!\hat\phi_3\!:}_{C = \{12\}} \quad\text{(from } C' = \{12\}\text{, no } l \text{ left)} ,
 > \end{aligned}
 > $$
 >
@@ -215,12 +215,12 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 >
 > **Step 4** (latest time). $x_1^0 \ge x_l^0$, so $D_W(x_1 - x_l) = D_F(x_1 - x_l)$ (as in Step 6 of Derivation §C6a.6.1).
 >
-> **Step 5** (collect). Steps 2 and 3 add to $:\!\hat\phi_1\prod_R\hat\phi_k\!:$; the sum of Step 3 contracts $\hat\phi_1$ with each uncontracted field. Contractions among $2, \dots, n$ came from the induction hypothesis and ride along; those involving $\hat\phi_1$ come from the commutators. Each set of pairs of $\{1, \dots, n\}$ appears once (the bijection of Step 6 above, with $1$ in place of $n$). For $n = 3$, with $\overbracket{\hat\phi_i\hat\phi_j} = D_F(x_i - x_j)$:
+> **Step 5** (collect). Steps 2 and 3 add to $:\!\hat\phi_1\prod_R\hat\phi_k\!:$; the sum of Step 3 contracts $\hat\phi_1$ with each uncontracted field. Contractions among $2, \dots, n$ came from the induction hypothesis and ride along; those involving $\hat\phi_1$ come from the commutators. Each set of pairs of $\{1, \dots, n\}$ appears once (the bijection of Step 6 above, with $1$ in place of $n$). For $n = 3$, with $D_{ij} \equiv D_F(x_i - x_j)$ for the contraction of $\hat\phi_i$ with $\hat\phi_j$:
 >
 > $$
 > \begin{aligned}
-> T\{\hat\phi_1\hat\phi_2\hat\phi_3\} &= (\hat\phi_1^- + \hat\phi_1^+)\bigl(:\!\hat\phi_2\hat\phi_3\!:\, + \overbracket{\hat\phi_2\hat\phi_3}\bigr)\\
-> &= \underbrace{:\!\hat\phi_1^-\hat\phi_2\hat\phi_3\!: + :\!\hat\phi_1^+\hat\phi_2\hat\phi_3\!:}_{:\hat\phi_1\hat\phi_2\hat\phi_3:} + \overbracket{\hat\phi_1\hat\phi_2}:\!\hat\phi_3\!: + \overbracket{\hat\phi_1\hat\phi_3}:\!\hat\phi_2\!: + \overbracket{\hat\phi_2\hat\phi_3}\underbrace{(\hat\phi_1^- + \hat\phi_1^+)}_{:\hat\phi_1:} ,
+> T\{\hat\phi_1\hat\phi_2\hat\phi_3\} &= (\hat\phi_1^- + \hat\phi_1^+)\bigl(:\!\hat\phi_2\hat\phi_3\!:\, + D_{23}\bigr)\\
+> &= \underbrace{:\!\hat\phi_1^-\hat\phi_2\hat\phi_3\!: + :\!\hat\phi_1^+\hat\phi_2\hat\phi_3\!:}_{:\hat\phi_1\hat\phi_2\hat\phi_3:} + D_{12}:\!\hat\phi_3\!: + D_{13}:\!\hat\phi_2\!: + D_{23}\underbrace{(\hat\phi_1^- + \hat\phi_1^+)}_{:\hat\phi_1:} ,
 > \end{aligned}
 > $$
 >
@@ -236,17 +236,14 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > [!example] Example §C6a.6.1: Four Fields
 > ![[ph-qft-c6a-6-1.svg]]
 >
-> For four fields, Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]) has $1 + 6 + 3 = 10$ terms. With the bracket $\overbracket{\hat\phi_i\hat\phi_j} = D_F(x_i - x_j) \equiv D_{ij}$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]; inside $:\;:$ the fields may be reordered, [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 3, so each contracted pair is written side by side):
+> For four fields, Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]) has $1 + 6 + 3 = 10$ terms. With $D_{ij} \equiv D_F(x_i - x_j)$ for the contraction of $\hat\phi_i$ with $\hat\phi_j$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]; a contraction is a number and stands in front, and inside $:\;:$ the fields may be reordered, [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 3, so the remaining fields keep their written order):
 >
 > $$
 > \begin{aligned}
 > T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\} ={}& :\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\!: &&\text{no pair: } 1\text{ term}\\
-> &+ \overbracket{\hat\phi_1\hat\phi_2}:\!\hat\phi_3\hat\phi_4\!: + \overbracket{\hat\phi_1\hat\phi_3}:\!\hat\phi_2\hat\phi_4\!: + \overbracket{\hat\phi_1\hat\phi_4}:\!\hat\phi_2\hat\phi_3\!: &&\text{one pair: } \tbinom42 = 6\text{ terms}\\
-> &+ \overbracket{\hat\phi_2\hat\phi_3}:\!\hat\phi_1\hat\phi_4\!: + \overbracket{\hat\phi_2\hat\phi_4}:\!\hat\phi_1\hat\phi_3\!: + \overbracket{\hat\phi_3\hat\phi_4}:\!\hat\phi_1\hat\phi_2\!:\\
-> &+ \overbracket{\hat\phi_1\hat\phi_2}\,\overbracket{\hat\phi_3\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_3}\,\overbracket{\hat\phi_2\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_4}\,\overbracket{\hat\phi_2\hat\phi_3} &&\text{two pairs: } 3!! = 3\text{ terms}\\
-> ={}& :\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\!:\\
-> &+ D_{12}:\!\hat\phi_3\hat\phi_4\!: + D_{13}:\!\hat\phi_2\hat\phi_4\!: + D_{14}:\!\hat\phi_2\hat\phi_3\!: + D_{23}:\!\hat\phi_1\hat\phi_4\!: + D_{24}:\!\hat\phi_1\hat\phi_3\!: + D_{34}:\!\hat\phi_1\hat\phi_2\!:\\
-> &+ D_{12}D_{34} + D_{13}D_{24} + D_{14}D_{23} .
+> &+ D_{12}:\!\hat\phi_3\hat\phi_4\!: + D_{13}:\!\hat\phi_2\hat\phi_4\!: + D_{14}:\!\hat\phi_2\hat\phi_3\!: &&\text{one pair: } \tbinom42 = 6\text{ terms}\\
+> &+ D_{23}:\!\hat\phi_1\hat\phi_4\!: + D_{24}:\!\hat\phi_1\hat\phi_3\!: + D_{34}:\!\hat\phi_1\hat\phi_2\!:\\
+> &+ D_{12}D_{34} + D_{13}D_{24} + D_{14}D_{23} . &&\text{two pairs: } 3!! = 3\text{ terms}
 > \end{aligned}
 > $$
 >
@@ -284,10 +281,10 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 ^thm-c6a-6-3
 
 > [!derivation]- Derivation
-> **Step 1** (Wick: time order → normal order plus contractions). [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], 1, with $\overbracket{\hat\phi_i\hat\phi_j} = D_F(x_i - x_j)$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]), sorted by the number $k$ of contracted pairs:
+> **Step 1** (Wick: time order → normal order plus contractions). [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], 1, with each contracted pair $\hat\phi_i, \hat\phi_j$ replaced by $D_F(x_i - x_j)$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]), sorted by the number $k$ of contracted pairs:
 >
 > $$
-> T\{\hat\phi_1\cdots\hat\phi_n\} = \,:\!\hat\phi_1\cdots\hat\phi_n\!:\, + \sum_{\{i,j\}}\overbracket{\hat\phi_i\hat\phi_j}\,:\!\prod_{k\ne i,j}\hat\phi_k\!:\, + \sum_{\{i,j\},\{k,l\}}\overbracket{\hat\phi_i\hat\phi_j}\,\overbracket{\hat\phi_k\hat\phi_l}\,:\!\cdots\!:\, + \cdots ,
+> T\{\hat\phi_1\cdots\hat\phi_n\} = \,:\!\hat\phi_1\cdots\hat\phi_n\!:\, + \sum_{\{i,j\}}D_F(x_i - x_j)\,:\!\prod_{k\ne i,j}\hat\phi_k\!:\, + \sum_{\{i,j\},\{k,l\}}D_F(x_i - x_j)\,D_F(x_k - x_l)\,:\!\cdots\!:\, + \cdots ,
 > $$
 >
 > with $\binom n2$ one-pair terms, $\frac12\binom n2\binom{n-2}2$ two-pair terms, and so on.
@@ -295,13 +292,13 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > **Step 2** (take the vacuum value; normal-ordered remainders vanish). The contractions are numbers and come out of $\langle0|\cdots|0\rangle$; every remainder with $r \ge 1$ fields vanishes ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2):
 >
 > $$
-> \langle0|:\!\hat\phi_1\cdots\hat\phi_n\!:|0\rangle = 0, \qquad \overbracket{\hat\phi_i\hat\phi_j}\,\langle0|:\!\textstyle\prod_{k\ne i,j}\hat\phi_k\!:|0\rangle = 0 \ (n > 2), \qquad \dots, \qquad \Bigl(\prod_{\{i,j\}\in C}\overbracket{\hat\phi_i\hat\phi_j}\Bigr)\langle0|:\!\textstyle\prod_{k\notin\cup C}\hat\phi_k\!:|0\rangle = 0 \ (r \ge 1) .
+> \langle0|:\!\hat\phi_1\cdots\hat\phi_n\!:|0\rangle = 0, \qquad D_F(x_i - x_j)\,\langle0|:\!\textstyle\prod_{k\ne i,j}\hat\phi_k\!:|0\rangle = 0 \ (n > 2), \qquad \dots, \qquad \Bigl(\prod_{\{i,j\}\in C}D_F(x_i - x_j)\Bigr)\langle0|:\!\textstyle\prod_{k\notin\cup C}\hat\phi_k\!:|0\rangle = 0 \ (r \ge 1) .
 > $$
 >
 > Only the terms with every field contracted survive, and for them the remainder is the empty product, $:\;: = \mathbf 1$, with $\langle0|\mathbf 1|0\rangle = 1$:
 >
 > $$
-> \langle0|T\{\hat\phi_1\cdots\hat\phi_n\}|0\rangle = \sum_{C\text{ covering }\{1,\dots,n\}}\;\prod_{\{i,j\}\in C}\overbracket{\hat\phi_i\hat\phi_j} = \sum_{C\text{ covering }\{1,\dots,n\}}\;\prod_{\{i,j\}\in C}D_F(x_i - x_j) .
+> \langle0|T\{\hat\phi_1\cdots\hat\phi_n\}|0\rangle = \sum_{C\text{ covering }\{1,\dots,n\}}\;\prod_{\{i,j\}\in C}D_F(x_i - x_j) .
 > $$
 >
 > **Step 3** (these are the pairings). A set of disjoint pairs covering all of $\{1, \dots, n\}$ is a pairing ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]). A set $C$ of $k$ pairs leaves $r = n - 2k$ fields; for $n$ odd, $r$ is odd, so $r \ge 1$ for every $C$ and every term vanishes. For $n$ even their number is $(n - 1)!!$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]): $n = 4$, the three of [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]]; $n = 6$, the fifteen listed in [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]].
@@ -322,25 +319,25 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > [!example] Example §C6a.6.2: The Free Four-Point Function
 > ![[ph-qft-c6a-6-2.svg]]
 >
-> Write $\overbracket{\hat\phi_i\hat\phi_j} = D_F(x_i - x_j) \equiv D_{ij}$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]).
+> Write $D_{ij} \equiv D_F(x_i - x_j)$ for the contraction of $\hat\phi_i$ with $\hat\phi_j$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]).
 >
 > **Step 1** (time order → normal order plus contractions). By Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]; the ten terms of [[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]),
 >
 > $$
 > \begin{aligned}
 > T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\} ={}& :\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\!: &&\text{no pair: 1 term}\\
-> &+ \overbracket{\hat\phi_1\hat\phi_2}:\!\hat\phi_3\hat\phi_4\!: + \overbracket{\hat\phi_1\hat\phi_3}:\!\hat\phi_2\hat\phi_4\!: + \overbracket{\hat\phi_1\hat\phi_4}:\!\hat\phi_2\hat\phi_3\!: &&\text{one pair: 6 terms}\\
-> &+ \overbracket{\hat\phi_2\hat\phi_3}:\!\hat\phi_1\hat\phi_4\!: + \overbracket{\hat\phi_2\hat\phi_4}:\!\hat\phi_1\hat\phi_3\!: + \overbracket{\hat\phi_3\hat\phi_4}:\!\hat\phi_1\hat\phi_2\!:\\
-> &+ \overbracket{\hat\phi_1\hat\phi_2}\,\overbracket{\hat\phi_3\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_3}\,\overbracket{\hat\phi_2\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_4}\,\overbracket{\hat\phi_2\hat\phi_3} . &&\text{two pairs: 3 terms}
+> &+ D_{12}:\!\hat\phi_3\hat\phi_4\!: + D_{13}:\!\hat\phi_2\hat\phi_4\!: + D_{14}:\!\hat\phi_2\hat\phi_3\!: &&\text{one pair: 6 terms}\\
+> &+ D_{23}:\!\hat\phi_1\hat\phi_4\!: + D_{24}:\!\hat\phi_1\hat\phi_3\!: + D_{34}:\!\hat\phi_1\hat\phi_2\!:\\
+> &+ D_{12}\,D_{34} + D_{13}\,D_{24} + D_{14}\,D_{23} . &&\text{two pairs: 3 terms}
 > \end{aligned}
 > $$
 >
-> **Step 2** (take the vacuum value term by term). $\langle0|\cdots|0\rangle$ is linear and the brackets are numbers, so they come out:
+> **Step 2** (take the vacuum value term by term). $\langle0|\cdots|0\rangle$ is linear and the contractions $D_{ij}$ are numbers, so they come out:
 >
 > $$
 > \begin{aligned}
-> \langle0|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\}|0\rangle ={}& \langle0|:\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\!:|0\rangle + \overbracket{\hat\phi_1\hat\phi_2}\,\langle0|:\!\hat\phi_3\hat\phi_4\!:|0\rangle + \dots + \overbracket{\hat\phi_3\hat\phi_4}\,\langle0|:\!\hat\phi_1\hat\phi_2\!:|0\rangle\\
-> &+ \bigl(\overbracket{\hat\phi_1\hat\phi_2}\,\overbracket{\hat\phi_3\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_3}\,\overbracket{\hat\phi_2\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_4}\,\overbracket{\hat\phi_2\hat\phi_3}\bigr)\langle0|0\rangle .
+> \langle0|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\}|0\rangle ={}& \langle0|:\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\!:|0\rangle + D_{12}\,\langle0|:\!\hat\phi_3\hat\phi_4\!:|0\rangle + \dots + D_{34}\,\langle0|:\!\hat\phi_1\hat\phi_2\!:|0\rangle\\
+> &+ \bigl(D_{12}\,D_{34} + D_{13}\,D_{24} + D_{14}\,D_{23}\bigr)\langle0|0\rangle .
 > \end{aligned}
 > $$
 >
@@ -352,11 +349,11 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 >
 > the first three end in a $\hat\phi^+$ acting on $|0\rangle$, the last begins with a $\hat\phi^-$ acting on $\langle0|$. The same holds for each of the $2^4 = 16$ terms of $:\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\!:$, so all seven normal-ordered terms of Step 2 vanish ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2).
 >
-> **Step 4** (the complete contractions survive). With $\langle0|0\rangle = 1$, each bracket replaced by its $D_F$:
+> **Step 4** (the complete contractions survive). With $\langle0|0\rangle = 1$, each $D_{ij}$ written out:
 >
 > $$
 > \begin{aligned}
-> \langle0|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\}|0\rangle &= \overbracket{\hat\phi_1\hat\phi_2}\,\overbracket{\hat\phi_3\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_3}\,\overbracket{\hat\phi_2\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_4}\,\overbracket{\hat\phi_2\hat\phi_3}\\
+> \langle0|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\}|0\rangle &= D_{12}\,D_{34} + D_{13}\,D_{24} + D_{14}\,D_{23}\\
 > &= D_F(x_1 - x_2)D_F(x_3 - x_4) + D_F(x_1 - x_3)D_F(x_2 - x_4) + D_F(x_1 - x_4)D_F(x_2 - x_3) ,
 > \end{aligned}
 > $$
@@ -366,7 +363,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > **Step 5** (three fields). For $n = 3$ Wick's theorem has $1 + 3 = 4$ terms, each keeping at least one field inside the colons:
 >
 > $$
-> T\{\hat\phi_1\hat\phi_2\hat\phi_3\} = \,:\!\hat\phi_1\hat\phi_2\hat\phi_3\!:\, + \overbracket{\hat\phi_1\hat\phi_2}\,(\hat\phi_3^+ + \hat\phi_3^-) + \overbracket{\hat\phi_1\hat\phi_3}\,(\hat\phi_2^+ + \hat\phi_2^-) + \overbracket{\hat\phi_2\hat\phi_3}\,(\hat\phi_1^+ + \hat\phi_1^-) ,
+> T\{\hat\phi_1\hat\phi_2\hat\phi_3\} = \,:\!\hat\phi_1\hat\phi_2\hat\phi_3\!:\, + D_{12}\,(\hat\phi_3^+ + \hat\phi_3^-) + D_{13}\,(\hat\phi_2^+ + \hat\phi_2^-) + D_{23}\,(\hat\phi_1^+ + \hat\phi_1^-) ,
 > $$
 >
 > and $\langle0|(\hat\phi_k^+ + \hat\phi_k^-)|0\rangle = 0 + 0$, $\langle0|:\!\hat\phi_1\hat\phi_2\hat\phi_3\!:|0\rangle = 0$ as in Step 3, so $\langle0|T\{\hat\phi_1\hat\phi_2\hat\phi_3\}|0\rangle = 0$.
@@ -388,7 +385,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > Both sides of [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]] are operator-valued distributions in $(x_1, \dots, x_n)$. The identity holds after smearing every point with a test function, at distinct points ([[§C6a.5 Normal Ordering and Contractions#^cau-c6a-5-3|§C6a.5, Caution: In what sense these identities hold]]). The time-ordered product at distinct points with equal times is fixed by the equal-time commutation of the fields ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], 2). Perturbation theory applies the theorem to products in which several fields sit at the same point, the four fields of a vertex:
 >
 > $$
-> T\{\hat\phi_x\hat\phi_y\,\hat\phi_I(z)^4\} \ni \overbracket{\hat\phi_x\hat\phi_y}\;\overbracket{\hat\phi_{z_1}\hat\phi_{z_2}}\;\overbracket{\hat\phi_{z_3}\hat\phi_{z_4}}\Big|_{z_a = z} = D_F(x - y)\,D_F(0)^2 .
+> T\{\hat\phi_x\hat\phi_y\,\hat\phi_I(z)^4\} \ni D_F(x - y)\,D_F(z_1 - z_2)\,D_F(z_3 - z_4)\Big|_{z_a = z} = D_F(x - y)\,D_F(0)^2 \qquad \text{(the pairs } \{x, y\},\ \{z_1, z_2\},\ \{z_3, z_4\}\text{)} .
 > $$
 >
 > The contractions among them, $D_F(0)$, are then formal symbols for a divergent quantity (§C6a.5, Caution, item 2), made finite only in a regularized theory ([[§C6a.10 Feynman Rules in Momentum Space#^rem-c6a-10-1|§C6a.10, Remark: The first ultraviolet divergence]]).

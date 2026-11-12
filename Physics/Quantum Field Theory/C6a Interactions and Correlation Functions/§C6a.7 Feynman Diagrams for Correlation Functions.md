@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.3 (paragraph "The idea", Caution "A Feynman diagram is a formula", paragraph "Zeroth order", Derivation "First order in λ", paragraph "Why y and z may be exchanged", Caution "Numerator, not yet ⟨Ω|⋯|Ω⟩") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part B, slides 13–15, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 90–92, eqs. (4.42)–(4.44) · Yu Zhao-Huan, 量子场论讲义, §10.5.1, eqs. (10.187)–(10.192) (a different route, for comparison).*
 
-Every term of a free vacuum expectation value is a product of Feynman propagators ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]), and the only information in it is which arguments each $D_F$ has. So draw a point for each argument and a line for each contraction: a Feynman diagram. This section introduces the diagrams on the free four-point function and then computes the first-order correction to the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), a six-point function with four of its points at the interaction point. Its 15 complete contractions fall into two classes, which give the two first-order diagrams with coefficients $\frac18$ and $\frac12$. Yu treats this in §10.5.1, eqs. (10.187)–(10.192), for the two-point function of the asymptotic "in" fields, reached through the LSZ formula and with an extra mass-counterterm vertex (10.185). **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): the diagrams of this section and of §C6a.8–§C6a.12 are the terms of the expansion in $\lambda$ of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]); they compute $\langle\Omega|T\{\hat\phi_H\cdots\hat\phi_H\}|\Omega\rangle$ as numerator over denominator, each a free-vacuum value $\langle0|T\{\cdots\}|0\rangle$ ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]), and the bubbles of the denominator cancel ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order.
+Every term of a free vacuum expectation value is a product of Feynman propagators ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]), and the only information in it is which arguments each $D_F$ has. So draw a point for each argument and a line for each contraction: a Feynman diagram. This section introduces the diagrams on the free four-point function and then computes the first-order correction to the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), a six-point function with four of its points at the interaction point. Its 15 complete contractions fall into two classes, which give the two first-order diagrams with coefficients $\frac18$ and $\frac12$. Yu treats this in §10.5.1, eqs. (10.187)–(10.192), for the two-point function of the asymptotic "in" fields, reached through the LSZ formula and with an extra mass-counterterm vertex (10.185). **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): the diagrams of this section and of §C6a.8–§C6a.13 are the terms of the expansion in $\lambda$ of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]); they compute $\langle\Omega|T\{\hat\phi_H\cdots\hat\phi_H\}|\Omega\rangle$ as numerator over denominator, each a free-vacuum value $\langle0|T\{\cdots\}|0\rangle$ ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]), and the bubbles of the denominator cancel ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order.
 
 *Conventions* ([[Larsen PHY 513]]): fields entering through the master formula are written $\hat\phi_I$; $x, y$ are the external points, $z$ the interaction point; $D_F(z - z) \equiv D_F(0)$.
 
@@ -29,7 +29,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 ^def-c6a-7-1
 
 > [!definition] Definition §C6a.7.2: External Point
-> In the diagrams of the master formula's numerator ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) there are two kinds of points. The **external points** are the arguments $x_1, \dots, x_n$ of the correlator; exactly one line ends at each. The other kind is the vertices ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-3|Def. §C6a.7.3]]).
+> In the diagrams of the master formula's numerator ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) there are two kinds of points. The **external points** are the arguments $x_1, \dots, x_{n_{\rm ext}}$ of the correlator; their number is written $n_{\rm ext}$, and exactly one line ends at each. The other kind is the vertices ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-3|Def. §C6a.7.3]]).
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
 >
@@ -102,7 +102,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > **Step 1** (Wick's theorem for two fields, [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]).
 >
 > $$
-> T\{\hat\phi_I(x)\hat\phi_I(y)\} = \,:\!\hat\phi_I(x)\hat\phi_I(y)\!: + \overbracket{\hat\phi_I(x)\hat\phi_I(y)}, \qquad \overbracket{\hat\phi_I(x)\hat\phi_I(y)} = D_F(x - y) .
+> T\{\hat\phi_I(x)\hat\phi_I(y)\} = \,:\!\hat\phi_I(x)\hat\phi_I(y)\!: + D_F(x - y) \qquad \text{(the one pair, } \hat\phi_I(x) \text{ with } \hat\phi_I(y)\text{, contracted)} .
 > $$
 >
 > **Step 2** (vacuum value). $\langle0|:\!\hat\phi_I(x)\hat\phi_I(y)\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2; the four terms in [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]], Step 3), and $\langle0|0\rangle = 1$:
@@ -152,42 +152,42 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 >
 > (formal at the coincident points: [[§C6a.6 Wick's Theorem#^cau-c6a-6-2|§C6a.6, Caution: In what sense Wick's theorem holds]]).
 >
-> **Step 3** (Wick's theorem: time order → normal order plus contractions). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], with the bracket $\overbracket{\hat\phi_i\hat\phi_j} = D_F(x_i - x_j)$ for a contracted pair ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]; inside $:\;:$ the fields may be reordered, [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]] 3, so each contracted pair is written side by side),
+> **Step 3** (Wick's theorem: time order → normal order plus contractions). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], with each contracted pair replaced by its propagator ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]; a contraction is a number and stands in front, and inside $:\;:$ the fields may be reordered, [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]] 3), written $D_{xy} = D_F(x - y)$, $D_{xa} = D_F(x - z_a)$, $D_{ya} = D_F(y - z_a)$, $D_{ab} = D_F(z_a - z_b)$,
 >
 > $$
 > \begin{aligned}
 > T\{\hat\phi_x\hat\phi_y\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\} ={}& :\!\hat\phi_x\hat\phi_y\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: &&\text{no contraction: }1\text{ term}\\
-> &+ \overbracket{\hat\phi_x\hat\phi_y}\,:\!\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: + \overbracket{\hat\phi_x\hat\phi_{z_1}}\,:\!\hat\phi_y\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: + \cdots &&\text{one pair: }\tbinom62 = 15\text{ terms}\\
-> &+ \overbracket{\hat\phi_x\hat\phi_y}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_2}}\,:\!\hat\phi_{z_3}\hat\phi_{z_4}\!: + \overbracket{\hat\phi_x\hat\phi_{z_1}}\,\overbracket{\hat\phi_y\hat\phi_{z_2}}\,:\!\hat\phi_{z_3}\hat\phi_{z_4}\!: + \cdots &&\text{two pairs: }\tfrac12\tbinom62\tbinom42 = 45\text{ terms}\\
-> &+ \overbracket{\hat\phi_x\hat\phi_y}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_2}}\,\overbracket{\hat\phi_{z_3}\hat\phi_{z_4}} + \cdots &&\text{three pairs: }5!! = 15\text{ terms} .
+> &+ D_{xy}\,:\!\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: + D_{x1}\,:\!\hat\phi_y\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: + \cdots &&\text{one pair: }\tbinom62 = 15\text{ terms}\\
+> &+ D_{xy}\,D_{12}\,:\!\hat\phi_{z_3}\hat\phi_{z_4}\!: + D_{x1}\,D_{y2}\,:\!\hat\phi_{z_3}\hat\phi_{z_4}\!: + \cdots &&\text{two pairs: }\tfrac12\tbinom62\tbinom42 = 45\text{ terms}\\
+> &+ D_{xy}\,D_{12}\,D_{34} + \cdots &&\text{three pairs: }5!! = 15\text{ terms} .
 > \end{aligned}
 > $$
 >
-> **Step 4** (vacuum value: every normal-ordered remainder vanishes). The brackets are numbers and come out of $\langle0|\cdots|0\rangle$; every term with a remainder $:\!\cdots\!:$ of $6$, $4$ or $2$ fields gives $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2; spelled out for two fields in [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]], Step 3):
+> **Step 4** (vacuum value: every normal-ordered remainder vanishes). The contractions are numbers and come out of $\langle0|\cdots|0\rangle$; every term with a remainder $:\!\cdots\!:$ of $6$, $4$ or $2$ fields gives $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2; spelled out for two fields in [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]], Step 3):
 >
 > $$
-> \langle0|:\!\hat\phi_x\hat\phi_y\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!:|0\rangle = 0,\qquad \overbracket{\hat\phi_i\hat\phi_j}\,\langle0|:\!\hat\phi_k\hat\phi_l\hat\phi_m\hat\phi_n\!:|0\rangle = 0,\qquad \overbracket{\hat\phi_i\hat\phi_j}\,\overbracket{\hat\phi_k\hat\phi_l}\,\langle0|:\!\hat\phi_m\hat\phi_n\!:|0\rangle = 0 .
+> \langle0|:\!\hat\phi_x\hat\phi_y\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!:|0\rangle = 0,\qquad D_F(x_i - x_j)\,\langle0|:\!\hat\phi_k\hat\phi_l\hat\phi_m\hat\phi_n\!:|0\rangle = 0,\qquad D_F(x_i - x_j)\,D_F(x_k - x_l)\,\langle0|:\!\hat\phi_m\hat\phi_n\!:|0\rangle = 0 .
 > $$
 >
 > Only the $15$ complete contractions survive ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]; $5!! = 15$ pairings, [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]). Written out, with $D_{xy} = D_F(x - y)$, $D_{xa} = D_F(x - z_a)$, $D_{ya} = D_F(y - z_a)$, $D_{ab} = D_F(z_a - z_b)$:
 >
 > $$
 > \begin{aligned}
-> \overbracket{\hat\phi_x\hat\phi_y}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_2}}\,\overbracket{\hat\phi_{z_3}\hat\phi_{z_4}} &= D_{xy}D_{12}D_{34} &&\text{(a) } x\text{ with } y\\
-> \overbracket{\hat\phi_x\hat\phi_y}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_3}}\,\overbracket{\hat\phi_{z_2}\hat\phi_{z_4}} &= D_{xy}D_{13}D_{24}\\
-> \overbracket{\hat\phi_x\hat\phi_y}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_4}}\,\overbracket{\hat\phi_{z_2}\hat\phi_{z_3}} &= D_{xy}D_{14}D_{23}\\
-> \overbracket{\hat\phi_x\hat\phi_{z_1}}\,\overbracket{\hat\phi_y\hat\phi_{z_2}}\,\overbracket{\hat\phi_{z_3}\hat\phi_{z_4}} &= D_{x1}D_{y2}D_{34} &&\text{(b) } x\text{ with } z_1\\
-> \overbracket{\hat\phi_x\hat\phi_{z_1}}\,\overbracket{\hat\phi_y\hat\phi_{z_3}}\,\overbracket{\hat\phi_{z_2}\hat\phi_{z_4}} &= D_{x1}D_{y3}D_{24}\\
-> \overbracket{\hat\phi_x\hat\phi_{z_1}}\,\overbracket{\hat\phi_y\hat\phi_{z_4}}\,\overbracket{\hat\phi_{z_2}\hat\phi_{z_3}} &= D_{x1}D_{y4}D_{23}\\
-> \overbracket{\hat\phi_x\hat\phi_{z_2}}\,\overbracket{\hat\phi_y\hat\phi_{z_1}}\,\overbracket{\hat\phi_{z_3}\hat\phi_{z_4}} &= D_{x2}D_{y1}D_{34} &&\text{(b) } x\text{ with } z_2\\
-> \overbracket{\hat\phi_x\hat\phi_{z_2}}\,\overbracket{\hat\phi_y\hat\phi_{z_3}}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_4}} &= D_{x2}D_{y3}D_{14}\\
-> \overbracket{\hat\phi_x\hat\phi_{z_2}}\,\overbracket{\hat\phi_y\hat\phi_{z_4}}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_3}} &= D_{x2}D_{y4}D_{13}\\
-> \overbracket{\hat\phi_x\hat\phi_{z_3}}\,\overbracket{\hat\phi_y\hat\phi_{z_1}}\,\overbracket{\hat\phi_{z_2}\hat\phi_{z_4}} &= D_{x3}D_{y1}D_{24} &&\text{(b) } x\text{ with } z_3\\
-> \overbracket{\hat\phi_x\hat\phi_{z_3}}\,\overbracket{\hat\phi_y\hat\phi_{z_2}}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_4}} &= D_{x3}D_{y2}D_{14}\\
-> \overbracket{\hat\phi_x\hat\phi_{z_3}}\,\overbracket{\hat\phi_y\hat\phi_{z_4}}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_2}} &= D_{x3}D_{y4}D_{12}\\
-> \overbracket{\hat\phi_x\hat\phi_{z_4}}\,\overbracket{\hat\phi_y\hat\phi_{z_1}}\,\overbracket{\hat\phi_{z_2}\hat\phi_{z_3}} &= D_{x4}D_{y1}D_{23} &&\text{(b) } x\text{ with } z_4\\
-> \overbracket{\hat\phi_x\hat\phi_{z_4}}\,\overbracket{\hat\phi_y\hat\phi_{z_2}}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_3}} &= D_{x4}D_{y2}D_{13}\\
-> \overbracket{\hat\phi_x\hat\phi_{z_4}}\,\overbracket{\hat\phi_y\hat\phi_{z_3}}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_2}} &= D_{x4}D_{y3}D_{12}
+> \{x, y\}\,\{z_1, z_2\}\,\{z_3, z_4\} &\longmapsto D_{xy}D_{12}D_{34} &&\text{(a) } x\text{ with } y\\
+> \{x, y\}\,\{z_1, z_3\}\,\{z_2, z_4\} &\longmapsto D_{xy}D_{13}D_{24}\\
+> \{x, y\}\,\{z_1, z_4\}\,\{z_2, z_3\} &\longmapsto D_{xy}D_{14}D_{23}\\
+> \{x, z_1\}\,\{y, z_2\}\,\{z_3, z_4\} &\longmapsto D_{x1}D_{y2}D_{34} &&\text{(b) } x\text{ with } z_1\\
+> \{x, z_1\}\,\{y, z_3\}\,\{z_2, z_4\} &\longmapsto D_{x1}D_{y3}D_{24}\\
+> \{x, z_1\}\,\{y, z_4\}\,\{z_2, z_3\} &\longmapsto D_{x1}D_{y4}D_{23}\\
+> \{x, z_2\}\,\{y, z_1\}\,\{z_3, z_4\} &\longmapsto D_{x2}D_{y1}D_{34} &&\text{(b) } x\text{ with } z_2\\
+> \{x, z_2\}\,\{y, z_3\}\,\{z_1, z_4\} &\longmapsto D_{x2}D_{y3}D_{14}\\
+> \{x, z_2\}\,\{y, z_4\}\,\{z_1, z_3\} &\longmapsto D_{x2}D_{y4}D_{13}\\
+> \{x, z_3\}\,\{y, z_1\}\,\{z_2, z_4\} &\longmapsto D_{x3}D_{y1}D_{24} &&\text{(b) } x\text{ with } z_3\\
+> \{x, z_3\}\,\{y, z_2\}\,\{z_1, z_4\} &\longmapsto D_{x3}D_{y2}D_{14}\\
+> \{x, z_3\}\,\{y, z_4\}\,\{z_1, z_2\} &\longmapsto D_{x3}D_{y4}D_{12}\\
+> \{x, z_4\}\,\{y, z_1\}\,\{z_2, z_3\} &\longmapsto D_{x4}D_{y1}D_{23} &&\text{(b) } x\text{ with } z_4\\
+> \{x, z_4\}\,\{y, z_2\}\,\{z_1, z_3\} &\longmapsto D_{x4}D_{y2}D_{13}\\
+> \{x, z_4\}\,\{y, z_3\}\,\{z_1, z_2\} &\longmapsto D_{x4}D_{y3}D_{12}
 > \end{aligned}
 > $$
 >
@@ -247,7 +247,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > **Denominator to first order.** Wick's theorem for the four factors of $\hat\phi_I(z)^4$ ([[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]], with $z_1 = \dots = z_4 = z$ afterwards):
 >
 > $$
-> T\{\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\} = \,:\!\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: + \overbracket{\hat\phi_{z_1}\hat\phi_{z_2}}\,:\!\hat\phi_{z_3}\hat\phi_{z_4}\!: + \cdots\;(6\text{ terms}) + \overbracket{\hat\phi_{z_1}\hat\phi_{z_2}}\,\overbracket{\hat\phi_{z_3}\hat\phi_{z_4}} + \overbracket{\hat\phi_{z_1}\hat\phi_{z_3}}\,\overbracket{\hat\phi_{z_2}\hat\phi_{z_4}} + \overbracket{\hat\phi_{z_1}\hat\phi_{z_4}}\,\overbracket{\hat\phi_{z_2}\hat\phi_{z_3}} ;
+> T\{\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\} = \,:\!\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: + D_F(z_1 - z_2)\,:\!\hat\phi_{z_3}\hat\phi_{z_4}\!: + \cdots\;(6\text{ terms}) + D_F(z_1 - z_2)\,D_F(z_3 - z_4) + D_F(z_1 - z_3)\,D_F(z_2 - z_4) + D_F(z_1 - z_4)\,D_F(z_2 - z_3) ;
 > $$
 >
 > the $1 + 6$ terms with a remainder have $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2), and each complete contraction is $D_F(z - z)^2 = D_F(0)^2$. So
@@ -281,7 +281,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 ^cau-c6a-7-3
 
 > [!theorem] Theorem §C6a.7.2: Real-Scalar Lines Are Undirected; Complex-Scalar and Dirac Lines Are Oriented
-> 1. *(Real scalar.)* $D_F(-\xi) = D_F(\xi)$ and $\tilde D_F(-p) = \tilde D_F(p)$. Hence $\overbracket{\hat\phi(x)\hat\phi(y)} = \overbracket{\hat\phi(y)\hat\phi(x)}$: a line of a real-scalar diagram has no direction, and the momentum on it may be oriented either way.
+> 1. *(Real scalar.)* $D_F(-\xi) = D_F(\xi)$ and $\tilde D_F(-p) = \tilde D_F(p)$. Hence contracting $\hat\phi(x)$ with $\hat\phi(y)$ or $\hat\phi(y)$ with $\hat\phi(x)$ gives the same number, $D_F(x - y) = D_F(y - x)$: a line of a real-scalar diagram has no direction, and the momentum on it may be oriented either way.
 > 2. *(Dirac.)* The only nonzero contractions pair $\hat\psi$ with $\hat{\bar\psi}$:
 >
 > $$
@@ -420,7 +420,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > N = 2 + 4n .
 > $$
 >
-> **Step 2** (lines). A complete contraction is a product of brackets $\overbracket{\hat\phi_h\hat\phi_{h'}}$ using every field once ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]); each bracket is one line and uses two fields:
+> **Step 2** (lines). A complete contraction is a set of contracted pairs $\{h, h'\}$ using every field once ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]); each pair is one line and uses two fields:
 >
 > $$
 > \#\text{lines} = \frac N2 = \frac{2 + 4n}{2} = 2n + 1 .
@@ -457,7 +457,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > Proved in CA; each line says what the physics above relies on. The count of pairings carries the section; the other lines are the precise meaning of "diagram" and the Fourier rules used for the oriented lines.
 >
 > - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — $2k$ objects have $(2k - 1)!!$ pairings: the $15$ complete contractions of the first-order numerator (Theorem §C6a.7.1) and the $(4n + 1)!!$ of order $\lambda^n$ (Theorem §C6a.7.3).
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]] — a labelled diagram is a pairing of half-edges, a diagram is an orbit of labelled diagrams under relabelling, and the orbit is determined by the drawing: what "diagrams drawn alike stand for the same value" means (Definition §C6a.7.1, the figure after Definition §C6a.7.2).
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]] — a labelled diagram is a pairing of half-edges, a diagram is an orbit of labelled diagrams under relabelling, and the orbit is determined by the drawing: what "diagrams drawn alike stand for the same value" means (Definition §C6a.7.1, the figure after Definition §C6a.7.3).
 > - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]] — a diagram contains $n!\,(4!)^n/S$ labelled diagrams: $3 = 24/8$ and $12 = 24/2$, the coefficients $\frac18$ and $\frac12$ of Theorem §C6a.7.1.
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — part 1, relabelling $p \to -p$ under the momentum integral: $D_F(-\xi) = D_F(\xi)$, so a real-scalar line has no direction (Theorem §C6a.7.2).
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]] — part 3, the derivative rule $i\partial_\mu \to p_\mu$ for tempered distributions: $\tilde S_F(-p) \ne \tilde S_F(p)$, so a Dirac line is oriented (Theorem §C6a.7.2).

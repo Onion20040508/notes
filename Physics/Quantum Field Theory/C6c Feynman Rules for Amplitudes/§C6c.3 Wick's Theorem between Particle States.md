@@ -30,7 +30,7 @@ tags: [quantum-field-theory, level-c]
 > \overbracket{\hat\phi_I(x_a)\hat\phi_I(x_b)} = D_F(x_a - x_b), \quad \overbracket{\hat\phi_I(x)|\mathbf k\rangle} = e^{-ik\cdot x}, \quad \overbracket{\langle\mathbf p|\hat\phi_I(x)} = e^{+ip\cdot x}, \quad \overbracket{\langle\mathbf p|\mathbf k\rangle} = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k) ,
 > $$
 >
-> with no pair of two incoming or two outgoing particles. Equivalently: in Wick's theorem $T\{\cdots\} = \sum_C\prod D_F\;{:}\text{rest}{:}$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), a normal-ordered remainder contributes only through the terms in which **every** one of its fields is contracted with an external particle ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]]). Several fields and complex fields: the same, with the contractions of [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]] and [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 3.
+> with no pair of two incoming or two outgoing particles. Equivalently: in Wick's theorem $T\{\cdots\} = \sum_C\prod D_F\;{:}\text{rest}{:}$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), a normal-ordered remainder contributes only through the terms in which **every** one of its fields is contracted with an external particle ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]]). Several fields and complex fields: the same, with the contractions of [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]] and [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 3.
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free fields between free states, exact, independent of the dynamics; used with the Dyson series as in the opening.
 >
@@ -167,14 +167,14 @@ tags: [quantum-field-theory, level-c]
 > \text{term} = \prod_{\text{pieces }P}\Bigl(\int\prod_{v\in P}d^4z_v\;\prod_{\text{pairs in }P}(\text{value})\Bigr) .
 > $$
 >
-> **Step 2** (one delta per piece). A lone pair is $\overbracket{\langle\mathbf p|\mathbf k\rangle} = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k)$ (Theorem §C6c.3.1). For a piece with vertices, insert the Fourier form of each internal line; the particles enter through $e^{-ik\cdot z}$, $e^{+ip\cdot z}$ ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 2); each vertex integral gives $(2\pi)^4\delta^4$ of the momenta at that vertex ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]], 1). Doing the internal momentum integrals along a spanning tree of the piece (Step 3 of [[§C6a.12 Feynman Rules for Polynomial Interactions#^der-c6a-12-3|Derivation §C6a.12.3]]) uses all deltas but one, which is $(2\pi)^4\delta^4(\sum_{\rm in}k - \sum_{\rm out}p)$ over the particles of the piece.
+> **Step 2** (one delta per piece). A lone pair is $\overbracket{\langle\mathbf p|\mathbf k\rangle} = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k)$ (Theorem §C6c.3.1). For a piece with vertices, insert the Fourier form of each internal line; the particles enter through $e^{-ik\cdot z}$, $e^{+ip\cdot z}$ ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 2); each vertex integral gives $(2\pi)^4\delta^4$ of the momenta at that vertex ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]], 1). Doing the internal momentum integrals along a spanning tree of the piece (Step 3 of [[§C6a.13 Feynman Rules for Polynomial Interactions#^der-c6a-13-3|Derivation §C6a.13.3]]) uses all deltas but one, which is $(2\pi)^4\delta^4(\sum_{\rm in}k - \sum_{\rm out}p)$ over the particles of the piece.
 >
 > **What the derivation shows.**
 > - The delta of a piece comes from the external plane waves of that piece alone; particles in different pieces exchange no momentum. Which such terms are not scattering: [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]]; the single piece that remains: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]].
 
 ^der-c6c-3-3
 
-*Uses:* [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^der-c6a-12-3|Derivation §C6a.12.3]]
+*Uses:* [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^der-c6a-13-3|Derivation §C6a.13.3]]
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.

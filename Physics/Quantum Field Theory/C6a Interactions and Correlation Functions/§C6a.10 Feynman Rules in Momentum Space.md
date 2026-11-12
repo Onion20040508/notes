@@ -151,7 +151,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 ^thm-c6a-10-2
 
 > [!derivation]- Derivation
-> **Step 1** (the diagram in position space). Take a diagram with $V$ vertices $z_1, \dots, z_V$, $I$ internal lines (between vertices, loops included) and $r$ external points. Orient each line $\ell$, from $a_\ell$ to $b_\ell$. By [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] its value is
+> **Step 1** (the diagram in position space). Take a diagram with $V$ vertices $z_1, \dots, z_V$, $I$ internal lines (between vertices, loops included) and $n_{\rm ext}$ external points. Orient each line $\ell$, from $a_\ell$ to $b_\ell$. By [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] its value is
 >
 > $$
 > \frac1S\prod_{v=1}^V\Bigl(-i\lambda\int d^4z_v\Bigr)\prod_\ell D_F(a_\ell - b_\ell) .
@@ -177,21 +177,21 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 >
 > **Step 5** (external points). A line ending at the external point $x$ leaves its plane wave there; oriented from $x$ into the diagram it is $e^{-ip\cdot x}$: "the wave function factor for a real particle" (slide 19).
 >
-> **Step 6** (use the deltas). Each delta does one momentum integral, its $(2\pi)^4$ cancelling that integral's $(2\pi)^{-4}$ (⚑ of [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-1|Derivation §C6a.10.1]]). In a connected piece with at least one external point and at least one vertex the $V$ deltas of its vertices are independent (order the vertices along a spanning tree from an external point; each new vertex fixes the momentum of the tree line leading to it), so of its $I + r$ momentum integrals
+> **Step 6** (use the deltas). Each delta does one momentum integral, its $(2\pi)^4$ cancelling that integral's $(2\pi)^{-4}$ (⚑ of [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-1|Derivation §C6a.10.1]]). In a connected piece with at least one external point and at least one vertex the $V$ deltas of its vertices are independent (order the vertices along a spanning tree from an external point; each new vertex fixes the momentum of the tree line leading to it), so of its $I + n_{\rm ext}$ momentum integrals
 >
 > $$
-> (I + r) - V
+> (I + n_{\rm ext}) - V
 > $$
 >
 > remain. (A single line from $x$ to $y$ has one momentum and no delta.)
 >
-> ⚑ By-product: a connected graph with $N$ nodes and $M$ edges has $M - N + 1$ independent cycles. Here $N = V + r$ and $M = I + r$, so
+> ⚑ By-product: a connected graph with $N$ nodes and $M$ edges has $M - N + 1$ independent cycles. Here $N = V + n_{\rm ext}$ and $M = I + n_{\rm ext}$, so
 >
 > $$
-> L = (I + r) - (V + r) + 1 = I - V + 1, \qquad (I + r) - V = L + r - 1 :
+> L = (I + n_{\rm ext}) - (V + n_{\rm ext}) + 1 = I - V + 1, \qquad (I + n_{\rm ext}) - V = L + n_{\rm ext} - 1 :
 > $$
 >
-> one integral per loop and the external momenta but one, fixed by overall conservation. For the tadpole ($V = 1$, $I = 1$, $r = 2$): $L = 1$, two integrals ([[§C6a.10 Feynman Rules in Momentum Space#^ex-c6a-10-1|Example §C6a.10.1]]). Written here (the counting is not on the slides; PS p. 95 "integrate over each undetermined momentum"); for any valences, several pieces and the count of internal lines from the legs, with the spanning-tree proof of $M - N + 1$: [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]].
+> one integral per loop and the external momenta but one, fixed by overall conservation. For the tadpole ($V = 1$, $I = 1$, $n_{\rm ext} = 2$): $L = 1$, two integrals ([[§C6a.10 Feynman Rules in Momentum Space#^ex-c6a-10-1|Example §C6a.10.1]]). Written here (the counting is not on the slides; PS p. 95 "integrate over each undetermined momentum"); for any valences, several pieces and the count of internal lines from the legs, with the spanning-tree proof of $M - N + 1$: [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-3|Theorem §C6a.13.3]].
 >
 > **Step 7** ($S$). The coefficient $1/S$ of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]] is a number and is unchanged.
 >
@@ -230,7 +230,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 > **Step 0** (where the left side comes from). The twelve complete contractions of class (b) in Step 4 of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]],
 >
 > $$
-> \overbracket{\hat\phi_x\hat\phi_{z_a}}\,\overbracket{\hat\phi_y\hat\phi_{z_b}}\,\overbracket{\hat\phi_{z_c}\hat\phi_{z_d}} = D_F(x - z)\,D_F(y - z)\,D_F(z - z) \qquad (a \ne b),
+> \{x, z_a\}\,\{y, z_b\}\,\{z_c, z_d\} \;\longmapsto\; D_F(x - z)\,D_F(y - z)\,D_F(z - z) \qquad (a \ne b),
 > $$
 >
 > each with $-\frac{i\lambda}{4!}\int d^4z$, give $-\frac{12\,i\lambda}{24}\int d^4z\,D_F(x - z)D_F(z - z)D_F(z - y)$, the left side.
@@ -263,7 +263,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 >
 > which is the right side with $\tilde D_F(p) = \frac{i}{p^2 - m^2 + i\varepsilon}$.
 >
-> **Step 5** (read off). The momentum $p$ enters at $x$ and leaves at $y$, unchanged by the vertex; $k$ circulates in the loop and is integrated over, undetermined by conservation ($L = 1$, $r = 2$: two integrals, [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]). The bracket is the loop with its vertex and symmetry factor.
+> **Step 5** (read off). The momentum $p$ enters at $x$ and leaves at $y$, unchanged by the vertex; $k$ circulates in the loop and is integrated over, undetermined by conservation ($L = 1$, $n_{\rm ext} = 2$: two integrals, [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]). The bracket is the loop with its vertex and symmetry factor.
 >
 > (The user's notes call this "the second-order term of the two-point function"; it is the term of first order in $\lambda$.)
 >
@@ -332,7 +332,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 >
 > Take $\hat{\mathcal H}_{\rm int} = \frac{\lambda}{4!}:\!\hat\phi_I^4\!:$ instead of $\frac{\lambda}{4!}\hat\phi_I^4$ (a choice of these notes, not of the course or PS). Write $D_0 = D_F(0)$, $D_{xz} = D_F(x - z)$ etc.
 >
-> **Step 1** (normal order at one point). Wick's theorem at coincident points (formal, as in [[§C6a.6 Wick's Theorem#^cau-c6a-6-2|§C6a.6, Caution: In what sense Wick's theorem holds]]) with every bracket $= D_0$: $\hat\phi^2 = \,:\!\hat\phi^2\!: + D_0$ and $\hat\phi^4 = \,:\!\hat\phi^4\!: + 6D_0:\!\hat\phi^2\!: + 3D_0^2$ ([[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]: 6 one-pair and 3 two-pair terms). Hence
+> **Step 1** (normal order at one point). Wick's theorem at coincident points (formal, as in [[§C6a.6 Wick's Theorem#^cau-c6a-6-2|§C6a.6, Caution: In what sense Wick's theorem holds]]) with every contraction $= D_0$: $\hat\phi^2 = \,:\!\hat\phi^2\!: + D_0$ and $\hat\phi^4 = \,:\!\hat\phi^4\!: + 6D_0:\!\hat\phi^2\!: + 3D_0^2$ ([[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]: 6 one-pair and 3 two-pair terms). Hence
 >
 > $$
 > :\!\hat\phi_I(z)^4\!: = \hat\phi_I(z)^4 - 6D_0\bigl(\hat\phi_I(z)^2 - D_0\bigr) - 3D_0^2 = \hat\phi_I(z)^4 - 6D_0\,\hat\phi_I(z)^2 + 3D_0^2 .
@@ -344,7 +344,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 > \langle0|T\{\hat\phi_x\hat\phi_y\hat\phi_I(z)^4\}|0\rangle = 3D_{xy}D_0^2 + 12D_{xz}D_{yz}D_0, \quad \langle0|T\{\hat\phi_x\hat\phi_y\hat\phi_I(z)^2\}|0\rangle = D_{xy}D_0 + 2D_{xz}D_{yz}, \quad \langle0|T\{\hat\phi_x\hat\phi_y\}|0\rangle = D_{xy} ,
 > $$
 >
-> the middle one from the $3!! = 3$ pairings $\overbracket{\hat\phi_x\hat\phi_y}\,\overbracket{\hat\phi_{z_1}\hat\phi_{z_2}}$, $\overbracket{\hat\phi_x\hat\phi_{z_1}}\,\overbracket{\hat\phi_y\hat\phi_{z_2}}$, $\overbracket{\hat\phi_x\hat\phi_{z_2}}\,\overbracket{\hat\phi_y\hat\phi_{z_1}}$.
+> the middle one from the $3!! = 3$ pairings $\{x, y\}\,\{z_1, z_2\}$, $\{x, z_1\}\,\{y, z_2\}$, $\{x, z_2\}\,\{y, z_1\}$.
 >
 > **Step 3** (combine).
 >
@@ -352,7 +352,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 > \langle0|T\{\hat\phi_x\hat\phi_y:\!\hat\phi_I(z)^4\!:\}|0\rangle = \bigl(3D_{xy}D_0^2 + 12D_{xz}D_{yz}D_0\bigr) - 6D_0\bigl(D_{xy}D_0 + 2D_{xz}D_{yz}\bigr) + 3D_0^2D_{xy} = (3 - 6 + 3)D_{xy}D_0^2 + (12 - 12)D_{xz}D_{yz}D_0 = 0 .
 > $$
 >
-> Every one of the 15 contractions of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]] contains a bracket $\overbracket{\hat\phi_{z_a}\hat\phi_{z_b}}$ inside the vertex, and all are removed: neither the tadpole nor the figure-eight appears, exactly the diagrams with $D_F(0)$.
+> Every one of the 15 contractions of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]] contains a pair $\{z_a, z_b\}$ inside the vertex, and all are removed: neither the tadpole nor the figure-eight appears, exactly the diagrams with $D_F(0)$.
 >
 > In general (stated, not proved here: Wick's theorem for products with normal-ordered blocks omits the contractions inside a block) no self-contraction at a vertex survives. This removes the vacuum part of $\hat\phi^4$ at a point ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|§C6a.1, ★ Remark: In what sense φ̂⁴(x) is defined]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-7|Theorem §C2b.7.7]]) but not the divergences of higher loops. The course and PS keep $\hat\phi^4$ without colons.
 >

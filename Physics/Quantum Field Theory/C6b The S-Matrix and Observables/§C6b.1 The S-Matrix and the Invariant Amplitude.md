@@ -7,7 +7,7 @@ section: C6b.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6a.12 Feynman Rules for Polynomial Interactions]] · ↑ [[· C6b The S-Matrix and Observables]] · [[§C6b.2 Transition Probabilities in a Box]] →
+← [[§C6a.13 Feynman Rules for Polynomial Interactions]] · ↑ [[· C6b The S-Matrix and Observables]] · [[§C6b.2 Transition Probabilities in a Box]] →
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.1 (Definition "The $S$-matrix", paragraphs "'Matrix' is a historical term", "The fundamental observable?", "Relation to Chapter 13 (filled in)", Definition "The invariant amplitude $\mathcal M$", Derivation "Three properties of $\mathcal M$ (filled in)", Principle "Dynamics versus kinematics") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slides 4–7, and transcript · PHY 513 Lecture 16 (Larsen, 2 Nov 2026), Part A, slides 4–7, and transcript (cluster decomposition, in and out states) · the user's PHY 513 notes, Lecture 16 update, §16.1–§16.2 · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 102–104, eqs. (4.70)–(4.73); §4.6, pp. 108–109, eqs. (4.87)–(4.90) · Yu Zhao-Huan, 量子场论讲义, §6.2, eqs. (6.122)–(6.127); §6.5, eqs. (6.272)–(6.275).*
 
