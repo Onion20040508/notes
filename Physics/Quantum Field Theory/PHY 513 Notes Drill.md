@@ -5329,7 +5329,7 @@ $\Lambda_{1/2}(\omega) = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ acting on $\p
 
 ### [B] Spin matrices of the Dirac representation
 
-$S^i = \frac12\varepsilon^{ijk}S^{jk}$, $\Sigma^i = 2S^i$; in the chiral basis $\Sigma^i = \operatorname{diag}(\sigma^i, \sigma^i)$, see Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|§C5a.3.2]] Spin Matrices of the Dirac Representation. *Source: Lecture 7, slide "Spinors and Rotation" · Lecture 9, slide "Solution of the Dirac Equation: Step 3"*
+$S^i = \frac12\varepsilon^{ijk}S^{jk}$, $\Sigma^i = 2S^i$; in the chiral basis $\Sigma^i = \operatorname{diag}(\sigma^i, \sigma^i)$, see Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-3|§C5a.3.3]] Spin Matrices of the Dirac Representation. *Source: Lecture 7, slide "Spinors and Rotation" · Lecture 9, slide "Solution of the Dirac Equation: Step 3"*
 
 ^nd-def-c5a-3-2
 
@@ -5340,7 +5340,7 @@ $S^i = \frac12\varepsilon^{ijk}S^{jk}$, $\Sigma^i = 2S^i$; in the chiral basis $
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|§C5a.3.2]] Spin Matrices of the Dirac Representation; the slide's factor: [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^cau-c5a-10-1|§C5a.10, Caution: The slide's "angular momentum" is twice the angular momentum]].
+> - Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-3|§C5a.3.3]] Spin Matrices of the Dirac Representation; the slide's factor: [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^cau-c5a-10-1|§C5a.10, Caution: The slide's "angular momentum" is twice the angular momentum]].
 
 ### [B] Weyl matrices and Weyl spinors
 
@@ -5359,7 +5359,7 @@ $\Lambda_L = e^{-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\bolds
 
 ### [B] The Dirac conjugate
 
-$\bar\psi \equiv \psi^\dagger\gamma^0$, a row; not the Hermitian conjugate; basis-free it is the functional $h_D(\psi, \cdot)$ of the Dirac form, and $\psi \mapsto \bar\psi$ is conjugate-linear, see Definition [[§C5a.2 The Dirac Form#^def-c5a-2-1|§C5a.2.1]] The Dirac Conjugate. *Source: Lecture 8, slide "The Dirac Conjugate Spinor"*
+$\bar\psi \equiv \psi^\dagger\gamma^0$, a row; not the Hermitian conjugate; basis-free it is the functional $h_D(\psi, \cdot)$ of the Dirac form, and $\psi \mapsto \bar\psi$ is conjugate-linear, see Definition [[§C5a.2 The Dirac Form#^def-c5a-2-2|§C5a.2.2]] The Dirac Conjugate. *Source: Lecture 8, slide "The Dirac Conjugate Spinor"*
 
 ^nd-def-c5a-2-1
 
@@ -5370,7 +5370,7 @@ $\bar\psi \equiv \psi^\dagger\gamma^0$, a row; not the Hermitian conjugate; basi
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7 (conjugating bilinears)
-> - Definition [[§C5a.2 The Dirac Form#^def-c5a-2-1|§C5a.2.1]] The Dirac Conjugate; why $\psi^\dagger\psi$ fails: [[§C5a.6 The Dirac Conjugate and the Bilinears#^rem-c5a-6-1|§C5a.6, Remark: Why ψ†ψ is not a scalar]]; changes of basis: Theorem [[§C5a.2 The Dirac Form#^thm-c5a-2-3|§C5a.2.3]] Which Changes of Basis Preserve ψ̄; $\gamma^0$ in two roles: [[§C5a.2 The Dirac Form#^rem-c5a-2-1|§C5a.2, Remark: γ⁰ in two roles]].
+> - Definition [[§C5a.2 The Dirac Form#^def-c5a-2-2|§C5a.2.2]] The Dirac Conjugate; why $\psi^\dagger\psi$ fails: [[§C5a.6 The Dirac Conjugate and the Bilinears#^rem-c5a-6-1|§C5a.6, Remark: Why ψ†ψ is not a scalar]]; changes of basis: Theorem [[§C5a.2 The Dirac Form#^thm-c5a-2-3|§C5a.2.3]] Which Changes of Basis Preserve ψ̄; $\gamma^0$ in two roles: [[§C5a.2 The Dirac Form#^rem-c5a-2-1|§C5a.2, Remark: γ⁰ in two roles]].
 
 ### [B] Fermion bilinear
 
@@ -5388,7 +5388,7 @@ $\bar\psi\,\Gamma\,\chi$ with $\Gamma$ a constant $4\times4$ matrix, usually a s
 
 ### [B] The sixteen bilinears
 
-$\mathsf S = \bar\psi\psi$, $\mathsf P = \bar\psi i\gamma^5\psi$, $\mathsf V^\mu = \bar\psi\gamma^\mu\psi$, $\mathsf A^\mu = \bar\psi\gamma^\mu\gamma^5\psi$, $\mathsf T^{\mu\nu} = \bar\psi\sigma^{\mu\nu}\psi$, with $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu] = 2S^{\mu\nu}$: $1 + 1 + 4 + 4 + 6 = 16$, see Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|§C5a.6.2]] The Sixteen Bilinears. *Source: Lecture 8, slide "Fermion Bilinears" · Lecture 11, slide 19 (names) · PS §3.4*
+$\mathsf S = \bar\psi\psi$, $\mathsf P = \bar\psi i\gamma^5\psi$, $\mathsf V^\mu = \bar\psi\gamma^\mu\psi$, $\mathsf A^\mu = \bar\psi\gamma^\mu\gamma^5\psi$, $\mathsf T^{\mu\nu} = \bar\psi\sigma^{\mu\nu}\psi$, with $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu] = 2S^{\mu\nu}$: $1 + 1 + 4 + 4 + 6 = 16$, see Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|§C5a.6.3]] The Sixteen Bilinears. *Source: Lecture 8, slide "Fermion Bilinears" · Lecture 11, slide 19 (names) · PS §3.4*
 
 ^nd-def-c5a-6-2
 
@@ -5399,7 +5399,7 @@ $\mathsf S = \bar\psi\psi$, $\mathsf P = \bar\psi i\gamma^5\psi$, $\mathsf V^\mu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|§C5a.6.2]] The Sixteen Bilinears; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; reality and the $i$: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|§C5a.6.4]] The Bilinears Are Real; basis of $4\times4$ matrices: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis, Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|§CB.18.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
+> - Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|§C5a.6.3]] The Sixteen Bilinears; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; reality and the $i$: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|§C5a.6.4]] The Bilinears Are Real; basis of $4\times4$ matrices: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis, Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|§CB.18.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
 
 ### [B] The matrix γ⁵
 
@@ -5448,7 +5448,7 @@ $(i\gamma^\mu\partial_\mu - m)\psi(x) = 0$, four coupled first-order linear PDEs
 
 ### [B] Feynman slash
 
-$\slashed a \equiv \gamma^\mu a_\mu = \gamma^0a_0 + \gamma^ia_i$; the Dirac equation is $(i\slashed\partial - m)\psi = 0$; in the chiral basis $\slashed p = \begin{pmatrix}0 & p\cdot\sigma\\ p\cdot\bar\sigma & 0\end{pmatrix}$, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|§C5a.7.2]] Feynman Slash. *Source: Lecture 9, slide "Completeness for Dirac Spinors: the Result" ("Notation: γ^μp_μ ≡ p̸")*
+$\slashed a \equiv \gamma^\mu a_\mu = \gamma^0a_0 + \gamma^ia_i$; the Dirac equation is $(i\slashed\partial - m)\psi = 0$; in the chiral basis $\slashed p = \begin{pmatrix}0 & p\cdot\sigma\\ p\cdot\bar\sigma & 0\end{pmatrix}$, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Feynman Slash. *Source: Lecture 9, slide "Completeness for Dirac Spinors: the Result" ("Notation: γ^μp_μ ≡ p̸")*
 
 ^nd-def-c5a-7-2
 
@@ -5459,7 +5459,7 @@ $\slashed a \equiv \gamma^\mu a_\mu = \gamma^0a_0 + \gamma^ia_i$; the Dirac equa
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|§C5a.7.2]] Feynman Slash; slash algebra: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|§C5a.14.1]] Slash Algebra; the restricted sense: Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-9|§C5a.12.9]] The Spin Sums Are Covariant.
+> - Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Feynman Slash; slash algebra: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|§C5a.14.1]] Slash Algebra; the restricted sense: Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-9|§C5a.12.9]] The Spin Sums Are Covariant.
 
 ### [B] The free Dirac field and its Lagrangian
 
@@ -5478,7 +5478,7 @@ $\mathcal L = \bar\psi(i\gamma^\mu\partial_\mu - m)\psi$, with $\psi$ and $\bar\
 
 ### [B] The single-particle Hamiltonian
 
-$H_{\text{s.p.}} = \gamma^0(-i\boldsymbol\gamma\cdot\nabla + m) = -i\boldsymbol\alpha\cdot\nabla + \beta m$, $\boldsymbol\alpha = \gamma^0\boldsymbol\gamma$, $\beta = \gamma^0$, Hermitian; $\mathcal H = \psi^\dagger H_{\text{s.p.}}\psi$, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Single-Particle Hamiltonian. *Source: Lecture 10, slide 16 · the user's notes Ch. 10 §10.5 · PS eqs. (3.84)–(3.85)*
+$H_{\text{s.p.}} = \gamma^0(-i\boldsymbol\gamma\cdot\nabla + m) = -i\boldsymbol\alpha\cdot\nabla + \beta m$, $\boldsymbol\alpha = \gamma^0\boldsymbol\gamma$, $\beta = \gamma^0$, Hermitian; $\mathcal H = \psi^\dagger H_{\text{s.p.}}\psi$, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-4|§C5a.7.4]] Single-Particle Hamiltonian. *Source: Lecture 10, slide 16 · the user's notes Ch. 10 §10.5 · PS eqs. (3.84)–(3.85)*
 
 ^nd-def-c5a-7-3
 
@@ -5489,7 +5489,7 @@ $H_{\text{s.p.}} = \gamma^0(-i\boldsymbol\gamma\cdot\nabla + m) = -i\boldsymbol\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Single-Particle Hamiltonian; names: [[§C5a.7 The Dirac Equation and Its Lagrangian#^cau-c5a-7-2|§C5a.7, Caution: Names for the single-particle Hamiltonian]]; Hermiticity: step 5 of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-2|Derivation §C5a.9.2]].
+> - Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-4|§C5a.7.4]] Single-Particle Hamiltonian; names: [[§C5a.7 The Dirac Equation and Its Lagrangian#^cau-c5a-7-2|§C5a.7, Caution: Names for the single-particle Hamiltonian]]; Hermiticity: step 5 of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-2|Derivation §C5a.9.2]].
 
 ### [B] Weyl fields and the Weyl equations
 
@@ -6893,7 +6893,7 @@ With $H[\psi, \pi] = \int d^3x\,(-i\pi)H_{\rm s.p.}\psi$, Hamilton's equations a
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2 (index calculus).
-> - Steps 1–6 of the derivation under Theorem [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-3|§C5b.1.3]] Hamilton's Equations of the Dirac Field; $H_{\rm s.p.}$: Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Single-Particle Hamiltonian.
+> - Steps 1–6 of the derivation under Theorem [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-3|§C5b.1.3]] Hamilton's Equations of the Dirac Field; $H_{\rm s.p.}$: Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-4|§C5a.7.4]] Single-Particle Hamiltonian.
 
 ### [A] Fields ⇔ oscillators: the mode algebra ★★ [class exercise, Lecture 10]
 
@@ -6976,7 +6976,7 @@ $H_{\rm s.p.} = \gamma^0(-i\boldsymbol\gamma\cdot\nabla + m)$ has $H_{\rm s.p.}u
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Steps 1–4 under Theorem [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|§C5b.3.1]] The Single-Particle Hamiltonian on Plane Waves; definition Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Single-Particle Hamiltonian; [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^cau-c5b-3-1|§C5b.3, Caution: Negative energies are a problem only if ψ is a wave function]].
+> - Steps 1–4 under Theorem [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|§C5b.3.1]] The Single-Particle Hamiltonian on Plane Waves; definition Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-4|§C5a.7.4]] Single-Particle Hamiltonian; [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^cau-c5b-3-1|§C5b.3, Caution: Negative energies are a problem only if ψ is a wave function]].
 
 ### [A] The Hamiltonian in modes, before any algebra ★★ [class exercise, Lecture 10]
 
@@ -7308,7 +7308,7 @@ $S_F(x - y) = \langle0|T\{\hat\psi(x)\hat{\bar\psi}(y)\}|0\rangle = \int\frac{d^
 
 ### [B] The Dirac propagator as a distribution and its matrix form ★
 
-$\tilde S^\varepsilon_F \to i(\slashed p + m)\mathcal P\frac{1}{p^2 - m^2} + \pi(\slashed p + m)\delta(p^2 - m^2)$ in $\mathcal S'$, and $\tilde S_F = \frac{i}{\slashed p - m + i\varepsilon}$ is a matrix inverse taken before the limit, see Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|§C5b.8.7]] The Dirac Propagator as a Distribution and Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-8|§C5b.8.8]] The Matrix Form of the Propagator. *Source: PS §3.5, eqs. (3.120)–(3.121) · the user's notes Ch. 10*
+$\tilde S^\varepsilon_F \to i(\slashed p + m)\mathcal P\frac{1}{p^2 - m^2} + \pi(\slashed p + m)\delta(p^2 - m^2)$ in $\mathcal S'$, and $\tilde S_F = \frac{i}{\slashed p - m + i\varepsilon}$ is a matrix inverse taken before the limit, see Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|§C5b.8.4]] The Dirac Propagator as a Distribution and Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-8|§C5b.8.8]] The Matrix Form of the Propagator. *Source: PS §3.5, eqs. (3.120)–(3.121) · the user's notes Ch. 10*
 
 ^nd-thm-c5b-8-8
 
@@ -7319,7 +7319,7 @@ $\tilde S^\varepsilon_F \to i(\slashed p + m)\mathcal P\frac{1}{p^2 - m^2} + \pi
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13 (Sokhotski–Plemelj), K5.
-> - Steps 1–4 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|§C5b.8.7]] The Dirac Propagator as a Distribution; steps 1–3 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-8|§C5b.8.8]] The Matrix Form of the Propagator.
+> - Steps 1–4 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|§C5b.8.4]] The Dirac Propagator as a Distribution; steps 1–3 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-8|§C5b.8.8]] The Matrix Form of the Propagator.
 
 ### [B] The anticommutators are identities after smearing ★
 
@@ -7460,7 +7460,7 @@ $\mathsf S = \bar\psi\psi$, $\mathsf P = \bar\psi\,i\gamma^5\psi$, $\mathsf V^\m
 - [ ] Q4 **[conv]** What is "$(-)^\mu$", why is it not a tensor, and why did Larsen call "$\mathsf V^\mu \to \mathsf V_\mu$" abusive notation? How do the notes write the rule instead?
 
 > [!tip]- Hints: route in the notes
-> - [[§C9.4 Fermion Bilinears under Parity#^cau-c9-4-1|§C9.4, Caution: The i in the pseudoscalar]], [[§C9.4 Fermion Bilinears under Parity#^cau-c9-4-2|§C9.4, Caution: Slide 19's γ⁵]], [[§C9.4 Fermion Bilinears under Parity#^cau-c9-4-3|§C9.4, Caution: The (−1)^μ notation and the lowered index of slide 23]]; definitions Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|§C5a.6.2]] The Sixteen Bilinears.
+> - [[§C9.4 Fermion Bilinears under Parity#^cau-c9-4-1|§C9.4, Caution: The i in the pseudoscalar]], [[§C9.4 Fermion Bilinears under Parity#^cau-c9-4-2|§C9.4, Caution: Slide 19's γ⁵]], [[§C9.4 Fermion Bilinears under Parity#^cau-c9-4-3|§C9.4, Caution: The (−1)^μ notation and the lowered index of slide 23]]; definitions Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|§C5a.6.3]] The Sixteen Bilinears.
 
 ### [B] Discrete symmetries: optional, mandatory, and in nature
 

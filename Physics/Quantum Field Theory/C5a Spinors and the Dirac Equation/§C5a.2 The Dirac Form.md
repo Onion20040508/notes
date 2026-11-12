@@ -46,20 +46,33 @@ Which pairing of two spinors does the Clifford structure single out, and what do
 
 *Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
 
-## The Dirac conjugate
+## The Dirac form and the Dirac conjugate
 
-> [!definition] Definition §C5a.2.1: The Dirac Conjugate
+> [!definition] Definition §C5a.2.1: The Dirac Form
+> In a Hermitian basis, $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]; as mathematics [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]]), the **Dirac form** is the Hermitian form on $V$
+>
+> $$
+> h_D(\chi, \psi) = \chi^\dagger\gamma^0\psi ,
+> $$
+>
+> with matrix $\gamma^0$ (as mathematics [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-15|Def. §CB.13.15]]): conjugate-linear in $\chi$ and linear in $\psi$. That this form is Lorentz invariant is [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]].
+>
+> *Source: the user's PHY 513 notes, Ch. 8 §8.3 ("Each spinor slot has its own invariant form in place of $g$: $\gamma^0$ for Dirac spinors") · PS §3.2, p. 43, eq. (3.32) (the pairing $\psi^\dagger\gamma^0\psi$) · the form-theoretic formulation written here*
+
+^def-c5a-2-1
+
+> [!definition] Definition §C5a.2.2: The Dirac Conjugate
 > The **Dirac conjugate** of a Dirac spinor (or field) $\psi$ is the row
 >
 > $$
 > \bar\psi \equiv \psi^\dagger\gamma^0 .
 > $$
 >
-> It is not the Hermitian conjugate: the extra $\gamma^0$ is essential. Here $\gamma^0$ is the matrix of the **Dirac form** $h_D(\chi, \psi) = \chi^\dagger\gamma^0\psi$, a Hermitian form on $V$ defined in a Hermitian basis, $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]; as mathematics [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]], [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-15|Def. §CB.13.15]]), so $\bar\chi\psi = h_D(\chi, \psi)$; that this form is Lorentz invariant is [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]. Basis-free, $\bar\psi$ is the linear functional $h_D(\psi, \cdot\,) \in V'$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-6|Def. §CB.0.6]]), and $\psi \mapsto \bar\psi$ is conjugate-linear.
+> It is not the Hermitian conjugate: the extra $\gamma^0$ is essential. Here $\gamma^0$ is the matrix of the Dirac form $h_D$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), so $\bar\chi\psi = h_D(\chi, \psi)$. Basis-free, $\bar\psi$ is the linear functional $h_D(\psi, \cdot\,) \in V'$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-6|Def. §CB.0.6]]), and $\psi \mapsto \bar\psi$ is conjugate-linear.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.7 (Definition "The Dirac conjugate", eq. (psibar)) · PHY 513 Lecture 8, Part B · PS §3.2, eq. (3.32) · Yu §5.3, eq. (5.90) · the functional reading written here*
 
-^def-c5a-2-1
+^def-c5a-2-2
 
 The components of $\bar\psi$: $\bar\psi(\chi) = h_D(\psi, \chi) = \sum_b(\psi^\dagger\gamma^0)_b\chi_b$, so by Def. §CB.0.6 its row is $\psi^\dagger\gamma^0$; conjugate-linearity is $(\lambda\psi)^\dagger = \lambda^{\ast}\psi^\dagger$.
 
@@ -80,7 +93,7 @@ The components of $\bar\psi$: $\bar\psi(\chi) = h_D(\psi, \chi) = \sum_b(\psi^\d
 ## Which changes of basis preserve the Dirac conjugate
 
 > [!theorem] Theorem §C5a.2.3: Which Changes of Basis Preserve ψ̄
-> Let $e$ be a Hermitian basis, $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]; [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]]), $U$ any invertible change-of-basis matrix ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-4|Def. §CB.0.4]]), $\psi' = U\psi$, $\gamma'^\mu = U\gamma^\mu U^{-1}$, and $\bar\psi = \psi^\dagger\gamma^0$ the Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]).
+> Let $e$ be a Hermitian basis, $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]; [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]]), $U$ any invertible change-of-basis matrix ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-4|Def. §CB.0.4]]), $\psi' = U\psi$, $\gamma'^\mu = U\gamma^\mu U^{-1}$, and $\bar\psi = \psi^\dagger\gamma^0$ the Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-2|Def. §C5a.2.2]]).
 > 1. The Dirac-conjugate formula applied in the new basis computes the same $\bar\psi\chi$, $\psi'^\dagger\gamma'^0\chi' = \bar\psi\chi$ for all $\psi, \chi$, iff $U$ is unitary; a new Hermitian basis with $U^\dagger U = c\,\mathbb 1$ multiplies it by $c$ ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-18|Theorem §CB.13.18]]).
 > 2. For unitary $U$: $\psi'^\dagger = \psi^\dagger U^{-1}$, $\bar\psi' = \bar\psi\,U^{-1}$, and every bilinear $\bar\psi M\chi$ with $M \in \operatorname{End}(V)$ ($M' = UMU^{-1}$) is unchanged.
 >
@@ -101,7 +114,7 @@ The components of $\bar\psi$: $\bar\psi(\chi) = h_D(\psi, \chi) = \sum_b(\psi^\d
 
 ^der-c5a-2-3
 
-*Uses:* [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-18|Theorem §CB.13.18]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]]
+*Uses:* [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-18|Theorem §CB.13.18]], [[§C5a.2 The Dirac Form#^def-c5a-2-2|Def. §C5a.2.2]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]]
 
 > [!remark] Remark: γ⁰ in two roles
 > The matrix $\gamma^0$ appears in two different jobs. As the matrix of the Dirac map $\Gamma^0$ it is an operator, slots $V\otimes V'$, and transforms as $U\gamma^0U^{-1}$; it enters the Dirac equation $i\gamma^0\partial_0\psi + \dots$. As the matrix of the Dirac form it pairs two spinors, $\bar\chi\psi = \chi^\dagger\gamma^0\psi$, and transforms as $(U^{-1})^\dagger\gamma^0U^{-1}$ (Theorem §CB.9.2). In a Hermitian basis the two arrays coincide; after a non-unitary change of basis they differ, and the formula $\bar\psi = \psi^\dagger\gamma^0$, which silently identifies them, stops computing the Dirac form (Theorem §C5a.2.3, 1). The same double role is played by $g_{\mu\nu}$ for vectors in an orthonormal frame, and the same caution applies to non-orthonormal frames. Under Lorentz transformations the form role is the one preserved: $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]; [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], 2).
@@ -127,7 +140,7 @@ The components of $\bar\psi$: $\bar\psi(\chi) = h_D(\psi, \chi) = \sum_b(\psi^\d
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-17|Theorem §CB.13.17]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-17|Derivation]] — $h_D$ has signature $(2, 2)$: $\bar\psi\psi$ is indefinite; physics form: [[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]].
 >
 > The Dirac conjugate below is the partial evaluation of the form, a dual spinor:
-> - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-6|Def. §CB.0.6]] — dual spinor space and dual basis ($\bar\psi \in V'$, Def. §C5a.2.1).
+> - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-6|Def. §CB.0.6]] — dual spinor space and dual basis ($\bar\psi \in V'$, Def. §C5a.2.2).
 >
 > Theorem §C5a.2.3 combines the change-of-basis rules, Pauli's theorem (part 2: Hermitian bases are related by unitary matrices) and the theorem on the Dirac form under a change of basis:
 > - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-4|Def. §CB.0.4]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]] with [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-5|Derivation]] — the change-of-basis matrix; $\psi' = U\psi$, $M' = UMU^{-1}$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]]).

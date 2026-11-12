@@ -468,7 +468,7 @@ $$
 > |---|---|---|---|
 > | what changes | the description (basis $e \to e'$) | the configuration (moved by $\Lambda$) | the state of the system, by $U(\Lambda)$ |
 > | group | $GL(V)$, unitary for $\bar\psi$ to keep its form (Theorem §C5a.2.3) | $SL(2, \mathbb C)$ on $V$ together with $SO^+(1,3)$ on $M$ ([[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9\|Theorem §CB.16.9]]) | unitary operators on the Hilbert space ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1\|Principle §C3.4.1]]) |
-> | $\psi$ | $\psi'(x) = U\psi(x)$, same point | $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1\|Def. §C5a.3.1]]) | $U(\Lambda)^{-1}\hat\psi(x)U(\Lambda) = \Lambda_{1/2}\hat\psi(\Lambda^{-1}x)$ ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^pr-c3-5-1\|Principle §C3.5.1]]) |
+> | $\psi$ | $\psi'(x) = U\psi(x)$, same point | $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2\|Def. §C5a.3.2]]) | $U(\Lambda)^{-1}\hat\psi(x)U(\Lambda) = \Lambda_{1/2}\hat\psi(\Lambda^{-1}x)$ ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^pr-c3-5-1\|Principle §C3.5.1]]) |
 > | $\gamma^\mu$ | $U\gamma^\mu U^{-1}$ | unchanged (Theorem §CB.18.8) | unchanged |
 > | $\partial_\mu$ | unchanged | $\Lambda_\mu{}^\nu\partial_\nu$ (chain rule) | as for the classical field |
 > | acts on | spinor index only | spinor index and argument | operator nature (sandwich) and, through the law, spinor index and argument |

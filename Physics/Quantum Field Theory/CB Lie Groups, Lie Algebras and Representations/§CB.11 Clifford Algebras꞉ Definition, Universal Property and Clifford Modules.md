@@ -242,7 +242,7 @@ The course's Clifford module (PHY 513 Lecture 7, Part B): four matrices, or four
 >
 > **What the derivation shows**
 > - The algebra says exactly "the $\gamma$'s square to the metric and anticommute"; part 2 is the same statement for every direction at once.
-> - Used next: Hermiticity (Theorem §C5a.2.1), the sixteen products (Theorem §CB.12.9), Dirac ⇒ Klein–Gordon ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), the slash algebra ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]).
+> - Used next: Hermiticity (Theorem §C5a.2.1), the sixteen products (Theorem §CB.12.9), Dirac ⇒ Klein–Gordon ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), the slash algebra ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]]).
 > - The split is the working trick for products of two γ's. With $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$ it reads $\gamma^\mu\gamma^\nu = g^{\mu\nu} - i\sigma^{\mu\nu}$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]); it gives the second form of the spinor generators (Def. §CB.14.16 in §C5a.3), $\slashed a\slashed b = a\cdot b - i\sigma^{\mu\nu}a_\mu b_\nu$ ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]]), and, iterated, the reduction of any product of γ's to antisymmetrized products ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|Theorem §C5a.14.8]]).
 
 ^der-cb-11-12

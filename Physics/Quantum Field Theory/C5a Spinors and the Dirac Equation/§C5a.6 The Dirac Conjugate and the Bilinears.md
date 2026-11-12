@@ -27,7 +27,7 @@ Which numbers built from two spinors do all observers agree on, and which Lorent
 ^rem-c5a-6-1
 
 > [!theorem] Theorem §C5a.6.1: The Dirac Conjugate Transforms with the Inverse
-> If $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]), its Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]) transforms as
+> If $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), its Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-2|Def. §C5a.2.2]]) transforms as
 >
 > $$
 > \bar\psi'(x) = \bar\psi(\Lambda^{-1}x)\,\Lambda_{1/2}^{-1} ,
@@ -35,7 +35,7 @@ Which numbers built from two spinors do all observers agree on, and which Lorent
 >
 > and for any two Dirac fields $\psi$, $\chi$ the number $\bar\psi\chi = \psi^\dagger\gamma^0\chi$ is a Lorentz scalar field ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]), $(\bar\psi'\chi')(x) = (\bar\psi\chi)(\Lambda^{-1}x)$. Moreover $(\bar\psi)^\dagger = \gamma^0\psi$.
 >
-> *Model:* none (a representation fact); *applies:* any Dirac field obeying the law of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]], independent of the dynamics, off shell included.
+> *Model:* none (a representation fact); *applies:* any Dirac field obeying the law of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]], independent of the dynamics, off shell included.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.7 (Derivation, Step 4; Definition "The Dirac conjugate") · PHY 513 Lecture 8, Part B · PS §3.2, eq. (3.33) · Yu §5.3, eqs. (5.91)–(5.92)*
 
@@ -59,19 +59,19 @@ Which numbers built from two spinors do all observers agree on, and which Lorent
 
 ^der-c5a-6-1
 
-*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]
+*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], [[§C5a.2 The Dirac Form#^def-c5a-2-2|Def. §C5a.2.2]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]
 
 ## Bilinears
 
 > [!definition] Definition §C5a.6.1: Fermion Bilinear
-> A **fermion bilinear** is $\bar\psi\,\Gamma\,\chi$, with $\psi$, $\chi$ Dirac fields ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]), $\bar\psi$ the Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]) (often $\chi = \psi$) and $\Gamma$ a constant $4\times4$ matrix, usually a product ("string") of $\gamma$ matrices. It is a number (row times matrix times column) and carries no spinor index.
+> A **fermion bilinear** is $\bar\psi\,\Gamma\,\chi$, with $\psi$, $\chi$ Dirac fields ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), $\bar\psi$ the Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-2|Def. §C5a.2.2]]) (often $\chi = \psi$) and $\Gamma$ a constant $4\times4$ matrix, usually a product ("string") of $\gamma$ matrices. It is a number (row times matrix times column) and carries no spinor index.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.9 (opening) · PHY 513 Lecture 8, Part B ("Fermion Bilinears") · PS §3.4, p. 49 · Yu §5.3, after eq. (5.92)*
 
 ^def-c5a-6-1
 
 > [!theorem] Theorem §C5a.6.2: Scalar, Vector and Tensor Bilinears
-> Under $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; and likewise $\chi$), a bilinear ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-1|Def. §C5a.6.1]]) transforms as $\Lambda_{1/2}^{-1}\Gamma\Lambda_{1/2}$ does. In particular, with $y = \Lambda^{-1}x$,
+> Under $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]; and likewise $\chi$), a bilinear ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-1|Def. §C5a.6.1]]) transforms as $\Lambda_{1/2}^{-1}\Gamma\Lambda_{1/2}$ does. In particular, with $y = \Lambda^{-1}x$,
 >
 > $$
 > \bar\psi'\chi'(x) = \bar\psi\chi(y), \qquad \bar\psi'\gamma^\mu\chi'(x) = \Lambda^\mu{}_\nu\,\bar\psi\gamma^\nu\chi(y), \qquad \bar\psi'[\gamma^\mu, \gamma^\nu]\chi'(x) = \Lambda^\mu{}_\rho\Lambda^\nu{}_\sigma\,\bar\psi[\gamma^\rho, \gamma^\sigma]\chi(y) :
@@ -100,20 +100,34 @@ Which numbers built from two spinors do all observers agree on, and which Lorent
 > - All spinor transformations cancel inside a bilinear; what is left is a tensor law fixed by the free indices of $\Gamma$. The symmetric combination $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ gives nothing new (the scalar times $g$).
 > - ⚑ By-product: $\bar\psi[\gamma^\mu, \gamma^\nu]\psi$ transforms like $F^{\mu\nu}$, so $\bar\psi[\gamma^\mu, \gamma^\nu]\psi\,F_{\mu\nu}$ is a scalar: the structure of a magnetic-moment coupling ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]]).
 > - The Lecture 8 slide "Fermion Bilinears" lists the scalar as $\bar\psi\gamma^\mu\psi$, repeating the vector; the scalar is $\bar\psi\psi$, with no free index.
-> - Used next: the sixteen bilinears (Def. §C5a.6.2) and every current below.
+> - Used next: the sixteen bilinears (Def. §C5a.6.3) and every current below.
 
 ^der-c5a-6-2
 
 *Uses:* [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]
 
-> [!definition] Definition §C5a.6.2: The Sixteen Bilinears
-> With $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]) and
+> [!definition] Definition §C5a.6.2: The Matrices σ^μν
+> The matrices $\sigma^{\mu\nu}$ are
 >
 > $$
 > \sigma^{\mu\nu} \equiv \frac i2[\gamma^\mu, \gamma^\nu] = 2S^{\mu\nu} ,
 > $$
 >
-> where $S^{\mu\nu}$ are the spinor generators ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; other normalizations of $\sigma^{\mu\nu}$: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|Caution: Three normalizations of σ^μν]]), the **standard bilinears** are
+> where $S^{\mu\nu}$ are the spinor generators ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; other normalizations of $\sigma^{\mu\nu}$: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|Caution: Three normalizations of σ^μν]]): antisymmetric in $\mu\nu$, six matrices for $\mu < \nu$.
+>
+> *Source: PS §3.4, pp. 49–50 ($\gamma^{\mu\nu} = \frac12[\gamma^\mu, \gamma^\nu] \equiv -i\sigma^{\mu\nu}$, and the table) · the user's PHY 513 notes, Ch. 8 §8.9 (paragraph after the derivation), Ch. 9 §9.6 · Yu §5.3, eq. (5.96) (the tensor bilinear)*
+
+^def-c5a-6-2
+
+> [!caution] Caution: Three normalizations of σ^μν
+> Peskin–Schroeder and this note: $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$. The Lorentz generators: $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu] = \frac12\sigma^{\mu\nu}$. Problem Set 5 writes $\sigma^{\mu\nu} = \frac{1}{4i}[\gamma^\mu, \gamma^\nu] = -S^{\mu\nu}$. Identities homogeneous in $\sigma$ (such as the duality [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-7|Theorem §C5a.14.7]]) hold in every normalization; identities mixing $\sigma$ with other terms (the Gordon identity, [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]]) do not. Peskin–Schroeder also write $\gamma^{\mu\nu} = \frac12[\gamma^\mu, \gamma^\nu] = -i\sigma^{\mu\nu}$.
+>
+> *Source: the user's PHY 513 notes, Ch. 9 §9.6 (Principle "Properties of $\gamma^5$", last sentence) · PHY 513, Problem Set 5, Problem 5(d) statement · PS §3.4, p. 49*
+
+^cau-c5a-6-1
+
+> [!definition] Definition §C5a.6.3: The Sixteen Bilinears
+> With $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]) and $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]), the **standard bilinears** are
 >
 > | name | symbol | bilinear | number |
 > |---|---|---|---|
@@ -127,19 +141,12 @@ Which numbers built from two spinors do all observers agree on, and which Lorent
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.9 (paragraph after the derivation), Ch. 9 §9.6 · PS §3.4, pp. 49–50 (table) · Yu §5.3, eqs. (5.93)–(5.96) · the user's pre-course notes, §5.3 · PHY 513 Lecture 11, slide 19 (the sans-serif symbols) · PHY 513, Problem Set 6, Problem 5(b) ($V^\mu = \bar\psi\gamma^\mu\psi$)*
 
-^def-c5a-6-2
+^def-c5a-6-3
 
 Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|Theorem §C5a.14.8]]. Each set transforms as an antisymmetric tensor of successively higher rank (PS p. 50): $\mathbb 1$, $\gamma^\mu$, $\sigma^{\mu\nu}$, $\gamma^\mu\gamma^5$, $\gamma^5$ are, up to factors, the antisymmetrized products of $0, 1, 2, 3, 4$ $\gamma$'s, ranks $3$ and $4$ written through $\varepsilon$ as an axial vector and a pseudoscalar ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|Theorem §C5a.14.6]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|Theorem §C5a.14.5]]), so S, V, T, A, P have $1 + 4 + 6 + 4 + 1$ components ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|Theorem §CB.18.14]]).
 
-> [!caution] Caution: Three normalizations of σ^μν
-> Peskin–Schroeder and this note: $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$. The Lorentz generators: $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu] = \frac12\sigma^{\mu\nu}$. Problem Set 5 writes $\sigma^{\mu\nu} = \frac{1}{4i}[\gamma^\mu, \gamma^\nu] = -S^{\mu\nu}$. Identities homogeneous in $\sigma$ (such as the duality [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-7|Theorem §C5a.14.7]]) hold in every normalization; identities mixing $\sigma$ with other terms (the Gordon identity, [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]]) do not. Peskin–Schroeder also write $\gamma^{\mu\nu} = \frac12[\gamma^\mu, \gamma^\nu] = -i\sigma^{\mu\nu}$.
->
-> *Source: the user's PHY 513 notes, Ch. 9 §9.6 (Principle "Properties of $\gamma^5$", last sentence) · PHY 513, Problem Set 5, Problem 5(d) statement · PS §3.4, p. 49*
-
-^cau-c5a-6-1
-
 > [!theorem] Theorem §C5a.6.3: Pseudoscalar and Axial Vector under Proper Lorentz Transformations
-> Under $\psi \to \Lambda_{1/2}\psi(\Lambda^{-1}x)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]), the pseudoscalar and axial bilinears of [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]] obey
+> Under $\psi \to \Lambda_{1/2}\psi(\Lambda^{-1}x)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), the pseudoscalar and axial bilinears of [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|Def. §C5a.6.3]] obey
 >
 > $$
 > \bar\psi\,i\gamma^5\psi \;\to\; \bar\psi\,i\gamma^5\psi, \qquad \bar\psi\gamma^\mu\gamma^5\psi \;\to\; \Lambda^\mu{}_\nu\,\bar\psi\gamma^\nu\gamma^5\psi \qquad (\text{at } \Lambda^{-1}x) :
@@ -169,7 +176,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.14 Gamma
 *Uses:* [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]
 
 > [!theorem] Theorem §C5a.6.4: The Bilinears Are Real
-> For any bilinear ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-1|Def. §C5a.6.1]]) of commuting components, $(\bar\psi\Gamma\psi)^* = \bar\psi\,\bar\Gamma\,\psi$ with $\bar\Gamma \equiv \gamma^0\Gamma^\dagger\gamma^0$. For the five standard matrices of [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]], $\bar\Gamma = \Gamma$:
+> For any bilinear ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-1|Def. §C5a.6.1]]) of commuting components, $(\bar\psi\Gamma\psi)^* = \bar\psi\,\bar\Gamma\,\psi$ with $\bar\Gamma \equiv \gamma^0\Gamma^\dagger\gamma^0$. For the five standard matrices of [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|Def. §C5a.6.3]], $\bar\Gamma = \Gamma$:
 >
 > $$
 > \bar\psi\psi,\quad \bar\psi\,i\gamma^5\psi,\quad \bar\psi\gamma^\mu\psi,\quad \bar\psi\gamma^\mu\gamma^5\psi,\quad \bar\psi\sigma^{\mu\nu}\psi \quad\text{are real},
@@ -237,9 +244,9 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.14 Gamma
 >
 > The sixteen bilinears are built from the spinor generators, $\gamma^5$ and the sixteen products; as a representation the Clifford algebra is $\Lambda V$, and two-index tensors decompose as $(0,0)\oplus(1,0)\oplus(0,1)\oplus(1,1)$:
 > - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]] — the spinor generators ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]).
-> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]] with [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-15|Derivation]] — $\gamma^5$ and its algebra (Def. §C5a.6.2, Theorem §C5a.6.4); physics form: [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]].
+> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]] with [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-15|Derivation]] — $\gamma^5$ and its algebra (Def. §C5a.6.3, Theorem §C5a.6.4); physics form: [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]].
 > - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]] with [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-9|Derivation]] — the sixteen products are a basis ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]).
-> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|Theorem §CB.18.14]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-14|Proof]] — $\mathrm{Cl}(1,3) \cong \Lambda V$: the sixteen bilinears are antisymmetric tensors of rank 0–4 (the line after Def. §C5a.6.2).
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|Theorem §CB.18.14]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-14|Proof]] — $\mathrm{Cl}(1,3) \cong \Lambda V$: the sixteen bilinears are antisymmetric tensors of rank 0–4 (the line after Def. §C5a.6.3).
 > - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-12|Theorem §CB.18.12]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-12|Derivation]] — two-index tensors are $(0,0)\oplus(1,0)\oplus(0,1)\oplus(1,1)$ ([[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]]).
 >
 > The pseudoscalar and axial vector (Theorem §C5a.6.3) use that $\gamma^5$ commutes with every $\Lambda_{1/2}$:

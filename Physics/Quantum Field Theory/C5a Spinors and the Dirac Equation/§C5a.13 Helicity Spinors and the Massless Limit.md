@@ -26,7 +26,7 @@ Which basis of two-spinors makes the spinors simplest, and what happens at $m = 
 > h \equiv \hat{\mathbf p}\cdot\mathbf S = \frac12\begin{pmatrix}\hat{\mathbf p}\cdot\boldsymbol\sigma & 0\\ 0 & \hat{\mathbf p}\cdot\boldsymbol\sigma\end{pmatrix},
 > $$
 >
-> with $\mathbf S = \frac12\operatorname{diag}(\boldsymbol\sigma, \boldsymbol\sigma)$ the spin matrices ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]) of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-4|Theorem §C5a.10.4]]. A spinor with $h = +\frac12$ ($-\frac12$) is called right-handed (left-handed). This is the spinor counterpart of the helicity of states, [[§C3.7★ Massless Particles and Helicity#^def-c3-7-1|Def. §C3.7.1]].
+> with $\mathbf S = \frac12\operatorname{diag}(\boldsymbol\sigma, \boldsymbol\sigma)$ the spin matrices ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-3|Def. §C5a.3.3]]) of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-4|Theorem §C5a.10.4]]. A spinor with $h = +\frac12$ ($-\frac12$) is called right-handed (left-handed). This is the spinor counterpart of the helicity of states, [[§C3.7★ Massless Particles and Helicity#^def-c3-7-1|Def. §C3.7.1]].
 >
 > *Source: PS §3.3, eq. (3.54) · the user's write-up of PHY 513, Problem Set 5, Problem 6 (statement) · the user's PHY 513 notes, Ch. 9 §9.3 (Derivation "Example: the helicity basis") · Yu §5.4.2, eqs. (5.158)–(5.161)*
 

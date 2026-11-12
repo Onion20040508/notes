@@ -49,7 +49,7 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 >
 > "contract any $\psi$ with any $\bar\psi$ (in that order)"; "$\psi\psi$ and $\bar\psi\bar\psi$ do not give contractions" (slide 22).
 >
-> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free fields, $x^0 \ne y^0$ (the function $S_F$ itself is defined for all $x - y$ as a distribution, [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]]); an operator identity, any state.
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free fields, $x^0 \ne y^0$ (the function $S_F$ itself is defined for all $x - y$ as a distribution, [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]); an operator identity, any state.
 >
 > *Source: PHY 513 Lecture 17, slide 21 (statement and "Proof: (assuming $x^0 > y^0$) … Only 2nd term is not normal-ordered … Note: explicit '$-$' for normal-ordered term"), slide 22, slide 16 ("$\psi(x)\bar\psi(y)$ contracted $= \frac{i(\slashed p + m)}{p^2 - m^2 + i\epsilon}$") · the user's PHY 513 notes, Lecture 17 update, §17.4, Definition "The two propagators" (eq. (SF), the fermionic $T$) · PS §4.7, p. 116, eqs. (4.107)–(4.109) · Yu §6.4.5, eqs. (6.257)–(6.258) · the case $y^0 > x^0$ and the vanishing contractions written here*
 

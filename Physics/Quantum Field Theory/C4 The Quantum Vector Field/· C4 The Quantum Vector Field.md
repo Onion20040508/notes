@@ -87,12 +87,12 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-8|§C4.6.8]] Field Equation of the Gauge-Fixed Lagrangian
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-9|§C4.6.9]] Equivalence with Maxwell's Equations on the Lorenz Subspace
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-10|§C4.6.10]] The Feynman-Gauge Lagrangian up to a Total Derivative
-- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-1|§C4.7.1]] Canonical Momenta of the Gauge-Fixed Field
-- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-2|§C4.7.2]] Hamiltonian Density of the Feynman-Gauge Field
-- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-3|§C4.7.3]] Momentum of the Feynman-Gauge Field
-- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-4|§C4.7.4]] The Feynman-Gauge Momentum Generates Spatial Translations
-- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-5|§C4.7.5]] Spin and Orbital Angular Momentum Are Not Separately Gauge Invariant
-- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-6|§C4.7.6]] Spin Charges of the Gauge-Fixed Lagrangians
+- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-2|§C4.7.2]] Canonical Momenta of the Gauge-Fixed Field
+- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-3|§C4.7.3]] Hamiltonian Density of the Feynman-Gauge Field
+- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-4|§C4.7.4]] Momentum of the Feynman-Gauge Field
+- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-5|§C4.7.5]] The Feynman-Gauge Momentum Generates Spatial Translations
+- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-6|§C4.7.6]] Spin and Orbital Angular Momentum Are Not Separately Gauge Invariant
+- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-7|§C4.7.7]] Spin Charges of the Gauge-Fixed Lagrangians
 - [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-1|§C4.8.1]] Only Two Massless Polarizations Can Be Transverse
 - [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-2|§C4.8.2]] Orthonormality and Completeness of the Massless Basis
 - [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-3|§C4.8.3]] The Transverse Polarization Sum
@@ -134,5 +134,5 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^mod-c4-4-1|§C4.4.1]] The Free Proca Quantum Field
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|§C4.6.2]] The Free Maxwell Field
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-7|§C4.6.7]] The Free Gauge-Fixed Vector Field
-- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^mod-c4-7-7|§C4.7.7]] The Feynman-Gauge Field as a Canonical System
+- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^mod-c4-7-1|§C4.7.1]] The Feynman-Gauge Field as a Canonical System
 - [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^mod-c4-8-4|§C4.8.4]] The Feynman-Gauge Quantum Field

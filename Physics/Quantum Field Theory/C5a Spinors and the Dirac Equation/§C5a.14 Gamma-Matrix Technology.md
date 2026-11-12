@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 9 §9.6 (Supplement: $\gamma$-matrix technology (Problem Set 5)) · PHY 513, Problem Set 5, Problems 2, 3 and 5 (as the user wrote them) · Peskin & Schroeder, §3.4, pp. 49–52, eqs. (3.68)–(3.81) · Yu Zhao-Huan, 量子场论讲义, §7.1, eqs. (7.48)–(7.54), §8.2.2, eqs. (8.44)–(8.77). · PHY 513, Problem Set 7, Problem 1(c) (Larsen; the user's solution) · PHY 513 Lecture 19 (Larsen, 11 Nov 2026), slides 13–14, and transcript · the user's PHY 513 notes, Lecture 19 update, §19.3 "Traces of Dirac matrices" (Principle "Trace theorems", Derivation "Proofs") · Peskin & Schroeder, §5.1, pp. 133–135, eqs. (5.5), (5.8)–(5.9).*
 
-How are long products of $\gamma$ matrices shortened, traced and reduced, as every amplitude with spin-½ particles requires? Everything follows from the Clifford algebra ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]), the algebra of $\gamma^5$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]), the basis property of the sixteen products ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]) and the slash of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]. This section adds the working identities: slash algebra, contractions, traces, the $\varepsilon$-forms of $\gamma^5$ and its duality on $\sigma^{\mu\nu}$, the reduction of any product to the standard basis, and the Gordon identity. Problem Set 5 (submitted) proves several of them; its proofs appear as the user wrote them, and no other problem-set material is used. The algebra behind the identities — the Clifford relation, the sixteen products as a basis, Pauli's theorem, $\gamma^5$ as the volume element — is proved in [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.13 Complex Clifford Algebras and Clifford Modules|§CB.13]] and [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], linked from each box and listed at the end; this section keeps the course's computational toolkit. Lecture 19 teaches the trace theorems ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]]) and first uses them, for $e^+e^- \to \mu^+\mu^-$ ([[§C8.7 The Spin-Averaged Squared Amplitude|§C8.7]]).
+How are long products of $\gamma$ matrices shortened, traced and reduced, as every amplitude with spin-½ particles requires? Everything follows from the Clifford algebra ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]), the algebra of $\gamma^5$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]), the basis property of the sixteen products ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]) and the slash of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]]. This section adds the working identities: slash algebra, contractions, traces, the $\varepsilon$-forms of $\gamma^5$ and its duality on $\sigma^{\mu\nu}$, the reduction of any product to the standard basis, and the Gordon identity. Problem Set 5 (submitted) proves several of them; its proofs appear as the user wrote them, and no other problem-set material is used. The algebra behind the identities — the Clifford relation, the sixteen products as a basis, Pauli's theorem, $\gamma^5$ as the volume element — is proved in [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.13 Complex Clifford Algebras and Clifford Modules|§CB.13]] and [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], linked from each box and listed at the end; this section keeps the course's computational toolkit. Lecture 19 teaches the trace theorems ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]]) and first uses them, for $e^+e^- \to \mu^+\mu^-$ ([[§C8.7 The Spin-Averaged Squared Amplitude|§C8.7]]).
 
 **Setup.** No field and no dynamics: Theorems §C5a.14.1–§C5a.14.8 are identities of the four-dimensional Clifford algebra and $\gamma^5$, exact, with commuting four-vector components and $\varepsilon^{0123} = +1$; they hold wherever the $\gamma$'s appear, in classical and quantum computations alike, and carry no *Model* line. The exception is the Gordon identity (Theorem §C5a.14.9): it holds only between on-shell c-number spinors of the free Dirac field ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), $m > 0$.
 
@@ -24,7 +24,7 @@ The antisymmetrized products $\gamma^{[\mu_1\cdots\mu_k]}$ of $\gamma$ matrices 
 The antisymmetrized product vanishes when two indices coincide (the terms cancel in pairs), and equals the plain product when all indices are distinct (each term, reordered by anticommuting distinct $\gamma$'s, carries the sign of its permutation twice). So $\gamma^{[\mu_1\cdots\mu_n]} = 0$ for $n \ge 5$: only four distinct $\gamma$'s exist.
 
 > [!theorem] Theorem §C5a.14.1: Slash Algebra
-> For four-vectors $a$, $b$, with slashes as in [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]] and $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]):
+> For four-vectors $a$, $b$, with slashes as in [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]] and $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]):
 >
 > $$
 > \gamma_\mu\gamma^\nu + \gamma^\nu\gamma_\mu = 2\delta_\mu{}^\nu, \qquad \gamma^\mu\slashed{a} = 2a^\mu - \slashed{a}\gamma^\mu, \qquad \slashed{a}\slashed{b} + \slashed{b}\slashed{a} = 2\,a\cdot b, \qquad \slashed{a}\slashed{b} = a\cdot b - i\sigma^{\mu\nu}a_\mu b_\nu .
@@ -53,7 +53,7 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 
 ^der-c5a-14-1
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]
 
 > [!remark] Remark: When slashes commute
 > The components $a_\mu$, $b_\mu$ are numbers and commute; the matrices $\gamma^\mu$ do not. By [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]],
@@ -75,7 +75,7 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 ## Contractions
 
 > [!theorem] Theorem §C5a.14.2: Contraction Identities
-> For any four-vectors $k$, $p$, $q$, in four spacetime dimensions, with slashes as in [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]],
+> For any four-vectors $k$, $p$, $q$, in four spacetime dimensions, with slashes as in [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]],
 >
 > $$
 > \gamma_\mu\gamma^\mu = 4, \qquad \gamma_\mu\slashed{k}\gamma^\mu = -2\slashed{k}, \qquad \gamma_\mu\slashed{p}\slashed{q}\gamma^\mu = 4\,p\cdot q, \qquad \gamma_\mu\slashed{k}\slashed{p}\slashed{q}\gamma^\mu = -2\slashed{q}\slashed{p}\slashed{k} .
@@ -143,7 +143,7 @@ These identities shorten strings in which an index is contracted across other $\
 > \operatorname{tr}\mathbb 1 = 4, \qquad \operatorname{tr}(\text{odd number of }\gamma\text{'s}) = 0, \qquad \operatorname{tr}(\gamma^\mu\gamma^\nu) = 4g^{\mu\nu}, \qquad \operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma) = 4\bigl(g^{\mu\nu}g^{\rho\sigma} - g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\nu\rho}\bigr) .
 > $$
 >
-> for the $4\times4$ Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]). With slashes ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]): $\operatorname{tr}(\slashed{a}\slashed{b}) = 4a\cdot b$, $\operatorname{tr}(\slashed{a}\slashed{b}\slashed{c}\slashed{d}) = 4\bigl[(a\cdot b)(c\cdot d) - (a\cdot c)(b\cdot d) + (a\cdot d)(b\cdot c)\bigr]$.
+> for the $4\times4$ Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]). With slashes ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]]): $\operatorname{tr}(\slashed{a}\slashed{b}) = 4a\cdot b$, $\operatorname{tr}(\slashed{a}\slashed{b}\slashed{c}\slashed{d}) = 4\bigl[(a\cdot b)(c\cdot d) - (a\cdot c)(b\cdot d) + (a\cdot d)(b\cdot c)\bigr]$.
 >
 > *Source: PHY 513 Lecture 19 (Larsen, 11 Nov 2026), slide 13 ("Strategy: do not use explicit form of $\gamma$-matrices, use algebra"; Examples 1 and 2), slide 14 ("For elaborate traces: consult tables. The formula needed here: $\operatorname{tr}\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma = 4(g^{\mu\nu}g^{\rho\sigma} - g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\rho\nu})$") · the user's PHY 513 notes, Lecture 19 update, §19.3, Principle "Trace theorems", Derivation "Proofs" · Yu §7.1, eqs. (7.48)–(7.54), §8.2.2, eqs. (8.44)–(8.45), (8.49)–(8.52), (8.74)–(8.75) · PS §5.1, pp. 133–134, eq. (5.5), with derivations · the user's PHY 513 notes, Ch. 9 §9.1 (Derivation "Step 2": $\operatorname{tr}\gamma^\mu = 0$)*
 
@@ -400,7 +400,7 @@ These identities shorten strings in which an index is contracted across other $\
 > **4. Uniqueness.** The sixteen matrices are linearly independent ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]; the standard ones differ from the products $\gamma^I$ by nonzero factors $\pm1, \pm i$), so the coefficients are unique, and can be read off with traces ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]], by-product).
 >
 > **What the derivation shows**
-> - "Nothing beyond the sixteen is ever needed": the classification of bilinears ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]) is complete.
+> - "Nothing beyond the sixteen is ever needed": the classification of bilinears ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|Def. §C5a.6.3]]) is complete.
 > - ⚑ By-product: the parity of the number of $\gamma$'s is preserved by every step, which is why odd products are traceless and why $\gamma^5$ (even) commutes with $\sigma^{\mu\nu}$ and anticommutes with $\gamma^\mu$.
 
 ^der-c5a-14-8
@@ -410,7 +410,7 @@ These identities shorten strings in which an index is contracted across other $\
 ## The Gordon identity
 
 > [!theorem] Theorem §C5a.14.9: The Gordon Identity
-> Let $p^2 = p'^2 = m^2 > 0$, $q = p' - p$, and let $u(p)$, $u(p')$ be positive-frequency spinors ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-1|Def. §C5a.10.1]]), $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), $(\slashed{p} - m)u(p) = 0$ and $(\slashed{p}' - m)u(p') = 0$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]]). Then
+> Let $p^2 = p'^2 = m^2 > 0$, $q = p' - p$, and let $u(p)$, $u(p')$ be positive-frequency spinors ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-1|Def. §C5a.10.1]]), $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-2|Def. §C5a.2.2]]), $(\slashed{p} - m)u(p) = 0$ and $(\slashed{p}' - m)u(p') = 0$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]]). Then
 >
 > $$
 > \bar u(p')\gamma^\mu u(p) = \bar u(p')\Bigl[\frac{p^\mu + p'^\mu}{2m} + \frac{i\sigma^{\mu\nu}q_\nu}{2m}\Bigr]u(p), \qquad \sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu] .

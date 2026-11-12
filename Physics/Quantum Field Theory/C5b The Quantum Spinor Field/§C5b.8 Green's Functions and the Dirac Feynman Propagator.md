@@ -11,11 +11,11 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.5, pp. 62–63 · Yu Zhao-Huan, 量子场论讲义, §6.4.5 · the user's pre-course notes, the Dirac parts of "Time-ordered product and microcausality" and §6.4 ("Feynman Propagators: Dirac spinor field").*
 
-*Taught in Lecture 17 (Nov 4; slide 17: fermionic time ordering and $S_F$, "two independent derivations of the propagator (see HW)"; its use in Wick's theorem and the Yukawa rules is in [[· C6d Feynman Rules for Fermions|C6d]]). Problem Set 9 has been submitted, so both derivations of $S_F$ are in (Theorem §C5b.8.1: from the Dirac equation with a source, and by solving for the Fourier transform, Problem 1(c); Theorem §C5b.8.3: from the mode expansion, Problem 1(a), and from $D_F$, Problem 1(d)), with the direct proof that the time-ordered product is a Green's function (Theorem §C5b.8.4, Problem 1(b)) and its two lessons (Theorems §C5b.8.5–§C5b.8.6); the section was written earlier from the user's pre-course notes, Yu and Peskin–Schroeder.*
+*Taught in Lecture 17 (Nov 4; slide 17: fermionic time ordering and $S_F$, "two independent derivations of the propagator (see HW)"; its use in Wick's theorem and the Yukawa rules is in [[· C6d Feynman Rules for Fermions|C6d]]). Problem Set 9 has been submitted, so both derivations of $S_F$ are in (Theorem §C5b.8.1: from the Dirac equation with a source, and by solving for the Fourier transform, Problem 1(c); Theorem §C5b.8.3: from the mode expansion, Problem 1(a), and from $D_F$, Problem 1(d)), with the direct proof that the time-ordered product is a Green's function (Theorem §C5b.8.5, Problem 1(b)) and its two lessons (Theorems §C5b.8.6–§C5b.8.7); the section was written earlier from the user's pre-course notes, Yu and Peskin–Schroeder.*
 
-This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b.6]]–[[§C2b.8 Wick Rotation and the Two-Point Family|§C2b.8]] and the single home of the Dirac propagator $S_F$. Every Green's function of the Dirac operator is $i\slashed{\partial} + m$ applied to a Klein–Gordon Green's function, with the boundary condition (the contour) inherited unchanged; the spin-specific additions are the numerator $\slashed{p} + m$ (the spin sum continued off the shell), the normalization $(i\slashed{\partial} - m)S = +i\delta^4$, and the minus sign of fermionic time ordering. The contour work is [[P2 Green's Functions by Contour Integration]] with a numerator. Conventions as in [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality|§C5b.7]]; the Dirac Green's functions are normalized by $(i\slashed{\partial} - m)S = i\delta^4$ (PS).
+This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b.6]]–[[§C2b.8 Wick Rotation and the Two-Point Family|§C2b.8]] and the single home of the Dirac propagator $S_F$. Every Green's function of the Dirac operator ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]) is $i\slashed{\partial} + m$ applied to a Klein–Gordon Green's function, with the boundary condition (the contour) inherited unchanged; the spin-specific additions are the numerator $\slashed{p} + m$ (the spin sum continued off the shell), the normalization $(i\slashed{\partial} - m)S = +i\delta^4$, and the minus sign of fermionic time ordering. The contour work is [[P2 Green's Functions by Contour Integration]] with a numerator. Conventions as in [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality|§C5b.7]]; the Dirac Green's functions are normalized by $(i\slashed{\partial} - m)S = i\delta^4$ (PS).
 
-**Setup.** The functions $S_R$, $S_A$, $S_F$ are vacuum values of the free Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) in the free vacuum $|0\rangle$, normalized by $(i\slashed{\partial} - m)S = i\delta^4$, $m > 0$. As Green's functions and distributions (Theorems §C5b.8.1, §C5b.8.7, §C5b.8.8) they are statements about functions, valid wherever they are used; their reading as vacuum values needs the free field. Fermionic time ordering (Def. §C5b.8.2) applies to any fermion operators. With interactions the two-point function in $|\Omega\rangle$ is not $S_F$ beyond lowest order (the line of Theorem §C5b.8.3).
+**Setup.** The functions $S_R$, $S_A$, $S_F$ are vacuum values of the free Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) in the free vacuum $|0\rangle$, normalized by $(i\slashed{\partial} - m)S = i\delta^4$, $m > 0$. As Green's functions and distributions (Theorems §C5b.8.1, §C5b.8.4, §C5b.8.8) they are statements about functions, valid wherever they are used; their reading as vacuum values needs the free field. Fermionic time ordering (Def. §C5b.8.2) applies to any fermion operators. With interactions the two-point function in $|\Omega\rangle$ is not $S_F$ beyond lowest order (the line of Theorem §C5b.8.3).
 
 ## Green's functions of the Dirac operator
 
@@ -109,14 +109,14 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 > the scalar propagator of the same contour ([[§C2b.6 Green's Functions and Contours#^def-c2b-6-2|Def. §C2b.6.2]]).
 >
 > **What the derivation shows**
-> - Equating the integrands fixes $\tilde S_C$ only off the poles, where $p^2 \ne m^2$, as for the scalar ([[§C2b.6 Green's Functions and Contours#^thm-c2b-6-2|Theorem §C2b.6.2]]); on the shell the contour, or equivalently the $i\varepsilon$, supplies the rest, and that both give one distribution is [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]] (for $C = F$).
+> - Equating the integrands fixes $\tilde S_C$ only off the poles, where $p^2 \ne m^2$, as for the scalar ([[§C2b.6 Green's Functions and Contours#^thm-c2b-6-2|Theorem §C2b.6.2]]); on the shell the contour, or equivalently the $i\varepsilon$, supplies the rest, and that both give one distribution is [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]] (for $C = F$).
 > - With the Feynman contour this is $S_F = (i\slashed{\partial} + m)D_F$, the last form of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], reached without the time-ordered product.
 >
 > *Source: PHY 513, Problem Set 9, Problem 1(c) (the user's solution) · PHY 513 Lecture 17, slide 17 ("two independent derivations of the propagator (see HW)")*
 
 ^der-c5b-8-1b
 
-*Uses:* [[§C2b.6 Green's Functions and Contours#^def-c2b-6-2|Def. §C2b.6.2]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]]
+*Uses:* [[§C2b.6 Green's Functions and Contours#^def-c2b-6-2|Def. §C2b.6.2]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]
 
 ## Time ordering and the Feynman propagator
 
@@ -157,7 +157,7 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 >
 > **What the derivation shows**
 > - The sign in fermionic time ordering is not a convention: it is forced by Lorentz invariance once the fields anticommute outside the cone (PS: "this minus sign is extremely important in the quantum field theory of fermions").
-> - At equal times and coincident points the anticommutator is $\gamma^0\delta^3$ ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]]), the fermionic contact term; it is what makes $S_F$ a Green's function ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]]) → [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|Theorem §C5b.8.6]].
+> - At equal times and coincident points the anticommutator is $\gamma^0\delta^3$ ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]]), the fermionic contact term; it is what makes $S_F$ a Green's function ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]]) → [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|Theorem §C5b.8.5]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]].
 
 ^der-c5b-8-2
 
@@ -170,7 +170,7 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 > S_F(x - y) \equiv \langle0|T\{\hat\psi(x)\hat{\bar\psi}(y)\}|0\rangle = \theta(\xi^0)S^+_W(\xi) - \theta(-\xi^0)S^-_W(\xi) = \int\frac{d^4p}{(2\pi)^4}\,\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon}\,e^{-ip\cdot\xi} = (i\slashed{\partial}_x + m)\,D_F(\xi) ,
 > $$
 >
-> with $S^\pm_W$ of [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], the Feynman contour, i.e. the $i\varepsilon$ prescription of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]] ($\varepsilon \to 0^+$ in $\mathcal S'$, made precise below in [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]]), and the scalar Feynman propagator $D_F$ of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]. $\tilde S_F(p) = i(\slashed{p} + m)/(p^2 - m^2 + i\varepsilon)$ is the factor of an internal fermion line.
+> with $S^\pm_W$ of [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], the Feynman contour, i.e. the $i\varepsilon$ prescription of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]] ($\varepsilon \to 0^+$ in $\mathcal S'$, made precise below in [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]), and the scalar Feynman propagator $D_F$ of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]. $\tilde S_F(p) = i(\slashed{p} + m)/(p^2 - m^2 + i\varepsilon)$ is the factor of an internal fermion line.
 >
 > *Scalar analogue:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]].
 >
@@ -205,7 +205,7 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 >
 > the bracket of Step 2. (The value at $t = 0$ is a single point and carries no weight.) The denominator $(p^0)^2 - E^2 + i\varepsilon = p^2 - m^2 + i\varepsilon$; writing $2E\varepsilon$ or poles at $\pm(E - i\varepsilon)$ instead gives the same limit ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 3).
 >
-> **5. Combine** ([[P2 Green's Functions by Contour Integration#^p2-6|P2, step 6]]). Inserting into Step 2, $d^3p\,dp^0 = d^4p$, $e^{-ip^0t + i\mathbf p\cdot\boldsymbol\xi} = e^{-ip\cdot\xi}$ and $g(p^0) = \slashed{p} + m$: the four-dimensional formula (Yu (6.266)–(6.267)), as a limit in $\mathcal S'(\mathbb R^4)$ ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]]); the iterated integral is read as in [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-4|Theorem §C2b.6.4]], Step 2.
+> **5. Combine** ([[P2 Green's Functions by Contour Integration#^p2-6|P2, step 6]]). Inserting into Step 2, $d^3p\,dp^0 = d^4p$, $e^{-ip^0t + i\mathbf p\cdot\boldsymbol\xi} = e^{-ip\cdot\xi}$ and $g(p^0) = \slashed{p} + m$: the four-dimensional formula (Yu (6.266)–(6.267)), as a limit in $\mathcal S'(\mathbb R^4)$ ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]); the iterated integral is read as in [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-4|Theorem §C2b.6.4]], Step 2.
 >
 > **6. In terms of $D_F$.** $\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon} = (\slashed{p} + m)\tilde D_F$ with $\tilde D_F = \frac{i}{p^2 - m^2 + i\varepsilon}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]), and $\slashed{p} + m$ is the transform of $i\slashed{\partial} + m$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3): $S_F = (i\slashed{\partial} + m)D_F$ ([[P2 Green's Functions by Contour Integration#^p2-7|P2, step 7]] checks it: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]]).
 >
@@ -243,6 +243,42 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 
 *Procedure:* [[P2 Green's Functions by Contour Integration#^p2-1|P2, steps 1–7]]
 
+> [!theorem] Theorem §C5b.8.4: The Dirac Propagator as a Distribution
+> 1. For $\varepsilon > 0$, $\tilde S^\varepsilon_F(p) = i(\slashed{p} + m)/(p^2 - m^2 + i\varepsilon)$ is a smooth matrix function of polynomial growth, a tempered distribution; as $\varepsilon \to 0^+$, in $\mathcal S'(\mathbb R^4)$,
+>
+> $$
+> \tilde S^\varepsilon_F \to i(\slashed{p} + m)\,\mathcal P\frac{1}{p^2 - m^2} + \pi(\slashed{p} + m)\,\delta(p^2 - m^2) = (\slashed{p} + m)\tilde D_F ,
+> $$
+>
+> the Sokhotski–Plemelj limit of $\tilde D_F$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]]) multiplied by the polynomial $\slashed{p} + m$; the transform carries the limit to position space, so $S_F = \lim_{\varepsilon\to0^+}S^\varepsilon_F = (i\slashed{\partial} + m)D_F$ in $\mathcal S'$.
+> 2. $S_F = \theta(\xi^0)S^+_W - \theta(-\xi^0)S^-_W$ is defined slice by slice: $S^\pm_W$ are smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$, and the value $\theta(0)$ does not enter.
+> 3. Off $\xi = 0$ the products have disjoint singular supports; at $\xi = 0$ the slice definition is the unique extension that is a fundamental solution of the Dirac operator ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]]).
+>
+> *Scalar analogue:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]].
+>
+> *Model:* any; *applies:* any theory (a statement about the function); its reading as a vacuum value in $|0\rangle$ needs the free field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]).
+>
+> *Source: stated and derived here from [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]] and [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]] · PS §3.5, eq. (3.121)*
+
+^thm-c5b-8-4
+
+> [!derivation]- Derivation
+> **1. Finite $\varepsilon$.** Each entry of $\slashed{p} + m$ is a polynomial of degree $1$ and $|p^2 - m^2 + i\varepsilon|^{-1} \le \varepsilon^{-1}$: smooth with polynomial growth, hence tempered ([[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], 2).
+>
+> **2. The limit.** Multiplication by a polynomial is continuous on $\mathcal S'$ (it maps $\mathcal S$ to itself continuously; [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1, and [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]): if $T_\varepsilon \to T$ then $P\,T_\varepsilon[\varphi] = T_\varepsilon[P\varphi] \to T[P\varphi]$. With $T_\varepsilon = \tilde D^\varepsilon_F \to i\mathcal P\frac{1}{p^2 - m^2} + \pi\delta(p^2 - m^2)$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], 1; [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 1) and $P = \slashed{p} + m$, part 1 in momentum space. The inverse transform is continuous on $\mathcal S'$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], 2), and the transform of $(\slashed{p} + m)\tilde D_F$ is $(i\slashed{\partial} + m)D_F$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3).
+>
+> **3. Slices.** $S^\pm_W = \pm(i\slashed{\partial} + m)D_W(\pm\xi)$ ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]]); $D_W(\pm\xi)$ are smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], 3; [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|Theorem §C2b.5.4]], 3), and so are their space and time derivatives. So the products with $\theta(\pm\xi^0)$ are defined as in Step 1 of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-7-4|Derivation §C2b.7.4]]; they agree with part 1 by the second route of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].
+>
+> **4. Uniqueness at the origin.** Away from $\xi = 0$, $\operatorname{sing\,supp}\theta(\pm\xi^0)$ (the plane $\xi^0 = 0$) and $\operatorname{sing\,supp}S^\pm_W$ (contained in the cone, as for $D_W$: [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 1; derivatives do not enlarge it) meet only at $0$ ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 2). Two extensions agreeing off $0$ differ by $T = \sum_\alpha C_\alpha\partial^\alpha\delta^4$ with constant matrices $C_\alpha$ ([[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]]). If both satisfy $(i\slashed{\partial} - m)S = i\delta^4$, then $(i\slashed{\partial} - m)T = 0$; in transform $(\slashed{p} - m)P(p) = 0$ for the polynomial $P = \tilde T$; multiplying by $\slashed{p} + m$, $(p^2 - m^2)P(p) = 0$ ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]]), so $P = 0$.
+>
+> **What the derivation shows**
+> - "$\varepsilon \to 0^+$ at the end" means the limit of distributions; the numerator does not interfere, being a polynomial.
+> - The three definitions (contour, $i\varepsilon$, time-ordered product) give one distribution, as for the scalar.
+
+^der-c5b-8-4
+
+*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]]
+
 > [!remark] Remark: Fermion forward, antifermion backward
 > For $x^0 > y^0$, $S_F = \langle0|\hat\psi(x)\hat{\bar\psi}(y)|0\rangle$: $\hat{\bar\psi}(y)$ creates a fermion at $y$, $\hat\psi(x)$ annihilates it at $x$. For $x^0 < y^0$, $S_F = -\langle0|\hat{\bar\psi}(y)\hat\psi(x)|0\rangle$: $\hat\psi(x)$ creates an antifermion at $x$ and $\hat{\bar\psi}(y)$ annihilates it at $y$, later. One function carries positive energy forward in time in both cases, the fermion from $y$ to $x$ and the antifermion from $x$ to $y$, as the complex scalar's $\langle0|T\{\hat\phi\hat\phi^\dagger\}|0\rangle$ does ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]); the arrow on a fermion line in a Feynman diagram follows the charge, not the time ([[§C6d.1 Yukawa Theory#^def-c6d-1-1|§C6d.1, Def. §C6d.1.1]]).
 >
@@ -250,22 +286,22 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 
 ^rem-c5b-8-1
 
-> [!theorem] Theorem §C5b.8.4: The Free Dirac Schwinger–Dyson Equation
+> [!theorem] Theorem §C5b.8.5: The Free Dirac Schwinger–Dyson Equation
 > The vacuum value of the fermionic time-ordered product ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]]) is a Green's function of the Dirac operator:
 >
 > $$
 > (i\slashed{\partial}_x - m)_{ca}\,\langle0|T\{\hat\psi_a(x)\hat{\bar\psi}_b(y)\}|0\rangle = i\delta^4(x - y)\,\delta_{cb}, \qquad\text{that is}\qquad (i\slashed{\partial}_x - m)\,S_F(x - y) = i\delta^4(x - y)\,\mathbf 1 .
 > $$
 >
-> It follows from three inputs and no mode expansion: the definition of $T$; the Dirac equation of the field operator, $(i\slashed{\partial} - m)\hat\psi = 0$ ([[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-2|Theorem §C5b.6.2]]); and the equal-time anticommutator $\{\hat\psi_a(t, \mathbf x), \hat{\bar\psi}_b(t, \mathbf y)\} = (\gamma^0)_{ab}\,\delta^3(\mathbf x - \mathbf y)$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]] at every time, [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], 3; [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]]). The source is the jump of $T$ at $x^0 = y^0$, met by the single time derivative ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|Theorem §C5b.8.5]]); it is a $\delta$ because of the fermionic minus sign ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|Theorem §C5b.8.6]]).
+> It follows from three inputs and no mode expansion: the definition of $T$; the Dirac equation of the field operator, $(i\slashed{\partial} - m)\hat\psi = 0$ ([[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-2|Theorem §C5b.6.2]]); and the equal-time anticommutator $\{\hat\psi_a(t, \mathbf x), \hat{\bar\psi}_b(t, \mathbf y)\} = (\gamma^0)_{ab}\,\delta^3(\mathbf x - \mathbf y)$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]] at every time, [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], 3; [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]]). The source is the jump of $T$ at $x^0 = y^0$, met by the single time derivative ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|Theorem §C5b.8.6]]); it is a $\delta$ because of the fermionic minus sign ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]]).
 >
 > *Scalar analogue:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-5|Theorem §C2b.7.5]] ($n = 1$).
 >
-> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact; an identity in $\mathcal S'$, the products with $\theta$ taken slice by slice (as for $D_F$: [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]], 1; for $S_F$ collected below in [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]], 2).
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact; an identity in $\mathcal S'$, the products with $\theta$ taken slice by slice (as for $D_F$: [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]], 1; for $S_F$ collected in [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]], 2).
 >
 > *Source: PHY 513, Problem Set 9, Problem 1(b) (the user's solution) · PHY 513 Lecture 17, slide 17 ("two independent derivations of the propagator (see HW)")*
 
-^thm-c5b-8-4
+^thm-c5b-8-5
 
 > [!derivation]- Derivation
 > **Step 1** (the definition). By [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]],
@@ -274,7 +310,7 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 > S_F(x - y)_{ab} = \theta(x^0 - y^0)\,\langle0|\hat\psi_a(x)\hat{\bar\psi}_b(y)|0\rangle - \theta(y^0 - x^0)\,\langle0|\hat{\bar\psi}_b(y)\hat\psi_a(x)|0\rangle .
 > $$
 >
-> Both vacuum values are smooth in $x^0$ with values in $\mathcal S'(\mathbb R^3)$ ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]]; [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], 3), so the product rule holds slice by slice (the slice products as for $D_F$: [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]], 1; for $S_F$ collected below in [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]], 2).
+> Both vacuum values are smooth in $x^0$ with values in $\mathcal S'(\mathbb R^3)$ ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]]; [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], 3), so the product rule holds slice by slice (the slice products as for $D_F$: [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]], 1; for $S_F$ collected in [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]], 2).
 >
 > **Step 2** (product rule). Applying $\slashed{\partial}_x$,
 >
@@ -308,7 +344,7 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 > (i\slashed{\partial}_x - m)_{ca}S_F(x - y)_{ab} = i(\gamma^0)_{ca}\,\delta(x^0 - y^0)\Bigl(\langle0|\hat\psi_a(x)\hat{\bar\psi}_b(y)|0\rangle + \langle0|\hat{\bar\psi}_b(y)\hat\psi_a(x)|0\rangle\Bigr) .
 > $$
 >
-> ⚑ By-product: one time derivative already produces the source → [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|Theorem §C5b.8.5]]. ⚑ By-product: the plus sign in the bracket is the fermionic minus of $T$; with bosonic ordering the bracket would be a commutator → [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|Theorem §C5b.8.6]].
+> ⚑ By-product: one time derivative already produces the source → [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|Theorem §C5b.8.6]]. ⚑ By-product: the plus sign in the bracket is the fermionic minus of $T$; with bosonic ordering the bracket would be a commutator → [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]].
 >
 > **Step 6** (the bracket is the anticommutator at equal times). The bracket is $\langle0|\{\hat\psi_a(x), \hat{\bar\psi}_b(y)\}|0\rangle$, and $\delta(x^0 - y^0)$ sets it at equal times (a function smooth in $x^0$ with values in $\mathcal S'(\mathbb R^3)$ times $\delta(x^0 - y^0)$ is its value at $x^0 = y^0$ times $\delta$, as in Step 2 of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-7-5|Derivation §C2b.7.5]]). With $\hat{\bar\psi}_b = \hat\psi^\dagger_d(\gamma^0)_{db}$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]]) and $\{\hat\psi_a(t, \mathbf x), \hat\psi^\dagger_d(t, \mathbf y)\} = \delta^3(\mathbf x - \mathbf y)\,\delta_{ad}$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]; at every $t$, [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], 3),
 >
@@ -330,15 +366,15 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 > **Step 8** ($(\gamma^0)^2 = \mathbf 1$, [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]], 1). $(i\slashed{\partial}_x - m)_{ca}S_F(x - y)_{ab} = i\delta^4(x - y)\,\delta_{cb}$.
 >
 > **What the derivation shows**
-> - The Dirac operator is first order in time: the source appears at the first derivative and is the equal-time anticommutator itself → [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|Theorem §C5b.8.5]].
-> - The source is a $\delta$ because the fermionic $T$ has a minus sign → [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|Theorem §C5b.8.6]].
+> - The Dirac operator is first order in time: the source appears at the first derivative and is the equal-time anticommutator itself → [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|Theorem §C5b.8.6]].
+> - The source is a $\delta$ because the fermionic $T$ has a minus sign → [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]].
 > - The same equation was reached from the other end in [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]] (from $D_F$, and by solving for the transform); together with [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]] it shows that the time-ordered product is the Feynman Green's function, not merely a function with the same transform.
 
-^der-c5b-8-4
+^der-c5b-8-5
 
 *Uses:* [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]], [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-2|Theorem §C5b.6.2]], [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]], [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]]
 
-> [!theorem] Theorem §C5b.8.5: One Time Derivative: the Source Is the Equal-Time Anticommutator Itself
+> [!theorem] Theorem §C5b.8.6: One Time Derivative: the Source Is the Equal-Time Anticommutator Itself
 > The Dirac operator contains one time derivative, $i\gamma^0\partial_0$. Applied to the time-ordered product it meets the jump at $x^0 = y^0$ once, and the source is the equal-time anticommutator itself:
 >
 > $$
@@ -349,12 +385,12 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 >
 > *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
-> *Source: derived here from Step 5 of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-4|Derivation §C5b.8.4]] (PHY 513, Problem Set 9, Problem 1(b), the user's solution) and Steps 2–3 of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-7-5|Derivation §C2b.7.5]]*
+> *Source: derived here from Step 5 of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-5|Derivation §C5b.8.5]] (PHY 513, Problem Set 9, Problem 1(b), the user's solution) and Steps 2–3 of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-7-5|Derivation §C2b.7.5]]*
 
-^thm-c5b-8-5
+^thm-c5b-8-6
 
 > [!derivation]- Derivation
-> **Step 1** (Dirac: the jump at first order). Steps 2–5 of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-4|Derivation §C5b.8.4]]: of $i\slashed{\partial}_x - m = i\gamma^0\partial_0 + i\gamma^j\partial_j - m$ only $i\gamma^0\partial_0$ acts on the step functions, once, and leaves $i(\gamma^0)_{ca}\delta(x^0 - y^0)$ times the bracket $\langle0|\hat\psi_a\hat{\bar\psi}_b|0\rangle + \langle0|\hat{\bar\psi}_b\hat\psi_a|0\rangle = \langle0|\{\hat\psi_a(x), \hat{\bar\psi}_b(y)\}|0\rangle$; the rest acts on the fields and vanishes.
+> **Step 1** (Dirac: the jump at first order). Steps 2–5 of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-5|Derivation §C5b.8.5]]: of $i\slashed{\partial}_x - m = i\gamma^0\partial_0 + i\gamma^j\partial_j - m$ only $i\gamma^0\partial_0$ acts on the step functions, once, and leaves $i(\gamma^0)_{ca}\delta(x^0 - y^0)$ times the bracket $\langle0|\hat\psi_a\hat{\bar\psi}_b|0\rangle + \langle0|\hat{\bar\psi}_b\hat\psi_a|0\rangle = \langle0|\{\hat\psi_a(x), \hat{\bar\psi}_b(y)\}|0\rangle$; the rest acts on the fields and vanishes.
 >
 > **Step 2** (its value). Step 6 there: $\{\hat\psi_a, \hat{\bar\psi}_b\} = (\gamma^0)_{ab}\delta^3(\mathbf x - \mathbf y)$ at equal times.
 >
@@ -365,11 +401,11 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 > **What the derivation shows**
 > - The order of the field equation decides which derivative produces the source; in both cases its strength is the canonical (anti)commutator.
 
-^der-c5b-8-5
+^der-c5b-8-6
 
-*Uses:* [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-4|Derivation §C5b.8.4]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-7-5|Derivation §C2b.7.5]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]
+*Uses:* [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-5|Derivation §C5b.8.5]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-7-5|Derivation §C2b.7.5]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]
 
-> [!theorem] Theorem §C5b.8.6: The Fermionic Minus Sign of T Makes S_F a Green's Function
+> [!theorem] Theorem §C5b.8.7: The Fermionic Minus Sign of T Makes S_F a Green's Function
 > With bosonic ordering, $T_{\rm B}\{\hat\psi_a(x)\hat{\bar\psi}_b(y)\} \equiv \theta(x^0 - y^0)\,\hat\psi_a(x)\hat{\bar\psi}_b(y) + \theta(y^0 - x^0)\,\hat{\bar\psi}_b(y)\hat\psi_a(x)$, the jump term is the vacuum commutator at equal times,
 >
 > $$
@@ -382,16 +418,16 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 > \langle0|[\hat\psi_a(t, \mathbf x), \hat{\bar\psi}_b(t, \mathbf y)]|0\rangle = \int\frac{d^3p}{(2\pi)^3}\,\frac{(m - \mathbf p\cdot\boldsymbol\gamma)_{ab}}{E_{\mathbf p}}\,e^{i\mathbf p\cdot\mathbf r} = 2\bigl(m + i\gamma^j\partial_{r^j}\bigr)_{ab}\,D_W(0, \mathbf r) ,
 > $$
 >
-> a function of $\mathbf r$ that is nonzero at every $\mathbf r \ne 0$ ($D_W$ at spacelike separation, [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]), not $(\gamma^0)_{ab}\delta^3(\mathbf r)$. The source would then not be $i\delta^4$, and $\langle0|T_{\rm B}|0\rangle$ would not be a Green's function. The minus sign of fermionic time ordering turns the bracket into the anticommutator, whose equal-time value is $\gamma^0\delta^3$ ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]). The other reason for the sign is frame independence ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-2|Theorem §C5b.8.2]]).
+> a function of $\mathbf r$ that is nonzero at every $\mathbf r \ne 0$ ($D_W$ at spacelike separation, [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]), not $(\gamma^0)_{ab}\delta^3(\mathbf r)$. The source would then not be $i\delta^4$, and $\langle0|T_{\rm B}|0\rangle$ would not be a Green's function. The minus sign of fermionic time ordering turns the bracket into the anticommutator, whose equal-time value is $\gamma^0\delta^3$ ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|Theorem §C5b.8.5]]). The other reason for the sign is frame independence ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-2|Theorem §C5b.8.2]]).
 >
 > *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
 > *Source: derived here; the positive half from PHY 513, Problem Set 9, Problem 1(b) (the user's solution: "The bracket is the vacuum expectation value of the anticommutator")*
 
-^thm-c5b-8-6
+^thm-c5b-8-7
 
 > [!derivation]- Derivation
-> **Step 1** (the same steps with a plus sign). Steps 1–5 of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-4|Derivation §C5b.8.4]] with $+\theta(y^0 - x^0)$: the field terms vanish by the Dirac equation as before, and the jump terms are $i(\gamma^0)_{ca}\bigl[\delta(x^0 - y^0)\langle0|\hat\psi_a\hat{\bar\psi}_b|0\rangle + (-\delta(x^0 - y^0))\langle0|\hat{\bar\psi}_b\hat\psi_a|0\rangle\bigr] = i(\gamma^0)_{ca}\,\delta(x^0 - y^0)\,\langle0|[\hat\psi_a(x), \hat{\bar\psi}_b(y)]|0\rangle$.
+> **Step 1** (the same steps with a plus sign). Steps 1–5 of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-5|Derivation §C5b.8.5]] with $+\theta(y^0 - x^0)$: the field terms vanish by the Dirac equation as before, and the jump terms are $i(\gamma^0)_{ca}\bigl[\delta(x^0 - y^0)\langle0|\hat\psi_a\hat{\bar\psi}_b|0\rangle + (-\delta(x^0 - y^0))\langle0|\hat{\bar\psi}_b\hat\psi_a|0\rangle\bigr] = i(\gamma^0)_{ca}\,\delta(x^0 - y^0)\,\langle0|[\hat\psi_a(x), \hat{\bar\psi}_b(y)]|0\rangle$.
 >
 > **Step 2** (the commutator from the Wightman functions). $\langle0|[\hat\psi_a(x), \hat{\bar\psi}_b(y)]|0\rangle = S^+_W(\xi)_{ab} - S^-_W(\xi)_{ab}$ ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^def-c5b-7-1|Def. §C5b.7.1]]), and by [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], with $p^0 = E_{\mathbf p} \equiv E$,
 >
@@ -420,54 +456,18 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 > **What the derivation shows**
 > - Only the sum $S^+_W + S^-_W$ is local at equal times; the difference is a smeared, nonzero function. The sign of $T$ is fixed twice: by frame independence ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-2|Theorem §C5b.8.2]]) and by the Green's-function property (this theorem).
 
-^der-c5b-8-6
-
-*Uses:* [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-4|Derivation §C5b.8.4]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^def-c5b-7-1|Def. §C5b.7.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]], [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
-
-> [!theorem] Theorem §C5b.8.7: The Dirac Propagator as a Distribution
-> 1. For $\varepsilon > 0$, $\tilde S^\varepsilon_F(p) = i(\slashed{p} + m)/(p^2 - m^2 + i\varepsilon)$ is a smooth matrix function of polynomial growth, a tempered distribution; as $\varepsilon \to 0^+$, in $\mathcal S'(\mathbb R^4)$,
->
-> $$
-> \tilde S^\varepsilon_F \to i(\slashed{p} + m)\,\mathcal P\frac{1}{p^2 - m^2} + \pi(\slashed{p} + m)\,\delta(p^2 - m^2) = (\slashed{p} + m)\tilde D_F ,
-> $$
->
-> the Sokhotski–Plemelj limit of $\tilde D_F$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]]) multiplied by the polynomial $\slashed{p} + m$; the transform carries the limit to position space, so $S_F = \lim_{\varepsilon\to0^+}S^\varepsilon_F = (i\slashed{\partial} + m)D_F$ in $\mathcal S'$.
-> 2. $S_F = \theta(\xi^0)S^+_W - \theta(-\xi^0)S^-_W$ is defined slice by slice: $S^\pm_W$ are smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$, and the value $\theta(0)$ does not enter.
-> 3. Off $\xi = 0$ the products have disjoint singular supports; at $\xi = 0$ the slice definition is the unique extension that is a fundamental solution of the Dirac operator ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]]).
->
-> *Scalar analogue:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]].
->
-> *Model:* any; *applies:* any theory (a statement about the function); its reading as a vacuum value in $|0\rangle$ needs the free field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]).
->
-> *Source: stated and derived here from [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]] and [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]] · PS §3.5, eq. (3.121)*
-
-^thm-c5b-8-7
-
-> [!derivation]- Derivation
-> **1. Finite $\varepsilon$.** Each entry of $\slashed{p} + m$ is a polynomial of degree $1$ and $|p^2 - m^2 + i\varepsilon|^{-1} \le \varepsilon^{-1}$: smooth with polynomial growth, hence tempered ([[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], 2).
->
-> **2. The limit.** Multiplication by a polynomial is continuous on $\mathcal S'$ (it maps $\mathcal S$ to itself continuously; [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1, and [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]): if $T_\varepsilon \to T$ then $P\,T_\varepsilon[\varphi] = T_\varepsilon[P\varphi] \to T[P\varphi]$. With $T_\varepsilon = \tilde D^\varepsilon_F \to i\mathcal P\frac{1}{p^2 - m^2} + \pi\delta(p^2 - m^2)$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], 1; [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 1) and $P = \slashed{p} + m$, part 1 in momentum space. The inverse transform is continuous on $\mathcal S'$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], 2), and the transform of $(\slashed{p} + m)\tilde D_F$ is $(i\slashed{\partial} + m)D_F$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3).
->
-> **3. Slices.** $S^\pm_W = \pm(i\slashed{\partial} + m)D_W(\pm\xi)$ ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]]); $D_W(\pm\xi)$ are smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], 3; [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|Theorem §C2b.5.4]], 3), and so are their space and time derivatives. So the products with $\theta(\pm\xi^0)$ are defined as in Step 1 of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-7-4|Derivation §C2b.7.4]]; they agree with part 1 by the second route of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].
->
-> **4. Uniqueness at the origin.** Away from $\xi = 0$, $\operatorname{sing\,supp}\theta(\pm\xi^0)$ (the plane $\xi^0 = 0$) and $\operatorname{sing\,supp}S^\pm_W$ (contained in the cone, as for $D_W$: [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 1; derivatives do not enlarge it) meet only at $0$ ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 2). Two extensions agreeing off $0$ differ by $T = \sum_\alpha C_\alpha\partial^\alpha\delta^4$ with constant matrices $C_\alpha$ ([[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]]). If both satisfy $(i\slashed{\partial} - m)S = i\delta^4$, then $(i\slashed{\partial} - m)T = 0$; in transform $(\slashed{p} - m)P(p) = 0$ for the polynomial $P = \tilde T$; multiplying by $\slashed{p} + m$, $(p^2 - m^2)P(p) = 0$ ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]]), so $P = 0$.
->
-> **What the derivation shows**
-> - "$\varepsilon \to 0^+$ at the end" means the limit of distributions; the numerator does not interfere, being a polynomial.
-> - The three definitions (contour, $i\varepsilon$, time-ordered product) give one distribution, as for the scalar.
-
 ^der-c5b-8-7
 
-*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]]
+*Uses:* [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-5|Derivation §C5b.8.5]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^def-c5b-7-1|Def. §C5b.7.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]], [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
 
 > [!theorem] Theorem §C5b.8.8: The Matrix Form of the Propagator
-> For $m > 0$ and $\varepsilon > 0$ the matrix $\slashed{p} - m + i\varepsilon$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]) is invertible for every real $p$, and as $\varepsilon \to 0^+$, in $\mathcal S'(\mathbb R^4)$,
+> For $m > 0$ and $\varepsilon > 0$ the matrix $\slashed{p} - m + i\varepsilon$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]]) is invertible for every real $p$, and as $\varepsilon \to 0^+$, in $\mathcal S'(\mathbb R^4)$,
 >
 > $$
 > \frac{i}{\slashed{p} - m + i\varepsilon} \equiv i\,(\slashed{p} - m + i\varepsilon)^{-1} = \frac{i(\slashed{p} + m - i\varepsilon)}{p^2 - m^2 + 2im\varepsilon + \varepsilon^2} \;\to\; \tilde S_F(p) ,
 > $$
 >
-> the limit of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]]. So $\tilde S_F = \dfrac{i}{\slashed{p} - m + i\varepsilon}$, PS's and the user's form, is a matrix inverse taken before the limit.
+> the limit of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]. So $\tilde S_F = \dfrac{i}{\slashed{p} - m + i\varepsilon}$, PS's and the user's form, is a matrix inverse taken before the limit.
 >
 > *Model:* any; *applies:* any theory (a statement about the matrix function), $m > 0$; its reading as $\langle0|T\{\hat\psi\hat{\bar\psi}\}|0\rangle$ needs the free field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]).
 >
@@ -480,14 +480,14 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 >
 > **2. The denominator.** Replacing $\varepsilon$ by $2m\varepsilon$ ($c = 2m > 0$ constant) does not change the limit ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 3); the added $\varepsilon^2$ moves the poles at fixed $\mathbf p$ to $\pm\sqrt{E^2 - \varepsilon^2 - 2im\varepsilon}$, on the same sides of the real axis, so the limit is again $\mathcal P\frac{1}{p^2 - m^2} - i\pi\delta(p^2 - m^2)$ (Step 3 of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-7-9|Derivation §C2b.7.9]]).
 >
-> **3. The numerator.** $-i\varepsilon\cdot i/(p^2 - m^2 + \dots)$ is $\varepsilon$ times a convergent family: it tends to $0$. The rest is $(\slashed{p} + m)$ times the scalar limit, which is $\tilde S_F$ (Step 2 of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-7|Derivation §C5b.8.7]]).
+> **3. The numerator.** $-i\varepsilon\cdot i/(p^2 - m^2 + \dots)$ is $\varepsilon$ times a convergent family: it tends to $0$. The rest is $(\slashed{p} + m)$ times the scalar limit, which is $\tilde S_F$ (Step 2 of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-4|Derivation §C5b.8.4]]).
 >
 > **What the derivation shows**
 > - The compact form needs $m > 0$ for its $i\varepsilon$ to have a definite sign after inversion; for $m = 0$ use $i\slashed{p}/(p^2 + i\varepsilon)$.
 
 ^der-c5b-8-8
 
-*Uses:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]]
+*Uses:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]
 
 ## The two-point functions, all together
 
@@ -501,7 +501,7 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 > | anticommutator $iS$ | $\langle0\vert\{\hat\psi(x), \hat{\bar\psi}(y)\}\vert0\rangle$ | $(i\slashed{\partial} + m)\,iD$ | $2\pi(\slashed{p} + m)\operatorname{sgn}(p^0)\delta(p^2 - m^2)$ | homogeneous; supported in the closed cone — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3\|Theorem §C5b.7.3]] |
 > | retarded $S_R$ | $\theta(\xi^0)\,iS$ | $(i\slashed{\partial} + m)D_R$ | $\frac{i(\slashed{p} + m)}{(p^0 + i\varepsilon)^2 - E_{\mathbf p}^2}$ | Green's; slice product, forward support — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1\|Theorem §C5b.8.1]] |
 > | advanced $S_A$ | $-\theta(-\xi^0)\,iS$ | $(i\slashed{\partial} + m)D_A$ | $\frac{i(\slashed{p} + m)}{(p^0 - i\varepsilon)^2 - E_{\mathbf p}^2}$ | Green's; backward support — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1\|Theorem §C5b.8.1]] |
-> | Feynman $S_F$ | $\langle0\vert T\{\hat\psi(x)\hat{\bar\psi}(y)\}\vert0\rangle$ | $(i\slashed{\partial} + m)D_F$ | $\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon}$ | Green's; limit $\varepsilon \to 0^+$ in $\mathcal S'$ — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7\|Theorem §C5b.8.7]] |
+> | Feynman $S_F$ | $\langle0\vert T\{\hat\psi(x)\hat{\bar\psi}(y)\}\vert0\rangle$ | $(i\slashed{\partial} + m)D_F$ | $\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon}$ | Green's; limit $\varepsilon \to 0^+$ in $\mathcal S'$ — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4\|Theorem §C5b.8.4]] |
 >
 > *Scalar analogue:* [[§C2b.8 Wick Rotation and the Two-Point Family#^rem-c2b-8-2|§C2b.8, Remark: The two-point functions at a glance]].
 >
@@ -522,24 +522,24 @@ This is the spinor counterpart of [[§C2b.6 Green's Functions and Contours|§C2b
 > Proved in CA; each line says what the physics above relies on.
 >
 > Derivatives, supports and products of distributions:
-> - [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]] — supports and singular supports, and the derivative of a generalized function: the language of Theorem §C5b.8.7 (the plane $\xi^0 = 0$, the cone, derivatives of $D_W$ and $D_F$).
-> - [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], part 2 — $\theta' = \delta$: $\partial_0\theta(\pm\xi^0) = \pm\delta(\xi^0)$, the origin of every contact term (Derivations §C5b.8.1, §C5b.8.3 second route, §C5b.8.4).
-> - [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]] — multiplication by a smooth function, $(PT)[\varphi] = T[P\varphi]$: the polynomial numerator $\slashed{p} + m$ does not interfere with the limit $\varepsilon \to 0^+$ (part 1); off $\xi = 0$ the products $\theta(\pm\xi^0)S^\pm_W$ have disjoint singular supports (part 2) (Derivation §C5b.8.7).
-> - [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], part 2 — a function of polynomial growth is a tempered distribution: $\tilde S^\varepsilon_F$ for $\varepsilon > 0$ (Derivation §C5b.8.7, Step 1).
-> - [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]] — a distribution supported at a point is a finite sum of derivatives of δ: two extensions of $\theta(\pm\xi^0)S^\pm_W$ to $\xi = 0$ differ by contact terms, which the Green's-function equation excludes (Derivation §C5b.8.7, Step 4).
+> - [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]] — supports and singular supports, and the derivative of a generalized function: the language of Theorem §C5b.8.4 (the plane $\xi^0 = 0$, the cone, derivatives of $D_W$ and $D_F$).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], part 2 — $\theta' = \delta$: $\partial_0\theta(\pm\xi^0) = \pm\delta(\xi^0)$, the origin of every contact term (Derivations §C5b.8.1, §C5b.8.3 second route, §C5b.8.5).
+> - [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]] — multiplication by a smooth function, $(PT)[\varphi] = T[P\varphi]$: the polynomial numerator $\slashed{p} + m$ does not interfere with the limit $\varepsilon \to 0^+$ (part 1); off $\xi = 0$ the products $\theta(\pm\xi^0)S^\pm_W$ have disjoint singular supports (part 2) (Derivation §C5b.8.4).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], part 2 — a function of polynomial growth is a tempered distribution: $\tilde S^\varepsilon_F$ for $\varepsilon > 0$ (Derivation §C5b.8.4, Step 1).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]] — a distribution supported at a point is a finite sum of derivatives of δ: two extensions of $\theta(\pm\xi^0)S^\pm_W$ to $\xi = 0$ differ by contact terms, which the Green's-function equation excludes (Derivation §C5b.8.4, Step 4).
 > - [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]] — distributional limits: the pointwise, bounded limit $\varepsilon \to 0^+$ of the $p^0$ integral is a limit in $\mathcal S'(\mathbb R)$ (Derivation §C5b.8.3, Step 4).
 >
 > Fourier transforms:
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — plane waves integrate to a delta: $\delta^4(x - y) = \int\frac{d^4p}{(2\pi)^4}e^{-ip\cdot(x - y)}$ (second route of Theorem §C5b.8.1) and $\delta^3(\mathbf r)$ in the equal-time anticommutator (Derivation §C5b.8.6).
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], part 2 — the transform is continuous on $\mathcal S'$: the limit $\varepsilon \to 0^+$ may be taken in momentum space and carried to position space (Derivation §C5b.8.7, Step 2).
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], part 3 — the derivative rule in $\mathcal S'$: $\slashed{p} + m$ is the transform of $i\slashed{\partial} + m$, so $\tilde S_F = (\slashed{p} + m)\tilde D_F$ (Derivations §C5b.8.3, §C5b.8.7).
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], part 1 — relabelling $\mathbf p \to -\mathbf p$ with Jacobian $1$ in the antiparticle terms (Derivations §C5b.8.3, §C5b.8.6).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — plane waves integrate to a delta: $\delta^4(x - y) = \int\frac{d^4p}{(2\pi)^4}e^{-ip\cdot(x - y)}$ (second route of Theorem §C5b.8.1) and $\delta^3(\mathbf r)$ in the equal-time anticommutator (Derivation §C5b.8.7).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], part 2 — the transform is continuous on $\mathcal S'$: the limit $\varepsilon \to 0^+$ may be taken in momentum space and carried to position space (Derivation §C5b.8.4, Step 2).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], part 3 — the derivative rule in $\mathcal S'$: $\slashed{p} + m$ is the transform of $i\slashed{\partial} + m$, so $\tilde S_F = (\slashed{p} + m)\tilde D_F$ (Derivations §C5b.8.3, §C5b.8.4).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], part 1 — relabelling $\mathbf p \to -\mathbf p$ with Jacobian $1$ in the antiparticle terms (Derivations §C5b.8.3, §C5b.8.7).
 >
 > Contours and the $i\varepsilon$ limit:
 > - [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]] — Cauchy's theorem and the deformation of contours: the detours around the poles in the second route of Theorem §C5b.8.1.
 > - [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]] — residues at the simple poles $\pm E_\varepsilon$ and the residue theorem with the orientation sign (Derivation §C5b.8.3, Steps 3–4).
 > - [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.4 Contour Integration#^cau-ca-4-1|§CA.4, Caution: Jordan's lemma needs g → 0]] — closing the contour: with the numerator the integrand falls only like $1/|p^0|$, so Jordan's lemma is needed, not the ML estimate (Derivation §C5b.8.3, Step 4).
-> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]] — the $i\varepsilon$ limits of the propagator denominators: the Sokhotski–Plemelj form of $\tilde D_F$ (part 1) and the equivalence of $i\varepsilon$, $2E\varepsilon$ and $2m\varepsilon$ (part 3) (Derivations §C5b.8.3, §C5b.8.7, §C5b.8.8).
+> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]] — the $i\varepsilon$ limits of the propagator denominators: the Sokhotski–Plemelj form of $\tilde D_F$ (part 1) and the equivalence of $i\varepsilon$, $2E\varepsilon$ and $2m\varepsilon$ (part 3) (Derivations §C5b.8.3, §C5b.8.4, §C5b.8.8).
 
 > [!remark]- Connections
 > - The Dirac Green's functions are the scalar ones with $i\slashed{\partial} + m$ in front, the same relation that ties the Dirac two-point functions to $D_W$ and $D$ — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]], [[§C2b.8 Wick Rotation and the Two-Point Family#^rem-c2b-8-2|§C2b.8, Remark: The two-point functions at a glance]].

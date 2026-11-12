@@ -67,10 +67,10 @@ tags: [chapter, quantum-field-theory]
 - [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|§C5b.8.1]] Green's Functions of the Dirac Operator
 - [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-2|§C5b.8.2]] Fermionic Time Ordering Is Frame Independent
 - [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|§C5b.8.3]] The Dirac Feynman Propagator
-- [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|§C5b.8.4]] The Free Dirac Schwinger–Dyson Equation
-- [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|§C5b.8.5]] One Time Derivative: the Source Is the Equal-Time Anticommutator Itself
-- [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|§C5b.8.6]] The Fermionic Minus Sign of T Makes S_F a Green's Function
-- [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|§C5b.8.7]] The Dirac Propagator as a Distribution
+- [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|§C5b.8.5]] The Free Dirac Schwinger–Dyson Equation
+- [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|§C5b.8.6]] One Time Derivative: the Source Is the Equal-Time Anticommutator Itself
+- [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|§C5b.8.7]] The Fermionic Minus Sign of T Makes S_F a Green's Function
+- [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|§C5b.8.4]] The Dirac Propagator as a Distribution
 - [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-8|§C5b.8.8]] The Matrix Form of the Propagator
 - [[§C5b.9 Spin and Statistics#^thm-c5b-9-1|§C5b.9.1]] The Free Fields of the Course Obey the Spin–Statistics Theorem
 

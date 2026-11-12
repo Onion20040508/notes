@@ -32,7 +32,7 @@ The course's Clifford multiplication, the map behind this notation (first writte
 > [!caution] Caution: Two Dirac modules, and the sign of γ⁵
 > Both $e_\mu \mapsto \gamma_\mu$ (used here) and $e_\mu \mapsto \gamma^\mu$ are Clifford modules of $\mathbb R^{1,3}$; the second is the first composed with the automorphism $\hat{\mathcal P}$ of $\mathrm{Cl}(1,3)$ extending parity $\mathcal P = \operatorname{diag}(1, -1, -1, -1)$ (Theorem §CB.11.7), since $\gamma^\mu = \gamma(\mathcal Pe_\mu)$. Only the first makes $\gamma(x)$ the course's spinor matrix of $\rho(x)$: $\gamma(x) = \Lambda_{1/2}(\omega)$ when $\rho(x) = e^\omega$ (Theorem §CB.18.3); with $e_\mu \mapsto \gamma^\mu$ the same $\gamma(x)$ belongs to $\mathcal P\rho(x)\mathcal P$, boosts reversed. They also differ on the volume element: $e_\mu \mapsto \gamma^\mu$ sends $\omega_{\mathbb C} = ie_0e_1e_2e_3$ to $\gamma^5$ (the reading of [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-13|Theorem §CB.12.13]] and [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-4|Def. §CB.13.4]]), $e_\mu \mapsto \gamma_\mu$ sends it to $-\gamma^5$ (Theorem §CB.18.2). So for the module used here the half-spin spaces $\omega_{\mathbb C} = \pm1$ of [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-24|Def. §CB.14.24]] are the course's $\gamma^5 = \mp1$ spaces. This section keeps the course's labels: $S^\pm$ is $\gamma^5 = \pm1$, and $S^-$ is left-handed.
 >
-> *Source: the slash notation is introduced with the Dirac equation, the course's [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]] · written here, checked against [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-8|Theorem §CB.18.8]] and [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]]*
+> *Source: the slash notation is introduced with the Dirac equation, the course's [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]] · written here, checked against [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-8|Theorem §CB.18.8]] and [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]]*
 
 ^cau-cb-18-1
 
@@ -469,7 +469,7 @@ The invariance of the Dirac form under the spinor Lorentz matrices, an instance 
 > **What the derivation shows**
 > - $\Lambda_{1/2}$ preserves the Hermitian form $\gamma^0$ as $\Lambda$ preserves $g$ ($\Lambda^{\mathsf T}g\Lambda = g$): $\gamma^0$ plays the role of the metric for the Dirac spinor slot; both forms are indefinite.
 > - ⚑ By-product: the sign ambiguity $\pm\Lambda_{1/2}$ cancels in $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2}$.
-> - Used next: the Dirac conjugate (Def. §C5a.2.1, Theorem §C5a.6.1).
+> - Used next: the Dirac conjugate (Def. §C5a.2.2, Theorem §C5a.6.1).
 
 ^der-cb-18-13
 

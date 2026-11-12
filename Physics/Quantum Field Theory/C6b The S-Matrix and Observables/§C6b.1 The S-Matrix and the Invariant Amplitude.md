@@ -500,7 +500,7 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > 1. the **$S$-matrix** $\hat S$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]), an operator, hatted here;
 > 2. the **symmetry factor** $S = |\operatorname{Aut}|$ of a Feynman diagram ([[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]), a positive integer from overcounted contractions;
 > 3. the **identical-particle factor** $S_{\rm id} = \prod_kn_k!$ for $n_k$ identical particles of species $k$ in a final state ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]] in the box, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]] with wave packets), a positive integer from overcounted final states; the user's notes write $S$, Yu $\mathcal S$ (eq. (6.305));
-> 4. the **scalar bilinear** $\mathsf S = \bar\psi\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]), sans-serif.
+> 4. the **scalar bilinear** $\mathsf S = \bar\psi\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|Def. §C5a.6.3]]), sans-serif.
 >
 > The action $S = \int d^4x\,\mathcal L$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-2|Def. §C1b.2.2]]) is a fifth; the slides write the scattering matrix with a calligraphic $S$, not to be confused with the action. Factors 2 and 3 can occur in the same calculation ([[§C6c.1 Amplitudes from Correlation Functions#^ex-c6c-1-2|Example §C6c.1.2]]: $S = 1$ for the diagram, $S_{\rm id} = 2$ for the final state).
 >
