@@ -97,7 +97,7 @@ tags: [linear-algebra]
 > Square roots in general are plentiful: $I$ on $\R^2$ has infinitely many (all reflections), but only $I$ itself is positive.
 
 > [!remark]- Connections
-> - Used in Quantum Field Theory: the positive square roots $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ that boost a Dirac spinor from rest to momentum $p$, and the positive factor in the polar decomposition of $SL(2, \mathbb C)$ — [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|QFT Def. §C5a.10.5]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|QFT Theorem §C5a.10.7]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-9|QFT Theorem §CB.10.9]].
+> - Used in Quantum Field Theory: the positive square roots $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ that boost a Dirac spinor from rest to momentum $p$, and the positive factor in the polar decomposition of $SL(2, \mathbb C)$ — [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|QFT Def. §C5a.10.5]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|QFT Theorem §C5a.10.7]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-12|QFT Theorem §CB.10.12]].
 
 > [!remark] Notation 7.40: √T (p. 253)
 > For a positive operator $T$, $\sqrt T$ denotes its unique positive square root ([[§25 Positive Operators#^ladr-7-39|7.39]]).

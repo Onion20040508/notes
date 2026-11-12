@@ -130,7 +130,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 ^cau-c5a-5-1
 
 > [!theorem] Theorem §C5a.5.4: ε Is the Invariant Form of a Weyl Slot
-> 1. For every $2\times2$ matrix $M$, with $E = (\varepsilon^{ab})$ of [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]], $M^{\mathsf T}EM = (\det M)\,E$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-15|Theorem §CB.8.15]], 1). Hence $\varepsilon$ is invariant under $SL(2, \mathbb C)$: $\Lambda_L^{\mathsf T}E\Lambda_L = E$, $\Lambda_R^{\mathsf T}E\Lambda_R = E$.
+> 1. For every $2\times2$ matrix $M$, with $E = (\varepsilon^{ab})$ of [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]], $M^{\mathsf T}EM = (\det M)\,E$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]], 1). Hence $\varepsilon$ is invariant under $SL(2, \mathbb C)$: $\Lambda_L^{\mathsf T}E\Lambda_L = E$, $\Lambda_R^{\mathsf T}E\Lambda_R = E$.
 > 2. An upper undotted index transforms with $(\Lambda_L^{\mathsf T})^{-1}$: $\psi^a \to \psi^b(\Lambda_L^{-1})_b{}^a$.
 > 3. $\chi^a\psi_a = \varepsilon^{ab}\chi_b\psi_a$ is invariant; $\chi_a\psi^a = -\chi^a\psi_a$; for commuting components $\psi^a\psi_a = 0$.
 >
@@ -141,7 +141,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 ^thm-c5a-5-4
 
 > [!derivation]- Derivation
-> **1. The determinant identity.** $M^{\mathsf T}EM = (\det M)\,E$ is [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-15|Theorem §CB.8.15]], 1 (with $E = \varepsilon$; the course's computation, entry by entry, is its second proof).
+> **1. The determinant identity.** $M^{\mathsf T}EM = (\det M)\,E$ is [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]], 1 (with $E = \varepsilon$; the course's computation, entry by entry, is its second proof).
 >
 > With $\det\Lambda_L = \det\Lambda_R = 1$ (Theorem §C5a.4.1) the form is invariant.
 >
@@ -156,7 +156,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 
 ^der-c5a-5-4
 
-*Uses:* [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-15|Theorem §CB.8.15]], [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]]
+*Uses:* [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]], [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]]
 
 > [!theorem] Theorem §C5a.5.5: Dotted Indices, Conjugation and the Invariant Pairings
 > 1. If $\psi_a$ is left-handed, $\bar\psi_{\dot a} = (\psi_a)^*$ transforms with $\Lambda_L^*$, and $\bar\psi^{\dot a} = \varepsilon^{\dot a\dot b}\bar\psi_{\dot b}$, i.e. $E\psi_L^* = i\sigma^2\psi_L^*$, transforms with $\Lambda_R$: it is right-handed (the spin-½ case of [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-6|Theorem §C3.2.6]]). Conversely $(\psi^{\dot a})^*$ transforms with $\Lambda_R^* = (\Lambda_L^{\mathsf T})^{-1}$, as an upper undotted index.
@@ -373,7 +373,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 > | spinor $\psi$, $u^s(p)$, $v^s(p)$ | $V$ | $4\times1$ | $U\psi$ | Theorem §C5a.1.2, 1 |
 > | row $\varphi \in V'$, e.g. $\bar\psi$ (Def. §C5a.2.2) | $V'$ | $1\times4$ | $\varphi U^{-1}$ | Theorem §C5a.1.2, 3 |
 > | $\gamma^\mu$, $\gamma^5$, $S^{\mu\nu}$, $\Lambda_{1/2}$, $\slashed{p}$, $P_L$, $\psi\bar\chi$ | $V\otimes V'$ | $4\times4$ | $U(\cdot)U^{-1}$ | Theorem §C5a.1.2, 2 |
-> | $\psi^\dagger$ | conjugate of $V$ | $1\times4$ | $\psi^\dagger U^\dagger$ ($= \psi^\dagger U^{-1}$ iff $U$ unitary) | Derivation §CB.0.10 |
+> | $\psi^\dagger$ | conjugate of $V$ | $1\times4$ | $\psi^\dagger U^\dagger$ ($= \psi^\dagger U^{-1}$ iff $U$ unitary) | Derivation §CB.0.11 |
 > | matrix of the Dirac form, $\gamma^0$ in that role | form on $V$ | $4\times4$ | $(U^{-1})^\dagger(\cdot)U^{-1}$ | Theorem §CB.9.2 |
 > | $\bar\psi\chi$, $\bar\psi\gamma^\mu\chi$, $\operatorname{tr}(\gamma^\mu\gamma^\nu)$, eigenvalues | none (all contracted) | number | unchanged | Theorems §C5a.1.2, 3–4, §C5a.2.2 |
 >
@@ -408,8 +408,8 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12|Theorem §CB.13.12]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-12|Derivation]] — Pauli's theorem ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]]).
 >
 > The invariant $\varepsilon$ of $SL(2, \mathbb C) = Sp(2, \mathbb C)$, whose second proof is the course's computation, and the four two-dimensional representations, of which the index calculus below is the component form:
-> - [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-15|Theorem §CB.8.15]] with [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-8-15|Proof]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-8-15b|Proof (second route)]] — $M^{\mathsf T}\varepsilon M = (\det M)\,\varepsilon$ (Theorem §C5a.5.4).
-> - [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-16|Theorem §CB.8.16]] with [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-8-16|Proof]] — the four two-dimensional representations (Theorem §C5a.5.5).
+> - [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]] with [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-8-17|Proof]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-8-17b|Proof (second route)]] — $M^{\mathsf T}\varepsilon M = (\det M)\,\varepsilon$ (Theorem §C5a.5.4).
+> - [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-18|Theorem §CB.8.18]] with [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-8-18|Proof]] — the four two-dimensional representations (Theorem §C5a.5.5).
 >
 > Theorem §C5a.5.5 uses that complex conjugation exchanges the two copies:
 > - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|Theorem §CB.17.14]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14|Derivation]] — [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-6|Theorem §C3.2.6]], 2.

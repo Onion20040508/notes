@@ -799,7 +799,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** ($[K_2, K_3]$). $K_2K_3 = i^2(E_{02} + E_{20})(E_{03} + E_{30}) = -E_{20}E_{03} = -E_{23}$; $K_3K_2 = -E_{30}E_{02} = -E_{32}$. So $[K_2, K_3] = -E_{23} + E_{32}$, and $-iJ_1 = -i(-iE_{23} + iE_{32}) = -E_{23} + E_{32}$: equal.
 >
-> *Checked against:* [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]] (the $\mathbf J$, $\mathbf K$ form); numerical check.
+> *Checked against:* [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-7|Theorem §CB.5.7]] (the $\mathbf J$, $\mathbf K$ form); numerical check.
 
 ^sol-wr-14-b
 
@@ -814,7 +814,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** Off-diagonal $g$'s vanish, $\mathcal J^{00} = 0$, $g^{00} = 1$: $= -i\mathcal J^{23} = -iJ_1$.
 >
-> *Checked against:* [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]]; the same pattern as $[\mathcal J^{01}, \mathcal J^{02}] = -iJ_3$ in the user's Lorentz-representation review (2026-10-14), §2.
+> *Checked against:* [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-7|Theorem §CB.5.7]]; the same pattern as $[\mathcal J^{01}, \mathcal J^{02}] = -iJ_3$ in the user's Lorentz-representation review (2026-10-14), §2.
 
 ^sol-wr-14-c
 
@@ -889,7 +889,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (first order). $R \approx \mathbb 1 - i\theta J_3$: $RK_1R^{-1} \approx K_1 - i\theta[J_3, K_1] = K_1 - i\theta(i\varepsilon_{312}K_2) = K_1 + \theta K_2$, the first-order term of Step 1. $[J_i, K_j] = i\varepsilon_{ijk}K_k$ says exactly that $\mathbf K$ turns like a vector under rotations.
 >
-> *Derived here; check:* the result is the boost of [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], 2 with $\hat{\mathbf n} = (\cos\theta, \sin\theta, 0)$ (checked numerically at $\theta = 0.7$, $\eta = 0.9$); the commutator is [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]].
+> *Derived here; check:* the result is the boost of [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], 2 with $\hat{\mathbf n} = (\cos\theta, \sin\theta, 0)$ (checked numerically at $\theta = 0.7$, $\eta = 0.9$); the commutator is [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-7|Theorem §CB.5.7]].
 
 ^sol-wr-15-c
 
@@ -950,7 +950,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (the sign). The minus in $[K_i, K_j] = -i\varepsilon_{ijk}J_k$ comes from $g^{00} = +1$ against $g^{ii} = -1$; in Euclidean four dimensions the same computation gives $+i\varepsilon_{ijk}J_k$. This sign is the whole difference between $SO^+(1,3)$ and $SO(4)$.
 >
-> *Checked against:* [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-1|§C3.2, Remark: Two boosts make a rotation]]; [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]] ($[K_i, K_j] = -i\varepsilon_{ijk}J_k$); [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-4|Theorem §CB.6.4]] ($SO(4)$ sign); numerical check at $a = 10^{-3}$, $b = 2\cdot10^{-3}$.
+> *Checked against:* [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-1|§C3.2, Remark: Two boosts make a rotation]]; [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-7|Theorem §CB.5.7]] ($[K_i, K_j] = -i\varepsilon_{ijk}J_k$); [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-4|Theorem §CB.6.4]] ($SO(4)$ sign); numerical check at $a = 10^{-3}$, $b = 2\cdot10^{-3}$.
 
 ^sol-wr-16-c
 
@@ -1158,7 +1158,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > 3. (c) $[\delta^4(p)] = -4$, $[\partial/\partial p^\mu] = -1$. [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 4.
 > 4. (d) $\Box(x^2)^2 = 24x^2$. [[§C1a.6 Calculus with Indices#^thm-c1a-6-2|Theorem §C1a.6.2]] ($\partial^2\rho^2 = 24\rho$).
 > 5. (e) $y = \frac12\ln\frac{13 + 12}{13 - 12} = \ln5 \approx 1.609$. Problem 2(c) (derived there).
-> 6. (f) $[K_3, J_1] = -[J_1, K_3] = -i\varepsilon_{13k}K_k = -i\varepsilon_{132}K_2 = iK_2$. [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]]; numerical check.
+> 6. (f) $[K_3, J_1] = -[J_1, K_3] = -i\varepsilon_{13k}K_k = -i\varepsilon_{132}K_2 = iK_2$. [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-7|Theorem §CB.5.7]]; numerical check.
 > 7. (g) The proper non-orthochronous component ($\det = +1$, $\Lambda^0{}_0 = -1$), $\mathcal P\mathcal T\cdot SO^+(1,3)$; no, every exponential lies in $SO^+(1,3)$. [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|Theorem §CB.3.12]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-4|Theorem §C1a.7.4]].
 > 8. (h) $(\frac12, \frac12)$; $(0, 0)$; $(1, 1)$. [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
 > 9. (i) Both zero: a plane wave is a null field ($\mathbf E\perp\mathbf B$, $\lvert\mathbf E\rvert = \lvert\mathbf B\rvert$). [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-4|REL Theorem §B4.2.4]], 3; [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|Theorem §C1a.8.3]].

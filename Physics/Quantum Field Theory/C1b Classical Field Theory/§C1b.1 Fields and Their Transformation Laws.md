@@ -69,7 +69,7 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 > \phi'_a(x') = D(\Lambda)_a{}^b\,\phi_b(x), \qquad D(\Lambda) = 1 + \tfrac12\,\omega_{\mu\nu}S^{\mu\nu} + O(\omega^2) \quad\text{for } \Lambda = 1 + \omega ,
 > $$
 >
-> where $D$ is a finite-dimensional representation ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-4|Def. §CB.3.4]]) of the Lorentz group on the component index, $D(\Lambda_2)D(\Lambda_1) = D(\Lambda_2\Lambda_1)$, and the six matrices $S^{\mu\nu} = -S^{\nu\mu}$ are its **spin generators**. Translations do not act on the index. A scalar has $D = 1$, $S^{\mu\nu} = 0$; four-vector and spinor fields are [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-5|Theorem §C3.3.5]] and [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]] (these $S^{\mu\nu}$ are real-convention: [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]).
+> where $D$ is a finite-dimensional representation ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-6|Def. §CB.3.6]]) of the Lorentz group on the component index, $D(\Lambda_2)D(\Lambda_1) = D(\Lambda_2\Lambda_1)$, and the six matrices $S^{\mu\nu} = -S^{\nu\mu}$ are its **spin generators**. Translations do not act on the index. A scalar has $D = 1$, $S^{\mu\nu} = 0$; four-vector and spinor fields are [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-5|Theorem §C3.3.5]] and [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]] (these $S^{\mu\nu}$ are real-convention: [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5 (Definition "Transformation law of a general field", eq. (generalfieldlaw)), Ch. 7, eq. (fieldtransforms) · PS §3.1, eq. (3.8)*
 
@@ -256,7 +256,7 @@ The simplest invariant wave equation for a scalar field is the Klein–Gordon eq
 > Proved in CB and CA; each line says what the physics above relies on.
 >
 > The transformation law of a general field (Definition §C1b.1.3) asks for a representation of the Lorentz group on the component index, in this sense:
-> - [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-4|Def. §CB.3.4]] — a representation: a continuous homomorphism $D : G \to GL(W)$, $D(gh) = D(g)D(h)$.
+> - [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-6|Def. §CB.3.6]] — a representation: a continuous homomorphism $D : G \to GL(W)$, $D(gh) = D(g)D(h)$.
 >
 > Theorem §C1b.1.1 is the case of this general fact for the Poincaré group acting on spacetime, with $D$ on the components; it is proved there directly, in the course's notation:
 > - [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-23|Theorem §CB.7.23]] with [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^pf-cb-7-23|its proof]] — a group action on a set gives a representation $(D(g)f)(x) = S(g)f(g^{-1}x)$ on functions.

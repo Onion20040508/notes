@@ -4445,11 +4445,11 @@ For a representation $D$ of $SO^+(1,3)$ on a finite-dimensional complex space, t
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (exponentiating a generator)
-> - Definition [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-1|§CB.5.1]] Generators of a Representation; the common algebra: Theorem [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|§CB.5.6]] The Lorentz Algebra and its group-law derivation [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6|Derivation §CB.5.6, from the group law]]; the reason in general: Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-8|§CB.3.8]] A Group Representation Gives an Algebra Representation.
+> - Definition [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-1|§CB.5.1]] Generators of a Representation; the common algebra: Theorem [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-7|§CB.5.7]] The Lorentz Algebra and its group-law derivation [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7|Derivation §CB.5.7, from the group law]]; the reason in general: Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-10|§CB.3.10]] A Group Representation Gives an Algebra Representation.
 
 ### [B] Representation of the Lorentz algebra
 
-Six matrices $D(\mathcal J^{\mu\nu}) = -D(\mathcal J^{\nu\mu})$ on a complex space obeying the covariant Lorentz algebra form a representation of the Lorentz algebra, with $J_i = \frac12\varepsilon_{ijk}D(\mathcal J^{jk})$, $K_i = D(\mathcal J^{0i})$ and $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$, see Definition [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-7|§CB.5.7]] Representation of the Lorentz Algebra. *Source: Lecture 7, slide "Representations of Angular Momentum" (the rotation analogue) and "Lorentz Algebra: Defining Representation" ("All representations realize the abstract algebra")*
+Six matrices $D(\mathcal J^{\mu\nu}) = -D(\mathcal J^{\nu\mu})$ on a complex space obeying the covariant Lorentz algebra form a representation of the Lorentz algebra, with $J_i = \frac12\varepsilon_{ijk}D(\mathcal J^{jk})$, $K_i = D(\mathcal J^{0i})$ and $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$, see Definition [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-8|§CB.5.8]] Representation of the Lorentz Algebra. *Source: Lecture 7, slide "Representations of Angular Momentum" (the rotation analogue) and "Lorentz Algebra: Defining Representation" ("All representations realize the abstract algebra")*
 
 ^nd-def-cb-5-7
 
@@ -4460,7 +4460,7 @@ Six matrices $D(\mathcal J^{\mu\nu}) = -D(\mathcal J^{\nu\mu})$ on a complex spa
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (identifying a representation)
-> - Definition [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-7|§CB.5.7]] Representation of the Lorentz Algebra; the two qualifiers: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^rem-c3-1-4|§C3.1, Remark: "One representation for each dimension" needs two qualifiers]]; two inequivalent four-dimensional representations: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-5|§CB.18.5]] The Dirac Representation Is Not the Vector Representation.
+> - Definition [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-8|§CB.5.8]] Representation of the Lorentz Algebra; the two qualifiers: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^rem-c3-1-4|§C3.1, Remark: "One representation for each dimension" needs two qualifiers]]; two inequivalent four-dimensional representations: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-5|§CB.18.5]] The Dirac Representation Is Not the Vector Representation.
 
 ### [B] Orbital generators
 
@@ -4492,7 +4492,7 @@ The complexification $\mathfrak g_{\mathbb C}$ of a real Lie algebra is the spac
 > [!tip]- Hints: route in the notes
 > - Technique: K16
 > - Definition [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-4-3|§CB.4.3]] Complexification; where $J_i$, $K_i$ live: Step 1 of [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^pf-cb-6-1|proof of Theorem §CB.6.1]]; no nonzero element of a copy in the real algebra: Step 8 there.
-> - The complex-linear extension: Theorem [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-9|§CB.4.9]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification; the slide's word "reducible": [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-1|§C3.2, Caution: The algebra decomposes; it is not "reducible"]]; the objects called J: [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-17-1|§CB.17, Remark: The objects called J, and what the labels refer to]].
+> - The complex-linear extension: Theorem [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-10|§CB.4.10]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification; the slide's word "reducible": [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-1|§C3.2, Caution: The algebra decomposes; it is not "reducible"]]; the objects called J: [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-17-1|§CB.17, Remark: The objects called J, and what the labels refer to]].
 
 ### [B] Intertwiner and equivalence
 
@@ -4555,7 +4555,7 @@ A subspace invariant under the $+$ copy is one on which "the $+$ copy acts as sp
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Definition [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-1|§CB.17.1]] Acting as Spin j; the gap closed by the classification and dimensions: step 7 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7|proof of Theorem §CB.17.7]]; the extension $D_{\mathbb C}$: Theorem [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-9|§CB.4.9]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification, [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-17-1|§CB.17, Remark: The objects called J, and what the labels refer to]] (item 3).
+> - Definition [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-1|§CB.17.1]] Acting as Spin j; the gap closed by the classification and dimensions: step 7 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7|proof of Theorem §CB.17.7]]; the extension $D_{\mathbb C}$: Theorem [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-10|§CB.4.10]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification, [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-17-1|§CB.17, Remark: The objects called J, and what the labels refer to]] (item 3).
 
 ### [B] Components, not states: D(Λ) versus U(Λ)
 
@@ -4794,7 +4794,7 @@ Restricted to rotations, the vector representation leaves $e_0$ invariant ($J_k 
 
 ### [C] The Lorentz algebra from the group law ★
 
-The generators of every representation obey $[\mathcal J^{\mu\nu}, \mathcal J^{\rho\sigma}] = i(g^{\nu\rho}\mathcal J^{\mu\sigma} - g^{\mu\rho}\mathcal J^{\nu\sigma} - g^{\nu\sigma}\mathcal J^{\mu\rho} + g^{\mu\sigma}\mathcal J^{\nu\rho})$, derived from the group law (conjugating a one-parameter subgroup), see Theorem [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|§CB.5.6]] The Lorentz Algebra. *Source: Lecture 7, slide "Lorentz Algebra: Defining Representation" (stated) · the user's notes Ch. 7 §7.3 ("automatically, by the group-law derivation")*
+The generators of every representation obey $[\mathcal J^{\mu\nu}, \mathcal J^{\rho\sigma}] = i(g^{\nu\rho}\mathcal J^{\mu\sigma} - g^{\mu\rho}\mathcal J^{\nu\sigma} - g^{\nu\sigma}\mathcal J^{\mu\rho} + g^{\mu\sigma}\mathcal J^{\nu\rho})$, derived from the group law (conjugating a one-parameter subgroup), see Theorem [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-7|§CB.5.7]] The Lorentz Algebra. *Source: Lecture 7, slide "Lorentz Algebra: Defining Representation" (stated) · the user's notes Ch. 7 §7.3 ("automatically, by the group-law derivation")*
 
 ^nd-der-cb-5-6
 
@@ -4807,18 +4807,18 @@ The generators of every representation obey $[\mathcal J^{\mu\nu}, \mathcal J^{\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K3 (Lorentz commutators by index contraction)
-> - Steps 1–4 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6|Derivation §CB.5.6, from the group law]] (tensor law; also Theorem [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-8|§CB.5.8]] The Generators Transform as a Tensor), steps 5–9 (infinitesimal $\Lambda$).
-> - The general reason: Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-8|§CB.3.8]] A Group Representation Gives an Algebra Representation.
+> - Steps 1–4 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7|Derivation §CB.5.7, from the group law]] (tensor law; also Theorem [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|§CB.5.6]] The Generators Transform as a Tensor), steps 5–9 (infinitesimal $\Lambda$).
+> - The general reason: Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-10|§CB.3.10]] A Group Representation Gives an Algebra Representation.
 
 ### [PS] The Lorentz algebra in the vector representation
 
-Direct $4\times4$ computation of $[\mathcal J^{\mu\nu}, \mathcal J^{\rho\sigma}]$, see [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6b|Derivation §CB.5.6, second route]]. → drilled as [[PHY 513 PS Drill#^ps4-5-a|PS4.5(a)]] (Lecture 7: "HW problem: $J^{\mu\nu}$ matrices satisfy Lorentz algebra").
+Direct $4\times4$ computation of $[\mathcal J^{\mu\nu}, \mathcal J^{\rho\sigma}]$, see [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7b|Derivation §CB.5.7, second route]]. → drilled as [[PHY 513 PS Drill#^ps4-5-a|PS4.5(a)]] (Lecture 7: "HW problem: $J^{\mu\nu}$ matrices satisfy Lorentz algebra").
 
 ^nd-der-cb-5-6b
 
 ### [PS] The J, K form and the J± split
 
-$[J_i, J_j] = i\varepsilon_{ijk}J_k$, $[J_i, K_j] = i\varepsilon_{ijk}K_k$, $[K_i, K_j] = -i\varepsilon_{ijk}J_k$ and the two commuting copies $\mathbf J_\pm$, see [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6c|Derivation §CB.5.6, the J, K form and the J± split]]. → drilled as [[PHY 513 PS Drill#^ps5-1-a|PS5.1(a)]]. Includes the **[class exercise, Lecture 7]** "you can check … if … this is rotation in a plane and this is rotation in another plane … this thing collapses to the algebra" (step 2 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6c|Derivation §CB.5.6, the J, K form and the J± split]]).
+$[J_i, J_j] = i\varepsilon_{ijk}J_k$, $[J_i, K_j] = i\varepsilon_{ijk}K_k$, $[K_i, K_j] = -i\varepsilon_{ijk}J_k$ and the two commuting copies $\mathbf J_\pm$, see [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7c|Derivation §CB.5.7, the J, K form and the J± split]]. → drilled as [[PHY 513 PS Drill#^ps5-1-a|PS5.1(a)]]. Includes the **[class exercise, Lecture 7]** "you can check … if … this is rotation in a plane and this is rotation in another plane … this thing collapses to the algebra" (step 2 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7c|Derivation §CB.5.7, the J, K form and the J± split]]).
 
 ^nd-der-cb-5-6c
 
@@ -4855,7 +4855,7 @@ $[L^{\mu\nu}, L^{\rho\sigma}] = i(g^{\nu\rho}L^{\mu\sigma} - g^{\mu\rho}L^{\nu\s
 > [!tip]- Hints: route in the notes
 > - Technique: K3 (Lorentz commutators by index contraction)
 > - Steps 1–4 of [[§C3.3 How Fields Transform under the Lorentz Group#^der-c3-3-2|Derivation §C3.3.2]].
-> - The spatial reduction: step 2 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6c|Derivation §CB.5.6, the J, K form and the J± split]].
+> - The spatial reduction: step 2 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7c|Derivation §CB.5.7, the J, K form and the J± split]].
 
 ### [C] Orbital plus spin ★
 
@@ -4919,7 +4919,7 @@ Part 1 (from the algebra to $\mathbf J_\pm$) is the split above; conversely, two
 
 > [!tip]- Hints: route in the notes
 > - Technique: K3
-> - Steps 2–4 of [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^der-cb-6-2|Derivation §CB.6.2]]; step 5 back to the covariant form (step 8 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6c|Derivation §CB.5.6, the J, K form and the J± split]]).
+> - Steps 2–4 of [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^der-cb-6-2|Derivation §CB.6.2]]; step 5 back to the covariant form (step 8 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7c|Derivation §CB.5.7, the J, K form and the J± split]]).
 
 ### [B] Every Lorentz transformation factorizes ★
 
@@ -5013,7 +5013,7 @@ $T(v) = (v_\mu\sigma^\mu)\,i\sigma^2$, read in $\mathbb C^2\otimes\mathbb C^2$ t
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (intertwiner)
 > - Step 1 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7b|proof of Theorem §CB.17.7, second route]] (matrix picture), step 2 (the map), step 3 (through ε), steps 4–5 (rotations, boosts), step 7 (group behind it).
-> - The dictionary $x \leftrightarrow x_\mu\sigma^\mu$: Theorem [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-3|§CB.16.3]] Four-Vectors as Hermitian Matrices; ε: Theorem [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-15|§CB.8.15]] ε on ℂ² and SL(2,ℂ) = Sp(2,ℂ).
+> - The dictionary $x \leftrightarrow x_\mu\sigma^\mu$: Theorem [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-3|§CB.16.3]] Four-Vectors as Hermitian Matrices; ε: Theorem [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|§CB.8.17]] ε on ℂ² and SL(2,ℂ) = Sp(2,ℂ).
 
 ### [PS] Labels of a four-vector and of a left-handed Weyl spinor
 
@@ -6660,7 +6660,7 @@ $\operatorname{tr}\mathbb 1 = 4$; traces of an odd number of $\gamma$'s vanish; 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5 (traces)
-> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-3|Derivation §C5a.14.3]]; basis independence: Theorem [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15|§CB.0.15]] Trace, Determinant and Eigenvalues Do Not Depend on the Basis.
+> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-3|Derivation §C5a.14.3]]; basis independence: Theorem [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-16|§CB.0.16]] Trace, Determinant and Eigenvalues Do Not Depend on the Basis.
 
 ### [B] Traces with γ⁵ ★
 
@@ -8760,7 +8760,7 @@ A damping $e^{-\varepsilon t}$ on $t > 0$ makes $\tilde\theta(\omega) = \frac{i}
 
 ### [C] Three forms of the Lorentz algebra
 
-The covariant relation, the $\mathbf J$, $\mathbf K$ relations and two commuting angular-momentum algebras $\mathbf J_\pm$ are equivalent statements about six matrices, see [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6c|Derivation §CB.5.6, the J, K form and the J± split]] (step 8) and Theorem [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-2|§CB.6.2]] A Representation of the Lorentz Algebra Is a Pair of Commuting Angular Momenta.
+The covariant relation, the $\mathbf J$, $\mathbf K$ relations and two commuting angular-momentum algebras $\mathbf J_\pm$ are equivalent statements about six matrices, see [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7c|Derivation §CB.5.7, the J, K form and the J± split]] (step 8) and Theorem [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-2|§CB.6.2]] A Representation of the Lorentz Algebra Is a Pair of Commuting Angular Momenta.
 
 ^nd-eq-t7-1
 
@@ -8771,7 +8771,7 @@ The covariant relation, the $\mathbf J$, $\mathbf K$ relations and two commuting
 
 > [!tip]- Hints: route in the notes
 > - Technique: K3
-> - Step 1 and step 8 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6c|Derivation §CB.5.6, the J, K form and the J± split]]; the converse: Theorem [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-2|§CB.6.2]] A Representation of the Lorentz Algebra Is a Pair of Commuting Angular Momenta; complex-linear extension: Theorem [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-9|§CB.4.9]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification.
+> - Step 1 and step 8 of [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7c|Derivation §CB.5.7, the J, K form and the J± split]]; the converse: Theorem [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-2|§CB.6.2]] A Representation of the Lorentz Algebra Is a Pair of Commuting Angular Momenta; complex-linear extension: Theorem [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-10|§CB.4.10]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification.
 
 ### [B] Real and Hermitian conventions for generators
 
