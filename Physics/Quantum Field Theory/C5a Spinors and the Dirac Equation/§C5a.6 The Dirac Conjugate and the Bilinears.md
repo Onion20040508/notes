@@ -53,7 +53,7 @@ Which numbers built from two spinors do all observers agree on, and which Lorent
 > **4. The adjoint of $\bar\psi$.** $(\psi^\dagger\gamma^0)^\dagger = \gamma^{0\dagger}\psi = \gamma^0\psi$, with $\gamma^{0\dagger} = \gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]).
 >
 > **What the derivation shows**
-> - $\bar\psi$ is an "inverse Dirac spinor": its column index is contracted, its row transforms with $\Lambda_{1/2}^{-1}$ from the right; the $\gamma^0$ converts the non-unitary $\Lambda_{1/2}^\dagger$ into $\Lambda_{1/2}^{-1}$ exactly on the boosts.
+> - $\bar\psi$ is an "inverse Dirac spinor": its column index is contracted, its row transforms with $\Lambda_{1/2}^{-1}$ from the right ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-6|Def. §CB.8.6]]); the $\gamma^0$ converts the non-unitary $\Lambda_{1/2}^\dagger$ into $\Lambda_{1/2}^{-1}$ exactly on the boosts.
 > - ⚑ By-product: $\bar\psi\psi$ is real ($(\psi^\dagger\gamma^0\psi)^* = \psi^\dagger\gamma^{0\dagger}\psi$) but not positive (step 7 of Derivation §CB.18.13); the positive $\psi^\dagger\psi$ is not invariant. A relativistic spinor field has no invariant positive density: the probability interpretation of Quantum Mechanics' $\Psi^\dagger\Psi$ ([[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]]) survives only as the time component of a current.
 > - Used next: the Lagrangian (Model §C5a.7.3) and every bilinear ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-1|Def. §C5a.6.1]]).
 
@@ -168,7 +168,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.14 Gamma
 > **3. Axial vector.** Insert $\mathbb 1 = \Lambda_{1/2}\Lambda_{1/2}^{-1}$: $\Lambda_{1/2}^{-1}\gamma^\mu\gamma^5\Lambda_{1/2} = (\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2})(\Lambda_{1/2}^{-1}\gamma^5\Lambda_{1/2}) = \Lambda^\mu{}_\nu\gamma^\nu\gamma^5$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]] and step 1).
 >
 > **What the derivation shows**
-> - $\Lambda_{1/2}$ comes from the identity component only, so it cannot see the "pseudo": $\gamma^5 \propto \varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$ ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|Theorem §C5a.14.5]]) carries one $\varepsilon$, which is invariant under $\det\Lambda = +1$ and odd under parity ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]).
+> - $\Lambda_{1/2}$ comes from the identity component only ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|Theorem §CB.3.13]]), so it cannot see the "pseudo": $\gamma^5 \propto \varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$ ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|Theorem §C5a.14.5]]) carries one $\varepsilon$, which is invariant under $\det\Lambda = +1$ and odd under parity ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]).
 > - Used next: the axial current (Theorem §C5a.9.4).
 
 ^der-c5a-6-3
@@ -205,7 +205,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.14 Gamma
 > **3. Without the $i$.** For $\Gamma = \gamma^5$, $\bar\Gamma = \gamma^0\gamma^5\gamma^0 = -\gamma^5$, so $(\bar\psi\gamma^5\psi)^{\ast} = -\bar\psi\gamma^5\psi$. ⚑ By-product: the $i$ in the pseudoscalar is the reality convention, as the $i$ in the Lagrangian is ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-2|§C5a.7, Remark: Why the i]]).
 >
 > **What the derivation shows**
-> - The bar operation $\Gamma \mapsto \gamma^0\Gamma^\dagger\gamma^0$ is the adjoint with respect to the indefinite form $\gamma^0$ of [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], 2; the standard basis is chosen self-adjoint.
+> - The bar operation $\Gamma \mapsto \gamma^0\Gamma^\dagger\gamma^0$ is the adjoint ([[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-9-5|Def. §CB.9.5]]) with respect to the indefinite form $\gamma^0$ of [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], 2; the standard basis is chosen self-adjoint.
 > - Step 1 used only $(AB)^\dagger = B^\dagger A^\dagger$, valid also for operator-valued components: the quantized bilinears are Hermitian ([[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]).
 
 ^der-c5a-6-4
@@ -233,7 +233,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.14 Gamma
 > [!abstract]- Mathematical background
 > Proved in CB and CA; each line says what the physics above relies on.
 >
-> Why $\psi^\dagger\psi$ is not a scalar and $\bar\psi\psi$ is: the adjoints of the generators, the non-unitarity of finite-dimensional Lorentz representations, and the pseudo-unitarity of $\Lambda_{1/2}$, from which Theorem §C5a.6.1 follows:
+> Why $\psi^\dagger\psi$ is not a scalar and $\bar\psi\psi$ is: the adjoints of the generators, the non-unitarity of finite-dimensional Lorentz representations, and the pseudo-unitarity of $\Lambda_{1/2}$ ([[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-9-7|Def. §CB.9.7]]), from which Theorem §C5a.6.1 follows:
 > - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-22|Theorem §CB.14.22]] with [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-22|Derivation]] — rotation generators Hermitian, boost generators anti-Hermitian (Remark: Why ψ†ψ is not a scalar); physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]].
 > - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-15|Derivation]] — no finite-dimensional Lorentz representation is unitary ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]]).
 > - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b|Derivation (second route)]] — $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$ (Theorem §C5a.6.1); physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]].

@@ -459,7 +459,7 @@ The course's integration theorem, with the explicit polynomial model of $(j_+, j
 *Uses:* [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-7|Theorem §CB.5.7]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-6|Theorem §CB.17.6]]
 
 > [!theorem] Theorem §CB.17.14: Complex Conjugation Exchanges the Two Copies
-> If $D$ is a representation, so is its complex conjugate $\bar D(\Lambda) = D(\Lambda)^*$, with generators $\bar D(\mathcal J^{\mu\nu}) = -D(\mathcal J^{\mu\nu})^*$. The conjugate of $(j_+, j_-)$ is equivalent to $(j_-, j_+)$; for spin $j$ the equivalence is $-\mathbf J^{(j)*} = R\,\mathbf J^{(j)}R^{-1}$ with $R = e^{-i\pi J^{(j)}_2}$, the rotation by $\pi$ about the $2$-axis.
+> If $D$ is a representation, so is its complex conjugate ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-7|Def. §CB.8.7]]) $\bar D(\Lambda) = D(\Lambda)^*$, with generators $\bar D(\mathcal J^{\mu\nu}) = -D(\mathcal J^{\mu\nu})^*$. The conjugate of $(j_+, j_-)$ is equivalent to $(j_-, j_+)$; for spin $j$ the equivalence is $-\mathbf J^{(j)*} = R\,\mathbf J^{(j)}R^{-1}$ with $R = e^{-i\pi J^{(j)}_2}$, the rotation by $\pi$ about the $2$-axis.
 >
 > *Source: the user's PHY 513 notes, Ch. 7 §7.4.6 ("Complex conjugation turns θ − iη into θ + iη and does the same exchange") · the user's Lorentz-representation review (2026-10-14), §3 (Caution "SL(2,ℂ) is not SU(2) × SU(2)", second bullet: $(j_+, j_-)^\ast = (j_-, j_+)$) · the derivation written out here*
 
