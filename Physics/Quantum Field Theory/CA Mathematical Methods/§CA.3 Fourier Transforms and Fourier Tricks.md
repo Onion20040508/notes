@@ -481,10 +481,10 @@ The box of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] postu
 >   - Theorem §CA.3.8 (angular integrals): the zero-point energy density, the radial form of $D_W$ — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]].
 >   - Theorem §CA.3.9 (invariant transforms): [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]].
 > - **Used in**, statement by statement (C1a–C1b items):
->   - Def. §CA.3.1 (conventions): [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]].
+>   - Def. §CA.3.1 (conventions): [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], [[§C1a.6 Calculus with Indices#^thm-c1a-6-1|Theorem §C1a.6.1]].
 >   - Theorems §CA.3.1–§CA.3.3 (inversion, transform in $\mathcal S'$, plane-wave delta): the single-particle amplitude as a Fourier transform — [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]].
->   - Theorem §CA.3.4 (rules): derivatives of plane waves — [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|Theorem §C1a.5.11]].
->   - Theorem §CA.3.5 (translation, phase; rules in $\mathcal S'$): [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]].
+>   - Theorem §CA.3.4 (rules): derivatives of plane waves — [[§C1a.6 Calculus with Indices#^thm-c1a-6-1|Theorem §C1a.6.1]], [[§C1a.6 Calculus with Indices#^thm-c1a-6-4|Theorem §C1a.6.4]].
+>   - Theorem §CA.3.5 (translation, phase; rules in $\mathcal S'$): [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], [[§C1a.6 Calculus with Indices#^thm-c1a-6-1|Theorem §C1a.6.1]].
 >   - Theorem §CA.3.7 (changes of variable): [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-10|Theorem §C2b.3.10]].
 >   - Theorem §CA.3.8 (angular integrals): the radial integral of the single-particle amplitude — [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]].
 > - **Used in**, statement by statement (C5a–C5b items):

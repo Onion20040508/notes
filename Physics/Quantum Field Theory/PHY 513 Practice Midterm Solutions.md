@@ -73,7 +73,7 @@ Solutions to [[PHY 513 Practice Midterm]] (Part I) and to [[PHY 513 Practice Mid
 >
 > **Step 6** (direction). The rest vector goes to $(m\cosh\eta, m\sinh\eta, 0, 0)$: positive $p^1$, velocity $p^1/p^0 = \tanh\eta$ along $+x$ (active reading).
 >
-> *Checked against:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], 2, and [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], 2, with $\hat{\mathbf n} = \hat{\mathbf x}$ ($n^1 = 1$, $n^2 = n^3 = 0$: entries $C - Sn^3 = C$, $-S(n^1 - in^2) = -S$, …); $K_1$ is in [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]. The $z$-boost of the homework is part 1 of both theorems. Both matrices were also checked numerically, including $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ for all $\mu$.
+> *Checked against:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], 2, and [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], 2, with $\hat{\mathbf n} = \hat{\mathbf x}$ ($n^1 = 1$, $n^2 = n^3 = 0$: entries $C - Sn^3 = C$, $-S(n^1 - in^2) = -S$, …); $K_1$ is in [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]. The $z$-boost of the homework is part 1 of both theorems. Both matrices were also checked numerically, including $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ for all $\mu$.
 
 ^sol-pm-2-b
 
@@ -352,11 +352,11 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 1** (the rules). In one term an index occurs at most twice, and then once up and once down (summed); an index occurring once is free, and both sides of an equation carry the same free indices at the same heights ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-2|§C1a.5, Caution: Index bookkeeping: legal, illegal, and matrix products]]). A full contraction containing one $\varepsilon$ picks up $\det\Lambda$: $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\gamma\Lambda^\sigma{}_\delta\,\varepsilon^{\alpha\beta\gamma\delta} = (\det\Lambda)\,\varepsilon^{\mu\nu\rho\sigma}$ ([[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]]), so it is invariant under $\det\Lambda = +1$ and odd under $\mathcal P$: a pseudoscalar.
 >
-> **Step 2** ((a)). $\mu, \nu, \rho, \sigma$ each occur once up (on $\varepsilon$) and once down (on an $F$): no free index, a scalar under $SO^+(1,3)$. It contains one $\varepsilon$, so by Step 1 it is a pseudoscalar. Check with components: $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\mathbf E\cdot\mathbf B$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]]), and $\mathbf E\cdot\mathbf B$ is odd under parity ($\mathbf E$ polar, $\mathbf B$ axial). With Peskin–Schroeder's $\varepsilon^{0123} = -1$ the value is $+8\,\mathbf E\cdot\mathbf B$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³: these notes versus Peskin–Schroeder]]).
+> **Step 2** ((a)). $\mu, \nu, \rho, \sigma$ each occur once up (on $\varepsilon$) and once down (on an $F$): no free index, a scalar under $SO^+(1,3)$. It contains one $\varepsilon$, so by Step 1 it is a pseudoscalar. Check with components: $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\mathbf E\cdot\mathbf B$ ([[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|Theorem §C1a.8.3]]), and $\mathbf E\cdot\mathbf B$ is odd under parity ($\mathbf E$ polar, $\mathbf B$ axial). With Peskin–Schroeder's $\varepsilon^{0123} = -1$ the value is $+8\,\mathbf E\cdot\mathbf B$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³: these notes versus Peskin–Schroeder]]).
 >
-> **Step 3** ((b)). Left side: $\mu$ up on $F$, down on $\partial$, contracted; $\nu$ free and **up**. Right side: $\nu$ free and **down**. The heights differ: illegal. Repaired: $\partial_\mu F^{\mu\nu} = j^\nu$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]]), or equivalently $\partial^\mu F_{\mu\nu} = j_\nu$.
+> **Step 3** ((b)). Left side: $\mu$ up on $F$, down on $\partial$, contracted; $\nu$ free and **up**. Right side: $\nu$ free and **down**. The heights differ: illegal. Repaired: $\partial_\mu F^{\mu\nu} = j^\nu$ ([[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-2|Theorem §C1a.8.2]]), or equivalently $\partial^\mu F_{\mu\nu} = j_\nu$.
 >
-> **Step 4** ((c)). $\mu$: up on $x^\mu$, down on $x_\mu$; $\nu$: down on $\partial_\nu$, up on $x^\nu$. Both contracted, nothing free: legal, a scalar, with no $\varepsilon$, so a true scalar. With the parentheses $\partial_\nu$ acts on $x^\nu$ alone, $\partial_\nu x^\nu = 4$, and the expression is $4x^2$ (without them, acting on everything to its right, $x^\mu\partial_\nu(x^\nu x_\mu) = x^\mu(4x_\mu + x^\nu g_{\nu\mu}) = 5x^2$; [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]]). A scalar either way.
+> **Step 4** ((c)). $\mu$: up on $x^\mu$, down on $x_\mu$; $\nu$: down on $\partial_\nu$, up on $x^\nu$. Both contracted, nothing free: legal, a scalar, with no $\varepsilon$, so a true scalar. With the parentheses $\partial_\nu$ acts on $x^\nu$ alone, $\partial_\nu x^\nu = 4$, and the expression is $4x^2$ (without them, acting on everything to its right, $x^\mu\partial_\nu(x^\nu x_\mu) = x^\mu(4x_\mu + x^\nu g_{\nu\mu}) = 5x^2$; [[§C1a.6 Calculus with Indices#^thm-c1a-6-1|Theorem §C1a.6.1]]). A scalar either way.
 >
 > **Step 5** ((d)). $T^{\mu\nu}{}_\nu$: $\nu$ once up, once down, contracted (a trace over the second and third slots); $\mu$ free, up. Right side: $\mu$ free, up. Legal: an equation between two (contravariant) vectors.
 >
@@ -364,7 +364,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 7** ((f)). The spinor indices are summed as a row times a matrix times a column, $\bar\psi_a(\gamma^\mu)_{ab}\partial_\mu\psi_b$; they are never moved with $g$ and play no role in the Lorentz bookkeeping ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^cau-c5b-2-2|§C5b.2, Caution: u is not a four-vector]]). The spacetime index $\mu$ is up on $\gamma^\mu$ and down on $\partial_\mu$: contracted. Neither side has a free index: legal, an equation between Lorentz scalars. Under parity $\bar\psi\psi$ is even and $\bar\psi\gamma^\mu\psi$ is a true vector ([[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-4|Theorem §C9.4.4]]), and $\partial_\mu$ flips with the same $\mathcal P^\mu{}_\nu$, so both sides are true scalars, not pseudoscalars. Read as $\bar\psi$ times the Dirac equation.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-2|§C1a.5, Caution: Index bookkeeping: legal, illegal, and matrix products]] (the rules, with the course solution SOL1, Problem 1), [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]] (the value of (a)) and [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]] (pseudotensor law).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-2|§C1a.5, Caution: Index bookkeeping: legal, illegal, and matrix products]] (the rules, with the course solution SOL1, Problem 1), [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|Theorem §C1a.8.3]] (the value of (a)) and [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]] (pseudotensor law).
 
 ^sol-px-1-1-1
 
@@ -406,7 +406,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 3** ($F^\mu{}_\mu$). $F^\mu{}_\mu = g_{\mu\nu}F^{\mu\nu}$: the symmetric $g_{\mu\nu}$ contracted with the antisymmetric $F^{\mu\nu}$, zero by Step 1. It is a pure number, $0$, and does not involve $F_{\mu\nu}F^{\mu\nu}$ at all.
 >
-> **Step 4** (component check). $F_{\mu\nu}F^{\mu\nu} = 2(\mathbf B^2 - \mathbf E^2)$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]]), so $F^{\mu\nu}F_{\nu\mu} = 2(\mathbf E^2 - \mathbf B^2)$; and $F^\mu{}_\mu = F^0{}_0 + F^i{}_i = 0$ because the diagonal of $F^{\mu\nu}$ vanishes and lowering one index multiplies each diagonal entry by $\pm1$.
+> **Step 4** (component check). $F_{\mu\nu}F^{\mu\nu} = 2(\mathbf B^2 - \mathbf E^2)$ ([[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|Theorem §C1a.8.3]]), so $F^{\mu\nu}F_{\nu\mu} = 2(\mathbf E^2 - \mathbf B^2)$; and $F^\mu{}_\mu = F^0{}_0 + F^i{}_i = 0$ because the diagonal of $F^{\mu\nu}$ vanishes and lowering one index multiplies each diagonal entry by $\pm1$.
 >
 > *Checked against:* [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], 2 (symmetric times antisymmetric is zero) and [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]], derivation step 2 ($g_{\mu\nu}T^{[\mu\nu]} = 0$).
 
@@ -620,7 +620,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (checks). The general formula $\Box f(\rho) = 2d\,f' + 4\rho f''$ (X1.6.2) gives for $f = \rho$: $2d$; for $f = \rho^2$: $2d\cdot2\rho + 4\rho\cdot2 = (4d + 8)\rho$. At $d = 4$: $8$, $24\rho$, $192$, the values of PS1.6(c)–(d).
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] ($\partial^2\rho = 8$, $\partial^2\rho^2 = 24\rho$, $(\partial^2)^2\rho^2 = 192$ at $d = 4$; the $d$-dimensional formula $2d\,f' + 4\rho f''$), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]], and the course solution SOL1, Problem 6(c)–(d).
+> *Checked against:* [[§C1a.6 Calculus with Indices#^thm-c1a-6-2|Theorem §C1a.6.2]] ($\partial^2\rho = 8$, $\partial^2\rho^2 = 24\rho$, $(\partial^2)^2\rho^2 = 192$ at $d = 4$; the $d$-dimensional formula $2d\,f' + 4\rho f''$), [[§C1a.6 Calculus with Indices#^thm-c1a-6-1|Theorem §C1a.6.1]], and the course solution SOL1, Problem 6(c)–(d).
 
 ^sol-px-1-6-1
 
@@ -642,7 +642,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 6** (why $\rho \ne 0$). The computation is pointwise off the light cone; across it $\lvert\rho\rvert^{1 - d/2}$ is not locally integrable and is no distribution by itself. Its boundary values ($x^2 - i0\,x^0$, or $x^2 - i0$) solve $\partial^2 D = 0$ or $\partial^2 D = -i\delta^4$ on all of spacetime (in $d = 4$): the source sits at the tip $x = 0$ of the cone, invisible to this calculation.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] and its derivation, step 4 ("in $d$ dimensions $f' \propto \rho^{-d/2}$, $f \propto \rho^{1 - d/2}$"), and [[§C1a.5 Vectors, Tensors and Index Notation#^rem-c1a-5-3|§C1a.5, Remark: In what sense 1/x² is harmonic, and where the source sits]] (Step 6).
+> *Checked against:* [[§C1a.6 Calculus with Indices#^thm-c1a-6-2|Theorem §C1a.6.2]] and its derivation, step 4 ("in $d$ dimensions $f' \propto \rho^{-d/2}$, $f \propto \rho^{1 - d/2}$"), and [[§C1a.6 Calculus with Indices#^rem-c1a-6-1|§C1a.6, Remark: In what sense 1/x² is harmonic, and where the source sits]] (Step 6).
 
 ^sol-px-1-6-2
 
@@ -1457,7 +1457,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (check). With the $4\times4$ vector generators $(\mathcal J^{\rho\sigma})^\mu{}_\nu = i(g^{\rho\mu}\delta^\sigma{}_\nu - g^{\sigma\mu}\delta^\rho{}_\nu)$ both commutators were verified numerically (numpy).
 >
-> *Checked against:* [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]] (both forms of the algebra), [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]] (the matrices); drill: [[PHY 513 PS Drill#^ps4-5-a|PS Drill, PS4.5(a)]], Q7.
+> *Checked against:* [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]] (both forms of the algebra), [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-2|Def. §C1a.7.2]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-5|Theorem §C1a.7.5]] (the matrices); drill: [[PHY 513 PS Drill#^ps4-5-a|PS Drill, PS4.5(a)]], Q7.
 
 ^sol-px-4-5-1
 
@@ -1503,7 +1503,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (reading). Each entry of $\gamma^0$ joins a component stretched by $e^{\mp\eta/2}$ to one stretched by $e^{\pm\eta/2}$; the two half-rapidities multiply to $e^{\pm\eta}$, the eigenvalues of the vector boost on $e_0 \pm e_3$. The check needs the matched pair: the same $\eta$ in $\Lambda_{1/2}$ and in $\Lambda$. Verified numerically ($\eta = 0.7$: $2.0138, 0.4966, 0.4966, 2.0138$).
 >
-> *Checked against:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]] (step 5 of its derivation: the same entries), [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]], 1, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], 1, [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], 1.
+> *Checked against:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]] (step 5 of its derivation: the same entries), [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]], 1, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], 1, [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], 1.
 
 ^sol-px-4-5-3
 
@@ -1596,7 +1596,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (checks). $\Lambda_{1/2}$ is Hermitian, not unitary, $\det = (C^2 - S^2)^2 = 1$, the two blocks inverse to each other. Theorem §C5a.4.5, 2 with $\hat{\mathbf n} = (0, 1, 0)$ gives the same entries: $-S(n^1 - in^2) = iS$, $-S(n^1 + in^2) = -iS$ upstairs, the opposite downstairs. The pair satisfies $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ for all four $\mu$ (verified numerically with numpy for $\eta = 0.9$, as were both matrices against $\exp(-i\eta\,\mathcal J^{02})$ and $\exp(-i\eta S^{02})$).
 >
-> *Checked against:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], 2 (with $\hat{\mathbf n} = \hat{\mathbf y}$), [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], 2, [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]] ($K_2 = S^{02}$), [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]]; the $z$-axis version is the user's Problem Set 6, Problem 4(a) ([[PHY 513 PS Drill#^ps6-4-a|PS Drill, PS6.4(a)]]).
+> *Checked against:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], 2 (with $\hat{\mathbf n} = \hat{\mathbf y}$), [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], 2, [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]] ($K_2 = S^{02}$), [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]]; the $z$-axis version is the user's Problem Set 6, Problem 4(a) ([[PHY 513 PS Drill#^ps6-4-a|PS Drill, PS6.4(a)]]).
 
 ^sol-px-6-4-1
 
@@ -1620,9 +1620,9 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** ($\theta = 2\pi$). Vector: $\cos2\pi = 1$, $\sin2\pi = 0$, so $\Lambda = \mathbb 1_4$. Spinor: $c = \cos\pi = -1$, $s = \sin\pi = 0$, so $\Lambda_{1/2} = -\mathbb 1_4$, $\psi \to -\psi$; it first returns to $+\mathbb 1_4$ at $\theta = 4\pi$. $-\mathbb 1_4$ is the same in every basis ($U(-\mathbb 1)U^\dagger = -\mathbb 1$). This is $(-1)^{2(j_+ + j_-)}$: $+1$ on $(\frac12, \frac12)$, $-1$ on $(\frac12, 0)\oplus(0, \frac12)$.
 >
-> **Step 5** (checks). Theorem §C1a.6.6, 2 with $\hat{\mathbf n} = \hat{\mathbf x}$: $R^2{}_3 = -\sin\theta\,\varepsilon_{231}n^1 = -\sin\theta$, $R^3{}_2 = -\sin\theta\,\varepsilon_{321}n^1 = +\sin\theta$. Theorem §C5a.4.4, 2 with $\hat{\mathbf n} = \hat{\mathbf x}$: $c - isn^3 = c$, $-is(n^1 \mp in^2) = -is$. Both matrices, the covariance $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ and the $2\pi$ values verified numerically (numpy, $\theta = 0.6$ and $2\pi$).
+> **Step 5** (checks). Theorem §C1a.7.6, 2 with $\hat{\mathbf n} = \hat{\mathbf x}$: $R^2{}_3 = -\sin\theta\,\varepsilon_{231}n^1 = -\sin\theta$, $R^3{}_2 = -\sin\theta\,\varepsilon_{321}n^1 = +\sin\theta$. Theorem §C5a.4.4, 2 with $\hat{\mathbf n} = \hat{\mathbf x}$: $c - isn^3 = c$, $-is(n^1 \mp in^2) = -is$. Both matrices, the covariance $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ and the $2\pi$ values verified numerically (numpy, $\theta = 0.6$ and $2\pi$).
 >
-> *Checked against:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], 2, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], 2, [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]], 2; the $z$-axis version with the same signs is the user's Problem Set 6, Problem 4(c)–(d) ([[PHY 513 PS Drill#^ps6-4-c|PS Drill, PS6.4(c)]], [[PHY 513 PS Drill#^ps6-4-d|PS Drill, PS6.4(d)]]).
+> *Checked against:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|Theorem §C1a.7.6]], 2, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], 2, [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]], 2; the $z$-axis version with the same signs is the user's Problem Set 6, Problem 4(c)–(d) ([[PHY 513 PS Drill#^ps6-4-c|PS Drill, PS6.4(c)]], [[PHY 513 PS Drill#^ps6-4-d|PS Drill, PS6.4(d)]]).
 
 ^sol-px-6-4-2
 
@@ -2286,7 +2286,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 > 9. **X7.1.9** $\Theta\hat\psi(x)\Theta^{-1} = \eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$. — [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-3|Theorem §C9.11.3]]; [[PHY 513 PS Drill#^ps7-3|PS Drill, PS7.3]] ($\eta_a = 1$).
 > 10. **X7.1.10** $(-1)^n$, with the point moved to $-x$ (a derivative counts as an index); $U(\mathcal T)^2 = -1$ on a one-fermion state ($U(\mathcal T)^2 = (-1)^{\hat N_a + \hat N_b}$). — [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|Theorem §C9.11.5]], [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|Theorem §C9.9.10]].
 > 11. **X7.1.11** $\bar u^r(p)u^s(p) = 2m\,\delta^{rs}$, $\bar v^r(p)v^s(p) = -2m\,\delta^{rs}$, $u^{r\dagger}(p)u^s(p) = 2E_{\mathbf p}\,\delta^{rs}$. — [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|Theorem §C5a.12.2]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-4|Theorem §C5a.12.4]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]].
-> 12. **X7.1.12** Peskin–Schroeder: $\varepsilon^{0123} = -1$. Course ($\varepsilon^{0123} = +1$): $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\mathbf E\cdot\mathbf B$ ($+8\,\mathbf E\cdot\mathbf B$ in Peskin–Schroeder). (With $F_{0i} = E^i$, $F_{jk} = -\varepsilon_{jkl}B^l$: $4\varepsilon^{0ijk}F_{0i}F_{jk} = -4\varepsilon_{ijk}\varepsilon_{jkl}E^iB^l = -8\,\mathbf E\cdot\mathbf B$.) — [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³: these notes versus Peskin–Schroeder]], [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]].
+> 12. **X7.1.12** Peskin–Schroeder: $\varepsilon^{0123} = -1$. Course ($\varepsilon^{0123} = +1$): $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\mathbf E\cdot\mathbf B$ ($+8\,\mathbf E\cdot\mathbf B$ in Peskin–Schroeder). (With $F_{0i} = E^i$, $F_{jk} = -\varepsilon_{jkl}B^l$: $4\varepsilon^{0ijk}F_{0i}F_{jk} = -4\varepsilon_{ijk}\varepsilon_{jkl}E^iB^l = -8\,\mathbf E\cdot\mathbf B$.) — [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³: these notes versus Peskin–Schroeder]], [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|Theorem §C1a.8.3]].
 >
 > *Checked against:* each home box above (printed and read); X7.1.1 and X7.1.2 are the $d = 3$ and quartic variants, computed here from Theorems §C1b.3.2–§C1b.3.3 and Theorem §C1b.2.9.
 

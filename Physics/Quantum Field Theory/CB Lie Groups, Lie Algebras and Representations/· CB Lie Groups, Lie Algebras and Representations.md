@@ -17,7 +17,7 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover]] — 513 notes Ch. 7 §7.2; QM §C5.1–§C5.2 (restated); Sakurai §§3.1–3.3; 591 §42
 - [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings]] — Hall Ch. 3–5; 590 §§29, 31; 513 notes Ch. 1 §1.3, Ch. 11 §11.1 (components, B3), Ch. 7 §7.2
 - [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification]] — 513 notes Ch. 7 §7.2; Woit §5.5; Etingof
-- [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations]] — 513 notes Ch. 1 §1.6, Ch. 7 §§7.3–7.5; PHY 513 Lecture 7; Problem Sets 4–5; §C1a.6 (restated)
+- [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations]] — 513 notes Ch. 1 §1.6, Ch. 7 §§7.3–7.5; PHY 513 Lecture 7; Problem Sets 4–5; §C1a.7 (restated)
 - [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra]] — 513 notes Ch. 7 §7.4; Woit §§21.2, 40.2; Etingof §9.4, Ex. 11.4
 - [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs]] — Smith Ch. 3–4; 513 notes Ch. 7 §7.2
 - [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors]] — LADR §§12, 36, 38; 513 notes Ch. 8 §8.2

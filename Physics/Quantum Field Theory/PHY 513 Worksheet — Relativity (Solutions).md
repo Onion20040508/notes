@@ -47,7 +47,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** ($B_z(\eta)$). Its nonzero off-identity entries are $\Lambda^0{}_0 = \Lambda^3{}_3 = \cosh\eta$, $\Lambda^0{}_3 = \Lambda^3{}_0 = \sinh\eta$. Then $\Lambda_0{}^0 = g_{00}\Lambda^0{}_0g^{00} = \cosh\eta$, $\Lambda_3{}^3 = g_{33}\Lambda^3{}_3g^{33} = \cosh\eta$, $\Lambda_3{}^0 = g_{33}\Lambda^3{}_0g^{00} = -\sinh\eta$, $\Lambda_0{}^3 = g_{00}\Lambda^0{}_3g^{33} = -\sinh\eta$. So $(\Lambda^{-1})^0{}_3 = (\Lambda^{-1})^3{}_0 = -\sinh\eta$: $B_z(\eta)^{-1} = B_z(-\eta)$, the boost back, as it must be.
 >
-> *Checked against:* [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], 2; the entries $\Lambda_0{}^0 = \gamma$, $\Lambda_0{}^3 = -\gamma v$ are those used in [[§C1a.7 Relativistic Electrodynamics in Index Form#^ex-c1a-7-1|Example §C1a.7.1]].
+> *Checked against:* [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], 2; the entries $\Lambda_0{}^0 = \gamma$, $\Lambda_0{}^3 = -\gamma v$ are those used in [[§C1a.8 Relativistic Electrodynamics in Index Form#^ex-c1a-8-1|Example §C1a.8.1]].
 
 ^sol-wr-1-b
 
@@ -66,7 +66,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 4** ($SO(1,3)$). $SO(1,3) = SO^+(1,3)\cup\mathcal P\mathcal T\cdot SO^+(1,3)$ contains $\mathcal P\mathcal T = -\mathbb 1$, which sends every future-pointing vector to a past-pointing one. "Lorentz invariant" means invariant under the identity component $SO^+(1,3)$; $\mathcal P$ and $\mathcal T$ are separate questions for the Lagrangian.
 >
-> *Checked against:* [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|Theorem §CB.3.12]] (the four cosets), [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]], 4 (the table), [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]] (every exponential is proper orthochronous), [[§C1a.4 The Lorentz Group#^rem-c1a-4-1|§C1a.4, Remark: What "Lorentz invariant" means in field theory]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^cau-b1-2-2|REL §B1.2, Caution: Names of the group]] ($SO(1,3)$ contains $PT$).
+> *Checked against:* [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|Theorem §CB.3.12]] (the four cosets), [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]], 4 (the table), [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-4|Theorem §C1a.7.4]] (every exponential is proper orthochronous), [[§C1a.4 The Lorentz Group#^rem-c1a-4-1|§C1a.4, Remark: What "Lorentz invariant" means in field theory]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^cau-b1-2-2|REL §B1.2, Caution: Names of the group]] ($SO(1,3)$ contains $PT$).
 
 ^sol-wr-1-c
 
@@ -104,7 +104,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3.** $t^2 - z^2 = (t + z)(t - z) = x^+x^-$, and the two factors scale inversely. A boost is a squeeze along the light rays; it maps each light ray along $\pm z$ to itself.
 >
-> *Checked against:* [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-7|REL Theorem §B1.2.7]], 2 (passive, $u' = e^{\varphi}u$ for $u = ct - x$; the active $\eta$ is $-\varphi$); [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]] (eigenvectors of $K_3$).
+> *Checked against:* [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-7|REL Theorem §B1.2.7]], 2 (passive, $u' = e^{\varphi}u$ for $u = ct - x$; the active $\eta$ is $-\varphi$); [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-5|Theorem §C1a.7.5]] (eigenvectors of $K_3$).
 
 ^sol-wr-2-b
 
@@ -156,7 +156,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > 6. (f) $\nu$, $\rho$, $\sigma$ are contracted, $\mu$ (up) and $\lambda$ (up) are free: $B^{\mu\lambda} = A^\mu{}_\nu\,g^{\nu\rho}\,C_{\rho\sigma}\,D^{\sigma\lambda}$. Each contraction joins the second index of one factor to the first of the next, so it is the matrix product $B = A\,g^{-1}C\,D$ (numerically $g^{-1} = g$).
 > 7. (g) Each free index carries one factor $\Lambda$ (up) or $\Lambda^{-1}$ (down), and each contracted pair carries $\Lambda^{-1}\Lambda = \mathbb 1$ (as in (d)). If both sides have the same free indices at the same heights, both transform with the same product of $\Lambda$'s: $L' = (\Lambda\cdots)L$, $R' = (\Lambda\cdots)R$, so $L = R$ in one frame implies $L' = R'$ in every frame.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-2|§C1a.5, Caution: Index bookkeeping: legal, illegal, and matrix products]] (the rules and the matrix-product reading), [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]] ((e)), [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], 2 and 4 ((d), (g)), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 1 (the factor $\det\Lambda$ of an $\varepsilon$, (b)); [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]] ((a)).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-2|§C1a.5, Caution: Index bookkeeping: legal, illegal, and matrix products]] (the rules and the matrix-product reading), [[§C1a.6 Calculus with Indices#^cau-c1a-6-1|§C1a.6, Caution: The Hessian is not the wave operator]] ((e)), [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], 2 and 4 ((d), (g)), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 1 (the factor $\det\Lambda$ of an $\varepsilon$, (b)); [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-2|Theorem §C1a.8.2]] ((a)).
 
 ^sol-wr-3
 
@@ -175,7 +175,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** Use the symmetries: $S^{\nu\mu} = S^{\mu\nu}$, $A_{\nu\mu} = -A_{\mu\nu}$, so $X = -S^{\mu\nu}A_{\mu\nu} = -X$, hence $X = 0$.
 >
-> *Checked against:* [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]] (cited for exactly this in [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]]).
+> *Checked against:* [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]] (cited for exactly this in [[§C1a.6 Calculus with Indices#^cau-c1a-6-1|§C1a.6, Caution: The Hessian is not the wave operator]]).
 
 ^sol-wr-4-a
 
@@ -190,7 +190,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** For smooth $F$, $\partial_\nu\partial_\mu = \partial_\mu\partial_\nu$ is symmetric in $\mu\nu$ and $F^{\mu\nu}$ is antisymmetric: by (a) the double contraction vanishes. So a current that is not conserved cannot be a source of Maxwell's equations.
 >
-> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]] ("consistency of the first requires $\partial_\nu J^\nu = 0$"), [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]].
+> *Checked against:* [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-2|Theorem §C1a.8.2]] ("consistency of the first requires $\partial_\nu J^\nu = 0$"), [[§C1a.6 Calculus with Indices#^cau-c1a-6-1|§C1a.6, Caution: The Hessian is not the wave operator]].
 
 ^sol-wr-4-b
 
@@ -205,7 +205,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** $\partial_\mu\tilde F^{\mu\nu} = \varepsilon^{\mu\nu\rho\sigma}\partial_\mu\partial_\rho A_\sigma$: for fixed $\nu$, $\sigma$, the factor $\partial_\mu\partial_\rho A_\sigma$ is symmetric in $\mu\rho$ and $\varepsilon^{\mu\nu\rho\sigma}$ antisymmetric, so by (a) it vanishes. The homogeneous Maxwell equations are identities once $F$ comes from a potential.
 >
-> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]] ("the second holds identically when $F$ comes from a potential").
+> *Checked against:* [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-2|Theorem §C1a.8.2]] ("the second holds identically when $F$ comes from a potential").
 
 ^sol-wr-4-c
 
@@ -437,7 +437,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **(d)** Chain rule: $\partial_\mu\rho^2 = 2\rho\,\partial_\mu\rho = 4\rho x_\mu$. Product rule: $\Box\rho^2 = \partial^\mu(4\rho x_\mu) = 4(\partial^\mu\rho)x_\mu + 4\rho\,\partial^\mu x_\mu = 4(2x^\mu)x_\mu + 4\rho\cdot4 = 8\rho + 16\rho = 24\rho$. Then $\Box^2\rho^2 = \Box(24\rho) = 24\cdot8 = 192$.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]] ($\partial_\mu(x^2) = 2x_\mu$, $\partial_\mu\partial_\nu(x^2) = 2g_{\mu\nu}$, $\partial_\mu x^\mu = 4$), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] ($\partial^2\rho = 8$, $\partial^2\rho^2 = 24\rho$); the user's submitted Problem Set 1, Problem 6(a)–(d), as written ($192$; the course solution agrees).
+> *Checked against:* [[§C1a.6 Calculus with Indices#^thm-c1a-6-1|Theorem §C1a.6.1]] ($\partial_\mu(x^2) = 2x_\mu$, $\partial_\mu\partial_\nu(x^2) = 2g_{\mu\nu}$, $\partial_\mu x^\mu = 4$), [[§C1a.6 Calculus with Indices#^thm-c1a-6-2|Theorem §C1a.6.2]] ($\partial^2\rho = 8$, $\partial^2\rho^2 = 24\rho$); the user's submitted Problem Set 1, Problem 6(a)–(d), as written ($192$; the course solution agrees).
 
 ^sol-wr-8
 
@@ -458,7 +458,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (the other route). Product rule without simplifying first: $\partial_\sigma(x^\mu\partial_\mu f) = \delta^\mu{}_\sigma\partial_\mu f + x^\mu\partial_\sigma\partial_\mu f = 2x_\sigma f' + x^\mu\partial_\sigma(2x_\mu f') = 2x_\sigma f' + 2x^\mu g_{\sigma\mu}f' + 2x^\mu x_\mu\,2x_\sigma f'' = 4x_\sigma f' + 4\rho x_\sigma f''$: the same.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] ($\partial_\mu f = 2x_\mu f'$, $x^\mu\partial_\mu f = 2\rho f'$); the user's submitted Problem Set 1, Problem 6(e), as written ($4x_\sigma(f' + \rho f'')$; the course solution writes $4x_\sigma\,d(\rho f')/d\rho$).
+> *Checked against:* [[§C1a.6 Calculus with Indices#^thm-c1a-6-2|Theorem §C1a.6.2]] ($\partial_\mu f = 2x_\mu f'$, $x^\mu\partial_\mu f = 2\rho f'$); the user's submitted Problem Set 1, Problem 6(e), as written ($4x_\sigma(f' + \rho f'')$; the course solution writes $4x_\sigma\,d(\rho f')/d\rho$).
 
 ^sol-wr-9-a
 
@@ -473,7 +473,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** $\Box(1/\rho) = \partial^\mu(-2x_\mu\rho^{-2}) = -2(\partial^\mu x_\mu)\rho^{-2} - 2x_\mu(-2\rho^{-3})(2x^\mu) = -8\rho^{-2} + 8\rho\,\rho^{-3} = 0$, every step valid where $\rho \ne 0$.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] ("$f = c_1/\rho + c_2$ … $\partial^2(1/x^2) = 0$ wherever $x^2 \ne 0$"); the user's submitted Problem Set 1, Problem 6(f), as written.
+> *Checked against:* [[§C1a.6 Calculus with Indices#^thm-c1a-6-2|Theorem §C1a.6.2]] ("$f = c_1/\rho + c_2$ … $\partial^2(1/x^2) = 0$ wherever $x^2 \ne 0$"); the user's submitted Problem Set 1, Problem 6(f), as written.
 
 ^sol-wr-9-b
 
@@ -490,7 +490,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** ($d = 4$). $1 - d/2 = -1$: $f = c_1/\rho + c_2$, part (b); and $\Box\rho = 2d = 8$, $\Box\rho^2 = 2d\cdot2\rho + 4\rho\cdot2 = 24\rho$, as in Problem 8.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] (the formula "in $d$ spacetime dimensions: $2d\,f' + 4\rho f''$" and the $d = 4$ solutions). The $d$-dimensional solutions are derived here; check: $d = 4$ gives the theorem's $c_1/\rho + c_2$.
+> *Checked against:* [[§C1a.6 Calculus with Indices#^thm-c1a-6-2|Theorem §C1a.6.2]] (the formula "in $d$ spacetime dimensions: $2d\,f' + 4\rho f''$" and the $d = 4$ solutions). The $d$-dimensional solutions are derived here; check: $d = 4$ gives the theorem's $c_1/\rho + c_2$.
 
 ^sol-wr-9-c
 
@@ -501,7 +501,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > [!success]- Solution
 > **Answer.** $\rho = 0$ is the whole light cone, where $1/\rho$ blows up, so the pointwise computation says nothing there. As a distribution, $1/x^2$ is not even defined (it is not locally integrable across the cone, like $1/u$ at $u = 0$); distributions arise as boundary values, and different ones satisfy different equations: the Wightman boundary value $-\frac{1}{4\pi^2}\frac{1}{x^2 - i0\,x^0}$ (massless $D_W$) solves $\partial^2D_W = 0$ everywhere, while the Feynman one $-\frac{1}{4\pi^2}\frac{1}{x^2 - i0}$ (massless $D_F$) solves $\partial^2D_F = -i\delta^4(x)$: a source at the tip $x = 0$ of the cone, invisible to the computation at $\rho \ne 0$.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^rem-c1a-5-3|§C1a.5, Remark: In what sense 1/x² is harmonic, and where the source sits]].
+> *Checked against:* [[§C1a.6 Calculus with Indices#^rem-c1a-6-1|§C1a.6, Remark: In what sense 1/x² is harmonic, and where the source sits]].
 
 ^sol-wr-9-d
 
@@ -522,7 +522,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3.** $\partial(p^2)/\partial p^\mu = 2p_\mu$ and $\frac{d}{du}(u - m^2 + i\epsilon)^{-1} = -(u - m^2 + i\epsilon)^{-2}$ give the third.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|Theorem §C1a.5.11]], 1–3 ($\partial/\partial a^\mu$ is a covector; $\partial(a_\nu a^\nu)/\partial a^\mu = 2a_\mu$; $\partial(b_\nu a^\nu)/\partial a^\mu = b_\mu$).
+> *Checked against:* [[§C1a.6 Calculus with Indices#^thm-c1a-6-4|Theorem §C1a.6.4]], 1–3 ($\partial/\partial a^\mu$ is a covector; $\partial(a_\nu a^\nu)/\partial a^\mu = 2a_\mu$; $\partial(b_\nu a^\nu)/\partial a^\mu = b_\mu$).
 
 ^sol-wr-10-a
 
@@ -539,7 +539,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (Euler–Lagrange). $\partial\mathcal L/\partial(\partial_\mu A_\nu) = -\frac14\cdot4F^{\mu\nu} = -F^{\mu\nu}$, $\partial\mathcal L/\partial A_\nu = -J^\nu$; so $\partial_\mu(-F^{\mu\nu}) - (-J^\nu) = 0$, i.e. $\partial_\mu F^{\mu\nu} = J^\nu$.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|Theorem §C1a.5.12]], 1 and 4; [[§C1a.7 Relativistic Electrodynamics in Index Form#^rem-c1a-7-2|§C1a.7, Remark: Electrodynamics as the template for field theory]] ($\partial\mathcal L/\partial(\partial_\mu A_\nu) = -F^{\mu\nu}$, $\partial\mathcal L/\partial A_\nu = -J^\nu$).
+> *Checked against:* [[§C1a.6 Calculus with Indices#^thm-c1a-6-5|Theorem §C1a.6.5]], 1 and 4; [[§C1a.8 Relativistic Electrodynamics in Index Form#^rem-c1a-8-2|§C1a.8, Remark: Electrodynamics as the template for field theory]] ($\partial\mathcal L/\partial(\partial_\mu A_\nu) = -F^{\mu\nu}$, $\partial\mathcal L/\partial A_\nu = -J^\nu$).
 
 ^sol-wr-10-b
 
@@ -550,7 +550,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > [!success]- Solution
 > **Answer.** A partial derivative with respect to $p^\mu$ holds the other three components fixed. On the mass shell $p^0 = E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$ is a function of $\mathbf p$, so the four components are not independent and "$\partial/\partial p^0$ at fixed $\mathbf p$" moves off the shell. Differentiate first, treating all four as independent, then impose $p^2 = m^2$. Example: $\partial(p^2)/\partial p^\mu = 2p_\mu \ne 0$, although $p^2 = m^2$ is constant on the shell.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|Theorem §C1a.5.11]] (last sentence).
+> *Checked against:* [[§C1a.6 Calculus with Indices#^thm-c1a-6-4|Theorem §C1a.6.4]] (last sentence).
 
 ^sol-wr-10-c
 
@@ -573,7 +573,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 4** (Peskin–Schroeder). One $\varepsilon$: the sign flips, $+8\,\mathbf E\cdot\mathbf B$; the scalar has no $\varepsilon$ and does not change.
 >
-> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]], 2 (both invariants and the Peskin–Schroeder sign); [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]] ($F_{0i} = E^i$, $F_{ij} = -\varepsilon_{ijk}B^k$); numerical check with random $\mathbf E$, $\mathbf B$.
+> *Checked against:* [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|Theorem §C1a.8.3]], 2 (both invariants and the Peskin–Schroeder sign); [[§C1a.8 Relativistic Electrodynamics in Index Form#^def-c1a-8-2|Def. §C1a.8.2]] ($F_{0i} = E^i$, $F_{ij} = -\varepsilon_{ijk}B^k$); numerical check with random $\mathbf E$, $\mathbf B$.
 
 ^sol-wr-11-a
 
@@ -594,7 +594,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 5** (check with the passive formula). The active boost by $+v\hat{\mathbf x}$ is the passive change to a frame moving with $\mathbf u = -v\hat{\mathbf x}$, and $\mathbf E'_\perp = \gamma(\mathbf E + \mathbf u\times\mathbf B)_\perp$, $\mathbf B'_\perp = \gamma(\mathbf B - \mathbf u\times\mathbf E)_\perp$ with $\mathbf u\times\mathbf B = -v(0, -B_z, B_y)$ reproduce Steps 3–4. The $z$-boost of Lecture 1 ($E'_x = \gamma(E_x + vB_y)$) is the same result with the axes relabelled cyclically.
 >
-> *Checked against:* [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-2|REL Theorem §B4.2.2]] (passive, $v \to -v$), [[§C1a.7 Relativistic Electrodynamics in Index Form#^ex-c1a-7-1|Example §C1a.7.1]] and [[§C1a.7 Relativistic Electrodynamics in Index Form#^cau-c1a-7-2|§C1a.7, Caution: The sign of the v × B term]] (active versus passive sign); numerical check $F' = \Lambda F\Lambda^{\mathsf T}$.
+> *Checked against:* [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-2|REL Theorem §B4.2.2]] (passive, $v \to -v$), [[§C1a.8 Relativistic Electrodynamics in Index Form#^ex-c1a-8-1|Example §C1a.8.1]] and [[§C1a.8 Relativistic Electrodynamics in Index Form#^cau-c1a-8-2|§C1a.8, Caution: The sign of the v × B term]] (active versus passive sign); numerical check $F' = \Lambda F\Lambda^{\mathsf T}$.
 
 ^sol-wr-11-b
 
@@ -609,7 +609,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** Expand: $E_yB_y - vE_yE_z + vB_zB_y - v^2B_zE_z + E_zB_z + vE_zE_y - vB_yB_z - v^2B_yE_y$; the four terms linear in $v$ cancel in pairs, leaving $(1 - v^2)(E_yB_y + E_zB_z)$, and $\gamma^2(1 - v^2) = 1$.
 >
-> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]] ($\mathbf E\cdot\mathbf B$ is, up to $-\frac18$, the invariant $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$); numerical check.
+> *Checked against:* [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|Theorem §C1a.8.3]] ($\mathbf E\cdot\mathbf B$ is, up to $-\frac18$, the invariant $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$); numerical check.
 
 ^sol-wr-11-c
 
@@ -782,7 +782,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (boost entries). $(\mathcal J^{0k})^\mu{}_\nu = i(g^{0\mu}\delta^k{}_\nu - g^{k\mu}\delta^0{}_\nu)$: $ig^{00} = i$ at $(0, k)$ and $-ig^{kk} = +i$ at $(k, 0)$.
 >
-> *Checked against:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]] (all six matrices) and steps 1–3 of its derivation; [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-6-2|§C1a.6, Caution: The sign pattern of the rotation about y]] (why $J_2 = \mathcal J^{31}$ has $+i$ at $(1, 3)$); numerical check.
+> *Checked against:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-5|Theorem §C1a.7.5]] (all six matrices) and steps 1–3 of its derivation; [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-7-2|§C1a.7, Caution: The sign pattern of the rotation about y]] (why $J_2 = \mathcal J^{31}$ has $+i$ at $(1, 3)$); numerical check.
 
 ^sol-wr-14-a
 
@@ -829,7 +829,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** $B_z(\eta)^\dagger B_z(\eta) = B_z(\eta)^2 = B_z(2\eta) \ne \mathbb 1$ for $\eta \ne 0$ (its $00$ entry is $\cosh2\eta$). A Lorentz matrix preserves $x^{\mathsf T}gx$, not the Euclidean length.
 >
-> *Checked against:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]] ("Hermitian … anti-Hermitian"), [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^rem-c1a-6-2|§C1a.6, Remark: Hermitian generators do not make boosts unitary]].
+> *Checked against:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-5|Theorem §C1a.7.5]] ("Hermitian … anti-Hermitian"), [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^rem-c1a-7-2|§C1a.7, Remark: Hermitian generators do not make boosts unitary]].
 
 ^sol-wr-14-d
 
@@ -854,7 +854,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 4** (the sign). Column $1$ is the image of $\hat{\mathbf x}$: $\cos\theta\,\hat{\mathbf x} - \sin\theta\,\hat{\mathbf z}$, as $\delta\mathbf r = \theta\,\hat{\mathbf y}\times\mathbf r$ and $\hat{\mathbf y}\times\hat{\mathbf x} = -\hat{\mathbf z}$ require. In the order $(z, x)$ the block is the standard one.
 >
-> *Checked against:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-6-2|§C1a.6, Caution: The sign pattern of the rotation about y]] (the matrix and the reason), [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], 2 with $\hat{\mathbf n} = \hat{\mathbf y}$; numerical check against $\exp(-i\theta J_2)$.
+> *Checked against:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-7-2|§C1a.7, Caution: The sign pattern of the rotation about y]] (the matrix and the reason), [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|Theorem §C1a.7.6]], 2 with $\hat{\mathbf n} = \hat{\mathbf y}$; numerical check against $\exp(-i\theta J_2)$.
 
 ^sol-wr-15-a
 
@@ -872,7 +872,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3.** $e^{\eta N} = \mathbb 1 + \sinh\eta\,N + (\cosh\eta - 1)N^2$: the matrix above, symmetric (no sign pattern, unlike rotations). Its first column is the image of $(1, \mathbf 0)$: a particle at rest gets velocity $\tanh\eta$ along $+y$.
 >
-> *Checked against:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-6-2|§C1a.6, Caution: The sign pattern of the rotation about y]] ($B_y(\eta)$), [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], 2 with $\hat{\mathbf n} = \hat{\mathbf y}$, [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], 3; numerical check.
+> *Checked against:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-7-2|§C1a.7, Caution: The sign pattern of the rotation about y]] ($B_y(\eta)$), [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], 2 with $\hat{\mathbf n} = \hat{\mathbf y}$, [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-3|Theorem §C1a.7.3]], 3; numerical check.
 
 ^sol-wr-15-b
 
@@ -885,11 +885,11 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 1** (conjugate the generator). $K_1 = i(E_{01} + E_{10})$ with $E_{10} = e_1e_0^{\mathsf T}$, $E_{01} = e_0e_1^{\mathsf T}$. $R = R_z(\theta)$ fixes $e_0$ and is orthogonal on space, so $RE_{10}R^{-1} = (Re_1)(R^{-\mathsf T}e_0)^{\mathsf T} = (Re_1)e_0^{\mathsf T}$ and $RE_{01}R^{-1} = e_0(Re_1)^{\mathsf T}$, with $Re_1 = \cos\theta\,e_1 + \sin\theta\,e_2$. Hence $RK_1R^{-1} = \cos\theta\,K_1 + \sin\theta\,K_2$.
 >
-> **Step 2** (exponentiate). $Re^{X}R^{-1} = e^{RXR^{-1}}$ (term by term in the series), so $RB_x(\eta)R^{-1} = e^{-i\eta(\cos\theta K_1 + \sin\theta K_2)}$, the boost along $\hat{\mathbf n}$ of Theorem §C1a.6.7, 2.
+> **Step 2** (exponentiate). $Re^{X}R^{-1} = e^{RXR^{-1}}$ (term by term in the series), so $RB_x(\eta)R^{-1} = e^{-i\eta(\cos\theta K_1 + \sin\theta K_2)}$, the boost along $\hat{\mathbf n}$ of Theorem §C1a.7.7, 2.
 >
 > **Step 3** (first order). $R \approx \mathbb 1 - i\theta J_3$: $RK_1R^{-1} \approx K_1 - i\theta[J_3, K_1] = K_1 - i\theta(i\varepsilon_{312}K_2) = K_1 + \theta K_2$, the first-order term of Step 1. $[J_i, K_j] = i\varepsilon_{ijk}K_k$ says exactly that $\mathbf K$ turns like a vector under rotations.
 >
-> *Derived here; check:* the result is the boost of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], 2 with $\hat{\mathbf n} = (\cos\theta, \sin\theta, 0)$ (checked numerically at $\theta = 0.7$, $\eta = 0.9$); the commutator is [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]].
+> *Derived here; check:* the result is the boost of [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], 2 with $\hat{\mathbf n} = (\cos\theta, \sin\theta, 0)$ (checked numerically at $\theta = 0.7$, $\eta = 0.9$); the commutator is [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]].
 
 ^sol-wr-15-c
 
@@ -912,9 +912,9 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (Lorentz). A product of Lorentz matrices is one; directly, column $0$: $(25^2 - 9^2 - 20^2)/144 = 1$, columns $0$ and $1$: $(25\cdot15 - 9\cdot15 - 20\cdot12)/144 = 0$.
 >
-> **Step 4** (not a boost). Every pure boost is symmetric (Theorem §C1a.6.7, 2), but $\Lambda^0{}_1 = \frac{15}{12} \ne \Lambda^1{}_0 = \frac9{12}$. In the opposite order the product is $B_xB_y = \Lambda^{\mathsf T}$ (both factors symmetric), a different transformation: boosts in different directions do not commute.
+> **Step 4** (not a boost). Every pure boost is symmetric (Theorem §C1a.7.7, 2), but $\Lambda^0{}_1 = \frac{15}{12} \ne \Lambda^1{}_0 = \frac9{12}$. In the opposite order the product is $B_xB_y = \Lambda^{\mathsf T}$ (both factors symmetric), a different transformation: boosts in different directions do not commute.
 >
-> *Checked against:* [[§B1.2 Lorentz Transformations and the Lorentz Group#^ex-b1-2-2|REL Example §B1.2.2]] (the same speeds $0.6$ and $0.8$, passive reading); [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], 2 (boosts are symmetric); exact check with sympy.
+> *Checked against:* [[§B1.2 Lorentz Transformations and the Lorentz Group#^ex-b1-2-2|REL Example §B1.2.2]] (the same speeds $0.6$ and $0.8$, passive reading); [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], 2 (boosts are symmetric); exact check with sympy.
 
 ^sol-wr-16-a
 
@@ -997,7 +997,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (boost). $B_z(\eta) = e^{-i\eta K_3}$ multiplies a $K_3$-eigenvector by $e^{-i\eta K_3}$, i.e. $e^{-\eta(m_+ - m_-)}$: $e^{\eta}$ on $e_0 + e_3$, $e^{-\eta}$ on $e_0 - e_3$, $1$ on $e_1 \pm ie_2$ (part 2(b) again).
 >
-> *Checked against:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]] (eigenvectors of $J_3$, $K_3$, step 5 of its derivation), [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-10|Theorem §CB.6.10]] (rotation weight $m_+ + m_-$, boost factor $e^{-\eta(m_+ - m_-)}$), [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^ex-c3-2-1|Example §C3.2.1]] (the same weights, read on the components: $A^0 - A^3$, the coefficient of $e_0 - e_3$, has $(\frac12, -\frac12)$ and factor $e^{-\eta}$); numerical check.
+> *Checked against:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-5|Theorem §C1a.7.5]] (eigenvectors of $J_3$, $K_3$, step 5 of its derivation), [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-10|Theorem §CB.6.10]] (rotation weight $m_+ + m_-$, boost factor $e^{-\eta(m_+ - m_-)}$), [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^ex-c3-2-1|Example §C3.2.1]] (the same weights, read on the components: $A^0 - A^3$, the coefficient of $e_0 - e_3$, has $(\frac12, -\frac12)$ and factor $e^{-\eta}$); numerical check.
 
 ^sol-wr-17-b
 
@@ -1140,7 +1140,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (product). $\Lambda^\alpha{}_\beta A^\beta(\Lambda^{-1}x) = \bigl(\delta^\alpha{}_\beta - \frac i2\omega_{\mu\nu}(\mathcal J^{\mu\nu})^\alpha{}_\beta\bigr)\bigl(A^\beta - \frac i2\omega_{\rho\sigma}L^{\rho\sigma}A^\beta\bigr)$; keep first order: $A^\alpha - \frac i2\omega_{\mu\nu}\bigl((\mathcal J^{\mu\nu})^\alpha{}_\beta A^\beta + L^{\mu\nu}A^\alpha\bigr)$. The orbital part moves the argument, the spin part mixes the components; under rotations their sum is $\mathbf L + \mathbf J$.
 >
-> *Checked against:* [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-5|Theorem §C3.3.5]], 1 (the formula), [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-3|Theorem §C3.3.3]] (orbital plus spin), [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-2|Theorem §C1a.6.2]] (the generators reproduce $\omega$), [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-1|Theorem §C3.3.1]], 1.
+> *Checked against:* [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-5|Theorem §C3.3.5]], 1 (the formula), [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-3|Theorem §C3.3.3]] (orbital plus spin), [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-2|Theorem §C1a.7.2]] (the generators reproduce $\omega$), [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-1|Theorem §C3.3.1]], 1.
 
 ^sol-wr-19-c
 
@@ -1156,12 +1156,12 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > 1. (a) $\varepsilon^{1023} = -1$ (one transposition); $\varepsilon_{3210} = -\varepsilon^{3210} = -1$ (six inversions, then the lowering sign). [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]].
 > 2. (b) $2m_e^2 + 2m_\mu^2$. [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], 1.
 > 3. (c) $[\delta^4(p)] = -4$, $[\partial/\partial p^\mu] = -1$. [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 4.
-> 4. (d) $\Box(x^2)^2 = 24x^2$. [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] ($\partial^2\rho^2 = 24\rho$).
+> 4. (d) $\Box(x^2)^2 = 24x^2$. [[§C1a.6 Calculus with Indices#^thm-c1a-6-2|Theorem §C1a.6.2]] ($\partial^2\rho^2 = 24\rho$).
 > 5. (e) $y = \frac12\ln\frac{13 + 12}{13 - 12} = \ln5 \approx 1.609$. Problem 2(c) (derived there).
 > 6. (f) $[K_3, J_1] = -[J_1, K_3] = -i\varepsilon_{13k}K_k = -i\varepsilon_{132}K_2 = iK_2$. [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]]; numerical check.
-> 7. (g) The proper non-orthochronous component ($\det = +1$, $\Lambda^0{}_0 = -1$), $\mathcal P\mathcal T\cdot SO^+(1,3)$; no, every exponential lies in $SO^+(1,3)$. [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|Theorem §CB.3.12]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]].
+> 7. (g) The proper non-orthochronous component ($\det = +1$, $\Lambda^0{}_0 = -1$), $\mathcal P\mathcal T\cdot SO^+(1,3)$; no, every exponential lies in $SO^+(1,3)$. [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|Theorem §CB.3.12]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-4|Theorem §C1a.7.4]].
 > 8. (h) $(\frac12, \frac12)$; $(0, 0)$; $(1, 1)$. [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
-> 9. (i) Both zero: a plane wave is a null field ($\mathbf E\perp\mathbf B$, $\lvert\mathbf E\rvert = \lvert\mathbf B\rvert$). [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-4|REL Theorem §B4.2.4]], 3; [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]].
+> 9. (i) Both zero: a plane wave is a null field ($\mathbf E\perp\mathbf B$, $\lvert\mathbf E\rvert = \lvert\mathbf B\rvert$). [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-4|REL Theorem §B4.2.4]], 3; [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|Theorem §C1a.8.3]].
 > 10. (j) $+1$; $e^{\eta}$. [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]]; Problem 2(b), Problem 17(b).
 
 ^sol-wr-20

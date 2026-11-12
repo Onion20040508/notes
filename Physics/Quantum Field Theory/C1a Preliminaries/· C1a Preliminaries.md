@@ -17,8 +17,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C1a.3 Causal Structure and the Causality of a Single Particle]] — PS 2.1; 513 notes Ch. 2
 - [[§C1a.4 The Lorentz Group]] — Yu 1.3; 513 notes Ch. 1, 7
 - [[§C1a.5 Vectors, Tensors and Index Notation]] — Yu 1.4–1.5; 513 notes Ch. 1, 2
-- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators]] — Yu 3.1, 3.2; 513 notes Ch. 1, 7, 8
-- [[§C1a.7 Relativistic Electrodynamics in Index Form]] — Yu 1.5; 513 notes Ch. 1, 3
+- [[§C1a.6 Calculus with Indices]] — Yu 1.4; 513 notes Ch. 2
+- [[§C1a.7 Infinitesimal Lorentz Transformations and Generators]] — Yu 3.1, 3.2; 513 notes Ch. 1, 7, 8
+- [[§C1a.8 Relativistic Electrodynamics in Index Form]] — Yu 1.5; 513 notes Ch. 1, 3
 
 ## Principles
 - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|§C1a.3.1]] Causality
@@ -46,23 +47,23 @@ tags: [chapter, quantum-field-theory]
 - [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|§C1a.5.5]] The Levi-Civita Symbol and the Determinant
 - [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|§C1a.5.6]] The Trace, Symmetric and Antisymmetric Parts Do Not Mix
 - [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Duality Squares to −1 on Antisymmetric Tensors
-- [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|§C1a.5.8]] Basic Derivative Identities
-- [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|§C1a.5.9]] The d'Alembertian of a Function of x²
-- [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|§C1a.5.10]] Taylor Expansion in Index Notation
-- [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to a Four-Vector
-- [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|§C1a.5.12]] Derivatives with Respect to Tensor Components
-- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|§C1a.6.1]] Infinitesimal Lorentz Transformations Are Antisymmetric
-- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-2|§C1a.6.2]] The Generators Reproduce ω
-- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|§C1a.6.3]] Rotations and Boosts as Exponentials
-- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|§C1a.6.4]] Every Exponential Is Proper Orthochronous
-- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|§C1a.6.5]] The Rotation and Boost Generators as 4×4 Matrices
-- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|§C1a.6.6]] The Rotation Matrices in the Vector Representation
-- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|§C1a.6.7]] The Boost Matrices in the Vector Representation
-- [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Maxwell's Equations in Heaviside–Lorentz Form
-- [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] Duality Exchanges E and B; the Two Invariants
-- [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] E ± iB: the Self-Dual Halves of F
-- [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-5|§C1a.7.5]] The SI–Heaviside–Lorentz Dictionary
+- [[§C1a.6 Calculus with Indices#^thm-c1a-6-1|§C1a.6.1]] Basic Derivative Identities
+- [[§C1a.6 Calculus with Indices#^thm-c1a-6-2|§C1a.6.2]] The d'Alembertian of a Function of x²
+- [[§C1a.6 Calculus with Indices#^thm-c1a-6-3|§C1a.6.3]] Taylor Expansion in Index Notation
+- [[§C1a.6 Calculus with Indices#^thm-c1a-6-4|§C1a.6.4]] Derivatives with Respect to a Four-Vector
+- [[§C1a.6 Calculus with Indices#^thm-c1a-6-5|§C1a.6.5]] Derivatives with Respect to Tensor Components
+- [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-1|§C1a.7.1]] Infinitesimal Lorentz Transformations Are Antisymmetric
+- [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-2|§C1a.7.2]] The Generators Reproduce ω
+- [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-3|§C1a.7.3]] Rotations and Boosts as Exponentials
+- [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-4|§C1a.7.4]] Every Exponential Is Proper Orthochronous
+- [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-5|§C1a.7.5]] The Rotation and Boost Generators as 4×4 Matrices
+- [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|§C1a.7.6]] The Rotation Matrices in the Vector Representation
+- [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|§C1a.7.7]] The Boost Matrices in the Vector Representation
+- [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-2|§C1a.8.2]] Maxwell's Equations in Heaviside–Lorentz Form
+- [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|§C1a.8.3]] Duality Exchanges E and B; the Two Invariants
+- [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-4|§C1a.8.4]] E ± iB: the Self-Dual Halves of F
+- [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-5|§C1a.8.5]] The SI–Heaviside–Lorentz Dictionary
 
 ## Models
 - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|§C1a.3.2]] One Free Particle in Single-Particle Quantum Mechanics
-- [[§C1a.7 Relativistic Electrodynamics in Index Form#^mod-c1a-7-1|§C1a.7.1]] The Maxwell Field with an External Current
+- [[§C1a.8 Relativistic Electrodynamics in Index Form#^mod-c1a-8-1|§C1a.8.1]] The Maxwell Field with an External Current

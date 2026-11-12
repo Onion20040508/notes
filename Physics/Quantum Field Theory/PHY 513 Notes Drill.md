@@ -36,7 +36,7 @@ Natural units set $\hbar = c = 1$, so that $M = E = L^{-1} = T^{-1}$, with $\hba
 > [!tip]- Hints: route in the notes
 > - Technique: K8 (dimensional analysis)
 > - The readings of one number: [[§C1a.2 Natural Units and Dimensional Analysis#^cau-c1a-2-1|§C1a.2, Caution: One number, several readings]]; restoring them is Theorem [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|§C1a.2.1]] The Exponent Rule.
-> - Units row of the register `Larsen PHY 513`; electromagnetic units Definition [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-1|§C1a.7.1]] Heaviside–Lorentz Natural Units.
+> - Units row of the register `Larsen PHY 513`; electromagnetic units Definition [[§C1a.8 Relativistic Electrodynamics in Index Form#^def-c1a-8-1|§C1a.8.1]] Heaviside–Lorentz Natural Units.
 
 ### [B] Mass dimension
 Every quantity has one mass dimension $[Q] = d$: a pure number times $(\text{mass})^d$, with $d = 1$ for masses, energies, momenta, $d = -1$ for lengths and times, $d = 0$ for velocities, actions and angular momenta, see Definition [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|§C1a.2.2]] Mass Dimension. *Source: Lecture 2 (Sep 2), slide "Mass Dimensions" ("$M \sim$ energy $\sim 1/L$") · the user's notes Ch. 2 §2.4*
@@ -96,8 +96,8 @@ $x^\mu = (t, \mathbf x)$, $x_\mu = g_{\mu\nu}x^\nu = (t, -\mathbf x)$, $x^2 = t^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Names: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-8|§C1a.5, Caution: Names for the d'Alembertian]]; plain sums: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-1|§C1a.5, Caution: A contraction is a plain sum; the signs live in the components]]; deltas: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-3|§C1a.5, Caution: Three deltas that are not the same object]].
-> - Why $\partial_\mu$ carries a lower index: Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|§C1a.5.8]] Basic Derivative Identities and Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to a Four-Vector, part 1.
+> - Names: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: Names for the d'Alembertian]]; plain sums: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-1|§C1a.5, Caution: A contraction is a plain sum; the signs live in the components]]; deltas: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-3|§C1a.5, Caution: Three deltas that are not the same object]].
+> - Why $\partial_\mu$ carries a lower index: Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-1|§C1a.6.1]] Basic Derivative Identities and Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-4|§C1a.6.4]] Derivatives with Respect to a Four-Vector, part 1.
 
 ### [PS] Index bookkeeping: legal terms and matrix products
 Within a term an index appears at most twice, once up and once down; free indices agree on both sides; an index expression is a matrix product when each contraction joins the second index of one factor to the first of the next, see [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-2|§C1a.5, Caution: Index bookkeeping: legal, illegal, and matrix products]]. *Source: the user's notes Ch. 1 §1.4 · PS1.1–1.2*
@@ -119,7 +119,7 @@ The course and Yu take $\varepsilon^{0123} = +1$, hence $\varepsilon_{0123} = -1
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - $FF$ and $F\tilde F$ in both conventions: Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] Duality Exchanges E and B; the Two Invariants, part 2 and step 6 of its derivation.
+> - $FF$ and $F\tilde F$ in both conventions: Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|§C1a.8.3]] Duality Exchanges E and B; the Two Invariants, part 2 and step 6 of its derivation.
 > - Register row "Levi-Civita"; the γ-matrix route ($\gamma^0\gamma^1\gamma^2\gamma^3 = -i\gamma^5$) is in the register and the skill's notation rules.
 
 ### [B] Mandelstam variables
@@ -136,7 +136,7 @@ For $1 + 2 \to 3 + 4$ on shell, $s = (p_1 + p_2)^2$, $t = (p_1 - p_3)^2$, $u = (
 > - [[§C1a.5 Vectors, Tensors and Index Notation#^rem-c1a-5-1|§C1a.5, Remark: Compute invariants, not transformations]]; the lab form of $s$ → PS1.5(b).
 
 ### [B] Heaviside–Lorentz natural units
-Field theory measures electromagnetism in Heaviside–Lorentz units with $\hbar = c = 1$: Maxwell's equations without $4\pi$, Coulomb's potential $Q/4\pi r$, $\alpha = e^2/4\pi \approx 1/137$, see Definition [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-1|§C1a.7.1]] Heaviside–Lorentz Natural Units. *Source: register (units row) · the user's notes Ch. 1 §1.7*
+Field theory measures electromagnetism in Heaviside–Lorentz units with $\hbar = c = 1$: Maxwell's equations without $4\pi$, Coulomb's potential $Q/4\pi r$, $\alpha = e^2/4\pi \approx 1/137$, see Definition [[§C1a.8 Relativistic Electrodynamics in Index Form#^def-c1a-8-1|§C1a.8.1]] Heaviside–Lorentz Natural Units. *Source: register (units row) · the user's notes Ch. 1 §1.7*
 
 ^nd-def-c1a-7-1
 
@@ -147,10 +147,10 @@ Field theory measures electromagnetism in Heaviside–Lorentz units with $\hbar 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K8
-> - The dictionary: Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-5|§C1a.7.5]] The SI–Heaviside–Lorentz Dictionary; the charge row of [[§C1a.2 Natural Units and Dimensional Analysis#^rem-c1a-2-2|§C1a.2, Remark: Mass dimensions of common quantities]].
+> - The dictionary: Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-5|§C1a.8.5]] The SI–Heaviside–Lorentz Dictionary; the charge row of [[§C1a.2 Natural Units and Dimensional Analysis#^rem-c1a-2-2|§C1a.2, Remark: Mass dimensions of common quantities]].
 
 ### [B] Four-potential and field-strength tensor
-$A^\mu = (\Phi, \mathbf A)$, $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, $F^{0i} = -E^i$, $F^{ij} = -\varepsilon_{ijk}B^k$, gauge invariant under $A^\mu \to A^\mu + \partial^\mu\lambda$, see Definition [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|§C1a.7.2]] Four-Potential and Field Tensor in Natural Units. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics" (Jackson 11.10) · PS2 Problem 4(b) (the identification) · the user's notes Ch. 1 §1.7*
+$A^\mu = (\Phi, \mathbf A)$, $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, $F^{0i} = -E^i$, $F^{ij} = -\varepsilon_{ijk}B^k$, gauge invariant under $A^\mu \to A^\mu + \partial^\mu\lambda$, see Definition [[§C1a.8 Relativistic Electrodynamics in Index Form#^def-c1a-8-2|§C1a.8.2]] Four-Potential and Field Tensor in Natural Units. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics" (Jackson 11.10) · PS2 Problem 4(b) (the identification) · the user's notes Ch. 1 §1.7*
 
 ^nd-def-c1a-7-2
 
@@ -161,7 +161,7 @@ $A^\mu = (\Phi, \mathbf A)$, $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - [[§C1a.7 Relativistic Electrodynamics in Index Form#^cau-c1a-7-1|§C1a.7, Caution: Conventions for F across the sources]]; for Q3, symmetric second derivatives against antisymmetry ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]]).
+> - [[§C1a.8 Relativistic Electrodynamics in Index Form#^cau-c1a-8-1|§C1a.8, Caution: Conventions for F across the sources]]; for Q3, symmetric second derivatives against antisymmetry ([[§C1a.6 Calculus with Indices#^cau-c1a-6-1|§C1a.6, Caution: The Hessian is not the wave operator]]).
 
 ## Derivations T1
 
@@ -375,7 +375,7 @@ $(\star A)^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}A_{\rho\sigma}$ satis
 > - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Duality Squares to −1 on Antisymmetric Tensors, steps 1–6; the identity of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|§C1a.5.4]] Contraction Identities of the Levi-Civita Symbol.
 
 ### [A] Basic derivative identities and plane waves ★★
-$\partial_\mu x^\nu = \delta^\nu{}_\mu$, $\partial_\mu x^\mu = 4$, $\partial_\mu(x^2) = 2x_\mu$, and $\partial_\mu e^{-ik\cdot x} = -ik_\mu e^{-ik\cdot x}$, $\partial^2e^{-ik\cdot x} = -k^2e^{-ik\cdot x}$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|§C1a.5.8]] Basic Derivative Identities. *Source: Lecture 2 (Sep 2), slides "Derivatives" ("Proof that $\partial_\mu$ transforms like $x_\mu$"), "Plane-Wave Solutions to the Klein Gordon Equation"; Lecture 3 (Sep 9), slide "Solutions to the Klein-Gordon Equation" · the user's notes Ch. 2 §2.3*
+$\partial_\mu x^\nu = \delta^\nu{}_\mu$, $\partial_\mu x^\mu = 4$, $\partial_\mu(x^2) = 2x_\mu$, and $\partial_\mu e^{-ik\cdot x} = -ik_\mu e^{-ik\cdot x}$, $\partial^2e^{-ik\cdot x} = -k^2e^{-ik\cdot x}$, see Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-1|§C1a.6.1]] Basic Derivative Identities. *Source: Lecture 2 (Sep 2), slides "Derivatives" ("Proof that $\partial_\mu$ transforms like $x_\mu$"), "Plane-Wave Solutions to the Klein Gordon Equation"; Lecture 3 (Sep 9), slide "Solutions to the Klein-Gordon Equation" · the user's notes Ch. 2 §2.3*
 
 ^nd-thm-c1a-5-8
 
@@ -387,17 +387,17 @@ $\partial_\mu x^\nu = \delta^\nu{}_\mu$, $\partial_\mu x^\mu = 4$, $\partial_\mu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|§C1a.5.8]] Basic Derivative Identities, steps 1–3; the Hessian is not the wave operator: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]]; [[§C1b.1 Fields and Their Transformation Laws#^rem-c1b-1-3|§C1b.1, Remark: What the Klein–Gordon equation is, and what it is not]].
+> - Derivation of Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-1|§C1a.6.1]] Basic Derivative Identities, steps 1–3; the Hessian is not the wave operator: [[§C1a.6 Calculus with Indices#^cau-c1a-6-1|§C1a.6, Caution: The Hessian is not the wave operator]]; [[§C1b.1 Fields and Their Transformation Laws#^rem-c1b-1-3|§C1b.1, Remark: What the Klein–Gordon equation is, and what it is not]].
 
 ### [PS] The d'Alembertian of a function of x²
-$\partial^2f(\rho) = 8f' + 4\rho f''$ for $\rho = x^2$; $f = c_1/\rho + c_2$ are the harmonic functions of $\rho$ off the cone, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|§C1a.5.9]] The d'Alembertian of a Function of x². *Source: PS1 Problem 6*
+$\partial^2f(\rho) = 8f' + 4\rho f''$ for $\rho = x^2$; $f = c_1/\rho + c_2$ are the harmonic functions of $\rho$ off the cone, see Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-2|§C1a.6.2]] The d'Alembertian of a Function of x². *Source: PS1 Problem 6*
 
 ^nd-thm-c1a-5-9
 
 → drilled as [[PHY 513 PS Drill#^ps1-6|PS1.6]] (parts (a)–(f))
 
 ### [B] Taylor expansion in index notation ★
-$f(x + a) = \sum_n\frac1{n!}a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\partial_{\nu_n}f(x) = e^{a\cdot\partial}f(x)$; on a plane wave the series is exact, and $a\cdot\partial = -ia\cdot\hat p$ generates translations, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|§C1a.5.10]] Taylor Expansion in Index Notation. *Source: the user's notes Ch. 2 §2.3*
+$f(x + a) = \sum_n\frac1{n!}a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\partial_{\nu_n}f(x) = e^{a\cdot\partial}f(x)$; on a plane wave the series is exact, and $a\cdot\partial = -ia\cdot\hat p$ generates translations, see Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-3|§C1a.6.3]] Taylor Expansion in Index Notation. *Source: the user's notes Ch. 2 §2.3*
 
 ^nd-thm-c1a-5-10
 
@@ -409,10 +409,10 @@ $f(x + a) = \sum_n\frac1{n!}a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\part
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|§C1a.5.10]] Taylor Expansion in Index Notation, steps 1–5; [[§C1a.5 Vectors, Tensors and Index Notation#^rem-c1a-5-4|§C1a.5, Remark: Three expansions, not one]].
+> - Derivation of Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-3|§C1a.6.3]] Taylor Expansion in Index Notation, steps 1–5; [[§C1a.6 Calculus with Indices#^rem-c1a-6-2|§C1a.6, Remark: Three expansions, not one]].
 
 ### [A] Derivatives with respect to a four-vector ★★
-$\partial/\partial a^\mu$ is a covector; $\partial a^\nu/\partial a^\mu = \delta^\nu{}_\mu$, $\partial a_\nu/\partial a^\mu = g_{\mu\nu}$; $\partial(a_\nu a^\nu)/\partial a^\mu = 2a_\mu$, and for $\mathcal L = \frac12\partial_\nu\phi\,\partial^\nu\phi$, $\partial\mathcal L/\partial(\partial_\mu\phi) = \partial^\mu\phi$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to a Four-Vector. *Source: Lecture 3 (Sep 9), slide "Example: the Scalar Field" · the user's notes Ch. 2 §2.3 · **[class exercise, Lecture 3]**: "you double check" the derivative of the kinetic term component by component*
+$\partial/\partial a^\mu$ is a covector; $\partial a^\nu/\partial a^\mu = \delta^\nu{}_\mu$, $\partial a_\nu/\partial a^\mu = g_{\mu\nu}$; $\partial(a_\nu a^\nu)/\partial a^\mu = 2a_\mu$, and for $\mathcal L = \frac12\partial_\nu\phi\,\partial^\nu\phi$, $\partial\mathcal L/\partial(\partial_\mu\phi) = \partial^\mu\phi$, see Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-4|§C1a.6.4]] Derivatives with Respect to a Four-Vector. *Source: Lecture 3 (Sep 9), slide "Example: the Scalar Field" · the user's notes Ch. 2 §2.3 · **[class exercise, Lecture 3]**: "you double check" the derivative of the kinetic term component by component*
 
 ^nd-thm-c1a-5-11
 
@@ -424,10 +424,10 @@ $\partial/\partial a^\mu$ is a covector; $\partial a^\nu/\partial a^\mu = \delta
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to a Four-Vector, steps 1–4; the hygiene rule [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-3|§C1b.2, Caution: Rename the dummy index before differentiating]] (it contains the component check).
+> - Derivation of Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-4|§C1a.6.4]] Derivatives with Respect to a Four-Vector, steps 1–4; the hygiene rule [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-3|§C1b.2, Caution: Rename the dummy index before differentiating]] (it contains the component check).
 
 ### [B] Derivatives with respect to tensor components ★
-For independent components, $\partial T^\alpha{}_\beta/\partial T^\mu{}_\nu = \delta^\alpha{}_\mu\delta_\beta{}^\nu$; $\partial(T_{\alpha\beta}T^{\alpha\beta})/\partial T_{\mu\nu} = 2T^{\mu\nu}$; for antisymmetric $F$ either convention gives $\delta(FF) = 2F\,\delta F$; and $\partial(F_{\alpha\beta}F^{\alpha\beta})/\partial(\partial_\mu A_\nu) = 4F^{\mu\nu}$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|§C1a.5.12]] Derivatives with Respect to Tensor Components. *Source: the user's notes Ch. 2 §2.3 · PS2 Problem 4(a)*
+For independent components, $\partial T^\alpha{}_\beta/\partial T^\mu{}_\nu = \delta^\alpha{}_\mu\delta_\beta{}^\nu$; $\partial(T_{\alpha\beta}T^{\alpha\beta})/\partial T_{\mu\nu} = 2T^{\mu\nu}$; for antisymmetric $F$ either convention gives $\delta(FF) = 2F\,\delta F$; and $\partial(F_{\alpha\beta}F^{\alpha\beta})/\partial(\partial_\mu A_\nu) = 4F^{\mu\nu}$, see Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-5|§C1a.6.5]] Derivatives with Respect to Tensor Components. *Source: the user's notes Ch. 2 §2.3 · PS2 Problem 4(a)*
 
 ^nd-thm-c1a-5-12
 
@@ -439,10 +439,10 @@ For independent components, $\partial T^\alpha{}_\beta/\partial T^\mu{}_\nu = \d
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|§C1a.5.12]] Derivatives with Respect to Tensor Components, steps 1–3.
+> - Derivation of Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-5|§C1a.6.5]] Derivatives with Respect to Tensor Components, steps 1–3.
 
 ### [B] Maxwell's equations in Heaviside–Lorentz form ★
-$\partial_\mu F^{\mu\nu} = J^\nu$ and $\partial_\mu\tilde F^{\mu\nu} = 0$, the latter equivalent to the cyclic Bianchi identity and automatic for $F = dA$; consistency requires $\partial_\nu J^\nu = 0$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Maxwell's Equations in Heaviside–Lorentz Form. *Source: the user's notes Ch. 1 §1.7*
+$\partial_\mu F^{\mu\nu} = J^\nu$ and $\partial_\mu\tilde F^{\mu\nu} = 0$, the latter equivalent to the cyclic Bianchi identity and automatic for $F = dA$; consistency requires $\partial_\nu J^\nu = 0$, see Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-2|§C1a.8.2]] Maxwell's Equations in Heaviside–Lorentz Form. *Source: the user's notes Ch. 1 §1.7*
 
 ^nd-thm-c1a-7-2
 
@@ -454,10 +454,10 @@ $\partial_\mu F^{\mu\nu} = J^\nu$ and $\partial_\mu\tilde F^{\mu\nu} = 0$, the l
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Maxwell's Equations in Heaviside–Lorentz Form, steps 4–6 (steps 1–3 are the PS part); index moves [[§C1a.7 Relativistic Electrodynamics in Index Form#^rem-c1a-7-1|§C1a.7, Remark: Index techniques in Maxwell's equations]].
+> - Derivation of Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-2|§C1a.8.2]] Maxwell's Equations in Heaviside–Lorentz Form, steps 4–6 (steps 1–3 are the PS part); index moves [[§C1a.8 Relativistic Electrodynamics in Index Form#^rem-c1a-8-1|§C1a.8, Remark: Index techniques in Maxwell's equations]].
 
 ### [B] Duality exchanges E and B; the two invariants ★
-$\tilde F^{0i} = -B^i$, $\tilde F^{ij} = \varepsilon_{ijk}E^k$; $F_{\mu\nu}F^{\mu\nu} = 2(\mathbf B^2 - \mathbf E^2)$, $F_{\mu\nu}\tilde F^{\mu\nu} = -4\,\mathbf E\cdot\mathbf B$ (course; $+$ in PS for the $\varepsilon FF$ form), see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] Duality Exchanges E and B; the Two Invariants. *Source: the user's notes Ch. 1 §1.7*
+$\tilde F^{0i} = -B^i$, $\tilde F^{ij} = \varepsilon_{ijk}E^k$; $F_{\mu\nu}F^{\mu\nu} = 2(\mathbf B^2 - \mathbf E^2)$, $F_{\mu\nu}\tilde F^{\mu\nu} = -4\,\mathbf E\cdot\mathbf B$ (course; $+$ in PS for the $\varepsilon FF$ form), see Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|§C1a.8.3]] Duality Exchanges E and B; the Two Invariants. *Source: the user's notes Ch. 1 §1.7*
 
 ^nd-thm-c1a-7-3
 
@@ -469,10 +469,10 @@ $\tilde F^{0i} = -B^i$, $\tilde F^{ij} = \varepsilon_{ijk}E^k$; $F_{\mu\nu}F^{\m
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] Duality Exchanges E and B; the Two Invariants, steps 1–6; [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³: these notes versus Peskin–Schroeder]].
+> - Derivation of Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|§C1a.8.3]] Duality Exchanges E and B; the Two Invariants, steps 1–6; [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³: these notes versus Peskin–Schroeder]].
 
 ### [B] E ± iB: the self-dual halves of F ★
-$F \pm i\tilde F$ are the $\mp i$ eigenvectors of duality, carried by $\mathbf E \pm i\mathbf B$; proper Lorentz transformations act on $\mathbf E + i\mathbf B$ by complex orthogonal matrices, parity exchanges the halves, and the two invariants form one complex invariant, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] E ± iB: the Self-Dual Halves of F. *Source: the user's notes Ch. 1 §1.5 (the remark on $\mathbf E \pm i\mathbf B$); items 2–3 derived in the vault*
+$F \pm i\tilde F$ are the $\mp i$ eigenvectors of duality, carried by $\mathbf E \pm i\mathbf B$; proper Lorentz transformations act on $\mathbf E + i\mathbf B$ by complex orthogonal matrices, parity exchanges the halves, and the two invariants form one complex invariant, see Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-4|§C1a.8.4]] E ± iB: the Self-Dual Halves of F. *Source: the user's notes Ch. 1 §1.5 (the remark on $\mathbf E \pm i\mathbf B$); items 2–3 derived in the vault*
 
 ^nd-thm-c1a-7-4
 
@@ -483,10 +483,10 @@ $F \pm i\tilde F$ are the $\mp i$ eigenvectors of duality, carried by $\mathbf E
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] E ± iB: the Self-Dual Halves of F, steps 1–4; Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Duality Squares to −1 on Antisymmetric Tensors.
+> - Derivation of Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-4|§C1a.8.4]] E ± iB: the Self-Dual Halves of F, steps 1–4; Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Duality Squares to −1 on Antisymmetric Tensors.
 
 ### [A] Lecture 1's boost of E_x ★★
-Under the active boost along $z$, $E'_x = F'_{01} = \Lambda_0{}^0\Lambda_1{}^1F_{01} + \Lambda_0{}^3\Lambda_1{}^1F_{31} = \gamma(E_x + vB_y)$; the slide's $\gamma(E_x - vB_y)$ is the passive sign, see Example [[§C1a.7 Relativistic Electrodynamics in Index Form#^ex-c1a-7-1|§C1a.7.1]] The Lecture's Boost Example, Done with the Active Boost and [[§C1a.7 Relativistic Electrodynamics in Index Form#^cau-c1a-7-2|§C1a.7, Caution: The sign of the v × B term]]. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics" · the user's notes Ch. 1 §1.7*
+Under the active boost along $z$, $E'_x = F'_{01} = \Lambda_0{}^0\Lambda_1{}^1F_{01} + \Lambda_0{}^3\Lambda_1{}^1F_{31} = \gamma(E_x + vB_y)$; the slide's $\gamma(E_x - vB_y)$ is the passive sign, see Example [[§C1a.8 Relativistic Electrodynamics in Index Form#^ex-c1a-8-1|§C1a.8.1]] The Lecture's Boost Example, Done with the Active Boost and [[§C1a.8 Relativistic Electrodynamics in Index Form#^cau-c1a-8-2|§C1a.8, Caution: The sign of the v × B term]]. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics" · the user's notes Ch. 1 §1.7*
 
 ^nd-ex-c1a-7-1
 
@@ -498,10 +498,10 @@ Under the active boost along $z$, $E'_x = F'_{01} = \Lambda_0{}^0\Lambda_1{}^1F_
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2, K14
-> - Example [[§C1a.7 Relativistic Electrodynamics in Index Form#^ex-c1a-7-1|§C1a.7.1]] The Lecture's Boost Example, Done with the Active Boost (one computation); [[§C1a.4 The Lorentz Group#^cau-c1a-4-1|§C1a.4, Caution: Active and passive readings]]; Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-2|§C1a.4.2]] Active Rotation and Boost.
+> - Example [[§C1a.8 Relativistic Electrodynamics in Index Form#^ex-c1a-8-1|§C1a.8.1]] The Lecture's Boost Example, Done with the Active Boost (one computation); [[§C1a.4 The Lorentz Group#^cau-c1a-4-1|§C1a.4, Caution: Active and passive readings]]; Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-2|§C1a.4.2]] Active Rotation and Boost.
 
 ### [B] The SI–Heaviside–Lorentz dictionary ★
-$\mathbf E_{\rm HL} = \sqrt{\varepsilon_0}\mathbf E_{\rm SI}$, $\mathbf B_{\rm HL} = \mathbf B_{\rm SI}/\sqrt{\mu_0}$, $q_{\rm HL} = q_{\rm SI}/\sqrt{\varepsilon_0}$ turn SI electrodynamics into the rationalized form with $\alpha = e^2/4\pi\hbar c$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-5|§C1a.7.5]] The SI–Heaviside–Lorentz Dictionary. *Source: the user's pre-course notes §1.2; dictionary derived in the vault*
+$\mathbf E_{\rm HL} = \sqrt{\varepsilon_0}\mathbf E_{\rm SI}$, $\mathbf B_{\rm HL} = \mathbf B_{\rm SI}/\sqrt{\mu_0}$, $q_{\rm HL} = q_{\rm SI}/\sqrt{\varepsilon_0}$ turn SI electrodynamics into the rationalized form with $\alpha = e^2/4\pi\hbar c$, see Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-5|§C1a.8.5]] The SI–Heaviside–Lorentz Dictionary. *Source: the user's pre-course notes §1.2; dictionary derived in the vault*
 
 ^nd-thm-c1a-7-5
 
@@ -512,7 +512,7 @@ $\mathbf E_{\rm HL} = \sqrt{\varepsilon_0}\mathbf E_{\rm SI}$, $\mathbf B_{\rm H
 
 > [!tip]- Hints: route in the notes
 > - Technique: K8
-> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-5|§C1a.7.5]] The SI–Heaviside–Lorentz Dictionary, steps 1–5.
+> - Derivation of Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-5|§C1a.8.5]] The SI–Heaviside–Lorentz Dictionary, steps 1–5.
 
 ### [A] Checking that boosts and rotations are Lorentz, and that products are ★★
 **[class exercise, Lecture 1]** The boost $B_z(\eta)$ satisfies $\Lambda^{\mathsf T}g\Lambda = g$ by $\cosh^2 - \sinh^2 = 1$ (done on the slide); the rotation "you can check in much the same way" (transcript: "it's actually easier"); a product of two Lorentz matrices is Lorentz. Homes: Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-1|§C1a.4.1]] Lorentz Transformation, Active Reading, Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-3|§C1a.4.3]] Rapidity, Definition [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|§CB.1.1]] Matrix Groups (the group property itself is Relativity's, REL Theorem §B1.2.3, outside the QFT catalogue). *Source: Lecture 1 (Aug 31), slide "Consistency Checks" and transcript · the user's notes Ch. 1 §1.3 (Derivation "Consistency checks on the definition")*
@@ -530,7 +530,7 @@ $\mathbf E_{\rm HL} = \sqrt{\varepsilon_0}\mathbf E_{\rm SI}$, $\mathbf B_{\rm H
 > - Take determinants of $\Lambda^{\mathsf T}g\Lambda = g$ for invertibility (step 2 of the derivation of Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-1|§C1a.4.1]] Invariant Volume Elements); for products, insert $g = \Lambda_1^{\mathsf T}g\Lambda_1$ in the middle (Lecture 1 slide).
 
 ### [A] All solutions of ΛᵀgΛ = g: six parameters, boosts times rotations ★
-**[class exercise, Lecture 1]** "You can think a bit harder and see that you get a six-parameter family of solutions to this equation" and "you can get as a homework exercise to figure out what matrices do that" (transcript); the user's notes: "Finding the matrices that satisfy it, and recognizing them as boosts and rotations, is a homework exercise." Not set in PS1. Homes: every $\Lambda \in SO^+(1,3)$ is $B(u)R$, see Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|§CB.3.13]] SO⁺(1,3) Is the Component of the Identity; the four components Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|§CB.3.12]] The Four Components Are the Cosets of SO⁺(1,3); six parameters from the infinitesimal form Theorem [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|§C1a.6.1]] Infinitesimal Lorentz Transformations Are Antisymmetric (drilled with T7). *Source: Lecture 1 (Aug 31), transcript · the user's notes Ch. 1 §1.3*
+**[class exercise, Lecture 1]** "You can think a bit harder and see that you get a six-parameter family of solutions to this equation" and "you can get as a homework exercise to figure out what matrices do that" (transcript); the user's notes: "Finding the matrices that satisfy it, and recognizing them as boosts and rotations, is a homework exercise." Not set in PS1. Homes: every $\Lambda \in SO^+(1,3)$ is $B(u)R$, see Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|§CB.3.13]] SO⁺(1,3) Is the Component of the Identity; the four components Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|§CB.3.12]] The Four Components Are the Cosets of SO⁺(1,3); six parameters from the infinitesimal form Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-1|§C1a.7.1]] Infinitesimal Lorentz Transformations Are Antisymmetric (drilled with T7). *Source: Lecture 1 (Aug 31), transcript · the user's notes Ch. 1 §1.3*
 
 ^nd-cx-1-2
 
@@ -894,7 +894,7 @@ For $\Lambda = 1 + \omega$ and small $a$: $\phi'(x) = \phi - a^\mu\partial_\mu\p
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|§C1b.1.2]] Infinitesimal Form of the Field Laws, steps 1–7; antisymmetry of $\omega$: Theorem [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|§C1a.6.1]] Infinitesimal Lorentz Transformations Are Antisymmetric.
+> - Derivation of Theorem [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|§C1b.1.2]] Infinitesimal Form of the Field Laws, steps 1–7; antisymmetry of $\omega$: Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-1|§C1a.7.1]] Infinitesimal Lorentz Transformations Are Antisymmetric.
 
 ### [B] The four-vector field's spin generators ★
 For $A^\alpha$, $D = \Lambda$ and $(S^{\mu\nu})^\alpha{}_\beta = g^{\mu\alpha}\delta^\nu{}_\beta - g^{\nu\alpha}\delta^\mu{}_\beta$ with $\frac12\omega_{\mu\nu}S^{\mu\nu} = \omega$, see Example [[§C1b.1 Fields and Their Transformation Laws#^ex-c1b-1-1|§C1b.1.1]] The Four-Vector Field. *Source: the user's notes Ch. 3 §3.5 · PS §3.1 p. 37*
@@ -1012,7 +1012,7 @@ For $\mathcal L = \frac12\partial_\mu\phi\,\partial^\mu\phi - \frac12m^2\phi^2$:
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-3|§C1b.2, Caution: Rename the dummy index before differentiating]] (the "act of hygiene"); Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to a Four-Vector, part 3; Theorem [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|§C1b.2.4]] Euler–Lagrange Equations for Fields.
+> - [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-3|§C1b.2, Caution: Rename the dummy index before differentiating]] (the "act of hygiene"); Theorem [[§C1a.6 Calculus with Indices#^thm-c1a-6-4|§C1a.6.4]] Derivatives with Respect to a Four-Vector, part 3; Theorem [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|§C1b.2.4]] Euler–Lagrange Equations for Fields.
 
 ### [PS] The dilaton's nonlinear field equation
 $\mathcal L = -f^2e^{-2\tau}(\partial\tau)^2$ gives $\partial^2\tau = (\partial\tau)^2$, see Example [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-1|§C1b.2.1]] A Nonlinear Field Equation: the Dilaton. *Source: PS2 Problem 1(b)*
@@ -4370,7 +4370,7 @@ $\oint(z - z_0)^n dz = 2\pi i\delta_{n,-1}$ on a counterclockwise circle (Theore
 
 ### [B] Generators of the vector representation
 
-The six $4\times4$ matrices $(\mathcal J^{\alpha\beta})^\mu{}_\nu = i(g^{\alpha\mu}\delta^\beta{}_\nu - g^{\beta\mu}\delta^\alpha{}_\nu) = iM^{\alpha\beta}$, antisymmetric in the label $\alpha\beta$, with $\Lambda = \exp(\frac12\omega_{\alpha\beta}M^{\alpha\beta}) = \exp(-\frac i2\omega_{\alpha\beta}\mathcal J^{\alpha\beta})$, see Definition [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|§C1a.6.1]] Generators of the Vector Representation. *Source: Lecture 7 (Sep 23), slide "Vector Representation" · Problem Set 4, Problem 5, eq. (14) · the user's notes Ch. 1 §1.6, Ch. 7 · PS eq. (3.18)*
+The six $4\times4$ matrices $(\mathcal J^{\alpha\beta})^\mu{}_\nu = i(g^{\alpha\mu}\delta^\beta{}_\nu - g^{\beta\mu}\delta^\alpha{}_\nu) = iM^{\alpha\beta}$, antisymmetric in the label $\alpha\beta$, with $\Lambda = \exp(\frac12\omega_{\alpha\beta}M^{\alpha\beta}) = \exp(-\frac i2\omega_{\alpha\beta}\mathcal J^{\alpha\beta})$, see Definition [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-1|§C1a.7.1]] Generators of the Vector Representation. *Source: Lecture 7 (Sep 23), slide "Vector Representation" · Problem Set 4, Problem 5, eq. (14) · the user's notes Ch. 1 §1.6, Ch. 7 · PS eq. (3.18)*
 
 ^nd-def-c1a-6-1
 
@@ -4382,12 +4382,12 @@ The six $4\times4$ matrices $(\mathcal J^{\alpha\beta})^\mu{}_\nu = i(g^{\alpha\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2 (index calculus and dummy renaming)
-> - The definition and both exponentials: Definition [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|§C1a.6.1]] Generators of the Vector Representation; the factor ½ and the antisymmetry of ω: [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^rem-c1a-6-1|§C1a.6, Remark: The factor ½ and why ω may be taken antisymmetric]].
+> - The definition and both exponentials: Definition [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-1|§C1a.7.1]] Generators of the Vector Representation; the factor ½ and the antisymmetry of ω: [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^rem-c1a-7-1|§C1a.7, Remark: The factor ½ and why ω may be taken antisymmetric]].
 > - Label versus matrix entry, and PS's both-lower form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^cau-c3-1-1|§C3.1, Caution: Four spacetime indices in two roles]].
 
 ### [B] Rotation and boost generators
 
-$J_i = \frac12\varepsilon_{ijk}\mathcal J^{jk}$, $K_i = \mathcal J^{0i}$, so that $-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu} = -i\boldsymbol\theta\cdot\mathbf J - i\boldsymbol\eta\cdot\mathbf K$ with $\theta_i = \frac12\varepsilon_{ijk}\omega_{jk}$, $\eta_i = \omega_{0i}$, see Definition [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|§C1a.6.2]] Rotation and Boost Generators. *Source: Lecture 7, slide "Lorentz Algebra: Defining Representation" · the user's notes Ch. 1 §1.6 · Problem Set 5, Problem 1 (statement, with the other sign of K)*
+$J_i = \frac12\varepsilon_{ijk}\mathcal J^{jk}$, $K_i = \mathcal J^{0i}$, so that $-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu} = -i\boldsymbol\theta\cdot\mathbf J - i\boldsymbol\eta\cdot\mathbf K$ with $\theta_i = \frac12\varepsilon_{ijk}\omega_{jk}$, $\eta_i = \omega_{0i}$, see Definition [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-2|§C1a.7.2]] Rotation and Boost Generators. *Source: Lecture 7, slide "Lorentz Algebra: Defining Representation" · the user's notes Ch. 1 §1.6 · Problem Set 5, Problem 1 (statement, with the other sign of K)*
 
 ^nd-def-c1a-6-2
 
@@ -4399,12 +4399,12 @@ $J_i = \frac12\varepsilon_{ijk}\mathcal J^{jk}$, $K_i = \mathcal J^{0i}$, so tha
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2 (index calculus)
-> - Regrouping: Definition [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|§C1a.6.2]] Rotation and Boost Generators; one index for a pair: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^rem-c3-1-2|§C3.1, Remark: Why rotations felt simpler]].
+> - Regrouping: Definition [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-2|§C1a.7.2]] Rotation and Boost Generators; one index for a pair: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^rem-c3-1-2|§C3.1, Remark: Why rotations felt simpler]].
 > - Signs of K across sources: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]], [[Larsen PHY 513|register: Lorentz transformations]]; the Noether boost charge: Theorem [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|§C3.5.6]] The Noether Charges Are the Generators (last line).
 
 ### [B] Which ω is a rotation by θ
 
-The matrices $\Lambda = e^{-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu}}$ are the same in PS, the lectures and Yu; actively $\omega_{12} = \theta$ rotates by $+\theta$ about $z$ and $\omega_{03} = \eta$ boosts to $+z$, while Yu reads $\Lambda$ passively, see [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-6-1|§C1a.6, Caution: Which ω is a rotation by θ]]. *Source: Lecture 7, slides "Example: Rotation around z-axis", "Example: Boost Along x-axis" · the user's notes Ch. 7 (Caution "The index order in the boost example") · Yu §3.1*
+The matrices $\Lambda = e^{-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu}}$ are the same in PS, the lectures and Yu; actively $\omega_{12} = \theta$ rotates by $+\theta$ about $z$ and $\omega_{03} = \eta$ boosts to $+z$, while Yu reads $\Lambda$ passively, see [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-7-1|§C1a.7, Caution: Which ω is a rotation by θ]]. *Source: Lecture 7, slides "Example: Rotation around z-axis", "Example: Boost Along x-axis" · the user's notes Ch. 7 (Caution "The index order in the boost example") · Yu §3.1*
 
 ^nd-cau-c1a-6-1
 
@@ -4415,7 +4415,7 @@ The matrices $\Lambda = e^{-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu}}$ are the
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - All in [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-6-1|§C1a.6, Caution: Which ω is a rotation by θ]]; active versus passive: [[§C1a.4 The Lorentz Group#^cau-c1a-4-1|§C1a.4, Caution: Active and passive readings]]; the sign in the exponent across sources: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^cau-c3-1-3|§C3.1, Caution: The sign in the exponent across sources]].
+> - All in [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-7-1|§C1a.7, Caution: Which ω is a rotation by θ]]; active versus passive: [[§C1a.4 The Lorentz Group#^cau-c1a-4-1|§C1a.4, Caution: Active and passive readings]]; the sign in the exponent across sources: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^cau-c3-1-3|§C3.1, Caution: The sign in the exponent across sources]].
 
 ### [B] Index slots
 
@@ -4683,7 +4683,7 @@ With $K_i = \mathcal J^{0i}$ (these notes, PS) $(\frac12, 0)$ is PS's $\psi_L$; 
 
 ### [B] Infinitesimal Lorentz transformations are antisymmetric ★
 
-For a path $\Lambda(s) = \mathbb 1 + s\omega + O(s^2)$ in $O(1,3)$, $\omega_{\mu\nu} = g_{\mu\rho}\omega^\rho{}_\nu = -\omega_{\nu\mu}$: six parameters, three rotations and three boosts; the mixed $\omega^\mu{}_\nu$ is not antisymmetric, see Theorem [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|§C1a.6.1]] Infinitesimal Lorentz Transformations Are Antisymmetric. *Source: Lecture 7, slide "Vector Representation" ("ω_μν are 6 'angles'") · the user's notes Ch. 1 §1.6*
+For a path $\Lambda(s) = \mathbb 1 + s\omega + O(s^2)$ in $O(1,3)$, $\omega_{\mu\nu} = g_{\mu\rho}\omega^\rho{}_\nu = -\omega_{\nu\mu}$: six parameters, three rotations and three boosts; the mixed $\omega^\mu{}_\nu$ is not antisymmetric, see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-1|§C1a.7.1]] Infinitesimal Lorentz Transformations Are Antisymmetric. *Source: Lecture 7, slide "Vector Representation" ("ω_μν are 6 'angles'") · the user's notes Ch. 1 §1.6*
 
 ^nd-thm-c1a-6-1
 
@@ -4695,12 +4695,12 @@ For a path $\Lambda(s) = \mathbb 1 + s\omega + O(s^2)$ in $O(1,3)$, $\omega_{\mu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2 (index calculus)
-> - Steps 1–3 of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^der-c1a-6-1|Derivation §C1a.6.1]]: first order of $g_{\rho\sigma}\Lambda^\rho{}_\mu\Lambda^\sigma{}_\nu = g_{\mu\nu}$.
+> - Steps 1–3 of [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^der-c1a-7-1|Derivation §C1a.7.1]]: first order of $g_{\rho\sigma}\Lambda^\rho{}_\mu\Lambda^\sigma{}_\nu = g_{\mu\nu}$.
 > - Step 4 counts, step 5 raises one index with $g$.
 
 ### [A] The generators reproduce ω ★★
 
-As matrices on $v^\nu$, $-\frac i2\omega_{\alpha\beta}(\mathcal J^{\alpha\beta})^\mu{}_\nu = \omega^\mu{}_\nu$, so $\Lambda = e^\omega$ and $\delta v^\mu = \omega^\mu{}_\nu v^\nu$, see Theorem [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-2|§C1a.6.2]] The Generators Reproduce ω. *Source: Lecture 7, slide "Vector Representation" ($\delta v^\alpha = -\frac i2\omega_{\mu\nu}(\mathcal J^{\mu\nu})^\alpha{}_\beta v^\beta$) · the user's notes Ch. 7 (Derivation "What the vector generators do")*
+As matrices on $v^\nu$, $-\frac i2\omega_{\alpha\beta}(\mathcal J^{\alpha\beta})^\mu{}_\nu = \omega^\mu{}_\nu$, so $\Lambda = e^\omega$ and $\delta v^\mu = \omega^\mu{}_\nu v^\nu$, see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-2|§C1a.7.2]] The Generators Reproduce ω. *Source: Lecture 7, slide "Vector Representation" ($\delta v^\alpha = -\frac i2\omega_{\mu\nu}(\mathcal J^{\mu\nu})^\alpha{}_\beta v^\beta$) · the user's notes Ch. 7 (Derivation "What the vector generators do")*
 
 ^nd-thm-c1a-6-2
 
@@ -4712,11 +4712,11 @@ As matrices on $v^\nu$, $-\frac i2\omega_{\alpha\beta}(\mathcal J^{\alpha\beta})
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Steps 1–3 of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^der-c1a-6-2|Derivation §C1a.6.2]]; step 4 converts the Hermitian form; step 5 exponentiates.
+> - Steps 1–3 of [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^der-c1a-7-2|Derivation §C1a.7.2]]; step 4 converts the Hermitian form; step 5 exponentiates.
 
 ### [A] Rotations and boosts as exponentials ★★
 
-$e^{\theta M^{12}}$ is the rotation by $\theta$ about $z$ ($\cos$, $\sin$ in the $(1,2)$ block, $(M^{12})^2 = -\mathbb 1$ there) and $e^{\eta M^{03}}$ the boost to rapidity $\eta$ along $z$ ($\cosh$, $\sinh$ in the $(0,3)$ block, $(M^{03})^2 = +\mathbb 1$ there), see Theorem [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|§C1a.6.3]] Rotations and Boosts as Exponentials. The finite $4\times4$ matrices along the axes are also Problem Set 6, Problem 4(a), (c). *Source: Lecture 7, slides "Example: Rotation around z-axis", "Example: Boost Along x-axis" · the user's notes Ch. 1 §1.6, Ch. 7*
+$e^{\theta M^{12}}$ is the rotation by $\theta$ about $z$ ($\cos$, $\sin$ in the $(1,2)$ block, $(M^{12})^2 = -\mathbb 1$ there) and $e^{\eta M^{03}}$ the boost to rapidity $\eta$ along $z$ ($\cosh$, $\sinh$ in the $(0,3)$ block, $(M^{03})^2 = +\mathbb 1$ there), see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-3|§C1a.7.3]] Rotations and Boosts as Exponentials. The finite $4\times4$ matrices along the axes are also Problem Set 6, Problem 4(a), (c). *Source: Lecture 7, slides "Example: Rotation around z-axis", "Example: Boost Along x-axis" · the user's notes Ch. 1 §1.6, Ch. 7*
 
 ^nd-thm-c1a-6-3
 
@@ -4729,12 +4729,12 @@ $e^{\theta M^{12}}$ is the rotation by $\theta$ about $z$ ($\cos$, $\sin$ in the
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (exponentiating a generator)
-> - Steps 1–3 (rotation) and 4–5 (boost) of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^der-c1a-6-3|Derivation §C1a.6.3]]; step 6 for the other axes.
-> - The slide's label: [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-6-1|§C1a.6, Caution: Which ω is a rotation by θ]].
+> - Steps 1–3 (rotation) and 4–5 (boost) of [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^der-c1a-7-3|Derivation §C1a.7.3]]; step 6 for the other axes.
+> - The slide's label: [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^cau-c1a-7-1|§C1a.7, Caution: Which ω is a rotation by θ]].
 
 ### [B] Every exponential is proper orthochronous ★
 
-For every real antisymmetric $\omega_{\mu\nu}$, $\Lambda = e^\omega$ lies in $SO^+(1,3)$, see Theorem [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|§C1a.6.4]] Every Exponential Is Proper Orthochronous. *Source: the user's notes Ch. 7 · Yu §4.1, eqs. (4.9)–(4.12)*
+For every real antisymmetric $\omega_{\mu\nu}$, $\Lambda = e^\omega$ lies in $SO^+(1,3)$, see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-4|§C1a.7.4]] Every Exponential Is Proper Orthochronous. *Source: the user's notes Ch. 7 · Yu §4.1, eqs. (4.9)–(4.12)*
 
 ^nd-thm-c1a-6-4
 
@@ -4745,11 +4745,11 @@ For every real antisymmetric $\omega_{\mu\nu}$, $\Lambda = e^\omega$ lies in $SO
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4
-> - Steps 1–3 of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^der-c1a-6-4|Derivation §C1a.6.4]] (Lorentz), step 4 (Jacobi's formula), step 5 (a path from the identity).
+> - Steps 1–3 of [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^der-c1a-7-4|Derivation §C1a.7.4]] (Lorentz), step 4 (Jacobi's formula), step 5 (a path from the identity).
 
 ### [A] The generators as 4×4 matrices; rotations Hermitian, boosts not ★
 
-$(J_k)^l{}_m = -i\varepsilon_{klm}$ with zero time row and column; $K_k = i(E_{0k} + E_{k0})$: each $J_k$ is $i$ times a real antisymmetric matrix (Hermitian), each $K_k$ is $i$ times a real symmetric matrix (anti-Hermitian), see Theorem [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|§C1a.6.5]] The Rotation and Boost Generators as 4×4 Matrices. **[class exercise, Lecture 7]** ("this one here … becomes symmetric. Thing to check it out"). *Source: Lecture 7 transcript (Sep 23), the boost example · PS eqs. (3.20)–(3.21) · Problem Set 6, Problem 4*
+$(J_k)^l{}_m = -i\varepsilon_{klm}$ with zero time row and column; $K_k = i(E_{0k} + E_{k0})$: each $J_k$ is $i$ times a real antisymmetric matrix (Hermitian), each $K_k$ is $i$ times a real symmetric matrix (anti-Hermitian), see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-5|§C1a.7.5]] The Rotation and Boost Generators as 4×4 Matrices. **[class exercise, Lecture 7]** ("this one here … becomes symmetric. Thing to check it out"). *Source: Lecture 7 transcript (Sep 23), the boost example · PS eqs. (3.20)–(3.21) · Problem Set 6, Problem 4*
 
 ^nd-thm-c1a-6-5
 
@@ -4761,18 +4761,18 @@ $(J_k)^l{}_m = -i\varepsilon_{klm}$ with zero time row and column; $K_k = i(E_{0
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Steps 2–3 of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^der-c1a-6-5|Derivation §C1a.6.5]] (entries), step 4 (Hermiticity), step 5 (eigenvectors).
-> - Not unitary: [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^rem-c1a-6-2|§C1a.6, Remark: Hermitian generators do not make boosts unitary]], Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
+> - Steps 2–3 of [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^der-c1a-7-5|Derivation §C1a.7.5]] (entries), step 4 (Hermiticity), step 5 (eigenvectors).
+> - Not unitary: [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^rem-c1a-7-2|§C1a.7, Remark: Hermitian generators do not make boosts unitary]], Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
 
 ### [PS] The rotation matrices in the vector representation
 
-$R_z(\theta)$ and Rodrigues' formula for $R_{\hat{\mathbf n}}(\theta)$, see Theorem [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|§C1a.6.6]] The Rotation Matrices in the Vector Representation. → drilled as [[PHY 513 PS Drill#^ps6-4-c|PS6.4(c)]] (and the 2π rotation as [[PHY 513 PS Drill#^ps6-4-d|PS6.4(d)]]).
+$R_z(\theta)$ and Rodrigues' formula for $R_{\hat{\mathbf n}}(\theta)$, see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|§C1a.7.6]] The Rotation Matrices in the Vector Representation. → drilled as [[PHY 513 PS Drill#^ps6-4-c|PS6.4(c)]] (and the 2π rotation as [[PHY 513 PS Drill#^ps6-4-d|PS6.4(d)]]).
 
 ^nd-thm-c1a-6-6
 
 ### [PS] The boost matrices in the vector representation
 
-$\Lambda_z(\eta)$ and the boost along $\hat{\mathbf n}$, see Theorem [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|§C1a.6.7]] The Boost Matrices in the Vector Representation. → drilled as [[PHY 513 PS Drill#^ps6-4-a|PS6.4(a)]].
+$\Lambda_z(\eta)$ and the boost along $\hat{\mathbf n}$, see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|§C1a.7.7]] The Boost Matrices in the Vector Representation. → drilled as [[PHY 513 PS Drill#^ps6-4-a|PS6.4(a)]].
 
 ^nd-thm-c1a-6-7
 
@@ -8324,7 +8324,7 @@ $x^{\mathsf T}gy$ (Lecture 1, matrices) and $x_\mu y^\mu = g_{\mu\nu}x^\mu y^\nu
 > - Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|§C1a.5.2]] The Metric Identifies Vectors with Covectors, steps 2 and 4; Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-1|§C1a.4.1]] Lorentz Transformation, Active Reading.
 
 ### [B] The dual Maxwell equation and the cyclic Bianchi identity
-$\partial_\mu\tilde F^{\mu\nu} = 0 \Longleftrightarrow \partial^\rho F^{\mu\nu} + \partial^\mu F^{\nu\rho} + \partial^\nu F^{\rho\mu} = 0$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Maxwell's Equations in Heaviside–Lorentz Form. *Source: the user's notes Ch. 1 §1.7*
+$\partial_\mu\tilde F^{\mu\nu} = 0 \Longleftrightarrow \partial^\rho F^{\mu\nu} + \partial^\mu F^{\nu\rho} + \partial^\nu F^{\rho\mu} = 0$, see Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-2|§C1a.8.2]] Maxwell's Equations in Heaviside–Lorentz Form. *Source: the user's notes Ch. 1 §1.7*
 
 ^nd-eq-t1-2
 
@@ -8335,10 +8335,10 @@ $\partial_\mu\tilde F^{\mu\nu} = 0 \Longleftrightarrow \partial^\rho F^{\mu\nu} 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Maxwell's Equations in Heaviside–Lorentz Form, steps 4–5.
+> - Derivation of Theorem [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-2|§C1a.8.2]] Maxwell's Equations in Heaviside–Lorentz Form, steps 4–5.
 
 ### [B] Active and passive forms of the E_x boost
-$E'_x = \gamma(E_x + vB_y)$ (active boost by $+v\hat{\mathbf z}$, the vault) and $E'_x = \gamma(E_x - vB_y)$ (the Lecture 1 slide) are the same law read in the two conventions, see Example [[§C1a.7 Relativistic Electrodynamics in Index Form#^ex-c1a-7-1|§C1a.7.1]] The Lecture's Boost Example, Done with the Active Boost and [[§C1a.7 Relativistic Electrodynamics in Index Form#^cau-c1a-7-2|§C1a.7, Caution: The sign of the v × B term]]. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics"*
+$E'_x = \gamma(E_x + vB_y)$ (active boost by $+v\hat{\mathbf z}$, the vault) and $E'_x = \gamma(E_x - vB_y)$ (the Lecture 1 slide) are the same law read in the two conventions, see Example [[§C1a.8 Relativistic Electrodynamics in Index Form#^ex-c1a-8-1|§C1a.8.1]] The Lecture's Boost Example, Done with the Active Boost and [[§C1a.8 Relativistic Electrodynamics in Index Form#^cau-c1a-8-2|§C1a.8, Caution: The sign of the v × B term]]. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics"*
 
 ^nd-eq-t1-3
 
@@ -8348,7 +8348,7 @@ $E'_x = \gamma(E_x + vB_y)$ (active boost by $+v\hat{\mathbf z}$, the vault) and
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - [[§C1a.4 The Lorentz Group#^cau-c1a-4-1|§C1a.4, Caution: Active and passive readings]], [[§C1a.7 Relativistic Electrodynamics in Index Form#^cau-c1a-7-2|§C1a.7, Caution: The sign of the v × B term]].
+> - [[§C1a.4 The Lorentz Group#^cau-c1a-4-1|§C1a.4, Caution: Active and passive readings]], [[§C1a.8 Relativistic Electrodynamics in Index Form#^cau-c1a-8-2|§C1a.8, Caution: The sign of the v × B term]].
 
 ### [B] The two radial forms of the amplitude
 $\frac{1}{2\pi^2r}\int_0^\infty dp\,p\sin(pr)e^{-iE_pz} = \frac{1}{4\pi^2ir}\int_{-\infty}^\infty dp\,p\,e^{i(pr - E_pz)}$ for $\operatorname{Im}z < 0$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Relativistic Amplitude as a Radial Integral. *Source: Lecture 2 (Sep 2), slide "Relativistic Quantum Causality"; PS (2.3)*
@@ -8775,7 +8775,7 @@ The covariant relation, the $\mathbf J$, $\mathbf K$ relations and two commuting
 
 ### [B] Real and Hermitian conventions for generators
 
-$\Lambda = e^{\frac12\omega_{\alpha\beta}M^{\alpha\beta}} = e^{-\frac i2\omega_{\alpha\beta}\mathcal J^{\alpha\beta}} = e^\omega$ with $\mathcal J = iM$; for fields, the real-convention spin generators of §C1b.1 are $S^{\mu\nu} = -iD(\mathcal J^{\mu\nu})$, so the lecture's Dirac $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ is $D(\mathcal J^{\mu\nu})$, see Theorem [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-2|§C1a.6.2]] The Generators Reproduce ω and [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]].
+$\Lambda = e^{\frac12\omega_{\alpha\beta}M^{\alpha\beta}} = e^{-\frac i2\omega_{\alpha\beta}\mathcal J^{\alpha\beta}} = e^\omega$ with $\mathcal J = iM$; for fields, the real-convention spin generators of §C1b.1 are $S^{\mu\nu} = -iD(\mathcal J^{\mu\nu})$, so the lecture's Dirac $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ is $D(\mathcal J^{\mu\nu})$, see Theorem [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-2|§C1a.7.2]] The Generators Reproduce ω and [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]].
 
 ^nd-eq-t7-2
 
@@ -8786,7 +8786,7 @@ $\Lambda = e^{\frac12\omega_{\alpha\beta}M^{\alpha\beta}} = e^{-\frac i2\omega_{
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Step 4 of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^der-c1a-6-2|Derivation §C1a.6.2]]; [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]; the sign in the exponent across sources: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^cau-c3-1-3|§C3.1, Caution: The sign in the exponent across sources]].
+> - Step 4 of [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^der-c1a-7-2|Derivation §C1a.7.2]]; [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]; the sign in the exponent across sources: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^cau-c3-1-3|§C3.1, Caution: The sign in the exponent across sources]].
 
 ### [C] The four-vector as (½, ½), as a bispinor and as (½, 0) ⊗ (0, ½)
 

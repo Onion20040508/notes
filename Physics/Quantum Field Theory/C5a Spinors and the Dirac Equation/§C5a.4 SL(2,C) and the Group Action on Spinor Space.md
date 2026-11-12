@@ -20,7 +20,7 @@ Which *group* acts on spinor space, and how do the $\gamma$ matrices behave unde
 ## The Weyl matrices and SL(2, C)
 
 > [!definition] Definition §C5a.4.1: The Weyl Matrices
-> For Lorentz parameters $\omega_{\mu\nu}$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]), with angles $\theta_i = \frac12\varepsilon_{ijk}\omega_{jk}$ and rapidities $\eta_i = \omega_{0i}$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]]), the **left- and right-handed Weyl matrices** $\Lambda_L$, $\Lambda_R$ are the matrices of the representations $(\frac12, 0)$ and $(0, \frac12)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|Theorem §C3.2.8]]; the representation $(j_+, j_-)$: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-2|Def. §C3.2.2]]), with $\mathbf J = \frac12\boldsymbol\sigma$ and $\mathbf K = -\frac i2\boldsymbol\sigma$ for $\Lambda_L$, $\mathbf K = +\frac i2\boldsymbol\sigma$ for $\Lambda_R$ (with $K_i = \mathcal J^{0i}$; the opposite sign of $\mathbf K$ exchanges the two, [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|Caution: Which one is (½, 0) depends on the sign of K]]):
+> For Lorentz parameters $\omega_{\mu\nu}$ ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-1|Def. §C1a.7.1]]), with angles $\theta_i = \frac12\varepsilon_{ijk}\omega_{jk}$ and rapidities $\eta_i = \omega_{0i}$ ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-2|Def. §C1a.7.2]]), the **left- and right-handed Weyl matrices** $\Lambda_L$, $\Lambda_R$ are the matrices of the representations $(\frac12, 0)$ and $(0, \frac12)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|Theorem §C3.2.8]]; the representation $(j_+, j_-)$: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-2|Def. §C3.2.2]]), with $\mathbf J = \frac12\boldsymbol\sigma$ and $\mathbf K = -\frac i2\boldsymbol\sigma$ for $\Lambda_L$, $\mathbf K = +\frac i2\boldsymbol\sigma$ for $\Lambda_R$ (with $K_i = \mathcal J^{0i}$; the opposite sign of $\mathbf K$ exchanges the two, [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|Caution: Which one is (½, 0) depends on the sign of K]]):
 >
 > $$
 > \Lambda_L(\omega) = \exp\Bigl(-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma\Bigr) = e^{-i(\boldsymbol\theta - i\boldsymbol\eta)\cdot\boldsymbol\sigma/2}, \qquad \Lambda_R(\omega) = \exp\Bigl(-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma\Bigr) = e^{-i(\boldsymbol\theta + i\boldsymbol\eta)\cdot\boldsymbol\sigma/2} .
@@ -53,7 +53,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 > [!derivation]- Derivation
 > Write $\Lambda_L = e^{A_L}$, $\Lambda_R = e^{A_R}$ with $A_L = -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ and $A_R = -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ ($\boldsymbol\theta$, $\boldsymbol\eta$ real).
 >
-> **1. Determinant.** $\det e^A = e^{\operatorname{tr}A}$ (Jacobi's formula, as in [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^der-c1a-6-4|Derivation §C1a.6.4]], step 4). The Pauli matrices are traceless, so $\operatorname{tr}A_L = \operatorname{tr}A_R = 0$ and both determinants are $e^0 = 1$.
+> **1. Determinant.** $\det e^A = e^{\operatorname{tr}A}$ (Jacobi's formula, as in [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^der-c1a-7-4|Derivation §C1a.7.4]], step 4). The Pauli matrices are traceless, so $\operatorname{tr}A_L = \operatorname{tr}A_R = 0$ and both determinants are $e^0 = 1$.
 >
 > **2. Adjoint and inverse.** Term by term in the exponential series, $(e^A)^\dagger = e^{A^\dagger}$; and $(e^A)^{-1} = e^{-A}$. The $\sigma^i$ are Hermitian and $\boldsymbol\theta$, $\boldsymbol\eta$ real, so $A_L^\dagger = +\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma$: the adjoint flips the sign of the rotation term only. Then $(\Lambda_L^\dagger)^{-1} = e^{-A_L^\dagger} = e^{-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma} = e^{A_R} = \Lambda_R$.
 >
@@ -68,12 +68,12 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 
 ^der-c5a-4-1
 
-*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^der-c1a-6-4|Derivation §C1a.6.4]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-2|QM Theorem §C5.2.2]]
+*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^der-c1a-7-4|Derivation §C1a.7.4]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-2|QM Theorem §C5.2.2]]
 
 ## The covering map
 
 > [!theorem] Theorem §C5a.4.2: The Weyl Matrices Cover the Vector Representation
-> For the Weyl matrices $\Lambda_L(\omega)$, $\Lambda_R(\omega)$ of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]] and every $\omega$, with $\Lambda = e^{\omega}$ the vector-representation matrix of the same parameters ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]):
+> For the Weyl matrices $\Lambda_L(\omega)$, $\Lambda_R(\omega)$ of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]] and every $\omega$, with $\Lambda = e^{\omega}$ the vector-representation matrix of the same parameters ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-1|Def. §C1a.7.1]]):
 > 1. $\Lambda_L(\omega)\,(x_\mu\sigma^\mu)\,\Lambda_L(\omega)^\dagger = (\Lambda x)_\mu\sigma^\mu$, i.e. $\pi(\Lambda_L(\omega)) = e^{\omega}$ ($\pi$ of [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-4|Theorem §CB.16.4]]); and $\Lambda_R(\omega)\,(x_\mu\bar\sigma^\mu)\,\Lambda_R(\omega)^\dagger = (\Lambda x)_\mu\bar\sigma^\mu$.
 > 2. Equivalently, $\bar\sigma^\mu$ and $\sigma^\mu$ are invariant under the Weyl matrices:
 >
@@ -88,7 +88,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 > [!derivation]- Derivation
 > Write $\Phi(x) = x_\mu\sigma^\mu$, $\bar\Phi(x) = x_\mu\bar\sigma^\mu$, and $\Lambda_L(s\omega) = e^{sA_L}$, $A_L = -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ (the exponent is linear in $\omega$).
 >
-> **1. The vector side, infinitesimally.** By [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-2|Theorem §C1a.6.2]], $\Lambda = e^{\omega}$ with $(\omega x)^\mu = \omega^\mu{}_\nu x^\nu$. Its components, with $\omega^0{}_i = \omega_{0i} = \eta_i$, $\omega^i{}_0 = g^{ii}\omega_{i0} = \eta_i$ and $\omega^i{}_j = -\omega_{ij} = -\varepsilon_{ijk}\theta_k$:
+> **1. The vector side, infinitesimally.** By [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-2|Theorem §C1a.7.2]], $\Lambda = e^{\omega}$ with $(\omega x)^\mu = \omega^\mu{}_\nu x^\nu$. Its components, with $\omega^0{}_i = \omega_{0i} = \eta_i$, $\omega^i{}_0 = g^{ii}\omega_{i0} = \eta_i$ and $\omega^i{}_j = -\omega_{ij} = -\varepsilon_{ijk}\theta_k$:
 >
 > $$
 > (\omega x)^0 = \boldsymbol\eta\cdot\mathbf x, \qquad (\omega x)^i = \eta_ix^0 - \varepsilon_{ijk}\theta_kx^j = \eta_ix^0 + (\boldsymbol\theta\times\mathbf x)_i ,
@@ -126,7 +126,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 
 ^der-c5a-4-2
 
-*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-3|Theorem §CB.16.3]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-4|Theorem §CB.16.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-2|Theorem §C1a.6.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^der-cb-6-3|Derivation §CB.6.3]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]]
+*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-3|Theorem §CB.16.3]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-4|Theorem §CB.16.4]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-2|Theorem §C1a.7.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^der-cb-6-3|Derivation §CB.6.3]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]]
 
 ## The group action on spinor space
 
@@ -147,7 +147,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 ^thm-c5a-4-3
 
 > [!derivation]- Derivation
-> **1. The exponent.** $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -i\boldsymbol\theta\cdot\mathbf J - i\boldsymbol\eta\cdot\mathbf K$ (the regrouping of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], linear in the generators). Inserting Theorem §C5a.3.2: $-i\boldsymbol\theta\cdot\frac12\operatorname{diag}(\boldsymbol\sigma, \boldsymbol\sigma) - i\boldsymbol\eta\cdot(-\frac i2)\operatorname{diag}(\boldsymbol\sigma, -\boldsymbol\sigma) = \operatorname{diag}\bigl(-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma,\ -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma\bigr)$, since $-i\cdot(-\frac i2) = -\frac12$.
+> **1. The exponent.** $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -i\boldsymbol\theta\cdot\mathbf J - i\boldsymbol\eta\cdot\mathbf K$ (the regrouping of [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-2|Def. §C1a.7.2]], linear in the generators). Inserting Theorem §C5a.3.2: $-i\boldsymbol\theta\cdot\frac12\operatorname{diag}(\boldsymbol\sigma, \boldsymbol\sigma) - i\boldsymbol\eta\cdot(-\frac i2)\operatorname{diag}(\boldsymbol\sigma, -\boldsymbol\sigma) = \operatorname{diag}\bigl(-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma,\ -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma\bigr)$, since $-i\cdot(-\frac i2) = -\frac12$.
 >
 > **2. Exponentiate.** Powers of a block-diagonal matrix are block diagonal with the powers of the blocks, so $\exp\operatorname{diag}(A, B) = \operatorname{diag}(e^A, e^B)$. The blocks are $\Lambda_L(\omega)$ and $\Lambda_R(\omega)$ ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]]).
 >
@@ -155,7 +155,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > **4. Rotation about z.** $\omega_{12} = -\omega_{21} = \theta$ gives $\boldsymbol\theta = \theta\hat{\mathbf z}$, $\boldsymbol\eta = 0$ (the two terms $\frac12(\omega_{12}S^{12} + \omega_{21}S^{21}) = \theta S^{12}$), so both blocks are $e^{-i\theta\sigma^3/2} = \operatorname{diag}(e^{-i\theta/2}, e^{i\theta/2})$. At $\theta = 2\pi$ each is $-\mathbb 1$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-4|QM Theorem §C5.2.4]]), while the vector-representation matrix of the same $\omega$ is $\exp(-2\pi i\,\mathcal J^{12}) = \mathbb 1$ (the eigenvalues of $\mathcal J^{12}$ are $0, 0, \pm1$). ⚑ By-product: the same physical rotation multiplies the four spinor components by $e^{-i\theta/2}, e^{i\theta/2}, e^{-i\theta/2}, e^{i\theta/2}$: no component is left alone, unlike $V^0$, $V^3$ of a vector.
 >
-> **5. Boost along x.** $\omega_{01} = -\omega_{10} = \eta$ gives $\boldsymbol\eta = \eta\hat{\mathbf x}$, $\boldsymbol\theta = 0$, so the blocks are $e^{\mp\eta\sigma^1/2}$. Since $(\sigma^1)^2 = \mathbb 1$, the even terms of the series sum to $\cosh\frac\eta2\,\mathbb 1$ and the odd ones to $\mp\sinh\frac\eta2\,\sigma^1$. No $i$ appears: the blocks are Hermitian, not unitary, and stretched in opposite senses. The same $\omega$ gives in the vector representation $\Lambda^0{}_0 = \Lambda^1{}_1 = \cosh\eta$, $\Lambda^0{}_1 = \Lambda^1{}_0 = \sinh\eta$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]).
+> **5. Boost along x.** $\omega_{01} = -\omega_{10} = \eta$ gives $\boldsymbol\eta = \eta\hat{\mathbf x}$, $\boldsymbol\theta = 0$, so the blocks are $e^{\mp\eta\sigma^1/2}$. Since $(\sigma^1)^2 = \mathbb 1$, the even terms of the series sum to $\cosh\frac\eta2\,\mathbb 1$ and the odd ones to $\mp\sinh\frac\eta2\,\sigma^1$. No $i$ appears: the blocks are Hermitian, not unitary, and stretched in opposite senses. The same $\omega$ gives in the vector representation $\Lambda^0{}_0 = \Lambda^1{}_1 = \cosh\eta$, $\Lambda^0{}_1 = \Lambda^1{}_0 = \sinh\eta$ ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-3|Theorem §C1a.7.3]]).
 >
 > **What the derivation shows**
 > - The Dirac representation is reducible: the halves never mix under rotations or boosts. If the lower half vanishes in one frame, it vanishes in all, which could never happen for a four-vector.
@@ -164,7 +164,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 
 ^der-c5a-4-3
 
-*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-4|QM Theorem §C5.2.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]
+*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-2|Def. §C1a.7.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-4|QM Theorem §C5.2.4]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-3|Theorem §C1a.7.3]]
 
 > [!remark] Remark: One transformation, two matrices
 > One Lorentz transformation is six numbers $\omega_{\mu\nu}$; the vector and the Dirac representation exponentiate them with different generators:
@@ -180,7 +180,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 > | rotation by $2\pi$ | $+\mathbb 1$ | $-\mathbb 1$ |
 > | fixed by $\Lambda$? | yes | up to sign: a representation of $SL(2, \mathbb C)$ |
 >
-> Both matrices are $4\times4$ for unrelated reasons: $\Lambda$ because spacetime has four dimensions, $\Lambda_{1/2}$ because the Clifford algebra needs four components ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]]). Relations such as $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ hold only for a matched pair built from the same $\omega$ (checked numerically in the user's notes, matched and mismatched). This is why the lecture calls $\psi$ a four-component *column*, not a four-vector: the two representations are inequivalent ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], with [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|Theorem §C3.2.9]]). Both matrices written out entry by entry, for rotations about and boosts along any axis: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]] (vector side: [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]); one rotation and one boost side by side, with the generators and the check of $\gamma^\mu$ entry by entry: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]].
+> Both matrices are $4\times4$ for unrelated reasons: $\Lambda$ because spacetime has four dimensions, $\Lambda_{1/2}$ because the Clifford algebra needs four components ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]]). Relations such as $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ hold only for a matched pair built from the same $\omega$ (checked numerically in the user's notes, matched and mismatched). This is why the lecture calls $\psi$ a four-component *column*, not a four-vector: the two representations are inequivalent ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], with [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|Theorem §C3.2.9]]). Both matrices written out entry by entry, for rotations about and boosts along any axis: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]] (vector side: [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|Theorem §C1a.7.6]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]]); one rotation and one boost side by side, with the generators and the check of $\gamma^\mu$ entry by entry: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]].
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation": "One transformation, two representations"; Derivation "From six numbers to two matrices"; Principle "Transforming as a vector and as a spinor, side by side"; paragraph "Same dimension, different representation")*
 
@@ -204,14 +204,14 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 
 ## The matrices entry by entry
 
-Theorem §C5a.4.3 gives $\Lambda_{1/2}$ as a pair of $2\times2$ exponentials. Here the rotations and boosts about and along an arbitrary axis are written as full $4\times4$ matrices in the chiral basis, next to the vector matrices of the same parameters ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]), and the covariance of $\gamma^\mu$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], 3) is checked entry by entry. Throughout, $\hat{\mathbf n} = (n^1, n^2, n^3)$ is a unit vector and
+Theorem §C5a.4.3 gives $\Lambda_{1/2}$ as a pair of $2\times2$ exponentials. Here the rotations and boosts about and along an arbitrary axis are written as full $4\times4$ matrices in the chiral basis, next to the vector matrices of the same parameters ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|Theorem §C1a.7.6]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]]), and the covariance of $\gamma^\mu$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], 3) is checked entry by entry. Throughout, $\hat{\mathbf n} = (n^1, n^2, n^3)$ is a unit vector and
 
 $$
 \hat{\mathbf n}\cdot\boldsymbol\sigma = \begin{pmatrix} n^3 & n^1 - in^2 \\ n^1 + in^2 & -n^3 \end{pmatrix} .
 $$
 
 > [!theorem] Theorem §C5a.4.4: The Rotation Matrices in the Dirac Representation, Entry by Entry
-> In the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]), with the rotation generators $J_k = \frac12\Sigma^k$ ([[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]) and the parameters of the vector rotations in [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]]:
+> In the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]), with the rotation generators $J_k = \frac12\Sigma^k$ ([[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]) and the parameters of the vector rotations in [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|Theorem §C1a.7.6]]:
 > 1. **Rotation about $z$** by $\theta$: $\Lambda_{1/2} = e^{-i\theta J_3} = \operatorname{diag}\bigl(e^{-i\theta/2}, e^{i\theta/2}, e^{-i\theta/2}, e^{i\theta/2}\bigr)$.
 > 2. **Rotation about** $\hat{\mathbf n}$ by $\theta$, with $c = \cos\frac\theta2$, $s = \sin\frac\theta2$:
 >
@@ -250,7 +250,7 @@ $$
 >
 > **6. Unitary, unit determinant.** $U^\dagger = c\,\mathbb 1 + is\,\hat{\mathbf n}\cdot\boldsymbol\sigma$ ($\hat{\mathbf n}\cdot\boldsymbol\sigma$ is Hermitian), and all four terms of $U^\dagger U = c^2\,\mathbb 1 - ics\,\hat{\mathbf n}\cdot\boldsymbol\sigma + ics\,\hat{\mathbf n}\cdot\boldsymbol\sigma + s^2(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = (c^2 + s^2)\mathbb 1 = \mathbb 1$. $\det U = (c - isn^3)(c + isn^3) - (-is)^2(n^1 - in^2)(n^1 + in^2) = c^2 + s^2(n^3)^2 + s^2\bigl((n^1)^2 + (n^2)^2\bigr) = c^2 + s^2 = 1$. So $U \in SU(2)$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]]), as [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]], 4, says for every rotation.
 >
-> **7. 2π and 4π.** At $\theta = 2\pi$: $c = \cos\pi = -1$, $s = \sin\pi = 0$, so $U = -\mathbb 1$ and $\Lambda_{1/2} = -\mathbb 1_4$, while the vector matrix of the same parameters is $\mathbb 1$ (Theorem §C1a.6.6). At $\theta = 4\pi$: $c = \cos2\pi = 1$, $s = 0$, and $\Lambda_{1/2} = \mathbb 1_4$.
+> **7. 2π and 4π.** At $\theta = 2\pi$: $c = \cos\pi = -1$, $s = \sin\pi = 0$, so $U = -\mathbb 1$ and $\Lambda_{1/2} = -\mathbb 1_4$, while the vector matrix of the same parameters is $\mathbb 1$ (Theorem §C1a.7.6). At $\theta = 4\pi$: $c = \cos2\pi = 1$, $s = 0$, and $\Lambda_{1/2} = \mathbb 1_4$.
 >
 > **What the derivation shows**
 > - Every entry is a function of $\theta/2$: the rotation generators have eigenvalues $\pm\frac12$ where the vector ones have $\pm1, 0$ ([[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]]). Hence the period $4\pi$, and $-\mathbb 1_4$ at $2\pi$: the Dirac representation is a spinor representation ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]).
@@ -259,10 +259,10 @@ $$
 
 ^der-c5a-4-4
 
-*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]]
+*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|Theorem §C1a.7.6]]
 
 > [!example] Example §C5a.4.1: One Rotation, Two Matrices
-> Take the rotation by $\theta$ about $z$, $\omega_{12} = -\omega_{21} = \theta$, and compare its two matrices: the vector one ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]]) and the Dirac one ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]]), and their generators $J_3$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]).
+> Take the rotation by $\theta$ about $z$, $\omega_{12} = -\omega_{21} = \theta$, and compare its two matrices: the vector one ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|Theorem §C1a.7.6]]) and the Dirac one ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]]), and their generators $J_3$ ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-5|Theorem §C1a.7.5]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]).
 >
 > *Generators* (vector left, spinor right):
 >
@@ -289,7 +289,7 @@ $$
 > \gamma^0 = \begin{pmatrix} 0&0&1&0\\ 0&0&0&1\\ 1&0&0&0\\ 0&1&0&0 \end{pmatrix}, \quad \gamma^1 = \begin{pmatrix} 0&0&0&1\\ 0&0&1&0\\ 0&-1&0&0\\ -1&0&0&0 \end{pmatrix}, \quad \gamma^2 = \begin{pmatrix} 0&0&0&-i\\ 0&0&i&0\\ 0&i&0&0\\ -i&0&0&0 \end{pmatrix}, \quad \gamma^3 = \begin{pmatrix} 0&0&1&0\\ 0&0&0&-1\\ -1&0&0&0\\ 0&1&0&0 \end{pmatrix} .
 > $$
 >
-> **1. [J₁, J₂] = iJ₃ for the vector.** In spacetime matrix units (rows and columns $0, \dots, 3$), $J_1 = -iE_{23} + iE_{32}$, $J_2 = iE_{13} - iE_{31}$, $J_3 = -iE_{12} + iE_{21}$ (Theorem §C1a.6.5). All four products:
+> **1. [J₁, J₂] = iJ₃ for the vector.** In spacetime matrix units (rows and columns $0, \dots, 3$), $J_1 = -iE_{23} + iE_{32}$, $J_2 = iE_{13} - iE_{31}$, $J_3 = -iE_{12} + iE_{21}$ (Theorem §C1a.7.5). All four products:
 >
 > $$
 > J_1J_2 = (-i)(i)E_{23}E_{13} + (-i)(-i)E_{23}E_{31} + (i)(i)E_{32}E_{13} + (i)(-i)E_{32}E_{31} = 0 - E_{21} + 0 + 0, \qquad J_2J_1 = (i)(-i)E_{13}E_{23} + (i)(i)E_{13}E_{32} + (-i)(-i)E_{31}E_{23} + (-i)(i)E_{31}E_{32} = 0 - E_{12} + 0 + 0 .
@@ -319,10 +319,10 @@ $$
 
 ^der-ex-c5a-4-1
 
-*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]
+*Uses:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-5|Theorem §C1a.7.5]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|Theorem §C1a.7.6]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]
 
 > [!theorem] Theorem §C5a.4.5: The Boost Matrices in the Dirac Representation, Entry by Entry
-> In the chiral basis, with the boost generators $K_k = -\frac i2\operatorname{diag}(\sigma^k, -\sigma^k)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]) and the parameters of the vector boosts in [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]:
+> In the chiral basis, with the boost generators $K_k = -\frac i2\operatorname{diag}(\sigma^k, -\sigma^k)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]]) and the parameters of the vector boosts in [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]]:
 > 1. **Boost along $z$** to rapidity $\eta$: $\Lambda_{1/2} = e^{-i\eta K_3} = \operatorname{diag}\bigl(e^{-\eta/2}, e^{\eta/2}, e^{\eta/2}, e^{-\eta/2}\bigr)$.
 > 2. **Boost along** $\hat{\mathbf n}$, with $C = \cosh\frac\eta2$, $S = \sinh\frac\eta2$:
 >
@@ -354,10 +354,10 @@ $$
 
 ^der-c5a-4-5
 
-*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^der-c5a-4-4|Derivation §C5a.4.4]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]
+*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^der-c5a-4-4|Derivation §C5a.4.4]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|Theorem §C5a.4.1]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]]
 
 > [!example] Example §C5a.4.2: One Boost, Two Matrices
-> Take the boost to rapidity $\eta$ along $z$, $\omega_{03} = -\omega_{30} = \eta$, and concretely $v = \frac35$: $\gamma = \cosh\eta = \frac54$, $\gamma v = \sinh\eta = \frac34$, so $e^\eta = \cosh\eta + \sinh\eta = 2$, $\eta = \ln2$, $e^{\eta/2} = \sqrt2$. Compare its two matrices ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]]) and their generators $K_3$.
+> Take the boost to rapidity $\eta$ along $z$, $\omega_{03} = -\omega_{30} = \eta$, and concretely $v = \frac35$: $\gamma = \cosh\eta = \frac54$, $\gamma v = \sinh\eta = \frac34$, so $e^\eta = \cosh\eta + \sinh\eta = 2$, $\eta = \ln2$, $e^{\eta/2} = \sqrt2$. Compare its two matrices ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]]) and their generators $K_3$.
 >
 > *Generators* (vector left, spinor right):
 >
@@ -382,7 +382,7 @@ $$
 > [!derivation]- Derivation (the commutator and the covariance of γ, entry by entry)
 > Notation and the $\gamma$ matrices as in the derivation under [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]]; $c = \cosh\eta$, $s = \sinh\eta$, so $c \pm s = e^{\pm\eta}$.
 >
-> **1. [K₁, K₂] = −iJ₃ for the vector.** $K_1 = i(E_{01} + E_{10})$, $K_2 = i(E_{02} + E_{20})$ (Theorem §C1a.6.5). All four products:
+> **1. [K₁, K₂] = −iJ₃ for the vector.** $K_1 = i(E_{01} + E_{10})$, $K_2 = i(E_{02} + E_{20})$ (Theorem §C1a.7.5). All four products:
 >
 > $$
 > K_1K_2 = i^2\bigl(E_{01}E_{02} + E_{01}E_{20} + E_{10}E_{02} + E_{10}E_{20}\bigr) = -(0 + 0 + E_{12} + 0), \qquad K_2K_1 = i^2\bigl(E_{02}E_{01} + E_{02}E_{10} + E_{20}E_{01} + E_{20}E_{10}\bigr) = -(0 + 0 + E_{21} + 0) .
@@ -410,14 +410,14 @@ $$
 
 ^der-ex-c5a-4-2
 
-*Uses:* [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|Theorem §C1a.6.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]] (and the derivation under it)
+*Uses:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-5|Theorem §C1a.7.5]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|Example §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]] (and the derivation under it)
 
 > [!theorem] Theorem §C5a.4.6: A Boost Leaves No Spinor Component Invariant
 > Let $\eta \neq 0$ and $\Lambda_{1/2}$ be the spinor matrix of the boost of rapidity $\eta$ along a unit vector $\hat{\mathbf n}$ ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]]). Its eigenvalues are $e^{\eta/2}, e^{\eta/2}, e^{-\eta/2}, e^{-\eta/2}$, none equal to $1$. Hence, in every basis of spinor space ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]]):
 > 1. no component of a Dirac spinor is invariant, i.e. there is no $k$ with $(\Lambda_{1/2}\psi)_k = \psi_k$ for all $\psi$;
 > 2. no spinor $\psi \neq 0$ is left unchanged.
 >
-> The vector boost of the same parameters ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]) has eigenvalues $e^{\eta}, e^{-\eta}, 1, 1$ and leaves the two components transverse to $\hat{\mathbf n}$ invariant: a Dirac spinor has no transverse part.
+> The vector boost of the same parameters ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]]) has eigenvalues $e^{\eta}, e^{-\eta}, 1, 1$ and leaves the two components transverse to $\hat{\mathbf n}$ invariant: a Dirac spinor has no transverse part.
 >
 > *Model:* none (a representation fact); *applies:* as in the opening, any Dirac spinor or spinor field, independent of the dynamics.
 >
@@ -457,7 +457,7 @@ $$
 
 ^der-c5a-4-6
 
-*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-3|Theorem §CB.16.3]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-4|Theorem §CB.16.4]]
+*Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-3|Theorem §CB.16.3]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-4|Theorem §CB.16.4]]
 
 ## Three transformations that act on spinor indices
 
@@ -535,5 +535,5 @@ $$
 > - Unitarity is lost with compactness: $SU(2) = S^3$ admits an invariant average and unitary representations, the $\mathbb R^3$ of boosts does not — [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-16|Theorem §CB.7.16]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]].
 > - $\gamma^\mu$ is an invariant tensor exactly as the Pauli matrices are an invariant vector of $SU(2)$ ($U^\dagger\sigma^iU = R_{ij}\sigma^j$), the relation behind the covering $SU(2) \to SO(3)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|QM Theorem §C5.2.8]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]].
 > - Clifford multiplication being Lorentz equivariant is what makes $\slashed{\partial}\psi$ transform like $\psi$, hence the Dirac equation covariant and $\mathcal L$ a scalar; the same "invariant tensor" idea makes the Pauli matrices an invariant vector of $SU(2)$ — [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-1|§C5a.7, Remark: What covariance shows and what it does not]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|QM Theorem §C5.2.8]].
-> - Rotations and boosts exponentiate by the same split of a series into even and odd powers, because the axis matrix squares to a multiple of the identity: $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = \mathbb 1$ gives $\cos\frac\theta2$, $\cosh\frac\eta2$ for spinors, $[\hat{\mathbf n}]_\times^2 = -Q$ and $N_{\hat{\mathbf n}}^2 = \Pi$ give $\cos\theta$, $\cosh\eta$ for vectors — [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-2|QM Theorem §C5.2.2]].
+> - Rotations and boosts exponentiate by the same split of a series into even and odd powers, because the axis matrix squares to a multiple of the identity: $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = \mathbb 1$ gives $\cos\frac\theta2$, $\cosh\frac\eta2$ for spinors, $[\hat{\mathbf n}]_\times^2 = -Q$ and $N_{\hat{\mathbf n}}^2 = \Pi$ give $\cos\theta$, $\cosh\eta$ for vectors — [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-6|Theorem §C1a.7.6]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-7|Theorem §C1a.7.7]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-2|QM Theorem §C5.2.2]].
 > - A change of basis of $V$ and a Lorentz transformation act on the same spinor index but belong to different groups, and the Hilbert-space $U(\Lambda)$ acts on yet another space; the three are kept apart in the field transformation laws of C3 — [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^pr-c3-5-1|Principle §C3.5.1]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]].

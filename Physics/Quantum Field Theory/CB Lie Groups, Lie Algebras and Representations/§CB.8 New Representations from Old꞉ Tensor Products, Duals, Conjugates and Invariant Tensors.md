@@ -534,7 +534,7 @@ Two facts about $V\otimes V$, $V = \mathbb R^{1,3}$, first written for spacetime
 >
 > **What the proof shows**
 > - Taking the dual twice returns $-A$, not $A$: the Minkowski sign.
-> - The two three-dimensional halves are, as representations, $(1, 0)$ and $(0, 1)$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-11|Theorem §CB.18.11]]); for the field tensor they are built from $\mathbf E \pm i\mathbf B$ (the course's [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|Theorem §C1a.7.4]]).
+> - The two three-dimensional halves are, as representations, $(1, 0)$ and $(0, 1)$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-11|Theorem §CB.18.11]]); for the field tensor they are built from $\mathbf E \pm i\mathbf B$ (the course's [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-4|Theorem §C1a.8.4]]).
 > - Equivalence: this is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|Theorem §C1a.5.7]] with its derivation.
 
 ^pf-cb-8-18

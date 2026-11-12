@@ -361,7 +361,7 @@ The vector representation is $(\frac12, \frac12)$ also by direct computation wit
 > [!theorem] Theorem §CB.18.11: Two-Forms Are (1, 0) ⊕ (0, 1)
 > $\Lambda^2V_{\mathbb C} \cong \Lambda^2(S^+\otimes S^-) \cong (\operatorname{Sym}^2S^+\otimes\Lambda^2S^-)\oplus(\Lambda^2S^+\otimes\operatorname{Sym}^2S^-) \cong \operatorname{Sym}^2S^+\oplus\operatorname{Sym}^2S^- = (1, 0)\oplus(0, 1)$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-13|Theorem §CB.8.13]], 3; $\Lambda^2S^\pm$ trivial, [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-15|Theorem §CB.8.15]]). The two summands are the eigenspaces $\star = \pm i$ of duality ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-18|Theorem §CB.8.18]]), exchanged by complex conjugation; on the real two-forms this is the second case of [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-17|Theorem §CB.4.17]].
 >
-> *Source: written here · the course's statements: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|Theorem §C3.3.8]], [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|Theorem §C1a.7.4]]*
+> *Source: written here · the course's statements: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|Theorem §C3.3.8]], [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-4|Theorem §C1a.8.4]]*
 
 ^thm-cb-18-11
 
