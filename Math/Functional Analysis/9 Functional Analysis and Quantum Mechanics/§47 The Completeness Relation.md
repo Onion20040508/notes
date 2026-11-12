@@ -19,15 +19,7 @@ Recall (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]) that a 
 > - The general operator norm: [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]; as a norm on $\mathcal{L}(X, Y)$: [[§30 Boundedness and Continuity#^thm-30-8|§30.8]].
 > - Finite dimensions: [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
 
-> [!definition] Definition §45.1: Strong Convergence of Operators
-> Let $H$ be a Hilbert space, and let $T_n$, $n = 1, 2, \ldots$, and $T$ be bounded operators on $H$. The sequence $\{T_n\}$ converges **strongly** to $T$ if $T_n x \to T x$ in $H$ for every $x \in H$.
-
-^xold-def-45-1
-> [!definition] Definition §45.2: Norm Convergence of Operators
-> Let $H$ be a Hilbert space, and let $T_n$, $n = 1, 2, \ldots$, and $T$ be bounded operators on $H$. The sequence $\{T_n\}$ converges to $T$ **in norm** if $\|T_n - T\| \to 0$, where $\|\cdot\|$ is the operator norm (Definition [[§30 Boundedness and Continuity#^def-30-3|§30.3]]).
-
-^xold-def-45-2
-Norm convergence implies strong convergence, since $\|T_n x - Tx\| \le \|T_n - T\|\,\|x\|$ for every $x \in H$.
+Recall the modes of convergence of [[§45 Convergence of Operators|§45]], for bounded operators $T_n$, $n = 1, 2, \ldots$, and $T$ on a Hilbert space $H$: $\{T_n\}$ converges *strongly* to $T$ if $T_n x \to T x$ in $H$ for every $x \in H$ (Definition [[§45 Convergence of Operators#^def-45-2|§45.2]]), and it converges to $T$ *in norm*, or uniformly, if $\|T_n - T\| \to 0$ in the operator norm (Definition [[§45 Convergence of Operators#^def-45-1|§45.1]]). Norm convergence implies strong convergence, since $\|T_n x - Tx\| \le \|T_n - T\|\,\|x\|$ for every $x \in H$ (Proposition [[§45 Convergence of Operators#^prop-45-1|§45.1]](1)).
 
 > [!definition] Definition §47.1: Orthogonal Projection
 > Let $Y$ be a closed subspace of a Hilbert space $H$. By Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]] every $x \in H$ is uniquely $x = y + v$ with $y \in Y$, $v \in Y^\perp$. The **orthogonal projection** onto $Y$ is $P_Y x = y$.

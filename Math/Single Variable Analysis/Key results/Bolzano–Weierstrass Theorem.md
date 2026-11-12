@@ -29,6 +29,7 @@ tags: [real-analysis, hub]
 ## Used in (Functional Analysis)
 - [[§14 New Normed Spaces from Old#^thm-14-4|Theorem §14.4: All Norms on a Finite-Dimensional Space are Equivalent]]
 - [[§20 Compactness and the Unit Ball#^ex-20-1|Example §20.1: The Closed Unit Ball in 𝔽ⁿ]]
+- [[§44 Weak Sequential Compactness#^thm-44-1|Theorem §44.1: Helly's Theorem]]
 
 ## Connections
 - Sequential compactness of bounded sets; the $\mathbb{R}^n$ version is [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|Theorem §13.3]].

@@ -486,9 +486,11 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 >
 > A massless particle of spin $s \ge \frac12$ in a theory with parity symmetry (photon, graviton) has two helicity states, $\lambda = \pm s$, not $2s + 1$ ([[§C3.7★ Massless Particles and Helicity#^rem-c3-7-2|§C3.7, Remark: Parity pairs λ with −λ: photon, graviton, neutrino]]): its average is $\frac12\sum_{\lambda = \pm s}$. A massless particle with a single helicity (the neutrino of the massless idealization, same remark) has one state and is not averaged.
 >
+> Course form (Lecture 19), for two spin-$\frac12$ particles in and two out: $\overline{|\mathcal M|^2} = \frac14\sum_{\rm spins}|\mathcal M|^2$, the spin average ([[§C8.7 The Spin-Averaged Squared Amplitude#^def-c8-7-1|Def. §C8.7.1]]).
+>
 > *Model:* as in [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]; *applies:* as there, unpolarized beams and undetected final spins.
 >
-> *Source: PHY 513, Problem Set 9, Problem 5 (Larsen: "the unpolarized differential cross sections"; the user's solution: "Averaging over the initial and summing over the final spins") · written here for general spins*
+> *Source: PHY 513, Problem Set 9, Problem 5 (Larsen: "the unpolarized differential cross sections"; the user's solution: "Averaging over the initial and summing over the final spins") · PHY 513 Lecture 19 (Larsen, 11 Nov 2026), slide 12 · the user's PHY 513 notes, Lecture 19 update, §19.2, Definition "Spin average" · PS §5.1, p. 132 · written here for general spins*
 
 ^def-c6b-3-5
 
@@ -498,9 +500,11 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 > 2. The average over initial projections of an operator $X$ on the spin space is $\frac{1}{2s + 1}\sum_{m_i}\langle m_i|X|m_i\rangle = \frac{1}{2s + 1}\operatorname{Tr}X$.
 > 3. Both are independent of the orthonormal basis: $\overline{|\mathcal M|^2}$ of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]] may be computed with each particle's spin quantized along any axis.
 >
+> For Dirac particles the two spin states are carried by the spinors $u^s$, $v^s$, the completeness relation is $\sum_su^s\bar u^s = \slashed p + m$, $\sum_sv^s\bar v^s = \slashed p - m$, and the sum over spins becomes a trace over spinor indices (Lecture 19: [[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-3|Theorem §C8.7.3]]).
+>
 > *Model:* as in [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]; *applies:* any spins, any order; linear algebra on each particle's spin space.
 >
-> *Source: PHY 513, Problem Set 9, Problem 5 (the user's solution, paragraph "Choice of spin axis")*
+> *Source: PHY 513, Problem Set 9, Problem 5 (the user's solution, paragraph "Choice of spin axis") · the sentence on Dirac particles: PHY 513 Lecture 19 (Larsen, 11 Nov 2026), slide 12*
 
 ^thm-c6b-3-10
 

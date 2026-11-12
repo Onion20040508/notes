@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # CB Lie Groups, Lie Algebras and Representations
 ← [[· CA Mathematical Methods]] · ↑ [[Quantum Field Theory]]
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (23), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (47), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (49), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (4), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (23), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (47), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (51), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (4), [[· CA Mathematical Methods|CA Mathematical Methods]] (2)
 **Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (89), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (67), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (10), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (38)
 
 ## Sections
@@ -117,6 +117,7 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-16|§CB.8.16]] The Four Two-Dimensional Representations of SL(2,ℂ)
 - [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|§CB.8.17]] The Trace, Symmetric and Antisymmetric Parts Do Not Mix
 - [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-18|§CB.8.18]] Duality Squares to −1 on Antisymmetric Tensors
+- [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^lem-cb-8-19|§CB.8.19]] The Wedge Product Is Associative and Graded-Commutative
 - [[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-9-2|§CB.9.2]] How a Hermitian Form Changes with the Basis
 - [[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-9-4|§CB.9.4]] Sylvester's Law of Inertia for Hermitian Forms
 - [[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-9-6|§CB.9.6]] Properties of the h-Adjoint

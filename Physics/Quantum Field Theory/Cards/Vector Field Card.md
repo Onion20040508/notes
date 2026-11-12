@@ -11,7 +11,7 @@ One-page reference for the free vector field: the massive (Proca) field and the 
 
 ## 1. Lagrangian, momentum, Hamiltonian, field momentum; commutators
 
-| | Proca field ★ | Photon, Feynman gauge (*draft*) |
+| | Proca field ★ | Photon, Feynman gauge (*draft*: the §C4.6–§C4.7 rows) |
 | --- | --- | --- |
 | $\mathcal L$ | $-\frac14F_{\mu\nu}F^{\mu\nu} + \frac12m^2A_\mu A^\mu$ | Maxwell $-\frac14F^2$ is gauge invariant and has no $\pi_0$; quantized: $\mathcal L_\xi = -\frac14F^2 - \frac{1}{2\xi}(\partial\cdot A)^2$ at $\xi = 1$, $\simeq \mathcal L_2 = -\frac12\partial_\mu A_\nu\,\partial^\mu A^\nu$ |
 | field equation | $\partial_\mu F^{\mu\nu} + m^2A^\nu = 0 \iff (\partial^2 + m^2)A^\nu = 0$ and $\partial\cdot A = 0$ | $\partial^2A^\mu - (1 - \frac1\xi)\partial^\mu\partial\cdot A = 0$; $\xi = 1$: $\partial^2A^\mu = 0$ |

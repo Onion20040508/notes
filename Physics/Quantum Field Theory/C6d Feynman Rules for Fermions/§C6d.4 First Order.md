@@ -369,11 +369,11 @@ At first order the Dyson series of Yukawa theory has one vertex, and the procedu
 ^def-c6d-4-1
 
 > [!definition] Definition §C6d.4.2: Real and Virtual Particles
-> A particle on an external line is **real**: its momentum is on shell, $p^2 = m^2$, with $p^0 = E_{\mathbf p} > 0$. A particle on an internal line ([[§C6d.4 First Order#^def-c6d-4-1|Def. §C6d.4.1]]) is **virtual**: its momentum is integrated over all values, or fixed by conservation at the vertices to a value that need not satisfy $p^2 = m^2$ (**off shell**), and its $p^0$ need not be positive; a virtual particle can also be on shell.
+> A particle on an external line is **real**: its momentum is on shell, $p^2 = m^2$, with $p^0 = E_{\mathbf p} > 0$. A particle on an internal line ([[§C6d.4 First Order#^def-c6d-4-1|Def. §C6d.4.1]]) is **virtual**: its momentum is integrated over all values, or fixed by conservation at the vertices to a value that need not satisfy $p^2 = m^2$ (**off shell**), and its $p^0$ need not be positive; a virtual particle can also be on shell. The mass shell and the terms on shell and off shell are defined, as Lecture 19 introduces them for the virtual photon $\gamma^\ast$, in [[§C8.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^def-c8-6-1|Def. §C8.6.1]] and [[§C8.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^def-c8-6-2|Def. §C8.6.2]].
 >
 > *Model:* [[§C6d.1 Yukawa Theory#^mod-c6d-1-1|Model §C6d.1.1]], any theory with Feynman rules; *applies:* a name for the two kinds of lines, no dynamics.
 >
-> *Source: Yu §7.1, p. 270 ("用内线表示的粒子称为虚粒子 (virtual particle)，它描述场在两个时空点之间的传播行为。虚粒子可以是在壳粒子，也可以是离壳粒子。反过来，用外线表示的粒子称为实粒子 (real particle)，它一定是在壳粒子"); p. 267 (external lines are on shell, (1.79))*
+> *Source: Yu §7.1, p. 270 ("用内线表示的粒子称为虚粒子 (virtual particle)，它描述场在两个时空点之间的传播行为。虚粒子可以是在壳粒子，也可以是离壳粒子。反过来，用外线表示的粒子称为实粒子 (real particle)，它一定是在壳粒子"); p. 267 (external lines are on shell, (1.79)) · PHY 513 Lecture 19 (Larsen, 11 Nov 2026), slide 8 ("it is a virtual particle … Particles mediating an interaction are off-shell")*
 
 ^def-c6d-4-2
 

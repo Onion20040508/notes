@@ -47,7 +47,7 @@ How is the free real scalar field written in terms of oscillators, and what alge
 > \int d^3x\,\tfrac12\pi^2 = \frac12\int\frac{d^3p}{(2\pi)^3}\,\tilde\pi(\mathbf p)\,\tilde\pi(-\mathbf p) .
 > $$
 >
-> **4. Reality.** $\pi$ is real, so $\tilde\pi(-\mathbf p) = \tilde\pi^{\ast}(\mathbf p)$ and the integrand is $|\tilde\pi(\mathbf p)|^2$. ⚑ By-product: the $\mathbf x$ integral pairs each mode $\mathbf p$ with $-\mathbf p$ only (translation invariance), and reality makes the pair one oscillator's worth of variables → [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark: Why the modes decouple]].
+> **4. Reality.** $\pi$ is real, so $\tilde\pi(-\mathbf p) = \tilde\pi^{\ast}(\mathbf p)$ and the integrand is $|\tilde\pi(\mathbf p)|^2$. ⚑ By-product: the $\mathbf x$ integral pairs each mode $\mathbf p$ with $-\mathbf p$ only (translation invariance), and reality makes the pair one oscillator's worth of variables → [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark: Why the modes decouple, and why the frequency is the energy]].
 >
 > **5. The gradient term.** $\nabla\phi = \int\frac{d^3p}{(2\pi)^3}\,(i\mathbf p)\,\tilde\phi(\mathbf p)\,e^{i\mathbf p\cdot\mathbf x}$ (derivative under the integral, [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], with the dominating function $|\mathbf p\,\tilde\phi(\mathbf p)|$, integrable for a wave packet; for a transform that is only a distribution it is the derivative rule of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3). With $\mathbf p$ in the first factor and $\mathbf p'$ in the second,
 >
@@ -63,7 +63,7 @@ How is the free real scalar field written in terms of oscillators, and what alge
 >
 > **6. The mass term.** The same with $m^2$ in place of $(i\mathbf p)\cdot(i\mathbf p')$: $\int d^3x\,\frac12m^2\phi^2 = \frac12\int\frac{d^3p\,d^3p'}{(2\pi)^6}\,m^2\,\tilde\phi(\mathbf p)\tilde\phi(\mathbf p')(2\pi)^3\delta^3(\mathbf p + \mathbf p') = \frac12\int\frac{d^3p}{(2\pi)^3}\,m^2|\tilde\phi(\mathbf p)|^2$.
 >
-> **7. Add.** $\mathbf p^2 + m^2 = E_{\mathbf p}^2$ gives the Hamiltonian of the statement. ⚑ By-product: the frequency is fixed by the gradient term ($\mathbf p^2$) and the mass term ($m^2$) together; it is the mass-shell energy → [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark: Why the frequency is the energy]].
+> **7. Add.** $\mathbf p^2 + m^2 = E_{\mathbf p}^2$ gives the Hamiltonian of the statement. ⚑ By-product: the frequency is fixed by the gradient term ($\mathbf p^2$) and the mass term ($m^2$) together; it is the mass-shell energy → [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark: Why the modes decouple, and why the frequency is the energy]].
 >
 > **8. The equation of motion.** Insert the expansion into $\ddot\phi - \nabla^2\phi + m^2\phi = 0$ ([[§B4.1 The Klein–Gordon Equation#^thm-b4-1-4|REL Theorem §B4.1.4]]): $\nabla^2e^{i\mathbf p\cdot\mathbf x} = -\mathbf p^2e^{i\mathbf p\cdot\mathbf x}$, so $\int\frac{d^3p}{(2\pi)^3}\bigl(\ddot{\tilde\phi} + (\mathbf p^2 + m^2)\tilde\phi\bigr)e^{i\mathbf p\cdot\mathbf x} = 0$, and uniqueness of the Fourier transform ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-1|WO Theorem §B4.4.1]]; in $\mathcal S'$, where the transform is a bijection, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], 2) gives $\ddot{\tilde\phi} + E_{\mathbf p}^2\tilde\phi = 0$ for each $\mathbf p$. Equivalently, Hamilton's equations for the mode Hamiltonian are $\dot{\tilde\phi} = \tilde\pi$, $\dot{\tilde\pi} = -E_{\mathbf p}^2\tilde\phi$. ⚑ By-product: the field must have a Fourier transform at each time (decay at infinity); plane-wave modes are idealizations → [[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-1|Caution: Plane-wave states are not normalizable]].
 >
@@ -166,7 +166,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > **What the derivation shows**
 > - The mass shell $k^0 = \pm E_{\mathbf k}$ is the only input from the field equation; both signs are needed for arbitrary Cauchy data.
 > - $1/\sqrt{2E_{\mathbf p}}$ is a normalization choice, cashed in by [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] and [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|Theorem §C2a.4.6]].
-> - The relabelling $\mathbf p \to -\mathbf p$ is why $\hat a^\dagger_{-\mathbf p}$, not $\hat a^\dagger_{\mathbf p}$, accompanies $\hat a_{\mathbf p}$ at fixed time: the pairing of $\mathbf p$ with $-\mathbf p$ of [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark: Why the modes decouple]].
+> - The relabelling $\mathbf p \to -\mathbf p$ is why $\hat a^\dagger_{-\mathbf p}$, not $\hat a^\dagger_{\mathbf p}$, accompanies $\hat a_{\mathbf p}$ at fixed time: the pairing of $\mathbf p$ with $-\mathbf p$ of [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark: Why the modes decouple, and why the frequency is the energy]].
 > - The operators $\hat a_{\mathbf p}$ are so far only names; their algebra is [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], and their extraction from $\hat\phi$, $\hat\pi$ is [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]].
 
 ^der-c2a-2-2

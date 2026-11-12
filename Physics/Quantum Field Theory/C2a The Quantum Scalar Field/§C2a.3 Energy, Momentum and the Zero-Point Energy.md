@@ -55,7 +55,7 @@ What are the energy and momentum of the free real field? With the mode expansion
 > \hat H = \int\frac{d^3p}{(2\pi)^3}\Bigl[-\frac{E_{\mathbf p}}{4}\bigl(\hat a_{\mathbf p} - \hat a^\dagger_{-\mathbf p}\bigr)\bigl(\hat a_{-\mathbf p} - \hat a^\dagger_{\mathbf p}\bigr) + \frac{\mathbf p^2 + m^2}{4E_{\mathbf p}}\bigl(\hat a_{\mathbf p} + \hat a^\dagger_{-\mathbf p}\bigr)\bigl(\hat a_{-\mathbf p} + \hat a^\dagger_{\mathbf p}\bigr)\Bigr] .
 > $$
 >
-> **4. Mass shell.** $\mathbf p^2 + m^2 = E_{\mathbf p}^2$, so the second coefficient is $E_{\mathbf p}/4$, the same as the first. ⚑ By-product: this equality of coefficients is the mass-shell relation, and it is what makes the cancellation of step 6 possible → [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark: Why the frequency is the energy]].
+> **4. Mass shell.** $\mathbf p^2 + m^2 = E_{\mathbf p}^2$, so the second coefficient is $E_{\mathbf p}/4$, the same as the first. ⚑ By-product: this equality of coefficients is the mass-shell relation, and it is what makes the cancellation of step 6 possible → [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-1|Remark: Why the modes decouple, and why the frequency is the energy]].
 >
 > **5. Expand both products into all four terms.** Keeping the order of operators:
 >

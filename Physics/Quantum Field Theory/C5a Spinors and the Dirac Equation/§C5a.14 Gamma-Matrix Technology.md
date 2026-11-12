@@ -9,9 +9,9 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C5a.13 Helicity Spinors and the Massless Limit]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5b.1 Canonical Quantization of the Dirac Field]] →
 
-*Sources: the user's PHY 513 notes, Ch. 9 §9.6 (Supplement: $\gamma$-matrix technology (Problem Set 5)) · PHY 513, Problem Set 5, Problems 2, 3 and 5 (as the user wrote them) · Peskin & Schroeder, §3.4, pp. 49–52, eqs. (3.68)–(3.81) · Yu Zhao-Huan, 量子场论讲义, §7.1, eqs. (7.48)–(7.54), §8.2.2, eqs. (8.44)–(8.77). · PHY 513, Problem Set 7, Problem 1(c) (Larsen; the user's solution).*
+*Sources: the user's PHY 513 notes, Ch. 9 §9.6 (Supplement: $\gamma$-matrix technology (Problem Set 5)) · PHY 513, Problem Set 5, Problems 2, 3 and 5 (as the user wrote them) · Peskin & Schroeder, §3.4, pp. 49–52, eqs. (3.68)–(3.81) · Yu Zhao-Huan, 量子场论讲义, §7.1, eqs. (7.48)–(7.54), §8.2.2, eqs. (8.44)–(8.77). · PHY 513, Problem Set 7, Problem 1(c) (Larsen; the user's solution) · PHY 513 Lecture 19 (Larsen, 11 Nov 2026), slides 13–14, and transcript · the user's PHY 513 notes, Lecture 19 update, §19.3 "Traces of Dirac matrices" (Principle "Trace theorems", Derivation "Proofs") · Peskin & Schroeder, §5.1, pp. 133–135, eqs. (5.5), (5.8)–(5.9).*
 
-How are long products of $\gamma$ matrices shortened, traced and reduced, as every amplitude with spin-½ particles requires? Everything follows from the Clifford algebra ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]), the algebra of $\gamma^5$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]), the basis property of the sixteen products ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]) and the slash of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]. This section adds the working identities: slash algebra, contractions, traces, the $\varepsilon$-forms of $\gamma^5$ and its duality on $\sigma^{\mu\nu}$, the reduction of any product to the standard basis, and the Gordon identity. Problem Set 5 (submitted) proves several of them; its proofs appear as the user wrote them, and no other problem-set material is used. The algebra behind the identities — the Clifford relation, the sixteen products as a basis, Pauli's theorem, $\gamma^5$ as the volume element — is proved in [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.13 Complex Clifford Algebras and Clifford Modules|§CB.13]] and [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], linked from each box and listed at the end; this section keeps the course's computational toolkit.
+How are long products of $\gamma$ matrices shortened, traced and reduced, as every amplitude with spin-½ particles requires? Everything follows from the Clifford algebra ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]), the algebra of $\gamma^5$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]), the basis property of the sixteen products ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]) and the slash of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]. This section adds the working identities: slash algebra, contractions, traces, the $\varepsilon$-forms of $\gamma^5$ and its duality on $\sigma^{\mu\nu}$, the reduction of any product to the standard basis, and the Gordon identity. Problem Set 5 (submitted) proves several of them; its proofs appear as the user wrote them, and no other problem-set material is used. The algebra behind the identities — the Clifford relation, the sixteen products as a basis, Pauli's theorem, $\gamma^5$ as the volume element — is proved in [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.13 Complex Clifford Algebras and Clifford Modules|§CB.13]] and [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], linked from each box and listed at the end; this section keeps the course's computational toolkit. Lecture 19 teaches the trace theorems ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]]) and first uses them, for $e^+e^- \to \mu^+\mu^-$ ([[§C8.7 The Spin-Averaged Squared Amplitude|§C8.7]]).
 
 **Setup.** No field and no dynamics: Theorems §C5a.14.1–§C5a.14.8 are identities of the four-dimensional Clifford algebra and $\gamma^5$, exact, with commuting four-vector components and $\varepsilon^{0123} = +1$; they hold wherever the $\gamma$'s appear, in classical and quantum computations alike, and carry no *Model* line. The exception is the Gordon identity (Theorem §C5a.14.9): it holds only between on-shell c-number spinors of the free Dirac field ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), $m > 0$.
 
@@ -145,7 +145,7 @@ These identities shorten strings in which an index is contracted across other $\
 >
 > for the $4\times4$ Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]). With slashes ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]): $\operatorname{tr}(\slashed{a}\slashed{b}) = 4a\cdot b$, $\operatorname{tr}(\slashed{a}\slashed{b}\slashed{c}\slashed{d}) = 4\bigl[(a\cdot b)(c\cdot d) - (a\cdot c)(b\cdot d) + (a\cdot d)(b\cdot c)\bigr]$.
 >
-> *Source: Yu §7.1, eqs. (7.48)–(7.54), §8.2.2, eqs. (8.44)–(8.45), (8.49)–(8.52), (8.74)–(8.75) · PS §5.1 (trace theorems, as statements) · the user's PHY 513 notes, Ch. 9 §9.1 (Derivation "Step 2": $\operatorname{tr}\gamma^\mu = 0$)*
+> *Source: PHY 513 Lecture 19 (Larsen, 11 Nov 2026), slide 13 ("Strategy: do not use explicit form of $\gamma$-matrices, use algebra"; Examples 1 and 2), slide 14 ("For elaborate traces: consult tables. The formula needed here: $\operatorname{tr}\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma = 4(g^{\mu\nu}g^{\rho\sigma} - g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\rho\nu})$") · the user's PHY 513 notes, Lecture 19 update, §19.3, Principle "Trace theorems", Derivation "Proofs" · Yu §7.1, eqs. (7.48)–(7.54), §8.2.2, eqs. (8.44)–(8.45), (8.49)–(8.52), (8.74)–(8.75) · PS §5.1, pp. 133–134, eq. (5.5), with derivations · the user's PHY 513 notes, Ch. 9 §9.1 (Derivation "Step 2": $\operatorname{tr}\gamma^\mu = 0$)*
 
 ^thm-c5a-14-3
 
@@ -177,6 +177,51 @@ These identities shorten strings in which an index is contracted across other $\
 
 *Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]
 
+> [!derivation]- Derivation (second route: Lecture 19, two γ's by averaging the two orders, odd traces in the chiral basis)
+> The steps of the lecture and of its slide 13, where they differ from the derivation above.
+>
+> **1. Two $\gamma$'s.** By cyclicity $\operatorname{tr}(\gamma^\mu\gamma^\nu) = \operatorname{tr}(\gamma^\nu\gamma^\mu)$, so the trace equals the average of the two orders:
+>
+> $$
+> \operatorname{tr}(\gamma^\mu\gamma^\nu) = \tfrac12\operatorname{tr}\{\gamma^\mu, \gamma^\nu\} = \tfrac12\cdot2g^{\mu\nu}\operatorname{tr}\mathbb 1 = 4g^{\mu\nu} .
+> $$
+>
+> Step 3 above moves one term to the other side of the equation instead; the content is the same.
+>
+> **2. Odd number, in the chiral basis** (the lecture). In the chiral basis every $\gamma^\mu = \bigl(\begin{smallmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{smallmatrix}\bigr)$ is block off-diagonal ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]). The product of two block off-diagonal matrices is block diagonal, and a block diagonal matrix times a block off-diagonal one is block off-diagonal. So a product of an odd number of $\gamma$'s is block off-diagonal: its diagonal entries vanish, and so does its trace. Any other set of Dirac matrices is related to the chiral one by a change of basis ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]]), which does not change a trace, so the result holds in every basis. PS p. 133 uses this argument for a single $\gamma^\mu$.
+>
+> **3. Odd number, without a basis** (slide 13, Example 2). $\operatorname{tr}\gamma^\mu = \operatorname{tr}(\gamma^\mu\gamma^5\gamma^5) = \operatorname{tr}(\gamma^5\gamma^\mu\gamma^5) = -\operatorname{tr}(\gamma^\mu\gamma^5\gamma^5) = -\operatorname{tr}\gamma^\mu$, by $(\gamma^5)^2 = \mathbb 1$, cyclicity and $\{\gamma^5, \gamma^\mu\} = 0$, and "more generally $\operatorname{tr}\gamma^{\mu_1}\cdots\gamma^{\mu_k} = 0$ for any odd number $k$": step 2 above, with the $\gamma^5$ carried the other way round. Moving $\gamma^5$ through an odd number of $\gamma$'s gives an odd number of minus signs.
+>
+> **4. Four $\gamma$'s.** Steps 4–5 above; the user's update fills in the same computation, and the lecture quotes the result.
+>
+> **What the derivation shows**
+> - The chiral-basis argument shows why odd traces vanish: each $\gamma^\mu$ exchanges the two chiral blocks, and an odd number of exchanges has no diagonal part.
+> - Used in: the electron and muon traces of $e^+e^- \to \mu^+\mu^-$ ([[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-5|Theorem §C8.7.5]]).
+
+^der-c5a-14-3b
+
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]
+
+> [!remark] Remark: Why the four-γ trace has this form
+> The form of $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma)$ is no accident. The result has four indices and no $\gamma$'s, so it is a combination of products of two metrics, $a\,g^{\mu\nu}g^{\rho\sigma} + b\,g^{\mu\rho}g^{\nu\sigma} + c\,g^{\mu\sigma}g^{\nu\rho}$, and it must respect the cyclicity of the trace in all four indices; few expressions do. Under the cyclic shift $\mu\nu\rho\sigma \to \nu\rho\sigma\mu$ the first and third products are exchanged and the second is unchanged, so $c = a$; a term $\varepsilon^{\mu\nu\rho\sigma}$ is excluded, because it changes sign under the shift. The two numbers left follow from two contractions ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]]): with $g_{\mu\nu}$, $\operatorname{tr}(\gamma_\mu\gamma^\mu\gamma^\rho\gamma^\sigma) = 16g^{\rho\sigma}$ gives $5a + b = 16$; with $g_{\mu\rho}$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma_\mu\gamma^\sigma) = -8g^{\nu\sigma}$ gives $2a + 4b = -8$; hence $a = 4$, $b = -4$. The order of the indices is learned by use: the adjacent pairing $(\mu\nu)(\rho\sigma)$ and the outer–inner pairing $(\mu\sigma)(\nu\rho)$ enter with a plus sign, the crossed pairing $(\mu\rho)(\nu\sigma)$ with a minus sign.
+>
+> *Source: the user's PHY 513 notes, Lecture 19 update, §19.3 (the paragraph after Derivation "Proofs": four indices, no $\gamma$'s, cyclicity) · PHY 513 Lecture 19, transcript · the argument for $c = a$, the exclusion of $\varepsilon$ and the two contractions written here*
+
+^rem-c5a-14-6
+
+> [!remark]- ★ Remark: Reversing the order inside a trace
+> Beyond the lecture; PS §5.1, eq. (5.7). The trace of a product of $\gamma$ matrices is unchanged when the order of all its factors is reversed:
+>
+> $$
+> \operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\cdots) = \operatorname{tr}(\cdots\gamma^\sigma\gamma^\rho\gamma^\nu\gamma^\mu) .
+> $$
+>
+> PS's reason: the matrix $C \equiv \gamma^0\gamma^2$ satisfies $C^2 = \mathbb 1$ and $C\gamma^\mu C = -(\gamma^\mu)^{\mathsf T}$ (in the chiral basis; checked numerically). Inserting $C^2$ between the $n$ factors, $\operatorname{tr}(\gamma^\mu\gamma^\nu\cdots) = \operatorname{tr}(C\gamma^\mu C\,C\gamma^\nu C\cdots) = (-1)^n\operatorname{tr}\bigl[(\gamma^\mu)^{\mathsf T}(\gamma^\nu)^{\mathsf T}\cdots\bigr] = (-1)^n\operatorname{tr}\bigl[(\cdots\gamma^\nu\gamma^\mu)^{\mathsf T}\bigr] = \operatorname{tr}(\cdots\gamma^\nu\gamma^\mu)$: a matrix and its transpose have the same trace, and the trace vanishes unless $n$ is even. PS add that the identity stays valid when the trace contains factors of $\gamma^5$. With cyclicity it shows that $\operatorname{tr}(\slashed a\gamma^\mu\slashed b\gamma^\nu)$ is symmetric under $\mu \leftrightarrow \nu$, the fact behind [[§C8.7 The Spin-Averaged Squared Amplitude#^cau-c8-7-2|§C8.7, Caution: The order inside the muon trace on the slide]].
+>
+> *Source: PS §5.1, p. 135, eq. (5.7) · the numerical check: `qft-C/tools/l19/verify.py`*
+
+^rem-c5a-14-7
+
 > [!theorem] Theorem §C5a.14.4: Traces with γ⁵
 > $$
 > \operatorname{tr}\gamma^5 = 0\ \text{(recalled)}, \qquad \operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5) = 0, \qquad \operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\,\varepsilon^{\mu\nu\rho\sigma} \quad (\varepsilon^{0123} = +1),
@@ -184,7 +229,7 @@ These identities shorten strings in which an index is contracted across other $\
 >
 > with $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]; $\operatorname{tr}\gamma^5 = 0$ is [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]) and $\varepsilon$ in the convention of [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]; the trace of $\gamma^5$ times an odd number of $\gamma$'s vanishes. The convention-free form of the last identity is $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$.
 >
-> *Source: Yu §8.2.2, eqs. (8.46)–(8.48), (8.53)–(8.55) (with $\varepsilon^{0123} = +1$, Yu (1.104)) · PS §5.1 (as statements)*
+> *Source: Yu §8.2.2, eqs. (8.46)–(8.48), (8.53)–(8.55) (with $\varepsilon^{0123} = +1$, Yu (1.104)) · PS §5.1, p. 134, eq. (5.5) and the paragraph before it · the user's PHY 513 notes, Lecture 19 update, §19.3, Principle "Trace theorems" ("Filled in, for later use"; not on the Lecture 19 slides)*
 
 ^thm-c5a-14-4
 
@@ -219,16 +264,16 @@ These identities shorten strings in which an index is contracted across other $\
 ^rem-c5a-14-2
 
 > [!caution] Caution: The sign of the ε trace across sources
-> The convention-free statements are $\gamma^0\gamma^1\gamma^2\gamma^3 = -i\gamma^5$ and $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$. With $\varepsilon^{0123} = +1$ (these notes, the course, Yu) they give $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\varepsilon^{\mu\nu\rho\sigma}$, $\gamma^{[\mu\nu\rho\sigma]} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma^5$ and $\gamma^5 = -\frac i{4!}\varepsilon^{\mu\nu\rho\sigma}\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma$. Peskin–Schroeder state $\varepsilon^{0123} = -1$, and their p. 50 is not uniform: (3.68) and $\gamma^{\mu\nu\rho\sigma} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma^5$ hold as printed only for $\varepsilon^{0123} = +1$, while $\gamma^{\mu\nu\rho} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma_\sigma\gamma^5$ holds for their $\varepsilon^{0123} = -1$ (it is Theorem §C5a.14.6 with the sign of $\varepsilon$ flipped). Check: $\gamma^0\gamma^1\gamma^2 = -i\gamma^3\gamma^5$ from the definition of $\gamma^5$. Compare sources through the convention-free forms.
+> The convention-free statements are $\gamma^0\gamma^1\gamma^2\gamma^3 = -i\gamma^5$ and $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$. With $\varepsilon^{0123} = +1$ (these notes, the course, Yu) they give $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\varepsilon^{\mu\nu\rho\sigma}$, $\gamma^{[\mu\nu\rho\sigma]} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma^5$ and $\gamma^5 = -\frac i{4!}\varepsilon^{\mu\nu\rho\sigma}\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma$. Peskin–Schroeder state $\varepsilon^{0123} = -1$, and their p. 50 is not uniform: (3.68) and $\gamma^{\mu\nu\rho\sigma} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma^5$ hold as printed only for $\varepsilon^{0123} = +1$, while $\gamma^{\mu\nu\rho} = -i\varepsilon^{\mu\nu\rho\sigma}\gamma_\sigma\gamma^5$ holds for their $\varepsilon^{0123} = -1$ (it is Theorem §C5a.14.6 with the sign of $\varepsilon$ flipped). Check: $\gamma^0\gamma^1\gamma^2 = -i\gamma^3\gamma^5$ from the definition of $\gamma^5$. Compare sources through the convention-free forms. The last line of PS (5.5), p. 134, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\epsilon^{\mu\nu\rho\sigma}$, is of the same kind: by the convention-free form it holds as printed for $\varepsilon^{0123} = +1$.
 >
-> *Source: PS §3.4, p. 50, eq. (3.68) · Yu §8.2.2, eq. (8.48) · checked against Derivation §C5a.14.4, step 6*
+> *Source: PS §3.4, p. 50, eq. (3.68); §5.1, p. 134, eq. (5.5) · Yu §8.2.2, eq. (8.48) · checked against Derivation §C5a.14.4, step 6*
 
 ^cau-c5a-14-1
 
 > [!remark] Remark: Why traces
-> An unpolarized squared amplitude sums over spins: $\sum_{s,s'}\lvert\bar u^{s'}(p')\Gamma u^s(p)\rvert^2 = \sum\bar u^{s'}\Gamma u^s\,\bar u^s\bar\Gamma u^{s'}$, and the spin sums $\sum_su^s\bar u^s = \slashed{p} + m$, $\sum_sv^s\bar v^s = \slashed{p} - m$ ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]]) close the chain of matrices into a loop: $\operatorname{tr}[\Gamma(\slashed{p} + m)\bar\Gamma(\slashed{p}' + m)]$ (Casimir's trick, Yu (7.47)). Every fermion line of an unpolarized cross section becomes a trace, and Theorems §C5a.14.2–§C5a.14.4 evaluate it without ever writing a spinor (C8, planned). Closed fermion loops give traces for the same reason ([[§C6d.4 First Order#^thm-c6d-4-6|§C6d.4, Theorem §C6d.4.6]]).
+> An unpolarized squared amplitude sums over spins: $\sum_{s,s'}\lvert\bar u^{s'}(p')\Gamma u^s(p)\rvert^2 = \sum\bar u^{s'}\Gamma u^s\,\bar u^s\bar\Gamma u^{s'}$, and the spin sums $\sum_su^s\bar u^s = \slashed{p} + m$, $\sum_sv^s\bar v^s = \slashed{p} - m$ ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]]) close the chain of matrices into a loop: $\operatorname{tr}[\Gamma(\slashed{p} + m)\bar\Gamma(\slashed{p}' + m)]$ (Casimir's trick, Yu (7.47)). Every fermion line of an unpolarized cross section becomes a trace, and Theorems §C5a.14.2–§C5a.14.4 evaluate it without ever writing a spinor (first use: [[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-3|Theorem §C8.7.3]] and [[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-5|Theorem §C8.7.5]], for $e^+e^- \to \mu^+\mu^-$). Closed fermion loops give traces for the same reason ([[§C6d.4 First Order#^thm-c6d-4-6|§C6d.4, Theorem §C6d.4.6]]).
 >
-> *Source: Yu §7.1, eq. (7.47) and the paragraph after it; §8.2.1, eq. (8.43)*
+> *Source: Yu §7.1, eq. (7.47) and the paragraph after it; §8.2.1, eq. (8.43) · PHY 513 Lecture 19 (Larsen, 11 Nov 2026), slide 12 · PS §5.1, pp. 132–133*
 
 ^rem-c5a-14-3
 
@@ -462,6 +507,7 @@ These identities shorten strings in which an index is contracted across other $\
 > [!remark]- Connections
 > - The trace is the inner product that makes the sixteen $\Gamma$'s an orthogonal basis; the same idea expands any $2\times2$ matrix in Pauli matrices (the Fierz check above) and underlies the basis theorem — [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]] (proof: [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]]), [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]].
 > - Casimir's trick turns spin sums into traces: the spin sums of [[§C5a.12 Normalization and Spin Sums|§C5a.12]] are what the trace theorems are for; the Dirac propagator's numerator $\slashed{p} + m$ is the same spin sum, so loop traces use the same identities — [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].
+> - Lecture 19 uses the trace theorems for the first process of QED: the electron and muon traces of $e^+e^- \to \mu^+\mu^-$ and their contraction — [[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-5|Theorem §C8.7.5]], [[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-6|Theorem §C8.7.6]]; the step in the procedure — [[P8 Unpolarized Cross Section from Diagrams#^p8-4|P8, step 4]].
 > - The duality $\gamma^5\sigma_{\mu\nu} = \frac i2\varepsilon_{\mu\nu\lambda\kappa}\sigma^{\lambda\kappa}$ is the Hodge star of antisymmetric tensors in matrix form; its eigenspaces are the $(1, 0)$ and $(0, 1)$ halves, the same split as $\mathbf E \mp i\mathbf B$ — [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|Theorem §C1a.5.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|Theorem §C3.3.8]].
 > - The Gordon split of the current into convection and spin magnetization is the relativistic version of the Pauli equation's $\frac{e}{2m}(\mathbf L + 2\mathbf S)\cdot\mathbf B$, with $g = 2$ — [[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-8|Theorem §C5a.9.8]].
 > - $\gamma_\mu\gamma^\mu = d$ makes the contraction identities dimension dependent, the starting point of $\gamma$ algebra in dimensional regularization — the second semester (planned; PHY 513 Lecture 17, slide 26).

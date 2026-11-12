@@ -20,6 +20,7 @@ tags: [functional-analysis, hub]
 - [[§39 Solving Mx = y#^thm-39-1|Theorem §39.1: Null Space and the Induced Map]]
 - [[§39 Solving Mx = y#^thm-39-2|Theorem §39.2: Banach's Inverse Mapping Theorem]]
 - [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|Theorem §41.3: Equivalent Norm Theorem]]
+- [[§44 Weak Sequential Compactness#^ex-44-4|Example §44.4: No Closest Point in C[0,1]]]
 
 ## Connections
 - **How.** Bounded implies continuous because ‖Tx_j − Tx‖ ≤ M‖x_j − x‖; T is even Lipschitz. For the converse, if ‖Tx_n‖ > n‖x_n‖ for every n, rescale to y_n = x_n/(n‖x_n‖). Then y_n → 0 but ‖Ty_n‖ > 1, so T is not continuous at 0. No completeness is used, although Lax states the theorem for Banach spaces ([[§30 Boundedness and Continuity#^rem-30-4|Remark §30]]).

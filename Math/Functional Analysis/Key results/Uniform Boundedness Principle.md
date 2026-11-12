@@ -17,6 +17,7 @@ tags: [functional-analysis, hub]
 - [[§42 Uniform Boundedness and Approximation#^thm-42-7|Theorem §42.7: Banach–Steinhaus]]
 - [[§42 Uniform Boundedness and Approximation#^thm-42-9|Theorem §42.9: Lax Equivalence Theorem]]
 - [[§43 Weak and Weak-Star Convergence#^thm-43-10|Theorem §43.10: The Norm of a Weak-ast Limit]]
+- [[§45 Convergence of Operators#^thm-45-2|Theorem §45.2: Weakly Convergent Sequences of Operators are Bounded]]
 
 ## Connections
 - **How.** In the lecture: $\|x\|_2 = \|x\| + \sup_\alpha \|A_\alpha x\|$ is finite by hypothesis, is a norm, and is complete; it dominates $\|\cdot\|$, so the equivalent norm theorem ([[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]) gives $\sup_\alpha\|A_\alpha x\| \le C\|x\|$ ([[Functional Analysis Problem-Solving Techniques#^rem-t27|Technique 27]]). Lax applies the [[Baire Category Theorem]] directly ([[§42 Uniform Boundedness and Approximation#^rem-42-2|Remark: Other Proofs of the Principle]]).

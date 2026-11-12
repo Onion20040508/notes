@@ -77,6 +77,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6, 8, 10 and 15
 | [[§39 Solving Mx = y\|§39]]–[[§41 The Open Mapping Theorem and Its Consequences\|§41]] Solving $Mx = y$; Baire category; open mapping | Ch. 15 | §15.5 The open mapping principle: the image of the unit ball contains a ball (Thm 9), open mapping (Thm 10), Banach's inverse mapping theorem (Thm 11), closed maps and the closed graph theorem (definition before Thm 12, Thm 12), equivalent norms (Thm 13, for compatible norms), the Baire category principle (used in the proof of Thm 9, p. 169; sets of second category, Thm 16). |
 | [[§42 Uniform Boundedness and Approximation\|§42]] Uniform boundedness and approximation | §10.1; §15.2–15.3; §15.5; §34.3 | The second-category open mapping theorem is Lax's Thm 16 (§15.5, an exercise there, with $Y$ Banach; in the lecture $Y$ is normed, and it turns out complete). The second equivalent norm theorem is Thm 13 of §15.5. Uniform boundedness: Lax proves it from Baire in §10.1 (Thms 2–3) and for operators in §15.3 (Thm 7); the lecture derives it from the equivalent norm theorem with the norm $\\|x\\| + \sup_\alpha \\|A_\alpha x\\|$. Banach–Steinhaus: §15.2 Thm 6 and §15.3 Cor 7$'$. The Lax equivalence theorem is Thm 8 of §34.3, for semigroups; the lecture's version is for equations $T_n x = y$. |
 | [[§43 Weak and Weak-Star Convergence\|§43]] Weak and weak-star convergence | Ch. 10 (opening), §10.1, §10.3; §8.4 | Definition and Examples 1–2 open Lax's Ch. 10. The weak convergence criterion is §10.1 Thm 1 ($\Leftarrow$) with Thm 4$'$ (bounded); the norm bound Thm 5; Mazur's theorem Thm 6, proved there with support functions (§8.4 Thm 17), here with the separation theorem in normed spaces (as in the proof of Thm 17). Weak-$\ast$: the definition and Thm 11 of §10.3, the norm bound Exercise 6 there; Lax's example of weak-$\ast$ but not weak convergence (Example 5) uses measures on $[-1,1]$ instead of $\ell^1 = (c_0)'$. The weak-$\ast$ criterion is not in Lax. |
+| [[§44 Weak Sequential Compactness\|§44]] Weak sequential compactness | §10.2, Thms 7–10; §10.3, Thm 12; Ch. 12, Thm 3 | Helly's theorem is §10.3 Thm 12, there for the closed unit ball of the dual of a separable Banach space; the proof here is the lecture's diagonal process, written out. Eberlein's theorem is §10.2 Thm 7: Lax runs the diagonal process on a dense subset of $Y'$, the lecture deduces it from Helly's theorem applied to $X'$. The converse is Thm 8 (no proof in Lax), bounded closed convex sets Thm 9, the closest point Thm 10. Alaoglu's theorem is Ch. 12 Thm 3, for the weak-$\ast$ topology. The examples showing which hypotheses the sequential statements need are not in Lax. |
+| [[§45 Convergence of Operators\|§45]] Convergence of operators | §15.2; §15.3, Cor 7$'$ | Lax defines the uniform, strong and weak topologies of $\mathcal{L}(X, U)$ and the corresponding sequential convergence; the boundedness of weakly convergent sequences is Cor 7$'$. The shift examples are not in Lax, whose example in §15.2 is $M_n x = (a_n, 0, 0, \ldots)$. |
 | [[· 9 Functional Analysis and Quantum Mechanics\|Chapter 9]] (companion) | — | Dual spaces return in Lax Ch. 8. |
 
 ## C.4 Index of Lax Results Cited
@@ -199,9 +201,20 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6, 8, 10 and 15
 | §10.1, Thms 2–3 (proved from the Baire category principle); §15.3, Thm 7 (for operators, assuming only $\vert\ell(A_\alpha x)\vert\le c(x, \ell)$, with $Y$ Banach) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6\|§42.6]] | Uniform Boundedness Principle |
 | §10.1, Thms 4$'$ and 5 | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-4\|§43.4]] | The Norm of a Weak Limit |
 | §10.1, Thm 6 (for a closed convex $K$ containing the $x_n$; proved with support functions, §8.4 Thm 17) | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-7\|§43.7]] | Mazur's Theorem |
+| §10.2, definition | Definition [[§44 Weak Sequential Compactness#^def-44-1\|§44.1]] | Weakly Sequentially Compact Set |
+| §10.2, Thm 7 (stated for the closed unit ball) | Theorem [[§44 Weak Sequential Compactness#^thm-44-4\|§44.4]] | Eberlein's Theorem |
+| §10.2, Thm 7 | Corollary [[§44 Weak Sequential Compactness#^cor-44-5\|§44.5]] | Closed Balls of a Reflexive Space |
+| §10.2, Thm 8 (attributed to Eberlein; stated without proof) | Theorem [[§44 Weak Sequential Compactness#^thm-44-6\|§44.6]] | Weak Sequential Compactness of the Unit Ball Forces Reflexivity |
+| §10.2, Thm 9 | Corollary [[§44 Weak Sequential Compactness#^cor-44-7\|§44.7]] | Bounded Closed Convex Sets in a Reflexive Space |
+| §10.2, Thm 10 | Theorem [[§44 Weak Sequential Compactness#^thm-44-10\|§44.10]] | Closest Point in a Closed Convex Subset of a Reflexive Space |
 | §10.3, definition (there $X$ is a Banach space) | Definition [[§43 Weak and Weak-Star Convergence#^def-43-2\|§43.2]] | Weak-$\ast$ Convergence |
 | §10.3, Remark 1 (part (2)) | Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-8\|§43.8]] | Weak Implies Weak-$\ast$ |
+| §10.3, definition | Definition [[§44 Weak Sequential Compactness#^def-44-2\|§44.2]] | Weak-$\ast$ Sequentially Compact Set |
 | §10.3, Thm 11 (bounded) and Exercise 6 (the norm bound) | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-10\|§43.10]] | The Norm of a Weak-$\ast$ Limit |
+| §10.3, Thm 12 (for a separable Banach space, stated for the closed unit ball of $X'$; the name of Helly is Lax's) | Theorem [[§44 Weak Sequential Compactness#^thm-44-1\|§44.1]] | Helly's Theorem |
+| §10.3, Thm 12 | Corollary [[§44 Weak Sequential Compactness#^cor-44-2\|§44.2]] | Closed Balls in the Dual of a Separable Space |
+| Ch. 12, definition before Thm 3 | Definition [[§44 Weak Sequential Compactness#^def-44-3\|§44.3]] | Weak-$\ast$ Topology |
+| Ch. 12, Thm 3 | Theorem [[§44 Weak Sequential Compactness#^thm-44-9\|§44.9]] | Alaoglu's Theorem |
 | §15.1, definition of continuous map | Definition [[§30 Boundedness and Continuity#^def-30-1\|§30.1]] | Continuous Linear Map |
 | §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-2\|§30.2]] | Bounded Linear Map |
 | §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-3\|§30.3]] | Operator Norm |
@@ -209,8 +222,12 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6, 8, 10 and 15
 | §15.1, definition of $\mathcal{L}(X, U)$ | Definition [[§30 Boundedness and Continuity#^def-30-4\|§30.4]] | The Space $\mathcal{L}(X, Y)$ |
 | §15.1, Thm 1 | Proposition [[§30 Boundedness and Continuity#^prop-30-2\|§30.2]] | Continuous if and only if Bounded |
 | §15.1, Thms 2–3 | Theorem [[§30 Boundedness and Continuity#^thm-30-8\|§30.8]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |
+| §15.2 (the uniform topology of $\mathcal{L}(X, U)$) | Definition [[§45 Convergence of Operators#^def-45-1\|§45.1]] | Uniform Convergence of Operators |
+| §15.2, definition of strong sequential convergence | Definition [[§45 Convergence of Operators#^def-45-2\|§45.2]] | Strong Convergence of Operators |
+| §15.2, definition of weak sequential convergence, and (18) in §15.3 | Definition [[§45 Convergence of Operators#^def-45-3\|§45.3]] | Weak Convergence of Operators |
 | §15.2, Thm 6 (the direction $\Leftarrow$); §15.3, Thm 7 and Cor 7$'$ (the direction $\Rightarrow$) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-7\|§42.7]] | Banach–Steinhaus |
 | §15.2, Thm 6 | Proposition [[§42 Uniform Boundedness and Approximation#^prop-42-8\|§42.8]] | Banach–Steinhaus Without a Given Limit |
+| §15.3, Cor 7$'$ (for Banach spaces $X$, $U$) | Theorem [[§45 Convergence of Operators#^thm-45-2\|§45.2]] | Weakly Convergent Sequences of Operators are Bounded |
 | §15.5, proof of Thm 9 (“Baire category principle”), p. 169 | Theorem [[§40 The Baire Category Theorem#^thm-40-4\|§40.4]] | Baire Category Theorem |
 | §15.5, Thm 9 | Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1\|§41.1]] | The Image of the Unit Ball Contains a Ball About $0$ |
 | §15.5, Thm 10 (the open mapping principle) | Definition [[§39 Solving Mx = y#^def-39-3\|§39.3]] | Open Map |

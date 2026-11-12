@@ -6,7 +6,7 @@ tags: [quantum-field-theory, procedure]
 ---
 # P7 From ℳ to σ or Γ
 
-Turns an amplitude $\mathcal M$ into an observable: a differential or total cross section for two colliding particles, or a decay rate (width) and lifetime for one. The route is Yu's box ([[§C6b.2 Transition Probabilities in a Box|§C6b.2]]), with every factor traced to the state normalization; the wave-packet version ([[§C6b.8 Wave Packets and the Cross Section|§C6b.8]]–[[§C6b.9 Evaluating the Cross Section|§C6b.9]]) gives the same formula. Input: $i\mathcal M$ from [[P6 Tree Amplitude from a Lagrangian]]; conventions in [[Larsen PHY 513]].
+Turns an amplitude $\mathcal M$ into an observable: a differential or total cross section for two colliding particles, or a decay rate (width) and lifetime for one. The route is Yu's box ([[§C6b.2 Transition Probabilities in a Box|§C6b.2]]), with every factor traced to the state normalization; the wave-packet version ([[§C6b.8 Wave Packets and the Cross Section|§C6b.8]]–[[§C6b.9 Evaluating the Cross Section|§C6b.9]]) gives the same formula. Input: $i\mathcal M$ from [[P6 Tree Amplitude from a Lagrangian]], for particles with spin the spin-averaged $\lvert\mathcal M\rvert^2$ of [[P8 Unpolarized Cross Section from Diagrams]]; conventions in [[Larsen PHY 513]].
 
 ## Steps
 
@@ -38,7 +38,8 @@ Turns an amplitude $\mathcal M$ into an observable: a differential or total cros
 | General $2 \to 2$, CM frame | collision | [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4\|Theorem §C6b.4.4]] | [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1\|Theorem §C6b.4.1]] | PS (4.84) |
 | ★ Several decay channels | [[§C6b.5 Decay Widths#^thm-c6b-5-11\|★ Theorem §C6b.5.11]] (partial widths add) | | | |
 | ★ Three-body decay at rest | decay at rest; $\lvert\mathcal M\rvert^2$ in $s_{12}$, $s_{23}$ (★ [[§C6b.6 Decay Kinematics#^def-c6b-6-1\|Def. §C6b.6.1]]) | [[§C6b.5 Decay Widths#^thm-c6b-5-6\|Theorem §C6b.5.6]] | ★ [[§C6b.6 Decay Kinematics#^thm-c6b-6-7\|Theorem §C6b.6.7]] over the Dalitz region ★ [[§C6b.6 Decay Kinematics#^thm-c6b-6-8\|Theorem §C6b.6.8]] | $\Gamma_f = \frac{1}{S_{\rm id}}\frac{1}{256\pi^3m_A^3}\int ds_{12}\,ds_{23}\,\lvert\mathcal M\rvert^2$ |
-| QED processes | QFT C8 (planned) | | | |
+| $e^+e^- \to \mu^+\mu^-$ in QED (unpolarized, $m_e = 0$) | collision, CM frame; $\frac14\sum\lvert\mathcal M\rvert^2 = e^4[(1 + \frac{m_\mu^2}{E^2}) + (1 - \frac{m_\mu^2}{E^2})\cos^2\theta]$: [[§C8.8 The Unpolarized Cross Section for Muon Pair Production#^thm-c8-8-3\|Theorem §C8.8.3]] | [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4\|Theorem §C6b.4.4]] with $E_A = E_B = \frac12E_{\rm cm}$, $\lvert\mathbf v_A - \mathbf v_B\rvert = 2$: [[§C8.8 The Unpolarized Cross Section for Muon Pair Production#^thm-c8-8-4\|Theorem §C8.8.4]] | $S_{\rm id} = 1$, $\langle1 + \cos^2\theta\rangle = \frac43$: [[§C8.8 The Unpolarized Cross Section for Muon Pair Production#^thm-c8-8-5\|Theorem §C8.8.5]], [[§C8.8 The Unpolarized Cross Section for Muon Pair Production#^thm-c8-8-6\|Theorem §C8.8.6]] | $\frac{d\sigma}{d\Omega} = \frac{\alpha^2}{4E_{\rm cm}^2}\beta[\cdots]$; $\sigma_{\rm tot} \to \frac{4\pi\alpha^2}{3E_{\rm cm}^2}$; [[P8 Unpolarized Cross Section from Diagrams]] |
+| Further QED processes (Lectures 20–22) | QFT C8 (planned) | | | |
 
 ## Pitfalls
 

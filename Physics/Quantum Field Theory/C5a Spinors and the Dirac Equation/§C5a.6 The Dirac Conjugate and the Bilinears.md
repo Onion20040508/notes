@@ -177,6 +177,8 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.14 Gamma
 >
 > while $\bar\psi\gamma^5\psi$ is imaginary.
 >
+> Course form (Lecture 19): the same step with two different spinors is the rule for squaring an amplitude, $(\bar v\gamma^\mu u)^{\ast} = \bar u\gamma^\mu v$ ([[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-1|Theorem §C8.7.1]]).
+>
 > *Model:* none; *applies:* classical fields or c-number spinors, commuting components, any configuration (no field equation used).
 >
 > *Source: Yu §5.3, eqs. (5.97)–(5.101) · the user's PHY 513 notes, Ch. 8 §8.8 ("Yu (5.97)–(5.101) give the reality of the bilinears") · the user's pre-course notes, §5.3*

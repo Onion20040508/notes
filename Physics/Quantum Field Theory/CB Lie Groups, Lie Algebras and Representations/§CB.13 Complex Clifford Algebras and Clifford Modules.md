@@ -424,6 +424,7 @@ The definition uses one Hermitian basis; that the result does not depend on whic
 > **What the derivation shows**
 > - $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$, used in §C5a.1 as a matrix identity, says that the Dirac maps are self-adjoint for $h_D$ — not for the positive form $\chi^\dagger\psi$ (for which the $\gamma^i$ are anti-self-adjoint).
 > - ⚑ By-product: the normalization of $\bar\psi$ is a convention. Both signs $c = \pm1$ are used in the literature with other metric signatures; with $g = (+,-,-,-)$ the choice $c = 1$ makes $\bar uu = 2m > 0$ ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|Theorem §C5a.12.2]]).
+> - Part 2 is the case of the four Dirac maps of [[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-9-10|Theorem §CB.9.10]], consequence 2 (a nondegenerate Hermitian form for which all maps of an irreducible set are self-adjoint is unique up to a nonzero real factor); steps 2–4 are that proof written for $\gamma^0H$.
 > - Used next: which changes of basis keep $c = 1$ (Theorem §C5a.2.3).
 
 ^der-cb-13-16

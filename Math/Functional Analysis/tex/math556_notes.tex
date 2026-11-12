@@ -4468,7 +4468,7 @@ Here $H$ is complete and $K$ is nonempty and closed; what is missing is convexit
 \end{exbox}
 
 \begin{rembox}[Comparison with Lax]\label{rem:comparison-lax-5}
-The statement and proof are Lax's Theorem~6.2, which assumes $K$ nonempty; the hypothesis is needed (for $K = \varnothing$ the infimum is $+\infty$). Lax also proves the same result in any \emph{uniformly convex} Banach space (\S5.2, Theorem~8), where the parallelogram law is replaced by a quantitative form of the strict convexity of the unit ball; Hilbert spaces are the model case. Not covered in lecture.
+The statement and proof are Lax's Theorem~6.2, which assumes $K$ nonempty; the hypothesis is needed (for $K = \varnothing$ the infimum is $+\infty$). Existence, without uniqueness, holds in every reflexive Banach space (Theorem~\ref{thm:closest-reflexive}). Lax also proves the same result in any \emph{uniformly convex} Banach space (\S5.2, Theorem~8), where the parallelogram law is replaced by a quantitative form of the strict convexity of the unit ball; Hilbert spaces are the model case. Not covered in lecture.
 \end{rembox}
 
 \subsection{Orthogonal Complements}
@@ -9820,7 +9820,7 @@ In numerical analysis the three conditions have names. $M_n x \to Mx$ for every 
 \chapter{Weak Convergence}\label{ch:weak}
 %% >>> ADDED: chapter introduction (Claude)
 
-In finite dimensions every bounded sequence has a convergent subsequence; in infinite dimensions this fails (Theorem~\ref{thm:ball-noncompact}). This chapter weakens the notion of convergence, testing a sequence only against bounded linear functionals, to recover some of the compactness that is lost. The price is that weak limits are less well behaved: they need not respect norms or products.
+In finite dimensions every bounded sequence has a convergent subsequence; in infinite dimensions this fails (Theorem~\ref{thm:ball-noncompact}). This chapter weakens the notion of convergence, testing a sequence only against bounded linear functionals, to recover some of the compactness that is lost. The price is that weak limits are less well behaved: they need not respect norms or products. \S\ref{sec:weak-compact} collects the gain: bounded sequences have weak-$*$ convergent subsequences in the dual of a separable space and weakly convergent subsequences in a reflexive space, and closed convex sets in a reflexive space have closest points. \S\ref{sec:op-convergence} carries the modes of convergence over to sequences of operators.
 
 %% <<< END ADDED
 
@@ -10340,7 +10340,610 @@ Let $X$ be a Banach space, $\{\ell_n\}_{n=1}^\infty \subset X'$, $\ell_0 \in X'$
 For $\|x\| \le 1$, $|\ell_0(x)| = \lim_n |\ell_n(x)| = \liminf_n |\ell_n(x)| \le \liminf_n \|\ell_n\|\, \|x\| \le \liminf_n \|\ell_n\|$. Take the supremum over $\|x\| \le 1$.
 \end{proof}
 
-The remaining question is under what conditions a bounded sequence has a weak-$*$ convergent subsequence.
+The remaining question is under what conditions a bounded sequence has a weak-$*$ convergent subsequence; it is taken up in \S\ref{sec:weak-compact}.
+
+% ============================================================================
+% SECTION: WEAK SEQUENTIAL COMPACTNESS (Lecture 19)
+% Lecture 19 (2026-11-10). Source: the handwritten notes of the lecture (notebook pages 84--88, file Week 11/556notes11:11.pdf); no transcript.
+% Gaps filled from Lax, 10.2, 10.3, Ch. 12 and 15.2--15.3 (all checked in the book).
+% ============================================================================
+
+\section{Weak Sequential Compactness}\label{sec:weak-compact}
+
+\roadmark{Stage: maps}{Thread: compactness. A bounded sequence of functionals on a separable space has a weak-$*$ convergent subsequence (Helly); a bounded sequence in a reflexive space has a weakly convergent subsequence (Eberlein). With Mazur's theorem and the norm bound this produces closest points.}
+
+\textit{Lecture 19 (Tue Nov 10). Source: the handwritten notes of the lecture; there is no transcript. Statements and proofs follow the notes. The steps the notes leave out, and the examples marked as such, are filled in from Lax (\S10.2, \S10.3, Ch.~12). Two statements that the notes record without a hypothesis they need are stated here with it; the remarks after them say what was changed.}
+
+\subsection{The Question}
+
+Three modes of convergence are now available, in decreasing strength. In a normed linear space $X$, strong convergence implies weak convergence (Proposition~\ref{prop:weak-basic}(1)). In a dual space $X'$, weak convergence implies weak-$*$ convergence (Proposition~\ref{prop:weak-implies-weak-star-dual}(1)), and the two coincide when $X$ is reflexive, $X = X''$ (part (2) of that proposition).
+
+The question left open at the end of \S\ref{sec:weak}: let $\{x_n\}_{n=1}^\infty$ be a bounded sequence in $X$. Is there a subsequence $\{x_{n_j}\}_{j=1}^\infty$ that converges weakly, or (when $X$ is a dual space) in the weak-$*$ sense, to some $x_0 \in X$? For strong convergence the answer is no as soon as $X$ is infinite-dimensional, since the closed unit ball is then not compact (Theorem~\ref{thm:ball-noncompact}). In $\ell^2$, for instance, the bounded sequence $\{e_n\}$ of Example~\ref{ex:en-weak} has $\|e_n - e_m\| = \sqrt{2}$ for $n \neq m$, so none of its subsequences is Cauchy.
+
+\begin{defbox}[Weakly Sequentially Compact Set]\boxlabel{def:weakly-seq-compact}
+Let $X$ be a normed linear space and $C$ a subset of $X$. $C$ is \textbf{weakly sequentially compact} if every sequence $\{x_n\}_{n=1}^\infty \subset C$ has a subsequence $\{x_{n_j}\}_{j=1}^\infty$ and a point $x_0 \in C$ such that $x_{n_j} \rightharpoonup x_0$ as $j \to \infty$ (Definition~\ref{def:weak-conv}).
+\laxref{\S10.2, definition}
+\end{defbox}
+
+\begin{defbox}[{{Weak-$*$ Sequentially Compact Set}}]\boxlabel{def:weak-star-seq-compact}
+Let $X$ be a normed linear space and $C$ a subset of $X'$. $C$ is \textbf{weak-$*$ sequentially compact} if every sequence $\{\ell_n\}_{n=1}^\infty \subset C$ has a subsequence $\{\ell_{n_j}\}_{j=1}^\infty$ and a point $\ell_0 \in C$ such that $\ell_{n_j} \overset{*}{\rightharpoonup} \ell_0$ as $j \to \infty$ (Definition~\ref{def:weak-star}).
+\laxref{\S10.3, definition}
+\end{defbox}
+
+Both definitions copy Definition~\ref{def:sequentially-compact}, with strong convergence replaced by a weaker one. In both the limit is required to lie in $C$.
+
+\subsection{Helly's Theorem}
+
+\begin{thmbox}[Helly's Theorem]\boxlabel{thm:helly}
+Let $X$ be a separable normed linear space (Definition~\ref{def:separable}), and let $\{\ell_n\}_{n=1}^\infty$ be a bounded sequence in $X'$, with $M = \sup_n \|\ell_n\| < \infty$. Then there are a subsequence $\{\ell_{n_j}\}_{j=1}^\infty$ and some $\ell_0 \in X'$ such that
+\[
+\ell_{n_j} \overset{*}{\rightharpoonup} \ell_0 \qquad \text{as } j \to \infty .
+\]
+Moreover $\|\ell_0\| \le M$.
+\laxref{\S10.3, Thm~12 (for a separable Banach space, stated for the closed unit ball of $X'$; the name of Helly is Lax's)}
+\end{thmbox}
+
+\begin{proof}
+Step 1 produces the subsequence by a diagonal process, so that it converges at every point of a countable dense set. Step 2 extends the convergence to all of $X$, and Step 3 shows that the limit is a bounded linear functional.
+
+Let $D = \{y_k\}_{k=1}^\infty$ be a countable dense subset of $X$, listed as a sequence (with repetitions if $D$ is finite).
+
+\textbf{Step 1: a subsequence that converges on $D$.} For each fixed $y \in X$ the numbers $\ell_n(y)$ are bounded:
+\[
+|\ell_n(y)| \le \|\ell_n\|\, \|y\| \le M\, \|y\| \qquad \text{for all } n
+\]
+(Proposition~\ref{prop:op-norm}(b)). A bounded sequence in $\mathbb{F}$ has a convergent subsequence, by the Bolzano--Weierstrass theorem; for $\mathbb{F} = \mathbb{C}$ apply it to the real parts and then, along the subsequence obtained, to the imaginary parts.
+
+Apply this to $\{\ell_n(y_1)\}_{n}$: there are indices $n_{1,1} < n_{1,2} < n_{1,3} < \cdots$ such that $\{\ell_{n_{1,j}}(y_1)\}_{j=1}^\infty$ converges in $\mathbb{F}$. The sequence $\{\ell_{n_{1,j}}(y_2)\}_{j=1}^\infty$ is again bounded in $\mathbb{F}$, so the index sequence $\{n_{1,j}\}_j$ has a subsequence $n_{2,1} < n_{2,2} < \cdots$ such that $\{\ell_{n_{2,j}}(y_2)\}_{j=1}^\infty$ converges. Continue in the same way: if $\{n_{k,j}\}_{j=1}^\infty$ has been formed, then $\{\ell_{n_{k,j}}(y_{k+1})\}_{j=1}^\infty$ is bounded in $\mathbb{F}$, and $\{n_{k+1,j}\}_{j=1}^\infty$ is a subsequence of $\{n_{k,j}\}_{j=1}^\infty$ along which $\ell_{n_{k+1,j}}(y_{k+1})$ converges. This gives index sequences, each a subsequence of the one before,
+\[
+\{n_{1,j}\}_j \supset \{n_{2,j}\}_j \supset \cdots \supset \{n_{k,j}\}_j \supset \{n_{k+1,j}\}_j \supset \cdots .
+\]
+Put $z_k = \lim_{j \to \infty} \ell_{n_{k,j}}(y_k) \in \mathbb{F}$. Since a subsequence of a convergent sequence converges to the same limit,
+\[
+\lim_{j \to \infty} \ell_{n_{k,j}}(y_i) = z_i \qquad \text{for each } i = 1, \ldots, k .
+\]
+
+Now take the diagonal:
+\[
+n_j = n_{j,j}, \qquad \ell_{n_j} = \ell_{n_{j,j}}, \qquad j = 1, 2, \ldots .
+\]
+
+%% FIGURE (board): the diagonal array
+\begin{center}
+\begin{tikzpicture}[x=1.5cm, y=0.9cm]
+  \foreach \k in {1,2,3} {
+    \foreach \j in {1,2,3} \node at (\j,-\k) {$n_{\k,\j}$};
+    \node at (4,-\k) {$\cdots$};
+  }
+  \node at (2,-4) {$\vdots$};
+  \node at (4,-4) {$\ddots$};
+  \foreach \k in {1,2,3} \draw[red!70!black, thick] (\k,-\k) circle (0.42cm);
+  \foreach \k in {2,3} \node at (0.35,-\k) {$\supset$};
+  \node[right, font=\footnotesize] at (4.5,-1) {$\ell_{n_{1,j}}(y_1)$ converges};
+  \node[right, font=\footnotesize] at (4.5,-2) {$\ell_{n_{2,j}}(y_1)$, $\ell_{n_{2,j}}(y_2)$ converge};
+  \node[right, font=\footnotesize] at (4.5,-3) {$\ell_{n_{3,j}}(y_1)$, $\ell_{n_{3,j}}(y_2)$, $\ell_{n_{3,j}}(y_3)$ converge};
+\end{tikzpicture}
+\end{center}
+The diagonal process (the picture in the notes). Row $k$ is the index sequence $\{n_{k,j}\}_j$, a subsequence of the row above, along which $\ell_n(y_1), \ldots, \ell_n(y_k)$ converge. The circled diagonal $n_j = n_{j,j}$ is, from its $k$-th term on, a subsequence of row $k$, for every $k$.
+
+%% FILL-IN: the two properties of the diagonal that the notes use ("we know {l_{n_{j,j}}}_{j >= k} is contained in {l_{n_{k,j}}}").
+\emph{The $n_j$ increase strictly.} Since $\{n_{j+1,i}\}_i$ is a subsequence of $\{n_{j,i}\}_i$, its $(j+1)$-st term is the $m$-th term of $\{n_{j,i}\}_i$ for some $m \ge j+1$. So $n_{j+1} = n_{j+1,j+1} = n_{j,m} \ge n_{j,j+1} > n_{j,j} = n_j$.
+
+\emph{For each $k$, $\{n_j\}_{j \ge k}$ is a subsequence of $\{n_{k,j}\}_{j \ge 1}$.} For $j \ge k$ the number $n_j = n_{j,j}$ is a term of the $j$-th index sequence, hence of the $k$-th. As the $n_j$ increase strictly and $\{n_{k,i}\}_i$ is strictly increasing, the numbers $n_k < n_{k+1} < \cdots$ occur in $\{n_{k,i}\}_i$ at increasing positions.
+
+Consequently, for each fixed $k$,
+\[
+\ell_{n_{k,j}}(y_k) \to z_k \ \text{ as } j \to \infty \qquad \Longrightarrow \qquad \ell_{n_j}(y_k) \to z_k \ \text{ as } j \to \infty ,
+\]
+because $\{\ell_{n_j}(y_k)\}_{j \ge k}$ is a subsequence of the convergent sequence on the left. So $\{\ell_{n_j}\}_{j=1}^\infty$ is a subsequence of $\{\ell_n\}_{n=1}^\infty$ with
+\[
+\ell_{n_j}(y_k) \to z_k \in \mathbb{F} \qquad \text{for each } k, \text{ as } j \to \infty .
+\]
+
+\textbf{Step 2: the subsequence converges at every point of $X$.} We show that for every $x_0 \in X$ the sequence $\{\ell_{n_j}(x_0)\}_{j=1}^\infty$ is Cauchy in $\mathbb{F}$; since $\mathbb{F}$ is complete, it then converges. A bounded sequence of functionals that converges at every point of a dense set converges at every point.
+
+Let $x_0 \in X$ and $\varepsilon > 0$. We need $N$ such that $|\ell_{n_j}(x_0) - \ell_{n_k}(x_0)| < \varepsilon$ for all $j, k \ge N$. For every $y \in D$, by the triangle inequality, linearity, and $\|\ell_n\| \le M$ for all $n$,
+\begin{align*}
+|\ell_{n_j}(x_0) - \ell_{n_k}(x_0)| &\le |\ell_{n_j}(y) - \ell_{n_k}(y)| + |\ell_{n_j}(x_0 - y) - \ell_{n_k}(x_0 - y)| \\
+&\le |\ell_{n_j}(y) - \ell_{n_k}(y)| + 2M\, \|x_0 - y\| .
+\end{align*}
+First take $y_0 \in D$ with $2M\, \|x_0 - y_0\| < \frac{\varepsilon}{2}$, which is possible because $D$ is dense in $X$. Then take $N$ such that $|\ell_{n_j}(y_0) - \ell_{n_k}(y_0)| < \frac{\varepsilon}{2}$ for all $j, k \ge N$, which is possible because $\{\ell_{n_j}(y_0)\}_j$ converges by Step 1 and is therefore Cauchy. For $j, k \ge N$ the two terms add up to less than $\varepsilon$. So $\{\ell_{n_j}(x_0)\}_j$ is Cauchy in $\mathbb{F}$. (This step is Proposition~\ref{prop:banach-steinhaus-no-given-limit} with $Y = \mathbb{F}$.)
+
+\textbf{Step 3: the limit is a bounded linear functional.} Define
+\[
+\ell_0(x_0) := \lim_{j \to \infty} \ell_{n_j}(x_0), \qquad x_0 \in X ,
+\]
+which exists by Step 2. For $x, y \in X$ and $a, b \in \mathbb{F}$, by linearity of each $\ell_{n_j}$ and of limits,
+\[
+\ell_0(ax + by) = \lim_{j \to \infty} \ell_{n_j}(ax + by) = \lim_{j \to \infty} \bigl( a\, \ell_{n_j}(x) + b\, \ell_{n_j}(y) \bigr) = a\, \ell_0(x) + b\, \ell_0(y) ,
+\]
+so $\ell_0$ is linear. For $x \in X$,
+\[
+|\ell_0(x)| = \lim_{j \to \infty} |\ell_{n_j}(x)| \le M\, \|x\| ,
+\]
+since $|\ell_{n_j}(x)| \le M \|x\|$ for every $j$. So $\ell_0$ is bounded, $\ell_0 \in X'$, and $\|\ell_0\| \le M$. Finally, $\ell_{n_j}(x) \to \ell_0(x)$ for every $x \in X$ is the definition of $\ell_{n_j} \overset{*}{\rightharpoonup} \ell_0$ (Definition~\ref{def:weak-star}).
+\end{proof}
+
+\begin{corbox}[{{Closed Balls in the Dual of a Separable Space}}]\boxlabel{cor:helly-ball}
+Let $X$ be a separable normed linear space and $R \ge 0$. Then the closed ball $\{ \ell \in X' : \|\ell\| \le R \}$ of $X'$ is weak-$*$ sequentially compact (Definition~\ref{def:weak-star-seq-compact}).
+\laxref{\S10.3, Thm~12}
+\end{corbox}
+
+\begin{proof}
+Let $\{\ell_n\}$ be a sequence in the ball, so $\sup_n \|\ell_n\| \le R$. By Theorem~\ref{thm:helly} a subsequence converges in the weak-$*$ sense to some $\ell_0 \in X'$ with $\|\ell_0\| \le \sup_n \|\ell_n\| \le R$. So $\ell_0$ lies in the ball.
+\end{proof}
+
+\begin{rembox}[{{Which Sets in $X'$ are Weak-$*$ Sequentially Compact}}]\label{rem:helly-which-sets}
+In the notes of the lecture the corollary reads: if $X$ is separable, any bounded closed convex set in $X'$ is weak-$*$ sequentially compact. For a sequence in a bounded set $C \subset X'$, Helly's theorem gives a subsequence with a weak-$*$ limit $\ell_0 \in X'$; the definition asks in addition that $\ell_0 \in C$. For a closed ball this is the bound $\|\ell_0\| \le M$ of the theorem. For a convex set that is only closed in the norm of $X'$ it can fail (Example~\ref{ex:weak-star-not-compact}), so the corollary is stated here for balls, as in Lax. For every bounded closed convex subset of $X'$ the statement is true when $X$ is reflexive (Corollary~\ref{cor:reflexive-dual-convex-compact}).
+\end{rembox}
+
+\begin{exbox}[{{A Bounded Closed Convex Set that is Not Weak-$*$ Sequentially Compact}}]\boxlabel{ex:weak-star-not-compact}
+\textit{(Not from lecture.)} Let $X = c_0$, which is separable (Proposition~\ref{prop:c0}), and identify $X'$ with $\ell^1$ by $a \mapsto \ell_a$, $\ell_a(x) = \sum_{j} x_j\, \overline{a_j}$ (Proposition~\ref{prop:c0-dual}). The set
+\[
+C = \Bigl\{ \ell_a : a \in \ell^1,\ \|a\|_1 \le 1,\ \sum_{j=1}^\infty a_j = 1 \Bigr\} \subset X'
+\]
+is bounded, convex, and closed in the norm of $X'$, but it is not weak-$*$ sequentially compact.
+\end{exbox}
+
+\begin{proof}
+For $a \in \ell^1$ write $s(a) = \sum_{j=1}^\infty a_j$. The series converges absolutely, $s$ is linear on $\ell^1$, and $|s(a)| \le \|a\|_1$. By Proposition~\ref{prop:c0-dual}, $\|\ell_a\| = \|a\|_1$ and $\ell_a - \ell_b = \ell_{a - b}$ for $a, b \in \ell^1$.
+
+\emph{Bounded.} $\|\ell_a\| = \|a\|_1 \le 1$ for $\ell_a \in C$.
+
+\emph{Convex.} Let $\ell_a, \ell_b \in C$ and $0 \le t \le 1$. Since $t$ is real, $t\, \ell_a + (1 - t)\, \ell_b = \ell_c$ with $c = t a + (1 - t) b$. Then $\|c\|_1 \le t \|a\|_1 + (1 - t) \|b\|_1 \le 1$ and $s(c) = t\, s(a) + (1 - t)\, s(b) = 1$, so $\ell_c \in C$.
+
+\emph{Closed.} Let $\ell_{a^{(k)}} \in C$ converge in $X'$ to some $\ell$. By Proposition~\ref{prop:c0-dual}(2), $\ell = \ell_a$ for some $a \in \ell^1$, and $\|a^{(k)} - a\|_1 = \|\ell_{a^{(k)}} - \ell_a\| \to 0$. So $\|a\|_1 = \lim_k \|a^{(k)}\|_1 \le 1$ (Proposition~\ref{prop:norm-continuous}), and $|s(a) - 1| = |s(a - a^{(k)})| \le \|a - a^{(k)}\|_1 \to 0$, so $s(a) = 1$. Hence $\ell \in C$.
+
+\emph{Not weak-$*$ sequentially compact.} Let $e_n = (0, \ldots, 0, 1, 0, \ldots) \in \ell^1$, with the $1$ in the $n$-th place. Then $\|e_n\|_1 = 1$ and $s(e_n) = 1$, so $\ell_{e_n} \in C$. For every $x \in c_0$, $\ell_{e_n}(x) = x_n \to 0$ as $n \to \infty$. So $\ell_{e_n} \overset{*}{\rightharpoonup} 0$, and every subsequence of $\{\ell_{e_n}\}$ converges in the weak-$*$ sense to the zero functional as well. A weak-$*$ limit is a pointwise limit and therefore unique, so no subsequence has any other weak-$*$ limit. The zero functional is $\ell_a$ only for $a = 0$ (the map $a \mapsto \ell_a$ is one-to-one), and $s(0) = 0 \neq 1$; so it is not in $C$. No subsequence of $\{\ell_{e_n}\} \subset C$ converges in the weak-$*$ sense to a point of $C$.
+\end{proof}
+
+\subsection{Eberlein's Theorem}
+
+In a reflexive space, Helly's theorem applies to $X'' = X$ and gives weakly convergent subsequences. Helly's theorem needs a separable space, and a reflexive space need not be separable; the proof therefore passes to the closed linear span of the given sequence. That this span is separable is the following lemma.
+
+\begin{lembox}[The Closed Span of a Countable Set is Separable]\boxlabel{lem:countable-span-separable}
+\textit{(Not from lecture; filled in.)} Let $X$ be a normed linear space over $\mathbb{F}$ and $\{z_j\}_{j=1}^\infty \subset X$. Then $X_0 = \overline{\operatorname{span}}\, \{z_j\}_{j=1}^\infty$ (Definition~\ref{def:closed-span}), with the norm of $X$, is a separable normed linear space.
+\end{lembox}
+
+\begin{proof}
+$X_0$ is a linear subspace of $X$ (Lemma~\ref{lem:closed-span-smallest}(1)), so it is a normed linear space in the norm of $X$. Let $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q}$ if $\mathbb{F} = \mathbb{R}$ and $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q} + i\mathbb{Q}$ if $\mathbb{F} = \mathbb{C}$, a countable dense subset of $\mathbb{F}$, and
+\[
+D_1 = \Bigl\{ \sum_{j=1}^n a_j z_j : n \in \mathbb{N},\ a_1, \ldots, a_n \in \mathbb{Q}_{\mathbb{F}} \Bigr\} \subset X_0 .
+\]
+
+\emph{$D_1$ is countable.} For each $n$ the $n$-tuples $(a_1, \ldots, a_n)$ of elements of the countable set $\mathbb{Q}_{\mathbb{F}}$ form a countable set, and $D_1$ is the union over $n \in \mathbb{N}$ of the images of these sets; a countable union of countable sets is countable.
+
+\emph{$D_1$ is dense in $X_0$.} Let $x \in X_0$ and $\varepsilon > 0$. Since $X_0$ is the closure of $\operatorname{span}\{z_j\}$, there is a finite linear combination $z = \sum_{j=1}^n c_j z_j$, $c_j \in \mathbb{F}$, with $\|x - z\| < \frac{\varepsilon}{2}$. Since $\mathbb{Q}_{\mathbb{F}}$ is dense in $\mathbb{F}$, there are $a_j \in \mathbb{Q}_{\mathbb{F}}$ with $|c_j - a_j|\, \|z_j\| < \frac{\varepsilon}{2n}$ for $j = 1, \ldots, n$. Then $w = \sum_{j=1}^n a_j z_j \in D_1$ and
+\[
+\|x - w\| \le \|x - z\| + \sum_{j=1}^n |c_j - a_j|\, \|z_j\| < \frac{\varepsilon}{2} + n \cdot \frac{\varepsilon}{2n} = \varepsilon .
+\]
+So $X_0$ has a countable dense subset: it is separable (Definition~\ref{def:separable}).
+\end{proof}
+
+\begin{thmbox}[Eberlein's Theorem]\boxlabel{thm:eberlein}
+Let $X$ be a reflexive Banach space (Definition~\ref{def:reflexive}). Then every bounded sequence $\{x_n\}_{n=1}^\infty$ in $X$ has a subsequence $\{x_{n_j}\}_{j=1}^\infty$ that converges weakly to some element $x_0 \in X$.
+\laxref{\S10.2, Thm~7 (stated for the closed unit ball)}
+\end{thmbox}
+
+\begin{proof}
+Let $i : X \to X''$, $i(x)(\ell) = \ell(x)$, be the canonical embedding (Proposition~\ref{prop:canonical-embedding}); $X$ reflexive means that $i$ is onto.
+
+\textbf{Case 1: $X$ is separable.} Since $X$ is reflexive and separable, $X'$ is separable (Corollary~\ref{cor:reflexive-sep}). Let $\{x_n\}$ be a bounded sequence in $X$ and put $\eta_n = i(x_n) \in X''$. Then $\|\eta_n\| = \|x_n\|$, so $\{\eta_n\}$ is a bounded sequence in $X'' = (X')'$, the dual of the separable normed linear space $X'$. By Helly's theorem (Theorem~\ref{thm:helly}, with $X'$ in place of $X$) there are a subsequence $\{\eta_{n_j}\}$ and some $\eta_0 \in X''$ with $\eta_{n_j} \overset{*}{\rightharpoonup} \eta_0$, that is,
+\[
+\eta_{n_j}(\ell) \to \eta_0(\ell) \qquad \text{for all } \ell \in X' .
+\]
+Since $i$ is onto, $\eta_0 = i(x_0)$ for some $x_0 \in X$. As $\eta_{n_j}(\ell) = \ell(x_{n_j})$ and $\eta_0(\ell) = \ell(x_0)$, this reads
+\[
+\ell(x_{n_j}) \to \ell(x_0) \qquad \text{for all } \ell \in X' , \qquad \text{i.e.} \qquad x_{n_j} \rightharpoonup x_0 .
+\]
+
+\textbf{Case 2: $X$ is any reflexive Banach space.} Let $\{x_n\}$ be a bounded sequence in $X$ and define
+\[
+X_0 = \overline{\operatorname{span}}\, \{x_n\}_{n=1}^\infty .
+\]
+$X_0$ is a closed linear subspace of $X$ (Lemma~\ref{lem:closed-span-smallest}(1)); it is separable (Lemma~\ref{lem:countable-span-separable}), and it is reflexive, as a closed linear subspace of a reflexive Banach space (Theorem~\ref{thm:reflexive-subspace}): $X_0 = X_0''$. The sequence $\{x_n\}$ lies in $X_0$ and is bounded there. By Case 1, applied to $X_0$, there are a subsequence $\{x_{n_j}\}$ and some $x_0 \in X_0 \subset X$ such that
+\[
+m(x_{n_j}) \to m(x_0) \quad \text{as } j \to \infty, \qquad \text{for all } m \in X_0' .
+\]
+We want: $\ell(x_{n_j}) \to \ell(x_0)$ for all $\ell \in X'$. Let $\ell \in X' = \mathcal{L}(X, \mathbb{F})$ and let $m = \ell|_{X_0}$ be its restriction to $X_0$, that is, $m(x) = \ell(x)$ for all $x \in X_0$. Then $m$ is linear and $|m(x)| \le \|\ell\|\, \|x\|$ on $X_0$, so $m \in X_0'$, and therefore $m(x_{n_j}) \to m(x_0)$. But $m(x_{n_j}) = \ell(x_{n_j})$ and, since $x_0 \in X_0$, $m(x_0) = \ell(x_0)$. Hence $\ell(x_{n_j}) \to \ell(x_0)$ as $j \to \infty$, for every $\ell \in X'$: $x_{n_j} \rightharpoonup x_0$ in $X$.
+\end{proof}
+
+\begin{corbox}[{{Closed Balls of a Reflexive Space}}]\boxlabel{cor:reflexive-ball}
+Let $X$ be a reflexive Banach space and $R \ge 0$. Then the closed ball $\{ x \in X : \|x\| \le R \}$ is weakly sequentially compact (Definition~\ref{def:weakly-seq-compact}).
+\laxref{\S10.2, Thm~7}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Let $\{x_n\}$ be a sequence with $\|x_n\| \le R$. By Theorem~\ref{thm:eberlein} a subsequence $\{x_{n_j}\}$ converges weakly to some $x_0 \in X$, and by Theorem~\ref{thm:weak-lsc}, $\|x_0\| \le \liminf_{j \to \infty} \|x_{n_j}\| \le R$. So $x_0$ lies in the ball.
+\end{proof}
+
+\begin{thmbox}[{{Weak Sequential Compactness of the Unit Ball Forces Reflexivity}}]\boxlabel{thm:eberlein-converse}
+Let $X$ be a normed linear space. If the closed unit ball $\{ x \in X : \|x\| \le 1 \}$ of $X$ is weakly sequentially compact, then $X$ is a reflexive Banach space.
+\laxref{\S10.2, Thm~8 (attributed to Eberlein; stated without proof)}
+\end{thmbox}
+
+\begin{proof}[Proof (not given in this course)]
+Stated in lecture without proof, under the name of Eberlein; Lax also states it without proof. With Corollary~\ref{cor:reflexive-ball} it says that the closed unit ball of a Banach space is weakly sequentially compact if and only if the space is reflexive.
+\end{proof}
+
+\begin{corbox}[{{Bounded Closed Convex Sets in a Reflexive Space}}]\boxlabel{cor:reflexive-convex-compact}
+Let $X$ be a reflexive Banach space. Then every bounded closed convex subset $K$ of $X$ is weakly sequentially compact.
+\laxref{\S10.2, Thm~9}
+\end{corbox}
+
+\begin{proof}
+\textit{(Stated in lecture without proof; filled in, following Lax.)} Let $\{x_n\}$ be a sequence in $K$. It is bounded, since $K$ is. By Theorem~\ref{thm:eberlein} there are a subsequence $\{x_{n_j}\}$ and $x_0 \in X$ with $x_{n_j} \rightharpoonup x_0$. It remains to show $x_0 \in K$.
+
+By Mazur's theorem (Theorem~\ref{thm:mazur}), applied to the sequence $\{x_{n_j}\}_j$, for every $k \in \mathbb{N}$ there is a convex combination $u_k$ of finitely many terms of $\{x_{n_j}\}_j$ with $\|x_0 - u_k\| < \frac1k$. The terms $x_{n_j}$ lie in the convex set $K$, and a convex set contains the finite convex combinations of its points (by induction on the number of points, as in the paragraph after the proof of Theorem~\ref{thm:mazur}); so $u_k \in K$. Thus $u_k \to x_0$ with $u_k \in K$, and since $K$ is closed, $x_0 \in K$ (Definition~\ref{def:closed}).
+\end{proof}
+
+\begin{corbox}[{{Bounded Closed Convex Sets in the Dual of a Reflexive Space}}]\boxlabel{cor:reflexive-dual-convex-compact}
+\textit{(Not from lecture.)} Let $X$ be a reflexive normed linear space. Then every bounded convex subset $C$ of $X'$ that is closed in the norm of $X'$ is weak-$*$ sequentially compact.
+\end{corbox}
+
+\begin{proof}
+$X$ is a Banach space (Proposition~\ref{prop:reflexive-banach}), so $X'$ is reflexive (Theorem~\ref{thm:reflexive-dual}), and $X'$ is a Banach space (Corollary~\ref{cor:dual-banach}). Let $\{\ell_n\}$ be a sequence in $C$. By Corollary~\ref{cor:reflexive-convex-compact}, applied to the reflexive Banach space $X'$ and its bounded closed convex subset $C$, there are a subsequence $\{\ell_{n_j}\}$ and $\ell_0 \in C$ with $\ell_{n_j} \rightharpoonup \ell_0$ weakly in $X'$. Weak convergence in $X'$ implies weak-$*$ convergence (Proposition~\ref{prop:weak-implies-weak-star-dual}(1)), so $\ell_{n_j} \overset{*}{\rightharpoonup} \ell_0 \in C$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, every node/.style={font=\small}]
+  \node[draw, rounded corners, align=center, text width=7.6cm, fill=blue!8] (H) at (0,0) {\textbf{Helly.} $X$ separable: a bounded sequence in $X'$ has a weak-$*$ convergent subsequence.};
+  \node[draw, rounded corners, align=center, text width=7.6cm, fill=blue!8] (E) at (0,-2.6) {\textbf{Eberlein.} $X$ reflexive: a bounded sequence in $X$ has a weakly convergent subsequence.};
+  \node[draw, rounded corners, align=center, text width=7.6cm, fill=blue!8] (K) at (0,-5.2) {$X$ reflexive: bounded closed convex sets are weakly sequentially compact.};
+  \node[draw, rounded corners, align=center, text width=7.6cm, fill=blue!8] (P) at (0,-7.8) {$X$ reflexive: every closed convex set has a closest point to any given point.};
+  \draw[->, thick] (H) -- node[right, align=left, font=\footnotesize] {apply to $X'$, whose dual is $X'' = X$;\\ first reduce to $\overline{\operatorname{span}}\,\{x_n\}$, which is separable} (E);
+  \draw[->, thick] (E) -- node[right, align=left, font=\footnotesize] {Mazur: the weak limit stays in\\ a closed convex set} (K);
+  \draw[->, thick] (K) -- node[right, align=left, font=\footnotesize] {the norm of a weak limit is at most\\ the $\liminf$ of the norms} (P);
+  \node[draw, dashed, rounded corners, align=center, text width=4.6cm, fill=red!6] (A) at (8.6,0) {\textbf{Alaoglu.} Any $X$: the closed unit ball of $X'$ is weak-$*$ compact, as a topological space.};
+  \draw[dashed] (H) -- node[above, font=\footnotesize] {no sequences} (A);
+\end{tikzpicture}
+\end{center}
+How the results of this section depend on each other. Each arrow names what is added. Alaoglu's theorem (below) drops separability, at the price of replacing subsequences by compactness in a topology.
+%% <<< END ADDED
+
+\subsection{Alaoglu's Theorem}
+
+Helly's theorem asks for a separable $X$. For sequences this hypothesis cannot be dropped.
+
+\begin{exbox}[{{A Bounded Sequence in $(\ell^\infty)'$ with No Weak-$*$ Convergent Subsequence}}]\boxlabel{ex:linfty-no-weak-star-subsequence}
+\textit{(Not from lecture.)} Let $X = \ell^\infty$, which is not separable (Proposition~\ref{prop:linfty-nonsep}), and let $\delta_n(x) = x_n$ be the $n$-th coordinate of $x = (x_1, x_2, \ldots) \in \ell^\infty$. Then $\delta_n \in X'$ with $\|\delta_n\| = 1$, and no subsequence of $\{\delta_n\}_{n=1}^\infty$ converges in the weak-$*$ sense.
+\end{exbox}
+
+\begin{proof}
+$\delta_n$ is linear and $|\delta_n(x)| = |x_n| \le \|x\|_\infty$, so $\delta_n \in X'$ with $\|\delta_n\| \le 1$; and $\delta_n(e_n) = 1$ for the sequence $e_n \in \ell^\infty$ with $1$ in the $n$-th place and $0$ elsewhere, $\|e_n\|_\infty = 1$, so $\|\delta_n\| = 1$.
+
+Let $n_1 < n_2 < \cdots$ be any sequence of indices. Define $x \in \ell^\infty$ by $x_{n_j} = (-1)^j$ for $j = 1, 2, \ldots$ and $x_i = 0$ for all other $i$; then $\|x\|_\infty = 1$. The numbers $\delta_{n_j}(x) = (-1)^j$ do not converge as $j \to \infty$. So $\{\delta_{n_j}\}$ does not converge at the point $x$, and hence has no weak-$*$ limit (Definition~\ref{def:weak-star}).
+\end{proof}
+
+What holds without separability is compactness in a topology on $X'$, not compactness for sequences.
+
+\begin{defbox}[{{Weak-$*$ Topology}}]\boxlabel{def:weak-star-topology}
+\textit{(Not from lecture; needed to state Alaoglu's theorem.)} Let $X$ be a normed linear space. A subset $U \subset X'$ is \textbf{weak-$*$ open} if for every $\ell_1 \in U$ there are finitely many points $x_1, \ldots, x_k \in X$ and $\varepsilon > 0$ such that
+\[
+\bigl\{ \ell \in X' : |\ell(x_i) - \ell_1(x_i)| < \varepsilon \text{ for } i = 1, \ldots, k \bigr\} \subset U .
+\]
+The collection of weak-$*$ open sets is the \textbf{weak-$*$ topology} of $X'$. It is the coarsest topology on $X'$ in which every function $\ell \mapsto \ell(x)$, $x \in X$, is continuous.
+\laxref{Ch.~12, definition before Thm~3}
+\end{defbox}
+
+\begin{defbox}[{{Weak-$*$ Compact Set}}]\boxlabel{def:weak-star-compact}
+\textit{(Not from lecture.)} Let $X$ be a normed linear space. A subset $K \subset X'$ is \textbf{weak-$*$ compact} if every collection of weak-$*$ open sets (Definition~\ref{def:weak-star-topology}) whose union contains $K$ has a finite subcollection whose union still contains $K$. This is Definition~\ref{def:compact} with weak-$*$ open sets in place of open sets.
+\end{defbox}
+
+\begin{thmbox}[Alaoglu's Theorem]\boxlabel{thm:alaoglu}
+Let $X$ be a normed linear space. Then the closed unit ball $\{ \ell \in X' : \|\ell\| \le 1 \}$ of $X'$ is weak-$*$ compact (Definition~\ref{def:weak-star-compact}).
+\laxref{Ch.~12, Thm~3}
+\end{thmbox}
+
+\begin{proof}[Proof (not given in this course)]
+Stated in lecture without proof. Lax's proof regards a functional $\ell$ with $\|\ell\| \le 1$ as the point $(\ell(x))_{x \in X}$ of the product of the compact sets $\{ c \in \mathbb{F} : |c| \le \|x\| \}$, $x \in X$. The product is compact by Tychonoff's theorem, the weak-$*$ topology of the ball is the topology it inherits from the product, and the image of the ball is closed in the product.
+\end{proof}
+
+\begin{rembox}[Alaoglu's Theorem and Sequences]\label{rem:alaoglu-sequences}
+In the notes of the lecture the theorem reads: for a normed linear space $X$, any bounded sequence in $X'$ has a weak-$*$ convergent subsequence. In this sequential form the statement is Helly's theorem (Theorem~\ref{thm:helly}), and it needs $X$ separable: for $X = \ell^\infty$ it fails (Example~\ref{ex:linfty-no-weak-star-subsequence}). Alaoglu's theorem has no separability hypothesis, and its conclusion is compactness in the weak-$*$ topology; for a space $X$ that is not separable this does not provide convergent subsequences.
+\end{rembox}
+
+\subsection{The Closest Point in a Reflexive Space}
+
+In a Hilbert space every nonempty closed convex set has a unique closest point to any given point (Theorem~\ref{thm:projection}); the proof used the parallelogram law to show that a minimizing sequence is Cauchy. In a reflexive Banach space there is no parallelogram law, but a minimizing sequence still has a weakly convergent subsequence, and that is enough for existence.
+
+\begin{thmbox}[{{Closest Point in a Closed Convex Subset of a Reflexive Space}}]\boxlabel{thm:closest-reflexive}
+Let $X$ be a reflexive Banach space, $K$ a nonempty closed convex subset of $X$, and $x_0 \in X$. Then there is $y_0 \in K$ such that
+\[
+\operatorname{dist}(x_0, K) := \inf_{y \in K} \|x_0 - y\| = \|x_0 - y_0\| .
+\]
+\laxref{\S10.2, Thm~10}
+\end{thmbox}
+
+\begin{proof}
+Let $d = \inf_{y \in K} \|x_0 - y\|$; it is a finite number $\ge 0$ because $K$ is nonempty. We find $y_0 \in K$ with $\|x_0 - y_0\| \le d$; since $\|x_0 - y_0\| \ge d$ for every point of $K$, this proves the theorem.
+
+\textbf{Step 1: a minimizing sequence.} By the definition of the infimum, for every $n \in \mathbb{N}$ there is $y_n \in K$ with
+\[
+d \le \|x_0 - y_n\| < d + \frac1n .
+\]
+So $\|y_n - x_0\| < d + 1$ for all $n$: $\{y_n - x_0\}$ is a bounded sequence in $X$, and $\|y_n - x_0\| \to d$.
+
+\textbf{Step 2: a weakly convergent subsequence.} By Eberlein's theorem (Theorem~\ref{thm:eberlein}) there are a subsequence $\{y_{n_j}\}$ and a point of $X$, which we write as $y_0 - x_0$, such that
+\[
+y_{n_j} - x_0 \rightharpoonup y_0 - x_0 \qquad \text{as } j \to \infty .
+\]
+Then also $y_{n_j} \rightharpoonup y_0$, since $\ell(y_{n_j}) = \ell(y_{n_j} - x_0) + \ell(x_0) \to \ell(y_0 - x_0) + \ell(x_0) = \ell(y_0)$ for every $\ell \in X'$.
+
+\textbf{Step 3: $y_0 \in K$.} %% FILL-IN: the notes write "Mazur" next to this step.
+By Mazur's theorem (Theorem~\ref{thm:mazur}), $y_0$ lies in the closed convex hull of $\{y_{n_j}\}_j$: for every $k$ there is a finite convex combination $u_k$ of the points $y_{n_j} \in K$ with $\|y_0 - u_k\| < \frac1k$. As in the proof of Corollary~\ref{cor:reflexive-convex-compact}, $u_k \in K$ because $K$ is convex, and $y_0 = \lim_k u_k \in K$ because $K$ is closed.
+
+\textbf{Step 4: $y_0$ is a closest point.} Since $y_0 \in K$, $d \le \|y_0 - x_0\|$. By the bound for the norm of a weak limit (Theorem~\ref{thm:weak-lsc}), applied to $y_{n_j} - x_0 \rightharpoonup y_0 - x_0$, and by Step 1,
+\[
+d \le \|y_0 - x_0\| \le \liminf_{j \to \infty} \|y_{n_j} - x_0\| = d .
+\]
+So $\|x_0 - y_0\| = d$.
+\end{proof}
+
+%% FIGURE (board): x_0, K, y_0
+\begin{center}
+\begin{tikzpicture}[scale=1.1]
+  \draw[thick] (0,0) circle (1);
+  \node at (-0.2,-0.25) {$K$};
+  \fill (0.5,2.4) circle (1.6pt) node[right] {$x_0$};
+  \draw[dashed] (0.5,2.4) -- (0.204,0.979);
+  \fill (0.204,0.979) circle (1.6pt) node[below] {$y_0$};
+  \node[left, font=\footnotesize] at (0.33,1.7) {$d$};
+\end{tikzpicture}
+\end{center}
+The closest point (the picture in the notes): $y_0 \in K$ with $\|x_0 - y_0\| = d = \operatorname{dist}(x_0, K)$.
+
+The theorem gives existence only. Uniqueness, which holds in a Hilbert space, can fail; and existence can fail when $X$ is not reflexive. The next lemma supplies a reflexive space for the first example.
+
+\begin{lembox}[Finite-Dimensional Normed Spaces are Reflexive]\boxlabel{lem:findim-reflexive}
+\textit{(Not from lecture.)} Let $X$ be a finite-dimensional normed linear space. Then $X$ is reflexive.
+\end{lembox}
+
+\begin{proof}
+If $X = \{0\}$, then $X' = \{0\}$ and $X'' = \{0\}$, and $i$ is onto. Let $n = \dim X \ge 1$ and let $e_1, \ldots, e_n$ be a basis of $X$.
+
+\emph{$\dim X' = n$.} Every linear functional on $X$ is bounded (Proposition~\ref{prop:findim-bounded}), so $X'$ consists of all linear functionals on $X$. For $k = 1, \ldots, n$ let $\varepsilon_k$ be the $k$-th coordinate functional, $\varepsilon_k\bigl( \sum_{i=1}^n a_i e_i \bigr) = a_k$. Every linear $\ell$ satisfies $\ell\bigl( \sum_i a_i e_i \bigr) = \sum_i a_i\, \ell(e_i)$, i.e.\ $\ell = \sum_{k=1}^n \ell(e_k)\, \varepsilon_k$; so the $\varepsilon_k$ span $X'$. They are linearly independent: if $\sum_k c_k \varepsilon_k = 0$, evaluating at $e_i$ gives $c_i = 0$. So $\varepsilon_1, \ldots, \varepsilon_n$ is a basis of $X'$.
+
+\emph{$i$ is onto.} Applying the previous step to the $n$-dimensional normed linear space $X'$ gives $\dim X'' = n$. The canonical embedding $i : X \to X''$ is linear and an isometry (Proposition~\ref{prop:canonical-embedding}), hence one-to-one (Lemma~\ref{lem:linear-isometries}(2)). So $i(e_1), \ldots, i(e_n)$ are linearly independent in $X''$: if $\sum_k c_k\, i(e_k) = i\bigl( \sum_k c_k e_k \bigr) = 0$, then $\sum_k c_k e_k = 0$ and all $c_k = 0$. Being $n$ linearly independent vectors in a space of dimension $n$, they span $X''$. So $i$ is onto, and $X$ is reflexive (Definition~\ref{def:reflexive}).
+\end{proof}
+
+\begin{exbox}[The Closest Point Need Not be Unique]\boxlabel{ex:closest-not-unique}
+\textit{(Not from lecture.)} Let $X = \mathbb{R}^2$ with the maximum norm $\|x\|_\infty = \max\{|x_1|, |x_2|\}$, a reflexive Banach space (Lemma~\ref{lem:findim-reflexive}). Let $K = \{ x \in \mathbb{R}^2 : x_1 \ge 1 \}$ and $x_0 = 0$. Then $K$ is nonempty, closed and convex, $\operatorname{dist}(x_0, K) = 1$, and every point $(1, t)$ with $|t| \le 1$ is a closest point of $K$ to $x_0$.
+\end{exbox}
+
+\begin{proof}
+$K$ is nonempty, and it is convex: if $x_1 \ge 1$ and $y_1 \ge 1$, then $s x_1 + (1 - s) y_1 \ge 1$ for $0 \le s \le 1$. It is closed: if $x^{(k)} \in K$ and $\|x^{(k)} - x\|_\infty \to 0$, then $x^{(k)}_1 \to x_1$, so $x_1 \ge 1$. For $x \in K$, $\|x - 0\|_\infty \ge |x_1| \ge 1$, so $\operatorname{dist}(0, K) \ge 1$; and for $|t| \le 1$, $(1, t) \in K$ with $\|(1, t)\|_\infty = \max\{1, |t|\} = 1$. So the distance is $1$, and it is attained at every $(1, t)$, $|t| \le 1$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth]
+  \begin{scope}
+    \fill[blue!12] (1,-1.7) rectangle (2.6,1.7);
+    \draw[blue!60!black, thick] (1,-1.7) -- (1,1.7);
+    \draw[->] (-1.6,0) -- (2.8,0) node[below, font=\scriptsize] {$x_1$};
+    \draw[->] (0,-1.7) -- (0,1.9) node[left, font=\scriptsize] {$x_2$};
+    \draw[thick] (0,0) circle (1);
+    \fill (0,0) circle (1.4pt) node[below left, font=\scriptsize] {$x_0$};
+    \fill[red!75!black] (1,0) circle (2pt) node[above right, font=\scriptsize] {$y_0$};
+    \node[blue!60!black, font=\small] at (1.9,1.3) {$K$};
+    \node[font=\small] at (0.6,-2.2) {Euclidean norm: one closest point};
+  \end{scope}
+  \begin{scope}[xshift=6.6cm]
+    \fill[blue!12] (1,-1.7) rectangle (2.6,1.7);
+    \draw[blue!60!black, thick] (1,-1.7) -- (1,1.7);
+    \draw[->] (-1.6,0) -- (2.8,0) node[below, font=\scriptsize] {$x_1$};
+    \draw[->] (0,-1.7) -- (0,1.9) node[left, font=\scriptsize] {$x_2$};
+    \draw[thick] (-1,-1) rectangle (1,1);
+    \fill (0,0) circle (1.4pt) node[below left, font=\scriptsize] {$x_0$};
+    \draw[red!75!black, line width=2pt] (1,-1) -- (1,1);
+    \node[blue!60!black, font=\small] at (1.9,1.3) {$K$};
+    \node[font=\small] at (0.6,-2.2) {maximum norm: a segment of closest points};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+The closest points of the half-plane $K = \{x_1 \ge 1\}$ to $x_0 = 0$ are where the ball of radius $\operatorname{dist}(x_0, K) = 1$ about $x_0$ touches $K$ (red). The round ball of the Euclidean norm touches in one point; the square ball of the maximum norm (Example~\ref{ex:closest-not-unique}) touches along a whole side.
+%% <<< END ADDED
+
+\begin{exbox}[{{No Closest Point in $C[0,1]$}}]\boxlabel{ex:closest-none-C01}
+\textit{(Not from lecture.)} Let $X = C[0,1]$ with the maximum norm, which is not reflexive (Example~\ref{ex:C-nonreflexive}). Let $\ell(x) = \int_0^1 \bigl( t - \frac12 \bigr)\, x(t)\, dt$, so $\ell \in X'$ with $\|\ell\| = \frac14$ (Proposition~\ref{prop:integral-functional-norm}), and
+\[
+K = \bigl\{ x \in C[0,1] : \ell(x) = \tfrac14 \bigr\} .
+\]
+Then $K$ is nonempty, closed and convex, $\operatorname{dist}(0, K) = 1$, and no point of $K$ has norm $1$: $K$ has no closest point to $0$. So in Theorem~\ref{thm:closest-reflexive} the reflexivity of $X$ cannot be dropped.
+\end{exbox}
+
+\begin{proof}
+\emph{$K$ is closed and convex.} If $x_k \in K$ and $x_k \to x$ in $X$, then $\ell(x) = \lim_k \ell(x_k) = \frac14$, because $\ell$ is continuous (Proposition~\ref{prop:cont-bounded}); so $x \in K$. If $x, y \in K$ and $0 \le s \le 1$, then $\ell(sx + (1 - s)y) = \frac{s}{4} + \frac{1 - s}{4} = \frac14$.
+
+\emph{Every point of $K$ has norm at least $1$.} For $x \in K$, $\frac14 = |\ell(x)| \le \|\ell\|\, \|x\| = \frac14 \|x\|$, so $\|x\| \ge 1$.
+
+\emph{$K$ is nonempty and $\operatorname{dist}(0, K) = 1$.} Let $0 < \varepsilon < \frac14$. By Steps 2 and 3 of the proof of Proposition~\ref{prop:integral-functional-norm} (with $f_0(t) = t - \frac12$ and $A = \frac14$ there) there is $x_\varepsilon \in C[0,1]$ with $\|x_\varepsilon\| \le 1$ and $\ell(x_\varepsilon)$ real, $\ell(x_\varepsilon) \ge \frac14 - \varepsilon > 0$. Put $y_\varepsilon = \frac{1}{4\, \ell(x_\varepsilon)}\, x_\varepsilon$. Then $\ell(y_\varepsilon) = \frac14$, so $y_\varepsilon \in K$, and
+\[
+\|y_\varepsilon\| = \frac{\|x_\varepsilon\|}{4\, \ell(x_\varepsilon)} \le \frac{1}{1 - 4\varepsilon} \longrightarrow 1 \qquad \text{as } \varepsilon \to 0 .
+\]
+With the previous step, $\inf_{y \in K} \|y\| = 1$.
+
+\emph{The distance is not attained.} If some $y \in K$ had $\|y\| = 1$, then $\|y\| \le 1$ and $|\ell(y)| = \frac14 = \|\ell\|$, which is impossible by Example~\ref{ex:integral-functional-not-attained}.
+\end{proof}
+
+% ============================================================================
+% SECTION: CONVERGENCE OF OPERATORS (Lecture 19, end)
+% ============================================================================
+
+\section{Convergence of Operators}\label{sec:op-convergence}
+
+\roadmark{Stage: maps}{Thread: functionals. Sequences of bounded linear maps converge uniformly, strongly or weakly; each mode implies the next, and even the weakest forces a uniform bound on the norms when the domain is complete.}
+
+\textit{Lecture 19 (Tue Nov 10), last part. Source: the handwritten notes of the lecture. The proofs of the proposition and of the theorem, which the notes only name, and the second example are filled in.}
+
+\subsection{Three Modes of Convergence}
+
+The modes of convergence for vectors (Definition~\ref{def:weak-conv}) carry over to sequences of bounded linear maps. Throughout, $X$ and $Y$ are normed linear spaces, and $A_n \in \mathcal{L}(X, Y)$ for $n = 1, 2, \ldots$, $A_0 \in \mathcal{L}(X, Y)$.
+
+\begin{defbox}[Uniform Convergence of Operators]\boxlabel{def:op-uniform}
+The sequence $\{A_n\}_{n=1}^\infty$ \textbf{converges uniformly} to $A_0$, written $A_n \rightrightarrows A_0$ as $n \to \infty$, if
+\[
+\lim_{n \to \infty} \|A_n - A_0\| = 0 ,
+\]
+where $\|\cdot\|$ is the operator norm of $\mathcal{L}(X, Y)$ (Definition~\ref{def:operator-norm}). Uniform convergence is also called \textbf{convergence in norm}.
+\laxref{\S15.2 (the uniform topology of $\mathcal{L}(X, U)$)}
+\end{defbox}
+
+\begin{defbox}[Strong Convergence of Operators]\boxlabel{def:op-strong}
+The sequence $\{A_n\}_{n=1}^\infty$ \textbf{converges strongly} to $A_0$, written $A_n \to A_0$ as $n \to \infty$ or $\operatorname*{s-lim}_{n \to \infty} A_n = A_0$, if for every $x \in X$
+\[
+\lim_{n \to \infty} \|A_n x - A_0 x\|_Y = 0 .
+\]
+\laxref{\S15.2, definition of strong sequential convergence}
+\end{defbox}
+
+\begin{defbox}[Weak Convergence of Operators]\boxlabel{def:op-weak}
+The sequence $\{A_n\}_{n=1}^\infty$ \textbf{converges weakly} to $A_0$, written $A_n \rightharpoonup A_0$ as $n \to \infty$ or $\operatorname*{w-lim}_{n \to \infty} A_n = A_0$, if for every $x \in X$ and every $\ell \in Y'$
+\[
+\lim_{n \to \infty} \ell(A_n x) = \ell(A_0 x) ,
+\]
+that is, if $A_n x \rightharpoonup A_0 x$ in $Y$ for every $x \in X$.
+\laxref{\S15.2, definition of weak sequential convergence, and (18) in \S15.3}
+\end{defbox}
+
+Uniform convergence is convergence in the normed linear space $\mathcal{L}(X, Y)$ (Theorem~\ref{thm:LXY}); strong convergence is strong convergence of the vectors $A_n x$ for each $x$ separately; weak convergence is weak convergence of the vectors $A_n x$ for each $x$ separately.
+
+\begin{propbox}[Uniform Implies Strong Implies Weak]\boxlabel{prop:op-conv-chain}
+Let $X$, $Y$ be normed linear spaces and $A_n, A_0 \in \mathcal{L}(X, Y)$.
+\begin{enumerate}[label=(\arabic*)]
+    \item If $A_n \rightrightarrows A_0$, then $A_n \to A_0$ strongly.
+    \item If $A_n \to A_0$ strongly, then $A_n \rightharpoonup A_0$ weakly.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(Stated in lecture; the proof is filled in.)}
+
+(1) Let $x \in X$. Since $A_n - A_0 \in \mathcal{L}(X, Y)$, Proposition~\ref{prop:op-norm}(b) gives
+\[
+\|A_n x - A_0 x\|_Y = \|(A_n - A_0) x\|_Y \le \|A_n - A_0\|\, \|x\|_X \longrightarrow 0 \qquad \text{as } n \to \infty .
+\]
+
+(2) Let $x \in X$ and $\ell \in Y'$. By linearity and boundedness of $\ell$,
+\[
+|\ell(A_n x) - \ell(A_0 x)| = |\ell(A_n x - A_0 x)| \le \|\ell\|\, \|A_n x - A_0 x\|_Y \longrightarrow 0 \qquad \text{as } n \to \infty .
+\]
+This is Proposition~\ref{prop:weak-basic}(1), applied to the vectors $A_n x$ in $Y$.
+\end{proof}
+
+\begin{thmbox}[Weakly Convergent Sequences of Operators are Bounded]\boxlabel{thm:op-weak-bounded}
+Let $X$ be a Banach space, $Y$ a normed linear space, and $\{A_n\}_{n=1}^\infty \subset \mathcal{L}(X, Y)$, $A_0 \in \mathcal{L}(X, Y)$. If $A_n \rightharpoonup A_0$ weakly, then
+\[
+\sup_n \|A_n\| < \infty .
+\]
+By Proposition~\ref{prop:op-conv-chain} the same holds if $A_n \to A_0$ strongly or $A_n \rightrightarrows A_0$.
+\laxref{\S15.3, Cor~7$'$ (for Banach spaces $X$, $U$)}
+\end{thmbox}
+
+\begin{proof}
+The notes say: by the uniform boundedness principle. %% FILL-IN: the two steps.
+
+\textbf{Step 1: pointwise bounded.} Fix $x \in X$. By hypothesis $A_n x \rightharpoonup A_0 x$ in $Y$. A weakly convergent sequence is bounded (Theorem~\ref{thm:weak-lsc}), so
+\[
+\sup_n \|A_n x\|_Y < \infty \qquad \text{for every } x \in X .
+\]
+
+\textbf{Step 2: uniformly bounded.} $X$ is a Banach space and $\{A_n\}$ is a family of bounded linear maps from $X$ to the normed linear space $Y$ that is bounded at every point of $X$. By the uniform boundedness principle (Theorem~\ref{thm:ubp}), $\sup_n \|A_n\| < \infty$.
+\end{proof}
+
+\begin{rembox}[Completeness of the Domain]\label{rem:op-weak-bounded-complete}
+The notes state the theorem for normed linear spaces $X$ and $Y$. Step 2 uses the completeness of $X$, and without it the conclusion can fail: on $X = c_{00}$ the functionals $\ell_n(x) = n\, x_n$ converge to $0$ at every point, hence strongly and weakly as maps $c_{00} \to \mathbb{F}$, while $\|\ell_n\| = n$ (Example~\ref{ex:weak-star-null-unbounded-c00}). Completeness of $Y$ is not needed: Step 1 uses the uniform boundedness principle on the dual $Y'$, which is always complete.
+\end{rembox}
+
+\subsection{The Shifts on \texorpdfstring{$\ell^2$}{l2}}
+
+Neither implication of Proposition~\ref{prop:op-conv-chain} can be reversed. Both examples live on $\ell^2$ (Definition~\ref{def:lp}), with $e_n = (0, \ldots, 0, 1, 0, \ldots)$, the $1$ in the $n$-th place.
+
+\begin{exbox}[{{Strong but Not Uniform Convergence: Powers of the Left Shift}}]\boxlabel{ex:left-shift}
+Let $T : \ell^2 \to \ell^2$ be the \textbf{left shift},
+\[
+T(a_1, a_2, a_3, \ldots) = (a_2, a_3, a_4, \ldots) , \qquad \text{so} \qquad T^j(a_1, a_2, \ldots) = (a_{j+1}, a_{j+2}, \ldots) .
+\]
+Then $T \in \mathcal{L}(\ell^2, \ell^2)$, and for the powers $T^j$, $j = 1, 2, \ldots$:
+\begin{enumerate}[label=(\arabic*)]
+    \item $T^j \to 0$ strongly as $j \to \infty$;
+    \item $\|T^j\| = 1$ for every $j$, so $T^j \not\rightrightarrows 0$.
+\end{enumerate}
+Strong convergence does not imply uniform convergence.
+\end{exbox}
+
+\begin{proof}
+%% FILL-IN: the notes compute T e_n = e_{n-1}, |T^j e_n| = 1 and |T^j x| -> 0; the bounds are written out.
+$T$ is linear, since it acts coordinate by coordinate. For $x = (x_1, x_2, \ldots) \in \ell^2$,
+\[
+\|T^j x\|^2 = \sum_{i=1}^\infty |x_{j+i}|^2 = \sum_{i=j+1}^\infty |x_i|^2 \le \sum_{i=1}^\infty |x_i|^2 = \|x\|^2 .
+\]
+So $T^j x \in \ell^2$ and $\|T^j x\| \le \|x\|$: each $T^j$ is bounded, with $\|T^j\| \le 1$.
+
+(1) Since $\sum_{i=1}^\infty |x_i|^2$ converges, its tails tend to $0$:
+\[
+\|T^j x - 0\| = \Bigl( \sum_{i=j+1}^\infty |x_i|^2 \Bigr)^{1/2} \longrightarrow 0 \qquad \text{as } j \to \infty, \text{ for every } x \in \ell^2 .
+\]
+
+(2) $T e_n = e_{n-1}$ for $n \ge 2$, so $T^j e_n = e_{n-j}$ for $n > j$; in particular $T^j e_{j+1} = e_1$. Since $\|e_{j+1}\| = 1$ and $\|T^j e_{j+1}\| = \|e_1\| = 1$, $\|T^j\| \ge 1$ (Proposition~\ref{prop:op-norm}(a)). With $\|T^j\| \le 1$, $\|T^j\| = 1$ for every $j$. So $\|T^j - 0\| = 1$ does not tend to $0$.
+\end{proof}
+
+\begin{exbox}[{{Weak but Not Strong Convergence: Powers of the Right Shift}}]\boxlabel{ex:right-shift}
+\textit{(Not from lecture.)} Let $S : \ell^2 \to \ell^2$ be the \textbf{right shift},
+\[
+S(a_1, a_2, a_3, \ldots) = (0, a_1, a_2, \ldots) , \qquad \text{so} \qquad S^j(a_1, a_2, \ldots) = (\underbrace{0, \ldots, 0}_{j}, a_1, a_2, \ldots) .
+\]
+Then $S \in \mathcal{L}(\ell^2, \ell^2)$, and:
+\begin{enumerate}[label=(\arabic*)]
+    \item $S^j \rightharpoonup 0$ weakly as $j \to \infty$;
+    \item $\|S^j x\| = \|x\|$ for every $x \in \ell^2$ and every $j$, so $S^j \not\to 0$ strongly.
+\end{enumerate}
+Weak convergence does not imply strong convergence.
+\end{exbox}
+
+\begin{proof}
+$S$ is linear, and $\|S^j x\|^2 = \sum_{i=1}^\infty |x_i|^2 = \|x\|^2$, since $S^j x$ has the same nonzero entries as $x$. This is (2): for $x \neq 0$, $\|S^j x - 0\| = \|x\|$ does not tend to $0$. It also shows $S^j \in \mathcal{L}(\ell^2, \ell^2)$ with $\|S^j\| = 1$.
+
+(1) Every $\ell \in (\ell^2)'$ is $\ell(u) = (u, y) = \sum_i u_i\, \overline{y_i}$ for some $y \in \ell^2$ (Example~\ref{ex:L2-dual}). The $i$-th entry of $S^j x$ is $x_{i-j}$ for $i > j$ and $0$ for $i \le j$, so by the Cauchy--Schwarz inequality
+\[
+|\ell(S^j x)| = \Bigl| \sum_{i=j+1}^\infty x_{i-j}\, \overline{y_i} \Bigr| \le \Bigl( \sum_{i=j+1}^\infty |x_{i-j}|^2 \Bigr)^{1/2} \Bigl( \sum_{i=j+1}^\infty |y_i|^2 \Bigr)^{1/2} = \|x\| \Bigl( \sum_{i=j+1}^\infty |y_i|^2 \Bigr)^{1/2} \longrightarrow 0
+\]
+as $j \to \infty$, a tail of the convergent series $\sum_i |y_i|^2$. So $\ell(S^j x) \to 0 = \ell(0\, x)$ for all $x \in \ell^2$ and $\ell \in (\ell^2)'$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth]
+  \begin{scope}
+    \draw[->] (0,0) -- (3.9,0) node[right, font=\scriptsize] {$i$};
+    \draw (0,0) -- (0,2.2);
+    \foreach \i in {1,...,14} \fill[black!70] ({0.25*\i-0.08},0) rectangle ({0.25*\i+0.08},{2*pow(0.8,\i-1)});
+    \node[font=\small] at (1.9,2.6) {$x$};
+    \node[font=\scriptsize] at (1.9,-0.45) {$x_i = 0.8^{\,i-1}$};
+  \end{scope}
+  \begin{scope}[xshift=5.2cm]
+    \draw[->] (0,0) -- (3.9,0) node[right, font=\scriptsize] {$i$};
+    \draw (0,0) -- (0,2.2);
+    \foreach \i in {1,...,14} \fill[blue!65!black] ({0.25*\i-0.08},0) rectangle ({0.25*\i+0.08},{2*pow(0.8,\i+3)});
+    \node[font=\small] at (1.9,2.6) {$T^4 x$};
+    \node[font=\scriptsize] at (1.9,-0.45) {$\|T^j x\| \to 0$};
+  \end{scope}
+  \begin{scope}[xshift=10.4cm]
+    \draw[->] (0,0) -- (3.9,0) node[right, font=\scriptsize] {$i$};
+    \draw (0,0) -- (0,2.2);
+    \foreach \i in {1,...,4} \fill[gray!60] ({0.25*\i},0) circle (0.8pt);
+    \foreach \i in {5,...,14} \fill[red!70!black] ({0.25*\i-0.08},0) rectangle ({0.25*\i+0.08},{2*pow(0.8,\i-5)});
+    \node[font=\small] at (1.9,2.6) {$S^4 x$};
+    \node[font=\scriptsize] at (1.9,-0.45) {$\|S^j x\| = \|x\|$};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+The two shifts applied to $x = (1, 0.8, 0.8^2, \ldots)$, entries drawn as bars. The left shift $T^j$ (blue) discards the first $j$ entries, and what remains is a tail of $x$, whose norm tends to $0$ (Example~\ref{ex:left-shift}). The right shift $S^j$ (red) moves all of $x$ out to the right without changing its norm; against a fixed $y \in \ell^2$ it meets only the tail of $y$, so the inner products tend to $0$ (Example~\ref{ex:right-shift}).
+%% <<< END ADDED
+
+A third instance is in the companion chapter: for a complete orthonormal set $\{e_n\}$ in a Hilbert space, the partial sums $P_N$ of the completeness relation converge to the identity strongly (Theorem~\ref{thm:completeness-relation}) but not uniformly (Proposition~\ref{prop:not-norm}).
 
 % ============================================================================
 % CHAPTER 9: FUNCTIONAL ANALYSIS AND QUANTUM MECHANICS
@@ -10453,15 +11056,7 @@ The physicists' identity $\sum_n |e_n\rangle\langle e_n| = \Id$ is Theorem~\ref{
 
 Recall (Definition~\ref{def:bounded-map}) that a linear map $T : X \to Y$ between normed linear spaces is bounded if there is $M \ge 0$ with $\|Tx\|_Y \le M\,\|x\|_X$ for all $x \in X$, and that its norm is $\|T\| = \sup_{x \neq 0} \|Tx\|_Y / \|x\|_X$ (Definition~\ref{def:operator-norm}). In this chapter $X = Y = H$ is a Hilbert space: a bounded linear map $T : H \to H$ is called a \emph{bounded operator} on $H$, and $\|T\|$ its \emph{operator norm}. The identity operator is written $\Id$. As for functionals (\S\ref{sec:qm-riesz}), a constant $c \ge 0$ is called \emph{admissible} for $T$ if $\|Tx\| \le c\,\|x\|$ for all $x \in H$; by Proposition~\ref{prop:op-norm}, parts (b) and (c), $\|T\|$ is admissible, that is, $\|Tx\| \le \|T\|\,\|x\|$ for all $x \in H$, and it is the smallest admissible constant.
 
-\begin{defbox}[{{Strong Convergence of Operators}}]\boxlabel{def:strong-convergence}
-Let $H$ be a Hilbert space, and let $T_n$, $n = 1, 2, \ldots$, and $T$ be bounded operators on $H$. The sequence $\{T_n\}$ converges \textbf{strongly} to $T$ if $T_n x \to T x$ in $H$ for every $x \in H$.
-\end{defbox}
-
-\begin{defbox}[{{Norm Convergence of Operators}}]\boxlabel{def:norm-convergence-operators}
-Let $H$ be a Hilbert space, and let $T_n$, $n = 1, 2, \ldots$, and $T$ be bounded operators on $H$. The sequence $\{T_n\}$ converges to $T$ \textbf{in norm} if $\|T_n - T\| \to 0$, where $\|\cdot\|$ is the operator norm (Definition~\ref{def:operator-norm}).
-\end{defbox}
-
-Norm convergence implies strong convergence, since $\|T_n x - Tx\| \le \|T_n - T\|\,\|x\|$ for every $x \in H$.
+Recall the modes of convergence of \S\ref{sec:op-convergence}, for bounded operators $T_n$, $n = 1, 2, \ldots$, and $T$ on a Hilbert space $H$: $\{T_n\}$ converges \emph{strongly} to $T$ if $T_n x \to T x$ in $H$ for every $x \in H$ (Definition~\ref{def:op-strong}), and it converges to $T$ \emph{in norm}, or uniformly, if $\|T_n - T\| \to 0$ in the operator norm (Definition~\ref{def:op-uniform}). Norm convergence implies strong convergence, since $\|T_n x - Tx\| \le \|T_n - T\|\,\|x\|$ for every $x \in H$ (Proposition~\ref{prop:op-conv-chain}(1)).
 
 \begin{defbox}[Orthogonal Projection]\boxlabel{def:orth-proj}
 Let $Y$ be a closed subspace of a Hilbert space $H$. By Theorem~\ref{thm:orth-decomp} every $x \in H$ is uniquely $x = y + v$ with $y \in Y$, $v \in Y^\perp$. The \textbf{orthogonal projection} onto $Y$ is $P_Y x = y$.
@@ -10998,7 +11593,7 @@ For a linear functional $\ell$ and a fixed $x_0$ with $\ell(x_0) \neq 0$, the ve
 To prove an inequality or identity between continuous quantities on a space, prove it on a dense subset, where the functions are smooth and the classical tools (fundamental theorem of calculus, integration by parts) apply; then approximate a general element and pass to the limit, using that norms (reverse triangle inequality) and inner products (Cauchy--Schwarz) are continuous.
 \end{rembox}
 
-\begin{exbox}[Applications (Lectures 11--18)]\boxlabel{ex:tech19}
+\begin{exbox}[Applications (Lectures 11--19)]\boxlabel{ex:tech19}
 \begin{itemize}
 \item Poincar\'e on $H^1_0$ (Corollary~\ref{cor:poincare-H10}), from Poincar\'e on $C_c^\infty$.
 \item Limits in $W^{1,p}$ satisfy integration by parts (Proposition~\ref{prop:limit-ibp}).
@@ -11007,6 +11602,7 @@ To prove an inequality or identity between continuous quantities on a space, pro
 \item Banach--Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem~\ref{thm:banach-steinhaus}): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
 \item $\sin(mx) \rightharpoonup 0$ in $L^p$, $1 < p < \infty$ (Lecture 18, Example~\ref{ex:sin-weak-Lp}): test only against continuous $g$, dense in $L^{p'}$, plus a uniform bound.
 \item The criteria for weak and weak-$*$ convergence (Lecture 18, Theorems~\ref{thm:weak-criterion} and~\ref{thm:weak-star-criterion}): convergence on a dense subset of $X'$, respectively of $X$, plus a uniform bound on the norms, gives convergence on the whole space; both are Banach--Steinhaus, applied on $X'$, respectively on $X$.
+\item Helly's theorem, Step 2 (Lecture 19, Theorem~\ref{thm:helly}): a bounded sequence of functionals that converges at every point of a countable dense set converges at every point, by an $\varepsilon/2$ argument with the bound $2M\|x_0 - y\|$.
 \end{itemize}
 \end{exbox}
 
@@ -11169,6 +11765,34 @@ A result proved for sets of interior points (open sets) transfers to closed sets
 Hyperplane separation in a normed space (Theorem~\ref{thm:separation-normed}), from Theorem~\ref{thm:separation}; and through it Mazur's theorem (Theorem~\ref{thm:mazur}).
 \end{exbox}
 
+% --------------------------------------------------------------------------
+\subsection{Technique 31: The Diagonal Subsequence}
+
+\begin{rembox}[Strategy]\label{rem:tech31}
+To make one subsequence meet countably many requirements at once (for instance, convergence at each point $y_1, y_2, \ldots$ of a countable set), meet them one at a time: choose a subsequence that meets the first, a subsequence of it that meets the second, and so on, so that the $k$-th index sequence $\{n_{k,j}\}_j$ meets requirements $1, \ldots, k$. Then take the diagonal $n_j = n_{j,j}$. From its $k$-th term on it is a subsequence of the $k$-th sequence, so it meets every requirement. Each single step needs only an extraction principle for one requirement, such as Bolzano--Weierstrass for a bounded sequence of numbers.
+\end{rembox}
+
+\begin{exbox}[Applications (Lecture 19)]\boxlabel{ex:tech31}
+\begin{itemize}
+\item Helly's theorem, Step 1 (Theorem~\ref{thm:helly}): a bounded sequence of functionals has a subsequence that converges at every point of a countable dense set; a uniform bound then extends the convergence to the whole space (Technique 19).
+\item Eberlein's theorem (Theorem~\ref{thm:eberlein}) uses the diagonal process through Helly's theorem, after passing to the closed linear span of the sequence to make the space separable (Lemma~\ref{lem:countable-span-separable}).
+\end{itemize}
+\end{exbox}
+
+% --------------------------------------------------------------------------
+\subsection{Technique 32: Minimizing Sequence, Weak Limit, Norm Bound}
+
+\begin{rembox}[Strategy]\label{rem:tech32}
+To show that the infimum of a norm over a closed convex set is attained when a minimizing sequence cannot be shown to be Cauchy: (1) take a minimizing sequence; it is bounded; (2) extract a weakly convergent subsequence, by Eberlein's theorem in a reflexive space (or a weak-$*$ convergent one by Helly's theorem in the dual of a separable space); (3) the weak limit stays in the set, by Mazur's theorem; (4) the norm of a weak limit is at most the $\liminf$ of the norms, so the limit attains the infimum. In a Hilbert space step (2) is replaced by the parallelogram law, which makes the minimizing sequence Cauchy and also gives uniqueness.
+\end{rembox}
+
+\begin{exbox}[Applications (Lecture 19)]\boxlabel{ex:tech32}
+\begin{itemize}
+\item The closest point in a closed convex subset of a reflexive space (Theorem~\ref{thm:closest-reflexive}); compare the Hilbert space proof (Theorem~\ref{thm:projection}).
+\item Without reflexivity step (2) fails and so does the conclusion (Example~\ref{ex:closest-none-C01}); without the parallelogram law uniqueness fails (Example~\ref{ex:closest-not-unique}).
+\end{itemize}
+\end{exbox}
+
 
 % ============================================================================
 % CONCORDANCE WITH LAX
@@ -11256,6 +11880,8 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:solving}--\ref{sec:open-mapping} Solving $Mx = y$; Baire category; open mapping & Ch.~15 & \S15.5 The open mapping principle: the image of the unit ball contains a ball (Thm~9), open mapping (Thm~10), Banach's inverse mapping theorem (Thm~11), closed maps and the closed graph theorem (definition before Thm~12, Thm~12), equivalent norms (Thm~13, for compatible norms), the Baire category principle (used in the proof of Thm~9, p.~169; sets of second category, Thm~16). \\
 \ref{sec:ubp} Uniform boundedness and approximation & \S10.1; \S15.2--15.3; \S15.5; \S34.3 & The second-category open mapping theorem is Lax's Thm~16 (\S15.5, an exercise there, with $Y$ Banach; in the lecture $Y$ is normed, and it turns out complete). The second equivalent norm theorem is Thm~13 of \S15.5. Uniform boundedness: Lax proves it from Baire in \S10.1 (Thms~2--3) and for operators in \S15.3 (Thm~7); the lecture derives it from the equivalent norm theorem with the norm $\|x\| + \sup_\alpha \|A_\alpha x\|$. Banach--Steinhaus: \S15.2 Thm~6 and \S15.3 Cor~7$'$. The Lax equivalence theorem is Thm~8 of \S34.3, for semigroups; the lecture's version is for equations $T_n x = y$. \\
 \ref{sec:weak} Weak and weak-star convergence & Ch.~10 (opening), \S10.1, \S10.3; \S8.4 & Definition and Examples~1--2 open Lax's Ch.~10. The weak convergence criterion is \S10.1 Thm~1 ($\Leftarrow$) with Thm~4$'$ (bounded); the norm bound Thm~5; Mazur's theorem Thm~6, proved there with support functions (\S8.4 Thm~17), here with the separation theorem in normed spaces (as in the proof of Thm~17). Weak-$*$: the definition and Thm~11 of \S10.3, the norm bound Exercise~6 there; Lax's example of weak-$*$ but not weak convergence (Example~5) uses measures on $[-1,1]$ instead of $\ell^1 = (c_0)'$. The weak-$*$ criterion is not in Lax. \\
+\ref{sec:weak-compact} Weak sequential compactness & \S10.2, Thms~7--10; \S10.3, Thm~12; Ch.~12, Thm~3 & Helly's theorem is \S10.3 Thm~12, there for the closed unit ball of the dual of a separable Banach space; the proof here is the lecture's diagonal process, written out. Eberlein's theorem is \S10.2 Thm~7: Lax runs the diagonal process on a dense subset of $Y'$, the lecture deduces it from Helly's theorem applied to $X'$. The converse is Thm~8 (no proof in Lax), bounded closed convex sets Thm~9, the closest point Thm~10. Alaoglu's theorem is Ch.~12 Thm~3, for the weak-$*$ topology. The examples showing which hypotheses the sequential statements need are not in Lax. \\
+\ref{sec:op-convergence} Convergence of operators & \S15.2; \S15.3, Cor~7$'$ & Lax defines the uniform, strong and weak topologies of $\mathcal{L}(X, U)$ and the corresponding sequential convergence; the boundedness of weakly convergent sequences is Cor~7$'$. The shift examples are not in Lax, whose example in \S15.2 is $M_n x = (a_n, 0, 0, \ldots)$. \\
 Chapter~\ref{ch:qm} (companion) & --- & Dual spaces return in Lax Ch.~8. \\
 \end{longtable}
 }

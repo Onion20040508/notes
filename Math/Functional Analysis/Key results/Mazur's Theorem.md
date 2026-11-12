@@ -14,7 +14,8 @@ tags: [functional-analysis, hub]
 - [[§43 Weak and Weak-Star Convergence#^thm-43-5|Theorem §43.5: Hyperplane Separation in a Normed Space]]
 
 ## Used in (Functional Analysis)
-- (not cited later in the course)
+- [[§44 Weak Sequential Compactness#^cor-44-7|Corollary §44.7: Bounded Closed Convex Sets in a Reflexive Space]]
+- [[§44 Weak Sequential Compactness#^thm-44-10|Theorem §44.10: Closest Point in a Closed Convex Subset of a Reflexive Space]]
 
 ## Connections
 - **How.** Let $K$ be the closed convex hull of the $x_n$. If $x_0 \notin K$, [[Hyperplane Separation in a Normed Space]] gives $\ell \in X'$ and $a$ with $\ell(x_0) > a > \ell(x_n)$ for all $n$, which contradicts $\ell(x_n) \to \ell(x_0)$. Over $\mathbb{C}$ use real parts ([[§43 Weak and Weak-Star Convergence#^cor-43-6|§43.6]]).

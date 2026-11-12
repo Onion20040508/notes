@@ -283,7 +283,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t19
 
-> [!example] Example T19: Applications (Lectures 11–18)
+> [!example] Example T19: Applications (Lectures 11–19)
 > - Poincaré on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-12|§33.12]]), from [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-11|Poincaré]] on $C_c^\infty$.
 > - Limits in $W^{1,p}$ satisfy integration by parts (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]).
 > - A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], Step 3); the same fails in $\ell^\infty$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
@@ -291,6 +291,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > - Banach–Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]]): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
 > - $\sin(mx) \rightharpoonup 0$ in $L^p$, $1 < p < \infty$ (Lecture 18, Example [[§43 Weak and Weak-Star Convergence#^ex-43-3|§43.3]]): test only against continuous $g$, dense in $L^{p'}$, plus a uniform bound.
 > - The criteria for weak and weak-$\ast$ convergence (Lecture 18, Theorems [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]] and [[§43 Weak and Weak-Star Convergence#^thm-43-9|§43.9]]): convergence on a dense subset of $X'$, respectively of $X$, plus a uniform bound on the norms, gives convergence on the whole space; both are Banach–Steinhaus, applied on $X'$, respectively on $X$.
+> - Helly's theorem, Step 2 (Lecture 19, Theorem [[§44 Weak Sequential Compactness#^thm-44-1|§44.1]]): a bounded sequence of functionals that converges at every point of a countable dense set converges at every point, by an $\varepsilon/2$ argument with the bound $2M\|x_0 - y\|$.
 
 ^ex-t19
 
@@ -447,3 +448,29 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > Hyperplane separation in a normed space (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]), from Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]; and through it Mazur's theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-7|§43.7]]).
 
 ^ex-t30
+
+## Technique 31: The Diagonal Subsequence
+
+> [!remark] Remark: Strategy
+> To make one subsequence meet countably many requirements at once (for instance, convergence at each point $y_1, y_2, \ldots$ of a countable set), meet them one at a time: choose a subsequence that meets the first, a subsequence of it that meets the second, and so on, so that the $k$-th index sequence $\{n_{k,j}\}_j$ meets requirements $1, \ldots, k$. Then take the diagonal $n_j = n_{j,j}$. From its $k$-th term on it is a subsequence of the $k$-th sequence, so it meets every requirement. Each single step needs only an extraction principle for one requirement, such as Bolzano–Weierstrass for a bounded sequence of numbers.
+
+^rem-t31
+
+> [!example] Example §T31: Applications (Lecture 19)
+> - Helly's theorem, Step 1 (Theorem [[§44 Weak Sequential Compactness#^thm-44-1|§44.1]]): a bounded sequence of functionals has a subsequence that converges at every point of a countable dense set; a uniform bound then extends the convergence to the whole space (Technique 19).
+> - Eberlein's theorem (Theorem [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]]) uses the diagonal process through Helly's theorem, after passing to the closed linear span of the sequence to make the space separable (Lemma [[§44 Weak Sequential Compactness#^lem-44-3|§44.3]]).
+
+^ex-t31
+
+## Technique 32: Minimizing Sequence, Weak Limit, Norm Bound
+
+> [!remark] Remark: Strategy
+> To show that the infimum of a norm over a closed convex set is attained when a minimizing sequence cannot be shown to be Cauchy: (1) take a minimizing sequence; it is bounded; (2) extract a weakly convergent subsequence, by Eberlein's theorem in a reflexive space (or a weak-$\ast$ convergent one by Helly's theorem in the dual of a separable space); (3) the weak limit stays in the set, by Mazur's theorem; (4) the norm of a weak limit is at most the $\liminf$ of the norms, so the limit attains the infimum. In a Hilbert space step (2) is replaced by the parallelogram law, which makes the minimizing sequence Cauchy and also gives uniqueness.
+
+^rem-t32
+
+> [!example] Example §T32: Applications (Lecture 19)
+> - The closest point in a closed convex subset of a reflexive space (Theorem [[§44 Weak Sequential Compactness#^thm-44-10|§44.10]]); compare the Hilbert space proof (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]).
+> - Without reflexivity step (2) fails and so does the conclusion (Example [[§44 Weak Sequential Compactness#^ex-44-4|§44.4]]); without the parallelogram law uniqueness fails (Example [[§44 Weak Sequential Compactness#^ex-44-3|§44.3]]).
+
+^ex-t32

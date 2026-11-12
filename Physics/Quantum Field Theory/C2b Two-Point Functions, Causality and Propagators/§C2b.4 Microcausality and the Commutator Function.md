@@ -445,7 +445,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 >
 > **What the derivation shows.**
 > - At unequal times the phases $E_{\mathbf p}(x^0 - y^0)$ smear the delta function out: $[\hat\phi, \hat\pi]$ is the canonical delta function, propagated.
-> - With interactions these commutators become genuine operators → [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-7|★ Remark: With interactions]].
+> - With interactions these commutators become genuine operators → [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-7|★ Remark: With interactions: the Källén–Lehmann representation]].
 > - Used next: the contact terms of time-ordered products ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]]).
 
 ^der-c2b-4-10

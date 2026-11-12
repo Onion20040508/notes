@@ -458,4 +458,4 @@ As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of t
 
 *Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]
 
-The remaining question is under what conditions a bounded sequence has a weak-$\ast$ convergent subsequence.
+The remaining question is under what conditions a bounded sequence has a weak-$\ast$ convergent subsequence; it is taken up in [[§44 Weak Sequential Compactness|§44]].

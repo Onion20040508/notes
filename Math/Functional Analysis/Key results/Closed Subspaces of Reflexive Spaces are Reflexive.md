@@ -18,6 +18,7 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§37 Separable Duals and Reflexive Spaces#^thm-37-9|Theorem §37.9: X is Reflexive if and only if X' is]]
+- [[§44 Weak Sequential Compactness#^thm-44-4|Theorem §44.4: Eberlein's Theorem]]
 
 ## Connections
 - Step 1 uses the closed-subspace form of the [[Spanning Criterion]]; Step 2 uses normed [[§36 Duality in Normed Spaces#^thm-36-1|Hahn–Banach]] to make the restriction map $X' \to Y'$ onto ([[Functional Analysis Problem-Solving Techniques#^rem-t22|Technique 22]]).
