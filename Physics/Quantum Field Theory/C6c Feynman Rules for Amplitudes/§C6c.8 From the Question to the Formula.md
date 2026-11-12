@@ -91,7 +91,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > - *The master formula's habit.* Dividing by the vacuum amplitude, as for a correlator ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), would give "$P(0)$" $= |\langle0|\hat S|0\rangle/\langle0|\hat S|0\rangle|^2 = 1$. Here $\langle0|\hat S|0\rangle = \mathcal A(0)$ is itself the physical amplitude, $|\mathcal A(0)| = e^{-\lambda/2} < 1$.
 > - *Mixed normalizations.* The amplitudes above with the relativistic measure $\frac{d^3k}{(2\pi)^32E_{\mathbf k}}$ give a wrong factor $\frac{1}{2E_{\mathbf k}}$ per particle ([[§C6c.2 Contractions with External Particles#^cau-c6c-2-1|§C6c.2, Caution: Two normalizations of one-particle states]]).
 > - *The $\frac{1}{n!}$.* Integrating each $\mathbf k_i$ freely counts each state $n!$ times; without the $\frac{1}{n!}$, $\sum_n\lambda^ne^{-\lambda} = \frac{e^{-\lambda}}{1 - \lambda} \ne 1$ for $\lambda < 1$, and the sum diverges for $\lambda \ge 1$.
-> - *Where $\lambda$ comes from.* Only $\operatorname{Re}\mathcal A_2$ enters $P(0)$, and it is the $\delta(p^2 - m^2)$ part of the $i\varepsilon$ of $D_F$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 1; [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^der-c6c-7-2|Derivation §C6c.7.2]], Step 5): only the on-shell part of the source radiates.
+> - *Where $\lambda$ comes from.* Only $\operatorname{Re}\mathcal A_2$ enters $P(0)$, and it is the $\delta(p^2 - m^2)$ part of the $i\varepsilon$ of $D_F$ ([[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]], 1; [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^der-c6c-7-2|Derivation §C6c.7.2]], Step 5): only the on-shell part of the source radiates.
 > - *A static source is another question.* A source that never switches off (★ [[§C6a.0 Setups and Observables#^mod-c6a-0-2|Model §C6a.0.2]]) creates no particles, $\hat S = \mathbb 1$; it moves the vacuum instead.
 >
 > *Source: PHY 513, Problem Set 8, Problem 3 (statement; the user's solution, parts (a), (d), (e), as written) · PS Problem 4.1 · homes as linked*
@@ -215,7 +215,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > **Pitfalls.**
 > - *Free states are lowest order.* Beyond it each external line carries $\sqrt Z$ and the physical mass, and loops on external legs are not part of $\mathcal M$ ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]]; [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]).
 > - *Disconnected pieces are not scattering.* The pieces of the four-point function in which the particles pass by are supported on $\{p_1, p_2\} = \{p_A, p_B\}$ or vanish, and carry two deltas instead of one ([[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-2|Theorem §C6c.1.2]]); they belong to the $\mathbb 1$ of $\hat S$.
-> - *The squared delta is not an error.* One factor $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]) is removed by dividing by the time and the flux; it is not dropped by hand.
+> - *The squared delta is not an error.* One factor $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]]) is removed by dividing by the time and the flux; it is not dropped by hand.
 > - *$\frac{1}{S_{\rm id}}$ belongs to $\sigma$, not to $d\sigma/d\Omega$* at a given angle ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]), and it is not the symmetry factor $S = 1$ of the diagram ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]]).
 > - *$|\mathbf v_A - \mathbf v_B|$ is not a relative velocity* ([[§C6b.3 The Cross Section#^cau-c6b-3-2|§C6b.3, Caution: The velocity difference is not a relative velocity]]).
 >
@@ -300,7 +300,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > |---|---|---|---|---|---|
 > | $(2, 0)$ | $g^2$ | $6$ | $1$ | $0$ | external particles split $2 + 2$; $p_A$'s partner is $p_B$, $p_1$ or $p_2$: $s$, $t$, $u$ |
 > | $(0, 1)$ | $\lambda$ | $4$ | $0$ | $0$ | all four on the vertex: contact |
-> | $(1, 1)$ | $g\lambda$ | $7$ | — | — | none: $7 + 4 = 11$ half-edges, odd ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1\|Theorem §CA.7.1]], 1) |
+> | $(1, 1)$ | $g\lambda$ | $7$ | — | — | none: $7 + 4 = 11$ half-edges, odd ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1\|Theorem §CA.8.1]], 1) |
 >
 > The splits $3 + 1$ and $4 + 0$ at $(2, 0)$ and the count $945 \to 31 \to 3$ (each diagram an orbit of $72$): [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]].
 >
@@ -371,9 +371,9 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]] — in the periodic box $(2\pi)^4\delta^4(0) = \tilde V\tilde T$: the squared delta of a transition probability is a volume times a time.
-> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]] — the $\delta(p^2 - m^2)$ part of the $i\varepsilon$ of $D_F$, where the $\lambda$ of the source problem comes from.
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — an odd number of half-edges has no pairing.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]] — in the periodic box $(2\pi)^4\delta^4(0) = \tilde V\tilde T$: the squared delta of a transition probability is a volume times a time.
+> - [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]] — the $\delta(p^2 - m^2)$ part of the $i\varepsilon$ of $D_F$, where the $\lambda$ of the source problem comes from.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — an odd number of half-edges has no pairing.
 
 > [!remark]- Connections
 > - The questions of "How to translate a question" (1–6; 7 adds the fermion signs) are the columns of the table of [[§C6a.0 Setups and Observables|§C6a.0]], read as a method; each row there links the example or procedure that works it.

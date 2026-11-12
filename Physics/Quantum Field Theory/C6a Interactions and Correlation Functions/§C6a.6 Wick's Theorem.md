@@ -15,13 +15,13 @@ For two fields the time-ordered product is the normal-ordered product plus one c
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.5 Normal Ordering and Contractions|§C6a.5]]: $\hat\phi_i \equiv \hat\phi_I(x_i)$, free fields; $D_{ij} \equiv D_F(x_i - x_j)$ where it saves space; a hat over a factor, $\widehat{\hat\phi_k}$, is avoided: "$\prod_{i\ne k}$" or "omit $\hat\phi_k$" is written out.
 
-The pairings and their number, from [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]], are the two pieces of mathematics used. A **pairing** of a finite set is a partition of it into blocks of exactly two elements ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]); a set of $2k$ fields has
+The pairings and their number, from [[§CA.8 Pairings, Diagrams and Symmetry Factors|§CA.8]], are the two pieces of mathematics used. A **pairing** of a finite set is a partition of it into blocks of exactly two elements ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]); a set of $2k$ fields has
 
 $$
 (2k - 1)!! = (2k - 1)(2k - 3)\cdots3\cdot1 = \frac{(2k)!}{2^kk!}
 $$
 
-pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]; $3, 15, 105$ for $4, 6, 8$ fields). This count is the number of terms of a free vacuum value, [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]].
+pairings, and an odd number of fields has none ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]; $3, 15, 105$ for $4, 6, 8$ fields). This count is the number of terms of a free vacuum value, [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]].
 
 ## The lemma
 
@@ -181,7 +181,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 >
 > the four sets of disjoint pairs of $\{1, 2, 3\}$, each once ($1 + 3 = 4$ terms).
 >
-> ⚑ By-product: the number of terms is $\sum_k\binom n{2k}(2k - 1)!!$ (choose the $2k$ contracted fields, then pair them, [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]); for $n = 4$: $1 + 6 + 3 = 10$ ([[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]).
+> ⚑ By-product: the number of terms is $\sum_k\binom n{2k}(2k - 1)!!$ (choose the $2k$ contracted fields, then pair them, [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]); for $n = 4$: $1 + 6 + 3 = 10$ ([[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]).
 >
 > **What the derivation shows.**
 > - The proof is a plain induction, messy when written out, but the only input is that each reordering costs a number, $D_W$, and that time ordering makes it $D_F$.
@@ -247,7 +247,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > \end{aligned}
 > $$
 >
-> The six pairs are $\{1,2\}, \{1,3\}, \{1,4\}, \{2,3\}, \{2,4\}, \{3,4\}$, and the three ways of splitting four fields into two pairs are $\{12\}\{34\}$, $\{13\}\{24\}$, $\{14\}\{23\}$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]). On the slides and in PS (eq. (4.39)) the brackets are drawn over the fields in their written order; the figure below draws them so.
+> The six pairs are $\{1,2\}, \{1,3\}, \{1,4\}, \{2,3\}, \{2,4\}, \{3,4\}$, and the three ways of splitting four fields into two pairs are $\{12\}\{34\}$, $\{13\}\{24\}$, $\{14\}\{23\}$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]). On the slides and in PS (eq. (4.39)) the brackets are drawn over the fields in their written order; the figure below draws them so.
 >
 > *Source: PHY 513 Lecture 14, slide 10 ("One contraction: $D_F(x_1 - x_2)N(\phi_3\phi_4) + \dots$ (6 terms total). Two contractions: $D_F(x_1 - x_2)D_F(x_3 - x_4) + \dots$ (3 terms total)") · the user's PHY 513 notes, Ch. 14 §14.2 (Derivation "Four fields") · PS §4.3, eq. (4.39) · Yu §6.3.1, eq. (6.167)*
 
@@ -272,7 +272,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > \langle0|T\{\hat\phi_1\cdots\hat\phi_n\}|0\rangle = \sum_{P\in\mathcal P(\{1,\dots,n\})}\;\prod_{\{i,j\}\in P}D_F(x_i - x_j) ,
 > $$
 >
-> the sum over all pairings of the $n$ fields ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]), the "complete contractions". It has $(n - 1)!!$ terms for $n$ even (3, 15, 105 for $n = 4, 6, 8$) and is zero for $n$ odd.
+> the sum over all pairings of the $n$ fields ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]), the "complete contractions". It has $(n - 1)!!$ terms for $n$ even (3, 15, 105 for $n = 4, 6, 8$) and is zero for $n$ odd.
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening: the free vacuum $|0\rangle$ only; in $|\Omega\rangle$ the ratio of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]] is needed ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
 >
@@ -301,7 +301,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > \langle0|T\{\hat\phi_1\cdots\hat\phi_n\}|0\rangle = \sum_{C\text{ covering }\{1,\dots,n\}}\;\prod_{\{i,j\}\in C}D_F(x_i - x_j) .
 > $$
 >
-> **Step 3** (these are the pairings). A set of disjoint pairs covering all of $\{1, \dots, n\}$ is a pairing ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]). A set $C$ of $k$ pairs leaves $r = n - 2k$ fields; for $n$ odd, $r$ is odd, so $r \ge 1$ for every $C$ and every term vanishes. For $n$ even their number is $(n - 1)!!$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]): $n = 4$, the three of [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]]; $n = 6$, the fifteen listed in [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]].
+> **Step 3** (these are the pairings). A set of disjoint pairs covering all of $\{1, \dots, n\}$ is a pairing ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]). A set $C$ of $k$ pairs leaves $r = n - 2k$ fields; for $n$ odd, $r$ is odd, so $r \ge 1$ for every $C$ and every term vanishes. For $n$ even their number is $(n - 1)!!$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]): $n = 4$, the three of [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]]; $n = 6$, the fifteen listed in [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]].
 >
 > ⚑ By-product: for $n$ odd there is always a field left over, too many $\hat a$'s or too many $\hat a^\dagger$'s — the operator reason behind the counting reason.
 >
@@ -311,10 +311,10 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 
 ^der-c6a-6-3
 
-*Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]
+*Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]
 
 ![[ph-qft-ca-7-2.svg]]
-*Pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]) drawn as arcs. (a) The three pairings of four points. (b) The step of the proof of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]: the partner of the first point has $2k-1$ choices, and the remaining $2k-2$ points are paired in $(2k-3)!!$ ways, here $5\cdot3 = 15$. (c) An odd set has no pairing. Each pairing is one term of a free vacuum value (Theorem §C6a.6.3).*
+*Pairings ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]) drawn as arcs. (a) The three pairings of four points. (b) The step of the proof of [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]: the partner of the first point has $2k-1$ choices, and the remaining $2k-2$ points are paired in $(2k-3)!!$ ways, here $5\cdot3 = 15$. (c) An odd set has no pairing. Each pairing is one term of a free vacuum value (Theorem §C6a.6.3).*
 
 > [!example] Example §C6a.6.2: The Free Four-Point Function
 > ![[ph-qft-c6a-6-2.svg]]
@@ -358,7 +358,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > \end{aligned}
 > $$
 >
-> one term for each of the $3!! = 3$ pairings of $\{1, 2, 3, 4\}$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]).
+> one term for each of the $3!! = 3$ pairings of $\{1, 2, 3, 4\}$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]).
 >
 > **Step 5** (three fields). For $n = 3$ Wick's theorem has $1 + 3 = 4$ terms, each keeping at least one field inside the colons:
 >
@@ -401,7 +401,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > \hat\phi_1\cdots\hat\phi_n = \sum_C\;\prod_{\{i<j\}\in C}D_W(x_i - x_j)\;:\!\prod_{k\notin\cup C}\hat\phi_k\!:, \qquad \langle0|\hat\phi_1\cdots\hat\phi_n|0\rangle = \sum_P\;\prod_{\{i<j\}\in P}D_W(x_i - x_j) ,
 > $$
 >
-> $C$ over the sets of disjoint pairs, $P$ over the pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]), each pair with the earlier-written field first. Since $D_W(-\xi) = \overline{D_W(\xi)} \ne D_W(\xi)$ in general ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]), the order inside each pair matters, unlike for $D_F$. Every Wightman function of the free field is fixed by $D_W$ ([[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]). Beyond the course.
+> $C$ over the sets of disjoint pairs, $P$ over the pairings ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]), each pair with the earlier-written field first. Since $D_W(-\xi) = \overline{D_W(\xi)} \ne D_W(\xi)$ in general ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]), the order inside each pair matters, unlike for $D_F$. Every Wightman function of the free field is fixed by $D_W$ ([[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]). Beyond the course.
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening: the operator identity in any state, the vacuum value in $|0\rangle$ only.
 >
@@ -445,7 +445,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 
 ^der-c6a-6-4
 
-*Uses:* [[§C6a.6 Wick's Theorem#^der-c6a-6-1|Derivation §C6a.6.1]], [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]
+*Uses:* [[§C6a.6 Wick's Theorem#^der-c6a-6-1|Derivation §C6a.6.1]], [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]]
 
 > [!remark] Remark: Yu's route
 > Yu §6.3 treats boson and fermion fields together, with a sign $\epsilon_{ab}$ for every exchange of two fermion fields (eqs. (6.140)–(6.143), (6.155), (6.163)), and defines the contraction as the vacuum expectation value of the time-ordered product (6.161), which equals PS's commutator definition (4.35). He proves the lemma ([[§C6a.6 Wick's Theorem#^lem-c6a-6-1|Lemma §C6a.6.1]]) in four steps: the $\Phi_b^{(+)}$ part (6.171)–(6.172); an induction over the positive-frequency factors (6.175)–(6.181); the general term (6.182)–(6.185); prior contractions (6.170). The theorem then follows by induction for $x_1^0 \ge \cdots \ge x_n^0$ (6.186)–(6.190) and, for any order, by exchanging fields in $T$ and $\mathsf N$ alike, which produces the same sign on both sides (6.191)–(6.193). Slide 9 follows Yu's direction (append the earliest field); PS (4.41) prepend the latest. Fermionic Wick contractions, with their signs, entered with Yukawa theory (Lecture 17): [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-2|§C6d.3, Theorem §C6d.3.2]].
@@ -457,10 +457,10 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — the pairings and their number, the two pieces of mathematics used (Theorem §C6a.6.2, its by-product count, Theorem §C6a.6.3, Examples §C6a.6.1–§C6a.6.2).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — the pairings and their number, the two pieces of mathematics used (Theorem §C6a.6.2, its by-product count, Theorem §C6a.6.3, Examples §C6a.6.1–§C6a.6.2).
 
 > [!remark]- Connections
-> - The vacuum value of Wick's theorem has the form of the moment formula of a Gaussian: free fields are Gaussian, with covariance $D_F$, and in the path integral this is literal — [[§CA.7 Pairings, Diagrams and Symmetry Factors#^rem-ca-7-1|§CA.7, ★ Remark: The same sum is the moment formula of a Gaussian]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-4|§C2b.7, Remark: The propagator as a Gaussian covariance (preview)]].
+> - The vacuum value of Wick's theorem has the form of the moment formula of a Gaussian: free fields are Gaussian, with covariance $D_F$, and in the path integral this is literal — [[§CA.8 Pairings, Diagrams and Symmetry Factors#^rem-ca-8-1|§CA.8, ★ Remark: The same sum is the moment formula of a Gaussian]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-4|§C2b.7, Remark: The propagator as a Gaussian covariance (preview)]].
 > - At coincident points the two-field case produced the zero-point energy; at a vertex of $\phi^4$ theory the same coincident contractions produce the first loops — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]].
 > - The inputs of the theorem in perturbation theory are the terms of the Dyson series, products of free fields with four at each interaction point — [[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]].
 > - In the non-relativistic many-body problem the same theorem, for ladder operators, organizes perturbation theory around a Fermi sea or a condensate — [[§C12.2★ Second Quantization|QM §C12.2★]].

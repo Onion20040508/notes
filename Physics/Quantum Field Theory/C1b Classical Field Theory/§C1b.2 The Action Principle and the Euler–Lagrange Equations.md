@@ -500,7 +500,7 @@ This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mo
 > \frac{\delta^2S}{\delta\phi(x)\,\delta\phi(y)} = -(\partial_x^2 + m^2)\,\delta^4(x - y) ,
 > $$
 >
-> a distribution on $\mathbb R^8$ ([[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]]). Its first variation set to zero is the field equation; its inverses are the Green's functions $G$ with $(\partial^2 + m^2)G = -\delta^4$, i.e. $D_C = iG$ in the normalization of [[§C2b.6 Green's Functions and Contours#^def-c2b-6-1|Def. §C2b.6.1]]. The inverse is not unique; a boundary condition, equivalently a contour, picks one ([[§C2b.6 Green's Functions and Contours#^thm-c2b-6-3|Theorem §C2b.6.3]]), and the vacuum boundary condition of the path integral picks $D_F$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-4|Remark: The propagator as a Gaussian covariance (preview)]]).
+> a distribution on $\mathbb R^8$ ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-4|Theorem §CA.3.4]]). Its first variation set to zero is the field equation; its inverses are the Green's functions $G$ with $(\partial^2 + m^2)G = -\delta^4$, i.e. $D_C = iG$ in the normalization of [[§C2b.6 Green's Functions and Contours#^def-c2b-6-1|Def. §C2b.6.1]]. The inverse is not unique; a boundary condition, equivalently a contour, picks one ([[§C2b.6 Green's Functions and Contours#^thm-c2b-6-3|Theorem §C2b.6.3]]), and the vacuum boundary condition of the path integral picks $D_F$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-4|Remark: The propagator as a Gaussian covariance (preview)]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Derivation "Taylor expansion in index notation", "Three expansions, not one": "the second variation, (□ + m²)δ⁴(x − y) for the free field, is the operator whose inverse will be the propagator") · the sign and the integration by parts written out here*
 
@@ -514,7 +514,7 @@ This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mo
 > - [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]] — a continuous function is fixed by its integrals against test functions: the functional derivative of a local action is unique, and the field equation holds point by point (the fundamental lemma).
 > - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — differentiation under the integral: the first variation is computed inside $\int_Rd^4x$.
 > - [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]] — integration by parts with its surface term, here one dimension up: the boundary term $\oint d\sigma_\mu\,\Pi^\mu\eta$ that the variations kill.
-> - [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]] — the kernel theorem: the second variation $-(\partial_x^2 + m^2)\delta^4(x - y)$ is one distribution in $x$ and $y$ together.
+> - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-4|Theorem §CA.3.4]] — the kernel theorem: the second variation $-(\partial_x^2 + m^2)\delta^4(x - y)$ is one distribution in $x$ and $y$ together.
 
 > [!remark]- Connections
 > - The field action principle is Hamilton's principle with the index $i$ of $q_i$ made continuous; the fundamental lemma used to localize is the particle one in four variables — [[§B6.2 Hamilton's Principle of Stationary Action#^pr-b6-2-1|CM Principle §B6.2.1]], [[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-2|CM Lemma §B5.1.2]], [[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-4|CM Theorem §B5.1.4]].

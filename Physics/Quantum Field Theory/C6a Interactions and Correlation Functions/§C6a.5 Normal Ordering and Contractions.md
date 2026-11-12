@@ -231,14 +231,14 @@ In the vacuum, $\langle0|:\!\hat\phi_1\hat\phi_2\!:|0\rangle = 0$ ([[§C6a.5 Nor
 >
 > The four fields at one vertex of $\phi^4$ theory are at coincident points, so contractions among them are formal at this level ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|§C6a.1, ★ Remark: In what sense φ̂⁴(x) is defined]]). They reappear as the first ultraviolet divergence ([[§C6a.10 Feynman Rules in Momentum Space#^rem-c6a-10-1|§C6a.10, Remark: The first ultraviolet divergence]]).
 >
-> *Source: written here, from [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-7|Theorem §C2b.7.7]] and [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]]*
+> *Source: written here, from [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-7|Theorem §C2b.7.7]] and [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|Theorem §CA.3.2]]*
 
 ^cau-c6a-5-3
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]] — a product of distributions at one point has in general no value: the contraction at coincident points, "$D_F(0)$", is not a number, while the identities of this section hold after smearing at distinct points (Caution: In what sense these identities hold).
+> - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|Theorem §CA.3.2]] — a product of distributions at one point has in general no value: the contraction at coincident points, "$D_F(0)$", is not a number, while the identities of this section hold after smearing at distinct points (Caution: In what sense these identities hold).
 
 > [!remark]- Connections
 > - Normal ordering the free Hamiltonian removed the zero-point energy; the same reordering, applied to a product of two fields at one point, turns that energy into $D_W$ at coincident points, and applied to time-ordered products it produces $D_F$ — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-3|§C2b.7, Remark: One mechanism, two products]].

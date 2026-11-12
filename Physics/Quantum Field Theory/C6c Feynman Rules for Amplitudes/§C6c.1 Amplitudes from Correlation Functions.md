@@ -104,7 +104,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > \end{aligned}
 > $$
 >
-> **Step 3** (vacuum value). The contractions are numbers; every term with a remainder $:\!\cdots\!:$ of $8$, $6$, $4$ or $2$ fields has $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2; spelled out in [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]], Step 3). Only the $7!! = 105$ complete contractions survive ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]).
+> **Step 3** (vacuum value). The contractions are numbers; every term with a remainder $:\!\cdots\!:$ of $8$, $6$, $4$ or $2$ fields has $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2; spelled out in [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]], Step 3). Only the $7!! = 105$ complete contractions survive ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]).
 >
 > **Step 4** (the fully connected ones). A complete contraction containing a pair $\{i, j\}$ of two external fields, a factor $D_F(x_i - x_j)$, has a line from $x_i$ to $x_j$ that touches nothing else: it is not fully connected ([[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-1|§C6c.1, Caution: "Connected" here means fully connected]]). In the others each $\hat\phi_j$ is contracted with a different $\hat\phi_{z_{\sigma(j)}}$, which uses up all four $\hat\phi_{z_a}$; so they are labelled by the permutations $\sigma \in S_4$, $4! = 24$ of them, and the remaining $105 - 24 = 81$ are not fully connected. With $D_{ja} \equiv D_F(x_j - z_a)$ the contraction of $\sigma$ is $\{1, z_{\sigma(1)}\}\,\{2, z_{\sigma(2)}\}\,\{3, z_{\sigma(3)}\}\,\{4, z_{\sigma(4)}\} \longmapsto D_{1\sigma(1)}D_{2\sigma(2)}D_{3\sigma(3)}D_{4\sigma(4)}$, and the 24 are
 >
@@ -217,7 +217,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 >
 > $D_{ij} = D_F(x_i - x_j)$, the contracted pairs named under each term; each factor of each term involves two of the four points, so the transform factorizes into two two-point transforms.
 >
-> **Step 2** (one line). Insert $D_F(x_i - x_j) = \int\frac{d^4k}{(2\pi)^4}\tilde D_F(k)\,e^{-ik\cdot(x_i - x_j)}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]) and do the two position integrals with [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]; for phases $e^{iq_i\cdot x_i}$, $e^{iq_j\cdot x_j}$ (momenta $q_i$, $q_j$ entering),
+> **Step 2** (one line). Insert $D_F(x_i - x_j) = \int\frac{d^4k}{(2\pi)^4}\tilde D_F(k)\,e^{-ik\cdot(x_i - x_j)}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]) and do the two position integrals with [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]; for phases $e^{iq_i\cdot x_i}$, $e^{iq_j\cdot x_j}$ (momenta $q_i$, $q_j$ entering),
 >
 > $$
 > \int d^4x_i\,d^4x_j\;e^{iq_i\cdot x_i + iq_j\cdot x_j}\,D_F(x_i - x_j) = \int\frac{d^4k}{(2\pi)^4}\tilde D_F(k)\,(2\pi)^4\delta^4(q_i - k)\,(2\pi)^4\delta^4(q_j + k) = \tilde D_F(q_i)\,(2\pi)^4\delta^4(q_i + q_j) .
@@ -242,7 +242,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 
 ^der-c6c-1-2
 
-*Uses:* [[§C6a.7 Feynman Diagrams for Correlation Functions#^ex-c6a-7-1|Example §C6a.7.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.8 Wave Packets and the Cross Section#^lem-c6b-8-5|Lemma §C6b.8.5]]
+*Uses:* [[§C6a.7 Feynman Diagrams for Correlation Functions#^ex-c6a-7-1|Example §C6a.7.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.8 Wave Packets and the Cross Section#^lem-c6b-8-5|Lemma §C6b.8.5]]
 
 > [!remark] Remark: Disconnected pieces beyond zeroth order
 > The four-point correlator also contains disconnected pieces at higher orders, e.g. a line times a line with a tadpole at first order. They describe particles that pass through, at least partly, untouched; each connected component carries its own momentum delta function, and such pieces belong to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$ (or to products of lower-point processes), not to $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^der-c6b-1-4|Derivation §C6b.1.4]], second point).
@@ -307,8 +307,8 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the Fourier transforms of the external points give the momentum deltas, one per connected component.
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — eight fields have $7!! = 105$ complete contractions.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the Fourier transforms of the external points give the momentum deltas, one per connected component.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — eight fields have $7!! = 105$ complete contractions.
 
 > [!remark]- Connections
 > - The diagrams of a scattering amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]]), the case $S = 1$ ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]) and the cubic–quartic diagrams of Problem Set 8 ([[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]], [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|Example §C6c.6.2]]) are in [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors|§C6c.5]] and [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]], with the tree-level rules for $i\mathcal M$ that the external-state contractions give (amputation and symmetry factors with the particles held fixed in §C6c.5, the rules in §C6c.6); the vertex factors of a polynomial interaction, $-ig_t\prod_km_{t,k}!$, are [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]], with the Feynman rules for any polynomial interaction.

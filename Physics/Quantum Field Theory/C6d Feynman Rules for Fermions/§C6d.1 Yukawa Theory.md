@@ -112,7 +112,7 @@ Lecture 17 does for a theory with fermions what Lectures 15–16 did for $\phi^4
 >
 > **Step 2** (first order). $n = 1$: $-i\int dt\,\hat H_I(t) = -i\int dt\int d^3x\,g\,\hat{\bar\psi}\hat\psi\hat\phi(t, \mathbf x) = -ig\int d^4x\,\hat{\bar\psi}_a\hat\psi_a\hat\phi(x)$, with $d^4x = dt\,d^3x$. Order $n$: $\frac{(-i)^n}{n!}\,g^n\int d^4x_1\cdots d^4x_n\,T\{\cdots\} = \frac{1}{n!}T\{(-ig\int d^4x\,\hat{\bar\psi}\hat\psi\hat\phi)^n\}$.
 >
-> **Step 3** (the factor per vertex). Each factor $-ig\int d^4x\,\hat{\bar\psi}_a\hat\psi_b\,\delta_{ab}\,\hat\phi$ offers one leg of each kind, $\hat{\bar\psi}_a$, $\hat\psi_b$, $\hat\phi$. In the language of [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]] the vertex factor is $-i$ times the coefficient times $\prod_km_k!$, here $m_{\bar\psi} = m_\psi = m_\phi = 1$, so $\prod_km_k! = 1$: the factor is $-ig$, and the spinor indices of the two fermion legs are joined by $\delta_{ab}$. In momentum space the $\int d^4x$ of the three plane waves at the vertex becomes $(2\pi)^4\delta^4$ of the momenta flowing in ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]).
+> **Step 3** (the factor per vertex). Each factor $-ig\int d^4x\,\hat{\bar\psi}_a\hat\psi_b\,\delta_{ab}\,\hat\phi$ offers one leg of each kind, $\hat{\bar\psi}_a$, $\hat\psi_b$, $\hat\phi$. In the language of [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]] the vertex factor is $-i$ times the coefficient times $\prod_km_k!$, here $m_{\bar\psi} = m_\psi = m_\phi = 1$, so $\prod_km_k! = 1$: the factor is $-ig$, and the spinor indices of the two fermion legs are joined by $\delta_{ab}$. In momentum space the $\int d^4x$ of the three plane waves at the vertex becomes $(2\pi)^4\delta^4$ of the momenta flowing in ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]).
 >
 > **What the derivation shows.**
 > - The vertex factor is $i\mathcal L_{\rm int}$ with the fields stripped: $i\cdot(-g) = -ig$ (Yu p. 288); in QED the same stripping gives $-ie\gamma^\mu$, a matrix in place of $\delta_{ab}$ ([[§C8.4 Feynman Rules for QED#^thm-c8-4-3|Theorem §C8.4.3]]; PS §4.8). → [[§C6d.1 Yukawa Theory#^thm-c6d-1-4|Theorem §C6d.1.4]]
@@ -120,7 +120,7 @@ Lecture 17 does for a theory with fermions what Lectures 15–16 did for $\phi^4
 
 ^der-c6d-1-3
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6d.1 Yukawa Theory#^thm-c6d-1-2|Theorem §C6d.1.2]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6d.1 Yukawa Theory#^thm-c6d-1-2|Theorem §C6d.1.2]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]
 
 > [!theorem] Theorem §C6d.1.4: The Vertex Factor Is iℒ_int with the Fields Stripped
 > Let $\mathcal L_{\rm int}$ contain no time derivatives, so that $\mathcal H_{\rm int} = -\mathcal L_{\rm int}$ ([[§C6d.1 Yukawa Theory#^mod-c6d-1-1|Model §C6d.1.1]], 2). Then the vertex factor of a term of $\mathcal L_{\rm int}$ is read off without any contraction:
@@ -273,7 +273,7 @@ Part C of the lecture (slides 26–28) explains why the theories of the course h
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the vertex integral $\int d^4x$ of three plane waves is the momentum delta of the vertex.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the vertex integral $\int d^4x$ of three plane waves is the momentum delta of the vertex.
 
 > [!remark]- Connections
 > - The vertex $-ig$ with three distinct legs is the case $\prod_km_k! = 1$ of the polynomial vertex rule; what is new is the spinor index carried through the vertex by $\delta_{ab}$ — [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]].

@@ -324,7 +324,7 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — a full contraction is a pairing (CA); the sign of a pairing as the parity of its crossings is [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^lem-c6d-3-3|Lemma §C6d.3.3]], proved in this section.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-1|Def. §CA.8.1]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — a full contraction is a pairing (CA); the sign of a pairing as the parity of its crossings is [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^lem-c6d-3-3|Lemma §C6d.3.3]], proved in this section.
 
 > [!remark]- Connections
 > - The fermionic theorem is the bosonic one with signs; for fields that are all scalars it reduces to it, and Yu proves both at once with a sign $\epsilon_{ab}$ per exchange — [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.6 Wick's Theorem#^rem-c6a-6-3|§C6a.6, Remark: Yu's route]].

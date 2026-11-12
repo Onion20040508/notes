@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 A classical source switched on for a finite time leaves the vacuum in a state with some particles. [[§C2b.9 Particle Production by a Classical Source|§C2b.9]] answered this with the retarded function: the late-time field has shifted annihilation operators and the final state is a coherent state, with Poisson-distributed particle number. This section reaches the same answer the way Problem Set 8 asks, through the interaction picture: the probabilities are squares of matrix elements of the time-ordered exponential ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]), Wick's theorem turns them into diagrams with one-legged **source vertices**, and the vacuum diagrams exponentiate. Two general tools are used: the contraction of a field with an outgoing particle ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], first written for this problem and since moved to [[§C6c.2 Contractions with External Particles|§C6c.2]], with Wick's theorem between particle states) and the measure on $n$-particle states ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]]; the overlap of two $n$-particle states it rests on, also written for this problem, is now [[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]]). Everything below is the user's solution, tagged by part.
 
-*Conventions* ([[Larsen PHY 513]]): the source model is [[§C2b.6 Green's Functions and Contours#^mod-c2b-6-1|Model §C2b.6.1]], $j$ real, smooth, nonzero only for a finite time, $\hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi(\mathbf x)$; $\tilde j(k) = \int d^4x\,e^{ik\cdot x}j(x)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]) with $k^0 = E_{\mathbf k}$ where stated; **one-particle states $|\mathbf k\rangle = \hat a^\dagger_{\mathbf k}|0\rangle$, not relativistically normalized** ([[§C6c.2 Contractions with External Particles#^cau-c6c-2-1|Caution: Two normalizations of one-particle states]]); $\lambda$ is the mean number of particles produced (PS's letter; there is no $\phi^4$ coupling in this section); $\hat\phi^\pm$ the positive- and negative-frequency parts ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]).
+*Conventions* ([[Larsen PHY 513]]): the source model is [[§C2b.6 Green's Functions and Contours#^mod-c2b-6-1|Model §C2b.6.1]], $j$ real, smooth, nonzero only for a finite time, $\hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi(\mathbf x)$; $\tilde j(k) = \int d^4x\,e^{ik\cdot x}j(x)$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^def-ca-4-1|Def. §CA.4.1]]) with $k^0 = E_{\mathbf k}$ where stated; **one-particle states $|\mathbf k\rangle = \hat a^\dagger_{\mathbf k}|0\rangle$, not relativistically normalized** ([[§C6c.2 Contractions with External Particles#^cau-c6c-2-1|Caution: Two normalizations of one-particle states]]); $\lambda$ is the mean number of particles produced (PS's letter; there is no $\phi^4$ coupling in this section); $\hat\phi^\pm$ the positive- and negative-frequency parts ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]).
 
 **Setup and scope: exact, no asymptotic subtleties.** The setup of every box below is [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]], the same system as [[§C2b.6 Green's Functions and Contours#^mod-c2b-6-1|Model §C2b.6.1]] written as a Hamiltonian. The source of Model §C2b.6.1 is nonzero only for a finite time: $j(t, \mathbf x) = 0$ for $t \notin [t_1, t_2]$. Hence the interaction has compact support in time,
 $$
@@ -25,7 +25,7 @@ $$
 $$
 holds exactly, not only at lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]] with $\hat H_{\rm int}(t) \to 0$; no $\sqrt Z$, unlike [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]). The source is classical, so nothing is renormalized.
 
-A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected part, $\sum_D\frac{w(D)}{S(D)} = \exp\bigl(\sum_C\frac{w(C)}{S(C)}\bigr)$ for weights multiplicative over connected components ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], proved in CA and listed at the end; for the $\phi^4$ bubbles [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-1|Theorem §C6a.12.1]]), and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] holds for vertices with one leg, $|G_n| = n!$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1 and 4).
+A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected part, $\sum_D\frac{w(D)}{S(D)} = \exp\bigl(\sum_C\frac{w(C)}{S(C)}\bigr)$ for weights multiplicative over connected components ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], proved in CA and listed at the end; for the $\phi^4$ bubbles [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-1|Theorem §C6a.12.1]]), and the counting of [[§CA.8 Pairings, Diagrams and Symmetry Factors|§CA.8]] holds for vertices with one leg, $|G_n| = n!$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1 and 4).
 
 ## No particles
 
@@ -114,7 +114,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > \mathcal A_2 = -\frac12\int\frac{d^4p}{(2\pi)^4}\frac{i}{p^2 - m^2 + i\varepsilon}\underbrace{\int d^4x_1\,j(x_1)e^{-ip\cdot x_1}}_{\tilde j(-p)}\;\underbrace{\int d^4x_2\,j(x_2)e^{ip\cdot x_2}}_{\tilde j(p)} = -\frac i2\int\frac{d^4p}{(2\pi)^4}\frac{|\tilde j(p)|^2}{p^2 - m^2 + i\varepsilon} ,
 > $$
 >
-> using $\tilde j(-p) = \tilde j(p)^{\ast}$ for real $j$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], 4).
+> using $\tilde j(-p) = \tilde j(p)^{\ast}$ for real $j$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-4|Theorem §CA.4.4]], 4).
 >
 > **Step 5** (real part, the user's route). For real $A$, $B$, $C$: $\frac{A}{B + iC} = \frac{AB}{B^2 + C^2} - i\frac{AC}{B^2 + C^2}$. With $A = |\tilde j(p)|^2$, $B = p^2 - m^2$, $C = \varepsilon$, the first part times $-\frac i2$ is imaginary, so
 >
@@ -122,13 +122,13 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > \operatorname{Re}\mathcal A_2 = -\frac12\int\frac{d^4p}{(2\pi)^4}\,|\tilde j(p)|^2\,\frac{\varepsilon}{(p^2 - m^2)^2 + \varepsilon^2} .
 > $$
 >
-> $\frac{\varepsilon}{x^2 + \varepsilon^2}$ has area $\pi$ and tends to $\pi\delta(x)$ as $\varepsilon \to 0^+$ (after the integration); this is the $-i\pi\delta(p^2 - m^2)$ of [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 1, the home of the step. $p^2 - m^2 = (p^0)^2 - E_{\mathbf p}^2$ has simple zeros $p^0 = \pm E_{\mathbf p}$ with $|\partial_{p^0}(p^2 - m^2)| = 2E_{\mathbf p}$ ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2):
+> $\frac{\varepsilon}{x^2 + \varepsilon^2}$ has area $\pi$ and tends to $\pi\delta(x)$ as $\varepsilon \to 0^+$ (after the integration); this is the $-i\pi\delta(p^2 - m^2)$ of [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]], 1, the home of the step. $p^2 - m^2 = (p^0)^2 - E_{\mathbf p}^2$ has simple zeros $p^0 = \pm E_{\mathbf p}$ with $|\partial_{p^0}(p^2 - m^2)| = 2E_{\mathbf p}$ ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2):
 >
 > $$
 > \delta(p^2 - m^2) = \frac{\delta(p^0 - E_{\mathbf p})}{2E_{\mathbf p}} + \frac{\delta(p^0 + E_{\mathbf p})}{2E_{\mathbf p}}, \qquad \int dp^0\,\pi|\tilde j(p)|^2\delta(p^2 - m^2) = \frac{\pi}{2E_{\mathbf p}}\bigl(|\tilde j(E_{\mathbf p}, \mathbf p)|^2 + |\tilde j(-E_{\mathbf p}, \mathbf p)|^2\bigr) .
 > $$
 >
-> **Step 6** (the two terms are equal). $\tilde j(-E_{\mathbf p}, \mathbf p) = \tilde j(E_{\mathbf p}, -\mathbf p)^{\ast}$ (reality), and $\mathbf p \to -\mathbf p$ in $\int d^3p$ (Jacobian 1, $E_{-\mathbf p} = E_{\mathbf p}$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1) turns the second into the first. With $\frac{d^4p}{(2\pi)^4} = \frac{d^3p}{(2\pi)^3}\frac{dp^0}{2\pi}$:
+> **Step 6** (the two terms are equal). $\tilde j(-E_{\mathbf p}, \mathbf p) = \tilde j(E_{\mathbf p}, -\mathbf p)^{\ast}$ (reality), and $\mathbf p \to -\mathbf p$ in $\int d^3p$ (Jacobian 1, $E_{-\mathbf p} = E_{\mathbf p}$, [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], 1) turns the second into the first. With $\frac{d^4p}{(2\pi)^4} = \frac{d^3p}{(2\pi)^3}\frac{dp^0}{2\pi}$:
 >
 > $$
 > 2\operatorname{Re}\mathcal A_2 = -\int\frac{d^3p}{(2\pi)^3}\,\frac{1}{2\pi}\,\frac{\pi}{2E_{\mathbf p}}\,2\,|\tilde j(E_{\mathbf p}, \mathbf p)|^2 = -\int\frac{d^3p}{(2\pi)^3}\frac{|\tilde j(E_{\mathbf p}, \mathbf p)|^2}{2E_{\mathbf p}} = -\lambda .
@@ -137,11 +137,11 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > ⚑ By-product: only the on-shell values $\tilde j(E_{\mathbf p}, \mathbf p)$ enter: the $i\varepsilon$ selects the mass shell, and $\lambda = \bar N$ of [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-4|Theorem §C2b.9.4]] (same integral): the source radiates only its on-shell components ([[§C2b.9 Particle Production by a Classical Source#^rem-c2b-9-1|§C2b.9, Remark: Only the on-shell part of the source radiates]]).
 >
 > **What the derivation shows.**
-> - The imaginary part of $\mathcal A_2$ (a phase) does not enter $P(0)$; the real part is the $\delta$-function part of the Feynman propagator ($2\operatorname{Re}\mathcal A_2 = -\lambda$ in the statement; [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]]).
+> - The imaginary part of $\mathcal A_2$ (a phase) does not enter $P(0)$; the real part is the $\delta$-function part of the Feynman propagator ($2\operatorname{Re}\mathcal A_2 = -\lambda$ in the statement; [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|Theorem §CA.7.2]]).
 
 ^der-c6c-7-2
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]]
 
 ## Diagrams with source vertices
 
@@ -152,7 +152,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > L = \int d^4x\,d^4y\,\bigl(ij(x)\bigr)\bigl(ij(y)\bigr)\,D_F(x - y) = 2\mathcal A_2 .
 > $$
 >
-> The order-$j^n$ term has prefactor $\frac{1}{n!} = \frac{1}{|G_n|}$, $G_n = S_n$ the permutations of the one-legged vertices ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1).
+> The order-$j^n$ term has prefactor $\frac{1}{n!} = \frac{1}{|G_n|}$, $G_n = S_n$ the permutations of the one-legged vertices ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1).
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]; *applies:* as in the opening.
 >
@@ -184,7 +184,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > \binom{2m}{2}\binom{2m - 2}{2}\cdots\binom22 = \frac{(2m)!}{2!\,(2m - 2)!}\cdot\frac{(2m - 2)!}{2!\,(2m - 4)!}\cdots\frac{2!}{2!\,0!} = \frac{(2m)!}{2^m} ,
 > $$
 >
-> ordered lists of $m$ pairs; each pairing (a set of pairs) is listed $m!$ times: $N = \frac{(2m)!}{2^m\,m!}$. All pairings have the same shape ($m$ disjoint lines), one orbit, so $S_m = \frac{(2m)!}{N} = 2^m\,m!$. As a stabilizer: flip each line ($2^m$) and permute the $m$ identical lines ($m!$) — part 2 of [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]] with $S(\text{line}) = 2$.
+> ordered lists of $m$ pairs; each pairing (a set of pairs) is listed $m!$ times: $N = \frac{(2m)!}{2^m\,m!}$. All pairings have the same shape ($m$ disjoint lines), one orbit, so $S_m = \frac{(2m)!}{N} = 2^m\,m!$. As a stabilizer: flip each line ($2^m$) and permute the $m$ identical lines ($m!$) — part 2 of [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]] with $S(\text{line}) = 2$.
 >
 > **Step 4** (sum). $\mathcal A_{2m} = \frac{1}{(2m)!}\int\prod d^4x_i\,(ij(x_i))\,\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{2m})\}|0\rangle$; by [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]] the vacuum value is the sum over the $N$ pairings of products of $m$ propagators, and after renaming the variables each gives $L^m$:
 >
@@ -192,18 +192,18 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > \mathcal A_{2m} = \frac{N}{(2m)!}L^m = \frac{L^m}{2^m\,m!} = \frac{1}{S_m}L^m = \frac{(L/2)^m}{m!} = \frac{(\mathcal A_2)^m}{m!}, \qquad \mathcal A(0) = \sum_{m\ge0}\frac{(\mathcal A_2)^m}{m!} = e^{\mathcal A_2} .
 > $$
 >
-> $\mathcal A_2$ is exact (the only diagram with two vertices), so this holds to all orders in $j$; it is [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]] (with [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 4, $r = 1$) for a theory whose only connected vacuum diagram is the line.
+> $\mathcal A_2$ is exact (the only diagram with two vertices), so this holds to all orders in $j$; it is [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]] (with [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 4, $r = 1$) for a theory whose only connected vacuum diagram is the line.
 >
 > **Step 5** (probability). $P(0) = |e^{\mathcal A_2}|^2 = e^{\mathcal A_2 + \mathcal A_2^{\ast}} = e^{2\operatorname{Re}\mathcal A_2} = e^{-\lambda}$ ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-2|Theorem §C6c.7.2]]); to order $j^2$, $1 - \lambda$.
 >
 > **What the derivation shows.** (Written here; the steps above are the submitted solution, unchanged.)
-> - ⚑ $\mathcal A_2$ is exact: a source vertex has one leg, so the only connected vacuum diagram is the line between two source vertices, and no higher order can add to the exponent. This is why the statement holds to all orders in $j$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]]).
-> - $S_m = 2^m\,m!$ is found twice, by counting the pairings and as the stabilizer (flip each line, permute the lines); the two counts agree by orbit–stabilizer, which holds for one-legged vertices as well ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1 and 4).
+> - ⚑ $\mathcal A_2$ is exact: a source vertex has one leg, so the only connected vacuum diagram is the line between two source vertices, and no higher order can add to the exponent. This is why the statement holds to all orders in $j$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]]).
+> - $S_m = 2^m\,m!$ is found twice, by counting the pairings and as the stabilizer (flip each line, permute the lines); the two counts agree by orbit–stabilizer, which holds for one-legged vertices as well ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1 and 4).
 > - Used next: the same vacuum series multiplies every amplitude with outgoing particles ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-4|Theorem §C6c.7.4]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-6|Theorem §C6c.7.6]]), where it contributes $|e^{\mathcal A_2}|^2 = e^{-\lambda}$ to each probability.
 
 ^der-c6c-7-3
 
-*Uses:* [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^def-c6c-7-1|Def. §C6c.7.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-2|Theorem §C6c.7.2]]
+*Uses:* [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^def-c6c-7-1|Def. §C6c.7.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-2|Theorem §C6c.7.2]]
 
 ## Outgoing particles
 
@@ -357,17 +357,17 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]] — a vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected part.
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]] — the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] holds for vertices with one leg, $|G_n| = n!$ (parts 1 and 4).
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]] — the Fourier convention of $\tilde j(k)$.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] — $\tilde j(-p) = \tilde j(p)^{\ast}$ for a real source.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — the relabelling $\mathbf p \to -\mathbf p$ under $\int d^3p$.
-> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]] — the $i\varepsilon$ limit of the propagator denominator has the part $-i\pi\delta(p^2 - m^2)$ (Sokhotski–Plemelj), the real part of $\mathcal A_2$.
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]] — a vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected part.
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]] — the counting of [[§CA.8 Pairings, Diagrams and Symmetry Factors|§CA.8]] holds for vertices with one leg, $|G_n| = n!$ (parts 1 and 4).
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^def-ca-4-1|Def. §CA.4.1]] — the Fourier convention of $\tilde j(k)$.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-4|Theorem §CA.4.4]] — $\tilde j(-p) = \tilde j(p)^{\ast}$ for a real source.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]] — the relabelling $\mathbf p \to -\mathbf p$ under $\int d^3p$.
+> - [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]], [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|Theorem §CA.7.2]] — the $i\varepsilon$ limit of the propagator denominator has the part $-i\pi\delta(p^2 - m^2)$ (Sokhotski–Plemelj), the real part of $\mathcal A_2$.
 > - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]] — $\delta(p^2 - m^2)$ is two deltas in $p^0$ with weight $\frac{1}{2E_{\mathbf p}}$.
 
 > [!remark]- Connections
-> - The vacuum series exponentiates by the same exponential formula as the vacuum bubbles of $\phi^4$ theory; here the only connected vacuum diagram is the line, so the whole series is $e^{L/2}$ — [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-1|Theorem §C6a.12.1]].
-> - $P(0) = e^{-\lambda}$ is the vacuum-persistence probability; at order $j^2$, $1 - P(0) = \lambda = P(1)$: the probability lost from the vacuum is the probability of emitting one particle, carried by the $\delta(p^2 - m^2)$ part of $D_F$ — [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]] (the $\delta(p^2 - m^2)$ part of $D_F$).
+> - The vacuum series exponentiates by the same exponential formula as the vacuum bubbles of $\phi^4$ theory; here the only connected vacuum diagram is the line, so the whole series is $e^{L/2}$ — [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-12-1|Theorem §C6a.12.1]].
+> - $P(0) = e^{-\lambda}$ is the vacuum-persistence probability; at order $j^2$, $1 - P(0) = \lambda = P(1)$: the probability lost from the vacuum is the probability of emitting one particle, carried by the $\delta(p^2 - m^2)$ part of $D_F$ — [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]] (the $\delta(p^2 - m^2)$ part of $D_F$).
 > - The contraction of a field with an outgoing particle is the external-line rule of amplitudes: in relativistic normalization each external scalar line gives $e^{ip\cdot x}$, i.e. factor 1 after the vertex integral, as in the decay $\Phi \to \phi\phi$ — [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|Example §C6b.6.1]], [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]].
 > - The $n!$ of the $n$-particle measure and the identical-particle factor $S_{\rm id}$ are one fact, the symmetry of bosonic states — [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]].
 > - The same computation with $j$ a classical current and $\hat\phi$ the photon field gives the Poisson distribution of soft photons emitted by a classical charge (PS Problem 4.1's remark; bremsstrahlung, QFT C8, planned) — [[§C2b.9 Particle Production by a Classical Source|§C2b.9]], Connections.

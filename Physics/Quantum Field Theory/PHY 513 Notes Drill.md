@@ -632,7 +632,7 @@ $U(t, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}e^{-iE(\mathbf p)t + i\mathbf p\cdot
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13 (distributions, Fourier tricks)
-> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|§C1a.3.3]] The Amplitude Is the Fourier Transform of the Phase, steps 1–3; the Fourier transform on $\mathcal S'$: Definition [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|§CA.3.1]] Fourier Transform in Space and Spacetime.
+> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|§C1a.3.3]] The Amplitude Is the Fourier Transform of the Phase, steps 1–3; the Fourier transform on $\mathcal S'$: Definition [[§CA.4 Fourier Transforms and Fourier Tricks#^def-ca-4-1|§CA.4.1]] Fourier Transform in Space and Spacetime.
 
 ### [A] The nonrelativistic amplitude is nonzero everywhere ★★
 For $E = \mathbf p^2/2m$, $U(t, \mathbf x) = (m/2\pi it)^{3/2}e^{imr^2/2t}$, of modulus $(m/2\pi|t|)^{3/2}$ at every $\mathbf x$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|§C1a.3.4]] The Nonrelativistic Amplitude Is Nonzero Everywhere. *Source: Lecture 2 (Sep 2), slides "Quantum Causality of Free Particle I–II" · the user's notes Ch. 2 §2.2 · PS §2.1 p. 14*
@@ -661,7 +661,7 @@ $U(z, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}e^{-iE_{\mathbf p}z + i\mathbf p\cdo
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13
-> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude Is a Boundary Value, steps 1–4; boundary values: [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions|§CA.6]] Boundary Values, iε Limits and Fundamental Solutions.
+> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude Is a Boundary Value, steps 1–4; boundary values: [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions|§CA.7]] Boundary Values, iε Limits and Fundamental Solutions.
 
 ### [A] The relativistic amplitude as a radial integral ★★
 $U(z, r) = \frac{1}{2\pi^2r}\int_0^\infty dp\,p\sin(pr)e^{-iE_pz} = \frac{1}{4\pi^2ir}\int_{-\infty}^\infty dp\,p\,e^{i(pr - E_pz)}$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Relativistic Amplitude as a Radial Integral. *Source: Lecture 2 (Sep 2), slide "Relativistic Quantum Causality" · the user's notes Ch. 2 §2.2 · PS §2.1 p. 14 · **[class exercise, Lecture 2]**: the angular integral, "this is something you should probably check"*
@@ -701,7 +701,7 @@ For $r > |t|$ and $m\rho \gg 1$, $\rho = \sqrt{r^2 - t^2}$, $U \simeq \frac{i m^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13 (saddle point on a contour)
-> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero, steps 1–7; the same exponent: Example [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|§CA.5.1]] The Exponent of the Wightman Function Outside the Light Cone; exact form Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|§C2b.4.3]] The Relativistic Amplitude at Spacelike Separation.
+> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero, steps 1–7; the same exponent: Example [[§C2b.3 Explicit Forms of the Wightman Function#^ex-c2b-3-1|§C2b.3.1]] The Exponent of the Wightman Function Outside the Light Cone; exact form Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|§C2b.4.3]] The Relativistic Amplitude at Spacelike Separation.
 
 # T3. Classical field theory: action, Euler–Lagrange, Hamiltonian, mass dimension
 
@@ -1808,7 +1808,7 @@ $\hat\phi(f) = \int d^3x\,f(\mathbf x)\hat\phi(\mathbf x)$, $\hat\pi(g)$ likewis
 ^nd-def-c2a-1-1
 
 - [ ] Q1 **[def]** Define the smeared field and the smeared momentum density. Which space do the smearing functions belong to?
-- [ ] Q2 **[def]** Define an operator-valued distribution (Definition [[§CA.2 Generalized Functions#^def-ca-2-11|§CA.2.11]] Operator-Valued Distribution).
+- [ ] Q2 **[def]** Define an operator-valued distribution (Definition [[§CA.3 Products of Distributions and Operator-Valued Distributions#^def-ca-3-1|§CA.3.1]] Operator-Valued Distribution).
 - [ ] Q3 **[why]** Why is $\hat\phi(\mathbf x)$ itself not an operator? Name one quantity that has no value if it is read as one.
 
 > [!tip]- Hints: route in the notes
@@ -1828,7 +1828,7 @@ At fixed time, $\int d^3x\,e^{\mp i(p \pm q)\cdot x} = e^{\mp i(E_{\mathbf p} \p
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9 (mode substitution).
-> - Step 1: Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|§CA.3.3]] Plane Waves Integrate to a Delta Function (plane waves give a delta, in $\mathcal S'$); Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|§CA.3.6]] Exchanging the Space and Momentum Integrals (exchange of integrals for wave packets); Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|§CA.3.7]] Changes of Integration Variable: Relabelling, Shifting, Rescaling, Rotating part 1 (relabel).
+> - Step 1: Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|§CA.4.3]] Plane Waves Integrate to a Delta Function (plane waves give a delta, in $\mathcal S'$); Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-7|§CA.4.7]] Exchanging the Space and Momentum Integrals (exchange of integrals for wave packets); Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|§CA.4.6]] Changes of Integration Variable: Relabelling, Shifting, Rescaling, Rotating part 1 (relabel).
 > - Step 2: P1, step 7 and its "Pitfalls" list.
 
 ### [B] Klein–Gordon inner product and positive-frequency modes
@@ -1991,8 +1991,8 @@ For real $f, g \in \mathcal S(\mathbb R^3)$, $[\hat\phi(f), \hat\pi(g)] = i\int 
 
 > [!tip]- Hints: route in the notes
 > - Technique: none (distributions).
-> - Step 1: kernel theorem Theorem [[§CA.2 Generalized Functions#^thm-ca-2-11|§CA.2.11]] The Kernel Theorem; change of variables Definition [[§CA.2 Generalized Functions#^def-ca-2-8|§CA.2.8]] Linear Change of Variables.
-> - Step 2: nascent deltas Theorem [[§CA.2 Generalized Functions#^thm-ca-2-5|§CA.2.5]] Distributional Limits part 3; δ at its singular point Theorem [[§CA.2 Generalized Functions#^thm-ca-2-9|§CA.2.9]] Products Without a Value: θ·δ, δ² and δ(0) part 3.
+> - Step 1: kernel theorem Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-4|§CA.3.4]] The Kernel Theorem; change of variables Definition [[§CA.2 Generalized Functions#^def-ca-2-11|§CA.2.11]] Linear Change of Variables.
+> - Step 2: nascent deltas Theorem [[§CA.2 Generalized Functions#^thm-ca-2-5|§CA.2.5]] Distributional Limits part 3; δ at its singular point Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|§CA.3.2]] Products Without a Value: θ·δ, δ² and δ(0) part 3.
 
 ### [A] The free field is a set of independent oscillators ★★
 
@@ -2063,7 +2063,7 @@ For $g, h \in \mathcal S$ and $f_g = \int\frac{d^3p}{(2\pi)^3}g(\mathbf p)f_{\ma
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Step 1: derivation steps 1–3; Plancherel is Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|§CA.3.1]] Fourier Inversion and Plancherel on 𝒮 part 3; step 6 (the kernel).
+> - Step 1: derivation steps 1–3; Plancherel is Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-1|§CA.4.1]] Fourier Inversion and Plancherel on 𝒮 part 3; step 6 (the kernel).
 
 ### [PS] Mode extraction
 
@@ -2141,7 +2141,7 @@ The constant $(2\pi)^3\delta^3(\mathbf 0)$ left by reordering is δ at its singu
 
 > [!tip]- Hints: route in the notes
 > - Technique: none (regularization).
-> - Step 1: derivation steps 1–6; box regularization Theorem [[§CA.2 Generalized Functions#^thm-ca-2-10|§CA.2.10]] Box Regularization of δ³(0); δ at its singular point Theorem [[§CA.2 Generalized Functions#^thm-ca-2-9|§CA.2.9]] Products Without a Value: θ·δ, δ² and δ(0) part 3.
+> - Step 1: derivation steps 1–6; box regularization Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|§CA.3.3]] Box Regularization of δ³(0); δ at its singular point Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|§CA.3.2]] Products Without a Value: θ·δ, δ² and δ(0) part 3.
 
 ### [A] The zero-point energy ★★
 
@@ -2578,7 +2578,7 @@ $(\partial_x^2 + m^2)D_C(x - y) = -i\delta^4(x - y)$; then $\phi = \phi_0 + i\in
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: [[§C2b.6 Green's Functions and Contours#^rem-c2b-6-1|§C2b.6, Remark: What a Green's "function" is, and why it is not unique]] (the check, non-uniqueness); Definition [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-6-1|§CA.6.1]] Fundamental Solution; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|§CA.6.8]] Convolution with a Fundamental Solution Solves the Sourced Equation.
+> - Step 1: [[§C2b.6 Green's Functions and Contours#^rem-c2b-6-1|§C2b.6, Remark: What a Green's "function" is, and why it is not unique]] (the check, non-uniqueness); Definition [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-7-1|§CA.7.1]] Fundamental Solution; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-8|§CA.7.8]] Convolution with a Fundamental Solution Solves the Sourced Equation.
 > - Step 2: the Dirac normalization: P2, "Pitfalls" (the Dirac normalization is $+i\delta^4$).
 
 ### [B] The Green's function of a contour
@@ -2697,7 +2697,7 @@ A generalized function is a continuous linear map $\varphi \mapsto T[\varphi]$ o
 
 ### [B] Support and singular support
 
-$\operatorname{supp}T$ is the complement of the largest open set on which $T$ vanishes; $\operatorname{sing\,supp}T$ the complement of the largest open set on which $T$ is a smooth function, see Definition [[§CA.2 Generalized Functions#^def-ca-2-3|§CA.2.3]] Support and Singular Support.
+$\operatorname{supp}T$ is the complement of the largest open set on which $T$ vanishes; $\operatorname{sing\,supp}T$ the complement of the largest open set on which $T$ is a smooth function, see Definition [[§CA.2 Generalized Functions#^def-ca-2-6|§CA.2.6]] Support and Singular Support.
 
 ^nd-def-ca-2-3
 
@@ -2711,7 +2711,7 @@ $\operatorname{supp}T$ is the complement of the largest open set on which $T$ va
 
 ### [B] Derivative of a generalized function; product with a smooth function
 
-$T'[\varphi] \equiv -T[\varphi']$, $\partial_\mu T[\varphi] \equiv -T[\partial_\mu\varphi]$; $(gT)[\varphi] \equiv T[g\varphi]$ for smooth $g$, see Definition [[§CA.2 Generalized Functions#^def-ca-2-4|§CA.2.4]] Derivative of a Generalized Function, Definition [[§CA.2 Generalized Functions#^def-ca-2-5|§CA.2.5]] Product of a Generalized Function with a Smooth Function.
+$T'[\varphi] \equiv -T[\varphi']$, $\partial_\mu T[\varphi] \equiv -T[\partial_\mu\varphi]$; $(gT)[\varphi] \equiv T[g\varphi]$ for smooth $g$, see Definition [[§CA.2 Generalized Functions#^def-ca-2-7|§CA.2.7]] Derivative of a Generalized Function, Definition [[§CA.2 Generalized Functions#^def-ca-2-8|§CA.2.8]] Product of a Generalized Function with a Smooth Function.
 
 ^nd-def-ca-2-4
 
@@ -2721,11 +2721,11 @@ $T'[\varphi] \equiv -T[\varphi']$, $\partial_\mu T[\varphi] \equiv -T[\partial_\
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: Theorem [[§CA.2 Generalized Functions#^thm-ca-2-4|§CA.2.4]] Every Generalized Function Is Differentiable; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-8|§CA.2.8]] Products with Disjoint Singular Supports part 3; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-9|§CA.2.9]] Products Without a Value: θ·δ, δ² and δ(0).
+> - Step 1: Theorem [[§CA.2 Generalized Functions#^thm-ca-2-4|§CA.2.4]] Every Generalized Function Is Differentiable; Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|§CA.3.1]] Products with Disjoint Singular Supports part 3; Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|§CA.3.2]] Products Without a Value: θ·δ, δ² and δ(0).
 
 ### [B] Distributional limit; Fourier transform of a generalized function
 
-$T_\varepsilon \to T$ means $T_\varepsilon[\varphi] \to T[\varphi]$ for every test function; $\tilde T[\varphi] \equiv T[\tilde\varphi]$, see Definition [[§CA.2 Generalized Functions#^def-ca-2-6|§CA.2.6]] Distributional Limit, Definition [[§CA.2 Generalized Functions#^def-ca-2-7|§CA.2.7]] Fourier Transform of a Generalized Function.
+$T_\varepsilon \to T$ means $T_\varepsilon[\varphi] \to T[\varphi]$ for every test function; $\tilde T[\varphi] \equiv T[\tilde\varphi]$, see Definition [[§CA.2 Generalized Functions#^def-ca-2-9|§CA.2.9]] Distributional Limit, Definition [[§CA.2 Generalized Functions#^def-ca-2-10|§CA.2.10]] Fourier Transform of a Generalized Function.
 
 ^nd-def-ca-2-6
 
@@ -2735,11 +2735,11 @@ $T_\varepsilon \to T$ means $T_\varepsilon[\varphi] \to T[\varphi]$ for every te
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§CA.2 Generalized Functions#^thm-ca-2-5|§CA.2.5]] Distributional Limits; Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|§CA.3.2]] The Fourier Transform of Tempered Distributions part 2; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|§C2b.7.9]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′.
+> - Step 1: Theorem [[§CA.2 Generalized Functions#^thm-ca-2-5|§CA.2.5]] Distributional Limits; Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-2|§CA.4.2]] The Fourier Transform of Tempered Distributions part 2; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|§C2b.7.9]] The $i\varepsilon$ Prescription Is a Limit in 𝒮′.
 
 ### [B] Linear change of variables; invariant distribution
 
-$T(Ax + a)[\varphi] \equiv |\det A|^{-1}T[\varphi(A^{-1}(\cdot - a))]$; $T$ is Lorentz invariant if $T[\varphi\circ\Lambda^{-1}] = T[\varphi]$ for every proper orthochronous $\Lambda$, see Definition [[§CA.2 Generalized Functions#^def-ca-2-8|§CA.2.8]] Linear Change of Variables, Definition [[§CA.2 Generalized Functions#^def-ca-2-9|§CA.2.9]] Invariant Distribution.
+$T(Ax + a)[\varphi] \equiv |\det A|^{-1}T[\varphi(A^{-1}(\cdot - a))]$; $T$ is Lorentz invariant if $T[\varphi\circ\Lambda^{-1}] = T[\varphi]$ for every proper orthochronous $\Lambda$, see Definition [[§CA.2 Generalized Functions#^def-ca-2-11|§CA.2.11]] Linear Change of Variables, Definition [[§CA.2 Generalized Functions#^def-ca-2-12|§CA.2.12]] Invariant Distribution.
 
 ^nd-def-ca-2-8
 
@@ -2753,7 +2753,7 @@ $T(Ax + a)[\varphi] \equiv |\det A|^{-1}T[\varphi(A^{-1}(\cdot - a))]$; $T$ is L
 
 ### [B] Principal value
 
-For a test function $\varphi$, $\mathcal P\int\frac{\varphi(s)}{s}ds \equiv \lim_{\delta\to0^+}(\int_{-\infty}^{-\delta} + \int_\delta^\infty)\frac{\varphi(s)}{s}ds$, a real, odd generalized function, see Definition [[§CA.2 Generalized Functions#^def-ca-2-10|§CA.2.10]] Principal Value.
+For a test function $\varphi$, $\mathcal P\int\frac{\varphi(s)}{s}ds \equiv \lim_{\delta\to0^+}(\int_{-\infty}^{-\delta} + \int_\delta^\infty)\frac{\varphi(s)}{s}ds$, a real, odd generalized function, see Definition [[§CA.2 Generalized Functions#^def-ca-2-5|§CA.2.5]] Principal Value.
 
 ^nd-def-ca-2-10
 
@@ -2763,11 +2763,11 @@ For a test function $\varphi$, $\mathcal P\int\frac{\varphi(s)}{s}ds \equiv \lim
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|§CA.6.2]] Sokhotski–Plemelj Formula; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|§C2b.5.8]] Commutator and Hadamard Functions of the Massless Field ($D_1$ massless); Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-3|§C2b.6.3]] Principal-Value Green's Function.
+> - Step 1: Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|§CA.7.2]] Sokhotski–Plemelj Formula; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|§C2b.5.8]] Commutator and Hadamard Functions of the Massless Field ($D_1$ massless); Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-3|§C2b.6.3]] Principal-Value Green's Function.
 
 ### [B] Operator-valued distribution
 
-A map $f \mapsto \Phi(f)$ from $\mathcal S(\mathbb R^n)$ to operators on a dense invariant domain, linear in $f$, with every matrix element a tempered distribution, see Definition [[§CA.2 Generalized Functions#^def-ca-2-11|§CA.2.11]] Operator-Valued Distribution.
+A map $f \mapsto \Phi(f)$ from $\mathcal S(\mathbb R^n)$ to operators on a dense invariant domain, linear in $f$, with every matrix element a tempered distribution, see Definition [[§CA.3 Products of Distributions and Operator-Valued Distributions#^def-ca-3-1|§CA.3.1]] Operator-Valued Distribution.
 
 ^nd-def-ca-2-11
 
@@ -2777,11 +2777,11 @@ A map $f \mapsto \Phi(f)$ from $\mathcal S(\mathbb R^n)$ to operators on a dense
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: Definition [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|§C2a.1.1]] Smeared Field Operators; Theorem [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|§C2b.1.6]] The Heisenberg Field Is an Operator-Valued Distribution on Spacetime; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-11|§CA.2.11]] The Kernel Theorem.
+> - Step 1: Definition [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|§C2a.1.1]] Smeared Field Operators; Theorem [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|§C2b.1.6]] The Heisenberg Field Is an Operator-Valued Distribution on Spacetime; Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-4|§CA.3.4]] The Kernel Theorem.
 
 ### [B] Fourier conventions in space and spacetime
 
-$f(\mathbf x) = \int\frac{d^3k}{(2\pi)^3}\tilde f(\mathbf k)e^{i\mathbf k\cdot\mathbf x}$, $f(x) = \int\frac{d^4p}{(2\pi)^4}\tilde f(p)e^{-ip\cdot x}$; all $2\pi$'s with the momentum integral, see Definition [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|§CA.3.1]] Fourier Transform in Space and Spacetime, [[§CA.3 Fourier Transforms and Fourier Tricks#^cau-ca-3-1|§CA.3, Caution: Two conventions in the vault]]. *Source: register row "Fourier transform (4d)" · PS and Yu same*
+$f(\mathbf x) = \int\frac{d^3k}{(2\pi)^3}\tilde f(\mathbf k)e^{i\mathbf k\cdot\mathbf x}$, $f(x) = \int\frac{d^4p}{(2\pi)^4}\tilde f(p)e^{-ip\cdot x}$; all $2\pi$'s with the momentum integral, see Definition [[§CA.4 Fourier Transforms and Fourier Tricks#^def-ca-4-1|§CA.4.1]] Fourier Transform in Space and Spacetime, [[§CA.4 Fourier Transforms and Fourier Tricks#^cau-ca-4-1|§CA.4, Caution: Two conventions in the vault]]. *Source: register row "Fourier transform (4d)" · PS and Yu same*
 
 ^nd-def-ca-3-1
 
@@ -2791,11 +2791,11 @@ $f(\mathbf x) = \int\frac{d^3k}{(2\pi)^3}\tilde f(\mathbf k)e^{i\mathbf k\cdot\m
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: the definition; [[§CA.3 Fourier Transforms and Fourier Tricks#^cau-ca-3-1|§CA.3, Caution: Two conventions in the vault]]; Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|§CA.3.3]] Plane Waves Integrate to a Delta Function.
+> - Step 1: the definition; [[§CA.4 Fourier Transforms and Fourier Tricks#^cau-ca-4-1|§CA.4, Caution: Two conventions in the vault]]; Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|§CA.4.3]] Plane Waves Integrate to a Delta Function.
 
 ### [B] Contour, analytic function, isolated singularities and residues
 
-A contour integral $\int_\gamma f\,dz = \int_a^bf(z(s))z'(s)ds$; analytic means complex-differentiable (Cauchy–Riemann); poles and essential singularities from the Laurent expansion; the residue is the coefficient $a_{-1}$, see Definition [[§CA.4 Contour Integration#^def-ca-4-1|§CA.4.1]] Contour; Contour Integral, Definition [[§CA.4 Contour Integration#^def-ca-4-2|§CA.4.2]] Analytic Function, Definition [[§CA.4 Contour Integration#^def-ca-4-4|§CA.4.4]] Laurent Expansion; Removable Singularity, Pole and Essential Singularity, Definition [[§CA.4 Contour Integration#^def-ca-4-5|§CA.4.5]] Residue. *Source: Problem Set 4, Problem 1 · Lecture 6 (Sep 21), slide "Complex Analysis: a Survival Guide"*
+A contour integral $\int_\gamma f\,dz = \int_a^bf(z(s))z'(s)ds$; analytic means complex-differentiable (Cauchy–Riemann); poles and essential singularities from the Laurent expansion; the residue is the coefficient $a_{-1}$, see Definition [[§CA.5 Contour Integration#^def-ca-5-1|§CA.5.1]] Contour; Contour Integral, Definition [[§CA.5 Contour Integration#^def-ca-5-3|§CA.5.3]] Analytic Function, Definition [[§CA.5 Contour Integration#^def-ca-5-6|§CA.5.6]] Laurent Expansion; Removable Singularity, Pole and Essential Singularity, Definition [[§CA.5 Contour Integration#^def-ca-5-8|§CA.5.8]] Residue. *Source: Problem Set 4, Problem 1 · Lecture 6 (Sep 21), slide "Complex Analysis: a Survival Guide"*
 
 ^nd-def-ca-4-5
 
@@ -2806,11 +2806,11 @@ A contour integral $\int_\gamma f\,dz = \int_a^bf(z(s))z'(s)ds$; analytic means 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: [[§CA.4 Contour Integration#^rem-ca-4-1|§CA.4, Remark: What a residue is]]; Theorem [[§CA.4 Contour Integration#^thm-ca-4-1|§CA.4.1]] The ML Inequality and the Basic Integral part 2; Theorem [[§CA.4 Contour Integration#^thm-ca-4-8|§CA.4.8]] Integrals around a Branch Cut.
+> - Step 1: [[§CA.5 Contour Integration#^rem-ca-5-1|§CA.5, Remark: What a residue is]]; Theorem [[§CA.5 Contour Integration#^thm-ca-5-1|§CA.5.1]] The ML Inequality and the Basic Integral part 2; Theorem [[§CA.5 Contour Integration#^thm-ca-5-8|§CA.5.8]] Integrals around a Branch Cut.
 
 ### [B] Modified Bessel function of the second kind
 
-$K_\nu(z) = \int_0^\infty du\,e^{-z\cosh u}\cosh(\nu u)$ for $\operatorname{Re}z > 0$, so $\int_{-\infty}^\infty du\,\cosh u\,e^{-z\cosh u} = 2K_1(z)$, see Definition [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|§CA.5.1]] Modified Bessel Function of the Second Kind. *Source: Problem Set 4, Problem 3 · PS §2.4, eq. (2.52)*
+$K_\nu(z) = \int_0^\infty du\,e^{-z\cosh u}\cosh(\nu u)$ for $\operatorname{Re}z > 0$, so $\int_{-\infty}^\infty du\,\cosh u\,e^{-z\cosh u} = 2K_1(z)$, see Definition [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|§CA.6.2]] Modified Bessel Function of the Second Kind. *Source: Problem Set 4, Problem 3 · PS §2.4, eq. (2.52)*
 
 ^nd-def-ca-5-1
 
@@ -2820,11 +2820,11 @@ $K_\nu(z) = \int_0^\infty du\,e^{-z\cosh u}\cosh(\nu u)$ for $\operatorname{Re}z
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|§CA.5.3]] Properties of $K_\nu$ parts 2–3; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|§C2b.3.3]] The Wightman Function at Spacelike Separation.
+> - Step 1: Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|§CA.6.4]] Properties of $K_\nu$ parts 2–3; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|§C2b.3.3]] The Wightman Function at Spacelike Separation.
 
 ### [B] Fundamental solution
 
-A distribution $G$ with $P(\partial)G = -i\delta^n$; for Klein–Gordon $(\partial^2 + m^2)G = -i\delta^4$, the PS normalization, see Definition [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-6-1|§CA.6.1]] Fundamental Solution.
+A distribution $G$ with $P(\partial)G = -i\delta^n$; for Klein–Gordon $(\partial^2 + m^2)G = -i\delta^4$, the PS normalization, see Definition [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-7-1|§CA.7.1]] Fundamental Solution.
 
 ^nd-def-ca-6-1
 
@@ -2834,11 +2834,11 @@ A distribution $G$ with $P(\partial)G = -i\delta^n$; for Klein–Gordon $(\parti
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|§CA.6.8]] Convolution with a Fundamental Solution Solves the Sourced Equation.
+> - Step 1: Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-7|§CA.7.7]] Fundamental Solutions Differ by Homogeneous Solutions; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-8|§CA.7.8]] Convolution with a Fundamental Solution Solves the Sourced Equation.
 
 ### [B] What the Sokhotski–Plemelj formula does and does not say
 
-$\frac{1}{x - x_0 \pm i\varepsilon} \to \mathcal P\frac{1}{x - x_0} \mp i\pi\delta(x - x_0)$ is empty pointwise; its content sits at $x = x_0$, so an $i\varepsilon$ expression may be set to $\varepsilon = 0$ wherever the denominator does not vanish, see [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^cau-ca-6-1|§CA.6, Caution: What the formula does and does not say]].
+$\frac{1}{x - x_0 \pm i\varepsilon} \to \mathcal P\frac{1}{x - x_0} \mp i\pi\delta(x - x_0)$ is empty pointwise; its content sits at $x = x_0$, so an $i\varepsilon$ expression may be set to $\varepsilon = 0$ wherever the denominator does not vanish, see [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^cau-ca-7-1|§CA.7, Caution: What the formula does and does not say]].
 
 ^nd-cau-ca-6-1
 
@@ -2848,11 +2848,11 @@ $\frac{1}{x - x_0 \pm i\varepsilon} \to \mathcal P\frac{1}{x - x_0} \mp i\pi\del
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|§CA.6.2]] Sokhotski–Plemelj Formula; P2, "Pitfalls" (only the sign of $i\varepsilon$ matters).
+> - Step 1: Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|§CA.7.2]] Sokhotski–Plemelj Formula; P2, "Pitfalls" (only the sign of $i\varepsilon$ matters).
 
 ### [B] Jordan's lemma needs g → 0
 
-Jordan's lemma requires the non-exponential factor to tend to zero on the arc (no rate needed); a regulator such as $e^{-\varepsilon p}$ may not be kept on the arc, see [[§CA.4 Contour Integration#^cau-ca-4-1|§CA.4, Caution: Jordan's lemma needs g → 0]].
+Jordan's lemma requires the non-exponential factor to tend to zero on the arc (no rate needed); a regulator such as $e^{-\varepsilon p}$ may not be kept on the arc, see [[§CA.5 Contour Integration#^cau-ca-5-1|§CA.5, Caution: Jordan's lemma needs g → 0]].
 
 ^nd-cau-ca-4-1
 
@@ -2862,7 +2862,7 @@ Jordan's lemma requires the non-exponential factor to tend to zero on the arc (n
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§CA.4 Contour Integration#^thm-ca-4-6|§CA.4.6]] Closing the Contour: the ML Estimate and Jordan's Lemma part 2; second route of Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|§C2b.3.3]] The Wightman Function at Spacelike Separation.
+> - Step 1: Theorem [[§CA.5 Contour Integration#^thm-ca-5-6|§CA.5.6]] Closing the Contour: the ML Estimate and Jordan's Lemma part 2; second route of Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|§C2b.3.3]] The Wightman Function at Spacelike Separation.
 
 ## Derivations T6
 
@@ -3030,7 +3030,7 @@ $W(z, \boldsymbol\xi) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}e^{-iE_{\mathbf
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–4; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|§CA.6.1]] Boundary Values of Analytic Functions Are Distributions; dominated convergence Theorem [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|§CA.1.1]] Dominated Convergence and Differentiation under the Integral.
+> - Step 1: derivation steps 1–4; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-1|§CA.7.1]] Boundary Values of Analytic Functions Are Distributions; dominated convergence Theorem [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|§CA.1.1]] Dominated Convergence and Differentiation under the Integral.
 
 ### [B] The Wightman function at imaginary time ★
 
@@ -3046,7 +3046,7 @@ For $\tau > 0$, $W(-i\tau, \boldsymbol\xi) = \int\frac{d^4p_E}{(2\pi)^4}\frac{e^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13, K1.
-> - Step 1: derivation steps 1–2 (residue); steps 3–4 (Schwinger, Gaussian, Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|§CA.5.1]] Gaussian Integrals in n Dimensions; Schwinger Parametrization); steps 5–6 ($K_1$, Definition [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|§CA.5.1]] Modified Bessel Function of the Second Kind); step 7 ($m = 0$).
+> - Step 1: derivation steps 1–2 (residue); steps 3–4 (Schwinger, Gaussian, Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-2|§CA.6.2]] Gaussian Integrals in n Dimensions; Schwinger Parametrization); steps 5–6 ($K_1$, Definition [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|§CA.6.2]] Modified Bessel Function of the Second Kind); step 7 ($m = 0$).
 
 ### [B] The Wightman function in the lower half-plane ★
 
@@ -3060,7 +3060,7 @@ For $\operatorname{Im}z < 0$, $W(z, \boldsymbol\xi) = \frac{mK_1(ms)}{4\pi^2s}$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–5; identity theorem Theorem [[§CA.4 Contour Integration#^thm-ca-4-3|§CA.4.3]] Identity Theorem.
+> - Step 1: derivation steps 1–5; identity theorem Theorem [[§CA.5 Contour Integration#^thm-ca-5-3|§CA.5.3]] Identity Theorem.
 
 ### [PS] The Wightman function at spacelike separation
 
@@ -3084,7 +3084,7 @@ For $\xi^2 = \tau^2 > 0$, $D_W = \frac{m}{8\pi\tau}[Y_1(m\tau) + i\operatorname{
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–5; Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|§CA.5.4]] Further Representations; Imaginary Argument parts 3–4; Theorem [[§C2b.2 The Wightman Function#^thm-c2b-2-4|§C2b.2.4]] The Wightman Function Is a Homogeneous Solution; Reversal Is Conjugation part 2.
+> - Step 1: derivation steps 1–5; Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-5|§CA.6.5]] Further Representations; Imaginary Argument parts 3–4; Theorem [[§C2b.2 The Wightman Function#^thm-c2b-2-4|§C2b.2.4]] The Wightman Function Is a Homogeneous Solution; Reversal Is Conjugation part 2.
 
 ### [PS] The Wightman function near the light cone
 
@@ -3106,7 +3106,7 @@ Off the light cone $D_W$ is the real-analytic Bessel function; its singular supp
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–7; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-4|§CA.6.4]] The Light-Cone Boundary Value.
+> - Step 1: derivation steps 1–7; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-4|§CA.7.4]] The Light-Cone Boundary Value.
 
 ### [B] The single-particle amplitude is a time derivative of the Wightman function ★
 
@@ -3135,7 +3135,7 @@ For $r > |t|$, $U = \frac{im^2t}{2\pi^2\rho^2}K_2(m\rho)$ with $\rho = \sqrt{r^2
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–7 of Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|§C2b.4.3]] The Relativistic Amplitude at Spacelike Separation; Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|§CA.5.3]] Properties of $K_\nu$ part 1.
+> - Step 1: derivation steps 1–7 of Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|§C2b.4.3]] The Relativistic Amplitude at Spacelike Separation; Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|§CA.6.4]] Properties of $K_\nu$ part 1.
 > - Step 2: resolution: Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|§C2b.5.7]] Forward and Backward Amplitudes; Theorem [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-4|§C2b.4.4]] The Spacelike Amplitude at Large Distance for the asymptotics.
 
 ### [B] The spacelike amplitude at large distance ★
@@ -3151,7 +3151,7 @@ For $r > |t|$ and $m\rho \gg 1$, $U = \frac{im^{3/2}t}{(2\pi\rho)^{3/2}\rho}e^{-
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–3; Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|§CA.5.3]] Properties of $K_\nu$ part 2; Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero.
+> - Step 1: derivation steps 1–3; Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|§CA.6.4]] Properties of $K_\nu$ part 2; Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero.
 
 ### [B] The single-particle amplitude inside the light cone ★
 
@@ -3165,7 +3165,7 @@ For $|t| > r$, $U(t, \mathbf x) = \frac{m^2t}{4\pi\tau^2}H^{(2)}_2(m\tau)$ for $
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–5; Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|§CA.5.4]] Further Representations; Imaginary Argument part 3.
+> - Step 1: derivation steps 1–5; Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-5|§CA.6.5]] Further Representations; Imaginary Argument part 3.
 
 ### [B] Units restored in the single-particle amplitude ★
 
@@ -3241,7 +3241,7 @@ $\operatorname{supp}D \subseteq \{\xi^2 \ge 0\}$ (the cone surface for $m = 0$, 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14.
-> - Step 1: derivation steps 1–3; Definition [[§CA.2 Generalized Functions#^def-ca-2-3|§CA.2.3]] Support and Singular Support.
+> - Step 1: derivation steps 1–3; Definition [[§CA.2 Generalized Functions#^def-ca-2-6|§CA.2.6]] Support and Singular Support.
 
 ### [B] Forward and backward amplitudes ★
 
@@ -3346,7 +3346,7 @@ For a tempered Green's function, $(m^2 - p^2)\tilde D_C(p) = -i$, so $\tilde D_C
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–2; P2, step 1; Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|§CA.3.4]] Rules of the Fourier Transform part 2.
+> - Step 1: derivation steps 1–2; P2, step 1; Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-4|§CA.4.4]] Rules of the Fourier Transform part 2.
 > - Step 2: Theorem [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|§C2b.1.3]] Free Fields Live on the Mass Shell; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]].
 
 ### [A] Contours are boundary conditions ★★
@@ -3364,7 +3364,7 @@ Every contour passing the two poles gives a Green's function, and two contours g
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
 > - Step 1: derivation steps 1–3 (apply the operator; back to the real axis; delta functions); steps 4–5 (two contours; homogeneous).
-> - Step 2: Theorem [[§CA.4 Contour Integration#^thm-ca-4-5|§CA.4.5]] Residue Theorem (residue theorem); Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions.
+> - Step 2: Theorem [[§CA.5 Contour Integration#^thm-ca-5-5|§CA.5.5]] Residue Theorem (residue theorem); Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-7|§CA.7.7]] Fundamental Solutions Differ by Homogeneous Solutions.
 
 ### [B] Each contour is a fundamental solution ★
 
@@ -3378,7 +3378,7 @@ $D_C$ is a tempered distribution; at fixed $\mathbf p$, $\tilde D_C = \frac{i}{(
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–6; Theorem [[§CA.4 Contour Integration#^thm-ca-4-7|§CA.4.7]] Poles on the Contour: the Half-Residue Lemma; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|§CA.6.2]] Sokhotski–Plemelj Formula.
+> - Step 1: derivation steps 1–6; Theorem [[§CA.5 Contour Integration#^thm-ca-5-7|§CA.5.7]] Poles on the Contour: the Half-Residue Lemma; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|§CA.7.2]] Sokhotski–Plemelj Formula.
 
 ### [A] The retarded Green's function ★★
 
@@ -3397,7 +3397,7 @@ The contour $C_R$ passing above both poles gives $D_R(\xi) = \theta(\xi^0)[D_W(\
 > [!tip]- Hints: route in the notes
 > - Technique: K13 (contours, residues).
 > - Step 1: derivation steps 1–5 (P2, steps 2–6); step 6 (P2, step 7); step 7 (operator form).
-> - Step 2: residues Theorem [[§CA.4 Contour Integration#^thm-ca-4-4|§CA.4.4]] Computing Residues part 3; closing Theorem [[§CA.4 Contour Integration#^thm-ca-4-6|§CA.4.6]] Closing the Contour: the ML Estimate and Jordan's Lemma; orientation Theorem [[§CA.4 Contour Integration#^thm-ca-4-9|§CA.4.9]] Working Rules for Contour Integrals part 1.
+> - Step 2: residues Theorem [[§CA.5 Contour Integration#^thm-ca-5-4|§CA.5.4]] Computing Residues part 3; closing Theorem [[§CA.5 Contour Integration#^thm-ca-5-6|§CA.5.6]] Closing the Contour: the ML Estimate and Jordan's Lemma; orientation Theorem [[§CA.5 Contour Integration#^thm-ca-5-9|§CA.5.9]] Working Rules for Contour Integrals part 1.
 > - Step 3: [[§C2b.6 Green's Functions and Contours#^rem-c2b-6-3|§C2b.6, Remark: Retarded means late; the sign of the exponent carries causality]]; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|§C2b.5.5]] The Free Field Is Microcausal.
 
 ### [B] The product θ(ξ⁰)D is defined; retarded means supported in the future ★
@@ -3413,7 +3413,7 @@ $\theta(\xi^0)D$ is defined slice by slice since $D$ is smooth in $\xi^0$ with v
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–6; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-2|§CA.2.2]] Distributions Supported at a Point; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-8|§CA.2.8]] Products with Disjoint Singular Supports; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions part 3.
+> - Step 1: derivation steps 1–6; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-2|§CA.2.2]] Distributions Supported at a Point; Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|§CA.3.1]] Products with Disjoint Singular Supports; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-7|§CA.7.7]] Fundamental Solutions Differ by Homogeneous Solutions part 3.
 
 ### [A] The advanced Green's function ★ [class exercise, Lecture 6]
 
@@ -3445,7 +3445,7 @@ For each of the four contours (retarded, advanced, Feynman, anti-Feynman) and ea
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
 > - Step 1: P2, steps 2–6 and its "Instances" table.
-> - Step 2: orientation Theorem [[§CA.4 Contour Integration#^thm-ca-4-9|§CA.4.9]] Working Rules for Contour Integrals part 1; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]].
+> - Step 2: orientation Theorem [[§CA.5 Contour Integration#^thm-ca-5-9|§CA.5.9]] Working Rules for Contour Integrals part 1; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]].
 
 ### [B] Properties of time ordering ★
 
@@ -3562,7 +3562,7 @@ Moving the poles off the real axis is equivalent to deforming the contour: $\til
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13 ($i\varepsilon$).
-> - Step 1: derivation steps 1–5; Theorem [[§CA.4 Contour Integration#^thm-ca-4-7|§CA.4.7]] Poles on the Contour: the Half-Residue Lemma; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|§CA.6.6]] The iε Limits of the Propagator Denominators part 3.
+> - Step 1: derivation steps 1–5; Theorem [[§CA.5 Contour Integration#^thm-ca-5-7|§CA.5.7]] Poles on the Contour: the Half-Residue Lemma; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|§CA.7.6]] The iε Limits of the Propagator Denominators part 3.
 
 ### [B] The iε prescription is a limit in 𝒮′ ★
 
@@ -3576,7 +3576,7 @@ For $\varepsilon > 0$, $i/(p^2 - m^2 + i\varepsilon)$ is a bounded smooth functi
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–6; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|§CA.6.6]] The iε Limits of the Propagator Denominators; Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|§CA.3.2]] The Fourier Transform of Tempered Distributions part 2.
+> - Step 1: derivation steps 1–6; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|§CA.7.6]] The iε Limits of the Propagator Denominators; Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-2|§CA.4.2]] The Fourier Transform of Tempered Distributions part 2.
 
 ### [B] Differences on the mass shell ★
 
@@ -3590,7 +3590,7 @@ $\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$, $\tilde D_R - \tilde D
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–2; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions part 2.
+> - Step 1: derivation steps 1–2; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-7|§CA.7.7]] Fundamental Solutions Differ by Homogeneous Solutions part 2.
 
 ### [A] Wick rotation of a momentum integral ★★
 
@@ -3607,7 +3607,7 @@ If $F$ is analytic in the first and third quadrants of the $p^0$-plane and decay
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–4; Cauchy Theorem [[§CA.4 Contour Integration#^thm-ca-4-2|§CA.4.2]] Cauchy's Theorem; Deformation of Contours.
+> - Step 1: derivation steps 1–4; Cauchy Theorem [[§CA.5 Contour Integration#^thm-ca-5-2|§CA.5.2]] Cauchy's Theorem; Deformation of Contours.
 > - Step 2: P2, "Pitfalls" (Wick rotation with a time); Theorem [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-2|§C2b.8.2]] The Feynman Function at Imaginary Time.
 
 ### [B] The Feynman function at imaginary time ★
@@ -3653,7 +3653,7 @@ $\hat\phi(x) = \hat\phi_0(x) + i\int d^4y\,D_R(x - y)j(y)$; after the source has
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9, K13.
-> - Step 1: derivation steps 1–6; Definition [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|§CA.3.1]] Fourier Transform in Space and Spacetime; [[§C2b.9 Particle Production by a Classical Source#^rem-c2b-9-2|§C2b.9, Remark: The boundary condition was physics]] (the boundary condition was physics).
+> - Step 1: derivation steps 1–6; Definition [[§CA.4 Fourier Transforms and Fourier Tricks#^def-ca-4-1|§CA.4.1]] Fourier Transform in Space and Spacetime; [[§C2b.9 Particle Production by a Classical Source#^rem-c2b-9-2|§C2b.9, Remark: The boundary condition was physics]] (the boundary condition was physics).
 
 ### [B] The final state is a coherent state ★
 
@@ -3714,7 +3714,7 @@ For $j = g\delta^3(\mathbf x)e^{-t^2/2T^2}/\sqrt{2\pi}T$, $\bar N = \frac{g^2m^2
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9, K8.
-> - Step 1: steps 1–5 of the example; Definition [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|§CA.5.1]] Modified Bessel Function of the Second Kind; Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|§CA.5.3]] Properties of $K_\nu$ parts 2–3.
+> - Step 1: steps 1–5 of the example; Definition [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|§CA.6.2]] Modified Bessel Function of the Second Kind; Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|§CA.6.4]] Properties of $K_\nu$ parts 2–3.
 
 ### [C] Dominated convergence and differentiation under the integral ★
 
@@ -3728,7 +3728,7 @@ If $f_n \to f$ a.e. with $|f_n| \le g$, $\int g < \infty$, then $\int f_n \to \i
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: "What the derivation shows"; Theorem [[§C2b.2 The Wightman Function#^thm-c2b-2-5|§C2b.2.5]] The Wightman Function Is a Boundary Value; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|§CA.6.2]] Sokhotski–Plemelj Formula.
+> - Step 1: "What the derivation shows"; Theorem [[§C2b.2 The Wightman Function#^thm-c2b-2-5|§C2b.2.5]] The Wightman Function Is a Boundary Value; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|§CA.7.2]] Sokhotski–Plemelj Formula.
 
 ### [C] Conditionally convergent integrals: Dirichlet's test and Abel's theorem ★
 
@@ -3770,7 +3770,7 @@ $\mathcal D$ is dense in $\mathcal S$; a locally integrable $\psi$ with polynomi
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; Definition [[§CA.2 Generalized Functions#^def-ca-2-10|§CA.2.10]] Principal Value.
+> - Step 1: derivation; Definition [[§CA.2 Generalized Functions#^def-ca-2-5|§CA.2.5]] Principal Value.
 
 ### [C] Distributions supported at a point ★
 
@@ -3784,7 +3784,7 @@ If $\operatorname{supp}T \subseteq \{a\}$ then $T = \sum_{|\alpha| \le N}c_\alph
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|§C2b.6.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions part 3.
+> - Step 1: Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|§C2b.6.6]] The Product θ(ξ⁰)D Is Defined; Retarded Means Supported in the Future; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-7|§CA.7.7]] Fundamental Solutions Differ by Homogeneous Solutions part 3.
 
 ### [C] Integration by parts; the gradient of a delta function ★
 
@@ -3859,7 +3859,7 @@ $\theta(\pm p^0)\delta(p^2 - m^2)$ acts as $\varphi \mapsto \int d^3p\,\varphi(\
 
 ### [C] Products with disjoint singular supports ★
 
-$gT$ is defined for smooth $g$; $ST$ is defined when the singular supports are disjoint; in general no associative product extends both, since $(x\delta)\mathcal P\frac1x = 0$ while $\delta(x\mathcal P\frac1x) = \delta$, see Theorem [[§CA.2 Generalized Functions#^thm-ca-2-8|§CA.2.8]] Products with Disjoint Singular Supports.
+$gT$ is defined for smooth $g$; $ST$ is defined when the singular supports are disjoint; in general no associative product extends both, since $(x\delta)\mathcal P\frac1x = 0$ while $\delta(x\mathcal P\frac1x) = \delta$, see Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|§CA.3.1]] Products with Disjoint Singular Supports.
 
 ^nd-thm-ca-2-8
 
@@ -3873,7 +3873,7 @@ $gT$ is defined for smooth $g$; $ST$ is defined when the singular supports are d
 
 ### [C] Products without a value: θ·δ, δ² and δ(0) ★
 
-With smooth regularizations, $\theta_\varepsilon\delta_\varepsilon \to c\delta$ with $c$ depending on the regularization (any value in $[0, 1]$); $\delta_\varepsilon^2$ diverges; $\delta^n_\varepsilon(0) = \varepsilon^{-n}\rho(0)$ has no limit, see Theorem [[§CA.2 Generalized Functions#^thm-ca-2-9|§CA.2.9]] Products Without a Value: θ·δ, δ² and δ(0).
+With smooth regularizations, $\theta_\varepsilon\delta_\varepsilon \to c\delta$ with $c$ depending on the regularization (any value in $[0, 1]$); $\delta_\varepsilon^2$ diverges; $\delta^n_\varepsilon(0) = \varepsilon^{-n}\rho(0)$ has no limit, see Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|§CA.3.2]] Products Without a Value: θ·δ, δ² and δ(0).
 
 ^nd-thm-ca-2-9
 
@@ -3887,7 +3887,7 @@ With smooth regularizations, $\theta_\varepsilon\delta_\varepsilon \to c\delta$ 
 
 ### [C] Box regularization of δ³(0) ★
 
-In a periodic box of volume $V$, $\int_Vd^3x\,e^{i(\mathbf k - \mathbf k')\cdot\mathbf x} = V\delta_{\mathbf k\mathbf k'}$; as $L \to \infty$, $\sum_{\mathbf k} \leftrightarrow V\int\frac{d^3k}{(2\pi)^3}$ and $(2\pi)^3\delta^3(\mathbf 0) \leftrightarrow V$, see Theorem [[§CA.2 Generalized Functions#^thm-ca-2-10|§CA.2.10]] Box Regularization of δ³(0).
+In a periodic box of volume $V$, $\int_Vd^3x\,e^{i(\mathbf k - \mathbf k')\cdot\mathbf x} = V\delta_{\mathbf k\mathbf k'}$; as $L \to \infty$, $\sum_{\mathbf k} \leftrightarrow V\int\frac{d^3k}{(2\pi)^3}$ and $(2\pi)^3\delta^3(\mathbf 0) \leftrightarrow V$, see Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|§CA.3.3]] Box Regularization of δ³(0).
 
 ^nd-thm-ca-2-10
 
@@ -3901,7 +3901,7 @@ In a periodic box of volume $V$, $\int_Vd^3x\,e^{i(\mathbf k - \mathbf k')\cdot\
 
 ### [C] The kernel theorem ★
 
-A bilinear form on $\mathcal S(\mathbb R^n) \times \mathcal S(\mathbb R^m)$, continuous in each argument, has a unique kernel $K \in \mathcal S'(\mathbb R^{n+m})$ with $B(f, g) = K[f \otimes g]$, see Theorem [[§CA.2 Generalized Functions#^thm-ca-2-11|§CA.2.11]] The Kernel Theorem. (Stated; one example worked.)
+A bilinear form on $\mathcal S(\mathbb R^n) \times \mathcal S(\mathbb R^m)$, continuous in each argument, has a unique kernel $K \in \mathcal S'(\mathbb R^{n+m})$ with $B(f, g) = K[f \otimes g]$, see Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-4|§CA.3.4]] The Kernel Theorem. (Stated; one example worked.)
 
 ^nd-thm-ca-2-11
 
@@ -3915,7 +3915,7 @@ A bilinear form on $\mathcal S(\mathbb R^n) \times \mathcal S(\mathbb R^m)$, con
 
 ### [C] Fourier inversion and Plancherel on 𝒮 ★
 
-The transform maps $\mathcal S$ onto $\mathcal S$ and inverts with the momentum measure $d^3k/(2\pi)^3$; $\int d^3x\,\bar fg = \int\frac{d^3k}{(2\pi)^3}\overline{\tilde f}\tilde g$, see Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|§CA.3.1]] Fourier Inversion and Plancherel on 𝒮.
+The transform maps $\mathcal S$ onto $\mathcal S$ and inverts with the momentum measure $d^3k/(2\pi)^3$; $\int d^3x\,\bar fg = \int\frac{d^3k}{(2\pi)^3}\overline{\tilde f}\tilde g$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-1|§CA.4.1]] Fourier Inversion and Plancherel on 𝒮.
 
 ^nd-thm-ca-3-1
 
@@ -3925,11 +3925,11 @@ The transform maps $\mathcal S$ onto $\mathcal S$ and inverts with the momentum 
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|§CA.3.2]] The Fourier Transform of Tempered Distributions.
+> - Step 1: derivation; Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-2|§CA.4.2]] The Fourier Transform of Tempered Distributions.
 
 ### [B] The Fourier transform of tempered distributions ★
 
-$\tilde T[\varphi] \equiv T[\tilde\varphi]$ is a bijection of $\mathcal S'$, continuous under limits; $\tilde\delta = 1$ and the transform of $1$ is $(2\pi)^n\delta^n$, see Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|§CA.3.2]] The Fourier Transform of Tempered Distributions.
+$\tilde T[\varphi] \equiv T[\tilde\varphi]$ is a bijection of $\mathcal S'$, continuous under limits; $\tilde\delta = 1$ and the transform of $1$ is $(2\pi)^n\delta^n$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-2|§CA.4.2]] The Fourier Transform of Tempered Distributions.
 
 ^nd-thm-ca-3-2
 
@@ -3943,7 +3943,7 @@ $\tilde T[\varphi] \equiv T[\tilde\varphi]$ is a bijection of $\mathcal S'$, con
 
 ### [C] Plane waves integrate to a delta function ★
 
-$\int d^nx\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^n\delta^n(\mathbf k)$ and $\int d^4x\,e^{ip\cdot x} = (2\pi)^4\delta^4(p)$ as tempered distributions; the $\mathbf x$ integral alone converges for no $\mathbf k$, see Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|§CA.3.3]] Plane Waves Integrate to a Delta Function.
+$\int d^nx\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^n\delta^n(\mathbf k)$ and $\int d^4x\,e^{ip\cdot x} = (2\pi)^4\delta^4(p)$ as tempered distributions; the $\mathbf x$ integral alone converges for no $\mathbf k$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|§CA.4.3]] Plane Waves Integrate to a Delta Function.
 
 ^nd-thm-ca-3-3
 
@@ -3954,11 +3954,11 @@ $\int d^nx\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^n\delta^n(\mathbf k)$ and $\in
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: both derivations; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-10|§CA.2.10]] Box Regularization of δ³(0).
+> - Step 1: both derivations; Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|§CA.3.3]] Box Regularization of δ³(0).
 
 ### [C] Rules of the Fourier transform ★
 
-Plane waves give deltas; $\partial_\mu \leftrightarrow -ip_\mu$, so $\partial^2 + m^2 \leftrightarrow m^2 - p^2$; convolution becomes a product; real $f$ gives $\tilde f(-p) = \overline{\tilde f(p)}$, scalars give scalars, see Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|§CA.3.4]] Rules of the Fourier Transform.
+Plane waves give deltas; $\partial_\mu \leftrightarrow -ip_\mu$, so $\partial^2 + m^2 \leftrightarrow m^2 - p^2$; convolution becomes a product; real $f$ gives $\tilde f(-p) = \overline{\tilde f(p)}$, scalars give scalars, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-4|§CA.4.4]] Rules of the Fourier Transform.
 
 ^nd-thm-ca-3-4
 
@@ -3968,11 +3968,11 @@ Plane waves give deltas; $\partial_\mu \leftrightarrow -ip_\mu$, so $\partial^2 
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; [[§CA.3 Fourier Transforms and Fourier Tricks#^rem-ca-3-1|§CA.3, Remark: A linear equation becomes algebra]]; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]].
+> - Step 1: derivation; [[§CA.4 Fourier Transforms and Fourier Tricks#^rem-ca-4-1|§CA.4, Remark: A linear equation becomes algebra]]; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]].
 
 ### [C] Translation, phase, and the rules in 𝒮′ ★
 
-$f(x - a)$ has transform $e^{ip\cdot a}\tilde f(p)$; $e^{-iq\cdot x}f$ has $\tilde f(p - q)$; the derivative rule holds for every $T \in \mathcal S'$, the convolution rule for $D \in \mathcal S'$ and $j \in \mathcal S$, see Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|§CA.3.5]] Translation, Phase, and the Rules in 𝒮′.
+$f(x - a)$ has transform $e^{ip\cdot a}\tilde f(p)$; $e^{-iq\cdot x}f$ has $\tilde f(p - q)$; the derivative rule holds for every $T \in \mathcal S'$, the convolution rule for $D \in \mathcal S'$ and $j \in \mathcal S$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-5|§CA.4.5]] Translation, Phase, and the Rules in 𝒮′.
 
 ^nd-thm-ca-3-5
 
@@ -3982,11 +3982,11 @@ $f(x - a)$ has transform $e^{ip\cdot a}\tilde f(p)$; $e^{-iq\cdot x}f$ has $\til
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|§CA.6.8]] Convolution with a Fundamental Solution Solves the Sourced Equation.
+> - Step 1: derivation; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-8|§CA.7.8]] Convolution with a Fundamental Solution Solves the Sourced Equation.
 
 ### [B] Exchanging the space and momentum integrals ★
 
-For wave packets $A, B \in \mathcal S$, $\int d^3x\,a(\mathbf x)b(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}A(\mathbf p)B(-\mathbf p)$, every integral absolutely convergent; the physicists' route through $(2\pi)^3\delta^3(\mathbf p + \mathbf q)$ computes the same number, see Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|§CA.3.6]] Exchanging the Space and Momentum Integrals.
+For wave packets $A, B \in \mathcal S$, $\int d^3x\,a(\mathbf x)b(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}A(\mathbf p)B(-\mathbf p)$, every integral absolutely convergent; the physicists' route through $(2\pi)^3\delta^3(\mathbf p + \mathbf q)$ computes the same number, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-7|§CA.4.7]] Exchanging the Space and Momentum Integrals.
 
 ^nd-thm-ca-3-6
 
@@ -4000,7 +4000,7 @@ For wave packets $A, B \in \mathcal S$, $\int d^3x\,a(\mathbf x)b(\mathbf x) = \
 
 ### [B] Changes of integration variable ★
 
-Over all of $\mathbb R^n$: relabel $\mathbf p \to -\mathbf p$, shift, rescale (with $|\lambda|^n$), rotate or boost; the domain is unchanged and $E_{-\mathbf p} = E_{R\mathbf p} = E_{\mathbf p}$, see Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|§CA.3.7]] Changes of Integration Variable: Relabelling, Shifting, Rescaling, Rotating.
+Over all of $\mathbb R^n$: relabel $\mathbf p \to -\mathbf p$, shift, rescale (with $|\lambda|^n$), rotate or boost; the domain is unchanged and $E_{-\mathbf p} = E_{R\mathbf p} = E_{\mathbf p}$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|§CA.4.6]] Changes of Integration Variable: Relabelling, Shifting, Rescaling, Rotating.
 
 ^nd-thm-ca-3-7
 
@@ -4010,11 +4010,11 @@ Over all of $\mathbb R^n$: relabel $\mathbf p \to -\mathbf p$, shift, rescale (w
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Step 1: derivation; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-10|§CA.2.10]] Box Regularization of δ³(0).
+> - Step 1: derivation; Theorem [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|§CA.3.3]] Box Regularization of δ³(0).
 
 ### [A] Angular integrals [class exercise, Lecture 5]
 
-For radial $f$, $\int d^3p\,f(|\mathbf p|)e^{i\mathbf p\cdot\mathbf r} = \frac{4\pi}{r}\int_0^\infty dp\,pf(p)\sin pr$; $\int d^3p\,p^if = 0$, $\int d^3p\,p^ip^jf = \frac13\delta^{ij}\int d^3p\,\mathbf p^2f$; $p^ie^{i\mathbf p\cdot\mathbf r} = -i\partial_{r^i}e^{i\mathbf p\cdot\mathbf r}$, see Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|§CA.3.8]] Angular Integrals. In Lecture 5 the angular integral of the equal-time Wightman function was left to practise ("this integral, I think I did tell you that you practice"); its use for $D_W$ is part of PS4.3(a). *Source: Lecture 5 (Sep 16), transcript · Problem Set 4, Problem 3(a)*
+For radial $f$, $\int d^3p\,f(|\mathbf p|)e^{i\mathbf p\cdot\mathbf r} = \frac{4\pi}{r}\int_0^\infty dp\,pf(p)\sin pr$; $\int d^3p\,p^if = 0$, $\int d^3p\,p^ip^jf = \frac13\delta^{ij}\int d^3p\,\mathbf p^2f$; $p^ie^{i\mathbf p\cdot\mathbf r} = -i\partial_{r^i}e^{i\mathbf p\cdot\mathbf r}$, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-8|§CA.4.8]] Angular Integrals. In Lecture 5 the angular integral of the equal-time Wightman function was left to practise ("this integral, I think I did tell you that you practice"); its use for $D_W$ is part of PS4.3(a). *Source: Lecture 5 (Sep 16), transcript · Problem Set 4, Problem 3(a)*
 
 ^nd-thm-ca-3-8
 
@@ -4025,11 +4025,11 @@ For radial $f$, $\int d^3p\,f(|\mathbf p|)e^{i\mathbf p\cdot\mathbf r} = \frac{4
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1 (convenient frame).
-> - Step 1: derivation; Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|§CA.3.7]] Changes of Integration Variable: Relabelling, Shifting, Rescaling, Rotating part 4; second route of Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|§C2b.3.3]] The Wightman Function at Spacelike Separation, step 2.
+> - Step 1: derivation; Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|§CA.4.6]] Changes of Integration Variable: Relabelling, Shifting, Rescaling, Rotating part 4; second route of Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|§C2b.3.3]] The Wightman Function at Spacelike Separation, step 2.
 
 ### [B] Fourier transforms of Lorentz-invariant functions ★
 
-An invariant $\tilde f$ has an invariant $f$, a function of $x^2$ (and of $\operatorname{sgn}x^0$ inside the cone); the Euclidean radial transform is $\frac{4\pi^2}{R}\int_0^\infty dp\,p^2F(p)J_1(pR)$; in Minkowski signature choose the frame, see Theorem [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-9|§CA.3.9]] Fourier Transforms of Lorentz-Invariant Functions.
+An invariant $\tilde f$ has an invariant $f$, a function of $x^2$ (and of $\operatorname{sgn}x^0$ inside the cone); the Euclidean radial transform is $\frac{4\pi^2}{R}\int_0^\infty dp\,p^2F(p)J_1(pR)$; in Minkowski signature choose the frame, see Theorem [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-9|§CA.4.9]] Fourier Transforms of Lorentz-Invariant Functions.
 
 ^nd-thm-ca-3-9
 
@@ -4043,7 +4043,7 @@ An invariant $\tilde f$ has an invariant $f$, a function of $x^2$ (and of $\oper
 
 ### [B] Cauchy's theorem; deformation of contours ★
 
-If $f$ is analytic on and inside a closed contour, $\oint f\,dz = 0$; integrals between two points do not depend on the path as long as no singularity is crossed, see Theorem [[§CA.4 Contour Integration#^thm-ca-4-2|§CA.4.2]] Cauchy's Theorem; Deformation of Contours. *Source: Problem Set 4, Problem 1 (text) · Lecture 6 (Sep 21), slide "Complex Analysis: a Survival Guide"*
+If $f$ is analytic on and inside a closed contour, $\oint f\,dz = 0$; integrals between two points do not depend on the path as long as no singularity is crossed, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-2|§CA.5.2]] Cauchy's Theorem; Deformation of Contours. *Source: Problem Set 4, Problem 1 (text) · Lecture 6 (Sep 21), slide "Complex Analysis: a Survival Guide"*
 
 ^nd-thm-ca-4-2
 
@@ -4053,11 +4053,11 @@ If $f$ is analytic on and inside a closed contour, $\oint f\,dz = 0$; integrals 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation; Theorem [[§CA.4 Contour Integration#^thm-ca-4-9|§CA.4.9]] Working Rules for Contour Integrals part 4.
+> - Step 1: derivation; Theorem [[§CA.5 Contour Integration#^thm-ca-5-9|§CA.5.9]] Working Rules for Contour Integrals part 4.
 
 ### [B] Identity theorem ★
 
-Analytic $f$, $g$ on a connected open set that agree on a set with an accumulation point agree everywhere; analytic continuation is unique, see Theorem [[§CA.4 Contour Integration#^thm-ca-4-3|§CA.4.3]] Identity Theorem.
+Analytic $f$, $g$ on a connected open set that agree on a set with an accumulation point agree everywhere; analytic continuation is unique, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-3|§CA.5.3]] Identity Theorem.
 
 ^nd-thm-ca-4-3
 
@@ -4071,7 +4071,7 @@ Analytic $f$, $g$ on a connected open set that agree on a set with an accumulati
 
 ### [B] Computing residues ★
 
-At a simple pole $\operatorname{Res} = \lim(z - z_0)f = g(z_0)/h'(z_0)$; at a pole of order $k$ by $k - 1$ derivatives; for the propagator integrand, $\operatorname{Res}_{p^0 = \pm E}\frac{e^{-ip^0t}}{(p^0)^2 - E^2} = \pm\frac{e^{\mp iEt}}{2E}$, see Theorem [[§CA.4 Contour Integration#^thm-ca-4-4|§CA.4.4]] Computing Residues.
+At a simple pole $\operatorname{Res} = \lim(z - z_0)f = g(z_0)/h'(z_0)$; at a pole of order $k$ by $k - 1$ derivatives; for the propagator integrand, $\operatorname{Res}_{p^0 = \pm E}\frac{e^{-ip^0t}}{(p^0)^2 - E^2} = \pm\frac{e^{\mp iEt}}{2E}$, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-4|§CA.5.4]] Computing Residues.
 
 ^nd-thm-ca-4-4
 
@@ -4085,7 +4085,7 @@ At a simple pole $\operatorname{Res} = \lim(z - z_0)f = g(z_0)/h'(z_0)$; at a po
 
 ### [B] Residue theorem ★
 
-$\oint_\Gamma f\,dz = \pm2\pi i\sum_k\operatorname{Res}_{z_k}f$ over the enclosed singularities, $+$ counterclockwise, $-$ clockwise, see Theorem [[§CA.4 Contour Integration#^thm-ca-4-5|§CA.4.5]] Residue Theorem.
+$\oint_\Gamma f\,dz = \pm2\pi i\sum_k\operatorname{Res}_{z_k}f$ over the enclosed singularities, $+$ counterclockwise, $-$ clockwise, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-5|§CA.5.5]] Residue Theorem.
 
 ^nd-thm-ca-4-5
 
@@ -4095,11 +4095,11 @@ $\oint_\Gamma f\,dz = \pm2\pi i\sum_k\operatorname{Res}_{z_k}f$ over the enclose
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation; Theorem [[§CA.4 Contour Integration#^thm-ca-4-1|§CA.4.1]] The ML Inequality and the Basic Integral; Theorem [[§CA.4 Contour Integration#^thm-ca-4-7|§CA.4.7]] Poles on the Contour: the Half-Residue Lemma.
+> - Step 1: derivation; Theorem [[§CA.5 Contour Integration#^thm-ca-5-1|§CA.5.1]] The ML Inequality and the Basic Integral; Theorem [[§CA.5 Contour Integration#^thm-ca-5-7|§CA.5.7]] Poles on the Contour: the Half-Residue Lemma.
 
 ### [B] Closing the contour: the ML estimate and Jordan's lemma ★
 
-On the upper semicircle $C_R$: if $|f| \le C/R^{1+\delta}$ the arc vanishes; if $\max|g| \to 0$ and $\lambda > 0$, $\int_{C_R}ge^{i\lambda z}dz \to 0$; so close $e^{-ip^0t}$ upward for $t < 0$ and downward for $t > 0$, see Theorem [[§CA.4 Contour Integration#^thm-ca-4-6|§CA.4.6]] Closing the Contour: the ML Estimate and Jordan's Lemma.
+On the upper semicircle $C_R$: if $|f| \le C/R^{1+\delta}$ the arc vanishes; if $\max|g| \to 0$ and $\lambda > 0$, $\int_{C_R}ge^{i\lambda z}dz \to 0$; so close $e^{-ip^0t}$ upward for $t < 0$ and downward for $t > 0$, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-6|§CA.5.6]] Closing the Contour: the ML Estimate and Jordan's Lemma.
 
 ^nd-thm-ca-4-6
 
@@ -4110,11 +4110,11 @@ On the upper semicircle $C_R$: if $|f| \le C/R^{1+\delta}$ the arc vanishes; if 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation; [[§CA.4 Contour Integration#^cau-ca-4-1|§CA.4, Caution: Jordan's lemma needs g → 0]]; P2, step 4.
+> - Step 1: derivation; [[§CA.5 Contour Integration#^cau-ca-5-1|§CA.5, Caution: Jordan's lemma needs g → 0]]; P2, step 4.
 
 ### [B] Poles on the contour: the half-residue lemma ★
 
-Passing a simple pole above (clockwise small semicircle) contributes $-i\pi\operatorname{Res}$, below $+i\pi\operatorname{Res}$; so the two passings differ by $2\pi i\operatorname{Res}$ and the principal value is their average, see Theorem [[§CA.4 Contour Integration#^thm-ca-4-7|§CA.4.7]] Poles on the Contour: the Half-Residue Lemma.
+Passing a simple pole above (clockwise small semicircle) contributes $-i\pi\operatorname{Res}$, below $+i\pi\operatorname{Res}$; so the two passings differ by $2\pi i\operatorname{Res}$ and the principal value is their average, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-7|§CA.5.7]] Poles on the Contour: the Half-Residue Lemma.
 
 ^nd-thm-ca-4-7
 
@@ -4124,11 +4124,11 @@ Passing a simple pole above (clockwise small semicircle) contributes $-i\pi\oper
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|§CA.6.2]] Sokhotski–Plemelj Formula, second route.
+> - Step 1: derivation; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|§CA.7.2]] Sokhotski–Plemelj Formula, second route.
 
 ### [B] A step function from a pole ★
 
-$\lim_{\varepsilon\to0^+}\int\frac{dx}{2\pi i}\frac{e^{ikx}}{x - i\varepsilon} = \theta(k)$, see Example [[§CA.4 Contour Integration#^ex-ca-4-2|§CA.4.2]] A Step Function from a Pole.
+$\lim_{\varepsilon\to0^+}\int\frac{dx}{2\pi i}\frac{e^{ikx}}{x - i\varepsilon} = \theta(k)$, see Example [[§CA.5 Contour Integration#^ex-ca-5-2|§CA.5.2]] A Step Function from a Pole.
 
 ^nd-ex-ca-4-2
 
@@ -4138,11 +4138,11 @@ $\lim_{\varepsilon\to0^+}\int\frac{dx}{2\pi i}\frac{e^{ikx}}{x - i\varepsilon} =
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: the example; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|§CA.6.5]] Damping Factors: the Transform of the Step Function.
+> - Step 1: the example; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-5|§CA.7.5]] Damping Factors: the Transform of the Step Function.
 
 ### [B] Integrals around a branch cut ★
 
-A branch point has no Laurent series and no residue; make the function single-valued by a cut and deform the contour onto it, so the integral becomes the integral of the discontinuity, see Theorem [[§CA.4 Contour Integration#^thm-ca-4-8|§CA.4.8]] Integrals around a Branch Cut.
+A branch point has no Laurent series and no residue; make the function single-valued by a cut and deform the contour onto it, so the integral becomes the integral of the discontinuity, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-8|§CA.5.8]] Integrals around a Branch Cut.
 
 ^nd-thm-ca-4-8
 
@@ -4156,7 +4156,7 @@ A branch point has no Laurent series and no residue; make the function single-va
 
 ### [B] Working rules for contour integrals ★
 
-Orientation sign; close where the integrand decays; check the arc (ML or Jordan); deform freely through analyticity; residues by $g/h'$; poles on the path need a prescription; branch points need cuts, see Theorem [[§CA.4 Contour Integration#^thm-ca-4-9|§CA.4.9]] Working Rules for Contour Integrals.
+Orientation sign; close where the integrand decays; check the arc (ML or Jordan); deform freely through analyticity; residues by $g/h'$; poles on the path need a prescription; branch points need cuts, see Theorem [[§CA.5 Contour Integration#^thm-ca-5-9|§CA.5.9]] Working Rules for Contour Integrals.
 
 ^nd-thm-ca-4-9
 
@@ -4170,7 +4170,7 @@ Orientation sign; close where the integrand decays; check the arc (ML or Jordan)
 
 ### [C] Gaussian integrals in n dimensions; Schwinger parametrization ★
 
-$\int\frac{d^np}{(2\pi)^n}e^{-s\mathbf p^2 + i\mathbf p\cdot\mathbf x} = (4\pi s)^{-n/2}e^{-\mathbf x^2/4s}$ for $\operatorname{Re}s > 0$; $\frac{1}{A^\nu} = \frac{1}{\Gamma(\nu)}\int_0^\infty ds\,s^{\nu - 1}e^{-sA}$, see Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|§CA.5.1]] Gaussian Integrals in n Dimensions; Schwinger Parametrization.
+$\int\frac{d^np}{(2\pi)^n}e^{-s\mathbf p^2 + i\mathbf p\cdot\mathbf x} = (4\pi s)^{-n/2}e^{-\mathbf x^2/4s}$ for $\operatorname{Re}s > 0$; $\frac{1}{A^\nu} = \frac{1}{\Gamma(\nu)}\int_0^\infty ds\,s^{\nu - 1}e^{-sA}$, see Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-2|§CA.6.2]] Gaussian Integrals in n Dimensions; Schwinger Parametrization.
 
 ^nd-thm-ca-5-1
 
@@ -4180,11 +4180,11 @@ $\int\frac{d^np}{(2\pi)^n}e^{-s\mathbf p^2 + i\mathbf p\cdot\mathbf x} = (4\pi s
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-5-1|§CA.5, Remark: Why the parametrization helps]]; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|§C2b.3.1]] The Wightman Function at Imaginary Time, steps 3–4.
+> - Step 1: derivation; [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-6-1|§CA.6, Remark: Why the parametrization helps]]; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|§C2b.3.1]] The Wightman Function at Imaginary Time, steps 3–4.
 
 ### [C] Steepest descent and Laplace's method ★
 
-For $I(\lambda) = \int fe^{\lambda\Phi}$, $\lambda \gg 1$: Laplace at a real maximum, steepest descent through a complex saddle; $|I| \propto e^{\lambda\operatorname{Re}\Phi(p_0)}$, see Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-2|§CA.5.2]] Steepest Descent and Laplace's Method.
+For $I(\lambda) = \int fe^{\lambda\Phi}$, $\lambda \gg 1$: Laplace at a real maximum, steepest descent through a complex saddle; $|I| \propto e^{\lambda\operatorname{Re}\Phi(p_0)}$, see Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-3|§CA.6.3]] Steepest Descent and Laplace's Method.
 
 ^nd-thm-ca-5-2
 
@@ -4194,11 +4194,11 @@ For $I(\lambda) = \int fe^{\lambda\Phi}$, $\lambda \gg 1$: Laplace at a real max
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-5-2|§CA.5, Remark: When the saddle sits on a branch cut]].
+> - Step 1: derivation; [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-6-2|§CA.6, Remark: When the saddle sits on a branch cut]].
 
 ### [B] The exponent of the Wightman function outside the light cone ★
 
-For $0 < t < r$, the saddle of $S(p) = pr - t\sqrt{p^2 + m^2}$ is at $p_0 = imr/\rho$, $\rho = \sqrt{r^2 - t^2}$, giving $D_W \simeq \frac{\sqrt m}{2(2\pi\rho)^{3/2}}e^{-m\rho}$, see Example [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|§CA.5.1]] The Exponent of the Wightman Function Outside the Light Cone.
+For $0 < t < r$, the saddle of $S(p) = pr - t\sqrt{p^2 + m^2}$ is at $p_0 = imr/\rho$, $\rho = \sqrt{r^2 - t^2}$, giving $D_W \simeq \frac{\sqrt m}{2(2\pi\rho)^{3/2}}e^{-m\rho}$, see Example [[§C2b.3 Explicit Forms of the Wightman Function#^ex-c2b-3-1|§C2b.3.1]] The Exponent of the Wightman Function Outside the Light Cone.
 
 ^nd-ex-ca-5-1
 
@@ -4213,7 +4213,7 @@ For $0 < t < r$, the saddle of $S(p) = pr - t\sqrt{p^2 + m^2}$ is at $p_0 = imr/
 
 ### [C] Properties of K_ν ★
 
-Recursion $K_{\nu+1} - K_{\nu-1} = \frac{2\nu}{z}K_\nu$, $\frac{d}{dz}[z^{-\nu}K_\nu] = -z^{-\nu}K_{\nu+1}$; large argument $\sqrt{\pi/2z}e^{-z}[1 + \frac{4\nu^2 - 1}{8z}]$; small argument $K_1 \simeq 1/z$, $K_0 \simeq -\ln\frac z2 - \gamma_E$, see Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|§CA.5.3]] Properties of $K_\nu$.
+Recursion $K_{\nu+1} - K_{\nu-1} = \frac{2\nu}{z}K_\nu$, $\frac{d}{dz}[z^{-\nu}K_\nu] = -z^{-\nu}K_{\nu+1}$; large argument $\sqrt{\pi/2z}e^{-z}[1 + \frac{4\nu^2 - 1}{8z}]$; small argument $K_1 \simeq 1/z$, $K_0 \simeq -\ln\frac z2 - \gamma_E$, see Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|§CA.6.4]] Properties of $K_\nu$.
 
 ^nd-thm-ca-5-3
 
@@ -4223,11 +4223,11 @@ Recursion $K_{\nu+1} - K_{\nu-1} = \frac{2\nu}{z}K_\nu$, $\frac{d}{dz}[z^{-\nu}K
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-2|§CA.5.2]] Steepest Descent and Laplace's Method.
+> - Step 1: derivation; Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-3|§CA.6.3]] Steepest Descent and Laplace's Method.
 
 ### [C] Further representations of K_ν; imaginary argument ★
 
-$\int_m^\infty\frac{\rho e^{-\rho r}d\rho}{\sqrt{\rho^2 - m^2}} = mK_1(mr)$; $K_0(x) = \int_0^\infty\frac{\cos xt}{\sqrt{t^2 + 1}}dt$; $K_1(ix) = -\frac\pi2[J_1(x) - iY_1(x)]$, see Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|§CA.5.4]] Further Representations; Imaginary Argument.
+$\int_m^\infty\frac{\rho e^{-\rho r}d\rho}{\sqrt{\rho^2 - m^2}} = mK_1(mr)$; $K_0(x) = \int_0^\infty\frac{\cos xt}{\sqrt{t^2 + 1}}dt$; $K_1(ix) = -\frac\pi2[J_1(x) - iY_1(x)]$, see Theorem [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-5|§CA.6.5]] Further Representations; Imaginary Argument.
 
 ^nd-thm-ca-5-4
 
@@ -4241,7 +4241,7 @@ $\int_m^\infty\frac{\rho e^{-\rho r}d\rho}{\sqrt{\rho^2 - m^2}} = mK_1(mr)$; $K_
 
 ### [B] Boundary values of analytic functions are distributions ★
 
-If $F$ is analytic on a strip above the real axis with a polynomial bound in $x$ and $y^{-k}$, then $F(x + i0)$ exists in $\mathcal S'$; in $n$ variables, from a tube over an open convex cone, independently of the direction of approach, see Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|§CA.6.1]] Boundary Values of Analytic Functions Are Distributions.
+If $F$ is analytic on a strip above the real axis with a polynomial bound in $x$ and $y^{-k}$, then $F(x + i0)$ exists in $\mathcal S'$; in $n$ variables, from a tube over an open convex cone, independently of the direction of approach, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-1|§CA.7.1]] Boundary Values of Analytic Functions Are Distributions.
 
 ^nd-thm-ca-6-1
 
@@ -4255,7 +4255,7 @@ If $F$ is analytic on a strip above the real axis with a polynomial bound in $x$
 
 ### [B] Sokhotski–Plemelj formula ★
 
-$\frac{1}{x - x_0 \pm i\varepsilon} \to \mathcal P\frac{1}{x - x_0} \mp i\pi\delta(x - x_0)$ as generalized functions, see Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|§CA.6.2]] Sokhotski–Plemelj Formula. Problem Set 4 gives it as a tool (eq. (11)) for Problem 2(b). *Source: Problem Set 4, eq. (11) · the user's notes App. A §A.5*
+$\frac{1}{x - x_0 \pm i\varepsilon} \to \mathcal P\frac{1}{x - x_0} \mp i\pi\delta(x - x_0)$ as generalized functions, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|§CA.7.2]] Sokhotski–Plemelj Formula. Problem Set 4 gives it as a tool (eq. (11)) for Problem 2(b). *Source: Problem Set 4, eq. (11) · the user's notes App. A §A.5*
 
 ^nd-thm-ca-6-2
 
@@ -4268,12 +4268,12 @@ $\frac{1}{x - x_0 \pm i\varepsilon} \to \mathcal P\frac{1}{x - x_0} \mp i\pi\del
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13 (Sokhotski–Plemelj).
-> - Step 1: direct derivation (Lorentzian real and imaginary parts); Theorem [[§CA.2 Generalized Functions#^thm-ca-2-5|§CA.2.5]] Distributional Limits part 3; Definition [[§CA.2 Generalized Functions#^def-ca-2-10|§CA.2.10]] Principal Value.
-> - Step 2: second route, Theorem [[§CA.4 Contour Integration#^thm-ca-4-7|§CA.4.7]] Poles on the Contour: the Half-Residue Lemma; [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^cau-ca-6-1|§CA.6, Caution: What the formula does and does not say]].
+> - Step 1: direct derivation (Lorentzian real and imaginary parts); Theorem [[§CA.2 Generalized Functions#^thm-ca-2-5|§CA.2.5]] Distributional Limits part 3; Definition [[§CA.2 Generalized Functions#^def-ca-2-5|§CA.2.5]] Principal Value.
+> - Step 2: second route, Theorem [[§CA.5 Contour Integration#^thm-ca-5-7|§CA.5.7]] Poles on the Contour: the Half-Residue Lemma; [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^cau-ca-7-1|§CA.7, Caution: What the formula does and does not say]].
 
 ### [B] Logarithm and powers at the real axis ★
 
-$\log(x \pm i0) = \ln|x| \pm i\pi\theta(-x)$; its derivative is $\frac{1}{x \pm i0} = \mathcal P\frac1x \mp i\pi\delta$; $\frac{1}{(x \pm i0)^2}$ by one more derivative, see Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-3|§CA.6.3]] Logarithm and Powers at the Real Axis.
+$\log(x \pm i0) = \ln|x| \pm i\pi\theta(-x)$; its derivative is $\frac{1}{x \pm i0} = \mathcal P\frac1x \mp i\pi\delta$; $\frac{1}{(x \pm i0)^2}$ by one more derivative, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-3|§CA.7.3]] Logarithm and Powers at the Real Axis.
 
 ^nd-thm-ca-6-3
 
@@ -4287,7 +4287,7 @@ $\log(x \pm i0) = \ln|x| \pm i\pi\theta(-x)$; its derivative is $\frac{1}{x \pm 
 
 ### [B] The light-cone boundary value ★
 
-$F_\varepsilon = 1/(-(t - i\varepsilon)^2 + r^2)$ converges in $\mathcal S'(\mathbb R^4)$ to $1/(-x^2 + i0x^0)$, with imaginary part $-\pi\operatorname{sgn}(x^0)\delta(x^2)$ and real part $-\mathcal P\frac{1}{x^2}$; Lorentz invariant, singular on the cone, see Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-4|§CA.6.4]] The Light-Cone Boundary Value.
+$F_\varepsilon = 1/(-(t - i\varepsilon)^2 + r^2)$ converges in $\mathcal S'(\mathbb R^4)$ to $1/(-x^2 + i0x^0)$, with imaginary part $-\pi\operatorname{sgn}(x^0)\delta(x^2)$ and real part $-\mathcal P\frac{1}{x^2}$; Lorentz invariant, singular on the cone, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-4|§CA.7.4]] The Light-Cone Boundary Value.
 
 ^nd-thm-ca-6-4
 
@@ -4301,7 +4301,7 @@ $F_\varepsilon = 1/(-(t - i\varepsilon)^2 + r^2)$ converges in $\mathcal S'(\mat
 
 ### [B] Damping factors: the transform of the step function ★
 
-$\int_0^\infty dt\,e^{i\omega t - \varepsilon t} = \frac{i}{\omega + i\varepsilon}$, so $\tilde\theta(\omega) = \frac{i}{\omega + i0} = i\mathcal P\frac1\omega + \pi\delta(\omega)$; conversely the inverse transform of $\frac{i}{\omega + i\varepsilon}$ is $\theta(t)e^{-\varepsilon t}$, see Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|§CA.6.5]] Damping Factors: the Transform of the Step Function.
+$\int_0^\infty dt\,e^{i\omega t - \varepsilon t} = \frac{i}{\omega + i\varepsilon}$, so $\tilde\theta(\omega) = \frac{i}{\omega + i0} = i\mathcal P\frac1\omega + \pi\delta(\omega)$; conversely the inverse transform of $\frac{i}{\omega + i\varepsilon}$ is $\theta(t)e^{-\varepsilon t}$, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-5|§CA.7.5]] Damping Factors: the Transform of the Step Function.
 
 ^nd-thm-ca-6-5
 
@@ -4311,11 +4311,11 @@ $\int_0^\infty dt\,e^{i\omega t - \varepsilon t} = \frac{i}{\omega + i\varepsilo
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation; Example [[§CA.4 Contour Integration#^ex-ca-4-2|§CA.4.2]] A Step Function from a Pole.
+> - Step 1: derivation; Example [[§CA.5 Contour Integration#^ex-ca-5-2|§CA.5.2]] A Step Function from a Pole.
 
 ### [B] The iε limits of the propagator denominators ★
 
-$\frac{i}{p^2 - m^2 + i\varepsilon} \to i\mathcal P\frac{1}{p^2 - m^2} + \pi\delta(p^2 - m^2)$; $\frac{1}{(p^0 + i\varepsilon)^2 - \mathbf p^2 - m^2} \to \mathcal P\frac{1}{p^2 - m^2} - i\pi\operatorname{sgn}(p^0)\delta(p^2 - m^2)$; replacing $\varepsilon$ by $\varepsilon c(\mathbf p)$, $c > 0$, changes nothing, see Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|§CA.6.6]] The iε Limits of the Propagator Denominators.
+$\frac{i}{p^2 - m^2 + i\varepsilon} \to i\mathcal P\frac{1}{p^2 - m^2} + \pi\delta(p^2 - m^2)$; $\frac{1}{(p^0 + i\varepsilon)^2 - \mathbf p^2 - m^2} \to \mathcal P\frac{1}{p^2 - m^2} - i\pi\operatorname{sgn}(p^0)\delta(p^2 - m^2)$; replacing $\varepsilon$ by $\varepsilon c(\mathbf p)$, $c > 0$, changes nothing, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|§CA.7.6]] The iε Limits of the Propagator Denominators.
 
 ^nd-thm-ca-6-6
 
@@ -4326,11 +4326,11 @@ $\frac{i}{p^2 - m^2 + i\varepsilon} \to i\mathcal P\frac{1}{p^2 - m^2} + \pi\del
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|§CA.6.2]] Sokhotski–Plemelj Formula; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-6|§CA.2.6]] Composition of δ with a Function.
+> - Step 1: derivation; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|§CA.7.2]] Sokhotski–Plemelj Formula; Theorem [[§CA.2 Generalized Functions#^thm-ca-2-6|§CA.2.6]] Composition of δ with a Function.
 
 ### [B] Fundamental solutions differ by homogeneous solutions ★
 
-Two fundamental solutions differ by a homogeneous solution, and conversely; for tempered Klein–Gordon solutions $(m^2 - p^2)\tilde H = 0$ puts $\tilde H$ on the shell; a homogeneous solution supported at a point is zero, see Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions.
+Two fundamental solutions differ by a homogeneous solution, and conversely; for tempered Klein–Gordon solutions $(m^2 - p^2)\tilde H = 0$ puts $\tilde H$ on the shell; a homogeneous solution supported at a point is zero, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-7|§CA.7.7]] Fundamental Solutions Differ by Homogeneous Solutions.
 
 ^nd-thm-ca-6-7
 
@@ -4344,7 +4344,7 @@ Two fundamental solutions differ by a homogeneous solution, and conversely; for 
 
 ### [C] Convolution with a fundamental solution solves the sourced equation ★
 
-For a test-function source $j$, $\phi(x) = iG[j(x - \cdot)]$ is smooth and $P(\partial)\phi = j$, see Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|§CA.6.8]] Convolution with a Fundamental Solution Solves the Sourced Equation.
+For a test-function source $j$, $\phi(x) = iG[j(x - \cdot)]$ is smooth and $P(\partial)\phi = j$, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-8|§CA.7.8]] Convolution with a Fundamental Solution Solves the Sourced Equation.
 
 ^nd-thm-ca-6-8
 
@@ -4354,11 +4354,11 @@ For a test-function source $j$, $\phi(x) = iG[j(x - \cdot)]$ is smooth and $P(\p
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; Definition [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-6-1|§CA.6.1]] Fundamental Solution; Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-1|§C2b.6.1]] Green's Function of the Klein–Gordon Operator.
+> - Step 1: derivation; Definition [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-7-1|§CA.7.1]] Fundamental Solution; Definition [[§C2b.6 Green's Functions and Contours#^def-c2b-6-1|§C2b.6.1]] Green's Function of the Klein–Gordon Operator.
 
 ### [PS] Basic contour integrals and Lorentzian integrals
 
-$\oint(z - z_0)^n dz = 2\pi i\delta_{n,-1}$ on a counterclockwise circle (Theorem [[§CA.4 Contour Integration#^thm-ca-4-1|§CA.4.1]] The ML Inequality and the Basic Integral); $\int\frac{dx}{x^2 + a^2} = \pi/a$ and $\int\frac{e^{ikx}dx}{x^2 + a^2} = \frac\pi ae^{-a|k|}$ (Example [[§CA.4 Contour Integration#^ex-ca-4-1|§CA.4.1]] Two Lorentzian Integrals).
+$\oint(z - z_0)^n dz = 2\pi i\delta_{n,-1}$ on a counterclockwise circle (Theorem [[§CA.5 Contour Integration#^thm-ca-5-1|§CA.5.1]] The ML Inequality and the Basic Integral); $\int\frac{dx}{x^2 + a^2} = \pi/a$ and $\int\frac{e^{ikx}dx}{x^2 + a^2} = \frac\pi ae^{-a|k|}$ (Example [[§CA.5 Contour Integration#^ex-ca-5-1|§CA.5.1]] Two Lorentzian Integrals).
 
 ^nd-thm-ca-4-1
 
@@ -8646,7 +8646,7 @@ $D_W$ is the three-dimensional mode integral $\int\frac{d^3p}{(2\pi)^3\,2E_{\mat
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13, K14.
-> - Step 1: Theorem [[§C2b.2 The Wightman Function#^thm-c2b-2-1|§C2b.2.1]] The Wightman Function as a Mode Integral step 5; Theorem [[§C2b.2 The Wightman Function#^thm-c2b-2-5|§C2b.2.5]] The Wightman Function Is a Boundary Value; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|§C2b.3.1]] The Wightman Function at Imaginary Time, Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|§C2b.3.2]] The Wightman Function in the Lower Half-Plane; identity theorem Theorem [[§CA.4 Contour Integration#^thm-ca-4-3|§CA.4.3]] Identity Theorem.
+> - Step 1: Theorem [[§C2b.2 The Wightman Function#^thm-c2b-2-1|§C2b.2.1]] The Wightman Function as a Mode Integral step 5; Theorem [[§C2b.2 The Wightman Function#^thm-c2b-2-5|§C2b.2.5]] The Wightman Function Is a Boundary Value; Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|§C2b.3.1]] The Wightman Function at Imaginary Time, Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|§C2b.3.2]] The Wightman Function in the Lower Half-Plane; identity theorem Theorem [[§CA.5 Contour Integration#^thm-ca-5-3|§CA.5.3]] Identity Theorem.
 
 ### [B] The spacelike Wightman function three ways
 
@@ -8663,7 +8663,7 @@ $D_W = \frac{m}{4\pi^2r}K_1(mr)$ at spacelike separation follows by analytic con
 > [!tip]- Hints: route in the notes
 > - Technique: K13, K1.
 > - Step 1: the three derivations of Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|§C2b.3.3]] The Wightman Function at Spacelike Separation (first: limit of the Bessel form; second: steps 1–8, keyhole; third: steps 1–5).
-> - Step 2: [[§CA.4 Contour Integration#^cau-ca-4-1|§CA.4, Caution: Jordan's lemma needs g → 0]]; Theorem [[§CA.4 Contour Integration#^thm-ca-4-8|§CA.4.8]] Integrals around a Branch Cut; Theorem [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|§CA.1.3]] Limits of Derivatives.
+> - Step 2: [[§CA.5 Contour Integration#^cau-ca-5-1|§CA.5, Caution: Jordan's lemma needs g → 0]]; Theorem [[§CA.5 Contour Integration#^thm-ca-5-8|§CA.5.8]] Integrals around a Branch Cut; Theorem [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|§CA.1.3]] Limits of Derivatives.
 
 ### [B] Microcausality in three forms
 
@@ -8710,7 +8710,7 @@ The zero-point constant $V\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$ from
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Step 1: Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|§C2b.7.8]] The Zero-Point Energy Is the Wightman Function at Coincident Points steps 1–6; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-3|§C2b.7, Remark: One mechanism, two products]]; [[§CA.2 Generalized Functions#^rem-ca-2-2|§CA.2, Remark: Point splitting: how a product at one point is regularized]] (point splitting).
+> - Step 1: Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|§C2b.7.8]] The Zero-Point Energy Is the Wightman Function at Coincident Points steps 1–6; [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-7-3|§C2b.7, Remark: One mechanism, two products]]; [[§CA.3 Products of Distributions and Operator-Valued Distributions#^rem-ca-3-1|§CA.3, Remark: Point splitting: how a product at one point is regularized]] (point splitting).
 
 ### [B] Euclidean, Feynman and Wightman functions are one analytic function
 
@@ -8730,7 +8730,7 @@ $\mathcal W(s^2) = \frac{mK_1(ms)}{4\pi^2s}$ gives $D_E$ at Euclidean points, $D
 
 ### [B] Differences of Green's functions: on the shell ⇔ homogeneous solutions
 
-In momentum space $\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$ and $\tilde D_R - \tilde D_A = 2\pi\operatorname{sgn}(p^0)\delta(p^2 - m^2)$; in position space these are $D_1$ and $iD$, homogeneous solutions, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-11|§C2b.7.11]] Differences on the Mass Shell, Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-3|§C2b.6.3]] Contours Are Boundary Conditions, Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions. *Source: the user's notes Ch. 6 §6.8–6.9*
+In momentum space $\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$ and $\tilde D_R - \tilde D_A = 2\pi\operatorname{sgn}(p^0)\delta(p^2 - m^2)$; in position space these are $D_1$ and $iD$, homogeneous solutions, see Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-11|§C2b.7.11]] Differences on the Mass Shell, Theorem [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-3|§C2b.6.3]] Contours Are Boundary Conditions, Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-7|§CA.7.7]] Fundamental Solutions Differ by Homogeneous Solutions. *Source: the user's notes Ch. 6 §6.8–6.9*
 
 ^nd-eq-t6-11
 
@@ -8741,11 +8741,11 @@ In momentum space $\tilde D_F - \tilde D_{\bar F} = 2\pi\delta(p^2 - m^2)$ and $
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-11|§C2b.7.11]] Differences on the Mass Shell; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|§C2b.5.4]] The Commutator and Hadamard Functions as Distributions part 1; Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|§CA.6.7]] Fundamental Solutions Differ by Homogeneous Solutions part 2.
+> - Step 1: Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-11|§C2b.7.11]] Differences on the Mass Shell; Theorem [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|§C2b.5.4]] The Commutator and Hadamard Functions as Distributions part 1; Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-7|§CA.7.7]] Fundamental Solutions Differ by Homogeneous Solutions part 2.
 
 ### [B] iε from damping: a pole off the axis ⇔ a step function
 
-A damping $e^{-\varepsilon t}$ on $t > 0$ makes $\tilde\theta(\omega) = \frac{i}{\omega + i\varepsilon}$, a pole below the real axis; conversely a pole just above the axis integrates to $\theta(k)$, see Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|§CA.6.5]] Damping Factors: the Transform of the Step Function, Example [[§CA.4 Contour Integration#^ex-ca-4-2|§CA.4.2]] A Step Function from a Pole. *Source: the user's notes App. A §A.5*
+A damping $e^{-\varepsilon t}$ on $t > 0$ makes $\tilde\theta(\omega) = \frac{i}{\omega + i\varepsilon}$, a pole below the real axis; conversely a pole just above the axis integrates to $\theta(k)$, see Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-5|§CA.7.5]] Damping Factors: the Transform of the Step Function, Example [[§CA.5 Contour Integration#^ex-ca-5-2|§CA.5.2]] A Step Function from a Pole. *Source: the user's notes App. A §A.5*
 
 ^nd-eq-t6-12
 
@@ -8756,7 +8756,7 @@ A damping $e^{-\varepsilon t}$ on $t > 0$ makes $\tilde\theta(\omega) = \frac{i}
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|§CA.6.5]] Damping Factors: the Transform of the Step Function; Example [[§CA.4 Contour Integration#^ex-ca-4-2|§CA.4.2]] A Step Function from a Pole; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|§C2b.7.10]] The $i\varepsilon$ Prescriptions.
+> - Step 1: Theorem [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-5|§CA.7.5]] Damping Factors: the Transform of the Step Function; Example [[§CA.5 Contour Integration#^ex-ca-5-2|§CA.5.2]] A Step Function from a Pole; Theorem [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|§C2b.7.10]] The $i\varepsilon$ Prescriptions.
 
 ### [C] Three forms of the Lorentz algebra
 

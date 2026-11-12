@@ -76,13 +76,13 @@ The box turns the delta functions of this section into numbers.
 >
 > identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before the box is removed.
 >
-> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as a regularization: no result of §C6b.2–§C6b.3 depends on $\tilde V$ or $\tilde T$ (the table in [[§C6b.3 The Cross Section#^der-c6b-3-4|Derivation §C6b.3.4]], Step 4). On all of space and time the coincident values have no meaning ([[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 2–3).
+> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as a regularization: no result of §C6b.2–§C6b.3 depends on $\tilde V$ or $\tilde T$ (the table in [[§C6b.3 The Cross Section#^der-c6b-3-4|Derivation §C6b.3.4]], Step 4). On all of space and time the coincident values have no meaning ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|Theorem §CA.3.2]], 2–3).
 >
 > *Source: Yu §6.5.1, eqs. (6.278)–(6.282), (6.288), (6.295)–(6.302) (page images checked) · PS §4.4, p. 96: $(2\pi)^4\delta(0) = 2T\cdot V$*
 
 ^thm-c6b-2-2
 
-*Proof:* the physics form of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], with the lattice derived from the boundary condition (part 1), the count of states per cell (part 2) and the box in time and in spacetime (parts 3–4), and of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] for $\delta^3$. In this section the count is re-derived as [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-6|Theorem §C6b.2.6]]; [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]] uses $(2\pi)^4\delta^4(0)$, [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4|Theorem §C6b.2.4]] uses $(2\pi)^3\delta^3(\mathbf 0)$.
+*Proof:* the physics form of [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]], with the lattice derived from the boundary condition (part 1), the count of states per cell (part 2) and the box in time and in spacetime (parts 3–4), and of [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]] for $\delta^3$. In this section the count is re-derived as [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-6|Theorem §C6b.2.6]]; [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]] uses $(2\pi)^4\delta^4(0)$, [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4|Theorem §C6b.2.4]] uses $(2\pi)^3\delta^3(\mathbf 0)$.
 
 > [!theorem] Theorem §C6b.2.3: The Squared Amplitude in a Box
 > For $f \ne i$, with $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]],
@@ -113,7 +113,7 @@ The box turns the delta functions of this section into numbers.
 > \langle f|\hat S|i\rangle = \langle f|\mathbb 1 + i\hat T|i\rangle = \langle f|i\rangle + \langle f|i\hat T|i\rangle .
 > $$
 >
-> States of different particle content are orthogonal. For the same content, the overlap is a sum of products of $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), which in the box is $2E_{\mathbf p}\tilde V\delta_{\mathbf p\mathbf q}$ ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]]; [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], 4, spatial part): it vanishes when the sets of lattice momenta differ. So $\langle f|i\rangle = 0$ for $f \ne i$, and $\langle f|\hat S|i\rangle = \langle f|i\hat T|i\rangle$; inserted in [[§C6b.2 Transition Probabilities in a Box#^def-c6b-2-1|Def. §C6b.2.1]] this is Yu's (6.276). The same statement for the in and out states of the careful route is [[§C6b.8 Wave Packets and the Cross Section#^lem-c6b-8-5|Lemma §C6b.8.5]].
+> States of different particle content are orthogonal. For the same content, the overlap is a sum of products of $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), which in the box is $2E_{\mathbf p}\tilde V\delta_{\mathbf p\mathbf q}$ ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]]; [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]]; [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]], 4, spatial part): it vanishes when the sets of lattice momenta differ. So $\langle f|i\rangle = 0$ for $f \ne i$, and $\langle f|\hat S|i\rangle = \langle f|i\hat T|i\rangle$; inserted in [[§C6b.2 Transition Probabilities in a Box#^def-c6b-2-1|Def. §C6b.2.1]] this is Yu's (6.276). The same statement for the in and out states of the careful route is [[§C6b.8 Wave Packets and the Cross Section#^lem-c6b-8-5|Lemma §C6b.8.5]].
 >
 > **Step 2** (square the amplitude). By [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], $\langle f|i\hat T|i\rangle = (2\pi)^4\delta^4(p_i - p_f)\,i\mathcal M$. The delta function is real and $|i\mathcal M|^2 = (i\mathcal M)(-i\mathcal M^\ast) = |\mathcal M|^2$:
 >
@@ -127,9 +127,9 @@ The box turns the delta functions of this section into numbers.
 > \bigl[(2\pi)^4\delta^4(p_i - p_f)\bigr]^2 = (2\pi)^4\delta^4(0)\cdot(2\pi)^4\delta^4(p_i - p_f) .
 > $$
 >
-> On all of spacetime $\delta^2$ and $\delta(0)$ have no value ([[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 2–3); in the box this is part 4 of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], $\bigl[(2\pi)^4\delta^4(p - p')\bigr]^2 \leftrightarrow \tilde V\tilde T\,(2\pi)^4\delta^4(p - p')$.
+> On all of spacetime $\delta^2$ and $\delta(0)$ have no value ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|Theorem §CA.3.2]], 2–3); in the box this is part 4 of [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]], $\bigl[(2\pi)^4\delta^4(p - p')\bigr]^2 \leftrightarrow \tilde V\tilde T\,(2\pi)^4\delta^4(p - p')$.
 >
-> **Step 4** (the value of $(2\pi)^4\delta^4(0)$). The Fourier representation (Yu (6.278)–(6.279); [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]])
+> **Step 4** (the value of $(2\pi)^4\delta^4(0)$). The Fourier representation (Yu (6.278)–(6.279); [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]])
 >
 > $$
 > \int d^4x\,e^{\pm ip\cdot x} = \int dx^0\,e^{\pm ip^0x^0}\int d^3x\,e^{\mp i\mathbf p\cdot\mathbf x} = 2\pi\delta(p^0)\cdot(2\pi)^3\delta^3(\mathbf p) = (2\pi)^4\delta^4(p) ,
@@ -149,7 +149,7 @@ The box turns the delta functions of this section into numbers.
 
 ^der-c6b-2-3
 
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]], [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]]
 
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-2|P7, steps 2–3]]
 
@@ -184,7 +184,7 @@ The box turns the delta functions of this section into numbers.
 ^thm-c6b-2-4
 
 > [!derivation]- Derivation
-> **Step 1** (one particle; part 1). [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] at $\mathbf q = \mathbf p$, and the box value $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ ([[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]; Yu (6.288)):
+> **Step 1** (one particle; part 1). [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] at $\mathbf q = \mathbf p$, and the box value $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]]; Yu (6.288)):
 >
 > $$
 > \langle\mathbf p|\mathbf q\rangle\big|_{\mathbf q = \mathbf p} = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf p) = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0) = 2E_{\mathbf p}\tilde V .
@@ -242,7 +242,7 @@ The box turns the delta functions of this section into numbers.
 
 ^der-c6b-2-4
 
-*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]]
+*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]]
 
 ## The rate
 
@@ -321,9 +321,9 @@ The box turns the delta functions of this section into numbers.
 >
 > If $\varphi$ and $\psi$ both satisfy $\varphi(-L/2) = \varphi(L/2)$ (Yu (6.295)), the boundary term is $\varphi^\ast(L/2)\psi(L/2) - \varphi^\ast(-L/2)\psi(-L/2) = 0$, and $\hat p_x$ is Hermitian.
 >
-> **Step 2** (the allowed momenta; part 1). The plane wave $\varphi_p = e^{ipx}$ is an eigenfunction of $\hat p_x$ with eigenvalue $p$; it satisfies the boundary condition exactly for $p = 2\pi k/L$, $k \in \mathbb Z$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], 1; Yu (6.296)–(6.297)). In three dimensions the condition holds on each pair of opposite faces of the cube (Yu (6.301)).
+> **Step 2** (the allowed momenta; part 1). The plane wave $\varphi_p = e^{ipx}$ is an eigenfunction of $\hat p_x$ with eigenvalue $p$; it satisfies the boundary condition exactly for $p = 2\pi k/L$, $k \in \mathbb Z$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]], 1; Yu (6.296)–(6.297)). In three dimensions the condition holds on each pair of opposite faces of the cube (Yu (6.301)).
 >
-> **Step 3** (the count; part 2). By [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], 2, the lattice has one point per cell of volume $(2\pi/L)^3 = (2\pi)^3/\tilde V$ (Yu (6.298)–(6.300) in one dimension), so
+> **Step 3** (the count; part 2). By [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]], 2, the lattice has one point per cell of volume $(2\pi/L)^3 = (2\pi)^3/\tilde V$ (Yu (6.298)–(6.300) in one dimension), so
 >
 > $$
 > \#\{\text{states with }\mathbf p\in d^3p\} = \frac{d^3p}{(2\pi)^3/\tilde V} = \frac{\tilde V\,d^3p}{(2\pi)^3} , \qquad \sum_{\mathbf p} \longrightarrow \frac{L^3}{(2\pi)^3}\int d^3p = \frac{\tilde V}{(2\pi)^3}\int d^3p
@@ -337,7 +337,7 @@ The box turns the delta functions of this section into numbers.
 
 ^der-c6b-2-6
 
-*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]
+*Uses:* [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]]
 
 > [!theorem] Theorem §C6b.2.7: The Rate into a Range of Final Momenta
 > The rate into final momenta in $d^3p_1\cdots d^3p_n$ is
@@ -441,13 +441,13 @@ The box turns the delta functions of this section into numbers.
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]] — the box turns the delta functions of this section into numbers: the lattice of momenta derived from the boundary condition, the count of states per cell, and the box in time.
-> - [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] — $(2\pi)^3\delta^3(\mathbf p - \mathbf q) \leftrightarrow \tilde V\delta_{\mathbf p\mathbf q}$ and $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$: the norm $2E_{\mathbf p}\tilde V$ of a box state (Theorem §C6b.2.4) and the orthogonality of states with different lattice momenta (Derivation §C6b.2.3, Step 1).
-> - [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 2–3 — on all of space and time $\delta^2$ and $\delta(0)$ have no value; the squared delta function of Theorem §C6b.2.3 has a meaning only in the box.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the plane-wave integral $\int d^4x\,e^{\pm ip\cdot x} = (2\pi)^4\delta^4(p)$, whose value at $p = 0$ over the box is $\int d^4x = \tilde V\tilde T$ (Derivation §C6b.2.3, Step 4).
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]] — the box turns the delta functions of this section into numbers: the lattice of momenta derived from the boundary condition, the count of states per cell, and the box in time.
+> - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]] — $(2\pi)^3\delta^3(\mathbf p - \mathbf q) \leftrightarrow \tilde V\delta_{\mathbf p\mathbf q}$ and $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$: the norm $2E_{\mathbf p}\tilde V$ of a box state (Theorem §C6b.2.4) and the orthogonality of states with different lattice momenta (Derivation §C6b.2.3, Step 1).
+> - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|Theorem §CA.3.2]], 2–3 — on all of space and time $\delta^2$ and $\delta(0)$ have no value; the squared delta function of Theorem §C6b.2.3 has a meaning only in the box.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the plane-wave integral $\int d^4x\,e^{\pm ip\cdot x} = (2\pi)^4\delta^4(p)$, whose value at $p = 0$ over the box is $\int d^4x = \tilde V\tilde T$ (Derivation §C6b.2.3, Step 4).
 
 > [!remark]- Connections
-> - The box is the regularization of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] and [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]: the same $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ that made the zero-point energy a volume times a density ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]), and the same $(2\pi)^4\delta^4(0)$ as the vacuum bubbles ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]).
+> - The box is the regularization of [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]] and [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]]: the same $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ that made the zero-point energy a volume times a density ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]), and the same $(2\pi)^4\delta^4(0)$ as the vacuum bubbles ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]).
 > - A rate linear in the duration, with a density of final states, is Fermi's golden rule; here the density is $\tilde V\,d^3p/(2\pi)^3$ per particle and energy conservation is the $\delta(E_A + E_B - \sum E_j)$ of [[§C6b.2 Transition Probabilities in a Box#^der-c6b-2-5|Derivation §C6b.2.5]], Step 3 — [[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]].
 > - The careful version of every step, without the box: wave packets of unit norm ([[§C6b.8 Wave Packets and the Cross Section#^thm-c6b-8-2|Theorem §C6b.8.2]]) instead of $\langle i|i\rangle = 4E_AE_B\tilde V^2$, and an integral over the impact parameter instead of $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ — [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]], table in its opening.
 > - The decay rate is the same chain with one initial particle, $\langle i|i\rangle = 2E_A\tilde V$ — [[§C6b.5 Decay Widths#^thm-c6b-5-4|Theorem §C6b.5.4]].

@@ -213,7 +213,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.14 Gamma
 *Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]
 
 > [!remark] Remark: The quantized bilinears are Hermitian
-> After quantization the same computation makes the five standard bilinears of [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]] Hermitian operators, once the product of two field operators at one point is defined by normal ordering ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]) and smeared with a test function (operator-valued distributions, [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]): step 1 of the derivation used only $(AB)^\dagger = B^\dagger A^\dagger$.
+> After quantization the same computation makes the five standard bilinears of [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]] Hermitian operators, once the product of two field operators at one point is defined by normal ordering ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]) and smeared with a test function (operator-valued distributions, [[§CA.3 Products of Distributions and Operator-Valued Distributions#^def-ca-3-1|Def. §CA.3.1]]): step 1 of the derivation used only $(AB)^\dagger = B^\dagger A^\dagger$.
 >
 > *Source: Yu §5.3, eqs. (5.97)–(5.101) · the operator reading written here*
 
@@ -253,7 +253,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.14 Gamma
 > - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|Theorem §CB.18.4]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-4|Proof]] — $[\gamma^5, S^{\mu\nu}] = 0$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]]).
 >
 > The remark "The quantized bilinears are Hermitian" and the Connections cite:
-> - [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] — operator-valued distribution: the bilinears of the quantum field are defined after normal ordering and smearing with a test function.
+> - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^def-ca-3-1|Def. §CA.3.1]] — operator-valued distribution: the bilinears of the quantum field are defined after normal ordering and smearing with a test function.
 > - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|Theorem §CB.17.12]] — tensor products add each copy of the Lorentz algebra separately: $(\frac12, 0)\oplus(0, \frac12)$ times its conjugate carries the labels of S, P, V, A and T.
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-15|Def. §CB.13.15]] — the Dirac form, whose invariance under $\Lambda_{1/2}$ is the invariance of $\bar\psi\chi$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]).
 

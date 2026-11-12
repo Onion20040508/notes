@@ -66,7 +66,7 @@ What are the solutions of the free Dirac equation? The equation and its covarian
 > which vanishes for all $x$ iff $(\slashed{p} + m)v = 0$, i.e. $\slashed{p}\,v = -m\,v$. Part 2. ⚑ By-product: the sign of the eigenvalue came from the exponent, not from $p^0$, which is $+E_{\mathbf p}$ in both cases → [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^rem-c5a-10-1|Remark: Why the sign sits in the exponent]].
 >
 > **What the derivation shows**
-> - A plane wave turns the differential operator into the matrix $\pm\slashed{p}$: the field equation in momentum space ([[§CA.3 Fourier Transforms and Fourier Tricks#^rem-ca-3-1|§CA.3, Remark: A linear equation becomes algebra]]).
+> - A plane wave turns the differential operator into the matrix $\pm\slashed{p}$: the field equation in momentum space ([[§CA.4 Fourier Transforms and Fourier Tricks#^rem-ca-4-1|§CA.4, Remark: A linear equation becomes algebra]]).
 > - $p^2 = m^2$ was not used: it is forced by the next theorem (a nonzero solution needs $\pm m$ to be an eigenvalue of $\slashed{p}$, and $\slashed{p}^2 = p^2$).
 > - Used next: the eigenvalues of $\slashed{p}$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-2|Theorem §C5a.10.2]]).
 
@@ -485,7 +485,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-9|Derivation]] — rotation content and the $2\pi$ sign of $(j_+, j_-)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]).
 >
 > A plane wave turns the Dirac operator into a matrix (Derivation §C5a.10.1), and the Connections read the spinor boost as the boost factor of a boost-times-rotation decomposition:
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^rem-ca-3-1|§CA.3, Remark: A linear equation becomes algebra]] — on a plane wave a linear differential operator with constant coefficients acts by multiplication: the field equation in momentum space.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^rem-ca-4-1|§CA.4, Remark: A linear equation becomes algebra]] — on a plane wave a linear differential operator with constant coefficients acts by multiplication: the field equation in momentum space.
 > - [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|Theorem §CB.3.13]] — every $\Lambda \in SO^+(1,3)$ is a boost times a rotation ([[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]]).
 
 > [!remark]- Connections

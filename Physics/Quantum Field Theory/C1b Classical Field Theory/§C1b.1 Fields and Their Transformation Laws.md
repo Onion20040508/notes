@@ -228,7 +228,7 @@ The simplest invariant wave equation for a scalar field is the Klein–Gordon eq
 >
 > **What the derivation shows**
 > - Only two facts were used: derivatives of a scalar transform with $\Lambda^{-1}$ (a covector law, [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]]), and the metric is invariant. Any fully contracted equation behaves the same way.
-> - Assumption: $\phi \in C^2$. For a distributional solution the same identity holds with derivatives taken in the sense of distributions and the change of variables of [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]].
+> - Assumption: $\phi \in C^2$. For a distributional solution the same identity holds with derivatives taken in the sense of distributions and the change of variables of [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]].
 > - Used next: the general statement that a scalar Lagrangian density gives an invariant action and covariant field equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]]).
 
 ^der-c1b-1-3
@@ -265,7 +265,7 @@ The simplest invariant wave equation for a scalar field is the Klein–Gordon eq
 > - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-10|its derivation]] — $(j_+, j_-)$ integrates to a representation of $SO^+(1,3)$ iff $j_+ + j_-$ is an integer, to $SL(2, \mathbb C)$ always.
 >
 > The scalar law extends from functions to generalized functions (the caution on invariant functions; Derivation §C1b.1.3, "What the derivation shows"):
-> - [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]] — linear change of variables in a distribution: the meaning of $\phi(\Lambda^{-1}(x - a))$ for a distributional solution.
+> - [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] — linear change of variables in a distribution: the meaning of $\phi(\Lambda^{-1}(x - a))$ for a distributional solution.
 > - [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]] — the Lorentz-invariant distributions $\theta(\pm x^0)\delta(x^2)$ and $\theta(\pm p^0)\delta(p^2 - m^2)$: invariant "functions" that depend on the sign of the time component as well as on the square.
 > - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]] — the spinor generators $\frac i4[\gamma^\mu, \gamma^\nu]$ (Hermitian convention); in the real convention of Def. §C1b.1.3 the spin matrices of a Dirac field are $\frac14[\gamma^\mu, \gamma^\nu]$ (Connections below).
 

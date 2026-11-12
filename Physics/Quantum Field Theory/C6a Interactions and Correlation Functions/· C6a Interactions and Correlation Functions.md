@@ -32,8 +32,8 @@ C6a follows the course (Lectures 13–14) and the user's notes (Ch. 13–14), no
 | §C6a.11 | §10.4, (10.176)–(10.181); §10.5.1, (10.193)–(10.197) | no $T(1 - i\varepsilon)$; binomial proof | §4.4, (4.48)–(4.57) |
 | §C6a.12 | §7.1, p. 286 (after (7.103)); §10.4, (10.178) | all bubble diagrams contribute only a phase factor | §4.4, p. 98, (4.55)–(4.56) |
 | §C6a.13 | §7.2, rules 6–12 (pp. 287–288); §7.3, (7.112)–(7.120), p. 296; §7.4, (7.133)–(7.143), rules 1–5 (p. 300) | $T$-matrix rules, field by field; vertex = $i\mathcal L_{\rm int}$ stripped, times the permutations | §4.4, pp. 92–95; §4.6, p. 115 |
-| §CA.7 (mathematics) | (6.167)–(6.168); (7.114)–(7.125) | | §4.3–§4.4 |
-| §CA.8 (mathematics) | §10.5.1, (10.192)–(10.196) | | §4.4, pp. 96–98, (4.50)–(4.52) |
+| §CA.8 (mathematics) | (6.167)–(6.168); (7.114)–(7.125) | | §4.3–§4.4 |
+| §CA.9 (mathematics) | §10.5.1, (10.192)–(10.196) | | §4.4, pp. 96–98, (4.50)–(4.52) |
 
 ## Sections
 - [[§C6a.0 Setups and Observables]] — Coleman 253a pp. 73–102, 140–158; PS §2.4, §4.2, §4.5; start here

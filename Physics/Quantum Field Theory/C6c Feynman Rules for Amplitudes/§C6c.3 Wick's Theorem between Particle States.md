@@ -179,7 +179,7 @@ tags: [quantum-field-theory, level-c]
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the vertex integrals give momentum deltas.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the vertex integrals give momentum deltas.
 
 > [!remark]- Connections
 > - With fermions the same theorem holds with a sign for each crossing of contractions — [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4|§C6d.3, Theorem §C6d.3.4]].

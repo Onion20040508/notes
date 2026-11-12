@@ -23,13 +23,13 @@ The rules for $S$-matrix elements, with external lines instead of external point
 
 *Conventions* ([[Larsen PHY 513]]): real fields $\hat\phi_j$ of mass $m_j$; a complex field $\hat\phi$ with particles $\hat a^\dagger$ and antiparticles $\hat b^\dagger$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]]); $D_F^{(m)}$ the Feynman propagator of mass $m$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]); $\mathcal L_{\rm int} = -\sum_tg_tM_t$, $\hat{\mathcal H}_I = -\mathcal L_{\rm int}(\hat\phi_I)$ (no derivatives); a complex line points from its $\hat\phi^\dagger$ end to its $\hat\phi$ end.
 
-The counting is that of [[§C6a.8 Position-Space Feynman Rules|§C6a.8]] with more kinds of legs, proved in [[§CA.8 Splitting Pairings and the Exponential Formula|§CA.8]] and listed at the end. A contraction pattern with several vertex types and several kinds of legs is a pairing of half-edges that respects a compatibility relation between kinds ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]); relabelling the $n_t$ vertices of each type and the legs of equal kind at each vertex is a group of order
+The counting is that of [[§C6a.8 Position-Space Feynman Rules|§C6a.8]] with more kinds of legs, proved in [[§CA.9 Splitting Pairings and the Exponential Formula|§CA.9]] and listed at the end. A contraction pattern with several vertex types and several kinds of legs is a pairing of half-edges that respects a compatibility relation between kinds ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]]); relabelling the $n_t$ vertices of each type and the legs of equal kind at each vertex is a group of order
 
 $$
 |G_{\mathbf n}| = \prod_tn_t!\,\Bigl(\prod_km_{t,k}!\Bigr)^{n_t} ,
 $$
 
-the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by $|G_{\mathbf n}|/S(D)$ of the contractions, as $n!\,(4!)^n/S(D)$ for $\phi^4$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]; [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]; $|G_{\mathbf n}| = n!\,(3!)^n$ for $\phi^3$ and $n!\,(2!\,2!)^n$ for $(\phi^\dagger\phi)^2$). In momentum space the plane waves meeting at a vertex integrate to a delta function, $\int d^4z\,e^{ip\cdot z} = (2\pi)^4\delta^4(p)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]).
+the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by $|G_{\mathbf n}|/S(D)$ of the contractions, as $n!\,(4!)^n/S(D)$ for $\phi^4$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]; [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]; $|G_{\mathbf n}| = n!\,(3!)^n$ for $\phi^3$ and $n!\,(2!\,2!)^n$ for $(\phi^\dagger\phi)^2$). In momentum space the plane waves meeting at a vertex integrate to a delta function, $\int d^4z\,e^{ip\cdot z} = (2\pi)^4\delta^4(p)$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]).
 
 ## Lines and vertices
 
@@ -93,7 +93,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > \mathcal L_{\rm int} = -\sum_tg_t\,M_t , \qquad M_t = \prod_k\phi_k^{m_{t,k}} ,
 > $$
 >
-> each $M_t$ a monomial without derivatives in the **field symbols** $k$ (a real field $\phi_j$; $\phi$ and $\phi^\dagger$ of a complex field), $g_t$ a real coupling. The **vertex data** of $\mathcal L_{\rm int}$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]) are:
+> each $M_t$ a monomial without derivatives in the **field symbols** $k$ (a real field $\phi_j$; $\phi$ and $\phi^\dagger$ of a complex field), $g_t$ a real coupling. The **vertex data** of $\mathcal L_{\rm int}$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]]) are:
 > 1. the kinds $K$ = the field symbols, with $k \smile k'$ iff their contraction is nonzero (Lemma §C6a.13.1): $\phi_j \smile \phi_j$, $\phi \smile \phi^\dagger$;
 > 2. one vertex type $t$ per monomial, with $r_t = \sum_km_{t,k}$ legs, $m_{t,k}$ of them of kind $k$, drawn as a point where $r_t$ lines end;
 > 3. an external field $\hat\phi_k(x)$ is an external point of kind $k$.
@@ -121,7 +121,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > -ig_t\prod_km_{t,k}! \qquad\text{(times } \textstyle\int d^4z \text{ in position space, } (2\pi)^4\delta^4(\sum p) \text{ in momentum space)} ;
 > $$
 >
-> 2. every diagram enters with $\frac1S\prod_{\text{vertices}}(\text{vertex factor})$ and the rules for lines of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] (several fields: [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-4|Theorem §C6a.13.4]]), $S$ its symmetry factor ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]).
+> 2. every diagram enters with $\frac1S\prod_{\text{vertices}}(\text{vertex factor})$ and the rules for lines of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] (several fields: [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-4|Theorem §C6a.13.4]]), $S$ its symmetry factor ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]]).
 >
 > In the notation of the fields themselves: a term $-c\prod_i\phi_i^{n_i}$ of $\mathcal L_{\rm int}$ ($\phi_i$ distinct field symbols) has the vertex factor $-ic\prod_in_i!$.
 >
@@ -163,7 +163,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 >
 > the four terms $(\sigma, \tau) = (e, e), (e, (12)), ((12), e), ((12), (12))$; with $-\frac{i\lambda}{4}$ the vertex factor is $-i\frac\lambda4\cdot2!\cdot2! = -i\lambda$. The other $4! - 4 = 20$ assignments of four lines to four legs pair a $\hat\phi$ with a $\hat\phi$ and vanish.
 >
-> **Step 3** (part 2). By [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1–2, the contractions of one diagram number $N_D = |G|/S$ with $|G| = \prod_tn_t!\,\bigl(\prod_km_{t,k}!\bigr)^{n_t}$, all with the same integrand (Step 5 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]):
+> **Step 3** (part 2). By [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1–2, the contractions of one diagram number $N_D = |G|/S$ with $|G| = \prod_tn_t!\,\bigl(\prod_km_{t,k}!\bigr)^{n_t}$, all with the same integrand (Step 5 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]):
 >
 > $$
 > \prod_t\frac{(-ig_t)^{n_t}}{n_t!}\cdot\frac{|G|}{S} = \frac1S\prod_t\Bigl(-ig_t\prod_km_{t,k}!\Bigr)^{n_t} .
@@ -176,7 +176,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 
 ^der-c6a-13-2
 
-*Uses:* [[§C6a.13 Feynman Rules for Polynomial Interactions#^def-c6a-13-1|Def. §C6a.13.1]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]
+*Uses:* [[§C6a.13 Feynman Rules for Polynomial Interactions#^def-c6a-13-1|Def. §C6a.13.1]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]
 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-2|P6, step 2]]
 
@@ -263,7 +263,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > | line of a complex field, arrow from $b$ ($\phi^\dagger$ end) to $a$ ($\phi$ end) | $D_F^{(m)}(a - b)$ |
 > | vertex of type $t$ at $z$ | $\bigl(-ig_t\prod_km_{t,k}!\bigr)\int d^4z$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2\|Theorem §C6a.13.2]]) |
 > | external point | $1$ |
-> | the whole diagram | $\frac1S$, $S = \lvert\operatorname{Stab}(P)\rvert$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2\|Def. §CA.8.2]]) |
+> | the whole diagram | $\frac1S$, $S = \lvert\operatorname{Stab}(P)\rvert$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2\|Def. §CA.9.2]]) |
 >
 > A line joins two line-ends of compatible kinds: two ends of the same real field, or the $\phi$ end and the $\phi^\dagger$ end of one complex field; at a vertex of type $t$, $m_{t,k}$ lines end on legs of kind $k$. For a complex field two arrows meet head to tail at each $\phi^\dagger\phi$ pair of legs, so charge flows through every vertex of $(\phi^\dagger\phi)^2$.
 >
@@ -280,7 +280,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > \frac{1}{n!}\Bigl(\sum_t(-ig_t)\int M_t\Bigr)^n = \sum_{\sum n_t = n}\frac{1}{n!}\frac{n!}{\prod_tn_t!}\prod_t\Bigl((-ig_t)\int M_t\Bigr)^{n_t} = \sum_{\sum n_t = n}\prod_t\frac{(-ig_t)^{n_t}}{n_t!}\int\prod_{t,v}d^4z_{t,v}\,\prod_{t,v}M_t(\hat\phi_I(z_{t,v})) .
 > $$
 >
-> **Step 2** (Wick with kinds). Write each $M_t(z_{t,v})$ as its $r_t$ factors, one field per leg $(t, v, a)$ of kind $\kappa_t(a)$. By [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]], 3, and [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], the vacuum value is the sum over complete pairings of all half-edges, a pair of incompatible kinds giving $0$: only $P \in \mathcal P_\smile(X_{E,\mathbf n})$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]) survive (here $E = \{x_1, \dots, x_{n_{\rm ext}}\}$ is the set of external points, as in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]; its size is the $n_{\rm ext}$ of [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-3|Theorem §C6a.13.3]]),
+> **Step 2** (Wick with kinds). Write each $M_t(z_{t,v})$ as its $r_t$ factors, one field per leg $(t, v, a)$ of kind $\kappa_t(a)$. By [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]], 3, and [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], the vacuum value is the sum over complete pairings of all half-edges, a pair of incompatible kinds giving $0$: only $P \in \mathcal P_\smile(X_{E,\mathbf n})$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]]) survive (here $E = \{x_1, \dots, x_{n_{\rm ext}}\}$ is the set of external points, as in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]; its size is the $n_{\rm ext}$ of [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-3|Theorem §C6a.13.3]]),
 >
 > $$
 > \langle0|T\Bigl\{\prod_{h\in X_{E,\mathbf n}}\hat\phi_h\Bigr\}|0\rangle = \sum_{P\in\mathcal P_\smile(X_{E,\mathbf n})}\;\prod_{\{h,h'\}\in P}D_F^{(m_{hh'})}\bigl(\mathrm{pt}(h) - \mathrm{pt}(h')\bigr) ,
@@ -299,9 +299,9 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 >
 > and the pairings $\{\hat\Phi(w), \hat\phi_{z_a}\}$ are absent because the contraction of a $\hat\Phi$ with a $\hat\phi$ is $0$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]], 1).
 >
-> **Step 3** (invariance). Let $g \in G_{\mathbf n}$ permute the vertices within each type and, at each vertex, the legs of each kind among themselves. All legs of one kind at $z_{t,v}$ carry the same operator $\hat\phi_k(z_{t,v})$, so as in Step 5 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] the integrand of $g\cdot P$ is that of $P$ with the variables $z_{t,v}$ renamed within each type, and $\int\prod d^4z$ is unchanged (block permutation, $|\det| = 1$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]). For a complex line the renaming keeps the order $D_F(\phi\text{ end} - \phi^\dagger\text{ end})$, since $g$ preserves kinds.
+> **Step 3** (invariance). Let $g \in G_{\mathbf n}$ permute the vertices within each type and, at each vertex, the legs of each kind among themselves. All legs of one kind at $z_{t,v}$ carry the same operator $\hat\phi_k(z_{t,v})$, so as in Step 5 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] the integrand of $g\cdot P$ is that of $P$ with the variables $z_{t,v}$ renamed within each type, and $\int\prod d^4z$ is unchanged (block permutation, $|\det| = 1$, [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]]). For a complex line the renaming keeps the order $D_F(\phi\text{ end} - \phi^\dagger\text{ end})$, since $g$ preserves kinds.
 >
-> **Step 4** (orbits). By [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1–2, the pairings of one diagram $D$ number $N_D = |G_{\mathbf n}|/S(D)$, with $|G_{\mathbf n}| = \prod_tn_t!\,\bigl(\prod_km_{t,k}!\bigr)^{n_t}$, all with the same integral $I(D)$.
+> **Step 4** (orbits). By [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1–2, the pairings of one diagram $D$ number $N_D = |G_{\mathbf n}|/S(D)$, with $|G_{\mathbf n}| = \prod_tn_t!\,\bigl(\prod_km_{t,k}!\bigr)^{n_t}$, all with the same integral $I(D)$.
 >
 > **Step 5** (cancel). Steps 1–4:
 >
@@ -315,11 +315,11 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 >
 > **What the derivation shows.**
 > - What changes from $\phi^4$: the propagator of each line depends on its field, pairings are restricted by kinds, and $n!\,(4!)^n$ becomes $|G_{\mathbf n}|$; the cancellation of Step 5 is complete for vertices exactly when the Lagrangian carries $\frac{1}{\prod_km_{t,k}!}$, which is why $\frac{g}{3!}$, $\frac{\lambda}{4!}$, $\frac\lambda4 = \frac{\lambda}{2!\,2!}$ are chosen and $\mu\Phi\phi^2$ gives $-2i\mu$.
-> - Kinds make $S$ smaller: a symmetry must map each leg to a leg of the same kind ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3), so oriented loops cannot be flipped ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|Theorem §C6a.9.2]]).
+> - Kinds make $S$ smaller: a symmetry must map each leg to a leg of the same kind ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 3), so oriented loops cannot be flipped ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|Theorem §C6a.9.2]]).
 
 ^der-c6a-13-4
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]
 
 *Procedure:* [[P5 Symmetry Factor of a Diagram#^p5-1|P5, steps 1–2]]
 
@@ -349,9 +349,9 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > D_F^{(m_\ell)}(a_\ell - b_\ell) = \int\frac{d^4p_\ell}{(2\pi)^4}\,\frac{i}{p_\ell^2 - m_\ell^2 + i\varepsilon}\,e^{-ip_\ell\cdot a_\ell}e^{+ip_\ell\cdot b_\ell} .
 > $$
 >
-> For a complex line $a_\ell$ is its $\phi$ end; reversing the momentum, $p_\ell \to -p_\ell$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1), gives the same integrand with $e^{+ip_\ell\cdot a_\ell}e^{-ip_\ell\cdot b_\ell}$ because $(-p)^2 = p^2$: the momentum may be taken along the arrow or against it.
+> For a complex line $a_\ell$ is its $\phi$ end; reversing the momentum, $p_\ell \to -p_\ell$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], 1), gives the same integrand with $e^{+ip_\ell\cdot a_\ell}e^{-ip_\ell\cdot b_\ell}$ because $(-p)^2 = p^2$: the momentum may be taken along the arrow or against it.
 >
-> **Step 2** (one vertex). At a vertex $z$ of type $t$, with the momenta $p_1, \dots, p_{r_t}$ of its lines oriented into $z$, the $z$-dependence is $\prod_{a=1}^{r_t}e^{ip_a\cdot z}$ (a loop at $z$ contributes $e^{ik\cdot z}e^{-ik\cdot z} = 1$), and with [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] (integral done first, as in Step 3 of [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-1|Derivation §C6a.10.1]])
+> **Step 2** (one vertex). At a vertex $z$ of type $t$, with the momenta $p_1, \dots, p_{r_t}$ of its lines oriented into $z$, the $z$-dependence is $\prod_{a=1}^{r_t}e^{ip_a\cdot z}$ (a loop at $z$ contributes $e^{ik\cdot z}e^{-ik\cdot z} = 1$), and with [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] (integral done first, as in Step 3 of [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-1|Derivation §C6a.10.1]])
 >
 > $$
 > \Bigl(-ig_t\prod_km_{t,k}!\Bigr)\int d^4z\,e^{i(p_1 + \cdots + p_{r_t})\cdot z} = \Bigl(-ig_t\prod_km_{t,k}!\Bigr)(2\pi)^4\delta^4(p_1 + \cdots + p_{r_t}) .
@@ -374,7 +374,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 
 ^der-c6a-13-5
 
-*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-1|Derivation §C6a.10.1]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-4|Theorem §C6a.13.4]]
+*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-1|Derivation §C6a.10.1]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-4|Theorem §C6a.13.4]]
 
 ![[ph-qft-c6a-12-1.svg]]
 *The rules of [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-4|Theorem §C6a.13.4]] and [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]] as a picture. Top: the lines, one per field type (solid $\phi$, dashed $\Phi$, arrowed for a complex field, from the $\phi^\dagger$ end to the $\phi$ end), with their position- and momentum-space values. Bottom: the vertices of the four theories in the table of [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]], each $-i$ times its coupling times the number of ways to attach distinct lines to its legs. Added figure.*
@@ -421,7 +421,7 @@ The examples of Problem Set 8 are already worked: the oriented tadpole, fish and
 >
 > Check: $36 + 36 + 18 + 15 = 105$.
 >
-> **Step 3** (coefficients). $\frac{N_D}{72}$ with $|G_2| = 2!\,(3!)^2 = 72$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1): $\frac{36}{72} = \frac12$, $\frac{36}{72} = \frac12$, $\frac{18}{72} = \frac14$, $\frac{9}{72} = \frac18$, $\frac{6}{72} = \frac{1}{12}$, so $S = 2, 2, 4, 8, 12$, the statement.
+> **Step 3** (coefficients). $\frac{N_D}{72}$ with $|G_2| = 2!\,(3!)^2 = 72$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1): $\frac{36}{72} = \frac12$, $\frac{36}{72} = \frac12$, $\frac{18}{72} = \frac14$, $\frac{9}{72} = \frac18$, $\frac{6}{72} = \frac{1}{12}$, so $S = 2, 2, 4, 8, 12$, the statement.
 >
 > **Step 4** (the same $S$ as stabilizers). Bubble: exchange of the two parallel lines, $|\operatorname{Stab}| = 2$. Tadpole on the line: flip of the loop, $2$. Two one-point tadpoles: the two flips, $2\cdot2 = 4$ (the vertices carry different external points and are not exchanged). Dumbbell: two flips and the exchange of the vertices, $2\cdot2\cdot2 = 8$. Theta: the $3!$ permutations of the three lines and the exchange of the vertices, $6\cdot2 = 12$. The same orbit–stabilizer count as [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-2|Example §C6a.9.2]] for $\phi^4$.
 >
@@ -461,9 +461,9 @@ The examples of Problem Set 8 are already worked: the oriented tadpole, fish and
 >
 > Check: $4 + 16 + 4 = 24$.
 >
-> **Step 3** (coefficients). With $\frac{-i\lambda}{4} = \frac{-i\lambda}{2!\,2!}$: (a) $\frac{4}{4} = 1$, (b) $\frac44 = 1$, (c) $\frac24 = \frac12$. $|G_1| = 2!\,2! = 4$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1), so $S = 4/N_D = 1, 1, 2$.
+> **Step 3** (coefficients). With $\frac{-i\lambda}{4} = \frac{-i\lambda}{2!\,2!}$: (a) $\frac{4}{4} = 1$, (b) $\frac44 = 1$, (c) $\frac24 = \frac12$. $|G_1| = 2!\,2! = 4$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1), so $S = 4/N_D = 1, 1, 2$.
 >
-> **Step 4** (stabilizers). (a), (b): every leg of the vertex is joined to an external point or, in (b), the loop joins the remaining $\hat\phi$ leg to the remaining $\hat\phi^\dagger$ leg; a symmetry fixes legs joined to external points ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3), and the loop's two ends have different kinds, so it cannot be flipped: $S = 1$ (the real $\phi^4$ tadpole has $S = 2$). (c): exchanging the two $\hat\phi$ legs together with the two $\hat\phi^\dagger$ legs maps the pairing $\{\{z1, z1^\dagger\}, \{z2, z2^\dagger\}\}$ to itself: $S = 2$ (the real figure-eight has $S = 8$).
+> **Step 4** (stabilizers). (a), (b): every leg of the vertex is joined to an external point or, in (b), the loop joins the remaining $\hat\phi$ leg to the remaining $\hat\phi^\dagger$ leg; a symmetry fixes legs joined to external points ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 3), and the loop's two ends have different kinds, so it cannot be flipped: $S = 1$ (the real $\phi^4$ tadpole has $S = 2$). (c): exchanging the two $\hat\phi$ legs together with the two $\hat\phi^\dagger$ legs maps the pairing $\{\{z1, z1^\dagger\}, \{z2, z2^\dagger\}\}$ to itself: $S = 2$ (the real figure-eight has $S = 8$).
 >
 > The connected part, $-i\lambda\int d^4z\,D_{x_1z}D_{x_2z}D_{zy_1}D_{zy_2}$, shows the vertex factor $-i\frac\lambda4\cdot2!\cdot2! = -i\lambda$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]).
 >
@@ -481,13 +481,13 @@ The examples of Problem Set 8 are already worked: the oriented tadpole, fish and
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]] — a contraction pattern with several vertex types and several kinds of legs is a pairing of half-edges that respects a compatibility relation between kinds.
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]] — the relabelling group, its order, and orbit–stabilizer for it.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the plane waves meeting at a vertex integrate to a delta function.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — renaming the vertex positions within each type leaves the integral unchanged (Derivation §C6a.13.4, Step 3), and a line momentum may be reversed, $p \to -p$ (Derivation §C6a.13.5).
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]] — a contraction pattern with several vertex types and several kinds of legs is a pairing of half-edges that respects a compatibility relation between kinds.
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]] — the relabelling group, its order, and orbit–stabilizer for it.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the plane waves meeting at a vertex integrate to a delta function.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]] — renaming the vertex positions within each type leaves the integral unchanged (Derivation §C6a.13.4, Step 3), and a line momentum may be reversed, $p \to -p$ (Derivation §C6a.13.5).
 
 > [!remark]- Connections
-> - The prefactor of the Dyson series is the inverse order of the relabelling group exactly when the Lagrangian is normalized with the factorials of its legs; this is the content of "divide by $S$" for every theory — [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.8 Position-Space Feynman Rules#^rem-c6a-8-2|§C6a.8, Remark: The same proof for other vertices]].
+> - The prefactor of the Dyson series is the inverse order of the relabelling group exactly when the Lagrangian is normalized with the factorials of its legs; this is the content of "divide by $S$" for every theory — [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6a.8 Position-Space Feynman Rules#^rem-c6a-8-2|§C6a.8, Remark: The same proof for other vertices]].
 > - Fewer kinds of legs that can be exchanged means smaller symmetry factors; for QED the leg group is trivial and $S = 1$ for every diagram with external points — [[§C6a.9 Symmetry Factors in Practice#^cau-c6a-9-2|§C6a.9, Caution: "In QED the symmetry factor is always S = 1" holds for diagrams with external points]].
 > - The line rules depend only on $\mathcal L_0$, the vertex rules only on $\mathcal L_{\rm int}$; Dirac and vector lines replace $D_F$ by $S_F$ ([[§C6d.6 Momentum-Space Feynman Rules#^thm-c6d-6-2|§C6d.6, Theorem §C6d.6.2]]) and the vector propagator ([[§C8.4 Feynman Rules for QED#^thm-c8-4-4|§C8.4, Theorem §C8.4.4]]) — [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]].
 > - The same vertex factors and lines, with external particles instead of external points, give the Feynman rules for $i\mathcal M$ — [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]].

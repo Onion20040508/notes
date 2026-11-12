@@ -262,7 +262,7 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 > (p_i - p_f)^\mu\,\langle f|i\hat T|i\rangle = (p_i - p_f)^\mu\langle f|\hat S|i\rangle - (p_i - p_f)^\mu\langle f|i\rangle = 0 .
 > $$
 >
-> **Step 3** (support). Change variables from the momenta to $\Delta = p_i - p_f$ and the remaining independent momenta, a linear change of variables with constant Jacobian ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1). Write $A(\Delta) \equiv \langle f|i\hat T|i\rangle$, a distribution in $\Delta$ with the remaining momenta as parameters. Step 2 reads $\Delta^\mu A = 0$ for $\mu = 0, \dots, 3$. Let $\varphi$ be a test function with $0 \notin \operatorname{supp}\varphi$. On $\operatorname{supp}\varphi$ some $\Delta^\mu \ne 0$, so $\varphi = \sum_\mu\Delta^\mu\psi_\mu$ with smooth $\psi_\mu = \varphi\,\Delta^\mu/|\Delta|_E^2$ ($|\Delta|_E^2 = \sum_\nu(\Delta^\nu)^2$, Euclidean), and, with the product of a distribution and a smooth function ([[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]),
+> **Step 3** (support). Change variables from the momenta to $\Delta = p_i - p_f$ and the remaining independent momenta, a linear change of variables with constant Jacobian ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1). Write $A(\Delta) \equiv \langle f|i\hat T|i\rangle$, a distribution in $\Delta$ with the remaining momenta as parameters. Step 2 reads $\Delta^\mu A = 0$ for $\mu = 0, \dots, 3$. Let $\varphi$ be a test function with $0 \notin \operatorname{supp}\varphi$. On $\operatorname{supp}\varphi$ some $\Delta^\mu \ne 0$, so $\varphi = \sum_\mu\Delta^\mu\psi_\mu$ with smooth $\psi_\mu = \varphi\,\Delta^\mu/|\Delta|_E^2$ ($|\Delta|_E^2 = \sum_\nu(\Delta^\nu)^2$, Euclidean), and, with the product of a distribution and a smooth function ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]),
 >
 > $$
 > A[\varphi] = \sum_\mu A[\Delta^\mu\psi_\mu] = \sum_\mu(\Delta^\mu A)[\psi_\mu] = 0 :
@@ -270,7 +270,7 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 >
 > $\operatorname{supp}A \subseteq \{\Delta = 0\}$.
 >
-> **Step 4** (only δ itself survives). By [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], $A = \sum_{|\alpha|\le N}c_\alpha\,\partial^\alpha\delta^4(\Delta)$, with multi-indices $\alpha = (\alpha_0, \dots, \alpha_3)$ and $\partial^\alpha = \partial_{\Delta^0}^{\alpha_0}\cdots\partial_{\Delta^3}^{\alpha_3}$. Multiplication by $\Delta^\mu$ on each term, from the definitions of the derivative of a distribution and of its product with a smooth function ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]; for the gradient of δ, [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]) and the Leibniz rule at $\Delta = 0$:
+> **Step 4** (only δ itself survives). By [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], $A = \sum_{|\alpha|\le N}c_\alpha\,\partial^\alpha\delta^4(\Delta)$, with multi-indices $\alpha = (\alpha_0, \dots, \alpha_3)$ and $\partial^\alpha = \partial_{\Delta^0}^{\alpha_0}\cdots\partial_{\Delta^3}^{\alpha_3}$. Multiplication by $\Delta^\mu$ on each term, from the definitions of the derivative of a distribution and of its product with a smooth function ([[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]; for the gradient of δ, [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]) and the Leibniz rule at $\Delta = 0$:
 >
 > $$
 > \bigl(\Delta^\mu\,\partial^\alpha\delta^4\bigr)[\varphi] = (-1)^{|\alpha|}\,\partial^\alpha(\Delta^\mu\varphi)\big|_{\Delta=0} = (-1)^{|\alpha|}\,\alpha_\mu\,\partial^{\alpha - e_\mu}\varphi\big|_{\Delta=0} = -\alpha_\mu\,\bigl(\partial^{\alpha - e_\mu}\delta^4\bigr)[\varphi] ,
@@ -296,7 +296,7 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 
 ^der-c6b-1-4
 
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
 
 > [!definition] Definition §C6b.1.3: The Invariant Amplitude
 > Since $\hat T$ conserves energy-momentum ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]), the delta function is removed:
@@ -316,11 +316,11 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-6|P6, step 6]], [[P7 From ℳ to σ or Γ#^p7-2|P7, step 2]]
 
 
-Where the $(2\pi)^4$ and the $i$ of $i\mathcal M$ come from: at first order $\langle f|i\hat T|i\rangle = -i\int d^4x\,\langle f|\hat{\mathcal H}_I(x)|i\rangle$, and every external particle contributes a plane wave $e^{\pm ip\cdot x}$ ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]]), so the vertex integral is ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]])
+Where the $(2\pi)^4$ and the $i$ of $i\mathcal M$ come from: at first order $\langle f|i\hat T|i\rangle = -i\int d^4x\,\langle f|\hat{\mathcal H}_I(x)|i\rangle$, and every external particle contributes a plane wave $e^{\pm ip\cdot x}$ ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]]), so the vertex integral is ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]])
 $$
 \int d^4x\;e^{i(\sum_{\rm out}p - \sum_{\rm in}p)\cdot x} = (2\pi)^4\delta^4\Bigl(\sum_{\rm in}p - \sum_{\rm out}p\Bigr) .
 $$
-The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal M = -i\lambda$, $\mathcal M = -\lambda$ ([[§C6c.1 Amplitudes from Correlation Functions#^ex-c6c-1-1|Example §C6c.1.1]]); $(2\pi)^4\delta^4(0)$, which squaring this delta function produces, is the spacetime volume of a box, $\tilde V\tilde T$, with $2\pi\delta(0) = \tilde T$ the duration ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]; [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]]).
+The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal M = -i\lambda$, $\mathcal M = -\lambda$ ([[§C6c.1 Amplitudes from Correlation Functions#^ex-c6c-1-1|Example §C6c.1.1]]); $(2\pi)^4\delta^4(0)$, which squaring this delta function produces, is the spacetime volume of a box, $\tilde V\tilde T$, with $2\pi\delta(0) = \tilde T$ the duration ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]]; [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]]).
 
 > [!remark] Remark: What "dynamical" means
 > Dynamical data are quantities that depend on the potentials, that is, on which theory is considered; they cannot be obtained from energy conservation alone. Everything else in a cross section or a decay rate, the $\mathbb 1$, the delta function, the normalization of the states, the phase space, is kinematics and is the same in every theory. So $\mathcal M$ is the matrix element actually wanted, and the Feynman rules are rules for computing it ([[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]]).
@@ -543,10 +543,10 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > Proved in CA; each line says what the physics above relies on.
 >
 > - [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]] — a distribution supported at one point is a finite sum of derivatives of δ there; with $(p_i - p_f)^\mu\langle f|i\hat T|i\rangle = 0$ only $\delta^4(p_i - p_f)$ itself survives (Derivation §C6b.1.4, Steps 3–4).
-> - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]] — derivatives and smooth factors are moved onto the test function: the rule $\Delta^\mu\,\partial^\alpha\delta^4 = -\alpha_\mu\,\partial^{\alpha - e_\mu}\delta^4$ that removes every derivative of δ (Derivation §C6b.1.4, Steps 3–4).
+> - [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]] — derivatives and smooth factors are moved onto the test function: the rule $\Delta^\mu\,\partial^\alpha\delta^4 = -\alpha_\mu\,\partial^{\alpha - e_\mu}\delta^4$ that removes every derivative of δ (Derivation §C6b.1.4, Steps 3–4).
 > - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1 — δ under a linear change of variables: the constant Jacobian of the change to $\Delta = p_i - p_f$ (Derivation §C6b.1.4, Step 3) and $\delta^4(\Lambda\Delta) = \delta^4(\Delta)$ for $|\det\Lambda| = 1$ (Derivation §C6b.1.6, Step 3).
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the plane waves of the external particles integrate to $(2\pi)^4\delta^4$, the factor split off in Def. §C6b.1.3.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]] — in a box in space and time $(2\pi)^4\delta^4(0)$ is the spacetime volume $\tilde V\tilde T$, the value used when the delta function is squared.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the plane waves of the external particles integrate to $(2\pi)^4\delta^4$, the factor split off in Def. §C6b.1.3.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]] — in a box in space and time $(2\pi)^4\delta^4(0)$ is the spacetime volume $\tilde V\tilde T$, the value used when the delta function is squared.
 > - [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]] — the Schwartz space $\mathcal S$ of test functions, the reason the operators are written $\hat S$, $\hat T$ and not with calligraphic letters (Caution: Names for the S-matrix, the T-matrix and the amplitude).
 
 > [!remark]- Connections

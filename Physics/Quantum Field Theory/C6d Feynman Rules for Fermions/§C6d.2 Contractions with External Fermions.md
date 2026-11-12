@@ -90,7 +90,7 @@ A scalar field in $\hat H_I$ that meets an external particle produces its wave f
 > \hat\psi^+(x)|\mathbf p, s\rangle = \int\frac{d^3q}{(2\pi)^3}\frac{\sqrt{2E_{\mathbf p}}}{\sqrt{2E_{\mathbf q}}}\sum_r u^r(q)\,e^{-iq\cdot x}\;\hat a^r_{\mathbf q}\hat a^{s\dagger}_{\mathbf p}|0\rangle .
 > $$
 >
-> Since $\hat a^r_{\mathbf q}|0\rangle = 0$, $\hat a^r_{\mathbf q}\hat a^{s\dagger}_{\mathbf p}|0\rangle = \bigl(\{\hat a^r_{\mathbf q}, \hat a^{s\dagger}_{\mathbf p}\} - \hat a^{s\dagger}_{\mathbf p}\hat a^r_{\mathbf q}\bigr)|0\rangle = (2\pi)^3\delta^{rs}\delta^3(\mathbf q - \mathbf p)|0\rangle$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]]): an anticommutator, but the term with the opposite order vanishes, so no sign arises at this step. The $\delta^3$ does the $\mathbf q$ integral ($\mathbf q = \mathbf p$, $q^0 = E_{\mathbf p}$, so $q = p$), the $(2\pi)^3$ cancels, $\sqrt{2E_{\mathbf p}}/\sqrt{2E_{\mathbf q}} = 1$ on the support ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1), and $\delta^{rs}$ does the spin sum:
+> Since $\hat a^r_{\mathbf q}|0\rangle = 0$, $\hat a^r_{\mathbf q}\hat a^{s\dagger}_{\mathbf p}|0\rangle = \bigl(\{\hat a^r_{\mathbf q}, \hat a^{s\dagger}_{\mathbf p}\} - \hat a^{s\dagger}_{\mathbf p}\hat a^r_{\mathbf q}\bigr)|0\rangle = (2\pi)^3\delta^{rs}\delta^3(\mathbf q - \mathbf p)|0\rangle$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]]): an anticommutator, but the term with the opposite order vanishes, so no sign arises at this step. The $\delta^3$ does the $\mathbf q$ integral ($\mathbf q = \mathbf p$, $q^0 = E_{\mathbf p}$, so $q = p$), the $(2\pi)^3$ cancels, $\sqrt{2E_{\mathbf p}}/\sqrt{2E_{\mathbf q}} = 1$ on the support ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]], 1), and $\delta^{rs}$ does the spin sum:
 >
 > $$
 > \hat\psi^+(x)|\mathbf p, s\rangle = u^s(p)\,e^{-ip\cdot x}\,|0\rangle .
@@ -124,7 +124,7 @@ A scalar field in $\hat H_I$ that meets an external particle produces its wave f
 >
 > **6. The anticommutator form.** In Steps 1–4 the field part and the operator of the state met through one anticommutator, $\{\hat\psi^+_a(x), \hat a^{s\dagger}_{\mathbf p}\} = \frac{1}{\sqrt{2E_{\mathbf p}}}u^s_a(p)e^{-ip\cdot x}$ and so on (the integral and the deltas evaluated as above), a $c$-number: this is the form in which a contraction with an external particle enters a longer operator string ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4|Theorem §C6d.3.4]]).
 >
-> **7. Momentum space.** In a diagram the plane wave of each contraction joins the others at its vertex, and $\int d^4x$ turns them into $(2\pi)^4\delta^4(\cdot)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]); the spinor has nowhere to go and remains.
+> **7. Momentum space.** In a diagram the plane wave of each contraction joins the others at its vertex, and $\int d^4x$ turns them into $(2\pi)^4\delta^4(\cdot)$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]); the spinor has nowhere to go and remains.
 >
 > **What the derivation shows.**
 > - The wave functions have the correct frequencies: $e^{-ip\cdot x}$ for incoming, $e^{+ip\cdot x}$ for outgoing particles of both kinds.
@@ -133,7 +133,7 @@ A scalar field in $\hat H_I$ that meets an external particle produces its wave f
 
 ^der-c6d-2-1
 
-*Uses:* [[§C6d.2 Contractions with External Fermions#^def-c6d-2-1|Def. §C6d.2.1]], [[§C6d.2 Contractions with External Fermions#^def-c6d-2-2|Def. §C6d.2.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
+*Uses:* [[§C6d.2 Contractions with External Fermions#^def-c6d-2-1|Def. §C6d.2.1]], [[§C6d.2 Contractions with External Fermions#^def-c6d-2-2|Def. §C6d.2.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]
 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-4|P6, step 4]]
 
@@ -324,8 +324,8 @@ A scalar field in $\hat H_I$ that meets an external particle produces its wave f
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]] — $\sqrt{2E_{\mathbf p}}/\sqrt{2E_{\mathbf q}}$ may be evaluated on the support of $\delta^3(\mathbf q - \mathbf p)$.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the plane waves of external lines become momentum deltas at the vertices, leaving the spinors.
+> - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]] — $\sqrt{2E_{\mathbf p}}/\sqrt{2E_{\mathbf q}}$ may be evaluated on the support of $\delta^3(\mathbf q - \mathbf p)$.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the plane waves of external lines become momentum deltas at the vertices, leaving the spinors.
 
 > [!remark]- Connections
 > - The scalar's external line "$1$" is the same contraction with no spinor: $\hat\phi^+|\mathbf p\rangle = e^{-ip\cdot x}|0\rangle$ — [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]]; for photons the leftover is a polarization vector ([[§C8.4 Feynman Rules for QED#^thm-c8-4-1|Theorem §C8.4.1]]; PS §4.8).

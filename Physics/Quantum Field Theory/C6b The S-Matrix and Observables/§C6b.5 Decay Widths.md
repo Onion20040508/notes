@@ -150,7 +150,7 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 > [!derivation]- Derivation
 > The transition probability is [[§C6b.2 Transition Probabilities in a Box#^def-c6b-2-1|Def. §C6b.2.1]], with only $i\hat T$ for $f \ne i$ ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]], 1); the norms are [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4|Theorem §C6b.2.4]], parts 1 and 3, the squared amplitude [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]], 2, with $p_i = p_A$.
 >
-> **Step 1** (norms). By [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] at coincident momenta, with $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]]; [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]; Yu eqs. (6.373), (6.290)),
+> **Step 1** (norms). By [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] at coincident momenta, with $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]]; [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]]; Yu eqs. (6.373), (6.290)),
 >
 > $$
 > \langle i|i\rangle = \langle\mathbf p_A|\mathbf p_A\rangle = 2E_A(2\pi)^3\delta^3(\mathbf 0) = 2E_A\tilde V , \qquad \langle f|f\rangle = \prod_{j=1}^n2E_j(2\pi)^3\delta^3(\mathbf 0) = \prod_{j=1}^n2E_j\tilde V ,
@@ -164,7 +164,7 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 > |\langle f|i\hat T|i\rangle|^2 = \bigl[(2\pi)^4\delta^4(p_A - p_f)\bigr]^2|\mathcal M|^2 = (2\pi)^4\delta^4(0)\cdot(2\pi)^4\delta^4(p_A - p_f)\,|\mathcal M|^2 = \tilde V\tilde T\,(2\pi)^4\delta^4(p_A - p_f)\,|\mathcal M|^2 ,
 > $$
 >
-> one delta function evaluated at the zero that the other enforces (Yu eq. (6.277), a box identity; on all of space $\delta^2$ has no value, [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]]). The normalized probability is
+> one delta function evaluated at the zero that the other enforces (Yu eq. (6.277), a box identity; on all of space $\delta^2$ has no value, [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|Theorem §CA.3.2]]). The normalized probability is
 >
 > $$
 > P_{fi} = \frac{|\langle f|i\hat T|i\rangle|^2}{\langle i|i\rangle\langle f|f\rangle} = \frac{\tilde V\tilde T\,(2\pi)^4\delta^4(p_A - p_f)\,|\mathcal M|^2}{2E_A\tilde V\cdot\prod_j(2E_j\tilde V)} = \frac{\tilde T\,(2\pi)^4\delta^4(p_A - p_f)\,|\mathcal M|^2}{2E_A\prod_j(2E_j\tilde V)} .
@@ -175,7 +175,7 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 
 ^der-c6b-5-4
 
-*Uses:* [[§C6b.2 Transition Probabilities in a Box#^def-c6b-2-1|Def. §C6b.2.1]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4|Theorem §C6b.2.4]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]]
+*Uses:* [[§C6b.2 Transition Probabilities in a Box#^def-c6b-2-1|Def. §C6b.2.1]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4|Theorem §C6b.2.4]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]], [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|Theorem §CA.3.2]]
 
 > [!theorem] Theorem §C6b.5.5: The Decay Rate into Fixed Final Momenta
 > $P_{fi} \propto \tilde T$, and the transition probability per unit time for one set of final momenta $\{p_j\}$ is
@@ -220,11 +220,11 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 ^thm-c6b-5-6
 
 > [!derivation]- Derivation (Yu's route: box normalization)
-> The box of [[§C6b.5 Decay Widths#^mod-c6b-5-1|Model §C6b.5.1]]: $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ and $(2\pi)^4\delta^4(0) = \int d^4x = \tilde V\tilde T$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]; Yu eq. (6.282)).
+> The box of [[§C6b.5 Decay Widths#^mod-c6b-5-1|Model §C6b.5.1]]: $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ and $(2\pi)^4\delta^4(0) = \int d^4x = \tilde V\tilde T$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]]; Yu eq. (6.282)).
 >
 > **Steps 1–3** (the norms, the transition probability, the rate per unit time) are [[§C6b.5 Decay Widths#^thm-c6b-5-4|Theorem §C6b.5.4]] and [[§C6b.5 Decay Widths#^thm-c6b-5-5|Theorem §C6b.5.5]]: $R_{\{p_j\}} = (2\pi)^4\delta^4(p_A - \sum_jp_j)\,|\mathcal M|^2\big/\bigl[2E_A\prod_j(2E_j\tilde V)\bigr]$.
 >
-> **Step 4** (count the final states). In the box the momenta are discrete, $\mathbf p \in (2\pi/L)\mathbb Z^3$, one state per cell of volume $(2\pi/L)^3 = (2\pi)^3/\tilde V$, so a cell $d^3p_j$ contains $\tilde V\,d^3p_j/(2\pi)^3$ states (Yu eq. (6.302); [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-6|Theorem §C6b.2.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]). Summing the rate over these states multiplies it by $\prod_j\tilde V\frac{d^3p_j}{(2\pi)^3}$, and the $n$ factors $\tilde V$ cancel the $n$ in the denominator:
+> **Step 4** (count the final states). In the box the momenta are discrete, $\mathbf p \in (2\pi/L)\mathbb Z^3$, one state per cell of volume $(2\pi/L)^3 = (2\pi)^3/\tilde V$, so a cell $d^3p_j$ contains $\tilde V\,d^3p_j/(2\pi)^3$ states (Yu eq. (6.302); [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-6|Theorem §C6b.2.6]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]]). Summing the rate over these states multiplies it by $\prod_j\tilde V\frac{d^3p_j}{(2\pi)^3}$, and the $n$ factors $\tilde V$ cancel the $n$ in the denominator:
 >
 > $$
 > \prod_j\frac{\tilde V\,d^3p_j}{(2\pi)^3}\cdot\frac{1}{2E_A\prod_j(2E_j\tilde V)} = \frac{1}{2E_A}\prod_j\frac{d^3p_j}{(2\pi)^3\,2E_j} ,
@@ -267,7 +267,7 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 
 ^der-c6b-5-6
 
-*Uses:* [[§C6b.5 Decay Widths#^thm-c6b-5-4|Theorem §C6b.5.4]], [[§C6b.5 Decay Widths#^thm-c6b-5-5|Theorem §C6b.5.5]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-6|Theorem §C6b.2.6]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], [[§C6b.5 Decay Widths#^def-c6b-5-1|Def. §C6b.5.1]], [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]], [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-6|Theorem §C6b.1.6]], [[§C6b.3 The Cross Section#^thm-c6b-3-8|Theorem §C6b.3.8]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]
+*Uses:* [[§C6b.5 Decay Widths#^thm-c6b-5-4|Theorem §C6b.5.4]], [[§C6b.5 Decay Widths#^thm-c6b-5-5|Theorem §C6b.5.5]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-6|Theorem §C6b.2.6]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]], [[§C6b.5 Decay Widths#^def-c6b-5-1|Def. §C6b.5.1]], [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]], [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-6|Theorem §C6b.1.6]], [[§C6b.3 The Cross Section#^thm-c6b-3-8|Theorem §C6b.3.8]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]
 
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-5|P7, steps 5–6]]
 
@@ -454,9 +454,9 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]] — the periodic box in space and time: $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ and $\tilde V\,d^3p/(2\pi)^3$ states per cell, the two factors that cancel against the norms in the decay rate (Derivation §C6b.5.6; physics form: [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]]).
-> - [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] — $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$: the norm $\langle i|i\rangle = 2E_A\tilde V$ of the decaying particle (Derivation §C6b.5.4, Step 1).
-> - [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]] — on all of space and time $\delta^2$ has no value; the squared delta function of Derivation §C6b.5.4, Step 2, is an identity of the box.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]] — the periodic box in space and time: $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ and $\tilde V\,d^3p/(2\pi)^3$ states per cell, the two factors that cancel against the norms in the decay rate (Derivation §C6b.5.6; physics form: [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]]).
+> - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]] — $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$: the norm $\langle i|i\rangle = 2E_A\tilde V$ of the decaying particle (Derivation §C6b.5.4, Step 1).
+> - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|Theorem §CA.3.2]] — on all of space and time $\delta^2$ has no value; the squared delta function of Derivation §C6b.5.4, Step 2, is an identity of the box.
 
 > [!remark]- Connections
 > - The exponential decay law ([[§C6b.5 Decay Widths#^law-c6b-5-2|Law §C6b.5.2]]) and the lifetime are the decay constant of radioactive decay, and the width–lifetime relation is the natural line width of quantum mechanics — [[§A7.2 Radioactive Decay#^thm-a7-2-2|QM Theorem §A7.2.2]], [[§A3.5 The Heisenberg Uncertainty Principle#^def-a3-5-1|QM Def. §A3.5.1]].

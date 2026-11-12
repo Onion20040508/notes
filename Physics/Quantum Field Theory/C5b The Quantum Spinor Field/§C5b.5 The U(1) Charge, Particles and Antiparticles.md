@@ -94,14 +94,14 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 >
 > **2. Unbounded below.** Take $a = 0$ and $b^1 = \lambda g$ with $g \ne 0$: $H = -\lambda^2\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}|g|^2 \to -\infty$ as $\lambda \to \infty$. With $b = 0$, $H$ is as large as one likes; by continuity in $\lambda$ every real value occurs.
 >
-> **3. Positive charge.** $Q$ is a sum of squares; it is $\int d^3x\,\psi^\dagger\psi$ by its definition, and vanishes only if every amplitude does, i.e. $\psi = 0$ (Plancherel, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]).
+> **3. Positive charge.** $Q$ is a sum of squares; it is $\int d^3x\,\psi^\dagger\psi$ by its definition, and vanishes only if every amplitude does, i.e. $\psi = 0$ (Plancherel, [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-1|Theorem §CA.4.1]]).
 >
 > **What the derivation shows**
 > - Classically the Dirac field has the opposite pathology from the complex scalar, whose charge was indefinite and energy positive ([[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-3|§C2a.5, Remark: Charge, not probability]]). Quantization has to exchange the two roles.
 
 ^der-c5b-5-2
 
-*Uses:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|Theorem §C5b.5.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]
+*Uses:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|Theorem §C5b.5.1]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-1|Theorem §CA.4.1]]
 
 > [!theorem] Theorem §C5b.5.3: The Charge Counts Fermions Minus Antifermions
 > The normal-ordered charge ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]) of the current of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]] is
@@ -207,7 +207,7 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]] — Plancherel on $\mathcal S$: the classical charge $\int d^3x\,\psi^\dagger\psi$ equals the sum of the squared amplitudes and vanishes only for $\psi = 0$ (Derivation §C5b.5.2, Step 3).
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-1|Theorem §CA.4.1]] — Plancherel on $\mathcal S$: the classical charge $\int d^3x\,\psi^\dagger\psi$ equals the sum of the squared amplitudes and vanishes only for $\psi = 0$ (Derivation §C5b.5.2, Step 3).
 
 > [!remark]- Connections
 > - The complex scalar and the Dirac field have the same two-species structure, with the roles reversed classically (scalar: positive energy, indefinite charge; Dirac: indefinite energy, positive charge) and made equal by quantization with the matching statistics — [[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-3|§C2a.5, Remark: Charge, not probability]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|★ Theorem §C5b.5.2]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]].

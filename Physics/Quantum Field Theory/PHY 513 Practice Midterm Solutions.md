@@ -1207,7 +1207,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (check, one mode). Mode by mode $D_R \to \theta(t)(-i\sin E_{\mathbf p}t)/E_{\mathbf p}$ and $D_A \to \theta(-t)(i\sin E_{\mathbf p}t)/E_{\mathbf p}$; the difference is $-i\sin(E_{\mathbf p}t)/E_{\mathbf p}$ for all $t$, a solution of $\ddot f + E_{\mathbf p}^2f = 0$, with no kink at $t = 0$ (it vanishes there, and its derivative $-i$ is continuous). Each of $D_R$, $D_A$ alone has the same jump $-i$ in its first derivative at $t = 0$ ($D_R$: from $0$ to $-i$; $D_A$: from $+i$ to $0$), which is what produces $-i\delta(t)$ in $\ddot f + E_{\mathbf p}^2f$; the jumps cancel in the difference.
 >
-> *Checked against:* [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|Theorem §C2b.6.5]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-7|Theorem §C2b.6.7]] (both forms and the mode-by-mode forms), [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], 1, [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-13|Theorem §C2b.5.13]] ($D(0, \boldsymbol\xi) = 0$), [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|Theorem §CA.6.7]], 1, and [[§C2b.6 Green's Functions and Contours#^rem-c2b-6-1|§C2b.6, Remark: What a Green's "function" is, and why it is not unique]].
+> *Checked against:* [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|Theorem §C2b.6.5]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-7|Theorem §C2b.6.7]] (both forms and the mode-by-mode forms), [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], 1, [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-13|Theorem §C2b.5.13]] ($D(0, \boldsymbol\xi) = 0$), [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-7|Theorem §CA.7.7]], 1, and [[§C2b.6 Green's Functions and Contours#^rem-c2b-6-1|§C2b.6, Remark: What a Green's "function" is, and why it is not unique]].
 
 ^sol-px-4-0-1
 
@@ -1225,7 +1225,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (checks). (i) Differentiate the known Lorentzian integral in $a^2$: $\frac{1}{(x^2 + a^2)^2} = -\frac{\partial}{\partial(a^2)}\frac{1}{x^2 + a^2}$, so the integral is $-\frac{\partial}{\partial(a^2)}\frac{\pi}{(a^2)^{1/2}} = \frac\pi2(a^2)^{-3/2} = \frac{\pi}{2a^3}$. (ii) Closing downward, clockwise round $-ia$: $\operatorname{Res}_{-ia} = -2(-2ia)^{-3} = -\frac{1}{4ia^3}$, and $-2\pi i\cdot(-\frac{1}{4ia^3}) = \frac{\pi}{2a^3}$, the same. (iii) Dimension: $[x]^{-3}$, as $a^{-3}$.
 >
-> *Derived here; check:* the method of [[§CA.4 Contour Integration#^ex-ca-4-1|Example §CA.4.1]] (the simple-pole case, $\pi/a$, used in check (i)), with the order-$k$ residue formula of [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], 2, [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]] and the arc estimate [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], 1.
+> *Derived here; check:* the method of [[§CA.5 Contour Integration#^ex-ca-5-1|Example §CA.5.1]] (the simple-pole case, $\pi/a$, used in check (i)), with the order-$k$ residue formula of [[§CA.5 Contour Integration#^thm-ca-5-4|Theorem §CA.5.4]], 2, [[§CA.5 Contour Integration#^thm-ca-5-5|Theorem §CA.5.5]] and the arc estimate [[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]], 1.
 
 ^sol-px-4-1-1
 
@@ -1243,7 +1243,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (checks). At $k = 0$: $\pi/m$, the PS4.1 Lorentzian integral with $a = m$. The result is even in $k$, as it must be (the integrand's real part $\cos(kx)/(x^2 + m^2)$ is even in $k$, the imaginary part odd in $x$ and integrates to $0$). The kink at $k = 0$ is where the contour switches; it makes the result $2\pi$ times the one-dimensional Green's function of $-\partial_k^2 + m^2$: $(-\partial_k^2 + m^2)\frac\pi me^{-m|k|} = 2\pi\delta(k)$ (the kink gives $\partial_k^2e^{-m|k|} \ni -2m\delta(k)$), a Yukawa profile of range $1/m$.
 >
-> *Checked against:* [[§CA.4 Contour Integration#^ex-ca-4-1|Example §CA.4.1]] (the same integral with $a$ in place of $m$: $\frac\pi ae^{-a|k|}$) and [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], 2 (Jordan's lemma; "$e^{ikz}$ upward for $k > 0$, downward for $k < 0$").
+> *Checked against:* [[§CA.5 Contour Integration#^ex-ca-5-1|Example §CA.5.1]] (the same integral with $a$ in place of $m$: $\frac\pi ae^{-a|k|}$) and [[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]], 2 (Jordan's lemma; "$e^{ikz}$ upward for $k > 0$, downward for $k < 0$").
 
 ^sol-px-4-1-2
 
@@ -1263,7 +1263,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (check). In PS4.2(b)'s form, $\frac{1}{s - i\varepsilon} = \mathcal P\frac1s + i\pi\delta(s)$: the conjugate of Step 1, as it must be.
 >
-> *Checked against:* [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]] (Sokhotski–Plemelj, $\frac{1}{x - x_0 + i\varepsilon} \to \mathcal P\frac{1}{x - x_0} - i\pi\delta(x - x_0)$, and its derivation steps 1–6), [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 1 (the propagator denominator), [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]] and [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2.
+> *Checked against:* [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|Theorem §CA.7.2]] (Sokhotski–Plemelj, $\frac{1}{x - x_0 + i\varepsilon} \to \mathcal P\frac{1}{x - x_0} - i\pi\delta(x - x_0)$, and its derivation steps 1–6), [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]], 1 (the propagator denominator), [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]] and [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2.
 
 ^sol-px-4-1-3
 
@@ -1302,7 +1302,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (checks). (i) Off the cone $D_F = -1/4\pi^2\xi^2$, equal to $D_W$ there; at spacelike $\xi$ it is real, $1/4\pi^2r^2$. (ii) It is the $m \to 0$ limit of $D_F = \frac{mK_1(ms)}{4\pi^2s}$, $s = \sqrt{-\xi^2 + i\varepsilon}$, since $K_1(z) \simeq 1/z$: $\frac{m}{4\pi^2s}\cdot\frac{1}{ms} = \frac{1}{4\pi^2s^2} = \frac{1}{4\pi^2(-\xi^2 + i\varepsilon)}$. (iii) Imaginary part on the cone by Sokhotski–Plemelj: $\frac{1}{-\xi^2 + i\varepsilon} \to -\mathcal P\frac{1}{\xi^2} - i\pi\delta(\xi^2)$, so $D_F = -\frac{1}{4\pi^2}\mathcal P\frac{1}{\xi^2} - \frac{i}{4\pi}\delta(\xi^2)$. This is $D_F = \frac12D_1 + \frac i2\operatorname{sgn}(\xi^0)D$ (from $D_W(\pm\xi) = \frac12(D_1 \pm iD)$) with the massless $D_1 = -\frac{1}{2\pi^2}\mathcal P\frac{1}{\xi^2}$ and $\operatorname{sgn}(\xi^0)D = -\frac{1}{2\pi}\delta(\xi^2)$.
 >
-> *Derived here; check:* from the massless $D_W$ of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]] and the definition of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]; limit (ii) against [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-3|Theorem §C2b.8.3]] with [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 3; (iii) against [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|Theorem §C2b.5.8]] and [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]].
+> *Derived here; check:* from the massless $D_W$ of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]] and the definition of [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]; limit (ii) against [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-3|Theorem §C2b.8.3]] with [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|Theorem §CA.6.4]], 3; (iii) against [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|Theorem §C2b.5.8]] and [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|Theorem §CA.7.2]].
 
 ^sol-px-4-2-2
 
@@ -1324,7 +1324,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** ($D$ and $D_1$). $D_W$ is real at spacelike $\xi$, so $D = 2\operatorname{Im}D_W = 0$ and $D_1 = 2D_W \simeq \frac{1}{2\pi^2r^2}$, matching the massless $D_1 = -\frac{1}{2\pi^2}\mathcal P\frac{1}{\xi^2}$ off the cone.
 >
-> *Checked against:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]] ("$\simeq 1/4\pi^2r^2$ for $mr \ll 1$"), [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]] (the massless leading term and the $\frac{m^2}{8\pi^2}\ln\frac{ms}{2}$ correction), [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 3, and [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|Theorem §C2b.5.8]].
+> *Checked against:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]] ("$\simeq 1/4\pi^2r^2$ for $mr \ll 1$"), [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]] (the massless leading term and the $\frac{m^2}{8\pi^2}\ln\frac{ms}{2}$ correction), [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|Theorem §CA.6.4]], 3, and [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|Theorem §C2b.5.8]].
 
 ^sol-px-4-3-1
 
@@ -1400,7 +1400,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (assemble, and the two minus signs). $D_F = \theta(t)D_W(\xi) + \theta(-t)D_W(-\xi)$. Both pieces come out positive although the residues have opposite signs ($\pm1/2E$): the orientation ($-2\pi i$ below, $+2\pi i$ above) compensates. As $\varepsilon \to 0^+$ the limit is pointwise for $t \ne 0$ and bounded by $1/2E_{\mathbf p}$, so it holds as distributions. *Check:* at $t \to 0^\pm$ both sides give $\frac{1}{2E_{\mathbf p}}$: mode by mode $D_F$ is $e^{-iE_{\mathbf p}|t|}/2E_{\mathbf p}$, continuous in $t$ with a jump $-i$ in its $t$-derivative, which is the $-i\delta(t)$ of the Green's-function equation (PS4.4(c)).
 >
-> *Checked against:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]] (derivation, both routes; the second route is this $i\varepsilon$ computation, Yu (6.198)–(6.210)), [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], 3, [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]] and the procedure [[P2 Green's Functions by Contour Integration#^p2-2|P2, steps 2–7]] (step 7: the jump $-i$ in $G'$).
+> *Checked against:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]] (derivation, both routes; the second route is this $i\varepsilon$ computation, Yu (6.198)–(6.210)), [[§CA.5 Contour Integration#^thm-ca-5-4|Theorem §CA.5.4]], 3, [[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-7-2|§C2b.7, Caution: Signs that slip]] and the procedure [[P2 Green's Functions by Contour Integration#^p2-2|P2, steps 2–7]] (step 7: the jump $-i$ in $G'$).
 
 ^sol-px-4-4-2
 

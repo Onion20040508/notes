@@ -15,12 +15,12 @@ Every term of a free vacuum expectation value is a product of Feynman propagator
 
 *Conventions* ([[Larsen PHY 513]]): fields entering through the master formula are written $\hat\phi_I$; $x, y$ are the external points, $z$ the interaction point; $D_F(z - z) \equiv D_F(0)$.
 
-The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]: $(2k - 1)!!$ pairings of $2k$ objects) is the only mathematics used.
+The count of pairings ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]: $(2k - 1)!!$ pairings of $2k$ objects) is the only mathematics used.
 
 ## Diagrams as formulas
 
 > [!definition] Definition §C6a.7.1: Feynman Diagram of a Complete Contraction
-> To a complete contraction of fields at points $x_1, \dots, x_n$ (a pairing, [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]) is associated a **Feynman diagram**: one point for each argument, one **line** (propagator) for each contracted pair, joining the arguments of its two fields. The **value** of the diagram is the product of $D_F(x_i - x_j)$ over its lines. Diagrams drawn alike stand for the same value; precisely, a diagram is an orbit of labelled diagrams under relabelling ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]]), determined by its drawing ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]]).
+> To a complete contraction of fields at points $x_1, \dots, x_n$ (a pairing, [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]) is associated a **Feynman diagram**: one point for each argument, one **line** (propagator) for each contracted pair, joining the arguments of its two fields. The **value** of the diagram is the product of $D_F(x_i - x_j)$ over its lines. Diagrams drawn alike stand for the same value; precisely, a diagram is an orbit of labelled diagrams under relabelling ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-4|Def. §CA.8.4]]), determined by its drawing ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]]).
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* any complete contraction of free fields; combinatorial, independent of the dynamics.
 >
@@ -49,7 +49,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definition, it is a rule, derived in [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] (the vertex row of its table).
 
 ![[ph-qft-ca-7-3.svg]]
-*Half-edges and a labelled diagram ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]]) for $E = \{x_1, x_2\}$, $n = 2$. (a) The ten half-edges: two external points and four legs at each vertex. (b) One labelled diagram $P$, a pairing of them. (c) Its multigraph $\Gamma(P)$, which forgets which leg is used. In a Feynman diagram the external points are the arguments $x_i$ and the vertices the interaction points $z_v$.*
+*Half-edges and a labelled diagram ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-2|Def. §CA.8.2]]) for $E = \{x_1, x_2\}$, $n = 2$. (a) The ten half-edges: two external points and four legs at each vertex. (b) One labelled diagram $P$, a pairing of them. (c) Its multigraph $\Gamma(P)$, which forgets which leg is used. In a Feynman diagram the external points are the arguments $x_i$ and the vertices the interaction points $z_v$.*
 
 > [!caution] Caution: A Feynman diagram is a formula
 > A diagram looks like a picture, but it is a formula. Each diagram stands for a definite expression, and the drawing is shorthand: lines are $D_F$'s, points are their arguments, and where a line is drawn on the page means nothing. Lines that cross in a drawing do not meet; a line has only its two endpoints. In scalar field theory there is one kind of line; Yukawa theory has two, the dashed scalar line and the solid fermion line with its arrow ([[§C6d.1 Yukawa Theory#^def-c6d-1-1|Def. §C6d.1.1]]), and QED adds the photon line ([[§C8.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator|§C8.3]]).
@@ -169,7 +169,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > \langle0|:\!\hat\phi_x\hat\phi_y\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!:|0\rangle = 0,\qquad D_F(x_i - x_j)\,\langle0|:\!\hat\phi_k\hat\phi_l\hat\phi_m\hat\phi_n\!:|0\rangle = 0,\qquad D_F(x_i - x_j)\,D_F(x_k - x_l)\,\langle0|:\!\hat\phi_m\hat\phi_n\!:|0\rangle = 0 .
 > $$
 >
-> Only the $15$ complete contractions survive ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]; $5!! = 15$ pairings, [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]). Written out, with $D_{xy} = D_F(x - y)$, $D_{xa} = D_F(x - z_a)$, $D_{ya} = D_F(y - z_a)$, $D_{ab} = D_F(z_a - z_b)$:
+> Only the $15$ complete contractions survive ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]; $5!! = 15$ pairings, [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]). Written out, with $D_{xy} = D_F(x - y)$, $D_{xa} = D_F(x - z_a)$, $D_{ya} = D_F(y - z_a)$, $D_{ab} = D_F(z_a - z_b)$:
 >
 > $$
 > \begin{aligned}
@@ -228,7 +228,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 >
 > ⚑ By-product: the $\frac18$ term is $D_F(x - y)$ times a piece with no external point, a vacuum bubble → [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]].
 >
-> ⚑ By-product: $\frac18 = \frac1S$, $\frac12 = \frac1S$ with $S = 8, 2$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]]) → [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]].
+> ⚑ By-product: $\frac18 = \frac1S$, $\frac12 = \frac1S$ with $S = 8, 2$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^ex-ca-8-1|Example §CA.8.1]]) → [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]].
 >
 > **What the derivation shows.**
 > - Fifteen contractions of six fields collapse to two terms because four of the six fields sit at the same point $z$.
@@ -236,7 +236,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 
 ^der-c6a-7-1
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]
 
 ![[ph-qft-c6-7-2.svg]]
 *The first-order numerator. Left: the six fields $\phi(x)$, $\phi(y)$ and the four factors of $\phi(z)^4$; class (a) pairs $x$ with $y$ and the four legs among themselves (3 ways), class (b) sends $x$ and $y$ to two of the legs (4·3 = 12 ways). Right: the two diagrams with their coefficients, $\frac{3}{4!} = \frac18$ and $\frac{12}{4!} = \frac12$. Added figure; diagrams as on slide 15 and PS p. 92.*
@@ -316,7 +316,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 ^thm-c6a-7-2
 
 > [!derivation]- Derivation
-> **Step 1** ($D_F$ is even). By [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]] and the relabelling $p \to -p$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1),
+> **Step 1** ($D_F$ is even). By [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]] and the relabelling $p \to -p$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], 1),
 >
 > $$
 > D_F(-\xi) = \int\frac{d^4p}{(2\pi)^4}\,\frac{i\,e^{+ip\cdot\xi}}{p^2 - m^2 + i\varepsilon} = \int\frac{d^4p}{(2\pi)^4}\,\frac{i\,e^{-ip\cdot\xi}}{(-p)^2 - m^2 + i\varepsilon} = D_F(\xi) ,
@@ -338,7 +338,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > S_F(-\xi) = i\gamma^\mu(\partial_\mu D_F)(-\xi) + m\,D_F(-\xi) = (-i\slashed{\partial} + m)D_F(\xi), \qquad S_F(\xi) - S_F(-\xi) = 2i\slashed{\partial}D_F(\xi) .
 > $$
 >
-> In momentum space ($i\partial_\mu \to p_\mu$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3), $S_F(-\xi) = \int\frac{d^4p}{(2\pi)^4}\tilde S_F(-p)\,e^{-ip\cdot\xi}$ with
+> In momentum space ($i\partial_\mu \to p_\mu$, [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-5|Theorem §CA.4.5]], 3), $S_F(-\xi) = \int\frac{d^4p}{(2\pi)^4}\tilde S_F(-p)\,e^{-ip\cdot\xi}$ with
 >
 > $$
 > \tilde S_F(p) - \tilde S_F(-p) = \frac{i(\slashed{p} + m) - i(-\slashed{p} + m)}{p^2 - m^2 + i\varepsilon} = \frac{2i\slashed{p}}{p^2 - m^2 + i\varepsilon} \ne 0 .
@@ -382,7 +382,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 
 ^der-c6a-7-2
 
-*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]], [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]
+*Uses:* [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-5|Theorem §CA.4.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]], [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]
 
 > [!remark] Remark: Why the Feynman propagator is symmetric and the Wightman function is not
 > Why may $D_F(y - z)$ be written $D_F(z - y)$? The Wightman function is not symmetric in $x$ and $y$: exchanging them gives the complex conjugate, $D_W(-\xi) = \overline{D_W(\xi)}$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]) — but the time-ordered combination $D_F$ is even ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]). So a line of a scalar diagram has no direction ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 1); PS make the same point for momenta: "Since $D_F(x - y) = D_F(y - x)$, the direction of $p$ is arbitrary" (p. 94).
@@ -426,7 +426,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > \#\text{lines} = \frac N2 = \frac{2 + 4n}{2} = 2n + 1 .
 > $$
 >
-> **Step 3** (count). The complete contractions are the pairings of the $N$ fields; by [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] with $2k = 4n + 2$ there are $(2k - 1)!! = (4n + 1)!!$ of them:
+> **Step 3** (count). The complete contractions are the pairings of the $N$ fields; by [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] with $2k = 4n + 2$ there are $(2k - 1)!! = (4n + 1)!!$ of them:
 >
 > $$
 > n = 0:\ 1!! = 1\ (\text{the line } D_F(x - y)), \qquad n = 1:\ 5!! = 5\cdot3\cdot1 = 15, \qquad n = 3:\ 13!! = 13\cdot11\cdot9\cdot7\cdot5\cdot3\cdot1 = 135\,135 .
@@ -437,7 +437,7 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 
 ^der-c6a-7-3
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]
 
 > [!remark] Remark: Why diagrams, not terms
 > Listing the $(4n + 1)!!$ terms is hopeless; grouping them into diagrams is not. The rule is the same at every order: all diagrams that connect $x$ and $y$, through however many vertices, each with its coefficient ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]).
@@ -456,14 +456,14 @@ Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definit
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on. The count of pairings carries the section; the other lines are the precise meaning of "diagram" and the Fourier rules used for the oriented lines.
 >
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — $2k$ objects have $(2k - 1)!!$ pairings: the $15$ complete contractions of the first-order numerator (Theorem §C6a.7.1) and the $(4n + 1)!!$ of order $\lambda^n$ (Theorem §C6a.7.3).
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]] — a labelled diagram is a pairing of half-edges, a diagram is an orbit of labelled diagrams under relabelling, and the orbit is determined by the drawing: what "diagrams drawn alike stand for the same value" means (Definition §C6a.7.1, the figure after Definition §C6a.7.3).
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]] — a diagram contains $n!\,(4!)^n/S$ labelled diagrams: $3 = 24/8$ and $12 = 24/2$, the coefficients $\frac18$ and $\frac12$ of Theorem §C6a.7.1.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — part 1, relabelling $p \to -p$ under the momentum integral: $D_F(-\xi) = D_F(\xi)$, so a real-scalar line has no direction (Theorem §C6a.7.2).
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]] — part 3, the derivative rule $i\partial_\mu \to p_\mu$ for tempered distributions: $\tilde S_F(-p) \ne \tilde S_F(p)$, so a Dirac line is oriented (Theorem §C6a.7.2).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — $2k$ objects have $(2k - 1)!!$ pairings: the $15$ complete contractions of the first-order numerator (Theorem §C6a.7.1) and the $(4n + 1)!!$ of order $\lambda^n$ (Theorem §C6a.7.3).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-2|Def. §CA.8.2]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-4|Def. §CA.8.4]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]] — a labelled diagram is a pairing of half-edges, a diagram is an orbit of labelled diagrams under relabelling, and the orbit is determined by the drawing: what "diagrams drawn alike stand for the same value" means (Definition §C6a.7.1, the figure after Definition §C6a.7.3).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^ex-ca-8-1|Example §CA.8.1]] — a diagram contains $n!\,(4!)^n/S$ labelled diagrams: $3 = 24/8$ and $12 = 24/2$, the coefficients $\frac18$ and $\frac12$ of Theorem §C6a.7.1.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]] — part 1, relabelling $p \to -p$ under the momentum integral: $D_F(-\xi) = D_F(\xi)$, so a real-scalar line has no direction (Theorem §C6a.7.2).
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-5|Theorem §CA.4.5]] — part 3, the derivative rule $i\partial_\mu \to p_\mu$ for tempered distributions: $\tilde S_F(-p) \ne \tilde S_F(p)$, so a Dirac line is oriented (Theorem §C6a.7.2).
 
 > [!remark]- Connections
 > - The figure-eight at one point and the zero-point energy are both $D_F$ or $D_W$ at zero separation; both are infinite for the same reason, the light-cone singularity of the two-point function — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]].
-> - The coefficients $\frac18$ and $\frac12$ are orbit counts: $3 = 24/8$ and $12 = 24/2$ pairings in the two orbits of the leg-permutation group $S_4$ — [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]].
+> - The coefficients $\frac18$ and $\frac12$ are orbit counts: $3 = 24/8$ and $12 = 24/2$ pairings in the two orbits of the leg-permutation group $S_4$ — [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]].
 > - The first-order term of the Dyson series is the same integral as first-order time-dependent perturbation theory in quantum mechanics, now with the free vacuum as the state — [[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]], [[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]].
 > - The tadpole is the first self-energy diagram: summed with its higher-order relatives it shifts the mass of the particle — QFT C10 (planned); Yu eqs. (10.198)–(10.207).

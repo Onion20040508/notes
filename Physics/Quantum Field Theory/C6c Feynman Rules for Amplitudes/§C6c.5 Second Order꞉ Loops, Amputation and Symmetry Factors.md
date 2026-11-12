@@ -47,7 +47,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 ^thm-c6c-5-1
 
 > [!derivation]- Derivation
-> **Step 1** (count of a class). A Wick term of $T\{\hat\phi_I(x)^4\hat\phi_I(y)^4\}$ with the eight factors labelled is a set of disjoint pairs ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]). For given $(j, a_x, a_y)$: choose the $j$ legs at $x$ and the $j$ legs at $y$ that are joined across, $\binom4j^2$ ways, and match them, $j!$; among the $4 - j$ other legs at $x$ choose $2a_x$ and pair them, $\binom{4 - j}{2a_x}(2a_x - 1)!!$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]); the same at $y$. So
+> **Step 1** (count of a class). A Wick term of $T\{\hat\phi_I(x)^4\hat\phi_I(y)^4\}$ with the eight factors labelled is a set of disjoint pairs ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]). For given $(j, a_x, a_y)$: choose the $j$ legs at $x$ and the $j$ legs at $y$ that are joined across, $\binom4j^2$ ways, and match them, $j!$; among the $4 - j$ other legs at $x$ choose $2a_x$ and pair them, $\binom{4 - j}{2a_x}(2a_x - 1)!!$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]); the same at $y$. So
 >
 > $$
 > N(j, a_x, a_y) = \binom4j^2j!\;\binom{4 - j}{2a_x}(2a_x - 1)!!\;\binom{4 - j}{2a_y}(2a_y - 1)!! ,
@@ -76,7 +76,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 
 ^der-c6c-5-1
 
-*Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]], [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]], [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]], [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3|Theorem §C6c.3.3]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2|Theorem §C6c.4.2]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]
+*Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]], [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]], [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]], [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3|Theorem §C6c.3.3]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2|Theorem §C6c.4.2]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]
 
 > [!theorem] Theorem §C6c.5.2: The 1/n! Cancels the Relabellings of the Vertices
 > In $\phi^4$ theory let $D$ be a diagram of order $n$ of $\langle f|\hat S|i\rangle$, the particles labelled and held fixed, and $\Gamma_D$ its group of vertex permutations that are part of a symmetry of $D$ ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]).
@@ -86,7 +86,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 >
 > *Equivalently,* for correlation functions: the ⚑ by-product of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] (the $\frac{1}{n!}$ cancels the $n!$ ways of naming the vertices, completely exactly when $\operatorname{Aut}$ is trivial).
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] with $\phi^4$, any polynomial interaction with $n!$ replaced by $\prod_tn_t!$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]); *applies:* every order of the Dyson series between free relativistic states (or between external points).
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] with $\phi^4$, any polynomial interaction with $n!$ replaced by $\prod_tn_t!$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]); *applies:* every order of the Dyson series between free relativistic states (or between external points).
 >
 > *Source: Yu §7.1.2, p. 275 (boxed: "the $1/n!$ in $iT^{(n)}$ of eq. (7.4) is cancelled exactly by the $n!$ caused by the exchange symmetry of the spacetime coordinates"; footnote: "this rule does not apply to the bubble diagrams below that have nontrivial symmetry factors"); §7.3, eqs. (7.128), (7.130), (7.131) (the $x \leftrightarrow y$ pairs) · the ⚑ of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]*
 
@@ -95,7 +95,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 > [!derivation]- Derivation
 > **Step 1** (relabelling the vertices). In $\frac{1}{n!}\bigl(\frac{-i\lambda}{4!}\bigr)^n\int d^4z_1\cdots d^4z_n\,\langle f|T\{\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|i\rangle$ substitute $z_l \to z_{\pi(l)}$ for $\pi \in S_n$: the Jacobian is $1$, the measure $d^4z_1\cdots d^4z_n$ is unchanged, and $T\{\cdots\}$ is symmetric in the bosonic factors $\hat\phi_I(z_l)^4$. So a contraction pattern $P$ and its relabelled pattern $\pi P$ give the same integral.
 >
-> **Step 2** (part 1: how many distinct). The relabelling group is $G = S_n \ltimes (S_4)^n$, $|G| = n!\,(4!)^n$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1), and $\operatorname{Stab}(P)$ the symmetries of $D$ with the particles fixed, $|\operatorname{Stab}(P)| = S(D)$. Let $\rho: G \to S_n$ forget the leg permutations; $\rho(\operatorname{Stab}(P)) = \Gamma_D$ and $\ker\rho\cap\operatorname{Stab}(P) = \operatorname{Stab}(P)\cap(S_4)^n$. Hence
+> **Step 2** (part 1: how many distinct). The relabelling group is $G = S_n \ltimes (S_4)^n$, $|G| = n!\,(4!)^n$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1), and $\operatorname{Stab}(P)$ the symmetries of $D$ with the particles fixed, $|\operatorname{Stab}(P)| = S(D)$. Let $\rho: G \to S_n$ forget the leg permutations; $\rho(\operatorname{Stab}(P)) = \Gamma_D$ and $\ker\rho\cap\operatorname{Stab}(P) = \operatorname{Stab}(P)\cap(S_4)^n$. Hence
 >
 > $$
 > |G\cdot P| = \frac{n!\,(4!)^n}{S(D)} = \frac{n!}{|\Gamma_D|}\cdot\frac{(4!)^n}{|\operatorname{Stab}(P)\cap(S_4)^n|} , \qquad S(D) = |\Gamma_D|\cdot|\operatorname{Stab}(P)\cap(S_4)^n| ,
@@ -103,7 +103,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 >
 > and the first factor counts the patterns that differ by a vertex relabelling not undone by a symmetry.
 >
-> **Step 3** (part 2). If $\Gamma_D = \{e\}$, the first factor is $n!$ and cancels the $\frac{1}{n!}$; the second cancels the $\frac{1}{(4!)^n}$ up to the line part of $S$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-4|Theorem §C6c.4.4]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]]). Every element of $\operatorname{Stab}(P)$ fixes each vertex that carries a particle ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3), so $\Gamma_D$ moves only vertices without particles. At second order with particles, at least one vertex carries a particle, and the other is then fixed too (it is the only other vertex): $\Gamma_D$ is trivial for every row of [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-1|Theorem §C6c.5.1]] with particles. Example (Yu (7.128), the chain): the contractions with $k$ entering at $x$ and with $k$ entering at $y$ are the two terms $x \leftrightarrow y$, equal after Step 1, and $\frac{1}{2!}\cdot2 = 1$.
+> **Step 3** (part 2). If $\Gamma_D = \{e\}$, the first factor is $n!$ and cancels the $\frac{1}{n!}$; the second cancels the $\frac{1}{(4!)^n}$ up to the line part of $S$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-4|Theorem §C6c.4.4]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]]). Every element of $\operatorname{Stab}(P)$ fixes each vertex that carries a particle ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 3), so $\Gamma_D$ moves only vertices without particles. At second order with particles, at least one vertex carries a particle, and the other is then fixed too (it is the only other vertex): $\Gamma_D$ is trivial for every row of [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-1|Theorem §C6c.5.1]] with particles. Example (Yu (7.128), the chain): the contractions with $k$ entering at $x$ and with $k$ entering at $y$ are the two terms $x \leftrightarrow y$, equal after Step 1, and $\frac{1}{2!}\cdot2 = 1$.
 >
 > **Step 4** (part 3). If $\Gamma_D \ne \{e\}$, only $\frac{n!}{|\Gamma_D|}$ distinct relabellings exist and $\frac{1}{n!}\cdot\frac{n!}{|\Gamma_D|} = \frac{1}{|\Gamma_D|}$ remains, a factor of $\frac1S$ by Step 2. The melon (two vertices, four lines between them, no particles): exchanging the vertices is a symmetry, $|\Gamma_D| = 2$, and the lines give $4!$, $S = 2\cdot24 = 48$.
 >
@@ -112,7 +112,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 
 ^der-c6c-5-2
 
-*Uses:* [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-4|Theorem §C6c.4.4]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-1|Theorem §C6c.5.1]]
+*Uses:* [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-4|Theorem §C6c.4.4]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-1|Theorem §C6c.5.1]]
 
 ## Amputation
 
@@ -235,7 +235,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 > \frac{(-i\lambda)^2}{6}\int d^4x\,d^4y\;e^{-ik\cdot x}D_F(x - y)^3e^{ik'\cdot y} .
 > $$
 >
-> Substitute $x = y + z$ (Jacobian $1$, $d^4x = d^4z$ at fixed $y$): the integrand becomes $e^{i(k' - k)\cdot y}e^{-ik\cdot z}D_F(z)^3$, and $\int d^4y\,e^{i(k' - k)\cdot y} = (2\pi)^4\delta^4(k - k')$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]). $S = 1152/(96\cdot2) = 6$: the three parallel lines, $3!$.
+> Substitute $x = y + z$ (Jacobian $1$, $d^4x = d^4z$ at fixed $y$): the integrand becomes $e^{i(k' - k)\cdot y}e^{-ik\cdot z}D_F(z)^3$, and $\int d^4y\,e^{i(k' - k)\cdot y} = (2\pi)^4\delta^4(k - k')$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]). $S = 1152/(96\cdot2) = 6$: the three parallel lines, $3!$.
 >
 > **Step 3** (the snowman, Yu (7.131)–(7.132)). Join two $\hat\phi(x)$ to two $\hat\phi(y)$ ($\binom42^2\cdot2! = 72$) and close the last two $\hat\phi(y)$ ($1$): $72$ terms $D_F(x - y)^2D_F(0)\,{:}\hat\phi(x)^2{:}$, and $72$ more with $x \leftrightarrow y$; the two sets give equal integrals and $\frac{1}{2!}\cdot\frac{144}{576} = \frac18$. Between the states the two free $\hat\phi(x)$ take $k$ and $k'$ in $2$ ways ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]]), each $e^{i(k' - k)\cdot x}$:
 >
@@ -260,14 +260,14 @@ At second order two vertices appear, and with them loops, corrections on externa
 >
 > So $S(D) = |\Gamma_D|\prod_v2^{\ell(v)}\ell(v)!\prod_{\{u,w\}}m(u,w)!$ ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]) with $\Gamma_D$ acting only on vertices without particles: "$\mathcal M$ has less symmetry than the Green's function ⇒ $S$ simpler". A diagram in which every vertex carries a particle, no vertex has a self-loop and no two vertices are joined by more than one line has $S = 1$; trees: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]].
 >
-> *Model:* any (combinatorics); *applies:* diagrams of $S$-matrix elements and of amplitudes ([[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]]), any vertex types ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]).
+> *Model:* any (combinatorics); *applies:* diagrams of $S$-matrix elements and of amplitudes ([[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]]), any vertex types ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]]).
 >
 > *Source: PHY 513 Lecture 16, slide 22 ("$\mathcal M$ has less symmetry than Green's function ⇒ $S$ simpler") · Yu §7.3, p. 294 ("for tree diagrams contributing to scattering or decay the symmetry factor is 1; loop diagrams may have nontrivial symmetry factors") · from the last sentence of Step 2 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-5|Derivation §C6c.4.5]]*
 
 ^thm-c6c-5-4
 
 > [!derivation]- Derivation
-> **Step 1** (part 1). [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3: an element of $\operatorname{Stab}(P)$ maps each leg to a leg of the same kind, fixes every leg paired with an external point (here a particle, never relabelled), and fixes the vertex of such a leg.
+> **Step 1** (part 1). [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 3: an element of $\operatorname{Stab}(P)$ maps each leg to a leg of the same kind, fixes every leg paired with an external point (here a particle, never relabelled), and fixes the vertex of such a leg.
 >
 > **Step 2** (part 2). Let $g \ne e$ be a symmetry. It moves some half-edge $h$; by Step 1, $h$ is not joined to a particle, so $h$ is an end of an internal line or of a self-loop, at a vertex $v$.
 > - If $g$ moves $v$, then $v$ carries no particle (Step 1): $g$ moves a vertex without particles.
@@ -282,12 +282,12 @@ At second order two vertices appear, and with them loops, corrections on externa
 
 ^der-c6c-5-4
 
-*Uses:* [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]
+*Uses:* [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]
 
 *Procedure:* [[P5 Symmetry Factor of a Diagram#^p5-5|P5, step 5]]
 
 > [!theorem] Theorem §C6c.5.5: Vertices Saturated by External Lines Give S = 1
-> If every vertex $v$ of a diagram has valence $r_v \ge 2$ and at least $r_v - 1$ of its legs joined to external points, then $S = 1$; equivalently $N_D = |G|$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]). In particular every tree diagram with one internal line has $S = 1$.
+> If every vertex $v$ of a diagram has valence $r_v \ge 2$ and at least $r_v - 1$ of its legs joined to external points, then $S = 1$; equivalently $N_D = |G|$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]). In particular every tree diagram with one internal line has $S = 1$.
 >
 > *Model:* any (combinatorics); *applies:* any diagram with the stated valences, any vertex types.
 >
@@ -296,7 +296,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 ^thm-c6c-5-5
 
 > [!derivation]- Derivation
-> **Step 1** (vertices fixed). Let $g \in \operatorname{Stab}(P)$. Each leg joined to an external point is fixed, and so is its vertex ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3). Every vertex has $r_v - 1 \ge 1$ such legs, so $g$ permutes no vertices.
+> **Step 1** (vertices fixed). Let $g \in \operatorname{Stab}(P)$. Each leg joined to an external point is fixed, and so is its vertex ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 3). Every vertex has $r_v - 1 \ge 1$ such legs, so $g$ permutes no vertices.
 >
 > **Step 2** (legs fixed). $g$ maps the legs of $v$ to legs of $v$; at least $r_v - 1$ are fixed, so the remaining one (if any) is mapped to itself. Hence $g$ fixes every half-edge: $g = e$, $S = |\operatorname{Stab}(P)| = 1$.
 >
@@ -304,7 +304,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 
 ^der-c6c-5-5
 
-*Uses:* [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]
+*Uses:* [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]
 
 *Procedure:* [[P5 Symmetry Factor of a Diagram#^p5-5|P5, step 5]]
 
@@ -318,9 +318,9 @@ At second order two vertices appear, and with them loops, corrections on externa
 ^thm-c6c-5-6
 
 > [!derivation]- Derivation
-> **Step 1** ($S = 1$ for a tree). Let $D$ be a fully connected diagram without loops (a tree) and $g \in \operatorname{Stab}(P)$. Every leaf of the tree is an external particle (a vertex with a single line would have valence one). Removing an internal line $e$ splits the particles into two nonempty sets $E_1(e) \sqcup E_2(e)$, and different lines give different splits (two lines of a tree are separated by a vertex with a third branch, which holds a particle). $g$ fixes every particle ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3), so it maps each line to the line with the same split, i.e. to itself, with its ends on their own sides: every line and every vertex is fixed. A tree has no two lines between the same vertices, so the legs of a fixed vertex are fixed too: $g = e$, $S = |\operatorname{Stab}(P)| = 1$ (for one internal line this is [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]).
+> **Step 1** ($S = 1$ for a tree). Let $D$ be a fully connected diagram without loops (a tree) and $g \in \operatorname{Stab}(P)$. Every leaf of the tree is an external particle (a vertex with a single line would have valence one). Removing an internal line $e$ splits the particles into two nonempty sets $E_1(e) \sqcup E_2(e)$, and different lines give different splits (two lines of a tree are separated by a vertex with a third branch, which holds a particle). $g$ fixes every particle ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 3), so it maps each line to the line with the same split, i.e. to itself, with its ends on their own sides: every line and every vertex is fixed. A tree has no two lines between the same vertices, so the legs of a fixed vertex are fixed too: $g = e$, $S = |\operatorname{Stab}(P)| = 1$ (for one internal line this is [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]).
 >
-> **Step 2** (the count). By orbit–stabilizer ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 2), $|G\cdot P| = |G|/S = |G|$: the prefactor $\prod_t\frac{(-ig_t)^{n_t}}{n_t!}$ of the Dyson series times $|G| = \prod_tn_t!\,\bigl(\prod_km_{t,k}!\bigr)^{n_t}$ leaves $\prod_t(-ig_t\prod_km_{t,k}!)^{n_t}$, divided by nothing. Checks: [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]] (orbits of $72 = 2!\,(3!)^2$), [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|Example §C6c.6.2]] (orbits of $144 = 3!\,4!$).
+> **Step 2** (the count). By orbit–stabilizer ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 2), $|G\cdot P| = |G|/S = |G|$: the prefactor $\prod_t\frac{(-ig_t)^{n_t}}{n_t!}$ of the Dyson series times $|G| = \prod_tn_t!\,\bigl(\prod_km_{t,k}!\bigr)^{n_t}$ leaves $\prod_t(-ig_t\prod_km_{t,k}!)^{n_t}$, divided by nothing. Checks: [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]] (orbits of $72 = 2!\,(3!)^2$), [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|Example §C6c.6.2]] (orbits of $144 = 3!\,4!$).
 >
 > **Step 3** (amputated). Removing an internal line leaves on each side a vertex with at least two further branches ($r_v \ge 3$), each ending at a particle, so each side holds at least two particles: no line separates a single particle, and the tree is amputated ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|Def. §C6c.5.1]]).
 >
@@ -329,17 +329,17 @@ At second order two vertices appear, and with them loops, corrections on externa
 
 ^der-c6c-5-6
 
-*Uses:* [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|Def. §C6c.5.1]]
+*Uses:* [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|Def. §C6c.5.1]]
 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-4|P6, step 4]]
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]] — the relabelling group and orbit–stabilizer behind $\frac1S$ and behind $S = 1$ for trees.
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]] — labelled diagrams with vertices of any type, the setting of the symmetry-factor statements.
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — the number of pairings of the legs left at a vertex, in the count of the $764$ Wick terms.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the position integral of a self-energy term gives $(2\pi)^4\delta^4(k - k')$.
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]] — the relabelling group and orbit–stabilizer behind $\frac1S$ and behind $S = 1$ for trees.
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]] — labelled diagrams with vertices of any type, the setting of the symmetry-factor statements.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — the number of pairings of the legs left at a vertex, in the count of the $764$ Wick terms.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the position integral of a self-energy term gives $(2\pi)^4\delta^4(k - k')$.
 
 > [!remark]- Connections
 > - The second-order bubbles and self-energies are the correlator diagrams of Lecture 14 with particles in place of external points — [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-2|Example §C6a.9.2]], [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-3|Example §C6a.9.3]], [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-4|Example §C6a.9.4]].

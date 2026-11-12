@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, App. A §A.4 and the principal value of §A.5, App. A §A.2 (rule 5, integration by parts), Ch. 4 §4.3 and §4.9, Ch. 6 §§6.2–6.3 · PHY 513, Problem Set 4, Problem 0 (generalized functions) and eq. (11) · standard results stated here, where marked: Hörmander, The Analysis of Linear Partial Differential Operators I, Ch. 2–4; Gel'fand & Shilov, Generalized Functions, Vol. 1, Ch. I; Reed & Simon, Methods of Modern Mathematical Physics I, Ch. V; Stein & Shakarchi, Functional Analysis (Princeton Lectures IV), Ch. 3.*
 
-The delta function, the Wightman, commutator and Feynman functions, the overlap $\langle\mathbf p|\mathbf q\rangle$ and the field operators themselves are not functions: none of them has a value at every point, and several have none anywhere. This section says what they are, continuous linear maps on test functions, and which operations on them are defined: derivatives always, products with smooth functions, limits $\varepsilon \to 0^+$ whenever they converge on every test function. It starts from the working delta function of [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-2|WO Def. §B4.4.2]] and [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], from the δ-normalized kets of [[§48 Position Eigenstates and Continuous Resolutions#^prop-48-3|556 Prop. §48.3]], and from the exchange theorems of [[§CA.1 Exchanging Limits, Derivatives and Integrals|§CA.1]]; the Fourier transform of a distribution is [[§CA.3 Fourier Transforms and Fourier Tricks|§CA.3]]. New here, beyond the user's App. A §A.4: the spaces $\mathcal D$ and $\mathcal S$, the principal value, support and singular support, changes of variables and composition with a function; integration by parts against a delta function is the derivative rule seen as a calculation. The products that exist and those that do not (among them $\delta^3(\mathbf 0)$) and operator-valued distributions follow in [[§CA.3 Products of Distributions and Operator-Valued Distributions|§CA.3]]. Boundary values of analytic functions (with the Sokhotski–Plemelj formula), the $i\varepsilon$ limits and fundamental solutions, which also need the Fourier transform and contour integration, are [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions|§CA.6]]. Proofs rest on this chapter and on the Math vault only; each statement lists in Connections the places of [[· C2a The Quantum Scalar Field|C2a]] and [[· C2b Two-Point Functions, Causality and Propagators|C2b]] that use it.
+The delta function, the Wightman, commutator and Feynman functions, the overlap $\langle\mathbf p|\mathbf q\rangle$ and the field operators themselves are not functions: none of them has a value at every point, and several have none anywhere. This section says what they are, continuous linear maps on test functions, and which operations on them are defined: derivatives always, products with smooth functions, limits $\varepsilon \to 0^+$ whenever they converge on every test function. It starts from the working delta function of [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-2|WO Def. §B4.4.2]] and [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], from the δ-normalized kets of [[§48 Position Eigenstates and Continuous Resolutions#^prop-48-3|556 Prop. §48.3]], and from the exchange theorems of [[§CA.1 Exchanging Limits, Derivatives and Integrals|§CA.1]]; the Fourier transform of a distribution is [[§CA.4 Fourier Transforms and Fourier Tricks|§CA.4]]. New here, beyond the user's App. A §A.4: the spaces $\mathcal D$ and $\mathcal S$, the principal value, support and singular support, changes of variables and composition with a function; integration by parts against a delta function is the derivative rule seen as a calculation. The products that exist and those that do not (among them $\delta^3(\mathbf 0)$) and operator-valued distributions follow in [[§CA.3 Products of Distributions and Operator-Valued Distributions|§CA.3]]. Boundary values of analytic functions (with the Sokhotski–Plemelj formula), the $i\varepsilon$ limits and fundamental solutions, which also need the Fourier transform and contour integration, are [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions|§CA.7]]. Proofs rest on this chapter and on the Math vault only; each statement lists in Connections the places of [[· C2a The Quantum Scalar Field|C2a]] and [[· C2b Two-Point Functions, Causality and Propagators|C2b]] that use it.
 
 ## Test functions and distributions
 
@@ -33,19 +33,19 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 
 ^def-ca-2-2
 
-> [!definition] Definition §CA.2.n3: Tempered Distribution
+> [!definition] Definition §CA.2.3: Tempered Distribution
 > With **Schwartz functions** (smooth, decaying with all derivatives faster than every power: the space $\mathcal S$ of [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]]) in place of test functions in [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], the maps are **tempered distributions**: linear maps $T: \mathcal S \to \mathbb C$ with $T[\varphi_k] \to T[\varphi]$ whenever $\varphi_k \to \varphi$ in $\mathcal S$. The space of these maps is written $\mathcal S'$. Restricted to $\mathcal D \subset \mathcal S$ a tempered distribution is a generalized function, because a sequence that converges in $\mathcal D$ converges in $\mathcal S$ (with all supports in $|x| \le R$, $\|\varphi_k - \varphi\|_{\alpha,\beta} \le R^{|\alpha|}\sup|\partial^\beta(\varphi_k - \varphi)| \to 0$).
 >
 > *Source: the user's PHY 513 notes, App. A §A.4, Ch. 6 §6.2 · PHY 513, Problem Set 4, Problem 0*
 
-^def-ca-2-n3
+^def-ca-2-3
 
-> [!definition] Definition §CA.2.n4: The Delta Function
-> The **delta function** is the map $\delta[\varphi] = \varphi(0)$; the delta function at a point $a \in \mathbb R^n$ is the map $\varphi \mapsto \varphi(a)$, written $\delta(x - a)$, and $\delta^n$ when the dimension is to be shown. It is a generalized function ([[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]) and a tempered distribution ([[§CA.2 Generalized Functions#^def-ca-2-n3|Def. §CA.2.n3]]): it is linear, and $|\varphi_k(a) - \varphi(a)| \le \sup|\varphi_k - \varphi| \to 0$ in either sense of convergence. Under an integral sign, $\int d^nx\,\delta(x - a)\varphi(x)$ is notation for $\varphi(a)$.
+> [!definition] Definition §CA.2.4: The Delta Function
+> The **delta function** is the map $\delta[\varphi] = \varphi(0)$; the delta function at a point $a \in \mathbb R^n$ is the map $\varphi \mapsto \varphi(a)$, written $\delta(x - a)$, and $\delta^n$ when the dimension is to be shown. It is a generalized function ([[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]) and a tempered distribution ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]): it is linear, and $|\varphi_k(a) - \varphi(a)| \le \sup|\varphi_k - \varphi| \to 0$ in either sense of convergence. Under an integral sign, $\int d^nx\,\delta(x - a)\varphi(x)$ is notation for $\varphi(a)$.
 >
 > *Source: the user's PHY 513 notes, App. A §A.4, Ch. 6 §6.2 · PHY 513, Problem Set 4, Problem 0*
 
-^def-ca-2-n4
+^def-ca-2-4
 
 > [!remark] Remark: What changes from the working delta function
 > [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-2|WO Def. §B4.4.2]] and [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^def-b1-2-1|EM Def. §B1.2.1]] define $\delta$ by what it does under an integral and realize it as a limit of narrow peaks; the rules were checked one by one with a nascent delta. Here the map *is* the object: $\int dx\,\delta(x)\varphi(x)$ is notation for $\varphi \mapsto \varphi(0)$, chosen so that the formula for $T_\psi$ can be used uniformly. Nothing is lost by the generalization: a test function sharply peaked at $x_0$ with unit integral gives $T_\psi[\varphi] \approx \psi(x_0)$, so $\psi$ is recovered from $T_\psi$; and the generalized functions reach beyond the test functions, since $\varphi \mapsto \int\varphi$ is $T_1$ for the constant $1$. The same move appears in [[§48 Position Eigenstates and Continuous Resolutions#^prop-48-3|556 Prop. §48.3]]: a position "eigenket" is not a vector of the Hilbert space but makes sense paired with one.
@@ -55,7 +55,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 ^rem-ca-2-1
 
 > [!theorem] Lemma §CA.2.1: A Continuous Functional Is Bounded by Finitely Many Seminorms
-> 1. If $T \in \mathcal S'$ ([[§CA.2 Generalized Functions#^def-ca-2-n3|Def. §CA.2.n3]]), there are an integer $M$ and a constant $C$ with $|T[\varphi]| \le C\sum_{|\alpha|, |\beta| \le M}\|\varphi\|_{\alpha,\beta}$ for every $\varphi \in \mathcal S$.
+> 1. If $T \in \mathcal S'$ ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]), there are an integer $M$ and a constant $C$ with $|T[\varphi]| \le C\sum_{|\alpha|, |\beta| \le M}\|\varphi\|_{\alpha,\beta}$ for every $\varphi \in \mathcal S$.
 > 2. If $T \in \mathcal D'$ ([[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]) and $R > 0$, there are an integer $N$ and a constant $C$ with $|T[\varphi]| \le C\sum_{|\beta| \le N}\sup|\partial^\beta\varphi|$ for every $\varphi \in \mathcal D$ that vanishes outside the ball $|x| \le R$.
 >
 > Conversely, a linear map on $\mathcal S$ with a bound as in 1 is a tempered distribution.
@@ -94,12 +94,12 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 
 ^der-lem-ca-2-1
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-n3|Def. §CA.2.n3]]
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]
 
 > [!theorem] Theorem §CA.2.1: Regular and Singular Tempered Distributions
-> 1. $\mathcal D$ is dense in $\mathcal S$, so a tempered distribution ([[§CA.2 Generalized Functions#^def-ca-2-n3|Def. §CA.2.n3]]) is fixed by its action on $\mathcal D$.
+> 1. $\mathcal D$ is dense in $\mathcal S$, so a tempered distribution ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]) is fixed by its action on $\mathcal D$.
 > 2. If $\psi$ is locally integrable and $\int d^nx\,|\psi(x)|(1 + |x|)^{-N} < \infty$ for some $N$, then $T_\psi[\varphi] = \int\psi\varphi$ is a tempered distribution, and $\psi \mapsto T_\psi$ is injective (functions equal almost everywhere identified). Examples: $1$, $e^{i\mathbf k\cdot\mathbf x}$, $\theta(t)$, polynomials, $1/|\mathbf x|$ and $1/|\mathbf x|^2$ on $\mathbb R^3$. Not covered: $1/x$ on $\mathbb R$ (not locally integrable) and $e^x$ (too fast).
-> 3. $\partial^\alpha\delta[\varphi] = (-1)^{|\alpha|}\partial^\alpha\varphi(0)$ (δ: [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]]) is a tempered distribution, and it is $T_\psi$ for no locally integrable $\psi$.
+> 3. $\partial^\alpha\delta[\varphi] = (-1)^{|\alpha|}\partial^\alpha\varphi(0)$ (δ: [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]) is a tempered distribution, and it is $T_\psi$ for no locally integrable $\psi$.
 >
 > *Source: standard; stated here (Hörmander I, §§1.3, 2.1, 7.1; Reed & Simon I, §V.3) · the user's PHY 513 notes, App. A §A.4 (Derivation "Three examples, in order of generality")*
 
@@ -147,19 +147,19 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 > **Step 6** (the examples). $|e^{i\mathbf k\cdot\mathbf x}| = |\theta| = 1$: take $N = n + 1$. A polynomial of degree $d$: $N = d + n + 1$. On $\mathbb R^3$, $\int_{|\mathbf x| < 1}d^3x/|\mathbf x| = 4\pi\int_0^1r\,dr = 2\pi$ and $\int_{|\mathbf x| < 1}d^3x/|\mathbf x|^2 = 4\pi$, finite, and $N = 3$ handles $|\mathbf x| > 1$. On $\mathbb R$, $\int_{-1}^1dx/|x| = \infty$. For $e^x$, the Schwartz function $\varphi = e^{-\sqrt{1 + x^2}}$ gives $e^x\varphi = e^{x - \sqrt{1 + x^2}} \to 1$ as $x \to \infty$, so $\int e^x\varphi$ diverges.
 >
 > **What the derivation shows.**
-> - Polynomial growth is exactly the price of being tempered; local integrability is where $1/x$ fails, which is why it needs the principal value ([[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]]).
+> - Polynomial growth is exactly the price of being tempered; local integrability is where $1/x$ fails, which is why it needs the principal value ([[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]).
 > - δ is the first distribution that is no function at all; its derivatives are the next.
 > - Step 1 is why physics may test with compactly supported wave packets and still conclude statements in $\mathcal S'$.
 
 ^der-ca-2-1
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-n3|Def. §CA.2.n3]], [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-3|551 Thm. §25.3]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-2|551 Thm. §25.2]], [[§21 Consequences of the Monotone Convergence Theorem#^prop-21-4|551 Prop. §21.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-3|551 Thm. §25.3]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-2|551 Thm. §25.2]], [[§21 Consequences of the Monotone Convergence Theorem#^prop-21-4|551 Prop. §21.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
 
 ## The principal value
 
 One singular generalized function besides δ is needed from the start: $1/x$ is not locally integrable on $\mathbb R$ (Theorem §CA.2.1, 2), and the principal value is the generalized function that replaces it.
 
-> [!definition] Definition §CA.2.10: Principal Value
+> [!definition] Definition §CA.2.5: Principal Value
 > For a test function $\varphi$ vanishing outside $[-L, L]$,
 >
 > $$
@@ -170,67 +170,67 @@ One singular generalized function besides δ is needed from the start: $1/x$ is 
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (Definition "The principal value")*
 
-^def-ca-2-10
+^def-ca-2-5
 
 ## Support and singular support
 
-> [!definition] Definition §CA.2.3: Support and Singular Support
+> [!definition] Definition §CA.2.6: Support and Singular Support
 > A distribution $T$ **vanishes** on an open set $U$ if $T[\varphi] = 0$ for every $\varphi \in \mathcal D$ supported in $U$. Its **support** $\operatorname{supp}T$ is the complement of the largest open set on which $T$ vanishes; its **singular support** $\operatorname{sing\,supp}T$ is the complement of the largest open set on which $T$ equals a smooth function ($T[\varphi] = \int g\varphi$ with $g$ smooth there). Both largest sets exist (a distribution that vanishes, or is smooth, near every point of a union of open sets is so on the union: Hörmander I, §2.2).
 >
-> Examples: $\operatorname{supp}\delta = \operatorname{sing\,supp}\delta = \{0\}$; $\operatorname{supp}\theta = [0, \infty)$, $\operatorname{sing\,supp}\theta = \{0\}$; $\operatorname{supp}\mathcal P\frac1x = \mathbb R$, $\operatorname{sing\,supp}\mathcal P\frac1x = \{0\}$ (the principal value $\mathcal P\frac1x$: [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]]).
+> Examples: $\operatorname{supp}\delta = \operatorname{sing\,supp}\delta = \{0\}$; $\operatorname{supp}\theta = [0, \infty)$, $\operatorname{sing\,supp}\theta = \{0\}$; $\operatorname{supp}\mathcal P\frac1x = \mathbb R$, $\operatorname{sing\,supp}\mathcal P\frac1x = \{0\}$ (the principal value $\mathcal P\frac1x$: [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]).
 >
 > *Source: standard; stated here (Hörmander I, §2.2; Gel'fand & Shilov 1, Ch. I)*
 
-^def-ca-2-3
+^def-ca-2-6
 
 ## Operations on distributions
 
 Operations on generalized functions are defined by moving them onto the test function, one definition per operation.
 
-> [!definition] Definition §CA.2.4: Derivative of a Generalized Function
+> [!definition] Definition §CA.2.7: Derivative of a Generalized Function
 > The **derivative** of a generalized function $T$ is moved onto the test function: $T'[\varphi] \equiv -T[\varphi']$, and $\partial_\mu T[\varphi] \equiv -T[\partial_\mu\varphi]$.
->
-> *Source: the user's PHY 513 notes, App. A §A.4 (Derivation "Operations are defined by transferring them to the test function")*
-
-^def-ca-2-4
-
-> [!definition] Definition §CA.2.5: Product of a Generalized Function with a Smooth Function
-> For a smooth function $g$, $(gT)[\varphi] \equiv T[g\varphi]$. Two generalized functions cannot in general be multiplied.
->
-> *Source: the user's PHY 513 notes, App. A §A.4 (Derivation "Operations are defined by transferring them to the test function")*
-
-^def-ca-2-5
-
-> [!example] Example §CA.2.1: The Products x·δ = 0 and x·𝒫(1/x) = 1
-> On $\mathbb R$, multiply by the smooth function $g(x) = x$ ([[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]).
-> 1. $x\,\delta = 0$: $(x\,\delta)[\varphi] = \delta[x\varphi] = 0\cdot\varphi(0) = 0$ (δ: [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]]). In the same way $g\,\delta = g(0)\,\delta$ for every smooth $g$, since $\delta[g\varphi] = g(0)\varphi(0)$.
-> 2. $x\,\mathcal P\frac1x = 1$: by the second form of [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]] applied to $x\varphi(x)$, which vanishes at $0$,
->
-> $$
-> \Bigl(x\,\mathcal P\frac1x\Bigr)[\varphi] = \mathcal P\frac1x[x\varphi] = \int_{-L}^{L}\frac{x\varphi(x) - 0}{x}\,dx = \int\varphi = T_1[\varphi] .
-> $$
->
-> So multiplication by $x$ removes the delta function and turns the principal value into the constant $1$. Used next: these are the two identities behind the impossibility of a general product ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 3), and with the boundary values $\frac{1}{x \pm i0} = \mathcal P\frac1x \mp i\pi\delta$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]]) they give $x\cdot\frac{1}{x \pm i0} = 1$.
->
-> *Source: standard; stated here (the two computations of L. Schwartz's impossibility argument, Hörmander I, §§2.2, 8.2)*
-
-^ex-ca-2-1
-
-> [!definition] Definition §CA.2.6: Distributional Limit
-> $T_\varepsilon \to T$ (as $\varepsilon \to 0^+$, or along a sequence) means $T_\varepsilon[\varphi] \to T[\varphi]$ for every test function $\varphi$.
->
-> *Source: the user's PHY 513 notes, App. A §A.4 (Derivation "Operations are defined by transferring them to the test function")*
-
-^def-ca-2-6
-
-> [!definition] Definition §CA.2.7: Fourier Transform of a Generalized Function
-> For a tempered distribution $T$ ([[§CA.2 Generalized Functions#^def-ca-2-n3|Def. §CA.2.n3]]), $\tilde T[\varphi] \equiv T[\tilde\varphi]$.
 >
 > *Source: the user's PHY 513 notes, App. A §A.4 (Derivation "Operations are defined by transferring them to the test function")*
 
 ^def-ca-2-7
 
-> [!definition] Definition §CA.2.8: Linear Change of Variables
+> [!definition] Definition §CA.2.8: Product of a Generalized Function with a Smooth Function
+> For a smooth function $g$, $(gT)[\varphi] \equiv T[g\varphi]$. Two generalized functions cannot in general be multiplied.
+>
+> *Source: the user's PHY 513 notes, App. A §A.4 (Derivation "Operations are defined by transferring them to the test function")*
+
+^def-ca-2-8
+
+> [!example] Example §CA.2.1: The Products x·δ = 0 and x·𝒫(1/x) = 1
+> On $\mathbb R$, multiply by the smooth function $g(x) = x$ ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]).
+> 1. $x\,\delta = 0$: $(x\,\delta)[\varphi] = \delta[x\varphi] = 0\cdot\varphi(0) = 0$ (δ: [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]). In the same way $g\,\delta = g(0)\,\delta$ for every smooth $g$, since $\delta[g\varphi] = g(0)\varphi(0)$.
+> 2. $x\,\mathcal P\frac1x = 1$: by the second form of [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]] applied to $x\varphi(x)$, which vanishes at $0$,
+>
+> $$
+> \Bigl(x\,\mathcal P\frac1x\Bigr)[\varphi] = \mathcal P\frac1x[x\varphi] = \int_{-L}^{L}\frac{x\varphi(x) - 0}{x}\,dx = \int\varphi = T_1[\varphi] .
+> $$
+>
+> So multiplication by $x$ removes the delta function and turns the principal value into the constant $1$. Used next: these are the two identities behind the impossibility of a general product ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]], 3), and with the boundary values $\frac{1}{x \pm i0} = \mathcal P\frac1x \mp i\pi\delta$ ([[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|Theorem §CA.7.2]]) they give $x\cdot\frac{1}{x \pm i0} = 1$.
+>
+> *Source: standard; stated here (the two computations of L. Schwartz's impossibility argument, Hörmander I, §§2.2, 8.2)*
+
+^ex-ca-2-1
+
+> [!definition] Definition §CA.2.9: Distributional Limit
+> $T_\varepsilon \to T$ (as $\varepsilon \to 0^+$, or along a sequence) means $T_\varepsilon[\varphi] \to T[\varphi]$ for every test function $\varphi$.
+>
+> *Source: the user's PHY 513 notes, App. A §A.4 (Derivation "Operations are defined by transferring them to the test function")*
+
+^def-ca-2-9
+
+> [!definition] Definition §CA.2.10: Fourier Transform of a Generalized Function
+> For a tempered distribution $T$ ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]), $\tilde T[\varphi] \equiv T[\tilde\varphi]$.
+>
+> *Source: the user's PHY 513 notes, App. A §A.4 (Derivation "Operations are defined by transferring them to the test function")*
+
+^def-ca-2-10
+
+> [!definition] Definition §CA.2.11: Linear Change of Variables
 > For an invertible real $n \times n$ matrix $A$ and $a \in \mathbb R^n$, the composition of $T$ with $x \mapsto Ax + a$ is the distribution
 >
 > $$
@@ -239,14 +239,14 @@ Operations on generalized functions are defined by moving them onto the test fun
 >
 > *Source: standard; stated here (Hörmander I, §§3.1, 6.1) · the user's PHY 513 notes, Ch. 6 §6.3 (Derivation "The rules", 3: Lorentz covariance)*
 
-^def-ca-2-8
+^def-ca-2-11
 
-> [!definition] Definition §CA.2.9: Invariant Distribution
-> $T$ is **invariant** under a group of linear changes of variables ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]) if $T(gx) = T$ for every $g$ in the group; **Lorentz invariant** if $T[\varphi\circ\Lambda^{-1}] = T[\varphi]$ for every proper orthochronous $\Lambda$ (for which $|\det\Lambda| = 1$).
+> [!definition] Definition §CA.2.12: Invariant Distribution
+> $T$ is **invariant** under a group of linear changes of variables ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]) if $T(gx) = T$ for every $g$ in the group; **Lorentz invariant** if $T[\varphi\circ\Lambda^{-1}] = T[\varphi]$ for every proper orthochronous $\Lambda$ (for which $|\det\Lambda| = 1$).
 >
 > *Source: standard; stated here (Hörmander I, §§3.1, 6.1) · the user's PHY 513 notes, Ch. 6 §6.3 (Derivation "The rules", 3: Lorentz covariance)*
 
-^def-ca-2-9
+^def-ca-2-12
 
 ## Distributions supported at a point
 
@@ -258,7 +258,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 ^thm-ca-2-2
 
 > [!derivation]- Derivation
-> Take $a = 0$: otherwise replace $T$ by its translate $\varphi \mapsto T[\varphi(\cdot - a)]$, which is supported at $0$ and to which the formula for $a = 0$ applies (this is $T(x + a)$ in the notation of [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], with $A = \mathbb 1$).
+> Take $a = 0$: otherwise replace $T$ by its translate $\varphi \mapsto T[\varphi(\cdot - a)]$, which is supported at $0$ and to which the formula for $a = 0$ applies (this is $T(x + a)$ in the notation of [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]], with $A = \mathbb 1$).
 >
 > **Step 1** (finite order). By [[§CA.2 Generalized Functions#^lem-ca-2-1|Lemma §CA.2.1]], 2 with $R = 1$, there are $N$ and $C$ with $|T[\varphi]| \le C\sum_{|\beta| \le N}\sup|\partial^\beta\varphi|$ for all test functions $\varphi$ supported in the ball $|x| \le 1$ (Hörmander I, §2.1).
 >
@@ -268,15 +268,15 @@ Operations on generalized functions are defined by moving them onto the test fun
 >
 > **Step 4** (the remainder). $r$ and its derivatives up to order $N$ vanish at $0$, so $|\partial^\beta r(x)| \le C|x|^{N + 1 - |\beta|}$ near $0$. With $\chi_\varepsilon(x) = \chi(x/\varepsilon)$, $\chi r - \chi_\varepsilon r$ vanishes near $0$, so $T[\chi r] = T[\chi_\varepsilon r]$. By Leibniz, every derivative $\partial^\beta(\chi_\varepsilon r)$ with $|\beta| \le N$ is a sum of terms $\varepsilon^{-|\gamma|}(\partial^\gamma\chi)(x/\varepsilon)\,\partial^{\beta - \gamma}r$ supported in $|x| \le \varepsilon$, each at most $C\varepsilon^{-|\gamma|}\varepsilon^{N + 1 - |\beta| + |\gamma|} = C\varepsilon^{N + 1 - |\beta|} \le C\varepsilon$. By Step 1, $|T[\chi r]| \le C'\varepsilon$ for every $\varepsilon$: $T[\chi r] = 0$.
 >
-> **Step 5** (the polynomial). $T[\chi P_N] = \sum_{|\alpha| \le N}\frac{\partial^\alpha\varphi(0)}{\alpha!}T[\chi x^\alpha]$. With $\partial^\alpha\delta[\varphi] = (-1)^{|\alpha|}\partial^\alpha\varphi(0)$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]), this is $\sum_\alpha c_\alpha\,\partial^\alpha\delta[\varphi]$ with $c_\alpha = (-1)^{|\alpha|}T[\chi x^\alpha]/\alpha!$.
+> **Step 5** (the polynomial). $T[\chi P_N] = \sum_{|\alpha| \le N}\frac{\partial^\alpha\varphi(0)}{\alpha!}T[\chi x^\alpha]$. With $\partial^\alpha\delta[\varphi] = (-1)^{|\alpha|}\partial^\alpha\varphi(0)$ ([[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]]), this is $\sum_\alpha c_\alpha\,\partial^\alpha\delta[\varphi]$ with $c_\alpha = (-1)^{|\alpha|}T[\chi x^\alpha]/\alpha!$.
 >
 > **What the derivation shows.**
 > - The ambiguity of a distribution at one point is a finite sum of δ-derivatives, never anything spread out.
-> - This is the freedom in extending $\theta(x^0)D(x)$ across $x = 0$ ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]) and in contact terms of time-ordered products; for a fundamental solution the equation itself removes it ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|Theorem §CA.6.7]], 3).
+> - This is the freedom in extending $\theta(x^0)D(x)$ across $x = 0$ ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]]) and in contact terms of time-ordered products; for a fundamental solution the equation itself removes it ([[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-7|Theorem §CA.7.7]], 3).
 
 ^der-ca-2-2
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^lem-ca-2-1|Lemma §CA.2.1]], [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.2 Generalized Functions#^lem-ca-2-1|Lemma §CA.2.1]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]
 
 ## Derivatives and limits
 
@@ -302,7 +302,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 >
 > ⚑ By-product: "fields fall off at infinity" is an assumption about the states in which the operators are evaluated (wave packets, not plane waves); it is made every time a surface term is dropped → [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|§C2b.1, Theorem §C2b.1.2, Step 5]].
 >
-> **Step 4** (delta function). With $f = \delta^3(\mathbf x - \mathbf y)$ as a function of $\mathbf y$, the surface term vanishes because the delta function is zero on $\partial V$ (its support, the point $\mathbf x$, lies inside); so $\int d^3y\,\delta^3(\mathbf x - \mathbf y)\,\partial_ig(\mathbf y) = -\int d^3y\,\partial_{y^i}\delta^3(\mathbf x - \mathbf y)\,g(\mathbf y)$, i.e. $\int d^3y\,g\,\nabla_{\mathbf y}\delta^3 = -\nabla g(\mathbf x)$. This is also the *definition* of the derivative of $\delta$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]).
+> **Step 4** (delta function). With $f = \delta^3(\mathbf x - \mathbf y)$ as a function of $\mathbf y$, the surface term vanishes because the delta function is zero on $\partial V$ (its support, the point $\mathbf x$, lies inside); so $\int d^3y\,\delta^3(\mathbf x - \mathbf y)\,\partial_ig(\mathbf y) = -\int d^3y\,\partial_{y^i}\delta^3(\mathbf x - \mathbf y)\,g(\mathbf y)$, i.e. $\int d^3y\,g\,\nabla_{\mathbf y}\delta^3 = -\nabla g(\mathbf x)$. This is also the *definition* of the derivative of $\delta$ ([[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]]).
 >
 > **What the derivation shows.**
 > - Two uses of one move, differing only in which factor kills the surface term: fall-off at infinity, or a delta function supported inside.
@@ -310,7 +310,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 
 ^der-ca-2-3
 
-*Uses:* [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]
+*Uses:* [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]]
 
 > [!theorem] Theorem §CA.2.4: Every Generalized Function Is Differentiable
 > 1. Every generalized function has derivatives of all orders, and for differentiable $\psi$, $(T_\psi)' = T_{\psi'}$.
@@ -330,11 +330,11 @@ Operations on generalized functions are defined by moving them onto the test fun
 > **Step 3** ($\delta'$). $\delta'[\varphi] = -\delta[\varphi'] = -\varphi'(0)$, which is the rule of [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], Step 4, seen as a definition.
 >
 > **What the derivation shows.**
-> - Rules that look like tricks ($\theta' = \delta$, $\int e^{ikx} = 2\pi\delta$) are definitions plus one integration by parts or one inversion; the second, the transform of the constant, is [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]].
+> - Rules that look like tricks ($\theta' = \delta$, $\int e^{ikx} = 2\pi\delta$) are definitions plus one integration by parts or one inversion; the second, the transform of the constant, is [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]].
 
 ^der-ca-2-4
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]]
 
 > [!theorem] Lemma §CA.2.2: The Space 𝒮 Is a Complete Metric Space
 > Number the countably many seminorms of [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]] as $p_1, p_2, \dots$, with $p_1(\varphi) = \|\varphi\|_{0,0} = \sup|\varphi|$, and put
@@ -400,13 +400,13 @@ Operations on generalized functions are defined by moving them onto the test fun
 >
 > The bound does not depend on $k$, so it passes to the limit: $|T[\varphi]| \le \frac{8M}{r}\sum_{j \le J}p_j(\varphi)$, a finite sum of seminorms. A linear map with such a bound is a tempered distribution ([[§CA.2 Generalized Functions#^lem-ca-2-1|Lemma §CA.2.1]], converse). (Reed & Simon I, Ch. V, prove the same statement from the uniform boundedness principle for Fréchet spaces.)
 >
-> **Step 2** (part 2). For a fixed $\varphi \in \mathcal S$, $\partial^\alpha\varphi$ is one fixed test function, so by [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]
+> **Step 2** (part 2). For a fixed $\varphi \in \mathcal S$, $\partial^\alpha\varphi$ is one fixed test function, so by [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]]
 >
 > $$
 > \partial^\alpha T_\varepsilon[\varphi] = (-1)^{|\alpha|}T_\varepsilon[\partial^\alpha\varphi] \longrightarrow (-1)^{|\alpha|}T[\partial^\alpha\varphi] = \partial^\alpha T[\varphi] .
 > $$
 >
-> Likewise $g\varphi \in \mathcal S$ (Leibniz rule and the polynomial bounds), and by [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]] $gT_\varepsilon[\varphi] = T_\varepsilon[g\varphi] \to T[g\varphi] = gT[\varphi]$. Both arrows are the definition of the limit ([[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]]) applied to one fixed test function.
+> Likewise $g\varphi \in \mathcal S$ (Leibniz rule and the polynomial bounds), and by [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]] $gT_\varepsilon[\varphi] = T_\varepsilon[g\varphi] \to T[g\varphi] = gT[\varphi]$. Both arrows are the definition of the limit ([[§CA.2 Generalized Functions#^def-ca-2-9|Def. §CA.2.9]]) applied to one fixed test function.
 >
 > ⚑ By-product: the exchange of a limit and a derivative, which for functions needs uniform convergence of the derivatives ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]]), is automatic here; the price is that the result is only a distribution. Example: $F_n = \sin(nr)/\sqrt n \to 0$, and $F_n' = \sqrt n\cos(nr)$ has no pointwise limit, but $\int\sqrt n\cos(nr)\varphi(r)\,dr = -\frac{1}{\sqrt n}\int\sin(nr)\varphi'(r)\,dr \to 0$ (one integration by parts, boundary terms zero): $F_n' \to 0$ as distributions.
 >
@@ -420,16 +420,16 @@ Operations on generalized functions are defined by moving them onto the test fun
 >
 > **What the derivation shows.**
 > - Every "$\varepsilon \to 0^+$" of C2a–C2b is a limit in the sense of part 1: a family of honest integrals that converges on each test function.
-> - The shape of a nascent delta function is irrelevant; only its integral and integrability matter. The Gaussian of [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-2|WO Def. §B4.4.2]], the Lorentzian $\varepsilon/\pi(x^2 + \varepsilon^2)$ of Sokhotski–Plemelj ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]]) and the heat kernel of Fourier inversion ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]) are three choices of $\rho$.
+> - The shape of a nascent delta function is irrelevant; only its integral and integrability matter. The Gaussian of [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-2|WO Def. §B4.4.2]], the Lorentzian $\varepsilon/\pi(x^2 + \varepsilon^2)$ of Sokhotski–Plemelj ([[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-2|Theorem §CA.7.2]]) and the heat kernel of Fourier inversion ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-1|Theorem §CA.4.1]]) are three choices of $\rho$.
 
 ^der-ca-2-5
 
-*Uses:* [[§CA.2 Generalized Functions#^lem-ca-2-1|Lemma §CA.2.1]], [[§CA.2 Generalized Functions#^lem-ca-2-2|Lemma §CA.2.2]], [[§40 The Baire Category Theorem#^thm-40-4|556 Thm. §40.4]], [[§40 The Baire Category Theorem#^def-40-1|556 Def. §40.1]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]] (for contrast)
+*Uses:* [[§CA.2 Generalized Functions#^lem-ca-2-1|Lemma §CA.2.1]], [[§CA.2 Generalized Functions#^lem-ca-2-2|Lemma §CA.2.2]], [[§40 The Baire Category Theorem#^thm-40-4|556 Thm. §40.4]], [[§40 The Baire Category Theorem#^def-40-1|556 Def. §40.1]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^def-ca-2-9|Def. §CA.2.9]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]] (for contrast)
 
 ## Changes of variables and invariant distributions
 
 > [!theorem] Theorem §CA.2.6: Composition of δ with a Function
-> 1. *(Linear maps)* For $T = T_\psi$ the formula of [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]] is the substitution rule; in particular $\delta(Ax + a) = |\det A|^{-1}\delta(x + A^{-1}a)$ and $\delta(\lambda x) = |\lambda|^{-n}\delta(x)$.
+> 1. *(Linear maps)* For $T = T_\psi$ the formula of [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] is the substitution rule; in particular $\delta(Ax + a) = |\det A|^{-1}\delta(x + A^{-1}a)$ and $\delta(\lambda x) = |\lambda|^{-n}\delta(x)$.
 > 2. *(One variable)* Let $f$ be smooth with simple zeros $x_i$ ($f'(x_i) \ne 0$), and $\rho \in \mathcal D$ with $\int\rho = 1$. Then $\delta(f(x)) \equiv \lim_{\varepsilon\to0^+}\rho_\varepsilon(f(x))$ exists and
 >
 > $$
@@ -449,7 +449,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 > \int d^nx\,\psi(Ax + a)\,\varphi(x) = |\det A|^{-1}\int d^ny\,\psi(y)\,\varphi\bigl(A^{-1}(y - a)\bigr) .
 > $$
 >
-> This is Def. §CA.2.8 for $T_\psi$. For δ: $\delta(Ax + a)[\varphi] = |\det A|^{-1}\varphi(A^{-1}(0 - a)) = |\det A|^{-1}\varphi(-A^{-1}a)$, which is $|\det A|^{-1}\delta(x + A^{-1}a)[\varphi]$. With $A = \lambda\mathbb 1$, $|\det A| = |\lambda|^n$.
+> This is Def. §CA.2.11 for $T_\psi$. For δ: $\delta(Ax + a)[\varphi] = |\det A|^{-1}\varphi(A^{-1}(0 - a)) = |\det A|^{-1}\varphi(-A^{-1}a)$, which is $|\det A|^{-1}\delta(x + A^{-1}a)[\varphi]$. With $A = \lambda\mathbb 1$, $|\det A| = |\lambda|^n$.
 >
 > **Step 2** (part 2: localize). Let $\varphi \in \mathcal D$ vanish outside $[-L, L]$ and let $\rho$ vanish outside $[-1, 1]$. Simple zeros are isolated, so $[-L, L]$ contains finitely many, $x_1, \dots, x_k$; choose disjoint open intervals $U_i \ni x_i$ on which $|f'| \ge \frac12|f'(x_i)|$. On the compact rest of $[-L, L]$, $|f| \ge c > 0$; for $\varepsilon < c$, $\rho_\varepsilon(f(x)) = \varepsilon^{-1}\rho(f(x)/\varepsilon) = 0$ there. Only the $U_i$ contribute.
 >
@@ -503,7 +503,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 
 ^der-ca-2-6
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]], [[§15 The Implicit Function Theorem#^thm-15-2|452 Thm. §15.2]], [[§31 Surface Integrals#^def-31-5|452 Def. §31.5]], [[§65 Partitions of Unity#^thm-65-7|591 Thm. §65.7]]
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]], [[§15 The Implicit Function Theorem#^thm-15-2|452 Thm. §15.2]], [[§31 Surface Integrals#^def-31-5|452 Def. §31.5]], [[§65 Partitions of Unity#^thm-65-7|591 Thm. §65.7]]
 
 > [!theorem] Theorem §CA.2.7: Invariant Distributions on the Mass Shell and the Light Cone
 > Let $m > 0$ and $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$.
@@ -528,7 +528,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 > \Delta^\pm_\varepsilon(p) \equiv \theta(\pm p^0)\,\rho_\varepsilon(p^2 - m^2)
 > $$
 >
-> is a smooth function on $\mathbb R^4$, and $\theta(\pm p^0)\,\delta(p^2 - m^2) \equiv \lim_{\varepsilon\to0^+}\Delta^\pm_\varepsilon$. (The same product is the one of [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 2, in the next section, $\theta$ being smooth near the support of $\delta(p^2 - m^2)$; the direct definition keeps this derivation independent of it.) At fixed $\mathbf p$, on the piece $p^0 > 0$ substitute $u = (p^0)^2 - E_{\mathbf p}^2$, so $p^0 = \sqrt{E_{\mathbf p}^2 + u}$ and $dp^0 = du/2\sqrt{E_{\mathbf p}^2 + u}$:
+> is a smooth function on $\mathbb R^4$, and $\theta(\pm p^0)\,\delta(p^2 - m^2) \equiv \lim_{\varepsilon\to0^+}\Delta^\pm_\varepsilon$. (The same product is the one of [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]], 2, in the next section, $\theta$ being smooth near the support of $\delta(p^2 - m^2)$; the direct definition keeps this derivation independent of it.) At fixed $\mathbf p$, on the piece $p^0 > 0$ substitute $u = (p^0)^2 - E_{\mathbf p}^2$, so $p^0 = \sqrt{E_{\mathbf p}^2 + u}$ and $dp^0 = du/2\sqrt{E_{\mathbf p}^2 + u}$:
 >
 > $$
 > \int dp^0\,\Delta^+_\varepsilon(p)\,\varphi(p^0, \mathbf p) = \int du\,\rho_\varepsilon(u)\,g_{\mathbf p}(u), \qquad g_{\mathbf p}(u) = \frac{\varphi\bigl(\sqrt{E_{\mathbf p}^2 + u}, \mathbf p\bigr)}{2\sqrt{E_{\mathbf p}^2 + u}} .
@@ -544,7 +544,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 >
 > and the integral is finite ($4\pi\int_0^\infty p^2dp/(1 + p)^4 < \infty$). As in [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], Step 3, $T_\pm$ is continuous on $\mathcal S$. The same bound gives the limit on $\mathbb R^4$: by Step 1 the $p^0$-integral of $\Delta^\pm_\varepsilon\varphi$ is at most $\|\rho\|_{L^1}\sup_{p^0}|\varphi(p^0, \mathbf p)|/\sqrt2m \le C(1 + |\mathbf p|)^{-4}$, integrable over $d^3p$ and independent of $\varepsilon$, and it converges at each $\mathbf p$; by dominated convergence $\int d^4p\,\Delta^\pm_\varepsilon\,\varphi \to T_\pm[\varphi]$ for every $\varphi \in \mathcal S(\mathbb R^4)$. So $\theta(\pm p^0)\delta(p^2 - m^2) = T_\pm$ as a limit in $\mathcal S'(\mathbb R^4)$.
 >
-> **Step 3** (invariance, upper shell). Let $\Lambda$ be proper orthochronous: $\Lambda^{\mathsf T}g\Lambda = g$, $\det\Lambda = 1$, $\Lambda^0{}_0 \ge 1$. By [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], $T_+(\Lambda p)[\varphi] = T_+[\varphi\circ\Lambda^{-1}]$ (since $|\det\Lambda| = 1$), and the claim is $T_+[\varphi\circ\Lambda^{-1}] = T_+[\varphi]$.
+> **Step 3** (invariance, upper shell). Let $\Lambda$ be proper orthochronous: $\Lambda^{\mathsf T}g\Lambda = g$, $\det\Lambda = 1$, $\Lambda^0{}_0 \ge 1$. By [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]], $T_+(\Lambda p)[\varphi] = T_+[\varphi\circ\Lambda^{-1}]$ (since $|\det\Lambda| = 1$), and the claim is $T_+[\varphi\circ\Lambda^{-1}] = T_+[\varphi]$.
 >
 > *(a) The sign of $p^0$ on timelike vectors.* From $\Lambda^{\mathsf T}g\Lambda = g$, $\Lambda^{-1} = g\Lambda^{\mathsf T}g$, hence $\Lambda g\Lambda^{\mathsf T} = g$, whose $00$ component is $(\Lambda^0{}_0)^2 - \sum_i(\Lambda^0{}_i)^2 = 1$. Let $p^2 > 0$ and $p^0 > 0$, so $|\mathbf p| < p^0$. By the Cauchy–Schwarz inequality $\bigl|\sum_i\Lambda^0{}_ip^i\bigr| \le \sqrt{(\Lambda^0{}_0)^2 - 1}\,|\mathbf p| < \Lambda^0{}_0\,p^0$, so $(\Lambda p)^0 = \Lambda^0{}_0p^0 + \sum_i\Lambda^0{}_ip^i > 0$; applied to $-p$, $p^0 < 0$ gives $(\Lambda p)^0 < 0$. (The same fact: [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], 2.) Also $(\Lambda p)^2 = p^2$.
 >
@@ -577,61 +577,61 @@ Operations on generalized functions are defined by moving them onto the test fun
 
 ^der-ca-2-7
 
-*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]]
+*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]]
 
 > [!remark]- Connections
-> - Distributions as linear maps on test functions are a dual space: the generalized functions sit in the dual of the test functions as kets sit in the dual of bras; the position "eigenket" that is not a vector is the same phenomenon ([[§48 Position Eigenstates and Continuous Resolutions#^prop-48-3|556 Prop. §48.3]]). Operator-valued distributions ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]) carry the same idea one level up: $\hat\phi(x)$ is no more an operator than $|x\rangle$ is a vector.
+> - Distributions as linear maps on test functions are a dual space: the generalized functions sit in the dual of the test functions as kets sit in the dual of bras; the position "eigenket" that is not a vector is the same phenomenon ([[§48 Position Eigenstates and Continuous Resolutions#^prop-48-3|556 Prop. §48.3]]). Operator-valued distributions ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^def-ca-3-1|Def. §CA.3.1]]) carry the same idea one level up: $\hat\phi(x)$ is no more an operator than $|x\rangle$ is a vector.
 > - The composition rule $\delta(f(x)) = \sum_i\delta(x - x_i)/|f'(x_i)|$ ([[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], justified as a limit in Theorem §CA.2.6) is what turns $\theta(p^0)\delta(p^2 - m^2)$ into the invariant measure $d^3p/2E_{\mathbf p}$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]) and $\delta(t^2 - r^2)$ into the light-cone deltas of the massless commutator.
 > - Limits commute with derivatives for distributions (Theorem §CA.2.5, 2) but not for functions ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]]); C2a–C2b need the function version only where it wants a pointwise formula, as in the real-variable evaluation of the Wightman function ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]).
 > - The point-support theorem (Theorem §CA.2.2) is also why, in the renormalization of later chapters, products at a point are ambiguous only by local terms (the second semester, planned: PHY 513 Lecture 17, slide 26).
-> - The spectrum of a matrix as the distribution $\frac1N\sum_i\delta(x - \lambda_i)$ ([[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]]) and its limits (Theorem §CA.2.5) become, for random matrices, empirical spectral measures and their weak convergence ([[§R2.7 Weak Convergence, Characteristic Functions and Concentration#^def-r2-7-11|Thesis Def. §R2.7.11]], [[§R2.7 Weak Convergence, Characteristic Functions and Concentration#^def-r2-7-1|Thesis Def. §R2.7.1]]).
+> - The spectrum of a matrix as the distribution $\frac1N\sum_i\delta(x - \lambda_i)$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]) and its limits (Theorem §CA.2.5) become, for random matrices, empirical spectral measures and their weak convergence ([[§R2.7 Weak Convergence, Characteristic Functions and Concentration#^def-r2-7-11|Thesis Def. §R2.7.11]], [[§R2.7 Weak Convergence, Characteristic Functions and Concentration#^def-r2-7-1|Thesis Def. §R2.7.1]]).
 > - Integration by parts with a delta function is how $[\hat\pi, \hat H]$ acquires $\nabla^2\hat\phi$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]); the divergence theorem behind it is [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], and the four-dimensional version is the step in every Euler–Lagrange and Noether derivation (Euler–Lagrange: [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^der-c1b-2-4|Derivation §C1b.2.4]], step 4; Noether charges: [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-1|Theorem §C1b.6.1]], [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^der-c1b-8-4|Derivation §C1b.8.4]], step 7).
 > - **Used in**, statement by statement (C2a–C2b items):
 >   - Def. §CA.2.1–§CA.2.2 (test functions; distributions): wave packets and smeared fields — [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-1|Theorem §C2a.2.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]], [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-1|Theorem §C2b.9.1]], [[§C2b.9 Particle Production by a Classical Source#^ex-c2b-9-1|Example §C2b.9.1]], [[§C2a.1 Canonical Quantization of Fields|§C2a.1]] (Mathematical background), [[§C2b.6 Green's Functions and Contours#^rem-c2b-6-1|§C2b.6, Remark: What a Green's "function" is, and why it is not unique]].
 >   - Theorem §CA.2.1 (regular and singular distributions): δ, plane waves and $\langle\mathbf p|\mathbf q\rangle$ as tempered distributions — [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-9|Theorem §C2b.5.9]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-4|Theorem §C2b.8.4]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]].
->   - Def. §CA.2.3 (support, singular support): the singular support of $D_W$ is the light cone; microcausality as the support of $D$ — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|Theorem §C2b.6.6]].
+>   - Def. §CA.2.6 (support, singular support): the singular support of $D_W$ is the light cone; microcausality as the support of $D$ — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|Theorem §C2b.6.6]].
 >   - Theorem §CA.2.2 (point support): extending $\theta(x^0)D$ across the origin; contact terms — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|Theorem §C2b.6.6]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-4|Theorem §C2b.7.4]].
->   - Defs. §CA.2.4–§CA.2.7 (operations: derivative, product with a smooth function, limit, transform): differentiating mode integrals of operator fields, "use the support of the delta" — [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-11|Theorem §C2b.5.11]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-3|Theorem §C2b.6.3]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|Theorem §C2b.6.5]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-1|Theorem §C2b.9.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-4|Theorem §C2b.6.4]].
+>   - Defs. §CA.2.7–§CA.2.10 (operations: derivative, product with a smooth function, limit, transform): differentiating mode integrals of operator fields, "use the support of the delta" — [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-11|Theorem §C2b.5.11]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-3|Theorem §C2b.6.3]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|Theorem §C2b.6.5]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-1|Theorem §C2b.9.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-8|Theorem §C2b.7.8]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-4|Theorem §C2b.6.4]].
 >   - Theorem §CA.2.4 (every distribution is differentiable; $\theta' = \delta$): contact terms of step functions in time — [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|Theorem §C2b.6.5]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-1|Theorem §C2b.7.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-5|Theorem §C2b.7.5]], [[P2 Green's Functions by Contour Integration#^p2-7|P2, step 7]].
 >   - Theorem §CA.2.5 (distributional limits): every $\varepsilon \to 0^+$ — [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-12|Theorem §C2b.5.12]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]].
->   - Defs. §CA.2.8, §CA.2.9 and Theorem §CA.2.6 (changes of variables, composition): Lorentz invariance as a statement about distributions, $\delta(p^2 - m^2)$ — [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|Theorem §C2b.5.8]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|Theorem §C2b.6.6]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-7|Theorem §C2b.6.7]].
+>   - Defs. §CA.2.11, §CA.2.12 and Theorem §CA.2.6 (changes of variables, composition): Lorentz invariance as a statement about distributions, $\delta(p^2 - m^2)$ — [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|Theorem §C2b.5.8]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|Theorem §C2b.6.6]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-9|Theorem §C2b.7.9]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-7|Theorem §C2b.6.7]].
 >   - Theorem §CA.2.7 (invariant shell and cone distributions): the invariant measure, $D_W$ as the transform of the positive shell, the massless $\operatorname{sgn}(x^0)\delta(x^2)$ — [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-8|Theorem §C2b.5.8]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-6|Theorem §C2b.6.6]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]].
->   - Def. §CA.2.10 (principal value): the principal function, dropping $i\varepsilon$ after a Wick rotation — [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-4|Theorem §C2b.6.4]], [[§C2b.8 Wick Rotation and the Two-Point Family#^rem-c2b-8-2|§C2b.8, Remark: The two-point functions at a glance]].
+>   - Def. §CA.2.5 (principal value): the principal function, dropping $i\varepsilon$ after a Wick rotation — [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-4|Theorem §C2b.6.4]], [[§C2b.8 Wick Rotation and the Two-Point Family#^rem-c2b-8-2|§C2b.8, Remark: The two-point functions at a glance]].
 >   - Theorem §CA.2.3 (integration by parts): the gradient term with fall-off — [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]].
 > - **Used in**, statement by statement (C1a–C1b items):
 >   - Def. §CA.2.1–§CA.2.2 (test functions; distributions): variations and the functional derivative — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^rem-c1b-2-2|§C1b.2, Remark: The functional derivative is a distribution]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]].
 >   - Theorem §CA.2.1 (regular and singular distributions): δ as a functional derivative — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^rem-c1b-2-2|§C1b.2, Remark: The functional derivative is a distribution]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-1|Theorem §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-4|Theorem §C1b.4.4]].
->   - Def. §CA.2.3 (support, singular support): [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|Theorem §C2b.5.7]].
->   - Defs. §CA.2.4–§CA.2.7 (operations: derivative, product with a smooth function, limit, transform): [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|Theorem §C2b.5.7]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]].
+>   - Def. §CA.2.6 (support, singular support): [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|Theorem §C2b.5.7]].
+>   - Defs. §CA.2.7–§CA.2.10 (operations: derivative, product with a smooth function, limit, transform): [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|Theorem §C2b.5.7]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]].
 >   - Theorem §CA.2.5 (distributional limits): [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|Theorem §C2b.4.1]], [[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]] (Mathematical background).
->   - Defs. §CA.2.8, §CA.2.9 (changes of variables): invariance of distributions — [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|Theorem §C2b.5.7]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-1|Theorem §C1a.4.1]], [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-3|Theorem §C1b.1.3]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-5|Theorem §C1b.4.5]].
+>   - Defs. §CA.2.11, §CA.2.12 (changes of variables): invariance of distributions — [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-7|Theorem §C2b.5.7]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-1|Theorem §C1a.4.1]], [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-3|Theorem §C1b.1.3]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-5|Theorem §C1b.4.5]].
 >   - Theorem §CA.2.7 (invariant shell and cone distributions): [[§C1a.4 The Lorentz Group#^thm-c1a-4-1|Theorem §C1a.4.1]], [[§C1b.1 Fields and Their Transformation Laws#^cau-c1b-1-1|§C1b.1, Caution: What "the scalar does not change" does not mean]].
 >   - Theorem §CA.2.3 (integration by parts): [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-4|Theorem §C1b.4.4]], [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9|Theorem §C1b.7.9]].
 > - **Used in**, statement by statement (C3 items):
 >   - Def. §CA.2.2 (distributions): the equal-time commutators of the Noether charges — [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|Theorem §C3.5.6]], [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-2|§C3.3, Remark: The laws for fields that are distributions]].
->   - Defs. §CA.2.4–§CA.2.7 (operations: derivative, product with a smooth function, limit, transform): transformation laws and orbital generators on distributions — [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-2|§C3.3, Remark: The laws for fields that are distributions]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]].
->   - Defs. §CA.2.8, §CA.2.9 (changes of variables): moving the argument of a field — [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-2|§C3.3, Remark: The laws for fields that are distributions]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-5|Theorem §C3.5.5]].
+>   - Defs. §CA.2.7–§CA.2.10 (operations: derivative, product with a smooth function, limit, transform): transformation laws and orbital generators on distributions — [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-2|§C3.3, Remark: The laws for fields that are distributions]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]].
+>   - Defs. §CA.2.11, §CA.2.12 (changes of variables): moving the argument of a field — [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-2|§C3.3, Remark: The laws for fields that are distributions]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-5|Theorem §C3.5.5]].
 >   - Theorem §CA.2.7 (invariant shell and cone distributions): Lorentz-invariant distributions as fixed points of the scalar law — [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-2|§C3.3, Remark: The laws for fields that are distributions]].
 > - **Used in**, statement by statement (C5a–C5b items):
 >   - Def. §CA.2.1 (test functions): smeared Dirac fields — [[§C5b.1 Canonical Quantization of the Dirac Field#^def-c5b-1-5|Def. §C5b.1.5]].
 >   - Theorem §CA.2.1 (regular and singular distributions): plane-wave solutions and the propagator at finite $\varepsilon$ as tempered distributions — [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-5|§C5a.7, Remark: In what sense the equations hold]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]].
 >   - Theorem §CA.2.2 (distributions supported at a point): uniqueness of $S_F$ at the origin — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]].
->   - Def. §CA.2.3 (support, singular support): microcausality of the Dirac field — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3|Theorem §C5b.7.3]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator|§C5b.8]] (Mathematical background).
+>   - Def. §CA.2.6 (support, singular support): microcausality of the Dirac field — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3|Theorem §C5b.7.3]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator|§C5b.8]] (Mathematical background).
 >   - Theorem §CA.2.4 (derivatives): Dirac solutions as Klein–Gordon solutions, $\partial_0\theta = \delta$ in the propagator — [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|Theorem §C5b.8.5]].
->   - Defs. §CA.2.4–§CA.2.7 (operations: derivative, product with a smooth function, limit, transform): the Dirac operator on distributions, derivatives of two-point functions, supports — [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-5|§C5a.7, Remark: In what sense the equations hold]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3|Theorem §C5b.7.3]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator|§C5b.8]] (Mathematical background).
+>   - Defs. §CA.2.7–§CA.2.10 (operations: derivative, product with a smooth function, limit, transform): the Dirac operator on distributions, derivatives of two-point functions, supports — [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-5|§C5a.7, Remark: In what sense the equations hold]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3|Theorem §C5b.7.3]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator|§C5b.8]] (Mathematical background).
 >   - Theorem §CA.2.5 (distributional limits): nascent deltas and the limit $\varepsilon \to 0^+$ — [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].
->   - Defs. §CA.2.8, §CA.2.9 (changes of variables): covariance of the Dirac equation in $\mathcal S'$, the smeared anticommutator — [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-5|§C5a.7, Remark: In what sense the equations hold]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]].
+>   - Defs. §CA.2.11, §CA.2.12 (changes of variables): covariance of the Dirac equation in $\mathcal S'$, the smeared anticommutator — [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-5|§C5a.7, Remark: In what sense the equations hold]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]].
 >   - Theorem §CA.2.7 (invariant shell and cone distributions): solutions as transforms supported on the mass shell — [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^rem-c5a-11-2|§C5a.11, Remark: In what sense a general solution is a superposition of these plane waves]].
 >   - Theorem §CA.2.3 (integration by parts): the spin of the quanta at rest — [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|Theorem §C5b.4.3]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-3|Theorem §C5b.1.3]].
 >   - Def. §CA.2.2 (Generalized Function; Tempered Distribution): [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]].
 > - **Used in**, statement by statement (C9 items):
->   - Def. §CA.2.4 (derivative): the derivative of the parity-transformed field — [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-5|Theorem §C9.4.5]], [[§C9.2 Parity of the Scalar Field#^thm-c9-2-5|Theorem §C9.2.5]], [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-6|★ Theorem §C9.4.6]], [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-3|Theorem §C9.12.3]].
->   - Def. §CA.2.8 (linear change of variables): the smeared parity law, test function $f \to f\circ \mathcal P$ — [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-5|Theorem §C9.3.5]], [[§C9.2 Parity of the Scalar Field#^thm-c9-2-2|Theorem §C9.2.2]].
+>   - Def. §CA.2.7 (derivative): the derivative of the parity-transformed field — [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-5|Theorem §C9.4.5]], [[§C9.2 Parity of the Scalar Field#^thm-c9-2-5|Theorem §C9.2.5]], [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-6|★ Theorem §C9.4.6]], [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-3|Theorem §C9.12.3]].
+>   - Def. §CA.2.11 (linear change of variables): the smeared parity law, test function $f \to f\circ \mathcal P$ — [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-5|Theorem §C9.3.5]], [[§C9.2 Parity of the Scalar Field#^thm-c9-2-2|Theorem §C9.2.2]].
 > - **Used in**, statement by statement (C4 items):
 >   - Theorem §CA.2.1 (Regular and Singular Tempered Distributions): [[§C4.11 Vector-Field Propagators#^thm-c4-11-7|Theorem §C4.11.7]].
->   - Def. §CA.2.3 (Support and Singular Support): [[§C4.11 Vector-Field Propagators#^thm-c4-11-2|Theorem §C4.11.2]], [[§C4.11 Vector-Field Propagators|§C4.11]].
+>   - Def. §CA.2.6 (Support and Singular Support): [[§C4.11 Vector-Field Propagators#^thm-c4-11-2|Theorem §C4.11.2]], [[§C4.11 Vector-Field Propagators|§C4.11]].
 >   - Theorem §CA.2.4 (Every Generalized Function Is Differentiable): [[§C4.2★ The Proca Field#^thm-c4-2-4|Theorem §C4.2.4]], [[§C4.11 Vector-Field Propagators#^thm-c4-11-3|Theorem §C4.11.3]], [[§C4.11 Vector-Field Propagators|§C4.11]].
->   - Defs. §CA.2.4–§CA.2.7 (operations: derivative, product with a smooth function, limit, transform): [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^thm-c4-4-3|Theorem §C4.4.3]], [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-3|Theorem §C4.6.3]], [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-6|Theorem §C4.8.6]], [[§C4.10 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-10-3|Theorem §C4.10.3]], [[§C4.11 Vector-Field Propagators#^thm-c4-11-1|Theorem §C4.11.1]], [[§C4.11 Vector-Field Propagators#^thm-c4-11-2|Theorem §C4.11.2]], [[§C4.11 Vector-Field Propagators|§C4.11]], [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^thm-c4-4-4|Theorem §C4.4.4]], [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-8|Theorem §C4.8.8]], [[§C4.2★ The Proca Field#^thm-c4-2-13|Theorem §C4.2.13]].
+>   - Defs. §CA.2.7–§CA.2.10 (operations: derivative, product with a smooth function, limit, transform): [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^thm-c4-4-3|Theorem §C4.4.3]], [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-3|Theorem §C4.6.3]], [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-6|Theorem §C4.8.6]], [[§C4.10 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-10-3|Theorem §C4.10.3]], [[§C4.11 Vector-Field Propagators#^thm-c4-11-1|Theorem §C4.11.1]], [[§C4.11 Vector-Field Propagators#^thm-c4-11-2|Theorem §C4.11.2]], [[§C4.11 Vector-Field Propagators|§C4.11]], [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^thm-c4-4-4|Theorem §C4.4.4]], [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-8|Theorem §C4.8.8]], [[§C4.2★ The Proca Field#^thm-c4-2-13|Theorem §C4.2.13]].
 >   - Theorem §CA.2.7 (Invariant Distributions on the Mass Shell and the Light Cone): [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-9|Theorem §C4.8.9]], [[§C4.11 Vector-Field Propagators#^thm-c4-11-7|Theorem §C4.11.7]], [[§C4.11 Vector-Field Propagators|§C4.11]].
 >   - Theorem §CA.2.3 (Integration by Parts; the Gradient of a Delta Function): [[§C4.2★ The Proca Field#^thm-c4-2-9|Theorem §C4.2.9]], [[§C4.2★ The Proca Field|§C4.2★]], [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^thm-c4-4-3|Theorem §C4.4.3]], [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^thm-c4-4-6|Theorem §C4.4.6]], [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-5|Theorem §C4.6.5]], [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-6|Theorem §C4.8.6]], [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^thm-c4-4-4|Theorem §C4.4.4]], [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-8|Theorem §C4.8.8]], [[§C4.2★ The Proca Field#^thm-c4-2-13|Theorem §C4.2.13]], [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-5|Theorem §C4.7.5]], [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-6|Theorem §C4.7.6]], [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum#^thm-c4-7-7|Theorem §C4.7.7]].
 > - **Used in**, statement by statement (Electromagnetism C items):
@@ -640,9 +640,9 @@ Operations on generalized functions are defined by moving them onto the test fun
 >   - Theorem §CA.2.1 (regular and singular distributions): the current of a point charge, the Coulomb field and the fields of surface layers as distributions — [[§C1.1 Building the Maxwell Action#^thm-c1-1-6|EM Theorem §C1.1.6]], [[§C2.1 The Static Limit and the Field of a Charge Distribution#^rem-c2-1-1|EM Remark: The Coulomb potential as a fundamental solution]], [[§C2.3 Electrostatic Energy and Self-Energy#^thm-c2-3-7|EM Theorem §C2.3.7]], [[§C4.1 Induced Charge, Screening and Thomson's Theorem#^rem-c4-1-1|EM Remark: What changes from levels A and B]], [[§C4.1 Induced Charge, Screening and Thomson's Theorem#^thm-c4-1-6|EM Theorem §C4.1.6]], [[§C5.2 The Field of Polarized Matter#^thm-c5-2-1|EM Theorem §C5.2.1]], [[§C5.2 The Field of Polarized Matter#^ex-c5-2-3|EM Example §C5.2.3]].
 >   - Theorem §CA.2.2 (distributions supported at a point): the charge density as a series of point multipoles — [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-6|EM Theorem §C3.1.6]].
 >   - Theorem §CA.2.4 (every distribution is differentiable; $\theta' = \delta$): the Bianchi identity for distributional potentials, jumps at dipole layers and surfaces, the jump condition of a Green function — [[§C1.2 The Field Equations and the Bianchi Identity#^thm-c1-2-4|EM Theorem §C1.2.4]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-10|EM Theorem §C3.1.10]], [[§C3.2 Spherical Multipole Expansions#^ex-c3-2-3|EM Example §C3.2.3]], [[§C5.1 Polarization Charge and the Polarization#^thm-c5-1-2|EM Theorem §C5.1.2]], [[§C7.4 Constructing Green Functions#^thm-c7-4-2|EM Theorem §C7.4.2]], [[§C7.5★ Logarithmic Potentials and the Poisson–Boltzmann Equation#^thm-c7-5-4|EM Theorem §C7.5.4]].
->   - Defs. §CA.2.4–§CA.2.7 (operations: derivative, product with a smooth function, limit, transform): field equations in weak form, Poisson's equation as an identity of distributions, multipole and polarization densities — [[§C1.2 The Field Equations and the Bianchi Identity#^thm-c1-2-2|EM Theorem §C1.2.2]], [[§C1.3 Gauge Symmetry and Charge Conservation#^thm-c1-3-1|EM Theorem §C1.3.1]], [[§C1.3 Gauge Symmetry and Charge Conservation#^ex-c1-3-1|EM Example §C1.3.1]], [[§C2.1 The Static Limit and the Field of a Charge Distribution#^thm-c2-1-2|EM Theorem §C2.1.2]], [[§C2.2 Gauss's Law and the Solid Angle#^thm-c2-2-4|EM Theorem §C2.2.4]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^mod-c3-1-2|EM Model §C3.1.2]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-3|EM Theorem §C3.1.3]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^mod-c3-1-5|EM Model §C3.1.5]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-6|EM Theorem §C3.1.6]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-9|EM Theorem §C3.1.9]], [[§C4.3 The Capacitance Matrix#^thm-c4-3-3|EM Theorem §C4.3.3]], [[§C5.1 Polarization Charge and the Polarization#^thm-c5-1-2|EM Theorem §C5.1.2]], [[§C6.1 Potential Theory and Uniqueness#^thm-c6-1-2|EM Theorem §C6.1.2]], [[§C7.1 The Method of Images#^thm-c7-1-1|EM Theorem §C7.1.1]], [[§C7.3 Green Functions for Poisson’s Equation#^def-c7-3-1|EM Def. §C7.3.1]].
+>   - Defs. §CA.2.7–§CA.2.10 (operations: derivative, product with a smooth function, limit, transform): field equations in weak form, Poisson's equation as an identity of distributions, multipole and polarization densities — [[§C1.2 The Field Equations and the Bianchi Identity#^thm-c1-2-2|EM Theorem §C1.2.2]], [[§C1.3 Gauge Symmetry and Charge Conservation#^thm-c1-3-1|EM Theorem §C1.3.1]], [[§C1.3 Gauge Symmetry and Charge Conservation#^ex-c1-3-1|EM Example §C1.3.1]], [[§C2.1 The Static Limit and the Field of a Charge Distribution#^thm-c2-1-2|EM Theorem §C2.1.2]], [[§C2.2 Gauss's Law and the Solid Angle#^thm-c2-2-4|EM Theorem §C2.2.4]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^mod-c3-1-2|EM Model §C3.1.2]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-3|EM Theorem §C3.1.3]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^mod-c3-1-5|EM Model §C3.1.5]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-6|EM Theorem §C3.1.6]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-9|EM Theorem §C3.1.9]], [[§C4.3 The Capacitance Matrix#^thm-c4-3-3|EM Theorem §C4.3.3]], [[§C5.1 Polarization Charge and the Polarization#^thm-c5-1-2|EM Theorem §C5.1.2]], [[§C6.1 Potential Theory and Uniqueness#^thm-c6-1-2|EM Theorem §C6.1.2]], [[§C7.1 The Method of Images#^thm-c7-1-1|EM Theorem §C7.1.1]], [[§C7.3 Green Functions for Poisson’s Equation#^def-c7-3-1|EM Def. §C7.3.1]].
 >   - Theorem §CA.2.5 (distributional limits): the point dipole as a limit, closure relations, the Poisson kernel as a nascent delta — [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^mod-c3-1-2|EM Model §C3.1.2]], [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]], [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-3|EM Theorem §C6.2.3]], [[§C7.3 Green Functions for Poisson’s Equation#^thm-c7-3-5|EM Theorem §C7.3.5]], [[§C7.4 Constructing Green Functions#^thm-c7-4-1|EM Theorem §C7.4.1]].
->   - Defs. §CA.2.8, §CA.2.9 and Theorem §CA.2.6 (changes of variables, composition): the field of a point dipole, the current of a point charge, line sources — [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-4|EM Theorem §C3.1.4]], [[§C1.1 Building the Maxwell Action#^thm-c1-1-6|EM Theorem §C1.1.6]], [[§C7.5★ Logarithmic Potentials and the Poisson–Boltzmann Equation#^thm-c7-5-1|EM Theorem §C7.5.1]].
+>   - Defs. §CA.2.11, §CA.2.12 and Theorem §CA.2.6 (changes of variables, composition): the field of a point dipole, the current of a point charge, line sources — [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-4|EM Theorem §C3.1.4]], [[§C1.1 Building the Maxwell Action#^thm-c1-1-6|EM Theorem §C1.1.6]], [[§C7.5★ Logarithmic Potentials and the Poisson–Boltzmann Equation#^thm-c7-5-1|EM Theorem §C7.5.1]].
 >   - Theorem §CA.2.3 (integration by parts): the Coulomb force from the potential energy, the second derivatives of $1/r$, the dipole layer — [[§C2.3 Electrostatic Energy and Self-Energy#^thm-c2-3-1|EM Theorem §C2.3.1]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-3|EM Theorem §C3.1.3]], [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-9|EM Theorem §C3.1.9]].
-> - **Used in** (C6b places, Lecture 15): Theorems §CA.2.2–§CA.2.3 — the $S$-matrix conserves four-momentum, only $\delta^4$ itself survives ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]); Theorem §CA.2.6 — the longitudinal Jacobian $1/\lvert\mathbf v_A - \mathbf v_B\rvert$, the invariance of $\delta^4$, two-body phase space ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1|Theorem §C6b.9.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-6|Theorem §C6b.1.6]], [[§C6b.3 The Cross Section#^thm-c6b-3-8|Theorem §C6b.3.8]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]), [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]], [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|Example §C6b.6.1]], [[§C6b.6 Decay Kinematics#^thm-c6b-6-5|★ Theorem §C6b.6.5]], [[§C6b.9 Evaluating the Cross Section#^cau-c6b-9-2|§C6b.9, Caution: 1/f′(0) on slide 14]]; Theorem §CA.2.5 — the Breit–Wigner shape as a nascent delta function ([[§C6b.7 The Width in the Propagator#^thm-c6b-7-4|Theorem §C6b.7.4]]); Def. §CA.2.1 — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-3|§C6b.1, Caution: Names for the S-matrix, the T-matrix and the amplitude]]; Def. §CA.2.4 — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]; Def. §CA.2.5 — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]].
+> - **Used in** (C6b places, Lecture 15): Theorems §CA.2.2–§CA.2.3 — the $S$-matrix conserves four-momentum, only $\delta^4$ itself survives ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]); Theorem §CA.2.6 — the longitudinal Jacobian $1/\lvert\mathbf v_A - \mathbf v_B\rvert$, the invariance of $\delta^4$, two-body phase space ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1|Theorem §C6b.9.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-6|Theorem §C6b.1.6]], [[§C6b.3 The Cross Section#^thm-c6b-3-8|Theorem §C6b.3.8]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]), [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]], [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|Example §C6b.6.1]], [[§C6b.6 Decay Kinematics#^thm-c6b-6-5|★ Theorem §C6b.6.5]], [[§C6b.9 Evaluating the Cross Section#^cau-c6b-9-2|§C6b.9, Caution: 1/f′(0) on slide 14]]; Theorem §CA.2.5 — the Breit–Wigner shape as a nascent delta function ([[§C6b.7 The Width in the Propagator#^thm-c6b-7-4|Theorem §C6b.7.4]]); Def. §CA.2.1 — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-3|§C6b.1, Caution: Names for the S-matrix, the T-matrix and the amplitude]]; Def. §CA.2.7 — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]; Def. §CA.2.8 — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]].
 > - **Used in** (C6c places): Theorem §CA.2.6 — [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2|Theorem §C6c.4.2]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-2|Theorem §C6c.7.2]].

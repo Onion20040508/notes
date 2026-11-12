@@ -51,7 +51,7 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 > U(z, \mathbf x) = \frac{i\,m^2\,z\,K_2(ms)}{2\pi^2s^2}, \qquad s = \sqrt{r^2 - z^2}\quad\text{(principal branch, }\operatorname{Re}s > 0\text{)},
 > $$
 >
-> with $K_2$ of [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]] and $s$ as in [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], and $U = iz/\pi^2(r^2 - z^2)^2$ for $m = 0$. Every value of $U$ at real time is a boundary value of this one function: outside the light cone [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|Theorem §C2b.4.3]], inside it [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-5|Theorem §C2b.4.5]].
+> with $K_2$ of [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|Def. §CA.6.2]] and $s$ as in [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], and $U = iz/\pi^2(r^2 - z^2)^2$ for $m = 0$. Every value of $U$ at real time is a boundary value of this one function: outside the light cone [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|Theorem §C2b.4.3]], inside it [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-5|Theorem §C2b.4.5]].
 >
 > *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]]), not a field; *applies:* exact, a statement about the analytic function $U$ of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]]; $m = 0$ included; states of weight $1$ (not relativistically normalized).
 >
@@ -62,7 +62,7 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 > [!derivation]- Derivation
 > **Step 1** ($W$ in the lower half-plane). By [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], for $\operatorname{Im}z < 0$, $W(z, \mathbf x) = \frac{m}{4\pi^2}\,G(s)$ with $G(s) = \frac{K_1(ms)}{s}$ and $s = \sqrt{r^2 - z^2}$ (principal branch, $\operatorname{Re}s > 0$), an analytic function of $z$.
 >
-> **Step 2** (two derivatives). $\partial_zs = \frac{-2z}{2s} = -\frac zs$. With $w = ms$, $G = m\,w^{-1}K_1(w)$, and $\frac{d}{dw}\bigl[w^{-1}K_1(w)\bigr] = -w^{-1}K_2(w)$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 1 with $\nu = 1$), so $\frac{dG}{ds} = m\cdot m\cdot\bigl(-w^{-1}K_2(w)\bigr) = -\frac{mK_2(ms)}{s}$.
+> **Step 2** (two derivatives). $\partial_zs = \frac{-2z}{2s} = -\frac zs$. With $w = ms$, $G = m\,w^{-1}K_1(w)$, and $\frac{d}{dw}\bigl[w^{-1}K_1(w)\bigr] = -w^{-1}K_2(w)$ ([[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|Theorem §CA.6.4]], 1 with $\nu = 1$), so $\frac{dG}{ds} = m\cdot m\cdot\bigl(-w^{-1}K_2(w)\bigr) = -\frac{mK_2(ms)}{s}$.
 >
 > **Step 3** (the amplitude in the lower half-plane). By the chain rule and [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|Theorem §C2b.4.1]],
 >
@@ -83,7 +83,7 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 
 ^der-c2b-4-2
 
-*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|Theorem §C2b.4.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]
+*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|Theorem §C2b.4.1]], [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|Theorem §CA.6.4]], [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|Def. §CA.6.2]]
 
 > [!theorem] Theorem §C2b.4.3: The Relativistic Amplitude at Spacelike Separation
 > For $r > |t|$, with $\rho = \sqrt{r^2 - t^2} = \sqrt{-x^2}$,
@@ -92,7 +92,7 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 > U(t, \mathbf x) = \frac{i\,m^2\,t}{2\pi^2\rho^2}\,K_2(m\rho),
 > $$
 >
-> a smooth function there ($K_2$: [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]), purely imaginary and odd in $t$, depending on the point only through the invariant $\rho$ and the factor $t$. Equivalently (cut representation, absolutely convergent), $U = \frac{i}{2\pi^2r}\int_m^\infty d\varrho\,\varrho\,e^{-\varrho r}\sinh\bigl(t\sqrt{\varrho^2 - m^2}\bigr)$. For $m\rho \ll 1$, $U \simeq it/\pi^2\rho^4$; for $m = 0$ the formula $U = it/\pi^2(r^2 - t^2)^2$ is exact at every point off the light cone.
+> a smooth function there ($K_2$: [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|Def. §CA.6.2]]), purely imaginary and odd in $t$, depending on the point only through the invariant $\rho$ and the factor $t$. Equivalently (cut representation, absolutely convergent), $U = \frac{i}{2\pi^2r}\int_m^\infty d\varrho\,\varrho\,e^{-\varrho r}\sinh\bigl(t\sqrt{\varrho^2 - m^2}\bigr)$. For $m\rho \ll 1$, $U \simeq it/\pi^2\rho^4$; for $m = 0$ the formula $U = it/\pi^2(r^2 - t^2)^2$ is exact at every point off the light cone.
 >
 > *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]]), not a field; *applies:* exact; $m > 0$ for the $K_2$ form, $m = 0$ stated separately; states of weight $1$ (not relativistically normalized).
 >
@@ -101,11 +101,11 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 ^thm-c2b-4-3
 
 > [!derivation]- Derivation
-> **Step 1** (the spacelike limit). Put $z = t - i\varepsilon$ in [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-2|Theorem §C2b.4.2]]: $s^2 = r^2 - t^2 + 2i\varepsilon t + \varepsilon^2 \to \rho^2 > 0$, away from the cut of $\sqrt{\ }$ and of $K_2$ (as in Steps 1–2 of [[§C2b.3 Explicit Forms of the Wightman Function#^der-c2b-3-3|Derivation §C2b.3.3]]). The function there is continuous at these $s^2$, so the limit is locally uniform on the open set $\{r > |t|\}$; integrated against a test function supported in that set it converges to the integral of the limit, so the distribution $U$ is this function there ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]; the same argument as Step 6 of [[§C2b.3 Explicit Forms of the Wightman Function#^der-c2b-3-2|Derivation §C2b.3.2]]). With $s \to \rho$, $z \to t$: the formula of the theorem.
+> **Step 1** (the spacelike limit). Put $z = t - i\varepsilon$ in [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-2|Theorem §C2b.4.2]]: $s^2 = r^2 - t^2 + 2i\varepsilon t + \varepsilon^2 \to \rho^2 > 0$, away from the cut of $\sqrt{\ }$ and of $K_2$ (as in Steps 1–2 of [[§C2b.3 Explicit Forms of the Wightman Function#^der-c2b-3-3|Derivation §C2b.3.3]]). The function there is continuous at these $s^2$, so the limit is locally uniform on the open set $\{r > |t|\}$; integrated against a test function supported in that set it converges to the integral of the limit, so the distribution $U$ is this function there ([[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]]; the same argument as Step 6 of [[§C2b.3 Explicit Forms of the Wightman Function#^der-c2b-3-2|Derivation §C2b.3.2]]). With $s \to \rho$, $z \to t$: the formula of the theorem.
 >
-> **Step 2** (imaginary and odd). $K_2(x) = \int_0^\infty e^{-x\cosh u}\cosh2u\,du > 0$ for $x > 0$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]), and $\rho$ is even in $t$; so $U/i$ is real with the sign of $t$.
+> **Step 2** (imaginary and odd). $K_2(x) = \int_0^\infty e^{-x\cosh u}\cosh2u\,du > 0$ for $x > 0$ ([[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|Def. §CA.6.2]]), and $\rho$ is even in $t$; so $U/i$ is real with the sign of $t$.
 >
-> **Step 3** (short distance). $K_2(w) \simeq \frac12\Gamma(2)(2/w)^2 = 2/w^2$ for $w \to 0$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 3), so $U \simeq \frac{im^2t}{2\pi^2\rho^2}\cdot\frac{2}{m^2\rho^2} = \frac{it}{\pi^2\rho^4}$.
+> **Step 3** (short distance). $K_2(w) \simeq \frac12\Gamma(2)(2/w)^2 = 2/w^2$ for $w \to 0$ ([[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|Theorem §CA.6.4]], 3), so $U \simeq \frac{im^2t}{2\pi^2\rho^2}\cdot\frac{2}{m^2\rho^2} = \frac{it}{\pi^2\rho^4}$.
 >
 > **Step 4** ($m = 0$). By Theorem §C2b.4.2, $U(z, \mathbf x) = \frac{iz}{\pi^2(r^2 - z^2)^2}$ in the lower half-plane. The boundary value at $z = t - i\varepsilon$ is $\frac{it}{\pi^2(r^2 - t^2)^2}$ at every point with $r \neq |t|$, inside the cone as well, since only $(r^2 - z^2)^2$ appears.
 >
@@ -118,7 +118,7 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 
 ^der-c2b-4-3
 
-*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|Theorem §C2b.4.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]], [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]
+*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|Theorem §C2b.4.1]], [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|Theorem §CA.6.4]], [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|Def. §CA.6.2]], [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]]
 
 > [!derivation]- Derivation (second route: around the branch cut, in real variables)
 > This is the user's head-on computation of the lecture's integral; it shows where the spacelike condition enters. Take $r > |t|$ and keep $z = t - i\varepsilon$, $\varepsilon > 0$, until Step 5.
@@ -127,11 +127,11 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 >
 > **Step 2** (the branch). As a function of complex $p$, $E_p = \sqrt{p^2 + m^2}$ has branch points at $\pm im$; take the cuts along the imaginary axis from $im$ to $i\infty$ and from $-im$ to $-i\infty$, with the branch positive on the real axis. On the upper half-plane minus its cut $E_p$ is analytic, $E_p = p + O(1/p)$ for $\operatorname{Re}p > 0$ and $E_p = -p + O(1/p)$ for $\operatorname{Re}p < 0$ as $|p| \to \infty$. On the lips, $p = i\varrho \pm 0$ with $\varrho > m$: $E_p = +is$ just right of the cut and $-is$ just left, $s = \sqrt{\varrho^2 - m^2} > 0$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], second route, Step 5).
 >
-> **Step 3** (the arc vanishes exactly outside the cone). On $p = Le^{i\theta}$, $0 \le \theta \le \pi/2$: $i(pr - zE_p) = ip(r - t + i\varepsilon) + O(1/L)$, of real part $-L\bigl[(r - t)\sin\theta + \varepsilon\cos\theta\bigr] + O(1/L)$. For $\pi/2 \le \theta \le \pi$: $i(pr - zE_p) = ip(r + t - i\varepsilon) + O(1/L)$, of real part $-L\bigl[(r + t)\sin\theta + \varepsilon|\cos\theta|\bigr] + O(1/L)$. If $r > |t|$ both brackets are at least $c = \min(r - |t|, \varepsilon) > 0$ (since $\sin\theta + |\cos\theta| \ge 1$), so on the arc $|p\,e^{i(pr - zE_p)}| \le C\,L\,e^{-cL}$, and the arc integral is at most $\pi L\cdot CLe^{-cL} \to 0$ (ML, [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]). If $r < |t|$, one bracket is negative near $\theta = \pi/2$ and the arc grows: the contour cannot be closed.
+> **Step 3** (the arc vanishes exactly outside the cone). On $p = Le^{i\theta}$, $0 \le \theta \le \pi/2$: $i(pr - zE_p) = ip(r - t + i\varepsilon) + O(1/L)$, of real part $-L\bigl[(r - t)\sin\theta + \varepsilon\cos\theta\bigr] + O(1/L)$. For $\pi/2 \le \theta \le \pi$: $i(pr - zE_p) = ip(r + t - i\varepsilon) + O(1/L)$, of real part $-L\bigl[(r + t)\sin\theta + \varepsilon|\cos\theta|\bigr] + O(1/L)$. If $r > |t|$ both brackets are at least $c = \min(r - |t|, \varepsilon) > 0$ (since $\sin\theta + |\cos\theta| \ge 1$), so on the arc $|p\,e^{i(pr - zE_p)}| \le C\,L\,e^{-cL}$, and the arc integral is at most $\pi L\cdot CLe^{-cL} \to 0$ (ML, [[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]]). If $r < |t|$, one bracket is negative near $\theta = \pi/2$ and the arc grows: the contour cannot be closed.
 >
-> ⚑ By-product: the damping $\varepsilon > 0$ is needed on the arc near $\theta = 0$ and $\pi$, where $\sin\theta \to 0$; the factor $p$, which does not tend to zero, rules out Jordan's lemma without it ([[§CA.4 Contour Integration#^cau-ca-4-1|§CA.4, Caution: Jordan's lemma needs g → 0]]). The spacelike condition $r > |t|$ is exactly the condition for the arc to vanish.
+> ⚑ By-product: the damping $\varepsilon > 0$ is needed on the arc near $\theta = 0$ and $\pi$, where $\sin\theta \to 0$; the factor $p$, which does not tend to zero, rules out Jordan's lemma without it ([[§CA.5 Contour Integration#^cau-ca-5-1|§CA.5, Caution: Jordan's lemma needs g → 0]]). The spacelike condition $r > |t|$ is exactly the condition for the arc to vanish.
 >
-> **Step 4** (the keyhole). Integrate counterclockwise around $[-L, L]$, the arc to $iL$, down the right lip to $im$, around a small circle at $im$, up the left lip to $iL$, and the arc to $-L$ ([[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]]; the contour of the figure in [[§CA.4 Contour Integration|§CA.4]]). The integrand is analytic inside, so the total is $0$ ([[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]). The small circle contributes $O(\delta)$ (bounded integrand, length $2\pi\delta$), the arcs $\to 0$ by Step 3. On the lips $p = i\varrho$, $dp = i\,d\varrho$, $p = i\varrho$:
+> **Step 4** (the keyhole). Integrate counterclockwise around $[-L, L]$, the arc to $iL$, down the right lip to $im$, around a small circle at $im$, up the left lip to $iL$, and the arc to $-L$ ([[§CA.5 Contour Integration#^thm-ca-5-8|Theorem §CA.5.8]]; the contour of the figure in [[§CA.5 Contour Integration|§CA.5]]). The integrand is analytic inside, so the total is $0$ ([[§CA.5 Contour Integration#^thm-ca-5-2|Theorem §CA.5.2]]). The small circle contributes $O(\delta)$ (bounded integrand, length $2\pi\delta$), the arcs $\to 0$ by Step 3. On the lips $p = i\varrho$, $dp = i\,d\varrho$, $p = i\varrho$:
 >
 > $$
 > \text{right lip } (E_p = is):\ i(pr - zE_p) = -\varrho r + zs, \qquad \int_L^m i\,d\varrho\,(i\varrho)\,e^{-\varrho r + zs} = \int_m^L\varrho\,e^{-\varrho r + zs}\,d\varrho ;
@@ -163,7 +163,7 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 > \frac{m^2}{4}\int_{-\infty}^\infty dv\,\sinh(2v + 2\chi)\,e^{-m\rho\cosh v} .
 > $$
 >
-> **Step 8** (the Bessel function). $\sinh(2v + 2\chi) = \sinh2v\cosh2\chi + \cosh2v\sinh2\chi$. The first term is odd in $v$ and absolutely integrable: it gives $0$. The second gives $\sinh2\chi\int_{-\infty}^\infty\cosh2v\,e^{-m\rho\cosh v}dv = 2\sinh2\chi\,K_2(m\rho)$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]], $\nu = 2$). With $\sinh2\chi = 2\sinh\chi\cosh\chi = 2tr/\rho^2$ the integral is $\frac{m^2}{4}\cdot2\cdot\frac{2tr}{\rho^2}K_2(m\rho) = \frac{m^2tr}{\rho^2}K_2(m\rho)$.
+> **Step 8** (the Bessel function). $\sinh(2v + 2\chi) = \sinh2v\cosh2\chi + \cosh2v\sinh2\chi$. The first term is odd in $v$ and absolutely integrable: it gives $0$. The second gives $\sinh2\chi\int_{-\infty}^\infty\cosh2v\,e^{-m\rho\cosh v}dv = 2\sinh2\chi\,K_2(m\rho)$ ([[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|Def. §CA.6.2]], $\nu = 2$). With $\sinh2\chi = 2\sinh\chi\cosh\chi = 2tr/\rho^2$ the integral is $\frac{m^2}{4}\cdot2\cdot\frac{2tr}{\rho^2}K_2(m\rho) = \frac{m^2tr}{\rho^2}K_2(m\rho)$.
 >
 > **Step 9** (assemble). $U = \frac{i}{2\pi^2r}\cdot\frac{m^2tr}{\rho^2}K_2(m\rho) = \frac{i\,m^2t}{2\pi^2\rho^2}K_2(m\rho)$.
 >
@@ -174,7 +174,7 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (Derivation "The same result directly from the radial integral", Steps 1–3, and Fig. 2.2)*
 
-*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]
+*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§CA.5 Contour Integration#^thm-ca-5-2|Theorem §CA.5.2]], [[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]], [[§CA.5 Contour Integration#^thm-ca-5-8|Theorem §CA.5.8]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|Def. §CA.6.2]]
 
 > [!theorem] Theorem §C2b.4.4: The Spacelike Amplitude at Large Distance
 > For $r > |t|$ and $m\rho \gg 1$, $\rho = \sqrt{r^2 - t^2}$,
@@ -192,7 +192,7 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 ^thm-c2b-4-4
 
 > [!derivation]- Derivation
-> **Step 1** (the large-argument form). $K_2(w) = \sqrt{\pi/2w}\,e^{-w}\bigl[1 + \frac{4\cdot2^2 - 1}{8w} + \cdots\bigr] = \sqrt{\pi/2w}\,e^{-w}\bigl[1 + \frac{15}{8w} + \cdots\bigr]$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 2 with $\nu = 2$).
+> **Step 1** (the large-argument form). $K_2(w) = \sqrt{\pi/2w}\,e^{-w}\bigl[1 + \frac{4\cdot2^2 - 1}{8w} + \cdots\bigr] = \sqrt{\pi/2w}\,e^{-w}\bigl[1 + \frac{15}{8w} + \cdots\bigr]$ ([[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|Theorem §CA.6.4]], 2 with $\nu = 2$).
 >
 > **Step 2** (insert). Into [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|Theorem §C2b.4.3]] with $w = m\rho$:
 >
@@ -208,7 +208,7 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 
 ^der-c2b-4-4
 
-*Uses:* [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]]
+*Uses:* [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|Theorem §CA.6.4]]
 
 > [!theorem] Theorem §C2b.4.5: The Relativistic Amplitude at Timelike Separation
 > For $|t| > r$, with $\tau = \sqrt{t^2 - r^2}$,
@@ -217,7 +217,7 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 > U(t, \mathbf x) = \frac{m^2\,t}{4\pi\tau^2}\,H^{(2)}_2(m\tau)\quad (t > 0), \qquad U(-t, \mathbf x) = \overline{U(t, \mathbf x)} ,
 > $$
 >
-> an oscillating function ($H^{(2)}_2$: [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]; imaginary argument: [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]], 3), $U \simeq \frac{m^{3/2}t}{(2\pi\tau)^{3/2}\tau}\,e^{-i(m\tau - 5\pi/4)}$ for $t > 0$, $m\tau \gg 1$. On the light cone $U$ is singular and is defined only as the boundary value of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]].
+> an oscillating function ($H^{(2)}_2$: [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|Def. §CA.6.2]]; imaginary argument: [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-5|Theorem §CA.6.5]], 3), $U \simeq \frac{m^{3/2}t}{(2\pi\tau)^{3/2}\tau}\,e^{-i(m\tau - 5\pi/4)}$ for $t > 0$, $m\tau \gg 1$. On the light cone $U$ is singular and is defined only as the boundary value of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]].
 >
 > *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]]), not a field; *applies:* exact, $m > 0$; the asymptotic form for $m\tau \gg 1$.
 >
@@ -234,9 +234,9 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 > U = \frac{i\,m^2t\,K_2(im\tau)}{2\pi^2(-\tau^2)} = -\frac{i\,m^2t}{2\pi^2\tau^2}K_2(im\tau) .
 > $$
 >
-> The connection formula $K_\nu(ix) = \frac\pi2(-i)^{\nu+1}H^{(2)}_\nu(x)$ for $x > 0$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]], 3) with $\nu = 2$ and $(-i)^3 = i$ gives $K_2(im\tau) = \frac{i\pi}{2}H^{(2)}_2(m\tau)$, so $U = -\frac{im^2t}{2\pi^2\tau^2}\cdot\frac{i\pi}{2}H^{(2)}_2 = \frac{m^2t}{4\pi\tau^2}H^{(2)}_2(m\tau)$.
+> The connection formula $K_\nu(ix) = \frac\pi2(-i)^{\nu+1}H^{(2)}_\nu(x)$ for $x > 0$ ([[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-5|Theorem §CA.6.5]], 3) with $\nu = 2$ and $(-i)^3 = i$ gives $K_2(im\tau) = \frac{i\pi}{2}H^{(2)}_2(m\tau)$, so $U = -\frac{im^2t}{2\pi^2\tau^2}\cdot\frac{i\pi}{2}H^{(2)}_2 = \frac{m^2t}{4\pi\tau^2}H^{(2)}_2(m\tau)$.
 >
-> **Step 3** ($t < 0$). By [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], $\overline{U(t, \mathbf x)} = \int\frac{d^3p}{(2\pi)^3}e^{+iE_{\mathbf p}t - i\mathbf p\cdot\mathbf x} = U(-t, -\mathbf x)$ (complex conjugation of the transform of $e^{-iE_{\mathbf p}t}$, an identity in $\mathcal S'$). $E_{\mathbf p}$ is even in $\mathbf p$, so $U(-t, \cdot)$ is even in $\mathbf x$ (substitute $\mathbf p \to -\mathbf p$, Jacobian $1$: [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1), and $U(-t, -\mathbf x) = U(-t, \mathbf x)$.
+> **Step 3** ($t < 0$). By [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], $\overline{U(t, \mathbf x)} = \int\frac{d^3p}{(2\pi)^3}e^{+iE_{\mathbf p}t - i\mathbf p\cdot\mathbf x} = U(-t, -\mathbf x)$ (complex conjugation of the transform of $e^{-iE_{\mathbf p}t}$, an identity in $\mathcal S'$). $E_{\mathbf p}$ is even in $\mathbf p$, so $U(-t, \cdot)$ is even in $\mathbf x$ (substitute $\mathbf p \to -\mathbf p$, Jacobian $1$: [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], 1), and $U(-t, -\mathbf x) = U(-t, \mathbf x)$.
 >
 > **Step 4** (late proper times). $H^{(2)}_2(x) \simeq \sqrt{2/\pi x}\,e^{-i(x - 5\pi/4)}$ for $x \to \infty$ (DLMF §10.17), so $|U| \simeq \frac{m^2t}{4\pi\tau^2}\sqrt{\frac{2}{\pi m\tau}} = \frac{\sqrt2\,m^{3/2}t}{4\pi^{3/2}\tau^{5/2}} = \frac{m^{3/2}t}{(2\pi\tau)^{3/2}\tau}$, using $\sqrt2/4 = 2^{-3/2}$.
 >
@@ -248,7 +248,7 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 
 ^der-c2b-4-5
 
-*Uses:* [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|Theorem §C2b.4.1]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]
+*Uses:* [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-5|Theorem §CA.6.5]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], [[§C2b.4 The Single-Particle Amplitude in Closed Form#^thm-c2b-4-1|Theorem §C2b.4.1]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]
 
 ![[ph-qft-c1-3-1.svg]]
 *The single-particle amplitude at fixed $mt = 3$ (units $m = 1$): inside the cone (shaded) the Hankel form of Theorem §C2b.4.5, outside the $K_2$ form of Theorem §C2b.4.3 with its leading asymptotic term (dashed, Theorem §C2b.4.4; Theorem §C1a.3.7). It is singular on the cone and leaks outside it over the Compton wavelength $1/m$. Adapted from the user's PHY 513 notes, Fig. 2.3; recomputed from the closed forms, which were checked against the mode integral at complex $t$.*
@@ -278,15 +278,15 @@ What are the exact values of the single-particle amplitude of [[§C1a.3 Causal S
 > Proved in CA; each line says what the physics above relies on.
 >
 > - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — dominated convergence: the damping $\varepsilon$ is removed under the integral of the cut representation (second route of Theorem §C2b.4.3, Step 5).
-> - [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]] (support and singular support) states where $U$ is a function: everywhere except the light cone.
+> - [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]] (support and singular support) states where $U$ is a function: everywhere except the light cone.
 > - [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]] — derivatives commute with distributional limits: $U = 2i\,\partial_tD_W$ as a boundary value (Theorem §C2b.4.1).
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1 — relabelling $\mathbf p \to -\mathbf p$ with Jacobian $1$: $U(-t, \cdot)$ is even in $\mathbf x$ (Theorem §C2b.4.5).
-> - [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]] — Cauchy's theorem for the keyhole contour of the second route.
-> - [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.4 Contour Integration#^cau-ca-4-1|§CA.4, Caution: Jordan's lemma needs g → 0]] — closing the contour: with the factor $p$ in the integrand the arcs vanish only with the damping $\varepsilon$, and only outside the light cone.
-> - [[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]] — integrals around a branch cut: the two lips of the cut from $im$ (second route).
-> - [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]] — $K_\nu$ by its integral representation, with $H^{(2)}_\nu$: the functions of every closed form here.
-> - [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]] — properties of $K_\nu$: the derivative identity that turns $K_1$ into $K_2$, and the small- and large-argument forms ($2/w^2$; $e^{-m\rho}$ with the correction $15/8m\rho$).
-> - [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]], 3 — $K_\nu(ix)$ in terms of $H^{(2)}_\nu$: the timelike form.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], 1 — relabelling $\mathbf p \to -\mathbf p$ with Jacobian $1$: $U(-t, \cdot)$ is even in $\mathbf x$ (Theorem §C2b.4.5).
+> - [[§CA.5 Contour Integration#^thm-ca-5-2|Theorem §CA.5.2]] — Cauchy's theorem for the keyhole contour of the second route.
+> - [[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]], [[§CA.5 Contour Integration#^cau-ca-5-1|§CA.5, Caution: Jordan's lemma needs g → 0]] — closing the contour: with the factor $p$ in the integrand the arcs vanish only with the damping $\varepsilon$, and only outside the light cone.
+> - [[§CA.5 Contour Integration#^thm-ca-5-8|Theorem §CA.5.8]] — integrals around a branch cut: the two lips of the cut from $im$ (second route).
+> - [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-6-2|Def. §CA.6.2]] — $K_\nu$ by its integral representation, with $H^{(2)}_\nu$: the functions of every closed form here.
+> - [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-4|Theorem §CA.6.4]] — properties of $K_\nu$: the derivative identity that turns $K_1$ into $K_2$, and the small- and large-argument forms ($2/w^2$; $e^{-m\rho}$ with the correction $15/8m\rho$).
+> - [[§CA.6 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-6-5|Theorem §CA.6.5]], 3 — $K_\nu(ix)$ in terms of $H^{(2)}_\nu$: the timelike form.
 
 > [!remark]- Connections
 > - The exact amplitude confirms the lecture's saddle point: its leading term at large distance is the estimate found there, and the leak outside the light cone is real, a violation of the causality principle by single-particle relativistic quantum mechanics — [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|Theorem §C1a.3.7]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]].

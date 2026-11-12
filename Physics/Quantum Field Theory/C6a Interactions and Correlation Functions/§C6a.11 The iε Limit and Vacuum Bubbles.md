@@ -13,9 +13,9 @@ tags: [quantum-field-theory, level-c]
 
 The rules of [[§C6a.8 Position-Space Feynman Rules|§C6a.8]] and [[§C6a.10 Feynman Rules in Momentum Space|§C6a.10]] were derived for the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]) as if its time integrals ran over the real line and as if there were no denominator. What happened to the limit and to the denominator? These are the two fine points of Part C. The limit $T \to \infty(1 - i\varepsilon)$ tilts every vertex time slightly below the real axis; keeping the vertex integrals well defined forces every energy to be integrated slightly above it, which is the Feynman prescription already built into $D_F$. The denominator is the sum of the diagrams with no external points, the vacuum bubbles, each proportional to the volume of spacetime; the numerator factorizes into the diagrams attached to the external points times the same sum, so the bubbles cancel: the interacting correlator is the sum of the diagrams attached to the external points. What the cancelled bubbles are, the exponential of the connected ones and the energy density of the interacting vacuum, is [[§C6a.12 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density|§C6a.12]]. Yu has no $T(1 - i\varepsilon)$ limit: his correlation functions are built from asymptotic in-fields with a phase normalization $\mathcal N$ (eqs. (10.177)–(10.181)). His cancellation of the bubbles, eqs. (10.193)–(10.197), splits the contractions binomially, and that is the proof written here. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
 
-*Conventions* ([[Larsen PHY 513]]): as in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]; numerator and denominator are formal power series in $\lambda$; $V$ is the volume of space and $2T$ the length of the time interval, both taken finite and then large (a box, [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]); $E_0$ is the ground-state energy of $\hat H$ measured from $\hat H_0|0\rangle = 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]]; not the zero-point energy, [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^cau-c6a-4-1|§C6a.4, Caution: Two E₀'s]]).
+*Conventions* ([[Larsen PHY 513]]): as in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]; numerator and denominator are formal power series in $\lambda$; $V$ is the volume of space and $2T$ the length of the time interval, both taken finite and then large (a box, [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]]); $E_0$ is the ground-state energy of $\hat H$ measured from $\hat H_0|0\rangle = 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]]; not the zero-point energy, [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^cau-c6a-4-1|§C6a.4, Caution: Two E₀'s]]).
 
-A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta^3(\mathbf 0) \leftrightarrow V$ ([[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]). The splitting of a pairing into its attached and vacuum parts, and the factorization of sums over pairings it implies, are proved in [[§CA.8 Splitting Pairings and the Exponential Formula|§CA.8]] and linked in the derivations; these three and the other CA results used (the exponential formula, the $i\varepsilon$ limits, the Fourier rules) are listed at the end.
+A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta^3(\mathbf 0) \leftrightarrow V$ ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]]). The splitting of a pairing into its attached and vacuum parts, and the factorization of sums over pairings it implies, are proved in [[§CA.9 Splitting Pairings and the Exponential Formula|§CA.9]] and linked in the derivations; these three and the other CA results used (the exponential formula, the $i\varepsilon$ limits, the Fourier rules) are listed at the end.
 
 ## Fine point 1: the limit
 
@@ -66,7 +66,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > \int dz^0\,e^{i\sum_jp_j^0z^0} = (1 - i\varepsilon)\int_{-T}^Td\tau\,e^{is_{\rm in}\tau} = (1 - i\varepsilon)\,\frac{2\sin(s_{\rm in}T)}{s_{\rm in}} \;\xrightarrow{T\to\infty}\; (1 - i\varepsilon)\,2\pi\,\delta(s_{\rm in})
 > $$
 >
-> ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], as the limit of box integrals). Using this delta to do one energy integral, say $s_4$,
+> ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], as the limit of box integrals). Using this delta to do one energy integral, say $s_4$,
 >
 > $$
 > \int\frac{dp_4^0}{2\pi}\,(1 - i\varepsilon)\,2\pi\,\delta(s_1 + \dots + s_4)\,g(s_4) = \int\frac{ds_4}{2\pi(1 - i\varepsilon)}\,(1 - i\varepsilon)\,2\pi\,\delta(s_1 + \dots + s_4)\,g(s_4) = g(-s_1 - s_2 - s_3) :
@@ -80,7 +80,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > (p^0)^2 = \frac{s^2}{(1 - i\varepsilon)^2} = s^2\bigl(1 + 2i\varepsilon + O(\varepsilon^2)\bigr), \qquad p^2 - m^2 = s^2 - \mathbf p^2 - m^2 + 2i\varepsilon s^2 + O(\varepsilon^2) .
 > $$
 >
-> The coefficient $2s^2$ of $i\varepsilon$ is positive, and only the sign of the infinitesimal near the mass shell matters ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 3): this is $p^2 - m^2 + i\varepsilon$.
+> The coefficient $2s^2$ of $i\varepsilon$ is positive, and only the sign of the infinitesimal near the mass shell matters ([[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]], 3): this is $p^2 - m^2 + i\varepsilon$.
 >
 > **Step 5** (as a contour). The tilted line is the real axis rotated counterclockwise by $\arg\frac{1}{1 - i\varepsilon} = \arctan\varepsilon$:
 >
@@ -98,13 +98,13 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 
 ^der-c6a-11-1
 
-*Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-3|Theorem §C2b.8.3]]
+*Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-3|Theorem §C2b.8.3]]
 
 ![[ph-qft-c6-11-1.svg]]
 *Fine point 1. (a) In the master formula every vertex time $z^0$ runs from $-T(1 - i\varepsilon)$ to $T(1 - i\varepsilon)$, tilted below the real axis. (b) To keep $p^0z^0$ real, every energy is integrated along a line tilted the other way, $p^0 = s(1 + i\varepsilon)$; it passes above the pole at $E_{\mathbf p} - i\varepsilon$ and below the one at $-E_{\mathbf p} + i\varepsilon$: the Feynman contour, rotated infinitesimally in the direction of the Wick rotation. Adapted from the user's PHY 513 notes, Figure "tilt"; PS p. 95.*
 
 > [!remark] Remark: Why "precisely what we do already"
-> Slide 24 ends: "This means: impose Feynman boundary conditions on propagators ⇒ precisely what we do already." The extra limit has content, but the content is consistency: the computation makes sense only if the Feynman prescription was what was meant, and it was already built in. The tilt $T(1 - i\varepsilon)$ was introduced to project $|0\rangle$ onto $|\Omega\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]): a damping factor on long times. A damping factor on $t > 0$ puts a pole below the real axis ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|Theorem §CA.6.5]]),
+> Slide 24 ends: "This means: impose Feynman boundary conditions on propagators ⇒ precisely what we do already." The extra limit has content, but the content is consistency: the computation makes sense only if the Feynman prescription was what was meant, and it was already built in. The tilt $T(1 - i\varepsilon)$ was introduced to project $|0\rangle$ onto $|\Omega\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]): a damping factor on long times. A damping factor on $t > 0$ puts a pole below the real axis ([[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-5|Theorem §CA.7.5]]),
 >
 > $$
 > \int_0^\infty dt\,e^{i\omega t}e^{-\varepsilon t} = \frac{1}{\varepsilon - i\omega} = \frac{i}{\omega + i\varepsilon}, \qquad \text{pole at } \omega = -i\varepsilon ,
@@ -128,7 +128,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 ^def-c6a-11-1
 
 > [!definition] Definition §C6a.11.2: Diagram Attached to the External Points
-> A diagram with external points is **attached to the external points** if every connected piece of it contains at least one external point, i.e. it has no vacuum bubble ([[§C6a.11 The iε Limit and Vacuum Bubbles#^def-c6a-11-1|Def. §C6a.11.1]]). For the labelled diagrams this is [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-1|Def. §CA.8.1]]. PS and the slides call these diagrams "connected" ([[§C6a.11 The iε Limit and Vacuum Bubbles#^cau-c6a-11-1|Caution: "Connected" means attached to an external point]]).
+> A diagram with external points is **attached to the external points** if every connected piece of it contains at least one external point, i.e. it has no vacuum bubble ([[§C6a.11 The iε Limit and Vacuum Bubbles#^def-c6a-11-1|Def. §C6a.11.1]]). For the labelled diagrams this is [[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-1|Def. §CA.9.1]]. PS and the slides call these diagrams "connected" ([[§C6a.11 The iε Limit and Vacuum Bubbles#^cau-c6a-11-1|Caution: "Connected" means attached to an external point]]).
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
 >
@@ -230,7 +230,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 >
 > and $F(z_1 + c, \dots, z_n + c) = F(z_1, \dots, z_n)$ for every $c$: each factor depends only on a difference.
 >
-> **Step 2** (change variables). Put $w_1 = z_1$, $w_v = z_v - z_1$ for $v = 2, \dots, n$. The map is linear with block-triangular matrix (identity blocks on the diagonal), so its Jacobian is $1$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 2, shift), and with $w_1 \equiv 0$ in the differences,
+> **Step 2** (change variables). Put $w_1 = z_1$, $w_v = z_v - z_1$ for $v = 2, \dots, n$. The map is linear with block-triangular matrix (identity blocks on the diagonal), so its Jacobian is $1$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], 2, shift), and with $w_1 \equiv 0$ in the differences,
 >
 > $$
 > F(z_1, \dots, z_n) = F(0, w_2, \dots, w_n), \qquad z_i - z_j = w_i - w_j .
@@ -250,7 +250,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > (2\pi)^4\delta^4(0) = \int d^4z\,e^{i0\cdot z} = 2T\cdot V
 > $$
 >
-> in the box ([[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] for the spatial part; for the time part $2\pi\delta(0) = \int_{-T}^Tdt = 2T$, i.e. $\delta(0) = 2T/2\pi$). For the melon, with momenta $k_1, \dots, k_4$ from $z_1$ to $z_2$:
+> in the box ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]] for the spatial part; for the time part $2\pi\delta(0) = \int_{-T}^Tdt = 2T$, i.e. $\delta(0) = 2T/2\pi$). For the melon, with momenta $k_1, \dots, k_4$ from $z_1$ to $z_2$:
 >
 > $$
 > \int d^4z_1\,e^{-i(k_1 + \dots + k_4)\cdot z_1}\int d^4z_2\,e^{+i(k_1 + \dots + k_4)\cdot z_2} = (2\pi)^4\delta^4(k_1 + \dots + k_4)\;(2\pi)^4\delta^4(k_1 + \dots + k_4) ;
@@ -265,7 +265,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 
 ^der-c6a-11-3
 
-*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]], [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]
+*Uses:* [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]], [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]]
 
 > [!example] Example §C6a.11.2: The Figure-Eight Is the First-Order Vacuum Energy
 > ![[ph-qft-c6a-11-2.svg]]
@@ -338,7 +338,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > \mathcal N_E = \sum_{k\ge0}\frac{t^k}{k!}\sum_{P\in\mathcal P(X_{E,k})}f_k(P), \qquad f_k(P) = \int d^4z_1\cdots d^4z_k\,w(P), \qquad w(P) = \prod_{\{h,h'\}\in P}D_F\bigl(\mathrm{pt}(h) - \mathrm{pt}(h')\bigr) .
 > $$
 >
-> **Step 2** (the integrand splits). Split $P = P_{\rm att}\sqcup P_{\rm vac}$ with $A = A(P)$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-1|Theorem §CA.8.1]]). No block joins a vertex of $A$ to a vertex outside $A$ or to an external point, so
+> **Step 2** (the integrand splits). Split $P = P_{\rm att}\sqcup P_{\rm vac}$ with $A = A(P)$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-1|Theorem §CA.9.1]]). No block joins a vertex of $A$ to a vertex outside $A$ or to an external point, so
 >
 > $$
 > w(P) = \underbrace{\prod_{\{h,h'\}\in P_{\rm att}}D_F}_{w(P_{\rm att}):\ z_v,\ v\notin A}\;\cdot\;\underbrace{\prod_{\{h,h'\}\in P_{\rm vac}}D_F}_{w(P_{\rm vac}):\ z_v,\ v\in A} .
@@ -350,15 +350,15 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > f_k(P) = \int\prod_{v\notin A}d^4z_v\,w(P_{\rm att})\;\cdot\;\int\prod_{v\in A}d^4z_v\,w(P_{\rm vac}) = a_{k-j}(\rho_AP_{\rm att})\;b_j(\rho'_AP_{\rm vac}), \qquad j = |A|,
 > $$
 >
-> after renaming the integration variables order-preservingly ($z_v \to z_{\rho_A(v)}$, unit Jacobian, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]), where
+> after renaming the integration variables order-preservingly ($z_v \to z_{\rho_A(v)}$, unit Jacobian, [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]]), where
 >
 > $$
 > a_i(Q) = \int\prod_{v=1}^id^4z_v\,w(Q)\quad (Q\in\mathcal P_{\rm att}(X_{E,i})), \qquad b_j(R) = \int\prod_{v=1}^jd^4z_v\,w(R)\quad (R\in\mathcal P(X_{\varnothing,j})) .
 > $$
 >
-> This is the hypothesis of [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-2|Theorem §CA.8.2]].
+> This is the hypothesis of [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-2|Theorem §CA.9.2]].
 >
-> **Step 4** (factorize). [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-2|Theorem §CA.8.2]] gives
+> **Step 4** (factorize). [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-2|Theorem §CA.9.2]] gives
 >
 > $$
 > \mathcal N_E = \Bigl(\sum_{i\ge0}\frac{t^i}{i!}\sum_{Q\in\mathcal P_{\rm att}(X_{E,i})}a_i(Q)\Bigr)\Bigl(\sum_{j\ge0}\frac{t^j}{j!}\sum_{R\in\mathcal P(X_{\varnothing,j})}b_j(R)\Bigr) .
@@ -366,7 +366,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 >
 > Yu's words for the step: of the $k$ interaction vertices, $j$ are placed in the vacuum part in $C_k^j = \frac{k!}{j!(k-j)!}$ ways, and the $\frac{1}{k!}$ becomes $\frac{1}{(k-j)!}\frac{1}{j!}$ (eqs. (10.194)–(10.195)).
 >
-> **Step 5** (identify the factors). The second factor is Step 1 with $E = \varnothing$, the denominator $\mathcal N_\varnothing$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]; Yu eq. (10.196)). In the first, attachment is a property of the drawing ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]]), so the attached pairings are a union of orbits, and Steps 5–8 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] turn $\frac{t^i}{i!}\sum_Qa_i(Q)$ into the sum of the attached diagrams with $i$ vertices, each with $(-i\lambda)^i/S$.
+> **Step 5** (identify the factors). The second factor is Step 1 with $E = \varnothing$, the denominator $\mathcal N_\varnothing$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]; Yu eq. (10.196)). In the first, attachment is a property of the drawing ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]]), so the attached pairings are a union of orbits, and Steps 5–8 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] turn $\frac{t^i}{i!}\sum_Qa_i(Q)$ into the sum of the attached diagrams with $i$ vertices, each with $(-i\lambda)^i/S$.
 >
 > **Step 6** (check at first order, $E = \{x, y\}$). The 15 pairings of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]], Step 4, split by $A$:
 > - $A = \varnothing$: the 12 of class (b), $\{x, z_a\}\,\{y, z_b\}\,\{z_c, z_d\}$, attached, $f_1 = a_1 = \int d^4z\,D_F(x - z)D_F(y - z)D_F(0)$;
@@ -385,7 +385,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 ^der-c6a-11-4
 
 > [!derivation]- Derivation (second route: PS's exponentiation of the disconnected pieces)
-> **Step 1** (a typical diagram, PS (4.50)–(4.51)). A diagram of the numerator is one piece attached to the external points times vacuum pieces; label the connected vacuum diagrams $V_1, V_2, \dots$ (figure-eight, dumbbell, melon, …) and write $V_i$ also for the value of $V_i$ with its own $\frac{1}{S(V_i)}$. If a diagram has $n_i$ copies of $V_i$, its symmetry factor is $S(\text{attached piece})\prod_in_i!\,S(V_i)^{n_i}$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-2|Theorem §CA.8.2]] for the split, [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], 2, for the vacuum part), and its value is
+> **Step 1** (a typical diagram, PS (4.50)–(4.51)). A diagram of the numerator is one piece attached to the external points times vacuum pieces; label the connected vacuum diagrams $V_1, V_2, \dots$ (figure-eight, dumbbell, melon, …) and write $V_i$ also for the value of $V_i$ with its own $\frac{1}{S(V_i)}$. If a diagram has $n_i$ copies of $V_i$, its symmetry factor is $S(\text{attached piece})\prod_in_i!\,S(V_i)^{n_i}$ ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-2|Theorem §CA.9.2]] for the split, [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], 2, for the vacuum part), and its value is
 >
 > $$
 > (\text{value of attached piece})\cdot\prod_i\frac{1}{n_i!}(V_i)^{n_i} :
@@ -410,10 +410,10 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 
 ^der-c6a-11-4b
 
-*Uses:* [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-1|Theorem §CA.8.1]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-2|Theorem §CA.8.2]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]
+*Uses:* [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-1|Theorem §CA.9.1]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-2|Theorem §CA.9.2]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]
 
 ![[ph-qft-ca-7-6.svg]]
-*The split of [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-1|Theorem §CA.8.1]]. The vertex $z_2$ has no path to an external point ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-1|Def. §CA.8.1]]), so $A(P) = \{2\}$; no block joins it to the rest, and $P$ is the disjoint union of an attached pairing and a vacuum pairing. In the numerator, this is the factorization into attached diagrams times vacuum bubbles (Theorem §C6a.11.4).*
+*The split of [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-1|Theorem §CA.9.1]]. The vertex $z_2$ has no path to an external point ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-1|Def. §CA.9.1]]), so $A(P) = \{2\}$; no block joins it to the rest, and $P$ is the disjoint union of an attached pairing and a vacuum pairing. In the numerator, this is the factorization into attached diagrams times vacuum bubbles (Theorem §C6a.11.4).*
 
 > [!theorem] Theorem §C6a.11.5: Vacuum Bubbles Cancel
 > In $\phi^4$ theory, to every order in $\lambda$,
@@ -559,18 +559,18 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-1|Theorem §CA.8.1]] — a pairing splits uniquely into the part attached to the external points and a vacuum part,
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-2|Theorem §CA.8.2]] — and a sum over pairings with an exponential weight $\frac{t^k}{k!}$ factorizes accordingly.
-> - [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] — a delta function at zero momentum in a finite box is the volume.
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-1|Def. §CA.8.1]] — "attached" for labelled diagrams: every vertex joined by a path to an external point (Definition §C6a.11.2).
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]] — the exponential formula: the sum over all vacuum diagrams is the exponential of the sum over connected ones, and $n_i$ copies of a connected piece contribute $n_i!\,S(V_i)^{n_i}$ to the symmetry factor (the second route of Derivation §C6a.11.4).
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]] — a diagram is its drawing, so being attached is a property of the diagram and the attached pairings are a union of orbits (Derivation §C6a.11.4, Step 5).
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — the time integral of the plane waves at a vertex is an energy delta function, as the limit of box integrals (Derivation §C6a.11.1); shifting and renaming the vertex positions has unit Jacobian (Derivations §C6a.11.3 and §C6a.11.4).
-> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]] — part 3, only the sign of the infinitesimal near the mass shell matters: the tilted energies give $p^2 - m^2 + i\varepsilon$ (Theorem §C6a.11.1).
-> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|Theorem §CA.6.5]] — a damping factor on $t > 0$ puts the pole below the real axis: why the tilt that projects onto the vacuum is the Feynman prescription (Remark: Why "precisely what we do already").
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-1|Theorem §CA.9.1]] — a pairing splits uniquely into the part attached to the external points and a vacuum part,
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-2|Theorem §CA.9.2]] — and a sum over pairings with an exponential weight $\frac{t^k}{k!}$ factorizes accordingly.
+> - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-3|Theorem §CA.3.3]] — a delta function at zero momentum in a finite box is the volume.
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-1|Def. §CA.9.1]] — "attached" for labelled diagrams: every vertex joined by a path to an external point (Definition §C6a.11.2).
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]] — the exponential formula: the sum over all vacuum diagrams is the exponential of the sum over connected ones, and $n_i$ copies of a connected piece contribute $n_i!\,S(V_i)^{n_i}$ to the symmetry factor (the second route of Derivation §C6a.11.4).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]] — a diagram is its drawing, so being attached is a property of the diagram and the attached pairings are a union of orbits (Derivation §C6a.11.4, Step 5).
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]] — the time integral of the plane waves at a vertex is an energy delta function, as the limit of box integrals (Derivation §C6a.11.1); shifting and renaming the vertex positions has unit Jacobian (Derivations §C6a.11.3 and §C6a.11.4).
+> - [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-6|Theorem §CA.7.6]] — part 3, only the sign of the infinitesimal near the mass shell matters: the tilted energies give $p^2 - m^2 + i\varepsilon$ (Theorem §C6a.11.1).
+> - [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-5|Theorem §CA.7.5]] — a damping factor on $t > 0$ puts the pole below the real axis: why the tilt that projects onto the vacuum is the Feynman prescription (Remark: Why "precisely what we do already").
 
 > [!remark]- Connections
 > - The tilt of the times that projects onto the true vacuum is the same infinitesimal rotation that, finite, is the Wick rotation to Euclidean time; Euclidean correlators have no $i\varepsilon$ at all — [[§C2b.8 Wick Rotation and the Two-Point Family#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]].
-> - Quantum mechanics switches perturbations on adiabatically with $e^{\varepsilon t}$; the same damping, in field theory, both selects the vacuum and fixes the propagator — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation|QM §C10.1]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|Theorem §CA.6.5]].
-> - The factorization is a statement about sums over pairings with an exponential weight, proved in CA without physics — [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-2|Theorem §CA.8.2]].
+> - Quantum mechanics switches perturbations on adiabatically with $e^{\varepsilon t}$; the same damping, in field theory, both selects the vacuum and fixes the propagator — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation|QM §C10.1]], [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-7-5|Theorem §CA.7.5]].
+> - The factorization is a statement about sums over pairings with an exponential weight, proved in CA without physics — [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-2|Theorem §CA.9.2]].
 > - Correlation functions become scattering amplitudes through the LSZ reduction formula, which is also Yu's route to this section's results; at lowest order the rule is "strip off the external lines" — [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]], QFT C10 (planned), [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^rem-c6a-4-5|§C6a.4, Remark: Correspondence with Yu]].

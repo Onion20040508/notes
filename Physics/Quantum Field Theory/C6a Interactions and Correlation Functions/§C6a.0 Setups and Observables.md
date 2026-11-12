@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 **The question this note answers.** A problem asks, in words, for a probability, a rate, a cross section or a correlation function. Before any formula: *what is being observed, and from which setup do we get there?* The setup fixes three things, and every formula of C6a–C6d holds only for the right choice of all three: **the states** (free Fock states of $\hat H_0$, or in and out states of the full $\hat H$, and in which normalization), **the vacuum** (the free vacuum $|0\rangle$ or the interacting vacuum $|\Omega\rangle$), and **the applicable theory** (exact, lowest order, or only with assumptions about the spectrum). The setup is decided by one physical fact: **how the interaction behaves in time.** This note classifies the physical situations by that fact (three models, after Coleman), says which vacuum and which states each one has and why, and then turns questions as asked into the object to compute. It is not a chain of formulas; the formulas are in the sections it points to.
 
-*Conventions* ([[Larsen PHY 513]]): $|0\rangle$ is the free vacuum, $\hat H_0|0\rangle = 0$; $|\Omega\rangle$ the interacting vacuum ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]]; other books' names: [[§C6a.0 Setups and Observables#^cau-c6a-0-1|Caution: Names for the vacua]]); relativistic states $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]) unless a model says otherwise; a source enters as $\mathcal L_{\rm int} = j\phi$, $\hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi_S(\mathbf x)$; $\tilde j(k) = \int d^4x\,e^{ik\cdot x}j(x)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]), and for a static source $\tilde j(\mathbf k) = \int d^3x\,e^{-i\mathbf k\cdot\mathbf x}j(\mathbf x)$. Coleman's coupling $-g\rho\phi$ is $j = -g\rho$.
+*Conventions* ([[Larsen PHY 513]]): $|0\rangle$ is the free vacuum, $\hat H_0|0\rangle = 0$; $|\Omega\rangle$ the interacting vacuum ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]]; other books' names: [[§C6a.0 Setups and Observables#^cau-c6a-0-1|Caution: Names for the vacua]]); relativistic states $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]) unless a model says otherwise; a source enters as $\mathcal L_{\rm int} = j\phi$, $\hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi_S(\mathbf x)$; $\tilde j(k) = \int d^4x\,e^{ik\cdot x}j(x)$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^def-ca-4-1|Def. §CA.4.1]]), and for a static source $\tilde j(\mathbf k) = \int d^3x\,e^{-i\mathbf k\cdot\mathbf x}j(\mathbf x)$. Coleman's coupling $-g\rho\phi$ is $j = -g\rho$.
 
 ## Three kinds of physical situation
 
@@ -205,7 +205,7 @@ Coleman's sentence for the first row: "Unless the interaction is with some exter
 > \langle\mathbf p_1\mathbf p_2\mathbf p_3\mathbf p_4|\,\hat\phi_S(\mathbf x)^4\,|0\rangle = \langle\mathbf p_1\cdots\mathbf p_4|\,\bigl(\hat\phi^-(0, \mathbf x)\bigr)^4|0\rangle = \sum_{\sigma\in S_4}\prod_{i=1}^4e^{-i\mathbf p_i\cdot\mathbf x} = 4!\,e^{-i(\mathbf p_1 + \mathbf p_2 + \mathbf p_3 + \mathbf p_4)\cdot\mathbf x} .
 > $$
 >
-> **Step 8** (the space integral). $\int d^3x\,e^{-i\mathbf q\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf q)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]):
+> **Step 8** (the space integral). $\int d^3x\,e^{-i\mathbf q\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf q)$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]):
 >
 > $$
 > \langle\mathbf p_1\cdots\mathbf p_4|\,\hat H\,|0\rangle = \frac{\lambda}{4!}\cdot4!\cdot(2\pi)^3\delta^3(\mathbf p_1 + \cdots + \mathbf p_4) = \lambda\,(2\pi)^3\delta^3(\mathbf p_1 + \cdots + \mathbf p_4) .
@@ -221,7 +221,7 @@ Coleman's sentence for the first row: "Unless the interaction is with some exter
 
 ^der-c6a-0-4
 
-*Uses:* [[§C6a.2 The Interaction Picture#^def-c6a-2-1|Def. §C6a.2.1]], [[§C6a.2 The Interaction Picture#^def-c6a-2-3|Def. §C6a.2.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-5|Theorem §C6a.1.5]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
+*Uses:* [[§C6a.2 The Interaction Picture#^def-c6a-2-1|Def. §C6a.2.1]], [[§C6a.2 The Interaction Picture#^def-c6a-2-3|Def. §C6a.2.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-5|Theorem §C6a.1.5]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]
 
 ## Which diagrams carry which physics
 
@@ -255,17 +255,17 @@ Coleman's sentence for the first row: "Unless the interaction is with some exter
 > \frac{V + n_{\rm ext}}{2} = I \ge V + n_{\rm ext} - 1 \quad\Longrightarrow\quad V + n_{\rm ext} \le 2 .
 > $$
 >
-> With at least one line, $V + n_{\rm ext} = 2$: $(V, n_{\rm ext}) = (2, 0)$, the line $L$ between two sources, or $(1, 1)$, a source joined to $\langle\mathbf k|$, whose factor $\int d^4x\,ij(x)\,e^{ik\cdot x}/\sqrt{2E_{\mathbf k}} = i\tilde j(k)/\sqrt{2E_{\mathbf k}}$ is Lemma §C6c.2.1 with [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $(0, 2)$ is excluded by Step 1.
+> With at least one line, $V + n_{\rm ext} = 2$: $(V, n_{\rm ext}) = (2, 0)$, the line $L$ between two sources, or $(1, 1)$, a source joined to $\langle\mathbf k|$, whose factor $\int d^4x\,ij(x)\,e^{ik\cdot x}/\sqrt{2E_{\mathbf k}} = i\tilde j(k)/\sqrt{2E_{\mathbf k}}$ is Lemma §C6c.2.1 with [[§CA.4 Fourier Transforms and Fourier Tricks#^def-ca-4-1|Def. §CA.4.1]]; $(0, 2)$ is excluded by Step 1.
 >
 > **Step 4** (no loops). The number of independent closed loops of a connected graph is $I - N + 1 = 1 - 2 + 1 = 0$ for both.
 >
-> **Step 5** (the amplitudes). Every diagram is a product of connected ones; the vacuum part exponentiates, $\sum_m\frac{L^m}{2^mm!} = e^{L/2}$ ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]], by [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]]), and each outgoing particle carries one source line, which is [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-6|Theorem §C6c.7.6]].
+> **Step 5** (the amplitudes). Every diagram is a product of connected ones; the vacuum part exponentiates, $\sum_m\frac{L^m}{2^mm!} = e^{L/2}$ ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]], by [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]]), and each outgoing particle carries one source line, which is [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-6|Theorem §C6c.7.6]].
 >
 > **What the derivation shows.** A source with one leg cannot build a loop, nor scatter a particle ("Mesons don't scatter off nailed down nucleons", Coleman p. 93): Model 1 is classical field theory plus the Poisson counting of its coherent state ([[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-3|Theorem §C2b.9.3]]).
 
 ^der-c6a-0-5
 
-*Uses:* [[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^def-c6c-7-1|Def. §C6c.7.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-6|Theorem §C6c.7.6]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]
+*Uses:* [[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^def-c6c-7-1|Def. §C6c.7.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-6|Theorem §C6c.7.6]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]], [[§CA.4 Fourier Transforms and Fourier Tricks#^def-ca-4-1|Def. §CA.4.1]]
 
 > [!remark] Remark: Classical, semi-classical, quantum (Schwartz's triad)
 > Schwartz sorts diagrams by the physics they need (§7.1, pp. 83–84, eq. (7.26)). For a connected diagram with $I$ internal lines and $V$ vertices, the number of closed loops is $I - V + 1$.
@@ -310,7 +310,7 @@ Coleman's sentence for the first row: "Unless the interaction is with some exter
 >
 > **Step 1** (meaning 2 = meaning 3 here). With no other interaction, $\hat\phi_H = \hat\phi_I$ and $|\Omega\rangle = |0\rangle$; the series is the Taylor series of $\langle0|T\{\exp[i\int j\hat\phi_I]\}|0\rangle = \mathcal A(0)$ ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-1|Theorem §C6c.7.1]]) term by term ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]).
 >
-> **Step 2** (the free correlators). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], $G^{(n)} = 0$ for $n$ odd and, for $n = 2m$, $G^{(2m)} = \sum_P\prod_{\{a,b\}\in P}D_F(x_a - x_b)$, a sum over the $\frac{(2m)!}{2^mm!}$ pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]). For $m = 1, 2$:
+> **Step 2** (the free correlators). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], $G^{(n)} = 0$ for $n$ odd and, for $n = 2m$, $G^{(2m)} = \sum_P\prod_{\{a,b\}\in P}D_F(x_a - x_b)$, a sum over the $\frac{(2m)!}{2^mm!}$ pairings ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]]). For $m = 1, 2$:
 >
 > $$
 > G^{(2)} = D_F(x_1 - x_2) , \qquad G^{(4)} = D_F(x_1 - x_2)D_F(x_3 - x_4) + D_F(x_1 - x_3)D_F(x_2 - x_4) + D_F(x_1 - x_4)D_F(x_2 - x_3) .
@@ -375,10 +375,10 @@ Read a row left to right: the words of the problem, the setup they imply, the st
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]] — the Fourier convention that fixes $\tilde j(k) = \int d^4x\,e^{ik\cdot x}j(x)$ in the conventions, in Model §C6a.0.2 and in the source line $i\tilde j(k)/\sqrt{2E_{\mathbf k}}$ of Theorem §C6a.0.5.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the space integral of a plane wave is $(2\pi)^3\delta^3$, an identity of distributions in the momenta; it gives the momentum delta of $\langle\mathbf p_1\cdots\mathbf p_4|\hat H|0\rangle$ (Theorem §C6a.0.4, part 2).
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — a set of $2m$ points has $\frac{(2m)!}{2^mm!}$ pairings, the count that turns the series of Example §C6a.0.1 into $e^{-J/2}$.
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]] — the sum over all products of connected pieces is the exponential of the sum over connected ones: $e^{L/2}$ in Theorem §C6a.0.5.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^def-ca-4-1|Def. §CA.4.1]] — the Fourier convention that fixes $\tilde j(k) = \int d^4x\,e^{ik\cdot x}j(x)$ in the conventions, in Model §C6a.0.2 and in the source line $i\tilde j(k)/\sqrt{2E_{\mathbf k}}$ of Theorem §C6a.0.5.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the space integral of a plane wave is $(2\pi)^3\delta^3$, an identity of distributions in the momenta; it gives the momentum delta of $\langle\mathbf p_1\cdots\mathbf p_4|\hat H|0\rangle$ (Theorem §C6a.0.4, part 2).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-1|Theorem §CA.8.1]] — a set of $2m$ points has $\frac{(2m)!}{2^mm!}$ pairings, the count that turns the series of Example §C6a.0.1 into $e^{-J/2}$.
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]] — the sum over all products of connected pieces is the exponential of the sum over connected ones: $e^{L/2}$ in Theorem §C6a.0.5.
 
 > [!remark]- Connections
 > - The models are the setups behind every *Model:* and *applies:* line of C6a–C6d: Model §C6a.0.1 behind [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6c.7]] and [[§C2b.9 Particle Production by a Classical Source|§C2b.9]]; Model §C6a.0.3 behind §C6a.1–§C6a.13 and the experiment models [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]], [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]], [[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]], [[§C6b.5 Decay Widths#^mod-c6b-5-1|Model §C6b.5.1]].

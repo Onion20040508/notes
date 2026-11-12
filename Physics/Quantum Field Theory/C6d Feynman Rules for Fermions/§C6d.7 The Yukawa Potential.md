@@ -131,7 +131,7 @@ What force does the exchange of the Yukawa scalar produce between two fermions? 
 >
 > **Step 3** (match). With the spins unchanged ($\delta^{ss'}\delta^{rr'} = 1$), $\frac{i\mathcal M}{(2m)^2} = \frac{ig^2}{|\mathbf q|^2 + m_\phi^2} = -i\tilde V(\mathbf q)$, so $\tilde V(\mathbf q) = -\frac{g^2}{|\mathbf q|^2 + m_\phi^2}$, PS (4.125).
 >
-> **Step 4** (angular integral). $V(\mathbf x) = \int\frac{d^3q}{(2\pi)^3}\,\frac{-g^2}{|\mathbf q|^2 + m_\phi^2}\,e^{-i\mathbf q\cdot\mathbf x}$ (the inverse of the transform of Step 1: $\int\frac{d^3q}{(2\pi)^3}e^{-i\mathbf q\cdot\mathbf x}\int d^3y\,e^{i\mathbf q\cdot\mathbf y}V(\mathbf y) = \int d^3y\,\delta^3(\mathbf y - \mathbf x)V(\mathbf y) = V(\mathbf x)$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]). In spherical coordinates for $\mathbf q$ with axis $\mathbf x$, $q = |\mathbf q|$, $c = \cos\theta$, $\mathbf q\cdot\mathbf x = qrc$: $d^3q = 2\pi q^2\,dq\,dc$, $\int_{-1}^1dc\,e^{-iqrc} = \frac{e^{-iqr} - e^{iqr}}{-iqr} = \frac{e^{iqr} - e^{-iqr}}{iqr}$ (the same value as with $e^{+iqrc}$: the integral is even in $\mathbf q$), and $\frac{2\pi}{(2\pi)^3} = \frac{1}{4\pi^2}$:
+> **Step 4** (angular integral). $V(\mathbf x) = \int\frac{d^3q}{(2\pi)^3}\,\frac{-g^2}{|\mathbf q|^2 + m_\phi^2}\,e^{-i\mathbf q\cdot\mathbf x}$ (the inverse of the transform of Step 1: $\int\frac{d^3q}{(2\pi)^3}e^{-i\mathbf q\cdot\mathbf x}\int d^3y\,e^{i\mathbf q\cdot\mathbf y}V(\mathbf y) = \int d^3y\,\delta^3(\mathbf y - \mathbf x)V(\mathbf y) = V(\mathbf x)$, [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]). In spherical coordinates for $\mathbf q$ with axis $\mathbf x$, $q = |\mathbf q|$, $c = \cos\theta$, $\mathbf q\cdot\mathbf x = qrc$: $d^3q = 2\pi q^2\,dq\,dc$, $\int_{-1}^1dc\,e^{-iqrc} = \frac{e^{-iqr} - e^{iqr}}{-iqr} = \frac{e^{iqr} - e^{-iqr}}{iqr}$ (the same value as with $e^{+iqrc}$: the integral is even in $\mathbf q$), and $\frac{2\pi}{(2\pi)^3} = \frac{1}{4\pi^2}$:
 >
 > $$
 > V(\mathbf x) = \frac{-g^2}{4\pi^2}\int_0^\infty dq\,q^2\,\frac{e^{iqr} - e^{-iqr}}{iqr}\,\frac{1}{q^2 + m_\phi^2} = \frac{-g^2}{4\pi^2ir}\int_0^\infty dq\,\frac{q\,(e^{iqr} - e^{-iqr})}{q^2 + m_\phi^2} .
@@ -145,7 +145,7 @@ What force does the exchange of the Yukawa scalar produce between two fermions? 
 >
 > an improper integral converging at $\pm\infty$ by the oscillation of $e^{iqr}$, $r > 0$.
 >
-> **Step 6** (residue). For $r > 0$ close the contour in the upper half plane: the integrand is $e^{iqr}\cdot\frac{q}{q^2 + m_\phi^2}$ with $\frac{q}{q^2 + m_\phi^2} \to 0$ uniformly as $|q| \to \infty$, so the arc vanishes by Jordan's lemma ([[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]). The poles are $q = \pm im_\phi$; inside is $q = +im_\phi$, with residue ([[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]]) $\frac{q\,e^{iqr}}{q + im_\phi}\big|_{q = im_\phi} = \frac{im_\phi e^{-m_\phi r}}{2im_\phi} = \frac12e^{-m_\phi r}$. By the residue theorem ([[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]]) the integral is $2\pi i\cdot\frac12e^{-m_\phi r} = i\pi e^{-m_\phi r}$, and
+> **Step 6** (residue). For $r > 0$ close the contour in the upper half plane: the integrand is $e^{iqr}\cdot\frac{q}{q^2 + m_\phi^2}$ with $\frac{q}{q^2 + m_\phi^2} \to 0$ uniformly as $|q| \to \infty$, so the arc vanishes by Jordan's lemma ([[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]]). The poles are $q = \pm im_\phi$; inside is $q = +im_\phi$, with residue ([[§CA.5 Contour Integration#^thm-ca-5-4|Theorem §CA.5.4]]) $\frac{q\,e^{iqr}}{q + im_\phi}\big|_{q = im_\phi} = \frac{im_\phi e^{-m_\phi r}}{2im_\phi} = \frac12e^{-m_\phi r}$. By the residue theorem ([[§CA.5 Contour Integration#^thm-ca-5-5|Theorem §CA.5.5]]) the integral is $2\pi i\cdot\frac12e^{-m_\phi r} = i\pi e^{-m_\phi r}$, and
 >
 > $$
 > V(r) = \frac{-g^2}{4\pi^2ir}\,i\pi\,e^{-m_\phi r} = -\frac{g^2}{4\pi r}\,e^{-m_\phi r} ,
@@ -159,7 +159,7 @@ What force does the exchange of the Yukawa scalar produce between two fermions? 
 
 ^der-c6d-7-3
 
-*Uses:* [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-2|QM Theorem §C10.1.2]], [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-6|QM Theorem §C10.1.6]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C6d.7 The Yukawa Potential#^thm-c6d-7-2|Theorem §C6d.7.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§C2.3 Wave Functions in Position and Momentum Space#^ex-c2-3-3|QM Example §C2.3.3]]
+*Uses:* [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-2|QM Theorem §C10.1.2]], [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-6|QM Theorem §C10.1.6]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C6d.7 The Yukawa Potential#^thm-c6d-7-2|Theorem §C6d.7.2]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], [[§CA.5 Contour Integration#^thm-ca-5-4|Theorem §CA.5.4]], [[§CA.5 Contour Integration#^thm-ca-5-5|Theorem §CA.5.5]], [[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]], [[§C2.3 Wave Functions in Position and Momentum Space#^ex-c2-3-3|QM Example §C2.3.3]]
 
 > [!theorem] Theorem §C6d.7.4: Scalar Exchange Is Universally Attractive
 > In the same limit the potential between a fermion and an antifermion, $f_1(p)\bar f_2(k) \to f_1(p')\bar f_2(k')$, and between two antifermions is again $V(r) = -\frac{g^2}{4\pi r}e^{-m_\phi r}$: attractive and of the same strength. In each case one diagram contributes, and the sign changes of the spinor products ($\bar vv = -2m$) and of the contraction pattern cancel:
@@ -237,7 +237,7 @@ What force does the exchange of the Yukawa scalar produce between two fermions? 
 > \langle\mathbf p'|\hat H_I(t)|\mathbf p\rangle = e^{iE_{\mathbf p'}t}\,\langle\mathbf p'|\hat V|\mathbf p\rangle\,e^{-iE_{\mathbf p}t} , \qquad \langle\mathbf p'|\hat V|\mathbf p\rangle = \int d^3x\;e^{-i\mathbf p'\cdot\mathbf x}\,V(\mathbf x)\,e^{i\mathbf p\cdot\mathbf x} = \int d^3x\;e^{i(\mathbf p - \mathbf p')\cdot\mathbf x}\,V(\mathbf x) = \tilde V(\mathbf p - \mathbf p') .
 > $$
 >
-> **Step 3** (the time integral). $\int dt\,e^{i(E_{\mathbf p'} - E_{\mathbf p})t} = 2\pi\delta(E_{\mathbf p'} - E_{\mathbf p})$, an identity in $\mathcal S'$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]). Hence $\langle\mathbf p'|i\hat T|\mathbf p\rangle = -i\,\tilde V(\mathbf q)\,2\pi\delta(E_{\mathbf p'} - E_{\mathbf p})$, item 1.
+> **Step 3** (the time integral). $\int dt\,e^{i(E_{\mathbf p'} - E_{\mathbf p})t} = 2\pi\delta(E_{\mathbf p'} - E_{\mathbf p})$, an identity in $\mathcal S'$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]). Hence $\langle\mathbf p'|i\hat T|\mathbf p\rangle = -i\,\tilde V(\mathbf q)\,2\pi\delta(E_{\mathbf p'} - E_{\mathbf p})$, item 1.
 >
 > **Step 4** (matching). Between nonrelativistically normalized states the field-theory element is $i\mathcal M_{\rm NR}(2\pi)^4\delta^4(p + k - p' - k')$ ([[§C6d.7 The Yukawa Potential#^def-c6d-7-1|Def. §C6d.7.1]]; Yu (8.255)). Its $(2\pi)^3\delta^3(\mathbf p + \mathbf k - \mathbf p' - \mathbf k')$ fixes the final momentum of the target and disappears when that momentum is integrated over (Step 2 of [[§C6d.7 The Yukawa Potential#^der-c6d-7-3|Derivation §C6d.7.3]]; PS p. 122); what remains is $i\mathcal M_{\rm NR}\,2\pi\delta(E)$, to be compared with Step 3: $i\mathcal M_{\rm NR} = -i\tilde V(\mathbf q)$.
 >
@@ -247,7 +247,7 @@ What force does the exchange of the Yukawa scalar produce between two fermions? 
 
 ^der-c6d-7-5
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6d.7 The Yukawa Potential#^def-c6d-7-1|Def. §C6d.7.1]], [[§C6d.7 The Yukawa Potential#^der-c6d-7-3|Derivation §C6d.7.3]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6d.7 The Yukawa Potential#^def-c6d-7-1|Def. §C6d.7.1]], [[§C6d.7 The Yukawa Potential#^der-c6d-7-3|Derivation §C6d.7.3]]
 
 > [!caution] Caution: Slips on the Born-approximation slide
 > Slide 22 writes the exponent $e^{-i(E_{\vec p} - E_{\vec p})t}$; the energies are those of $\mathbf p'$ and $\mathbf p$, $e^{i(E_{\mathbf p'} - E_{\mathbf p})t}$, as in [[§C6d.7 The Yukawa Potential#^thm-c6d-7-5|Theorem §C6d.7.5]]. The user's update records in addition that the handwritten notes exchange the bra and the ket, $\langle\mathbf p|i\hat T|\mathbf p'\rangle$, and label the operator $e^{i\int H_Idt}$; it is $\langle\mathbf p'|i\hat T|\mathbf p\rangle$ from $T\{e^{-i\int H_Idt}\}$.
@@ -266,8 +266,8 @@ What force does the exchange of the Yukawa scalar produce between two fermions? 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]] — the residue at $q = im_\phi$ and Jordan's lemma for closing above give $V(r)$ from $\tilde V(\mathbf q)$.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — $\int dt\,e^{i\omega t} = 2\pi\delta(\omega)$ in $\mathcal S'$: the energy delta of the Born amplitude; the same identity in three dimensions inverts $\tilde V(\mathbf q) = \int d^3x\,e^{i\mathbf q\cdot\mathbf x}V(\mathbf x)$.
+> - [[§CA.5 Contour Integration#^thm-ca-5-4|Theorem §CA.5.4]], [[§CA.5 Contour Integration#^thm-ca-5-5|Theorem §CA.5.5]], [[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]] — the residue at $q = im_\phi$ and Jordan's lemma for closing above give $V(r)$ from $\tilde V(\mathbf q)$.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — $\int dt\,e^{i\omega t} = 2\pi\delta(\omega)$ in $\mathcal S'$: the energy delta of the Born amplitude; the same identity in three dimensions inverts $\tilde V(\mathbf q) = \int d^3x\,e^{i\mathbf q\cdot\mathbf x}V(\mathbf x)$.
 
 > [!remark]- Connections
 > - The Born approximation of quantum mechanics is the first-order $\hat S$-matrix between plane waves; QFT supplies the potential, QM the scattering theory built on it — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-6|QM Theorem §C10.1.6]], [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^ex-c10-1-1|QM Example §C10.1.1]] (the Born cross section of a Yukawa potential).

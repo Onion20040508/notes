@@ -187,7 +187,7 @@ The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] nee
 > \langle\mathbf p_1\mathbf p_2|\hat\phi_I^-(x)\hat\phi_I^-(x)|0\rangle = e^{ip_1\cdot x}e^{ip_2\cdot x} + e^{ip_2\cdot x}e^{ip_1\cdot x} = 2\,e^{i(p_1 + p_2)\cdot x}, \qquad p_i^0 = E_{\mathbf p_i} .
 > $$
 >
-> **Step 5** ($\mathcal M$). With [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]],
+> **Step 5** ($\mathcal M$). With [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]],
 >
 > $$
 > \mathcal A^{(1)} = -2i\mu\int d^4x\,e^{i(p_1 + p_2 - K)\cdot x} = -2i\mu\,(2\pi)^4\delta^4(K - p_1 - p_2) ,
@@ -427,7 +427,7 @@ The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] nee
 > Proved in CA; each line says what the physics above relies on.
 >
 > - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2 — δ of a function with a simple zero, $\delta(f) = \delta(x - x_\ast)/|f'(x_\ast)|$: the energy delta function fixes the momentum of the two-body decay (Example §C6b.6.1: the Jacobian $E_\ast/2p_\ast$) and the angle between two products of a three-body decay (Derivation §C6b.6.5, Step 4).
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the plane waves at the vertex integrate to $(2\pi)^4\delta^4$, the factor taken out of the amplitude in Example §C6b.6.1, Step 5.
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] — the plane waves at the vertex integrate to $(2\pi)^4\delta^4$, the factor taken out of the amplitude in Example §C6b.6.1, Step 5.
 
 > [!remark]- Connections
 > - Two-body decay kinematics is two-body scattering kinematics with $E_{\rm cm} = m_A$; the energies of a pair in its own rest frame (Dalitz limits) are the same formula with $E_{\rm cm} = \sqrt{s_{12}}$ — [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]].

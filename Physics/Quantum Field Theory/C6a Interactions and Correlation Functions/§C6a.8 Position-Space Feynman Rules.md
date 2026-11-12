@@ -11,14 +11,14 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.4 (Principle "Feynman rules for correlation functions, position space", paragraphs "Reading the first-order tadpole as a process", "Higher orders"), §14.5 (paragraph "Where the 4! goes", Principle "The symmetry factor") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part B, slides 16–17, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 92–94, eq. (4.45); p. 99 · Yu Zhao-Huan, 量子场论讲义, §7.3, eqs. (7.112)–(7.120) (the $S$-matrix setting) · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §1 (Definitions "Slots, legs and the point map", "Pairing"), §3 (Lemma "Invariance of the integral"), §5 (Theorem "Symmetry factor: counting pairings = counting symmetries").*
 
-At first order the 15 contractions collapsed into two diagrams with coefficients $\frac18$ and $\frac12$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]]). This section shows why that happens at every order. Relabelling the vertices and the four legs of each vertex is a group action on the contractions; contractions in one orbit give the same integral; the orbit has $n!\,(4!)^n/S$ elements by orbit–stabilizer, with $S$ the order of the diagram's symmetry group ([[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]]); and the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels everything but $1/S$. The combinatorics (half-edges, the relabelling group, orbits and stabilizers, the orbit count) is proved in CA, linked in the derivation and listed at the end; what the physics uses is stated in Def. §C6a.8.1 and Theorem §C6a.8.1: a diagram $D$ with $n$ vertices is produced by $n!\,(4!)^n/S(D)$ of the complete contractions, and two contractions give the same diagram exactly when their drawings (multigraphs with the external points labelled) agree ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]]). The result is a dictionary from diagrams to formulas, the Feynman rules in position space. Yu states the $\phi^4$ vertex rule in §7.3, eq. (7.120), for matrix elements $\langle f|iT|i\rangle$ of the $S$-operator rather than for correlation functions; the line rules there are those of §7.1. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
+At first order the 15 contractions collapsed into two diagrams with coefficients $\frac18$ and $\frac12$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]]). This section shows why that happens at every order. Relabelling the vertices and the four legs of each vertex is a group action on the contractions; contractions in one orbit give the same integral; the orbit has $n!\,(4!)^n/S$ elements by orbit–stabilizer, with $S$ the order of the diagram's symmetry group ([[§CA.8 Pairings, Diagrams and Symmetry Factors|§CA.8]]); and the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels everything but $1/S$. The combinatorics (half-edges, the relabelling group, orbits and stabilizers, the orbit count) is proved in CA, linked in the derivation and listed at the end; what the physics uses is stated in Def. §C6a.8.1 and Theorem §C6a.8.1: a diagram $D$ with $n$ vertices is produced by $n!\,(4!)^n/S(D)$ of the complete contractions, and two contractions give the same diagram exactly when their drawings (multigraphs with the external points labelled) agree ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]]). The result is a dictionary from diagrams to formulas, the Feynman rules in position space. Yu states the $\phi^4$ vertex rule in §7.3, eq. (7.120), for matrix elements $\langle f|iT|i\rangle$ of the $S$-operator rather than for correlation functions; the line rules there are those of §7.1. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
 
 *Conventions* ([[Larsen PHY 513]]): the numerator of the master formula for external points $E = \{x_1, \dots, x_{n_{\rm ext}}\}$ ($E$ is the set, $n_{\rm ext}$ their number, [[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-2|Def. §C6a.7.2]]) is $\mathcal N_E \equiv \langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})\,e^{-i\int_{-T}^Tdt\,\hat H_I(t)}\}|0\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]); identities between such series are identities of formal power series in $\lambda$, each coefficient a (formal) integral; $S$ is the symmetry factor, not the $S$-matrix ([[§C6a.8 Position-Space Feynman Rules#^cau-c6a-8-1|Caution: Three S's]]).
 
 ## Symmetry factor and the coefficient of a diagram
 
 > [!definition] Definition §C6a.8.1: Symmetry Factor of a φ⁴ Diagram
-> The **symmetry factor** $S$ of a $\phi^4$ diagram with fixed external points is the order of its automorphism group ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]]): the number of permutations of the vertices and of the line-ends at each vertex that map the contraction pattern to itself, with the external points held fixed. A diagram with no such symmetry has $S = 1$.
+> The **symmetry factor** $S$ of a $\phi^4$ diagram with fixed external points is the order of its automorphism group ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-4|Def. §CA.8.4]]): the number of permutations of the vertices and of the line-ends at each vertex that map the contraction pattern to itself, with the external points held fixed. A diagram with no such symmetry has $S = 1$.
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* combinatorial, any order; other vertices: [[§C6a.8 Position-Space Feynman Rules#^rem-c6a-8-2|Remark: The same proof for other vertices]].
 >
@@ -27,7 +27,7 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 ^def-c6a-8-1
 
 ![[ph-qft-ca-7-4.svg]]
-*The relabelling group ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]]) acting on one labelled diagram $P$. (a) A leg permutation that maps $P$ to itself: an automorphism ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]]). (b), (c) A leg permutation and a vertex permutation that change $P$ but not its drawing: they move $P$ inside its orbit, the diagram. Orbit–stabilizer gives the count at the bottom ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]]).*
+*The relabelling group ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-3|Def. §CA.8.3]]) acting on one labelled diagram $P$. (a) A leg permutation that maps $P$ to itself: an automorphism ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-4|Def. §CA.8.4]]). (b), (c) A leg permutation and a vertex permutation that change $P$ but not its drawing: they move $P$ inside its orbit, the diagram. Orbit–stabilizer gives the count at the bottom ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]]).*
 
 > [!caution] Caution: Three S's
 > $S$ here is the symmetry factor of a diagram. It is not the $S$-matrix $\hat S$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]; $S = U(\infty, -\infty)$ in Yu, eqs. (6.122)–(6.125)), nor the scalar bilinear $\mathsf S = \bar\psi\psi$ (sans-serif in these notes, [[Larsen PHY 513]]). Yu also writes $\mathcal S = 2$ for the factor that divides a cross section with two identical particles in the final state (eq. (7.123)), a different factor with a different origin (double counting of final states, not of contractions), written $S_{\rm id}$ in these notes ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]). All four are listed in [[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]].
@@ -60,7 +60,7 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 >
 > Multiplied by $\hat\phi_I(x_1)\cdots\hat\phi_I(x_{n_{\rm ext}})$ inside $T$ and taken between $\langle0|$ and $|0\rangle$, the integrals come out by linearity: this is the left side ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]] writes out $n = 2$).
 >
-> **Step 2** (label the fields as half-edges). Write the four factors at $z_v$ as $\hat\phi_{(v,1)}\hat\phi_{(v,2)}\hat\phi_{(v,3)}\hat\phi_{(v,4)}$, $\hat\phi_{(v,a)} \equiv \hat\phi_I(z_v)$, and $\hat\phi_{x_i} \equiv \hat\phi_I(x_i)$. The fields are indexed by the half-edges $X_{E,n}$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]]), $N = n_{\rm ext} + 4n$ of them, and each half-edge has a point (the user's note calls the half-edges the "slots" $\mathcal M = E \sqcup L$ and $\mathrm{pt}$ the "point map" $v$):
+> **Step 2** (label the fields as half-edges). Write the four factors at $z_v$ as $\hat\phi_{(v,1)}\hat\phi_{(v,2)}\hat\phi_{(v,3)}\hat\phi_{(v,4)}$, $\hat\phi_{(v,a)} \equiv \hat\phi_I(z_v)$, and $\hat\phi_{x_i} \equiv \hat\phi_I(x_i)$. The fields are indexed by the half-edges $X_{E,n}$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-2|Def. §CA.8.2]]), $N = n_{\rm ext} + 4n$ of them, and each half-edge has a point (the user's note calls the half-edges the "slots" $\mathcal M = E \sqcup L$ and $\mathrm{pt}$ the "point map" $v$):
 >
 > $$
 > \mathrm{pt}(x_i) = x_i, \qquad \mathrm{pt}\bigl((v, a)\bigr) = z_v .
@@ -105,13 +105,13 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 >
 > So the left side of the theorem is $\frac{1}{n!}\bigl(\frac{-i\lambda}{4!}\bigr)^n\sum_PI(P)$. For example ($E = \{x, y\}$, $n = 1$), $P = \bigl\{\{x, (1,1)\}, \{y, (1,2)\}, \{(1,3), (1,4)\}\bigr\}$ has $w(P) = D_F(x - z_1)\,D_F(y - z_1)\,D_F(z_1 - z_1)$.
 >
-> **Step 5** ($I$ is constant on orbits: the point map intertwines the relabelling). Let $g = (\tau, \sigma) \in G_n$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]]) and let $\rho_\sigma$ be the substitution of points $x_i \mapsto x_i$, $z_v \mapsto z_{\sigma(v)}$. From $g\cdot(v, a) = (\sigma(v), \tau_{\sigma(v)}(a))$ and $g\cdot x_i = x_i$,
+> **Step 5** ($I$ is constant on orbits: the point map intertwines the relabelling). Let $g = (\tau, \sigma) \in G_n$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-3|Def. §CA.8.3]]) and let $\rho_\sigma$ be the substitution of points $x_i \mapsto x_i$, $z_v \mapsto z_{\sigma(v)}$. From $g\cdot(v, a) = (\sigma(v), \tau_{\sigma(v)}(a))$ and $g\cdot x_i = x_i$,
 >
 > $$
 > \mathrm{pt}\bigl(g\cdot(v, a)\bigr) = z_{\sigma(v)} = \rho_\sigma\bigl(\mathrm{pt}(v, a)\bigr), \qquad \mathrm{pt}(g\cdot x_i) = x_i = \rho_\sigma\bigl(\mathrm{pt}(x_i)\bigr), \qquad\text{i.e.}\quad \mathrm{pt}\circ g = \rho_\sigma\circ\mathrm{pt} :
 > $$
 >
-> $\tau$ drops out, because all four legs of a vertex carry the same field $\hat\phi_I(z_v)$, and $\sigma$ only renames the points. The blocks of $g\cdot P$ are the $\{g\cdot h, g\cdot h'\}$ with $\{h, h'\} \in P$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^lem-ca-7-2|Lemma §CA.7.2]]), each once, so
+> $\tau$ drops out, because all four legs of a vertex carry the same field $\hat\phi_I(z_v)$, and $\sigma$ only renames the points. The blocks of $g\cdot P$ are the $\{g\cdot h, g\cdot h'\}$ with $\{h, h'\} \in P$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^lem-ca-8-2|Lemma §CA.8.2]]), each once, so
 >
 > $$
 > \begin{aligned}
@@ -122,7 +122,7 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 >
 > (This is the user's note's Lemma "Invariance of the integral", $v\circ g = \rho\circ v$; its point map $v$ is $\mathrm{pt}$, its vertex permutation $\tau_g$ is $\sigma$ here.)
 >
-> Substituting $u_v = z_{\sigma(v)}$, a permutation of the four-blocks of coordinates of $\mathbb R^{4n}$ with $|\det| = 1$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]; [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]]),
+> Substituting $u_v = z_{\sigma(v)}$, a permutation of the four-blocks of coordinates of $\mathbb R^{4n}$ with $|\det| = 1$ ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]]; [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]]),
 >
 > $$
 > I(g\cdot P) = \int d^4z_1\cdots d^4z_n\,w(P)\bigl(z_{\sigma(1)}, \dots, z_{\sigma(n)}\bigr) = \int d^4u_1\cdots d^4u_n\,w(P)(u_1, \dots, u_n) = I(P) .
@@ -130,13 +130,13 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 >
 > For example, with $n = 1$ and $\tau_1 = (1\,3)$, the $P$ of Step 4 goes to $g\cdot P = \bigl\{\{x, (1,3)\}, \{y, (1,2)\}, \{(1,1), (1,4)\}\bigr\}$, a different pairing with the same $w = D_F(x - z_1)D_F(y - z_1)D_F(z_1 - z_1)$.
 >
-> **Step 6** (group by diagrams). The orbits of $G_n$ on $\mathcal P(X_{E,n})$ partition it ([[§27 Orbits#^prop-27-1|493 Prop. §27.1]]) and are the diagrams, determined by their drawings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]]). With $I(D)$ the common value on the orbit $D$, the integral of $\prod_{\text{lines of }D}D_F$,
+> **Step 6** (group by diagrams). The orbits of $G_n$ on $\mathcal P(X_{E,n})$ partition it ([[§27 Orbits#^prop-27-1|493 Prop. §27.1]]) and are the diagrams, determined by their drawings ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]]). With $I(D)$ the common value on the orbit $D$, the integral of $\prod_{\text{lines of }D}D_F$,
 >
 > $$
 > \sum_{P\in\mathcal P(X_{E,n})}I(P) = \sum_D\;\sum_{P\in D}I(P) = \sum_D|D|\,I(D) .
 > $$
 >
-> **Step 7** (orbit size). $|D| = n!\,(4!)^n/S(D)$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]]).
+> **Step 7** (orbit size). $|D| = n!\,(4!)^n/S(D)$ ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]]).
 >
 > **Step 8** (cancel).
 >
@@ -151,16 +151,16 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 > **What the derivation shows.**
 > - "Divide by the symmetry factor" is orbit–stabilizer: the only input from physics is that the integrand does not see which leg of a vertex or which name of a vertex was used (Step 5).
 > - Counting pairings and counting symmetries give the same number, $S(D) = n!\,(4!)^n/|D| = |\operatorname{Aut}(P)|$ for every $P \in D$ (Steps 7–8): the user's note states this as $S = k!\,(4!)^k/N = |\operatorname{Stab}(P)| = |\operatorname{Aut}(\Gamma_P)|$, with $k$ vertices and $N$ pairings.
-> - Checked at first order ($S = 8, 2$; 3 and 12 of 24 contractions) and second order by enumeration ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]]).
+> - Checked at first order ($S = 8, 2$; 3 and 12 of 24 contractions) and second order by enumeration ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^ex-ca-8-1|Example §CA.8.1]]).
 
 ^der-c6a-8-1
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^lem-ca-7-2|Lemma §CA.7.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§27 Orbits#^prop-27-1|493 Prop. §27.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^lem-ca-8-2|Lemma §CA.8.2]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-2|Def. §CA.8.2]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-3|Def. §CA.8.3]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§27 Orbits#^prop-27-1|493 Prop. §27.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]]
 
 *Procedure:* [[P5 Symmetry Factor of a Diagram#^p5-1|P5, steps 1–4]]
 
 ![[ph-qft-ca-7-1.svg]]
-*The orbit picture behind Step 5 ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]]). Left: one labelled diagram, a pairing of all half-edges (orange: leg $a$ of vertex $z_j$). Right: its diagram $D$; the map $\pi$ forgets the labels $j$ and $a$. The fiber $\pi^{-1}(D)$ is the orbit of the pairing under the relabelling group $G_n$, so $|\pi^{-1}(D)| = |G_n|/S$ by orbit–stabilizer, and dividing by $|G_n| = n!\,(4!)^n$ leaves $1/S$. (a) the tadpole, (b) the figure-eight, (c) the melon, (d)–(f) the sunset, the fish and the triangle of PHY 513, Problem Set 8, Problem 1(a); the stabilizers are the symmetries listed in [[§C6a.9 Symmetry Factors in Practice|§C6a.9]].*
+*The orbit picture behind Step 5 ([[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]]). Left: one labelled diagram, a pairing of all half-edges (orange: leg $a$ of vertex $z_j$). Right: its diagram $D$; the map $\pi$ forgets the labels $j$ and $a$. The fiber $\pi^{-1}(D)$ is the orbit of the pairing under the relabelling group $G_n$, so $|\pi^{-1}(D)| = |G_n|/S$ by orbit–stabilizer, and dividing by $|G_n| = n!\,(4!)^n$ leaves $1/S$. (a) the tadpole, (b) the figure-eight, (c) the melon, (d)–(f) the sunset, the fish and the triangle of PHY 513, Problem Set 8, Problem 1(a); the stabilizers are the symmetries listed in [[§C6a.9 Symmetry Factors in Practice|§C6a.9]].*
 
 > [!remark] Remark: Where the 4! goes
 > Slide 17: "$\frac{1}{4!}$ largely cancels in combinatorics. It may not cancel entirely ⇒ multiply by $\frac1S$." If the four lines leaving the vertex each went to a different place, like $x$, $y$, $w$ and $u$, there would be no symmetry factor. In the tadpole two of the four legs go to $x$ and $y$, but the last two are joined to each other, and nothing distinguishes which end of their loop is which. Assign the four line-ends (to $x$, to $y$, loop end 1, loop end 2) to the legs $(a, b, c, d)$, a permutation of $(1, 2, 3, 4)$: $4! = 24$ assignments. Exchanging the two loop ends gives the same contraction,
@@ -220,7 +220,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 ^mod-c6a-8-3
 
 > [!remark] Remark: The same proof for other vertices
-> Nothing in [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] used the number 4 except as the number of legs per vertex, nor the reality of the field except through which pairs of fields have a nonzero contraction. In each case below the prefactor of the Dyson series is the inverse order of the relabelling group ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1), so Steps 5–8 go through with $|G|$ in place of $n!\,(4!)^n$:
+> Nothing in [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] used the number 4 except as the number of legs per vertex, nor the reality of the field except through which pairs of fields have a nonzero contraction. In each case below the prefactor of the Dyson series is the inverse order of the relabelling group ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1), so Steps 5–8 go through with $|G|$ in place of $n!\,(4!)^n$:
 >
 > $$
 > \frac{1}{|G|}\sum_{\text{pairings}}(\cdots) = \sum_D\frac{1}{S(D)}(\cdots), \qquad S = \frac{|G|}{N_D} = |\operatorname{Stab}(P)| .
@@ -350,18 +350,18 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]] — a contraction of the fields at the external points and of the four factors $\hat\phi_I(z_v)$ at each vertex is a pairing of half-edges.
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]] — relabelling vertices and legs is a group.
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^lem-ca-7-3|Lemma §CA.7.3]] — which acts on the contractions.
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]] — a diagram is an orbit, its automorphisms are the stabilizer, and $S$ is the stabilizer's order.
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-5|Def. §CA.7.5]] — the same notions in graph language: two contractions give the same Feynman diagram when their graphs are isomorphic.
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-4|Theorem §CA.7.4]] — and the isomorphisms are exactly the relabellings, so diagrams are orbits and graph automorphisms are stabilizers.
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]] — orbit–stabilizer counts the contractions of one diagram.
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]] — and a diagram is its drawing.
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^lem-ca-7-2|Lemma §CA.7.2]] — a permutation of the half-edges acts on pairings block by block: the blocks of $g\cdot P$ are the images of the blocks of $P$, which makes the integral $I(P)$ constant on orbits (Derivation §C6a.8.1, Step 5).
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — renaming the integration variables $z_v \to z_{\sigma(v)}$ does not change the integral (Derivation §C6a.8.1, Step 5).
-> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]] — the symmetry factors of first and second order by enumeration, the check of the coefficient $\frac1S$.
-> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]] — part 1, the order of the relabelling group for vertices of other valences and kinds of legs: the prefactor of the Dyson series is $1/|G|$ in each theory of Remark: The same proof for other vertices.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-2|Def. §CA.8.2]] — a contraction of the fields at the external points and of the four factors $\hat\phi_I(z_v)$ at each vertex is a pairing of half-edges.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-3|Def. §CA.8.3]] — relabelling vertices and legs is a group.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^lem-ca-8-3|Lemma §CA.8.3]] — which acts on the contractions.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-4|Def. §CA.8.4]] — a diagram is an orbit, its automorphisms are the stabilizer, and $S$ is the stabilizer's order.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-5|Def. §CA.8.5]] — the same notions in graph language: two contractions give the same Feynman diagram when their graphs are isomorphic.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-4|Theorem §CA.8.4]] — and the isomorphisms are exactly the relabellings, so diagrams are orbits and graph automorphisms are stabilizers.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-5|Theorem §CA.8.5]] — orbit–stabilizer counts the contractions of one diagram.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^thm-ca-8-8|Theorem §CA.8.8]] — and a diagram is its drawing.
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^lem-ca-8-2|Lemma §CA.8.2]] — a permutation of the half-edges acts on pairings block by block: the blocks of $g\cdot P$ are the images of the blocks of $P$, which makes the integral $I(P)$ constant on orbits (Derivation §C6a.8.1, Step 5).
+> - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-6|Theorem §CA.4.6]] — renaming the integration variables $z_v \to z_{\sigma(v)}$ does not change the integral (Derivation §C6a.8.1, Step 5).
+> - [[§CA.8 Pairings, Diagrams and Symmetry Factors#^ex-ca-8-1|Example §CA.8.1]] — the symmetry factors of first and second order by enumeration, the check of the coefficient $\frac1S$.
+> - [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]] — part 1, the order of the relabelling group for vertices of other valences and kinds of legs: the prefactor of the Dyson series is $1/|G|$ in each theory of Remark: The same proof for other vertices.
 > - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]] — the $\frac{1}{n!}$ of the Dyson series is the volume of the ordered simplex; it is the factor the $n!$ relabellings of the vertices cancel (Connections).
 
 > [!remark]- Connections

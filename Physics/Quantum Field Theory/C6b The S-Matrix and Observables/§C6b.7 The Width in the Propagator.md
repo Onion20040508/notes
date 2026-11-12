@@ -124,7 +124,7 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > \int\frac{dp^0}{2\pi}\,e^{-ip^0t}\,\frac{i}{2E_{\mathbf p}(p^0 - a)} .
 > $$
 >
-> **Step 2** (close the contour). For $t > 0$, $|e^{-ip^0t}| = e^{t\operatorname{Im}p^0}$ decays for $\operatorname{Im}p^0 < 0$, so the contour is closed in the lower half plane, clockwise, by Jordan's lemma ([[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]); it encloses the pole at $a$ ($\operatorname{Im}a = -\Gamma'/2 < 0$). The residue theorem ([[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]]) with the clockwise sign $-2\pi i$:
+> **Step 2** (close the contour). For $t > 0$, $|e^{-ip^0t}| = e^{t\operatorname{Im}p^0}$ decays for $\operatorname{Im}p^0 < 0$, so the contour is closed in the lower half plane, clockwise, by Jordan's lemma ([[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]]); it encloses the pole at $a$ ($\operatorname{Im}a = -\Gamma'/2 < 0$). The residue theorem ([[§CA.5 Contour Integration#^thm-ca-5-5|Theorem §CA.5.5]]) with the clockwise sign $-2\pi i$:
 >
 > $$
 > \operatorname*{Res}_{p^0 = a}\frac{i\,e^{-ip^0t}}{2E_{\mathbf p}(p^0 - a)} = \frac{i\,e^{-iat}}{2E_{\mathbf p}} , \qquad \frac{1}{2\pi}(-2\pi i)\frac{i\,e^{-iat}}{2E_{\mathbf p}} = \frac{e^{-iat}}{2E_{\mathbf p}} = \frac{1}{2E_{\mathbf p}}\,e^{-iE_{\mathbf p}t}\,e^{i\cdot i\frac{\Gamma'}{2}t} = \frac{1}{2E_{\mathbf p}}\,e^{-iE_{\mathbf p}t}\,e^{-\frac{\Gamma'}{2}t} .
@@ -154,7 +154,7 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 
 ^der-c6b-7-3
 
-*Uses:* [[§C6b.7 The Width in the Propagator#^thm-c6b-7-2|Theorem §C6b.7.2]], [[§C6b.7 The Width in the Propagator#^def-c6b-7-1|Def. §C6b.7.1]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]
+*Uses:* [[§C6b.7 The Width in the Propagator#^thm-c6b-7-2|Theorem §C6b.7.2]], [[§C6b.7 The Width in the Propagator#^def-c6b-7-1|Def. §C6b.7.1]], [[§CA.5 Contour Integration#^thm-ca-5-5|Theorem §CA.5.5]], [[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]]
 
 *Procedure:* [[P2 Green's Functions by Contour Integration|P2]]
 
@@ -243,13 +243,13 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
-> - [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]] — Jordan's lemma: for $t > 0$ the factor $e^{-ip^0t}$ decays in the lower half plane, so the $p^0$ integral of the propagator may be closed there (Derivation §C6b.7.3, Step 2).
-> - [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]] — the residue theorem with $-2\pi i$ for the clockwise contour: the pole at $E_{\mathbf p} - i\frac{m}{E_{\mathbf p}}\frac\Gamma2$ gives $e^{-iE_{\mathbf p}t}e^{-\frac{m}{E_{\mathbf p}}\frac\Gamma2t}$ (Derivation §C6b.7.3, Step 2).
+> - [[§CA.5 Contour Integration#^thm-ca-5-6|Theorem §CA.5.6]] — Jordan's lemma: for $t > 0$ the factor $e^{-ip^0t}$ decays in the lower half plane, so the $p^0$ integral of the propagator may be closed there (Derivation §C6b.7.3, Step 2).
+> - [[§CA.5 Contour Integration#^thm-ca-5-5|Theorem §CA.5.5]] — the residue theorem with $-2\pi i$ for the clockwise contour: the pole at $E_{\mathbf p} - i\frac{m}{E_{\mathbf p}}\frac\Gamma2$ gives $e^{-iE_{\mathbf p}t}e^{-\frac{m}{E_{\mathbf p}}\frac\Gamma2t}$ (Derivation §C6b.7.3, Step 2).
 > - [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 3 — nascent delta functions: the normalized Breit–Wigner shape is a Lorentzian of width $\Gamma/2$ and tends to $\delta(\sqrt s - m)$ as $\Gamma \to 0$ (Derivation §C6b.7.4, Step 4).
 
 > [!remark]- Connections
 > - A complex energy shift from coupling to a continuum, $\Gamma = -2\operatorname{Im}\Delta$, is the non-relativistic origin of $+im\Gamma$; its golden-rule rate is the non-relativistic decay formula — [[§C9.6 The Interaction Picture and the Atom–Field Interaction#^thm-c9-6-11|QM Theorem §C9.6.11]], [[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]].
 > - The time-dilated decay rate is the time dilation of special relativity, seen in cosmic-ray muons reaching the ground — [[§A2.1 Time Dilation#^thm-a2-1-2|REL Theorem §A2.1.2]], [[§A2.1 Time Dilation#^ex-a2-1-2|REL Example §A2.1.2]].
 > - The $+i\varepsilon$ that a finite width replaces is the Feynman prescription; with $\varepsilon \to m\Gamma$ the poles leave the real axis for good, and the Fourier transform back to time is the contour integral of the Feynman propagator — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]], [[P2 Green's Functions by Contour Integration|P2]].
-> - A Lorentzian of width $\varepsilon$ is the standard nascent delta function; the Breit–Wigner limit $\Gamma \to 0$ and the Sokhotski–Plemelj limit of $1/(x + i\varepsilon)$ are the same family — [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions|§CA.6]].
+> - A Lorentzian of width $\varepsilon$ is the standard nascent delta function; the Breit–Wigner limit $\Gamma \to 0$ and the Sokhotski–Plemelj limit of $1/(x + i\varepsilon)$ are the same family — [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§CA.7 Boundary Values, iε Limits and Fundamental Solutions|§CA.7]].
 > - The same $\Gamma$ is the decay rate of the box route; the propagator and the decay formula give the same time dilation — [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]], [[§C6b.5 Decay Widths#^thm-c6b-5-9|Theorem §C6b.5.9]].
