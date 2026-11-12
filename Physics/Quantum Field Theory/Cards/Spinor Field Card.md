@@ -171,7 +171,7 @@ Microcausality:
 
 | | Formula | Home |
 | --- | --- | --- |
-| contractions | $\overbracket{\hat\psi_a(x)\hat{\bar\psi}_b(y)} = S_F(x - y)_{ab}$ ($4\times4$ matrix), $\overbracket{\hat{\bar\psi}_b(y)\hat\psi_a(x)} = -S_F(x - y)_{ab}$, $\overbracket{\hat\psi\hat\psi} = \overbracket{\hat{\bar\psi}\hat{\bar\psi}} = 0$ | [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1\|Theorem §C6d.3.1]] |
+| contractions (pair, left field first, $\longmapsto$ value) | $\hat\psi_a(x),\ \hat{\bar\psi}_b(y) \longmapsto S_F(x - y)_{ab}$ ($4\times4$ matrix); $\hat{\bar\psi}_b(y),\ \hat\psi_a(x) \longmapsto -S_F(x - y)_{ab}$; $\hat\psi,\ \hat\psi \longmapsto 0$; $\hat{\bar\psi},\ \hat{\bar\psi} \longmapsto 0$ | [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1\|Theorem §C6d.3.1]] |
 | external fermions | incoming particle $u^s(p)$, outgoing particle $\bar u^s(p)$, incoming antiparticle $\bar v^s(p)$, outgoing antiparticle $v^s(p)$ (times $e^{\mp ip\cdot x}$ in position space) | [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-1\|Theorem §C6d.2.1]] |
 | internal fermion line | $\frac{i(\slashed q + m)}{q^2 - m^2 + i\varepsilon} = \frac{i}{\slashed q - m + i\varepsilon}$, $q$ along the fermion-number arrow | [[§C6d.6 Momentum-Space Feynman Rules#^thm-c6d-6-2\|Theorem §C6d.6.2]] |
 | Yukawa vertex | $\mathcal L_{\rm int} = -g\bar\psi\psi\phi$: $-ig$ (no $\frac{1}{3!}$; $i\mathcal L_{\rm int}$ with the fields stripped), one arrow in, one out | [[§C6d.1 Yukawa Theory#^thm-c6d-1-3\|Theorem §C6d.1.3]], [[§C6d.1 Yukawa Theory#^thm-c6d-1-4\|Theorem §C6d.1.4]], [[§C6d.4 First Order#^thm-c6d-4-4\|Theorem §C6d.4.4]] |

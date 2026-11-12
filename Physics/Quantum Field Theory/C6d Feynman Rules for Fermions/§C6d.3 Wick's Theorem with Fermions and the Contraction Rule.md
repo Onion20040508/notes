@@ -15,18 +15,18 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 
 **Setup.** As in [[§C6a.6 Wick's Theorem|§C6a.6]]: identities between free (interaction-picture) fields, $\hat\psi$, $\hat{\bar\psi}$ of [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] and $\hat\phi$ of [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], valid in any state and independent of the dynamics; vacuum values in $|0\rangle$; between particle states with the states of [[§C6d.2 Contractions with External Fermions#^def-c6d-2-2|Def. §C6d.2.2]].
 
-*Conventions* ([[Larsen PHY 513]]): $\hat\Phi_i$ stands for one of $\hat\psi_a(x_i)$, $\hat{\bar\psi}_b(x_i)$, $\hat\phi(x_i)$; $\epsilon_{ij} = -1$ if $\hat\Phi_i$ and $\hat\Phi_j$ are both fermion fields, $+1$ otherwise; $[A, B\}_\epsilon = AB - \epsilon BA$ (anticommutator for two fermion operators, commutator otherwise); $\hat\Phi^\pm$ the frequency parts ([[§C6d.2 Contractions with External Fermions#^def-c6d-2-1|Def. §C6d.2.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]); normal ordering $:\;:$ with the sign of every fermion exchange ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]; the slides' $N[\cdots]$). Contractions are written with the bracket, $\overbracket{\hat\psi(x)\hat{\bar\psi}(y)}$.
+*Conventions* ([[Larsen PHY 513]]): $\hat\Phi_i$ stands for one of $\hat\psi_a(x_i)$, $\hat{\bar\psi}_b(x_i)$, $\hat\phi(x_i)$; $\epsilon_{ij} = -1$ if $\hat\Phi_i$ and $\hat\Phi_j$ are both fermion fields, $+1$ otherwise; $[A, B\}_\epsilon = AB - \epsilon BA$ (anticommutator for two fermion operators, commutator otherwise); $\hat\Phi^\pm$ the frequency parts ([[§C6d.2 Contractions with External Fermions#^def-c6d-2-1|Def. §C6d.2.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]); normal ordering $:\;:$ with the sign of every fermion exchange ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]; the slides' $N[\cdots]$). A contraction is written as the value it equals, with its two fields named in their order, the left one first: for two fermion fields the value changes sign when they are exchanged ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^def-c6d-3-1|Def. §C6d.3.1]]). The bracket that the slides and PS draw over the pair appears in figures only.
 
 ## The contraction and the two-point case
 
 > [!definition] Definition §C6d.3.1: Contraction of Two Free Fields, Fermions Included
-> The **contraction** of two free fields is
+> The **contraction** of two free fields $\hat\Phi_i$, $\hat\Phi_j$, taken in this order ($\hat\Phi_i$ written to the left of $\hat\Phi_j$), is the difference
 >
 > $$
-> \overbracket{\hat\Phi_i\hat\Phi_j} \equiv T\{\hat\Phi_i\hat\Phi_j\} - \,:\!\hat\Phi_i\hat\Phi_j\!: ,
+> T\{\hat\Phi_i\hat\Phi_j\} - \,:\!\hat\Phi_i\hat\Phi_j\!: ,
 > $$
 >
-> with the fermionic time ordering of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]] and the fermionic normal ordering of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]. For scalars this is [[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]. Its values are [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]].
+> with the fermionic time ordering of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]] and the fermionic normal ordering of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]. For scalars this is [[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]. Its values are [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]]: in every case a $c$-number, equal to the vacuum value $\langle0|T\{\hat\Phi_i\hat\Phi_j\}|0\rangle$. As in Def. §C6a.5.1, formulas show a contraction as the value it equals ($S_F(x - y)_{ab}$, $D_F(x - y)$, a spinor times a plane wave), never as a bracket over the pair, and name the pair in words or by its positions; for two unspecified fields the value is written $\langle0|T\{\hat\Phi_i\hat\Phi_j\}|0\rangle$. The order of the two fields belongs to the name: for two fermion fields the contraction of $\hat\Phi_j$ with $\hat\Phi_i$ to its right is minus the contraction of $\hat\Phi_i$ with $\hat\Phi_j$ to its right.
 >
 > *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free fields, any state.
 >
@@ -35,16 +35,16 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 ^def-c6d-3-1
 
 > [!theorem] Theorem §C6d.3.1: Wick's Theorem for Two Fermion Fields; the Fermion Contractions
-> For free Dirac fields,
+> For free Dirac fields the contraction of $\hat\psi_a(x)$ with $\hat{\bar\psi}_b(y)$ to its right is $S_F(x - y)_{ab}$:
 >
 > $$
-> T\{\hat\psi_a(x)\hat{\bar\psi}_b(y)\} = \,:\!\hat\psi_a(x)\hat{\bar\psi}_b(y)\!:\; + \overbracket{\hat\psi_a(x)\hat{\bar\psi}_b(y)} , \qquad \overbracket{\hat\psi_a(x)\hat{\bar\psi}_b(y)} = \begin{cases}\langle0|\hat\psi_a(x)\hat{\bar\psi}_b(y)|0\rangle , & x^0 > y^0\\ -\langle0|\hat{\bar\psi}_b(y)\hat\psi_a(x)|0\rangle , & y^0 > x^0\end{cases} = S_F(x - y)_{ab} ,
+> T\{\hat\psi_a(x)\hat{\bar\psi}_b(y)\} = \,:\!\hat\psi_a(x)\hat{\bar\psi}_b(y)\!:\; + S_F(x - y)_{ab} , \qquad S_F(x - y)_{ab} = \begin{cases}\langle0|\hat\psi_a(x)\hat{\bar\psi}_b(y)|0\rangle , & x^0 > y^0\\ -\langle0|\hat{\bar\psi}_b(y)\hat\psi_a(x)|0\rangle , & y^0 > x^0\end{cases} ,
 > $$
 >
-> a $c$-number, the Dirac Feynman propagator $S_F(x - y)_{ab} = \langle0|T\{\hat\psi_a(x)\hat{\bar\psi}_b(y)\}|0\rangle$ of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], whose momentum-space form $\int\frac{d^4p}{(2\pi)^4}\frac{i(\slashed{p} + m)_{ab}}{p^2 - m^2 + i\varepsilon}e^{-ip\cdot(x - y)}$ is stated there (slide 17). Moreover
+> a $c$-number, the Dirac Feynman propagator $S_F(x - y)_{ab} = \langle0|T\{\hat\psi_a(x)\hat{\bar\psi}_b(y)\}|0\rangle$ of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], whose momentum-space form $\int\frac{d^4p}{(2\pi)^4}\frac{i(\slashed{p} + m)_{ab}}{p^2 - m^2 + i\varepsilon}e^{-ip\cdot(x - y)}$ is stated there (slide 17). The other pairs (the pair, left field first, $\longmapsto$ its contraction):
 >
 > $$
-> \overbracket{\hat{\bar\psi}_b(y)\hat\psi_a(x)} = -S_F(x - y)_{ab} , \qquad \overbracket{\hat\psi\hat\psi} = \overbracket{\hat{\bar\psi}\hat{\bar\psi}} = 0 , \qquad \overbracket{\hat\psi\hat\phi} = \overbracket{\hat{\bar\psi}\hat\phi} = 0 , \qquad \overbracket{\hat\phi(x)\hat\phi(y)} = D_F(x - y) :
+> \hat{\bar\psi}_b(y),\ \hat\psi_a(x) \;\longmapsto\; -S_F(x - y)_{ab} , \qquad \hat\psi,\ \hat\psi \;\longmapsto\; 0 , \qquad \hat{\bar\psi},\ \hat{\bar\psi} \;\longmapsto\; 0 , \qquad \hat\psi,\ \hat\phi \;\longmapsto\; 0 , \qquad \hat{\bar\psi},\ \hat\phi \;\longmapsto\; 0 , \qquad \hat\phi(x),\ \hat\phi(y) \;\longmapsto\; D_F(x - y) :
 > $$
 >
 > "contract any $\psi$ with any $\bar\psi$ (in that order)"; "$\psi\psi$ and $\bar\psi\bar\psi$ do not give contractions" (slide 22).
@@ -107,16 +107,16 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 > For free fields $\hat\Phi_1, \dots, \hat\Phi_n$ at pairwise different times,
 >
 > $$
-> T\{\hat\Phi_1\cdots\hat\Phi_n\} = \sum_C\;\epsilon(C)\prod_{\{i<j\}\in C}\overbracket{\hat\Phi_i\hat\Phi_j}\;:\!\prod_{k\notin\cup C}\hat\Phi_k\!: ,
+> T\{\hat\Phi_1\cdots\hat\Phi_n\} = \sum_C\;\epsilon(C)\prod_{\{i<j\}\in C}\langle0|T\{\hat\Phi_i\hat\Phi_j\}|0\rangle\;:\!\prod_{k\notin\cup C}\hat\Phi_k\!: ,
 > $$
 >
-> the sum over all sets $C$ of disjoint pairs, each contraction taken in the written order ($i < j$) with the values of [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]], the uncontracted fields normal ordered in their written order, and
+> the sum over all sets $C$ of disjoint pairs, each contraction taken in the written order ($i < j$: the factor $\langle0|T\{\hat\Phi_i\hat\Phi_j\}|0\rangle$ is the contraction of $\hat\Phi_i$ with $\hat\Phi_j$ to its right, [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^def-c6d-3-1|Def. §C6d.3.1]]) with the values of [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]], the uncontracted fields normal ordered in their written order, and
 >
 > $$
 > \epsilon(C) = \text{the sign of the permutation of the fermion fields that brings every pair of } C \text{ next to each other (in written order) at the front, the uncontracted fields keeping their order.}
 > $$
 >
-> In words (slide 22): "$T[\psi_1\bar\psi_2\psi_3\bar\psi_4\ldots] = N[\psi_1\bar\psi_2\psi_3\bar\psi_4\ldots]$ + all possible contractions … Whenever time-ordering, normal ordering, or contraction requires reordering of fields ⇒ include explicit sign." For scalar fields alone $\epsilon(C) = 1$ and this is [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]. Vacuum values: only $C$ with every field contracted survive. Contractions at a common time inside one package ($\hat{\bar\psi}\hat\psi$ at one vertex) are made in the written order, $\overbracket{\hat{\bar\psi}_a(x)\hat\psi_a(x)} = -\operatorname{tr}S_F(0)$ (Yu (7.42)).
+> In words (slide 22): "$T[\psi_1\bar\psi_2\psi_3\bar\psi_4\ldots] = N[\psi_1\bar\psi_2\psi_3\bar\psi_4\ldots]$ + all possible contractions … Whenever time-ordering, normal ordering, or contraction requires reordering of fields ⇒ include explicit sign." For scalar fields alone $\epsilon(C) = 1$ and this is [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]. Vacuum values: only $C$ with every field contracted survive. Contractions at a common time inside one package ($\hat{\bar\psi}\hat\psi$ at one vertex) are made in the written order: the contraction of $\hat{\bar\psi}_a(x)$ with $\hat\psi_a(x)$ to its right is $-S_F(0)_{aa} = -\operatorname{tr}S_F(0)$ (Yu (7.42)).
 >
 > *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free fields, an operator identity, any state, independent of the dynamics; used inside the Dyson series of [[§C6d.1 Yukawa Theory#^mod-c6d-1-1|Model §C6d.1.1]].
 >
@@ -125,14 +125,14 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 ^thm-c6d-3-2
 
 > [!derivation]- Derivation
-> **Step 1** (both sides change alike under exchange). Exchange two neighbouring fields $\hat\Phi_i$, $\hat\Phi_{i+1}$ in the written order. The left side changes by $\epsilon_{i,i+1}$: $T$ is the product in time order times the sign of the permutation used, and the new written order differs by one exchange ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]]). Each term on the right changes by the same $\epsilon_{i,i+1}$: (a) both uncontracted: $:\;:$ changes by $\epsilon_{i,i+1}$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]); (b) contracted with each other: the pair is written in the other order, and $\overbracket{\hat\Phi_{i+1}\hat\Phi_i} = \epsilon_{i,i+1}\overbracket{\hat\Phi_i\hat\Phi_{i+1}}$ ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]], Step 5), $\epsilon(C)$ unchanged; (c) otherwise $\epsilon(C)$ is the sign of a permutation composed with the exchange, so it changes by $\epsilon_{i,i+1}$. Hence it suffices to prove the theorem for $x_1^0 > x_2^0 > \cdots > x_n^0$.
+> **Step 1** (both sides change alike under exchange). Exchange two neighbouring fields $\hat\Phi_i$, $\hat\Phi_{i+1}$ in the written order. The left side changes by $\epsilon_{i,i+1}$: $T$ is the product in time order times the sign of the permutation used, and the new written order differs by one exchange ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]]). Each term on the right changes by the same $\epsilon_{i,i+1}$: (a) both uncontracted: $:\;:$ changes by $\epsilon_{i,i+1}$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]); (b) contracted with each other: the pair is written in the other order, and $\langle0|T\{\hat\Phi_{i+1}\hat\Phi_i\}|0\rangle = \epsilon_{i,i+1}\langle0|T\{\hat\Phi_i\hat\Phi_{i+1}\}|0\rangle$ ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]], Step 5), $\epsilon(C)$ unchanged; (c) otherwise $\epsilon(C)$ is the sign of a permutation composed with the exchange, so it changes by $\epsilon_{i,i+1}$. Hence it suffices to prove the theorem for $x_1^0 > x_2^0 > \cdots > x_n^0$.
 >
 > **Step 2** (start). $n = 1$: $T\{\hat\Phi_1\} = \hat\Phi_1 = \,:\!\hat\Phi_1\!:$. $n = 2$: [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]] (and [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-6|Theorem §C2b.7.6]] for scalars).
 >
 > **Step 3** (prepend the latest field). With $x_1^0$ the latest, $T\{\hat\Phi_1\cdots\hat\Phi_n\} = \hat\Phi_1\,T\{\hat\Phi_2\cdots\hat\Phi_n\}$, no sign ($\hat\Phi_1$ is already in place). By the induction hypothesis,
 >
 > $$
-> T\{\hat\Phi_1\cdots\hat\Phi_n\} = \bigl(\hat\Phi_1^- + \hat\Phi_1^+\bigr)\sum_{C'}\epsilon(C')\prod_{C'}\overbracket{\hat\Phi_i\hat\Phi_j}\;:\!R(C')\!: ,
+> T\{\hat\Phi_1\cdots\hat\Phi_n\} = \bigl(\hat\Phi_1^- + \hat\Phi_1^+\bigr)\sum_{C'}\epsilon(C')\prod_{\{i<j\}\in C'}\langle0|T\{\hat\Phi_i\hat\Phi_j\}|0\rangle\;:\!R(C')\!: ,
 > $$
 >
 > $C'$ over the sets of pairs of $\{2, \dots, n\}$, $R(C')$ the uncontracted ones in written order; the contractions are $c$-numbers and commute with everything.
@@ -142,12 +142,12 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 > **Step 5** ($\hat\Phi_1^+$). For $l \in R$ write $:\!R\!: = \eta_l\,:\!\hat\Phi_l\,R_{\ne l}\!:$, $\eta_l = \prod_k\epsilon_{kl}$ over the $k \in R$ written before $l$ (moving $\hat\Phi_l$ to the front of the normal-ordered product), and $:\!\hat\Phi_lR_{\ne l}\!: = \hat\Phi_l^-:\!R_{\ne l}\!: + :\!\hat\Phi_l^+R_{\ne l}\!:$. Moving $\hat\Phi_1^+$ to the right through a normal-ordered product, it passes annihilation parts at the cost $\epsilon$ only ($[\hat\Phi_1^+, \hat\Phi_k^+\}_\epsilon = 0$: annihilation parts (anti)commute exactly), and each creation part $\hat\Phi_l^-$ leaves the number
 >
 > $$
-> \hat\Phi_1^+\hat\Phi_l^- = \epsilon_{1l}\,\hat\Phi_l^-\hat\Phi_1^+ + [\hat\Phi_1^+, \hat\Phi_l^-\}_\epsilon , \qquad [\hat\Phi_1^+, \hat\Phi_l^-\}_\epsilon = \overbracket{\hat\Phi_1\hat\Phi_l} \quad (x_1^0 > x_l^0) ,
+> \hat\Phi_1^+\hat\Phi_l^- = \epsilon_{1l}\,\hat\Phi_l^-\hat\Phi_1^+ + [\hat\Phi_1^+, \hat\Phi_l^-\}_\epsilon , \qquad [\hat\Phi_1^+, \hat\Phi_l^-\}_\epsilon = \langle0|T\{\hat\Phi_1\hat\Phi_l\}|0\rangle \quad (x_1^0 > x_l^0) ,
 > $$
 >
-> the last equality being Step 1 of [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^der-c6d-3-1|Derivation §C6d.3.1]] in general form ($T - :\;:$ equals the reordered non-normal term). Collecting: $\hat\Phi_1^+:\!R\!: = \,:\!\hat\Phi_1^+R\!: + \sum_{l\in R}\eta_l\,\overbracket{\hat\Phi_1\hat\Phi_l}\,:\!R_{\ne l}\!:$, the first term because $\hat\Phi_1^+$ carried to the right end is in normal order with exactly the sign of $:\!\hat\Phi_1^+R\!:$.
+> the last equality being Step 1 of [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^der-c6d-3-1|Derivation §C6d.3.1]] in general form ($T - :\;:$ equals the reordered non-normal term): the number is the contraction of $\hat\Phi_1$ with $\hat\Phi_l$ to its right. Collecting: $\hat\Phi_1^+:\!R\!: = \,:\!\hat\Phi_1^+R\!: + \sum_{l\in R}\eta_l\,\langle0|T\{\hat\Phi_1\hat\Phi_l\}|0\rangle\,:\!R_{\ne l}\!:$, the first term because $\hat\Phi_1^+$ carried to the right end is in normal order with exactly the sign of $:\!\hat\Phi_1^+R\!:$.
 >
-> **Step 6** (the signs match). Steps 4–5 give $:\!\hat\Phi_1R\!:$ (for $C = C'$) and the terms $\epsilon(C')\eta_l\prod_{C'}\overbracket{\cdots}\overbracket{\hat\Phi_1\hat\Phi_l}:\!R_{\ne l}\!:$ (for $C = C'\cup\{\{1, l\}\}$). The permutation of $\epsilon(C)$ for $C = C'\cup\{\{1, l\}\}$ is: first that of $C'$ on $2, \dots, n$ (sign $\epsilon(C')$), giving $\hat\Phi_1$, the pairs of $C'$, then $R$; then $\hat\Phi_l$ moved left to sit after $\hat\Phi_1$, past the pairs of $C'$ (each pair holds $0$ or $2$ fermion fields: no sign) and past the fields of $R$ before $l$ (sign $\eta_l$). So $\epsilon(C) = \epsilon(C')\eta_l$, and every set $C$ of pairs of $\{1, \dots, n\}$ appears once (Step 6 of [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]]).
+> **Step 6** (the signs match). Steps 4–5 give $:\!\hat\Phi_1R\!:$ (for $C = C'$) and the terms $\epsilon(C')\eta_l\prod_{\{i<j\}\in C'}\langle0|T\{\hat\Phi_i\hat\Phi_j\}|0\rangle\,\langle0|T\{\hat\Phi_1\hat\Phi_l\}|0\rangle:\!R_{\ne l}\!:$ (for $C = C'\cup\{\{1, l\}\}$). The permutation of $\epsilon(C)$ for $C = C'\cup\{\{1, l\}\}$ is: first that of $C'$ on $2, \dots, n$ (sign $\epsilon(C')$), giving $\hat\Phi_1$, the pairs of $C'$, then $R$; then $\hat\Phi_l$ moved left to sit after $\hat\Phi_1$, past the pairs of $C'$ (each pair holds $0$ or $2$ fermion fields: no sign) and past the fields of $R$ before $l$ (sign $\eta_l$). So $\epsilon(C) = \epsilon(C')\eta_l$, and every set $C$ of pairs of $\{1, \dots, n\}$ appears once (Step 6 of [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]]).
 >
 > **Step 7** (vacuum values). $\langle0|:\cdots:|0\rangle = 0$ for any nonempty normal-ordered product ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]): only full contractions survive.
 >
@@ -172,9 +172,9 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 >
 > **Step 1** (which pairs). Of the six pairs, $\{1, 3\}$ ($\hat\psi\hat\psi$) and $\{2, 4\}$ ($\hat{\bar\psi}\hat{\bar\psi}$) contract to $0$; the others are $\{1, 2\}$, $\{3, 4\}$, $\{1, 4\}$, $\{2, 3\}$ ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]]).
 >
-> **Step 2** (one contraction). $\{1, 2\}$: already in front, $\epsilon = +1$, value $S_F(1 - 2)$, rest $:\!\hat\psi_3\hat{\bar\psi}_4\!:$. $\{3, 4\}$: move the block $\hat\psi_3\hat{\bar\psi}_4$ past $\hat\psi_1\hat{\bar\psi}_2$, $4$ exchanges, $\epsilon = +1$; rest $:\!\hat\psi_1\hat{\bar\psi}_2\!:$. $\{1, 4\}$: move $\hat{\bar\psi}_4$ left past $\hat\psi_3$, $\hat{\bar\psi}_2$: $2$ exchanges, $\epsilon = +1$, value $S_F(1 - 4)$; the rest in written order is $:\!\hat{\bar\psi}_2\hat\psi_3\!: = -:\!\hat\psi_3\hat{\bar\psi}_2\!:$. $\{2, 3\}$: move the block $\hat{\bar\psi}_2\hat\psi_3$ past $\hat\psi_1$: $2$ exchanges, $\epsilon = +1$; the pair is written $\hat{\bar\psi}_2\hat\psi_3$, value $\overbracket{\hat{\bar\psi}_2\hat\psi_3} = -S_F(3 - 2)$; rest $:\!\hat\psi_1\hat{\bar\psi}_4\!:$.
+> **Step 2** (one contraction). $\{1, 2\}$: already in front, $\epsilon = +1$, value $S_F(1 - 2)$, rest $:\!\hat\psi_3\hat{\bar\psi}_4\!:$. $\{3, 4\}$: move the block $\hat\psi_3\hat{\bar\psi}_4$ past $\hat\psi_1\hat{\bar\psi}_2$, $4$ exchanges, $\epsilon = +1$; rest $:\!\hat\psi_1\hat{\bar\psi}_2\!:$. $\{1, 4\}$: move $\hat{\bar\psi}_4$ left past $\hat\psi_3$, $\hat{\bar\psi}_2$: $2$ exchanges, $\epsilon = +1$, value $S_F(1 - 4)$; the rest in written order is $:\!\hat{\bar\psi}_2\hat\psi_3\!: = -:\!\hat\psi_3\hat{\bar\psi}_2\!:$. $\{2, 3\}$: move the block $\hat{\bar\psi}_2\hat\psi_3$ past $\hat\psi_1$: $2$ exchanges, $\epsilon = +1$; the pair is written $\hat{\bar\psi}_2\hat\psi_3$, $\hat{\bar\psi}$ first, value $-S_F(3 - 2)$; rest $:\!\hat\psi_1\hat{\bar\psi}_4\!:$.
 >
-> **Step 3** (two contractions). $\{\{1, 2\}, \{3, 4\}\}$: $\epsilon = +1$, $S_F(1 - 2)S_F(3 - 4)$. $\{\{1, 4\}, \{2, 3\}\}$: bring $\hat{\bar\psi}_4$ next to $\hat\psi_1$ ($2$ exchanges, $+1$): $\hat\psi_1\hat{\bar\psi}_4\hat{\bar\psi}_2\hat\psi_3$; values $S_F(1 - 4)\cdot\overbracket{\hat{\bar\psi}_2\hat\psi_3} = -S_F(1 - 4)S_F(3 - 2)$. The other pairings contain a zero pair.
+> **Step 3** (two contractions). $\{\{1, 2\}, \{3, 4\}\}$: $\epsilon = +1$, $S_F(1 - 2)S_F(3 - 4)$. $\{\{1, 4\}, \{2, 3\}\}$: bring $\hat{\bar\psi}_4$ next to $\hat\psi_1$ ($2$ exchanges, $+1$): $\hat\psi_1\hat{\bar\psi}_4\hat{\bar\psi}_2\hat\psi_3$; values $S_F(1 - 4)$ for $\hat\psi_1$ with $\hat{\bar\psi}_4$ and $-S_F(3 - 2)$ for $\hat{\bar\psi}_2$ with $\hat\psi_3$ to its right, product $-S_F(1 - 4)S_F(3 - 2)$. The other pairings contain a zero pair.
 >
 > **Step 4** (count). $1 + 4 + 2 = 7$ nonzero terms, as on the slide. The vacuum value keeps the last line: $\langle0|T[\hat\psi_1\hat{\bar\psi}_2\hat\psi_3\hat{\bar\psi}_4]|0\rangle = S_F(1 - 2)S_F(3 - 4) - S_F(1 - 4)S_F(3 - 2)$, antisymmetric under $\hat\psi_1 \leftrightarrow \hat\psi_3$, as Fermi statistics demands.
 >
@@ -229,13 +229,13 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 > \langle0|\;A\;\bigl[\hat{\bar\psi}\hat\psi\bigr]_{x_1}\cdots\bigl[\hat{\bar\psi}\hat\psi\bigr]_{x_n}\;B\;|0\rangle ,
 > $$
 >
-> the packages in any order, and draw each pair as an arc. Then the term is
+> the packages in any order, and draw each pair as an arc above the row (the figure after the derivation shows two such rows). Then the term is
 >
 > $$
 > (-1)^{\#\text{crossings}}\times\prod_{\text{pairs}}(\text{value, in the written order}) ,
 > $$
 >
-> with values $\overbracket{\hat\psi(x)\hat{\bar\psi}(y)} = S_F(x - y)$, $\overbracket{\hat{\bar\psi}(y)\hat\psi(x)} = -S_F(x - y)$ ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]]), the external spinors times plane waves of [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-1|Theorem §C6d.2.1]], and the scalar contractions ($D_F$, $e^{\mp ip\cdot x}$) without sign. Equivalently, $(-1)^{\#\text{crossings}}$ is the sign of the permutation that makes every contracted pair adjacent (each pair in its order in the row). The crossings are counted and the values are read in the same row: exchanging two packages can change the number of crossings by an odd number, and then a field–field pair stands in the opposite order and its value changes sign with it; the product does not depend on the order of the packages.
+> with the values $+S_F(x - y)$ for a pair that stands in the row as $\hat\psi(x)$ before $\hat{\bar\psi}(y)$ and $-S_F(x - y)$ for a pair that stands as $\hat{\bar\psi}(y)$ before $\hat\psi(x)$ ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]]), the external spinors times plane waves of [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-1|Theorem §C6d.2.1]], and the scalar contractions ($D_F$, $e^{\mp ip\cdot x}$) without sign. Equivalently, $(-1)^{\#\text{crossings}}$ is the sign of the permutation that makes every contracted pair adjacent (each pair in its order in the row). The crossings are counted and the values are read in the same row: exchanging two packages can change the number of crossings by an odd number, and then a field–field pair stands in the opposite order and its value changes sign with it; the product does not depend on the order of the packages.
 >
 > *Equivalently,* the scalar case is [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]]: the same full contractions of fields and particles, every term with sign $+$.
 >
@@ -258,7 +258,7 @@ Wick's theorem trades a time-ordered product for normal-ordered products and con
 > (-1)^{c_W} = (+1)\cdot(-1)^{c_T}\cdot(-1)^r .
 > $$
 >
-> The value of each reversed pair, read in its row order, changes sign as well, $\overbracket{\hat{\bar\psi}(y)\hat\psi(x)} = -\overbracket{\hat\psi(x)\hat{\bar\psi}(y)}$ ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]]), so the product of the values changes by $(-1)^r$ too. Hence
+> The value of each reversed pair, read in its row order, changes sign as well: read as $\hat{\bar\psi}(y)$ before $\hat\psi(x)$ it is $-S_F(x - y)$, read as $\hat\psi(x)$ before $\hat{\bar\psi}(y)$ it is $+S_F(x - y)$ ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]]), so the product of the values changes by $(-1)^r$ too. Hence
 >
 > $$
 > (-1)^{c_W}\prod(\text{values in the written order}) = (-1)^{c_T}\prod(\text{values in the time order}) :

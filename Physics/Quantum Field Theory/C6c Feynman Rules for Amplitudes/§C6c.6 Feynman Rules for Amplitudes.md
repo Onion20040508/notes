@@ -51,7 +51,7 @@ Amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^de
 ^thm-c6c-6-1
 
 > [!derivation]- Derivation
-> **Step 1** (part 1). [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 2, and [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]]: $\overbracket{\hat\phi_I(x)|\mathbf p\rangle} = e^{-ip\cdot x}$ and $\overbracket{\langle\mathbf p|\hat\phi_I(x)} = e^{+ip\cdot x}$, computed from the mode expansion of the free field and $[\hat a_{\mathbf q}, \hat a^\dagger_{\mathbf p}] = (2\pi)^3\delta^3(\mathbf q - \mathbf p)$ alone. In momentum space the vertex integral $\int d^4x\,e^{-ip\cdot x}(\cdots)$ turns the plane wave into the momentum $p$ entering the vertex delta ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-5|Theorem §C6c.2.5]], 2); after the deltas are used, nothing of the external line is left: factor $1$ (Step 5 of [[§C6c.6 Feynman Rules for Amplitudes#^der-c6c-6-2|Derivation §C6c.6.2]]).
+> **Step 1** (part 1). [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 2, and [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]]: the contraction of $\hat\phi_I(x)$ with an incoming $|\mathbf p\rangle$ is $e^{-ip\cdot x}$ and that of an outgoing $\langle\mathbf p|$ with $\hat\phi_I(x)$ is $e^{+ip\cdot x}$, computed from the mode expansion of the free field and $[\hat a_{\mathbf q}, \hat a^\dagger_{\mathbf p}] = (2\pi)^3\delta^3(\mathbf q - \mathbf p)$ alone. In momentum space the vertex integral $\int d^4x\,e^{-ip\cdot x}(\cdots)$ turns the plane wave into the momentum $p$ entering the vertex delta ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-5|Theorem §C6c.2.5]], 2); after the deltas are used, nothing of the external line is left: factor $1$ (Step 5 of [[§C6c.6 Feynman Rules for Amplitudes#^der-c6c-6-2|Derivation §C6c.6.2]]).
 >
 > **Step 2** (part 2). A leg–leg contraction is $\langle0|T\{\hat\phi_{I,j}(x)\hat\phi_{I,j}(y)\}|0\rangle = D_F^{(m_j)}(x - y)$ for fields of one kind and $0$ otherwise ([[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]]), with $D_F = \int\frac{d^4q}{(2\pi)^4}\frac{i\,e^{-iq\cdot(x - y)}}{q^2 - m_j^2 + i\varepsilon}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]): a property of the free field of mass $m_j$.
 >
@@ -248,7 +248,7 @@ Amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^de
 > $$
 >
 > $g$ a real coupling of mass dimension $1$, as the cubic coupling of [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]].
-> 1. *Structure.* The state space is the product of three free scalar Fock spaces ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] for each mass), free vacuum $|0\rangle$; the three fields have independent mode operators, and two fields contract only with their own kind, $\overbracket{\hat\phi_i(z_1)\hat\phi_j(z_2)} = \delta_{ij}D_F^{(m_i)}(z_1 - z_2)$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]]).
+> 1. *Structure.* The state space is the product of three free scalar Fock spaces ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] for each mass), free vacuum $|0\rangle$; the three fields have independent mode operators, and two fields contract only with their own kind: the contraction of $\hat\phi_i(z_1)$ with $\hat\phi_j(z_2)$ is $\delta_{ij}D_F^{(m_i)}(z_1 - z_2)$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]]).
 > 2. *Interaction.* $\mathcal L_{\rm int} = -g\phi_1\phi_2\phi_3$ has no derivatives, so the conjugate momenta are those of the free theory and $\mathcal H_{\rm int} = -\mathcal L_{\rm int} = g\,\phi_1\phi_2\phi_3$, as for $\phi^4$ ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-4|Theorem §C6a.1.4]], [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-5|Theorem §C6a.1.5]]).
 > 3. *Vertex.* One vertex type, with one leg of each of $\phi_1$, $\phi_2$, $\phi_3$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^def-c6a-13-1|Def. §C6a.13.1]]); its factor is $-ig\cdot1!\,1!\,1! = -ig$: a vertex of distinct fields has a trivial within-vertex group ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]).
 >
@@ -360,10 +360,10 @@ Amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^de
 > \hat\phi_i(z)\,|p\rangle \to e^{-ip\cdot z} , \qquad \langle p|\,\hat\phi_i(z) \to e^{ip\cdot z} .
 > $$
 >
-> Two fields contract only with their own type ([[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]]), with the propagator of mass $m_i$:
+> Two fields contract only with their own type ([[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]]), $\hat\phi_i(z_1)\hat\phi_i(z_2) \to D_F^{(i)}(z_1 - z_2)$, the propagator of mass $m_i$:
 >
 > $$
-> \overbracket{\hat\phi_i(z_1)\hat\phi_i(z_2)} = D_F^{(i)}(z_1 - z_2) = \int\frac{d^4q}{(2\pi)^4}\,\frac{i}{q^2 - m_i^2 + i\varepsilon}\,e^{-iq\cdot(z_1 - z_2)} .
+> D_F^{(i)}(z_1 - z_2) = \int\frac{d^4q}{(2\pi)^4}\,\frac{i}{q^2 - m_i^2 + i\varepsilon}\,e^{-iq\cdot(z_1 - z_2)} .
 > $$
 >
 > **Step 4** (the coefficient). The group $G$ relabels the two vertices and permutes legs of the same field within a vertex. Each vertex has one leg of each field, so the within-vertex group is trivial and $|G| = 2!\cdot1\cdot1 = 2$, matching the prefactor $\frac{1}{2!}$ (vertex factor $-ig$, [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]). The particles are labelled, so the diagram has no nontrivial symmetry, $S = 1$ ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]]), and the number of contractions giving it is $N = |G|/S = 2$ (the pair $\{p_A, p_1\}$ on $z_1$ or on $z_2$). The coefficient is $N/|G| = 1$ ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-2|Theorem §C6c.5.2]]).

@@ -92,21 +92,21 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > \langle0|T\Bigl\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\Bigl(-\frac{i\lambda}{4!}\int d^4z\,\hat\phi_I(z)^4\Bigr)\Bigr\}|0\rangle = -\frac{i\lambda}{4!}\int d^4z\;\langle0|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\,\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\}|0\rangle .
 > $$
 >
-> **Step 2** (Wick's theorem: time order → normal order plus contractions). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], with $\overbracket{\hat\phi_i\hat\phi_j} = D_F(x_i - x_j)$ for a contracted pair ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]), the eight fields give $\binom{8}{2k}(2k - 1)!!$ terms with $k$ brackets:
+> **Step 2** (Wick's theorem: time order → normal order plus contractions). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], with every contracted pair replaced by the propagator of its two points ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]) and named under it, $\{i, j\}$ for $\hat\phi_i$ with $\hat\phi_j$ and $\{j, z_a\}$ for $\hat\phi_j$ with $\hat\phi_{z_a}$ (all four $\hat\phi_{z_a}$ sit at $z$), the eight fields give $\binom{8}{2k}(2k - 1)!!$ terms with $k$ contractions:
 >
 > $$
 > \begin{aligned}
 > T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\} ={}& :\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: &&1\text{ term}\\
-> &+ \overbracket{\hat\phi_1\hat\phi_2}\,:\!\hat\phi_3\hat\phi_4\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: + \overbracket{\hat\phi_1\hat\phi_{z_1}}\,:\!\hat\phi_2\hat\phi_3\hat\phi_4\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: + \cdots &&\tbinom82 = 28\text{ terms}\\
-> &+ \overbracket{\hat\phi_1\hat\phi_{z_1}}\,\overbracket{\hat\phi_2\hat\phi_{z_2}}\,:\!\hat\phi_3\hat\phi_4\hat\phi_{z_3}\hat\phi_{z_4}\!: + \cdots &&\tbinom84\cdot3 = 210\text{ terms}\\
-> &+ \overbracket{\hat\phi_1\hat\phi_{z_1}}\,\overbracket{\hat\phi_2\hat\phi_{z_2}}\,\overbracket{\hat\phi_3\hat\phi_{z_3}}\,:\!\hat\phi_4\hat\phi_{z_4}\!: + \cdots &&\tbinom86\cdot15 = 420\text{ terms}\\
-> &+ \overbracket{\hat\phi_1\hat\phi_{z_1}}\,\overbracket{\hat\phi_2\hat\phi_{z_2}}\,\overbracket{\hat\phi_3\hat\phi_{z_3}}\,\overbracket{\hat\phi_4\hat\phi_{z_4}} + \cdots &&7!! = 105\text{ terms} .
+> &+ \underbrace{D_F(x_1 - x_2)}_{\{1, 2\}}\,:\!\hat\phi_3\hat\phi_4\hat\phi_{z_1}\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: + \underbrace{D_F(x_1 - z)}_{\{1, z_1\}}\,:\!\hat\phi_2\hat\phi_3\hat\phi_4\hat\phi_{z_2}\hat\phi_{z_3}\hat\phi_{z_4}\!: + \cdots &&\tbinom82 = 28\text{ terms}\\
+> &+ \underbrace{D_F(x_1 - z)D_F(x_2 - z)}_{\{1, z_1\}\,\{2, z_2\}}\,:\!\hat\phi_3\hat\phi_4\hat\phi_{z_3}\hat\phi_{z_4}\!: + \cdots &&\tbinom84\cdot3 = 210\text{ terms}\\
+> &+ \underbrace{D_F(x_1 - z)D_F(x_2 - z)D_F(x_3 - z)}_{\{1, z_1\}\,\{2, z_2\}\,\{3, z_3\}}\,:\!\hat\phi_4\hat\phi_{z_4}\!: + \cdots &&\tbinom86\cdot15 = 420\text{ terms}\\
+> &+ \underbrace{D_F(x_1 - z)D_F(x_2 - z)D_F(x_3 - z)D_F(x_4 - z)}_{\{1, z_1\}\,\{2, z_2\}\,\{3, z_3\}\,\{4, z_4\}} + \cdots &&7!! = 105\text{ terms} .
 > \end{aligned}
 > $$
 >
-> **Step 3** (vacuum value). The brackets are numbers; every term with a remainder $:\!\cdots\!:$ of $8$, $6$, $4$ or $2$ fields has $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2; spelled out in [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]], Step 3). Only the $7!! = 105$ complete contractions survive ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]).
+> **Step 3** (vacuum value). The contractions are numbers; every term with a remainder $:\!\cdots\!:$ of $8$, $6$, $4$ or $2$ fields has $\langle0|:\!\cdots\!:|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2; spelled out in [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]], Step 3). Only the $7!! = 105$ complete contractions survive ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]).
 >
-> **Step 4** (the fully connected ones). A complete contraction containing a bracket $\overbracket{\hat\phi_i\hat\phi_j}$ of two external fields has a line from $x_i$ to $x_j$ that touches nothing else: it is not fully connected ([[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-1|§C6c.1, Caution: "Connected" here means fully connected]]). In the others each $\hat\phi_j$ is bracketed with a different $\hat\phi_{z_{\sigma(j)}}$, which uses up all four $\hat\phi_{z_a}$; so they are labelled by the permutations $\sigma \in S_4$, $4! = 24$ of them, and the remaining $105 - 24 = 81$ are not fully connected. With $D_{ja} \equiv D_F(x_j - z_a)$ and $\overbracket{\hat\phi_1\hat\phi_{z_{\sigma(1)}}}\,\overbracket{\hat\phi_2\hat\phi_{z_{\sigma(2)}}}\,\overbracket{\hat\phi_3\hat\phi_{z_{\sigma(3)}}}\,\overbracket{\hat\phi_4\hat\phi_{z_{\sigma(4)}}} = D_{1\sigma(1)}D_{2\sigma(2)}D_{3\sigma(3)}D_{4\sigma(4)}$, the 24 are
+> **Step 4** (the fully connected ones). A complete contraction containing a pair $\{i, j\}$ of two external fields, a factor $D_F(x_i - x_j)$, has a line from $x_i$ to $x_j$ that touches nothing else: it is not fully connected ([[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-1|§C6c.1, Caution: "Connected" here means fully connected]]). In the others each $\hat\phi_j$ is contracted with a different $\hat\phi_{z_{\sigma(j)}}$, which uses up all four $\hat\phi_{z_a}$; so they are labelled by the permutations $\sigma \in S_4$, $4! = 24$ of them, and the remaining $105 - 24 = 81$ are not fully connected. With $D_{ja} \equiv D_F(x_j - z_a)$ the contraction of $\sigma$ is $\{1, z_{\sigma(1)}\}\,\{2, z_{\sigma(2)}\}\,\{3, z_{\sigma(3)}\}\,\{4, z_{\sigma(4)}\} \longmapsto D_{1\sigma(1)}D_{2\sigma(2)}D_{3\sigma(3)}D_{4\sigma(4)}$, and the 24 are
 >
 > $$
 > \begin{aligned}
@@ -117,7 +117,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > \end{aligned}
 > $$
 >
-> (each row: $\hat\phi_1$ with $\hat\phi_{z_a}$, then the $3! = 6$ ways of bracketing $\hat\phi_2, \hat\phi_3, \hat\phi_4$ with the other three).
+> (each row: $\hat\phi_1$ with $\hat\phi_{z_a}$, then the $3! = 6$ ways of contracting $\hat\phi_2, \hat\phi_3, \hat\phi_4$ with the other three).
 >
 > **Step 5** (set $z_a = z$; the coefficient). Every $D_{ja} \to D_F(x_j - z)$, so each of the 24 terms becomes $\prod_{j=1}^4D_F(x_j - z)$ and, with Step 1,
 >
@@ -212,10 +212,10 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > **Step 1** (the three pairings). By [[§C6a.7 Feynman Diagrams for Correlation Functions#^ex-c6a-7-1|Example §C6a.7.1]],
 >
 > $$
-> \langle0|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\}|0\rangle = \overbracket{\hat\phi_1\hat\phi_2}\,\overbracket{\hat\phi_3\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_3}\,\overbracket{\hat\phi_2\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_4}\,\overbracket{\hat\phi_2\hat\phi_3} = D_{12}D_{34} + D_{13}D_{24} + D_{14}D_{23} ,
+> \langle0|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\}|0\rangle = \underbrace{D_{12}D_{34}}_{\{1, 2\}\,\{3, 4\}} + \underbrace{D_{13}D_{24}}_{\{1, 3\}\,\{2, 4\}} + \underbrace{D_{14}D_{23}}_{\{1, 4\}\,\{2, 3\}} ,
 > $$
 >
-> $D_{ij} = D_F(x_i - x_j)$; each factor of each term involves two of the four points, so the transform factorizes into two two-point transforms.
+> $D_{ij} = D_F(x_i - x_j)$, the contracted pairs named under each term; each factor of each term involves two of the four points, so the transform factorizes into two two-point transforms.
 >
 > **Step 2** (one line). Insert $D_F(x_i - x_j) = \int\frac{d^4k}{(2\pi)^4}\tilde D_F(k)\,e^{-ik\cdot(x_i - x_j)}$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]) and do the two position integrals with [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]; for phases $e^{iq_i\cdot x_i}$, $e^{iq_j\cdot x_j}$ (momenta $q_i$, $q_j$ entering),
 >

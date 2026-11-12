@@ -155,10 +155,10 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > \langle\mathbf p_1\mathbf p_2|i\hat T^{(1)}|\mathbf p_A\mathbf p_B\rangle = -\frac{i\lambda}{4!}\int d^4x\,\langle\mathbf p_1\mathbf p_2|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\}|\mathbf p_A\mathbf p_B\rangle .
 > $$
 >
-> **Step 2** (Wick: time order → normal order plus contractions). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], with $\overbracket{\hat\phi_a\hat\phi_b} = D_F(0)$,
+> **Step 2** (Wick: time order → normal order plus contractions). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], the contraction of any two of the four fields, $\hat\phi_a$ with $\hat\phi_b$, being $D_F(x - x) = D_F(0)$ (the contracted pairs $\{a, b\}$ are named under the propagators),
 >
 > $$
-> T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\} = {:}\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4{:} + \bigl(\overbracket{\hat\phi_1\hat\phi_2}\,{:}\hat\phi_3\hat\phi_4{:} + \cdots\bigr)_{6\text{ terms}} + \bigl(\overbracket{\hat\phi_1\hat\phi_2}\,\overbracket{\hat\phi_3\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_3}\,\overbracket{\hat\phi_2\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_4}\,\overbracket{\hat\phi_2\hat\phi_3}\bigr)
+> T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\} = {:}\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4{:} + \bigl(\underbrace{D_F(0)}_{\{1, 2\}}\,{:}\hat\phi_3\hat\phi_4{:} + \cdots\bigr)_{6\text{ terms}} + \bigl(\underbrace{D_F(0)^2}_{\{1, 2\}\,\{3, 4\}} + \underbrace{D_F(0)^2}_{\{1, 3\}\,\{2, 4\}} + \underbrace{D_F(0)^2}_{\{1, 4\}\,\{2, 3\}}\bigr)
 > $$
 >
 > (PS (4.95)).
@@ -169,7 +169,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > - ${:}\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4{:}$: every field takes one particle. With $\sigma \in S_4$ giving the fields of $\mathbf p_1, \mathbf p_2, \mathbf p_A, \mathbf p_B$,
 >
 > $$
-> \langle\mathbf p_1\mathbf p_2|{:}\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4{:}|\mathbf p_A\mathbf p_B\rangle = \sum_{\sigma\in S_4}\overbracket{\langle\mathbf p_1|\hat\phi_{\sigma(1)}}\,\overbracket{\langle\mathbf p_2|\hat\phi_{\sigma(2)}}\,\overbracket{\hat\phi_{\sigma(3)}|\mathbf p_A\rangle}\,\overbracket{\hat\phi_{\sigma(4)}|\mathbf p_B\rangle} = \sum_{\sigma\in S_4}e^{ip_1\cdot x}e^{ip_2\cdot x}e^{-ip_A\cdot x}e^{-ip_B\cdot x} ,
+> \langle\mathbf p_1\mathbf p_2|{:}\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4{:}|\mathbf p_A\mathbf p_B\rangle = \sum_{\sigma\in S_4}\underbrace{e^{ip_1\cdot x}}_{\langle\mathbf p_1|,\ \hat\phi_{\sigma(1)}}\,\underbrace{e^{ip_2\cdot x}}_{\langle\mathbf p_2|,\ \hat\phi_{\sigma(2)}}\,\underbrace{e^{-ip_A\cdot x}}_{\hat\phi_{\sigma(3)},\ |\mathbf p_A\rangle}\,\underbrace{e^{-ip_B\cdot x}}_{\hat\phi_{\sigma(4)},\ |\mathbf p_B\rangle} ,
 > $$
 >
 > the $24$ assignments $(\sigma(1)\sigma(2)\sigma(3)\sigma(4))$:
@@ -266,7 +266,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > **Step 1** (the Wick terms). By [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]] with the four factors of $\hat\phi_I(x)^4$ labelled $\hat\phi_1, \dots, \hat\phi_4$ (Step 2 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]), $i\hat T^{(1)} = i\hat T^{(1)}_1 + i\hat T^{(1)}_2 + i\hat T^{(1)}_3$ with no, one and two contractions (Yu (7.115)–(7.118)); the one-contraction term has $C(4, 2) = 6$ equal pieces, one per contracted pair $\{1,2\}$, $\{1,3\}$, $\{1,4\}$, $\{2,3\}$, $\{2,4\}$, $\{3,4\}$:
 >
 > $$
-> i\hat T^{(1)}_2 = -\frac{i\lambda}{4!}\int d^4x\,\bigl(\overbracket{\hat\phi_1\hat\phi_2}\,{:}\hat\phi_3\hat\phi_4{:} + \cdots\bigr)_{6\text{ terms}} = -\frac{i\lambda}{4!}\cdot6\int d^4x\,D_F(0)\,{:}\hat\phi_I(x)^2{:} .
+> i\hat T^{(1)}_2 = -\frac{i\lambda}{4!}\int d^4x\,\bigl(\underbrace{D_F(0)}_{\{1, 2\}}\,{:}\hat\phi_3\hat\phi_4{:} + \cdots\bigr)_{6\text{ terms}} = -\frac{i\lambda}{4!}\cdot6\int d^4x\,D_F(0)\,{:}\hat\phi_I(x)^2{:} .
 > $$
 >
 > **Step 2** (which term survives between one-particle states). By [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]], 1, every normal-ordered field must meet a particle: ${:}\hat\phi^4{:}$ has four fields for two particles, $0$; the two-contraction term $3D_F(0)^2\langle\mathbf k'|\mathbf k\rangle$ is the bubble on a $\delta$-line ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-3|Example §C6c.4.3]]); only $i\hat T^{(1)}_2$ remains.
@@ -274,7 +274,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > **Step 3** (attach the particles). For the pair $\{1, 2\}$ contracted, the two remaining fields take $|\mathbf k\rangle$ and $\langle\mathbf k'|$ in $A(2, 2) = 2$ ways ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]]):
 >
 > $$
-> \langle\mathbf k'|{:}\hat\phi_3\hat\phi_4{:}|\mathbf k\rangle = \overbracket{\langle\mathbf k'|\hat\phi_3}\,\overbracket{\hat\phi_4|\mathbf k\rangle} + \overbracket{\langle\mathbf k'|\hat\phi_4}\,\overbracket{\hat\phi_3|\mathbf k\rangle} = 2\,e^{i(k' - k)\cdot x} ,
+> \langle\mathbf k'|{:}\hat\phi_3\hat\phi_4{:}|\mathbf k\rangle = \underbrace{e^{ik'\cdot x}\,e^{-ik\cdot x}}_{\langle\mathbf k'|,\ \hat\phi_3;\ \ \hat\phi_4,\ |\mathbf k\rangle} + \underbrace{e^{ik'\cdot x}\,e^{-ik\cdot x}}_{\langle\mathbf k'|,\ \hat\phi_4;\ \ \hat\phi_3,\ |\mathbf k\rangle} = 2\,e^{i(k' - k)\cdot x} ,
 > $$
 >
 > and the same for each of the six pairs: $6\cdot2 = 12$ full contractions in all.
@@ -354,7 +354,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > **Step 1** (the three full contractions). With the four factors of $\hat\phi_I(x)^4$ labelled $\hat\phi_1, \dots, \hat\phi_4$, the pairings of four fields are $(2\cdot2 - 1)!! = 3$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]):
 >
 > $$
-> \overbracket{\hat\phi_1\hat\phi_2}\,\overbracket{\hat\phi_3\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_3}\,\overbracket{\hat\phi_2\hat\phi_4} + \overbracket{\hat\phi_1\hat\phi_4}\,\overbracket{\hat\phi_2\hat\phi_3} = 3\,D_F(0)^2 ,
+> \underbrace{D_F(0)^2}_{\{1, 2\}\,\{3, 4\}} + \underbrace{D_F(0)^2}_{\{1, 3\}\,\{2, 4\}} + \underbrace{D_F(0)^2}_{\{1, 4\}\,\{2, 3\}} = 3\,D_F(0)^2 ,
 > $$
 >
 > each a c-number, so $i\hat T^{(1)}_3 = -\frac{i\lambda}{4!}\cdot3\int d^4x\,D_F(0)^2 = -\frac{i\lambda}{8}D_F(0)^2\int d^4x$ (Yu (7.118), (7.125); PS (4.96)).
@@ -406,10 +406,10 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > (slide 10, PS (4.91)), two $1 \to 1$ pieces per term. First order, with the Wick expansion of [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]], Step 2:
 > - full contractions: $-\frac{i\lambda}{4!}\cdot3D_F(0)^2\int d^4z\;{}_0\langle\mathbf p_1\mathbf p_2|\mathbf p_A\mathbf p_B\rangle_0 = -\frac{i\lambda}{8}D_F(0)^2\int d^4z\times(\text{zeroth order})$ (slide 14: "$-\frac18i\lambda$");
-> - one contraction, $\overbracket{\hat\phi_a\hat\phi_b}\,{:}\hat\phi_c\hat\phi_d{:}$, $6$ terms: the two remaining fields take one incoming and one outgoing particle ($2$ ways for each of the $4$ choices $(A, 1)$, $(A, 2)$, $(B, 1)$, $(B, 2)$), the other two particles overlap; for $(A, 1)$
+> - one contraction, $D_F(0)\,{:}\hat\phi_c\hat\phi_d{:}$ with the pair $\{a, b\}$ contracted, $6$ terms: the two remaining fields take one incoming and one outgoing particle ($2$ ways for each of the $4$ choices $(A, 1)$, $(A, 2)$, $(B, 1)$, $(B, 2)$), the other two particles overlap; for $(A, 1)$
 >
 > $$
-> -\frac{i\lambda}{4!}\cdot6\cdot2\,D_F(0)\int d^4z\,e^{-ip_A\cdot z}e^{ip_1\cdot z}\;\overbracket{\langle\mathbf p_2|\mathbf p_B\rangle} = -\frac{i\lambda}{2}D_F(0)\,(2\pi)^4\delta^4(p_A - p_1)\,2E_B(2\pi)^3\delta^3(\mathbf p_B - \mathbf p_2)
+> -\frac{i\lambda}{4!}\cdot6\cdot2\,D_F(0)\int d^4z\,e^{-ip_A\cdot z}e^{ip_1\cdot z}\;\langle\mathbf p_2|\mathbf p_B\rangle = -\frac{i\lambda}{2}D_F(0)\,(2\pi)^4\delta^4(p_A - p_1)\,2E_B(2\pi)^3\delta^3(\mathbf p_B - \mathbf p_2)
 > $$
 >
 > (slide 16: "5 permutations ⇒ factor 6"; the $6$ counts the contracted pair, each picture gets $6\cdot2 = 12$ pairings, $\frac{12}{4!} = \frac12 = \frac1S$ of the tadpole: the user's notes, Caution "The partial-contraction count on the slide"), forward;
@@ -447,7 +447,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > **The decay.** With the $\Phi$ field $\hat\Phi_x$ and the two $\phi$ fields $\hat\phi_{x1}$, $\hat\phi_{x2}$ of $\hat\Phi\hat\phi^2(x)$, and [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]],
 >
 > $$
-> \langle\mathbf p_1\mathbf p_2|{:}\hat\Phi_x\hat\phi_{x1}\hat\phi_{x2}{:}|\mathbf K\rangle_\Phi = \overbracket{\hat\Phi_x|\mathbf K\rangle}\Bigl(\overbracket{\langle\mathbf p_1|\hat\phi_{x1}}\,\overbracket{\langle\mathbf p_2|\hat\phi_{x2}} + \overbracket{\langle\mathbf p_1|\hat\phi_{x2}}\,\overbracket{\langle\mathbf p_2|\hat\phi_{x1}}\Bigr) = 2\,e^{i(p_1 + p_2 - K)\cdot x} ,
+> \langle\mathbf p_1\mathbf p_2|{:}\hat\Phi_x\hat\phi_{x1}\hat\phi_{x2}{:}|\mathbf K\rangle_\Phi = \underbrace{e^{-iK\cdot x}}_{\hat\Phi_x,\ |\mathbf K\rangle}\Bigl(\underbrace{e^{ip_1\cdot x}\,e^{ip_2\cdot x}}_{\langle\mathbf p_1|,\ \hat\phi_{x1};\ \ \langle\mathbf p_2|,\ \hat\phi_{x2}} + \underbrace{e^{ip_1\cdot x}\,e^{ip_2\cdot x}}_{\langle\mathbf p_1|,\ \hat\phi_{x2};\ \ \langle\mathbf p_2|,\ \hat\phi_{x1}}\Bigr) = 2\,e^{i(p_1 + p_2 - K)\cdot x} ,
 > $$
 >
 > so $\langle\mathbf p_1\mathbf p_2|i\hat T^{(1)}|\mathbf K\rangle_\Phi = -2i\mu(2\pi)^4\delta^4(K - p_1 - p_2)$, $i\mathcal M = -2i\mu$. The same computation with the operators written out, and the width and lifetime, are [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|Example §C6b.6.1]] (Steps 3–5 for $\mathcal M$).

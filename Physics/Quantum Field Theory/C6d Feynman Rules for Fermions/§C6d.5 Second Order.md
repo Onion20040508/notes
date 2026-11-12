@@ -169,7 +169,7 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 >
 > ([[§C6d.6 Momentum-Space Feynman Rules#^thm-c6d-6-2|Theorem §C6d.6.2]], Step 1; slide 19).
 >
-> **Step 2** (who contracts with whom). The two scalar fields have no external partner: there is no external scalar, so they contract with each other, $\overbracket{\hat\phi(x)\hat\phi(y)} = D_F(x - y)$. The two $\hat\psi$'s must absorb the incoming particles, through their $\hat a$ parts (the $b$ parts play no role), each giving a $u$; the two $\hat{\bar\psi}$'s must emit the outgoing ones, through their $\hat a^\dagger$ parts, each giving a $\bar u$ ([[§C6d.2 Contractions with External Fermions#^thm-c6d-2-1|Theorem §C6d.2.1]]; slide 20: "$\psi$'s contract with incoming particles, $\bar\psi$'s with outgoing"). A $\hat\psi$–$\hat{\bar\psi}$ contraction would leave only two fermion fields for four particles.
+> **Step 2** (who contracts with whom). The two scalar fields have no external partner: there is no external scalar, so they contract with each other, to $D_F(x - y)$. The two $\hat\psi$'s must absorb the incoming particles, through their $\hat a$ parts (the $b$ parts play no role), each giving a $u$; the two $\hat{\bar\psi}$'s must emit the outgoing ones, through their $\hat a^\dagger$ parts, each giving a $\bar u$ ([[§C6d.2 Contractions with External Fermions#^thm-c6d-2-1|Theorem §C6d.2.1]]; slide 20: "$\psi$'s contract with incoming particles, $\bar\psi$'s with outgoing"). A $\hat\psi$–$\hat{\bar\psi}$ contraction would leave only two fermion fields for four particles.
 >
 > **Step 3** (the four assignments). $\hat\psi(x)$ absorbs $p$ or $k$, $\hat{\bar\psi}(x)$ emits $p'$ or $k'$:
 >
@@ -436,7 +436,7 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 >
 > two pieces, a tadpole emitting one scalar and the first-order fusion $f\bar f \to \phi$ at the other vertex, each with its own momentum delta. Neither has the form $\delta^4(p_1 + p_2 - k_1 - k_2)\times(\text{smooth})$, and $\delta^4(k_2) = 0$ on shell: no contribution to $f\bar f \to \phi\phi$, which comes from terms $3$–$4$ alone ([[§C6d.5 Second Order#^ex-c6d-5-3|Example §C6d.5.3]]).
 >
-> **Step 1** (the terms). $i\hat T^{(2)}_5 + i\hat T^{(2)}_6 = 2\,i\hat T^{(2)}_5$ ([[§C6d.5 Second Order#^thm-c6d-5-2|Theorem §C6d.5.2]]) $= (-ig)^2\int d^4x\,d^4y\,\overbracket{\hat{\bar\psi}_x\hat\psi_x}\;{:}\hat\phi_x\,\hat{\bar\psi}_y\hat\psi_y\hat\phi_y{:}$, with $\overbracket{\hat{\bar\psi}_x\hat\psi_x} = -\operatorname{tr}S_F(0)$ ([[§C6d.4 First Order#^thm-c6d-4-1|Theorem §C6d.4.1]]).
+> **Step 1** (the terms). $i\hat T^{(2)}_5 + i\hat T^{(2)}_6 = 2\,i\hat T^{(2)}_5$ ([[§C6d.5 Second Order#^thm-c6d-5-2|Theorem §C6d.5.2]]) $= (-ig)^2\int d^4x\,d^4y\,\bigl(-\operatorname{tr}S_F(0)\bigr)\;{:}\hat\phi_x\,\hat{\bar\psi}_y\hat\psi_y\hat\phi_y{:}$, the factor $-\operatorname{tr}S_F(0)$ being the contraction of $\hat{\bar\psi}_x$ with $\hat\psi_x$ to its right ([[§C6d.4 First Order#^thm-c6d-4-1|Theorem §C6d.4.1]]).
 >
 > **Step 2** (attachments). $\hat\psi_y$ absorbs $f(p_1)$ ($u(p_1)e^{-ip_1\cdot y}$), $\hat{\bar\psi}_y$ absorbs $\bar f(p_2)$ ($\bar v(p_2)e^{-ip_2\cdot y}$); fermion string $\hat{\bar\psi}_x(1)\hat\psi_x(2)\hat{\bar\psi}_y(3)\hat\psi_y(4)\hat a^\dagger_{\mathbf p_1}(5)\hat b^\dagger_{\mathbf p_2}(6)$, pairs $(1, 2)$, $(4, 5)$, $(3, 6)$: no crossing. The scalars: $\hat\phi_x$, $\hat\phi_y$ take $k_1$, $k_2$ in two ways ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]]).
 >
@@ -511,14 +511,14 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 > In a third-order term of [[§C6d.1 Yukawa Theory#^mod-c6d-1-1|Model §C6d.1.1]] (three scalars attached, e.g. Yu's Fig. 7.10), the fermion fields of the vertices $x$, $y$, $z$ contracted into one closed line, the string ${:}\hat{\bar\psi}_a(x)\hat\psi_a(x)\hat{\bar\psi}_b(y)\hat\psi_b(y)\hat{\bar\psi}_c(z)\hat\psi_c(z){:}$ with the three contractions $\hat\psi_x\hat{\bar\psi}_y$, $\hat\psi_y\hat{\bar\psi}_z$, $\hat{\bar\psi}_x\hat\psi_z$ gives
 >
 > $$
-> (+1)\cdot\overbracket{\hat\psi_a(x)\hat{\bar\psi}_b(y)}\;\overbracket{\hat\psi_b(y)\hat{\bar\psi}_c(z)}\;\overbracket{\hat{\bar\psi}_a(x)\hat\psi_c(z)} = -\operatorname{tr}\bigl[S_F(x - y)\,S_F(y - z)\,S_F(z - x)\bigr] = -\operatorname{tr}\bigl[S_F(z - x)\,S_F(x - y)\,S_F(y - z)\bigr] ,
+> (+1)\cdot\underbrace{S_F(x - y)_{ab}}_{\hat\psi_a(x),\ \hat{\bar\psi}_b(y)}\;\underbrace{S_F(y - z)_{bc}}_{\hat\psi_b(y),\ \hat{\bar\psi}_c(z)}\;\underbrace{\bigl(-S_F(z - x)_{ca}\bigr)}_{\hat{\bar\psi}_a(x),\ \hat\psi_c(z)} = -\operatorname{tr}\bigl[S_F(x - y)\,S_F(y - z)\,S_F(z - x)\bigr] = -\operatorname{tr}\bigl[S_F(z - x)\,S_F(x - y)\,S_F(y - z)\bigr] ,
 > $$
 >
 > [[§C6d.4 First Order#^thm-c6d-4-6|Theorem §C6d.4.6]] at $n = 3$ with the arrow $z \to y \to x \to z$; the second form is Yu's (7.101), equal by cyclicity of the trace.
 >
 > **Step 1** (positions). $\hat{\bar\psi}_x(1)\,\hat\psi_x(2)\,\hat{\bar\psi}_y(3)\,\hat\psi_y(4)\,\hat{\bar\psi}_z(5)\,\hat\psi_z(6)$; pairs $(2, 3)$, $(4, 5)$, $(1, 6)$: the outer arc encloses the two adjacent ones, no crossing, sign $+$ ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^lem-c6d-3-3|Lemma §C6d.3.3]], 1).
 >
-> **Step 2** (values, [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]]). $\overbracket{\hat\psi_a(x)\hat{\bar\psi}_b(y)} = S_F(x - y)_{ab}$, $\overbracket{\hat\psi_b(y)\hat{\bar\psi}_c(z)} = S_F(y - z)_{bc}$, and the outer pair written $\hat{\bar\psi}$ first, $\overbracket{\hat{\bar\psi}_a(x)\hat\psi_c(z)} = -S_F(z - x)_{ca}$.
+> **Step 2** (values, [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-1|Theorem §C6d.3.1]]). The pair $\hat\psi_a(x)$, $\hat{\bar\psi}_b(y)$, written $\hat\psi$ first, has the value $S_F(x - y)_{ab}$; the pair $\hat\psi_b(y)$, $\hat{\bar\psi}_c(z)$ the value $S_F(y - z)_{bc}$; and the outer pair, written $\hat{\bar\psi}_a(x)$ before $\hat\psi_c(z)$, the value $-S_F(z - x)_{ca}$.
 >
 > **Step 3** (the trace). The product, summed over $a$, $b$, $c$: $-S_F(x - y)_{ab}S_F(y - z)_{bc}S_F(z - x)_{ca} = -\operatorname{tr}[S_F(x - y)S_F(y - z)S_F(z - x)]$; moving the last factor to the front inside the trace gives Yu's order. Yu reaches the same by moving $\hat\psi_c(z)$ to the front past five fermion fields: $(-1)^5 = -1$.
 >
@@ -539,7 +539,7 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 >
 > (a) a fermion loop through $x$ and $y$ with a scalar line across, (b) a tadpole loop at each vertex joined by the scalar line. Their $\frac{1}{2!}$ is **not** cancelled: $S = 2$ ([[§C6d.4 First Order#^thm-c6d-4-7|Theorem §C6d.4.7]], [[§C6d.5 Second Order#^thm-c6d-5-2|Theorem §C6d.5.2]], 3). They are $c$-numbers: between any states they multiply $\langle f|i\rangle$, part of the vacuum phase.
 >
-> **Step 1** (values). (a): $\overbracket{\hat\phi_x\hat\phi_y} = D_F(x - y)$ and the closed loop $-\operatorname{tr}[S_F(x - y)S_F(y - x)]$ ([[§C6d.4 First Order#^thm-c6d-4-6|Theorem §C6d.4.6]], $n = 2$; Step 1 of [[§C6d.5 Second Order#^ex-c6d-5-6|Example §C6d.5.6]]). (b): two tadpoles, each $-\operatorname{tr}S_F(0)$ ([[§C6d.4 First Order#^thm-c6d-4-1|Theorem §C6d.4.1]]), product $(\operatorname{tr}S_F(0))^2$; fermion pairs $(1, 2)$, $(3, 4)$, no crossing.
+> **Step 1** (values). (a): the two scalar fields contract to $D_F(x - y)$, and the closed loop $-\operatorname{tr}[S_F(x - y)S_F(y - x)]$ ([[§C6d.4 First Order#^thm-c6d-4-6|Theorem §C6d.4.6]], $n = 2$; Step 1 of [[§C6d.5 Second Order#^ex-c6d-5-6|Example §C6d.5.6]]). (b): two tadpoles, each $-\operatorname{tr}S_F(0)$ ([[§C6d.4 First Order#^thm-c6d-4-1|Theorem §C6d.4.1]]), product $(\operatorname{tr}S_F(0))^2$; fermion pairs $(1, 2)$, $(3, 4)$, no crossing.
 >
 > **Step 2** (no partner under $x \leftrightarrow y$). (a): $\{\hat\phi_x\hat\phi_y, \hat\psi_x\hat{\bar\psi}_y, \hat\psi_y\hat{\bar\psi}_x\} \mapsto \{\hat\phi_y\hat\phi_x, \hat\psi_y\hat{\bar\psi}_x, \hat\psi_x\hat{\bar\psi}_y\}$, the same pattern; (b) likewise. With no particle to tell the vertices apart, the relabelling does not produce a second copy: the factor $\frac{1}{2!} = \frac1S$ remains (Yu (7.102)–(7.103)).
 >

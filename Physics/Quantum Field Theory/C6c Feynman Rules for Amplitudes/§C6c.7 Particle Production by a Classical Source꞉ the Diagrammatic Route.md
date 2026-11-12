@@ -103,7 +103,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > **Step 3** (odd orders). Every term of the mode expansion of $\hat\phi_I$ has one $\hat a$ or one $\hat a^\dagger$, so $\langle0|\hat\phi_I(x)|0\rangle = 0$ and $\mathcal A_1 = 0$. By Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), with $\hat\phi_i \equiv \hat\phi_I(x_i)$, $D_{ij} = D_F(x_i - x_j)$,
 >
 > $$
-> T\{\hat\phi_1\hat\phi_2\hat\phi_3\} = \,:\!\hat\phi_1\hat\phi_2\hat\phi_3\!: + \overbracket{\hat\phi_1\hat\phi_2}\,\hat\phi_3 + \overbracket{\hat\phi_1\hat\phi_3}\,\hat\phi_2 + \overbracket{\hat\phi_2\hat\phi_3}\,\hat\phi_1 = \,:\!\hat\phi_1\hat\phi_2\hat\phi_3\!: + D_{12}\hat\phi_3 + D_{13}\hat\phi_2 + D_{23}\hat\phi_1 ;
+> T\{\hat\phi_1\hat\phi_2\hat\phi_3\} = \,:\!\hat\phi_1\hat\phi_2\hat\phi_3\!: + D_{12}\hat\phi_3 + D_{13}\hat\phi_2 + D_{23}\hat\phi_1 ;
 > $$
 >
 > every term keeps an uncontracted field, and $\langle0|{:}\cdots{:}|0\rangle = 0$ ([[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 2), $\langle0|\hat\phi_i|0\rangle = 0$: $\mathcal A_3 = 0$. So $P(0) = 1 + 2\operatorname{Re}\mathcal A_2 + O(j^4)$.
