@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: PHY 513, Problem Set 8, Problem 3 (based on PS Problem 4.1; the user's solution, parts (a)–(f), submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, Problem 4.1; §2.4, pp. 32–33, eqs. (2.61)–(2.66) · the course's time-ordered exponential and Wick's theorem ([[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]], [[§C6a.6 Wick's Theorem|§C6a.6]]).*
 
-A classical source switched on for a finite time leaves the vacuum in a state with some particles. [[§C2b.9 Particle Production by a Classical Source|§C2b.9]] answered this with the retarded function: the late-time field has shifted annihilation operators and the final state is a coherent state, with Poisson-distributed particle number. This section reaches the same answer the way Problem Set 8 asks, through the interaction picture: the probabilities are squares of matrix elements of the time-ordered exponential ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]), Wick's theorem turns them into diagrams with one-legged **source vertices**, and the vacuum diagrams exponentiate. Two general tools are used: the contraction of a field with an outgoing particle ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], first written for this problem and since moved to [[§C6c.2 Contractions with External Particles|§C6c.2]], with Wick's theorem between particle states) and the measure on $n$-particle states ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]]). Everything below is the user's solution, tagged by part.
+A classical source switched on for a finite time leaves the vacuum in a state with some particles. [[§C2b.9 Particle Production by a Classical Source|§C2b.9]] answered this with the retarded function: the late-time field has shifted annihilation operators and the final state is a coherent state, with Poisson-distributed particle number. This section reaches the same answer the way Problem Set 8 asks, through the interaction picture: the probabilities are squares of matrix elements of the time-ordered exponential ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]), Wick's theorem turns them into diagrams with one-legged **source vertices**, and the vacuum diagrams exponentiate. Two general tools are used: the contraction of a field with an outgoing particle ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], first written for this problem and since moved to [[§C6c.2 Contractions with External Particles|§C6c.2]], with Wick's theorem between particle states) and the measure on $n$-particle states ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]]; the overlap of two $n$-particle states it rests on, also written for this problem, is now [[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]]). Everything below is the user's solution, tagged by part.
 
 *Conventions* ([[Larsen PHY 513]]): the source model is [[§C2b.6 Green's Functions and Contours#^mod-c2b-6-1|Model §C2b.6.1]], $j$ real, smooth, nonzero only for a finite time, $\hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi(\mathbf x)$; $\tilde j(k) = \int d^4x\,e^{ik\cdot x}j(x)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]) with $k^0 = E_{\mathbf k}$ where stated; **one-particle states $|\mathbf k\rangle = \hat a^\dagger_{\mathbf k}|0\rangle$, not relativistically normalized** ([[§C6c.2 Contractions with External Particles#^cau-c6c-2-1|Caution: Two normalizations of one-particle states]]); $\lambda$ is the mean number of particles produced (PS's letter; there is no $\phi^4$ coupling in this section); $\hat\phi^\pm$ the positive- and negative-frequency parts ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]).
 
@@ -195,6 +195,11 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > $\mathcal A_2$ is exact (the only diagram with two vertices), so this holds to all orders in $j$; it is [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]] (with [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 4, $r = 1$) for a theory whose only connected vacuum diagram is the line.
 >
 > **Step 5** (probability). $P(0) = |e^{\mathcal A_2}|^2 = e^{\mathcal A_2 + \mathcal A_2^{\ast}} = e^{2\operatorname{Re}\mathcal A_2} = e^{-\lambda}$ ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-2|Theorem §C6c.7.2]]); to order $j^2$, $1 - \lambda$.
+>
+> **What the derivation shows.** (Written here; the steps above are the submitted solution, unchanged.)
+> - ⚑ $\mathcal A_2$ is exact: a source vertex has one leg, so the only connected vacuum diagram is the line between two source vertices, and no higher order can add to the exponent. This is why the statement holds to all orders in $j$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]]).
+> - $S_m = 2^m\,m!$ is found twice, by counting the pairings and as the stabilizer (flip each line, permute the lines); the two counts agree by orbit–stabilizer, which holds for one-legged vertices as well ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1 and 4).
+> - Used next: the same vacuum series multiplies every amplitude with outgoing particles ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-4|Theorem §C6c.7.4]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-6|Theorem §C6c.7.6]]), where it contributes $|e^{\mathcal A_2}|^2 = e^{-\lambda}$ to each probability.
 
 ^der-c6c-7-3
 
@@ -202,7 +207,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 
 ## Outgoing particles
 
-The contraction of fields with outgoing particles, in both normalizations, is [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], with [[§C6c.2 Contractions with External Particles#^cau-c6c-2-1|§C6c.2, Caution: Two normalizations of one-particle states]]; incoming particles and Wick's theorem between particle states are in [[§C6c.2 Contractions with External Particles|§C6c.2]].
+The contraction of fields with outgoing particles, in both normalizations, is [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], with [[§C6c.2 Contractions with External Particles#^cau-c6c-2-1|§C6c.2, Caution: Two normalizations of one-particle states]]; incoming particles, the overlap of two $n$-particle states ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]]) and Wick's theorem between particle states are in [[§C6c.2 Contractions with External Particles|§C6c.2]]–[[§C6c.3 Wick's Theorem between Particle States|§C6c.3]].
 
 > [!theorem] Theorem §C6c.7.4: The One-Particle Amplitude
 > For one particle of momentum $\mathbf k$, $k^0 = E_{\mathbf k}$,
@@ -233,16 +238,21 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 > the external line times the vacuum series of [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]], with symmetry factor $2^m\,m!$ (the external line, its momentum labelled, can be neither flipped nor exchanged).
 >
 > **Step 4** (probability). $|e^{\mathcal A_2}|^2 = e^{-\lambda}$, and the one-particle measure is $\frac{d^3k}{(2\pi)^3}$ (applying $\int\mu\,d^3k\,|\mathbf k\rangle\langle\mathbf k|$ to $|\mathbf p\rangle$ gives $\mu(2\pi)^3|\mathbf p\rangle$, so $\mu = (2\pi)^{-3}$; [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]], $n = 1$). Integrating, $P(1) = e^{-\lambda}\int\frac{d^3k}{(2\pi)^3}\frac{|\tilde j(k)|^2}{2E_{\mathbf k}} = \lambda e^{-\lambda}$.
+>
+> **What the derivation shows.** (Written here; the steps above are the submitted solution, unchanged.)
+> - ⚑ The external line, its momentum labelled, can be neither flipped nor exchanged; the symmetry factor is that of the vacuum lines alone, $2^m\,m!$. Labelled external points are never relabelled ([[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]], 1).
+> - The amplitude factorizes into the external line and the vacuum series of [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]]; only odd orders contribute, one source vertex for the particle and pairs for the vacuum lines.
+> - The measure $\frac{d^3k}{(2\pi)^3}$ belongs to the states $\hat a^\dagger|0\rangle$ used here. With relativistic states the amplitude loses its $\frac{1}{\sqrt{2E_{\mathbf k}}}$ and the measure gains $\frac{1}{2E_{\mathbf k}}$: the same $dP(1)$ ([[§C6c.2 Contractions with External Particles#^cau-c6c-2-1|§C6c.2, Caution: Two normalizations of one-particle states]]).
 
 ^der-c6c-7-4
 
 *Uses:* [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-1|Theorem §C6c.7.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]]
 
 > [!theorem] Theorem §C6c.7.5: The Measure on n-Particle States
-> On the $n$-particle states $|\mathbf k_1\cdots\mathbf k_n\rangle = \hat a^\dagger_{\mathbf k_1}\cdots\hat a^\dagger_{\mathbf k_n}|0\rangle$,
+> On the $n$-particle states $|\mathbf k_1\cdots\mathbf k_n\rangle = \hat a^\dagger_{\mathbf k_1}\cdots\hat a^\dagger_{\mathbf k_n}|0\rangle$, whose overlap is $\langle\mathbf k_1\cdots\mathbf k_n|\mathbf p_1\cdots\mathbf p_n\rangle = \sum_{\sigma\in S_n}\prod_{i=1}^n(2\pi)^3\delta^3(\mathbf k_i - \mathbf p_{\sigma(i)})$ ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]]), the identity is
 >
 > $$
-> \langle\mathbf k_1\cdots\mathbf k_n|\mathbf p_1\cdots\mathbf p_n\rangle = \sum_{\sigma\in S_n}\prod_{i=1}^n(2\pi)^3\delta^3(\mathbf k_i - \mathbf p_{\sigma(i)}), \qquad \mathbb 1_n = \frac{1}{n!}\int\prod_{i=1}^n\frac{d^3k_i}{(2\pi)^3}\,|\mathbf k_1\cdots\mathbf k_n\rangle\langle\mathbf k_1\cdots\mathbf k_n| :
+> \mathbb 1_n = \frac{1}{n!}\int\prod_{i=1}^n\frac{d^3k_i}{(2\pi)^3}\,|\mathbf k_1\cdots\mathbf k_n\rangle\langle\mathbf k_1\cdots\mathbf k_n| :
 > $$
 >
 > integrating each momentum independently counts each state $n!$ times. With relativistic normalization the same holds with $\frac{d^3k_i}{(2\pi)^32E_{\mathbf k_i}}$; this is the $\frac{1}{S_{\rm id}}$ of identical particles ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]], whose derivation, Step 2, is the same computation).
@@ -254,7 +264,7 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 ^thm-c6c-7-5
 
 > [!derivation]- Derivation
-> **Step 1** (overlap). The $\hat a^\dagger$'s commute, so $|\mathbf k_1\cdots\mathbf k_n\rangle$ is symmetric. $\langle\mathbf k_1\cdots\mathbf k_n|\mathbf p_1\cdots\mathbf p_n\rangle = \langle0|\hat a_{\mathbf k_1}\cdots\hat a_{\mathbf k_n}\hat a^\dagger_{\mathbf p_1}\cdots\hat a^\dagger_{\mathbf p_n}|0\rangle$ is Step 4 of [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]] with $\hat a^\dagger_{\mathbf p}$ for $\hat\phi^-$ and $[\hat a_{\mathbf k}, \hat a^\dagger_{\mathbf p}] = (2\pi)^3\delta^3(\mathbf k - \mathbf p)$: the stated sum.
+> **Step 1** (overlap). The $\hat a^\dagger$'s commute, so $|\mathbf k_1\cdots\mathbf k_n\rangle$ is symmetric. The overlap $\langle\mathbf k_1\cdots\mathbf k_n|\mathbf p_1\cdots\mathbf p_n\rangle$ is [[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]] (the computation of this step of the solution is Step 1 of its derivation): the stated sum.
 >
 > **Step 2** (resolution of the identity). Let $\mu_n\int\prod d^3k_i\,|\mathbf k_1\cdots\rangle\langle\mathbf k_1\cdots|$ act on $|\mathbf p_1\cdots\mathbf p_n\rangle$; each delta does one integral, and every permuted state equals $|\mathbf p_1\cdots\mathbf p_n\rangle$:
 >
@@ -263,10 +273,14 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 > $$
 >
 > the identity iff $\mu_n = \frac{1}{n!\,(2\pi)^{3n}}$. With relativistic normalization every delta carries $2E$, cancelled by $\frac{1}{2E}$ in the measure.
+>
+> **What the derivation shows.** (Written here; not part of the submitted solution.)
+> - The $\frac{1}{n!}$ comes from the symmetry of $|\mathbf k_1\cdots\mathbf k_n\rangle$ alone: the $n!$ terms of the overlap ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]]) give the same state after the integration. It does not depend on the normalization of the one-particle states.
+> - It is the identical-particle factor $\frac{1}{S_{\rm id}}$ of cross sections and decay rates ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]). Used next: [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-6|Theorem §C6c.7.6]].
 
 ^der-c6c-7-5
 
-*Uses:* [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]
+*Uses:* [[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]
 
 > [!theorem] Theorem §C6c.7.6: The Number of Particles Is Poisson Distributed
 > $$
@@ -291,6 +305,11 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 > **Step 2** (sum). With the $\frac{1}{\ell!}$ of the expansion, $\mathcal A_{n+2m} = \prod_i\frac{i\tilde j(k_i)}{\sqrt{2E_{\mathbf k_i}}}\frac{(\mathcal A_2)^m}{m!}$, and $\sum_m$ gives the amplitude; $n = 0, 1$ are Theorems §C6c.7.3 and §C6c.7.4. In diagrams: $n$ external lines and $m$ vacuum lines, $S = 2^m\,m!$ (labelled outgoing momenta are never relabelled).
 >
 > **Step 3** (probability). $|\mathcal A|^2 = \prod_i\frac{|\tilde j(k_i)|^2}{2E_{\mathbf k_i}}e^{-\lambda}$, and with the measure of [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]] each factor integrates to $\lambda$: $P(n) = \frac{e^{-\lambda}}{n!}\lambda^n$.
+>
+> **What the derivation shows.** (Written here; the steps above are the submitted solution, unchanged.)
+> - The $n!$ ways of matching the uncontracted fields to the particles ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]]) are used up, with the choice of those fields and the pairings, in cancelling the $\frac{1}{\ell!}$ of the expansion. The $\frac{1}{n!}$ of $P(n)$ comes from the measure ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]]), not from the amplitude.
+> - The amplitude is a product of one-particle amplitudes ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-4|Theorem §C6c.7.4]]) times the vacuum series ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]]): each particle is emitted independently of the others, and the distribution is Poisson ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^rem-c6c-7-1|Remark: Two routes, one answer]]).
+> - Used next: [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-7|Theorem §C6c.7.7]].
 
 ^der-c6c-7-6
 
@@ -319,6 +338,10 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 > $$
 >
 > so $\langle N^2\rangle = \lambda^2 + \lambda$ and $\langle(N - \bar N)^2\rangle = \langle N^2\rangle - 2\bar N\langle N\rangle + \bar N^2 = \langle N^2\rangle - \bar N^2 = \lambda$.
+>
+> **What the derivation shows.** (Written here; the steps above are the submitted solution, unchanged.)
+> - $\sum_nP(n) = 1$ checks the measure of [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]] with its $\frac{1}{n!}$: the probabilities of all final states add up to $1$, as the unitarity of the evolution operator requires ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 3).
+> - $\bar N = \lambda$ identifies the $\lambda$ of [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-2|Theorem §C6c.7.2]] with the mean number of particles, the $\bar N$ of [[§C2b.9 Particle Production by a Classical Source#^thm-c2b-9-4|Theorem §C2b.9.4]]; mean and variance are equal, as for every Poisson distribution.
 
 ^der-c6c-7-7
 

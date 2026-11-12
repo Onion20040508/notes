@@ -67,13 +67,13 @@ tags: [quantum-field-theory, level-c]
 >
 > $\alpha$ injective from $A$ to the outgoing particles.
 >
-> **Step 5** (the particles left over). The remaining overlap is $\prod_u\sqrt{2E_{\mathbf p_{j_u}}}\prod_u\sqrt{2E_{\mathbf k_{i_u}}}\,\langle0|\hat a_{\mathbf p_{j_1}}\cdots\hat a_{\mathbf p_{j_s}}\hat a^\dagger_{\mathbf k_{i_1}}\cdots\hat a^\dagger_{\mathbf k_{i_{s'}}}|0\rangle$. Move each $\hat a_{\mathbf p}$ to the right with $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf k}] = (2\pi)^3\delta^3(\mathbf p - \mathbf k)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]): each commutator removes one $\hat a^\dagger_{\mathbf k}$ in all possible ways, and an $\hat a$ that reaches $|0\rangle$ (or an $\hat a^\dagger$ left next to $\langle0|$) gives $0$, exactly as in Steps 3–4 of [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]] with $\hat a^\dagger_{\mathbf k}$ in place of $\hat\phi^-$. On the support of the delta the two square roots combine to $2E_{\mathbf k}$, so
+> **Step 5** (the particles left over). The remaining overlap is that of the relativistically normalized states of the particles not removed in Steps 3–4, $\prod_u\sqrt{2E_{\mathbf p_{j_u}}}\prod_u\sqrt{2E_{\mathbf k_{i_u}}}\,\langle0|\hat a_{\mathbf p_{j_1}}\cdots\hat a_{\mathbf p_{j_s}}\hat a^\dagger_{\mathbf k_{i_1}}\cdots\hat a^\dagger_{\mathbf k_{i_{s'}}}|0\rangle$. It is [[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]] in its relativistic form (proved from the mode algebra alone, [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], before any Wick expansion between states):
 >
 > $$
 > \langle\mathbf p_{j_1}\cdots\mathbf p_{j_s}|\mathbf k_{i_1}\cdots\mathbf k_{i_{s'}}\rangle = \delta_{ss'}\sum_{\pi\in S_s}\prod_{u=1}^s2E_{\mathbf k_{i_u}}(2\pi)^3\delta^3(\mathbf p_{j_{\pi(u)}} - \mathbf k_{i_u}) ,
 > $$
 >
-> a sum over bijections, each pair $\overbracket{\langle\mathbf p|\mathbf k\rangle}$. (The same overlap, for $\hat a^\dagger|0\rangle$ states, is also stated as part of [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]], later in the chapter; it is not needed as an ingredient here.)
+> a sum over bijections, each pair an outgoing particle with an incoming one, of value $2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k)$.
 >
 > **Step 6** (assemble). A term of Steps 1–5 is a choice $(C, A, \beta, \alpha, \pi)$, and it is the product of the values of the pairs: $C$ (field–field), $\{b, \beta(b)\}$ (field–incoming), $\{\alpha(a), a\}$ (outgoing–field), $\pi$ (outgoing–incoming). Conversely a full contraction determines $C$, $A$ (the fields paired with outgoing particles), $\beta$, $\alpha$, $\pi$ uniquely. So the sum is over full contractions, each once; a remainder field not paired with a particle gives no term (Steps 3–4).
 >
@@ -91,7 +91,7 @@ tags: [quantum-field-theory, level-c]
 
 ^der-c6c-3-1
 
-*Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]]
+*Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]]
 
 > [!theorem] Theorem §C6c.3.2: The Contraction Rule for S-Matrix Elements
 > Expand $\langle\mathbf p_1\cdots\mathbf p_m|\,T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_\ell)\}\,|\mathbf k_1\cdots\mathbf k_n\rangle$ by Wick's theorem, $T\{\cdots\} = \sum_C\prod D_F\;{:}\text{rest}{:}$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]). Then
@@ -115,7 +115,7 @@ tags: [quantum-field-theory, level-c]
 > **Step 3** (part 3). Every manipulation of Steps 3–4 of [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]] moves an $\hat a$ through a $\hat\phi^-$ with $\hat aB = B\hat a + [\hat a, B]$: the coefficient of the moved term is $+1$, and the commutator is the c-number $\frac{e^{ik\cdot y}}{\sqrt{2E_{\mathbf k}}}$. The factors that are reordered commute, $[\hat\phi_I^\pm(x), \hat\phi_I^\pm(y)] = 0$, $[\hat a_{\mathbf k}, \hat a_{\mathbf p}] = [\hat a^\dagger_{\mathbf k}, \hat a^\dagger_{\mathbf p}] = 0$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]), and so do the c-number contractions. Hence no step produces a sign, whatever order the fields and particles are written in. For fermions the same moves use anticommutators, $\hat bB = -B\hat b + \{\hat b, B\}$, and each exchange gives $-1$.
 >
 > **What the derivation shows.**
-> - Yu's boxed rule, split into what must be contracted (parts 1–2) and the sign (part 3); how many contractions there are is [[§C6c.2 Contractions with External Particles#^thm-c6c-2-3|Theorem §C6c.2.3]] and Step 3 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]].
+> - Yu's boxed rule, split into what must be contracted (parts 1–2) and the sign (part 3); how many contractions there are is [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]] and Step 3 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]].
 
 ^der-c6c-3-2
 
@@ -124,7 +124,7 @@ tags: [quantum-field-theory, level-c]
 ## Which terms are scattering
 
 > [!definition] Definition §C6c.3.1: The δ-Line
-> A particle that passes from the initial to the final state without reaching any vertex contributes the overlap of [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]],
+> A particle that passes from the initial to the final state without reaching any vertex contributes the overlap of [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]] ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]], $n = 1$),
 >
 > $$
 > \overbracket{\langle\mathbf p'|\mathbf p\rangle} = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf p') ,

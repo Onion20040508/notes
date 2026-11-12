@@ -42,8 +42,8 @@ C6c follows Yu's ch. 7 method: contractions with initial and final particles, th
 - [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-2|§C6c.1.2]] The Disconnected Pieces of the Free Four-Point Function Do Not Scatter
 - [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|§C6c.2.1]] Contraction of Fields with Outgoing Particles
 - [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|§C6c.2.2]] Contraction of Fields with Incoming Particles
-- [[§C6c.2 Contractions with External Particles#^thm-c6c-2-3|§C6c.2.3]] n Identical Fields on n Identical Particles Give the n! Contractions
-- [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|§C6c.2.4]] In and Out Are One Contraction Read Both Ways; a Vertex Collects the Momenta
+- [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|§C6c.2.4]] n Identical Fields on n Identical Particles Give the n! Contractions
+- [[§C6c.2 Contractions with External Particles#^thm-c6c-2-5|§C6c.2.5]] In and Out Are One Contraction Read Both Ways; a Vertex Collects the Momenta
 - [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|§C6c.3.1]] Wick's Theorem between Particle States
 - [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|§C6c.3.2]] The Contraction Rule for S-Matrix Elements
 - [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3|§C6c.3.3]] Every Connected Piece Carries Its Own Momentum Delta

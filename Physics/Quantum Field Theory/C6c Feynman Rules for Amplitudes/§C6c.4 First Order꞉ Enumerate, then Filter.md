@@ -212,7 +212,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 
 > [!theorem] Theorem §C6c.4.4: The φ⁴ Vertex Carries No Combinatorial Factor
 > In $\phi^4$ theory ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]), $\mathcal L_{\rm int} = -\frac{\lambda}{4!}\phi^4$:
-> 1. if the four legs of a vertex at $x$ are contracted with four different external particles, the $4!$ ways of attaching them to the four identical fields give equal terms ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-3|Theorem §C6c.2.3]], $n = 4$ at one point), and
+> 1. if the four legs of a vertex at $x$ are contracted with four different external particles, the $4!$ ways of attaching them to the four identical fields give equal terms ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]], $n = 4$ at one point), and
 >
 > $$
 > -\frac{i\lambda}{4!}\int d^4x\;\cdot\;4!\;(\cdots) = -i\lambda\int d^4x\;(\cdots) :
@@ -235,7 +235,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > [!derivation]- Derivation
 > **Step 1** (the four legs). At first order ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]], Step 1) the vertex is $-\frac{i\lambda}{4!}\int d^4x\,\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4$, the four factors of $\hat\phi_I(x)^4$ labelled, all at $x$. Let $P_1, \dots, P_4$ be the four particles they are contracted with.
 >
-> **Step 2** (the assignments). A full contraction of the legs with $P_1, \dots, P_4$ is a bijection $\sigma$, leg $\sigma(j)$ to $P_j$: $4! = 24$ of them, listed in Step 3 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]. Each gives the same product $\prod_jw_{P_j}(x)$ of wave functions ($e^{-ik\cdot x}$ in, $e^{+ip\cdot x}$ out, [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]]), because the four legs sit at the same point $x$: [[§C6c.2 Contractions with External Particles#^thm-c6c-2-3|Theorem §C6c.2.3]] with $n = 4$, $y_1 = \cdots = y_4 = x$.
+> **Step 2** (the assignments). A full contraction of the legs with $P_1, \dots, P_4$ is a bijection $\sigma$, leg $\sigma(j)$ to $P_j$: $4! = 24$ of them, listed in Step 3 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]. Each gives the same product $\prod_jw_{P_j}(x)$ of wave functions ($e^{-ik\cdot x}$ in, $e^{+ip\cdot x}$ out, [[§C6c.2 Contractions with External Particles#^thm-c6c-2-5|Theorem §C6c.2.5]]), because the four legs sit at the same point $x$: [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]] with $n = 4$, $y_1 = \cdots = y_4 = x$.
 >
 > **Step 3** (the sum). $-\frac{i\lambda}{4!}\int d^4x\sum_{\sigma\in S_4}\prod_jw_{P_j}(x) = -\frac{i\lambda}{4!}\cdot24\int d^4x\prod_jw_{P_j}(x) = -i\lambda\int d^4x\prod_jw_{P_j}(x)$.
 >
@@ -250,7 +250,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 
 ^der-c6c-4-4
 
-*Uses:* [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]], [[§C6c.2 Contractions with External Particles#^thm-c6c-2-3|Theorem §C6c.2.3]], [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]
+*Uses:* [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]], [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]], [[§C6c.2 Contractions with External Particles#^thm-c6c-2-5|Theorem §C6c.2.5]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]
 
 > [!example] Example §C6c.4.2: The Tadpole between One-Particle States: S = 2, a Mass Shift
 > ![[ph-qft-c6c-4-1.svg]]
@@ -271,7 +271,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > **Step 2** (which term survives between one-particle states). By [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]], 1, every normal-ordered field must meet a particle: ${:}\hat\phi^4{:}$ has four fields for two particles, $0$; the two-contraction term $3D_F(0)^2\langle\mathbf k'|\mathbf k\rangle$ is the bubble on a $\delta$-line ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-3|Example §C6c.4.3]]); only $i\hat T^{(1)}_2$ remains.
 >
-> **Step 3** (attach the particles). For the pair $\{1, 2\}$ contracted, the two remaining fields take $|\mathbf k\rangle$ and $\langle\mathbf k'|$ in $A(2, 2) = 2$ ways ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-3|Theorem §C6c.2.3]]):
+> **Step 3** (attach the particles). For the pair $\{1, 2\}$ contracted, the two remaining fields take $|\mathbf k\rangle$ and $\langle\mathbf k'|$ in $A(2, 2) = 2$ ways ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]]):
 >
 > $$
 > \langle\mathbf k'|{:}\hat\phi_3\hat\phi_4{:}|\mathbf k\rangle = \overbracket{\langle\mathbf k'|\hat\phi_3}\,\overbracket{\hat\phi_4|\mathbf k\rangle} + \overbracket{\langle\mathbf k'|\hat\phi_4}\,\overbracket{\hat\phi_3|\mathbf k\rangle} = 2\,e^{i(k' - k)\cdot x} ,

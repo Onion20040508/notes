@@ -278,8 +278,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 ## Which diagrams contribute
 
 > [!example] Example §C6c.8.5: The Diagrams of 2 → 2 in the Cubic–Quartic Theory at Order g² and λ
-> ![[ph-qft-c6b-11-5.svg]]
-> *The four diagrams of $p_A + p_B \to p_1 + p_2$: the $s$-, $t$- and $u$-channel trees with two cubic vertices (orange) and internal momentum $q$, and the contact diagram with one quartic vertex (blue); each has $S = 1$ ([[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]]). Added figure.*
+> *Diagrams:* the four diagrams ($s$, $t$, $u$, contact) are drawn at the home of this enumeration, [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]] (figure at the head of that box).
 >
 > **Question as asked.** "For two-particle scattering, $p_A + p_B \to p_1 + p_2$, draw all the Feynman diagrams to $\mathcal O(g^2)$ or $\mathcal O(\lambda)$. It is natural to treat these all diagrams as if they are of the same order, i.e. to think of $\lambda$ as being of order $g^2/m^2$" (PHY 513, Problem Set 8, Problem 2(a)).
 >
@@ -303,13 +302,13 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > | $(0, 1)$ | $\lambda$ | $4$ | $0$ | $0$ | all four on the vertex: contact |
 > | $(1, 1)$ | $g\lambda$ | $7$ | — | — | none: $7 + 4 = 11$ half-edges, odd ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1\|Theorem §CA.7.1]], 1) |
 >
-> At $(2, 0)$ the split $3 + 1$ is excluded: the vertex with one particle keeps two legs, which can only pair with each other, while the vertex with three has no free leg, so the diagram falls into two pieces. The split $4 + 0$ does not fit on three legs. Of the $9!! = 945$ pairings at order $g^2$ (31 diagrams) exactly these 3 are fully connected, each an orbit of $2!\,(3!)^2 = 72$ ([[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]]).
+> The splits $3 + 1$ and $4 + 0$ at $(2, 0)$ and the count $945 \to 31 \to 3$ (each diagram an orbit of $72$): [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]].
 >
 > **Why the other pieces are excluded.** [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3|Theorem §C6c.3.3]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]] and [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]] sort them. Each connected component carries its own momentum delta ([[§C6c.6 Feynman Rules for Amplitudes#^der-c6c-6-2|Derivation §C6c.6.2]], Step 2; [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-2|Theorem §C6c.1.2]]): a particle that passes by keeps its momentum and belongs to the $\mathbb 1$ of $\hat S$; a vacuum piece is a phase ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]); a loop on an external leg is a mass and $\sqrt Z$ correction, removed by amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|Def. §C6c.5.1]]; [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]]).
 >
 > **Theorems.** Vertex factors $-ig$, $-i\lambda$ ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-2|Theorem §C6a.13.2]]); $S = 1$ for each diagram, every cubic vertex carrying $2 = 3 - 1$ external lines and the quartic one $4$ ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]); the tree rules that turn each diagram into a term of $i\mathcal M$ ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-2|Theorem §C6c.6.2]]; [[P6 Tree Amplitude from a Lagrangian|P6]]); the count of legs, lines and loops ([[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-3|Theorem §C6a.13.3]]); the enumeration of the trees and the channels ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]]).
 >
-> **Result.** Four diagrams, as in the figure: $s$ ($q = p_A + p_B$), $t$ ($q = p_A - p_1$), $u$ ($q = p_A - p_2$) at order $g^2$, and the contact diagram at order $\lambda$, each with $S = 1$. Their sum, beyond what the question asks, is $i\mathcal M = -ig^2\bigl[\frac{1}{s - m^2} + \frac{1}{t - m^2} + \frac{1}{u - m^2}\bigr] - i\lambda$ ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]]).
+> **Result.** Four diagrams, as in the figure of [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]]: $s$ ($q = p_A + p_B$), $t$ ($q = p_A - p_1$), $u$ ($q = p_A - p_2$) at order $g^2$, and the contact diagram at order $\lambda$, each with $S = 1$. Their sum, beyond what the question asks, is $i\mathcal M = -ig^2\bigl[\frac{1}{s - m^2} + \frac{1}{t - m^2} + \frac{1}{u - m^2}\bigr] - i\lambda$ ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]]).
 >
 > **Pitfalls.**
 > - *Relabelling external particles is not a symmetry.* The momenta are labels, so $s$, $t$, $u$ are three diagrams, not one diagram with a factor 3.

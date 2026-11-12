@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 [[§C6b.1 The S-Matrix and the Invariant Amplitude|§C6b.1]] defined the matrix elements $\langle f|i\hat T|i\rangle$ and the amplitude $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]). This section computes them from the Dyson series with particles, not the vacuum, on both sides. The new step is a contraction of a field with an external particle: a field annihilates an incoming particle or creates an outgoing one, and each such contraction is a plane wave ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]]). With it Wick's theorem holds between particle states ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]]), and its terms sort into the $\mathbb 1$ (particles passing through on $\delta$-lines, [[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]]), vacuum bubbles, corrections of the external states, and the scattering ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3|Theorem §C6c.3.3]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]]; Lecture 16, Part B). At first order this gives Yu's procedure: list every matrix element the interaction allows, then keep those that energy-momentum conservation allows ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2|Theorem §C6c.4.2]]). At higher order it gives the Feynman rules for $i\mathcal M$, the subject of [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]] ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-2|Theorem §C6c.6.2]], [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-3|Theorem §C6c.6.3]]). Problem Set 8 had to build these tools by hand (Problems 3 and 4). [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]] reaches the same rules from the correlation functions of C6a by amputation, the route that generalizes beyond lowest order (LSZ). Yu computes $S$-matrix elements this way from the start (§7.1–§7.4); PS do it in §4.6 (eqs. (4.89)–(4.98)); Lecture 16, Part B, does it for $2 \to 2$ in $\phi^4$.
 
-The chapter follows Yu's order (§7.1–§7.3) with $\phi^4$ as the running theory: this section holds the contractions themselves, with one particle ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]]), with $n$ identical particles ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-3|Theorem §C6c.2.3]]) and read in both directions ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]]); Wick's theorem between particle states is [[§C6c.3 Wick's Theorem between Particle States|§C6c.3]], first order [[§C6c.4 First Order꞉ Enumerate, then Filter|§C6c.4]], second order [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors|§C6c.5]], the collected rules [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]]. The fermion counterpart of each section is in [[· C6d Feynman Rules for Fermions|C6d]].
+The chapter follows Yu's order (§7.1–§7.3) with $\phi^4$ as the running theory: this section holds the contractions themselves, with one particle ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]]), the overlap of two $n$-particle states, the pair in which no field takes part ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]]), with $n$ identical particles ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]]) and read in both directions ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-5|Theorem §C6c.2.5]]); Wick's theorem between particle states is [[§C6c.3 Wick's Theorem between Particle States|§C6c.3]], first order [[§C6c.4 First Order꞉ Enumerate, then Filter|§C6c.4]], second order [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors|§C6c.5]], the collected rules [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]]. The fermion counterpart of each section is in [[· C6d Feynman Rules for Fermions|C6d]].
 
 **Setup and scope.** The in and out states are free Fock states over the free vacuum $|0\rangle$, relativistically normalized ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), $|i\rangle = |\mathbf k_1\cdots\mathbf k_n\rangle$, $\langle f| = \langle\mathbf p_1\cdots\mathbf p_m|$. Between them the interaction-picture evolution operator acts ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]):
 $$
@@ -148,16 +148,52 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > and with $\hat a \leftrightarrow \hat b$ the same for $\hat\phi^{\dagger+}$ on $|\mathbf p^-\rangle$ ($e^{-ip\cdot x}$) and on $|\mathbf p^+\rangle$ ($0$). The outgoing ones are the adjoints: $\langle\mathbf p^+|\hat\phi^{\dagger-}(x) = \bigl(\hat\phi^+(x)|\mathbf p^+\rangle\bigr)^\dagger = e^{+ip\cdot x}\langle0|$, $\langle\mathbf p^-|\hat\phi^-(x) = \bigl(\hat\phi^{\dagger+}(x)|\mathbf p^-\rangle\bigr)^\dagger = e^{+ip\cdot x}\langle0|$ (Yu (7.137)–(7.138)).
 >
 > **What the derivation shows.**
-> - An incoming particle and an outgoing particle are the same contraction read in opposite directions; the plane wave carries $e^{-ip\cdot x}$ in and $e^{+ip\cdot x}$ out, so a vertex integral collects $e^{i(\sum p_{\rm out} - \sum p_{\rm in})\cdot x}$ → [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]].
-> - The $\sum_\sigma$ is the $n!$ of Yu's boxed rule: identical particles attach to identical fields in all $n!$ ways → [[§C6c.2 Contractions with External Particles#^thm-c6c-2-3|Theorem §C6c.2.3]].
+> - An incoming particle and an outgoing particle are the same contraction read in opposite directions; the plane wave carries $e^{-ip\cdot x}$ in and $e^{+ip\cdot x}$ out, so a vertex integral collects $e^{i(\sum p_{\rm out} - \sum p_{\rm in})\cdot x}$ → [[§C6c.2 Contractions with External Particles#^thm-c6c-2-5|Theorem §C6c.2.5]].
+> - The $\sum_\sigma$ is the $n!$ of Yu's boxed rule: identical particles attach to identical fields in all $n!$ ways → [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]].
 
 ^der-c6c-2-2
 
 *Uses:* [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]]
 
+> [!theorem] Lemma §C6c.2.3: The Overlap of Two n-Particle States
+> Let $|\mathbf k_1\cdots\mathbf k_n\rangle = \hat a^\dagger_{\mathbf k_1}\cdots\hat a^\dagger_{\mathbf k_n}|0\rangle$ and $|\mathbf p_1\cdots\mathbf p_{n'}\rangle = \hat a^\dagger_{\mathbf p_1}\cdots\hat a^\dagger_{\mathbf p_{n'}}|0\rangle$. Then
+>
+> $$
+> \langle\mathbf k_1\cdots\mathbf k_n|\mathbf p_1\cdots\mathbf p_{n'}\rangle = \delta_{nn'}\sum_{\sigma\in S_n}\prod_{i=1}^n(2\pi)^3\delta^3(\mathbf k_i - \mathbf p_{\sigma(i)}) :
+> $$
+>
+> each particle of the bra pairs with one particle of the ket, in all $n!$ ways, and states with different numbers of particles are orthogonal. For relativistically normalized states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]) every pair carries $2E$:
+>
+> $$
+> {}_{\rm rel}\langle\mathbf k_1\cdots\mathbf k_n|\mathbf p_1\cdots\mathbf p_{n'}\rangle_{\rm rel} = \delta_{nn'}\sum_{\sigma\in S_n}\prod_{i=1}^n2E_{\mathbf k_i}(2\pi)^3\delta^3(\mathbf k_i - \mathbf p_{\sigma(i)}) ;
+> $$
+>
+> for $n = 1$ these are the two overlaps $\langle\mathbf p|\mathbf k\rangle$ of [[§C6c.2 Contractions with External Particles#^cau-c6c-2-1|Caution: Two normalizations of one-particle states]].
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* the free Fock space, any $n$-particle states, independent of the dynamics; both normalizations.
+>
+> *Source: PHY 513, Problem Set 8, Problem 3(e) (the user's solution, paragraph "Measure": "By the same commuting argument as above, with $\hat a^\dagger_{\mathbf p}$ in place of $\hat\phi_I^-$"; the statement and Step 1 below stood in [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]] until 2026-11-12) · PS §4.6, p. 109, eq. (4.91) ($n = 2$, relativistic states) · the case $n \ne n'$ and the relativistic form: from Step 5 of [[§C6c.3 Wick's Theorem between Particle States#^der-c6c-3-1|Derivation §C6c.3.1]], moved here*
+
+^lem-c6c-2-3
+
+> [!derivation]- Derivation
+> **Step 1** (overlap). $\langle\mathbf k_1\cdots\mathbf k_n|\mathbf p_1\cdots\mathbf p_n\rangle = \langle0|\hat a_{\mathbf k_1}\cdots\hat a_{\mathbf k_n}\hat a^\dagger_{\mathbf p_1}\cdots\hat a^\dagger_{\mathbf p_n}|0\rangle$ is Step 4 of [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]] with $\hat a^\dagger_{\mathbf p}$ for $\hat\phi^-$ and $[\hat a_{\mathbf k}, \hat a^\dagger_{\mathbf p}] = (2\pi)^3\delta^3(\mathbf k - \mathbf p)$: the stated sum.
+>
+> **Step 2** (different numbers of particles). Move each $\hat a_{\mathbf k}$ to the right with $[\hat a_{\mathbf k}, \hat a^\dagger_{\mathbf p}] = (2\pi)^3\delta^3(\mathbf k - \mathbf p)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]): each commutator removes one $\hat a^\dagger_{\mathbf p}$ in all possible ways, and an $\hat a$ that reaches $|0\rangle$ (or an $\hat a^\dagger$ left next to $\langle0|$) gives $0$, exactly as in Steps 3–4 of [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]] with $\hat a^\dagger_{\mathbf p}$ in place of $\hat\phi^-$. So the overlap vanishes unless $n = n'$.
+>
+> **Step 3** (relativistic normalization). The two states carry the factors $\prod_i\sqrt{2E_{\mathbf k_i}}\prod_j\sqrt{2E_{\mathbf p_j}}$. On the support of the delta the two square roots combine to $2E_{\mathbf k}$: in the term of $\sigma$, $\mathbf p_{\sigma(i)} = \mathbf k_i$ for every $i$, so $\prod_j\sqrt{2E_{\mathbf p_j}} = \prod_i\sqrt{2E_{\mathbf k_i}}$ and the factor is $\prod_i2E_{\mathbf k_i}$.
+>
+> **What the derivation shows.**
+> - The overlap is the fourth kind of pair in Wick's theorem between particle states, a particle of the bra with a particle of the ket and no field → [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]]; drawn, it is the $\delta$-line ([[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]]).
+> - The sum over $\sigma$ expresses the symmetry of the states; because of it, integrating each momentum independently counts each state $n!$ times → [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]].
+
+^der-c6c-2-3
+
+*Uses:* [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]
+
 ## Identical particles and the direction of a contraction
 
-> [!theorem] Theorem §C6c.2.3: n Identical Fields on n Identical Particles Give the n! Contractions
+> [!theorem] Theorem §C6c.2.4: n Identical Fields on n Identical Particles Give the n! Contractions
 > Let $|\mathbf k_1\cdots\mathbf k_n\rangle$ be a relativistically normalized state of $n$ particles of one real free field ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), $k_i^0 = E_{\mathbf k_i}$, and $\hat\phi_I^\pm$ the positive- and negative-frequency parts ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]). Then
 >
 > $$
@@ -170,7 +206,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > *Source: Yu §7.1.2, p. 281, eqs. (7.86)–(7.87) and the boxed rule ("$n$ identical positive- (negative-) energy field operators acting on $n$ corresponding identical particles of the initial (final) state equal the sum of the $n!$ contractions of these field operators with the initial- (final-) state particles") · PS §4.6, eq. (4.98) · PHY 513, Problem Set 8, Problem 3(d)–(e) (the user's solution: the sum over $\sigma \in S_n$) · stated here from Step 4 of [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]] and the "What the derivation shows" of [[§C6c.2 Contractions with External Particles#^der-c6c-2-2|Derivation §C6c.2.2]]*
 
-^thm-c6c-2-3
+^thm-c6c-2-4
 
 > [!derivation]- Derivation
 > **Step 1** (one field). [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 1, with $|\mathbf k_1\cdots\mathbf k_n\rangle_{\rm rel} = \prod_i\sqrt{2E_{\mathbf k_i}}\;\hat a^\dagger_{\mathbf k_1}\cdots\hat a^\dagger_{\mathbf k_n}|0\rangle$: the factor $\frac{1}{\sqrt{2E_{\mathbf k_i}}}$ of the removed particle cancels its $\sqrt{2E_{\mathbf k_i}}$, and the other factors stay with the remaining state,
@@ -203,11 +239,11 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > - The $n!$ belongs to the identical fields; at a vertex it cancels the $\frac{1}{4!}$ of $\phi^4$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-4|Theorem §C6c.4.4]]); when legs close on each other fewer assignments are distinct and the symmetry factor is left over ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]]).
 > - Several kinds of particles: one such sum per kind, since a particle attaches only to a field of its kind ([[§C6a.13 Feynman Rules for Polynomial Interactions#^lem-c6a-13-1|Lemma §C6a.13.1]]; the count per kind is Step 3 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]]).
 
-^der-c6c-2-3
+^der-c6c-2-4
 
 *Uses:* [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]
 
-> [!theorem] Theorem §C6c.2.4: In and Out Are One Contraction Read Both Ways; a Vertex Collects the Momenta
+> [!theorem] Theorem §C6c.2.5: In and Out Are One Contraction Read Both Ways; a Vertex Collects the Momenta
 > Let all states be relativistically normalized free states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]).
 > 1. The contraction with an outgoing particle is the complex conjugate of the contraction with the incoming particle of the same momentum ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 2):
 >
@@ -229,7 +265,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > *Source: Yu §7.1, eqs. (7.15), (7.18) (the contractions of $\phi$ with initial and final particles); §7.4, eqs. (7.135)–(7.138) · PS §4.6, p. 110, eqs. (4.93)–(4.94) · PHY 513 Lecture 16, slide 15 · stated here from the "What the derivation shows" of [[§C6c.2 Contractions with External Particles#^der-c6c-2-2|Derivation §C6c.2.2]]*
 
-^thm-c6c-2-4
+^thm-c6c-2-5
 
 > [!derivation]- Derivation
 > **Step 1** (part 1). [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 2: $\hat\phi_I^+(x)|\mathbf p\rangle = e^{-ip\cdot x}|0\rangle$; its adjoint, with $(\hat\phi_I^+)^\dagger = \hat\phi_I^-$, is $\langle\mathbf p|\hat\phi_I^-(x) = \overline{e^{-ip\cdot x}}\,\langle0| = e^{+ip\cdot x}\langle0|$, since $p\cdot x$ is real. Writing $e^{+ip\cdot x} = e^{-i(-p)\cdot x}$ shows it as the incoming wave function of momentum $-p$.
@@ -249,7 +285,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > **What the derivation shows.**
 > - The sign of the exponent distinguishes in from out; counting every momentum as flowing into the vertex is what reconciles the slide's "$e^{-ipx}$ for every external line" with the outgoing $e^{+ip\cdot x}$ ([[§C6c.6 Feynman Rules for Amplitudes#^cau-c6c-6-1|§C6c.6, Caution: The sign of the external wave function]]).
 
-^der-c6c-2-4
+^der-c6c-2-5
 
 *Uses:* [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§C6a.13 Feynman Rules for Polynomial Interactions#^thm-c6a-13-5|Theorem §C6a.13.5]]
 
@@ -268,5 +304,5 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > [!remark]- Connections
 > - The contraction of a field with an external particle is the one-particle wave function $\langle0|\hat\phi(x)|\mathbf p\rangle = e^{-ip\cdot x}$; with interactions it carries $\sqrt Z$, the origin of the LSZ factor — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]].
 > - The fermion counterparts: four external wave functions $u$, $\bar u$, $v$, $\bar v$ instead of one plane wave — [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-1|§C6d.2, Theorem §C6d.2.1]].
-> - The $n!$ of identical particles appears twice: as the sum over $\sigma$ when particles attach to fields, and as the $\frac{1}{n!}$ of the $n$-particle measure ($S_{\rm id}$) — [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]].
+> - The $n!$ of identical particles appears twice: as the sum over $\sigma$ when particles attach to fields or to each other ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-3|Lemma §C6c.2.3]]), and as the $\frac{1}{n!}$ of the $n$-particle measure ($S_{\rm id}$) — [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]].
 > - The fermion counterparts of the lemmas and theorems here: several fields on one state contract from the inside out, $n$ identical fermions give the $n!$ contractions with the signs of the permutations, and a vertex also joins spinor indices — [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-2|Theorem §C6d.2.2]], [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-3|Theorem §C6d.2.3]], [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-4|Theorem §C6d.2.4]].
