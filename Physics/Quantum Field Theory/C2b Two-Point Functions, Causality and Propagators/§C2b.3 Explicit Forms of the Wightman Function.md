@@ -269,6 +269,41 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 
 *Uses:* [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-2|Theorem §CA.1.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|Theorem §CA.6.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]]
 
+The exponent of Theorem §C2b.3.3 at a general spacelike point, $t \ne 0$, comes out of a saddle point of the mode integral:
+
+> [!example] Example §CA.5.1: The Exponent of the Wightman Function Outside the Light Cone
+> For $0 < t < r$ write $\rho = \sqrt{r^2 - t^2}$. Find the saddle point, the exponent and the leading prefactor of $D_W(t, r)$ for $m\rho \gg 1$. (For $t < 0$ nothing new: at spacelike separation $D_W(-\xi) = D_W(\xi)$ ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]) and $D_W$ depends on $\boldsymbol\xi$ only through $r$, so $D_W(-t, r) = D_W(t, r)$.)
+>
+> **Step 1** (one-dimensional form). As in Steps 2–3 of the second route of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], now with the factor $e^{-iE_{\mathbf p}t}$ kept (angular integral, then folding onto the whole line),
+>
+> $$
+> D_W(t, r) = \frac{1}{8\pi^2ir}\int_{-\infty}^{\infty}dp\;\frac{p}{\sqrt{p^2 + m^2}}\,e^{iS(p)}, \qquad S(p) = pr - t\sqrt{p^2 + m^2} .
+> $$
+>
+> **Step 2** (stationary points). $S'(p) = r - \frac{pt}{\sqrt{p^2 + m^2}} = 0$ gives $r^2(p^2 + m^2) = p^2t^2$, i.e. $p^2(r^2 - t^2) = -m^2r^2$. Inside the cone ($r < |t|$) the root is real, $r/t = p/E_p$, the classical velocity, and stationary phase reproduces the oscillating amplitude. Outside, no real momentum has velocity $r/t > 1$, and the saddle moves to $p_0 = imr/\rho$.
+>
+> **Step 3** (the branch at the saddle). $p_0^2 + m^2 = m^2(1 - r^2/\rho^2) = -m^2t^2/\rho^2$, and the branch is fixed by the saddle condition itself: $S'(p_0) = r - p_0t/\sqrt{p_0^2 + m^2} = 0$ requires $\sqrt{p_0^2 + m^2} = p_0t/r = imt/\rho$, the value on the right lip of the cut of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], second route, Step 5.
+>
+> **Step 4** (the exponent). $S(p_0) = \frac{imr}{\rho}\,r - t\,\frac{imt}{\rho} = \frac{im(r^2 - t^2)}{\rho} = im\rho$, so $e^{iS(p_0)} = e^{-m\rho} = e^{-m\sqrt{r^2 - t^2}}$.
+>
+> **Step 5** (the second derivative). $S''(p) = -\frac{tm^2}{(p^2 + m^2)^{3/2}}$; at $p_0$, $(p_0^2 + m^2)^{3/2} = (imt/\rho)^3 = -im^3t^3/\rho^3$, so $S''(p_0) = -\frac{tm^2\rho^3}{-im^3t^3} = -\frac{i\rho^3}{mt^2}$. With $\Phi = iS$: $\Phi''(p_0) = \rho^3/mt^2 > 0$.
+>
+> **Step 6** (the direction). $\Phi''e^{2i\theta} < 0$ needs $e^{2i\theta} = -1$: $\theta = \pi/2$, the vertical direction $p = p_0 + iq$, and the Gaussian factor is $e^{i\pi/2}\sqrt{2\pi/\Phi''} = it\sqrt{2\pi m/\rho^3}$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-2|Theorem §CA.5.2]], 2).
+>
+> **Step 7** (assemble). With $f(p_0) = p_0/\sqrt{p_0^2 + m^2} = (imr/\rho)/(imt/\rho) = r/t$,
+>
+> $$
+> D_W \simeq \frac{1}{8\pi^2ir}\cdot\frac rt\cdot e^{-m\rho}\cdot it\sqrt{\frac{2\pi m}{\rho^3}} = \frac{\sqrt{2\pi m}}{8\pi^2}\,\rho^{-3/2}e^{-m\rho} = \frac{\sqrt m}{2(2\pi\rho)^{3/2}}\,e^{-m\rho},
+> $$
+>
+> the leading term of the exact result ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], with $\sqrt{-\xi^2} = \rho$), now at any spacelike point and not only at equal times.
+>
+> **Step 8** (why it is right). $|p_0| = mr/\rho > m$, so the saddle lies on the cut from $im$ to $i\infty$. On the cut the exponent of the dominant lip is the real function $-\varrho r + t\sqrt{\varrho^2 - m^2}$ of $p = i\varrho$, maximal at $\varrho = mr/\rho$ with value $-m\rho$: Laplace's method on the cut gives the same answer ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-5-2|§CA.5, Remark: When the saddle sits on a branch cut]]). As $t \to 0$ the saddle runs into the branch point $im$, where the cut representation of the equal-time computation takes over.
+>
+> *Source: the user's PHY 513 notes, Ch. 2 §2.2 (Derivation "Saddle point of the relativistic amplitude", done there for the single-particle amplitude, which has the same phase $S$; in these notes the second route to [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|Theorem §C1a.3.7]]); the prefactor for $D_W$ worked here*
+
+^ex-ca-5-1
+
 > [!theorem] Theorem §C2b.3.4: The Wightman Function at Timelike Separation
 > For $\xi^2 = \tau^2 > 0$,
 >
@@ -426,7 +461,7 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 > - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|Theorem §CA.6.1]] (boundary values of analytic functions) is why every value here is a limit of the one function $W$ of Theorem §C2b.3.2, and why the limit is a distribution where it is not a function.
 > - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-4|Theorem §CA.6.4]] (the light-cone boundary value $1/(-x^2 + i0\,x^0)$) is the leading singularity of $D_W$ for every mass, Theorem §C2b.3.6, 2; [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-3|Theorem §CA.6.3]] (logarithms at the real axis) gives the finite jump of the subleading term.
 > - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-5|Theorem §CA.6.5]] (damping factors) is the regulator $e^{-\varepsilon p}$ of the third route, removed pointwise because the target is a smooth function there.
-> - [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|Example §CA.5.1]] — the saddle point of the general spacelike point: the exponent $e^{-m\sqrt{r^2 - t^2}}$.
+> - [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-2|Theorem §CA.5.2]], 2 (steepest descent through a complex saddle) and [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-5-2|§CA.5, Remark: When the saddle sits on a branch cut]] — the saddle point of the general spacelike point: the exponent $e^{-m\sqrt{r^2 - t^2}}$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|Example §CA.5.1]]).
 
 > [!remark]- Connections
 > - The Euclidean function of Theorem §C2b.3.1, integrated over Euclidean time, gives $\int d\tau\,\frac{mK_1(m\sqrt{\tau^2 + r^2})}{4\pi^2\sqrt{\tau^2 + r^2}} = \frac{e^{-mr}}{4\pi r}$, the Yukawa potential, because the $\tau$ integral sets $p_4 = 0$ and leaves the static propagator $1/(\mathbf p^2 + m^2)$: [[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]. The same $e^{-mr}$ sets the range of the correlations $D_1$ and of meson exchange, the Yukawa potential of [[§C6d.7 The Yukawa Potential#^thm-c6d-7-3|§C6d.7, Theorem §C6d.7.3]].

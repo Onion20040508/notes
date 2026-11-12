@@ -41,7 +41,7 @@ How is the free real scalar field written in terms of oscillators, and what alge
 >
 > **2. The $d^3x$ integral.** $\int d^3x\,e^{i(\mathbf p + \mathbf p')\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf p + \mathbf p')$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), after exchanging the order of integration. *Sense:* the delta is an identity in $\mathcal S'$ in the variable $\mathbf p + \mathbf p'$, not a convergent integral ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]); the exchange is legitimate for a field whose transforms $\tilde\phi(\mathbf p)$, $\tilde\pi(\mathbf p)$ are wave packets (Schwartz functions), and steps 2–3 together are the identity $\int d^3x\,a(\mathbf x)b(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}A(\mathbf p)B(-\mathbf p)$, proved by Fubini for wave packets ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]).
 >
-> **3. Integrate the delta.** The $\mathbf p'$ integral sets $\mathbf p' = -\mathbf p$ (eliminating $\mathbf p'$) and cancels one $(2\pi)^3$; this is $\delta^3$ acting on the test function $\mathbf p' \mapsto \tilde\pi(\mathbf p')$ ([[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]):
+> **3. Integrate the delta.** The $\mathbf p'$ integral sets $\mathbf p' = -\mathbf p$ (eliminating $\mathbf p'$) and cancels one $(2\pi)^3$; this is $\delta^3$ acting on the test function $\mathbf p' \mapsto \tilde\pi(\mathbf p')$ ([[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]]):
 >
 > $$
 > \int d^3x\,\tfrac12\pi^2 = \frac12\int\frac{d^3p}{(2\pi)^3}\,\tilde\pi(\mathbf p)\,\tilde\pi(-\mathbf p) .
@@ -74,7 +74,7 @@ How is the free real scalar field written in terms of oscillators, and what alge
 
 ^der-c2a-2-1
 
-*Uses:* [[§B4.1 The Klein–Gordon Equation#^thm-b4-1-4|REL Theorem §B4.1.4]], [[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-1|WO Theorem §B4.4.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]]
+*Uses:* [[§B4.1 The Klein–Gordon Equation#^thm-b4-1-4|REL Theorem §B4.1.4]], [[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-1|WO Theorem §B4.4.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]] (classical preparation)
 
@@ -607,7 +607,7 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > Proved in CA; each line says what the physics above relies on.
 >
 > - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — dominated convergence and differentiation under the integral: the derivatives of the mode integrals, for wave-packet coefficients.
-> - [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] — δ acts on test functions; $\hat a_{\mathbf p}$, $\hat a^\dagger_{\mathbf p}$ are operator-valued distributions in $\mathbf p$ (Def. §C2a.2.2).
+> - [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]], [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] — δ acts on test functions; $\hat a_{\mathbf p}$, $\hat a^\dagger_{\mathbf p}$ are operator-valued distributions in $\mathbf p$ (Def. §C2a.2.2).
 > - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]] — the derivative of a distribution, for $\partial_t$ of the quantum field's expansion (Derivation §C2a.2.2, step 5).
 > - [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1 — the product of a distribution with a smooth function: "use the support of the delta", $F(\mathbf q)\delta^3(\mathbf p - \mathbf q) = F(\mathbf p)\delta^3(\mathbf p - \mathbf q)$.
 > - [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]] — linear change of variables of a distribution: $\delta^3(\mathbf p + \mathbf p')$ from $\mathbf p' \mapsto -\mathbf p'$, and the pairing of $\delta^3(\mathbf p - \mathbf q)$ with $\overline g\otimes h$.

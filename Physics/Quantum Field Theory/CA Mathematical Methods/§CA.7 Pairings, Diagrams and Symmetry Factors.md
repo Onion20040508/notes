@@ -148,7 +148,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 ## Labelled diagrams and their symmetry group
 
 > [!definition] Definition §CA.7.2: Labelled Diagram with Vertices of Valence Four
-> Let $E$ be a finite set (the **external points**) and $n \ge 0$. The set of **half-edges** is
+> Let $E$ be a finite set (the **external points**) and $n \ge 0$; the number of external points is $|E|$, which the physics chapters write $n_{\rm ext}$ ($n_{\rm ext} = |E|$; [[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-2|Def. §C6a.7.2]]). The set of **half-edges** is
 >
 > $$
 > X_{E,n} = E \;\sqcup\; \bigl([n] \times \{1, 2, 3, 4\}\bigr), \qquad [n] = \{1, \dots, n\},

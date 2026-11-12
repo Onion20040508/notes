@@ -11,24 +11,29 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, App. A §A.5 and Ch. 6 §6.5 (the working rules, stated twice there) · PHY 513 Lecture 6 (Larsen, 21 Sep 2026), "Complex Analysis: a Survival Guide" · PHY 513, Problem Set 4, Problem 1 · Stein & Shakarchi, Complex Analysis, Ch. 1–3 (cited in the user's notes).*
 
-Every propagator, every loop integral and the Wightman function of [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]] are evaluated by moving contours in the complex plane. Lecture 6 compressed the subject into three facts: an integral needs a path; the one entry in the table, $\oint_{|z| = 1}\frac{dz}{2\pi iz} = 1$; and the integral does not change when the path is deformed without crossing a singularity. This section states them with proofs, adds what the course uses (residues, closing a real-line integral, poles on the path, branch cuts, the identity theorem), and ends with the sheet of working rules ([[§CA.4 Contour Integration#^thm-ca-4-9|Theorem §CA.4.9]]) that [[P2 Green's Functions by Contour Integration|P2]] and [[§C2b.6 Green's Functions and Contours|§C2b.6]]–[[§C2b.8 Wick Rotation and the Two-Point Family|§C2b.8]] cite. Line integrals in the plane and Green's theorem are [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]]. The general theory, with complete proofs, is [[Complex Variables]] (Applied Math, MAT 342, Brown–Churchill); each box below names its statement there in a line *Math home*, and this section keeps the forms used in field theory: the propagator residues, the choice of the half-plane, the caution on Jordan's lemma, the examples and the working rules.
+Every propagator, every loop integral and the Wightman function of [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]] are evaluated by moving contours in the complex plane. Lecture 6 compressed the subject into three facts: an integral needs a path; the one entry in the table, $\oint_{|z| = 1}\frac{dz}{2\pi iz} = 1$; and the integral does not change when the path is deformed without crossing a singularity. This section states them with proofs, adds what the course uses (residues, closing a real-line integral, poles on the path, branch cuts, the identity theorem), and ends with the sheet of working rules ([[§CA.4 Contour Integration#^thm-ca-4-9|Theorem §CA.4.9]]) that [[P2 Green's Functions by Contour Integration|P2]] and [[§C2b.6 Green's Functions and Contours|§C2b.6]]–[[§C2b.8 Wick Rotation and the Two-Point Family|§C2b.8]] cite. Line integrals in the plane and Green's theorem are [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]]. The general theory, with complete proofs, is [[Complex Variables]] (Applied Math, MAT 342, Brown–Churchill); the definitions below are recalls that quote the definitions given there, one concept per box; each theorem names its statement there in a line *Math home*, and this section keeps the forms used in field theory: the propagator residues, the choice of the half-plane, the caution on Jordan's lemma, the examples and the working rules.
 
 ## Contours and analytic functions
 
-> [!definition] Definition §CA.4.1: Contour; Contour Integral
-> A **contour** $\gamma$ is a piecewise-smooth oriented curve $z(s)$, $a \le s \le b$, in $\mathbb C$, and
+> [!definition] Definition §CA.4.1: Contour
+> *Recall* ([[§43 Contours#^def-43-9|342 Def. §43.9]]): "A **contour**, or piecewise smooth arc, is an arc consisting of a finite number of smooth arcs joined end to end." In the notation used here, a **contour** $\gamma$ is a piecewise-smooth oriented curve $z(s)$, $a \le s \le b$, in $\mathbb C$, oriented in the direction of increasing $s$.
+>
+> *Source: the user's PHY 513 notes, App. A §A.5 (eq. (contourdef))*
+
+^def-ca-4-1
+
+> [!definition] Definition §CA.4.n2: Contour Integral
+> *Recall* ([[§44 Contour Integrals#^def-44-1|342 Def. §44.1]]), for a contour $C$ given by $z = z(t)$, $a \le t \le b$, and $f$ piecewise continuous on $C$: "The **contour integral**, or line integral, of $f$ along $C$ is $\int_C f(z)\,dz = \int_a^b f[z(t)]\,z'(t)\,dt$." For a contour $\gamma$ ([[§CA.4 Contour Integration#^def-ca-4-1|Def. §CA.4.1]]) this reads
 >
 > $$
 > \int_\gamma f(z)\,dz \equiv \int_a^bf\bigl(z(s)\bigr)\,z'(s)\,ds .
 > $$
 >
-> It does not depend on the parametrization, is linear in $f$, and changes sign when the orientation is reversed.
->
-> *Math home:* [[§43 Contours#^def-43-9|342 Def. §43.9]] (contour: finitely many smooth arcs joined end to end) and [[§44 Contour Integrals#^def-44-1|342 Def. §44.1]] (the contour integral, by the same formula).
+> It does not depend on the parametrization ([[§44 Contour Integrals#^prop-44-1|342 Prop. §44.1]]), is linear in $f$, and changes sign when the orientation is reversed ([[§44 Contour Integrals#^thm-44-2|342 Thm. §44.2]]).
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (eq. (contourdef))*
 
-^def-ca-4-1
+^def-ca-4-n2
 
 > [!theorem] Theorem §CA.4.1: The ML Inequality and the Basic Integral
 > 1. If $|f| \le M$ on $\gamma$ and $\gamma$ has length $L$, then $\bigl|\int_\gamma f\,dz\bigr| \le ML$.
@@ -45,7 +50,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 ^thm-ca-4-1
 
 > [!derivation]- Derivation
-> **Step 1** (ML). $\bigl|\int_a^bf(z(s))z'(s)\,ds\bigr| \le \int_a^b|f(z(s))|\,|z'(s)|\,ds \le M\int_a^b|z'(s)|\,ds = ML$.
+> **Step 1** (ML). By [[§CA.4 Contour Integration#^def-ca-4-n2|Def. §CA.4.n2]], $\bigl|\int_\gamma f\,dz\bigr| = \bigl|\int_a^bf(z(s))z'(s)\,ds\bigr| \le \int_a^b|f(z(s))|\,|z'(s)|\,ds \le M\int_a^b|z'(s)|\,ds = ML$.
 >
 > **Step 2** (parametrize the circle). $z = z_0 + re^{i\varphi}$, $\varphi: 0 \to 2\pi$ (counterclockwise), $dz = ire^{i\varphi}d\varphi$, $(z - z_0)^n = r^ne^{in\varphi}$:
 >
@@ -61,16 +66,21 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 
 ^der-ca-4-1
 
-*Uses:* [[§CA.4 Contour Integration#^def-ca-4-1|Def. §CA.4.1]]
+*Uses:* [[§CA.4 Contour Integration#^def-ca-4-1|Def. §CA.4.1]], [[§CA.4 Contour Integration#^def-ca-4-n2|Def. §CA.4.n2]]
 
 > [!definition] Definition §CA.4.2: Analytic Function
-> $f$ is **analytic** (holomorphic) at $z$ if $f'(z) = \lim_{h\to0}[f(z + h) - f(z)]/h$ exists with the same limit from every direction of $h$. With $f = u + iv$, $z = x + iy$, this implies the **Cauchy–Riemann equations** $\partial_xu = \partial_yv$, $\partial_yu = -\partial_xv$. Polynomials, $e^z$, and rational functions away from the zeros of their denominators are analytic; $\bar z$ and $|z|^2$ are not.
->
-> *Math home:* [[§25 Analytic Functions#^def-25-1|342 Def. §25.1]] (analytic in an open set: a derivative at each of its points; analytic at a point: analytic in a neighbourhood of it, which is the sense used in this section) and [[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]] (the Cauchy–Riemann equations are necessary).
+> *Recall* ([[§25 Analytic Functions#^def-25-1|342 Def. §25.1]]): "A function $f$ of the complex variable $z$ is **analytic in an open set** $S$ if it has a derivative everywhere in that set. It is **analytic at a point** $z_0$ if it is analytic in some neighborhood of $z_0$." The derivative is $f'(z) = \lim_{h\to0}[f(z + h) - f(z)]/h$, with the same limit from every direction of the complex increment $h$; *holomorphic* means the same as analytic, and "analytic at $z$" is used in this section in the sense quoted. Polynomials, $e^z$, and rational functions away from the zeros of their denominators are analytic; $\bar z$ and $|z|^2$ are not.
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (eq. (CR))*
 
 ^def-ca-4-2
+
+> [!definition] Definition §CA.4.n4: The Cauchy–Riemann Equations
+> With $f = u + iv$ and $z = x + iy$, the **Cauchy–Riemann equations** are $\partial_xu = \partial_yv$, $\partial_yu = -\partial_xv$. *Recall* ([[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]]): if "$f'(z)$ exists at a point $z_0 = x_0 + iy_0$", then "the first-order partial derivatives of $u$ and $v$ must exist at $(x_0, y_0)$, and they must satisfy the Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$ there." So an analytic function ([[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]]) satisfies them at every point of its domain.
+>
+> *Source: the user's PHY 513 notes, App. A §A.5 (eq. (CR))*
+
+^def-ca-4-n4
 
 > [!theorem] Theorem §CA.4.2: Cauchy's Theorem; Deformation of Contours
 > If $f$ is analytic on and inside a closed contour $\Gamma$, then $\oint_\Gamma f\,dz = 0$. Hence the integral between two points does not depend on the path, as long as one path can be deformed into the other without crossing a point where $f$ is not analytic. An analytic function is infinitely differentiable and equals its Taylor series in every disc of analyticity.
@@ -86,7 +96,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 >
 > **Step 2** (Green's theorem). For $u$, $v$ with continuous partial derivatives, [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]], $\oint(P\,dx + Q\,dy) = \iint(\partial_xQ - \partial_yP)\,dx\,dy$, turns the two pieces into $\iint(-\partial_xv - \partial_yu)$ and $\iint(\partial_xu - \partial_yv)$.
 >
-> **Step 3** (Cauchy–Riemann). Both integrands vanish ([[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]]), so $\oint f\,dz = 0$. Goursat's proof removes the continuity assumption.
+> **Step 3** (Cauchy–Riemann). Both integrands vanish ([[§CA.4 Contour Integration#^def-ca-4-n4|Def. §CA.4.n4]]), so $\oint f\,dz = 0$. Goursat's proof removes the continuity assumption.
 >
 > **Step 4** (deformation). Two paths from $z_1$ to $z_2$ that can be deformed into each other through a region of analyticity form, with one reversed, a closed contour with $f$ analytic inside; by Step 3 its integral is zero, so the two path integrals are equal.
 >
@@ -98,7 +108,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 
 ^der-ca-4-2
 
-*Uses:* [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]], [[§54 Cauchy Integral Formula#^thm-54-1|342 Thm. §54.1]], [[§57 Some Consequences of the Extension#^thm-57-1|342 Thm. §57.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|342 Thm. §63.1]] (Step 5)
+*Uses:* [[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]], [[§CA.4 Contour Integration#^def-ca-4-n4|Def. §CA.4.n4]], [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]], [[§54 Cauchy Integral Formula#^thm-54-1|342 Thm. §54.1]], [[§57 Some Consequences of the Extension#^thm-57-1|342 Thm. §57.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|342 Thm. §63.1]] (Step 5)
 
 > [!theorem] Theorem §CA.4.3: Identity Theorem
 > If $f$ and $g$ are analytic on a connected open set $U$ and agree on a subset of $U$ with an accumulation point in $U$, then $f = g$ on all of $U$. In particular an analytic continuation, when it exists, is unique.
@@ -125,31 +135,32 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 ## Residues
 
 > [!definition] Definition §CA.4.3: Isolated Singularity
-> $z_0$ is an **isolated singularity** of $f$ if $f$ is analytic ([[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]]) on a punctured disc $0 < |z - z_0| < \rho$ but not at $z_0$.
->
-> *Math home:* [[§74 Isolated Singular Points#^def-74-1|342 Def. §74.1]].
+> *Recall* ([[§74 Isolated Singular Points#^def-74-1|342 Def. §74.1]]): "A singular point $z_0$ of $f$ is **isolated** if there is a deleted $\varepsilon$ neighborhood $0 < |z - z_0| < \varepsilon$ of $z_0$ throughout which $f$ is analytic." In the words used here: $z_0$ is an **isolated singularity** of $f$ if $f$ is analytic ([[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]]) on a punctured disc $0 < |z - z_0| < \rho$ but not at $z_0$.
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (Definitions "Isolated singularities and the Laurent expansion", "Definition of the residue")*
 
 ^def-ca-4-3
 
-> [!definition] Definition §CA.4.4: Laurent Expansion; Removable Singularity, Pole and Essential Singularity
-> At an isolated singularity $z_0$ ([[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]]), $f = \sum_{n=-\infty}^{\infty}a_n(z - z_0)^n$ on the punctured disc (the **Laurent expansion**), and the singularity is **removable**, a **pole of order $k$** or **essential** as the negative powers are absent, stop at $n = -k$, or do not stop. That the expansion exists and is unique is Laurent's theorem ([[§67 Proof of Laurent's Theorem#^thm-67-1|342 Thm. §67.1]]).
->
-> *Math home:* [[§67 Proof of Laurent's Theorem#^thm-67-1|342 Thm. §67.1]] (Laurent's theorem), [[§78 The Three Types of Isolated Singular Points#^def-78-2|342 Def. §78.2]] (removable), [[§78 The Three Types of Isolated Singular Points#^def-78-4|342 Def. §78.4]] (pole of order $m$), [[§78 The Three Types of Isolated Singular Points#^def-78-3|342 Def. §78.3]] (essential).
+> [!definition] Definition §CA.4.4: Laurent Expansion
+> At an isolated singularity $z_0$ ([[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]]), $f = \sum_{n=-\infty}^{\infty}a_n(z - z_0)^n$ on the punctured disc: the **Laurent expansion**. *Recall* ([[§67 Proof of Laurent's Theorem#^thm-67-1|342 Thm. §67.1]], Laurent's theorem): a function analytic in an annulus $R_1 < |z - z_0| < R_2$ has there the series representation "$f(z) = \sum_{n=-\infty}^{\infty} c_n(z - z_0)^n$ with $c_n = \frac{1}{2\pi i}\int_C\frac{f(z)\,dz}{(z - z_0)^{n+1}}$", $C$ being any positively oriented simple closed contour around $z_0$ in the annulus. The punctured disc is the case $R_1 = 0$; the expansion exists, and it is unique because the coefficients are given by this formula. (342 writes $a_n$ for $n \ge 0$ and $b_n = a_{-n}$ for $n \ge 1$.)
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (Definitions "Isolated singularities and the Laurent expansion", "Definition of the residue")*
 
 ^def-ca-4-4
 
+> [!definition] Definition §CA.4.n7: Removable Singularity, Pole and Essential Singularity
+> An isolated singularity $z_0$ with Laurent expansion $\sum_na_n(z - z_0)^n$ ([[§CA.4 Contour Integration#^def-ca-4-4|Def. §CA.4.4]]) is **removable**, a **pole of order $k$** or **essential** as the negative powers are absent, stop at $n = -k$ (with $a_{-k} \ne 0$), or do not stop; a pole of order $1$ is a **simple pole**. *Recall*, with $b_n = a_{-n}$ the coefficients of the negative powers: "If every $b_n$ in (1) is zero, … then $z_0$ is called a **removable singular point** of $f$" ([[§78 The Three Types of Isolated Singular Points#^def-78-2|342 Def. §78.2]]); if "$b_m \ne 0$ and $b_{m+1} = b_{m+2} = \cdots = 0$", then "the isolated singular point $z_0$ is called a **pole of order $m$**. A pole of order $m = 1$ is usually referred to as a **simple pole**" ([[§78 The Three Types of Isolated Singular Points#^def-78-4|342 Def. §78.4]]); "If an infinite number of the coefficients $b_n$ in the principal part (2) are nonzero, $z_0$ is said to be an **essential singular point** of $f$" ([[§78 The Three Types of Isolated Singular Points#^def-78-3|342 Def. §78.3]]).
+>
+> *Source: the user's PHY 513 notes, App. A §A.5 (Definitions "Isolated singularities and the Laurent expansion", "Definition of the residue")*
+
+^def-ca-4-n7
+
 > [!definition] Definition §CA.4.5: Residue
-> The **residue** of $f$ at an isolated singularity $z_0$ is the coefficient $a_{-1}$ of its Laurent expansion ([[§CA.4 Contour Integration#^def-ca-4-4|Def. §CA.4.4]]):
+> *Recall* ([[§75 Residues#^def-75-1|342 Def. §75.1]]): "The coefficient $b_1$ of $1/(z - z_0)$ is called the **residue** of $f$ at $z_0$"; and ([[§75 Residues#^thm-75-1|342 Thm. §75.1]]) for a positively oriented simple closed contour $C$ around $z_0$ in the punctured disc, "$\int_C f(z)\,dz = 2\pi i\operatorname{Res}_{z=z_0} f(z)$". In the notation of [[§CA.4 Contour Integration#^def-ca-4-4|Def. §CA.4.4]]: the **residue** of $f$ at an isolated singularity $z_0$ is the coefficient $a_{-1}$ of its Laurent expansion,
 >
 > $$
 > \operatorname*{Res}_{z_0}f \equiv a_{-1} = \frac{1}{2\pi i}\oint_{|z - z_0| = r}f(z)\,dz \qquad (0 < r < \rho) .
 > $$
->
-> *Math home:* [[§75 Residues#^def-75-1|342 Def. §75.1]] (the coefficient of $1/(z - z_0)$) and [[§75 Residues#^thm-75-1|342 Thm. §75.1]] (the integral form).
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (Definitions "Isolated singularities and the Laurent expansion", "Definition of the residue")*
 
@@ -163,7 +174,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 ^rem-ca-4-1
 
 > [!theorem] Theorem §CA.4.4: Computing Residues
-> 1. Simple pole ([[§CA.4 Contour Integration#^def-ca-4-4|Def. §CA.4.4]]; residue: [[§CA.4 Contour Integration#^def-ca-4-5|Def. §CA.4.5]]): $\operatorname{Res}_{z_0}f = \lim_{z\to z_0}(z - z_0)f(z)$; for $f = g/h$ with $g$ analytic and $h$ having a simple zero, $\operatorname{Res}_{z_0}(g/h) = g(z_0)/h'(z_0)$.
+> 1. Simple pole ([[§CA.4 Contour Integration#^def-ca-4-n7|Def. §CA.4.n7]]; residue: [[§CA.4 Contour Integration#^def-ca-4-5|Def. §CA.4.5]]): $\operatorname{Res}_{z_0}f = \lim_{z\to z_0}(z - z_0)f(z)$; for $f = g/h$ with $g$ analytic and $h$ having a simple zero, $\operatorname{Res}_{z_0}(g/h) = g(z_0)/h'(z_0)$.
 > 2. Pole of order $k$: $\operatorname{Res}_{z_0}f = \dfrac{1}{(k - 1)!}\lim_{z\to z_0}\dfrac{d^{k-1}}{dz^{k-1}}\bigl[(z - z_0)^kf(z)\bigr]$.
 > 3. For the propagator integrand, $\operatorname*{Res}_{p^0 = \pm E}\dfrac{e^{-ip^0t}}{(p^0)^2 - E^2} = \pm\dfrac{e^{\mp iEt}}{2E}$.
 >
@@ -185,7 +196,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 
 ^der-ca-4-4
 
-*Uses:* [[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]], [[§CA.4 Contour Integration#^def-ca-4-4|Def. §CA.4.4]], [[§CA.4 Contour Integration#^def-ca-4-5|Def. §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]] (Taylor series of $(z - z_0)^kf$)
+*Uses:* [[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]], [[§CA.4 Contour Integration#^def-ca-4-4|Def. §CA.4.4]], [[§CA.4 Contour Integration#^def-ca-4-n7|Def. §CA.4.n7]], [[§CA.4 Contour Integration#^def-ca-4-5|Def. §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]] (Taylor series of $(z - z_0)^kf$)
 
 > [!theorem] Theorem §CA.4.5: Residue Theorem
 > If $f$ is analytic on a closed contour $\Gamma$ and inside it except at finitely many isolated singularities $z_1, \dots, z_N$, then
@@ -196,7 +207,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 >
 > with $+$ for counterclockwise and $-$ for clockwise traversal. Singularities outside $\Gamma$ contribute nothing.
 >
-> *Math home:* [[§76 Cauchy's Residue Theorem#^thm-76-1|342 Thm. §76.1]] (counterclockwise simple closed contour; the clockwise sign is the orientation rule of Def. §CA.4.1).
+> *Math home:* [[§76 Cauchy's Residue Theorem#^thm-76-1|342 Thm. §76.1]] (counterclockwise simple closed contour; the clockwise sign is the orientation rule of [[§CA.4 Contour Integration#^def-ca-4-n2|Def. §CA.4.n2]]).
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (Principle "The residue theorem")*
 

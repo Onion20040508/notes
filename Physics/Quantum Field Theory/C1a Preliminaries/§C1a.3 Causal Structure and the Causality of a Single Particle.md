@@ -95,7 +95,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 ^def-c1a-3-1
 
 > [!theorem] Theorem §C1a.3.3: The Amplitude Is the Fourier Transform of the Phase
-> For each real $t$, $U(t, \cdot)$ is the tempered distribution ([[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]) on $\mathbb R^3$
+> For each real $t$, $U(t, \cdot)$ is the tempered distribution ([[§CA.2 Generalized Functions#^def-ca-2-n3|Def. §CA.2.n3]]) on $\mathbb R^3$
 >
 > $$
 > U(t, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}\,e^{-iE(\mathbf p)t + i\mathbf p\cdot\mathbf x},
@@ -129,7 +129,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 
 ^der-c1a-3-3
 
-*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
+*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-n3|Def. §CA.2.n3]], [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
 
 > [!theorem] Theorem §C1a.3.4: The Nonrelativistic Amplitude Is Nonzero Everywhere
 > For $E = \mathbf p^2/2m$ and $t \neq 0$,
@@ -179,7 +179,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 > [!derivation]- Derivation
 > **Step 1** (the modulus). Write $z = a - ib$, $b > 0$. Then $|e^{-iE_{\mathbf p}z}| = e^{-bE_{\mathbf p}}$, and since $E_{\mathbf p} \ge p$, $\int d^3p\,e^{-bE_{\mathbf p}} \le 4\pi\int_0^\infty p^2e^{-bp}\,dp = 8\pi/b^3 < \infty$.
 >
-> **Step 2** (analyticity). The $z$-derivative of the integrand is $-iE_{\mathbf p}$ times it, of modulus $E_{\mathbf p}e^{-bE_{\mathbf p}} \le (p + m)e^{-b_0p}$ for $b \ge b_0 > 0$, integrable uniformly in $z$. By [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], 2, applied to $\partial/\partial a$ and $\partial/\partial b$ separately, $U$ has continuous partial derivatives obtained under the integral; since the integrand satisfies $\partial_b = -i\partial_a$ (the Cauchy–Riemann equations for $z = a - ib$), so does $U$, and the complex derivative exists ([[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]]). (The same estimate with the weight $1/2E_{\mathbf p}$ is Steps 1–3 of [[§C2b.2 The Wightman Function#^der-c2b-2-5|Derivation §C2b.2.5]], for the Wightman function.)
+> **Step 2** (analyticity). The $z$-derivative of the integrand is $-iE_{\mathbf p}$ times it, of modulus $E_{\mathbf p}e^{-bE_{\mathbf p}} \le (p + m)e^{-b_0p}$ for $b \ge b_0 > 0$, integrable uniformly in $z$. By [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], 2, applied to $\partial/\partial a$ and $\partial/\partial b$ separately, $U$ has continuous partial derivatives obtained under the integral; since the integrand satisfies $\partial_b = -i\partial_a$ (the Cauchy–Riemann equations for $z = a - ib$, [[§CA.4 Contour Integration#^def-ca-4-n4|Def. §CA.4.n4]]), so does $U$, and the complex derivative exists ([[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]]). (The same estimate with the weight $1/2E_{\mathbf p}$ is Steps 1–3 of [[§C2b.2 The Wightman Function#^der-c2b-2-5|Derivation §C2b.2.5]], for the Wightman function.)
 >
 > **Step 3** (the boundary value). For $f \in \mathcal S(\mathbb R^3)$ and $\varepsilon > 0$ the double integral over $(\mathbf x, \mathbf p)$ converges absolutely, so (Fubini) $\int d^3x\,f(\mathbf x)\,U(t - i\varepsilon, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}e^{-iE_{\mathbf p}t}e^{-\varepsilon E_{\mathbf p}}\tilde f(-\mathbf p)$. The integrand is bounded by $|\tilde f(-\mathbf p)|$, independently of $\varepsilon$; by dominated convergence the limit is $\int\frac{d^3p}{(2\pi)^3}e^{-iE_{\mathbf p}t}\tilde f(-\mathbf p) = U(t, \cdot)[f]$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]]).
 >
@@ -308,7 +308,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 > Proved in CA and CB; each line says what the physics above relies on.
 >
 > The amplitude $U$ is a generalized function; the senses in which it exists, acts and converges:
-> - [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]] — tempered distribution: what $U(t, \cdot)$ is for every real $t$ and every real $E(\mathbf p)$.
+> - [[§CA.2 Generalized Functions#^def-ca-2-n3|Def. §CA.2.n3]] — tempered distribution: what $U(t, \cdot)$ is for every real $t$ and every real $E(\mathbf p)$.
 > - [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]] — the Fourier transform of a tempered distribution is moved onto the test function: the formula for $U(t, \cdot)[f]$.
 > - [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]] — distributional limits: the sense of $U \to \delta^3$ as $t \to 0$ and of the boundary value $t - i\varepsilon \to t$; derivatives pass through such limits, which carries $U = 2i\partial_tD_W$ to real time.
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]] — the Fourier convention and inversion on $\mathcal S$: the wave-packet expansion and $\int\frac{d^3p}{(2\pi)^3}\tilde f(-\mathbf p) = f(\mathbf 0)$.

@@ -60,7 +60,7 @@ How are the values of the free field at two spacetime points correlated in the v
 >
 > **Step 3** (vacuum expectation values). $\langle0|\hat a_{\mathbf p}\hat a_{\mathbf q}|0\rangle = 0$ and $\langle0|\hat a_{\mathbf p}^\dagger \hat a_{\mathbf q}|0\rangle = 0$ because $\hat a_{\mathbf q}|0\rangle = 0$; $\langle0|\hat a_{\mathbf p}^\dagger \hat a_{\mathbf q}^\dagger|0\rangle = 0$ because $\langle0|\hat a_{\mathbf p}^\dagger = 0$. The survivor is $\langle0|\hat a_{\mathbf p}\hat a_{\mathbf q}^\dagger|0\rangle = \langle0|[\hat a_{\mathbf p}, \hat a_{\mathbf q}^\dagger]|0\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]).
 >
-> **Step 4** (integrate the delta). It eliminates $\mathbf q$ (sense: smeared in $y$, the $\mathbf q$-integrand carries the Schwartz factor $\tilde g(q)$, and $\delta^3$ acts on it as in [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]; the pointwise formula below is the kernel of the result, Theorem §C2b.2.2): $\mathbf q = \mathbf p$, $q^0 = p^0$, $\frac{1}{\sqrt{2E_{\mathbf p}}\sqrt{2E_{\mathbf q}}} \to \frac{1}{2E_{\mathbf p}}$, and $e^{-ip\cdot x + iq\cdot y} \to e^{-ip\cdot(x - y)}$:
+> **Step 4** (integrate the delta). It eliminates $\mathbf q$ (sense: smeared in $y$, the $\mathbf q$-integrand carries the Schwartz factor $\tilde g(q)$, and $\delta^3$ acts on it as in [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]]; the pointwise formula below is the kernel of the result, Theorem §C2b.2.2): $\mathbf q = \mathbf p$, $q^0 = p^0$, $\frac{1}{\sqrt{2E_{\mathbf p}}\sqrt{2E_{\mathbf q}}} \to \frac{1}{2E_{\mathbf p}}$, and $e^{-ip\cdot x + iq\cdot y} \to e^{-ip\cdot(x - y)}$:
 >
 > $$
 > D_W = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,e^{-ip\cdot(x - y)} .
@@ -83,7 +83,7 @@ How are the values of the free field at two spacetime points correlated in the v
 
 ^der-c2b-2-1
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]]
 
 > [!theorem] Theorem §C2b.2.2: The Wightman Function Is a Tempered Distribution
 > With $\tilde f(p) = \int d^4x\,f(x)e^{ip\cdot x}$ and $p^0 = E_{\mathbf p}$:
@@ -258,7 +258,7 @@ How are the values of the free field at two spacetime points correlated in the v
 > Proved in CA; each line says what the physics above relies on.
 >
 > - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] (dominated convergence, differentiation under the integral) proves analyticity of $W$, the boundary limit, and smoothness in time.
-> - [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]] — $\delta^3$ acts on the Schwartz coefficient of a smeared field: the pointwise two-point formula is the kernel of the smeared one.
+> - [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]] — $\delta^3$ acts on the Schwartz coefficient of a smeared field: the pointwise two-point formula is the kernel of the smeared one.
 > - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]] — the derivative moved onto the test function: $(\partial^2 + m^2)D_W = 0$ means $D_W[(\partial^2 + m^2)f] = 0$ (Theorem §C2b.2.4).
 > - [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 1 — the distributional limit $\varepsilon \to 0^+$: convergence on every test function gives a tempered distribution (Theorem §C2b.2.5).
 > - [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]] — the transform of a tempered distribution, moved onto the test function: $\tilde D_W = 2\pi\theta(p^0)\delta(p^2 - m^2)$ (Theorem §C2b.2.2).

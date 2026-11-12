@@ -98,7 +98,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 
 ^der-ca-3-2
 
-*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]
+*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-n3|Def. §CA.2.n3]], [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]]
 
 > [!theorem] Theorem §CA.3.3: Plane Waves Integrate to a Delta Function
 > As tempered distributions in $\mathbf k$ (respectively $p$),
@@ -137,7 +137,14 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 >
 > **Step 3** (the Gaussian term). $J(L) = \int dk\,e^{-k^2}\frac{2\sin kL}{k}$ has $J(0) = 0$ and, differentiating under the integral (bound $2e^{-k^2}$; [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], 2), $J'(L) = \int dk\,e^{-k^2}2\cos kL = 2\sqrt\pi\,e^{-L^2/4}$ (the Gaussian integral [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], 1 with $n = 1$, $s = 1$, $x = L$, multiplied by $2\pi$ and by $2$ for $2\cos kL = e^{ikL} + e^{-ikL}$). So $J(L) = 2\sqrt\pi\int_0^Le^{-s^2/4}ds \to 2\sqrt\pi\cdot\sqrt\pi = 2\pi$.
 >
-> **Step 4** (assemble). $\int dk\,\varphi(k)\int_{-L}^{L}dx\,e^{ikx} \to 2\pi\varphi(0)$. In $n$ dimensions the box is a product of one-dimensional boxes; for $\varphi = \varphi_1(k_1)\cdots\varphi_n(k_n)$ the statement factorizes, and finite sums of such products approximate every Schwartz function (sketch).
+> **Step 4** (assemble). $\int dk\,\varphi(k)\int_{-L}^{L}dx\,e^{ikx} \to 2\pi\varphi(0)$. In $n$ dimensions the box is a product of one-dimensional boxes; for a product $\varphi = \varphi_1(k_1)\cdots\varphi_n(k_n)$ the pairing factorizes into $n$ one-dimensional pairings, each tending to $2\pi\varphi_i(0)$ by Steps 1–3, so the limit is $(2\pi)^n\varphi(\mathbf 0)$. For a general $\varphi \in \mathcal S(\mathbb R^n)$ the box is bounded, $|\varphi|$ is integrable and $|e^{i\mathbf k\cdot\mathbf x}| = 1$, so Fubini ([[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]]) gives, with $(2\pi)^n\check\varphi(\mathbf x) = \int d^nk\,\varphi(\mathbf k)e^{i\mathbf k\cdot\mathbf x}$ as in Step 2 of the first derivation,
+>
+> $$
+> \int d^nk\,\varphi(\mathbf k)\int_{[-L, L]^n}d^nx\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^n\int_{[-L, L]^n}d^nx\,\check\varphi(\mathbf x) \longrightarrow (2\pi)^n\int d^nx\,\check\varphi(\mathbf x) = (2\pi)^n\varphi(\mathbf 0) ,
+> $$
+>
+> the limit by dominated convergence ($\check\varphi \in \mathcal S \subset L^1$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], 1; [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]) and the last equality by inversion. So the box limit holds for every test function in every dimension; the route that does not use Fourier inversion (Steps 1–3) covers $n = 1$ and products of one-dimensional test functions.
+> <!-- S6 (2026-11-12): the former sketch ("finite sums of products approximate every Schwartz function") needs the density of such sums in 𝒮(ℝⁿ) together with a bound on the box pairings that is uniform in L; neither is in the Math vault (searched Functional Analysis 556, Measure Theory 551, Multivariable Analysis 452 for "dense", "tensor", "Schwartz", "Stone–Weierstrass"). Replaced by the Fubini argument above, which is complete. -->
 >
 > **What the derivation shows.**
 > - The box regulator converges to the same distribution; at $\mathbf k = \mathbf 0$ it equals $(2L)^n$, the volume of the box, which is the $\delta^n(\mathbf 0) \to V$ of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]].
@@ -147,7 +154,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 
 ^der-ca-3-3b
 
-*Uses:* [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]]
+*Uses:* [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]
 
 > [!theorem] Theorem §CA.3.4: Rules of the Fourier Transform
 > 1. *Plane-wave delta functions:* $\int d^3x\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf k)$ and $\int d^4x\,e^{ip\cdot x} = (2\pi)^4\delta^4(p)$; the pairs of Def. §CA.3.1 are inverse to each other.
@@ -212,13 +219,37 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 > \widetilde{\partial_\mu T}[\varphi] = (\partial_\mu T)[\tilde\varphi] = -T[\partial_\mu\tilde\varphi] = -T\bigl[\mathcal F(ip_\mu\varphi)\,\bigr] = -\tilde T[ip_\mu\varphi] = (-ip_\mu\tilde T)[\varphi] .
 > $$
 >
-> **Step 4** (convolution rule in $\mathcal S'$). With $(D \ast  j)(x) = D[j(x - \cdot)]$, a smooth polynomially bounded function,
+> **Step 4** (convolution rule in $\mathcal S'$). With $(D \ast  j)(x) = D[j(x - \cdot)]$, a continuous polynomially bounded function (sub-step (a) below),
 >
 > $$
 > \widetilde{D * j}[\varphi] = \int d^4x\,D\bigl[j(x - \cdot)\bigr]\tilde\varphi(x) = D\Bigl[\int d^4x\,j(x - \cdot)\,\tilde\varphi(x)\Bigr] ,
 > $$
 >
-> the exchange of $D$ with the $x$-integral holding because the Riemann sums of the $x$-integral converge in $\mathcal S$ (sketch). The function in brackets is, at the point $y$, $\int d^4x\,j(x - y)\int d^4p\,\varphi(p)e^{ip\cdot x} = \int d^4p\,\varphi(p)e^{ip\cdot y}\int d^4u\,j(u)e^{ip\cdot u} = \mathcal F(\tilde j\varphi)(y)$, with $x = u + y$ and Fubini. So $\widetilde{D * j}[\varphi] = D[\mathcal F(\tilde j\varphi)\,] = \tilde D[\tilde j\varphi] = (\tilde j\tilde D)[\varphi]$.
+> the exchange of $D$ with the $x$-integral holding because the Riemann sums of the $x$-integral converge in $\mathcal S$ (sub-steps (b), (c) below). The function in brackets is, at the point $y$, $\int d^4x\,j(x - y)\int d^4p\,\varphi(p)e^{ip\cdot x} = \int d^4p\,\varphi(p)e^{ip\cdot y}\int d^4u\,j(u)e^{ip\cdot u} = \mathcal F(\tilde j\varphi)(y)$, with $x = u + y$ and Fubini. So $\widetilde{D * j}[\varphi] = D[\mathcal F(\tilde j\varphi)\,] = \tilde D[\tilde j\varphi] = (\tilde j\tilde D)[\varphi]$.
+>
+> *(a) $D \ast j$ is continuous and polynomially bounded.* By [[§CA.2 Generalized Functions#^lem-ca-2-1|Lemma §CA.2.1]], 1 there are $M$, $C$ with $|D[\varphi]| \le C\sum_{|\alpha|, |\beta| \le M}\|\varphi\|_{\alpha,\beta}$. For $\varphi_x(y) = j(x - y)$, $y^\alpha\partial_y^\beta\varphi_x(y) = (-1)^{|\beta|}y^\alpha(\partial^\beta j)(x - y)$, and $|y^\alpha| \le |y|^{|\alpha|} \le (|x| + |x - y|)^{|\alpha|} \le (1 + |x|)^{|\alpha|}(1 + |x - y|)^{|\alpha|}$, so
+>
+> $$
+> \|\varphi_x\|_{\alpha,\beta} \le (1 + |x|)^{|\alpha|}\sup_z(1 + |z|)^{|\alpha|}|\partial^\beta j(z)| , \qquad |(D \ast j)(x)| \le C'(1 + |x|)^M .
+> $$
+>
+> For continuity, $j(x' - y) - j(x - y) = \int_0^1ds\,(x' - x)\cdot\nabla j(x + s(x' - x) - y)$, so the same estimate applied to $\partial_ij$ gives $\|\varphi_{x'} - \varphi_x\|_{\alpha,\beta} \le |x' - x|\,C''(1 + |x| + |x' - x|)^{|\alpha|} \to 0$ as $x' \to x$, and $(D \ast j)(x') \to (D \ast j)(x)$ by the bound on $D$.
+>
+> *(b) Riemann sums converge in $\mathcal S$.* Write $g = \tilde\varphi \in \mathcal S$. For $0 < h \le 1$ and $n \in \mathbb Z^4$ let $Q_n$ be the cube of side $h$ with corner $hn$, and put $S_h(y) = \sum_nh^4\,j(hn - y)\,g(hn)$, $I(y) = \int d^4x\,j(x - y)\,g(x)$. Fix $\alpha$, $\beta$ and let $F(x, y) = y^\alpha\partial_y^\beta\bigl[j(x - y)\bigr]g(x)$. By the inequality of (a) and the decay of $g$ and $\nabla g$, $|F(x, y)| + |\nabla_xF(x, y)| \le A(1 + |x|)^{-5}$ for all $x$, $y$; with this majorant the derivatives $\partial_y^\beta$ pass under the sum and the integral ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], 2), and
+>
+> $$
+> y^\alpha\partial_y^\beta\bigl[S_h - I\bigr](y) = \sum_n\int_{Q_n}d^4x\,\bigl[F(hn, y) - F(x, y)\bigr] .
+> $$
+>
+> For $x \in Q_n$, $|x - hn| \le 2h$ (the diagonal of the cube), so $|F(hn, y) - F(x, y)| \le 2h\sup_{Q_n}|\nabla_xF(\cdot, y)| \le 2hA\sup_{x'' \in Q_n}(1 + |x''|)^{-5} \le 2hA\,3^5(1 + |x|)^{-5}$; the last step uses $1 + |x''| \ge (1 + |x|)/3$ for two points at distance at most $2$ (if $|x| \le 2$ the right side is at most $1$; if $|x| > 2$, $1 + |x''| \ge |x| - 1 \ge (1 + |x|)/3$). Hence
+>
+> $$
+> \|S_h - I\|_{\alpha,\beta} \le 2h\,3^5A\int\frac{d^4x}{(1 + |x|)^5} \longrightarrow 0 \qquad (h \to 0) ,
+> $$
+>
+> the integral being finite ($2\pi^2\int_0^\infty r^3dr/(1 + r)^5$). The same majorant shows that the partial sums of $S_h$ converge to $S_h$ in $\mathcal S$ (the tail is at most $3^5A\int_{|x| \ge \rho}d^4x\,(1 + |x|)^{-5}$), so by linearity and continuity of $D$, $D[S_h] = \sum_nh^4\,g(hn)\,(D \ast j)(hn)$.
+>
+> *(c) The limit.* By (b), $D[S_h] \to D[I]$. On the other side, $G = g\cdot(D \ast j)$ is continuous with $|G(x)| \le A'(1 + |x|)^{-5}$ by (a), and $\sum_nh^4G(hn) = \int d^4x\,G_h(x)$ with the step function $G_h = G(hn)$ on $Q_n$; $G_h(x) \to G(x)$ for every $x$ by continuity, and $|G_h(x)| \le 3^5A'(1 + |x|)^{-5}$, so by dominated convergence ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]) $\sum_nh^4G(hn) \to \int d^4x\,G(x)$. Therefore $\int d^4x\,D[j(x - \cdot)]\,\tilde\varphi(x) = D\bigl[\int d^4x\,j(x - \cdot)\,\tilde\varphi(x)\bigr]$.
 >
 > **What the derivation shows.**
 > - These are the precise conditions behind the rules of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]: the derivative rule always holds, the convolution rule whenever one factor is a test function, as every physical source is.
@@ -226,50 +257,9 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 
 ^der-ca-3-5
 
-*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]]
+*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^lem-ca-2-1|Lemma §CA.2.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]]
 
 ## Tricks in mode computations
-
-> [!theorem] Theorem §CA.3.6: Exchanging the Space and Momentum Integrals
-> Let $A, B \in \mathcal S(\mathbb R^3)$ (wave packets), $a(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}A(\mathbf p)e^{i\mathbf p\cdot\mathbf x}$ and $b(\mathbf x) = \int\frac{d^3q}{(2\pi)^3}B(\mathbf q)e^{i\mathbf q\cdot\mathbf x}$. Then, every integral converging absolutely,
->
-> $$
-> \int d^3x\,a(\mathbf x)\,b(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\,A(\mathbf p)\,B(-\mathbf p) .
-> $$
->
-> The physicists' route (exchange the order, do $\int d^3x$ first to get $(2\pi)^3\delta^3(\mathbf p + \mathbf q)$, then set $\mathbf q = -\mathbf p$) computes the same number. Phases $e^{\mp iE_{\mathbf p}t}$ ride along inside $A$, $B$ (the split-exponential rule). For coefficients that are not wave packets, such as $\hat a_{\mathbf p}$, the identity holds after smearing them with test functions.
->
-> *Source: the user's PHY 513 notes, Ch. 4 §4.3 (rules 1–3 of "The six rules"; Caution "Where the errors live") · justified here (standard: Fubini)*
-
-^thm-ca-3-6
-
-> [!derivation]- Derivation
-> **Step 1** (wave packets in space). $a$ and $b$ are inverse transforms of Schwartz functions, hence Schwartz ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], 1); $ab \in \mathcal S \subset L^1$, so the left side converges absolutely.
->
-> **Step 2** (insert $b$, exchange). $\int d^3x\,a(\mathbf x)\,b(\mathbf x) = \int d^3x\,a(\mathbf x)\int\frac{d^3q}{(2\pi)^3}B(\mathbf q)e^{i\mathbf q\cdot\mathbf x}$. Since $\int\!\!\int d^3x\,d^3q\,|a(\mathbf x)||B(\mathbf q)| = \|a\|_{L^1}\|B\|_{L^1} < \infty$, Fubini ([[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]]) gives
->
-> $$
-> = \int\frac{d^3q}{(2\pi)^3}B(\mathbf q)\int d^3x\,a(\mathbf x)\,e^{i\mathbf q\cdot\mathbf x} .
-> $$
->
-> **Step 3** (the $\mathbf x$-integral is a transform). $\int d^3x\,a(\mathbf x)e^{i\mathbf q\cdot\mathbf x} = \int d^3x\,a(\mathbf x)e^{-i(-\mathbf q)\cdot\mathbf x} = \tilde a(-\mathbf q) = A(-\mathbf q)$, by inversion ($a = \check A$, so $\tilde a = A$).
->
-> **Step 4** (relabel). $\int\frac{d^3q}{(2\pi)^3}B(\mathbf q)A(-\mathbf q)$; substitute $\mathbf q = -\mathbf p$ (Jacobian $|\det(-\mathbb 1)| = 1$, $\mathbb R^3 \to \mathbb R^3$; [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], on balls of growing radius; the relabelling rule stated next as [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1): $\int\frac{d^3p}{(2\pi)^3}A(\mathbf p)B(-\mathbf p)$.
->
-> **Step 5** (the physicists' route). Formally $\int d^3x\int\frac{d^3p}{(2\pi)^3}\frac{d^3q}{(2\pi)^3}A(\mathbf p)B(\mathbf q)e^{i(\mathbf p + \mathbf q)\cdot\mathbf x}$; the $\mathbf x$-integral is $(2\pi)^3\delta^3(\mathbf p + \mathbf q)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], a distribution in $\mathbf p + \mathbf q$ paired with the test function $A(\mathbf p)B(\mathbf q)$ at fixed $\mathbf p$), and the $\mathbf q$-integral sets $\mathbf q = -\mathbf p$: $\int\frac{d^3p}{(2\pi)^3}A(\mathbf p)B(-\mathbf p)$, the same result. Steps 2–4 are the proof that this bookkeeping is right.
->
-> **Step 6** (with time; the split-exponential rule). At fixed $t$, put $A(\mathbf p) = \alpha(\mathbf p)e^{\mp iE_{\mathbf p}t}$ and $B(\mathbf q) = \beta(\mathbf q)e^{\mp iE_{\mathbf q}t}$; these are still Schwartz in $\mathbf p$ (for $m > 0$, $E_{\mathbf p}$ is smooth and its derivatives grow at most polynomially). After Step 4, $B(-\mathbf p)$ carries $E_{-\mathbf p} = E_{\mathbf p}$, since $E$ depends on $|\mathbf p|$ only, so the phases combine to $e^{\mp2iE_{\mathbf p}t}$, or to $1$ when one phase is conjugated: "the delta equates the frequencies".
->
-> ⚑ By-product: when $A$ or $B$ is an unsmeared operator coefficient such as $\hat a_{\mathbf p}$, the identity holds as an identity of operator-valued distributions ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]); a product of two such coefficients at the same momentum, left unsmeared, is where a $\delta^3(\mathbf 0)$ appears → [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 3.
->
-> **What the derivation shows.**
-> - The exchange of integrals is Fubini for wave packets; the delta function is bookkeeping for one Fourier inversion.
-> - Time phases ride along, and $E_{-\mathbf p} = E_{\mathbf p}$ is what makes the surviving phase $e^{\mp2iE_{\mathbf p}t}$ or $1$.
-> - Assumption used: absolute integrability, i.e. wave packets; for plane-wave coefficients the identity is read after smearing.
-
-^der-ca-3-6
-
-*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
 
 > [!theorem] Theorem §CA.3.7: Changes of Integration Variable: Relabelling, Shifting, Rescaling, Rotating
 > For an integral over all of $\mathbb R^n$ that converges absolutely, or for the pairing of a tempered distribution with a test function ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]):
@@ -303,6 +293,47 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 ^der-ca-3-7
 
 *Uses:* [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]
+
+> [!theorem] Theorem §CA.3.6: Exchanging the Space and Momentum Integrals
+> Let $A, B \in \mathcal S(\mathbb R^3)$ (wave packets), $a(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}A(\mathbf p)e^{i\mathbf p\cdot\mathbf x}$ and $b(\mathbf x) = \int\frac{d^3q}{(2\pi)^3}B(\mathbf q)e^{i\mathbf q\cdot\mathbf x}$. Then, every integral converging absolutely,
+>
+> $$
+> \int d^3x\,a(\mathbf x)\,b(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\,A(\mathbf p)\,B(-\mathbf p) .
+> $$
+>
+> The physicists' route (exchange the order, do $\int d^3x$ first to get $(2\pi)^3\delta^3(\mathbf p + \mathbf q)$, then set $\mathbf q = -\mathbf p$) computes the same number. Phases $e^{\mp iE_{\mathbf p}t}$ ride along inside $A$, $B$ (the split-exponential rule). For coefficients that are not wave packets, such as $\hat a_{\mathbf p}$, the identity holds after smearing them with test functions.
+>
+> *Source: the user's PHY 513 notes, Ch. 4 §4.3 (rules 1–3 of "The six rules"; Caution "Where the errors live") · justified here (standard: Fubini)*
+
+^thm-ca-3-6
+
+> [!derivation]- Derivation
+> **Step 1** (wave packets in space). $a$ and $b$ are inverse transforms of Schwartz functions, hence Schwartz ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], 1); $ab \in \mathcal S \subset L^1$, so the left side converges absolutely.
+>
+> **Step 2** (insert $b$, exchange). $\int d^3x\,a(\mathbf x)\,b(\mathbf x) = \int d^3x\,a(\mathbf x)\int\frac{d^3q}{(2\pi)^3}B(\mathbf q)e^{i\mathbf q\cdot\mathbf x}$. Since $\int\!\!\int d^3x\,d^3q\,|a(\mathbf x)||B(\mathbf q)| = \|a\|_{L^1}\|B\|_{L^1} < \infty$, Fubini ([[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]]) gives
+>
+> $$
+> = \int\frac{d^3q}{(2\pi)^3}B(\mathbf q)\int d^3x\,a(\mathbf x)\,e^{i\mathbf q\cdot\mathbf x} .
+> $$
+>
+> **Step 3** (the $\mathbf x$-integral is a transform). $\int d^3x\,a(\mathbf x)e^{i\mathbf q\cdot\mathbf x} = \int d^3x\,a(\mathbf x)e^{-i(-\mathbf q)\cdot\mathbf x} = \tilde a(-\mathbf q) = A(-\mathbf q)$, by inversion ($a = \check A$, so $\tilde a = A$).
+>
+> **Step 4** (relabel). $\int\frac{d^3q}{(2\pi)^3}B(\mathbf q)A(-\mathbf q)$; substitute $\mathbf q = -\mathbf p$ (Jacobian $|\det(-\mathbb 1)| = 1$, $\mathbb R^3 \to \mathbb R^3$; [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], on balls of growing radius; the relabelling rule, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1): $\int\frac{d^3p}{(2\pi)^3}A(\mathbf p)B(-\mathbf p)$.
+>
+> **Step 5** (the physicists' route). Formally $\int d^3x\int\frac{d^3p}{(2\pi)^3}\frac{d^3q}{(2\pi)^3}A(\mathbf p)B(\mathbf q)e^{i(\mathbf p + \mathbf q)\cdot\mathbf x}$; the $\mathbf x$-integral is $(2\pi)^3\delta^3(\mathbf p + \mathbf q)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], a distribution in $\mathbf p + \mathbf q$ paired with the test function $A(\mathbf p)B(\mathbf q)$ at fixed $\mathbf p$), and the $\mathbf q$-integral sets $\mathbf q = -\mathbf p$: $\int\frac{d^3p}{(2\pi)^3}A(\mathbf p)B(-\mathbf p)$, the same result. Steps 2–4 are the proof that this bookkeeping is right.
+>
+> **Step 6** (with time; the split-exponential rule). At fixed $t$, put $A(\mathbf p) = \alpha(\mathbf p)e^{\mp iE_{\mathbf p}t}$ and $B(\mathbf q) = \beta(\mathbf q)e^{\mp iE_{\mathbf q}t}$; these are still Schwartz in $\mathbf p$ (for $m > 0$, $E_{\mathbf p}$ is smooth and its derivatives grow at most polynomially). After Step 4, $B(-\mathbf p)$ carries $E_{-\mathbf p} = E_{\mathbf p}$, since $E$ depends on $|\mathbf p|$ only, so the phases combine to $e^{\mp2iE_{\mathbf p}t}$, or to $1$ when one phase is conjugated: "the delta equates the frequencies".
+>
+> ⚑ By-product: when $A$ or $B$ is an unsmeared operator coefficient such as $\hat a_{\mathbf p}$, the identity holds as an identity of operator-valued distributions ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]); a product of two such coefficients at the same momentum, left unsmeared, is where a $\delta^3(\mathbf 0)$ appears → [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 3.
+>
+> **What the derivation shows.**
+> - The exchange of integrals is Fubini for wave packets; the delta function is bookkeeping for one Fourier inversion.
+> - Time phases ride along, and $E_{-\mathbf p} = E_{\mathbf p}$ is what makes the surviving phase $e^{\mp2iE_{\mathbf p}t}$ or $1$.
+> - Assumption used: absolute integrability, i.e. wave packets; for plane-wave coefficients the identity is read after smearing.
+
+^der-ca-3-6
+
+*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
 
 > [!theorem] Theorem §CA.3.8: Angular Integrals
 > 1. For a radial $f$ and $r = |\mathbf r|$: $\displaystyle\int d^3p\,f(|\mathbf p|)\,e^{i\mathbf p\cdot\mathbf r} = \frac{4\pi}{r}\int_0^\infty dp\,p\,f(p)\sin(pr)$.
@@ -361,7 +392,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 >
 > **Step 3** (part 2: hyperspherical coordinates). $p_E = p(\cos\chi, \sin\chi\cos\theta, \sin\chi\sin\theta\cos\varphi, \sin\chi\sin\theta\sin\varphi)$ with $\chi, \theta \in [0, \pi]$, $\varphi \in [0, 2\pi)$ has $d^4p_E = p^3\sin^2\chi\sin\theta\,dp\,d\chi\,d\theta\,d\varphi$ (check: $\int\sin^2\chi\,d\chi\int\sin\theta\,d\theta\int d\varphi = \frac\pi2\cdot2\cdot2\pi = 2\pi^2$, the area of the unit 3-sphere). Rotate the dummy variable so that $x_E$ lies along $\chi = 0$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 4): $p_E\cdot x_E = pR\cos\chi$. The $\theta$ and $\varphi$ integrals give $4\pi$.
 >
-> **Step 4** (part 2: the $\chi$ integral). Poisson's integral, $J_\nu(z) = \frac{(z/2)^\nu}{\Gamma(\nu + \frac12)\Gamma(\frac12)}\int_0^\pi\cos(z\cos\chi)\sin^{2\nu}\chi\,d\chi$ (DLMF §10.9; the $\sin(z\cos\chi)$ part of $e^{iz\cos\chi}$ integrates to zero, being odd under $\chi \to \pi - \chi$), with $\nu = 1$ and $\Gamma(\frac32)\Gamma(\frac12) = \frac\pi2$, gives $\int_0^\pi\sin^2\chi\,e^{ipR\cos\chi}d\chi = \pi\frac{J_1(pR)}{pR}$.
+> **Step 4** (part 2: the $\chi$ integral). Poisson's integral, $J_\nu(z) = \frac{(z/2)^\nu}{\Gamma(\nu + \frac12)\Gamma(\frac12)}\int_0^\pi\cos(z\cos\chi)\sin^{2\nu}\chi\,d\chi$ ($\Gamma$: [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-n1|Def. §CA.5.n1]]) (DLMF §10.9; the $\sin(z\cos\chi)$ part of $e^{iz\cos\chi}$ integrates to zero, being odd under $\chi \to \pi - \chi$), with $\nu = 1$ and $\Gamma(\frac32)\Gamma(\frac12) = \frac\pi2$, gives $\int_0^\pi\sin^2\chi\,e^{ipR\cos\chi}d\chi = \pi\frac{J_1(pR)}{pR}$.
 >
 > **Step 5** (part 2: assemble). $\int_0^\infty p^3dp\,F(p)\cdot4\pi\cdot\pi\frac{J_1(pR)}{pR} = \frac{4\pi^2}{R}\int_0^\infty p^2F(p)J_1(pR)\,dp$. Absolute convergence: $|J_1(z)/z| \le \frac12$, so the integrand is bounded by $\frac12p^3|F|$.
 >

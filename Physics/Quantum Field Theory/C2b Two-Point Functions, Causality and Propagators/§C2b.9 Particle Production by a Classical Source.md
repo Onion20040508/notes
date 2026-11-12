@@ -204,7 +204,7 @@ Every integral over the source below converges because the source is a test func
 > [!example] Example §C2b.9.1: A Point Source Switched On and Off
 > Let $j(x) = g\,\delta^3(\mathbf x)\,\frac{e^{-t^2/2T^2}}{\sqrt{2\pi}\,T}$: a point source of total strength $g$ (dimension $1/\text{mass}$), switched on and off over a time $T$. Find the mean number of particles produced, and its limits $mT \ll 1$ and $mT \gg 1$.
 >
-> **Step 1** (the transform). $\tilde j(p) = \int dt\,e^{iEt}\frac{e^{-t^2/2T^2}}{\sqrt{2\pi}T}\int d^3y\,e^{-i\mathbf p\cdot\mathbf y}g\,\delta^3(\mathbf y) = g\,e^{-E^2T^2/2}$, by the Gaussian transform ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]] with $a = 1/2T^2$, $b = iE$), at $E = E_{\mathbf p}$; the spatial integral is δ acting on the smooth function $e^{-i\mathbf p\cdot\mathbf y}$ ([[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]), which is why a source that is not a test function in space still has a transform here.
+> **Step 1** (the transform). $\tilde j(p) = \int dt\,e^{iEt}\frac{e^{-t^2/2T^2}}{\sqrt{2\pi}T}\int d^3y\,e^{-i\mathbf p\cdot\mathbf y}g\,\delta^3(\mathbf y) = g\,e^{-E^2T^2/2}$, by the Gaussian transform ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-n1|Theorem §CA.5.n1]] with $a = 1/2T^2$, $b = iE$; the same formula is [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]), at $E = E_{\mathbf p}$; the spatial integral is δ acting on the smooth function $e^{-i\mathbf p\cdot\mathbf y}$ ([[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]]), which is why a source that is not a test function in space still has a transform here.
 >
 > **Step 2** (the number). By Theorem §C2b.9.4, with $d^3p = 4\pi p^2dp$ and $p\,dp = E\,dE$, so $\frac{p^2dp}{E} = \sqrt{E^2 - m^2}\,dE$:
 >
@@ -237,7 +237,7 @@ Every integral over the source below converges because the source is a test func
 > Proved in CA; each line says what the physics above relies on.
 >
 > - [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]] (test functions) is the class the classical source belongs to; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]] (the transform preserves $\mathcal S$) turns that into the on-shell decay of $\tilde j$ that makes $\bar N$, $\Delta E$ and the coherent out-state finite (Theorem §C2b.9.1).
-> - [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]] — δ acts on smooth functions: a source that is a delta function in space still has an on-shell transform.
+> - [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]] — δ acts on smooth functions: a source that is a delta function in space still has an on-shell transform.
 > - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]] — derivatives of $D_R[j(x - \cdot)]$ fall on the test function $j$: the retarded field is smooth.
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]] — the Fourier convention of $\tilde j(p)$.
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] (reality, $\tilde j(-p) = \overline{\tilde j(p)}$) pairs the creation and annihilation shifts; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]] ($\tilde\delta = 1$) shows the instantaneous point source is outside the class.

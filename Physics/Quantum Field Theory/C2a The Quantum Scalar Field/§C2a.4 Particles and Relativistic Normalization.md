@@ -213,7 +213,7 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 ^thm-c2a-4-4
 
 > [!derivation]- Derivation
-> **1. A reproducing kernel.** For a scalar test function $g$ on the shell ($g \in \mathcal S$, so that $\delta^3$ acts on it, [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]), insert $1 = 2E_{\mathbf p}/2E_{\mathbf p}$:
+> **1. A reproducing kernel.** For a scalar test function $g$ on the shell ($g \in \mathcal S$, so that $\delta^3$ acts on it, [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]]), insert $1 = 2E_{\mathbf p}/2E_{\mathbf p}$:
 >
 > $$
 > g(\mathbf q) = \int d^3p\,\delta^3(\mathbf p - \mathbf q)\,g(\mathbf p) = \int\frac{d^3p}{2E_{\mathbf p}}\,\bigl[2E_{\mathbf p}\,\delta^3(\mathbf p - \mathbf q)\bigr]\,g(\mathbf p) .
@@ -239,7 +239,7 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 
 ^der-c2a-4-4
 
-*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-9|Def. §CA.2.9]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]
+*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]], [[§CA.2 Generalized Functions#^def-ca-2-9|Def. §CA.2.9]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]
 
 > [!derivation]- Derivation (second route: boosting the delta function directly)
 > **1. The boost.** Along $z$ with velocity $\beta$: $p_3' = \gamma(p_3 + \beta E)$, $E' = \gamma(E + \beta p_3)$, $p_1' = p_1$, $p_2' = p_2$, with $E = E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$ on the shell.
@@ -415,7 +415,7 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 > Proved in CA; each line says what the physics above relies on.
 >
 > - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], 1 — dominated convergence for the limit of the shrinking packets (Theorem §C2a.4.7).
-> - [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]] — $\delta^3$ acts on test functions on the shell, and a distribution is fixed by its action on them: the overlap as a reproducing kernel.
+> - [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-n4|Def. §CA.2.n4]] — $\delta^3$ acts on test functions on the shell, and a distribution is fixed by its action on them: the overlap as a reproducing kernel.
 > - [[§CA.2 Generalized Functions#^def-ca-2-9|Def. §CA.2.9]] — what "Lorentz invariant" means for a distribution: $\theta(p^0)\delta(p^2 - m^2)$ and $2E_{\mathbf p}\delta^3(\mathbf p - \mathbf q)$.
 > - [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], 3 — $\delta^3$ is a tempered distribution, so the kernel $\langle\mathbf p|\mathbf q\rangle$ is.
 > - [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 3 — nascent deltas: packets concentrating at one momentum, and fields smeared at a point.
