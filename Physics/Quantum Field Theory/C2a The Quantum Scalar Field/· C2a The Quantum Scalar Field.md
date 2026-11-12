@@ -21,7 +21,7 @@ tags: [chapter, quantum-field-theory]
 
 ## Principles
 - [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|§C2a.1.2]] Equal-Time Canonical Commutation Relations
-- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|§C2a.3.3]] The Vacuum and the Fock Space
+- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|§C2a.3.2]] The Vacuum and the Fock Space
 
 ## Theorems
 - [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|§C2a.1.3]] The Canonical Relations Are Identities after Smearing
@@ -33,7 +33,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|§C2a.2.6]] The Mode Algebra
 - [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|§C2a.2.7]] The Mode Algebra Smeared
 - [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|§C2a.3.1]] Hamiltonian in Mode Form
-- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|§C2a.3.2]] δ³(0) Has No Value; in a Box It Is the Volume
+- [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|§C2a.3.3]] δ³(0) Has No Value; in a Box It Is the Volume
 - [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|§C2a.3.4]] The Zero-Point Energy
 - [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|§C2a.3.5]] Momentum in Mode Form
 - [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-6|§C2a.3.6]] The Normal-Ordered Hamiltonian Acts on Wave Packets

@@ -1302,7 +1302,7 @@ $T^\mu{}_\nu = \sum_a\frac{\partial\mathcal L}{\partial(\partial_\mu\phi_a)}\par
 > - [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^cau-c1b-7-1|§C1b.7, Caution: One picture at a time; the sign of the displacement]]; the table of canonical tensors [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-7-3|§C1b.7, Remark: The canonical tensor of the standard fields]].
 
 ### [B] Angular-momentum and boost charges
-$J^{\nu\rho} = \int d^3x\,\mathcal M^{0\nu\rho} = L^{\nu\rho} + S^{\nu\rho}$; $J^i = \frac12\varepsilon_{ijk}J^{jk}$, $\mathbf J = (J^{23}, J^{31}, J^{12})$; boost charges $K^i = J^{i0}$, see Definition [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|§C1b.8.1]] Angular-Momentum and Boost Charges. *Source: the user's notes Ch. 3 §3.5 · Yu §1.7.3*
+$J^{\nu\rho} = \int d^3x\,\mathcal M^{0\nu\rho} = L^{\nu\rho} + S^{\nu\rho}$; $J^i = \frac12\varepsilon_{ijk}J^{jk}$, $\mathbf J = (J^{23}, J^{31}, J^{12})$; boost charges $K^i = J^{i0}$, see Definition [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-2|§C1b.8.2]] Angular-Momentum and Boost Charges. *Source: the user's notes Ch. 3 §3.5 · Yu §1.7.3*
 
 ^nd-def-c1b-8-1
 
@@ -1529,7 +1529,7 @@ $d^4x' = [1 + \partial_\mu(\delta x^\mu)]d^4x$; the correction vanishes for tran
 - [ ] Q4 **[why]** What is the correction for a scale transformation $\delta x^\mu = -\alpha x^\mu$?
 
 > [!tip]- Hints: route in the notes
-> - Derivation of Theorem [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-2|§C1b.7.2]] The Volume Element to First Order, steps 1–4; [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^rem-c1b-8-4|§C1b.8, ★ Remark: Dilatations]] for Q4.
+> - Derivation of Theorem [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-2|§C1b.7.2]] The Volume Element to First Order, steps 1–4; [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|★ Theorem §C1b.8.5]] for Q4.
 
 ### [B] Noether's theorem, general form ★
 If the point-moving transformation is a symmetry, $j^\mu = \sum_a\frac{\partial\mathcal L}{\partial(\partial_\mu\phi_a)}\bar\delta\phi_a + \mathcal L\,\delta x^\mu$ is conserved on shell, see Theorem [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-3|§C1b.7.3]] Noether's Theorem, General Form. *Source: Yu §1.7.1 · the user's notes Ch. 3 §3.5*
@@ -1713,7 +1713,7 @@ Canonical $T^{\mu\nu} = -F^{\mu\lambda}\partial^\nu A_\lambda + \frac14g^{\mu\nu
 → drilled as [[PHY 513 PS Drill#^ps2-4-c|PS2.4(c)]], [[PHY 513 PS Drill#^ps2-4-d|PS2.4(d)]] and [[PHY 513 PS Drill#^ps2-4-e|PS2.4(e)]]
 
 ### [B] Dilatations ★
-**[exercise in the user's notes, Ch. 3]** "Scale transformation (not a symmetry when $m \ne 0$, but a good exercise)." With $\Delta\phi = \phi + x^\mu\partial_\mu\phi$, $\delta\mathcal L = \alpha\partial_\nu(x^\nu\mathcal L) + \alpha m^2\phi^2$: for $m = 0$ a symmetry with $\mathcal J^\mu = x^\mu\mathcal L$ and current $x_\nu T^{\mu\nu} + \phi\partial^\mu\phi$; for $m \ne 0$ broken by the mass, see [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^rem-c1b-8-4|§C1b.8, ★ Remark: Dilatations]]. *Source: the user's notes Ch. 3 §3.5 (the exercise is the user's notes', not Larsen's)*
+**[exercise in the user's notes, Ch. 3]** "Scale transformation (not a symmetry when $m \ne 0$, but a good exercise)." With $\Delta\phi = \phi + x^\mu\partial_\mu\phi$, $\delta\mathcal L = \alpha\partial_\nu(x^\nu\mathcal L) + \alpha m^2\phi^2$: for $m = 0$ a symmetry with $\mathcal J^\mu = x^\mu\mathcal L$ and current $x_\nu T^{\mu\nu} + \phi\partial^\mu\phi$; for $m \ne 0$ broken by the mass, see [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|★ Theorem §C1b.8.5]]. *Source: the user's notes Ch. 3 §3.5 (the exercise is the user's notes', not Larsen's)*
 
 ^nd-rem-c1b-8-4
 
@@ -1726,7 +1726,7 @@ Canonical $T^{\mu\nu} = -F^{\mu\lambda}\partial^\nu A_\lambda + \frac14g^{\mu\nu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K12, K8
-> - [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^rem-c1b-8-4|§C1b.8, ★ Remark: Dilatations]]; Theorem [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|§C1b.5.1]] Generators of the Standard Transformations (scale row); the not-a-divergence argument of Example [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-1|§C1b.6.1]] Shift Symmetry of the Massless Field.
+> - [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|★ Theorem §C1b.8.5]]; Theorem [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|§C1b.5.1]] Generators of the Standard Transformations (scale row); the not-a-divergence argument of Example [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-1|§C1b.6.1]] Shift Symmetry of the Massless Field.
 
 # T5. Canonical quantization of the scalar: modes, H, P, Q, states
 
@@ -1817,7 +1817,7 @@ $\hat\phi(f) = \int d^3x\,f(\mathbf x)\hat\phi(\mathbf x)$, $\hat\pi(g)$ likewis
 
 ### [B] Two bookkeeping rules for mode integrals
 
-At fixed time, $\int d^3x\,e^{\mp i(p \pm q)\cdot x} = e^{\mp i(E_{\mathbf p} \pm E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p \pm \mathbf q)$ (split exponentials), and $\mathbf p \to -\mathbf p$ may be substituted in one term of an integral over all $\mathbf p$ (relabel), see [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|§C2a.2, Remark: Two bookkeeping rules for mode integrals]]. *Source: the user's notes Ch. 4 §4.3 ("Tools, recalled") · Lecture 4 (Sep 14), board ("change my integration variable from p to minus p")*
+At fixed time, $\int d^3x\,e^{\mp i(p \pm q)\cdot x} = e^{\mp i(E_{\mathbf p} \pm E_{\mathbf q})t}(2\pi)^3\delta^3(\mathbf p \pm \mathbf q)$ (split exponentials), and $\mathbf p \to -\mathbf p$ may be substituted in one term of an integral over all $\mathbf p$ (relabel), see [[§C2a.2 Mode Expansion and the Mode Algebra#^lem-c2a-2-1|Lemma §C2a.2.1]]. *Source: the user's notes Ch. 4 §4.3 ("Tools, recalled") · Lecture 4 (Sep 14), board ("change my integration variable from p to minus p")*
 
 ^nd-rem-c2a-2-2
 
@@ -1844,7 +1844,7 @@ $(f, g) = i\int d^3x\,(f^\ast\partial_tg - (\partial_tf^\ast)g)$ on any time sli
 
 > [!tip]- Hints: route in the notes
 > - Technique: K10 (extracting mode operators).
-> - Step 1: Theorem [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|§C2a.2.3]] Conservation and Orthonormality of the Modes; [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-4|§C2a.2, Remark: Why this inner product, and why it is indefinite]] (projection, Noether charge, indefiniteness).
+> - Step 1: Theorem [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|§C2a.2.3]] Conservation and Orthonormality of the Modes; [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-3|§C2a.2, Remark: Why this inner product, and why it is indefinite]] (projection, Noether charge, indefiniteness).
 
 ### [B] Smeared mode operators
 
@@ -1862,7 +1862,7 @@ $\hat a(g) = \int\frac{d^3p}{(2\pi)^3}\overline{g(\mathbf p)}\hat a_{\mathbf p}$
 
 ### [B] The vacuum and the Fock space
 
-There is a normalized $|0\rangle$, unique up to a phase, with $\hat a_{\mathbf p}|0\rangle = 0$ for all $\mathbf p$; the state space is the Fock space $\bigoplus_n\operatorname{Sym}^n\mathcal H_1$ it generates, with inner products from the mode algebra, see Principle [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|§C2a.3.3]] The Vacuum and the Fock Space. *Source: Lecture 4 (Sep 14), slide "Spectrum, Ground State" · PS §2.3, p. 22 · the user's notes Ch. 4 §4.8*
+There is a normalized $|0\rangle$, unique up to a phase, with $\hat a_{\mathbf p}|0\rangle = 0$ for all $\mathbf p$; the state space is the Fock space $\bigoplus_n\operatorname{Sym}^n\mathcal H_1$ it generates, with inner products from the mode algebra, see Principle [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|§C2a.3.2]] The Vacuum and the Fock Space. *Source: Lecture 4 (Sep 14), slide "Spectrum, Ground State" · PS §2.3, p. 22 · the user's notes Ch. 4 §4.8*
 
 ^nd-pr-c2a-3-3
 
@@ -2030,7 +2030,7 @@ Every real solution of $(\partial^2 + m^2)\phi = 0$ is $\phi = \int\frac{d^3p}{(
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
 > - Step 1: derivation steps 1–4 (plane waves, general solution, change of variables, reality); steps 5–7 (momentum density, fixed time, quantize).
-> - Step 2: [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-3|§C2a.2, Remark: Posited or derived]] (posited or derived); the ansatz is verified by the second route of Theorem [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|§C2a.2.6]] The Mode Algebra.
+> - Step 2: [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|§C2a.2, Remark: Posited or derived]] (posited or derived); the ansatz is verified by the second route of Theorem [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|§C2a.2.6]] The Mode Algebra.
 > - Step 3: normalization: Definition [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|§C2a.4.1]] Relativistic Normalization, Theorem [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|§C2a.4.6]] The Field Creates a Particle at a Point; register row "Mode expansion".
 
 ### [B] Conservation and orthonormality of the modes ★
@@ -2129,7 +2129,7 @@ $\hat H$ read in the order written is $\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf
 
 ### [C] δ³(0) has no value; in a box it is the volume ★
 
-The constant $(2\pi)^3\delta^3(\mathbf 0)$ left by reordering is δ at its singular point; in a periodic box with cutoff $\Lambda$, $E_0(V, \Lambda) = \frac12\sum_{|\mathbf k| < \Lambda}E_{\mathbf k}$ and $E_0/V \to \int_{|\mathbf p| < \Lambda}\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$, see Theorem [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|§C2a.3.2]] δ³(0) Has No Value; in a Box It Is the Volume. *Source: the user's notes Ch. 4 §4.6, §4.5, Ch. 6 §6.2*
+The constant $(2\pi)^3\delta^3(\mathbf 0)$ left by reordering is δ at its singular point; in a periodic box with cutoff $\Lambda$, $E_0(V, \Lambda) = \frac12\sum_{|\mathbf k| < \Lambda}E_{\mathbf k}$ and $E_0/V \to \int_{|\mathbf p| < \Lambda}\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$, see Theorem [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|§C2a.3.3]] δ³(0) Has No Value; in a Box It Is the Volume. *Source: the user's notes Ch. 4 §4.6, §4.5, Ch. 6 §6.2*
 
 ^nd-thm-c2a-3-2
 
@@ -3883,7 +3883,7 @@ With smooth regularizations, $\theta_\varepsilon\delta_\varepsilon \to c\delta$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; Theorem [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|§C2a.3.2]] δ³(0) Has No Value; in a Box It Is the Volume; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|§C2b.6.1]] Properties of Time Ordering; [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-1|§C2b.6, Caution: The step function at zero]].
+> - Step 1: derivation; Theorem [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|§C2a.3.3]] δ³(0) Has No Value; in a Box It Is the Volume; Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|§C2b.6.1]] Properties of Time Ordering; [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-1|§C2b.6, Caution: The step function at zero]].
 
 ### [C] Box regularization of δ³(0) ★
 
@@ -3897,7 +3897,7 @@ In a periodic box of volume $V$, $\int_Vd^3x\,e^{i(\mathbf k - \mathbf k')\cdot\
 
 > [!tip]- Hints: route in the notes
 > - Technique: none.
-> - Step 1: derivation; Theorem [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|§C2a.3.2]] δ³(0) Has No Value; in a Box It Is the Volume.
+> - Step 1: derivation; Theorem [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|§C2a.3.3]] δ³(0) Has No Value; in a Box It Is the Volume.
 
 ### [C] The kernel theorem ★
 
@@ -3996,7 +3996,7 @@ For wave packets $A, B \in \mathcal S$, $\int d^3x\,a(\mathbf x)b(\mathbf x) = \
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Step 1: derivation; [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-2|§C2a.2, Remark: Two bookkeeping rules for mode integrals]].
+> - Step 1: derivation; [[§C2a.2 Mode Expansion and the Mode Algebra#^lem-c2a-2-1|Lemma §C2a.2.1]].
 
 ### [B] Changes of integration variable ★
 
@@ -8495,7 +8495,7 @@ The equal-time relations of $\hat\phi$, $\hat\pi$ and the algebra $[\hat a_{\mat
 > [!tip]- Hints: route in the notes
 > - Technique: K10 (KG product), K9.
 > - Step 1: the two derivations of Theorem [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|§C2a.2.6]] The Mode Algebra (first: extracted operators, steps 1–5; second: Lecture 4's route, steps 1–4).
-> - Step 2: Theorem [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|§C2a.2.3]] Conservation and Orthonormality of the Modes, Theorem [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|§C2a.2.5]] Mode Extraction; general mode sets: [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-5|§C2a.2, ★ Remark: Other mode functions, Bogoliubov transformations and the vacuum]].
+> - Step 2: Theorem [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|§C2a.2.3]] Conservation and Orthonormality of the Modes, Theorem [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|§C2a.2.5]] Mode Extraction; general mode sets: [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-4|§C2a.2, ★ Remark: Other mode functions, Bogoliubov transformations and the vacuum]].
 > - Step 3: P1, step 6.
 
 ### [B] Field form ⇔ mode form of H, P and Q: three ways the number-changing terms die

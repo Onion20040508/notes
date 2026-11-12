@@ -125,7 +125,7 @@ Lecture 16 turns the heuristic by-product of Theorem §C6b.1.1 into the course's
 > \mathcal H_{n\text{-particle}} \simeq \mathcal H_{1\text{-particle}}^{\otimes n} \quad (\text{symmetrized for identical bosons: } \operatorname{Sym}^n\mathcal H_{1\text{-particle}}) ,
 > $$
 >
-> and multiparticle in and out states are formed from single-particle states. In the free theory the Fock space realizes this with $\hat a^\dagger$'s ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]); with interactions the single-particle states themselves still differ from free ones, they are "dressed" ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|Caution: "Free" means widely separated]]).
+> and multiparticle in and out states are formed from single-particle states. In the free theory the Fock space realizes this with $\hat a^\dagger$'s ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]]); with interactions the single-particle states themselves still differ from free ones, they are "dressed" ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|Caution: "Free" means widely separated]]).
 >
 > *Domain:* an assumption ("Simplifying assumption", slide 5; an axiom of axiomatic field theory); the user's notes state it as a Definition, here a principle because it is assumed, not derived; about widely separated particles at early and late times, not about the interaction region.
 >

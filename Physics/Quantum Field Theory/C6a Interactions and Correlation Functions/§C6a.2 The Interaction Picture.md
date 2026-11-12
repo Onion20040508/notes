@@ -149,7 +149,7 @@ In $\phi^4$ theory the field at the reference time is the free field, but its ti
 *Uses:* [[§C2b.1 Heisenberg Fields#^der-c2b-1-1|Derivation §C2b.1.1]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-1|Theorem §C6a.2.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]]
 
 > [!theorem] Theorem §C6a.2.3: Free-Vacuum Correlators of the Interaction-Picture Field Are the Free Ones
-> In the free vacuum $|0\rangle$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]) the two-point functions of $\hat\phi_I$ are those of the free field: $\langle0|\hat\phi_I(x)\hat\phi_I(y)|0\rangle = D_W(x - y)$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]]), $[\hat\phi_I(x), \hat\phi_I(y)] = iD(x - y)\,\mathbf 1$ ([[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|Def. §C2b.4.1]]), and
+> In the free vacuum $|0\rangle$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]]) the two-point functions of $\hat\phi_I$ are those of the free field: $\langle0|\hat\phi_I(x)\hat\phi_I(y)|0\rangle = D_W(x - y)$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]]), $[\hat\phi_I(x), \hat\phi_I(y)] = iD(x - y)\,\mathbf 1$ ([[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|Def. §C2b.4.1]]), and
 >
 > $$
 > \langle0|T\{\hat\phi_I(x)\hat\phi_I(y)\}|0\rangle = D_F(x - y) = \int\frac{d^4p}{(2\pi)^4}\,\frac{i\,e^{-ip\cdot(x - y)}}{p^2 - m^2 + i\varepsilon} ,

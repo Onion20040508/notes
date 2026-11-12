@@ -385,7 +385,7 @@ The first underbrace of the theorem, "kinematics of the initial particles" (slid
 ^thm-c6b-9-5
 
 > [!derivation]- Derivation
-> **Step 1** (completeness by sectors). The out states of different particle contents are orthogonal, and in the sector of a content with $S_{\rm id} = \prod_kn_k!$ the identity is ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]] for one particle; [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-4|Derivation §C6b.9.4]], Step 2, for $n$ identical ones)
+> **Step 1** (completeness by sectors). The out states of different particle contents are orthogonal, and in the sector of a content with $S_{\rm id} = \prod_kn_k!$ the identity is ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]], 3, for one particle; [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-4|Derivation §C6b.9.4]], Step 2, for $n$ identical ones)
 >
 > $$
 > \mathbb 1_{\rm content} = \frac{1}{S_{\rm id}}\int\prod_i\frac{d^3p_i}{(2\pi)^3\,2E_i}\;|\mathbf p_1\mathbf p_2\cdots\rangle_{\rm out}\,{}_{\rm out}\langle\mathbf p_1\mathbf p_2\cdots| , \qquad \mathbb 1 = \sum_{\text{contents}}\mathbb 1_{\rm content} .
@@ -416,7 +416,7 @@ The first underbrace of the theorem, "kinematics of the initial particles" (slid
 
 ^der-c6b-9-5
 
-*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-4|Def. §C6b.8.4]], [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-5|Def. §C6b.8.5]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]
+*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-4|Def. §C6b.8.4]], [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-5|Def. §C6b.8.5]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]
 
 > [!caution] Caution: Names for the identical-particle factor
 > These notes write $S_{\rm id} = \prod_kn_k!$, to keep it apart from the $S$-matrix, the symmetry factor and the bilinear ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]]). The user's notes write $S$; Yu writes $\mathcal S$, 末态对称性因子, and puts it into the total rate (eqs. (6.305)–(6.306)) and $\sigma = \frac{1}{\mathcal S}\int d\sigma$ (eq. (6.321)); PS give the rule in words (p. 108). Yu also writes $\mathcal S = 2$ in §7.3 (eq. (7.123)), next to the diagram symmetry factor (eq. (7.124)).

@@ -89,7 +89,7 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 > **4. Translations and Lorentz transformations.** $\partial_\mu\varepsilon^\mu = 0$. For $\delta x^\mu = \omega^\mu{}_\nu x^\nu$: $\partial_\mu(\omega^\mu{}_\nu x^\nu) = \omega^\mu{}_\nu\delta^\nu{}_\mu = \omega^\mu{}_\mu = g^{\mu\rho}\omega_{\rho\mu} = 0$, a symmetric tensor contracted with an antisymmetric one ([[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-1|Theorem §C1a.7.1]]). ⚑ By-product: Lorentz transformations preserve four-volume, the infinitesimal form of $\det\Lambda = 1$ for proper ones ([[§C1a.4 The Lorentz Group#^thm-c1a-4-1|Theorem §C1a.4.1]]).
 >
 > **What the derivation shows**
-> - For a dilatation $\delta x^\mu = \alpha x^\mu$ the correction is $4\alpha$: volume is not preserved → [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^rem-c1b-8-4|★ Remark: Dilatations]].
+> - For a dilatation $\delta x^\mu = \alpha x^\mu$ the correction is $4\alpha$: volume is not preserved → [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|★ Theorem §C1b.8.5]].
 > - Used next: step 1 of [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^der-c1b-7-3|Derivation §C1b.7.3]].
 
 ^der-c1b-7-2

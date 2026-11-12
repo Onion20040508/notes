@@ -173,7 +173,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > f(x) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\Bigl[g(p)\,e^{-ip\cdot x} + g(-p)\,e^{ip\cdot x}\Bigr]_{p^0 = E_{\mathbf p}} ,
 > $$
 >
-> the mode expansion. For the Heisenberg field, which solves the equation as an operator ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]), $g(p) = \sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], the next theorem, derived from the Hamiltonian without this one).
+> the mode expansion.
 >
 > *Model:* any solution of the free Klein–Gordon equation, c-number or operator-valued; here [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* exact, for tempered solutions, $m > 0$; the operator reading holds for the free Heisenberg field only.
 >
@@ -194,16 +194,16 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 >
 > **Step 4** (relabel the negative-energy term). Substitute $\mathbf p \to -\mathbf p$ there (Jacobian 1, $E_{-\mathbf p} = E_{\mathbf p}$; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1, in the pairing with a test function): it becomes $g(-E_{\mathbf p}, -\mathbf p)e^{iE_{\mathbf p}t - i\mathbf p\cdot\mathbf x} = g(-p)\,e^{ip\cdot x}$ with $p = (E_{\mathbf p}, \mathbf p)$. This is the stated formula.
 >
-> **Step 5** (compare with the field). Against the mode expansion of the Heisenberg field, obtained independently from the Hamiltonian in [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]] (the next theorem), $g(p)/2E_{\mathbf p} = \hat a_{\mathbf p}/\sqrt{2E_{\mathbf p}}$, so $g(p) = \sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}$; reality of $f$ gives $g(-p) = \overline{g(p)}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], 4), here $\sqrt{2E}\,\hat a^\dagger_{\mathbf p}$.
+> **Step 5** (real solutions). Reality of $f$ gives $g(-p) = \overline{g(p)}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], 4).
 >
 > **What the derivation shows.**
 > - The three-dimensional mode expansions are four-dimensional transforms restricted to the shell, and the invariant measure $d^3p/2E_{\mathbf p}$ is what the shell leaves behind.
 > - A free field has no off-shell Fourier components; a Green's function must have them ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]]), and that is where the difficulty is.
-> - Used next: the mode expansion of the Heisenberg field (Theorem §C2b.1.4), the support of homogeneous solutions in the uniqueness of $D_R$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]]) and all fundamental solutions ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]]).
+> - Used next: the mode expansion of the Heisenberg field (Theorem §C2b.1.4; the coefficient is identified there, $g(p) = \sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}$, in the paragraph after its derivation), the support of homogeneous solutions in the uniqueness of $D_R$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]]) and all fundamental solutions ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]]).
 
 ^der-c2b-1-3
 
-*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|Theorem §CA.6.7]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
+*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-1|EM Theorem §B1.2.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|Theorem §CA.6.7]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
 
 > [!theorem] Theorem §C2b.1.4: Time Dependence of the Modes; the Covariant Mode Expansion
 > 1. The Schrödinger ladder operators acquire phases: $e^{i\hat Ht}\hat a_{\mathbf p}e^{-i\hat Ht} = \hat a_{\mathbf p}\,e^{-iE_{\mathbf p}t}$ and $e^{i\hat Ht}\hat a_{\mathbf p}^\dagger e^{-i\hat Ht} = \hat a_{\mathbf p}^\dagger\,e^{iE_{\mathbf p}t}$.
@@ -214,10 +214,17 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > $$
 >
 > 3. $\hat\pi(x) = \partial_t\hat\phi(x)$.
+> 4. Mode extraction holds on every time slice: with $f_{\mathbf p} = e^{-ip\cdot x}/\sqrt{2E_{\mathbf p}}$ and the Klein–Gordon product of [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-1|Def. §C2a.2.1]], the Heisenberg fields $\hat\phi(x)$, $\hat\pi(x)$ of parts 2–3 give
 >
-> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; with interactions this is the interaction-picture field ([[§C6a.2 The Interaction Picture#^thm-c6a-2-1|Theorem §C6a.2.1]]), not the Heisenberg field ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-2|Caution: With interactions, the Heisenberg field is not the free mode expansion]]).
+> $$
+> \hat a_{\mathbf p} = (f_{\mathbf p}, \hat\phi) = \frac{i}{\sqrt{2E_{\mathbf p}}}\int d^3x\;e^{ip\cdot x}\bigl(\hat\pi(x) - iE_{\mathbf p}\,\hat\phi(x)\bigr), \qquad \hat a^\dagger_{\mathbf p} = -(f^*_{\mathbf p}, \hat\phi) ,
+> $$
 >
-> *Source: the user's PHY 513 notes, Ch. 5 §5.1 · PS §2.4, eqs. (2.46)–(2.47)*
+> independent of the time slice on which the integral is taken; the slice $t = 0$ is [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]].
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; with interactions this is the interaction-picture field ([[§C6a.2 The Interaction Picture#^thm-c6a-2-1|Theorem §C6a.2.1]]), not the Heisenberg field ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-2|Caution: With interactions, the Heisenberg field is not the free mode expansion]]); the slice independence of part 4 uses the free field equation, so with interactions the extraction holds at the reference time only.
+>
+> *Source: the user's PHY 513 notes, Ch. 5 §5.1 · PS §2.4, eqs. (2.46)–(2.47) · part 4: the sources of Theorem §C2a.2.5 (the user's PHY 513 notes, Ch. 4 §4.5; Yu §2.3.2, eqs. (2.106)–(2.113))*
 
 ^thm-c2b-1-4
 
@@ -290,14 +297,25 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 >
 > ⚑ By-product: $\hat\pi = \partial_t\hat\phi$, a definition in classical field theory and not even expressible in the Schrödinger picture, is now a theorem → [[§C2b.1 Heisenberg Fields#^rem-c2b-1-4|Remark: Two routes that meet]].
 >
+> **Step 10** (mode extraction on any slice; part 4). Write out the Klein–Gordon product ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-1|Def. §C2a.2.1]]) on the slice of time $t$ with $f^{\ast}_{\mathbf p} = e^{ip\cdot x}/\sqrt{2E_{\mathbf p}}$, $\partial_tf^{\ast}_{\mathbf p} = iE_{\mathbf p}f^{\ast}_{\mathbf p}$ and $\partial_t\hat\phi = \hat\pi$ (Step 9):
+>
+> $$
+> (f_{\mathbf p}, \hat\phi) = i\int d^3x\,\bigl(f^*_{\mathbf p}\,\hat\pi - iE_{\mathbf p}f^*_{\mathbf p}\,\hat\phi\bigr) = \frac{i}{\sqrt{2E_{\mathbf p}}}\int d^3x\;e^{ip\cdot x}\bigl(\hat\pi(x) - iE_{\mathbf p}\,\hat\phi(x)\bigr) .
+> $$
+>
+> Part 2 is the expansion $\hat\phi = \int\frac{d^3q}{(2\pi)^3}\bigl(\hat a_{\mathbf q}f_{\mathbf q} + \hat a^\dagger_{\mathbf q}f^{\ast}_{\mathbf q}\bigr)$ at time $t$, for which [[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-5|Derivation §C2a.2.5]], steps 5–6, evaluate the integral at a general time: $\int d^3x\,e^{ip\cdot x}\hat\phi = \bigl(\hat a_{\mathbf p} + e^{2iE_{\mathbf p}t}\hat a^\dagger_{-\mathbf p}\bigr)/\sqrt{2E_{\mathbf p}}$ and $\int d^3x\,e^{ip\cdot x}\hat\pi = -iE_{\mathbf p}\bigl(\hat a_{\mathbf p} - e^{2iE_{\mathbf p}t}\hat a^\dagger_{-\mathbf p}\bigr)/\sqrt{2E_{\mathbf p}}$, so in $\hat\pi - iE_{\mathbf p}\hat\phi$ the $\hat a^\dagger_{-\mathbf p}$ terms, and with them all $t$-dependence, cancel and $(f_{\mathbf p}, \hat\phi) = \hat a_{\mathbf p}$ on every slice. The same follows from the orthonormality of the modes, which holds on every slice because the Klein–Gordon product of two solutions is conserved ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 1–2): steps 1–3 of that derivation then run at time $t$ unchanged. The adjoint gives $\hat a^\dagger_{\mathbf p} = -(f^{\ast}_{\mathbf p}, \hat\phi)$. *Sense:* an identity of operator-valued distributions in $\mathbf p$, exact after smearing with $\overline{g(\mathbf p)}$, as there.
+>
 > **What the derivation shows.**
 > - Conjugation with $e^{i\hat Ht}$ does nothing to $\hat a_{\mathbf p}$ but attach the phase of a positive-energy wave function; $\hat a_{\mathbf p}$ itself stays the time-independent Schrödinger operator (PS's convention).
 > - Only $[\hat a, \hat a^\dagger]$ and the mode form of $\hat H$ were used; the zero-point constant never enters time evolution.
+> - The mode operators can be read off the Heisenberg field on any slice (part 4): $\hat a_{\mathbf p}$ is one operator, not one per time.
 > - Used next: the two-point functions (Theorems §C2b.2.1, §C2b.4.2) and, through $\hat\pi = \partial_t\hat\phi$, the unequal-time commutators (Theorem §C2b.4.10).
 
 ^der-c2b-1-4
 
-*Uses:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-2|QM Theorem §C3.3.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-2|QM Theorem §C3.4.2]]
+*Uses:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-2|QM Theorem §C3.3.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-2|QM Theorem §C3.4.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-1|Def. §C2a.2.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]]
+
+**The Heisenberg field on the mass shell.** The Heisenberg field solves the Klein–Gordon equation as an operator ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]), so [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]] applies to it. Compared with the mode expansion of Theorem §C2b.1.4, 2, obtained independently from the Hamiltonian (its derivation does not use Theorem §C2b.1.3), $g(p)/2E_{\mathbf p} = \hat a_{\mathbf p}/\sqrt{2E_{\mathbf p}}$, so $g(p) = \sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}$; and $g(-p) = \overline{g(p)}$ (Derivation §C2b.1.3, Step 5) is here $\sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}$.
 
 > [!remark] Remark: What is covariant and what is not yet
 > The spatial Fourier factors have become four-dimensional plane waves, the first manifestly covariant-looking expression of the quantum theory. But the integral still runs over three momenta: $p^0$ is not a variable, it means $E_{\mathbf p}$, a square root of the integration variable. The remaining non-covariance hides there, and the invariant measure $d^3p/(2\pi)^32E_{\mathbf p}$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]) is the bookkeeping that keeps it honest. In [[§C2b.5 Green's Functions and Contours|§C2b.5]], $p^0$ becomes an integration variable, and the poles at $p^0 = \pm E_{\mathbf p}$ are the price.
@@ -339,7 +357,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 ^thm-c2b-1-5
 
 > [!derivation]- Derivation
-> **Step 1** (the vacuum). $\hat a_{\mathbf p}|0\rangle = 0$ for every $\mathbf p$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]), so $\hat\phi^+(x)|0\rangle = 0$; taking adjoints, $\langle0|\hat\phi^-(x) = 0$.
+> **Step 1** (the vacuum). $\hat a_{\mathbf p}|0\rangle = 0$ for every $\mathbf p$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]]), so $\hat\phi^+(x)|0\rangle = 0$; taking adjoints, $\langle0|\hat\phi^-(x) = 0$.
 >
 > **Step 2** (only $\hat\phi^+$ contributes). $\langle0|\hat\phi(x)|\mathbf p\rangle = \langle0|\hat\phi^+(x)|\mathbf p\rangle + \langle0|\hat\phi^-(x)|\mathbf p\rangle$, and the second term is zero by Step 1.
 >
@@ -362,7 +380,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 
 ^der-c2b-1-5
 
-*Uses:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]
+*Uses:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]
 
 > [!remark] Remark: Negative frequency is creation, not negative energy
 > A complete set of solutions of the Klein–Gordon equation has both $e^{-iEt}$ and $e^{+iEt}$, and a Hermitian field needs both. Read as single-particle wave functions they would be states of energy $\pm E$, the old difficulty of relativistic wave mechanics ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-2|QM Theorem §C13.1.2]]). In the field, the coefficient of the positive-frequency solution is the operator that *destroys* a quantum, and $\langle0|\hat\phi|\mathbf p\rangle = e^{-ip\cdot x}$ is a positive-energy wave function; the coefficient of the negative-frequency solution *creates* one. No state of negative energy exists in the spectrum ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]]). Wave and particle sit in one formula: the plane waves are the wave aspect, the operator coefficients with $[\hat a, \hat a^\dagger] = (2\pi)^3\delta^3$ the particle aspect. Notation: PS's $\phi^+$ and Yu's $\phi^{(+)}$ are the positive-frequency, annihilating part, as here.

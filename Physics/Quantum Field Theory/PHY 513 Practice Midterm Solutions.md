@@ -822,7 +822,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (component check, $d = 4$). $T_B^{00} = \frac12(\mathbf E^2 + \mathbf B^2)$ and $T_B^{ij} = -(E^iE^j - \frac12\delta_{ij}\mathbf E^2) - (B^iB^j - \frac12\delta_{ij}\mathbf B^2)$ (§C1b.8, Connections), so $\sum_iT_B^{ii} = -(\mathbf E^2 - \frac32\mathbf E^2) - (\mathbf B^2 - \frac32\mathbf B^2) = \frac12(\mathbf E^2 + \mathbf B^2)$, and $g_{\mu\nu}T_B^{\mu\nu} = T_B^{00} - \sum_iT_B^{ii} = 0$: radiation has pressure one third of its energy density.
 >
-> **Step 5** (what changes in $d$ dimensions). The derivation of $T_B$ (PS2.4(c)–(d)) never used $d = 4$, so the same symmetric, conserved tensor exists for every $d$; only its trace changes, by $\frac{d - 4}{4}F^2$. A traceless symmetric tensor goes with scale invariance ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^rem-c1b-8-4|§C1b.8, ★ Remark: Dilatations]]); $d = 4$ is also where the gauge coupling is dimensionless, $[A] = \frac{d - 2}{2}$ and $[e] = 1 - [A] = \frac{4 - d}{2}$.
+> **Step 5** (what changes in $d$ dimensions). The derivation of $T_B$ (PS2.4(c)–(d)) never used $d = 4$, so the same symmetric, conserved tensor exists for every $d$; only its trace changes, by $\frac{d - 4}{4}F^2$. A traceless symmetric tensor goes with scale invariance ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|★ Theorem §C1b.8.5]]); $d = 4$ is also where the gauge coupling is dimensionless, $[A] = \frac{d - 2}{2}$ and $[e] = 1 - [A] = \frac{4 - d}{2}$.
 >
 > *Derived here; check:* the tensor is that of [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-8-2|Example §C1b.8.2]], item 5 (and SOL2, Problem 4(d)); its trace is not computed there, so Steps 1–3 are new, and Step 4 checks them on the components of item 6 and the stress tensor of §C1b.8's Connections.
 
@@ -1110,7 +1110,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (why $c_H \ne 0$). $c_H = \frac12\sum_{|\mathbf k|<\Lambda}E_{\mathbf k}$ is a sum of positive terms, $\frac12E$ per mode (the oscillator ground state $\frac12\omega$): no cancellation. It diverges with $V$ (infrared) and, per volume, as $\Lambda^4/16\pi^2$ (ultraviolet). It is a c-number, so it drops out of every commutator and energy difference.
 >
-> *Checked against:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]] (derivation step 7: the constant $\frac V2\int\frac{d^3p}{(2\pi)^3}\mathbf p$, zero for a rotation-invariant cutoff) and [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]] ($E_0 = V\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$, $V = (2\pi)^3\delta^3(\mathbf 0)$); [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]; the user's PHY 513 Problem Set 6, Problem 1, closing remark, as written.
+> *Checked against:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]] (derivation step 7: the constant $\frac V2\int\frac{d^3p}{(2\pi)^3}\mathbf p$, zero for a rotation-invariant cutoff) and [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]] ($E_0 = V\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$, $V = (2\pi)^3\delta^3(\mathbf 0)$); [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]; the user's PHY 513 Problem Set 6, Problem 1, closing remark, as written.
 
 ^sol-px-6-1-1
 

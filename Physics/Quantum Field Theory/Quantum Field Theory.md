@@ -50,23 +50,23 @@ graph TD
   C9["C9 Discrete Symmetries and Majorana Fields"]
   CA["CA Mathematical Methods"]
   CB["CB Lie Groups, Lie Algebras and Representations"]
-  C1a -->|29| C1b
+  C1a -->|31| C1b
   C1a -->|3| C2a
   C1b -->|13| C2a
   C1a -->|30| C2b
   C1b -->|3| C2b
   C2a -->|140| C2b
   C1a -->|58| C3
-  C1b -->|25| C3
+  C1b -->|27| C3
   C2a -->|41| C3
   C2b -->|15| C3
   C1a -->|40| C4
-  C1b -->|109| C4
+  C1b -->|110| C4
   C2a -->|94| C4
   C2b -->|61| C4
   C3 -->|72| C4
   C1a -->|43| C5a
-  C1b -->|93| C5a
+  C1b -->|94| C5a
   C2a -->|2| C5a
   C3 -->|54| C5a
   C1b -->|26| C5b

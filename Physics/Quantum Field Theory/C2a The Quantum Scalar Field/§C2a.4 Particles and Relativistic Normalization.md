@@ -11,9 +11,9 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 4 §§4.7–4.9 · PHY 513 Lecture 4 (Larsen), Part C and "Details on Normalization"; Problem Set 3, Problem 1, with the course solution · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.3 · Yu Zhao-Huan, 量子场论讲义, §2.3.4 · the user's pre-course notes, §3.3.*
 
-What do the states of the free real field describe? The ladder relations of [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]] ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]]) and the Fock space of identical particles of Quantum Mechanics ([[§C12.2★ Second Quantization#^def-c12-2-1|QM Def. §C12.2.1]]) answer: particles, the states of the Fock space generated from the vacuum ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]], postulated in §C2a.3 where the zero-point energy first needs it). What the field adds to second quantization is the continuum and relativity: one-particle states labelled by a continuous momentum, normalized so that the normalization is Lorentz invariant, with the invariant measure $d^3p/(2\pi)^32E_{\mathbf p}$, and created at a point by the field itself. The steps are [[P1 Canonical Quantization#^p1-8|P1, steps 8–9]].
+What do the states of the free real field describe? The ladder relations of [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]] ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]]) and the Fock space of identical particles of Quantum Mechanics ([[§C12.2★ Second Quantization#^def-c12-2-1|QM Def. §C12.2.1]]) answer: particles, the states of the Fock space generated from the vacuum ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]], postulated in §C2a.3 where the zero-point energy first needs it). What the field adds to second quantization is the continuum and relativity: one-particle states labelled by a continuous momentum, normalized so that the normalization is Lorentz invariant, with the invariant measure $d^3p/(2\pi)^32E_{\mathbf p}$, and created at a point by the field itself. The steps are [[P1 Canonical Quantization#^p1-8|P1, steps 8–9]].
 
-**Setup.** The system is [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]: quantum, free, $m > 0$, with the normal-ordered $:\!\hat H\!:$. The states are the Fock space over the free vacuum $|0\rangle$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]); the physical one-particle states are wave packets. Normalization: relativistic, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]). The results are exact for the free field; the kinematic ones (the invariant measure, the invariance of the normalization) hold in any theory, and the same normalization labels the asymptotic particles of an interacting theory ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]).
+**Setup.** The system is [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]: quantum, free, $m > 0$, with the normal-ordered $:\!\hat H\!:$. The states are the Fock space over the free vacuum $|0\rangle$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]]); the physical one-particle states are wave packets. Normalization: relativistic, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]). The results are exact for the free field; the kinematic ones (the invariant measure, the invariance of the normalization) hold in any theory, and the same normalization labels the asymptotic particles of an interacting theory ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]).
 
 ## Particles
 
@@ -36,7 +36,7 @@ What do the states of the free real field describe? The ladder relations of [[§
 > \langle\psi|:\!\hat H\!:|\psi\rangle = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,\|\hat a_{\mathbf p}\psi\|^2 \ge 0 ,
 > $$
 >
-> with equality iff $\hat a_{\mathbf p}|\psi\rangle = 0$ for (almost) all $\mathbf p$, i.e. $|\psi\rangle \propto |0\rangle$ by the uniqueness in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]].
+> with equality iff $\hat a_{\mathbf p}|\psi\rangle = 0$ for (almost) all $\mathbf p$, i.e. $|\psi\rangle \propto |0\rangle$ by the uniqueness in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]].
 >
 > **2. The vacuum.** Every term of $:\!\hat H\!:$ and of $\hat{\mathbf P}$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]]) ends in an annihilator, so both annihilate $|0\rangle$.
 >
@@ -59,7 +59,7 @@ What do the states of the free real field describe? The ladder relations of [[§
 
 ^der-c2a-4-1
 
-*Uses:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
+*Uses:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-8|P1, step 8]]
 
@@ -117,14 +117,14 @@ What do the states of the free real field describe? The ladder relations of [[§
 > [!remark] Remark: Why |0⟩ is the vacuum
 > - **Ground state.** By Theorem §C2a.4.1, 1, no state has lower energy; $:\!\hat H\!:|0\rangle = 0$ is the normal-ordering choice of zero, not a physical statement.
 > - **Poincaré invariant.** $\hat P^\mu|0\rangle = 0$ and $\hat J^{\mu\nu}|0\rangle = 0$, since every generator is normal ordered and bilinear, with an annihilator on the right. This is what makes $\langle0|\hat\phi(x)\hat\phi(y)|0\rangle$ a function of $x - y$ alone ([[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]]).
-> - **Unique, given the $\hat a$'s.** Any state annihilated by all $\hat a_{\mathbf p}$ is a multiple of $|0\rangle$ (irreducibility). What is not unique is the choice of the $\hat a$'s ([[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-5|★ Remark: Other mode functions]]).
+> - **Unique, given the $\hat a$'s.** Any state annihilated by all $\hat a_{\mathbf p}$ is a multiple of $|0\rangle$ (irreducibility). What is not unique is the choice of the $\hat a$'s ([[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-4|★ Remark: Other mode functions]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Principle "Why |0⟩ is the vacuum")*
 
 ^rem-c2a-4-2
 
 > [!caution] Caution: Plane-wave states are not normalizable
-> $\langle\mathbf p|\mathbf p\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0)$ (with the normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], below) is infinite: like $|x'\rangle$ and $|p'\rangle$ in quantum mechanics ([[§C2.1 Continuous Spectra and Position Eigenkets#^pr-c2-1-2|QM Principle §C2.1.2]], [[§48 Position Eigenstates and Continuous Resolutions#^prop-48-4|556 Prop. §48.4]]), $|\mathbf p\rangle$ is not in $\mathcal F$. Genuine one-particle states are wave packets $\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,\psi(\mathbf p)\,|\mathbf p\rangle$ with $\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}|\psi(\mathbf p)|^2 < \infty$ (Yu, Exercise 2.3). Correspondingly $\hat a^\dagger_{\mathbf p}$ and $\hat\phi(\mathbf x)$ are operator-valued distributions, meaningful after smearing with test functions; that is why products of fields at one point need normal ordering and why $\delta^3(\mathbf 0)$ appeared in $\hat H$. The precise statements: [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-3|Def. §C2a.4.3]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]] (and [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]).
+> $\langle\mathbf p|\mathbf p\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0)$ (with the normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], below) is infinite: like $|x'\rangle$ and $|p'\rangle$ in quantum mechanics ([[§C2.1 Continuous Spectra and Position Eigenkets#^pr-c2-1-2|QM Principle §C2.1.2]], [[§48 Position Eigenstates and Continuous Resolutions#^prop-48-4|556 Prop. §48.4]]), $|\mathbf p\rangle$ is not in $\mathcal F$. Genuine one-particle states are wave packets $\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,\psi(\mathbf p)\,|\mathbf p\rangle$ with $\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}|\psi(\mathbf p)|^2 < \infty$ (Yu, Exercise 2.3). Correspondingly $\hat a^\dagger_{\mathbf p}$ and $\hat\phi(\mathbf x)$ are operator-valued distributions, meaningful after smearing with test functions; that is why products of fields at one point need normal ordering and why $\delta^3(\mathbf 0)$ appeared in $\hat H$. The precise statements: [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-3|Def. §C2a.4.3]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]] (and [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points") · Yu §2.3.4, after eq. (2.163)*
 
@@ -143,20 +143,22 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; the same normalization is used for the asymptotic particles of an interacting theory ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]).
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.9, eq. (relnorm) · PHY 513 Lecture 4, Part C · PS §2.3, eqs. (2.35)–(2.36) · Yu §2.3.4, eqs. (2.152), (2.157)*
+> *Source: the user's PHY 513 notes, Ch. 4 §4.9, eq. (relnorm) · PHY 513 Lecture 4, Part C · PS §2.3, eqs. (2.35)–(2.36) · Yu §2.3.4, eqs. (2.152), (2.157), (2.167) (the $n$-particle states)*
 
 ^def-c2a-4-1
 
-> [!definition] Definition §C2a.4.2: Invariant Measure and One-Particle Completeness
-> The **invariant measure** on the mass shell, and the resolution of the identity on one-particle states that it gives with the states of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]:
+> [!definition] Definition §C2a.4.2: Invariant Measure
+> The **invariant measure** on the mass shell:
 >
 > $$
-> \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}} = \int\frac{d^4p}{(2\pi)^4}\,2\pi\,\delta(p^2 - m^2)\,\theta(p^0), \qquad \mathbb 1_{1\text{-particle}} = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,|\mathbf p\rangle\langle\mathbf p| .
+> \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}} = \int\frac{d^4p}{(2\pi)^4}\,2\pi\,\delta(p^2 - m^2)\,\theta(p^0) .
 > $$
 >
-> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; the measure itself is kinematics, valid in any theory ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]]).
+> With the states of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] it gives the resolution of the identity on one-particle states ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]], 3).
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.9, eq. (invmeasure) · PS §2.3, eqs. (2.39)–(2.40) · Yu §2.3.4, eqs. (2.161), (2.167)*
+> *Model:* any (kinematics); *applies:* the measure is kinematics, valid in any theory ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]]); its invariance is [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]].
+>
+> *Source: the user's PHY 513 notes, Ch. 4 §4.9, eq. (invmeasure) · PS §2.3, eq. (2.40) · Yu §2.3.4, eq. (2.161)*
 
 ^def-c2a-4-2
 
@@ -202,7 +204,7 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 *Procedure:* [[P1 Canonical Quantization#^p1-9|P1, step 9]]
 
 > [!theorem] Theorem §C2a.4.4: Invariance of the Relativistic Normalization
-> $2E_{\mathbf p}\,\delta^3(\mathbf p - \mathbf q)$ is Lorentz invariant, hence so are $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ and the one-particle resolution of the identity of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]; $\delta^3(\mathbf p - \mathbf q)$ alone is not: $\delta^3(\mathbf p - \mathbf q) = (E_{\mathbf p'}/E_{\mathbf p})\,\delta^3(\mathbf p' - \mathbf q')$.
+> $2E_{\mathbf p}\,\delta^3(\mathbf p - \mathbf q)$ is Lorentz invariant, hence so are $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ and the one-particle resolution of the identity $\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}|\mathbf p\rangle\langle\mathbf p|$ (stated, as an identity between wave packets, in [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]], 3); $\delta^3(\mathbf p - \mathbf q)$ alone is not: $\delta^3(\mathbf p - \mathbf q) = (E_{\mathbf p'}/E_{\mathbf p})\,\delta^3(\mathbf p' - \mathbf q')$.
 >
 > *Model:* any (kinematics); *applies:* any theory with relativistically normalized one-particle states, interacting ones included (the in and out states of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]).
 >
@@ -275,15 +277,21 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 
 ^def-c2a-4-3
 
-> [!theorem] Theorem §C2a.4.5: The Overlap of Momentum States Is a Distribution
+> [!theorem] Theorem §C2a.4.5: The Overlap of Momentum States Is a Distribution; One-Particle Completeness
 > For $g, h \in \mathcal S(\mathbb R^3)$:
 > 1. $\langle g|h\rangle = \displaystyle\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,\overline{g(\mathbf p)}\,h(\mathbf p)$, finite; $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ is the kernel of this pairing, a Lorentz-invariant tempered distribution in $(\mathbf p, \mathbf q)$.
 > 2. $\langle\mathbf p|\mathbf p\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0)$ has no value: $|\mathbf p\rangle$ is not a vector, and the norms of wave packets narrowing to $|\mathbf p\rangle$ diverge.
-> 3. $\langle\mathbf p|g\rangle = g(\mathbf p)$, and $\displaystyle\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\langle h|\mathbf p\rangle\langle\mathbf p|g\rangle = \langle h|g\rangle$: the resolution of the identity of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]] holds between wave packets (weakly), and the one-particle space is $L^2(\mathbb R^3, d^3p/(2\pi)^32E_{\mathbf p})$.
+> 3. $\langle\mathbf p|g\rangle = g(\mathbf p)$, and $\displaystyle\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\langle h|\mathbf p\rangle\langle\mathbf p|g\rangle = \langle h|g\rangle$. This is the **resolution of the identity on one-particle states** (one-particle completeness), with the invariant measure of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]] and the states of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]:
+>
+> $$
+> \mathbb 1_{1\text{-particle}} = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,|\mathbf p\rangle\langle\mathbf p| .
+> $$
+>
+> It holds between wave packets (weakly); it is Lorentz invariant ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]]); and the one-particle space is $L^2(\mathbb R^3, d^3p/(2\pi)^32E_{\mathbf p})$.
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": $|\mathbf p\rangle$ is a distribution) and §4.9 · Yu, Exercise 2.3 · stated and derived here as distributions*
+> *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": $|\mathbf p\rangle$ is a distribution) and §4.9 ("their product is the identity") · PS §2.3, eq. (2.39) (the completeness relation) · Yu, Exercise 2.3 · stated and derived here as distributions*
 
 ^thm-c2a-4-5
 
@@ -302,7 +310,7 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 >
 > the divergence of $\rho_\varepsilon^2$ ([[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 2). ⚑ By-product: $|\mathbf p\rangle$ is the limit of states only weakly, as $|x'\rangle$ is in quantum mechanics → [[§48 Position Eigenstates and Continuous Resolutions#^prop-48-4|556 Prop. §48.4]].
 >
-> **5. Components and completeness.** $\langle\mathbf p|g\rangle = \int\frac{d^3q}{(2\pi)^3\,2E_{\mathbf q}}g(\mathbf q)\,2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q) = g(\mathbf p)$, δ acting on the test function $g$. Hence $\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\langle h|\mathbf p\rangle\langle\mathbf p|g\rangle = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\overline hg = \langle h|g\rangle$ by step 2: an equality of numbers for every pair of packets, which is what the operator identity of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]] asserts. The map $g \mapsto |g\rangle$ preserves inner products from $L^2(d^3p/(2\pi)^32E_{\mathbf p})$, and $\mathcal S$ is dense in that $L^2$, so it extends to all of $\mathcal H_1$.
+> **5. Components and completeness.** $\langle\mathbf p|g\rangle = \int\frac{d^3q}{(2\pi)^3\,2E_{\mathbf q}}g(\mathbf q)\,2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q) = g(\mathbf p)$, δ acting on the test function $g$. Hence $\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\langle h|\mathbf p\rangle\langle\mathbf p|g\rangle = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\overline hg = \langle h|g\rangle$ by step 2: an equality of numbers for every pair of packets, which is what the operator identity of part 3 asserts. The map $g \mapsto |g\rangle$ preserves inner products from $L^2(d^3p/(2\pi)^32E_{\mathbf p})$, and $\mathcal S$ is dense in that $L^2$, so it extends to all of $\mathcal H_1$.
 >
 > **What the derivation shows**
 > - $\langle\mathbf p|\mathbf q\rangle$ is a distribution, defined by its pairings with wave packets; its "value" on the diagonal is δ at its singular point.
@@ -382,7 +390,7 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 > \liminf_{\varepsilon\to0^+}\|\hat\phi(f_\varepsilon)|0\rangle\|^2 \ge \int_{|\mathbf p| < \Lambda}\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}} = \frac{1}{4\pi^2}\int_0^\Lambda\frac{p^2\,dp}{\sqrt{p^2 + m^2}} = \frac{\Lambda^2}{8\pi^2} + O\Bigl(m^2\ln\frac\Lambda m\Bigr) ,
 > $$
 >
-> using $d^3p = 4\pi p^2dp$ and $p^2/\sqrt{p^2 + m^2} = p - m^2/2p + \dots$ at large $p$. $\Lambda$ is arbitrary, so the norm has no finite limit. ⚑ By-product: the divergent number is $\langle0|\hat\phi(\mathbf x)^2|0\rangle$, the two-point function at coincident points, the same coincident product as the zero-point energy → [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]].
+> using $d^3p = 4\pi p^2dp$ and $p^2/\sqrt{p^2 + m^2} = p - m^2/2p + \dots$ at large $p$. $\Lambda$ is arbitrary, so the norm has no finite limit. ⚑ By-product: the divergent number is $\langle0|\hat\phi(\mathbf x)^2|0\rangle$, the two-point function at coincident points, the same coincident product as the zero-point energy → [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]].
 >
 > **5. What survives at a point.** The components $\langle\mathbf p|\hat\phi(\mathbf x)|0\rangle = e^{-i\mathbf p\cdot\mathbf x}$ ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|Theorem §C2a.4.6]]) are bounded, so against a wave packet $\langle g|\hat\phi(\mathbf x)|0\rangle$ is a convergent integral. $\hat\phi(\mathbf x)|0\rangle$ is a "ket" in the sense of $|x'\rangle$: defined by its pairings, not normalizable.
 >

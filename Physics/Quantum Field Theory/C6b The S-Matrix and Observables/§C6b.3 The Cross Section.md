@@ -500,7 +500,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 > 2. The average over initial projections of an operator $X$ on the spin space is $\frac{1}{2s + 1}\sum_{m_i}\langle m_i|X|m_i\rangle = \frac{1}{2s + 1}\operatorname{Tr}X$.
 > 3. Both are independent of the orthonormal basis: $\overline{|\mathcal M|^2}$ of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]] may be computed with each particle's spin quantized along any axis.
 >
-> For Dirac particles the two spin states are carried by the spinors $u^s$, $v^s$, the completeness relation is $\sum_su^s\bar u^s = \slashed p + m$, $\sum_sv^s\bar v^s = \slashed p - m$, and the sum over spins becomes a trace over spinor indices (Lecture 19: [[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-3|Theorem §C8.7.3]]).
+> For Dirac particles the two spin states are carried by the spinors $u^s$, $v^s$, the completeness relation is $\sum_su^s\bar u^s = \slashed p + m$, $\sum_sv^s\bar v^s = \slashed p - m$, and the sum over spins becomes a trace over spinor indices (Lecture 19: [[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-3|Theorem §C8.7.3]]; in general, with the average of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]: [[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-7|Theorem §C8.7.7]]).
 >
 > *Model:* as in [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]; *applies:* any spins, any order; linear algebra on each particle's spin space.
 >

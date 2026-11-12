@@ -222,7 +222,7 @@ Solutions to [[PHY 513 Worksheet — Noether Currents]], folded so that you can 
 >
 > **Step 3** (why). Scale invariance needs every coupling dimensionless; $m$ has dimension 1 and sets a length $1/m$ that a dilatation would change.
 >
-> *Checked against:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^rem-c1b-8-4|§C1b.8, ★ Remark: Dilatations]] (the same $\delta\mathcal L = \alpha\,\partial_\nu(x^\nu\mathcal L) + \alpha m^2\phi^2$, $\mathcal J^\mu = x^\mu\mathcal L$, current $x_\nu T^{\mu\nu} + \phi\,\partial^\mu\phi$, broken by $m$); the scale row of [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]]. *Derived here; check:* the direct divergence of Step 2 (not in the remark) agrees with $X$ of Step 1.
+> *Checked against:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-5|★ Theorem §C1b.8.5]] (the same $\delta\mathcal L = \alpha\,\partial_\nu(x^\nu\mathcal L) + \alpha m^2\phi^2$, $\mathcal J^\mu = x^\mu\mathcal L$, current $x_\nu T^{\mu\nu} + \phi\,\partial^\mu\phi$, broken by $m$); the scale row of [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]]. *Derived here; check:* the direct divergence of Step 2 (not in the remark) agrees with $X$ of Step 1.
 
 ^sol-wn-5
 
