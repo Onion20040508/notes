@@ -28,6 +28,9 @@ tags: [measure-theory, hub]
 - [[§26 Applications of Tonelli's Theorem#^thm-26-7|Theorem §26.7: Layer Cake Formula (Cavalieri's Principle)]]
 - [[§30 Differentiating the Integral#^lem-30-6|Lemma §30.6: Averaging Lemma]]
 
+## Used in (Functional Analysis)
+- [[§46 The Transpose#^prop-46-2|Proposition §46.2: Hilbert–Schmidt Operators are Bounded]]
+
 ## Connections
 - **Proof idea.** Show that the [[§25 Invariance Properties and Fubini's Theorem#^def-25-2|Tonelli class]] contains every nonnegative measurable f by climbing, using the closure properties of [[§25 Invariance Properties and Fubini's Theorem#^lem-25-5|Lemma §25.5]]. The steps are: rectangles; open sets as disjoint unions of dyadic cubes ([[§7 Structure of Open Sets#^prop-7-3|§7.3]]); G_δ sets as decreasing limits; null sets; measurable sets as E = H ∖ Z ([[Outer Regularity of Lebesgue Measure]]); simple functions; and finally increasing limits ([[Simple Function Approximation Theorem]], MCT).
 - **Riemann vs Lebesgue.** The MATH 452 counterparts are [[§23 Fubini's Theorem#^thm-23-5|Fubini–Tonelli for non-negative functions]] (452 §23.5) and the Riemann [[Fubini's Theorem]] (452 §15.8) for continuous f on rectangles. Here f needs no continuity or boundedness, the value +∞ is allowed, and the slice statements hold for a.e. x.

@@ -1,0 +1,812 @@
+---
+type: section
+subject: "[[Quantum Field Theory]]"
+level: C
+chapter: CB
+section: CB.19
+conventions: "[[Larsen PHY 513]]"
+tags: [quantum-field-theory, level-c]
+---
+← [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries]] →
+
+*Sources: PHY 513 TA (oral remark, Oct 2026) · through the course homes linked below: Peskin & Schroeder, §§3.2–3.4; the user's PHY 513 notes, Ch. 8 §§8.1–8.3, §8.9; PHY 513 Lectures 7–8; Yu Zhao-Huan, 量子场论讲义, §5.1 · P. Woit, Quantum Theory, Groups and Representations, §41.2 "Dirac γ matrices and Cliff(3,1)" (the strategy: quadratic Clifford elements give the Lorentz algebra, and the chiral blocks give $(\frac12, 0)$ and $(0, \frac12)$; Woit uses signature $(3,1)$) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · Yu §9.2.1, eqs. (9.98), (9.112)–(9.117), and PS §3.6, eqs. (3.144)–(3.145) (the charge-conjugation matrix, chiral case) · Schwartz, Quantum Field Theory and the Standard Model, §10.3, eq. (10.74) (a Majorana basis) · the Clifford-module computations, the comparison of conventions and the basis-free charge-conjugation matrix written here.*
+
+What is the Dirac spinor as a representation of $\mathrm{Spin}(1,3)_0 = SL(2, \mathbb C)$, and where do $\gamma^5$, the Weyl halves, the bispinor form of a four-vector and the sixteen bilinears come from? This section specializes the TA's theorem ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-17|Theorem §CB.19.17]]) to Minkowski space: the Dirac module $\mathbb C^4$ restricts to $S^-\oplus S^+ = (\frac12, 0)\oplus(0, \frac12)$, split by $\gamma^5$, the image of the complex volume element (of the opposite orientation, Theorem §CB.19.2); Clifford multiplication exchanges the halves; the complexified vector is $S^+\otimes S^-$; two-forms are $(1,0)\oplus(0,1)$; the Clifford algebra itself is $\Lambda V$ as a representation, which is the classification of bilinears; and every spinorial representation sits in Dirac ⊗ tensor. Finally, complex conjugation of the $\gamma$'s and Pauli's theorem give the charge-conjugation matrix $B$ and the real structure $c = B\circ K$ on the Dirac module (Theorems §CB.19.19, §CB.19.21), of which the course's $-i\gamma^2$ is the chiral form. It builds on [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover|§CB.17]]–[[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.18]]; the course's statements are restated where they become instances.
+
+Notation as in §CB.17: $V = \mathbb R^{1,3}$, standard basis $e_\mu$, the isomorphism $\phi$ and $\theta(\lambda) = (\lambda^\dagger)^{-1}$ of [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-12|Theorem §CB.17.12]]. The Dirac module is the course's Clifford multiplication ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-1|Def. §CB.19.1]]): $\gamma(a) = \slashed a = a_\mu\gamma^\mu$ on $S = \mathbb C^4$, so $\gamma(e_\mu) = \gamma_\mu = g_{\mu\nu}\gamma^\nu$. It is a Clifford module of $(V, q)$ since $\slashed a\,\slashed a = a_\mu a^\mu$ ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], 2), so it extends to an algebra homomorphism $\gamma : \mathrm{Cl}(1,3)_{\mathbb C} \to \operatorname{End}(S)$ ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-7|Theorem §CB.12.7]]). The chiral basis is [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]].
+
+The course's Clifford multiplication, the map behind this notation (first written in [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]):
+
+> [!definition] Definition §CB.19.1: Clifford Multiplication
+> Let $V = \mathbb R^{1,3}$ be Minkowski space with metric $g$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-12|Def. §CB.0.12]]) and $S$ spinor space, the four-dimensional complex vector space carrying the Dirac maps $\Gamma^\mu$ ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-14|Def. §CB.12.14]], where it is written $V$). **Clifford multiplication** is the map
+>
+> $$
+> V\times S \to S, \qquad (a, \psi) \mapsto \slashed{a}\,\psi \equiv a_\mu\Gamma^\mu\psi, \qquad a_\mu = g_{\mu\nu}a^\nu .
+> $$
+> It is linear in $a$ and in $\psi$, and $\slashed{a}\,\slashed{a}\,\psi = (a\cdot a)\,\psi$ ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], 2). As a tensor, $\Gamma = (\Gamma^\mu) \in V\otimes\operatorname{End}(S) \cong V\otimes S\otimes S'$, with components $(\gamma^\mu)_{ab}$: one Minkowski slot $\mu$, one $S$-slot $a$, one $S'$-slot $b$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-8|Def. §CB.0.8]]). (The course writes $M$ for Minkowski space and $V$ for spinor space, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]; here the letters are those of §CB.15–§CB.19.)
+>
+> *Source: the user's PHY 513 notes, Ch. 8 §8.3 (Principle "Invariant tensors with mixed slots": "$\gamma^\mu$ is an invariant tensor with one spacetime slot and two spinor slots") · PS §3.2, p. 42 · the name and the map formulation written here*
+
+^def-cb-19-1
+
+> [!caution] Caution: Two Dirac modules, and the sign of γ⁵
+> Both $e_\mu \mapsto \gamma_\mu$ (used here) and $e_\mu \mapsto \gamma^\mu$ are Clifford modules of $\mathbb R^{1,3}$; the second is the first composed with the automorphism $\hat{\mathcal P}$ of $\mathrm{Cl}(1,3)$ extending parity $\mathcal P = \operatorname{diag}(1, -1, -1, -1)$ (Theorem §CB.12.7), since $\gamma^\mu = \gamma(\mathcal Pe_\mu)$. Only the first makes $\gamma(x)$ the course's spinor matrix of $\rho(x)$: $\gamma(x) = \Lambda_{1/2}(\omega)$ when $\rho(x) = e^\omega$ (Theorem §CB.19.3); with $e_\mu \mapsto \gamma^\mu$ the same $\gamma(x)$ belongs to $\mathcal P\rho(x)\mathcal P$, boosts reversed. They also differ on the volume element: $e_\mu \mapsto \gamma^\mu$ sends $\omega_{\mathbb C} = ie_0e_1e_2e_3$ to $\gamma^5$ (the reading of [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-13|Theorem §CB.13.13]] and [[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-4|Def. §CB.14.4]]), $e_\mu \mapsto \gamma_\mu$ sends it to $-\gamma^5$ (Theorem §CB.19.2). So for the module used here the half-spin spaces $\omega_{\mathbb C} = \pm1$ of [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-n25|Def. §CB.15.n25]] are the course's $\gamma^5 = \mp1$ spaces, and the half-spin space $S^+$ ($\omega_{\mathbb C} = +1$) of that definition is the course's left-handed $(\frac12, 0)$. This section keeps the course's labels: $S^\pm$ is $\gamma^5 = \pm1$, and $S^-$ is left-handed.
+>
+> *Source: the slash notation is introduced with the Dirac equation, the course's [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]] · written here, checked against [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-8|Theorem §CB.19.8]] and [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]]*
+
+^cau-cb-19-1
+
+## The Dirac module and its two halves
+
+The Dirac maps, the Clifford module of the course, and $\gamma^5$, stated in §CB.12 and §CB.13 (first written in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] and [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]); the module is irreducible of dimension $4 = 2^{4/2}$ ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-8|Theorem §CB.14.8]]).
+
+> [!theorem] Theorem §CB.19.2: γ⁵ Is the Complex Volume Element (of the Opposite Orientation)
+> In the Dirac module $\gamma(a) = \slashed a$, the complex volume element $\omega_{\mathbb C} = ie_0e_1e_2e_3$ ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-4|Def. §CB.14.4]]) goes to $\gamma(\omega_{\mathbb C}) = i\gamma_0\gamma_1\gamma_2\gamma_3 = -\gamma^5$, with $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|Def. §CB.13.14]]): $\gamma^5$ is the image of $-\omega_{\mathbb C}$, the complex volume element of the opposite orientation ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-13|Theorem §CB.13.13]], 1; [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^cau-cb-19-1|Caution: Two Dirac modules, and the sign of γ⁵]]). Hence $(\gamma^5)^2 = \mathbb 1$, $\gamma^5$ anticommutes with every $\gamma^\mu$ and commutes with $\gamma(\mathrm{Cl}^0)$, in particular with every $S^{\mu\nu}$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-16|Def. §CB.15.16]]; Theorem §CB.13.13, 3).
+>
+> *Source: written here · Peskin & Schroeder, §3.4 (the properties of $\gamma^5$), through [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]]*
+
+^thm-cb-19-2
+
+> [!proof]- Proof
+> **1. The phase.** In Def. §CB.14.4 take the orthonormal basis $(e_0, e_1, e_2, e_3)$: $n = 4$, one positive and $s = 3$ negative squares, so $i^{n(n-1)/2 + s} = i^{6 + 3} = i^9 = i$ and $\omega_{\mathbb C} = ie_0e_1e_2e_3$.
+>
+> **2. Its image.** $\gamma$ is an algebra homomorphism, so $\gamma(\omega_{\mathbb C}) = i\gamma_0\gamma_1\gamma_2\gamma_3$. With $\gamma_0 = \gamma^0$ and $\gamma_i = -\gamma^i$: $i\gamma_0\gamma_1\gamma_2\gamma_3 = i(-1)^3\gamma^0\gamma^1\gamma^2\gamma^3 = -\gamma^5$.
+>
+> **3. The opposite orientation.** $(e_1, e_0, e_2, e_3)$ is an orthonormal basis of the opposite orientation (one transposition), with the same signature, so its complex volume element is $ie_1e_0e_2e_3 = -ie_0e_1e_2e_3 = -\omega_{\mathbb C}$ (Theorem §CB.13.13, 1), and $\gamma(-\omega_{\mathbb C}) = \gamma^5$.
+>
+> **4. The square.** $\omega^2 = (-1)^{n(n-1)/2}(-1)^s = (-1)^6(-1)^3 = -1$ (Theorem §CB.13.13, 2), so $\omega_{\mathbb C}^2 = i^2\omega^2 = 1$ and $(\gamma^5)^2 = \gamma(\omega_{\mathbb C})^2 = \gamma(\omega_{\mathbb C}^2) = \mathbb 1$.
+>
+> **5. Anticommutation with the γ's.** $\omega v = (-1)^{n-1}v\omega = -v\omega$ for $v \in V$ (Theorem §CB.13.13, 3), so $\gamma^5\gamma_\mu = -\gamma_\mu\gamma^5$, and raising the index with $g^{\mu\nu}$, $\gamma^5\gamma^\mu = -\gamma^\mu\gamma^5$.
+>
+> **6. Commutation with the even part.** $\omega$ commutes with $\mathrm{Cl}^0$ (Theorem §CB.13.13, 3) — directly, $\gamma^5$ passes a product $\gamma_\mu\gamma_\nu$ with two sign changes. $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu] = \frac i4g^{\mu\alpha}g^{\nu\beta}\gamma([e_\alpha, e_\beta])$ lies in $\gamma(\mathrm{Cl}^0_{\mathbb C})$, so $[\gamma^5, S^{\mu\nu}] = 0$, the course's statement [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-4|Theorem §CB.19.4]], 1 (read in the chiral basis in [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^ex-cb-13-16|Example §CB.13.16]]).
+>
+> **What the proof shows**
+> - $\gamma^5$ is a volume element: its algebraic properties (square $1$, anticommuting with vectors, central in the even part) are those of $\omega_{\mathbb C}$ in even dimension, and nothing specific to the Dirac matrices was used.
+> - ⚑ By-product (convention): which sign of the volume element is $\gamma^5$ depends on the orientation and on whether $e_\mu$ goes to $\gamma_\mu$ or $\gamma^\mu$ (Caution above); the course's $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ is $+\omega_{\mathbb C}$ for $e_\mu \mapsto \gamma^\mu$ and $-\omega_{\mathbb C}$ for Clifford multiplication.
+
+^pf-cb-19-2
+
+*Uses:* [[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-4|Def. §CB.14.4]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-13|Theorem §CB.13.13]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|Def. §CB.13.14]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-16|Def. §CB.15.16]]
+
+> [!theorem] Theorem §CB.19.3: The Dirac Module Restricted to SL(2,ℂ) Is (½, 0) ⊕ (0, ½)
+> Restricted to $\mathrm{Spin}(1,3)_0 \cong SL(2, \mathbb C)$ ([[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-12|Theorem §CB.17.12]]), the Dirac module is $S = S^-\oplus S^+$, $S^\pm$ the $\pm1$ eigenspaces of $\gamma^5$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-2|Theorem §CB.19.2]]); $S^-$ and $S^+$ are invariant, irreducible, two-dimensional and inequivalent ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]]; Step 6 below). If $x \in \mathrm{Spin}(1,3)_0$ and $\lambda = \theta(\phi(x))$ is the element with $\rho(x) = \pi(\lambda)$ (Theorem §CB.17.12, 2), then $x$ acts on $S^-$ by a matrix equivalent to $\lambda$ and on $S^+$ by one equivalent to $(\lambda^\dagger)^{-1}$: $S^- = (\frac12, 0)$ and $S^+ = (0, \frac12)$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]]). In particular $\gamma(x_\omega) = \Lambda_{1/2}(\omega)$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]]) for $x_\omega = \exp(\frac14\omega^{\mu\nu}e_\mu e_\nu) \in \mathrm{Spin}(1,3)_0$, which covers $\rho(x_\omega) = e^\omega$.
+>
+> *Source: PHY 513 TA (oral remark, Oct 2026) · Peskin & Schroeder, §3.2, through [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]] · written here · the course's version of the labels: [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]] (left-handed spinors have $\gamma^5 = -1$)*
+
+^thm-cb-19-3
+
+> [!proof]- Proof
+> **1. The spinor matrices are Clifford exponentials.** $\frac14\omega^{\alpha\beta}e_\alpha e_\beta = \sum_{\alpha<\beta}\omega^{\alpha\beta}\cdot\frac12e_\alpha e_\beta$ ($\omega$ antisymmetric) lies in $\mathfrak{spin}(1,3)$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-13|Def. §CB.15.13]]), so $x_\omega \in \mathrm{Spin}(1,3)_0$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-14|Theorem §CB.15.14]], 1; [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-5|Theorem §CB.3.5]], 2). By [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-13|Theorem §CB.17.13]], $\rho_\ast(\frac12e_\alpha e_\beta) = M_{\alpha\beta}$, so $\rho(x_\omega) = \exp(\frac12\omega^{\alpha\beta}M_{\alpha\beta}) = \exp(\frac12\omega_{\alpha\beta}M^{\alpha\beta}) = e^\omega$ ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-3|Theorem §CB.3.3]]; [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-2|Def. §CB.5.2]]). On the spinor side, $\gamma(\frac14\omega^{\alpha\beta}e_\alpha e_\beta) = \frac14\omega^{\alpha\beta}\gamma_\alpha\gamma_\beta = \frac14\omega_{\alpha\beta}\gamma^\alpha\gamma^\beta$ (moving the metric from the $\gamma$'s to $\omega$), and
+>
+> $$
+> -\tfrac i2\omega_{\alpha\beta}S^{\alpha\beta} = -\tfrac i2\cdot\tfrac i4\,\omega_{\alpha\beta}\bigl(\gamma^\alpha\gamma^\beta - \gamma^\beta\gamma^\alpha\bigr) = \tfrac18\bigl(\omega_{\alpha\beta}\gamma^\alpha\gamma^\beta + \omega_{\beta\alpha}\gamma^\beta\gamma^\alpha\bigr) = \tfrac14\omega_{\alpha\beta}\gamma^\alpha\gamma^\beta ,
+> $$
+>
+> using $\omega_{\alpha\beta} = -\omega_{\beta\alpha}$ and relabelling. $\gamma$ is a continuous algebra homomorphism, so it maps the exponential series term by term: $\gamma(x_\omega) = \exp(-\frac i2\omega_{\alpha\beta}S^{\alpha\beta}) = \Lambda_{1/2}(\omega)$.
+>
+> **2. The halves are invariant.** $\gamma(\mathrm{Spin}(1,3)_0) \subset \gamma(\mathrm{Cl}^0)$ commutes with $\gamma^5$ (Theorem §CB.19.2). If $\gamma^5\psi = \pm\psi$, then $\gamma^5\gamma(x)\psi = \gamma(x)\gamma^5\psi = \pm\gamma(x)\psi$. Since $(\gamma^5)^2 = \mathbb 1$, $S = S^-\oplus S^+$ via $\psi = \frac12(\mathbb 1 - \gamma^5)\psi + \frac12(\mathbb 1 + \gamma^5)\psi$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|Theorem §CB.13.15]]).
+>
+> **3. The even generators in the chiral basis.** With $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, $\gamma^i = \begin{pmatrix}0 & \sigma^i\\ -\sigma^i & 0\end{pmatrix}$ (Example §CB.12.13), $\gamma_0 = \gamma^0$, $\gamma_i = -\gamma^i$:
+>
+> $$
+> \gamma(f_i) = \gamma_i\gamma_0 = \begin{pmatrix}0 & -\sigma^i\\ \sigma^i & 0\end{pmatrix}\begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix} = \begin{pmatrix}-\sigma^i & 0\\ 0 & \sigma^i\end{pmatrix} ,
+> $$
+>
+> and $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$ (Example §CB.13.16, 1): $S^-$ is the upper block ($\psi_L$), $S^+$ the lower ($\psi_R$).
+>
+> **4. The whole even part.** With $\tilde\kappa(A) = \sigma^2\bar A\sigma^2$, $\tilde\kappa(\sigma^i) = -\sigma^i$ (Theorem §CB.17.12, Proof, step 2), the maps $a \mapsto \gamma(a)$ and $a \mapsto \operatorname{diag}(\tilde\kappa(\phi(a)), \phi(a))$ are real-algebra homomorphisms $\mathrm{Cl}^0(1,3) \to M_4(\mathbb C)$ that agree on the generators $f_i$ (step 3; [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-11|Theorem §CB.17.11]]), hence everywhere.
+>
+> **5. The group.** For $x \in \mathrm{Spin}(1,3)_0$, $\det\phi(x) = 1$, so $\tilde\kappa(\phi(x)) = \theta(\phi(x)) = \lambda$ (Theorem §CB.17.12, Proof, step 3) and $\phi(x) = \theta(\lambda) = (\lambda^\dagger)^{-1}$ ($\theta^2 = \mathrm{id}$). So
+>
+> $$
+> \gamma(x) = \begin{pmatrix}\lambda & 0\\ 0 & (\lambda^\dagger)^{-1}\end{pmatrix}, \qquad \rho(x) = \pi(\lambda),
+> $$
+>
+> for $x = x_\omega$, $\lambda = \pm\Lambda_L(\omega)$, matching step 1.
+>
+> **6. Labels, irreducibility, inequivalence.** On $S^-$, $x$ acts by $\lambda$, i.e. by $D^{(\frac12, 0)}(\lambda)$ ($\operatorname{Sym}^1\mathbb C^2 = \mathbb C^2$), on $S^+$ by $(\lambda^\dagger)^{-1} = D^{(0, \frac12)}(\lambda)$. Through the isomorphism $\theta\circ\phi : \mathrm{Spin}(1,3)_0 \to SL(2, \mathbb C)$ (Theorem §CB.17.12) these are irreducible, of dimension $2$, and inequivalent (Theorem §CB.18.10; directly, [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-18|Theorem §CB.8.18]]). $-1 \in \mathrm{Spin}(1,3)_0$ has $\lambda = -\mathbb 1$ and acts as $-\mathbb 1_4$: the module is spinorial.
+>
+> **7. Any other basis.** Dirac matrices in another basis are $U\gamma^\mu U^{-1}$ ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-15|Theorem §CB.12.15]]); then $\gamma$ and $\gamma^5$ are conjugated by $U$, which maps the eigenspaces of $\gamma^5$ onto those of $U\gamma^5U^{-1}$ and intertwines the actions. So steps 2–6 hold in every basis.
+>
+> **What the proof shows**
+> - Step 5 is the course's form $\operatorname{diag}(\lambda, (\lambda^\dagger)^{-1})$ of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]], 2.
+> - The course's pair $(\Lambda_L, \Lambda_R)$ is the action of the spin group through the Clifford algebra: $\Lambda_{1/2}(\omega)$ is literally $\gamma(\exp\frac14\omega^{\mu\nu}e_\mu e_\nu)$.
+> - ⚑ By-product (convention): the left-handed half carries $\lambda = \theta(\phi(x))$, not $\phi(x)$; with the Clifford identification $\phi$ alone the labels $(\frac12, 0)$, $(0, \frac12)$ would be exchanged (Theorem §CB.18.10, Proof).
+> - Used next: Clifford multiplication between the halves (Theorem §CB.19.9) and the vector as a bispinor (Theorem §CB.19.10).
+
+^pf-cb-19-3
+
+*Uses:* [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-13|Def. §CB.15.13]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-14|Theorem §CB.15.14]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-3|Theorem §CB.3.3]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-5|Theorem §CB.3.5]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-11|Theorem §CB.17.11]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-12|Theorem §CB.17.12]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-13|Theorem §CB.17.13]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-2|Theorem §CB.19.2]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-18|Theorem §CB.8.18]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-2|Def. §CB.5.2]], [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]], [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-15|Theorem §CB.12.15]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^ex-cb-13-16|Example §CB.13.16]]
+
+The same split from the volume element alone, without the spin group (the course's route, PS §3.4, p. 50); in the course's chiral basis it is read off in [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]] and [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]] (physics):
+
+> [!theorem] Theorem §CB.19.4: γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module
+> For $4\times4$ Dirac matrices ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]]) on $S = \mathbb C^4$, with $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|Def. §CB.13.14]]), the spinor generators $S^{\mu\nu}$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-16|Def. §CB.15.16]]), $J_i = \frac12\varepsilon_{ijk}S^{jk}$, $K_i = S^{0i}$ and $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$:
+> 1. $[\gamma^5, S^{\mu\nu}] = 0$, hence $\Lambda_{1/2}^{-1}\gamma^5\Lambda_{1/2} = \gamma^5$ for every $\Lambda_{1/2}$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]]): $\gamma^5$ is a Lorentz scalar. Moreover $K_i = i\gamma^5J_i$, so $\mathbf J_\pm = \frac12(\mathbb 1 \mp \gamma^5)\,\mathbf J$.
+> 2. In every basis, $S = S^-\oplus S^+$, the eigenspaces of $\gamma^5$ for $-1$ and $+1$; both are two-dimensional and invariant under every $S^{\mu\nu}$ and every $\Lambda_{1/2}$.
+> 3. On $S^-$, $\mathbf J_- = 0$ and $\mathbf J_+ = \mathbf J$ has spin ½; on $S^+$, $\mathbf J_+ = 0$ and $\mathbf J_- = \mathbf J$ has spin ½. So $S^- \cong (\frac12, 0)$ and $S^+ \cong (0, \frac12)$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-3|Def. §CB.18.3]]).
+> 4. $e^{-2\pi iJ_3} = -\mathbb 1$: the representation is spinorial ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-26|Def. §CB.15.26]]).
+>
+> Theorem §CB.19.3 reaches the same split through the spin group and $SL(2, \mathbb C)$; this theorem reaches it from the volume element alone, without choosing a basis.
+>
+> *Source: PS §3.4, p. 50 ("$[\gamma^5, S^{\mu\nu}] = 0$. Thus the Dirac representation must be reducible …"), eq. (3.72) · Yu §5.1, eq. (5.36) ($\gamma^5$ a Lorentz scalar) · PHY 513 Lecture 7, Part B ("4 dim. Dirac spinor representation is reducible") · the user's PHY 513 notes, Ch. 8 §8.2 ("How the two halves transform"), Ch. 9 §9.6 · part 1 as in the course (first written for [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]]) · the basis-free route ($K_i = i\gamma^5J_i$ and parts 2–4) written here*
+
+^thm-cb-19-4
+
+> [!proof]- Proof
+> **1. γ⁵ commutes with products of two γ's.** $\gamma^5\gamma^\mu\gamma^\nu = -\gamma^\mu\gamma^5\gamma^\nu = \gamma^\mu\gamma^\nu\gamma^5$ (Theorem §CB.13.15, twice). Hence $\gamma^5$ commutes with $[\gamma^\mu, \gamma^\nu]$ and with $S^{\mu\nu}$, with every power of $A = -\frac i2\omega_{\mu\nu}S^{\mu\nu}$, and with $\Lambda_{1/2} = e^A$: $\Lambda_{1/2}^{-1}\gamma^5\Lambda_{1/2} = \gamma^5$.
+>
+> **2. K = iγ⁵J.** Let $(i, j, k)$ be a cyclic permutation of $(1, 2, 3)$. Then $J_i = \frac12(S^{jk} - S^{kj}) = S^{jk} = \frac i2\gamma^j\gamma^k$ and $K_i = S^{0i} = \frac i2\gamma^0\gamma^i$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-16|Def. §CB.15.16]]). A cyclic permutation of three anticommuting factors is two transpositions, so $\gamma^1\gamma^2\gamma^3 = \gamma^i\gamma^j\gamma^k$ and $\gamma^5 = i\gamma^0\gamma^i\gamma^j\gamma^k$. Then
+>
+> $$
+> \gamma^5J_i = i\cdot\tfrac i2\,\gamma^0\gamma^i\,(\gamma^j\gamma^k\gamma^j\gamma^k) = -\tfrac12\gamma^0\gamma^i\bigl(-(\gamma^j)^2(\gamma^k)^2\bigr) = -\tfrac12\gamma^0\gamma^i\bigl(-(-1)(-1)\bigr) = \tfrac12\gamma^0\gamma^i = -iK_i ,
+> $$
+>
+> using $\gamma^k\gamma^j = -\gamma^j\gamma^k$ and $(\gamma^j)^2 = (\gamma^k)^2 = -\mathbb 1$. So $K_i = i\gamma^5J_i$, and $\mathbf J_\pm = \frac12(\mathbf J \pm i\cdot i\gamma^5\mathbf J) = \frac12(\mathbb 1 \mp \gamma^5)\mathbf J$.
+>
+> **3. The two eigenspaces.** $(\gamma^5)^2 = \mathbb 1$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|Theorem §CB.13.15]]), so $P_\mp = \frac12(\mathbb 1 \mp \gamma^5)$ are complementary projections and $S = P_-S\oplus P_+S = S^-\oplus S^+$. $\operatorname{tr}\gamma^5 = 0$ (the same theorem), so the eigenvalues $-1$ and $+1$ occur equally often: $\dim S^\pm = 2$. A map commuting with $\gamma^5$ maps each eigenspace into itself; this holds for every $S^{\mu\nu}$ (step 1) and for $\Lambda_{1/2}$, a power series in them. In another basis everything is conjugated by the change-of-basis matrix ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-15|Theorem §CB.12.15]]), which maps eigenspaces to eigenspaces.
+>
+> **4. The labels.** On $S^-$, $\gamma^5 = -1$, so by step 2 $\mathbf J_+ = \mathbf J$ and $\mathbf J_- = 0$; on $S^+$ the reverse. The $J_i$ obey $[J_i, J_j] = i\varepsilon_{ijk}J_k$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-18|Theorem §CB.15.18]] for spatial indices), and $J_i^2 = -\frac14\gamma^j\gamma^k\gamma^j\gamma^k = \frac14(\gamma^j)^2(\gamma^k)^2 = \frac14\mathbb 1$. On the two-dimensional $S^-$, $J_3 = -i[J_1, J_2]$ is a commutator, so it is traceless; $J_3^2 = \frac14$ makes it diagonalizable with eigenvalues in $\{\frac12, -\frac12\}$, so its weights are $\frac12$ and $-\frac12$, once each, which by [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-7|Theorem §CB.10.7]] is spin ½. With $\mathbf J_- = 0$ this is $(\frac12, 0)$ (Def. §CB.18.3 with $j_+ = \frac12$, $j_- = 0$); likewise $S^+ \cong (0, \frac12)$.
+>
+> **5. The 2π rotation.** $(2J_3)^2 = \mathbb 1$, so $e^{-2\pi iJ_3} = e^{-i\pi(2J_3)} = \cos\pi\,\mathbb 1 - i\sin\pi\,(2J_3) = -\mathbb 1$.
+>
+> **What the proof shows**
+> - No basis was chosen: the splitting is fixed by $\gamma^5$ alone, and any basis adapted to $S^-\oplus S^+$ makes all six generators block diagonal (in physics: the chiral basis, where $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]]).
+> - $S^\pm$ are irreducible and inequivalent ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-5|Theorem §CB.18.5]]): the half-spin representations, as in Theorem §CB.19.3.
+
+^pf-cb-19-4
+
+*Uses:* [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|Def. §CB.13.14]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|Theorem §CB.13.15]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-16|Def. §CB.15.16]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-18|Theorem §CB.15.18]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-7|Theorem §CB.10.7]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-3|Def. §CB.18.3]]
+
+The course's comparison with the vector representation (first written in [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]); its proof reads the Casimirs and the $2\pi$ rotation off the classification of §CB.18 (the course's chiral-basis computation follows as a remark):
+
+> [!theorem] Theorem §CB.19.5: The Dirac Representation Is Not the Vector Representation
+> The Dirac representation ($n = 4$ in [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]]) and the vector representation ([[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-2|Def. §CB.5.2]]) are both four-dimensional, but they are inequivalent ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-8|Def. §CB.3.8]]); these are the two tests of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-18-2|§CB.18, Remark: Sums versus products]]:
+> 1. on the Dirac representation the Casimirs ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-5|Theorem §CB.18.5]]) are $\mathbf J_+^2 = \operatorname{diag}(\frac34, \frac34, 0, 0)$ and $\mathbf J_-^2 = \operatorname{diag}(0, 0, \frac34, \frac34)$, on the vector representation $\mathbf J_\pm^2 = \frac34\mathbb 1$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-7|Theorem §CB.18.7]]);
+> 2. a rotation by $2\pi$ is $-\mathbb 1$ on Dirac spinors and $+\mathbb 1$ on four-vectors;
+> 3. under rotations the Dirac spinor is spin $\frac12\oplus\frac12$, the vector spin $0\oplus1$.
+>
+> *Source: the user's PHY 513 notes, Ch. 8 §8.1 (paragraph "Same dimension, different representation"), §8.2 (Derivation "… related by conjugation", paragraph "Why the Dirac spinor is not (½, ½)"; checked numerically there) · PHY 513 Lecture 7, Part B ("Unlike a 4-vector under rotation: spin-0 (time) and spin-1 (space)")*
+
+^thm-cb-19-5
+
+> [!derivation]- Derivation
+> *From the Clifford-module statements; the course's computation with the chiral-basis matrices is the remark below.*
+>
+> **1. Casimirs.** By [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|Theorem §CB.19.3]] the Dirac module restricted to $SL(2, \mathbb C)$ is $S^-\oplus S^+$ with $S^- = (\frac12, 0)$ and $S^+ = (0, \frac12)$, so in a basis adapted to $S^-\oplus S^+$, $\mathbf J_+^2 = \operatorname{diag}(\frac34, \frac34, 0, 0)$ and $\mathbf J_-^2 = \operatorname{diag}(0, 0, \frac34, \frac34)$, by $\mathbf J_\pm^2 = j_\pm(j_\pm + 1)$ on $(j_+, j_-)$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-5|Theorem §CB.18.5]]). On the vector representation both are $\frac34\mathbb 1$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-7|Theorem §CB.18.7]]). An equivalence $D_{\rm Dirac} = UD_{\rm vec}U^{-1}$ would give $\mathbf J_+^2|_{\rm Dirac} = U\frac34\mathbb 1U^{-1} = \frac34\mathbb 1$: false.
+>
+> **2. 2π rotation.** A rotation by $2\pi$ acts on $(j_+, j_-)$ as $(-1)^{2(j_+ + j_-)}$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|Theorem §CB.18.8]], 2): as $-\mathbb 1_4$ on $(\frac12, 0)\oplus(0, \frac12)$ and as $+\mathbb 1_4$ on $(\frac12, \frac12)$; an equivalence maps $+\mathbb 1$ to $+\mathbb 1$.
+>
+> **3. Rotation content.** Under rotations $(j_+, j_-)$ contains the spins $|j_+ - j_-|, \dots, j_+ + j_-$ once each (Theorem §CB.18.8, 1): $(\frac12, 0)\oplus(0, \frac12)$ is spin $\frac12\oplus\frac12$, $(\frac12, \frac12)$ is spin $0\oplus1$ (directly: $\mathbf J^2 = \operatorname{diag}(0, 2, 2, 2)$ on the vector, Theorem §CB.18.7).
+>
+> **What the derivation shows**
+> - In the Dirac spinor no component feels both copies $\mathbf J_\pm$ (a direct sum, $2 + 2$); in the vector every component feels both (a product, $2\times2$). The equality of dimensions is a coincidence of four dimensions ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-4|§C5a.5, Remark: What each Dirac index labels]]).
+
+^der-cb-19-5
+
+*Uses:* [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|Theorem §CB.19.3]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-5|Theorem §CB.18.5]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-7|Theorem §CB.18.7]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|Theorem §CB.18.8]]
+
+> [!remark]- Remark: The course's computation in the chiral basis
+> The same three tests read off the chiral-basis matrices, as the course does in [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]; here each step is tied to its CB home.
+>
+> **1. Casimirs.** For the chiral matrices of [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]], block multiplication gives $\gamma^i\gamma^j = -\operatorname{diag}(\sigma^i\sigma^j, \sigma^i\sigma^j) = -i\varepsilon_{ijk}\operatorname{diag}(\sigma^k, \sigma^k)$ for $i \ne j$, so $S^{ij} = \frac i2\gamma^i\gamma^j = \frac12\varepsilon_{ijk}\Sigma^k$ with $\Sigma^k = \operatorname{diag}(\sigma^k, \sigma^k)$, i.e. $\mathbf J = \frac12\boldsymbol\Sigma$; and $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^ex-cb-13-16|Example §CB.13.16]]). By [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-4|Theorem §CB.19.4]], 1, $\mathbf J_+ = \frac12(\mathbb 1 - \gamma^5)\mathbf J = \frac12\operatorname{diag}(\boldsymbol\sigma, 0)$ and $\mathbf J_- = \frac12(\mathbb 1 + \gamma^5)\mathbf J = \frac12\operatorname{diag}(0, \boldsymbol\sigma)$, so $\mathbf J_+^2 = \frac14\operatorname{diag}(\boldsymbol\sigma\cdot\boldsymbol\sigma, 0) = \frac14\operatorname{diag}(3\cdot\mathbb 1, 0)$ ($\sigma_k^2 = \mathbb 1$ for each $k$); likewise $\mathbf J_-^2 = \frac14\operatorname{diag}(0, 3\cdot\mathbb 1)$. On the vector representation both are $\frac34\mathbb 1$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-7|Theorem §CB.18.7]]). An equivalence $D_{\rm Dirac} = UD_{\rm vec}U^{-1}$ would give $\mathbf J_+^2|_{\rm Dirac} = U\frac34\mathbb 1U^{-1} = \frac34\mathbb 1$: false.
+>
+> **2. 2π rotation.** With $J_3 = \frac12\Sigma^3$, $e^{-2\pi iJ_3} = \operatorname{diag}(e^{-i\pi\sigma^3}, e^{-i\pi\sigma^3}) = -\mathbb 1_4$ (Theorem §CB.19.4, 4), against $+\mathbb 1_4$ on the vector ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|Theorem §CB.18.8]], 2, for $(\frac12, \frac12)$); an equivalence maps $+\mathbb 1$ to $+\mathbb 1$.
+>
+> **3. Rotation content.** $\mathbf J = \frac12\boldsymbol\Sigma$ is spin ½ on each block; on the vector, $\mathbf J^2 = \operatorname{diag}(0, 2, 2, 2)$ (Theorem §CB.18.7): spin $0$ on $v^0$, spin $1$ on $\mathbf v$.
+>
+> **What the derivation shows**
+> - In the Dirac spinor no component feels both copies $\mathbf J_\pm$ (a direct sum, $2 + 2$); in the vector every component feels both (a product, $2\times2$). The equality of dimensions is a coincidence of four dimensions ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-4|§C5a.5, Remark: What each Dirac index labels]]).
+>
+> *Uses:* [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^ex-cb-13-16|Example §CB.13.16]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-4|Theorem §CB.19.4]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-7|Theorem §CB.18.7]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|Theorem §CB.18.8]] · the course's boxes for the same steps: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|Theorem §C3.2.9]]
+
+^rem-cb-19-3
+
+> [!theorem] Theorem §CB.19.6: The Two Halves Are Complex Conjugates of Each Other
+> As representations of $SL(2, \mathbb C)$, $S^- \cong \overline{S^+}$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-7|Def. §CB.8.7]]) and $S^\pm \cong (S^\pm)^\ast$ via $\varepsilon$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-18|Theorem §CB.8.18]]); more generally $\overline{(j_+, j_-)} \cong (j_-, j_+)$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-8|Theorem §CB.8.8]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.4.6, Ch. 8 §8.2 · the algebra form: [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-14|Theorem §CB.18.14]] · the group-level proof written here*
+
+^thm-cb-19-6
+
+> [!proof]- Proof
+> By Theorem §CB.19.3, $S^-$ carries $\lambda$ and $S^+$ carries $\theta(\lambda) = (\lambda^\dagger)^{-1}$, $\lambda \in SL(2, \mathbb C)$. Let $\varepsilon = \begin{pmatrix}0 & 1\\ -1 & 0\end{pmatrix}$, a real matrix.
+>
+> **1. Two ε-identities.** By [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]], 2, $(\lambda^{-1})^{\mathsf T} = \varepsilon\lambda\varepsilon^{-1}$; and $\theta(\lambda) = \varepsilon\bar\lambda\varepsilon^{-1}$ (Theorem §CB.17.12, Proof, step 3, with $\varepsilon\bar A\varepsilon^{-1} = \sigma^2\bar A\sigma^2$). Conjugating the second entrywise ($\varepsilon$ is real): $\overline{\theta(\lambda)} = \varepsilon\lambda\varepsilon^{-1}$.
+>
+> **2. The halves are conjugate.** The conjugate representation of $S^+$ has matrices $\overline{\theta(\lambda)}$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-7|Def. §CB.8.7]]) $= \varepsilon\lambda\varepsilon^{-1}$ (step 1): $\varepsilon$ is an invertible intertwiner from $S^-$ to $\overline{S^+}$. So $S^- \cong \overline{S^+}$, and conjugating again $\overline{S^-} \cong S^+$.
+>
+> **3. Each half is self-dual.** The dual of $S^-$ has matrices $(\lambda^{-1})^{\mathsf T} = \varepsilon\lambda\varepsilon^{-1}$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-6|Def. §CB.8.6]], step 1), so $(S^-)^\ast \cong S^-$ via $\varepsilon$. The dual of $S^+$ has matrices $(\theta(\lambda)^{-1})^{\mathsf T} = (\lambda^\dagger)^{\mathsf T} = \bar\lambda = \varepsilon^{-1}\theta(\lambda)\varepsilon$, so $(S^+)^\ast \cong S^+$ via $\varepsilon^{-1}$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-18|Theorem §CB.8.18]]).
+>
+> **4. General (j₊, j₋).** Entrywise conjugation commutes with tensor products and with restriction to $\operatorname{Sym}^k$ (a subspace defined by real equations), so $\overline{D^{(j_+, j_-)}(\lambda)} = \operatorname{Sym}^{2j_+}(\bar\lambda)\otimes\operatorname{Sym}^{2j_-}(\overline{\theta(\lambda)})$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]]). By step 1, $\bar\lambda = \varepsilon^{-1}\theta(\lambda)\varepsilon$ and $\overline{\theta(\lambda)} = \varepsilon\lambda\varepsilon^{-1}$; $\operatorname{Sym}^k$ of a conjugation is a conjugation by $\operatorname{Sym}^k(\varepsilon^{\mp1})$. Hence $\overline{D^{(j_+, j_-)}} \cong \operatorname{Sym}^{2j_+}(\theta(\lambda))\otimes\operatorname{Sym}^{2j_-}(\lambda)$, and the flip $u\otimes w \mapsto w\otimes u$ is an intertwiner onto $\operatorname{Sym}^{2j_-}(\lambda)\otimes\operatorname{Sym}^{2j_+}(\theta(\lambda)) = D^{(j_-, j_+)}(\lambda)$.
+>
+> **What the proof shows**
+> - One invariant, $\varepsilon$, does all three jobs: it relates a half to its conjugate, to its dual, and (step 4) exchanges $j_+$ and $j_-$ under conjugation; at the algebra level this is [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-8|Theorem §CB.8.8]].
+> - Used in the ★ Remark on Majorana spinors below: a conjugate-linear map can exchange $S^+$ and $S^-$.
+
+^pf-cb-19-6
+
+*Uses:* [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-6|Def. §CB.8.6]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-7|Def. §CB.8.7]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-18|Theorem §CB.8.18]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-12|Theorem §CB.17.12]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|Theorem §CB.19.3]]
+
+## Clifford multiplication, vectors and two-forms
+
+The course's statements (first written in [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]): the finite form of [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-17|Theorem §CB.15.17]], and Clifford multiplication as an intertwiner, used by the theorem after them:
+
+> [!theorem] Theorem §CB.19.7: The Dirac Matrices Are an Invariant Vector of Matrices
+> For $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]]) and $\Lambda = \exp(-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu})$ ([[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-2|Def. §CB.5.2]]) built from the same $\omega$:
+> 1. $\Lambda_{1/2}^{-1}\,\gamma^\mu\,\Lambda_{1/2} = \Lambda^\mu{}_\nu\,\gamma^\nu$;
+> 2. $\Lambda_{1/2}^{-1}S^{\mu\nu}\Lambda_{1/2} = \Lambda^\mu{}_\rho\Lambda^\nu{}_\sigma S^{\rho\sigma}$, $\Lambda_{1/2}^{-1}\gamma_\mu\Lambda_{1/2} = (\Lambda^{-1})^\nu{}_\mu\gamma_\nu$, and $\Lambda_{1/2}^{-1}\mathbb 1\Lambda_{1/2} = \mathbb 1$;
+> 3. in the chiral basis, with the Weyl matrices and $\sigma^\mu$, $\bar\sigma^\mu$ of [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^def-cb-17-6|Def. §CB.17.6]] and [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-21|Def. §CB.0.21]], $\Lambda_L^{-1}\sigma^\mu\Lambda_R = \Lambda^\mu{}_\nu\sigma^\nu$ and $\Lambda_R^{-1}\bar\sigma^\mu\Lambda_L = \Lambda^\mu{}_\nu\bar\sigma^\nu$.
+>
+> *Source: PS §3.2, eq. (3.29) · PHY 513 Lecture 8, Part A (slides "'Transformation' of $\gamma^\mu$") · the user's PHY 513 notes, Ch. 8 §8.1 (Derivation "The covariance of $\gamma^\mu$: finite transformations", eq. (gammacov), with its second proof and corollaries) · Yu §5.1, eqs. (5.17)–(5.31) · the user's pre-course notes, §5.1, eq. (gamma-vector)*
+
+^thm-cb-19-7
+
+> [!derivation]- Derivation
+> Let $A = -\frac i2\omega_{\rho\sigma}S^{\rho\sigma}$, so $\Lambda_{1/2} = e^A$, and recall $-\frac i2\omega_{\rho\sigma}(\mathcal J^{\rho\sigma})^\mu{}_\nu = \omega^\mu{}_\nu$, so $\Lambda = e^{\omega}$ ([[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-3|Theorem §CB.5.3]]).
+>
+> **1. The infinitesimal statement.** By Theorem §CB.15.17, $[\gamma^\mu, A] = -\frac i2\omega_{\rho\sigma}[\gamma^\mu, S^{\rho\sigma}] = -\frac i2\omega_{\rho\sigma}(\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu = \omega^\mu{}_\nu\gamma^\nu$.
+>
+> **2. Two curves.** For $t \in [0, 1]$ put $F^\mu(t) = e^{-tA}\gamma^\mu e^{tA}$ and $G^\mu(t) = (e^{t\omega})^\mu{}_\nu\gamma^\nu$, four matrices each; $F^\mu(0) = G^\mu(0) = \gamma^\mu$.
+>
+> **3. The same linear equation.** $\frac{d}{dt}F^\mu = e^{-tA}(-A\gamma^\mu + \gamma^\mu A)e^{tA} = e^{-tA}[\gamma^\mu, A]e^{tA} = \omega^\mu{}_\nu e^{-tA}\gamma^\nu e^{tA} = \omega^\mu{}_\nu F^\nu$, by step 1 (the numbers $\omega^\mu{}_\nu$ pass through $e^{\pm tA}$). And $\frac{d}{dt}G^\mu = (\omega e^{t\omega})^\mu{}_\nu\gamma^\nu = \omega^\mu{}_\kappa G^\kappa$.
+>
+> **4. Uniqueness.** The difference $D^\mu = F^\mu - G^\mu$ obeys $\dot D^\mu = \omega^\mu{}_\nu D^\nu$, $D^\mu(0) = 0$. Then $\frac{d}{dt}\bigl[(e^{-t\omega})^\kappa{}_\mu D^\mu(t)\bigr] = -(e^{-t\omega}\omega)^\kappa{}_\mu D^\mu + (e^{-t\omega})^\kappa{}_\mu\omega^\mu{}_\nu D^\nu = 0$ ($\omega$ commutes with $e^{-t\omega}$), so $(e^{-t\omega})^\kappa{}_\mu D^\mu(t) = 0$ for all $t$; multiplying by $e^{t\omega}$, $D \equiv 0$. At $t = 1$: $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$.
+>
+> **5. Part 2.** $\Lambda_{1/2}^{-1}[\gamma^\mu, \gamma^\nu]\Lambda_{1/2} = [\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2}, \Lambda_{1/2}^{-1}\gamma^\nu\Lambda_{1/2}]$ (insert $\Lambda_{1/2}\Lambda_{1/2}^{-1}$ between the factors) $= \Lambda^\mu{}_\rho\Lambda^\nu{}_\sigma[\gamma^\rho, \gamma^\sigma]$; times $\frac i4$ this is the law for $S$. For the lower index, $\gamma_\mu = g_{\mu\nu}\gamma^\nu$ gives $\Lambda_{1/2}^{-1}\gamma_\mu\Lambda_{1/2} = g_{\mu\nu}\Lambda^\nu{}_\rho g^{\rho\kappa}\gamma_\kappa$, and $\Lambda^{\mathsf T}g\Lambda = g$ means $\Lambda^{-1} = g^{-1}\Lambda^{\mathsf T}g$, i.e. $(\Lambda^{-1})^\kappa{}_\mu = g^{\kappa\rho}\Lambda^\nu{}_\rho g_{\nu\mu}$, which is the coefficient found.
+>
+> **6. Part 3.** In the chiral basis $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$ (Theorem §CB.19.3), and block multiplication gives $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \begin{pmatrix}0 & \Lambda_L^{-1}\sigma^\mu\Lambda_R\\ \Lambda_R^{-1}\bar\sigma^\mu\Lambda_L & 0\end{pmatrix}$; compare the blocks of part 1. Since $\Lambda_L^{-1} = \Lambda_R^\dagger$ and $\Lambda_R^{-1} = \Lambda_L^\dagger$ ([[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-7|Theorem §CB.17.7]], 2), these are the invariance statements of [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-8|Theorem §CB.17.8]], 2, obtained here independently.
+>
+> **What the derivation shows**
+> - Transforming the two spinor indices of $\gamma^\mu$ is the same as transforming its vector index: $\gamma^\mu$ is an invariant tensor with one vector slot and two spinor slots, as $g_{\mu\nu}$ is with two vector slots. "Take the vector index on $\gamma^\mu$ seriously" (PS): $\gamma^\mu\partial_\mu$ is a Lorentz-invariant operator on spinors ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]), and $\bar\psi\gamma^\mu\psi$ a vector ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]).
+> - Part 2 for $S$ is the general law "the generators transform as a tensor" ([[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]]) for the Dirac representation.
+> - Only the matched pair works: $\Lambda$ and $\Lambda_{1/2}$ from the same six numbers. The two-valuedness of $\Lambda_{1/2}$ is invisible here, since $\pm\Lambda_{1/2}$ give the same conjugation.
+
+^der-cb-19-7
+
+> [!derivation]- Derivation (second route: the nested-commutator series)
+> **1. The series.** For matrices $A$, $B$ define $[B, A]_{(0)} = B$, $[B, A]_{(n+1)} = [[B, A]_{(n)}, A]$. The function $f(t) = e^{-tA}Be^{tA}$ satisfies $f'(t) = e^{-tA}[B, A]e^{tA}$ (as in step 3 above), and by induction $f^{(n)}(t) = e^{-tA}[B, A]_{(n)}e^{tA}$; $f$ is entire in $t$ (products of exponential series), so its Taylor series at $0$ converges at $t = 1$: $e^{-A}Be^A = \sum_{n\ge0}\frac1{n!}[B, A]_{(n)}$ (Yu (5.23), proved there by the binomial rearrangement (5.18)–(5.22)).
+>
+> **2. Iterate step 1 of the first route.** $[\gamma^\mu, A]_{(1)} = \omega^\mu{}_\nu\gamma^\nu$; if $[\gamma^\mu, A]_{(n)} = (\omega^n)^\mu{}_\nu\gamma^\nu$, then $[\gamma^\mu, A]_{(n+1)} = (\omega^n)^\mu{}_\nu[\gamma^\nu, A] = (\omega^n)^\mu{}_\nu\omega^\nu{}_\kappa\gamma^\kappa = (\omega^{n+1})^\mu{}_\kappa\gamma^\kappa$.
+>
+> **3. Sum.** $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \sum_n\frac1{n!}(\omega^n)^\mu{}_\nu\gamma^\nu = (e^\omega)^\mu{}_\nu\gamma^\nu = \Lambda^\mu{}_\nu\gamma^\nu$ (Yu (5.25)–(5.27)).
+>
+> *What this route shows:* the finite law is the infinitesimal one summed to all orders, term by term; the first route reaches it through uniqueness for a linear differential equation instead.
+
+^der-cb-19-7b
+
+*Uses:* [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-17|Theorem §CB.15.17]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|Theorem §CB.19.3]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-3|Theorem §CB.5.3]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-7|Theorem §CB.17.7]]
+
+> [!theorem] Theorem §CB.19.8: Clifford Multiplication Is Lorentz Equivariant
+> Let $\Lambda = \exp(-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu})$ and $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ be built from the same $\omega$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]]). Then, for Clifford multiplication ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-1|Def. §CB.19.1]]):
+> 1. $\Lambda_{1/2}\bigl(\slashed{a}\,\psi\bigr) = \slashed{(\Lambda a)}\,\bigl(\Lambda_{1/2}\psi\bigr)$ for all $a \in V$, $\psi \in S$: moving the vector and the spinor together moves their product;
+> 2. equivalently, transforming all three slots of $\gamma^\mu$ returns it: $\Lambda^\mu{}_\nu\,\Lambda_{1/2}\,\gamma^\nu\,\Lambda_{1/2}^{-1} = \gamma^\mu$.
+>
+> Both are the covariance of $\gamma^\mu$, $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-7|Theorem §CB.19.7]]), read as a statement about an intertwiner $V\otimes S \to S$ for the Lorentz group.
+>
+> *Source: PS §3.2, eq. (3.29) · PHY 513 Lecture 8, Part A (slides "'Transformation' of $\gamma^\mu$: Derivation", "Interpretation") · the user's PHY 513 notes, Ch. 8 §8.3 (Principle "Invariant tensors with mixed slots") · the equivariance form written here*
+
+^thm-cb-19-8
+
+> [!derivation]- Derivation
+> **1. Conjugate the slash.** $\Lambda_{1/2}^{-1}\,\slashed{(\Lambda a)}\,\Lambda_{1/2} = (\Lambda a)_\mu\,\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2}$ (the numbers $(\Lambda a)_\mu$ pull out) $= (\Lambda a)_\mu\,\Lambda^\mu{}_\nu\gamma^\nu$ (Theorem §CB.19.7, 1).
+>
+> **2. Lower the index explicitly.** $(\Lambda a)_\mu = g_{\mu\rho}\Lambda^\rho{}_\sigma a^\sigma$, so the coefficient of $\gamma^\nu$ is $g_{\mu\rho}\Lambda^\rho{}_\sigma\Lambda^\mu{}_\nu\,a^\sigma = g_{\sigma\nu}a^\sigma = a_\nu$, by the defining property $g_{\mu\rho}\Lambda^\mu{}_\nu\Lambda^\rho{}_\sigma = g_{\nu\sigma}$ of a Lorentz transformation ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]). Hence $\Lambda_{1/2}^{-1}\,\slashed{(\Lambda a)}\,\Lambda_{1/2} = a_\nu\gamma^\nu = \slashed{a}$.
+>
+> **3. Part 1.** Multiply step 2 on the left by $\Lambda_{1/2}$ and apply to $\psi$: $\slashed{(\Lambda a)}\,\Lambda_{1/2}\psi = \Lambda_{1/2}\,\slashed{a}\,\psi$.
+>
+> **4. Part 2.** From Theorem §CB.19.7, 1, multiply on the left by $\Lambda_{1/2}$ and on the right by $\Lambda_{1/2}^{-1}$: $\gamma^\mu = \Lambda_{1/2}\,\Lambda^\mu{}_\nu\gamma^\nu\,\Lambda_{1/2}^{-1} = \Lambda^\mu{}_\nu\,\Lambda_{1/2}\gamma^\nu\Lambda_{1/2}^{-1}$. The three factors are the slot rules: $\Lambda$ on the Minkowski index, $\Lambda_{1/2}$ on the $S$-index (left), $\Lambda_{1/2}^{-1}$ on the $S'$-index (right) — the slot rule of Theorem §CB.0.11 with the Lorentz matrices in place of $U$.
+>
+> **What the derivation shows**
+> - This is the lecture's form $\gamma^\nu = \Lambda^\nu{}_\mu\Lambda_{1/2}\gamma^\mu\Lambda_{1/2}^{-1}$ ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-2|§C5a.4, Remark: The lecture's form of the covariance]]).
+> - Clifford multiplication is a map between representations of the Lorentz group (vector ⊗ Dirac → Dirac) that commutes with the group action; such a map is an intertwiner, and its components $(\gamma^\mu)_{ab}$ are an invariant tensor. This is why a $\gamma$ matrix never acquires a transformation of its own under a Lorentz transformation.
+> - Assumption used: $\Lambda$ and $\Lambda_{1/2}$ come from the same $\omega$, i.e. $\Lambda$ is the image of $\Lambda_{1/2}$ under the covering map $SL(2, \mathbb C) \to SO^+(1,3)$ ([[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|Theorem §CB.17.9]]); for a mismatched pair the identity fails ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-1|§C5a.4, Remark: One transformation, two matrices]]).
+> - Used next: covariance of the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]) is part 1 applied to $a = \partial$.
+
+^der-cb-19-8
+
+*Uses:* [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-7|Theorem §CB.19.7]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-1|Def. §CB.19.1]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-11|Theorem §CB.0.11]]
+
+In terms of the two halves:
+
+> [!theorem] Theorem §CB.19.9: Clifford Multiplication Exchanges the Halves Equivariantly
+> The map $V\otimes S \to S$, $a\otimes\psi \mapsto \slashed a\psi$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-1|Def. §CB.19.1]]), is an intertwiner of $SL(2, \mathbb C)$-representations ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-27|Theorem §CB.15.27]]) and maps $V\otimes S^\pm$ to $S^\mp$.
+>
+> *Source: written here · the course's form: [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-8|Theorem §CB.19.8]]*
+
+^thm-cb-19-9
+
+> [!proof]- Proof
+> **1. Equivariance.** For $x \in \mathrm{Spin}(1,3)$ and $a \in V$, $\rho(x)a = xax^{-1}$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-10|Theorem §CB.15.10]], 2), and $\gamma$ is an algebra homomorphism, so $\gamma(x)\,\slashed a\,\gamma(x)^{-1} = \gamma(xax^{-1}) = \slashed{(\rho(x)a)}$. Applied to $\gamma(x)\psi$: $\gamma(x)(\slashed a\psi) = \slashed{(\rho(x)a)}\,\gamma(x)\psi$, i.e. the map $a\otimes\psi \mapsto \slashed a\psi$ intertwines $\rho\otimes\gamma$ with $\gamma$ ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|Def. §CB.7.2]]); this is Theorem §CB.15.27 for $\mathbb R^{1,3}$, and extends complex-linearly to $V_{\mathbb C}\otimes S$. For $x = x_\omega$ (Theorem §CB.19.3) it reads $\Lambda_{1/2}(\slashed a\psi) = \slashed{(e^\omega a)}\Lambda_{1/2}\psi$, the course's [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-8|Theorem §CB.19.8]], 1.
+>
+> **2. The halves are exchanged.** $\gamma^5\slashed a = -\slashed a\gamma^5$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-2|Theorem §CB.19.2]]). If $\gamma^5\psi = \pm\psi$, then $\gamma^5\slashed a\psi = -\slashed a\gamma^5\psi = \mp\slashed a\psi$: $\slashed a$ maps $S^\pm$ to $S^\mp$.
+>
+> **What the proof shows**
+> - Equivariance is automatic: the spin group acts on vectors by conjugation inside the same algebra in which $\slashed a$ multiplies spinors. The $\gamma$'s "do not transform" because they are this intertwiner.
+
+^pf-cb-19-9
+
+*Uses:* [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-10|Theorem §CB.15.10]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|Def. §CB.7.2]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-2|Theorem §CB.19.2]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|Theorem §CB.19.3]]
+
+> [!theorem] Theorem §CB.19.10: The Complexified Vector Is S⁺ ⊗ S⁻
+> The map $V_{\mathbb C} \to \operatorname{Hom}(S^+, S^-) \cong (S^+)^\ast\otimes S^- \cong S^+\otimes S^-$, $a \mapsto \slashed a|_{S^+}$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-9|Theorem §CB.19.9]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-9|Theorem §CB.8.9]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]]), is an equivalence of $SL(2, \mathbb C)$-representations: $V_{\mathbb C} \cong (\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$. In the chiral basis ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]]) $\slashed a|_{S^+} : S^+ \to S^-$ has the matrix $a_\mu\sigma^\mu$, the course's $X$ for $a$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-21|Def. §CB.0.21]]), and $\slashed a|_{S^-} : S^- \to S^+$ has $a_\mu\bar\sigma^\mu$: $\sigma^\mu$ is an invariant tensor ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-10|Def. §CB.8.10]]) with one vector, one undotted and one dotted index.
+>
+> *Source: the user's PHY 513 notes, Ch. 8 §8.2 and Peskin & Schroeder, §3.2, through [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]] and [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-6|Theorem §C5a.5.6]] · written here*
+
+^thm-cb-19-10
+
+> [!proof]- Proof
+> **1. An intertwiner.** By [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-9|Theorem §CB.19.9]], $\Phi(a) = \slashed a|_{S^+}$ lies in $\operatorname{Hom}(S^+, S^-)$, and $\Phi$ is complex-linear on $V_{\mathbb C}$. $\operatorname{Hom}(S^+, S^-)$ carries $x\cdot T = \gamma(x)|_{S^-}\,T\,(\gamma(x)|_{S^+})^{-1}$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-9|Theorem §CB.8.9]]). Restricting $\gamma(x)\slashed a\gamma(x)^{-1} = \slashed{(\rho(x)a)}$ (Theorem §CB.19.9, Proof, step 1) to $S^+$, where $\gamma(x)$ preserves both halves: $x\cdot\Phi(a) = \Phi(\rho(x)a)$.
+>
+> **2. The matrix.** In the chiral basis $\slashed a = a_\mu\gamma^\mu = \begin{pmatrix}0 & a_\mu\sigma^\mu\\ a_\mu\bar\sigma^\mu & 0\end{pmatrix}$ (Example §CB.12.13). $S^+$ is the lower block (Theorem §CB.19.3, Proof, step 3), and $\slashed a\binom{0}{\psi_R} = \binom{a_\mu\sigma^\mu\psi_R}{0}$: the matrix of $\Phi(a)$ is $a_\mu\sigma^\mu$. Likewise $\slashed a\binom{\psi_L}{0} = \binom{0}{a_\mu\bar\sigma^\mu\psi_L}$.
+>
+> **3. Injective.** $\mathbb 1, \sigma^1, \sigma^2, \sigma^3$ are linearly independent over $\mathbb C$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-22|Theorem §CB.0.22]], 4), so $a_\mu\sigma^\mu = 0$ forces $a_\mu = 0$, also for complex $a$. (A null complex $a$ has $\slashed a\,\slashed a = 0$ but $\slashed a \ne 0$; injectivity comes from the two blocks, not from $\slashed a\,\slashed a = q(a)$.)
+>
+> **4. An equivalence.** $\dim V_{\mathbb C} = 4 = 2\cdot2 = \dim\operatorname{Hom}(S^+, S^-)$, so $\Phi$ is an invertible intertwiner. Further $\operatorname{Hom}(S^+, S^-) \cong (S^+)^\ast\otimes S^-$ (Theorem §CB.8.9) and $(S^+)^\ast \cong S^+$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-6|Theorem §CB.19.6]]), so $V_{\mathbb C} \cong S^+\otimes S^-$. In terms of $\lambda$ (Theorem §CB.19.3) this is $(\lambda^\dagger)^{-1}\otimes\lambda$, and the flip of the two factors is an intertwiner onto $\lambda\otimes(\lambda^\dagger)^{-1} = D^{(\frac12, \frac12)}(\lambda)$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]]).
+>
+> **5. The invariant tensor.** $\Phi \in V_{\mathbb C}'\otimes\operatorname{Hom}(S^+, S^-)$ is fixed by the group (Theorem §CB.8.9, [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-10|Def. §CB.8.10]]), with $\Phi(e_\mu) = \sigma_\mu = g_{\mu\nu}\sigma^\nu$: the array $\sigma^\mu$ with one vector index, one index of $S^-$ (undotted) and one of $(S^+)^\ast$ (dotted, [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-18|Theorem §CB.8.18]]). Check against the course: with $D_{S^-}(x) = \lambda$, $D_{S^+}(x) = (\lambda^\dagger)^{-1}$, step 1 reads $\lambda\,(a_\mu\sigma^\mu)\,\lambda^\dagger = (\rho(x)a)_\mu\sigma^\mu$, which for $\lambda = \Lambda_L(\omega)$, $\rho(x) = e^\omega$ is [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-8|Theorem §CB.17.8]], 1.
+>
+> **What the proof shows**
+> - ⚑ By-product (convention, resolving the choice left open before): with Clifford multiplication $\slashed a = a_\mu\gamma^\mu$ and the chiral basis, the map from right- to left-handed spinors is $a_\mu\sigma^\mu$ and the reverse map is $a_\mu\bar\sigma^\mu$. With the other Dirac module $e_\mu \mapsto \gamma^\mu$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^cau-cb-19-1|Caution: Two Dirac modules, and the sign of γ⁵]]) the first would be $a_\mu\bar\sigma^\mu$.
+> - A four-vector is a bispinor: one undotted and one dotted index, as in [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-6|Theorem §C5a.5.6]].
+
+^pf-cb-19-10
+
+*Uses:* [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|Theorem §CB.19.3]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-6|Theorem §CB.19.6]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-9|Theorem §CB.19.9]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-9|Theorem §CB.8.9]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-10|Def. §CB.8.10]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-18|Theorem §CB.8.18]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-22|Theorem §CB.0.22]], [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]]
+
+The course's bispinor is the index form of this theorem, in the dotted-index calculus of physics: [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-6|Theorem §C5a.5.6]].
+
+The vector representation is $(\frac12, \frac12)$ also by direct computation with the $4\times4$ generators, [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-7|Theorem §CB.18.7]] (the course's form: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|Theorem §C3.2.9]]): the same statement as Theorem §CB.19.10, read in the basis $v^0, \dots, v^3$.
+
+> [!theorem] Theorem §CB.19.11: Two-Forms Are (1, 0) ⊕ (0, 1)
+> $\Lambda^2V_{\mathbb C} \cong \Lambda^2(S^+\otimes S^-) \cong (\operatorname{Sym}^2S^+\otimes\Lambda^2S^-)\oplus(\Lambda^2S^+\otimes\operatorname{Sym}^2S^-) \cong \operatorname{Sym}^2S^+\oplus\operatorname{Sym}^2S^- = (1, 0)\oplus(0, 1)$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-13|Theorem §CB.8.13]], 3; $\Lambda^2S^\pm$ trivial, [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]]). The two summands are the eigenspaces $\star = \pm i$ of duality ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-20|Theorem §CB.8.20]]), exchanged by complex conjugation; on the real two-forms this is the second case of [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-18|Theorem §CB.4.18]].
+>
+> *Source: written here · the course's statements: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|Theorem §C3.3.8]], [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-4|Theorem §C1a.8.4]]*
+
+^thm-cb-19-11
+
+> [!proof]- Proof
+> All representations are of $\mathrm{Spin}(1,3)_0 \cong SL(2, \mathbb C)$, written through $\lambda$ (Theorem §CB.19.3): $S^-$ carries $\lambda$, $S^+$ carries $\theta(\lambda) = (\lambda^\dagger)^{-1}$, $V_{\mathbb C}$ carries $\rho(x)$.
+>
+> **1. Transport the equivalence.** If $T : A \to B$ is an equivalence, $T\otimes T$ restricted to $\Lambda^2A$ is an equivalence $\Lambda^2A \cong \Lambda^2B$. With [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-10|Theorem §CB.19.10]]: $\Lambda^2V_{\mathbb C} \cong \Lambda^2(S^+\otimes S^-)$.
+>
+> **2. Split the exterior square.** [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-13|Theorem §CB.8.13]], 3, for $G_1 = G_2 = SL(2, \mathbb C)$ acting on $A = S^+$ and $B = S^-$, restricted to the diagonal $\lambda \mapsto (\lambda, \lambda)$ (an equivalence of $G_1\times G_2$-representations stays one on any subgroup): $\Lambda^2(S^+\otimes S^-) \cong (\operatorname{Sym}^2S^+\otimes\Lambda^2S^-)\oplus(\Lambda^2S^+\otimes\operatorname{Sym}^2S^-)$.
+>
+> **3. The two-dimensional exterior squares are trivial.** $\Lambda^2\mathbb C^2$ is the representation $A \mapsto \det A$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]], 1), and $\det\lambda = \det(\lambda^\dagger)^{-1} = 1$. So $\Lambda^2V_{\mathbb C} \cong \operatorname{Sym}^2S^+\oplus\operatorname{Sym}^2S^-$, i.e. $D^{(0,1)}\oplus D^{(1,0)}$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]]), irreducible and inequivalent. Call the two summands $W_1 \cong (1, 0)$ and $W_2 \cong (0, 1)$ inside $\Lambda^2V_{\mathbb C}$.
+>
+> **4. The invariant subspaces of W₁ ⊕ W₂.** Let $E \subset W_1\oplus W_2$ be invariant, $p_k$ the projections onto $W_k$ (intertwiners). $E\cap W_k$ is invariant in the irreducible $W_k$, so it is $0$ or $W_k$. If $E \supset W_1$, then for $e = w_1 + w_2 \in E$ also $w_2 \in E$, so $E = W_1\oplus(E\cap W_2)$, i.e. $E = W_1$ or $E = W_1\oplus W_2$; likewise if $E \supset W_2$. If $E\cap W_1 = E\cap W_2 = 0$ and $E \ne 0$, take an irreducible invariant $E' \subset E$ (complete reducibility, [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-2|Theorem §CB.18.2]]): $p_1|_{E'}$ has kernel $E'\cap W_2 = 0$ and its image is a nonzero invariant subspace of $W_1$, hence $E' \cong W_1$; in the same way $E' \cong W_2$, contradicting $W_1 \not\cong W_2$. So the invariant subspaces are $0$, $W_1$, $W_2$, $W_1\oplus W_2$.
+>
+> **5. Duality picks the two summands.** By [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-20|Theorem §CB.8.20]], 3, $\Lambda^2V_{\mathbb C}$ is the direct sum of the three-dimensional eigenspaces $E_\pm$ of $\star$ (eigenvalues $\pm i$), each invariant under every $\Lambda$ with $\det\Lambda = 1$, so under $\rho(\mathrm{Spin}(1,3)_0) = SO^+(1,3)$. By step 4 a three-dimensional invariant subspace is $W_1$ or $W_2$, and $E_+ \ne E_-$: $\{E_+, E_-\} = \{W_1, W_2\}$.
+>
+> **6. Conjugation exchanges them.** Let $c$ be complex conjugation of the components of $\Lambda^2V_{\mathbb C}$. $\star$ has real coefficients, so $\star c = c\star$; if $\star A = iA$ then $\star(cA) = c(iA) = -i\,cA$. So $c(E_\pm) = E_\mp$.
+>
+> **7. The real two-forms.** The $c$-stable invariant subspaces are $0$ and $W_1\oplus W_2$ (steps 4, 6: $c(W_1) = W_2$). By [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-18|Theorem §CB.4.18]], 1, the real representation $\Lambda^2V$ has no invariant subspaces but $0$ and itself: it is irreducible, and its complexification is $W\oplus c(W)$ with $W$ irreducible, the second case of Theorem §CB.4.18, 2.
+>
+> **What the proof shows**
+> - A real two-form is irreducible, yet over $\mathbb C$ it splits into self-dual and anti-self-dual parts, the field strengths of the two helicities: $\mathbf E \pm i\mathbf B$ in electrodynamics.
+> - Which of $(1, 0)$, $(0, 1)$ is $\star = +i$ depends on the sign of $\varepsilon^{0123}$ and on the labelling of the halves; the theorem does not need it.
+
+^pf-cb-19-11
+
+*Uses:* [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-10|Theorem §CB.19.10]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-13|Theorem §CB.8.13]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-2|Theorem §CB.18.2]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-20|Theorem §CB.8.20]], [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-18|Theorem §CB.4.18]]
+
+The two-index tensors as a whole, the course's decomposition (the user's PHY 513 notes, Ch. 7 §7.4.5):
+
+> [!theorem] Theorem §CB.19.12: Two-Index Tensors Are (0, 0) ⊕ (1, 0) ⊕ (0, 1) ⊕ (1, 1)
+> The representation $\Lambda\otimes\Lambda$ of $SO^+(1,3)$ on two-index tensors $T^{\mu\nu}$, with generators $\mathcal J^{\mu\nu}\otimes\mathbb 1 + \mathbb 1\otimes\mathcal J^{\mu\nu}$, has over $\mathbb C$ the invariant pieces ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-19|Theorem §CB.8.19]])
+>
+> $$
+> \underbrace{\tfrac14g^{\mu\nu}T^\rho{}_\rho}_{(0,\,0)}\ \oplus\ \underbrace{T^{[\mu\nu]}}_{(1,\,0)\oplus(0,\,1)}\ \oplus\ \underbrace{T^{(\mu\nu)} - \tfrac14g^{\mu\nu}T^\rho{}_\rho}_{(1,\,1)} ,
+> $$
+>
+> the two halves of the antisymmetric part being the eigenspaces $\star A = \pm iA$ of duality ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-20|Theorem §CB.8.20]]). Over $\mathbb R$, the six-dimensional real antisymmetric tensors are irreducible.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.4.5 (Derivation "Products: two-index tensors are (1,1)⊕(1,0)⊕(0,1)⊕(0,0)"; checked numerically there: "This proves the irreducibility that Section [tensors] could only quote") · the user's Lorentz-representation review (2026-10-14), §8 (Route A table; the swap-operator and rotation-content routes are kept with the course's form, Theorem §C3.3.7) · the matching argument and the real case written out here*
+
+^thm-cb-19-12
+
+> [!derivation]- Derivation
+> **1. Its decomposition.** With $\Lambda \cong (\frac12, \frac12)$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-10|Theorem §CB.19.10]]: $V_{\mathbb C} \cong S^+\otimes S^-$; in the course's matrices, Theorem §CB.18.7), Theorem §CB.18.12 gives $(1, 1)\oplus(1, 0)\oplus(0, 1)\oplus(0, 0)$, each once, of dimensions $9, 3, 3, 1$.
+>
+> **2. Four invariant subspaces.** By [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-19|Theorem §CB.8.19]] the trace part (dimension $1$), the antisymmetric part ($6$) and the symmetric traceless part ($9$) are each mapped into themselves by every $\Lambda$; by [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-20|Theorem §CB.8.20]], 3, the antisymmetric part is, over $\mathbb C$, the sum of two invariant three-dimensional eigenspaces of $\star$. So $\mathbb C^{16} = W_1\oplus W_3\oplus W_3'\oplus W_9$ with invariant $W_d$ of dimension $d$.
+>
+> **3. Match by dimension.** Each $W_d$ is a representation, hence a sum of pieces $(j_+, j_-)$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-6|Theorem §CB.18.6]]); joining these decompositions decomposes $\mathbb C^{16}$, and multiplicities are unique (Theorem §CB.18.6, step 9), so the pieces of the four $W_d$ together are exactly $(1, 1)$, $(1, 0)$, $(0, 1)$, $(0, 0)$, once each. The only piece of dimension $1$ is $(0, 0)$, so $W_1 = (0, 0)$. A three-dimensional $W_3$ must be made of pieces from $\{9, 3, 3\}$ with dimensions summing to $3$: a single $(1, 0)$ or $(0, 1)$, and $W_3$, $W_3'$ take one each. What remains, $W_9$, is $(1, 1)$.
+>
+> **4. Real irreducibility.** Let $U$ be a real subspace of the real antisymmetric tensors, invariant under every $\Lambda$. Its complexification $U_{\mathbb C} = U + iU$ is an invariant subspace of $(1, 0)\oplus(0, 1)$ and is closed under complex conjugation. The invariant subspaces of a sum of two inequivalent irreducible representations are $0$, either summand, or the whole (an invariant subspace is a sum of pieces, and with multiplicity one each piece is a fixed subspace). Complex conjugation maps the $(+i)$-eigenspace of the real map $\star$ to the $(-i)$-eigenspace (Theorem §CB.8.20, 3), so neither summand alone is closed under it. Hence $U_{\mathbb C} = 0$ or everything, i.e. $U = 0$ or all six dimensions.
+>
+> **What the derivation shows**
+> - The decomposition of Theorem §C1a.5.6 is the finest possible over $\mathbb R$; over $\mathbb C$ only the antisymmetric part splits further, and only by complex combinations (the duality eigenvalues are $\pm i$ because $\star^2 = -1$).
+> - The field law of a two-index tensor field, and the reading of its pieces (spin content, which half is $(1, 0)$), is [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]] (physics).
+
+^der-cb-19-12
+
+*Uses:* [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-19|Theorem §CB.8.19]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-20|Theorem §CB.8.20]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-10|Theorem §CB.19.10]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-6|Theorem §CB.18.6]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-12|Theorem §CB.18.12]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-7|Theorem §CB.18.7]]
+
+## The Clifford algebra as a representation, and the bilinears
+
+The invariance of the Dirac form under the spinor Lorentz matrices, an instance of [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-21|Theorem §CB.15.21]], in the course's form (first written in [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]]); the course's bilinears built on it are [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]] (physics), and the classification below uses it:
+
+> [!theorem] Theorem §CB.19.13: Λ½ Is Pseudo-Unitary
+> For Dirac matrices in a Hermitian basis ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-11|Def. §CB.14.11]]; e.g. the chiral one, [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]]) and every real $\omega_{\mu\nu}$, the Dirac-representation matrix $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]]) and $\gamma^0$ ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]]) satisfy
+>
+> $$
+> \Lambda_{1/2}^\dagger\,\gamma^0 = \gamma^0\,\Lambda_{1/2}^{-1}, \qquad\text{equivalently}\qquad \Lambda_{1/2}^\dagger\,\gamma^0\,\Lambda_{1/2} = \gamma^0, \qquad \Lambda_{1/2}^\dagger = \gamma^0\Lambda_{1/2}^{-1}\gamma^0 .
+> $$
+>
+> $\gamma^0$ is the matrix of a Hermitian form on $\mathbb C^4$ preserved by every $\Lambda_{1/2}$ ([[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-9-7|Def. §CB.9.7]]), the Dirac form $h_D$ ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-15|Def. §CB.14.15]]); it is indefinite, with eigenvalues $+1$, $+1$, $-1$, $-1$. In a basis that is not Hermitian, $\psi' = U\psi$ with $U^\dagger U$ not a multiple of $\mathbb 1$, the three identities fail for $\gamma'^0 = U\gamma^0U^{-1}$ (which is not even Hermitian in general); the form preserved by every $\Lambda'_{1/2} = U\Lambda_{1/2}U^{-1}$ is still $h_D$, whose matrix in the new basis is $(U^{-1})^\dagger\gamma^0U^{-1}$ ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-18|Theorem §CB.14.18]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 8 §8.1 (eq. (pseudounitary)), §8.7 (Derivation "Why $\psi^\dagger\psi$ fails, and how $\gamma^0$ repairs it: the lecture's route", Steps 2–3, eq. (gammaSdagger)) · PHY 513 Lecture 8, Part B ("The Dirac Conjugate Spinor") · PS §3.2, p. 43 · Yu §5.3, eqs. (5.86)–(5.89)*
+
+^thm-cb-19-13
+
+> [!derivation]- Derivation (the lecture's route: which generators γ⁰ commutes with)
+> **1. $\gamma^0$ commutes with $S^{ij}$.** For $i \ne j$, $[\gamma^i, \gamma^j] = 2\gamma^i\gamma^j$ (distinct $\gamma$'s anticommute, [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]]), so $S^{ij} = \frac i2\gamma^i\gamma^j$. Moving $\gamma^0$ through $\gamma^i$ and then $\gamma^j$ costs two signs: $\gamma^0\gamma^i\gamma^j = (-\gamma^i\gamma^0)\gamma^j = \gamma^i\gamma^j\gamma^0$. Hence $\gamma^0S^{ij} = S^{ij}\gamma^0$.
+>
+> **2. $\gamma^0$ anticommutes with $S^{0i}$.** $S^{0i} = \frac i2\gamma^0\gamma^i$. Then $\gamma^0S^{0i} = \frac i2(\gamma^0)^2\gamma^i = \frac i2\gamma^i$, using $(\gamma^0)^2 = \mathbb 1$; and $S^{0i}\gamma^0 = \frac i2\gamma^0\gamma^i\gamma^0 = \frac i2\gamma^0(-\gamma^0\gamma^i) = -\frac i2\gamma^i$. Hence $\gamma^0S^{0i} = -S^{0i}\gamma^0$.
+>
+> **3. Combine with the Hermiticity pattern.** By [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-22|Theorem §CB.15.22]] (this is where the Hermitian basis is used), $S^{ij\dagger} = S^{ij}$ and $S^{0i\dagger} = -S^{0i}$. Therefore $S^{ij\dagger}\gamma^0 = S^{ij}\gamma^0 = \gamma^0S^{ij}$ (step 1) and $S^{0i\dagger}\gamma^0 = -S^{0i}\gamma^0 = \gamma^0S^{0i}$ (step 2). In every case
+>
+> $$
+> S^{\mu\nu\dagger}\,\gamma^0 = \gamma^0\,S^{\mu\nu} :
+> $$
+>
+> the generators that fail to be Hermitian are exactly those that anticommute with $\gamma^0$, so the two signs cancel.
+>
+> **4. The exponent.** Let $X = \omega_{\mu\nu}S^{\mu\nu}$ (summed). Since the $\omega_{\mu\nu}$ are real, $X^\dagger = \omega_{\mu\nu}S^{\mu\nu\dagger}$, and step 3 gives $X^\dagger\gamma^0 = \gamma^0X$. By induction on $n$, $(X^\dagger)^n\gamma^0 = (X^\dagger)^{n-1}\gamma^0X = \cdots = \gamma^0X^n$.
+>
+> **5. The series.** $\Lambda_{1/2} = \exp(-\frac i2X)$, and the adjoint of a norm-convergent series is the series of adjoints, so $\Lambda_{1/2}^\dagger = \exp(+\frac i2X^\dagger)$. Term by term with step 4,
+>
+> $$
+> \Lambda_{1/2}^\dagger\gamma^0 = \sum_{n=0}^\infty\frac1{n!}\Bigl(\frac i2\Bigr)^n(X^\dagger)^n\gamma^0 = \gamma^0\sum_{n=0}^\infty\frac1{n!}\Bigl(\frac i2\Bigr)^nX^n = \gamma^0\exp\Bigl(+\frac i2X\Bigr) = \gamma^0\Lambda_{1/2}^{-1} ,
+> $$
+>
+> the last step because $\exp(\frac i2X)\exp(-\frac i2X) = \mathbb 1$ ($X$ commutes with itself).
+>
+> **6. The other forms.** Multiply step 5 by $\Lambda_{1/2}$ on the right: $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$. Multiply step 5 by $\gamma^0$ on the right and use $(\gamma^0)^2 = \mathbb 1$: $\Lambda_{1/2}^\dagger = \gamma^0\Lambda_{1/2}^{-1}\gamma^0$.
+>
+> **7. The form is indefinite.** $\gamma^0$ is Hermitian (Hermitian basis) with $(\gamma^0)^2 = \mathbb 1$, so its eigenvalues are $\pm1$; it is traceless ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-10|Theorem §CB.13.10]]), so each occurs twice. In the chiral basis $\gamma^0$ swaps the upper and lower blocks, with eigenvectors $(\xi, \xi)$ and $(\xi, -\xi)$. ⚑ By-product: $\psi^\dagger\gamma^0\psi$ can have either sign; the invariant of a Dirac spinor is not a norm → [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-1|Theorem §C5a.8.1]] (it pairs left- with right-handed components).
+>
+> **What the derivation shows**
+> - $\Lambda_{1/2}$ preserves the Hermitian form $\gamma^0$ as $\Lambda$ preserves $g$ ($\Lambda^{\mathsf T}g\Lambda = g$): $\gamma^0$ plays the role of the metric for the Dirac spinor slot; both forms are indefinite.
+> - ⚑ By-product: the sign ambiguity $\pm\Lambda_{1/2}$ cancels in $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2}$.
+> - Used next: the Dirac conjugate (Def. §C5a.2.2, Theorem §C5a.6.1).
+
+^der-cb-19-13
+
+> [!derivation]- Derivation (second route: from the Hermiticity of the γ's)
+> **1.** In a Hermitian basis ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-11|Def. §CB.14.11]]; e.g. the chiral one, [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]]), $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$; multiplying by $\gamma^0$ on the right, $\gamma^{\mu\dagger}\gamma^0 = \gamma^0\gamma^\mu$.
+>
+> **2.** $S^{\mu\nu\dagger} = (\frac i4[\gamma^\mu, \gamma^\nu])^\dagger = -\frac i4[\gamma^{\nu\dagger}, \gamma^{\mu\dagger}] = -\frac i4\bigl(\gamma^{\nu\dagger}\gamma^{\mu\dagger} - \gamma^{\mu\dagger}\gamma^{\nu\dagger}\bigr)$ (the adjoint reverses products and conjugates $i$).
+>
+> **3.** Multiply on the right by $\gamma^0$ and push it left with step 1, twice in each product: $\gamma^{\nu\dagger}\gamma^{\mu\dagger}\gamma^0 = \gamma^{\nu\dagger}\gamma^0\gamma^\mu = \gamma^0\gamma^\nu\gamma^\mu$. Hence $S^{\mu\nu\dagger}\gamma^0 = -\frac i4\gamma^0(\gamma^\nu\gamma^\mu - \gamma^\mu\gamma^\nu) = \frac i4\gamma^0[\gamma^\mu, \gamma^\nu] = \gamma^0S^{\mu\nu}$, step 3 of the first route.
+>
+> **4.** Steps 4–6 of the first route follow unchanged.
+>
+> **What the derivation shows**
+> - No explicit matrices and no case split between rotations and boosts: the result follows from $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ alone, hence holds in every basis in which that relation holds (every unitary change of the chiral basis, [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-12|Theorem §CB.14.12]]).
+
+^der-cb-19-13b
+
+*Uses:* [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-22|Theorem §CB.15.22]], [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]], [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-10|Theorem §CB.13.10]], [[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-11|Def. §CB.14.11]], [[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-15|Def. §CB.14.15]], [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-18|Theorem §CB.14.18]], [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-12|Theorem §CB.14.12]]
+
+The sixteen products as a representation:
+
+> [!theorem] Theorem §CB.19.14: Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears
+> 1. $\mathrm{Spin}(1,3)_0$ acts on $\mathrm{Cl}(1,3)$ by $a \mapsto xax^{-1}$; the vector-space isomorphism $\Lambda V \cong \mathrm{Cl}(1,3)$ of [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-11|Theorem §CB.13.11]] intertwines it with $\Lambda\rho$, so $\mathrm{Cl}(1,3)_{\mathbb C} \cong \Lambda^0\oplus\Lambda^1\oplus\Lambda^2\oplus\Lambda^3\oplus\Lambda^4$ of dimensions $1 + 4 + 6 + 4 + 1$.
+> 2. $\operatorname{End}(S) \cong \mathrm{Cl}(1,3)_{\mathbb C}$ ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-5|Theorem §CB.14.5]]) as representations, with $\operatorname{End}(S) \cong S\otimes S^\ast$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-9|Theorem §CB.8.9]]); through the Dirac form $S^\ast \cong \bar S$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-21|Theorem §CB.15.21]]), so $\bar\psi\Gamma\chi$ with $\Gamma$ in the $\Lambda^k$ piece transforms as a $k$-form: scalar, vector, tensor, axial vector, pseudoscalar ($\Lambda^3 \cong \Lambda^1$ and $\Lambda^4 \cong \Lambda^0$ through $\gamma^5$, up to orientation).
+>
+> *Source: Peskin & Schroeder, §3.4, and the user's PHY 513 notes, Ch. 8 §8.9, through [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]] and [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-3|Theorem §C5a.6.3]] · the user's Lorentz-representation review (2026-10-14), §9 (Dirac bilinears read through $(j_+, j_-)$; there written as the square of the Dirac representation: the bilinears lie in $\bar S\otimes S$, part 2, which carries the same labels) · the representation-theoretic proof written here*
+
+^thm-cb-19-14
+
+> [!proof]- Proof
+> **1. Conjugation is the induced automorphism.** For $x \in \mathrm{Spin}(1,3)_0$, $a \mapsto xax^{-1}$ is an algebra automorphism of $\mathrm{Cl}(1,3)$ that maps $v \in V$ to $\rho(x)v \in V$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-10|Theorem §CB.15.10]], 2). By the uniqueness in [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-7|Theorem §CB.12.7]], it is the automorphism extending $v \mapsto \rho(x)v$.
+>
+> **2. Part 1.** The isomorphism $Q : \Lambda V \to \mathrm{Cl}(1,3)$ of [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-11|Theorem §CB.13.11]] commutes with the action of $O(V, q)$, on $\mathrm{Cl}$ by exactly these automorphisms. With $R = \rho(x)$ and step 1: $Q\bigl((\Lambda\rho(x))w\bigr) = x\,Q(w)\,x^{-1}$. $Q(\Lambda^kV)$ is the span of the $e_I$ with $|I| = k$, an invariant subspace of dimension $\binom4k$: $1, 4, 6, 4, 1$. Extending complex-linearly gives the statement for $\mathrm{Cl}(1,3)_{\mathbb C}$.
+>
+> **3. γ identifies the Clifford algebra with End(S).** $\gamma : \mathrm{Cl}(1,3)_{\mathbb C} \to \operatorname{End}(S)$ is an algebra homomorphism whose image contains $\mathbb 1$, $\gamma^\mu = g^{\mu\nu}\gamma(e_\nu)$ and their products, hence the sixteen matrices of [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-9|Theorem §CB.13.9]], which span all $4\times4$ matrices ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-9|Theorem §CB.13.9]]). Both spaces have dimension $16$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-6|Theorem §CB.13.6]]), so $\gamma$ is bijective, as [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-5|Theorem §CB.14.5]] predicts. It is equivariant: $\gamma(xax^{-1}) = \gamma(x)\gamma(a)\gamma(x)^{-1}$, which is the action $T \mapsto \gamma(x)T\gamma(x)^{-1}$ on $\operatorname{End}(S) = \operatorname{Hom}(S, S) \cong S\otimes S^\ast$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-9|Theorem §CB.8.9]]).
+>
+> **4. The Dirac form.** Let $h_D(\psi, \chi) = \psi^\dagger\gamma^0\chi = \bar\psi\chi$ ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-15|Def. §CB.14.15]]). Every $\gamma^\mu$, hence every $\gamma(v) = v_\mu\gamma^\mu$ with real $v_\mu$, is self-adjoint for $h_D$ ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-16|Theorem §CB.14.16]], 1). By [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-21|Theorem §CB.15.21]], $h_D(\gamma(x)\psi, \gamma(x)\chi) = h_D(\psi, \chi)$ for $x \in \mathrm{Spin}(1,3)_0$ (the course's [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-13|Theorem §CB.19.13]]). Equivalently $\overline{\gamma(x)\psi} = \bar\psi\,\gamma(x)^{-1}$: the conjugate-linear bijection $\psi \mapsto \bar\psi = h_D(\psi, \cdot)$ intertwines $S$ with $S^\ast$, i.e. it is a complex-linear equivalence $\bar S \cong S^\ast$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-6|Def. §CB.8.6]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-7|Def. §CB.8.7]]).
+>
+> **5. Bilinears transform as forms.** For $a \in \mathrm{Cl}(1,3)_{\mathbb C}$ put $B_a(\psi, \chi) = \bar\psi\,\gamma(a)\,\chi$. By step 4 and step 3,
+>
+> $$
+> B_a(\gamma(x)\psi, \gamma(x)\chi) = h_D\bigl(\psi, \gamma(x)^{-1}\gamma(a)\gamma(x)\chi\bigr) = B_{x^{-1}ax}(\psi, \chi) .
+> $$
+>
+> So for fixed $\psi$, $\chi$ the linear functional $a \mapsto B_a(\psi, \chi)$ on $Q(\Lambda^kV_{\mathbb C})$ is transformed by precomposition with the action of $x^{-1}$, which is $\Lambda^k\rho(x)^{-1}$ by step 2: it is an element of $(\Lambda^kV_{\mathbb C})'$ with the dual representation (Def. §CB.8.6), a $k$-form. On basis elements, $B_{e_{\mu_1}\cdots e_{\mu_k}} = \bar\psi\gamma_{\mu_1}\cdots\gamma_{\mu_k}\chi$ for distinct $\mu_i$; for $k = 0, 1, 2$ these are $\bar\psi\chi$, $\bar\psi\gamma_\mu\chi$, $\bar\psi\gamma_\mu\gamma_\nu\chi = -i\bar\psi\sigma_{\mu\nu}\chi$ ($\mu \ne \nu$, since $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu] = i\gamma^\mu\gamma^\nu$ there): scalar, vector, antisymmetric tensor.
+>
+> **6. Grades 3 and 4 through the volume element.** For $x \in \mathrm{Spin}(1,3)_0 \subset \mathrm{Cl}^0$, $x\omega x^{-1} = \omega$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-13|Theorem §CB.13.13]], 3), so right multiplication $R_\omega(a) = a\omega$ commutes with the action: $x(a\omega)x^{-1} = (xax^{-1})\omega$. It maps $e_I$ to $\pm e_{I^c}$ (each factor of $e_I$ meets its copy in $\omega$ after reordering and squares to $\pm1$; e.g. $e_0\omega = e_1e_2e_3$), so $Q(\Lambda^k) \to Q(\Lambda^{4-k})$, and it is invertible ($\omega^2 = -1$). Hence $\Lambda^3 \cong \Lambda^1$ and $\Lambda^4 \cong \Lambda^0$ as representations of $\mathrm{Spin}(1,3)_0$. Since $\omega = -i\omega_{\mathbb C}$ and $\gamma(\omega_{\mathbb C}) = -\gamma^5$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-2|Theorem §CB.19.2]]), $\gamma(\omega) = i\gamma^5$: the grade-3 and grade-4 bilinears are spanned by $\bar\psi\gamma_\mu\gamma^5\chi$ and $\bar\psi\,i\gamma^5\chi$, transforming as a vector and a scalar under $\mathrm{Spin}(1,3)_0$.
+>
+> **What the proof shows**
+> - The course's bilinears: scalar, vector, antisymmetric tensor as in [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]]; the axial vector and pseudoscalar as in [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-3|Theorem §C5a.6.3]].
+> - The classification of the sixteen bilinears is the grading of the Clifford algebra, $\mathrm{Cl} \cong \Lambda^0\oplus\dots\oplus\Lambda^4$, transported to $\operatorname{End}(S)$ by $\gamma$ and paired by the invariant Dirac form.
+> - ⚑ By-product ("up to orientation"): $R_\omega$ commutes with $\mathrm{Spin}(1,3)_0$ but not with orientation-reversing elements, which send $\omega$ to $-\omega$ (Theorem §CB.13.13, 1). This sign is the "pseudo" in pseudoscalar and axial vector: they differ from $\bar\psi\psi$ and $\bar\psi\gamma^\mu\psi$ under parity ([[§C9.4 Fermion Bilinears under Parity|§C9.4]]).
+
+^pf-cb-19-14
+
+*Uses:* [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-10|Theorem §CB.15.10]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-21|Theorem §CB.15.21]], [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-7|Theorem §CB.12.7]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-6|Theorem §CB.13.6]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-11|Theorem §CB.13.11]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-13|Theorem §CB.13.13]], [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-5|Theorem §CB.14.5]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-6|Def. §CB.8.6]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-7|Def. §CB.8.7]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-9|Theorem §CB.8.9]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-2|Theorem §CB.19.2]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-9|Theorem §CB.13.9]], [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-16|Theorem §CB.14.16]]
+
+## The TA's theorem for the Lorentz group
+
+> [!theorem] Theorem §CB.19.15: Every Tensorial (j₊, j₋) Lies in a Tensor Power of the Vector
+> If $k + l \in \mathbb Z$, then $(k, l)$ is equivalent to a subrepresentation of $V_{\mathbb C}^{\otimes N}$ with $N = 2\max(k, l)$, $V_{\mathbb C} = (\frac12, \frac12)$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-10|Theorem §CB.19.10]]).
+>
+> *Source: written here (the same count by Clebsch–Gordan on each copy: [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-12|Theorem §CB.18.12]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-2|Theorem §CB.11.2]])*
+
+^thm-cb-19-15
+
+> [!proof]- Proof
+> Write representations of $\mathrm{Spin}(1,3)_0$ through $\lambda$ (Theorem §CB.19.3), with $\theta(\lambda) = (\lambda^\dagger)^{-1}$.
+>
+> **1. Spin k inside a tensor power of ℂ².** Let $A$ be $\lambda$ or $\theta(\lambda)$ acting on $\mathbb C^2$, and $M = 2k + 2m$ with $m \in \mathbb Z_{\ge0}$. $(\mathbb C^2)^{\otimes M} = (\mathbb C^2)^{\otimes2k}\otimes(\mathbb C^2\otimes\mathbb C^2)^{\otimes m}$ contains the invariant subspace $\operatorname{Sym}^{2k}\mathbb C^2\otimes(\Lambda^2\mathbb C^2)^{\otimes m}$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-13|Theorem §CB.8.13]], 1–2; a tensor product of invariant subspaces is invariant). $\Lambda^2\mathbb C^2$ is trivial for $\det A = 1$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]], 1), so this subspace is $\operatorname{Sym}^{2k}(A)$, spin $k$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-15|Theorem §CB.10.15]]).
+>
+> **2. Tensor powers of the vector.** $V_{\mathbb C} \cong \lambda\otimes\theta(\lambda) = D^{(\frac12, \frac12)}$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-10|Theorem §CB.19.10]]), so $V_{\mathbb C}^{\otimes N} \cong (\lambda\otimes\theta(\lambda))^{\otimes N} \cong \lambda^{\otimes N}\otimes\theta(\lambda)^{\otimes N}$, the second equivalence being the permutation of tensor factors that collects the $\lambda$-slots first (a permutation of factors commutes with the diagonal action).
+>
+> **3. The parities match.** Let $N = 2\max(k, l)$, say $\max = k$ (the other case is symmetric). Then $N - 2k = 0$ and $N - 2l = 2(k - l)$ with $k - l = (k + l) - 2l \in \mathbb Z$ (since $k + l \in \mathbb Z$ and $2l \in \mathbb Z$) and $k - l \ge 0$.
+>
+> **4. Conclusion.** By step 1 with $A = \lambda$, $M = N$, $\lambda^{\otimes N} \supset \operatorname{Sym}^{2k}(\lambda)$; with $A = \theta(\lambda)$, $\theta(\lambda)^{\otimes N} \supset \operatorname{Sym}^{2l}(\theta(\lambda))\otimes(\text{trivial})$. Their tensor product is $D^{(k, l)}$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]]) inside $V_{\mathbb C}^{\otimes N}$ by step 2.
+>
+> **What the proof shows**
+> - Each vector index is one undotted plus one dotted spinor slot; symmetrizing $2k$ undotted and $2l$ dotted slots and contracting the rest in pairs with $\varepsilon$ gives $(k, l)$. The condition $k + l \in \mathbb Z$ is exactly that the leftover slots of each kind pair up.
+
+^pf-cb-19-15
+
+*Uses:* [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-13|Theorem §CB.8.13]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-15|Theorem §CB.10.15]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|Theorem §CB.19.3]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-10|Theorem §CB.19.10]]
+
+> [!theorem] Theorem §CB.19.16: The TA's Theorem for the Lorentz Group
+> Every spinorial irreducible representation $(j_+, j_-)$ ($j_+ + j_- \in \frac12 + \mathbb Z$, [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-16|Theorem §CB.18.16]]) is equivalent to a subrepresentation of $S\otimes T$, $S = (\frac12, 0)\oplus(0, \frac12)$ the Dirac module and $T$ tensorial: $(j_+, j_-) \subset (\frac12, 0)\otimes(j_+ - \frac12, j_-)$ if $j_+ \ge \frac12$, and $(j_+, j_-) \subset (0, \frac12)\otimes(j_+, j_- - \frac12)$ otherwise; and $T$ lies in a tensor power of $V_{\mathbb C}$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-15|Theorem §CB.19.15]]). With complete reducibility ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-2|Theorem §CB.18.2]]) every finite-dimensional spinorial representation lies in $S\otimes T$ with $T$ a direct sum of subrepresentations of tensor powers of $V_{\mathbb C}$, with $T$ inside a single tensor power when the representation is irreducible.
+>
+> *Source: PHY 513 TA (oral remark, Oct 2026) · the decomposition of products: [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-12|Theorem §CB.18.12]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-2|Theorem §CB.11.2]] · written here · this is part 3 of the TA's theorem in general, [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-17|Theorem §CB.19.17]], for $\mathbb R^{1,3}$*
+
+^thm-cb-19-16
+
+> [!proof]- Proof
+> Representations are written through $\lambda$, $\theta(\lambda) = (\lambda^\dagger)^{-1}$ (Theorem §CB.19.3); $D^{(j_+, j_-)}(\lambda) = \operatorname{Sym}^{2j_+}(\lambda)\otimes\operatorname{Sym}^{2j_-}(\theta(\lambda))$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]]).
+>
+> **1. Case j₊ ≥ ½.** $D^{(\frac12, 0)}\otimes D^{(j_+ - \frac12, j_-)} = \lambda\otimes\operatorname{Sym}^{2j_+ - 1}(\lambda)\otimes\operatorname{Sym}^{2j_-}(\theta(\lambda))$. The first two factors are $V_{1/2}\otimes V_{j_+ - 1/2}$ for $\lambda$, which contains $V_{j_+}$ (the top term of the Clebsch–Gordan series, Theorem §CB.11.2, as $j_+ = \frac12 + (j_+ - \frac12)$). Tensoring with $\operatorname{Sym}^{2j_-}(\theta(\lambda))$: $D^{(\frac12, 0)}\otimes D^{(j_+ - \frac12, j_-)} \supset D^{(j_+, j_-)}$.
+>
+> **2. Case j₊ = 0.** Then $j_- \in \frac12 + \mathbb Z$, so $j_- \ge \frac12$, and the same argument on the second factor gives $D^{(0, \frac12)}\otimes D^{(0, j_- - \frac12)} \supset D^{(0, j_-)}$.
+>
+> **3. The second factor is tensorial.** Its labels add to $j_+ + j_- - \frac12 \in \mathbb Z$, so it is tensorial ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-16|Theorem §CB.18.16]]), and by [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-15|Theorem §CB.19.15]] it is a subrepresentation of $V_{\mathbb C}^{\otimes N}$ for some $N$. $D^{(\frac12, 0)}$ and $D^{(0, \frac12)}$ are $S^-$ and $S^+$, subrepresentations of the Dirac module $S$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|Theorem §CB.19.3]]). Tensoring inclusions gives $(j_+, j_-) \subset S\otimes V_{\mathbb C}^{\otimes N}$.
+>
+> **4. Reducible representations.** A finite-dimensional spinorial $W$ is a direct sum of irreducible $W_i$ (Theorem §CB.18.2); $-1$ acts as $-\mathbb 1$ on $W$, so on each $W_i$, and each $W_i \cong D^{(j_+, j_-)}$ with $j_+ + j_- \in \frac12 + \mathbb Z$ (Theorems §CB.18.10, §CB.18.16). By step 3, $W_i \subset S\otimes T_i$ with $T_i \subset V_{\mathbb C}^{\otimes N_i}$, so $W \subset \bigoplus_i(S\otimes T_i) = S\otimes\bigl(\bigoplus_iT_i\bigr)$, and $\bigoplus_iT_i$ is tensorial.
+>
+> **What the proof shows**
+> - A spinorial field of any spin is a Dirac spinor with tensor indices, projected: one spinor slot carries the half-integer part, the remaining slots pair into vector indices. The Rarita–Schwinger field $\psi_\mu$ is the first case beyond the Dirac field, $(1, \frac12)\oplus(\frac12, 1) \subset S\otimes V_{\mathbb C}$.
+> - Step 4 gives a direct sum of tensor powers; putting all $T_i$ into one tensor power needs an extra multiplicity count (the $T_i$ can be chosen of one parity class, using also $(\frac12, 0)\otimes(j_+ + \frac12, j_-) \supset (j_+, j_-)$), not carried out here.
+
+^pf-cb-19-16
+
+*Uses:* [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-2|Theorem §CB.11.2]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-2|Theorem §CB.18.2]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-16|Theorem §CB.18.16]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|Theorem §CB.19.3]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-15|Theorem §CB.19.15]]
+
+## The TA's theorem in general
+
+The statement for every nondegenerate $(V, q)$ of dimension $n \ge 3$, announced in [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.15]]; it stands here because its proof uses its two cases proved in CB, $n = 3$ ([[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-16-6|Theorem §CB.16.6]]) and $\mathbb R^{1,3}$ (Theorems §CB.19.15–§CB.19.16 above):
+
+> [!theorem] Theorem §CB.19.17: The TA's Theorem — Clifford Modules Restricted to Spin Are Exactly the Spinor Representations, and Every Spinorial Representation Lies in Spinor ⊗ Tensor
+> Let $(V, q)$ be nondegenerate real with $n = \dim V \ge 3$, and $S$ an irreducible complex Clifford module.
+> 1. **Restriction.** The spinor representation $S|_{\mathrm{Spin}(V)_0}$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-24|Def. §CB.15.24]]) is spinorial ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-23|Def. §CB.15.23]]): $-1 \in \mathrm{Spin}(V)_0$ acts as $-\mathbb 1$, so it is not a representation of $SO(V)_0$. For $n$ odd it is irreducible of dimension $2^{(n-1)/2}$; for $n$ even, $S = S^+\oplus S^-$ with $S^\pm$ (the half-spin representations, [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-n25|Def. §CB.15.n25]]) irreducible, inequivalent, of dimension $2^{n/2-1}$, and $\gamma(v)$ maps $S^\pm$ to $S^\mp$.
+> 2. **Exactly the spinor representations.** Up to equivalence, the irreducible representations of $\mathrm{Spin}(V)_0$ obtained by restricting Clifford modules — that is, the irreducible representations of $\mathfrak{spin}(V)$ that extend to representations of the algebra $\mathrm{Cl}^0$ — are exactly $S$ ($n$ odd), resp. $S^+$ and $S^-$ ($n$ even); every finite-dimensional Clifford module restricts to a direct sum of copies of them.
+> 3. **Spinor ⊗ tensor.** Every finite-dimensional spinorial representation $W$ of $\mathrm{Spin}(V)_0$ is equivalent to a subrepresentation of $S\otimes T$ for a tensorial representation $T$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-1|Def. §CB.8.1]]); one may take $T = S'\otimes W$ ($S'$ the dual, [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-6|Def. §CB.8.6]]). Moreover $T$ can be taken inside a direct sum of tensor powers $(V_{\mathbb C})^{\otimes k}$ of the complexified vector representation $x \mapsto \rho(x)$: proved in CB for $n = 3$ ([[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-16-6|Theorem §CB.16.6]]) and $\mathbb R^{1,3}$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-16|Theorem §CB.19.16]]); for general $n$ by highest-weight theory (reference in the proof).
+>
+> *Source: PHY 513 TA (oral remark, Oct 2026) · J. Figueroa-O'Farrill, Spin Geometry, Lecture 3 (introduction: spinorial representations are those "not contained in any tensor product of the fundamental (vector) representation"; Def. 3.7 and §3.3) · H. Georgi, Lie Algebras in Particle Physics, 2nd ed., §8.12, Ch. 21–23 (highest weights, for part 3 in general) · the cases proved in CB: $n = 3$, Theorem §CB.16.6; $\mathbb R^{1,3}$, Theorem §CB.19.16*
+
+^thm-cb-19-17
+
+> [!proof]- Proof
+> *Source: the statement is the PHY 513 TA's (oral remark, Oct 2026). Parts 1–2: J. Figueroa-O'Farrill, Spin Geometry, Def. 3.7 ("a spinor representation of $\mathrm{Spin}(V)$ is the restriction of an irreducible representation of $C\ell(V)^0$") and §3.3 (for $d$ even the eigenspaces of $\omega$ in the pinor representation are the spinor representations; for $d$ odd both pinor representations restrict to the spinor one), assembled here from Theorems §CB.14.8, §CB.14.20, §CB.15.15, §CB.15.20. Part 3, first claim: written here (the canonical invariant of $S\otimes S'$). Part 3, tensor powers for general $n$: not proved in CB; see Step 8.*
+>
+> **Step 1** ($-1$ acts as $-\mathbb 1$). $n \ge 3$, so $-1 \in \mathrm{Spin}(V)_0$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-15|Theorem §CB.15.15]]). $\gamma$ is a unital algebra homomorphism, so $\gamma(-1) = -\gamma(1) = -\mathbb 1$: the restriction is spinorial ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-23|Def. §CB.15.23]]). It is not of the form $D\circ\rho$, since that would give $D(\rho(-1)) = D(\mathbb 1) = \mathbb 1$ ([[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-3|Theorem §CB.11.3]]).
+>
+> **Step 2** (same invariant subspaces). For a Clifford module, a subspace is invariant under $\mathrm{Spin}(V)_0$ iff under $\mathrm{Cl}^0$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-20|Theorem §CB.15.20]]).
+>
+> **Step 3** (same intertwiners). Let $\gamma_1$, $\gamma_2$ be Clifford modules on $W_1$, $W_2$ and $A : W_1 \to W_2$ linear. If $A\gamma_1(x) = \gamma_2(x)A$ for all $x \in \mathrm{Cl}^0$, this holds in particular on $\mathrm{Spin}(V)_0 \subset \mathrm{Cl}^0$. Conversely, suppose it holds on $\mathrm{Spin}(V)_0$. For $X \in \mathfrak{spin}(V)$, $e^{sX} \in \mathrm{Spin}(V)_0$ (Step 4 of the proof of [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-14|Theorem §CB.15.14]]; the path $s \mapsto e^{sX}$ starts at $1$), and $\gamma_i(e^{sX}) = e^{s\gamma_i(X)}$ ($\gamma_i$ is linear and multiplicative, hence maps the exponential series termwise, and continuous). Differentiating $Ae^{s\gamma_1(X)} = e^{s\gamma_2(X)}A$ at $s = 0$ gives $A\gamma_1(X) = \gamma_2(X)A$; then $A$ intertwines all products of such $X$ and $1$, which span $\mathrm{Cl}^0$ (Theorem §CB.15.20). So equivalences of the restrictions to $\mathrm{Spin}(V)_0$ are the same as equivalences of $\mathrm{Cl}^0$-modules.
+>
+> **Step 4** (part 1, $n$ odd). $S$ is irreducible as a $\mathrm{Cl}^0$-module ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-20|Theorem §CB.14.20]], 2), so irreducible under $\mathrm{Spin}(V)_0$ by Step 2; $\dim S = 2^{(n-1)/2}$ ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-8|Theorem §CB.14.8]], 2).
+>
+> **Step 5** (part 1, $n$ even). $S = S^+\oplus S^-$ with $S^\pm$ irreducible and inequivalent $\mathrm{Cl}^0$-modules of dimension $2^{n/2-1}$, and $\gamma(v)S^\pm \subset S^\mp$ (Theorem §CB.14.20, 1). By Steps 2–3 the same holds for $\mathrm{Spin}(V)_0$.
+>
+> **Step 6** (part 2). (a) A finite-dimensional Clifford module $W$ is a direct sum of irreducible Clifford modules (Theorem §CB.14.8, 3), each equivalent, by an intertwiner that in particular intertwines $\mathrm{Cl}^0$, to a fixed $S$; for $n$ odd both classes of $S$ restrict to the same $\mathrm{Cl}^0$-module (Theorem §CB.14.20, 2). So $W|_{\mathrm{Spin}(V)_0}$ is a direct sum of copies of $S$ ($n$ odd), resp. of $S^+$ and $S^-$ ($n$ even). (b) An irreducible representation of $\mathrm{Spin}(V)_0$ that is the restriction of a representation of the algebra $\mathrm{Cl}^0$ (for instance an irreducible $\mathrm{Spin}(V)_0$-invariant subspace $U$ of a Clifford module: $U$ is $\mathrm{Cl}^0$-invariant and $\mathrm{Cl}^0$-irreducible by Step 2) is an irreducible $\mathrm{Cl}^0$-module, hence equivalent to $S$, resp. $S^+$ or $S^-$ (Theorem §CB.14.20, 3), as a $\mathrm{Cl}^0$-module and so (Step 3) as a representation of $\mathrm{Spin}(V)_0$. By Steps 4–5 all of these occur.
+>
+> **Step 7** (part 3, first claim). Let $D_W$ be a spinorial representation on $W$, $D_S(x) = \gamma(x)$ on $S$, and $D_S^\ast$ the dual representation on $S'$, $(D_S^\ast(x)\varphi)(s) = \varphi(D_S(x)^{-1}s)$. Put $T = S'\otimes W$. Then $D_T(-1) = D_S^\ast(-1)\otimes D_W(-1) = (-\mathbb 1)\otimes(-\mathbb 1) = \mathbb 1$ (the dual of $-\mathbb 1$ is $-\mathbb 1$): $T$ is tensorial. Let $s_a$ be a basis of $S$ and $s^a$ the dual basis, and define
+>
+> $$
+> \iota : W \to S\otimes T = S\otimes S'\otimes W, \qquad \iota(w) = \sum_as_a\otimes s^a\otimes w .
+> $$
+>
+> With $M = D_S(x)$, $Ms_a = \sum_cM_{ca}s_c$ and $D_S^\ast(x)s^a = \sum_b(M^{-1})_{ab}s^b$ (evaluate on $s_b$: $s^a(M^{-1}s_b) = (M^{-1})_{ab}$), so
+>
+> $$
+> \sum_aD_S(x)s_a\otimes D_S^\ast(x)s^a = \sum_{a,b,c}M_{ca}(M^{-1})_{ab}\,s_c\otimes s^b = \sum_{b,c}\delta_{cb}\,s_c\otimes s^b = \sum_as_a\otimes s^a :
+> $$
+>
+> the element $\sum_as_a\otimes s^a$ is invariant (it corresponds to the identity intertwiner under [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-9|Theorem §CB.8.9]]). Hence $\iota(D_W(x)w) = (D_S\otimes D_S^\ast\otimes D_W)(x)\,\iota(w)$: $\iota$ is an intertwiner ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|Def. §CB.7.2]]). It is injective: the contraction $s\otimes\varphi\otimes w \mapsto \varphi(s)w$ sends $\iota(w)$ to $\sum_as^a(s_a)w = (\dim S)\,w$. So $W$ is equivalent to the subrepresentation $\iota(W)$ of $S\otimes T$.
+>
+> **Step 8** (part 3, tensor powers). $T$ is tensorial, hence $T = D\circ\rho$ for a representation $D$ of $SO(V)_0$ ([[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-3|Theorem §CB.11.3]], with the covering of Theorem §CB.15.15). It remains to place representations of $SO(V)_0$ inside sums of tensor powers of $V_{\mathbb C}$. For $n = 3$ this is [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-4|Theorem §CB.11.4]] (every representation of $SO(3)$ lies in a sum of tensor powers of $\mathbb C^3$), and [[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-16-6|Theorem §CB.16.6]] gives the sharper $V_j \subset V_{1/2}\otimes V_{j-1/2}$; for $\mathbb R^{1,3}$ it is [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-15|Theorem §CB.19.15]] with [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-16|Theorem §CB.19.16]]. For general $n$ it is **not proved in CB**. It follows from highest-weight theory: the irreducible representation of highest weight $\mu = \sum_j\ell_j\mu_j$ lies in the tensor product of $\ell_j$ copies of each fundamental representation (H. Georgi, Lie Algebras in Particle Physics, 2nd ed., §8.12, eq. (8.75)); for $\mathfrak{so}(2n+1)$ and $\mathfrak{so}(2n+2)$ the fundamental weights are listed in Georgi eqs. (21.9) and (22.4), the last one (resp. two) being the spinor representations, the others having the highest weights $e_1 + \cdots + e_j$ of the antisymmetric tensors $\Lambda^jV_{\mathbb C} \subset V_{\mathbb C}^{\otimes j}$; and a product of two spinor representations is a sum of antisymmetric tensors (Georgi, §23.3 and the table of §23.4). Since $-1$ acts as $-\mathbb 1$ on each spinor factor and trivially on the others, it acts on that tensor product, hence on the irreducible representation inside it, as $(-1)^{\ell}$ with $\ell$ the number of spinor factors; a tensorial irreducible representation therefore has $\ell$ even and lies in a product of antisymmetric tensors and pairs of spinors, hence in a sum of tensor powers of $V_{\mathbb C}$.
+>
+> **What the proof shows.**
+> - The three faces of spinors in the course are one object: a Clifford module (C5a.1), restricted to $\mathrm{Spin}$, is irreducible or splits into the Weyl halves (C5a.5), and $-1$ acts as $-1$, which is the two-valuedness on $SO$ (C3.3, C5a.4).
+> - ⚑ By-product (Step 7): "spinor ⊗ tensor" needs no classification at all — any spinorial $W$ sits in $S\otimes(S'\otimes W)$ through the invariant $\sum_as_a\otimes s^a$; the content of the TA's remark is the further statement (Step 8) that the tensorial factor is built from vectors, which is where highest weights (or, for $n = 3$ and $\mathbb R^{1,3}$, Clebsch–Gordan) enter.
+> - Step 3 is why the course may work with the generators $S^{\mu\nu}$ instead of the group: on a Clifford module, invariance and equivalence under $\mathrm{Spin}(V)_0$, under $\mathfrak{spin}(V)$ and under $\mathrm{Cl}^0$ are the same.
+
+^pf-cb-19-17
+
+*Uses:* [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-15|Theorem §CB.15.15]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-14|Theorem §CB.15.14]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-20|Theorem §CB.15.20]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-23|Def. §CB.15.23]], [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-8|Theorem §CB.14.8]], [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-20|Theorem §CB.14.20]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-3|Theorem §CB.11.3]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-4|Theorem §CB.11.4]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-6|Def. §CB.8.6]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-9|Theorem §CB.8.9]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|Def. §CB.7.2]], [[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-16-6|Theorem §CB.16.6]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-15|Theorem §CB.19.15]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-16|Theorem §CB.19.16]]
+
+> [!remark] Remark: What the TA's theorem explains
+> The course meets spinors three times: as the space on which the Dirac matrices act (C5a.1), as the representation $(\frac12, 0)\oplus(0, \frac12)$ of the Lorentz algebra (C5a.3), and as the two-valued representations of $SO^+(1,3)$ (C3.3, C5a.4). Theorem §CB.19.17 says these are one object: the Clifford module *is* a representation of the group $\mathrm{Spin}$, generated by $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ (Theorem §CB.15.14), it is two-valued on $SO$ because $-1 \in \mathrm{Spin}$ acts as $-1$ (Theorem §CB.15.15), and every other two-valued representation is a spinor index together with tensor indices — Rarita–Schwinger's $\psi_\mu$ being the first example beyond Dirac.
+>
+> *Source: written here, as a reading of Theorem §CB.19.17 (PHY 513 TA, oral remark, Oct 2026)*
+
+^rem-cb-19-2
+
+## Charge conjugation: a real structure on the Dirac module
+
+Complex conjugation turns a set of Dirac matrices into another set, and Pauli's theorem ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-12|Theorem §CB.14.12]]) relates the two by a matrix $B$. Combined with complex conjugation, $B$ gives an antilinear map of spinor space that commutes with every spinor Lorentz matrix and squares to $\mathbb 1$: a real structure on the Dirac module, whose matrix in the chiral basis is $-i\gamma^2$ (Example §CB.19.22).
+
+> [!definition] Definition §CB.19.18: The Charge-Conjugation Matrix
+> Let $\gamma^\mu$ be $4\times4$ Dirac matrices ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]]) and $(\gamma^\mu)^{\ast}$ their entrywise complex conjugates. A **charge-conjugation matrix** for them is an invertible $B \in GL(4, \mathbb C)$ with
+>
+> $$
+> B\,(\gamma^\mu)^{\ast}\,B^{-1} = -\gamma^\mu, \qquad \mu = 0, 1, 2, 3 .
+> $$
+>
+> *Source: Yu §9.2.1, eqs. (9.98), (9.112)–(9.113) (the transpose form, Example §CB.19.22, 4) · PS §3.6, eqs. (3.144)–(3.145) (the chiral matrix $-i\gamma^2$, unnamed) · the basis-free definition written here (user's question, 2026-10-12: is charge conjugation defined as complex conjugation, or a general conjugation that becomes it?)*
+
+^def-cb-19-18
+
+> [!theorem] Theorem §CB.19.19: Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation
+> Let $\gamma^\mu$ be $4\times4$ Dirac matrices ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]]).
+> 1. $(\gamma^\mu)^{\ast}$ and $-\gamma^\mu$ are Dirac matrices too.
+> 2. A charge-conjugation matrix $B$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-18|Def. §CB.19.18]]) exists and is unique up to a nonzero factor.
+> 3. In a Hermitian basis ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-11|Def. §CB.14.11]]) $B$ can be chosen unitary, and is then unique up to a phase.
+> 4. Under a change of basis $\gamma'^\mu = M\gamma^\mu M^{-1}$ ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-15|Theorem §CB.12.15]]), $B' = MB(M^{\ast})^{-1}$ is a charge-conjugation matrix for the $\gamma'^\mu$; it is unitary if $B$ and $M$ are.
+> 5. $BB^{\ast} = \epsilon\,\mathbb 1$ with $\epsilon$ real; the sign of $\epsilon$ is the same for every $B$ and every set of $4\times4$ Dirac matrices; for unitary $B$, $\epsilon = \pm1$. For the Clifford relation $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ with $g = (+,-,-,-)$, $\epsilon = +1$: a unitary $B$ has $BB^{\ast} = \mathbb 1$.
+>
+> *Source: written here from Pauli's theorem (the route of Yu §9.2.1, which verifies the transpose form for the chiral matrix only, eqs. (9.104)–(9.113)) · the sign in part 5 computed here in the chiral basis of [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]] and transported to every basis by part 4*
+
+^thm-cb-19-19
+
+> [!proof]- Proof
+> **1. Conjugate sets are Dirac matrices.** Entrywise conjugation preserves sums and products, and $g^{\mu\nu}$ is real: $(\gamma^\mu)^{\ast}(\gamma^\nu)^{\ast} + (\gamma^\nu)^{\ast}(\gamma^\mu)^{\ast} = (\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu)^{\ast} = (2g^{\mu\nu}\mathbb 1)^{\ast} = 2g^{\mu\nu}\mathbb 1$. For the negatives, $(-\gamma^\mu)(-\gamma^\nu) + (-\gamma^\nu)(-\gamma^\mu) = \gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu = 2g^{\mu\nu}\mathbb 1$.
+>
+> **2. Existence and uniqueness.** Apply Pauli's theorem ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-12|Theorem §CB.14.12]], 1) to the two sets of step 1, with $(\gamma^\mu)^{\ast}$ as the first and $-\gamma^\mu$ as the second: there is an invertible $U$ with $-\gamma^\mu = U(\gamma^\mu)^{\ast}U^{-1}$ for all $\mu$, unique up to a nonzero factor. $B = U$ is a charge-conjugation matrix, and every other one is $\lambda B$, $\lambda \ne 0$.
+>
+> **3. Unitary choice.** Let $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$. Conjugating entrywise, $\bigl((\gamma^\mu)^{\ast}\bigr)^\dagger = (\gamma^{\mu\dagger})^{\ast} = (\gamma^0)^{\ast}(\gamma^\mu)^{\ast}(\gamma^0)^{\ast}$: the set $(\gamma^\mu)^{\ast}$ satisfies the Hermiticity relation with its own zeroth matrix $(\gamma^0)^{\ast}$. For the negatives, $(-\gamma^\mu)^\dagger = -\gamma^0\gamma^\mu\gamma^0 = (-\gamma^0)(-\gamma^\mu)(-\gamma^0)$. Both sets are Hermitian, so part 2 of Theorem §CB.14.12 makes $U$ unitary. $\lambda B$ is unitary iff $|\lambda| = 1$.
+>
+> **4. Change of basis.** $\gamma'^\mu = M\gamma^\mu M^{-1}$ gives $(\gamma'^\mu)^{\ast} = M^{\ast}(\gamma^\mu)^{\ast}(M^{\ast})^{-1}$ (conjugation is multiplicative, and $(M^{-1})^{\ast} = (M^{\ast})^{-1}$). With $B' = MB(M^{\ast})^{-1}$, $(B')^{-1} = M^{\ast}B^{-1}M^{-1}$ and
+>
+> $$
+> B'(\gamma'^\mu)^{\ast}(B')^{-1} = MB(M^{\ast})^{-1}\,M^{\ast}(\gamma^\mu)^{\ast}(M^{\ast})^{-1}\,M^{\ast}B^{-1}M^{-1} = M\bigl(B(\gamma^\mu)^{\ast}B^{-1}\bigr)M^{-1} = -M\gamma^\mu M^{-1} = -\gamma'^\mu .
+> $$
+>
+> If $M$ is unitary, so is $M^{\ast}$, and a product of unitary matrices is unitary.
+>
+> **5. $BB^{\ast}$ commutes with every γ.** Conjugate the defining relation: $B^{\ast}\gamma^\mu(B^{\ast})^{-1} = -(\gamma^\mu)^{\ast}$, i.e. $(\gamma^\mu)^{\ast} = -B^{\ast}\gamma^\mu(B^{\ast})^{-1}$. Insert this into the defining relation:
+>
+> $$
+> -\gamma^\mu = B(\gamma^\mu)^{\ast}B^{-1} = -B B^{\ast}\gamma^\mu(B^{\ast})^{-1}B^{-1} = -(BB^{\ast})\,\gamma^\mu\,(BB^{\ast})^{-1} .
+> $$
+>
+> So $BB^{\ast}$ commutes with all four $\gamma^\mu$, and $BB^{\ast} = \epsilon\mathbb 1$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-9|Theorem §CB.13.9]], 4), $\epsilon \ne 0$ since $B$ is invertible.
+>
+> **6. ε is real.** Conjugating $BB^{\ast} = \epsilon\mathbb 1$ gives $B^{\ast}B = \epsilon^{\ast}\mathbb 1$. Then $B(B^{\ast}B) = \epsilon^{\ast}B$ and $(BB^{\ast})B = \epsilon B$; the two left sides are equal and $B \ne 0$, so $\epsilon^{\ast} = \epsilon$.
+>
+> **7. Unitary B: ε = ±1.** $B^{\ast}$ is unitary with $B$, so $BB^{\ast} = \epsilon\mathbb 1$ is unitary: $|\epsilon|^2 = 1$, and with step 6, $\epsilon = \pm1$.
+>
+> **8. The sign does not depend on the choices.** Another charge-conjugation matrix is $\lambda B$ (step 2), with $(\lambda B)(\lambda B)^{\ast} = |\lambda|^2BB^{\ast} = |\lambda|^2\epsilon\mathbb 1$: same sign. In another basis, step 4 gives $B'(B')^{\ast} = MB(M^{\ast})^{-1}\,M^{\ast}B^{\ast}M^{-1} = M(BB^{\ast})M^{-1} = \epsilon\mathbb 1$: same $\epsilon$. Every set of $4\times4$ Dirac matrices is $M\gamma^\mu M^{-1}$ for some invertible $M$ (Theorem §CB.14.12, 1), so the sign of $\epsilon$ is one number for all of them, and it may be computed in a single basis.
+>
+> **9. The sign, computed in the chiral basis.** Take the chiral matrices of [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]], $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, $\gamma^i = \begin{pmatrix}0 & \sigma^i\\ -\sigma^i & 0\end{pmatrix}$. The entries of $\sigma^1$, $\sigma^3$ are real and those of $\sigma^2$ are $0$, $\pm i$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-20|Def. §CB.0.20]]), so $(\gamma^\mu)^{\ast} = \gamma^\mu$ for $\mu = 0, 1, 3$ and $(\gamma^2)^{\ast} = -\gamma^2$. Try $B = -i\gamma^2$. By the Clifford relations ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], 1), $B^2 = (-i)^2(\gamma^2)^2 = (-1)(-\mathbb 1) = \mathbb 1$, so $B^{-1} = B$.
+> - For $\mu = 0, 1, 3$: $B(\gamma^\mu)^{\ast}B^{-1} = (-i)^2\gamma^2\gamma^\mu\gamma^2 = -\gamma^2\gamma^\mu\gamma^2 = -(-\gamma^\mu\gamma^2)\gamma^2 = \gamma^\mu(\gamma^2)^2 = -\gamma^\mu$, moving $\gamma^2$ past $\gamma^\mu \ne \gamma^2$ at the cost of a sign.
+> - For $\mu = 2$: $B(\gamma^2)^{\ast}B^{-1} = (-i\gamma^2)(-\gamma^2)(-i\gamma^2) = (-i)(-1)(-i)(\gamma^2)^3 = (\gamma^2)^2\gamma^2 = -\gamma^2$, using $(-i)(-1)(-i) = 1$.
+>
+> So $B = -i\gamma^2$ is a charge-conjugation matrix. It is unitary: $(\gamma^2)^\dagger = -\gamma^2$ (Example §CB.12.13), so $B^\dagger = i(\gamma^2)^\dagger = -i\gamma^2 = B$ and $B^\dagger B = B^2 = \mathbb 1$. It is real: $B^{\ast} = (-i)^{\ast}(\gamma^2)^{\ast} = i(-\gamma^2) = B$. Hence $BB^{\ast} = B^2 = \mathbb 1$: $\epsilon = +1$, and by step 8 for every set of Dirac matrices.
+>
+> **What the proof shows**
+> - Charge conjugation is not defined as complex conjugation: complex conjugation of the $\gamma$'s produces a second Clifford module, and $B$ is the change of basis that Pauli's theorem supplies between it and the negated original. Only the factor of $B$ is a choice.
+> - ⚑ By-product: $\epsilon = +1$ is a property of the Clifford algebra with this signature, not of a basis. It makes $c = B\circ K$ square to $+\mathbb 1$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-21|Theorem §CB.19.21]], 4), a real structure, so spinors fixed by it exist (Majorana spinors). With $\epsilon = -1$ the map would square to $-\mathbb 1$, a quaternionic structure with no fixed vectors, the situation of the two-spinor flip $\xi \mapsto -i\sigma^2\xi^{\ast}$ on $\mathbb C^2$, which squares to $(-i\sigma^2)(-i\sigma^2)^{\ast} = (-i\sigma^2)^2 = -\mathbb 1$ ($-i\sigma^2$ is real). Consistent with the real classification: $c$ commutes with the $i\gamma^\mu$, which generate $\mathrm{Cl}(3,1) \cong M_4(\mathbb R)$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^rem-cb-13-1|§CB.13, ★ Remark: The real classification (not used in the course)]]).
+> - Used next: the antilinear map $c_B$ (Def. §CB.19.20, Theorem §CB.19.21) and the matrices in three bases (Example §CB.19.22).
+
+^pf-cb-19-19
+
+*Uses:* [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]], [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-12|Theorem §CB.14.12]], [[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-11|Def. §CB.14.11]], [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-15|Theorem §CB.12.15]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-9|Theorem §CB.13.9]], [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]], [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-12|Theorem §CB.12.12]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-20|Def. §CB.0.20]]
+
+> [!definition] Definition §CB.19.20: The Charge-Conjugation Map
+> For a charge-conjugation matrix $B$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-18|Def. §CB.19.18]]) the **charge-conjugation map** is
+>
+> $$
+> c_B : \mathbb C^4 \to \mathbb C^4, \qquad c_B(\psi) = B\,\psi^{\ast}, \qquad\text{i.e.}\qquad c_B = B\circ K ,
+> $$
+>
+> where $K\psi = \psi^{\ast}$ is the column of complex-conjugate components. Written $c$ when $B$ is fixed.
+>
+> *Source: written here · the chiral case $-i\gamma^2\psi^{\ast}$: PS §3.6, eq. (3.145), and Yu §9.2.1, eq. (9.102) in transpose form*
+
+^def-cb-19-20
+
+> [!theorem] Theorem §CB.19.21: The Charge-Conjugation Map Is a Real Structure Commuting with the Spinor Lorentz Matrices
+> Let $\gamma^\mu$ be the Dirac matrices in a Hermitian basis ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-11|Def. §CB.14.11]]), $B$ a unitary charge-conjugation matrix ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|Theorem §CB.19.19]], 3) and $c = c_B$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-20|Def. §CB.19.20]]). Then
+> 1. $c$ is antilinear, $c(\lambda\psi + \chi) = \lambda^{\ast}c(\psi) + c(\chi)$; it conjugates the standard inner product, $c(\psi)^\dagger c(\chi) = (\psi^\dagger\chi)^{\ast}$, and reverses the Dirac form ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-15|Def. §CB.14.15]]), $h_D(c\psi, c\chi) = -h_D(\psi, \chi)^{\ast}$;
+> 2. $c\,\gamma^\mu = -\gamma^\mu\,c$; hence $c\,S^{\mu\nu} = -S^{\mu\nu}\,c$ for the spinor generators ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-16|Def. §CB.15.16]]) and $c\,\gamma^5 = -\gamma^5\,c$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|Def. §CB.13.14]]), so $c$ maps $S^\pm$ onto $S^\mp$;
+> 3. $c\,\Lambda_{1/2}(\omega) = \Lambda_{1/2}(\omega)\,c$ for every real $\omega_{\mu\nu}$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]]), hence $c$ commutes with the action of every element of $\mathrm{Spin}(1,3)_0$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|Theorem §CB.19.3]]);
+> 4. $c^2 = \mathbb 1$;
+> 5. under a change of basis $\psi' = M\psi$, $\gamma'^\mu = M\gamma^\mu M^{-1}$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]]), the map $c' = c_{B'}$ with $B' = MB(M^{\ast})^{-1}$ satisfies $c'(M\psi) = M\,c(\psi)$.
+>
+> So $c$ is one antilinear map of spinor space, written in components in each basis, fixed up to a phase: a real structure commuting with $\mathrm{Spin}(1,3)_0$.
+>
+> *Source: written here · the chiral case of parts 2–3 is the reason the course's $-i\gamma^2\psi^{\ast}$ transforms like $\psi$ (the user's PHY 513 notes, Ch. 12 §12.3) · Yu §9.2.1, eq. (9.112) ($\mathcal C^{-1}\gamma^5\mathcal C = \gamma^5$, the transpose form of $c\gamma^5 = -\gamma^5c$; Example §CB.19.22, 4)*
+
+^thm-cb-19-21
+
+> [!proof]- Proof
+> **1. Antilinearity.** $c(\lambda\psi + \chi) = B(\lambda\psi + \chi)^{\ast} = B(\lambda^{\ast}\psi^{\ast} + \chi^{\ast}) = \lambda^{\ast}B\psi^{\ast} + B\chi^{\ast}$.
+>
+> **2. Inner products.** $(B\psi^{\ast})^\dagger = (\psi^{\ast})^\dagger B^\dagger = \psi^{\mathsf T}B^\dagger$, so $c(\psi)^\dagger c(\chi) = \psi^{\mathsf T}B^\dagger B\chi^{\ast} = \psi^{\mathsf T}\chi^{\ast} = \sum_a\psi_a\chi_a^{\ast} = (\psi^\dagger\chi)^{\ast}$ ($B$ unitary). For the Dirac form, the defining relation at $\mu = 0$, $B(\gamma^0)^{\ast} = -\gamma^0B$, gives $B^\dagger\gamma^0B = -B^\dagger B(\gamma^0)^{\ast} = -(\gamma^0)^{\ast}$; hence $h_D(c\psi, c\chi) = \psi^{\mathsf T}B^\dagger\gamma^0B\chi^{\ast} = -\psi^{\mathsf T}(\gamma^0)^{\ast}\chi^{\ast} = -\bigl(\psi^\dagger\gamma^0\chi\bigr)^{\ast} = -h_D(\psi, \chi)^{\ast}$.
+>
+> **3. $\gamma^\mu$.** $c(\gamma^\mu\psi) = B(\gamma^\mu)^{\ast}\psi^{\ast} = B(\gamma^\mu)^{\ast}B^{-1}\,B\psi^{\ast} = -\gamma^\mu c(\psi)$, inserting $B^{-1}B = \mathbb 1$.
+>
+> **4. $S^{\mu\nu}$: two signs.** $(S^{\mu\nu})^{\ast} = \bigl(\frac i4[\gamma^\mu, \gamma^\nu]\bigr)^{\ast} = -\frac i4[(\gamma^\mu)^{\ast}, (\gamma^\nu)^{\ast}]$: conjugation flips the $i$. Conjugating by $B$ (which preserves products, $BXYB^{-1} = BXB^{-1}\,BYB^{-1}$):
+>
+> $$
+> B(S^{\mu\nu})^{\ast}B^{-1} = -\tfrac i4\bigl[B(\gamma^\mu)^{\ast}B^{-1}, B(\gamma^\nu)^{\ast}B^{-1}\bigr] = -\tfrac i4[-\gamma^\mu, -\gamma^\nu] = -\tfrac i4[\gamma^\mu, \gamma^\nu] = -S^{\mu\nu} .
+> $$
+>
+> The two minus signs of the $\gamma$'s cancel in the commutator; the sign of the $i$ survives. As in step 3, $c(S^{\mu\nu}\psi) = B(S^{\mu\nu})^{\ast}B^{-1}c(\psi) = -S^{\mu\nu}c(\psi)$.
+>
+> **5. γ⁵.** $(\gamma^5)^{\ast} = (i\gamma^0\gamma^1\gamma^2\gamma^3)^{\ast} = -i(\gamma^0)^{\ast}(\gamma^1)^{\ast}(\gamma^2)^{\ast}(\gamma^3)^{\ast}$, so $B(\gamma^5)^{\ast}B^{-1} = -i(-\gamma^0)(-\gamma^1)(-\gamma^2)(-\gamma^3) = -i\gamma^0\gamma^1\gamma^2\gamma^3 = -\gamma^5$, and $c\gamma^5 = -\gamma^5c$ as in step 3. If $\gamma^5\psi = \pm\psi$, then $\gamma^5c(\psi) = -c(\gamma^5\psi) = -c(\pm\psi) = \mp c(\psi)$ (the factor $\pm1$ is real, so antilinearity does not change it): $c(S^\pm) \subseteq S^\mp$, with equality since $c^2 = \mathbb 1$ (step 8).
+>
+> **6. Λ½: the two signs cancel.** Let $X = \omega_{\mu\nu}S^{\mu\nu}$ with real $\omega_{\mu\nu}$; then $X^{\ast} = \omega_{\mu\nu}(S^{\mu\nu})^{\ast}$ and, by step 4, $BX^{\ast}B^{-1} = -X$; inserting $B^{-1}B$ between factors, $B(X^{\ast})^nB^{-1} = (BX^{\ast}B^{-1})^n = (-X)^n$. Entrywise conjugation is continuous and multiplicative, so it passes through the exponential series ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-4|Def. §CB.1.4]]):
+>
+> $$
+> B\,\Lambda_{1/2}(\omega)^{\ast}B^{-1} = \sum_{n=0}^\infty\frac1{n!}\Bigl(\frac i2\Bigr)^nB(X^{\ast})^nB^{-1} = \sum_{n=0}^\infty\frac1{n!}\Bigl(\frac i2\Bigr)^n(-X)^n = \sum_{n=0}^\infty\frac1{n!}\Bigl(-\frac i2\Bigr)^nX^n = \Lambda_{1/2}(\omega) .
+> $$
+>
+> ⚑ By-product: two sign flips cancel, $i \to -i$ from the conjugation of the exponent and $X \to -X$ from $B$ (step 4). Then $c(\Lambda_{1/2}\psi) = B\Lambda_{1/2}^{\ast}B^{-1}\,B\psi^{\ast} = \Lambda_{1/2}c(\psi)$.
+>
+> **7. The whole group.** Every $x \in \mathrm{Spin}(1,3)_0$ is a finite product of exponentials of elements of its Lie algebra ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-5|Theorem §CB.3.5]], 3), each acting as some $\Lambda_{1/2}(\omega)$ (Theorem §CB.19.3). A map commuting with each factor commutes with the product.
+>
+> **8. c².** $c(c(\psi)) = B(B\psi^{\ast})^{\ast} = BB^{\ast}\psi = \psi$, since $BB^{\ast} = \mathbb 1$ for unitary $B$ (Theorem §CB.19.19, 5).
+>
+> **9. Change of basis.** $B'$ is a charge-conjugation matrix for the $\gamma'^\mu$ (Theorem §CB.19.19, 4), and $c'(M\psi) = MB(M^{\ast})^{-1}(M\psi)^{\ast} = MB(M^{\ast})^{-1}M^{\ast}\psi^{\ast} = MB\psi^{\ast} = M\,c(\psi)$: the new components of $c(\psi)$ are $c'$ of the new components of $\psi$, which is the transformation of a map between vectors (Theorem §CB.0.5). $B$ is fixed up to a phase $\lambda$ (Theorem §CB.19.19, 3), and $c_{\lambda B} = \lambda c_B$: the map is fixed up to the same phase.
+>
+> **What the proof shows**
+> - Part 3 is why $c(\psi)$ transforms like $\psi$ although $\psi^{\ast}$ alone does not ($\Lambda_{1/2}^{\ast} \ne \Lambda_{1/2}$ for boosts): $B$ undoes the effect of the conjugation on the generators.
+> - The fixed vectors $c(\psi) = \psi$ form a real four-dimensional subspace $S_{\mathbb R}$ with $S = S_{\mathbb R}\oplus iS_{\mathbb R}$ ($\psi = \frac12(\psi + c\psi) + i\cdot\frac1{2i}(\psi - c\psi)$, both parts fixed), invariant under $\mathrm{Spin}(1,3)_0$ by part 3; it is not invariant under $\gamma^5$ (part 2). In a basis with $B = \mathbb 1$ it is the real columns (Example §CB.19.22, 3).
+> - Used next: the matrices in three bases and the transpose form (Example §CB.19.22).
+
+^pf-cb-19-21
+
+*Uses:* [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-20|Def. §CB.19.20]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|Theorem §CB.19.19]], [[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-15|Def. §CB.14.15]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-16|Def. §CB.15.16]], [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|Def. §CB.13.14]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-19|Def. §CB.15.19]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-4|Def. §CB.1.4]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-5|Theorem §CB.3.5]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|Theorem §CB.19.3]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]]
+
+> [!example] Example §CB.19.22: The Charge-Conjugation Matrix in Three Bases, and the Transpose Form
+> 1. *Chiral basis* ([[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-12-13|Example §CB.12.13]]): $B = -i\gamma^2 = \begin{pmatrix}0 & -i\sigma^2\\ i\sigma^2 & 0\end{pmatrix}$, up to a phase; real, symmetric and unitary, with $B^2 = BB^{\ast} = \mathbb 1$.
+> 2. *Dirac basis* $\gamma_D^0 = \operatorname{diag}(\mathbb 1, -\mathbb 1)$, $\gamma_D^i = \begin{pmatrix}0 & \sigma^i\\ -\sigma^i & 0\end{pmatrix}$ (the chiral $\gamma^i$): again $B_D = -i\gamma_D^2 = -i\gamma^2$.
+> 3. *A Majorana basis*, all four matrices purely imaginary: $\gamma_M^0 = \begin{pmatrix}0 & \sigma^2\\ \sigma^2 & 0\end{pmatrix}$, $\gamma_M^1 = \begin{pmatrix}i\sigma^3 & 0\\ 0 & i\sigma^3\end{pmatrix}$, $\gamma_M^2 = \begin{pmatrix}0 & -\sigma^2\\ \sigma^2 & 0\end{pmatrix}$, $\gamma_M^3 = \begin{pmatrix}-i\sigma^1 & 0\\ 0 & -i\sigma^1\end{pmatrix}$: $B_M = \mathbb 1$ up to a phase, and $c$ is plain complex conjugation, $c(\psi) = \psi^{\ast}$.
+> 4. *Transpose form.* In any Hermitian basis ([[§CB.14 Complex Clifford Algebras and Clifford Modules#^def-cb-14-11|Def. §CB.14.11]]) put $\tilde B \equiv B(\gamma^0)^{\mathsf T}$. Then $\tilde B^{-1}\gamma^\mu\tilde B = -(\gamma^\mu)^{\mathsf T}$ for all $\mu$, $B = \tilde B(\gamma^0)^{\mathsf T}$, and $c(\psi) = B\psi^{\ast} = \tilde B\,(\psi^\dagger\gamma^0)^{\mathsf T}$. In the chiral basis $\tilde B = i\gamma^0\gamma^2$.
+>
+> In all three bases $BB^{\ast} = +\mathbb 1$, as [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|Theorem §CB.19.19]], 5 requires.
+>
+> *Computation.* **1. Chiral.** Step 9 of the proof of Theorem §CB.19.19. In blocks, $-i\gamma^2 = -i\begin{pmatrix}0 & \sigma^2\\ -\sigma^2 & 0\end{pmatrix}$ with $-i\sigma^2 = \begin{pmatrix}0 & -1\\ 1 & 0\end{pmatrix}$ real. Symmetric: $(\sigma^2)^{\mathsf T} = -\sigma^2$, so $\begin{pmatrix}0 & \sigma^2\\ -\sigma^2 & 0\end{pmatrix}^{\mathsf T} = \begin{pmatrix}0 & -(\sigma^2)^{\mathsf T}\\ (\sigma^2)^{\mathsf T} & 0\end{pmatrix} = \gamma^2$. **2. Dirac.** $\gamma_D^0$ is real, Hermitian, squares to $\mathbb 1$ and anticommutes with each $\gamma^i$: $\operatorname{diag}(\mathbb 1, -\mathbb 1)\gamma^i = \begin{pmatrix}0 & \sigma^i\\ \sigma^i & 0\end{pmatrix} = -\gamma^i\operatorname{diag}(\mathbb 1, -\mathbb 1)$ by block multiplication; with the chiral $\gamma^i$ these are Dirac matrices in a Hermitian basis. Step 9 used only that $\gamma^0$, $\gamma^1$, $\gamma^3$ are real, $\gamma^2$ is imaginary and anti-Hermitian, and the Clifford relations; all hold here, so $-i\gamma_D^2$ works. Cross-check with Theorem §CB.19.19, 4: the real orthogonal $M = \frac1{\sqrt2}\begin{pmatrix}\mathbb 1 & \mathbb 1\\ -\mathbb 1 & \mathbb 1\end{pmatrix}$, $M^{-1} = M^{\mathsf T}$, carries the chiral matrices to these (block multiplication: $M\gamma^0M^{\mathsf T} = \frac12\begin{pmatrix}\mathbb 1 & \mathbb 1\\ \mathbb 1 & -\mathbb 1\end{pmatrix}\begin{pmatrix}\mathbb 1 & -\mathbb 1\\ \mathbb 1 & \mathbb 1\end{pmatrix} = \operatorname{diag}(\mathbb 1, -\mathbb 1)$ and $M\gamma^iM^{\mathsf T} = \frac12\begin{pmatrix}-\sigma^i & \sigma^i\\ -\sigma^i & -\sigma^i\end{pmatrix}\begin{pmatrix}\mathbb 1 & -\mathbb 1\\ \mathbb 1 & \mathbb 1\end{pmatrix} = \gamma^i$); $M^{\ast} = M$, so $B_D = MBM^{-1} = M(-i\gamma^2)M^{-1} = -i\gamma_D^2$. **3. Majorana.** In the block notation $A\otimes C = \begin{pmatrix}a_{11}C & a_{12}C\\ a_{21}C & a_{22}C\end{pmatrix}$, for which block multiplication gives $(A\otimes C)(A'\otimes C') = AA'\otimes CC'$: $\gamma_M^0 = \sigma^1\otimes\sigma^2$, $\gamma_M^1 = \mathbb 1\otimes i\sigma^3$, $\gamma_M^2 = (-i\sigma^2)\otimes\sigma^2$, $\gamma_M^3 = \mathbb 1\otimes(-i\sigma^1)$. Squares: $(\sigma^1)^2\otimes(\sigma^2)^2 = \mathbb 1$; $\mathbb 1\otimes(i\sigma^3)^2 = -\mathbb 1$; $(-i\sigma^2)^2\otimes(\sigma^2)^2 = -\mathbb 1$; $\mathbb 1\otimes(-i\sigma^1)^2 = -\mathbb 1$. Anticommutators: in each of the six pairs exactly one tensor factor holds two distinct, hence anticommuting, Pauli matrices and the other factor holds equal or commuting ones ($\gamma_M^0, \gamma_M^1$: $\sigma^2$ vs $\sigma^3$ in the second factor; $\gamma_M^0, \gamma_M^2$: $\sigma^1$ vs $\sigma^2$ in the first; $\gamma_M^0, \gamma_M^3$: $\sigma^2$ vs $\sigma^1$; $\gamma_M^1, \gamma_M^2$: $\sigma^3$ vs $\sigma^2$; $\gamma_M^1, \gamma_M^3$: $\sigma^3$ vs $\sigma^1$; $\gamma_M^2, \gamma_M^3$: $\sigma^2$ vs $\sigma^1$), so each pair anticommutes ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-22|Theorem §CB.0.22]]). Imaginary: $\sigma^1\otimes\sigma^2$ (real times imaginary), $i\sigma^3$, $(-i\sigma^2)\otimes\sigma^2$ (real times imaginary), $-i\sigma^1$. Hermitian basis: $\gamma_M^0$ is Hermitian and the $\gamma_M^i$ anti-Hermitian (each factor Hermitian or anti-Hermitian; $(A\otimes C)^\dagger = A^\dagger\otimes C^\dagger$). Then $(\gamma_M^\mu)^{\ast} = -\gamma_M^\mu$, so $B_M = \mathbb 1$ satisfies $B_M(\gamma_M^\mu)^{\ast}B_M^{-1} = -\gamma_M^\mu$, and $B_MB_M^{\ast} = \mathbb 1$. **4. Transpose form.** In a Hermitian basis $(\gamma^\mu)^{\ast} = (\gamma^{\mu\dagger})^{\mathsf T} = (\gamma^0\gamma^\mu\gamma^0)^{\mathsf T} = (\gamma^0)^{\mathsf T}(\gamma^\mu)^{\mathsf T}(\gamma^0)^{\mathsf T}$, and $\bigl((\gamma^0)^{\mathsf T}\bigr)^2 = \bigl((\gamma^0)^2\bigr)^{\mathsf T} = \mathbb 1$. So $\tilde B(\gamma^\mu)^{\mathsf T}\tilde B^{-1} = B(\gamma^0)^{\mathsf T}(\gamma^\mu)^{\mathsf T}(\gamma^0)^{\mathsf T}B^{-1} = B(\gamma^\mu)^{\ast}B^{-1} = -\gamma^\mu$; multiplying by $\tilde B^{-1}$ on the left and $\tilde B$ on the right, $(\gamma^\mu)^{\mathsf T} = -\tilde B^{-1}\gamma^\mu\tilde B$. Next $\tilde B(\gamma^0)^{\mathsf T} = B\bigl((\gamma^0)^{\mathsf T}\bigr)^2 = B$, and $(\psi^\dagger\gamma^0)^{\mathsf T} = (\gamma^0)^{\mathsf T}\psi^{\ast}$, so $\tilde B(\psi^\dagger\gamma^0)^{\mathsf T} = B\psi^{\ast}$. In the chiral basis $\gamma^0$ is real and symmetric, $(\gamma^0)^{\mathsf T} = \gamma^0$, and $\tilde B = -i\gamma^2\gamma^0 = i\gamma^0\gamma^2$ by anticommutation. (All four parts checked numerically here, including a random unitary change of the chiral basis.)
+>
+> *Source: chiral and Dirac bases: Example §CB.12.13 and the course's equivalence [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]] (the same $M$, called $U_D$ there after PHY 513, Problem Set 6, Problem 3(b)) · the Majorana basis: Schwartz, Quantum Field Theory and the Standard Model, §10.3, eq. (10.74) (p. 170: "In this basis the γ-matrices are purely imaginary"), the course's restatement [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-6|§C5a.5, ★ Remark: The Majorana basis]] · the transpose form: Yu §9.2.1, eqs. (9.98) ($\mathcal C \equiv i\gamma^0\gamma^2$), (9.112), (9.117) · PS §3.6, eq. (3.145) ($-i\gamma^2\psi^{\ast} = -i(\bar\psi\gamma^0\gamma^2)^{\mathsf T}$) · the general relation $B = \tilde B(\gamma^0)^{\mathsf T}$ written here*
+
+^ex-cb-19-22
+
+> [!caution] Caution: Names for the charge-conjugation matrix
+> Two matrices go by this name. These notes call **$B$** the matrix acting on $\psi^{\ast}$, $B(\gamma^\mu)^{\ast}B^{-1} = -\gamma^\mu$ (Def. §CB.19.18); the course and Peskin–Schroeder use its chiral form $-i\gamma^2$ without a name (Lecture 12, slides 8–9; PS eqs. (3.144)–(3.145)). Yu's **charge-conjugation matrix** $\mathcal C \equiv i\gamma^0\gamma^2$ (eq. (9.98)) is the transpose form $\tilde B = B(\gamma^0)^{\mathsf T}$ of [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-19-22|Example §CB.19.22]], 4, acting on $\bar\psi^{\mathsf T}$, with $\mathcal C^{-1}\gamma^\mu\mathcal C = -(\gamma^\mu)^{\mathsf T}$ (eq. (9.112)); the course's $-i(\bar\psi\gamma^0\gamma^2)^{\mathsf T}$ is the same $\mathcal C\bar\psi^{\mathsf T}$, since $-i(\gamma^0\gamma^2)^{\mathsf T} = -i\gamma^2\gamma^0 = i\gamma^0\gamma^2$. Yu's $\mathcal C$ is not the $\mathcal C$ of the Hilbert-space operator $U(\mathcal C)$, which names the transformation. The relation $B = \tilde B(\gamma^0)^{\mathsf T}$ holds in Hermitian bases.
+>
+> *Source: Yu §9.2.1, eqs. (9.98), (9.112), (9.117) · PS §3.6, pp. 70–71 (no name given) · Lecture 12, slides 8–10 · written here*
+
+^cau-cb-19-2
+
+> [!remark]- ★ Remark: Majorana spinors as a real structure
+> $\mathrm{Cl}(1,3) \cong M_2(\mathbb H)$ has no real four-dimensional module ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^rem-cb-13-1|§CB.13, ★ Remark: The real classification]]), but the Dirac module carries a conjugate-linear map commuting with $\mathrm{Spin}(1,3)_0$ and squaring to $\mathbb 1$: the charge-conjugation map $c = B\circ K$ of [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-20|Def. §CB.19.20]], with $c^2 = \mathbb 1$, commuting with every $\Lambda_{1/2}$ and exchanging $S^+$ with $S^-$ ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-21|Theorem §CB.19.21]]; that the two halves are complex conjugates of each other is [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-6|Theorem §CB.19.6]]). Its fixed vectors, $c\psi = \psi$, are the Majorana spinors: a real form $S_{\mathbb R}$ of $S$ for the group (proof of Theorem §CB.19.21, last bullet). In the Majorana basis $B = \mathbb 1$ and $c$ is plain complex conjugation ([[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-19-22|Example §CB.19.22]]; [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-6|§C5a.5, ★ Remark: The Majorana basis]]). The Majorana field itself is not yet in the vault (chapter C9; a section on the field is planned).
+
+^rem-cb-19-1
+
+> [!remark]- Connections
+> - This section is the TA's picture for the course's spinors in one place: the Dirac module is a Clifford module (C5a.1), restricted to the spin group it is $(\frac12, 0)\oplus(0, \frac12)$ (C5a.3), $\gamma^5$ is the volume element (C5a.5), and vectors and two-forms are bispinors (C3.3, C3.4).
+> - Theorem §CB.19.16 is why higher-spin fermion fields (Rarita–Schwinger $\psi_\mu$, a spinor with a vector index) are built as spinor ⊗ tensor and then projected.
+> - The course's $-i\gamma^2\psi^{\ast}$ is the chiral-basis form of one basis-free antilinear map $c = B\circ K$ of the Dirac module (Theorems §CB.19.19, §CB.19.21); that $c^2 = +\mathbb 1$ rather than $-\mathbb 1$ is what allows Majorana spinors, the fixed points of $c$ (★ Remark above).
+> - **Used in**: Definition §CB.19.1 — [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]] (cited in [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^der-ex-c5a-4-1|Example §C5a.4.1, derivation]]; Mathematical background); Theorem §CB.19.2 — [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]] (Mathematical background), [[§C5a.14 Gamma-Matrix Technology|§C5a.14]] (Mathematical background); Theorem §CB.19.3 — [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]] (Mathematical background); Theorem §CB.19.4 — [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]] (Mathematical background), [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]] (cited in [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]], [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-2|Derivation §C5a.5.2]], [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-3|Derivation §C5a.5.3]]; Mathematical background), [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] (Mathematical background), [[§C5a.8 The Weyl Form and the Weyl Equations|§C5a.8]] (Mathematical background), [[§C5a.13 Helicity Spinors and the Massless Limit|§C5a.13]] (Mathematical background), [[§C9.4 Fermion Bilinears under Parity|§C9.4]] (cited in the text; Mathematical background); Theorem §CB.19.5 — [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]] (cited in [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]]; Mathematical background), [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]] (Mathematical background); Theorem §CB.19.7 — [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]] (physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]; Mathematical background; Connections), [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]] (restated in physics form as [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]; Mathematical background), [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]] (physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]; Mathematical background), [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] (physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]; Mathematical background), [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] (physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]; Mathematical background), [[§C5a.12 Normalization and Spin Sums|§C5a.12]] (physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]; Mathematical background), [[§C9.4 Fermion Bilinears under Parity|§C9.4]] (physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]; Mathematical background), [[§C13.2★ The Dirac Equation|QM §C13.2★]] (cited in [[§C13.2★ The Dirac Equation#^rem-c13-2-4|QM §C13.2, Remark: Lorentz covariance and the rapidity]]), [[§B1.2 Lorentz Transformations and the Lorentz Group|REL §B1.2]] (Connections); Theorem §CB.19.8 — [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]] (Mathematical background); Theorem §CB.19.10 — [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]] (Mathematical background); Theorem §CB.19.11 — [[§C1a.5 Vectors, Tensors and Index Notation|§C1a.5]] (Mathematical background), [[§C3.3 How Fields Transform under the Lorentz Group|§C3.3]] (Mathematical background); Theorem §CB.19.12 — [[§C1a.5 Vectors, Tensors and Index Notation|§C1a.5]] (cited in [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]]; Mathematical background), [[§C3.3 How Fields Transform under the Lorentz Group|§C3.3]] (cited in [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^der-c3-3-7|Derivation §C3.3.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^der-c3-3-7c|Derivation §C3.3.7, third route]]; Mathematical background), [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] (Mathematical background; Connections); Theorem §CB.19.13 — [[§C5a.2 The Dirac Form|§C5a.2]] (cited in [[§C5a.2 The Dirac Form#^der-c5a-2-1|Derivation §C5a.2.1]]; physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]]; Mathematical background; Connections), [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]] (restated in physics form as [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]]; Mathematical background; Connections), [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] (physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]]; Mathematical background; Connections), [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] (physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]]; Mathematical background), [[§C5a.8 The Weyl Form and the Weyl Equations|§C5a.8]] (physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]]; Mathematical background; Connections), [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates|§C5a.11]] (physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]]; Mathematical background), [[§C5a.12 Normalization and Spin Sums|§C5a.12]] (physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]]; Mathematical background); Theorem §CB.19.14 — [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] (cited in [[§C5a.6 The Dirac Conjugate and the Bilinears#^rem-c5a-6-3|§C5a.6, ★ Remark: The sixteen bilinears read through (j₊, j₋)]]; the text; Mathematical background); Definition §CB.19.18 — [[§C9.6 Charge Conjugation on Oscillators and Spinors|§C9.6]] (restated in physics form as [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|Theorem §C9.6.7]]; Mathematical background), [[§C9.7 Charge Conjugation on the Field and Bilinears|§C9.7]] (physics form: [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|Theorem §C9.6.7]]; Mathematical background); Theorem §CB.19.19 — [[§C9.6 Charge Conjugation on Oscillators and Spinors|§C9.6]] (restated in physics form as [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|Theorem §C9.6.7]]; Mathematical background), [[§C9.7 Charge Conjugation on the Field and Bilinears|§C9.7]] (physics form: [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|Theorem §C9.6.7]]; Mathematical background; Connections); Definition §CB.19.20 — [[§C9.6 Charge Conjugation on Oscillators and Spinors|§C9.6]] (restated in physics form as [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|Theorem §C9.6.7]]; Mathematical background), [[§C9.7 Charge Conjugation on the Field and Bilinears|§C9.7]] (physics form: [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|Theorem §C9.6.7]]; Mathematical background); Theorem §CB.19.21 — [[§C9.6 Charge Conjugation on Oscillators and Spinors|§C9.6]] (restated in physics form as [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|Theorem §C9.6.7]]; Mathematical background), [[§C9.7 Charge Conjugation on the Field and Bilinears|§C9.7]] (cited in [[§C9.7 Charge Conjugation on the Field and Bilinears#^der-c9-7-1|Derivation §C9.7.1]]; physics form: [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|Theorem §C9.6.7]]; Mathematical background; Connections); Example §CB.19.22 — [[§C9.6 Charge Conjugation on Oscillators and Spinors|§C9.6]] (restated in physics form as [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|Theorem §C9.6.7]]; Mathematical background), [[§C9.7 Charge Conjugation on the Field and Bilinears|§C9.7]] (cited in [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-7|Theorem §C9.7.7]]; physics form: [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|Theorem §C9.6.7]]; Mathematical background); §CB.19, Caution: Names for the charge-conjugation matrix — [[§C9.6 Charge Conjugation on Oscillators and Spinors|§C9.6]] (cited in [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|Theorem §C9.6.7]]; Mathematical background), [[§C9.7 Charge Conjugation on the Field and Bilinears|§C9.7]] (cited in [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|Theorem §C9.7.1]], [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-7|Theorem §C9.7.7]]; Mathematical background).

@@ -1,15 +1,15 @@
 ---
 type: section
 subject: "[[Functional Analysis]]"
-chapter: 8
+chapter: 9
 section: 45
 tags: [functional-analysis, math556]
 ---
-← [[§44 Weak Sequential Compactness]] · ↑ [[· 8 Weak Convergence]] · [[§46 Bras, Kets, and the Riesz Map]] →
+← [[§44 Weak Sequential Compactness]] · ↑ [[· 9 Convergence of Operators and Transposes]] · [[§46 The Transpose]] →
 
 *Stage: maps — Thread: functionals. Sequences of bounded linear maps converge uniformly, strongly or weakly; each mode implies the next, and even the weakest forces a uniform bound on the norms when the domain is complete.*
 
-*Lecture 19 (Tue Nov 10), last part. Source: the handwritten notes of the lecture. The proofs of the proposition and of the theorem, which the notes only name, and the second example are filled in.*
+*Lecture 19 (Tue Nov 10), last part, and the beginning of Lecture 20 (Thu Nov 12), which recalled the three modes of convergence and gave the second example. Sources: the handwritten notes of both lectures and, for Lecture 20, the Otter.ai transcript. The proofs of the proposition and of the theorem, which the notes only name, are filled in.*
 
 ## Three Modes of Convergence
 
@@ -40,7 +40,7 @@ The modes of convergence for vectors (Definition [[§43 Weak and Weak-Star Conve
 ^def-45-2
 
 > [!remark]- Connections
-> - Used in the companion chapter for the completeness relation: [[§47 The Completeness Relation#^thm-47-2|§47.2]] (strong) against [[§47 The Completeness Relation#^prop-47-3|§47.3]] (not in norm).
+> - Used in the companion chapter for the completeness relation: [[§48 The Completeness Relation#^thm-48-2|§48.2]] (strong) against [[§48 The Completeness Relation#^prop-48-3|§48.3]] (not in norm).
 
 > [!definition] Definition §45.3: Weak Convergence of Operators
 > The sequence $\{A_n\}_{n=1}^\infty$ **converges weakly** to $A_0$, written $A_n \rightharpoonup A_0$ as $n \to \infty$ or $\mathop{\text{w-lim}}_{n \to \infty} A_n = A_0$, if for every $x \in X$ and every $\ell \in Y'$
@@ -164,7 +164,7 @@ Neither implication of Proposition [[§45 Convergence of Operators#^prop-45-1|§
 > - On a finite-dimensional space a linear operator is injective if and only if it is surjective: [[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]]. The left shift is surjective but not injective, and the right shift injective but not surjective, so this fails on $\ell^2$.
 
 > [!example] Example §45.2: Weak but Not Strong Convergence: Powers of the Right Shift
-> *(Not from lecture.)* Let $S : \ell^2 \to \ell^2$ be the **right shift**,
+> *(Lecture 20.)* Let $S : \ell^2 \to \ell^2$ be the **right shift**,
 >
 > $$
 > S(a_1, a_2, a_3, \ldots) = (0, a_1, a_2, \ldots) , \qquad \text{so} \qquad S^j(a_1, a_2, \ldots) = (\underbrace{0, \ldots, 0}_{j}, a_1, a_2, \ldots) .
@@ -180,7 +180,7 @@ Neither implication of Proposition [[§45 Convergence of Operators#^prop-45-1|§
 ^ex-45-2
 
 > [!proof]+ Proof
-> $S$ is linear, and $\|S^j x\|^2 = \sum_{i=1}^\infty |x_i|^2 = \|x\|^2$, since $S^j x$ has the same nonzero entries as $x$. This is (2): for $x \neq 0$, $\|S^j x - 0\| = \|x\|$ does not tend to $0$. It also shows $S^j \in \mathcal{L}(\ell^2, \ell^2)$ with $\|S^j\| = 1$.
+> $S$ is linear, and $\|S^j x\|^2 = \sum_{i=1}^\infty |x_i|^2 = \|x\|^2$, since $S^j x$ has the same nonzero entries as $x$. This is (2): for $x \neq 0$, $\|S^j x - 0\| = \|x\|$ does not tend to $0$. It also shows $S^j \in \mathcal{L}(\ell^2, \ell^2)$ with $\|S^j\| = 1$. Nor does $\{S^j\}$ converge strongly to any other $A \in \mathcal{L}(\ell^2, \ell^2)$: strong convergence would give $S^j x \rightharpoonup Ax$ (Proposition [[§45 Convergence of Operators#^prop-45-1|§45.1]](2)), while $S^j x \rightharpoonup 0$ by (1), and weak limits are unique (Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]](2)); so $A = 0$, which is excluded.
 >
 > (1) Every $\ell \in (\ell^2)'$ is $\ell(u) = (u, y) = \sum_i u_i\, \overline{y_i}$ for some $y \in \ell^2$ (Example [[§31 Dual Spaces#^ex-31-1|§31.1]]). The $i$-th entry of $S^j x$ is $x_{i-j}$ for $i > j$ and $0$ for $i \le j$, so by the Cauchy–Schwarz inequality
 >
@@ -192,7 +192,7 @@ Neither implication of Proposition [[§45 Convergence of Operators#^prop-45-1|§
 
 ^pf-ex-45-2
 
-*Uses:* [[§31 Dual Spaces#^ex-31-1|Ex. §31.1]]
+*Uses:* [[§45 Convergence of Operators#^prop-45-1|§45.1]], [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]], [[§31 Dual Spaces#^ex-31-1|Ex. §31.1]]
 
 ![[m556-45-1.svg]]
 
@@ -202,4 +202,4 @@ The two shifts applied to $x = (1, 0.8, 0.8^2, \ldots)$, entries drawn as bars. 
 
 *(Not from lecture; animation added, vault only.)* The powers $T^j$ and $S^j$ for $j = 0, 1, \ldots, 16$, applied to $x_i = 0.82^{\,i-1}$. Top left: $T^j x$ (blue) over $x$ (grey); the bars that remain are the tail of $x$. Bottom left: $S^j x$ (red) moving to the right over a fixed $y \in \ell^2$ (grey). Right: $\|T^j x\|$ decreases to $0$, $\|S^j x\|$ stays equal to $\|x\|$, and $|(S^j x, y)|$ decreases to $0$.
 
-A third instance is in the companion chapter: for a complete orthonormal set $\{e_n\}$ in a Hilbert space, the partial sums $P_N$ of the completeness relation converge to the identity strongly (Theorem [[§47 The Completeness Relation#^thm-47-2|§47.2]]) but not uniformly (Proposition [[§47 The Completeness Relation#^prop-47-3|§47.3]]).
+A third instance is in the companion chapter: for a complete orthonormal set $\{e_n\}$ in a Hilbert space, the partial sums $P_N$ of the completeness relation converge to the identity strongly (Theorem [[§48 The Completeness Relation#^thm-48-2|§48.2]]) but not uniformly (Proposition [[§48 The Completeness Relation#^prop-48-3|§48.3]]).

@@ -4460,7 +4460,7 @@ Six matrices $D(\mathcal J^{\mu\nu}) = -D(\mathcal J^{\nu\mu})$ on a complex spa
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (identifying a representation)
-> - Definition [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-8|§CB.5.8]] Representation of the Lorentz Algebra; the two qualifiers: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^rem-c3-1-4|§C3.1, Remark: "One representation for each dimension" needs two qualifiers]]; two inequivalent four-dimensional representations: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-5|§CB.18.5]] The Dirac Representation Is Not the Vector Representation.
+> - Definition [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-8|§CB.5.8]] Representation of the Lorentz Algebra; the two qualifiers: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^rem-c3-1-4|§C3.1, Remark: "One representation for each dimension" needs two qualifiers]]; two inequivalent four-dimensional representations: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-5|§CB.19.5]] The Dirac Representation Is Not the Vector Representation.
 
 ### [B] Orbital generators
 
@@ -4492,7 +4492,7 @@ The complexification $\mathfrak g_{\mathbb C}$ of a real Lie algebra is the spac
 > [!tip]- Hints: route in the notes
 > - Technique: K16
 > - Definition [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-4-3|§CB.4.3]] Complexification; where $J_i$, $K_i$ live: Step 1 of [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^pf-cb-6-1|proof of Theorem §CB.6.1]]; no nonzero element of a copy in the real algebra: Step 8 there.
-> - The complex-linear extension: Theorem [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-10|§CB.4.10]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification; the slide's word "reducible": [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-1|§C3.2, Caution: The algebra decomposes; it is not "reducible"]]; the objects called J: [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-17-1|§CB.17, Remark: The objects called J, and what the labels refer to]].
+> - The complex-linear extension: Theorem [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-10|§CB.4.10]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification; the slide's word "reducible": [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-1|§C3.2, Caution: The algebra decomposes; it is not "reducible"]]; the objects called J: [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-18-1|§CB.18, Remark: The objects called J, and what the labels refer to]].
 
 ### [B] Intertwiner and equivalence
 
@@ -4507,7 +4507,7 @@ A linear map $S$ with $S\,D_1(x) = D_2(x)\,S$ for every element $x$ is an intert
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Definition [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|§CB.7.2]] Intertwiner; group versus algebra: step 3 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-2|proof of Theorem §CB.17.2]]; Casimirs under intertwiners: step 7(ii) of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7|proof of Theorem §CB.17.7]].
+> - Definition [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|§CB.7.2]] Intertwiner; group versus algebra: step 3 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-2|proof of Theorem §CB.18.2]]; Casimirs under intertwiners: step 7(ii) of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-7|proof of Theorem §CB.18.7]].
 
 ### [B] Casimir operator
 
@@ -4523,12 +4523,12 @@ An operator built polynomially from the generators that commutes with every gene
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Definition [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-12|§CB.7.12]] Casimir Operator, Theorem [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-13|§CB.7.13]] Casimir Operators Are Constant on Irreducible Representations (Schur: Theorem [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-4|§CB.7.4]] Schur's Lemma); values on $(j_+, j_-)$: Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-5|§CB.17.5]] (j₊, j₋) Is Irreducible.
-> - Why values are not enough by themselves: step 7 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7|proof of Theorem §CB.17.7]] needs the classification Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-6|§CB.17.6]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋) and the dimension count.
+> - Definition [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-12|§CB.7.12]] Casimir Operator, Theorem [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-13|§CB.7.13]] Casimir Operators Are Constant on Irreducible Representations (Schur: Theorem [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-4|§CB.7.4]] Schur's Lemma); values on $(j_+, j_-)$: Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-5|§CB.18.5]] (j₊, j₋) Is Irreducible.
+> - Why values are not enough by themselves: step 7 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-7|proof of Theorem §CB.18.7]] needs the classification Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-6|§CB.18.6]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋) and the dimension count.
 
 ### [B] The representation (j₊, j₋)
 
-$V = \mathbb C^{2j_++1}\otimes\mathbb C^{2j_-+1}$ with $\mathbf J_+ = \mathbf J^{(j_+)}\otimes\mathbb 1$, $\mathbf J_- = \mathbb 1\otimes\mathbf J^{(j_-)}$, hence $\mathbf J = \mathbf J_+ + \mathbf J_-$ and $\mathbf K = -i(\mathbf J_+ - \mathbf J_-)$, see Definition [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3|§CB.17.3]] The Representation (j₊, j₋). *Source: Lecture 7, slide "Transformation of General Fields" (HW5 clue) · Problem Set 5, Problem 1(b) (statement) · the user's notes Ch. 7 §7.4.3*
+$V = \mathbb C^{2j_++1}\otimes\mathbb C^{2j_-+1}$ with $\mathbf J_+ = \mathbf J^{(j_+)}\otimes\mathbb 1$, $\mathbf J_- = \mathbb 1\otimes\mathbf J^{(j_-)}$, hence $\mathbf J = \mathbf J_+ + \mathbf J_-$ and $\mathbf K = -i(\mathbf J_+ - \mathbf J_-)$, see Definition [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-3|§CB.18.3]] The Representation (j₊, j₋). *Source: Lecture 7, slide "Transformation of General Fields" (HW5 clue) · Problem Set 5, Problem 1(b) (statement) · the user's notes Ch. 7 §7.4.3*
 
 ^nd-def-cb-17-3
 
@@ -4540,11 +4540,11 @@ $V = \mathbb C^{2j_++1}\otimes\mathbb C^{2j_-+1}$ with $\mathbf J_+ = \mathbf J^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Definition [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3|§CB.17.3]] The Representation (j₊, j₋); neither label is the spin: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-3|§C3.2, Remark: Neither label is the spin]]; rotation content: Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|§CB.17.9]] Rotation Content and the Sign of a 2π Rotation; the catalogue of the course's fields: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]].
+> - Definition [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-3|§CB.18.3]] The Representation (j₊, j₋); neither label is the spin: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-3|§C3.2, Remark: Neither label is the spin]]; rotation content: Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|§CB.18.8]] Rotation Content and the Sign of a 2π Rotation; the catalogue of the course's fields: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]].
 
 ### [B] Acting as spin j
 
-A subspace invariant under the $+$ copy is one on which "the $+$ copy acts as spin $j$" if, as a representation of $\mathfrak a_+ \cong \mathfrak{sl}(2, \mathbb C)$, it is a direct sum of copies of $V_j$ (isotypic); that $V$ "is" $(j_+, j_-)$ is the stronger statement of an invertible intertwiner to the model, see Definition [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-1|§CB.17.1]] Acting as Spin j. *Source: the user's notes Ch. 7 §7.4.3 (the informal "acts as spin j") · written for the rigor fix of 2026-10-13*
+A subspace invariant under the $+$ copy is one on which "the $+$ copy acts as spin $j$" if, as a representation of $\mathfrak a_+ \cong \mathfrak{sl}(2, \mathbb C)$, it is a direct sum of copies of $V_j$ (isotypic); that $V$ "is" $(j_+, j_-)$ is the stronger statement of an invertible intertwiner to the model, see Definition [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-1|§CB.18.1]] Acting as Spin j. *Source: the user's notes Ch. 7 §7.4.3 (the informal "acts as spin j") · written for the rigor fix of 2026-10-13*
 
 ^nd-def-cb-17-1
 
@@ -4555,7 +4555,7 @@ A subspace invariant under the $+$ copy is one on which "the $+$ copy acts as sp
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Definition [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-1|§CB.17.1]] Acting as Spin j; the gap closed by the classification and dimensions: step 7 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7|proof of Theorem §CB.17.7]]; the extension $D_{\mathbb C}$: Theorem [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-10|§CB.4.10]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification, [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-17-1|§CB.17, Remark: The objects called J, and what the labels refer to]] (item 3).
+> - Definition [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-1|§CB.18.1]] Acting as Spin j; the gap closed by the classification and dimensions: step 7 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-7|proof of Theorem §CB.18.7]]; the extension $D_{\mathbb C}$: Theorem [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-10|§CB.4.10]] Complex Representations of 𝔤 Are Complex-Linear Representations of Its Complexification, [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-18-1|§CB.18, Remark: The objects called J, and what the labels refer to]] (item 3).
 
 ### [B] Components, not states: D(Λ) versus U(Λ)
 
@@ -4571,12 +4571,12 @@ The labels $(j_+, j_-)$, the Casimirs $\mathbf J_\pm^2$ and the eigenvalues $m_\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-3|§C3.2, Caution: Components, not states]]; the eigenvectors $e_1 \pm ie_2$, $e_0 \pm e_3$: last bullet of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7b|proof of Theorem §CB.17.7, second route]].
+> - [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-3|§C3.2, Caution: Components, not states]]; the eigenvectors $e_1 \pm ie_2$, $e_0 \pm e_3$: last bullet of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-7b|proof of Theorem §CB.18.7, second route]].
 > - Two kinds of representation side by side: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]]; three different transformations: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^cau-c5a-4-1|§C5a.4, Caution: Three different transformations]]; unitarity on states: Principle [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|§C3.4.1]] Poincaré Invariance on the Hilbert Space, [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]].
 
 ### [B] Spinor and tensor representations
 
-A finite-dimensional representation is a tensor representation if the $2\pi$ rotation $e^{-2\pi iJ_3}$ acts as $+\mathbb 1$ and a spinor representation if it acts as $-\mathbb 1$; $(j_+, j_-)$ is tensorial for integer $j_+ + j_-$ and spinorial for half-odd $j_+ + j_-$, see Definition [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-26|§CB.14.26]] Spinor and Tensor Representations and Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-11|§CB.17.11]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part. *Source: Problem Set 6, Problem 4(d) (vectors and spinors under 2π) · the user's notes Ch. 7*
+A finite-dimensional representation is a tensor representation if the $2\pi$ rotation $e^{-2\pi iJ_3}$ acts as $+\mathbb 1$ and a spinor representation if it acts as $-\mathbb 1$; $(j_+, j_-)$ is tensorial for integer $j_+ + j_-$ and spinorial for half-odd $j_+ + j_-$, see Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-26|§CB.15.26]] Spinor and Tensor Representations and Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-11|§CB.18.11]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part. *Source: Problem Set 6, Problem 4(d) (vectors and spinors under 2π) · the user's notes Ch. 7*
 
 ^nd-def-cb-14-26
 
@@ -4587,7 +4587,7 @@ A finite-dimensional representation is a tensor representation if the $2\pi$ rot
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (exponentiating a generator)
-> - Definition [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-26|§CB.14.26]] Spinor and Tensor Representations, Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-11|§CB.17.11]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part; the sign: step 4 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-9|Derivation §CB.17.9]]; up to sign: [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]].
+> - Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-26|§CB.15.26]] Spinor and Tensor Representations, Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-11|§CB.18.11]] Every Finite-Dimensional Representation Splits into a Tensor and a Spinor Part; the sign: step 4 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-8|Derivation §CB.18.8]]; up to sign: [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]].
 
 ### [B] Spinor fields
 
@@ -4617,7 +4617,7 @@ A relativistic quantum theory has unitary $U(\Lambda, a)$ with $U(\mathbb 1, 0) 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - Principle [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|§C3.4.1]] Poincaré Invariance on the Hilbert Space; unitary and the covering group: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]]; Wigner: Theorem [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-7|§CB.19.7]] Wigner's Theorem.
+> - Principle [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|§C3.4.1]] Poincaré Invariance on the Hilbert Space; unitary and the covering group: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]]; Wigner: Theorem [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-7|§CB.20.7]] Wigner's Theorem.
 
 ### [B] Generators of quantum Poincaré transformations
 
@@ -4632,7 +4632,7 @@ $U(\mathbb 1 + \omega, \varepsilon) = \mathbb 1 - \frac i2\omega_{\mu\nu}\hat J^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - Definition [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^def-c3-4-1|§C3.4.1]] Generators of Quantum Poincaré Transformations; signs across sources: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^cau-c3-4-1|§C3.4, Caution: Signs and names across the sources]]; finite forms: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|§C3.4.6]] Finite Transformations as Exponentials; Hermiticity: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] The Generators Are Hermitian versus Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
+> - Definition [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^def-c3-4-1|§C3.4.1]] Generators of Quantum Poincaré Transformations; signs across sources: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^cau-c3-4-1|§C3.4, Caution: Signs and names across the sources]]; finite forms: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|§C3.4.6]] Finite Transformations as Exponentials; Hermiticity: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] The Generators Are Hermitian versus Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-15|§CB.18.15]] No Finite-Dimensional Representation Is Unitary.
 
 ### [B] Covariance of quantum fields
 
@@ -4762,7 +4762,7 @@ $(J_k)^l{}_m = -i\varepsilon_{klm}$ with zero time row and column; $K_k = i(E_{0
 > [!tip]- Hints: route in the notes
 > - Technique: K2
 > - Steps 2–3 of [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^der-c1a-7-5|Derivation §C1a.7.5]] (entries), step 4 (Hermiticity), step 5 (eigenvectors).
-> - Not unitary: [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^rem-c1a-7-2|§C1a.7, Remark: Hermitian generators do not make boosts unitary]], Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
+> - Not unitary: [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^rem-c1a-7-2|§C1a.7, Remark: Hermitian generators do not make boosts unitary]], Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-15|§CB.18.15]] No Finite-Dimensional Representation Is Unitary.
 
 ### [PS] The rotation matrices in the vector representation
 
@@ -4790,7 +4790,7 @@ Restricted to rotations, the vector representation leaves $e_0$ invariant ($J_k 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (identifying a representation)
-> - The computation is in the box Example [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^ex-c3-1-1|§C3.1.1]] The Four-Vector under Rotations Is 0 ⊕ 1; $\mathbf J^2 = \operatorname{diag}(0, 2, 2, 2)$ is step 3 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7|proof of Theorem §CB.17.7]]; irreducible under boosts: first bullet of "What the proof shows" there.
+> - The computation is in the box Example [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^ex-c3-1-1|§C3.1.1]] The Four-Vector under Rotations Is 0 ⊕ 1; $\mathbf J^2 = \operatorname{diag}(0, 2, 2, 2)$ is step 3 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-7|proof of Theorem §CB.18.7]]; irreducible under boosts: first bullet of "What the proof shows" there.
 
 ### [C] The Lorentz algebra from the group law ★
 
@@ -4939,7 +4939,7 @@ $D(e^\omega) = e^{-i\boldsymbol\theta\cdot\mathbf J - i\boldsymbol\eta\cdot\math
 
 ### [B] (j₊, j₋) is irreducible ★
 
-$(j_+, j_-)$ has dimension $(2j_+ + 1)(2j_- + 1)$, is irreducible, has $\mathbf J_\pm^2 = j_\pm(j_\pm + 1)\mathbb 1$, and different labels give inequivalent representations, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-5|§CB.17.5]] (j₊, j₋) Is Irreducible. *Source: Problem Set 5, Problem 1(b) (dimension) · the user's notes Ch. 7 §7.4.3 ("every vector feels both copies")*
+$(j_+, j_-)$ has dimension $(2j_+ + 1)(2j_- + 1)$, is irreducible, has $\mathbf J_\pm^2 = j_\pm(j_\pm + 1)\mathbb 1$, and different labels give inequivalent representations, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-5|§CB.18.5]] (j₊, j₋) Is Irreducible. *Source: Problem Set 5, Problem 1(b) (dimension) · the user's notes Ch. 7 §7.4.3 ("every vector feels both copies")*
 
 ^nd-thm-cb-17-5
 
@@ -4951,11 +4951,11 @@ $(j_+, j_-)$ has dimension $(2j_+ + 1)(2j_- + 1)$, is irreducible, has $\mathbf 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–3 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-5|Derivation §CB.17.5]]; step 4 (projecting polynomial), step 5 (ladders), step 6 (inequivalence).
+> - Steps 1–3 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-5|Derivation §CB.18.5]]; step 4 (projecting polynomial), step 5 (ladders), step 6 (inequivalence).
 
 ### [B] Every finite-dimensional representation is a sum of (j₊, j₋) ★
 
-Every representation of the Lorentz algebra on a finite-dimensional complex space is a direct sum of pieces $(j_+, j_-)$ with fixed multiplicities, and carries an inner product in which all $J_{\pm i}$ are Hermitian, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-6|§CB.17.6]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋). *Source: Problem Set 5, Problem 1(b) ("labelled by a pair (j₊, j₋)", statement) · the user's notes Ch. 7 §7.4.3 (stated)*
+Every representation of the Lorentz algebra on a finite-dimensional complex space is a direct sum of pieces $(j_+, j_-)$ with fixed multiplicities, and carries an inner product in which all $J_{\pm i}$ are Hermitian, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-6|§CB.18.6]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋). *Source: Problem Set 5, Problem 1(b) ("labelled by a pair (j₊, j₋)", statement) · the user's notes Ch. 7 §7.4.3 (stated)*
 
 ^nd-thm-cb-17-6
 
@@ -4968,8 +4968,8 @@ Every representation of the Lorentz algebra on a finite-dimensional complex spac
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–2 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-6|Derivation §CB.17.6]] (two commuting $\mathfrak{su}(2)$'s), steps 3–4 (invariant inner product, Hermitian), step 5 (complete reducibility), steps 6–8 (one piece is $(j_+, j_-)$), step 9 (multiplicities).
-> - Boosts stay non-unitary: Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
+> - Steps 1–2 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-6|Derivation §CB.18.6]] (two commuting $\mathfrak{su}(2)$'s), steps 3–4 (invariant inner product, Hermitian), step 5 (complete reducibility), steps 6–8 (one piece is $(j_+, j_-)$), step 9 (multiplicities).
+> - Boosts stay non-unitary: Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-15|§CB.18.15]] No Finite-Dimensional Representation Is Unitary.
 
 ### [PS] The (½, 0) and (0, ½) representations
 
@@ -4979,7 +4979,7 @@ The table of $\mathbf J_\pm$, $\mathbf J$, $\mathbf K$ and $D(e^\omega)$ on $(\f
 
 ### [B] The vector representation is (½, ½): Casimirs and classification ★★
 
-In the basis $(v^0, v^1, v^2, v^3)$, $\mathbf J^2 = \operatorname{diag}(0, 2, 2, 2)$, $\mathbf K^2 = -\operatorname{diag}(3, 1, 1, 1)$, $\mathbf J\cdot\mathbf K = \mathbf K\cdot\mathbf J = 0$, so $\mathbf J_\pm^2 = \frac34\mathbb 1$; with the classification and the dimension count, the vector representation is equivalent to $(\frac12, \frac12)$ by an invertible intertwiner, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-7|§CB.17.7]] The Vector Representation Is (½, ½) (the course's form Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|§C3.2.9]] The Vector Representation Is (½, ½)). *Source: the user's notes Ch. 7 §7.3, §7.4.3 · Yu §4.2.2 · the rigor fix of 2026-10-13 (the user's request)*
+In the basis $(v^0, v^1, v^2, v^3)$, $\mathbf J^2 = \operatorname{diag}(0, 2, 2, 2)$, $\mathbf K^2 = -\operatorname{diag}(3, 1, 1, 1)$, $\mathbf J\cdot\mathbf K = \mathbf K\cdot\mathbf J = 0$, so $\mathbf J_\pm^2 = \frac34\mathbb 1$; with the classification and the dimension count, the vector representation is equivalent to $(\frac12, \frac12)$ by an invertible intertwiner, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-7|§CB.18.7]] The Vector Representation Is (½, ½) (the course's form Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|§C3.2.9]] The Vector Representation Is (½, ½)). *Source: the user's notes Ch. 7 §7.3, §7.4.3 · Yu §4.2.2 · the rigor fix of 2026-10-13 (the user's request)*
 
 ^nd-thm-cb-17-7
 
@@ -4993,12 +4993,12 @@ In the basis $(v^0, v^1, v^2, v^3)$, $\mathbf J^2 = \operatorname{diag}(0, 2, 2,
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (Casimirs + classification)
-> - Steps 1–2 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7|proof of Theorem §CB.17.7]] (generators), steps 3–5 (squares and mixed products), step 6 (Casimirs), step 7 (i)–(iv) (identification with Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-6|§CB.17.6]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋) and Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-5|§CB.17.5]] (j₊, j₋) Is Irreducible).
+> - Steps 1–2 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-7|proof of Theorem §CB.18.7]] (generators), steps 3–5 (squares and mixed products), step 6 (Casimirs), step 7 (i)–(iv) (identification with Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-6|§CB.18.6]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋) and Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-5|§CB.18.5]] (j₊, j₋) Is Irreducible).
 > - The course's $4\times4$ computation: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-9|Derivation §C3.2.9]]; components, not states: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-3|§C3.2, Caution: Components, not states]].
 
 ### [B] The vector representation is (½, ½): the explicit intertwiner ★★
 
-$T(v) = (v_\mu\sigma^\mu)\,i\sigma^2$, read in $\mathbb C^2\otimes\mathbb C^2$ through $\sum Y_{ab}e_a\otimes e_b \leftrightarrow (Y_{ab})$, is an invertible map with $T\,R(X) = \rho(X)\,T$ for all six generators, $R$ the vector and $\rho$ the $(\frac12, \frac12)$ representation, see [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7b|proof of Theorem §CB.17.7, second route]]. *Source: written for the rigor fix of 2026-10-13 (the user's request) · reading of the $SL(2, \mathbb C)$ covering*
+$T(v) = (v_\mu\sigma^\mu)\,i\sigma^2$, read in $\mathbb C^2\otimes\mathbb C^2$ through $\sum Y_{ab}e_a\otimes e_b \leftrightarrow (Y_{ab})$, is an invertible map with $T\,R(X) = \rho(X)\,T$ for all six generators, $R$ the vector and $\rho$ the $(\frac12, \frac12)$ representation, see [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-7b|proof of Theorem §CB.18.7, second route]]. *Source: written for the rigor fix of 2026-10-13 (the user's request) · reading of the $SL(2, \mathbb C)$ covering*
 
 ^nd-pf-cb-17-7b
 
@@ -5012,8 +5012,8 @@ $T(v) = (v_\mu\sigma^\mu)\,i\sigma^2$, read in $\mathbb C^2\otimes\mathbb C^2$ t
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (intertwiner)
-> - Step 1 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7b|proof of Theorem §CB.17.7, second route]] (matrix picture), step 2 (the map), step 3 (through ε), steps 4–5 (rotations, boosts), step 7 (group behind it).
-> - The dictionary $x \leftrightarrow x_\mu\sigma^\mu$: Theorem [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-3|§CB.16.3]] Four-Vectors as Hermitian Matrices; ε: Theorem [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|§CB.8.17]] ε on ℂ² and SL(2,ℂ) = Sp(2,ℂ).
+> - Step 1 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-7b|proof of Theorem §CB.18.7, second route]] (matrix picture), step 2 (the map), step 3 (through ε), steps 4–5 (rotations, boosts), step 7 (group behind it).
+> - The dictionary $x \leftrightarrow x_\mu\sigma^\mu$: Theorem [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-3|§CB.17.3]] Four-Vectors as Hermitian Matrices; ε: Theorem [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|§CB.8.17]] ε on ℂ² and SL(2,ℂ) = Sp(2,ℂ).
 
 ### [PS] Labels of a four-vector and of a left-handed Weyl spinor
 
@@ -5023,7 +5023,7 @@ The short-response route: dimension $4$, then the $2\pi$ rotation decides $(\fra
 
 ### [B] Rotation content and the sign of a 2π rotation ★
 
-Under rotations $(j_+, j_-)$ is $D^{(j_+)}\otimes D^{(j_-)}$, containing spins $\lvert j_+ - j_-\rvert, \dots, j_+ + j_-$ once each; a $2\pi$ rotation acts as $(-1)^{2(j_+ + j_-)}$, so half-integer $j_+ + j_-$ gives a two-valued representation of $SO^+(1,3)$, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|§CB.17.9]] Rotation Content and the Sign of a 2π Rotation. *Source: Problem Set 6, Problem 4(d) · Problem Set 7, Problem 1(d) (the user's route) · the user's notes Ch. 7 §7.4.3*
+Under rotations $(j_+, j_-)$ is $D^{(j_+)}\otimes D^{(j_-)}$, containing spins $\lvert j_+ - j_-\rvert, \dots, j_+ + j_-$ once each; a $2\pi$ rotation acts as $(-1)^{2(j_+ + j_-)}$, so half-integer $j_+ + j_-$ gives a two-valued representation of $SO^+(1,3)$, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|§CB.18.8]] Rotation Content and the Sign of a 2π Rotation. *Source: Problem Set 6, Problem 4(d) · Problem Set 7, Problem 1(d) (the user's route) · the user's notes Ch. 7 §7.4.3*
 
 ^nd-thm-cb-17-9
 
@@ -5035,11 +5035,11 @@ Under rotations $(j_+, j_-)$ is $D^{(j_+)}\otimes D^{(j_-)}$, containing spins $
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4
-> - Steps 1–2 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-9|Derivation §CB.17.9]], step 3 ($2\pi$), step 4 (consistency), step 5 (the identity of $SO^+(1,3)$).
+> - Steps 1–2 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-8|Derivation §CB.18.8]], step 3 ($2\pi$), step 4 (consistency), step 5 (the identity of $SO^+(1,3)$).
 
 ### [C] Tensor products add each copy separately ★
 
-$(j_+, j_-)\otimes(j'_+, j'_-) = \bigoplus(J_+, J_-)$ with $J_\pm$ from $\lvert j_\pm - j'_\pm\rvert$ to $j_\pm + j'_\pm$; in particular $(\frac12, \frac12)\otimes(\frac12, \frac12) = (1, 1)\oplus(1, 0)\oplus(0, 1)\oplus(0, 0)$, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|§CB.17.12]] Tensor Products Add Each Copy Separately. *Source: the user's notes Ch. 7 · Lecture 8, slide "Fermion Bilinears" (scalar, vector, tensor from strings of γ's)*
+$(j_+, j_-)\otimes(j'_+, j'_-) = \bigoplus(J_+, J_-)$ with $J_\pm$ from $\lvert j_\pm - j'_\pm\rvert$ to $j_\pm + j'_\pm$; in particular $(\frac12, \frac12)\otimes(\frac12, \frac12) = (1, 1)\oplus(1, 0)\oplus(0, 1)\oplus(0, 0)$, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-12|§CB.18.12]] Tensor Products Add Each Copy Separately. *Source: the user's notes Ch. 7 · Lecture 8, slide "Fermion Bilinears" (scalar, vector, tensor from strings of γ's)*
 
 ^nd-thm-cb-17-12
 
@@ -5050,7 +5050,7 @@ $(j_+, j_-)\otimes(j'_+, j'_-) = \bigoplus(J_+, J_-)$ with $J_\pm$ from $\lvert 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–4 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-12|Derivation §CB.17.12]]; step 5 for two vectors; the tensors: Theorem [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|§C3.3.7]] Two-Index Tensor Fields; over ℝ: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-11|§CB.18.11]] Two-Forms Are (1, 0) ⊕ (0, 1).
+> - Steps 1–4 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-12|Derivation §CB.18.12]]; step 5 for two vectors; the tensors: Theorem [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|§C3.3.7]] Two-Index Tensor Fields; over ℝ: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-11|§CB.19.11]] Two-Forms Are (1, 0) ⊕ (0, 1).
 
 ### [B] Vector fields, upper and lower index ★
 
@@ -5088,7 +5088,7 @@ $\delta\mathbf E = \boldsymbol\theta\times\mathbf E - \boldsymbol\eta\times\math
 
 ### [C] Parity exchanges the two copies ★
 
-The parity automorphism $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\mathbf K$ preserves the algebra and swaps $\mathbf J_+ \leftrightarrow \mathbf J_-$; on four-vectors it is conjugation by $\mathcal P = \operatorname{diag}(1, -1, -1, -1)$, and a parity-invariant field contains $(j_+, j_-)$ and $(j_-, j_+)$ with equal multiplicity, see Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-10|§C3.2.10]] Parity on Four-Vectors; Parity-Invariant Fields Contain Both Copies and Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|§CB.17.13]] The Parity Automorphism Exchanges the Two Copies. *Source: the user's notes Ch. 7 §7.4.6 · Lecture 8 transcript (both Weyl halves needed for a mass)*
+The parity automorphism $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\mathbf K$ preserves the algebra and swaps $\mathbf J_+ \leftrightarrow \mathbf J_-$; on four-vectors it is conjugation by $\mathcal P = \operatorname{diag}(1, -1, -1, -1)$, and a parity-invariant field contains $(j_+, j_-)$ and $(j_-, j_+)$ with equal multiplicity, see Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-10|§C3.2.10]] Parity on Four-Vectors; Parity-Invariant Fields Contain Both Copies and Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-13|§CB.18.13]] The Parity Automorphism Exchanges the Two Copies. *Source: the user's notes Ch. 7 §7.4.6 · Lecture 8 transcript (both Weyl halves needed for a mass)*
 
 ^nd-thm-c3-2-10
 
@@ -5099,11 +5099,11 @@ The parity automorphism $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\math
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–3 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-13|Derivation §CB.17.13]], step 4 (equal multiplicity); the vector case: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-10|Derivation §C3.2.10]].
+> - Steps 1–3 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-13|Derivation §CB.18.13]], step 4 (equal multiplicity); the vector case: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-10|Derivation §C3.2.10]].
 
 ### [C] Complex conjugation exchanges the two copies ★
 
-$\bar D(\Lambda) = D(\Lambda)^\ast$ is a representation with generators $-D(\mathcal J^{\mu\nu})^\ast$; the conjugate of $(j_+, j_-)$ is equivalent to $(j_-, j_+)$, the equivalence being the rotation by $\pi$ about the 2-axis, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|§CB.17.14]] Complex Conjugation Exchanges the Two Copies. *Source: the user's notes Ch. 7 §7.4.6, Ch. 8 (the conjugate of a left-handed spinor)*
+$\bar D(\Lambda) = D(\Lambda)^\ast$ is a representation with generators $-D(\mathcal J^{\mu\nu})^\ast$; the conjugate of $(j_+, j_-)$ is equivalent to $(j_-, j_+)$, the equivalence being the rotation by $\pi$ about the 2-axis, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-14|§CB.18.14]] Complex Conjugation Exchanges the Two Copies. *Source: the user's notes Ch. 7 §7.4.6, Ch. 8 (the conjugate of a left-handed spinor)*
 
 ^nd-thm-cb-17-14
 
@@ -5114,11 +5114,11 @@ $\bar D(\Lambda) = D(\Lambda)^\ast$ is a representation with generators $-D(\mat
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–4 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14|Derivation §CB.17.14]], step 6 (assemble); the spin-½ case: Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|§C5a.5.5]] Dotted Indices, Conjugation and the Invariant Pairings, Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ (part 3).
+> - Steps 1–4 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-14|Derivation §CB.18.14]], step 6 (assemble); the spin-½ case: Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|§C5a.5.5]] Dotted Indices, Conjugation and the Invariant Pairings, Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ (part 3).
 
 ### [B] No finite-dimensional representation is unitary ★★
 
-In an inner product with $\mathbf J_\pm$ Hermitian, $\mathbf J$ is Hermitian and $\mathbf K$ anti-Hermitian, a boost is Hermitian positive and not unitary; a finite-dimensional representation of $SO^+(1,3)$ that is unitary for some inner product is trivial, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary. *Source: Lecture 8, slide "The Hermitean Conjugate Spinor" ("Rotations S^ij hermitean and boosts S^0i antihermitean") · the user's notes Ch. 7 (Principle "Hermitian generators do not make boosts unitary")*
+In an inner product with $\mathbf J_\pm$ Hermitian, $\mathbf J$ is Hermitian and $\mathbf K$ anti-Hermitian, a boost is Hermitian positive and not unitary; a finite-dimensional representation of $SO^+(1,3)$ that is unitary for some inner product is trivial, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-15|§CB.18.15]] No Finite-Dimensional Representation Is Unitary. *Source: Lecture 8, slide "The Hermitean Conjugate Spinor" ("Rotations S^ij hermitean and boosts S^0i antihermitean") · the user's notes Ch. 7 (Principle "Hermitian generators do not make boosts unitary")*
 
 ^nd-thm-cb-17-15
 
@@ -5130,7 +5130,7 @@ In an inner product with $\mathbf J_\pm$ Hermitian, $\mathbf J$ is Hermitian and
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–2 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-15|Derivation §CB.17.15]], steps 3–4 (unitary means Hermitian generators; imaginary eigenvalues of $K_3$), step 5 (trivial).
+> - Steps 1–2 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-15|Derivation §CB.18.15]], steps 3–4 (unitary means Hermitian generators; imaginary eigenvalues of $K_3$), step 5 (trivial).
 > - Two kinds of representation: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]]; components, not states: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-3|§C3.2, Caution: Components, not states]].
 
 ### [B] The quantum generators are Hermitian ★
@@ -5146,7 +5146,7 @@ All ten generators $\hat J^{\mu\nu}$, $\hat P^\mu$ of a unitary $U(\Lambda, a)$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11 ((anti)commutator algebra)
-> - Steps 1–4 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-5|Derivation §C3.4.5]]; the contrast: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]], Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
+> - Steps 1–4 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-5|Derivation §C3.4.5]]; the contrast: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]], Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-15|§CB.18.15]] No Finite-Dimensional Representation Is Unitary.
 
 ### [C] The Poincaré algebra ★
 
@@ -5239,7 +5239,7 @@ For the free real scalar the normal-ordered Noether charges $\hat P^\mu = \int d
 
 ### [B] Dirac matrices and the Clifford algebra
 
-Four $n\times n$ matrices with $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 1_n$; $\mu$ is a spacetime index, rows and columns are spinor indices; $\gamma_\mu = g_{\mu\nu}\gamma^\nu$, see Definition [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|§CB.11.11]] The Dirac Matrices. *Source: Lecture 7, slide "The Dirac Representation" · Lecture 8, "Cheat Sheet I" ("4×4 identity matrix on RHS usually not written")*
+Four $n\times n$ matrices with $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 1_n$; $\mu$ is a spacetime index, rows and columns are spinor indices; $\gamma_\mu = g_{\mu\nu}\gamma^\nu$, see Definition [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-11|§CB.12.11]] The Dirac Matrices. *Source: Lecture 7, slide "The Dirac Representation" · Lecture 8, "Cheat Sheet I" ("4×4 identity matrix on RHS usually not written")*
 
 ^nd-def-cb-11-11
 
@@ -5250,7 +5250,7 @@ Four $n\times n$ matrices with $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5 (γ-matrix algebra)
-> - Definition [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|§CB.11.11]] The Dirac Matrices; first consequences and the split: Theorem [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|§CB.11.12]] First Consequences of the Clifford Algebra; slots: [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-8|§C5a.5, Remark: The index rule as a table]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-3|§C5a.4, Remark: Why γ is fixed under a Lorentz transformation but not under a change of basis]].
+> - Definition [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-11|§CB.12.11]] The Dirac Matrices; first consequences and the split: Theorem [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-12|§CB.12.12]] First Consequences of the Clifford Algebra; slots: [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-8|§C5a.5, Remark: The index rule as a table]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-3|§C5a.4, Remark: Why γ is fixed under a Lorentz transformation but not under a change of basis]].
 
 ### [B] The matrices σ^μ and σ̄^μ
 
@@ -5280,7 +5280,7 @@ $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, $\gamma^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|§C5a.1.4]] The Chiral Basis; bases across sources: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-2|§C5a.5, Caution: Bases and conventions across the sources]]; why each basis is used: [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-5|§C5a.5, Remark: Why each basis is used]], Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-17|§CB.12.17]] γ⁰ and γ⁵ Cannot Be Diagonal in the Same Basis.
+> - Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|§C5a.1.4]] The Chiral Basis; bases across sources: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-2|§C5a.5, Caution: Bases and conventions across the sources]]; why each basis is used: [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-5|§C5a.5, Remark: Why each basis is used]], Theorem [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-17|§CB.13.17]] γ⁰ and γ⁵ Cannot Be Diagonal in the Same Basis.
 
 ### [B] Spinor space
 
@@ -5295,11 +5295,11 @@ Spinor space is a four-dimensional complex vector space $V$; a Dirac spinor at o
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-1|§C5a.1.1]] Spinor Space, [[§C5a.1 Spinor Space and the Clifford Action#^rem-c5a-1-1|§C5a.1, Remark: What this layer contains, and what it does not]]; the layers: [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-5|§C5a.0, Remark: The structure of spinor space, layer by layer]]; uniqueness: Theorem [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-14|§CB.13.14]] Spinor Space Is Unique up to Isomorphism.
+> - Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-1|§C5a.1.1]] Spinor Space, [[§C5a.1 Spinor Space and the Clifford Action#^rem-c5a-1-1|§C5a.1, Remark: What this layer contains, and what it does not]]; the layers: [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^rem-c5a-0-5|§C5a.0, Remark: The structure of spinor space, layer by layer]]; uniqueness: Theorem [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-14|§CB.14.14]] Spinor Space Is Unique up to Isomorphism.
 
 ### [B] The spinor generators
 
-$S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu] = \frac i2(\gamma^\mu\gamma^\nu - g^{\mu\nu}\mathbb 1)$, see Definition [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|§CB.14.16]] The Spinor Generators; in the course's (Hermitian) convention $S^{\mu\nu} = D(\mathcal J^{\mu\nu})$ for the Dirac representation, and $\sigma^{\mu\nu} = 2S^{\mu\nu}$. *Source: Lecture 7, slide "The Dirac Representation" · Lecture 8, "Cheat Sheet I"*
+$S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu] = \frac i2(\gamma^\mu\gamma^\nu - g^{\mu\nu}\mathbb 1)$, see Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-16|§CB.15.16]] The Spinor Generators; in the course's (Hermitian) convention $S^{\mu\nu} = D(\mathcal J^{\mu\nu})$ for the Dirac representation, and $\sigma^{\mu\nu} = 2S^{\mu\nu}$. *Source: Lecture 7, slide "The Dirac Representation" · Lecture 8, "Cheat Sheet I"*
 
 ^nd-def-cb-14-16
 
@@ -5310,7 +5310,7 @@ $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu] = \frac i2(\gamma^\mu\gamma^\nu -
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|§CB.14.16]] The Spinor Generators; two meanings of $S^{\mu\nu}$: [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]; normalizations of σ: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; the algebra from Clifford alone: Theorem [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-18|§CB.14.18]] The Spinor Generators Obey the Lorentz Algebra.
+> - Definition [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-16|§CB.15.16]] The Spinor Generators; two meanings of $S^{\mu\nu}$: [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]; normalizations of σ: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; the algebra from Clifford alone: Theorem [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-18|§CB.15.18]] The Spinor Generators Obey the Lorentz Algebra.
 
 ### [B] The Dirac representation
 
@@ -5325,7 +5325,7 @@ $\Lambda_{1/2}(\omega) = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ acting on $\p
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|§C5a.3.1]] The Dirac Representation; not the vector representation: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-5|§CB.18.5]] The Dirac Representation Is Not the Vector Representation, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-1|§C5a.4, Remark: One transformation, two matrices]]; the preview: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-3|§C5a.5, Caution: The upper components are not the particle]].
+> - Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|§C5a.3.1]] The Dirac Representation; not the vector representation: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-5|§CB.19.5]] The Dirac Representation Is Not the Vector Representation, [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-1|§C5a.4, Remark: One transformation, two matrices]]; the preview: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-3|§C5a.5, Caution: The upper components are not the particle]].
 
 ### [B] Spin matrices of the Dirac representation
 
@@ -5399,11 +5399,11 @@ $\mathsf S = \bar\psi\psi$, $\mathsf P = \bar\psi i\gamma^5\psi$, $\mathsf V^\mu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|§C5a.6.3]] The Sixteen Bilinears; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; reality and the $i$: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|§C5a.6.4]] The Bilinears Are Real; basis of $4\times4$ matrices: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis, Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|§CB.18.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
+> - Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|§C5a.6.3]] The Sixteen Bilinears; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; reality and the $i$: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|§C5a.6.4]] The Bilinears Are Real; basis of $4\times4$ matrices: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis, Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-14|§CB.19.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
 
 ### [B] The matrix γ⁵
 
-$\gamma^5 \equiv i\gamma^0\gamma^1\gamma^2\gamma^3$; the 5 is a label, not a Lorentz index; in the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$, see Definition [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|§CB.12.14]] The Matrix γ⁵. *Source: Problem Set 5, Problem 5 (statement) · the user's notes Ch. 9 §9.6*
+$\gamma^5 \equiv i\gamma^0\gamma^1\gamma^2\gamma^3$; the 5 is a label, not a Lorentz index; in the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$, see Definition [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|§CB.13.14]] The Matrix γ⁵. *Source: Problem Set 5, Problem 5 (statement) · the user's notes Ch. 9 §9.6*
 
 ^nd-def-cb-12-14
 
@@ -5414,7 +5414,7 @@ $\gamma^5 \equiv i\gamma^0\gamma^1\gamma^2\gamma^3$; the 5 is a label, not a Lor
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|§CB.12.14]] The Matrix γ⁵; properties: Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|§CB.12.15]] Algebraic Properties of γ⁵ (→ PS5.5(a)–(b)); the ε convention: [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]], [[Larsen PHY 513|register: Levi-Civita]]; commuting with $S^{\mu\nu}$: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module.
+> - Definition [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|§CB.13.14]] The Matrix γ⁵; properties: Theorem [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|§CB.13.15]] Algebraic Properties of γ⁵ (→ PS5.5(a)–(b)); the ε convention: [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]], [[Larsen PHY 513|register: Levi-Civita]]; commuting with $S^{\mu\nu}$: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-4|§CB.19.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module.
 
 ### [B] Chirality projectors
 
@@ -5504,7 +5504,7 @@ For $m = 0$, a left-handed Weyl field obeys $i\bar\sigma^\mu\partial_\mu\psi_L =
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Model [[§C5a.8 The Weyl Form and the Weyl Equations#^mod-c5a-8-3|§C5a.8.3]] The Weyl Fields; the two-component Dirac equation: Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-2|§C5a.8.2]] The Dirac Equation in Two-Component Form; parity: Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|§CB.17.13]] The Parity Automorphism Exchanges the Two Copies; when the description is useful: [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-2|§C5a.8, Remark: When the Weyl description is useful]].
+> - Model [[§C5a.8 The Weyl Form and the Weyl Equations#^mod-c5a-8-3|§C5a.8.3]] The Weyl Fields; the two-component Dirac equation: Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-2|§C5a.8.2]] The Dirac Equation in Two-Component Form; parity: Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-13|§CB.18.13]] The Parity Automorphism Exchanges the Two Copies; when the description is useful: [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-2|§C5a.8, Remark: When the Weyl description is useful]].
 
 ### [B] Positive- and negative-frequency solutions
 
@@ -5656,7 +5656,7 @@ Dirac matrices are invertible and no two of them commute, so they cannot be numb
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Step 1 of [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^der-c5a-0-2|Derivation §C5a.0.2]], resting on Theorem [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-16|§CB.11.16]] Clifford Generators Are Invertible and Pairwise Non-Commuting (parts 1–3).
+> - Step 1 of [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^der-c5a-0-2|Derivation §C5a.0.2]], resting on Theorem [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-16|§CB.12.16]] Clifford Generators Are Invertible and Pairwise Non-Commuting (parts 1–3).
 
 ### [B] The smallest Dirac matrices are 4×4 ★
 
@@ -5671,7 +5671,7 @@ Complex $n\times n$ Dirac matrices have $n$ even and $n \ge 4$, and $n = 4$ occu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Step 1 of [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^der-c5a-0-3|Derivation §C5a.0.3]]; parts 1–2 of Theorem [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-9|§CB.13.9]] Dirac Matrices Have Even Size, at Least Four.
+> - Step 1 of [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^der-c5a-0-3|Derivation §C5a.0.3]]; parts 1–2 of Theorem [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-9|§CB.14.9]] Dirac Matrices Have Even Size, at Least Four.
 
 ### [B] Two components suffice only without mass ★
 
@@ -5705,7 +5705,7 @@ $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 1_4$ for the chiral matrices, w
 > [!tip]- Hints: route in the notes
 > - Technique: K5
 > - Step 1 of [[§C5a.1 Spinor Space and the Clifford Action#^der-c5a-1-7|Derivation §C5a.1.7]] (block product), step 2 (anticommutator via Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ, part 2), step 3 (the lecture's explicit check).
-> - Uniqueness up to basis: Theorem [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12|§CB.13.12]] Pauli's Fundamental Theorem.
+> - Uniqueness up to basis: Theorem [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-12|§CB.14.12]] Pauli's Fundamental Theorem.
 
 ### [B] Identities of σ^μ and σ̄^μ ★
 
@@ -5724,13 +5724,13 @@ $\operatorname{tr}(\sigma^\mu\bar\sigma^\nu) = 2g^{\mu\nu}$; $\sigma^\mu\bar\sig
 
 ### [PS] The Dirac matrices rotate as a vector
 
-$[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$, see Theorem [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-17|§CB.14.17]] The Dirac Matrices Rotate as a Vector. → drilled as [[PHY 513 PS Drill#^ps4-5-b|PS4.5(b)]] (also Lecture 8, slide "'Transformation' of γ^μ: Derivation", "Compute (using Dirac algebra)").
+$[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$, see Theorem [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-17|§CB.15.17]] The Dirac Matrices Rotate as a Vector. → drilled as [[PHY 513 PS Drill#^ps4-5-b|PS4.5(b)]] (also Lecture 8, slide "'Transformation' of γ^μ: Derivation", "Compute (using Dirac algebra)").
 
 ^nd-thm-cb-14-17
 
 ### [PS] The spinor generators obey the Lorentz algebra
 
-$[S^{\mu\nu}, S^{\rho\sigma}]$ = the Lorentz algebra with $\mathcal J \to S$, see Theorem [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-18|§CB.14.18]] The Spinor Generators Obey the Lorentz Algebra. → drilled as [[PHY 513 PS Drill#^ps4-5-c|PS4.5(c)]] (Lecture 7, slide "The Dirac Representation": "Claim: S^μν satisfy Lorentz algebra"; transcript: "I have absolutely not shown that").
+$[S^{\mu\nu}, S^{\rho\sigma}]$ = the Lorentz algebra with $\mathcal J \to S$, see Theorem [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-18|§CB.15.18]] The Spinor Generators Obey the Lorentz Algebra. → drilled as [[PHY 513 PS Drill#^ps4-5-c|PS4.5(c)]] (Lecture 7, slide "The Dirac Representation": "Claim: S^μν satisfy Lorentz algebra"; transcript: "I have absolutely not shown that").
 
 ^nd-thm-cb-14-18
 
@@ -5765,7 +5765,7 @@ In the chiral basis $\mathbf J_+ = \frac12\operatorname{diag}(\boldsymbol\sigma,
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (identifying a representation)
-> - Steps 1–3 of [[§C5a.3 The Lorentz Action on Spinor Space#^der-c5a-3-3|Derivation §C5a.3.3]]; basis-free: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-3|§CB.18.3]] The Dirac Module Restricted to SL(2,ℂ) Is (½, 0) ⊕ (0, ½); the preview's caution: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-3|§C5a.5, Caution: The upper components are not the particle]].
+> - Steps 1–3 of [[§C5a.3 The Lorentz Action on Spinor Space#^der-c5a-3-3|Derivation §C5a.3.3]]; basis-free: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-3|§CB.19.3]] The Dirac Module Restricted to SL(2,ℂ) Is (½, 0) ⊕ (0, ½); the preview's caution: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-3|§C5a.5, Caution: The upper components are not the particle]].
 
 ### [A] The spinor Lorentz matrices are pairs of Weyl matrices ★★
 
@@ -5800,7 +5800,7 @@ $\det\Lambda_L = \det\Lambda_R = 1$; $\Lambda_R = (\Lambda_L^\dagger)^{-1}$; $\L
 
 ### [B] The Weyl matrices cover the vector representation ★
 
-$\Lambda_L(\omega)(x_\mu\sigma^\mu)\Lambda_L(\omega)^\dagger = (\Lambda x)_\mu\sigma^\mu$ with $\Lambda = e^\omega$ of the same parameters, equivalently $\Lambda_L^\dagger\bar\sigma^\mu\Lambda_L = \Lambda^\mu{}_\nu\bar\sigma^\nu$; $SL(2, \mathbb C) \to SO^+(1,3)$ is onto with kernel $\pm\mathbb 1$, see Theorem [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|§C5a.4.2]] The Weyl Matrices Cover the Vector Representation and Theorem [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9|§CB.16.9]] SL(2, C) Is the Double Cover of SO⁺(1,3). *Source: the user's notes Ch. 8 §8.2 · Yu Exercise 3.7*
+$\Lambda_L(\omega)(x_\mu\sigma^\mu)\Lambda_L(\omega)^\dagger = (\Lambda x)_\mu\sigma^\mu$ with $\Lambda = e^\omega$ of the same parameters, equivalently $\Lambda_L^\dagger\bar\sigma^\mu\Lambda_L = \Lambda^\mu{}_\nu\bar\sigma^\nu$; $SL(2, \mathbb C) \to SO^+(1,3)$ is onto with kernel $\pm\mathbb 1$, see Theorem [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|§C5a.4.2]] The Weyl Matrices Cover the Vector Representation and Theorem [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|§CB.17.9]] SL(2, C) Is the Double Cover of SO⁺(1,3). *Source: the user's notes Ch. 8 §8.2 · Yu Exercise 3.7*
 
 ^nd-thm-c5a-4-2
 
@@ -5812,7 +5812,7 @@ $\Lambda_L(\omega)(x_\mu\sigma^\mu)\Lambda_L(\omega)^\dagger = (\Lambda x)_\mu\s
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4, K2
-> - Steps 1–3 of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^der-c5a-4-2|Derivation §C5a.4.2]]; the kernel: Steps 1–4 of [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-16-5|Derivation §CB.16.5]]; the lift: step 4 of [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-16-9|Derivation §CB.16.9]].
+> - Steps 1–3 of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^der-c5a-4-2|Derivation §C5a.4.2]]; the kernel: Steps 1–4 of [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-17-5|Derivation §CB.17.5]]; the lift: step 4 of [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-17-9|Derivation §CB.17.9]].
 
 ### [PS] Rotation and boost matrices in the Dirac representation; invariant components; 2π
 
@@ -5822,7 +5822,7 @@ The rotation matrices entry by entry (Theorem [[§C5a.4 SL(2,C) and the Group Ac
 
 ### [A] The Dirac matrices are an invariant vector of matrices ★★
 
-$\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ for the same $\omega$ (also $S^{\mu\nu}$ as a tensor), the finite form of $[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$, see Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|§CB.18.7]] The Dirac Matrices Are an Invariant Vector of Matrices. **[class exercise, Lecture 8]** ("what we have checked is entirely just this is true to linear order, and the claim is that once it's true to linear order, it's true"). *Source: Lecture 8, slides "'Transformation' of γ^μ: Derivation", "'Transformation' of γ^μ: Interpretation" and transcript (Sep 28)*
+$\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ for the same $\omega$ (also $S^{\mu\nu}$ as a tensor), the finite form of $[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$, see Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-7|§CB.19.7]] The Dirac Matrices Are an Invariant Vector of Matrices. **[class exercise, Lecture 8]** ("what we have checked is entirely just this is true to linear order, and the claim is that once it's true to linear order, it's true"). *Source: Lecture 8, slides "'Transformation' of γ^μ: Derivation", "'Transformation' of γ^μ: Interpretation" and transcript (Sep 28)*
 
 ^nd-thm-cb-18-7
 
@@ -5835,7 +5835,7 @@ $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ for th
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4, K11
-> - Step 1 of [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7|Derivation §CB.18.7]] (infinitesimal), steps 2–4 (two curves, the same ODE, uniqueness); second route: Steps 1–3 of [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7b|Derivation §CB.18.7, second route]].
+> - Step 1 of [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-19-7|Derivation §CB.19.7]] (infinitesimal), steps 2–4 (two curves, the same ODE, uniqueness); second route: Steps 1–3 of [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-19-7b|Derivation §CB.19.7, second route]].
 > - The lecture's three forms: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-2|§C5a.4, Remark: The lecture's form of the covariance]]; "numbers": [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-3|§C5a.4, Remark: Why γ is fixed under a Lorentz transformation but not under a change of basis]].
 
 ### [A] The Dirac equation is covariant ★★
@@ -5853,12 +5853,12 @@ For $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$, $(i\gamma^\mu\partial_\mu - m
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2, K14
-> - Step 1 of [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-1|Derivation §C5a.7.1]] (chain rule), steps 2–3 (insert, Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|§CB.18.7]] The Dirac Matrices Are an Invariant Vector of Matrices), step 4 (contract), steps 5–6 (mass, combine).
+> - Step 1 of [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-1|Derivation §C5a.7.1]] (chain rule), steps 2–3 (insert, Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-7|§CB.19.7]] The Dirac Matrices Are an Invariant Vector of Matrices), step 4 (contract), steps 5–6 (mass, combine).
 > - Index slots of $\gamma$: [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-4|§C5a.5, Remark: What each Dirac index labels]].
 
 ### [A] Adjoints of the spinor generators ★★
 
-In a Hermitian basis $S^{ij\dagger} = S^{ij}$ and $S^{0i\dagger} = -S^{0i}$: $\Lambda_{1/2}$ is unitary for rotations and Hermitian positive for boosts, see Theorem [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-22|§CB.14.22]] Adjoints of the Generators. *Source: Lecture 8, slide "The Hermitean Conjugate Spinor" ("Rotations S^ij hermitean and boosts S^0i antihermitean")*
+In a Hermitian basis $S^{ij\dagger} = S^{ij}$ and $S^{0i\dagger} = -S^{0i}$: $\Lambda_{1/2}$ is unitary for rotations and Hermitian positive for boosts, see Theorem [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-22|§CB.15.22]] Adjoints of the Generators. *Source: Lecture 8, slide "The Hermitean Conjugate Spinor" ("Rotations S^ij hermitean and boosts S^0i antihermitean")*
 
 ^nd-thm-cb-14-22
 
@@ -5869,11 +5869,11 @@ In a Hermitian basis $S^{ij\dagger} = S^{ij}$ and $S^{0i\dagger} = -S^{0i}$: $\L
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Steps 1–3 of [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-22|Derivation §CB.14.22]], step 4 (rotations unitary, boosts not).
+> - Steps 1–3 of [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-15-22|Derivation §CB.15.22]], step 4 (rotations unitary, boosts not).
 
 ### [A] Λ½ is pseudo-unitary: γ⁰ compensates ★★
 
-$\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$, equivalently $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$: $\gamma^0$ is an indefinite Hermitian form preserved by every $\Lambda_{1/2}$, see Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|§CB.18.13]] Λ½ Is Pseudo-Unitary. *Source: Lecture 8, slide "The Dirac Conjugate Spinor" ("γ⁰ can compensate for anti-hermiticity of boosts")*
+$\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$, equivalently $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$: $\gamma^0$ is an indefinite Hermitian form preserved by every $\Lambda_{1/2}$, see Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-13|§CB.19.13]] Λ½ Is Pseudo-Unitary. *Source: Lecture 8, slide "The Dirac Conjugate Spinor" ("γ⁰ can compensate for anti-hermiticity of boosts")*
 
 ^nd-thm-cb-18-13
 
@@ -5885,7 +5885,7 @@ $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$, equivalently $\Lam
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5, K7
-> - Steps 1–2 of [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13|Derivation §CB.18.13, the lecture's route]] (the lecture's route), step 3, steps 4–6 (exponent, series, other forms), step 7 (indefinite); second route: [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b|Derivation §CB.18.13, second route]].
+> - Steps 1–2 of [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-19-13|Derivation §CB.19.13, the lecture's route]] (the lecture's route), step 3, steps 4–6 (exponent, series, other forms), step 7 (indefinite); second route: [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-19-13b|Derivation §CB.19.13, second route]].
 
 ### [A] The Dirac conjugate transforms with the inverse ★★
 
@@ -5900,7 +5900,7 @@ $\bar\psi'(x) = \bar\psi(\Lambda^{-1}x)\Lambda_{1/2}^{-1}$, so $\bar\psi\chi$ is
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Steps 1–4 of [[§C5a.6 The Dirac Conjugate and the Bilinears#^der-c5a-6-1|Derivation §C5a.6.1]]; pseudo-unitarity: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|§CB.18.13]] Λ½ Is Pseudo-Unitary.
+> - Steps 1–4 of [[§C5a.6 The Dirac Conjugate and the Bilinears#^der-c5a-6-1|Derivation §C5a.6.1]]; pseudo-unitarity: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-13|§CB.19.13]] Λ½ Is Pseudo-Unitary.
 
 ### [A] Scalar, vector and tensor bilinears ★★
 
@@ -5916,7 +5916,7 @@ A bilinear transforms as $\Lambda_{1/2}^{-1}\Gamma\Lambda_{1/2}$ does: $\bar\psi
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Steps 1–5 of [[§C5a.6 The Dirac Conjugate and the Bilinears#^der-c5a-6-2|Derivation §C5a.6.2]]; the split $\gamma^\mu\gamma^\nu = g^{\mu\nu} + \frac12[\gamma^\mu, \gamma^\nu]$: Theorem [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|§CB.11.12]] First Consequences of the Clifford Algebra, part 3.
+> - Steps 1–5 of [[§C5a.6 The Dirac Conjugate and the Bilinears#^der-c5a-6-2|Derivation §C5a.6.2]]; the split $\gamma^\mu\gamma^\nu = g^{\mu\nu} + \frac12[\gamma^\mu, \gamma^\nu]$: Theorem [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-12-12|§CB.12.12]] First Consequences of the Clifford Algebra, part 3.
 
 ### [B] Pseudoscalar and axial vector under proper Lorentz transformations ★
 
@@ -5950,7 +5950,7 @@ For commuting components $(\bar\psi\Gamma\psi)^\ast = \bar\psi\bar\Gamma\psi$ wi
 
 ### [B] γ⁵ is Lorentz invariant and separates the Weyl halves ★
 
-$\gamma^5$ commutes with every $S^{\mu\nu}$ and $\Lambda_{1/2}$; in the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$; on the Dirac representation $\gamma^5 = \frac43(\mathbf J_-^2 - \mathbf J_+^2)$, and its eigenspaces $\mp1$ carry $(\frac12, 0)$, $(0, \frac12)$ in every basis, see Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module. *Source: the user's notes Ch. 8 §8.2 · PS §3.4*
+$\gamma^5$ commutes with every $S^{\mu\nu}$ and $\Lambda_{1/2}$; in the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$; on the Dirac representation $\gamma^5 = \frac43(\mathbf J_-^2 - \mathbf J_+^2)$, and its eigenspaces $\mp1$ carry $(\frac12, 0)$, $(0, \frac12)$ in every basis, see Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-4|§CB.19.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module. *Source: the user's notes Ch. 8 §8.2 · PS §3.4*
 
 ^nd-thm-c5a-5-2
 
@@ -5962,7 +5962,7 @@ $\gamma^5$ commutes with every $S^{\mu\nu}$ and $\Lambda_{1/2}$; in the chiral b
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5, K16
-> - Step 1 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-2|Derivation §C5a.5.2]] (chiral form), step 2 ($\mathbf J\cdot\mathbf K$), step 3 (eigenspaces); $K_i = i\gamma^5J_i$: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module, part 1.
+> - Step 1 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-2|Derivation §C5a.5.2]] (chiral form), step 2 ($\mathbf J\cdot\mathbf K$), step 3 (eigenspaces); $K_i = i\gamma^5J_i$: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-4|§CB.19.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module, part 1.
 
 ### [B] Properties of the chirality projectors ★
 
@@ -5977,11 +5977,11 @@ $P_{L,R}$ are complementary projectors; $P_L\gamma^\mu = \gamma^\mu P_R$; they c
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7 (chirality projectors)
-> - Steps 1–4 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-3|Derivation §C5a.5.3]]; $\gamma^5$ properties: Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|§CB.12.15]] Algebraic Properties of γ⁵.
+> - Steps 1–4 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-3|Derivation §C5a.5.3]]; $\gamma^5$ properties: Theorem [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|§CB.13.15]] Algebraic Properties of γ⁵.
 
 ### [PS] Pauli's theorem; the Dirac basis
 
-Any two sets of $4\times4$ Dirac matrices are related by $\gamma' = U\gamma U^{-1}$ (Theorem [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12|§CB.13.12]] Pauli's Fundamental Theorem) → drilled as [[PHY 513 PS Drill#^ps6-3-a|PS6.3(a)]]; the Dirac basis from the chiral one by $U_D$ (Example [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|§C5a.5.1]] The Dirac Basis Is Equivalent to the Chiral Basis) → drilled as [[PHY 513 PS Drill#^ps6-3-b|PS6.3(b)]].
+Any two sets of $4\times4$ Dirac matrices are related by $\gamma' = U\gamma U^{-1}$ (Theorem [[§CB.14 Complex Clifford Algebras and Clifford Modules#^thm-cb-14-12|§CB.14.12]] Pauli's Fundamental Theorem) → drilled as [[PHY 513 PS Drill#^ps6-3-a|PS6.3(a)]]; the Dirac basis from the chiral one by $U_D$ (Example [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|§C5a.5.1]] The Dirac Basis Is Equivalent to the Chiral Basis) → drilled as [[PHY 513 PS Drill#^ps6-3-b|PS6.3(b)]].
 
 ^nd-thm-cb-13-12
 
@@ -6016,7 +6016,7 @@ Varying $\bar\psi$ gives $(i\gamma^\mu\partial_\mu - m)\psi = 0$; varying $\psi$
 > [!tip]- Hints: route in the notes
 > - Technique: K12 (Noether recipe, the Euler–Lagrange part), K7
 > - Step 1 of [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-6|Derivation §C5a.7.6]], step 2 (vary ψ̄), steps 3–4 (vary ψ), steps 5–6 (conjugate, simplify the matrices).
-> - The order of γ⁰ and γ^μ: [[§C5a.7 The Dirac Equation and Its Lagrangian#^cau-c5a-7-3|§C5a.7, Caution: The order of γ⁰ and γ^μ in the conjugate equation]]; the class check: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|§C5a.6.1]] The Dirac Conjugate Transforms with the Inverse with Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|§CB.18.7]] The Dirac Matrices Are an Invariant Vector of Matrices and Theorem [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|§C5a.7.1]] The Dirac Equation Is Covariant.
+> - The order of γ⁰ and γ^μ: [[§C5a.7 The Dirac Equation and Its Lagrangian#^cau-c5a-7-3|§C5a.7, Caution: The order of γ⁰ and γ^μ in the conjugate equation]]; the class check: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|§C5a.6.1]] The Dirac Conjugate Transforms with the Inverse with Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-7|§CB.19.7]] The Dirac Matrices Are an Invariant Vector of Matrices and Theorem [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|§C5a.7.1]] The Dirac Equation Is Covariant.
 
 ### [A] Why the i ★★
 
@@ -6642,7 +6642,7 @@ $\gamma^\mu\slashed a = 2a^\mu - \slashed a\gamma^\mu$, $\slashed a\slashed b + 
 
 ### [PS] Contraction identities, γ⁵ identities, Gordon
 
-$\gamma_\mu\gamma^\mu = 4$ etc. (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|§C5a.14.2]] Contraction Identities) → drilled as [[PHY 513 PS Drill#^ps5-2|PS5.2]] and [[PHY 513 PS Drill#^ps7-1-c|PS7.1(c)]]; properties of $\gamma^5$ (Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|§CB.12.15]] Algebraic Properties of γ⁵) → drilled as [[PHY 513 PS Drill#^ps5-5-a|PS5.5(a)]], [[PHY 513 PS Drill#^ps5-5-b|PS5.5(b)]]; $\gamma^5$ as the antisymmetric product and duality (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|§C5a.14.6]] The Antisymmetric Product of Three γ's, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-7|§C5a.14.7]] γ⁵ Dualizes σ^μν) → drilled as [[PHY 513 PS Drill#^ps5-5-c|PS5.5(c)]], [[PHY 513 PS Drill#^ps5-5-d|PS5.5(d)]]; the Gordon identity (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|§C5a.14.9]] The Gordon Identity) → drilled as [[PHY 513 PS Drill#^ps5-3|PS5.3]].
+$\gamma_\mu\gamma^\mu = 4$ etc. (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|§C5a.14.2]] Contraction Identities) → drilled as [[PHY 513 PS Drill#^ps5-2|PS5.2]] and [[PHY 513 PS Drill#^ps7-1-c|PS7.1(c)]]; properties of $\gamma^5$ (Theorem [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|§CB.13.15]] Algebraic Properties of γ⁵) → drilled as [[PHY 513 PS Drill#^ps5-5-a|PS5.5(a)]], [[PHY 513 PS Drill#^ps5-5-b|PS5.5(b)]]; $\gamma^5$ as the antisymmetric product and duality (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|§C5a.14.6]] The Antisymmetric Product of Three γ's, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-7|§C5a.14.7]] γ⁵ Dualizes σ^μν) → drilled as [[PHY 513 PS Drill#^ps5-5-c|PS5.5(c)]], [[PHY 513 PS Drill#^ps5-5-d|PS5.5(d)]]; the Gordon identity (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|§C5a.14.9]] The Gordon Identity) → drilled as [[PHY 513 PS Drill#^ps5-3|PS5.3]].
 
 ^nd-thm-c5a-14-2
 
@@ -6690,7 +6690,7 @@ A product of $n$ $\gamma$'s is a unique combination, with coefficients from $g$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-8|Derivation §C5a.14.8]]; three and four: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|§C5a.14.6]] The Antisymmetric Product of Three γ's; basis: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|§CB.18.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
+> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-8|Derivation §C5a.14.8]]; three and four: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|§C5a.14.6]] The Antisymmetric Product of Three γ's; basis: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-14|§CB.19.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
 
 # T9. Quantization of the Dirac field
 
@@ -7541,7 +7541,7 @@ From Lecture 12 on, $\eta^s = \xi^{-s} = -i\sigma^2(\xi^s)^{\ast}$, so $\eta^1 =
 
 ### [B] The charge-conjugation matrix B and the map c
 
-A charge-conjugation matrix is an invertible $B$ with $B(\gamma^\mu)^{\ast}B^{-1} = -\gamma^\mu$; it exists, is unique up to a factor, unitary in a Hermitian basis with $BB^{\ast} = \mathbb 1$; $c(\psi) = B\psi^{\ast}$ is an antilinear real structure commuting with the spinor Lorentz matrices; in the chiral basis $B = -i\gamma^2$, see Definition [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-18-18|§CB.18.18]] The Charge-Conjugation Matrix, Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-19|§CB.18.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation and Definition [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-18-20|§CB.18.20]] The Charge-Conjugation Map. *Source: written beyond Lecture 12 at the user's question (2026-10-12) · PS eqs. (3.144)–(3.145) (the matrix $-i\gamma^2$, unnamed) · Yu (9.98), (9.112)*
+A charge-conjugation matrix is an invertible $B$ with $B(\gamma^\mu)^{\ast}B^{-1} = -\gamma^\mu$; it exists, is unique up to a factor, unitary in a Hermitian basis with $BB^{\ast} = \mathbb 1$; $c(\psi) = B\psi^{\ast}$ is an antilinear real structure commuting with the spinor Lorentz matrices; in the chiral basis $B = -i\gamma^2$, see Definition [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-18|§CB.19.18]] The Charge-Conjugation Matrix, Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|§CB.19.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation and Definition [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-20|§CB.19.20]] The Charge-Conjugation Map. *Source: written beyond Lecture 12 at the user's question (2026-10-12) · PS eqs. (3.144)–(3.145) (the matrix $-i\gamma^2$, unnamed) · Yu (9.98), (9.112)*
 
 ^nd-def-cb-18-18
 
@@ -7553,7 +7553,7 @@ A charge-conjugation matrix is an invertible $B$ with $B(\gamma^\mu)^{\ast}B^{-1
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (intertwiner), K5.
-> - Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-19|§CB.18.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation (Pauli's theorem; sign of $BB^{\ast}$), Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-21|§CB.18.21]] The Charge-Conjugation Map Is a Real Structure Commuting with the Spinor Lorentz Matrices, Example [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-18-22|§CB.18.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; basis remark [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
+> - Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|§CB.19.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation (Pauli's theorem; sign of $BB^{\ast}$), Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-21|§CB.19.21]] The Charge-Conjugation Map Is a Real Structure Commuting with the Spinor Lorentz Matrices, Example [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-19-22|§CB.19.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; basis remark [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
 
 ### [B] Wave-function spin, the spin operator and physical spin
 
@@ -7885,7 +7885,7 @@ If $v^s(p) = B\,u^s(p)^{\ast}$ for a unitary charge-conjugation matrix $B$, then
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15, K16.
-> - Steps 1–10 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis; Definition [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-18-18|§CB.18.18]] The Charge-Conjugation Matrix, Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-19|§CB.18.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, Example [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-18-22|§CB.18.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
+> - Steps 1–10 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis; Definition [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-18|§CB.19.18]] The Charge-Conjugation Matrix, Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|§CB.19.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, Example [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-19-22|§CB.19.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
 
 ### [A] The scalar bilinear under charge conjugation ★★
 
@@ -8027,7 +8027,7 @@ If $U(\mathcal T)$ commutes with $\hat H$ and $U(\mathcal T)\hat\psi(t, \mathbf 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Steps 1–4 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-1|§C9.9.1]] Time Reversal Must Be Antilinear; Definition [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-19-3|§CB.19.3]] Antilinear Operator; [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^cau-c9-9-1|§C9.9, Caution: This goes against everything said so far]].
+> - Steps 1–4 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-1|§C9.9.1]] Time Reversal Must Be Antilinear; Definition [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-3|§CB.20.3]] Antilinear Operator; [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^cau-c9-9-1|§C9.9, Caution: This goes against everything said so far]].
 
 ### [B] Time reversal is antiunitary; it conjugates every number ★
 
@@ -8042,7 +8042,7 @@ If time reversal is a symmetry, $U(\mathcal T)$ is antiunitary, $\langle U\Psi_1
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15.
-> - Steps 1–3 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|§C9.9.2]] Time Reversal Is Antiunitary; Theorem [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-16|§CB.19.16]] Conjugation by an Antiunitary Operator; Definition [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-19-4|§CB.19.4]] Antiunitary Operator.
+> - Steps 1–3 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|§C9.9.2]] Time Reversal Is Antiunitary; Theorem [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-16|§CB.20.16]] Conjugation by an Antiunitary Operator; Definition [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|§CB.20.4]] Antiunitary Operator.
 
 ### [A] The matrix γ¹γ³ ★★ [class exercise, Lecture 12]
 
@@ -8790,18 +8790,18 @@ $\Lambda = e^{\frac12\omega_{\alpha\beta}M^{\alpha\beta}} = e^{-\frac i2\omega_{
 
 ### [C] The four-vector as (½, ½), as a bispinor and as (½, 0) ⊗ (0, ½)
 
-The vector representation is equivalent to $(\frac12, \frac12)$ by the Casimirs and by the intertwiner $v \mapsto (v_\mu\sigma^\mu)i\sigma^2$; equivalently $X_{a\dot b} = x_\mu(\sigma^\mu)_{a\dot b}$ carries one undotted and one dotted index, $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-7|§CB.17.7]] The Vector Representation Is (½, ½), Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-6|§C5a.5.6]] A Four-Vector Is a Bispinor and Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|§CB.17.12]] Tensor Products Add Each Copy Separately.
+The vector representation is equivalent to $(\frac12, \frac12)$ by the Casimirs and by the intertwiner $v \mapsto (v_\mu\sigma^\mu)i\sigma^2$; equivalently $X_{a\dot b} = x_\mu(\sigma^\mu)_{a\dot b}$ carries one undotted and one dotted index, $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$, see Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-7|§CB.18.7]] The Vector Representation Is (½, ½), Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-6|§C5a.5.6]] A Four-Vector Is a Bispinor and Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-12|§CB.18.12]] Tensor Products Add Each Copy Separately.
 
 ^nd-eq-t7-3
 
 - [ ] Q1 **[state]** State the three descriptions of the four-vector representation.
 - [ ] Q2 How does $x \to \Lambda x$ act on $X = x_\mu\sigma^\mu$ in terms of $\Lambda_L$? Which slot transforms with $\Lambda_L$ and which with $\Lambda_L^\ast$?
 - [ ] Q3 Why is the conjugate of $(\frac12, 0)$ equivalent to $(0, \frac12)$, and what does the tensor-product rule give for $(\frac12, 0)\otimes(0, \frac12)$?
-- [ ] Q4 **[why]** How is the intertwiner of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7b|proof of Theorem §CB.17.7, second route]] related to the matrix $X$ (what does the factor $i\sigma^2$ do)?
+- [ ] Q4 **[why]** How is the intertwiner of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-7b|proof of Theorem §CB.18.7, second route]] related to the matrix $X$ (what does the factor $i\sigma^2$ do)?
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–4 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-6|Derivation §C5a.5.6]]; Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|§CB.17.14]] Complex Conjugation Exchanges the Two Copies; step 2 and the first bullet of "What the proof shows" of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7b|proof of Theorem §CB.17.7, second route]].
+> - Steps 1–4 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-6|Derivation §C5a.5.6]]; Theorem [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-14|§CB.18.14]] Complex Conjugation Exchanges the Two Copies; step 2 and the first bullet of "What the proof shows" of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-18-7b|proof of Theorem §CB.18.7, second route]].
 
 ### [B] The field law classically and as an operator commutator
 
@@ -8833,7 +8833,7 @@ $U(\Lambda, a)\hat\phi(x)U(\Lambda, a)^{-1} = \hat\phi(\Lambda x + a)$ is equiva
 
 ### [B] Three forms of the covariance of γ
 
-$\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ (vault), $\Lambda_{1/2}\gamma^\mu\Lambda_{1/2}^{-1} = (\Lambda^{-1})^\mu{}_\nu\gamma^\nu$ (Lecture 8), and $\gamma^\nu = \Lambda^\nu{}_\mu\Lambda_{1/2}\gamma^\mu\Lambda_{1/2}^{-1}$ ("$\gamma$ does not transform") are one statement, see Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|§CB.18.7]] The Dirac Matrices Are an Invariant Vector of Matrices and [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-2|§C5a.4, Remark: The lecture's form of the covariance]].
+$\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ (vault), $\Lambda_{1/2}\gamma^\mu\Lambda_{1/2}^{-1} = (\Lambda^{-1})^\mu{}_\nu\gamma^\nu$ (Lecture 8), and $\gamma^\nu = \Lambda^\nu{}_\mu\Lambda_{1/2}\gamma^\mu\Lambda_{1/2}^{-1}$ ("$\gamma$ does not transform") are one statement, see Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-7|§CB.19.7]] The Dirac Matrices Are an Invariant Vector of Matrices and [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-2|§C5a.4, Remark: The lecture's form of the covariance]].
 
 ^nd-eq-t8-1
 
@@ -8844,7 +8844,7 @@ $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ (vault
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-2|§C5a.4, Remark: The lecture's form of the covariance]]; Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|§CB.18.7]] The Dirac Matrices Are an Invariant Vector of Matrices.
+> - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^rem-c5a-4-2|§C5a.4, Remark: The lecture's form of the covariance]]; Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-7|§CB.19.7]] The Dirac Matrices Are an Invariant Vector of Matrices.
 
 ### [B] The Dirac equation in three forms
 
@@ -8904,7 +8904,7 @@ Daggering the column and multiplying by $\gamma^0$; daggering the Dirac equation
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2|Derivation §C5a.11.2]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2b|Derivation §C5a.11.2, second route]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2c|Derivation §C5a.11.2, third route]]; Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|§CB.18.13]] Λ½ Is Pseudo-Unitary.
+> - [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2|Derivation §C5a.11.2]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2b|Derivation §C5a.11.2, second route]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2c|Derivation §C5a.11.2, third route]]; Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-13|§CB.19.13]] Λ½ Is Pseudo-Unitary.
 
 ### [B] The spinor boost in three forms
 
@@ -8923,7 +8923,7 @@ $e^{-i\eta S^{03}}$; $\operatorname{diag}(\cosh\frac\eta2 - \sinh\frac\eta2\sigm
 
 ### [B] Four forms of γ⁵
 
-$\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$; in the chiral basis $\operatorname{diag}(-\mathbb 1, \mathbb 1)$; $-\frac i{24}\varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$; on the Dirac representation $\frac43(\mathbf J_-^2 - \mathbf J_+^2)$, see Definition [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|§CB.12.14]] The Matrix γ⁵, Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product.
+$\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$; in the chiral basis $\operatorname{diag}(-\mathbb 1, \mathbb 1)$; $-\frac i{24}\varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$; on the Dirac representation $\frac43(\mathbf J_-^2 - \mathbf J_+^2)$, see Definition [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|§CB.13.14]] The Matrix γ⁵, Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product.
 
 ^nd-eq-t8-7
 
@@ -8964,7 +8964,7 @@ The left-handed half of a Dirac spinor is the $\gamma^5 = -1$ eigenspace, the $(
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16, K7
-> - Step 3 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-2|Derivation §C5a.5.2]]; Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module; [[§C5a.3 The Lorentz Action on Spinor Space#^der-c5a-3-3|Derivation §C5a.3.3]].
+> - Step 3 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-2|Derivation §C5a.5.2]]; Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-4|§CB.19.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module; [[§C5a.3 The Lorentz Action on Spinor Space#^der-c5a-3-3|Derivation §C5a.3.3]].
 
 ### [C] Orthogonality of u and v two ways
 
@@ -9081,7 +9081,7 @@ $U(\mathcal C)\hat\psi U(\mathcal C)^{-1} = B\hat\psi^{\dagger\mathsf T}$ (any H
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16.
-> - Steps 2–3 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis; Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-19|§CB.18.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, part 4; Example [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-18-22|§CB.18.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
+> - Steps 2–3 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis; Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|§CB.19.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, part 4; Example [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-19-22|§CB.19.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
 
 ### [B] Θ in two orders
 

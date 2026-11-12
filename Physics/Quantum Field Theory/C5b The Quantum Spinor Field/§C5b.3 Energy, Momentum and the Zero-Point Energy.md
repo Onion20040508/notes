@@ -423,7 +423,7 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 > Proved in CB and CA; each line says what the physics above relies on.
 >
 > Derivation §C5b.3.1 uses the Clifford relation of the Dirac matrices, $(\gamma^0)^2 = 1$:
-> - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]] — Dirac matrices and the Clifford relation ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
+> - [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]] — Dirac matrices and the Clifford relation ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
 >
 > The mode forms of $\hat H$ come from Fourier integrals of generalized functions:
 > - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-4|Theorem §CA.4.4]] — derivative ↔ multiplication: on $e^{i\mathbf k\cdot\mathbf x}$, $-i\partial_j$ becomes $k^j$, so $H_{\text{s.p.}}$ acts on a plane wave as the matrix $H_{\text{s.p.}}(\mathbf k)$ (Derivation §C5b.3.1, Step 5).

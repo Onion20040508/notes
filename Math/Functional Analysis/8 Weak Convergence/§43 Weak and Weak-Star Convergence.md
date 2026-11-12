@@ -253,7 +253,7 @@ It is important that $\ell$ is *bounded*, and that $K$ is *closed* and convex. T
 
 *Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]], [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]
 
-The proof of Mazur's theorem below goes through over $\mathbb{C}$ with $\operatorname{Re} \ell$ in place of $\ell$, using Corollary [[§43 Weak and Weak-Star Convergence#^cor-43-6|§43.6]].
+The proof of Mazur's theorem below goes through over $\mathbb{C}$ with $\operatorname{Re} \ell$ in place of $\ell$, using Corollary [[§43 Weak and Weak-Star Convergence#^cor-43-6|§43.6]]. Lecture 20 opened with this point: Mazur's theorem holds over $\mathbb{C}$ as well, so the hyperplane separation theorem has to be adapted to complex scalars; the adaptation was left to the class, and the corollary is that adaptation.
 
 > [!theorem] Theorem §43.7: Mazur's Theorem
 > Let $X$ be a normed linear space, $\{x_n\}_{n=1}^\infty \subset X$, $x_0 \in X$, and $x_n \rightharpoonup x_0$ in $X$. Then $x_0$ belongs to the closed convex hull of $\{x_n\}_{n=1}^\infty$. That is, for every $\varepsilon > 0$ there are finitely many terms $x_1, \ldots, x_j$ of the sequence and $\lambda_k \ge 0$, $k = 1, \ldots, j$, with $\sum_{k=1}^j \lambda_k = 1$, such that

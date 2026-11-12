@@ -417,7 +417,7 @@ Lecture 10 did the quantization with anticommutators only and named the places w
 > Proved in CB and CA; each line says what the physics above relies on.
 >
 > Derivation §C5b.2.1 uses the Clifford relation of the Dirac matrices:
-> - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]] — Dirac matrices and the Clifford relation ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
+> - [[§CB.12 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-12-11|Def. §CB.12.11]] — Dirac matrices and the Clifford relation ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
 >
 > The mode sums are Fourier integrals of generalized functions:
 > - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^def-ca-3-1|Def. §CA.3.1]] — the quantum field $\hat\psi(x)$ and the mode operators are operator-valued distributions; the expansion is an identity after smearing (Theorem §C5b.2.1).

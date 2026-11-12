@@ -19,13 +19,13 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 - Fourier series converge in $L^2$, with Parseval's equality ([[§27 Orthonormal Sets and Bases#^cor-27-12|Cor. §27.12]])
 - $L^p(E)$, in particular $L^2(E)$, is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] ([[§29 Sequence and Function Spaces#^prop-29-5|§29]])
 - $(L^2)' = L^2$ by the Riesz representation theorem ([[§31 Dual Spaces#^ex-31-1|§31]])
-- Parity on $L^2[-1,1]$: the simplest resolution of the identity ([[§47 The Completeness Relation#^ex-47-1|§47.1]])
-- A particle on a ring: the Fourier basis as momentum eigenstates ([[§47 The Completeness Relation#^ex-47-2|§47.2]])
-- $L^2(\mathbb{R}^n)$ is separable, and every orthonormal basis of it is countably infinite ([[§48 Position Eigenstates and Continuous Resolutions#^thm-48-2|§48.2]])
-- Position has no eigenvectors in $L^2(\mathbb{R})$ ([[§48 Position Eigenstates and Continuous Resolutions#^prop-48-3|§48.3]])
-- Point evaluation is not bounded in the $L^2$ norm ([[§48 Position Eigenstates and Continuous Resolutions#^prop-48-4|§48.4]])
-- The spectral projections of position on $L^2(\mathbb{R}^n)$ ([[§48 Position Eigenstates and Continuous Resolutions#^prop-48-5|§48.5]])
-- The bound states of hydrogen are not complete in $L^2(\mathbb{R}^3)$ ([[§49 Bound States Need Not Be Complete꞉ Hydrogen#^cor-49-2|§49.2]])
+- Parity on $L^2[-1,1]$: the simplest resolution of the identity ([[§48 The Completeness Relation#^ex-48-1|§48.1]])
+- A particle on a ring: the Fourier basis as momentum eigenstates ([[§48 The Completeness Relation#^ex-48-2|§48.2]])
+- $L^2(\mathbb{R}^n)$ is separable, and every orthonormal basis of it is countably infinite ([[§49 Position Eigenstates and Continuous Resolutions#^thm-49-2|§49.2]])
+- Position has no eigenvectors in $L^2(\mathbb{R})$ ([[§49 Position Eigenstates and Continuous Resolutions#^prop-49-3|§49.3]])
+- Point evaluation is not bounded in the $L^2$ norm ([[§49 Position Eigenstates and Continuous Resolutions#^prop-49-4|§49.4]])
+- The spectral projections of position on $L^2(\mathbb{R}^n)$ ([[§49 Position Eigenstates and Continuous Resolutions#^prop-49-5|§49.5]])
+- The bound states of hydrogen are not complete in $L^2(\mathbb{R}^3)$ ([[§50 Bound States Need Not Be Complete꞉ Hydrogen#^cor-50-2|§50.2]])
 - The Radon–Nikodym theorem, from the Riesz representation theorem in $L^2(\mu + \nu)$ ([[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35]])
 - $\sin(mx) \rightharpoonup 0$ in $L^2[0, 2\pi]$ ([[§43 Weak and Weak-Star Convergence#^ex-43-2|§43]])
 
@@ -63,25 +63,25 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 ![[§31 Dual Spaces#^ex-31-1]]
 
 ## Parity on $L^2[-1,1]$: the simplest resolution of the identity
-![[§47 The Completeness Relation#^ex-47-1]]
+![[§48 The Completeness Relation#^ex-48-1]]
 
 ## A particle on a ring: the Fourier basis as momentum eigenstates
-![[§47 The Completeness Relation#^ex-47-2]]
+![[§48 The Completeness Relation#^ex-48-2]]
 
 ## $L^2(\mathbb{R}^n)$ is separable, and every orthonormal basis of it is countably infinite
-![[§48 Position Eigenstates and Continuous Resolutions#^thm-48-2]]
+![[§49 Position Eigenstates and Continuous Resolutions#^thm-49-2]]
 
 ## Position has no eigenvectors in $L^2(\mathbb{R})$
-![[§48 Position Eigenstates and Continuous Resolutions#^prop-48-3]]
+![[§49 Position Eigenstates and Continuous Resolutions#^prop-49-3]]
 
 ## Point evaluation is not bounded in the $L^2$ norm
-![[§48 Position Eigenstates and Continuous Resolutions#^prop-48-4]]
+![[§49 Position Eigenstates and Continuous Resolutions#^prop-49-4]]
 
 ## The spectral projections of position on $L^2(\mathbb{R}^n)$
-![[§48 Position Eigenstates and Continuous Resolutions#^prop-48-5]]
+![[§49 Position Eigenstates and Continuous Resolutions#^prop-49-5]]
 
 ## The bound states of hydrogen are not complete in $L^2(\mathbb{R}^3)$
-![[§49 Bound States Need Not Be Complete꞉ Hydrogen#^cor-49-2]]
+![[§50 Bound States Need Not Be Complete꞉ Hydrogen#^cor-50-2]]
 
 ## The Radon–Nikodym theorem, from the Riesz representation theorem in $L^2(\mu + \nu)$
 ![[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1]]

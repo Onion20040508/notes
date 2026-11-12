@@ -1017,7 +1017,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Rules.** Dimension $(2j_+ + 1)(2j_- + 1)$; under rotations $(j_+, j_-)$ is $j_+\otimes j_-$, containing each spin from $\lvert j_+ - j_-\rvert$ to $j_+ + j_-$ once; a $2\pi$ rotation gives $(-1)^{2(j_+ + j_-)}$. For $(1, \frac12)$: $3\cdot2 = 6$, spins $\frac12$ and $\frac32$, sign $(-1)^3 = -1$ (it occurs inside a vector-spinor $\psi_\mu$, beyond the course).
 >
-> *Checked against:* [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]] (the first three rows), [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]] (spins and sign); the $(1, \frac12)$ row is derived here from the same rules; check: its dimension $6 = 2 + 4$ is the sum of the spin multiplicities.
+> *Checked against:* [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]] (the first three rows), [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|Theorem §CB.18.8]] (spins and sign); the $(1, \frac12)$ row is derived here from the same rules; check: its dimension $6 = 2 + 4$ is the sum of the spin multiplicities.
 
 ^sol-wr-17-c
 
@@ -1162,6 +1162,6 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > 7. (g) The proper non-orthochronous component ($\det = +1$, $\Lambda^0{}_0 = -1$), $\mathcal P\mathcal T\cdot SO^+(1,3)$; no, every exponential lies in $SO^+(1,3)$. [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|Theorem §CB.3.12]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-4|Theorem §C1a.7.4]].
 > 8. (h) $(\frac12, \frac12)$; $(0, 0)$; $(1, 1)$. [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
 > 9. (i) Both zero: a plane wave is a null field ($\mathbf E\perp\mathbf B$, $\lvert\mathbf E\rvert = \lvert\mathbf B\rvert$). [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-4|REL Theorem §B4.2.4]], 3; [[§C1a.8 Relativistic Electrodynamics in Index Form#^thm-c1a-8-3|Theorem §C1a.8.3]].
-> 10. (j) $+1$; $e^{\eta}$. [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]]; Problem 2(b), Problem 17(b).
+> 10. (j) $+1$; $e^{\eta}$. [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|Theorem §CB.18.8]]; Problem 2(b), Problem 17(b).
 
 ^sol-wr-20

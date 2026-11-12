@@ -10,7 +10,7 @@ tags: [chapter, functional-analysis]
 Linear functionals take values in the scalars. The next objects are linear maps between two normed linear spaces, and the question is the same as for functionals: when is a linear map continuous, and how large is it? The answer — continuity and boundedness coincide, and the bounded maps form a normed space of their own, complete when the target is — is the starting point for operators on Hilbert space. The material follows Lax, Chapter 15, and closes with the [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Lax–Milgram theorem]], the [[§33 Sobolev Spaces and Weak Derivatives|Sobolev spaces]] it is applied to, and two applications of the representation theorems: [[§34 Weak Solutions of the Dirichlet Problem|weak solutions of the Dirichlet problem]] and the [[§35 Measures and the Radon–Nikodym Theorem|Radon–Nikodym theorem]]. It ends by returning to duality (Lax, Chapter 8): [[§36 Duality in Normed Spaces#^thm-36-1|Hahn–Banach for normed spaces]], norms and distances computed from the dual, the [[§36 Duality in Normed Spaces#^thm-36-4|dual of ℓᵖ]], [[§36 Duality in Normed Spaces#^def-36-1|annihilators]], the [[§37 Separable Duals and Reflexive Spaces#^thm-37-1|spanning criterion]], [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|separability of duals]], and [[§37 Separable Duals and Reflexive Spaces#^def-37-1|reflexive spaces]].
 
 **Builds on:** [[· 1 Linear Spaces|1 Linear Spaces]] (13), [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (2), [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (38), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (21), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (58)
-**Used by:** [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (1), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (1), [[· 7 Inverses, Open Maps, and Baire Category|7 Inverses, Open Maps, and Baire Category]] (6), [[· 8 Weak Convergence|8 Weak Convergence]] (31), [[· 9 Functional Analysis and Quantum Mechanics|9 Functional Analysis and Quantum Mechanics]] (2)
+**Used by:** [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (1), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (1), [[· 7 Inverses, Open Maps, and Baire Category|7 Inverses, Open Maps, and Baire Category]] (6), [[· 8 Weak Convergence|8 Weak Convergence]] (27), [[· 9 Convergence of Operators and Transposes|9 Convergence of Operators and Transposes]] (20), [[· 10 Functional Analysis and Quantum Mechanics|10 Functional Analysis and Quantum Mechanics]] (2)
 **Builds on (other subjects):** [[Linear Algebra]] (2), [[Measure Theory]] (13), [[Topology]] (1), [[Single Variable Analysis]] (11), [[Multivariable Analysis]] (2)
 
 ## Sections
@@ -42,7 +42,7 @@ Linear functionals take values in the scalars. The next objects are linear maps 
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Hahn–Banach Theorem for Normed Spaces|Theorem §36.1: Hahn–Banach for Normed Spaces]]: 31 later results
-- [[The Norm as a Maximum over the Dual|Theorem §36.2: The Norm as a Maximum over the Dual]]: 27 later results
-- [[§30 Boundedness and Continuity#^prop-30-1|Proposition §30.1: The Operator Norm]]: 24 later results
-- [[§31 Dual Spaces#^thm-31-2|Theorem §31.2: Riesz Representation Theorem, with Norms]]: 23 later results
+- [[Hahn–Banach Theorem for Normed Spaces|Theorem §36.1: Hahn–Banach for Normed Spaces]]: 35 later results
+- [[The Norm as a Maximum over the Dual|Theorem §36.2: The Norm as a Maximum over the Dual]]: 31 later results
+- [[§30 Boundedness and Continuity#^prop-30-1|Proposition §30.1: The Operator Norm]]: 29 later results
+- [[§31 Dual Spaces#^thm-31-2|Theorem §31.2: Riesz Representation Theorem, with Norms]]: 24 later results

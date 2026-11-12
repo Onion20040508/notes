@@ -19,6 +19,7 @@ tags: [functional-analysis, hub]
 - [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|Proposition §37.5: The Canonical Embedding X → X'']]
 - [[§43 Weak and Weak-Star Convergence#^prop-43-1|Proposition §43.1: Basic Properties of Weak Limits]]
 - [[§43 Weak and Weak-Star Convergence#^thm-43-4|Theorem §43.4: The Norm of a Weak Limit]]
+- [[§46 The Transpose#^prop-46-4|Proposition §46.4: Properties of the Transpose]]
 
 ## Connections
 - **How.** $|\ell(y)| \le \|\ell\|\|y\|$ gives $\le$. For equality define $\ell_0(c\,y_0) = c\|y_0\|$ on the line through $y_0$, a functional of norm $1$ there, and extend it by the [[Hahn–Banach Theorem for Normed Spaces]] ([[Functional Analysis Problem-Solving Techniques#^rem-t22|Technique 22]]).

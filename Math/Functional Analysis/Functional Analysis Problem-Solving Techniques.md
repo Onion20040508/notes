@@ -456,7 +456,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t31
 
-> [!example] Example §T31: Applications (Lecture 19)
+> [!example] Example T31: Applications (Lecture 19)
 > - Helly's theorem, Step 1 (Theorem [[§44 Weak Sequential Compactness#^thm-44-1|§44.1]]): a bounded sequence of functionals has a subsequence that converges at every point of a countable dense set; a uniform bound then extends the convergence to the whole space (Technique 19).
 > - Eberlein's theorem (Theorem [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]]) uses the diagonal process through Helly's theorem, after passing to the closed linear span of the sequence to make the space separable (Lemma [[§44 Weak Sequential Compactness#^lem-44-3|§44.3]]).
 
@@ -469,8 +469,24 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t32
 
-> [!example] Example §T32: Applications (Lecture 19)
+> [!example] Example T32: Applications (Lecture 19)
 > - The closest point in a closed convex subset of a reflexive space (Theorem [[§44 Weak Sequential Compactness#^thm-44-10|§44.10]]); compare the Hilbert space proof (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]).
 > - Without reflexivity step (2) fails and so does the conclusion (Example [[§44 Weak Sequential Compactness#^ex-44-4|§44.4]]); without the parallelogram law uniqueness fails (Example [[§44 Weak Sequential Compactness#^ex-44-3|§44.3]]).
 
 ^ex-t32
+
+## Technique 33: Compute in the Pairing
+
+> [!remark] Remark: Strategy
+> Statements about transposes are proved by writing everything in the pairing $\langle x, \ell \rangle = \ell(x)$ and moving the operator across: $\langle Mx, \ell \rangle = \langle x, M'\ell \rangle$. An identity between functionals is checked by evaluating both sides at an arbitrary $x$. The norm of a functional is a supremum over unit vectors, and the norm of a vector is a maximum over functionals of norm $1$ (Hahn–Banach), so norm identities follow by exchanging the two suprema.
+
+^rem-t33
+
+> [!example] Example T33: Applications (Lecture 20)
+> - $\|M'\| = \|M\|$ (Proposition [[§46 The Transpose#^prop-46-4|§46.4]](1)): exchange $\sup_{\|x\| = 1}$ and $\sup_{\|\ell\| = 1}$.
+> - $N(M') = R(M)^\perp$ and $N(M) = {}^\perp R(M')$ (Theorem [[§46 The Transpose#^thm-46-6|§46.6]]); the second half needs functionals that separate points.
+> - $(NM)' = M'N'$ (Proposition [[§46 The Transpose#^prop-46-9|§46.9]](2)).
+> - Weak convergence passes to transposes when $X$ is reflexive (Proposition [[§46 The Transpose#^prop-46-8|§46.8]]): test with $\eta = i(x)$.
+> - The transpose of a Hilbert–Schmidt operator (Proposition [[§46 The Transpose#^prop-46-3|§46.3]]): in $L^2$ the pairing is an integral, and moving the operator across is exchanging the order of integration.
+
+^ex-t33

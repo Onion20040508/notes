@@ -1,0 +1,523 @@
+---
+type: section
+subject: "[[Quantum Field Theory]]"
+level: C
+chapter: CB
+section: CB.10
+conventions: "[[Larsen PHY 513]]"
+tags: [quantum-field-theory, level-c]
+---
+← [[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.11 Clebsch–Gordan, Descent and Integer Spin]] →
+
+*Sources: the user's PHY 513 notes, Ch. 7 §7.2 · Quantum Mechanics §B6.3, §C7.1 · P. Woit, Quantum Theory, Groups and Representations, §§8.1–8.2, 9.4, 9.6 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the rest written here.*
+
+What are all finite-dimensional representations of SU(2) and SO(3), and how are they built from spin ½? The course classifies the irreducible representations of the rotation algebra by highest weight and integrates them to SU(2) and SO(3) ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]]). This section puts these in the language of §CB.4–§CB.8: $\mathfrak{sl}(2, \mathbb C)$ and weights, complete reducibility, the topology of $SU(2)$, $SO(3)$ and $SL(2, \mathbb C)$ with projective and two-valued representations, and spin $j$ as the symmetric power $\operatorname{Sym}^{2j}\mathbb C^2$. How the $V_j$ multiply (the Clebsch–Gordan series), the descent lemma that decides which representations of a covering group are representations of the quotient, and integer spin built from vectors follow in [[§CB.11 Clebsch–Gordan, Descent and Integer Spin|§CB.11]]. The three-dimensional Clifford picture of the same objects is [[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half|§CB.16]].
+
+## 𝔰𝔩(2,ℂ) and weights
+
+> [!definition] Definition §CB.10.1: The Standard Basis of 𝔰𝔩(2,ℂ)
+> The **standard basis** of $\mathfrak{sl}(2, \mathbb C)$ is
+>
+> $$
+> H = \begin{pmatrix} 1 & 0 \\ 0 & -1\end{pmatrix}, \quad E = \begin{pmatrix} 0 & 1 \\ 0 & 0\end{pmatrix}, \quad F = \begin{pmatrix} 0 & 0 \\ 1 & 0\end{pmatrix}, \qquad [H, E] = 2E, \quad [H, F] = -2F, \quad [E, F] = H .
+> $$
+>
+> Under $\mathfrak{su}(2)_{\mathbb C} \cong \mathfrak{sl}(2, \mathbb C)$ ([[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-5|Theorem §CB.4.5]]) and complex-linear extension of a representation ([[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-10|Theorem §CB.4.10]]): $H = 2J^3$, $E = J^+$, $F = J^-$ in the physicists' generators of the defining representation.
+>
+> *Source: P. Woit, Quantum Theory, Groups and Representations, §8.1.2 (the basis $S_3$, $S_\pm = S_1 \pm iS_2$ of $\mathfrak{sl}(2, \mathbb C)$, $[S_3, S_\pm] = \pm S_\pm$, $[S_+, S_-] = 2S_3$) · the names $H, E, F$ written here*
+
+^def-cb-10-1
+
+> [!definition] Definition §CB.10.2: Weight and Weight Space
+> For a representation of $\mathfrak{sl}(2, \mathbb C)$ (equivalently of $\mathfrak{su}(2)$) on $W$, the **weight space** of weight $m \in \mathbb C$ is $W_m = \{w : J^3w = mw\}$, $J^3 = \frac12H$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-1|Def. §CB.10.1]]); $m$ is a **weight** if $W_m \ne 0$, and $\dim W_m$ is its **multiplicity**.
+>
+> *Source: P. Woit, Quantum Theory, Groups and Representations, §8.1.2 (Definition: weights and weight spaces; Woit labels by $k = 2m$, the eigenvalue of $\pi'(2S_3)$) · written here*
+
+^def-cb-10-2
+
+The course's classification, for the rotation algebra with generators $J^i$ and no inner product assumed (PHY 513 Lecture 7; the user's PHY 513 notes, Ch. 7 §7.2; two routes). It is the same statement as Theorem §CB.10.6 below, read through $\mathfrak{so}(3)_{\mathbb C} \cong \mathfrak{sl}(2, \mathbb C)$ with $H = 2J^3$, $E = J^+$, $F = J^-$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-1|Def. §CB.10.1]]): its $D^{(j)}$ are the $V_j$, its highest weight $j$ the top weight of $J^3$. Both proofs are kept.
+
+> [!theorem] Theorem §CB.10.3: The Irreducible Representations of the Rotation Algebra (Highest Weight)
+> Let $J^i$ be the generators of a finite-dimensional complex representation of $\mathfrak{so}(3)$, extended to $J^\pm = J^1 \pm iJ^2$; no inner product is assumed.
+> 1. **Highest weight.** There is $v_0 \ne 0$ with $J^+v_0 = 0$, $J^3v_0 = jv_0$, and necessarily $2j \in \{0, 1, 2, \dots\}$; the vectors $(J^-)^kv_0$, $k = 0, \dots, 2j$, span an irreducible invariant subspace of dimension $2j + 1$.
+> 2. **Classification.** For each $j \in \{0, \frac12, 1, \frac32, \dots\}$ there is exactly one irreducible representation of dimension $2j + 1$ up to equivalence, $D^{(j)}$, labelled by its **highest weight** $j$ (the **spin**); there are no others.
+> 3. **Standard basis.** $D^{(j)}$ has a basis $|j, m\rangle$, $m = j, j-1, \dots, -j$, with
+>
+> $$
+> J^3|j, m\rangle = m|j, m\rangle, \qquad J^\pm|j, m\rangle = \sqrt{(j \mp m)(j \pm m + 1)}\;|j, m \pm 1\rangle, \qquad \mathbf J^2 = j(j+1)\,\mathbb 1 ;
+> $$
+>
+> the inner product making this basis orthonormal makes the $J^i$ Hermitian, and is the only such inner product up to a factor.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.2 (Derivations "Constructing every irreducible representation: ladder operators", "The representations of the rotation algebra"), eq. (ladder) · PHY 513 Lecture 7 ("Representations of angular momentum": spin $j$, $2j + 1$ states) · Yu §3.3.1, eqs. (3.118)–(3.146) · Hall, Thms. 17.4, 17.6, Props. 17.7–17.9 · Georgi §§3.1–3.3 · the user's Lorentz-representation review (2026-10-14), §4 (Principle "Classification of $\mathfrak{su}(2)$ representations"; Derivation "Why $m$ runs from $-j$ to $j$": ladder, termination, irreducibility)*
+
+^thm-cb-10-3
+
+> [!derivation]- Derivation
+> **1. The relations of the complexified algebra.** From $[J^i, J^j] = i\varepsilon^{ijk}J^k$, expanding each bracket bilinearly:
+>
+> $$
+> [J^3, J^\pm] = [J^3, J^1] \pm i[J^3, J^2] = iJ^2 \pm i(-iJ^1) = \pm(J^1 \pm iJ^2) = \pm J^\pm ,
+> $$
+>
+> $$
+> [J^+, J^-] = [J^1 + iJ^2, J^1 - iJ^2] = -i[J^1, J^2] + i[J^2, J^1] = -i(iJ^3) + i(-iJ^3) = 2J^3 .
+> $$
+>
+> **2. An eigenvector, and raising.** $J^3$ is an operator on a finite-dimensional nonzero complex space, so it has an eigenvector $v$, $J^3v = \lambda v$ with $\lambda \in \mathbb C$ ([[§15 The Minimal Polynomial#^ladr-5-19|LADR Thm. 5.19]]). By step 1, $J^3J^+v = (J^+J^3 + J^+)v = (\lambda + 1)J^+v$: $J^+v$ is zero or an eigenvector with eigenvalue $\lambda + 1$.
+>
+> **3. The top of the chain.** Eigenvectors with distinct eigenvalues are independent, and $W$ is finite-dimensional, so $J^3$ has finitely many eigenvalues and the chain $v, J^+v, (J^+)^2v, \dots$ reaches zero: there is $k \ge 0$ with $v_0 \equiv (J^+)^kv \ne 0$, $J^+v_0 = 0$, $J^3v_0 = \mu v_0$, $\mu = \lambda + k$ (a priori complex).
+>
+> **4. Lowering.** Set $v_k = (J^-)^kv_0$. As in step 2 with the sign reversed, $J^3J^-u = (J^-J^3 - J^-)u$, so $J^3v_k = (\mu - k)v_k$.
+>
+> **5. Raising a lowered vector.** Claim: $J^+v_k = k(2\mu + 1 - k)\,v_{k-1}$ for $k \ge 1$. For $k = 1$: $J^+J^-v_0 = (J^-J^+ + [J^+, J^-])v_0 = 0 + 2J^3v_0 = 2\mu\,v_0$, which is $1\cdot(2\mu + 1 - 1)v_0$. If it holds for $k$, then
+>
+> $$
+> J^+v_{k+1} = J^+J^-v_k = (J^-J^+ + 2J^3)v_k = k(2\mu + 1 - k)\,J^-v_{k-1} + 2(\mu - k)\,v_k = \bigl[2\mu k + k - k^2 + 2\mu - 2k\bigr]v_k = (k+1)(2\mu - k)\,v_k ,
+> $$
+>
+> using $J^-v_{k-1} = v_k$; and $(k+1)(2\mu - k) = (k+1)(2\mu + 1 - (k+1))$ is the claim for $k + 1$.
+>
+> **6. Termination fixes $\mu$.** The nonzero $v_k$ have distinct eigenvalues $\mu - k$, so finitely many are nonzero: there is $N \ge 0$ with $v_N \ne 0$, $v_{N+1} = 0$. Step 5 with $k = N + 1$: $0 = J^+v_{N+1} = (N+1)(2\mu - N)\,v_N$. Since $N + 1 > 0$ and $v_N \ne 0$, $\mu = N/2 \equiv j$, and the chain has $N + 1 = 2j + 1$ members. ⚑ By-product: $j$ is a non-negative half-integer as a consequence of *finite dimension alone*; no positivity of norms is used, so the argument applies verbatim to non-unitary representations → [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], 1 (used for each copy of $\mathbf J_\pm$ in [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-3|Def. §CB.18.3]]).
+>
+> **7. Invariance and irreducibility.** $\operatorname{span}\{v_0, \dots, v_{2j}\}$ is mapped into itself by $J^3$ (step 4), $J^-$ (definition, $J^-v_{2j} = v_{2j+1} = 0$) and $J^+$ (step 5), hence by $J^1 = \frac12(J^+ + J^-)$ and $J^2 = \frac{1}{2i}(J^+ - J^-)$. If $w = \sum_ka_kv_k \ne 0$ lies in an invariant subspace, let $k_0$ be the largest index with $a_{k_0} \ne 0$; then $(J^+)^{k_0}w = a_{k_0}\prod_{k=1}^{k_0}k(2j + 1 - k)\,v_0$ (the terms with $k < k_0$ are annihilated, since $J^+v_0 = 0$), and every factor $k(2j + 1 - k)$ with $1 \le k \le 2j$ is positive. So $v_0$, and with it every $v_k = (J^-)^kv_0$, lies in the subspace: part 1.
+>
+> **8. Classification.** If the representation is irreducible, the span of step 7 is all of $W$, so $\dim W = 2j + 1$ and the action on the basis $\{v_k\}$ is fixed by $j$ (steps 4–5). Two irreducible representations of the same dimension therefore have the same $j$, and the map $v_k \mapsto v_k'$ intertwines them (Def. §CB.3.8). Existence for each $j$: define $J^3$, $J^\pm$ on a space with basis $v_0, \dots, v_{2j}$ by steps 4–5; $[J^3, J^\pm] = \pm J^\pm$ holds because $J^\pm$ shift the $J^3$ eigenvalue by $\pm1$, and $[J^+, J^-]v_k = (k+1)(2j - k)v_k - k(2j + 1 - k)v_k = 2(j - k)v_k = 2J^3v_k$. Part 2.
+>
+> **9. Normalization.** Put $|j, j - k\rangle = c_kv_k$ with $c_0 = 1$ and $c_{k+1} = c_k\big/\sqrt{(k+1)(2j - k)}$. With $m = j - k$, $(k+1)(2j - k) = (j + m)(j - m + 1)$, so $J^-|j, m\rangle = c_kv_{k+1} = \sqrt{(j + m)(j - m + 1)}\,|j, m - 1\rangle$, and by step 5 $J^+|j, m - 1\rangle = c_{k+1}(k+1)(2j - k)v_k = \sqrt{(j + m)(j - m + 1)}\,|j, m\rangle$; renaming $m - 1 \to m$ gives the $J^+$ formula of part 3. For the inner product declaring $\{|j, m\rangle\}$ orthonormal, $J^3$ is real diagonal and the matrices of $J^+$ and $J^-$ are real and transposes of each other, so $J^3$ is Hermitian and $(J^+)^\dagger = J^-$, whence $J^1, J^2$ are Hermitian. Uniqueness up to a factor: Hermitian $J^3$ forces the eigenvectors $v_k$ to be orthogonal, and $(J^+)^\dagger = J^-$ forces $\|v_{k+1}\|^2 = \langle v_k, J^+J^-v_k\rangle = (k+1)(2j - k)\|v_k\|^2$ (Hall Prop. 17.7), so only $\|v_0\|$ is free.
+>
+> **10. The Casimir.** $\mathbf J^2 = J^-J^+ + (J^3)^2 + J^3$ (expand $J^-J^+ = (J^1)^2 + (J^2)^2 + i[J^1, J^2] = (J^1)^2 + (J^2)^2 - J^3$). On $v_0$: $\mathbf J^2v_0 = (0 + j^2 + j)v_0$. $\mathbf J^2$ is a Casimir, so on the irreducible $D^{(j)}$ it equals $j(j+1)\mathbb 1$ ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-13|Theorem §CB.7.13]]).
+>
+> **What the derivation shows**
+> - Assumptions actually used: complex scalars (an eigenvector exists) and finite dimension (chains terminate). Hermiticity is a *consequence* (step 9), not an input.
+> - The label of an irreducible representation is its highest $J^3$ eigenvalue, equivalently its dimension, equivalently its Casimir value; the three agree only for irreducible representations ([[§C3.1 Index Slots, Rotations and Spin in Field Theory#^rem-c3-1-4|Remark: "One representation for each dimension"]]).
+> - The algebra produces half-integer $j$ on the same footing as integer $j$; which of them belong to $SO(3)$ is decided by the group → [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]].
+> - Used next: $(j_+, j_-)$ for the Lorentz algebra ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-3|Def. §CB.18.3]]); spin of a massive particle as a representation of its little group ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]]).
+
+^der-cb-10-3
+
+*Uses:* [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-4-3|Def. §CB.4.3]], [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-4-7|Def. §CB.4.7]], [[§15 The Minimal Polynomial#^ladr-5-19|LADR Thm. 5.19]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-9|Def. §CB.3.9]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-13|Theorem §CB.7.13]]
+
+> [!derivation]- Derivation (second route: positivity of norms, as in Quantum Mechanics)
+> *Source: [[§B5.2 Orbital Angular Momentum and Spherical Harmonics#^der-b5-2-4|QM Derivation §B5.2.4]], [[§B5.2 Orbital Angular Momentum and Spherical Harmonics#^der-b5-2-5|QM Derivation §B5.2.5]]; Sakurai's version [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^rem-c5-3-1|QM Remark: Eigenvalues and ladder matrix elements]]; Yu (3.118)–(3.141); the user's 513 notes, Steps 1–5*
+>
+> Quantum Mechanics finds the same spectrum for Hermitian $J^i$ on a space with a positive inner product. The steps correspond as follows, with the differences marked.
+>
+> **1.** Common eigenvectors $|\eta, m\rangle$ of $\mathbf J^2$ and $J^3$, with $\eta, m$ real — *needs* Hermiticity (here: step 2 takes one eigenvector of $J^3$ alone, eigenvalue complex a priori).
+>
+> **2.** $m$ is bounded because $\eta - m^2 = \|J^1|\eta, m\rangle\|^2 + \|J^2|\eta, m\rangle\|^2 \ge 0$ — *needs* positivity (here: finite dimension bounds the chain, step 3).
+>
+> **3.** $J^-J^+|m_{\max}\rangle = 0$ and $J^+J^-|m_{\min}\rangle = 0$ give $\eta = m_{\max}(m_{\max} + 1) = m_{\min}(m_{\min} - 1)$, so $m_{\min} = -m_{\max}$ (the other root $m_{\min} = m_{\max} + 1$ is excluded) — the same information as step 6 here, obtained from both ends of the chain instead of from the bottom.
+>
+> **4.** $|c^\pm_m|^2 = (j \mp m)(j \pm m + 1)$ from $(J^\pm)^\dagger = J^\mp$; the phases are a choice (Condon–Shortley: positive) — here step 9, where the same numbers arise as normalization constants.
+>
+> **What the derivation shows**
+> - Both routes give the same spectrum and the same ladder coefficients; this one buys the bound on $m$ with positivity of norms, the main one with finite dimension.
+> - For a compact group the hypotheses of this route are always available (Theorem §CB.7.16); for the finite-dimensional representations of the Lorentz group they are available only after the fact: $\mathbf J_\pm$ are Hermitian with respect to an auxiliary inner product that is not invariant under boosts ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-6|Theorem §CB.18.6]]), and constructing it needs the detour through the compact $SU(2)\times SU(2)$. That is why the main derivation avoids them.
+
+^der-cb-10-3b
+
+> [!caution] Caution: Phase conventions for the ladder operators
+> The coefficients $\sqrt{(j \mp m)(j \pm m + 1)}$ are positive in the Condon–Shortley convention used here, in Quantum Mechanics and in the user's 513 notes. Yu chooses $J^+|j, \sigma\rangle = -\sqrt{(j - \sigma)(j + \sigma + 1)}\,|j, \sigma + 1\rangle$ for $\sigma \ge 0$ and $+$ for $\sigma < 0$ (Yu (3.142)–(3.143)), and the user's pre-course notes follow him. The two bases differ by signs $|j, \sigma\rangle \to \pm|j, \sigma\rangle$, a diagonal change of basis: the representations are equivalent and $j$, the dimension and the Casimir agree, but individual matrix elements (Yu's $\tau^1_{(1)}$, the Clebsch–Gordan coefficients built on it) differ in sign. For $j = \frac12$ the two coincide.
+>
+> *Source: Yu §3.3.1, eqs. (3.141)–(3.150) · the user's pre-course notes, §2.3 (Note on the phase convention) · the user's PHY 513 notes, Ch. 7 §7.2 (Step 5)*
+
+^cau-cb-10-1
+
+> [!remark] Remark: Vⱼ is a representation space, not a set of eigenvalues
+> $V_j$, the representation $D^{(j)}$ of [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]] (written $V_j$ from here on), is a complex vector space of dimension $2j + 1$ together with the action of the generators $J^i$ on it. The numbers $m = j, j - 1, \dots, -j$ are the eigenvalues of $J^3$ on it and only label a basis: $V_j$ is spanned by the eigenvectors $|j, m\rangle$, one for each eigenvalue, so $\dim V_j = 2j + 1$. A general element $v = \sum_mc_m|j, m\rangle$ is a linear combination and is an eigenvector of $J^3$ only if a single $c_m$ is nonzero. Example: in $V_{1/2} = \mathbb C^2$ with $J^i = \frac12\sigma^i$, the vector $v = \frac1{\sqrt2}\bigl(|\tfrac12, \tfrac12\rangle + |\tfrac12, -\tfrac12\rangle\bigr) = \frac1{\sqrt2}(1, 1)^{\mathsf T}$ has $J^3v = \frac1{2\sqrt2}(1, -1)^{\mathsf T}$, not a multiple of $v$; it is the eigenvector of $J^1$ with eigenvalue $\frac12$ ($\sigma^1(1, 1)^{\mathsf T} = (1, 1)^{\mathsf T}$). The basis depends on the chosen axis, the space does not: what is fixed is the dimension, the Casimir $\mathbf J^2 = j(j+1)$ (Theorem §CB.10.3, 3) and, for every unit vector $\hat{\mathbf n}$, the list $j, \dots, -j$ of eigenvalues of $\hat{\mathbf n}\cdot\mathbf J$. In field theory $V_j$ is a space of components, kept apart from Hilbert spaces of states in the physics notes ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-3|§C3.2, Caution: Components, not states]]).
+>
+> *Source: the user's Lorentz-representation review (2026-10-14), §4 (Caution "$V_j$ is not the set of eigenvalues") · written here*
+
+^rem-cb-10-1
+
+Spin $j$ is self-conjugate: every $V_j$ is equivalent to its complex conjugate. The statement needs only the classification just proved and the conjugate representation of [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors|§CB.8]]:
+
+> [!theorem] Theorem §CB.10.4: Spin j Is Self-Conjugate
+> For $j \in \{0, \frac12, 1, \dots\}$ let $V_j$ be the irreducible representation $D^{(j)}$ of the rotation algebra $\mathfrak{so}(3) \cong \mathfrak{su}(2)$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]]; [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-4|Theorem §CB.2.4]]).
+> 1. The complex conjugate of $V_j$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-7|Def. §CB.8.7]]) is equivalent to $V_j$ ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-8|Def. §CB.3.8]]): $\bar V_j \cong V_j$ as representations of $\mathfrak{su}(2)$.
+> 2. If $D$ is a representation of $SU(2)$ whose algebra representation ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-10|Theorem §CB.3.10]], 1) is equivalent to $V_j$, then $\bar D \cong D$ as representations of $SU(2)$.
+>
+> For $j = \frac12$ an equivalence is given by the matrix $\varepsilon$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]], 3).
+>
+> *Source: written here from Theorem §CB.10.3 and [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-8|Theorem §CB.8.8]] (the argument stood in "What the proof shows" of Theorem §CB.8.8 until 2026-11-12)*
+
+^thm-cb-10-4
+
+> [!proof]- Proof
+> Let $d$ be the representation $V_j$ on the complex space $W$, with generators $J^a = d_{\mathbb C}(J_a)$, where $J_a = iX_a$ are the physicists' generators and $X_a$ a basis of the real Lie algebra ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-13|Def. §CB.1.13]]). The conjugate representation $\bar d$ acts on $\bar W$, the set $W$ with $\lambda\cdot_{\bar W}w = \bar\lambda w$, by the same maps, $\bar d(X) = d(X)$ (Def. §CB.8.7).
+>
+> **1. The conjugate is a representation with generators $-J^a$.** By [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-8|Theorem §CB.8.8]] (steps 1, 2 and 5 of its proof), $\bar d$ is a representation of the same real Lie algebra on $\bar W$, and its complex-linear extension takes the values
+>
+> $$
+> (\bar d)_{\mathbb C}(J_a) = d_{\mathbb C}(cJ_a) = -d_{\mathbb C}(J_a) = -J^a \quad\text{as maps of the set } W ,
+> $$
+>
+> because the conjugation $c$ fixes $X_a$ and so sends $J_a = iX_a$ to $-iX_a = -J_a$.
+>
+> **2. It is irreducible, of dimension $2j + 1$.** A subset $U \subset W$ is closed under addition and under multiplication by every complex number in $W$ iff it is so in $\bar W$ (the scalars $\lambda$ of $\bar W$ act as the scalars $\bar\lambda$ of $W$, and $\lambda \mapsto \bar\lambda$ is a bijection of $\mathbb C$): $W$ and $\bar W$ have the same subspaces, as subsets. Since $\bar d(X) = d(X)$ as maps, they have the same invariant subspaces. $V_j$ is irreducible (Theorem §CB.10.3, 1–2; [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-9|Def. §CB.3.9]]), so $0$ and $W$ are the only ones: $\bar V_j$ is irreducible. A basis of $W$ is a basis of $\bar W$ (step 3 of the proof of Theorem §CB.8.8: only the coordinates are conjugated), so $\dim\bar W = \dim W = 2j + 1$.
+>
+> **3. Part 1.** By Theorem §CB.10.3, 2 there is, up to equivalence, exactly one irreducible representation of the rotation algebra of dimension $2j + 1$. By step 2, $\bar V_j$ is one, so $\bar V_j \cong V_j$: there is an invertible complex-linear $S : W \to \bar W$ with $S\,d(X) = \bar d(X)\,S = d(X)\,S$ for all $X$. Read as a map of $W$ to itself, $S$ is *antilinear*, $S(\lambda w) = \lambda\cdot_{\bar W}S(w) = \bar\lambda\,S(w)$, and commutes with every $d(X)$.
+>
+> **4. Check: the labels agree.** By step 1 the eigenvalues of $-J^3$ on $\bar W$ are the numbers $-m$, $m = j, j - 1, \dots, -j$ (real, so they are the same numbers for either scalar multiplication), the same list as for $J^3$ on $W$, with highest weight $j$; and the Casimir operator $\sum_a(-J^a)^2 = \sum_a(J^a)^2 = j(j+1)\,\mathbb 1$ (Theorem §CB.10.3, 3) is the same map, a real multiple of the identity, hence the same multiple in $\bar W$. Dimension, highest weight and Casimir value of $\bar V_j$ are those of $V_j$, as step 3 requires.
+>
+> **5. Part 2.** Let $D$ be a representation of $SU(2)$ on $W'$ with algebra representation $d'(X) = \frac{d}{ds}D(e^{sX})\big|_{s=0}$ equivalent to $V_j$. Then $\bar D(g) = D(g)$ on $\bar W'$ (Def. §CB.8.7) is a representation of $SU(2)$: the maps and their products are the same maps of the set $W'$, each is complex-linear on $\bar W'$ (as in step 1 of the proof of Theorem §CB.8.8, $D(g)(\bar\lambda w) = \bar\lambda D(g)w$), and continuity does not involve the scalar multiplication. Its algebra representation is $\frac{d}{ds}D(e^{sX})\big|_{s=0} = d'(X)$ as a map of the set $W'$, that is, $\overline{d'}$. If $T : W' \to W$ is an equivalence of $d'$ with $V_j$, the same map $T : \bar W' \to \bar W$ is complex-linear, invertible and intertwines $\overline{d'}$ with $\bar V_j$; with part 1, $\overline{d'} \cong \bar V_j \cong V_j \cong d'$. $SU(2)$ is connected: every element is an exponential $e^X$ with $X = -\frac{i\phi}{2}\,\hat{\mathbf n}\cdot\boldsymbol\sigma \in \mathfrak{su}(2)$ ([[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-2|Theorem §CB.2.2]], 3), and exponentials lie in the identity component ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-5|Theorem §CB.3.5]], 2). For a connected group two representations are equivalent iff their algebra representations are ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-10|Theorem §CB.3.10]], 2). Hence $\bar D \cong D$.
+>
+> **What the proof shows**
+> - An equivalence $V_j \to \bar V_j$ is the same thing as an invertible antilinear map of $V_j$ that commutes with the algebra (step 3). For $j = \frac12$ it is $v \mapsto \varepsilon\bar v$ on $\mathbb C^2$: by Theorem §CB.8.17, 3, $\bar A = \varepsilon A\varepsilon^{-1}$ for $A \in SU(2)$, so $\varepsilon\,\overline{Av} = \varepsilon\bar A\,\bar v = \varepsilon\,\varepsilon A\varepsilon^{-1}\bar v = A\,\varepsilon\bar v$, using $\varepsilon^2 = -\mathbb 1$, $\varepsilon^{-1} = -\varepsilon$.
+> - Only the classification by dimension is used (step 3); the Casimir value of step 4 is a check. The argument is special to $\mathfrak{su}(2)$, where one irreducible representation exists in each dimension: for the Lorentz algebra conjugation exchanges $(j_+, j_-)$ and $(j_-, j_+)$, and for $\mathfrak{su}(3)$ the defining representation is not equivalent to its conjugate (Theorem §CB.8.8, "What the proof shows").
+> - Used next: every $V_j$ is the algebra representation of a representation of $SU(2)$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]]), so part 2 applies to every $j$.
+
+^pf-cb-10-4
+
+*Uses:* [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-7|Def. §CB.8.7]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-8|Theorem §CB.8.8]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-17|Theorem §CB.8.17]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-13|Def. §CB.1.13]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-8|Def. §CB.3.8]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-9|Def. §CB.3.9]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-5|Theorem §CB.3.5]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-10|Theorem §CB.3.10]], [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-2|Theorem §CB.2.2]], [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-4|Theorem §CB.2.4]]
+
+The value of the Casimir operator of [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-15|Theorem §CB.7.15]] on spin $j$ (the $\mathfrak{su}(2)$ example of that theorem, stated here because it needs part 3 of Theorem §CB.10.3):
+
+> [!theorem] Theorem §CB.10.5: The 𝔰𝔲(2) Casimir on Spin j
+> For $\mathfrak{su}(2)$ with the invariant form $B(X, Y) = -2\operatorname{tr}(XY)$ on $2\times2$ matrices, the Casimir operator of [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-15|Theorem §CB.7.15]] is $C_d = -\mathbf J^2$, so $C_d = -j(j+1)\mathbb 1$ on spin $j$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]]).
+>
+> *Source: Etingof, Lie Groups and Lie Algebras (MIT 18.755), §18.3 · normalization computed in Theorem §CB.7.15, Step 5, and checked against Theorem §CB.10.3*
+
+^thm-cb-10-5
+
+> [!proof]- Proof
+> Step 5 of the proof of [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-15|Theorem §CB.7.15]] gives $C_d = \sum_a(-iJ^a)^2 = -\mathbf J^2$, which is $-j(j+1)\mathbb 1$ on spin $j$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], 3).
+
+^pf-cb-10-5
+
+*Uses:* [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-15|Theorem §CB.7.15]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]]
+
+> [!theorem] Theorem §CB.10.6: Finite-Dimensional Representations of 𝔰𝔩(2,ℂ)
+> Let $W$ be a finite-dimensional complex-linear representation of $\mathfrak{sl}(2, \mathbb C)$. Then:
+> 1. $W$ is completely reducible ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-21|Theorem §CB.7.21]]) and $J^3$ is diagonalizable: $W = \bigoplus_mW_m$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-2|Def. §CB.10.2]]);
+> 2. every weight lies in $\frac12\mathbb Z$, and $J^\pm W_m \subset W_{m\pm1}$;
+> 3. the irreducible ones are the $V_j$ of the course's classification ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]]), with weights $j, j-1, \dots, -j$, each of multiplicity one.
+>
+> *Source: P. Woit, Quantum Theory, Groups and Representations, §8.1.1 (weights and weight spaces) and §8.1.2 (raising and lowering operators: $[S_3, S_+] = S_+$ gives $V_k \to V_{k+2}$ in his normalization; the highest weight theorem) (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the classification and its proof: [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]] (from the user's PHY 513 notes, Ch. 7 §7.2) · complete reducibility: [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-21|Theorem §CB.7.21]]*
+
+^thm-cb-10-6
+
+> [!proof]- Proof
+> *Woit's route (§8.1): decompose, read off the weights from the irreducible pieces, and shift them with the ladder operators. Woit obtains the weight decomposition from the circle subgroup of the group; here it comes from complete reducibility of the algebra.*
+>
+> **1. From $\mathfrak{sl}(2, \mathbb C)$ to $\mathfrak{su}(2)$.** $\mathfrak{su}(2)_{\mathbb C} \cong \mathfrak{sl}(2, \mathbb C)$ ([[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-5|Theorem §CB.4.5]]), so restricting the complex-linear representation to $\mathfrak{su}(2)$ gives a representation $d$ of $\mathfrak{su}(2)$ with $d_{\mathbb C}$ the original one and the same invariant subspaces and intertwiners ([[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-10|Theorem §CB.4.10]]). Via $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ ([[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-4|Theorem §CB.2.4]]) its physicists' generators $J^i$ obey $[J^i, J^j] = i\varepsilon^{ijk}J^k$, and $J^3 = \frac12H$, $J^\pm = J^1 \pm iJ^2$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-1|Def. §CB.10.1]]).
+>
+> **2. Complete reducibility.** By Weyl's unitary trick with $K = SU(2)$ ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-21|Theorem §CB.7.21]]), $W = W^{(1)}\oplus\cdots\oplus W^{(r)}$ with each $W^{(k)}$ invariant and irreducible.
+>
+> **3. Each piece is some $V_j$.** An irreducible finite-dimensional representation of the rotation algebra is equivalent to $D^{(j)} = V_j$ for one $j \in \{0, \frac12, 1, \dots\}$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], 2), and $V_j$ has the basis $|j, m\rangle$, $m = j, j-1, \dots, -j$, with $J^3|j, m\rangle = m|j, m\rangle$ (Theorem §CB.10.3, 3; no inner product is used in that derivation). Transport these bases into the $W^{(k)}$ by the equivalences.
+>
+> **4. Part 1.** The union of the bases of step 3 is a basis of $W$ ([[§6 Dimension#^ladr-2-43|LADR Thm. 2.43]] and the direct sum) consisting of eigenvectors of $J^3$, so $J^3$ is diagonalizable and $W = \bigoplus_mW_m$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-2|Def. §CB.10.2]]), $W_m$ spanned by the basis vectors with eigenvalue $m$.
+>
+> **5. Part 2, weights.** Every eigenvalue in step 4 is some $m$ with $j - m \in \{0, 1, \dots, 2j\}$ and $2j \in \mathbb Z$, so $2m \in \mathbb Z$: $m \in \frac12\mathbb Z$.
+>
+> **6. Part 2, ladder (Woit §8.1.2).** $[J^3, J^\pm] = \pm J^\pm$ (expand $[J^3, J^1 \pm iJ^2] = iJ^2 \pm i(-iJ^1) = \pm(J^1 \pm iJ^2)$). For $w \in W_m$: $J^3J^\pm w = J^\pm J^3w \pm J^\pm w = (m \pm 1)J^\pm w$, so $J^\pm w \in W_{m\pm1}$ (possibly $0$).
+>
+> **7. Part 3.** If $W$ is irreducible, $r = 1$ in step 2 and $W \cong V_j$; by step 3 its weights are $j, j-1, \dots, -j$, each once.
+>
+> **What the proof shows**
+> - Half-integrality of the weights and the shift by one are algebraic consequences of the commutation relations and finite dimension; diagonalizability of $J^3$ is not, it needs complete reducibility (in the non-semisimple world a $2\times2$ Jordan block would be allowed).
+> - ⚑ By-product: complete reducibility of $\mathfrak{sl}(2, \mathbb C)$-representations is borrowed from the compact group $SU(2)$ (Weyl's trick); the same mechanism gives it for the Lorentz algebra, two copies of $\mathfrak{sl}(2, \mathbb C)$ → [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-6|Theorem §CB.18.6]].
+> - Used next: Theorem §CB.10.7 counts the pieces by their weights.
+
+^pf-cb-10-6
+
+*Uses:* [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-5|Theorem §CB.4.5]], [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^thm-cb-4-10|Theorem §CB.4.10]], [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-4|Theorem §CB.2.4]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-21|Theorem §CB.7.21]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-1|Def. §CB.10.1]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-2|Def. §CB.10.2]], [[§6 Dimension#^ladr-2-43|LADR Thm. 2.43]]
+
+> [!theorem] Theorem §CB.10.7: Weight Multiplicities Determine a Representation
+> Two finite-dimensional representations of $\mathfrak{sl}(2, \mathbb C)$ are equivalent iff their weight multiplicities agree. With $n_m = \dim W_m$, the number of summands $V_j$ in $W$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-6|Theorem §CB.10.6]]) is $n_j - n_{j+1}$.
+>
+> *Source: the counting argument of [[§B6.3 Addition of Angular Momenta#^der-b6-3-2|QM Derivation §B6.3.2]], step 2 ($n(m) = \sum_{j \ge |m|}N_j$, hence $N_j = n(j) - n(j+1)$; from the user's series, Part IV, §15, and Greensite §14.1), run on the decomposition of Theorem §CB.10.6 instead of on Hermitian multiplets · P. Woit, Quantum Theory, Groups and Representations, §8.1 (representations are determined by their weights restricted to the circle subgroup), §9.4.1 (the same bookkeeping by highest weights)*
+
+^thm-cb-10-7
+
+> [!proof]- Proof
+> *QM's "staircase" count (Derivation §B6.3.2, step 2), with the multiplets supplied by complete reducibility (Theorem §CB.10.6) instead of by Hermitian operators.*
+>
+> **1. Equivalent representations have the same multiplicities.** Let $S : W \to W'$ be an invertible intertwiner ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|Def. §CB.7.2]]). It commutes with $J^3$, so for $w \in W_m$, $J^3Sw = SJ^3w = mSw$: $S(W_m) \subset W'_m$, and likewise $S^{-1}(W'_m) \subset W_m$. So $S$ maps $W_m$ onto $W'_m$ and $\dim W_m = \dim W'_m$.
+>
+> **2. Multiplicities of a sum.** By Theorem §CB.10.6, $W \cong \bigoplus_ka_kV_k$ ($a_k$ copies of $V_k$, $k \in \frac12\mathbb Z_{\ge0}$), and $V_k$ has the weight $m$ exactly once if $|m| \le k$ and $k - m \in \mathbb Z$, and not otherwise (Theorem §CB.10.6, 3). Weight spaces of a direct sum are the sums of the weight spaces of the summands, so
+>
+> $$
+> n_m = \sum_{k \ge |m|,\ k - m \in \mathbb Z}a_k .
+> $$
+>
+> **3. The staircase.** For $j \ge 0$, the sums for $n_j$ and $n_{j+1}$ run over the same integrality class ($k - j \in \mathbb Z$ iff $k - (j+1) \in \mathbb Z$), over $k \ge j$ and $k \ge j + 1$ respectively. All terms with $k \ge j + 1$ cancel:
+>
+> $$
+> n_j - n_{j+1} = a_j .
+> $$
+>
+> In particular the numbers $a_j$ do not depend on the chosen decomposition.
+>
+> **4. Equal multiplicities give equivalent representations.** If $W$ and $W'$ have the same $n_m$ for all $m$, step 3 gives $a_j = a'_j$ for all $j$; choose equivalences $V_j \to V_j$ copy by copy and add them up: an invertible intertwiner $W \cong \bigoplus a_jV_j = \bigoplus a'_jV_j \cong W'$. With step 1, the equivalence holds iff the multiplicities agree.
+>
+> **What the proof shows**
+> - The weight multiplicities are a complete invariant of finite-dimensional $\mathfrak{sl}(2, \mathbb C)$-representations, the analogue for this algebra of characters for finite groups (Woit §9.4.2 phrases it with characters $\operatorname{tr}e^{i\theta\cdot2J^3}$).
+> - ⚑ By-product: the number of copies of each $V_j$ is independent of the decomposition chosen (step 3), so "the multiplicity of spin $j$ in $W$" is well defined.
+> - Step 3 is [[§B6.3 Addition of Angular Momenta#^der-b6-3-2|QM Derivation §B6.3.2]], step 2, with $N_j = a_j$.
+> - Used next: the Clebsch–Gordan series (Theorem §CB.11.2) and $\operatorname{Sym}^{2j}\mathbb C^2$ (Theorem §CB.10.15, second route).
+
+^pf-cb-10-7
+
+*Uses:* [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-6|Theorem §CB.10.6]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|Def. §CB.7.2]]
+
+## The topology of SU(2) and SO(3), and two-valued representations
+
+Projective, genuine and two-valued representations, as the course defines them (Yu §3.3.1; the user's PHY 513 notes, Ch. 7 §7.2). Half-integer spin below is the first example; their general theory, with Wigner's theorem and the lifting to covering groups, is [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries|§CB.20]]:
+
+> [!definition] Definition §CB.10.8: Projective Representation
+> A **projective representation** of a group $G$ on a Hilbert space $\mathcal H$ is an assignment of unitary operators $U(g)$, $U(\mathbb 1) = \mathbb 1$, obeying the group law up to phases,
+>
+> $$
+> U(g_2)\,U(g_1) = e^{i\varphi(g_2, g_1)}\,U(g_2g_1), \qquad \varphi \text{ real};
+> $$
+>
+> equivalently, a homomorphism into $PU(\mathcal H) = U(\mathcal H)/\{e^{i\alpha}\mathbb 1\}$, i.e. an action on rays. $U'(g) = e^{i\alpha(g)}U(g)$ defines the same projective representation.
+>
+> *Source: Yu §3.3.1, eqs. (3.110)–(3.113) · the user's PHY 513 notes, Ch. 7 §7.2 (Derivation "Why the sign appears", last paragraph) · the user's pre-course notes, §2.3 ("Projective representations") · Hall, Defs. 16.43, 16.45, 16.55*
+
+^def-cb-10-8
+
+> [!definition] Definition §CB.10.9: Genuine Representation
+> A projective representation $U$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-8|Def. §CB.10.8]]) is **genuine** if the phases $\alpha(g)$ in $U'(g) = e^{i\alpha(g)}U(g)$ can be chosen so that $\varphi \equiv 0$: then $U'(g_2)\,U'(g_1) = U'(g_2g_1)$ holds exactly.
+>
+> *Source: Yu §3.3.1, eqs. (3.110)–(3.113) · the user's PHY 513 notes, Ch. 7 §7.2 (Derivation "Why the sign appears", last paragraph) · the user's pre-course notes, §2.3 ("Projective representations") · Hall, Defs. 16.43, 16.45, 16.55*
+
+^def-cb-10-9
+
+> [!definition] Definition §CB.10.10: Two-Valued Representation
+> A **two-valued** representation is a projective representation ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-8|Def. §CB.10.8]]) with $e^{i\varphi} = \pm1$: $U(g_2)\,U(g_1) = \pm U(g_2g_1)$.
+>
+> *Source: Yu §3.3.1, eqs. (3.110)–(3.113) · the user's PHY 513 notes, Ch. 7 §7.2 (Derivation "Why the sign appears", last paragraph) · the user's pre-course notes, §2.3 ("Projective representations") · Hall, Defs. 16.43, 16.45, 16.55*
+
+^def-cb-10-10
+
+The topology behind the integration and descent theorems of this section, with the course's ball pictures, and the same pattern for the Lorentz group (the user's PHY 513 notes, Ch. 7 §7.2):
+
+> [!theorem] Theorem §CB.10.11: SU(2) Is Simply Connected, SO(3) Is Doubly Connected
+> 1. $SU(2)$ is homeomorphic to the 3-sphere $S^3$, hence simply connected.
+> 2. $SO(3)$ is homeomorphic to $\mathbb{RP}^3 = S^3/(x \sim -x)$, and $\pi_1(SO(3)) \cong \mathbb Z_2$: a loop at $\mathbb 1$ is contractible iff its lift to $SU(2)$ starting at $\mathbb 1$ ends at $\mathbb 1$.
+> 3. The loop of rotations $\theta \mapsto R(\hat n, \theta)$, $0 \le \theta \le 2\pi$, is not contractible; traversed twice ($0 \le \theta \le 4\pi$) it is.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.2 (Derivation "Why the sign appears: the topology of SO(3) and SU(2)"; Remark "SO(3) ≅ ℝP³") · Yu §3.2, Figs. 3.3–3.5 · the user's pre-course notes, §2.2 (Remark "Covering-space formulation") · Hall, Ex. 16.34*
+
+^thm-cb-10-11
+
+> [!derivation]- Derivation
+> **1. $SU(2) \cong S^3$.** The map $U(a, b) \mapsto (x_0, x_1, x_2, x_3)$ of [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-2|Theorem §CB.2.2]], 1, is a bijection onto $S^3$, continuous in both directions (the coordinates are matrix entries). $S^3$ is simply connected ([[§37 The Fundamental Group of Sⁿ#^thm-37-3|590 Thm. §37.3]]; [[§29 The Fundamental Group#^def-29-3|590 Def. §29.3]]).
+>
+> **2. $SO(3) \cong \mathbb{RP}^3$.** The covering map $R$ is onto and $R(U) = R(U')$ iff $U' = \pm U$ ([[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-3|Theorem §CB.2.3]]); in the coordinates of step 1, $U \mapsto -U$ is $x \mapsto -x$. So $R$ induces a continuous bijection from $S^3/(x \sim -x) = P^3$ ([[§38 Fundamental Group of Some Surfaces#^def-38-2|590 Def. §38.2]]) onto $SO(3)$; $P^3$ is compact and $SO(3)$ Hausdorff, so it is a homeomorphism ([[Bijection from Compact to Hausdorff is a Homeomorphism|590, Bijection from compact to Hausdorff]]). $\pi_1(P^n) \cong \mathbb Z/2\mathbb Z$ for $n \ge 2$ ([[§38 Fundamental Group of Some Surfaces#^thm-38-3|590 Thm. §38.3]]).
+>
+> **3. The lifting criterion.** $R : SU(2) \to SO(3)$ is a covering map ([[§31 Covering Spaces#^def-31-2|590 Def. §31.2]]) by [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-20|Theorem §CB.3.20]]: it is a Lie group homomorphism (Theorem §CB.2.3, 1) of connected matrix Lie groups ($SU(2) \cong S^3$ is path-connected, and $SO(3) = R(SU(2))$ is its continuous image) whose differential is the isomorphism $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ ([[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-4|Theorem §CB.2.4]]). Its fibre over $\mathbb 1$ is $\{\pm\mathbb 1\}$. (In the coordinates of step 2 it is the quotient map $S^3 \to P^3$ with fibres $\{\pm x\}$; [[§38 Fundamental Group of Some Surfaces#^thm-38-1|590 Thm. §38.1]] proves the covering property for $S^2 \to P^2$, and the same proof works for every $n$.) $S^3$ is simply connected, so the lifting correspondence $\pi_1(SO(3), \mathbb 1) \to R^{-1}(\mathbb 1) = \{\mathbb 1, -\mathbb 1\}$, which sends a loop to the endpoint of its lift starting at $\mathbb 1$, is a bijection ([[§32 Lifting and the Fundamental Group of the Circle#^thm-32-4|590 Thm. §32.4]], 2). A loop is contractible iff it is the identity class iff its lift ends at $\mathbb 1$.
+>
+> **4. The $2\pi$ loop.** $R(e^{-i\theta\hat n\cdot\boldsymbol\sigma/2}) = R(\hat n, \theta)$ (Theorem §CB.2.3, 2), so the lift of $\theta \mapsto R(\hat n, \theta)$ starting at $\mathbb 1$ is $\theta \mapsto e^{-i\theta\hat n\cdot\boldsymbol\sigma/2} = \cos\frac\theta2\,\mathbb 1 - i\sin\frac\theta2\,\hat n\cdot\boldsymbol\sigma$ ([[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-2|Theorem §CB.2.2]]), which ends at $\cos\pi\,\mathbb 1 = -\mathbb 1$ for $\theta = 2\pi$: not contractible. For $0 \le \theta \le 4\pi$ the lift ends at $\cos2\pi\,\mathbb 1 = \mathbb 1$: contractible. Since $\pi_1$ has two elements, every non-contractible loop is homotopic to the $2\pi$ loop.
+>
+> **What the derivation shows**
+> - "Doubly connected" (Yu: 连通度为 2) means $|\pi_1| = 2$; "covering group" means the simply connected (universal) cover, with the lifted group structure.
+> - The sign of [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]], 2, is the endpoint of the lift: a representation of $SU(2)$ assigns $\pm\mathbb 1$ to the two classes of loops in $SO(3)$, and $D(-\mathbb 1) = (-1)^{2j}$ says which assignment.
+> - Used next: why projective representations of $SO(3)$ carry exactly a sign ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-11|Theorem §CB.20.11]]); the same topology for $SO^+(1,3)$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^rem-cb-10-3|Remark: The same pattern for the Lorentz group]]).
+
+^der-cb-10-11
+
+*Uses:* [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-2|Theorem §CB.2.2]], [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-3|Theorem §CB.2.3]], [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-4|Theorem §CB.2.4]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-20|Theorem §CB.3.20]], [[§31 Covering Spaces#^def-31-2|590 Def. §31.2]], [[§37 The Fundamental Group of Sⁿ#^thm-37-3|590 Thm. §37.3]], [[§38 Fundamental Group of Some Surfaces#^thm-38-3|590 Thm. §38.3]], [[§32 Lifting and the Fundamental Group of the Circle#^thm-32-4|590 Thm. §32.4]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590, Bijection from compact to Hausdorff]]
+
+> [!remark] Remark: The ball pictures
+> ![[ph-qft-c3-1-1.svg]]
+> *The group spaces as balls, adapted from the user's 513 notes and Yu Figs. 3.3–3.5. (a) A rotation by $\theta \in [0, \pi]$ about $\hat n$ is the point $\theta\hat n$ of a ball of radius $\pi$; a loop inside it shrinks to $\mathbb 1$. (b) A rotation by $\pi$ about $\hat n$ equals the one about $-\hat n$, so antipodal boundary points are one element; the rotations about $z$ from $0$ to $2\pi$ leave through $P$ and re-enter at $-P$. Under deformation the two boundary points move only as an antipodal pair and can never meet, so the loop cannot be shrunk. (c) $SU(2)$ is a ball of radius $2\pi$ whose whole boundary sphere is the single element $-\mathbb 1$; the same rotations lift to a path from $\mathbb 1$ to $-\mathbb 1$, which closes only at $4\pi$, and that doubled loop shrinks (Yu Fig. 3.8 shows the deformation).*
+>
+> The ball with antipodal boundary points glued is the upper hemisphere of $S^3$ with antipodal equator points glued, the same space as $\mathbb{RP}^3$; the picture argument "jump points move in pairs" is the lifting argument of Derivation §CB.10.11, step 3, drawn instead of stated ([[Real and complex projective spaces]], [[Spheres Sⁿ]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.2 (Figure "so3su2"; Remark "SO(3) ≅ ℝP³", citing Lee, Ex. 21.14) · Yu §3.2, Figs. 3.3–3.5; §3.3.1, Fig. 3.8 · the user's pre-course notes, §2.2*
+
+^rem-cb-10-2
+
+> [!remark] Remark: The same pattern for the Lorentz group
+> Every proper orthochronous Lorentz transformation is a boost times a rotation ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|Theorem §CB.3.13]]; the course's version: [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]]), and the boosts form a contractible $\mathbb R^3$ (rapidity vectors). So the non-contractible loops of $SO^+(1,3)$ are those of its rotation subgroup: $SO^+(1,3)$ is doubly connected, its simply connected cover is $SL(2, \mathbb C)$ ([[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|Theorem §CB.17.9]]), and the half-integer representations $(j_+, j_-)$ with $2(j_+ + j_-)$ odd are two-valued representations of $SO^+(1,3)$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|Theorem §CB.18.8]]); Dirac spinors are the first example. What does *not* carry over is unitarity: the cover is not compact, and its finite-dimensional representations are not unitary ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-15|Theorem §CB.18.15]]), so the unitary representations on states must be infinite-dimensional ([[§C3.6★ Particle States and the Little Group|§C3.6★]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.2 (end of Derivation "Why the sign appears")*
+
+^rem-cb-10-3
+
+The same polar decomposition for $SL(2, \mathbb C)$, which the Lorentz sections use (from [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover|§CB.17]] on; stated here because the Clebsch–Gordan series below uses its connectedness):
+
+> [!theorem] Theorem §CB.10.12: SL(2, C) Is Connected and Simply Connected
+> Every $\lambda \in SL(2, \mathbb C)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|Def. §CB.1.2]]) is uniquely $\lambda = e^{h}U$ with $U \in SU(2)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]) and $h$ traceless Hermitian, $h = -\frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ for a unique $\boldsymbol\eta \in \mathbb R^3$, and $\lambda \mapsto (\boldsymbol\eta, U)$ is a homeomorphism $SL(2, \mathbb C) \cong \mathbb R^3\times S^3$. Explicitly, $e^h = (\lambda\lambda^\dagger + \mathbb 1)/\sqrt{\operatorname{tr}(\lambda\lambda^\dagger) + 2}$. Hence $SL(2, \mathbb C)$ is path-connected and simply connected ([[§29 The Fundamental Group#^def-29-3|590 Def. §29.3]]).
+>
+> *Source: Yu Exercise 3.7(d), eq. (3.265) · the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The double cover made explicit", part (d)) · the continuity of the inverse map by the explicit formulas of step 5, written here*
+
+^thm-cb-10-12
+
+> [!derivation]- Derivation
+> **1. The positive part.** $\lambda\lambda^\dagger$ is Hermitian and positive definite: $v^\dagger\lambda\lambda^\dagger v = |\lambda^\dagger v|^2 > 0$ for $v \ne 0$, since $\lambda$ is invertible. By the spectral theorem it is $W\operatorname{diag}(p_1, p_2)W^\dagger$ with $W$ unitary and $p_k > 0$. Set $h = \frac12W\operatorname{diag}(\ln p_1, \ln p_2)W^\dagger$, Hermitian, so that $e^{2h} = \lambda\lambda^\dagger$ ($e^{WDW^\dagger} = We^DW^\dagger$ term by term). It is the unique Hermitian $h$ with $e^{2h} = \lambda\lambda^\dagger$: $e^{2h}$ and $h$ have the same eigenvectors, and $\ln$ is injective on $(0, \infty)$; equivalently $e^h$ is the unique positive square root of $\lambda\lambda^\dagger$ ([[§25 Positive Operators#^ladr-7-39|LADR 7.39]]).
+>
+> **2. The unitary part.** Put $U = e^{-h}\lambda$. Then $UU^\dagger = e^{-h}\lambda\lambda^\dagger e^{-h} = e^{-h}e^{2h}e^{-h} = \mathbb 1$, so $U$ is unitary and $\lambda = e^hU$: the polar decomposition ([[§28 Consequences of Singular Value Decomposition#^ladr-7-93|LADR 7.93]], here with the positive factor on the left).
+>
+> **3. Determinants.** $1 = \det\lambda = \det e^h\det U = e^{\operatorname{tr}h}\det U$. Here $e^{\operatorname{tr}h} > 0$ ($h$ Hermitian has real trace) and $|\det U| = 1$; a positive number times a unit-modulus number equals $1$ only if the positive number is $1$ and the phase is $1$. So $\operatorname{tr}h = 0$ and $\det U = 1$: $U \in SU(2)$, and $h$ is traceless Hermitian, $h = \mathbf a\cdot\boldsymbol\sigma$ with $\mathbf a$ real ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-22|Theorem §CB.0.22]], part 4); write $\mathbf a = -\frac12\boldsymbol\eta$.
+>
+> **4. Uniqueness.** If $\lambda = e^{h'}U'$ is another such decomposition, then $\lambda\lambda^\dagger = e^{h'}U'U'^\dagger e^{h'} = e^{2h'}$, so $h' = h$ by step 1, and $U' = e^{-h}\lambda = U$.
+>
+> **5. Homeomorphism.** The map $(\boldsymbol\eta, U) \mapsto e^{-\boldsymbol\eta\cdot\boldsymbol\sigma/2}U$ is continuous (products and the exponential series, [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], 1), and by steps 1–4 it is a bijection $\mathbb R^3\times SU(2) \to SL(2, \mathbb C)$. Its inverse $\lambda \mapsto (\boldsymbol\eta, U)$ is continuous, by explicit formulas for $e^h$, $U$ and $\boldsymbol\eta$ in terms of $\lambda$:
+>
+> *(a) $e^h$.* $P = \lambda\lambda^\dagger$ is positive definite with $\det P = |\det\lambda|^2 = 1$, and $S = e^h$ is its positive square root (step 1), with $\det S = e^{\operatorname{tr}h} = 1$ (step 3) and $t \equiv \operatorname{tr}S > 0$ (the eigenvalues of $S$ are positive). The characteristic polynomial of a $2\times2$ matrix $S$ is $z^2 - (\operatorname{tr}S)\,z + \det S$, so by the Cayley–Hamilton theorem ([[§37 Determinants#^ladr-9-64|LADR Thm. 9.64]]; directly: for $S = \begin{pmatrix} a & b \\ c & d\end{pmatrix}$, $S^2 - (a + d)S = (bc - ad)\,\mathbb 1$)
+>
+> $$
+> S^2 - t\,S + \mathbb 1 = 0, \qquad\text{i.e.}\qquad P + \mathbb 1 = t\,S .
+> $$
+>
+> Taking the trace, $\operatorname{tr}P + 2 = t^2$, and $t > 0$ selects the positive root. Hence
+>
+> $$
+> e^h = \frac{\lambda\lambda^\dagger + \mathbb 1}{\sqrt{\operatorname{tr}(\lambda\lambda^\dagger) + 2}} ,
+> $$
+>
+> whose entries are continuous functions of the entries of $\lambda$ (the radicand is positive, $\operatorname{tr}(\lambda\lambda^\dagger) > 0$).
+>
+> *(b) $U$.* The same equation, written $S\,(t\,\mathbb 1 - S) = \mathbb 1$, gives $e^{-h} = S^{-1} = t\,\mathbb 1 - S$, continuous in $\lambda$ by (a). So $U = e^{-h}\lambda$ is continuous in $\lambda$.
+>
+> *(c) $\boldsymbol\eta$.* For $\boldsymbol\eta \ne 0$ write $\boldsymbol\eta = |\boldsymbol\eta|\,\hat{\boldsymbol\eta}$. Since $(\hat{\boldsymbol\eta}\cdot\boldsymbol\sigma)^2 = \mathbb 1$ (Theorem §CB.0.22, 3), the exponential series of $h = -\frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ splits into its even and odd powers,
+>
+> $$
+> e^h = \cosh\frac{|\boldsymbol\eta|}2\,\mathbb 1 - \sinh\frac{|\boldsymbol\eta|}2\,\hat{\boldsymbol\eta}\cdot\boldsymbol\sigma \qquad (e^h = \mathbb 1 \text{ for } \boldsymbol\eta = 0) .
+> $$
+>
+> With $\operatorname{tr}\sigma^k = 0$ and $\operatorname{tr}(\sigma^k\sigma^l) = 2\delta^{kl}$ (Theorem §CB.0.22, 4–5), the numbers $a_k \equiv \frac12\operatorname{tr}(\sigma^ke^h) = -\sinh\frac{|\boldsymbol\eta|}2\,\hat\eta_k$ are continuous functions of $\lambda$ by (a) ($\mathbf a = 0$ for $\boldsymbol\eta = 0$). Then $|\mathbf a| = \sinh\frac{|\boldsymbol\eta|}2$, so $|\boldsymbol\eta| = 2\operatorname{arsinh}|\mathbf a|$ and
+>
+> $$
+> \boldsymbol\eta = -2\,\frac{\operatorname{arsinh}|\mathbf a|}{|\mathbf a|}\,\mathbf a \quad (\mathbf a \ne 0), \qquad \boldsymbol\eta = 0 \quad (\mathbf a = 0) .
+> $$
+>
+> The function $r \mapsto \operatorname{arsinh}(r)/r$ for $r > 0$, with the value $1$ at $r = 0$, is continuous on $[0, \infty)$ ($\operatorname{arsinh}$ is differentiable at $0$ with $\operatorname{arsinh}0 = 0$ and derivative $1$), so $\boldsymbol\eta$ is a continuous function of $\mathbf a$, hence of $\lambda$.
+>
+> So the bijection is a homeomorphism $\mathbb R^3\times SU(2) \cong SL(2, \mathbb C)$. $SU(2)$ is homeomorphic to $S^3$ ([[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-2|Theorem §CB.2.2]]; [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^der-cb-10-11|Derivation §CB.10.11]], step 1).
+>
+> **6. Topology.** $\mathbb R^3$ is convex, so path-connected with every loop contractible (straight-line homotopy); $S^3$ is path-connected and simply connected ([[§37 The Fundamental Group of Sⁿ#^thm-37-3|590 Thm. §37.3]]). A product of path-connected spaces is path-connected, and $\pi_1(\mathbb R^3\times S^3) \cong \pi_1(\mathbb R^3)\times\pi_1(S^3) = 1$ ([[§29 The Fundamental Group#^thm-29-7|590 Thm. §29.7]]).
+>
+> **What the derivation shows**
+> - $SL(2, \mathbb C)$ is "rotations times boosts": $U$ will map to a rotation and $e^h$ to a pure boost, the $2\times2$ counterpart of $\Lambda = B(u)R$ ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|Theorem §CB.3.13]]).
+> - The noncompact factor $\mathbb R^3$ is topologically trivial; all the topology sits in the compact factor, and for $SL(2, \mathbb C)$ that factor is the simply connected $S^3$.
+> - ⚑ By-product (in the statement): for $2\times2$ matrices the polar factors are algebraic in $\lambda$, $e^h = (\lambda\lambda^\dagger + \mathbb 1)/\sqrt{\operatorname{tr}(\lambda\lambda^\dagger) + 2}$ and $e^{-h} = \sqrt{\operatorname{tr}(\lambda\lambda^\dagger) + 2}\;\mathbb 1 - e^h$; no matrix logarithm and no functional calculus is needed for the continuity of the decomposition.
+> - Used next: connectedness puts the image of the covering map in $SO^+(1,3)$ (Theorem §CB.17.4); simple connectivity makes it the universal cover (Theorem §CB.17.9).
+
+^der-cb-10-12
+
+*Uses:* [[§25 Positive Operators#^ladr-7-39|LADR 7.39]], [[§28 Consequences of Singular Value Decomposition#^ladr-7-93|LADR 7.93]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-22|Theorem §CB.0.22]], [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-2|Theorem §CB.2.2]], [[§37 The Fundamental Group of Sⁿ#^thm-37-3|590 Thm. §37.3]], [[§29 The Fundamental Group#^thm-29-7|590 Thm. §29.7]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], [[§37 Determinants#^ladr-9-64|LADR Thm. 9.64]]
+
+## Spin j as a symmetric power
+
+The course realizes spin $j$ on polynomials of degree $2j$, and integrates to SU(2) and SO(3) (the user's PHY 513 notes, Ch. 7 §7.2):
+
+> [!theorem] Theorem §CB.10.13: Integer and Half-Integer Spin: Integration to SU(2) and SO(3)
+> 1. For each $j$, $D^{(j)}$ is the algebra representation of a unique representation of $SU(2)$, realized on the homogeneous polynomials of degree $2j$ in $z = (z_1, z_2)$ by $(D(U)P)(z) = P(U^{\mathsf T}z)$; and $D^{(j)}(-\mathbb 1) = (-1)^{2j}\,\mathbb 1$.
+> 2. $D^{(j)}$ comes from a representation of $SO(3)$ if and only if $j$ is an integer. For half-integer $j$, $D^{(j)}(U)$ depends on $U$ and not only on the rotation $R(U)$: the rotation by $2\pi$ is represented by $-\mathbb 1$, a **two-valued representation** of $SO(3)$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-10|Def. §CB.10.10]]).
+> 3. Every finite-dimensional representation of $SU(2)$ is equivalent to a direct sum of $D^{(j)}$'s; every one of $SO(3)$, to such a sum with integer $j$ only.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.2 (Derivation "The representations of the rotation algebra", "Half-integer spin and the group") · Yu §3.2 (below Fig. 3.5: covering group, $n$-valued representations) · the user's pre-course notes, §2.3 ("Spin": $D^{(1/2)}[R_z(2\pi)] = -\mathbb 1$) · Hall, Thm. 16.30, Ex. 16.34, Prop. 17.10 · the user's Lorentz-representation review (2026-10-14), §4 (Principle "Different matrices, one group; images can be quotients": $D^{(j)}(-\mathbb 1) = (-1)^{2j}$; its integer case, kernel $\{\pm\mathbb 1\}$ and image $SO(3)$, holds for $j \ge 1$, while $j = 0$ has kernel $SU(2)$ and image $\{\mathbb 1\}$)*
+
+^thm-cb-10-13
+
+> [!derivation]- Derivation
+> **1. The space.** $V_j$ = homogeneous polynomials of degree $2j$ in $z_1, z_2$, with basis $e_m = z_1^{\,j+m}z_2^{\,j-m}$, $m = j, j-1, \dots, -j$: $\dim V_j = 2j + 1$.
+>
+> **2. A group representation.** $U^{\mathsf T}z$ is linear in $z$, so $P(U^{\mathsf T}z)$ is again homogeneous of degree $2j$. Composition: $(D(U_1)D(U_2)P)(z) = (D(U_2)P)(U_1^{\mathsf T}z) = P(U_2^{\mathsf T}U_1^{\mathsf T}z) = P((U_1U_2)^{\mathsf T}z) = (D(U_1U_2)P)(z)$; $D(\mathbb 1) = \mathbb 1$; $D$ is continuous (polynomial in the entries of $U$). (The transpose is what makes the order come out right; $P(Uz)$ would reverse it.)
+>
+> **3. Its generators.** For $X \in \mathfrak{su}(2)$, by the chain rule and $(e^{sX})^{\mathsf T} = e^{sX^{\mathsf T}}$,
+>
+> $$
+> d(X)P = \frac{d}{ds}P\bigl(e^{sX^{\mathsf T}}z\bigr)\Big|_{s=0} = \sum_a (X^{\mathsf T}z)_a\,\frac{\partial P}{\partial z_a} = \sum_{a,b}X_{ba}\,z_b\,\frac{\partial P}{\partial z_a} .
+> $$
+>
+> This is complex-linear in $X$, so for every complex $2\times2$ matrix $T$ the physicist's generator ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-7|Def. §CB.3.7]], extended by [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification#^def-cb-4-7|Def. §CB.4.7]]) is $D(T) = i\,d(-iT) = \sum_{a,b}T_{ba}z_b\,\partial_a$.
+>
+> **4. The ladder.** $\tau^3 = \operatorname{diag}(\frac12, -\frac12)$ gives $D(\tau^3) = \frac12(z_1\partial_1 - z_2\partial_2)$, and $D(\tau^3)e_m = \frac12[(j+m) - (j-m)]e_m = m\,e_m$. $\tau^+ = \tau^1 + i\tau^2 = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ has only $T_{12} = 1$, so $D(\tau^+) = z_1\partial_2$ and $D(\tau^+)e_m = (j - m)\,e_{m+1}$; $\tau^- = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$ gives $D(\tau^-) = z_2\partial_1$, $D(\tau^-)e_m = (j + m)\,e_{m-1}$.
+>
+> **5. It is $D^{(j)}$.** $e_j = z_1^{2j}$ has $D(\tau^+)e_j = 0$ and $D(\tau^3)e_j = j\,e_j$: a highest-weight vector of weight $j$. By [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], 1, the vectors $(z_2\partial_1)^kz_1^{2j} = \frac{(2j)!}{(2j-k)!}z_1^{2j-k}z_2^{\,k}$, $k = 0, \dots, 2j$, span an irreducible subspace; they are nonzero multiples of all basis vectors, so $V_j$ itself is irreducible with highest weight $j$, and its algebra representation is equivalent to $D^{(j)}$ (Theorem §CB.10.3, 2). Uniqueness: $SU(2)$ is connected, so a group representation is fixed by its algebra representation up to the same equivalence ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-10|Theorem §CB.3.10]], 2).
+>
+> **6. The element $-\mathbb 1$.** $(D(-\mathbb 1)P)(z) = P(-z) = (-1)^{2j}P(z)$ for $P$ homogeneous of degree $2j$. Check through the exponential: $-\mathbb 1 = e^{-2\pi i\tau^3}$ ([[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-2|Theorem §CB.2.2]], 4), so $D(-\mathbb 1) = e^{-2\pi iD(\tau^3)}$, which multiplies $e_m$ by $e^{-2\pi im} = (-1)^{2j}$, since $m - j$ is an integer. ⚑ By-product: $-\mathbb 1$ commutes with all of $SU(2)$, so on any irreducible representation it must be a number (Schur, [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-4|Theorem §CB.7.4]]) whose square is $D(\mathbb 1) = \mathbb 1$; the number is $(-1)^{2j}$, the parity of the number of spinor slots → [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^rem-cb-10-4|Remark: Spin j is 2j symmetrized spin-½ slots]].
+>
+> **7. Integer $j$ descends to $SO(3)$.** If $D(-\mathbb 1) = \mathbb 1$, define $\bar D(R(U)) = D(U)$. This is well defined because $R(U) = R(U')$ iff $U' = \pm U$ ([[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-3|Theorem §CB.2.3]], 3) and $D(-U) = D(-\mathbb 1)D(U) = D(U)$; it is a homomorphism, $\bar D(R(U_1)R(U_2)) = \bar D(R(U_1U_2)) = D(U_1U_2) = D(U_1)D(U_2)$; and it is continuous because $R$ is a quotient map, $SO(3) \cong SU(2)/\{\pm\mathbb 1\}$. Its algebra representation is $D^{(j)}$ transported by the isomorphism of Theorem §CB.2.4.
+>
+> **8. Half-integer $j$ does not.** Suppose $\bar D$ were a representation of $SO(3)$ with algebra representation $D^{(j)}$, $j$ half-integer. Then $\bar D\circ R$ is a representation of $SU(2)$ with the same algebra representation, so (Theorem §CB.3.10, 1, applied to $\bar D\circ R$) $\bar D(R(e^{X})) = e^{d(X)}$ for every $X$. Take $X = -2\pi i\tau^3$: the left side is $\bar D(R(-\mathbb 1)) = \bar D(\mathbb 1) = \mathbb 1$; the right side is $(-1)^{2j}\mathbb 1 = -\mathbb 1$ by step 6. Contradiction. ⚑ By-product: the path $\theta \mapsto e^{-i\theta\tau^3}$, $0 \le \theta \le 2\pi$, runs from $\mathbb 1$ to $-\mathbb 1$ in $SU(2)$ while its image $R_z(\theta)$ returns to $\mathbb 1$: a closed loop in $SO(3)$ whose lift is open. The obstruction is topological → [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-11|Theorem §CB.10.11]].
+>
+> **9. Part 3.** A finite-dimensional representation of $SU(2)$ is an orthogonal sum of irreducible ones (Theorem §CB.7.16, 2). Each irreducible piece has an irreducible algebra representation (Theorem §CB.3.10, 2), equivalent to some $D^{(j)}$ (Theorem §CB.10.3, 2), so the piece is equivalent to the representation of step 5 (Theorem §CB.3.10, 2 again). For $SO(3)$, pull back along $R$ (step 7): the pieces have $D(-\mathbb 1) = \mathbb 1$, so integer $j$.
+>
+> **What the derivation shows**
+> - Every irreducible representation of the algebra integrates to $SU(2)$, explicitly; in general this is guaranteed by simple connectivity (Hall Thm. 16.30), which $SU(2)$ has and $SO(3)$ lacks.
+> - Spin $j$ lives on symmetric polynomials of degree $2j$ in two spinor variables: $D^{(j)}$ is the symmetrized product of $2j$ spin-$\frac12$ representations → [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^rem-cb-10-4|Remark: Spin j is 2j symmetrized spin-½ slots]].
+> - The $(2j+1)\times(2j+1)$ matrices $D^{(j)}(U)$ in the basis $|j, m\rangle$ are the Wigner functions of Quantum Mechanics ([[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^def-c5-3-1|QM Def. §C5.3.1]]), and part 2 is the representation-theoretic form of [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-4|QM Theorem §C5.3.4]].
+> - Used next: projective representations ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-11|Theorem §CB.20.11]]); the sign $(-1)^{2(j_+ + j_-)}$ of a $2\pi$ rotation in a Lorentz representation ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|Theorem §CB.18.8]]).
+
+^der-cb-10-13
+
+*Uses:* [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-4|Theorem §CB.2.4]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-10|Theorem §CB.3.10]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-4|Theorem §CB.7.4]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-16|Theorem §CB.7.16]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-2|Theorem §CB.2.2]], [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-3|Theorem §CB.2.3]]
+
+> [!remark] Remark: Spin j is 2j symmetrized spin-½ slots
+> A homogeneous polynomial of degree $2j$ in $(z_1, z_2)$ is the same thing as a totally symmetric tensor $\psi_{a_1\cdots a_{2j}}$ with $2j$ spinor indices, $P(z) = \psi_{a_1\cdots a_{2j}}z_{a_1}\cdots z_{a_{2j}}$, and $D(U)$ acts by one factor $U$ on each index ($U^{\mathsf T}z$ contracted into each slot). So spin $j$ is the symmetric part of $\frac12\otimes\cdots\otimes\frac12$ ($2j$ factors); the antisymmetric combinations of two slots, built with $\varepsilon_{ab}$, are spin $0$ and are what the Clebsch–Gordan series removes ([[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-2|Theorem §CB.11.2]], below; the course's version: [[§C7.1 Addition of Angular Momenta and Clebsch–Gordan Coefficients#^thm-c7-1-2|QM Theorem §C7.1.2]]). The sign $(-1)^{2j}$ is $(-1)$ to the number of spinor slots. The Lorentz representation $(j_+, j_-)$ is the same construction with two kinds of spinor index, $2j_+$ symmetrized of one kind and $2j_-$ of the other ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-2|Def. §C5a.5.2]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-9|Theorem §CB.18.9]]; [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-3|Def. §CB.18.3]]).
+>
+> *Source: Derivation §CB.10.13, steps 1–6 (written here)*
+
+^rem-cb-10-4
+
+The polynomial model of spin $j$ works for every invertible $2\times2$ matrix, not only for $SU(2)$; the next theorem, and the Lorentz sections ([[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover|§CB.17]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.18]]), use it for $SL(2, \mathbb C)$, together with the automorphism $\lambda \mapsto (\lambda^\dagger)^{-1}$ (used in step 1 of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-18-9|Derivation §CB.18.9]]):
+
+> [!theorem] Lemma §CB.10.14: Polynomials in Two Variables Carry a Representation of GL(2, ℂ)
+> 1. For $j \in \frac12\mathbb Z_{\ge0}$ let $V_j$ be the homogeneous polynomials of degree $2j$ in $z = (z_1, z_2)$. For invertible $M \in GL(2, \mathbb C)$, $\bigl(D^{(j)}(M)P\bigr)(z) = P(M^{\mathsf T}z)$ defines a representation ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-6|Def. §CB.3.6]]) of $GL(2, \mathbb C)$ on $V_j$, whose matrix entries are polynomials in the entries of $M$; restricted to $SU(2)$ it is the representation of [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]], 1, and restricted to $SL(2, \mathbb C)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|Def. §CB.1.2]]) a representation of $SL(2, \mathbb C)$.
+> 2. $\theta(\lambda) = (\lambda^\dagger)^{-1}$ is a continuous homomorphism of $GL(2, \mathbb C)$ to itself that maps $SL(2, \mathbb C)$ onto $SL(2, \mathbb C)$.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.2 (spin $j$ on polynomials), Ch. 8 §8.2 · continuity and $\det\theta(\lambda) = \overline{\det\lambda}^{-1}$ written here*
+
+^lem-cb-10-14
+
+> [!proof]- Proof
+> **1. A representation.** For any invertible $M_1, M_2$: $(D^{(j)}(M_1)D^{(j)}(M_2)P)(z) = (D^{(j)}(M_2)P)(M_1^{\mathsf T}z) = P(M_2^{\mathsf T}M_1^{\mathsf T}z) = P((M_1M_2)^{\mathsf T}z)$, so $D^{(j)}(M_1M_2) = D^{(j)}(M_1)D^{(j)}(M_2)$; $D^{(j)}(M)P$ is again homogeneous of degree $2j$. $D^{(j)}(\mathbb 1) = \mathbb 1$. In the monomial basis $z_1^az_2^{2j-a}$, the coefficients of $P(M^{\mathsf T}z)$ are polynomials in the entries of $M$, so $D^{(j)}$ is continuous; on $SU(2)$ it is the formula of Theorem §CB.10.13, 1.
+>
+> **2. The map θ.** The map $\lambda \mapsto (\lambda^\dagger)^{-1}$ is a homomorphism: $((\lambda_1\lambda_2)^\dagger)^{-1} = (\lambda_2^\dagger\lambda_1^\dagger)^{-1} = (\lambda_1^\dagger)^{-1}(\lambda_2^\dagger)^{-1}$. It is continuous (adjoint and inversion are), and $\det\theta(\lambda) = 1/\overline{\det\lambda}$, which is $1$ when $\det\lambda = 1$; $\theta(\theta(\lambda)) = \lambda$, so $\theta$ maps $SL(2, \mathbb C)$ onto itself.
+
+^pf-cb-10-14
+
+*Uses:* [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-6|Def. §CB.3.6]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|Def. §CB.1.2]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]]
+
+> [!theorem] Theorem §CB.10.15: Spin j Is the Symmetric Power Sym²ʲℂ²
+> For $j \in \frac12\mathbb Z_{\ge0}$, the restriction of $D^{\otimes2j}$ ($D$ the defining representation of $SU(2)$ or $SL(2, \mathbb C)$ on $\mathbb C^2$, [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-1|Def. §CB.8.1]]) to $\operatorname{Sym}^{2j}\mathbb C^2$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-11|Def. §CB.8.11]]) is irreducible and equivalent to $V_j$. The identification with homogeneous polynomials of degree $2j$, $P(z) = \psi_{a_1\cdots a_{2j}}z_{a_1}\cdots z_{a_{2j}}$, is an equivalence with the polynomial realization of [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]]; and $-\mathbb 1$ acts as $(-1)^{2j}$.
+>
+> *Source: P. Woit, Quantum Theory, Groups and Representations, §8.2 (the spin-$\frac n2$ representation on homogeneous polynomials of degree $n$ in $z_1, z_2$), §9.6, eq. (9.4) (symmetric tensors correspond to polynomials, $v_j^n \leftrightarrow v_j\otimes\cdots\otimes v_j$) and §9.4.3 ($V^N$ inside $(V^1)^{\otimes N}$ "giving an alternative to the construction using homogeneous polynomials") · irreducibility and the identification with $V_j$: [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]], Derivation, steps 1–6 (from the user's PHY 513 notes, Ch. 7 §7.2) · the slot picture: [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^rem-cb-10-4|§CB.10, Remark: Spin j is 2j symmetrized spin-½ slots]]*
+
+^thm-cb-10-15
+
+> [!proof]- Proof
+> *Woit's two descriptions of spin $j$ — homogeneous polynomials (§8.2) and the symmetric part of $2j$ spinor slots (§9.4.3, §9.6) — identified explicitly; irreducibility is then the polynomial result of Theorem §CB.10.13. Steps 1–2 are stated for $\mathbb C^n$ and degree $k$; they are reused for $\mathbb C^3$ in Theorem §CB.11.4.*
+>
+> **1. Symmetric tensors are polynomials (Woit (9.4)).** For $\psi \in \operatorname{Sym}^k\mathbb C^n$ put $\Phi(\psi)(z) = \sum_{a_1, \dots, a_k}\psi_{a_1\cdots a_k}z_{a_1}\cdots z_{a_k}$, a homogeneous polynomial of degree $k$; $\Phi$ is linear. Group the index tuples by their type $\alpha = (\alpha_1, \dots, \alpha_n)$, $\alpha_i$ = the number of entries equal to $i$, $|\alpha| = k$. All tuples of type $\alpha$ give the monomial $z^\alpha = z_1^{\alpha_1}\cdots z_n^{\alpha_n}$ and, $\psi$ being symmetric ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-11|Def. §CB.8.11]]), the same component $\psi_\alpha$; there are $\frac{k!}{\alpha_1!\cdots\alpha_n!}$ of them. So
+>
+> $$
+> \Phi(\psi)(z) = \sum_{|\alpha| = k}\frac{k!}{\alpha!}\,\psi_\alpha\,z^\alpha, \qquad \alpha! = \alpha_1!\cdots\alpha_n! .
+> $$
+>
+> The monomials are linearly independent, so $\Phi(\psi) = 0$ forces every $\psi_\alpha = 0$, i.e. $\psi = 0$ (a symmetric tensor is determined by one component per type). Every monomial is reached: $z^\alpha = \Phi(\psi)$ for the symmetric $\psi$ with components $\frac{\alpha!}{k!}$ on the tuples of type $\alpha$ and $0$ elsewhere. $\Phi$ is a linear bijection onto the homogeneous polynomials of degree $k$ (both of dimension $\binom{n+k-1}k$, [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-13|Theorem §CB.8.13]], 1).
+>
+> **2. Φ is equivariant.** For a matrix $U$, $D^{\otimes k}(U)$ acts on components by $(U^{\otimes k}\psi)_{a_1\cdots a_k} = U_{a_1b_1}\cdots U_{a_kb_k}\psi_{b_1\cdots b_k}$ (one factor per slot, [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-1|Def. §CB.8.1]]). Then, summing first over the $a$'s,
+>
+> $$
+> \Phi(U^{\otimes k}\psi)(z) = \psi_{b_1\cdots b_k}\bigl(U_{a_1b_1}z_{a_1}\bigr)\cdots\bigl(U_{a_kb_k}z_{a_k}\bigr) = \psi_{b_1\cdots b_k}(U^{\mathsf T}z)_{b_1}\cdots(U^{\mathsf T}z)_{b_k} = \Phi(\psi)(U^{\mathsf T}z) .
+> $$
+>
+> The right side is the polynomial action $(D(U)P)(z) = P(U^{\mathsf T}z)$ of [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]]. And $\operatorname{Sym}^k\mathbb C^n$ is invariant under $D^{\otimes k}$ (Theorem §CB.8.13, 1), so $\Phi$ is an equivalence of representations.
+>
+> **3. n = 2, k = 2j: irreducible and equal to $V_j$.** By Theorem §CB.10.13, Derivation, steps 1–5, the polynomial representation on degree-$2j$ polynomials is irreducible under $SU(2)$ and its algebra representation is $D^{(j)} = V_j$. By step 2 the same holds for $\operatorname{Sym}^{2j}\mathbb C^2$. For $SL(2, \mathbb C)$ the formula $P \mapsto P(A^{\mathsf T}z)$ is the same ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^lem-cb-10-14|Lemma §CB.10.14]], 1); a subspace invariant under $SL(2, \mathbb C)$ is invariant under its subgroup $SU(2)$, so it is irreducible too, and its differential $X \mapsto \sum_{a,b}X_{ba}z_b\partial_a$ (Derivation §CB.10.13, step 3, valid for every complex $2\times2$ matrix) is complex-linear in $X \in \mathfrak{sl}(2, \mathbb C)$, the complex-linear extension of the $\mathfrak{su}(2)$-representation $V_j$.
+>
+> **4. Second route: weights (Theorem §CB.10.7).** $J^3$ acts by $\frac12(z_1\partial_1 - z_2\partial_2)$ (Derivation §CB.10.13, step 4), so $z_1^{a}z_2^{b}$, $a + b = 2j$, has weight $\frac12(a - b) = a - j$. As $a$ runs over $0, \dots, 2j$ each $m \in \{-j, \dots, j\}$ occurs once: $n_m = 1$ for $|m| \le j$, $m - j \in \mathbb Z$, and $0$ otherwise. By [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-7|Theorem §CB.10.7]] the number of copies of $V_k$ is $n_k - n_{k+1}$, which is $1$ for $k = j$ and $0$ for every other $k$: the representation is $V_j$.
+>
+> **5. The element −1.** $D^{\otimes2j}(-\mathbb 1) = (-\mathbb 1)^{\otimes2j} = (-1)^{2j}\mathbb 1$: each of the $2j$ slots contributes a factor $-1$ (Derivation §CB.10.13, step 6, in polynomial form: $P(-z) = (-1)^{2j}P(z)$).
+>
+> **What the proof shows**
+> - Spin $j$ is literally $2j$ spin-½ slots, symmetrized: the index picture of [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^rem-cb-10-4|§CB.10, Remark: Spin j is 2j symmetrized spin-½ slots]] is now a theorem, with $\Phi$ the dictionary between the tensor and the polynomial pictures.
+> - ⚑ By-product: the sign $(-1)^{2j}$ of a $2\pi$ rotation counts spinor slots; integer spin has an even number of them, which is why it descends to $SO(3)$ ([[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-3|Theorem §CB.11.3]]).
+> - The same construction for $SL(2, \mathbb C)$ with two kinds of slot gives $(j_+, j_-) \cong \operatorname{Sym}^{2j_+}\mathbb C^2\otimes\operatorname{Sym}^{2j_-}\bar{\mathbb C}^2$ ([[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-9|Theorem §CB.18.9]] realizes the second factor with the matrices $(\lambda^\dagger)^{-1}$, equivalent to $\bar\lambda$; dotted indices, [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-18|Theorem §CB.8.18]]).
+
+^pf-cb-10-15
+
+*Uses:* [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-1|Def. §CB.8.1]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-11|Def. §CB.8.11]], [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-13|Theorem §CB.8.13]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^lem-cb-10-14|Lemma §CB.10.14]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-7|Theorem §CB.10.7]]
+
+> [!remark]- Connections
+> - The section continues in [[§CB.11 Clebsch–Gordan, Descent and Integer Spin|§CB.11]]: the Clebsch–Gordan series, the descent lemma and integer spin built from vectors. The descent lemma ([[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-3|Theorem §CB.11.3]]) is the general form of step 7 of Derivation §CB.10.13, which this section carries out directly for $SU(2) \to SO(3)$.
+> - **Used in**: Definition §CB.10.1 — [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-2|Def. §CB.10.2]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-6|Theorem §CB.10.6]]; Definition §CB.10.2 — [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-6|Theorem §CB.10.6]]; Theorem §CB.10.3 — [[§C1a.7 Infinitesimal Lorentz Transformations and Generators|§C1a.7]] (cited in [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^rem-c1a-7-3|§C1a.7, Remark: Why generators]]; Mathematical background), [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (restated in physics form as [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-1|Theorem §C3.1.1]]; cited in [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^rem-c3-1-4|§C3.1, Remark: "One representation for each dimension" needs two qualifiers]]; Mathematical background; Connections), [[§C3.6★ Particle States and the Little Group|§C3.6★]] (physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-1|Theorem §C3.1.1]]; Mathematical background; Connections), [[§C3.7★ Massless Particles and Helicity|§C3.7★]] (physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-1|Theorem §C3.1.1]]; Mathematical background), [[§C5.1 Rotations and the Angular-Momentum Commutation Relations|QM §C5.1]] (Connections), [[§B5.2 Orbital Angular Momentum and Spherical Harmonics|QM §B5.2]] (Connections), [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices|QM §C5.3]] (Connections), [[§C3.3 Primitive and Traceless Moments|EM §C3.3]] (cited in [[§C3.3 Primitive and Traceless Moments#^thm-c3-3-4|EM Theorem §C3.3.4]], [[§C3.3 Primitive and Traceless Moments#^der-c3-3-4|EM Derivation §C3.3.4]]), [[§15 The Minimal Polynomial|LADR §15]] (Connections), [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^rem-cb-10-1|§CB.10, Remark: Vⱼ is a representation space, not a set of eigenvalues]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-5|Theorem §CB.10.5]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-6|Theorem §CB.10.6]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-4|Theorem §CB.11.4]], [[§CB.14 Complex Clifford Algebras and Clifford Modules|§CB.14]] (Connections), [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-18-1|§CB.18, Remark: The objects called J, and what the labels refer to]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-3|Def. §CB.18.3]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-5|Theorem §CB.18.5]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-6|Theorem §CB.18.6]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-11|Theorem §CB.20.11]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-15|Theorem §CB.20.15]]; §CB.10, Caution: Phase conventions for the ladder operators — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (cited in [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-1|Theorem §C3.1.1]]; Mathematical background), [[Larsen PHY 513|Larsen PHY 513]]; Theorem §CB.10.6 — [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-7|Theorem §CB.10.7]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-2|Theorem §CB.11.2]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-18-1|§CB.18, Remark: The objects called J, and what the labels refer to]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-18-1|Def. §CB.18.1]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]]; Theorem §CB.10.7 — [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-15|Theorem §CB.10.15]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^lem-cb-11-1|Lemma §CB.11.1]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-2|Theorem §CB.11.2]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-4|Theorem §CB.19.4]]; Definition §CB.10.8 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (cited in [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-3|Theorem §C3.1.3]]; Mathematical background), [[§C3.3 How Fields Transform under the Lorentz Group|§C3.3]] (cited in [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]]; Mathematical background), [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (cited in [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]]; Mathematical background), [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]] (cited in [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]]; Mathematical background), [[§C5.1 Rotations and the Angular-Momentum Commutation Relations|QM §C5.1]] (Connections), [[§C8.1★ Symmetries, Conservation Laws and Degeneracies|QM §C8.1★]] (Connections), [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|Theorem §CB.18.8]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-9|Theorem §CB.18.9]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-11|Theorem §CB.18.11]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-7|Theorem §CB.20.7]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-9|Def. §CB.20.9]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-10|Theorem §CB.20.10]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-11|Theorem §CB.20.11]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries|§CB.20]] (recalled); Theorem §CB.10.11 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (restated in physics form as [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]]; Mathematical background), [[§C3.7★ Massless Particles and Helicity|§C3.7★]] (physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]]; Mathematical background; Connections), [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations|QM §C5.2]] (Connections), [[§48 SU(2) → SO(3)꞉ The Double Cover|591 §48]] (Connections), [[§32 Lifting and the Fundamental Group of the Circle|590 §32]] (Connections), [[§38 Fundamental Group of Some Surfaces|590 §38]] (Connections), [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-12|Theorem §CB.10.12]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-2|Theorem §CB.11.2]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-4|Theorem §CB.11.4]], [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-15|Theorem §CB.15.15]], [[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-16-3|Theorem §CB.16.3]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|Theorem §CB.17.9]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-6|Theorem §CB.18.6]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^cau-cb-18-1|§CB.18, Caution: SL(2,ℂ) is not SU(2) × SU(2)]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-10|Theorem §CB.20.10]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-11|Theorem §CB.20.11]]; §CB.10, Remark: The same pattern for the Lorentz group — [[§C1a.4 The Lorentz Group|§C1a.4]] (Mathematical background; Connections), [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (Mathematical background), [[§C3.3 How Fields Transform under the Lorentz Group|§C3.3]] (cited in [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]]; Mathematical background), [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (cited in [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]]; Mathematical background), [[§C3.7★ Massless Particles and Helicity|§C3.7★]] (cited in [[§C3.7★ Massless Particles and Helicity#^der-c3-7-6|Derivation §C3.7.6]]; Mathematical background), [[§B1.2 Lorentz Transformations and the Lorentz Group|REL §B1.2]] (Connections), [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|Theorem §CB.17.9]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|Theorem §CB.18.8]]; Theorem §CB.10.12 — [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]] (Mathematical background), [[§B1.2 Lorentz Transformations and the Lorentz Group|REL §B1.2]] (Connections), [[§25 Positive Operators|LADR §25]] (Connections), [[§28 Consequences of Singular Value Decomposition|LADR §28]] (Connections), [[§29 The Fundamental Group|590 §29]] (Connections), [[§37 The Fundamental Group of Sⁿ|590 §37]] (Connections), [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-2|Theorem §CB.11.2]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-4|Theorem §CB.17.4]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|Theorem §CB.17.9]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-2|Theorem §CB.18.2]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-9|Theorem §CB.18.9]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^cau-cb-18-1|§CB.18, Caution: SL(2,ℂ) is not SU(2) × SU(2)]], [[§CB.21★ The Poincaré Group and Induced Representations#^def-cb-21-4|Def. §CB.21.4]]; Theorem §CB.10.13 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (restated in physics form as [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]]; Mathematical background; Connections), [[§C3.6★ Particle States and the Little Group|§C3.6★]] (physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]]; Mathematical background), [[§C3.7★ Massless Particles and Helicity|§C3.7★]] (physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]]; Mathematical background), [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations|QM §C5.2]] (Connections), [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices|QM §C5.3]] (Connections), [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^lem-cb-10-14|Lemma §CB.10.14]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-15|Theorem §CB.10.15]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-4|Theorem §CB.11.4]], [[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-16-5|Theorem §CB.16.5]], [[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-16-6|Theorem §CB.16.6]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-8|Theorem §CB.18.8]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-9|Theorem §CB.18.9]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-11|Theorem §CB.20.11]]; §CB.10, Remark: Spin j is 2j symmetrized spin-½ slots — [[§C7.1 Addition of Angular Momenta and Clebsch–Gordan Coefficients|QM §C7.1]] (Connections), [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-15|Theorem §CB.10.15]]; Lemma §CB.10.14 — [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-15|Theorem §CB.10.15]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-7|Theorem §CB.17.7]], [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-13|Theorem §CB.17.13]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-9|Theorem §CB.18.9]]; Theorem §CB.10.15 — [[§C3.3 How Fields Transform under the Lorentz Group|§C3.3]] (cited in [[§C3.3 How Fields Transform under the Lorentz Group#^ex-c3-3-2|Example §C3.3.2]]; Mathematical background), [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-2|Theorem §CB.11.2]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin#^thm-cb-11-4|Theorem §CB.11.4]], [[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-16-6|Theorem §CB.16.6]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-10|Theorem §CB.18.10]], [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-16|Theorem §CB.18.16]], [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-15|Theorem §CB.19.15]].

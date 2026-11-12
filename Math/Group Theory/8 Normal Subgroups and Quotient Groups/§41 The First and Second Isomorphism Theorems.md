@@ -57,7 +57,7 @@ tags: [group-theory, math493]
 > - Used in 590 to present a group as $F/N$: [[§27 Free Groups and Presentations#^def-27-6|Group Presentation]].
 > - Set-level version: [[§22 Partitions and Equivalence Relations#^prop-22-5|250 Prop. §22.5]] (a surjection induces a bijection on the quotient set).
 > - Used in Quantum Mechanics: $SO(3) \cong SU(2)/\{\pm1\}$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|QM Theorem §C5.2.8]].
-> - Used in Quantum Field Theory: $SO^+(1,3) \cong SL(2, \mathbb C)/\{\pm1\}$ — [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9|QFT Theorem §CB.16.9]].
+> - Used in Quantum Field Theory: $SO^+(1,3) \cong SL(2, \mathbb C)/\{\pm1\}$ — [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|QFT Theorem §CB.17.9]].
 
 > [!theorem] Corollary §41.2: $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$
 > Let $G$ be finite and $\alpha: G \to H$ a homomorphism. Then $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$.

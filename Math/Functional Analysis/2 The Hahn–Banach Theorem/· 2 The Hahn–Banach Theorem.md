@@ -32,7 +32,7 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ ([[§3 Linear
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Zorn's Lemma|Theorem §6.2: Zorn's Lemma]]: 46 later results
-- [[Hahn–Banach Theorem|Theorem §5.3: Hahn–Banach]]: 40 later results
-- [[One-Step Extension Lemma|Lemma §6.1: One-Step Extension]]: 40 later results
-- [[§9 The Complex Hahn–Banach Theorem#^lem-9-1|Lemma §9.1: Consequences of Complex Homogeneity]]: 35 later results
+- [[Zorn's Lemma|Theorem §6.2: Zorn's Lemma]]: 50 later results
+- [[Hahn–Banach Theorem|Theorem §5.3: Hahn–Banach]]: 44 later results
+- [[One-Step Extension Lemma|Lemma §6.1: One-Step Extension]]: 44 later results
+- [[§9 The Complex Hahn–Banach Theorem#^lem-9-1|Lemma §9.1: Consequences of Complex Homogeneity]]: 39 later results

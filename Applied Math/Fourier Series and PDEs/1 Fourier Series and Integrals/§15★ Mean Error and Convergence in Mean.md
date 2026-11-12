@@ -227,7 +227,7 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 *(Not from the book; animation added, vault only.)* Reused from 556 (Functional Analysis), in complex form ($e_n = e^{inx}/\sqrt{2\pi}$ on $(0, 2\pi)$; $a = \pi$ here). The square wave ($1$ on $(0, \pi)$, $-1$ on $(\pi, 2\pi)$) and its partial sums $S_N$ for $N = 0, 1, 3, \ldots, 25$; right, the coefficient bars. The mean square error $\int(f - S_N)^2$ is the tail of Parseval's sum and falls to $0$ ($1.19$ at $N = 1$, $0.10$ at $N = 25$), although $S_N$ never converges uniformly: convergence in the mean.
 
 > [!remark]- Connections
-> - In Hilbert-space language this is the completeness relation for the trigonometric orthonormal basis, $\sum_n(f, e_n)e_n = f$ in norm: [[§47 The Completeness Relation#^thm-47-2|556 Thm. §47.2]], with the Fourier basis (there in complex form, $e^{in\theta}/\sqrt{2\pi}$ on $[0, 2\pi]$) as [[§47 The Completeness Relation#^ex-47-2|556 Ex. §47.2]].
+> - In Hilbert-space language this is the completeness relation for the trigonometric orthonormal basis, $\sum_n(f, e_n)e_n = f$ in norm: [[§48 The Completeness Relation#^thm-48-2|556 Thm. §48.2]], with the Fourier basis (there in complex form, $e^{in\theta}/\sqrt{2\pi}$ on $[0, 2\pi]$) as [[§48 The Completeness Relation#^ex-48-2|556 Ex. §48.2]].
 > - The converse, that every coefficient sequence with $\sum(a_n^2 + b_n^2) < \infty$ belongs to some $f$ with $\int f^2$ finite, needs a complete space of functions; this holds for the Lebesgue integral, where $L^2$ is complete (Riesz–Fischer, [[§35 Lᵖ as a Banach Space#^thm-35-11|551 Thm. §35.11]]), but not for the Riemann integral.
 
 > [!remark] Remark: Summary

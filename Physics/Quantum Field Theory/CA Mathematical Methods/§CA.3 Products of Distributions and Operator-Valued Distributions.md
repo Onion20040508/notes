@@ -184,7 +184,7 @@ Two generalized functions cannot in general be multiplied ([[§CA.2 Generalized 
 ^rem-ca-3-2
 
 > [!remark]- Connections
-> - Operator-valued distributions ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^def-ca-3-1|Def. §CA.3.1]]) carry the idea of [[§CA.2 Generalized Functions|§CA.2]], a generalized function as an element of a dual space, one level up: $\hat\phi(x)$ is no more an operator than a position "eigenket" is a vector ([[§48 Position Eigenstates and Continuous Resolutions#^prop-48-3|556 Prop. §48.3]]).
+> - Operator-valued distributions ([[§CA.3 Products of Distributions and Operator-Valued Distributions#^def-ca-3-1|Def. §CA.3.1]]) carry the idea of [[§CA.2 Generalized Functions|§CA.2]], a generalized function as an element of a dual space, one level up: $\hat\phi(x)$ is no more an operator than a position "eigenket" is a vector ([[§49 Position Eigenstates and Continuous Resolutions#^prop-49-3|556 Prop. §49.3]]).
 > - Where a product is not defined, the freedom that remains is measured by the point-support theorem ([[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]]): two extensions of a product across a point differ by finitely many derivatives of δ there (Theorem §CA.3.1, What the derivation shows).
 > - The box of Theorem §CA.3.3 and the plane-wave delta function of [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]] are one identity in two normalizations, $V\delta_{\mathbf k\mathbf k'} \leftrightarrow (2\pi)^3\delta^3(\mathbf k - \mathbf k')$; the box in space and time is [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|Theorem §CA.4.10]].
 > - **Used in**, statement by statement (C2a–C2b items):

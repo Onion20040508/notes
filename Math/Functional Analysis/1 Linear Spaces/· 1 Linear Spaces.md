@@ -25,7 +25,7 @@ Functional analysis is, in short, infinite-dimensional linear algebra. In finite
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§1 Linear Spaces#^prop-1-4|Proposition §1.4: The Smallest Subspace Exists]]: 31 later results
-- [[§1 Linear Spaces#^prop-1-5|Proposition §1.5: Span as Finite Linear Combinations]]: 30 later results
-- [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|Lemma §3.1: Inverse of an Isomorphism]]: 16 later results
+- [[§1 Linear Spaces#^prop-1-4|Proposition §1.4: The Smallest Subspace Exists]]: 32 later results
+- [[§1 Linear Spaces#^prop-1-5|Proposition §1.5: Span as Finite Linear Combinations]]: 31 later results
+- [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|Lemma §3.1: Inverse of an Isomorphism]]: 17 later results
 - [[§1 Linear Spaces#^prop-1-1|Proposition §1.1: Subspaces Contain the Origin]]: 14 later results

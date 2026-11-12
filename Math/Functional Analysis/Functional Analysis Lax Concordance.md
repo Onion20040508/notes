@@ -79,7 +79,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6, 8, 10 and 15
 | [[§43 Weak and Weak-Star Convergence\|§43]] Weak and weak-star convergence | Ch. 10 (opening), §10.1, §10.3; §8.4 | Definition and Examples 1–2 open Lax's Ch. 10. The weak convergence criterion is §10.1 Thm 1 ($\Leftarrow$) with Thm 4$'$ (bounded); the norm bound Thm 5; Mazur's theorem Thm 6, proved there with support functions (§8.4 Thm 17), here with the separation theorem in normed spaces (as in the proof of Thm 17). Weak-$\ast$: the definition and Thm 11 of §10.3, the norm bound Exercise 6 there; Lax's example of weak-$\ast$ but not weak convergence (Example 5) uses measures on $[-1,1]$ instead of $\ell^1 = (c_0)'$. The weak-$\ast$ criterion is not in Lax. |
 | [[§44 Weak Sequential Compactness\|§44]] Weak sequential compactness | §10.2, Thms 7–10; §10.3, Thm 12; Ch. 12, Thm 3 | Helly's theorem is §10.3 Thm 12, there for the closed unit ball of the dual of a separable Banach space; the proof here is the lecture's diagonal process, written out. Eberlein's theorem is §10.2 Thm 7: Lax runs the diagonal process on a dense subset of $Y'$, the lecture deduces it from Helly's theorem applied to $X'$. The converse is Thm 8 (no proof in Lax), bounded closed convex sets Thm 9, the closest point Thm 10. Alaoglu's theorem is Ch. 12 Thm 3, for the weak-$\ast$ topology. The examples showing which hypotheses the sequential statements need are not in Lax. |
 | [[§45 Convergence of Operators\|§45]] Convergence of operators | §15.2; §15.3, Cor 7$'$ | Lax defines the uniform, strong and weak topologies of $\mathcal{L}(X, U)$ and the corresponding sequential convergence; the boundedness of weakly convergent sequences is Cor 7$'$. The shift examples are not in Lax, whose example in §15.2 is $M_n x = (a_n, 0, 0, \ldots)$. |
-| [[· 9 Functional Analysis and Quantum Mechanics\|Chapter 9]] (companion) | — | Dual spaces return in Lax Ch. 8. |
+| [[§46 The Transpose\|§46]] The transpose | §15.1, (7)–(8), Thm 5; §15.2, Exercise 6 and the example after the definitions; §15.4, Thm 8 | Lax defines the transpose for normed spaces by $\ell(Mx) = (M'\ell)(x)$ and proves Thm 5 (i)–(iv) as in Proposition [[§46 The Transpose#^prop-46-4\|§46.4]] and Theorem [[§46 The Transpose#^thm-46-6\|§46.6]]; ${}^\perp S$ and its closedness are stated before Thm 5. The weak convergence of transposes is his Exercise 6, for reflexive $X$; the converse, which needs no reflexivity, and the closure of the range, $\overline{R(M)} = {}^\perp N(M')$, are not stated there. The example $A_n a = (a_n, 0, 0, \ldots)$ is Lax's. Composition and $(NM)' = M'N'$: §15.4, Thm 8. Hilbert–Schmidt operators are not in Lax's Chapter 15. |
+| [[· 10 Functional Analysis and Quantum Mechanics\|Chapter 9]] (companion) | — | Dual spaces return in Lax Ch. 8. |
 
 ## C.4 Index of Lax Results Cited
 
@@ -220,14 +221,24 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6, 8, 10 and 15
 | §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-3\|§30.3]] | Operator Norm |
 | §15.1, (3) and ($3'$) | Proposition [[§30 Boundedness and Continuity#^prop-30-1\|§30.1]] | The Operator Norm |
 | §15.1, definition of $\mathcal{L}(X, U)$ | Definition [[§30 Boundedness and Continuity#^def-30-4\|§30.4]] | The Space $\mathcal{L}(X, Y)$ |
+| §15.1, (7) | Proposition [[§46 The Transpose#^prop-46-1\|§46.1]] | Composing a Functional with a Bounded Map |
+| §15.1, (7)–(8) | Definition [[§46 The Transpose#^def-46-1\|§46.1]] | Transpose |
 | §15.1, Thm 1 | Proposition [[§30 Boundedness and Continuity#^prop-30-2\|§30.2]] | Continuous if and only if Bounded |
 | §15.1, Thms 2–3 | Theorem [[§30 Boundedness and Continuity#^thm-30-8\|§30.8]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |
+| §15.1, Thm 5(i), (iv) | Proposition [[§46 The Transpose#^prop-46-4\|§46.4]] | Properties of the Transpose |
+| §15.1, before Thm 5 | Definition [[§46 The Transpose#^def-46-3\|§46.3]] | Annihilator of a Subset of the Dual |
+| §15.1, before Thm 5 (``clearly'') | Lemma [[§46 The Transpose#^lem-46-5\|§46.5]] | ${}^\perp S$ is a Closed Subspace |
+| §15.1, Thm 5(ii), (iii) | Theorem [[§46 The Transpose#^thm-46-6\|§46.6]] | Null Spaces and Ranges of $M$ and $M'$ |
 | §15.2 (the uniform topology of $\mathcal{L}(X, U)$) | Definition [[§45 Convergence of Operators#^def-45-1\|§45.1]] | Uniform Convergence of Operators |
 | §15.2, definition of strong sequential convergence | Definition [[§45 Convergence of Operators#^def-45-2\|§45.2]] | Strong Convergence of Operators |
 | §15.2, definition of weak sequential convergence, and (18) in §15.3 | Definition [[§45 Convergence of Operators#^def-45-3\|§45.3]] | Weak Convergence of Operators |
+| §15.2, the example after the definitions of strong and weak convergence | Example [[§46 The Transpose#^ex-46-2\|§46.2]] | Strong Convergence Does Not Pass to Transposes |
 | §15.2, Thm 6 (the direction $\Leftarrow$); §15.3, Thm 7 and Cor 7$'$ (the direction $\Rightarrow$) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-7\|§42.7]] | Banach–Steinhaus |
 | §15.2, Thm 6 | Proposition [[§42 Uniform Boundedness and Approximation#^prop-42-8\|§42.8]] | Banach–Steinhaus Without a Given Limit |
+| §15.2, Exercise 6 (part (1), for Banach spaces) | Proposition [[§46 The Transpose#^prop-46-8\|§46.8]] | Weak Convergence Passes to Transposes |
 | §15.3, Cor 7$'$ (for Banach spaces $X$, $U$) | Theorem [[§45 Convergence of Operators#^thm-45-2\|§45.2]] | Weakly Convergent Sequences of Operators are Bounded |
+| §15.4 | Definition [[§46 The Transpose#^def-46-4\|§46.4]] | Composition |
+| §15.4, Thm 8 | Proposition [[§46 The Transpose#^prop-46-9\|§46.9]] | Composition and Transpose |
 | §15.5, proof of Thm 9 (“Baire category principle”), p. 169 | Theorem [[§40 The Baire Category Theorem#^thm-40-4\|§40.4]] | Baire Category Theorem |
 | §15.5, Thm 9 | Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1\|§41.1]] | The Image of the Unit Ball Contains a Ball About $0$ |
 | §15.5, Thm 10 (the open mapping principle) | Definition [[§39 Solving Mx = y#^def-39-3\|§39.3]] | Open Map |

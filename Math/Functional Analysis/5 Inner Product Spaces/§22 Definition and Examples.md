@@ -50,7 +50,7 @@ tags: [functional-analysis, math556]
 ^rem-22-1
 
 > [!remark]- Connections
-> - The physicists' convention, used in the quantum mechanics chapter: [[§46 Bras, Kets, and the Riesz Map#^rem-46-1|Remark: Conventions]].
+> - The physicists' convention, used in the quantum mechanics chapter: [[§47 Bras, Kets, and the Riesz Map#^rem-47-1|Remark: Conventions]].
 
 > [!theorem] Lemma §22.1: The Number $(x,x)$ is Real
 > *(Not from lecture.)* Let $X$ be a complex linear space and $(\cdot,\cdot) : X \times X \to \mathbb{C}$ skew-symmetric, $(x,y) = \overline{(y,x)}$ for all $x, y$. Then $(x,x) \in \mathbb{R}$ for every $x \in X$.

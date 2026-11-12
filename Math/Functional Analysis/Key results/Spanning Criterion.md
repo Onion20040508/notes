@@ -19,6 +19,7 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|Corollary §37.2: Two Forms of the Spanning Criterion]]
+- [[§46 The Transpose#^cor-46-7|Corollary §46.7: The Closure of the Range]]
 
 ## Connections
 - Hilbert-space form: dense span ⇔ only $0$ is orthogonal ([[§37 Separable Duals and Reflexive Spaces#^rem-37-1|Remark: Hilbert-Space Form]]); the closed-subspace form is the normed analogue of $(Y^\perp)^\perp = Y$ ([[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]]).

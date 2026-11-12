@@ -27,7 +27,7 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 - [[· C8 Quantum Electrodynamics]]
 - [[· C9 Discrete Symmetries and Majorana Fields]]
 - [[· CA Mathematical Methods]]
-- [[· CB Lie Groups, Lie Algebras and Representations]] (★ §CB.20)
+- [[· CB Lie Groups, Lie Algebras and Representations]] (★ §CB.21)
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -142,7 +142,7 @@ graph TD
   C6c -.->|1| C1a
   C6d -.->|1| C1a
   CA -.->|52| C1a
-  CB -.->|20| C1a
+  CB -.->|21| C1a
   C2a -.->|35| C1b
   C2b -.->|4| C1b
   C3 -.->|14| C1b
@@ -169,7 +169,7 @@ graph TD
   C6c -.->|6| C3
   C9 -.->|12| C3
   CA -.->|13| C3
-  CB -.->|89| C3
+  CB -.->|93| C3
   C5a -.->|1| C4
   C5b -.->|9| C4
   C8 -.->|49| C4
@@ -178,7 +178,7 @@ graph TD
   C8 -.->|3| C5a
   C9 -.->|10| C5a
   CA -.->|7| C5a
-  CB -.->|67| C5a
+  CB -.->|71| C5a
   C6a -.->|1| C5b
   C6d -.->|1| C5b
   C9 -.->|13| C5b
@@ -210,4 +210,4 @@ Yu's chapter 6, Interactions of quantum fields, and his chapter 7, Feynman diagr
 **Level C — PHY 513 (Larsen, Fall 2026; Peskin & Schroeder; Yu)**
 Chapters without notes yet, or with parts pending (Yu's numbering): C8 Quantum electrodynamics (written: §C8.1–§C8.9, Lectures 18–19; QED processes of Lectures 20–22 pending) · C9 Discrete symmetries and Majorana fields (written: parity §C9.1–§C9.5, charge conjugation §C9.6–§C9.7, physical spin §C9.8, time reversal §C9.9–§C9.10, CPT §C9.11, C, T and CPT of the complex scalar field §C9.12, time reversal of the S-matrix and detailed balance §C9.13; Majorana fields pending) · C10 The S-matrix and correlation functions (LSZ; the S-matrix, cross sections and decay rates themselves are in C6b §C6b.1–§C6b.9) · C11 Path-integral quantization · *Second semester* (PHY 513 Lecture 17, slide 26: renormalization, "a deep principle: much more in 2nd semester"): loop integrals, regularization (dimensional regularization), renormalization, Cutkosky cuts; the dimension count that sorts couplings into renormalizable and nonrenormalizable is already in [[§C1b.3 Mass Dimension, Locality and Power Counting|§C1b.3]] and [[§C6d.1 Yukawa Theory|§C6d.1]]
 
-**Mathematics chapter CB**: [[· CB Lie Groups, Lie Algebras and Representations]] (§CB.0–§CB.21) has its full logical chain, every definition and theorem in reading order, and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.3, Bargmann's theorem in §CB.19, Mackey and Wigner–Mackey in §CB.20★). The layout is "physics refers to mathematics" (option 1, 2026-10-08; physics form since the rollout of 2026-11-02, user-approved demos §C5a.1 and §C3.2): the mathematical statements of C1a, C3, C5a and C9 have their homes in CB (the matrix groups, the components of the Lorentz group and the identity component, the discrete element of O(3), the dual space, multilinear tensors and their transformation law; §CB.0, linear algebra in components, holds the statements of spinor-space layer 1; the SU(2)/SO(3) part is §CB.2, the Lorentz algebra §CB.5–§CB.6), and CB rests only on CB, CA and the Math notes, with two exceptions embedded from the physics chapters: the orbit theorem of §C1a.4 in §CB.20★ and the ★ Grassmann boxes of §C5b.1 in §CB.21. Physics sections do not embed CB or CA statements: each structure is stated in the Model or Definition that uses it with a link to its CB/CA home, each judgement tool is a physics statement box whose *Proof:* links CB, and the CB/CA items a section relies on are listed, with what each guarantees there, in a folded *Mathematical background* block at the end of the section, before Connections. §CB.21 Grassmann algebras is completed with C11 (the two ★ Grassmann boxes of §C5b.1 move then).
+**Mathematics chapter CB**: [[· CB Lie Groups, Lie Algebras and Representations]] (§CB.0–§CB.22) has its full logical chain, every definition and theorem in reading order, and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.3, Bargmann's theorem in §CB.20, Mackey and Wigner–Mackey in §CB.21★). The layout is "physics refers to mathematics" (option 1, 2026-10-08; physics form since the rollout of 2026-11-02, user-approved demos §C5a.1 and §C3.2): the mathematical statements of C1a, C3, C5a and C9 have their homes in CB (the matrix groups, the components of the Lorentz group and the identity component, the discrete element of O(3), the dual space, multilinear tensors and their transformation law; §CB.0, linear algebra in components, holds the statements of spinor-space layer 1; the SU(2)/SO(3) part is §CB.2, the Lorentz algebra §CB.5–§CB.6), and CB rests only on CB, CA and the Math notes, with two exceptions embedded from the physics chapters: the orbit theorem of §C1a.4 in §CB.21★ and the ★ Grassmann boxes of §C5b.1 in §CB.22. Physics sections do not embed CB or CA statements: each structure is stated in the Model or Definition that uses it with a link to its CB/CA home, each judgement tool is a physics statement box whose *Proof:* links CB, and the CB/CA items a section relies on are listed, with what each guarantees there, in a folded *Mathematical background* block at the end of the section, before Connections. §CB.22 Grassmann algebras is completed with C11 (the two ★ Grassmann boxes of §C5b.1 move then).
