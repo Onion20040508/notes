@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 13 §§13.4–13.6 · PHY 513 Lecture 13 (Larsen, 14 Oct 2026), Part C, slides 17–23, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.2, pp. 82–83, 86–87, eqs. (4.10)–(4.11), (4.27)–(4.31) · Yu Zhao-Huan, 量子场论讲义, §6.2, eqs. (6.122)–(6.125), and §10, eqs. (10.180)–(10.197) (a different route, for comparison only).*
 
-What should be computed in the interacting theory? Ultimately cross sections and decay widths; first, the time-ordered two-point function $\langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle$, the interacting version of the Feynman propagator ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]). The fields in it are now known in terms of free fields ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 4); the state is not. The free vacuum $|0\rangle$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]] is not the ground state of $\hat H$. This section obtains the true vacuum $|\Omega\rangle$ from $|0\rangle$ by evolving with the full Hamiltonian for a long time in a slightly imaginary direction, writes that evolution with the operators $U(t, t')$ of [[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]], and assembles the result into the master formula (PS (4.31)): the interacting correlator as a ratio of free-vacuum expectation values of time-ordered free fields. The unknown overlaps and phases of the vacuum cancel in the ratio. Turning the formula into rules is the work of Lecture 14 ([[§C6a.5 Normal Ordering and Contractions|§C6a.5]]–[[§C6a.11 The iε Limit and Vacuum Bubbles|§C6a.11]]).
+What should be computed in the interacting theory? Ultimately cross sections and decay widths; first, the time-ordered two-point function $\langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle$, the interacting version of the Feynman propagator ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]). The fields in it are now known in terms of free fields ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 4); the state is not. The free vacuum $|0\rangle$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-2|Principle §C2a.3.2]] is not the ground state of $\hat H$. This section obtains the true vacuum $|\Omega\rangle$ from $|0\rangle$ by evolving with the full Hamiltonian for a long time in a slightly imaginary direction, writes that evolution with the operators $U(t, t')$ of [[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]], and assembles the result into the master formula (PS (4.31)): the interacting correlator as a ratio of free-vacuum expectation values of time-ordered free fields. The unknown overlaps and phases of the vacuum cancel in the ratio. Turning the formula into rules is the work of Lecture 14 ([[§C6a.5 Normal Ordering and Contractions|§C6a.5]]–[[§C6a.11 The iε Limit and Vacuum Bubbles|§C6a.11]]).
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]]; $\hat\phi_H(x)$ is the Heisenberg field of the interacting theory (the slides write $\phi(x)$ without a label: "No 'I' on $\phi$"); $T$ without braces is a large time, $T\{\cdots\}$ time ordering ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^cau-c6a-4-2|Caution: Two T's]]); $\lim_{T\to\infty(1 - i\varepsilon)}$ means: replace $T$ by $T(1 - i\varepsilon)$ with $\varepsilon > 0$ fixed, then let $T \to +\infty$.
 
@@ -269,16 +269,16 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > **Step 2** (the denominators). $e^{-iE_0T}e^{-iE_0T} = e^{-2iE_0T}$ and $\langle0|\Omega\rangle\langle\Omega|0\rangle = \langle0|\Omega\rangle\overline{\langle0|\Omega\rangle} = |\langle0|\Omega\rangle|^2$.
 >
-> **Step 3** (the numerators compose). $U(T, 0)U(0, -T) = e^{i\hat H_0T}e^{-i\hat HT}\,e^{-i\hat HT}e^{i\hat H_0T} = e^{i\hat H_0T}e^{-2i\hat HT}e^{i\hat H_0T} = U(T, -T)$, by [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]] at $t = T$, $t' = -T$ (the composition law of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 2, written out; it holds for complex $T$ as the same algebra, the outer factors acting on $|0\rangle$ and $\langle0|$ as the identity).
+> **Step 3** (the numerators compose). $U(T, 0)U(0, -T) = e^{i\hat H_0T}e^{-i\hat HT}\,e^{-i\hat HT}e^{i\hat H_0T} = e^{i\hat H_0T}e^{-2i\hat HT}e^{i\hat H_0T} = U(T, -T)$, by [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]] at $t = T$, $t' = -T$ (the composition law of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 2, written out; it holds for complex $T$ as the same algebra, the outer factors acting on $|0\rangle$ and $\langle0|$ as the identity).
 >
-> ⚑ By-product: by [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], $U(T, -T) = T\{\exp[-i\int_{-T}^Tdt\,\hat H_I(t)]\}$, computable from free fields; whatever its value, it cancels out → the denominator of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]].
+> ⚑ By-product: by [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]], $U(T, -T) = T\{\exp[-i\int_{-T}^Tdt\,\hat H_I(t)]\}$, computable from free fields; whatever its value, it cancels out → the denominator of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]].
 >
 > **What the derivation shows.**
 > - Two unknowns, $E_0$ and $\langle0|\Omega\rangle$, are traded for one computable amplitude.
 
 ^der-c6a-4-4
 
-*Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-3|Theorem §C6a.4.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]
+*Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-3|Theorem §C6a.4.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]]
 
 ## The master formula
 
@@ -298,7 +298,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 ^thm-c6a-4-5
 
 > [!derivation]- Derivation
-> **Step 1** (the Heisenberg fields). By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 4, $\hat\phi_H(x) = U(0, x^0)\,\hat\phi_I(x)\,U(x^0, 0)$ and $\hat\phi_H(y) = U(0, y^0)\,\hat\phi_I(y)\,U(y^0, 0)$.
+> **Step 1** (the Heisenberg fields). By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 4, $\hat\phi_H(x) = U(0, x^0)\,\hat\phi_I(x)\,U(x^0, 0)$ and $\hat\phi_H(y) = U(0, y^0)\,\hat\phi_I(y)\,U(y^0, 0)$.
 >
 > **Step 2** (insert the vacua). Sandwich $\hat\phi_H(x)\hat\phi_H(y)$ between the bra of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-3|Theorem §C6a.4.3]] and the ket of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], at the same $T$ (the middle operator is fixed, so the limits pass through it by continuity of the inner product):
 >
@@ -306,7 +306,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > \langle\Omega|\hat\phi_H(x)\hat\phi_H(y)|\Omega\rangle = \lim\frac{\langle0|\,U(T, 0)\,U(0, x^0)\,\hat\phi_I(x)\,U(x^0, 0)\,U(0, y^0)\,\hat\phi_I(y)\,U(y^0, 0)\,U(0, -T)\,|0\rangle}{e^{-iE_0T}\langle0|\Omega\rangle\cdot e^{-iE_0T}\langle\Omega|0\rangle} .
 > $$
 >
-> **Step 3** (adjacent $U$'s compose). By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 2, three times: $U(T, 0)U(0, x^0) = U(T, x^0)$, $U(x^0, 0)U(0, y^0) = U(x^0, y^0)$, $U(y^0, 0)U(0, -T) = U(y^0, -T)$. The denominator is $e^{-2iE_0T}|\langle0|\Omega\rangle|^2$ (Step 2 of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-4|Derivation §C6a.4.4]]). This is the statement.
+> **Step 3** (adjacent $U$'s compose). By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 2, three times: $U(T, 0)U(0, x^0) = U(T, x^0)$, $U(x^0, 0)U(0, y^0) = U(x^0, y^0)$, $U(y^0, 0)U(0, -T) = U(y^0, -T)$. The denominator is $e^{-2iE_0T}|\langle0|\Omega\rangle|^2$ (Step 2 of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-4|Derivation §C6a.4.4]]). This is the statement.
 >
 > ⚑ By-product: Steps 1–3 did not use $x^0 > y^0$; the formula holds for any $x^0$, $y^0$. The ordering matters only for the next step: when $T > x^0 > y^0 > -T$, every $U$ in the numerator evolves *forward* over its own interval, the intervals following each other from right to left → [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]].
 >
@@ -315,7 +315,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 
 ^der-c6a-4-5
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-3|Theorem §C6a.4.3]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-4|Derivation §C6a.4.4]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-3|Theorem §C6a.4.3]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-4|Derivation §C6a.4.4]]
 
 > [!theorem] Theorem §C6a.4.6: The Master Formula
 > $$
@@ -331,7 +331,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 ^thm-c6a-4-6
 
 > [!derivation]- Derivation
-> **Step 1** (the case $x^0 > y^0$; each $U$ ordered on its interval). Take $T > |x^0|, |y^0|$ and write $\hat H_k \equiv \hat H_I(t_k)$, $\hat\phi_x \equiv \hat\phi_I(x)$, $\hat\phi_y \equiv \hat\phi_I(y)$. By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]] each factor of the numerator of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-5|Theorem §C6a.4.5]] is a time-ordered exponential over its own interval,
+> **Step 1** (the case $x^0 > y^0$; each $U$ ordered on its interval). Take $T > |x^0|, |y^0|$ and write $\hat H_k \equiv \hat H_I(t_k)$, $\hat\phi_x \equiv \hat\phi_I(x)$, $\hat\phi_y \equiv \hat\phi_I(y)$. By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]] each factor of the numerator of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-5|Theorem §C6a.4.5]] is a time-ordered exponential over its own interval,
 >
 > $$
 > U(T, x^0) = U(I_1),\ I_1 = [x^0, T]; \qquad U(x^0, y^0) = U(I_2),\ I_2 = [y^0, x^0]; \qquad U(y^0, -T) = U(I_3),\ I_3 = [-T, y^0] ;
@@ -381,7 +381,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > \frac{(-i)^n}{n!}\int_{[-T, T]^n}T\{\cdots\} = \sum_{n_1 + n_2 + n_3 = n}\frac{(-i)^{n_1}}{n_1!}\frac{(-i)^{n_2}}{n_2!}\frac{(-i)^{n_3}}{n_3!}\int_{I_1^{n_1}}\int_{I_2^{n_2}}\int_{I_3^{n_3}}T\{\hat\phi_I(x)\hat\phi_I(y)\,\hat H_I\cdots\hat H_I\} .
 > $$
 >
-> By Step 2 the integrand on the right is $T\{\hat H_I\cdots\}_{I_1}\,\hat\phi_I(x)\,T\{\cdots\}_{I_2}\,\hat\phi_I(y)\,T\{\cdots\}_{I_3}$, so summing over $n$ (a Cauchy product of three absolutely convergent series on the regularized theory, [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]) gives exactly $U(T, x^0)\hat\phi_I(x)U(x^0, y^0)\hat\phi_I(y)U(y^0, -T)$. This is the rule "inside $T\{\cdots\}$ exponents add" ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^rem-c6a-3-2|§C6a.3, Remark: How to read the time-ordered exponential]]), made explicit. Hence, for $x^0 > y^0$,
+> By Step 2 the integrand on the right is $T\{\hat H_I\cdots\}_{I_1}\,\hat\phi_I(x)\,T\{\cdots\}_{I_2}\,\hat\phi_I(y)\,T\{\cdots\}_{I_3}$, so summing over $n$ (a Cauchy product of three absolutely convergent series on the regularized theory, [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]) gives exactly $U(T, x^0)\hat\phi_I(x)U(x^0, y^0)\hat\phi_I(y)U(y^0, -T)$. This is the rule "inside $T\{\cdots\}$ exponents add" ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^rem-c6a-3-2|§C6a.3, Remark: How to read the time-ordered exponential]]), made explicit. Hence, for $x^0 > y^0$,
 >
 > $$
 > \langle\Omega|\hat\phi_H(x)\hat\phi_H(y)|\Omega\rangle = \lim\frac{\langle0|T\{\hat\phi_I(x)\hat\phi_I(y)\,e^{-i\int_{-T}^T\hat H_I}\}|0\rangle}{e^{-2iE_0T}|\langle0|\Omega\rangle|^2} .
@@ -395,7 +395,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > the last step because $T$ ignores the written order. So the right side is the same expression in both cases, and the left side must be time ordered too: "that's why the left-hand side must be time ordered" (the user's notes). At $x^0 = y^0$ the two fields commute ([[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], 1, and its Heisenberg counterpart [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], which holds for any Hamiltonian), and both orders agree.
 >
-> **Step 6** (replace the denominator). Write the right side of Step 5 as $N(T)/D(T)$ with $D(T) = e^{-2iE_0T}|\langle0|\Omega\rangle|^2$; then $N/D \to \langle\Omega|T\{\cdots\}|\Omega\rangle$. By [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], $\langle0|U(T, -T)|0\rangle/D \to 1$, and $U(T, -T) = T\{e^{-i\int_{-T}^T\hat H_I}\}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]]). The quotient of the two convergent ratios converges to the quotient of the limits:
+> **Step 6** (replace the denominator). Write the right side of Step 5 as $N(T)/D(T)$ with $D(T) = e^{-2iE_0T}|\langle0|\Omega\rangle|^2$; then $N/D \to \langle\Omega|T\{\cdots\}|\Omega\rangle$. By [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], $\langle0|U(T, -T)|0\rangle/D \to 1$, and $U(T, -T) = T\{e^{-i\int_{-T}^T\hat H_I}\}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]]). The quotient of the two convergent ratios converges to the quotient of the limits:
 >
 > $$
 > \frac{N(T)}{\langle0|U(T, -T)|0\rangle} = \frac{N(T)/D(T)}{\langle0|U(T, -T)|0\rangle/D(T)} \to \frac{\langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle}{1} .
@@ -410,7 +410,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 
 ^der-c6a-4-6
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-5|Theorem §C6a.4.5]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-5|Theorem §C6a.4.5]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-2|Theorem §C6a.2.2]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]]
 
 > [!theorem] Theorem §C6a.4.7: The n-Point Functions
 > For any points $x_1, \dots, x_n$,
@@ -436,7 +436,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > \langle\Omega|\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)|\Omega\rangle = \lim\frac{\langle0|\,U(T, 0)\,U(0, x_1^0)\,\hat\phi_I(x_1)\,U(x_1^0, 0)\,U(0, x_2^0)\,\hat\phi_I(x_2)\cdots U(0, x_n^0)\,\hat\phi_I(x_n)\,U(x_n^0, 0)\,U(0, -T)\,|0\rangle}{e^{-2iE_0T}|\langle0|\Omega\rangle|^2} .
 > $$
 >
-> Compose the $n + 1$ adjacent pairs ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 2): $U(T, 0)U(0, x_1^0) = U(T, x_1^0)$, $U(x_k^0, 0)U(0, x_{k+1}^0) = U(x_k^0, x_{k+1}^0)$ for $k = 1, \dots, n - 1$, $U(x_n^0, 0)U(0, -T) = U(x_n^0, -T)$:
+> Compose the $n + 1$ adjacent pairs ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 2): $U(T, 0)U(0, x_1^0) = U(T, x_1^0)$, $U(x_k^0, 0)U(0, x_{k+1}^0) = U(x_k^0, x_{k+1}^0)$ for $k = 1, \dots, n - 1$, $U(x_n^0, 0)U(0, -T) = U(x_n^0, -T)$:
 >
 > $$
 > \text{numerator} = \langle0|\,U(T, x_1^0)\,\hat\phi_I(x_1)\,U(x_1^0, x_2^0)\,\hat\phi_I(x_2)\cdots U(x_{n-1}^0, x_n^0)\,\hat\phi_I(x_n)\,U(x_n^0, -T)\,|0\rangle .
@@ -457,7 +457,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 
 ^der-c6a-4-7
 
-*Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-5|Derivation §C6a.4.5]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-6|Derivation §C6a.4.6]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]
+*Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-5|Derivation §C6a.4.5]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-6|Derivation §C6a.4.6]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]]
 
 > [!caution] Caution: What "cancels inside the time ordering" means
 > Slide 21 summarizes the derivation as "$\phi(y) = U^\dagger(t, 0)\phi_I(y)U(t, 0) = \phi_I(y)$ inside time-ordering." That is shorthand. The $U$'s do not disappear; they merge, with those of the vacua, into the single $U(T, -T)$ of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-5|Derivation §C6a.4.5]], Step 3; [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-6|Derivation §C6a.4.6]], Steps 2–4):
@@ -466,7 +466,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > \langle0|\,U(T, 0)\,\underbrace{U(0, x^0)\,\hat\phi_I(x)\,U(x^0, 0)}_{\hat\phi_H(x)}\,\underbrace{U(0, y^0)\,\hat\phi_I(y)\,U(y^0, 0)}_{\hat\phi_H(y)}\,U(0, -T)\,|0\rangle = \langle0|\,T\Bigl\{\hat\phi_I(x)\,\hat\phi_I(y)\,e^{-i\int_{-T}^Tdt\,\hat H_I(t)}\Bigr\}\,|0\rangle \qquad (x^0 > y^0) .
 > $$
 >
-> Under one time ordering, $U(0, x^0)$ and $U(x^0, 0) = U(0, x^0)^{-1}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 3) are inverse time-ordered exponentials over the same interval and cancel. What is left is the evolution over the whole interval $[-T, T]$, written once. Read literally, "$\hat\phi_H = \hat\phi_I$" is false: $\hat\phi_H(x) = U(x^0)^\dagger\hat\phi_I(x)U(x^0) \ne \hat\phi_I(x)$ for $\lambda \ne 0$. The one remaining evolution operator runs all the way from minus infinity to plus infinity; all of it can be collected in one place because the product is time ordered afterwards anyway.
+> Under one time ordering, $U(0, x^0)$ and $U(x^0, 0) = U(0, x^0)^{-1}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 3) are inverse time-ordered exponentials over the same interval and cancel. What is left is the evolution over the whole interval $[-T, T]$, written once. Read literally, "$\hat\phi_H = \hat\phi_I$" is false: $\hat\phi_H(x) = U(x^0)^\dagger\hat\phi_I(x)U(x^0) \ne \hat\phi_I(x)$ for $\lambda \ne 0$. The one remaining evolution operator runs all the way from minus infinity to plus infinity; all of it can be collected in one place because the product is time ordered afterwards anyway.
 >
 > *Source: PHY 513 Lecture 13, slide 21, and transcript · the user's PHY 513 notes, Ch. 13 §13.5 (paragraph "What 'cancels inside the time ordering' means")*
 
@@ -520,7 +520,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > at $T = 40$, $\varepsilon = 0.3$ and at $T = 60$, $\varepsilon = 0.5$, agrees to $3 \times 10^{-13}$. The result does not depend on $\varepsilon$.
 > - *Vacuum projection.* The normalized $e^{-i\hat HT(1 - i\varepsilon)}|0\rangle$ at $T = 40$ has overlap $1.0000000$ with $|\Omega\rangle$ for $\varepsilon = 0.1$, and $0.99972 = |\langle\Omega|0\rangle|$ for $\varepsilon = 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]).
-> - *Time evolution.* $i\partial_tU = \hat H_IU$ holds to the accuracy of the finite difference; the time-ordered product $\prod_ke^{-i\hat H_I(t_k)\Delta t}$ over $4000$ steps, latest on the left, reproduces $U(0.7) = e^{i\hat H_0\cdot0.7}e^{-i\hat H\cdot0.7}$ to $3 \times 10^{-7}$, while the naive $e^{-i\int\hat H_I}$ misses it by $0.91$ in the largest matrix element ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-4|Theorem §C6a.3.4]], 3); composition, unitarity and $U(t, t')^\dagger = U(t', t)$ hold to $10^{-14}$.
+> - *Time evolution.* $i\partial_tU = \hat H_IU$ holds to the accuracy of the finite difference; the time-ordered product $\prod_ke^{-i\hat H_I(t_k)\Delta t}$ over $4000$ steps, latest on the left, reproduces $U(0.7) = e^{i\hat H_0\cdot0.7}e^{-i\hat H\cdot0.7}$ to $3 \times 10^{-7}$, while the naive $e^{-i\int\hat H_I}$ misses it by $0.91$ in the largest matrix element ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-5|Theorem §C6a.3.5]], 3); composition, unitarity and $U(t, t')^\dagger = U(t', t)$ hold to $10^{-14}$.
 >
 > One practical point: with complex $T$, $e^{i\hat H_0T}$ overflows on high states, and it must be applied to $|0\rangle$ and $\langle0|$ as the identity ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-2|Derivation §C6a.4.2]], ⚑).
 >

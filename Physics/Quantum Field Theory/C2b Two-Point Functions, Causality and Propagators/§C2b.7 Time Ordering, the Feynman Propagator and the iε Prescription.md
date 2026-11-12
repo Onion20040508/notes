@@ -81,7 +81,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 *Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-12|Theorem §C2b.5.12]]
 
 > [!remark] Remark: Why the later operator stands to the left
-> In $\langle0|\cdots|0\rangle$ operators act on the state from right to left, so reading right to left is reading the history: the earliest acts first. Time evolution composes the same way, $U(t_3, t_2)U(t_2, t_1) = U(t_3, t_1)$ ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation|QM §C3.1]]), and Dyson's formula for interacting fields orders its exponential this way ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]). Time starts on the right and ends on the left.
+> In $\langle0|\cdots|0\rangle$ operators act on the state from right to left, so reading right to left is reading the history: the earliest acts first. Time evolution composes the same way, $U(t_3, t_2)U(t_2, t_1) = U(t_3, t_1)$ ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation|QM §C3.1]]), and Dyson's formula for interacting fields orders its exponential this way ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]). Time starts on the right and ends on the left.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.6*
 

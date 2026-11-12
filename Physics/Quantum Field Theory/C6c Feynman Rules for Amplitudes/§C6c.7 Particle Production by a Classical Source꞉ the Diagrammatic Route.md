@@ -19,7 +19,7 @@ A classical source switched on for a finite time leaves the vacuum in a state wi
 $$
 \hat H(t) = \hat H_0 + \hat H_{\rm int}(t) , \qquad \hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi(\mathbf x) = 0 \quad\text{for } t < t_1 \text{ and } t > t_2 ,
 $$
-so $\hat H = \hat H_0$ at early and late times; the free Fock states $\hat a^\dagger\cdots|0\rangle$ are the exact in and out states and the in and out vacuum is exactly $|0\rangle$ (the interacting vacuum $|\Omega\rangle$ of [[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]] plays no role); and the interaction-picture evolution operator ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]) satisfies $U(t, t') = \mathbb 1$ for $t, t' < t_1$ or $t, t' > t_2$, so
+so $\hat H = \hat H_0$ at early and late times; the free Fock states $\hat a^\dagger\cdots|0\rangle$ are the exact in and out states and the in and out vacuum is exactly $|0\rangle$ (the interacting vacuum $|\Omega\rangle$ of [[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]] plays no role); and the interaction-picture evolution operator ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]) satisfies $U(t, t') = \mathbb 1$ for $t, t' < t_1$ or $t, t' > t_2$, so
 $$
 \hat S = U(+\infty, -\infty) = U(t_2, t_1) = T\Bigl\{\exp\Bigl[i\int d^4x\,j(x)\,\hat\phi_I(x)\Bigr]\Bigr\}
 $$
@@ -51,7 +51,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > \hat H_I(t) = e^{i\hat H_0t}\hat H_{\rm int}(t)e^{-i\hat H_0t} = -\int d^3x\,j(t, \mathbf x)\,\hat\phi_I(t, \mathbf x) ,
 > $$
 >
-> $j$ being a number. The evolution operator is the time-ordered exponential ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]]; its derivation uses only $i\partial_tU = \hat H_I(t)U$, so an explicitly time-dependent $\hat H_I(t)$ is allowed):
+> $j$ being a number. The evolution operator is the time-ordered exponential ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]]; its derivation uses only $i\partial_tU = \hat H_I(t)U$, so an explicitly time-dependent $\hat H_I(t)$ is allowed):
 >
 > $$
 > \hat U(t, t') = T\Bigl\{\exp\Bigl[-i\int_{t'}^tdt''\,\hat H_I(t'')\Bigr]\Bigr\} .
@@ -70,7 +70,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 
 ^der-c6c-7-1
 
-*Uses:* [[§C6a.2 The Interaction Picture#^def-c6a-2-1|Def. §C6a.2.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], [[§C2b.6 Green's Functions and Contours#^mod-c2b-6-1|Model §C2b.6.1]]
+*Uses:* [[§C6a.2 The Interaction Picture#^def-c6a-2-1|Def. §C6a.2.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]], [[§C2b.6 Green's Functions and Contours#^mod-c2b-6-1|Model §C2b.6.1]]
 
 > [!theorem] Theorem §C6c.7.2: The No-Particle Probability to Order j²
 > $$

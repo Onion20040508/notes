@@ -248,7 +248,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 > \langle0|T\Bigl\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\exp\Bigl[-i\int_{-T}^Tdt\,\hat H_I(t)\Bigr]\Bigr\}|0\rangle = \text{sum of all diagrams with } r \text{ external points and any number of vertices},
 > $$
 >
-> each diagram ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-1|Def. §C6a.7.1]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-2|Def. §C6a.7.2]]) being the product of:
+> each diagram ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-1|Def. §C6a.7.1]]; external points, [[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-2|Def. §C6a.7.2]]; vertices, [[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-3|Def. §C6a.7.3]]) being the product of:
 >
 > | element | factor |
 > |---|---|
@@ -366,6 +366,6 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 
 > [!remark]- Connections
 > - The rules turn a time-ordered expectation value into integrals over spacetime of products of Green's functions of the Klein–Gordon operator, the same structure as the iterated Born series of scattering theory, with $D_F$ for the free Green's function — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation|QM §C10.1]], [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-5|Theorem §C2b.7.5]].
-> - The $\frac{1}{n!}$ cancelled here is the volume of the ordered simplex of the Dyson series; the time ordering that produced it is now invisible, absorbed into the $D_F$'s — [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-5|Theorem §C6a.3.5]].
+> - The $\frac{1}{n!}$ cancelled here is the volume of the ordered simplex of the Dyson series; the time ordering that produced it is now invisible, absorbed into the $D_F$'s — [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]].
 > - The vanishing of odd correlators is the diagrammatic face of the $\mathbb Z_2$ symmetry $\phi \to -\phi$ of the Lagrangian, the symmetry that singles out $\phi^4$ among the renormalizable self-interactions — [[§C1b.3 Mass Dimension, Locality and Power Counting|§C1b.3]].
 > - The same rules, with other lines and vertices, are QED; the slides say "In QED the symmetry factor is always S = 1", which holds for diagrams with external points (QED vacuum bubbles can have $S = 2$) — [[§C6a.9 Symmetry Factors in Practice#^cau-c6a-9-2|§C6a.9, Caution: "In QED the symmetry factor is always S = 1" holds for diagrams with external points]]; Yukawa theory: [[§C6d.4 First Order#^thm-c6d-4-7|§C6d.4, Theorem §C6d.4.7]]; QED: [[§C8.4 Feynman Rules for QED#^thm-c8-4-4|§C8.4, Theorem §C8.4.4]], item 3.

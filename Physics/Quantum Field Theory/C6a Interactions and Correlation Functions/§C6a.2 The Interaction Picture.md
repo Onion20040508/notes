@@ -264,7 +264,7 @@ In $\phi^4$ theory the field at the reference time is the free field, but its ti
 >
 > **What the derivation shows.**
 > - The whole interaction now sits in one operator, $U(t)$; the field it conjugates is known explicitly ([[§C6a.2 The Interaction Picture#^thm-c6a-2-1|Theorem §C6a.2.1]]).
-> - Used next: the equation of motion of $U$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-2|Theorem §C6a.3.2]]) and its solution ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]).
+> - Used next: the equation of motion of $U$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-2|Theorem §C6a.3.2]]) and its solution ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]).
 
 ^der-c6a-2-4
 
@@ -331,7 +331,7 @@ $$
 >
 > **What the derivation shows.**
 > - The exponents of $e^{i\hat H_0t}$ and $e^{-i\hat Ht}$ would add only if $\hat H_0$ and $\hat H$ commuted; the interaction creates particles, which costs free energy, so they do not.
-> - The correct form of $U$ is the time-ordered exponential of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]] (pointer), in which $\hat H_{\text{int}}$ appears only through $\hat H_I(t)$ ([[§C6a.2 The Interaction Picture#^def-c6a-2-3|Def. §C6a.2.3]]).
+> - The correct form of $U$ is the time-ordered exponential of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]] (pointer), in which $\hat H_{\text{int}}$ appears only through $\hat H_I(t)$ ([[§C6a.2 The Interaction Picture#^def-c6a-2-3|Def. §C6a.2.3]]).
 
 ^der-c6a-2-5
 
@@ -472,4 +472,4 @@ $$
 > - Quantum mechanics uses the same split for a time-dependent perturbation $V(t)$; its $\mathscr U_I(t, t_0)$ is the operator $U(t, t')$ of the next section — [[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits#^def-c9-4-1|QM Def. §C9.4.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]].
 > - Momentum conservation of $\hat H_I$ comes from the space integral of a local density; energy conservation will come from the time integral, which is why the vertices of Feynman diagrams carry $\delta^4$ — [[§C6a.2 The Interaction Picture#^ex-c6a-2-1|Example §C6a.2.1]], [[§C6a.10 Feynman Rules in Momentum Space|§C6a.10]].
 > - The non-commutativity of $\hat H_0$ and $\hat H$ is the second-order Baker–Campbell–Hausdorff term, the same commutator that makes two boosts produce a rotation — [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8|Theorem §CB.1.8]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-5|Theorem §C6a.2.5]].
-> - A field coupled linearly to a classical source is the exactly solvable interaction: its field equation stays linear and was solved with the retarded function; the time-ordered exponential of the next section solves it again, with the same coherent state as result (PS Problem 4.1; PHY 513, Problem Set 8, Problem 3; [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6c.7]]) — [[§C2b.9 Particle Production by a Classical Source|§C2b.9]], [[§C2a.6 Coherent States and the Classical Field|§C2a.6]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]].
+> - A field coupled linearly to a classical source is the exactly solvable interaction: its field equation stays linear and was solved with the retarded function; the time-ordered exponential of the next section solves it again, with the same coherent state as result (PS Problem 4.1; PHY 513, Problem Set 8, Problem 3; [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6c.7]]) — [[§C2b.9 Particle Production by a Classical Source|§C2b.9]], [[§C2a.6 Coherent States and the Classical Field|§C2a.6]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]].

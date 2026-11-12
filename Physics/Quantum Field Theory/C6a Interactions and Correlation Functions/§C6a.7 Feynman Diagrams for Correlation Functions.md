@@ -28,16 +28,25 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 
 ^def-c6a-7-1
 
-> [!definition] Definition §C6a.7.2: External Point, Vertex
-> In the diagrams of the master formula's numerator ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) there are two kinds of points:
-> 1. **external points**, the arguments $x_1, \dots, x_n$ of the correlator; exactly one line ends at each;
-> 2. **vertices** (internal points), the points $z$ of the interaction $\hat H_I = \int d^3z\,\frac{\lambda}{4!}\hat\phi_I^4$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]); four lines end at each, one for each factor $\hat\phi_I(z)$, and each carries $-i\lambda\int d^4z$ (this weight is a rule, derived in [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]).
+> [!definition] Definition §C6a.7.2: External Point
+> In the diagrams of the master formula's numerator ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) there are two kinds of points. The **external points** are the arguments $x_1, \dots, x_n$ of the correlator; exactly one line ends at each. The other kind is the vertices ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-3|Def. §C6a.7.3]]).
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
 >
-> *Source: PS §4.4, p. 92 ("Internal points, where four lines meet, are called vertices") · PHY 513 Lecture 14, slide 16 · the user's PHY 513 notes, Ch. 14 §14.4*
+> *Source: PS §4.4, p. 92 ("we must distinguish between the 'external' points, $x$ and $y$, and the 'internal' point $z$") · PHY 513 Lecture 14, slide 16 ("all diagrams with two external points and any number of internal points where four lines end") · the user's PHY 513 notes, Ch. 14 §14.4*
 
 ^def-c6a-7-2
+
+> [!definition] Definition §C6a.7.3: Vertex
+> The **vertices** (internal points) of a diagram of the master formula's numerator ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) are the points $z$ of the interaction $\hat H_I = \int d^3z\,\frac{\lambda}{4!}\hat\phi_I^4$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]), every point that is not an external point ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-2|Def. §C6a.7.2]]); four lines end at each, one for each factor $\hat\phi_I(z)$.
+>
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
+>
+> *Source: PS §4.4, p. 92 ("Internal points, where four lines meet, are called vertices") · PHY 513 Lecture 14, slide 16 ("Vertex = four lines end") · the user's PHY 513 notes, Ch. 14 §14.4*
+
+^def-c6a-7-3
+
+Each vertex carries $-i\lambda\int d^4z$; this weight is not part of the definition, it is a rule, derived in [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] (the vertex row of its table).
 
 ![[ph-qft-ca-7-3.svg]]
 *Half-edges and a labelled diagram ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]]) for $E = \{x_1, x_2\}$, $n = 2$. (a) The ten half-edges: two external points and four legs at each vertex. (b) One labelled diagram $P$, a pairing of them. (c) Its multigraph $\Gamma(P)$, which forgets which leg is used. In a Feynman diagram the external points are the arguments $x_i$ and the vertices the interaction points $z_v$.*

@@ -227,7 +227,7 @@ What force does the exchange of the Yukawa scalar produce between two fermions? 
 ^thm-c6d-7-5
 
 > [!derivation]- Derivation
-> **Step 1** (first order). In quantum mechanics with $\hat H = \hat H_0 + \hat V$, $\hat H_0 = \hat{\mathbf p}^2/2m$, the interaction-picture potential is $\hat H_I(t) = e^{i\hat H_0t}\hat Ve^{-i\hat H_0t}$ and $T\{e^{-i\int dt\,\hat H_I}\} = \mathbb 1 - i\int dt\,\hat H_I(t) + \cdots$, the same Dyson series as in field theory ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]) with a potential in place of field operators. The term $\mathbb 1$ is the unscattered wave, $\langle\mathbf p'|\mathbf p\rangle$; the first-order term is $i\hat T$.
+> **Step 1** (first order). In quantum mechanics with $\hat H = \hat H_0 + \hat V$, $\hat H_0 = \hat{\mathbf p}^2/2m$, the interaction-picture potential is $\hat H_I(t) = e^{i\hat H_0t}\hat Ve^{-i\hat H_0t}$ and $T\{e^{-i\int dt\,\hat H_I}\} = \mathbb 1 - i\int dt\,\hat H_I(t) + \cdots$, the same Dyson series as in field theory ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]) with a potential in place of field operators. The term $\mathbb 1$ is the unscattered wave, $\langle\mathbf p'|\mathbf p\rangle$; the first-order term is $i\hat T$.
 >
 > **Step 2** (plane waves). $\hat H_0|\mathbf p\rangle = E_{\mathbf p}|\mathbf p\rangle$, so
 >
@@ -245,7 +245,7 @@ What force does the exchange of the Yukawa scalar produce between two fermions? 
 
 ^der-c6d-7-5
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6d.7 The Yukawa Potential#^def-c6d-7-1|Def. §C6d.7.1]], [[§C6d.7 The Yukawa Potential#^der-c6d-7-3|Derivation §C6d.7.3]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6d.7 The Yukawa Potential#^def-c6d-7-1|Def. §C6d.7.1]], [[§C6d.7 The Yukawa Potential#^der-c6d-7-3|Derivation §C6d.7.3]]
 
 > [!caution] Caution: Slips on the Born-approximation slide
 > Slide 22 writes the exponent $e^{-i(E_{\vec p} - E_{\vec p})t}$; the energies are those of $\mathbf p'$ and $\mathbf p$, $e^{i(E_{\mathbf p'} - E_{\mathbf p})t}$, as in [[§C6d.7 The Yukawa Potential#^thm-c6d-7-5|Theorem §C6d.7.5]]. The user's update records in addition that the handwritten notes exchange the bra and the ket, $\langle\mathbf p|i\hat T|\mathbf p'\rangle$, and label the operator $e^{i\int H_Idt}$; it is $\langle\mathbf p'|i\hat T|\mathbf p\rangle$ from $T\{e^{-i\int H_Idt}\}$.

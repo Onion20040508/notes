@@ -160,7 +160,7 @@ Free fields $\hat\phi_i = \hat\phi_I(x_i)$; Lectures 13–16.
 
 | | Formula | Home |
 | --- | --- | --- |
-| interaction picture, Dyson's formula (Lecture 13) | $\hat\phi_I(t, \mathbf x) \equiv e^{i\hat H_0t}\hat\phi_S(\mathbf x)e^{-i\hat H_0t}$; $U(t) = T\bigl\{\exp\bigl[-i\int_0^tdt'\,\hat H_I(t')\bigr]\bigr\}$, $t \ge 0$ | [[§C6a.2 The Interaction Picture#^def-c6a-2-1\|Def. §C6a.2.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6\|Theorem §C6a.3.6]] |
+| interaction picture, Dyson's formula (Lecture 13) | $\hat\phi_I(t, \mathbf x) \equiv e^{i\hat H_0t}\hat\phi_S(\mathbf x)e^{-i\hat H_0t}$; $U(t) = T\bigl\{\exp\bigl[-i\int_0^tdt'\,\hat H_I(t')\bigr]\bigr\}$, $t \ge 0$ | [[§C6a.2 The Interaction Picture#^def-c6a-2-1\|Def. §C6a.2.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7\|Theorem §C6a.3.7]] |
 | master formula (Lecture 13) | $\langle\Omega\vert T\{\hat\phi_H(x)\hat\phi_H(y)\}\vert\Omega\rangle = \lim_{T\to\infty(1 - i\varepsilon)}\frac{\langle0\vert T\{\hat\phi_I(x)\hat\phi_I(y)\exp[-i\int_{-T}^Tdt\,\hat H_I(t)]\}\vert0\rangle}{\langle0\vert T\{\exp[-i\int_{-T}^Tdt\,\hat H_I(t)]\}\vert0\rangle}$: free fields, free vacuum, no approximation | [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6\|Theorem §C6a.4.6]] |
 | price of reordering | $[\hat\phi^+(x), \hat\phi^-(y)] = D_W(x - y)$ | [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2\|Theorem §C6a.5.2]] |
 | contraction | $\overbracket{\hat\phi_i\hat\phi_j} = D_F(x_i - x_j)$: replace the pair by $D_F$, the rest normal ordered; two fields: $T\{\hat\phi_1\hat\phi_2\} = \,:\!\hat\phi_1\hat\phi_2\!:\, + D_F(x_1 - x_2)$ | [[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1\|Def. §C6a.5.1]] |

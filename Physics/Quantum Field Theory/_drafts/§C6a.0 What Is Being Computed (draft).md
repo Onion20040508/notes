@@ -34,7 +34,7 @@ $$
 $$
 \hat H_I(t) = e^{i\hat H_0t}\,\hat H_{\rm int}\,e^{-i\hat H_0t} = \int d^3x\,\frac{\lambda}{4!}\,\hat\phi_I(t, \mathbf x)^4 .
 $$
-3. **Evolution operator, Dyson series** ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], series [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]):
+3. **Evolution operator, Dyson series** ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]], series [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]):
 $$
 U(t, t') = e^{i\hat H_0t}\,e^{-i\hat H(t - t')}\,e^{-i\hat H_0t'} = T\Bigl\{\exp\Bigl[-i\int_{t'}^tdt''\,\hat H_I(t'')\Bigr]\Bigr\} = \sum_{n=0}^\infty\frac{(-i)^n}{n!}\int_{t'}^tdt_1\cdots\int_{t'}^tdt_n\,T\{\hat H_I(t_1)\cdots\hat H_I(t_n)\} .
 $$

@@ -165,7 +165,7 @@ Coleman's sentence for the first row: "Unless the interaction is with some exter
 > \hat H_I(t) = e^{i\hat H_0t}\,\hat H_{\rm int}(t)\,e^{-i\hat H_0t} = 0 \qquad (t \notin [t_1, t_2]) .
 > $$
 >
-> **Step 2** (the evolution operator). $U(t, t') = T\{\exp[-i\int_{t'}^tdt''\,\hat H_I(t'')]\}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]); the integrand vanishes outside $[t_1, t_2]$, so $U(t, t') = \mathbb 1$ for $t' < t \le t_1$ and for $t_2 \le t' < t$. For $t' < t_1$, $t > t_2$, by the composition law ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]),
+> **Step 2** (the evolution operator). $U(t, t') = T\{\exp[-i\int_{t'}^tdt''\,\hat H_I(t'')]\}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]); the integrand vanishes outside $[t_1, t_2]$, so $U(t, t') = \mathbb 1$ for $t' < t \le t_1$ and for $t_2 \le t' < t$. For $t' < t_1$, $t > t_2$, by the composition law ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]]),
 >
 > $$
 > U(t, t') = U(t, t_2)\,U(t_2, t_1)\,U(t_1, t') = U(t_2, t_1) \equiv \hat S ,
@@ -187,7 +187,7 @@ Coleman's sentence for the first row: "Unless the interaction is with some exter
 >
 > the same at every $t > t_2$: $|f\rangle$ is an eigenstate of the Hamiltonian $\hat H_0$ that acts after $t_2$, so the probability is final.
 >
-> **Step 5** (no denominator). $\hat S$ is unitary ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]) and the eigenstates of $\hat H_0$ are complete, $\mathbb 1 = \sum_f|f\rangle\langle f|$:
+> **Step 5** (no denominator). $\hat S$ is unitary ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]]) and the eigenstates of $\hat H_0$ are complete, $\mathbb 1 = \sum_f|f\rangle\langle f|$:
 >
 > $$
 > \sum_fP(f) = \sum_f\langle0|\hat S^\dagger|f\rangle\langle f|\hat S|0\rangle = \langle0|\hat S^\dagger\hat S|0\rangle = \langle0|0\rangle = 1 .
@@ -221,7 +221,7 @@ Coleman's sentence for the first row: "Unless the interaction is with some exter
 
 ^der-c6a-0-4
 
-*Uses:* [[§C6a.2 The Interaction Picture#^def-c6a-2-1|Def. §C6a.2.1]], [[§C6a.2 The Interaction Picture#^def-c6a-2-3|Def. §C6a.2.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-5|Theorem §C6a.1.5]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
+*Uses:* [[§C6a.2 The Interaction Picture#^def-c6a-2-1|Def. §C6a.2.1]], [[§C6a.2 The Interaction Picture#^def-c6a-2-3|Def. §C6a.2.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-5|Theorem §C6a.1.5]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
 
 ## Which diagrams carry which physics
 

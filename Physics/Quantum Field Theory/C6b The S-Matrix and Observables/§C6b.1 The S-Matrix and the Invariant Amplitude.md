@@ -106,7 +106,7 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 >
 > and $|e^{i(E_f + E_i)T}| = 1$, so $|\langle f|U(T, -T)|i\rangle|^2 = |\langle f|e^{-i\hat H\,2T}|i\rangle|^2$.
 >
-> ⚑ By-product: with $T \to \infty$ this suggests $\hat S = U(+\infty, -\infty) = T\{\exp[-i\int_{-\infty}^{\infty}dt\,\hat H_I(t)]\}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]), Yu's definition (eqs. (6.125)–(6.126)), which makes Dyson's series a series for $\hat S$; Lecture 16 adopts it as a prescription ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]). It is heuristic: the phase oscillates without a limit as $T \to \infty$, and the true in and out states are eigenstates of $\hat H$, not $\hat H_0$ (Caution: "Free" means widely separated, above). → Remark: Yu's route, below.
+> ⚑ By-product: with $T \to \infty$ this suggests $\hat S = U(+\infty, -\infty) = T\{\exp[-i\int_{-\infty}^{\infty}dt\,\hat H_I(t)]\}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]), Yu's definition (eqs. (6.125)–(6.126)), which makes Dyson's series a series for $\hat S$; Lecture 16 adopts it as a prescription ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]). It is heuristic: the phase oscillates without a limit as $T \to \infty$, and the true in and out states are eigenstates of $\hat H$, not $\hat H_0$ (Caution: "Free" means widely separated, above). → Remark: Yu's route, below.
 >
 > **What the derivation shows.**
 > - Between free states, the $S$-matrix of the course and Yu's $U(+\infty, -\infty)$ agree up to a phase.
@@ -114,7 +114,7 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 
 ^der-c6b-1-1
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]
 
 Lecture 16 turns the heuristic by-product of Theorem §C6b.1.1 into the course's prescription for the in and out states, the step from "Feynman rules ⇒ correlation functions" to "Feynman rules ⇒ $S$-matrix" (slide 4: "Drawback of direct route: some heuristic steps").
 
@@ -163,9 +163,9 @@ Lecture 16 turns the heuristic by-product of Theorem §C6b.1.1 into the course's
 > \langle\mathbf p_1\mathbf p_2\cdots|\hat S|\mathbf p_A\mathbf p_B\cdots\rangle = {}_{\rm out}\langle\mathbf p_1\mathbf p_2\cdots|\mathbf p_A\mathbf p_B\cdots\rangle_{\rm in} = {}_0\langle\mathbf p_1\mathbf p_2\cdots|\,U(T, 0)\,U(0, -T)\,|\mathbf p_A\mathbf p_B\cdots\rangle_0 .
 > $$
 >
-> **Step 2** (composition). [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 2, with $t_1 = T$, $t_2 = 0$, $t_3 = -T$: $U(T, 0)\,U(0, -T) = U(T, -T)$.
+> **Step 2** (composition). [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], 2, with $t_1 = T$, $t_2 = 0$, $t_3 = -T$: $U(T, 0)\,U(0, -T) = U(T, -T)$.
 >
-> **Step 3** (Dyson). [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]] at $t = T$, $t' = -T$:
+> **Step 3** (Dyson). [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]] at $t = T$, $t' = -T$:
 >
 > $$
 > U(T, -T) = T\Bigl\{\exp\Bigl[-i\int_{-T}^{T}dt\,\hat H_I(t)\Bigr]\Bigr\} ,
@@ -189,7 +189,7 @@ Lecture 16 turns the heuristic by-product of Theorem §C6b.1.1 into the course's
 
 ^der-c6b-1-3
 
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]], [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-1|Theorem §C6c.7.1]]
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|Theorem §C6a.3.9]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]], [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-1|Theorem §C6c.7.1]]
 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-7|P6, step 7]]
 
@@ -214,7 +214,7 @@ Lecture 16 turns the heuristic by-product of Theorem §C6b.1.1 into the course's
 ^def-c6b-1-2
 
 
-Why the $i$ in $\hat S = \mathbb 1 + i\hat T$: in the interaction picture ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]; Yu (6.126), (6.272)) the first-order term of the Dyson series carries a factor $-i$ (the $n$-th term $(-i)^n$),
+Why the $i$ in $\hat S = \mathbb 1 + i\hat T$: in the interaction picture ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]; Yu (6.126), (6.272)) the first-order term of the Dyson series carries a factor $-i$ (the $n$-th term $(-i)^n$),
 $$
 \hat S = \sum_{n\ge0}\frac{(-i)^n}{n!}\int dt_1\cdots dt_n\,T\{\hat H_I(t_1)\cdots\hat H_I(t_n)\} = \mathbb 1 - i\int dt\,\hat H_I(t) + O(\hat H_I^2) \quad\Rightarrow\quad i\hat T = -i\int dt\,\hat H_I(t) + O(\hat H_I^2) ,
 $$

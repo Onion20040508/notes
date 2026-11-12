@@ -68,12 +68,12 @@ C6a follows the course (Lectures 13–14) and the user's notes (Ch. 13–14), no
 - [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|§C6a.2.6]] The Interaction Hamiltonian Is the Interaction of the Free Field
 - [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-1|§C6a.3.1]] The Time-Evolution Operator Is Unitary
 - [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-2|§C6a.3.2]] The Equation of Motion of the Time-Evolution Operator
-- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-3|§C6a.3.3]] The Interaction Hamiltonians at Two Times
-- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-4|§C6a.3.4]] The Exponential Solves the Equation Only for Commuting Generators
-- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-5|§C6a.3.5]] Ordered Iterated Integrals Are Time-Ordered Cube Integrals
-- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|§C6a.3.6]] Dyson's Formula
-- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|§C6a.3.7]] Properties of the Time-Evolution Operator
-- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|§C6a.3.8]] Dyson's Formula Between Two Times
+- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-4|§C6a.3.4]] The Interaction Hamiltonians at Two Times
+- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-5|§C6a.3.5]] The Exponential Solves the Equation Only for Commuting Generators
+- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|§C6a.3.6]] Ordered Iterated Integrals Are Time-Ordered Cube Integrals
+- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|§C6a.3.7]] Dyson's Formula
+- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|§C6a.3.8]] Properties of the Time-Evolution Operator
+- [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-9|§C6a.3.9]] Dyson's Formula Between Two Times
 - [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|§C6a.4.1]] Projection onto the Ground State
 - [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|§C6a.4.2]] The Interacting Vacuum Evolved from the Far Past
 - [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-3|§C6a.4.3]] The Conjugate Vacuum Evolved into the Far Future

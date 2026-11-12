@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C5b The Quantum Spinor Field
 ← [[· C5a Spinors and the Dirac Equation]] · ↑ [[Quantum Field Theory]] · [[· C6a Interactions and Correlation Functions]] →
 
-**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (26), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (91), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (142), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (7), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (175), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (1), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (5), [[· CA Mathematical Methods|CA Mathematical Methods]] (131), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (1)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (9), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (46), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (9), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (62), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (121), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (1)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (4), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (26), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (95), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (142), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (37), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (215), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (1), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (13), [[· CA Mathematical Methods|CA Mathematical Methods]] (133), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (1)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (5), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (9), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (46), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (9), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (62), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (121), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (1)
 
 ## Sections
 - [[§C5b.1 Canonical Quantization of the Dirac Field]] — PS 3.5; Yu 5.4.3, 5.5.1–5.5.2, 5.5.4; 513 notes Ch. 10
@@ -52,6 +52,8 @@ tags: [chapter, quantum-field-theory]
 - [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|§C5b.4.1]] Fermions and Antifermions
 - [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|§C5b.4.2]] Fermi–Dirac Statistics and the Pauli Exclusion Principle
 - [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|§C5b.4.3]] Dirac Quanta Have Spin One-Half
+- [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^lem-c5b-4-1|§C5b.4.1]] ★ The Plane-Wave Spinors under a Lorentz Transformation
+- [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-4|§C5b.4.4]] ★ Lorentz Covariance of the Quantized Dirac Field
 - [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|§C5b.5.1]] The Charge in Modes, before Any Algebra
 - [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|§C5b.5.2]] ★ The Classical Dirac Energy Is Unbounded Below; the Classical Charge Is Positive
 - [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|§C5b.5.3]] The Charge Counts Fermions Minus Antifermions
@@ -67,10 +69,10 @@ tags: [chapter, quantum-field-theory]
 - [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|§C5b.8.1]] Green's Functions of the Dirac Operator
 - [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-2|§C5b.8.2]] Fermionic Time Ordering Is Frame Independent
 - [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|§C5b.8.3]] The Dirac Feynman Propagator
+- [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|§C5b.8.4]] The Dirac Propagator as a Distribution
 - [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|§C5b.8.5]] The Free Dirac Schwinger–Dyson Equation
 - [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|§C5b.8.6]] One Time Derivative: the Source Is the Equal-Time Anticommutator Itself
 - [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|§C5b.8.7]] The Fermionic Minus Sign of T Makes S_F a Green's Function
-- [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|§C5b.8.4]] The Dirac Propagator as a Distribution
 - [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-8|§C5b.8.8]] The Matrix Form of the Propagator
 - [[§C5b.9 Spin and Statistics#^thm-c5b-9-1|§C5b.9.1]] The Free Fields of the Course Obey the Spin–Statistics Theorem
 
