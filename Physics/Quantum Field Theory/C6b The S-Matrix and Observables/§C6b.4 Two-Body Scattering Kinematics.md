@@ -9,13 +9,39 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C6b.3 The Cross Section]] · ↑ [[· C6b The S-Matrix and Observables]] · [[§C6b.5 Decay Widths]] →
 
-*Sources: Yu Zhao-Huan, 量子场论讲义, §6.5.3 "两体散射运动学", pp. 247–250, eqs. (6.336)–(6.366), Fig. 6.5 (page images checked, PDF pp. 255–258); Exercise 6.7, eq. (6.424) · the user's PHY 513 notes, Ch. 15 §15.7 (Derivation "Two-body phase space in the CM frame", paragraph "The momentum (filled in)", Principle "$2\to2$ differential cross section in the CM frame", Derivation "The equal-mass case", paragraph "Why $1/E_{\rm cm}^2$") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part C, slides 20–21, 25, and transcript; Lecture 16, slide 19 · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 106–108, eqs. (4.81)–(4.85).*
+*Sources: Yu Zhao-Huan, 量子场论讲义, §6.5.3 "两体散射运动学", pp. 247–250, eqs. (6.336)–(6.366), Fig. 6.5 (page images checked, PDF pp. 255–258); Exercise 6.7, eq. (6.424); §6.5.2, p. 244, the sentence after eq. (6.318) (for the annotated formula) · the user's PHY 513 notes, Ch. 15 §15.7 (Derivation "Two-body phase space in the CM frame", paragraph "The momentum (filled in)", Principle "$2\to2$ differential cross section in the CM frame", Derivation "The equal-mass case", paragraph "Why $1/E_{\rm cm}^2$") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part B, slide 16 (for the annotated formula), Part C, slides 20–21, 25, and transcript; Lecture 16, slide 19 · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 106–108, eqs. (4.81)–(4.85).*
 
-Two particles in, two out: the simplest final state, and the one the course works out (Lecture 15, Part C, slides 20–21). The cross section of [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]] needs the phase space $d\Pi_2$ explicitly ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]]). In the centre-of-mass frame ([[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]]) energy and momentum conservation fix both final energies and the common momentum, written with the Källén function ([[§C6b.4 Two-Body Scattering Kinematics#^def-c6b-4-1|Def. §C6b.4.1]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]]), and the phase space reduces to an integral over the direction of one final particle ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]). The results: the $2 \to 2$ differential cross section in the centre-of-mass frame ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]]), its integral and the azimuthal symmetry ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-5|Theorem §C6b.4.5]]), the factor for two identical final particles read as half the sphere ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-6|Theorem §C6b.4.6]]), and the special cases of equal masses in pairs ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]]) and of all masses equal ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|Theorem §C6b.4.8]]). Yu §6.5.3, eqs. (6.336)–(6.366), is followed; the same formulas with $E_{\rm cm} \to m_A$ give the two-body decays of [[§C6b.6 Decay Kinematics|§C6b.6]].
+Two particles in, two out: the simplest final state, and the one the course works out (Lecture 15, Part C, slides 20–21). The cross section of [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]] needs the phase space $d\Pi_2$ explicitly ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]]). The section first writes that formula once with every factor labelled by its origin (the annotated formula). In the centre-of-mass frame ([[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]]) energy and momentum conservation fix both final energies and the common momentum, written with the Källén function ([[§C6b.4 Two-Body Scattering Kinematics#^def-c6b-4-1|Def. §C6b.4.1]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]]), and the phase space reduces to an integral over the direction of one final particle ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]). The results: the $2 \to 2$ differential cross section in the centre-of-mass frame ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]]), its integral and the azimuthal symmetry ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-5|Theorem §C6b.4.5]]), the factor for two identical final particles read as half the sphere ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-6|Theorem §C6b.4.6]]), and the special cases of equal masses in pairs ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]]; then $t, u \le 0$: [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|Theorem §C6b.4.8]]) and of all masses equal ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-9|Theorem §C6b.4.9]]). Yu §6.5.3, eqs. (6.336)–(6.366), is followed; the same formulas with $E_{\rm cm} \to m_A$ give the two-body decays of [[§C6b.6 Decay Kinematics|§C6b.6]].
 
 **Setup.** Kinematics only: a $2 \to 2$ process $A + B \to 1 + 2$ with on-shell momenta, $p_A + p_B = p_1 + p_2$, and an amplitude $\mathcal M$ supplied from outside (the Feynman rules, [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]]). The cross section is the main-line formula of [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]] (box route, [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] with [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]) or, equivalently, the wave-packet formula of [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]; both are evaluated in the centre-of-mass frame, beams along $z$, $\mathbf p_B = -\mathbf p_A$. The kinematic formulas are exact; the cross sections inherit the range of validity of $\mathcal M$ (exact if the interaction switches off, lowest order for a permanent interaction: [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]], [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]).
 
 *Conventions* ([[Larsen PHY 513]]): collinear beams along $z$; $E_{\rm cm}$ the total energy in the centre-of-mass frame ([[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]]; "c.m.s." on the slides, $E_{\rm CM}$ in Yu); $p_1 \equiv |\mathbf p_1|$; $\theta$ the scattering angle between $\mathbf p_A$ and $\mathbf p_1$ (Yu Fig. 6.5); Yu writes $\lambda^{1/2}(1, m_1^2/E_{\rm CM}^2, m_2^2/E_{\rm CM}^2)$ with dimensionless arguments, these notes mostly $\lambda^{1/2}(E_{\rm cm}^2, m_1^2, m_2^2) = E_{\rm cm}^2\lambda^{1/2}(1, \dots)$.
+
+## The annotated formula
+
+The cross section that this section evaluates ([[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]], 2), written once with every factor labelled by the box that produced it: the box route of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]]–[[§C6b.3 The Cross Section|§C6b.3]] and, in the last column, the careful route of [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]]–[[§C6b.9 Evaluating the Cross Section|§C6b.9]].
+
+$$
+d\sigma = \underbrace{\underbrace{\frac{1}{2E_A\,2E_B}}_{\text{(a)}}\;\underbrace{\frac{1}{|\mathbf v_A - \mathbf v_B|}}_{\text{(b)}}}_{\text{flux factor}}\;\;\underbrace{|\mathcal M|^2}_{\text{(c) dynamics}}\;\;\underbrace{\prod_{j=1}^n\underbrace{\frac{d^3p_j}{(2\pi)^3}}_{\text{(d)}}\,\underbrace{\frac{1}{2E_j}}_{\text{(e)}}\;\underbrace{(2\pi)^4\delta^4\Bigl(p_A + p_B - \sum_jp_j\Bigr)}_{\text{(f)}}}_{\text{phase space }d\Pi_n}
+$$
+
+| label | factor | where it comes from | box | careful route |
+|---|---|---|---|---|
+| (a) | $\frac{1}{2E_A\,2E_B}$ | the norm of the initial state, $\langle i\vert i\rangle = 2E_A\tilde V\cdot2E_B\tilde V$: relativistic normalization of the two incoming particles | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4\|Theorem §C6b.2.4]], 2 | the packet factor $1/\sqrt{2E}$, [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-2\|Def. §C6b.8.2]]; [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3\|Derivation §C6b.9.3]], Step 6 |
+| (b) | $\frac{1}{\lvert\mathbf v_A - \mathbf v_B\rvert}$ | the flux $j_B = n_B\lvert\mathbf v_B\rvert = \lvert\mathbf v_B\rvert/\tilde V$: cross section = rate / flux; in any collinear frame the Møller velocity | [[§C6b.3 The Cross Section#^def-c6b-3-1\|Def. §C6b.3.1]], [[§C6b.3 The Cross Section#^thm-c6b-3-4\|Theorem §C6b.3.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-6\|Theorem §C6b.3.6]] | the Jacobian of the longitudinal delta functions, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1\|Theorem §C6b.9.1]] |
+| (c) | $\lvert\mathcal M\rvert^2$ | the squared amplitude with the $\delta^4$ taken out: the only dynamical factor | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3\|Theorem §C6b.2.3]] | $\mathcal M\bar{\mathcal M}^\ast$ at $\bar k = k$, [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3\|Derivation §C6b.9.3]], Steps 2, 5–6 |
+| (d) | $\frac{d^3p_j}{(2\pi)^3}$ | the number of box states in $d^3p_j$, $\tilde V\,d^3p_j/(2\pi)^3$, with $\tilde V$ cancelled | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-6\|Theorem §C6b.2.6]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-7\|Theorem §C6b.2.7]] | the completeness measure in $\mathcal P(\mathbf b)$, [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-4\|Def. §C6b.8.4]] |
+| (e) | $\frac{1}{2E_j}$ | the norm of the final state, $\langle f\vert f\rangle = \prod_j2E_j\tilde V$ | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4\|Theorem §C6b.2.4]], 3; [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-7\|Theorem §C6b.2.7]] | the same measure ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2\|Def. §C2a.4.2]]) |
+| (f) | $(2\pi)^4\delta^4(\cdots)$ | the second copy of $\delta^4$ in the squared amplitude; the first became $\tilde V\tilde T$ | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3\|Theorem §C6b.2.3]] | the $\delta^4$ of the unbarred amplitude, never used up ([[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3\|Derivation §C6b.9.3]], Step 9) |
+
+Two more factors do not appear in $d\sigma$. $\frac{1}{S_{\rm id}}$ enters only when $d\sigma$ is integrated over all final momenta ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]], [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]). The box volume $\tilde V$ and the duration $\tilde T$ cancel (table in [[§C6b.3 The Cross Section#^der-c6b-3-4|Derivation §C6b.3.4]], Step 4).
+
+> [!remark] Remark: Dynamics and kinematics
+> Yu, after (6.318): in the cross section "不变振幅模方 $|\mathcal M|^2$ 是动力学因素，而其它部分都属于运动学因素" (the squared invariant amplitude is the dynamical factor, everything else is kinematics). Factors (a), (b) belong to the initial state, (d)–(f) to the final state, and only (c) knows the theory; this is the course's "dynamical data" ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^rem-c6b-1-3|§C6b.1, Remark: What "dynamical" means]]) and the lecture's reading of the formula ([[§C6b.9 Evaluating the Cross Section#^rem-c6b-9-2|§C6b.9, Remark: Reading the formula]]).
+>
+> *Source: Yu §6.5.2, p. 244 · PHY 513 Lecture 15, slide 16*
+
+^rem-c6b-4-1
 
 ## Two-body phase space in the centre-of-mass frame
 
@@ -24,7 +50,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.7*
 
-^rem-c6b-4-1
+^rem-c6b-4-2
 
 > [!definition] Definition §C6b.4.1: The Källén Function
 > The **Källén function** is the polynomial
@@ -100,7 +126,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 > **What the derivation shows.**
 > - Two of the six final momentum components remain, the direction $\Omega$ of $\mathbf p_1$; the particles come out "back to back".
 > - The zero exists only if $E_{\rm cm} > m_1 + m_2$ (Yu eq. (6.339)): at $p_1 = 0$ the sum $E_1 + E_2$ is $m_1 + m_2$, and it increases with $p_1$ → [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]].
-> - Checked by smearing the energy delta function in `qft-C/tools/l15/checks.py` ($E_{\rm cm} = 5$, $m_1 = 1.2$, $m_2 = 0.7$).
+> - Checked numerically by smearing the energy delta function ($E_{\rm cm} = 5$, $m_1 = 1.2$, $m_2 = 0.7$).
 
 ^der-c6b-4-1
 
@@ -185,7 +211,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 > E_AE_B|\mathbf v_A - \mathbf v_B| = E_{\rm cm}|\mathbf p_A| = \frac12\lambda^{1/2}(E_{\rm cm}^2, m_A^2, m_B^2) = \frac{E_{\rm cm}^2}{2}\,\lambda^{1/2}\Bigl(1, \frac{m_A^2}{E_{\rm cm}^2}, \frac{m_B^2}{E_{\rm cm}^2}\Bigr) ,
 > $$
 >
-> with $\lambda$ of [[§C6b.4 Two-Body Scattering Kinematics#^def-c6b-4-1|Def. §C6b.4.1]]; it agrees with the invariant form $\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2}$ of [[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]].
+> with $\lambda$ of [[§C6b.4 Two-Body Scattering Kinematics#^def-c6b-4-1|Def. §C6b.4.1]]; it agrees with the invariant form $\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2}$ of [[§C6b.3 The Cross Section#^thm-c6b-3-7|Corollary §C6b.3.7]].
 >
 > *Model:* any (kinematics); *applies:* centre-of-mass frame, any masses.
 >
@@ -217,7 +243,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 
 ^der-c6b-4-3
 
-*Uses:* [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]], [[§C6b.4 Two-Body Scattering Kinematics#^def-c6b-4-1|Def. §C6b.4.1]], [[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]]
+*Uses:* [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]], [[§C6b.4 Two-Body Scattering Kinematics#^def-c6b-4-1|Def. §C6b.4.1]], [[§C6b.3 The Cross Section#^thm-c6b-3-7|Corollary §C6b.3.7]]
 
 ## 2 → 2 scattering in the centre-of-mass frame
 
@@ -361,18 +387,13 @@ Two particles in, two out: the simplest final state, and the one the course work
 > \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{\beta_f\,|\mathcal M|^2}{64\pi^2E_{\rm cm}^2\,\beta_i} ;
 > $$
 >
-> 4. if the two final particles are identical, $S_{\rm id} = 2$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-6|Theorem §C6b.4.6]]); otherwise $S_{\rm id} = 1$;
-> 5. the momentum transfers are spacelike or zero: with $t = (p_A - p_1)^2$, $u = (p_A - p_2)^2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-7|Theorem §C6b.1.7]]),
+> 4. if the two final particles are identical, $S_{\rm id} = 2$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-6|Theorem §C6b.4.6]]); otherwise $S_{\rm id} = 1$.
 >
-> $$
-> t = -|\mathbf p_A - \mathbf p_1|^2 \le 0 , \qquad u = -|\mathbf p_A - \mathbf p_2|^2 \le 0 ,
-> $$
+> The equal energies of part 1 hold also for $m_i \ne m_f$; they make the momentum transfers $t$, $u$ spacelike or zero ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|Theorem §C6b.4.8]]).
 >
-> a Lorentz-invariant statement, true in every frame although read off in the centre-of-mass frame, and true for $m_i \ne m_f$. Hence a particle of mass $m_3 > 0$ exchanged in the $t$- or $u$-channel has $t - m_3^2 \le -m_3^2 < 0$, $u - m_3^2 < 0$: its propagator never goes on shell in the physical region, and the $i\varepsilon$ may be dropped ([[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-3|Example §C6c.6.3]]).
+> *Model:* as in [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]]; *applies:* as there, masses equal in pairs.
 >
-> *Model:* as in [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]]; *applies:* as there, masses equal in pairs; part 5 is kinematics only, any theory.
->
-> *Source: Yu §6.5.3, eqs. (6.358)–(6.365) (page image checked) · PHY 513, Problem Set 9, Problem 3(b)–(c) (the user's solution: "in the center of mass frame both $\phi_1$'s and both $\phi_2$'s have energy $E_{\text{cms}}/2$ … $(p_A - p_{1,2})^2 = -|\mathbf p_A - \mathbf p_{1,2}|^2 \le 0$, a Lorentz-invariant statement"; taught through the problem set, hence unstarred)*
+> *Source: Yu §6.5.3, eqs. (6.358)–(6.365) (page image checked) · PHY 513, Problem Set 9, Problem 3(b)–(c) (the user's solution: "in the center of mass frame both $\phi_1$'s and both $\phi_2$'s have energy $E_{\text{cms}}/2$"; taught through the problem set, hence unstarred)*
 
 ^thm-c6b-4-7
 
@@ -395,16 +416,45 @@ Two particles in, two out: the simplest final state, and the one the course work
 >
 > **Step 6** (part 4). Two identical final particles: [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-6|Theorem §C6b.4.6]]. Particles of different species are never counted twice.
 >
-> **Step 7** (part 5). By Step 1, $E_A = E_1 = E_2 = E_{\rm cm}/2$ also when $m_i \ne m_f$. So $t = (p_A - p_1)^2 = (E_A - E_1)^2 - |\mathbf p_A - \mathbf p_1|^2 = -|\mathbf p_A - \mathbf p_1|^2 \le 0$, and the same for $u$ with $p_2$. $t$ and $u$ are Lorentz scalars ([[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]]), so their sign is the same in every frame; with $m_3^2 > 0$, $t - m_3^2 \le -m_3^2 < 0$: the denominator $t - m_3^2 + i\varepsilon$ has a nonzero limit, and $\varepsilon \to 0$ may be taken inside it.
->
 > **What the derivation shows.**
-> - All masses equal is $\beta_i = \beta_f$: [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|Theorem §C6b.4.8]].
+> - All masses equal is $\beta_i = \beta_f$: [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-9|Theorem §C6b.4.9]].
+> - Step 1 needs only that the masses are equal within each pair: $E_A = E_1 = E_2 = E_{\rm cm}/2$ also when $m_i \ne m_f$. ⚑ By-product: the momentum transfers are then spacelike → [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|Theorem §C6b.4.8]].
 
 ^der-c6b-4-7
 
 *Uses:* [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]], [[§C6b.4 Two-Body Scattering Kinematics#^def-c6b-4-1|Def. §C6b.4.1]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-6|Theorem §C6b.4.6]]
 
-> [!theorem] Theorem §C6b.4.8: All Masses Equal
+> [!theorem] Theorem §C6b.4.8: Momentum Transfers Are Spacelike for Masses Equal in Pairs
+> Let $m_A = m_B = m_i$ and $m_1 = m_2 = m_f$, as in [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]]. Then the momentum transfers are spacelike or zero: with $t = (p_A - p_1)^2$, $u = (p_A - p_2)^2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-7|Theorem §C6b.1.7]]),
+>
+> $$
+> t = -|\mathbf p_A - \mathbf p_1|^2 \le 0 , \qquad u = -|\mathbf p_A - \mathbf p_2|^2 \le 0 ,
+> $$
+>
+> a Lorentz-invariant statement, true in every frame although read off in the centre-of-mass frame, and true for $m_i \ne m_f$. Hence a particle of mass $m_3 > 0$ exchanged in the $t$- or $u$-channel has $t - m_3^2 \le -m_3^2 < 0$, $u - m_3^2 < 0$: its propagator never goes on shell in the physical region, and the $i\varepsilon$ may be dropped ([[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-3|Example §C6c.6.3]]).
+>
+> *Model:* any (kinematics); *applies:* a $2 \to 2$ process with on-shell momenta and masses equal in pairs; kinematics only, any theory.
+>
+> *Source: PHY 513, Problem Set 9, Problem 3(b)–(c) (the user's solution: "in the center of mass frame both $\phi_1$'s and both $\phi_2$'s have energy $E_{\text{cms}}/2$ … $(p_A - p_{1,2})^2 = -|\mathbf p_A - \mathbf p_{1,2}|^2 \le 0$, a Lorentz-invariant statement"; taught through the problem set, hence unstarred)*
+
+^thm-c6b-4-8
+
+> [!derivation]- Derivation
+> **Step 1** (equal energies). By [[§C6b.4 Two-Body Scattering Kinematics#^der-c6b-4-7|Derivation §C6b.4.7]], Step 1 ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]], 1), $E_A = E_1 = E_2 = E_{\rm cm}/2$ also when $m_i \ne m_f$.
+>
+> **Step 2** (the transfers). So $t = (p_A - p_1)^2 = (E_A - E_1)^2 - |\mathbf p_A - \mathbf p_1|^2 = -|\mathbf p_A - \mathbf p_1|^2 \le 0$, and the same for $u$ with $p_2$.
+>
+> **Step 3** (every frame; the $i\varepsilon$). $t$ and $u$ are Lorentz scalars ([[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]]), so their sign is the same in every frame; with $m_3^2 > 0$, $t - m_3^2 \le -m_3^2 < 0$: the denominator $t - m_3^2 + i\varepsilon$ has a nonzero limit, and $\varepsilon \to 0$ may be taken inside it.
+>
+> **What the derivation shows.**
+> - Only the equality of the three energies is used: the statement is kinematics, the same in every theory and for $m_i \ne m_f$.
+> - Used where a massive particle is exchanged in the $t$- and $u$-channels between pairs of equal mass → [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-3|Example §C6c.6.3]].
+
+^der-c6b-4-8
+
+*Uses:* [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-7|Theorem §C6b.1.7]], [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]]
+
+> [!theorem] Theorem §C6b.4.9: All Masses Equal
 > If the four particles of a $2 \to 2$ process have the same mass,
 >
 > $$
@@ -417,7 +467,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 >
 > *Source: PHY 513 Lecture 15, slide 21 ("If all masses are identical: … $(\frac{d\sigma}{d\Omega})_{\rm c.m.s.} = \frac{1}{64\pi^2E_{\rm c.m.}^2}\cdot|\mathcal M|^2$. Applies in important special cases: 2 particles in, 2 particles out (all identical). High energy $E \gg m_i$ ⇒ all masses effectively vanish."), slide 25, and transcript · the user's PHY 513 notes, Ch. 15 §15.7, eq. (dsdO64), Derivation "The equal-mass case" · PS §4.5, eq. (4.85) · Yu §6.5.3, eq. (6.366)*
 
-^thm-c6b-4-8
+^thm-c6b-4-9
 
 > [!derivation]- Derivation
 > **Step 1** (initial energies). In the centre-of-mass frame $\mathbf p_B = -\mathbf p_A$, and with $m_A = m_B = m$,
@@ -455,7 +505,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 > **What the derivation shows.**
 > - The $|\mathbf p_1|$ of the final phase space cancels the one of the initial velocity, so the initial-state and final-state factors combine.
 
-^der-c6b-4-8
+^der-c6b-4-9
 
 *Uses:* [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]]
 
@@ -466,7 +516,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.7 (paragraph "Why $1/E_{\rm cm}^2$") · PHY 513 Lecture 16, slide 19 ("No angular dependence (feature of spin-less particles). Simple energy dependence (follows by dimensional analysis). Special to $\phi^4$-theory at leading order"; $\sigma_{\rm tot} = \lambda^2/(32\pi E_{\rm cm}^2)$, "note: identical particles")*
 
-^rem-c6b-4-2
+^rem-c6b-4-3
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
@@ -478,5 +528,5 @@ Two particles in, two out: the simplest final state, and the one the course work
 > - The classical cross section transforms between the laboratory and centre-of-mass frames with an explicit Jacobian of the angles; here the transformation is built into the invariance of $d\Pi_2$ — [[§B4.2 Scattering Cross-Sections and Rutherford Scattering#^thm-b4-2-6|CM Theorem §B4.2.6]].
 > - The same two-body formulas with $E_{\rm cm} \to m_A$ give the decay kinematics: a particle at rest is the centre-of-mass frame of its decay products — [[§C6b.6 Decay Kinematics#^thm-c6b-6-1|Theorem §C6b.6.1]], [[§C6b.5 Decay Widths#^thm-c6b-5-8|Theorem §C6b.5.8]].
 > - With unequal masses, $2 \to 2$ and its reverse at the same $E_{\rm cm}$ have flux factors $4|\mathbf k|E_{\rm cm}$ and $4|\mathbf k'|E_{\rm cm}$; with time-reversal invariance their unpolarized cross sections differ only by $\mathbf k'^2$ against $\mathbf k^2$ and the spin multiplicities — [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-6|Theorem §C9.13.6]].
-> - The Källén function also writes the invariant flux factor, $\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = \frac12\lambda^{1/2}(s, m_A^2, m_B^2)$, and the invariant masses of three-body decays reuse the two-body energies in the rest frame of a pair — ★ [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|Theorem §C6b.4.3]], [[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]], ★ [[§C6b.6 Decay Kinematics#^thm-c6b-6-8|Theorem §C6b.6.8]].
+> - The Källén function also writes the invariant flux factor, $\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = \frac12\lambda^{1/2}(s, m_A^2, m_B^2)$, and the invariant masses of three-body decays reuse the two-body energies in the rest frame of a pair — ★ [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|Theorem §C6b.4.3]], [[§C6b.3 The Cross Section#^thm-c6b-3-7|Corollary §C6b.3.7]], ★ [[§C6b.6 Decay Kinematics#^thm-c6b-6-8|Theorem §C6b.6.8]].
 > - The identical-particle factor as half the sphere is the counting of final states of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]] and [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]] made geometric.

@@ -338,7 +338,7 @@ Amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^de
 > \mathcal M = -g^2\Bigl[\frac{1}{(p_A - p_1)^2 - m_3^2} + \frac{1}{(p_A - p_2)^2 - m_3^2}\Bigr] , \qquad \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{|\mathbf p_1|}{64\pi^2E_{\rm cm}^2\,|\mathbf p_A|}\,|\mathcal M|^2 :
 > $$
 >
-> the $t$- and $u$-channel exchange of a $\phi_3$, no $s$-channel ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-6|Theorem §C6c.6.6]], 2), and the $i\varepsilon$ dropped because $t, u \le 0$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]], 5).
+> the $t$- and $u$-channel exchange of a $\phi_3$, no $s$-channel ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-6|Theorem §C6c.6.6]], 2), and the $i\varepsilon$ dropped because $t, u \le 0$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|Theorem §C6b.4.8]]).
 >
 > **Step 1** (the diagrams). $O(g^2)$ means two vertices. Each vertex has exactly one leg of each of $\phi_1$, $\phi_2$, $\phi_3$, so two vertices have two legs of each field. The two incoming $\phi_1$ and the two outgoing $\phi_2$ use up all the $\phi_1$ and $\phi_2$ legs, one $\phi_1$ and one $\phi_2$ on each vertex; the remaining $\phi_3$ legs, one on each vertex, form the internal line. The particles are labelled, so a diagram is fixed by which of $p_1$, $p_2$ shares a vertex with $p_A$ (putting $p_A$ on the other vertex only exchanges the vertices): two diagrams, (t) and (u) in the figure.
 >
@@ -386,7 +386,7 @@ Amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^de
 > \langle p_1p_2|i\hat T|p_Ap_B\rangle = (-ig)^2\Bigl[\frac{i}{(p_A - p_1)^2 - m_3^2 + i\varepsilon} + \frac{i}{(p_A - p_2)^2 - m_3^2 + i\varepsilon}\Bigr](2\pi)^4\delta^4(p_A + p_B - p_1 - p_2) ,
 > $$
 >
-> and $(-ig)^2\,i = -ig^2$ gives the $\mathcal M$ of the statement, where the $i\varepsilon$ is dropped: in the centre-of-mass frame both $\phi_1$'s and both $\phi_2$'s have energy $E_{\rm cm}/2$, so $E_A = E_1 = E_2$ and $(p_A - p_{1,2})^2 = (E_A - E_{1,2})^2 - |\mathbf p_A - \mathbf p_{1,2}|^2 = -|\mathbf p_A - \mathbf p_{1,2}|^2 \le 0$, a Lorentz-invariant statement, so $(p_A - p_{1,2})^2 - m_3^2 \le -m_3^2 < 0$ and the denominators do not vanish ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]], 5).
+> and $(-ig)^2\,i = -ig^2$ gives the $\mathcal M$ of the statement, where the $i\varepsilon$ is dropped: in the centre-of-mass frame both $\phi_1$'s and both $\phi_2$'s have energy $E_{\rm cm}/2$, so $E_A = E_1 = E_2$ and $(p_A - p_{1,2})^2 = (E_A - E_{1,2})^2 - |\mathbf p_A - \mathbf p_{1,2}|^2 = -|\mathbf p_A - \mathbf p_{1,2}|^2 \le 0$, a Lorentz-invariant statement, so $(p_A - p_{1,2})^2 - m_3^2 \le -m_3^2 < 0$ and the denominators do not vanish ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|Theorem §C6b.4.8]]).
 >
 > **Step 8** (the cross section). For $2 \to 2$ in the centre-of-mass frame ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]])
 >
@@ -410,7 +410,7 @@ Amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^de
 > [!remark]- Connections
 > - What the rules drop is what §C6c.3–§C6c.5 sorted out: $\delta$-lines and forward pieces are the $\mathbb 1$, bubbles the vacuum's normalization — [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], [[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]].
 > - A tree amplitude with one exchanged particle is a sum of poles in the invariants of $2 \to 2$ kinematics — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-7|Theorem §C6b.1.7]]; the loop of Example §C6c.5.1 diverges logarithmically, the starting point of renormalization (second semester).
-> - Several fields: the vertex content selects the channels, and with masses equal in pairs the exchange denominators of the $t$- and $u$-channels never vanish — [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-6|Theorem §C6c.6.6]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]], 5.
+> - Several fields: the vertex content selects the channels, and with masses equal in pairs the exchange denominators of the $t$- and $u$-channels never vanish — [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-6|Theorem §C6c.6.6]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|Theorem §C6b.4.8]].
 > - With fermions the same rules hold with spinors on external lines, $S_F$ on internal ones, a sign per contraction pattern and no symmetry factors — [[§C6d.6 Momentum-Space Feynman Rules#^thm-c6d-6-2|§C6d.6, Theorem §C6d.6.2]].
 > - The vertex factors and lines are those of the correlation functions — [[§C6a.13 Feynman Rules for Polynomial Interactions|§C6a.13]]; the amputation route to the same $i\mathcal M$ and its LSZ form — [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]].
 > - With fermions too only the vertex is theory-specific, but the relative signs of several diagrams must be taken from the contractions — [[§C6d.6 Momentum-Space Feynman Rules#^thm-c6d-6-1|Theorem §C6d.6.1]], [[§C6d.6 Momentum-Space Feynman Rules#^cau-c6d-6-1|§C6d.6, Caution: Relative signs still need the contractions]].

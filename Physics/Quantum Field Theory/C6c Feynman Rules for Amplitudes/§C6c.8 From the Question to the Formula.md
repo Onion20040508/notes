@@ -202,7 +202,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > 2E_A\,2E_B\,|\mathbf v_A - \mathbf v_B| = 4E_AE_B\Bigl(\frac{p}{E_A} + \frac{p}{E_B}\Bigr) = 4p\,(E_A + E_B) = 4p\,E_{\rm cm} \quad\Longrightarrow\quad \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{|\mathcal M|^2}{4pE_{\rm cm}}\cdot\frac{p}{16\pi^2E_{\rm cm}} = \frac{|\mathcal M|^2}{64\pi^2E_{\rm cm}^2}
 > $$
 >
-> ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|Theorem §C6b.4.8]]; PS (4.84)–(4.85)).
+> ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-9|Theorem §C6b.4.9]]; PS (4.84)–(4.85)).
 >
 > **Result.** With $|\mathcal M|^2 = \lambda^2$ and $S_{\rm id} = 2!$ for the total cross section ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]):
 >
@@ -210,7 +210,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{\lambda^2}{64\pi^2E_{\rm cm}^2} , \qquad \sigma = \frac{1}{2!}\int d\Omega\,\frac{\lambda^2}{64\pi^2E_{\rm cm}^2} = \frac12\cdot4\pi\cdot\frac{\lambda^2}{64\pi^2E_{\rm cm}^2} = \frac{\lambda^2}{32\pi E_{\rm cm}^2} ,
 > $$
 >
-> the vault's [[§C6c.1 Amplitudes from Correlation Functions#^ex-c6c-1-2|Example §C6c.1.2]] (the two homes agree) and Lecture 16, slide 19. Check: $[\lambda] = 0$, $[\sigma] = -2$, an area. No angular dependence (spinless particles, lowest order) and $E_{\rm cm}^{-2}$ from dimensional analysis ([[§C6b.4 Two-Body Scattering Kinematics#^rem-c6b-4-2|§C6b.4, Remark: Why 1/E²: dimensional analysis]]).
+> the vault's [[§C6c.1 Amplitudes from Correlation Functions#^ex-c6c-1-2|Example §C6c.1.2]] (the two homes agree) and Lecture 16, slide 19. Check: $[\lambda] = 0$, $[\sigma] = -2$, an area. No angular dependence (spinless particles, lowest order) and $E_{\rm cm}^{-2}$ from dimensional analysis ([[§C6b.4 Two-Body Scattering Kinematics#^rem-c6b-4-3|§C6b.4, Remark: Why 1/E²: dimensional analysis]]).
 >
 > **Pitfalls.**
 > - *Free states are lowest order.* Beyond it each external line carries $\sqrt Z$ and the physical mass, and loops on external legs are not part of $\mathcal M$ ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]]; [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]).

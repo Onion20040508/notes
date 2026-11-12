@@ -76,7 +76,7 @@ The width of [[§C6b.5 Decay Widths|§C6b.5]] appears a second time: in the prop
 > p^0 = E_{\mathbf p}\sqrt{1 - \frac{im\Gamma}{E_{\mathbf p}^2}} = E_{\mathbf p}\Bigl(1 - \frac{im\Gamma}{2E_{\mathbf p}^2} + \frac{m^2\Gamma^2}{8E_{\mathbf p}^4} + O(\Gamma^3)\Bigr) = E_{\mathbf p} - \frac{im\Gamma}{2E_{\mathbf p}} + \frac{m^2\Gamma^2}{8E_{\mathbf p}^3} + O(\Gamma^3) ,
 > $$
 >
-> which agrees with Step 3 to first order in $\Gamma$. (The pole has left the real axis, so the propagator no longer divides by zero on the mass shell.) Numerically, $m = 2$, $\Gamma = 0.05$, $|\mathbf p| = 1.3$: $-2\operatorname{Im}p^0 = 0.041921$ against $\frac{m}{E_{\mathbf p}}\Gamma = 0.041922$ (`qft-C/tools/l15/checks.py`).
+> which agrees with Step 3 to first order in $\Gamma$. (The pole has left the real axis, so the propagator no longer divides by zero on the mass shell.) Numerically, $m = 2$, $\Gamma = 0.05$, $|\mathbf p| = 1.3$: $-2\operatorname{Im}p^0 = 0.041921$ against $\frac{m}{E_{\mathbf p}}\Gamma = 0.041922$ (checked numerically).
 >
 > **What the derivation shows.**
 > - With $\varepsilon \to m\Gamma$ the pole at $+E_{\mathbf p}$ moves a finite distance below the real axis, where the Feynman prescription had put it infinitesimally ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]).
@@ -199,7 +199,7 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > \frac{1}{4m^2}\,\frac{1}{(\sqrt s - m)^2 + \Gamma^2/4} = \frac12\cdot\frac{1}{4m^2}\,\frac{4}{\Gamma^2} \;\Leftrightarrow\; (\sqrt s - m)^2 + \frac{\Gamma^2}{4} = \frac{\Gamma^2}{2} \;\Leftrightarrow\; \sqrt s = m \pm \frac\Gamma2 ,
 > $$
 >
-> a full width $(m + \frac\Gamma2) - (m - \frac\Gamma2) = \Gamma$, which is why $\Gamma$ is called the width (Yu after eq. (10.274): "这是它被称为“宽度”的原因"). For the exact form the full width is $\Gamma$ only to leading order: $1.00008\,\Gamma$ at $\Gamma/m = 1/40$, $1.0013\,\Gamma$ at $\Gamma/m = 1/10$ (`qft-C/tools/l15/checks.py`).
+> a full width $(m + \frac\Gamma2) - (m - \frac\Gamma2) = \Gamma$, which is why $\Gamma$ is called the width (Yu after eq. (10.274): "这是它被称为“宽度”的原因"). For the exact form the full width is $\Gamma$ only to leading order: $1.00008\,\Gamma$ at $\Gamma/m = 1/40$, $1.0013\,\Gamma$ at $\Gamma/m = 1/10$ (checked numerically).
 >
 > **Step 4** (normalization and limit). With $x = \sqrt s - m$, $c = \Gamma/2$ and the range of $\sqrt s$ extended to $\pm\infty$ (harmless for $\Gamma \ll m$),
 >

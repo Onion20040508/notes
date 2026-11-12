@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: Yu Zhao-Huan, 量子场论讲义, §6.5.2 "散射截面", pp. 242–246, eqs. (6.307)–(6.331), Fig. 6.4 (page images checked, PDF pp. 250–254) · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slide 8 ("Cross-section … is a universal event rate"), slides 16, 20, 24, and transcript · the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)"), §15.5, §15.6 (eq. (moller)), §15.10 (paragraph "Correspondence with Yu") · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 99–101, 106, eqs. (4.59)–(4.61), (4.79)–(4.80).*
 
-**What is prepared.** A beam of particles $B$, all with the same velocity, falls on a target of particles $A$ at rest ([[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]]). **What is measured.** The number $N$ of scattering events, with the final particles in a given range of momenta, during a time $t$. The cross section is that count with the beam and the target divided out ([[§C6b.3 The Cross Section#^def-c6b-3-2|Def. §C6b.3.2]]). Applied to one $A$ and one $B$ in the box of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]], it is the rate of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]] divided by the flux, and the last power of the box volume cancels ([[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]). The Møller velocity makes the result Lorentz invariant ([[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]]); for collinear beams it is the velocity difference $|\mathbf v_A - \mathbf v_B|$ ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]), and the differential cross section ([[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]) is the formula of the lecture. The section ends with that formula written once, every factor labelled by the box that produced it. Along the way the section collects what the cross section needs in every frame: the flux factor in invariant form ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]]), the phase space and its invariance ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-8|Theorem §C6b.3.8]]), the dimension of $d\sigma$ ([[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]]), and the centre-of-mass frame with the threshold of a process ([[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]], [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]]). Yu §6.5.2 is followed step by step; the course's own derivation of the same formula, with wave packets, comes after the decays, in [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]]–[[§C6b.9 Evaluating the Cross Section|§C6b.9]].
+**What is prepared.** A beam of particles $B$, all with the same velocity, falls on a target of particles $A$ at rest ([[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]]). **What is measured.** The number $N$ of scattering events, with the final particles in a given range of momenta, during a time $t$. The cross section is that count with the beam and the target divided out ([[§C6b.3 The Cross Section#^def-c6b-3-2|Def. §C6b.3.2]]). Applied to one $A$ and one $B$ in the box of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]], it is the rate of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]] divided by the flux, and the last power of the box volume cancels ([[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]). The Møller velocity makes the result Lorentz invariant ([[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]]); for collinear beams it is the velocity difference $|\mathbf v_A - \mathbf v_B|$ ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]), and the differential cross section ([[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]) is the formula of the lecture. That formula is written once, every factor labelled by the box that produced it, at the opening of [[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]]. Along the way the section collects what the cross section needs in every frame: the flux factor in invariant form ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Corollary §C6b.3.7]]), the phase space and its invariance ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-8|Theorem §C6b.3.8]]), the dimension of $d\sigma$ ([[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]]), and the centre-of-mass frame with the threshold of a process ([[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]], [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]]). Yu §6.5.2 is followed step by step; the course's own derivation of the same formula, with wave packets, comes after the decays, in [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]]–[[§C6b.9 Evaluating the Cross Section|§C6b.9]].
 
 *Conventions* ([[Larsen PHY 513]]): $\mathbf v = \mathbf p/E = \partial E_{\mathbf p}/\partial\mathbf p$, the group velocity of a packet peaked at $\mathbf p$; $a$ is the cross-sectional area of the beam (Yu: $A$) and $V$ the volume it sweeps (Yu: $V$), not the box volume $\tilde V$; $\mathcal R$ is a rate per unit volume, $R$ the rate of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]] ([[§C6b.2 Transition Probabilities in a Box#^cau-c6b-2-1|§C6b.2, Caution: Names in Yu's §6.5.1]]); $S_{\rm id}$ the identical-particle factor.
 
@@ -41,12 +41,7 @@ tags: [quantum-field-theory, level-c]
 
 ^def-c6b-3-1
 
-> [!caution] Caution: The beam density n_B is per unit volume in the box route
-> Here $n_B$ is Yu's density, the number of beam particles per unit volume ([[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]]), $[n_B] = 3$, and the flux is $j_B = n_B|\mathbf v_B|$ ([[§C6b.3 The Cross Section#^def-c6b-3-1|Def. §C6b.3.1]]). The wave-packet route follows PS and uses the same letter for the number of $B$ particles per unit transverse area that pass the target in the time $t$, $n_B = j_Bt$, $[n_B] = 2$ ([[§C6b.8 Wave Packets and the Cross Section#^cau-c6b-8-3|§C6b.8, Caution: The beam density n_B is per unit area in the wave-packet route]]): that $n_B$ is this one times $|\mathbf v_B|\,t$. PS write the volume densities $\rho_{\mathcal A}$, $\rho_{\mathcal B}$ (eq. (4.59)). The flux $j_B$ and the cross section mean the same in both routes.
->
-> *Source: Yu §6.5.2, eq. (6.307) · PS §4.5, eq. (4.59), p. 105*
-
-^cau-c6b-3-3
+Here and everywhere in these notes $n_B$ is a number of particles per unit volume, $[n_B] = 3$ (Yu's $n_{\mathcal B}$; PS write the volume densities $\rho_{\mathcal A}$, $\rho_{\mathcal B}$, eq. (4.59)); the number of $B$ particles per unit transverse area that pass the target in the time $t$, which the wave-packet route needs and for which PS use the letter $n_{\mathcal B}$, is written $\nu_B = j_Bt = n_B|\mathbf v_B|\,t$, $[\nu_B] = 2$ ([[§C6b.8 Wave Packets and the Cross Section#^cau-c6b-8-1|§C6b.8, Caution: Names for the areal density of the beam]]).
 
 > [!definition] Definition §C6b.3.2: Cross Section (Operational)
 > The **cross section** $\sigma$ is the constant of proportionality in
@@ -57,7 +52,7 @@ tags: [quantum-field-theory, level-c]
 >
 > it is an area, the effective area that one target particle presents to the beam (散射截面, "相当于发生散射的有效面积"). Unit: the barn, $1\,\mathrm b = 10^{-28}\,\mathrm m^2$; in natural units $1\,\mathrm b = 2.568\times10^3\,\mathrm{GeV}^{-2}$ and $1\,\mathrm{GeV}^{-2} = 3.894\times10^{-4}\,\mathrm b = 0.3894\,\mathrm{mb}$. When only final momenta in a range are counted, the constant is the differential cross section $d\sigma$.
 >
-> This is the course's definition of the cross section as a universal event rate, [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-1|Def. §C6b.8.1]] (slide 8), stated for Yu's set-up: the same $N_{\rm events} = \sigma N_Aj_Bt$.
+> This is the course's cross section as a universal event rate (slide 8; [[§C6b.8 Wave Packets and the Cross Section#^rem-c6b-8-1|§C6b.8, Remark: The cross section as a universal event rate]]), stated for Yu's set-up: the same $N_{\rm events} = \sigma N_Aj_Bt$.
 >
 > *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]].
 >
@@ -249,7 +244,7 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 > is a product of four invariants (part 1 and part 3). In the rest frame of $A$, $v_{\rm Møl} = |\mathbf v_B|$ (part 2) and the product is $n_An_B\sigma|\mathbf v_B|$ of [[§C6b.3 The Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]]. Equivalently, $\mathcal R = dN/(d^3x\,dt)$ is a number of events, an invariant, per four-volume $d^4x$, also invariant ($|\det\Lambda| = 1$).
 >
 > **What the derivation shows.**
-> - Yu's choice builds the invariance in; the course instead shows that $E_AE_B|\mathbf v_A - \mathbf v_B|$ is a component of an antisymmetric tensor, invariant under boosts along the beam ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]]). For collinear beams the two agree ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]).
+> - Yu's choice builds the invariance in; the course instead shows that $E_AE_B|\mathbf v_A - \mathbf v_B|$ is a component of an antisymmetric tensor, invariant under boosts along the beam ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Corollary §C6b.3.7]]). For collinear beams the two agree ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]).
 > - $E_AE_B|\mathbf v_A - \mathbf v_B|$ alone is not invariant for general directions (Yu, after (6.314): "$E_{\mathcal A}E_{\mathcal B}v_{\rm rel}$ 并不是 Lorentz 不变量") → [[§C6b.3 The Cross Section#^cau-c6b-3-1|§C6b.3, Caution: The flux factor with the velocity difference is not a Lorentz scalar]].
 
 ^der-c6b-3-5
@@ -314,43 +309,41 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 >
 > **What the derivation shows.**
 > - The Møller velocity is the relativistic generalization of the relative velocity; for collinear beams it is the velocity difference measured in one frame, which can exceed 1: head-on at the speed of light $|\mathbf v_A - \mathbf v_B| = 2$ (Yu after (6.331); [[§C6b.3 The Cross Section#^cau-c6b-3-2|§C6b.3, Caution: The velocity difference is not a relative velocity]]).
-> - Multiplied by $E_AE_B$, Step 5 is the course's invariant form of the flux factor, [[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]].
+> - Multiplied by $E_AE_B$, Step 5 is the course's invariant form of the flux factor, [[§C6b.3 The Cross Section#^thm-c6b-3-7|Corollary §C6b.3.7]].
 
 ^der-c6b-3-6
 
 *Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-3|Def. §C6b.3.3]]
 
-> [!theorem] Theorem §C6b.3.7: The Flux Factor in Invariant Form
+> [!theorem] Corollary §C6b.3.7: The Flux Factor in Invariant Form (Collinear Beams)
 > For collinear beams,
 >
 > $$
 > E_AE_B\,|\mathbf v_A - \mathbf v_B| = \sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} ,
 > $$
 >
-> which is manifestly invariant. In general $\frac{1}{E_AE_B}\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = \sqrt{|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2}$, Yu's Møller velocity $v_{\rm Møl}$ ([[§C6b.3 The Cross Section#^def-c6b-3-3|Def. §C6b.3.3]]). The statement is [[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]], 1, multiplied by $E_AE_B$, and the invariant flux factor of [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]], 1, written for collinear beams: the same result in the form the course uses (the user's notes, eq. (moller)); its form with the Källén function is ★ [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|Theorem §C6b.4.3]], in the next section.
+> which is manifestly invariant. It is [[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]], 1, multiplied by $E_AE_B$, and the invariant flux factor of [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]], 1, written for collinear beams: the same result in the form the course uses (the user's notes, eq. (moller)); its form with the Källén function is ★ [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|Theorem §C6b.4.3]], in the next section. Without collinearity the right side is $E_AE_Bv_{\rm Møl}$, Yu's Møller velocity ([[§C6b.3 The Cross Section#^def-c6b-3-3|Def. §C6b.3.3]]) times $E_AE_B$, and $v_{\rm Møl} = \sqrt{|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2}$ ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]).
 >
-> *Model:* any (kinematics); *applies:* collinear beams for the first equality; any momenta for the second.
+> *Model:* any (kinematics); *applies:* collinear beams.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.6, eq. (moller) (filled in) · Yu §6.5.2, eqs. (6.315), (6.322)–(6.329)*
 
 ^thm-c6b-3-7
 
 > [!derivation]- Derivation
-> **Step 1** (the general identity). By [[§C6b.3 The Cross Section#^der-c6b-3-6|Derivation §C6b.3.6]], Steps 1–4 (Yu (6.322)–(6.328)): $p_A\cdot p_B = E_AE_B(1 - \mathbf v_A\cdot\mathbf v_B)$, $(1 - \mathbf v_A\cdot\mathbf v_B)^2 = |\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2 + (1 - |\mathbf v_A|^2)(1 - |\mathbf v_B|^2)$, and $E^2(1 - |\mathbf v|^2) = m^2$, which give
+> **Step 1** (collinear beams). By [[§C6b.3 The Cross Section#^der-c6b-3-6|Derivation §C6b.3.6]], Step 4 (Yu (6.322)–(6.328)),
 >
 > $$
 > (p_A\cdot p_B)^2 - m_A^2m_B^2 = E_A^2E_B^2\bigl(|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2\bigr) .
 > $$
 >
-> Divided by $E_A^2E_B^2$, its square root is the second equality of the statement ([[§C6b.3 The Cross Section#^der-c6b-3-6|Derivation §C6b.3.6]], Step 5).
->
-> **Step 2** (collinear beams). For collinear beams $\mathbf v_A\times\mathbf v_B = \mathbf 0$; take the square root of Step 1 ($E_AE_B > 0$):
+> For collinear beams $\mathbf v_A\times\mathbf v_B = \mathbf 0$; take the square root ($E_AE_B > 0$):
 >
 > $$
 > \sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = E_AE_B\,|\mathbf v_A - \mathbf v_B| .
 > $$
 >
-> **Step 3** (check in the rest frame of $A$). $p_A = (m_A, \mathbf 0)$, $E_B^2 - m_B^2 = |\mathbf p_B|^2$:
+> **Step 2** (check in the rest frame of $A$). $p_A = (m_A, \mathbf 0)$, $E_B^2 - m_B^2 = |\mathbf p_B|^2$:
 >
 > $$
 > \sqrt{(m_AE_B)^2 - m_A^2m_B^2} = m_A\sqrt{E_B^2 - m_B^2} = m_A|\mathbf p_B| , \qquad E_AE_B|\mathbf v_A - \mathbf v_B| = m_AE_B\,\frac{|\mathbf p_B|}{E_B} = m_A|\mathbf p_B| .
@@ -358,7 +351,7 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 >
 > **What the derivation shows.**
 > - For collinear beams the flux factor is a function of the invariant $p_A\cdot p_B$ alone, the algebraic reason behind the course's statement that the flux factor is invariant under boosts along the beam ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]], 1). The same invariant written with the antisymmetric tensor of the course's route is in [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-6|Derivation §C6b.9.6]], "What the derivation shows".
-> - Checked numerically in `qft-C/tools/l15/checks.py`.
+> - Checked numerically.
 
 ^der-c6b-3-7
 
@@ -371,7 +364,7 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 
 ^cau-c6b-3-2
 
-The course reaches frame independence by a second route: the flux factor $E_AE_B|\mathbf v_A - \mathbf v_B|$ of collinear beams is a component of an antisymmetric tensor, and the cross section transforms like an area, the same in the centre-of-mass frame and in a target frame ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-6|Theorem §C6b.9.6]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]]). It needs the cross section as an area in the plane of impact parameters, which the wave-packet route defines ([[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-6|Def. §C6b.8.6]]); it is therefore stated there, after the decays.
+The course reaches frame independence by a second route: the flux factor $E_AE_B|\mathbf v_A - \mathbf v_B|$ of collinear beams is a component of an antisymmetric tensor, and the cross section transforms like an area, the same in the centre-of-mass frame and in a target frame ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-6|Theorem §C6b.9.6]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]]). It needs the cross section as an area in the plane of impact parameters, which the wave-packet route defines ([[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-5|Def. §C6b.8.5]]); it is therefore stated there, after the decays.
 
 ## The differential cross section
 
@@ -468,7 +461,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 > $$
 >
 > **What the derivation shows.**
-> - Box route and wave-packet route give the same $d\sigma$; the course's form holds in every frame reached from the rest frame of $A$ along the beam axis, the centre-of-mass frame included ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]]).
+> - Box route and wave-packet route give the same $d\sigma$; the course's form holds in every frame reached from the rest frame of $A$ along the beam axis, the centre-of-mass frame included ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Corollary §C6b.3.7]]).
 > - Dimension: $[d\sigma] = -2$ for every $n$ ([[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]]).
 
 ^der-c6b-3-9
@@ -558,7 +551,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 > $$
 >
 > **What the derivation shows.**
-> - The growth of $|\mathcal M|^2$'s dimension with $n$ is exactly compensated by the phase space; checked for $n = 1, \dots, 5$ in `qft-C/tools/l15/checks.py`.
+> - The growth of $|\mathcal M|^2$'s dimension with $n$ is exactly compensated by the phase space; checked numerically for $n = 1, \dots, 5$.
 
 ^der-c6b-3-11
 
@@ -625,29 +618,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 
 *Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]], [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]
 
-## The annotated formula
-
-$$
-d\sigma = \underbrace{\underbrace{\frac{1}{2E_A\,2E_B}}_{\text{(a)}}\;\underbrace{\frac{1}{|\mathbf v_A - \mathbf v_B|}}_{\text{(b)}}}_{\text{flux factor}}\;\;\underbrace{|\mathcal M|^2}_{\text{(c) dynamics}}\;\;\underbrace{\prod_{j=1}^n\underbrace{\frac{d^3p_j}{(2\pi)^3}}_{\text{(d)}}\,\underbrace{\frac{1}{2E_j}}_{\text{(e)}}\;\underbrace{(2\pi)^4\delta^4\Bigl(p_A + p_B - \sum_jp_j\Bigr)}_{\text{(f)}}}_{\text{phase space }d\Pi_n}
-$$
-
-| label | factor | where it comes from | box | careful route |
-|---|---|---|---|---|
-| (a) | $\frac{1}{2E_A\,2E_B}$ | the norm of the initial state, $\langle i\vert i\rangle = 2E_A\tilde V\cdot2E_B\tilde V$: relativistic normalization of the two incoming particles | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4\|Theorem §C6b.2.4]], 2 | the packet factor $1/\sqrt{2E}$, [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-3\|Def. §C6b.8.3]]; [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3\|Derivation §C6b.9.3]], Step 6 |
-| (b) | $\frac{1}{\lvert\mathbf v_A - \mathbf v_B\rvert}$ | the flux $j_B = n_B\lvert\mathbf v_B\rvert = \lvert\mathbf v_B\rvert/\tilde V$: cross section = rate / flux; in any collinear frame the Møller velocity | [[§C6b.3 The Cross Section#^def-c6b-3-1\|Def. §C6b.3.1]], [[§C6b.3 The Cross Section#^thm-c6b-3-4\|Theorem §C6b.3.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-6\|Theorem §C6b.3.6]] | the Jacobian of the longitudinal delta functions, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1\|Theorem §C6b.9.1]] |
-| (c) | $\lvert\mathcal M\rvert^2$ | the squared amplitude with the $\delta^4$ taken out: the only dynamical factor | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3\|Theorem §C6b.2.3]] | $\mathcal M\bar{\mathcal M}^\ast$ at $\bar k = k$, [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3\|Derivation §C6b.9.3]], Steps 2, 5–6 |
-| (d) | $\frac{d^3p_j}{(2\pi)^3}$ | the number of box states in $d^3p_j$, $\tilde V\,d^3p_j/(2\pi)^3$, with $\tilde V$ cancelled | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-6\|Theorem §C6b.2.6]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-7\|Theorem §C6b.2.7]] | the completeness measure in $\mathcal P(\mathbf b)$, [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-5\|Def. §C6b.8.5]] |
-| (e) | $\frac{1}{2E_j}$ | the norm of the final state, $\langle f\vert f\rangle = \prod_j2E_j\tilde V$ | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4\|Theorem §C6b.2.4]], 3; [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-7\|Theorem §C6b.2.7]] | the same measure ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2\|Def. §C2a.4.2]]) |
-| (f) | $(2\pi)^4\delta^4(\cdots)$ | the second copy of $\delta^4$ in the squared amplitude; the first became $\tilde V\tilde T$ | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3\|Theorem §C6b.2.3]] | the $\delta^4$ of the unbarred amplitude, never used up ([[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3\|Derivation §C6b.9.3]], Step 9) |
-
-Two more factors do not appear in $d\sigma$. $\frac{1}{S_{\rm id}}$ enters only when $d\sigma$ is integrated over all final momenta ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]], [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]). The box volume $\tilde V$ and the duration $\tilde T$ cancel (table in [[§C6b.3 The Cross Section#^der-c6b-3-4|Derivation §C6b.3.4]], Step 4).
-
-> [!remark] Remark: Dynamics and kinematics
-> Yu, after (6.318): in the cross section "不变振幅模方 $|\mathcal M|^2$ 是动力学因素，而其它部分都属于运动学因素" (the squared invariant amplitude is the dynamical factor, everything else is kinematics). Factors (a), (b) belong to the initial state, (d)–(f) to the final state, and only (c) knows the theory; this is the course's "dynamical data" ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^rem-c6b-1-3|§C6b.1, Remark: What "dynamical" means]]) and the lecture's reading of the formula ([[§C6b.9 Evaluating the Cross Section#^rem-c6b-9-2|§C6b.9, Remark: Reading the formula]]).
->
-> *Source: Yu §6.5.2, p. 244 · PHY 513 Lecture 15, slide 16*
-
-^rem-c6b-3-1
+The formula $d\sigma$ written once with every factor labelled by the box that produced it, the summary of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]] and of this section, opens [[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]] (the annotated formula).
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
@@ -657,7 +628,7 @@ Two more factors do not appear in $d\sigma$. $\frac{1}{S_{\rm id}}$ enters only 
 > From the Math vault: [[§47 The Completeness Relation#^prop-47-1|556 Prop. §47.1]] — completeness of an orthonormal basis, which turns the sum over final spins into $\langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ (Theorem §C6b.3.10, 1).
 
 > [!remark]- Connections
-> - The operational cross section and its classical meaning as an area in the plane of impact parameters — [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-1|Def. §C6b.8.1]], [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-2|Def. §C6b.8.2]], [[§B4.2 Scattering Cross-Sections and Rutherford Scattering#^def-b4-2-1|CM Def. §B4.2.1]].
+> - The cross section as a universal event rate and its classical meaning as an area in the plane of impact parameters — [[§C6b.8 Wave Packets and the Cross Section#^rem-c6b-8-1|§C6b.8, Remark: The cross section as a universal event rate]], [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-1|Def. §C6b.8.1]], [[§B4.2 Scattering Cross-Sections and Rutherford Scattering#^def-b4-2-1|CM Def. §B4.2.1]].
 > - Quantum mechanics divides a transition rate by a probability current in the same way — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^def-c10-1-1|QM Def. §C10.1.1]].
 > - The flux factor as a component of an antisymmetric tensor and the cross section as an area (the course's route to frame independence) — [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-6|Theorem §C6b.9.6]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]].
 > - The same chain with one initial particle and no flux gives the decay rate, $\frac{1}{2E_A}$ in place of $\frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}$ — [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]].

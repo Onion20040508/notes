@@ -421,7 +421,7 @@ The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] nee
 *Uses:* [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]], [[§C6b.6 Decay Kinematics#^thm-c6b-6-7|Theorem §C6b.6.7]], [[§C6b.6 Decay Kinematics#^def-c6b-6-1|Def. §C6b.6.1]]
 
 ![[ph-qft-c6b-6-1.svg]]
-*The Dalitz region of a three-body decay for $m_A = 4m_1 = 5m_2 = 8m_3$ (as Yu Fig. 6.7), in units of $m_A^2$: for each $s_{12}$ between $(m_1 + m_2)^2$ and $(m_A - m_3)^2$, $s_{23}$ runs from $s_{23}^{\min}$ (blue) to $s_{23}^{\max}$ (red) of Theorem §C6b.6.8; the dash-dotted lines are the extreme values of $s_{12}$ and $s_{23}$. With constant $|\mathcal M|^2$ the decay events fill the shaded region uniformly (Theorem §C6b.6.7). Added figure, computed from the limits (tools/yu-phaseB/figs/dalitz.py).*
+*The Dalitz region of a three-body decay for $m_A = 4m_1 = 5m_2 = 8m_3$ (as Yu Fig. 6.7), in units of $m_A^2$: for each $s_{12}$ between $(m_1 + m_2)^2$ and $(m_A - m_3)^2$, $s_{23}$ runs from $s_{23}^{\min}$ (blue) to $s_{23}^{\max}$ (red) of Theorem §C6b.6.8; the dash-dotted lines are the extreme values of $s_{12}$ and $s_{23}$. With constant $|\mathcal M|^2$ the decay events fill the shaded region uniformly (Theorem §C6b.6.7). Added figure, computed numerically from the limits.*
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.

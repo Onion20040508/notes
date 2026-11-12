@@ -144,7 +144,7 @@ The box turns the delta functions of this section into numbers.
 > Steps 2–4 together: $|\langle f|i\hat T|i\rangle|^2 = \tilde V\tilde T\,(2\pi)^4\delta^4(p_i - p_f)\,|\mathcal M|^2$ (Yu (6.283)).
 >
 > **What the derivation shows.**
-> - The squared amplitude carries one factor $\tilde V\tilde T$; the second delta function survives and becomes part of the phase space ([[§C6b.3 The Cross Section|§C6b.3]], the annotated formula).
+> - The squared amplitude carries one factor $\tilde V\tilde T$; the second delta function survives and becomes part of the phase space ([[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]], the annotated formula).
 > - The same box factor, written $2T\cdot V$, made every vacuum bubble proportional to the volume of spacetime ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]); $\tilde T = 2T$.
 
 ^der-c6b-2-3
@@ -381,7 +381,7 @@ The box turns the delta functions of this section into numbers.
 
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-4|P7, step 4]]
 
-> [!theorem] Theorem §C6b.2.8: Identical Particles in the Final State
+> [!theorem] Theorem §C6b.2.8: Identical Final Particles: Counting Ordered Tuples in the Box
 > If the final state contains $n_k$ identical particles of species $k$, integrating $dR$ of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-7|Theorem §C6b.2.7]] over all final momenta counts every physical final state $n_k!$ times per species, also when identical bosons share a momentum. The total rate is
 >
 > $$
