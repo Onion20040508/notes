@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 513 (UMich, F. Larsen, Fall 2026)"]
 textbooks: ["Peskin & Schroeder, An Introduction to Quantum Field Theory", "Yu Zhao-Huan (余钊焕), Lecture Notes on Quantum Field Theory (量子场论讲义)", "Schwartz, Quantum Field Theory and the Standard Model (further reading)"]
 conventions: "[[Larsen PHY 513]]"
-status: "level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.9 taught: Lectures 10 and 17, Problem Sets 6 and 9; ★ items of §C5b.5 beyond the lectures), C6a (§C6a.1–§C6a.5, Lecture 13: φ⁴ theory, interaction picture, Dyson series, interacting vacuum, master formula; §C6a.6–§C6a.12, Lecture 14; §C6a.13, the vacuum bubbles exponentiate (PS p. 98, Problem Set 8); §C6a.14, rules for polynomial interactions), C6b (§C6b.1–§C6b.9, Lecture 15, after Yu §6.5: S-matrix, box route, cross section, two-body kinematics, decay widths and kinematics with ★ three-body decays, the width in the propagator, wave packets), C6c (§C6c.1–§C6c.7 and §C6c.11, Lecture 16 and Problem Set 8, Feynman rules for amplitudes after Yu ch. 7; §C6c.8–§C6c.10, the linear sigma model of Problem Set 10, Problem 1), C6d (§C6d.1–§C6d.6, Lecture 17 rebuilt after Yu §7.1–§7.2: Yukawa theory, contractions with external fermions, Wick and the contraction rule, first and second order, the rules for fermions; §C6d.7 Yukawa potential and the Born comparison, Lecture 18), C8 (§C8.1–§C8.5, Lecture 18, quantum electrodynamics, the Lagrangian and the covariant derivative, gauge invariance, photon lines, Feynman rules, the Coulomb potential and attraction against repulsion; §C8.6–§C8.9, Lecture 19, electron–positron annihilation into muons, the amplitude and the virtual photon, the spin-averaged square by traces, the unpolarized cross section, quark pairs and the ratio R; QED processes of Lectures 20–22 pending), C9 (§C9.1–§C9.5 parity incl. the scalar field, §C9.6–§C9.11 charge conjugation, physical spin, time reversal and CPT, taught; §C9.12 C, T, CPT of the complex scalar field, Problem Set 7; §C9.13 time reversal of the S-matrix and detailed balance, Problem Set 9), CA written, CB written (proofs complete except the placeholders listed under Planned)"
+status: "level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.9 taught: Lectures 10 and 17, Problem Sets 6 and 9; ★ items of §C5b.5 beyond the lectures), C6a (§C6a.1–§C6a.5, Lecture 13: φ⁴ theory, interaction picture, Dyson series, interacting vacuum, master formula; §C6a.6–§C6a.12, Lecture 14; §C6a.13, the vacuum bubbles exponentiate (PS p. 98, Problem Set 8); §C6a.14, rules for polynomial interactions), C6b (§C6b.1–§C6b.9, Lecture 15, after Yu §6.5: S-matrix, box route, cross section, two-body kinematics, decay widths and kinematics with ★ three-body decays, the width in the propagator, wave packets; §C6b.10, the cross section off a fixed target, Problem Set 10, Problem 2(b)), C6c (§C6c.1–§C6c.7 and §C6c.11, Lecture 16 and Problem Set 8, Feynman rules for amplitudes after Yu ch. 7; §C6c.8–§C6c.10, the linear sigma model of Problem Set 10, Problem 1), C6d (§C6d.1–§C6d.6, Lecture 17 rebuilt after Yu §7.1–§7.2: Yukawa theory, contractions with external fermions, Wick and the contraction rule, first and second order, the rules for fermions; §C6d.7 Yukawa potential and the Born comparison, Lecture 18), C8 (§C8.1–§C8.5, Lecture 18, quantum electrodynamics, the Lagrangian and the covariant derivative, gauge invariance, photon lines, Feynman rules, the Coulomb potential and attraction against repulsion; §C8.6–§C8.9, Lecture 19, electron–positron annihilation into muons, the amplitude and the virtual photon, the spin-averaged square by traces, the unpolarized cross section, quark pairs and the ratio R; §C8.10–§C8.11, Problem Set 10, Problems 2–3, an electron in a classical external Coulomb field, the Rutherford formula and Mott's formula; QED processes of Lectures 20–22 pending), C9 (§C9.1–§C9.5 parity incl. the scalar field, §C9.6–§C9.11 charge conjugation, physical spin, time reversal and CPT, taught; §C9.12 C, T, CPT of the complex scalar field, Problem Set 7; §C9.13 time reversal of the S-matrix and detailed balance, Problem Set 9), CA written, CB written (proofs complete except the placeholders listed under Planned)"
 tags: [subject, quantum-field-theory]
 ---
 # Quantum Field Theory
@@ -82,8 +82,8 @@ graph TD
   C3 -->|1| C6a
   C5b -->|9| C6a
   C1a -->|23| C6b
-  C1b -->|1| C6b
-  C2a -->|54| C6b
+  C1b -->|3| C6b
+  C2a -->|56| C6b
   C2b -->|4| C6b
   C3 -->|6| C6b
   C6a -->|41| C6b
@@ -102,17 +102,17 @@ graph TD
   C6a -->|39| C6d
   C6b -->|18| C6d
   C6c -->|79| C6d
-  C1a -->|10| C8
-  C1b -->|7| C8
+  C1a -->|11| C8
+  C1b -->|8| C8
   C2a -->|3| C8
   C2b -->|1| C8
   C4 -->|46| C8
-  C5a -->|58| C8
-  C5b -->|5| C8
-  C6a -->|16| C8
-  C6b -->|43| C8
-  C6c -->|8| C8
-  C6d -->|83| C8
+  C5a -->|83| C8
+  C5b -->|19| C8
+  C6a -->|20| C8
+  C6b -->|62| C8
+  C6c -->|9| C8
+  C6d -->|95| C8
   C1a -->|12| C9
   C1b -->|9| C9
   C2a -->|74| C9
@@ -122,6 +122,7 @@ graph TD
   C5b -->|121| C9
   C6a -->|9| C9
   C6b -->|19| C9
+  C8 -->|1| C9
   C1a -->|2| CA
   C1b -->|3| CA
   C2a -->|6| CA
@@ -177,7 +178,7 @@ graph TD
   C8 -.->|49| C4
   CA -.->|152| C4
   C5b -.->|46| C5a
-  C8 -.->|3| C5a
+  C8 -.->|6| C5a
   C9 -.->|10| C5a
   CA -.->|7| C5a
   CB -.->|71| C5a
@@ -187,27 +188,28 @@ graph TD
   CA -.->|133| C5b
   CB -.->|1| C5b
   C6b -.->|7| C6a
-  C6c -.->|23| C6a
+  C6c -.->|26| C6a
   C6d -.->|4| C6a
   CA -.->|113| C6a
   CB -.->|10| C6a
   C6c -.->|22| C6b
-  C8 -.->|2| C6b
+  C8 -.->|4| C6b
   C9 -.->|2| C6b
-  CA -.->|56| C6b
+  CA -.->|67| C6b
   C6d -.->|8| C6c
   C8 -.->|1| C6c
   CA -.->|53| C6c
-  C8 -.->|13| C6d
+  C8 -.->|14| C6d
   C9 -.->|2| C6d
   CA -.->|31| C6d
-  CA -.->|10| C8
+  C9 -.->|3| C8
+  CA -.->|14| C8
   CA -.->|42| C9
   CB -.->|38| C9
 ```
 
 ## Planned
-Yu's chapter 6, Interactions of quantum fields, and his chapter 7, Feynman diagrams, are written as four chapters (through Lecture 18 and Problem Set 9): C6a Interactions and Correlation Functions (§C6a.0: setups and observables; §C6a.1–§C6a.5: φ⁴ theory, the interaction picture, the Dyson series, the interacting vacuum and the master formula; §C6a.6–§C6a.12: normal ordering, Wick's theorem, Feynman diagrams and rules for correlation functions in position and momentum space, symmetry factors, the iε limit and the cancellation of vacuum bubbles, with the combinatorics in §CA.8–§CA.9; §C6a.13: the exponential of the connected vacuum bubbles and the vacuum energy density; §C6a.14: the rules for any polynomial interaction); C6b The S-Matrix and Observables (§C6b.1–§C6b.9 in Yu §6.5's order: the S-matrix and the invariant amplitude, transition probabilities in a box, the cross section, two-body scattering kinematics, decay widths, decay kinematics (★ three-body), the width in the propagator, and the cross section from wave packets); C6c Feynman Rules for Amplitudes (§C6c.1–§C6c.11: amplitudes as amputated correlation functions, matrix elements between particle states and the Feynman rules for amplitudes, particle production by a classical source, the linear sigma model of Problem Set 10 in its symmetric and broken phases and with explicit breaking (§C6c.8–§C6c.10), worked translations of questions into formulas); C6d Feynman Rules for Fermions (Lecture 17, after Yu §7.1–§7.2, mirroring C6c: Yukawa theory, contractions with external fermions, Wick's theorem with signs and the contraction rule, first and second order, the momentum-space rules, and the Yukawa potential, §C6d.7, taught in Lecture 18). The Feynman propagators of the other fields (Yu §6.4) are with their fields: complex scalar [[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-2|Theorem §C6a.8.2]], vector fields [[§C4.11 Vector-Field Propagators|§C4.11]] and [[§C8.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator#^thm-c8-3-5|Theorem §C8.3.5]], Dirac field [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]]. The planned C7 Feynman diagrams is dissolved (user decision 2026-11-04: S-matrix rules in C6b and C6c, fermion rules in C6d). C8 Quantum Electrodynamics is started (user decision 2026-11-09): written §C8.1–§C8.5 (Lecture 18), the Lagrangian and the covariant derivative, gauge invariance, photon lines, the QED Feynman rules, the Coulomb potential and why like charges repel, and §C8.6–§C8.9 (Lecture 19), the first process $e^+e^- \to \mu^+\mu^-$: the amplitude and the virtual photon, the spin-averaged square by traces, the unpolarized cross section, quark–antiquark production and the ratio $R$; the QED processes of Lectures 20–22 (helicity structure, crossing symmetry, Compton scattering), the Ward identity and the quantization of the electromagnetic field in the course (Lecture 25) are pending.
+Yu's chapter 6, Interactions of quantum fields, and his chapter 7, Feynman diagrams, are written as four chapters (through Lecture 19 and Problem Set 10): C6a Interactions and Correlation Functions (§C6a.0: setups and observables; §C6a.1–§C6a.5: φ⁴ theory, the interaction picture, the Dyson series, the interacting vacuum and the master formula; §C6a.6–§C6a.12: normal ordering, Wick's theorem, Feynman diagrams and rules for correlation functions in position and momentum space, symmetry factors, the iε limit and the cancellation of vacuum bubbles, with the combinatorics in §CA.8–§CA.9; §C6a.13: the exponential of the connected vacuum bubbles and the vacuum energy density; §C6a.14: the rules for any polynomial interaction); C6b The S-Matrix and Observables (§C6b.1–§C6b.9 in Yu §6.5's order: the S-matrix and the invariant amplitude, transition probabilities in a box, the cross section, two-body scattering kinematics, decay widths, decay kinematics (★ three-body), the width in the propagator, and the cross section from wave packets; §C6b.10: the cross section of one particle on a fixed target, Problem Set 10); C6c Feynman Rules for Amplitudes (§C6c.1–§C6c.11: amplitudes as amputated correlation functions, matrix elements between particle states and the Feynman rules for amplitudes, particle production by a classical source, the linear sigma model of Problem Set 10 in its symmetric and broken phases and with explicit breaking (§C6c.8–§C6c.10), worked translations of questions into formulas); C6d Feynman Rules for Fermions (Lecture 17, after Yu §7.1–§7.2, mirroring C6c: Yukawa theory, contractions with external fermions, Wick's theorem with signs and the contraction rule, first and second order, the momentum-space rules, and the Yukawa potential, §C6d.7, taught in Lecture 18). The Feynman propagators of the other fields (Yu §6.4) are with their fields: complex scalar [[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-2|Theorem §C6a.8.2]], vector fields [[§C4.11 Vector-Field Propagators|§C4.11]] and [[§C8.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator#^thm-c8-3-5|Theorem §C8.3.5]], Dirac field [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]]. The planned C7 Feynman diagrams is dissolved (user decision 2026-11-04: S-matrix rules in C6b and C6c, fermion rules in C6d). C8 Quantum Electrodynamics is started (user decision 2026-11-09): written §C8.1–§C8.5 (Lecture 18), the Lagrangian and the covariant derivative, gauge invariance, photon lines, the QED Feynman rules, the Coulomb potential and why like charges repel, and §C8.6–§C8.9 (Lecture 19), the first process $e^+e^- \to \mu^+\mu^-$: the amplitude and the virtual photon, the spin-averaged square by traces, the unpolarized cross section, quark–antiquark production and the ratio $R$, and §C8.10–§C8.11 (Problem Set 10, Problems 2–3), an electron in a classical external potential: the first-order amplitude, the Coulomb transform, the Rutherford formula, the spin sum of one line and Mott's formula; the QED processes of Lectures 20–22 (helicity structure, crossing symmetry, Compton scattering), the Ward identity and the quantization of the electromagnetic field in the course (Lecture 25) are pending.
 
 **Level C — PHY 513 (Larsen, Fall 2026; Peskin & Schroeder; Yu)**
 Chapters without notes yet, or with parts pending (Yu's numbering): C8 Quantum electrodynamics (written: §C8.1–§C8.9, Lectures 18–19; QED processes of Lectures 20–22 pending) · C9 Discrete symmetries and Majorana fields (written: parity §C9.1–§C9.5, charge conjugation §C9.6–§C9.7, physical spin §C9.8, time reversal §C9.9–§C9.10, CPT §C9.11, C, T and CPT of the complex scalar field §C9.12, time reversal of the S-matrix and detailed balance §C9.13; Majorana fields pending) · C10 The S-matrix and correlation functions (LSZ; the S-matrix, cross sections and decay rates themselves are in C6b §C6b.1–§C6b.9) · C11 Path-integral quantization · *Second semester* (PHY 513 Lecture 17, slide 26: renormalization, "a deep principle: much more in 2nd semester"): loop integrals, regularization (dimensional regularization), renormalization, Cutkosky cuts; the dimension count that sorts couplings into renormalizable and nonrenormalizable is already in [[§C1b.3 Mass Dimension, Locality and Power Counting|§C1b.3]] and [[§C6d.1 Yukawa Theory|§C6d.1]]

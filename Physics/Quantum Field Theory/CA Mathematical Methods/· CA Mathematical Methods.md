@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ← [[· C9 Discrete Symmetries and Majorana Fields]] · ↑ [[Quantum Field Theory]] · [[· CB Lie Groups, Lie Algebras and Representations]] →
 
 **Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (6), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (44), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (12), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (1)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (52), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (34), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (220), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (484), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (13), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (152), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (7), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (133), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (113), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (56), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (53), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (31), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (10), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (42), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (2)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (52), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (34), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (220), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (484), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (13), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (152), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (7), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (133), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (113), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (67), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (53), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (31), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (14), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (42), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (2)
 
 ## Sections
 - [[§CA.1 Exchanging Limits, Derivatives and Integrals]] — 513 notes App. A §A.1
@@ -35,6 +35,7 @@ tags: [chapter, quantum-field-theory]
 - [[§CA.2 Generalized Functions#^lem-ca-2-2|§CA.2.2]] The Space 𝒮 Is a Complete Metric Space
 - [[§CA.2 Generalized Functions#^thm-ca-2-5|§CA.2.5]] Distributional Limits
 - [[§CA.2 Generalized Functions#^thm-ca-2-6|§CA.2.6]] Composition of δ with a Function
+- [[§CA.2 Generalized Functions#^lem-ca-2-3|§CA.2.3]] Substituting on the Support of a Delta Function
 - [[§CA.2 Generalized Functions#^thm-ca-2-7|§CA.2.7]] Invariant Distributions on the Mass Shell and the Light Cone
 - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|§CA.3.1]] Products with Disjoint Singular Supports
 - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|§CA.3.2]] Products Without a Value: θ·δ, δ² and δ(0)
@@ -50,6 +51,7 @@ tags: [chapter, quantum-field-theory]
 - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-8|§CA.4.8]] Angular Integrals
 - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-9|§CA.4.9]] Fourier Transforms of Lorentz-Invariant Functions
 - [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-10|§CA.4.10]] The Periodic Box in Space and Time
+- [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-11|§CA.4.11]] The Fourier Transform of 1/r on ℝ³
 - [[§CA.5 Contour Integration#^thm-ca-5-1|§CA.5.1]] The ML Inequality and the Basic Integral
 - [[§CA.5 Contour Integration#^thm-ca-5-2|§CA.5.2]] Cauchy's Theorem; Deformation of Contours
 - [[§CA.5 Contour Integration#^thm-ca-5-3|§CA.5.3]] Identity Theorem
