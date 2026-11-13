@@ -505,6 +505,44 @@ Operations on generalized functions are defined by moving them onto the test fun
 
 *Uses:* [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]], [[§15 The Implicit Function Theorem#^thm-15-2|452 Thm. §15.2]], [[§31 Surface Integrals#^def-31-5|452 Def. §31.5]], [[§65 Partitions of Unity#^thm-65-7|591 Thm. §65.7]]
 
+> [!theorem] Lemma §CA.2.3: Substituting on the Support of a Delta Function
+> For a real number $a$, as tempered distributions in the two real variables $(x, y)$,
+>
+> $$
+> \delta(a - x)\,\delta(a - y) = \delta(a - x)\,\delta(x - y) :
+> $$
+>
+> on the support of $\delta(a - x)$ the number $a$ in a second delta function may be replaced by $x$. Both sides are the delta function at the point $(a, a)$ of $\mathbb R^2$: paired with a test function $f(x, y)$ they give $f(a, a)$.
+>
+> *Source: standard; stated here · the test-function argument as in PHY 513, Problem Set 10, Problem 2(b1) (the user's solution)*
+
+^lem-ca-2-3
+
+> [!derivation]- Derivation
+> **Step 1** (the left side). $\delta(a - x)\,\delta(a - y)$ is a product of delta functions in independent variables: for $f \in \mathcal S(\mathbb R^2)$ it is defined by applying one after the other,
+>
+> $$
+> \int dx\,dy\;\delta(a - x)\,\delta(a - y)\,f(x, y) = \int dx\;\delta(a - x)\,f(x, a) = f(a, a) ,
+> $$
+>
+> which is continuous in $f$, hence a tempered distribution ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]); $\delta(a - x) = \delta(x - a)$ by [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1 with $\lambda = -1$.
+>
+> **Step 2** (the right side). Change variables linearly, $u = x$, $w = x - y$, with inverse $x = u$, $y = u - w$ and Jacobian $|\det| = 1$ ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]). In the variables $(u, w)$ the right side is again a product in independent variables, $\delta(a - u)\,\delta(w)$, and
+>
+> $$
+> \int dx\,dy\;\delta(a - x)\,\delta(x - y)\,f(x, y) = \int du\,dw\;\delta(a - u)\,\delta(w)\,f(u, u - w) = \int du\;\delta(a - u)\,f(u, u) = f(a, a) .
+> $$
+>
+> **Step 3** (compare). The two sides agree on every test function, so they are the same distribution.
+>
+> **What the derivation shows.**
+> - The same argument gives $\delta(a - x)\,g(x, y) = \delta(a - x)\,g(a, y)$ for every smooth $g$ ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]): only the value on the support $x = a$ matters.
+> - The right side is not a product of distributions in one variable (those need not exist, [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-2|Theorem §CA.3.2]]): $x - y$ and $x$ are independent linear coordinates on $\mathbb R^2$.
+
+^der-lem-ca-2-3
+
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
+
 > [!theorem] Theorem §CA.2.7: Invariant Distributions on the Mass Shell and the Light Cone
 > Let $m > 0$ and $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$.
 > 1. $\theta(\pm p^0)\,\delta(p^2 - m^2)$ is a tempered distribution on $\mathbb R^4$, acting as $\varphi \mapsto \int d^3p\,\varphi(\pm E_{\mathbf p}, \mathbf p)/2E_{\mathbf p}$, and it is Lorentz invariant.

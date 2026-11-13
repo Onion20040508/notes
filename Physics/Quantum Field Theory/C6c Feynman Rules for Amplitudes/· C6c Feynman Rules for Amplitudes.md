@@ -91,11 +91,11 @@ C6c follows Yu's ch. 7 method: contractions with initial and final particles, th
 - [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^thm-c6c-9-7|§C6c.9.7]] The ππ → ππ Amplitude Vanishes at Threshold
 - [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^thm-c6c-9-8|§C6c.9.8]] For One Pion (N = 2) the Term of First Order in s, t, u Vanishes Too
 - [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-2|§C6c.10.2]] The Minimum Lies on the N-th Axis, at v(λv² − μ²) = a
-- [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-3|§C6c.10.3]] With aΦ^N the Pions Are No Longer Massless
-- [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-4|§C6c.10.4]] Feynman Rules and the ππ → ππ Amplitude with aΦ^N
+- [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-3|§C6c.10.3]] With aΦᴺ the Pions Are No Longer Massless
+- [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-4|§C6c.10.4]] Feynman Rules and the ππ → ππ Amplitude with aΦᴺ
 - [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-5|§C6c.10.5]] The Threshold Amplitude Is Proportional to a
 
 ## Models
 - [[§C6c.6 Feynman Rules for Amplitudes#^mod-c6c-6-5|§C6c.6.5]] The Three-Scalar Theory
 - [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^mod-c6c-8-1|§C6c.8.1]] The O(N) Linear Sigma Model
-- [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^mod-c6c-10-1|§C6c.10.1]] The Linear Sigma Model with the Term aΦ^N
+- [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^mod-c6c-10-1|§C6c.10.1]] The Linear Sigma Model with the Term aΦᴺ

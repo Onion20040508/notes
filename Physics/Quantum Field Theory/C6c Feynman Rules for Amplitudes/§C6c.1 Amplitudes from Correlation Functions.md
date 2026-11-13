@@ -7,7 +7,7 @@ section: C6c.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6b.9 Evaluating the Cross Section]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6c.2 Contractions with External Particles]] →
+← [[§C6b.10 Scattering off a Fixed Target꞉ the Cross Section in an External Potential]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6c.2 Contractions with External Particles]] →
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.9 (Principle "Amplitudes are amputated correlators", Figure "amputate", paragraphs "The $\phi^4$ example (filled in)", "Why it is easier", Caution "The rule is stated at tree level"), §15.10 (Principle "From amplitudes to observables", paragraphs "Next.", "Correspondence with Yu") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), end of the lecture (no slide; transcript 1:20:00–1:23:00), slides 24–25 (summary), and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, p. 99 (eq. (4.58)); §4.6, p. 108 (Lecture 16) · Yu Zhao-Huan, 量子场论讲义, §10.3, eqs. (10.107), (10.121); §10.5.2–§10.5.3, eqs. (10.224)–(10.235); §7.3, eq. (7.121) · PHY 513, Problem Set 8, Problems 2 and 4 (the user's solution).*
 

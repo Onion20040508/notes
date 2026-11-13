@@ -7,7 +7,7 @@ section: C6b.9
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6b.8 Wave Packets and the Cross Section]] · ↑ [[· C6b The S-Matrix and Observables]] · [[§C6c.1 Amplitudes from Correlation Functions]] →
+← [[§C6b.8 Wave Packets and the Cross Section]] · ↑ [[· C6b The S-Matrix and Observables]] · [[§C6b.10 Scattering off a Fixed Target꞉ the Cross Section in an External Potential]] →
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.3 (the completeness relation after eq. (Pb); the rest of §15.2–§15.3, the definitions, is the source of [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]]), §15.4 (eq. (dsigmafull), paragraph "Counting", Derivations "The $\delta$-functions and the one Jacobian", "A $\delta$-function of a function (filled in)", Caution "$1/f'(0)$ on the slide", paragraphs "Integrating over $\bar k_B^z$ instead", "A second zero (filled in)", "Smoothness"), §15.5 (Principle "Cross section for $2\to n$ scattering", paragraphs "Reading the formula", "Identical particles (filled in)"; its Derivation "Dimension check (filled in)" is [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]]) · the user's PHY 513 notes, Ch. 15 §15.6 (Derivation "The flux factor as an $\varepsilon$-tensor component", Principle "Same cross section in the CM and target frames", eq. (moller)), §15.10 (paragraph "Correspondence with Yu") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part B, slides 13–16, Part C, slide 19, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 103–106 and 108, eqs. (4.76)–(4.80) · Yu Zhao-Huan, 量子场论讲义, §6.5.1–§6.5.2, eqs. (6.276)–(6.331); §6.5.3, eqs. (6.336)–(6.366), by number only (worked in [[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]]).*
 

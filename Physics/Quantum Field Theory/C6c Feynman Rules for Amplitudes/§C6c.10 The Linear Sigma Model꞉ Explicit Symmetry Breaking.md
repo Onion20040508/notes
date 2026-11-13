@@ -22,7 +22,7 @@ In [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase|§C6c.9]] the potential 
 
 ## The model
 
-> [!model] Model §C6c.10.1: The Linear Sigma Model with the Term aΦ^N
+> [!model] Model §C6c.10.1: The Linear Sigma Model with the Term aΦᴺ
 > [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^mod-c6c-8-1|Model §C6c.8.1]] with $m^2 = -\mu^2 < 0$ and the added term
 >
 > $$
@@ -98,7 +98,7 @@ In [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase|§C6c.9]] the potential 
 
 *Uses:* [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^def-c6c-9-1|Def. §C6c.9.1]], [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^thm-c6c-9-1|Theorem §C6c.9.1]]
 
-> [!theorem] Theorem §C6c.10.3: With aΦ^N the Pions Are No Longer Massless
+> [!theorem] Theorem §C6c.10.3: With aΦᴺ the Pions Are No Longer Massless
 > With $\Phi^i = \pi^i$, $\Phi^N = v + \sigma$ ([[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^def-c6c-9-2|Def. §C6c.9.2]]) and $v$ the solution of $v(\lambda v^2 - \mu^2) = a$ ([[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-2|Theorem §C6c.10.2]]), the Lagrangian of [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^mod-c6c-10-1|Model §C6c.10.1]] is
 >
 > $$
@@ -159,7 +159,7 @@ In [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase|§C6c.9]] the potential 
 
 ## The amplitude
 
-> [!theorem] Theorem §C6c.10.4: Feynman Rules and the ππ → ππ Amplitude with aΦ^N
+> [!theorem] Theorem §C6c.10.4: Feynman Rules and the ππ → ππ Amplitude with aΦᴺ
 > In [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^mod-c6c-10-1|Model §C6c.10.1]], with $v$, $m_\pi^2$, $m_\sigma^2$ of [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-2|Theorem §C6c.10.2]] and [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-3|Theorem §C6c.10.3]]:
 > 1. the vertex factors are those of [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^thm-c6c-9-5|Theorem §C6c.9.5]], unchanged in form, with $v$ now the solution of the new condition;
 > 2. the propagators carry the new masses: a pion line is $\dfrac{i\,\delta^{ij}}{p^2 - m_\pi^2 + i\varepsilon}$, a sigma line $\dfrac{i}{p^2 - m_\sigma^2 + i\varepsilon}$;
