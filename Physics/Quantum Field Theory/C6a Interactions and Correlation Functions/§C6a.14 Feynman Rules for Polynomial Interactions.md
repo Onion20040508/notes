@@ -47,7 +47,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 >
 > *Model:* the free fields ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] for each $\hat\phi_j$, [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]); *applies:* free vacuum $|0\rangle$, exact; independent of the interaction in which the lines appear.
 >
-> *Source: Yu §6.3.1, eq. (6.166) (Wick's theorem for any set of fields $\Phi_a$); §6.4, eqs. (6.210), (6.222); §7.4, eq. (7.143) · PHY 513, Problem Set 8, Problem 4 (two fields $\Phi$, $\phi$) and Problem 1(b) (complex scalar) · proof written here*
+> *Source: Yu §6.3.1, eq. (6.166) (Wick's theorem for any set of fields $\Phi_a$); §6.4, eqs. (6.210), (6.222); §7.4, eq. (7.143) · PHY 513, Problem Set 8, Problem 4 (two fields $\Phi$, $\phi$) and Problem 1(b) (complex scalar) · PHY 513, Problem Set 10, Problem 1(a1) (the user's solution: part 1 for $N$ fields of one mass, by the oscillator argument of [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^thm-c6c-8-2|Theorem §C6c.8.2]]) · proof written here*
 
 ^lem-c6a-14-1
 
@@ -123,7 +123,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 >
 > 2. every diagram enters with $\frac1S\prod_{\text{vertices}}(\text{vertex factor})$ and the rules for lines of [[§C6a.9 Position-Space Feynman Rules#^thm-c6a-9-4|Theorem §C6a.9.4]] (several fields: [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-4|Theorem §C6a.14.4]]), $S$ its symmetry factor ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]]).
 >
-> In the notation of the fields themselves: a term $-c\prod_i\phi_i^{n_i}$ of $\mathcal L_{\rm int}$ ($\phi_i$ distinct field symbols) has the vertex factor $-ic\prod_in_i!$.
+> In the notation of the fields themselves: a term $-c\prod_i\phi_i^{n_i}$ of $\mathcal L_{\rm int}$ ($\phi_i$ distinct field symbols) has the vertex factor $-ic\prod_in_i!$. *As a derivative:* for real fields $\Phi^i$ and $\mathcal L_{\rm int} = -V_{\rm int}(\Phi)$, the vertex with lines $i_1, \dots, i_n$ is $-i\,\partial^nV_{\rm int}/\partial\Phi^{i_1}\cdots\partial\Phi^{i_n}$ at $\Phi = 0$ ([[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^thm-c6c-8-4|Theorem §C6c.8.4]]; with indices: [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^thm-c6c-8-3|Theorem §C6c.8.3]]).
 >
 > | $\mathcal L_{\rm int}$ | legs | vertex factor |
 > |---|---|---|

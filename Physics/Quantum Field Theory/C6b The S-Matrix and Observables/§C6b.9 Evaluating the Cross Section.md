@@ -318,7 +318,7 @@ The first underbrace of the theorem, "kinematics of the initial particles" (slid
 >
 > *Model:* [[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]]; *applies:* as there; every order.
 >
-> *Source: the user's PHY 513 notes, Ch. 15 §15.5 (paragraph "Identical particles (filled in)") · PS §4.5, p. 108 ("divide by $n!$ after integrating over all sets of momenta") · Yu §6.5.1, eqs. (6.305)–(6.306); §6.5.2, eq. (6.321)*
+> *Source: the user's PHY 513 notes, Ch. 15 §15.5 (paragraph "Identical particles (filled in)") · PS §4.5, p. 108 ("divide by $n!$ after integrating over all sets of momenta") · Yu §6.5.1, eqs. (6.305)–(6.306); §6.5.2, eq. (6.321) · PHY 513, Problem Set 10, Problem 1(a3) (the user's solution: the case $n = 2$, Step 2 of the derivation, $\mathbb 1 = \frac{1}{2!}\int d\Pi_3\,d\Pi_4\,|p_3p_4\rangle\langle p_3p_4|$; used in [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^ex-c6c-8-2|Example §C6c.8.2]], Step 4, where one model has identical and distinguishable final particles: [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^thm-c6c-8-5|Theorem §C6c.8.5]])*
 
 ^thm-c6b-9-4
 

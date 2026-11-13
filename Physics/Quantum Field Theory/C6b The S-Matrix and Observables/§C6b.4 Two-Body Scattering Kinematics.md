@@ -343,7 +343,7 @@ Two more factors do not appear in $d\sigma$. $\frac{1}{S_{\rm id}}$ enters only 
 >
 > *Model:* as in [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]]; *applies:* two identical final particles, centre-of-mass frame; every order.
 >
-> *Source: Yu §6.5.3, after eq. (6.358) ("如果末态 2 个粒子是全同的，那么末态对称性因子 $\mathcal S = 2$") · PS §4.5, p. 108 · PHY 513 Lecture 16, slide 19 ("note: identical particles")*
+> *Source: Yu §6.5.3, after eq. (6.358) ("如果末态 2 个粒子是全同的，那么末态对称性因子 $\mathcal S = 2$") · PS §4.5, p. 108 · PHY 513 Lecture 16, slide 19 ("note: identical particles") · PHY 513, Problem Set 10, Problem 1(a3) (statement: "Take care with identical particles in the final state"; the user's solution: $\sigma = \frac12\int d\Omega\,\frac{d\sigma}{d\Omega}$ for $\Phi^1\Phi^1 \to \Phi^2\Phi^2$ and $\Phi^1\Phi^1 \to \Phi^1\Phi^1$, none for $\Phi^1\Phi^2 \to \Phi^1\Phi^2$: [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^ex-c6c-8-2|Example §C6c.8.2]])*
 
 ^thm-c6b-4-6
 
@@ -465,7 +465,7 @@ Two more factors do not appear in $d\sigma$. $\frac{1}{S_{\rm id}}$ enters only 
 >
 > *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]] with [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] (or [[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]]); *applies:* as in [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]], all four masses equal.
 >
-> *Source: PHY 513 Lecture 15, slide 21 ("If all masses are identical: … $(\frac{d\sigma}{d\Omega})_{\rm c.m.s.} = \frac{1}{64\pi^2E_{\rm c.m.}^2}\cdot|\mathcal M|^2$. Applies in important special cases: 2 particles in, 2 particles out (all identical). High energy $E \gg m_i$ ⇒ all masses effectively vanish."), slide 25, and transcript · the user's PHY 513 notes, Ch. 15 §15.7, eq. (dsdO64), Derivation "The equal-mass case" · PS §4.5, eq. (4.85) · Yu §6.5.3, eq. (6.366)*
+> *Source: PHY 513 Lecture 15, slide 21 ("If all masses are identical: … $(\frac{d\sigma}{d\Omega})_{\rm c.m.s.} = \frac{1}{64\pi^2E_{\rm c.m.}^2}\cdot|\mathcal M|^2$. Applies in important special cases: 2 particles in, 2 particles out (all identical). High energy $E \gg m_i$ ⇒ all masses effectively vanish."), slide 25, and transcript · the user's PHY 513 notes, Ch. 15 §15.7, eq. (dsdO64), Derivation "The equal-mass case" · PS §4.5, eq. (4.85) · Yu §6.5.3, eq. (6.366) · PHY 513, Problem Set 10, Problem 1(a3) (the user's solution derives it from the general formula in two lines, $2E_1\,2E_2\,|\mathbf v_1 - \mathbf v_2| = 4|\mathbf p_i|E_{\rm cm}$ and $|\mathbf p_f| = |\mathbf p_i|$: [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^ex-c6c-8-2|Example §C6c.8.2]], Step 3)*
 
 ^thm-c6b-4-9
 
