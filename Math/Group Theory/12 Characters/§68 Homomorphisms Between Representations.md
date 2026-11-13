@@ -5,15 +5,15 @@ chapter: 12
 section: 68
 tags: [group-theory, math493]
 ---
-← [[§67 Characters of Representations]] · ↑ [[· 12 Characters]]
+← [[§67 Characters of Representations]] · ↑ [[· 12 Characters]] · [[§69 Dual Representations]] →
 
-*Source: Lecture and Worksheet 16, *Actions on matrix spaces* (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3–16.5 were not reached; they are stated in the last subsection of this section with proofs that are filled in. Reference: Axler, *Linear Algebra Done Right* (matrices of linear maps, eigenvalues, trace).*
+*Source: Lecture and Worksheet 16, *Actions on matrix spaces* (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3–16.5 were not reached in class (the lecture of Fri Nov 13 recalled the statements of WS 16.3 and WS 16.5 without proof); they are stated in the last subsection of this section with proofs that are filled in. Reference: Axler, *Linear Algebra Done Right* (matrices of linear maps, eigenvalues, trace).*
 
 Theorem [[§66 Invariant Vectors#^thm-66-10|§66.10]] computes the dimension of the invariant vectors of any representation from its character. This section applies it to the representation $\operatorname{Hom}(V, W)$, whose invariant vectors are the homomorphisms of representations $V \to W$. The result is a formula for the number of independent homomorphisms between two representations in terms of their characters. Over $\mathbb{R}$ and $\mathbb{C}$ the formula simplifies, because there $\chi_V(g^{-1})$ is $\chi_V(g)$ or its complex conjugate.
 
 ## Two More Descriptions of the Trace
 
-The trace of a linear map $A: V \to V$ of a finite-dimensional vector space is $\sum_i A_{ii}$, computed in any basis of $V$, and $\operatorname{Tr}(SAS^{-1}) = \operatorname{Tr}(A)$ (Definition [[§66 Invariant Vectors#^def-66-2|§66.2]], Corollary [[§66 Invariant Vectors#^cor-66-2|§66.2]]). The lecture of 11/11 recalled this and stated two further descriptions of the trace, without proof. They are written here for $n \times n$ matrices over a field $k$; for a linear map, take its matrix in any basis.
+The trace of a linear map $A: V \to V$ of a finite-dimensional vector space is $\sum_i A_{ii}$, computed in any basis of $V$, and $\operatorname{Tr}(SAS^{-1}) = \operatorname{Tr}(A)$ (Definition [[§66 Invariant Vectors#^def-66-2|§66.2]], Corollary [[§66 Invariant Vectors#^cor-66-2|§66.2]]). This definition does not depend on the basis, but it uses one. In answer to the question whether a basis is needed to make sense of the trace, the lecture of 11/11 recalled the definition and stated two further descriptions of the trace, without proof. They are written here for $n \times n$ matrices over a field $k$; for a linear map, take its matrix in any basis.
 
 > [!theorem] Proposition §68.1: The Trace Is the Coefficient of $t$ in $\det(I + tA)$
 > Let $A$ be an $n \times n$ matrix over $k$. Then $\det(I + tA)$ is a polynomial in $t$ with constant term $1$, and its coefficient of $t$ is $\operatorname{Tr}(A)$:
@@ -22,7 +22,7 @@ The trace of a linear map $A: V \to V$ of a finite-dimensional vector space is $
 > \det(I + tA) = 1 + t\operatorname{Tr}(A) + (\text{terms divisible by } t^2).
 > $$
 >
-> Over $\mathbb{R}$, this says $\operatorname{Tr}(A) = \dfrac{d}{dt}\det(I + tA)\Big|_{t=0}$.
+> Over $\mathbb{R}$, this says $\operatorname{Tr}(A) = \dfrac{d}{dt}\det(I + tA)\Big|_{t=0}$. In physical terms: if a material is distorted so that the point at position $x$ moves to $x + tAx$, then $\operatorname{Tr}(A)$ is the rate at which volumes change at $t = 0$, because the linear map $I + tA$ multiplies volumes by $\det(I + tA)$ (for small $t$).
 >
 > *Source: lecture 11/11 (stated)*
 
@@ -55,13 +55,14 @@ The trace of a linear map $A: V \to V$ of a finite-dimensional vector space is $
 
 ![[m493-68-3.svg]]
 
-*(Not from lecture; figure added.)* Proposition [[§68 Homomorphisms Between Representations#^prop-68-1|§68.1]] for $n = 2$ over $\mathbb{R}$, where $\det(I + tA) = (1 + ta_{11})(1 + ta_{22}) - t^2a_{12}a_{21} = 1 + t\operatorname{Tr}A + t^2\det A$ is the area of the image of the unit square under $I + tA$ (for small $t$). To first order in $t$ the area changes only through the stretches $ta_{11}$ and $ta_{22}$ of the two sides; the off-diagonal entries tilt the sides and change the area only at order $t^2$. For the matrix shown and $t = \frac14$: $1 + 0.4 + 0.028125 = 1.428125$.
+*(The lecture of 11/11 drew the unit square and its slightly distorted image, with $e_1$ moved to $e_1 + tAe_1$; the matrix, the numbers and the labels are added.)* Proposition [[§68 Homomorphisms Between Representations#^prop-68-1|§68.1]] for $n = 2$ over $\mathbb{R}$, where $\det(I + tA) = (1 + ta_{11})(1 + ta_{22}) - t^2a_{12}a_{21} = 1 + t\operatorname{Tr}A + t^2\det A$ is the area of the image of the unit square under $I + tA$ (for small $t$). To first order in $t$ the area changes only through the stretches $ta_{11}$ and $ta_{22}$ of the two sides; the off-diagonal entries tilt the sides and change the area only at order $t^2$. For the matrix shown and $t = \frac14$: $1 + 0.4 + 0.028125 = 1.428125$.
 
 > [!theorem] Proposition §68.2: The Trace Is the Only Linear Function That Vanishes on All $AB - BA$
 > Let $n \geq 1$, and let $E_{ij}$ be the $n \times n$ matrix with the entry $1$ in position $(i, j)$ and $0$ elsewhere (a *matrix unit*).
 >
 > 1. The trace is a linear function from the $n \times n$ matrices over $k$ to $k$ with $\operatorname{Tr}(AB - BA) = 0$ for all $A$, $B$, and $\operatorname{Tr}(E_{11}) = 1$.
 > 2. It is the only one: if $f$ is a linear function from the $n \times n$ matrices to $k$ with $f(AB - BA) = 0$ for all $A$, $B$ and $f(E_{11}) = 1$, then $f = \operatorname{Tr}$.
+> 3. The matrices $AB - BA$ span the space of $n \times n$ matrices of trace zero. This is a subspace of dimension $n^2 - 1$ of the $n^2$-dimensional space of all $n \times n$ matrices.
 >
 > *Source: lecture 11/11 (stated)*
 
@@ -79,6 +80,16 @@ The trace of a linear map $A: V \to V$ of a finite-dimensional vector space is $
 > *Diagonal units.* For $i \neq j$, $E_{ij}E_{ji} = E_{ii}$ and $E_{ji}E_{ij} = E_{jj}$, so $E_{ii} - E_{jj} = E_{ij}E_{ji} - E_{ji}E_{ij}$ and $f(E_{ii}) = f(E_{jj})$. Hence $f(E_{ii}) = f(E_{11}) = 1$ for every $i$.
 >
 > *Conclusion.* Every matrix is $A = \sum_{i,j} A_{ij}E_{ij}$, so by linearity $f(A) = \sum_{i,j} A_{ij}f(E_{ij}) = \sum_i A_{ii} = \operatorname{Tr}(A)$.
+>
+> **(3)** Let $Z$ be the span of all matrices $AB - BA$. By (1), every matrix in $Z$ has trace zero. Conversely, let $C$ be a matrix of trace zero. Then
+>
+> $$
+> C = \sum_{i \neq j} C_{ij}E_{ij} + \sum_{i=2}^n C_{ii}\,(E_{ii} - E_{11}),
+> $$
+>
+> because the coefficient of $E_{11}$ on the right is $-\sum_{i \geq 2} C_{ii}$, which equals $C_{11}$ since $\operatorname{Tr}(C) = 0$. By the two steps of (2), every $E_{ij}$ with $i \neq j$ and every $E_{ii} - E_{11}$ is of the form $AB - BA$. So $C \in Z$.
+>
+> *The dimension.* By the display, the $n^2 - n$ matrices $E_{ij}$ with $i \neq j$ and the $n - 1$ matrices $E_{ii} - E_{11}$ with $i \geq 2$ span the matrices of trace zero. They are linearly independent: in a linear combination of them, the coefficient of $E_{ij}$ ($i \neq j$) and the coefficient of $E_{ii} - E_{11}$ ($i \geq 2$) are the $(i, j)$ entry and the $(i, i)$ entry of the resulting matrix, so all coefficients are zero if the matrix is zero. Their number is $(n^2 - n) + (n - 1) = n^2 - 1$.
 
 ^pf-68-2
 
@@ -86,6 +97,15 @@ The trace of a linear map $A: V \to V$ of a finite-dimensional vector space is $
 
 > [!remark]- Connections
 > - Linear Algebra: the trace is linear, [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-56|LADR 8.56]]; since it vanishes on every $ST - TS$, the identity is never of that form when $\dim V \neq 0$ in $k$, [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-57|LADR 8.57]].
+
+> [!remark] Remark: Commutators in a Group and in a Ring
+> The abelianization of a group sets every commutator $ghg^{-1}h^{-1}$ equal to the identity (Definition [[§47 Commutators#^def-47-3|§47.3]]); this forces the multiplication to be commutative. For matrices, where there is an addition as well as a multiplication, the corresponding step is to set every $AB - BA$ equal to zero, that is, to pass to the quotient of the vector space of $n \times n$ matrices by the span of all $AB - BA$. By Proposition [[§68 Homomorphisms Between Representations#^prop-68-2|§68.2]](3) this span has codimension one, and it is the kernel of the trace.
+>
+> The condition $\operatorname{Tr}(E_{11}) = 1$ is a normalization: every multiple $c \cdot \operatorname{Tr}$ also vanishes on all $AB - BA$. A second normalization with the same effect is that the trace of an idempotent is the dimension of its image (Proposition [[§66 Invariant Vectors#^prop-66-4|§66.4]]); $E_{11}$ is an idempotent with a one-dimensional image. The identity $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ is the fundamental property of the trace: little can be done with the trace without it.
+>
+> *Source: lecture 11/11*
+
+^rem-68-1
 
 ## The Representation $\operatorname{Hom}(V, W)$
 
@@ -100,7 +120,7 @@ The trace of a linear map $A: V \to V$ of a finite-dimensional vector space is $
 
 ^def-68-1
 
-If $V$ and $W$ are finite-dimensional, then in bases of $V$ and $W$ a linear map $\alpha: V \to W$ is a $(\dim W) \times (\dim V)$ matrix, so $\dim \operatorname{Hom}(V, W) = \dim V \cdot \dim W$ *(board 11/11)*.
+If $V$ and $W$ are finite-dimensional, then in bases of $V$ and $W$ a linear map $\alpha: V \to W$ is a $(\dim W) \times (\dim V)$ matrix, so $\dim \operatorname{Hom}(V, W) = \dim V \cdot \dim W$ *(board 11/11)*. With $n = \dim V$ and $m = \dim W$, the rule $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$ is the product of an $m \times m$ matrix, an $m \times n$ matrix and an $n \times n$ matrix *(board 11/13)*.
 
 **Transcription note.** Worksheet 16 prints $g \ast \alpha = \rho_V(g) \circ \alpha \circ \rho_W(g^{-1})$. For $\alpha: V \to W$ these maps cannot be composed unless $V = W$: $\rho_W(g^{-1})$ acts on $W$, but $\alpha$ is defined on $V$. With $V$ and $W$ exchanged, as in Definition [[§68 Homomorphisms Between Representations#^def-68-1|§68.1]], the composition makes sense, and the invariant maps are the $\alpha$ with $\alpha \circ \rho_V = \rho_W \circ \alpha$, as the worksheet says next and as the board of 11/11 has it. The exchange also affects WS 16.2 (Proposition [[§68 Homomorphisms Between Representations#^prop-68-5|§68.5]]) but not the worksheet's theorem (Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]]). The handwritten notes of 11/11 write $\operatorname{Hom}_G(V, W) = \{\alpha: U \to V \mid \ldots\}$; $\alpha: V \to W$ is meant.
 
@@ -150,6 +170,15 @@ If $V$ and $W$ are finite-dimensional, then in bases of $V$ and $W$ a linear map
 
 Written as $(g \cdot A)(w) = g\,A(g^{-1}w)$, this is Proposition [[§66 Invariant Vectors#^prop-66-9|§66.9]](1) and (2), with $V$, $W$ in place of $W$, $W'$. In particular $\operatorname{Hom}_G(V, W)$ is a subspace of $\operatorname{Hom}(V, W)$ (Lemma [[§66 Invariant Vectors#^lem-66-5|§66.5]]).
 
+> [!remark] Remark: The Side of the Inverse
+> In $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$ the factor without an inverse has to be the one on the left, for the rule to be a left action: in the computation of $(gh) \ast \alpha$ in the proof of Proposition [[§68 Homomorphisms Between Representations#^prop-68-3|§68.3]](1), the factors on the left appear in the order $\rho_W(g)\,\rho_W(h)$, and the inverses restore this order on the right. That the factor on the left belongs to $W$ and not to $V$ is a consequence of the convention of writing a function to the left of its argument, $\alpha(v)$: the map that is applied last is written first.
+>
+> More generally, if $G$ acts on $V$ and a second group $H$ acts on $W$, then $G \times H$ acts on $\operatorname{Hom}(V, W)$. This was announced as a homework problem and is not written out here. The inverse on the side of $V$ is explained by the dual representation ([[§69 Dual Representations|§69]]).
+>
+> *Source: lecture 11/13*
+
+^rem-68-2
+
 ## The Character of $\operatorname{Hom}(V, W)$ and the Dimension Formula
 
 > [!theorem] Lemma §68.4: The Trace of $X \mapsto RXS$
@@ -180,7 +209,7 @@ Written as $(g \cdot A)(w) = g\,A(g^{-1}w)$, this is Proposition [[§66 Invarian
 > R_{i'i}\,S_{jj'} \qquad \text{in row (output) } (i', j') \text{ and column (input) } (i, j).
 > $$
 >
-> Its diagonal entries are those with $(i', j') = (i, j)$, namely $R_{ii}S_{jj}$. The trace of $L$ is their sum (Definition [[§66 Invariant Vectors#^def-66-2|§66.2]]):
+> A check by counting: $R$ has $m^2$ entries and $S$ has $n^2$, so there are $m^2n^2$ products $R_{i'i}S_{jj'}$; an $mn \times mn$ matrix has $m^2n^2$ entries, one place for each product. The diagonal entries of this matrix are those with $(i', j') = (i, j)$, namely $R_{ii}S_{jj}$. The trace of $L$ is their sum (Definition [[§66 Invariant Vectors#^def-66-2|§66.2]]):
 >
 > $$
 > \operatorname{Tr}(L) = \sum_{i=1}^m \sum_{j=1}^n R_{ii}S_{jj} = \Big(\sum_{i=1}^m R_{ii}\Big)\Big(\sum_{j=1}^n S_{jj}\Big) = \operatorname{Tr}(R)\operatorname{Tr}(S).
@@ -214,17 +243,35 @@ Written as $(g \cdot A)(w) = g\,A(g^{-1}w)$, this is Proposition [[§66 Invarian
 *(Not from lecture; figure added. The board wrote the first row.)* The whole $6 \times 6$ matrix of $X \mapsto RXS$ in Example [[§68 Homomorphisms Between Representations#^ex-68-1|§68.1]]. Columns are indexed by the entries of $X$ (inputs), rows by the entries of $RXS$ (outputs). The matrix consists of four $3 \times 3$ blocks $R_{i'i}\,S^T$, one for each entry of $R$. The diagonal entries (red) are the products $R_{ii}S_{jj}$.
 
 > [!remark] Remark: Matrices of Compositions
-> The bookkeeping in Lemma [[§68 Homomorphisms Between Representations#^lem-68-4|§68.4]] uses the convention that the matrix of a linear map has one row for each output coordinate and one column for each input coordinate. For $\mathbb{R}^I \xrightarrow{A} \mathbb{R}^J \xrightarrow{B} \mathbb{R}^K$ the composite has the entries
+> The bookkeeping in Lemma [[§68 Homomorphisms Between Representations#^lem-68-4|§68.4]] uses the convention that the matrix of a linear map has one row for each output coordinate and one column for each input coordinate. The rows and columns need not be numbered $1, 2, \ldots$: they can be indexed by any finite sets. For finite sets $I$, $J$, $K$ and linear maps $\mathbb{R}^I \xrightarrow{A} \mathbb{R}^J \xrightarrow{B} \mathbb{R}^K$ the composite has the entries
 >
 > $$
-> (B \circ A)_{ki} = \sum_{j} B_{kj}A_{ji},
+> (B \circ A)_{ki} = \sum_{j \in J} B_{kj}A_{ji} \qquad (k \in K,\ i \in I),
 > $$
 >
 > a sum over the index in the middle. The entry formula for $RXS$ is this rule applied twice.
 >
+> This answers the question, asked in the lecture, how the entries of $X$ should be arranged into a column. No arrangement is needed: the coordinates of $X$ are indexed by the set of pairs $(i, j)$. The trace of a linear map $\mathbb{R}^I \to \mathbb{R}^I$ with matrix $A$ is $\sum_{i \in I} A_{ii}$, the sum over $i$ of the coefficient with which the $i$-th coordinate of the input enters the $i$-th coordinate of the output. It does not depend on the order in which the elements of $I$ are listed. In Example [[§68 Homomorphisms Between Representations#^ex-68-1|§68.1]] the entries are listed row by row only in order to write down a $6 \times 6$ matrix.
+>
 > *Source: lecture 11/11*
 
-^rem-68-1
+^rem-68-3
+
+> [!remark] Remark: The Summation Convention
+> In the notation of physics the summation signs are omitted: an index that occurs twice in a product is summed over. The three formulas of this subsection become
+>
+> $$
+> (B \circ A)_{ki} = B_{kj}A_{ji}, \qquad (RXS)_{i'j'} = R_{i'i}X_{ij}S_{jj'}, \qquad \operatorname{Tr}(X \mapsto RXS) = R_{ii}S_{jj}.
+> $$
+>
+> The notation gives a check of index computations: every index that is summed occurs exactly twice, and the remaining indices are the same on both sides of an equation.
+>
+> *Source: lecture 11/11*
+
+^rem-68-4
+
+> [!remark]- Connections
+> - Relativity: the convention with upper and lower indices, where a summed index occurs once upstairs and once downstairs, is [[§B1.1 The Metric and Index Notation#^def-b1-1-2|Relativity Def. §B1.1.2]]. Here all indices are written downstairs.
 
 > [!theorem] Proposition §68.5: The Character of $\operatorname{Hom}(V, W)$
 > Let $V$ and $W$ be finite-dimensional representations of $G$ over $k$. Then for every $g \in G$
@@ -309,7 +356,7 @@ Worksheet 16.2 prints $\operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = (\o
 
 ## Characters at $g^{-1}$ over $\mathbb{R}$ and $\mathbb{C}$
 
-The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3–16.5 were not reached in the lecture of 11/11; the proofs in this subsection are filled in.
+The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3–16.5 were not reached in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof; the proofs in this subsection are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary [[§69 Dual Representations#^cor-69-6|§69.6]]).
 
 > [!theorem] Proposition §68.8: Real Characters Are Invariant under Inversion
 > Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{R}$. Choose a basis of $V$ in which $G$ acts by orthogonal matrices (Corollary [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-7|§63.7]]). In this basis, for every $g \in G$,

@@ -1,0 +1,22 @@
+% Figure from MATH 493 notes, section 69. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, scale=0.95]
+\begin{scope}
+\draw[->, black!55, thin] (-2.6,0) -- (2.9,0) node[right] {$x$};
+\draw[->, black!55, thin] (0,-1.1) -- (0,2.9) node[above] {$y$};
+\foreach \c in {-2,-1,0,1,2} { \draw[blue!70!black, thin] (\c,-0.9) -- (\c,2.55); \node[blue!70!black, anchor=north] at (\c,-0.9) {$\c$}; }
+\node[blue!70!black, anchor=south] at (0.2,3.25) {level lines of $f = e_1^{*}$, \ $f(x, y) = x$};
+\draw[->, thick, orange!85!black] (0,0) -- (2,1);
+\fill[orange!85!black] (2,1) circle (1.4pt) node[fill=white, inner sep=1pt, above left=2pt] {$v$};
+\node[orange!85!black] at (0.2,-1.85) {$f(v) = 2$};
+\end{scope}
+\draw[->, thick, black!70] (3.9,1.1) to[bend left=25] node[above, align=center] {rotate by $g$\\($90^\circ$)} (5.7,1.1);
+\begin{scope}[xshift=9.2cm]
+\draw[->, black!55, thin] (-2.6,0) -- (2.9,0) node[right] {$x$};
+\draw[->, black!55, thin] (0,-1.1) -- (0,2.9) node[above] {$y$};
+\foreach \c in {-1,0,1,2} { \draw[red!70!black, thin] (-2.45,\c) -- (2.55,\c); \node[red!70!black, anchor=east] at (-2.45,\c) {$\c$}; }
+\node[red!70!black, anchor=south] at (0.2,3.25) {level lines of $g \ast f = e_2^{*}$, \ $(g \ast f)(x, y) = y$};
+\draw[->, thick, orange!85!black] (0,0) -- (-1,2);
+\fill[orange!85!black] (-1,2) circle (1.4pt) node[fill=white, inner sep=1pt, below left=2pt] {$gv$};
+\node[orange!85!black] at (0.2,-1.85) {$(g \ast f)(gv) = f(v) = 2$};
+\end{scope}
+\end{tikzpicture}

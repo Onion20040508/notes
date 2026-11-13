@@ -1,0 +1,19 @@
+% Figure from MATH 493 notes, section 69. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, scale=1.15]
+\begin{scope}
+\clip (-0.75,-0.55) rectangle (4.75,2.75);
+\foreach \c in {0,1,2,3} { \draw[blue!70!black, thin] (\c-1,-1) -- (\c+3,3); }
+\foreach \c in {0,1,2} { \draw[red!70!black, thin] (-1,\c) -- (5,\c); }
+\end{scope}
+\foreach \c in {0,1,2,3} { \node[blue!70!black, anchor=south, rotate=45] at (\c+2.42,2.58) {$e_1^{*} = \c$}; }
+\foreach \c in {0,1,2} { \node[red!70!black, anchor=west] at (4.8,\c) {$e_2^{*} = \c$}; }
+\draw[->, very thick] (0,0) -- (1,0) node[below=1pt] {$e_1$};
+\draw[->, very thick] (0,0) -- (1,1) node[above left=-1pt] {$e_2$};
+\draw[->, thick, orange!85!black] (0,0) -- (3,1);
+\fill[orange!85!black] (3,1) circle (1.3pt) node[fill=white, inner sep=1pt, above left=2pt] {$v$};
+\draw[orange!85!black, densely dashed, thick] (1,0) -- (2,0) -- (3,1);
+\node[align=left, anchor=west] at (6.3,2.2) {$e_1 = (1, 0)$, \ $e_2 = (1, 1)$};
+\node[align=left, anchor=west, blue!70!black] at (6.3,1.5) {$e_1^{*}(x, y) = x - y$\\level lines parallel to $e_2$};
+\node[align=left, anchor=west, red!70!black] at (6.3,0.6) {$e_2^{*}(x, y) = y$\\level lines parallel to $e_1$};
+\node[align=left, anchor=west, orange!85!black] at (6.3,-0.2) {$v = 2e_1 + e_2$:\\$e_1^{*}(v) = 2$, \ $e_2^{*}(v) = 1$};
+\end{tikzpicture}

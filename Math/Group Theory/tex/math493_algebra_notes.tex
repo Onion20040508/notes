@@ -328,6 +328,7 @@ $V_1 \oplus \cdots \oplus V_r$ & Direct sum of several subspaces: every $v$ is u
 $M^\dagger = \bar M^T$ & Conjugate transpose (Definition~\ref{def:conjugate-transpose}); $M$ is Hermitian if $M = M^\dagger$, unitary if $M^\dagger M = I$ (\ref{sec:hermitian-forms}). \\
 $V^G$, \ $\chi_V$ & Invariant vectors of a representation; its character $\chi_V(g) = \operatorname{Tr}\rho_V(g)$, not a character in the sense of \ref{sec:characters} unless $\dim V = 1$ (\ref{sec:invariants}, \ref{sec:characters-of-representations}). \\
 $\operatorname{Hom}(V, W)$, \ $\operatorname{Hom}_G(V, W)$ & Linear maps $V \to W$, a representation by $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$; its invariant vectors, the homomorphisms of representations (\ref{sec:hom-representation}). \\
+$V^\vee$, \ $\varphi^\vee$, \ $e_j^\ast$ & Dual space $\operatorname{Hom}(V, k)$; dual map $w^\vee \mapsto w^\vee \circ \varphi$; dual basis. As a representation, $\rho_{V^\vee}(g) = \rho_V(g^{-1})^\vee$, in matrices the inverse transpose (\ref{sec:dual-representations}). \\
 $\operatorname{Tr}$ & Trace of a matrix or of a linear map (\ref{sec:invariants}). \\
 $N \rtimes_\varphi S$, \ $S \ltimes_\varphi N$ & Semidirect product, $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$ (\ref{sec:semidirect-products}). \\
 $\sigma_{(g, \lambda)}$, \ $\operatorname{Aff}(V)$ & The affine map $x \mapsto gx + \lambda$; the group of all affine maps of $V$, $\cong V \rtimes GL(V)$ (\ref{sec:affine-maps}). \\
@@ -10394,9 +10395,9 @@ Representation theory also proves theorems about groups. A first example: every 
 % ============================================================================
 \chapter{Characters}\label{ch:rep-characters}
 
-\textit{Source: Lecture and Worksheet 15 (Mon Nov 9); Worksheet 16.}
+\textit{Source: Lecture and Worksheet 15 (Mon Nov 9); lecture and Worksheet 16 (Wed Nov 11); lecture (Fri Nov 13).}
 
-By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), finite-dimensional representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces, when the field contains $\mathbb{Q}$ (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}).
+By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), finite-dimensional representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces, when the field contains $\mathbb{Q}$ (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}). The factor $\chi_V(g^{-1})$ in this count is the character of the dual representation $V^\vee$ (\ref{sec:dual-representations}).
 
 % ============================================================================
 % SECTION: INVARIANT VECTORS (Worksheet 15; lecture Mon Nov 9)
@@ -10825,18 +10826,18 @@ permutation, $\mathbb{R}^3 = \mathbb{R}(1,1,1) \oplus U$ & $3$ & $1$ & $0$
 % ============================================================================
 \section{Homomorphisms Between Representations}\label{sec:hom-representation}
 
-\textit{Source: Lecture and Worksheet 16, \emph{Actions on matrix spaces} (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3--16.5 were not reached; they are stated in \ref{sub:characters-at-inverses} with proofs that are filled in. Reference: Axler, \emph{Linear Algebra Done Right} (matrices of linear maps, eigenvalues, trace).}
+\textit{Source: Lecture and Worksheet 16, \emph{Actions on matrix spaces} (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3--16.5 were not reached in class (the lecture of Fri Nov 13 recalled the statements of WS 16.3 and WS 16.5 without proof); they are stated in the last subsection of this section with proofs that are filled in. Reference: Axler, \emph{Linear Algebra Done Right} (matrices of linear maps, eigenvalues, trace).}
 
 Theorem~\ref{thm:dim-invariants-character} computes the dimension of the invariant vectors of any representation from its character. This section applies it to the representation $\operatorname{Hom}(V, W)$, whose invariant vectors are the homomorphisms of representations $V \to W$. The result is a formula for the number of independent homomorphisms between two representations in terms of their characters. Over $\mathbb{R}$ and $\mathbb{C}$ the formula simplifies, because there $\chi_V(g^{-1})$ is $\chi_V(g)$ or its complex conjugate.
 
 \subsection{Two More Descriptions of the Trace}\label{sub:trace-descriptions}
 
-The trace of a linear map $A: V \to V$ of a finite-dimensional vector space is $\sum_i A_{ii}$, computed in any basis of $V$, and $\operatorname{Tr}(SAS^{-1}) = \operatorname{Tr}(A)$ (Definition~\ref{def:trace-linear-map}, Corollary~\ref{cor:trace-conjugation}). The lecture of 11/11 recalled this and stated two further descriptions of the trace, without proof. They are written here for $n \times n$ matrices over a field $k$; for a linear map, take its matrix in any basis.
+The trace of a linear map $A: V \to V$ of a finite-dimensional vector space is $\sum_i A_{ii}$, computed in any basis of $V$, and $\operatorname{Tr}(SAS^{-1}) = \operatorname{Tr}(A)$ (Definition~\ref{def:trace-linear-map}, Corollary~\ref{cor:trace-conjugation}). This definition does not depend on the basis, but it uses one. In answer to the question whether a basis is needed to make sense of the trace, the lecture of 11/11 recalled the definition and stated two further descriptions of the trace, without proof. They are written here for $n \times n$ matrices over a field $k$; for a linear map, take its matrix in any basis.
 
 \begin{propbox}[{The Trace Is the Coefficient of $t$ in $\det(I + tA)$}]\label{prop:trace-det-coefficient}
 Let $A$ be an $n \times n$ matrix over $k$. Then $\det(I + tA)$ is a polynomial in $t$ with constant term $1$, and its coefficient of $t$ is $\operatorname{Tr}(A)$:
 \[ \det(I + tA) = 1 + t\operatorname{Tr}(A) + (\text{terms divisible by } t^2). \]
-Over $\mathbb{R}$, this says $\operatorname{Tr}(A) = \dfrac{d}{dt}\det(I + tA)\Big|_{t=0}$.
+Over $\mathbb{R}$, this says $\operatorname{Tr}(A) = \dfrac{d}{dt}\det(I + tA)\Big|_{t=0}$. In physical terms: if a material is distorted so that the point at position $x$ moves to $x + tAx$, then $\operatorname{Tr}(A)$ is the rate at which volumes change at $t = 0$, because the linear map $I + tA$ multiplies volumes by $\det(I + tA)$ (for small $t$).
 \srcline{lecture 11/11 (stated)}
 \end{propbox}
 
@@ -10871,7 +10872,7 @@ Adding up gives the formula. Over $\mathbb{R}$, the derivative at $t = 0$ of a p
 \node[align=left, anchor=west, blue!70!black] at (5.85,4.25) {$(I + tA)e_1 = (1 + ta_{11},\ ta_{21})$\\$(I + tA)e_2 = (ta_{12},\ 1 + ta_{22})$};
 \end{tikzpicture}
 \end{center}
-\textit{(Not from lecture; figure added.)} Proposition~\ref{prop:trace-det-coefficient} for $n = 2$ over $\mathbb{R}$, where $\det(I + tA) = (1 + ta_{11})(1 + ta_{22}) - t^2a_{12}a_{21} = 1 + t\operatorname{Tr}A + t^2\det A$ is the area of the image of the unit square under $I + tA$ (for small $t$). To first order in $t$ the area changes only through the stretches $ta_{11}$ and $ta_{22}$ of the two sides; the off-diagonal entries tilt the sides and change the area only at order $t^2$. For the matrix shown and $t = \frac14$: $1 + 0.4 + 0.028125 = 1.428125$.
+\textit{(The lecture of 11/11 drew the unit square and its slightly distorted image, with $e_1$ moved to $e_1 + tAe_1$; the matrix, the numbers and the labels are added.)} Proposition~\ref{prop:trace-det-coefficient} for $n = 2$ over $\mathbb{R}$, where $\det(I + tA) = (1 + ta_{11})(1 + ta_{22}) - t^2a_{12}a_{21} = 1 + t\operatorname{Tr}A + t^2\det A$ is the area of the image of the unit square under $I + tA$ (for small $t$). To first order in $t$ the area changes only through the stretches $ta_{11}$ and $ta_{22}$ of the two sides; the off-diagonal entries tilt the sides and change the area only at order $t^2$. For the matrix shown and $t = \frac14$: $1 + 0.4 + 0.028125 = 1.428125$.
 %% <<< END ADDED
 
 \begin{propbox}[{The Trace Is the Only Linear Function That Vanishes on All $AB - BA$}]\label{prop:trace-unique}
@@ -10879,6 +10880,7 @@ Let $n \geq 1$, and let $E_{ij}$ be the $n \times n$ matrix with the entry $1$ i
 \begin{enumerate}
     \item The trace is a linear function from the $n \times n$ matrices over $k$ to $k$ with $\operatorname{Tr}(AB - BA) = 0$ for all $A$, $B$, and $\operatorname{Tr}(E_{11}) = 1$.
     \item It is the only one: if $f$ is a linear function from the $n \times n$ matrices to $k$ with $f(AB - BA) = 0$ for all $A$, $B$ and $f(E_{11}) = 1$, then $f = \operatorname{Tr}$.
+    \item The matrices $AB - BA$ span the space of $n \times n$ matrices of trace zero. This is a subspace of dimension $n^2 - 1$ of the $n^2$-dimensional space of all $n \times n$ matrices.
 \end{enumerate}
 \srcline{lecture 11/11 (stated)}
 \end{propbox}
@@ -10894,7 +10896,20 @@ Let $n \geq 1$, and let $E_{ij}$ be the $n \times n$ matrix with the entry $1$ i
 \emph{Diagonal units.} For $i \neq j$, $E_{ij}E_{ji} = E_{ii}$ and $E_{ji}E_{ij} = E_{jj}$, so $E_{ii} - E_{jj} = E_{ij}E_{ji} - E_{ji}E_{ij}$ and $f(E_{ii}) = f(E_{jj})$. Hence $f(E_{ii}) = f(E_{11}) = 1$ for every $i$.
 
 \emph{Conclusion.} Every matrix is $A = \sum_{i,j} A_{ij}E_{ij}$, so by linearity $f(A) = \sum_{i,j} A_{ij}f(E_{ij}) = \sum_i A_{ii} = \operatorname{Tr}(A)$.
+
+\textbf{(3)} Let $Z$ be the span of all matrices $AB - BA$. By (1), every matrix in $Z$ has trace zero. Conversely, let $C$ be a matrix of trace zero. Then
+\[ C = \sum_{i \neq j} C_{ij}E_{ij} + \sum_{i=2}^n C_{ii}\,(E_{ii} - E_{11}), \]
+because the coefficient of $E_{11}$ on the right is $-\sum_{i \geq 2} C_{ii}$, which equals $C_{11}$ since $\operatorname{Tr}(C) = 0$. By the two steps of (2), every $E_{ij}$ with $i \neq j$ and every $E_{ii} - E_{11}$ is of the form $AB - BA$. So $C \in Z$.
+
+\emph{The dimension.} By the display, the $n^2 - n$ matrices $E_{ij}$ with $i \neq j$ and the $n - 1$ matrices $E_{ii} - E_{11}$ with $i \geq 2$ span the matrices of trace zero. They are linearly independent: in a linear combination of them, the coefficient of $E_{ij}$ ($i \neq j$) and the coefficient of $E_{ii} - E_{11}$ ($i \geq 2$) are the $(i, j)$ entry and the $(i, i)$ entry of the resulting matrix, so all coefficients are zero if the matrix is zero. Their number is $(n^2 - n) + (n - 1) = n^2 - 1$.
 \end{proof}
+
+\begin{rembox}[{Commutators in a Group and in a Ring}]\label{rem:commutators-group-ring}
+The abelianization of a group sets every commutator $ghg^{-1}h^{-1}$ equal to the identity (Definition~\ref{def:abelianization}); this forces the multiplication to be commutative. For matrices, where there is an addition as well as a multiplication, the corresponding step is to set every $AB - BA$ equal to zero, that is, to pass to the quotient of the vector space of $n \times n$ matrices by the span of all $AB - BA$. By Proposition~\ref{prop:trace-unique}(3) this span has codimension one, and it is the kernel of the trace.
+
+The condition $\operatorname{Tr}(E_{11}) = 1$ is a normalization: every multiple $c \cdot \operatorname{Tr}$ also vanishes on all $AB - BA$. A second normalization with the same effect is that the trace of an idempotent is the dimension of its image (Proposition~\ref{prop:trace-idempotent}); $E_{11}$ is an idempotent with a one-dimensional image. The identity $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ is the fundamental property of the trace: little can be done with the trace without it.
+\srcline{lecture 11/11}
+\end{rembox}
 
 \subsection{\texorpdfstring{The Representation $\operatorname{Hom}(V, W)$}{The Representation Hom(V, W)}}\label{sub:hom-representation}
 
@@ -10904,7 +10919,7 @@ Let $V$ and $W$ be vector spaces over the same field $k$, and let $\operatorname
 \srcline{WS 16; lecture 11/11}
 \end{defbox}
 
-If $V$ and $W$ are finite-dimensional, then in bases of $V$ and $W$ a linear map $\alpha: V \to W$ is a $(\dim W) \times (\dim V)$ matrix, so $\dim \operatorname{Hom}(V, W) = \dim V \cdot \dim W$ \textit{(board 11/11)}.
+If $V$ and $W$ are finite-dimensional, then in bases of $V$ and $W$ a linear map $\alpha: V \to W$ is a $(\dim W) \times (\dim V)$ matrix, so $\dim \operatorname{Hom}(V, W) = \dim V \cdot \dim W$ \textit{(board 11/11)}. With $n = \dim V$ and $m = \dim W$, the rule $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$ is the product of an $m \times m$ matrix, an $m \times n$ matrix and an $n \times n$ matrix \textit{(board 11/13)}.
 
 \textbf{Transcription note.} Worksheet 16 prints $g \ast \alpha = \rho_V(g) \circ \alpha \circ \rho_W(g^{-1})$. For $\alpha: V \to W$ these maps cannot be composed unless $V = W$: $\rho_W(g^{-1})$ acts on $W$, but $\alpha$ is defined on $V$. With $V$ and $W$ exchanged, as in Definition~\ref{def:hom-representation}, the composition makes sense, and the invariant maps are the $\alpha$ with $\alpha \circ \rho_V = \rho_W \circ \alpha$, as the worksheet says next and as the board of 11/11 has it. The exchange also affects WS 16.2 (Proposition~\ref{prop:character-hom}) but not the worksheet's theorem (Theorem~\ref{thm:dim-hom-g}). The handwritten notes of 11/11 write $\operatorname{Hom}_G(V, W) = \{\alpha: U \to V \mid \ldots\}$; $\alpha: V \to W$ is meant.
 
@@ -10943,6 +10958,13 @@ Each map $\alpha \mapsto g \ast \alpha$ is linear, because composition is linear
 
 Written as $(g \cdot A)(w) = g\,A(g^{-1}w)$, this is Proposition~\ref{prop:hom-invariants}(1) and (2), with $V$, $W$ in place of $W$, $W'$. In particular $\operatorname{Hom}_G(V, W)$ is a subspace of $\operatorname{Hom}(V, W)$ (Lemma~\ref{lem:invariants-subrepresentation}).
 
+\begin{rembox}[{The Side of the Inverse}]\label{rem:side-of-inverse}
+In $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$ the factor without an inverse has to be the one on the left, for the rule to be a left action: in the computation of $(gh) \ast \alpha$ in the proof of Proposition~\ref{prop:hom-is-representation}(1), the factors on the left appear in the order $\rho_W(g)\,\rho_W(h)$, and the inverses restore this order on the right. That the factor on the left belongs to $W$ and not to $V$ is a consequence of the convention of writing a function to the left of its argument, $\alpha(v)$: the map that is applied last is written first.
+
+More generally, if $G$ acts on $V$ and a second group $H$ acts on $W$, then $G \times H$ acts on $\operatorname{Hom}(V, W)$. This was announced as a homework problem and is not written out here. The inverse on the side of $V$ is explained by the dual representation (\ref{sec:dual-representations}).
+\srcline{lecture 11/13}
+\end{rembox}
+
 \subsection{\texorpdfstring{The Character of $\operatorname{Hom}(V, W)$ and the Dimension Formula}{The Character of Hom(V, W) and the Dimension Formula}}\label{sub:character-hom}
 
 \begin{lembox}[{The Trace of $X \mapsto RXS$}]\label{lem:trace-sandwich}
@@ -10958,7 +10980,7 @@ on the space of $m \times n$ matrices $X$ over $k$. Then $L$ is linear, and $\op
 \[ (RXS)_{i'j'} = \sum_{i=1}^m \sum_{j=1}^n R_{i'i}\,X_{ij}\,S_{jj'}. \]
 A basis of the $m \times n$ matrices is given by the matrix units $E_{ij}$, $1 \leq i \leq m$, $1 \leq j \leq n$ (the entry $1$ in position $(i, j)$ and $0$ elsewhere). Since $X = \sum_{i,j} X_{ij}E_{ij}$, the coordinates of $X$ in this basis are its $mn$ entries, written as a column $X_{11}, X_{12}, \ldots, X_{mn}$. In these coordinates the displayed formula says that the matrix of $L$, an $mn \times mn$ matrix, has the entry
 \[ R_{i'i}\,S_{jj'} \qquad \text{in row (output) } (i', j') \text{ and column (input) } (i, j). \]
-Its diagonal entries are those with $(i', j') = (i, j)$, namely $R_{ii}S_{jj}$. The trace of $L$ is their sum (Definition~\ref{def:trace-linear-map}):
+A check by counting: $R$ has $m^2$ entries and $S$ has $n^2$, so there are $m^2n^2$ products $R_{i'i}S_{jj'}$; an $mn \times mn$ matrix has $m^2n^2$ entries, one place for each product. The diagonal entries of this matrix are those with $(i', j') = (i, j)$, namely $R_{ii}S_{jj}$. The trace of $L$ is their sum (Definition~\ref{def:trace-linear-map}):
 \[ \operatorname{Tr}(L) = \sum_{i=1}^m \sum_{j=1}^n R_{ii}S_{jj} = \Big(\sum_{i=1}^m R_{ii}\Big)\Big(\sum_{j=1}^n S_{jj}\Big) = \operatorname{Tr}(R)\operatorname{Tr}(S). \]
 \end{proof}
 
@@ -11047,9 +11069,18 @@ The six diagonal entries are $R_{11}S_{11}$, $R_{11}S_{22}$, $R_{11}S_{33}$, $R_
 %% <<< END ADDED
 
 \begin{rembox}[{Matrices of Compositions}]\label{rem:matrices-of-compositions}
-The bookkeeping in Lemma~\ref{lem:trace-sandwich} uses the convention that the matrix of a linear map has one row for each output coordinate and one column for each input coordinate. For $\mathbb{R}^I \xrightarrow{A} \mathbb{R}^J \xrightarrow{B} \mathbb{R}^K$ the composite has the entries
-\[ (B \circ A)_{ki} = \sum_{j} B_{kj}A_{ji}, \]
+The bookkeeping in Lemma~\ref{lem:trace-sandwich} uses the convention that the matrix of a linear map has one row for each output coordinate and one column for each input coordinate. The rows and columns need not be numbered $1, 2, \ldots$: they can be indexed by any finite sets. For finite sets $I$, $J$, $K$ and linear maps $\mathbb{R}^I \xrightarrow{A} \mathbb{R}^J \xrightarrow{B} \mathbb{R}^K$ the composite has the entries
+\[ (B \circ A)_{ki} = \sum_{j \in J} B_{kj}A_{ji} \qquad (k \in K,\ i \in I), \]
 a sum over the index in the middle. The entry formula for $RXS$ is this rule applied twice.
+
+This answers the question, asked in the lecture, how the entries of $X$ should be arranged into a column. No arrangement is needed: the coordinates of $X$ are indexed by the set of pairs $(i, j)$. The trace of a linear map $\mathbb{R}^I \to \mathbb{R}^I$ with matrix $A$ is $\sum_{i \in I} A_{ii}$, the sum over $i$ of the coefficient with which the $i$-th coordinate of the input enters the $i$-th coordinate of the output. It does not depend on the order in which the elements of $I$ are listed. In Example~\ref{ex:rxs-2-3} the entries are listed row by row only in order to write down a $6 \times 6$ matrix.
+\srcline{lecture 11/11}
+\end{rembox}
+
+\begin{rembox}[{The Summation Convention}]\label{rem:summation-convention}
+In the notation of physics the summation signs are omitted: an index that occurs twice in a product is summed over. The three formulas of this subsection become
+\[ (B \circ A)_{ki} = B_{kj}A_{ji}, \qquad (RXS)_{i'j'} = R_{i'i}X_{ij}S_{jj'}, \qquad \operatorname{Tr}(X \mapsto RXS) = R_{ii}S_{jj}. \]
+The notation gives a check of index computations: every index that is summed occurs exactly twice, and the remaining indices are the same on both sides of an equation.
 \srcline{lecture 11/11}
 \end{rembox}
 
@@ -11111,7 +11142,7 @@ $\mathbb{R}^3$ & $1$ & $0$ & $1$ & $2$
 
 \subsection{\texorpdfstring{Characters at $g^{-1}$ over $\mathbb{R}$ and $\mathbb{C}$}{Characters at the Inverse over R and C}}\label{sub:characters-at-inverses}
 
-The formula of Theorem~\ref{thm:dim-hom-g} simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3--16.5 were not reached in the lecture of 11/11; the proofs in this subsection are filled in.
+The formula of Theorem~\ref{thm:dim-hom-g} simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3--16.5 were not reached in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof; the proofs in this subsection are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary~\ref{cor:character-dual-real-complex}).
 
 \begin{propbox}[{Real Characters Are Invariant under Inversion}]\label{prop:character-inverse-real}
 Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{R}$. Choose a basis of $V$ in which $G$ acts by orthogonal matrices (Corollary~\ref{cor:orthogonal-matrices}). In this basis, for every $g \in G$,
@@ -11200,6 +11231,308 @@ Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations
 \textit{(Filled in.)} Both fields contain $\mathbb{Q}$, so Theorem~\ref{thm:dim-hom-g} applies. Substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition~\ref{prop:character-inverse-real}) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary~\ref{cor:character-inverse-complex}).
 \end{proof}
 
+% ============================================================================
+% SECTION: DUAL REPRESENTATIONS (lecture Fri Nov 13)
+% ============================================================================
+\section{Dual Representations}\label{sec:dual-representations}
+
+\textit{Source: Lecture (Fri Nov 13). Reference: Axler, \emph{Linear Algebra Done Right}, Section~3F (duality).}
+
+The formula $\chi_{\operatorname{Hom}(V, W)}(g) = \chi_V(g^{-1})\,\chi_W(g)$ (Proposition~\ref{prop:character-hom}) has two parts: the inverse in $\chi_V(g^{-1})$, and the product. This section explains the inverse. The function $g \mapsto \chi_V(g^{-1})$ is itself a character, the character of the dual representation $V^\vee$ (Proposition~\ref{prop:character-dual}). The product comes from tensor products, which the lecture of 11/13 only described briefly (the last subsection of this section); the course will mostly use $\operatorname{Hom}$ instead.
+
+\subsection{Dual Spaces and Dual Bases}\label{sub:dual-spaces}
+
+\begin{defbox}[{Dual Space}]\label{def:dual-space}
+Let $k$ be a field and $V$ a vector space over $k$. The \textbf{dual space} of $V$ is
+\[ V^\vee = \operatorname{Hom}(V, k), \]
+the vector space of linear maps $V \to k$. It is the space $\operatorname{Hom}(V, W)$ of Definition~\ref{def:hom-representation} for $W = k$.
+\srcline{lecture 11/13}
+\end{defbox}
+
+Axler writes $V'$ for the dual space and calls its elements linear functionals; MATH 591 writes $V^\ast$.
+
+\begin{defbox}[{Dual Basis}]\label{def:dual-basis}
+Let $V$ be finite-dimensional with basis $e_1, \ldots, e_n$. Every $v \in V$ is $v = \sum_i c_ie_i$ with unique coefficients $c_i \in k$. The \textbf{dual basis} $e_1^\ast, \ldots, e_n^\ast$ consists of the maps $e_j^\ast: V \to k$ with
+\[ e_j^\ast\Big(\sum_{i=1}^n c_ie_i\Big) = c_j. \]
+So $e_j^\ast$ extracts the coefficient of $e_j$. In particular $e_j^\ast(e_i) = 1$ if $i = j$, and $e_j^\ast(e_i) = 0$ if $i \neq j$.
+\srcline{lecture 11/13}
+\end{defbox}
+
+\begin{propbox}[{The Dual Basis Is a Basis}]\label{prop:dual-basis-is-basis}
+Let $V$ be finite-dimensional with basis $e_1, \ldots, e_n$, and let $e_1^\ast, \ldots, e_n^\ast$ be the dual basis (Definition~\ref{def:dual-basis}).
+\begin{enumerate}
+    \item Each $e_j^\ast$ is linear, so $e_j^\ast \in V^\vee$.
+    \item Every $f \in V^\vee$ is $f = \sum_{j=1}^n f(e_j)\,e_j^\ast$.
+    \item $e_1^\ast, \ldots, e_n^\ast$ is a basis of $V^\vee$. In particular $V^\vee$ is finite-dimensional, and $\dim V^\vee = \dim V$.
+\end{enumerate}
+\srcline{lecture 11/13 (stated); the proof is not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} A linear map is determined by its values on the basis vectors $e_i$, and $e_j^\ast(e_i)$ is $1$ or $0$.\par
+\textit{(Not from class; filled in.)} \textbf{(1)} Let $v = \sum_i c_ie_i$ and $v' = \sum_i c_i'e_i$, and let $a, a' \in k$. Then $av + a'v' = \sum_i (ac_i + a'c_i')e_i$, so
+\[ e_j^\ast(av + a'v') = ac_j + a'c_j' = a\,e_j^\ast(v) + a'\,e_j^\ast(v'). \]
+
+\textbf{(2)} Let $h = \sum_j f(e_j)\,e_j^\ast$. It is linear by (1), and $h(e_i) = \sum_j f(e_j)\,e_j^\ast(e_i) = f(e_i)$ for every $i$, because only the summand with $j = i$ is not zero. For $v = \sum_i c_ie_i$, linearity of $f$ and of $h$ gives
+\[ f(v) = \sum_i c_if(e_i) = \sum_i c_ih(e_i) = h(v). \]
+
+\textbf{(3)} By (2) the $e_j^\ast$ span $V^\vee$. They are linearly independent: if $\sum_j a_je_j^\ast = 0$, then evaluating at $e_i$ gives $a_i = 0$, for every $i$.
+\end{proof}
+
+Dual spaces of infinite-dimensional vector spaces are left aside in this course.
+
+\begin{exbox}[{A Dual Basis in $\mathbb{R}^2$}]\label{ex:dual-basis-r2}
+\textit{(Not from class.)} Let $e_1 = (1, 0)$ and $e_2 = (1, 1)$ in $\mathbb{R}^2$. Since $(x, y) = (x - y)\,e_1 + y\,e_2$, the dual basis is
+\[ e_1^\ast(x, y) = x - y, \qquad e_2^\ast(x, y) = y. \]
+\begin{enumerate}
+    \item For the standard basis $(1, 0)$, $(0, 1)$ the first dual basis vector is $(x, y) \mapsto x$. So $e_1^\ast$ changes when $e_2$ is changed and $e_1$ is kept: the map $e_j^\ast$ depends on the whole basis, not only on $e_j$.
+    \item Written as rows, $e_1^\ast = (1, -1)$ and $e_2^\ast = (0, 1)$. These are the rows of the inverse of the matrix $P = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ whose columns are $e_1$, $e_2$: the equations $e_j^\ast(e_i) = 1$ or $0$ say that (row $j$) times (column $i$ of $P$) is the $(j, i)$ entry of the identity matrix.
+\end{enumerate}
+\srcline{not from class}
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, scale=1.15]
+\begin{scope}
+\clip (-0.75,-0.55) rectangle (4.75,2.75);
+\foreach \c in {0,1,2,3} { \draw[blue!70!black, thin] (\c-1,-1) -- (\c+3,3); }
+\foreach \c in {0,1,2} { \draw[red!70!black, thin] (-1,\c) -- (5,\c); }
+\end{scope}
+\foreach \c in {0,1,2,3} { \node[blue!70!black, anchor=south, rotate=45] at (\c+2.42,2.58) {$e_1^{*} = \c$}; }
+\foreach \c in {0,1,2} { \node[red!70!black, anchor=west] at (4.8,\c) {$e_2^{*} = \c$}; }
+\draw[->, very thick] (0,0) -- (1,0) node[below=1pt] {$e_1$};
+\draw[->, very thick] (0,0) -- (1,1) node[above left=-1pt] {$e_2$};
+\draw[->, thick, orange!85!black] (0,0) -- (3,1);
+\fill[orange!85!black] (3,1) circle (1.3pt) node[fill=white, inner sep=1pt, above left=2pt] {$v$};
+\draw[orange!85!black, densely dashed, thick] (1,0) -- (2,0) -- (3,1);
+\node[align=left, anchor=west] at (6.3,2.2) {$e_1 = (1, 0)$, \ $e_2 = (1, 1)$};
+\node[align=left, anchor=west, blue!70!black] at (6.3,1.5) {$e_1^{*}(x, y) = x - y$\\level lines parallel to $e_2$};
+\node[align=left, anchor=west, red!70!black] at (6.3,0.6) {$e_2^{*}(x, y) = y$\\level lines parallel to $e_1$};
+\node[align=left, anchor=west, orange!85!black] at (6.3,-0.2) {$v = 2e_1 + e_2$:\\$e_1^{*}(v) = 2$, \ $e_2^{*}(v) = 1$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Example~\ref{ex:dual-basis-r2}. The level lines of $e_1^\ast$ (blue) are parallel to $e_2$, and those of $e_2^\ast$ (red) are parallel to $e_1$: the map $e_1^\ast$ is $0$ on $e_2$, so it is constant along the direction of $e_2$. The vector $v = 2e_1 + e_2$ lies on the lines $e_1^\ast = 2$ and $e_2^\ast = 1$, which are its coefficients. Changing $e_2$ turns the blue lines, although $e_1$ stays the same.
+%% <<< END ADDED
+
+\begin{rembox}[{Duals in Coordinates}]\label{rem:duals-in-coordinates}
+Let $V = k^n$ with the standard basis $e_1, \ldots, e_n$. Then $e_j^\ast(v) = v_j$ is the $j$-th coordinate of $v$. It can be written as the dot product $\langle e_j, v \rangle$, or as the matrix product $e_j^Tv$ of a row vector with a column vector. In coordinates one usually does not distinguish $k^n$ from its dual: an element of either is a list of $n$ numbers, written as a column for a vector and as a row for a linear map $k^n \to k$. For this reason, transposes appear whenever statements about duals are written in coordinates.
+
+The dual space itself needs no inner product or other extra structure on $V$. The dot product above is the standard symmetric bilinear form $\langle x, y \rangle = \sum_i x_iy_i$ on $k^n$. It is used only as a way of writing coordinates; positive definiteness (which is part of the definition of an inner product, Definition~\ref{def:inner-product-real}) plays no role.
+\srcline{lecture 11/13}
+\end{rembox}
+
+\subsection{Dual Maps}\label{sub:dual-maps}
+
+\begin{defbox}[{Dual Map}]\label{def:dual-map}
+Let $\varphi: V \to W$ be a linear map of $k$-vector spaces. The \textbf{dual map} $\varphi^\vee: W^\vee \to V^\vee$ is defined by
+\[ \varphi^\vee(w^\vee)(v) := w^\vee\big(\varphi(v)\big) \qquad (w^\vee \in W^\vee,\ v \in V), \]
+that is, $\varphi^\vee(w^\vee) = w^\vee \circ \varphi$. It goes in the direction opposite to $\varphi$. The symbols can be combined in only one way: $\varphi$ takes a vector of $V$ and returns a vector of $W$, and a vector of $W$ is what $w^\vee$ takes.
+\srcline{lecture 11/13}
+\end{defbox}
+
+\begin{center}
+\begin{tikzcd}[column sep=large, row sep=normal]
+V \arrow[r, "\varphi"] & W \\
+V^\vee & W^\vee \arrow[l, "\varphi^\vee"']
+\end{tikzcd}
+\end{center}
+\textit{(Board 11/13.)} A linear map $\varphi$ and its dual map $\varphi^\vee$ (Definition~\ref{def:dual-map}), which goes the other way.
+
+\begin{propbox}[{Duals Reverse Composition}]\label{prop:duals-reverse-composition}
+Let $U \xrightarrow{\alpha} V \xrightarrow{\beta} W$ be linear maps of $k$-vector spaces, and let $\varphi: V \to W$ be linear.
+\begin{enumerate}
+    \item For $w^\vee \in W^\vee$ the map $\varphi^\vee(w^\vee)$ is linear, so it lies in $V^\vee$; and $\varphi^\vee: W^\vee \to V^\vee$ is linear.
+    \item $(\beta \circ \alpha)^\vee = \alpha^\vee \circ \beta^\vee$, where $W^\vee \xrightarrow{\beta^\vee} V^\vee \xrightarrow{\alpha^\vee} U^\vee$.
+    \item $(\mathrm{Id}_V)^\vee = \mathrm{Id}_{V^\vee}$.
+    \item If $\varphi$ is invertible, then $\varphi^\vee$ is invertible, and $(\varphi^\vee)^{-1} = (\varphi^{-1})^\vee$.
+\end{enumerate}
+\srcline{lecture 11/13; parts (1) and (4) are not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $\varphi^\vee$ is composition with $\varphi$ on the right, and composing on the right with $\beta \circ \alpha$ is composing with $\beta$ first and then with $\alpha$.\par
+\textbf{(1)} \textit{(Not from class.)} $\varphi^\vee(w^\vee) = w^\vee \circ \varphi$ is a composite of the linear maps $V \xrightarrow{\varphi} W \xrightarrow{w^\vee} k$, so it is linear. For $w_1^\vee, w_2^\vee \in W^\vee$ and $a, b \in k$, the maps $(aw_1^\vee + bw_2^\vee) \circ \varphi$ and $a(w_1^\vee \circ \varphi) + b(w_2^\vee \circ \varphi)$ both have the value $a\,w_1^\vee(\varphi(v)) + b\,w_2^\vee(\varphi(v))$ at every $v \in V$. So $\varphi^\vee(aw_1^\vee + bw_2^\vee) = a\varphi^\vee(w_1^\vee) + b\varphi^\vee(w_2^\vee)$.
+
+\textbf{(2)} \textit{(Lecture 11/13.)} For $w^\vee \in W^\vee$,
+\[ (\beta \circ \alpha)^\vee(w^\vee) = w^\vee \circ \beta \circ \alpha = (w^\vee \circ \beta) \circ \alpha = \alpha^\vee(w^\vee \circ \beta) = \alpha^\vee\big(\beta^\vee(w^\vee)\big). \]
+
+\textbf{(3)} For $v^\vee \in V^\vee$, $(\mathrm{Id}_V)^\vee(v^\vee) = v^\vee \circ \mathrm{Id}_V = v^\vee$.
+
+\textbf{(4)} \textit{(Not from class.)} By (2) and (3), $\varphi^\vee \circ (\varphi^{-1})^\vee = (\varphi^{-1} \circ \varphi)^\vee = (\mathrm{Id}_V)^\vee = \mathrm{Id}_{V^\vee}$, and $(\varphi^{-1})^\vee \circ \varphi^\vee = (\varphi \circ \varphi^{-1})^\vee = (\mathrm{Id}_W)^\vee = \mathrm{Id}_{W^\vee}$.
+\end{proof}
+
+\begin{center}
+\begin{tikzcd}[column sep=large, row sep=normal]
+U \arrow[r, "\alpha"] \arrow[rr, bend left=40, "\beta \circ \alpha"] & V \arrow[r, "\beta"] & W \\
+U^\vee & V^\vee \arrow[l, "\alpha^\vee"'] & W^\vee \arrow[l, "\beta^\vee"'] \arrow[ll, bend left=40, "\alpha^\vee \circ \beta^\vee"]
+\end{tikzcd}
+\end{center}
+\textit{(Board 11/13.)} Proposition~\ref{prop:duals-reverse-composition}(2): the dual of the composite $\beta \circ \alpha$ is the composite of the duals in the opposite order. In the language of category theory, which the course does not use, the dual is a contravariant functor.
+
+\begin{propbox}[{The Dual Map Has the Transpose Matrix}]\label{prop:dual-map-transpose}
+Let $V$ have the basis $v_1, \ldots, v_m$ and $W$ the basis $w_1, \ldots, w_n$. Let $\varphi: V \to W$ be linear with matrix $A$ in these bases: $A$ is the $n \times m$ matrix with
+\[ \varphi(v_i) = \sum_{j=1}^n A_{ji}\,w_j \qquad (i = 1, \ldots, m). \]
+Column $i$ of $A$ holds the coordinates of the image of the $i$-th basis vector; $j$ is the row index and $i$ the column index. Then
+\[ \varphi^\vee(w_j^\ast) = \sum_{i=1}^m A_{ji}\,v_i^\ast = \sum_{i=1}^m (A^T)_{ij}\,v_i^\ast \qquad (j = 1, \ldots, n). \]
+That is, in the dual bases $w_1^\ast, \ldots, w_n^\ast$ of $W^\vee$ and $v_1^\ast, \ldots, v_m^\ast$ of $V^\vee$ (Definition~\ref{def:dual-basis}), the matrix of $\varphi^\vee$ is the transpose $A^T$, an $m \times n$ matrix.
+\srcline{board 11/13}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} Evaluate $\varphi^\vee(w_j^\ast)$ on the basis vectors $v_i$; the values are its coefficients in the dual basis.\par
+\textit{(Board 11/13.)} By the definition of the dual map and of the dual basis of $W$,
+\[ \varphi^\vee(w_j^\ast)(v_i) = w_j^\ast\big(\varphi(v_i)\big) = w_j^\ast\Big(\sum_{l=1}^n A_{li}\,w_l\Big) = A_{ji}. \]
+The map $f = \varphi^\vee(w_j^\ast)$ lies in $V^\vee$, so $f = \sum_i f(v_i)\,v_i^\ast$ (Proposition~\ref{prop:dual-basis-is-basis}(2)). This gives $\varphi^\vee(w_j^\ast) = \sum_i A_{ji}\,v_i^\ast$.
+
+\emph{Reading off the matrix.} The matrix of a linear map has, in row $i$ and column $j$, the coefficient of the $i$-th basis vector of the target in the image of the $j$-th basis vector of the source, as in the display for $\varphi$ in the statement. For $\varphi^\vee$ this coefficient is $A_{ji}$. In the sum $\sum_i A_{ji}\,v_i^\ast$ the summation index $i$ is in the column position of $A$, which is not where the matrix of a map has it; writing $A_{ji} = (A^T)_{ij}$ puts it in the row position. So the matrix of $\varphi^\vee$ is $A^T$.
+
+\emph{Check of the shape.} $A$ is $n \times m$. The map $\varphi^\vee$ goes from the $n$-dimensional space $W^\vee$ to the $m$-dimensional space $V^\vee$, so its matrix must be $m \times n$.
+\end{proof}
+
+\textbf{Transcription note.} The handwritten notes of 11/13 have $\varphi(w_j) = \sum_j A_{ji}w_i$, the first version on the board. Since $\varphi$ is defined on $V$, the board was corrected, after a question, to $\varphi(v_i) = \sum_j A_{ji}w_j$, the formula of the proposition. The board writes $v_i^\vee$ and $w_j^\vee$ for the dual basis vectors. These notes write $v_i^\ast$ and $w_j^\ast$, as in Definition~\ref{def:dual-basis}, and keep $\vee$ for dual spaces, for dual maps, and for an arbitrary element $w^\vee$ of $W^\vee$.
+
+\begin{exbox}[{A Dual Map in Coordinates}]\label{ex:dual-map-coordinates}
+\textit{(Not from class.)} Let $\varphi: k^3 \to k^2$ be multiplication by $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{pmatrix}$, and let $w^\vee = a\,e_1^\ast + b\,e_2^\ast \in (k^2)^\vee$, the row $(a \ \ b)$ (the remark \emph{Duals in Coordinates}). Then $\varphi^\vee(w^\vee) = w^\vee \circ \varphi$ is the map $v \mapsto (a \ \ b)\,Av$, that is, the row
+\[ (a \ \ b)\,A = (a + 4b \quad 2a + 5b \quad 3a + 6b). \]
+So on rows the dual map is multiplication by $A$ from the right. Its coordinates in the dual basis of $(k^3)^\vee$, written as a column, are
+\[ \begin{pmatrix} a + 4b \\ 2a + 5b \\ 3a + 6b \end{pmatrix} = \begin{pmatrix} 1 & 4 \\ 2 & 5 \\ 3 & 6 \end{pmatrix}\begin{pmatrix} a \\ b \end{pmatrix} = A^T\begin{pmatrix} a \\ b \end{pmatrix}, \]
+as Proposition~\ref{prop:dual-map-transpose} says.
+\srcline{not from class}
+\end{exbox}
+
+\subsection{The Dual Representation}\label{sub:dual-representation}
+
+\begin{defbox}[{Dual Representation}]\label{def:dual-representation}
+Let $V$ be a representation of $G$ over $k$. The \textbf{dual representation} is the vector space $V^\vee$ with
+\[ \rho_{V^\vee}(g) = \rho_V(g^{-1})^\vee \qquad (g \in G). \]
+Explicitly, for $f \in V^\vee$ and $v \in V$,
+\[ (g \ast f)(v) = f\big(\rho_V(g^{-1})(v)\big) = f(g^{-1}v). \]
+This is the representation $\operatorname{Hom}(V, k)$ of Definition~\ref{def:hom-representation} for the trivial action of $G$ on $k$, since then $g \ast \alpha = \alpha \circ \rho_V(g^{-1})$.
+\srcline{lecture 11/13; the last sentence is not from class}
+\end{defbox}
+
+\begin{propbox}[{The Dual Representation Is a Representation}]\label{prop:dual-is-representation}
+Let $V$ be a representation of $G$ over $k$.
+\begin{enumerate}
+    \item The rule $f \ast g := \rho_V(g)^\vee(f) = f \circ \rho_V(g)$ is a right action of $G$ on $V^\vee$ (Definition~\ref{def:right-action}).
+    \item The rule $g \ast f := \rho_V(g^{-1})^\vee(f)$ of Definition~\ref{def:dual-representation} is a left action of $G$ on $V^\vee$ by linear maps. So $V^\vee$ is a representation of $G$.
+    \item Let $V$ be finite-dimensional, and let $M$ be the matrix of $\rho_V(g)$ in a basis of $V$. In the dual basis, the matrix of $\rho_{V^\vee}(g)$ is $(M^{-1})^T$, the inverse transpose of $M$.
+\end{enumerate}
+\srcline{board 11/13}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} The dual reverses the order of composition, and so does inversion. Two reversals cancel.\par
+\textit{(Board 11/13.)} \textbf{(1)} Since $\rho_V$ is a homomorphism (Proposition~\ref{prop:representations-homomorphisms-glv}) and the dual reverses composition (Proposition~\ref{prop:duals-reverse-composition}(2)),
+\[ \rho_V(gh)^\vee = \big(\rho_V(g) \circ \rho_V(h)\big)^\vee = \rho_V(h)^\vee \circ \rho_V(g)^\vee. \]
+So $(f \ast g) \ast h = \rho_V(h)^\vee\big(\rho_V(g)^\vee(f)\big) = \rho_V(gh)^\vee(f) = f \ast (gh)$, and $f \ast e = (\mathrm{Id}_V)^\vee(f) = f$ (Proposition~\ref{prop:duals-reverse-composition}(3)). These are the axioms of a right action. In matrices this is the rule $(MN)^T = N^TM^T$: the transpose reverses the order of matrix multiplication.
+
+\textbf{(2)} A right action becomes a left action when the group element is replaced by its inverse (the mirror image of Proposition~\ref{prop:left-action-gives-right-action}, from Worksheet 4; see the remark \emph{Left and Right Are Interchangeable} in \ref{sec:action-def}). Written out: inversion also reverses products, $(gh)^{-1} = h^{-1}g^{-1}$, so
+\[ \rho_{V^\vee}(gh) = \rho_V\big((gh)^{-1}\big)^\vee = \big(\rho_V(h^{-1}) \circ \rho_V(g^{-1})\big)^\vee = \rho_V(g^{-1})^\vee \circ \rho_V(h^{-1})^\vee = \rho_{V^\vee}(g) \circ \rho_{V^\vee}(h), \]
+and $\rho_{V^\vee}(e) = (\mathrm{Id}_V)^\vee = \mathrm{Id}_{V^\vee}$. Each $\rho_{V^\vee}(g)$ is linear (Proposition~\ref{prop:duals-reverse-composition}(1)). So $g \ast f = \rho_{V^\vee}(g)(f)$ is a left action of $G$ on $V^\vee$ by linear maps, which is a representation (Definition~\ref{def:representation}).
+
+\textbf{(3)} The matrix of $\rho_V(g^{-1}) = \rho_V(g)^{-1}$ is $M^{-1}$. By Proposition~\ref{prop:dual-map-transpose}, applied to $\varphi = \rho_V(g^{-1}): V \to V$ with the same basis of $V$ on both sides, the matrix of $\rho_V(g^{-1})^\vee$ in the dual basis is $(M^{-1})^T$.
+\end{proof}
+
+\begin{propbox}[{The Character of the Dual Representation}]\label{prop:character-dual}
+Let $V$ be a finite-dimensional representation of $G$. Then for every $g \in G$
+\[ \chi_{V^\vee}(g) = \chi_V(g^{-1}). \]
+\srcline{board 11/13}
+\end{propbox}
+
+\begin{proof}
+\textit{(Board 11/13.)} Choose a basis of $V$, and let $N$ be the matrix of $\rho_V(g^{-1})$ in it. In the dual basis the matrix of $\rho_{V^\vee}(g)$ is $N^T$ (Proposition~\ref{prop:dual-is-representation}(3)). A matrix and its transpose have the same diagonal entries, so they have the same trace (Definition~\ref{def:trace-matrix}):
+\[ \chi_{V^\vee}(g) = \operatorname{Tr}(N^T) = \operatorname{Tr}(N) = \operatorname{Tr}\rho_V(g^{-1}) = \chi_V(g^{-1}). \]
+\end{proof}
+
+The same formula follows from Proposition~\ref{prop:character-hom} for $W = k$ with the trivial action, where $\chi_W(g) = 1$ and $\operatorname{Hom}(V, k) = V^\vee$ as representations (Definition~\ref{def:dual-representation}).
+
+\begin{corbox}[{Dual Characters over $\mathbb{R}$ and $\mathbb{C}$}]\label{cor:character-dual-real-complex}
+Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $k$.
+\begin{enumerate}
+    \item If $k = \mathbb{R}$, then $\chi_{V^\vee} = \chi_V$.
+    \item If $k = \mathbb{C}$, then $\chi_{V^\vee} = \overline{\chi_V}$.
+\end{enumerate}
+\srcline{lecture 11/13 (stated)}
+\end{corbox}
+
+\begin{proof}
+By Proposition~\ref{prop:character-dual}, $\chi_{V^\vee}(g) = \chi_V(g^{-1})$. Over $\mathbb{R}$ this is $\chi_V(g)$ (WS 16.3, Proposition~\ref{prop:character-inverse-real}), and over $\mathbb{C}$ it is $\overline{\chi_V(g)}$ (WS 16.5, Corollary~\ref{cor:character-inverse-complex}). The lecture of 11/13 recalled these two statements without proof; their proofs in these notes are filled in.
+\end{proof}
+
+\begin{rembox}[{Where the Inverse Comes From}]\label{rem:where-inverse-comes-from}
+By Proposition~\ref{prop:character-dual}, the formula of Proposition~\ref{prop:character-hom} reads
+\[ \chi_{\operatorname{Hom}(V, W)}(g) = \chi_{V^\vee}(g)\,\chi_W(g). \]
+The inverse belongs to $V^\vee$ alone and appears without $W$. It is forced by the requirement that the action on the dual space be a left action: whenever a group acts on a vector space by matrices, the action on the dual space, as a left action, is by the inverse transposes.
+\srcline{lecture 11/13}
+\end{rembox}
+
+\begin{exbox}[{The Dual of a Rotation Representation}]\label{ex:dual-rotation}
+\textit{(Not from class.)} Let $G = \mathbb{Z}/4\mathbb{Z}$ act on $V = \mathbb{R}^2$, the generator $g$ acting by the rotation by $90^\circ$, $M = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$, so that $g(x, y) = (-y, x)$ and $g^{-1}(x, y) = (y, -x)$. For the dual basis $e_1^\ast(x, y) = x$, $e_2^\ast(x, y) = y$ of the standard basis:
+\[ (g \ast e_1^\ast)(x, y) = e_1^\ast(y, -x) = y, \qquad (g \ast e_2^\ast)(x, y) = e_2^\ast(y, -x) = -x. \]
+So $g \ast e_1^\ast = e_2^\ast$ and $g \ast e_2^\ast = -e_1^\ast$.
+\begin{enumerate}
+    \item In the dual basis the matrix of $\rho_{V^\vee}(g)$ has the columns $(0, 1)$ and $(-1, 0)$. It is $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = (M^{-1})^T$, as in Proposition~\ref{prop:dual-is-representation}(3), because $M^{-1} = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$.
+    \item Here $(M^{-1})^T = M$. This holds for every orthogonal matrix $M$, since $M^TM = I$ means $M^{-1} = M^T$. So when a group acts by orthogonal matrices in some basis, the dual representation has the same matrices in the dual basis.
+    \item The characters agree, $\chi_{V^\vee} = \chi_V$, with the values $2, 0, -2, 0$ at $e, g, g^2, g^3$, as in Corollary~\ref{cor:character-dual-real-complex}(1).
+\end{enumerate}
+\srcline{not from class}
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, scale=0.95]
+\begin{scope}
+\draw[->, black!55, thin] (-2.6,0) -- (2.9,0) node[right] {$x$};
+\draw[->, black!55, thin] (0,-1.1) -- (0,2.9) node[above] {$y$};
+\foreach \c in {-2,-1,0,1,2} { \draw[blue!70!black, thin] (\c,-0.9) -- (\c,2.55); \node[blue!70!black, anchor=north] at (\c,-0.9) {$\c$}; }
+\node[blue!70!black, anchor=south] at (0.2,3.25) {level lines of $f = e_1^{*}$, \ $f(x, y) = x$};
+\draw[->, thick, orange!85!black] (0,0) -- (2,1);
+\fill[orange!85!black] (2,1) circle (1.4pt) node[fill=white, inner sep=1pt, above left=2pt] {$v$};
+\node[orange!85!black] at (0.2,-1.85) {$f(v) = 2$};
+\end{scope}
+\draw[->, thick, black!70] (3.9,1.1) to[bend left=25] node[above, align=center] {rotate by $g$\\($90^\circ$)} (5.7,1.1);
+\begin{scope}[xshift=9.2cm]
+\draw[->, black!55, thin] (-2.6,0) -- (2.9,0) node[right] {$x$};
+\draw[->, black!55, thin] (0,-1.1) -- (0,2.9) node[above] {$y$};
+\foreach \c in {-1,0,1,2} { \draw[red!70!black, thin] (-2.45,\c) -- (2.55,\c); \node[red!70!black, anchor=east] at (-2.45,\c) {$\c$}; }
+\node[red!70!black, anchor=south] at (0.2,3.25) {level lines of $g \ast f = e_2^{*}$, \ $(g \ast f)(x, y) = y$};
+\draw[->, thick, orange!85!black] (0,0) -- (-1,2);
+\fill[orange!85!black] (-1,2) circle (1.4pt) node[fill=white, inner sep=1pt, below left=2pt] {$gv$};
+\node[orange!85!black] at (0.2,-1.85) {$(g \ast f)(gv) = f(v) = 2$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Example~\ref{ex:dual-rotation}. Left: the level lines of $f = e_1^\ast$ and a vector $v$ with $f(v) = 2$. Right: the level lines of $g \ast f$. Since $(g \ast f)(gv) = f(g^{-1}gv) = f(v)$, the map $g \ast f$ takes at $gv$ the value that $f$ takes at $v$. So the level lines of $g \ast f$ are the level lines of $f$ moved by $g$. The inverse in the definition is what makes the picture of $f$ move with $g$.
+%% <<< END ADDED
+
+\begin{exbox}[{The Dual of a One-Dimensional Representation}]\label{ex:dual-one-dimensional}
+\textit{(Not from class.)} Let $V = k$ be the one-dimensional representation given by a character $\chi: G \to k^\times$, so $g$ acts as multiplication by $\chi(g)$ (Example~\ref{ex:one-dimensional-representations}). The $1 \times 1$ matrix of $\rho_V(g)$ is $\chi(g)$, and its inverse transpose is $\chi(g)^{-1}$. So $V^\vee$ is the one-dimensional representation given by the character $g \mapsto \chi(g)^{-1}$.
+\begin{enumerate}
+    \item For the trivial and the sign representation, $\chi(g) = \pm 1$ and $\chi(g)^{-1} = \chi(g)$: each of them has the same character as its dual.
+    \item Let $G = \mathbb{Z}/3\mathbb{Z}$ and $k = \mathbb{C}$, with $\chi(j) = \omega^j$, $\omega = e^{2\pi i/3}$. The dual has the character $j \mapsto \omega^{-j} = \overline{\omega^j}$, the complex conjugate of $\chi$, as in Corollary~\ref{cor:character-dual-real-complex}(2). Here $V^\vee$ is not isomorphic to $V$. An isomorphism of representations $\varphi: V \to V^\vee$ (Definition~\ref{def:isomorphism-representations}) would satisfy $\varphi(\omega v) = \omega^{-1}\varphi(v)$ for the generator, that is, $\omega\,\varphi(v) = \omega^{-1}\varphi(v)$; with $\varphi(v) \neq 0$ this gives $\omega^2 = 1$, which is false.
+\end{enumerate}
+\srcline{not from class}
+\end{exbox}
+
+\subsection{A Word on Tensor Products}\label{sub:tensor-preview}
+
+\begin{rembox}[{Tensor Products (Overview)}]\label{rem:tensor-products-overview}
+The lecture of 11/13 described tensor products only in outline, without proofs. There are several ways to put two vector spaces $V$ and $W$ together.
+\begin{enumerate}
+    \item The direct sum $V \oplus W$ adds dimensions. A basis of it is the disjoint union of a basis of $V$ and a basis of $W$.
+    \item $\operatorname{Hom}(V, W)$ multiplies dimensions (\ref{sec:hom-representation}).
+    \item The \textbf{tensor product} $V \otimes W$ also multiplies dimensions. In the description that depends most on bases: if $V$ has the basis $v_i$ and $W$ the basis $w_j$, then $V \otimes W$ has the basis $v_i \otimes w_j$, so its elements are the sums $\sum_{i,j} c_{ij}\,(v_i \otimes w_j)$.
+\end{enumerate}
+The symbol $\otimes$ is bilinear, so it distributes over sums of arbitrary vectors $x_i \in V$ and $y_j \in W$, not only basis vectors:
+\[ \Big(\sum_i x_i\Big) \otimes \Big(\sum_j y_j\Big) = \sum_{i,j} x_i \otimes y_j. \]
+Linear maps $V \to V'$ and $W \to W'$ act on $V \otimes W$: apply them to the two factors of each term and expand the result in the bases of $V'$ and $W'$. The fact that is not obvious, and was not proved, is that all of this is independent of the bases.
+
+Tensor products are where the product in $\chi_{\operatorname{Hom}(V, W)}(g) = \chi_V(g^{-1})\,\chi_W(g)$ comes from, but the course will almost always use $\operatorname{Hom}$ instead. Tensor products are essential in quantum mechanics and quantum computing: the state space of several qubits is a tensor product with one factor for each qubit.
+\srcline{lecture 11/13; overview only}
+\end{rembox}
+
 
 \appendix
 \chapter{Review: Toolkits, Standard Examples, and Traps}\label{ch:review}
@@ -11235,6 +11568,7 @@ Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations
     \item \textbf{To split off a subrepresentation $U$ (finite $G$, $|G| \neq 0$ in $k$).} Take any idempotent $P$ with image $U$ (extend a basis of $U$) and average it, $\pi(w) = \frac{1}{|G|}\sum_h h^{-1}P(hw)$; then $\operatorname{Ker}\pi$ is a complementary subrepresentation (the proof of Theorem~\ref{thm:maschke}). For $U = V^G$ the averaging map $\frac{1}{|G|}\sum_g g$ does it directly (\ref{sec:invariants}).
     \item \textbf{To compute $\dim V^G$ or a character ($G$ finite, $\mathbb{Q} \subseteq k$).} $\dim V^G = \frac{1}{|G|}\sum_g \chi_V(g)$ (Theorem~\ref{thm:dim-invariants-character}). Characters are constant on conjugacy classes and add over direct sums, so a character table needs one column per conjugacy class; for a permutation representation, $\chi(g)$ is the number of fixed points of $g$, and the formula counts orbits (Burnside's Lemma) (\ref{sec:invariants}, \ref{sec:characters-of-representations}).
     \item \textbf{To count the homomorphisms between two representations ($G$ finite, $\mathbb{Q} \subseteq k$).} $\operatorname{Hom}_G(V, W)$ is the space of invariant vectors of $\operatorname{Hom}(V, W)$, whose character is $\chi_W(g)\chi_V(g^{-1})$ (the map $X \mapsto RXS$ has trace $\operatorname{Tr}R \cdot \operatorname{Tr}S$), so $\dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_g \chi_V(g)\chi_W(g^{-1})$ (Theorem~\ref{thm:dim-hom-g}); over $\mathbb{R}$ replace $\chi_W(g^{-1})$ by $\chi_W(g)$, over $\mathbb{C}$ by $\overline{\chi_W(g)}$ (Corollary~\ref{cor:dim-hom-g-real-complex}). Sum over conjugacy classes, weighting each by its size.
+    \item \textbf{To find the character of a dual representation.} $V^\vee = \operatorname{Hom}(V, k)$ with $(g \ast f)(v) = f(g^{-1}v)$. In a basis and its dual basis, $g$ acts on $V^\vee$ by the inverse transpose of its matrix on $V$ (the transpose alone would give a right action), so $\chi_{V^\vee}(g) = \chi_V(g^{-1})$ (Proposition~\ref{prop:character-dual}); for a finite group this is $\chi_V(g)$ over $\mathbb{R}$ and $\overline{\chi_V(g)}$ over $\mathbb{C}$ (Corollary~\ref{cor:character-dual-real-complex}). Hence $\chi_{\operatorname{Hom}(V, W)} = \chi_{V^\vee}\chi_W$.
     \item \textbf{To show a representation is simple.} Rule out subrepresentations other than $\{0\}$ and $V$; in dimension $2$ these are invariant lines, i.e.\ common eigenvectors of all $\rho(g)$ (a rotation by $120^\circ$ has no real eigenvector; Example~\ref{ex:s3-r3-simples}). Under Maschke's hypotheses, simple is the same as irreducible (not a direct sum of two nonzero subrepresentations; Proposition~\ref{prop:simple-iff-irreducible}), and every representation is a direct sum of simple ones (Corollary~\ref{cor:direct-sum-of-simples}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
@@ -11333,8 +11667,9 @@ Fri Nov 6 \newline lecture & WS 14.7--14.8 (the averaged inner product); finite 
 Wed Nov 4 \newline office hours & $GL_n(\mathbb{F}_p)$ acting on complete flags $G/B$; orbits of the unitriangular group of sizes $p^{\ell(w)}$ for $n = 2, 3$ & \ref{sub:flags-sylow-gln} \\
 Thu Nov 5 \newline Problem Set 8 (submitted) & The product formula $|AB| = |A|\,|B|/|A \cap B|$; subgroups of index $2$ are normal; groups of order $pq$ as semidirect products $\mathbb{Z}/q\mathbb{Z} \rtimes \mathbb{Z}/p\mathbb{Z}$, classified by the solutions of $a^p \equiv 1 \bmod q$; simple groups of order $60$ through the action on $A_6/G$; the trace, $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ & \ref{sub:product-formula} (8.1), \ref{sec:normal-sources} (8.2), \ref{sub:order-pq}, \ref{sec:order-pq-semidirect} (8.3), \ref{sub:order-60} (8.4), \ref{sec:invariants} (8.5) \\
 Mon Nov 9 \newline lecture; Worksheet 15 & Idempotents and their trace; invariant vectors and the averaging operator; $V = V^G \oplus \operatorname{Ker}\pi$; $\dim V^G$ as the average trace; characters, constant on conjugacy classes and additive over direct sums; the start of the character table of $S_3$ & \ref{sec:maschke}, \ref{sec:invariants}, \ref{sec:characters-of-representations} \\
-Wed Nov 11 \newline lecture; Worksheet 16 & Two more descriptions of the trace; the representation $\operatorname{Hom}(V, W)$ and $\operatorname{Hom}_G(V, W)$; the trace of $X \mapsto RXS$; $\dim\operatorname{Hom}_G(V, W)$ from characters & \ref{sec:hom-representation} (16.1--16.2; 16.3--16.5 not reached) \\
+Wed Nov 11 \newline lecture; Worksheet 16 & Two more descriptions of the trace; the representation $\operatorname{Hom}(V, W)$ and $\operatorname{Hom}_G(V, W)$; the trace of $X \mapsto RXS$; $\dim\operatorname{Hom}_G(V, W)$ from characters & \ref{sec:hom-representation} (16.1--16.2; 16.3--16.5 not reached in class) \\
 Thu Nov 12 \newline Problem Set 9 (submitted) & Extensions of solvable groups; idempotents split $V = \operatorname{Ker} \oplus \operatorname{Im}$; the proof of Maschke's theorem; counterexamples for $\mathbb{Z}$ and for $\mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$; affine maps as semidirect products & \ref{sec:solvable} (9.1), \ref{sec:maschke} (9.2--9.4), \ref{sec:affine-maps} (9.5) \\
+Fri Nov 13 \newline lecture & Dual spaces, dual bases and dual maps; the transpose matrix; the dual representation (inverse transpose) and $\chi_{V^\vee}(g) = \chi_V(g^{-1})$; a word on tensor products & \ref{sec:dual-representations} \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 
@@ -11832,6 +12167,10 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em direct product\dotfill \pageref{def:direct-products}\par
 \noindent\hangindent=1em direct sum\dotfill \pageref{def:internal-direct-sum-subspaces}, \pageref{def:direct-sum-several}\par
 \noindent\hangindent=1em disjoint\dotfill \pageref{def:disjoint-cycles}\par
+\noindent\hangindent=1em dual basis\dotfill \pageref{def:dual-basis}\par
+\noindent\hangindent=1em dual map\dotfill \pageref{def:dual-map}\par
+\noindent\hangindent=1em dual representation\dotfill \pageref{def:dual-representation}\par
+\noindent\hangindent=1em dual space\dotfill \pageref{def:dual-space}\par
 \noindent\hangindent=1em edge quotients $H_{ij}$ and $V_{ij}$\dotfill \pageref{def:jh-edge-quotients}\par
 \noindent\hangindent=1em empty word\dotfill \pageref{def:word-subgroup-generated-several-elements}\par
 \noindent\hangindent=1em equivalence class\dotfill \pageref{def:equivalence-class}\par
@@ -12048,6 +12387,8 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Disjoint Cycle Decomposition\dotfill \pageref{thm:disjoint-cycle-decomposition}\par
 \noindent\hangindent=1em Disjoint Cycles Commute\dotfill \pageref{lem:disjoint-cycles-commute}\par
 \noindent\hangindent=1em Division Algorithm\dotfill \pageref{lem:division-algorithm}\par
+\noindent\hangindent=1em Dual Characters over $\mathbb{R}$ and $\mathbb{C}$\dotfill \pageref{cor:character-dual-real-complex}\par
+\noindent\hangindent=1em Duals Reverse Composition\dotfill \pageref{prop:duals-reverse-composition}\par
 \noindent\hangindent=1em Each Group Element Acts Bijectively\dotfill \pageref{prop:each-group-element-acts-bijectively}\par
 \noindent\hangindent=1em Equivalence Classes Partition a Set\dotfill \pageref{prop:equivalence-classes-partition-set}\par
 \noindent\hangindent=1em Equivalent Subgroup Criteria\dotfill \pageref{prop:equivalent-subgroup-criteria}\par
@@ -12224,6 +12565,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Bruhat Decomposition\dotfill \pageref{prop:bruhat-decomposition-gln}\par
 \noindent\hangindent=1em The Center Is a Subgroup\dotfill \pageref{prop:center-subgroup}\par
 \noindent\hangindent=1em The Character of $\operatorname{Hom}(V, W)$\dotfill \pageref{prop:character-hom}\par
+\noindent\hangindent=1em The Character of the Dual Representation\dotfill \pageref{prop:character-dual}\par
 \noindent\hangindent=1em The Class Equation\dotfill \pageref{thm:class-equation}\par
 \noindent\hangindent=1em The Class Equation, Reciprocal Form\dotfill \pageref{cor:class-equation-reciprocal-form}\par
 \noindent\hangindent=1em The Commutator Subgroup and Characters of $S_n$\dotfill \pageref{thm:commutator-subgroup-sn}\par
@@ -12235,6 +12577,9 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Crossing Square\dotfill \pageref{prop:jh-crossing-square}\par
 \noindent\hangindent=1em The Cube Group Embeds in $S_6$\dotfill \pageref{prop:cube-group-embeds-s6}\par
 \noindent\hangindent=1em The Derived Series of a Finite Group Stabilizes\dotfill \pageref{prop:derived-series-finite-stabilizes}\par
+\noindent\hangindent=1em The Dual Basis Is a Basis\dotfill \pageref{prop:dual-basis-is-basis}\par
+\noindent\hangindent=1em The Dual Map Has the Transpose Matrix\dotfill \pageref{prop:dual-map-transpose}\par
+\noindent\hangindent=1em The Dual Representation Is a Representation\dotfill \pageref{prop:dual-is-representation}\par
 \noindent\hangindent=1em The First Sylow Theorem\dotfill \pageref{thm:sylow-first}\par
 \noindent\hangindent=1em The Homomorphism $k \mapsto g^k$ and $\langle g \rangle \cong \mathbb{Z}/N\mathbb{Z}$\dotfill \pageref{prop:homomorphism-k-maps-gk-gen-g-iso-z-nz}\par
 \noindent\hangindent=1em The Image of the Average Is the Invariants\dotfill \pageref{prop:averaging-image}\par
