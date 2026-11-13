@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6d.1 Yukawa Theory]] →
 
-*Sources: PHY 513, Problem Set 8, Problems 2(a), 3(a), 3(d)–(e) and 4 (statements, and the user's solutions, submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 106–108, eqs. (4.79), (4.84)–(4.86) (page images checked) · Yu Zhao-Huan, 量子场论讲义, §6.5.5, eqs. (6.383), (6.385) (page image checked, PDF p. 261) · PHY 513 Lecture 17, slides 19–20, 23 (Example 6) · the homes cited in each step.*
+*Sources: PHY 513, Problem Set 8, Problems 2(a), 3(a), 3(d)–(e) and 4 (statements, and the user's solutions, submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 106–108, eqs. (4.79), (4.84)–(4.86) (page images checked) · Yu Zhao-Huan, 量子场论讲义, §6.5.5, eqs. (6.383), (6.385) (page image checked, PDF p. 261) · PHY 513 Lecture 17, slides 19–20, 23 (Example 6) · PHY 513, Problem Set 10, Problems 2–3 (statements, and the user's solution, 2026-11-13; Example §C6c.11.7) · the homes cited in each step.*
 
 A problem states a question in words: a probability, a lifetime, a cross section, a correlation function, a list of diagrams. The formula that answers it holds only in one setup, so the question has to be translated before anything is computed: **what is prepared, what is measured, in which states and which vacuum, at which order, and whether the object asked for is an observable at all.** [[§C6a.0 Setups and Observables|§C6a.0]] classified the physical situations by how the interaction behaves in time and listed, in its table "From the question to the object", the object each kind of question asks for. This section works six of those questions through, each as an Example with the same chain of labelled steps: *question as asked → physical situation (Model box) → states and vacuum → the object → normalization and measure → theorems → result → pitfalls.* Every step shows its formula and links its home; nothing that a home derives is derived again. The general method is the list below; the examples are its instances, and every row of the §C6a.0 table links the example or procedure that works it. Three procedures carry the recurring computations: [[P5 Symmetry Factor of a Diagram]], [[P6 Tree Amplitude from a Lagrangian]], [[P7 From ℳ to σ or Γ]].
 
@@ -18,7 +18,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 ## How to translate a question
 
 1. **Does the interaction switch off?** If $\hat H_{\rm int}(t) = 0$ outside a finite time ([[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]), $|0\rangle$ and the free Fock states are exact and $\hat S = U(+\infty, -\infty)$ to all orders; if it never does ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]), they are not — [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]].
-2. **What is prepared and what is measured?** One particle at rest that decays ([[§C6b.5 Decay Widths#^mod-c6b-5-1|Model §C6b.5.1]]), two particles that collide ([[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]], [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]], [[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]]), or the vacuum and a source ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-1|Theorem §C6c.7.1]]); a probability is a squared overlap of unit vectors, $P_{fi} = |\langle f|\hat S|i\rangle|^2/(\langle f|f\rangle\langle i|i\rangle)$ — [[§C6b.2 Transition Probabilities in a Box#^def-c6b-2-1|Def. §C6b.2.1]].
+2. **What is prepared and what is measured?** One particle at rest that decays ([[§C6b.5 Decay Widths#^mod-c6b-5-1|Model §C6b.5.1]]), two particles that collide ([[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]], [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]], [[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]]), one particle and a fixed classical target, a static external potential ([[§C6b.10 Scattering off a Fixed Target꞉ the Cross Section in an External Potential#^mod-c6b-10-1|Model §C6b.10.1]]), or the vacuum and a source ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-1|Theorem §C6c.7.1]]); a probability is a squared overlap of unit vectors, $P_{fi} = |\langle f|\hat S|i\rangle|^2/(\langle f|f\rangle\langle i|i\rangle)$ — [[§C6b.2 Transition Probabilities in a Box#^def-c6b-2-1|Def. §C6b.2.1]].
 3. **Which states, in which normalization?** $\hat a^\dagger|0\rangle$ with $\frac{d^3k}{(2\pi)^3}$, or $\sqrt{2E}\,\hat a^\dagger|0\rangle$ with $\frac{d^3k}{(2\pi)^32E}$, and $\frac{1}{n!}$ for $n$ identical particles — [[§C6c.2 Contractions with External Particles#^cau-c6c-2-1|§C6c.2, Caution: Two normalizations of one-particle states]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]].
 4. **Which vacuum?** The ground state of the Hamiltonian that acts at early and late times: $|0\rangle$ in Model §C6a.0.1, $|\Omega\rangle$ in Model §C6a.0.3 — [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^def-c6a-5-1|Def. §C6a.5.1]], [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]].
 5. **Which order?** Free states in place of in and out states (the course's prescription: free states dressed by $U(0, -T)$, bubbles omitted) are exact in Model §C6a.0.1 and lowest order in Model §C6a.0.3; beyond it $\sqrt Z$ per external line and the physical mass — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]], [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]], [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]].
@@ -368,6 +368,59 @@ A problem states a question in words: a probability, a lifetime, a cross section
 
 ^ex-c6c-11-6
 
+## A fixed target: the cross section in an external potential
+
+> [!example] Example §C6c.11.7: dσ/dΩ for an Electron in the Coulomb Field of a Nucleus
+> ![[ph-qft-c8-10-1.svg]]
+> *The one diagram, panel (b): the electron line passes one vertex with the static external field, which supplies $\mathbf q = \mathbf p' - \mathbf p$ and no energy; $i\mathcal M = -ie\,\bar u^{s'}(p')\gamma^0u^s(p)\,\tilde A_0(\mathbf q)$ ([[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8-10-4|Theorem §C8.10.4]]). Added figure.*
+>
+> This example uses the fermion rules of C6d and the model of C8, which come after this chapter; it stands here with the other translations.
+>
+> **Question as asked.** "Specialize to the Coulomb field of a nucleus with charge $Ze$ … derive the Rutherford formula"; "derive Mott's formula for the unpolarized cross section" (PHY 513, Problem Set 10, Problems 2(c) and 3(c)).
+>
+> **Situation** (question 1: no, the field is static and acts for ever; question 2: one electron is prepared, one electron is detected at an angle; the target is not a particle). [[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^mod-c8-10-1|Model §C8.10.1]] with $A_0 = Ze/4\pi r$, an instance of [[§C6b.10 Scattering off a Fixed Target꞉ the Cross Section in an External Potential#^mod-c6b-10-1|Model §C6b.10.1]], at first order in the potential. Energy is conserved, three-momentum is not.
+>
+> **States and vacuum** (questions 3–5 and 7). Free, relativistic, over $|0\rangle$, with spin labels ([[§C6d.2 Contractions with External Fermions#^def-c6d-2-2|Def. §C6d.2.2]]); $\hat H_I$ normal ordered, so that the vacuum value of the current drops out ([[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8-10-3|Theorem §C8.10.3]]):
+>
+> $$
+> |i\rangle = |\mathbf p, s\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^{s\dagger}_{\mathbf p}|0\rangle , \qquad \langle f| = \langle\mathbf p', s'| = \sqrt{2E_{\mathbf p'}}\,\langle0|\hat a^{s'}_{\mathbf p'} , \qquad \mathbf p' \ne \mathbf p .
+> $$
+>
+> **Object.** The matrix element has one delta function, of the energy, and defines its own amplitude ([[§C6b.10 Scattering off a Fixed Target꞉ the Cross Section in an External Potential#^def-c6b-10-1|Def. §C6b.10.1]], [[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8-10-2|Theorem §C8.10.2]], [[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8-10-4|Theorem §C8.10.4]], [[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8-10-6|Theorem §C8.10.6]]):
+>
+> $$
+> \langle\mathbf p', s'|i\hat T|\mathbf p, s\rangle = i\mathcal M\;2\pi\delta(E_f - E_i) , \qquad i\mathcal M = -ie\,\bar u^{s'}(p')\gamma^0u^s(p)\,\tilde A_0(\mathbf q) , \qquad \tilde A_0(\mathbf q) = \frac{Ze}{|\mathbf q|^2} .
+> $$
+>
+> **Normalization and measure** (wave-packet route). One packet at impact parameter $\mathbf b$, $\sigma = \int d^2b\,\mathcal P(\mathbf b)$, one final particle with the measure $\frac{d^3p_f}{(2\pi)^32E_f}$ ([[§C6b.10 Scattering off a Fixed Target꞉ the Cross Section in an External Potential#^thm-c6b-10-4|Theorem §C6b.10.4]], [[§C6b.10 Scattering off a Fixed Target꞉ the Cross Section in an External Potential#^thm-c6b-10-6|Theorem §C6b.10.6]]):
+>
+> $$
+> d\sigma = \frac{1}{v_i}\,\frac{1}{2E_i}\,\frac{d^3p_f}{(2\pi)^3}\,\frac{1}{2E_f}\,|\mathcal M|^2\,2\pi\delta(E_f - E_i) \quad\Longrightarrow\quad \frac{d\sigma}{d\Omega} = \frac{|\mathcal M|^2}{16\pi^2} , \qquad |\mathbf p'| = |\mathbf p| .
+> $$
+>
+> **Theorems.** The momentum transfer, $|\mathbf q|^2 = 4|\mathbf p|^2\sin^2\frac\theta2$ ([[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8-10-7|Theorem §C8.10.7]]). The spinor factor: for $v \ll 1$, $\bar u^{s'}(p')\gamma^0u^s(p) \simeq 2m\,\delta^{ss'}$ ([[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^thm-c8-5-1|Theorem §C8.5.1]]); for any velocity, averaged over the initial and summed over the final spin, $\frac12\sum_{s, s'}|\bar u^{s'}(p')\gamma^0u^s(p)|^2 = 4E^2\bigl(1 - \beta^2\sin^2\frac\theta2\bigr)$ ([[§C8.11 Mott's Formula꞉ the Relativistic Electron in a Coulomb Field#^thm-c8-11-2|Theorem §C8.11.2]]).
+>
+> **Result** ([[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8-10-8|Theorem §C8.10.8]], [[§C8.11 Mott's Formula꞉ the Relativistic Electron in a Coulomb Field#^thm-c8-11-3|Theorem §C8.11.3]]):
+>
+> $$
+> \frac{d\sigma}{d\Omega} = \frac{Z^2\alpha^2}{4m^2v^4\sin^4(\theta/2)} \quad (v \ll 1) , \qquad \frac{d\sigma}{d\Omega} = \frac{Z^2\alpha^2}{4|\mathbf p|^2\beta^2\sin^4\frac\theta2}\Bigl(1 - \beta^2\sin^2\frac\theta2\Bigr) \quad (\text{any } \beta) .
+> $$
+>
+> Check: $[\mathcal M] = -1$, so $[d\sigma/d\Omega] = -2$, an area; the second formula reduces to the first for $\beta = v \ll 1$, $|\mathbf p| \simeq mv$.
+>
+> **Pitfalls.**
+> - *Which $\mathcal M$.* The amplitude here is defined with $2\pi\delta(E_f - E_i)$; using it in $|\mathcal M|^2/64\pi^2E_{\rm cm}^2$, or looking for a $\delta^4$, mixes two setups ([[§C6b.10 Scattering off a Fixed Target꞉ the Cross Section in an External Potential#^cau-c6b-10-1|§C6b.10, Caution: This ℳ is not the ℳ of two-particle scattering]]).
+> - *The Fourier transform of $1/r$ needs a cutoff*, $e^{-\varepsilon r}$ with $\varepsilon \to 0$ after integrating ([[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8-10-6|Theorem §C8.10.6]]); the same infinite range makes the total cross section infinite ([[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8-10-10|Theorem §C8.10.10]]).
+> - *The spin average is $\frac12$, not $\frac14$*: one initial fermion ([[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-7|Theorem §C8.7.7]], part 4).
+> - *The letter $e$* appears in the coupling and in $Ze$; the cross sections contain $e^2$ only and do not depend on the sign of the charges ([[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^cau-c8-10-1|§C8.10, Caution: The letter e in the potential of the nucleus]]).
+> - *$\bar u'\gamma^0u \simeq 2m\,\delta^{ss'}$ is the only nonrelativistic step*; everything else in the chain is exact in the velocity ([[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^cau-c8-10-3|§C8.10, Caution: Where the nonrelativistic step enters, and what replaces it]]).
+>
+> *Model:* [[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^mod-c8-10-1|Model §C8.10.1]] with the Coulomb field; *applies:* first order in the potential, free states over $|0\rangle$, $\theta \ne 0$; the first formula for $v \ll 1$.
+>
+> *Source: PHY 513, Problem Set 10, Problems 2 and 3 (statements; the user's solution) · PS Problems 4.4 and 5.1 (first part) · homes as linked*
+
+^ex-c6c-11-7
+
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
@@ -380,4 +433,5 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > - Examples 1 and 2 are both "free states, $U(+\infty, -\infty)$, no denominator", but for opposite reasons: exact because the source switches off, and lowest order because the decay is computed at order $\mu$ — [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]].
 > - The $\frac{1}{n!}$ of Example 1, the $\frac{1}{2!}$ of Examples 2 and 3 and the $S_{\rm id}$ of every cross section are one fact, the symmetry of bosonic states — [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]].
 > - Example 4's correlator becomes Example 3's amplitude by amputation; the precise statement with $\sqrt Z$ is the LSZ formula (Lecture 16; QFT C10, planned) — [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]].
+> - Problem Set 10 adds two kinds of question to the six worked above. Several fields with an internal index: which terms of the vertex survive for given types, and which total cross section carries the $\frac12$ — [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^ex-c6c-8-2|Example §C6c.8.2]], [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^thm-c6c-8-5|Theorem §C6c.8.5]]; and, for $m^2 < 0$, that the question can only be asked after the fields are expanded around a minimum of the potential — [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^thm-c6c-9-1|Theorem §C6c.9.1]], [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^def-c6c-9-2|Def. §C6c.9.2]], [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-2|Theorem §C6c.10.2]]. A fixed target is Example §C6c.11.7.
 > - The recurring computations are procedures: symmetry factors [[P5 Symmetry Factor of a Diagram|P5]], tree amplitudes [[P6 Tree Amplitude from a Lagrangian|P6]], cross sections and widths [[P7 From ℳ to σ or Γ|P7]].

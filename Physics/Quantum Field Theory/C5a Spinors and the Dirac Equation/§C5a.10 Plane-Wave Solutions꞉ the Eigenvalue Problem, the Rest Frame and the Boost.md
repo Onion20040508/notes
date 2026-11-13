@@ -349,7 +349,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 >
 > Consequently $u$ and $v$ below are smooth functions of $\mathbf p \in \mathbb R^3$, each entry and each derivative bounded by a polynomial in $|\mathbf p|$ (the entries grow like $\sqrt{E_{\mathbf p}}$). For $m = 0$ the same formulas hold for $\mathbf p \neq 0$, $\sqrt{p\cdot\sigma} = p\cdot\sigma/\sqrt{2|\mathbf p|}$; they are continuous at $\mathbf p = 0$ (value $0$) but not differentiable there.
 >
-> *Source: derived here, from the definition in the user's PHY 513 notes, Ch. 9 §9.3 (Caution "What √(p·σ) means": "well defined, but … almost never computed") · PHY 513, Problem Set 6, Problem 3(c) (used and checked by squaring, as the user wrote it: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^ex-c5a-11-1|Example §C5a.11.1]])*
+> *Source: derived here, from the definition in the user's PHY 513 notes, Ch. 9 §9.3 (Caution "What √(p·σ) means": "well defined, but … almost never computed") · PHY 513, Problem Set 6, Problem 3(c) (used and checked by squaring, as the user wrote it: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^ex-c5a-11-1|Example §C5a.11.1]]) · PHY 513, Problem Set 10, Problem 2(c) (the user's solution: the second derivation below; used for the spinor products of [[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^thm-c8-5-1|Theorem §C8.5.1]] and [[§C8.11 Mott's Formula꞉ the Relativistic Electron in a Coulomb Field#^thm-c8-11-4|★ Theorem §C8.11.4]])*
 
 ^thm-c5a-10-6
 
@@ -374,6 +374,33 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 ^der-c5a-10-6
 
 *Uses:* [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-2|Def. §C5a.10.2]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|Def. §C5a.10.5]], [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]
+
+> [!derivation]- Derivation (second route: squaring directly, Problem Set 10, Problem 2(c), as the user wrote it)
+> The same formulas, checked by squaring; the Cayley–Hamilton step of the first derivation is replaced by $(\mathbf p\cdot\boldsymbol\sigma)^2 = |\mathbf p|^2$.
+>
+> **Step 1** (the square of $p\cdot\sigma$). With $p\cdot\sigma = E - \mathbf p\cdot\boldsymbol\sigma$ and $(\mathbf p\cdot\boldsymbol\sigma)^2 = |\mathbf p|^2$,
+>
+> $$
+> (p\cdot\sigma)^2 = E^2 + |\mathbf p|^2 - 2E\,\mathbf p\cdot\boldsymbol\sigma = 2E\,(p\cdot\sigma) - m^2 ,
+> $$
+>
+> since $2E(E - \mathbf p\cdot\boldsymbol\sigma) - m^2 = 2E^2 - m^2 - 2E\,\mathbf p\cdot\boldsymbol\sigma$ and $2E^2 - m^2 = E^2 + |\mathbf p|^2$.
+>
+> **Step 2** (the square of $p\cdot\sigma + m$).
+>
+> $$
+> (p\cdot\sigma + m)^2 = (p\cdot\sigma)^2 + 2m\,(p\cdot\sigma) + m^2 = 2(E + m)\,(p\cdot\sigma) ,
+> $$
+>
+> so $\bigl[(p\cdot\sigma + m)/\sqrt{2(E + m)}\bigr]^2 = p\cdot\sigma$.
+>
+> **Step 3** (positivity). $p\cdot\sigma + m$ is Hermitian with positive eigenvalues $E \mp |\mathbf p| + m$, so it is the positive square root (Step 4 of the first derivation).
+>
+> **Step 4** ($p\cdot\bar\sigma$). The same computation with $\boldsymbol\sigma \to -\boldsymbol\sigma$ gives the formula for $p\cdot\bar\sigma = E + \mathbf p\cdot\boldsymbol\sigma$.
+
+^der-c5a-10-6b
+
+*Uses:* [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-2|Def. §C5a.10.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
 
 > [!theorem] Theorem §C5a.10.7: The Square-Root Identities
 > For $p^2 = m^2 \ge 0$, $p^0 > 0$:

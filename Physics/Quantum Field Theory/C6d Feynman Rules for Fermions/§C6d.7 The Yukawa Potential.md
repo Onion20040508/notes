@@ -156,6 +156,7 @@ What force does the exchange of the Yukawa scalar produce between two fermions? 
 > **What the derivation shows.**
 > - Attraction is the sign chain $(-ig)^2 = -g^2$, the spacelike exchange $q^2 = -|\mathbf q|^2$, and $\bar uu = +2m$; with the overall sign of $\mathcal M$ fixed by $(|f\rangle)^\dagger = \langle f|$ ([[§C6d.5 Second Order#^rem-c6d-5-1|§C6d.5, Remark: The overall sign]]).
 > - The range is the inverse mass of the exchanged particle; for $m_\phi \to 0$ the potential becomes $-g^2/4\pi r$, an attractive Coulomb-like force.
+> - At zero mass the forward transform $\int d^3x\,e^{-i\mathbf q\cdot\mathbf x}\frac{1}{4\pi r}$ does not converge; with a cutoff $e^{-\varepsilon r}$ it is $\frac{1}{|\mathbf q|^2 + \varepsilon^2}$, the Yukawa form with $m_\phi = \varepsilon$, and the limit is $\frac{1}{|\mathbf q|^2}$ → [[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8-10-6|Theorem §C8.10.6]] (PHY 513, Problem Set 10, Problem 2(c)).
 
 ^der-c6d-7-3
 
