@@ -3,11 +3,11 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: CB
-section: CB.20
+section: CB.21
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.21★ The Poincaré Group and Induced Representations]] →
+← [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.22★ The Poincaré Group and Induced Representations]] →
 
 *Sources: R. Simon, N. Mukunda, S. Chaturvedi, V. Srinivasan, arXiv:0808.0779, §III (https://arxiv.org/abs/0808.0779) · V. Bargmann, J. Math. Phys. 5 (1964) 862 and Ann. of Math. 59 (1954) 1 · V. Moretti, arXiv:1508.06951, §3.6 (https://arxiv.org/abs/1508.06951) · B. C. Hall, Quantum Theory for Mathematicians, §16.7.3, §16.9.2 · Quantum Mechanics §C8.1★, §C8.3★ (Sakurai) · Yu Zhao-Huan, 量子场论讲义, §3.3.1, §9.1.2 · the user's PHY 513 notes, Ch. 7 §§7.2, 7.6 · the user's pre-course notes (Weinberg vol. 1, §2.2, App. 2.A; §2.7, App. 2.B, as cited there) · the rest written here.*
 
@@ -15,75 +15,75 @@ Why are the symmetries of quantum mechanics represented by unitary or antiunitar
 
 ## Rays and Wigner's theorem
 
-> [!definition] Definition §CB.20.1: Ray Space and Transition Probability
+> [!definition] Definition §CB.21.1: Ray Space and Transition Probability
 > For a complex Hilbert space $\mathcal H$, the **ray space** $P(\mathcal H)$ is the set of one-dimensional subspaces $[\psi] = \mathbb C\psi$, $\psi \ne 0$. The **transition probability** of two rays is $\bigl|\langle\psi, \phi\rangle\bigr|^2/(\|\psi\|^2\|\phi\|^2)$, independent of the representatives.
 >
 > *Source: Woit, §7.4 "Complex projective space" (the space of rays as the quotient of the nonzero vectors by nonzero complex multiples, for $\mathcal H = \mathbb C^2$) · Quantum Mechanics §C8.1★ (transition probabilities)*
 
-^def-cb-20-1
+^def-cb-21-1
 
-> [!definition] Definition §CB.20.2: Wigner Symmetry
-> A **Wigner symmetry** of $\mathcal H$ is a bijection $T : P(\mathcal H) \to P(\mathcal H)$ that preserves transition probabilities ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-1|Def. §CB.20.1]]). An operator $U$ **induces** $T$ if $T[\psi] = [U\psi]$ for all $\psi \ne 0$.
+> [!definition] Definition §CB.21.2: Wigner Symmetry
+> A **Wigner symmetry** of $\mathcal H$ is a bijection $T : P(\mathcal H) \to P(\mathcal H)$ that preserves transition probabilities ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-1|Def. §CB.21.1]]). An operator $U$ **induces** $T$ if $T[\psi] = [U\psi]$ for all $\psi \ne 0$.
 >
 > *Source: Quantum Mechanics §C8.1★ · written here*
 
-^def-cb-20-2
+^def-cb-21-2
 
 Antilinear and antiunitary operators and their structure, first stated in Quantum Mechanics ([[§C8.3★ Time Reversal|QM §C8.3★]], from Sakurai §4.4) and restated here with their proofs in the notation of this section. $\mathcal H$ is a complex Hilbert space, $\langle\cdot, \cdot\rangle$ linear in the second slot:
 
-> [!definition] Definition §CB.20.3: Antilinear Operator
+> [!definition] Definition §CB.21.3: Antilinear Operator
 > A map $A : \mathcal H \to \mathcal H$ is **antilinear** if $A(c_1\psi_1 + c_2\psi_2) = \bar c_1A\psi_1 + \bar c_2A\psi_2$ for all $c_1, c_2 \in \mathbb C$ and $\psi_1, \psi_2 \in \mathcal H$.
 >
 > *Source: Sakurai §4.4.1, Definition 1, eq. (4.116b) · the course's version: [[§C8.3★ Time Reversal#^def-c8-3-1|QM Def. §C8.3.1]] (in ket notation, together with the next two definitions)*
 
-^def-cb-20-3
+^def-cb-21-3
 
-> [!definition] Definition §CB.20.4: Antiunitary Operator
-> An antilinear ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-3|Def. §CB.20.3]]) bijection $U : \mathcal H \to \mathcal H$ is **antiunitary** if $\langle U\psi, U\phi\rangle = \overline{\langle\psi, \phi\rangle} = \langle\phi, \psi\rangle$ for all $\psi, \phi \in \mathcal H$.
+> [!definition] Definition §CB.21.4: Antiunitary Operator
+> An antilinear ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-3|Def. §CB.21.3]]) bijection $U : \mathcal H \to \mathcal H$ is **antiunitary** if $\langle U\psi, U\phi\rangle = \overline{\langle\psi, \phi\rangle} = \langle\phi, \psi\rangle$ for all $\psi, \phi \in \mathcal H$.
 >
 > *Source: Sakurai §4.4.1, Definition 1, eq. (4.116a) · the course's version: [[§C8.3★ Time Reversal#^def-c8-3-1|QM Def. §C8.3.1]]*
 
-^def-cb-20-4
+^def-cb-21-4
 
-> [!definition] Definition §CB.20.5: Complex Conjugation in an Orthonormal Basis
+> [!definition] Definition §CB.21.5: Complex Conjugation in an Orthonormal Basis
 > For an orthonormal basis $\{e_n\}$ of $\mathcal H$, the **complex conjugation** $K$ in that basis conjugates the expansion coefficients and fixes the basis vectors: $K\sum_nc_ne_n = \sum_n\bar c_ne_n$. $K$ depends on the basis.
 >
 > *Source: Sakurai §4.4.1, eqs. (4.118)–(4.121) · the course's version: [[§C8.3★ Time Reversal#^def-c8-3-1|QM Def. §C8.3.1]] (with the example of the two $S_y$ eigenkets, exchanged by $K$ in the $S_z$ basis)*
 
-^def-cb-20-5
+^def-cb-21-5
 
-> [!theorem] Theorem §CB.20.6: Structure of Antiunitary Operators
-> 1. The complex conjugation $K$ in an orthonormal basis ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-5|Def. §CB.20.5]]) is antiunitary ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|Def. §CB.20.4]]) and $K^2 = \mathbb 1$. For every unitary $V$, $VK$ is antiunitary; conversely every antiunitary $U$ is of this form, $U = VK$ with $V = UK$ unitary.
+> [!theorem] Theorem §CB.21.6: Structure of Antiunitary Operators
+> 1. The complex conjugation $K$ in an orthonormal basis ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-5|Def. §CB.21.5]]) is antiunitary ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-4|Def. §CB.21.4]]) and $K^2 = \mathbb 1$. For every unitary $V$, $VK$ is antiunitary; conversely every antiunitary $U$ is of this form, $U = VK$ with $V = UK$ unitary.
 > 2. The product of two antiunitary operators is unitary; the product of an antiunitary and a unitary operator, in either order, is antiunitary.
 >
 > *Source: Sakurai §4.4.1, eqs. (4.117), (4.122)–(4.124) · the course's version: [[§C8.3★ Time Reversal#^thm-c8-3-1|QM Theorem §C8.3.1]], 1–2, the same statements in ket notation (QM adds the matrix-element identity used for time reversal)*
 
-^thm-cb-20-6
+^thm-cb-21-6
 
 > [!proof]- Proof
 > *The derivation of QM Theorem §C8.3.1, parts 1–2, in the notation of this section ($\langle\cdot, \cdot\rangle$ for the bra-ket, $V$ for the unitary, $U$ for the antiunitary operator).*
 >
 > *1.* Antilinearity of $K$ is its definition read on $c_1\psi_1 + c_2\psi_2$ (Sakurai (4.118)). With $\psi = \sum c_ne_n$, $\phi = \sum d_ne_n$: $\langle K\phi, K\psi\rangle = \sum d_n\bar c_n = \overline{\sum\bar d_nc_n} = \overline{\langle\phi, \psi\rangle}$, and $K^2 = \mathbb 1$ (so $K$ is a bijection). For $U = VK$: $U(c\psi) = V(\bar cK\psi) = \bar c\,U\psi$ (4.122), and $\langle U\phi, U\psi\rangle = \langle K\phi, V^\dagger VK\psi\rangle = \overline{\langle\phi, \psi\rangle}$ (Sakurai checks this by expanding both vectors, (4.123)–(4.124)). Conversely, $V = UK$ is linear (two conjugations cancel) and $\langle UK\phi, UK\psi\rangle = \overline{\langle K\phi, K\psi\rangle} = \langle\phi, \psi\rangle$, so it is unitary, and $U = UK^2 = VK$.
 >
-> *2.* Two antilinear factors give a linear product, which preserves inner products by applying the antiunitarity condition ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|Def. §CB.20.4]]) twice; one antilinear factor leaves the product antilinear, and the inner product is conjugated once.
+> *2.* Two antilinear factors give a linear product, which preserves inner products by applying the antiunitarity condition ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-4|Def. §CB.21.4]]) twice; one antilinear factor leaves the product antilinear, and the inner product is conjugated once.
 >
 > **What the proof shows**
 > - Every antiunitary operator is "complex conjugation followed by a unitary", in any orthonormal basis: the antiunitary operators form the second coset of the unitary group, and products of two of them fall back into it (used for Wigner's theorem below and for $\Theta^2$).
 > - Equivalence: this is [[§C8.3★ Time Reversal#^thm-c8-3-1|QM Theorem §C8.3.1]], 1–2, with kets $|\alpha\rangle$ written as vectors $\psi$; QM's part 3 (the matrix-element identity (4.139)) is not needed here.
 
-^pf-cb-20-6
+^pf-cb-21-6
 
-*Uses:* [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-3|Def. §CB.20.3]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|Def. §CB.20.4]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-5|Def. §CB.20.5]]
+*Uses:* [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-3|Def. §CB.21.3]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-4|Def. §CB.21.4]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-5|Def. §CB.21.5]]
 
-> [!theorem] Theorem §CB.20.7: Wigner's Theorem
-> Every Wigner symmetry $T$ of a complex Hilbert space $\mathcal H$ ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-2|Def. §CB.20.2]]) is induced by an operator $U$ that is either unitary or antiunitary ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|Def. §CB.20.4]]). $U$ is unique up to a phase $e^{i\alpha}$ among operators of the same kind. If $\dim\mathcal H \ge 2$ the kind (unitary or antiunitary) is determined by $T$, so $U$ is unique up to a phase; if $\dim\mathcal H = 1$, the only Wigner symmetry is the identity, induced by $\mathbb 1$ and by an antiunitary operator.
+> [!theorem] Theorem §CB.21.7: Wigner's Theorem
+> Every Wigner symmetry $T$ of a complex Hilbert space $\mathcal H$ ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-2|Def. §CB.21.2]]) is induced by an operator $U$ that is either unitary or antiunitary ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-4|Def. §CB.21.4]]). $U$ is unique up to a phase $e^{i\alpha}$ among operators of the same kind. If $\dim\mathcal H \ge 2$ the kind (unitary or antiunitary) is determined by $T$, so $U$ is unique up to a phase; if $\dim\mathcal H = 1$, the only Wigner symmetry is the identity, induced by $\mathbb 1$ and by an antiunitary operator.
 >
 > *Source: R. Simon, N. Mukunda, S. Chaturvedi, V. Srinivasan, "Two elementary proofs of the Wigner theorem on symmetry in quantum mechanics", Phys. Lett. A 372 (2008) 6847, arXiv:0808.0779, §III, Steps 1–6 (https://arxiv.org/abs/0808.0779) · the original complete proof: V. Bargmann, "Note on Wigner's theorem on symmetry operations", J. Math. Phys. 5 (1964) 862–868 · Weinberg vol. 1, App. 2.A, as cited in the user's pre-course notes · the uniqueness written here · stated without proof in [[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^thm-c8-1-1|QM Theorem §C8.1.1]]*
 
-^thm-cb-20-7
+^thm-cb-21-7
 
 > [!proof]- Proof
-> Notation: $\langle\cdot, \cdot\rangle$ is linear in the second slot; for unit vectors $P(\psi, \phi) = |\langle\psi, \phi\rangle|^2$ is the transition probability of [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-1|Def. §CB.20.1]]. If $V$ is unitary, $[\psi] \mapsto [V\psi]$ is a Wigner symmetry (it is a bijection of rays, and $|\langle V\psi, V\phi\rangle| = |\langle\psi, \phi\rangle|$), and a composite of Wigner symmetries is one. The route is that of Simon–Mukunda–Chaturvedi–Srinivasan: compose $T$ with unitary symmetries until it fixes a basis and the "equator" vectors of every pair of basis vectors; what is left is the identity or complex conjugation.
+> Notation: $\langle\cdot, \cdot\rangle$ is linear in the second slot; for unit vectors $P(\psi, \phi) = |\langle\psi, \phi\rangle|^2$ is the transition probability of [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-1|Def. §CB.21.1]]. If $V$ is unitary, $[\psi] \mapsto [V\psi]$ is a Wigner symmetry (it is a bijection of rays, and $|\langle V\psi, V\phi\rangle| = |\langle\psi, \phi\rangle|$), and a composite of Wigner symmetries is one. The route is that of Simon–Mukunda–Chaturvedi–Srinivasan: compose $T$ with unitary symmetries until it fixes a basis and the "equator" vectors of every pair of basis vectors; what is left is the identity or complex conjugation.
 >
 > Assume first $\dim\mathcal H \ge 2$. Fix an orthonormal basis $\{e_n\}_{n\in I}$ and one index $1 \in I$.
 >
@@ -137,11 +137,11 @@ Antilinear and antiunitary operators and their structure, first stated in Quantu
 >
 > **9. One sign for all pairs.** Let $j, k, \ell$ be distinct (if $\dim\mathcal H = 2$ there is only one pair and nothing to show). For any vector, $w_{jk}w_{k\ell}w_{\ell j} = \bar c_jc_k\,\bar c_kc_\ell\,\bar c_\ell c_j = |c_jc_kc_\ell|^2$ is real and $\ge 0$, for $c$ and for $c''$ alike. Take $\psi = \frac1{\sqrt3}(e_j + \zeta e_k + \zeta^2e_\ell)$, $\zeta = e^{2\pi i/3}$. Then $w_{jk} = \zeta/3$, $w_{k\ell} = \bar\zeta\zeta^2/3 = \zeta/3$, $w_{\ell j} = \bar\zeta^2/3 = \zeta/3$ (as $\zeta^3 = 1$). By step 8 each $w''$ is $\zeta/3$ or $\bar\zeta/3$ according to the sign of its pair; if $p$ of the three signs are $+1$, $w''_{jk}w''_{k\ell}w''_{\ell j} = \zeta^p\bar\zeta^{3-p}/27 = \zeta^{2p}/27$. This is real and positive only if $3 \mid 2p$, i.e. $p = 0$ or $p = 3$: the three signs are equal (Simon et al., Step 6, with this vector made explicit). Two pairs sharing an index lie in one triple; two disjoint pairs $(j, k)$, $(\ell, m)$ both share an index with $(j, \ell)$. So $\epsilon_{jk} = \epsilon$ for all pairs.
 >
-> **10. What is left is the identity or complex conjugation.** Let $\psi = \sum c_ne_n$ be a unit vector and pick $m$ with $c_m \ne 0$. If $\epsilon = +1$: $\bar c''_mc''_k = \bar c_mc_k$ for all $k$ (for $k = m$ this is $|c''_m| = |c_m|$), so $c''_k = c_k\,\bar c_m/\bar c''_m = \tau c_k$ with $\tau = c''_m/c_m$, $|\tau| = 1$ (since $\bar c_m/\bar c''_m = 1/\bar\tau = \tau$). Hence $T_2[\psi] = [\psi]$. If $\epsilon = -1$: $\bar c''_mc''_k = c_m\bar c_k$, so $c''_k = \tau'\bar c_k$ with $\tau' = c_m/\bar c''_m$, $|\tau'| = 1$, and $T_2[\psi] = [K\psi]$, $K$ the complex conjugation in the basis $\{e_n\}$ ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-5|Def. §CB.20.5]]).
+> **10. What is left is the identity or complex conjugation.** Let $\psi = \sum c_ne_n$ be a unit vector and pick $m$ with $c_m \ne 0$. If $\epsilon = +1$: $\bar c''_mc''_k = \bar c_mc_k$ for all $k$ (for $k = m$ this is $|c''_m| = |c_m|$), so $c''_k = c_k\,\bar c_m/\bar c''_m = \tau c_k$ with $\tau = c''_m/c_m$, $|\tau| = 1$ (since $\bar c_m/\bar c''_m = 1/\bar\tau = \tau$). Hence $T_2[\psi] = [\psi]$. If $\epsilon = -1$: $\bar c''_mc''_k = c_m\bar c_k$, so $c''_k = \tau'\bar c_k$ with $\tau' = c_m/\bar c''_m$, $|\tau'| = 1$, and $T_2[\psi] = [K\psi]$, $K$ the complex conjugation in the basis $\{e_n\}$ ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-5|Def. §CB.21.5]]).
 >
-> **11. Existence.** $T_2 = D\circ V\circ T$ on rays, so for unit $\psi$, $T[\psi] = [V^{-1}D^{-1}\psi]$ or $T[\psi] = [V^{-1}D^{-1}K\psi]$; both operators commute with multiplication by positive numbers, so the same holds for every $\psi \ne 0$. $U = V^{-1}D^{-1}$ is unitary; $U = V^{-1}D^{-1}K$ is antiunitary ($K$ is antiunitary and a unitary times an antiunitary operator is antiunitary, [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-6|Theorem §CB.20.6]], 1–2).
+> **11. Existence.** $T_2 = D\circ V\circ T$ on rays, so for unit $\psi$, $T[\psi] = [V^{-1}D^{-1}\psi]$ or $T[\psi] = [V^{-1}D^{-1}K\psi]$; both operators commute with multiplication by positive numbers, so the same holds for every $\psi \ne 0$. $U = V^{-1}D^{-1}$ is unitary; $U = V^{-1}D^{-1}K$ is antiunitary ($K$ is antiunitary and a unitary times an antiunitary operator is antiunitary, [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-6|Theorem §CB.21.6]], 1–2).
 >
-> **12. Uniqueness.** Let $U$, $U'$ both induce $T$, each unitary or antiunitary, and $A = U'^{-1}U$: linear if they are of the same kind, antilinear otherwise ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-6|Theorem §CB.20.6]], 2), isometric, and $[A\psi] = [\psi]$, i.e. $A\psi = \lambda(\psi)\psi$ with $|\lambda(\psi)| = 1$. For linearly independent $\psi$, $\chi$: $\lambda(\psi + \chi)(\psi + \chi) = A(\psi + \chi) = \lambda(\psi)\psi + \lambda(\chi)\chi$, so $\lambda(\psi) = \lambda(\psi + \chi) = \lambda(\chi)$. For dependent nonzero $\psi$, $\chi$ pick $\xi$ independent of both ($\dim\mathcal H \ge 2$): $\lambda(\psi) = \lambda(\xi) = \lambda(\chi)$. So $\lambda$ is a constant. If $A$ were antilinear, $\lambda\,i\psi = A(i\psi) = -iA\psi = -i\lambda\psi$ would force $\lambda = 0$; so $A$ is linear, the two operators are of the same kind, and $A = \lambda\mathbb 1$, $U = \lambda U'$.
+> **12. Uniqueness.** Let $U$, $U'$ both induce $T$, each unitary or antiunitary, and $A = U'^{-1}U$: linear if they are of the same kind, antilinear otherwise ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-6|Theorem §CB.21.6]], 2), isometric, and $[A\psi] = [\psi]$, i.e. $A\psi = \lambda(\psi)\psi$ with $|\lambda(\psi)| = 1$. For linearly independent $\psi$, $\chi$: $\lambda(\psi + \chi)(\psi + \chi) = A(\psi + \chi) = \lambda(\psi)\psi + \lambda(\chi)\chi$, so $\lambda(\psi) = \lambda(\psi + \chi) = \lambda(\chi)$. For dependent nonzero $\psi$, $\chi$ pick $\xi$ independent of both ($\dim\mathcal H \ge 2$): $\lambda(\psi) = \lambda(\xi) = \lambda(\chi)$. So $\lambda$ is a constant. If $A$ were antilinear, $\lambda\,i\psi = A(i\psi) = -iA\psi = -i\lambda\psi$ would force $\lambda = 0$; so $A$ is linear, the two operators are of the same kind, and $A = \lambda\mathbb 1$, $U = \lambda U'$.
 >
 > **13. Dimension one.** $\mathcal H = \mathbb C\psi_0$ has one ray, so $T$ is the identity. It is induced by $c\psi_0 \mapsto c\psi_0$ (unitary) and by $c\psi_0 \mapsto \bar c\psi_0$ (antiunitary). Two operators of the same kind differ by $A = U'^{-1}U$ linear on $\mathbb C\psi_0$, i.e. multiplication by a number of modulus $1$.
 >
@@ -149,11 +149,11 @@ Antilinear and antiunitary operators and their structure, first stated in Quantu
 > - The whole content of "preserving transition probabilities" is used on three kinds of vectors only: basis vectors (step 1), equators of pairs (steps 4–7) and three-term vectors (steps 7, 9). The choice between unitary and antiunitary is the sign $\epsilon$ of step 5, a rotation or a reflection of each equator circle, and step 9 shows that one sign governs all pairs.
 > - The sign is intrinsic: the triple product $\langle\psi_1, \psi_2\rangle\langle\psi_2, \psi_3\rangle\langle\psi_3, \psi_1\rangle$ of three rays is preserved by a unitary and conjugated by an antiunitary operator (Bargmann 1964, §1.5); step 9 is this invariant at work.
 > - ⚑ By-product: $U$ is fixed only up to a phase, and that phase is what makes a group of symmetries a projective representation ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-8|Def. §CB.10.8]], [[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^thm-c8-1-1|QM Theorem §C8.1.1]], 3).
-> - No continuity, separability or dimension bound was used beyond $\dim\mathcal H \ge 2$ for the uniqueness of the kind. Used next: Theorem §CB.20.8 (connected groups act unitarily).
+> - No continuity, separability or dimension bound was used beyond $\dim\mathcal H \ge 2$ for the uniqueness of the kind. Used next: Theorem §CB.21.8 (connected groups act unitarily).
 
-^pf-cb-20-7
+^pf-cb-21-7
 
-*Uses:* [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-1|Def. §CB.20.1]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-2|Def. §CB.20.2]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|Def. §CB.20.4]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-5|Def. §CB.20.5]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-6|Theorem §CB.20.6]]
+*Uses:* [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-1|Def. §CB.21.1]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-2|Def. §CB.21.2]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-4|Def. §CB.21.4]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-5|Def. §CB.21.5]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-6|Theorem §CB.21.6]]
 
 The statement in Quantum Mechanics, without proof: [[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^thm-c8-1-1|QM Theorem §C8.1.1]].
 
@@ -167,37 +167,37 @@ The course's definitions, stated in [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topolog
 
 ![[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-10]]
 
-> [!theorem] Theorem §CB.20.8: Connected Groups of Symmetries Act by Unitaries
+> [!theorem] Theorem §CB.21.8: Connected Groups of Symmetries Act by Unitaries
 > Let $G$ be a connected matrix Lie group and $g \mapsto T(g)$ a homomorphism into the group of Wigner symmetries of $\mathcal H$. Then every $T(g)$ is induced by a unitary operator. So a group of symmetries containing an antiunitary one (time reversal) is not connected.
 >
 > *Source: written here · the same argument: V. Moretti, arXiv:1508.06951, Remark 133(d)*
 
-^thm-cb-20-8
+^thm-cb-21-8
 
 > [!proof]- Proof
 > **1. Squares are unitary.** If $U$ is unitary or antiunitary, $U^2$ is unitary: a product of two antiunitary operators is linear and preserves inner products, since $\langle U^2\psi, U^2\phi\rangle = \overline{\langle U\psi, U\phi\rangle} = \overline{\overline{\langle\psi, \phi\rangle}} = \langle\psi, \phi\rangle$.
 >
 > **2. Every element is a product of squares.** By [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-5|Theorem §CB.3.5]], 3, $g = e^{X_1}\cdots e^{X_k}$ with $X_i \in \mathfrak g$, and $e^{X_i} = (e^{X_i/2})^2$ (Theorem §CB.1.5, 3).
 >
-> **3. Conclusion.** Choose for each $e^{X_i/2}$ an inducing operator $U_i$ (Theorem §CB.20.7). Then $T(e^{X_i}) = T(e^{X_i/2})^2$ is induced by $U_i^2$, unitary by step 1, and $T(g)$ by the product $U_1^2\cdots U_k^2$, unitary. If $T(g)$ is induced by a unitary, it is not induced by an antiunitary (uniqueness in Theorem §CB.20.7, $\dim\mathcal H \ge 2$).
+> **3. Conclusion.** Choose for each $e^{X_i/2}$ an inducing operator $U_i$ (Theorem §CB.21.7). Then $T(e^{X_i}) = T(e^{X_i/2})^2$ is induced by $U_i^2$, unitary by step 1, and $T(g)$ by the product $U_1^2\cdots U_k^2$, unitary. If $T(g)$ is induced by a unitary, it is not induced by an antiunitary (uniqueness in Theorem §CB.21.7, $\dim\mathcal H \ge 2$).
 
-^pf-cb-20-8
+^pf-cb-21-8
 
-*Uses:* [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-5|Theorem §CB.3.5]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-7|Theorem §CB.20.7]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|Def. §CB.20.4]]
+*Uses:* [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-5|Theorem §CB.3.5]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-7|Theorem §CB.21.7]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-4|Def. §CB.21.4]]
 
-> [!definition] Definition §CB.20.9: Lift of a Projective Representation
+> [!definition] Definition §CB.21.9: Lift of a Projective Representation
 > Let $p : \tilde G \to G$ be a covering homomorphism ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-18|Def. §CB.3.18]]) and $U$ a projective representation of $G$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-8|Def. §CB.10.8]]). A **lift** of $U$ to $\tilde G$ is a genuine ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-9|Def. §CB.10.9]]) continuous representation $\Sigma$ of $\tilde G$ with $U(p(x)) = c(x)\Sigma(x)$, $|c(x)| = 1$, for all $x \in \tilde G$.
 >
 > *Source: written here*
 
-^def-cb-20-9
+^def-cb-21-9
 
-> [!theorem] Theorem §CB.20.10: Finite-Dimensional Projective Representations Lift to the Universal Cover
-> Let $G$ be a connected matrix Lie group with universal covering group $p : \tilde G \to G$ ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-18|Def. §CB.3.18]]), and $W$ finite-dimensional. Every continuous homomorphism $\Pi : G \to PGL(W) = GL(W)/\mathbb C^\times\mathbb 1$ (quotient topology) has a lift to a continuous representation $\Sigma : \tilde G \to SL(W)$, i.e. $[\Sigma(x)] = \Pi(p(x))$ for all $x \in \tilde G$ (for a unitary $\Pi$ this is [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-9|Def. §CB.20.9]]), and the lift into $SL(W)$ is unique (two lifts differ by a continuous homomorphism $\tilde G \to \{\zeta : \zeta^{\dim W} = 1\}$, constant on the connected $\tilde G$); if the projective representation is unitary, so is $\Sigma$. Instances: $SO(3)$ with $\tilde G = SU(2)$, $SO^+(1,3)$ with $\tilde G = SL(2, \mathbb C)$.
+> [!theorem] Theorem §CB.21.10: Finite-Dimensional Projective Representations Lift to the Universal Cover
+> Let $G$ be a connected matrix Lie group with universal covering group $p : \tilde G \to G$ ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-18|Def. §CB.3.18]]), and $W$ finite-dimensional. Every continuous homomorphism $\Pi : G \to PGL(W) = GL(W)/\mathbb C^\times\mathbb 1$ (quotient topology) has a lift to a continuous representation $\Sigma : \tilde G \to SL(W)$, i.e. $[\Sigma(x)] = \Pi(p(x))$ for all $x \in \tilde G$ (for a unitary $\Pi$ this is [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-9|Def. §CB.21.9]]), and the lift into $SL(W)$ is unique (two lifts differ by a continuous homomorphism $\tilde G \to \{\zeta : \zeta^{\dim W} = 1\}$, constant on the connected $\tilde G$); if the projective representation is unitary, so is $\Sigma$. Instances: $SO(3)$ with $\tilde G = SU(2)$, $SO^+(1,3)$ with $\tilde G = SL(2, \mathbb C)$.
 >
-> *Source: B. C. Hall, Quantum Theory for Mathematicians (Springer GTM 267, 2013), §16.7.3, Prop. 16.46 and Thm. 16.47 (the unitary case), with the conjugation device of the proof of Prop. 16.44 · the extension to $PGL(W)$ (steps 1–3) written here · the rotation case: [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-11|Theorem §CB.20.11]]*
+> *Source: B. C. Hall, Quantum Theory for Mathematicians (Springer GTM 267, 2013), §16.7.3, Prop. 16.46 and Thm. 16.47 (the unitary case), with the conjugation device of the proof of Prop. 16.44 · the extension to $PGL(W)$ (steps 1–3) written here · the rotation case: [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-11|Theorem §CB.21.11]]*
 
-^thm-cb-20-10
+^thm-cb-21-10
 
 > [!proof]- Proof
 > Let $n = \dim W$, $\mathfrak g$ and $\tilde{\mathfrak g}$ the Lie algebras of $G$ and $\tilde G$, and $p_\ast : \tilde{\mathfrak g} \to \mathfrak g$ the differential of $p$ ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-3|Theorem §CB.3.3]]). For $g \in G$ let $U_g \in GL(W)$ be any representative of $\Pi(g)$. The route is Hall's: turn $\Pi$ into a genuine representation by conjugation, "de-projectivize" its differential by making it traceless, integrate on $\tilde G$.
@@ -222,22 +222,22 @@ The course's definitions, stated in [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topolog
 >
 > **7. Uniqueness in SL(W).** Let $\Sigma'$ be another lift into $SL(W)$. Then $\Sigma'(x) = c(x)\Sigma(x)$ with $c(x) \in \mathbb C^\times$, and taking determinants $c(x)^n = 1$. The map $x \mapsto c(x)\mathbb 1 = \Sigma'(x)\Sigma(x)^{-1}$ is continuous and a homomorphism: $c(xy)\mathbb 1 = \Sigma'(x)\Sigma'(y)\Sigma(y)^{-1}\Sigma(x)^{-1} = \Sigma'(x)\,c(y)\,\Sigma(x)^{-1} = c(y)c(x)\mathbb 1$. A continuous map from the connected $\tilde G$ into the finite set of $n$-th roots of unity is constant, here $c \equiv c(\mathbb 1) = 1$.
 >
-> **8. The unitary case.** If every $\Pi(g)$ has a unitary representative $U_g$ (a projective representation in the sense of [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-8|Def. §CB.10.8]]), then $\Sigma(x) = c(x)U_{p(x)}$ by step 6, and $1 = |\det\Sigma(x)| = |c(x)|^n|\det U_{p(x)}| = |c(x)|^n$, so $|c(x)| = 1$ and $\Sigma(x)$ is unitary: $U_{p(x)} = \overline{c(x)}\,\Sigma(x)$ is a lift in the sense of Def. §CB.20.9.
+> **8. The unitary case.** If every $\Pi(g)$ has a unitary representative $U_g$ (a projective representation in the sense of [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-8|Def. §CB.10.8]]), then $\Sigma(x) = c(x)U_{p(x)}$ by step 6, and $1 = |\det\Sigma(x)| = |c(x)|^n|\det U_{p(x)}| = |c(x)|^n$, so $|c(x)| = 1$ and $\Sigma(x)$ is unitary: $U_{p(x)} = \overline{c(x)}\,\Sigma(x)$ is a lift in the sense of Def. §CB.21.9.
 >
-> **9. Instances.** $SU(2) \to SO(3)$ is the universal covering group ([[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|591 Thm. §48.5]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-11|Theorem §CB.10.11]]), and $SL(2, \mathbb C) \to SO^+(1,3)$ is ([[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|Theorem §CB.17.9]], 3). The rotation case is [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-11|Theorem §CB.20.11]], whose derivation normalizes the determinant on the group instead of the trace on the algebra.
+> **9. Instances.** $SU(2) \to SO(3)$ is the universal covering group ([[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|591 Thm. §48.5]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-11|Theorem §CB.10.11]]), and $SL(2, \mathbb C) \to SO^+(1,3)$ is ([[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-17-9|Theorem §CB.17.9]], 3). The rotation case is [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-11|Theorem §CB.21.11]], whose derivation normalizes the determinant on the group instead of the trace on the algebra.
 >
 > **What the proof shows**
-> - Finite dimension enters through the trace (step 4) and the determinant (steps 5, 7): they remove the scalar ambiguity of each generator. ⚑ By-product: in infinite dimension no trace exists, and a scalar added to a bracket may be impossible to remove; that is the hypothesis of Bargmann's theorem (Theorem §CB.20.12 below) and the obstruction in [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^rem-cb-20-1|§CB.20, ★ Remark: Infinite dimensions, Bargmann, and a phase topology does not explain]].
+> - Finite dimension enters through the trace (step 4) and the determinant (steps 5, 7): they remove the scalar ambiguity of each generator. ⚑ By-product: in infinite dimension no trace exists, and a scalar added to a bracket may be impossible to remove; that is the hypothesis of Bargmann's theorem (Theorem §CB.21.12 below) and the obstruction in [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^rem-cb-21-1|§CB.21, ★ Remark: Infinite dimensions, Bargmann, and a phase topology does not explain]].
 > - The topology enters only in step 5: on $G$ itself the traceless $\sigma$ need not integrate (it integrates to $SU(2)$, not to $SO(3)$, for half-integer spin); this is the two-valuedness of [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-9|Theorem §CB.18.9]], 2.
 > - Unitarity was not needed for existence: the non-unitary two-valued Lorentz representations $(j_+, j_-)$ lift to $SL(2, \mathbb C)$ in the same way.
 
-^pf-cb-20-10
+^pf-cb-21-10
 
 *Uses:* [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-1|Def. §CB.3.1]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-6|Theorem §CB.1.6]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-17|Theorem §CB.3.17]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-3|Theorem §CB.3.3]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-5|Theorem §CB.3.5]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-14|Theorem §CB.3.14]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-21|Theorem §CB.3.21]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-5|Theorem §CB.7.5]]
 
-The rotation case, the course's theorem (with Yu's loop argument as a second route), and what changes in infinite dimensions; it is the case $G = SO(3)$ of Theorem §CB.20.10 with the cover $SU(2)$, the sign made explicit:
+The rotation case, the course's theorem (with Yu's loop argument as a second route), and what changes in infinite dimensions; it is the case $G = SO(3)$ of Theorem §CB.21.10 with the cover $SU(2)$, the sign made explicit:
 
-> [!theorem] Theorem §CB.20.11: Projective Representations of SO(3) Are Representations of SU(2)
+> [!theorem] Theorem §CB.21.11: Projective Representations of SO(3) Are Representations of SU(2)
 > Let $U$ be a continuous finite-dimensional projective representation of $SO(3)$. Then
 > 1. there is a genuine representation $\Sigma$ of $SU(2)$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-9|Def. §CB.10.9]]) with $U(R(V)) = c(V)\,\Sigma(V)$, $|c(V)| = 1$, for all $V \in SU(2)$;
 > 2. if $U$ is irreducible, $\Sigma \cong D^{(j)}$ for one $j$, and the phases can be chosen so that $U(W_2)U(W_1) = \pm U(W_2W_1)$ (a two-valued representation, [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-10|Def. §CB.10.10]]): always $+$ for integer $j$; for half-integer $j$, $-$ exactly when the loop $\mathbb 1 \to W_1 \to W_2W_1 \to \mathbb 1$ (along the paths that define the chosen lifts) is not contractible. No other phase is needed.
@@ -246,12 +246,12 @@ The rotation case, the course's theorem (with Yu's loop argument as a second rou
 >
 > *Source: Yu §3.3.1, eqs. (3.111)–(3.117) · the user's PHY 513 notes, Ch. 7 §7.2 ("Why quantum mechanics allows exactly a sign, and no other phase") · the user's pre-course notes, §2.3 · Hall, Prop. 16.46, Thm. 16.47*
 
-^thm-cb-20-11
+^thm-cb-21-11
 
 > [!derivation]- Derivation
 > Let $n = \dim\mathcal H$.
 >
-> **1. Fix the determinant.** Replace each $U(W)$ by $U'(W) = (\det U(W))^{-1/n}U(W)$, for some choice of the $n$-th root; this is a phase redefinition (Def. §CB.10.8) and gives $\det U'(W) = 1$. Then $U'(W_2)U'(W_1) = c(W_2, W_1)\,U'(W_2W_1)$ with $|c| = 1$, and taking determinants, $1 = c(W_2, W_1)^n\cdot1$. ⚑ By-product: after this normalization every phase is an $n$-th root of unity, a discrete set; finite dimension is used here → [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^rem-cb-20-1|★ Remark: Infinite dimensions]].
+> **1. Fix the determinant.** Replace each $U(W)$ by $U'(W) = (\det U(W))^{-1/n}U(W)$, for some choice of the $n$-th root; this is a phase redefinition (Def. §CB.10.8) and gives $\det U'(W) = 1$. Then $U'(W_2)U'(W_1) = c(W_2, W_1)\,U'(W_2W_1)$ with $|c| = 1$, and taking determinants, $1 = c(W_2, W_1)^n\cdot1$. ⚑ By-product: after this normalization every phase is an $n$-th root of unity, a discrete set; finite dimension is used here → [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^rem-cb-21-1|★ Remark: Infinite dimensions]].
 >
 > **2. Near the identity, no phase.** Choose the roots so that $U'$ is continuous on a neighbourhood $N$ of $\mathbb 1$ with $U'(\mathbb 1) = \mathbb 1$ This is possible because $U(n) \to PU(n) = U(n)/U(1)$ has a continuous local section near the identity: the map $A \mapsto A\,\overline{\operatorname{tr}A}/|\operatorname{tr}A|$ is continuous on the open set $\{A \in U(n) : \operatorname{tr}A \ne 0\}$, which contains $\mathbb 1$, and it does not change under $A \mapsto e^{i\alpha}A$; so it defines a continuous map $s$ from a neighbourhood of $[\mathbb 1]$ in $PU(n)$ (quotient topology) to $U(n)$ with $s([A]) \in [A]$ and $s([\mathbb 1]) = \mathbb 1$. Since $W \mapsto [U(W)]$ is continuous, $W \mapsto s([U(W)])$ is a continuous choice of representatives near $\mathbb 1$; its determinant is close to $1$ there, and $U'(W) = \bigl(\det s([U(W)])\bigr)^{-1/n}s([U(W)])$ with the principal $n$-th root is continuous, has determinant $1$ and equals $\mathbb 1$ at $W = \mathbb 1$. Then $c(W_2, W_1)$ is continuous for $W_1, W_2, W_2W_1 \in N$, equals $1$ at $(\mathbb 1, \mathbb 1)$, and takes values in the discrete set of step 1, so $c = 1$ on a neighbourhood: $U'$ is a homomorphism near $\mathbb 1$.
 >
@@ -270,11 +270,11 @@ The rotation case, the course's theorem (with Yu's loop argument as a second rou
 > For integer $j$ the sign is always $+$: $U$ is a genuine representation of $SO(3)$. For half-integer $j$ it is $-$ exactly when $V_{W_2}V_{W_1}V_{W_2W_1}^{-1} = -\mathbb 1$. Choosing each $V_W$ as the endpoint of the lift of a path from $\mathbb 1$ to $W$, this product is the endpoint of the lift of the loop $\mathbb 1 \to W_1 \to W_2W_1 \to \mathbb 1$, which is $-\mathbb 1$ iff the loop is not contractible ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-11|Theorem §CB.10.11]], 2).
 >
 > **What the derivation shows**
-> - Topology fixes which phases *survive*: on a simply connected group none, on $SO(3)$ a sign. Algebra fixes that no *continuous* phase is forced at all: step 1–2 removed every phase near the identity. That second fact uses finite dimension (the determinant, equivalently the trace: Hall Prop. 16.46 lifts any finite-dimensional projective representation of a Lie algebra to a traceless genuine one, unique because every element of $\mathfrak{so}(3)$ is a combination of commutators, $J^3 = -i[J^1, J^2]$). In infinite dimension one must show instead that a constant added to the brackets can be removed by redefining the generators; for the rotation and Lorentz algebras it can (Bargmann; [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^rem-cb-20-1|★ Remark: Infinite dimensions]]).
+> - Topology fixes which phases *survive*: on a simply connected group none, on $SO(3)$ a sign. Algebra fixes that no *continuous* phase is forced at all: step 1–2 removed every phase near the identity. That second fact uses finite dimension (the determinant, equivalently the trace: Hall Prop. 16.46 lifts any finite-dimensional projective representation of a Lie algebra to a traceless genuine one, unique because every element of $\mathfrak{so}(3)$ is a combination of commutators, $J^3 = -i[J^1, J^2]$). In infinite dimension one must show instead that a constant added to the brackets can be removed by redefining the generators; for the rotation and Lorentz algebras it can (Bargmann; [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^rem-cb-21-1|★ Remark: Infinite dimensions]]).
 > - Physically: states are rays, so a rotation need only act on rays, and that is exactly what allows half-integer spin. Particles are therefore classified by the genuine irreducible representations of the covering group $SU(2)$ (Yu, below (3.117)).
 > - Used next: $U(\Lambda, a)$ on states as a representation of the covering group of the Poincaré group ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|Principle §C3.4.1]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]]); the little group of a massive particle ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-8|Theorem §C3.6.8]]).
 
-^der-cb-20-11
+^der-cb-21-11
 
 *Uses:* [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-8|Def. §CB.10.8]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-9|Def. §CB.10.9]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-10|Def. §CB.10.10]], [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-4|Theorem §CB.2.4]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-10|Theorem §CB.3.10]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-16|Theorem §CB.7.16]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-11|Theorem §CB.10.11]]
 
@@ -289,69 +289,69 @@ The rotation case, the course's theorem (with Yu's loop argument as a second rou
 > - This is the argument of Yu and of the user's notes. Its step 2 presupposes that the phase depends continuously on the loop, i.e. that a continuous choice of phases has been made; for arbitrary phase choices $\varphi$ need not be continuous. Steps 1–2 of the main derivation supply exactly this (in finite dimension), which the user's pre-course notes mark as "heuristic; the honest statement is a theorem" (Weinberg vol. 1, §2.7 and App. 2.B, cited there).
 > - What it does show correctly is where the sign comes from: the phase is a function of the homotopy class of a loop, and $\pi_1(SO(3)) = \mathbb Z_2$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-11|Theorem §CB.10.11]]) leaves room for exactly $\pm1$.
 
-^der-cb-20-11b
+^der-cb-21-11b
 
 *Uses:* [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-11|Theorem §CB.10.11]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-8|Def. §CB.10.8]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^def-cb-10-10|Def. §CB.10.10]]
 
 > [!remark]- ★ Remark: Infinite dimensions, Bargmann, and a phase topology does not explain
-> On an infinite-dimensional Hilbert space, the space of states of a particle, the determinant trick of step 1 of Derivation §CB.20.11 is unavailable (generators are unbounded, traces undefined). For the rotation and Lorentz groups the conclusion still holds: every continuous projective unitary representation lifts to a genuine one of the covering group (Bargmann's theorem, cited by the user's pre-course notes via Weinberg vol. 1, §2.7 and App. 2.B). It is not automatic: Hall's Ex. 16.56 gives a projective representation of the simply connected group $\mathbb R^2$ that cannot be made genuine, $(T_{(a,b)}\psi)(x) = e^{iax}\psi(x - b)$ with $T_{(a,b)}T_{(a',b')} = e^{-ia'b}T_{(a+a', b+b')}$, i.e. momentum and position translations. Its phase is not topological but algebraic: the generators obey $[\hat x, \hat p] = i$, a bracket whose right side is a multiple of the identity that cannot be absorbed (the canonical commutation relations of [[§C2.2 Translation and Momentum as Its Generator#^thm-c2-2-6|QM Theorem §C2.2.6]], and of the free field, [[§C2a.1 Canonical Quantization of Fields|§C2a.1]]). The rotation and Lorentz algebras admit no such central term: a constant added to any of their brackets can be removed by redefining the generators (their second Lie-algebra cohomology vanishes, Whitehead's lemma for semisimple algebras; Weinberg vol. 1, §2.7, removes the central charges of the Poincaré algebra the same way). That every element is a sum of commutators makes such a redefinition unique, but does not by itself guarantee that one exists (Hall Prop. 16.46 and its remark).
+> On an infinite-dimensional Hilbert space, the space of states of a particle, the determinant trick of step 1 of Derivation §CB.21.11 is unavailable (generators are unbounded, traces undefined). For the rotation and Lorentz groups the conclusion still holds: every continuous projective unitary representation lifts to a genuine one of the covering group (Bargmann's theorem, cited by the user's pre-course notes via Weinberg vol. 1, §2.7 and App. 2.B). It is not automatic: Hall's Ex. 16.56 gives a projective representation of the simply connected group $\mathbb R^2$ that cannot be made genuine, $(T_{(a,b)}\psi)(x) = e^{iax}\psi(x - b)$ with $T_{(a,b)}T_{(a',b')} = e^{-ia'b}T_{(a+a', b+b')}$, i.e. momentum and position translations. Its phase is not topological but algebraic: the generators obey $[\hat x, \hat p] = i$, a bracket whose right side is a multiple of the identity that cannot be absorbed (the canonical commutation relations of [[§C2.2 Translation and Momentum as Its Generator#^thm-c2-2-6|QM Theorem §C2.2.6]], and of the free field, [[§C2a.1 Canonical Quantization of Fields|§C2a.1]]). The rotation and Lorentz algebras admit no such central term: a constant added to any of their brackets can be removed by redefining the generators (their second Lie-algebra cohomology vanishes, Whitehead's lemma for semisimple algebras; Weinberg vol. 1, §2.7, removes the central charges of the Poincaré algebra the same way). That every element is a sum of commutators makes such a redefinition unique, but does not by itself guarantee that one exists (Hall Prop. 16.46 and its remark).
 >
 > *Source: Hall §16.9.2, Ex. 16.56 · the user's pre-course notes, §2.3 ("Projective representations", bracketed note)*
 
-^rem-cb-20-1
+^rem-cb-21-1
 
-> [!theorem] Theorem §CB.20.12: Bargmann's Theorem
-> Let $\tilde G$ be a connected and simply connected Lie group whose Lie algebra $\mathfrak g$ has the property that every real skew-symmetric bilinear form $\beta$ on $\mathfrak g$ with $\beta([X, Y], Z) + \beta([Y, Z], X) + \beta([Z, X], Y) = 0$ is of the form $\beta(X, Y) = f([X, Y])$ for a linear $f : \mathfrak g \to \mathbb R$ (vanishing second cohomology). Then every continuous projective unitary representation of $\tilde G$ on a separable Hilbert space is induced by a continuous unitary representation of $\tilde G$. This holds for $SU(2)$, $SL(2, \mathbb C)$ and the universal cover $\mathbb R^{1,3}\rtimes SL(2, \mathbb C)$ of the Poincaré group (§CB.21★).
+> [!theorem] Theorem §CB.21.12: Bargmann's Theorem
+> Let $\tilde G$ be a connected and simply connected Lie group whose Lie algebra $\mathfrak g$ has the property that every real skew-symmetric bilinear form $\beta$ on $\mathfrak g$ with $\beta([X, Y], Z) + \beta([Y, Z], X) + \beta([Z, X], Y) = 0$ is of the form $\beta(X, Y) = f([X, Y])$ for a linear $f : \mathfrak g \to \mathbb R$ (vanishing second cohomology). Then every continuous projective unitary representation of $\tilde G$ on a separable Hilbert space is induced by a continuous unitary representation of $\tilde G$. This holds for $SU(2)$, $SL(2, \mathbb C)$ and the universal cover $\mathbb R^{1,3}\rtimes SL(2, \mathbb C)$ of the Poincaré group (§CB.22★).
 >
 > *Source: V. Bargmann, "On unitary ray representations of continuous groups", Ann. of Math. 59 (1954) 1–46 (the original theorem and proof) · the statement as Theorem 135 ("Bargmann's criterion") in V. Moretti, Mathematical Foundations of Quantum Mechanics: An Advanced Short Course, arXiv:1508.06951, §3.6 (https://arxiv.org/abs/1508.06951), where continuity means that $g \mapsto |\langle\psi, U(g)\phi\rangle|$ is continuous for all $\psi, \phi$ and the conclusion is equivalence (phases $U'(g) = \chi(g)U(g)$) to a strongly continuous unitary representation; Moretti's Remark 136 notes that $SU(2)$ satisfies the condition · the Poincaré case: Weinberg vol. 1, §2.7 and App. 2.B, as cited in the user's pre-course notes · Hall, Quantum Theory for Mathematicians, §16.9.2, Ex. 16.56 (a simply connected group where the conclusion fails)*
 
-^thm-cb-20-12
+^thm-cb-21-12
 
 > [!proof]- Proof (to be filled)
-> *Not proved here: the proof (Bargmann 1954, cited above) needs the local theory of continuous ray representations in infinite dimension (local exponents, their smoothing and their reduction to Lie-algebra cocycles), beyond the finite-dimensional tools of this chapter. That the condition on $\beta$ holds for $\mathfrak{su}(2)$ and $\mathfrak{sl}(2, \mathbb C)_{\mathbb R}$ is Whitehead's second lemma for semisimple Lie algebras (quoted), for the Poincaré algebra Weinberg's removal of central charges (§2.7). The finite-dimensional analogue is proved in Theorem §CB.20.10.*
+> *Not proved here: the proof (Bargmann 1954, cited above) needs the local theory of continuous ray representations in infinite dimension (local exponents, their smoothing and their reduction to Lie-algebra cocycles), beyond the finite-dimensional tools of this chapter. That the condition on $\beta$ holds for $\mathfrak{su}(2)$ and $\mathfrak{sl}(2, \mathbb C)_{\mathbb R}$ is Whitehead's second lemma for semisimple Lie algebras (quoted), for the Poincaré algebra Weinberg's removal of central charges (§2.7). The finite-dimensional analogue is proved in Theorem §CB.21.10.*
 
 <!-- Searched for a freely available proof (2026-10-08): Bargmann 1954 (Ann. Math., paywalled); Hall QTM §16.7–16.9 (states the obstruction, Ex. 16.56, no proof); Moretti arXiv:1508.06951 §3.6 (statement only, cites Barut–Raczka and Moretti's Springer book); Schottenloher, A Mathematical Introduction to Conformal Field Theory, Ch. 4 "Central Extensions of Lie Algebras and Bargmann's Theorem" (author's PDF link returned 404); Weinberg App. 2.B (no free copy). -->
 
-^pf-cb-20-12
+^pf-cb-21-12
 
 ## Antiunitary symmetries
 
-> [!definition] Definition §CB.20.13: Unitary–Antiunitary Representation
+> [!definition] Definition §CB.21.13: Unitary–Antiunitary Representation
 > Let $G_0 \subset G$ be a subgroup of index $2$. A **unitary–antiunitary representation** (corepresentation) of $(G, G_0)$ on $\mathcal H$ assigns to each $g \in G$ an operator $U(g)$, unitary for $g \in G_0$ and antiunitary for $g \notin G_0$, with $U(g)U(h) = e^{i\varphi(g, h)}U(gh)$. Example: the Lorentz group with $\mathcal T$, $G_0$ the subgroup without time reversal, $U(\mathcal T)$ antiunitary.
 >
 > *Source: written here · Quantum Mechanics §C8.3★*
 
-^def-cb-20-13
+^def-cb-21-13
 
-> [!theorem] Theorem §CB.20.14: The Square of an Antiunitary Involution Is ±1
+> [!theorem] Theorem §CB.21.14: The Square of an Antiunitary Involution Is ±1
 > If $\Theta$ is antiunitary and $\Theta^2 = c\mathbb 1$ for a number $c$, then $c = \pm1$. If $c = -1$, then $\Theta\psi$ is orthogonal to $\psi$ for every $\psi$.
 >
 > *Source: written here · [[§C8.3★ Time Reversal#^thm-c8-3-7|QM Theorem §C8.3.7]] (Kramers)*
 
-^thm-cb-20-14
+^thm-cb-21-14
 
 > [!proof]- Proof
 > **1. c is real.** $\Theta^3 = \Theta\Theta^2 = \Theta(c\mathbb 1) = \bar c\,\Theta$ because $\Theta$ is antilinear, and $\Theta^3 = \Theta^2\Theta = c\,\Theta$. Since $\Theta \ne 0$, $\bar c = c$.
 >
-> **2. |c| = 1.** $\Theta^2$ is unitary (step 1 of Theorem §CB.20.8), so $\|c\psi\| = \|\psi\|$ and $|c| = 1$. With step 1, $c = \pm1$.
+> **2. |c| = 1.** $\Theta^2$ is unitary (step 1 of Theorem §CB.21.8), so $\|c\psi\| = \|\psi\|$ and $|c| = 1$. With step 1, $c = \pm1$.
 >
 > **3. c = −1.** For antiunitary $\Theta$, $\langle\Theta\phi, \Theta\chi\rangle = \overline{\langle\phi, \chi\rangle} = \langle\chi, \phi\rangle$. With $\phi = \Theta\psi$, $\chi = \psi$: $\langle\Theta^2\psi, \Theta\psi\rangle = \langle\psi, \Theta\psi\rangle$, i.e. $-\langle\psi, \Theta\psi\rangle = \langle\psi, \Theta\psi\rangle$, so $\langle\psi, \Theta\psi\rangle = 0$.
 
-^pf-cb-20-14
+^pf-cb-21-14
 
-*Uses:* [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-3|Def. §CB.20.3]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|Def. §CB.20.4]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-8|Theorem §CB.20.8]]
+*Uses:* [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-3|Def. §CB.21.3]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-4|Def. §CB.21.4]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-8|Theorem §CB.21.8]]
 
-> [!theorem] Theorem §CB.20.15: An Antiunitary Operator Reversing Spin Squares to (−1)²ʲ
+> [!theorem] Theorem §CB.21.15: An Antiunitary Operator Reversing Spin Squares to (−1)²ʲ
 > Let $\Theta$ be antiunitary on the spin-$j$ representation $V_j$ ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]]) with $\Theta J^a\Theta^{-1} = -J^a$ for $a = 1, 2, 3$. Then $\Theta^2 = (-1)^{2j}\mathbb 1$. In particular an antiunitary time reversal acts on spinors with $\Theta^2 = -1$ and on tensors with $\Theta^2 = +1$.
 >
 > *Source: [[§C8.3★ Time Reversal#^thm-c8-3-6|QM Theorem §C8.3.6]] (Sakurai §4.4.4: $\Theta = \eta\,e^{-i\pi J_y}K$, $\Theta^2 = (-1)^{2j}$) · the condition $\Theta\mathbf J\Theta^{-1} = -\mathbf J$: Yu Zhao-Huan, 量子场论讲义, §9.1.2, eqs. (9.50)–(9.58) · the ladder-operator proof written here*
 
-^thm-cb-20-15
+^thm-cb-21-15
 
 > [!proof]- Proof
 > Use the standard basis $|j, m\rangle$ of $V_j$ and its inner product, in which the $J^a$ are Hermitian ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], 3); $\Theta$ is antiunitary for this inner product.
 >
-> **1. Θ² is a scalar.** $\Theta^2$ is linear (a product of two antilinear maps) and $\Theta^2J^a\Theta^{-2} = \Theta(-J^a)\Theta^{-1} = -\Theta J^a\Theta^{-1} = J^a$ (the real number $-1$ passes through $\Theta$). So $\Theta^2$ commutes with every $J^a$; $V_j$ is irreducible, so $\Theta^2 = c\mathbb 1$ ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-5|Theorem §CB.7.5]]), and $c = \pm1$ ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-14|Theorem §CB.20.14]]).
+> **1. Θ² is a scalar.** $\Theta^2$ is linear (a product of two antilinear maps) and $\Theta^2J^a\Theta^{-2} = \Theta(-J^a)\Theta^{-1} = -\Theta J^a\Theta^{-1} = J^a$ (the real number $-1$ passes through $\Theta$). So $\Theta^2$ commutes with every $J^a$; $V_j$ is irreducible, so $\Theta^2 = c\mathbb 1$ ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-5|Theorem §CB.7.5]]), and $c = \pm1$ ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-14|Theorem §CB.21.14]]).
 >
 > **2. Θ reverses m.** $J^3\,\Theta|j, m\rangle = -\Theta J^3|j, m\rangle = -\Theta\bigl(m|j, m\rangle\bigr) = -m\,\Theta|j, m\rangle$ ($m$ real). The weight spaces are one-dimensional, so $\Theta|j, m\rangle = a_m|j, -m\rangle$, and $|a_m| = 1$ because $\Theta$ preserves norms.
 >
@@ -363,28 +363,28 @@ The rotation case, the course's theorem (with Yu's loop argument as a second rou
 >
 > **What the proof shows**
 > - The sign is forced by the ladder structure alone: reversing $m$ antilinearly flips the sign at every rung, and $2j$ rungs separate $m$ from $-m$. No phase convention for $\Theta$ affects it ($a_j$ cancels against its conjugate), in agreement with QM Theorem §C8.3.6 ($\eta$ arbitrary).
-> - For half-integer $j$, $\Theta^2 = -1$ and Theorem §CB.20.14 gives $\Theta\psi \perp \psi$: Kramers degeneracy ([[§C8.3★ Time Reversal#^thm-c8-3-7|QM Theorem §C8.3.7]]).
+> - For half-integer $j$, $\Theta^2 = -1$ and Theorem §CB.21.14 gives $\Theta\psi \perp \psi$: Kramers degeneracy ([[§C8.3★ Time Reversal#^thm-c8-3-7|QM Theorem §C8.3.7]]).
 
-^pf-cb-20-15
+^pf-cb-21-15
 
-*Uses:* [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-5|Theorem §CB.7.5]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-14|Theorem §CB.20.14]]
+*Uses:* [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-5|Theorem §CB.7.5]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-14|Theorem §CB.21.14]]
 
-> [!theorem] Theorem §CB.20.16: Conjugation by an Antiunitary Operator
-> Let $U$ be antiunitary on $\mathcal H$ ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|Def. §CB.20.4]]), $A$, $B$ operators on $\mathcal H$ and $c \in \mathbb C$. Then
+> [!theorem] Theorem §CB.21.16: Conjugation by an Antiunitary Operator
+> Let $U$ be antiunitary on $\mathcal H$ ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-4|Def. §CB.21.4]]), $A$, $B$ operators on $\mathcal H$ and $c \in \mathbb C$. Then
 > 1. $U(cA)U^{-1} = \bar c\,UAU^{-1}$; for a column $(A_b)$ of operators and a matrix $(M_{ab})$ of numbers, $U\bigl(\sum_bM_{ab}A_b\bigr)U^{-1} = \sum_b\bar M_{ab}\,UA_bU^{-1}$;
 > 2. $U(AB)U^{-1} = (UAU^{-1})(UBU^{-1})$;
 > 3. $U A^\dagger U^{-1} = (UAU^{-1})^\dagger$.
 >
 > *Source: Yu Zhao-Huan, 量子场论讲义, §9.1.2, eqs. (9.51)–(9.53) (part 1 for $c = -i$, and the adjoint of an antiunitary operator) · parts 2–3 written here*
 
-^thm-cb-20-16
+^thm-cb-21-16
 
 > [!proof]- Proof
-> **1. Numbers.** For every $\psi$, $U(cA)U^{-1}\psi = U\bigl(c\,AU^{-1}\psi\bigr) = \bar c\,UAU^{-1}\psi$ by antilinearity ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-3|Def. §CB.20.3]]). For the column, apply this to each term of $\sum_bM_{ab}A_b$ and use additivity.
+> **1. Numbers.** For every $\psi$, $U(cA)U^{-1}\psi = U\bigl(c\,AU^{-1}\psi\bigr) = \bar c\,UAU^{-1}\psi$ by antilinearity ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-3|Def. §CB.21.3]]). For the column, apply this to each term of $\sum_bM_{ab}A_b$ and use additivity.
 >
 > **2. Products.** $U(AB)U^{-1} = UAU^{-1}UBU^{-1}$, inserting $U^{-1}U = \mathbb 1$.
 >
-> **3. Adjoints.** With $\langle\cdot, \cdot\rangle$ linear in the second slot and $\langle U\chi, U\phi\rangle = \overline{\langle\chi, \phi\rangle}$ ([[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|Def. §CB.20.4]]) used twice: for $\phi_1, \phi_2 \in \mathcal H$,
+> **3. Adjoints.** With $\langle\cdot, \cdot\rangle$ linear in the second slot and $\langle U\chi, U\phi\rangle = \overline{\langle\chi, \phi\rangle}$ ([[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-4|Def. §CB.21.4]]) used twice: for $\phi_1, \phi_2 \in \mathcal H$,
 >
 > $$
 > \langle\phi_1, UAU^{-1}\phi_2\rangle = \overline{\langle U^{-1}\phi_1, AU^{-1}\phi_2\rangle} = \overline{\langle A^\dagger U^{-1}\phi_1, U^{-1}\phi_2\rangle} = \langle UA^\dagger U^{-1}\phi_1, \phi_2\rangle .
@@ -395,13 +395,13 @@ The rotation case, the course's theorem (with Yu's loop argument as a second rou
 > **What the proof shows**
 > - Conjugation by an antiunitary operator is a real-algebra automorphism of the operators that respects products and adjoints but conjugates every complex coefficient; conjugation by a unitary one is the complex-linear version.
 
-^pf-cb-20-16
+^pf-cb-21-16
 
-*Uses:* [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-3|Def. §CB.20.3]], [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|Def. §CB.20.4]]
+*Uses:* [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-3|Def. §CB.21.3]], [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-4|Def. §CB.21.4]]
 
 The course's remark on why states carry unitary representations of the covering group is physics: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]].
 
 > [!remark]- Connections
-> - Theorem §CB.20.8 is why continuous symmetries (rotations, boosts, translations) are unitary and only discrete ones can be antiunitary: time reversal is antiunitary ([[§C8.3★ Time Reversal#^thm-c8-3-3|QM Theorem §C8.3.3]]), parity unitary ([[§C9.3 Parity on States, Spinors and the Dirac Field|§C9.3]]); charge conjugation is unitary and time reversal and CPT antiunitary ([[§C9.6 Charge Conjugation on Oscillators and Spinors|§C9.6]], [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|Theorem §C9.9.2]], [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-2|Theorem §C9.11.2]]).
-> - Theorem §CB.20.10 and Theorem §CB.20.12 are the precise forms of "spin ½ is a representation of SU(2), not SO(3)": the two-valuedness of §C3.1 and §C5a.4 is the projective representation, and its lift is the genuine representation of the covering group (§CB.15).
-> - **Used in**: Definition §CB.20.2 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (cited in [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|Theorem §C9.9.2]]; Mathematical background); Definition §CB.20.3 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (cited in [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-1|Theorem §C9.9.1]], [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^der-c9-9-1b|Derivation §C9.9.1, second route]]; Mathematical background); Definition §CB.20.4 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (cited in [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|Theorem §C9.9.2]], [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background), [[§C9.11 CPT and the CPT Theorem|§C9.11]] (cited in [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-2|Theorem §C9.11.2]]; Mathematical background), [[§C9.12 C, T and CPT for the Complex Scalar Field|§C9.12]] (cited in [[§C9.12 C, T and CPT for the Complex Scalar Field#^def-c9-12-2|Def. §C9.12.2]]; Mathematical background), [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance|§C9.13]] (Mathematical background); Theorem §CB.20.6 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (restated in physics form as [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background), [[§C9.11 CPT and the CPT Theorem|§C9.11]] (physics form: [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background), [[§C9.12 C, T and CPT for the Complex Scalar Field|§C9.12]] (physics form: [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background); Theorem §CB.20.7 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (restated in physics form as [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-2|Theorem §C3.4.2]]; Mathematical background), [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (physics form: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-2|Theorem §C3.4.2]]; Mathematical background), [[§C8.1★ Symmetries, Conservation Laws and Degeneracies|QM §C8.1★]] (cited in [[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^der-c8-1-1|QM Derivation §C8.1.1]]; Connections); Theorem §CB.20.8 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (restated in physics form as [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-2|Theorem §C3.4.2]]; Mathematical background), [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (physics form: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-2|Theorem §C3.4.2]]; Connections), [[§C9.11 CPT and the CPT Theorem|§C9.11]] (Connections); Theorem §CB.20.10 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (restated in physics form as [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]]; Mathematical background); Theorem §CB.20.11 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (restated in physics form as [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-3|Theorem §C3.1.3]]; Mathematical background), [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (cited in [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]]; physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-3|Theorem §C3.1.3]]; Mathematical background), [[§C3.6★ Particle States and the Little Group|§C3.6★]] (physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-3|Theorem §C3.1.3]]; Mathematical background), [[§C5.1 Rotations and the Angular-Momentum Commutation Relations|QM §C5.1]] (Connections), [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations|QM §C5.2]] (Connections), [[§C8.1★ Symmetries, Conservation Laws and Degeneracies|QM §C8.1★]] (Connections), [[§38 Fundamental Group of Some Surfaces|590 §38]]; §CB.20, ★ Remark: Infinite dimensions, Bargmann, and a phase topology does not explain — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (cited in [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]]; Mathematical background); Theorem §CB.20.12 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (restated in physics form as [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]]; Mathematical background); Theorem §CB.20.14 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (restated in physics form as [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background); Theorem §CB.20.15 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (restated in physics form as [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background), [[§C9.12 C, T and CPT for the Complex Scalar Field|§C9.12]] (physics form: [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background); Theorem §CB.20.16 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (cited in [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^der-c9-9-2|Derivation §C9.9.2]], [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^der-c9-9-3|Derivation §C9.9.3]]; Mathematical background), [[§C9.12 C, T and CPT for the Complex Scalar Field|§C9.12]] (cited in [[§C9.12 C, T and CPT for the Complex Scalar Field#^der-c9-12-1|Derivation §C9.12.1]], [[§C9.12 C, T and CPT for the Complex Scalar Field#^der-c9-12-2|Derivation §C9.12.2]]; the text; Mathematical background), [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance|§C9.13]] (Mathematical background).
+> - Theorem §CB.21.8 is why continuous symmetries (rotations, boosts, translations) are unitary and only discrete ones can be antiunitary: time reversal is antiunitary ([[§C8.3★ Time Reversal#^thm-c8-3-3|QM Theorem §C8.3.3]]), parity unitary ([[§C9.3 Parity on States, Spinors and the Dirac Field|§C9.3]]); charge conjugation is unitary and time reversal and CPT antiunitary ([[§C9.6 Charge Conjugation on Oscillators and Spinors|§C9.6]], [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|Theorem §C9.9.2]], [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-2|Theorem §C9.11.2]]).
+> - Theorem §CB.21.10 and Theorem §CB.21.12 are the precise forms of "spin ½ is a representation of SU(2), not SO(3)": the two-valuedness of §C3.1 and §C5a.4 is the projective representation, and its lift is the genuine representation of the covering group (§CB.15).
+> - **Used in**: Definition §CB.21.2 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (cited in [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|Theorem §C9.9.2]]; Mathematical background); Definition §CB.21.3 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (cited in [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-1|Theorem §C9.9.1]], [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^der-c9-9-1b|Derivation §C9.9.1, second route]]; Mathematical background); Definition §CB.21.4 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (cited in [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|Theorem §C9.9.2]], [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background), [[§C9.11 CPT and the CPT Theorem|§C9.11]] (cited in [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-2|Theorem §C9.11.2]]; Mathematical background), [[§C9.12 C, T and CPT for the Complex Scalar Field|§C9.12]] (cited in [[§C9.12 C, T and CPT for the Complex Scalar Field#^def-c9-12-2|Def. §C9.12.2]]; Mathematical background), [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance|§C9.13]] (Mathematical background); Theorem §CB.21.6 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (restated in physics form as [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background), [[§C9.11 CPT and the CPT Theorem|§C9.11]] (physics form: [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background), [[§C9.12 C, T and CPT for the Complex Scalar Field|§C9.12]] (physics form: [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background); Theorem §CB.21.7 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (restated in physics form as [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-2|Theorem §C3.4.2]]; Mathematical background), [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (physics form: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-2|Theorem §C3.4.2]]; Mathematical background), [[§C8.1★ Symmetries, Conservation Laws and Degeneracies|QM §C8.1★]] (cited in [[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^der-c8-1-1|QM Derivation §C8.1.1]]; Connections); Theorem §CB.21.8 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (restated in physics form as [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-2|Theorem §C3.4.2]]; Mathematical background), [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (physics form: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-2|Theorem §C3.4.2]]; Connections), [[§C9.11 CPT and the CPT Theorem|§C9.11]] (Connections); Theorem §CB.21.10 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (restated in physics form as [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]]; Mathematical background); Theorem §CB.21.11 — [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] (restated in physics form as [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-3|Theorem §C3.1.3]]; Mathematical background), [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (cited in [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]]; physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-3|Theorem §C3.1.3]]; Mathematical background), [[§C3.6★ Particle States and the Little Group|§C3.6★]] (physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-3|Theorem §C3.1.3]]; Mathematical background), [[§C5.1 Rotations and the Angular-Momentum Commutation Relations|QM §C5.1]] (Connections), [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations|QM §C5.2]] (Connections), [[§C8.1★ Symmetries, Conservation Laws and Degeneracies|QM §C8.1★]] (Connections), [[§38 Fundamental Group of Some Surfaces|590 §38]]; §CB.21, ★ Remark: Infinite dimensions, Bargmann, and a phase topology does not explain — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (cited in [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]]; Mathematical background); Theorem §CB.21.12 — [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] (restated in physics form as [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]]; Mathematical background); Theorem §CB.21.14 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (restated in physics form as [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background); Theorem §CB.21.15 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (restated in physics form as [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background), [[§C9.12 C, T and CPT for the Complex Scalar Field|§C9.12]] (physics form: [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]]; Mathematical background); Theorem §CB.21.16 — [[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]] (cited in [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^der-c9-9-2|Derivation §C9.9.2]], [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^der-c9-9-3|Derivation §C9.9.3]]; Mathematical background), [[§C9.12 C, T and CPT for the Complex Scalar Field|§C9.12]] (cited in [[§C9.12 C, T and CPT for the Complex Scalar Field#^der-c9-12-1|Derivation §C9.12.1]], [[§C9.12 C, T and CPT for the Complex Scalar Field#^der-c9-12-2|Derivation §C9.12.2]]; the text; Mathematical background), [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance|§C9.13]] (Mathematical background).

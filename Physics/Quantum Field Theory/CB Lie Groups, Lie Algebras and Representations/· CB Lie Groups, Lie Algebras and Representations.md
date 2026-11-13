@@ -32,9 +32,10 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover]] — 513 notes Ch. 8 §8.2; Woit Ch. 40; Etingof Ex. 11.4; §C5a.4 (Weyl matrices, restated)
 - [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)]] — 513 notes Ch. 7 §7.4; Woit Ch. 40
 - [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵]] — PS §§3.2–3.4; Woit §41.2; PHY 513 TA (oral; the TA's theorem, moved here from §CB.14)
-- [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries]] — QM §C8.1★, §C8.3★; Yu §3.3.1
-- [[§CB.21★ The Poincaré Group and Induced Representations]] — Woit Ch. 18, 20, 42; 513 notes Ch. 7 §7.7
-- [[§CB.22 Grassmann Algebras]] — Woit Ch. 30 (deferred to C11)
+- [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure]] — Yu §9.2.1; PS §3.6; Lecture 12; Schwartz §10.3
+- [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries]] — QM §C8.1★, §C8.3★; Yu §3.3.1
+- [[§CB.22★ The Poincaré Group and Induced Representations]] — Woit Ch. 18, 20, 42; 513 notes Ch. 7 §7.7
+- [[§CB.23 Grassmann Algebras]] — Woit Ch. 30 (deferred to C11)
 
 ## Theorems
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-3|§CB.0.3]] Linear Maps Act by Matrix Multiplication
@@ -236,27 +237,27 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-15|§CB.19.15]] Every Tensorial (j₊, j₋) Lies in a Tensor Power of the Vector
 - [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-16|§CB.19.16]] The TA's Theorem for the Lorentz Group
 - [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-17|§CB.19.17]] The TA's Theorem — Clifford Modules Restricted to Spin Are Exactly the Spinor Representations, and Every Spinorial Representation Lies in Spinor ⊗ Tensor
-- [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|§CB.19.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation
-- [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-21|§CB.19.21]] The Charge-Conjugation Map Is a Real Structure Commuting with the Spinor Lorentz Matrices
-- [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-6|§CB.20.6]] Structure of Antiunitary Operators
-- [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-7|§CB.20.7]] Wigner's Theorem
-- [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-8|§CB.20.8]] Connected Groups of Symmetries Act by Unitaries
-- [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-10|§CB.20.10]] Finite-Dimensional Projective Representations Lift to the Universal Cover
-- [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-11|§CB.20.11]] Projective Representations of SO(3) Are Representations of SU(2)
-- [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-12|§CB.20.12]] Bargmann's Theorem
-- [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-14|§CB.20.14]] The Square of an Antiunitary Involution Is ±1
-- [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-15|§CB.20.15]] An Antiunitary Operator Reversing Spin Squares to (−1)²ʲ
-- [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-16|§CB.20.16]] Conjugation by an Antiunitary Operator
-- [[§CB.21★ The Poincaré Group and Induced Representations#^thm-cb-21-2|§CB.21.2]] The Semidirect Product Is a Group with N Normal
-- [[§CB.21★ The Poincaré Group and Induced Representations#^thm-cb-21-5|§CB.21.5]] The Poincaré Group as a Matrix Lie Group, and Its Lie Algebra
-- [[§CB.21★ The Poincaré Group and Induced Representations#^thm-cb-21-7|§CB.21.7]] Every Continuous Character of ℝ⁴ Is χ_p
-- [[§CB.21★ The Poincaré Group and Induced Representations#^thm-cb-21-10|§CB.21.10]] The Little Groups in SL(2,ℂ)
-- [[§CB.21★ The Poincaré Group and Induced Representations#^lem-cb-21-12|§CB.21.12]] Continuous Functions of Compact Support Are Dense in L²(𝒪, μ; 𝒦)
-- [[§CB.21★ The Poincaré Group and Induced Representations#^thm-cb-21-13|§CB.21.13]] The Induced Representation Is Unitary
-- [[§CB.21★ The Poincaré Group and Induced Representations#^thm-cb-21-14|§CB.21.14]] Irreducibility (Mackey)
-- [[§CB.21★ The Poincaré Group and Induced Representations#^thm-cb-21-15|§CB.21.15]] Every Irreducible Unitary Representation Is Induced (Wigner–Mackey)
-- [[§CB.22 Grassmann Algebras#^thm-cb-22-2|§CB.22.2]] Basis, Dimension, and the Clifford Algebra of the Zero Form
-- [[§CB.22 Grassmann Algebras#^thm-cb-22-4|§CB.22.4]] Supercommutativity
-- [[§CB.22 Grassmann Algebras#^thm-cb-22-7|§CB.22.7]] Graded Leibniz Rule and Left versus Right
-- [[§CB.22 Grassmann Algebras#^thm-cb-22-9|§CB.22.9]] Linear Change of Variables
-- [[§CB.22 Grassmann Algebras#^thm-cb-22-10|§CB.22.10]] The Fermionic Gaussian Integral Is a Determinant
+- [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^thm-cb-20-2|§CB.20.2]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation
+- [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^thm-cb-20-4|§CB.20.4]] The Charge-Conjugation Map Is a Real Structure Commuting with the Spinor Lorentz Matrices
+- [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-6|§CB.21.6]] Structure of Antiunitary Operators
+- [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-7|§CB.21.7]] Wigner's Theorem
+- [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-8|§CB.21.8]] Connected Groups of Symmetries Act by Unitaries
+- [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-10|§CB.21.10]] Finite-Dimensional Projective Representations Lift to the Universal Cover
+- [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-11|§CB.21.11]] Projective Representations of SO(3) Are Representations of SU(2)
+- [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-12|§CB.21.12]] Bargmann's Theorem
+- [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-14|§CB.21.14]] The Square of an Antiunitary Involution Is ±1
+- [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-15|§CB.21.15]] An Antiunitary Operator Reversing Spin Squares to (−1)²ʲ
+- [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-16|§CB.21.16]] Conjugation by an Antiunitary Operator
+- [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-2|§CB.22.2]] The Semidirect Product Is a Group with N Normal
+- [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-5|§CB.22.5]] The Poincaré Group as a Matrix Lie Group, and Its Lie Algebra
+- [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-7|§CB.22.7]] Every Continuous Character of ℝ⁴ Is χ_p
+- [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-10|§CB.22.10]] The Little Groups in SL(2,ℂ)
+- [[§CB.22★ The Poincaré Group and Induced Representations#^lem-cb-22-12|§CB.22.12]] Continuous Functions of Compact Support Are Dense in L²(𝒪, μ; 𝒦)
+- [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-13|§CB.22.13]] The Induced Representation Is Unitary
+- [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-14|§CB.22.14]] Irreducibility (Mackey)
+- [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-15|§CB.22.15]] Every Irreducible Unitary Representation Is Induced (Wigner–Mackey)
+- [[§CB.23 Grassmann Algebras#^thm-cb-23-2|§CB.23.2]] Basis, Dimension, and the Clifford Algebra of the Zero Form
+- [[§CB.23 Grassmann Algebras#^thm-cb-23-4|§CB.23.4]] Supercommutativity
+- [[§CB.23 Grassmann Algebras#^thm-cb-23-7|§CB.23.7]] Graded Leibniz Rule and Left versus Right
+- [[§CB.23 Grassmann Algebras#^thm-cb-23-9|§CB.23.9]] Linear Change of Variables
+- [[§CB.23 Grassmann Algebras#^thm-cb-23-10|§CB.23.10]] The Fermionic Gaussian Integral Is a Determinant

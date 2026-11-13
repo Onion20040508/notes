@@ -4617,7 +4617,7 @@ A relativistic quantum theory has unitary $U(\Lambda, a)$ with $U(\mathbb 1, 0) 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - Principle [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|§C3.4.1]] Poincaré Invariance on the Hilbert Space; unitary and the covering group: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]]; Wigner: Theorem [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-7|§CB.20.7]] Wigner's Theorem.
+> - Principle [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|§C3.4.1]] Poincaré Invariance on the Hilbert Space; unitary and the covering group: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]]; Wigner: Theorem [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-7|§CB.21.7]] Wigner's Theorem.
 
 ### [B] Generators of quantum Poincaré transformations
 
@@ -7541,9 +7541,9 @@ From Lecture 12 on, $\eta^s = \xi^{-s} = -i\sigma^2(\xi^s)^{\ast}$, so $\eta^1 =
 
 ### [B] The charge-conjugation matrix B and the map c
 
-A charge-conjugation matrix is an invertible $B$ with $B(\gamma^\mu)^{\ast}B^{-1} = -\gamma^\mu$; it exists, is unique up to a factor, unitary in a Hermitian basis with $BB^{\ast} = \mathbb 1$; $c(\psi) = B\psi^{\ast}$ is an antilinear real structure commuting with the spinor Lorentz matrices; in the chiral basis $B = -i\gamma^2$, see Definition [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-18|§CB.19.18]] The Charge-Conjugation Matrix, Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|§CB.19.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation and Definition [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-20|§CB.19.20]] The Charge-Conjugation Map. *Source: written beyond Lecture 12 at the user's question (2026-10-12) · PS eqs. (3.144)–(3.145) (the matrix $-i\gamma^2$, unnamed) · Yu (9.98), (9.112)*
+A charge-conjugation matrix is an invertible $B$ with $B(\gamma^\mu)^{\ast}B^{-1} = -\gamma^\mu$; it exists, is unique up to a factor, unitary in a Hermitian basis with $BB^{\ast} = \mathbb 1$; $c(\psi) = B\psi^{\ast}$ is an antilinear real structure commuting with the spinor Lorentz matrices; in the chiral basis $B = -i\gamma^2$, see Definition [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^def-cb-20-1|§CB.20.1]] The Charge-Conjugation Matrix, Theorem [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^thm-cb-20-2|§CB.20.2]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation and Definition [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^def-cb-20-3|§CB.20.3]] The Charge-Conjugation Map. *Source: written beyond Lecture 12 at the user's question (2026-10-12) · PS eqs. (3.144)–(3.145) (the matrix $-i\gamma^2$, unnamed) · Yu (9.98), (9.112)*
 
-^nd-def-cb-19-18
+^nd-def-cb-20-1
 
 - [ ] Q1 **[def]** Define a charge-conjugation matrix and the charge-conjugation map.
 - [ ] Q2 **[why]** Why are $(\gamma^\mu)^{\ast}$ and $-\gamma^\mu$ again Dirac matrices, and why does that give existence and uniqueness of $B$ (which theorem)?
@@ -7553,7 +7553,7 @@ A charge-conjugation matrix is an invertible $B$ with $B(\gamma^\mu)^{\ast}B^{-1
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (intertwiner), K5.
-> - Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|§CB.19.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation (Pauli's theorem; sign of $BB^{\ast}$), Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-21|§CB.19.21]] The Charge-Conjugation Map Is a Real Structure Commuting with the Spinor Lorentz Matrices, Example [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-19-22|§CB.19.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; basis remark [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
+> - Theorem [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^thm-cb-20-2|§CB.20.2]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation (Pauli's theorem; sign of $BB^{\ast}$), Theorem [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^thm-cb-20-4|§CB.20.4]] The Charge-Conjugation Map Is a Real Structure Commuting with the Spinor Lorentz Matrices, Example [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^ex-cb-20-5|§CB.20.5]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; basis remark [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
 
 ### [B] Wave-function spin, the spin operator and physical spin
 
@@ -7885,7 +7885,7 @@ If $v^s(p) = B\,u^s(p)^{\ast}$ for a unitary charge-conjugation matrix $B$, then
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15, K16.
-> - Steps 1–10 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis; Definition [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-19-18|§CB.19.18]] The Charge-Conjugation Matrix, Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|§CB.19.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, Example [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-19-22|§CB.19.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
+> - Steps 1–10 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis; Definition [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^def-cb-20-1|§CB.20.1]] The Charge-Conjugation Matrix, Theorem [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^thm-cb-20-2|§CB.20.2]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, Example [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^ex-cb-20-5|§CB.20.5]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
 
 ### [A] The scalar bilinear under charge conjugation ★★
 
@@ -8027,7 +8027,7 @@ If $U(\mathcal T)$ commutes with $\hat H$ and $U(\mathcal T)\hat\psi(t, \mathbf 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Steps 1–4 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-1|§C9.9.1]] Time Reversal Must Be Antilinear; Definition [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-3|§CB.20.3]] Antilinear Operator; [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^cau-c9-9-1|§C9.9, Caution: This goes against everything said so far]].
+> - Steps 1–4 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-1|§C9.9.1]] Time Reversal Must Be Antilinear; Definition [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-3|§CB.21.3]] Antilinear Operator; [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^cau-c9-9-1|§C9.9, Caution: This goes against everything said so far]].
 
 ### [B] Time reversal is antiunitary; it conjugates every number ★
 
@@ -8042,7 +8042,7 @@ If time reversal is a symmetry, $U(\mathcal T)$ is antiunitary, $\langle U\Psi_1
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15.
-> - Steps 1–3 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|§C9.9.2]] Time Reversal Is Antiunitary; Theorem [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-20-16|§CB.20.16]] Conjugation by an Antiunitary Operator; Definition [[§CB.20 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-20-4|§CB.20.4]] Antiunitary Operator.
+> - Steps 1–3 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|§C9.9.2]] Time Reversal Is Antiunitary; Theorem [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-16|§CB.21.16]] Conjugation by an Antiunitary Operator; Definition [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-21-4|§CB.21.4]] Antiunitary Operator.
 
 ### [A] The matrix γ¹γ³ ★★ [class exercise, Lecture 12]
 
@@ -9081,7 +9081,7 @@ $U(\mathcal C)\hat\psi U(\mathcal C)^{-1} = B\hat\psi^{\dagger\mathsf T}$ (any H
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16.
-> - Steps 2–3 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis; Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-19|§CB.19.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, part 4; Example [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-19-22|§CB.19.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
+> - Steps 2–3 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis; Theorem [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^thm-cb-20-2|§CB.20.2]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, part 4; Example [[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure#^ex-cb-20-5|§CB.20.5]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
 
 ### [B] Θ in two orders
 
