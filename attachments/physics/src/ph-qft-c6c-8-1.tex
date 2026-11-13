@@ -1,0 +1,43 @@
+% ADDED figure (2026-11-13): Example §C6c.8.1, the three contact diagrams of the O(N) linear sigma model at order λ (PHY 513, Problem Set 10, Problem 1(a3)); field types on the lines, the surviving δ-terms and iM under each. Source kept in qft-C/tools/hw10/figs/.
+\tikzset{
+  fone/.style={line width=0.9pt, figG},
+  ftwo/.style={line width=0.9pt, figB},
+  c4/.style={circle, fill=figO, draw=figO, inner sep=0pt, minimum size=5pt},
+  fdlab/.style={font=\scriptsize, inner sep=2.4pt},
+  fdS/.style={font=\small},
+}
+\begin{tikzpicture}[font=\small]
+  % legend
+  \begin{scope}[xshift=-3.4cm, yshift=0.45cm]
+    \draw[fone] (0,0.5)--(0.6,0.5); \node[fdlab,right] at (0.6,0.5){$\Phi^1$};
+    \draw[ftwo] (0,0)--(0.6,0); \node[fdlab,right] at (0.6,0){$\Phi^2$};
+    \node[c4] at (0.3,-0.55){}; \node[fdlab,right] at (0.6,-0.55){$V^{ijkl}$};
+  \end{scope}
+  % (a) 12 -> 12
+  \begin{scope}[xshift=0.6cm]
+    \draw[fone] (-1.0,0.9)--(0,0); \draw[ftwo] (-1.0,-0.9)--(0,0);
+    \draw[fone] (0,0)--(1.0,0.9); \draw[ftwo] (0,0)--(1.0,-0.9);
+    \node[c4] at (0,0){};
+    \node[fdlab,left] at (-1.0,0.9){$p_1,\ i = 1$}; \node[fdlab,left] at (-1.0,-0.9){$p_2,\ j = 2$};
+    \node[fdlab,right] at (1.0,0.9){$p_3,\ k = 1$}; \node[fdlab,right] at (1.0,-0.9){$p_4,\ l = 2$};
+    \node[fdS,align=center] at (0,-1.95) {(a) $\Phi^1\Phi^2 \to \Phi^1\Phi^2$\\[1pt] only $\delta^{ik}\delta^{jl} = 1$\\[1pt] $i\mathcal M = -2i\lambda$};
+  \end{scope}
+  % (b) 11 -> 22
+  \begin{scope}[xshift=6.0cm]
+    \draw[fone] (-1.0,0.9)--(0,0); \draw[fone] (-1.0,-0.9)--(0,0);
+    \draw[ftwo] (0,0)--(1.0,0.9); \draw[ftwo] (0,0)--(1.0,-0.9);
+    \node[c4] at (0,0){};
+    \node[fdlab,left] at (-1.0,0.9){$p_1,\ i = 1$}; \node[fdlab,left] at (-1.0,-0.9){$p_2,\ j = 1$};
+    \node[fdlab,right] at (1.0,0.9){$p_3,\ k = 2$}; \node[fdlab,right] at (1.0,-0.9){$p_4,\ l = 2$};
+    \node[fdS,align=center] at (0,-1.95) {(b) $\Phi^1\Phi^1 \to \Phi^2\Phi^2$\\[1pt] only $\delta^{ij}\delta^{kl} = 1$\\[1pt] $i\mathcal M = -2i\lambda$};
+  \end{scope}
+  % (c) 11 -> 11
+  \begin{scope}[xshift=11.4cm]
+    \draw[fone] (-1.0,0.9)--(0,0); \draw[fone] (-1.0,-0.9)--(0,0);
+    \draw[fone] (0,0)--(1.0,0.9); \draw[fone] (0,0)--(1.0,-0.9);
+    \node[c4] at (0,0){};
+    \node[fdlab,left] at (-1.0,0.9){$p_1,\ i = 1$}; \node[fdlab,left] at (-1.0,-0.9){$p_2,\ j = 1$};
+    \node[fdlab,right] at (1.0,0.9){$p_3,\ k = 1$}; \node[fdlab,right] at (1.0,-0.9){$p_4,\ l = 1$};
+    \node[fdS,align=center] at (0,-1.95) {(c) $\Phi^1\Phi^1 \to \Phi^1\Phi^1$\\[1pt] all three $\delta\delta = 1$\\[1pt] $i\mathcal M = -6i\lambda$};
+  \end{scope}
+\end{tikzpicture}

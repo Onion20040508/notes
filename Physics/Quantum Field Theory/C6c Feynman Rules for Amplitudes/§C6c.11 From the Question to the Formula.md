@@ -3,11 +3,11 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C6c
-section: C6c.8
+section: C6c.11
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6d.1 Yukawa Theory]] →
+← [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6d.1 Yukawa Theory]] →
 
 *Sources: PHY 513, Problem Set 8, Problems 2(a), 3(a), 3(d)–(e) and 4 (statements, and the user's solutions, submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 106–108, eqs. (4.79), (4.84)–(4.86) (page images checked) · Yu Zhao-Huan, 量子场论讲义, §6.5.5, eqs. (6.383), (6.385) (page image checked, PDF p. 261) · PHY 513 Lecture 17, slides 19–20, 23 (Example 6) · the homes cited in each step.*
 
@@ -23,11 +23,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 4. **Which vacuum?** The ground state of the Hamiltonian that acts at early and late times: $|0\rangle$ in Model §C6a.0.1, $|\Omega\rangle$ in Model §C6a.0.3 — [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^def-c6a-5-1|Def. §C6a.5.1]], [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]].
 5. **Which order?** Free states in place of in and out states (the course's prescription: free states dressed by $U(0, -T)$, bubbles omitted) are exact in Model §C6a.0.1 and lowest order in Model §C6a.0.3; beyond it $\sqrt Z$ per external line and the physical mass — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]], [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]], [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]].
 6. **Is the object an observable?** Probabilities, rates and cross sections are; a correlation function is not, it is the input of amputation — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^rem-c6b-1-2|§C6b.1, Remark: The fundamental observable?]], [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]].
-7. **Are there fermions?** Then the question must also fix the spins and the order in which the external states are written, and the answer has signs: relative signs between diagrams are physical (the statistics of identical particles), the overall sign drops out of $|\mathcal M|^2$ but is physical relative to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$ ([[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^thm-c8-5-6|Theorem §C8.5.6]]) — [[§C6d.2 Contractions with External Fermions#^def-c6d-2-2|Def. §C6d.2.2]], [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4|Theorem §C6d.3.4]], [[§C6d.5 Second Order#^thm-c6d-5-3|Theorem §C6d.5.3]], [[§C6d.5 Second Order#^thm-c6d-5-4|Theorem §C6d.5.4]], [[§C6d.5 Second Order#^rem-c6d-5-1|§C6d.5, Remark: The overall sign]]; worked in Example §C6c.8.6 (PHY 513 Lecture 17, slide 23).
+7. **Are there fermions?** Then the question must also fix the spins and the order in which the external states are written, and the answer has signs: relative signs between diagrams are physical (the statistics of identical particles), the overall sign drops out of $|\mathcal M|^2$ but is physical relative to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$ ([[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^thm-c8-5-6|Theorem §C8.5.6]]) — [[§C6d.2 Contractions with External Fermions#^def-c6d-2-2|Def. §C6d.2.2]], [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4|Theorem §C6d.3.4]], [[§C6d.5 Second Order#^thm-c6d-5-3|Theorem §C6d.5.3]], [[§C6d.5 Second Order#^thm-c6d-5-4|Theorem §C6d.5.4]], [[§C6d.5 Second Order#^rem-c6d-5-1|§C6d.5, Remark: The overall sign]]; worked in Example §C6c.11.6 (PHY 513 Lecture 17, slide 23).
 
 ## A source switched off: how many particles?
 
-> [!example] Example §C6c.8.1: The Probability That a Switched Source Creates 0 or n Particles
+> [!example] Example §C6c.11.1: The Probability That a Switched Source Creates 0 or n Particles
 > ![[ph-qft-c6b-11-1.svg]]
 > *The two connected diagrams of a switched source ([[§C6a.0 Setups and Observables#^thm-c6a-0-5|Theorem §C6a.0.5]]): the line $L$ between two source vertices (crosses, at $x$, $y$) and the line from a source vertex to an outgoing particle $\mathbf k$. Added figure.*
 >
@@ -96,11 +96,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PHY 513, Problem Set 8, Problem 3 (statement; the user's solution, parts (a), (d), (e), as written) · PS Problem 4.1 · homes as linked*
 
-^ex-c6c-8-1
+^ex-c6c-11-1
 
 ## A decay: the lifetime
 
-> [!example] Example §C6c.8.2: The Lifetime of Φ in the Φφ² Theory
+> [!example] Example §C6c.11.2: The Lifetime of Φ in the Φφ² Theory
 > ![[ph-qft-c6b-11-2.svg]]
 > *The one tree diagram of $\Phi \to \phi\phi$ at order $\mu$: $\Phi$ (dashed, momentum $K$) in, the two $\phi$'s ($p_1$, $p_2$) out, vertex factor $-2i\mu$ ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]]). Added figure.*
 >
@@ -162,11 +162,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PHY 513, Problem Set 8, Problem 4 (statement; the user's solution, as written) · PS §4.5, pp. 107–108, eq. (4.86) · Yu §6.5.5, eqs. (6.383), (6.385) · homes as linked*
 
-^ex-c6c-8-2
+^ex-c6c-11-2
 
 ## A collision: the cross section
 
-> [!example] Example §C6c.8.3: dσ/dΩ for φφ → φφ in φ⁴ Theory
+> [!example] Example §C6c.11.3: dσ/dΩ for φφ → φφ in φ⁴ Theory
 > ![[ph-qft-c6b-11-3.svg]]
 > *The one diagram of $\phi\phi \to \phi\phi$ at order $\lambda$: $p_A$, $p_B$ in, $p_1$, $p_2$ out, all on one vertex, $i\mathcal M = -i\lambda$, $S = 1$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]). Added figure.*
 >
@@ -221,11 +221,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PS §4.5, pp. 106–107, eqs. (4.79), (4.84)–(4.85); §4.6, p. 112, eqs. (4.99)–(4.100) · Yu §6.5.1–§6.5.3 (the box route; homes as linked) · the user's PHY 513 notes, Ch. 15 §15.9 (paragraph "The $\phi^4$ example (filled in)") · PHY 513 Lecture 16, slide 19 ("No angular dependence (feature of spin-less particles). Simple energy dependence (follows by dimensional analysis). Special to $\phi^4$-theory at leading order"; $\sigma_{\rm tot} = \lambda^2/(32\pi E_{\rm cm}^2)$, "note: identical particles")*
 
-^ex-c6c-8-3
+^ex-c6c-11-3
 
 ## A question that is not an observable
 
-> [!example] Example §C6c.8.4: The Two-Point Correlator of φ⁴ Theory to Order λ
+> [!example] Example §C6c.11.4: The Two-Point Correlator of φ⁴ Theory to Order λ
 > ![[ph-qft-c6b-11-4.svg]]
 > *The diagrams through order $\lambda$: (a) the free line; (b) the tadpole, the one correction that survives; (c) the line times the figure-eight, in the numerator only; (d) the figure-eight of the denominator, which cancels (c). Vertex $z$, external points $x$, $y$ ([[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-1|Theorem §C6a.8.1]]). Added figure.*
 >
@@ -273,11 +273,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PHY 513 Lecture 14, slides 15 and 25 · the user's PHY 513 notes, Ch. 14 §14.3, §14.6 · PS §4.4, eqs. (4.43)–(4.44) · homes as linked*
 
-^ex-c6c-8-4
+^ex-c6c-11-4
 
 ## Which diagrams contribute
 
-> [!example] Example §C6c.8.5: The Diagrams of 2 → 2 in the Cubic–Quartic Theory at Order g² and λ
+> [!example] Example §C6c.11.5: The Diagrams of 2 → 2 in the Cubic–Quartic Theory at Order g² and λ
 > *Diagrams:* the four diagrams ($s$, $t$, $u$, contact) are drawn at the home of this enumeration, [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]] (figure at the head of that box).
 >
 > **Question as asked.** "For two-particle scattering, $p_A + p_B \to p_1 + p_2$, draw all the Feynman diagrams to $\mathcal O(g^2)$ or $\mathcal O(\lambda)$. It is natural to treat these all diagrams as if they are of the same order, i.e. to think of $\lambda$ as being of order $g^2/m^2$" (PHY 513, Problem Set 8, Problem 2(a)).
@@ -318,11 +318,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PHY 513, Problem Set 8, Problem 2(a) (statement; the user's solution, as written) · homes as linked*
 
-^ex-c6c-8-5
+^ex-c6c-11-5
 
 ## Fermions: which signs are physical
 
-> [!example] Example §C6c.8.6: f f → f f in Yukawa Theory at Leading Order
+> [!example] Example §C6c.11.6: f f → f f in Yukawa Theory at Leading Order
 > ![[ph-qft-c6d-5-1.svg]]
 > *The two diagrams of $f(p) + f(k) \to f(p') + f(k')$ at order $g^2$: the $t$-channel ($p \to p'$, scalar momentum $p - p'$) and the $u$-channel ($p \to k'$, scalar momentum $p - k'$), with a relative minus sign ([[§C6d.5 Second Order#^ex-c6d-5-2|Example §C6d.5.2]]). Added figure.*
 >
@@ -366,7 +366,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PHY 513 Lecture 17, slides 19–20, 23 · the user's PHY 513 notes, Lecture 17 update, §17.6 · PS §4.7, pp. 116–120, eqs. (4.118)–(4.119) · homes as linked*
 
-^ex-c6c-8-6
+^ex-c6c-11-6
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.

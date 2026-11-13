@@ -7,7 +7,7 @@ section: C6c.7
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6c.6 Feynman Rules for Amplitudes]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6c.8 From the Question to the Formula]] →
+← [[§C6c.6 Feynman Rules for Amplitudes]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index]] →
 
 *Sources: PHY 513, Problem Set 8, Problem 3 (based on PS Problem 4.1; the user's solution, parts (a)–(f), submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, Problem 4.1; §2.4, pp. 32–33, eqs. (2.61)–(2.66) · the course's time-ordered exponential and Wick's theorem ([[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]], [[§C6a.7 Wick's Theorem|§C6a.7]]).*
 

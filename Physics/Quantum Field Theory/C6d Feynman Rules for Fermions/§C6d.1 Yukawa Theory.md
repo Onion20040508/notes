@@ -7,7 +7,7 @@ section: C6d.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6c.8 From the Question to the Formula]] · ↑ [[· C6d Feynman Rules for Fermions]] · [[§C6d.2 Contractions with External Fermions]] →
+← [[§C6c.11 From the Question to the Formula]] · ↑ [[· C6d Feynman Rules for Fermions]] · [[§C6d.2 Contractions with External Fermions]] →
 
 *Sources: PHY 513 Lecture 17 (Larsen, 4 Nov 2026, "Yukawa Theory"), slides 2, 5–8 (Part A), 26–28 (Part C), and transcript · the user's PHY 513 notes, Lecture 17 update, §17.1 (paragraph "Why fermions bring nothing new to the derivation"), §17.2 (Definition "Yukawa theory", paragraph "Filled in: $H_I = -L_I$ and the dimension of $g$", Principle "The Yukawa vertex", paragraph "The arrows", Figure "yukvertex") · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.1, p. 79, eq. (4.9), p. 80 (renormalizable interactions); §4.7, p. 115 ("Lorentz invariance requires that the interaction Hamiltonian $H_I$ be a product of an even number of spinor fields"), p. 116, eq. (4.112); p. 120 ("the product $(\bar\psi\psi)$, or any other pair of fermions, *commutes* with any operator") · Yu Zhao-Huan, 量子场论讲义, §7.1, eqs. (7.1)–(7.5), (7.28), pp. 265–267 (fermion lines and fermion-number flow).*
 

@@ -34355,7 +34355,7 @@ The six-dimensional space $\Lambda^2 (\mathbb{R}^4)^*$ is the one that appears i
 
 \roadmark{Stage: forms}{Multiplying a $k$-form and an $l$-form into a $(k + l)$-form, by signed shuffles; bilinear, associative, graded anticommutative.}
 
-\textit{(Lecture 29.)} The wedge in $dx^i \wedge dx^j$ has been written many times (Definition~\ref{def:dx-wedge-dx}), but as an operation it has not been defined. This section defines it: a product that takes a $k$-form $\alpha$ and an $l$-form $\beta$ on $V$ (Definition~\ref{def:lambda-k}) to a $(k + l)$-form $\alpha \wedge \beta$. The forms of all degrees with this product make up the \emph{Grassmann algebra} of $V$ (Lee: the exterior algebra). It was developed in the 19th century, and brought into its present form, for differential forms, by \'Elie Cartan in the first half of the 20th century. Throughout, $V$ is an $m$-dimensional real vector space and $k, l \ge 0$.
+\textit{(Lectures 29 and 30.)} The wedge in $dx^i \wedge dx^j$ has been written many times (Definition~\ref{def:dx-wedge-dx}), but as an operation it has not been defined. This section defines it: a product that takes a $k$-form $\alpha$ and an $l$-form $\beta$ on $V$ (Definition~\ref{def:lambda-k}) to a $(k + l)$-form $\alpha \wedge \beta$. The forms of all degrees with this product make up the \emph{Grassmann algebra} of $V$ (Lee: the exterior algebra). It was developed in the 19th century, and brought into its present form, for differential forms, by \'Elie Cartan in the first half of the 20th century. Throughout, $V$ is an $m$-dimensional real vector space and $k, l \ge 0$.
 
 \begin{defbox}[Shuffles]\deflabel{def:shuffle}
 For $k, l \ge 0$, a \textbf{$(k, l)$-shuffle} is a permutation $\sigma \in S_{k+l}$ (Definition~\ref{def:symmetric-group}) with
@@ -34396,7 +34396,9 @@ The name comes from shuffling a deck of cards. Put $k$ cards on the left and $l$
 \end{tikzpicture}
 \end{center}
 
-\textit{(Not from lecture; figure added.)} One $(2, 3)$-shuffle, $\sigma = (2, 4, 1, 3, 5)$ in one-line notation ($\sigma(1) = 2$, $\sigma(2) = 4$, $\sigma(3) = 1$, $\sigma(4) = 3$, $\sigma(5) = 5$): the cards $1, 2$ of the first pile land in places $2, 4$, the cards $3, 4, 5$ of the second pile in places $1, 3, 5$, each pile keeping its order. It has three inversions (Definition~\ref{def:sgn}), the pairs $(1, 3)$, $(2, 3)$ and $(2, 4)$, so $\sgn(\sigma) = -1$. In the picture the inversions are the crossings: two arrows cross exactly when the card that starts further left lands further right, and for a shuffle only a red arrow and a blue arrow can cross.
+\textit{(Figure added after Lecture~29; Lecture~30 drew this same shuffle on the board.)} One $(2, 3)$-shuffle, $\sigma = (2, 4, 1, 3, 5)$ in one-line notation ($\sigma(1) = 2$, $\sigma(2) = 4$, $\sigma(3) = 1$, $\sigma(4) = 3$, $\sigma(5) = 5$): the cards $1, 2$ of the first pile land in places $2, 4$, the cards $3, 4, 5$ of the second pile in places $1, 3, 5$, each pile keeping its order. It has three inversions (Definition~\ref{def:sgn}), the pairs $(1, 3)$, $(2, 3)$ and $(2, 4)$, so $\sgn(\sigma) = -1$. In the picture the inversions are the crossings: two arrows cross exactly when the card that starts further left lands further right, and for a shuffle only a red arrow and a blue arrow can cross.
+
+\textit{(Lecture~30.)} A shuffle is built in two steps, here for $k = 2$ and $l = 3$. First choose $\sigma(1) < \sigma(2)$: any two of the five places, for instance $2$ and $4$ (the choice $\sigma(1) = 5$ is impossible, because it leaves no place for $\sigma(2)$). Then $\sigma(3) < \sigma(4) < \sigma(5)$ have to be the three remaining places in increasing order, and there is no choice left. In the picture, the shuffle condition says that two arrows of the same colour do not cross. Choosing a shuffle is therefore choosing the $k$ places of the first pile, which gives the count $\binom{k+l}{k}$ of Lemma~\ref{lem:shuffle-factorization}(2).
 
 \begin{lembox}[Shuffles and the Subgroup $S_k \times S_l$]\thmlabel{lem:shuffle-factorization}
 Let $S_k \times S_l \subseteq S_{k+l}$ denote the set of permutations $\rho$ with $\rho(\{1, \ldots, k\}) = \{1, \ldots, k\}$. Such a $\rho$ permutes $\{1, \ldots, k\}$ by some $\tau \in S_k$ and $\{k+1, \ldots, k+l\}$ by $\rho(k + j) = k + \tau'(j)$ for some $\tau' \in S_l$.
@@ -34411,7 +34413,7 @@ Let $S_k \times S_l \subseteq S_{k+l}$ denote the set of permutations $\rho$ wit
 \end{lembox}
 
 \begin{proof}
-\textit{(Not from lecture; filled in.)} Write $n = k + l$, $I = \{1, \ldots, k\}$ and $J = \{k+1, \ldots, n\}$.
+\textit{(Lecture~30 gave (2) with the picture above, and stated (3) as a claim, in the form $\sigma = s \circ (\lambda \oplus \tau)$ of the remark \emph{Notation of Lecture 30} below, with Example~\ref{ex:factor-permutation} in place of a proof. The proofs are filled in.)} Write $n = k + l$, $I = \{1, \ldots, k\}$ and $J = \{k+1, \ldots, n\}$.
 
 (1) If $\rho(I) = I$ then also $\rho(J) = J$, because $\rho$ is a bijection of $I \cup J$. If $\rho$ and $\rho'$ map $I$ onto $I$, so do $\rho \circ \rho'$ and $\rho^{-1}$, and so does the identity: $S_k \times S_l$ is a subgroup. The element $\rho$ is determined by the pair $(\tau, \tau')$, and every pair occurs, so there are $k!\, l!$ elements. For the sign, count inversions (Definition~\ref{def:sgn}). A pair $i < j$ with $i \in I$ and $j \in J$ is not an inversion of $\rho$, since $\rho(i) \le k < \rho(j)$. The inversions with $i, j \in I$ are the inversions of $\tau$, and those with $i, j \in J$ correspond to the inversions of $\tau'$. So the number of inversions of $\rho$ is the sum of those of $\tau$ and $\tau'$, and $\sgn(\rho) = \sgn(\tau)\sgn(\tau')$.
 
@@ -34421,6 +34423,78 @@ Let $S_k \times S_l \subseteq S_{k+l}$ denote the set of permutations $\rho$ wit
 \end{proof}
 
 By~(3) the shuffles are a set of representatives for the left cosets $\sigma \circ (S_k \times S_l)$ of the subgroup $S_k \times S_l$, one in each coset. The count agrees: $(k+l)! = \binom{k+l}{k} \cdot k!\, l!$.
+
+\begin{rembox}[Notation of Lecture 30]\label{rem:notation-lecture-30}
+Lecture~30 returned to shuffles and the wedge product with letters different from the ones used here. The dictionary between the board and these notes, in addition to the remark \emph{Notation in This Section} in \ref{sec:multilinear}:
+\begin{itemize}[nosep]
+\item \emph{Shuffles and permutations.} The board writes $s$ for a shuffle, $\sigma$ for a general permutation in $S_{k+l}$, and $\lambda \in S_k$, $\tau \in S_l$ for permutations of the two blocks. These notes write $\sigma$ for a shuffle, $\pi$ for a general permutation, and $\tau \in S_k$, $\tau' \in S_l$ (Lemma~\ref{lem:shuffle-factorization}).
+\item \emph{The direct sum.} For $\lambda \in S_k$ and $\tau \in S_l$ the board defines $\lambda \oplus \tau \in S_{k+l}$ by $(\lambda \oplus \tau)(j) = \lambda(j)$ for $1 \le j \le k$ and $(\lambda \oplus \tau)(j) = \tau(j - k) + k$ for $k + 1 \le j \le k + l$. It is the element $\rho$ of $S_k \times S_l$ that acts by $\lambda$ on the first block and by $\tau$ on the second, in the sense of Lemma~\ref{lem:shuffle-factorization}; so the board's factorization $\sigma = s \circ (\lambda \oplus \tau)$ is $\pi = \sigma \circ \rho$ here.
+\item \emph{One-line notation.} The board lists the images in order in square brackets, $[\sigma(1), \sigma(2), \ldots]$; this is not cycle notation. These notes use round brackets, with a bar after the first $k$ entries when the two blocks matter.
+\item \emph{Signs and sets.} $(-1)^s$ is $\sgn(s)$; the board writes both $\mathrm{Sh}(k, l)$ and $S(k, l)$ for the set of shuffles, and $\Lambda^k$ for $\Lambda^k V^*$.
+\item \emph{Multilinear maps.} The board's $\psi$ is the multilinear map $T$ of Definition~\ref{def:skew-symmetrizer}, its $(V^*)^{\otimes n}$ is the space of all multilinear maps $V^n \to \mathbb{R}$, its \emph{antisymmetrizer} $A$ is the skew-symmetrizer $\mathcal{A}$, and its vectors carry lower labels, $v_1, v_2, \ldots$
+\end{itemize}
+\end{rembox}
+
+\begin{exbox}[Factoring a Permutation]\exlabel{ex:factor-permutation}
+\textit{(Lecture~30, as an example of Lemma~\ref{lem:shuffle-factorization}(3); in the letters of these notes.)} Take $k = 2$, $l = 3$ and
+\[
+\pi = (4, 2 \mid 1, 5, 3), \qquad \text{that is,} \quad \pi(1) = 4,\ \pi(2) = 2,\ \pi(3) = 1,\ \pi(4) = 5,\ \pi(5) = 3 ,
+\]
+which is not a shuffle, since $\pi(1) > \pi(2)$.
+
+\emph{The shuffle.} By the proof of Lemma~\ref{lem:shuffle-factorization}(3), $\sigma$ is the shuffle with $\sigma(\{1, 2\}) = \pi(\{1, 2\}) = \{2, 4\}$: put each block of values of $\pi$ in increasing order,
+\[
+\sigma = (2, 4 \mid 1, 3, 5) .
+\]
+
+\emph{The block permutation.} $\rho = \sigma^{-1} \circ \pi$ is found entry by entry from $\pi(j) = \sigma(\rho(j))$: $\pi(1) = 4 = \sigma(2)$ gives $\rho(1) = 2$; $\pi(2) = 2 = \sigma(1)$ gives $\rho(2) = 1$; $\pi(3) = 1 = \sigma(3)$ gives $\rho(3) = 3$; $\pi(4) = 5 = \sigma(5)$ gives $\rho(4) = 5$; and $\pi(5) = 3 = \sigma(4)$ gives $\rho(5) = 4$. So
+\[
+\rho = (2, 1 \mid 3, 5, 4) ,
+\]
+which permutes $\{1, 2\}$ by $\tau = (2, 1) \in S_2$ and $\{3, 4, 5\}$ by $\rho(2 + j) = 2 + \tau'(j)$ with $\tau' = (1, 3, 2) \in S_3$. That $\rho$ preserves the two blocks is forced: $\sigma$ and $\pi$ send the first block to the same set $\{2, 4\}$.
+
+\emph{The signs.} $\sigma$ is the shuffle of the figure after Definition~\ref{def:shuffle}, with three inversions, so $\sgn(\sigma) = -1$; and $\sgn(\rho) = \sgn(\tau)\,\sgn(\tau') = (-1)(-1) = 1$ (Lemma~\ref{lem:shuffle-factorization}(1)). Hence $\sgn(\pi) = -1$, in agreement with the five inversions of $\pi$: the pairs of positions $(1, 2)$, $(1, 3)$, $(1, 5)$, $(2, 3)$ and $(4, 5)$.
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\node[circle, draw=red!70!black, inner sep=1.5pt, font=\scriptsize] (n01) at (0.00,3.0) {$1$};
+\node[circle, draw=red!70!black, inner sep=1.5pt, font=\scriptsize] (n02) at (1.10,3.0) {$2$};
+\node[circle, draw=blue!70!black, inner sep=1.5pt, font=\scriptsize] (n03) at (2.20,3.0) {$3$};
+\node[circle, draw=blue!70!black, inner sep=1.5pt, font=\scriptsize] (n04) at (3.30,3.0) {$4$};
+\node[circle, draw=blue!70!black, inner sep=1.5pt, font=\scriptsize] (n05) at (4.40,3.0) {$5$};
+\node[circle, draw=red!70!black, inner sep=1.5pt, font=\scriptsize] (n11) at (0.00,1.5) {$1$};
+\node[circle, draw=red!70!black, inner sep=1.5pt, font=\scriptsize] (n12) at (1.10,1.5) {$2$};
+\node[circle, draw=blue!70!black, inner sep=1.5pt, font=\scriptsize] (n13) at (2.20,1.5) {$3$};
+\node[circle, draw=blue!70!black, inner sep=1.5pt, font=\scriptsize] (n14) at (3.30,1.5) {$4$};
+\node[circle, draw=blue!70!black, inner sep=1.5pt, font=\scriptsize] (n15) at (4.40,1.5) {$5$};
+\node[circle, draw=black, inner sep=1.5pt, font=\scriptsize] (n21) at (0.00,0.0) {$1$};
+\node[circle, draw=black, inner sep=1.5pt, font=\scriptsize] (n22) at (1.10,0.0) {$2$};
+\node[circle, draw=black, inner sep=1.5pt, font=\scriptsize] (n23) at (2.20,0.0) {$3$};
+\node[circle, draw=black, inner sep=1.5pt, font=\scriptsize] (n24) at (3.30,0.0) {$4$};
+\node[circle, draw=black, inner sep=1.5pt, font=\scriptsize] (n25) at (4.40,0.0) {$5$};
+\draw[->, red!70!black, thick] (n01) -- (n12);
+\draw[->, red!70!black, thick] (n12) -- (n24);
+\draw[->, red!70!black, thick] (n02) -- (n11);
+\draw[->, red!70!black, thick] (n11) -- (n22);
+\draw[->, blue!70!black, thick] (n03) -- (n13);
+\draw[->, blue!70!black, thick] (n13) -- (n21);
+\draw[->, blue!70!black, thick] (n04) -- (n15);
+\draw[->, blue!70!black, thick] (n15) -- (n25);
+\draw[->, blue!70!black, thick] (n05) -- (n14);
+\draw[->, blue!70!black, thick] (n14) -- (n23);
+\draw[orange!85!black, dashed] (1.65,3.4) -- (1.65,1.1);
+\node[font=\scriptsize, anchor=west] at (5.0,2.25) {$\rho = (2, 1 \mid 3, 5, 4)$: permutes each block};
+\node[font=\scriptsize, anchor=west] at (5.0,0.75) {$\sigma = (2, 4 \mid 1, 3, 5)$: a shuffle (arrows of one colour do not cross)};
+\node[font=\scriptsize, anchor=west] at (5.0,-0.45) {$\pi = \sigma \circ \rho = (4, 2 \mid 1, 5, 3)$};
+\node[font=\scriptsize, anchor=east] at (-0.4,3.0) {$j$};
+\node[font=\scriptsize, anchor=east] at (-0.4,1.5) {$\rho(j)$};
+\node[font=\scriptsize, anchor=east] at (-0.4,0.0) {$\pi(j)$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Example~\ref{ex:factor-permutation} as two layers of arrows: first $\rho$, which stays on its side of the dashed line, then the shuffle $\sigma$. Following the arrows from the top row to the bottom row gives $\pi$.
+%% <<< END ADDED
 
 \begin{exbox}[Shuffles Do Not Form a Subgroup]\exlabel{ex:shuffles-not-subgroup}
 \textit{(Lecture~29: a student asked whether $\mathrm{Sh}(k, l)$ is a subgroup of $S_{k+l}$ isomorphic to $S_k \times S_l$. It is not; the example is filled in.)} Take $k = 1$ and $l = 2$. The only condition on a $(1, 2)$-shuffle is $\sigma(2) < \sigma(3)$, and in one-line notation $(\sigma(1), \sigma(2), \sigma(3))$,
@@ -34447,7 +34521,7 @@ Degrees add under multiplication, as a degree should. Each term of the sum hands
 
 \textbf{Transcription note (Lecture 29).} The board wrote $(-1)^\sigma$ for $\sgn(\sigma)$, lower labels $v_{\sigma(1)}, \ldots$ for the vectors, and $r_{\sigma(1)}, \ldots, r_{\sigma(k)}$ in the entries of $\alpha$, which are $v^{\sigma(1)}, \ldots, v^{\sigma(k)}$.
 
-One can also sum over all permutations of $\{1, \ldots, k+l\}$ instead of the shuffles, but then there are many repetitions: in each term the entries of $\alpha$, and those of $\beta$, can be put into increasing order at the price of a sign. This, and the algebraic meaning of the formula, are made precise next. The lecture presented the algebraic description for conceptual understanding only; it is not used in computations.
+One can also sum over all permutations of $\{1, \ldots, k+l\}$ instead of the shuffles, but then there are many repetitions: in each term the entries of $\alpha$, and those of $\beta$, can be put into increasing order at the price of a sign. This, and the algebraic meaning of the formula, are made precise next. Lecture~29 presented the algebraic description for conceptual understanding only; it is not used in computations. Lecture~30 returned to it to answer a question left from Lecture~29: why is $\alpha \wedge \beta$ alternating, which the shuffle formula does not show at a glance? The answer is Proposition~\ref{prop:wedge-all-permutations}: the shuffle sum is a multiple of the skew-symmetrization of $\alpha \otimes \beta$, and a skew-symmetrization is always alternating.
 
 \begin{defbox}[Tensor Product of Multilinear Maps]\deflabel{def:tensor-product-multilinear}
 Let $S : V^k \to \mathbb{R}$ and $T : V^l \to \mathbb{R}$ be multilinear. Their \textbf{tensor product} is the map $S \otimes T : V^{k+l} \to \mathbb{R}$,
@@ -34472,7 +34546,7 @@ The \textbf{skew-symmetrizer} is the map $\mathcal{A}$ that sends $T$ to
 \leeref{Ch.~14, \emph{The Algebra of Alternating Tensors}}
 \end{defbox}
 
-\textit{(Lecture~29 named the map and described it as the natural projection onto the completely antisymmetric maps, without writing the formula; the formula is filled in. Lee calls it alternation and writes $\operatorname{Alt}$.)} Each $T^\pi$ is multilinear, so $\mathcal{A}(T)$ is multilinear, and $\mathcal{A}$ is a linear map from the space of multilinear maps $V^n \to \mathbb{R}$ to itself.
+\textit{(Lecture~29 named the map and described it as the natural projection onto the completely antisymmetric maps; Lecture~30 wrote the formula, in the letters of the remark \emph{Notation of Lecture 30}, and called the map the antisymmetrizer. Lee calls it alternation and writes $\operatorname{Alt}$.)} Each $T^\pi$ is multilinear, so $\mathcal{A}(T)$ is multilinear, and $\mathcal{A}$ is a linear map from the space of multilinear maps $V^n \to \mathbb{R}$ to itself.
 
 \begin{lembox}[The Skew-Symmetrizer Projects onto the Forms]\thmlabel{lem:skew-symmetrizer}
 Let $T : V^n \to \mathbb{R}$ be multilinear and $\mathcal{A}$ the skew-symmetrizer (Definition~\ref{def:skew-symmetrizer}).
@@ -34485,7 +34559,7 @@ So $\mathcal{A}$ is a linear projection of the space of multilinear maps $V^n \t
 \end{lembox}
 
 \begin{proof}
-\textit{(Not proved in lecture; filled in.)} \emph{A rule for rearranging twice.} For $\pi, \mu \in S_n$, $(T^\pi)^\mu = T^{\mu \circ \pi}$. Indeed, put $w^i = v^{\mu(i)}$; then
+\textit{(Lecture~30 proved (1), by the change of variables in the sum used below, and observed (2). The rule for rearranging twice is added to keep track of the order of composition.)} \emph{A rule for rearranging twice.} For $\pi, \mu \in S_n$, $(T^\pi)^\mu = T^{\mu \circ \pi}$. Indeed, put $w^i = v^{\mu(i)}$; then
 \[
 \begin{aligned}
 (T^\pi)^\mu(v^1, \ldots, v^n) &= T^\pi(w^1, \ldots, w^n) = T\big(w^{\pi(1)}, \ldots, w^{\pi(n)}\big) \\
@@ -34504,6 +34578,12 @@ the last step holds because $\pi \mapsto \mu \circ \pi$ is a bijection of $S_n$,
 \emph{The projection.} By~(1) the image of $\mathcal{A}$ lies in $\Lambda^n V^*$, and by~(2) every element of $\Lambda^n V^*$ is its own image. Applying~(2) to the alternating map $\mathcal{A}(T)$ gives $\mathcal{A}(\mathcal{A}(T)) = \mathcal{A}(T)$.
 \end{proof}
 
+\textbf{Transcription note (Lecture 30).} On the board the proof of (1) reads: for $\tau \in S_n$,
+\[
+A(\psi)(v_{\tau(1)}, \ldots, v_{\tau(n)}) = \frac{1}{n!} \sum_\sigma (-1)^\sigma\, \psi(v_{\sigma(\tau(1))}, \ldots, v_{\sigma(\tau(n))}) ;
+\]
+then $\mu = \sigma \circ \tau$ is substituted, with $(-1)^{\mu \circ \tau^{-1}} = (-1)^\mu (-1)^\tau$, and the sum over $\mu$ gives $(-1)^\tau A(\psi)(v_1, \ldots, v_n)$. The subscripts compose in the other order: with $w_i = v_{\tau(i)}$ one has $w_{\sigma(i)} = v_{\tau(\sigma(i))}$, so the substitution is $\mu = \tau \circ \sigma$, which is the rule $(T^\pi)^\mu = T^{\mu \circ \pi}$ of the proof above. The argument is not affected: $\sigma \mapsto \tau \circ \sigma$ is also a bijection of $S_n$, and $\sgn(\tau \circ \sigma) = \sgn(\tau)\,\sgn(\sigma)$.
+
 \begin{propbox}[The Wedge Product as a Skew-Symmetrized Tensor Product]\thmlabel{prop:wedge-all-permutations}
 Let $\alpha \in \Lambda^k V^*$ and $\beta \in \Lambda^l V^*$.
 \begin{enumerate}[nosep]
@@ -34521,7 +34601,7 @@ Let $\alpha \in \Lambda^k V^*$ and $\beta \in \Lambda^l V^*$.
 \end{propbox}
 
 \begin{proof}
-\textit{((1) was stated in Lecture~29, and (2) in the form $\alpha \wedge \beta = \mathcal{A}(\alpha \otimes \beta)$; the proofs and the factor in (2) are filled in.)} Write $n = k + l$.
+\textit{((1) was stated in Lecture~29, and (2) in the form $\alpha \wedge \beta = \mathcal{A}(\alpha \otimes \beta)$. Lecture~30 stated (2) with its factor, as the lemma $A(\alpha \otimes \beta) = \frac{k!\, l!}{(k+l)!}\, \alpha \wedge \beta$, and proved it in outline by the factorization of Lemma~\ref{lem:shuffle-factorization}(3). This is that proof with the details filled in; in the board's letters, $\pi, \sigma, \tau, \tau'$ below are $\sigma, s, \lambda, \tau$.)} Write $n = k + l$.
 
 (1) Let $\pi \in S_n$ and factor it as $\pi = \sigma \circ \rho$ with $\sigma \in \mathrm{Sh}(k, l)$ and $\rho \in S_k \times S_l$ (Lemma~\ref{lem:shuffle-factorization}(3)), where $\rho$ acts by $\tau \in S_k$ on $\{1, \ldots, k\}$ and by $\rho(k + j) = k + \tau'(j)$, $\tau' \in S_l$. Put $u^i = v^{\sigma(i)}$ for $i \le k$ and $w^j = v^{\sigma(k + j)}$ for $j \le l$. Then $v^{\pi(i)} = v^{\sigma(\tau(i))} = u^{\tau(i)}$ and $v^{\pi(k + j)} = v^{\sigma(k + \tau'(j))} = w^{\tau'(j)}$, and by Lemma~\ref{lem:k-form-permutation}, applied to $\alpha$ and to $\beta$,
 \[
@@ -34542,7 +34622,7 @@ By the uniqueness of the factorization, the permutations $\pi$ with a given shuf
 \end{proof}
 
 \begin{rembox}[Two Conventions for the Wedge Product]\label{rem:wedge-conventions}
-The board wrote $\alpha \wedge \beta = \mathcal{A}(\alpha \otimes \beta)$: take the tensor product, then its skew-symmetric part. With $\mathcal{A}$ normalized as a projection (Lemma~\ref{lem:skew-symmetrizer}), this holds up to the factor $\binom{k+l}{k}$ of Proposition~\ref{prop:wedge-all-permutations}(2). Lee defines the wedge product by the formula with the factor and calls this the \emph{determinant convention}: the factor is what makes $\varepsilon^{a_1} \wedge \cdots \wedge \varepsilon^{a_k}$ equal to the determinant $\varepsilon^A$ with no factorials (Proposition~\ref{prop:wedge-properties}(4)), and it is the convention of the shuffle formula of Definition~\ref{def:wedge-product}, which has no factorials at all. Some books, for example Kobayashi--Nomizu, define the product as $\mathcal{A}(\alpha \otimes \beta)$ without the factor (the \emph{Alt convention}); their wedge product differs from this one by the constant $\binom{k+l}{k}$.
+The board of Lecture~29 wrote $\alpha \wedge \beta = \mathcal{A}(\alpha \otimes \beta)$: take the tensor product, then its skew-symmetric part. With $\mathcal{A}$ normalized as a projection (Lemma~\ref{lem:skew-symmetrizer}), this holds up to the factor $\binom{k+l}{k}$ of Proposition~\ref{prop:wedge-all-permutations}(2). Lee defines the wedge product by the formula with the factor and calls this the \emph{determinant convention}: the factor is what makes $\varepsilon^{a_1} \wedge \cdots \wedge \varepsilon^{a_k}$ equal to the determinant $\varepsilon^A$ with no factorials (Proposition~\ref{prop:wedge-properties}(4)), and it is the convention of the shuffle formula of Definition~\ref{def:wedge-product}, which has no factorials at all. Some books, for example Kobayashi--Nomizu, define the product as $\mathcal{A}(\alpha \otimes \beta)$ without the factor (the \emph{Alt convention}); their wedge product differs from this one by the constant $\binom{k+l}{k}$. Lecture~30 wrote the relation with its factor, $A(\alpha \otimes \beta) = \frac{k!\, l!}{(k+l)!}\, \alpha \wedge \beta$, which is Proposition~\ref{prop:wedge-all-permutations}(2).
 \end{rembox}
 
 \begin{exbox}[The Wedge of Two One-Forms]\exlabel{ex:wedge-one-forms}
@@ -34553,7 +34633,7 @@ Let $k = l = 1$, so $\alpha, \beta \in V^*$. The group $S_2$ has two elements, t
 \leeref{Ch.~14, \emph{The Wedge Product}}
 \end{exbox}
 
-This is the formula of Lecture~28: for $\alpha = dx^i$ and $\beta = dx^j$ on $\mathbb{R}^3$ it gives $(dx^i \wedge dx^j)(u, v) = u^i v^j - u^j v^i$, which is Definition~\ref{def:dx-wedge-dx}. So the two-form named $dx^i \wedge dx^j$ there is the wedge product of the one-forms $dx^i$ and $dx^j$. This case of the wedge product is the one used most often. The next case, $k = 1$ and $l = 2$, is left for Lecture~30.
+This is the formula of Lecture~28: for $\alpha = dx^i$ and $\beta = dx^j$ on $\mathbb{R}^3$ it gives $(dx^i \wedge dx^j)(u, v) = u^i v^j - u^j v^i$, which is Definition~\ref{def:dx-wedge-dx}. So the two-form named $dx^i \wedge dx^j$ there is the wedge product of the one-forms $dx^i$ and $dx^j$. This case of the wedge product is the one used most often. The next case, $k = 1$ and $l = 2$, is Example~\ref{ex:wedge-one-two}.
 
 %% >>> ADDED: figure (not from lecture)
 \begin{center}
@@ -34622,6 +34702,82 @@ This is the formula of Lecture~28: for $\alpha = dx^i$ and $\beta = dx^j$ on $\m
 \end{center}
 \textit{(Not from lecture; figure added.)} Example~\ref{ex:wedge-one-forms} as an area, for the covectors $\alpha(x) = 0.9\, x^1 + 0.3\, x^2$ and $\beta(x) = -0.35\, x^1 + 0.85\, x^2$ on $V = \mathbb{R}^2$. Left: the level lines $\alpha = 0, 1, 2, \ldots$ (blue) and $\beta = 0, 1, 2, \ldots$ (red) cut $V$ into cells; the cell $0 \le \alpha \le 1$, $0 \le \beta \le 1$ is shaded grey. Right: the linear map $v \mapsto (\alpha(v), \beta(v))$ sends the cells to the unit squares of the $(\alpha, \beta)$-plane, and the vectors $v^1, v^2$ to $(\alpha(v^1), \beta(v^1)) = (2, 0.5)$ and $(\alpha(v^2), \beta(v^2)) = (0.5, 1.5)$. The determinant $(\alpha \wedge \beta)(v^1, v^2) = 2 \cdot 1.5 - 0.5 \cdot 0.5 = 2.75$ is the signed area of the parallelogram on the right, which is the area of the parallelogram spanned by $v^1$ and $v^2$ on the left measured in cells of the grid (orange). Exchanging $v^1$ and $v^2$ reverses the orientation and the sign.
 %% <<< END ADDED
+
+\begin{exbox}[The Wedge of a One-Form and a Two-Form]\exlabel{ex:wedge-one-two}
+\textit{(Lecture~30.)} Let $\alpha \in V^*$ ($k = 1$) and $\beta \in \Lambda^2 V^*$ ($l = 2$). A $(1, 2)$-shuffle is determined by $\sigma(1)$, which can be any of $1, 2, 3$; the other two values then follow in increasing order. With their signs, the $(1, 2)$-shuffles are
+\[
+(1 \mid 2, 3)\ {+}, \qquad (2 \mid 1, 3)\ {-}, \qquad (3 \mid 1, 2)\ {+}
+\]
+(Example~\ref{ex:shuffles-not-subgroup}): the second is a transposition, and the third has the two inversions formed by its first entry with the second and with the third. So Definition~\ref{def:wedge-product} gives
+\[
+(\alpha \wedge \beta)(v^1, v^2, v^3) = \alpha(v^1)\,\beta(v^2, v^3) - \alpha(v^2)\,\beta(v^1, v^3) + \alpha(v^3)\,\beta(v^1, v^2) .
+\]
+Now let $\beta$ itself be a wedge product of two one-forms, $\beta = \gamma \wedge \delta$ with $\gamma, \delta \in V^*$. By Example~\ref{ex:wedge-one-forms}, $\beta(v, w)$ is the $2 \times 2$ determinant with rows $(\gamma(v), \gamma(w))$ and $(\delta(v), \delta(w))$, and the three terms are the expansion of a $3 \times 3$ determinant along its top row:
+\[
+\big(\alpha \wedge (\gamma \wedge \delta)\big)(v^1, v^2, v^3) = \det \begin{pmatrix} \alpha(v^1) & \alpha(v^2) & \alpha(v^3) \\ \gamma(v^1) & \gamma(v^2) & \gamma(v^3) \\ \delta(v^1) & \delta(v^2) & \delta(v^3) \end{pmatrix} .
+\]
+Indeed, in that expansion the entry $\alpha(v^j)$ of the top row is multiplied by $(-1)^{1+j}$ and by the $2 \times 2$ minor left after deleting the top row and the $j$-th column, which is $\beta$ evaluated on the two vectors other than $v^j$. The general statement is Lemma~\ref{lem:wedge-one-forms-det}.
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\fill[orange!25, rounded corners=1.5pt] (-0.470,-0.230) rectangle (0.470,0.230);
+\fill[blue!70!black!14, rounded corners=1.5pt] (0.550,-1.330) rectangle (1.490,-0.320);
+\fill[blue!70!black!14, rounded corners=1.5pt] (1.570,-1.330) rectangle (2.510,-0.320);
+\node[font=\scriptsize, text=black] at (0.000,0.000) {$\alpha(v^{1})$};
+\node[font=\scriptsize, text=gray!55] at (1.020,0.000) {$\alpha(v^{2})$};
+\node[font=\scriptsize, text=gray!55] at (2.040,0.000) {$\alpha(v^{3})$};
+\node[font=\scriptsize, text=gray!55] at (0.000,-0.550) {$\gamma(v^{1})$};
+\node[font=\scriptsize, text=black] at (1.020,-0.550) {$\gamma(v^{2})$};
+\node[font=\scriptsize, text=black] at (2.040,-0.550) {$\gamma(v^{3})$};
+\node[font=\scriptsize, text=gray!55] at (0.000,-1.100) {$\delta(v^{1})$};
+\node[font=\scriptsize, text=black] at (1.020,-1.100) {$\delta(v^{2})$};
+\node[font=\scriptsize, text=black] at (2.040,-1.100) {$\delta(v^{3})$};
+\draw[thick] (-0.580,0.330) .. controls (-0.720,-0.070) and (-0.720,-1.030) .. (-0.580,-1.430);
+\draw[thick] (2.620,0.330) .. controls (2.760,-0.070) and (2.760,-1.030) .. (2.620,-1.430);
+\node[font=\scriptsize, text=green!40!black] at (1.020,-1.810) {$+\,\alpha(v^{1})\,\beta(v^{2}, v^{3})$};
+\node[font=\tiny, gray!70!black] at (1.020,-2.210) {shuffle $\sigma = (1 \mid 2, 3)$, $\sgn(\sigma) = + 1$};
+\fill[orange!25, rounded corners=1.5pt] (5.100,-0.230) rectangle (6.040,0.230);
+\fill[blue!70!black!14, rounded corners=1.5pt] (4.080,-1.330) rectangle (5.020,-0.320);
+\fill[blue!70!black!14, rounded corners=1.5pt] (6.120,-1.330) rectangle (7.060,-0.320);
+\node[font=\scriptsize, text=gray!55] at (4.550,0.000) {$\alpha(v^{1})$};
+\node[font=\scriptsize, text=black] at (5.570,0.000) {$\alpha(v^{2})$};
+\node[font=\scriptsize, text=gray!55] at (6.590,0.000) {$\alpha(v^{3})$};
+\node[font=\scriptsize, text=black] at (4.550,-0.550) {$\gamma(v^{1})$};
+\node[font=\scriptsize, text=gray!55] at (5.570,-0.550) {$\gamma(v^{2})$};
+\node[font=\scriptsize, text=black] at (6.590,-0.550) {$\gamma(v^{3})$};
+\node[font=\scriptsize, text=black] at (4.550,-1.100) {$\delta(v^{1})$};
+\node[font=\scriptsize, text=gray!55] at (5.570,-1.100) {$\delta(v^{2})$};
+\node[font=\scriptsize, text=black] at (6.590,-1.100) {$\delta(v^{3})$};
+\draw[thick] (3.970,0.330) .. controls (3.830,-0.070) and (3.830,-1.030) .. (3.970,-1.430);
+\draw[thick] (7.170,0.330) .. controls (7.310,-0.070) and (7.310,-1.030) .. (7.170,-1.430);
+\node[font=\scriptsize, text=red!70!black] at (5.570,-1.810) {$-\,\alpha(v^{2})\,\beta(v^{1}, v^{3})$};
+\node[font=\tiny, gray!70!black] at (5.570,-2.210) {shuffle $\sigma = (2 \mid 1, 3)$, $\sgn(\sigma) = - 1$};
+\fill[orange!25, rounded corners=1.5pt] (10.670,-0.230) rectangle (11.610,0.230);
+\fill[blue!70!black!14, rounded corners=1.5pt] (8.630,-1.330) rectangle (9.570,-0.320);
+\fill[blue!70!black!14, rounded corners=1.5pt] (9.650,-1.330) rectangle (10.590,-0.320);
+\node[font=\scriptsize, text=gray!55] at (9.100,0.000) {$\alpha(v^{1})$};
+\node[font=\scriptsize, text=gray!55] at (10.120,0.000) {$\alpha(v^{2})$};
+\node[font=\scriptsize, text=black] at (11.140,0.000) {$\alpha(v^{3})$};
+\node[font=\scriptsize, text=black] at (9.100,-0.550) {$\gamma(v^{1})$};
+\node[font=\scriptsize, text=black] at (10.120,-0.550) {$\gamma(v^{2})$};
+\node[font=\scriptsize, text=gray!55] at (11.140,-0.550) {$\gamma(v^{3})$};
+\node[font=\scriptsize, text=black] at (9.100,-1.100) {$\delta(v^{1})$};
+\node[font=\scriptsize, text=black] at (10.120,-1.100) {$\delta(v^{2})$};
+\node[font=\scriptsize, text=gray!55] at (11.140,-1.100) {$\delta(v^{3})$};
+\draw[thick] (8.520,0.330) .. controls (8.380,-0.070) and (8.380,-1.030) .. (8.520,-1.430);
+\draw[thick] (11.720,0.330) .. controls (11.860,-0.070) and (11.860,-1.030) .. (11.720,-1.430);
+\node[font=\scriptsize, text=green!40!black] at (10.120,-1.810) {$+\,\alpha(v^{3})\,\beta(v^{1}, v^{2})$};
+\node[font=\tiny, gray!70!black] at (10.120,-2.210) {shuffle $\sigma = (3 \mid 1, 2)$, $\sgn(\sigma) = + 1$};
+\node[font=\tiny, text=orange!85!black, anchor=west] at (-0.500,0.720) {orange: the entry $\alpha(v^{\sigma(1)})$ of the top row};
+\node[font=\tiny, text=blue!70!black, anchor=west] at (5.200,0.720) {blue: the complementary minor $\beta(v^{\sigma(2)}, v^{\sigma(3)})$, $\beta = \gamma \wedge \delta$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Example~\ref{ex:wedge-one-two} for $\beta = \gamma \wedge \delta$: the three terms of $(\alpha \wedge \beta)(v^1, v^2, v^3)$, one for each $(1, 2)$-shuffle, are the three terms of the expansion of the $3 \times 3$ determinant along its top row. The shuffle chooses the vector $v^{\sigma(1)}$ given to $\alpha$ (orange); the other two vectors, in increasing order, go to $\beta$, whose value is the complementary $2 \times 2$ minor (blue). The sign of the shuffle is the sign $(-1)^{1 + \sigma(1)}$ of the cofactor.
+%% <<< END ADDED
+
+\textbf{Transcription note (Lecture 30).} The $3 \times 3$ determinant was first written with $\beta$ in the second and third rows, and corrected in class to the rows $\gamma$ and $\delta$.
 
 \begin{exbox}[The Wedge of Two Two-Forms]\exlabel{ex:wedge-two-forms}
 \textit{(Not from lecture; filled in.)} Let $k = l = 2$. A $(2, 2)$-shuffle is determined by the two places $\sigma(1) < \sigma(2)$, so there are $\binom{4}{2} = 6$ of them (Lemma~\ref{lem:shuffle-factorization}(2)); in one-line notation, with their signs, they are
@@ -34791,6 +34947,78 @@ with $0, 1, 2, 2, 3, 4$ inversions. For $\alpha, \beta \in \Lambda^2 V^*$, Defin
 \textit{(Not from lecture; figure added.)} The six $(2, 2)$-shuffles of Example~\ref{ex:wedge-two-forms}. In each diagram the top row is the entries $1, 2$ of $\alpha$ (red) and $3, 4$ of $\beta$ (blue), and the strand from $i$ ends at the vector $v^{\sigma(i)}$ that this entry receives. Strands of the same colour never cross, which is the shuffle condition. Each crossing of a red strand with a blue one (black dot) is an inversion of $\sigma$, so the sign of the term is $+$ for an even number of crossings (green) and $-$ for an odd number (red).
 %% <<< END ADDED
 
+Three lemmas prepare the proof of the properties of the wedge product. The first two compute wedge products of one-forms; the third is what associativity needs.
+
+\begin{lembox}[A One-Form Wedge an $l$-Form]\thmlabel{lem:wedge-one-l}
+For $\alpha \in V^*$ and $\beta \in \Lambda^l V^*$,
+\[
+(\alpha \wedge \beta)(v^1, \ldots, v^{l+1}) = \sum_{j=1}^{l+1} (-1)^{j-1}\, \alpha(v^j)\, \beta\big(v^1, \ldots, \widehat{v^j}, \ldots, v^{l+1}\big) ,
+\]
+where the hat means that $v^j$ is left out.
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in. The case $l = 2$ is Example~\ref{ex:wedge-one-two}.)} Let $\sigma$ be a $(1, l)$-shuffle and $j = \sigma(1)$. By Definition~\ref{def:shuffle}, $\sigma(2) < \cdots < \sigma(l+1)$, so these are the numbers $1, \ldots, l + 1$ other than $j$, in increasing order; and every $j \in \{1, \ldots, l+1\}$ occurs for exactly one shuffle (Lemma~\ref{lem:shuffle-factorization}(2)). The inversions of $\sigma$ (Definition~\ref{def:sgn}) are the pairs of positions $(1, i)$ with $\sigma(i) < j$: positions $2 \le i < i'$ are not inverted, and exactly $j - 1$ of the values $\sigma(2), \ldots, \sigma(l+1)$ are less than $j$. So $\sgn(\sigma) = (-1)^{j-1}$, and the term of $\sigma$ in Definition~\ref{def:wedge-product} is $(-1)^{j-1}\, \alpha(v^j)\, \beta\big(v^1, \ldots, \widehat{v^j}, \ldots, v^{l+1}\big)$, the $j$-th term of the sum.
+\end{proof}
+
+\begin{lembox}[Wedge Products of One-Forms Are Determinants]\thmlabel{lem:wedge-one-forms-det}
+Let $k \ge 1$ and let $\alpha^1, \alpha^2, \ldots, \alpha^k \in V^*$ be $k$ one-forms (the superscripts are labels, not powers). Bracket their product from the right,
+\[
+\omega = \alpha^1 \wedge \Big( \alpha^2 \wedge \big( \cdots \wedge (\alpha^{k-1} \wedge \alpha^k) \cdots \big) \Big) \in \Lambda^k V^* .
+\]
+Then for all $v^1, \ldots, v^k \in V$
+\[
+\omega(v^1, \ldots, v^k) = \det\big( \alpha^i(v^j) \big)_{i, j = 1, \ldots, k} ,
+\]
+a $k \times k$ determinant with row index $i$ and column index $j$.
+\leeref{Proposition 14.11(e)}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture~30 stated the lemma for the product $\alpha^1 \wedge \cdots \wedge \alpha^k$ with its brackets placed in any way, which associativity allows (Proposition~\ref{prop:wedge-properties}(2), proved below without this lemma), and indicated the proof: induction on $k$, expanding a $k \times k$ determinant along a row. Written out here for the bracketing from the right, which needs no associativity.)} For $k = 1$ both sides are $\alpha^1(v^1)$. Let $k \ge 2$ and assume the lemma for $k - 1$ one-forms. Then $\omega = \alpha^1 \wedge \beta$, where $\beta \in \Lambda^{k-1} V^*$ is the product of $\alpha^2, \ldots, \alpha^k$ bracketed from the right, and by the induction hypothesis
+\[
+\beta(w^1, \ldots, w^{k-1}) = \det\big( \alpha^{i+1}(w^j) \big)_{i, j = 1, \ldots, k-1} \qquad \text{for all } w^1, \ldots, w^{k-1} \in V .
+\]
+Let $M$ be the $k \times k$ matrix with entries $M_{ij} = \alpha^i(v^j)$, and let $M^{(1j)}$ be $M$ with the first row and the $j$-th column deleted: its rows belong to $\alpha^2, \ldots, \alpha^k$ and its columns to the vectors other than $v^j$, in their order. So $\beta\big(v^1, \ldots, \widehat{v^j}, \ldots, v^k\big) = \det M^{(1j)}$, and by Lemma~\ref{lem:wedge-one-l}
+\[
+\omega(v^1, \ldots, v^k) = \sum_{j=1}^k (-1)^{j-1}\, \alpha^1(v^j)\, \beta\big(v^1, \ldots, \widehat{v^j}, \ldots, v^k\big) = \sum_{j=1}^k (-1)^{1+j}\, M_{1j}\, \det M^{(1j)} .
+\]
+The right-hand side is the expansion of $\det M$ along its first row.
+\end{proof}
+
+For $k = 2$ the lemma is Example~\ref{ex:wedge-one-forms}, and for $k = 3$ it is the $3 \times 3$ determinant of Example~\ref{ex:wedge-one-two}.
+
+\begin{lembox}[The Skew-Symmetrizer and Tensor Products]\thmlabel{lem:skew-symmetrizer-tensor}
+Let $\mathcal{A}$ be the skew-symmetrizer (Definition~\ref{def:skew-symmetrizer}).
+\begin{enumerate}[nosep]
+\item For a multilinear map $U : V^N \to \mathbb{R}$ and $\mu \in S_N$: $\mathcal{A}(U^\mu) = \sgn(\mu)\, \mathcal{A}(U)$.
+\item For multilinear maps $S : V^n \to \mathbb{R}$ and $T : V^r \to \mathbb{R}$ (Definition~\ref{def:tensor-product-multilinear}):
+\[
+\mathcal{A}\big(\mathcal{A}(S) \otimes T\big) = \mathcal{A}(S \otimes T) = \mathcal{A}\big(S \otimes \mathcal{A}(T)\big) .
+\]
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in, with the antisymmetrizer of Lecture~30.)}
+
+(1) By the rule for rearranging twice in the proof of Lemma~\ref{lem:skew-symmetrizer}, $(U^\mu)^\pi = U^{\pi \circ \mu}$ for every $\pi \in S_N$. Since $\sgn(\pi) = \sgn(\mu)\, \sgn(\pi \circ \mu)$ (Proposition~\ref{prop:sgn}(1), with $\sgn(\mu)^2 = 1$),
+\[
+\mathcal{A}(U^\mu) = \frac{1}{N!} \sum_{\pi \in S_N} \sgn(\pi)\, U^{\pi \circ \mu} = \sgn(\mu)\, \frac{1}{N!} \sum_{\pi \in S_N} \sgn(\pi \circ \mu)\, U^{\pi \circ \mu} = \sgn(\mu)\, \mathcal{A}(U) ;
+\]
+the last step holds because $\pi \mapsto \pi \circ \mu$ is a bijection of $S_N$.
+
+(2) For $\pi \in S_n$ let $\pi \oplus \mathrm{id} \in S_{n+r}$ be the permutation that acts by $\pi$ on $\{1, \ldots, n\}$ and fixes $n + 1, \ldots, n + r$. It lies in the subgroup $S_n \times S_r$, and $\sgn(\pi \oplus \mathrm{id}) = \sgn(\pi)$ (Lemma~\ref{lem:shuffle-factorization}(1), with $\tau = \pi$ and $\tau' = \mathrm{id}$). By Definitions~\ref{def:tensor-product-multilinear} and~\ref{def:skew-symmetrizer},
+\[
+(S \otimes T)^{\pi \oplus \mathrm{id}}(v^1, \ldots, v^{n+r}) = S\big(v^{\pi(1)}, \ldots, v^{\pi(n)}\big)\, T(v^{n+1}, \ldots, v^{n+r}) = (S^\pi \otimes T)(v^1, \ldots, v^{n+r}) ,
+\]
+so $S^\pi \otimes T = (S \otimes T)^{\pi \oplus \mathrm{id}}$. The tensor product is linear in its first factor, since the value of $S \otimes T$ is the product of a value of $S$ and a value of $T$; hence $\mathcal{A}(S) \otimes T = \frac{1}{n!} \sum_{\pi \in S_n} \sgn(\pi)\, S^\pi \otimes T$. As $\mathcal{A}$ is linear, part~(1) gives
+\[
+\mathcal{A}\big(\mathcal{A}(S) \otimes T\big) = \frac{1}{n!} \sum_{\pi \in S_n} \sgn(\pi)\, \mathcal{A}\big((S \otimes T)^{\pi \oplus \mathrm{id}}\big) = \frac{1}{n!} \sum_{\pi \in S_n} \sgn(\pi)^2\, \mathcal{A}(S \otimes T) = \mathcal{A}(S \otimes T) ,
+\]
+as $S_n$ has $n!$ elements. For the second equality let $\mathrm{id} \oplus \pi' \in S_{n+r}$, for $\pi' \in S_r$, fix $1, \ldots, n$ and send $n + j$ to $n + \pi'(j)$; then $\sgn(\mathrm{id} \oplus \pi') = \sgn(\pi')$ and $S \otimes T^{\pi'} = (S \otimes T)^{\mathrm{id} \oplus \pi'}$ by the same two definitions, and the same computation, with the sum over $\pi' \in S_r$ and the factor $\frac{1}{r!}$, gives $\mathcal{A}\big(S \otimes \mathcal{A}(T)\big) = \mathcal{A}(S \otimes T)$.
+\end{proof}
+
 \begin{propbox}[Properties of the Wedge Product]\thmlabel{prop:wedge-properties}
 For $\alpha, \alpha_1, \alpha_2 \in \Lambda^k V^*$, $\beta \in \Lambda^l V^*$, $\gamma \in \Lambda^r V^*$ and $\lambda \in \mathbb{R}$:
 \begin{enumerate}[nosep]
@@ -34802,9 +35030,135 @@ For $\alpha, \alpha_1, \alpha_2 \in \Lambda^k V^*$, $\beta \in \Lambda^l V^*$, $
 \leeref{Proposition 14.11}
 \end{propbox}
 
-\begin{proof}[Proof (to be filled)]
-Lecture~29 stated the four properties without proof. (1) is immediate from Definition~\ref{def:wedge-product}, each term of the sum being linear in $\alpha$ and in $\beta$. In~(3), forms of even degree commute with all forms because $(-1)^{kl} = 1$ when $k$ or $l$ is even. (4) is a nontrivial computation: the shuffle formula is, in disguise, an expansion of a determinant. (2)--(4) are to be filled.
+\begin{proof}
+\textit{(Lecture~29 stated the four properties. Lecture~30 recalled them and proved (3), using (4), which it read off Lemma~\ref{lem:wedge-one-forms-det}. The proof of (2), which neither lecture gave, is filled in. The order below is (1), (2), (4), (3), so that nothing is used before it is proved.)}
+
+(1) By Definition~\ref{def:wedge-product}, for fixed vectors each term of the sum is the product of a value of $\alpha$ and a value of $\beta$, so it is linear in $\alpha$ and linear in $\beta$; hence so is the sum.
+
+(2) \textit{(Not from lecture; filled in.)} By Proposition~\ref{prop:wedge-all-permutations}(2), applied first to the forms $\alpha \wedge \beta \in \Lambda^{k+l} V^*$ and $\gamma$, and then to $\alpha$ and $\beta$,
+\[
+(\alpha \wedge \beta) \wedge \gamma = \frac{(k + l + r)!}{(k + l)!\, r!}\, \mathcal{A}\big((\alpha \wedge \beta) \otimes \gamma\big) = \frac{(k + l + r)!}{(k + l)!\, r!} \cdot \frac{(k + l)!}{k!\, l!}\, \mathcal{A}\big(\mathcal{A}(\alpha \otimes \beta) \otimes \gamma\big) ,
+\]
+the second step because the tensor product is linear in its first factor and $\mathcal{A}$ is linear. By Lemma~\ref{lem:skew-symmetrizer-tensor}(2), $\mathcal{A}\big(\mathcal{A}(\alpha \otimes \beta) \otimes \gamma\big) = \mathcal{A}\big((\alpha \otimes \beta) \otimes \gamma\big)$, so
+\[
+(\alpha \wedge \beta) \wedge \gamma = \frac{(k + l + r)!}{k!\, l!\, r!}\, \mathcal{A}\big((\alpha \otimes \beta) \otimes \gamma\big) .
+\]
+In the same way, with the other equality of Lemma~\ref{lem:skew-symmetrizer-tensor}(2),
+\[
+\alpha \wedge (\beta \wedge \gamma) = \frac{(k + l + r)!}{k!\, (l + r)!} \cdot \frac{(l + r)!}{l!\, r!}\, \mathcal{A}\big(\alpha \otimes \mathcal{A}(\beta \otimes \gamma)\big) = \frac{(k + l + r)!}{k!\, l!\, r!}\, \mathcal{A}\big(\alpha \otimes (\beta \otimes \gamma)\big) .
+\]
+Finally $(\alpha \otimes \beta) \otimes \gamma = \alpha \otimes (\beta \otimes \gamma)$: by Definition~\ref{def:tensor-product-multilinear} both send $(v^1, \ldots, v^{k+l+r})$ to
+\[
+\alpha(v^1, \ldots, v^k)\, \beta(v^{k+1}, \ldots, v^{k+l})\, \gamma(v^{k+l+1}, \ldots, v^{k+l+r}) .
+\]
+So the two triple products are equal. By induction on the number of factors, a wedge product of any number of forms does not depend on how it is bracketed, and brackets are omitted from here on.
+
+(4) \textit{(Lecture~30.)} Let $k \ge 1$. By Lemma~\ref{lem:wedge-one-forms-det} with $\alpha^i = \varepsilon^{a_i}$, and by~(2), which allows the brackets to be dropped,
+\[
+\big(\varepsilon^{a_1} \wedge \cdots \wedge \varepsilon^{a_k}\big)(v^1, \ldots, v^k) = \det\big(\varepsilon^{a_i}(v^j)\big)_{i, j = 1, \ldots, k} = \varepsilon^A(v^1, \ldots, v^k) ,
+\]
+the last equality being Definition~\ref{def:epsilon-A}: the forms $\varepsilon^A$ were defined as $k \times k$ determinants, and the lemma says that a product of $k$ one-forms is such a determinant.
+
+(3) \textit{(Lecture~30.)} \emph{Degree zero.} If $k = 0$, then $\alpha$ is a number $c$, the only $(0, l)$-shuffle and the only $(l, 0)$-shuffle are the identity, and Definition~\ref{def:wedge-product} gives $c \wedge \beta = c\,\beta = \beta \wedge c$, which is~(3) since $(-1)^0 = 1$; likewise if $l = 0$. Let $k, l \ge 1$.
+
+\emph{Reduction to products of one-forms.} Let $(\varepsilon^1, \ldots, \varepsilon^m)$ be a basis of $V^*$. The forms $\varepsilon^A$ with $|A| = k$ are a basis of $\Lambda^k V^*$, and the $\varepsilon^B$ with $|B| = l$ a basis of $\Lambda^l V^*$ (Proposition~\ref{prop:dim-k-forms}). Both $\beta \wedge \alpha$ and $(-1)^{kl}\, \alpha \wedge \beta$ are bilinear in $(\alpha, \beta)$, by~(1), so it is enough to prove~(3) for $\alpha = \varepsilon^A$ and $\beta = \varepsilon^B$. By~(4) these are products of one-forms,
+\[
+\alpha = \alpha^1 \wedge \cdots \wedge \alpha^k, \qquad \beta = \beta^1 \wedge \cdots \wedge \beta^l , \qquad \alpha^i = \varepsilon^{a_i}, \quad \beta^j = \varepsilon^{b_j} .
+\]
+
+\emph{One-forms anticommute.} For $\mu, \nu \in V^*$, $\mu \wedge \nu = -\nu \wedge \mu$: by Example~\ref{ex:wedge-one-forms}, $(\mu \wedge \nu)(v^1, v^2) = \mu(v^1)\nu(v^2) - \mu(v^2)\nu(v^1)$, and exchanging $\mu$ and $\nu$ changes the sign.
+
+\emph{Commuting the factors.} By~(2), $\alpha \wedge \beta = \alpha^1 \wedge \cdots \wedge \alpha^k \wedge \beta^1 \wedge \cdots \wedge \beta^l$, a product of $k + l$ one-forms. Exchanging two neighbouring one-forms in such a product changes its sign: bracket the two neighbours together, by~(2), replace $\mu \wedge \nu$ by $-\nu \wedge \mu$, and use~(1). Move $\beta^1$ to the left, past $\alpha^k$, then past $\alpha^{k-1}$, and so on to the front; it passes $k$ one-forms, so
+\[
+\alpha^1 \wedge \cdots \wedge \alpha^k \wedge \beta^1 \wedge \cdots \wedge \beta^l = (-1)^k\, \beta^1 \wedge \alpha^1 \wedge \cdots \wedge \alpha^k \wedge \beta^2 \wedge \cdots \wedge \beta^l .
+\]
+Then move $\beta^2$ to the left past $\alpha^k, \ldots, \alpha^1$, to the place behind $\beta^1$, for another factor $(-1)^k$, and so on. After all $l$ of the $\beta^j$ have been moved,
+\[
+\alpha \wedge \beta = \big((-1)^k\big)^l\, \beta^1 \wedge \cdots \wedge \beta^l \wedge \alpha^1 \wedge \cdots \wedge \alpha^k = (-1)^{kl}\, \beta \wedge \alpha ,
+\]
+and multiplying by $(-1)^{kl}$ gives~(3). Forms of even degree commute with all forms because $(-1)^{kl} = 1$ when $k$ or $l$ is even.
 \end{proof}
+
+With~(2), the brackets in Lemma~\ref{lem:wedge-one-forms-det} can be placed in any way: $(\alpha^1 \wedge \cdots \wedge \alpha^k)(v^1, \ldots, v^k) = \det\big(\alpha^i(v^j)\big)$ for any $k$ one-forms, which is the form in which Lecture~30 stated the lemma. Lee proves (2) and (3) differently, from the formula $\varepsilon^I \wedge \varepsilon^J = \varepsilon^{IJ}$ for elementary forms (his Lemma~14.10); in~(3) his sign is the sign of the permutation that carries the block of $\beta$ in front of the block of $\alpha$, a product of $kl$ transpositions.
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[blue!70!black, thick] (0.620,1.500) -- (0.000,0.000);
+\draw[red!70!black, thick] (0.000,1.500) -- (0.620,0.000);
+\fill[black] (0.310,0.750) circle (1.3pt);
+\fill[red!70!black] (0.000,1.500) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (0.000,1.770) {$\alpha^{1}$};
+\fill[red!70!black] (0.620,0.000) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (0.620,-0.270) {$\alpha^{1}$};
+\fill[blue!70!black] (0.620,1.500) circle (1.6pt);
+\node[font=\scriptsize, text=blue!70!black] at (0.620,1.770) {$\beta^{1}$};
+\fill[blue!70!black] (0.000,0.000) circle (1.6pt);
+\node[font=\scriptsize, text=blue!70!black] at (0.000,-0.270) {$\beta^{1}$};
+\node[font=\scriptsize] at (0.310,2.280) {$k = 1$, $l = 1$};
+\node[font=\scriptsize, text=red!70!black] at (0.310,-0.780) {$1$ crossing: $(-1)^{1} = - 1$};
+\draw[blue!70!black, thick] (5.080,1.500) -- (3.220,0.000);
+\draw[red!70!black, thick] (3.220,1.500) -- (3.840,0.000);
+\draw[red!70!black, thick] (3.840,1.500) -- (4.460,0.000);
+\draw[red!70!black, thick] (4.460,1.500) -- (5.080,0.000);
+\fill[black] (3.685,0.375) circle (1.3pt);
+\fill[black] (4.150,0.750) circle (1.3pt);
+\fill[black] (4.615,1.125) circle (1.3pt);
+\fill[red!70!black] (3.220,1.500) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (3.220,1.770) {$\alpha^{1}$};
+\fill[red!70!black] (3.840,0.000) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (3.840,-0.270) {$\alpha^{1}$};
+\fill[red!70!black] (3.840,1.500) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (3.840,1.770) {$\alpha^{2}$};
+\fill[red!70!black] (4.460,0.000) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (4.460,-0.270) {$\alpha^{2}$};
+\fill[red!70!black] (4.460,1.500) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (4.460,1.770) {$\alpha^{3}$};
+\fill[red!70!black] (5.080,0.000) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (5.080,-0.270) {$\alpha^{3}$};
+\fill[blue!70!black] (5.080,1.500) circle (1.6pt);
+\node[font=\scriptsize, text=blue!70!black] at (5.080,1.770) {$\beta^{1}$};
+\fill[blue!70!black] (3.220,0.000) circle (1.6pt);
+\node[font=\scriptsize, text=blue!70!black] at (3.220,-0.270) {$\beta^{1}$};
+\node[font=\scriptsize] at (4.150,2.280) {$k = 3$, $l = 1$};
+\node[font=\scriptsize, text=red!70!black] at (4.150,-0.780) {$3$ crossings: $(-1)^{3} = - 1$};
+\draw[blue!70!black, thick] (8.920,1.500) -- (7.680,0.000);
+\draw[blue!70!black, thick] (9.540,1.500) -- (8.300,0.000);
+\draw[blue!70!black, thick] (10.160,1.500) -- (8.920,0.000);
+\draw[red!70!black, thick] (7.680,1.500) -- (9.540,0.000);
+\draw[red!70!black, thick] (8.300,1.500) -- (10.160,0.000);
+\fill[black] (8.424,0.900) circle (1.3pt);
+\fill[black] (8.796,0.600) circle (1.3pt);
+\fill[black] (9.168,0.300) circle (1.3pt);
+\fill[black] (8.672,1.200) circle (1.3pt);
+\fill[black] (9.044,0.900) circle (1.3pt);
+\fill[black] (9.416,0.600) circle (1.3pt);
+\fill[red!70!black] (7.680,1.500) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (7.680,1.770) {$\alpha^{1}$};
+\fill[red!70!black] (9.540,0.000) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (9.540,-0.270) {$\alpha^{1}$};
+\fill[red!70!black] (8.300,1.500) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (8.300,1.770) {$\alpha^{2}$};
+\fill[red!70!black] (10.160,0.000) circle (1.6pt);
+\node[font=\scriptsize, text=red!70!black] at (10.160,-0.270) {$\alpha^{2}$};
+\fill[blue!70!black] (8.920,1.500) circle (1.6pt);
+\node[font=\scriptsize, text=blue!70!black] at (8.920,1.770) {$\beta^{1}$};
+\fill[blue!70!black] (7.680,0.000) circle (1.6pt);
+\node[font=\scriptsize, text=blue!70!black] at (7.680,-0.270) {$\beta^{1}$};
+\fill[blue!70!black] (9.540,1.500) circle (1.6pt);
+\node[font=\scriptsize, text=blue!70!black] at (9.540,1.770) {$\beta^{2}$};
+\fill[blue!70!black] (8.300,0.000) circle (1.6pt);
+\node[font=\scriptsize, text=blue!70!black] at (8.300,-0.270) {$\beta^{2}$};
+\fill[blue!70!black] (10.160,1.500) circle (1.6pt);
+\node[font=\scriptsize, text=blue!70!black] at (10.160,1.770) {$\beta^{3}$};
+\fill[blue!70!black] (8.920,0.000) circle (1.6pt);
+\node[font=\scriptsize, text=blue!70!black] at (8.920,-0.270) {$\beta^{3}$};
+\node[font=\scriptsize] at (8.920,2.280) {$k = 2$, $l = 3$};
+\node[font=\scriptsize, text=green!40!black] at (8.920,-0.780) {$6$ crossings: $(-1)^{6} = + 1$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} The sign in Proposition~\ref{prop:wedge-properties}(3). The top row is $\alpha \wedge \beta = \alpha^1 \wedge \cdots \wedge \alpha^k \wedge \beta^1 \wedge \cdots \wedge \beta^l$ and the bottom row $\beta \wedge \alpha$; a strand joins each one-form to its new place. Every strand of $\beta$ (blue) crosses every strand of $\alpha$ (red) exactly once, and each crossing is one exchange of two neighbouring one-forms, with a factor $-1$. So there are $kl$ crossings and the sign is $(-1)^{kl}$: it is $-1$ only when $k$ and $l$ are both odd.
+%% <<< END ADDED
 
 \begin{corbox}[Forms of Odd Degree Square to Zero]\thmlabel{cor:odd-forms-square-zero}
 If $\alpha \in \Lambda^k V^*$ with $k$ odd, then $\alpha \wedge \alpha = 0$. In particular $\varepsilon \wedge \varepsilon = 0$ for every covector $\varepsilon \in V^*$.
@@ -34828,7 +35182,7 @@ For $\varepsilon = dx^i$ this is $dx^i \wedge dx^i = 0$, as in Lemma~\ref{lem:dx
 So $\omega \wedge \omega \neq 0$. By Corollary~\ref{cor:top-degree-forms}, $\omega \wedge \omega = 2\, \varepsilon^{\{1, 2, 3, 4\}}$, twice the determinant; with Proposition~\ref{prop:wedge-properties}(4) this reads $\omega \wedge \omega = 2\, dx^1 \wedge dx^2 \wedge dx^3 \wedge dx^4$.
 \end{exbox}
 
-Next (Lecture~30): more computations in low degree; then $V$ becomes the tangent space $T_pM$ again, and the point $p$ varies over a manifold, so that the forms become functions of the point.
+Next: $V$ becomes the tangent space $T_pM$ again, and the point $p$ varies over a manifold, so that the forms become functions of the point. (Lecture~30 ended with the proof of Proposition~\ref{prop:wedge-properties}(3).)
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -34932,7 +35286,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:stokes-calc3}\ Stokes' theorem in Calculus III & Chapter 16, \emph{Surface Integrals} (Theorem 16.34); the general theorem: \emph{Stokes's Theorem} (Theorem 16.11) \\
 \ref{sec:two-form-integrand}\ The integrand is a two-form & Chapter 14, \emph{The Wedge Product} \\
 \ref{sec:multilinear}\ Multilinear algebra & Chapter 12, \emph{Symmetric and Alternating Tensors}; Chapter 14, \emph{The Algebra of Alternating Tensors} (Lemma 14.1, Lemma 14.7, Proposition 14.8) \\
-\ref{sec:wedge-product}\ The wedge product & Chapter 14, \emph{The Algebra of Alternating Tensors} (alternation, Proposition 14.3) and \emph{The Wedge Product} (Proposition 14.11; the determinant and Alt conventions); Chapter 12, \emph{Multilinear Algebra} (tensor products) \\
+\ref{sec:wedge-product}\ The wedge product & Chapter 14, \emph{The Algebra of Alternating Tensors} (alternation, Proposition 14.3) and \emph{The Wedge Product} (Lemma 14.10, Proposition 14.11; the determinant and Alt conventions); Chapter 12, \emph{Multilinear Algebra} (tensor products) \\
 \bottomrule
 \end{longtable}
 
@@ -35101,7 +35455,7 @@ Lemma 14.1 & Lem.~\ref{lem:alternating-dependent} \\
 Proposition 14.3 & Lem.~\ref{lem:skew-symmetrizer} \\
 Lemma 14.7 & Lem.~\ref{lem:epsilon-A-dual} \\
 Proposition 14.8 & Prop.~\ref{prop:dim-k-forms} \\
-Proposition 14.11 & Prop.~\ref{prop:wedge-properties} \\
+Proposition 14.11 & Lem.~\ref{lem:wedge-one-forms-det}, Prop.~\ref{prop:wedge-properties} \\
 Theorem 16.34 & Thm.~\ref{thm:stokes-calc3} \\
 Theorem 17.26 & Thm.~\ref{thm:inv-dim} \\
 Theorem 20.1 & Prop.~\ref{prop:one-parameter-subgroup} \\
