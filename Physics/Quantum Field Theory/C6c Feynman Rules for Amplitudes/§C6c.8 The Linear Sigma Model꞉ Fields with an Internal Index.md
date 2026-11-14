@@ -96,7 +96,7 @@ This section takes $m^2 > 0$ (Problem 1(a)); $m^2 < 0$ is [[§C6c.9 The Linear S
 > **Step 5** ($i = j$). It is the propagator of a single real scalar field of mass $m$ ([[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-2|Theorem §C2b.7.2]]; Fourier form [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]]). Steps 4 and 5 together are the statement.
 >
 > **What the derivation shows.**
-> - The $\delta^{ij}$ is the $\delta^{ij}$ of the mode algebra: a particle of type $i$ is created and absorbed only by $\hat\Phi^i$. The same fact decides which external particle a field can contract with (Step 4 of [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^der-c6c-8-3|Derivation §C6c.8.3]]).
+> - The $\delta^{ij}$ is the $\delta^{ij}$ of the mode algebra: a particle of type $i$ is created and absorbed only by $\hat\Phi^i$. The same fact decides which external particle a field can contract with (Step 3 of [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^der-c6c-8-3|Derivation §C6c.8.3]]).
 > - The equal masses were not used for the $\delta^{ij}$; they make the function multiplying it the same for every $i$, as the $O(N)$ symmetry requires.
 
 ^der-c6c-8-2
@@ -126,6 +126,72 @@ This section takes $m^2 > 0$ (Problem 1(a)); $m^2 < 0$ is [[§C6c.9 The Linear S
 ^thm-c6c-8-3
 
 > [!derivation]- Derivation
+> **Step 1** (the interaction as a double sum). The interaction is $\hat{\mathcal H}_I = \frac\lambda4\bigl(\hat\Phi^m\hat\Phi^m\bigr)^2$ ([[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^mod-c6c-8-1|Model §C6c.8.1]], 3). The square of the sum is a double sum,
+>
+> $$
+> \hat{\mathcal H}_I = \frac\lambda4\sum_{m,n}\hat\Phi^m\hat\Phi^m\,\hat\Phi^n\hat\Phi^n .
+> $$
+>
+> **Step 2** (the first-order term). The first-order term of $T\exp\bigl(-i\int d^4z\,\hat{\mathcal H}_I\bigr)$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]]) between the initial and final states is
+>
+> $$
+> \langle f|\,(-i)\int d^4z\;\frac\lambda4\sum_{m,n}\hat\Phi^m(z)\,\hat\Phi^m(z)\,\hat\Phi^n(z)\,\hat\Phi^n(z)\,|i\rangle .
+> $$
+>
+> **Step 3** (the contractions). Take four external particles, with momenta $p_1, p_2$ (incoming) and $p_3, p_4$ (outgoing) and types $i, j, k, l$. The vertex is the contribution in which each of the four fields contracts with one of the four external particles, so there is no propagator. A field $\hat\Phi^m(z)$ contracted with a particle of type $i$ and momentum $p$ gives (Step 3 of [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^der-c6c-8-2|Derivation §C6c.8.2]]; [[§C6a.14 Feynman Rules for Polynomial Interactions#^lem-c6a-14-1|Lemma §C6a.14.1]]; [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 2; [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]])
+>
+> $$
+> \delta^{im}\,e^{-ip\cdot z} \quad\text{(incoming)} , \qquad \delta^{im}\,e^{ip\cdot z} \quad\text{(outgoing)} .
+> $$
+>
+> All four fields are at the same point $z$, so every contraction gives the same phases, with ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]])
+>
+> $$
+> \int d^4z\;e^{-i(p_1 + p_2 - p_3 - p_4)\cdot z} = (2\pi)^4\,\delta^4(p_1 + p_2 - p_3 - p_4) .
+> $$
+>
+> **Step 4** (what the vertex factor is). The vertex factor is the coefficient of this delta function: $-i$ times the coupling $\frac\lambda4$ times the sum over all contractions of their Kronecker deltas, summed over $m, n$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]], the tree case).
+>
+> **Step 5** (counting the contractions). The four particles can be assigned to the four fields in $4! = 24$ ways ([[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]] at one point). The Kronecker deltas depend on which two particles contract with the pair $\hat\Phi^m\hat\Phi^m$, the other two contracting with $\hat\Phi^n\hat\Phi^n$.
+>
+> **Step 6** (the pair $i, j$ on one pair of fields). If the particles of types $i, j$ contract with $\hat\Phi^m\hat\Phi^m$ and those of types $k, l$ with $\hat\Phi^n\hat\Phi^n$, the deltas are $\delta^{im}\delta^{jm}\delta^{kn}\delta^{ln}$. The two particles can be contracted with the two $\hat\Phi^m$ in $2!$ ways, and likewise for the two $\hat\Phi^n$, which gives $2!\cdot2!$ contractions with these deltas. If instead the particles of types $k, l$ contract with $\hat\Phi^m\hat\Phi^m$ and those of types $i, j$ with $\hat\Phi^n\hat\Phi^n$, the deltas are $\delta^{km}\delta^{lm}\delta^{in}\delta^{jn}$, again for $2!\cdot2!$ contractions. Summed over $m, n$, both give the same result,
+>
+> $$
+> \sum_{m,n}\delta^{im}\delta^{jm}\delta^{kn}\delta^{ln} = \delta^{ij}\delta^{kl} , \qquad \sum_{m,n}\delta^{km}\delta^{lm}\delta^{in}\delta^{jn} = \delta^{kl}\delta^{ij} ,
+> $$
+>
+> so $2\cdot2!\cdot2! = 8$ contractions contribute $\delta^{ij}\delta^{kl}$.
+>
+> **Step 7** (the other pairs). The other ways of choosing the two particles on $\hat\Phi^m\hat\Phi^m$ work the same way:
+>
+> $$
+> \begin{aligned}
+> \sum_{m,n}\delta^{im}\delta^{km}\delta^{jn}\delta^{ln} &= \delta^{ik}\delta^{jl} , & \sum_{m,n}\delta^{jm}\delta^{lm}\delta^{in}\delta^{kn} &= \delta^{jl}\delta^{ik} , \\
+> \sum_{m,n}\delta^{im}\delta^{lm}\delta^{jn}\delta^{kn} &= \delta^{il}\delta^{jk} , & \sum_{m,n}\delta^{jm}\delta^{km}\delta^{in}\delta^{ln} &= \delta^{jk}\delta^{il} ,
+> \end{aligned}
+> $$
+>
+> each for $2!\cdot2!$ contractions, so $8$ contractions contribute $\delta^{ik}\delta^{jl}$ and $8$ contribute $\delta^{il}\delta^{jk}$. This accounts for all $3\cdot8 = 24$ contractions.
+>
+> **Step 8** (the result). Hence
+>
+> $$
+> V^{ijkl} = (-i)\cdot\frac\lambda4\cdot8\,\bigl(\delta^{ij}\delta^{kl} + \delta^{ik}\delta^{jl} + \delta^{il}\delta^{jk}\bigr) = -2i\lambda\,\bigl(\delta^{ij}\delta^{kl} + \delta^{ik}\delta^{jl} + \delta^{il}\delta^{jk}\bigr) .
+> $$
+>
+> **Step 9** (check: equal indices). When all four indices are equal the three terms are all $1$, so all $24$ contractions contribute and $V^{iiii} = (-i)\cdot\frac\lambda4\cdot4! = -6i\lambda$.
+>
+> **What the derivation shows.**
+> - The $24$ contractions fall into three groups of $8$, one group for each way of splitting the four lines into two pairs; a group is $2$ (which pair of fields takes which pair of particles) times $2!\cdot2!$. The three terms of $V^{ijkl}$ are these three groups.
+> - The same count with the sum split by field content first → the second route below.
+> - The same result by four derivatives of $V_{\rm int}$ → [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^thm-c6c-8-4|Theorem §C6c.8.4]], [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^ex-c6c-8-1|Example §C6c.8.1]].
+> - At lowest order the amplitude of a $2 \to 2$ process is this vertex factor, $i\mathcal M = V^{ijkl}$ → [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^ex-c6c-8-2|Example §C6c.8.2]].
+
+^der-c6c-8-3
+
+> [!derivation]- Derivation (second route: the sum split by field content)
+> *The first version of the solution to Problem Set 10, Problem 1(a2) (2026-11-13), kept as a second route: the interaction is first written as a sum of monomials, and each monomial is counted by itself.*
+>
 > **Step 1** (the interaction, split by field content). The interaction is $\hat{\mathcal H}_I = \frac\lambda4\bigl(\hat\Phi^m\hat\Phi^m\bigr)^2$ ([[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^mod-c6c-8-1|Model §C6c.8.1]], 3). The square of the sum is a double sum, which splits into the terms with $m = n$ and those with $m \ne n$; each pair $m \ne n$ appears twice, as $(m, n)$ and $(n, m)$:
 >
 > $$
@@ -178,10 +244,9 @@ This section takes $m^2 > 0$ (Problem 1(a)); $m^2 < 0$ is [[§C6c.9 The Linear S
 >
 > **What the derivation shows.**
 > - The coefficient $\frac\lambda2$ of the mixed term, twice the $\frac\lambda4$ of the Lagrangian, comes from the two orders $(m, n)$, $(n, m)$ of the double sum; with $2!\cdot2!$ contractions against $4!$ it makes the two cases differ by the factor $3$, the number of pairings.
-> - The same result without splitting the sum, by four derivatives of $V_{\rm int}$ → [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^thm-c6c-8-4|Theorem §C6c.8.4]], [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^ex-c6c-8-1|Example §C6c.8.1]].
-> - At lowest order the amplitude of a $2 \to 2$ process is this vertex factor, $i\mathcal M = V^{ijkl}$ → [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^ex-c6c-8-2|Example §C6c.8.2]].
+> - The two cases $-6i\lambda$ and $-2i\lambda$ are the cases 1 and 2 of the theorem; the first route obtains all index patterns at once.
 
-^der-c6c-8-3
+^der-c6c-8-3b
 
 *Uses:* [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^mod-c6c-8-1|Model §C6c.8.1]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^def-c6a-14-1|Def. §C6a.14.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^lem-c6a-14-1|Lemma §C6a.14.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6c.2 Contractions with External Particles#^thm-c6c-2-4|Theorem §C6c.2.4]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]], [[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]
 

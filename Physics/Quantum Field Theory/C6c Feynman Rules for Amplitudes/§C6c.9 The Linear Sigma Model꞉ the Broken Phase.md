@@ -304,7 +304,7 @@ tags: [quantum-field-theory, level-c]
 >
 > **Step 3** (four pions). The term $\frac\lambda4\bigl(\hat\pi^m\hat\pi^m\bigr)^2$ has the form of the interaction of §C6c.8, with the $N - 1$ fields $\hat\pi^m$ in place of the $N$ fields $\hat\Phi^m$. By [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^thm-c6c-8-3|Theorem §C6c.8.3]], for pions of types $i, j, k, l \in \{1, \dots, N - 1\}$ the vertex factor is $-2i\lambda\,\bigl(\delta^{ij}\delta^{kl} + \delta^{ik}\delta^{jl} + \delta^{il}\delta^{jk}\bigr)$.
 >
-> **Step 4** (four sigmas). The term $\frac\lambda4\,\hat\sigma^4$ is the case of four legs of the same field (Step 6 of Derivation §C6c.8.3): the four particles contract with the four fields in $4!$ ways, and the vertex factor is $(-i)\cdot\frac\lambda4\cdot4! = -6i\lambda$.
+> **Step 4** (four sigmas). The term $\frac\lambda4\,\hat\sigma^4$ has a single field, as in the case of equal indices (Step 9 of Derivation §C6c.8.3): the four particles contract with the four fields in $4!$ ways, and the vertex factor is $(-i)\cdot\frac\lambda4\cdot4! = -6i\lambda$.
 >
 > **Step 5** (three sigmas). The first-order term is
 >
