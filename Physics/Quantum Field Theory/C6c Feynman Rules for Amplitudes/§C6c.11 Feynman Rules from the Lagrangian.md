@@ -259,7 +259,7 @@ The lectures derived each set of Feynman rules from contractions: $\phi^4$ theor
 >
 > **Step 3** (part 2: no counting). A term $\bar\psi_c\,\Gamma_{cd}\,\psi_d\,X$, with $X$ a product of bosonic fields, has one factor $\bar\psi$ and one factor $\psi$. The line that leaves the vertex can attach only to $\bar\psi$ and the line that arrives only to $\psi$ ([[§C6d.1 Yukawa Theory#^def-c6d-1-1|Def. §C6d.1.1]]): there is one assignment and nothing to count.
 >
-> **Step 4** (part 2: the derivatives and the sign). The left derivative removes a field standing at the left end of a product, the right derivative one standing at the right end ([[§CB.23 Grassmann Algebras#^def-cb-23-5|Def. §CB.23.5]], [[§CB.23 Grassmann Algebras#^def-cb-23-6|Def. §CB.23.6]]); neither field has to be moved past another anticommuting symbol, so no sign appears:
+> **Step 4** (part 2: the derivatives and the sign). The left derivative removes a field standing at the left end of a product, the right derivative one standing at the right end ([[§CB.23 Grassmann Algebras#^def-cb-23-5|Def. §CB.23.5]], [[§CB.23 Grassmann Algebras#^def-cb-23-6|Def. §CB.23.6]]; in the course's use, [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-3|§C5b.1, ★ Caution: Which side a Grassmann derivative acts from]]); neither field has to be moved past another anticommuting symbol, so no sign appears:
 >
 > $$
 > \frac{\partial}{\partial\bar\psi_a}\,\bigl(\bar\psi_c\,\Gamma_{cd}\,\psi_d\bigr)\,\frac{\overleftarrow\partial}{\partial\psi_b} = \delta_{ac}\,\Gamma_{cd}\,\delta_{db} = \Gamma_{ab} .
