@@ -304,6 +304,25 @@ The retraction of Lemma [[§37 Regular Submanifolds#^lem-37-7|§37.7]] for a cur
 
 So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) \subseteq T_pM$, the “intrinsic tangent space” inside the ambient one. The second description is the one from Assignment 3, Problem 2: think of a curve in $S$ composed with the inclusion as a curve in $M$, and take its velocity there.
 
+> [!theorem] Corollary §37.10: The Inclusion of a Regular Submanifold
+> Let $S \subseteq M$ be a regular submanifold, with its induced smooth structure (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]), and $\iota : S \to M$ the inclusion. Then:
+>
+> 1. $\iota$ is an injective immersion (Definition [[§36 Submersions#^def-36-2|§36.2]]);
+> 2. $\iota$ is a homeomorphism of $S$ onto its image $\iota(S) = S$, the image carrying the subspace topology of $M$.
+
+^cor-37-10
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* (1) $\iota$ is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1)), and $\iota_{\ast p}$ is injective for every $p \in S$ (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]); so $\iota$ is an immersion. It is injective because it is an inclusion.
+>
+> (2) The topology of the manifold $S$ is the subspace topology of $M$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), and so is the topology of the image $\iota(S) = S$. So $\iota : S \to \iota(S)$ is the identity map of one topological space, a homeomorphism.
+
+^pf-37-10
+
+*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
+
+A regular submanifold is a subset, not a map; what is an immersion is its inclusion. A map with the two properties of the corollary is called an *embedding* (Definition [[§41 Embeddings#^def-41-1|§41.1]]), and conversely the image of every embedding is a regular submanifold: the regular submanifolds are exactly the images of embeddings (Theorem [[§41 Embeddings#^thm-41-5|§41.5]]).
+
 > [!theorem] Proposition §37.11: Adapted Charts Give Local Defining Maps
 > Let $S \subseteq M$ be a regular submanifold of codimension $k$ and $(U, \varphi = (x_a, x_b))$ a chart adapted to $S$, with $x_b = (x^{m-k+1}, \ldots, x^m) : U \to \mathbb{R}^k$, a map from the open submanifold $U$ to $\mathbb{R}^k$ with its standard coordinates $r^1, \ldots, r^k$.
 >

@@ -67,12 +67,12 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§37 Regular Submanifolds\|§37]] Regular submanifolds | Chapter 5, *Embedded Submanifolds* (Theorem 5.8, Corollary 5.30, Propositions 5.35 and 5.37) |
 | [[§38 The Regular Value Theorem for Manifolds\|§38]] The regular value theorem for manifolds | Chapter 5 (Corollary 5.14, Proposition 5.38) |
 | [[§39 Transversality and Lagrange Multipliers\|§39]] Transversality and Lagrange multipliers | Chapter 6, *Transversality* (Theorem 6.30) |
-| [[§45 Fibrations\|§45]] Fibrations | smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee |
-| [[§48 The Normal Bundle of a Submanifold of Euclidean Space\|§48]] The normal bundle of a submanifold of Euclidean space | Chapter 6, *Tubular Neighborhoods* (the normal bundle $NM \subseteq \mathbb{R}^n \times \mathbb{R}^n$ and the map $E(x, v) = x + v$); focal points are not in Lee (Milnor, *Morse Theory*, §6) |
 | [[§40 Immersions\|§40]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
-| [[§41 Embeddings\|§41]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
+| [[§41 Embeddings\|§41]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2, Theorems 5.8 and 5.31; Theorem A.57; Proposition 1.12 |
 | [[§42 Geometric and Abstract Manifolds\|§42]] Geometric and abstract manifolds (comparison) | Chapters 1, 3 and 5 (overview); Theorem 6.15 (Whitney embedding) |
 | [[§43 The Unit Quaternions and SU(2)\|§43]]–[[§44 SU(2) → SO(3)꞉ The Double Cover\|§44]] The unit quaternions and the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
+| [[§45 Fibrations\|§45]] Fibrations | smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee |
+| [[§48 The Normal Bundle of a Submanifold of Euclidean Space\|§48]] The normal bundle of a submanifold of Euclidean space | Chapter 6, *Tubular Neighborhoods* (the normal bundle $NM \subseteq \mathbb{R}^n \times \mathbb{R}^n$ and the map $E(x, v) = x + v$); focal points are not in Lee (Milnor, *Morse Theory*, §6) |
 | [[§49 Recap꞉ Germs, Derivations and Tangent Vectors\|§49]]–[[§50 Recap꞉ Covectors and the Four Differentials\|§50]] Recaps: tangent vectors, covectors | Chapters 3 and 11 (overview) |
 | [[§51 The Tangent Bundle\|§51]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18) |
 | [[§52 The Cotangent Bundle\|§52]] The cotangent bundle | Chapter 11, *The Cotangent Bundle* (Proposition 11.9); Lemma 1.35 |
@@ -165,11 +165,12 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 4.22 | [[§41 Embeddings#^thm-41-7\|Thm. §41.7]], [[§41 Embeddings#^cor-41-8\|Cor. §41.8]] |
 | Proposition 4.28 | [[§36 Submersions#^cor-36-9\|Cor. §36.9]] |
 | Problem 4-5 | [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4\|Prop. §18.4]], [[§47 The Hopf Fibration#^ex-47-1\|Ex. §47.1]], [[§47 The Hopf Fibration#^ex-47-2\|Ex. §47.2]] |
-| Proposition 5.2 | [[§41 Embeddings#^thm-41-1\|Thm. §41.1]] |
+| Proposition 5.2 | [[§41 Embeddings#^thm-41-1\|Thm. §41.1]], [[§41 Embeddings#^thm-41-5\|Thm. §41.5]] |
 | Proposition 5.5 | [[§41 Embeddings#^prop-41-12\|Prop. §41.12]] |
-| Theorem 5.8 | [[§37 Regular Submanifolds#^def-37-2\|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3\|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-3\|Prop. §37.3]] |
+| Theorem 5.8 | [[§37 Regular Submanifolds#^def-37-2\|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3\|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-3\|Prop. §37.3]], [[§41 Embeddings#^thm-41-5\|Thm. §41.5]] |
 | Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-6\|Thm. §7.6]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|Thm. §38.2]] |
 | Corollary 5.30 | [[§37 Regular Submanifolds#^lem-37-5\|Lem. §37.5]] |
+| Theorem 5.31 | [[§41 Embeddings#^thm-41-5\|Thm. §41.5]] |
 | Lemma 5.34 | [[§65 Partitions of Unity#^prop-65-10\|Prop. §65.10]], [[§37 Regular Submanifolds#^lem-37-8\|Lem. §37.8]] |
 | Proposition 5.35 | [[§37 Regular Submanifolds#^prop-37-9\|Prop. §37.9]] |
 | Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9\|Thm. §29.9]], [[§37 Regular Submanifolds#^prop-37-9\|Prop. §37.9]] |

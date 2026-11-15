@@ -225,6 +225,8 @@ The Jacobian $\tilde F'(\varphi(p))$ is invertible by Theorem [[§30 The Differe
 
 *Uses:* [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]]
 
+The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through the course: the second is the quotient map that defines $\mathbb{CP}^n$ in [[§9 Complex Projective Space|Complex Projective Space]], an orbit map in [[§13 Group Actions and Orbit Spaces#^ex-13-5|projective space as an orbit space]]; the first is the quotient map of [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]], and both are read in the standard atlases of [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; the example below shows that the first is a two-to-one local diffeomorphism, and [[§47 The Hopf Fibration|The Hopf Fibration]] that the second is a submersion and a fibration, the Hopf fibration, with local but no global sections; and for $n = 3$ the first returns as $S^3 = \mathrm{SU}(2) \to \mathrm{SO}(3) \cong \mathbb{RP}^3$ in [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-5|The Double Cover]].
+
 > [!example] Example §35.4: Spheres Cover Projective Spaces
 > The projection $\pi : S^n \to \mathbb{RP}^n$, $x \mapsto [x]$, is a local diffeomorphism, exactly two-to-one.
 
@@ -281,7 +283,8 @@ The Jacobian $\tilde F'(\varphi(p))$ is invertible by Theorem [[§30 The Differe
 
 ![[m591-16-a8.gif|460]]
 
-*(Not from lecture; animation added, vault only.)* The case $n = 1$ as a fibration with discrete fibre. A point $[x]$ moves around $\mathbb{RP}^1$ (drawn as a circle by doubling the angle); its fibre is the antipodal pair $\{x, -x\}$ (blue, red). Over an arc $V$ (orange) the preimage is two disjoint arcs, $\pi^{-1}(V) \cong V \times \{\pm 1\}$: a local trivialization with fibre the two-point space.
+*(Not from lecture; animation added, vault only.)* The case $n = 1$. A point $[x]$ moves around $\mathbb{RP}^1$ (drawn as a circle by doubling the angle); its fibre is the antipodal pair $\{x, -x\}$ (blue, red). Over an arc $V$ (orange) the preimage is two disjoint arcs, $\pi^{-1}(V) \cong V \times \{\pm 1\}$: each mapped diffeomorphically onto $V$ by $\pi$. In the language of [[§45 Fibrations|§45]], later, this is a local trivialization with fibre the two-point space.
 
 > [!remark]- Connections
 > - As a covering map of topological spaces, for $n = 2$: [[§38 Fundamental Group of Some Surfaces#^thm-38-1|590 §38.1]] ($S^2 \to P^2$ is a covering map).
+

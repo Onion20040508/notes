@@ -27,10 +27,10 @@ tags: [differentiable-manifolds, hub]
 - [[§39 Transversality and Lagrange Multipliers#^prop-39-7|Proposition §39.7: The Conormal Space of a Regular Level Set]]
 - [[§39 Transversality and Lagrange Multipliers#^thm-39-8|Theorem §39.8: Lagrange Multipliers]]
 - [[§39 Transversality and Lagrange Multipliers#^thm-39-9|Theorem §39.9: Transverse Intersections in a Manifold]]
-- [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-1|Proposition §48.1: The Normal Bundle Is a Submanifold]]
 - [[§43 The Unit Quaternions and SU(2)#^prop-43-4|Proposition §43.4: The Unit Quaternions]]
 - [[§44 SU(2) → SO(3)꞉ The Double Cover#^lem-44-1|Lemma §44.1: SO(3) Is a Regular Submanifold]]
 - [[§44 SU(2) → SO(3)꞉ The Double Cover#^prop-44-2|Proposition §44.2: Conjugation by Unit Quaternions Is Rotation]]
+- [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-1|Proposition §48.1: The Normal Bundle Is a Submanifold]]
 - [[§63 Sard's Theorem#^thm-63-3|Theorem §63.3: Sard's Theorem]]
 
 ## Connections

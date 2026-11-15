@@ -227,7 +227,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] 2021 midterm, Part 3.9: the differential of a restriction to an invariant submanifold.
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw2-5|HW2.5]], [[Differentiable Manifolds HW Drill#^hw5-2|HW5.2]], [[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]]
 
-## T8. Fibrations (§40–§42)
+## T8. Fibrations (§45–§48)
 **Language**
 - [ ] Definition [[§45 Fibrations#^def-45-1|§45.1]] Fibration, Definition [[§45 Fibrations#^def-45-2|§45.2]] Trivial Fibration, Definition [[§45 Fibrations#^def-45-3|§45.3]] Section, Definition [[§45 Fibrations#^def-45-4|§45.4]] Local Section, Definition [[§45 Fibrations#^def-45-5|§45.5]] Vertical Space
 - [ ] Vector bundle: your own box (see the gap above).
@@ -245,7 +245,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] 2021 midterm, Part 2.5: is every surjective submersion a fibration?
 - [ ] 2025 midterm, Part 1.3: explain a vector bundle.
 
-## T9. Immersions and embeddings (§43–§44)
+## T9. Immersions and embeddings (§40–§41)
 **Language**
 - [ ] Definition [[§36 Submersions#^def-36-2|§36.2]] Immersion, Definition [[§41 Embeddings#^def-41-1|§41.1]] Embedding, Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]] Proper Map, Definition [[§41 Embeddings#^def-41-2|§41.2]] Locally Closed Subset, Definition [[§41 Embeddings#^def-41-3|§41.3]] Immersed Submanifold
 

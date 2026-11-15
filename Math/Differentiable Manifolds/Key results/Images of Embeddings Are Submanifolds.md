@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 44.1", "embedded submanifold", "Lee Proposition 5.2"]
+aliases: ["MATH 591 41.1", "embedded submanifold", "Lee Proposition 5.2"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§41 Embeddings#^thm-41-1]]
@@ -23,11 +23,12 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§41 Embeddings#^prop-41-2|Proposition §41.2: Immersions That Are Open onto Their Images]]
 - [[§41 Embeddings#^cor-41-3|Corollary §41.3: An Embedding Is a Diffeomorphism onto Its Image]]
+- [[§41 Embeddings#^thm-41-5|Theorem §41.5: Regular Submanifolds Are the Images of Embeddings]]
 - [[§41 Embeddings#^prop-41-10|Proposition §41.10: Images of Embeddings Are Locally Closed]]
 - [[§41 Embeddings#^cor-41-11|Corollary §41.11: Dense Regular Submanifolds Are Open]]
-- [[§45 Fibrations#^prop-45-6|Proposition §45.6: Sections Are Closed Embeddings]]
 - [[§41 Embeddings#^prop-41-18|Proposition §41.18: When an Immersed Submanifold Is Regular]]
 - [[§43 The Unit Quaternions and SU(2)#^prop-43-5|Proposition §43.5: S³ Is SU(2)]]
+- [[§45 Fibrations#^prop-45-6|Proposition §45.6: Sections Are Closed Embeddings]]
 - [[§66 The Whitney Embedding Theorem#^thm-66-6|Theorem §66.6: The Whitney Theorems for Compact Manifolds]]
 - [[§66 The Whitney Embedding Theorem#^lem-66-8|Lemma §66.8: Proper Embeddings into ℝ²ᵐ⁺¹]]
 - [[§66 The Whitney Embedding Theorem#^prop-66-10|Proposition §66.10: Immersions into ℝ²ᵐ from Any Embedding]]

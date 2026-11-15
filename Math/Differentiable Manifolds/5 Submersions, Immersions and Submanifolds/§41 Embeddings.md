@@ -118,7 +118,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 >
 > *Two-to-one.* For $x, y \in S^2$, $[x] = [y]$ means $y = \lambda x$ for a real $\lambda \neq 0$; then $1 = |y| = |\lambda|\,|x| = |\lambda|$, so $\lambda = \pm 1$. Hence $\pi^{-1}([x]) = \{x, -x\}$, two distinct points since $x \neq 0$.
 >
-> *The image.* Every point of $\mathbb{RP}^2$ is a line $[y]$, $y \neq 0$, and $y/|y| \in S^2$ lies on it; so $\pi$ is onto. Its image $\mathbb{RP}^2$ is a smooth manifold (Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]]), a regular submanifold of codimension $0$ of itself (Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]](1)). That $\pi$ is a local diffeomorphism is Example [[§35 Local Diffeomorphisms#^ex-35-4|§35.4]], later.
+> *The image.* Every point of $\mathbb{RP}^2$ is a line $[y]$, $y \neq 0$, and $y/|y| \in S^2$ lies on it; so $\pi$ is onto. Its image $\mathbb{RP}^2$ is a smooth manifold (Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]]), a regular submanifold of codimension $0$ of itself (Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]](1)). That $\pi$ is a local diffeomorphism is Example [[§35 Local Diffeomorphisms#^ex-35-4|§35.4]].
 
 ^ex-41-2
 
@@ -170,9 +170,59 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 *Uses:* [[§41 Embeddings#^thm-41-1|§41.1]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§36 Submersions#^prop-36-1|§36.1]], [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]], [[§41 Embeddings#^def-41-1|Def. §41.1]]
 
+> [!theorem] Lemma §41.4: Smooth Structures Related by the Identity
+> Let $\mathcal{A}$ and $\mathcal{B}$ be two smooth structures on the same topological manifold $S$ (Definition [[§17 Differentiable Structures#^def-17-11|§17.11]]). If the identity map $\mathrm{id}_S : (S, \mathcal{A}) \to (S, \mathcal{B})$ is a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]), then $\mathcal{A} = \mathcal{B}$.
+
+^lem-41-4
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* It is enough to show that the atlases $\mathcal{A}$ and $\mathcal{B}$ are compatible, since two atlases specify the same smooth structure exactly when they are compatible (Definition [[§17 Differentiable Structures#^def-17-11|§17.11]]; Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]), and $\mathcal{A}$, $\mathcal{B}$ are maximal. Let $(U, \varphi) \in \mathcal{A}$ and $(V, \psi) \in \mathcal{B}$ with $U \cap V \neq \emptyset$, and put $W = U \cap V$. The restrictions $(W, \varphi|_W)$ and $(W, \psi|_W)$ belong to $\mathcal{A}$ and $\mathcal{B}$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)). The identity is smooth from $(S, \mathcal{A})$ to $(S, \mathcal{B})$ and maps $W$ into $W$, so its coordinate representation in these two charts,
+>
+> $$
+> \psi|_W \circ \mathrm{id}_S \circ (\varphi|_W)^{-1} = \psi \circ \varphi^{-1} : \varphi(U \cap V) \longrightarrow \psi(U \cap V) ,
+> $$
+>
+> is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]). The inverse of the identity is the identity, smooth from $(S, \mathcal{B})$ to $(S, \mathcal{A})$; by the same proposition with the two charts exchanged, $\varphi \circ \psi^{-1} : \psi(U \cap V) \to \varphi(U \cap V)$ is smooth. So the transition function $\psi \circ \varphi^{-1}$ is a smooth bijection with smooth inverse, and the two charts are $C^\infty$-compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]). Hence $\mathcal{A}$ and $\mathcal{B}$ are compatible (Definition [[§17 Differentiable Structures#^def-17-9|§17.9]]).
+
+^pf-41-4
+
+*Uses:* [[§17 Differentiable Structures#^def-17-11|Def. §17.11]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-9|Def. §17.9]]
+
+> [!theorem] Theorem §41.5: Regular Submanifolds Are the Images of Embeddings
+> Let $N$ be a smooth manifold and $S \subseteq N$ a subset, with the subspace topology. The following are equivalent:
+>
+> 1. $S$ is a regular submanifold of $N$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]);
+> 2. $S = F(M)$ for an embedding $F : M \to N$ of some smooth manifold $M$ (Definition [[§41 Embeddings#^def-41-1|§41.1]]);
+> 3. $S$ is a topological manifold and carries a smooth structure for which the inclusion $\iota : S \to N$ is an embedding.
+>
+> In (3) the smooth structure is unique: it is the induced structure of Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]. In (2), $F : M \to S$ is a diffeomorphism for that structure.
+>
+> *Lee: Proposition 5.2; Theorems 5.8 and 5.31*
+
+^thm-41-5
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in. It collects Theorem [[§41 Embeddings#^thm-41-1|§41.1]], Corollary [[§41 Embeddings#^cor-41-3|§41.3]] and Corollary [[§37 Regular Submanifolds#^cor-37-10|§37.10]].)*
+>
+> *(1) $\Rightarrow$ (3).* Give $S$ its induced smooth structure (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]). By Corollary [[§37 Regular Submanifolds#^cor-37-10|§37.10]] the inclusion $\iota$ is an immersion and a homeomorphism onto its image, that is, an embedding (Definition [[§41 Embeddings#^def-41-1|§41.1]]).
+>
+> *(3) $\Rightarrow$ (2).* Take $M = S$ with the smooth structure of (3), and $F = \iota$; then $F(M) = S$.
+>
+> *(2) $\Rightarrow$ (1).* The image of an embedding is a regular submanifold (Theorem [[§41 Embeddings#^thm-41-1|§41.1]]).
+>
+> *Uniqueness in (3).* Let $\mathcal{A}$ be a smooth structure on $S$ for which $\iota : (S, \mathcal{A}) \to N$ is an embedding. Then $S = \iota(S)$ is a regular submanifold, by (2) $\Rightarrow$ (1); let $\mathcal{B}$ be its induced structure. By Corollary [[§41 Embeddings#^cor-41-3|§41.3]], applied to the embedding $\iota$, the map $\iota : (S, \mathcal{A}) \to (\iota(S), \mathcal{B})$ is a diffeomorphism; it is the identity map of $S$. So $\mathcal{A} = \mathcal{B}$ by Lemma [[§41 Embeddings#^lem-41-4|§41.4]].
+>
+> *The last sentence.* This is Corollary [[§41 Embeddings#^cor-41-3|§41.3]].
+
+^pf-41-5
+
+*Uses:* [[§41 Embeddings#^thm-41-1|§41.1]], [[§41 Embeddings#^cor-41-3|§41.3]], [[§37 Regular Submanifolds#^cor-37-10|§37.10]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§41 Embeddings#^def-41-1|Def. §41.1]], [[§41 Embeddings#^lem-41-4|§41.4]]
+
+Lee takes (3) as the definition of an embedded submanifold and proves the slice condition (1) from it (his Theorem 5.8); these notes go the other way, as the lectures did. Either way, a regular submanifold and the image of an embedding are the same thing, and the inclusion of a regular submanifold is an embedding. For injective immersions that are not embeddings, the image is only an immersed submanifold ([[§41 Embeddings|§41]]).
+
 ## Proper Maps
 
-*Lecture 14. When is an injective immersion an embedding? The homeomorphism condition is point-set topology, and a convenient sufficient condition is properness — the same hypothesis as in Ehresmann's theorem (Theorem [[§45 Fibrations#^thm-45-3|§45.3]]).*
+*Lecture 14. When is an injective immersion an embedding? The homeomorphism condition is point-set topology, and a convenient sufficient condition is properness — the same hypothesis as in Ehresmann's theorem (Theorem [[§45 Fibrations#^thm-45-3|§45.3]], in [[§45 Fibrations|§45]]).*
 
 ![[§13 Group Actions and Orbit Spaces#^def-13-6]]
 
@@ -320,6 +370,8 @@ This is the precise form of the statement that no shrinking of $V$ isolates the 
 ^pf-41-12
 
 *Uses:* [[§41 Embeddings#^def-41-1|Def. §41.1]], [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]], [[§41 Embeddings#^prop-41-6|§41.6]], [[§41 Embeddings#^thm-41-7|§41.7]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]], [[§18 Compact Spaces#^thm-18-2|590 §18.2]], [[§18 Compact Spaces#^thm-18-3|590 §18.3]]
+
+The sections of a fibration are closed embeddings of this kind: Proposition [[§45 Fibrations#^prop-45-6|§45.6]], in [[§45 Fibrations|§45]].
 
 | Map | Image | Example separating it from the row above |
 |---|---|---|

@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: recap — The two pictures of a manifold — a subset of Euclidean space, and a space with an atlas — set side by side, definition by definition and theorem by theorem, with the result that bridges each pair.*
 
-*Not from lecture: a comparison written for these notes in Chapter 6, after immersions and embeddings, when every bridge between the two pictures is in place. Nothing here is new; every object is defined, and every fact proved, where the cross-reference points.*
+*Not from lecture: a comparison written for these notes in Chapter 5, after immersions and embeddings, when every bridge between the two pictures is in place. Nothing here is new; every object is defined, and every fact proved, where the cross-reference points.*
 
 The course has built manifolds in two ways. The *geometric* picture is the equations thread of the roadmap: a manifold is a subset of some $\mathbb{R}^N$, cut out by equations or swept out by a parametrization, and everything — smoothness, tangent vectors, differentials, regular values — is inherited from the ambient space. The *abstract* picture needs no ambient space: a manifold is a topological space with a maximal smooth atlas, and every notion is defined through charts. Almost every definition and theorem of the geometric picture has a counterpart in the abstract one, usually proved by reducing to the geometric version in charts. Each part below lists the pairs one to one, recalls the central ones verbatim, and names the result that shows the two agree wherever both make sense.
 

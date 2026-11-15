@@ -7,9 +7,9 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§45 Fibrations]] · ↑ [[· 6 Fibrations and Bundles]] · [[§47 The Hopf Fibration]] →
 
-*Stage: bundles — The trivial fibrations, the Möbius band with its two trivializations and their half-twist, and where the other fibrations of the course appear; the normal bundle of a submanifold of $\mathbb{R}^n$ follows in the next section.*
+*Stage: bundles — The trivial fibrations, the Möbius band with its two trivializations and their half-twist, the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ as a fibration with two-point fibre, and where the other fibrations of the course appear.*
 
-*The examples of [[§45 Fibrations|§45]], collected: the product fibrations, which every fibration imitates locally, and the Möbius band (Lecture 12), the first fibration that is not a product. The non-examples — a submersion that is not a fibration, and one whose fibres are all diffeomorphic but which is still not a fibration — stay with Ehresmann's theorem in [[§45 Fibrations|§45]], whose hypotheses they explain. The normal bundle of a submanifold of $\mathbb{R}^n$ (Assignment 5), a fibration with fibre $\mathbb{R}^{n-m}$, has the next section to itself ([[§48 The Normal Bundle of a Submanifold of Euclidean Space|§48]]), with its endpoint map and focal points.*
+*The examples of [[§45 Fibrations|§45]], collected: the product fibrations, which every fibration imitates locally, and the Möbius band (Lecture 12), the first fibration that is not a product. The non-examples — a submersion that is not a fibration, and one whose fibres are all diffeomorphic but which is still not a fibration — stay with Ehresmann's theorem in [[§45 Fibrations|§45]], whose hypotheses they explain. The normal bundle of a submanifold of $\mathbb{R}^n$ (Assignment 5), a fibration with fibre $\mathbb{R}^{n-m}$, has a section to itself ([[§48 The Normal Bundle of a Submanifold of Euclidean Space|§48]]), with its endpoint map and focal points.*
 
 > [!remark] Remark: Where Explicit Trivializations Come From
 > *(Not from lecture.)* In Definition [[§45 Fibrations#^def-45-1|§45.1]] the local trivializations $\phi_\alpha$ are part of the data: a fibration has some, and nothing in the definition says how to find them — the charts of the base $B$ carry no information about the total space or the fibre. So a fibration is a map that is, over each $U_\alpha$, a product fibration (Example [[§46 Examples of Fibrations#^ex-46-1|§46.1]]), but there is no general formula for $\phi_\alpha$. Explicit trivializations come from extra structure:
@@ -171,6 +171,10 @@ The sign in (3) is the half-twist: going once around the circle, the two trivial
 
 *Uses:* [[§46 Examples of Fibrations#^prop-46-1|§46.1]]
 
+## A Fibration with Two-Point Fibre
+
+*(Not from lecture.)* A fibre need not be connected. The double cover of Theorem [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-5|§44.5]] is a fibration whose fibre has two points.
+
 > [!theorem] Corollary §46.3: $\mathrm{SU}(2) \to \mathrm{SO}(3)$ Is a Fibration with Two-Point Fibre
 > The map $G : \mathrm{SU}(2) \to \mathrm{SO}(3)$ of Theorem [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-5|§44.5]] is a fibration (Definition [[§45 Fibrations#^def-45-1|§45.1]]) whose fibre is two points; every fibre is $G^{-1}(A) = \{\pm g\}$, for any $g$ with $G(g) = A$. So $G$ is a double cover.
 
@@ -192,8 +196,8 @@ The sign in (3) is the half-twist: going once around the circle, the two trivial
 
 ## Further Examples
 
-*(Not from lecture: a guide to the fibrations that appear later.)*
+*(Not from lecture: a guide to the other fibrations of these notes.)*
 - *The Hopf fibration* $S^{2n+1} \to \mathbb{CP}^n$, with fibre $S^1$ and the explicit trivializations $\phi_j(z) = ([z], z_j/|z_j|)$ (Example [[§47 The Hopf Fibration#^ex-47-2|§47.2]]); it has local sections but no global one (Corollary [[§47 The Hopf Fibration#^cor-47-2|§47.2]]).
-- *The normal bundle* $\mathcal{N} \to M$ of a submanifold $M \subseteq \mathbb{R}^n$, with fibre $\mathbb{R}^{n-m}$ (Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|§48.2]], in the next section, [[§48 The Normal Bundle of a Submanifold of Euclidean Space|§48]]).
+- *The normal bundle* $\mathcal{N} \to M$ of a submanifold $M \subseteq \mathbb{R}^n$, with fibre $\mathbb{R}^{n-m}$ (Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|§48.2]], in [[§48 The Normal Bundle of a Submanifold of Euclidean Space|§48]]).
 - *The tangent and cotangent bundles* $TM \to M$ and $T^{\ast}M \to M$, with fibre $\mathbb{R}^m$, whose trivializations come from charts of $M$ (Corollaries [[§51 The Tangent Bundle#^cor-51-5|§51.5]] and [[§52 The Cotangent Bundle#^cor-52-3|§52.3]]).
-- *Two-to-one local diffeomorphisms*: $S^n \to \mathbb{RP}^n$ (Example [[§35 Local Diffeomorphisms#^ex-35-4|§35.4]]) and $\mathrm{SU}(2) \to \mathrm{SO}(3)$ (Theorem [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-5|§44.5]]). These are fibrations with a two-point fibre (two-sheeted coverings); the notes prove the local-diffeomorphism and two-to-one statements, not the fibration property.
+- *Two-to-one local diffeomorphisms*: $S^n \to \mathbb{RP}^n$ (Example [[§35 Local Diffeomorphisms#^ex-35-4|§35.4]]) and $\mathrm{SU}(2) \to \mathrm{SO}(3)$ (Theorem [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-5|§44.5]]). These are fibrations with a two-point fibre (two-sheeted coverings). For $\mathrm{SU}(2) \to \mathrm{SO}(3)$ this is Corollary [[§46 Examples of Fibrations#^cor-46-3|§46.3]] above; for $S^n \to \mathbb{RP}^n$ the notes prove the local-diffeomorphism and two-to-one statements, not the fibration property.

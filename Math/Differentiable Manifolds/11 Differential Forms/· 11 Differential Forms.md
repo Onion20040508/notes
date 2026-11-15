@@ -9,7 +9,7 @@ tags: [chapter, differentiable-manifolds]
 
 *Lecture 28. This chapter, planned to run until Thanksgiving, is differential forms and Stokes' theorem; it follows Lee, Chapters 14–16. It will need manifolds with boundary, orientations, integrals of forms, and the general Stokes theorem $\int_{\partial S} \alpha = \int_S d\alpha$. It opens with the theorem to be generalized, recalled from Calculus III in this course's notation ([[§73 Stokes' Theorem in Calculus III|§73]]); [[§74 The Integrand Is a Two-Form|§74]] reads its surface integrand as a two-form, and the multilinear algebra of $k$-forms follows: [[§75 Multilinear Algebra|§75]] defines the linear $k$-forms on a vector space and finds a basis of $\Lambda^k V^{\ast}$, and [[§76 The Wedge Product|§76]] (Lectures 29–30) defines the wedge product and proves its properties: it is bilinear, associative and graded anticommutative, and a product of one-forms is a determinant.*
 
-**Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (9), [[· 3 Smooth Structures|3 Smooth Structures]] (5), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (1)
+**Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (9), [[· 3 Smooth Structures|3 Smooth Structures]] (5), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (1)
 **Used by:** —
 **Builds on (other subjects):** —
 

@@ -25,7 +25,7 @@ The route of each proof in the notes is folded under **Hints**. Results that are
 3. **Homework technique**: filled in by the notes, but its proof uses a strategy the homework drills often (S1, S2, S4, S5, S6, S7, S8, S9, S10, S13, S14, S15).
 4. **Notes only**: optional before the midterm.
 
-Entries: 63 homework, 205 class, 13 homework technique, 21 notes only (Lie-group entries excluded).
+Entries: 63 homework, 204 class, 14 homework technique, 21 notes only (Lie-group entries excluded).
 
 # T1. Topological manifolds, quotients, group actions
 
@@ -3688,27 +3688,6 @@ For $E=(\mathbb{R}\times(-1,1))/\sim$, $(s,t)\sim(s+n,(-1)^nt)$: $E$ is a topolo
 > - Transition: $(s,t)$ for $\tfrac12<s<1$, $(s+1,-t)$ for $0<s<\tfrac12$.
 > - $\phi_a=(\chi_a^{-1}\times\mathrm{id})\circ\psi_a$. Non-triviality is stated, not proved: one boundary curve versus two.
 
-#### The normal bundle is a fibration · P2
-
-Over a chart $(U,\varphi)$ of $\mathbb{R}^n$ adapted to $M$, with $J(q)=G'(q)$, $G=(x^{m+1},\dots,x^n)$: $J(q)J(q)^{\mathsf T}$ is invertible on $U$, $\Phi_U(q,v)=(q,(JJ^{\mathsf T})^{-1}Jv)$ is a diffeomorphism $\pi^{-1}(U\cap M)\to(U\cap M)\times\mathbb{R}^{n-m}$ with inverse $(q,c)\mapsto(q,J^{\mathsf T}c)$, linear on fibres; so $\pi:\mathcal{N}\to M$ is a fibration with fibre $\mathbb{R}^{n-m}$, see Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|§48.2]]. *Source: filled in (not from the assignment).*
-
-^nd-prop-40-2
-
-- [ ] Q1 **[state]** State the three parts.
-- [ ] Q2 Why is $\pi$ smooth, and why is $\pi^{-1}(U\cap M)=\mathcal{N}\cap(U\times\mathbb{R}^n)$ open in $\mathcal{N}$?
-- [ ] Q3 (1) Why do the gradients $\nabla G^s(q)$ form a basis of $(T^{\mathrm{geo}}_qM)^\perp$? Why is $JJ^{\mathsf T}$ invertible at every $q\in U$?
-- [ ] Q4 (2) Check that $\Phi_U$ and $\Theta_U(q,c)=(q,J^{\mathsf T}c)$ land in the right sets and are mutually inverse.
-- [ ] Q5 (2) Why is $\Phi_U$ smooth? Why is $\Theta_U$ smooth as a map into $\mathcal{N}$?
-- [ ] Q6 (3) Assemble the fibration: open cover, trivializations, commuting triangle.
-- [ ] Q7 **[why]** Where is it used that $J(q)$ has rank $n-m$ at every $q\in U$, and not only at points of $M$?
-
-> [!tip]- Hints: route of the proof in the notes
-> - Strategy: S1, S7; recipe of the remark *Where Explicit Trivializations Come From* (a smoothly varying basis of each fibre).
-> - (1) Lemma [[§37 Regular Submanifolds#^lem-37-14|§37.14]](4); $JJ^{\mathsf T}c=0$ gives $|J^{\mathsf T}c|^2=0$, and $c\mapsto J^{\mathsf T}c$ is injective.
-> - (2) $(JJ^{\mathsf T})^{-1}JJ^{\mathsf T}c=c$; for $v=J^{\mathsf T}c$, $J^{\mathsf T}(JJ^{\mathsf T})^{-1}Jv=v$.
-> - Smooth: entries of $(JJ^{\mathsf T})^{-1}$ by the cofactor formula; $\Theta_U$ smooth into $\mathbb{R}^{2n}$ with values in $\mathcal{N}$, then Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2).
-> - Q7: the formula $\hat\Phi$ is written on all of $U\times\mathbb{R}^n$, which needs $\det(JJ^{\mathsf T})\neq0$ on $U$.
-
 #### Spheres cover projective spaces · P2
 
 $\pi:S^n\to\mathbb{RP}^n$, $x\mapsto[x]$, is a local diffeomorphism and exactly two-to-one, see Example [[§35 Local Diffeomorphisms#^ex-35-4|§35.4]]. *Source: stated in Lecture 10 as an example, without proof; filled in.* **[class exercise, Lecture 10]**
@@ -3764,6 +3743,29 @@ $\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$, is a fibration with fibre $S^1$, w
 > - $\psi_j$ in the chart is $(u,\lambda)\mapsto\lambda\hat w(u)/|\hat w(u)|$ with $|\hat w(u)|\ge1$.
 > - $\psi_j(\phi_j(z))=\frac{z_j}{|z_j|}\cdot\frac{z}{z_j}\cdot\frac{|z_j|}{|z|}=z$.
 > - Q6: a global trivialization $S^{2n+1}\cong\mathbb{CP}^n\times S^1$ (the fundamental group rules it out).
+
+### Priority 3 · filled in, using a technique the homework drills
+
+#### The normal bundle is a fibration · P3
+
+Over a chart $(U,\varphi)$ of $\mathbb{R}^n$ adapted to $M$, with $J(q)=G'(q)$, $G=(x^{m+1},\dots,x^n)$: $J(q)J(q)^{\mathsf T}$ is invertible on $U$, $\Phi_U(q,v)=(q,(JJ^{\mathsf T})^{-1}Jv)$ is a diffeomorphism $\pi^{-1}(U\cap M)\to(U\cap M)\times\mathbb{R}^{n-m}$ with inverse $(q,c)\mapsto(q,J^{\mathsf T}c)$, linear on fibres; so $\pi:\mathcal{N}\to M$ is a fibration with fibre $\mathbb{R}^{n-m}$, see Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|§48.2]]. *Source: filled in (not from the assignment).*
+
+^nd-prop-40-2
+
+- [ ] Q1 **[state]** State the three parts.
+- [ ] Q2 Why is $\pi$ smooth, and why is $\pi^{-1}(U\cap M)=\mathcal{N}\cap(U\times\mathbb{R}^n)$ open in $\mathcal{N}$?
+- [ ] Q3 (1) Why do the gradients $\nabla G^s(q)$ form a basis of $(T^{\mathrm{geo}}_qM)^\perp$? Why is $JJ^{\mathsf T}$ invertible at every $q\in U$?
+- [ ] Q4 (2) Check that $\Phi_U$ and $\Theta_U(q,c)=(q,J^{\mathsf T}c)$ land in the right sets and are mutually inverse.
+- [ ] Q5 (2) Why is $\Phi_U$ smooth? Why is $\Theta_U$ smooth as a map into $\mathcal{N}$?
+- [ ] Q6 (3) Assemble the fibration: open cover, trivializations, commuting triangle.
+- [ ] Q7 **[why]** Where is it used that $J(q)$ has rank $n-m$ at every $q\in U$, and not only at points of $M$?
+
+> [!tip]- Hints: route of the proof in the notes
+> - Strategy: S1, S7; recipe of the remark *Where Explicit Trivializations Come From* (a smoothly varying basis of each fibre).
+> - (1) Lemma [[§37 Regular Submanifolds#^lem-37-14|§37.14]](4); $JJ^{\mathsf T}c=0$ gives $|J^{\mathsf T}c|^2=0$, and $c\mapsto J^{\mathsf T}c$ is injective.
+> - (2) $(JJ^{\mathsf T})^{-1}JJ^{\mathsf T}c=c$; for $v=J^{\mathsf T}c$, $J^{\mathsf T}(JJ^{\mathsf T})^{-1}Jv=v$.
+> - Smooth: entries of $(JJ^{\mathsf T})^{-1}$ by the cofactor formula; $\Theta_U$ smooth into $\mathbb{R}^{2n}$ with values in $\mathcal{N}$, then Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2).
+> - Q7: the formula $\hat\Phi$ is written on all of $U\times\mathbb{R}^n$, which needs $\det(JJ^{\mathsf T})\neq0$ on $U$.
 
 # T9. Immersions and embeddings
 

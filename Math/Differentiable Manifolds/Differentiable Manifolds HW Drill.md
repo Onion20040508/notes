@@ -687,7 +687,7 @@ Conjugation gives a 2–1 group morphism $S^3 \to SO(3)$ (assume these facts), h
 >
 > **Key results.** $S^3 \cong SU(2)$ [[§43 The Unit Quaternions and SU(2)#^prop-43-5|Prop §43.5]]; tangent space at the identity [[§43 The Unit Quaternions and SU(2)#^prop-43-6|Prop §43.6]] (part (a)); computing differentials by curves [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|Cor §31.5]]; conjugation is rotation [[§44 SU(2) → SO(3)꞉ The Double Cover#^prop-44-2|Prop §44.2]]; translating the differential [[§44 SU(2) → SO(3)꞉ The Double Cover#^lem-44-4|Lem §44.4]]; [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-5|Thm §44.5]] (part (b)); inverse function theorem [[§35 Local Diffeomorphisms#^thm-35-1|Thm §35.1]]; local diffeomorphisms detected by the differential [[§35 Local Diffeomorphisms#^thm-35-2|Thm §35.2]]; tangent space of a sphere [[§25 The Geometric Tangent Space#^ex-25-1|Ex §25.1]].
 >
-> **Difficulty 3.** Submitted solution: very long. It builds hyperspherical adapted charts to prove $S^3$ and $SU(2)$ are submanifolds and to compute $T_1S^3$, where the RVT for $|x|^2 = 1$ does it in one line. Results: $\sigma_1 = \begin{pmatrix} -i & 0\\ 0 & i\end{pmatrix}$, $\sigma_2 = \begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix}$, $\sigma_3 = \begin{pmatrix} 0 & -i\\ -i & 0\end{pmatrix}$, and $dG_I(\sigma_j) = 2\hat e_j$. It takes as given that $SO(3)$ is a 3-dimensional submanifold. The notes (§45–§46) reorganize it and prove the facts the problem allowed to be assumed.
+> **Difficulty 3.** Submitted solution: very long. It builds hyperspherical adapted charts to prove $S^3$ and $SU(2)$ are submanifolds and to compute $T_1S^3$, where the RVT for $|x|^2 = 1$ does it in one line. Results: $\sigma_1 = \begin{pmatrix} -i & 0\\ 0 & i\end{pmatrix}$, $\sigma_2 = \begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix}$, $\sigma_3 = \begin{pmatrix} 0 & -i\\ -i & 0\end{pmatrix}$, and $dG_I(\sigma_j) = 2\hat e_j$. It takes as given that $SO(3)$ is a 3-dimensional submanifold. The notes (§43–§44) reorganize it and prove the facts the problem allowed to be assumed.
 
 ### HW4.4 Local sections and trivializations of the Hopf fibration
 
@@ -700,7 +700,7 @@ $\Pi : S^{2n+1} \to \mathbb{CP}^n$, $U_i$ as in HW2.2. Show there is a smooth $s
 - [ ] Q3 Show each $z \in \Pi^{-1}(U_i)$ is $\lambda\,s_i(\Pi(z))$ for a unique $\lambda \in S^1$, namely $z_i/|z_i|$.
 - [ ] Q4 Write $\Phi_i$ and $\Psi_i$, check they are inverse, equivariant, and that $\mathrm{pr}_1\circ\Phi_i = \Pi$.
 - [ ] Q5 Justify smoothness of $\Phi_i$, $\Psi_i$ (maps into the submanifolds $S^{2n+1}$ and $S^1$).
-- [ ] Q6 **[why]** Why only local sections: why is there no global section for $n \ge 1$ (Cor §46.2)?
+- [ ] Q6 **[why]** Why only local sections: why is there no global section for $n \ge 1$ (Cor §47.2)?
 - [ ] Q7 **[why]** Why is the second component $z_i/|z_i|$ rather than $z_i$, and why must $s_i(u)$ have positive real $i$-th entry for $\Phi_i\circ s_i = (\cdot, 1)$?
 
 > [!tip]- Hints: definitions, results, strategy
@@ -741,7 +741,7 @@ Show the image of $\gamma$ is dense in $T$, and deduce $\gamma$ is not an embedd
 - [ ] Q5 State Dirichlet's lemma and show $\gamma(n_N) \to \gamma(0)$ with $n_N \ge 1$.
 - [ ] Q6 Show $\{e^{2\pi i\alpha k}\}_{k\in\mathbb{Z}}$ is dense in $S^1$ (powers of $w_N = e^{i\theta_N}$ with $0 < |\theta_N| < 2\pi/N$), and deduce $\gamma(\mathbb{R})$ dense.
 - [ ] Q7 Show $\gamma^{-1} : \gamma(\mathbb{R}) \to \mathbb{R}$ is not continuous.
-- [ ] Q8 Second proof: images of embeddings are locally closed (Prop §44.7); a dense locally closed set is open (Cor §44.8). Why is $\gamma(\mathbb{R})$ not open in $T$?
+- [ ] Q8 Second proof: images of embeddings are locally closed (Prop §41.10); a dense locally closed set is open (Cor §41.11). Why is $\gamma(\mathbb{R})$ not open in $T$?
 - [ ] Q9 **[why]** What if $\alpha$ is rational? Is $\gamma$ injective; what is its image?
 
 > [!tip]- Hint (b): strategy
@@ -803,7 +803,7 @@ $F : M \to N$ smooth, $S \subset N$ a regular submanifold, $F$ transverse to $S$
 >
 > **Strategy (S12, S11, S8, S6).** Locally $S = x_b^{-1}(0)$ with $x_b$ a submersion; transversality makes $x_b\circ F$ a submersion at $p$ (the HW2.5 lifting); RVT or normal form gives an adapted chart; tangent space by "$\subseteq$ + dimension count".
 >
-> **Difficulty 2.** Submitted solution: complete but long (explicit translation and permutation of the normal-form chart). The notes record two completed steps: the normal form is applied at a single point, and $\ker(x_b)_\ast$ is computed directly (now Prop §37.7 and Lem §38.1).
+> **Difficulty 2.** Submitted solution: complete but long (explicit translation and permutation of the normal-form chart). The notes record two completed steps: the normal form is applied at a single point, and $\ker(x_b)_\ast$ is computed directly (now Prop §37.11 and Lem §38.1).
 
 ### HW5.3 Morse functions and the zero section
 
@@ -924,7 +924,7 @@ $E(p,v) = p + v$; $q$ is a focal point if $q = E(p,v)$ with $dE_{(p,v)}$ not of 
 - [ ] Q8 Show $T_pM = \mathrm{span}\{(1,2a)\}$, $(T_pM)^\perp = \mathrm{span}\{(-2a,1)\}$, and that $\Psi$ is a diffeomorphism $\mathbb{R}^2 \to \mathcal{N}$.
 - [ ] Q9 Compute $E\circ\Psi$, its Jacobian determinant, and the critical set.
 - [ ] Q10 Obtain $r(a)$; locate its cusp.
-- [ ] Q11 **[why]** Why is the rank of $dE$ the rank of $D(E\circ\Psi)$? Interpret $\lambda|(-2a,1)|$ as the radius of curvature (remark Focal Points Are Centres of Curvature in §40).
+- [ ] Q11 **[why]** Why is the rank of $dE$ the rank of $D(E\circ\Psi)$? Interpret $\lambda|(-2a,1)|$ as the radius of curvature (Example §48.2, The Focal Points of the Parabola Are Its Centres of Curvature).
 
 > [!tip]- Hint (b): strategy
 > **Strategy (S1).** Global chart $\Psi(a,\lambda) = ((a,a^2), \lambda(-2a,1))$; $\det D(E\circ\Psi) = 1 - 2\lambda + 4a^2$; substitute $\lambda = (1+4a^2)/2$.
@@ -934,7 +934,7 @@ $E(p,v) = p + v$; $q$ is a focal point if $q = E(p,v)$ with $dE_{(p,v)}$ not of 
 >
 > **Key results.** [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-1|Prop §48.1]] (part (a)); adapted chart of a submanifold of $\mathbb{R}^n$ [[§37 Regular Submanifolds#^lem-37-14|Lem §37.14]]; fourth description [[§37 Regular Submanifolds#^prop-37-13|Prop §37.13]]; normal bundle is a fibration [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|Prop §48.2]]; [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-1|Ex §48.1]] (part (b)); focal points are centres of curvature [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^rem-48-1|Remark: Focal Points Are Centres of Curvature]].
 >
-> **Difficulty** (a) 2, (b) 1. Submitted solution: follows the hint; result $r(a) = (-4a^3, 3a^2 + \tfrac12)$, cusp at $(0, \tfrac12)$ (the evolute). The notes record two completed steps in (a): that the first $m$ coordinate vectors span $T_pM$ (Lem §37.10(3)), and converting the Jacobian from the coordinates $(x, v)$ to standard coordinates of $\mathbb{R}^{2n}$. Official solution: (a) writes the lower-left block of $dF$ as $(P \ \ 0)$, while it is generally full; the rank argument is unaffected. (b) uses $(t, s) \mapsto ((t, t^2), s(2t, -1))$ as coordinates on $\mathcal{N}$ without showing it is a diffeomorphism onto $\mathcal{N}$ (Q8).
+> **Difficulty** (a) 2, (b) 1. Submitted solution: follows the hint; result $r(a) = (-4a^3, 3a^2 + \tfrac12)$, cusp at $(0, \tfrac12)$ (the evolute). The notes record two completed steps in (a): that the first $m$ coordinate vectors span $T_pM$ (Lem §37.14(3)), and converting the Jacobian from the coordinates $(x, v)$ to standard coordinates of $\mathbb{R}^{2n}$. Official solution: (a) writes the lower-left block of $dF$ as $(P \ \ 0)$, while it is generally full; the rank argument is unaffected. (b) uses $(t, s) \mapsto ((t, t^2), s(2t, -1))$ as coordinates on $\mathcal{N}$ without showing it is a diffeomorphism onto $\mathcal{N}$ (Q8).
 
 ## Strategy codes
 Codes match the "Strategies" list in `review_spec.md` where they coincide (S1–S13); S14–S15 are additional.

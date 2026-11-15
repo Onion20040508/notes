@@ -268,6 +268,6 @@ The cotangent bundle has a natural structure that the tangent bundle does not ha
 ^rem-52-1
 
 > [!example] Example §52.1: Sections of the Tangent and Cotangent Bundles
-> The main examples come later: the zero sections of $TM$ and $T^{\ast}M$ (Definitions [[§51 The Tangent Bundle#^def-51-3|§51.3]] and [[§52 The Cotangent Bundle#^def-52-3|§52.3]], later, in [[§51 The Tangent Bundle|§51]] and [[§52 The Cotangent Bundle|§52]]), and the section $p \mapsto (p, df_p)$ of $T^{\ast}M$ given by a smooth function $f$, smooth by Proposition [[§53 One-Forms#^prop-53-3|§53.3]] (later, in [[§53 One-Forms|§53]]). Each is such an $s$, so by Proposition [[§45 Fibrations#^prop-45-6|§45.6]] its image — the zero section, resp. the image $\{(p, df_p)\}$ of the one-form $df$ — is a closed regular submanifold of dimension $\dim M$.
+> The main examples of Proposition [[§45 Fibrations#^prop-45-6|§45.6]]: the zero sections of $TM$ and $T^{\ast}M$ (Definitions [[§51 The Tangent Bundle#^def-51-3|§51.3]] and [[§52 The Cotangent Bundle#^def-52-3|§52.3]]), and the section $p \mapsto (p, df_p)$ of $T^{\ast}M$ given by a smooth function $f$, smooth by Proposition [[§53 One-Forms#^prop-53-3|§53.3]] (later, in [[§53 One-Forms|§53]]). Each is a smooth map $s$ with $\pi \circ s = \mathrm{id}_M$, so by Proposition [[§45 Fibrations#^prop-45-6|§45.6]] its image — the zero section, resp. the image $\{(p, df_p)\}$ of the one-form $df$ — is a closed regular submanifold of dimension $\dim M$.
 
 ^ex-52-1

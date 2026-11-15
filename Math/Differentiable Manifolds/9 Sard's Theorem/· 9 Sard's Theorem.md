@@ -7,7 +7,7 @@ tags: [chapter, differentiable-manifolds]
 # 9 Sard's Theorem
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (4), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (4), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (9), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (32), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (11), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (10), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (10)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (4), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (4), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (9), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (34), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (9), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (10), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (10)
 **Used by:** —
 **Builds on (other subjects):** —
 

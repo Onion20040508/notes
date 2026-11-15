@@ -31,11 +31,11 @@ tags: [multivariable-analysis, hub]
 - [[§39 Closed and Exact Forms#^prop-39-6|Proposition §39.6: A Closed Form That Is Not Exact]]
 
 ## Used in (Differentiable Manifolds)
-- [[§7 The Regular Value Theorem#^lem-7-1|Lemma §7.1: The Jacobian Applied to a Vector Is a Directional Derivative]]
 - [[§7 The Regular Value Theorem#^def-7-1|Definition §7.1: Jacobian Matrix]]
+- [[§7 The Regular Value Theorem#^lem-7-1|Lemma §7.1: The Jacobian Applied to a Vector Is a Directional Derivative]]
 - [[§7 The Regular Value Theorem#^thm-7-6|Theorem §7.6: Regular Value Theorem]]
-- [[§12 The Classical Groups Are Topological Manifolds#^rem-12-1|Remark: The Method: Level Sets and the Implicit Function Theorem]]
 - [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|Proposition §12.1: Derivative of the Determinant]]
+- [[§12 The Classical Groups Are Topological Manifolds#^rem-12-1|Remark: The Method: Level Sets and the Implicit Function Theorem]]
 - [[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|Corollary §12.4: SL(n,ℝ) Is a Manifold of Dimension n² − 1]]
 - [[§17 Differentiable Structures#^thm-17-2|Theorem §17.2: Compatibility Means the Two Notions Agree]]
 - [[§17 Differentiable Structures#^thm-17-6|Theorem §17.6: Every Atlas Lies in a Unique Maximal Atlas]]

@@ -1,0 +1,26 @@
+---
+type: chapter
+subject: "[[Differentiable Manifolds]]"
+chapter: 7
+tags: [chapter, differentiable-manifolds]
+---
+# 7 One-Forms and Morse Functions
+↑ [[Differentiable Manifolds]]
+
+
+
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (5), [[· 3 Smooth Structures|3 Smooth Structures]] (40), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (59), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (28), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (16)
+**Used by:** [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (1), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (7), [[· 9 Sard's Theorem|9 Sard's Theorem]] (10)
+**Builds on (other subjects):** [[Multivariable Analysis]] (1)
+
+## Sections
+- [[§53 One-Forms]]
+- [[§54 Critical Points and the Hessian]]
+- [[§55 Morse Functions and the Zero Section]]
+
+## Load-bearing results
+Ranked by how many later results depend on them (through the proofs' citations).
+- [[§53 One-Forms#^prop-53-1|Proposition §53.1: One-Forms in Coordinates]]: 28 later results
+- [[§53 One-Forms#^prop-53-2|Proposition §53.2: Sums and Function Multiples of One-Forms]]: 28 later results
+- [[§53 One-Forms#^prop-53-3|Proposition §53.3: The Differential of a Function Is a One-Form]]: 22 later results
+- [[§54 Critical Points and the Hessian#^prop-54-1|Proposition §54.1: Forms of the Hessian Matrix]]: 17 later results
