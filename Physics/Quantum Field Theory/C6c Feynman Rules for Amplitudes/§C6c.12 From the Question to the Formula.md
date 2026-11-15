@@ -3,13 +3,13 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C6c
-section: C6c.11
+section: C6c.12
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6d.1 Yukawa Theory]] →
+← [[§C6c.11 Feynman Rules from the Lagrangian]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6d.1 Yukawa Theory]] →
 
-*Sources: PHY 513, Problem Set 8, Problems 2(a), 3(a), 3(d)–(e) and 4 (statements, and the user's solutions, submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 106–108, eqs. (4.79), (4.84)–(4.86) (page images checked) · Yu Zhao-Huan, 量子场论讲义, §6.5.5, eqs. (6.383), (6.385) (page image checked, PDF p. 261) · PHY 513 Lecture 17, slides 19–20, 23 (Example 6) · PHY 513, Problem Set 10, Problems 2–3 (statements, and the user's solution, 2026-11-13; Example §C6c.11.7) · the homes cited in each step.*
+*Sources: PHY 513, Problem Set 8, Problems 2(a), 3(a), 3(d)–(e) and 4 (statements, and the user's solutions, submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 106–108, eqs. (4.79), (4.84)–(4.86) (page images checked) · Yu Zhao-Huan, 量子场论讲义, §6.5.5, eqs. (6.383), (6.385) (page image checked, PDF p. 261) · PHY 513 Lecture 17, slides 19–20, 23 (Example 6) · PHY 513, Problem Set 10, Problems 2–3 (statements, and the user's solution, 2026-11-13; Example §C6c.12.7) · the homes cited in each step.*
 
 A problem states a question in words: a probability, a lifetime, a cross section, a correlation function, a list of diagrams. The formula that answers it holds only in one setup, so the question has to be translated before anything is computed: **what is prepared, what is measured, in which states and which vacuum, at which order, and whether the object asked for is an observable at all.** [[§C6a.0 Setups and Observables|§C6a.0]] classified the physical situations by how the interaction behaves in time and listed, in its table "From the question to the object", the object each kind of question asks for. This section works six of those questions through, each as an Example with the same chain of labelled steps: *question as asked → physical situation (Model box) → states and vacuum → the object → normalization and measure → theorems → result → pitfalls.* Every step shows its formula and links its home; nothing that a home derives is derived again. The general method is the list below; the examples are its instances, and every row of the §C6a.0 table links the example or procedure that works it. Three procedures carry the recurring computations: [[P5 Symmetry Factor of a Diagram]], [[P6 Tree Amplitude from a Lagrangian]], [[P7 From ℳ to σ or Γ]].
 
@@ -23,11 +23,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 4. **Which vacuum?** The ground state of the Hamiltonian that acts at early and late times: $|0\rangle$ in Model §C6a.0.1, $|\Omega\rangle$ in Model §C6a.0.3 — [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6a.5 The Interacting Vacuum and the Two-Point Function#^def-c6a-5-1|Def. §C6a.5.1]], [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]].
 5. **Which order?** Free states in place of in and out states (the course's prescription: free states dressed by $U(0, -T)$, bubbles omitted) are exact in Model §C6a.0.1 and lowest order in Model §C6a.0.3; beyond it $\sqrt Z$ per external line and the physical mass — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]], [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]], [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]].
 6. **Is the object an observable?** Probabilities, rates and cross sections are; a correlation function is not, it is the input of amputation — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^rem-c6b-1-2|§C6b.1, Remark: The fundamental observable?]], [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]].
-7. **Are there fermions?** Then the question must also fix the spins and the order in which the external states are written, and the answer has signs: relative signs between diagrams are physical (the statistics of identical particles), the overall sign drops out of $|\mathcal M|^2$ but is physical relative to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$ ([[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^thm-c8-5-6|Theorem §C8.5.6]]) — [[§C6d.2 Contractions with External Fermions#^def-c6d-2-2|Def. §C6d.2.2]], [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4|Theorem §C6d.3.4]], [[§C6d.5 Second Order#^thm-c6d-5-3|Theorem §C6d.5.3]], [[§C6d.5 Second Order#^thm-c6d-5-4|Theorem §C6d.5.4]], [[§C6d.5 Second Order#^rem-c6d-5-1|§C6d.5, Remark: The overall sign]]; worked in Example §C6c.11.6 (PHY 513 Lecture 17, slide 23).
+7. **Are there fermions?** Then the question must also fix the spins and the order in which the external states are written, and the answer has signs: relative signs between diagrams are physical (the statistics of identical particles), the overall sign drops out of $|\mathcal M|^2$ but is physical relative to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$ ([[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^thm-c8-5-6|Theorem §C8.5.6]]) — [[§C6d.2 Contractions with External Fermions#^def-c6d-2-2|Def. §C6d.2.2]], [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4|Theorem §C6d.3.4]], [[§C6d.5 Second Order#^thm-c6d-5-3|Theorem §C6d.5.3]], [[§C6d.5 Second Order#^thm-c6d-5-4|Theorem §C6d.5.4]], [[§C6d.5 Second Order#^rem-c6d-5-1|§C6d.5, Remark: The overall sign]]; worked in Example §C6c.12.6 (PHY 513 Lecture 17, slide 23).
 
 ## A source switched off: how many particles?
 
-> [!example] Example §C6c.11.1: The Probability That a Switched Source Creates 0 or n Particles
+> [!example] Example §C6c.12.1: The Probability That a Switched Source Creates 0 or n Particles
 > ![[ph-qft-c6b-11-1.svg]]
 > *The two connected diagrams of a switched source ([[§C6a.0 Setups and Observables#^thm-c6a-0-5|Theorem §C6a.0.5]]): the line $L$ between two source vertices (crosses, at $x$, $y$) and the line from a source vertex to an outgoing particle $\mathbf k$. Added figure.*
 >
@@ -96,11 +96,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PHY 513, Problem Set 8, Problem 3 (statement; the user's solution, parts (a), (d), (e), as written) · PS Problem 4.1 · homes as linked*
 
-^ex-c6c-11-1
+^ex-c6c-12-1
 
 ## A decay: the lifetime
 
-> [!example] Example §C6c.11.2: The Lifetime of Φ in the Φφ² Theory
+> [!example] Example §C6c.12.2: The Lifetime of Φ in the Φφ² Theory
 > ![[ph-qft-c6b-11-2.svg]]
 > *The one tree diagram of $\Phi \to \phi\phi$ at order $\mu$: $\Phi$ (dashed, momentum $K$) in, the two $\phi$'s ($p_1$, $p_2$) out, vertex factor $-2i\mu$ ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]]). Added figure.*
 >
@@ -162,11 +162,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PHY 513, Problem Set 8, Problem 4 (statement; the user's solution, as written) · PS §4.5, pp. 107–108, eq. (4.86) · Yu §6.5.5, eqs. (6.383), (6.385) · homes as linked*
 
-^ex-c6c-11-2
+^ex-c6c-12-2
 
 ## A collision: the cross section
 
-> [!example] Example §C6c.11.3: dσ/dΩ for φφ → φφ in φ⁴ Theory
+> [!example] Example §C6c.12.3: dσ/dΩ for φφ → φφ in φ⁴ Theory
 > ![[ph-qft-c6b-11-3.svg]]
 > *The one diagram of $\phi\phi \to \phi\phi$ at order $\lambda$: $p_A$, $p_B$ in, $p_1$, $p_2$ out, all on one vertex, $i\mathcal M = -i\lambda$, $S = 1$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]). Added figure.*
 >
@@ -221,11 +221,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PS §4.5, pp. 106–107, eqs. (4.79), (4.84)–(4.85); §4.6, p. 112, eqs. (4.99)–(4.100) · Yu §6.5.1–§6.5.3 (the box route; homes as linked) · the user's PHY 513 notes, Ch. 15 §15.9 (paragraph "The $\phi^4$ example (filled in)") · PHY 513 Lecture 16, slide 19 ("No angular dependence (feature of spin-less particles). Simple energy dependence (follows by dimensional analysis). Special to $\phi^4$-theory at leading order"; $\sigma_{\rm tot} = \lambda^2/(32\pi E_{\rm cm}^2)$, "note: identical particles")*
 
-^ex-c6c-11-3
+^ex-c6c-12-3
 
 ## A question that is not an observable
 
-> [!example] Example §C6c.11.4: The Two-Point Correlator of φ⁴ Theory to Order λ
+> [!example] Example §C6c.12.4: The Two-Point Correlator of φ⁴ Theory to Order λ
 > ![[ph-qft-c6b-11-4.svg]]
 > *The diagrams through order $\lambda$: (a) the free line; (b) the tadpole, the one correction that survives; (c) the line times the figure-eight, in the numerator only; (d) the figure-eight of the denominator, which cancels (c). Vertex $z$, external points $x$, $y$ ([[§C6a.8 Feynman Diagrams for Correlation Functions#^thm-c6a-8-1|Theorem §C6a.8.1]]). Added figure.*
 >
@@ -273,11 +273,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PHY 513 Lecture 14, slides 15 and 25 · the user's PHY 513 notes, Ch. 14 §14.3, §14.6 · PS §4.4, eqs. (4.43)–(4.44) · homes as linked*
 
-^ex-c6c-11-4
+^ex-c6c-12-4
 
 ## Which diagrams contribute
 
-> [!example] Example §C6c.11.5: The Diagrams of 2 → 2 in the Cubic–Quartic Theory at Order g² and λ
+> [!example] Example §C6c.12.5: The Diagrams of 2 → 2 in the Cubic–Quartic Theory at Order g² and λ
 > *Diagrams:* the four diagrams ($s$, $t$, $u$, contact) are drawn at the home of this enumeration, [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]] (figure at the head of that box).
 >
 > **Question as asked.** "For two-particle scattering, $p_A + p_B \to p_1 + p_2$, draw all the Feynman diagrams to $\mathcal O(g^2)$ or $\mathcal O(\lambda)$. It is natural to treat these all diagrams as if they are of the same order, i.e. to think of $\lambda$ as being of order $g^2/m^2$" (PHY 513, Problem Set 8, Problem 2(a)).
@@ -318,11 +318,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PHY 513, Problem Set 8, Problem 2(a) (statement; the user's solution, as written) · homes as linked*
 
-^ex-c6c-11-5
+^ex-c6c-12-5
 
 ## Fermions: which signs are physical
 
-> [!example] Example §C6c.11.6: f f → f f in Yukawa Theory at Leading Order
+> [!example] Example §C6c.12.6: f f → f f in Yukawa Theory at Leading Order
 > ![[ph-qft-c6d-5-1.svg]]
 > *The two diagrams of $f(p) + f(k) \to f(p') + f(k')$ at order $g^2$: the $t$-channel ($p \to p'$, scalar momentum $p - p'$) and the $u$-channel ($p \to k'$, scalar momentum $p - k'$), with a relative minus sign ([[§C6d.5 Second Order#^ex-c6d-5-2|Example §C6d.5.2]]). Added figure.*
 >
@@ -366,11 +366,11 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PHY 513 Lecture 17, slides 19–20, 23 · the user's PHY 513 notes, Lecture 17 update, §17.6 · PS §4.7, pp. 116–120, eqs. (4.118)–(4.119) · homes as linked*
 
-^ex-c6c-11-6
+^ex-c6c-12-6
 
 ## A fixed target: the cross section in an external potential
 
-> [!example] Example §C6c.11.7: dσ/dΩ for an Electron in the Coulomb Field of a Nucleus
+> [!example] Example §C6c.12.7: dσ/dΩ for an Electron in the Coulomb Field of a Nucleus
 > ![[ph-qft-c8-10-1.svg]]
 > *The one diagram, panel (b): the electron line passes one vertex with the static external field, which supplies $\mathbf q = \mathbf p' - \mathbf p$ and no energy; $i\mathcal M = -ie\,\bar u^{s'}(p')\gamma^0u^s(p)\,\tilde A_0(\mathbf q)$ ([[§C8.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8-10-4|Theorem §C8.10.4]]). Added figure.*
 >
@@ -419,7 +419,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > *Source: PHY 513, Problem Set 10, Problems 2 and 3 (statements; the user's solution) · PS Problems 4.4 and 5.1 (first part) · homes as linked*
 
-^ex-c6c-11-7
+^ex-c6c-12-7
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
@@ -433,5 +433,5 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > - Examples 1 and 2 are both "free states, $U(+\infty, -\infty)$, no denominator", but for opposite reasons: exact because the source switches off, and lowest order because the decay is computed at order $\mu$ — [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]].
 > - The $\frac{1}{n!}$ of Example 1, the $\frac{1}{2!}$ of Examples 2 and 3 and the $S_{\rm id}$ of every cross section are one fact, the symmetry of bosonic states — [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]].
 > - Example 4's correlator becomes Example 3's amplitude by amputation; the precise statement with $\sqrt Z$ is the LSZ formula (Lecture 16; QFT C10, planned) — [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]].
-> - Problem Set 10 adds two kinds of question to the six worked above. Several fields with an internal index: which terms of the vertex survive for given types, and which total cross section carries the $\frac12$ — [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^ex-c6c-8-2|Example §C6c.8.2]], [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^thm-c6c-8-5|Theorem §C6c.8.5]]; and, for $m^2 < 0$, that the question can only be asked after the fields are expanded around a minimum of the potential — [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^thm-c6c-9-1|Theorem §C6c.9.1]], [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^def-c6c-9-2|Def. §C6c.9.2]], [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-2|Theorem §C6c.10.2]]. A fixed target is Example §C6c.11.7.
+> - Problem Set 10 adds two kinds of question to the six worked above. Several fields with an internal index: which terms of the vertex survive for given types, and which total cross section carries the $\frac12$ — [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^ex-c6c-8-2|Example §C6c.8.2]], [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index#^thm-c6c-8-5|Theorem §C6c.8.5]]; and, for $m^2 < 0$, that the question can only be asked after the fields are expanded around a minimum of the potential — [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^thm-c6c-9-1|Theorem §C6c.9.1]], [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^def-c6c-9-2|Def. §C6c.9.2]], [[§C6c.10 The Linear Sigma Model꞉ Explicit Symmetry Breaking#^thm-c6c-10-2|Theorem §C6c.10.2]]. A fixed target is Example §C6c.12.7.
 > - The recurring computations are procedures: symmetry factors [[P5 Symmetry Factor of a Diagram|P5]], tree amplitudes [[P6 Tree Amplitude from a Lagrangian|P6]], cross sections and widths [[P7 From ℳ to σ or Γ|P7]].

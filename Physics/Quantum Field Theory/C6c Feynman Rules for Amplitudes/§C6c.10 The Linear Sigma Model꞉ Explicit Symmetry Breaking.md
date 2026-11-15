@@ -7,7 +7,7 @@ section: C6c.10
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6c.11 From the Question to the Formula]] →
+← [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6c.11 Feynman Rules from the Lagrangian]] →
 
 *Sources: PHY 513, Problem Set 10 ("Scattering Processes"), Problem 1(d) (statement, Larsen; the user's solution, 2026-11-13) · Peskin & Schroeder, An Introduction to Quantum Field Theory, Problem 4.3(d) · the homes cited in each box.*
 
@@ -266,4 +266,4 @@ In [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase|§C6c.9]] the potential 
 > - The condition $V'(v) = 0$ does two jobs in both sections: it removes the term linear in $\sigma$, and through $\frac12(\mu^2 - \lambda v^2)$ it fixes the pion mass, $0$ for $a = 0$ and $a/v$ for $a > 0$ — [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^thm-c6c-9-3|Theorem §C6c.9.3]], [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^thm-c6c-9-4|Theorem §C6c.9.4]].
 > - The threshold of $\pi\pi \to \pi\pi$ moved from $E_{\rm cm} = 0$ to $E_{\rm cm} = 2m_\pi$; at threshold the pions are at rest, which is where $t = u = 0$ comes from — [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]].
 > - A term that breaks a symmetry by giving different masses, for the phase symmetry of the complex field — [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-3|Example §C1b.6.3]]; here the breaking term is linear in the field and changes the minimum itself.
-> - The worked translations of questions into formulas, with the procedures used in §C6c.8–§C6c.10 — [[§C6c.11 From the Question to the Formula|§C6c.11]], [[P6 Tree Amplitude from a Lagrangian|P6]].
+> - The worked translations of questions into formulas, with the procedures used in §C6c.8–§C6c.10 — [[§C6c.12 From the Question to the Formula|§C6c.12]], [[P6 Tree Amplitude from a Lagrangian|P6]].
