@@ -9,9 +9,9 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§CA.8 Pairings, Diagrams and Symmetry Factors]] · ↑ [[· CA Mathematical Methods]]
 
-*Sources: the user's PHY 513 notes, Ch. 14 §14.7 (Derivation "The factorization at second order") · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 96–98, eqs. (4.50)–(4.52) · Yu Zhao-Huan, 量子场论讲义, §10.5.1, eqs. (10.192)–(10.196) · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §6, §8 · PHY 513, Problem Set 8, Problems 1(b), 2(c), 3(c) · proofs written here; every count checked by enumeration (`qft-C/tools/l14/enumerate_pairings.py`).*
+*Sources: the user's PHY 513 notes, Ch. 14 §14.7 (Derivation "The factorization at second order") · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 96–98, eqs. (4.50)–(4.52) · Yu Zhao-Huan, 量子场论讲义, §10.5.1, eqs. (10.192)–(10.196) · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §6, §8 · PHY 513, Problem Set 8, Problems 1(b), 2(c), 3(c) · the user's PHY 513 notes, Appendix B "Feynman Rules from the Lagrangian" (2026-11-14), section "Why it works" (Lemma §CA.9.5) · proofs written here; every count checked by enumeration (`qft-C/tools/l14/enumerate_pairings.py`).*
 
-A sum over the pairings of external points and vertex legs splits into the part that touches the external points and a vacuum part. This section makes the split a bijection of sets ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-1|Theorem §CA.9.1]]) and turns it into a factorization of exponential generating series ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-2|Theorem §CA.9.2]]): the factor $\frac{1}{k!}$ of the series is exactly what makes the choice of the vacuum vertices a product. This is the combinatorics behind the cancellation of vacuum bubbles ([[§C6a.12 The iε Limit and Vacuum Bubbles|§C6a.12]]). Pairings, labelled diagrams $X_{E,n}$, their multigraphs and the relabelling group are defined in [[§CA.8 Pairings, Diagrams and Symmetry Factors|§CA.8]], with the counting of the pairings of one diagram. A vacuum sum weighted by $1/S$ is the exponential of its connected part ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]]). As in §CA.8, statements are made for vertices with four half-edges; the last subsection extends the counting to other vertices: other valences, several types, legs of different kinds ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]).
+A sum over the pairings of external points and vertex legs splits into the part that touches the external points and a vacuum part. This section makes the split a bijection of sets ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-1|Theorem §CA.9.1]]) and turns it into a factorization of exponential generating series ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-2|Theorem §CA.9.2]]): the factor $\frac{1}{k!}$ of the series is exactly what makes the choice of the vacuum vertices a product. This is the combinatorics behind the cancellation of vacuum bubbles ([[§C6a.12 The iε Limit and Vacuum Bubbles|§C6a.12]]). Pairings, labelled diagrams $X_{E,n}$, their multigraphs and the relabelling group are defined in [[§CA.8 Pairings, Diagrams and Symmetry Factors|§CA.8]], with the counting of the pairings of one diagram. A vacuum sum weighted by $1/S$ is the exponential of its connected part ([[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]]). As in §CA.8, statements are made for vertices with four half-edges; the last subsection extends the counting to other vertices: other valences, several types, legs of different kinds ([[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]], [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]]). A closing lemma states the algebra behind reading a vertex off a Lagrangian by derivatives ([[§CA.9 Splitting Pairings and the Exponential Formula#^lem-ca-9-5|Lemma §CA.9.5]]).
 
 ## Splitting a pairing at the external points
 
@@ -274,9 +274,82 @@ The statements so far are for vertices with four legs of one kind. Cubic and mix
 
 *Uses:* [[§CA.9 Splitting Pairings and the Exponential Formula#^def-ca-9-2|Def. §CA.9.2]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^der-ca-8-3|Derivation §CA.8.3]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^lem-ca-8-2|Lemma §CA.8.2]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^der-ca-8-7|Derivation §CA.8.7]], [[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]], [[§CA.9 Splitting Pairings and the Exponential Formula#^der-ca-9-3|Derivation §CA.9.3]]
 
+## Symmetric coefficients and derivatives
+
+A vertex factor read off a Lagrangian by differentiating it ([[§C6c.11 Feynman Rules from the Lagrangian#^thm-c6c-11-1|Theorem §C6c.11.1]]) rests on an algebraic fact about homogeneous polynomials, stated here without the fields: the $n$-th derivatives of a homogeneous polynomial of degree $n$ are its symmetric coefficients, because the $n!$ terms of the product rule are the $n!$ ways of assigning the derivatives to the factors. For a monomial with $m_k$ factors of kind $k$ the assignments that survive are the $\prod_km_k!$ elements of the leg group of [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]].
+
+> [!theorem] Lemma §CA.9.5: The Symmetric Coefficient Array of a Homogeneous Polynomial
+> Let $x_1, \dots, x_N$ be commuting variables, $n \ge 1$, and $c_{b_1\cdots b_n}$ any array of numbers with indices in $\{1, \dots, N\}$. Put
+>
+> $$
+> P(x) = \frac{1}{n!}\sum_{b_1, \dots, b_n}c_{b_1\cdots b_n}\,x_{b_1}\cdots x_{b_n} , \qquad \bar c_{b_1\cdots b_n} = \frac{1}{n!}\sum_{\sigma\in S_n}c_{b_{\sigma(1)}\cdots b_{\sigma(n)}} ,
+> $$
+>
+> $\bar c$ the **symmetrization** of $c$, its average over the $n!$ orderings of the indices. Then:
+> 1. $P(x) = \frac{1}{n!}\sum_{b_1, \dots, b_n}\bar c_{b_1\cdots b_n}\,x_{b_1}\cdots x_{b_n}$: replacing $c$ by $\bar c$ does not change $P$;
+> 2. for all $a_1, \dots, a_n$,
+>
+> $$
+> \frac{\partial^n}{\partial x_{a_1}\cdots\partial x_{a_n}}\bigl(x_{b_1}\cdots x_{b_n}\bigr) = \sum_{\sigma\in S_n}\prod_{k=1}^n\delta_{a_k\,b_{\sigma(k)}} , \qquad \frac{\partial^nP}{\partial x_{a_1}\cdots\partial x_{a_n}} = \bar c_{a_1\cdots a_n} ;
+> $$
+>
+> 3. every homogeneous polynomial of degree $n$ is of the form $P$ for exactly one totally symmetric array, the array of its $n$-th derivatives;
+> 4. if $Q$ is a homogeneous polynomial of degree $m \ne n$, its $n$-th derivatives vanish at $x = 0$ (identically if $m < n$).
+>
+> *Source: the user's PHY 513 notes, Appendix B "Feynman Rules from the Lagrangian" (2026-11-14), section "Why it works", Derivation "The derivative counts the contractions" (the item "Derivatives", stated there for fields) · stated without the fields and proved here; checked with `qft-C/tools/rulesL/verify.py` (random non-symmetric arrays, $n = 3, 4$)*
+
+^lem-ca-9-5
+
+> [!derivation]- Derivation
+> **Step 1** (part 1). For $\sigma \in S_n$ rename the summation indices, $b_k \to b_{\sigma(k)}$, and reorder the commuting variables:
+>
+> $$
+> \sum_bc_{b_1\cdots b_n}\,x_{b_1}\cdots x_{b_n} = \sum_bc_{b_{\sigma(1)}\cdots b_{\sigma(n)}}\,x_{b_{\sigma(1)}}\cdots x_{b_{\sigma(n)}} = \sum_bc_{b_{\sigma(1)}\cdots b_{\sigma(n)}}\,x_{b_1}\cdots x_{b_n} .
+> $$
+>
+> The left side does not depend on $\sigma$; the average of the right side over the $n!$ permutations is $\sum_b\bar c_{b_1\cdots b_n}x_{b_1}\cdots x_{b_n}$.
+>
+> **Step 2** (one derivative). By the product rule ([[§8 Algebra of Differentiable Functions#^thm-8-2|452 Thm. §8.2]]) and $\partial x_b/\partial x_a = \delta_{ab}$,
+>
+> $$
+> \frac{\partial}{\partial x_{a_1}}\bigl(x_{b_1}\cdots x_{b_n}\bigr) = \sum_{j=1}^n\delta_{a_1b_j}\prod_{l\ne j}x_{b_l} :
+> $$
+>
+> the derivative picks one factor, in every possible way, and sets its index to $a_1$.
+>
+> **Step 3** ($k$ derivatives). Repeating Step 2 on the factors that are left, after $k \le n$ derivatives
+>
+> $$
+> \frac{\partial^k}{\partial x_{a_1}\cdots\partial x_{a_k}}\bigl(x_{b_1}\cdots x_{b_n}\bigr) = \sum_\tau\prod_{i=1}^k\delta_{a_i\,b_{\tau(i)}}\prod_{l\notin\tau(\{1, \dots, k\})}x_{b_l} ,
+> $$
+>
+> the sum over the injective maps $\tau: \{1, \dots, k\} \to \{1, \dots, n\}$, with $\tau(i)$ the factor picked by the $i$-th derivative (induction on $k$: the next derivative picks one of the $n - k$ factors not yet picked). For $k = n$ the injective maps are the permutations and no variable is left: the first formula of part 2. Example, $n = 2$: $\partial_{a_1}\partial_{a_2}(x_{b_1}x_{b_2}) = \delta_{a_1b_1}\delta_{a_2b_2} + \delta_{a_1b_2}\delta_{a_2b_1}$.
+>
+> **Step 4** (the derivative of $P$). The deltas of the term $\sigma$ set $b_{\sigma(k)} = a_k$, that is, $b_j = a_{\sigma^{-1}(j)}$:
+>
+> $$
+> \frac{\partial^nP}{\partial x_{a_1}\cdots\partial x_{a_n}} = \frac{1}{n!}\sum_{\sigma\in S_n}\sum_bc_{b_1\cdots b_n}\prod_{k=1}^n\delta_{a_k\,b_{\sigma(k)}} = \frac{1}{n!}\sum_{\sigma\in S_n}c_{a_{\sigma^{-1}(1)}\cdots a_{\sigma^{-1}(n)}} = \bar c_{a_1\cdots a_n} ,
+> $$
+>
+> since $\sigma^{-1}$ runs over $S_n$ when $\sigma$ does.
+>
+> **Step 5** (part 3). Existence: a monomial of degree $n$ is $x_{b_1}\cdots x_{b_n}$ for some sequence $b_1, \dots, b_n$, so every homogeneous polynomial of degree $n$ is $\frac{1}{n!}\sum_bc_bx_{b_1}\cdots x_{b_n}$ for some array $c$, and then for the symmetric array $\bar c$ by part 1. Uniqueness: if $c$ is totally symmetric then $\bar c = c$, and part 2 gives $c_{a_1\cdots a_n} = \partial^nP/\partial x_{a_1}\cdots\partial x_{a_n}$, which is determined by $P$.
+>
+> **Step 6** (part 4). A derivative of a monomial of degree $m$ is zero or an integer times a monomial of degree $m - 1$ (Step 2). So for $m < n$ the $n$-th derivatives of $Q$ are zero, and for $m > n$ they are homogeneous of degree $m - n > 0$ and vanish at $x = 0$.
+>
+> **What the derivation shows.**
+> - The $n!$ terms of the product rule are the bijections from the derivatives to the factors; the $\frac{1}{n!}$ in front of a symmetric array is there to cancel them.
+> - The symmetry of $\bar c$ is the equality of mixed partial derivatives ([[§6 Equality of Mixed Partials#^thm-6-1|452 Thm. §6.1]]) for a polynomial.
+> - For $x_{b_1}\cdots x_{b_n} = \prod_kx_k^{m_k}$ and $a_1, \dots, a_n$ the same content, the permutations with nonzero deltas are those that preserve the kind of each factor, $\prod_km_k!$ of them: the order of the leg group of [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-4|Theorem §CA.9.4]], 1.
+
+^der-ca-9-5
+
+*Uses:* [[§8 Algebra of Differentiable Functions#^thm-8-2|452 Thm. §8.2]]
+
 > [!remark]- Connections
 > - The objects split here, labelled diagrams and their multigraphs, are those of §CA.8; the split respects the relabelling group, since attachment is a property of the multigraph — [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-2|Def. §CA.8.2]], [[§CA.8 Pairings, Diagrams and Symmetry Factors#^def-ca-8-3|Def. §CA.8.3]].
 > - The exponential formula is the combinatorial core of "log of the partition function = connected diagrams"; the same identity, $\sum_\pi\prod_Bc_{|B|}$ against $\exp\sum c_ku^k/k!$, counts set partitions (Bell numbers for $c_k = 1$) — [[§CA.9 Splitting Pairings and the Exponential Formula#^thm-ca-9-3|Theorem §CA.9.3]].
-> - **Used in** (C6a and C6c places): Definition §CA.9.1, Theorems §CA.9.1–§CA.9.2 — the factorization of the numerator and the cancellation of vacuum bubbles ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-4|Theorem §C6a.12.4]]), [[§C6a.12 The iε Limit and Vacuum Bubbles#^def-c6a-12-2|Def. §C6a.12.2]], [[§C6a.12 The iε Limit and Vacuum Bubbles|§C6a.12]]; Theorem §CA.9.3 — the bubbles exponentiate, the vacuum energy density, the source vertices ([[§C6a.12 The iε Limit and Vacuum Bubbles#^der-c6a-12-4b|Derivation §C6a.12.4, second route]], [[§C6a.13 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-13-1|Theorem §C6a.13.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6c.7]]), [[§C6a.0 Setups and Observables#^thm-c6a-0-5|Theorem §C6a.0.5]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]], [[§C6a.13 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density|§C6a.13]]; Definition §CA.9.2, Theorem §CA.9.4 — other vertices ([[§C6a.9 Position-Space Feynman Rules#^rem-c6a-9-2|§C6a.9, Remark: The same proof for other vertices]]), oriented lines ([[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-2|Theorem §C6a.10.2]]), scattering diagrams and vertex factors ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]), source vertices ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6c.7]]), [[§C6a.14 Feynman Rules for Polynomial Interactions#^def-c6a-14-1|Def. §C6a.14.1]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^ex-c6a-14-1|Example §C6a.14.1]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^ex-c6a-14-2|Example §C6a.14.2]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-4|Theorem §C6a.14.4]], [[§C6a.14 Feynman Rules for Polynomial Interactions|§C6a.14]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-2|Theorem §C6c.5.2]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-4|Theorem §C6c.5.4]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]], [[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]], [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]] (Mathematical background), [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^def-c6c-7-1|Def. §C6c.7.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]], [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index|§C6c.8]] (Mathematical background).
+> - **Used in** (C6a and C6c places): Definition §CA.9.1, Theorems §CA.9.1–§CA.9.2 — the factorization of the numerator and the cancellation of vacuum bubbles ([[§C6a.12 The iε Limit and Vacuum Bubbles#^thm-c6a-12-4|Theorem §C6a.12.4]]), [[§C6a.12 The iε Limit and Vacuum Bubbles#^def-c6a-12-2|Def. §C6a.12.2]], [[§C6a.12 The iε Limit and Vacuum Bubbles|§C6a.12]]; Theorem §CA.9.3 — the bubbles exponentiate, the vacuum energy density, the source vertices ([[§C6a.12 The iε Limit and Vacuum Bubbles#^der-c6a-12-4b|Derivation §C6a.12.4, second route]], [[§C6a.13 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density#^thm-c6a-13-1|Theorem §C6a.13.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6c.7]]), [[§C6a.0 Setups and Observables#^thm-c6a-0-5|Theorem §C6a.0.5]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]], [[§C6a.13 Exponentiation of the Vacuum Bubbles and the Vacuum Energy Density|§C6a.13]]; Definition §CA.9.2, Theorem §CA.9.4 — other vertices ([[§C6a.9 Position-Space Feynman Rules#^rem-c6a-9-2|§C6a.9, Remark: The same proof for other vertices]]), oriented lines ([[§C6a.10 Symmetry Factors in Practice#^thm-c6a-10-2|Theorem §C6a.10.2]]), scattering diagrams and vertex factors ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]), source vertices ([[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6c.7]]), [[§C6a.14 Feynman Rules for Polynomial Interactions#^def-c6a-14-1|Def. §C6a.14.1]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^ex-c6a-14-1|Example §C6a.14.1]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^ex-c6a-14-2|Example §C6a.14.2]], [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-4|Theorem §C6a.14.4]], [[§C6a.14 Feynman Rules for Polynomial Interactions|§C6a.14]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-2|Theorem §C6c.5.2]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-4|Theorem §C6c.5.4]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]], [[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]], [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]] (Mathematical background), [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^def-c6c-7-1|Def. §C6c.7.1]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3|Theorem §C6c.7.3]], [[§C6c.8 The Linear Sigma Model꞉ Fields with an Internal Index|§C6c.8]] (Mathematical background), [[§C6c.11 Feynman Rules from the Lagrangian|§C6c.11]] (Mathematical background); Lemma §CA.9.5 — [[§C6c.11 Feynman Rules from the Lagrangian#^thm-c6c-11-2|Theorem §C6c.11.2]].
 > - **Used in** (C6d places, Lecture 17): Def. §CA.9.2, Theorem §CA.9.4 — the Yukawa vertex has three legs of three kinds, $|G_n| = n!$, and every diagram with external points has $S = 1$, bubbles $S = 2$ ([[§C6d.4 First Order#^thm-c6d-4-7|Theorem §C6d.4.7]]).
 > - **Used in** (Procedures): Theorem §CA.9.4 — [[P5 Symmetry Factor of a Diagram#^p5-2|P5, step 2]], [[P5 Symmetry Factor of a Diagram#^p5-3|P5, step 3]], [[P5 Symmetry Factor of a Diagram#^p5-4|P5, step 4]].
+> - **Used in** (C8 places): Lemma §CA.9.5 — [[§C8.12★ Derivative Couplings and Scalar QED|§C8.12★]] (Mathematical background).

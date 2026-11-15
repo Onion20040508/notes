@@ -219,7 +219,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > $$
 >
 > the vertex factor is $-i\lambda$, with no combinatorial factor;
-> 2. this is why $\mathcal L_{\rm int}$ carries the $\frac{1}{4!}$: to read the vertex off, strip the four fields from $\mathcal L_{\rm int}$, multiply by $i$ and by the $4!$ permutations of the fields;
+> 2. this is why $\mathcal L_{\rm int}$ carries the $\frac{1}{4!}$: to read the vertex off, strip the four fields from $\mathcal L_{\rm int}$, multiply by $i$ and by the $4!$ permutations of the fields; [[§C6c.11 Feynman Rules from the Lagrangian#^thm-c6c-11-1|Theorem §C6c.11.1]] turns this count into a general rule: the vertex is $i$ times the derivative of $\mathcal L_{\rm int}$ with respect to each field at the vertex;
 > 3. for $\mathcal L_{\rm int} = -g\prod_k\phi_k^{m_k}$ the attachments number $\prod_km_k!$ and the vertex is $-ig\prod_km_k!$ ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]]).
 >
 > If legs of the vertex are joined to each other or the diagram has another symmetry, fewer assignments are distinct and a factor $\frac1S$ is left over ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]]).
@@ -228,7 +228,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]] (part 3: [[§C6a.14 Feynman Rules for Polynomial Interactions#^def-c6a-14-1|Def. §C6a.14.1]]); *applies:* every order, any vertex whose legs go to particles or to lines that no symmetry of the diagram exchanges (every vertex of a tree: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]]).
 >
-> *Source: Yu §7.3, p. 292 after eq. (7.120) ("the four identical fields contracted with the initial and final particles give $4!$ equivalent contractions and a combinatorial factor $4!$, which cancels the $1/4!$ in $\mathcal L_1$; the $1/4!$ is introduced in $\mathcal L_1$ so that the vertex rule (7.120) has no extra combinatorial factor"; on the diagram the four external lines connect in $4\cdot3\cdot2\cdot1 = 4!$ ways), p. 296 ("strip the four fields $\phi$ from $\mathcal L_1 = -\lambda\phi^4/4!$, multiply by $i$ and by the $4!$ permutations of the four $\phi$") · PS §4.4, p. 93 ("This was the reason for the factor of 4! in the $\phi^4$ coupling"); §4.6, eq. (4.98) · from the statement of [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]*
+> *Source: Yu §7.3, p. 292 after eq. (7.120) ("the four identical fields contracted with the initial and final particles give $4!$ equivalent contractions and a combinatorial factor $4!$, which cancels the $1/4!$ in $\mathcal L_1$; the $1/4!$ is introduced in $\mathcal L_1$ so that the vertex rule (7.120) has no extra combinatorial factor"; on the diagram the four external lines connect in $4\cdot3\cdot2\cdot1 = 4!$ ways), p. 296 ("strip the four fields $\phi$ from $\mathcal L_1 = -\lambda\phi^4/4!$, multiply by $i$ and by the $4!$ permutations of the four $\phi$") · PS §4.4, p. 93 ("This was the reason for the factor of 4! in the $\phi^4$ coupling"); §4.6, eq. (4.98) · the user's PHY 513 notes, Appendix B update (2026-11-14), Part 2 (a) (the sentence added to "Where the $4!$ goes": "Appendix B turns this count into a general rule") · from the statement of [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]*
 
 ^thm-c6c-4-4
 
