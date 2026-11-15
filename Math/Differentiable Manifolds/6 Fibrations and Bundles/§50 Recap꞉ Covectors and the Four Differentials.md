@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Differentiable Manifolds]]"
-chapter: 7
+chapter: 6
 section: 50
 tags: [differentiable-manifolds, math591]
 ---
-← [[§49 Recap꞉ Germs, Derivations and Tangent Vectors]] · ↑ [[· 7 Tangent and Cotangent Bundles]] · [[§51 The Tangent Bundle]] →
+← [[§49 Recap꞉ Germs, Derivations and Tangent Vectors]] · ↑ [[· 6 Fibrations and Bundles]] · [[§51 The Tangent Bundle]] →
 
 *Stage: recap — Covectors, the differential of a function, pullbacks — and the four objects that the course calls “the differential”, side by side.*
 

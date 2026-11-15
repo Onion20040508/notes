@@ -5,7 +5,7 @@ chapter: 5
 section: 36
 tags: [differentiable-manifolds, math591]
 ---
-← [[§35 Local Diffeomorphisms]] · ↑ [[· 5 Submersions, Submanifolds and Fibrations]] · [[§37 Regular Submanifolds]] →
+← [[§35 Local Diffeomorphisms]] · ↑ [[· 5 Submersions, Immersions and Submanifolds]] · [[§37 Regular Submanifolds]] →
 
 *Stage: maps — Maps with surjective differentials: locally projections, by the normal form — the tool that makes the regular value theorem work on any manifold ([[§37 Regular Submanifolds|§37]]).*
 
@@ -27,11 +27,11 @@ tags: [differentiable-manifolds, math591]
 ^def-36-2
 
 > [!remark]- Connections
-> - Immersions are taken up, with their normal form, in [[§43 Immersions|§43]]: [[§43 Immersions#^thm-43-1|§43.1]].
+> - Immersions are taken up, with their normal form, in [[§40 Immersions|§40]]: [[§40 Immersions#^thm-40-1|§40.1]].
 > - An injective linear map cannot lower dimension: [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]].
 > - The first examples of immersions are the regular parametrized surfaces of 452, whose $3 \times 2$ Jacobian has rank 2: [[§31 Surface Integrals#^def-31-3|452 Def. §31.3]].
 
-The submersion half is the lecture's definition. Immersions were listed as the third special type and treated in Lecture 13 ([[§43 Immersions|§43]]); the definition is recorded here in Lee's form so that the three types can be compared. In the language of Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]], $F$ is a submersion at $p$ exactly when $p$ is a regular point.
+The submersion half is the lecture's definition. Immersions were listed as the third special type and treated in Lecture 13 ([[§40 Immersions|§40]]); the definition is recorded here in Lee's form so that the three types can be compared. In the language of Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]], $F$ is a submersion at $p$ exactly when $p$ is a regular point.
 
 > [!theorem] Proposition §36.1: Dimension Constraints
 > Let $F : M \to N$ be smooth, $m = \dim M$, $n = \dim N$, and $p \in M$.
@@ -110,7 +110,7 @@ Lecture 11 supplied it (Theorem [[§31 Tangent Vectors as Velocities of Curves#^
 
 *Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-9|Def. §19.9]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
 
-The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§46 Projective Spaces and the Hopf Fibration|§46]].
+The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§47 The Hopf Fibration|§47]].
 
 Regular points and regular values of a smooth map between manifolds have been defined already:
 
@@ -319,7 +319,7 @@ This is the definition of critical point sent to the class by email, and it agre
 ^thm-36-6
 
 > [!remark]- Connections
-> - The counterpart for immersions: [[§43 Immersions#^thm-43-1|§43.1]]. The main application: the regular value theorem for manifolds, [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]].
+> - The counterpart for immersions: [[§40 Immersions#^thm-40-1|§40.1]]. The main application: the regular value theorem for manifolds, [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]].
 
 Stated in Lecture 10 and proved in Lecture 11, below. The inequality $n \le m$ needs no theorem — a surjective linear map cannot raise dimension — but the normal form does: it says that every submersion, in suitable coordinates, *is* a projection.
 

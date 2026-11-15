@@ -5,7 +5,7 @@ chapter: 7
 section: 54
 tags: [differentiable-manifolds, math591]
 ---
-← [[§53 One-Forms]] · ↑ [[· 7 Tangent and Cotangent Bundles]] · [[§55 Morse Functions and the Zero Section]] →
+← [[§53 One-Forms]] · ↑ [[· 7 One-Forms and Morse Functions]] · [[§55 Morse Functions and the Zero Section]] →
 
 *Stage: fields — The second derivatives of a function at a critical point form a symmetric bilinear form on the tangent space, the Hessian; nondegenerate critical points and Morse functions.*
 

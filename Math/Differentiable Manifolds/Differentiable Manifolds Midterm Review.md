@@ -36,7 +36,7 @@ Points he stressed in lecture, and where they live:
 - the saturation of an open set under a group action is the union of its translates (Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] Orbit Relations Are Open);
 - coordinates on $\mathbb{R}^n$ are $r^i$, never $x^i$, when relating $M$ to $\mathbb{R}^n$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]] Coordinate Derivations);
 - the smoothness of the functions in Hadamard's lemma is "a key point" (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|§29.5]] Hadamard's Lemma);
-- normal forms are *local*: the irrational line shows what goes wrong globally (Proposition [[§44 Embeddings#^prop-44-13|§44.13]] The Irrational Line on the Torus);
+- normal forms are *local*: the irrational line shows what goes wrong globally (Proposition [[§41 Embeddings#^prop-41-14|§41.14]] The Irrational Line on the Torus);
 - submersions are open "because locally they are projections" (Corollary [[§36 Submersions#^cor-36-9|§36.9]] Submersions Are Open Maps);
 - a smooth structure is a *maximal* atlas, "the fundamental definition" (Definition [[§17 Differentiable Structures#^def-17-11|§17.11]] Smooth Manifold Structure).
 
@@ -62,12 +62,12 @@ Points he stressed in lecture, and where they live:
 
 **Not proved in the notes, so quote them:**
 - Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] Inverse Function Theorem;
-- Theorem [[§40 Fibrations#^thm-40-3|§40.3]] Ehresmann's Theorem;
+- Theorem [[§45 Fibrations#^thm-45-3|§45.3]] Ehresmann's Theorem;
 - Corollary [[§56 Vector Fields#^cor-56-7|§56.7]] Bump Functions Exist;
 - Theorem [[§2 Topological Manifolds#^thm-2-1|§2.1]] Topological Invariance of Dimension;
 - Theorem [[§16 The Classical Groups#^thm-16-2|§16.2]] Exactly Two Components.
 
-**Gap to close:** the definition of a **vector bundle** is not a box in the notes. Uribe postponed it; see the remark *Vector Bundles* in [[§51 The Tangent Bundle|§51]] and Lee Ch. 10, *Vector Bundles*. The 2025 midterm asked for it (Part 1.3). Write your own definition box, modelled on Definition [[§40 Fibrations#^def-40-1|§40.1]] Fibration plus "fibres are vector spaces, trivializations are linear on fibres".
+**Gap to close:** the definition of a **vector bundle** is not a box in the notes. Uribe postponed it; see the remark *Vector Bundles* in [[§51 The Tangent Bundle|§51]] and Lee Ch. 10, *Vector Bundles*. The 2025 midterm asked for it (Part 1.3). Write your own definition box, modelled on Definition [[§45 Fibrations#^def-45-1|§45.1]] Fibration plus "fibres are vector spaces, trivializations are linear on fibres".
 
 ## How the definitions grew
 The notes show the course building each object more than once and then proving the versions agree. Knowing the ladder *is* knowing the language: each row is drilled as a proof in [[Differentiable Manifolds Notes Drill#Equivalences|Notes Drill: Equivalences]].
@@ -78,7 +78,7 @@ The notes show the course building each object more than once and then proving t
 | Cotangent space | dual of $T_pM$ (Definition [[§32 The Cotangent Space#^def-32-4\|§32.4]]), dual basis $dx^i$ (Definition [[§33 Covectors in Coordinates#^def-33-1\|§33.1]]), germs $I_p/I_p^2$ (Definition [[§34 The Cotangent Space from Germs#^def-34-1\|§34.1]]) | Lemma [[§33 Covectors in Coordinates#^lem-33-1\|§33.1]] The Differential of a Function in Coordinates; Theorem [[§34 The Cotangent Space from Germs#^thm-34-4\|§34.4]] The Cotangent Space from Germs |
 | Differential | Jacobian (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-5\|§22.5]]), pushforward of derivations (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6\|§28.6]]), on curves | Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3\|§22.3]] Coordinate-Free Formula for the Differential; Theorem [[§30 The Differential in Coordinates#^thm-30-2\|§30.2]] The Matrix of the Differential; Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|§31.5]] Velocity of a Composite |
 | Smooth structure | atlas (Definition [[§17 Differentiable Structures#^def-17-8\|§17.8]]), maximal atlas (Definition [[§17 Differentiable Structures#^def-17-10\|§17.10]]) | Theorem [[§17 Differentiable Structures#^thm-17-6\|§17.6]] Every Atlas Lies in a Unique Maximal Atlas; Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2\|§19.2]] Smoothness of a Map Does Not Depend on the Charts |
-| Submanifold of $\mathbb{R}^N$ | external and internal descriptions (Definition [[§20 Manifolds in Euclidean Space#^def-20-1\|§20.1]], Definition [[§20 Manifolds in Euclidean Space#^def-20-2\|§20.2]]), regular level set | Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1\|§20.1]] The Two Descriptions Agree; Proposition [[§37 Regular Submanifolds#^prop-37-12\|§37.12]] Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description |
+| Submanifold of $\mathbb{R}^N$ | external and internal descriptions (Definition [[§20 Manifolds in Euclidean Space#^def-20-1\|§20.1]], Definition [[§20 Manifolds in Euclidean Space#^def-20-2\|§20.2]]), regular level set | Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1\|§20.1]] The Two Descriptions Agree; Proposition [[§37 Regular Submanifolds#^prop-37-13\|§37.13]] Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description |
 | Regular value theorem | in $\mathbb{R}^N$, for manifolds | Theorem [[§7 The Regular Value Theorem#^thm-7-6\|§7.6]] Regular Value Theorem; Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|§38.2]] The Regular Value Theorem for Manifolds; Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]] The Old and New Versions Agree |
 | Transversality | level sets in $\mathbb{R}^N$, maps to a submanifold | Theorem [[§26 Transversality#^thm-26-1\|§26.1]] Preimages of Transverse Level Sets; Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1\|§39.1]] Preimages of Transverse Submanifolds; Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-5\|§39.5]] Special Cases of Transversality |
 | Diffeomorphism | two notions | Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-4\|§19.4]] The Two Notions of Diffeomorphism Agree |
@@ -216,7 +216,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★★ Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] Level Sets Near a Regular Point ⇒ Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] The Regular Value Theorem for Manifolds
 - [ ] ★★ Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] Preimages of Transverse Submanifolds and Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]] Special Cases of Transversality: HW5.2.
 - [ ] ★★ Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]] Smooth Maps and Regular Submanifolds: maps into and out of submanifolds.
-- [ ] ★ Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]] Adapted Charts Give Local Defining Maps, Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]] Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description, Theorem [[§26 Transversality#^thm-26-1|§26.1]] Preimages of Transverse Level Sets, Proposition [[§26 Transversality#^prop-26-5|§26.5]] Transverse Intersections
+- [ ] ★ Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]] Adapted Charts Give Local Defining Maps, Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]] Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description, Theorem [[§26 Transversality#^thm-26-1|§26.1]] Preimages of Transverse Level Sets, Proposition [[§26 Transversality#^prop-26-5|§26.5]] Transverse Intersections
 - [ ] ★ Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-8|§39.8]] Lagrange Multipliers: HW5.4.
 
 **Drill**
@@ -229,14 +229,14 @@ The notes show the course building each object more than once and then proving t
 
 ## T8. Fibrations (§40–§42)
 **Language**
-- [ ] Definition [[§40 Fibrations#^def-40-1|§40.1]] Fibration, Definition [[§40 Fibrations#^def-40-2|§40.2]] Trivial Fibration, Definition [[§40 Fibrations#^def-40-3|§40.3]] Section, Definition [[§40 Fibrations#^def-40-4|§40.4]] Local Section, Definition [[§40 Fibrations#^def-40-5|§40.5]] Vertical Space
+- [ ] Definition [[§45 Fibrations#^def-45-1|§45.1]] Fibration, Definition [[§45 Fibrations#^def-45-2|§45.2]] Trivial Fibration, Definition [[§45 Fibrations#^def-45-3|§45.3]] Section, Definition [[§45 Fibrations#^def-45-4|§45.4]] Local Section, Definition [[§45 Fibrations#^def-45-5|§45.5]] Vertical Space
 - [ ] Vector bundle: your own box (see the gap above).
 
 **Proofs**
-- [ ] ★★ Proposition [[§40 Fibrations#^prop-40-1|§40.1]] Fibres and Fibrations, Proposition [[§40 Fibrations#^prop-40-2|§40.2]] Fibres Are Copies of the Model Fibre
-- [ ] ★★ Proposition [[§40 Fibrations#^prop-40-4|§40.4]] Local Trivializations Give Local Sections
-- [ ] ★ Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]] The Möbius Band Is a Fibration, Proposition [[§40 Fibrations#^prop-40-5|§40.5]] Splitting Along a Section, Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-2|§42.2]] The Normal Bundle Is a Fibration
-- [ ] Know the statement of Theorem [[§40 Fibrations#^thm-40-3|§40.3]] Ehresmann's Theorem, and why each hypothesis is needed: Example [[§40 Fibrations#^ex-40-1|§40.1]] A Submersion That Is Not a Fibration, Example [[§40 Fibrations#^ex-40-2|§40.2]] All Fibres Diffeomorphic but Not a Fibration.
+- [ ] ★★ Proposition [[§45 Fibrations#^prop-45-1|§45.1]] Fibres and Fibrations, Proposition [[§45 Fibrations#^prop-45-2|§45.2]] Fibres Are Copies of the Model Fibre
+- [ ] ★★ Proposition [[§45 Fibrations#^prop-45-4|§45.4]] Local Trivializations Give Local Sections
+- [ ] ★ Proposition [[§46 Examples of Fibrations#^prop-46-1|§46.1]] The Möbius Band Is a Fibration, Proposition [[§45 Fibrations#^prop-45-5|§45.5]] Splitting Along a Section, Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|§48.2]] The Normal Bundle Is a Fibration
+- [ ] Know the statement of Theorem [[§45 Fibrations#^thm-45-3|§45.3]] Ehresmann's Theorem, and why each hypothesis is needed: Example [[§45 Fibrations#^ex-45-1|§45.1]] A Submersion That Is Not a Fibration, Example [[§45 Fibrations#^ex-45-2|§45.2]] All Fibres Diffeomorphic but Not a Fibration.
 
 **Drill**
 - [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T8|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T8|proofs and class exercises]]
@@ -247,15 +247,15 @@ The notes show the course building each object more than once and then proving t
 
 ## T9. Immersions and embeddings (§43–§44)
 **Language**
-- [ ] Definition [[§36 Submersions#^def-36-2|§36.2]] Immersion, Definition [[§44 Embeddings#^def-44-1|§44.1]] Embedding, Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]] Proper Map, Definition [[§44 Embeddings#^def-44-2|§44.2]] Locally Closed Subset, Definition [[§44 Embeddings#^def-44-3|§44.3]] Immersed Submanifold
+- [ ] Definition [[§36 Submersions#^def-36-2|§36.2]] Immersion, Definition [[§41 Embeddings#^def-41-1|§41.1]] Embedding, Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]] Proper Map, Definition [[§41 Embeddings#^def-41-2|§41.2]] Locally Closed Subset, Definition [[§41 Embeddings#^def-41-3|§41.3]] Immersed Submanifold
 
 **Proofs**
-- [ ] ★★ Theorem [[§43 Immersions#^thm-43-1|§43.1]] Local Normal Form for Immersions
-- [ ] ★★ Theorem [[§44 Embeddings#^thm-44-1|§44.1]] The Image of an Embedding Is a Regular Submanifold: 2025 Part 3.8 asked exactly this, using the immersion normal form.
-- [ ] ★★ Theorem [[§44 Embeddings#^thm-44-5|§44.5]] Injective Proper Immersions Are Embeddings and Corollary [[§44 Embeddings#^cor-44-6|§44.6]] Injective Immersions of Compact Manifolds
-- [ ] ★★ Corollary [[§44 Embeddings#^cor-44-3|§44.3]] An Embedding Is a Diffeomorphism onto Its Image
-- [ ] ★ Proposition [[§44 Embeddings#^prop-44-11|§44.11]] Sections Are Closed Embeddings: HW5.1.
-- [ ] ★ Proposition [[§44 Embeddings#^prop-44-13|§44.13]] The Irrational Line on the Torus, Proposition [[§44 Embeddings#^prop-44-15|§44.15]] Images of Injective Immersions, Proposition [[§44 Embeddings#^prop-44-17|§44.17]] When an Immersed Submanifold Is Regular
+- [ ] ★★ Theorem [[§40 Immersions#^thm-40-1|§40.1]] Local Normal Form for Immersions
+- [ ] ★★ Theorem [[§41 Embeddings#^thm-41-1|§41.1]] The Image of an Embedding Is a Regular Submanifold: 2025 Part 3.8 asked exactly this, using the immersion normal form.
+- [ ] ★★ Theorem [[§41 Embeddings#^thm-41-7|§41.7]] Injective Proper Immersions Are Embeddings and Corollary [[§41 Embeddings#^cor-41-8|§41.8]] Injective Immersions of Compact Manifolds
+- [ ] ★★ Corollary [[§41 Embeddings#^cor-41-3|§41.3]] An Embedding Is a Diffeomorphism onto Its Image
+- [ ] ★ Proposition [[§45 Fibrations#^prop-45-6|§45.6]] Sections Are Closed Embeddings: HW5.1.
+- [ ] ★ Proposition [[§41 Embeddings#^prop-41-14|§41.14]] The Irrational Line on the Torus, Proposition [[§41 Embeddings#^prop-41-16|§41.16]] Images of Injective Immersions, Proposition [[§41 Embeddings#^prop-41-18|§41.18]] When an Immersed Submanifold Is Regular
 
 **Drill**
 - [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T9|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T9|proofs and class exercises]]
@@ -310,12 +310,12 @@ Each one is a reusable move. Before writing a proof, name the move.
 - **S5 Regular value theorem on a well-chosen map**, e.g. $A \mapsto A^{\mathsf T} A$, $\det$, (trace, det): Theorem [[§7 The Regular Value Theorem#^thm-7-6|§7.6]] Regular Value Theorem, Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] The Regular Value Theorem for Manifolds.
 - **S6 Tangent space of a level set = kernel of the differential.** Prove $\subseteq$, then count dimensions: Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] The Geometric Tangent Space Is the Kernel of the Jacobian, Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] Tangent Spaces of a Regular Submanifold.
 - **S7 Linear algebra closes the gap.** An injective map between spaces of equal dimension is onto; rank–nullity; a subspace of full dimension is everything.
-- **S8 Normal forms give charts.** Submersion and immersion normal forms ⇒ adapted charts: Theorem [[§36 Submersions#^thm-36-6|§36.6]] Local Normal Form for Submersions, Theorem [[§43 Immersions#^thm-43-1|§43.1]] Local Normal Form for Immersions.
+- **S8 Normal forms give charts.** Submersion and immersion normal forms ⇒ adapted charts: Theorem [[§36 Submersions#^thm-36-6|§36.6]] Local Normal Form for Submersions, Theorem [[§40 Immersions#^thm-40-1|§40.1]] Local Normal Form for Immersions.
 - **S9 A derivation is determined by the coordinate functions** (Hadamard): Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|§29.5]] Hadamard's Lemma, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]] Basis Theorem.
 - **S10 Compute $F_{\ast}$ with curves**: $F_{\ast}(\gamma'(0)) = (F \circ \gamma)'(0)$, Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]] Velocity of a Composite.
 - **S11 Local, then global.** Germs, shrinking neighbourhoods, bump functions: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] Open Subsets Have the Same Abstract Tangent Spaces, Corollary [[§56 Vector Fields#^cor-56-8|§56.8]] Every Germ Has a Global Representative.
 - **S12 Transversality = the images span.** Reduce to a regular value of a composite with a local defining map: Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] Preimages of Transverse Submanifolds.
-- **S13 Compactness upgrades local to global**: closed images, proper maps, finitely many critical points: Theorem [[§36 Submersions#^thm-36-10|§36.10]] Submersions from Compact Manifolds, Theorem [[§44 Embeddings#^thm-44-5|§44.5]] Injective Proper Immersions Are Embeddings, Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]] Critical Points of a Morse Function Are Isolated.
+- **S13 Compactness upgrades local to global**: closed images, proper maps, finitely many critical points: Theorem [[§36 Submersions#^thm-36-10|§36.10]] Submersions from Compact Manifolds, Theorem [[§41 Embeddings#^thm-41-7|§41.7]] Injective Proper Immersions Are Embeddings, Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]] Critical Points of a Morse Function Are Isolated.
 - **S13′ Connectedness upgrades local to global**: a local property plus a clopen set gives a global one, Theorem [[§2 Topological Manifolds#^thm-2-8|§2.8]] Connected Manifolds Are Path Connected, Proposition [[§30 The Differential in Coordinates#^prop-30-11|§30.11]] Maps with Zero Differential Are Constant.
 - **S14 Differentiate an identity**, e.g. $\pi \circ s = \mathrm{id}$ or $G \circ F =$ const. Test closedness, Hausdorffness and continuity with sequences.
 - **S15 Symmetry**: prove it at one point (or on one slice), then move it by the group: homogeneous spaces, classical groups, $\mathrm{SU}(2)$.
@@ -331,9 +331,9 @@ Know each one's picture and the exact property it breaks.
 - [ ] A continuous bijection that is not a homeomorphism: Example [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-2|§15.2]] A Continuous Bijection That Is Not a Homeomorphism
 - [ ] Two smooth structures on $\mathbb{R}$ (the $x^3$ chart): Example [[§19 Smooth Functions and Smooth Maps#^ex-19-1|§19.1]] Two Smooth Structures on the Real Line, Example [[§19 Smooth Functions and Smooth Maps#^ex-19-2|§19.2]] The Real Line with the Cube-Root Chart
 - [ ] Transversality failing two ways: Example [[§26 Transversality#^ex-26-2|§26.2]] Two Ways Transversality Can Fail
-- [ ] A surjective submersion that is not a fibration (punctured plane), and all fibres diffeomorphic but still not a fibration: Example [[§40 Fibrations#^ex-40-1|§40.1]] A Submersion That Is Not a Fibration, Example [[§40 Fibrations#^ex-40-2|§40.2]] All Fibres Diffeomorphic but Not a Fibration
-- [ ] An immersion that crosses itself; an injective immersion that is not a homeomorphism onto its image: Example [[§43 Immersions#^ex-43-1|§43.1]] An Immersion That Crosses Itself, Example [[§43 Immersions#^ex-43-2|§43.2]] An Injective Immersion That Is Not a Homeomorphism onto Its Image
-- [ ] Immersed but not regular (the irrational line on the torus): Example [[§44 Embeddings#^ex-44-4|§44.4]] Immersed but Not Regular, Proposition [[§44 Embeddings#^prop-44-13|§44.13]] The Irrational Line on the Torus
+- [ ] A surjective submersion that is not a fibration (punctured plane), and all fibres diffeomorphic but still not a fibration: Example [[§45 Fibrations#^ex-45-1|§45.1]] A Submersion That Is Not a Fibration, Example [[§45 Fibrations#^ex-45-2|§45.2]] All Fibres Diffeomorphic but Not a Fibration
+- [ ] An immersion that crosses itself; an injective immersion that is not a homeomorphism onto its image: Example [[§40 Immersions#^ex-40-1|§40.1]] An Immersion That Crosses Itself, Example [[§40 Immersions#^ex-40-2|§40.2]] An Injective Immersion That Is Not a Homeomorphism onto Its Image
+- [ ] Immersed but not regular (the irrational line on the torus): Example [[§41 Embeddings#^ex-41-3|§41.3]] Immersed but Not Regular, Proposition [[§41 Embeddings#^prop-41-14|§41.14]] The Irrational Line on the Torus
 - [ ] A Hessian matrix that depends on the chart (away from critical points): Example [[§54 Critical Points and the Hessian#^ex-54-1|§54.1]] The Hessian Matrix Depends on the Chart
 
 ## Past midterms

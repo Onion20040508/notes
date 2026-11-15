@@ -5,13 +5,13 @@ chapter: 5
 section: 35
 tags: [differentiable-manifolds, math591]
 ---
-← [[§34 The Cotangent Space from Germs]] · ↑ [[· 5 Submersions, Submanifolds and Fibrations]] · [[§36 Submersions]] →
+← [[§34 The Cotangent Space from Germs]] · ↑ [[· 5 Submersions, Immersions and Submanifolds]] · [[§36 Submersions]] →
 
 *Stage: maps — Properties of the linear maps $F_{\ast p}$ control the local behaviour of $F$ itself.*
 
 *References: Lee Ch. 4. Lecture 10.*
 
-Three special types of smooth maps $F : M \to N$ are singled out by the linear algebra of their differentials: *local diffeomorphisms*, whose differentials are bijective; *submersions*, whose differentials are surjective; and *immersions*, whose differentials are injective. The theme of the section is that in each case a property of the linear maps $F_{\ast p}$ — computable from a Jacobian — controls the behaviour of $F$ itself near $p$. Immersions, listed with the others in Lecture 10, were treated only in Lecture 13, after the tangent bundle, and have their own section, [[§43 Immersions|§43]]; everything up to the tangent bundle is the theory of submersions.
+Three special types of smooth maps $F : M \to N$ are singled out by the linear algebra of their differentials: *local diffeomorphisms*, whose differentials are bijective; *submersions*, whose differentials are surjective; and *immersions*, whose differentials are injective. The theme of the section is that in each case a property of the linear maps $F_{\ast p}$ — computable from a Jacobian — controls the behaviour of $F$ itself near $p$. Immersions, listed with the others in Lecture 10, were treated only in Lecture 13, after the tangent bundle, and have their own section, [[§40 Immersions|§40]]; everything up to the tangent bundle is the theory of submersions.
 
 > [!definition] Definition §35.1: Local Diffeomorphism
 > A smooth map $F : M \to N$ is a **local diffeomorphism** if for every $p \in M$ there are neighbourhoods $U$ of $p$ and $V$ of $F(p)$ with $F(U) = V$ such that $F|_U^V : U \to V$ — the restriction of $F$ to $U$, regarded as a map onto $V$ — has a smooth inverse. Such an inverse $G : V \to U$ is a **local inverse** of $F$ at $p$.
@@ -72,10 +72,10 @@ Three special types of smooth maps $F : M \to N$ are singled out by the linear a
 
 The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-9|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in [[§24 The Circle|The Circle]]; and covered by a line, a local diffeomorphism that is not injective, in [[§35 Local Diffeomorphisms#^ex-35-1|the circle covered by a line]].
 
-The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is collected in [[§46 Projective Spaces and the Hopf Fibration|§46]].
+The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is collected in [[§47 The Hopf Fibration|§47]].
 
 > [!remark] Remark: Covering Maps
-> Covering maps were not defined in lecture and the distinction was postponed; it is Lee Ch. 4. There a *smooth covering map* is a smooth surjective map $\pi : E \to M$ between connected manifolds such that every point of $M$ has a connected open neighbourhood $V$ that is *evenly covered*: each component of $\pi^{-1}(V)$ is mapped diffeomorphically onto $V$ by $\pi$. The maps $\mathbb{R} \to S^1$ (Example [[§35 Local Diffeomorphisms#^ex-35-2|§35.2]]) and $S^n \to \mathbb{RP}^n$, $n \ge 1$ (Section [[§46 Projective Spaces and the Hopf Fibration|§46]]), are covering maps, while $(0, 4\pi) \to S^1$ is a local diffeomorphism that is not (Example [[§35 Local Diffeomorphisms#^ex-35-3|§35.3]]).
+> Covering maps were not defined in lecture and the distinction was postponed; it is Lee Ch. 4. There a *smooth covering map* is a smooth surjective map $\pi : E \to M$ between connected manifolds such that every point of $M$ has a connected open neighbourhood $V$ that is *evenly covered*: each component of $\pi^{-1}(V)$ is mapped diffeomorphically onto $V$ by $\pi$. The maps $\mathbb{R} \to S^1$ (Example [[§35 Local Diffeomorphisms#^ex-35-2|§35.2]]) and $S^n \to \mathbb{RP}^n$, $n \ge 1$ (Section [[§47 The Hopf Fibration|§47]]), are covering maps, while $(0, 4\pi) \to S^1$ is a local diffeomorphism that is not (Example [[§35 Local Diffeomorphisms#^ex-35-3|§35.3]]).
 
 ^rem-35-2
 
@@ -224,3 +224,64 @@ The Jacobian $\tilde F'(\varphi(p))$ is invertible by Theorem [[§30 The Differe
 ^pf-35-4
 
 *Uses:* [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]]
+
+> [!example] Example §35.4: Spheres Cover Projective Spaces
+> The projection $\pi : S^n \to \mathbb{RP}^n$, $x \mapsto [x]$, is a local diffeomorphism, exactly two-to-one.
+
+^ex-35-4
+
+> [!proof]+ Proof
+> *(Stated in Lecture 10 as an example, without proof — the covering-map distinction was postponed; filled in.)* Three things are claimed: $\pi$ is smooth; it is a local diffeomorphism, that is (Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]]), every $x \in S^n$ has a neighbourhood $U$ that $\pi$ maps onto a neighbourhood $V$ of $\pi(x)$ with $\pi|_U^V$ having a smooth inverse; and every fibre of $\pi$ has exactly two points.
+>
+> *Setup.* Use coordinates $x_0, \ldots, x_n$ on $\mathbb{R}^{n+1}$, matching the charts $(U_i, \varphi_i)$ of Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]]: $U_i = \{[x] \mid x_i \neq 0\}$ and $\varphi_i([x]) = (x_k/x_i)_{k \neq i}$. Whether $x_i \neq 0$ does not depend on the representative, since $(\lambda x)_i = \lambda x_i$ with $\lambda \neq 0$. Give $S^n = \{|x|^2 = 1\}$ its level-set structure (Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]), so that Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] applies to maps out of and into $S^n$. For each $i$ and $\varepsilon = \pm 1$ let
+>
+> $$
+> U_i^\varepsilon = \{x \in S^n \mid \varepsilon x_i > 0\},
+> $$
+>
+> the open hemisphere; it is the intersection of $S^n$ with an open half-space of $\mathbb{R}^{n+1}$, hence open in $S^n$. Every $x \in S^n$ is nonzero, so some $x_i \neq 0$, and then $x \in U_i^\varepsilon$ for $\varepsilon$ the sign of $x_i$: the $2(n+1)$ hemispheres cover $S^n$.
+>
+> *$\pi$ maps $U_i^\varepsilon$ bijectively onto $U_i$.* If $x \in U_i^\varepsilon$ then $x_i \neq 0$, so $\pi(x) = [x] \in U_i$. Conversely, a point of $U_i$ is a line $[x]$ with $x_i \neq 0$; it meets $S^n$ in the two points $\pm x/|x|$, whose $i$-th coordinates $\pm x_i/|x|$ are nonzero and of opposite signs, so exactly one of them lies in $U_i^\varepsilon$. So $\pi$ maps $U_i^\varepsilon$ bijectively onto $U_i$: a line not contained in $\{x_i = 0\}$ meets $U_i^\varepsilon$ exactly once.
+>
+> *$\pi$ in the chart.* In the chart $\varphi_i$, for $x \in U_i^\varepsilon$,
+>
+> $$
+> \varphi_i \circ \pi(x) = \varphi_i([x]) = (x_k/x_i)_{k \neq i}.
+> $$
+>
+> The right side is the map $H(x) = (x_k/x_i)_{k \neq i}$, smooth on the open set $W' = \{x_i \neq 0\} \subseteq \mathbb{R}^{n+1}$ (each component is a quotient of coordinate functions with nonvanishing denominator), restricted to $S^n \cap W'$ and then to its open subset $U_i^\varepsilon$; hence $h = \varphi_i \circ \pi|_{U_i^\varepsilon} : U_i^\varepsilon \to \mathbb{R}^n$ is smooth by Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]](1).
+>
+> *The inverse of $h$.* For $y \in \mathbb{R}^n$ let $\hat y \in \mathbb{R}^{n+1}$ be $y$ with a $1$ inserted in slot $i$, and put $\kappa(y) = \varepsilon\,\hat y/|\hat y|$. Since $|\hat y| \ge 1$, $\kappa$ is smooth from $\mathbb{R}^n$ into $\mathbb{R}^{n+1}$. Its values have $|\kappa(y)| = 1$ and $\varepsilon\, \kappa(y)_i = \varepsilon^2/|\hat y| = 1/|\hat y| > 0$, so they lie in $U_i^\varepsilon$; by Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]](2) $\kappa$ is smooth into $S^n$, hence into its open subset $U_i^\varepsilon$ (an open subset carries the restricted charts). The two maps are mutually inverse. For $y \in \mathbb{R}^n$, the $k$-th component of $h(\kappa(y))$ is
+>
+> $$
+> \frac{\kappa(y)_k}{\kappa(y)_i} = \frac{\varepsilon\,\hat y_k/|\hat y|}{\varepsilon/|\hat y|} = \hat y_k = y_k \qquad (k \neq i).
+> $$
+>
+> For $x \in U_i^\varepsilon$, $h(x) = (x_k/x_i)_{k \neq i}$, so $\widehat{h(x)} = x/x_i$ (its $i$-th entry is $x_i/x_i = 1$), with norm $|x|/|x_i| = 1/|x_i|$; and $\varepsilon x_i > 0$ gives $|x_i| = \varepsilon x_i$, i.e. $\varepsilon |x_i| = x_i$. Hence
+>
+> $$
+> \kappa(h(x)) = \varepsilon\, \frac{x}{x_i}\, |x_i| = \frac{\varepsilon |x_i|}{x_i}\, x = x .
+> $$
+>
+> So $h = \varphi_i \circ \pi$ is a diffeomorphism of $U_i^\varepsilon$ onto $\mathbb{R}^n$, with inverse $y \mapsto \varepsilon\,\hat y/|\hat y|$.
+>
+> *Local diffeomorphism.* The chart $\varphi_i : U_i \to \varphi_i(U_i) = \mathbb{R}^n$ is a diffeomorphism by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]. Hence
+>
+> $$
+> \pi|_{U_i^\varepsilon} = \varphi_i^{-1} \circ (\varphi_i \circ \pi) = \varphi_i^{-1} \circ h : U_i^\varepsilon \to U_i
+> $$
+>
+> is a composite of diffeomorphisms, a diffeomorphism onto the open set $U_i$, with inverse $\kappa \circ \varphi_i$. In particular $\pi$ is smooth on each of the open sets $U_i^\varepsilon$, which cover $S^n$; since smoothness is checked near each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), $\pi$ is smooth. For $x \in U_i^\varepsilon$ the neighbourhoods $U = U_i^\varepsilon$ of $x$ and $V = U_i$ of $\pi(x)$ satisfy Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]], with local inverse $\kappa \circ \varphi_i$.
+>
+> *Exactly two-to-one.* The hemispheres cover $S^n$, as shown in the setup. Let $x \in S^n$. A point $y \in S^n$ has $\pi(y) = \pi(x)$ iff $y$ lies on the line through $x$, i.e. $y = \lambda x$ with $\lambda \in \mathbb{R}^\times$, and then $1 = |y| = |\lambda|$, so $\lambda = \pm 1$. Hence $\pi^{-1}(\pi(x)) = \{x, -x\}$, two distinct points since $x \neq 0$; in particular $\pi(x) = \pi(-x)$.
+
+^pf-ex-35-4
+
+*Uses:* [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
+
+![[m591-16-a8.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The case $n = 1$ as a fibration with discrete fibre. A point $[x]$ moves around $\mathbb{RP}^1$ (drawn as a circle by doubling the angle); its fibre is the antipodal pair $\{x, -x\}$ (blue, red). Over an arc $V$ (orange) the preimage is two disjoint arcs, $\pi^{-1}(V) \cong V \times \{\pm 1\}$: a local trivialization with fibre the two-point space.
+
+> [!remark]- Connections
+> - As a covering map of topological spaces, for $n = 2$: [[§38 Fundamental Group of Some Surfaces#^thm-38-1|590 §38.1]] ($S^2 \to P^2$ is a covering map).

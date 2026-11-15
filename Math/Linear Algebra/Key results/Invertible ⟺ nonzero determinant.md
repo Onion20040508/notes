@@ -29,7 +29,7 @@ tags: [linear-algebra, hub]
 - [[§7 The Regular Value Theorem#^prop-7-8|Proposition §7.8: Regular Points When N ≤ m]]
 - [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|Definition §11.5: General Linear Group]]
 - [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|Lemma §23.4: A One-Sided Inverse Suffices]]
-- [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|Lemma §48.3: Every Rotation Has an Axis]]
+- [[§44 SU(2) → SO(3)꞉ The Double Cover#^lem-44-3|Lemma §44.3: Every Rotation Has an Axis]]
 
 ## Connections
 - Characteristic polynomial: $\lambda$ is an eigenvalue iff $\det(\lambda I-T)=0$ ([[§37 Determinants#^ladr-9-51|9.51]]).

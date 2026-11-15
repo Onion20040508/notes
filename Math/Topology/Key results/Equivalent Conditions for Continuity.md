@@ -19,8 +19,8 @@ tags: [topology, hub]
 - [[§12 Metric Topology#^thm-12-9|Theorem §12.9: Continuity and Sequences]]
 
 ## Used in (Differentiable Manifolds)
-- [[§44 Embeddings#^thm-44-5|Theorem §44.5: Injective Proper Immersions Are Embeddings]]
-- [[§44 Embeddings#^prop-44-8|Proposition §44.8: Images of Embeddings Are Locally Closed]]
+- [[§41 Embeddings#^thm-41-7|Theorem §41.7: Injective Proper Immersions Are Embeddings]]
+- [[§41 Embeddings#^prop-41-10|Proposition §41.10: Images of Embeddings Are Locally Closed]]
 
 ## Connections
 - **Generalizes ε-δ.** Condition (4) is the topological form of the ε-δ definition ([[§10 Continuous Functions#^ex-10-1|Example §10.1]]; MATH 451: [[§17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]]). It is recovered for metric spaces in [[§12 Metric Topology#^thm-12-7|ε-δ Characterization of Continuity]] (§12.7).

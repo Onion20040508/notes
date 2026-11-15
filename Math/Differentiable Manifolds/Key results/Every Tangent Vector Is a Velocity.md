@@ -23,7 +23,7 @@ tags: [differentiable-manifolds, hub]
 - [[§31 Tangent Vectors as Velocities of Curves#^cor-31-6|Corollary §31.6: Tangent Vectors as Classes of Curves]]
 - [[§36 Submersions#^prop-36-3|Proposition §36.3: Local Extrema Are Critical Points]]
 - [[§39 Transversality and Lagrange Multipliers#^thm-39-8|Theorem §39.8: Lagrange Multipliers]]
-- [[§47 The Unit Quaternions and SU(2)#^prop-47-6|Proposition §47.6: The Tangent Space of SU(2) at the Identity]]
+- [[§43 The Unit Quaternions and SU(2)#^prop-43-6|Proposition §43.6: The Tangent Space of SU(2) at the Identity]]
 - [[§66 The Whitney Embedding Theorem#^lem-66-1|Lemma §66.1: Compact Manifolds Embed in Some ℝᵏ]]
 
 ## Connections

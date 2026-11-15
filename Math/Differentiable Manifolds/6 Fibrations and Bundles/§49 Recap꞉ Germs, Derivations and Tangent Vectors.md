@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Differentiable Manifolds]]"
-chapter: 7
+chapter: 6
 section: 49
 tags: [differentiable-manifolds, math591]
 ---
-← [[§48 SU(2) → SO(3)꞉ The Double Cover]] · ↑ [[· 7 Tangent and Cotangent Bundles]] · [[§50 Recap꞉ Covectors and the Four Differentials]] →
+← [[§48 The Normal Bundle of a Submanifold of Euclidean Space]] · ↑ [[· 6 Fibrations and Bundles]] · [[§50 Recap꞉ Covectors and the Four Differentials]] →
 
 *Stage: recap — Chapter 4's road from arrows to derivations, retraced in one place before tangent vectors are gathered into bundles and fields.*
 

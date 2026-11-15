@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Differentiable Manifolds]]"
-chapter: 7
+chapter: 6
 section: 51
 tags: [differentiable-manifolds, math591]
 ---
-← [[§50 Recap꞉ Covectors and the Four Differentials]] · ↑ [[· 7 Tangent and Cotangent Bundles]] · [[§52 The Cotangent Bundle]] →
+← [[§50 Recap꞉ Covectors and the Four Differentials]] · ↑ [[· 6 Fibrations and Bundles]] · [[§52 The Cotangent Bundle]] →
 
 *Stage: bundles — All the tangent spaces of $M$, assembled into a single manifold that fibres over $M$.*
 
@@ -128,7 +128,7 @@ tags: [differentiable-manifolds, math591]
 ^def-51-5
 
 ![[m591-17-2.svg]]
-*The trivialization and the chart, as on the board. The triangle commutes, $\mathrm{pr}_1 \circ \Phi = \pi$ — the fibration diagram of [[§40 Fibrations#^def-40-1|Definition §40.1]] — and the chart $\tilde\varphi$ is $\Phi$ followed by $\varphi$ on the first factor.*
+*The trivialization and the chart, as on the board. The triangle commutes, $\mathrm{pr}_1 \circ \Phi = \pi$ — the fibration diagram of [[§45 Fibrations#^def-45-1|Definition §45.1]] — and the chart $\tilde\varphi$ is $\Phi$ followed by $\varphi$ on the first factor.*
 
 > [!theorem] Lemma §51.2: Building a Manifold from Charts
 > Let $X$ be a set and $n \ge 0$ an integer. Suppose given subsets $U_\alpha \subseteq X$, indexed by $\alpha$ in some set $A$, and injective maps $\varphi_\alpha : U_\alpha \to \mathbb{R}^n$, such that:
@@ -322,7 +322,7 @@ Lemma [[§51 The Tangent Bundle#^lem-51-2|§51.2]] builds the topology and smoot
 >
 > So in the charts $\tilde\varphi$ and $\varphi$, $\pi$ is $(r, a) \mapsto r$, a linear projection, which is smooth.
 >
-> *(2)* By Definition [[§40 Fibrations#^def-40-1|§40.1]] we need an open cover of $M$ and, over each member $U$, a diffeomorphism $\pi^{-1}(U) = TU \to U \times \mathbb{R}^m$ commuting with the projections. Take the chart domains $U$, which cover $M$, and the maps $\Phi$ of Definition [[§51 The Tangent Bundle#^def-51-4|§51.4]]. Since $\tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]) and $\varphi \times \mathrm{id} : U \times \mathbb{R}^m \to \varphi(U) \times \mathbb{R}^m$ is a bijection with inverse $\varphi^{-1} \times \mathrm{id}$,
+> *(2)* By Definition [[§45 Fibrations#^def-45-1|§45.1]] we need an open cover of $M$ and, over each member $U$, a diffeomorphism $\pi^{-1}(U) = TU \to U \times \mathbb{R}^m$ commuting with the projections. Take the chart domains $U$, which cover $M$, and the maps $\Phi$ of Definition [[§51 The Tangent Bundle#^def-51-4|§51.4]]. Since $\tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]) and $\varphi \times \mathrm{id} : U \times \mathbb{R}^m \to \varphi(U) \times \mathbb{R}^m$ is a bijection with inverse $\varphi^{-1} \times \mathrm{id}$,
 >
 > $$
 > \Phi = (\varphi^{-1} \times \mathrm{id}) \circ \tilde\varphi .
@@ -342,7 +342,7 @@ Lemma [[§51 The Tangent Bundle#^lem-51-2|§51.2]] builds the topology and smoot
 
 ^pf-51-5
 
-*Uses:* [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^prop-51-4|§51.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§51 The Tangent Bundle#^def-51-2|Def. §51.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
+*Uses:* [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^prop-51-4|§51.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§45 Fibrations#^def-45-1|Def. §45.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§51 The Tangent Bundle#^def-51-2|Def. §51.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
 > [!remark] Remark: Vector Bundles
 > $TM$ is in fact a *vector bundle*: a fibration whose fibres are vector spaces, with trivializations that are linear isomorphisms on each fibre. The general definition is postponed, but these are its two features: the fibres are abstract vector spaces, and there are trivializations which restrict to linear isomorphisms fibrewise. Vector bundles are objects of interest in their own right; K-theory is built from them.
@@ -350,6 +350,6 @@ Lemma [[§51 The Tangent Bundle#^lem-51-2|§51.2]] builds the topology and smoot
 ^rem-51-2
 
 > [!remark] Remark: Trivializations and Frames
-> [[§40 Fibrations#^prop-40-4|Proposition §40.4]] turns local trivializations into local sections. For the tangent bundle the dictionary is between trivializations and *frames*: the trivialization $\Phi$ of a chart (Definition [[§51 The Tangent Bundle#^def-51-4|§51.4]]) corresponds to the $m$ local sections ([[§40 Fibrations#^def-40-4|Def. §40.4]]) $u \mapsto \partial/\partial x^i|_u$, since $\Phi^{-1}(u, e_i) = \partial/\partial x^i|_u$; for a vector bundle ([[§51 The Tangent Bundle#^rem-51-2|Rem. in §51]]) of rank $m$ one local section is not enough, and it takes $m$ sections that are linearly independent at every point (Lee, Example 10.18 and Proposition 10.19). For the Hopf fibration one section suffices because the fibre is a single orbit ([[§13 Group Actions and Orbit Spaces#^def-13-3|Def. §13.3]]) of the free $S^1$-action. That is the general pattern of *principal bundles*, where a group acts freely and transitively on each fibre; it is stated here, not proved.
+> [[§45 Fibrations#^prop-45-4|Proposition §45.4]] turns local trivializations into local sections. For the tangent bundle the dictionary is between trivializations and *frames*: the trivialization $\Phi$ of a chart (Definition [[§51 The Tangent Bundle#^def-51-4|§51.4]]) corresponds to the $m$ local sections ([[§45 Fibrations#^def-45-4|Def. §45.4]]) $u \mapsto \partial/\partial x^i|_u$, since $\Phi^{-1}(u, e_i) = \partial/\partial x^i|_u$; for a vector bundle ([[§51 The Tangent Bundle#^rem-51-2|Rem. in §51]]) of rank $m$ one local section is not enough, and it takes $m$ sections that are linearly independent at every point (Lee, Example 10.18 and Proposition 10.19). For the Hopf fibration one section suffices because the fibre is a single orbit ([[§13 Group Actions and Orbit Spaces#^def-13-3|Def. §13.3]]) of the free $S^1$-action. That is the general pattern of *principal bundles*, where a group acts freely and transitively on each fibre; it is stated here, not proved.
 
 ^rem-51-3

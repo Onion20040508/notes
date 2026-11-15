@@ -5,13 +5,13 @@ chapter: 7
 section: 53
 tags: [differentiable-manifolds, math591]
 ---
-← [[§52 The Cotangent Bundle]] · ↑ [[· 7 Tangent and Cotangent Bundles]] · [[§54 Critical Points and the Hessian]] →
+← [[§52 The Cotangent Bundle]] · ↑ [[· 7 One-Forms and Morse Functions]] · [[§54 Critical Points and the Hessian]] →
 
 *Stage: fields — Smooth sections of $T^{\ast}M$, a covector at every point; functions give one-forms through $d$, but not every one-form is a $df$; one-forms pull back along smooth maps, and $d$ commutes with pulling back.*
 
 *Lecture 15. The sections of the cotangent bundle, and the operator $d$ that produces them from functions — the first of a chain of operators that will appear with de Rham cohomology.*
 
-A one-form is a section of the cotangent bundle ([[§40 Fibrations#^def-40-3|Definition §40.3]]): it picks a covector in every fibre $T_p^{\ast}M$. Every vector bundle has sections, the zero section at least — unlike a general fibration: the Hopf fibration has none (Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-4|§46.4]]).
+A one-form is a section of the cotangent bundle ([[§45 Fibrations#^def-45-3|Definition §45.3]]): it picks a covector in every fibre $T_p^{\ast}M$. Every vector bundle has sections, the zero section at least — unlike a general fibration: the Hopf fibration has none (Example [[§47 The Hopf Fibration#^ex-47-3|§47.3]]).
 
 ## One-Forms and Their Coordinates
 
@@ -28,7 +28,7 @@ A one-form is a section of the cotangent bundle ([[§40 Fibrations#^def-40-3|Def
 > \theta_p \in T_p^*M \qquad \text{for every } p \in M .
 > $$
 >
-> Equivalently, $\pi \circ \theta = \mathrm{id}_M$ for the projection $\pi : T^{\ast}M \to M$: a one-form is a section of the cotangent bundle ([[§40 Fibrations#^def-40-3|Definition §40.3]]).
+> Equivalently, $\pi \circ \theta = \mathrm{id}_M$ for the projection $\pi : T^{\ast}M \to M$: a one-form is a section of the cotangent bundle ([[§45 Fibrations#^def-45-3|Definition §45.3]]).
 >
 > *Lee: Ch. 11, Covector Fields*
 

@@ -161,7 +161,7 @@ $V \subseteq S$ is open iff $V = U \cap S$ for some open $U \subseteq X$, see De
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]; Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]]; Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]]; the remark *What Subspaces Do Not Inherit* in [[§3 Subspaces and Products|§3]].
-> - Used for: regular level sets, Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] (a regular submanifold carries the subspace topology), Definition [[§44 Embeddings#^def-44-1|§44.1]].
+> - Used for: regular level sets, Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] (a regular submanifold carries the subspace topology), Definition [[§41 Embeddings#^def-41-1|§41.1]].
 
 #### Product topology · P2
 
@@ -333,7 +333,7 @@ A continuous map is proper if preimages of compact sets are compact, see Definit
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]] (the same notion is Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]]).
-> - Q2: compact subsets of a Hausdorff space are closed, closed subsets of a compact space are compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]). Q4: Proposition [[§44 Embeddings#^prop-44-4|§44.4]] (proper maps into manifolds are closed).
+> - Q2: compact subsets of a Hausdorff space are closed, closed subsets of a compact space are compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]). Q4: Proposition [[§41 Embeddings#^prop-41-6|§41.6]] (proper maps into manifolds are closed).
 
 #### Proper action · P2
 
@@ -348,7 +348,7 @@ A continuous action is proper if $\Psi : G \times X \to X \times X$, $\Psi(g, x)
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§13 Group Actions and Orbit Spaces#^def-13-7|§13.7]]; the map $(\ast)$ in the proof of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]]; the remark *Proper Actions* in [[§13 Group Actions and Orbit Spaces|§13]].
-> - Q2: $\operatorname{im} \Psi = \Gamma$, the graph of the orbit relation; Theorem [[§6 Open Quotients#^thm-6-1|§6.1]]. Q4: Proposition [[§44 Embeddings#^prop-44-4|§44.4]] (the notes do not prove the proper-action theorem; Lee Ch. 21, Proposition 21.4).
+> - Q2: $\operatorname{im} \Psi = \Gamma$, the graph of the orbit relation; Theorem [[§6 Open Quotients#^thm-6-1|§6.1]]. Q4: Proposition [[§41 Embeddings#^prop-41-6|§41.6]] (the notes do not prove the proper-action theorem; Lee Ch. 21, Proposition 21.4).
 
 #### Homogeneous space · P2
 
@@ -515,7 +515,7 @@ Every point of a topological manifold has an open neighbourhood with compact clo
 - [ ] Q2 Choose a chart at $q$ and a closed ball $\overline B_\varepsilon(\varphi(q)) \subseteq \varphi(U)$. Define $V$ and $K$.
 - [ ] Q3 Why is $K$ compact, and why is it closed in $M$? (Which axiom of a manifold is used?)
 - [ ] Q4 Conclude $\overline V \subseteq K$ is compact.
-- [ ] Q5 **[why]** Where is this used later (proper maps into manifolds are closed, Proposition [[§44 Embeddings#^prop-44-4|§44.4]])?
+- [ ] Q5 **[why]** Where is this used later (proper maps into manifolds are closed, Proposition [[§41 Embeddings#^prop-41-6|§41.6]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: go down to Euclidean space, take a ball, pull it up.
@@ -1062,7 +1062,7 @@ Near $p$, $X \cap W$ is the image of a smooth $\alpha : V \to \mathbb{R}^{n+k}$,
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§20 Manifolds in Euclidean Space#^def-20-2|§20.2]]; Definition [[§20 Manifolds in Euclidean Space#^def-20-3|§20.3]] (a parametrization is an inverse chart); Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]].
-> - Q3: Example [[§44 Embeddings#^ex-44-4|§44.4]] (the figure-eight), Example [[§43 Immersions#^ex-43-2|§43.2]]. Q4: $\alpha(t) = (t^2, t^3)$ (not in the notes): smooth, injective, a homeomorphism onto the cusp $y^2 = x^3$, with $D\alpha_0 = 0$.
+> - Q3: Example [[§41 Embeddings#^ex-41-3|§41.3]] (the figure-eight), Example [[§40 Immersions#^ex-40-2|§40.2]]. Q4: $\alpha(t) = (t^2, t^3)$ (not in the notes): smooth, injective, a homeomorphism onto the cusp $y^2 = x^3$, with $D\alpha_0 = 0$.
 
 ## Proofs T2
 
@@ -2595,7 +2595,7 @@ $F$ is a submersion at $p$ if $F_{\ast p}$ is onto, and a submersion if it is on
 - [ ] Q5 **[why]** True or false: there is a submersion from $S^2$ to $\mathbb{R}$. Which property of submersions decides it?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§36 Submersions#^def-36-1|§36.1]]; Example [[§36 Submersions#^ex-36-1|§36.1]], Example [[§36 Submersions#^ex-36-2|§36.2]], Proposition [[§40 Fibrations#^prop-40-1|§40.1]] (part 2).
+> - Definition [[§36 Submersions#^def-36-1|§36.1]]; Example [[§36 Submersions#^ex-36-1|§36.1]], Example [[§36 Submersions#^ex-36-2|§36.2]], Proposition [[§45 Fibrations#^prop-45-1|§45.1]] (part 2).
 > - Q3: Theorem [[§36 Submersions#^thm-36-6|§36.6]]; Corollary [[§36 Submersions#^cor-36-7|§36.7]], Corollary [[§36 Submersions#^cor-36-9|§36.9]] (open: "locally they are projections").
 > - Q4: $0$ is critical; $f(\mathbb{R}) = [0, \infty)$ is not open. Q5: Theorem [[§36 Submersions#^thm-36-10|§36.10]], Corollary [[§36 Submersions#^cor-36-11|§36.11]] → drilled as [[Differentiable Manifolds HW Drill#^hw4-2|HW4.2]].
 > - Also: for $G : M \to \mathbb{R}^k$, submersion at $p$ iff the $dG^j|_p$ are independent, Proposition [[§36 Submersions#^prop-36-4|§36.4]].
@@ -2614,8 +2614,8 @@ $F$ is an immersion at $p$ if $F_{\ast p}$ is injective, and an immersion if it 
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§36 Submersions#^def-36-2|§36.2]] (= Definition [[§36 Submersions#^def-36-2|§36.2]]); Proposition [[§36 Submersions#^prop-36-1|§36.1]].
-> - Q2: Example [[§43 Immersions#^ex-43-1|§43.1]], Example [[§43 Immersions#^ex-43-2|§43.2]]. Q3: injective, not an immersion at $0$ (velocity $0$); the image is the cusp.
-> - Q4: Theorem [[§43 Immersions#^thm-43-1|§43.1]]. Q5: Proposition [[§36 Submersions#^prop-36-1|§36.1]] (part 3).
+> - Q2: Example [[§40 Immersions#^ex-40-1|§40.1]], Example [[§40 Immersions#^ex-40-2|§40.2]]. Q3: injective, not an immersion at $0$ (velocity $0$); the image is the cusp.
+> - Q4: Theorem [[§40 Immersions#^thm-40-1|§40.1]]. Q5: Proposition [[§36 Submersions#^prop-36-1|§36.1]] (part 3).
 
 #### Regular point and critical point (manifolds) · P2
 
@@ -2937,7 +2937,7 @@ $S \subseteq M$ (subspace topology) is a regular submanifold of codimension $k$ 
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]; Q2: Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]] ($\varphi_S = x_a|_{U \cap S}$, dimension $m - k$).
-> - Q3: Proposition [[§44 Embeddings#^prop-44-13|§44.13]], Example [[§44 Embeddings#^ex-44-4|§44.4]] (dense, so would be open, Corollary [[§44 Embeddings#^cor-44-9|§44.9]]). Q4: Example [[§44 Embeddings#^ex-44-4|§44.4]] (removing the origin leaves four components).
+> - Q3: Proposition [[§41 Embeddings#^prop-41-14|§41.14]], Example [[§41 Embeddings#^ex-41-3|§41.3]] (dense, so would be open, Corollary [[§41 Embeddings#^cor-41-11|§41.11]]). Q4: Example [[§41 Embeddings#^ex-41-3|§41.3]] (removing the origin leaves four components).
 > - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]], Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]. Also: maps into $M$ with image in $S$ are smooth into $S$, Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]].
 
 #### Adapted chart · P2
@@ -2954,8 +2954,8 @@ A smooth chart $(U, \varphi)$ of $M$ with $U \cap S = \{x^{m-k+1} = \cdots = x^m
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]] ("a random chart of $M$ is not adapted"); Q2: Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]].
-> - Q3: Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]]. Q4: Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]]; converse: Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] (part 2).
-> - Q5: polar coordinates $(\theta, r - 1)$ on the slit plane, or the graph construction in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]].
+> - Q3: Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]]. Q4: Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]]; converse: Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] (part 2).
+> - Q5: polar coordinates $(\theta, r - 1)$ on the slit plane, or the graph construction in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]].
 
 #### Conormal space · P2
 
@@ -2969,8 +2969,8 @@ $N_pS = \{\xi \in T^\ast_pM : \xi = 0 \text{ on } \iota_{\ast p}(T_pS)\}$, the a
 - [ ] Q4 **[example]** For $M \subseteq \mathbb{R}^n$, how does $N_pM$ match $(T^{\mathrm{geo}}_pM)^\perp$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]; Q2: Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]] ($dx^{m-k+1}|_p, \ldots, dx^m|_p$), Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]] ($dG^j|_p$).
-> - Q3: the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]. Q4: Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-3|§42.3]]. Bundle version: Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]].
+> - Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]; Q2: Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]] ($dx^{m-k+1}|_p, \ldots, dx^m|_p$), Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]] ($dG^j|_p$).
+> - Q3: the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]. Q4: Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-3|§48.3]]. Bundle version: Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]].
 
 #### Open submanifold of a smooth manifold · P2
 
@@ -2985,7 +2985,7 @@ An open $S \subseteq M$ with the smooth charts of $M$ whose domains lie in $S$, 
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]], Definition [[§3 Subspaces and Products#^def-3-2|§3.2]]; Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]].
-> - Q3: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] (germs see only a neighbourhood). Q4: Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|§11.5]], Definition [[§40 Fibrations#^def-40-1|§40.1]]; Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]].
+> - Q3: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] (germs see only a neighbourhood). Q4: Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|§11.5]], Definition [[§45 Fibrations#^def-45-1|§45.1]]; Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]].
 
 #### Transverse submanifolds · P2
 
@@ -3051,7 +3051,7 @@ For $p\in F^{-1}(S)$, $q=F(p)$: $\operatorname{im}F'(p)+T^{\mathrm{geo}}_qS=\mat
 
 #### Adapted charts give local defining maps · P1
 
-For an adapted chart $(U,\varphi=(x_a,x_b))$, the map $x_b:U\to\mathbb{R}^k$ is smooth, a submersion at every point of $U$, $U\cap S=x_b^{-1}(\vec 0)$ with $\vec 0$ a regular value, and $\iota_{\ast q}(T_qS)=\ker(x_b)_{\ast q}$ for $q\in U\cap S$: a regular submanifold is locally a regular level set, see Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]]. *Source: filled in (Step 2 of Assignment 5, Problem 2).*
+For an adapted chart $(U,\varphi=(x_a,x_b))$, the map $x_b:U\to\mathbb{R}^k$ is smooth, a submersion at every point of $U$, $U\cap S=x_b^{-1}(\vec 0)$ with $\vec 0$ a regular value, and $\iota_{\ast q}(T_qS)=\ker(x_b)_{\ast q}$ for $q\in U\cap S$: a regular submanifold is locally a regular level set, see Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]]. *Source: filled in (Step 2 of Assignment 5, Problem 2).*
 
 ^nd-prop-37-7
 
@@ -3071,7 +3071,7 @@ For an adapted chart $(U,\varphi=(x_a,x_b))$, the map $x_b:U\to\mathbb{R}^k$ is 
 
 #### Facts about an adapted chart in $\mathbb{R}^n$ · P1
 
-For a chart of $\mathbb{R}^n$ adapted to $M$ with $G=(x^{m+1},\dots,x^n)$: $J(q)=G'(q)$ has rank $n-m$, $T^{\mathrm{geo}}_qM=\ker J(q)$, the columns $X_1(q),\dots,X_m(q)$ of $(\varphi^{-1})'(\varphi(q))$ span $T^{\mathrm{geo}}_qM$, and the gradients $\nabla G^s(q)$ are a basis of $(T^{\mathrm{geo}}_qM)^\perp$, see Lemma [[§37 Regular Submanifolds#^lem-37-13|§37.13]]. These are the steps of Assignment 5, Problem 5(a). → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]].
+For a chart of $\mathbb{R}^n$ adapted to $M$ with $G=(x^{m+1},\dots,x^n)$: $J(q)=G'(q)$ has rank $n-m$, $T^{\mathrm{geo}}_qM=\ker J(q)$, the columns $X_1(q),\dots,X_m(q)$ of $(\varphi^{-1})'(\varphi(q))$ span $T^{\mathrm{geo}}_qM$, and the gradients $\nabla G^s(q)$ are a basis of $(T^{\mathrm{geo}}_qM)^\perp$, see Lemma [[§37 Regular Submanifolds#^lem-37-14|§37.14]]. These are the steps of Assignment 5, Problem 5(a). → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]].
 
 ^nd-lem-37-10
 
@@ -3178,7 +3178,7 @@ For each adapted chart $(U,\varphi=(x_a,x_b))$, $\varphi_S=x_a|_{U\cap S}$ is a 
 > - $\varphi_S=\mathrm{pr}\circ\varphi$ and $\varphi_S^{-1}=\varphi^{-1}\circ j$ on the induced chart, so $\varphi\circ\iota\circ\varphi_S^{-1}=j$.
 > - (2) Continuity: $G^{-1}(O\cap S)=G^{-1}(O)$ because $G(X)\subseteq S$, and the sets $O\cap S$ are the open sets of $S$.
 > - (2) Smoothness: $\varphi_S\circ G\circ\chi^{-1}=\mathrm{pr}\circ(\varphi\circ G\circ\chi^{-1})$.
-> - Used in Proposition [[§40 Fibrations#^prop-40-2|§40.2]] and Corollary [[§44 Embeddings#^cor-44-3|§44.3]].
+> - Used in Proposition [[§45 Fibrations#^prop-45-2|§45.2]] and Corollary [[§41 Embeddings#^cor-41-3|§41.3]].
 
 #### Tangent spaces of a regular submanifold · P2
 
@@ -3202,7 +3202,7 @@ $\iota_{\ast p}:T_pS\to T_pM$ is injective; in an adapted chart, $\iota_{\ast p}
 
 #### Regular submanifolds of Euclidean space: the slice description · P2
 
-For $X\subseteq\mathbb{R}^{n+k}$ and $p\in X$: $X$ is described externally (equivalently internally, or as a graph) near $p$ if and only if there is a chart of $\mathbb{R}^{n+k}$ at $p$ adapted to $X$; so the regular submanifolds of $\mathbb{R}^{n+k}$ are exactly the manifolds of the geometric stage, see Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]]. *Source: filled in.*
+For $X\subseteq\mathbb{R}^{n+k}$ and $p\in X$: $X$ is described externally (equivalently internally, or as a graph) near $p$ if and only if there is a chart of $\mathbb{R}^{n+k}$ at $p$ adapted to $X$; so the regular submanifolds of $\mathbb{R}^{n+k}$ are exactly the manifolds of the geometric stage, see Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]]. *Source: filled in.*
 
 ^nd-prop-37-9
 
@@ -3269,14 +3269,14 @@ If $F:M\to N$ is a submersion, every fibre $F^{-1}(q)$ is a regular submanifold 
 - [ ] Q1 **[state]** State the corollary.
 - [ ] Q2 Why is every $q\in N$ a regular value of a submersion, including $q\notin F(M)$?
 - [ ] Q3 Which theorem finishes the proof?
-- [ ] Q4 **[why]** Are all the fibres of a surjective submersion diffeomorphic to one another? Use Example [[§40 Fibrations#^ex-40-1|§40.1]].
-- [ ] Q5 Where is the corollary used for fibrations and for the vertical space (Definition [[§40 Fibrations#^def-40-5|§40.5]])?
+- [ ] Q4 **[why]** Are all the fibres of a surjective submersion diffeomorphic to one another? Use Example [[§45 Fibrations#^ex-45-1|§45.1]].
+- [ ] Q5 Where is the corollary used for fibrations and for the vertical space (Definition [[§45 Fibrations#^def-45-5|§45.5]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - A submersion is onto at every point, so every point of every fibre is regular; empty fibres are vacuous.
 > - Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]].
 > - The punctured plane over $\mathbb{R}$: one fibre is disconnected, the others are lines.
-> - Used in Proposition [[§40 Fibrations#^prop-40-2|§40.2]] and to read $V_y$ as the tangent space of the fibre.
+> - Used in Proposition [[§45 Fibrations#^prop-45-2|§45.2]] and to read $V_y$ as the tangent space of the fibre.
 
 #### Charts of a submanifold extend to adapted charts · P2
 
@@ -3335,7 +3335,7 @@ For regular level sets $S_i=G_i^{-1}(0)\subseteq\mathbb{R}^k$ and $q\in S_1\cap 
 
 #### A basis of the conormal space · P3
 
-In an adapted chart at $p$, $\xi=\sum_i\xi_i\,dx^i|_p$ lies in $N_pS$ if and only if $\xi_i=0$ for $i\le m-k$; so $dx^{m-k+1}|_p,\dots,dx^m|_p$ is a basis of $N_pS$ and $\dim N_pS=k$, see Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]]. *Source: filled in.*
+In an adapted chart at $p$, $\xi=\sum_i\xi_i\,dx^i|_p$ lies in $N_pS$ if and only if $\xi_i=0$ for $i\le m-k$; so $dx^{m-k+1}|_p,\dots,dx^m|_p$ is a basis of $N_pS$ and $\dim N_pS=k$, see Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]]. *Source: filled in.*
 
 ^nd-prop-37-8
 
@@ -3420,7 +3420,7 @@ An open subset $S\subseteq M$ is a regular submanifold of codimension $0$ whose 
 
 #### Local section · P1
 
-A smooth $s : U \to E$ on an open $U \subseteq B$ with $\pi \circ s = \mathrm{id}_U$, see Definition [[§40 Fibrations#^def-40-4|§40.4]]. *Source: Lecture 13; Assignment 4.*
+A smooth $s : U \to E$ on an open $U \subseteq B$ with $\pi \circ s = \mathrm{id}_U$, see Definition [[§45 Fibrations#^def-45-4|§45.4]]. *Source: Lecture 13; Assignment 4.*
 
 ^nd-def-38-4
 
@@ -3430,14 +3430,14 @@ A smooth $s : U \to E$ on an open $U \subseteq B$ with $\pi \circ s = \mathrm{id
 - [ ] Q4 **[example]** Write a local section of the Hopf fibration over $U_i = \{z_i \neq 0\}$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§40 Fibrations#^def-40-4|§40.4]]; Q2: Proposition [[§40 Fibrations#^prop-40-4|§40.4]] ($s(u) = \phi^{-1}(u, f_0)$).
-> - Q3: Proposition [[§46 Projective Spaces and the Hopf Fibration#^prop-46-1|§46.1]]; the remark *Trivializations and Frames* in [[§51 The Tangent Bundle|§51]] (one section suffices because the fibre is one orbit). Q4: Corollary [[§46 Projective Spaces and the Hopf Fibration#^cor-46-2|§46.2]].
+> - Definition [[§45 Fibrations#^def-45-4|§45.4]]; Q2: Proposition [[§45 Fibrations#^prop-45-4|§45.4]] ($s(u) = \phi^{-1}(u, f_0)$).
+> - Q3: Proposition [[§47 The Hopf Fibration#^prop-47-1|§47.1]]; the remark *Trivializations and Frames* in [[§51 The Tangent Bundle|§51]] (one section suffices because the fibre is one orbit). Q4: Corollary [[§47 The Hopf Fibration#^cor-47-2|§47.2]].
 
 ### Priority 2 · stated or done in class
 
 #### Fibration · P2
 
-$\pi : M \to B$ is a fibration with fibre $F$ if $B$ has an open cover $\{U_\alpha\}$ with diffeomorphisms $\phi_\alpha : \pi^{-1}(U_\alpha) \to U_\alpha \times F$ satisfying $\mathrm{pr}_1 \circ \phi_\alpha = \pi$, see Definition [[§40 Fibrations#^def-40-1|§40.1]]. *Source: Lectures 11–13.*
+$\pi : M \to B$ is a fibration with fibre $F$ if $B$ has an open cover $\{U_\alpha\}$ with diffeomorphisms $\phi_\alpha : \pi^{-1}(U_\alpha) \to U_\alpha \times F$ satisfying $\mathrm{pr}_1 \circ \phi_\alpha = \pi$, see Definition [[§45 Fibrations#^def-45-1|§45.1]]. *Source: Lectures 11–13.*
 
 ^nd-def-38-1
 
@@ -3448,13 +3448,13 @@ $\pi : M \to B$ is a fibration with fibre $F$ if $B$ has an open cover $\{U_\alp
 - [ ] Q5 **[why]** State Ehresmann's theorem. Which hypothesis does the punctured plane violate? Why do diffeomorphic fibres not suffice?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§40 Fibrations#^def-40-1|§40.1]]; Q2: Proposition [[§40 Fibrations#^prop-40-1|§40.1]] (part 2: $\pi|_W = \mathrm{pr}_1 \circ \phi_\alpha$, chain rule; stated in lecture as "chain rule and stuff").
-> - Q3: Proposition [[§40 Fibrations#^prop-40-2|§40.2]]. Q4: Example [[§40 Fibrations#^ex-40-1|§40.1]] (fibres change: a line, then a line minus a point). Q5: Theorem [[§40 Fibrations#^thm-40-3|§40.3]] (proper; quoted), Example [[§40 Fibrations#^ex-40-2|§40.2]].
-> - Q1 examples: Example [[§41 Examples of Fibrations#^ex-41-1|§41.1]] (product), Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]] (Möbius band), Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|§46.3]] (Hopf), Corollary [[§51 The Tangent Bundle#^cor-51-5|§51.5]] ($TM$), Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-2|§42.2]] (normal bundle).
+> - Definition [[§45 Fibrations#^def-45-1|§45.1]]; Q2: Proposition [[§45 Fibrations#^prop-45-1|§45.1]] (part 2: $\pi|_W = \mathrm{pr}_1 \circ \phi_\alpha$, chain rule; stated in lecture as "chain rule and stuff").
+> - Q3: Proposition [[§45 Fibrations#^prop-45-2|§45.2]]. Q4: Example [[§45 Fibrations#^ex-45-1|§45.1]] (fibres change: a line, then a line minus a point). Q5: Theorem [[§45 Fibrations#^thm-45-3|§45.3]] (proper; quoted), Example [[§45 Fibrations#^ex-45-2|§45.2]].
+> - Q1 examples: Example [[§46 Examples of Fibrations#^ex-46-1|§46.1]] (product), Proposition [[§46 Examples of Fibrations#^prop-46-1|§46.1]] (Möbius band), Example [[§47 The Hopf Fibration#^ex-47-2|§47.2]] (Hopf), Corollary [[§51 The Tangent Bundle#^cor-51-5|§51.5]] ($TM$), Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|§48.2]] (normal bundle).
 
 #### Trivial fibration · P2
 
-A fibration with a single trivialization over all of $B$: $\phi : M \to B \times F$, $\mathrm{pr}_1 \circ \phi = \pi$, see Definition [[§40 Fibrations#^def-40-2|§40.2]]. *Source: Lecture 12.*
+A fibration with a single trivialization over all of $B$: $\phi : M \to B \times F$, $\mathrm{pr}_1 \circ \phi = \pi$, see Definition [[§45 Fibrations#^def-45-2|§45.2]]. *Source: Lecture 12.*
 
 ^nd-def-38-2
 
@@ -3464,13 +3464,13 @@ A fibration with a single trivialization over all of $B$: $\phi : M \to B \times
 - [ ] Q4 **[why]** The Möbius band "looks like a strip wherever you cut it". Where does its pair of trivializations disagree, and why does that make a single global trivialization implausible?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§40 Fibrations#^def-40-2|§40.2]]; Q2: Example [[§41 Examples of Fibrations#^ex-41-1|§41.1]].
-> - Q3: a global trivialization gives a global section (Proposition [[§40 Fibrations#^prop-40-4|§40.4]]), and there is none, Corollary [[§46 Projective Spaces and the Hopf Fibration#^cor-46-2|§46.2]], the remark *Sections Need Not Exist* in [[§46 Projective Spaces and the Hopf Fibration|§46]].
-> - Q4: Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]] (part 3: a sign on one arc). The notes do not prove non-triviality.
+> - Definition [[§45 Fibrations#^def-45-2|§45.2]]; Q2: Example [[§46 Examples of Fibrations#^ex-46-1|§46.1]].
+> - Q3: a global trivialization gives a global section (Proposition [[§45 Fibrations#^prop-45-4|§45.4]]), and there is none, Corollary [[§47 The Hopf Fibration#^cor-47-2|§47.2]], the remark *Sections Need Not Exist* in [[§47 The Hopf Fibration|§47]].
+> - Q4: Proposition [[§46 Examples of Fibrations#^prop-46-1|§46.1]] (part 3: a sign on one arc). The notes do not prove non-triviality.
 
 #### Section · P2
 
-A smooth $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$, see Definition [[§40 Fibrations#^def-40-3|§40.3]]. *Source: Lecture 13.*
+A smooth $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$, see Definition [[§45 Fibrations#^def-45-3|§45.3]]. *Source: Lecture 13.*
 
 ^nd-def-38-3
 
@@ -3481,13 +3481,13 @@ A smooth $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$, see Definition [[§40
 - [ ] Q5 **[why]** Does every fibration have a global section? Does every vector bundle?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§40 Fibrations#^def-40-3|§40.3]]; Q2: Definition [[§51 The Tangent Bundle#^def-51-3|§51.3]], Definition [[§52 The Cotangent Bundle#^def-52-3|§52.3]], Definition [[§56 Vector Fields#^def-56-1|§56.1]], Definition [[§53 One-Forms#^def-53-1|§53.1]].
-> - Q3: Proposition [[§40 Fibrations#^prop-40-5|§40.5]]. Q4: Proposition [[§44 Embeddings#^prop-44-11|§44.11]].
-> - Q5: no (Hopf, Corollary [[§46 Projective Spaces and the Hopf Fibration#^cor-46-2|§46.2]]); yes, the zero section (the remark *Sections Need Not Exist* in [[§46 Projective Spaces and the Hopf Fibration|§46]]).
+> - Definition [[§45 Fibrations#^def-45-3|§45.3]]; Q2: Definition [[§51 The Tangent Bundle#^def-51-3|§51.3]], Definition [[§52 The Cotangent Bundle#^def-52-3|§52.3]], Definition [[§56 Vector Fields#^def-56-1|§56.1]], Definition [[§53 One-Forms#^def-53-1|§53.1]].
+> - Q3: Proposition [[§45 Fibrations#^prop-45-5|§45.5]]. Q4: Proposition [[§45 Fibrations#^prop-45-6|§45.6]].
+> - Q5: no (Hopf, Corollary [[§47 The Hopf Fibration#^cor-47-2|§47.2]]); yes, the zero section (the remark *Sections Need Not Exist* in [[§47 The Hopf Fibration|§47]]).
 
 #### Vertical space · P2
 
-$V_y = \ker \pi_{\ast y} \subseteq T_yE$, see Definition [[§40 Fibrations#^def-40-5|§40.5]]. *Source: Lecture 13.*
+$V_y = \ker \pi_{\ast y} \subseteq T_yE$, see Definition [[§45 Fibrations#^def-45-5|§45.5]]. *Source: Lecture 13.*
 
 ^nd-def-38-5
 
@@ -3498,8 +3498,8 @@ $V_y = \ker \pi_{\ast y} \subseteq T_yE$, see Definition [[§40 Fibrations#^def-
 - [ ] Q5 **[example]** Compute the vertical space of $T^\ast M$ along the zero section.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§40 Fibrations#^def-40-5|§40.5]]; Q2: Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] ($\iota_{\ast}(T_yE_b) = \ker \pi_{\ast y}$).
-> - Q3: Proposition [[§40 Fibrations#^prop-40-5|§40.5]] ($P = \mathrm{id} - s_{\ast p} \circ \pi_{\ast y}$). Q4: no in general; along the image of a section, yes (Q3).
+> - Definition [[§45 Fibrations#^def-45-5|§45.5]]; Q2: Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] ($\iota_{\ast}(T_yE_b) = \ker \pi_{\ast y}$).
+> - Q3: Proposition [[§45 Fibrations#^prop-45-5|§45.5]] ($P = \mathrm{id} - s_{\ast p} \circ \pi_{\ast y}$). Q4: no in general; along the image of a section, yes (Q3).
 > - Q5: Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]] (spanned by $\partial/\partial \xi_j$).
 
 #### Vector bundle · P2
@@ -3515,10 +3515,10 @@ A fibration $\pi : E \to M$ whose fibres are vector spaces and whose local trivi
 - [ ] Q5 **[why]** Why is the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ not a vector bundle for any choice of structure? (Two reasons: the fibre, and sections.)
 
 > [!tip]- Hints: where it lives, sources
-> - The notes: the remark *Vector Bundles* in [[§51 The Tangent Bundle|§51]] ("the fibres are abstract vector spaces, and you can find trivializations which restrict to linear isomorphisms fibrewise"); the fibration it refines: Definition [[§40 Fibrations#^def-40-1|§40.1]].
+> - The notes: the remark *Vector Bundles* in [[§51 The Tangent Bundle|§51]] ("the fibres are abstract vector spaces, and you can find trivializations which restrict to linear isomorphisms fibrewise"); the fibration it refines: Definition [[§45 Fibrations#^def-45-1|§45.1]].
 > - Lee, *Introduction to Smooth Manifolds* (2nd ed.), Ch. 10, "Vector Bundles": the definition of a (smooth) vector bundle of rank $k$; Lemma 10.5 for the transition functions $\tau : U \cap V \to \mathrm{GL}(k, \mathbb{R})$ (smooth); Example 10.3 for the Möbius bundle.
-> - Q4: Corollary [[§51 The Tangent Bundle#^cor-51-5|§51.5]] (part 2: linear on each $T_pM$), Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]] ($\tau$ = Jacobian of the chart change), Proposition [[§52 The Cotangent Bundle#^prop-52-1|§52.1]] (transpose inverse), Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-2|§42.2]] (part 2).
-> - Möbius: Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]] (part 3: $\tau = \pm 1$). Q5: fibre $S^1$ is not a vector space; a vector bundle has the zero section, the Hopf fibration has no global section (Corollary [[§46 Projective Spaces and the Hopf Fibration#^cor-46-2|§46.2]]).
+> - Q4: Corollary [[§51 The Tangent Bundle#^cor-51-5|§51.5]] (part 2: linear on each $T_pM$), Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]] ($\tau$ = Jacobian of the chart change), Proposition [[§52 The Cotangent Bundle#^prop-52-1|§52.1]] (transpose inverse), Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|§48.2]] (part 2).
+> - Möbius: Proposition [[§46 Examples of Fibrations#^prop-46-1|§46.1]] (part 3: $\tau = \pm 1$). Q5: fibre $S^1$ is not a vector space; a vector bundle has the zero section, the Hopf fibration has no global section (Corollary [[§47 The Hopf Fibration#^cor-47-2|§47.2]]).
 
 ## Proofs T8
 
@@ -3526,12 +3526,12 @@ A fibration $\pi : E \to M$ whose fibres are vector spaces and whose local trivi
 
 #### Local trivializations give local sections · P1
 
-If $\phi:\pi^{-1}(U)\to U\times F$ is a local trivialization and $f_0\in F$, then $s(u)=\phi^{-1}(u,f_0)$ is a local section over $U$, see Proposition [[§40 Fibrations#^prop-40-4|§40.4]]. *Source: filled in (principle behind Assignment 4, Problem 4).*
+If $\phi:\pi^{-1}(U)\to U\times F$ is a local trivialization and $f_0\in F$, then $s(u)=\phi^{-1}(u,f_0)$ is a local section over $U$, see Proposition [[§45 Fibrations#^prop-45-4|§45.4]]. *Source: filled in (principle behind Assignment 4, Problem 4).*
 
 ^nd-prop-38-4
 
 - [ ] Q1 **[state]** State the proposition.
-- [ ] Q2 **[def]** Define a section and a local section (Definitions [[§40 Fibrations#^def-40-3|§40.3]], [[§40 Fibrations#^def-40-4|§40.4]]).
+- [ ] Q2 **[def]** Define a section and a local section (Definitions [[§45 Fibrations#^def-45-3|§45.3]], [[§45 Fibrations#^def-45-4|§45.4]]).
 - [ ] Q3 Why is $s$ smooth? Write it as a composite of three smooth maps.
 - [ ] Q4 Prove $\pi\circ s=\mathrm{id}_U$ from the commuting triangle.
 - [ ] Q5 **[why]** Does a single local section always give a local trivialization? For which fibration in the notes does it, and what structure makes it work? Does a fibration always have a *global* section?
@@ -3540,16 +3540,16 @@ If $\phi:\pi^{-1}(U)\to U\times F$ is a local trivialization and $f_0\in F$, the
 > - Strategy: S14 (use $\mathrm{pr}_1\circ\phi=\pi$).
 > - $s=\iota_{\pi^{-1}(U)}\circ\phi^{-1}\circ\iota^{f_0}$ with the slice inclusion $\iota^{f_0}(u)=(u,f_0)$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]).
 > - $\pi(s(u))=\mathrm{pr}_1(\phi(\phi^{-1}(u,f_0)))=u$.
-> - Q5: the Hopf fibration, where $S^1$ acts freely and transitively on fibres (Proposition [[§46 Projective Spaces and the Hopf Fibration#^prop-46-1|§46.1]]); it has no global section (remark *Sections Need Not Exist*). For $TM$ one needs $m$ independent sections (remark *Trivializations and Frames*).
+> - Q5: the Hopf fibration, where $S^1$ acts freely and transitively on fibres (Proposition [[§47 The Hopf Fibration#^prop-47-1|§47.1]]); it has no global section (remark *Sections Need Not Exist*). For $TM$ one needs $m$ independent sections (remark *Trivializations and Frames*).
 
 #### Splitting along a section · P1
 
-If $\pi\circ s=\mathrm{id}_M$, $y=s(p)$: $\pi_{\ast y}\circ s_{\ast p}=\mathrm{id}$, so $s_{\ast p}$ is injective and $\pi_{\ast y}$ onto; $T_yE=s_{\ast p}(T_pM)\oplus V_y$; the projection onto $V_y$ is $\mathrm{id}-s_{\ast p}\circ\pi_{\ast y}$, see Proposition [[§40 Fibrations#^prop-40-5|§40.5]]. *Source: filled in; (1) is the heart of Assignment 5, Problem 1.*
+If $\pi\circ s=\mathrm{id}_M$, $y=s(p)$: $\pi_{\ast y}\circ s_{\ast p}=\mathrm{id}$, so $s_{\ast p}$ is injective and $\pi_{\ast y}$ onto; $T_yE=s_{\ast p}(T_pM)\oplus V_y$; the projection onto $V_y$ is $\mathrm{id}-s_{\ast p}\circ\pi_{\ast y}$, see Proposition [[§45 Fibrations#^prop-45-5|§45.5]]. *Source: filled in; (1) is the heart of Assignment 5, Problem 1.*
 
 ^nd-prop-38-5
 
 - [ ] Q1 **[state]** State the three parts and the dimension formula.
-- [ ] Q2 **[def]** Define the vertical space $V_y$ (Definition [[§40 Fibrations#^def-40-5|§40.5]]). For a submersion, what is it the tangent space of?
+- [ ] Q2 **[def]** Define the vertical space $V_y$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]). For a submersion, what is it the tangent space of?
 - [ ] Q3 (1) Which identity do you differentiate, and why does it give injectivity of $s_{\ast p}$ and surjectivity of $\pi_{\ast y}$?
 - [ ] Q4 (2) Write $w\in T_yE$ as a sum of a vector in $s_{\ast p}(T_pM)$ and a vertical vector.
 - [ ] Q5 (2) Why do the two subspaces meet only in $0$?
@@ -3564,25 +3564,25 @@ If $\pi\circ s=\mathrm{id}_M$, $y=s(p)$: $\pi_{\ast y}\circ s_{\ast p}=\mathrm{i
 
 #### The normal bundle of a submanifold of $\mathbb{R}^n$ is a submanifold · P1
 
-$\mathcal{N}=\{(p,v):p\in M,\ v\perp T^{\mathrm{geo}}_pM\}$ is a regular submanifold of $\mathbb{R}^{2n}$ of dimension $n$, see Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-1|§42.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]] (part (a)).
+$\mathcal{N}=\{(p,v):p\in M,\ v\perp T^{\mathrm{geo}}_pM\}$ is a regular submanifold of $\mathbb{R}^{2n}$ of dimension $n$, see Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-1|§48.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]] (part (a)).
 
 ^nd-prop-40-1
 
 #### Focal points of the parabola · P1
 
-The focal points of $y=x^2$ are the image of $\mathbf r(a)=(-4a^3,3a^2+\tfrac12)$, see Example [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^ex-42-1|§42.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]] (part (b)).
+The focal points of $y=x^2$ are the image of $\mathbf r(a)=(-4a^3,3a^2+\tfrac12)$, see Example [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-1|§48.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]] (part (b)).
 
 ^nd-ex-40-1
 
 #### Local sections of the Hopf fibration give trivializations · P1
 
-For a local section $s$ of the Hopf fibration, $\Psi_s(u,\lambda)=\lambda s(u)$ is an equivariant diffeomorphism $U\times S^1\to\pi^{-1}(U)$, see Proposition [[§46 Projective Spaces and the Hopf Fibration#^prop-46-1|§46.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-4|HW4.4]].
+For a local section $s$ of the Hopf fibration, $\Psi_s(u,\lambda)=\lambda s(u)$ is an equivariant diffeomorphism $U\times S^1\to\pi^{-1}(U)$, see Proposition [[§47 The Hopf Fibration#^prop-47-1|§47.1]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-4|HW4.4]].
 
 ^nd-prop-44-1
 
 #### Local but not global sections of the Hopf fibration · P1
 
-The explicit local sections $s_i$ over $U_i$ and their trivializations, see Corollary [[§46 Projective Spaces and the Hopf Fibration#^cor-46-2|§46.2]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-4|HW4.4]].
+The explicit local sections $s_i$ over $U_i$ and their trivializations, see Corollary [[§47 The Hopf Fibration#^cor-47-2|§47.2]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-4|HW4.4]].
 
 ^nd-cor-44-2
 
@@ -3590,12 +3590,12 @@ The explicit local sections $s_i$ over $U_i$ and their trivializations, see Coro
 
 #### Fibres and fibrations · P2
 
-For a fibration $\pi:M\to B$ with fibre $F$: (1) each $\phi_\alpha$ restricts to a homeomorphism $\pi^{-1}(b)\to\{b\}\times F\cong F$; (2) $\pi$ is a submersion, onto if $F\neq\emptyset$; (3) $\pi$ is an open map, see Proposition [[§40 Fibrations#^prop-40-1|§40.1]]. *Source: stated in Lecture 11 ("chain rule and stuff"); Lecture 12: "Exercise: check that these are submersions"; filled in.* **[class exercise, Lectures 11–12]**
+For a fibration $\pi:M\to B$ with fibre $F$: (1) each $\phi_\alpha$ restricts to a homeomorphism $\pi^{-1}(b)\to\{b\}\times F\cong F$; (2) $\pi$ is a submersion, onto if $F\neq\emptyset$; (3) $\pi$ is an open map, see Proposition [[§45 Fibrations#^prop-45-1|§45.1]]. *Source: stated in Lecture 11 ("chain rule and stuff"); Lecture 12: "Exercise: check that these are submersions"; filled in.* **[class exercise, Lectures 11–12]**
 
 ^nd-prop-38-1
 
 - [ ] Q1 **[state]** State the three parts.
-- [ ] Q2 **[def]** Define a fibration with fibre $F$ (Definition [[§40 Fibrations#^def-40-1|§40.1]]). What does the commuting triangle $\mathrm{pr}_1\circ\phi_\alpha=\pi$ say about $\phi_\alpha(x)$?
+- [ ] Q2 **[def]** Define a fibration with fibre $F$ (Definition [[§45 Fibrations#^def-45-1|§45.1]]). What does the commuting triangle $\mathrm{pr}_1\circ\phi_\alpha=\pi$ say about $\phi_\alpha(x)$?
 - [ ] Q3 (1) Show that $\phi_\alpha$ maps $\pi^{-1}(b)$ onto $\{b\}\times F$: one inclusion from the triangle, the other from bijectivity.
 - [ ] Q4 (1) Why is the restriction a homeomorphism for the subspace topologies, and why is $\{b\}\times F$ homeomorphic to $F$?
 - [ ] Q5 (2) Fix $p$, $W=\pi^{-1}(U_\alpha)$. Why is $(\pi|_W)_{\ast p}$ onto? How do you pass from $\pi|_W$ to $\pi$?
@@ -3607,11 +3607,11 @@ For a fibration $\pi:M\to B$ with fibre $F$: (1) each $\phi_\alpha$ restricts to
 > - (1) $\mathrm{pr}_1(\phi_\alpha(x))=\pi(x)=b$; conversely $x=\phi_\alpha^{-1}(b,f)$ has $\pi(x)=\mathrm{pr}_1(b,f)=b$.
 > - (2) $(\phi_\alpha)_{\ast p}$ is an isomorphism and $(\mathrm{pr}_1)_\ast$ is onto (Example [[§36 Submersions#^ex-36-2|§36.2]]); then $\pi_{\ast p}\circ(\iota_W)_{\ast p}=(\iota_{U_\alpha})_\ast\circ(\pi|_W)_{\ast p}$ with $(\iota_{U_\alpha})_\ast$ an isomorphism (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]).
 > - (3) Submersions are open (Corollary [[§36 Submersions#^cor-36-9|§36.9]]).
-> - Q7: Example [[§40 Fibrations#^ex-40-1|§40.1]].
+> - Q7: Example [[§45 Fibrations#^ex-45-1|§45.1]].
 
 #### Fibres are copies of the model fibre · P2
 
-For a fibration $\pi:E\to B$ with fibre $F$ and $b\in B$, $\pi^{-1}(b)$ is a regular submanifold of $E$, and $\phi_\alpha$ restricts to a diffeomorphism $\pi^{-1}(b)\to\{b\}\times F\cong F$, see Proposition [[§40 Fibrations#^prop-40-2|§40.2]]. *Source: claimed in Lecture 12 ("I claim that they are diffeomorphic to this fibre"); filled in.* **[class exercise, Lecture 12]**
+For a fibration $\pi:E\to B$ with fibre $F$ and $b\in B$, $\pi^{-1}(b)$ is a regular submanifold of $E$, and $\phi_\alpha$ restricts to a diffeomorphism $\pi^{-1}(b)\to\{b\}\times F\cong F$, see Proposition [[§45 Fibrations#^prop-45-2|§45.2]]. *Source: claimed in Lecture 12 ("I claim that they are diffeomorphic to this fibre"); filled in.* **[class exercise, Lecture 12]**
 
 ^nd-prop-38-2
 
@@ -3620,18 +3620,18 @@ For a fibration $\pi:E\to B$ with fibre $F$ and $b\in B$, $\pi^{-1}(b)$ is a reg
 - [ ] Q3 Why does $\phi_\alpha$ restrict to a bijection $\Phi:\pi^{-1}(b)\to\{b\}\times F$?
 - [ ] Q4 Why is $\Phi$ smooth? Factor it through $\phi_\alpha\circ\iota$ and say which lemma lets you shrink the target to $\{b\}\times F$.
 - [ ] Q5 Why is $\Phi^{-1}$ smooth? Why is $\{b\}\times F\to F$, $(b,f)\mapsto f$, a diffeomorphism?
-- [ ] Q6 **[why]** Proposition [[§40 Fibrations#^prop-40-1|§40.1]](1) only gives a homeomorphism. Which two inputs upgrade it to a diffeomorphism? And why is "every fibre is a submanifold" not enough to make all fibres diffeomorphic?
+- [ ] Q6 **[why]** Proposition [[§45 Fibrations#^prop-45-1|§45.1]](1) only gives a homeomorphism. Which two inputs upgrade it to a diffeomorphism? And why is "every fibre is a submanifold" not enough to make all fibres diffeomorphic?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S14; the key tool is Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2) (maps into a submanifold).
-> - Submanifolds: $\pi$ and $\mathrm{pr}_1$ are submersions (Proposition [[§40 Fibrations#^prop-40-1|§40.1]](2), Example [[§36 Submersions#^ex-36-2|§36.2]]); then Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]].
+> - Submanifolds: $\pi$ and $\mathrm{pr}_1$ are submersions (Proposition [[§45 Fibrations#^prop-45-1|§45.1]](2), Example [[§36 Submersions#^ex-36-2|§36.2]]); then Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]].
 > - $\Phi$: $\iota$ is smooth into the open set $\pi^{-1}(U_\alpha)$, then $\phi_\alpha$; values lie in $\{b\}\times F$.
 > - $\Phi^{-1}$: $\phi_\alpha^{-1}\circ\iota'$ with values in $\pi^{-1}(b)$. $\{b\}\times F\cong F$ via $\mathrm{pr}_2\circ\iota'$ and the slice inclusion (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]).
-> - Q6: Example [[§40 Fibrations#^ex-40-1|§40.1]].
+> - Q6: Example [[§45 Fibrations#^ex-45-1|§45.1]].
 
 #### A submersion that is not a fibration · P2
 
-$\pi:\mathbb{R}^2\setminus\{(0,1)\}\to\mathbb{R}$, $\pi(x,y)=x$, is a surjective submersion but not a fibration, see Example [[§40 Fibrations#^ex-40-1|§40.1]]. *Source: Lecture 12.*
+$\pi:\mathbb{R}^2\setminus\{(0,1)\}\to\mathbb{R}$, $\pi(x,y)=x$, is a surjective submersion but not a fibration, see Example [[§45 Fibrations#^ex-45-1|§45.1]]. *Source: Lecture 12.*
 
 ^nd-ex-38-1
 
@@ -3639,37 +3639,37 @@ $\pi:\mathbb{R}^2\setminus\{(0,1)\}\to\mathbb{R}$, $\pi(x,y)=x$, is a surjective
 - [ ] Q2 Why is $\pi$ a submersion? Why is it onto?
 - [ ] Q3 Describe every fibre. Which one is different?
 - [ ] Q4 Suppose $\pi$ were a fibration. Which proposition forces all fibres to be homeomorphic, and which topological property gives the contradiction?
-- [ ] Q5 **[why]** Which hypothesis of Ehresmann's theorem (Theorem [[§40 Fibrations#^thm-40-3|§40.3]]) fails here? Exhibit a compact $K\subseteq\mathbb{R}$ with $\pi^{-1}(K)$ not compact.
+- [ ] Q5 **[why]** Which hypothesis of Ehresmann's theorem (Theorem [[§45 Fibrations#^thm-45-3|§45.3]]) fails here? Exhibit a compact $K\subseteq\mathbb{R}$ with $\pi^{-1}(K)$ not compact.
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S14 (restriction of a projection to an open set), invariants under homeomorphism.
 > - $\pi=\mathrm{pr}\circ\iota_E$ with $(\iota_E)_\ast$ an isomorphism (Example [[§36 Submersions#^ex-36-1|§36.1]]); $(x,0)\mapsto x$ shows onto.
 > - Fibres: vertical lines, except $\{0\}\times(\mathbb{R}\setminus\{1\})$, two half-lines.
-> - Proposition [[§40 Fibrations#^prop-40-2|§40.2]]: all fibres would be diffeomorphic; but $\{1\}\times\mathbb{R}$ is connected and $\{0\}\times(\mathbb{R}\setminus\{1\})$ is not (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]]).
+> - Proposition [[§45 Fibrations#^prop-45-2|§45.2]]: all fibres would be diffeomorphic; but $\{1\}\times\mathbb{R}$ is connected and $\{0\}\times(\mathbb{R}\setminus\{1\})$ is not (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]]).
 > - Q5: $\pi^{-1}([-1,1])=([-1,1]\times\mathbb{R})\setminus\{(0,1)\}$ is unbounded (and not even closed in $\mathbb{R}^2$), hence not compact. Ehresmann is sufficient, not necessary: $\mathbb{R}^2\to\mathbb{R}$ is a fibration without being proper.
 
 #### Ehresmann's theorem · P2
 
-A surjective proper submersion $\pi:E\to B$ onto a connected $B$ is a fibration, see Theorem [[§40 Fibrations#^thm-40-3|§40.3]]. *Source: stated in Lecture 13, proof not given (uses connections); quote it.*
+A surjective proper submersion $\pi:E\to B$ onto a connected $B$ is a fibration, see Theorem [[§45 Fibrations#^thm-45-3|§45.3]]. *Source: stated in Lecture 13, proof not given (uses connections); quote it.*
 
 ^nd-thm-38-3
 
 - [ ] Q1 **[state]** State the theorem, with all three hypotheses.
 - [ ] Q2 **[def]** Define a proper map (Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]]).
-- [ ] Q3 **[why]** In Example [[§40 Fibrations#^ex-40-1|§40.1]] (punctured plane), which hypothesis fails, and which conclusion fails?
-- [ ] Q4 **[why]** In Example [[§40 Fibrations#^ex-40-2|§40.2]] all fibres are diffeomorphic (why?) and still $\pi$ is not a fibration. Which hypothesis fails?
+- [ ] Q3 **[why]** In Example [[§45 Fibrations#^ex-45-1|§45.1]] (punctured plane), which hypothesis fails, and which conclusion fails?
+- [ ] Q4 **[why]** In Example [[§45 Fibrations#^ex-45-2|§45.2]] all fibres are diffeomorphic (why?) and still $\pi$ is not a fibration. Which hypothesis fails?
 - [ ] Q5 **[why]** Why is $B$ assumed connected? What can go wrong with the fibres over two components of $B$?
 - [ ] Q6 How used: if $E$ is compact, $B$ connected and $\pi:E\to B$ a surjective submersion, what can you conclude, and why is such a $\pi$ proper?
 
 > [!tip]- Hints: what to know about the statement
-> - Proper: preimages of compact sets are compact; a map out of a compact space into a Hausdorff space is proper (proof of Corollary [[§44 Embeddings#^cor-44-6|§44.6]]).
-> - Example [[§40 Fibrations#^ex-40-2|§40.2]]: each fibre is a plane minus two points, all diffeomorphic by affine maps; the missing points collide as $t\to0$; $\pi$ is not proper.
+> - Proper: preimages of compact sets are compact; a map out of a compact space into a Hausdorff space is proper (proof of Corollary [[§41 Embeddings#^cor-41-8|§41.8]]).
+> - Example [[§45 Fibrations#^ex-45-2|§45.2]]: each fibre is a plane minus two points, all diffeomorphic by affine maps; the missing points collide as $t\to0$; $\pi$ is not proper.
 > - A fibration has one model fibre $F$; over different components the fibres could be different manifolds.
 > - Uribe's intuition: lift paths in $B$ via a connection, flow fibre to fibre; properness lets the flow run long enough.
 
 #### The Möbius band is a fibration · P2
 
-For $E=(\mathbb{R}\times(-1,1))/\sim$, $(s,t)\sim(s+n,(-1)^nt)$: $E$ is a topological $2$-manifold with the two charts $\psi_a=(q|_{I_a\times(-1,1)})^{-1}$, $a\in\{0,\tfrac12\}$, forming a smooth atlas; $\pi[s,t]=[s]$ is smooth and $\phi_a[s,t]=([s],t)$ are local trivializations; on the overlap they differ by $t\mapsto-t$ on one arc, see Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]]. *Source: Lecture 12 gave the picture (Example [[§41 Examples of Fibrations#^ex-41-2|§41.2]]); the proof is filled in.*
+For $E=(\mathbb{R}\times(-1,1))/\sim$, $(s,t)\sim(s+n,(-1)^nt)$: $E$ is a topological $2$-manifold with the two charts $\psi_a=(q|_{I_a\times(-1,1)})^{-1}$, $a\in\{0,\tfrac12\}$, forming a smooth atlas; $\pi[s,t]=[s]$ is smooth and $\phi_a[s,t]=([s],t)$ are local trivializations; on the overlap they differ by $t\mapsto-t$ on one arc, see Proposition [[§46 Examples of Fibrations#^prop-46-1|§46.1]]. *Source: Lecture 12 gave the picture (Example [[§46 Examples of Fibrations#^ex-46-2|§46.2]]); the proof is filled in.*
 
 ^nd-prop-39-1
 
@@ -3690,7 +3690,7 @@ For $E=(\mathbb{R}\times(-1,1))/\sim$, $(s,t)\sim(s+n,(-1)^nt)$: $E$ is a topolo
 
 #### The normal bundle is a fibration · P2
 
-Over a chart $(U,\varphi)$ of $\mathbb{R}^n$ adapted to $M$, with $J(q)=G'(q)$, $G=(x^{m+1},\dots,x^n)$: $J(q)J(q)^{\mathsf T}$ is invertible on $U$, $\Phi_U(q,v)=(q,(JJ^{\mathsf T})^{-1}Jv)$ is a diffeomorphism $\pi^{-1}(U\cap M)\to(U\cap M)\times\mathbb{R}^{n-m}$ with inverse $(q,c)\mapsto(q,J^{\mathsf T}c)$, linear on fibres; so $\pi:\mathcal{N}\to M$ is a fibration with fibre $\mathbb{R}^{n-m}$, see Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-2|§42.2]]. *Source: filled in (not from the assignment).*
+Over a chart $(U,\varphi)$ of $\mathbb{R}^n$ adapted to $M$, with $J(q)=G'(q)$, $G=(x^{m+1},\dots,x^n)$: $J(q)J(q)^{\mathsf T}$ is invertible on $U$, $\Phi_U(q,v)=(q,(JJ^{\mathsf T})^{-1}Jv)$ is a diffeomorphism $\pi^{-1}(U\cap M)\to(U\cap M)\times\mathbb{R}^{n-m}$ with inverse $(q,c)\mapsto(q,J^{\mathsf T}c)$, linear on fibres; so $\pi:\mathcal{N}\to M$ is a fibration with fibre $\mathbb{R}^{n-m}$, see Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|§48.2]]. *Source: filled in (not from the assignment).*
 
 ^nd-prop-40-2
 
@@ -3704,14 +3704,14 @@ Over a chart $(U,\varphi)$ of $\mathbb{R}^n$ adapted to $M$, with $J(q)=G'(q)$, 
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S7; recipe of the remark *Where Explicit Trivializations Come From* (a smoothly varying basis of each fibre).
-> - (1) Lemma [[§37 Regular Submanifolds#^lem-37-13|§37.13]](4); $JJ^{\mathsf T}c=0$ gives $|J^{\mathsf T}c|^2=0$, and $c\mapsto J^{\mathsf T}c$ is injective.
+> - (1) Lemma [[§37 Regular Submanifolds#^lem-37-14|§37.14]](4); $JJ^{\mathsf T}c=0$ gives $|J^{\mathsf T}c|^2=0$, and $c\mapsto J^{\mathsf T}c$ is injective.
 > - (2) $(JJ^{\mathsf T})^{-1}JJ^{\mathsf T}c=c$; for $v=J^{\mathsf T}c$, $J^{\mathsf T}(JJ^{\mathsf T})^{-1}Jv=v$.
 > - Smooth: entries of $(JJ^{\mathsf T})^{-1}$ by the cofactor formula; $\Theta_U$ smooth into $\mathbb{R}^{2n}$ with values in $\mathcal{N}$, then Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2).
 > - Q7: the formula $\hat\Phi$ is written on all of $U\times\mathbb{R}^n$, which needs $\det(JJ^{\mathsf T})\neq0$ on $U$.
 
 #### Spheres cover projective spaces · P2
 
-$\pi:S^n\to\mathbb{RP}^n$, $x\mapsto[x]$, is a local diffeomorphism and exactly two-to-one, see Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|§46.1]]. *Source: stated in Lecture 10 as an example, without proof; filled in.* **[class exercise, Lecture 10]**
+$\pi:S^n\to\mathbb{RP}^n$, $x\mapsto[x]$, is a local diffeomorphism and exactly two-to-one, see Example [[§35 Local Diffeomorphisms#^ex-35-4|§35.4]]. *Source: stated in Lecture 10 as an example, without proof; filled in.* **[class exercise, Lecture 10]**
 
 ^nd-ex-44-1
 
@@ -3730,7 +3730,7 @@ $\pi:S^n\to\mathbb{RP}^n$, $x\mapsto[x]$, is a local diffeomorphism and exactly 
 
 #### The projection $S^{2n+1}\to\mathbb{CP}^n$ is a submersion · P2
 
-The quotient map $S^{2n+1}\to\mathbb{CP}^n$ is a submersion, see Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-2|§46.2]]. *Source: stated in Lecture 10 without proof; the notes deduce it from the Hopf fibration.* **[class exercise, Lecture 10]**
+The quotient map $S^{2n+1}\to\mathbb{CP}^n$ is a submersion, see Example [[§47 The Hopf Fibration#^ex-47-1|§47.1]]. *Source: stated in Lecture 10 without proof; the notes deduce it from the Hopf fibration.* **[class exercise, Lecture 10]**
 
 ^nd-ex-44-2
 
@@ -3741,13 +3741,13 @@ The quotient map $S^{2n+1}\to\mathbb{CP}^n$ is a submersion, see Example [[§46 
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: a fibration is a submersion.
-> - Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|§46.3]] (it is a fibration) and Proposition [[§40 Fibrations#^prop-40-1|§40.1]](2).
+> - Example [[§47 The Hopf Fibration#^ex-47-2|§47.2]] (it is a fibration) and Proposition [[§45 Fibrations#^prop-45-1|§45.1]](2).
 > - Fibres are the circles $\{\lambda z:|\lambda|=1\}$ (Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]): dimension $(2n+1)-2n=1$.
 > - Dimensions differ, so the differential cannot be bijective.
 
 #### The Hopf fibration · P2
 
-$\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$, is a fibration with fibre $S^1$, with local trivializations $\phi_j(z)=([z],z_j/|z_j|)$ over $U_j=\{z_j\neq0\}$, see Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|§46.3]]. *Source: claimed in Lecture 11 ("We claim that this projection that we work with in homework is a fibration. What do you think the fibre is?"); the trivialization is filled in.* **[class exercise, Lecture 11]**
+$\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$, is a fibration with fibre $S^1$, with local trivializations $\phi_j(z)=([z],z_j/|z_j|)$ over $U_j=\{z_j\neq0\}$, see Example [[§47 The Hopf Fibration#^ex-47-2|§47.2]]. *Source: claimed in Lecture 11 ("We claim that this projection that we work with in homework is a fibration. What do you think the fibre is?"); the trivialization is filled in.* **[class exercise, Lecture 11]**
 
 ^nd-ex-44-3
 
@@ -3756,7 +3756,7 @@ $\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$, is a fibration with fibre $S^1$, w
 - [ ] Q3 Why is $\phi_j$ smooth? Treat its two components separately.
 - [ ] Q4 Why is the proposed inverse $\psi_j$ smooth, with values in $\pi^{-1}(U_j)$?
 - [ ] Q5 Check $\psi_j\circ\phi_j=\mathrm{id}$, $\phi_j\circ\psi_j=\mathrm{id}$ and $\mathrm{pr}_1\circ\phi_j=\pi$.
-- [ ] Q6 **[why]** The Hopf fibration has local sections but no global one (for $n\ge1$). If it had a global section, what would Proposition [[§46 Projective Spaces and the Hopf Fibration#^prop-46-1|§46.1]] give? Why is that impossible (stated, not proved)?
+- [ ] Q6 **[why]** The Hopf fibration has local sections but no global one (for $n\ge1$). If it had a global section, what would Proposition [[§47 The Hopf Fibration#^prop-47-1|§47.1]] give? Why is that impossible (stated, not proved)?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1 (the charts $\varphi_j$ of $\mathbb{CP}^n$, Proposition [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]]), and Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] for maps out of and into level sets.
@@ -3773,7 +3773,7 @@ $\pi:S^{2n+1}\to\mathbb{CP}^n$, $\pi(z)=[z]$, is a fibration with fibre $S^1$, w
 
 #### Locally closed subset · P1
 
-$S \subseteq N$ is locally closed if each point of $S$ has an open $V \subseteq N$ with $S \cap V$ closed in $V$; equivalently $S$ is closed in an open subset of $N$, see Definition [[§44 Embeddings#^def-44-2|§44.2]]. *Source: notes (prompted by Assignment 4, Problem 5).*
+$S \subseteq N$ is locally closed if each point of $S$ has an open $V \subseteq N$ with $S \cap V$ closed in $V$; equivalently $S$ is closed in an open subset of $N$, see Definition [[§41 Embeddings#^def-41-2|§41.2]]. *Source: notes (prompted by Assignment 4, Problem 5).*
 
 ^nd-def-42-3
 
@@ -3783,8 +3783,8 @@ $S \subseteq N$ is locally closed if each point of $S$ has an open $V \subseteq 
 - [ ] Q4 **[example]** Is an open disc in $\mathbb{R}^2$ locally closed? Is $\mathbb{Q} \subseteq \mathbb{R}$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§44 Embeddings#^def-44-2|§44.2]]; Q2: Proposition [[§44 Embeddings#^prop-44-8|§44.8]].
-> - Q3: it is dense, so it would be open (Corollary [[§44 Embeddings#^cor-44-9|§44.9]]); hence not a regular submanifold. Q4: yes (open); no (dense with empty interior).
+> - Definition [[§41 Embeddings#^def-41-2|§41.2]]; Q2: Proposition [[§41 Embeddings#^prop-41-10|§41.10]].
+> - Q3: it is dense, so it would be open (Corollary [[§41 Embeddings#^cor-41-11|§41.11]]); hence not a regular submanifold. Q4: yes (open); no (dense with empty interior).
 
 ### Priority 2 · stated or done in class
 
@@ -3800,13 +3800,13 @@ $F$ is an immersion at $p$ if $F_{\ast p}$ is injective (forcing $m \le n$), see
 - [ ] Q4 **[why]** Why is an immersion that is open onto its image enough for $F(M)$ to be a regular submanifold, even without injectivity? Give a non-injective example.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§36 Submersions#^def-36-2|§36.2]] (= Definition [[§36 Submersions#^def-36-2|§36.2]]); Theorem [[§43 Immersions#^thm-43-1|§43.1]], Corollary [[§43 Immersions#^cor-43-2|§43.2]].
-> - Q3: Example [[§43 Immersions#^ex-43-1|§43.1]] (not injective, X-shaped image), Example [[§43 Immersions#^ex-43-2|§43.2]] (injective, T-shaped image: not a homeomorphism onto the image).
-> - Q4: Proposition [[§44 Embeddings#^prop-44-2|§44.2]]; the remark *Where Is Injectivity Used?* in [[§44 Embeddings|§44]] ($\mathbb{R} \to S^1$, $S^2 \to \mathbb{RP}^2$).
+> - Definition [[§36 Submersions#^def-36-2|§36.2]] (= Definition [[§36 Submersions#^def-36-2|§36.2]]); Theorem [[§40 Immersions#^thm-40-1|§40.1]], Corollary [[§40 Immersions#^cor-40-2|§40.2]].
+> - Q3: Example [[§40 Immersions#^ex-40-1|§40.1]] (not injective, X-shaped image), Example [[§40 Immersions#^ex-40-2|§40.2]] (injective, T-shaped image: not a homeomorphism onto the image).
+> - Q4: Proposition [[§41 Embeddings#^prop-41-2|§41.2]]; the remark *Where Is Injectivity Used?* in [[§41 Embeddings|§41]] ($\mathbb{R} \to S^1$, $S^2 \to \mathbb{RP}^2$).
 
 #### Embedding · P2
 
-A smooth immersion $F : M \to N$ that is a homeomorphism onto $F(M)$ with the subspace topology, see Definition [[§44 Embeddings#^def-44-1|§44.1]]. *Source: Lecture 14.*
+A smooth immersion $F : M \to N$ that is a homeomorphism onto $F(M)$ with the subspace topology, see Definition [[§41 Embeddings#^def-41-1|§41.1]]. *Source: Lecture 14.*
 
 ^nd-def-42-1
 
@@ -3817,10 +3817,10 @@ A smooth immersion $F : M \to N$ that is a homeomorphism onto $F(M)$ with the su
 - [ ] Q5 **[use]** State two sufficient conditions for an injective immersion to be an embedding (properness, compactness), and when an embedding has closed image.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§44 Embeddings#^def-44-1|§44.1]]; Q2: Theorem [[§44 Embeddings#^thm-44-1|§44.1]], Corollary [[§44 Embeddings#^cor-44-3|§44.3]].
-> - Q3: Example [[§43 Immersions#^ex-43-2|§43.2]], Proposition [[§44 Embeddings#^prop-44-13|§44.13]] (irrational line, → drilled as [[Differentiable Manifolds HW Drill#^hw4-5|HW4.5]]), Example [[§44 Embeddings#^ex-44-4|§44.4]] (figure-eight).
+> - Definition [[§41 Embeddings#^def-41-1|§41.1]]; Q2: Theorem [[§41 Embeddings#^thm-41-1|§41.1]], Corollary [[§41 Embeddings#^cor-41-3|§41.3]].
+> - Q3: Example [[§40 Immersions#^ex-40-2|§40.2]], Proposition [[§41 Embeddings#^prop-41-14|§41.14]] (irrational line, → drilled as [[Differentiable Manifolds HW Drill#^hw4-5|HW4.5]]), Example [[§41 Embeddings#^ex-41-3|§41.3]] (figure-eight).
 > - Q4: $t \mapsto (t^3, 0)$ onto the $x$-axis, or the cusp $t \mapsto (t^2, t^3)$ (not immersions at $0$).
-> - Q5: Theorem [[§44 Embeddings#^thm-44-5|§44.5]], Corollary [[§44 Embeddings#^cor-44-6|§44.6]], Proposition [[§44 Embeddings#^prop-44-10|§44.10]]. Example: every section is a closed embedding, Proposition [[§44 Embeddings#^prop-44-11|§44.11]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-1|HW5.1]].
+> - Q5: Theorem [[§41 Embeddings#^thm-41-7|§41.7]], Corollary [[§41 Embeddings#^cor-41-8|§41.8]], Proposition [[§41 Embeddings#^prop-41-12|§41.12]]. Example: every section is a closed embedding, Proposition [[§45 Fibrations#^prop-45-6|§45.6]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-1|HW5.1]].
 
 #### Proper map · P2
 
@@ -3835,13 +3835,13 @@ A continuous $F$ with $F^{-1}(K)$ compact for every compact $K$, see Definition 
 - [ ] Q5 **[why]** Which hypothesis of Ehresmann's theorem is properness, and what does the punctured-plane projection show about dropping it?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]] (= Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]]); Q2: Proposition [[§44 Embeddings#^prop-44-4|§44.4]] (manifolds are locally compact, Proposition [[§2 Topological Manifolds#^prop-2-12|§2.12]]).
-> - Q3: Theorem [[§44 Embeddings#^thm-44-5|§44.5]] (closed map onto the image ⇒ homeomorphism onto the image). Q4: no ($T^2$ compact, $\mathbb{R}$ not); no (image not closed, Proposition [[§44 Embeddings#^prop-44-10|§44.10]]).
-> - Q5: Theorem [[§40 Fibrations#^thm-40-3|§40.3]], Example [[§40 Fibrations#^ex-40-1|§40.1]].
+> - Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]] (= Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]]); Q2: Proposition [[§41 Embeddings#^prop-41-6|§41.6]] (manifolds are locally compact, Proposition [[§2 Topological Manifolds#^prop-2-12|§2.12]]).
+> - Q3: Theorem [[§41 Embeddings#^thm-41-7|§41.7]] (closed map onto the image ⇒ homeomorphism onto the image). Q4: no ($T^2$ compact, $\mathbb{R}$ not); no (image not closed, Proposition [[§41 Embeddings#^prop-41-12|§41.12]]).
+> - Q5: Theorem [[§45 Fibrations#^thm-45-3|§45.3]], Example [[§45 Fibrations#^ex-45-1|§45.1]].
 
 #### Immersed submanifold · P2
 
-$S \subseteq N$ with some manifold topology and smooth structure making the inclusion a smooth immersion, see Definition [[§44 Embeddings#^def-44-3|§44.3]]. *Source: notes (Lecture 14 material).*
+$S \subseteq N$ with some manifold topology and smooth structure making the inclusion a smooth immersion, see Definition [[§41 Embeddings#^def-41-3|§41.3]]. *Source: notes (Lecture 14 material).*
 
 ^nd-def-42-4
 
@@ -3851,8 +3851,8 @@ $S \subseteq N$ with some manifold topology and smooth structure making the incl
 - [ ] Q4 **[example]** Give an immersed submanifold of $T^2$ that is not regular, and one of $\mathbb{R}^2$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§44 Embeddings#^def-44-3|§44.3]]; Q2: Proposition [[§44 Embeddings#^prop-44-15|§44.15]]; every regular submanifold is one, Proposition [[§44 Embeddings#^prop-44-16|§44.16]].
-> - Q3: Proposition [[§44 Embeddings#^prop-44-17|§44.17]]. Q4: Example [[§44 Embeddings#^ex-44-4|§44.4]].
+> - Definition [[§41 Embeddings#^def-41-3|§41.3]]; Q2: Proposition [[§41 Embeddings#^prop-41-16|§41.16]]; every regular submanifold is one, Proposition [[§41 Embeddings#^prop-41-17|§41.17]].
+> - Q3: Proposition [[§41 Embeddings#^prop-41-18|§41.18]]. Q4: Example [[§41 Embeddings#^ex-41-3|§41.3]].
 
 ## Proofs T9
 
@@ -3860,11 +3860,11 @@ $S \subseteq N$ with some manifold topology and smooth structure making the incl
 
 #### Images of embeddings are locally closed · P1
 
-Every regular submanifold of $N$, in particular the image of an embedding, is locally closed: closed in some open subset of $N$ containing it, see Proposition [[§44 Embeddings#^prop-44-8|§44.8]]. *Source: filled in (prompted by Assignment 4, Problem 5).*
+Every regular submanifold of $N$, in particular the image of an embedding, is locally closed: closed in some open subset of $N$ containing it, see Proposition [[§41 Embeddings#^prop-41-10|§41.10]]. *Source: filled in (prompted by Assignment 4, Problem 5).*
 
 ^nd-prop-42-7
 
-- [ ] Q1 **[state]** State the proposition. **[def]** Define a locally closed subset (Definition [[§44 Embeddings#^def-44-2|§44.2]]) and its equivalent form.
+- [ ] Q1 **[state]** State the proposition. **[def]** Define a locally closed subset (Definition [[§41 Embeddings#^def-41-2|§41.2]]) and its equivalent form.
 - [ ] Q2 In an adapted chart $(V,\psi)$, why is $S\cap V$ closed in $V$?
 - [ ] Q3 With $U$ the union of these $V$'s, why is $U\setminus S$ open, so that $S$ is closed in $U$?
 - [ ] Q4 Prove the converse in the equivalence.
@@ -3877,13 +3877,13 @@ Every regular submanifold of $N$, in particular the image of an embedding, is lo
 
 #### Sections are closed embeddings · P1
 
-If $\pi\circ s=\mathrm{id}_M$, then $s$ is an embedding with closed image, see Proposition [[§44 Embeddings#^prop-44-11|§44.11]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-1|HW5.1]].
+If $\pi\circ s=\mathrm{id}_M$, then $s$ is an embedding with closed image, see Proposition [[§45 Fibrations#^prop-45-6|§45.6]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-1|HW5.1]].
 
 ^nd-prop-42-10
 
 #### The irrational line on the torus · P1
 
-$\gamma(t)=(e^{2\pi it},e^{2\pi i\alpha t})$, $\alpha$ irrational, is an injective immersion with dense image, not an embedding, see Proposition [[§44 Embeddings#^prop-44-13|§44.13]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-5|HW4.5]].
+$\gamma(t)=(e^{2\pi it},e^{2\pi i\alpha t})$, $\alpha$ irrational, is an injective immersion with dense image, not an embedding, see Proposition [[§41 Embeddings#^prop-41-14|§41.14]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-5|HW4.5]].
 
 ^nd-prop-42-12
 
@@ -3891,7 +3891,7 @@ $\gamma(t)=(e^{2\pi it},e^{2\pi i\alpha t})$, $\alpha$ irrational, is an injecti
 
 #### Local normal form for immersions · P2
 
-If $F:M\to N$ is an immersion at $p$ ($m\le n$), there are charts $(U,\varphi)$ at $p$ and $(V,\psi)$ at $F(p)$ with $F(U)\subseteq V$ and $\psi\circ F\circ\varphi^{-1}(r)=(r,\vec 0)$, see Theorem [[§43 Immersions#^thm-43-1|§43.1]]. *Source: stated in Lecture 13, proved in Lecture 14; details completed in the notes.*
+If $F:M\to N$ is an immersion at $p$ ($m\le n$), there are charts $(U,\varphi)$ at $p$ and $(V,\psi)$ at $F(p)$ with $F(U)\subseteq V$ and $\psi\circ F\circ\varphi^{-1}(r)=(r,\vec 0)$, see Theorem [[§40 Immersions#^thm-40-1|§40.1]]. *Source: stated in Lecture 13, proved in Lecture 14; details completed in the notes.*
 
 ^nd-thm-41-1
 
@@ -3912,7 +3912,7 @@ If $F:M\to N$ is an immersion at $p$ ($m\le n$), there are charts $(U,\varphi)$ 
 
 #### The local image of an immersion · P2
 
-In the charts of the normal form, $F|_U$ is injective and $F(U)$ is a regular submanifold of $N$ of codimension $n-m$, see Corollary [[§43 Immersions#^cor-43-2|§43.2]]. *Source: idea in Lecture 13 ("possibly after restricting $U$"); completed in the notes by shrinking $V$.*
+In the charts of the normal form, $F|_U$ is injective and $F(U)$ is a regular submanifold of $N$ of codimension $n-m$, see Corollary [[§40 Immersions#^cor-40-2|§40.2]]. *Source: idea in Lecture 13 ("possibly after restricting $U$"); completed in the notes by shrinking $V$.*
 
 ^nd-cor-41-2
 
@@ -3927,11 +3927,11 @@ In the charts of the normal form, $F|_U$ is injective and $F(U)$ is a regular su
 > - Injective: $\varphi$ and $\psi$ are injective.
 > - $V'=(\mathrm{pr}\circ\psi)^{-1}(\varphi(U))$.
 > - "⊇": $\psi(q)=(r,\vec 0)=\tilde F(r)=\psi(F(\varphi^{-1}(r)))$, and $\psi$ is injective.
-> - Points of $\psi(V)\cap(\mathbb{R}^m\times\{0\})$ with first block outside $\varphi(U)$ are removed by $V'$; other parts of $F(M)$ may still enter $V'$ (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]).
+> - Points of $\psi(V)\cap(\mathbb{R}^m\times\{0\})$ with first block outside $\varphi(U)$ are removed by $V'$; other parts of $F(M)$ may still enter $V'$ (Theorem [[§41 Embeddings#^thm-41-1|§41.1]]).
 
 #### An immersion that crosses itself · P2
 
-$\gamma(t)=(t^2-1,t^3-t)$ is an immersion $\mathbb{R}\to\mathbb{R}^2$, not injective, whose image is not a regular submanifold, see Example [[§43 Immersions#^ex-43-1|§43.1]]. *Source: Lecture 13 (a curve drawn crossing itself); the curve and the full argument are filled in.*
+$\gamma(t)=(t^2-1,t^3-t)$ is an immersion $\mathbb{R}\to\mathbb{R}^2$, not injective, whose image is not a regular submanifold, see Example [[§40 Immersions#^ex-40-1|§40.1]]. *Source: Lecture 13 (a curve drawn crossing itself); the curve and the full argument are filled in.*
 
 ^nd-ex-41-1
 
@@ -3951,7 +3951,7 @@ $\gamma(t)=(t^2-1,t^3-t)$ is an immersion $\mathbb{R}\to\mathbb{R}^2$, not injec
 
 #### An injective immersion that is not a homeomorphism onto its image · P2
 
-An injective immersion $\gamma:(a,b)\to\mathbb{R}^2$ whose end returns to a point $P=\gamma(t_0)$ of its image is not a homeomorphism onto its image, see Example [[§43 Immersions#^ex-43-2|§43.2]]. *Source: Lecture 13 ("making a hook with a piece of wire"); the argument is filled in.*
+An injective immersion $\gamma:(a,b)\to\mathbb{R}^2$ whose end returns to a point $P=\gamma(t_0)$ of its image is not a homeomorphism onto its image, see Example [[§40 Immersions#^ex-40-2|§40.2]]. *Source: Lecture 13 ("making a hook with a piece of wire"); the argument is filled in.*
 
 ^nd-ex-41-2
 
@@ -3969,13 +3969,13 @@ An injective immersion $\gamma:(a,b)\to\mathbb{R}^2$ whose end returns to a poin
 
 #### The image of an embedding is a regular submanifold · P2
 
-If $F:M\to N$ is an embedding, $F(M)$ is a regular submanifold of $N$ of codimension $n-m$, see Theorem [[§44 Embeddings#^thm-44-1|§44.1]]. *Source: Lecture 14; the final equality completed with Corollary [[§43 Immersions#^cor-43-2|§43.2]].*
+If $F:M\to N$ is an embedding, $F(M)$ is a regular submanifold of $N$ of codimension $n-m$, see Theorem [[§41 Embeddings#^thm-41-1|§41.1]]. *Source: Lecture 14; the final equality completed with Corollary [[§40 Immersions#^cor-40-2|§40.2]].*
 
 ^nd-thm-42-1
 
-- [ ] Q1 **[state]** State the theorem. **[def]** Define an embedding (Definition [[§44 Embeddings#^def-44-1|§44.1]]).
+- [ ] Q1 **[state]** State the theorem. **[def]** Define an embedding (Definition [[§41 Embeddings#^def-41-1|§41.1]]).
 - [ ] Q2 What must be produced at a point $q=F(p)$ of $F(M)$?
-- [ ] Q3 From the normal form and Corollary [[§43 Immersions#^cor-43-2|§43.2]], what does $(\ast)$ say about $F(U)$? Why is it not yet a statement about $F(M)\cap V'$?
+- [ ] Q3 From the normal form and Corollary [[§40 Immersions#^cor-40-2|§40.2]], what does $(\ast)$ say about $F(U)$? Why is it not yet a statement about $F(M)\cap V'$?
 - [ ] Q4 The key step: why is $F(U)$ open in $F(M)$, and what open $W\subseteq N$ does that give?
 - [ ] Q5 Shrink to $V'\cap W$: prove $F(M)\cap(V'\cap W)=\{x\in V'\cap W:y^{m+1}(x)=\dots=y^n(x)=0\}$.
 - [ ] Q6 **[why]** Where is the homeomorphism hypothesis used, and is injectivity used at all? Which example shows the theorem fails for an injective immersion?
@@ -3985,30 +3985,30 @@ If $F:M\to N$ is an embedding, $F(M)$ is a regular submanifold of $N$ of codimen
 > - $(\ast)$: $F(U)=\{x\in V':y^{m+1}(x)=\dots=y^n(x)=0\}$; other pieces of $F(M)$ may pass through $V'$.
 > - Homeomorphisms are open, so $F(U)=W\cap F(M)$ (subspace topology).
 > - $F(M)\cap(V'\cap W)=(F(M)\cap W)\cap V'=F(U)$.
-> - Only openness of $F$ onto its image is used (remark *Where Is Injectivity Used?*, Proposition [[§44 Embeddings#^prop-44-2|§44.2]]); fails for the irrational line (Proposition [[§44 Embeddings#^prop-44-13|§44.13]]).
+> - Only openness of $F$ onto its image is used (remark *Where Is Injectivity Used?*, Proposition [[§41 Embeddings#^prop-41-2|§41.2]]); fails for the irrational line (Proposition [[§41 Embeddings#^prop-41-14|§41.14]]).
 
 #### Immersions that are open onto their images · P2
 
-If $F:M\to N$ is an immersion and $F:M\to F(M)$ is open (subspace topology), then $F(M)$ is a regular submanifold of codimension $n-m$; $F$ need not be injective, see Proposition [[§44 Embeddings#^prop-44-2|§44.2]]. *Source: the class discussion in Lecture 14, confirmed in Uribe's follow-up email.*
+If $F:M\to N$ is an immersion and $F:M\to F(M)$ is open (subspace topology), then $F(M)$ is a regular submanifold of codimension $n-m$; $F$ need not be injective, see Proposition [[§41 Embeddings#^prop-41-2|§41.2]]. *Source: the class discussion in Lecture 14, confirmed in Uribe's follow-up email.*
 
 ^nd-prop-42-2
 
 - [ ] Q1 **[state]** State the proposition.
-- [ ] Q2 Which two ingredients of the proof of Theorem [[§44 Embeddings#^thm-44-1|§44.1]] are used, and which step changes its justification?
-- [ ] Q3 Why does neither the normal form nor Corollary [[§43 Immersions#^cor-43-2|§43.2]] use injectivity of $F$?
+- [ ] Q2 Which two ingredients of the proof of Theorem [[§41 Embeddings#^thm-41-1|§41.1]] are used, and which step changes its justification?
+- [ ] Q3 Why does neither the normal form nor Corollary [[§40 Immersions#^cor-40-2|§40.2]] use injectivity of $F$?
 - [ ] Q4 Check the example $t\mapsto(\cos t,\sin t)$: immersion, open onto $S^1$, not injective.
 - [ ] Q5 **[why]** Show the figure-eight $\beta$ is not open onto its image: which open set of $(-\pi,\pi)$ has non-open image?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S8.
 > - Ingredients: the normal form, and $F(U)$ open in $F(M)$.
-> - The injectivity used in Corollary [[§43 Immersions#^cor-43-2|§43.2]] is that of the chart $\psi$.
+> - The injectivity used in Corollary [[§40 Immersions#^cor-40-2|§40.2]] is that of the chart $\psi$.
 > - $\mathbb{R}\to S^1$ is a local diffeomorphism onto $S^1$, hence open.
 > - $\beta((-\pi/2,\pi/2))$: every neighbourhood of $(0,0)$ contains $\beta(t)$ for $t$ near $\pm\pi$.
 
 #### An embedding is a diffeomorphism onto its image · P2
 
-If $F:M\to N$ is an embedding, then $F:M\to F(M)$ is a diffeomorphism, $F(M)$ with its induced structure, see Corollary [[§44 Embeddings#^cor-44-3|§44.3]]. *Source: stated in Lecture 14 ("an embedding restricts to a diffeomorphism between $M$ and the image"); filled in.* **[class exercise, Lecture 14]**
+If $F:M\to N$ is an embedding, then $F:M\to F(M)$ is a diffeomorphism, $F(M)$ with its induced structure, see Corollary [[§41 Embeddings#^cor-41-3|§41.3]]. *Source: stated in Lecture 14 ("an embedding restricts to a diffeomorphism between $M$ and the image"); filled in.* **[class exercise, Lecture 14]**
 
 ^nd-cor-42-3
 
@@ -4021,14 +4021,14 @@ If $F:M\to N$ is an embedding, then $F:M\to F(M)$ is a diffeomorphism, $F(M)$ wi
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S7 (dimensions), Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2).
-> - $F(M)$ is a regular submanifold of dimension $m$ (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]).
+> - $F(M)$ is a regular submanifold of dimension $m$ (Theorem [[§41 Embeddings#^thm-41-1|§41.1]]).
 > - $F_{\ast p}=\iota_{\ast F(p)}\circ\bar F_{\ast p}$ is injective, so $\bar F_{\ast p}$ is.
 > - Equal dimensions: Proposition [[§36 Submersions#^prop-36-1|§36.1]](3); bijective local diffeomorphism: Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]].
-> - Q6: the image is not a regular submanifold (Example [[§44 Embeddings#^ex-44-4|§44.4]]).
+> - Q6: the image is not a regular submanifold (Example [[§41 Embeddings#^ex-41-3|§41.3]]).
 
 #### Proper maps into manifolds are closed · P2
 
-A continuous proper map $F:M\to N$ into a topological manifold is closed, see Proposition [[§44 Embeddings#^prop-44-4|§44.4]]. *Source: Lecture 14 ("you go back and forth literally"); Claim 2 not finished in lecture, "you can check the second claim"; completed in the notes.* **[class exercise, Lecture 14]**
+A continuous proper map $F:M\to N$ into a topological manifold is closed, see Proposition [[§41 Embeddings#^prop-41-6|§41.6]]. *Source: Lecture 14 ("you go back and forth literally"); Claim 2 not finished in lecture, "you can check the second claim"; completed in the notes.* **[class exercise, Lecture 14]**
 
 ^nd-prop-42-4
 
@@ -4048,7 +4048,7 @@ A continuous proper map $F:M\to N$ into a topological manifold is closed, see Pr
 
 #### Injective proper immersions are embeddings · P2
 
-An injective proper immersion $F:M\to N$ is an embedding, see Theorem [[§44 Embeddings#^thm-44-5|§44.5]]. *Source: Lecture 14 reduced it to Proposition [[§44 Embeddings#^prop-44-4|§44.4]]; the last step is filled in.*
+An injective proper immersion $F:M\to N$ is an embedding, see Theorem [[§41 Embeddings#^thm-41-7|§41.7]]. *Source: Lecture 14 reduced it to Proposition [[§41 Embeddings#^prop-41-6|§41.6]]; the last step is filled in.*
 
 ^nd-thm-42-5
 
@@ -4060,12 +4060,12 @@ An injective proper immersion $F:M\to N$ is an embedding, see Theorem [[§44 Emb
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S13.
-> - Continuity of the inverse via closed sets: $F(C)$ is closed in $N$ (Proposition [[§44 Embeddings#^prop-44-4|§44.4]]), so $F(C)=F(C)\cap F(M)$ is closed in $F(M)$.
+> - Continuity of the inverse via closed sets: $F(C)$ is closed in $N$ (Proposition [[§41 Embeddings#^prop-41-6|§41.6]]), so $F(C)=F(C)\cap F(M)$ is closed in $F(M)$.
 > - Q5: the figure-eight $\beta$ on $(-\pi,\pi)$: the preimage of its compact image is $(-\pi,\pi)$; or the irrational line.
 
 #### Injective immersions of compact manifolds · P2
 
-If $M$ is compact, every injective immersion $F:M\to N$ is an embedding, see Corollary [[§44 Embeddings#^cor-44-6|§44.6]]. *Source: Uribe's follow-up email ("$F$ is proper if $M$ is compact, a fact that can be very useful!"); filled in.*
+If $M$ is compact, every injective immersion $F:M\to N$ is an embedding, see Corollary [[§41 Embeddings#^cor-41-8|§41.8]]. *Source: Uribe's follow-up email ("$F$ is proper if $M$ is compact, a fact that can be very useful!"); filled in.*
 
 ^nd-cor-42-6
 
@@ -4077,26 +4077,26 @@ If $M$ is compact, every injective immersion $F:M\to N$ is an embedding, see Cor
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S13.
 > - $K$ compact in $N$ ⇒ closed ⇒ $F^{-1}(K)$ closed in compact $M$ ⇒ compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]).
-> - Theorem [[§44 Embeddings#^thm-44-5|§44.5]].
-> - $T^2$ is compact, the irrational line is an injective immersion, and it is not an embedding (Proposition [[§44 Embeddings#^prop-44-13|§44.13]]).
+> - Theorem [[§41 Embeddings#^thm-41-7|§41.7]].
+> - $T^2$ is compact, the irrational line is an injective immersion, and it is not an embedding (Proposition [[§41 Embeddings#^prop-41-14|§41.14]]).
 
 ### Priority 3 · filled in, using a technique the homework drills
 
 #### Closed embeddings are the proper ones · P3
 
-An embedding is proper if and only if its image is closed; an injective proper immersion is exactly an embedding with closed image, see Proposition [[§44 Embeddings#^prop-44-10|§44.10]]. *Source: filled in.*
+An embedding is proper if and only if its image is closed; an injective proper immersion is exactly an embedding with closed image, see Proposition [[§41 Embeddings#^prop-41-12|§41.12]]. *Source: filled in.*
 
 ^nd-prop-42-9
 
 - [ ] Q1 **[state]** State the proposition.
 - [ ] Q2 Proper ⇒ closed image: which proposition?
 - [ ] Q3 Closed image ⇒ proper: for $K$ compact, why is $K\cap F(M)$ compact, and why is $F^{-1}(K)$ compact? Where is the embedding hypothesis used?
-- [ ] Q4 Prove the last sentence from the two directions and Theorem [[§44 Embeddings#^thm-44-5|§44.5]].
+- [ ] Q4 Prove the last sentence from the two directions and Theorem [[§41 Embeddings#^thm-41-7|§41.7]].
 - [ ] Q5 **[why]** The figure-eight has compact, hence closed, image. Why is that not a contradiction? Is local closedness of the image sufficient for an embedding?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S13.
-> - Proper ⇒ closed map (Proposition [[§44 Embeddings#^prop-44-4|§44.4]]), so $F(M)$ is closed.
+> - Proper ⇒ closed map (Proposition [[§41 Embeddings#^prop-41-6|§41.6]]), so $F(M)$ is closed.
 > - $F^{-1}(K)=F^{-1}(K\cap F(M))$ is the image of a compact set under the continuous inverse of $F:M\to F(M)$.
 > - Q5: the figure-eight is not an embedding at all; closedness only helps for embeddings.
 
@@ -4104,7 +4104,7 @@ An embedding is proper if and only if its image is closed; an injective proper i
 
 #### Dense regular submanifolds are open · P4
 
-A dense regular submanifold of $N$ is open in $N$ and has codimension $0$; so the image of an embedding with $\dim M<\dim N$ is never dense, see Corollary [[§44 Embeddings#^cor-44-9|§44.9]]. *Source: filled in.*
+A dense regular submanifold of $N$ is open in $N$ and has codimension $0$; so the image of an embedding with $\dim M<\dim N$ is never dense, see Corollary [[§41 Embeddings#^cor-41-11|§41.11]]. *Source: filled in.*
 
 ^nd-cor-42-8
 
@@ -4116,17 +4116,17 @@ A dense regular submanifold of $N$ is open in $N$ and has codimension $0$; so th
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S13′-type (closed + dense in $U$ ⇒ all of $U$).
-> - Proposition [[§44 Embeddings#^prop-44-8|§44.8]]; density in $N$ gives density in $U$.
+> - Proposition [[§41 Embeddings#^prop-41-10|§41.10]]; density in $N$ gives density in $U$.
 > - Codimension: $\psi(S\cap V)$ would be a nonempty open subset of $\mathbb{R}^n$ inside a hyperplane.
-> - Q5: the image is dense (Proposition [[§44 Embeddings#^prop-44-13|§44.13]]).
+> - Q5: the image is dense (Proposition [[§41 Embeddings#^prop-41-14|§41.14]]).
 
 #### Images of injective immersions · P4
 
-For an injective immersion $F:M\to N$ there is exactly one topology and smooth structure on $S=F(M)$ making $F:M\to S$ a diffeomorphism, and with them $S$ is an immersed submanifold, see Proposition [[§44 Embeddings#^prop-44-15|§44.15]]. *Source: filled in (not from lecture).*
+For an injective immersion $F:M\to N$ there is exactly one topology and smooth structure on $S=F(M)$ making $F:M\to S$ a diffeomorphism, and with them $S$ is an immersed submanifold, see Proposition [[§41 Embeddings#^prop-41-16|§41.16]]. *Source: filled in (not from lecture).*
 
 ^nd-prop-42-13
 
-- [ ] Q1 **[state]** State the proposition. **[def]** Define an immersed submanifold (Definition [[§44 Embeddings#^def-44-3|§44.3]]).
+- [ ] Q1 **[state]** State the proposition. **[def]** Define an immersed submanifold (Definition [[§41 Embeddings#^def-41-3|§41.3]]).
 - [ ] Q2 Which topology do you declare on $S$? Why is $h=F^{-1}:S\to M$ a homeomorphism?
 - [ ] Q3 Which proposition gives the smooth structure?
 - [ ] Q4 Why are the topology and the smooth structure unique?
@@ -4137,11 +4137,11 @@ For an injective immersion $F:M\to N$ there is exactly one topology and smooth s
 > - $U\subseteq S$ open iff $F^{-1}(U)$ open in $M$.
 > - Transport of structure, Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]].
 > - $\iota_{\ast q}=F_{\ast h(q)}\circ h_{\ast q}$: an injective map after an isomorphism.
-> - Q6: no; by Proposition [[§44 Embeddings#^prop-44-17|§44.17]] it would make $\gamma$ an embedding.
+> - Q6: no; by Proposition [[§41 Embeddings#^prop-41-18|§41.18]] it would make $\gamma$ an embedding.
 
 #### When an immersed submanifold is regular · P4
 
-For an injective immersion $F$ and $S=F(M)$ with the structure of Proposition [[§44 Embeddings#^prop-44-15|§44.15]], the following are equivalent: (1) $F$ is an embedding; (2) the topology of $S$ is the subspace topology; (3) $S$ is a regular submanifold whose induced structure is that structure, see Proposition [[§44 Embeddings#^prop-44-17|§44.17]]. *Source: filled in (not from lecture).*
+For an injective immersion $F$ and $S=F(M)$ with the structure of Proposition [[§41 Embeddings#^prop-41-16|§41.16]], the following are equivalent: (1) $F$ is an embedding; (2) the topology of $S$ is the subspace topology; (3) $S$ is a regular submanifold whose induced structure is that structure, see Proposition [[§41 Embeddings#^prop-41-18|§41.18]]. *Source: filled in (not from lecture).*
 
 ^nd-prop-42-15
 
@@ -4149,12 +4149,12 @@ For an injective immersion $F$ and $S=F(M)$ with the structure of Proposition [[
 - [ ] Q2 (1) ⇔ (2): why is the equality of the two topologies the definition of an embedding, for an immersion?
 - [ ] Q3 (1) ⇒ (3): which theorem and corollary, and which uniqueness statement?
 - [ ] Q4 (3) ⇒ (2): which topology does the induced structure of a regular submanifold have?
-- [ ] Q5 **[why]** Example [[§44 Embeddings#^ex-44-4|§44.4]]: for the figure-eight and the irrational line, which of the three conditions fail, and why?
+- [ ] Q5 **[why]** Example [[§41 Embeddings#^ex-41-3|§41.3]]: for the figure-eight and the irrational line, which of the three conditions fail, and why?
 
 > [!tip]- Hints: route of the proof in the notes
-> - (1) ⇒ (3): Theorem [[§44 Embeddings#^thm-44-1|§44.1]] and Corollary [[§44 Embeddings#^cor-44-3|§44.3]], then uniqueness in Proposition [[§44 Embeddings#^prop-44-15|§44.15]].
+> - (1) ⇒ (3): Theorem [[§41 Embeddings#^thm-41-1|§41.1]] and Corollary [[§41 Embeddings#^cor-41-3|§41.3]], then uniqueness in Proposition [[§41 Embeddings#^prop-41-16|§41.16]].
 > - (3) ⇒ (2): Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] uses the subspace topology.
-> - Figure-eight: neighbourhoods of the origin are X's; irrational line: dense, so it would be open (Corollary [[§44 Embeddings#^cor-44-9|§44.9]]), but it meets a circle in a countable set.
+> - Figure-eight: neighbourhoods of the origin are X's; irrational line: dense, so it would be open (Corollary [[§41 Embeddings#^cor-41-11|§41.11]]), but it meets a circle in a countable set.
 
 # T10. Tangent and cotangent bundles, one-forms, the Hessian
 
@@ -5302,31 +5302,31 @@ For a Lie group morphism $F:H\to G$, $dF_e([A,B])=[dF_e(A),dF_e(B)]$: $dF_e:\mat
 
 #### The unit quaternions
 
-$S^3\subseteq\mathbb{H}$ is a regular submanifold, a group with smooth multiplication and inversion, and connected, see Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-4|§47.4]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]].
+$S^3\subseteq\mathbb{H}$ is a regular submanifold, a group with smooth multiplication and inversion, and connected, see Proposition [[§43 The Unit Quaternions and SU(2)#^prop-43-4|§43.4]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]].
 
 ^nd-prop-45-4
 
 #### $S^3$ is $\mathrm{SU}(2)$
 
-$F:S^3\to\mathrm{SU}(2)$ is a group isomorphism and a diffeomorphism, see Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]].
+$F:S^3\to\mathrm{SU}(2)$ is a group isomorphism and a diffeomorphism, see Proposition [[§43 The Unit Quaternions and SU(2)#^prop-43-5|§43.5]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]].
 
 ^nd-prop-45-5
 
 #### The tangent space of $\mathrm{SU}(2)$ at the identity
 
-the matrices $\sigma_1=F_{\ast1}(i)$, $\sigma_2=F_{\ast1}(j)$, $\sigma_3=F_{\ast1}(k)$ form a basis of $\mathfrak{su}(2)$, see Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (a)).
+the matrices $\sigma_1=F_{\ast1}(i)$, $\sigma_2=F_{\ast1}(j)$, $\sigma_3=F_{\ast1}(k)$ form a basis of $\mathfrak{su}(2)$, see Proposition [[§43 The Unit Quaternions and SU(2)#^prop-43-6|§43.6]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (a)).
 
 ^nd-prop-45-6
 
 #### Translating the differential
 
-For a smooth homomorphism $G$ of matrix groups, $G_{\ast g}=(L_{G(g)})_{\ast I}\circ G_{\ast I}\circ(L_{g^{-1}})_{\ast g}$, see Lemma [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-4|§48.4]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (b)).
+For a smooth homomorphism $G$ of matrix groups, $G_{\ast g}=(L_{G(g)})_{\ast I}\circ G_{\ast I}\circ(L_{g^{-1}})_{\ast g}$, see Lemma [[§44 SU(2) → SO(3)꞉ The Double Cover#^lem-44-4|§44.4]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (b)).
 
 ^nd-lem-46-3
 
 #### The double cover $\mathrm{SU}(2)\to\mathrm{SO}(3)$
 
-$G=C\circ F^{-1}$ is a surjective smooth homomorphism and a two-to-one local diffeomorphism with $G_{\ast I}(\sigma_j)=2\hat e_j$, see Theorem [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|§48.5]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (b)).
+$G=C\circ F^{-1}$ is a surjective smooth homomorphism and a two-to-one local diffeomorphism with $G_{\ast I}(\sigma_j)=2\hat e_j$, see Theorem [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-5|§44.5]]. → drilled as [[Differentiable Manifolds HW Drill#^hw4-3|HW4.3]] (part (b)).
 
 ^nd-thm-46-4
 
@@ -5418,7 +5418,7 @@ An atlas determines a unique maximal atlas, so "atlas" and "maximal atlas" give 
 
 ### Submanifolds of $\mathbb{R}^N$
 
-For $X \subseteq \mathbb{R}^{n+k}$ near $p$: external (regular level set), internal (parametrization), graph, and slice (adapted chart) descriptions are equivalent, see Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]]. *Source: Lectures 5–6, 12 (proofs not from lecture).*
+For $X \subseteq \mathbb{R}^{n+k}$ near $p$: external (regular level set), internal (parametrization), graph, and slice (adapted chart) descriptions are equivalent, see Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]]. *Source: Lectures 5–6, 12 (proofs not from lecture).*
 
 ^nd-eq-5
 
@@ -5434,7 +5434,7 @@ For $X \subseteq \mathbb{R}^{n+k}$ near $p$: external (regular level set), inter
 > - Q2: Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], i.e. Steps 1–3 of Theorem [[§7 The Regular Value Theorem#^thm-7-6|§7.6]] ($k$ independent columns, implicit function theorem Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]).
 > - Q3: $F(x, y) = y - h(x)$ with Jacobian $(-Dh \mid I_k)$; $\alpha(x) = (x, h(x))$ with inverse the projection.
 > - Q4: inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]); then $\alpha(V_1)$ is open in $X \cap W$ because $\alpha$ is a homeomorphism onto it, so it is $X \cap$ (a box).
-> - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]] (smooth, injective, open image, smooth inverse $(x, z) \mapsto (x, z + h(x))$; the rows of $\varphi'(q)$ are independent). Q6: Example [[§44 Embeddings#^ex-44-4|§44.4]] (figure-eight).
+> - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]] (smooth, injective, open image, smooth inverse $(x, z) \mapsto (x, z + h(x))$; the rows of $\varphi'(q)$ are independent). Q6: Example [[§41 Embeddings#^ex-41-3|§41.3]] (figure-eight).
 
 ### Regular value theorem
 
@@ -5474,7 +5474,7 @@ The Euclidean notion ($\operatorname{im} F'(p) + T^{\mathrm{geo}}S = \mathbb{R}^
 > [!tip]- Hints: route of the proofs in the notes
 > - Strategy: S12 (transversality = the images span; reduce to a regular value of a composite), S5, S8.
 > - Q2: Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]] (2) and Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]: $\operatorname{im} F'(p)$ and $T^{\mathrm{geo}}_qS = \ker G'(q)$.
-> - Q3: Proposition [[§26 Transversality#^prop-26-3|§26.3]], Theorem [[§26 Transversality#^thm-26-1|§26.1]]. Q4: Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] (Steps 1–7; Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]], Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]]).
+> - Q3: Proposition [[§26 Transversality#^prop-26-3|§26.3]], Theorem [[§26 Transversality#^thm-26-1|§26.1]]. Q4: Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] (Steps 1–7; Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]], Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]]).
 > - Q5: Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]], Proposition [[§26 Transversality#^prop-26-5|§26.5]]. Q6: Example [[§26 Transversality#^ex-26-2|§26.2]]; Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-3|§39.3]] (normal spaces isomorphic).
 
 ### Diffeomorphism

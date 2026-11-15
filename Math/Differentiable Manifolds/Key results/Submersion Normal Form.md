@@ -29,10 +29,10 @@ tags: [differentiable-manifolds, hub]
 - [[§36 Submersions#^cor-36-7|Corollary §36.7: Being a Submersion Is an Open Condition]]
 - [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|Lemma §38.1: Level Sets Near a Regular Point]]
 - [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|Theorem §38.2: The Regular Value Theorem for Manifolds]]
-- [[§43 Immersions#^thm-43-1|Theorem §43.1: Local Normal Form for Immersions]]
+- [[§40 Immersions#^thm-40-1|Theorem §40.1: Local Normal Form for Immersions]]
 
 ## Connections
-- **Used for.** Being a submersion is an open condition ([[§36 Submersions#^cor-36-7|§36.7]]), and submersions are open maps ([[§36 Submersions#^cor-36-9|§36.9]]), hence so are fibrations ([[§40 Fibrations#^prop-40-1|§40.1]]). It proves the [[Regular Value Theorem for Manifolds]]: near a point of the level set F is a projection, so the level set is a coordinate slice.
+- **Used for.** Being a submersion is an open condition ([[§36 Submersions#^cor-36-7|§36.7]]), and submersions are open maps ([[§36 Submersions#^cor-36-9|§36.9]]), hence so are fibrations ([[§45 Fibrations#^prop-45-1|§45.1]]). It proves the [[Regular Value Theorem for Manifolds]]: near a point of the level set F is a projection, so the level set is a coordinate slice.
 - **How.** Complete F¹, …, Fⁿ by m − n of the old coordinates to m functions with invertible Jacobian; the [[Inverse Function Theorem (several variables)]] makes them a local diffeomorphism, and [[§36 Submersions#^lem-36-5|§36.5]] makes that a chart.
-- **Local, not global.** A surjective submersion need not be a fibration: (x, y) ↦ x on ℝ² ∖ {(0, 1)} has a broken fibre over 0 ([[§40 Fibrations#^ex-40-1|Ex. §40.1]]). Ehresmann's theorem adds properness to get local triviality over the whole base ([[§40 Fibrations#^thm-40-3|§40.3]]).
+- **Local, not global.** A surjective submersion need not be a fibration: (x, y) ↦ x on ℝ² ∖ {(0, 1)} has a broken fibre over 0 ([[§45 Fibrations#^ex-45-1|Ex. §45.1]]). Ehresmann's theorem adds properness to get local triviality over the whole base ([[§45 Fibrations#^thm-45-3|§45.3]]).
 - **Same idea elsewhere.** The model is the projection ℝᵏ × ℝˡ → ℝᵏ ([[§36 Submersions#^ex-36-1|Ex. §36.1]]), and the mirror statement is the [[Immersion Normal Form]]. The 452 [[Implicit Function Theorem]] is the Euclidean shadow: near a regular point a level set is a graph.

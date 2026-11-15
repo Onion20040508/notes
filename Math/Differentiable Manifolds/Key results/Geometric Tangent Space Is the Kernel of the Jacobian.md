@@ -35,10 +35,10 @@ tags: [differentiable-manifolds, hub]
 - [[§26 Transversality#^cor-26-4|Corollary §26.4: The Regular Value Theorem as a Special Case]]
 - [[§26 Transversality#^prop-26-5|Proposition §26.5: Transverse Intersections]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|Theorem §29.9: Ambient and Abstract Agree]]
-- [[§37 Regular Submanifolds#^lem-37-13|Lemma §37.13: An Adapted Chart of a Submanifold of ℝⁿ]]
+- [[§37 Regular Submanifolds#^lem-37-14|Lemma §37.14: An Adapted Chart of a Submanifold of ℝⁿ]]
 - [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|Theorem §38.2: The Regular Value Theorem for Manifolds]]
 - [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4: The Old and New Versions Agree]]
-- [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^ex-42-1|Example §42.1: Focal Points of the Parabola]]
+- [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-1|Example §48.1: Focal Points of the Parabola]]
 
 ## Connections
 - **Used for.** The tangent spaces of the classical groups at I: Skew(n) for O(n), skew-Hermitian matrices for U(n), trace-zero matrices for SL(n,ℝ) ([[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). It is the input to the [[Transverse Preimage Theorem]], to transverse intersections ([[§26 Transversality#^prop-26-5|§26.5]]) and to [[Ambient and Abstract Tangent Spaces Agree]], and the [[Regular Value Theorem for Manifolds]] generalizes it to ι_*(T_pS) = ker F_*p.

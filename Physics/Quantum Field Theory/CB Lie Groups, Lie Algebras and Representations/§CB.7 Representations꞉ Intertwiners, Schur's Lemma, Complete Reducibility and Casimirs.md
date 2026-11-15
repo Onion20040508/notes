@@ -134,7 +134,7 @@ Schur's lemma, as the course uses it (Hall, Thm. 16.40; Georgi §1.11):
 ## Representations of associative algebras
 
 > [!definition] Definition §CB.7.7: Associative Algebra
-> An **associative algebra** over $\mathbb K = \mathbb R$ or $\mathbb C$ is a $\mathbb K$-vector space $A$ with a $\mathbb K$-bilinear associative product and a unit $1_A$. Examples: $M_n(\mathbb C)$, $\operatorname{End}(W)$, the quaternions $\mathbb H$ ([[§47 The Unit Quaternions and SU(2)#^def-47-1|591 Def. §47.1]]) over $\mathbb R$.
+> An **associative algebra** over $\mathbb K = \mathbb R$ or $\mathbb C$ is a $\mathbb K$-vector space $A$ with a $\mathbb K$-bilinear associative product and a unit $1_A$. Examples: $M_n(\mathbb C)$, $\operatorname{End}(W)$, the quaternions $\mathbb H$ ([[§43 The Unit Quaternions and SU(2)#^def-43-1|591 Def. §43.1]]) over $\mathbb R$.
 >
 > *Source: written here*
 
@@ -388,7 +388,7 @@ The proof of the next theorem uses three theorems of analysis that have no home 
 > *Source: 1: E. M. Stein and R. Shakarchi, Functional Analysis: Introduction to Further Topics in Analysis (Princeton Lectures in Analysis IV, 2011), Ch. 1 §7.1, Theorem 7.1, p. 29 (the definitions: pp. 28–29) · 2: S. Axler, Measure, Integration & Real Analysis (open-access version of 16 August 2025), 5.32 Fubini's Theorem, p. 132; Definitions 5.2 (p. 117), 5.18 (p. 123), 5.25 (p. 126) · 3: J. M. Lee, Introduction to Smooth Manifolds, 2nd ed., Proposition 16.6 (Properties of Integrals of Forms), p. 407 · all three read in the user's copies (OneDrive, Math/551 and Math/591 textbooks) on 2026-11-12; quoted, not proved here*
 
 > [!theorem] Theorem §CB.7.17: Haar Measure on a Compact Group
-> On every compact matrix Lie group $G$ there is a unique Borel probability measure $\mu$ invariant under left and right translations: $\int_Gf(hg)\,d\mu(g) = \int_Gf(gh)\,d\mu(g) = \int_Gf(g)\,d\mu(g)$ for every continuous $f$ and $h \in G$. For $SU(2) \cong S^3$ ([[§47 The Unit Quaternions and SU(2)#^prop-47-5|591 Prop. §47.5]]) it is the normalized round measure of $S^3$.
+> On every compact matrix Lie group $G$ there is a unique Borel probability measure $\mu$ invariant under left and right translations: $\int_Gf(hg)\,d\mu(g) = \int_Gf(gh)\,d\mu(g) = \int_Gf(g)\,d\mu(g)$ for every continuous $f$ and $h \in G$. For $SU(2) \cong S^3$ ([[§43 The Unit Quaternions and SU(2)#^prop-43-5|591 Prop. §43.5]]) it is the normalized round measure of $S^3$.
 >
 > *Source: Lee, Introduction to Smooth Manifolds, Prop. 16.10 (existence of a left-invariant volume form) · Etingof, Lie Groups and Lie Algebras (MIT 18.755), §34.4, Prop. 34.8 (compact groups are unimodular), Thm. 37.1 (uniqueness) · cited in [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-16|Theorem §CB.7.16]] · Measure Theory (551) for the measure-theoretic background · the three theorems of analysis used in the proof: the Recalled block above (Stein–Shakarchi IV, Thm. 7.1; Axler, MIRA 5.32; Lee, Prop. 16.6)*
 

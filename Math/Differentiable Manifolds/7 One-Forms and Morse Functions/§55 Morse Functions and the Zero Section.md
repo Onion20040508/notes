@@ -5,7 +5,7 @@ chapter: 7
 section: 55
 tags: [differentiable-manifolds, math591]
 ---
-← [[§54 Critical Points and the Hessian]] · ↑ [[· 7 Tangent and Cotangent Bundles]] · [[§56 Vector Fields]] →
+← [[§54 Critical Points and the Hessian]] · ↑ [[· 7 One-Forms and Morse Functions]] · [[§56 Vector Fields]] →
 
 *Stage: fields — The Hessian of [[§54 Critical Points and the Hessian|§54]] seen in $T^{\ast}M$: $df$, as a section, is transverse to the zero section exactly when every critical point is nondegenerate, and then the critical points are isolated; the Hessian as a graph, and jets.*
 
@@ -112,13 +112,13 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 > [!proof]+ Proof
 > *(Not from the assignment; filled in.)*
 >
-> *(1)* Let $(q, \alpha) \in T^{\ast}U$, so $q \in U$. By Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]], $(q, \alpha) \in N^{\ast}S$ if and only if $q \in S$ and $\alpha \in N_qS$; we translate both conditions into the coordinates of $\hat\varphi$. *The point.* The chart is adapted, so $q \in U \cap S$ if and only if $x^{m-k+1}(q) = \cdots = x^m(q) = 0$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]); as $\bar x^i(q, \alpha) = x^i(q)$, this says $\bar x^{m-k+1} = \cdots = \bar x^m = 0$ at $(q, \alpha)$. *The covector.* For $q \in U \cap S$, the same chart is a chart adapted to $S$ at $q$, and Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]](1) (the description of $N_qS$ in an adapted chart at $q$) gives: $\alpha \in N_qS$ if and only if its components $\alpha(\partial/\partial x^i|_q)$ vanish for $i \le m - k$. As $\xi_i(q, \alpha) = \alpha(\partial/\partial x^i|_q)$, this says $\xi_1 = \cdots = \xi_{m-k} = 0$ at $(q, \alpha)$. Together the two translations give the displayed description.
+> *(1)* Let $(q, \alpha) \in T^{\ast}U$, so $q \in U$. By Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]], $(q, \alpha) \in N^{\ast}S$ if and only if $q \in S$ and $\alpha \in N_qS$; we translate both conditions into the coordinates of $\hat\varphi$. *The point.* The chart is adapted, so $q \in U \cap S$ if and only if $x^{m-k+1}(q) = \cdots = x^m(q) = 0$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]); as $\bar x^i(q, \alpha) = x^i(q)$, this says $\bar x^{m-k+1} = \cdots = \bar x^m = 0$ at $(q, \alpha)$. *The covector.* For $q \in U \cap S$, the same chart is a chart adapted to $S$ at $q$, and Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]](1) (the description of $N_qS$ in an adapted chart at $q$) gives: $\alpha \in N_qS$ if and only if its components $\alpha(\partial/\partial x^i|_q)$ vanish for $i \le m - k$. As $\xi_i(q, \alpha) = \alpha(\partial/\partial x^i|_q)$, this says $\xi_1 = \cdots = \xi_{m-k} = 0$ at $(q, \alpha)$. Together the two translations give the displayed description.
 >
 > *(2)* By Corollary [[§52 The Cotangent Bundle#^cor-52-3|§52.3]](1), $T^{\ast}M$ is a smooth manifold of dimension $2m$, and $(T^{\ast}U, \hat\varphi)$ is one of its smooth charts (Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]]). Let $(p, \alpha) \in N^{\ast}S$. Since $p \in S$, there is a chart $(U, \varphi)$ of $M$ at $p$ adapted to $S$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), and then $(p, \alpha) \in T^{\ast}U$. By (1), $N^{\ast}S \cap T^{\ast}U$ is cut out in the chart $\hat\varphi$ by setting $m$ of its $2m$ coordinates equal to the constant $0$. Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]], applied to the subset $N^{\ast}S$ of the manifold $T^{\ast}M$ with this chart (any $m$ of the coordinates, (2) there; the constants all $0$), gives a chart with the same domain $T^{\ast}U$ adapted to $N^{\ast}S$, of codimension $m$: $\hat\varphi$ with its coordinates permuted so that the $m$ vanishing ones come last. So every point of $N^{\ast}S$ lies in the domain of a chart of $T^{\ast}M$ adapted to $N^{\ast}S$, and $N^{\ast}S$ is a regular submanifold of $T^{\ast}M$ of codimension $m$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), of dimension $2m - m = m$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]).
 
 ^pf-55-2
 
-*Uses:* [[§55 Morse Functions and the Zero Section#^def-55-1|Def. §55.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-11|§37.11]], [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]]
+*Uses:* [[§55 Morse Functions and the Zero Section#^def-55-1|Def. §55.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-12|§37.12]], [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^prop-37-2|§37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]]
 
 The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-2|§55.2]](2)). The two extreme values of $k$ are the following two examples.
 
@@ -220,7 +220,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 > [!theorem] Proposition §55.6: The Vertical Space of $T^*M$ Along the Zero Section
 > Let $p \in M$, $(U, \varphi)$ a chart at $p$, and $(\bar x^i, \xi_j)$ the standard coordinates on $T^{\ast}U$.
 >
-> 1. $\pi_{\ast(p,0)}\big(\partial/\partial \bar x^i|_{(p,0)}\big) = \partial/\partial x^i|_p$ and $\pi_{\ast(p,0)}\big(\partial/\partial \xi_j|_{(p,0)}\big) = 0$. Hence the vertical space (Definition [[§40 Fibrations#^def-40-5|§40.5]]) is
+> 1. $\pi_{\ast(p,0)}\big(\partial/\partial \bar x^i|_{(p,0)}\big) = \partial/\partial x^i|_p$ and $\pi_{\ast(p,0)}\big(\partial/\partial \xi_j|_{(p,0)}\big) = 0$. Hence the vertical space (Definition [[§45 Fibrations#^def-45-5|§45.5]]) is
 >
 > $$
 > V_{(p,0)} = \ker \pi_{\ast(p,0)} = \operatorname{Span}\Big\{ \frac{\partial}{\partial \xi_1}\Big|_{(p,0)}, \ldots, \frac{\partial}{\partial \xi_m}\Big|_{(p,0)} \Big\}, \qquad \dim V_{(p,0)} = m .
@@ -285,7 +285,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 >
 > *(2) $j_p$ is an isomorphism onto $V_{(p,0)}$.* $j_p$ is linear, as the composite of the linear map $\eta \mapsto D_\eta|_0$ (Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]) and the linear map $(\iota_p)_{\ast0}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]). By the formula, $j_p$ is $L_p$ followed by the map $b \mapsto \sum_j b_j\, \partial/\partial \xi_j|_{(p,0)}$, which is a bijection of $\mathbb{R}^m$ onto $V_{(p,0)}$ because, by (1), the $\partial/\partial \xi_j|_{(p,0)}$ are a basis of $V_{(p,0)}$; and $L_p$ is bijective. So $j_p$ is a linear bijection of $T_p^{\ast}M$ onto $V_{(p,0)}$. (Without coordinates, the image lies in $V_{(p,0)}$ because $\pi \circ \iota_p$ is the constant map to $p$: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], applied with $F = \pi$ and $\iota = \iota_p$ at the point $0 \in T_p^{\ast}M$, gives $\pi_{\ast(p,0)} \circ (\iota_p)_{\ast0} = (\pi \circ \iota_p)_{\ast0} = 0$.)
 >
-> *(3)* $\pi : T^{\ast}M \to M$ is smooth (Corollary [[§52 The Cotangent Bundle#^cor-52-3|§52.3]](1)) and $\zeta$ is a smooth map with $\pi \circ \zeta = \mathrm{id}_M$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]](2)). Proposition [[§40 Fibrations#^prop-40-5|§40.5]], applied with $E = T^{\ast}M$ and $s = \zeta$ at $\zeta(p) = (p, 0)$, gives
+> *(3)* $\pi : T^{\ast}M \to M$ is smooth (Corollary [[§52 The Cotangent Bundle#^cor-52-3|§52.3]](1)) and $\zeta$ is a smooth map with $\pi \circ \zeta = \mathrm{id}_M$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]](2)). Proposition [[§45 Fibrations#^prop-45-5|§45.5]], applied with $E = T^{\ast}M$ and $s = \zeta$ at $\zeta(p) = (p, 0)$, gives
 >
 > $$
 > T_{(p,0)}(T^{\ast}M) = \zeta_{\ast p}(T_pM) \oplus V_{(p,0)} = T_{(p,0)}\mathcal{Z} \oplus j_p(T_p^{\ast}M),
@@ -301,7 +301,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 
 ^pf-55-6
 
-*Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]], [[§40 Fibrations#^prop-40-5|§40.5]], [[§55 Morse Functions and the Zero Section#^lem-55-5|§55.5]]
+*Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]], [[§45 Fibrations#^prop-45-5|§45.5]], [[§55 Morse Functions and the Zero Section#^lem-55-5|§55.5]]
 
 ## The Differential of $df$ and Transversality
 

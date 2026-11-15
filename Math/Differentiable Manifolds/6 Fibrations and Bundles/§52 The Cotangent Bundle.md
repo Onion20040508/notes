@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Differentiable Manifolds]]"
-chapter: 7
+chapter: 6
 section: 52
 tags: [differentiable-manifolds, math591]
 ---
-← [[§51 The Tangent Bundle]] · ↑ [[· 7 Tangent and Cotangent Bundles]] · [[§53 One-Forms]] →
+← [[§51 The Tangent Bundle]] · ↑ [[· 6 Fibrations and Bundles]] · [[§53 One-Forms]] →
 
 *Stage: bundles — The cotangent spaces assembled into $T^{\ast}M$, with charts from the dual bases; covector components transform by the inverse transpose.*
 
@@ -221,7 +221,7 @@ The definitions and results of this section run parallel to those for the tangen
 >
 > So in the charts $\hat\varphi$ and $\varphi$, $\pi$ is $(r, b) \mapsto r$, which is smooth.
 >
-> *(2)* By Definition [[§40 Fibrations#^def-40-1|§40.1]], take the open cover of $M$ by chart domains $U$ and the maps $\Psi$ of Definition [[§52 The Cotangent Bundle#^def-52-4|§52.4]]. Since $\hat\varphi = (\varphi \times \mathrm{id}) \circ \Psi$ (Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]),
+> *(2)* By Definition [[§45 Fibrations#^def-45-1|§45.1]], take the open cover of $M$ by chart domains $U$ and the maps $\Psi$ of Definition [[§52 The Cotangent Bundle#^def-52-4|§52.4]]. Since $\hat\varphi = (\varphi \times \mathrm{id}) \circ \Psi$ (Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]),
 >
 > $$
 > \Psi = (\varphi^{-1} \times \mathrm{id}) \circ \hat\varphi ,
@@ -241,7 +241,7 @@ The definitions and results of this section run parallel to those for the tangen
 
 ^pf-52-3
 
-*Uses:* [[§51 The Tangent Bundle#^cor-51-5|§51.5]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]], [[§52 The Cotangent Bundle#^prop-52-1|§52.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§52 The Cotangent Bundle#^def-52-2|Def. §52.2]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]], [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§52 The Cotangent Bundle#^def-52-4|Def. §52.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
+*Uses:* [[§51 The Tangent Bundle#^cor-51-5|§51.5]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]], [[§52 The Cotangent Bundle#^prop-52-1|§52.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§52 The Cotangent Bundle#^def-52-2|Def. §52.2]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]], [[§45 Fibrations#^def-45-1|Def. §45.1]], [[§52 The Cotangent Bundle#^def-52-4|Def. §52.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
 
 ## Lecture 15 and the Standard Coordinates
 
@@ -266,3 +266,8 @@ The cotangent bundle has a natural structure that the tangent bundle does not ha
 > *Coordinates on $T^{\ast}M$.* By a slight abuse of notation the first $m$ components of the chart of $T^{\ast}U$ are written $x^1, \ldots, x^m$ again, and the last $m$ are traditionally called $p_1, \ldots, p_m$, $p_i(\alpha) = \alpha_i$ — the $\xi_i$ of these notes. Tangent vectors to $T^{\ast}M$ and germs on it come from the general theory, applied to $T^{\ast}M$ as a manifold of dimension $2m$: $\sum_i a^i\, \partial/\partial x^i + \sum_j \beta_j\, \partial/\partial p_j$. One can keep taking tangent bundles forever. The cotangent bundle carries an intrinsically defined two-form, the *symplectic form* (defined later, with differential forms), which is how it enters Hamiltonian mechanics.
 
 ^rem-52-1
+
+> [!example] Example §52.1: Sections of the Tangent and Cotangent Bundles
+> The main examples come later: the zero sections of $TM$ and $T^{\ast}M$ (Definitions [[§51 The Tangent Bundle#^def-51-3|§51.3]] and [[§52 The Cotangent Bundle#^def-52-3|§52.3]], later, in [[§51 The Tangent Bundle|§51]] and [[§52 The Cotangent Bundle|§52]]), and the section $p \mapsto (p, df_p)$ of $T^{\ast}M$ given by a smooth function $f$, smooth by Proposition [[§53 One-Forms#^prop-53-3|§53.3]] (later, in [[§53 One-Forms|§53]]). Each is such an $s$, so by Proposition [[§45 Fibrations#^prop-45-6|§45.6]] its image — the zero section, resp. the image $\{(p, df_p)\}$ of the one-form $df$ — is a closed regular submanifold of dimension $\dim M$.
+
+^ex-52-1

@@ -5,7 +5,7 @@ chapter: 5
 section: 38
 tags: [differentiable-manifolds, math591]
 ---
-← [[§37 Regular Submanifolds]] · ↑ [[· 5 Submersions, Submanifolds and Fibrations]] · [[§39 Transversality and Lagrange Multipliers]] →
+← [[§37 Regular Submanifolds]] · ↑ [[· 5 Submersions, Immersions and Submanifolds]] · [[§39 Transversality and Lagrange Multipliers]] →
 
 *Stage: submanifolds — Regular level sets of smooth maps between manifolds are regular submanifolds — the regular submanifolds of [[§37 Regular Submanifolds|§37]] as solution sets of equations.*
 
@@ -106,7 +106,7 @@ The local half of the theorem below holds at a single point where a map is a sub
 > [!remark]- Connections
 > - The earlier regular value theorems it contains: [[§7 The Regular Value Theorem#^thm-7-6|§7.6]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§30 The Differential in Coordinates#^cor-30-10|§30.10]] (see the remark below); the tangent-space statement generalizes [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]].
 > - Constraint sets $\{g_1 = c_1, \ldots, g_k = c_k\}$ in multivariable analysis: [[§17 Optimization and Lagrange Multipliers#^thm-17-3|452 §17.3]] (Lagrange multipliers with several constraints).
-> - Fibres of submersions that are all copies of one fibre: [[§40 Fibrations#^def-40-1|fibrations, Def. §40.1]].
+> - Fibres of submersions that are all copies of one fibre: [[§45 Fibrations#^def-45-1|fibrations, Def. §45.1]].
 
 **Transcription note.** Page 33 of the handwritten notes states the theorem for “$q \in M$ a regular value”; the regular value lies in the target, $q \in N$.
 

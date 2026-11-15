@@ -67,12 +67,12 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§37 Regular Submanifolds\|§37]] Regular submanifolds | Chapter 5, *Embedded Submanifolds* (Theorem 5.8, Corollary 5.30, Propositions 5.35 and 5.37) |
 | [[§38 The Regular Value Theorem for Manifolds\|§38]] The regular value theorem for manifolds | Chapter 5 (Corollary 5.14, Proposition 5.38) |
 | [[§39 Transversality and Lagrange Multipliers\|§39]] Transversality and Lagrange multipliers | Chapter 6, *Transversality* (Theorem 6.30) |
-| [[§40 Fibrations\|§40]] Fibrations | smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee |
-| [[§42 The Normal Bundle of a Submanifold of Euclidean Space\|§42]] The normal bundle of a submanifold of Euclidean space | Chapter 6, *Tubular Neighborhoods* (the normal bundle $NM \subseteq \mathbb{R}^n \times \mathbb{R}^n$ and the map $E(x, v) = x + v$); focal points are not in Lee (Milnor, *Morse Theory*, §6) |
-| [[§43 Immersions\|§43]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
-| [[§44 Embeddings\|§44]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
-| [[§45 Geometric and Abstract Manifolds\|§45]] Geometric and abstract manifolds (comparison) | Chapters 1, 3 and 5 (overview); Theorem 6.15 (Whitney embedding) |
-| [[§47 The Unit Quaternions and SU(2)\|§47]]–[[§48 SU(2) → SO(3)꞉ The Double Cover\|§48]] The unit quaternions and the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
+| [[§45 Fibrations\|§45]] Fibrations | smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee |
+| [[§48 The Normal Bundle of a Submanifold of Euclidean Space\|§48]] The normal bundle of a submanifold of Euclidean space | Chapter 6, *Tubular Neighborhoods* (the normal bundle $NM \subseteq \mathbb{R}^n \times \mathbb{R}^n$ and the map $E(x, v) = x + v$); focal points are not in Lee (Milnor, *Morse Theory*, §6) |
+| [[§40 Immersions\|§40]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
+| [[§41 Embeddings\|§41]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
+| [[§42 Geometric and Abstract Manifolds\|§42]] Geometric and abstract manifolds (comparison) | Chapters 1, 3 and 5 (overview); Theorem 6.15 (Whitney embedding) |
+| [[§43 The Unit Quaternions and SU(2)\|§43]]–[[§44 SU(2) → SO(3)꞉ The Double Cover\|§44]] The unit quaternions and the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
 | [[§49 Recap꞉ Germs, Derivations and Tangent Vectors\|§49]]–[[§50 Recap꞉ Covectors and the Four Differentials\|§50]] Recaps: tangent vectors, covectors | Chapters 3 and 11 (overview) |
 | [[§51 The Tangent Bundle\|§51]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18) |
 | [[§52 The Cotangent Bundle\|§52]] The cotangent bundle | Chapter 11, *The Cotangent Bundle* (Proposition 11.9); Lemma 1.35 |
@@ -151,7 +151,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 3.13 | [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]], [[§30 The Differential in Coordinates#^cor-30-6\|Cor. §30.6]] |
 | Proposition 3.14 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7\|Thm. §31.7]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-8\|Cor. §31.8]], [[§36 Submersions#^ex-36-2\|Ex. §36.2]] |
 | Proposition 3.15 | [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|Thm. §29.8]] |
-| Proposition 3.18 | [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4\|Prop. §42.4]], [[§51 The Tangent Bundle#^def-51-4\|Def. §51.4]], [[§51 The Tangent Bundle#^def-51-5\|Def. §51.5]], [[§51 The Tangent Bundle#^prop-51-3\|Prop. §51.3]], [[§51 The Tangent Bundle#^prop-51-4\|Prop. §51.4]], [[§51 The Tangent Bundle#^prop-51-1\|Prop. §51.1]] |
+| Proposition 3.18 | [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-4\|Prop. §48.4]], [[§51 The Tangent Bundle#^def-51-4\|Def. §51.4]], [[§51 The Tangent Bundle#^def-51-5\|Def. §51.5]], [[§51 The Tangent Bundle#^prop-51-3\|Prop. §51.3]], [[§51 The Tangent Bundle#^prop-51-4\|Prop. §51.4]], [[§51 The Tangent Bundle#^prop-51-1\|Prop. §51.1]] |
 | Proposition 3.23 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4\|Thm. §31.4]] |
 | Proposition 3.24 | [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|Cor. §31.5]] |
 | Corollary 3.25 | [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3\|Thm. §22.3]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|Cor. §31.5]] |
@@ -159,14 +159,14 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem 4.5 | [[§35 Local Diffeomorphisms#^thm-35-2\|Thm. §35.2]] |
 | Proposition 4.6 | [[§35 Local Diffeomorphisms#^cor-35-3\|Cor. §35.3]] |
 | Proposition 4.8 | [[§35 Local Diffeomorphisms#^thm-35-2\|Thm. §35.2]], [[§36 Submersions#^prop-36-1\|Prop. §36.1]] |
-| Theorem 4.12 | [[§36 Submersions#^thm-36-6\|Thm. §36.6]], [[§43 Immersions#^thm-43-1\|Thm. §43.1]] |
-| Example 4.20 | [[§44 Embeddings#^prop-44-13\|Prop. §44.13]] |
-| Lemma 4.21 | [[§44 Embeddings#^lem-44-12\|Lem. §44.12]] |
-| Proposition 4.22 | [[§44 Embeddings#^thm-44-5\|Thm. §44.5]], [[§44 Embeddings#^cor-44-6\|Cor. §44.6]] |
+| Theorem 4.12 | [[§36 Submersions#^thm-36-6\|Thm. §36.6]], [[§40 Immersions#^thm-40-1\|Thm. §40.1]] |
+| Example 4.20 | [[§41 Embeddings#^prop-41-14\|Prop. §41.14]] |
+| Lemma 4.21 | [[§41 Embeddings#^lem-41-13\|Lem. §41.13]] |
+| Proposition 4.22 | [[§41 Embeddings#^thm-41-7\|Thm. §41.7]], [[§41 Embeddings#^cor-41-8\|Cor. §41.8]] |
 | Proposition 4.28 | [[§36 Submersions#^cor-36-9\|Cor. §36.9]] |
-| Problem 4-5 | [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4\|Prop. §18.4]], [[§46 Projective Spaces and the Hopf Fibration#^ex-46-2\|Ex. §46.2]], [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3\|Ex. §46.3]] |
-| Proposition 5.2 | [[§44 Embeddings#^thm-44-1\|Thm. §44.1]] |
-| Proposition 5.5 | [[§44 Embeddings#^prop-44-10\|Prop. §44.10]] |
+| Problem 4-5 | [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4\|Prop. §18.4]], [[§47 The Hopf Fibration#^ex-47-1\|Ex. §47.1]], [[§47 The Hopf Fibration#^ex-47-2\|Ex. §47.2]] |
+| Proposition 5.2 | [[§41 Embeddings#^thm-41-1\|Thm. §41.1]] |
+| Proposition 5.5 | [[§41 Embeddings#^prop-41-12\|Prop. §41.12]] |
 | Theorem 5.8 | [[§37 Regular Submanifolds#^def-37-2\|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3\|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-3\|Prop. §37.3]] |
 | Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-6\|Thm. §7.6]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|Thm. §38.2]] |
 | Corollary 5.30 | [[§37 Regular Submanifolds#^lem-37-5\|Lem. §37.5]] |
@@ -175,7 +175,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9\|Thm. §29.9]], [[§37 Regular Submanifolds#^prop-37-9\|Prop. §37.9]] |
 | Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9\|Thm. §29.9]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|Thm. §38.2]] |
 | Proposition 5.47 | [[§66 The Whitney Embedding Theorem#^prop-66-9\|Prop. §66.9]] |
-| Problem 5-6 | [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-5\|Def. §42.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4\|Prop. §42.4]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-7\|Def. §42.7]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-5\|Prop. §42.5]] |
+| Problem 5-6 | [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^def-48-5\|Def. §48.5]], [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-4\|Prop. §48.4]], [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^def-48-7\|Def. §48.7]], [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-5\|Prop. §48.5]] |
 | Exercise 6.1 | [[§62 Sets of Measure Zero#^lem-62-1\|Lem. §62.1]] |
 | Proposition 6.1 | [[§62 Sets of Measure Zero#^lem-62-1\|Lem. §62.1]] |
 | Lemma 6.2 | [[§62 Sets of Measure Zero#^lem-62-5\|Lem. §62.5]] |
@@ -200,7 +200,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 7.30 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-11\|Def. §11.11]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
 | Problem 7-2 | [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2\|Prop. §60.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-3\|Prop. §60.3]] |
 | Problem 7-4 | [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1\|Prop. §12.1]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-2\|Cor. §12.2]] |
-| Problem 7-22 | [[§47 The Unit Quaternions and SU(2)#^def-47-1\|Def. §47.1]] |
+| Problem 7-22 | [[§43 The Unit Quaternions and SU(2)#^def-43-1\|Def. §43.1]] |
 | Proposition 8.1 | [[§56 Vector Fields#^prop-56-1\|Prop. §56.1]] |
 | Proposition 8.14 | [[§56 Vector Fields#^lem-56-11\|Lem. §56.11]] |
 | Proposition 8.15 | [[§56 Vector Fields#^prop-56-10\|Prop. §56.10]] |
@@ -243,7 +243,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 9-1 | [[§68 Local Existence and Uniqueness#^cor-68-4\|Cor. §68.4]], [[§69 Maximal Integral Curves and Flows#^prop-69-2\|Prop. §69.2]] |
 | Problem 9-6 | [[§70 Complete Vector Fields#^thm-70-4\|Thm. §70.4]], [[§70 Complete Vector Fields#^cor-70-5\|Cor. §70.5]] |
 | Problem 9-18 | [[§72 Lie Derivatives#^ex-72-2\|Ex. §72.2]] |
-| Example 10.3 | [[§41 Examples of Fibrations#^ex-41-2\|Ex. §41.2]] |
+| Example 10.3 | [[§46 Examples of Fibrations#^ex-46-2\|Ex. §46.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
 | Proposition 11.8 | [[§21 Linear Algebra Toolkit#^prop-21-3\|Prop. §21.3]] |
@@ -294,7 +294,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition A.45 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Proposition A.50 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Lemma A.52 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
-| Theorem A.57 | [[§44 Embeddings#^prop-44-4\|Prop. §44.4]] |
+| Theorem A.57 | [[§41 Embeddings#^prop-41-6\|Prop. §41.6]] |
 | Proposition A.60 | [[§65 Partitions of Unity#^lem-65-4\|Lem. §65.4]] |
 | Corollary B.21 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |
 | Proposition B.24 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |

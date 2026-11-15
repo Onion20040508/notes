@@ -255,7 +255,7 @@ the Jacobian carries the velocity of the coordinate curve $\varphi \circ \gamma$
 ^rem-31-3
 
 > [!remark]- Connections
-> - The two tangent spaces side by side: [[§45 Geometric and Abstract Manifolds#Tangent Vectors|§45, Tangent Vectors]].
+> - The two tangent spaces side by side: [[§42 Geometric and Abstract Manifolds#Tangent Vectors|§45, Tangent Vectors]].
 > - The identification for a regular level set: [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|Theorem §29.9]].
 
 ## Tangent Spaces of Products
