@@ -14,7 +14,7 @@ tags: [chapter, quantum-field-theory]
 ## Sections
 - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] — statements from §C5a.1 (B2) and §C1a.5 (B3), restatements of REL §B1.2, §B2.2 and QM §B6.1 (CB ordering pass); 513 notes Ch. 1 §1.5, Ch. 8 §8.1; LADR
 - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras]] — 591 §§11, 25, 49–50; Hall Ch. 2–3; 513 notes Ch. 1 §1.3 (matrix groups, B3), Ch. 7 §7.2
-- [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover]] — 513 notes Ch. 7 §7.2; QM §C5.1–§C5.2 (restated); Sakurai §§3.1–3.3; 591 §44
+- [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover]] — 513 notes Ch. 7 §7.2; QM §C5.1–§C5.2 (restated); Sakurai §§3.1–3.3; 591 §42
 - [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings]] — Hall Ch. 3–5; 590 §§29, 31; 513 notes Ch. 1 §1.3, Ch. 11 §11.1 (components, B3), Ch. 7 §7.2
 - [[§CB.4 Real Lie Algebras, the Physicists' i and Complexification]] — 513 notes Ch. 7 §7.2; Woit §5.5; Etingof
 - [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations]] — 513 notes Ch. 1 §1.6, Ch. 7 §§7.3–7.5; PHY 513 Lecture 7; Problem Sets 4–5; §C1a.7 (restated)
@@ -28,7 +28,7 @@ tags: [chapter, quantum-field-theory]
 - [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element]] — Woit Ch. 28–29; written here
 - [[§CB.14 Complex Clifford Algebras and Clifford Modules]] — Woit §28.1; PS §3.2
 - [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)]] — PHY 513 TA (oral); written here
-- [[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half]] — 591 §§43–44; Woit §6.2
+- [[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half]] — 591 §§40–41; Woit §6.2
 - [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover]] — 513 notes Ch. 8 §8.2; Woit Ch. 40; Etingof Ex. 11.4; §C5a.4 (Weyl matrices, restated)
 - [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)]] — 513 notes Ch. 7 §7.4; Woit Ch. 40
 - [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵]] — PS §§3.2–3.4; Woit §41.2; PHY 513 TA (oral; the TA's theorem, moved here from §CB.14)
