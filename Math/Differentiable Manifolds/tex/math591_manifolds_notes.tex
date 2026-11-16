@@ -36183,7 +36183,501 @@ For $\varepsilon = dx^i$ this is $dx^i \wedge dx^i = 0$, as in Lemma~\ref{lem:dx
 So $\omega \wedge \omega \neq 0$. By Corollary~\ref{cor:top-degree-forms}, $\omega \wedge \omega = 2\, \varepsilon^{\{1, 2, 3, 4\}}$, twice the determinant; with Proposition~\ref{prop:wedge-properties}(4) this reads $\omega \wedge \omega = 2\, dx^1 \wedge dx^2 \wedge dx^3 \wedge dx^4$.
 \end{exbox}
 
-Next: $V$ becomes the tangent space $T_pM$ again, and the point $p$ varies over a manifold, so that the forms become functions of the point. (Lecture~30 ended with the proof of Proposition~\ref{prop:wedge-properties}(3).)
+Next: one more piece of linear algebra, the pullback of forms by a linear map (\ref{sec:linear-pullback}); then $V$ becomes the tangent space $T_pM$ again, and the point $p$ varies over a manifold, so that the forms become functions of the point (\ref{sec:forms-manifolds}). (Lecture~30 ended with the proof of Proposition~\ref{prop:wedge-properties}(3).)
+
+% ============================================================================
+% Lecture 31 (Mon Nov 16, 2026): pullbacks of linear forms
+% ============================================================================
+
+\section{Pullbacks of Linear Forms}\label{sec:linear-pullback}
+
+\roadmark{Stage: forms}{A linear map pulls $k$-forms back; in bases the pullback is given by the $k \times k$ minors of its matrix, and in top degree by its determinant.}
+
+\textit{(Lecture 31.)} One more piece of linear algebra. Recall the space $\Lambda^k V^*$ of linear $k$-forms on $V$ (Definition~\ref{def:lambda-k}), of dimension $\binom{m}{k}$ with $m = \dim V$ (Proposition~\ref{prop:dim-k-forms}). Throughout this section $V$ and $W$ are real vector spaces of dimensions $m$ and $n$, and $F : V \to W$ is any linear map; the dimensions need not be equal.
+
+\begin{rembox}[Notation of Lecture 31]\label{rem:notation-lecture-31}
+The dictionary between the board and these notes, for this section and the next, in addition to the remarks \emph{Notation in This Section} (\ref{sec:multilinear}) and \emph{Notation of Lecture 30} (\ref{sec:wedge-product}):
+\begin{itemize}[nosep]
+\item \emph{Vectors.} The board writes $v_1, \ldots, v_k$; as before, these notes write $v^1, \ldots, v^k$ (label up).
+\item \emph{Dual bases.} $(e_1, \ldots, e_m)$ is a basis of $V$ with dual basis $(\varepsilon^1, \ldots, \varepsilon^m)$ of $V^*$, and $(f_1, \ldots, f_n)$ a basis of $W$ with dual basis $(\phi^1, \ldots, \phi^n)$ of $W^*$. The board's letter for the second dual basis is $\phi$; it is printed $\phi$ here, and $\varphi$ stays reserved for charts, as in \ref{sec:forms-manifolds}, where the board's chart is $\varphi = (x^1, \ldots, x^m)$.
+\item \emph{The matrix of $F$.} The board calls it $A$. Since $A$ and $B$ denote index sets, these notes write $[F]$, as in Proposition~\ref{fact:linalg}(3): the $n \times m$ matrix with entry $[F]_{ij} = \phi^i(F e_j)$ in row $i$ and column $j$.
+\item \emph{Index sets.} $A = \{a_1 < \cdots < a_k\} \subseteq \{1, \ldots, m\}$ indexes the basis of $\Lambda^k V^*$, and $B = \{b_1 < \cdots < b_k\} \subseteq \{1, \ldots, n\}$ that of $\Lambda^k W^*$; $\phi^B = \phi^{b_1} \wedge \cdots \wedge \phi^{b_k}$, as for $\varepsilon^A$ (Proposition~\ref{prop:wedge-properties}(4)).
+\item \emph{Components of a form on a manifold.} The board writes $f^A$ for the coefficient of $dx^A$. These notes write $f_A$, with the index down, like the components $\theta_j$ of a one-form (Proposition~\ref{prop:one-form-coords}) and Lee's $\omega_I$.
+\item \emph{Differentials and pullbacks.} The board's $dF_p$ is the pushforward $F_{*p}$ (Definition~\ref{def:pushforward}; Appendix~A.1), and $(dF_p)^*$ is the pullback of Definition~\ref{def:linear-pullback} for the linear map $dF_p$; for $k = 1$ it is the pullback of covectors $F_p^*$ (Definition~\ref{def:pullback-covector}). Lee writes $dF_p^*$.
+\item \emph{Degree.} $|\omega|$ is the degree of a form (Definition~\ref{def:form-degree}); the notation is not Lee's.
+\end{itemize}
+\end{rembox}
+
+\begin{defbox}[Pullback of Linear Forms]\deflabel{def:linear-pullback}
+Let $F : V \to W$ be linear and $k \ge 0$. The \textbf{pullback} by $F$ is the map
+\[
+F^* : \Lambda^k W^* \longrightarrow \Lambda^k V^*, \qquad (F^*\beta)(v^1, \ldots, v^k) = \beta\big(F v^1, \ldots, F v^k\big) ,
+\]
+for $\beta \in \Lambda^k W^*$ and $v^1, \ldots, v^k \in V$.
+For $k = 0$, $F^*$ is the identity of $\Lambda^0 W^* = \mathbb{R} = \Lambda^0 V^*$.
+\leeref{Ch.~12, \emph{Pullbacks of Tensor Fields}}
+\end{defbox}
+
+$F$ pushes vectors forward, from $V$ to $W$; by duality, forms are pulled back, from $W$ to $V$: to evaluate $F^*\beta$ on vectors of $V$, push them to $W$ and evaluate $\beta$ there. This is the multilinear version of the dual map: for $k = 1$, $F^*\beta = \beta \circ F$ is the dual map of Definition~\ref{def:dual-map}, and on manifolds that case is the pullback of covectors (Definition~\ref{def:pullback-covector}).
+
+\begin{lembox}[Basic Properties of the Linear Pullback]\thmlabel{lem:linear-pullback-basic}
+Let $F : V \to W$ be linear and $\beta \in \Lambda^k W^*$.
+\begin{enumerate}[nosep]
+\item $F^*\beta$ is a linear $k$-form on $V$: $F^*\beta \in \Lambda^k V^*$.
+\item $F^* : \Lambda^k W^* \to \Lambda^k V^*$ is linear.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} (1) Fix all entries but the $j$-th. Then $v^j \mapsto F v^j$ is linear and $\beta$ is linear in its $j$-th entry, so the composite $v^j \mapsto \beta(F v^1, \ldots, F v^j, \ldots, F v^k)$ is linear: $F^*\beta$ is multilinear. Exchanging $v^i$ and $v^j$ exchanges the entries $F v^i$ and $F v^j$ of $\beta$, which changes the sign (Definition~\ref{def:linear-k-form}). (2) For $\beta, \gamma \in \Lambda^k W^*$ and $c \in \mathbb{R}$, evaluating with the pointwise operations of Definition~\ref{def:lambda-k},
+\[
+\big(F^*(\beta + c\gamma)\big)(v^1, \ldots, v^k) = \beta(F v^1, \ldots, F v^k) + c\, \gamma(F v^1, \ldots, F v^k) = \big(F^*\beta + c\, F^*\gamma\big)(v^1, \ldots, v^k) . \qedhere
+\]
+\end{proof}
+
+\emph{In bases.} Let $(e_1, \ldots, e_m)$ and $(f_1, \ldots, f_n)$ be bases of $V$ and $W$, with dual bases $(\varepsilon^1, \ldots, \varepsilon^m)$ of $V^*$ and $(\phi^1, \ldots, \phi^n)$ of $W^*$ (Definition~\ref{def:dual-basis}). For $B = \{b_1 < \cdots < b_k\} \subseteq \{1, \ldots, n\}$ put $\phi^B = \phi^{b_1} \wedge \cdots \wedge \phi^{b_k}$. The $\phi^B$ form a basis of $\Lambda^k W^*$, and the $\varepsilon^A$ a basis of $\Lambda^k V^*$ (Propositions~\ref{prop:dim-k-forms} and~\ref{prop:wedge-properties}(4)). The lecture wrote down, as an exercise, the pullback of a basis element.
+
+\begin{propbox}[Components of a Pullback]\thmlabel{prop:linear-pullback-components}
+With these bases, let $[F]$ be the $n \times m$ matrix of $F$, with entry $[F]_{ij} = \phi^i(F e_j)$ in row $i$ and column $j$ (Proposition~\ref{fact:linalg}(3)). For every $k$-element subset $B = \{b_1 < \cdots < b_k\}$ of $\{1, \ldots, n\}$,
+\[
+F^*(\phi^B) = \sum_{A} \det\big( \phi^{b_i}(F e_{a_j}) \big)_{i, j = 1, \ldots, k}\; \varepsilon^A ,
+\]
+the sum over all $k$-element subsets $A = \{a_1 < \cdots < a_k\}$ of $\{1, \ldots, m\}$. The coefficient of $\varepsilon^A$ is the $k \times k$ minor of $[F]$ in the rows $b_1, \ldots, b_k$ and the columns $a_1, \ldots, a_k$.
+\leeref{cf.\ Lemma 14.16(c), Proposition 14.20}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture 31.)} By Lemma~\ref{lem:linear-pullback-basic}, $F^*(\phi^B) \in \Lambda^k V^*$, so it is a linear combination of the $\varepsilon^A$, and by Proposition~\ref{prop:dim-k-forms} its $\varepsilon^A$-component is its value on $(e_{a_1}, \ldots, e_{a_k})$; components are always extracted in this way. By Definition~\ref{def:linear-pullback} and then Definition~\ref{def:epsilon-A}, applied in $W$ to the basis $(\phi^i)$ of $W^*$,
+\[
+F^*(\phi^B)(e_{a_1}, \ldots, e_{a_k}) = \phi^B\big(F e_{a_1}, \ldots, F e_{a_k}\big) = \det\big( \phi^{b_i}(F e_{a_j}) \big)_{i, j = 1, \ldots, k} .
+\]
+(The lecture used $\phi^B = \phi^{b_1} \wedge \cdots \wedge \phi^{b_k}$ and the fact that a wedge product of one-forms evaluated on vectors is a determinant, announced there as the first problem of the next assignment. In these notes that fact is Lemma~\ref{lem:wedge-one-forms-det}, and the two descriptions of $\phi^B$ agree by Proposition~\ref{prop:wedge-properties}(4).) Finally, the dual basis extracts components: $F e_{a_j} = \sum_i \phi^i(F e_{a_j})\, f_i$ (Proposition~\ref{prop:dual-basis}), so $\phi^{b_i}(F e_{a_j})$ is the $f_{b_i}$-component of $F e_{a_j}$, the entry $[F]_{b_i a_j}$ of the matrix.
+\end{proof}
+
+\textbf{Transcription note (Lecture 31).} The board wrote the sum over $A \subset \{1, \ldots, k\}$ and the determinant as $\det\big(\phi^{b_i}(F(e_j))\big)$. The subsets $A$ are the $k$-element subsets of $\{1, \ldots, m\}$, and the column index is $a_j$, as in the line before on the board, $\phi^B\big(F(e_{a_1}), \ldots, F(e_{a_k})\big)$.
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\filldraw[fill=red!8, draw=gray!60] (0.00,0.00) rectangle (0.66,-0.50);
+\filldraw[fill=white, draw=gray!60] (0.66,0.00) rectangle (1.32,-0.50);
+\filldraw[fill=red!8, draw=gray!60] (1.32,0.00) rectangle (1.98,-0.50);
+\filldraw[fill=white, draw=gray!60] (1.98,0.00) rectangle (2.64,-0.50);
+\filldraw[fill=white, draw=gray!60] (2.64,0.00) rectangle (3.30,-0.50);
+\filldraw[fill=red!8, draw=gray!60] (3.30,0.00) rectangle (3.96,-0.50);
+\filldraw[fill=orange!35, draw=gray!60] (0.00,-0.50) rectangle (0.66,-1.00);
+\node[font=\tiny] at (0.33,-0.75) {$b_1 a_1$};
+\filldraw[fill=blue!8, draw=gray!60] (0.66,-0.50) rectangle (1.32,-1.00);
+\filldraw[fill=orange!35, draw=gray!60] (1.32,-0.50) rectangle (1.98,-1.00);
+\node[font=\tiny] at (1.65,-0.75) {$b_1 a_2$};
+\filldraw[fill=blue!8, draw=gray!60] (1.98,-0.50) rectangle (2.64,-1.00);
+\filldraw[fill=blue!8, draw=gray!60] (2.64,-0.50) rectangle (3.30,-1.00);
+\filldraw[fill=orange!35, draw=gray!60] (3.30,-0.50) rectangle (3.96,-1.00);
+\node[font=\tiny] at (3.63,-0.75) {$b_1 a_3$};
+\filldraw[fill=red!8, draw=gray!60] (0.00,-1.00) rectangle (0.66,-1.50);
+\filldraw[fill=white, draw=gray!60] (0.66,-1.00) rectangle (1.32,-1.50);
+\filldraw[fill=red!8, draw=gray!60] (1.32,-1.00) rectangle (1.98,-1.50);
+\filldraw[fill=white, draw=gray!60] (1.98,-1.00) rectangle (2.64,-1.50);
+\filldraw[fill=white, draw=gray!60] (2.64,-1.00) rectangle (3.30,-1.50);
+\filldraw[fill=red!8, draw=gray!60] (3.30,-1.00) rectangle (3.96,-1.50);
+\filldraw[fill=orange!35, draw=gray!60] (0.00,-1.50) rectangle (0.66,-2.00);
+\node[font=\tiny] at (0.33,-1.75) {$b_2 a_1$};
+\filldraw[fill=blue!8, draw=gray!60] (0.66,-1.50) rectangle (1.32,-2.00);
+\filldraw[fill=orange!35, draw=gray!60] (1.32,-1.50) rectangle (1.98,-2.00);
+\node[font=\tiny] at (1.65,-1.75) {$b_2 a_2$};
+\filldraw[fill=blue!8, draw=gray!60] (1.98,-1.50) rectangle (2.64,-2.00);
+\filldraw[fill=blue!8, draw=gray!60] (2.64,-1.50) rectangle (3.30,-2.00);
+\filldraw[fill=orange!35, draw=gray!60] (3.30,-1.50) rectangle (3.96,-2.00);
+\node[font=\tiny] at (3.63,-1.75) {$b_2 a_3$};
+\filldraw[fill=orange!35, draw=gray!60] (0.00,-2.00) rectangle (0.66,-2.50);
+\node[font=\tiny] at (0.33,-2.25) {$b_3 a_1$};
+\filldraw[fill=blue!8, draw=gray!60] (0.66,-2.00) rectangle (1.32,-2.50);
+\filldraw[fill=orange!35, draw=gray!60] (1.32,-2.00) rectangle (1.98,-2.50);
+\node[font=\tiny] at (1.65,-2.25) {$b_3 a_2$};
+\filldraw[fill=blue!8, draw=gray!60] (1.98,-2.00) rectangle (2.64,-2.50);
+\filldraw[fill=blue!8, draw=gray!60] (2.64,-2.00) rectangle (3.30,-2.50);
+\filldraw[fill=orange!35, draw=gray!60] (3.30,-2.00) rectangle (3.96,-2.50);
+\node[font=\tiny] at (3.63,-2.25) {$b_3 a_3$};
+\node[font=\scriptsize, text=gray!70!black] at (0.33,0.22) {$1$};
+\node[font=\scriptsize, text=red!70!black] at (0.33,0.55) {$a_1$};
+\node[font=\scriptsize, text=gray!70!black] at (0.99,0.22) {$2$};
+\node[font=\scriptsize, text=gray!70!black] at (1.65,0.22) {$3$};
+\node[font=\scriptsize, text=red!70!black] at (1.65,0.55) {$a_2$};
+\node[font=\scriptsize, text=gray!70!black] at (2.31,0.22) {$4$};
+\node[font=\scriptsize, text=gray!70!black] at (2.97,0.22) {$5$};
+\node[font=\scriptsize, text=gray!70!black] at (3.63,0.22) {$6$};
+\node[font=\scriptsize, text=red!70!black] at (3.63,0.55) {$a_3$};
+\node[font=\scriptsize, text=gray!70!black, anchor=east] at (-0.08,-0.25) {$1$};
+\node[font=\scriptsize, text=gray!70!black, anchor=east] at (-0.08,-0.75) {$2$};
+\node[font=\scriptsize, text=blue!70!black, anchor=east] at (-0.42,-0.75) {$b_1$};
+\node[font=\scriptsize, text=gray!70!black, anchor=east] at (-0.08,-1.25) {$3$};
+\node[font=\scriptsize, text=gray!70!black, anchor=east] at (-0.08,-1.75) {$4$};
+\node[font=\scriptsize, text=blue!70!black, anchor=east] at (-0.42,-1.75) {$b_2$};
+\node[font=\scriptsize, text=gray!70!black, anchor=east] at (-0.08,-2.25) {$5$};
+\node[font=\scriptsize, text=blue!70!black, anchor=east] at (-0.42,-2.25) {$b_3$};
+\node[font=\scriptsize, align=center] at (1.98,0.95) {column $j$ of $[F]$: the components of $F e_j$};
+\node[font=\scriptsize, anchor=west, align=left] at (4.31,-0.70) {$[F]$: $n \times m$, entry $\phi^i(F e_j)$ in row $i$, column $j$};
+\node[font=\scriptsize, anchor=west, align=left] at (4.31,-1.30) {rows $B = \{2 < 4 < 5\}$ (blue), columns $A = \{1 < 3 < 6\}$ (red)};
+\node[font=\scriptsize, anchor=west, align=left] at (4.31,-1.90) {$\varepsilon^A$-component of $F^*\phi^B$ $=$ $\det$ of the orange $3 \times 3$ minor};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Proposition~\ref{prop:linear-pullback-components} for $m = 6$, $n = 5$ and $k = 3$. The columns of $[F]$ belong to the basis vectors $e_j$ of $V$ and the rows to the covectors $\phi^i$ of $W^*$. The subset $A \subseteq \{1, \ldots, 6\}$ of $V$ picks three columns and $B \subseteq \{1, \ldots, 5\}$ three rows; the coefficient of $\varepsilon^A$ in $F^*\phi^B$ is the determinant of the entries in both (orange), with row index $i$ (from $b_i$) and column index $j$ (from $a_j$), as in Definition~\ref{def:epsilon-A}.
+%% <<< END ADDED
+
+The chosen rows and columns need not be adjacent, so the entries need not fill a block of neighbouring places of $[F]$. In linear algebra this is still called a minor, and every $k \times k$ minor of $[F]$ occurs, as the coefficient of $\varepsilon^A$ in $F^*\phi^B$ for one pair $(A, B)$.
+
+\emph{The important special case} is $k = m = n$: a linear map between spaces of the same dimension, and forms of top degree. Then $\dim \Lambda^m V^* = \binom{m}{m} = 1$, and there is only one subset of each kind, $A = B = \{1, \ldots, m\}$. These one-dimensional spaces will be important on manifolds.
+
+\begin{propbox}[Pullback in Top Degree]\thmlabel{prop:top-degree-pullback}
+\begin{enumerate}[nosep]
+\item Let $\dim V = \dim W = m$, with bases as above. The one-element bases of $\Lambda^m W^*$ and $\Lambda^m V^*$ are $\phi^1 \wedge \cdots \wedge \phi^m$ and $\varepsilon^1 \wedge \cdots \wedge \varepsilon^m$, and
+\[
+\boxed{\; F^*\big(\phi^1 \wedge \cdots \wedge \phi^m\big) = \det [F]\;\, \varepsilon^1 \wedge \cdots \wedge \varepsilon^m \;}
+\]
+where $[F] = \big(\phi^i(F e_j)\big)_{i, j}$ is the $m \times m$ matrix of $F$.
+\item \textit{(Not from lecture.)} If $W = V$, then $F^*\omega = (\det F)\, \omega$ for every $\omega \in \Lambda^m V^*$; that is, $\omega(F v^1, \ldots, F v^m) = (\det F)\, \omega(v^1, \ldots, v^m)$, where $\det F$ is the determinant of the matrix of $F$ in any basis of $V$.
+\end{enumerate}
+\leeref{Proposition 14.9}
+\end{propbox}
+
+\begin{proof}
+(1) \textit{(Lecture 31.)} By Proposition~\ref{prop:dim-k-forms} with $k = m$ there is one $m$-element subset of $\{1, \ldots, m\}$, so the bases have one element each, $\phi^{\{1, \ldots, m\}} = \phi^1 \wedge \cdots \wedge \phi^m$ and $\varepsilon^{\{1, \ldots, m\}} = \varepsilon^1 \wedge \cdots \wedge \varepsilon^m$ (Proposition~\ref{prop:wedge-properties}(4)). In Proposition~\ref{prop:linear-pullback-components} the sum has the single term $A = \{1, \ldots, m\}$, and the minor in all the rows and all the columns is the whole matrix.
+
+(2) \textit{(Filled in.)} Take any basis $(e_j)$ of $V$, and use it also as the basis $(f_j)$ of $W = V$, so that $(\phi^i) = (\varepsilon^i)$ and $[F]$ is the matrix of $F$ in this basis. Since $\dim \Lambda^m V^* = 1$, $\omega = c\, \varepsilon^1 \wedge \cdots \wedge \varepsilon^m$ for some $c \in \mathbb{R}$, and by (1) and the linearity of $F^*$ (Lemma~\ref{lem:linear-pullback-basic}), $F^*\omega = c \det[F]\, \varepsilon^1 \wedge \cdots \wedge \varepsilon^m = \det[F]\, \omega$. The determinant of the matrix of $F$ does not depend on the basis: in another basis the matrix is $P^{-1}[F] P$ (Proposition~\ref{fact:linalg}(4)), with the same determinant.
+\end{proof}
+
+The formula is boxed because it is what allows top-degree forms to be integrated. It has been seen before, in the change of variables formula for multiple integrals, where the determinant of the Jacobian appears: that is the same determinant, and it is what will allow the integral of a top-degree form to be defined intrinsically (Corollary~\ref{cor:top-degree-pullback-manifold} and Example~\ref{ex:polar-two-form} below).
+
+\textit{(Lecture 31, later in the lecture.)} The pullback is compatible with the wedge product (Definition~\ref{def:wedge-product}).
+
+\begin{propbox}[Pullback Preserves Wedge Products]\thmlabel{prop:linear-pullback-wedge}
+Let $F : V \to W$ be linear, $\alpha \in \Lambda^k W^*$ and $\beta \in \Lambda^l W^*$. Then
+\[
+F^*(\alpha \wedge \beta) = (F^*\alpha) \wedge (F^*\beta) .
+\]
+\leeref{cf.\ Lemma 14.16(b)}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture 31 gave the idea: expand by shuffles, with an $F$ inside every argument; written out.)} Let $v^1, \ldots, v^{k+l} \in V$. By Definition~\ref{def:linear-pullback}, then Definition~\ref{def:wedge-product} applied to the vectors $F v^1, \ldots, F v^{k+l}$ of $W$, then Definition~\ref{def:linear-pullback} for $\alpha$ and for $\beta$, then Definition~\ref{def:wedge-product} in $V$:
+\[
+\begin{aligned}
+F^*(\alpha \wedge \beta)(v^1, \ldots, v^{k+l}) &= (\alpha \wedge \beta)\big(F v^1, \ldots, F v^{k+l}\big) \\
+&= \sum_{\sigma \in \mathrm{Sh}(k, l)} \sgn(\sigma)\, \alpha\big(F v^{\sigma(1)}, \ldots, F v^{\sigma(k)}\big)\, \beta\big(F v^{\sigma(k+1)}, \ldots, F v^{\sigma(k+l)}\big) \\
+&= \sum_{\sigma \in \mathrm{Sh}(k, l)} \sgn(\sigma)\, (F^*\alpha)\big(v^{\sigma(1)}, \ldots, v^{\sigma(k)}\big)\, (F^*\beta)\big(v^{\sigma(k+1)}, \ldots, v^{\sigma(k+l)}\big) \\
+&= \big((F^*\alpha) \wedge (F^*\beta)\big)(v^1, \ldots, v^{k+l}) .
+\end{aligned}
+\]
+For $k = 0$ or $l = 0$ this is the linearity of $F^*$, since the wedge product with a scalar is multiplication by it.
+\end{proof}
+
+\textbf{Transcription note (Lecture 31).} The board wrote $\alpha \in \Lambda^k W$, $\beta \in \Lambda^l W$; the forms are $\alpha \in \Lambda^k W^*$ and $\beta \in \Lambda^l W^*$, as in the remark \emph{Notation in This Section}.
+
+% ============================================================================
+% Lecture 31 (Mon Nov 16, 2026): differential forms on manifolds
+% ============================================================================
+
+\section{Differential Forms on Manifolds}\label{sec:forms-manifolds}
+
+\roadmark{Stage: forms}{A $k$-form on a manifold is a linear $k$-form on each tangent space; smoothness through chart components; the bundle $\Lambda^k T^*M$; pullbacks by smooth maps, computed by substitution.}
+
+\textit{(Lecture 31.)} The linear algebra of \ref{sec:multilinear}--\ref{sec:linear-pullback} is now put to use. The vector space $V$ was always meant to be a tangent space, $V = T_pM$, and all of that linear algebra is done at each point of a manifold. Throughout, $M$ is a smooth manifold of dimension $m$.
+
+\begin{defbox}[$k$-Form on a Manifold]\deflabel{def:k-form-manifold}
+Let $M$ be a smooth manifold. A \textbf{$k$-form} $\omega$ on $M$ is an assignment
+\[
+M \ni p \longmapsto \omega_p \in \Lambda^k T_p^*M ,
+\]
+of a linear $k$-form on $T_pM$ (Definition~\ref{def:lambda-k}, with $V = T_pM$ and $V^* = T_p^*M$) to every point of $M$.
+\leeref{Ch.~14, \emph{Differential Forms on Manifolds}}
+\end{defbox}
+
+\begin{defbox}[Degree of a Form]\deflabel{def:form-degree}
+The \textbf{degree} of a $k$-form $\omega$ on $M$ (Definition~\ref{def:k-form-manifold}) is the number $k$. It is written $|\omega| = k$.
+\end{defbox}
+
+No smoothness is required yet; smooth forms come next. The case $k = 1$ was seen in September: an assignment of a covector to each point is a section of $T^*M$, and a smooth one is a one-form (Definition~\ref{def:one-form}); this is its version in arbitrary degree. For $k = 0$, $\Lambda^0 T_p^*M = \mathbb{R}$, and a $0$-form assigns a number to each point: it is a function on $M$. The notation $|\omega|$ for the degree is not Lee's, but it is used in other books. Notation, normalizations and sign conventions vary a lot from book to book in this subject (and more so in MATH~635), down to which index of a matrix labels the rows; so the conventions of the book at hand have to be checked before its formulas are used.
+
+\emph{Coordinates.} Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart and $q \in U$. The coordinate vectors $\partial/\partial x^1|_q, \ldots, \partial/\partial x^m|_q$ form a basis of $T_qM$, with dual basis $dx^1|_q, \ldots, dx^m|_q$ of $T_q^*M$ (Lemma~\ref{lem:df-coords}). By Propositions~\ref{prop:dim-k-forms} and~\ref{prop:wedge-properties}(4), for $A = \{a_1 < \cdots < a_k\} \subseteq \{1, \ldots, m\}$ the forms
+\[
+dx^A\big|_q = dx^{a_1}\big|_q \wedge \cdots \wedge dx^{a_k}\big|_q ,
+\]
+the elementary $k$-forms $\varepsilon^A$ of Definition~\ref{def:epsilon-A} for this dual basis, form a basis of $\Lambda^k T_q^*M$. The assignment $q \mapsto dx^A|_q$ is a $k$-form on $U$, written $dx^A$.
+
+\begin{defbox}[Components of a $k$-Form in a Chart]\deflabel{def:k-form-components}
+Let $\omega$ be a $k$-form on $M$ and $(U, \varphi = (x^1, \ldots, x^m))$ a smooth chart. For each $q \in U$ write
+\[
+\omega_q = \sum_A f_A(q)\, dx^A\big|_q , \qquad f_A(q) = \omega_q\Big( \frac{\partial}{\partial x^{a_1}}\Big|_q, \ldots, \frac{\partial}{\partial x^{a_k}}\Big|_q \Big) ,
+\]
+the sum over all $A = \{a_1 < \cdots < a_k\} \subseteq \{1, \ldots, m\}$ (the formula for $f_A(q)$ is Proposition~\ref{prop:dim-k-forms}). This defines, for every such $A$, a \textbf{component function} $f_A : U \to \mathbb{R}$ of $\omega$ in the chart.
+\leeref{Ch.~14, \emph{Differential Forms on Manifolds}}
+\end{defbox}
+
+\begin{defbox}[Smooth $k$-Form]\deflabel{def:smooth-k-form}
+A $k$-form $\omega$ on $M$ is \textbf{smooth} ($C^\infty$) if for every $p \in M$ there is a smooth chart $(U, \varphi = (x^1, \ldots, x^m))$ with $p \in U$ such that every component function of $\omega$ in it is smooth: $f_A \in C^\infty(U)$ for every $A$.
+\leeref{Ch.~14, \emph{Differential Forms on Manifolds}}
+\end{defbox}
+
+This is the criterion for vector fields (Proposition~\ref{prop:vf-coords}) and for one-forms (Proposition~\ref{prop:one-form-coords}(3)), and for $k = 1$ it is that criterion, since $dx^{\{j\}} = dx^j$ and $f_{\{j\}} = \theta_j$. The definition asks for one good chart at each point. By the next two lemmas, the components are then smooth in every chart, as for vector fields.
+
+\begin{lembox}[Change of Frame]\thmlabel{lem:dx-dy-change}
+Let $(U, \varphi = (x^1, \ldots, x^m))$ and $(V, \psi = (y^1, \ldots, y^m))$ be smooth charts of $M$. For every $k$-element subset $B = \{b_1 < \cdots < b_k\}$ of $\{1, \ldots, m\}$, at every $q \in U \cap V$,
+\[
+dy^B\big|_q = \sum_A \det\Big( \frac{\partial y^{b_i}}{\partial x^{a_j}}(q) \Big)_{i, j = 1, \ldots, k}\; dx^A\big|_q ,
+\]
+the sum over all $k$-element subsets $A = \{a_1 < \cdots < a_k\}$ of $\{1, \ldots, m\}$, with row index $i$ and column index $j$. The coefficients are smooth functions on $U \cap V$.
+\leeref{Ch.~14, \emph{Differential Forms on Manifolds}}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture 31 wrote the formula, from the case $k = 1$, $dy^j = \sum_i \frac{\partial y^j}{\partial x^i}\, dx^i$ (Lemma~\ref{lem:df-coords}), and from the linear algebra at the beginning of the lecture, leaving its verification as a check; verified here.)} Fix $q \in U \cap V$ and apply Proposition~\ref{prop:linear-pullback-components} to the identity map $\mathrm{id} : T_qM \to T_qM$, with the basis $e_i = \partial/\partial x^i|_q$ (dual basis $\varepsilon^i = dx^i|_q$) on the domain and the basis $f_j = \partial/\partial y^j|_q$ (dual basis $\phi^j = dy^j|_q$, Lemma~\ref{lem:df-coords}) on the target. Since $\mathrm{id}^*$ is the identity of $\Lambda^k T_q^*M$, the proposition expands $dy^B|_q = \mathrm{id}^*(dy^B|_q)$ in the basis $dx^A|_q$, with coefficients
+\[
+\det\Big( dy^{b_i}\big|_q \Big( \frac{\partial}{\partial x^{a_j}}\Big|_q \Big) \Big)_{i, j} = \det\Big( \frac{\partial y^{b_i}}{\partial x^{a_j}}(q) \Big)_{i, j}
+\]
+by Proposition~\ref{prop:df-derivation}. For $k = 1$ this is the formula for $dy^j$ again, which is the check made in the lecture.
+
+\emph{Smoothness.} The chart $\varphi$ restricts to a smooth chart on the open set $U \cap V$ (Lemma~\ref{lem:smooth-chart-modify}(1)), and $y^b$ is smooth there, so each $\partial y^b/\partial x^a$ is smooth on $U \cap V$ (Lemma~\ref{lem:partials-smooth}). A $k \times k$ determinant is a polynomial in its entries, so the coefficients are smooth.
+\end{proof}
+
+\textbf{Transcription note (Lecture 31).} The board wrote $\det\big(\partial y^{b_i}/\partial x^a\big)$; the column index is $a_j$, as in the lemma. The formula checked out.
+
+So the change of basis functions, from the frame $\{dx^A\}_A$ to the frame $\{dy^B\}_B$ (such families of sections are called \emph{frames}), are smooth functions on $U \cap V$.
+
+\begin{lembox}[Smoothness in Every Chart]\thmlabel{lem:k-form-smooth-any-chart}
+A $k$-form $\omega$ on $M$ is smooth (Definition~\ref{def:smooth-k-form}) if and only if for every smooth chart $(V, \psi = (y^1, \ldots, y^m))$ the components $g_B$ of $\omega$ with respect to $\{dy^B\}_B$, $\omega_q = \sum_B g_B(q)\, dy^B|_q$, are smooth functions on $V$.
+\leeref{Ch.~14, \emph{Differential Forms on Manifolds}}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture 31 gave the reason, the change of frame; the details are filled in.)} If the components are smooth in every chart, then in particular in some chart at each point, so $\omega$ is smooth. Conversely, let $\omega$ be smooth and $(V, \psi)$ a chart. Smoothness is local, so it suffices to show that each $g_B$ is smooth near each $q_0 \in V$. By Definition~\ref{def:smooth-k-form} there is a chart $(U, \varphi = (x^1, \ldots, x^m))$ at $q_0$ in which the components $f_A$ of $\omega$ are smooth. On $U \cap V$, Lemma~\ref{lem:dx-dy-change} with the two charts exchanged gives $dx^A|_q = \sum_B \det\big(\partial x^{a_i}/\partial y^{b_j}(q)\big)\, dy^B|_q$, so
+\[
+\omega_q = \sum_A f_A(q)\, dx^A\big|_q = \sum_B \Big( \sum_A f_A(q)\, \det\Big( \frac{\partial x^{a_i}}{\partial y^{b_j}}(q) \Big)_{i, j} \Big)\, dy^B\big|_q \qquad (q \in U \cap V) .
+\]
+The $dy^B|_q$ form a basis of $\Lambda^k T_q^*M$, so the coefficients are unique, and $g_B = \sum_A f_A \det\big(\partial x^{a_i}/\partial y^{b_j}\big)$ on $U \cap V$: a sum of products of smooth functions. So $g_B$ is smooth on the neighbourhood $U \cap V$ of $q_0$.
+\end{proof}
+
+\emph{The bundle of $k$-forms.} Vector fields and one-forms were defined as sections of bundles. So are $k$-forms; the definition through components above only avoids constructing the bundle first. There is a general principle with vector bundles: anything that can be done naturally on a vector space can be done naturally on bundles.
+
+\begin{defbox}[The Bundle of $k$-Forms]\deflabel{def:lambda-k-bundle}
+Let $M$ be a smooth manifold and $k \ge 0$. As a set, copying the cotangent bundle (Definition~\ref{def:cotangent-bundle}),
+\[
+\Lambda^k T^*M = \bigsqcup_{p \in M} \Lambda^k T_p^*M , \qquad \pi : \Lambda^k T^*M \to M, \quad \pi(p, \xi) = p .
+\]
+A $k$-form $\omega$ on $M$ (Definition~\ref{def:k-form-manifold}) is the same thing as a map $M \to \Lambda^k T^*M$, $p \mapsto (p, \omega_p)$, whose composite with $\pi$ is the identity of $M$. For each chart $(U, \varphi = (x^1, \ldots, x^m))$ the forms $dx^A$ are such maps over $U$, $dx^A : U \to \pi^{-1}(U)$.
+\leeref{Ch.~14, \emph{Differential Forms on Manifolds}}
+\end{defbox}
+
+\begin{propbox}[The Smooth Structure of $\Lambda^k T^*M$]\thmlabel{prop:lambda-k-bundle}
+Let $N = \binom{m}{k}$. For each smooth chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ let
+\[
+\hat\varphi : \pi^{-1}(U) \longrightarrow \varphi(U) \times \mathbb{R}^N, \qquad \Big(q, \sum_A \xi_A\, dx^A\big|_q\Big) \longmapsto \big(\varphi(q), (\xi_A)_A\big) .
+\]
+There is a unique topology on $\Lambda^k T^*M$ for which every $\pi^{-1}(U)$ is open and every $\hat\varphi$ is a homeomorphism onto its image; with it and the charts $\hat\varphi$, $\Lambda^k T^*M$ (Definition~\ref{def:lambda-k-bundle}) is a smooth manifold of dimension $m + N$, and $\pi$ is a fibration with fibre $\mathbb{R}^N$ (Definition~\ref{def:fibration}) whose local trivializations are linear isomorphisms on each fibre: a vector bundle of rank $N$, like $TM$ and $T^*M$. The forms $dx^A$ are smooth sections over $U$, and a $k$-form $\omega$ is smooth (Definition~\ref{def:smooth-k-form}) if and only if $\omega : M \to \Lambda^k T^*M$, $p \mapsto (p, \omega_p)$, is a smooth section.
+\leeref{Exercise 14.14; Lemma 10.6}
+\end{propbox}
+
+\begin{proof}
+\textit{(Stated in Lecture 31 without proof, the verification being long but routine; filled in.)} Each $\hat\varphi$ is a bijection onto $\varphi(U) \times \mathbb{R}^N$, since the $dx^A|_q$ form a basis of each fibre $\Lambda^k T_q^*M$, $q \in U$. Apply Lemma~\ref{lem:chart-lemma} with $X = \Lambda^k T^*M$, $n = m + N$ and the maps $\hat\varphi$. Conditions (1), (2), (4) and (5) are checked word for word as in the proof of Proposition~\ref{prop:ctb-topology}, with $T^*U$ replaced by $\pi^{-1}(U)$: $\hat\varphi(\pi^{-1}(U) \cap \pi^{-1}(V)) = \varphi(U \cap V) \times \mathbb{R}^N$ is open, countably many chart domains cover $M$, and points over distinct points of $M$ are separated by charts over disjoint open sets. For (3), let $(V, \psi = (y^j))$ be a second chart, $\tau = \psi \circ \varphi^{-1}$, and $(r, \xi) \in \varphi(U \cap V) \times \mathbb{R}^N$ with $q = \varphi^{-1}(r)$. By Lemma~\ref{lem:dx-dy-change} with the charts exchanged, as in the proof of Lemma~\ref{lem:k-form-smooth-any-chart},
+\[
+\hat\psi \circ \hat\varphi^{-1}(r, \xi) = \Big( \tau(r),\ \Big( \sum_A \xi_A \det\Big( \frac{\partial x^{a_i}}{\partial y^{b_j}}(q) \Big)_{i, j} \Big)_B \Big) ,
+\]
+smooth in $(r, \xi)$, because $q \mapsto \partial x^a/\partial y^b(q)$ is smooth on $U \cap V$ and $\varphi^{-1}$ is smooth. So the lemma gives the topology and the smooth structure. As in Corollary~\ref{cor:ctb-fibration}, $\varphi \circ \pi \circ \hat\varphi^{-1}(r, \xi) = r$, so $\pi$ is smooth, and $\Psi = (\varphi^{-1} \times \mathrm{id}) \circ \hat\varphi : \pi^{-1}(U) \to U \times \mathbb{R}^N$ is a local trivialization which is linear on each fibre. Finally, the coordinate representation of a $k$-form $\omega$ in the charts $\varphi$ and $\hat\varphi$ is $r \mapsto \big(r, (f_A(\varphi^{-1}(r)))_A\big)$, with $f_A$ its components (Definition~\ref{def:k-form-components}); it is smooth exactly when the $f_A$ are smooth on $U$. For $\omega = dx^A$ the components are constant, $0$ or $1$. Since smoothness of a map is local, $\omega$ is a smooth section exactly when its components are smooth in a chart at each point.
+\end{proof}
+
+In this terminology a smooth $k$-form is a smooth section of that bundle. The practical way of knowing when a section is smooth is Definition~\ref{def:smooth-k-form}: its coefficients with respect to the frames $\{dx^A\}$ are smooth. The transition functions of the bundle are the change of frame functions of Lemma~\ref{lem:dx-dy-change}, and their smoothness is what gives the smooth structure in the first place.
+
+\begin{defbox}[The Space $\Omega^k(M)$]\deflabel{def:omega-k}
+$\Omega^k(M)$ is the set of all smooth $k$-forms on $M$. In particular
+\[
+\Omega^0(M) = C^\infty(M), \qquad \Omega^1(M) = \{\text{one-forms on } M\} .
+\]
+\leeref{Ch.~14, \emph{Differential Forms on Manifolds}}
+\end{defbox}
+
+The case $k = 0$ has to be included: by definition $\Lambda^0$ is $\mathbb{R}$, so a $0$-form associates a real number to every point, that is, it is a function; it is smooth exactly when the function is (for $k = 0$ the only component is $f_\varnothing = f$, since $dx^\varnothing = 1$). $\Omega^1(M)$ is the space $C^\infty(M, T^*M)$ of Definition~\ref{def:one-forms-space}. By Corollary~\ref{cor:forms-above-dimension}, $\Omega^k(M) = \{0\}$ for $k > m$.
+
+\textit{Not from lecture: the operations on forms.} The example at the end of the lecture adds forms, multiplies them by functions and wedges them; these are pointwise operations, recorded here.
+
+\begin{defbox}[Sums and Function Multiples of Forms]\deflabel{def:forms-operations}
+\textit{(Not from lecture; filled in.)} Let $\omega, \omega'$ be $k$-forms on $M$, $f : M \to \mathbb{R}$ a function and $c \in \mathbb{R}$. The $k$-forms $\omega + c\,\omega'$ and $f\omega$ are defined at every $p \in M$ with the operations of $\Lambda^k T_p^*M$ (Definition~\ref{def:lambda-k}):
+\[
+(\omega + c\,\omega')_p = \omega_p + c\,\omega'_p, \qquad (f\omega)_p = f(p)\,\omega_p .
+\]
+The same formulas are used for forms given on an open subset $U \subseteq M$; so $\omega = \sum_A f_A\, dx^A$ on $U$ in Definition~\ref{def:k-form-components}.
+\leeref{Ch.~14, \emph{Differential Forms on Manifolds}}
+\end{defbox}
+
+\begin{defbox}[Wedge Product of Forms on a Manifold]\deflabel{def:forms-wedge}
+\textit{(Not from lecture; filled in.)} Let $\omega$ be a $k$-form and $\eta$ an $l$-form on $M$. Their \textbf{wedge product} is the $(k + l)$-form $\omega \wedge \eta$ given at every $p \in M$ by the wedge product of Definition~\ref{def:wedge-product}:
+\[
+(\omega \wedge \eta)_p = \omega_p \wedge \eta_p .
+\]
+For a $0$-form $f$, $f \wedge \eta = f\eta$. The same formula is used on an open subset $U \subseteq M$; so $dx^A = dx^{a_1} \wedge \cdots \wedge dx^{a_k}$ as $k$-forms on $U$.
+\leeref{Ch.~14, \emph{Differential Forms on Manifolds}}
+\end{defbox}
+
+The properties of Proposition~\ref{prop:wedge-properties} hold pointwise, hence for forms on $M$: the wedge product is bilinear (also over functions: $(f\omega) \wedge \eta = f\, (\omega \wedge \eta) = \omega \wedge (f\eta)$, since $f(p)$ is a scalar at each point), associative, and $\eta \wedge \omega = (-1)^{kl}\, \omega \wedge \eta$. In particular functions, of degree $0$, commute with all forms, and a one-form $\theta$ has $\theta \wedge \theta = 0$ (Corollary~\ref{cor:odd-forms-square-zero}).
+
+\begin{propbox}[Pointwise Operations Preserve Smoothness]\thmlabel{prop:forms-operations-smooth}
+If $\omega, \omega' \in \Omega^k(M)$, $\eta \in \Omega^l(M)$, $f \in C^\infty(M)$ and $c \in \mathbb{R}$, then $\omega + c\,\omega' \in \Omega^k(M)$, $f\omega \in \Omega^k(M)$ and $\omega \wedge \eta \in \Omega^{k+l}(M)$. In particular $\Omega^k(M)$ is a vector space.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Fix $p \in M$ and a chart $(U, \varphi = (x^i))$ at $p$. By Lemma~\ref{lem:k-form-smooth-any-chart} the components $f_A$, $f'_A$ of $\omega$, $\omega'$ and $h_C$ of $\eta$ in this chart are smooth on $U$. The components of $\omega + c\,\omega'$ and of $f\omega$ are $f_A + c f'_A$ and $f f_A$, smooth. For the wedge product, bilinearity gives $\omega \wedge \eta = \sum_{A, C} f_A h_C\, dx^A \wedge dx^C$ on $U$, with $C$ running over the $l$-element subsets. By associativity, $dx^A \wedge dx^C = dx^{a_1} \wedge \cdots \wedge dx^{a_k} \wedge dx^{c_1} \wedge \cdots \wedge dx^{c_l}$. If $A \cap C \neq \varnothing$, two factors are equal; moving them next to each other changes at most the sign (graded anticommutativity for one-forms, $dx^a \wedge dx^b = -dx^b \wedge dx^a$), and then $dx^c \wedge dx^c = 0$ makes the product $0$. If $A \cap C = \varnothing$, sorting the $k + l$ factors into increasing order by exchanges of neighbours gives $dx^A \wedge dx^C = \pm\, dx^{A \cup C}$, with a sign that depends only on $A$ and $C$, not on the point. So each component of $\omega \wedge \eta$ is a finite sum of terms $\pm f_A h_C$, smooth on $U$. As $p$ was arbitrary, the forms are smooth by Definition~\ref{def:smooth-k-form}.
+\end{proof}
+
+\textit{(Lecture 31, as a definition and a lemma combined.)} A smooth map pulls forms back, pointwise, by the pullback of linear forms through its differential.
+
+\begin{defbox}[Pullback of $k$-Forms]\deflabel{def:pullback-k-form}
+Let $F : M \to N$ be a smooth map. For a $k$-form $\omega$ on $N$, the \textbf{pullback} $F^*\omega$ is the $k$-form on $M$ given at each $p \in M$ by
+\[
+(F^*\omega)_p = (dF_p)^*\, \omega_{F(p)}, \qquad \text{that is,} \qquad (F^*\omega)_p(v^1, \ldots, v^k) = \omega_{F(p)}\big(dF_p v^1, \ldots, dF_p v^k\big) ,
+\]
+where $dF_p : T_pM \to T_{F(p)}N$ is the differential and $(dF_p)^* : \Lambda^k T^*_{F(p)}N \to \Lambda^k T_p^*M$ its pullback (Definition~\ref{def:linear-pullback}).
+\leeref{Ch.~14, \emph{Differential Forms on Manifolds}}
+\end{defbox}
+
+The lecture stated the definition for smooth forms, as a map $F^* : \Omega^k(N) \to \Omega^k(M)$; that $F^*\omega$ is smooth when $\omega$ is, is Proposition~\ref{prop:pullback-k-form-properties}(5) below. The definition is pointwise. Fix $p$; the differential $dF_p$ is a linear map $T_pM \to T_{F(p)}N$, and $\omega_{F(p)}$ is in $\Lambda^k$ of the dual of the target, so it can be pulled back as in \ref{sec:linear-pullback}. For $k = 0$, $(dF_p)^*$ is the identity of $\mathbb{R}$, so $(F^*g)(p) = g(F(p))$: $F^*g = g \circ F$ is the pullback of functions (Definition~\ref{def:pullback-function}). For $k = 1$ it is the pullback of one-forms (Definition~\ref{def:pullback-one-form}). In charts, the matrix of the linear map $dF_p$ is the Jacobian of $F$ (Theorem~\ref{lem:differential-matrix}), and induced coordinates give induced bases $dx^A$, $dy^B$ of the wedges; so the pullback is computed by minors of the Jacobian, part~(4) below. None of these determinants has to be remembered: in practice, by parts (2) and (3), one only substitutes and computes wedges.
+
+\begin{propbox}[Properties of the Pullback of Forms]\thmlabel{prop:pullback-k-form-properties}
+Let $F : M \to N$ be smooth.
+\begin{enumerate}[nosep]
+\item $F^*(\omega + c\,\omega') = F^*\omega + c\, F^*\omega'$ for $k$-forms $\omega, \omega'$ on $N$ and $c \in \mathbb{R}$.
+\item $F^*(\omega \wedge \eta) = F^*\omega \wedge F^*\eta$ for forms $\omega$, $\eta$ on $N$; in particular $F^*(g\,\omega) = (g \circ F)\, F^*\omega$ for a function $g$ on $N$.
+\item $F^*(dg) = d(F^*g)$ for $g \in C^\infty(N)$.
+\item Let $(U, \varphi = (x^1, \ldots, x^m))$ and $(V, \psi = (y^1, \ldots, y^n))$ be smooth charts of $M$ and $N$ with $F(U) \subseteq V$, and $F^j = y^j \circ F$ on $U$. If $\omega = \sum_B g_B\, dy^B$ on $V$, then on $U$
+\[
+F^*\omega = \sum_B (g_B \circ F)\; dF^{b_1} \wedge \cdots \wedge dF^{b_k} = \sum_A \Big( \sum_B (g_B \circ F)\, \det\Big( \frac{\partial F^{b_i}}{\partial x^{a_j}} \Big)_{i, j = 1, \ldots, k} \Big)\, dx^A .
+\]
+\item If $\omega \in \Omega^k(N)$, then $F^*\omega \in \Omega^k(M)$; so $F^* : \Omega^k(N) \to \Omega^k(M)$ is a linear map.
+\end{enumerate}
+\leeref{Lemma 14.16}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture 31 observed (3), by the chain rule, and (2), from its linear version; the rest is filled in.)} (1) and (2) hold at each point $p$, by Lemma~\ref{lem:linear-pullback-basic}(2) and Proposition~\ref{prop:linear-pullback-wedge} for the linear map $dF_p$. For a function $g$ (a $0$-form), $g\,\omega = g \wedge \omega$ and $F^*g = g \circ F$, so $F^*(g\,\omega) = (g \circ F) \wedge F^*\omega = (g \circ F)\, F^*\omega$.
+
+(3) is Corollary~\ref{cor:pullback-d-forms} (Lecture~15), a consequence of the chain rule.
+
+(4) The forms on both sides are determined pointwise, so the open subset $U$ may be used in place of $M$ and the map $F|_U : U \to V$ in place of $F$. By (1) and (2), $F^*\big(g_B\, dy^{b_1} \wedge \cdots \wedge dy^{b_k}\big) = (g_B \circ F)\, F^*(dy^{b_1}) \wedge \cdots \wedge F^*(dy^{b_k})$, and by (3), applied to the function $y^b \in C^\infty(V)$, $F^*(dy^b) = d(y^b \circ F) = dF^b$. Summing over $B$ gives the first equality. For the second, fix $p \in U$. By Proposition~\ref{prop:linear-pullback-components} for the linear map $dF_p$, with the bases $\partial/\partial x^a|_p$ and $\partial/\partial y^b|_{F(p)}$ and their dual bases (Lemma~\ref{lem:df-coords}), the $dx^A|_p$-coefficient of $(dF_p)^*\big(dy^B|_{F(p)}\big)$ is the minor with entries
+\[
+\begin{aligned}
+dy^{b_i}\big|_{F(p)}\Big( dF_p \frac{\partial}{\partial x^{a_j}}\Big|_p \Big) &= \Big( F_p^*\, dy^{b_i}\big|_{F(p)} \Big)\Big( \frac{\partial}{\partial x^{a_j}}\Big|_p \Big) \\
+&= dF^{b_i}_p\Big( \frac{\partial}{\partial x^{a_j}}\Big|_p \Big) = \frac{\partial F^{b_i}}{\partial x^{a_j}}(p) ,
+\end{aligned}
+\]
+by Definition~\ref{def:pullback-covector}, Proposition~\ref{prop:pullback-d} and Proposition~\ref{prop:df-derivation}: the minor of the Jacobian $\big(\partial F^j/\partial x^i(p)\big)$ of $F$ (Theorem~\ref{lem:differential-matrix}) in the rows $b_1, \ldots, b_k$ and the columns $a_1, \ldots, a_k$. Since, by (1),
+\[
+(F^*\omega)_p = \sum_B g_B(F(p))\; (dF_p)^*\big(dy^B|_{F(p)}\big) ,
+\]
+this is the second equality at $p$.
+
+(5) Let $p \in M$. By Lemma~\ref{lem:charts-around-map} there are charts $(U, \varphi)$ at $p$ and $(V, \psi)$ at $F(p)$ with $F(U) \subseteq V$. The components $g_B$ of $\omega$ are smooth on $V$ (Lemma~\ref{lem:k-form-smooth-any-chart}), so $g_B \circ F$ is smooth on $U$ (Lemma~\ref{lem:composition-smooth}); each $F^b = y^b \circ F$ is smooth on $U$, so $\partial F^b/\partial x^a$ is smooth on $U$ (Lemma~\ref{lem:partials-smooth}). By (4) the components of $F^*\omega$ in the chart $(U, \varphi)$ are sums of products of these, hence smooth, and $F^*\omega$ is smooth by Definition~\ref{def:smooth-k-form}. Linearity is (1).
+\end{proof}
+
+\begin{exbox}[A Pullback from $\mathbb{R}^2$ to $\mathbb{R}^3$]\exlabel{ex:pullback-r2-r3}
+\textit{(Lecture 31.)} Let $F : \mathbb{R}^2 \to \mathbb{R}^3$,
+\[
+F(u, v) = \Big( u + v,\ u - v,\ \frac{u^2 + v^2}{2} \Big) , \qquad \omega = xy\; dy \wedge dz \in \Omega^2(\mathbb{R}^3) .
+\]
+(Different letters are used for the coordinates on the two sides: $(u, v)$ on $\mathbb{R}^2$ and $(x, y, z)$ on $\mathbb{R}^3$.) $F^*\omega$ is a two-form on $\mathbb{R}^2$, a top-degree form: pointwise there is only one basis element (the bundle $\Lambda^2 T^*\mathbb{R}^2$ has rank $\binom{2}{2} = 1$), so $F^*\omega = (\text{some function})\; du \wedge dv$. To find it, write the map as a change of variables,
+\[
+x = u + v, \qquad y = u - v, \qquad z = \frac{u^2 + v^2}{2} ,
+\]
+the components $F^1, F^2, F^3$ of $F$. Then $dy = du - dv$ and $dz = u\, du + v\, dv$, and substituting,
+\[
+\begin{aligned}
+F^*\omega &= (u + v)(u - v)\; (du - dv) \wedge (u\, du + v\, dv) \\
+&= (u^2 - v^2)\, \big( v\; du \wedge dv - u\; dv \wedge du \big) \\
+&= (u^2 - v^2)(u + v)\; du \wedge dv .
+\end{aligned}
+\]
+\leeref{cf.\ Example 14.18}
+\end{exbox}
+
+\begin{proof}[Justification]
+\textit{(Lecture 31 did the computation first and justified it afterwards in words; the justification is written out.)} The first line is Proposition~\ref{prop:pullback-k-form-properties}(4) with $\omega = g\, dy \wedge dz$, $g = xy$ and $B = \{2, 3\}$: $g \circ F = (u + v)(u - v)$, and $dF^2 = d(u - v) = du - dv$, $dF^3 = d\big(\tfrac{u^2 + v^2}{2}\big) = u\, du + v\, dv$ by Lemma~\ref{lem:df-coords}. For the second, distribute the wedge product (bilinearity): $du \wedge du = dv \wedge dv = 0$ (Corollary~\ref{cor:odd-forms-square-zero}), so only the cross terms remain, $du \wedge (v\, dv) = v\, du \wedge dv$ (functions commute with forms, being forms of even degree) and $(-dv) \wedge (u\, du) = -u\, dv \wedge du$. For the third, $dv \wedge du = -du \wedge dv$, so the bracket is $(v + u)\, du \wedge dv$.
+
+\emph{Check with the determinant formula.} By the second equality of Proposition~\ref{prop:pullback-k-form-properties}(4), with $A = \{1, 2\}$ and $B = \{2, 3\}$, the coefficient is $g \circ F$ times the minor of the Jacobian of $F$ in the rows $2, 3$:
+\[
+\det \begin{pmatrix} \partial F^2/\partial u & \partial F^2/\partial v \\ \partial F^3/\partial u & \partial F^3/\partial v \end{pmatrix} = \det \begin{pmatrix} 1 & -1 \\ u & v \end{pmatrix} = u + v .
+\]
+The Jacobians of the general formula are all contained in the computation above: substituting $x = F^1$, $y = F^2$, $z = F^3$ and computing $dF^2 \wedge dF^3$ computes this minor of the Jacobian.
+\end{proof}
+
+\textbf{Transcription note (Lecture 31).} The board first wrote $dz = u\, du + 2v\, dv$, and the $2$ was then struck out. The correct $dz = u\, du + v\, dv$ is the one used in the computation.
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\fill[gray!8] (-1.100,-1.100) rectangle (1.100,1.100);
+\draw[blue!50, thin] (-1.100,-1.100) -- (-1.100,1.100);
+\draw[red!50, thin] (-1.100,-1.100) -- (1.100,-1.100);
+\draw[blue!50, thin] (-0.550,-1.100) -- (-0.550,1.100);
+\draw[red!50, thin] (-1.100,-0.550) -- (1.100,-0.550);
+\draw[blue!50, thin] (0.000,-1.100) -- (0.000,1.100);
+\draw[red!50, thin] (-1.100,0.000) -- (1.100,0.000);
+\draw[blue!50, thin] (0.550,-1.100) -- (0.550,1.100);
+\draw[red!50, thin] (-1.100,0.550) -- (1.100,0.550);
+\draw[blue!50, thin] (1.100,-1.100) -- (1.100,1.100);
+\draw[red!50, thin] (-1.100,1.100) -- (1.100,1.100);
+\draw[->, gray!70] (-1.485,0.000) -- (1.540,0.000) node[right, font=\scriptsize] {$u$};
+\draw[->, gray!70] (0.000,-1.485) -- (0.000,1.540) node[above, font=\scriptsize] {$v$};
+\draw[->, very thick, red!70!black] (0.660,-0.330) -- (1.155,-0.330) node[below, font=\scriptsize] {$\partial_u$};
+\draw[->, very thick, blue!70!black] (0.660,-0.330) -- (0.660,0.165) node[left, font=\scriptsize] {$\partial_v$};
+\fill (0.660,-0.330) circle (1.5pt) node[below left, font=\scriptsize] {$p$};
+\node[font=\scriptsize] at (0.000,-1.925) {$\mathbb{R}^2$, coordinates $(u, v)$};
+\draw[->, thick] (2.0,0.3) to[bend left=20] node[above, font=\scriptsize] {$F$} (3.6,0.3);
+\draw[->, gray!60] (7.000,0.000) -- (6.549,-1.202) node[below left, font=\scriptsize] {$x$};
+\draw[->, gray!60] (7.000,0.000) -- (9.659,-0.220) node[right, font=\scriptsize] {$y$};
+\draw[->, gray!60] (7.000,0.000) -- (7.000,1.501) node[above, font=\scriptsize] {$z$};
+\draw[blue!50, thin] plot[smooth] coordinates {(7.347,1.808) (7.251,1.705) (7.154,1.609) (7.058,1.519) (6.961,1.435) (6.865,1.358) (6.768,1.286) (6.672,1.221) (6.575,1.161) (6.478,1.108) (6.382,1.061) (6.285,1.020) (6.189,0.985) (6.092,0.957) (5.996,0.934) (5.899,0.918) (5.803,0.907) (5.706,0.903) (5.610,0.905) (5.513,0.913) (5.417,0.928) (5.320,0.948) (5.223,0.975) (5.127,1.007) (5.030,1.046)};
+\draw[red!50, thin] plot[smooth] coordinates {(7.347,1.808) (7.415,1.692) (7.482,1.582) (7.550,1.479) (7.618,1.381) (7.685,1.290) (7.753,1.205) (7.820,1.126) (7.888,1.053) (7.956,0.986) (8.023,0.925) (8.091,0.871) (8.158,0.822) (8.226,0.780) (8.294,0.744) (8.361,0.714) (8.429,0.690) (8.496,0.672) (8.564,0.661) (8.632,0.655) (8.699,0.656) (8.767,0.663) (8.834,0.676) (8.902,0.695) (8.970,0.720)};
+\draw[blue!50, thin] plot[smooth] coordinates {(7.753,1.205) (7.656,1.102) (7.560,1.006) (7.463,0.916) (7.367,0.832) (7.270,0.755) (7.174,0.683) (7.077,0.618) (6.981,0.558) (6.884,0.505) (6.787,0.458) (6.691,0.417) (6.594,0.382) (6.498,0.354) (6.401,0.331) (6.305,0.315) (6.208,0.304) (6.112,0.300) (6.015,0.302) (5.919,0.310) (5.822,0.325) (5.726,0.345) (5.629,0.372) (5.533,0.404) (5.436,0.443)};
+\draw[red!50, thin] plot[smooth] coordinates {(6.768,1.286) (6.836,1.170) (6.903,1.061) (6.971,0.957) (7.038,0.860) (7.106,0.768) (7.174,0.683) (7.241,0.604) (7.309,0.531) (7.376,0.464) (7.444,0.404) (7.512,0.349) (7.579,0.301) (7.647,0.259) (7.714,0.222) (7.782,0.192) (7.850,0.169) (7.917,0.151) (7.985,0.139) (8.052,0.134) (8.120,0.134) (8.188,0.141) (8.255,0.154) (8.323,0.173) (8.390,0.198)};
+\draw[blue!50, thin] plot[smooth] coordinates {(8.158,0.822) (8.062,0.720) (7.965,0.624) (7.869,0.534) (7.772,0.450) (7.676,0.372) (7.579,0.301) (7.483,0.235) (7.386,0.176) (7.290,0.123) (7.193,0.076) (7.097,0.035) (7.000,0.000) (6.903,-0.029) (6.807,-0.051) (6.710,-0.068) (6.614,-0.078) (6.517,-0.082) (6.421,-0.080) (6.324,-0.072) (6.228,-0.058) (6.131,-0.037) (6.035,-0.011) (5.938,0.022) (5.842,0.061)};
+\draw[red!50, thin] plot[smooth] coordinates {(6.189,0.985) (6.256,0.870) (6.324,0.760) (6.392,0.656) (6.459,0.559) (6.527,0.467) (6.594,0.382) (6.662,0.303) (6.730,0.230) (6.797,0.164) (6.865,0.103) (6.932,0.048) (7.000,0.000) (7.068,-0.042) (7.135,-0.078) (7.203,-0.108) (7.270,-0.132) (7.338,-0.150) (7.406,-0.162) (7.473,-0.167) (7.541,-0.166) (7.608,-0.160) (7.676,-0.147) (7.744,-0.128) (7.811,-0.102)};
+\draw[blue!50, thin] plot[smooth] coordinates {(8.564,0.661) (8.467,0.558) (8.371,0.462) (8.274,0.372) (8.178,0.289) (8.081,0.211) (7.985,0.139) (7.888,0.074) (7.792,0.014) (7.695,-0.039) (7.599,-0.086) (7.502,-0.127) (7.406,-0.162) (7.309,-0.190) (7.213,-0.213) (7.116,-0.229) (7.019,-0.239) (6.923,-0.244) (6.826,-0.242) (6.730,-0.233) (6.633,-0.219) (6.537,-0.199) (6.440,-0.172) (6.344,-0.140) (6.247,-0.101)};
+\draw[red!50, thin] plot[smooth] coordinates {(5.610,0.905) (5.677,0.789) (5.745,0.680) (5.812,0.576) (5.880,0.479) (5.948,0.387) (6.015,0.302) (6.083,0.223) (6.150,0.150) (6.218,0.084) (6.286,0.023) (6.353,-0.032) (6.421,-0.080) (6.488,-0.122) (6.556,-0.158) (6.624,-0.188) (6.691,-0.212) (6.759,-0.230) (6.826,-0.242) (6.894,-0.247) (6.962,-0.246) (7.029,-0.240) (7.097,-0.227) (7.164,-0.208) (7.232,-0.182)};
+\draw[blue!50, thin] plot[smooth] coordinates {(8.970,0.720) (8.873,0.618) (8.777,0.522) (8.680,0.432) (8.583,0.348) (8.487,0.270) (8.390,0.198) (8.294,0.133) (8.197,0.074) (8.101,0.020) (8.004,-0.027) (7.908,-0.068) (7.811,-0.102) (7.715,-0.131) (7.618,-0.154) (7.522,-0.170) (7.425,-0.180) (7.328,-0.184) (7.232,-0.182) (7.135,-0.174) (7.039,-0.160) (6.942,-0.140) (6.846,-0.113) (6.749,-0.081) (6.653,-0.042)};
+\draw[red!50, thin] plot[smooth] coordinates {(5.030,1.046) (5.098,0.930) (5.166,0.820) (5.233,0.717) (5.301,0.619) (5.368,0.528) (5.436,0.443) (5.504,0.364) (5.571,0.291) (5.639,0.224) (5.706,0.164) (5.774,0.109) (5.842,0.061) (5.909,0.018) (5.977,-0.018) (6.044,-0.048) (6.112,-0.072) (6.180,-0.089) (6.247,-0.101) (6.315,-0.106) (6.382,-0.106) (6.450,-0.099) (6.518,-0.086) (6.585,-0.067) (6.653,-0.042)};
+\draw[->, very thick, red!70!black] (7.834,-0.013) -- (8.483,-0.025) node[above right=-1pt, font=\scriptsize] {$dF_p(\partial_u) = (1, 1, u)$};
+\draw[->, very thick, blue!70!black] (7.834,-0.013) -- (6.907,-0.530) node[below left=-1pt, font=\scriptsize] {$dF_p(\partial_v) = (1, -1, v)$};
+\fill (7.834,-0.013) circle (1.5pt) node[above left=-1pt, font=\scriptsize] {$F(p)$};
+\node[font=\scriptsize, align=center] at (7.0,-1.95) {$\mathbb{R}^3$: the image is part of the paraboloid $z = (x^2 + y^2)/4$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Example~\ref{ex:pullback-r2-r3} at the point $p = (u, v) = (0.6, -0.3)$. $F$ maps the square $[-1, 1]^2$ onto a piece of the paraboloid $z = (x^2 + y^2)/4$ (since $x^2 + y^2 = 2(u^2 + v^2)$); the grid lines $u = \mathrm{const}$ (blue) and $v = \mathrm{const}$ (red) go to curves on it. The differential pushes the coordinate vectors to the tangent vectors $dF_p(\partial_u) = \partial F/\partial u = (1, 1, u)$ and $dF_p(\partial_v) = (1, -1, v)$ of the surface, and by Definition~\ref{def:pullback-k-form}, $(F^*\omega)_p(\partial_u, \partial_v) = \omega_{F(p)}\big(dF_p \partial_u, dF_p \partial_v\big) = xy\, \big(1 \cdot v - u \cdot (-1)\big) = (u^2 - v^2)(u + v)$, the coefficient found above.
+%% <<< END ADDED
+
+\textit{Not from lecture: top degree on manifolds.} For a map between manifolds of the same dimension, part~(4) has one term, the boxed formula of Proposition~\ref{prop:top-degree-pullback} at every point; this is the formula that will make integrals of top-degree forms independent of the chart.
+
+\begin{corbox}[Pullback of Top-Degree Forms]\thmlabel{cor:top-degree-pullback-manifold}
+\textit{(Not from lecture.)} Let $F : M \to N$ be smooth with $\dim M = \dim N = m$, and let $(U, (x^i))$, $(V, (y^j))$ be smooth charts with $F(U) \subseteq V$. For a function $g$ on $V$, on $U$
+\[
+F^*\big( g\; dy^1 \wedge \cdots \wedge dy^m \big) = (g \circ F)\, \det\Big( \frac{\partial F^j}{\partial x^i} \Big)\; dx^1 \wedge \cdots \wedge dx^m ,
+\]
+with the Jacobian of $F$ in these charts. In particular, for two charts at the same points, $dy^1 \wedge \cdots \wedge dy^m = \det\big(\partial y^j/\partial x^i\big)\, dx^1 \wedge \cdots \wedge dx^m$ on $U \cap V$.
+\leeref{Proposition 14.20; Corollary 14.21}
+\end{corbox}
+
+\begin{proof}
+\textit{(Filled in.)} Proposition~\ref{prop:pullback-k-form-properties}(4) with $k = m$ has the single term $A = B = \{1, \ldots, m\}$, whose minor is the whole Jacobian (the determinant of a matrix equals that of its transpose, so it does not matter which index labels rows). That proof uses only the pointwise formulas, so it applies to any function $g$, smooth or not. The second statement is the first for the identity map of $U \cap V$, in the charts $(x^i)$ on the domain and $(y^j)$ on the target; it is also Lemma~\ref{lem:dx-dy-change} with $k = m$.
+\end{proof}
+
+\begin{exbox}[Polar Coordinates]\exlabel{ex:polar-two-form}
+\textit{(Not from lecture.)} On $\mathbb{R}^2$ minus a closed ray from the origin, use the polar coordinates $(r, \vartheta)$ in the domain and $(x, y)$ in the target of the identity map, $x = r\cos\vartheta$, $y = r\sin\vartheta$. Substituting as in Example~\ref{ex:pullback-r2-r3},
+\[
+\begin{aligned}
+dx \wedge dy &= (\cos\vartheta\; dr - r\sin\vartheta\; d\vartheta) \wedge (\sin\vartheta\; dr + r\cos\vartheta\; d\vartheta) \\
+&= r\cos^2\vartheta\; dr \wedge d\vartheta - r\sin^2\vartheta\; d\vartheta \wedge dr = r\; dr \wedge d\vartheta ,
+\end{aligned}
+\]
+and $r = \det \begin{pmatrix} \cos\vartheta & -r\sin\vartheta \\ \sin\vartheta & r\cos\vartheta \end{pmatrix}$ is the Jacobian determinant of Corollary~\ref{cor:top-degree-pullback-manifold}: the factor $r$ of $dx\, dy = r\, dr\, d\vartheta$ in the change of variables formula for double integrals.
+\leeref{Example 14.19}
+\end{exbox}
+
+Still to come: the exterior derivative, which extends $d : \Omega^0(M) \to \Omega^1(M)$ to forms of every degree (Lee, Ch.~14, \emph{The Exterior Derivative}).
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -36288,6 +36782,8 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:two-form-integrand}\ The integrand is a two-form & Chapter 14, \emph{The Wedge Product} \\
 \ref{sec:multilinear}\ Multilinear algebra & Chapter 12, \emph{Symmetric and Alternating Tensors}; Chapter 14, \emph{The Algebra of Alternating Tensors} (Lemma 14.1, Lemma 14.7, Proposition 14.8) \\
 \ref{sec:wedge-product}\ The wedge product & Chapter 14, \emph{The Algebra of Alternating Tensors} (alternation, Proposition 14.3) and \emph{The Wedge Product} (Lemma 14.10, Proposition 14.11; the determinant and Alt conventions); Chapter 12, \emph{Multilinear Algebra} (tensor products) \\
+\ref{sec:linear-pullback}\ Pullbacks of linear forms & Chapter 12, \emph{Pullbacks of Tensor Fields} (the pullback at a point); Chapter 14, Proposition 14.9 \\
+\ref{sec:forms-manifolds}\ Differential forms on manifolds & Chapter 14, \emph{Differential Forms on Manifolds} (Exercise 14.14, Lemma 14.16, Examples 14.18 and 14.19, Proposition 14.20, Corollary 14.21); Chapter 10, Lemma 10.6 (the vector bundle chart lemma) \\
 \bottomrule
 \end{longtable}
 
@@ -36398,11 +36894,11 @@ Proposition 7.11 & Prop.~\ref{prop:subgroup-submanifold-lie} \\
 Proposition 7.26 & Def.~\ref{def:orbit-map} \\
 Example 7.27 & Prop.~\ref{prop:orth-equiv}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:On-smooth}, Cor.~\ref{cor:On-consequences}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
 Example 7.28 & Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
-Example 7.29 & Def.~\ref{def:complex-groups}, Def.~\ref{def:unitary-group}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:Un-smooth}, Cor.~\ref{cor:Un-compact}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
-Example 7.30 & Def.~\ref{def:complex-groups}, Def.~\ref{def:unitary-group}, Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
+Example 7.29 & Def.~\ref{def:complex-groups}, Def.~\ref{def:unitary-group}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:Un-smooth}, Cor.~\ref{cor:Un-compact}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups}, Def.~\ref{def:GL-complex} \\
+Example 7.30 & Def.~\ref{def:complex-groups}, Def.~\ref{def:unitary-group}, Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups}, Def.~\ref{def:GL-complex} \\
 Problem 7-2 & Prop.~\ref{prop:dmu-identity}, Prop.~\ref{prop:dinv-identity} \\
 Problem 7-4 & Prop.~\ref{prop:jacobi}, Cor.~\ref{cor:jacobi-gradient} \\
-Problem 7-22 & Def.~\ref{def:quaternions} \\
+Problem 7-22 & Def.~\ref{def:quaternions}, Def.~\ref{def:quaternion-conjugate-norm}, Def.~\ref{def:pure-imaginary-quaternions} \\
 Proposition 8.1 & Prop.~\ref{prop:vf-coords} \\
 Proposition 8.14 & Lem.~\ref{lem:vf-smooth-criterion} \\
 Proposition 8.15 & Prop.~\ref{prop:derivations-are-fields} \\
@@ -36429,7 +36925,7 @@ Lemma 9.4 & Lem.~\ref{lem:translation-rescaling} \\
 Proposition 9.6 & Lem.~\ref{lem:integral-curves-diffeo}, Prop.~\ref{prop:naturality-integral-curves} \\
 Proposition 9.7 & Thm.~\ref{thm:action-generator} \\
 Example 9.10 & Ex.~\ref{ex:finite-escape} \\
-Theorem 9.12 & Prop.~\ref{prop:global-uniqueness}, Thm.~\ref{thm:maximal-flow}, Def.~\ref{def:maximal-domain}, Prop.~\ref{prop:maximal-curve}, Lem.~\ref{lem:flow-box}, Prop.~\ref{prop:group-law}, Prop.~\ref{prop:complete-flow}, Lem.~\ref{lem:flow-diffeo-Mt} \\
+Theorem 9.12 & Prop.~\ref{prop:global-uniqueness}, Thm.~\ref{thm:maximal-flow}, Def.~\ref{def:maximal-domain}, Prop.~\ref{prop:maximal-curve}, Lem.~\ref{lem:flow-box}, Prop.~\ref{prop:group-law}, Prop.~\ref{prop:complete-flow}, Lem.~\ref{lem:flow-diffeo-Mt}, Def.~\ref{def:flow-domain} \\
 Lemma 9.15 & Lem.~\ref{lem:uniform-time} \\
 Theorem 9.16 & Cor.~\ref{cor:compact-support-complete} \\
 Corollary 9.17 & Thm.~\ref{thm:compact-complete} \\
@@ -36447,6 +36943,7 @@ Problem 9-1 & Cor.~\ref{cor:returning-curve-periodic}, Prop.~\ref{prop:returning
 Problem 9-6 & Thm.~\ref{thm:escape-lemma}, Cor.~\ref{cor:escape-tail} \\
 Problem 9-18 & Ex.~\ref{ex:noncommuting-linear-flows} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
+Lemma 10.6 & Prop.~\ref{prop:lambda-k-bundle} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\
 Proposition 11.8 & Prop.~\ref{prop:double-dual} \\
@@ -36460,13 +36957,20 @@ Lemma 14.1 & Lem.~\ref{lem:alternating-dependent} \\
 Proposition 14.3 & Lem.~\ref{lem:skew-symmetrizer} \\
 Lemma 14.7 & Lem.~\ref{lem:epsilon-A-dual} \\
 Proposition 14.8 & Prop.~\ref{prop:dim-k-forms} \\
+Proposition 14.9 & Prop.~\ref{prop:top-degree-pullback} \\
 Proposition 14.11 & Lem.~\ref{lem:wedge-one-forms-det}, Prop.~\ref{prop:wedge-properties} \\
+Exercise 14.14 & Prop.~\ref{prop:lambda-k-bundle} \\
+Lemma 14.16 & Prop.~\ref{prop:linear-pullback-components}, Prop.~\ref{prop:linear-pullback-wedge}, Prop.~\ref{prop:pullback-k-form-properties} \\
+Example 14.18 & Ex.~\ref{ex:pullback-r2-r3} \\
+Example 14.19 & Ex.~\ref{ex:polar-two-form} \\
+Proposition 14.20 & Prop.~\ref{prop:linear-pullback-components}, Cor.~\ref{cor:top-degree-pullback-manifold} \\
+Corollary 14.21 & Cor.~\ref{cor:top-degree-pullback-manifold} \\
 Theorem 16.34 & Thm.~\ref{thm:stokes-calc3} \\
 Theorem 17.26 & Thm.~\ref{thm:inv-dim} \\
 Example 19.1 & Ex.~\ref{ex:no-integral-surface} \\
 Proposition 19.3 & Cor.~\ref{cor:integral-submanifold-necessary} \\
-Theorem 20.1 & Prop.~\ref{prop:one-parameter-subgroup} \\
-Proposition 20.2 & Thm.~\ref{thm:exp-matrix} \\
+Theorem 20.1 & Prop.~\ref{prop:one-parameter-subgroup}, Prop.~\ref{prop:one-parameter-converse} \\
+Proposition 20.2 & Thm.~\ref{thm:exp-matrix}, Lem.~\ref{lem:matrix-exp-series} \\
 Example 20.4 & Thm.~\ref{thm:exp-matrix} \\
 Proposition 20.5 & Prop.~\ref{prop:exp-tA} \\
 Proposition 20.8 & Cor.~\ref{cor:exp-law}, Prop.~\ref{prop:exp-smooth}, Cor.~\ref{cor:exp-natural} \\

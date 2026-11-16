@@ -5,7 +5,7 @@ chapter: 11
 section: 76
 tags: [differentiable-manifolds, math591]
 ---
-← [[§75 Multilinear Algebra]] · ↑ [[· 11 Differential Forms]]
+← [[§75 Multilinear Algebra]] · ↑ [[· 11 Differential Forms]] · [[§77 Pullbacks of Linear Forms]] →
 
 *Stage: forms — Multiplying a $k$-form and an $l$-form into a $(k + l)$-form, by signed shuffles; bilinear, associative, graded anticommutative.*
 
@@ -575,4 +575,4 @@ For $\varepsilon = dx^i$ this is $dx^i \wedge dx^i = 0$, as in Lemma [[§74 The 
 
 ^ex-76-6
 
-Next: $V$ becomes the tangent space $T_pM$ again, and the point $p$ varies over a manifold, so that the forms become functions of the point. (Lecture 30 ended with the proof of Proposition [[§76 The Wedge Product#^prop-76-7|§76.7]](3).)
+Next: one more piece of linear algebra, the pullback of forms by a linear map ([[§77 Pullbacks of Linear Forms|§77]]); then $V$ becomes the tangent space $T_pM$ again, and the point $p$ varies over a manifold, so that the forms become functions of the point ([[§78 Differential Forms on Manifolds|§78]]). (Lecture 30 ended with the proof of Proposition [[§76 The Wedge Product#^prop-76-7|§76.7]](3).)

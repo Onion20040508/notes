@@ -96,6 +96,8 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§74 The Integrand Is a Two-Form\|§74]] The integrand is a two-form | Chapter 14, *The Wedge Product* |
 | [[§75 Multilinear Algebra\|§75]] Multilinear algebra | Chapter 12, *Symmetric and Alternating Tensors*; Chapter 14, *The Algebra of Alternating Tensors* (Lemma 14.1, Lemma 14.7, Proposition 14.8) |
 | [[§76 The Wedge Product\|§76]] The wedge product | Chapter 14, *The Algebra of Alternating Tensors* (alternation, Proposition 14.3) and *The Wedge Product* (Lemma 14.10, Proposition 14.11; the determinant and Alt conventions); Chapter 12, *Multilinear Algebra* (tensor products) |
+| [[§77 Pullbacks of Linear Forms\|§77]] Pullbacks of linear forms | Chapter 12, *Pullbacks of Tensor Fields* (the pullback at a point); Chapter 14, Proposition 14.9 |
+| [[§78 Differential Forms on Manifolds\|§78]] Differential forms on manifolds | Chapter 14, *Differential Forms on Manifolds* (Exercise 14.14, Lemma 14.16, Examples 14.18 and 14.19, Proposition 14.20, Corollary 14.21); Chapter 10, Lemma 10.6 (the vector bundle chart lemma) |
 
 ## A.4 Index from Lee to these notes
 
@@ -199,11 +201,11 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |
 | Example 7.27 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6\|Prop. §11.6]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1\|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3\|Cor. §23.3]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
 | Example 7.28 | [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
-| Example 7.29 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-11\|Def. §11.11]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3\|Ex. §23.3]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-6\|Cor. §23.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
-| Example 7.30 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-11\|Def. §11.11]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
+| Example 7.29 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-11\|Def. §11.11]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3\|Ex. §23.3]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-6\|Cor. §23.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]] |
+| Example 7.30 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-11\|Def. §11.11]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]] |
 | Problem 7-2 | [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2\|Prop. §60.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-3\|Prop. §60.3]] |
 | Problem 7-4 | [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1\|Prop. §12.1]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-2\|Cor. §12.2]] |
-| Problem 7-22 | [[§43 The Unit Quaternions and SU(2)#^def-43-1\|Def. §43.1]] |
+| Problem 7-22 | [[§43 The Unit Quaternions and SU(2)#^def-43-1\|Def. §43.1]], [[§43 The Unit Quaternions and SU(2)#^def-43-2\|Def. §43.2]], [[§43 The Unit Quaternions and SU(2)#^def-43-3\|Def. §43.3]] |
 | Proposition 8.1 | [[§56 Vector Fields#^prop-56-1\|Prop. §56.1]] |
 | Proposition 8.14 | [[§56 Vector Fields#^lem-56-11\|Lem. §56.11]] |
 | Proposition 8.15 | [[§56 Vector Fields#^prop-56-10\|Prop. §56.10]] |
@@ -230,7 +232,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 9.6 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]], [[§70 Complete Vector Fields#^prop-70-10\|Prop. §70.10]] |
 | Proposition 9.7 | [[§70 Complete Vector Fields#^thm-70-9\|Thm. §70.9]] |
 | Example 9.10 | [[§69 Maximal Integral Curves and Flows#^ex-69-1\|Ex. §69.1]] |
-| Theorem 9.12 | [[§68 Local Existence and Uniqueness#^prop-68-3\|Prop. §68.3]], [[§69 Maximal Integral Curves and Flows#^thm-69-4\|Thm. §69.4]], [[§69 Maximal Integral Curves and Flows#^def-69-1\|Def. §69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1\|Prop. §69.1]], [[§69 Maximal Integral Curves and Flows#^lem-69-3\|Lem. §69.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-5\|Prop. §69.5]], [[§70 Complete Vector Fields#^prop-70-7\|Prop. §70.7]], [[§72 Lie Derivatives#^lem-72-2\|Lem. §72.2]] |
+| Theorem 9.12 | [[§68 Local Existence and Uniqueness#^prop-68-3\|Prop. §68.3]], [[§69 Maximal Integral Curves and Flows#^thm-69-4\|Thm. §69.4]], [[§69 Maximal Integral Curves and Flows#^def-69-1\|Def. §69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1\|Prop. §69.1]], [[§69 Maximal Integral Curves and Flows#^lem-69-3\|Lem. §69.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-5\|Prop. §69.5]], [[§70 Complete Vector Fields#^prop-70-7\|Prop. §70.7]], [[§72 Lie Derivatives#^lem-72-2\|Lem. §72.2]], [[§69 Maximal Integral Curves and Flows#^def-69-2\|Def. §69.2]] |
 | Lemma 9.15 | [[§70 Complete Vector Fields#^lem-70-1\|Lem. §70.1]] |
 | Theorem 9.16 | [[§70 Complete Vector Fields#^cor-70-6\|Cor. §70.6]] |
 | Corollary 9.17 | [[§70 Complete Vector Fields#^thm-70-2\|Thm. §70.2]] |
@@ -248,6 +250,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 9-6 | [[§70 Complete Vector Fields#^thm-70-4\|Thm. §70.4]], [[§70 Complete Vector Fields#^cor-70-5\|Cor. §70.5]] |
 | Problem 9-18 | [[§72 Lie Derivatives#^ex-72-2\|Ex. §72.2]] |
 | Example 10.3 | [[§46 Examples of Fibrations#^ex-46-2\|Ex. §46.2]] |
+| Lemma 10.6 | [[§78 Differential Forms on Manifolds#^prop-78-3\|Prop. §78.3]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
 | Proposition 11.8 | [[§21 Linear Algebra Toolkit#^prop-21-3\|Prop. §21.3]] |
@@ -261,13 +264,20 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 14.3 | [[§76 The Wedge Product#^lem-76-2\|Lem. §76.2]] |
 | Lemma 14.7 | [[§75 Multilinear Algebra#^lem-75-5\|Lem. §75.5]] |
 | Proposition 14.8 | [[§75 Multilinear Algebra#^prop-75-6\|Prop. §75.6]] |
+| Proposition 14.9 | [[§77 Pullbacks of Linear Forms#^prop-77-3\|Prop. §77.3]] |
 | Proposition 14.11 | [[§76 The Wedge Product#^lem-76-5\|Lem. §76.5]], [[§76 The Wedge Product#^prop-76-7\|Prop. §76.7]] |
+| Exercise 14.14 | [[§78 Differential Forms on Manifolds#^prop-78-3\|Prop. §78.3]] |
+| Lemma 14.16 | [[§77 Pullbacks of Linear Forms#^prop-77-2\|Prop. §77.2]], [[§77 Pullbacks of Linear Forms#^prop-77-4\|Prop. §77.4]], [[§78 Differential Forms on Manifolds#^prop-78-5\|Prop. §78.5]] |
+| Example 14.18 | [[§78 Differential Forms on Manifolds#^ex-78-1\|Ex. §78.1]] |
+| Example 14.19 | [[§78 Differential Forms on Manifolds#^ex-78-2\|Ex. §78.2]] |
+| Proposition 14.20 | [[§77 Pullbacks of Linear Forms#^prop-77-2\|Prop. §77.2]], [[§78 Differential Forms on Manifolds#^cor-78-6\|Cor. §78.6]] |
+| Corollary 14.21 | [[§78 Differential Forms on Manifolds#^cor-78-6\|Cor. §78.6]] |
 | Theorem 16.34 | [[§73 Stokes' Theorem in Calculus III#^thm-73-2\|Thm. §73.2]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |
 | Example 19.1 | [[§59 Related Vector Fields#^ex-59-2\|Ex. §59.2]] |
 | Proposition 19.3 | [[§59 Related Vector Fields#^cor-59-9\|Cor. §59.9]] |
-| Theorem 20.1 | [[§71 The Exponential Map#^prop-71-1\|Prop. §71.1]] |
-| Proposition 20.2 | [[§71 The Exponential Map#^thm-71-12\|Thm. §71.12]] |
+| Theorem 20.1 | [[§71 The Exponential Map#^prop-71-1\|Prop. §71.1]], [[§71 The Exponential Map#^prop-71-3\|Prop. §71.3]] |
+| Proposition 20.2 | [[§71 The Exponential Map#^thm-71-12\|Thm. §71.12]], [[§71 The Exponential Map#^lem-71-5\|Lem. §71.5]] |
 | Example 20.4 | [[§71 The Exponential Map#^thm-71-12\|Thm. §71.12]] |
 | Proposition 20.5 | [[§71 The Exponential Map#^prop-71-2\|Prop. §71.2]] |
 | Proposition 20.8 | [[§71 The Exponential Map#^cor-71-4\|Cor. §71.4]], [[§71 The Exponential Map#^prop-71-13\|Prop. §71.13]], [[§71 The Exponential Map#^cor-71-10\|Cor. §71.10]] |
