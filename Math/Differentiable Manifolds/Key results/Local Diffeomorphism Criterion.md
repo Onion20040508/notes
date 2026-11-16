@@ -29,7 +29,7 @@ tags: [differentiable-manifolds, hub]
 - [[§36 Submersions#^prop-36-1|Proposition §36.1: Dimension Constraints]]
 - [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-5|Theorem §44.5: The Double Cover SU(2) → SO(3)]]
 - [[§44 SU(2) → SO(3)꞉ The Double Cover#^cor-44-6|Corollary §44.6: ℝP³ → SO(3) Is a Diffeomorphism]]
-- [[§71 The Exponential Map#^prop-71-12|Proposition §71.12: Smoothness and the Differential at 0]]
+- [[§71 The Exponential Map#^prop-71-13|Proposition §71.13: Smoothness and the Differential at 0]]
 - [[§72 Lie Derivatives#^lem-72-5|Lemma §72.5: Canonical Form Near a Regular Point]]
 
 ## Connections

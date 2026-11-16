@@ -61,6 +61,7 @@ graph TD
   C5 -.->|on credit| C3
   C6 -.->|on credit| C1
   C7 -.->|on credit| C6
+  C10 -.->|on credit| C8
   X4 -.->|9| C2
   X4 -.->|7| C5
   X3 -.->|8| C1
@@ -132,7 +133,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56
 - [[Transverse Preimage Theorem for Manifolds]] (§39.1)
 - [[Immersion Normal Form]] (§40.1)
 - [[Images of Embeddings Are Submanifolds]] (§41.1)
-- [[Injective Proper Immersions Are Embeddings]] (§41.7)
+- [[Injective Proper Immersions Are Embeddings]] (§41.11)
 - [[SU(2) Is a Double Cover of SO(3)]] (§44.5)
 - [[Smooth Manifold Chart Lemma]] (§51.2)
 - [[Tangent Bundle Is a Smooth Manifold]] (§51.3)
@@ -153,7 +154,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56
 - [[Naturality of Integral Curves]] (§70.10)
 - [[Left-Invariant Vector Fields Are Complete]] (§70.11)
 - [[One-Parameter Subgroups Are Integral Curves Through the Identity]] (§71.1)
-- [[The Lie Group Exponential Is a Local Diffeomorphism]] (§71.12)
+- [[The Lie Group Exponential Is a Local Diffeomorphism]] (§71.13)
 - [[The Lie Derivative Is the Bracket]] (§72.6)
 - [[Commuting Vector Fields Have Commuting Flows]] (§72.9)
 

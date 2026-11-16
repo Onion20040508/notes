@@ -58,9 +58,9 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 ^def-37-2
 
 > [!remark]- Connections
-> - The other kind of submanifold: [[§41 Embeddings#^def-41-3|immersed submanifolds, Def. §41.3]]; when an immersed submanifold is regular: [[§41 Embeddings#^prop-41-18|§41.18]]; local images of immersions: [[§40 Immersions#^cor-40-2|§40.2]].
+> - The other kind of submanifold: [[§41 Embeddings#^def-41-3|immersed submanifolds, Def. §41.3]]; when an immersed submanifold is regular: [[§41 Embeddings#^prop-41-22|§41.22]]; local images of immersions: [[§40 Immersions#^cor-40-2|§40.2]].
 > - Codimension in the Euclidean setting: [[§26 Transversality#^def-26-1|Def. §26.1]].
-> - The geometric stage: in $\mathbb{R}^{n+k}$ the submanifolds are exactly the manifolds of [[§20 Manifolds in Euclidean Space|§20]] — the external, internal and graph descriptions ([[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]]) — and the slice of this definition is a fourth: [[§37 Regular Submanifolds#^prop-37-13|§37.13]].
+> - The geometric stage: in $\mathbb{R}^{n+k}$ the submanifolds are exactly the manifolds of [[§20 Manifolds in Euclidean Space|§20]] — the external, internal and graph descriptions ([[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]]) — and the slice of this definition is a fourth: [[§37 Regular Submanifolds#^prop-37-14|§37.14]].
 > - Their tangent spaces: $T^{\mathrm{geo}}_pX = \ker F'(p)$ ([[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]) is $\iota_{\ast p}(T_pX)$ ([[§37 Regular Submanifolds#^rem-37-2|Remark: The Tangent Spaces Match]], [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]]).
 
 > [!definition] Definition §37.3: Adapted Chart
@@ -75,7 +75,7 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 An adapted chart ($m = 2$, $k = 1$). The chart $\varphi$ straightens $U \cap S$ onto the part of the $x_a$-axis inside $\varphi(U)$ — exactly the set $\varphi(U) \cap \{x_b = 0\}$, running from rim to rim — and the induced chart $\varphi_S$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]], below) keeps only the coordinate $x_a$, landing on an open interval of $\mathbb{R}^{m-k}$.
 
 > [!remark]- Connections
-> - In Euclidean space an adapted chart comes from a graph chart ([[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]) by straightening the graph: [[§37 Regular Submanifolds#^prop-37-13|§37.13]] and its figure.
+> - In Euclidean space an adapted chart comes from a graph chart ([[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]) by straightening the graph: [[§37 Regular Submanifolds#^prop-37-14|§37.14]] and its figure.
 
 > [!theorem] Proposition §37.2: Two Observations on Adapted Charts
 > Let $(U, \varphi)$ be a smooth chart of $M$, and suppose that $U \cap S$ is cut out in it by setting some $k$ of the coordinates equal to constants:
@@ -323,7 +323,47 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 A regular submanifold is a subset, not a map; what is an immersion is its inclusion. A map with the two properties of the corollary is called an *embedding* (Definition [[§41 Embeddings#^def-41-1|§41.1]]), and conversely the image of every embedding is a regular submanifold: the regular submanifolds are exactly the images of embeddings (Theorem [[§41 Embeddings#^thm-41-5|§41.5]]).
 
-> [!theorem] Proposition §37.11: Adapted Charts Give Local Defining Maps
+> [!theorem] Lemma §37.11: Being a Regular Submanifold Is a Local Property
+> Let $M$ be a smooth manifold of dimension $m$, $S \subseteq M$ a subset with the subspace topology, and $0 \le k \le m$.
+>
+> 1. If $S$ is a regular submanifold of $M$ of codimension $k$ and $W \subseteq M$ is open, then $S \cap W$ is a regular submanifold of $M$ of codimension $k$.
+> 2. If every $p \in S$ has an open neighbourhood $W$ in $M$ such that $S \cap W$ is a regular submanifold of $M$ of codimension $k$, then $S$ is a regular submanifold of $M$ of codimension $k$.
+> 3. In (1), the induced smooth structure of $S \cap W$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]) is its smooth structure as an open subset of the manifold $S$ (Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]]).
+
+^lem-37-11
+
+> [!proof]+ Proof
+> *(Assignment 8, Problem 3(a): the step of the submitted solution that passes from the two open pieces $\mathrm{SO}(2) \setminus \{-I\}$ and $\mathrm{SO}(2) \setminus \{I\}$ to $\mathrm{SO}(2)$, stated in general; (3) is filled in.)* All three parts shrink an adapted chart to a smaller open set, which leaves it a smooth chart of $M$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)). The subset $S \cap W$ carries the subspace topology of $M$ in every part.
+>
+> *(1).* Let $p \in S \cap W$, and let $(U, \varphi = (x_a, x_b))$ be a chart of $M$ adapted to $S$ with $p \in U$, so $U \cap S = \{ q \in U : x_b(q) = \vec 0 \}$ (Definitions [[§37 Regular Submanifolds#^def-37-2|§37.2]] and [[§37 Regular Submanifolds#^def-37-3|§37.3]]). Put $U' = U \cap W$, an open set containing $p$. Then $(U', \varphi|_{U'})$ is a smooth chart of $M$, and since $U' \subseteq W$ and $U' \subseteq U$,
+>
+> $$
+> U' \cap (S \cap W) = U' \cap S = U' \cap (U \cap S) = \{\, q \in U' : x_b(q) = \vec 0 \,\}.
+> $$
+>
+> So $(U', \varphi|_{U'})$ is adapted to $S \cap W$, and $p$ was arbitrary.
+>
+> *(2).* Let $p \in S$, let $W$ be as in the hypothesis, and let $(U, \varphi = (x_a, x_b))$ be a chart of $M$ adapted to $S \cap W$ with $p \in U$: $U \cap (S \cap W) = \{ q \in U : x_b(q) = \vec 0 \}$. Put $U' = U \cap W$, an open set containing $p$. Since $U' \subseteq W$,
+>
+> $$
+> U' \cap S = U' \cap (S \cap W) = U' \cap \big( U \cap (S \cap W) \big) = \{\, q \in U' : x_b(q) = \vec 0 \,\}.
+> $$
+>
+> So $(U', \varphi|_{U'})$ is a chart of $M$ adapted to $S$ at $p$, and $p$ was arbitrary.
+>
+> *(3).* The adapted charts of $S \cap W$ found in (1) are the restrictions $(U', \varphi|_{U'})$ of adapted charts $(U, \varphi)$ of $S$, and their induced charts are
+>
+> $$
+> x_a|_{U' \cap (S \cap W)} = \big( x_a|_{U \cap S} \big)\big|_{U' \cap S} ,
+> $$
+>
+> the restrictions of the induced charts of $S$ to the open subsets $U' \cap S$ of $S$. These are smooth charts of $S$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)) with domain in $S \cap W$, that is, charts of the open subset $S \cap W$ of $S$ (Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]](2)); and they belong to the induced structure of $S \cap W$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]](2)). They cover $S \cap W$, so they form an atlas contained in both smooth structures; an atlas lies in only one maximal atlas (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]), so the two structures are equal.
+
+^pf-37-11
+
+*Uses:* [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§17 Differentiable Structures#^prop-17-8|§17.8]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]]
+
+> [!theorem] Proposition §37.12: Adapted Charts Give Local Defining Maps
 > Let $S \subseteq M$ be a regular submanifold of codimension $k$ and $(U, \varphi = (x_a, x_b))$ a chart adapted to $S$, with $x_b = (x^{m-k+1}, \ldots, x^m) : U \to \mathbb{R}^k$, a map from the open submanifold $U$ to $\mathbb{R}^k$ with its standard coordinates $r^1, \ldots, r^k$.
 >
 > 1. $x_b$ is smooth, and for every $q \in U$
@@ -338,7 +378,7 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 >
 > In particular, a regular submanifold is locally a regular level set: every point of $S$ has an open neighbourhood $U$ in $M$ on which $U \cap S$ is the preimage of the regular value $\vec 0$ of a smooth map $U \to \mathbb{R}^k$.
 
-^prop-37-11
+^prop-37-12
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in. The computation is Step 2 of the submitted solution of Assignment 5, Problem 2, and the last sentence is the remark of Assignment 5, Problem 4, that a regular submanifold is locally a regular level set.)* Throughout, the tangent space of the open set $U$ at $q$ is identified with $T_qM$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]), and $\mathbb{R}^k$ carries the identity chart, whose coordinate functions are $r^1, \ldots, r^k$.
@@ -375,7 +415,7 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 >
 > *The last sentence.* Every $p \in S$ lies in the domain $U$ of an adapted chart (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), an open neighbourhood of $p$ in $M$, and by (1) and (3) $U \cap S = x_b^{-1}(\vec 0)$ with $x_b : U \to \mathbb{R}^k$ smooth and $\vec 0$ a regular value.
 
-^pf-37-11
+^pf-37-12
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]]
 
@@ -393,13 +433,13 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 > [!remark]- Connections
 > - The annihilator of a subspace: [[§12 Duality#^ladr-3-121|LADR 3.121]].
 
-> [!theorem] Proposition §37.12: A Basis of the Conormal Space
+> [!theorem] Proposition §37.13: A Basis of the Conormal Space
 > Let $S \subseteq M$ be a regular submanifold of codimension $k$ and $p \in S$. Let $(x^1, \ldots, x^m)$ be an adapted chart at $p$, and write a covector $\xi \in T_p^{\ast}M$ as $\xi = \sum_i \xi_i\, dx^i|_p$, with components $\xi_i = \xi(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]).
 >
 > 1. $\xi \in N_pS$ if and only if $\xi_i = 0$ for every $i \le m - k$.
 > 2. $N_pS$ has basis $dx^{m-k+1}|_p, \ldots, dx^m|_p$. In particular $\dim N_pS = k$, the codimension of $S$.
 
-^prop-37-12
+^prop-37-13
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* Fix an adapted chart $(x^1, \ldots, x^m)$ at $p$. Write $\xi = \sum_j \xi_j\, dx^j|_p$ in the dual basis (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]), so that $\xi(\partial/\partial x^i|_p) = \xi_i$. (By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] the $dx^j|_p$ are the basis dual to the $\partial/\partial x^j|_p$, and the coefficients are the components $\xi_i = \xi(\partial/\partial x^i|_p)$ of Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]].)
@@ -418,7 +458,7 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 >
 > So $N_pS$ is spanned by the $dx^j|_p$ with $j > m - k$, which are linearly independent as part of a basis. (Each of them does lie in $N_pS$, by (1): for $j > m - k$ and $i \le m - k$, the $i$-th component of $dx^j|_p$ is $dx^j|_p(\partial/\partial x^i|_p) = \delta^j_i = 0$.) So they form a basis of $N_pS$, and $\dim N_pS = m - (m - k) = k$, the codimension of $S$.
 
-^pf-37-12
+^pf-37-13
 
 *Uses:* [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]]
 
@@ -431,7 +471,7 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 >
 > This is the linear-algebra fact that the annihilator of a $d$-dimensional subspace of an $m$-dimensional space has dimension $m - d$.
 
-^pf-37-12-2
+^pf-37-13-2
 
 *Uses:* [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
@@ -454,14 +494,14 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 
 *Not from lecture: the link back to the geometric stage.* Inside a Euclidean space, [[§20 Manifolds in Euclidean Space|§20]] described a manifold $X \subseteq \mathbb{R}^{n+k}$ near a point in three ways — externally, by equations ([[§20 Manifolds in Euclidean Space#^def-20-1|Definition §20.1]]); internally, by a parametrization ([[§20 Manifolds in Euclidean Space#^def-20-2|Definition §20.2]]); and as a graph — and [[§20 Manifolds in Euclidean Space#^thm-20-1|Theorem §20.1]] showed that they agree. [[§37 Regular Submanifolds#^def-37-2|Definition §37.2]] adds a fourth, the *slice* description: a chart of the ambient space in which $X$ is a coordinate plane. The fourth agrees with the other three, so in $\mathbb{R}^{n+k}$ the submanifolds of codimension $k$ are exactly the manifolds of [[§20 Manifolds in Euclidean Space|§20]], and Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] is their description made intrinsic to the ambient manifold.
 
-> [!theorem] Proposition §37.13: Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description
+> [!theorem] Proposition §37.14: Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description
 > Let $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$. The following are equivalent:
 > 1. near $p$, $X$ is described [[§20 Manifolds in Euclidean Space#^def-20-1|externally]] ([[§20 Manifolds in Euclidean Space#^def-20-1|Definition §20.1]]) — equivalently, [[§20 Manifolds in Euclidean Space#^def-20-2|internally]] or as a graph ([[§20 Manifolds in Euclidean Space#^thm-20-1|Theorem §20.1]]);
 > 2. *(slice)* there is a smooth chart $(U, \varphi = (x_a, x_b))$ of $\mathbb{R}^{n+k}$ with $p \in U$, $x_a$ its first $n$ and $x_b$ its last $k$ components, such that $U \cap X = \{\, q \in U : x_b(q) = \vec 0 \,\}$, that is, a chart [[§37 Regular Submanifolds#^def-37-3|adapted]] to $X$ ([[§37 Regular Submanifolds#^def-37-3|Definition §37.3]]).
 >
 > In particular $X$ is a [[§37 Regular Submanifolds#^def-37-2|regular submanifold]] of $\mathbb{R}^{n+k}$ of codimension $k$ ([[§37 Regular Submanifolds#^def-37-2|Definition §37.2]]) if and only if every point of $X$ has the descriptions of [[§20 Manifolds in Euclidean Space|§20]].
 
-^prop-37-13
+^prop-37-14
 
 > [!proof]+ Proof
 > *(Not from lecture.)* By Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]] the external, internal and graph descriptions near $p$ are equivalent, so for (1)$\iff$(2) it suffices to prove graph $\Rightarrow$ slice and slice $\Rightarrow$ external; together with external $\Rightarrow$ graph (Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]]) these close the cycle.
@@ -501,7 +541,7 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 >
 > The final statement follows, since Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] asks for (2) at every point of $X$: $X$ is a regular submanifold of codimension $k$ iff every $p \in X$ has an adapted chart, i.e. satisfies (2), iff every $p \in X$ satisfies (1), by the equivalence just proved.
 
-^pf-37-13
+^pf-37-14
 
 *Uses:* [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§20 Manifolds in Euclidean Space#^def-20-1|Def. §20.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
 
@@ -509,7 +549,7 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 *Straightening a graph. The map $\Phi(x, y) = (x, y - h(x))$ keeps $x$ and measures the height above the graph; it carries the graph $X$ to the slice $z = 0$, and the parallel graphs $y = h(x) + c$ to the slices $z = c$. This is the passage from the graph charts of [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2]], which flatten $X$ alone, to an adapted chart, which straightens a whole neighbourhood of $X$ in the ambient space. On the left is the whole of $X$: only near $p$ is it the graph $y = h(x)$, over the $x$-range of the domain $U$ of $\Phi$; at its leftmost point it has a vertical tangent and is not a graph over $x$, so points there need another chart.*
 
 > [!example] Example §37.1: Adapted Charts of the Sphere
-> For the unit sphere $S^2 \subseteq \mathbb{R}^3$, the two halves of the proof of Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]] give two kinds of chart of $\mathbb{R}^3$ adapted to $S^2$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], with $k = 1$):
+> For the unit sphere $S^2 \subseteq \mathbb{R}^3$, the two halves of the proof of Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]] give two kinds of chart of $\mathbb{R}^3$ adapted to $S^2$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], with $k = 1$):
 >
 > 1. near the north pole, the graph is $z = \sqrt{1 - x^2 - y^2}$, and $(x, y, z) \mapsto (x, y, z - \sqrt{1 - x^2 - y^2})$ is an adapted chart, on the domain $U_1 = \{(x, y, z) : x^2 + y^2 < 1,\ z > 0\}$;
 > 2. so is $(x, y, z) \mapsto (x, y, x^2 + y^2 + z^2 - 1)$ near any point with $z \neq 0$ — on the domain $U_2 = \{(x, y, z) : z > 0\}$, or on $\{(x, y, z) : z < 0\}$ — whose last coordinate is the defining function of the external description.
@@ -519,26 +559,26 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* In each case we show that the map is a smooth chart of $\mathbb{R}^3$ on the stated domain whose last component vanishes exactly on the part of $S^2$ in the domain (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]).
 >
-> *(1)* This is the step “graph $\Rightarrow$ slice” of the proof of Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]], with $n = 2$, $k = 1$, $V = \{(x, y) : x^2 + y^2 < 1\}$, $V' = (0, \infty)$ and $h(x, y) = \sqrt{1 - x^2 - y^2}$, which is smooth on $V$ because $1 - x^2 - y^2 > 0$ there. Its hypothesis holds: for $(x, y, z) \in V \times V'$, $x^2 + y^2 + z^2 = 1$ iff $z^2 = 1 - x^2 - y^2$ iff $z = h(x, y)$, because $z > 0$; so $S^2 \cap (V \times V') = \{(x, y, h(x, y)) : (x, y) \in V\}$. That step shows that $\Phi_1(x, y, z) = (x, y, z - h(x, y))$ is a smooth chart of $\mathbb{R}^3$ on $U_1 = V \times V'$ whose last component vanishes exactly on $S^2 \cap U_1$. So $(U_1, \Phi_1)$ is adapted to $S^2$; its domain contains the north pole $(0, 0, 1)$.
+> *(1)* This is the step “graph $\Rightarrow$ slice” of the proof of Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]], with $n = 2$, $k = 1$, $V = \{(x, y) : x^2 + y^2 < 1\}$, $V' = (0, \infty)$ and $h(x, y) = \sqrt{1 - x^2 - y^2}$, which is smooth on $V$ because $1 - x^2 - y^2 > 0$ there. Its hypothesis holds: for $(x, y, z) \in V \times V'$, $x^2 + y^2 + z^2 = 1$ iff $z^2 = 1 - x^2 - y^2$ iff $z = h(x, y)$, because $z > 0$; so $S^2 \cap (V \times V') = \{(x, y, h(x, y)) : (x, y) \in V\}$. That step shows that $\Phi_1(x, y, z) = (x, y, z - h(x, y))$ is a smooth chart of $\mathbb{R}^3$ on $U_1 = V \times V'$ whose last component vanishes exactly on $S^2 \cap U_1$. So $(U_1, \Phi_1)$ is adapted to $S^2$; its domain contains the north pole $(0, 0, 1)$.
 >
 > *(2)* On $U_2 = \{z > 0\}$, open in $\mathbb{R}^3$, put $\Phi_2(x, y, z) = (x, y, x^2 + y^2 + z^2 - 1)$, a smooth map.
 > - $\Phi_2$ is injective on $U_2$: $\Phi_2(x, y, z) = \Phi_2(x', y', z')$ gives $x = x'$, $y = y'$ and then $z^2 = z'^2$, so $z = z'$, both being positive.
 > - Its image is $O = \{(x, y, w) : w > x^2 + y^2 - 1\}$, which is open, as the preimage of $(0, \infty)$ under the continuous function $(x, y, w) \mapsto w - x^2 - y^2 + 1$. Indeed, for $z > 0$ the last component $w = x^2 + y^2 + z^2 - 1$ is greater than $x^2 + y^2 - 1$; conversely, for $(x, y, w) \in O$ the number $z = \sqrt{w + 1 - x^2 - y^2}$ is positive and $\Phi_2(x, y, z) = (x, y, w)$.
 > - Its inverse is $(x, y, w) \mapsto \big(x, y, \sqrt{w + 1 - x^2 - y^2}\big)$ on $O$, which is smooth because $w + 1 - x^2 - y^2 > 0$ on $O$.
 >
-> So $\Phi_2$ is a diffeomorphism of $U_2$ onto the open set $O$ (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]), hence a smooth chart of $\mathbb{R}^3$, by the argument in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]]: it is a homeomorphism onto an open set whose transition maps with the identity chart are $\Phi_2$ and $\Phi_2^{-1}$ (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]). Its last component vanishes at $(x, y, z) \in U_2$ iff $x^2 + y^2 + z^2 = 1$, iff $(x, y, z) \in S^2$. So $(U_2, \Phi_2)$ is adapted to $S^2$, at every point of $S^2$ with $z > 0$. On $\{z < 0\}$ the same three items hold with “positive” replaced by “negative” and the square root $\sqrt{w + 1 - x^2 - y^2}$ replaced by $-\sqrt{w + 1 - x^2 - y^2}$ (the image is the same set $O$), which gives an adapted chart at every point of $S^2$ with $z < 0$. The Jacobian is
+> So $\Phi_2$ is a diffeomorphism of $U_2$ onto the open set $O$ (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]), hence a smooth chart of $\mathbb{R}^3$, by the argument in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]]: it is a homeomorphism onto an open set whose transition maps with the identity chart are $\Phi_2$ and $\Phi_2^{-1}$ (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]). Its last component vanishes at $(x, y, z) \in U_2$ iff $x^2 + y^2 + z^2 = 1$, iff $(x, y, z) \in S^2$. So $(U_2, \Phi_2)$ is adapted to $S^2$, at every point of $S^2$ with $z > 0$. On $\{z < 0\}$ the same three items hold with “positive” replaced by “negative” and the square root $\sqrt{w + 1 - x^2 - y^2}$ replaced by $-\sqrt{w + 1 - x^2 - y^2}$ (the image is the same set $O$), which gives an adapted chart at every point of $S^2$ with $z < 0$. The Jacobian is
 >
 > $$
 > \Phi_2'(x, y, z) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 2x & 2y & 2z \end{pmatrix}, \qquad \det \Phi_2'(x, y, z) = 2z ,
 > $$
 >
-> which is not invertible where $z = 0$: no restriction of $\Phi_2$ is a chart at a point of the equator, a chart having an invertible Jacobian (proof of Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]], slice $\Rightarrow$ external).
+> which is not invertible where $z = 0$: no restriction of $\Phi_2$ is a chart at a point of the equator, a chart having an invertible Jacobian (proof of Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]], slice $\Rightarrow$ external).
 
 ^pf-ex-37-1
 
-*Uses:* [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-13|§37.13]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]]
+*Uses:* [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-14|§37.14]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]]
 
-> [!theorem] Lemma §37.14: An Adapted Chart of a Submanifold of $\mathbb{R}^n$
+> [!theorem] Lemma §37.15: An Adapted Chart of a Submanifold of $\mathbb{R}^n$
 > *(Letters as in [[§48 The Normal Bundle of a Submanifold of Euclidean Space|§48]], where this lemma is used: here $M$ is the submanifold and $\mathbb{R}^n$ the ambient space, while above $M$ was the ambient manifold.)* Let $M \subseteq \mathbb{R}^n$ be a regular submanifold of dimension $m$, that is, of codimension $n - m$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), and let $(U, \varphi = (x^1, \ldots, x^n))$ be a smooth chart of $\mathbb{R}^n$ adapted to $M$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), so that
 >
 > $$
@@ -571,6 +611,7 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 > (\varphi^{-1})'\big(\varphi(q)\big) = \big(\, X_1(q) \ \big|\ X_2(q) \ \big|\ \cdots \ \big|\ X_n(q) \,\big) = \begin{pmatrix} X_1^1(q) & \cdots & X_n^1(q) \\ \vdots & \ddots & \vdots \\ X_1^n(q) & \cdots & X_n^n(q) \end{pmatrix} .
 > $$
 > Each $X_j^l$ is smooth on $U$; $X_1(q), \ldots, X_n(q)$ form a basis of $\mathbb{R}^n$, with $\varphi'(q)\, X_j(q) = e_j$ (in particular $X_1(q), \ldots, X_m(q)$ are linearly independent for every $q \in U$); and for $q \in U \cap M$, $X_1(q), \ldots, X_m(q)$ form a basis of $T^{\mathrm{geo}}_qM$.
+>
 > 4. For $q \in U \cap M$, the gradients $\nabla G^1(q), \ldots, \nabla G^{n-m}(q)$ form a basis of the orthogonal complement
 >
 > $$
@@ -579,7 +620,7 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 >
 > equivalently, $(T^{\mathrm{geo}}_qM)^\perp = \{\, J(q)^{\mathsf T} c : c \in \mathbb{R}^{n-m} \,\}$, and $c \mapsto J(q)^{\mathsf T} c$ is injective.
 
-^lem-37-14
+^lem-37-15
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in. These are the facts about an adapted chart used for the normal bundle of Assignment 5, Problem 5.)* Every point of $M$ lies in such a chart (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]).
@@ -590,7 +631,7 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 > \varphi'(q)\, (\varphi^{-1})'\big(\varphi(q)\big) = I_n ,
 > $$
 >
-> so the square matrix $\varphi'(q)$ is invertible, with inverse $(\varphi^{-1})'(\varphi(q))$. The rows of an invertible matrix are linearly independent, and row $l$ of $\varphi'(q)$ is $\nabla x^l(q)$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]); the rows of $J(q)$ are the last $n - m$ of these, $\nabla x^{m+1}(q), \ldots, \nabla x^n(q)$, so they are independent and $J(q)$ has rank $n - m$ (Definition [[§7 The Regular Value Theorem#^def-7-2|§7.2]]). This is the computation in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]] (slice $\Rightarrow$ external, with $m$ and $n - m$ in place of $n$ and $k$).
+> so the square matrix $\varphi'(q)$ is invertible, with inverse $(\varphi^{-1})'(\varphi(q))$. The rows of an invertible matrix are linearly independent, and row $l$ of $\varphi'(q)$ is $\nabla x^l(q)$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]); the rows of $J(q)$ are the last $n - m$ of these, $\nabla x^{m+1}(q), \ldots, \nabla x^n(q)$, so they are independent and $J(q)$ has rank $n - m$ (Definition [[§7 The Regular Value Theorem#^def-7-2|§7.2]]). This is the computation in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]] (slice $\Rightarrow$ external, with $m$ and $n - m$ in place of $n$ and $k$).
 >
 > *(2)* By (1), $\vec 0$ is a regular value of $G$ on the open set $U$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]), and $U \cap M = G^{-1}(\vec 0)$ by the displayed description of $U \cap M$. The first equality is Lemma [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]], since $U \cap M$ is open in $M$ (its proof uses only that $U \cap M$ is open in the subset $M$ of the Euclidean space). The second, and the dimension, are Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] for the regular level set $U \cap M = G^{-1}(\vec 0)$, with $W = U$, $F = G$, $c = \vec 0$ and $m$, $n - m$ in place of $n$, $k$: the kernel of the surjective $J(q) : \mathbb{R}^n \to \mathbb{R}^{n-m}$ has dimension $n - (n - m) = m$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)).
 >
@@ -609,11 +650,11 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 > $$
 > so the set of all $J(q)^{\mathsf T} c$ is the span of the gradients, which is $(T^{\mathrm{geo}}_qM)^\perp$, and $c \mapsto J(q)^{\mathsf T} c$ is injective because the gradients are independent.
 
-^pf-37-14
+^pf-37-15
 
-*Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§37 Regular Submanifolds#^prop-37-13|§37.13]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
+*Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§37 Regular Submanifolds#^prop-37-14|§37.14]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark] Remark: The Tangent Spaces Match
-> *(Not from lecture.)* The two tangent spaces of the geometric and the abstract stage correspond as well. Externally, $T^{\mathrm{geo}}_pX = \ker F'(p)$ ([[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]]). In the slice chart of [[§37 Regular Submanifolds#^prop-37-13|Proposition §37.13]], with $F = x_b$, this kernel is the set of vectors on which the differentials of the last $k$ coordinates vanish, the span of the first $n$ coordinate directions; and that span is $\iota_{\ast p}(T_pX)$ ([[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9]]). [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4]] below makes the identification precise, together with the agreement of the two smooth structures.
+> *(Not from lecture.)* The two tangent spaces of the geometric and the abstract stage correspond as well. Externally, $T^{\mathrm{geo}}_pX = \ker F'(p)$ ([[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]]). In the slice chart of [[§37 Regular Submanifolds#^prop-37-14|Proposition §37.14]], with $F = x_b$, this kernel is the set of vectors on which the differentials of the last $k$ coordinates vanish, the span of the first $n$ coordinate directions; and that span is $\iota_{\ast p}(T_pX)$ ([[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9]]). [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4]] below makes the identification precise, together with the agreement of the two smooth structures.
 
 ^rem-37-2

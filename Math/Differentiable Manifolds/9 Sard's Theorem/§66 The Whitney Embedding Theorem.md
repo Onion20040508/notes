@@ -37,11 +37,11 @@ The proof, for $M$ compact, has two parts with entirely different ideas: bump fu
 >
 > *$F$ is an immersion.* Write $F = (F_1, \ldots, F_n, \chi_1, \ldots, \chi_n)$ with $F_j = \chi_j\varphi_j : M \to \mathbb{R}^m$. Let $p \in M$, $v \in T_pM$, and $\gamma$ a curve with $\gamma(0) = p$ and $D_\gamma = v$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]). Using curves, $dF_p(v) = \frac{d}{dt}\big|_{t=0} F(\gamma(t)) = (v_1, \ldots, v_n, \ldots)$, with $v_j = d(F_j)_p(v) \in \mathbb{R}^m$, componentwise. Choose $i$ with $p \in B_i$. Then $\chi_i \equiv 1$ on the open set $B_i \ni p$, so $F_i = \varphi_i$ near $p$ and $v_i = d(\varphi_i)_p(v)$ — equivalently $d(\chi_i)_p = 0$, since $\chi_i \equiv 1$ in a neighbourhood of $p$. As $\varphi_i$ is a diffeomorphism onto its image (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), $v \neq 0$ gives $v_i \neq 0$, so $dF_p(v) \neq 0$: $dF_p$ is injective.
 >
-> *An embedding.* An injective immersion of a compact manifold is an embedding (Corollary [[§41 Embeddings#^cor-41-8|§41.8]]).
+> *An embedding.* An injective immersion of a compact manifold is an embedding (Corollary [[§41 Embeddings#^cor-41-12|§41.12]]).
 
 ^pf-66-1
 
-*Uses:* [[§56 Vector Fields#^cor-56-7|§56.7]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§41 Embeddings#^cor-41-8|§41.8]], [[§56 Vector Fields#^lem-56-6|§56.6]]
+*Uses:* [[§56 Vector Fields#^cor-56-7|§56.7]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§41 Embeddings#^cor-41-12|§41.12]], [[§56 Vector Fields#^lem-56-6|§56.6]]
 
 ![[m591-61-1.svg]]
 
@@ -173,7 +173,7 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 >
 > *Step 1: some Euclidean space.* By Lemma [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]] there is an embedding $M \to \mathbb{R}^N$ for some $N$. Its image is a regular submanifold diffeomorphic to $M$ (Theorem [[§41 Embeddings#^thm-41-1|§41.1]]); replace $M$ by it.
 >
-> *Step 2: one dimension less.* Suppose $N > 2m + 1$. By Lemmas [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]] and [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]], the lines $\ell$ that lie in $\mathbb{R}^{N-1}$, or for which $\pi_\ell$ is not injective, or not an immersion, form the union of two sets of measure zero in $\mathbb{RP}^{N-1}$, which has measure zero (Proposition [[§62 Sets of Measure Zero#^prop-62-4|§62.4]]). A set of measure zero contains no nonempty open set (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4), in a chart), so it is not all of $\mathbb{RP}^{N-1}$: choose $\ell$ outside it. Then $\pi_\ell : M \to \mathbb{R}^{N-1}$ is an injective immersion of a compact manifold, hence an embedding (Corollary [[§41 Embeddings#^cor-41-8|§41.8]]), and its image is a regular submanifold of $\mathbb{R}^{N-1}$ diffeomorphic to $M$.
+> *Step 2: one dimension less.* Suppose $N > 2m + 1$. By Lemmas [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]] and [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]], the lines $\ell$ that lie in $\mathbb{R}^{N-1}$, or for which $\pi_\ell$ is not injective, or not an immersion, form the union of two sets of measure zero in $\mathbb{RP}^{N-1}$, which has measure zero (Proposition [[§62 Sets of Measure Zero#^prop-62-4|§62.4]]). A set of measure zero contains no nonempty open set (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4), in a chart), so it is not all of $\mathbb{RP}^{N-1}$: choose $\ell$ outside it. Then $\pi_\ell : M \to \mathbb{R}^{N-1}$ is an injective immersion of a compact manifold, hence an embedding (Corollary [[§41 Embeddings#^cor-41-12|§41.12]]), and its image is a regular submanifold of $\mathbb{R}^{N-1}$ diffeomorphic to $M$.
 >
 > *Step 3: repeat.* Apply Step 2 while $N > 2m + 1$, lowering $N$ by one each time until $N = 2m + 1$: this ends with an embedding $M \to \mathbb{R}^{2m+1}$.
 >
@@ -181,7 +181,7 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 
 ^pf-66-6
 
-*Uses:* [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]], [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]], [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§62 Sets of Measure Zero#^lem-62-1|§62.1]], [[§41 Embeddings#^cor-41-8|§41.8]]
+*Uses:* [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]], [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]], [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§62 Sets of Measure Zero#^lem-62-1|§62.1]], [[§41 Embeddings#^cor-41-12|§41.12]]
 
 ## The Noncompact Case: A Sketch
 
@@ -231,14 +231,14 @@ Left: a sublevel set of an exhaustion function on a surface with holes, as on th
 >
 > *$F$ is an immersion.* Let $p \in D_j$, and $W \subseteq \operatorname{Int}E_j$ an open neighbourhood of $p$ on which $\rho_j \equiv 1$. On $W$ the block of the parity of $j$ is $F_j$, since the other terms of that block are supported in sets $E_i$ disjoint from $E_j$. So that block of $dF_p$ is $d(F_j)_p$, injective because $F_j$ is an embedding; hence $dF_p$ is injective.
 >
-> *An embedding.* A proper injective immersion is an embedding (Theorem [[§41 Embeddings#^thm-41-7|§41.7]]).
+> *An embedding.* A proper injective immersion is an embedding (Theorem [[§41 Embeddings#^thm-41-11|§41.11]]).
 
 ^pf-66-7
 
-*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]], [[§41 Embeddings#^thm-41-7|§41.7]]
+*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]], [[§41 Embeddings#^thm-41-11|§41.11]]
 
 > [!remark] Remark: Why the Last Coordinate Is $f$
-> The last coordinate $f$ in Proposition [[§66 The Whitney Embedding Theorem#^prop-66-7|§66.7]] is not there for injectivity: it makes $F$ proper, since an exhaustion function is proper, and properness is what turns an injective immersion of a noncompact manifold into an embedding (Theorem [[§41 Embeddings#^thm-41-7|§41.7]]).
+> The last coordinate $f$ in Proposition [[§66 The Whitney Embedding Theorem#^prop-66-7|§66.7]] is not there for injectivity: it makes $F$ proper, since an exhaustion function is proper, and properness is what turns an injective immersion of a noncompact manifold into an embedding (Theorem [[§41 Embeddings#^thm-41-11|§41.11]]).
 
 ^rem-66-1
 
@@ -268,7 +268,7 @@ Left: a sublevel set of an exhaustion function on a surface with holes, as on th
 > \Phi_0 = (G \circ F, f) : M \longrightarrow \mathbb{R}^{N+1} .
 > $$
 >
-> $\Phi_0$ is injective, because $G \circ F$ is. It is an immersion: the first $N$ components of $d(\Phi_0)_p$ form $dG_{F(p)} \circ dF_p$, injective since $dF_p$ is injective and $dG_{F(p)}$ is invertible. It is proper: if $K \subseteq \mathbb{R}^{N+1}$ is compact, the last coordinate is at most some $c$ on $K$, so $\Phi_0^{-1}(K)$ is a closed subset ($\Phi_0$ is continuous) of the compact set $f^{-1}\big((-\infty, c]\big)$, hence compact. By Theorem [[§41 Embeddings#^thm-41-7|§41.7]], $\Phi_0$ is a proper embedding. Its image lies in $B^N \times \mathbb{R} \subseteq T_1(S_0)$, with $S_0$ the last coordinate axis: $(y, t)$ with $|y| < 1$ is at distance $|y| < 1$ from $(0, t) \in S_0$.
+> $\Phi_0$ is injective, because $G \circ F$ is. It is an immersion: the first $N$ components of $d(\Phi_0)_p$ form $dG_{F(p)} \circ dF_p$, injective since $dF_p$ is injective and $dG_{F(p)}$ is invertible. It is proper: if $K \subseteq \mathbb{R}^{N+1}$ is compact, the last coordinate is at most some $c$ on $K$, so $\Phi_0^{-1}(K)$ is a closed subset ($\Phi_0$ is continuous) of the compact set $f^{-1}\big((-\infty, c]\big)$, hence compact. By Theorem [[§41 Embeddings#^thm-41-11|§41.11]], $\Phi_0$ is a proper embedding. Its image lies in $B^N \times \mathbb{R} \subseteq T_1(S_0)$, with $S_0$ the last coordinate axis: $(y, t)$ with $|y| < 1$ is at distance $|y| < 1$ from $(0, t) \in S_0$.
 >
 > *Step 2: lowering the dimension by one.* Claim: *if $\Phi : M \to \mathbb{R}^n$ is a proper embedding with $\Phi(M) \subseteq T_R(S)$ for a line $S$ through $0$, and $n > 2m + 1$, then there are a line $\ell$ and a proper embedding $\Phi' = \pi_\ell \circ \Phi : M \to \mathbb{R}^{n-1}$ with $\Phi'(M) \subseteq T_{R'}(S')$ for a line $S'$ through $0$ in $\mathbb{R}^{n-1}$ and some $R'$.*
 >
@@ -282,13 +282,13 @@ Left: a sublevel set of an exhaustion function on a surface with holes, as on th
 >
 > (e) *Two tubes with non-parallel axes meet in a bounded set.* Let $u = v/|v|$. The map $(a, b) \mapsto as - bu$ is linear and injective on $\mathbb{R}^2$, since $s$ and $u$ are linearly independent ($\ell \neq S$). The continuous function $(a, b) \mapsto |as - bu|$ is positive on the compact unit circle, so it has a minimum $\mu > 0$ there, and by homogeneity $|as - bu| \ge \mu\sqrt{a^2 + b^2}$ for all $(a, b)$. If $x \in T_R(S) \cap T_{R_1}(\ell)$, write $x = as + e_1 = bu + e_2$ with $|e_1| < R$, $|e_2| < R_1$. Then $|as - bu| = |e_2 - e_1| < R + R_1$, so $|a| < (R + R_1)/\mu$ and $|x| \le |a| + |e_1| < (R + R_1)/\mu + R =: D$.
 >
-> (f) *Conclusion of the claim.* $\Phi'$ is a proper injective immersion, hence an embedding (Theorem [[§41 Embeddings#^thm-41-7|§41.7]]), with image in the tube $T_{R'}(S')$.
+> (f) *Conclusion of the claim.* $\Phi'$ is a proper injective immersion, hence an embedding (Theorem [[§41 Embeddings#^thm-41-11|§41.11]]), with image in the tube $T_{R'}(S')$.
 >
 > *Step 3: iterate.* Start from $\Phi_0$ ($n = N + 1$). While $n > 2m + 1$, Step 2 lowers $n$ by one, keeping a proper embedding with image in a tube; it stops at a proper embedding into $\mathbb{R}^{2m+1}$. If already $N + 1 \le 2m + 1$, follow $\Phi_0$ by the inclusion $\mathbb{R}^{N+1} \subseteq \mathbb{R}^{2m+1}$, a proper embedding (the preimage of a compact set is its intersection with the closed subspace $\mathbb{R}^{N+1}$); a composite of proper embeddings is a proper embedding.
 
 ^pf-66-8
 
-*Uses:* [[§65 Partitions of Unity#^prop-65-13|§65.13]], [[§41 Embeddings#^thm-41-7|§41.7]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]], [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]], [[§62 Sets of Measure Zero#^lem-62-1|§62.1]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§66 The Whitney Embedding Theorem#^lem-66-4|§66.4]]
+*Uses:* [[§65 Partitions of Unity#^prop-65-13|§65.13]], [[§41 Embeddings#^thm-41-11|§41.11]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]], [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]], [[§62 Sets of Measure Zero#^lem-62-1|§62.1]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§66 The Whitney Embedding Theorem#^lem-66-4|§66.4]]
 
 > [!theorem] Proposition §66.9: The Slices Are Compact and Embed in $\mathbb{R}^{2m+1}$
 > Let $f$ be an exhaustion function on $M$, $\dim M = m$, and let $b < a$ be regular values of $f$. Let $E = f^{-1}\big([b, a]\big)$, or $E = f^{-1}\big((-\infty, a]\big)$.

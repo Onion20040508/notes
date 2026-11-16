@@ -27,9 +27,9 @@ tags: [topology, hub]
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
 - [[§2 Topological Manifolds#^prop-2-12|Proposition §2.12: Manifolds Are Locally Compact]]
-- [[§41 Embeddings#^prop-41-6|Proposition §41.6: Proper Maps into Manifolds Are Closed]]
-- [[§41 Embeddings#^cor-41-8|Corollary §41.8: Injective Immersions of Compact Manifolds]]
-- [[§41 Embeddings#^prop-41-12|Proposition §41.12: Closed Embeddings Are the Proper Ones]]
+- [[§41 Embeddings#^prop-41-10|Proposition §41.10: Proper Maps into Manifolds Are Closed]]
+- [[§41 Embeddings#^cor-41-12|Corollary §41.12: Injective Immersions of Compact Manifolds]]
+- [[§41 Embeddings#^prop-41-16|Proposition §41.16: Closed Embeddings Are the Proper Ones]]
 
 ## Connections
 - **Partner result.** It pairs with [[Compact Subspace of a Hausdorff Space is Closed]] ([[§18 Compact Spaces#^rem-18-4|Summary: Compact and Closed]]). In a compact Hausdorff space the two together say that a subset is closed exactly when it is compact.

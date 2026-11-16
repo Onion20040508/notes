@@ -19,7 +19,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§70 Complete Vector Fields#^lem-70-1|Lemma §70.1: Uniform Time Lemma]]
 - [[§70 Complete Vector Fields#^prop-70-7|Proposition §70.7: The Flow of a Complete Field]]
-- [[§71 The Exponential Map#^prop-71-12|Proposition §71.12: Smoothness and the Differential at 0]]
+- [[§71 The Exponential Map#^prop-71-13|Proposition §71.13: Smoothness and the Differential at 0]]
 - [[§72 Lie Derivatives#^lem-72-2|Lemma §72.2: φ_t Is a Diffeomorphism from M_t onto M_-t]]
 - [[§72 Lie Derivatives#^lem-72-4|Lemma §72.4: The Lie Derivative Exists and Is Smooth]]
 - [[§72 Lie Derivatives#^lem-72-5|Lemma §72.5: Canonical Form Near a Regular Point]]

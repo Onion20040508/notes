@@ -160,13 +160,13 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 4.6 | [[§35 Local Diffeomorphisms#^cor-35-3\|Cor. §35.3]] |
 | Proposition 4.8 | [[§35 Local Diffeomorphisms#^thm-35-2\|Thm. §35.2]], [[§36 Submersions#^prop-36-1\|Prop. §36.1]] |
 | Theorem 4.12 | [[§36 Submersions#^thm-36-6\|Thm. §36.6]], [[§40 Immersions#^thm-40-1\|Thm. §40.1]] |
-| Example 4.20 | [[§41 Embeddings#^prop-41-14\|Prop. §41.14]] |
-| Lemma 4.21 | [[§41 Embeddings#^lem-41-13\|Lem. §41.13]] |
-| Proposition 4.22 | [[§41 Embeddings#^thm-41-7\|Thm. §41.7]], [[§41 Embeddings#^cor-41-8\|Cor. §41.8]] |
+| Example 4.20 | [[§41 Embeddings#^prop-41-18\|Prop. §41.18]] |
+| Lemma 4.21 | [[§41 Embeddings#^lem-41-17\|Lem. §41.17]] |
+| Proposition 4.22 | [[§41 Embeddings#^thm-41-11\|Thm. §41.11]], [[§41 Embeddings#^cor-41-12\|Cor. §41.12]] |
 | Proposition 4.28 | [[§36 Submersions#^cor-36-9\|Cor. §36.9]] |
 | Problem 4-5 | [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4\|Prop. §18.4]], [[§47 The Hopf Fibration#^ex-47-1\|Ex. §47.1]], [[§47 The Hopf Fibration#^ex-47-2\|Ex. §47.2]] |
 | Proposition 5.2 | [[§41 Embeddings#^thm-41-1\|Thm. §41.1]], [[§41 Embeddings#^thm-41-5\|Thm. §41.5]] |
-| Proposition 5.5 | [[§41 Embeddings#^prop-41-12\|Prop. §41.12]] |
+| Proposition 5.5 | [[§41 Embeddings#^prop-41-16\|Prop. §41.16]] |
 | Theorem 5.8 | [[§37 Regular Submanifolds#^def-37-2\|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3\|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-3\|Prop. §37.3]], [[§41 Embeddings#^thm-41-5\|Thm. §41.5]] |
 | Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-6\|Thm. §7.6]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|Thm. §38.2]] |
 | Corollary 5.30 | [[§37 Regular Submanifolds#^lem-37-5\|Lem. §37.5]] |
@@ -194,6 +194,8 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 6-2 | [[§66 The Whitney Embedding Theorem#^lem-66-4\|Lem. §66.4]], [[§66 The Whitney Embedding Theorem#^lem-66-5\|Lem. §66.5]], [[§66 The Whitney Embedding Theorem#^thm-66-6\|Thm. §66.6]] |
 | Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-5\|Prop. §26.5]], [[§39 Transversality and Lagrange Multipliers#^thm-39-1\|Thm. §39.1]], [[§39 Transversality and Lagrange Multipliers#^cor-39-5\|Cor. §39.5]], [[§39 Transversality and Lagrange Multipliers#^thm-39-9\|Thm. §39.9]] |
 | Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
+| Theorem 7.5 | [[§61 Lie Group Morphisms and Linear Groups#^cor-61-3\|Cor. §61.3]] |
+| Proposition 7.11 | [[§61 Lie Group Morphisms and Linear Groups#^prop-61-4\|Prop. §61.4]] |
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |
 | Example 7.27 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6\|Prop. §11.6]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1\|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3\|Cor. §23.3]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
 | Example 7.28 | [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
@@ -208,18 +210,19 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 8.16 | [[§59 Related Vector Fields#^prop-59-1\|Prop. §59.1]] |
 | Proposition 8.19 | [[§59 Related Vector Fields#^prop-59-2\|Prop. §59.2]] |
 | Corollary 8.21 | [[§59 Related Vector Fields#^prop-59-2\|Prop. §59.2]] |
+| Proposition 8.23 | [[§59 Related Vector Fields#^prop-59-6\|Prop. §59.6]] |
 | Lemma 8.25 | [[§58 Lie Bracket and Lie Algebra#^lem-58-1\|Lem. §58.1]] |
 | Proposition 8.26 | [[§58 Lie Bracket and Lie Algebra#^prop-58-2\|Prop. §58.2]] |
 | Proposition 8.28 | [[§58 Lie Bracket and Lie Algebra#^cor-58-5\|Cor. §58.5]] |
 | Proposition 8.30 | [[§59 Related Vector Fields#^prop-59-3\|Prop. §59.3]] |
 | Corollary 8.31 | [[§59 Related Vector Fields#^cor-59-4\|Cor. §59.4]] |
-| Corollary 8.32 | [[§59 Related Vector Fields#^prop-59-6\|Prop. §59.6]] |
+| Corollary 8.32 | [[§59 Related Vector Fields#^prop-59-7\|Prop. §59.7]] |
 | Proposition 8.33 | [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-6\|Cor. §60.6]] |
 | Theorem 8.37 | [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5\|Def. §60.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7\|Lem. §60.7]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8\|Prop. §60.8]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9\|Thm. §60.9]] |
-| Proposition 8.41 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5\|Thm. §61.5]] |
+| Proposition 8.41 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-7\|Thm. §61.7]] |
 | Theorem 8.44 | [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1\|Lem. §61.1]], [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2\|Prop. §61.2]] |
-| Theorem 8.46 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5\|Thm. §61.5]] |
-| Problem 8-15 | [[§65 Partitions of Unity#^thm-65-11\|Thm. §65.11]], [[§59 Related Vector Fields#^lem-59-7\|Lem. §59.7]], [[§65 Partitions of Unity#^ex-65-7\|Ex. §65.7]] |
+| Theorem 8.46 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-7\|Thm. §61.7]] |
+| Problem 8-15 | [[§65 Partitions of Unity#^thm-65-11\|Thm. §65.11]], [[§59 Related Vector Fields#^lem-59-10\|Lem. §59.10]], [[§65 Partitions of Unity#^ex-65-7\|Ex. §65.7]] |
 | Example 9.1 | [[§68 Local Existence and Uniqueness#^ex-68-1\|Ex. §68.1]] |
 | Proposition 9.2 | [[§68 Local Existence and Uniqueness#^thm-68-2\|Thm. §68.2]] |
 | Lemma 9.3 | [[§67 Integral Curves#^lem-67-4\|Lem. §67.4]] |
@@ -261,11 +264,13 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 14.11 | [[§76 The Wedge Product#^lem-76-5\|Lem. §76.5]], [[§76 The Wedge Product#^prop-76-7\|Prop. §76.7]] |
 | Theorem 16.34 | [[§73 Stokes' Theorem in Calculus III#^thm-73-2\|Thm. §73.2]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |
+| Example 19.1 | [[§59 Related Vector Fields#^ex-59-2\|Ex. §59.2]] |
+| Proposition 19.3 | [[§59 Related Vector Fields#^cor-59-9\|Cor. §59.9]] |
 | Theorem 20.1 | [[§71 The Exponential Map#^prop-71-1\|Prop. §71.1]] |
-| Proposition 20.2 | [[§71 The Exponential Map#^thm-71-11\|Thm. §71.11]] |
-| Example 20.4 | [[§71 The Exponential Map#^thm-71-11\|Thm. §71.11]] |
+| Proposition 20.2 | [[§71 The Exponential Map#^thm-71-12\|Thm. §71.12]] |
+| Example 20.4 | [[§71 The Exponential Map#^thm-71-12\|Thm. §71.12]] |
 | Proposition 20.5 | [[§71 The Exponential Map#^prop-71-2\|Prop. §71.2]] |
-| Proposition 20.8 | [[§71 The Exponential Map#^cor-71-4\|Cor. §71.4]], [[§71 The Exponential Map#^prop-71-12\|Prop. §71.12]], [[§71 The Exponential Map#^cor-71-9\|Cor. §71.9]] |
+| Proposition 20.8 | [[§71 The Exponential Map#^cor-71-4\|Cor. §71.4]], [[§71 The Exponential Map#^prop-71-13\|Prop. §71.13]], [[§71 The Exponential Map#^cor-71-10\|Cor. §71.10]] |
 | Problem 20-8 | [[§71 The Exponential Map#^rem-71-1\|Rem. Warning in §71]] |
 | Lemma 21.1 | [[§13 Group Actions and Orbit Spaces#^lem-13-2\|Lem. §13.2]], [[§13 Group Actions and Orbit Spaces#^lem-13-3\|Lem. §13.3]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1\|Prop. §15.1]] |
 | Example 21.3 | [[§13 Group Actions and Orbit Spaces#^ex-13-8\|Ex. §13.8]] |
@@ -295,7 +300,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition A.45 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Proposition A.50 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Lemma A.52 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
-| Theorem A.57 | [[§41 Embeddings#^prop-41-6\|Prop. §41.6]] |
+| Theorem A.57 | [[§41 Embeddings#^prop-41-10\|Prop. §41.10]] |
 | Proposition A.60 | [[§65 Partitions of Unity#^lem-65-4\|Lem. §65.4]] |
 | Corollary B.21 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |
 | Proposition B.24 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |

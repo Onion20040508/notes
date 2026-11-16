@@ -81,7 +81,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The analytic input: the vector-valued implicit function theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]] (one-equation version in 452: [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]]) and the inverse function theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] (two-variable version in 452: [[Inverse Function Theorem (several variables)|452 §16.2]]).
-> - The external description becomes the regular value theorem for manifolds, [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], and adapted charts, [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]] — the slice description, a fourth equivalent one ([[§37 Regular Submanifolds#^prop-37-13|§37.13]]); the internal one becomes the local normal form for immersions, [[§40 Immersions#^thm-40-1|§40.1]].
+> - The external description becomes the regular value theorem for manifolds, [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], and adapted charts, [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]] — the slice description, a fourth equivalent one ([[§37 Regular Submanifolds#^prop-37-14|§37.14]]); the internal one becomes the local normal form for immersions, [[§40 Immersions#^thm-40-1|§40.1]].
 > - The tangent space in both pictures: [[§25 The Geometric Tangent Space#^cor-25-4|§25.4]].
 
 The circle in its three descriptions is collected in [[§24 The Circle|§24]].

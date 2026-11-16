@@ -445,7 +445,7 @@ The derivative of the curve $V_t$ at $t = 0$ is $(\mathcal{L}_{\mathbf{X}}\mathb
 *Uses:* [[§72 Lie Derivatives#^thm-72-9|§72.9]], [[§70 Complete Vector Fields#^lem-70-8|§70.8]]
 
 > [!remark] Remark: Commuting Flows of Incomplete Fields
-> For incomplete fields, condition (3) is delicate: $\varphi_s \circ \psi_t(p)$ need not be defined for all $s, t$, which is why it is stated with intervals $I$, $J$ on which one of the two compositions exists. A problem on the next homework shows why this care is needed.
+> For incomplete fields, condition (3) is delicate: $\varphi_s \circ \psi_t(p)$ need not be defined for all $s, t$, which is why it is stated with intervals $I$, $J$ on which one of the two compositions exists. Example [[§69 Maximal Integral Curves and Flows#^ex-69-3|§69.3]] (Assignment 8, Problem 1) shows the care needed already for a single incomplete field: there $\varphi_t \circ \varphi_s(p)$ is defined only when $s$ and $t + s$ lie below the escape time of $p$.
 
 ^rem-72-5
 
@@ -598,3 +598,126 @@ The statement is local, so on a manifold it holds in any chart at $p$, with the 
 ^pf-ex-72-2
 
 *Uses:* [[§72 Lie Derivatives#^prop-72-12|§72.12]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]]
+
+> [!example] Example §72.3: A Lie Derivative Computed from the Definition
+> On $\mathbb{R}^2$ let $\mathbf{Y} = y\, \partial/\partial x + x\, \partial/\partial y$, the second field of Example [[§72 Lie Derivatives#^ex-72-2|§72.2]], and let $\mathbf{X} = f\, \partial/\partial x + g\, \partial/\partial y$ be any smooth vector field. Computed directly from Definition [[§72 Lie Derivatives#^def-72-2|§72.2]], with the flow $\psi_t$ of $\mathbf{Y}$,
+>
+> $$
+> \mathcal{L}_{\mathbf{Y}}\mathbf{X} = \big( \mathbf{Y}(f) - g \big)\, \frac{\partial}{\partial x} + \big( \mathbf{Y}(g) - f \big)\, \frac{\partial}{\partial y} ,
+> $$
+>
+> and this is $[\mathbf{Y}, \mathbf{X}]$, as Theorem [[§72 Lie Derivatives#^thm-72-6|§72.6]] asserts.
+
+^ex-72-3
+
+> [!proof]+ Proof
+> *(Assignment 8, Problem 4: the submitted solution.)*
+>
+> *The flow of $\mathbf{Y}$.* By Example [[§72 Lie Derivatives#^ex-72-2|§72.2]] (Assignment 7, Problem 3), $\mathbf{Y}$ is complete, with flow $\psi_t(x, y) = (x\cosh t + y\sinh t,\ x\sinh t + y\cosh t)$. Since $\cosh$ is even and $\sinh$ is odd,
+>
+> $$
+> \psi_{-t}(x, y) = (x\cosh t - y\sinh t,\ -x\sinh t + y\cosh t) .
+> $$
+>
+> *The differential of $\psi_{-t}$.* The Jacobian matrix of $\psi_{-t}$ at any point $q \in \mathbb{R}^2$ is
+>
+> $$
+> \begin{pmatrix} \cosh t & -\sinh t \\ -\sinh t & \cosh t \end{pmatrix} ,
+> $$
+>
+> independent of $q$. Hence, in the coordinate bases (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]),
+>
+> $$
+> \begin{aligned}d(\psi_{-t})_q\Big( \frac{\partial}{\partial x}\Big|_q \Big) &= \cosh t\, \frac{\partial}{\partial x}\Big|_{\psi_{-t}(q)} - \sinh t\, \frac{\partial}{\partial y}\Big|_{\psi_{-t}(q)} , \\
+> d(\psi_{-t})_q\Big( \frac{\partial}{\partial y}\Big|_q \Big) &= -\sinh t\, \frac{\partial}{\partial x}\Big|_{\psi_{-t}(q)} + \cosh t\, \frac{\partial}{\partial y}\Big|_{\psi_{-t}(q)} .\end{aligned}
+> $$
+>
+> *Pulling $\mathbf{X}$ back to $p$.* Fix $p \in \mathbb{R}^2$ and $t \in \mathbb{R}$, and let $q = \psi_t(p)$, so that $\psi_{-t}(q) = p$ by the group law. By the linearity of $d(\psi_{-t})_{\psi_t(p)}$ and the formulas above,
+>
+> $$
+> V(t) := d(\psi_{-t})_{\psi_t(p)}\big( \mathbf{X}_{\psi_t(p)} \big) = V^1(t)\, \frac{\partial}{\partial x}\Big|_p + V^2(t)\, \frac{\partial}{\partial y}\Big|_p \in T_p\mathbb{R}^2 ,
+> $$
+>
+> where
+>
+> $$
+> V^1(t) = \cosh t\, f(\psi_t(p)) - \sinh t\, g(\psi_t(p)), \qquad V^2(t) = -\sinh t\, f(\psi_t(p)) + \cosh t\, g(\psi_t(p)) .
+> $$
+>
+> Since $\psi_0 = \mathrm{id}$, $V(0) = \mathbf{X}_p$.
+>
+> *The Lie derivative.* $V(t)$ and $\mathbf{X}_p$ lie in the same vector space $T_p\mathbb{R}^2$, with the fixed basis $\partial_x|_p$, $\partial_y|_p$; so by Definition [[§72 Lie Derivatives#^def-72-2|§72.2]]
+>
+> $$
+> (\mathcal{L}_{\mathbf{Y}}\mathbf{X})_p = \lim_{t \to 0} \frac{1}{t}\big( V(t) - \mathbf{X}_p \big) = \dot V^1(0)\, \frac{\partial}{\partial x}\Big|_p + \dot V^2(0)\, \frac{\partial}{\partial y}\Big|_p ,
+> $$
+>
+> the $V^i$ being smooth functions of $t$. Since $t \mapsto \psi_t(p)$ is the integral curve of $\mathbf{Y}$ starting at $p$,
+>
+> $$
+> \frac{d}{dt}\Big|_{t=0} f(\psi_t(p)) = (\mathbf{Y} f)(p), \qquad \frac{d}{dt}\Big|_{t=0} g(\psi_t(p)) = (\mathbf{Y} g)(p)
+> $$
+>
+> (Proposition [[§72 Lie Derivatives#^prop-72-1|§72.1]]). By the product rule, with $\cosh 0 = 1$, $\sinh 0 = 0$, $\cosh' = \sinh$, $\sinh' = \cosh$,
+>
+> $$
+> \begin{aligned}\dot V^1(0) &= \sinh 0\, f(p) + \cosh 0\, (\mathbf{Y} f)(p) - \cosh 0\, g(p) - \sinh 0\, (\mathbf{Y} g)(p) = (\mathbf{Y} f)(p) - g(p) , \\
+> \dot V^2(0) &= -\cosh 0\, f(p) - \sinh 0\, (\mathbf{Y} f)(p) + \sinh 0\, g(p) + \cosh 0\, (\mathbf{Y} g)(p) = (\mathbf{Y} g)(p) - f(p) .\end{aligned}
+> $$
+>
+> This is the formula of the statement.
+>
+> *Comparison with $[\mathbf{Y}, \mathbf{X}]$.* By Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], $[\mathbf{Y}, \mathbf{X}] = \sum_i \big( \mathbf{Y}(\mathbf{X}^i) - \mathbf{X}(\mathbf{Y}^i) \big)\, \partial_i$. Here $\mathbf{Y}^1 = y$, $\mathbf{Y}^2 = x$, $\mathbf{X}^1 = f$, $\mathbf{X}^2 = g$, and $\mathbf{X}(y) = g$, $\mathbf{X}(x) = f$. Hence
+>
+> $$
+> [\mathbf{Y}, \mathbf{X}] = \big( \mathbf{Y}(f) - \mathbf{X}(y) \big)\, \frac{\partial}{\partial x} + \big( \mathbf{Y}(g) - \mathbf{X}(x) \big)\, \frac{\partial}{\partial y} = \big( \mathbf{Y}(f) - g \big)\, \frac{\partial}{\partial x} + \big( \mathbf{Y}(g) - f \big)\, \frac{\partial}{\partial y} = \mathcal{L}_{\mathbf{Y}}\mathbf{X} .
+> $$
+
+^pf-ex-72-3
+
+*Uses:* [[§72 Lie Derivatives#^ex-72-2|Ex. §72.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§72 Lie Derivatives#^def-72-2|Def. §72.2]], [[§72 Lie Derivatives#^prop-72-1|§72.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]]
+
+> [!theorem] Proposition §72.14: The Lie Derivative along a Linear Field
+> Let $A = (a_{ij})$ be an $n \times n$ real matrix and $\mathbf{X}^A$ the linear vector field $\mathbf{X}^A_p = pA$ on $\mathbb{R}^n$, points being row vectors (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-6|§61.6]]). Let $\mathbf{V} = \sum_i V^i\, \partial/\partial x^i \in \mathfrak{X}(\mathbb{R}^n)$, and write $V = (V^1, \ldots, V^n) : \mathbb{R}^n \to \mathbb{R}^n$ for its row of coefficients.
+>
+> 1. $\mathbf{X}^A$ is complete, with flow $\varphi_t(p) = p\, e^{tA}$.
+> 2. The row of coefficients of $\mathcal{L}_{\mathbf{X}^A}\mathbf{V}$ at $p$ is
+>
+> $$
+> \frac{d}{dt}\Big|_{t=0} V\big( p\, e^{tA} \big)\, e^{-tA} = \big( \mathbf{X}^A V \big)(p) - V(p)\, A , \qquad \mathbf{X}^A V = \big( \mathbf{X}^A V^1, \ldots, \mathbf{X}^A V^n \big) ;
+> $$
+>
+> in components, $\big( \mathcal{L}_{\mathbf{X}^A}\mathbf{V} \big)^i = \mathbf{X}^A(V^i) - \sum_j V^j a_{ji}$.
+>
+> 3. For $\mathbf{V} = \mathbf{X}^B$: $\mathcal{L}_{\mathbf{X}^A}\mathbf{X}^B = \mathbf{X}^{[A, B]}$, in agreement with Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-9|§61.9]] and Theorem [[§72 Lie Derivatives#^thm-72-6|§72.6]].
+
+^prop-72-14
+
+> [!remark]- Connections
+> - The flow $p \mapsto p\,e^{tA}$ is the solution of the linear system $x' = xA$: [[Matrix Exponential Solution]].
+> - The bracket of two linear fields, computed with derivations: [[§61 Lie Group Morphisms and Linear Groups#^prop-61-9|§61.9]].
+
+> [!proof]+ Proof
+> *(Not from the assignment: the computation of Example [[§72 Lie Derivatives#^ex-72-3|§72.3]] for any matrix $A$. There $A = \begin{psmallmatrix} 0 & 1 \\ 1 & 0 \end{psmallmatrix}$, $pA = (y, x)$ and $V = (f, g)$, $VA = (g, f)$.)*
+>
+> *(1).* For $p \in \mathbb{R}^n$ the curve $c(t) = p\, e^{tA}$ is defined for all $t$, has $c(0) = p$, and by Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]](2)
+>
+> $$
+> \dot c(t) = p\, e^{tA} A = c(t)\, A = \mathbf{X}^A_{c(t)} .
+> $$
+>
+> So it is the maximal integral curve starting at $p$ (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]), and $\mathbf{X}^A$ is complete.
+>
+> *(2).* The map $\varphi_{-t}$ is linear, $q \mapsto q\, e^{-tA}$, with components $\sum_j q^j (e^{-tA})_{ji}$; its Jacobian matrix is constant, and its differential at any point sends the vector with coefficient row $w$ to the vector with coefficient row $w\, e^{-tA}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]). So the vector $d(\varphi_{-t})_{\varphi_t(p)}\big( \mathbf{V}_{\varphi_t(p)} \big) \in T_p\mathbb{R}^n$ has the coefficient row $V(p\, e^{tA})\, e^{-tA}$, a smooth function of $t$ with values in the fixed space $\mathbb{R}^n$, equal to $V(p)$ at $t = 0$. The limit of Definition [[§72 Lie Derivatives#^def-72-2|§72.2]] is its derivative at $t = 0$. By the product rule, with $\frac{d}{dt}\big|_{t=0} e^{-tA} = -A$ (Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]](2)) and $\frac{d}{dt}\big|_{t=0} V^i(\varphi_t(p)) = (\mathbf{X}^A V^i)(p)$ (Proposition [[§72 Lie Derivatives#^prop-72-1|§72.1]]),
+>
+> $$
+> \frac{d}{dt}\Big|_{t=0} V\big( p\, e^{tA} \big)\, e^{-tA} = \big( \mathbf{X}^A V \big)(p)\, e^{0} + V(p)\, (-A) = \big( \mathbf{X}^A V \big)(p) - V(p)\, A .
+> $$
+>
+> The $i$-th entry of the row $V(p)A$ is $\sum_j V^j(p)\, a_{ji}$.
+>
+> *(3).* For $\mathbf{V} = \mathbf{X}^B$, $V(p) = pB$, and $V(p\, e^{tA}) = p\, e^{tA} B$ has derivative $pAB$ at $t = 0$; so $(\mathbf{X}^A V)(p) = pAB$ and, by (2), the row of $\mathcal{L}_{\mathbf{X}^A}\mathbf{X}^B$ at $p$ is $pAB - pBA = p\,[A, B]$.
+
+^pf-72-14
+
+*Uses:* [[§72 Lie Derivatives#^ex-72-3|Ex. §72.3]], [[§71 The Exponential Map#^lem-71-5|§71.5]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§72 Lie Derivatives#^def-72-2|Def. §72.2]], [[§72 Lie Derivatives#^prop-72-1|§72.1]]

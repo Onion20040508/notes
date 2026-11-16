@@ -7,8 +7,8 @@ tags: [chapter, differentiable-manifolds]
 # 5 Submersions, Immersions and Submanifolds
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (55), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (12), [[· 3 Smooth Structures|3 Smooth Structures]] (130), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (148)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (1), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (53), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (28), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (13), [[· 9 Sard's Theorem|9 Sard's Theorem]] (34), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (3), [[· 11 Differential Forms|11 Differential Forms]] (1)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (57), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (12), [[· 3 Smooth Structures|3 Smooth Structures]] (135), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (155)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (1), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (53), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (28), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (22), [[· 9 Sard's Theorem|9 Sard's Theorem]] (34), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (16), [[· 11 Differential Forms|11 Differential Forms]] (1)
 **Builds on (other subjects):** [[Linear Algebra]] (12), [[Topology]] (38), [[Multivariable Analysis]] (4)
 
 ## Sections
@@ -30,12 +30,12 @@ tags: [chapter, differentiable-manifolds]
 - [[Transverse Preimage Theorem for Manifolds]] (§39.1)
 - [[Immersion Normal Form]] (§40.1)
 - [[Images of Embeddings Are Submanifolds]] (§41.1)
-- [[Injective Proper Immersions Are Embeddings]] (§41.7)
+- [[Injective Proper Immersions Are Embeddings]] (§41.11)
 - [[SU(2) Is a Double Cover of SO(3)]] (§44.5)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]: 383 later results
-- [[§37 Regular Submanifolds#^prop-37-1|Proposition §37.1: Open Subsets of a Product]]: 379 later results
-- [[§37 Regular Submanifolds#^prop-37-3|Proposition §37.3: The Induced Smooth Structure]]: 99 later results
-- [[§37 Regular Submanifolds#^lem-37-5|Lemma §37.5: Smooth Maps and Regular Submanifolds]]: 96 later results
+- [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]: 397 later results
+- [[§37 Regular Submanifolds#^prop-37-1|Proposition §37.1: Open Subsets of a Product]]: 393 later results
+- [[§37 Regular Submanifolds#^prop-37-3|Proposition §37.3: The Induced Smooth Structure]]: 110 later results
+- [[§37 Regular Submanifolds#^lem-37-5|Lemma §37.5: Smooth Maps and Regular Submanifolds]]: 106 later results

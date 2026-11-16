@@ -18,11 +18,12 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§68 Local Existence and Uniqueness#^cor-68-4|Corollary §68.4: Non-Injective Integral Curves Repeat]]
 - [[§69 Maximal Integral Curves and Flows#^prop-69-1|Proposition §69.1: The Maximal Integral Curve]]
+- [[§69 Maximal Integral Curves and Flows#^ex-69-3|Example §69.3: A Flow Whose Domain Is Not a Product]]
 - [[§69 Maximal Integral Curves and Flows#^thm-69-4|Theorem §69.4: Maximal Integral Curves and the Flow]]
 - [[§70 Complete Vector Fields#^lem-70-1|Lemma §70.1: Uniform Time Lemma]]
 - [[§71 The Exponential Map#^prop-71-1|Proposition §71.1: One-Parameter Subgroups]]
 - [[§71 The Exponential Map#^prop-71-2|Proposition §71.2: Exponentials of Multiples]]
-- [[§71 The Exponential Map#^prop-71-10|Proposition §71.10: Integral Curves of Left-Invariant Fields on a Linear Group]]
+- [[§71 The Exponential Map#^prop-71-11|Proposition §71.11: Integral Curves of Left-Invariant Fields on a Linear Group]]
 - [[§72 Lie Derivatives#^thm-72-9|Theorem §72.9: Commuting Fields: Invariance and Commuting Flows]]
 
 ## Connections

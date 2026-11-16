@@ -325,7 +325,7 @@ Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] is the case of a diffeomorphism 
 
 ![[m591-70-6.svg]]
 
-The theorem says more: left-translating by $g$ the integral curve through the identity gives the integral curve through $g$, as in the figure. For $G = \mathrm{GL}(n, \mathbb{R})$ and the left-invariant field with $\mathbf{X}_I = A$, the curve $\varphi^I(t)$ is the matrix exponential $e^{tA}$ (Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]]), and $\varphi^g(t) = g\, e^{tA}$.
+The theorem says more: left-translating by $g$ the integral curve through the identity gives the integral curve through $g$, as in the figure. For $G = \mathrm{GL}(n, \mathbb{R})$ and the left-invariant field with $\mathbf{X}_I = A$, the curve $\varphi^I(t)$ is the matrix exponential $e^{tA}$ (Theorem [[§71 The Exponential Map#^thm-71-12|§71.12]]), and $\varphi^g(t) = g\, e^{tA}$.
 
 ![[m591-70-a2.gif|480]]
 

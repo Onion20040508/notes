@@ -83,6 +83,8 @@ The next example is problematic: examples like it are what make the theory of fl
 > \Big( -\infty,\ \frac{1}{x_0 y_0} \Big).
 > $$
 >
+> The proof that the curve cannot be continued past $1/(x_0y_0)$, and the flow of $\mathbf{X}$ on the quadrant, are in Example [[§69 Maximal Integral Curves and Flows#^ex-69-3|§69.3]].
+>
 > *Lee: Example 9.10*
 
 ^ex-69-1
@@ -308,3 +310,104 @@ The hypothesis that $s$, $t$ and $s + t$ lie in the domain is needed: with flows
 ![[m591-69-a1.gif|560]]
 
 *(Not from lecture; animation added, vault only.)* The group law as an identity of maps. A disc of initial points under the spiral flow $\dot x = -0.12x - y$, $\dot y = x - 0.12y$ (chosen for the picture). Left, $\varphi_t \circ \varphi_s$: the disc flows for time $s = 1.7$ (red trail), then the clock is restarted and it flows for time $t = 1.9$ (green). Right, $\varphi_{t+s}$: one clock runs for $3.6$. Both end in the same place.
+
+> [!example] Example §69.3: A Flow Whose Domain Is Not a Product
+> Let $M = \{ (x, y) \in \mathbb{R}^2 : x > 0,\ y > 0 \}$ be the open first quadrant and $\mathbf{X} = y x^2\, \partial/\partial x$, the field of Example [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]].
+>
+> 1. The maximal integral curve starting at $p = (x_0, y_0)$ is
+>
+> $$
+> \varphi^p(t) = \Big( \frac{x_0}{1 - x_0 y_0\, t},\ y_0 \Big), \qquad t \in \big( \alpha(p), \beta(p) \big) = \Big( -\infty,\ \frac{1}{x_0 y_0} \Big) .
+> $$
+>
+> 2. The flow domain and the flow (Definition [[§69 Maximal Integral Curves and Flows#^def-69-2|§69.2]]) are
+>
+> $$
+> \mathcal{D} = \big\{ \big(t, (x, y)\big) \in \mathbb{R} \times M : t\,x\,y < 1 \big\}, \qquad \varphi\big(t, (x, y)\big) = \Big( \frac{x}{1 - xy\, t},\ y \Big) .
+> $$
+>
+> $\mathcal{D}$ is open in $\mathbb{R} \times M$ and $\varphi$ is smooth, as Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2) asserts for every vector field. $\mathcal{D}$ is not a product $I \times M$: for $t > 0$ the map $\varphi_t$ is defined only on $\{ (x, y) \in M : xy < 1/t \}$.
+>
+> 3. For $s < \beta(p)$, the escape time of $\varphi_s(p)$ is $\beta(\varphi_s(p)) = \beta(p) - s$.
+> 4. For $s < \beta(p)$ and $t + s < \beta(p)$, both sides of $\varphi_t(\varphi_s(p)) = \varphi_{t+s}(p)$ are defined, and they are equal.
+>
+> Parts (3) and (4) are Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]] for this field, obtained by direct computation.
+
+^ex-69-3
+
+> [!remark]- Connections
+> - The domain $M_t$ of the time-$t$ map of a flow: [[§72 Lie Derivatives#^lem-72-2|§72.2]]; the care needed with two incomplete fields: [[§72 Lie Derivatives#^rem-72-5|Remark: Commuting Flows of Incomplete Fields]].
+> - An integral curve that stops in finite time must leave every compact set: [[§70 Complete Vector Fields#^thm-70-4|§70.4]].
+
+> [!proof]+ Proof
+> *(Assignment 8, Problem 1: the submitted solution.)*
+>
+> *(1), the integral curves.* Let $p = (x_0, y_0) \in M$ and let $c = (c_1, c_2) : J \to M$ be a smooth curve with $c(0) = p$. By Proposition [[§67 Integral Curves#^prop-67-2|§67.2]], $c$ is an integral curve of $\mathbf{X}$ if and only if
+>
+> $$
+> \dot c_1 = c_2\, c_1^2, \qquad \dot c_2 = 0 .
+> $$
+>
+> The second equation and $c_2(0) = y_0$ give $c_2(t) = y_0$ for all $t \in J$, and the first becomes $\dot c_1 = y_0\, c_1^2$ with $c_1(0) = x_0$. Since $c_1 > 0$ on $J$, we may divide by $c_1^2$:
+>
+> $$
+> \frac{d}{dt}\Big( -\frac{1}{c_1} \Big) = \frac{\dot c_1}{c_1^2} = y_0, \qquad \text{so} \qquad -\frac{1}{c_1(t)} = y_0 t - \frac{1}{x_0} ,
+> $$
+>
+> the constant being fixed by $c_1(0) = x_0$. Hence
+>
+> $$
+> c_1(t) = \frac{x_0}{1 - x_0 y_0\, t}, \qquad c_2(t) = y_0 .
+> $$
+>
+> Each step is reversible as long as $c_1 > 0$; so conversely this formula defines an integral curve of $\mathbf{X}$ starting at $p$ on any interval around $0$ on which it is defined and positive.
+>
+> *(1), the maximal interval.* Let $T = 1/(x_0 y_0) > 0$. The formula for $c_1$ is defined for $t \neq T$; the largest interval containing $0$ and avoiding $T$ is $(-\infty, T)$, and for $t < T$ we have $1 - x_0 y_0\, t > 0$, so $c_1(t) > 0$ and $c(t) \in M$. So the formula defines an integral curve $c : (-\infty, T) \to M$ starting at $p$. It is maximal: suppose $\tilde c : \tilde J \to M$ is an integral curve starting at $p$ on an interval $\tilde J \ni 0$ with $T \in \tilde J$. By uniqueness (Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]), $\tilde c = c$ on $[0, T)$, so $\tilde c_1(t) = c_1(t) \to +\infty$ as $t \to T^-$, contradicting the continuity of $\tilde c$ at $T$. Hence $c = \varphi^p$, $\alpha(p) = -\infty$ and $\beta(p) = 1/(x_0 y_0)$ (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]).
+>
+> *(2), the flow.* By Definition [[§69 Maximal Integral Curves and Flows#^def-69-2|§69.2]] and (1),
+>
+> $$
+> \mathcal{D} = \bigcup_{(x, y) \in M} \Big( -\infty,\ \frac{1}{xy} \Big) \times \{ (x, y) \} = \Big\{ \big(t, (x, y)\big) \in \mathbb{R} \times M : t < \frac{1}{xy} \Big\} ,
+> $$
+>
+> and $\varphi(t, (x, y)) = \varphi^{(x, y)}(t)$ is the formula of the statement. Since $xy > 0$ on $M$, the condition $t < 1/(xy)$ is equivalent to $t\,x\,y < 1$.
+>
+> *(2), $\mathcal{D}$ is open.* The function $f : \mathbb{R} \times M \to \mathbb{R}$, $f(t, x, y) = t\,x\,y$, is a polynomial, hence continuous, and $\mathcal{D} = f^{-1}\big( (-\infty, 1) \big)$ is the preimage of an open set.
+>
+> *(2), $\varphi$ is smooth.* On $\mathcal{D}$ the denominator $1 - xy\, t$ is positive. So the first component of $\varphi$ is a rational function of $(t, x, y)$ whose denominator does not vanish on the open set $\mathcal{D} \subseteq \mathbb{R}^3$, hence smooth; the second component, $y$, is smooth.
+>
+> *(2), not a product.* If $\mathcal{D}$ were $I \times M$ for a set $I \subseteq \mathbb{R}$, then $I$ would contain no $t > 0$, since the point $(x, y) = (2/t, 1)$ of $M$ has $t\,x\,y = 2 \ge 1$; and it would contain every $t \le 0$. But $\mathcal{D} \neq (-\infty, 0] \times M$: $\big(\tfrac12, (1, 1)\big) \in \mathcal{D}$.
+>
+> *(3).* Let $s < \beta(p)$, so that $1 - x_0 y_0\, s > 0$, and put $p' = \varphi_s(p) = (x', y_0)$ with $x' = x_0/(1 - x_0 y_0\, s)$. By (1),
+>
+> $$
+> \beta(p') = \frac{1}{x' y_0} = \frac{1 - x_0 y_0\, s}{x_0 y_0} = \beta(p) - s .
+> $$
+>
+> *(4), both sides are defined.* Since $t + s < \beta(p)$, we get $t < \beta(p) - s = \beta(p')$ by (3); so $(t, p') \in \mathcal{D}$ and $\varphi_t(\varphi_s(p))$ is defined. Also $(t + s, p) \in \mathcal{D}$, so $\varphi_{t+s}(p)$ is defined.
+>
+> *(4), the group law.* Multiplying numerator and denominator by $1 - x_0 y_0\, s > 0$,
+>
+> $$
+> \frac{x'}{1 - x' y_0\, t} = \frac{\dfrac{x_0}{1 - x_0 y_0\, s}}{1 - \dfrac{x_0 y_0\, t}{1 - x_0 y_0\, s}} = \frac{x_0}{(1 - x_0 y_0\, s) - x_0 y_0\, t} = \frac{x_0}{1 - x_0 y_0\, (t + s)} .
+> $$
+>
+> Hence
+>
+> $$
+> \varphi_t\big( \varphi_s(p) \big) = \varphi_t(x', y_0) = \Big( \frac{x'}{1 - x' y_0\, t},\ y_0 \Big) = \Big( \frac{x_0}{1 - x_0 y_0\, (t + s)},\ y_0 \Big) = \varphi_{t+s}(p) .
+> $$
+
+^pf-ex-69-3
+
+*Uses:* [[§67 Integral Curves#^prop-67-2|§67.2]], [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], [[§69 Maximal Integral Curves and Flows#^def-69-2|Def. §69.2]]
+
+The assignment asks for (4) when $t$, $s$ and $t + s$ are all less than $\beta(p)$. The computation uses only $s < \beta(p)$ and $t + s < \beta(p)$, as in Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]](2); $t$ itself may be larger than $\beta(p)$ when $s$ is negative.
+
+![[m591-77-1.svg]]
+
+*(Not from lecture; figure added.)* Example [[§69 Maximal Integral Curves and Flows#^ex-69-3|§69.3]]. Left: the integral curves of $\mathbf{X} = y x^2\, \partial/\partial x$ in the quadrant run to the right along the lines $y = y_0$, faster and faster; all points of the hyperbola $xy = 1/T$ (dashed) escape at the same time $\beta = T$. Right: the slice $y = 1$ of the flow domain, $\{ (x, t) : t < 1/x \}$ (shaded), an open set that is not a product; over $x = 1$ it contains the interval $(-\infty, 1)$, the maximal domain of the integral curve starting at $(1, 1)$.
+
+![[m591-77-a1.gif|620]]
+
+*(Not from lecture; animation added, vault only.)* Example [[§69 Maximal Integral Curves and Flows#^ex-69-3|§69.3]] in motion. Six points start on the line $x_0 = 0.6$ and run to the right along $y = y_0$; the point at height $y_0$ leaves the quadrant at its escape time $\beta = 1/(x_0y_0)$, the higher ones first. The dashed hyperbola $xy = 1/t$ sweeps towards the axes: at time $t$ the points on it are the ones escaping, and the time-$t$ map $\varphi_t$ is defined only below it.

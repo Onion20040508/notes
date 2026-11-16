@@ -15,7 +15,7 @@ The course has built manifolds in two ways. The *geometric* picture is the equat
 
 | Aspect | Geometric (inside $\mathbb{R}^N$) | Abstract (charts only) | Bridge |
 |---|---|---|---|
-| the object | external, internal or graph description | maximal atlas; submanifold | Proposition [[§37 Regular Submanifolds#^prop-37-13\|§37.13]] |
+| the object | external, internal or graph description | maximal atlas; submanifold | Proposition [[§37 Regular Submanifolds#^prop-37-14\|§37.14]] |
 | smooth structure | graph charts | chosen or induced atlas | Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]](1) |
 | smooth maps | smooth between vector spaces | smooth in charts | Lemma [[§37 Regular Submanifolds#^lem-37-5\|§37.5]] |
 | tangent space | velocities, $\ker F'(p)$ | derivations of germs | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9\|§29.9]] |
@@ -30,9 +30,9 @@ The course has built manifolds in two ways. The *geometric* picture is the equat
 
 | Geometric | Abstract | How they correspond |
 |---|---|---|
-| Definition [[§20 Manifolds in Euclidean Space#^def-20-1\|§20.1]] (external: a regular level set) | Definition [[§37 Regular Submanifolds#^def-37-2\|§37.2]] (a coordinate slice of an adapted chart, Definition [[§37 Regular Submanifolds#^def-37-3\|§37.3]]) | Proposition [[§37 Regular Submanifolds#^prop-37-13\|§37.13]]: the slice is a fourth equivalent description |
+| Definition [[§20 Manifolds in Euclidean Space#^def-20-1\|§20.1]] (external: a regular level set) | Definition [[§37 Regular Submanifolds#^def-37-2\|§37.2]] (a coordinate slice of an adapted chart, Definition [[§37 Regular Submanifolds#^def-37-3\|§37.3]]) | Proposition [[§37 Regular Submanifolds#^prop-37-14\|§37.14]]: the slice is a fourth equivalent description |
 | Definition [[§20 Manifolds in Euclidean Space#^def-20-2\|§20.2]], Definition [[§20 Manifolds in Euclidean Space#^def-20-3\|§20.3]] (a parametrization) | the inverse of a chart (the remark [[§20 Manifolds in Euclidean Space#^rem-20-2\|A Parametrization Is an Inverse Chart]]); Definition [[§36 Submersions#^def-36-2\|§36.2]] | rank $n$ Jacobian = immersion; homeomorphism onto the image = embedding (Definition [[§41 Embeddings#^def-41-1\|§41.1]]) |
-| Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1\|§20.1]] (the descriptions agree) | Proposition [[§37 Regular Submanifolds#^prop-37-13\|§37.13]], Theorem [[§41 Embeddings#^thm-41-1\|§41.1]] | straightening a graph gives an adapted chart |
+| Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1\|§20.1]] (the descriptions agree) | Proposition [[§37 Regular Submanifolds#^prop-37-14\|§37.14]], Theorem [[§41 Embeddings#^thm-41-1\|§41.1]] | straightening a graph gives an adapted chart |
 | Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2\|§20.2]] (graph charts) | Definition [[§17 Differentiable Structures#^def-17-11\|§17.11]]; Proposition [[§37 Regular Submanifolds#^prop-37-3\|§37.3]] (induced structure) | Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]](1): the same structure |
 | Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4\|§22.4]] (a vector space) | Proposition [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2\|§22.2]] | a vector space is a manifold with one global chart |
 
@@ -48,7 +48,7 @@ Geometrically, a manifold is a subset of a Euclidean space with one of three equ
 
 ![[§37 Regular Submanifolds#^def-37-2]]
 
-A subset of $\mathbb{R}^{n+k}$ has the three Euclidean descriptions near each point exactly when it is a submanifold of $\mathbb{R}^{n+k}$ (Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]]), and the graph-chart structure of Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]] is then the induced one (Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]](1)). The circle shows all of this at once: its external, graph and internal descriptions (Example [[§24 The Circle#^ex-24-1|§24.1]]), and three atlases — four charts, stereographic and angle — that define one smooth structure ([[§24 The Circle|§24]]).
+A subset of $\mathbb{R}^{n+k}$ has the three Euclidean descriptions near each point exactly when it is a submanifold of $\mathbb{R}^{n+k}$ (Proposition [[§37 Regular Submanifolds#^prop-37-14|§37.14]]), and the graph-chart structure of Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]] is then the induced one (Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]](1)). The circle shows all of this at once: its external, graph and internal descriptions (Example [[§24 The Circle#^ex-24-1|§24.1]]), and three atlases — four charts, stereographic and angle — that define one smooth structure ([[§24 The Circle|§24]]).
 
 ## Where the Examples Come From
 
@@ -116,7 +116,7 @@ The two differentials are built in opposite directions. The Jacobian is computed
 | the gradient $\nabla f(p)$, a row of the Jacobian | Definition [[§32 The Cotangent Space#^def-32-5\|§32.5]] ($df_p \in T_p^*M$); Lemma [[§33 Covectors in Coordinates#^lem-33-1\|§33.1]] | the remark [[§33 Covectors in Coordinates#^rem-33-2\|Differential — Not Gradient]]: a gradient needs an inner product |
 | the transpose $J_F^{\mathsf T}$ of the Jacobian | Definition [[§34 The Cotangent Space from Germs#^def-34-3\|§34.3]] (pullback of covectors, the dual map of $F_{\ast p}$) | in dual bases the matrix of $F_p^{\ast}$ is the transpose of the matrix of $F_{\ast p}$ |
 | $\nabla(f \circ F) = J_F^{\mathsf T} \nabla f$ (chain rule) | Proposition [[§34 The Cotangent Space from Germs#^prop-34-7\|§34.7]] ($F_p^{\ast}\, df = d(f \circ F)$) | the remark [[§34 The Cotangent Space from Germs#^rem-34-4\|The Two Differentials Meet]] |
-| normal vectors, spanned by $\nabla F^1, \ldots, \nabla F^k$ | Definition [[§37 Regular Submanifolds#^def-37-4\|§37.4]] (conormal space); Proposition [[§37 Regular Submanifolds#^prop-37-12\|§37.12]] (basis $dF^i|_p$) | the remark [[§37 Regular Submanifolds#^rem-37-1\|No Normal Vectors Without a Metric]] |
+| normal vectors, spanned by $\nabla F^1, \ldots, \nabla F^k$ | Definition [[§37 Regular Submanifolds#^def-37-4\|§37.4]] (conormal space); Proposition [[§37 Regular Submanifolds#^prop-37-13\|§37.13]] (basis $dF^i|_p$) | the remark [[§37 Regular Submanifolds#^rem-37-1\|No Normal Vectors Without a Metric]] |
 
 ![[§32 The Cotangent Space#^def-32-5]]
 
@@ -172,7 +172,7 @@ A geometric manifold sits in $\mathbb{R}^N$ by construction; an abstract one nee
 
 ![[§41 Embeddings#^def-41-1]]
 
-The image of an embedding is a submanifold (Theorem [[§41 Embeddings#^thm-41-1|§41.1]]), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. The internal description of Definition [[§20 Manifolds in Euclidean Space#^def-20-2|§20.2]] is exactly a local embedding: an injective immersion that is a homeomorphism onto its image. Injective immersions alone are not enough: their images are immersed submanifolds (Definition [[§41 Embeddings#^def-41-3|§41.3]], Proposition [[§41 Embeddings#^prop-41-16|§41.16]]), regular exactly when the immersion is an embedding (Proposition [[§41 Embeddings#^prop-41-18|§41.18]]); the figure-eight and the irrational line on the torus are immersed but not regular (Example [[§41 Embeddings#^ex-41-3|§41.3]]).
+The image of an embedding is a submanifold (Theorem [[§41 Embeddings#^thm-41-1|§41.1]]), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. The internal description of Definition [[§20 Manifolds in Euclidean Space#^def-20-2|§20.2]] is exactly a local embedding: an injective immersion that is a homeomorphism onto its image. Injective immersions alone are not enough: their images are immersed submanifolds (Definition [[§41 Embeddings#^def-41-3|§41.3]], Proposition [[§41 Embeddings#^prop-41-20|§41.20]]), regular exactly when the immersion is an embedding (Proposition [[§41 Embeddings#^prop-41-22|§41.22]]); the figure-eight and the irrational line on the torus are immersed but not regular (Example [[§41 Embeddings#^ex-41-4|§41.4]]).
 
 Whether every abstract manifold has an embedding into some $\mathbb{R}^N$ is answered by the Whitney embedding theorem, proved later in the course ([[§66 The Whitney Embedding Theorem|§66]]):
 

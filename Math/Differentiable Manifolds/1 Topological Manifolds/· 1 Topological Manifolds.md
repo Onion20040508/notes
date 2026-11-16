@@ -10,7 +10,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (6), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (1), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (1)
-**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (72), [[· 3 Smooth Structures|3 Smooth Structures]] (74), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (41), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (55), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (26), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (5), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 9 Sard's Theorem|9 Sard's Theorem]] (4), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (2)
+**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (72), [[· 3 Smooth Structures|3 Smooth Structures]] (74), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (41), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (57), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (26), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (5), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 9 Sard's Theorem|9 Sard's Theorem]] (4), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (4)
 **Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (69), [[Multivariable Analysis]] (6)
 
 ## Sections
@@ -36,7 +36,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]: 391 later results
-- [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3: Universal Property of the Subspace Topology]]: 386 later results
-- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 384 later results
-- [[§3 Subspaces and Products#^lem-3-2|Lemma §3.2: Open in Open is Open]]: 383 later results
+- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]: 405 later results
+- [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3: Universal Property of the Subspace Topology]]: 400 later results
+- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 398 later results
+- [[§3 Subspaces and Products#^lem-3-2|Lemma §3.2: Open in Open is Open]]: 397 later results

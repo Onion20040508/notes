@@ -18,9 +18,9 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§71 The Exponential Map#^prop-71-1|Proposition §71.1: One-Parameter Subgroups]]
-- [[§71 The Exponential Map#^cor-71-8|Corollary §71.8: The Exponential Map of a Lie Subgroup]]
-- [[§71 The Exponential Map#^cor-71-9|Corollary §71.9: Lie Group Morphisms Commute with the Exponential Map]]
-- [[§71 The Exponential Map#^prop-71-10|Proposition §71.10: Integral Curves of Left-Invariant Fields on a Linear Group]]
+- [[§71 The Exponential Map#^cor-71-9|Corollary §71.9: The Exponential Map of a Lie Subgroup]]
+- [[§71 The Exponential Map#^cor-71-10|Corollary §71.10: Lie Group Morphisms Commute with the Exponential Map]]
+- [[§71 The Exponential Map#^prop-71-11|Proposition §71.11: Integral Curves of Left-Invariant Fields on a Linear Group]]
 
 ## Connections
 - TODO

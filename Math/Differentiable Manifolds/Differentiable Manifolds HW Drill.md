@@ -741,7 +741,7 @@ Show the image of $\gamma$ is dense in $T$, and deduce $\gamma$ is not an embedd
 - [ ] Q5 State Dirichlet's lemma and show $\gamma(n_N) \to \gamma(0)$ with $n_N \ge 1$.
 - [ ] Q6 Show $\{e^{2\pi i\alpha k}\}_{k\in\mathbb{Z}}$ is dense in $S^1$ (powers of $w_N = e^{i\theta_N}$ with $0 < |\theta_N| < 2\pi/N$), and deduce $\gamma(\mathbb{R})$ dense.
 - [ ] Q7 Show $\gamma^{-1} : \gamma(\mathbb{R}) \to \mathbb{R}$ is not continuous.
-- [ ] Q8 Second proof: images of embeddings are locally closed (Prop §41.10); a dense locally closed set is open (Cor §41.11). Why is $\gamma(\mathbb{R})$ not open in $T$?
+- [ ] Q8 Second proof: images of embeddings are locally closed (Prop §41.14); a dense locally closed set is open (Cor §41.15). Why is $\gamma(\mathbb{R})$ not open in $T$?
 - [ ] Q9 **[why]** What if $\alpha$ is rational? Is $\gamma$ injective; what is its image?
 
 > [!tip]- Hint (b): strategy
@@ -750,7 +750,7 @@ Show the image of $\gamma$ is dense in $T$, and deduce $\gamma$ is not an embedd
 > [!tip]- Hints: definitions and results for the whole problem
 > **Topic and definitions.** Immersion [[§36 Submersions#^def-36-2|Def §36.2]]; embedding [[§41 Embeddings#^def-41-1|Def §41.1]]; locally closed [[§41 Embeddings#^def-41-2|Def §41.2]]; immersed submanifold [[§41 Embeddings#^def-41-3|Def §41.3]].
 >
-> **Key results.** Dirichlet [[§41 Embeddings#^lem-41-13|Lem §41.13]]; [[§41 Embeddings#^prop-41-14|Prop §41.14]] (this problem); images of embeddings are locally closed [[§41 Embeddings#^prop-41-10|Prop §41.10]]; dense regular submanifolds are open [[§41 Embeddings#^cor-41-11|Cor §41.11]]; [[§41 Embeddings#^ex-41-3|Ex §41.3]]; injective immersion that is not a homeomorphism onto its image [[§40 Immersions#^ex-40-2|Ex §40.2]].
+> **Key results.** Dirichlet [[§41 Embeddings#^lem-41-17|Lem §41.17]]; [[§41 Embeddings#^prop-41-18|Prop §41.18]] (this problem); images of embeddings are locally closed [[§41 Embeddings#^prop-41-14|Prop §41.14]]; dense regular submanifolds are open [[§41 Embeddings#^cor-41-15|Cor §41.15]]; [[§41 Embeddings#^ex-41-4|Ex §41.4]]; injective immersion that is not a homeomorphism onto its image [[§40 Immersions#^ex-40-2|Ex §40.2]].
 >
 > **Difficulty** (a) 1, (b) 2. Submitted solution: proves Dirichlet-based density in full; non-embedding by the sequence $n_N$. The notes add the locally-closed proof.
 >
@@ -799,11 +799,11 @@ $F : M \to N$ smooth, $S \subset N$ a regular submanifold, $F$ transverse to $S$
 > [!tip]- Hints: definitions, results, strategy
 > **Topic and definitions.** Regular submanifold [[§37 Regular Submanifolds#^def-37-2|Def §37.2]]; adapted chart [[§37 Regular Submanifolds#^def-37-3|Def §37.3]]; transversality to a submanifold [[§39 Transversality and Lagrange Multipliers#^def-39-1|Def §39.1]]; normal space [[§39 Transversality and Lagrange Multipliers#^def-39-2|Def §39.2]].
 >
-> **Key results.** [[§39 Transversality and Lagrange Multipliers#^thm-39-1|Thm §39.1]] (this problem); adapted charts give local defining maps [[§37 Regular Submanifolds#^prop-37-11|Prop §37.11]]; level sets near a regular point [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|Lem §38.1]]; RVT for manifolds [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|Thm §38.2]]; submersion normal form [[§36 Submersions#^thm-36-6|Thm §36.6]]; tangent spaces of a regular submanifold [[§37 Regular Submanifolds#^prop-37-9|Prop §37.9]]; [[§39 Transversality and Lagrange Multipliers#^prop-39-3|Prop §39.3]], special cases [[§39 Transversality and Lagrange Multipliers#^cor-39-5|Cor §39.5]]; HW2.5 = [[§26 Transversality#^thm-26-1|Thm §26.1]].
+> **Key results.** [[§39 Transversality and Lagrange Multipliers#^thm-39-1|Thm §39.1]] (this problem); adapted charts give local defining maps [[§37 Regular Submanifolds#^prop-37-12|Prop §37.12]]; level sets near a regular point [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|Lem §38.1]]; RVT for manifolds [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|Thm §38.2]]; submersion normal form [[§36 Submersions#^thm-36-6|Thm §36.6]]; tangent spaces of a regular submanifold [[§37 Regular Submanifolds#^prop-37-9|Prop §37.9]]; [[§39 Transversality and Lagrange Multipliers#^prop-39-3|Prop §39.3]], special cases [[§39 Transversality and Lagrange Multipliers#^cor-39-5|Cor §39.5]]; HW2.5 = [[§26 Transversality#^thm-26-1|Thm §26.1]].
 >
 > **Strategy (S12, S11, S8, S6).** Locally $S = x_b^{-1}(0)$ with $x_b$ a submersion; transversality makes $x_b\circ F$ a submersion at $p$ (the HW2.5 lifting); RVT or normal form gives an adapted chart; tangent space by "$\subseteq$ + dimension count".
 >
-> **Difficulty 2.** Submitted solution: complete but long (explicit translation and permutation of the normal-form chart). The notes record two completed steps: the normal form is applied at a single point, and $\ker(x_b)_\ast$ is computed directly (now Prop §37.11 and Lem §38.1).
+> **Difficulty 2.** Submitted solution: complete but long (explicit translation and permutation of the normal-form chart). The notes record two completed steps: the normal form is applied at a single point, and $\ker(x_b)_\ast$ is computed directly (now Prop §37.12 and Lem §38.1).
 
 ### HW5.3 Morse functions and the zero section
 
@@ -875,7 +875,7 @@ $M = G^{-1}(0)$, $G : N \to \mathbb{R}^k$, $0$ a regular value. Prove $\{dG^1_p,
 
 ^hw5-4-b
 
-- [ ] Q4 Show $\dim N_pM = k$ using an adapted chart. (Or without a chart: $\iota_p^{\ast}$ is onto because $\iota_{\ast p}$ is injective, the dual of an injection being a surjection; then rank–nullity. The official route, [[§37 Regular Submanifolds#^pf-37-12-2|second proof of Prop §37.12]].)
+- [ ] Q4 Show $\dim N_pM = k$ using an adapted chart. (Or without a chart: $\iota_p^{\ast}$ is onto because $\iota_{\ast p}$ is injective, the dual of an injection being a surjection; then rank–nullity. The official route, [[§37 Regular Submanifolds#^pf-37-13-2|second proof of Prop §37.13]].)
 - [ ] Q5 Show $dG^j_p \in N_pM$.
 - [ ] Q6 Show the $dG^j_p$ are independent: if $\sum c_j dG^j_p = 0$, pick $v$ with $G_{\ast p}v = c$.
 - [ ] Q7 Derive $d\Phi_p = \sum\lambda_j dG^j_p$ (in $\mathbb{R}^n$: $\nabla\Phi = \sum\lambda_j\nabla G^j$) at critical points; why are the $\lambda_j$ unique?
@@ -888,7 +888,7 @@ $M = G^{-1}(0)$, $G : N \to \mathbb{R}^k$, $0$ a regular value. Prove $\{dG^1_p,
 > [!tip]- Hints: definitions and results for the whole problem
 > **Topic and definitions.** Conormal space [[§37 Regular Submanifolds#^def-37-4|Def §37.4]]; pullback of covectors [[§34 The Cotangent Space from Germs#^def-34-3|Def §34.3]]; differential of a function [[§32 The Cotangent Space#^def-32-5|Def §32.5]]; critical point [[§36 Submersions#^def-36-3|Def §36.3]].
 >
-> **Key results.** Critical points of a restriction [[§39 Transversality and Lagrange Multipliers#^prop-39-6|Prop §39.6]] (part (a)); basis of the conormal space [[§37 Regular Submanifolds#^prop-37-12|Prop §37.12]]; conormal space of a regular level set [[§39 Transversality and Lagrange Multipliers#^prop-39-7|Prop §39.7]] (part (b)); submersions to $\mathbb{R}^k$ and independent differentials [[§36 Submersions#^prop-36-4|Prop §36.4]]; Lagrange multipliers [[§39 Transversality and Lagrange Multipliers#^thm-39-8|Thm §39.8]]; pullback commutes with $d$ [[§34 The Cotangent Space from Germs#^prop-34-7|Prop §34.7]]; local extrema are critical [[§36 Submersions#^prop-36-3|Prop §36.3]]; adapted charts give local defining maps [[§37 Regular Submanifolds#^prop-37-11|Prop §37.11]].
+> **Key results.** Critical points of a restriction [[§39 Transversality and Lagrange Multipliers#^prop-39-6|Prop §39.6]] (part (a)); basis of the conormal space [[§37 Regular Submanifolds#^prop-37-13|Prop §37.13]]; conormal space of a regular level set [[§39 Transversality and Lagrange Multipliers#^prop-39-7|Prop §39.7]] (part (b)); submersions to $\mathbb{R}^k$ and independent differentials [[§36 Submersions#^prop-36-4|Prop §36.4]]; Lagrange multipliers [[§39 Transversality and Lagrange Multipliers#^thm-39-8|Thm §39.8]]; pullback commutes with $d$ [[§34 The Cotangent Space from Germs#^prop-34-7|Prop §34.7]]; local extrema are critical [[§36 Submersions#^prop-36-3|Prop §36.3]]; adapted charts give local defining maps [[§37 Regular Submanifolds#^prop-37-12|Prop §37.12]].
 >
 > **Difficulty 2.** Submitted solution: gives two independence arguments (Jacobian rank and the coordinate-free "$|c|^2 = 0$" trick); the notes make them the two proofs of Prop §36.4. Official solution of (b): its independence argument takes partials of $G$ in a chart of $M$, where $G$ is constant, so every such partial is $0$; the full-rank matrix is the Jacobian of $G$ in a chart of $N$ (or use Q6). Its Lagrange step names $df_p$, which is $0$ at a critical point, where it means $d\Phi_p$.
 
@@ -932,9 +932,9 @@ $E(p,v) = p + v$; $q$ is a focal point if $q = E(p,v)$ with $dE_{(p,v)}$ not of 
 > [!tip]- Hints: definitions and results for the whole problem
 > **Topic and definitions.** Normal bundle [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^def-48-2|Def §48.2]]; endpoint map [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^def-48-3|Def §48.3]]; focal point [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^def-48-4|Def §48.4]]; adapted chart [[§37 Regular Submanifolds#^def-37-3|Def §37.3]]; regular value [[§30 The Differential in Coordinates#^def-30-4|Def §30.4]].
 >
-> **Key results.** [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-1|Prop §48.1]] (part (a)); adapted chart of a submanifold of $\mathbb{R}^n$ [[§37 Regular Submanifolds#^lem-37-14|Lem §37.14]]; fourth description [[§37 Regular Submanifolds#^prop-37-13|Prop §37.13]]; normal bundle is a fibration [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|Prop §48.2]]; [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-1|Ex §48.1]] (part (b)); focal points are centres of curvature [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^rem-48-1|Remark: Focal Points Are Centres of Curvature]].
+> **Key results.** [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-1|Prop §48.1]] (part (a)); adapted chart of a submanifold of $\mathbb{R}^n$ [[§37 Regular Submanifolds#^lem-37-15|Lem §37.15]]; fourth description [[§37 Regular Submanifolds#^prop-37-14|Prop §37.14]]; normal bundle is a fibration [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|Prop §48.2]]; [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-1|Ex §48.1]] (part (b)); focal points are centres of curvature [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^rem-48-1|Remark: Focal Points Are Centres of Curvature]].
 >
-> **Difficulty** (a) 2, (b) 1. Submitted solution: follows the hint; result $r(a) = (-4a^3, 3a^2 + \tfrac12)$, cusp at $(0, \tfrac12)$ (the evolute). The notes record two completed steps in (a): that the first $m$ coordinate vectors span $T_pM$ (Lem §37.14(3)), and converting the Jacobian from the coordinates $(x, v)$ to standard coordinates of $\mathbb{R}^{2n}$. Official solution: (a) writes the lower-left block of $dF$ as $(P \ \ 0)$, while it is generally full; the rank argument is unaffected. (b) uses $(t, s) \mapsto ((t, t^2), s(2t, -1))$ as coordinates on $\mathcal{N}$ without showing it is a diffeomorphism onto $\mathcal{N}$ (Q8).
+> **Difficulty** (a) 2, (b) 1. Submitted solution: follows the hint; result $r(a) = (-4a^3, 3a^2 + \tfrac12)$, cusp at $(0, \tfrac12)$ (the evolute). The notes record two completed steps in (a): that the first $m$ coordinate vectors span $T_pM$ (Lem §37.15(3)), and converting the Jacobian from the coordinates $(x, v)$ to standard coordinates of $\mathbb{R}^{2n}$. Official solution: (a) writes the lower-left block of $dF$ as $(P \ \ 0)$, while it is generally full; the rank argument is unaffected. (b) uses $(t, s) \mapsto ((t, t^2), s(2t, -1))$ as coordinates on $\mathcal{N}$ without showing it is a diffeomorphism onto $\mathcal{N}$ (Q8).
 
 ## Strategy codes
 Codes match the "Strategies" list in `review_spec.md` where they coincide (S1–S13); S14–S15 are additional.

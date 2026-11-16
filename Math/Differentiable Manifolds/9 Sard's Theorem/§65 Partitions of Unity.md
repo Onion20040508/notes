@@ -314,7 +314,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 ## Application: Extending Functions and Vector Fields from a Submanifold
 
-*(Assignment 7, Problem 1, and what its proof gives.)* The standard use of a partition of unity: build an object locally, in charts, and glue the local pieces. Here the local pieces come from adapted charts (Lemmas [[§37 Regular Submanifolds#^lem-37-8|§37.8]] and [[§59 Related Vector Fields#^lem-59-7|§59.7]]), and the gluing is the next lemma.
+*(Assignment 7, Problem 1, and what its proof gives.)* The standard use of a partition of unity: build an object locally, in charts, and glue the local pieces. Here the local pieces come from adapted charts (Lemmas [[§37 Regular Submanifolds#^lem-37-8|§37.8]] and [[§59 Related Vector Fields#^lem-59-10|§59.10]]), and the gluing is the next lemma.
 
 > [!theorem] Lemma §65.9: Gluing Vector Fields with a Partition of Unity
 > Let $\{U_\alpha\}_{\alpha \in A}$ be an open cover of $M$, $\mathbf{Y}_\alpha \in \mathfrak{X}(U_\alpha)$ for each $\alpha \in A$, and $\{\chi_\alpha\}_{\alpha \in A}$ a partition of unity subordinate to the cover (Definitions [[§65 Partitions of Unity#^def-65-2|§65.2]] and [[§65 Partitions of Unity#^def-65-3|§65.3]]). Then:
@@ -369,13 +369,13 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 ^thm-65-11
 
 > [!proof]+ Proof
-> *(Assignment 7, Problem 1: the submitted solution, which proves (2); its steps are stated above as Lemmas [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§37 Regular Submanifolds#^lem-37-7|§37.7]], [[§37 Regular Submanifolds#^lem-37-8|§37.8]], [[§59 Related Vector Fields#^lem-59-7|§59.7]] and [[§65 Partitions of Unity#^lem-65-9|§65.9]]. The problem as posted did not assume $S$ closed; the submitted solution adds this hypothesis, which Example [[§65 Partitions of Unity#^ex-65-7|§65.7]] shows is needed for (2). Part (1) is filled in.)* For $p \in S$, $\widetilde{\mathbf{X}}_p \in T_pM$ while $\mathbf{X}_p \in T_pS$, so “$\widetilde{\mathbf{X}}$ extends $\mathbf{X}$” means $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$; $\iota_{\ast p}$ is kept explicit throughout.
+> *(Assignment 7, Problem 1: the submitted solution, which proves (2); its steps are stated above as Lemmas [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§37 Regular Submanifolds#^lem-37-7|§37.7]], [[§37 Regular Submanifolds#^lem-37-8|§37.8]], [[§59 Related Vector Fields#^lem-59-10|§59.10]] and [[§65 Partitions of Unity#^lem-65-9|§65.9]]. The problem as posted did not assume $S$ closed; the submitted solution adds this hypothesis, which Example [[§65 Partitions of Unity#^ex-65-7|§65.7]] shows is needed for (2). Part (1) is filled in.)* For $p \in S$, $\widetilde{\mathbf{X}}_p \in T_pM$ while $\mathbf{X}_p \in T_pS$, so “$\widetilde{\mathbf{X}}$ extends $\mathbf{X}$” means $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$; $\iota_{\ast p}$ is kept explicit throughout.
 >
 > *(2) The open cover.* By Lemma [[§37 Regular Submanifolds#^lem-37-6|§37.6]], every point of $S$ lies in the domain of an adapted chart with product image; let $\{(U_\alpha, \varphi_\alpha)\}_{\alpha \in A'}$ be a family of such charts whose domains cover $S$. Since $S$ is closed in $M$, $U_0 = M \setminus S$ is open in $M$. With $A = A' \sqcup \{0\}$, $\{U_\alpha\}_{\alpha \in A}$ is an open cover of $M$: every $p \in S$ lies in some $U_\alpha$ with $\alpha \in A'$, and every $p \notin S$ lies in $U_0$.
 >
 > *The partition of unity.* By Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] there is a partition of unity $\{\chi_\alpha\}_{\alpha \in A}$ subordinate to $\{U_\alpha\}_{\alpha \in A}$.
 >
-> *The local extensions.* For $\alpha \in A'$, Lemma [[§59 Related Vector Fields#^lem-59-7|§59.7]] gives $\mathbf{Y}_\alpha \in \mathfrak{X}(U_\alpha)$ with $(\mathbf{Y}_\alpha)_p = \iota_{\ast p}(\mathbf{X}_p)$ for $p \in U_\alpha \cap S$; let $\mathbf{Y}_0 = 0 \in \mathfrak{X}(U_0)$.
+> *The local extensions.* For $\alpha \in A'$, Lemma [[§59 Related Vector Fields#^lem-59-10|§59.10]] gives $\mathbf{Y}_\alpha \in \mathfrak{X}(U_\alpha)$ with $(\mathbf{Y}_\alpha)_p = \iota_{\ast p}(\mathbf{X}_p)$ for $p \in U_\alpha \cap S$; let $\mathbf{Y}_0 = 0 \in \mathfrak{X}(U_0)$.
 >
 > *Gluing.* By Lemma [[§65 Partitions of Unity#^lem-65-9|§65.9]](1) and (2), $\widetilde{\mathbf{X}} = \sum_{\alpha \in A} \chi_\alpha \mathbf{Y}_\alpha \in \mathfrak{X}(M)$. Let $p \in S$. Then $p \notin U_0$, and $(\mathbf{Y}_\alpha)_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $\alpha \in A'$ with $p \in U_\alpha$; by Lemma [[§65 Partitions of Unity#^lem-65-9|§65.9]](3) with $v = \iota_{\ast p}(\mathbf{X}_p)$, $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$.
 >
@@ -383,7 +383,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 ^pf-65-11
 
-*Uses:* [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§59 Related Vector Fields#^lem-59-7|§59.7]], [[§65 Partitions of Unity#^lem-65-9|§65.9]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§37 Regular Submanifolds#^def-37-1|Def. §37.1]]
+*Uses:* [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§59 Related Vector Fields#^lem-59-10|§59.10]], [[§65 Partitions of Unity#^lem-65-9|§65.9]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§37 Regular Submanifolds#^def-37-1|Def. §37.1]]
 
 > [!example] Example §65.7: A Vector Field on a Non-Closed Submanifold That Does Not Extend
 > *(Not from the assignment.)* In $M = \mathbb{R}^2$ let $S = \{(x, 0) : x > 0\}$, and on $S$ let $\mathbf{X} = \frac{1}{x}\, \frac{\partial}{\partial x}\big|^S$. There is no $\widetilde{\mathbf{X}} \in \mathfrak{X}(\mathbb{R}^2)$ with $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $p \in S$. So the hypothesis “$S$ closed” in Theorem [[§65 Partitions of Unity#^thm-65-11|§65.11]](2) cannot be dropped; by part (1), $\mathbf{X}$ does extend to the open set $W = \{(x, y) : x > 0\}$, for instance by $\frac{1}{x}\, \partial/\partial x$.

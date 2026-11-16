@@ -29,7 +29,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ![[m591-33-1.svg]]
 *An embedding factors through its image as a homeomorphism followed by the inclusion: it puts a copy of $M$ inside $N$. The figure-eight of Lee's Example 4.19 ([[§40 Immersions#Images of Immersions|§40]]) is an injective immersion for which the top arrow is not a homeomorphism.*
 
-The standard non-example is the *irrational line on the torus*: for $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$ (the [[Torus|torus]]), $F(t) = [t, \alpha t]$. It is an injective immersion ([[§36 Submersions#^def-36-2|Def. §36.2]]) whose image is dense in $T^2$, and it is not an embedding ([[§41 Embeddings#^prop-41-14|Proposition §41.14]] below, from Assignment 4, Problem 5; Lee, Example 4.20). In lecture its image was also said not to be a regular submanifold of $T^2$ ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]).
+The standard non-example is the *irrational line on the torus*: for $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$ (the [[Torus|torus]]), $F(t) = [t, \alpha t]$. It is an injective immersion ([[§36 Submersions#^def-36-2|Def. §36.2]]) whose image is dense in $T^2$, and it is not an embedding ([[§41 Embeddings#^prop-41-18|Proposition §41.18]] below, from Assignment 4, Problem 5; Lee, Example 4.20). In lecture its image was also said not to be a regular submanifold of $T^2$ ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]).
 
 *In lecture.* Here a line is wrapped around the torus with irrational slope, so it never closes. The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is a submanifold. But the normal form is local in the domain, while being a submanifold is a statement about the whole image. Points outside $U$ contribute segments of the image that are dense, so no matter how $V$ is shrunk, it cannot isolate the piece $F(U)$ alone (orange in the figure).
 
@@ -220,6 +220,208 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 Lee takes (3) as the definition of an embedded submanifold and proves the slice condition (1) from it (his Theorem 5.8); these notes go the other way, as the lectures did. Either way, a regular submanifold and the image of an embedding are the same thing, and the inclusion of a regular submanifold is an embedding. For injective immersions that are not embeddings, the image is only an immersed submanifold ([[§41 Embeddings|§41]]).
 
+## Recognizing Embeddings and Regular Submanifolds
+
+*(Not from lecture. Four tools taken out of the steps of the submitted solution of Assignment 8, Problem 3, where they are used for $\mathrm{SO}(2)$ and for two subgroups of $\mathrm{SL}(2,\mathbb{R})$; they are stated here in general and applied in Example [[§41 Embeddings#^ex-41-3|§41.3]] and Example [[§71 The Exponential Map#^ex-71-5|§71.5]].)*
+
+> [!theorem] Lemma §41.6: A Continuous Left Inverse Makes an Immersion an Embedding
+> Let $F : M \to N$ be a smooth map, $W \subseteq N$ an open set with $F(M) \subseteq W$, and $G : W \to M$ a map with $G \circ F = \mathrm{id}_M$.
+>
+> 1. If $G$ is continuous, then $F : M \to F(M)$ is a homeomorphism, with inverse $G|_{F(M)}$. So if $F$ is also an immersion, then $F$ is an embedding (Definition [[§41 Embeddings#^def-41-1|§41.1]]).
+> 2. If $G$ is smooth, then $F$ is an immersion, and hence an embedding.
+
+^lem-41-6
+
+> [!proof]+ Proof
+> *(Assignment 8, Problem 3: the step “homeomorphisms onto their images” of the submitted solution, used there four times; (2) is filled in.)*
+>
+> *(1).* $F : M \to F(M)$ is onto by definition, and $G|_{F(M)}$ is its inverse: $G(F(p)) = p$ for $p \in M$, and for $y = F(p) \in F(M)$,
+>
+> $$
+> F\big(G(y)\big) = F\big(G(F(p))\big) = F(p) = y .
+> $$
+>
+> Both maps are continuous. $F : M \to N$ is continuous with values in $F(M)$, which carries the subspace topology, so $F : M \to F(M)$ is continuous (Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]]). The subspace topology of $F(M)$ in $N$ is also its subspace topology in the open set $W$, and $G|_{F(M)}$ is the restriction of the continuous map $G$ to this subspace, so it is continuous. Hence $F : M \to F(M)$ is a homeomorphism; an immersion with this property is an embedding by Definition [[§41 Embeddings#^def-41-1|§41.1]].
+>
+> *(2).* $W$ is an open submanifold of $N$, $F$ is smooth as a map into $W$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]]), and $T_{F(p)}W = T_{F(p)}N$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]). By the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), for every $p \in M$,
+>
+> $$
+> G_{\ast F(p)} \circ F_{\ast p} = (G \circ F)_{\ast p} = (\mathrm{id}_M)_{\ast p} = \mathrm{id}_{T_pM} .
+> $$
+>
+> So $F_{\ast p}$ is injective: $F$ is an immersion (Definition [[§36 Submersions#^def-36-2|§36.2]]). A smooth map is continuous, so (1) applies.
+
+^pf-41-6
+
+*Uses:* [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§41 Embeddings#^def-41-1|Def. §41.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§36 Submersions#^def-36-2|Def. §36.2]]
+
+The sections of Proposition [[§45 Fibrations#^prop-45-6|§45.6]], later, are the case $W = N$, $G = \pi$ of (2).
+
+> [!theorem] Lemma §41.7: Immersions and Embeddings into a Regular Submanifold
+> Let $S \subseteq N$ be a regular submanifold, $\iota : S \to N$ the inclusion, and $F : M \to N$ a smooth map with $F(M) \subseteq S$. Write $F_S : M \to S$ for $F$ regarded as a map into $S$; it is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2)), and $F = \iota \circ F_S$. Then:
+>
+> 1. $F$ is an immersion if and only if $F_S$ is an immersion;
+> 2. $F$ is an embedding if and only if $F_S$ is an embedding.
+
+^lem-41-7
+
+> [!proof]+ Proof
+> *(Assignment 8, Problem 3(b): the step “into $\mathrm{SL}(2,\mathbb{R})$” of the submitted solution, in general.)*
+>
+> *(1).* By the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), $F_{\ast p} = \iota_{\ast F(p)} \circ (F_S)_{\ast p}$ for every $p \in M$. Since $\iota_{\ast F(p)}$ is injective (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]), $F_{\ast p}$ and $(F_S)_{\ast p}$ have the same kernel; so one is injective exactly when the other is.
+>
+> *(2).* The images $F(M)$ and $F_S(M)$ are the same set. The manifold $S$ carries the subspace topology of $N$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), so the open sets of $S$ are the sets $O \cap S$ with $O$ open in $N$, and the subspace topology of $F(M)$ in $S$ consists of the sets
+>
+> $$
+> (O \cap S) \cap F(M) = O \cap F(M), \qquad O \text{ open in } N ,
+> $$
+>
+> which is its subspace topology in $N$. So “$M \to F(M)$ is a homeomorphism” is the same condition for $F$ and for $F_S$. With (1), $F$ is an embedding exactly when $F_S$ is (Definition [[§41 Embeddings#^def-41-1|§41.1]]).
+
+^pf-41-7
+
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§41 Embeddings#^def-41-1|Def. §41.1]]
+
+> [!theorem] Corollary §41.8: A Regular Submanifold of a Regular Submanifold
+> Let $S \subseteq N$ be a regular submanifold and $T \subseteq S$ a subset. Then $T$ is a regular submanifold of $S$ if and only if $T$ is a regular submanifold of $N$. In that case the induced smooth structures of $T$ from $S$ and from $N$ are the same, and the codimensions add:
+>
+> $$
+> \dim N - \dim T = (\dim N - \dim S) + (\dim S - \dim T) .
+> $$
+
+^cor-41-8
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* The subspace topologies of $T$ in $S$ and in $N$ agree, as in the proof of Lemma [[§41 Embeddings#^lem-41-7|§41.7]](2). Let $\iota_S : S \to N$ be the inclusion.
+>
+> *If $T$ is a regular submanifold of $S$.* Give $T$ its induced smooth structure $\mathcal{A}$ from $S$. The inclusion $j : T \to S$ is an embedding (Corollary [[§37 Regular Submanifolds#^cor-37-10|§37.10]]). The inclusion $F = \iota_S \circ j : T \to N$ is smooth, as a composite of smooth maps (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), it has image in $S$, and $F_S = j$. By Lemma [[§41 Embeddings#^lem-41-7|§41.7]](2), $F$ is an embedding. So $(T, \mathcal{A})$ satisfies condition (3) of Theorem [[§41 Embeddings#^thm-41-5|§41.5]] in $N$: $T$ is a regular submanifold of $N$, and by the uniqueness there, $\mathcal{A}$ is its induced structure from $N$.
+>
+> *If $T$ is a regular submanifold of $N$.* Give $T$ its induced smooth structure $\mathcal{B}$ from $N$. The inclusion $F : T \to N$ is an embedding (Corollary [[§37 Regular Submanifolds#^cor-37-10|§37.10]]) with image in $S$, so $F_S : T \to S$, the inclusion of $T$ in $S$, is an embedding (Lemma [[§41 Embeddings#^lem-41-7|§41.7]](2)). By Theorem [[§41 Embeddings#^thm-41-5|§41.5]], applied in the manifold $S$, $T$ is a regular submanifold of $S$ and $\mathcal{B}$ is its induced structure from $S$.
+>
+> *The codimensions.* The manifold $T$ has one dimension, whichever way its structure is induced; the displayed identity is arithmetic.
+
+^pf-41-8
+
+*Uses:* [[§41 Embeddings#^lem-41-7|§41.7]], [[§37 Regular Submanifolds#^cor-37-10|§37.10]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§41 Embeddings#^thm-41-5|§41.5]]
+
+> [!theorem] Corollary §41.9: Regular Submanifolds by Local Parametrizations
+> Let $N$ be a smooth manifold of dimension $n$, $S \subseteq N$ a subset with the subspace topology, and $0 \le d \le n$. The following are equivalent:
+>
+> 1. $S$ is a regular submanifold of $N$ of dimension $d$, that is, of codimension $n - d$;
+> 2. every $p \in S$ has a neighbourhood $V$ in $S$, open in $S$, that is the image $V = F(D)$ of an embedding $F : D \to N$ of an open set $D \subseteq \mathbb{R}^d$.
+>
+> In (2), each $F^{-1} : V \to D$ is a smooth chart of $S$ for its induced smooth structure.
+
+^cor-41-9
+
+> [!remark]- Connections
+> - The description by equations, the counterpart of this description by parametrizations: [[§37 Regular Submanifolds#^prop-37-14|§37.14]].
+> - Used for $\mathrm{SO}(2)$: [[§41 Embeddings#^ex-41-3|Ex. §41.3]].
+
+> [!proof]+ Proof
+> *(Assignment 8, Problem 3(a): the way the submitted solution shows that $\mathrm{SO}(2)$ is a regular submanifold, in general; (1) $\Rightarrow$ (2) is filled in.)*
+>
+> *(2) $\Rightarrow$ (1).* Let $p \in S$, and let $V$ and $F$ be as in (2). Since $V$ is open in $S$, $V = S \cap W$ for an open set $W \subseteq N$ (Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]). The image $F(D) = S \cap W$ of the embedding $F$ is a regular submanifold of $N$ of codimension $n - d$ (Theorem [[§41 Embeddings#^thm-41-1|§41.1]]). As $p$ was arbitrary, $S$ is a regular submanifold of $N$ of codimension $n - d$ (Lemma [[§37 Regular Submanifolds#^lem-37-11|§37.11]](2)).
+>
+> *The charts.* By Corollary [[§41 Embeddings#^cor-41-3|§41.3]], $F : D \to V$ is a diffeomorphism, $V$ carrying its induced structure as a regular submanifold of $N$; by Lemma [[§37 Regular Submanifolds#^lem-37-11|§37.11]](3) this is the structure of $V$ as an open subset of $S$. So $F^{-1} : V \to D$ is a diffeomorphism from an open subset of $S$ onto an open subset of $\mathbb{R}^d$, hence a smooth chart of $S$ (Lemma [[§36 Submersions#^lem-36-5|§36.5]]).
+>
+> *(1) $\Rightarrow$ (2).* Let $p \in S$, let $(U, \varphi = (x_a, x_b))$ be an adapted chart at $p$, and $\varphi_S = x_a|_{U \cap S}$ its induced chart, a homeomorphism of $V = U \cap S$, open in $S$, onto an open set $D = \varphi_S(V) \subseteq \mathbb{R}^d$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]](1)). Put $F = \iota \circ \varphi_S^{-1} : D \to N$, with $\iota : S \to N$ the inclusion. The chart inverse $\varphi_S^{-1} : D \to V$ is a diffeomorphism (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), so $F$ is smooth, and by the chain rule $F_{\ast r} = \iota_{\ast} \circ (\varphi_S^{-1})_{\ast r}$ is injective for every $r \in D$, as a composite of an isomorphism (Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]) and an injective map (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]). Finally $F : D \to F(D) = V$ is the homeomorphism $\varphi_S^{-1}$, and the topology of $V$ as a subspace of $S$ is its subspace topology in $N$. So $F$ is an embedding with image $V$.
+
+^pf-41-9
+
+*Uses:* [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§37 Regular Submanifolds#^lem-37-11|§37.11]], [[§41 Embeddings#^cor-41-3|§41.3]], [[§36 Submersions#^lem-36-5|§36.5]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]]
+
+Condition (2) is the classical definition of a surface in $\mathbb{R}^3$ by regular parametrizations. It complements the description by equations: a subset is a regular submanifold if it is locally a level set of a submersion (Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]], Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]), or locally the image of an embedding.
+
+The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-9|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in [[§24 The Circle|The Circle]]; covered by a line, a local diffeomorphism that is not injective, in [[§35 Local Diffeomorphisms#^ex-35-1|the circle covered by a line]]; and the rotation group $\mathrm{SO}(2)$, diffeomorphic to it, with its angle charts, in the example below.
+
+> [!example] Example §41.3: $\mathrm{SO}(2)$ by Angle Charts
+> For $\theta \in \mathbb{R}$ let
+>
+> $$
+> R(\theta) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} \in \operatorname{Mat}(2, \mathbb{R}) .
+> $$
+>
+> 1. $\mathrm{SO}(2) = \{ R(\theta) : \theta \in \mathbb{R} \}$, and $R(\theta) = R(\tilde\theta)$ if and only if $\theta - \tilde\theta \in 2\pi\mathbb{Z}$.
+> 2. The restrictions $R|_{(-\pi, \pi)}$ and $R|_{(0, 2\pi)}$ are embeddings into $\operatorname{Mat}(2, \mathbb{R})$. Their images are $\mathrm{SO}(2) \setminus \{-I\}$ and $\mathrm{SO}(2) \setminus \{I\}$, open subsets of $\mathrm{SO}(2)$, and their inverses are
+>
+> $$
+> \vartheta(g) = 2\arctan\frac{g_{21}}{1 + g_{11}}, \qquad \vartheta_2(g) = \pi - 2\arctan\frac{g_{21}}{1 - g_{11}} .
+> $$
+>
+> 3. So $\mathrm{SO}(2)$ is a regular submanifold of $\operatorname{Mat}(2, \mathbb{R})$ of dimension $1$, with smooth charts $\vartheta$ and $\vartheta_2$.
+> 4. With $T_I\mathrm{SO}(2)$ regarded as a subspace of $T_I\operatorname{Mat}(2, \mathbb{R}) = \operatorname{Mat}(2, \mathbb{R})$ through the differential of the inclusion,
+>
+> $$
+> T_I\mathrm{SO}(2) = \mathbb{R}\, J, \qquad J = R'(0) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} .
+> $$
+>
+> 5. The map $S^1 \to \mathrm{SO}(2)$, $(c, s) \mapsto \begin{psmallmatrix} c & -s \\ s & c \end{psmallmatrix}$, is a diffeomorphism, with inverse $g \mapsto (g_{11}, g_{21})$.
+>
+> Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]] obtains the same manifold from the equation $gg^{\mathsf T} = I$, with $T_I\mathrm{SO}(2) = \operatorname{Skew}(2, \mathbb{R})$, which is the line $\mathbb{R}\,J$ of (4).
+
+^ex-41-3
+
+> [!remark]- Connections
+> - The same group written with complex numbers, the circle group $\mathrm{U}(1)$: [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|Ex. §11.3]]; the three atlases of the circle: [[§24 The Circle#^prop-24-1|§24.1]].
+> - $\mathrm{SO}(n)$ from the equation $gg^{\mathsf T} = I$: [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]].
+> - The factor $K$ of the Iwasawa decomposition of $\mathrm{SL}(2, \mathbb{R})$: [[§71 The Exponential Map#^prop-71-15|§71.15]].
+
+> [!proof]+ Proof
+> *(Assignment 8, Problem 3(a) and the last step of 3(c): the submitted solution, with its citations of Lee replaced by the results of this section.)*
+>
+> *(1).* By definition $\mathrm{SO}(2) = \{ g \in \operatorname{Mat}(2, \mathbb{R}) : g^{\mathsf T}g = I,\ \det g = 1 \}$. Let $g = \begin{psmallmatrix} a & b \\ c & d \end{psmallmatrix} \in \mathrm{SO}(2)$. The conditions read
+>
+> $$
+> a^2 + c^2 = 1, \qquad b^2 + d^2 = 1, \qquad ab + cd = 0, \qquad ad - bc = 1 .
+> $$
+>
+> By the first two, $(a, c)$ and $(b, d)$ lie on the unit circle: $(a, c) = (\cos\theta, \sin\theta)$ and $(b, d) = (\cos\theta', \sin\theta')$ for some $\theta, \theta' \in \mathbb{R}$. By the angle addition formulas the last two become
+>
+> $$
+> \cos(\theta' - \theta) = \cos\theta\cos\theta' + \sin\theta\sin\theta' = 0, \qquad \sin(\theta' - \theta) = \cos\theta\sin\theta' - \sin\theta\cos\theta' = 1 ,
+> $$
+>
+> so $\theta' - \theta = \tfrac{\pi}{2} + 2\pi m$ for some $m \in \mathbb{Z}$. Since $\cos$ and $\sin$ are $2\pi$-periodic, $b = \cos(\theta + \tfrac{\pi}{2}) = -\sin\theta$ and $d = \sin(\theta + \tfrac{\pi}{2}) = \cos\theta$: $g = R(\theta)$. Conversely each $R(\theta)$ satisfies the four equations, since $\cos^2\theta + \sin^2\theta = 1$. And $R(\theta) = R(\tilde\theta)$ means $\cos\theta = \cos\tilde\theta$ and $\sin\theta = \sin\tilde\theta$, that is, $\theta - \tilde\theta \in 2\pi\mathbb{Z}$.
+>
+> *(2), the images.* $R(\theta) = -I$ exactly for $\theta \in \pi + 2\pi\mathbb{Z}$ and $R(\theta) = I$ exactly for $\theta \in 2\pi\mathbb{Z}$. By (1), each element of $\mathrm{SO}(2) \setminus \{-I\}$ is $R(\theta)$ for exactly one $\theta \in (-\pi, \pi)$, and each element of $\mathrm{SO}(2) \setminus \{I\}$ for exactly one $\theta \in (0, 2\pi)$. Since $g_{11} = \cos\theta = \mp 1$ only for $R(\theta) = \mp I$,
+>
+> $$
+> \mathrm{SO}(2) \setminus \{-I\} = \mathrm{SO}(2) \cap \{ g_{11} > -1 \}, \qquad \mathrm{SO}(2) \setminus \{I\} = \mathrm{SO}(2) \cap \{ g_{11} < 1 \} ,
+> $$
+>
+> which are open in $\mathrm{SO}(2)$, the sets $\{ g_{11} > -1 \}$ and $\{ g_{11} < 1 \}$ being open in $\operatorname{Mat}(2, \mathbb{R})$.
+>
+> *(2), the inverses.* For $\theta \in (-\pi, \pi)$, the half-angle formula gives $\frac{\sin\theta}{1 + \cos\theta} = \tan\frac{\theta}{2}$ with $\frac{\theta}{2} \in (-\frac{\pi}{2}, \frac{\pi}{2})$, so
+>
+> $$
+> 2\arctan\frac{\sin\theta}{1 + \cos\theta} = \theta .
+> $$
+>
+> For $\theta \in (0, 2\pi)$, $\frac{\sin\theta}{1 - \cos\theta} = \cot\frac{\theta}{2} = \tan\big(\frac{\pi}{2} - \frac{\theta}{2}\big)$ with $\frac{\pi}{2} - \frac{\theta}{2} \in (-\frac{\pi}{2}, \frac{\pi}{2})$, so
+>
+> $$
+> \pi - 2\arctan\frac{\sin\theta}{1 - \cos\theta} = \theta .
+> $$
+>
+> So the formulas of the statement define functions $G$ on the open set $W = \{ g_{11} > -1 \}$ and $G_2$ on $W_2 = \{ g_{11} < 1 \}$ of $\operatorname{Mat}(2, \mathbb{R})$, smooth as composites of smooth functions with nonvanishing denominators, with $G \circ R|_{(-\pi, \pi)} = \mathrm{id}$ and $G_2 \circ R|_{(0, 2\pi)} = \mathrm{id}$; and $\vartheta$, $\vartheta_2$ are their restrictions to the two images.
+>
+> *(2), embeddings.* The map $R : \mathbb{R} \to \operatorname{Mat}(2, \mathbb{R})$ is smooth, its entries being $\pm\sin$ and $\cos$. By Lemma [[§41 Embeddings#^lem-41-6|§41.6]](2), with the left inverses $G$ and $G_2$ just found, $R|_{(-\pi, \pi)}$ and $R|_{(0, 2\pi)}$ are embeddings. (That they are immersions is also seen directly: $R'(\theta) \neq 0$, its entries $\pm\sin\theta$, $\pm\cos\theta$ not vanishing simultaneously. The submitted solution shows this, and the continuity of $\vartheta$, $\vartheta_2$, separately.)
+>
+> *(3).* Every point of $\mathrm{SO}(2)$ lies in one of the two images, which are open in $\mathrm{SO}(2)$ and are images of embeddings of open intervals of $\mathbb{R}$. By Corollary [[§41 Embeddings#^cor-41-9|§41.9]], $\mathrm{SO}(2)$ is a regular submanifold of $\operatorname{Mat}(2, \mathbb{R})$ of dimension $1$, and $\vartheta$, $\vartheta_2$ are smooth charts of it.
+>
+> *(4).* The chart $\vartheta$ is defined at $I = R(0)$, with $\vartheta(I) = 0$, so $T_I\mathrm{SO}(2)$ is spanned by $\partial/\partial\vartheta|_I$, the velocity at $0$ of the curve $\vartheta^{-1} = R|_{(-\pi, \pi)}$ in $\mathrm{SO}(2)$. Its image under the differential of the inclusion $\iota$ is the velocity at $0$ of $\iota \circ R$ in $\operatorname{Mat}(2, \mathbb{R})$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]), which under $T_I\operatorname{Mat}(2, \mathbb{R}) = \operatorname{Mat}(2, \mathbb{R})$ is the derivative
+>
+> $$
+> R'(0) = \begin{pmatrix} -\sin\theta & -\cos\theta \\ \cos\theta & -\sin\theta \end{pmatrix}\bigg|_{\theta = 0} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = J .
+> $$
+>
+> *(5).* The linear map $\mathbb{R}^2 \to \operatorname{Mat}(2, \mathbb{R})$, $(c, s) \mapsto \begin{psmallmatrix} c & -s \\ s & c \end{psmallmatrix}$, is smooth; its restriction to the regular submanifold $S^1$ is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1)) and has values $R(\theta)$, $(c, s) = (\cos\theta, \sin\theta)$, in the regular submanifold $\mathrm{SO}(2)$, so it is smooth as a map $S^1 \to \mathrm{SO}(2)$ (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2)). In the same way the linear map $g \mapsto (g_{11}, g_{21})$ restricts to a smooth map $\mathrm{SO}(2) \to S^1$, $R(\theta) \mapsto (\cos\theta, \sin\theta)$. The two are inverse to each other.
+
+^pf-ex-41-3
+
+*Uses:* [[§41 Embeddings#^lem-41-6|§41.6]], [[§41 Embeddings#^cor-41-9|§41.9]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]]
+
 ## Proper Maps
 
 *Lecture 14. When is an injective immersion an embedding? The homeomorphism condition is point-set topology, and a convenient sufficient condition is properness — the same hypothesis as in Ehresmann's theorem (Theorem [[§45 Fibrations#^thm-45-3|§45.3]], in [[§45 Fibrations|§45]]).*
@@ -228,12 +430,12 @@ Lee takes (3) as the definition of an embedded submanifold and proves the slice 
 
 In symbols: a continuous map $F : X \to Y$ is proper if $F^{-1}(K)$ is compact for every compact $K \subseteq Y$. (Lee, App. A, *Proper Maps*.)
 
-> [!theorem] Proposition §41.6: Proper Maps into Manifolds Are Closed
+> [!theorem] Proposition §41.10: Proper Maps into Manifolds Are Closed
 > Let $F : M \to N$ be a continuous proper map ([[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]]), $N$ a topological manifold ([[§2 Topological Manifolds#^def-2-2|Def. §2.2]]). Then $F$ is closed ([[§13 Quotient Topology#^def-13-4|590 Def. §13.4]]): $F(C)$ is closed in $N$ for every closed $C \subseteq M$.
 >
 > *Lee: Theorem A.57*
 
-^prop-41-6
+^prop-41-10
 
 > [!proof]+ Proof
 > *(Lecture 14. Claim 2 was not finished in lecture; the complete proof came in Uribe's follow-up email, and the completion of Claim 2 below is the notes' own.)* Let $C \subseteq M$ be closed. We show $\overline{F(C)} \subseteq F(C)$, so that $F(C)$ is closed. Recall that $N$, a topological manifold, is Hausdorff, and that a point lies in the closure of a set $A$ exactly when every open set containing the point meets $A$.
@@ -244,7 +446,7 @@ In symbols: a continuous map $F : X \to Y$ is proper if $F^{-1}(K)$ is compact f
 >
 > *Conclusion.* By Claim 1 with $K = \overline V$, the set $F(C) \cap \overline V$ is closed, so it equals its closure, and $q \in F(C) \cap \overline V \subseteq F(C)$. As $q \in \overline{F(C)}$ was arbitrary, $\overline{F(C)} \subseteq F(C)$; the reverse inclusion always holds. Thus $\overline{F(C)} = F(C)$.
 
-^pf-41-6
+^pf-41-10
 
 *Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^prop-2-12|§2.12]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§18 Compact Spaces#^thm-18-2|590 §18.2]], [[§18 Compact Spaces#^thm-18-3|590 §18.3]], [[§18 Compact Spaces#^thm-18-4|590 §18.4]], [[§8 Interior and Closure#^thm-8-3|590 §8.3]]
 
@@ -252,35 +454,35 @@ In symbols: a continuous map $F : X \to Y$ is proper if $F^{-1}(K)$ is compact f
 > - The closed-map argument for compact domains in 590, which Claim 1 localizes: [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]]; closed maps: [[§13 Quotient Topology#^def-13-4|590 Def. §13.4]].
 > - Local compactness in 590: [[§20 Local Compactness#^def-20-1|590 Def. §20.1]], [[§20 Local Compactness#^thm-20-6|590 §20.6]].
 
-> [!theorem] Theorem §41.7: Injective Proper Immersions Are Embeddings
+> [!theorem] Theorem §41.11: Injective Proper Immersions Are Embeddings
 > An injective proper ([[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]]) immersion ([[§36 Submersions#^def-36-2|Def. §36.2]]) $F : M \to N$ is an embedding ([[§41 Embeddings#^def-41-1|Def. §41.1]]).
 >
 > *Lee: Proposition 4.22*
 
-^thm-41-7
+^thm-41-11
 
 > [!proof]+ Proof
-> *(Lecture 14 reduced this to Proposition [[§41 Embeddings#^prop-41-6|§41.6]]; the last step is filled in.)* $F$ is an immersion by hypothesis, so by Definition [[§41 Embeddings#^def-41-1|§41.1]] it remains to see that $F : M \to F(M)$ is a homeomorphism, $F(M)$ carrying the subspace topology.
+> *(Lecture 14 reduced this to Proposition [[§41 Embeddings#^prop-41-10|§41.10]]; the last step is filled in.)* $F$ is an immersion by hypothesis, so by Definition [[§41 Embeddings#^def-41-1|§41.1]] it remains to see that $F : M \to F(M)$ is a homeomorphism, $F(M)$ carrying the subspace topology.
 >
-> It is a continuous bijection: continuous into $F(M)$ because it is continuous into $N$ (Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]](2)), injective by hypothesis, and onto $F(M)$ by the definition of $F(M)$. Let $G : F(M) \to M$ be its inverse. A map is continuous when the preimage of every closed set is closed (take complements in the definition of continuity), and for $C \subseteq M$ the preimage $G^{-1}(C)$ is $F(C)$. If $C \subseteq M$ is closed, then $F(C)$ is closed in $N$ by Proposition [[§41 Embeddings#^prop-41-6|§41.6]] ($F$ is continuous and proper, and $N$ is a manifold), hence $F(C) = F(C) \cap F(M)$ is closed in $F(M)$: its complement in $F(M)$ is $(N \setminus F(C)) \cap F(M)$, open in the subspace topology (Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]). So the inverse $F(M) \to M$ is continuous, and $F : M \to F(M)$ is a homeomorphism.
+> It is a continuous bijection: continuous into $F(M)$ because it is continuous into $N$ (Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]](2)), injective by hypothesis, and onto $F(M)$ by the definition of $F(M)$. Let $G : F(M) \to M$ be its inverse. A map is continuous when the preimage of every closed set is closed (take complements in the definition of continuity), and for $C \subseteq M$ the preimage $G^{-1}(C)$ is $F(C)$. If $C \subseteq M$ is closed, then $F(C)$ is closed in $N$ by Proposition [[§41 Embeddings#^prop-41-10|§41.10]] ($F$ is continuous and proper, and $N$ is a manifold), hence $F(C) = F(C) \cap F(M)$ is closed in $F(M)$: its complement in $F(M)$ is $(N \setminus F(C)) \cap F(M)$, open in the subspace topology (Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]). So the inverse $F(M) \to M$ is continuous, and $F : M \to F(M)$ is a homeomorphism.
 
-^pf-41-7
+^pf-41-11
 
-*Uses:* [[§41 Embeddings#^def-41-1|Def. §41.1]], [[§41 Embeddings#^prop-41-6|§41.6]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§3 Subspaces and Products#^prop-3-3|§3.3]]
+*Uses:* [[§41 Embeddings#^def-41-1|Def. §41.1]], [[§41 Embeddings#^prop-41-10|§41.10]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§3 Subspaces and Products#^prop-3-3|§3.3]]
 
-> [!theorem] Corollary §41.8: Injective Immersions of Compact Manifolds
+> [!theorem] Corollary §41.12: Injective Immersions of Compact Manifolds
 > If $M$ is compact ([[§18 Compact Spaces#^def-18-2|590 Def. §18.2]]), every injective immersion ([[§36 Submersions#^def-36-2|Def. §36.2]]) $F : M \to N$ is an embedding ([[§41 Embeddings#^def-41-1|Def. §41.1]]).
 >
 > *Lee: Proposition 4.22*
 
-^cor-41-8
+^cor-41-12
 
 > [!proof]+ Proof
-> *(From Uribe's follow-up email; the proof is filled in.)* $F$ is proper (Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]]): if $K \subseteq N$ is compact, it is closed, as a compact subset of the Hausdorff space $N$ (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](4)); so $F^{-1}(K)$ is closed in $M$, $F$ being continuous; and a closed subset of the compact $M$ is compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5)). So $F$ is an injective proper immersion. Apply Theorem [[§41 Embeddings#^thm-41-7|§41.7]]: $F$ is an embedding.
+> *(From Uribe's follow-up email; the proof is filled in.)* $F$ is proper (Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]]): if $K \subseteq N$ is compact, it is closed, as a compact subset of the Hausdorff space $N$ (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](4)); so $F^{-1}(K)$ is closed in $M$, $F$ being continuous; and a closed subset of the compact $M$ is compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5)). So $F$ is an injective proper immersion. Apply Theorem [[§41 Embeddings#^thm-41-11|§41.11]]: $F$ is an embedding.
 
-^pf-41-8
+^pf-41-12
 
-*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]], [[§41 Embeddings#^thm-41-7|§41.7]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§18 Compact Spaces#^thm-18-4|590 §18.4]], [[§18 Compact Spaces#^thm-18-2|590 §18.2]]
+*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]], [[§41 Embeddings#^thm-41-11|§41.11]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§18 Compact Spaces#^thm-18-4|590 §18.4]], [[§18 Compact Spaces#^thm-18-2|590 §18.2]]
 
 > [!remark]- Connections
 > - The topological prototype: a continuous bijection from a compact space onto a Hausdorff space is a homeomorphism, [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]] (in 591: [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](6)).
@@ -290,14 +492,14 @@ In symbols: a continuous map $F : X \to Y$ is proper if $F^{-1}(K)$ is compact f
 *Why does density of the irrational line rule out an embedding? Because the image of an embedding is always closed* locally, *and a dense set that is locally closed is open. Prompted by Assignment 4, Problem 5.*
 
 > [!definition] Definition §41.2: Locally Closed Subset
-> A subset $S$ of a topological space $N$ is **locally closed** if every point of $S$ has an open neighbourhood $V$ in $N$ such that $S \cap V$ is closed in $V$ ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]). Equivalently, $S$ is closed in some open subset of $N$ containing it, namely the union $U$ of these $V$'s (Lemma [[§41 Embeddings#^lem-41-9|§41.9]]).
+> A subset $S$ of a topological space $N$ is **locally closed** if every point of $S$ has an open neighbourhood $V$ in $N$ such that $S \cap V$ is closed in $V$ ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]). Equivalently, $S$ is closed in some open subset of $N$ containing it, namely the union $U$ of these $V$'s (Lemma [[§41 Embeddings#^lem-41-13|§41.13]]).
 
 ^def-41-2
 
 > [!remark]- Connections
 > - Closed sets and closed sets of a subspace in 590: [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]]; the subspace topology: [[§5 Subspace Topology#^def-5-1|590 Def. §5.1]].
 
-> [!theorem] Lemma §41.9: The Two Forms of Local Closedness
+> [!theorem] Lemma §41.13: The Two Forms of Local Closedness
 > Let $S$ be a subset of a topological space $N$. The following are equivalent:
 >
 > 1. every point of $S$ has an open neighbourhood $V$ in $N$ such that $S \cap V$ is closed in $V$, that is, $S$ is locally closed (Definition [[§41 Embeddings#^def-41-2|§41.2]]);
@@ -305,71 +507,71 @@ In symbols: a continuous map $F : X \to Y$ is proper if $F^{-1}(K)$ is compact f
 >
 > In (1) $\Rightarrow$ (2), $U$ can be taken to be the union of the neighbourhoods $V$ of (1), one for each point of $S$.
 
-^lem-41-9
+^lem-41-13
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* *(1) $\Rightarrow$ (2).* For each point of $S$ choose a neighbourhood $V$ as in (1). If $U$ is the union of these $V$ — one for each point of $S$ — then $U$ is open and contains $S$. A point of $U \setminus S$ lies in some $V \setminus S$, which is open: it is open in $V$, as the complement of the closed set $S \cap V$, hence open in $N$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]); and $V \setminus S \subseteq U \setminus S$. So $U \setminus S$ is open, and $S = U \setminus (U \setminus S)$ is closed in $U$.
 >
 > *(2) $\Rightarrow$ (1).* Conversely, if $S$ is closed in an open $U \supseteq S$, then every point of $S$ has the open neighbourhood $V = U$, with $S \cap V = S$ closed in $V$.
 
-^pf-41-9
+^pf-41-13
 
 *Uses:* [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 
-> [!theorem] Proposition §41.10: Images of Embeddings Are Locally Closed
+> [!theorem] Proposition §41.14: Images of Embeddings Are Locally Closed
 > Every regular submanifold ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]) of $N$ — in particular the image of an embedding ([[§41 Embeddings#^thm-41-1|Theorem §41.1]]) — is locally closed ([[§41 Embeddings#^def-41-2|Def. §41.2]]) in $N$.
 
-^prop-41-10
+^prop-41-14
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* Let $S$ be a regular submanifold of $N$, of codimension $k$, and put $n = \dim N$ and $m = n - k$. (By Theorem [[§41 Embeddings#^thm-41-1|§41.1]], the image of an embedding is such an $S$, so the “in particular” follows.)
 >
 > *Locally closed.* At each point of the submanifold $S$ there is an adapted chart $(V, \psi = (y^1, \ldots, y^n))$ (Definitions [[§37 Regular Submanifolds#^def-37-2|§37.2]] and [[§37 Regular Submanifolds#^def-37-3|§37.3]]), in which $S \cap V = \{x \in V : y^{m+1}(x) = \cdots = y^n(x) = 0\}$, a closed subset of $V$ as the zero set of continuous functions: it is the preimage of the closed set $\{\vec 0\} \subseteq \mathbb{R}^{k}$ under the continuous map $(y^{m+1}, \ldots, y^n) : V \to \mathbb{R}^k$. This is the condition of Definition [[§41 Embeddings#^def-41-2|§41.2]], with this $V$.
 >
-> *The equivalent form.* The second form in Definition [[§41 Embeddings#^def-41-2|§41.2]] — $S$ is closed in an open $U \supseteq S$, the union of these $V$, one for each point of $S$ — then holds by Lemma [[§41 Embeddings#^lem-41-9|§41.9]].
+> *The equivalent form.* The second form in Definition [[§41 Embeddings#^def-41-2|§41.2]] — $S$ is closed in an open $U \supseteq S$, the union of these $V$, one for each point of $S$ — then holds by Lemma [[§41 Embeddings#^lem-41-13|§41.13]].
 
-^pf-41-10
+^pf-41-14
 
-*Uses:* [[§41 Embeddings#^def-41-2|Def. §41.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]], [[§41 Embeddings#^lem-41-9|§41.9]]
+*Uses:* [[§41 Embeddings#^def-41-2|Def. §41.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]], [[§41 Embeddings#^lem-41-13|§41.13]]
 
-> [!theorem] Corollary §41.11: Dense Regular Submanifolds Are Open
+> [!theorem] Corollary §41.15: Dense Regular Submanifolds Are Open
 > A dense ([[§22 Countability Axioms#^def-22-4|590 Def. §22.4]]) regular submanifold ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]) $S$ of $N$ is an open subset of $N$, and has codimension $0$. In particular, the image of an embedding ([[§41 Embeddings#^def-41-1|Def. §41.1]]) $F : M \to N$ with $\dim M < \dim N$ is never dense.
 
-^cor-41-11
+^cor-41-15
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* *$S$ is open.* By Proposition [[§41 Embeddings#^prop-41-10|§41.10]], $S$ is locally closed, so by Lemma [[§41 Embeddings#^lem-41-9|§41.9]] $S$ is closed in an open $U \supseteq S$. $S$ is dense in $N$, hence in $U$: a point $u \in U$ lies in the closure of $S$ in $U$ when every open set of $U$ containing $u$ meets $S$, and such a set is open in $N$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]), so it meets $S$ by density. A closed dense subset of $U$ is all of $U$, since it equals its closure in $U$, which is $U$; so $S = U$ is open.
+> *(Not from lecture; filled in.)* *$S$ is open.* By Proposition [[§41 Embeddings#^prop-41-14|§41.14]], $S$ is locally closed, so by Lemma [[§41 Embeddings#^lem-41-13|§41.13]] $S$ is closed in an open $U \supseteq S$. $S$ is dense in $N$, hence in $U$: a point $u \in U$ lies in the closure of $S$ in $U$ when every open set of $U$ containing $u$ meets $S$, and such a set is open in $N$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]), so it meets $S$ by density. A closed dense subset of $U$ is all of $U$, since it equals its closure in $U$, which is $U$; so $S = U$ is open.
 >
 > *Codimension $0$.* If $S = \emptyset$, density forces $N = \overline{S} = \emptyset$, and there is nothing to prove; so let $x \in S$. If $S$ had codimension $k \ge 1$, take an adapted chart $(V, \psi)$ at $x$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]): then $\psi(S \cap V)$ would be a nonempty subset of $\mathbb{R}^{n-k} \times \{0\}$, open in $\mathbb{R}^n$ because $S \cap V$ is open in $V$ — impossible, since no nonempty open subset of $\mathbb{R}^n$ lies in a hyperplane. In detail: $S \cap V$ is open in $V$ because $S$ is open in $N$; $\psi$ is a homeomorphism of $V$ onto the open set $\psi(V)$, so $\psi(S \cap V)$ is open in $\psi(V)$ (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](3)), hence in $\mathbb{R}^n$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]). It contains $\psi(x) = (a, \vec 0)$, hence an open ball of some radius $\varepsilon > 0$ around it, which contains the point obtained from $(a, \vec 0)$ by changing its last coordinate from $0$ to $\varepsilon/2$; since $k \ge 1$, that coordinate is one of the last $k$, so this point is not in $\mathbb{R}^{n-k} \times \{0\}$, a contradiction. So $k = 0$.
 >
 > *In particular.* Let $F : M \to N$ be an embedding with $m = \dim M < \dim N = n$, and $M \neq \emptyset$. By Theorem [[§41 Embeddings#^thm-41-1|§41.1]], $F(M)$ is a nonempty regular submanifold with adapted charts of codimension $n - m \ge 1$ at each of its points. If $F(M)$ were dense, it would be open by the first part, and the argument just given, applied to one of these adapted charts, would give a contradiction. So $F(M)$ is not dense.
 
-^pf-41-11
+^pf-41-15
 
-*Uses:* [[§41 Embeddings#^prop-41-10|§41.10]], [[§41 Embeddings#^def-41-2|Def. §41.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], [[§8 Interior and Closure#^thm-8-2|590 §8.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§41 Embeddings#^lem-41-9|§41.9]]
+*Uses:* [[§41 Embeddings#^prop-41-14|§41.14]], [[§41 Embeddings#^def-41-2|Def. §41.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], [[§8 Interior and Closure#^thm-8-2|590 §8.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§41 Embeddings#^lem-41-13|§41.13]]
 
 > [!remark]- Connections
 > - Dense subsets in 590: [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], with the [[Closure Characterization|590 closure characterization]].
 
-This is the precise form of the statement that no shrinking of $V$ isolates the piece $F(U)$ of the irrational line: at every point of [[§41 Embeddings#^prop-41-14|the irrational line]], local closedness fails (Corollary [[§41 Embeddings#^cor-41-15|§41.15]], after Proposition [[§41 Embeddings#^prop-41-14|§41.14]]).
+This is the precise form of the statement that no shrinking of $V$ isolates the piece $F(U)$ of the irrational line: at every point of [[§41 Embeddings#^prop-41-18|the irrational line]], local closedness fails (Corollary [[§41 Embeddings#^cor-41-19|§41.19]], after Proposition [[§41 Embeddings#^prop-41-18|§41.18]]).
 
-> [!theorem] Proposition §41.12: Closed Embeddings Are the Proper Ones
+> [!theorem] Proposition §41.16: Closed Embeddings Are the Proper Ones
 > An embedding ([[§41 Embeddings#^def-41-1|Def. §41.1]]) $F : M \to N$ is proper ([[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]]) if and only if its image $F(M)$ is closed in $N$. In particular, an injective proper immersion ([[§36 Submersions#^def-36-2|Def. §36.2]]) is exactly an embedding with closed image.
 >
 > *Lee: Proposition 5.5*
 
-^prop-41-12
+^prop-41-16
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* *Proper $\Rightarrow$ closed image.* If $F$ is proper, it is closed (Proposition [[§41 Embeddings#^prop-41-6|§41.6]], $N$ being a manifold), so $F(M)$, the image of the closed set $M$, is closed.
+> *(Not from lecture; filled in.)* *Proper $\Rightarrow$ closed image.* If $F$ is proper, it is closed (Proposition [[§41 Embeddings#^prop-41-10|§41.10]], $N$ being a manifold), so $F(M)$, the image of the closed set $M$, is closed.
 >
 > *Closed image $\Rightarrow$ proper.* Conversely, let $F(M)$ be closed and $K \subseteq N$ compact. Then $K \cap F(M)$ is a closed subset of $K$ (in the subspace topology of $K$, as the intersection of $K$ with a closed subset of $N$), hence compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5)). Since $F$ takes all its values in $F(M)$, $F^{-1}(K) = F^{-1}\big(K \cap F(M)\big)$. And $F^{-1}\big(K \cap F(M)\big)$ is its image under the inverse of the homeomorphism $F : M \to F(M)$ (Definition [[§41 Embeddings#^def-41-1|§41.1]]), a continuous map, hence compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](2)). So $F$ is proper (Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]]).
 >
-> *The last sentence.* The last sentence combines this with Theorem [[§41 Embeddings#^thm-41-7|§41.7]]. An injective proper immersion is an embedding by that theorem, and its image is closed by the first part. Conversely, an embedding with closed image is proper by the second part, and it is an injective immersion by Definition [[§41 Embeddings#^def-41-1|§41.1]].
+> *The last sentence.* The last sentence combines this with Theorem [[§41 Embeddings#^thm-41-11|§41.11]]. An injective proper immersion is an embedding by that theorem, and its image is closed by the first part. Conversely, an embedding with closed image is proper by the second part, and it is an injective immersion by Definition [[§41 Embeddings#^def-41-1|§41.1]].
 
-^pf-41-12
+^pf-41-16
 
-*Uses:* [[§41 Embeddings#^def-41-1|Def. §41.1]], [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]], [[§41 Embeddings#^prop-41-6|§41.6]], [[§41 Embeddings#^thm-41-7|§41.7]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]], [[§18 Compact Spaces#^thm-18-2|590 §18.2]], [[§18 Compact Spaces#^thm-18-3|590 §18.3]]
+*Uses:* [[§41 Embeddings#^def-41-1|Def. §41.1]], [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]], [[§41 Embeddings#^prop-41-10|§41.10]], [[§41 Embeddings#^thm-41-11|§41.11]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]], [[§18 Compact Spaces#^thm-18-2|590 §18.2]], [[§18 Compact Spaces#^thm-18-3|590 §18.3]]
 
 The sections of a fibration are closed embeddings of this kind: Proposition [[§45 Fibrations#^prop-45-6|§45.6]], in [[§45 Fibrations|§45]].
 
@@ -377,31 +579,31 @@ The sections of a fibration are closed embeddings of this kind: Proposition [[§
 |---|---|---|
 | injective proper immersion | closed regular submanifold | — |
 | embedding | locally closed regular submanifold | an open interval embedded in $\mathbb{R}^2$ |
-| injective immersion | possibly not locally closed, even dense | [[§41 Embeddings#^prop-41-14\|the irrational line]] |
+| injective immersion | possibly not locally closed, even dense | [[§41 Embeddings#^prop-41-18\|the irrational line]] |
 
 Closedness of the image alone is not enough: the image of the figure-eight (Lee's Example 4.19) is compact, hence closed, but the figure-eight is not an embedding. Local closedness is necessary for an embedding, not sufficient.
 
 ![[m591-34-4.svg]]
-*Local closedness ([[§41 Embeddings#^def-41-2|Definition §41.2]]) at a point $p$ of a subset $S$ (blue): is $S \cap V$ (red) closed in a small open disc $V$ (green) around $p$? (a) An open arc in $\mathbb{R}^2$, the embedded open interval of the table's middle row. Its endpoints (hollow) are missing, so $S$ is not closed in $\mathbb{R}^2$; but near each of its points $S \cap V$ is an arc running from boundary to boundary of $V$, closed in $V$, so $S$ is locally closed, as every submanifold is ([[§41 Embeddings#^prop-41-10|Proposition §41.10]]). (b) The image of the [[§41 Embeddings#^ex-41-3|figure-eight]] (Lee's Example 4.19). It is compact, hence closed, and at the crossing point $p$ the set $S \cap V$ is an X, closed in $V$: locally closed. But an X is not a piece of a curve, so $S$ is not a submanifold; local closedness is necessary, not sufficient. (c) The [[§41 Embeddings#^prop-41-14|irrational line]] in the square with opposite sides identified, with slope $(\sqrt5 - 1)/2$: seven turns in blue, of which two strands cross $V$ (thick red); the thin red strands are where the turns up to $t = 90$ cross $V$, and further turns keep adding strands between them. So $S \cap V$ is dense in $V$ without being all of $V$, hence not closed in $V$, for every disc around every point: $S$ is not locally closed, and by Proposition [[§41 Embeddings#^prop-41-10|§41.10]] not a submanifold, which is [[§41 Embeddings#^cor-41-11|Corollary §41.11]] seen locally. (Drawn for these notes in the vault; not in the course tex.)*
+*Local closedness ([[§41 Embeddings#^def-41-2|Definition §41.2]]) at a point $p$ of a subset $S$ (blue): is $S \cap V$ (red) closed in a small open disc $V$ (green) around $p$? (a) An open arc in $\mathbb{R}^2$, the embedded open interval of the table's middle row. Its endpoints (hollow) are missing, so $S$ is not closed in $\mathbb{R}^2$; but near each of its points $S \cap V$ is an arc running from boundary to boundary of $V$, closed in $V$, so $S$ is locally closed, as every submanifold is ([[§41 Embeddings#^prop-41-14|Proposition §41.14]]). (b) The image of the [[§41 Embeddings#^ex-41-4|figure-eight]] (Lee's Example 4.19). It is compact, hence closed, and at the crossing point $p$ the set $S \cap V$ is an X, closed in $V$: locally closed. But an X is not a piece of a curve, so $S$ is not a submanifold; local closedness is necessary, not sufficient. (c) The [[§41 Embeddings#^prop-41-18|irrational line]] in the square with opposite sides identified, with slope $(\sqrt5 - 1)/2$: seven turns in blue, of which two strands cross $V$ (thick red); the thin red strands are where the turns up to $t = 90$ cross $V$, and further turns keep adding strands between them. So $S \cap V$ is dense in $V$ without being all of $V$, hence not closed in $V$, for every disc around every point: $S$ is not locally closed, and by Proposition [[§41 Embeddings#^prop-41-14|§41.14]] not a submanifold, which is [[§41 Embeddings#^cor-41-15|Corollary §41.15]] seen locally. (Drawn for these notes in the vault; not in the course tex.)*
 
-> [!theorem] Lemma §41.13: Dirichlet's Approximation Theorem
+> [!theorem] Lemma §41.17: Dirichlet's Approximation Theorem
 > For every $\alpha \in \mathbb{R}$ and every integer $N \ge 1$ there are integers $n, m$ with $1 \le n \le N$ and $|n\alpha - m| < 1/N$.
 >
 > *Lee: Lemma 4.21*
 
-^lem-41-13
+^lem-41-17
 
 > [!remark]- Connections
 > - No home elsewhere in the vault; Lee's proof rests on the [[Pigeonhole Principle|250 Pigeonhole Principle]].
 
 *Status.* Used in Assignment 4, Problem 5, citing Lee; not proved here. (Lee's proof is a [[Pigeonhole Principle|pigeonhole]] argument on the fractional parts of $0, \alpha, \ldots, N\alpha$.)
 
-> [!theorem] Proposition §41.14: The Irrational Line on the Torus
+> [!theorem] Proposition §41.18: The Irrational Line on the Torus
 > Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $\gamma(t) = (e^{2\pi i t}, e^{2\pi i \alpha t})$ — the curve $F(t) = [t, \alpha t]$ introduced before [[§41 Embeddings#^thm-41-1|Theorem §41.1]], under the identification $[x, y] \mapsto (e^{2\pi i x}, e^{2\pi i y})$. Then $\gamma$ is an injective immersion ([[§36 Submersions#^def-36-2|Def. §36.2]]), its image is dense ([[§22 Countability Axioms#^def-22-4|590 Def. §22.4]]) in $T^2$, and $\gamma$ is not an embedding ([[§41 Embeddings#^def-41-1|Def. §41.1]]).
 >
 > *Lee: Example 4.20*
 
-^prop-41-14
+^prop-41-18
 
 > [!proof]+ Proof
 > *(Assignment 4, Problem 5: the submitted solution, condensed; the second proof of the last claim is new.)* Distances below are taken in $\mathbb{C}^2$, whose subspace topology $T^2$ carries; write $\gamma_{\mathbb{C}} = \iota \circ \gamma : \mathbb{R} \to \mathbb{C}^2$ for $\gamma$ followed by the inclusion $\iota : T^2 \hookrightarrow \mathbb{C}^2$. Two elementary facts are used: $e^{2\pi i s} = 1$ if and only if $s \in \mathbb{Z}$; and $|e^{is} - e^{it}| \le |s - t|$ for real $s, t$ (a chord of the unit circle is no longer than the arc it subtends).
@@ -410,7 +612,7 @@ Closedness of the image alone is not enough: the image of the figure-eight (Lee'
 >
 > *Injective.* If $\gamma(t_1) = \gamma(t_2)$, then $e^{2\pi i (t_1 - t_2)} = 1$ and $e^{2\pi i \alpha(t_1 - t_2)} = 1$, so $t_1 - t_2 \in \mathbb{Z}$ and $\alpha(t_1 - t_2) \in \mathbb{Z}$; if $t_1 \ne t_2$ this makes $\alpha = \alpha(t_1 - t_2)/(t_1 - t_2)$ a quotient of integers with nonzero denominator, that is, rational. So $t_1 = t_2$.
 >
-> *Dense.* Using $|e^{is} - e^{it}| \le |s - t|$: by Lemma [[§41 Embeddings#^lem-41-13|§41.13]] there are $n_N \ge 1$ and $m_N$ with $|n_N\alpha - m_N| < 1/N$, so $w_N = e^{2\pi i \alpha n_N} = e^{i\theta_N}$ with $\theta_N = 2\pi(n_N\alpha - m_N)$, $0 < |\theta_N| < 2\pi/N$ (nonzero by injectivity). Here $e^{2\pi i \alpha n_N} = e^{2\pi i (\alpha n_N - m_N)}$ because $e^{-2\pi i m_N} = 1$; and $\theta_N = 0$ would give $\gamma(n_N) = (1, 1) = \gamma(0)$ with $n_N \neq 0$, contradicting injectivity. The powers $w_N^k = e^{2\pi i \alpha (k n_N)}$ are $2\pi/N$-dense in $S^1$, since consecutive ones differ in angle by $|\theta_N|$. In detail: let $\delta = |\theta_N|$, and note $e^{ik\delta} = w_N^{\pm k} = e^{2\pi i \alpha (\pm k n_N)}$, with the sign of $\theta_N$. Given $e^{i\phi} \in S^1$ with $\phi \in [0, 2\pi)$, let $k \ge 0$ be the integer with $k\delta \le \phi < (k+1)\delta$; then $0 \le \phi - k\delta < \delta$, so $|e^{i\phi} - e^{ik\delta}| \le |\phi - k\delta| < \delta < 2\pi/N$, and $e^{ik\delta}$ is a power of $w_N$. So $D = \{e^{2\pi i\alpha k} : k \in \mathbb{Z}\}$ is dense in $S^1$: every point of $S^1$ lies within $2\pi/N$ of $D$, for every $N$. Given $(e^{2\pi i a}, e^{2\pi i b}) \in T^2$, the points $\gamma(a + k) = (e^{2\pi i a}, e^{2\pi i \alpha a} e^{2\pi i \alpha k})$ have the right first coordinate, and their second coordinates come arbitrarily close to $e^{2\pi i b}$ because $D$ is dense. In detail: given $\varepsilon > 0$, choose $k \in \mathbb{Z}$ with $|e^{2\pi i \alpha k} - e^{2\pi i (b - \alpha a)}| < \varepsilon$; multiplying by $e^{2\pi i \alpha a}$, of modulus $1$,
+> *Dense.* Using $|e^{is} - e^{it}| \le |s - t|$: by Lemma [[§41 Embeddings#^lem-41-17|§41.17]] there are $n_N \ge 1$ and $m_N$ with $|n_N\alpha - m_N| < 1/N$, so $w_N = e^{2\pi i \alpha n_N} = e^{i\theta_N}$ with $\theta_N = 2\pi(n_N\alpha - m_N)$, $0 < |\theta_N| < 2\pi/N$ (nonzero by injectivity). Here $e^{2\pi i \alpha n_N} = e^{2\pi i (\alpha n_N - m_N)}$ because $e^{-2\pi i m_N} = 1$; and $\theta_N = 0$ would give $\gamma(n_N) = (1, 1) = \gamma(0)$ with $n_N \neq 0$, contradicting injectivity. The powers $w_N^k = e^{2\pi i \alpha (k n_N)}$ are $2\pi/N$-dense in $S^1$, since consecutive ones differ in angle by $|\theta_N|$. In detail: let $\delta = |\theta_N|$, and note $e^{ik\delta} = w_N^{\pm k} = e^{2\pi i \alpha (\pm k n_N)}$, with the sign of $\theta_N$. Given $e^{i\phi} \in S^1$ with $\phi \in [0, 2\pi)$, let $k \ge 0$ be the integer with $k\delta \le \phi < (k+1)\delta$; then $0 \le \phi - k\delta < \delta$, so $|e^{i\phi} - e^{ik\delta}| \le |\phi - k\delta| < \delta < 2\pi/N$, and $e^{ik\delta}$ is a power of $w_N$. So $D = \{e^{2\pi i\alpha k} : k \in \mathbb{Z}\}$ is dense in $S^1$: every point of $S^1$ lies within $2\pi/N$ of $D$, for every $N$. Given $(e^{2\pi i a}, e^{2\pi i b}) \in T^2$, the points $\gamma(a + k) = (e^{2\pi i a}, e^{2\pi i \alpha a} e^{2\pi i \alpha k})$ have the right first coordinate, and their second coordinates come arbitrarily close to $e^{2\pi i b}$ because $D$ is dense. In detail: given $\varepsilon > 0$, choose $k \in \mathbb{Z}$ with $|e^{2\pi i \alpha k} - e^{2\pi i (b - \alpha a)}| < \varepsilon$; multiplying by $e^{2\pi i \alpha a}$, of modulus $1$,
 >
 > $$
 > \big|\gamma(a + k) - (e^{2\pi i a}, e^{2\pi i b})\big| = \big|e^{2\pi i \alpha a} e^{2\pi i \alpha k} - e^{2\pi i \alpha a} e^{2\pi i (b - \alpha a)}\big| = \big|e^{2\pi i \alpha k} - e^{2\pi i (b - \alpha a)}\big| < \varepsilon .
@@ -426,21 +628,21 @@ Closedness of the image alone is not enough: the image of the figure-eight (Lee'
 >
 > using $e^{2\pi i n_N} = 1 = e^{2\pi i m_N}$. So $\gamma(n_N) \to \gamma(0)$ in the image $\gamma(\mathbb{R})$ with its subspace topology. If $\gamma^{-1} : \gamma(\mathbb{R}) \to \mathbb{R}$ were continuous, as it is for an embedding (Definition [[§41 Embeddings#^def-41-1|§41.1]]), then $n_N = \gamma^{-1}(\gamma(n_N)) \to \gamma^{-1}(\gamma(0)) = 0$, which is false because $n_N \ge 1$ for every $N$.
 >
-> *Not an embedding: via density.* The image is dense and $\dim \mathbb{R} = 1 < 2 = \dim T^2$, so by Corollary [[§41 Embeddings#^cor-41-11|§41.11]] it is not the image of an embedding.
+> *Not an embedding: via density.* The image is dense and $\dim \mathbb{R} = 1 < 2 = \dim T^2$, so by Corollary [[§41 Embeddings#^cor-41-15|§41.15]] it is not the image of an embedding.
 
-^pf-41-14
+^pf-41-18
 
-*Uses:* [[§36 Submersions#^def-36-2|Def. §36.2]], [[§41 Embeddings#^def-41-1|Def. §41.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§41 Embeddings#^lem-41-13|§41.13]], [[§41 Embeddings#^cor-41-11|§41.11]], [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]
+*Uses:* [[§36 Submersions#^def-36-2|Def. §36.2]], [[§41 Embeddings#^def-41-1|Def. §41.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§41 Embeddings#^lem-41-17|§41.17]], [[§41 Embeddings#^cor-41-15|§41.15]], [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]
 
-> [!theorem] Corollary §41.15: The Irrational Line Is Not Locally Closed
-> Let $\gamma$ be the curve of Proposition [[§41 Embeddings#^prop-41-14|§41.14]] and $S = \gamma(\mathbb{R}) \subseteq T^2$ its image. For every $x \in S$ and every open set $V \subseteq T^2$ containing $x$, the set $S \cap V$ is not closed in $V$. So the condition of Definition [[§41 Embeddings#^def-41-2|§41.2]] fails at every point of $S$; in particular, $S$ is not locally closed in $T^2$.
+> [!theorem] Corollary §41.19: The Irrational Line Is Not Locally Closed
+> Let $\gamma$ be the curve of Proposition [[§41 Embeddings#^prop-41-18|§41.18]] and $S = \gamma(\mathbb{R}) \subseteq T^2$ its image. For every $x \in S$ and every open set $V \subseteq T^2$ containing $x$, the set $S \cap V$ is not closed in $V$. So the condition of Definition [[§41 Embeddings#^def-41-2|§41.2]] fails at every point of $S$; in particular, $S$ is not locally closed in $T^2$.
 
-^cor-41-15
+^cor-41-19
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* Let $x \in S$ and let $V \subseteq T^2$ be open with $x \in V$. We show: $S \cap V$ is dense in $V$; $V$ is not contained in $S$; and hence $S \cap V$ is not closed in $V$.
 >
-> *$S \cap V$ is dense in $V$.* Let $O$ be a nonempty open subset of $V$. Then $O$ is open in $T^2$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]), so it meets $S$, because $S$ is dense in $T^2$ (Proposition [[§41 Embeddings#^prop-41-14|§41.14]]); and a point of $O \cap S$ lies in $S \cap V$, as $O \subseteq V$. So every nonempty open subset of $V$ meets $S \cap V$. A point $v \in V$ lies in the closure of $S \cap V$ in $V$ when every open set of $V$ containing $v$ meets $S \cap V$; so that closure is all of $V$.
+> *$S \cap V$ is dense in $V$.* Let $O$ be a nonempty open subset of $V$. Then $O$ is open in $T^2$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]), so it meets $S$, because $S$ is dense in $T^2$ (Proposition [[§41 Embeddings#^prop-41-18|§41.18]]); and a point of $O \cap S$ lies in $S \cap V$, as $O \subseteq V$. So every nonempty open subset of $V$ meets $S \cap V$. A point $v \in V$ lies in the closure of $S \cap V$ in $V$ when every open set of $V$ containing $v$ meets $S \cap V$; so that closure is all of $V$.
 >
 > *$V$ is not contained in $S$.* Write $x = (e^{2\pi i a}, e^{2\pi i b})$ with $a, b \in \mathbb{R}$, and let
 >
@@ -458,16 +660,16 @@ Closedness of the image alone is not enough: the image of the figure-eight (Lee'
 >
 > *Conclusion.* If $S \cap V$ were closed in $V$, it would equal its closure in $V$, which is $V$ by the first step; then $V \subseteq S$, contradicting the second step. So $S \cap V$ is not closed in $V$. As $x \in S$ and $V$ were arbitrary, no point of $S$ has an open neighbourhood $V$ in $T^2$ with $S \cap V$ closed in $V$; since $S \neq \emptyset$, $S$ is not locally closed (Definition [[§41 Embeddings#^def-41-2|§41.2]]).
 
-^pf-41-15
+^pf-41-19
 
-*Uses:* [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§41 Embeddings#^prop-41-14|§41.14]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§41 Embeddings#^def-41-2|Def. §41.2]]
+*Uses:* [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§41 Embeddings#^prop-41-18|§41.18]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§41 Embeddings#^def-41-2|Def. §41.2]]
 
 > [!remark]- Connections
 > - The torus as a quotient of the square in 590: [[§13 Quotient Topology#^ex-13-3|590 Ex. §13.3]]; the covering $\mathbb{R}^2 \to T^2$, through which $F$ factors: [[§31 Covering Spaces#^ex-31-3|590 Ex. §31.3]]; all the torus's uses: [[Torus|590 Torus]].
 > - Locally the image is still a submanifold: [[§40 Immersions#^cor-40-2|§40.2]].
 
 ![[m591-34-3.svg]]
-*The irrational line on a torus in $\mathbb{R}^3$, drawn with the slope $\alpha = (5 - \sqrt5)/10 \approx 0.28$ so that the stripes run steeply: the horizontal direction of the square goes around the tube, the vertical one around the hole, and strands on the far side are drawn faintly. Left: $t \in [0, 9]$, starting at $F(0)$. Middle: $t \in [0, 40]$. Right: $t \in [0, 150]$ — the curve never closes up, and its strands fill in the torus, as [[§41 Embeddings#^prop-41-14|Proposition §41.14]] proves for every irrational $\alpha$. (Drawn for these notes in the vault; not in the course tex.)*
+*The irrational line on a torus in $\mathbb{R}^3$, drawn with the slope $\alpha = (5 - \sqrt5)/10 \approx 0.28$ so that the stripes run steeply: the horizontal direction of the square goes around the tube, the vertical one around the hole, and strands on the far side are drawn faintly. Left: $t \in [0, 9]$, starting at $F(0)$. Middle: $t \in [0, 40]$. Right: $t \in [0, 150]$ — the curve never closes up, and its strands fill in the torus, as [[§41 Embeddings#^prop-41-18|Proposition §41.18]] proves for every irrational $\alpha$. (Drawn for these notes in the vault; not in the course tex.)*
 
 ![[m591-34-a1.gif|480]]
 
@@ -475,7 +677,7 @@ Closedness of the image alone is not enough: the image of the figure-eight (Lee'
 
 ## Regular and Immersed Submanifolds
 
-*Not from lecture: the notion announced with [[§37 Regular Submanifolds#^def-37-2|Definition §37.2]].* A regular submanifold carries the subspace topology, and its smooth structure is forced on it by the ambient manifold. The images of the injective immersions seen so far — the figure-eight ([[§40 Immersions#Images of Immersions|§40]]), the irrational line on the torus (Proposition [[§41 Embeddings#^prop-41-14|§41.14]]) — do not fit that definition, but each is a perfectly good manifold in the topology it inherits from its *domain*. Allowing that topology gives the second kind of submanifold.
+*Not from lecture: the notion announced with [[§37 Regular Submanifolds#^def-37-2|Definition §37.2]].* A regular submanifold carries the subspace topology, and its smooth structure is forced on it by the ambient manifold. The images of the injective immersions seen so far — the figure-eight ([[§40 Immersions#Images of Immersions|§40]]), the irrational line on the torus (Proposition [[§41 Embeddings#^prop-41-18|§41.18]]) — do not fit that definition, but each is a perfectly good manifold in the topology it inherits from its *domain*. Allowing that topology gives the second kind of submanifold.
 
 > [!definition] Definition §41.3: Immersed Submanifold
 > Let $N$ be a smooth manifold. An **immersed submanifold** of $N$ is a subset $S \subseteq N$ together with a topology on $S$, in which it is a topological manifold, and a smooth structure on $S$, such that the inclusion $\iota : S \hookrightarrow N$ is a smooth [[§36 Submersions#^def-36-2|immersion]] ([[§36 Submersions#^def-36-2|Definition §36.2]]). The topology need not be the [[§3 Subspaces and Products#^def-3-1|subspace topology]].
@@ -483,13 +685,13 @@ Closedness of the image alone is not enough: the image of the figure-eight (Lee'
 ^def-41-3
 
 > [!remark]- Connections
-> - The other kind: [[§37 Regular Submanifolds#^def-37-2|regular submanifolds, Def. §37.2]], which are immersed submanifolds by [[§41 Embeddings#^prop-41-17|§41.17]].
+> - The other kind: [[§37 Regular Submanifolds#^def-37-2|regular submanifolds, Def. §37.2]], which are immersed submanifolds by [[§41 Embeddings#^prop-41-21|§41.21]].
 > - Lee calls these immersed submanifolds as well (Ch. 5, *Immersed Submanifolds*).
 
-> [!theorem] Proposition §41.16: Images of Injective Immersions
+> [!theorem] Proposition §41.20: Images of Injective Immersions
 > Let $F : M \to N$ be an injective [[§36 Submersions#^def-36-2|immersion]] and $S = F(M)$. There is exactly one topology and smooth structure on $S$ for which $F : M \to S$ is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]], and with them $S$ is an [[§41 Embeddings#^def-41-3|immersed submanifold]] of $N$.
 
-^prop-41-16
+^prop-41-20
 
 > [!proof]+ Proof
 > *(Not from lecture.)* *The topology.* Declare $U \subseteq S$ open if $F^{-1}(U)$ is open in $M$. This is a topology on $S$, because $F^{-1}(\emptyset) = \emptyset$, $F^{-1}(S) = M$, and preimages commute with unions and intersections. Let $h = F^{-1} : S \to M$ be the inverse of the bijection $F : M \to S$ ($F$ is injective). For $U \subseteq S$, $h(U) = F^{-1}(U)$, so $U$ is open in $S$ exactly when $h(U)$ is open in $M$: $h$ is a bijection that matches open sets with open sets, a homeomorphism (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](2)).
@@ -500,34 +702,34 @@ Closedness of the image alone is not enough: the image of the figure-eight (Lee'
 >
 > *Immersed submanifold.* The inclusion is $\iota = F \circ h$, with $F : M \to N$: indeed $F(h(q)) = q$ for $q \in S$. It is a composite of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]); by the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) $\iota_{\ast q} = F_{\ast h(q)} \circ h_{\ast q}$, which is injective because $h_{\ast q}$ is an isomorphism (Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]) and $F_{\ast h(q)}$ is injective: if $\iota_{\ast q}v = 0$, then $h_{\ast q}v \in \ker F_{\ast h(q)} = 0$, so $v = 0$. So $\iota$ is an immersion, and $S$, with this topology and smooth structure, is an immersed submanifold of $N$ (Definition [[§41 Embeddings#^def-41-3|§41.3]]).
 
-^pf-41-16
+^pf-41-20
 
 *Uses:* [[§41 Embeddings#^def-41-3|Def. §41.3]], [[§36 Submersions#^def-36-2|Def. §36.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§19 Smooth Functions and Smooth Maps#^def-19-6|Def. §19.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]
 
-> [!theorem] Proposition §41.17: Every Regular Submanifold Is an Immersed Submanifold
+> [!theorem] Proposition §41.21: Every Regular Submanifold Is an Immersed Submanifold
 > A [[§37 Regular Submanifolds#^def-37-2|regular submanifold]] $S \subseteq N$, with the subspace topology and its induced smooth structure ([[§37 Regular Submanifolds#^prop-37-3|Proposition §37.3]]), is an [[§41 Embeddings#^def-41-3|immersed submanifold]] of $N$.
 
-^prop-41-17
+^prop-41-21
 
 > [!proof]+ Proof
 > *(Not from lecture.)* Check Definition [[§41 Embeddings#^def-41-3|§41.3]]. With the subspace topology and the induced smooth structure, $S$ is a topological manifold and a smooth manifold (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]). The inclusion $\iota : S \hookrightarrow N$ is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]]) and $\iota_{\ast p}$ is injective at every $p \in S$ (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]), so $\iota$ is a smooth immersion (Definition [[§36 Submersions#^def-36-2|§36.2]]).
 
-^pf-41-17
+^pf-41-21
 
 *Uses:* [[§41 Embeddings#^def-41-3|Def. §41.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§36 Submersions#^def-36-2|Def. §36.2]]
 
-> [!theorem] Proposition §41.18: When an Immersed Submanifold Is Regular
-> Let $F : M \to N$ be an injective immersion, and give $S = F(M)$ the structure of [[§41 Embeddings#^prop-41-16|Proposition §41.16]]. The following are equivalent:
+> [!theorem] Proposition §41.22: When an Immersed Submanifold Is Regular
+> Let $F : M \to N$ be an injective immersion, and give $S = F(M)$ the structure of [[§41 Embeddings#^prop-41-20|Proposition §41.20]]. The following are equivalent:
 > 1. $F$ is an [[§41 Embeddings#^def-41-1|embedding]] ([[§41 Embeddings#^def-41-1|Definition §41.1]]);
 > 2. the topology of $S$ is the subspace topology;
-> 3. $S$ is a [[§37 Regular Submanifolds#^def-37-2|regular submanifold]] of $N$ whose induced smooth structure is the structure of [[§41 Embeddings#^prop-41-16|Proposition §41.16]].
+> 3. $S$ is a [[§37 Regular Submanifolds#^def-37-2|regular submanifold]] of $N$ whose induced smooth structure is the structure of [[§41 Embeddings#^prop-41-20|Proposition §41.20]].
 
-^prop-41-18
+^prop-41-22
 
 > [!proof]+ Proof
-> *(Not from lecture.)* Write $\mathcal{T}_S$ for the topology of Proposition [[§41 Embeddings#^prop-41-16|§41.16]] and $\mathcal{T}_{\mathrm{sub}}$ for the subspace topology on $S$. We show (1) $\Leftrightarrow$ (2), (1) $\Rightarrow$ (3) and (3) $\Rightarrow$ (2), which together give all the equivalences.
+> *(Not from lecture.)* Write $\mathcal{T}_S$ for the topology of Proposition [[§41 Embeddings#^prop-41-20|§41.20]] and $\mathcal{T}_{\mathrm{sub}}$ for the subspace topology on $S$. We show (1) $\Leftrightarrow$ (2), (1) $\Rightarrow$ (3) and (3) $\Rightarrow$ (2), which together give all the equivalences.
 >
-> *(1) $\Leftrightarrow$ (2).* The topology of $S$ is the one for which $F : M \to S$ is a homeomorphism; it equals the subspace topology exactly when $F$ is a homeomorphism onto its image with the subspace topology, which, for an immersion, is the definition of an embedding. In detail: $F$ is an immersion by hypothesis, so by Definition [[§41 Embeddings#^def-41-1|§41.1]], (1) says that $F : M \to (S, \mathcal{T}_{\mathrm{sub}})$ is a homeomorphism. If $\mathcal{T}_S = \mathcal{T}_{\mathrm{sub}}$, this holds, because $F : M \to (S, \mathcal{T}_S)$ is a homeomorphism (Proposition [[§41 Embeddings#^prop-41-16|§41.16]]). Conversely, if $F : M \to (S, \mathcal{T}_{\mathrm{sub}})$ is a homeomorphism, then for $U \subseteq S$, by Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](2) applied to both homeomorphisms,
+> *(1) $\Leftrightarrow$ (2).* The topology of $S$ is the one for which $F : M \to S$ is a homeomorphism; it equals the subspace topology exactly when $F$ is a homeomorphism onto its image with the subspace topology, which, for an immersion, is the definition of an embedding. In detail: $F$ is an immersion by hypothesis, so by Definition [[§41 Embeddings#^def-41-1|§41.1]], (1) says that $F : M \to (S, \mathcal{T}_{\mathrm{sub}})$ is a homeomorphism. If $\mathcal{T}_S = \mathcal{T}_{\mathrm{sub}}$, this holds, because $F : M \to (S, \mathcal{T}_S)$ is a homeomorphism (Proposition [[§41 Embeddings#^prop-41-20|§41.20]]). Conversely, if $F : M \to (S, \mathcal{T}_{\mathrm{sub}})$ is a homeomorphism, then for $U \subseteq S$, by Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](2) applied to both homeomorphisms,
 >
 > $$
 > U \in \mathcal{T}_{\mathrm{sub}} \iff F^{-1}(U) \text{ is open in } M \iff U \in \mathcal{T}_S ,
@@ -535,18 +737,18 @@ Closedness of the image alone is not enough: the image of the figure-eight (Lee'
 >
 > so $\mathcal{T}_S = \mathcal{T}_{\mathrm{sub}}$.
 >
-> *(1) $\Rightarrow$ (3).* $S$ is a regular submanifold by Theorem [[§41 Embeddings#^thm-41-1|§41.1]], and $F : M \to S$ is a diffeomorphism for its induced structure by Corollary [[§41 Embeddings#^cor-41-3|§41.3]]. By the uniqueness in Proposition [[§41 Embeddings#^prop-41-16|§41.16]] — exactly one topology and smooth structure on $S$ make $F : M \to S$ a diffeomorphism — the two structures coincide.
+> *(1) $\Rightarrow$ (3).* $S$ is a regular submanifold by Theorem [[§41 Embeddings#^thm-41-1|§41.1]], and $F : M \to S$ is a diffeomorphism for its induced structure by Corollary [[§41 Embeddings#^cor-41-3|§41.3]]. By the uniqueness in Proposition [[§41 Embeddings#^prop-41-20|§41.20]] — exactly one topology and smooth structure on $S$ make $F : M \to S$ a diffeomorphism — the two structures coincide.
 >
-> *(3) $\Rightarrow$ (2).* The induced structure of a regular submanifold has the subspace topology (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]], and Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]], where $S$ carries the subspace topology). By (3) the induced structure is the structure of Proposition [[§41 Embeddings#^prop-41-16|§41.16]], so its topology $\mathcal{T}_S$ is $\mathcal{T}_{\mathrm{sub}}$.
+> *(3) $\Rightarrow$ (2).* The induced structure of a regular submanifold has the subspace topology (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]], and Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]], where $S$ carries the subspace topology). By (3) the induced structure is the structure of Proposition [[§41 Embeddings#^prop-41-20|§41.20]], so its topology $\mathcal{T}_S$ is $\mathcal{T}_{\mathrm{sub}}$.
 
-^pf-41-18
+^pf-41-22
 
-*Uses:* [[§41 Embeddings#^def-41-1|Def. §41.1]], [[§41 Embeddings#^prop-41-16|§41.16]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§41 Embeddings#^cor-41-3|§41.3]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
+*Uses:* [[§41 Embeddings#^def-41-1|Def. §41.1]], [[§41 Embeddings#^prop-41-20|§41.20]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§41 Embeddings#^cor-41-3|§41.3]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
 
-> [!example] Example §41.3: Immersed but Not Regular
-> 1. *The figure-eight.* $\beta(t) = (\sin 2t, \sin t)$, $t \in (-\pi, \pi)$ (Lee, Example 4.19), is an injective immersion, so its image is an [[§41 Embeddings#^def-41-3|immersed submanifold]] of $\mathbb{R}^2$ ([[§41 Embeddings#^prop-41-16|Proposition §41.16]]). It is not a regular submanifold: in the subspace topology every small neighbourhood of the origin in the image is an X — the strand through $\beta(0)$ and the two ends returning as $t \to \pm\pi$ — and removing the origin leaves four components, which cannot happen in a $1$-manifold (as in [[§40 Immersions#^ex-40-1|Example §40.1]]).
-> 2. *The irrational line.* The curve $\gamma$ of [[§41 Embeddings#^prop-41-14|Proposition §41.14]] is an injective immersion, so its image is an immersed submanifold of $T^2$, a copy of $\mathbb{R}$ in its own topology. It is not a regular submanifold. The image is dense, so if it were regular it would be open in $T^2$ ([[§41 Embeddings#^cor-41-11|Corollary §41.11]]). But a nonempty open subset of $T^2$ containing $(e^{2\pi i a}, w)$ meets the circle $\{e^{2\pi i a}\} \times S^1$ in an open arc, which is uncountable, while the image meets that circle only in the countable set $\{\gamma(a + k) : k \in \mathbb{Z}\}$.
+> [!example] Example §41.4: Immersed but Not Regular
+> 1. *The figure-eight.* $\beta(t) = (\sin 2t, \sin t)$, $t \in (-\pi, \pi)$ (Lee, Example 4.19), is an injective immersion, so its image is an [[§41 Embeddings#^def-41-3|immersed submanifold]] of $\mathbb{R}^2$ ([[§41 Embeddings#^prop-41-20|Proposition §41.20]]). It is not a regular submanifold: in the subspace topology every small neighbourhood of the origin in the image is an X — the strand through $\beta(0)$ and the two ends returning as $t \to \pm\pi$ — and removing the origin leaves four components, which cannot happen in a $1$-manifold (as in [[§40 Immersions#^ex-40-1|Example §40.1]]).
+> 2. *The irrational line.* The curve $\gamma$ of [[§41 Embeddings#^prop-41-18|Proposition §41.18]] is an injective immersion, so its image is an immersed submanifold of $T^2$, a copy of $\mathbb{R}$ in its own topology. It is not a regular submanifold. The image is dense, so if it were regular it would be open in $T^2$ ([[§41 Embeddings#^cor-41-15|Corollary §41.15]]). But a nonempty open subset of $T^2$ containing $(e^{2\pi i a}, w)$ meets the circle $\{e^{2\pi i a}\} \times S^1$ in an open arc, which is uncountable, while the image meets that circle only in the countable set $\{\gamma(a + k) : k \in \mathbb{Z}\}$.
 
-^ex-41-3
+^ex-41-4
 
 In the immersed topology, a short interval of the irrational line is an open subset of the image; in the subspace topology, every neighbourhood of a point of the image also contains points from arbitrarily far along the line, because the line comes back densely. That is the whole difference between the two kinds of submanifold.

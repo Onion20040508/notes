@@ -362,7 +362,7 @@ A section in the sense of [[§45 Fibrations#^def-45-3|Definition §45.3]] is a l
 > 1. $s$ is an embedding (Definition [[§41 Embeddings#^def-41-1|§41.1]]);
 > 2. its image $s(M) = \{ y \in E : s(\pi(y)) = y \}$ is closed in $E$.
 >
-> So $s(M)$ is a closed regular submanifold of $E$ of dimension $\dim M$ (Theorem [[§41 Embeddings#^thm-41-1|§41.1]]), and $s$ is proper (Proposition [[§41 Embeddings#^prop-41-12|§41.12]]). In particular the image of every section of a fibration (Definition [[§45 Fibrations#^def-45-3|§45.3]]) is one.
+> So $s(M)$ is a closed regular submanifold of $E$ of dimension $\dim M$ (Theorem [[§41 Embeddings#^thm-41-1|§41.1]]), and $s$ is proper (Proposition [[§41 Embeddings#^prop-41-16|§41.16]]). In particular the image of every section of a fibration (Definition [[§45 Fibrations#^def-45-3|§45.3]]) is one.
 
 ^prop-45-6
 
@@ -381,8 +381,8 @@ A section in the sense of [[§45 Fibrations#^def-45-3|Definition §45.3]] is a l
 >
 > *(2) The image.* If $y = s(p)$, then $s(\pi(y)) = s(p) = y$; conversely, if $s(\pi(y)) = y$, then $y \in s(M)$. So $s(M) = \{ y : s(\pi(y)) = y \}$. Its complement is open: let $s(\pi(y)) \ne y$. $E$ is Hausdorff (Definition [[§2 Topological Manifolds#^def-2-2|§2.2]]), so there are disjoint open sets $O \ni s(\pi(y))$ and $O' \ni y$. The set $(s \circ \pi)^{-1}(O) \cap O'$ is open, as $s \circ \pi$ is continuous, and contains $y$; for $y'$ in it, $s(\pi(y')) \in O$ and $y' \in O'$, so $s(\pi(y')) \ne y'$. So every point outside $s(M)$ has a neighbourhood outside $s(M)$, and $s(M)$ is closed.
 >
-> The last two sentences: $s(M)$ is a regular submanifold of codimension $\dim E - \dim M$ by Theorem [[§41 Embeddings#^thm-41-1|§41.1]], closed by (2), so $s$ is proper by Proposition [[§41 Embeddings#^prop-41-12|§41.12]]. For a fibration, a section is such an $s$ (Definition [[§45 Fibrations#^def-45-3|§45.3]]).
+> The last two sentences: $s(M)$ is a regular submanifold of codimension $\dim E - \dim M$ by Theorem [[§41 Embeddings#^thm-41-1|§41.1]], closed by (2), so $s$ is proper by Proposition [[§41 Embeddings#^prop-41-16|§41.16]]. For a fibration, a section is such an $s$ (Definition [[§45 Fibrations#^def-45-3|§45.3]]).
 
 ^pf-45-6
 
-*Uses:* [[§45 Fibrations#^prop-45-5|§45.5]], [[§36 Submersions#^def-36-2|Def. §36.2]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§41 Embeddings#^prop-41-12|§41.12]], [[§45 Fibrations#^def-45-3|Def. §45.3]]
+*Uses:* [[§45 Fibrations#^prop-45-5|§45.5]], [[§36 Submersions#^def-36-2|Def. §36.2]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§41 Embeddings#^thm-41-1|§41.1]], [[§41 Embeddings#^prop-41-16|§41.16]], [[§45 Fibrations#^def-45-3|Def. §45.3]]

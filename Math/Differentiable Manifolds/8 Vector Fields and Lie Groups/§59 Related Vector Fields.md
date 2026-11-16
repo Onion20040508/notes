@@ -307,7 +307,7 @@ The reason for the characterization through operators is the following propositi
 ^lem-59-5
 
 > [!proof]+ Proof
-> *(Not from lecture; the step the proof of Proposition [[§59 Related Vector Fields#^prop-59-6|§59.6]] uses, written out.)* Let $p \in S \cap U$. By Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], applied to the adapted chart with the coordinates along $S$ listed first, $\iota_{\ast p}(T_pS) = \operatorname{Span}\{ \partial/\partial x^1|_p, \ldots, \partial/\partial x^k|_p \}$. The $m$ vectors $\partial/\partial x^i|_p$, $\partial/\partial y^a|_p$ form a basis of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), and
+> *(Not from lecture; the step the proof of Proposition [[§59 Related Vector Fields#^prop-59-7|§59.7]] uses, written out.)* Let $p \in S \cap U$. By Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], applied to the adapted chart with the coordinates along $S$ listed first, $\iota_{\ast p}(T_pS) = \operatorname{Span}\{ \partial/\partial x^1|_p, \ldots, \partial/\partial x^k|_p \}$. The $m$ vectors $\partial/\partial x^i|_p$, $\partial/\partial y^a|_p$ form a basis of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), and
 >
 > $$
 > \mathbf{X}_p = \sum_i f^i(p)\, \frac{\partial}{\partial x^i}\Big|_p + \sum_a g^a(p)\, \frac{\partial}{\partial y^a}\Big|_p .
@@ -319,12 +319,48 @@ The reason for the characterization through operators is the following propositi
 
 *Uses:* [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]
 
-> [!theorem] Proposition §59.6: Brackets of Fields Tangent to a Submanifold
+> [!theorem] Proposition §59.6: Restricting a Tangent Field to the Submanifold
+> Let $S \subseteq M$ be a regular submanifold of dimension $k$, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(M)$ tangent to $S$ (Definition [[§59 Related Vector Fields#^def-59-3|§59.3]]). Then there is a unique smooth vector field $\mathbf{X}|_S \in \mathfrak{X}(S)$ that is $\iota$-related to $\mathbf{X}$ (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]):
+>
+> $$
+> \iota_{\ast p}\big( (\mathbf{X}|_S)_p \big) = \mathbf{X}_p \qquad \text{for every } p \in S .
+> $$
+>
+> In an adapted chart $(U, (x, y))$ as in Lemma [[§59 Related Vector Fields#^lem-59-5|§59.5]], where $\mathbf{X} = \sum_i f^i\, \partial/\partial x^i + \sum_a g^a\, \partial/\partial y^a$,
+>
+> $$
+> \mathbf{X}|_S = \sum_{i=1}^k (f^i \circ \iota)\, \frac{\partial}{\partial x^i}\Big|^S \qquad \text{on } S \cap U ,
+> $$
+>
+> in the induced chart $x|_{S \cap U}$ of $S$.
+>
+> *Lee: Proposition 8.23*
+
+^prop-59-6
+
+> [!proof]+ Proof
+> *(Cited from Lee in the submitted solution of Assignment 8, Problem 5; the proof is filled in.)*
+>
+> *The vectors.* Let $p \in S$. The map $\iota_{\ast p}$ is injective (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]) and $\mathbf{X}_p$ lies in its image, so there is exactly one $v_p \in T_pS$ with $\iota_{\ast p}(v_p) = \mathbf{X}_p$. So there is exactly one map $p \mapsto v_p$ with the required property; put $(\mathbf{X}|_S)_p = v_p$. It remains to show that it is smooth.
+>
+> *Smoothness.* Let $p \in S$ and let $(U, (x, y))$ be an adapted chart at $p$. By Lemma [[§59 Related Vector Fields#^lem-59-5|§59.5]], $g^a = 0$ on $S \cap U$, so for $q \in S \cap U$, by Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] and the linearity of $\iota_{\ast q}$,
+>
+> $$
+> \mathbf{X}_q = \sum_{i=1}^k f^i(q)\, \frac{\partial}{\partial x^i}\Big|_q = \sum_{i=1}^k f^i(q)\, \iota_{\ast q}\Big( \frac{\partial}{\partial x^i}\Big|^S_q \Big) = \iota_{\ast q}\Big( \sum_{i=1}^k f^i(q)\, \frac{\partial}{\partial x^i}\Big|^S_q \Big) .
+> $$
+>
+> By the uniqueness of $v_q$, $(\mathbf{X}|_S)_q = \sum_i f^i(q)\, \partial/\partial x^i|^S_q$: the coefficients of $\mathbf{X}|_S$ in the chart $x|_{S \cap U}$ of $S$ are the functions $f^i \circ \iota$ on $S \cap U$, smooth as composites of smooth maps (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], $\mathbf{X}|_S$ is smooth on $S \cap U$. Such sets cover $S$.
+
+^pf-59-6
+
+*Uses:* [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§59 Related Vector Fields#^lem-59-5|§59.5]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§56 Vector Fields#^prop-56-1|§56.1]]
+
+> [!theorem] Proposition §59.7: Brackets of Fields Tangent to a Submanifold
 > Let $S \subseteq M$ be a regular submanifold and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ tangent to $S$ (Definition [[§59 Related Vector Fields#^def-59-3|§59.3]]). Then $[\mathbf{X}, \mathbf{Y}]$ is also tangent to $S$.
 >
 > *Lee: Corollary 8.32*
 
-^prop-59-6
+^prop-59-7
 
 > [!proof]+ Proof
 > *(Lecture 21, in outline; the bookkeeping is filled in.)* Use adapted coordinates: near $p \in S$ take a slice chart $(x, y) = (x^1, \ldots, x^k, y^1, \ldots, y^{m-k})$ with $S = \{ y = 0 \}$ (Definitions [[§37 Regular Submanifolds#^def-37-2|§37.2]] and [[§37 Regular Submanifolds#^def-37-3|§37.3]]); on the exam, $M$ was two-dimensional, but $x$ and $y$ may be vector-valued: neither the dimension nor the codimension matters. Write
@@ -342,18 +378,129 @@ The reason for the characterization through operators is the following propositi
 >
 > Evaluate at $y = 0$. The terms with $\partial/\partial x^i$ vanish for one reason: a partial with respect to $x$ at $y = 0$ is computed by first setting $y = 0$ and then differentiating in $x$, and with $y = 0$ the function is already zero — $\frac{\partial v^b}{\partial x^i}(x, 0) = \frac{\partial}{\partial x^i}\big(v^b(x, 0)\big) = 0$, and likewise for $g^b$. The terms with $\partial/\partial y^a$ vanish for a different reason: the partials $\partial v^b/\partial y^a$ and $\partial g^b/\partial y^a$ need not be zero, but their coefficients $g^a(x, 0)$ and $v^a(x, 0)$ are. So the $y$-components of $[\mathbf{X}, \mathbf{Y}]$ vanish on $S$, and $[\mathbf{X}, \mathbf{Y}]_p \in T_pS$ for $p \in S$.
 
-^pf-59-6
+^pf-59-7
 
 *Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], [[§59 Related Vector Fields#^lem-59-5|§59.5]]
+
+> [!proof]+ Second proof, through related fields
+> *(Lee's proof of Corollary 8.32; it is the route of the submitted solution of Assignment 8, Problem 5.)* By Proposition [[§59 Related Vector Fields#^prop-59-6|§59.6]], $\mathbf{X}|_S$ and $\mathbf{Y}|_S$ are smooth vector fields on $S$, $\iota$-related to $\mathbf{X}$ and to $\mathbf{Y}$. By the naturality of the bracket (Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]], with $F = \iota$), $[\mathbf{X}|_S, \mathbf{Y}|_S]$ is $\iota$-related to $[\mathbf{X}, \mathbf{Y}]$: for every $p \in S$,
+>
+> $$
+> [\mathbf{X}, \mathbf{Y}]_p = \iota_{\ast p}\big( [\mathbf{X}|_S, \mathbf{Y}|_S]_p \big) \in \iota_{\ast p}(T_pS) .
+> $$
+>
+> So $[\mathbf{X}, \mathbf{Y}]$ is tangent to $S$.
+
+^pf-59-7-2
+
+*Uses:* [[§59 Related Vector Fields#^prop-59-6|§59.6]], [[§59 Related Vector Fields#^prop-59-3|§59.3]]
 
 ![[m591-56-5.svg]]
 *A field tangent to $S$, near $S$. Left: $S$ in $M$ and the domain $U$ of a slice chart $\varphi = (x, y)$. Right: in the chart, $\varphi(S \cap U) = \{y = 0\}$, and $\mathbf{X} = f\,\partial_x + g\,\partial_y$ is tangent to $S$ exactly when $g(x, 0) = 0$: on the slice its arrows point along it.*
 
-**Comparison with Lee.** Lee proves this (Corollary 8.32) with related fields: on $S$, $\mathbf{X}$ and $\mathbf{Y}$ restrict to fields $\iota$-related to them, and the naturality of the bracket (Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]]) applied to the inclusion $\iota : S \to M$ does the rest. The coordinate proof above is the one given in class.
+**Comparison with Lee.** Lee proves this (Corollary 8.32) with related fields: on $S$, $\mathbf{X}$ and $\mathbf{Y}$ restrict to fields $\iota$-related to them (Proposition [[§59 Related Vector Fields#^prop-59-6|§59.6]]), and the naturality of the bracket (Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]]) applied to the inclusion $\iota : S \to M$ does the rest; this is the second proof above. The coordinate proof is the one given in class.
 
 **Transcription note (Lecture 21).** Page 55 of the handwritten notes records the $\partial_y$ component of $[f\partial_x, v\partial_y]$ as $\partial v/\partial x|_{y = 0}$; it is $f\, \partial v/\partial x|_{y = 0}$, which vanishes for the same reason.
 
-> [!theorem] Lemma §59.7: Vector Fields on a Submanifold Extend Locally
+> [!theorem] Corollary §59.8: Restriction Commutes with the Bracket
+> Let $S \subseteq M$ be a regular submanifold and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ tangent to $S$. Then
+>
+> $$
+> [\mathbf{X}, \mathbf{Y}]\big|_S = \big[ \mathbf{X}|_S, \mathbf{Y}|_S \big] .
+> $$
+
+^cor-59-8
+
+> [!proof]+ Proof
+> *(Not from lecture; a by-product of the second proof of Proposition [[§59 Related Vector Fields#^prop-59-7|§59.7]].)* By that proof, $[\mathbf{X}|_S, \mathbf{Y}|_S]$ is a smooth vector field on $S$ that is $\iota$-related to $[\mathbf{X}, \mathbf{Y}]$, and $[\mathbf{X}, \mathbf{Y}]$ is tangent to $S$. By the uniqueness in Proposition [[§59 Related Vector Fields#^prop-59-6|§59.6]], applied to the field $[\mathbf{X}, \mathbf{Y}]$, it is $[\mathbf{X}, \mathbf{Y}]|_S$.
+
+^pf-59-8
+
+*Uses:* [[§59 Related Vector Fields#^prop-59-7|§59.7]], [[§59 Related Vector Fields#^prop-59-6|§59.6]]
+
+> [!theorem] Corollary §59.9: A Necessary Condition for an Integral Submanifold
+> Let $S \subseteq M$ be a regular submanifold of dimension $k$, with inclusion $\iota$, and let $\mathbf{X}_1, \ldots, \mathbf{X}_k \in \mathfrak{X}(M)$ be tangent to $S$. If $p \in S$ and the vectors $(\mathbf{X}_1)_p, \ldots, (\mathbf{X}_k)_p$ are linearly independent, then they form a basis of $\iota_{\ast p}(T_pS)$, and
+>
+> $$
+> [\mathbf{X}_i, \mathbf{X}_j]_p \in \operatorname{Span}\big\{ (\mathbf{X}_1)_p, \ldots, (\mathbf{X}_k)_p \big\} \qquad \text{for all } i, j .
+> $$
+>
+> *Lee: Proposition 19.3*
+
+^cor-59-9
+
+> [!proof]+ Proof
+> *(Assignment 8, Problem 5: the argument of the submitted solution, for $k$ fields.)* Since $\iota_{\ast p}$ is injective (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]), $\iota_{\ast p}(T_pS)$ has dimension $k$. The $k$ vectors $(\mathbf{X}_i)_p$ lie in it, because the fields are tangent to $S$ (Definition [[§59 Related Vector Fields#^def-59-3|§59.3]]), and are linearly independent; so they form a basis of it. By Proposition [[§59 Related Vector Fields#^prop-59-7|§59.7]], each $[\mathbf{X}_i, \mathbf{X}_j]$ is tangent to $S$, so $[\mathbf{X}_i, \mathbf{X}_j]_p \in \iota_{\ast p}(T_pS)$, the span of that basis.
+
+^pf-59-9
+
+*Uses:* [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§59 Related Vector Fields#^def-59-3|Def. §59.3]], [[§59 Related Vector Fields#^prop-59-7|§59.7]]
+
+Read in the other direction: if at some point the fields are independent and one of their brackets leaves their span, then no $k$-dimensional regular submanifold through that point is tangent to all of them. For $k = 1$ the condition is empty, since $[\mathbf{X}, \mathbf{X}] = 0$, in agreement with the existence of integral curves (Theorem [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]]). For commuting fields it holds trivially; their flows commute (Theorem [[§72 Lie Derivatives#^thm-72-9|§72.9]], later). That the condition, imposed at every point, is also sufficient for integral submanifolds to exist is the Frobenius theorem (Lee, Chapter 19), which is not part of these notes.
+
+> [!example] Example §59.2: Two Fields in $\mathbb{R}^3$ with No Integral Surface
+> On $\mathbb{R}^3$, with coordinates $(x, y, z)$, let
+>
+> $$
+> \mathbf{X} = \frac{\partial}{\partial x} - \frac{y}{2}\, \frac{\partial}{\partial z}, \qquad \mathbf{Y} = \frac{\partial}{\partial y} + \frac{x}{2}\, \frac{\partial}{\partial z} .
+> $$
+>
+> 1. $[\mathbf{X}, \mathbf{Y}] = \partial/\partial z$.
+> 2. There is no non-empty regular submanifold $S \subseteq \mathbb{R}^3$ of dimension two such that $\mathbf{X}$ and $\mathbf{Y}$ are both tangent to $S$.
+> 3. The flows of $\mathbf{X}$ and $\mathbf{Y}$ are $\varphi_s(x, y, z) = (x + s,\ y,\ z - \tfrac{ys}{2})$ and $\psi_t(x, y, z) = (x,\ y + t,\ z + \tfrac{xt}{2})$, and
+>
+> $$
+> \psi_{-t} \circ \varphi_{-s} \circ \psi_t \circ \varphi_s(0, 0, 0) = (0, 0, st) .
+> $$
+>
+> So integral curves have no analogue for a general pair of vector fields, with surfaces in place of curves: at every point the plane $\operatorname{Span}\{\mathbf{X}_p, \mathbf{Y}_p\}$ is defined, but no surface is tangent to all these planes.
+>
+> *Lee: cf. Example 19.1(d)*
+
+^ex-59-2
+
+> [!remark]- Connections
+> - $\mathbf{X}$, $\mathbf{Y}$ and $\partial/\partial z$ are the left-invariant vector fields of the Heisenberg group: [[§71 The Exponential Map#^ex-71-4|Ex. §71.4]].
+> - The open path of part (3) is the bracket as the failure of flows to commute: [[§72 Lie Derivatives#^prop-72-12|§72.12]]; commuting fields have commuting flows: [[§72 Lie Derivatives#^thm-72-9|§72.9]].
+
+> [!proof]+ Proof
+> *(Assignment 8, Problem 5: the submitted solution. Part (3) is not from the assignment.)*
+>
+> *(1).* Write $\mathbf{X} = \sum_i \mathbf{X}^i\, \partial_i$ and $\mathbf{Y} = \sum_i \mathbf{Y}^i\, \partial_i$ with respect to $\partial_x, \partial_y, \partial_z$: $(\mathbf{X}^1, \mathbf{X}^2, \mathbf{X}^3) = (1, 0, -\tfrac{y}{2})$ and $(\mathbf{Y}^1, \mathbf{Y}^2, \mathbf{Y}^3) = (0, 1, \tfrac{x}{2})$. By Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], $[\mathbf{X}, \mathbf{Y}] = \sum_i \big( \mathbf{X}(\mathbf{Y}^i) - \mathbf{Y}(\mathbf{X}^i) \big)\, \partial_i$, and
+>
+> $$
+> \mathbf{X}(\mathbf{Y}^1) - \mathbf{Y}(\mathbf{X}^1) = 0, \qquad \mathbf{X}(\mathbf{Y}^2) - \mathbf{Y}(\mathbf{X}^2) = 0, \qquad \mathbf{X}(\mathbf{Y}^3) - \mathbf{Y}(\mathbf{X}^3) = \mathbf{X}\Big(\frac{x}{2}\Big) + \mathbf{Y}\Big(\frac{y}{2}\Big) = \frac12 + \frac12 = 1 .
+> $$
+>
+> *(2).* Suppose $S$ is such a submanifold, and let $p = (x, y, z) \in S$. The vectors $\mathbf{X}_p$ and $\mathbf{Y}_p$ are linearly independent, since their $(\partial_x, \partial_y)$-components are $(1, 0)$ and $(0, 1)$. By Corollary [[§59 Related Vector Fields#^cor-59-9|§59.9]], with $k = 2$, $[\mathbf{X}, \mathbf{Y}]_p \in \operatorname{Span}\{\mathbf{X}_p, \mathbf{Y}_p\}$. But for $a, b \in \mathbb{R}$,
+>
+> $$
+> a\,\mathbf{X}_p + b\,\mathbf{Y}_p = a\, \frac{\partial}{\partial x}\Big|_p + b\, \frac{\partial}{\partial y}\Big|_p + \Big( -\frac{ay}{2} + \frac{bx}{2} \Big) \frac{\partial}{\partial z}\Big|_p ,
+> $$
+>
+> and if this equals $[\mathbf{X}, \mathbf{Y}]_p = \partial/\partial z|_p$, comparing the $\partial_x$ and $\partial_y$ components gives $a = b = 0$, and then the left side is $0 \neq \partial/\partial z|_p$. This contradiction shows that no such $S$ exists. (The submitted solution obtains $[\mathbf{X}, \mathbf{Y}]_p \in \iota_{\ast p}(T_pS)$ by restricting $\mathbf{X}$ and $\mathbf{Y}$ to $S$ and using the naturality of the bracket: the second proof of Proposition [[§59 Related Vector Fields#^prop-59-7|§59.7]].)
+>
+> *(3).* By Proposition [[§67 Integral Curves#^prop-67-2|§67.2]], a curve $(x(s), y(s), z(s))$ is an integral curve of $\mathbf{X}$ if and only if $\dot x = 1$, $\dot y = 0$, $\dot z = -y/2$; the solution starting at $(x, y, z)$ is $(x + s,\ y,\ z - \tfrac{ys}{2})$, defined for all $s$. Likewise for $\mathbf{Y}$: $\dot x = 0$, $\dot y = 1$, $\dot z = x/2$, with solution $(x,\ y + t,\ z + \tfrac{xt}{2})$. Following the four flows from the origin,
+>
+> $$
+> (0, 0, 0) \ \xrightarrow{\ \varphi_s\ }\ (s, 0, 0) \ \xrightarrow{\ \psi_t\ }\ \big(s, t, \tfrac{st}{2}\big) \ \xrightarrow{\ \varphi_{-s}\ }\ \big(0, t, \tfrac{st}{2} + \tfrac{ts}{2}\big) = (0, t, st) \ \xrightarrow{\ \psi_{-t}\ }\ (0, 0, st) .
+> $$
+
+^pf-ex-59-2
+
+*Uses:* [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], [[§59 Related Vector Fields#^cor-59-9|§59.9]], [[§59 Related Vector Fields#^prop-59-7|§59.7]], [[§67 Integral Curves#^prop-67-2|§67.2]]
+
+The path of (3) is tangent to the planes $\operatorname{Span}\{\mathbf{X}, \mathbf{Y}\}$ on each of its four legs, and its shadow in the $(x, y)$-plane is a closed rectangle; but the path does not close: it climbs by $st$, the area of the rectangle, in the direction of $[\mathbf{X}, \mathbf{Y}] = \partial/\partial z$. This is the bracket as the failure of the flows to commute (Proposition [[§72 Lie Derivatives#^prop-72-12|§72.12]], later). It also gives a second reason, in outline, why no surface is tangent to the planes. A surface $S$ through the origin tangent to them would contain the path for all small $s$ and $t$, because an integral curve of $\mathbf{X}$ or $\mathbf{Y}$ that starts on $S$ stays on $S$ for a short time: it is the integral curve of the restricted field of Proposition [[§59 Related Vector Fields#^prop-59-6|§59.6]] (by Proposition [[§70 Complete Vector Fields#^prop-70-10|§70.10]], later, and uniqueness). Then $S$ would contain points $(0, 0, st)$ of the $z$-axis arbitrarily close to the origin; but the tangent plane of $S$ at the origin is horizontal, so near the origin $S$ is a graph over the $(x, y)$-plane and meets the $z$-axis only at the origin. The fields $\mathbf{X}$, $\mathbf{Y}$ and $\partial/\partial z$ are the left-invariant vector fields of the Heisenberg group (Example [[§71 The Exponential Map#^ex-71-4|§71.4]], later).*
+
+![[m591-77-3.svg]]
+
+*(Not from lecture; figure added.)* The planes $\operatorname{Span}\{\mathbf{X}_p, \mathbf{Y}_p\}$ of Example [[§59 Related Vector Fields#^ex-59-2|§59.2]] at points of the plane $z = 0$ (they do not depend on $z$): horizontal at the origin, and tilting more the farther $p$ is from the $z$-axis. Red: the path of part (3) for $s = t = 1.4$, tangent to the planes on each leg; its shadow (dashed) is a closed rectangle of area $st$, but the path ends at height $st$ above its starting point.
+
+![[m591-77-a3.gif|520]]
+
+*(Not from lecture; animation added, vault only.)* The path of part (3) traced leg by leg, for $s = t = 1.4$: the flow of $\mathbf{X}$, of $\mathbf{Y}$, of $\mathbf{X}$ backwards, of $\mathbf{Y}$ backwards. Its shadow in the $(x, y)$-plane (dashed) closes up; the path itself ends at height $st$ above the point where it started.
+
+> [!theorem] Lemma §59.10: Vector Fields on a Submanifold Extend Locally
 > Let $S \subseteq M$ be a regular submanifold of dimension $k$, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(S)$. Let $(U, (x, y))$ be an adapted chart with $S \cap U = \{y = 0\}$ and image a product $V \times W$, $\vec 0 \in W$ (Lemma [[§37 Regular Submanifolds#^lem-37-6|§37.6]], where the codimension is $m - k$), and $\pi : U \to U \cap S$ the retraction of Lemma [[§37 Regular Submanifolds#^lem-37-7|§37.7]]. Write $\mathbf{X} = \sum_{i=1}^k \mathbf{X}^i\, \partial/\partial x^i|^S$ on $U \cap S$, in the induced chart $x|_{U \cap S}$ of $S$. Then
 >
 > $$
@@ -362,7 +509,7 @@ The reason for the characterization through operators is the following propositi
 >
 > satisfies $\mathbf{Y}_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $p \in U \cap S$. In particular $\mathbf{Y}$ is tangent to $S$ (Definition [[§59 Related Vector Fields#^def-59-3|§59.3]]).
 
-^lem-59-7
+^lem-59-10
 
 > [!proof]+ Proof
 > *(Assignment 7, Problem 1: the submitted solution, the step “the local extension”.)* *$\mathbf{Y}$ is smooth.* Since $\mathbf{X}$ is a smooth vector field on $S$, its coefficients $\mathbf{X}^i$ in the chart $x|_{U \cap S}$ of $S$ are smooth functions on $U \cap S$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], on the manifold $S$). By Lemma [[§37 Regular Submanifolds#^lem-37-8|§37.8]], each $\mathbf{X}^i \circ \pi$ is smooth on $U$; the coefficients of $\partial/\partial y^a$ are $0$, also smooth. By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], $\mathbf{Y} \in \mathfrak{X}(U)$.
@@ -375,7 +522,7 @@ The reason for the characterization through operators is the following propositi
 >
 > *Tangency* *(filled in)*: $\mathbf{Y}_p = \iota_{\ast p}(\mathbf{X}_p) \in \iota_{\ast p}(T_pS)$ for $p \in U \cap S$; equivalently, $\mathbf{Y}$ has no $\partial/\partial y$ component at all (Lemma [[§59 Related Vector Fields#^lem-59-5|§59.5]]).
 
-^pf-59-7
+^pf-59-10
 
 *Uses:* [[§56 Vector Fields#^prop-56-1|§56.1]], [[§37 Regular Submanifolds#^lem-37-8|§37.8]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§59 Related Vector Fields#^lem-59-5|§59.5]]
 

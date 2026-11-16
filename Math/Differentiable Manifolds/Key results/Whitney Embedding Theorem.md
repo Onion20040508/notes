@@ -26,5 +26,5 @@ tags: [differentiable-manifolds, hub]
 ## Connections
 - The compact case is [[§66 The Whitney Embedding Theorem#^thm-66-6|Theorem §66.6]], proved in full; the general statement (§65.7) adds an exhaustion function as a coordinate to make the embedding proper ([[§66 The Whitney Embedding Theorem#^prop-66-7|Proposition §66.7]]), and is sketched.
 - Answers the comparison of geometric and abstract manifolds in [[§42 Geometric and Abstract Manifolds|§42]]: every abstract manifold is diffeomorphic to a submanifold of some $\mathbb{R}^N$ (the [[§41 Embeddings#^thm-41-1|image of an embedding]] is a regular submanifold).
-- Part I uses [[§56 Vector Fields#^cor-56-7|bump functions]] and [[§41 Embeddings#^cor-41-8|injective immersions of compact manifolds]]; Part II uses [[Sard's Theorem]] through [[§63 Sard's Theorem#^cor-63-4|maps from lower dimension]], applied to the secant map into $\mathbb{RP}^{N-1}$.
+- Part I uses [[§56 Vector Fields#^cor-56-7|bump functions]] and [[§41 Embeddings#^cor-41-12|injective immersions of compact manifolds]]; Part II uses [[Sard's Theorem]] through [[§63 Sard's Theorem#^cor-63-4|maps from lower dimension]], applied to the secant map into $\mathbb{RP}^{N-1}$.
 - The immersion step (tangent directions instead of secants) is a homework problem, to be added after submission.
