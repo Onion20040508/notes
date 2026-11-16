@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover]] →
 
-*Sources: Differentiable Manifolds (591) §§47–48 (quaternions, $S^3 = SU(2)$, the double cover) · Quantum Mechanics §B6.1, §C5.2 · P. Woit, Quantum Theory, Groups and Representations, §6.2, §28.2, §29.2 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · PHY 513 TA (oral remark, Oct 2026) · the user's PHY 513 notes, Ch. 7 §7.2 · the rest written here.*
+*Sources: Differentiable Manifolds (591) §§43–44 (quaternions, $S^3 = SU(2)$, the double cover) · Quantum Mechanics §B6.1, §C5.2 · P. Woit, Quantum Theory, Groups and Representations, §6.2, §28.2, §29.2 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · PHY 513 TA (oral remark, Oct 2026) · the user's PHY 513 notes, Ch. 7 §7.2 · the rest written here.*
 
 What does the general construction of §CB.15 give in three dimensions, where everything is already known? The Pauli matrices realize the Clifford algebra of Euclidean $\mathbb R^3$, its even part is the quaternions, $\mathrm{Spin}(3)$ is the group of unit quaternions $= SU(2)$, and $\rho$ is the familiar double cover $SU(2) \to SO(3)$ that 591 proves by quaternion conjugation. The Pauli module $\mathbb C^2$ restricted to $\mathrm{Spin}(3)$ is spin ½, the representation that SO(3) lacks; and every half-integer spin sits inside spin ½ ⊗ (a representation of SO(3)) — the TA's theorem in its first case, before the Lorentz case of [[§CB.17 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover|§CB.17]]–[[§CB.20 The Lorentz Case IV꞉ Charge Conjugation and the Real Structure|§CB.20]]. It builds on [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers|§CB.10]], [[§CB.11 Clebsch–Gordan, Descent and Integer Spin|§CB.11]] and [[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.15]].
 
@@ -41,7 +41,7 @@ What does the general construction of §CB.15 give in three dimensions, where ev
 > [!theorem] Theorem §CB.16.2: The Even Part Is the Quaternions
 > The linear map $\mathrm{Cl}^0(3,0) \to \mathbb H$ with $1 \mapsto 1$, $e_3e_2 \mapsto i$, $e_1e_3 \mapsto j$, $e_2e_1 \mapsto k$ is an isomorphism of real algebras ([[§43 The Unit Quaternions and SU(2)#^def-43-1|591 Def. §43.1]]; [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-19|Theorem §CB.13.19]]). Under Theorem §CB.16.1, $\mathrm{Cl}^0(3,0)$ is $\{a\mathbb 1 - i\,\mathbf b\cdot\boldsymbol\sigma : a \in \mathbb R, \mathbf b \in \mathbb R^3\}$, with $e_3e_2 \mapsto -i\sigma^1$, $e_1e_3 \mapsto -i\sigma^2$, $e_2e_1 \mapsto -i\sigma^3$.
 >
-> *Source: written here · Woit, §28.2 ($\mathrm{Cl}(0,2) \cong \mathbb H$), §29.2.1 · 591 §47*
+> *Source: written here · Woit, §28.2 ($\mathrm{Cl}(0,2) \cong \mathbb H$), §29.2.1 · 591 §43*
 
 ^thm-cb-16-2
 
@@ -72,12 +72,12 @@ What does the general construction of §CB.15 give in three dimensions, where ev
 > [!theorem] Theorem §CB.16.3: Spin(3) Is SU(2), and ρ Is the Double Cover SU(2) → SO(3)
 > Under Theorem §CB.16.1, $\mathrm{Spin}(3)$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-15-7|Def. §CB.15.7]]) is the group of unit quaternions ([[§43 The Unit Quaternions and SU(2)#^prop-43-4|591 Prop. §43.4]]) and maps onto $SU(2)$; it is connected and simply connected ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-11|Theorem §CB.10.11]]). The covering $\rho : \mathrm{Spin}(3) \to SO(3)$ ([[§CB.15 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-15-15|Theorem §CB.15.15]]), $\rho(x)v = xvx^{-1}$, is conjugation of pure quaternions by unit quaternions ([[§44 SU(2) → SO(3)꞉ The Double Cover#^prop-44-2|591 Prop. §44.2]]), i.e. the double cover of [[§44 SU(2) → SO(3)꞉ The Double Cover#^thm-44-5|591 Thm. §44.5]] and [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-3|Theorem §CB.2.3]]; a unit quaternion $\cos\frac\theta2 + \sin\frac\theta2\,u$ gives a rotation through the angle $\theta$ ([[§44 SU(2) → SO(3)꞉ The Double Cover#^prop-44-2|591 Prop. §44.2]], 3), the half angle of spin ½.
 >
-> *Source: 591 §§47–48 · Woit, §29.2.1 · the dictionary written here*
+> *Source: 591 §§43–44 · Woit, §29.2.1 · the dictionary written here*
 
 ^thm-cb-16-3
 
 > [!proof]- Proof
-> *Source: P. Woit, Quantum Theory, Groups and Representations, §29.2.1 (the Clifford construction of $\mathrm{Spin}(n)$ "generalizes … the one we gave in chapter 6 of $\mathrm{Spin}(3)$ in terms of unit length elements of the quaternion algebra") · Differentiable Manifolds (591) §§47–48 (unit quaternions, $S^3 \cong SU(2)$, conjugation of pure quaternions, the double cover), whose results are used here and not re-proved. The dictionary between the two pictures (Steps 1–2) is written here.*
+> *Source: P. Woit, Quantum Theory, Groups and Representations, §29.2.1 (the Clifford construction of $\mathrm{Spin}(n)$ "generalizes … the one we gave in chapter 6 of $\mathrm{Spin}(3)$ in terms of unit length elements of the quaternion algebra") · Differentiable Manifolds (591) §§43–44 (unit quaternions, $S^3 \cong SU(2)$, conjugation of pure quaternions, the double cover), whose results are used here and not re-proved. The dictionary between the two pictures (Steps 1–2) is written here.*
 >
 > Let $\psi : \mathrm{Cl}^0(3,0) \to \mathbb H$ be the isomorphism of [[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-16-2|Theorem §CB.16.2]], $\pi$ the Pauli map of [[§CB.16 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-16-1|Theorem §CB.16.1]], and $\omega = e_1e_2e_3$.
 >
