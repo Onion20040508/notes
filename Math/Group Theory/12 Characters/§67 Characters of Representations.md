@@ -87,6 +87,24 @@ So a character is determined by one value per conjugacy class, which is much les
 
 *Uses:* [[§62 Direct Sums and Maschke's Theorem#^prop-62-1|§62.1]], [[§62 Direct Sums and Maschke's Theorem#^prop-62-2|§62.2]]
 
+> [!theorem] Lemma §67.3: Isomorphic Representations Have the Same Character
+> Let $V$ and $V'$ be finite-dimensional representations of $G$ and $\beta: V \to V'$ an isomorphism of $G$-representations (Definition [[§61 Representations and Subrepresentations#^def-61-5|§61.5]]). Then $\dim V = \dim V'$ and $\chi_V = \chi_{V'}$.
+>
+> *Source: not from class; used in [[§70 Schur's Lemma and Multiplicities|§70]]*
+
+^lem-67-3
+
+> [!proof]+ Proof
+> *(Not from class; filled in.)* Let $v_1, \ldots, v_n$ be a basis of $V$. Since $\beta$ is linear and bijective, $\beta(v_1), \ldots, \beta(v_n)$ is a basis of $V'$, so $\dim V' = n$. Let $g \in G$ and let $M$ be the matrix of $\rho_V(g)$ in the basis $v_1, \ldots, v_n$: $gv_j = \sum_i M_{ij}v_i$. Then
+>
+> $$
+> g\,\beta(v_j) = \beta(gv_j) = \sum_i M_{ij}\,\beta(v_i),
+> $$
+>
+> so $M$ is also the matrix of $\rho_{V'}(g)$ in the basis $\beta(v_1), \ldots, \beta(v_n)$. Hence $\chi_{V'}(g) = \operatorname{Tr}(M) = \chi_V(g)$.
+
+^pf-67-3
+
 > [!definition] Definition §67.2: Character Table
 > The **character table** of $G$ lists characters of representations: its columns are indexed by the conjugacy classes of $G$ (one representative each), its rows by representations, and the entry is the value of $\chi_V$ on the class.
 >

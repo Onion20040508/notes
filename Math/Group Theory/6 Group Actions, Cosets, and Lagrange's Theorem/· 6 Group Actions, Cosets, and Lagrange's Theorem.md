@@ -37,7 +37,7 @@ The central chapter of the first half of the course. A group [[§25 Actions#^def
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§24 Equivalence Relations and Partitions#^prop-24-1|Proposition §24.1: Equivalence Classes Partition a Set]]: 120 later results
-- [[Cosets Partition a Group|Proposition §28.3: Cosets Are the Equivalence Classes]]: 118 later results
-- [[§29 The Index and Lagrange's Theorem#^prop-29-1|Proposition §29.1: All Cosets Have the Same Size]]: 82 later results
-- [[Lagrange's Theorem|Theorem §29.2: Lagrange]]: 81 later results
+- [[§24 Equivalence Relations and Partitions#^prop-24-1|Proposition §24.1: Equivalence Classes Partition a Set]]: 121 later results
+- [[Cosets Partition a Group|Proposition §28.3: Cosets Are the Equivalence Classes]]: 119 later results
+- [[§29 The Index and Lagrange's Theorem#^prop-29-1|Proposition §29.1: All Cosets Have the Same Size]]: 83 later results
+- [[Lagrange's Theorem|Theorem §29.2: Lagrange]]: 82 later results

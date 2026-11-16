@@ -5,7 +5,7 @@ chapter: 12
 section: 69
 tags: [group-theory, math493]
 ---
-← [[§68 Homomorphisms Between Representations]] · ↑ [[· 12 Characters]]
+← [[§68 Homomorphisms Between Representations]] · ↑ [[· 12 Characters]] · [[§70 Schur's Lemma and Multiplicities]] →
 
 *Source: Lecture (Fri Nov 13). Reference: Axler, *Linear Algebra Done Right*, Section 3F (duality).*
 

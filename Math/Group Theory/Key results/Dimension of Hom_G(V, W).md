@@ -18,6 +18,9 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§68 Homomorphisms Between Representations#^cor-68-7|Corollary §68.7: Homomorphisms in Both Directions]]
 - [[§68 Homomorphisms Between Representations#^cor-68-11|Corollary §68.11: Dimension of Hom_G(V, W) over ℝ and ℂ]]
+- [[§70 Schur's Lemma and Multiplicities#^prop-70-4|Proposition §70.4: dimHom_G Is Additive in Each Variable]]
+- [[§70 Schur's Lemma and Multiplicities#^prop-70-10|Proposition §70.10: Character Sums for Simple Representations]]
+- [[§70 Schur's Lemma and Multiplicities#^lem-70-11|Lemma §70.11: A Simplicity Test]]
 
 ## Connections
 - TODO

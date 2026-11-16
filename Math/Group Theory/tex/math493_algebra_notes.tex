@@ -329,6 +329,7 @@ $M^\dagger = \bar M^T$ & Conjugate transpose (Definition~\ref{def:conjugate-tran
 $V^G$, \ $\chi_V$ & Invariant vectors of a representation; its character $\chi_V(g) = \operatorname{Tr}\rho_V(g)$, not a character in the sense of \ref{sec:characters} unless $\dim V = 1$ (\ref{sec:invariants}, \ref{sec:characters-of-representations}). \\
 $\operatorname{Hom}(V, W)$, \ $\operatorname{Hom}_G(V, W)$ & Linear maps $V \to W$, a representation by $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$; its invariant vectors, the homomorphisms of representations (\ref{sec:hom-representation}). \\
 $V^\vee$, \ $\varphi^\vee$, \ $e_j^\ast$ & Dual space $\operatorname{Hom}(V, k)$; dual map $w^\vee \mapsto w^\vee \circ \varphi$; dual basis. As a representation, $\rho_{V^\vee}(g) = \rho_V(g^{-1})^\vee$, in matrices the inverse transpose (\ref{sec:dual-representations}). \\
+$V_1 \oplus \cdots \oplus V_r$, \ $V^{\oplus a}$ & External direct sum of representations: tuples, with $G$ acting on each coordinate; $V^{\oplus a}$ is the sum of $a$ copies of $V$. The same sign $\oplus$ is used for the internal direct sum of subspaces (\ref{sec:maschke}); the two are isomorphic (\ref{sec:schur-multiplicities}). \\
 $\operatorname{Tr}$ & Trace of a matrix or of a linear map (\ref{sec:invariants}). \\
 $N \rtimes_\varphi S$, \ $S \ltimes_\varphi N$ & Semidirect product, $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$ (\ref{sec:semidirect-products}). \\
 $\sigma_{(g, \lambda)}$, \ $\operatorname{Aff}(V)$ & The affine map $x \mapsto gx + \lambda$; the group of all affine maps of $V$, $\cong V \rtimes GL(V)$ (\ref{sec:affine-maps}). \\
@@ -9206,7 +9207,7 @@ So far groups have acted on sets. Representation theory studies groups acting on
 % ============================================================================
 \section{Representations and Subrepresentations}\label{sec:representations}
 
-\textit{Source: Lecture and Worksheet 13 (Mon Nov 2). Not covered in the Pinter chapters used so far.}
+\textit{Source: Lecture and Worksheet 13 (Mon Nov 2); WS 13.6 was proved on the board on Mon Nov 16. Not covered in the Pinter chapters used so far.}
 
 \begin{defbox}[{Representation}]\label{def:representation}
 Let $G$ be a group and $k$ a field. A \textbf{representation} of $G$ (over $k$) is a $k$-vector space $V$ together with an action of $G$ on $V$ by linear maps. That is, $\star: G \times V \to V$ satisfies, for $g, g_1, g_2 \in G$, $v, v_1, v_2 \in V$ and $c \in k$:
@@ -9431,18 +9432,43 @@ Let $\varphi: U \to V$ be a homomorphism of $G$-representations. Then
     \item $\operatorname{Ker}\varphi$ is a subrepresentation of $U$;
     \item $\operatorname{Im}\varphi$ is a subrepresentation of $V$.
 \end{enumerate}
-\srcline{WS 13.6}
+\srcline{WS 13.6; board 11/16}
 \end{propbox}
 
 \begin{proof}
 \textit{Idea:} $\varphi$ commutes with the action, so the action carries the kernel and the image into themselves.\par
-\textbf{(1)} \textit{(The argument of Problem Set 9, Problem 9.3(3), as submitted, with $\varphi$ in place of $\pi$.)} Since $\varphi$ is linear, $\operatorname{Ker}\varphi$ is a subspace of $U$. Let $u \in \operatorname{Ker}\varphi$ and $g \in G$. Then, since $g$ acts linearly,
+\textit{(Board 11/16, where the proposition was proved for use in WS 17.2.)} That $\varphi$ is a homomorphism of $G$-representations means $g\varphi(u) = \varphi(gu)$ for all $g \in G$ and $u \in U$. A subrepresentation is a subspace that is closed under the action of $G$, and both properties are checked for each of the two sets.
+
+\textbf{(1)} \textit{(Also the argument of Problem Set 9, Problem 9.3(3), as submitted, with $\varphi$ in place of $\pi$.)} Since $\varphi$ is linear, $\operatorname{Ker}\varphi$ is a subspace of $U$. Let $u \in \operatorname{Ker}\varphi$ and $g \in G$. Then, since $g$ acts linearly,
 \[ \varphi(gu) = g\varphi(u) = g0 = 0, \]
 so $gu \in \operatorname{Ker}\varphi$. Hence $\operatorname{Ker}\varphi$ is $G$-stable, i.e.\ a subrepresentation of $U$.
 
-\textbf{(2)} \textit{(Not from class; filled in.)} Since $\varphi$ is linear, $\operatorname{Im}\varphi$ is a subspace of $V$. Let $v \in \operatorname{Im}\varphi$, say $v = \varphi(u)$ with $u \in U$, and let $g \in G$. Then
+\textbf{(2)} Since $\varphi$ is linear, $\operatorname{Im}\varphi$ is a subspace of $V$. Let $v \in \operatorname{Im}\varphi$, say $v = \varphi(u)$ with $u \in U$, and let $g \in G$. Then
 \[ gv = g\varphi(u) = \varphi(gu) \in \operatorname{Im}\varphi. \]
 Hence $\operatorname{Im}\varphi$ is $G$-stable, i.e.\ a subrepresentation of $V$.
+\end{proof}
+
+\begin{lembox}[{Properties of Homomorphisms and Isomorphisms of Representations}]\label{lem:isomorphism-representations-properties}
+Let $U$, $V$, $W$ be representations of a group $G$ over the same field.
+\begin{enumerate}
+    \item If $\varphi: U \to V$ and $\psi: V \to W$ are homomorphisms of $G$-representations, then so is $\psi \circ \varphi: U \to W$. If $\varphi$ and $\psi$ are isomorphisms, then so is $\psi \circ \varphi$.
+    \item If $\varphi: U \to V$ is an isomorphism of $G$-representations, then so is $\varphi^{-1}: V \to U$.
+    \item Being isomorphic is an equivalence relation on representations of $G$: $U \cong U$; if $U \cong V$, then $V \cong U$; if $U \cong V$ and $V \cong W$, then $U \cong W$.
+    \item If $U \cong V$ and $U$ is simple (Definition~\ref{def:simple-representation}), then $V$ is simple.
+\end{enumerate}
+\srcline{not from class; used in \ref{sec:schur-multiplicities}}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from class; filled in.)} \textbf{(1)} A composite of linear maps is linear, and for $g \in G$ and $u \in U$
+\[ \psi(\varphi(gu)) = \psi(g\varphi(u)) = g\,\psi(\varphi(u)). \]
+A composite of invertible maps is invertible.
+
+\textbf{(2)} The inverse of an invertible linear map is linear. Let $g \in G$ and $v \in V$. Then $\varphi\big(g\varphi^{-1}(v)\big) = g\,\varphi\big(\varphi^{-1}(v)\big) = gv$, and applying $\varphi^{-1}$ to both sides gives $g\varphi^{-1}(v) = \varphi^{-1}(gv)$. So $\varphi^{-1}$ is a homomorphism of $G$-representations, and it is invertible, with inverse $\varphi$.
+
+\textbf{(3)} The identity $U \to U$ is an isomorphism of $G$-representations, so $U \cong U$. Symmetry is (2), and transitivity is (1).
+
+\textbf{(4)} Let $\varphi: U \to V$ be an isomorphism. Since $U \neq \{0\}$ and $\varphi$ is injective, $V \neq \{0\}$. Let $V' \subseteq V$ be a subrepresentation. Its preimage $\varphi^{-1}(V') = \{u \in U : \varphi(u) \in V'\}$ is a subspace of $U$, because $\varphi$ is linear, and it is $G$-stable: if $\varphi(u) \in V'$, then $\varphi(gu) = g\varphi(u) \in V'$. So $\varphi^{-1}(V')$ is a subrepresentation of $U$, hence equal to $\{0\}$ or to $U$. Since $\varphi$ is surjective, $V' = \varphi\big(\varphi^{-1}(V')\big)$, which is $\varphi(\{0\}) = \{0\}$ or $\varphi(U) = V$. So $V$ has exactly the two subrepresentations $\{0\}$ and $V$.
 \end{proof}
 
 
@@ -10395,9 +10421,9 @@ Representation theory also proves theorems about groups. A first example: every 
 % ============================================================================
 \chapter{Characters}\label{ch:rep-characters}
 
-\textit{Source: Lecture and Worksheet 15 (Mon Nov 9); lecture and Worksheet 16 (Wed Nov 11); lecture (Fri Nov 13).}
+\textit{Source: Lecture and Worksheet 15 (Mon Nov 9); lecture and Worksheet 16 (Wed Nov 11); lecture (Fri Nov 13); lecture and Worksheet 17 (Mon Nov 16).}
 
-By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), finite-dimensional representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces, when the field contains $\mathbb{Q}$ (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}). The factor $\chi_V(g^{-1})$ in this count is the character of the dual representation $V^\vee$ (\ref{sec:dual-representations}).
+By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), finite-dimensional representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces, when the field contains $\mathbb{Q}$ (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}). The factor $\chi_V(g^{-1})$ in this count is the character of the dual representation $V^\vee$ (\ref{sec:dual-representations}). Combined with the decomposition into simple representations, the count becomes a dot product of multiplicities: by Schur's Lemma, non-isomorphic simple representations admit only the zero homomorphism, and over $\mathbb{C}$ the homomorphisms from a simple representation to itself are the multiples of the identity (\ref{sec:schur-multiplicities}).
 
 % ============================================================================
 % SECTION: INVARIANT VECTORS (Worksheet 15; lecture Mon Nov 9)
@@ -10746,6 +10772,17 @@ Consequently, if $W = U \oplus V$ is a representation of $G$ and $U$, $V$ are su
 \textit{(Board 11/9; the statement was proposed in class and then proved.)} By Bases of a Direct Sum (Proposition~\ref{prop:bases-direct-sum}), a basis $u_1, \ldots, u_m$ of $U$ and a basis $v_1, \ldots, v_n$ of $V$ together form a basis of $W$. In it the matrix of $A \oplus B$ is block diagonal, $\left(\begin{smallmatrix} A & 0 \\ 0 & B \end{smallmatrix}\right)$: $A$ uses nothing from $V$, and $B$ nothing from $U$. Its diagonal is that of $A$ followed by that of $B$, so the traces add. For representations, $\rho_W(g) = \rho_U(g) \oplus \rho_V(g)$, since $g(u + v) = gu + gv$ with $gu \in U$ and $gv \in V$ (WS 14.2, Proposition~\ref{prop:direct-sum-block-diagonal}). Taking traces gives $\chi_W(g) = \chi_U(g) + \chi_V(g)$.
 \end{proof}
 
+\begin{lembox}[{Isomorphic Representations Have the Same Character}]\label{lem:isomorphic-same-character}
+Let $V$ and $V'$ be finite-dimensional representations of $G$ and $\beta: V \to V'$ an isomorphism of $G$-representations (Definition~\ref{def:isomorphism-representations}). Then $\dim V = \dim V'$ and $\chi_V = \chi_{V'}$.
+\srcline{not from class; used in \ref{sec:schur-multiplicities}}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from class; filled in.)} Let $v_1, \ldots, v_n$ be a basis of $V$. Since $\beta$ is linear and bijective, $\beta(v_1), \ldots, \beta(v_n)$ is a basis of $V'$, so $\dim V' = n$. Let $g \in G$ and let $M$ be the matrix of $\rho_V(g)$ in the basis $v_1, \ldots, v_n$: $gv_j = \sum_i M_{ij}v_i$. Then
+\[ g\,\beta(v_j) = \beta(gv_j) = \sum_i M_{ij}\,\beta(v_i), \]
+so $M$ is also the matrix of $\rho_{V'}(g)$ in the basis $\beta(v_1), \ldots, \beta(v_n)$. Hence $\chi_{V'}(g) = \operatorname{Tr}(M) = \chi_V(g)$.
+\end{proof}
+
 \begin{defbox}[{Character Table}]\label{def:character-table}
 The \textbf{character table} of $G$ lists characters of representations: its columns are indexed by the conjugacy classes of $G$ (one representative each), its rows by representations, and the entry is the value of $\chi_V$ on the class.
 \srcline{lecture 11/9}
@@ -10826,7 +10863,7 @@ permutation, $\mathbb{R}^3 = \mathbb{R}(1,1,1) \oplus U$ & $3$ & $1$ & $0$
 % ============================================================================
 \section{Homomorphisms Between Representations}\label{sec:hom-representation}
 
-\textit{Source: Lecture and Worksheet 16, \emph{Actions on matrix spaces} (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3--16.5 were not reached in class (the lecture of Fri Nov 13 recalled the statements of WS 16.3 and WS 16.5 without proof); they are stated in the last subsection of this section with proofs that are filled in. Reference: Axler, \emph{Linear Algebra Done Right} (matrices of linear maps, eigenvalues, trace).}
+\textit{Source: Lecture and Worksheet 16, \emph{Actions on matrix spaces} (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3--16.5 were not done in class: the lecture of Fri Nov 13 recalled the statements of WS 16.3 and WS 16.5 without proof, and Problem Set 10 (Problem 10.1) takes up the complex case, WS 16.4--16.5. They are stated in the last subsection of this section with proofs that are filled in. Reference: Axler, \emph{Linear Algebra Done Right} (matrices of linear maps, eigenvalues, trace).}
 
 Theorem~\ref{thm:dim-invariants-character} computes the dimension of the invariant vectors of any representation from its character. This section applies it to the representation $\operatorname{Hom}(V, W)$, whose invariant vectors are the homomorphisms of representations $V \to W$. The result is a formula for the number of independent homomorphisms between two representations in terms of their characters. Over $\mathbb{R}$ and $\mathbb{C}$ the formula simplifies, because there $\chi_V(g^{-1})$ is $\chi_V(g)$ or its complex conjugate.
 
@@ -11142,7 +11179,7 @@ $\mathbb{R}^3$ & $1$ & $0$ & $1$ & $2$
 
 \subsection{\texorpdfstring{Characters at $g^{-1}$ over $\mathbb{R}$ and $\mathbb{C}$}{Characters at the Inverse over R and C}}\label{sub:characters-at-inverses}
 
-The formula of Theorem~\ref{thm:dim-hom-g} simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3--16.5 were not reached in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof; the proofs in this subsection are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary~\ref{cor:character-dual-real-complex}).
+The formula of Theorem~\ref{thm:dim-hom-g} simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3--16.5 were not done in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof, and the complex case (WS 16.4--16.5) became Problem 10.1 of Problem Set 10. The proofs in this subsection are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary~\ref{cor:character-dual-real-complex}).
 
 \begin{propbox}[{Real Characters Are Invariant under Inversion}]\label{prop:character-inverse-real}
 Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{R}$. Choose a basis of $V$ in which $G$ acts by orthogonal matrices (Corollary~\ref{cor:orthogonal-matrices}). In this basis, for every $g \in G$,
@@ -11222,13 +11259,13 @@ Let $G$ be a finite group and $V$ a finite-dimensional complex representation of
 Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations of $G$ over $k$.
 \begin{enumerate}
     \item If $k = \mathbb{R}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\chi_W(g)$.
-    \item If $k = \mathbb{C}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\overline{\chi_W(g)}$.
+    \item If $k = \mathbb{C}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\overline{\chi_W(g)} = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \overline{\chi_V(g)}\,\chi_W(g)$.
 \end{enumerate}
-\srcline{WS 16: the simplification announced before WS 16.3; the two formulas are not printed on the worksheet}
+\srcline{WS 16: the simplification announced before WS 16.3; the formulas are printed in the recap at the top of Worksheet 17, over $\mathbb{C}$ in the second form}
 \end{corbox}
 
 \begin{proof}
-\textit{(Filled in.)} Both fields contain $\mathbb{Q}$, so Theorem~\ref{thm:dim-hom-g} applies. Substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition~\ref{prop:character-inverse-real}) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary~\ref{cor:character-inverse-complex}).
+\textit{(Filled in.)} Both fields contain $\mathbb{Q}$, so Theorem~\ref{thm:dim-hom-g} applies. In the second form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g)\,\chi_W(g^{-1})$, substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition~\ref{prop:character-inverse-real}) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary~\ref{cor:character-inverse-complex}). The second form over $\mathbb{C}$ comes in the same way from the first form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g^{-1})\,\chi_W(g)$, with $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
 \end{proof}
 
 % ============================================================================
@@ -11533,6 +11570,433 @@ Tensor products are where the product in $\chi_{\operatorname{Hom}(V, W)}(g) = \
 \srcline{lecture 11/13; overview only}
 \end{rembox}
 
+% ============================================================================
+% SECTION: SCHUR'S LEMMA AND MULTIPLICITIES (Worksheet 17; lecture Mon Nov 16)
+% ============================================================================
+\section{Schur's Lemma and Multiplicities}\label{sec:schur-multiplicities}
+
+\textit{Source: Lecture and Worksheet 17, \emph{Dimensions of hom spaces, and Schur's lemma} (Mon Nov 16): WS 17.1--17.5. Reference: Axler, \emph{Linear Algebra Done Right} (existence of eigenvalues).}
+
+Throughout this section, unless something else is said, $G$ is a finite group, $k$ is a field containing $\mathbb{Q}$, and all representations are finite-dimensional representations of $G$ over $k$. Under these hypotheses there are two main results so far. The first is Maschke's theorem (Theorem~\ref{thm:maschke}), by which every representation is a direct sum of simple representations (Corollary~\ref{cor:direct-sum-of-simples-general}). The second is the formula
+\[ \dim\operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_{g \in G} \chi_V(g^{-1})\,\chi_W(g) \]
+(Theorem~\ref{thm:dim-hom-g}; for its forms over $\mathbb{R}$ and $\mathbb{C}$, which Worksheet 17 recalls, see Corollary~\ref{cor:dim-hom-g-real-complex}). This section puts the two together: split $V$ and $W$ into simple representations and see what the formula says.
+
+The hypothesis $\mathbb{Q} \subseteq k$ says that $k$ has characteristic $0$: no sum $1 + 1 + \cdots + 1$ with a positive number of terms is $0$ in $k$. It is stronger than ``$k$ is infinite''. \textit{(Example not from class.)} The field $\mathbb{F}_p(t)$ of rational functions in one variable over $\mathbb{F}_p$ is infinite, and $p = 0$ in it.
+
+\subsection{Repeated Direct Sums}\label{sub:repeated-direct-sums}
+
+The formulas of Worksheet 17 contain sums such as $V \oplus V$. The direct sum of \ref{sec:maschke} (Definition~\ref{def:internal-direct-sum-subspaces}) is internal: its summands are subspaces of a given space that meet only in $0$, and $V \cap V = V$. So a different construction is meant, the external direct sum of the remark \emph{Two Meanings of ``Direct Sum''} in \ref{sec:internal-direct-products}, now for representations.
+
+\begin{defbox}[{External Direct Sum of Representations}]\label{def:external-direct-sum-representations}
+Let $V_1, \ldots, V_r$ be representations of a group $G$ over a field $k$. Their \textbf{external direct sum} $V_1 \oplus \cdots \oplus V_r$ is the set of $r$-tuples $(v_1, \ldots, v_r)$ with $v_i \in V_i$, with the operations
+\[ (u_1, \ldots, u_r) + (v_1, \ldots, v_r) = (u_1 + v_1, \ldots, u_r + v_r), \qquad c\,(v_1, \ldots, v_r) = (cv_1, \ldots, cv_r), \]
+and with $G$ acting on each coordinate:
+\[ g\,(v_1, \ldots, v_r) = (gv_1, \ldots, gv_r). \]
+For $r = 0$ it is the zero space $\{0\}$.
+\srcline{lecture 11/16, for $r$ copies of one representation; the general case is not from class}
+\end{defbox}
+
+The external direct sum is a representation of $G$: the vector space axioms, the linearity of each $g$ and the two action axioms hold for tuples because they hold in every coordinate.
+
+\begin{defbox}[{Repeated Direct Sum}]\label{def:repeated-direct-sum}
+Let $V$ be a representation of $G$ and $a \geq 0$ an integer. The \textbf{repeated direct sum}
+\[ V^{\oplus a} = \underbrace{V \oplus \cdots \oplus V}_{a \text{ copies}} = \{(v_1, \ldots, v_a) : v_1, \ldots, v_a \in V\} \]
+is the external direct sum (Definition~\ref{def:external-direct-sum-representations}) of $a$ copies of $V$, a representation of $G$. In particular $V^{\oplus 0} = \{0\}$ and $V^{\oplus 1} = V$.
+\srcline{lecture 11/16}
+\end{defbox}
+
+The underlying set of $V^{\oplus a}$ is the set $V^a$ of $a$-tuples. The notation $V^{\oplus a}$ stands for this set together with its addition, its scalar multiplication and the action of $G$: a vector space is a set together with its operations, not the set alone. In a sum such as $\bigoplus_i V_i^{\oplus a_i}$ the elements are tuples of tuples; they are read as one long tuple, with $a_1$ entries from $V_1$, then $a_2$ entries from $V_2$, and so on.
+
+\begin{lembox}[{Internal Direct Sums Are External Direct Sums}]\label{lem:internal-external-direct-sum}
+Let $W$ be a representation of $G$ and $U_1, \ldots, U_r$ subrepresentations with $W = U_1 \oplus \cdots \oplus U_r$ as an internal direct sum (Definition~\ref{def:direct-sum-several}). Then
+\[ \sigma: U_1 \oplus \cdots \oplus U_r \to W, \qquad \sigma(u_1, \ldots, u_r) = u_1 + \cdots + u_r, \]
+defined on the external direct sum (Definition~\ref{def:external-direct-sum-representations}), is an isomorphism of $G$-representations (Definition~\ref{def:isomorphism-representations}).
+\srcline{not from class}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from class; filled in.)} \emph{Linear.} $\sigma\big(c(u_i) + c'(u_i')\big) = \sum_i (cu_i + c'u_i') = c\sum_i u_i + c'\sum_i u_i' = c\,\sigma\big((u_i)\big) + c'\,\sigma\big((u_i')\big)$.
+
+\emph{Commutes with $G$.} Each $g$ acts on $W$ by a linear map, so $\sigma\big(g(u_1, \ldots, u_r)\big) = gu_1 + \cdots + gu_r = g(u_1 + \cdots + u_r) = g\,\sigma(u_1, \ldots, u_r)$.
+
+\emph{Bijective.} By Definition~\ref{def:direct-sum-several}, every $w \in W$ is $u_1 + \cdots + u_r$ with $u_i \in U_i$ in exactly one way, that is, $w = \sigma(u_1, \ldots, u_r)$ for exactly one tuple.
+\end{proof}
+
+\begin{propbox}[{The Character of an External Direct Sum}]\label{prop:character-external-direct-sum}
+Let $V_1, \ldots, V_r$ be finite-dimensional representations of a group $G$ over a field $k$, and let $E = V_1 \oplus \cdots \oplus V_r$ be their external direct sum (Definition~\ref{def:external-direct-sum-representations}). Then
+\begin{enumerate}
+    \item $\dim E = \dim V_1 + \cdots + \dim V_r$;
+    \item $\chi_E = \chi_{V_1} + \cdots + \chi_{V_r}$ for the characters (Definition~\ref{def:character-representation}).
+\end{enumerate}
+In particular $\dim V^{\oplus a} = a\dim V$ and $\chi_{V^{\oplus a}} = a\,\chi_V$.
+\srcline{not from class; the lecture of 11/9 proved the case of an internal direct sum of two subrepresentations (Proposition~\ref{prop:characters-add})}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} in a basis of $E$ made from bases of the $V_i$, every $g$ acts by a block diagonal matrix.\par
+\textit{(Not from class; filled in.)} For $v \in V_i$ let $\iota_i(v) \in E$ be the tuple with $v$ in position $i$ and $0$ in all other positions. Then $(v_1, \ldots, v_r) = \iota_1(v_1) + \cdots + \iota_r(v_r)$.
+
+\textbf{(1)} Choose a basis $B_i$ of $V_i$ for every $i$. The tuples $\iota_i(b)$ with $1 \leq i \leq r$ and $b \in B_i$ form a basis of $E$: writing each $v_i$ as a combination of $B_i$ expresses $(v_1, \ldots, v_r) = \sum_i \iota_i(v_i)$ as a combination of them, and the coefficients are unique because the $i$-th coordinate of the combination determines the coefficients of the $\iota_i(b)$, $b \in B_i$. The number of these tuples is $\sum_i \dim V_i$.
+
+\textbf{(2)} Let $g \in G$ and let $M^{(i)}$ be the matrix of $\rho_{V_i}(g)$ in the basis $B_i$, so $gb = \sum_{b' \in B_i} M^{(i)}_{b'b}\,b'$ for $b \in B_i$. Since $g$ acts on each coordinate,
+\[ g\,\iota_i(b) = \iota_i(gb) = \sum_{b' \in B_i} M^{(i)}_{b'b}\,\iota_i(b'). \]
+So in the basis of (1) the matrix of $\rho_E(g)$ is block diagonal with the blocks $M^{(1)}, \ldots, M^{(r)}$. Its diagonal is the diagonal of $M^{(1)}$ followed by those of $M^{(2)}, \ldots, M^{(r)}$, so
+\[ \chi_E(g) = \operatorname{Tr}M^{(1)} + \cdots + \operatorname{Tr}M^{(r)} = \chi_{V_1}(g) + \cdots + \chi_{V_r}(g). \]
+The last sentence of the statement is the case $V_1 = \cdots = V_a = V$.
+\end{proof}
+
+\begin{corbox}[{Decomposition into Simple Representations with Multiplicities}]\label{cor:decomposition-multiplicities}
+Let $G$ be a finite group, $k$ a field in which $|G| \neq 0$, and $V$ a finite-dimensional representation of $G$ over $k$. Then there are simple representations $S_1, \ldots, S_r$ of $G$ over $k$, with $S_i \not\cong S_j$ for $i \neq j$, and positive integers $a_1, \ldots, a_r$ such that
+\[ V \cong S_1^{\oplus a_1} \oplus \cdots \oplus S_r^{\oplus a_r}, \]
+with $r = 0$ when $V = \{0\}$.
+\srcline{lecture 11/16, used in the proof of Lemma~\ref{lem:simplicity-test}; the proof is not from class}
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} decompose $V$ into simple subrepresentations and collect the summands that are isomorphic to each other.\par
+\textit{(Not from class; filled in.)} By Corollary~\ref{cor:direct-sum-of-simples-general}, $V = V_1 \oplus \cdots \oplus V_n$ (internal direct sum, Definition~\ref{def:direct-sum-several}) with simple subrepresentations $V_1, \ldots, V_n$.
+
+\emph{Choosing the $S_i$.} Being isomorphic is an equivalence relation on representations (Lemma~\ref{lem:isomorphism-representations-properties}(3)). It divides $V_1, \ldots, V_n$ into classes of mutually isomorphic summands. Choose one summand from each class and call the chosen ones $S_1, \ldots, S_r$. They are simple and pairwise non-isomorphic, and every $V_j$ is isomorphic to exactly one of them, say to $S_{i(j)}$. Let $a_i \geq 1$ be the number of $j$ with $i(j) = i$.
+
+\emph{The isomorphism.} For every $j$ choose an isomorphism $\beta_j: S_{i(j)} \to V_j$. The order of the summands of an internal direct sum does not matter, since addition in $V$ is commutative; so we may number the $V_j$ such that $i(1) \leq i(2) \leq \cdots \leq i(n)$. Then the external direct sum $E = S_{i(1)} \oplus \cdots \oplus S_{i(n)}$ is $S_1^{\oplus a_1} \oplus \cdots \oplus S_r^{\oplus a_r}$, read as one long tuple. The map
+\[ E \to V_1 \oplus \cdots \oplus V_n \ \text{(external)}, \qquad (s_1, \ldots, s_n) \mapsto (\beta_1(s_1), \ldots, \beta_n(s_n)), \]
+is linear, bijective and commutes with $G$, because each $\beta_j$ has these three properties and all operations are coordinatewise. Composing it with the isomorphism $\sigma$ of Lemma~\ref{lem:internal-external-direct-sum} gives an isomorphism $E \to V$ (Lemma~\ref{lem:isomorphism-representations-properties}(1)).
+\end{proof}
+
+\subsection{\texorpdfstring{$\dim\operatorname{Hom}_G$ and Direct Sums}{dim Hom\_G and Direct Sums}}\label{sub:dim-hom-direct-sums}
+
+The next proposition is stated for external direct sums. For an internal direct sum of subrepresentations the same formulas hold, because it is isomorphic to the external one (Lemma~\ref{lem:internal-external-direct-sum}) and isomorphic representations have the same character (Lemma~\ref{lem:isomorphic-same-character}).
+
+\begin{propbox}[{$\dim\operatorname{Hom}_G$ Is Additive in Each Variable}]\label{prop:dim-hom-additive}
+Let $G$ be a finite group and $k$ a field containing $\mathbb{Q}$. Let $V$, $V_1$, $V_2$, $W$, $W_1$, $W_2$ be finite-dimensional representations of $G$ over $k$. The direct sums are external (Definitions~\ref{def:external-direct-sum-representations} and~\ref{def:repeated-direct-sum}), and $\operatorname{Hom}_G$ is the space of homomorphisms of representations (Definition~\ref{def:hom-g}).
+\begin{enumerate}
+    \item $\dim\operatorname{Hom}_G(V, W_1 \oplus W_2) = \dim\operatorname{Hom}_G(V, W_1) + \dim\operatorname{Hom}_G(V, W_2)$, and $\dim\operatorname{Hom}_G(V_1 \oplus V_2, W) = \dim\operatorname{Hom}_G(V_1, W) + \dim\operatorname{Hom}_G(V_2, W)$.
+    \item More generally, for finite-dimensional representations $V_1, \ldots, V_m$ and $W_1, \ldots, W_n$ and integers $a_1, \ldots, a_m \geq 0$, $b_1, \ldots, b_n \geq 0$,
+    \[ \dim\operatorname{Hom}_G\Big(\bigoplus_{i=1}^m V_i^{\oplus a_i},\ \bigoplus_{j=1}^n W_j^{\oplus b_j}\Big) = \sum_{i=1}^m\sum_{j=1}^n a_ib_j\,\dim\operatorname{Hom}_G(V_i, W_j). \]
+\end{enumerate}
+\srcline{WS 17.1; worksheet session 11/16}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} the right side of the dimension formula is linear in $\chi_V$ and in $\chi_W$, and characters add over direct sums.\par
+\textit{(Worksheet session 11/16; the lecture's summary was that $\dim\operatorname{Hom}_G$ ``acts bilinearly''.)} For functions $\chi, \psi: G \to k$ write, in this proof only,
+\[ B(\chi, \psi) = \frac{1}{|G|}\sum_{g \in G} \chi(g^{-1})\,\psi(g). \]
+Each term of the sum is a product of one value of $\chi$ and one value of $\psi$, so $B$ is linear in each variable:
+\[ B(c\chi + c'\chi', \psi) = c\,B(\chi, \psi) + c'\,B(\chi', \psi), \qquad B(\chi, c\psi + c'\psi') = c\,B(\chi, \psi) + c'\,B(\chi, \psi'). \]
+In this notation Theorem~\ref{thm:dim-hom-g} says $\dim\operatorname{Hom}_G(V, W) = B(\chi_V, \chi_W)$.
+
+\textbf{(1)} By Proposition~\ref{prop:character-external-direct-sum}, $\chi_{W_1 \oplus W_2} = \chi_{W_1} + \chi_{W_2}$. So
+\[ \dim\operatorname{Hom}_G(V, W_1 \oplus W_2) = B(\chi_V, \chi_{W_1} + \chi_{W_2}) = B(\chi_V, \chi_{W_1}) + B(\chi_V, \chi_{W_2}), \]
+which is $\dim\operatorname{Hom}_G(V, W_1) + \dim\operatorname{Hom}_G(V, W_2)$. The second equation follows in the same way from $\chi_{V_1 \oplus V_2} = \chi_{V_1} + \chi_{V_2}$ and linearity in the first variable.
+
+\textbf{(2)} By Proposition~\ref{prop:character-external-direct-sum}, the character of $\bigoplus_i V_i^{\oplus a_i}$ is $\sum_i a_i\chi_{V_i}$, and the character of $\bigoplus_j W_j^{\oplus b_j}$ is $\sum_j b_j\chi_{W_j}$. Expanding in both variables,
+\[ B\Big(\sum_i a_i\chi_{V_i},\ \sum_j b_j\chi_{W_j}\Big) = \sum_{i,j} a_ib_j\,B(\chi_{V_i}, \chi_{W_j}) = \sum_{i,j} a_ib_j\,\dim\operatorname{Hom}_G(V_i, W_j). \]
+\end{proof}
+
+\begin{proof}[Second proof of (1) (without characters)]
+\textit{(Not from class.)} This proof uses no characters, so it works for every group and every field.
+
+\emph{Second variable.} Let $p_1: W_1 \oplus W_2 \to W_1$ and $p_2: W_1 \oplus W_2 \to W_2$ be the projections $p_i(w_1, w_2) = w_i$. They are linear and commute with $G$, since $G$ acts on each coordinate. Define
+\[ \Phi: \operatorname{Hom}_G(V, W_1 \oplus W_2) \to \operatorname{Hom}_G(V, W_1) \oplus \operatorname{Hom}_G(V, W_2), \qquad \Phi(\alpha) = (p_1 \circ \alpha,\ p_2 \circ \alpha), \]
+where the target is the external direct sum of two vector spaces. The entries $p_i \circ \alpha$ are homomorphisms of representations (Lemma~\ref{lem:isomorphism-representations-properties}(1)), and $\Phi$ is linear. In the other direction, for $\alpha_1 \in \operatorname{Hom}_G(V, W_1)$ and $\alpha_2 \in \operatorname{Hom}_G(V, W_2)$ let
+\[ \Psi(\alpha_1, \alpha_2): V \to W_1 \oplus W_2, \qquad v \mapsto (\alpha_1(v), \alpha_2(v)). \]
+It is linear, and it commutes with $G$: $(\alpha_1(gv), \alpha_2(gv)) = (g\alpha_1(v), g\alpha_2(v)) = g\,(\alpha_1(v), \alpha_2(v))$. The two maps are inverse to each other: $p_i \circ \Psi(\alpha_1, \alpha_2) = \alpha_i$, and $\Psi(p_1 \circ \alpha, p_2 \circ \alpha)(v) = (p_1(\alpha(v)), p_2(\alpha(v))) = \alpha(v)$. So $\Phi$ is an isomorphism of vector spaces, and the dimension of an external direct sum is the sum of the dimensions (Proposition~\ref{prop:character-external-direct-sum}(1)).
+
+\emph{First variable.} Let $\iota_1: V_1 \to V_1 \oplus V_2$, $v_1 \mapsto (v_1, 0)$, and $\iota_2: V_2 \to V_1 \oplus V_2$, $v_2 \mapsto (0, v_2)$. They are linear and commute with $G$. The map
+\[ \operatorname{Hom}_G(V_1 \oplus V_2, W) \to \operatorname{Hom}_G(V_1, W) \oplus \operatorname{Hom}_G(V_2, W), \qquad \alpha \mapsto (\alpha \circ \iota_1,\ \alpha \circ \iota_2), \]
+is linear, with inverse $(\alpha_1, \alpha_2) \mapsto \big((v_1, v_2) \mapsto \alpha_1(v_1) + \alpha_2(v_2)\big)$: indeed $\alpha(v_1, v_2) = \alpha(\iota_1(v_1) + \iota_2(v_2)) = (\alpha \circ \iota_1)(v_1) + (\alpha \circ \iota_2)(v_2)$, and the map $(v_1, v_2) \mapsto \alpha_1(v_1) + \alpha_2(v_2)$ is linear and commutes with $G$ because $\alpha_1$ and $\alpha_2$ do. The dimensions add as before.
+\end{proof}
+
+Applying the second proof one summand at a time shows that a homomorphism between two direct sums is a ``matrix'' of homomorphisms between the summands, one for each pair (summand of the source, summand of the target). This is the picture behind (2), and it is drawn in the figure after Corollary~\ref{cor:multiplicities-complex}.
+
+By (2), it is enough to understand $\operatorname{Hom}_G(S, T)$ for two simple representations $S$ and $T$.
+
+\subsection{Schur's Lemma}\label{sub:schur-lemma}
+
+\begin{propbox}[{Schur's Lemma}]\label{prop:schur-lemma}
+Let $G$ be a group, $S$ a simple representation of $G$ (Definition~\ref{def:simple-representation}) and $V$ any representation of $G$ over the same field.
+\begin{enumerate}
+    \item A homomorphism of $G$-representations $\alpha: S \to V$ is either injective or zero.
+    \item A homomorphism of $G$-representations $\alpha: V \to S$ is either surjective or zero.
+    \item If $S$ and $T$ are both simple, a homomorphism of $G$-representations $\alpha: S \to T$ is either an isomorphism or zero.
+\end{enumerate}
+\srcline{WS 17.2; worksheet session 11/16}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} the kernel and the image of $\alpha$ are subrepresentations, and a simple representation has only two subrepresentations.\par
+\textit{(Worksheet session 11/16; the fact it needs, Kernels and Images Are Subrepresentations, Proposition~\ref{prop:kernels-images-subrepresentations}, was proved again on the board.)}
+
+\textbf{(1)} $\operatorname{Ker}\alpha$ is a subrepresentation of $S$ (Proposition~\ref{prop:kernels-images-subrepresentations}(1)). Since $S$ is simple, $\operatorname{Ker}\alpha = \{0\}$ or $\operatorname{Ker}\alpha = S$. In the first case $\alpha$ is injective: if $\alpha(s) = \alpha(s')$, then $s - s' \in \operatorname{Ker}\alpha = \{0\}$. In the second case $\alpha = 0$.
+
+\textbf{(2)} $\operatorname{Im}\alpha$ is a subrepresentation of $S$ (Proposition~\ref{prop:kernels-images-subrepresentations}(2)). Since $S$ is simple, $\operatorname{Im}\alpha = S$, and $\alpha$ is surjective, or $\operatorname{Im}\alpha = \{0\}$, and $\alpha = 0$.
+
+\textbf{(3)} Suppose $\alpha \neq 0$. By (1), applied to the simple representation $S$ and $V = T$, $\alpha$ is injective. By (2), applied to $V = S$ and the simple representation $T$, $\alpha$ is surjective. So $\alpha$ is a bijective homomorphism of $G$-representations, that is, an isomorphism (Definition~\ref{def:isomorphism-representations}); its inverse is again a homomorphism of $G$-representations (Lemma~\ref{lem:isomorphism-representations-properties}(2)).
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+\node[anchor=west] at (-0.2,3.05) {$\alpha: S \to V$ with $S$ simple: $\operatorname{Ker}\alpha$ is a subrepresentation of $S$, so it is $\{0\}$ or $S$};
+\begin{scope}
+\draw[blue!70!black, thick, fill=blue!70!black!12] (0,1.4) rectangle (1.2,2.4); \node at (0.6,1.9) {$S$};
+\draw (2.5,1.1) rectangle (4.7,2.7); \node[anchor=north east] at (4.7,2.7) {$V$};
+\draw[blue!70!black, thick, fill=blue!70!black!12] (2.75,1.4) rectangle (3.95,2.4); \node at (3.35,1.9) {$\alpha(S)$};
+\draw[->, thick] (1.3,1.9) -- (2.65,1.9) node[midway, above] {$\alpha$};
+\node[anchor=north west, align=left] at (-0.1,1.0) {$\operatorname{Ker}\alpha = \{0\}$: $\alpha$ is injective,\\$\alpha(S)$ is a copy of $S$ inside $V$};
+\end{scope}
+\begin{scope}[xshift=7.2cm]
+\draw[red!70!black, thick, fill=red!70!black!15] (0,1.4) rectangle (1.2,2.4); \node at (0.6,1.9) {$S$};
+\draw (2.5,1.1) rectangle (4.7,2.7); \node[anchor=north east] at (4.7,2.7) {$V$};
+\fill (3.35,1.9) circle (1.6pt) node[right=2pt] {$0$};
+\draw[->, thick] (1.3,1.9) -- (3.2,1.9) node[midway, above] {$\alpha$};
+\node[anchor=north west, align=left] at (-0.1,1.0) {$\operatorname{Ker}\alpha = S$ (red): $\alpha = 0$};
+\end{scope}
+\draw[black!40] (-0.2,0.0) -- (12.1,0.0);
+\begin{scope}[yshift=-3.6cm]
+\node[anchor=west] at (-0.2,3.05) {$\alpha: V \to S$ with $S$ simple: $\operatorname{Im}\alpha$ is a subrepresentation of $S$, so it is $S$ or $\{0\}$};
+\begin{scope}
+\draw (0,1.1) rectangle (2.2,2.7); \node[anchor=north west] at (0,2.7) {$V$};
+\draw[red!70!black, thick, fill=red!70!black!15] (0.2,1.25) rectangle (2.0,1.85); \node at (1.1,1.55) {$\operatorname{Ker}\alpha$};
+\draw[blue!70!black, thick, fill=blue!70!black!12] (3.5,1.4) rectangle (4.7,2.4); \node at (4.1,1.9) {$S$};
+\draw[->, thick] (2.3,1.9) -- (3.4,1.9) node[midway, above] {$\alpha$};
+\node[anchor=north west, align=left] at (-0.1,1.0) {$\operatorname{Im}\alpha = S$ (blue): $\alpha$ is surjective};
+\end{scope}
+\begin{scope}[xshift=7.2cm]
+\draw[red!70!black, thick, fill=red!70!black!15] (0,1.1) rectangle (2.2,2.7); \node[anchor=north west] at (0,2.7) {$V$};
+\draw (3.5,1.4) rectangle (4.7,2.4); \node[anchor=north east] at (4.7,2.4) {$S$};
+\fill (4.1,1.8) circle (1.6pt) node[right=2pt] {$0$};
+\draw[->, thick] (2.3,1.8) -- (3.95,1.8) node[midway, above] {$\alpha$};
+\node[anchor=north west, align=left] at (-0.1,1.0) {$\operatorname{Im}\alpha = \{0\}$: $\alpha = 0$};
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Schur's Lemma (Proposition~\ref{prop:schur-lemma}). Top: a homomorphism out of a simple representation $S$. Its kernel is a subrepresentation of $S$, and $S$ has only the subrepresentations $\{0\}$ and $S$; so either $\alpha$ embeds a copy of $S$ into $V$ (left), or the kernel (red) is all of $S$ and $\alpha = 0$ (right). Bottom: a homomorphism into $S$. Its image is a subrepresentation of $S$; so either the image (blue) is all of $S$ (left), or it is $\{0\}$ and $\alpha = 0$ (right). Between two simple representations both alternatives apply, which leaves only isomorphisms and the zero map.
+%% <<< END ADDED
+
+\begin{corbox}[{Non-Isomorphic Simple Representations Have Only the Zero Homomorphism}]\label{cor:hom-nonisomorphic-simples}
+Let $S$ and $T$ be simple representations of a group $G$ over the same field, with $S \not\cong T$. Then $\operatorname{Hom}_G(S, T) = \{0\}$ (Definition~\ref{def:hom-g}): the only homomorphism of $G$-representations $S \to T$ is zero.
+\srcline{WS 17.3, the first step; worksheet session 11/16}
+\end{corbox}
+
+\begin{proof}
+\textit{(Worksheet session 11/16.)} By Schur's Lemma (Proposition~\ref{prop:schur-lemma}(3)), every $\alpha \in \operatorname{Hom}_G(S, T)$ is an isomorphism or zero. There is no isomorphism $S \to T$, since $S \not\cong T$. So $\alpha = 0$.
+\end{proof}
+
+\begin{propbox}[{$\dim\operatorname{Hom}_G$ Between Sums of Simple Representations}]\label{prop:dim-hom-sums-of-simples}
+Let $G$ be a finite group and $k$ a field containing $\mathbb{Q}$. Let $S_1, \ldots, S_r$ be finite-dimensional simple representations of $G$ over $k$ with $S_i \not\cong S_j$ for $i \neq j$, and let $a_1, \ldots, a_r \geq 0$ and $b_1, \ldots, b_r \geq 0$ be integers. Then
+\[ \dim\operatorname{Hom}_G\Big(\bigoplus_{i=1}^r S_i^{\oplus a_i},\ \bigoplus_{j=1}^r S_j^{\oplus b_j}\Big) = \sum_{i=1}^r a_ib_i\,\dim\operatorname{Hom}_G(S_i, S_i). \]
+\srcline{WS 17.3; worksheet session 11/16}
+\end{propbox}
+
+\begin{proof}
+\textit{(Worksheet session 11/16.)} By WS 17.1 (Proposition~\ref{prop:dim-hom-additive}(2)) with $V_i = W_i = S_i$, the left side is
+\[ \sum_{i=1}^r\sum_{j=1}^r a_ib_j\,\dim\operatorname{Hom}_G(S_i, S_j). \]
+For $i \neq j$, $\operatorname{Hom}_G(S_i, S_j) = \{0\}$ (Corollary~\ref{cor:hom-nonisomorphic-simples}), so its dimension is $0$. Only the terms with $i = j$ remain.
+\end{proof}
+
+The lecture's summary: non-isomorphic simple representations behave like orthogonal vectors, and the dimension is the dot product of the two vectors of multiplicities $(a_1, \ldots, a_r)$ and $(b_1, \ldots, b_r)$, with the weights $\dim\operatorname{Hom}_G(S_i, S_i)$. Each weight is at least $1$: the identity $\mathrm{Id}_{S_i}$ is a homomorphism of representations, and it is not zero because $S_i \neq \{0\}$.
+
+\textbf{Transcription note (WS 17).} The worksheet numbers the simple representations $S_1, \ldots, S_k$. These notes write $S_1, \ldots, S_r$, because $k$ is the field.
+
+\subsection{\texorpdfstring{Schur's Lemma over $\mathbb{C}$}{Schur's Lemma over C}}\label{sub:schur-complex}
+
+Over the complex numbers the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ are all equal to $1$, so they need not be kept track of.
+
+\begin{propbox}[{Schur's Lemma over $\mathbb{C}$}]\label{prop:schur-complex}
+Let $G$ be a group and $S$ a finite-dimensional simple representation of $G$ over $\mathbb{C}$. Then
+\[ \operatorname{Hom}_G(S, S) = \mathbb{C}\,\mathrm{Id}_S, \]
+the set of multiples of the identity. In particular $\dim\operatorname{Hom}_G(S, S) = 1$.
+\srcline{WS 17.4; board 11/16}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} if $\lambda$ is an eigenvalue of $\alpha$, then $\alpha - \lambda\,\mathrm{Id}$ is a homomorphism of representations that is not injective, so by Schur's Lemma it is zero.\par
+\textit{(Board 11/16.)} The best way to show that a space is one-dimensional is to name a vector that spans it, and here there is an obvious candidate, the identity. $\operatorname{Hom}_G(S, S)$ is a subspace of $\operatorname{Hom}(S, S)$: it is the space of invariant vectors of the representation $\operatorname{Hom}(S, S)$ (Proposition~\ref{prop:hom-is-representation}(2), Lemma~\ref{lem:invariants-subrepresentation}). It contains $\mathrm{Id}_S$, since $\mathrm{Id}_S(gs) = gs = g\,\mathrm{Id}_S(s)$. So $\mathbb{C}\,\mathrm{Id}_S \subseteq \operatorname{Hom}_G(S, S)$, and it remains to show that every $\alpha \in \operatorname{Hom}_G(S, S)$ is a multiple of $\mathrm{Id}_S$.
+
+Let $\alpha \in \operatorname{Hom}_G(S, S)$. Since $S$ is simple, $S \neq \{0\}$. A linear map from a nonzero finite-dimensional complex vector space to itself has an eigenvalue (Axler 5.19); this is where the field $\mathbb{C}$ is used. Let $\lambda \in \mathbb{C}$ be an eigenvalue of $\alpha$ and $v \neq 0$ an eigenvector, $\alpha(v) = \lambda v$.
+
+\textbf{(1) $\alpha - \lambda\,\mathrm{Id}_S$ is not injective.} $(\alpha - \lambda\,\mathrm{Id}_S)(v) = \alpha(v) - \lambda v = \lambda v - \lambda v = 0$, and $v \neq 0$.
+
+\textbf{(2) $\alpha = \lambda\,\mathrm{Id}_S$.} Since $\operatorname{Hom}_G(S, S)$ is a subspace containing $\alpha$ and $\mathrm{Id}_S$, the map $\alpha - \lambda\,\mathrm{Id}_S$ is a homomorphism of $G$-representations $S \to S$. By Schur's Lemma (Proposition~\ref{prop:schur-lemma}(1), with $V = S$) it is injective or zero. By (1) it is not injective, so it is zero. Hence for all $s \in S$,
+\[ \alpha(s) - \lambda s = 0, \qquad \text{that is,} \qquad \alpha(s) = \lambda s = \lambda\,\mathrm{Id}_S(s). \]
+
+\emph{The dimension.} $\mathrm{Id}_S \neq 0$ because $S \neq \{0\}$, so $\mathbb{C}\,\mathrm{Id}_S$ is one-dimensional.
+\end{proof}
+
+\textbf{Transcription note (WS 17.4).} The first sentence of the worksheet's Problem 17.4 says ``a finite dimensional $G$-representation over the field $\mathbb{C}$'', without the word ``simple''. The lecture stated the problem for a simple representation, and the statement is false without it: for $G$ acting trivially on $\mathbb{C}^2$, every linear map $\mathbb{C}^2 \to \mathbb{C}^2$ is a homomorphism of representations, and $\dim\operatorname{Hom}_G(\mathbb{C}^2, \mathbb{C}^2) = 4$. The board referred to WS 17.2(3) in step (2): a map that is not injective is not an isomorphism, so it is zero. Part (1) gives the same conclusion directly.
+
+\begin{corbox}[{Multiplicities over $\mathbb{C}$}]\label{cor:multiplicities-complex}
+Let $G$ be a finite group. Let $S_1, \ldots, S_r$ be finite-dimensional simple representations of $G$ over $\mathbb{C}$ with $S_i \not\cong S_j$ for $i \neq j$, and let $a_1, \ldots, a_r \geq 0$ and $b_1, \ldots, b_r \geq 0$ be integers. Then
+\[ \dim\operatorname{Hom}_G\Big(\bigoplus_{i=1}^r S_i^{\oplus a_i},\ \bigoplus_{j=1}^r S_j^{\oplus b_j}\Big) = \sum_{i=1}^r a_ib_i. \]
+\srcline{WS 17.5; lecture 11/16}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture 11/16.)} This is WS 17.3 (Proposition~\ref{prop:dim-hom-sums-of-simples}), in which every weight $\dim\operatorname{Hom}_G(S_i, S_i)$ equals $1$ by WS 17.4 (Proposition~\ref{prop:schur-complex}).
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, x=0.62cm, y=0.62cm]
+\fill[blue!70!black!18] (0,5) rectangle (2,4);
+\fill[orange!85!black!22] (2,4) rectangle (3,2);
+\fill[red!70!black!16] (3,2) rectangle (6,0);
+\foreach \x in {0,...,6} { \draw[black!35, thin] (\x,0) -- (\x,5); }
+\foreach \y in {0,...,5} { \draw[black!35, thin] (0,\y) -- (6,\y); }
+\draw[thick] (0,0) rectangle (6,5);
+\draw[thick] (2,0) -- (2,5); \draw[thick] (3,0) -- (3,5);
+\draw[thick] (0,4) -- (6,4); \draw[thick] (0,2) -- (6,2);
+\draw[blue!70!black, very thick] (0,5) rectangle (2,4);
+\draw[orange!85!black, very thick] (2,4) rectangle (3,2);
+\draw[red!70!black, very thick] (3,2) rectangle (6,0);
+\node[fill=white, inner sep=1pt] at (2.5,4.5) {$0$}; \node[fill=white, inner sep=1pt] at (4.5,4.5) {$0$};
+\node[fill=white, inner sep=1pt] at (1,3) {$0$}; \node[fill=white, inner sep=1pt] at (4.5,3) {$0$};
+\node[fill=white, inner sep=1pt] at (1,1) {$0$}; \node[fill=white, inner sep=1pt] at (2.5,1) {$0$};
+\draw[|<->|, blue!70!black] (0,5.45) -- (2,5.45) node[midway, above] {$S_1^{\oplus 2}$};
+\draw[|<->|, orange!85!black] (2,5.45) -- (3,5.45) node[midway, above] {$S_2$};
+\draw[|<->|, red!70!black] (3,5.45) -- (6,5.45) node[midway, above] {$S_3^{\oplus 3}$};
+\draw[|<->|, blue!70!black] (-0.45,5) -- (-0.45,4) node[midway, left] {$S_1$};
+\draw[|<->|, orange!85!black] (-0.45,4) -- (-0.45,2) node[midway, left] {$S_2^{\oplus 2}$};
+\draw[|<->|, red!70!black] (-0.45,2) -- (-0.45,0) node[midway, left] {$S_3^{\oplus 2}$};
+\node[anchor=south] at (3,6.5) {source: $a = (2, 1, 3)$};
+\node[rotate=90, anchor=south] at (-2.2,2.5) {target: $b = (1, 2, 2)$};
+\node[anchor=west, align=left] at (7.0,4.3) {each small cell is a $G$-map from one copy\\of $S_i$ (column) to one copy of $S_j$ (row)};
+\node[anchor=west, align=left] at (7.0,2.9) {$i \neq j$: only the zero map (Schur's lemma)};
+\node[anchor=west, align=left] at (7.0,1.7) {$i = j$: an element of $\operatorname{Hom}_G(S_i, S_i)$;\\over $\mathbb{C}$, a multiple of the identity};
+\node[anchor=west, align=left] at (7.0,0.3) {over $\mathbb{C}$: $\dim = \textcolor{blue!70!black}{2 \cdot 1} + \textcolor{orange!85!black}{1 \cdot 2} + \textcolor{red!70!black}{3 \cdot 2} = 10$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Corollary~\ref{cor:multiplicities-complex} for three simple representations with multiplicities $a = (2, 1, 3)$ in the source and $b = (1, 2, 2)$ in the target. A homomorphism between the two direct sums is a ``matrix'' with one entry for each pair (copy in the source, copy in the target), by the second proof of Proposition~\ref{prop:dim-hom-additive}(1) applied one summand at a time. An entry between copies of different $S_i$ is zero (Corollary~\ref{cor:hom-nonisomorphic-simples}). An entry between two copies of the same $S_i$ is an element of $\operatorname{Hom}_G(S_i, S_i)$, which over $\mathbb{C}$ is one complex number times the identity (Proposition~\ref{prop:schur-complex}). So the dimension is the number of cells in the coloured blocks, $2 \cdot 1 + 1 \cdot 2 + 3 \cdot 2 = 10$, the dot product of $a$ and $b$.
+%% <<< END ADDED
+
+\begin{rembox}[{Over Other Fields the Weights Stay}]\label{rem:weights-stay}
+The proof of Proposition~\ref{prop:schur-complex} needs an eigenvalue of $\alpha$ in the ground field. Over $\mathbb{R}$ a linear map need not have a real eigenvalue, and for a simple real representation $S$ the number $\dim\operatorname{Hom}_G(S, S)$ can be larger than $1$. An example is the subject of Problem Set 10 (Problem 10.4); it will be added here after the problem set is submitted. So over $\mathbb{R}$, and over a general field containing $\mathbb{Q}$, the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ of Proposition~\ref{prop:dim-hom-sums-of-simples} must be kept.
+\srcline{lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the reference to Problem Set 10 is added}
+\end{rembox}
+
+\subsection{\texorpdfstring{The Characters of $S_3$ and a Simplicity Test}{The Characters of S₃ and a Simplicity Test}}\label{sub:s3-simplicity-test}
+
+\begin{exbox}[{The Character Table of $S_3$, Element by Element}]\label{ex:s3-characters-elementwise}
+List all six elements of $S_3$ as columns, not one representative of each conjugacy class as in Example~\ref{ex:characters-s3}. The rows are three representations over $\mathbb{R}$: the trivial representation and the sign representation, which are one-dimensional with every $g$ acting by the $1 \times 1$ matrix $[1]$, respectively $[\sgn g]$, and the two-dimensional representation $U = \{(x_1, x_2, x_3) : x_1 + x_2 + x_3 = 0\}$ with the character computed in Example~\ref{ex:characters-s3}.
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{l|c|ccc|cc}
+ & $e$ & $(1\,2)$ & $(1\,3)$ & $(2\,3)$ & $(1\,2\,3)$ & $(1\,3\,2)$ \\ \hline
+trivial & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\
+sign & $1$ & $-1$ & $-1$ & $-1$ & $1$ & $1$ \\
+$U$ & $2$ & $0$ & $0$ & $0$ & $-1$ & $-1$
+\end{tabular}
+\end{center}
+\begin{enumerate}
+    \item \emph{The rows are orthogonal as vectors in $\mathbb{R}^6$} (observed in class):
+    trivial $\cdot$ sign $= 1 - 1 - 1 - 1 + 1 + 1 = 0$, \ trivial $\cdot\ U = 2 + 0 + 0 + 0 - 1 - 1 = 0$, \ sign $\cdot\ U = 2 + 0 + 0 + 0 - 1 - 1 = 0$.
+    \item \emph{They are not unit vectors.} Each row has dot product $6$ with itself: $1 + 1 + 1 + 1 + 1 + 1 = 6$ for the trivial and for the sign representation, and $4 + 0 + 0 + 0 + 1 + 1 = 6$ for $U$. So each row has length $\sqrt{6}$, and $6 = |S_3|$.
+    \item \emph{What the dot products are.} On the board, each transposition is marked as its own inverse and the two $3$-cycles as inverse to each other. In $S_3$, and in every symmetric group, $g^{-1}$ has the same cycle type as $g$ and is therefore conjugate to $g$ (Theorem~\ref{thm:conjugacy-classes-sn-cycle-types}), so $\chi(g^{-1}) = \chi(g)$ for every character (Proposition~\ref{prop:character-class-function}(2)), and there is no need to distinguish $\chi(g)$ from $\chi(g^{-1})$. Hence, by Theorem~\ref{thm:dim-hom-g}, the dot product of the rows of $V$ and $W$ is
+    \[ \sum_{g \in S_3} \chi_V(g)\,\chi_W(g) = \sum_{g \in S_3} \chi_V(g^{-1})\,\chi_W(g) = 6\,\dim\operatorname{Hom}_{S_3}(V, W). \]
+    \item \emph{Conclusion.} By (1), $\dim\operatorname{Hom}_{S_3}(V, W) = 0$ for two different rows. By (2), $\dim\operatorname{Hom}_{S_3}(V, V) = \frac{6}{6} = 1$ for each of the three rows. These are the diagonal and off-diagonal entries of the table in Example~\ref{ex:hom-g-s3}.
+\end{enumerate}
+\srcline{lecture 11/16}
+\end{exbox}
+
+For simple representations these two phenomena are general:
+
+\begin{propbox}[{Character Sums for Simple Representations}]\label{prop:character-sums-simple}
+Let $G$ be a finite group, $k$ a field containing $\mathbb{Q}$, and $S$, $T$ finite-dimensional simple representations of $G$ over $k$.
+\begin{enumerate}
+    \item If $S \not\cong T$, then $\displaystyle\sum_{g \in G} \chi_S(g^{-1})\,\chi_T(g) = 0$.
+    \item $\displaystyle\sum_{g \in G} \chi_S(g^{-1})\,\chi_S(g) = |G| \cdot \dim\operatorname{Hom}_G(S, S)$. If $k = \mathbb{C}$, this is $|G|$.
+\end{enumerate}
+\srcline{lecture 11/16, as the explanation of the numbers $0$ and $6$ in Example~\ref{ex:s3-characters-elementwise}}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture 11/16.)} Multiplying the formula of Theorem~\ref{thm:dim-hom-g} by $|G|$ gives $\sum_{g} \chi_V(g^{-1})\,\chi_W(g) = |G| \cdot \dim\operatorname{Hom}_G(V, W)$ for all $V$, $W$.
+
+\textbf{(1)} For $V = S$ and $W = T$ with $S \not\cong T$, $\operatorname{Hom}_G(S, T) = \{0\}$ (Corollary~\ref{cor:hom-nonisomorphic-simples}).
+
+\textbf{(2)} Take $V = W = S$. Over $\mathbb{C}$, $\dim\operatorname{Hom}_G(S, S) = 1$ by Schur's Lemma over $\mathbb{C}$ (Proposition~\ref{prop:schur-complex}).
+\end{proof}
+
+When every element of $G$ is conjugate to its inverse, as in a symmetric group, the sums in Proposition~\ref{prop:character-sums-simple} are dot products of rows of the element-by-element table: different simple representations give orthogonal rows, and a simple representation with $\dim\operatorname{Hom}_G(S, S) = 1$ gives a row of squared length $|G|$.
+
+In Example~\ref{ex:s3-characters-elementwise} the argument runs the other way. It was not yet checked in class that the three representations are simple; the computation gave $\dim\operatorname{Hom}_G(V, V) = 1$ for each of them, and this implies simplicity:
+
+\begin{lembox}[{A Simplicity Test}]\label{lem:simplicity-test}
+Let $G$ be a finite group, $k$ a field containing $\mathbb{Q}$, and $V$ a finite-dimensional representation of $G$ over $k$. If $\dim\operatorname{Hom}_G(V, V) = 1$, then $V$ is simple.
+\srcline{board 11/16}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} write $V$ as a sum of simple representations with multiplicities $a_i$; then $\dim\operatorname{Hom}_G(V, V)$ is a sum of terms $a_i^2\dim\operatorname{Hom}_G(S_i, S_i) \geq 1$, and a sum of such terms equals $1$ only if there is one term, with $a_1 = 1$.\par
+\textit{(Board 11/16.)} Since $k$ contains $\mathbb{Q}$, $|G| \neq 0$ in $k$. By Maschke's theorem, in the form of Corollary~\ref{cor:decomposition-multiplicities},
+\[ V \cong E = S_1^{\oplus a_1} \oplus \cdots \oplus S_r^{\oplus a_r} \]
+with simple, pairwise non-isomorphic $S_1, \ldots, S_r$ and integers $a_i \geq 1$. Isomorphic representations have the same character (Lemma~\ref{lem:isomorphic-same-character}), and the formula of Theorem~\ref{thm:dim-hom-g} involves only the characters, so $\dim\operatorname{Hom}_G(V, V) = \dim\operatorname{Hom}_G(E, E)$. By WS 17.3 (Proposition~\ref{prop:dim-hom-sums-of-simples}) with $b_i = a_i$,
+\[ 1 = \dim\operatorname{Hom}_G(V, V) = \sum_{i=1}^r a_i^2\,\dim\operatorname{Hom}_G(S_i, S_i). \]
+Each term is at least $1$: $a_i^2 \geq 1$ is the square of a positive integer, and $\dim\operatorname{Hom}_G(S_i, S_i) \geq 1$ because the identity $\mathrm{Id}_{S_i} \neq 0$ lies in $\operatorname{Hom}_G(S_i, S_i)$. The sum has at least one term, since an empty sum is $0 \neq 1$. A sum of $r \geq 1$ integers, each at least $1$, equals $1$ only if $r = 1$ and the single term is $1$. So $r = 1$ and $a_1^2\dim\operatorname{Hom}_G(S_1, S_1) = 1$, which forces $a_1 = 1$. Hence $V \cong S_1^{\oplus 1} = S_1$, and a representation isomorphic to a simple representation is simple (Lemma~\ref{lem:isomorphism-representations-properties}(4)).
+\end{proof}
+
+\begin{corbox}[{Simplicity over $\mathbb{C}$}]\label{cor:simple-iff-hom-one-complex}
+Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{C}$. Then $V$ is simple if and only if $\dim\operatorname{Hom}_G(V, V) = 1$.
+\srcline{not from class; the two directions are WS 17.4 and the lemma of the board 11/16}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from class.)} If $V$ is simple, then $\dim\operatorname{Hom}_G(V, V) = 1$ by Schur's Lemma over $\mathbb{C}$ (Proposition~\ref{prop:schur-complex}). The converse is Lemma~\ref{lem:simplicity-test} for $k = \mathbb{C}$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, x=0.42cm, y=0.42cm]
+\newcommand{\blk}[4]{\fill[#4!18] (#1,#2) rectangle ++(#3,-#3); \foreach \i in {0,...,#3} { \draw[#4, thin] (#1+\i,#2) -- ++(0,-#3); \draw[#4, thin] (#1,#2-\i) -- ++(#3,0); } \draw[#4, thick] (#1,#2) rectangle ++(#3,-#3);}
+\node[anchor=west] at (-6.5,2.2) {$\dim\operatorname{Hom}_G(V, V) = \sum_i a_i^2$ over $\mathbb{C}$, for $V \cong \bigoplus_i S_i^{\oplus a_i}$: one $a_i \times a_i$ block per $S_i$};
+\node[anchor=west] at (-6.5,-0.5) {$\sum_i a_i^2 = 1$};
+\blk{0}{0}{1}{blue!70!black}
+\node[anchor=west] at (2.2,-0.5) {$a = (1)$: \ $V \cong S_1$, simple};
+\node[anchor=west] at (-6.5,-3.0) {$\sum_i a_i^2 = 2$};
+\blk{0}{-2}{1}{blue!70!black} \blk{1}{-3}{1}{orange!85!black}
+\node[anchor=west] at (3.2,-3.0) {$a = (1, 1)$: \ $S_1 \oplus S_2$, e.g.\ $\mathbb{C}^3 = \mathbb{C}(1,1,1) \oplus U$ for $S_3$};
+\node[anchor=west] at (-6.5,-6.5) {$\sum_i a_i^2 = 3$};
+\blk{0}{-5}{1}{blue!70!black} \blk{1}{-6}{1}{orange!85!black} \blk{2}{-7}{1}{red!70!black}
+\node[anchor=west] at (4.2,-6.5) {$a = (1, 1, 1)$: \ $S_1 \oplus S_2 \oplus S_3$};
+\node[anchor=west] at (-6.5,-10.0) {$\sum_i a_i^2 = 4$};
+\blk{0}{-9}{2}{blue!70!black}
+\node[anchor=west] at (3.2,-10.0) {$a = (2)$: \ $S_1^{\oplus 2}$ \quad or \quad $a = (1, 1, 1, 1)$};
+\node[anchor=west] at (-6.5,-13.5) {$\sum_i a_i^2 = 5$};
+\blk{0}{-12}{2}{blue!70!black} \blk{2}{-14}{1}{orange!85!black}
+\node[anchor=west] at (4.2,-13.5) {$a = (2, 1)$: \ $S_1^{\oplus 2} \oplus S_2$ \quad or \quad $a = (1, 1, 1, 1, 1)$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The number $\dim\operatorname{Hom}_G(V, V)$ over $\mathbb{C}$ for $V \cong \bigoplus_i S_i^{\oplus a_i}$. By Corollary~\ref{cor:multiplicities-complex} with $b = a$ it is $\sum_i a_i^2$: the homomorphisms $V \to V$ form one $a_i \times a_i$ block of complex numbers for each $S_i$. The value $1$ occurs only for a single block of size $1$, that is, for a simple representation (Corollary~\ref{cor:simple-iff-hom-one-complex}). The values $2$ and $3$ occur only for sums of two, respectively three, different simple representations. From $4$ on, the number alone does not determine the multiplicities. Over a general field containing $\mathbb{Q}$, each cell carries the weight $\dim\operatorname{Hom}_G(S_i, S_i) \geq 1$, and the value $1$ still occurs only for a simple representation (Lemma~\ref{lem:simplicity-test}).
+%% <<< END ADDED
+
+\begin{exbox}[{The Three Representations of $S_3$ Are Simple}]\label{ex:s3-three-simple}
+By Example~\ref{ex:s3-characters-elementwise}(4), each of the trivial representation, the sign representation and $U$ has $\dim\operatorname{Hom}_{S_3}(V, V) = 1$. By the simplicity test (Lemma~\ref{lem:simplicity-test}, with $k = \mathbb{R}$) all three are simple.
+\begin{enumerate}
+    \item They are pairwise non-isomorphic: for two different rows $\dim\operatorname{Hom}_{S_3}(V, W) = 0$, so the only homomorphism $V \to W$ is zero, and an isomorphism between nonzero representations is not zero. (Their characters are also different, and isomorphic representations have the same character, Lemma~\ref{lem:isomorphic-same-character}.)
+    \item For $U$ this is a second proof of Example~\ref{ex:s3-r3-simples}(2), where the simplicity of $U$ was shown directly: a rotation by $120^\circ$ has no real eigenvector.
+    \item The same computation applies over every field $k$ containing $\mathbb{Q}$, with $U$ the sum-zero plane in $k^3$: the three characters have the same integer values, since $k^3 = k(1,1,1) \oplus U$ whenever $3 \neq 0$ in $k$ (Proposition~\ref{prop:k123-direct-sum}).
+\end{enumerate}
+The lecture ended here. Whether these three are all the simple representations of $S_3$ has not been settled yet.
+\srcline{lecture 11/16; parts (2) and (3) not from class}
+\end{exbox}
+
+\begin{exbox}[{The Permutation Representation of $S_3$ by Multiplicities}]\label{ex:s3-permutation-multiplicities}
+\textit{(Not from class.)} The permutation representation $\mathbb{R}^3$ of $S_3$ is the internal direct sum $\mathbb{R}(1,1,1) \oplus U$ (Example~\ref{ex:s3-r3-simples}), and $S_3$ acts trivially on $\mathbb{R}(1,1,1)$. So by Lemma~\ref{lem:internal-external-direct-sum}
+\[ \mathbb{R}^3 \cong \mathrm{triv}^{\oplus 1} \oplus \mathrm{sign}^{\oplus 0} \oplus U^{\oplus 1}, \]
+with multiplicities $a = (1, 0, 1)$ with respect to the three simple representations of Example~\ref{ex:s3-three-simple}, each of which has $\dim\operatorname{Hom}_{S_3}(S, S) = 1$. WS 17.3 (Proposition~\ref{prop:dim-hom-sums-of-simples}) gives:
+\begin{enumerate}
+    \item $\dim\operatorname{Hom}_{S_3}(\mathbb{R}^3, \mathbb{R}^3) = 1 \cdot 1 + 0 \cdot 0 + 1 \cdot 1 = 2$. This is not $1$, in accordance with $\mathbb{R}^3$ not being simple.
+    \item With $b = (1, 0, 0)$, $(0, 1, 0)$, $(0, 0, 1)$: $\dim\operatorname{Hom}_{S_3}(\mathbb{R}^3, \mathrm{triv}) = 1$, $\dim\operatorname{Hom}_{S_3}(\mathbb{R}^3, \mathrm{sign}) = 0$, $\dim\operatorname{Hom}_{S_3}(\mathbb{R}^3, U) = 1$. The dimension of the space of homomorphisms to a simple representation reads off its multiplicity.
+    \item These are the entries $1$, $0$, $1$, $2$ in the row of $\mathbb{R}^3$ in the table of Example~\ref{ex:hom-g-s3}, which were computed there from the characters. As a check in the element-by-element table: the row of $\mathbb{R}^3$ is the sum of the rows of triv and $U$, namely $(3, 1, 1, 1, 0, 0)$, and its dot product with itself is $9 + 1 + 1 + 1 = 12 = 6 \cdot 2$.
+\end{enumerate}
+\srcline{not from class}
+\end{exbox}
+
 
 \appendix
 \chapter{Review: Toolkits, Standard Examples, and Traps}\label{ch:review}
@@ -11569,7 +12033,8 @@ Tensor products are where the product in $\chi_{\operatorname{Hom}(V, W)}(g) = \
     \item \textbf{To compute $\dim V^G$ or a character ($G$ finite, $\mathbb{Q} \subseteq k$).} $\dim V^G = \frac{1}{|G|}\sum_g \chi_V(g)$ (Theorem~\ref{thm:dim-invariants-character}). Characters are constant on conjugacy classes and add over direct sums, so a character table needs one column per conjugacy class; for a permutation representation, $\chi(g)$ is the number of fixed points of $g$, and the formula counts orbits (Burnside's Lemma) (\ref{sec:invariants}, \ref{sec:characters-of-representations}).
     \item \textbf{To count the homomorphisms between two representations ($G$ finite, $\mathbb{Q} \subseteq k$).} $\operatorname{Hom}_G(V, W)$ is the space of invariant vectors of $\operatorname{Hom}(V, W)$, whose character is $\chi_W(g)\chi_V(g^{-1})$ (the map $X \mapsto RXS$ has trace $\operatorname{Tr}R \cdot \operatorname{Tr}S$), so $\dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_g \chi_V(g)\chi_W(g^{-1})$ (Theorem~\ref{thm:dim-hom-g}); over $\mathbb{R}$ replace $\chi_W(g^{-1})$ by $\chi_W(g)$, over $\mathbb{C}$ by $\overline{\chi_W(g)}$ (Corollary~\ref{cor:dim-hom-g-real-complex}). Sum over conjugacy classes, weighting each by its size.
     \item \textbf{To find the character of a dual representation.} $V^\vee = \operatorname{Hom}(V, k)$ with $(g \ast f)(v) = f(g^{-1}v)$. In a basis and its dual basis, $g$ acts on $V^\vee$ by the inverse transpose of its matrix on $V$ (the transpose alone would give a right action), so $\chi_{V^\vee}(g) = \chi_V(g^{-1})$ (Proposition~\ref{prop:character-dual}); for a finite group this is $\chi_V(g)$ over $\mathbb{R}$ and $\overline{\chi_V(g)}$ over $\mathbb{C}$ (Corollary~\ref{cor:character-dual-real-complex}). Hence $\chi_{\operatorname{Hom}(V, W)} = \chi_{V^\vee}\chi_W$.
-    \item \textbf{To show a representation is simple.} Rule out subrepresentations other than $\{0\}$ and $V$; in dimension $2$ these are invariant lines, i.e.\ common eigenvectors of all $\rho(g)$ (a rotation by $120^\circ$ has no real eigenvector; Example~\ref{ex:s3-r3-simples}). Under Maschke's hypotheses, simple is the same as irreducible (not a direct sum of two nonzero subrepresentations; Proposition~\ref{prop:simple-iff-irreducible}), and every representation is a direct sum of simple ones (Corollary~\ref{cor:direct-sum-of-simples}).
+    \item \textbf{To count homomorphisms between direct sums of simple representations ($G$ finite, $\mathbb{Q} \subseteq k$).} $\dim\operatorname{Hom}_G$ is additive in each variable (Proposition~\ref{prop:dim-hom-additive}), and between non-isomorphic simple representations the only homomorphism is $0$ (Schur's Lemma, Proposition~\ref{prop:schur-lemma}, Corollary~\ref{cor:hom-nonisomorphic-simples}). So for pairwise non-isomorphic simple $S_i$, the dimension of $\operatorname{Hom}_G$ from $\bigoplus_i S_i^{\oplus a_i}$ to $\bigoplus_i S_i^{\oplus b_i}$ is $\sum_i a_ib_i\dim\operatorname{Hom}_G(S_i, S_i)$ (Proposition~\ref{prop:dim-hom-sums-of-simples}); over $\mathbb{C}$ every weight is $1$ and the dimension is $\sum_i a_ib_i$ (Proposition~\ref{prop:schur-complex}, Corollary~\ref{cor:multiplicities-complex}).
+    \item \textbf{To show a representation is simple.} Rule out subrepresentations other than $\{0\}$ and $V$; in dimension $2$ these are invariant lines, i.e.\ common eigenvectors of all $\rho(g)$ (a rotation by $120^\circ$ has no real eigenvector; Example~\ref{ex:s3-r3-simples}). Under Maschke's hypotheses, simple is the same as irreducible (not a direct sum of two nonzero subrepresentations; Proposition~\ref{prop:simple-iff-irreducible}), and every representation is a direct sum of simple ones (Corollary~\ref{cor:direct-sum-of-simples}). With characters ($G$ finite, $\mathbb{Q} \subseteq k$): compute $\dim\operatorname{Hom}_G(V, V) = \frac{1}{|G|}\sum_g \chi_V(g^{-1})\chi_V(g)$; if it is $1$, then $V$ is simple (Lemma~\ref{lem:simplicity-test}), and over $\mathbb{C}$ the converse holds (Corollary~\ref{cor:simple-iff-hom-one-complex}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
     \item \textbf{To show $h$ is not a commutator.} Find a character $\chi$ with $\chi(h) \neq e_A$ (\ref{sec:commutators}); in $S_n$, use $\sgn$.
@@ -11619,6 +12084,8 @@ Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the r
     \item A semidirect product is not determined by $N$ and $S$ alone: $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ and $S_3$ are both of the form $\mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$. The action $\varphi$ is part of the data, and in $N \rtimes S$ it is $N$, not $S$, that is normal (\ref{sec:semidirect-products}).
     \item The composition factors do not determine the group: $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ both have factors $\mathbb{Z}/2, \mathbb{Z}/2$, and $\mathbb{Z}/6\mathbb{Z}$ and $S_3$ both have $\mathbb{Z}/2, \mathbb{Z}/3$. Jordan--H\"older says the list is an invariant, not a complete one (\ref{sec:composition-series}).
     \item Decompositions of representations can depend on the field: $k\{1,2,3\} = k(1,1,1) \oplus \{x + y + z = 0\}$ exactly when $3 \neq 0$ in $k$; over $\mathbb{F}_3$ the first summand lies inside the second (Proposition~\ref{prop:k123-direct-sum}).
+    \item $\dim\operatorname{Hom}_G(S, S) = 1$ for a simple representation $S$ is Schur's Lemma over $\mathbb{C}$; its proof uses an eigenvalue (Proposition~\ref{prop:schur-complex}). Over $\mathbb{R}$ or a general field, keep the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ in the multiplicity formula (the remark \emph{Over Other Fields the Weights Stay} in \ref{sec:schur-multiplicities}). The parts of Schur's Lemma about injective, surjective and zero maps hold over every field (Proposition~\ref{prop:schur-lemma}).
+    \item $V \oplus V$ and $V^{\oplus a}$ are external direct sums (tuples). They are not internal direct sums, since $V \cap V = V$ (Definition~\ref{def:repeated-direct-sum}).
 \end{enumerate}
 
 \chapter{Course Chronology}\label{ch:chronology}
@@ -11661,15 +12128,16 @@ Mon Oct 26 \newline lecture; Worksheet 11 & Internal and external direct sums an
 Wed Oct 28 \newline lecture; Worksheet 12 & Subnormal, composition and quasi-composition series; Jordan--H\"older (statement); $\mathbb{Z}$ has no composition series; finite groups do; the grid $Z_{ij}$; WS 12.1--12.3 & \ref{sec:composition-series}, \ref{sec:jh-grid} (WS 12.1--12.3), \ref{sec:jordan-holder} (statement) \\
 Thu Oct 29 \newline Problem Set 7 (submitted) & Proper subgroups of $A_n$ have index $\geq n$; index $n$ gives $A_{n-1}$; simple groups of order $60$ are $A_5$; orders $\equiv 2 \bmod 4$; no simple group of order $56$; two normal subgroups with simple quotients & \ref{sub:orders-30-56-90}, \ref{sub:order-60}, \ref{sec:composition-series} \\
 Fri Oct 30 \newline lecture; quiz & Jordan--H\"older finished: the nine squares, four impossible (WS 12.4), the crossing square (WS 12.5), changeovers and pipes, proof of the theorem (WS 12.6); flags in $(\mathbb{Z}/p\mathbb{Z})^n$ & \ref{sec:jh-grid} (WS 12.4--12.5), \ref{sec:jordan-holder} (WS 12.6) \\
-Mon Nov 2 \newline lecture; Worksheet 13 & Part~II begins: representations; action and linearity axioms; permutation representations; subrepresentations of $k\{1,2,3\}$; matrices in different bases (trace, determinant); the direct sum holds iff $3 \neq 0$ & \ref{sec:representations} (13.1--13.5; 13.6 to be proved) \\
+Mon Nov 2 \newline lecture; Worksheet 13 & Part~II begins: representations; action and linearity axioms; permutation representations; subrepresentations of $k\{1,2,3\}$; matrices in different bases (trace, determinant); the direct sum holds iff $3 \neq 0$ & \ref{sec:representations} (13.1--13.5; 13.6 proved Mon Nov 16) \\
 Wed Nov 4 \newline lecture; Worksheet 14 & $S_3$ on $\mathbb{R}^3$ in three bases; block diagonal and block triangular matrices; Maschke's theorem (statement); $W = U \oplus U^\perp$; orthogonal complements of subrepresentations & \ref{sec:maschke} (14.1--14.3), \ref{sec:invariant-inner-products} (14.4--14.6; 14.7--14.8 presented Fri Nov 6) \\
 Fri Nov 6 \newline lecture & WS 14.7--14.8 (the averaged inner product); finite groups act by orthogonal matrices; sesquilinear and Hermitian forms (with the MATH 420 slides \emph{Complex inner products}: conjugate transpose, forms on $\mathbb{C}^n$ as matrices, Gram--Schmidt); simple and irreducible representations; every representation is a direct sum of simples & \ref{sec:invariant-inner-products}, \ref{sec:hermitian-forms}, \ref{sec:simple-representations} \\
 Wed Nov 4 \newline office hours & $GL_n(\mathbb{F}_p)$ acting on complete flags $G/B$; orbits of the unitriangular group of sizes $p^{\ell(w)}$ for $n = 2, 3$ & \ref{sub:flags-sylow-gln} \\
 Thu Nov 5 \newline Problem Set 8 (submitted) & The product formula $|AB| = |A|\,|B|/|A \cap B|$; subgroups of index $2$ are normal; groups of order $pq$ as semidirect products $\mathbb{Z}/q\mathbb{Z} \rtimes \mathbb{Z}/p\mathbb{Z}$, classified by the solutions of $a^p \equiv 1 \bmod q$; simple groups of order $60$ through the action on $A_6/G$; the trace, $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ & \ref{sub:product-formula} (8.1), \ref{sec:normal-sources} (8.2), \ref{sub:order-pq}, \ref{sec:order-pq-semidirect} (8.3), \ref{sub:order-60} (8.4), \ref{sec:invariants} (8.5) \\
 Mon Nov 9 \newline lecture; Worksheet 15 & Idempotents and their trace; invariant vectors and the averaging operator; $V = V^G \oplus \operatorname{Ker}\pi$; $\dim V^G$ as the average trace; characters, constant on conjugacy classes and additive over direct sums; the start of the character table of $S_3$ & \ref{sec:maschke}, \ref{sec:invariants}, \ref{sec:characters-of-representations} \\
-Wed Nov 11 \newline lecture; Worksheet 16 & Two more descriptions of the trace; the representation $\operatorname{Hom}(V, W)$ and $\operatorname{Hom}_G(V, W)$; the trace of $X \mapsto RXS$; $\dim\operatorname{Hom}_G(V, W)$ from characters & \ref{sec:hom-representation} (16.1--16.2; 16.3--16.5 not reached in class) \\
+Wed Nov 11 \newline lecture; Worksheet 16 & Two more descriptions of the trace; the representation $\operatorname{Hom}(V, W)$ and $\operatorname{Hom}_G(V, W)$; the trace of $X \mapsto RXS$; $\dim\operatorname{Hom}_G(V, W)$ from characters & \ref{sec:hom-representation} (16.1--16.2; 16.3--16.5 not done in class, the complex case moved to PS 10.1) \\
 Thu Nov 12 \newline Problem Set 9 (submitted) & Extensions of solvable groups; idempotents split $V = \operatorname{Ker} \oplus \operatorname{Im}$; the proof of Maschke's theorem; counterexamples for $\mathbb{Z}$ and for $\mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$; affine maps as semidirect products & \ref{sec:solvable} (9.1), \ref{sec:maschke} (9.2--9.4), \ref{sec:affine-maps} (9.5) \\
 Fri Nov 13 \newline lecture & Dual spaces, dual bases and dual maps; the transpose matrix; the dual representation (inverse transpose) and $\chi_{V^\vee}(g) = \chi_V(g^{-1})$; a word on tensor products & \ref{sec:dual-representations} \\
+Mon Nov 16 \newline lecture; Worksheet 17 & External direct sums $V^{\oplus a}$; kernels and images of homomorphisms of representations; $\dim\operatorname{Hom}_G$ is additive in direct sums; Schur's Lemma, and Schur's Lemma over $\mathbb{C}$; multiplicities; orthogonality of the rows of the character table of $S_3$; a simplicity test & \ref{sec:representations} (13.6), \ref{sec:schur-multiplicities} (17.1--17.5) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 
@@ -12178,6 +12646,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Euler's totient\dotfill \pageref{def:eulers-totient-function}\par
 \noindent\hangindent=1em even\dotfill \pageref{def:sign-even-odd-permutations}\par
 \noindent\hangindent=1em external direct product\dotfill \pageref{def:internal-direct-product}\par
+\noindent\hangindent=1em external direct sum\dotfill \pageref{def:external-direct-sum-representations}\par
 \noindent\hangindent=1em external semidirect product\dotfill \pageref{def:external-semidirect-product}\par
 \noindent\hangindent=1em faithful\dotfill \pageref{def:faithful-action}\par
 \noindent\hangindent=1em field\dotfill \pageref{def:field-provisional-definition}\par
@@ -12258,6 +12727,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em relatively prime\dotfill \pageref{def:greatest-common-divisor-coprime}\par
 \noindent\hangindent=1em remainder\dotfill \pageref{def:quotient-remainder-a-n}\par
 \noindent\hangindent=1em remainder of $a$ modulo $n$\dotfill \pageref{def:quotient-remainder-a-n}\par
+\noindent\hangindent=1em repeated direct sum\dotfill \pageref{def:repeated-direct-sum}\par
 \noindent\hangindent=1em representation\dotfill \pageref{def:representation-permutation-representation}, \pageref{def:representation}\par
 \noindent\hangindent=1em representation on $\operatorname{Hom}(V, W)$\dotfill \pageref{def:hom-representation}\par
 \noindent\hangindent=1em representative\dotfill \pageref{def:residue-classes}\par
@@ -12309,6 +12779,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em A Normal Image in a Simple Group\dotfill \pageref{cor:normal-image-simple-group}\par
 \noindent\hangindent=1em A Normal Subgroup Inside a Subgroup of Finite Index\dotfill \pageref{thm:normal-subgroup-inside-subgroup-finite-index}\par
 \noindent\hangindent=1em A Normal Sylow Subgroup Is the Only One\dotfill \pageref{cor:sylow-normal-unique}\par
+\noindent\hangindent=1em A Simplicity Test\dotfill \pageref{lem:simplicity-test}\par
 \noindent\hangindent=1em A Subrepresentation Gives Block Triangular Matrices\dotfill \pageref{prop:subrepresentation-block-triangular}\par
 \noindent\hangindent=1em A Subset That Is a Group Is a Subgroup\dotfill \pageref{prop:subset-group-subgroup}\par
 \noindent\hangindent=1em A Unique Sylow Subgroup Rules Out Simplicity\dotfill \pageref{cor:unique-sylow-not-simple}\par
@@ -12338,6 +12809,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Cauchy's Theorem\dotfill \pageref{thm:cauchys-theorem}\par
 \noindent\hangindent=1em Cayley's Theorem\dotfill \pageref{thm:cayleys-theorem}\par
 \noindent\hangindent=1em Central iff Singleton Conjugacy Class\dotfill \pageref{prop:central-iff-singleton-conjugacy-class}\par
+\noindent\hangindent=1em Character Sums for Simple Representations\dotfill \pageref{prop:character-sums-simple}\par
 \noindent\hangindent=1em Characterizations of Abelian Groups\dotfill \pageref{prop:characterizations-abelian-groups}\par
 \noindent\hangindent=1em Characterizations of Abelian Groups, Worksheet Form\dotfill \pageref{prop:characterizations-abelian-groups-worksheet-form}\par
 \noindent\hangindent=1em Characterizations of Normality\dotfill \pageref{prop:characterizations-normality}\par
@@ -12374,6 +12846,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Counting Elements of Order $p$\dotfill \pageref{lem:count-elements-order-p}\par
 \noindent\hangindent=1em Counting Linearly Independent Tuples\dotfill \pageref{lem:count-independent-tuples}\par
 \noindent\hangindent=1em Cyclic iff There Is an Element of Order $|G|$\dotfill \pageref{cor:cyclic-iff-element-order-g}\par
+\noindent\hangindent=1em Decomposition into Simple Representations with Multiplicities\dotfill \pageref{cor:decomposition-multiplicities}\par
 \noindent\hangindent=1em Deleting Repeated Terms of a Quasi-Composition Series\dotfill \pageref{lem:quasi-composition-delete-repeats}\par
 \noindent\hangindent=1em Descending a Map to $\mathbb{Z}/n\mathbb{Z}$\dotfill \pageref{lem:descending-map-z-nz}\par
 \noindent\hangindent=1em $D(H)$ Is the Smallest Normal Subgroup with Abelian Quotient\dotfill \pageref{cor:derived-subgroup-smallest-abelian-quotient}\par
@@ -12381,6 +12854,8 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Dimension of $\operatorname{Hom}_G(V, W)$\dotfill \pageref{thm:dim-hom-g}\par
 \noindent\hangindent=1em Dimension of $\operatorname{Hom}_G(V, W)$ over $\mathbb{R}$ and $\mathbb{C}$\dotfill \pageref{cor:dim-hom-g-real-complex}\par
 \noindent\hangindent=1em Dimension of the Invariants\dotfill \pageref{thm:dim-invariants-character}\par
+\noindent\hangindent=1em $\dim\operatorname{Hom}_G$ Between Sums of Simple Representations\dotfill \pageref{prop:dim-hom-sums-of-simples}\par
+\noindent\hangindent=1em $\dim\operatorname{Hom}_G$ Is Additive in Each Variable\dotfill \pageref{prop:dim-hom-additive}\par
 \noindent\hangindent=1em Direct Products as a Special Case\dotfill \pageref{prop:semidirect-trivial-action-direct}\par
 \noindent\hangindent=1em Direct Sum of a Subspace and Its Orthogonal Complement\dotfill \pageref{prop:orthogonal-complement-direct-sum}\par
 \noindent\hangindent=1em Direct Sums Give Block Diagonal Matrices\dotfill \pageref{prop:direct-sum-block-diagonal}\par
@@ -12462,6 +12937,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Internal and External Semidirect Products Agree\dotfill \pageref{thm:internal-external-semidirect}\par
 \noindent\hangindent=1em Internal Direct Products\dotfill \pageref{lem:internal-direct-product}\par
 \noindent\hangindent=1em Internal Direct Products Are Direct Products\dotfill \pageref{thm:internal-direct-product}\par
+\noindent\hangindent=1em Internal Direct Sums Are External Direct Sums\dotfill \pageref{lem:internal-external-direct-sum}\par
 \noindent\hangindent=1em Intersections in the Grid\dotfill \pageref{lem:jh-grid-intersections}\par
 \noindent\hangindent=1em Intersections of Subgroups\dotfill \pageref{prop:intersections-subgroups}\par
 \noindent\hangindent=1em Invariants Split Off\dotfill \pageref{cor:invariants-split-off}\par
@@ -12469,6 +12945,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Inverse of a Product of $n$ Elements\dotfill \pageref{cor:inverse-product-n-elements}\par
 \noindent\hangindent=1em Invertibility Criterion\dotfill \pageref{prop:invertibility-criterion}\par
 \noindent\hangindent=1em Invertible Matrices Have Independent Columns\dotfill \pageref{lem:invertible-iff-columns-independent}\par
+\noindent\hangindent=1em Isomorphic Representations Have the Same Character\dotfill \pageref{lem:isomorphic-same-character}\par
 \noindent\hangindent=1em Isomorphism Invariants\dotfill \pageref{prop:isomorphism-invariants}\par
 \noindent\hangindent=1em Jordan--H\"older Theorem\dotfill \pageref{thm:jordan-holder}\par
 \noindent\hangindent=1em $K$ Is an Abelian Subgroup of $S_4$\dotfill \pageref{prop:klein-four-group}\par
@@ -12488,10 +12965,12 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Matrices of Finite Order\dotfill \pageref{prop:finite-order-matrix}\par
 \noindent\hangindent=1em Multiplication by a Nonzero Class Permutes the Nonzero Classes Modulo $p$\dotfill \pageref{prop:multiplication-nonzero-class-permutes-nonzero}\par
 \noindent\hangindent=1em Multiplication in the Form $ns$\dotfill \pageref{prop:semidirect-multiplication}\par
+\noindent\hangindent=1em Multiplicities over $\mathbb{C}$\dotfill \pageref{cor:multiplicities-complex}\par
 \noindent\hangindent=1em Multiplying Through Representatives\dotfill \pageref{prop:multiplying-through-representatives}\par
 \noindent\hangindent=1em $N \rtimes_\varphi S$ Is a Group\dotfill \pageref{thm:semidirect-group}\par
 \noindent\hangindent=1em No Bilinear Form on a Complex Space Is Positive Definite\dotfill \pageref{lem:no-positive-definite-complex-bilinear}\par
 \noindent\hangindent=1em No Zero Divisors in a Field\dotfill \pageref{prop:no-zero-divisors-field}\par
+\noindent\hangindent=1em Non-Isomorphic Simple Representations Have Only the Zero Homomorphism\dotfill \pageref{cor:hom-nonisomorphic-simples}\par
 \noindent\hangindent=1em Normal Subgroups Are Unions of Conjugacy Classes\dotfill \pageref{prop:normal-subgroups-unions-conjugacy-classes}\par
 \noindent\hangindent=1em Normal Subgroups of $GL_2(\mathbb{R})$\dotfill \pageref{prop:normal-subgroups-gl2-r}\par
 \noindent\hangindent=1em Normal Subgroups with Trivial Intersection Commute\dotfill \pageref{prop:normal-subgroups-trivial-intersection-commute}\par
@@ -12517,6 +12996,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Primes and Prime Powers\dotfill \pageref{prop:primes-prime-powers-simple}\par
 \noindent\hangindent=1em Products of Two $(1\,j)$'s\dotfill \pageref{lem:products-two-1-j-s}\par
 \noindent\hangindent=1em Proper Subgroups of $A_n$ Have Index at Least $n$\dotfill \pageref{prop:an-subgroup-index}\par
+\noindent\hangindent=1em Properties of Homomorphisms and Isomorphisms of Representations\dotfill \pageref{lem:isomorphism-representations-properties}\par
 \noindent\hangindent=1em Properties of the Commutator Subgroup\dotfill \pageref{prop:properties-commutator-subgroup}\par
 \noindent\hangindent=1em $PSL_n(F)$ Is Simple\dotfill \pageref{thm:psln-f-simple}\par
 \noindent\hangindent=1em $p$-Subgroups and Conjugates of a Sylow Subgroup\dotfill \pageref{prop:p-subgroups-conjugates-sylow}\par
@@ -12531,6 +13011,8 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Rotational Symmetries of the Cube\dotfill \pageref{prop:rotational-symmetries-cube}\par
 \noindent\hangindent=1em $S$ Acts on $N$ by Automorphisms\dotfill \pageref{prop:semidirect-action}\par
 \noindent\hangindent=1em $S_3$ and $S_4$ Are Solvable\dotfill \pageref{prop:s3-s4-solvable}\par
+\noindent\hangindent=1em Schur's Lemma\dotfill \pageref{prop:schur-lemma}\par
+\noindent\hangindent=1em Schur's Lemma over $\mathbb{C}$\dotfill \pageref{prop:schur-complex}\par
 \noindent\hangindent=1em Second Isomorphism Theorem\dotfill \pageref{thm:second-isomorphism-theorem}\par
 \noindent\hangindent=1em Semidirect Products of Solvable Groups Are Solvable\dotfill \pageref{cor:semidirect-solvable}\par
 \noindent\hangindent=1em Sesquilinear Forms on $\mathbb{C}^n$ Are Matrices\dotfill \pageref{prop:sesquilinear-matrix}\par
@@ -12539,6 +13021,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Simple Groups Land in $A_{n_p}$\dotfill \pageref{cor:simple-land-an}\par
 \noindent\hangindent=1em Simple Groups of Order $60$\dotfill \pageref{thm:simple-order-60}\par
 \noindent\hangindent=1em Simple Groups of Order at Most $100$\dotfill \pageref{thm:simple-order-le-100}\par
+\noindent\hangindent=1em Simplicity over $\mathbb{C}$\dotfill \pageref{cor:simple-iff-hom-one-complex}\par
 \noindent\hangindent=1em Size of $A_n$\dotfill \pageref{prop:size-an}\par
 \noindent\hangindent=1em $S_n$ Is Not Simple for $n \geq 3$\dotfill \pageref{cor:sn-not-simple-n-ge-3}\par
 \noindent\hangindent=1em Solvability Is Decided by $N$ and $G/N$\dotfill \pageref{cor:solvable-iff-normal-quotient}\par
@@ -12564,6 +13047,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Average Is Idempotent\dotfill \pageref{prop:averaging-idempotent}\par
 \noindent\hangindent=1em The Bruhat Decomposition\dotfill \pageref{prop:bruhat-decomposition-gln}\par
 \noindent\hangindent=1em The Center Is a Subgroup\dotfill \pageref{prop:center-subgroup}\par
+\noindent\hangindent=1em The Character of an External Direct Sum\dotfill \pageref{prop:character-external-direct-sum}\par
 \noindent\hangindent=1em The Character of $\operatorname{Hom}(V, W)$\dotfill \pageref{prop:character-hom}\par
 \noindent\hangindent=1em The Character of the Dual Representation\dotfill \pageref{prop:character-dual}\par
 \noindent\hangindent=1em The Class Equation\dotfill \pageref{thm:class-equation}\par

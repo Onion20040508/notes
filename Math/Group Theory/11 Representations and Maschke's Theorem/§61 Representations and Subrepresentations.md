@@ -7,7 +7,7 @@ tags: [group-theory, math493]
 ---
 ← [[§60 Groups of Order pq as Semidirect Products]] · ↑ [[· 11 Representations and Maschke's Theorem]] · [[§62 Direct Sums and Maschke's Theorem]] →
 
-*Source: Lecture and Worksheet 13 (Mon Nov 2). Not covered in the Pinter chapters used so far.*
+*Source: Lecture and Worksheet 13 (Mon Nov 2); WS 13.6 was proved on the board on Mon Nov 16. Not covered in the Pinter chapters used so far.*
 
 > [!definition] Definition §61.1: Representation
 > Let $G$ be a group and $k$ a field. A **representation** of $G$ (over $k$) is a $k$-vector space $V$ together with an action of $G$ on $V$ by linear maps. That is, $\star: G \times V \to V$ satisfies, for $g, g_1, g_2 \in G$, $v, v_1, v_2 \in V$ and $c \in k$:
@@ -125,15 +125,12 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 >
 > For example, $(1\,2) \star f_1 = (-1, 1, 0) = -f_1$ and $(1\,2) \star f_2 = (0, 1, -1) = -f_1 + f_2$, so $\rho_{U_2}\big((1\,2)\big) = \left(\begin{smallmatrix} -1 & -1 \\ 0 & 1 \end{smallmatrix}\right)$. All six matrices, in this basis:
 >
-> \begin{center}
-> \renewcommand{\arraystretch}{1.35}\setlength{\tabcolsep}{4pt}
-> \begin{tabular}{c|cccccc}
-> $g$ & $e$ & $(1\,2)$ & $(1\,3)$ & $(2\,3)$ & $(1\,2\,3)$ & $(1\,3\,2)$ \ \hline
-> $\rho_{U_2}(g)$ & $\left(\begin{smallmatrix} 1 & 0 \\ 0 & 1 \end{smallmatrix}\right)$ & $\left(\begin{smallmatrix} -1 & -1 \\ 0 & 1 \end{smallmatrix}\right)$ & $\left(\begin{smallmatrix} 1 & 0 \\ -1 & -1 \end{smallmatrix}\right)$ & $\left(\begin{smallmatrix} 0 & 1 \\ 1 & 0 \end{smallmatrix}\right)$ & $\left(\begin{smallmatrix} -1 & -1 \\ 1 & 0 \end{smallmatrix}\right)$ & $\left(\begin{smallmatrix} 0 & 1 \\ -1 & -1 \end{smallmatrix}\right)$ \\
-> trace & $2$ & $0$ & $0$ & $0$ & $-1$ & $-1$ \\
-> det & $1$ & $-1$ & $-1$ & $-1$ & $1$ & $1$
-> \end{tabular}
-> \end{center}
+> | $g$ | $e$ | $(1\,2)$ | $(1\,3)$ | $(2\,3)$ | $(1\,2\,3)$ | $(1\,3\,2)$ |
+> |---|---|---|---|---|---|---|
+> | $\rho_{U_2}(g)$ | $\left(\begin{smallmatrix} 1 & 0 \\ 0 & 1 \end{smallmatrix}\right)$ | $\left(\begin{smallmatrix} -1 & -1 \\ 0 & 1 \end{smallmatrix}\right)$ | $\left(\begin{smallmatrix} 1 & 0 \\ -1 & -1 \end{smallmatrix}\right)$ | $\left(\begin{smallmatrix} 0 & 1 \\ 1 & 0 \end{smallmatrix}\right)$ | $\left(\begin{smallmatrix} -1 & -1 \\ 1 & 0 \end{smallmatrix}\right)$ | $\left(\begin{smallmatrix} 0 & 1 \\ -1 & -1 \end{smallmatrix}\right)$ |
+> | trace | $2$ | $0$ | $0$ | $0$ | $-1$ | $-1$ |
+> | det | $1$ | $-1$ | $-1$ | $-1$ | $1$ | $1$ |
+>
 > (The table, apart from $(1\,2)$, is not from class; checked by computer.) Other boards used other bases, such as $(1,-1,0), (0,1,-1)$, and got different matrices.
 >
 > *Source: WS 13.4; board 11/2*
@@ -226,14 +223,16 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 > 1. $\operatorname{Ker}\varphi$ is a subrepresentation of $U$;
 > 2. $\operatorname{Im}\varphi$ is a subrepresentation of $V$.
 >
-> *Source: WS 13.6*
+> *Source: WS 13.6; board 11/16*
 
 ^prop-61-4
 
 > [!proof]+ Proof
 > *Idea:* $\varphi$ commutes with the action, so the action carries the kernel and the image into themselves.
 >
-> **(1)** *(The argument of Problem Set 9, Problem 9.3(3), as submitted, with $\varphi$ in place of $\pi$.)* Since $\varphi$ is linear, $\operatorname{Ker}\varphi$ is a subspace of $U$. Let $u \in \operatorname{Ker}\varphi$ and $g \in G$. Then, since $g$ acts linearly,
+> *(Board 11/16, where the proposition was proved for use in WS 17.2.)* That $\varphi$ is a homomorphism of $G$-representations means $g\varphi(u) = \varphi(gu)$ for all $g \in G$ and $u \in U$. A subrepresentation is a subspace that is closed under the action of $G$, and both properties are checked for each of the two sets.
+>
+> **(1)** *(Also the argument of Problem Set 9, Problem 9.3(3), as submitted, with $\varphi$ in place of $\pi$.)* Since $\varphi$ is linear, $\operatorname{Ker}\varphi$ is a subspace of $U$. Let $u \in \operatorname{Ker}\varphi$ and $g \in G$. Then, since $g$ acts linearly,
 >
 > $$
 > \varphi(gu) = g\varphi(u) = g0 = 0,
@@ -241,7 +240,7 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 >
 > so $gu \in \operatorname{Ker}\varphi$. Hence $\operatorname{Ker}\varphi$ is $G$-stable, i.e. a subrepresentation of $U$.
 >
-> **(2)** *(Not from class; filled in.)* Since $\varphi$ is linear, $\operatorname{Im}\varphi$ is a subspace of $V$. Let $v \in \operatorname{Im}\varphi$, say $v = \varphi(u)$ with $u \in U$, and let $g \in G$. Then
+> **(2)** Since $\varphi$ is linear, $\operatorname{Im}\varphi$ is a subspace of $V$. Let $v \in \operatorname{Im}\varphi$, say $v = \varphi(u)$ with $u \in U$, and let $g \in G$. Then
 >
 > $$
 > gv = g\varphi(u) = \varphi(gu) \in \operatorname{Im}\varphi.
@@ -250,3 +249,36 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 > Hence $\operatorname{Im}\varphi$ is $G$-stable, i.e. a subrepresentation of $V$.
 
 ^pf-61-4
+
+> [!remark]- Connections
+> - Quantum Field Theory: for representations of Lie groups and Lie algebras a homomorphism of representations is called an intertwiner, [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|QFT Def. §CB.7.2]], and the same statement is [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-3|QFT Thm. §CB.7.3]].
+> - Used for Schur's Lemma, [[§70 Schur's Lemma and Multiplicities#^prop-70-5|Proposition §70.5]].
+
+> [!theorem] Lemma §61.5: Properties of Homomorphisms and Isomorphisms of Representations
+> Let $U$, $V$, $W$ be representations of a group $G$ over the same field.
+>
+> 1. If $\varphi: U \to V$ and $\psi: V \to W$ are homomorphisms of $G$-representations, then so is $\psi \circ \varphi: U \to W$. If $\varphi$ and $\psi$ are isomorphisms, then so is $\psi \circ \varphi$.
+> 2. If $\varphi: U \to V$ is an isomorphism of $G$-representations, then so is $\varphi^{-1}: V \to U$.
+> 3. Being isomorphic is an equivalence relation on representations of $G$: $U \cong U$; if $U \cong V$, then $V \cong U$; if $U \cong V$ and $V \cong W$, then $U \cong W$.
+> 4. If $U \cong V$ and $U$ is simple (Definition [[§65 Simple Representations#^def-65-1|§65.1]]), then $V$ is simple.
+>
+> *Source: not from class; used in [[§70 Schur's Lemma and Multiplicities|§70]]*
+
+^lem-61-5
+
+> [!proof]+ Proof
+> *(Not from class; filled in.)* **(1)** A composite of linear maps is linear, and for $g \in G$ and $u \in U$
+>
+> $$
+> \psi(\varphi(gu)) = \psi(g\varphi(u)) = g\,\psi(\varphi(u)).
+> $$
+>
+> A composite of invertible maps is invertible.
+>
+> **(2)** The inverse of an invertible linear map is linear. Let $g \in G$ and $v \in V$. Then $\varphi\big(g\varphi^{-1}(v)\big) = g\,\varphi\big(\varphi^{-1}(v)\big) = gv$, and applying $\varphi^{-1}$ to both sides gives $g\varphi^{-1}(v) = \varphi^{-1}(gv)$. So $\varphi^{-1}$ is a homomorphism of $G$-representations, and it is invertible, with inverse $\varphi$.
+>
+> **(3)** The identity $U \to U$ is an isomorphism of $G$-representations, so $U \cong U$. Symmetry is (2), and transitivity is (1).
+>
+> **(4)** Let $\varphi: U \to V$ be an isomorphism. Since $U \neq \{0\}$ and $\varphi$ is injective, $V \neq \{0\}$. Let $V' \subseteq V$ be a subrepresentation. Its preimage $\varphi^{-1}(V') = \{u \in U : \varphi(u) \in V'\}$ is a subspace of $U$, because $\varphi$ is linear, and it is $G$-stable: if $\varphi(u) \in V'$, then $\varphi(gu) = g\varphi(u) \in V'$. So $\varphi^{-1}(V')$ is a subrepresentation of $U$, hence equal to $\{0\}$ or to $U$. Since $\varphi$ is surjective, $V' = \varphi\big(\varphi^{-1}(V')\big)$, which is $\varphi(\{0\}) = \{0\}$ or $\varphi(U) = V$. So $V$ has exactly the two subrepresentations $\{0\}$ and $V$.
+
+^pf-61-5

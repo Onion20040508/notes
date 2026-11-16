@@ -7,7 +7,7 @@ tags: [group-theory, math493]
 ---
 ← [[§67 Characters of Representations]] · ↑ [[· 12 Characters]] · [[§69 Dual Representations]] →
 
-*Source: Lecture and Worksheet 16, *Actions on matrix spaces* (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3–16.5 were not reached in class (the lecture of Fri Nov 13 recalled the statements of WS 16.3 and WS 16.5 without proof); they are stated in the last subsection of this section with proofs that are filled in. Reference: Axler, *Linear Algebra Done Right* (matrices of linear maps, eigenvalues, trace).*
+*Source: Lecture and Worksheet 16, *Actions on matrix spaces* (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3–16.5 were not done in class: the lecture of Fri Nov 13 recalled the statements of WS 16.3 and WS 16.5 without proof, and Problem Set 10 (Problem 10.1) takes up the complex case, WS 16.4–16.5. They are stated in the last subsection of this section with proofs that are filled in. Reference: Axler, *Linear Algebra Done Right* (matrices of linear maps, eigenvalues, trace).*
 
 Theorem [[§66 Invariant Vectors#^thm-66-10|§66.10]] computes the dimension of the invariant vectors of any representation from its character. This section applies it to the representation $\operatorname{Hom}(V, W)$, whose invariant vectors are the homomorphisms of representations $V \to W$. The result is a formula for the number of independent homomorphisms between two representations in terms of their characters. Over $\mathbb{R}$ and $\mathbb{C}$ the formula simplifies, because there $\chi_V(g^{-1})$ is $\chi_V(g)$ or its complex conjugate.
 
@@ -356,7 +356,7 @@ Worksheet 16.2 prints $\operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = (\o
 
 ## Characters at $g^{-1}$ over $\mathbb{R}$ and $\mathbb{C}$
 
-The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3–16.5 were not reached in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof; the proofs in this subsection are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary [[§69 Dual Representations#^cor-69-6|§69.6]]).
+The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3–16.5 were not done in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof, and the complex case (WS 16.4–16.5) became Problem 10.1 of Problem Set 10. The proofs in this subsection are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary [[§69 Dual Representations#^cor-69-6|§69.6]]).
 
 > [!theorem] Proposition §68.8: Real Characters Are Invariant under Inversion
 > Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{R}$. Choose a basis of $V$ in which $G$ acts by orthogonal matrices (Corollary [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-7|§63.7]]). In this basis, for every $g \in G$,
@@ -455,14 +455,14 @@ The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§
 > Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations of $G$ over $k$.
 >
 > 1. If $k = \mathbb{R}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\chi_W(g)$.
-> 2. If $k = \mathbb{C}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\overline{\chi_W(g)}$.
+> 2. If $k = \mathbb{C}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\overline{\chi_W(g)} = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \overline{\chi_V(g)}\,\chi_W(g)$.
 >
-> *Source: WS 16: the simplification announced before WS 16.3; the two formulas are not printed on the worksheet*
+> *Source: WS 16: the simplification announced before WS 16.3; the formulas are printed in the recap at the top of Worksheet 17, over $\mathbb{C}$ in the second form*
 
 ^cor-68-11
 
 > [!proof]+ Proof
-> *(Filled in.)* Both fields contain $\mathbb{Q}$, so Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] applies. Substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]]) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]]).
+> *(Filled in.)* Both fields contain $\mathbb{Q}$, so Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] applies. In the second form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g)\,\chi_W(g^{-1})$, substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]]) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]]). The second form over $\mathbb{C}$ comes in the same way from the first form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g^{-1})\,\chi_W(g)$, with $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
 
 ^pf-68-11
 

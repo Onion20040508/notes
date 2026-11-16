@@ -229,14 +229,13 @@ The Latin square property is visible in the $S_3$ table ([[§10 Cycle Notation a
 
 > [!example] Example §2.3: A Latin Square That Is Not a Group Table
 > A Latin square need not be a group table, since associativity is not encoded row by row. On the set $\{0, 1, 2\}$ define an operation $\ast$ by the table (entry in row $x$, column $y$ is $x \ast y$; it records $x - y$, brought into $\{0, 1, 2\}$ by adding $3$ if negative):
-> \begin{center}
-> \begin{tabular}{c|ccc}
-> $\ast$ & $0$ & $1$ & $2$ \ \hline
-> $0$ & $0$ & $2$ & $1$ \\
-> $1$ & $1$ & $0$ & $2$ \\
-> $2$ & $2$ & $1$ & $0$
-> \end{tabular}
-> \end{center}
+>
+> | $\ast$ | $0$ | $1$ | $2$ |
+> |---|---|---|---|
+> | $0$ | $0$ | $2$ | $1$ |
+> | $1$ | $1$ | $0$ | $2$ |
+> | $2$ | $2$ | $1$ | $0$ |
+>
 > **It is a Latin square:** the rows read $0, 2, 1$; $\ 1, 0, 2$; $\ 2, 1, 0$, and the columns read $0, 1, 2$; $\ 2, 0, 1$; $\ 1, 2, 0$, so each of $0, 1, 2$ appears exactly once in every row and every column.
 >
 > **It is not a group table:** the operation is not associative, since

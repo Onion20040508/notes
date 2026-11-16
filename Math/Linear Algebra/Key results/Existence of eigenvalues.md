@@ -16,6 +16,9 @@ tags: [linear-algebra, hub]
 ## Used in (Linear Algebra)
 - [[§18 Commuting Operators#^ladr-5-78|5.78 Common eigenvector for commuting operators]]
 
+## Used in (Group Theory)
+- [[§70 Schur's Lemma and Multiplicities#^prop-70-8|Proposition §70.8: Schur's Lemma over ℂ]]
+
 ## Connections
 - Consequences: upper-triangular form over $\C$ ([[If F = C, then every operator on V has an upper-triangular matrix]]), Schur's theorem ([[§21 Orthonormal Bases#^ladr-6-38|6.38]]), the complex spectral theorem ([[Complex spectral theorem]]).
 - Real substitute: [[§15 The Minimal Polynomial#^ladr-5-34|Operators on odd-dimensional vector spaces have eigenvalues]] (odd dimensions).
