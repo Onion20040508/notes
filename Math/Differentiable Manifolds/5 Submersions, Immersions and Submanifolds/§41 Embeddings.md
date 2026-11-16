@@ -23,11 +23,11 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ^def-41-1
 
 > [!remark]- Connections
-> - Announced at the end of Lecture 13: [[§40 Immersions#^rem-40-1|Remark: Embeddings — Next Time (§43)]]; the two ways an immersion's image can fail to be a submanifold: [[§40 Immersions#^ex-40-1|Ex. §40.1]], [[§40 Immersions#^ex-40-2|Ex. §40.2]].
+> - Announced at the end of Lecture 13: [[§40 Immersions#^rem-40-1|Remark: Embeddings — Next Time (§40)]]; the two ways an immersion's image can fail to be a submanifold: [[§40 Immersions#^ex-40-1|Ex. §40.1]], [[§40 Immersions#^ex-40-2|Ex. §40.2]].
 > - Homeomorphisms in 590: [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]].
 
 ![[m591-33-1.svg]]
-*An embedding factors through its image as a homeomorphism followed by the inclusion: it puts a copy of $M$ inside $N$. The figure-eight of Lee's Example 4.19 ([[§40 Immersions#Images of Immersions|§43]]) is an injective immersion for which the top arrow is not a homeomorphism.*
+*An embedding factors through its image as a homeomorphism followed by the inclusion: it puts a copy of $M$ inside $N$. The figure-eight of Lee's Example 4.19 ([[§40 Immersions#Images of Immersions|§40]]) is an injective immersion for which the top arrow is not a homeomorphism.*
 
 The standard non-example is the *irrational line on the torus*: for $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$ (the [[Torus|torus]]), $F(t) = [t, \alpha t]$. It is an injective immersion ([[§36 Submersions#^def-36-2|Def. §36.2]]) whose image is dense in $T^2$, and it is not an embedding ([[§41 Embeddings#^prop-41-14|Proposition §41.14]] below, from Assignment 4, Problem 5; Lee, Example 4.20). In lecture its image was also said not to be a regular submanifold of $T^2$ ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]).
 
@@ -475,7 +475,7 @@ Closedness of the image alone is not enough: the image of the figure-eight (Lee'
 
 ## Regular and Immersed Submanifolds
 
-*Not from lecture: the notion announced with [[§37 Regular Submanifolds#^def-37-2|Definition §37.2]].* A regular submanifold carries the subspace topology, and its smooth structure is forced on it by the ambient manifold. The images of the injective immersions seen so far — the figure-eight ([[§40 Immersions#Images of Immersions|§43]]), the irrational line on the torus (Proposition [[§41 Embeddings#^prop-41-14|§41.14]]) — do not fit that definition, but each is a perfectly good manifold in the topology it inherits from its *domain*. Allowing that topology gives the second kind of submanifold.
+*Not from lecture: the notion announced with [[§37 Regular Submanifolds#^def-37-2|Definition §37.2]].* A regular submanifold carries the subspace topology, and its smooth structure is forced on it by the ambient manifold. The images of the injective immersions seen so far — the figure-eight ([[§40 Immersions#Images of Immersions|§40]]), the irrational line on the torus (Proposition [[§41 Embeddings#^prop-41-14|§41.14]]) — do not fit that definition, but each is a perfectly good manifold in the topology it inherits from its *domain*. Allowing that topology gives the second kind of submanifold.
 
 > [!definition] Definition §41.3: Immersed Submanifold
 > Let $N$ be a smooth manifold. An **immersed submanifold** of $N$ is a subset $S \subseteq N$ together with a topology on $S$, in which it is a topological manifold, and a smooth structure on $S$, such that the inclusion $\iota : S \hookrightarrow N$ is a smooth [[§36 Submersions#^def-36-2|immersion]] ([[§36 Submersions#^def-36-2|Definition §36.2]]). The topology need not be the [[§3 Subspaces and Products#^def-3-1|subspace topology]].
