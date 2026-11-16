@@ -35350,13 +35350,13 @@ dx^1 \wedge dx^2, \quad dx^1 \wedge dx^3, \quad dx^1 \wedge dx^4, \quad dx^2 \we
 The six-dimensional space $\Lambda^2 (\mathbb{R}^4)^*$ is the one that appears in Yang--Mills theory: two-forms in four variables. \textit{(Not from lecture.)} The first instance is electromagnetism: the field strength is a two-form on spacetime $\mathbb{R}^4$, and its six components are the three components of the electric field and the three of the magnetic field.
 
 % ============================================================================
-% SECTION: THE WEDGE PRODUCT
+% SECTION: SHUFFLES
 % ============================================================================
-\section{The Wedge Product}\label{sec:wedge-product}
+\section{Shuffles}\label{sec:shuffles}
 
-\roadmark{Stage: forms}{Multiplying a $k$-form and an $l$-form into a $(k + l)$-form, by signed shuffles; bilinear, associative, graded anticommutative.}
+\roadmark{Stage: forms}{The permutations that interleave two ordered piles: one for each choice of the places taken by the first pile, and one in each coset of $S_k \times S_l$.}
 
-\textit{(Lectures 29 and 30.)} The wedge in $dx^i \wedge dx^j$ has been written many times (Definition~\ref{def:dx-wedge-dx}), but as an operation it has not been defined. This section defines it: a product that takes a $k$-form $\alpha$ and an $l$-form $\beta$ on $V$ (Definition~\ref{def:lambda-k}) to a $(k + l)$-form $\alpha \wedge \beta$. The forms of all degrees with this product make up the \emph{Grassmann algebra} of $V$ (Lee: the exterior algebra). It was developed in the 19th century, and brought into its present form, for differential forms, by \'Elie Cartan in the first half of the 20th century. Throughout, $V$ is an $m$-dimensional real vector space and $k, l \ge 0$.
+\textit{(Lectures 29 and 30.)} The wedge in $dx^i \wedge dx^j$ has been written many times (Definition~\ref{def:dx-wedge-dx}), but as an operation it has not been defined. Its definition, in the next section (\ref{sec:wedge-product}), is a signed sum over a particular set of permutations, the shuffles. This section is about them: what they are, how many there are, and how every permutation factors through exactly one of them. Throughout, $k, l \ge 0$.
 
 \begin{defbox}[Shuffles]\deflabel{def:shuffle}
 For $k, l \ge 0$, a \textbf{$(k, l)$-shuffle} is a permutation $\sigma \in S_{k+l}$ (Definition~\ref{def:symmetric-group}) with
@@ -35426,7 +35426,7 @@ Let $S_k \times S_l \subseteq S_{k+l}$ denote the set of permutations $\rho$ wit
 By~(3) the shuffles are a set of representatives for the left cosets $\sigma \circ (S_k \times S_l)$ of the subgroup $S_k \times S_l$, one in each coset. The count agrees: $(k+l)! = \binom{k+l}{k} \cdot k!\, l!$.
 
 \begin{rembox}[Notation of Lecture 30]\label{rem:notation-lecture-30}
-Lecture~30 returned to shuffles and the wedge product with letters different from the ones used here. The dictionary between the board and these notes, in addition to the remark \emph{Notation in This Section} in \ref{sec:multilinear}:
+Lecture~30 returned to shuffles and the wedge product with letters different from the ones used here and in the next two sections. The dictionary between the board and these notes, in addition to the remark \emph{Notation in This Section} in \ref{sec:multilinear}:
 \begin{itemize}[nosep]
 \item \emph{Shuffles and permutations.} The board writes $s$ for a shuffle, $\sigma$ for a general permutation in $S_{k+l}$, and $\lambda \in S_k$, $\tau \in S_l$ for permutations of the two blocks. These notes write $\sigma$ for a shuffle, $\pi$ for a general permutation, and $\tau \in S_k$, $\tau' \in S_l$ (Lemma~\ref{lem:shuffle-factorization}).
 \item \emph{The direct sum.} For $\lambda \in S_k$ and $\tau \in S_l$ the board defines $\lambda \oplus \tau \in S_{k+l}$ by $(\lambda \oplus \tau)(j) = \lambda(j)$ for $1 \le j \le k$ and $(\lambda \oplus \tau)(j) = \tau(j - k) + k$ for $k + 1 \le j \le k + l$. It is the element $\rho$ of $S_k \times S_l$ that acts by $\lambda$ on the first block and by $\tau$ on the second, in the sense of Lemma~\ref{lem:shuffle-factorization}; so the board's factorization $\sigma = s \circ (\lambda \oplus \tau)$ is $\pi = \sigma \circ \rho$ here.
@@ -35508,6 +35508,15 @@ three elements, in agreement with $\binom{3}{1} = 3$. Let $\sigma = (2, 1, 3)$ a
 \]
 so $\sigma' \circ \sigma = (1, 3, 2)$, which is not a shuffle: its values at $2$ and $3$ are $3 > 2$. So $\mathrm{Sh}(1, 2)$ is not closed under composition. The subgroup in the picture is $S_1 \times S_2 = \{(1, 2, 3), (1, 3, 2)\}$, with two elements, and the three shuffles represent its three left cosets (Lemma~\ref{lem:shuffle-factorization}(3)).
 \end{exbox}
+
+% ============================================================================
+% SECTION: THE WEDGE PRODUCT
+% ============================================================================
+\section{The Wedge Product}\label{sec:wedge-product}
+
+\roadmark{Stage: forms}{Multiplying a $k$-form and an $l$-form into a $(k + l)$-form, by a signed sum over shuffles; why the product is alternating; the first cases computed.}
+
+\textit{(Lectures 29 and 30.)} This section defines the wedge product: a product that takes a $k$-form $\alpha$ and an $l$-form $\beta$ on $V$ (Definition~\ref{def:lambda-k}) to a $(k + l)$-form $\alpha \wedge \beta$, by a sum over the shuffles of \ref{sec:shuffles}. The forms of all degrees with this product make up the \emph{Grassmann algebra} of $V$ (Lee: the exterior algebra). It was developed in the 19th century, and brought into its present form, for differential forms, by \'Elie Cartan in the first half of the 20th century. Throughout, $V$ is an $m$-dimensional real vector space and $k, l \ge 0$.
 
 \begin{defbox}[Wedge Product]\deflabel{def:wedge-product}
 Given $\alpha \in \Lambda^k V^*$ and $\beta \in \Lambda^l V^*$ (Definition~\ref{def:lambda-k}), their \textbf{wedge product} is the function $\alpha \wedge \beta : V^{k+l} \to \mathbb{R}$,
@@ -35948,7 +35957,14 @@ with $0, 1, 2, 2, 3, 4$ inversions. For $\alpha, \beta \in \Lambda^2 V^*$, Defin
 \textit{(Not from lecture; figure added.)} The six $(2, 2)$-shuffles of Example~\ref{ex:wedge-two-forms}. In each diagram the top row is the entries $1, 2$ of $\alpha$ (red) and $3, 4$ of $\beta$ (blue), and the strand from $i$ ends at the vector $v^{\sigma(i)}$ that this entry receives. Strands of the same colour never cross, which is the shuffle condition. Each crossing of a red strand with a blue one (black dot) is an inversion of $\sigma$, so the sign of the term is $+$ for an even number of crossings (green) and $-$ for an odd number (red).
 %% <<< END ADDED
 
-Three lemmas prepare the proof of the properties of the wedge product. The first two compute wedge products of one-forms; the third is what associativity needs.
+% ============================================================================
+% SECTION: PROPERTIES OF THE WEDGE PRODUCT
+% ============================================================================
+\section{Properties of the Wedge Product}\label{sec:wedge-properties}
+
+\roadmark{Stage: forms}{The wedge product is bilinear, associative and graded anticommutative; a product of one-forms is a determinant.}
+
+\textit{(Lecture 30, with the proofs filled in.)} The rules for computing with the wedge product of \ref{sec:wedge-product}. Three lemmas prepare the proof of the properties of the wedge product. The first two compute wedge products of one-forms; the third is what associativity needs.
 
 \begin{lembox}[A One-Form Wedge an $l$-Form]\thmlabel{lem:wedge-one-l}
 For $\alpha \in V^*$ and $\beta \in \Lambda^l V^*$,
@@ -36196,7 +36212,7 @@ Next: one more piece of linear algebra, the pullback of forms by a linear map (\
 \textit{(Lecture 31.)} One more piece of linear algebra. Recall the space $\Lambda^k V^*$ of linear $k$-forms on $V$ (Definition~\ref{def:lambda-k}), of dimension $\binom{m}{k}$ with $m = \dim V$ (Proposition~\ref{prop:dim-k-forms}). Throughout this section $V$ and $W$ are real vector spaces of dimensions $m$ and $n$, and $F : V \to W$ is any linear map; the dimensions need not be equal.
 
 \begin{rembox}[Notation of Lecture 31]\label{rem:notation-lecture-31}
-The dictionary between the board and these notes, for this section and the next, in addition to the remarks \emph{Notation in This Section} (\ref{sec:multilinear}) and \emph{Notation of Lecture 30} (\ref{sec:wedge-product}):
+The dictionary between the board and these notes, for this section and the next, in addition to the remarks \emph{Notation in This Section} (\ref{sec:multilinear}) and \emph{Notation of Lecture 30} (\ref{sec:shuffles}):
 \begin{itemize}[nosep]
 \item \emph{Vectors.} The board writes $v_1, \ldots, v_k$; as before, these notes write $v^1, \ldots, v^k$ (label up).
 \item \emph{Dual bases.} $(e_1, \ldots, e_m)$ is a basis of $V$ with dual basis $(\varepsilon^1, \ldots, \varepsilon^m)$ of $V^*$, and $(f_1, \ldots, f_n)$ a basis of $W$ with dual basis $(\phi^1, \ldots, \phi^n)$ of $W^*$. The board's letter for the second dual basis is $\phi$; it is printed $\phi$ here, and $\varphi$ stays reserved for charts, as in \ref{sec:forms-manifolds}, where the board's chart is $\varphi = (x^1, \ldots, x^m)$.
@@ -36781,7 +36797,9 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:stokes-calc3}\ Stokes' theorem in Calculus III & Chapter 16, \emph{Surface Integrals} (Theorem 16.34); the general theorem: \emph{Stokes's Theorem} (Theorem 16.11) \\
 \ref{sec:two-form-integrand}\ The integrand is a two-form & Chapter 14, \emph{The Wedge Product} \\
 \ref{sec:multilinear}\ Multilinear algebra & Chapter 12, \emph{Symmetric and Alternating Tensors}; Chapter 14, \emph{The Algebra of Alternating Tensors} (Lemma 14.1, Lemma 14.7, Proposition 14.8) \\
-\ref{sec:wedge-product}\ The wedge product & Chapter 14, \emph{The Algebra of Alternating Tensors} (alternation, Proposition 14.3) and \emph{The Wedge Product} (Lemma 14.10, Proposition 14.11; the determinant and Alt conventions); Chapter 12, \emph{Multilinear Algebra} (tensor products) \\
+\ref{sec:shuffles}\ Shuffles & not in Lee, who defines the wedge product through the alternation $\mathrm{Alt}$ (Chapter 14, \emph{The Wedge Product}) \\
+\ref{sec:wedge-product}\ The wedge product & Chapter 14, \emph{The Algebra of Alternating Tensors} (alternation, Proposition 14.3) and \emph{The Wedge Product} (the determinant and Alt conventions); Chapter 12, \emph{Multilinear Algebra} (tensor products) \\
+\ref{sec:wedge-properties}\ Properties of the wedge product & Chapter 14, \emph{The Wedge Product} (Lemma 14.10, Proposition 14.11) \\
 \ref{sec:linear-pullback}\ Pullbacks of linear forms & Chapter 12, \emph{Pullbacks of Tensor Fields} (the pullback at a point); Chapter 14, Proposition 14.9 \\
 \ref{sec:forms-manifolds}\ Differential forms on manifolds & Chapter 14, \emph{Differential Forms on Manifolds} (Exercise 14.14, Lemma 14.16, Examples 14.18 and 14.19, Proposition 14.20, Corollary 14.21); Chapter 10, Lemma 10.6 (the vector bundle chart lemma) \\
 \bottomrule

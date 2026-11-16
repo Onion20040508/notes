@@ -95,9 +95,11 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§73 Stokes' Theorem in Calculus III\|§73]] Stokes' theorem in Calculus III | Chapter 16, *Surface Integrals* (Theorem 16.34); the general theorem: *Stokes's Theorem* (Theorem 16.11) |
 | [[§74 The Integrand Is a Two-Form\|§74]] The integrand is a two-form | Chapter 14, *The Wedge Product* |
 | [[§75 Multilinear Algebra\|§75]] Multilinear algebra | Chapter 12, *Symmetric and Alternating Tensors*; Chapter 14, *The Algebra of Alternating Tensors* (Lemma 14.1, Lemma 14.7, Proposition 14.8) |
-| [[§76 The Wedge Product\|§76]] The wedge product | Chapter 14, *The Algebra of Alternating Tensors* (alternation, Proposition 14.3) and *The Wedge Product* (Lemma 14.10, Proposition 14.11; the determinant and Alt conventions); Chapter 12, *Multilinear Algebra* (tensor products) |
-| [[§77 Pullbacks of Linear Forms\|§77]] Pullbacks of linear forms | Chapter 12, *Pullbacks of Tensor Fields* (the pullback at a point); Chapter 14, Proposition 14.9 |
-| [[§78 Differential Forms on Manifolds\|§78]] Differential forms on manifolds | Chapter 14, *Differential Forms on Manifolds* (Exercise 14.14, Lemma 14.16, Examples 14.18 and 14.19, Proposition 14.20, Corollary 14.21); Chapter 10, Lemma 10.6 (the vector bundle chart lemma) |
+| [[§76 Shuffles\|§76]] Shuffles | not in Lee, who defines the wedge product through the alternation $\mathrm{Alt}$ (Chapter 14, *The Wedge Product*) |
+| [[§77 The Wedge Product\|§77]] The wedge product | Chapter 14, *The Algebra of Alternating Tensors* (alternation, Proposition 14.3) and *The Wedge Product* (the determinant and Alt conventions); Chapter 12, *Multilinear Algebra* (tensor products) |
+| [[§78 Properties of the Wedge Product\|§78]] Properties of the wedge product | Chapter 14, *The Wedge Product* (Lemma 14.10, Proposition 14.11) |
+| [[§79 Pullbacks of Linear Forms\|§79]] Pullbacks of linear forms | Chapter 12, *Pullbacks of Tensor Fields* (the pullback at a point); Chapter 14, Proposition 14.9 |
+| [[§80 Differential Forms on Manifolds\|§80]] Differential forms on manifolds | Chapter 14, *Differential Forms on Manifolds* (Exercise 14.14, Lemma 14.16, Examples 14.18 and 14.19, Proposition 14.20, Corollary 14.21); Chapter 10, Lemma 10.6 (the vector bundle chart lemma) |
 
 ## A.4 Index from Lee to these notes
 
@@ -250,7 +252,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 9-6 | [[§70 Complete Vector Fields#^thm-70-4\|Thm. §70.4]], [[§70 Complete Vector Fields#^cor-70-5\|Cor. §70.5]] |
 | Problem 9-18 | [[§72 Lie Derivatives#^ex-72-2\|Ex. §72.2]] |
 | Example 10.3 | [[§46 Examples of Fibrations#^ex-46-2\|Ex. §46.2]] |
-| Lemma 10.6 | [[§78 Differential Forms on Manifolds#^prop-78-3\|Prop. §78.3]] |
+| Lemma 10.6 | [[§80 Differential Forms on Manifolds#^prop-80-3\|Prop. §80.3]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
 | Proposition 11.8 | [[§21 Linear Algebra Toolkit#^prop-21-3\|Prop. §21.3]] |
@@ -261,17 +263,17 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4\|Def. §28.4]], [[§34 The Cotangent Space from Germs#^prop-34-1\|Prop. §34.1]], [[§34 The Cotangent Space from Germs#^prop-34-2\|Prop. §34.2]], [[§34 The Cotangent Space from Germs#^thm-34-4\|Thm. §34.4]] |
 | Exercise 12.17 | [[§75 Multilinear Algebra#^lem-75-1\|Lem. §75.1]] |
 | Lemma 14.1 | [[§75 Multilinear Algebra#^lem-75-2\|Lem. §75.2]] |
-| Proposition 14.3 | [[§76 The Wedge Product#^lem-76-2\|Lem. §76.2]] |
+| Proposition 14.3 | [[§77 The Wedge Product#^lem-77-1\|Lem. §77.1]] |
 | Lemma 14.7 | [[§75 Multilinear Algebra#^lem-75-5\|Lem. §75.5]] |
 | Proposition 14.8 | [[§75 Multilinear Algebra#^prop-75-6\|Prop. §75.6]] |
-| Proposition 14.9 | [[§77 Pullbacks of Linear Forms#^prop-77-3\|Prop. §77.3]] |
-| Proposition 14.11 | [[§76 The Wedge Product#^lem-76-5\|Lem. §76.5]], [[§76 The Wedge Product#^prop-76-7\|Prop. §76.7]] |
-| Exercise 14.14 | [[§78 Differential Forms on Manifolds#^prop-78-3\|Prop. §78.3]] |
-| Lemma 14.16 | [[§77 Pullbacks of Linear Forms#^prop-77-2\|Prop. §77.2]], [[§77 Pullbacks of Linear Forms#^prop-77-4\|Prop. §77.4]], [[§78 Differential Forms on Manifolds#^prop-78-5\|Prop. §78.5]] |
-| Example 14.18 | [[§78 Differential Forms on Manifolds#^ex-78-1\|Ex. §78.1]] |
-| Example 14.19 | [[§78 Differential Forms on Manifolds#^ex-78-2\|Ex. §78.2]] |
-| Proposition 14.20 | [[§77 Pullbacks of Linear Forms#^prop-77-2\|Prop. §77.2]], [[§78 Differential Forms on Manifolds#^cor-78-6\|Cor. §78.6]] |
-| Corollary 14.21 | [[§78 Differential Forms on Manifolds#^cor-78-6\|Cor. §78.6]] |
+| Proposition 14.9 | [[§79 Pullbacks of Linear Forms#^prop-79-3\|Prop. §79.3]] |
+| Proposition 14.11 | [[§78 Properties of the Wedge Product#^lem-78-2\|Lem. §78.2]], [[§78 Properties of the Wedge Product#^prop-78-4\|Prop. §78.4]] |
+| Exercise 14.14 | [[§80 Differential Forms on Manifolds#^prop-80-3\|Prop. §80.3]] |
+| Lemma 14.16 | [[§79 Pullbacks of Linear Forms#^prop-79-2\|Prop. §79.2]], [[§79 Pullbacks of Linear Forms#^prop-79-4\|Prop. §79.4]], [[§80 Differential Forms on Manifolds#^prop-80-5\|Prop. §80.5]] |
+| Example 14.18 | [[§80 Differential Forms on Manifolds#^ex-80-1\|Ex. §80.1]] |
+| Example 14.19 | [[§80 Differential Forms on Manifolds#^ex-80-2\|Ex. §80.2]] |
+| Proposition 14.20 | [[§79 Pullbacks of Linear Forms#^prop-79-2\|Prop. §79.2]], [[§80 Differential Forms on Manifolds#^cor-80-6\|Cor. §80.6]] |
+| Corollary 14.21 | [[§80 Differential Forms on Manifolds#^cor-80-6\|Cor. §80.6]] |
 | Theorem 16.34 | [[§73 Stokes' Theorem in Calculus III#^thm-73-2\|Thm. §73.2]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |
 | Example 19.1 | [[§59 Related Vector Fields#^ex-59-2\|Ex. §59.2]] |

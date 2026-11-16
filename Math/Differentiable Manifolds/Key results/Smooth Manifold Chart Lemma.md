@@ -25,7 +25,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4: The Topology and Smooth Structure of TM]]
 - [[§52 The Cotangent Bundle#^prop-52-2|Proposition §52.2: The Topology and Smooth Structure of T^(ast)M]]
-- [[§78 Differential Forms on Manifolds#^prop-78-3|Proposition §78.3: The Smooth Structure of Lambda^k T^(ast)M]]
+- [[§80 Differential Forms on Manifolds#^prop-80-3|Proposition §80.3: The Smooth Structure of Lambda^k T^(ast)M]]
 
 ## Connections
 - Applied to the tangent bundle in [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4]] and to the cotangent bundle in [[§52 The Cotangent Bundle#^prop-52-2|Proposition §52.2]]; the transition maps it needs are [[§51 The Tangent Bundle#^prop-51-3|§51.3]] and [[§52 The Cotangent Bundle#^prop-52-1|§52.1]].

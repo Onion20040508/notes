@@ -5,7 +5,7 @@ chapter: 11
 section: 75
 tags: [differentiable-manifolds, math591]
 ---
-← [[§74 The Integrand Is a Two-Form]] · ↑ [[· 11 Differential Forms]] · [[§76 The Wedge Product]] →
+← [[§74 The Integrand Is a Two-Form]] · ↑ [[· 11 Differential Forms]] · [[§76 Shuffles]] →
 
 *Stage: forms — Alternating multilinear forms on a vector space: the pointwise objects that differential forms are made of.*
 
@@ -155,7 +155,7 @@ By Lemma [[§75 Multilinear Algebra#^lem-75-1|§75.1]] this is equivalent to Def
 
 ^def-75-2
 
-Sums and scalar multiples of alternating multilinear maps are again alternating and multilinear, so $\Lambda^k V^{\ast}$ is a vector space, a subspace of the space of all functions $V^k \to \mathbb{R}$ *(Lecture 28)*. For $k = 1$ the group $S_1$ has one element and the alternating condition is empty, which is why $\Lambda^1 V^{\ast} = V^{\ast}$. The convention $\Lambda^0 V^{\ast} = \mathbb{R}$ is a useful one: with it the dimension formula of Proposition [[§75 Multilinear Algebra#^prop-75-6|§75.6]] and the wedge product of [[§76 The Wedge Product|§76]] also hold in degree $0$. For $k > m$, $\Lambda^k V^{\ast} = \{0\}$ (Corollary [[§75 Multilinear Algebra#^cor-75-3|§75.3]]); this comes out again from the basis constructed below.
+Sums and scalar multiples of alternating multilinear maps are again alternating and multilinear, so $\Lambda^k V^{\ast}$ is a vector space, a subspace of the space of all functions $V^k \to \mathbb{R}$ *(Lecture 28)*. For $k = 1$ the group $S_1$ has one element and the alternating condition is empty, which is why $\Lambda^1 V^{\ast} = V^{\ast}$. The convention $\Lambda^0 V^{\ast} = \mathbb{R}$ is a useful one: with it the dimension formula of Proposition [[§75 Multilinear Algebra#^prop-75-6|§75.6]] and the wedge product of [[§77 The Wedge Product|§77]] also hold in degree $0$. For $k > m$, $\Lambda^k V^{\ast} = \{0\}$ (Corollary [[§75 Multilinear Algebra#^cor-75-3|§75.3]]); this comes out again from the basis constructed below.
 
 > [!remark] Remark: Notation in This Section
 > The board's notation and the notation of these notes differ in a few places.
