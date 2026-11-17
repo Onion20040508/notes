@@ -5399,7 +5399,7 @@ $\mathsf S = \bar\psi\psi$, $\mathsf P = \bar\psi i\gamma^5\psi$, $\mathsf V^\mu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|§C5a.6.2]] The Matrices σ^μν, Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|§C5a.6.3]] The Sixteen Bilinears; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; reality and the $i$: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|§C5a.6.4]] The Bilinears Are Real; basis of $4\times4$ matrices: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis, Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-14|§CB.19.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
+> - Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|§C5a.6.2]] The Matrices σ^μν, Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-3|§C5a.6.3]] The Sixteen Bilinears; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; reality and the $i$: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|§C5a.6.4]] The Bilinears Are Real; basis of $4\times4$ matrices: Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-8|§C5a.13.8]] Every Product of γ's Reduces to the Standard Basis, Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-14|§CB.19.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
 
 ### [B] The matrix γ⁵
 
@@ -5414,7 +5414,7 @@ $\gamma^5 \equiv i\gamma^0\gamma^1\gamma^2\gamma^3$; the 5 is a label, not a Lor
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|§CB.13.14]] The Matrix γ⁵; properties: Theorem [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|§CB.13.15]] Algebraic Properties of γ⁵ (→ PS5.5(a)–(b)); the ε convention: [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]], [[Larsen PHY 513|register: Levi-Civita]]; commuting with $S^{\mu\nu}$: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-4|§CB.19.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module.
+> - Definition [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|§CB.13.14]] The Matrix γ⁵; properties: Theorem [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|§CB.13.15]] Algebraic Properties of γ⁵ (→ PS5.5(a)–(b)); the ε convention: [[§C5a.13 Gamma-Matrix Technology#^cau-c5a-13-1|§C5a.13, Caution: The sign of the ε trace across sources]], [[Larsen PHY 513|register: Levi-Civita]]; commuting with $S^{\mu\nu}$: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-4|§CB.19.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module.
 
 ### [B] Chirality projectors
 
@@ -5459,7 +5459,7 @@ $\slashed a \equiv \gamma^\mu a_\mu = \gamma^0a_0 + \gamma^ia_i$; the Dirac equa
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Feynman Slash; slash algebra: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|§C5a.14.1]] Slash Algebra; the restricted sense: Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-9|§C5a.12.9]] The Spin Sums Are Covariant.
+> - Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Feynman Slash; slash algebra: Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-1|§C5a.13.1]] Slash Algebra; the restricted sense: Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-9|§C5a.12.9]] The Spin Sums Are Covariant.
 
 ### [B] The free Dirac field and its Lagrangian
 
@@ -5582,7 +5582,7 @@ The unique positive-semidefinite square roots, $\sqrt{p\cdot\sigma} = \sqrt{E - 
 
 ### [B] Helicity of a Dirac spinor
 
-For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname{diag}(\hat{\mathbf p}\cdot\boldsymbol\sigma, \hat{\mathbf p}\cdot\boldsymbol\sigma)$; $h = +\frac12$ is called right-handed, $-\frac12$ left-handed, see Definition [[§C5a.13 Helicity Spinors and the Massless Limit#^def-c5a-13-1|§C5a.13.1]] Helicity of a Dirac Spinor. *Source: Problem Set 5, Problem 6 (statement) · the user's notes Ch. 9 §9.4*
+For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname{diag}(\hat{\mathbf p}\cdot\boldsymbol\sigma, \hat{\mathbf p}\cdot\boldsymbol\sigma)$; $h = +\frac12$ is called right-handed, $-\frac12$ left-handed, see Definition [[§C8.14 Helicity Spinors and the Massless Limit#^def-c8-14-1|§C8.14.1]] Helicity of a Dirac Spinor. *Source: Problem Set 5, Problem 6 (statement) · the user's notes Ch. 9 §9.4*
 
 ^nd-def-c5a-13-1
 
@@ -5592,11 +5592,11 @@ For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1
-> - Definition [[§C5a.13 Helicity Spinors and the Massless Limit#^def-c5a-13-1|§C5a.13.1]] Helicity of a Dirac Spinor; frame dependence: [[§C5a.13 Helicity Spinors and the Massless Limit#^rem-c5a-13-1|§C5a.13, Remark: The helicity of a massive particle depends on the frame]]; helicity becomes chirality: Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-4|§C5a.13.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality.
+> - Definition [[§C8.14 Helicity Spinors and the Massless Limit#^def-c8-14-1|§C8.14.1]] Helicity of a Dirac Spinor; frame dependence: [[§C8.14 Helicity Spinors and the Massless Limit#^rem-c8-14-1|§C8.14, Remark: The helicity of a massive particle depends on the frame]]; helicity becomes chirality: Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-4|§C8.14.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality.
 
 ### [B] Helicity two-spinors
 
-$\xi_\pm(\hat{\mathbf p})$: normalized eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol\sigma$ with eigenvalues $\pm1$, each fixed up to a phase, see Definition [[§C5a.13 Helicity Spinors and the Massless Limit#^def-c5a-13-2|§C5a.13.2]] Helicity Two-Spinors. → their explicit form is drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
+$\xi_\pm(\hat{\mathbf p})$: normalized eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol\sigma$ with eigenvalues $\pm1$, each fixed up to a phase, see Definition [[§C8.14 Helicity Spinors and the Massless Limit#^def-c8-14-2|§C8.14.2]] Helicity Two-Spinors. → their explicit form is drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
 
 ^nd-def-c5a-13-2
 
@@ -5606,7 +5606,7 @@ $\xi_\pm(\hat{\mathbf p})$: normalized eigenvectors of $\hat{\mathbf p}\cdot\bol
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (projectors)
-> - Definition [[§C5a.13 Helicity Spinors and the Massless Limit#^def-c5a-13-2|§C5a.13.2]] Helicity Two-Spinors; [[§C5a.13 Helicity Spinors and the Massless Limit#^cau-c5a-13-1|§C5a.13, Caution: No phase convention is smooth on the whole sphere]]; numbers: step 2 of [[§C5a.13 Helicity Spinors and the Massless Limit#^der-c5a-13-2|Derivation §C5a.13.2]].
+> - Definition [[§C8.14 Helicity Spinors and the Massless Limit#^def-c8-14-2|§C8.14.2]] Helicity Two-Spinors; [[§C8.14 Helicity Spinors and the Massless Limit#^cau-c8-14-1|§C8.14, Caution: No phase convention is smooth on the whole sphere]]; numbers: step 2 of [[§C8.14 Helicity Spinors and the Massless Limit#^der-c8-14-2|Derivation §C8.14.2]].
 
 ### [B] Three different transformations of a spinor
 
@@ -6127,7 +6127,7 @@ The positive-frequency solutions of the left-handed Weyl equation have spin agai
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1, K7
-> - [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]]; Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-4|§C5a.8.4]] Weyl Plane Waves Have Fixed Helicity; helicity becomes chirality: Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-4|§C5a.13.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality; frame dependence: [[§C5a.13 Helicity Spinors and the Massless Limit#^rem-c5a-13-1|§C5a.13, Remark: The helicity of a massive particle depends on the frame]]; the sign of K: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]].
+> - [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]]; Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-4|§C5a.8.4]] Weyl Plane Waves Have Fixed Helicity; helicity becomes chirality: Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-4|§C8.14.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality; frame dependence: [[§C8.14 Helicity Spinors and the Massless Limit#^rem-c8-14-1|§C8.14, Remark: The helicity of a massive particle depends on the frame]]; the sign of K: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]].
 
 ### [B] The Dirac equation keeps its form when ψ and γ change together ★
 
@@ -6575,13 +6575,13 @@ For $m > 0$, $\frac1{2m}\sum_s(u^s\bar u^s - v^s\bar v^s) = \mathbb 1$; $\Lambda
 
 ### [PS] The helicity two-spinors
 
-$\xi_\pm(\hat{\mathbf p})$ in polar angles with the stated phase convention, see Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-1|§C5a.13.1]] The Helicity Two-Spinors. → drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
+$\xi_\pm(\hat{\mathbf p})$ in polar angles with the stated phase convention, see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-1|§C8.14.1]] The Helicity Two-Spinors. → drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
 
 ^nd-thm-c5a-13-1
 
 ### [B] Helicity spinors u± ★
 
-With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqrt{E \mp \lvert\mathbf p\rvert}\,\xi_\pm, \sqrt{E \pm \lvert\mathbf p\rvert}\,\xi_\pm)$, $hu_\pm = \pm\frac12u_\pm$; with $\omega_\lambda = \sqrt{E + \lambda\lvert\mathbf p\rvert}$, $u_\lambda = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$, see Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-2|§C5a.13.2]] Helicity Spinors u±. *Source: Problem Set 5, Problem 6 (context) · Yu (the helicity basis) · the user's notes Ch. 9 §9.4*
+With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqrt{E \mp \lvert\mathbf p\rvert}\,\xi_\pm, \sqrt{E \pm \lvert\mathbf p\rvert}\,\xi_\pm)$, $hu_\pm = \pm\frac12u_\pm$; with $\omega_\lambda = \sqrt{E + \lambda\lvert\mathbf p\rvert}$, $u_\lambda = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$, see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-2|§C8.14.2]] Helicity Spinors u±. *Source: Problem Set 5, Problem 6 (context) · Yu (the helicity basis) · the user's notes Ch. 9 §9.4*
 
 ^nd-thm-c5a-13-2
 
@@ -6593,11 +6593,11 @@ With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqr
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (projectors)
-> - Steps 1–4 of [[§C5a.13 Helicity Spinors and the Massless Limit#^der-c5a-13-2|Derivation §C5a.13.2]]; names: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^cau-c5a-11-2|§C5a.11, Caution: Names for the plane-wave spinors]].
+> - Steps 1–4 of [[§C8.14 Helicity Spinors and the Massless Limit#^der-c8-14-2|Derivation §C8.14.2]]; names: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^cau-c5a-11-2|§C5a.11, Caution: Names for the plane-wave spinors]].
 
 ### [B] The v spinors in the helicity basis ★
 
-With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-\lambda}, -\lambda\omega_{-\lambda}\xi_{-\lambda})$ and $hv_\lambda = -\frac\lambda2v_\lambda$ (Yu's choice), see Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-3|§C5a.13.3]] The v Spinors in the Helicity Basis. *Source: Yu (the helicity basis) · the user's notes Ch. 9*
+With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-\lambda}, -\lambda\omega_{-\lambda}\xi_{-\lambda})$ and $hv_\lambda = -\frac\lambda2v_\lambda$ (Yu's choice), see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-3|§C8.14.3]] The v Spinors in the Helicity Basis. *Source: Yu (the helicity basis) · the user's notes Ch. 9*
 
 ^nd-thm-c5a-13-3
 
@@ -6608,11 +6608,11 @@ With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4
-> - Steps 1–4 of [[§C5a.13 Helicity Spinors and the Massless Limit#^der-c5a-13-3|Derivation §C5a.13.3]]; Lecture 12's choice: Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-5|§C9.6.5]] The Antiparticle Two-Spinors η^s = ξ^{−s}.
+> - Steps 1–4 of [[§C8.14 Helicity Spinors and the Massless Limit#^der-c8-14-3|Derivation §C8.14.3]]; Lecture 12's choice: Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-5|§C9.6.5]] The Antiparticle Two-Spinors η^s = ξ^{−s}.
 
 ### [B] The massless and high-energy limit: helicity becomes chirality ★
 
-At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma^5u_\pm = \pm u_\pm$; for $E \gg m$ the other half is suppressed by $m/2E$, see Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-4|§C5a.13.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality. *Source: PS §3.3 · the user's notes Ch. 9*
+At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma^5u_\pm = \pm u_\pm$; for $E \gg m$ the other half is suppressed by $m/2E$, see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-4|§C8.14.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality. *Source: PS §3.3 · the user's notes Ch. 9*
 
 ^nd-thm-c5a-13-4
 
@@ -6623,11 +6623,11 @@ At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1
-> - Steps 1–4 of [[§C5a.13 Helicity Spinors and the Massless Limit#^der-c5a-13-4|Derivation §C5a.13.4]]; [[§C5a.13 Helicity Spinors and the Massless Limit#^rem-c5a-13-2|§C5a.13, Remark: The mass is what connects the two chiral blocks]]; why "left-handed": [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]].
+> - Steps 1–4 of [[§C8.14 Helicity Spinors and the Massless Limit#^der-c8-14-4|Derivation §C8.14.4]]; [[§C8.14 Helicity Spinors and the Massless Limit#^rem-c8-14-2|§C8.14, Remark: The mass is what connects the two chiral blocks]]; why "left-handed": [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]].
 
 ### [B] Slash algebra ★
 
-$\gamma^\mu\slashed a = 2a^\mu - \slashed a\gamma^\mu$, $\slashed a\slashed b + \slashed b\slashed a = 2a\cdot b$, $\slashed a\slashed b = a\cdot b - i\sigma^{\mu\nu}a_\mu b_\nu$, see Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|§C5a.14.1]] Slash Algebra. *Source: the user's notes Ch. 9 §9.6 · Problem Set 5*
+$\gamma^\mu\slashed a = 2a^\mu - \slashed a\gamma^\mu$, $\slashed a\slashed b + \slashed b\slashed a = 2a\cdot b$, $\slashed a\slashed b = a\cdot b - i\sigma^{\mu\nu}a_\mu b_\nu$, see Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-1|§C5a.13.1]] Slash Algebra. *Source: the user's notes Ch. 9 §9.6 · Problem Set 5*
 
 ^nd-thm-c5a-14-1
 
@@ -6638,17 +6638,17 @@ $\gamma^\mu\slashed a = 2a^\mu - \slashed a\gamma^\mu$, $\slashed a\slashed b + 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-1|Derivation §C5a.14.1]]; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]].
+> - [[§C5a.13 Gamma-Matrix Technology#^der-c5a-13-1|Derivation §C5a.13.1]]; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]].
 
 ### [PS] Contraction identities, γ⁵ identities, Gordon
 
-$\gamma_\mu\gamma^\mu = 4$ etc. (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|§C5a.14.2]] Contraction Identities) → drilled as [[PHY 513 PS Drill#^ps5-2|PS5.2]] and [[PHY 513 PS Drill#^ps7-1-c|PS7.1(c)]]; properties of $\gamma^5$ (Theorem [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|§CB.13.15]] Algebraic Properties of γ⁵) → drilled as [[PHY 513 PS Drill#^ps5-5-a|PS5.5(a)]], [[PHY 513 PS Drill#^ps5-5-b|PS5.5(b)]]; $\gamma^5$ as the antisymmetric product and duality (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|§C5a.14.6]] The Antisymmetric Product of Three γ's, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-7|§C5a.14.7]] γ⁵ Dualizes σ^μν) → drilled as [[PHY 513 PS Drill#^ps5-5-c|PS5.5(c)]], [[PHY 513 PS Drill#^ps5-5-d|PS5.5(d)]]; the Gordon identity (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|§C5a.14.9]] The Gordon Identity) → drilled as [[PHY 513 PS Drill#^ps5-3|PS5.3]].
+$\gamma_\mu\gamma^\mu = 4$ etc. (Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-2|§C5a.13.2]] Contraction Identities) → drilled as [[PHY 513 PS Drill#^ps5-2|PS5.2]] and [[PHY 513 PS Drill#^ps7-1-c|PS7.1(c)]]; properties of $\gamma^5$ (Theorem [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|§CB.13.15]] Algebraic Properties of γ⁵) → drilled as [[PHY 513 PS Drill#^ps5-5-a|PS5.5(a)]], [[PHY 513 PS Drill#^ps5-5-b|PS5.5(b)]]; $\gamma^5$ as the antisymmetric product and duality (Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-5|§C5a.13.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-6|§C5a.13.6]] The Antisymmetric Product of Three γ's, Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-7|§C5a.13.7]] γ⁵ Dualizes σ^μν) → drilled as [[PHY 513 PS Drill#^ps5-5-c|PS5.5(c)]], [[PHY 513 PS Drill#^ps5-5-d|PS5.5(d)]]; the Gordon identity (Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-9|§C5a.13.9]] The Gordon Identity) → drilled as [[PHY 513 PS Drill#^ps5-3|PS5.3]].
 
 ^nd-thm-c5a-14-2
 
 ### [B] Traces of γ matrices ★
 
-$\operatorname{tr}\mathbb 1 = 4$; traces of an odd number of $\gamma$'s vanish; $\operatorname{tr}(\gamma^\mu\gamma^\nu) = 4g^{\mu\nu}$; $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma) = 4(g^{\mu\nu}g^{\rho\sigma} - g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\nu\rho})$, see Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|§C5a.14.3]] Traces of γ Matrices. *Source: Lecture 9, slide "Solution of The Dirac Equation: Step 2" ($\operatorname{tr}(\gamma^\mu p_\mu) = 0$) · Yu §7.1, §8.2.2 · PS §5.1 (statements)*
+$\operatorname{tr}\mathbb 1 = 4$; traces of an odd number of $\gamma$'s vanish; $\operatorname{tr}(\gamma^\mu\gamma^\nu) = 4g^{\mu\nu}$; $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma) = 4(g^{\mu\nu}g^{\rho\sigma} - g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\nu\rho})$, see Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|§C5a.13.3]] Traces of γ Matrices. *Source: Lecture 9, slide "Solution of The Dirac Equation: Step 2" ($\operatorname{tr}(\gamma^\mu p_\mu) = 0$) · Yu §7.1, §8.2.2 · PS §5.1 (statements)*
 
 ^nd-thm-c5a-14-3
 
@@ -6660,11 +6660,11 @@ $\operatorname{tr}\mathbb 1 = 4$; traces of an odd number of $\gamma$'s vanish; 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5 (traces)
-> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-3|Derivation §C5a.14.3]]; basis independence: Theorem [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-16|§CB.0.16]] Trace, Determinant and Eigenvalues Do Not Depend on the Basis.
+> - [[§C5a.13 Gamma-Matrix Technology#^der-c5a-13-3|Derivation §C5a.13.3]]; basis independence: Theorem [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-16|§CB.0.16]] Trace, Determinant and Eigenvalues Do Not Depend on the Basis.
 
 ### [B] Traces with γ⁵ ★
 
-$\operatorname{tr}\gamma^5 = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5) = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\varepsilon^{\mu\nu\rho\sigma}$ with $\varepsilon^{0123} = +1$; convention-free $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$, see Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-4|§C5a.14.4]] Traces with γ⁵. *Source: Yu §8.2.2 · PS §5.1 (statements)*
+$\operatorname{tr}\gamma^5 = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5) = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\varepsilon^{\mu\nu\rho\sigma}$ with $\varepsilon^{0123} = +1$; convention-free $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$, see Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-4|§C5a.13.4]] Traces with γ⁵. *Source: Yu §8.2.2 · PS §5.1 (statements)*
 
 ^nd-thm-c5a-14-4
 
@@ -6675,11 +6675,11 @@ $\operatorname{tr}\gamma^5 = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-4|Derivation §C5a.14.4]]; [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]]; [[Larsen PHY 513|register: Levi-Civita]].
+> - [[§C5a.13 Gamma-Matrix Technology#^der-c5a-13-4|Derivation §C5a.13.4]]; [[§C5a.13 Gamma-Matrix Technology#^cau-c5a-13-1|§C5a.13, Caution: The sign of the ε trace across sources]]; [[Larsen PHY 513|register: Levi-Civita]].
 
 ### [B] Every product of γ's reduces to the standard basis ★
 
-A product of $n$ $\gamma$'s is a unique combination, with coefficients from $g$ and $\varepsilon$, of $\mathbb 1$, $\gamma^\mu$, $\sigma^{\mu\nu}$, $\gamma^\mu\gamma^5$, $\gamma^5$, only of the parity of $n$, see Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis. *Source: Problem Set 5, Problem 5 (closing paragraph of the statement) · the user's notes Ch. 9 §9.6*
+A product of $n$ $\gamma$'s is a unique combination, with coefficients from $g$ and $\varepsilon$, of $\mathbb 1$, $\gamma^\mu$, $\sigma^{\mu\nu}$, $\gamma^\mu\gamma^5$, $\gamma^5$, only of the parity of $n$, see Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-8|§C5a.13.8]] Every Product of γ's Reduces to the Standard Basis. *Source: Problem Set 5, Problem 5 (closing paragraph of the statement) · the user's notes Ch. 9 §9.6*
 
 ^nd-thm-c5a-14-8
 
@@ -6690,7 +6690,7 @@ A product of $n$ $\gamma$'s is a unique combination, with coefficients from $g$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-8|Derivation §C5a.14.8]]; three and four: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|§C5a.14.6]] The Antisymmetric Product of Three γ's; basis: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-14|§CB.19.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
+> - [[§C5a.13 Gamma-Matrix Technology#^der-c5a-13-8|Derivation §C5a.13.8]]; three and four: Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-5|§C5a.13.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-6|§C5a.13.6]] The Antisymmetric Product of Three γ's; basis: Theorem [[§CB.19 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-19-14|§CB.19.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
 
 # T9. Quantization of the Dirac field
 
@@ -8923,7 +8923,7 @@ $e^{-i\eta S^{03}}$; $\operatorname{diag}(\cosh\frac\eta2 - \sinh\frac\eta2\sigm
 
 ### [B] Four forms of γ⁵
 
-$\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$; in the chiral basis $\operatorname{diag}(-\mathbb 1, \mathbb 1)$; $-\frac i{24}\varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$; on the Dirac representation $\frac43(\mathbf J_-^2 - \mathbf J_+^2)$, see Definition [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|§CB.13.14]] The Matrix γ⁵, Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product.
+$\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$; in the chiral basis $\operatorname{diag}(-\mathbb 1, \mathbb 1)$; $-\frac i{24}\varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$; on the Dirac representation $\frac43(\mathbf J_-^2 - \mathbf J_+^2)$, see Definition [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-13-14|§CB.13.14]] The Matrix γ⁵, Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-5|§C5a.13.5]] γ⁵ as a Totally Antisymmetric Product.
 
 ^nd-eq-t8-7
 
@@ -8934,7 +8934,7 @@ $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$; in the chiral basis $\operatorna
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5, K16
-> - Steps 1–2 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-2|Derivation §C5a.5.2]]; Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product; ε convention: [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]].
+> - Steps 1–2 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-2|Derivation §C5a.5.2]]; Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-5|§C5a.13.5]] γ⁵ as a Totally Antisymmetric Product; ε convention: [[§C5a.13 Gamma-Matrix Technology#^cau-c5a-13-1|§C5a.13, Caution: The sign of the ε trace across sources]].
 
 ### [B] Spin sums blockwise and by covariance
 

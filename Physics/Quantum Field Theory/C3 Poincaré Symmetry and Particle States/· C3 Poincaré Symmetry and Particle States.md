@@ -79,10 +79,10 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|§C3.7.1]] The Massless Little Group Is ISO(2)
 - [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-2|§C3.7.2]] Generators of the Massless Little Group
 - [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-3|§C3.7.3]] Nonzero Translation Eigenvalues Come in Circles
-- [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-5|§C3.7.5]] Helicity Is Lorentz Invariant
-- [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-6|§C3.7.6]] Helicity Is Quantized
-- [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-7|§C3.7.7]] The Pauli–Lubanski Vector of a Massless Particle
-- [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-8|§C3.7.8]] Little-Group Translations Shift a Polarization Vector by the Momentum
+- [[§C8.12 Helicity of Particle States#^thm-c8-12-1|§C8.12.1]] Helicity Is Lorentz Invariant
+- [[§C8.12 Helicity of Particle States#^thm-c8-12-2|§C8.12.2]] Helicity Is Quantized
+- [[§C8.12 Helicity of Particle States#^thm-c8-12-3|§C8.12.3]] The Pauli–Lubanski Vector of a Massless Particle
+- [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-5|§C3.7.5]] Little-Group Translations Shift a Polarization Vector by the Momentum
 
 ## Models
 - [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|§C3.4.4]] A Relativistic Quantum Theory

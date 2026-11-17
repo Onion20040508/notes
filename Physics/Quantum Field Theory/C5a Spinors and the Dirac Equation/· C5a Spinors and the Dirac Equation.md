@@ -25,8 +25,8 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost]] — PS 3.3; Yu 5.4.1, 5.4.2; 513 notes Ch. 9
 - [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates]] — PS 3.3; Yu 5.4.2; 513 notes Ch. 9
 - [[§C5a.12 Normalization and Spin Sums]] — PS 3.3; Yu 5.4.2; 513 notes Ch. 9
-- [[§C5a.13 Helicity Spinors and the Massless Limit]] — PS 3.3; Yu 5.4.2; 513 notes Ch. 7, 9
-- [[§C5a.14 Gamma-Matrix Technology]] — PS 3.4; Yu 7.1, 8.2.2; 513 notes Ch. 9
+- [[§C8.14 Helicity Spinors and the Massless Limit]] — PS 3.3; Yu 5.4.2; 513 notes Ch. 7, 9
+- [[§C5a.13 Gamma-Matrix Technology]] — PS 3.4; Yu 7.1, 8.2.2; 513 notes Ch. 9
 
 ## Laws
 - [[§C5a.7 The Dirac Equation and Its Lagrangian#^law-c5a-7-9|§C5a.7.9]] The Positron: the Electron Has an Antiparticle
@@ -107,19 +107,19 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|§C5a.12.8]] The Spin Sum over v
 - [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-9|§C5a.12.9]] The Spin Sums Are Covariant
 - [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-10|§C5a.12.10]] Completeness and the Energy Projectors
-- [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-1|§C5a.13.1]] The Helicity Two-Spinors
-- [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-2|§C5a.13.2]] Helicity Spinors u±
-- [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-3|§C5a.13.3]] The v Spinors in the Helicity Basis
-- [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-4|§C5a.13.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality
-- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|§C5a.14.1]] Slash Algebra
-- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|§C5a.14.2]] Contraction Identities
-- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|§C5a.14.3]] Traces of γ Matrices
-- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-4|§C5a.14.4]] Traces with γ⁵
-- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product
-- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|§C5a.14.6]] The Antisymmetric Product of Three γ's
-- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-7|§C5a.14.7]] γ⁵ Dualizes σ^μν
-- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis
-- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|§C5a.14.9]] The Gordon Identity
+- [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-1|§C8.14.1]] The Helicity Two-Spinors
+- [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-2|§C8.14.2]] Helicity Spinors u±
+- [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-3|§C8.14.3]] The v Spinors in the Helicity Basis
+- [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-4|§C8.14.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality
+- [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-1|§C5a.13.1]] Slash Algebra
+- [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-2|§C5a.13.2]] Contraction Identities
+- [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|§C5a.13.3]] Traces of γ Matrices
+- [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-4|§C5a.13.4]] Traces with γ⁵
+- [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-5|§C5a.13.5]] γ⁵ as a Totally Antisymmetric Product
+- [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-6|§C5a.13.6]] The Antisymmetric Product of Three γ's
+- [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-7|§C5a.13.7]] γ⁵ Dualizes σ^μν
+- [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-8|§C5a.13.8]] Every Product of γ's Reduces to the Standard Basis
+- [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-9|§C5a.13.9]] The Gordon Identity
 
 ## Models
 - [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|§C5a.7.3]] The Free Dirac Field

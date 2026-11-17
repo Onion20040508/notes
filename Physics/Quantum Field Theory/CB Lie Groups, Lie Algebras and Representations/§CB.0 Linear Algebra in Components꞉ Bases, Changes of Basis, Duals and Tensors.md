@@ -355,7 +355,7 @@ The real case again, for a tensor moved by an invertible $\Lambda$ rather than r
 > **3. Characteristic polynomial.** $z\mathbb 1 - UMU^{-1} = U(z\mathbb 1 - M)U^{-1}$, because $U(z\mathbb 1)U^{-1} = z\mathbb 1$. Step 2 gives $\det(z\mathbb 1 - M') = \det(z\mathbb 1 - M)$. Its zeros, with multiplicities, are the eigenvalues (LADR Def. 9.63).
 >
 > **What the derivation shows**
-> - Every statement of the form "$\operatorname{tr}(\gamma^\mu\gamma^\nu) = 4g^{\mu\nu}$" or "$\gamma^5$ has eigenvalues $\pm1$" is a statement about operators on $V$ and can be checked in any one basis ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]]).
+> - Every statement of the form "$\operatorname{tr}(\gamma^\mu\gamma^\nu) = 4g^{\mu\nu}$" or "$\gamma^5$ has eigenvalues $\pm1$" is a statement about operators on $V$ and can be checked in any one basis ([[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|Theorem §C5a.13.3]]).
 > - Statements about individual entries ("$\gamma^0$ is off-diagonal", "the upper two components") are not of this kind.
 
 ^der-cb-0-16

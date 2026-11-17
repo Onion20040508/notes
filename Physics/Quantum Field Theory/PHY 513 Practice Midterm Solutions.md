@@ -20,8 +20,8 @@ Solutions to [[PHY 513 Practice Midterm]] (Part I) and to [[PHY 513 Practice Mid
 > [!success]- Answers
 > 1. (a) $[G] = M^{-2}$ ($[\psi] = M^{3/2}$, so $[(\bar\psi\psi)^2] = M^6$ and $[G] = 4 - 6$; irrelevant); $[\kappa] = M^1$ ($4 - 3$; relevant). [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]], [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-3|Theorem §C1b.3.3]].
 > 2. (b) $\partial_\mu\partial^\mu\phi + m^2\phi + \dfrac{\lambda}{3!}\phi^3 = 0$ (from $\partial\mathcal L/\partial\phi = -m^2\phi - \frac{4\lambda}{4!}\phi^3$). [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]; the cubic case is [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-2|Example §C1b.2.2]].
-> 3. (c) $\gamma_\mu\slashed p\slashed q\gamma^\mu = 4\,p\cdot q$ (times $\mathbb 1_4$). [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]].
-> 4. (d) $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\,\varepsilon^{\mu\nu\rho\sigma}$ with $\varepsilon^{0123} = +1$; convention-free check: $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = \operatorname{tr}(-i\gamma^5\gamma^5) = -4i$. [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-4|Theorem §C5a.14.4]]; Peskin–Schroeder's sign: [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]].
+> 3. (c) $\gamma_\mu\slashed p\slashed q\gamma^\mu = 4\,p\cdot q$ (times $\mathbb 1_4$). [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-2|Theorem §C5a.13.2]].
+> 4. (d) $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\,\varepsilon^{\mu\nu\rho\sigma}$ with $\varepsilon^{0123} = +1$; convention-free check: $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = \operatorname{tr}(-i\gamma^5\gamma^5) = -4i$. [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-4|Theorem §C5a.13.4]]; Peskin–Schroeder's sign: [[§C5a.13 Gamma-Matrix Technology#^cau-c5a-13-1|§C5a.13, Caution: The sign of the ε trace across sources]].
 > 5. (e) $F^{\mu\nu}$: $(1, 0)\oplus(0, 1)$; Dirac spinor: $(\frac12, 0)\oplus(0, \frac12)$; $\dim(1, 1) = (2\cdot1 + 1)^2 = 9$. [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]].
 > 6. (f) $\varepsilon_{0123} = -1$; $\varepsilon^{2301} = +1$ (two exchanges, $0\leftrightarrow2$ and $1\leftrightarrow3$); $\varepsilon^{0321} = -1$ (one exchange, $1\leftrightarrow3$). [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-17|Def. §CB.0.17]], [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]].
 > 7. (g) $\tilde D_A(p) = \dfrac{i}{(p^0 - i\varepsilon)^2 - E_{\mathbf p}^2}$: both poles moved up to $\pm E_{\mathbf p} + i\varepsilon$, so the contour passes **below both poles**. [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-7|Theorem §C2b.6.7]].
@@ -245,7 +245,7 @@ Solutions to [[PHY 513 Practice Midterm]] (Part I) and to [[PHY 513 Practice Mid
 >
 > **Check.** $k = p = q$: left $\gamma_\mu\slashed k\slashed k\slashed k\gamma^\mu = k^2\gamma_\mu\slashed k\gamma^\mu = -2k^2\slashed k$; right $-2\slashed k^3 = -2k^2\slashed k$.
 >
-> *Checked against:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]] (fourth identity; its derivation moves $\gamma^\mu$ through one slash at a time, and keeps the user's Problem Set 5, Problem 2 as the second route); [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]] (slash algebra).
+> *Checked against:* [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-2|Theorem §C5a.13.2]] (fourth identity; its derivation moves $\gamma^\mu$ through one slash at a time, and keeps the user's Problem Set 5, Problem 2 as the second route); [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-1|Theorem §C5a.13.1]] (slash algebra).
 
 ^sol-pm-5-a
 
@@ -265,7 +265,7 @@ Solutions to [[PHY 513 Practice Midterm]] (Part I) and to [[PHY 513 Practice Mid
 >
 > **Step 4** (forward limit). $p' = p$, $q = 0$, spins $r$, $s$: $\bar v^r(p)\gamma^\mu v^s(p) = -\frac{2p^\mu}{2m}\bar v^r(p)v^s(p) = -\frac{p^\mu}{m}(-2m\delta^{rs}) = 2p^\mu\delta^{rs}$. At $\mu = 0$: $\bar v\gamma^0v = v^\dagger\gamma^0\gamma^0v = v^\dagger v = 2E_{\mathbf p}\delta^{rs}$, consistent.
 >
-> *Derived here; check:* the $u$-spinor route [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]] (its derivation, step for step, with $\slashed pu = mu$ replaced by $\slashed pv = -mv$, i.e. $m \to -m$); the conjugate equation $\bar v\slashed p = -m\bar v$ is [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-4|Theorem §C5a.11.4]], 2; the normalizations [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|Theorem §C5a.12.3]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-4|Theorem §C5a.12.4]]. The identity was also checked numerically (explicit chiral-basis $v(p)$, $v(p')$ for random momenta, all four $\mu$).
+> *Derived here; check:* the $u$-spinor route [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-9|Theorem §C5a.13.9]] (its derivation, step for step, with $\slashed pu = mu$ replaced by $\slashed pv = -mv$, i.e. $m \to -m$); the conjugate equation $\bar v\slashed p = -m\bar v$ is [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-4|Theorem §C5a.11.4]], 2; the normalizations [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|Theorem §C5a.12.3]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-4|Theorem §C5a.12.4]]. The identity was also checked numerically (explicit chiral-basis $v(p)$, $v(p')$ for random momenta, all four $\mu$).
 
 ^sol-pm-5-b
 
@@ -1652,7 +1652,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (checks). $d = 4$ gives the four-dimensional identities. Numerically (numpy) verified in $d = 2$ ($\gamma^0 = \sigma^1$, $\gamma^1 = i\sigma^2$), $d = 3$ ($\gamma^0 = \sigma^3$, $\gamma^{1,2} = i\sigma^{1,2}$) and $d = 4$ (chiral basis), for random vectors.
 >
-> *Derived here; check:* reduces at $d = 4$ to [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]] (its derivation, step 1, notes $\gamma_\mu\gamma^\mu = d$ as a by-product; the steps are those of its covariant route), with the moving rule of [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]]; drill: [[PHY 513 PS Drill#^ps5-2-a|PS Drill, PS5.2(a)]], Q3, and [[PHY 513 PS Drill#^ps5-2-b|PS Drill, PS5.2(b)]], Q4.
+> *Derived here; check:* reduces at $d = 4$ to [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-2|Theorem §C5a.13.2]] (its derivation, step 1, notes $\gamma_\mu\gamma^\mu = d$ as a by-product; the steps are those of its covariant route), with the moving rule of [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-1|Theorem §C5a.13.1]]; drill: [[PHY 513 PS Drill#^ps5-2-a|PS Drill, PS5.2(a)]], Q3, and [[PHY 513 PS Drill#^ps5-2-b|PS Drill, PS5.2(b)]], Q4.
 
 ^sol-px-5-2-1
 
@@ -1674,7 +1674,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 3** (reading). Compared with $\gamma_\mu\gamma^\nu\gamma^\mu = -2\gamma^\nu$, the extra $\gamma^5$ costs one sign. Both steps use $\{\gamma^5, \gamma^\mu\} = 0$, a four-dimensional statement ($\gamma^5$ is the product of all four $\gamma$'s). Both identities verified numerically (numpy, chiral basis).
 >
-> *Derived here; check:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]] (the free-index form $\gamma_\mu\gamma^\nu\gamma^\mu = -2\gamma^\nu$ and $\gamma_\mu\gamma^\mu = 4$) and [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|Theorem §CB.13.15]] (anticommutation of $\gamma^5$).
+> *Derived here; check:* [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-2|Theorem §C5a.13.2]] (the free-index form $\gamma_\mu\gamma^\nu\gamma^\mu = -2\gamma^\nu$ and $\gamma_\mu\gamma^\mu = 4$) and [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|Theorem §CB.13.15]] (anticommutation of $\gamma^5$).
 
 ^sol-px-5-2-2
 
@@ -1698,7 +1698,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (check). For $q = p$ on shell, $p^2 = m^2$: $-8m^2 - 16m^2 = -24m^2$; direct: $(\slashed p + m)\gamma^\mu(\slashed p - m)\gamma_\mu = (\slashed p + m)(-2\slashed p - 4m) = -2m^2 - 6m\slashed p - 4m^2$, trace $-24m^2$. All three traces verified numerically (numpy, random vectors, $m = 1.3$).
 >
-> *Checked against:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]] (first two traces, $\operatorname{tr}\mathbb 1 = 4$), [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]] (contractions); the third trace is assembled here from these two boxes.
+> *Checked against:* [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|Theorem §C5a.13.3]] (first two traces, $\operatorname{tr}\mathbb 1 = 4$), [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-2|Theorem §C5a.13.2]] (contractions); the third trace is assembled here from these two boxes.
 
 ^sol-px-5-2-3
 
@@ -1720,7 +1720,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (reading). $\bar uu = 2m$ is a scalar, $u^\dagger u = 2E_{\mathbf p}$ is the time component of the four-vector $\bar u\gamma^\mu u = 2p^\mu$: its frame dependence is that of $p^0$. A single plane wave carries the current $\propto p^\mu$, pure convection. (Verified numerically for all $r, s, \mu$ at a random $\mathbf p$.)
 >
-> *Checked against:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|Theorem §C5a.12.2]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]], and [[§C5a.12 Normalization and Spin Sums#^rem-c5a-12-1|§C5a.12, Remark: Why u†u depends on the frame and ūu does not]] (which states this result).
+> *Checked against:* [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-9|Theorem §C5a.13.9]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|Theorem §C5a.12.2]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]], and [[§C5a.12 Normalization and Spin Sums#^rem-c5a-12-1|§C5a.12, Remark: Why u†u depends on the frame and ūu does not]] (which states this result).
 
 ^sol-px-5-3-1
 
@@ -1750,7 +1750,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (subtract). $\slashed p'\gamma^\mu - \gamma^\mu\slashed p = p'^\mu - p^\mu + i\sigma^{\mu\nu}p'_\nu + i\sigma^{\mu\nu}p_\nu = q^\mu + i\sigma^{\mu\nu}(p + p')_\nu$. Inserting into Step 2 gives the answer. Compared with the vector identity, $(p + p')^\mu$ and $q_\nu$ have exchanged places. Verified numerically (numpy, chiral basis) for random on-shell $p$, $p'$, all four spin pairs and all $\mu$ ($m = 1.3$).
 >
-> *Derived here; check:* the steps of the first route of [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]] (its derivation, steps 1–4) with one anticommutation of $\gamma^5$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|Theorem §CB.13.15]]); the split $\gamma^\mu\gamma^\nu = g^{\mu\nu} - i\sigma^{\mu\nu}$ is [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]]; the conjugate condition is [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-2|Theorem §C5a.11.2]]; $\sigma^{\mu\nu}$ normalization: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]].
+> *Derived here; check:* the steps of the first route of [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-9|Theorem §C5a.13.9]] (its derivation, steps 1–4) with one anticommutation of $\gamma^5$ ([[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|Theorem §CB.13.15]]); the split $\gamma^\mu\gamma^\nu = g^{\mu\nu} - i\sigma^{\mu\nu}$ is [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-1|Theorem §C5a.13.1]]; the conjugate condition is [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-2|Theorem §C5a.11.2]]; $\sigma^{\mu\nu}$ normalization: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]].
 
 ^sol-px-5-3-2
 
@@ -1844,7 +1844,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (convention-free value). From $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$, multiplying by $-i$: $\gamma^0\gamma^1\gamma^2\gamma^3 = -i\gamma^5$, so $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -i\operatorname{tr}((\gamma^5)^2) = -4i$, whatever sign is given to $\varepsilon^{0123}$. With $\varepsilon^{0123} = +1$ Step 2 gives the same $-4i$; with Peskin–Schroeder's stated $\varepsilon^{0123} = -1$ the covariant formula would read $+4i\varepsilon^{\kappa\lambda\mu\nu}$. (All 256 index combinations verified numerically.)
 >
-> *Checked against:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-4|Theorem §C5a.14.4]] (the result and its derivation, steps 3–6), [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|Theorem §C5a.14.5]] (the antisymmetrized product), [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]].
+> *Checked against:* [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-4|Theorem §C5a.13.4]] (the result and its derivation, steps 3–6), [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-5|Theorem §C5a.13.5]] (the antisymmetrized product), [[§C5a.13 Gamma-Matrix Technology#^cau-c5a-13-1|§C5a.13, Caution: The sign of the ε trace across sources]].
 
 ^sol-px-5-5-2
 
@@ -1875,7 +1875,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (checks by contraction). With $g_{\mu\nu}$: left $\gamma_\mu\gamma^\mu\gamma^\rho = 4\gamma^\rho$; right $4\gamma^\rho - \gamma^\rho + \gamma^\rho + 0 = 4\gamma^\rho$ ($\varepsilon$ against the symmetric $g$ vanishes). With $g_{\mu\rho}$: left $\gamma_\mu\gamma^\nu\gamma^\mu = -2\gamma^\nu$; right $\gamma^\nu - 4\gamma^\nu + \gamma^\nu = -2\gamma^\nu$. Both agree with the contraction identities. The full identity verified numerically for all 64 index triples.
 >
-> *Checked against:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|Theorem §C5a.14.8]] (step 3 of its derivation states $\gamma^\lambda\gamma^\mu\gamma^\nu = \gamma^{[\lambda\mu\nu]} + g^{\lambda\mu}\gamma^\nu - g^{\lambda\nu}\gamma^\mu + g^{\mu\nu}\gamma^\lambda$, case-checked under [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-9|Theorem §C5a.9.9]]), [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|Theorem §C5a.14.6]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]].
+> *Checked against:* [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-8|Theorem §C5a.13.8]] (step 3 of its derivation states $\gamma^\lambda\gamma^\mu\gamma^\nu = \gamma^{[\lambda\mu\nu]} + g^{\lambda\mu}\gamma^\nu - g^{\lambda\nu}\gamma^\mu + g^{\mu\nu}\gamma^\lambda$, case-checked under [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-9|Theorem §C5a.9.9]]), [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-6|Theorem §C5a.13.6]], [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-2|Theorem §C5a.13.2]].
 
 ^sol-px-5-5-3
 
@@ -1899,7 +1899,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > Both are normalized ($\frac12(1 + 1) = 1$) and orthogonal ($\frac12(-1 + 1) = 0$). (All four eigenvalue equations verified numerically.)
 >
-> *Checked against:* [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-1|Theorem §C5a.13.1]] (the same formula; the user's Problem Set 5, Problem 6), [[§C5a.13 Helicity Spinors and the Massless Limit#^cau-c5a-13-1|§C5a.13, Caution: No phase convention is smooth on the whole sphere]]; drill: [[PHY 513 PS Drill#^ps5-6|PS Drill, PS5.6]].
+> *Checked against:* [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-1|Theorem §C8.14.1]] (the same formula; the user's Problem Set 5, Problem 6), [[§C8.14 Helicity Spinors and the Massless Limit#^cau-c8-14-1|§C8.14, Caution: No phase convention is smooth on the whole sphere]]; drill: [[PHY 513 PS Drill#^ps5-6|PS Drill, PS5.6]].
 
 ^sol-px-5-6-1
 
@@ -1921,7 +1921,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (chirality). In the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$: the lower half ($\psi_R$) has $\gamma^5 = +1$, the upper ($\psi_L$) $\gamma^5 = -1$. So $\gamma^5u_\pm \to \pm u_\pm$: helicity $\pm\frac12$ becomes chirality $\pm1$, exactly at $m = 0$. (Numerically, at $E/m = 10$ and $1000$ the small half relative to $\sqrt{2E}$ is $5.0\times10^{-2}$ and $5.0\times10^{-4}$, i.e. $m/2E$.)
 >
-> *Checked against:* [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-2|Theorem §C5a.13.2]], [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-4|Theorem §C5a.13.4]], 1–2, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]], 1.
+> *Checked against:* [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-2|Theorem §C8.14.2]], [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-4|Theorem §C8.14.4]], 1–2, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]], 1.
 
 ^sol-px-5-6-2
 
@@ -2277,7 +2277,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 > [!success]- Solution
 > 1. **X7.1.1** $[\phi] = M^{1/2}$, $[\psi] = M^1$, $[g] = M^{1/2}$. ($[\mathcal L] = M^3$; $[\phi] = \frac{d-2}{2}$, $[\psi] = \frac{d-1}{2}$; $[g] = 3 - \frac12 - 2\cdot1$.) — [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]], [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-3|Theorem §C1b.3.3]]; the $d = 4$ case is [[§C1b.3 Mass Dimension, Locality and Power Counting#^ex-c1b-3-2|Example §C1b.3.2]].
 > 2. **X7.1.2** $\partial^2\phi + m^2\phi + 2\lambda(\phi^\ast\phi)\phi = 0$. (Vary $\phi^\ast$: $\partial\mathcal L/\partial(\partial_\mu\phi^\ast) = \partial^\mu\phi$, $\partial\mathcal L/\partial\phi^\ast = -m^2\phi - 2\lambda(\phi^\ast\phi)\phi$; the factor 2 from $(\phi^\ast)^2$.) — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]] (derived here for the quartic term; method as in [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-2|Example §C1b.2.2]]).
-> 3. **X7.1.3** $\gamma_\mu\slashed k\slashed p\slashed q\gamma^\mu = -2\slashed q\slashed p\slashed k$ (reversed order). — [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]]; [[PHY 513 PS Drill#^ps5-2-d|PS Drill, PS5.2(d)]].
+> 3. **X7.1.3** $\gamma_\mu\slashed k\slashed p\slashed q\gamma^\mu = -2\slashed q\slashed p\slashed k$ (reversed order). — [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-2|Theorem §C5a.13.2]]; [[PHY 513 PS Drill#^ps5-2-d|PS Drill, PS5.2(d)]].
 > 4. **X7.1.4** $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$, the four-vector; symmetric traceless $h^{\mu\nu}$: $(1, 1)$, dimension $9$. — [[§CB.18 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-18-12|Theorem §CB.18.12]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]].
 > 5. **X7.1.5** $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$; $\lvert\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}\lvert0\rangle$. — [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]].
 > 6. **X7.1.6** $\tilde D_R(p) = \dfrac{i}{(p^0 + i\varepsilon)^2 - E_{\mathbf p}^2}$; its poles sit at $p^0 = \pm E_{\mathbf p} - i\varepsilon$, so the contour passes above both poles. — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]], [[§C2b.6 Green's Functions and Contours#^thm-c2b-6-5|Theorem §C2b.6.5]].

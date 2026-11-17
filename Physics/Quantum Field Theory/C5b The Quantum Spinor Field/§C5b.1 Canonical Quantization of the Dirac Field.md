@@ -7,7 +7,7 @@ section: C5b.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C5a.14 Gamma-Matrix Technology]] · ↑ [[· C5b The Quantum Spinor Field]] · [[§C5b.2 Mode Expansion and the Anticommutator Algebra]] →
+← [[§C5a.13 Gamma-Matrix Technology]] · ↑ [[· C5b The Quantum Spinor Field]] · [[§C5b.2 Mode Expansion and the Anticommutator Algebra]] →
 
 *Sources: the user's PHY 513 notes, Ch. 10 §§10.1–10.2 · PHY 513 Lecture 10 (Larsen, 5 Oct 2026), Part A, slides 5–7 and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.5, pp. 52–58 · Yu Zhao-Huan, 量子场论讲义, §5.4.3, §§5.5.1–5.5.2, §5.5.4 · the user's pre-course notes, §1.6, §5.4, §5.5.*
 
