@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C4 The Quantum Vector Field
 ← [[· C3 Poincaré Symmetry and Particle States]] · ↑ [[Quantum Field Theory]] · [[· C5a Spinors and the Dirac Equation]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (40), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (110), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (94), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (61), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (72), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (9), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (49), [[· CA Mathematical Methods|CA Mathematical Methods]] (152)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (5), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (2), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (47)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (40), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (110), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (92), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (61), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (53), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (9), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (62), [[· CA Mathematical Methods|CA Mathematical Methods]] (146)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (5), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (2), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (135)
 
 ## Sections
 - [[§C4.1 The Vector Field and Its Lorentz Transformation]] — Yu 4.1–4.2, 4.3.1, 1.7.3; 513 notes Ch. 7
@@ -60,7 +60,6 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.3★ Massive Polarization Vectors and Plane Waves#^thm-c4-3-4|§C4.3.4]] Transversality and Orthonormality
 - [[§C4.3★ Massive Polarization Vectors and Plane Waves#^thm-c4-3-5|§C4.3.5]] Polarization Vectors Transform by the Wigner Rotation
 - [[§C4.3★ Massive Polarization Vectors and Plane Waves#^thm-c4-3-6|§C4.3.6]] The Helicity Vectors Are a Transverse Orthonormal Basis
-- [[§C8.13 Photon Helicity#^thm-c8-13-1|§C8.13.1]] The Helicity Vectors Are Helicity Eigenvectors
 - [[§C4.3★ Massive Polarization Vectors and Plane Waves#^thm-c4-3-7|§C4.3.7]] The Massive Polarization Sum
 - [[§C4.3★ Massive Polarization Vectors and Plane Waves#^thm-c4-3-8|§C4.3.8]] The Polarization Sum Is Minus the Projector Transverse to p
 - [[§C4.3★ Massive Polarization Vectors and Plane Waves#^thm-c4-3-9|§C4.3.9]] The Longitudinal Polarization Grows Like p/m
@@ -76,10 +75,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-6|§C4.5.6]] One-Particle States Have Positive Norm
 - [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-7|§C4.5.7]] Rotations Act on the Mode Operators through the Polarization Vectors
 - [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-8|§C4.5.8]] Proca Quanta Have Spin One
-- [[§C8.13 Photon Helicity#^thm-c8-13-2|§C8.13.2]] The One-Particle States Are Helicity Eigenstates
 - [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-9|§C4.5.9]] The Proca Spin in Mode Form
 - [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-10|§C4.5.10]] The Proca Spin Alone Is Not Conserved
-- [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-11|§C4.5.11]] Spin One and Helicity from the Noether Spin
+- [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-11|§C4.5.11]] Spin One from the Noether Spin
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-1|§C4.6.1]] What Survives the Massless Limit
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-3|§C4.6.3]] Gauge Invariance of F and of the Maxwell Lagrangian; the Mass Term Breaks It
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-5|§C4.6.5]] The Maxwell Kinetic Operator Is Singular
@@ -112,12 +110,6 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.10 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-10-4|§C4.10.4]] Physical and Unphysical One-Photon States
 - [[§C4.10 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-10-5|§C4.10.5]] Only Transverse Photons Carry Energy and Momentum
 - [[§C4.10 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-10-6|§C4.10.6]] Null States
-- [[§C8.13 Photon Helicity#^thm-c8-13-4|§C8.13.4]] Helicity Mode Algebra and Expansion
-- [[§C8.13 Photon Helicity#^thm-c8-13-5|§C8.13.5]] Photons Have Helicity ±1
-- [[§C8.13 Photon Helicity#^thm-c8-13-6|§C8.13.6]] Energy and Momentum of Physical States in Helicity Form
-- [[§C8.13 Photon Helicity#^thm-c8-13-7|§C8.13.7]] The Spin of Transverse Photons
-- [[§C8.13 Photon Helicity#^thm-c8-13-8|§C8.13.8]] Photon Helicity from the Noether Spin
-- [[§C8.13 Photon Helicity#^thm-c8-13-9|§C8.13.9]] Null States Change the Transverse Spin, Not the Helicity
 - [[§C4.11 Vector-Field Propagators#^thm-c4-11-1|§C4.11.1]] The Massive Vector Wightman Function
 - [[§C4.11 Vector-Field Propagators#^thm-c4-11-2|§C4.11.2]] Commutator and Microcausality of the Massive Vector Field
 - [[§C4.11 Vector-Field Propagators#^thm-c4-11-3|§C4.11.3]] The Massive Feynman Propagator and Its Contact Term

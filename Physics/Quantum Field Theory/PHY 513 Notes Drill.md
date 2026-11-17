@@ -5584,7 +5584,7 @@ The unique positive-semidefinite square roots, $\sqrt{p\cdot\sigma} = \sqrt{E - 
 
 For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname{diag}(\hat{\mathbf p}\cdot\boldsymbol\sigma, \hat{\mathbf p}\cdot\boldsymbol\sigma)$; $h = +\frac12$ is called right-handed, $-\frac12$ left-handed, see Definition [[§C8.14 Helicity Spinors and the Massless Limit#^def-c8-14-1|§C8.14.1]] Helicity of a Dirac Spinor. *Source: Problem Set 5, Problem 6 (statement) · the user's notes Ch. 9 §9.4*
 
-^nd-def-c5a-13-1
+^nd-def-c8-14-1
 
 - [ ] Q1 **[def]** Define the helicity operator on Dirac spinors.
 - [ ] Q2 **[conv]** Both helicity and chirality use the words "left-handed" and "right-handed". Which operator defines each?
@@ -5598,7 +5598,7 @@ For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname
 
 $\xi_\pm(\hat{\mathbf p})$: normalized eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol\sigma$ with eigenvalues $\pm1$, each fixed up to a phase, see Definition [[§C8.14 Helicity Spinors and the Massless Limit#^def-c8-14-2|§C8.14.2]] Helicity Two-Spinors. → their explicit form is drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
 
-^nd-def-c5a-13-2
+^nd-def-c8-14-2
 
 - [ ] Q1 **[def]** Define $\xi_\pm(\hat{\mathbf p})$.
 - [ ] Q2 **[why]** Why can no phase convention make $\xi_\pm$ continuous on the whole sphere of directions?
@@ -6577,13 +6577,13 @@ For $m > 0$, $\frac1{2m}\sum_s(u^s\bar u^s - v^s\bar v^s) = \mathbb 1$; $\Lambda
 
 $\xi_\pm(\hat{\mathbf p})$ in polar angles with the stated phase convention, see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-1|§C8.14.1]] The Helicity Two-Spinors. → drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
 
-^nd-thm-c5a-13-1
+^nd-thm-c8-14-1
 
 ### [B] Helicity spinors u± ★
 
 With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqrt{E \mp \lvert\mathbf p\rvert}\,\xi_\pm, \sqrt{E \pm \lvert\mathbf p\rvert}\,\xi_\pm)$, $hu_\pm = \pm\frac12u_\pm$; with $\omega_\lambda = \sqrt{E + \lambda\lvert\mathbf p\rvert}$, $u_\lambda = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$, see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-2|§C8.14.2]] Helicity Spinors u±. *Source: Problem Set 5, Problem 6 (context) · Yu (the helicity basis) · the user's notes Ch. 9 §9.4*
 
-^nd-thm-c5a-13-2
+^nd-thm-c8-14-2
 
 - [ ] Q1 **[state]** Write $u_\pm$ in the helicity basis.
 - [ ] Q2 What are $p\cdot\sigma\,\xi_\pm$ and $p\cdot\bar\sigma\,\xi_\pm$?
@@ -6599,7 +6599,7 @@ With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqr
 
 With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-\lambda}, -\lambda\omega_{-\lambda}\xi_{-\lambda})$ and $hv_\lambda = -\frac\lambda2v_\lambda$ (Yu's choice), see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-3|§C8.14.3]] The v Spinors in the Helicity Basis. *Source: Yu (the helicity basis) · the user's notes Ch. 9*
 
-^nd-thm-c5a-13-3
+^nd-thm-c8-14-3
 
 - [ ] Q1 **[state]** Write $v_\lambda$ and its helicity.
 - [ ] Q2 Act with the roots on $\xi_{-\lambda}$ and insert.
@@ -6614,7 +6614,7 @@ With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-
 
 At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma^5u_\pm = \pm u_\pm$; for $E \gg m$ the other half is suppressed by $m/2E$, see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-4|§C8.14.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality. *Source: PS §3.3 · the user's notes Ch. 9*
 
-^nd-thm-c5a-13-4
+^nd-thm-c8-14-4
 
 - [ ] Q1 **[state]** State the massless limit of $u_\pm$ and their chirality.
 - [ ] Q2 Which of $\sqrt{E \mp \lvert\mathbf p\rvert}$ vanishes at $m = 0$?
@@ -6629,7 +6629,7 @@ At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma
 
 $\gamma^\mu\slashed a = 2a^\mu - \slashed a\gamma^\mu$, $\slashed a\slashed b + \slashed b\slashed a = 2a\cdot b$, $\slashed a\slashed b = a\cdot b - i\sigma^{\mu\nu}a_\mu b_\nu$, see Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-1|§C5a.13.1]] Slash Algebra. *Source: the user's notes Ch. 9 §9.6 · Problem Set 5*
 
-^nd-thm-c5a-14-1
+^nd-thm-c5a-13-1
 
 - [ ] Q1 **[state]** State the slash identities.
 - [ ] Q2 Contract the Clifford relation with $a_\nu$ and with $a_\mu b_\nu$.
@@ -6644,13 +6644,13 @@ $\gamma^\mu\slashed a = 2a^\mu - \slashed a\gamma^\mu$, $\slashed a\slashed b + 
 
 $\gamma_\mu\gamma^\mu = 4$ etc. (Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-2|§C5a.13.2]] Contraction Identities) → drilled as [[PHY 513 PS Drill#^ps5-2|PS5.2]] and [[PHY 513 PS Drill#^ps7-1-c|PS7.1(c)]]; properties of $\gamma^5$ (Theorem [[§CB.13 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-13-15|§CB.13.15]] Algebraic Properties of γ⁵) → drilled as [[PHY 513 PS Drill#^ps5-5-a|PS5.5(a)]], [[PHY 513 PS Drill#^ps5-5-b|PS5.5(b)]]; $\gamma^5$ as the antisymmetric product and duality (Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-5|§C5a.13.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-6|§C5a.13.6]] The Antisymmetric Product of Three γ's, Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-7|§C5a.13.7]] γ⁵ Dualizes σ^μν) → drilled as [[PHY 513 PS Drill#^ps5-5-c|PS5.5(c)]], [[PHY 513 PS Drill#^ps5-5-d|PS5.5(d)]]; the Gordon identity (Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-9|§C5a.13.9]] The Gordon Identity) → drilled as [[PHY 513 PS Drill#^ps5-3|PS5.3]].
 
-^nd-thm-c5a-14-2
+^nd-thm-c5a-13-2
 
 ### [B] Traces of γ matrices ★
 
 $\operatorname{tr}\mathbb 1 = 4$; traces of an odd number of $\gamma$'s vanish; $\operatorname{tr}(\gamma^\mu\gamma^\nu) = 4g^{\mu\nu}$; $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma) = 4(g^{\mu\nu}g^{\rho\sigma} - g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\nu\rho})$, see Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|§C5a.13.3]] Traces of γ Matrices. *Source: Lecture 9, slide "Solution of The Dirac Equation: Step 2" ($\operatorname{tr}(\gamma^\mu p_\mu) = 0$) · Yu §7.1, §8.2.2 · PS §5.1 (statements)*
 
-^nd-thm-c5a-14-3
+^nd-thm-c5a-13-3
 
 - [ ] Q1 **[state]** State the four trace rules.
 - [ ] Q2 Why does the trace of an odd number of $\gamma$'s vanish (insert $(\gamma^5)^2$)?
@@ -6666,7 +6666,7 @@ $\operatorname{tr}\mathbb 1 = 4$; traces of an odd number of $\gamma$'s vanish; 
 
 $\operatorname{tr}\gamma^5 = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5) = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\varepsilon^{\mu\nu\rho\sigma}$ with $\varepsilon^{0123} = +1$; convention-free $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$, see Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-4|§C5a.13.4]] Traces with γ⁵. *Source: Yu §8.2.2 · PS §5.1 (statements)*
 
-^nd-thm-c5a-14-4
+^nd-thm-c5a-13-4
 
 - [ ] Q1 **[state]** State the three traces with $\gamma^5$.
 - [ ] Q2 Why does $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5)$ vanish?
@@ -6681,7 +6681,7 @@ $\operatorname{tr}\gamma^5 = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5
 
 A product of $n$ $\gamma$'s is a unique combination, with coefficients from $g$ and $\varepsilon$, of $\mathbb 1$, $\gamma^\mu$, $\sigma^{\mu\nu}$, $\gamma^\mu\gamma^5$, $\gamma^5$, only of the parity of $n$, see Theorem [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-8|§C5a.13.8]] Every Product of γ's Reduces to the Standard Basis. *Source: Problem Set 5, Problem 5 (closing paragraph of the statement) · the user's notes Ch. 9 §9.6*
 
-^nd-thm-c5a-14-8
+^nd-thm-c5a-13-8
 
 - [ ] Q1 **[state]** State the reduction theorem.
 - [ ] Q2 Describe the algorithm: what is done to two adjacent $\gamma$'s?

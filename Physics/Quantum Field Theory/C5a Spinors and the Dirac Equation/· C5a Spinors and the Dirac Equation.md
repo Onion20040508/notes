@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C5a Spinors and the Dirac Equation
 ← [[· C4 The Quantum Vector Field]] · ↑ [[Quantum Field Theory]] · [[· C5b The Quantum Spinor Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (43), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (94), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (54), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (46), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (7), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (10), [[· CA Mathematical Methods|CA Mathematical Methods]] (7), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (71)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (8), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (215), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (1), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (25), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (136), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (157), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (55)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (43), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (94), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (49), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (45), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (15), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (7), [[· CA Mathematical Methods|CA Mathematical Methods]] (7), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (71)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (8), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (214), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (1), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (25), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (152), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (157), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (55)
 
 ## Sections
 - [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation]] — PS 3.2, 3.4; Yu 1.1, 5.2, 5.3; 513 notes Ch. 7, 8, 9, 10
@@ -25,7 +25,6 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost]] — PS 3.3; Yu 5.4.1, 5.4.2; 513 notes Ch. 9
 - [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates]] — PS 3.3; Yu 5.4.2; 513 notes Ch. 9
 - [[§C5a.12 Normalization and Spin Sums]] — PS 3.3; Yu 5.4.2; 513 notes Ch. 9
-- [[§C8.14 Helicity Spinors and the Massless Limit]] — PS 3.3; Yu 5.4.2; 513 notes Ch. 7, 9
 - [[§C5a.13 Gamma-Matrix Technology]] — PS 3.4; Yu 7.1, 8.2.2; 513 notes Ch. 9
 
 ## Laws
@@ -107,10 +106,6 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|§C5a.12.8]] The Spin Sum over v
 - [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-9|§C5a.12.9]] The Spin Sums Are Covariant
 - [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-10|§C5a.12.10]] Completeness and the Energy Projectors
-- [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-1|§C8.14.1]] The Helicity Two-Spinors
-- [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-2|§C8.14.2]] Helicity Spinors u±
-- [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-3|§C8.14.3]] The v Spinors in the Helicity Basis
-- [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-4|§C8.14.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality
 - [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-1|§C5a.13.1]] Slash Algebra
 - [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-2|§C5a.13.2]] Contraction Identities
 - [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|§C5a.13.3]] Traces of γ Matrices

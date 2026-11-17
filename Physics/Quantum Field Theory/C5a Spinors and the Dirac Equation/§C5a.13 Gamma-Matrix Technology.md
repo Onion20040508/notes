@@ -7,7 +7,7 @@ section: C5a.13
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C8.14 Helicity Spinors and the Massless Limit]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5b.1 Canonical Quantization of the Dirac Field]] →
+← [[§C5a.12 Normalization and Spin Sums]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5b.1 Canonical Quantization of the Dirac Field]] →
 
 *Sources: the user's PHY 513 notes, Ch. 9 §9.6 (Supplement: $\gamma$-matrix technology (Problem Set 5)) · PHY 513, Problem Set 5, Problems 2, 3 and 5 (as the user wrote them) · Peskin & Schroeder, §3.4, pp. 49–52, eqs. (3.68)–(3.81) · Yu Zhao-Huan, 量子场论讲义, §7.1, eqs. (7.48)–(7.54), §8.2.2, eqs. (8.44)–(8.77). · PHY 513, Problem Set 7, Problem 1(c) (Larsen; the user's solution) · PHY 513 Lecture 19 (Larsen, 11 Nov 2026), slides 13–14, and transcript · the user's PHY 513 notes, Lecture 19 update, §19.3 "Traces of Dirac matrices" (Principle "Trace theorems", Derivation "Proofs") · Peskin & Schroeder, §5.1, pp. 133–135, eqs. (5.5), (5.8)–(5.9) · PHY 513 Lecture 20 (Larsen, 16 Nov 2026), slides 2, 14–16, and transcript.*
 
