@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Functional Analysis]]"
-chapter: 9
+chapter: 10
 section: 49
 tags: [functional-analysis, math556, companion]
 ---
-← [[§48 The Resolvent and the Spectrum]] · ↑ [[· 9 Functional Analysis and Quantum Mechanics]] · [[§50 The Completeness Relation]] →
+← [[§48 The Resolvent and the Spectrum]] · ↑ [[· 10 Functional Analysis and Quantum Mechanics]] · [[§50 The Completeness Relation]] →
 
 *Companion — Thread: functionals. Bras as elements of the dual space.*
 

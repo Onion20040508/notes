@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Functional Analysis]]"
-chapter: 8
+chapter: 9
 section: 47
 tags: [functional-analysis, math556]
 ---
-← [[§46 The Transpose]] · ↑ [[· 8 Weak Convergence]] · [[§48 The Resolvent and the Spectrum]] →
+← [[§46 The Transpose]] · ↑ [[· 9 Spectral Theory]] · [[§48 The Resolvent and the Spectrum]] →
 
 *Stage: maps — Thread: functionals. A Banach-space-valued function of a complex variable is analytic as soon as every bounded linear functional of it is (Dunford): Cauchy's integral formula for each functional, then the uniform boundedness principle.*
 

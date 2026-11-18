@@ -29,6 +29,10 @@ The space $C[a,b]$ of continuous functions $f : [a,b] \to \mathbb{F}$, the first
 - Differentiation $C^1[0,1] \to C[0,1]$ is a closed map that is not bounded ([[§39 Solving Mx = y#^ex-39-3|§39]])
 - $C^1[a,b]$ is not complete in the maximum norm, by the equivalent norm theorem ([[§41 The Open Mapping Theorem and Its Consequences#^ex-41-1|§41]])
 - $C[0,1]$ is not complete in the $L^1$ norm, by the equivalent norm theorem ([[§41 The Open Mapping Theorem and Its Consequences#^ex-41-2|§41]])
+- Weak convergence in $C[a,b]$ implies pointwise convergence ([[§43 Weak and Weak-Star Convergence#^prop-43-4|§43.4]])
+- The powers $t^n$ have no weak limit in $C[0,1]$ ([[§43 Weak and Weak-Star Convergence#^ex-43-3|§43]])
+- A closed convex set in $C[0,1]$ with no point closest to $0$ ([[§44 Weak Sequential Compactness#^ex-44-4|§44]])
+- Multiplication by $t$ on $C[0,1]$: the spectrum is $[0,1]$, all of it residual ([[§48 The Resolvent and the Spectrum#^ex-48-3|§48]])
 
 ## $C[a,b]$ with the supremum norm is a Banach space
 ![[§12 Completeness#^thm-12-1]]
@@ -92,3 +96,15 @@ The space $C[a,b]$ of continuous functions $f : [a,b] \to \mathbb{F}$, the first
 
 ## $C[0,1]$ is not complete in the $L^1$ norm, by the equivalent norm theorem
 ![[§41 The Open Mapping Theorem and Its Consequences#^ex-41-2]]
+
+## Weak convergence in $C[a,b]$ implies pointwise convergence
+![[§43 Weak and Weak-Star Convergence#^prop-43-4]]
+
+## The powers $t^n$ have no weak limit in $C[0,1]$
+![[§43 Weak and Weak-Star Convergence#^ex-43-3]]
+
+## A closed convex set in $C[0,1]$ with no point closest to $0$
+![[§44 Weak Sequential Compactness#^ex-44-4]]
+
+## Multiplication by $t$ on $C[0,1]$: the spectrum is $[0,1]$, all of it residual
+![[§48 The Resolvent and the Spectrum#^ex-48-3]]

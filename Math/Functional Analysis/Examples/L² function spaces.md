@@ -28,6 +28,8 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 - The bound states of hydrogen are not complete in $L^2(\mathbb{R}^3)$ ([[§52 Bound States Need Not Be Complete꞉ Hydrogen#^cor-52-2|§52.2]])
 - The Radon–Nikodym theorem, from the Riesz representation theorem in $L^2(\mu + \nu)$ ([[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35]])
 - $\sin(mx) \rightharpoonup 0$ in $L^2[0, 2\pi]$ ([[§43 Weak and Weak-Star Convergence#^ex-43-2|§43]])
+- Multiplication by $t$ on $L^2[0,1]$: the spectrum is $[0,1]$, all of it continuous ([[§48 The Resolvent and the Spectrum#^ex-48-4|§48]])
+- Approximate eigenvectors of multiplication by $t$ on $L^2[0,1]$ ([[§48 The Resolvent and the Spectrum#^prop-48-4|§48.4]])
 
 ## The $L^2$ inner product, convergent by Hölder's inequality
 ![[§22 Definition and Examples#^ex-22-3]]
@@ -88,3 +90,9 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 
 ## $\sin(mx) \rightharpoonup 0$ in $L^2[0, 2\pi]$
 ![[§43 Weak and Weak-Star Convergence#^ex-43-2]]
+
+## Multiplication by $t$ on $L^2[0,1]$: the spectrum is $[0,1]$, all of it continuous
+![[§48 The Resolvent and the Spectrum#^ex-48-4]]
+
+## Approximate eigenvectors of multiplication by $t$ on $L^2[0,1]$
+![[§48 The Resolvent and the Spectrum#^prop-48-4]]

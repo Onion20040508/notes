@@ -1,10 +1,10 @@
 ---
 type: chapter
 subject: "[[Functional Analysis]]"
-chapter: 9
+chapter: 10
 tags: [chapter, functional-analysis, companion]
 ---
-# 9 Functional Analysis and Quantum Mechanics
+# 10 Functional Analysis and Quantum Mechanics
 ↑ [[Functional Analysis]]
 
 This chapter is a companion to the course, not part of it: nothing here was covered in lecture. Its purpose is to translate the formalism of quantum mechanics — kets and bras, “inserting a complete set of states,” position eigenstates — into the results of the preceding chapters, and to say precisely which physics statements are theorems, which need reinterpretation, and which are false as usually stated. It is written to grow: each new part of the course (operators, adjoints, spectral theory) will add a section here.

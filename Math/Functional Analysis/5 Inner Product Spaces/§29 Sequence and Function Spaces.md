@@ -283,7 +283,7 @@ In $L^2[-1,1]$ the even and the odd functions are closed subspaces, each the ort
 
 ![[§25 Projection and Orthogonal Decomposition#^prop-25-9]]
 
-*Chain:* [[§50 The Completeness Relation#^ex-50-1|Chapter 9 (parity)]] →
+*Chain:* [[§50 The Completeness Relation#^ex-50-1|Chapter 10 (parity)]] →
 
 ## The Fourier Basis
 
@@ -293,4 +293,4 @@ The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal bas
 
 ![[§27 Orthonormal Sets and Bases#^cor-27-12]]
 
-*Chain:* [[§30 Boundedness and Continuity#^ex-30-2|Chapter 6 (the Fourier transform)]] · [[§50 The Completeness Relation#^ex-50-2|Chapter 9 (a particle on a ring)]] →
+*Chain:* [[§30 Boundedness and Continuity#^ex-30-2|Chapter 6 (the Fourier transform)]] · [[§50 The Completeness Relation#^ex-50-2|Chapter 10 (a particle on a ring)]] →

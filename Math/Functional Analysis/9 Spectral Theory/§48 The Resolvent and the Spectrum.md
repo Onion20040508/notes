@@ -1,11 +1,11 @@
 ---
 type: section
 subject: "[[Functional Analysis]]"
-chapter: 8
+chapter: 9
 section: 48
 tags: [functional-analysis, math556]
 ---
-← [[§47 Weak and Strong Analyticity]] · ↑ [[· 8 Weak Convergence]] · [[§49 Bras, Kets, and the Riesz Map]] →
+← [[§47 Weak and Strong Analyticity]] · ↑ [[· 9 Spectral Theory]] · [[§49 Bras, Kets, and the Riesz Map]] →
 
 *Stage: maps — Thread: invertibility. $\lambda I - M$ can fail to be invertible by not being one-to-one, by having a dense range that is not everything, or by having a range that is not dense: point, continuous and residual spectrum.*
 
