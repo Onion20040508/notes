@@ -16,7 +16,7 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 - [[· C1b Classical Field Theory]]
 - [[· C2a The Quantum Scalar Field]]
 - [[· C2b Two-Point Functions, Causality and Propagators]]
-- [[· C3 Poincaré Symmetry and Particle States]]
+- [[· C3 Poincaré Symmetry and Covariant Fields]]
 - [[· C4 The Quantum Vector Field]] (★ §C4.2, §C4.3, §C4.4, §C4.5)
 - [[· C5a Spinors and the Dirac Equation]]
 - [[· C5b The Quantum Spinor Field]]
@@ -39,7 +39,7 @@ graph TD
   C1b["C1b Classical Field Theory"]
   C2a["C2a The Quantum Scalar Field"]
   C2b["C2b Two-Point Functions, Causality and Propagators"]
-  C3["C3 Poincaré Symmetry and Particle States"]
+  C3["C3 Poincaré Symmetry and Covariant Fields"]
   C4["C4 The Quantum Vector Field"]
   C5a["C5a Spinors and the Dirac Equation"]
   C5b["C5b The Quantum Spinor Field"]

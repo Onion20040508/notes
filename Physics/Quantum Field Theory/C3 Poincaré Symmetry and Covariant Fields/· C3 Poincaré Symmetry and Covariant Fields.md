@@ -5,7 +5,7 @@ level: C
 chapter: C3
 tags: [chapter, quantum-field-theory]
 ---
-# C3 Poincaré Symmetry and Particle States
+# C3 Poincaré Symmetry and Covariant Fields
 ← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
 **Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (43), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (27), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (33), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (15), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (3), [[· C8b Spin, Helicity and Chirality|C8b Spin, Helicity and Chirality]] (8), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (12), [[· CA Mathematical Methods|CA Mathematical Methods]] (9), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (75)

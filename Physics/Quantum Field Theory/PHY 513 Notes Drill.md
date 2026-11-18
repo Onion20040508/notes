@@ -5584,7 +5584,7 @@ The unique positive-semidefinite square roots, $\sqrt{p\cdot\sigma} = \sqrt{E - 
 
 For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname{diag}(\hat{\mathbf p}\cdot\boldsymbol\sigma, \hat{\mathbf p}\cdot\boldsymbol\sigma)$; $h = +\frac12$ is called right-handed, $-\frac12$ left-handed, see Definition [[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-1|§C8b.5.1]] Helicity of a Dirac Spinor. *Source: Problem Set 5, Problem 6 (statement) · the user's notes Ch. 9 §9.4*
 
-^nd-def-c8-14-1
+^nd-def-c8b-5-1
 
 - [ ] Q1 **[def]** Define the helicity operator on Dirac spinors.
 - [ ] Q2 **[conv]** Both helicity and chirality use the words "left-handed" and "right-handed". Which operator defines each?
@@ -5598,7 +5598,7 @@ For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname
 
 $\xi_\pm(\hat{\mathbf p})$: normalized eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol\sigma$ with eigenvalues $\pm1$, each fixed up to a phase, see Definition [[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-2|§C8b.5.2]] Helicity Two-Spinors. → their explicit form is drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
 
-^nd-def-c8-14-2
+^nd-def-c8b-5-2
 
 - [ ] Q1 **[def]** Define $\xi_\pm(\hat{\mathbf p})$.
 - [ ] Q2 **[why]** Why can no phase convention make $\xi_\pm$ continuous on the whole sphere of directions?
@@ -6577,13 +6577,13 @@ For $m > 0$, $\frac1{2m}\sum_s(u^s\bar u^s - v^s\bar v^s) = \mathbb 1$; $\Lambda
 
 $\xi_\pm(\hat{\mathbf p})$ in polar angles with the stated phase convention, see Theorem [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-1|§C8b.5.1]] The Helicity Two-Spinors. → drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
 
-^nd-thm-c8-14-1
+^nd-thm-c8b-5-1
 
 ### [B] Helicity spinors u± ★
 
 With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqrt{E \mp \lvert\mathbf p\rvert}\,\xi_\pm, \sqrt{E \pm \lvert\mathbf p\rvert}\,\xi_\pm)$, $hu_\pm = \pm\frac12u_\pm$; with $\omega_\lambda = \sqrt{E + \lambda\lvert\mathbf p\rvert}$, $u_\lambda = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$, see Theorem [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-2|§C8b.5.2]] Helicity Spinors u±. *Source: Problem Set 5, Problem 6 (context) · Yu (the helicity basis) · the user's notes Ch. 9 §9.4*
 
-^nd-thm-c8-14-2
+^nd-thm-c8b-5-2
 
 - [ ] Q1 **[state]** Write $u_\pm$ in the helicity basis.
 - [ ] Q2 What are $p\cdot\sigma\,\xi_\pm$ and $p\cdot\bar\sigma\,\xi_\pm$?
@@ -6599,7 +6599,7 @@ With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqr
 
 With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-\lambda}, -\lambda\omega_{-\lambda}\xi_{-\lambda})$ and $hv_\lambda = -\frac\lambda2v_\lambda$ (Yu's choice), see Theorem [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-3|§C8b.5.3]] The v Spinors in the Helicity Basis. *Source: Yu (the helicity basis) · the user's notes Ch. 9*
 
-^nd-thm-c8-14-3
+^nd-thm-c8b-5-3
 
 - [ ] Q1 **[state]** Write $v_\lambda$ and its helicity.
 - [ ] Q2 Act with the roots on $\xi_{-\lambda}$ and insert.
@@ -6614,7 +6614,7 @@ With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-
 
 At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma^5u_\pm = \pm u_\pm$; for $E \gg m$ the other half is suppressed by $m/2E$, see Theorem [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4|§C8b.5.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality. *Source: PS §3.3 · the user's notes Ch. 9*
 
-^nd-thm-c8-14-4
+^nd-thm-c8b-5-4
 
 - [ ] Q1 **[state]** State the massless limit of $u_\pm$ and their chirality.
 - [ ] Q2 Which of $\sqrt{E \mp \lvert\mathbf p\rvert}$ vanishes at $m = 0$?
