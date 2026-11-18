@@ -100,6 +100,8 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§78 Properties of the Wedge Product\|§78]] Properties of the wedge product | Chapter 14, *The Wedge Product* (Lemma 14.10, Proposition 14.11) |
 | [[§79 Pullbacks of Linear Forms\|§79]] Pullbacks of linear forms | Chapter 12, *Pullbacks of Tensor Fields* (the pullback at a point); Chapter 14, Proposition 14.9 |
 | [[§80 Differential Forms on Manifolds\|§80]] Differential forms on manifolds | Chapter 14, *Differential Forms on Manifolds* (Exercise 14.14, Lemma 14.16, Examples 14.18 and 14.19, Proposition 14.20, Corollary 14.21); Chapter 10, Lemma 10.6 (the vector bundle chart lemma) |
+| [[§81 The Exterior Derivative\|§81]] The exterior derivative | Chapter 14, *The Exterior Derivative* (Proposition 14.23, Theorem 14.24, Proposition 14.26, Example 14.27); Chapter 12, Proposition 12.25 (pullbacks compose) |
+| [[§82 De Rham Cohomology\|§82]] De Rham cohomology | Chapter 17, *The de Rham Cohomology Groups* (Proposition 17.2, Corollary 17.4, Propositions 17.5 and 17.6) |
 
 ## A.4 Index from Lee to these notes
 
@@ -262,6 +264,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 11.25 | [[§34 The Cotangent Space from Germs#^prop-34-7\|Prop. §34.7]], [[§53 One-Forms#^cor-53-5\|Cor. §53.5]] |
 | Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4\|Def. §28.4]], [[§34 The Cotangent Space from Germs#^prop-34-1\|Prop. §34.1]], [[§34 The Cotangent Space from Germs#^prop-34-2\|Prop. §34.2]], [[§34 The Cotangent Space from Germs#^thm-34-4\|Thm. §34.4]] |
 | Exercise 12.17 | [[§75 Multilinear Algebra#^lem-75-1\|Lem. §75.1]] |
+| Proposition 12.25 | [[§81 The Exterior Derivative#^lem-81-4\|Lem. §81.4]] |
 | Lemma 14.1 | [[§75 Multilinear Algebra#^lem-75-2\|Lem. §75.2]] |
 | Proposition 14.3 | [[§77 The Wedge Product#^lem-77-1\|Lem. §77.1]] |
 | Lemma 14.7 | [[§75 Multilinear Algebra#^lem-75-5\|Lem. §75.5]] |
@@ -274,7 +277,15 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 14.19 | [[§80 Differential Forms on Manifolds#^ex-80-2\|Ex. §80.2]] |
 | Proposition 14.20 | [[§79 Pullbacks of Linear Forms#^prop-79-2\|Prop. §79.2]], [[§80 Differential Forms on Manifolds#^cor-80-6\|Cor. §80.6]] |
 | Corollary 14.21 | [[§80 Differential Forms on Manifolds#^cor-80-6\|Cor. §80.6]] |
+| Proposition 14.23 | [[§81 The Exterior Derivative#^prop-81-3\|Prop. §81.3]] |
+| Theorem 14.24 | [[§81 The Exterior Derivative#^def-81-1\|Def. §81.1]], [[§81 The Exterior Derivative#^thm-81-7\|Thm. §81.7]], [[§81 The Exterior Derivative#^def-81-3\|Def. §81.3]], [[§81 The Exterior Derivative#^lem-81-5\|Lem. §81.5]], [[§81 The Exterior Derivative#^cor-81-6\|Cor. §81.6]] |
+| Proposition 14.26 | [[§81 The Exterior Derivative#^def-81-1\|Def. §81.1]], [[§81 The Exterior Derivative#^thm-81-7\|Thm. §81.7]] |
+| Example 14.27 | [[§81 The Exterior Derivative#^ex-81-1\|Ex. §81.1]] |
 | Theorem 16.34 | [[§73 Stokes' Theorem in Calculus III#^thm-73-2\|Thm. §73.2]] |
+| Proposition 17.2 | [[§82 De Rham Cohomology#^prop-82-2\|Prop. §82.2]] |
+| Corollary 17.4 | [[§82 De Rham Cohomology#^prop-82-2\|Prop. §82.2]] |
+| Proposition 17.5 | [[§82 De Rham Cohomology#^prop-82-3\|Prop. §82.3]] |
+| Proposition 17.6 | [[§82 De Rham Cohomology#^prop-82-3\|Prop. §82.3]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |
 | Example 19.1 | [[§59 Related Vector Fields#^ex-59-2\|Ex. §59.2]] |
 | Proposition 19.3 | [[§59 Related Vector Fields#^cor-59-9\|Cor. §59.9]] |

@@ -36623,6 +36623,20 @@ The Jacobians of the general formula are all contained in the computation above:
 
 \textbf{Transcription note (Lecture 31).} The board first wrote $dz = u\, du + 2v\, dv$, and the $2$ was then struck out. The correct $dz = u\, du + v\, dv$ is the one used in the computation.
 
+\begin{rembox}[Putting $F^*$ Everywhere]\label{rem:pullback-substitution}
+\textit{(Lecture 32 returned to Example~\ref{ex:pullback-r2-r3} to justify the practical computation.)} Regard $\omega = x\, y\, dy \wedge dz$ as a wedge product of four factors, the $0$-forms $x$ and $y$ (for which the wedge product is the ordinary product) and the one-forms $dy$ and $dz$. The pullback of a wedge product is the wedge product of the pullbacks (Proposition~\ref{prop:pullback-k-form-properties}(2)), a pointwise property, so
+\[
+F^*\omega = F^*(x)\, F^*(y)\; F^*(dy) \wedge F^*(dz) ,
+\]
+and since the pullback commutes with $d$ on functions (Proposition~\ref{prop:pullback-k-form-properties}(3), from September),
+\[
+F^*\omega = F^*(x)\, F^*(y)\; d\big(F^*y\big) \wedge d\big(F^*z\big) .
+\]
+Here $x$ is the function taking the first coordinate, so $F^*x = x \circ F = u + v$; likewise $F^*y = u - v$ and $F^*z = \frac12(u^2 + v^2)$. Compared with the practical computation, the only thing missing there is a number of $F^*$'s: ``$x = u + v$'' stands for $F^*x = u + v$, and ``$dx = du + dv$'' for $F^*(dx) = d(F^*x) = du + dv$. One puts $F^*$ in front of everything, and then stops writing it.
+\end{rembox}
+
+\textbf{Transcription note (Lecture 32).} The board wrote ``$y = du - dv$'' for $dy = du - dv$, and then $F^*\omega = (u + v)(u - v)(du + dv) \wedge (u\, du + v\, dv)$. Since $\omega$ contains $dy \wedge dz$, the first one-form is $F^*(dy) = du - dv$, as in Example~\ref{ex:pullback-r2-r3}; $du + dv = F^*(dx)$ does not occur.
+
 %% >>> ADDED: figure (not from lecture)
 \begin{center}
 \begin{tikzpicture}[>=Stealth, scale=0.95]
@@ -36693,7 +36707,424 @@ and $r = \det \begin{pmatrix} \cos\vartheta & -r\sin\vartheta \\ \sin\vartheta &
 \leeref{Example 14.19}
 \end{exbox}
 
-Still to come: the exterior derivative, which extends $d : \Omega^0(M) \to \Omega^1(M)$ to forms of every degree (Lee, Ch.~14, \emph{The Exterior Derivative}).
+Next: the exterior derivative, which extends $d : \Omega^0(M) \to \Omega^1(M)$ to forms of every degree (\ref{sec:exterior-derivative}).
+
+% ============================================================================
+% Lecture 32 (Wed Nov 18, 2026): the exterior derivative
+% ============================================================================
+
+\section{The Exterior Derivative}\label{sec:exterior-derivative}
+
+\roadmark{Stage: forms}{The operator $d$ on forms of every degree, characterized by four axioms; constructed on open subsets of $\mathbb{R}^m$ by a forced formula, then on manifolds through charts.}
+
+\textit{(Lecture 32.)} The main object of this section is the \emph{exterior derivative} $d$ (also called the \emph{exterior differential}). It extends the differential of functions, $d : \Omega^0(M) \to \Omega^1(M)$ (Proposition~\ref{prop:d-operator}), to forms of every degree. The cleanest way to present the theory is axiomatic, by four properties that characterize $d$; it is also the most opaque about what $d$ means, and the meaning (in $\mathbb{R}^3$, the curl and the divergence, and its relation to Stokes' theorem of \ref{sec:stokes-calc3}) will be explained later. Throughout, $M$ is a smooth manifold of dimension $m$.
+
+\begin{rembox}[Notation of Lecture 32]\label{rem:notation-lecture-32}
+In addition to the remark \emph{Notation of Lecture 31} (\ref{sec:linear-pullback}):
+\begin{itemize}[nosep]
+\item \emph{Sums over index sets.} A sum $\sum_A$ is always over the $k$-element subsets $A = \{a_1 < \cdots < a_k\}$ of $\{1, \ldots, m\}$, that is, over increasing indices, and $dx^A = dx^{a_1} \wedge \cdots \wedge dx^{a_k}$. Lee writes such sums with a prime, $\sum'$, as a reminder that the indices increase; the board occasionally does too. Sums $\sum_j$ over a single index run over $1, \ldots, m$ with no restriction.
+\item \emph{Coordinates.} On an open subset $U \subseteq \mathbb{R}^m$, Step~I uses the board's $x^1, \ldots, x^m$ for the standard coordinates (the identity chart, whose coordinates the notes elsewhere call $r^i$), and $y^1, \ldots, y^n$ on an open subset of $\mathbb{R}^n$. In Step~II, where a chart $\varphi = (x^1, \ldots, x^m)$ of $M$ appears, the standard coordinates of $\mathbb{R}^m$ are $r^1, \ldots, r^m$ again, and $x^i = r^i \circ \varphi$.
+\item \emph{One letter for many operators.} All the operators $d : \Omega^k(M) \to \Omega^{k+1}(M)$, for all $k$ and all manifolds, are written $d$; they have different domains and targets, and the context says which is meant. Where it matters, $d_M$ is the one on $M$.
+\item \emph{Degree.} $|\alpha|$ is the degree of $\alpha$ (Definition~\ref{def:form-degree}); in the product rule $\alpha$ has a single degree $k$.
+\item \emph{Betti numbers.} The board writes $\beta_k$ for the $k$-th Betti number (\ref{sec:de-rham}). Since $\beta$ denotes a form throughout this chapter, these notes write $b_k$.
+\item \emph{Cohomology.} The board's $H^k(M)$ is Lee's $H^k_{\mathrm{dR}}(M)$.
+\end{itemize}
+\end{rembox}
+
+\begin{defbox}[The Four Properties of an Exterior Derivative]\deflabel{def:d-properties}
+\textit{(Lecture 32 stated a theorem at this point: there exists a unique sequence of linear operators with the four properties below. It is Theorem~\ref{thm:exterior-derivative}, after the construction; the properties are recorded first, because the construction uses them.)} Suppose that on every smooth manifold $M$, of any dimension $m$, a sequence of linear operators
+\[
+\Omega^0(M) = C^\infty(M) \xrightarrow{\ d\ } \Omega^1(M) \xrightarrow{\ d\ } \Omega^2(M) \xrightarrow{\ d\ } \cdots \xrightarrow{\ d\ } \Omega^m(M) \xrightarrow{\ d\ } 0
+\]
+is given. These operators have the \textbf{properties of an exterior derivative} if:
+\begin{enumerate}[nosep]
+\item $d : \Omega^0(M) \to \Omega^1(M)$ is the differential of functions (Definition~\ref{def:differential-function}, Proposition~\ref{prop:d-operator});
+\item \emph{(product rule)} $d(\alpha \wedge \beta) = (d\alpha) \wedge \beta + (-1)^{|\alpha|}\, \alpha \wedge (d\beta)$ for $\alpha \in \Omega^k(M)$ and $\beta \in \Omega^l(M)$;
+\item $d \circ d = 0$, wherever the composition is defined;
+\item \emph{(naturality)} if $F : M \to N$ is a smooth map, then $F^*(d\beta) = d(F^*\beta)$ for every $\beta \in \Omega^k(N)$.
+\end{enumerate}
+\leeref{Theorem 14.24; Proposition 14.26}
+\end{defbox}
+
+\emph{Reading the properties.} The sequence stops at $\Omega^m(M)$ because every form of degree $m + 1$ or more on $M$ is identically zero (Corollary~\ref{cor:forms-above-dimension}); the last $d$ is zero. The operators are all denoted $d$, although they are different operators, with different domains and targets; the notation does not distinguish them. In the product rule, parentheses are written the first time and dropped afterwards: $d\alpha \wedge \beta$ means $(d\alpha) \wedge \beta$. Property~(3) makes the sequence a \emph{cochain complex} (in MATH~592, chain complexes appear, with a boundary operator whose square is zero). Property~(4) involves the operators on two manifolds, $M$ and $N$: on the left, $d$ is $d_N$, on the right $d_M$. So the properties concern the operators on all smooth manifolds at once, and it is in this sense that uniqueness is proved in Theorem~\ref{thm:exterior-derivative}: the operators on all manifolds, open subsets of $\mathbb{R}^m$ included, are determined by (1)--(4). (Lee proves uniqueness on a single manifold from (1)--(3) alone, using bump functions to show that $d$ is local; Theorem~14.24.) In the language of commutative diagrams, (4) says that $F^*$ is a map of cochain complexes:
+%% >>> ADDED: diagram (not from lecture)
+\begin{center}
+\begin{tikzcd}[column sep=large]
+\Omega^0(N) \arrow[r, "d"] \arrow[d, "F^*"'] & \Omega^1(N) \arrow[r, "d"] \arrow[d, "F^*"'] & \Omega^2(N) \arrow[r, "d"] \arrow[d, "F^*"'] & \cdots \\
+\Omega^0(M) \arrow[r, "d"] & \Omega^1(M) \arrow[r, "d"] & \Omega^2(M) \arrow[r, "d"] & \cdots
+\end{tikzcd}
+\end{center}
+\textit{(Not from lecture; diagram added.)} Each square commutes: going right then down is $F^*(d\beta)$, going down then right is $d(F^*\beta)$. For functions, the first square is Corollary~\ref{cor:pullback-d-forms}, from September; property (4) extends it to all degrees.
+%% <<< END ADDED
+
+\emph{Plan.} The theorem to be proved is that there is exactly one family of operators with these properties (Theorem~\ref{thm:exterior-derivative}). I.~Do the case of an open subset $M \subseteq \mathbb{R}^m$, proving all four properties there; for (4), $M \subseteq \mathbb{R}^m$ and $N \subseteq \mathbb{R}^n$ are both open. II.~Use charts to pass to manifolds. This is possible because $d$ is a differential operator, of order one: it takes one derivative of each component, so it is local.
+
+\subsection*{Step I: open subsets of $\mathbb{R}^m$}
+
+Let $U \subseteq \mathbb{R}^m$ be open, with the standard coordinates $x^1, \ldots, x^m$. A $k$-form $\alpha \in \Omega^k(U)$ is written once more as
+\[
+\alpha = \sum_A f_A\, dx^A , \qquad f_A \in C^\infty(U), \qquad dx^A = dx^{a_1} \wedge \cdots \wedge dx^{a_k} ,
+\]
+the sum over $A = \{a_1 < \cdots < a_k\} \subseteq \{1, \ldots, m\}$ (Definition~\ref{def:k-form-components} for the identity chart, Lemma~\ref{lem:k-form-smooth-any-chart}).
+
+\emph{The formula is forced.} Suppose that operators $d$ with properties (1)--(3) exist on $U$. By linearity, $d\alpha = \sum_A d(f_A\, dx^A)$. Since $f_A$ is a $0$-form, $f_A\, dx^A = f_A \wedge dx^A$, and the product rule (2), with $|f_A| = 0$, gives
+\[
+d\alpha = \sum_A \Big( df_A \wedge dx^A + f_A\, d\big(dx^A\big) \Big) .
+\]
+Now $d(dx^A) = d\big(dx^{a_1} \wedge \cdots \wedge dx^{a_k}\big)$ can be expanded by the product rule again, and each term of the expansion contains a factor $d(dx^{a_i}) = d\big(d(x^{a_i})\big)$, which is zero by (1) and (3). So $d(dx^A) = 0$ and $d\alpha = \sum_A df_A \wedge dx^A$. The logic: if $d$ exists, this computation can be done, and it leads to this formula. The formula is now taken as the definition, and the properties have to be checked.
+
+\begin{defbox}[Exterior Derivative on Open Subsets of $\mathbb{R}^m$]\deflabel{def:d-euclidean}
+Let $U \subseteq \mathbb{R}^m$ be open and $\alpha = \sum_A f_A\, dx^A \in \Omega^k(U)$. Its \textbf{exterior derivative} is
+\[
+d\alpha = \sum_A df_A \wedge dx^A = \sum_A \sum_{j=1}^m \frac{\partial f_A}{\partial x^j}\; dx^j \wedge dx^{a_1} \wedge \cdots \wedge dx^{a_k} \ \in \Omega^{k+1}(U) .
+\]
+\leeref{Ch.~14, \emph{The Exterior Derivative}, (14.19)--(14.20)}
+\end{defbox}
+
+The second expression substitutes $df_A = \sum_j \frac{\partial f_A}{\partial x^j}\, dx^j$ (Lemma~\ref{lem:df-coords}). The form $d\alpha$ is smooth by Proposition~\ref{prop:forms-operations-smooth}, and $d$ is linear, since the components $f_A$ depend linearly on $\alpha$ and $f \mapsto df$ is linear. On a function, $k = 0$: the only index set is $A = \varnothing$, with $dx^\varnothing = 1$, so $df$ is the differential of $f$ --- there are no $dx$'s, only the number $1$, and that is how the definition reads. Note that $dx^j \wedge dx^A$ is not, in general, one of the basis forms $dx^{A'}$: $j$ may be out of order, or repeated.
+
+\begin{lembox}[Wedging $dx^j$ onto $dx^A$]\thmlabel{lem:dxj-wedge-dxA}
+Let $j \in \{1, \ldots, m\}$ and $A = \{a_1 < \cdots < a_k\} \subseteq \{1, \ldots, m\}$. Then
+\[
+dx^j \wedge dx^A = \begin{cases} 0 & \text{if } j \in A, \\ \pm\, dx^{A \cup \{j\}} & \text{if } j \notin A, \end{cases}
+\]
+with the sign $(-1)^s$, where $s$ is the number of elements of $A$ smaller than $j$.
+\leeref{Ch.~14, \emph{The Exterior Derivative}}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture 32; the sign is filled in.)} All the forms are one-forms at each point, and for one-forms $\theta \wedge \theta' = -\theta' \wedge \theta$ (Proposition~\ref{prop:wedge-properties}(3) with $k = l = 1$), while the wedge product is associative. If $j = a_i \in A$, move $dx^j$ to the right past $dx^{a_1}, \ldots, dx^{a_{i-1}}$; this changes the sign $i - 1$ times and puts $dx^j$ next to $dx^{a_i} = dx^j$. For every one-form $\theta$, $\theta \wedge \theta = 0$, because exchanging the two factors gives $\theta \wedge \theta = -\,\theta \wedge \theta$ (Corollary~\ref{cor:odd-forms-square-zero}). So the product is $0$. If $j \notin A$, move $dx^j$ to the right past the $s$ factors $dx^{a_i}$ with $a_i < j$; this gives $(-1)^s$ times a wedge product of the $dx^c$, $c \in A \cup \{j\}$, in increasing order, which is $dx^{A \cup \{j\}}$.
+\end{proof}
+
+So the definition can be rewritten as $d\alpha = \sum_A \sum_{j \notin A} \pm \frac{\partial f_A}{\partial x^j}\, dx^{A \cup \{j\}}$: an expression of the same kind as the one we started with, except for the signs. The same reasoning gives the following lemma, which says that the defining formula may be used for any product of $dx$'s, sorted or not.
+
+\begin{lembox}[The Formula for Unsorted Indices]\thmlabel{lem:d-any-indices}
+Let $U \subseteq \mathbb{R}^m$ be open, $f \in C^\infty(U)$ and $c_1, \ldots, c_k \in \{1, \ldots, m\}$, in any order and possibly repeated. Then
+\[
+d\big( f\, dx^{c_1} \wedge \cdots \wedge dx^{c_k} \big) = df \wedge dx^{c_1} \wedge \cdots \wedge dx^{c_k} .
+\]
+\end{lembox}
+
+\begin{proof}
+\textit{(Filled in; Lecture 32 used it implicitly.)} As in the proof of Lemma~\ref{lem:dxj-wedge-dxA} (and of Proposition~\ref{prop:forms-operations-smooth}), exchanging neighbouring factors shows that $dx^{c_1} \wedge \cdots \wedge dx^{c_k}$ is $0$ if two of the $c_i$ are equal, and otherwise equals $\epsilon\, dx^C$, with $C = \{c_1, \ldots, c_k\}$ and a constant sign $\epsilon = \pm 1$. In the first case both sides are $0$ ($d$ is linear, so $d0 = 0$). In the second, by Definition~\ref{def:d-euclidean} and linearity, $d(f\, \epsilon\, dx^C) = \epsilon\, df \wedge dx^C = df \wedge \epsilon\, dx^C$.
+\end{proof}
+
+\begin{propbox}[Properties of the Euclidean Exterior Derivative]\thmlabel{prop:d-euclidean-properties}
+On open subsets of Euclidean spaces, the operators $d$ of Definition~\ref{def:d-euclidean} are linear and satisfy:
+\begin{enumerate}[nosep]
+\item on $\Omega^0(U) = C^\infty(U)$, $d$ is the differential of functions;
+\item $d(\alpha \wedge \beta) = d\alpha \wedge \beta + (-1)^{|\alpha|}\, \alpha \wedge d\beta$ for $\alpha \in \Omega^k(U)$, $\beta \in \Omega^l(U)$;
+\item $d \circ d = 0$;
+\item if $U \subseteq \mathbb{R}^m$ and $V \subseteq \mathbb{R}^n$ are open and $F : U \to V$ is smooth, then $F^*(d\beta) = d(F^*\beta)$ for every $\beta \in \Omega^k(V)$.
+\end{enumerate}
+Moreover $d$ commutes with restriction: $(d\alpha)|_{U'} = d(\alpha|_{U'})$ for every open $U' \subseteq U$.
+\leeref{Proposition 14.23}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture 32, in this order: (1), (3), (2), (4); the details marked are filled in.)} \emph{Restriction} \textit{(filled in)}: the components of $\alpha|_{U'}$ are the restrictions $f_A|_{U'}$, and the partial derivatives of $f_A|_{U'}$ are the restrictions of those of $f_A$.
+
+(1) This was observed after Definition~\ref{def:d-euclidean}.
+
+(3) $d^2 = 0$. Let $\alpha = \sum_A f_A\, dx^A$. By the definition, $d\alpha = \sum_A \sum_j \frac{\partial f_A}{\partial x^j}\, dx^j \wedge dx^A$, and by Lemma~\ref{lem:d-any-indices} (with the function $\partial f_A/\partial x^j$ and the indices $j, a_1, \ldots, a_k$) and associativity,
+\[
+d^2\alpha = \sum_A \sum_j d\Big( \frac{\partial f_A}{\partial x^j} \Big) \wedge dx^j \wedge dx^A = \sum_A \Big( \sum_j d\Big( \frac{\partial f_A}{\partial x^j} \Big) \wedge dx^j \Big) \wedge dx^A = \sum_A d\big(d f_A\big) \wedge dx^A ,
+\]
+the last step by the definition of $d$ on the one-form $df_A = \sum_j \frac{\partial f_A}{\partial x^j}\, dx^j$. So it is enough to show that $d^2 f = 0$ for every function $f$; that is, that the composite of the first two arrows of the sequence is zero. By the definition, twice,
+\[
+d^2 f = d\Big( \sum_{j=1}^m \frac{\partial f}{\partial x^j}\, dx^j \Big) = \sum_{j=1}^m d\Big( \frac{\partial f}{\partial x^j} \Big) \wedge dx^j = \sum_{j, l = 1}^m \frac{\partial^2 f}{\partial x^l\, \partial x^j}\; dx^l \wedge dx^j ,
+\]
+where $\frac{\partial^2 f}{\partial x^l\, \partial x^j} = \frac{\partial}{\partial x^l}\big(\frac{\partial f}{\partial x^j}\big)$. The pairs $(l, j)$ are unrestricted. When $l = j$ the term is $0$, since $dx^j \wedge dx^j = 0$. When $l \neq j$, exchange the names in the terms with $l > j$ and use $dx^j \wedge dx^l = -\,dx^l \wedge dx^j$:
+\[
+d^2 f = \sum_{1 \le l < j \le m} \Big( \frac{\partial^2 f}{\partial x^l\, \partial x^j} - \frac{\partial^2 f}{\partial x^j\, \partial x^l} \Big)\, dx^l \wedge dx^j = 0 ,
+\]
+because the mixed partials of the smooth function $f$ are equal (Clairaut's theorem). This is where $d^2 = 0$ comes from: it is the calculus fact that mixed partial derivatives commute. (All functions here are smooth, so the mixed partials exist and are continuous.)
+
+(2) Product rule. By linearity in $\alpha$ and in $\beta$, it is enough to consider $\alpha = \sum_A f_A\, dx^A$ of degree $k$ and $\beta = \sum_B g_B\, dx^B$ of degree $l$, with $B$ running over the $l$-element subsets. Functions commute with everything, so they can be brought to the front, and bilinearity gives
+\[
+\alpha \wedge \beta = \sum_{A, B} f_A\, g_B\; dx^A \wedge dx^B .
+\]
+By Lemma~\ref{lem:d-any-indices}, since $dx^A \wedge dx^B = dx^{a_1} \wedge \cdots \wedge dx^{a_k} \wedge dx^{b_1} \wedge \cdots \wedge dx^{b_l}$, and the product rule for functions, $d(fg) = f\, dg + g\, df$ (Proposition~\ref{prop:d-operator}),
+\[
+d(\alpha \wedge \beta) = \sum_{A, B} d\big(f_A g_B\big) \wedge dx^A \wedge dx^B = \sum_{A, B} \Big( \underbrace{f_A\; dg_B \wedge dx^A \wedge dx^B}_{\textcircled{\scriptsize 1}} + \underbrace{g_B\; df_A \wedge dx^A \wedge dx^B}_{\textcircled{\scriptsize 2}} \Big) .
+\]
+\emph{Terms \textcircled{\scriptsize 2}.} Scalars move freely across wedges, so $g_B\, df_A \wedge dx^A \wedge dx^B = (df_A \wedge dx^A) \wedge (g_B\, dx^B)$; summing over $A$ and $B$ and undoing the distributivity gives $\sum_{A, B} \textcircled{\scriptsize 2} = d\alpha \wedge \beta$, with no sign.
+
+\emph{Terms \textcircled{\scriptsize 1}.} To move $dg_B$ next to $dx^B$, it has to cross $dx^A$. Now $dg_B$ is a one-form, and $dx^A$ is a wedge product of $|A| = k$ one-forms; each exchange of $dg_B$ with one of them gives a factor $-1$, so $dg_B \wedge dx^A = (-1)^k\, dx^A \wedge dg_B$. Hence
+\[
+\sum_{A, B} \textcircled{\scriptsize 1} = (-1)^{|\alpha|} \sum_{A, B} f_A\, dx^A \wedge \big( dg_B \wedge dx^B \big) = (-1)^{|\alpha|}\, \alpha \wedge d\beta .
+\]
+This is where the sign in the product rule comes from.
+
+(4) Naturality. Let $x^1, \ldots, x^m$ be the coordinates on $U \subseteq \mathbb{R}^m$ and $y^1, \ldots, y^n$ those on $V \subseteq \mathbb{R}^n$, and $\beta = \sum_A f_A\, dy^A \in \Omega^k(V)$, now with $A \subseteq \{1, \ldots, n\}$. The task is to show $d\big(F^*\beta\big) = F^*(d\beta)$. Both sides are linear in $\beta$, so it is enough to show it for each summand $f_A\, dy^A$. Since the pullback of a wedge product is the wedge product of the pullbacks (Proposition~\ref{prop:pullback-k-form-properties}(2)) and the pullback commutes with $d$ on functions (Proposition~\ref{prop:pullback-k-form-properties}(3)),
+\[
+F^*\big(f_A\, dy^A\big) = F^*(f_A)\; F^*(dy^{a_1}) \wedge \cdots \wedge F^*(dy^{a_k}) = F^*(f_A)\; d\big(F^*y^{a_1}\big) \wedge \cdots \wedge d\big(F^*y^{a_k}\big) ,
+\]
+as in the example at the beginning of the lecture (the remark \emph{Putting $F^*$ Everywhere} in \ref{sec:forms-manifolds}). Apply $d$, using the properties already proved. By (2), with $F^*(f_A)$ of degree $0$,
+\[
+d\Big( F^*(f_A)\; d\big(F^*y^{a_1}\big) \wedge \cdots \wedge d\big(F^*y^{a_k}\big) \Big) = d\big(F^*(f_A)\big) \wedge d\big(F^*y^{a_1}\big) \wedge \cdots \wedge d\big(F^*y^{a_k}\big) ,
+\]
+because the other term contains $d\big(dh_1 \wedge \cdots \wedge dh_k\big)$, with $h_i = F^*y^{a_i}$, and this is $0$: \textit{(filled in)} by induction on $k$, using (2) and (3), $d\big(dh_1 \wedge (dh_2 \wedge \cdots \wedge dh_k)\big) = d(dh_1) \wedge (\cdots) - dh_1 \wedge d(dh_2 \wedge \cdots \wedge dh_k) = 0 - 0$. Finally, $d\big(F^*(f_A)\big) = F^*(df_A)$ (on functions), and the $d(F^*y^{a_i})$ are again $F^*(dy^{a_i})$, so
+\[
+d\, F^*\big(f_A\, dy^A\big) = F^*(df_A) \wedge F^*(dy^A) = F^*\big(df_A \wedge dy^A\big) = F^*\big(d(f_A\, dy^A)\big) ,
+\]
+the last step by Definition~\ref{def:d-euclidean}. This is (4) for one summand.
+\end{proof}
+
+\textbf{Transcription notes (Lecture 32).} In the proof of (3) the board wrote $d^2\alpha = \sum_A \sum_j d(df_A) \wedge dx^A$; once the inner sum over $j$ has been absorbed into $d(df_A)$, only $\sum_A$ remains. In the proof of (2) the board wrote $\sum_{A, B} \textcircled{\scriptsize 2} = d\alpha \wedge d\beta$; the terms \textcircled{\scriptsize 2} give $d\alpha \wedge \beta$.
+
+So the exterior derivative exists on open sets of $\mathbb{R}^m$.
+
+\subsection*{Step II: passing to manifolds}
+
+The definition on a manifold transports the Euclidean $d$ through a chart. Its consistency rests on how pullbacks compose, which has been used implicitly so far and is recorded here.
+
+\begin{lembox}[Pullbacks Compose]\thmlabel{lem:pullback-forms-functorial}
+\textit{(Not from lecture; filled in.)} Let $F : M \to N$ and $G : N \to P$ be smooth, and $\omega$ a $k$-form on $P$.
+\begin{enumerate}[nosep]
+\item $(G \circ F)^*\omega = F^*(G^*\omega)$, and $\mathrm{id}_P^*\, \omega = \omega$.
+\item If $F$ is a diffeomorphism, then $F^* : \Omega^k(N) \to \Omega^k(M)$ is bijective, with inverse $(F^{-1})^*$.
+\item If $U \subseteq M$ is open and $\iota : U \hookrightarrow M$ is the inclusion, then $\iota^*\eta = \eta|_U$ for a form $\eta$ on $M$; and if $F(U) \subseteq V$ with $V \subseteq N$ open, then $(F^*\eta')|_U = (F|_U)^*(\eta'|_V)$ for a form $\eta'$ on $N$, where $F|_U : U \to V$.
+\end{enumerate}
+\leeref{Proposition 12.25(e),(f) (for covariant tensors)}
+\end{lembox}
+
+\begin{proof}
+(1) For linear maps $T : V_1 \to V_2$ and $S : V_2 \to V_3$, $(S \circ T)^* = T^* \circ S^*$ on $\Lambda^k V_3^*$, since both send $\beta$ to $(v^1, \ldots, v^k) \mapsto \beta(STv^1, \ldots, STv^k)$ (Definition~\ref{def:linear-pullback}). By the chain rule (Theorem~\ref{prop:pushforward-functorial}), $d(G \circ F)_p = dG_{F(p)} \circ dF_p$, so at each $p$, $\big((G \circ F)^*\omega\big)_p = (dF_p)^* (dG_{F(p)})^*\, \omega_{G(F(p))} = \big(F^*(G^*\omega)\big)_p$ (Definition~\ref{def:pullback-k-form}). The differential of the identity is the identity, whose pullback is the identity. (2) follows from (1) applied to $F^{-1} \circ F = \mathrm{id}_M$ and $F \circ F^{-1} = \mathrm{id}_N$. (3) Under the identification $T_pU = T_pM$ by $d\iota_p$ (Lemma~\ref{lem:germs-local}), $(\iota^*\eta)_p = (d\iota_p)^*\eta_p = \eta_p$. Similarly $d(F|_U)_p = dF_p$, so both sides of the last identity are $(dF_p)^*\eta'_{F(p)}$ at $p \in U$.
+\end{proof}
+
+Let $(U, \varphi)$ be a smooth chart of $M$. The chart is a diffeomorphism $\varphi : U \to \varphi(U)$ onto an open subset of $\mathbb{R}^m$ (Proposition~\ref{prop:chart-diffeo}), so $\varphi^{-1} : \varphi(U) \to U$ pulls forms on $U$ back to forms on $\varphi(U) \subseteq \mathbb{R}^m$, where the Euclidean $d$ of Step~I is available. So a form on $U$ can be pulled back to Euclidean space, differentiated there, and the result pulled back up: for $\alpha \in \Omega^k(M)$ this gives the $(k+1)$-form $\varphi^*\, d\, (\varphi^{-1})^*\alpha$ on $U$, where $(\varphi^{-1})^*\alpha$ means $(\varphi^{-1})^*(\alpha|_U)$.
+
+The argument is not circular: the $d$ in the middle is the Euclidean one, constructed in Step~I. The lecture took this formula as the definition of $d\alpha$ on $U$ and left as an exercise that it does not depend on the chart. The exercise comes first here, so that the definition is complete when it is stated.
+
+\begin{lembox}[Independence of the Chart]\thmlabel{lem:d-chart-independent}
+Let $(U, \varphi)$ and $(V, \psi)$ be smooth charts of $M$ and $\alpha \in \Omega^k(M)$. On $W = U \cap V$,
+\[
+\varphi^*\, d\, \big(\varphi^{-1}\big)^*\alpha = \psi^*\, d\, \big(\psi^{-1}\big)^*\alpha .
+\]
+\leeref{Theorem 14.24, proof}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture 32 left this as an exercise in diagram chasing, with the hint to use naturality; filled in.)} Both sides restrict to $W$, and by Proposition~\ref{prop:d-euclidean-properties} (restriction) and Lemma~\ref{lem:pullback-forms-functorial}(3), the left side on $W$ is computed with the chart $\varphi|_W : W \to \varphi(W)$ and the right side with $\psi|_W : W \to \psi(W)$. So assume $U = V = W$. The change of coordinates $\tau = \psi \circ \varphi^{-1} : \varphi(W) \to \psi(W)$ is a smooth map between open subsets of $\mathbb{R}^m$ (a diffeomorphism, Definition~\ref{def:compatible}), with $\psi = \tau \circ \varphi$ and $\varphi^{-1} = \psi^{-1} \circ \tau$. By Lemma~\ref{lem:pullback-forms-functorial}(1), then naturality of the Euclidean $d$ (Proposition~\ref{prop:d-euclidean-properties}(4)) for $\tau$, then Lemma~\ref{lem:pullback-forms-functorial}(1) again,
+\[
+\varphi^*\, d\, (\varphi^{-1})^*\alpha = \varphi^*\, d\, \tau^* (\psi^{-1})^*\alpha = \varphi^*\, \tau^*\, d\, (\psi^{-1})^*\alpha = (\tau \circ \varphi)^*\, d\, (\psi^{-1})^*\alpha = \psi^*\, d\, (\psi^{-1})^*\alpha . \qedhere
+\]
+\end{proof}
+
+%% >>> ADDED: diagram (not from lecture)
+\begin{center}
+\begin{tikzcd}[column sep=small, row sep=large]
+& \Omega^k(W) \arrow[dl, "(\varphi^{-1})^*"'] \arrow[dr, "(\psi^{-1})^*"] & \\
+\Omega^k(\varphi(W)) \arrow[d, "d"'] & & \Omega^k(\psi(W)) \arrow[ll, "\tau^*"'] \arrow[d, "d"] \\
+\Omega^{k+1}(\varphi(W)) \arrow[dr, "\varphi^*"'] & & \Omega^{k+1}(\psi(W)) \arrow[ll, "\tau^*"'] \arrow[dl, "\psi^*"] \\
+& \Omega^{k+1}(W) &
+\end{tikzcd}
+\end{center}
+\textit{(Not from lecture; diagram added.)} The proof of Lemma~\ref{lem:d-chart-independent}, with $\tau = \psi \circ \varphi^{-1}$. The top and bottom triangles commute because pullbacks compose ($\varphi^{-1} = \psi^{-1} \circ \tau$ and $\psi = \tau \circ \varphi$), and the middle square is the naturality of the Euclidean $d$ for $\tau$. So the two ways from the top to the bottom, through the left chart and through the right one, agree.
+%% <<< END ADDED
+
+\begin{defbox}[Exterior Derivative on a Manifold]\deflabel{def:exterior-derivative}
+Let $\alpha \in \Omega^k(M)$. For a smooth chart $(U, \varphi)$ of $M$, define $d\alpha$ on $U$ by
+\[
+d\alpha\big|_U = \varphi^*\, d\, \big(\varphi^{-1}\big)^* \alpha ,
+\]
+where $(\varphi^{-1})^*\alpha$ means $(\varphi^{-1})^*(\alpha|_U) \in \Omega^k(\varphi(U))$ (Proposition~\ref{prop:pullback-k-form-properties}(5)), $d$ is the Euclidean exterior derivative of Definition~\ref{def:d-euclidean} on the open set $\varphi(U) \subseteq \mathbb{R}^m$, and $\varphi^*$ pulls the resulting $(k+1)$-form back to $U$. By Lemma~\ref{lem:d-chart-independent}, the forms so defined for different charts agree where their domains overlap, so they define a form $d\alpha$ on all of $M$; it is smooth, since it is smooth on each chart domain.
+\leeref{Theorem 14.24, proof}
+\end{defbox}
+
+%% >>> ADDED: figure (not from lecture; the board drew the left half)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\draw[thick, fill=gray!8] plot[smooth cycle] coordinates {(-1.4,0.1) (-0.6,0.9) (0.6,1.0) (1.4,0.3) (1.0,-0.7) (-0.3,-0.9) (-1.2,-0.6)};
+\node[font=\small] at (-1.0,0.95) {$M$};
+\draw[blue!70!black, thick, fill=blue!10] (0.05,0.05) ellipse (0.62 and 0.42);
+\node[blue!70!black, font=\small] at (0.05,0.05) {$U$};
+\draw[->, thick] (0.05,-0.45) -- node[right, font=\small] {$\varphi$} (0.05,-1.55);
+\draw[gray!70] (-1.6,-3.1) rectangle (1.7,-1.75);
+\node[font=\scriptsize, gray!70!black] at (1.35,-1.95) {$\mathbb{R}^m$};
+\draw[blue!70!black, thick, fill=blue!10] (0.05,-2.45) ellipse (0.7 and 0.4);
+\node[blue!70!black, font=\small] at (0.05,-2.45) {$\varphi(U)$};
+\end{tikzpicture}
+\end{center}
+\begin{center}
+\begin{tikzcd}[column sep=large, row sep=large]
+\Omega^k(U) \arrow[r, "(\varphi^{-1})^*"] \arrow[d, dashed, "d"'] & \Omega^k(\varphi(U)) \arrow[d, "d\ \text{(Euclidean)}"] \\
+\Omega^{k+1}(U) & \Omega^{k+1}(\varphi(U)) \arrow[l, "\varphi^*"]
+\end{tikzcd}
+\end{center}
+\textit{(Not from lecture; diagram added.)} Definition~\ref{def:exterior-derivative}. Above, the chart, as drawn on the board. Below, the dashed arrow $d$ on $U$ is defined to make the square commute: across to Euclidean space by $(\varphi^{-1})^*$, down by the Euclidean $d$, and back by $\varphi^*$. Since $\varphi^*$ and $(\varphi^{-1})^*$ are inverse bijections (Lemma~\ref{lem:pullback-forms-functorial}(2)), the square then commutes in both directions, $(\varphi^{-1})^*\, d\alpha|_U = d\, (\varphi^{-1})^*\alpha$: naturality for the diffeomorphism $\varphi^{-1}$ holds by construction.
+%% <<< END ADDED
+
+\begin{corbox}[The Exterior Derivative in Coordinates]\thmlabel{cor:d-coordinates}
+\textit{(Not from lecture; filled in.)} Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart and $\alpha = \sum_A f_A\, dx^A$ on $U$. Then, on $U$,
+\[
+d\alpha = \sum_A df_A \wedge dx^A = \sum_A \sum_{j=1}^m \frac{\partial f_A}{\partial x^j}\; dx^j \wedge dx^A ,
+\]
+the same formula as in Definition~\ref{def:d-euclidean}, now with the coordinates of the chart.
+\leeref{Theorem 14.24 and (14.19)}
+\end{corbox}
+
+\begin{proof}
+Let $r^1, \ldots, r^m$ be the standard coordinates of $\mathbb{R}^m$, so $x^i = r^i \circ \varphi$ and $r^i = x^i \circ \varphi^{-1}$. By Proposition~\ref{prop:pullback-k-form-properties}(2),(3), $(\varphi^{-1})^*(dx^i) = d(x^i \circ \varphi^{-1}) = dr^i$ and $\varphi^*(dr^i) = dx^i$, so $(\varphi^{-1})^*\alpha = \sum_A (f_A \circ \varphi^{-1})\, dr^A$. The Euclidean $d$ gives $\sum_A d(f_A \circ \varphi^{-1}) \wedge dr^A$, and pulling back by $\varphi$, with $\varphi^*\, d(f_A \circ \varphi^{-1}) = d(f_A \circ \varphi^{-1} \circ \varphi) = df_A$, gives $\sum_A df_A \wedge dx^A$. The second form is Lemma~\ref{lem:df-coords}.
+\end{proof}
+
+\begin{thmbox}[The Exterior Derivative]\thmlabel{thm:exterior-derivative}
+There is exactly one family of linear operators $d : \Omega^k(M) \to \Omega^{k+1}(M)$, for all smooth manifolds $M$ and all $k \ge 0$, with the four properties of Definition~\ref{def:d-properties}:
+\begin{enumerate}[nosep]
+\item on $\Omega^0(M) = C^\infty(M)$, $d$ is the differential of functions;
+\item $d(\alpha \wedge \beta) = d\alpha \wedge \beta + (-1)^{|\alpha|}\, \alpha \wedge d\beta$;
+\item $d \circ d = 0$;
+\item $F^*(d\beta) = d(F^*\beta)$ for every smooth map $F : M \to N$ and every $\beta \in \Omega^k(N)$.
+\end{enumerate}
+It is the operator of Definition~\ref{def:exterior-derivative}, the \textbf{exterior derivative}: in any smooth chart $(U, (x^i))$, $d\big(\sum_A f_A\, dx^A\big) = \sum_A df_A \wedge dx^A$ (Corollary~\ref{cor:d-coordinates}).
+\leeref{Theorem 14.24; Proposition 14.26}
+\end{thmbox}
+
+\begin{proof}
+\textit{(Lecture 32 stated Step~II and left the details; filled in.)} \emph{Existence.} Define $d$ on $M$ by Definition~\ref{def:exterior-derivative}; it is linear, because each $\varphi^*$, $(\varphi^{-1})^*$ and the Euclidean $d$ are. All four properties can be checked on the domain $U$ of a chart $\varphi$, since such domains cover $M$; write $\alpha' = (\varphi^{-1})^*\alpha$ and $\beta' = (\varphi^{-1})^*\beta$, so that $\alpha|_U = \varphi^*\alpha'$, $\beta|_U = \varphi^*\beta'$, $d\alpha|_U = \varphi^* d\alpha'$ and $d\beta|_U = \varphi^* d\beta'$ (Lemma~\ref{lem:pullback-forms-functorial}(2)).
+\begin{enumerate}[nosep]
+\item For $f \in C^\infty(M)$, $df|_U = \varphi^*\, d(f \circ \varphi^{-1}) = d\big(f \circ \varphi^{-1} \circ \varphi\big) = d(f|_U)$, by Proposition~\ref{prop:d-euclidean-properties}(1) and Corollary~\ref{cor:pullback-d-forms}: the differential of $f$ on $U$.
+\item The pullback preserves wedge products, so $(\varphi^{-1})^*(\alpha \wedge \beta) = \alpha' \wedge \beta'$, and by the Euclidean product rule,
+\[
+d(\alpha \wedge \beta)|_U = \varphi^*\big( d\alpha' \wedge \beta' + (-1)^k \alpha' \wedge d\beta' \big) = d\alpha \wedge \beta + (-1)^k\, \alpha \wedge d\beta \quad \text{on } U .
+\]
+\item $(\varphi^{-1})^*(d\alpha|_U) = d\alpha'$, so $d(d\alpha)|_U = \varphi^*\, d(d\alpha') = 0$ by the Euclidean (3).
+\item Let $F : M \to N$ and $p \in M$. By Lemma~\ref{lem:charts-around-map} there are charts $(U, \varphi)$ at $p$ and $(V, \psi)$ at $F(p)$ with $F(U) \subseteq V$; let $\hat F = \psi \circ F \circ \varphi^{-1} : \varphi(U) \to \psi(V)$, a smooth map between open subsets of Euclidean spaces, so that $F|_U = \psi^{-1} \circ \hat F \circ \varphi$. On $U$, by Lemma~\ref{lem:pullback-forms-functorial} and the Euclidean naturality for $\hat F$,
+\[
+\begin{aligned}
+d(F^*\beta)|_U &= \varphi^*\, d\, (\varphi^{-1})^* \varphi^*\, \hat F^*\, (\psi^{-1})^*\beta = \varphi^*\, d\, \hat F^*\, (\psi^{-1})^*\beta \\
+&= \varphi^*\, \hat F^*\, d\, (\psi^{-1})^*\beta = F^*\, \psi^*\, d\, (\psi^{-1})^*\beta = F^*(d\beta)|_U .
+\end{aligned}
+\]
+\end{enumerate}
+\emph{Uniqueness.} Suppose operators $d'$ on all smooth manifolds satisfy (1)--(4). On an open subset of $\mathbb{R}^m$, the computation before Definition~\ref{def:d-euclidean} used only linearity and (1)--(3), so $d'$ is the Euclidean $d$. On $M$, let $(U, \varphi)$ be a chart and $\iota : U \hookrightarrow M$ the inclusion. Naturality (4) for $\iota$ gives $(d'\alpha)|_U = \iota^*(d'\alpha) = d'(\iota^*\alpha) = d'(\alpha|_U)$: $d'$ is local. Naturality for the smooth map $\varphi : U \to \varphi(U)$, applied to $(\varphi^{-1})^*\alpha$, gives
+\[
+d'\big(\alpha|_U\big) = d'\big(\varphi^*\, (\varphi^{-1})^*\alpha\big) = \varphi^*\, d'\big((\varphi^{-1})^*\alpha\big) = \varphi^*\, d\, (\varphi^{-1})^*\alpha = d\alpha|_U ,
+\]
+the third step because $d'$ is the Euclidean $d$ on $\varphi(U)$. As the chart domains cover $M$, $d' = d$. The formula in coordinates is Corollary~\ref{cor:d-coordinates}.
+\end{proof}
+
+\textit{Not from lecture: the exterior derivative on $\mathbb{R}^3$.} The lecture announced that on $\mathbb{R}^3$ the second and third arrows of the sequence are the curl and the divergence; with Corollary~\ref{cor:d-coordinates} this is a computation. Subscripts denote partial derivatives, $P_y = \partial P/\partial y$.
+
+\begin{exbox}[The Exterior Derivative on $\mathbb{R}^3$]\exlabel{ex:d-r3}
+\textit{(Not from lecture; filled in.)} On an open set of $\mathbb{R}^3$ with coordinates $x, y, z$:
+\begin{enumerate}[nosep]
+\item $df = f_x\, dx + f_y\, dy + f_z\, dz$: the components are those of the gradient of $f$.
+\item For $\theta = P\, dx + Q\, dy + R\, dz$,
+\[
+d\theta = (R_y - Q_z)\; dy \wedge dz + (P_z - R_x)\; dz \wedge dx + (Q_x - P_y)\; dx \wedge dy ,
+\]
+whose components are those of the curl of $(P, Q, R)$.
+\item For $\eta = A\, dy \wedge dz + B\, dz \wedge dx + C\, dx \wedge dy$,
+\[
+d\eta = (A_x + B_y + C_z)\; dx \wedge dy \wedge dz ,
+\]
+whose coefficient is the divergence of $(A, B, C)$.
+\end{enumerate}
+\leeref{Example 14.27}
+\end{exbox}
+
+\begin{proof}[Computation]
+(1) is Lemma~\ref{lem:df-coords}. (2) $d\theta = dP \wedge dx + dQ \wedge dy + dR \wedge dz$, and in $dP \wedge dx = P_y\, dy \wedge dx + P_z\, dz \wedge dx$ the term with $dx \wedge dx$ is $0$; collecting, with $dy \wedge dx = -\,dx \wedge dy$ and $dz \wedge dy = -\,dy \wedge dz$, gives the formula. (3) In $dA \wedge dy \wedge dz$ only $A_x\, dx \wedge dy \wedge dz$ survives; $dB \wedge dz \wedge dx$ leaves $B_y\, dy \wedge dz \wedge dx = B_y\, dx \wedge dy \wedge dz$ (a cyclic permutation of three one-forms is even: two exchanges); likewise $C_z\, dz \wedge dx \wedge dy = C_z\, dx \wedge dy \wedge dz$.
+\end{proof}
+
+The basis $dy \wedge dz$, $dz \wedge dx$, $dx \wedge dy$ is used here (with $dz \wedge dx = -\,dx \wedge dz$, out of increasing order) because it matches the components of a vector field, as in \ref{sec:two-form-integrand}. In this dictionary $d \circ d = 0$ becomes $\operatorname{curl} \operatorname{grad} = 0$ and $\operatorname{div} \operatorname{curl} = 0$. For one-forms, $d\theta = 0$ is the condition $\partial\theta_j/\partial x^k = \partial\theta_k/\partial x^j$ of Definition~\ref{def:closed-one-form}: by Corollary~\ref{cor:d-coordinates} and the computation in the proof of Proposition~\ref{prop:d-euclidean-properties}(3), $d\theta = \sum_{j < k} \big( \partial\theta_k/\partial x^j - \partial\theta_j/\partial x^k \big)\, dx^j \wedge dx^k$ in every chart.
+
+% ============================================================================
+% Lecture 32 (Wed Nov 18, 2026): de Rham cohomology
+% ============================================================================
+
+\section{De Rham Cohomology}\label{sec:de-rham}
+
+\roadmark{Stage: forms}{The kernel of $d$ modulo the image of $d$: real vector spaces attached to a manifold, invariant under homotopy; in degree zero, one dimension for each connected component.}
+
+\textit{(Lecture 32, last minutes.)} With $d$ in hand, the de Rham cohomology can be defined. By convention $\Omega^{-1}(M) = 0$, and $d : \Omega^{-1}(M) \to \Omega^0(M)$ is the zero map. Since each $d : \Omega^k(M) \to \Omega^{k+1}(M)$ is linear, its kernel is a linear subspace of $\Omega^k(M)$, possibly infinite-dimensional ($\Omega^k(M)$ is infinite-dimensional when $0 \le k \le m$ and $m \ge 1$), and so is the image of the previous $d$.
+
+\begin{defbox}[Closed Form]\deflabel{def:closed-form}
+\textit{(Not from lecture: Lee's terminology.)} A form $\omega \in \Omega^k(M)$ is \textbf{closed} if $d\omega = 0$. For one-forms this is the notion of Definition~\ref{def:closed-one-form} (see the end of \ref{sec:exterior-derivative}).
+\leeref{Ch.~17, \emph{The de Rham Cohomology Groups}}
+\end{defbox}
+
+\begin{defbox}[Exact Form]\deflabel{def:exact-form}
+\textit{(Not from lecture: Lee's terminology.)} A form $\omega \in \Omega^k(M)$, $k \ge 1$, is \textbf{exact} if $\omega = d\eta$ for some $\eta \in \Omega^{k-1}(M)$. For one-forms this is the notion of Definition~\ref{def:exact-one-form}.
+\leeref{Ch.~17, \emph{The de Rham Cohomology Groups}}
+\end{defbox}
+
+\begin{lembox}[Exact Forms Are Closed]\thmlabel{lem:exact-closed}
+\textit{(Not from lecture; filled in.)} $\operatorname{im}\big(d : \Omega^{k-1}(M) \to \Omega^k(M)\big) \subseteq \ker\big(d : \Omega^k(M) \to \Omega^{k+1}(M)\big)$.
+\end{lembox}
+
+\begin{proof}
+If $\omega = d\eta$, then $d\omega = d(d\eta) = 0$ by Theorem~\ref{thm:exterior-derivative}(3). For $k = 0$ the image is $0$.
+\end{proof}
+
+So the image is a linear subspace of the kernel, and the quotient vector space makes sense.
+
+\begin{defbox}[De Rham Cohomology]\deflabel{def:de-rham}
+The \textbf{$k$-th de Rham cohomology space} of $M$ is the real vector space
+\[
+H^k(M) = \frac{\ker\big(d : \Omega^k(M) \to \Omega^{k+1}(M)\big)}{\operatorname{im}\big(d : \Omega^{k-1}(M) \to \Omega^k(M)\big)} = \frac{\{\text{closed } k\text{-forms on } M\}}{\{\text{exact } k\text{-forms on } M\}} .
+\]
+In particular, since there is nothing to divide by in degree $0$,
+\[
+H^0(M) = \ker\big(d : C^\infty(M) \to \Omega^1(M)\big) .
+\]
+\leeref{Ch.~17, \emph{The de Rham Cohomology Groups}}
+\end{defbox}
+
+\textbf{Transcription note (Lecture 32).} The board wrote the denominator as $\operatorname{Im}\big(d : \Omega^{k+1} \to \Omega^k\big)$; the map into $\Omega^k$ is $d : \Omega^{k-1} \to \Omega^k$, from the previous term of the sequence.
+
+These are real vector spaces. (In MATH~592 a different type of homology and cohomology appears, with groups instead of vector spaces; Lee also says ``de Rham groups''.) A real vector space, at least a finite-dimensional one, has only one invariant, its dimension.
+
+\begin{defbox}[Betti Numbers]\deflabel{def:betti}
+The \textbf{$k$-th Betti number} of $M$ is $b_k(M) = \dim H^k(M)$, a nonnegative integer or $\infty$.
+\end{defbox}
+
+The board writes $\beta_k$ (see the remark \emph{Notation of Lecture 32} in \ref{sec:exterior-derivative}). The spaces $H^k(M)$, and so the Betti numbers, turn out to be topological invariants of $M$, and in fact homotopy invariants; this will be proved (Lee, Theorem~17.11 and Corollary~17.12). In general they can be hard to compute; for the unitary group, for instance, the cohomology is an interesting problem, with a beautiful answer. The first step towards invariance is naturality.
+
+\begin{propbox}[Smooth Maps Act on Cohomology]\thmlabel{prop:cohomology-maps}
+\textit{(Not from lecture; filled in.)} Let $F : M \to N$ be smooth. Then $F^*$ maps closed forms to closed forms and exact forms to exact forms, so it induces linear maps
+\[
+F^\# : H^k(N) \to H^k(M), \qquad F^\#[\omega] = [F^*\omega] .
+\]
+Moreover $(G \circ F)^\# = F^\# \circ G^\#$ and $\mathrm{id}^\# = \mathrm{id}$; hence a diffeomorphism $F$ induces isomorphisms $F^\#$, and diffeomorphic manifolds have isomorphic de Rham cohomology and the same Betti numbers.
+\leeref{Proposition 17.2; Corollary 17.4}
+\end{propbox}
+
+\begin{proof}
+By naturality (Theorem~\ref{thm:exterior-derivative}(4)), if $d\omega = 0$ then $d(F^*\omega) = F^*(d\omega) = 0$, and if $\omega = d\eta$ then $F^*\omega = d(F^*\eta)$. So the linear map $F^*$ sends the kernel into the kernel and the image into the image, and therefore induces a linear map of the quotients; $F^\#[\omega]$ does not depend on the representative, because two representatives differ by an exact form. The composition rules follow from Lemma~\ref{lem:pullback-forms-functorial}(1), and for a diffeomorphism $(F^{-1})^\#$ is an inverse of $F^\#$.
+\end{proof}
+
+\begin{propbox}[Cohomology in Degree Zero]\thmlabel{prop:h0}
+$H^0(M) = \{ f \in C^\infty(M) : df = 0 \}$ is the space of locally constant smooth functions on $M$, and $b_0(M)$ is the number of connected components of $M$.
+\leeref{Proposition 17.5; Proposition 17.6}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture 32: the first statement from a homework problem, the second as the answer to the question; details filled in.)} \emph{$df = 0$ if and only if $f$ is locally constant.} Since $df_p = \iota_{f(p)} \circ f_{*p}$ with $\iota_{f(p)}$ an isomorphism (Definition~\ref{def:differential-function}), $df = 0$ means $f_{*p} = 0$ for every $p$. If so, let $p \in M$ and let $U$ be a connected open neighbourhood of $p$ (the preimage of an open ball under a chart); by Proposition~\ref{prop:zero-differential} (Assignment~4: a smooth map with zero differential on a connected manifold is constant), applied to $f|_U$, $f$ is constant on $U$. Conversely, if $f$ is constant near $p$, then $df_p(v) = v[f] = 0$ (Proposition~\ref{prop:df-derivation}), since a derivation depends only on the germ of $f$ and kills constants.
+
+\emph{Counting.} The connected components of $M$ are open (Proposition~\ref{prop:count-components} and its proof: $M$ is locally connected), and there are at most countably many. A locally constant function is constant on each component $C$: it has zero differential on the connected open submanifold $C$, so Proposition~\ref{prop:zero-differential} applies. Conversely, a function that is constant on each component is locally constant, because the components are open, hence smooth. So $f \mapsto (f|_C)_C$ is a linear isomorphism from $H^0(M)$ onto the space of all real-valued functions on the set of components. If $M$ has $r$ components, this space is $\mathbb{R}^r$ and $b_0(M) = r$; if $M$ has infinitely many, it is infinite-dimensional, and $b_0(M) = \infty$.
+\end{proof}
+
+So $b_0(M)$ is a topological invariant, by inspection. (The homework, Assignment~4, proved that $f$ is constant when $M$ is connected; but $M$ need not be connected, and in general $df = 0$ says only that $f$ is locally constant.)
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=1.25]
+\draw[thick, fill=red!8] plot[smooth cycle] coordinates {(0,0) (0.8,0.7) (1.8,0.5) (2.1,-0.3) (1.2,-0.8) (0.3,-0.6)};
+\node[font=\small] at (1.05,-0.05) {$f \equiv 2$};
+\draw[thick, fill=blue!8, even odd rule] (4.2,0) ellipse (1.1 and 0.75) (4.2,0) ellipse (0.45 and 0.3);
+\node[font=\small] at (4.2,-1.05) {$f \equiv -1$};
+\draw[thick, fill=green!8] plot[smooth cycle] coordinates {(6.6,-0.2) (7.0,0.6) (7.9,0.8) (8.4,0.1) (8.0,-0.7) (7.1,-0.7)};
+\node[font=\small] at (7.5,0.0) {$f \equiv 0$};
+\node[font=\small] at (-0.4,0.9) {$M$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} A surface $M$ with three connected components (one of them an annulus). A smooth function with $df = 0$ is constant on each component, with independent values, here $2$, $-1$ and $0$; so $H^0(M) \cong \mathbb{R}^3$, by $f \mapsto$ its three values, and $b_0(M) = 3$. The hole of the annulus plays no role in $H^0$.
+%% <<< END ADDED
+
+Next: $H^1(S^1)$, announced for the beginning of the next lecture, as an exercise to think about beforehand.
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -36802,6 +37233,8 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:wedge-properties}\ Properties of the wedge product & Chapter 14, \emph{The Wedge Product} (Lemma 14.10, Proposition 14.11) \\
 \ref{sec:linear-pullback}\ Pullbacks of linear forms & Chapter 12, \emph{Pullbacks of Tensor Fields} (the pullback at a point); Chapter 14, Proposition 14.9 \\
 \ref{sec:forms-manifolds}\ Differential forms on manifolds & Chapter 14, \emph{Differential Forms on Manifolds} (Exercise 14.14, Lemma 14.16, Examples 14.18 and 14.19, Proposition 14.20, Corollary 14.21); Chapter 10, Lemma 10.6 (the vector bundle chart lemma) \\
+\ref{sec:exterior-derivative}\ The exterior derivative & Chapter 14, \emph{The Exterior Derivative} (Proposition 14.23, Theorem 14.24, Proposition 14.26, Example 14.27); Chapter 12, Proposition 12.25 (pullbacks compose) \\
+\ref{sec:de-rham}\ De Rham cohomology & Chapter 17, \emph{The de Rham Cohomology Groups} (Proposition 17.2, Corollary 17.4, Propositions 17.5 and 17.6) \\
 \bottomrule
 \end{longtable}
 
@@ -36971,6 +37404,7 @@ Proposition 11.20 & Cor.~\ref{cor:df-properties} \\
 Proposition 11.25 & Prop.~\ref{prop:pullback-d}, Cor.~\ref{cor:pullback-d-forms} \\
 Problem 11-4 & Def.~\ref{def:Ip}, Def.~\ref{def:Ip-square}, Prop.~\ref{prop:second-order}, Prop.~\ref{prop:ideal-basis}, Thm.~\ref{thm:cotangent-ideal} \\
 Exercise 12.17 & Lem.~\ref{lem:k-form-permutation} \\
+Proposition 12.25 & Lem.~\ref{lem:pullback-forms-functorial} \\
 Lemma 14.1 & Lem.~\ref{lem:alternating-dependent} \\
 Proposition 14.3 & Lem.~\ref{lem:skew-symmetrizer} \\
 Lemma 14.7 & Lem.~\ref{lem:epsilon-A-dual} \\
@@ -36983,7 +37417,15 @@ Example 14.18 & Ex.~\ref{ex:pullback-r2-r3} \\
 Example 14.19 & Ex.~\ref{ex:polar-two-form} \\
 Proposition 14.20 & Prop.~\ref{prop:linear-pullback-components}, Cor.~\ref{cor:top-degree-pullback-manifold} \\
 Corollary 14.21 & Cor.~\ref{cor:top-degree-pullback-manifold} \\
+Proposition 14.23 & Prop.~\ref{prop:d-euclidean-properties} \\
+Theorem 14.24 & Def.~\ref{def:d-properties}, Thm.~\ref{thm:exterior-derivative}, Def.~\ref{def:exterior-derivative}, Lem.~\ref{lem:d-chart-independent}, Cor.~\ref{cor:d-coordinates} \\
+Proposition 14.26 & Def.~\ref{def:d-properties}, Thm.~\ref{thm:exterior-derivative} \\
+Example 14.27 & Ex.~\ref{ex:d-r3} \\
 Theorem 16.34 & Thm.~\ref{thm:stokes-calc3} \\
+Proposition 17.2 & Prop.~\ref{prop:cohomology-maps} \\
+Corollary 17.4 & Prop.~\ref{prop:cohomology-maps} \\
+Proposition 17.5 & Prop.~\ref{prop:h0} \\
+Proposition 17.6 & Prop.~\ref{prop:h0} \\
 Theorem 17.26 & Thm.~\ref{thm:inv-dim} \\
 Example 19.1 & Ex.~\ref{ex:no-integral-surface} \\
 Proposition 19.3 & Cor.~\ref{cor:integral-submanifold-necessary} \\

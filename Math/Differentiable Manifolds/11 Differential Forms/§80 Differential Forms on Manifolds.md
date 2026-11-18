@@ -5,7 +5,7 @@ chapter: 11
 section: 80
 tags: [differentiable-manifolds, math591]
 ---
-← [[§79 Pullbacks of Linear Forms]] · ↑ [[· 11 Differential Forms]]
+← [[§79 Pullbacks of Linear Forms]] · ↑ [[· 11 Differential Forms]] · [[§81 The Exterior Derivative]] →
 
 *Stage: forms — A $k$-form on a manifold is a linear $k$-form on each tangent space; smoothness through chart components; the bundle $\Lambda^k T^{\ast}M$; pullbacks by smooth maps, computed by substitution.*
 
@@ -326,6 +326,25 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 
 **Transcription note (Lecture 31).** The board first wrote $dz = u\, du + 2v\, dv$, and the $2$ was then struck out. The correct $dz = u\, du + v\, dv$ is the one used in the computation.
 
+> [!remark] Remark: Putting $F^{\ast}$ Everywhere
+> *(Lecture 32 returned to Example [[§80 Differential Forms on Manifolds#^ex-80-1|§80.1]] to justify the practical computation.)* Regard $\omega = x\, y\, dy \wedge dz$ as a wedge product of four factors, the $0$-forms $x$ and $y$ (for which the wedge product is the ordinary product) and the one-forms $dy$ and $dz$. The pullback of a wedge product is the wedge product of the pullbacks (Proposition [[§80 Differential Forms on Manifolds#^prop-80-5|§80.5]](2)), a pointwise property, so
+>
+> $$
+> F^{\ast}\omega = F^{\ast}(x)\, F^{\ast}(y)\; F^{\ast}(dy) \wedge F^{\ast}(dz) ,
+> $$
+>
+> and since the pullback commutes with $d$ on functions (Proposition [[§80 Differential Forms on Manifolds#^prop-80-5|§80.5]](3), from September),
+>
+> $$
+> F^{\ast}\omega = F^{\ast}(x)\, F^{\ast}(y)\; d\big(F^{\ast}y\big) \wedge d\big(F^{\ast}z\big) .
+> $$
+>
+> Here $x$ is the function taking the first coordinate, so $F^{\ast}x = x \circ F = u + v$; likewise $F^{\ast}y = u - v$ and $F^{\ast}z = \frac12(u^2 + v^2)$. Compared with the practical computation, the only thing missing there is a number of $F^{\ast}$'s: “$x = u + v$” stands for $F^{\ast}x = u + v$, and “$dx = du + dv$” for $F^{\ast}(dx) = d(F^{\ast}x) = du + dv$. One puts $F^{\ast}$ in front of everything, and then stops writing it.
+
+^rem-80-1
+
+**Transcription note (Lecture 32).** The board wrote “$y = du - dv$” for $dy = du - dv$, and then $F^{\ast}\omega = (u + v)(u - v)(du + dv) \wedge (u\, du + v\, dv)$. Since $\omega$ contains $dy \wedge dz$, the first one-form is $F^{\ast}(dy) = du - dv$, as in Example [[§80 Differential Forms on Manifolds#^ex-80-1|§80.1]]; $du + dv = F^{\ast}(dx)$ does not occur.
+
 ![[m591-78-2.svg]]
 
 *(Not from lecture; figure added.)* Example [[§80 Differential Forms on Manifolds#^ex-80-1|§80.1]] at the point $p = (u, v) = (0.6, -0.3)$. $F$ maps the square $[-1, 1]^2$ onto a piece of the paraboloid $z = (x^2 + y^2)/4$ (since $x^2 + y^2 = 2(u^2 + v^2)$); the grid lines $u = \mathrm{const}$ (blue) and $v = \mathrm{const}$ (red) go to curves on it. The differential pushes the coordinate vectors to the tangent vectors $dF_p(\partial_u) = \partial F/\partial u = (1, 1, u)$ and $dF_p(\partial_v) = (1, -1, v)$ of the surface, and by Definition [[§80 Differential Forms on Manifolds#^def-80-9|§80.9]], $(F^{\ast}\omega)_p(\partial_u, \partial_v) = \omega_{F(p)}\big(dF_p \partial_u, dF_p \partial_v\big) = xy\, \big(1 \cdot v - u \cdot (-1)\big) = (u^2 - v^2)(u + v)$, the coefficient found above.
@@ -376,4 +395,4 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 > - The factor $r$ in polar coordinates, as a change of variables in a double integral: [[§22 Properties of the Integral#^thm-22-6|452 Thm. §22.6]].
 > - Polar coordinates as a chart, with $\partial_r$ and $\partial_\vartheta$: [[§30 The Differential in Coordinates#^ex-30-1|Ex. §30.1]].
 
-Still to come: the exterior derivative, which extends $d : \Omega^0(M) \to \Omega^1(M)$ to forms of every degree (Lee, Ch. 14, *The Exterior Derivative*).
+Next: the exterior derivative, which extends $d : \Omega^0(M) \to \Omega^1(M)$ to forms of every degree ([[§81 The Exterior Derivative|§81]]).
