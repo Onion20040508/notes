@@ -471,13 +471,13 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-6|P7, step 6]]
 
 > [!definition] Definition §C6b.3.5: Unpolarized Cross Section
-> For particles with spin, $\mathcal M$ depends on the spin projections $m = s, s - 1, \dots, -s$, the $2s + 1$ states of a massive particle of spin $s$ at each momentum ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]]). If the initial spins are not prepared and the final ones not measured, the **unpolarized** cross section averages over the initial projections and sums over the final ones: [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]] with $|\mathcal M|^2$ replaced by
+> For particles with spin, $\mathcal M$ depends on the spin projections $m = s, s - 1, \dots, -s$, the $2s + 1$ states of a massive particle of spin $s$ at each momentum ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-9|Theorem §C8b.2.9]]). If the initial spins are not prepared and the final ones not measured, the **unpolarized** cross section averages over the initial projections and sums over the final ones: [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]] with $|\mathcal M|^2$ replaced by
 >
 > $$
 > \overline{|\mathcal M|^2} \equiv \frac{1}{(2s_A + 1)(2s_B + 1)}\sum_{m_A, m_B}\;\sum_{m_1, \dots, m_n}|\mathcal M|^2 , \qquad d\sigma = \frac{1}{4E_AE_Bv_{\rm Møl}}\,\overline{|\mathcal M|^2}\,d\Pi_n .
 > $$
 >
-> A massless particle of spin $s \ge \frac12$ in a theory with parity symmetry (photon, graviton) has two helicity states, $\lambda = \pm s$, not $2s + 1$ ([[§C8.12 Helicity of Particle States#^rem-c8-12-2|§C8.12, Remark: Parity pairs λ with −λ: photon, graviton, neutrino]]): its average is $\frac12\sum_{\lambda = \pm s}$. A massless particle with a single helicity (the neutrino of the massless idealization, same remark) has one state and is not averaged.
+> A massless particle of spin $s \ge \frac12$ in a theory with parity symmetry (photon, graviton) has two helicity states, $\lambda = \pm s$, not $2s + 1$ ([[§C8b.3 Massless Particles and Helicity#^rem-c8b-3-3|§C8b.3, Remark: Parity pairs λ with −λ: photon, graviton, neutrino]]): its average is $\frac12\sum_{\lambda = \pm s}$. A massless particle with a single helicity (the neutrino of the massless idealization, same remark) has one state and is not averaged.
 >
 > Course form (Lecture 19), for two spin-$\frac12$ particles in and two out: $\overline{|\mathcal M|^2} = \frac14\sum_{\rm spins}|\mathcal M|^2$, the spin average ([[§C8a.7 The Spin-Averaged Squared Amplitude#^def-c8a-7-1|Def. §C8a.7.1]]).
 >

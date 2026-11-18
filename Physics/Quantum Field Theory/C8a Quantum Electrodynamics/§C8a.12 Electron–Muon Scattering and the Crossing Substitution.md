@@ -7,7 +7,7 @@ section: C8a.12
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C8.17★ Polarized Amplitudes with Masses|§C8.17★]] · ↑ [[· C8a Quantum Electrodynamics]] · [[§C8a.13 The Cross Section for Electron–Muon Scattering|§C8a.13]] →
+← [[§C8a.11 Mott's Formula꞉ the Relativistic Electron in a Coulomb Field|§C8a.11]] · ↑ [[· C8a Quantum Electrodynamics]] · [[§C8a.13 The Cross Section for Electron–Muon Scattering|§C8a.13]] →
 
 *Sources: PHY 513 Lecture 21 (Larsen, 18 Nov 2026, "Crossing Symmetry"; a recorded lecture in three parts), slides 2–8 (Part A), and recording, part A · Peskin & Schroeder, An Introduction to Quantum Field Theory, §5.4, pp. 153–154: the two unnumbered displays of p. 153 (the amplitude; the product of two traces), eqs. (5.60)–(5.61) (page images checked).*
 

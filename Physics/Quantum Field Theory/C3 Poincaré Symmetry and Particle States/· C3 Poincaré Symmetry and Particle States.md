@@ -8,8 +8,10 @@ tags: [chapter, quantum-field-theory]
 # C3 Poincaré Symmetry and Particle States
 ← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (58), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (27), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (41), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (15), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (9), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (6), [[· C8a Quantum Electrodynamics|C8 Quantum Electrodynamics]] (3), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (12), [[· CA Mathematical Methods|CA Mathematical Methods]] (13), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (91)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (10), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (14), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (4), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (53), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (49), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (38), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (1), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (6), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (2), [[· C8a Quantum Electrodynamics|C8 Quantum Electrodynamics]] (40), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (8), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (48)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (43), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (27), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (33), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (15), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (3), [[· C8b Spin, Helicity and Chirality|C8b Spin, Helicity and Chirality]] (8), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (12), [[· CA Mathematical Methods|CA Mathematical Methods]] (9), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (75)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (8), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (14), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (4), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (17), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (44), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (23), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (1), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (6), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (2), [[· C8b Spin, Helicity and Chirality|C8b Spin, Helicity and Chirality]] (77), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (4), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (36)
+
+The two sections on particle states that closed this chapter until 2026-11-18, the little-group construction (then §C3.6★) and massless particles and helicity (then §C3.7★), are now the foundation of chapter [[· C8b Spin, Helicity and Chirality|C8b]]: [[§C8b.2 Particle States and the Little Group|§C8b.2]] and [[§C8b.3 Massless Particles and Helicity|§C8b.3]] (user decision: they are introduced where spin-resolved processes first need them, and without a star). The sections of C3 that mention the little group point forward to them; the one fact about stabilizers of momenta that earlier chapters use is [[§C1a.4 The Lorentz Group#^thm-c1a-4-5|Theorem §C1a.4.5]].
 
 ## Sections
 - [[§C3.1 Index Slots, Rotations and Spin in Field Theory]] — PS 3.1; Yu 3.2, 3.3.1; 513 notes Ch. 7
@@ -17,17 +19,10 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.3 How Fields Transform under the Lorentz Group]] — PS 3.1; Yu 4.1, 4.2; 513 notes Ch. 7
 - [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra]] — PS 2.3, 3.1; Yu 3.1, 3.2; 513 notes Ch. 7
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation]] — PS 2.3, 3.1; Yu 3.1, 3.2; 513 notes Ch. 7
-- [[§C3.6★ Particle States and the Little Group]] — Yu 3.3, 3.3.1; 513 notes Ch. 7
-- [[§C3.7★ Massless Particles and Helicity]] — Yu 3.3.2; 513 notes Ch. 7
 
 ## Principles
 - [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|§C3.4.1]] Poincaré Invariance on the Hilbert Space
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^pr-c3-5-1|§C3.5.1]] Covariance of Quantum Fields
-- [[§C3.6★ Particle States and the Little Group#^pr-c3-6-1|§C3.6.1]] Particles Are Irreducible Unitary Representations
-
-## Laws
-- [[§C3.6★ Particle States and the Little Group#^law-c3-6-2|§C3.6.2]] Physical Particles Have p² ≥ 0 and p⁰ > 0
-- [[§C3.7★ Massless Particles and Helicity#^law-c3-7-4|§C3.7.4]] Massless Particles Have No Continuous Spin
 
 ## Theorems
 - [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-1|§C3.1.1]] Spin j: the Multiplets of the Rotation Algebra and the Casimir Test
@@ -66,20 +61,6 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|§C3.5.4]] The Free Scalar Field Carries a Unitary Representation
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-5|§C3.5.5]] The Free Scalar Field Transforms as a Scalar
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|§C3.5.6]] The Noether Charges Are the Generators
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-3|§C3.6.3]] One Particle, One Orbit
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-4|§C3.6.4]] The Wigner Element Lies in the Little Group
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|§C3.6.5]] The Induced Representation
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-6|§C3.6.6]] The Induced States Are Relativistically Normalized
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-7|§C3.6.7]] The Little Groups of the Physical Orbits
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-8|§C3.6.8]] The Massive Little Group Is SO(3)
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|§C3.6.9]] Massive Particles Carry Spin
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-10|§C3.6.10]] Rotations Act by the Rotation Itself
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-11|§C3.6.11]] The Pauli–Lubanski Vector and the Second Casimir
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-12|§C3.6.12]] The Casimirs of a Massive Particle
-- [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|§C3.7.1]] The Massless Little Group Is ISO(2)
-- [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-2|§C3.7.2]] Generators of the Massless Little Group
-- [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-3|§C3.7.3]] Nonzero Translation Eigenvalues Come in Circles
-- [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-5|§C3.7.5]] Little-Group Translations Shift a Polarization Vector by the Momentum
 
 ## Models
 - [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|§C3.4.4]] A Relativistic Quantum Theory

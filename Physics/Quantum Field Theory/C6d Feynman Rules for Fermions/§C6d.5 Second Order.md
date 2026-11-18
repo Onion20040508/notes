@@ -144,7 +144,7 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 >
 > **Step 7** (read off). $A + C = i\mathcal M\,(2\pi)^4\delta^4(\cdots)$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]): the statement. By the rules ([[§C6d.6 Momentum-Space Feynman Rules#^thm-c6d-6-2|Theorem §C6d.6.2]]): two vertices, one scalar propagator with $s = (p_1 + p_2)^2$ or $t = (p_1 - q_1)^2$, two chains each, and the relative sign from Step 4. Yu (7.105) has the same bracket; his (7.77) has an overall $-$ from his bra $\langle0|\hat a_{\mathbf q_1}\hat b_{\mathbf q_2}$ ([[§C6d.4 First Order#^cau-c6d-4-1|§C6d.4, Caution: Yu's (7.23)–(7.24) and his order of the bra]]).
 >
-> *Source: Yu §7.1.2, eqs. (7.74)–(7.77), Fig. 7.3, pp. 274–277 ("这个过程的总不变振幅 $i\mathcal M = i\mathcal M_1 - i\mathcal M_2$ 是 2 个子振幅的叠加，两者之间的相对符号为负"); §7.2, eqs. (7.105)–(7.106) · beyond the course (QED's version, Bhabha scattering, is a process of C8, planned) · recomputed here in the vault's conventions*
+> *Source: Yu §7.1.2, eqs. (7.74)–(7.77), Fig. 7.3, pp. 274–277 ("这个过程的总不变振幅 $i\mathcal M = i\mathcal M_1 - i\mathcal M_2$ 是 2 个子振幅的叠加，两者之间的相对符号为负"); §7.2, eqs. (7.105)–(7.106) · beyond the course (QED's version, Bhabha scattering, is a process of C8a, planned) · recomputed here in the vault's conventions*
 
 ^ex-c6d-5-1
 
@@ -242,7 +242,7 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 >
 > **What the derivation shows.**
 > - The relative sign is Fermi statistics in the amplitude; for bosons the same argument gives $\beta = +\alpha$ (the $t$ and $u$ channels of [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|§C6c.6, Theorem §C6c.6.4]]). → [[§C6d.5 Second Order#^thm-c6d-5-4|Theorem §C6d.5.4]]
-> - ⚑ By-product: the interference term $-2\operatorname{Re}(\mathcal M_t^{\ast}\mathcal M_u)$ of $|\mathcal M|^2$ has its sign from here (Yu (7.75)) → [[§C6d.5 Second Order#^thm-c6d-5-5|Theorem §C6d.5.5]]; cross sections (C8, planned).
+> - ⚑ By-product: the interference term $-2\operatorname{Re}(\mathcal M_t^{\ast}\mathcal M_u)$ of $|\mathcal M|^2$ has its sign from here (Yu (7.75)) → [[§C6d.5 Second Order#^thm-c6d-5-5|Theorem §C6d.5.5]]; cross sections (C8a, planned).
 
 ^der-c6d-5-3
 
@@ -350,7 +350,7 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 >
 > *Equivalently,* the scalar analogue is the $t$- and $u$-channel pair of [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]], also with relative $+$; with an exchanged fermion the propagator has the numerator $\slashed q + m$.
 >
-> *Source: Yu §7.1.2, eqs. (7.83)–(7.89), Fig. 7.6, pp. 280–282 ("它包含 2 个拓扑不等价的子图，相对符号为正，体现了交换末态两个全同玻色子的对称性") · beyond the course (QED's version, $e^+e^- \to \gamma\gamma$, is a process of C8, planned) · recomputed here*
+> *Source: Yu §7.1.2, eqs. (7.83)–(7.89), Fig. 7.6, pp. 280–282 ("它包含 2 个拓扑不等价的子图，相对符号为正，体现了交换末态两个全同玻色子的对称性") · beyond the course (QED's version, $e^+e^- \to \gamma\gamma$, is a process of C8a, planned) · recomputed here*
 
 ^ex-c6d-5-3
 
@@ -560,7 +560,7 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 > - The two diagrams are the $t$- and $u$-channels of a scalar theory, now with spinor chains and a relative sign; for identical bosons the sign would be $+$ — [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-7|Theorem §C6b.1.7]].
 > - In the elastic region the exchanged momentum $q = p - p'$ is spacelike, $q^2 = t \le 0$, so the scalar is off its mass shell and the propagator has no pole — [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]], 2.
 > - Its nonrelativistic limit for distinguishable fermions is the attractive Yukawa potential; for a fermion and an antifermion the spinor products and the contraction sign both flip, and the force stays attractive — [[§C6d.7 The Yukawa Potential|§C6d.7]].
-> - $|\mathcal M|^2$ summed over spins needs traces of $\gamma$ matrices; the same process in QED is Møller scattering, a process of C8 (planned) — [[§C5a.13 Gamma-Matrix Technology|§C5a.13]].
+> - $|\mathcal M|^2$ summed over spins needs traces of $\gamma$ matrices; the same process in QED is Møller scattering, a process of C8a (planned) — [[§C5a.13 Gamma-Matrix Technology|§C5a.13]].
 > - The fourteen Wick terms play the role of the $764$ of $\phi^4$; only $\hat\phi\hat\phi$ and $\hat\psi\hat{\bar\psi}$ contract — [[§C6d.5 Second Order#^thm-c6d-5-1|Theorem §C6d.5.1]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-1|Theorem §C6c.5.1]].
-> - In QED, $f\bar f \to f\bar f$ and $f\bar f \to \gamma\gamma$ are Bhabha scattering and pair annihilation, processes of C8 (planned) — [[§C6d.5 Second Order#^ex-c6d-5-1|Example §C6d.5.1]], [[§C6d.5 Second Order#^ex-c6d-5-3|Example §C6d.5.3]].
+> - In QED, $f\bar f \to f\bar f$ and $f\bar f \to \gamma\gamma$ are Bhabha scattering and pair annihilation, processes of C8a (planned) — [[§C6d.5 Second Order#^ex-c6d-5-1|Example §C6d.5.1]], [[§C6d.5 Second Order#^ex-c6d-5-3|Example §C6d.5.3]].
 > - The loops on single external lines are removed by amputation; beyond lowest order they return as $\sqrt Z$ and the physical masses — [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]], [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]].

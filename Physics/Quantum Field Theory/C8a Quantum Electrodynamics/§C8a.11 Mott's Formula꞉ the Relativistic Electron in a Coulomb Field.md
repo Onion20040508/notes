@@ -7,7 +7,7 @@ section: C8a.11
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C8a.10 Scattering off an External Potential꞉ the Rutherford Formula]] · ↑ [[· C8a Quantum Electrodynamics]] · [[§C8.12 Helicity of Particle States]] →
+← [[§C8a.10 Scattering off an External Potential꞉ the Rutherford Formula|§C8a.10]] · ↑ [[· C8a Quantum Electrodynamics]] · [[§C8a.12 Electron–Muon Scattering and the Crossing Substitution|§C8a.12]] →
 
 *Sources: PHY 513, Problem Set 10 ("Scattering Processes"), Problem 3 (statement, Larsen; the user's solution, 2026-11-13) · Peskin & Schroeder, An Introduction to Quantum Field Theory, Problem 5.1, first part, p. 169 (page image checked); Problem 4.4(c), p. 130 · the homes cited in each box. The three ★ theorems at the end go beyond the problem set and are derived here.*
 
@@ -180,7 +180,7 @@ The Rutherford formula of [[§C8a.10 Scattering off an External Potential꞉ the
 >
 > 1. *What changed from Rutherford.* The prefactor is the Rutherford expression with the relativistic momentum and velocity, $\frac{Z^2\alpha^2}{4|\mathbf p|^2\beta^2\sin^4(\theta/2)} = \frac{Z^2\alpha^2E^2}{4|\mathbf p|^4\sin^4(\theta/2)}$: the square of the Coulomb transform times $(2E)^2$ in place of $(2m)^2$. The bracket is the angular factor of the spin sum ([[§C8a.11 Mott's Formula꞉ the Relativistic Electron in a Coulomb Field#^thm-c8a-11-2|Theorem §C8a.11.2]]).
 > 2. *Nonrelativistic limit.* For $\beta = v \ll 1$, $|\mathbf p| \simeq mv$, the bracket is $1$ at leading order and $4|\mathbf p|^2\beta^2 \simeq 4m^2v^4$: the Rutherford formula of [[§C8a.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8a-10-8|Theorem §C8a.10.8]].
-> 3. *Backward direction.* At $\theta = \pi$ the bracket is $1 - \beta^2$, which tends to $0$ as $\beta \to 1$ (see [[§C8.15 Chirality, Helicity and the QED Vertex#^thm-c8-15-4|Theorem §C8.15.4]] for helicity at the vector vertex).
+> 3. *Backward direction.* At $\theta = \pi$ the bracket is $1 - \beta^2$, which tends to $0$ as $\beta \to 1$ (see [[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-4|Theorem §C8b.6.4]] for helicity at the vector vertex).
 >
 > *Model:* [[§C8a.10 Scattering off an External Potential꞉ the Rutherford Formula#^mod-c8a-10-1|Model §C8a.10.1]] with the Coulomb field; *applies:* first order in the potential (order $Z^2\alpha^2$), any velocity, $\theta \ne 0$; unpolarized beam, final spin not observed; a nucleus that is a fixed classical point source.
 >
@@ -398,7 +398,7 @@ The Rutherford formula of [[§C8a.10 Scattering off an External Potential꞉ the
 
 *Uses:* [[§C8a.11 Mott's Formula꞉ the Relativistic Electron in a Coulomb Field#^thm-c8a-11-4|★ Theorem §C8a.11.4]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-4|Theorem §C5a.10.4]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
 
-*See:* helicity at the vector vertex, [[§C8.15 Chirality, Helicity and the QED Vertex#^thm-c8-15-4|Theorem §C8.15.4]] and [[§C8.15 Chirality, Helicity and the QED Vertex#^rem-c8-15-3|§C8.15, Remark: Frame and mass]]; the spin of fast fermions in QED amplitudes, [[§C8.15 Chirality, Helicity and the QED Vertex|§C8.15]].
+*See:* helicity at the vector vertex, [[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-4|Theorem §C8b.6.4]] and [[§C8b.6 Helicity Conservation at the QED Vertex#^rem-c8b-6-3|§C8b.6, Remark: Frame and mass]]; the spin of fast fermions in QED amplitudes, [[§C8b.6 Helicity Conservation at the QED Vertex|§C8b.6]].
 
 > [!abstract]- Mathematical background
 > Proved in CB and in the Math vault; each line says what the physics above relies on.

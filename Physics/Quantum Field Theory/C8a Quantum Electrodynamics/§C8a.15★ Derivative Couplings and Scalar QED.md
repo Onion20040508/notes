@@ -7,7 +7,7 @@ section: C8a.15
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c, extension]
 ---
-← [[§C8a.14 Crossing Symmetry and Mandelstam Variables]] · ↑ [[· C8a Quantum Electrodynamics]] · [[§C9.1 Discrete Lorentz Transformations]] →
+← [[§C8a.14 Crossing Symmetry and Mandelstam Variables|§C8a.14]] · ↑ [[· C8a Quantum Electrodynamics]] · [[§C8b.1 Why Spin Must Now Be Tracked|§C8b.1]] →
 
 ★ *Beyond PHY 513: reference material from the user's notes and Yu, not from a lecture or a problem set.*
 

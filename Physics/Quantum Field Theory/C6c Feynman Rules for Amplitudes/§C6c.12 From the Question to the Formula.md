@@ -374,7 +374,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > ![[ph-qft-c8-10-1.svg]]
 > *The one diagram, panel (b): the electron line passes one vertex with the static external field, which supplies $\mathbf q = \mathbf p' - \mathbf p$ and no energy; $i\mathcal M = -ie\,\bar u^{s'}(p')\gamma^0u^s(p)\,\tilde A_0(\mathbf q)$ ([[§C8a.10 Scattering off an External Potential꞉ the Rutherford Formula#^thm-c8a-10-4|Theorem §C8a.10.4]]). Added figure.*
 >
-> This example uses the fermion rules of C6d and the model of C8, which come after this chapter; it stands here with the other translations.
+> This example uses the fermion rules of C6d and the model of C8a, which come after this chapter; it stands here with the other translations.
 >
 > **Question as asked.** "Specialize to the Coulomb field of a nucleus with charge $Ze$ … derive the Rutherford formula"; "derive Mott's formula for the unpolarized cross section" (PHY 513, Problem Set 10, Problems 2(c) and 3(c)).
 >

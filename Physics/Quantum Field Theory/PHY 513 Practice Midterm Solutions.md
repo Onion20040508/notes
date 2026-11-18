@@ -1899,7 +1899,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > Both are normalized ($\frac12(1 + 1) = 1$) and orthogonal ($\frac12(-1 + 1) = 0$). (All four eigenvalue equations verified numerically.)
 >
-> *Checked against:* [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-1|Theorem §C8.14.1]] (the same formula; the user's Problem Set 5, Problem 6), [[§C8.14 Helicity Spinors and the Massless Limit#^cau-c8-14-1|§C8.14, Caution: No phase convention is smooth on the whole sphere]]; drill: [[PHY 513 PS Drill#^ps5-6|PS Drill, PS5.6]].
+> *Checked against:* [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-1|Theorem §C8b.5.1]] (the same formula; the user's Problem Set 5, Problem 6), [[§C8b.5 Helicity Spinors and the Massless Limit#^cau-c8b-5-1|§C8b.5, Caution: No phase convention is smooth on the whole sphere]]; drill: [[PHY 513 PS Drill#^ps5-6|PS Drill, PS5.6]].
 
 ^sol-px-5-6-1
 
@@ -1921,7 +1921,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (chirality). In the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$: the lower half ($\psi_R$) has $\gamma^5 = +1$, the upper ($\psi_L$) $\gamma^5 = -1$. So $\gamma^5u_\pm \to \pm u_\pm$: helicity $\pm\frac12$ becomes chirality $\pm1$, exactly at $m = 0$. (Numerically, at $E/m = 10$ and $1000$ the small half relative to $\sqrt{2E}$ is $5.0\times10^{-2}$ and $5.0\times10^{-4}$, i.e. $m/2E$.)
 >
-> *Checked against:* [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-2|Theorem §C8.14.2]], [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-4|Theorem §C8.14.4]], 1–2, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]], 1.
+> *Checked against:* [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-2|Theorem §C8b.5.2]], [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4|Theorem §C8b.5.4]], 1–2, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]], 1.
 
 ^sol-px-5-6-2
 
