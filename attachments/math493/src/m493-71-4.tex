@@ -1,0 +1,16 @@
+% Figure from MATH 493 notes, section 71. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+\draw[->, black!55, thin] (-2.0,0) -- (2.2,0) node[above] {$x$};
+\draw[->, black!55, thin] (0,-2.0) -- (0,2.2) node[above] {$y$};
+\draw[black!40] (0,0) circle (1.5);
+\draw[->, very thick, blue!70!black] (0,0) -- (1.5,0) node[below right=-1pt] {$e_1 = J^0e_1 = J^4e_1$};
+\draw[->, very thick, orange!85!black] (0,0) -- (0,1.5) node[above right=-1pt] {$Je_1 = e_2$};
+\draw[->, very thick, red!70!black] (0,0) -- (-1.5,0) node[below left=-1pt] {$J^2e_1 = -e_1$};
+\draw[->, very thick, black!65] (0,0) -- (0,-1.5) node[below right=-1pt] {$J^3e_1 = -e_2$};
+\draw[->, black!70] (0.55,0) arc (0:90:0.55) node[midway, above right=-2pt] {$90^\circ$};
+\node[anchor=west] at (4.2,1.5) {$J^k$ is the rotation by $k \cdot 90^\circ$; \ $\operatorname{Tr}J^k = 2\cos(k \cdot 90^\circ)$};
+\node[anchor=west, blue!70!black] at (4.2,0.8) {$k = 0$: \ $J^0 = \left(\begin{smallmatrix} 1 & 0 \\ 0 & 1 \end{smallmatrix}\right)$, \ trace $2$};
+\node[anchor=west, orange!85!black] at (4.2,0.2) {$k = 1$: \ $J = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$, \ trace $0$};
+\node[anchor=west, red!70!black] at (4.2,-0.4) {$k = 2$: \ $J^2 = \left(\begin{smallmatrix} -1 & 0 \\ 0 & -1 \end{smallmatrix}\right)$, \ trace $-2$};
+\node[anchor=west, black!65] at (4.2,-1.0) {$k = 3$: \ $J^3 = \left(\begin{smallmatrix} 0 & 1 \\ -1 & 0 \end{smallmatrix}\right)$, \ trace $0$};
+\end{tikzpicture}

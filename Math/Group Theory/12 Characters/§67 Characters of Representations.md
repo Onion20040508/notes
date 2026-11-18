@@ -46,7 +46,7 @@ Many things in representation theory can be computed from characters, starting w
 > 1. $\chi_V(e) = (\dim V) \cdot 1_k$;
 > 2. $\chi_V(hgh^{-1}) = \chi_V(g)$ for all $g, h \in G$: the character is constant on each conjugacy class.
 >
-> *Source: lecture 11/9; part (1) not from class*
+> *Source: lecture 11/9; part (2) is also WS 18.1; part (1) not from class*
 
 ^prop-67-1
 
@@ -76,7 +76,7 @@ So a character is determined by one value per conjugacy class, which is much les
 >
 > Consequently, if $W = U \oplus V$ is a representation of $G$ and $U$, $V$ are subrepresentations, then $\chi_W = \chi_U + \chi_V$.
 >
-> *Source: lecture 11/9*
+> *Source: lecture 11/9; also WS 18.2, with the block matrix on the board 11/18*
 
 ^prop-67-2
 
@@ -106,9 +106,9 @@ So a character is determined by one value per conjugacy class, which is much les
 ^pf-67-3
 
 > [!definition] Definition §67.2: Character Table
-> The **character table** of $G$ lists characters of representations: its columns are indexed by the conjugacy classes of $G$ (one representative each), its rows by representations, and the entry is the value of $\chi_V$ on the class.
+> The **character table** of $G$ has one column for each [[§33 Conjugacy Classes#^def-33-1|conjugacy class]] of $G$, headed by a representative of the class, and one row for each simple representation (Definition [[§65 Simple Representations#^def-65-1|§65.1]]) of $G$, up to [[§61 Representations and Subrepresentations#^def-61-5|isomorphism]]. The entry is the value of the character $\chi_S$ on the class. Characters of other representations are sometimes listed in further rows below a line, as in Example [[§67 Characters of Representations#^ex-67-1|§67.1]].
 >
-> *Source: lecture 11/9*
+> *Source: lecture 11/9; WS 18, which fixes that only simple representations are listed, each isomorphism class once*
 
 ^def-67-2
 

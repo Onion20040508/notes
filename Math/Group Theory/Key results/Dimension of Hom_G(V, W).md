@@ -21,6 +21,7 @@ tags: [group-theory, hub]
 - [[§70 Schur's Lemma and Multiplicities#^prop-70-4|Proposition §70.4: dimHom_G Is Additive in Each Variable]]
 - [[§70 Schur's Lemma and Multiplicities#^prop-70-10|Proposition §70.10: Character Sums for Simple Representations]]
 - [[§70 Schur's Lemma and Multiplicities#^lem-70-11|Lemma §70.11: A Simplicity Test]]
+- [[§71 The Character Table#^cor-71-4|Corollary §71.4: The Dimension Formula as a Pairing]]
 
 ## Connections
 - TODO

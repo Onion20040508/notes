@@ -330,6 +330,7 @@ $V^G$, \ $\chi_V$ & Invariant vectors of a representation; its character $\chi_V
 $\operatorname{Hom}(V, W)$, \ $\operatorname{Hom}_G(V, W)$ & Linear maps $V \to W$, a representation by $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$; its invariant vectors, the homomorphisms of representations (\ref{sec:hom-representation}). \\
 $V^\vee$, \ $\varphi^\vee$, \ $e_j^\ast$ & Dual space $\operatorname{Hom}(V, k)$; dual map $w^\vee \mapsto w^\vee \circ \varphi$; dual basis. As a representation, $\rho_{V^\vee}(g) = \rho_V(g^{-1})^\vee$, in matrices the inverse transpose (\ref{sec:dual-representations}). \\
 $V_1 \oplus \cdots \oplus V_r$, \ $V^{\oplus a}$ & External direct sum of representations: tuples, with $G$ acting on each coordinate; $V^{\oplus a}$ is the sum of $a$ copies of $V$. The same sign $\oplus$ is used for the internal direct sum of subspaces (\ref{sec:maschke}); the two are isomorphic (\ref{sec:schur-multiplicities}). \\
+$\operatorname{Cl}(G)$, \ $\langle \alpha, \beta \rangle$ & Space of class functions on $G$ (functions constant on conjugacy classes), of dimension the number of conjugacy classes; the pairing $\frac{1}{|G|}\sum_i |\operatorname{Conj}(g_i)|\,\alpha(g_i^{-1})\beta(g_i)$, for which $\dim\operatorname{Hom}_G(V, W) = \langle \chi_V, \chi_W \rangle$ (\ref{sec:character-table}). \\
 $\operatorname{Tr}$ & Trace of a matrix or of a linear map (\ref{sec:invariants}). \\
 $N \rtimes_\varphi S$, \ $S \ltimes_\varphi N$ & Semidirect product, $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$ (\ref{sec:semidirect-products}). \\
 $\sigma_{(g, \lambda)}$, \ $\operatorname{Aff}(V)$ & The affine map $x \mapsto gx + \lambda$; the group of all affine maps of $V$, $\cong V \rtimes GL(V)$ (\ref{sec:affine-maps}). \\
@@ -10421,9 +10422,9 @@ Representation theory also proves theorems about groups. A first example: every 
 % ============================================================================
 \chapter{Characters}\label{ch:rep-characters}
 
-\textit{Source: Lecture and Worksheet 15 (Mon Nov 9); lecture and Worksheet 16 (Wed Nov 11); lecture (Fri Nov 13); lecture and Worksheet 17 (Mon Nov 16).}
+\textit{Source: Lecture and Worksheet 15 (Mon Nov 9); lecture and Worksheet 16 (Wed Nov 11); lecture (Fri Nov 13); lecture and Worksheet 17 (Mon Nov 16); lecture and Worksheet 18 (Wed Nov 18).}
 
-By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), finite-dimensional representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces, when the field contains $\mathbb{Q}$ (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}). The factor $\chi_V(g^{-1})$ in this count is the character of the dual representation $V^\vee$ (\ref{sec:dual-representations}). Combined with the decomposition into simple representations, the count becomes a dot product of multiplicities: by Schur's Lemma, non-isomorphic simple representations admit only the zero homomorphism, and over $\mathbb{C}$ the homomorphisms from a simple representation to itself are the multiples of the identity (\ref{sec:schur-multiplicities}).
+By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), finite-dimensional representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces, when the field contains $\mathbb{Q}$ (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}). The factor $\chi_V(g^{-1})$ in this count is the character of the dual representation $V^\vee$ (\ref{sec:dual-representations}). Combined with the decomposition into simple representations, the count becomes a dot product of multiplicities: by Schur's Lemma, non-isomorphic simple representations admit only the zero homomorphism, and over $\mathbb{C}$ the homomorphisms from a simple representation to itself are the multiples of the identity (\ref{sec:schur-multiplicities}). In the character table, with one column per conjugacy class and one row per simple representation, this says that the rows are orthogonal for a pairing of class functions; hence they are linearly independent, and there are at most as many simple representations as conjugacy classes (\ref{sec:character-table}).
 
 % ============================================================================
 % SECTION: INVARIANT VECTORS (Worksheet 15; lecture Mon Nov 9)
@@ -10748,7 +10749,7 @@ Let $V$ be a finite-dimensional representation of $G$. Then
     \item $\chi_V(e) = (\dim V) \cdot 1_k$;
     \item $\chi_V(hgh^{-1}) = \chi_V(g)$ for all $g, h \in G$: the character is constant on each conjugacy class.
 \end{enumerate}
-\srcline{lecture 11/9; part (1) not from class}
+\srcline{lecture 11/9; part (2) is also WS 18.1; part (1) not from class}
 \end{propbox}
 
 \begin{proof}
@@ -10765,7 +10766,7 @@ So a character is determined by one value per conjugacy class, which is much les
 Let $W = U \oplus V$ (Definition~\ref{def:internal-direct-sum-subspaces}) be finite-dimensional, let $A: U \to U$ and $B: V \to V$ be linear, and let $A \oplus B: W \to W$, $u + v \mapsto Au + Bv$. Then
 \[ \operatorname{Tr}(A \oplus B) = \operatorname{Tr}(A) + \operatorname{Tr}(B). \]
 Consequently, if $W = U \oplus V$ is a representation of $G$ and $U$, $V$ are subrepresentations, then $\chi_W = \chi_U + \chi_V$.
-\srcline{lecture 11/9}
+\srcline{lecture 11/9; also WS 18.2, with the block matrix on the board 11/18}
 \end{propbox}
 
 \begin{proof}
@@ -10784,8 +10785,8 @@ so $M$ is also the matrix of $\rho_{V'}(g)$ in the basis $\beta(v_1), \ldots, \b
 \end{proof}
 
 \begin{defbox}[{Character Table}]\label{def:character-table}
-The \textbf{character table} of $G$ lists characters of representations: its columns are indexed by the conjugacy classes of $G$ (one representative each), its rows by representations, and the entry is the value of $\chi_V$ on the class.
-\srcline{lecture 11/9}
+The \textbf{character table} of $G$ has one column for each conjugacy class of $G$, headed by a representative of the class, and one row for each simple representation (Definition~\ref{def:simple-representation}) of $G$, up to isomorphism. The entry is the value of the character $\chi_S$ on the class. Characters of other representations are sometimes listed in further rows below a line, as in Example~\ref{ex:characters-s3}.
+\srcline{lecture 11/9; WS 18, which fixes that only simple representations are listed, each isomorphism class once}
 \end{defbox}
 
 \begin{exbox}[{Characters of $S_3$ over $\mathbb{R}$}]\label{ex:characters-s3}
@@ -11629,7 +11630,7 @@ Let $V_1, \ldots, V_r$ be finite-dimensional representations of a group $G$ over
     \item $\chi_E = \chi_{V_1} + \cdots + \chi_{V_r}$ for the characters (Definition~\ref{def:character-representation}).
 \end{enumerate}
 In particular $\dim V^{\oplus a} = a\dim V$ and $\chi_{V^{\oplus a}} = a\,\chi_V$.
-\srcline{not from class; the lecture of 11/9 proved the case of an internal direct sum of two subrepresentations (Proposition~\ref{prop:characters-add})}
+\srcline{not from class; the lecture of 11/9 proved the case of an internal direct sum of two subrepresentations (Proposition~\ref{prop:characters-add}); for two summands this is WS 18.2}
 \end{propbox}
 
 \begin{proof}
@@ -11874,8 +11875,8 @@ Let $G$ be a finite group. Let $S_1, \ldots, S_r$ be finite-dimensional simple r
 %% <<< END ADDED
 
 \begin{rembox}[{Over Other Fields the Weights Stay}]\label{rem:weights-stay}
-The proof of Proposition~\ref{prop:schur-complex} needs an eigenvalue of $\alpha$ in the ground field. Over $\mathbb{R}$ a linear map need not have a real eigenvalue, and for a simple real representation $S$ the number $\dim\operatorname{Hom}_G(S, S)$ can be larger than $1$. An example is the subject of Problem Set 10 (Problem 10.4); it will be added here after the problem set is submitted. So over $\mathbb{R}$, and over a general field containing $\mathbb{Q}$, the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ of Proposition~\ref{prop:dim-hom-sums-of-simples} must be kept.
-\srcline{lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the reference to Problem Set 10 is added}
+The proof of Proposition~\ref{prop:schur-complex} needs an eigenvalue of $\alpha$ in the ground field. Over $\mathbb{R}$ a linear map need not have a real eigenvalue, and for a simple real representation $S$ the number $\dim\operatorname{Hom}_G(S, S)$ can be larger than $1$. The lecture of 11/18 gave an example, the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$, where the number is $2$ (Example~\ref{ex:z4-real-complex}); the proofs belong to Problem Set 10 (Problem 10.4) and will be added after the problem set is submitted. So over $\mathbb{R}$, and over a general field containing $\mathbb{Q}$, the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ of Proposition~\ref{prop:dim-hom-sums-of-simples} must be kept.
+\srcline{lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the example is from the lecture of 11/18}
 \end{rembox}
 
 \subsection{\texorpdfstring{The Characters of $S_3$ and a Simplicity Test}{The Characters of S₃ and a Simplicity Test}}\label{sub:s3-simplicity-test}
@@ -11981,7 +11982,7 @@ By Example~\ref{ex:s3-characters-elementwise}(4), each of the trivial representa
     \item For $U$ this is a second proof of Example~\ref{ex:s3-r3-simples}(2), where the simplicity of $U$ was shown directly: a rotation by $120^\circ$ has no real eigenvector.
     \item The same computation applies over every field $k$ containing $\mathbb{Q}$, with $U$ the sum-zero plane in $k^3$: the three characters have the same integer values, since $k^3 = k(1,1,1) \oplus U$ whenever $3 \neq 0$ in $k$ (Proposition~\ref{prop:k123-direct-sum}).
 \end{enumerate}
-The lecture ended here. Whether these three are all the simple representations of $S_3$ has not been settled yet.
+The lecture of 11/16 ended here. That these three are all the simple representations of $S_3$ follows from Worksheet 18 (Example~\ref{ex:s3-all-simple}).
 \srcline{lecture 11/16; parts (2) and (3) not from class}
 \end{exbox}
 
@@ -11996,6 +11997,302 @@ with multiplicities $a = (1, 0, 1)$ with respect to the three simple representat
 \end{enumerate}
 \srcline{not from class}
 \end{exbox}
+
+% ============================================================================
+% SECTION: THE CHARACTER TABLE (Worksheet 18; lecture Wed Nov 18)
+% ============================================================================
+\section{The Character Table}\label{sec:character-table}
+
+\textit{Source: Lecture and Worksheet 18, \emph{The character table} (Wed Nov 18): WS 18.1--18.4, from handwritten notes of the board.}
+
+Throughout this section $G$ is a finite group, $k$ is a field containing $\mathbb{Q}$, and all representations are finite-dimensional representations of $G$ over $k$. The first two problems of Worksheet 18 are results that are already proved, and each of them shortens the character table.
+\begin{enumerate}
+    \item \emph{WS 18.1: conjugate elements have the same character value.} If $g_1$ and $g_2$ are conjugate in $G$, then $\chi_V(g_1) = \chi_V(g_2)$ for every representation $V$. This is Characters Are Class Functions (Proposition~\ref{prop:character-class-function}(2)). So a character table lists each conjugacy class once. Fix representatives $g_1, g_2, \ldots, g_c$, one in each conjugacy class of $G$, and write $\operatorname{Conj}(g_i)$ for the conjugacy class of $g_i$ (Definition~\ref{def:conjugacy-class}).
+    \item \emph{WS 18.2: characters add over direct sums.} $\chi_{U \oplus V} = \chi_U + \chi_V$ (Proposition~\ref{prop:characters-add} for an internal direct sum, Proposition~\ref{prop:character-external-direct-sum} for an external one). On the board: in a basis of $U$ followed by a basis of $V$,
+    \[ \rho_{U \oplus V}(g) = \begin{pmatrix} \rho_U(g) & 0 \\ 0 & \rho_V(g) \end{pmatrix}. \]
+    Every representation is isomorphic to a direct sum $\bigoplus_j S_j^{\oplus a_j}$ of simple representations (Corollary~\ref{cor:decomposition-multiplicities}), and isomorphic representations have the same character (Lemma~\ref{lem:isomorphic-same-character}). So every character is a sum $\sum_j a_j\chi_{S_j}$ of characters of simple representations, and a character table lists only the simple representations, each isomorphism class once.
+\end{enumerate}
+The result is the character table of Definition~\ref{def:character-table}: one column for each conjugacy class and one row for each isomorphism class of simple representations.
+
+\begin{center}
+\begin{tikzpicture}[font=\scriptsize]
+\draw (0,0) -- (5.6,0);
+\draw (1.0,0.55) -- (1.0,-1.9);
+\node[anchor=south] at (3.3,0.02) {conjugacy classes of $G$};
+\node[anchor=east] at (0.9,-0.95) {representations};
+\draw[densely dashed, black!60] (2.4,0) -- (2.4,-0.95);
+\draw[densely dashed, black!60] (1.0,-0.95) -- (2.4,-0.95);
+\node[anchor=west] at (2.45,-0.95) {$\chi_V(g) = \operatorname{Tr}\rho_V(g)$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Board 11/18.)} The shape of a character table.
+
+Worksheet 18 prints the character table of $S_3$ as an example. It consists of the first three rows of the table in Example~\ref{ex:characters-s3}; the worksheet writes $W$ for the representation $\{(x_1, x_2, x_3) : x_1 + x_2 + x_3 = 0\}$, which these notes call $U$.
+
+\subsection{Class Functions and Their Pairing}\label{sub:class-functions}
+
+\begin{defbox}[{Class Function}]\label{def:class-function}
+Let $G$ be a group and $k$ a field. A function $\alpha: G \to k$ is a \textbf{class function} if it is constant on every conjugacy class:
+\[ \alpha(hgh^{-1}) = \alpha(g) \qquad \text{for all } g, h \in G. \]
+The class functions form a vector space over $k$ with pointwise addition and scalar multiplication, written $\operatorname{Cl}(G)$.
+\srcline{board 11/18, as the space $X$ of functions from the set of conjugacy classes of $G$ to $k$}
+\end{defbox}
+
+A class function is the same thing as a function on the set of conjugacy classes: its value on a class is its common value on the elements of the class. This is how the board describes the space. By WS 18.1 (Proposition~\ref{prop:character-class-function}(2)), the character $\chi_V$ of every representation is a class function.
+
+\textbf{Transcription note (board 11/18).} The board calls the space of class functions $X$. These notes write $\operatorname{Cl}(G)$, because $X$ already denotes a matrix or a linear map in \ref{sec:hom-representation}.
+
+\begin{propbox}[{The Dimension of the Space of Class Functions}]\label{prop:dimension-class-functions}
+Let $G$ be a finite group with conjugacy classes $\operatorname{Conj}(g_1), \ldots, \operatorname{Conj}(g_c)$. For $1 \leq i \leq c$ let $\delta_i: G \to k$ be the function with $\delta_i(g) = 1$ for $g \in \operatorname{Conj}(g_i)$ and $\delta_i(g) = 0$ otherwise. Then $\delta_1, \ldots, \delta_c$ is a basis of $\operatorname{Cl}(G)$ (Definition~\ref{def:class-function}). In particular
+\[ \dim\operatorname{Cl}(G) = c, \]
+the number of conjugacy classes of $G$.
+\srcline{board 11/18 (stated: the dimension is the number of conjugacy classes); the proof is not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from class; filled in.)} The conjugacy classes are the orbits of $G$ acting on itself by conjugation, so every element of $G$ lies in exactly one of them (Orbits Partition $X$, Proposition~\ref{prop:orbits-partition-x}).
+
+\emph{Each $\delta_i$ is a class function.} $hgh^{-1}$ lies in the same conjugacy class as $g$, so $\delta_i(hgh^{-1}) = \delta_i(g)$.
+
+\emph{Spanning.} Let $\alpha \in \operatorname{Cl}(G)$. Then $\alpha = \sum_{i=1}^c \alpha(g_i)\,\delta_i$: at an element $g \in \operatorname{Conj}(g_j)$ the right side is $\alpha(g_j)$, and $\alpha(g) = \alpha(g_j)$ because $\alpha$ is constant on $\operatorname{Conj}(g_j)$.
+
+\emph{Independence.} If $\sum_i c_i\delta_i = 0$, then evaluating at $g_j$ gives $c_j = 0$.
+\end{proof}
+
+\begin{lembox}[{Sums of Class Functions over $G$}]\label{lem:class-function-sums}
+Let $G$ be a finite group with representatives $g_1, \ldots, g_c$ of its conjugacy classes.
+\begin{enumerate}
+    \item If $f: G \to k$ is a class function, then $\displaystyle\sum_{g \in G} f(g) = \sum_{i=1}^c |\operatorname{Conj}(g_i)|\,f(g_i)$.
+    \item If $\alpha$ and $\beta$ are class functions, then so is $g \mapsto \alpha(g^{-1})\,\beta(g)$.
+\end{enumerate}
+\srcline{used on the board 11/18 in WS 18.3; the proof is not from class}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from class; filled in.)} \textbf{(1)} $G$ is the disjoint union of the classes $\operatorname{Conj}(g_i)$ (Proposition~\ref{prop:orbits-partition-x}), and $f$ takes the value $f(g_i)$ at each of the $|\operatorname{Conj}(g_i)|$ elements of $\operatorname{Conj}(g_i)$.
+
+\textbf{(2)} Since $(hgh^{-1})^{-1} = hg^{-1}h^{-1}$,
+\[ \alpha\big((hgh^{-1})^{-1}\big)\,\beta(hgh^{-1}) = \alpha(hg^{-1}h^{-1})\,\beta(hgh^{-1}) = \alpha(g^{-1})\,\beta(g). \]
+\end{proof}
+
+\begin{defbox}[{The Pairing of Class Functions}]\label{def:pairing-class-functions}
+Let $G$ be a finite group and $k$ a field in which $|G| \neq 0$. The \textbf{pairing of class functions} $\alpha, \beta \in \operatorname{Cl}(G)$ (Definition~\ref{def:class-function}) is
+\[ \langle \alpha, \beta \rangle = \frac{1}{|G|}\sum_{i=1}^c |\operatorname{Conj}(g_i)|\,\alpha(g_i^{-1})\,\beta(g_i) \in k. \]
+\srcline{board 11/18}
+\end{defbox}
+
+By Lemma~\ref{lem:class-function-sums}, applied to the class function $g \mapsto \alpha(g^{-1})\beta(g)$,
+\[ \langle \alpha, \beta \rangle = \frac{1}{|G|}\sum_{g \in G} \alpha(g^{-1})\,\beta(g). \]
+So the pairing does not depend on the choice of the representatives $g_i$. Worksheet 18 calls it ``the correct inner product'' for the rows of the character table. It is the expression $B(\alpha, \beta)$ from the proof of Proposition~\ref{prop:dim-hom-additive}, for class functions.
+
+\begin{propbox}[{The Pairing Is Bilinear and Symmetric}]\label{prop:pairing-symmetric}
+Let $G$ be a finite group and $k$ a field in which $|G| \neq 0$. For class functions $\alpha, \alpha', \beta \in \operatorname{Cl}(G)$ (Definition~\ref{def:class-function}), the pairing of Definition~\ref{def:pairing-class-functions}, and $c, c' \in k$:
+\begin{enumerate}
+    \item $\langle c\alpha + c'\alpha', \beta \rangle = c\,\langle \alpha, \beta \rangle + c'\,\langle \alpha', \beta \rangle$ and $\langle \beta, c\alpha + c'\alpha' \rangle = c\,\langle \beta, \alpha \rangle + c'\,\langle \beta, \alpha' \rangle$;
+    \item $\langle \alpha, \beta \rangle = \langle \beta, \alpha \rangle$.
+\end{enumerate}
+\srcline{board 11/18 (the symmetry, as a claim); part (1) is not from class}
+\end{propbox}
+
+\begin{proof}
+\textbf{(1)} \textit{(Not from class; filled in.)} Each term $\alpha(g^{-1})\beta(g)$ of the sum is a product of one value of the first function and one value of the second.
+
+\textbf{(2)} \textit{(Board 11/18.)} Inversion $g \mapsto g^{-1}$ is a bijection of $G$. Substituting $h = g^{-1}$,
+\[ \langle \alpha, \beta \rangle = \frac{1}{|G|}\sum_{g \in G} \alpha(g^{-1})\,\beta(g) = \frac{1}{|G|}\sum_{h \in G} \alpha(h)\,\beta(h^{-1}) = \langle \beta, \alpha \rangle. \]
+\end{proof}
+
+\begin{corbox}[{The Dimension Formula as a Pairing}]\label{cor:dim-hom-pairing}
+Let $G$ be a finite group, $k$ a field containing $\mathbb{Q}$, and $V$, $W$ finite-dimensional representations of $G$ over $k$, with characters $\chi_V$, $\chi_W$ (Definition~\ref{def:character-representation}). Then
+\[ \dim\operatorname{Hom}_G(V, W) = \langle \chi_V, \chi_W \rangle = \frac{1}{|G|}\sum_{i=1}^c |\operatorname{Conj}(g_i)|\,\chi_V(g_i^{-1})\,\chi_W(g_i), \]
+with the pairing of Definition~\ref{def:pairing-class-functions}.
+\srcline{board 11/18, the first step of WS 18.3}
+\end{corbox}
+
+\begin{proof}
+\textit{(Board 11/18.)} By Theorem~\ref{thm:dim-hom-g}, $\dim\operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_{g \in G} \chi_V(g^{-1})\chi_W(g)$. The characters are class functions (Proposition~\ref{prop:character-class-function}(2)), so this sum over $G$ is the sum over the conjugacy classes in Definition~\ref{def:pairing-class-functions} (Lemma~\ref{lem:class-function-sums}).
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+\draw[blue!70!black, thick, rounded corners=3pt] (-0.55,-0.5) rectangle (0.55,2.3);
+\draw[orange!85!black, thick, rounded corners=3pt] (0.85,-0.5) rectangle (4.55,2.3);
+\draw[red!70!black, thick, rounded corners=3pt] (4.85,-0.5) rectangle (7.55,2.3);
+\node[blue!70!black, anchor=south] at (0,2.3) {$|\mathrm{Conj}(e)| = 1$};
+\node[orange!85!black, anchor=south] at (2.7,2.3) {$|\mathrm{Conj}((1\,2))| = 3$};
+\node[red!70!black, anchor=south] at (6.2,2.3) {$|\mathrm{Conj}((1\,2\,3))| = 2$};
+\foreach \x/\g/\v/\w in {0/{e}/{2}/{4}, 1.4/{(1\,2)}/{0}/{0}, 2.7/{(1\,3)}/{0}/{0}, 4.0/{(2\,3)}/{0}/{0}, 5.5/{(1\,2\,3)}/{-1}/{1}, 6.9/{(1\,3\,2)}/{-1}/{1}} {
+  \fill (\x,1.8) circle (1.6pt);
+  \node at (\x,1.45) {$\g$};
+  \node at (\x,0.75) {$\v$};
+  \node at (\x,0.05) {$\w$};
+}
+\node[anchor=east] at (-0.75,1.45) {$g$};
+\node[anchor=east] at (-0.75,0.75) {$\chi_U(g)$};
+\node[anchor=east] at (-0.75,0.05) {$\chi_U(g^{-1})\chi_U(g)$};
+\node[anchor=west] at (7.9,0.75) {$\displaystyle\sum_{g} \chi_U(g) = \textcolor{blue!70!black}{1 \cdot 2} + \textcolor{orange!85!black}{3 \cdot 0} + \textcolor{red!70!black}{2 \cdot (-1)} = 0$};
+\node[anchor=west] at (7.9,0.05) {$\displaystyle\sum_{g} \chi_U(g^{-1})\chi_U(g) = \textcolor{blue!70!black}{1 \cdot 4} + \textcolor{orange!85!black}{3 \cdot 0} + \textcolor{red!70!black}{2 \cdot 1} = 6$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Lemma~\ref{lem:class-function-sums} for $S_3$ and the character of $U$. The six elements fall into three conjugacy classes of sizes $1$, $3$, $2$, and a class function has one value on each class. So a sum over the six elements is a sum over the three classes with the class sizes as weights. The second row gives $\langle \chi_U, \chi_U \rangle = \frac{6}{6} = 1 = \dim\operatorname{Hom}_{S_3}(U, U)$ (Corollary~\ref{cor:dim-hom-pairing}).
+%% <<< END ADDED
+
+\begin{rembox}[{In What Sense the Pairing Is an Inner Product}]\label{rem:pairing-inner-product}
+The pairing is bilinear and symmetric (Proposition~\ref{prop:pairing-symmetric}). Over a general field there is no notion of positivity, so it is not an inner product in the sense of Definition~\ref{def:inner-product-real}. For characters over $\mathbb{R}$ and $\mathbb{C}$ it becomes a familiar expression:
+\begin{enumerate}
+    \item Over $\mathbb{R}$, $\chi_V(g^{-1}) = \chi_V(g)$ (Proposition~\ref{prop:character-inverse-real}), so $\langle \chi_V, \chi_W \rangle = \frac{1}{|G|}\sum_i |\operatorname{Conj}(g_i)|\,\chi_V(g_i)\,\chi_W(g_i)$: the dot product of the two rows, with each column weighted by the size of its conjugacy class, divided by $|G|$. For $S_3$ the weights $1$, $3$, $2$ give the dot products of the element-by-element table of Example~\ref{ex:s3-characters-elementwise}, divided by $6$.
+    \item Over $\mathbb{C}$, $\chi_V(g^{-1}) = \overline{\chi_V(g)}$ (Corollary~\ref{cor:character-inverse-complex}), so $\langle \chi_V, \chi_W \rangle = \frac{1}{|G|}\sum_i |\operatorname{Conj}(g_i)|\,\overline{\chi_V(g_i)}\,\chi_W(g_i)$. On characters this agrees with a Hermitian form (Definition~\ref{def:hermitian-form}), although the pairing itself is bilinear, with $g^{-1}$ in place of a complex conjugation.
+\end{enumerate}
+\srcline{not from class}
+\end{rembox}
+
+\subsection{The Rows Are Orthogonal}\label{sub:rows-orthogonal}
+
+The next result restates Character Sums for Simple Representations (Proposition~\ref{prop:character-sums-simple}) with the sum taken over the conjugacy classes.
+
+\begin{propbox}[{The Rows of the Character Table Are Orthogonal}]\label{prop:rows-orthogonal}
+Let $G$ be a finite group, $k$ a field containing $\mathbb{Q}$, and $U$, $V$ finite-dimensional simple representations of $G$ over $k$ (Definition~\ref{def:simple-representation}).
+\begin{enumerate}
+    \item For the pairing of Definition~\ref{def:pairing-class-functions},
+    \[ \langle \chi_U, \chi_V \rangle = \frac{1}{|G|}\sum_{i=1}^c |\operatorname{Conj}(g_i)|\,\chi_U(g_i^{-1})\,\chi_V(g_i) = \begin{cases} \dim\operatorname{Hom}_G(U, U) & \text{if } U \cong V, \\ 0 & \text{if } U \not\cong V. \end{cases} \]
+    \item If $k = \mathbb{C}$, then
+    \[ \langle \chi_U, \chi_V \rangle = \begin{cases} 1 & \text{if } U \cong V, \\ 0 & \text{if } U \not\cong V. \end{cases} \]
+\end{enumerate}
+\srcline{WS 18.3; board 11/18}
+\end{propbox}
+
+\begin{proof}
+\textit{(Board 11/18.)} By Corollary~\ref{cor:dim-hom-pairing}, $\langle \chi_U, \chi_V \rangle = \dim\operatorname{Hom}_G(U, V)$.
+
+\textbf{(1)} If $U \not\cong V$, then $\operatorname{Hom}_G(U, V) = \{0\}$ (Corollary~\ref{cor:hom-nonisomorphic-simples}). If $U \cong V$, then $\chi_V = \chi_U$ (Lemma~\ref{lem:isomorphic-same-character}), so $\langle \chi_U, \chi_V \rangle = \langle \chi_U, \chi_U \rangle = \dim\operatorname{Hom}_G(U, U)$.
+
+\textbf{(2)} Over $\mathbb{C}$, $\dim\operatorname{Hom}_G(U, U) = 1$ by Schur's Lemma over $\mathbb{C}$ (Proposition~\ref{prop:schur-complex}).
+\end{proof}
+
+In the words of the worksheet: the rows of the character table are orthogonal with the correct inner product. Over $\mathbb{C}$ they are orthonormal.
+
+\textbf{Transcription note (WS 18.3).} The worksheet says ``irreducible representations''. Under the hypotheses of this section, irreducible and simple mean the same (Proposition~\ref{prop:simple-iff-irreducible}), and these notes say simple.
+
+\subsection{Linear Independence and the Number of Simple Representations}\label{sub:number-of-simples}
+
+Orthogonality limits, for the first time, the number of simple representations of $G$.
+
+\begin{propbox}[{Characters of Non-Isomorphic Simple Representations Are Linearly Independent}]\label{prop:characters-independent}
+Let $G$ be a finite group and $k$ a field containing $\mathbb{Q}$. Let $S_1, \ldots, S_r$ be finite-dimensional simple representations of $G$ over $k$ (Definition~\ref{def:simple-representation}) with $S_i \not\cong S_j$ for $i \neq j$, and let $\chi_{S_j}$ be their characters (Definition~\ref{def:character-representation}). If $a_1, \ldots, a_r \in k$ satisfy
+\[ \sum_{j=1}^r a_j\,\chi_{S_j} = 0, \]
+then $a_1 = a_2 = \cdots = a_r = 0$. In other words, the rows of the character table are linearly independent.
+\srcline{WS 18.4(1); board 11/18}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} pair the relation with $\chi_{S_i}$; by orthogonality only the term with $j = i$ remains.\par
+\textit{(Board 11/18.)} The characters $\chi_{S_j}$ lie in the space $\operatorname{Cl}(G)$ of class functions, which carries the pairing $\langle \cdot, \cdot \rangle$ (Definition~\ref{def:pairing-class-functions}). Fix $i$. Pairing both sides of $\sum_j a_j\chi_{S_j} = 0$ with $\chi_{S_i}$ and using bilinearity (Proposition~\ref{prop:pairing-symmetric}(1)) and orthogonality (WS 18.3, Proposition~\ref{prop:rows-orthogonal}(1)),
+\[ 0 = \Big\langle \sum_{j=1}^r a_j\chi_{S_j},\ \chi_{S_i} \Big\rangle = \sum_{j=1}^r a_j\,\langle \chi_{S_j}, \chi_{S_i} \rangle = a_i \cdot \dim\operatorname{Hom}_G(S_i, S_i). \]
+The number $\dim\operatorname{Hom}_G(S_i, S_i)$ is a positive integer, since $\mathrm{Id}_{S_i} \neq 0$ lies in $\operatorname{Hom}_G(S_i, S_i)$, and a positive integer is not zero in $k$ because $k$ contains $\mathbb{Q}$. So $a_i = 0$.
+\end{proof}
+
+\textbf{Transcription note (board 11/18, WS 18.4).} The board writes the last step as $\langle \sum_j a_j\chi_{S_j}, \chi_{S_i} \rangle = a_i = 0$, which is the case $\dim\operatorname{Hom}_G(S_i, S_i) = 1$, for instance $k = \mathbb{C}$; in general the factor $\dim\operatorname{Hom}_G(S_i, S_i)$ appears, and it is not zero. Worksheet 18.4 says ``nonisomorphic representations'' in (1) and (2); simple representations are meant, as in the sentence before the problem. Without simplicity (1) is false: for $S_3$ the representations $\mathrm{triv}$, $U$ and $\mathbb{R}^3$ are pairwise non-isomorphic, and $\chi_{\mathbb{R}^3} - \chi_{\mathrm{triv}} - \chi_U = 0$ (Example~\ref{ex:characters-s3}).
+
+\begin{corbox}[{At Most as Many Simple Representations as Conjugacy Classes}]\label{cor:simples-at-most-classes}
+Let $G$ be a finite group with $c$ conjugacy classes and $k$ a field containing $\mathbb{Q}$. If $S_1, \ldots, S_r$ are finite-dimensional simple representations of $G$ over $k$ with $S_i \not\cong S_j$ for $i \neq j$, then
+\[ r \leq c. \]
+So, up to isomorphism, $G$ has at most $c$ finite-dimensional simple representations over $k$.
+\srcline{WS 18.4(2); board 11/18}
+\end{corbox}
+
+\begin{proof}
+\textit{(Board 11/18.)} The characters $\chi_{S_1}, \ldots, \chi_{S_r}$ are $r$ linearly independent vectors (WS 18.4(1), Proposition~\ref{prop:characters-independent}) in the space $\operatorname{Cl}(G)$, whose dimension is $c$ (Proposition~\ref{prop:dimension-class-functions}). A linearly independent list in a vector space of dimension $c$ has at most $c$ elements (Axler 2.22).
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, scale=3.0]
+\draw[->, black!55, thin] (0,0) -- (-0.6,-0.42) node[below left=-1pt] {$y_1$};
+\draw[->, black!55, thin] (0,0) -- (1.15,0) node[right] {$y_2$};
+\draw[->, black!55, thin] (0,0) -- (0,0.95) node[above] {$y_3$};
+\draw[black!35, densely dotted] (0.503,0.434) -- (0.503,-0.143) -- (-0.204,-0.143);
+\draw[black!35, densely dotted] (0.503,-0.143) -- (0.707,0);
+\draw[black!35, densely dotted] (-0.911,0.434) -- (-0.911,-0.143) -- (-0.204,-0.143);
+\draw[black!35, densely dotted] (-0.911,-0.143) -- (-0.707,0);
+\draw[black!35, densely dotted] (-0.408,-0.863) -- (-0.408,-0.286);
+\draw[->, very thick, blue!70!black] (0,0) -- (0.503,0.434) node[above right=-1pt] {$\chi_{\mathrm{triv}}$};
+\draw[->, very thick, orange!85!black] (0,0) -- (-0.911,0.434) node[above left=-1pt] {$\chi_{\mathrm{sign}}$};
+\draw[->, very thick, red!70!black] (0,0) -- (-0.408,-0.863) node[below=1pt] {$\chi_U$};
+\node[anchor=west, align=left] at (1.45,0.72) {coordinates of a class function $\alpha$ on $S_3$:\\$y_i = \sqrt{|\mathrm{Conj}(g_i)|/6}\;\alpha(g_i)$, \ $g_1 = e$, $g_2 = (1\,2)$, $g_3 = (1\,2\,3)$};
+\node[anchor=west, align=left, blue!70!black] at (1.45,0.33) {$\chi_{\mathrm{triv}} = \tfrac{1}{\sqrt6}\,(1,\ \sqrt3,\ \sqrt2)$};
+\node[anchor=west, align=left, orange!85!black] at (1.45,0.10) {$\chi_{\mathrm{sign}} = \tfrac{1}{\sqrt6}\,(1,\ -\sqrt3,\ \sqrt2)$};
+\node[anchor=west, align=left, red!70!black] at (1.45,-0.13) {$\chi_U = \tfrac{1}{\sqrt6}\,(2,\ 0,\ -\sqrt2)$};
+\node[anchor=west, align=left] at (1.45,-0.52) {three perpendicular unit vectors in a space\\of dimension $3$: no room for a fourth};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Corollary~\ref{cor:simples-at-most-classes} for $S_3$ over $\mathbb{R}$. A class function $\alpha$ on $S_3$ has three values, and in the coordinates $y_i = \sqrt{|\operatorname{Conj}(g_i)|/6}\,\alpha(g_i)$ the pairing of two characters is the ordinary dot product in $\mathbb{R}^3$ (the remark \emph{In What Sense the Pairing Is an Inner Product}, part (1)). The three characters $\chi_{\mathrm{triv}}$, $\chi_{\mathrm{sign}}$, $\chi_U$ become three perpendicular unit vectors. Three perpendicular nonzero vectors in $\mathbb{R}^3$ are linearly independent, and a fourth vector perpendicular to all three would be zero. So there is no fourth simple representation.
+%% <<< END ADDED
+
+\begin{exbox}[{$S_3$ Has Exactly Three Simple Representations}]\label{ex:s3-all-simple}
+\textit{(Not from class.)} $S_3$ has $c = 3$ conjugacy classes, the cycle types (Theorem~\ref{thm:conjugacy-classes-sn-cycle-types}). The trivial representation, the sign representation and $U$ are three pairwise non-isomorphic simple representations, over every field $k$ containing $\mathbb{Q}$ (Example~\ref{ex:s3-three-simple}). By WS 18.4(2) (Corollary~\ref{cor:simples-at-most-classes}) there cannot be a fourth. This settles the question left open in Example~\ref{ex:s3-three-simple}.
+\begin{enumerate}
+    \item \emph{Every simple representation of $S_3$ over $k$ is isomorphic to exactly one of $\mathrm{triv}$, $\mathrm{sign}$, $U$.} Otherwise it would be a fourth simple representation, not isomorphic to these three.
+    \item \emph{Every finite-dimensional representation $V$ of $S_3$ over $k$ is isomorphic to $\mathrm{triv}^{\oplus a} \oplus \mathrm{sign}^{\oplus b} \oplus U^{\oplus m}$} for integers $a, b, m \geq 0$, by Corollary~\ref{cor:decomposition-multiplicities} and (1). Then $\chi_V = a\,\chi_{\mathrm{triv}} + b\,\chi_{\mathrm{sign}} + m\,\chi_U$ (Proposition~\ref{prop:character-external-direct-sum}). Each of the three has $\langle \chi_S, \chi_S \rangle = 1$ (Example~\ref{ex:s3-characters-elementwise}), so by orthogonality (Proposition~\ref{prop:rows-orthogonal})
+    \[ a = \langle \chi_V, \chi_{\mathrm{triv}} \rangle, \qquad b = \langle \chi_V, \chi_{\mathrm{sign}} \rangle, \qquad m = \langle \chi_V, \chi_U \rangle. \]
+    \item \emph{A decomposition found from the character alone.} Let $V = \operatorname{Hom}(U, U)$ (Definition~\ref{def:hom-representation}), of dimension $4$. Its character is $\chi_U(g^{-1})\chi_U(g)$ (Proposition~\ref{prop:character-hom}), with the values $4$, $0$, $1$ on the classes of $e$, $(1\,2)$, $(1\,2\,3)$, of sizes $1$, $3$, $2$. Every element of $S_3$ is conjugate to its inverse, so $\chi(g_i^{-1}) = \chi(g_i)$ in the pairing, and
+    \[ \begin{aligned} a &= \tfrac16\big(1 \cdot 4 \cdot 1 + 3 \cdot 0 \cdot 1 + 2 \cdot 1 \cdot 1\big) = 1, \\ b &= \tfrac16\big(1 \cdot 4 \cdot 1 + 3 \cdot 0 \cdot (-1) + 2 \cdot 1 \cdot 1\big) = 1, \\ m &= \tfrac16\big(1 \cdot 4 \cdot 2 + 3 \cdot 0 \cdot 0 + 2 \cdot 1 \cdot (-1)\big) = 1, \end{aligned} \]
+    each term being (class size) $\cdot$ (value of $\chi_V$) $\cdot$ (value of the character of the simple representation).
+    So $\operatorname{Hom}(U, U) \cong \mathrm{triv} \oplus \mathrm{sign} \oplus U$, and the dimensions agree: $4 = 1 + 1 + 2$. The multiplicity $a = 1$ of the trivial representation is $\dim\operatorname{Hom}(U, U)^{S_3} = \dim\operatorname{Hom}_{S_3}(U, U)$.
+\end{enumerate}
+\srcline{not from class}
+\end{exbox}
+
+\subsection{\texorpdfstring{The Group $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$ and over $\mathbb{C}$}{The Group Z/4Z over R and over C}}\label{sub:z4-real-complex}
+
+\begin{exbox}[{$\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$ and over $\mathbb{C}$}]\label{ex:z4-real-complex}
+Let $G = \mathbb{Z}/4\mathbb{Z}$. It is abelian, so $hgh^{-1} = g$ and every conjugacy class has one element: there are $c = 4$ conjugacy classes, $\{0\}$, $\{1\}$, $\{2\}$, $\{3\}$. Let
+\[ J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix}, \qquad J^4 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \]
+the rotation of the plane by $90^\circ$. Since $J^4 = I$, the rule $\rho_R(k) = J^k$ is well defined for $k \in \mathbb{Z}/4\mathbb{Z}$ and makes $R = \mathbb{R}^2$ a representation of $G$ (the representation of Example~\ref{ex:dual-rotation}). The board lists three representations over $\mathbb{R}$: the trivial one; the one-dimensional representation in which $k$ acts by $(-1)^k$; and $R$.
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{l|cccc}
+ & $0$ & $1$ & $2$ & $3$ \\ \hline
+trivial & $1$ & $1$ & $1$ & $1$ \\
+$(-1)^k$ & $1$ & $-1$ & $1$ & $-1$ \\
+$J^k$ & $2$ & $0$ & $-2$ & $0$
+\end{tabular}
+\end{center}
+\begin{enumerate}
+    \item \emph{The last row.} $\chi_R(k) = \operatorname{Tr}J^k$, and $J^0 = I$, $J$, $J^2 = -I$, $J^3 = -J$ have the traces $2$, $0$, $-2$, $0$.
+    \item \emph{$\dim\operatorname{Hom}_G(R, R) = 2$} (board). The inverses of $0, 1, 2, 3$ are $0, 3, 2, 1$, and $\chi_R(3) = \chi_R(1)$, so by Corollary~\ref{cor:dim-hom-pairing}
+    \[ \dim\operatorname{Hom}_G(R, R) = \langle \chi_R, \chi_R \rangle = \tfrac14\big(2^2 + 0^2 + (-2)^2 + 0^2\big) = 2. \]
+    \item \emph{Over $\mathbb{R}$} (board): $R$ is simple, and it will be shown on Friday that the three rows are the only simple representations of $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$. So in WS 18.3(1) (Proposition~\ref{prop:rows-orthogonal}(1)) the value for $U = V = R$ is $\dim\operatorname{Hom}_G(R, R) = 2$, not $1$: this is the example announced in the remark \emph{Over Other Fields the Weights Stay} in \ref{sec:schur-multiplicities}. There are then three simple representations and four conjugacy classes, so the inequality of WS 18.4(2) (Corollary~\ref{cor:simples-at-most-classes}) can be strict.
+    \item \emph{Over $\mathbb{C}$} (board): the same three rules define representations over $\mathbb{C}$, with the same table. There are more representations than these, and $J^k$ acting on $\mathbb{C}^2$ is not simple; this is homework.
+    \item \emph{The rows are orthogonal} (check, not from class): $\langle \chi_{\mathrm{triv}}, \chi_{(-1)^k} \rangle = \frac14(1 - 1 + 1 - 1) = 0$, \ $\langle \chi_{\mathrm{triv}}, \chi_R \rangle = \frac14(2 + 0 - 2 + 0) = 0$, \ $\langle \chi_{(-1)^k}, \chi_R \rangle = \frac14(2 - 0 - 2 - 0) = 0$, and $\langle \chi_{\mathrm{triv}}, \chi_{\mathrm{triv}} \rangle = \langle \chi_{(-1)^k}, \chi_{(-1)^k} \rangle = \frac14 \cdot 4 = 1$.
+\end{enumerate}
+The simplicity of $R$ over $\mathbb{R}$, a basis of $\operatorname{Hom}_G(R, R)$, and a subrepresentation of $\mathbb{C}^2$ are Problem 10.4 of Problem Set 10; they will be added after the problem set is submitted.
+\srcline{lecture 11/18; part (5) not from class}
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+\draw[->, black!55, thin] (-2.0,0) -- (2.2,0) node[above] {$x$};
+\draw[->, black!55, thin] (0,-2.0) -- (0,2.2) node[above] {$y$};
+\draw[black!40] (0,0) circle (1.5);
+\draw[->, very thick, blue!70!black] (0,0) -- (1.5,0) node[below right=-1pt] {$e_1 = J^0e_1 = J^4e_1$};
+\draw[->, very thick, orange!85!black] (0,0) -- (0,1.5) node[above right=-1pt] {$Je_1 = e_2$};
+\draw[->, very thick, red!70!black] (0,0) -- (-1.5,0) node[below left=-1pt] {$J^2e_1 = -e_1$};
+\draw[->, very thick, black!65] (0,0) -- (0,-1.5) node[below right=-1pt] {$J^3e_1 = -e_2$};
+\draw[->, black!70] (0.55,0) arc (0:90:0.55) node[midway, above right=-2pt] {$90^\circ$};
+\node[anchor=west] at (4.2,1.5) {$J^k$ is the rotation by $k \cdot 90^\circ$; \ $\operatorname{Tr}J^k = 2\cos(k \cdot 90^\circ)$};
+\node[anchor=west, blue!70!black] at (4.2,0.8) {$k = 0$: \ $J^0 = \left(\begin{smallmatrix} 1 & 0 \\ 0 & 1 \end{smallmatrix}\right)$, \ trace $2$};
+\node[anchor=west, orange!85!black] at (4.2,0.2) {$k = 1$: \ $J = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$, \ trace $0$};
+\node[anchor=west, red!70!black] at (4.2,-0.4) {$k = 2$: \ $J^2 = \left(\begin{smallmatrix} -1 & 0 \\ 0 & -1 \end{smallmatrix}\right)$, \ trace $-2$};
+\node[anchor=west, black!65] at (4.2,-1.0) {$k = 3$: \ $J^3 = \left(\begin{smallmatrix} 0 & 1 \\ -1 & 0 \end{smallmatrix}\right)$, \ trace $0$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The representation $R$ of Example~\ref{ex:z4-real-complex}: $k \in \mathbb{Z}/4\mathbb{Z}$ acts on the plane by $J^k$, the rotation by $k \cdot 90^\circ$. The picture shows the images of $e_1$. The trace of the rotation by an angle $\theta$ is $2\cos\theta$, which gives the row $2$, $0$, $-2$, $0$ of the table.
+%% <<< END ADDED
 
 
 \appendix
@@ -12034,6 +12331,7 @@ with multiplicities $a = (1, 0, 1)$ with respect to the three simple representat
     \item \textbf{To count the homomorphisms between two representations ($G$ finite, $\mathbb{Q} \subseteq k$).} $\operatorname{Hom}_G(V, W)$ is the space of invariant vectors of $\operatorname{Hom}(V, W)$, whose character is $\chi_W(g)\chi_V(g^{-1})$ (the map $X \mapsto RXS$ has trace $\operatorname{Tr}R \cdot \operatorname{Tr}S$), so $\dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_g \chi_V(g)\chi_W(g^{-1})$ (Theorem~\ref{thm:dim-hom-g}); over $\mathbb{R}$ replace $\chi_W(g^{-1})$ by $\chi_W(g)$, over $\mathbb{C}$ by $\overline{\chi_W(g)}$ (Corollary~\ref{cor:dim-hom-g-real-complex}). Sum over conjugacy classes, weighting each by its size.
     \item \textbf{To find the character of a dual representation.} $V^\vee = \operatorname{Hom}(V, k)$ with $(g \ast f)(v) = f(g^{-1}v)$. In a basis and its dual basis, $g$ acts on $V^\vee$ by the inverse transpose of its matrix on $V$ (the transpose alone would give a right action), so $\chi_{V^\vee}(g) = \chi_V(g^{-1})$ (Proposition~\ref{prop:character-dual}); for a finite group this is $\chi_V(g)$ over $\mathbb{R}$ and $\overline{\chi_V(g)}$ over $\mathbb{C}$ (Corollary~\ref{cor:character-dual-real-complex}). Hence $\chi_{\operatorname{Hom}(V, W)} = \chi_{V^\vee}\chi_W$.
     \item \textbf{To count homomorphisms between direct sums of simple representations ($G$ finite, $\mathbb{Q} \subseteq k$).} $\dim\operatorname{Hom}_G$ is additive in each variable (Proposition~\ref{prop:dim-hom-additive}), and between non-isomorphic simple representations the only homomorphism is $0$ (Schur's Lemma, Proposition~\ref{prop:schur-lemma}, Corollary~\ref{cor:hom-nonisomorphic-simples}). So for pairwise non-isomorphic simple $S_i$, the dimension of $\operatorname{Hom}_G$ from $\bigoplus_i S_i^{\oplus a_i}$ to $\bigoplus_i S_i^{\oplus b_i}$ is $\sum_i a_ib_i\dim\operatorname{Hom}_G(S_i, S_i)$ (Proposition~\ref{prop:dim-hom-sums-of-simples}); over $\mathbb{C}$ every weight is $1$ and the dimension is $\sum_i a_ib_i$ (Proposition~\ref{prop:schur-complex}, Corollary~\ref{cor:multiplicities-complex}).
+    \item \textbf{To find or check the simple representations of $G$ ($G$ finite, $\mathbb{Q} \subseteq k$).} There are at most as many as conjugacy classes (Corollary~\ref{cor:simples-at-most-classes}). The rows of the character table are orthogonal for the pairing $\langle \alpha, \beta \rangle = \frac{1}{|G|}\sum_i |\operatorname{Conj}(g_i)|\,\alpha(g_i^{-1})\beta(g_i)$, and $\langle \chi_S, \chi_S \rangle = \dim\operatorname{Hom}_G(S, S)$, which is $1$ over $\mathbb{C}$ (Proposition~\ref{prop:rows-orthogonal}). The multiplicity of a simple representation $S$ in $V$ is $\langle \chi_V, \chi_S \rangle / \langle \chi_S, \chi_S \rangle$ (Proposition~\ref{prop:dim-hom-sums-of-simples} and Corollary~\ref{cor:dim-hom-pairing}; for $S_3$, Example~\ref{ex:s3-all-simple}).
     \item \textbf{To show a representation is simple.} Rule out subrepresentations other than $\{0\}$ and $V$; in dimension $2$ these are invariant lines, i.e.\ common eigenvectors of all $\rho(g)$ (a rotation by $120^\circ$ has no real eigenvector; Example~\ref{ex:s3-r3-simples}). Under Maschke's hypotheses, simple is the same as irreducible (not a direct sum of two nonzero subrepresentations; Proposition~\ref{prop:simple-iff-irreducible}), and every representation is a direct sum of simple ones (Corollary~\ref{cor:direct-sum-of-simples}). With characters ($G$ finite, $\mathbb{Q} \subseteq k$): compute $\dim\operatorname{Hom}_G(V, V) = \frac{1}{|G|}\sum_g \chi_V(g^{-1})\chi_V(g)$; if it is $1$, then $V$ is simple (Lemma~\ref{lem:simplicity-test}), and over $\mathbb{C}$ the converse holds (Corollary~\ref{cor:simple-iff-hom-one-complex}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
@@ -12084,8 +12382,9 @@ Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the r
     \item A semidirect product is not determined by $N$ and $S$ alone: $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ and $S_3$ are both of the form $\mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$. The action $\varphi$ is part of the data, and in $N \rtimes S$ it is $N$, not $S$, that is normal (\ref{sec:semidirect-products}).
     \item The composition factors do not determine the group: $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ both have factors $\mathbb{Z}/2, \mathbb{Z}/2$, and $\mathbb{Z}/6\mathbb{Z}$ and $S_3$ both have $\mathbb{Z}/2, \mathbb{Z}/3$. Jordan--H\"older says the list is an invariant, not a complete one (\ref{sec:composition-series}).
     \item Decompositions of representations can depend on the field: $k\{1,2,3\} = k(1,1,1) \oplus \{x + y + z = 0\}$ exactly when $3 \neq 0$ in $k$; over $\mathbb{F}_3$ the first summand lies inside the second (Proposition~\ref{prop:k123-direct-sum}).
-    \item $\dim\operatorname{Hom}_G(S, S) = 1$ for a simple representation $S$ is Schur's Lemma over $\mathbb{C}$; its proof uses an eigenvalue (Proposition~\ref{prop:schur-complex}). Over $\mathbb{R}$ or a general field, keep the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ in the multiplicity formula (the remark \emph{Over Other Fields the Weights Stay} in \ref{sec:schur-multiplicities}). The parts of Schur's Lemma about injective, surjective and zero maps hold over every field (Proposition~\ref{prop:schur-lemma}).
+    \item $\dim\operatorname{Hom}_G(S, S) = 1$ for a simple representation $S$ is Schur's Lemma over $\mathbb{C}$; its proof uses an eigenvalue (Proposition~\ref{prop:schur-complex}). Over $\mathbb{R}$ or a general field, keep the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ in the multiplicity formula (the remark \emph{Over Other Fields the Weights Stay} in \ref{sec:schur-multiplicities}): for the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$ the number is $2$ (Example~\ref{ex:z4-real-complex}). The parts of Schur's Lemma about injective, surjective and zero maps hold over every field (Proposition~\ref{prop:schur-lemma}).
     \item $V \oplus V$ and $V^{\oplus a}$ are external direct sums (tuples). They are not internal direct sums, since $V \cap V = V$ (Definition~\ref{def:repeated-direct-sum}).
+    \item The rows of a character table are orthogonal for the pairing with the class sizes as weights and with $\chi(g_i^{-1})$ in the first factor, not for the plain dot product of the listed entries: for $S_3$ the rows $(1, 1, 1)$ and $(2, 0, -1)$ have plain dot product $1$, and pairing $\frac16(1 \cdot 2 + 3 \cdot 0 + 2 \cdot (-1)) = 0$ (Proposition~\ref{prop:rows-orthogonal}).
 \end{enumerate}
 
 \chapter{Course Chronology}\label{ch:chronology}
@@ -12138,6 +12437,7 @@ Wed Nov 11 \newline lecture; Worksheet 16 & Two more descriptions of the trace; 
 Thu Nov 12 \newline Problem Set 9 (submitted) & Extensions of solvable groups; idempotents split $V = \operatorname{Ker} \oplus \operatorname{Im}$; the proof of Maschke's theorem; counterexamples for $\mathbb{Z}$ and for $\mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$; affine maps as semidirect products & \ref{sec:solvable} (9.1), \ref{sec:maschke} (9.2--9.4), \ref{sec:affine-maps} (9.5) \\
 Fri Nov 13 \newline lecture & Dual spaces, dual bases and dual maps; the transpose matrix; the dual representation (inverse transpose) and $\chi_{V^\vee}(g) = \chi_V(g^{-1})$; a word on tensor products & \ref{sec:dual-representations} \\
 Mon Nov 16 \newline lecture; Worksheet 17 & External direct sums $V^{\oplus a}$; kernels and images of homomorphisms of representations; $\dim\operatorname{Hom}_G$ is additive in direct sums; Schur's Lemma, and Schur's Lemma over $\mathbb{C}$; multiplicities; orthogonality of the rows of the character table of $S_3$; a simplicity test & \ref{sec:representations} (13.6), \ref{sec:schur-multiplicities} (17.1--17.5) \\
+Wed Nov 18 \newline lecture; Worksheet 18 & The character table: one column per conjugacy class, one row per simple representation; class functions and their pairing; the rows are orthogonal and linearly independent; at most as many simple representations as conjugacy classes; $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$ and over $\mathbb{C}$ & \ref{sec:character-table} (18.1--18.4) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 
@@ -12609,6 +12909,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em centralizer\dotfill \pageref{def:centralizer}\par
 \noindent\hangindent=1em character\dotfill \pageref{def:character}, \pageref{def:character-representation}\par
 \noindent\hangindent=1em character table\dotfill \pageref{def:character-table}\par
+\noindent\hangindent=1em class function\dotfill \pageref{def:class-function}\par
 \noindent\hangindent=1em commutative\dotfill \pageref{def:abelian-group}, \pageref{def:commuting-elements}\par
 \noindent\hangindent=1em commutative ring\dotfill \pageref{def:commutative-ring-provisional}\par
 \noindent\hangindent=1em commutator\dotfill \pageref{def:commutator}\par
@@ -12702,6 +13003,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em order\dotfill \pageref{def:order-group-order-element-cyclic-groups}, \pageref{def:order-element}\par
 \noindent\hangindent=1em orthogonal complement\dotfill \pageref{def:orthogonal-complement}\par
 \noindent\hangindent=1em orthogonal group\dotfill \pageref{def:orthogonal-group}\par
+\noindent\hangindent=1em pairing of class functions\dotfill \pageref{def:pairing-class-functions}\par
 \noindent\hangindent=1em partition\dotfill \pageref{def:partition}, \pageref{def:cycle-type}\par
 \noindent\hangindent=1em parts\dotfill \pageref{def:partition}\par
 \noindent\hangindent=1em permutation matrix\dotfill \pageref{def:permutation-matrices}\par
@@ -12798,6 +13100,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em $A_n$ Is Simple for $n \geq 5$\dotfill \pageref{thm:an-simple-n-ge-5}\par
 \noindent\hangindent=1em $A_n$ Is the Stabilizer of $\Delta$\dotfill \pageref{cor:an-stabilizer-delta}\par
 \noindent\hangindent=1em An $r$-Cycle Has Order $r$\dotfill \pageref{lem:r-cycle-has-order-r}\par
+\noindent\hangindent=1em At Most as Many Simple Representations as Conjugacy Classes\dotfill \pageref{cor:simples-at-most-classes}\par
 \noindent\hangindent=1em Automorphisms of $\mathbb{Z}/q\mathbb{Z}$\dotfill \pageref{lem:aut-zq}\par
 \noindent\hangindent=1em Averaging a Linear Map over $G$\dotfill \pageref{lem:averaging-linear-map}\par
 \noindent\hangindent=1em Averaging Gives an Inner Product\dotfill \pageref{prop:averaged-inner-product}\par
@@ -12818,6 +13121,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Characters Are Constant on Conjugacy Classes\dotfill \pageref{prop:characters-constant-conjugacy-classes}\par
 \noindent\hangindent=1em Characters Kill Commutators\dotfill \pageref{prop:characters-kill-commutators}\par
 \noindent\hangindent=1em Characters of $A_n$ Are Trivial for $n \geq 5$\dotfill \pageref{thm:characters-an-trivial}\par
+\noindent\hangindent=1em Characters of Non-Isomorphic Simple Representations Are Linearly Independent\dotfill \pageref{prop:characters-independent}\par
 \noindent\hangindent=1em Chinese Remainder Theorem\dotfill \pageref{thm:chinese-remainder-theorem}\par
 \noindent\hangindent=1em Class Sizes Divide the Group Order\dotfill \pageref{cor:class-sizes-divide-group-order}\par
 \noindent\hangindent=1em Classification of Cyclic Groups\dotfill \pageref{thm:classification-cyclic-groups}\par
@@ -13039,6 +13343,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Subgroups of Solvable Groups Are Solvable\dotfill \pageref{prop:subgroups-solvable}\par
 \noindent\hangindent=1em Subgroups of $\mathbb{Z}$\dotfill \pageref{prop:subgroups-z}\par
 \noindent\hangindent=1em Subquotients: An Injection and a Surjection\dotfill \pageref{prop:subquotient-maps}\par
+\noindent\hangindent=1em Sums of Class Functions over $G$\dotfill \pageref{lem:class-function-sums}\par
 \noindent\hangindent=1em Surjectivity and Injectivity via Image and Kernel\dotfill \pageref{prop:surjectivity-injectivity-via-image-kernel}\par
 \noindent\hangindent=1em Sylow $p$-Subgroups of $GL_n(\mathbb{F}_p)$ and Flags\dotfill \pageref{prop:sylow-gln-flags}\par
 \noindent\hangindent=1em Sylow Subgroups of a Subgroup\dotfill \pageref{prop:sylow-of-subgroup}\par
@@ -13061,6 +13366,8 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Crossing Square\dotfill \pageref{prop:jh-crossing-square}\par
 \noindent\hangindent=1em The Cube Group Embeds in $S_6$\dotfill \pageref{prop:cube-group-embeds-s6}\par
 \noindent\hangindent=1em The Derived Series of a Finite Group Stabilizes\dotfill \pageref{prop:derived-series-finite-stabilizes}\par
+\noindent\hangindent=1em The Dimension Formula as a Pairing\dotfill \pageref{cor:dim-hom-pairing}\par
+\noindent\hangindent=1em The Dimension of the Space of Class Functions\dotfill \pageref{prop:dimension-class-functions}\par
 \noindent\hangindent=1em The Dual Basis Is a Basis\dotfill \pageref{prop:dual-basis-is-basis}\par
 \noindent\hangindent=1em The Dual Map Has the Transpose Matrix\dotfill \pageref{prop:dual-map-transpose}\par
 \noindent\hangindent=1em The Dual Representation Is a Representation\dotfill \pageref{prop:dual-is-representation}\par
@@ -13078,6 +13385,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Order of a Product of Subgroups\dotfill \pageref{lem:order-product-subgroups}\par
 \noindent\hangindent=1em The Order of $GL_n(\mathbb{F}_p)$\dotfill \pageref{prop:order-gln-fp}\par
 \noindent\hangindent=1em The Order of $SN$\dotfill \pageref{cor:order-sn}\par
+\noindent\hangindent=1em The Pairing Is Bilinear and Symmetric\dotfill \pageref{prop:pairing-symmetric}\par
 \noindent\hangindent=1em The Pair-Partition Homomorphism $S_4 \to S_3$\dotfill \pageref{prop:pair-partition-homomorphism-s4-to-s3}\par
 \noindent\hangindent=1em The Permutation Representation Is a Representation\dotfill \pageref{prop:permutation-representation-is-representation}\par
 \noindent\hangindent=1em The Product and Its Universal Property\dotfill \pageref{prop:product-universal-property}\par
@@ -13086,6 +13394,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Quotient by $N_1 \cap N_2$ Is a Direct Product\dotfill \pageref{cor:two-simple-quotients-product}\par
 \noindent\hangindent=1em The Quotients of the Image Chain in $G/N$\dotfill \pageref{prop:image-chain-quotients-g-mod-n}\par
 \noindent\hangindent=1em The Rotation Group of the Cube Is $S_4$\dotfill \pageref{thm:rotation-group-cube-s4}\par
+\noindent\hangindent=1em The Rows of the Character Table Are Orthogonal\dotfill \pageref{prop:rows-orthogonal}\par
 \noindent\hangindent=1em The Second Sylow Theorem\dotfill \pageref{thm:sylow-second}\par
 \noindent\hangindent=1em The Sign Is a Homomorphism\dotfill \pageref{thm:sign-homomorphism}\par
 \noindent\hangindent=1em The Sign of Left Multiplication\dotfill \pageref{lem:sign-left-multiplication}\par

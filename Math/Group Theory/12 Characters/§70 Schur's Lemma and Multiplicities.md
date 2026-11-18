@@ -5,7 +5,7 @@ chapter: 12
 section: 70
 tags: [group-theory, math493]
 ---
-← [[§69 Dual Representations]] · ↑ [[· 12 Characters]]
+← [[§69 Dual Representations]] · ↑ [[· 12 Characters]] · [[§71 The Character Table]] →
 
 *Source: Lecture and Worksheet 17, *Dimensions of hom spaces, and Schur's lemma* (Mon Nov 16): WS 17.1–17.5. Reference: Axler, *Linear Algebra Done Right* (existence of eigenvalues).*
 
@@ -95,7 +95,7 @@ The underlying set of $V^{\oplus a}$ is the set $V^a$ of $a$-tuples. The notatio
 >
 > In particular $\dim V^{\oplus a} = a\dim V$ and $\chi_{V^{\oplus a}} = a\,\chi_V$.
 >
-> *Source: not from class; the lecture of 11/9 proved the case of an internal direct sum of two subrepresentations (Proposition [[§67 Characters of Representations#^prop-67-2|§67.2]])*
+> *Source: not from class; the lecture of 11/9 proved the case of an internal direct sum of two subrepresentations (Proposition [[§67 Characters of Representations#^prop-67-2|§67.2]]); for two summands this is WS 18.2*
 
 ^prop-70-2
 
@@ -387,9 +387,9 @@ Over the complex numbers the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ are al
 *(Not from lecture; figure added.)* Corollary [[§70 Schur's Lemma and Multiplicities#^cor-70-9|§70.9]] for three simple representations with multiplicities $a = (2, 1, 3)$ in the source and $b = (1, 2, 2)$ in the target. A homomorphism between the two direct sums is a “matrix” with one entry for each pair (copy in the source, copy in the target), by the second proof of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-4|§70.4]](1) applied one summand at a time. An entry between copies of different $S_i$ is zero (Corollary [[§70 Schur's Lemma and Multiplicities#^cor-70-6|§70.6]]). An entry between two copies of the same $S_i$ is an element of $\operatorname{Hom}_G(S_i, S_i)$, which over $\mathbb{C}$ is one complex number times the identity (Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]]). So the dimension is the number of cells in the coloured blocks, $2 \cdot 1 + 1 \cdot 2 + 3 \cdot 2 = 10$, the dot product of $a$ and $b$.
 
 > [!remark] Remark: Over Other Fields the Weights Stay
-> The proof of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]] needs an eigenvalue of $\alpha$ in the ground field. Over $\mathbb{R}$ a linear map need not have a real eigenvalue, and for a simple real representation $S$ the number $\dim\operatorname{Hom}_G(S, S)$ can be larger than $1$. An example is the subject of Problem Set 10 (Problem 10.4); it will be added here after the problem set is submitted. So over $\mathbb{R}$, and over a general field containing $\mathbb{Q}$, the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-7|§70.7]] must be kept.
+> The proof of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]] needs an eigenvalue of $\alpha$ in the ground field. Over $\mathbb{R}$ a linear map need not have a real eigenvalue, and for a simple real representation $S$ the number $\dim\operatorname{Hom}_G(S, S)$ can be larger than $1$. The lecture of 11/18 gave an example, the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$, where the number is $2$ (Example [[§71 The Character Table#^ex-71-2|§71.2]]); the proofs belong to Problem Set 10 (Problem 10.4) and will be added after the problem set is submitted. So over $\mathbb{R}$, and over a general field containing $\mathbb{Q}$, the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-7|§70.7]] must be kept.
 >
-> *Source: lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the reference to Problem Set 10 is added*
+> *Source: lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the example is from the lecture of 11/18*
 
 ^rem-70-1
 
@@ -498,7 +498,7 @@ In Example [[§70 Schur's Lemma and Multiplicities#^ex-70-1|§70.1]] the argumen
 > 2. For $U$ this is a second proof of Example [[§65 Simple Representations#^ex-65-1|§65.1]](2), where the simplicity of $U$ was shown directly: a rotation by $120^\circ$ has no real eigenvector.
 > 3. The same computation applies over every field $k$ containing $\mathbb{Q}$, with $U$ the sum-zero plane in $k^3$: the three characters have the same integer values, since $k^3 = k(1,1,1) \oplus U$ whenever $3 \neq 0$ in $k$ (Proposition [[§61 Representations and Subrepresentations#^prop-61-3|§61.3]]).
 >
-> The lecture ended here. Whether these three are all the simple representations of $S_3$ has not been settled yet.
+> The lecture of 11/16 ended here. That these three are all the simple representations of $S_3$ follows from Worksheet 18 (Example [[§71 The Character Table#^ex-71-1|§71.1]]).
 >
 > *Source: lecture 11/16; parts (2) and (3) not from class*
 

@@ -5448,7 +5448,7 @@ $(i\gamma^\mu\partial_\mu - m)\psi(x) = 0$, four coupled first-order linear PDEs
 
 ### [B] Feynman slash
 
-$\slashed a \equiv \gamma^\mu a_\mu = \gamma^0a_0 + \gamma^ia_i$; the Dirac equation is $(i\slashed\partial - m)\psi = 0$; in the chiral basis $\slashed p = \begin{pmatrix}0 & p\cdot\sigma\\ p\cdot\bar\sigma & 0\end{pmatrix}$, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Feynman Slash. *Source: Lecture 9, slide "Completeness for Dirac Spinors: the Result" ("Notation: γ^μp_μ ≡ p̸")*
+$\slashed a \equiv \gamma^\mu a_\mu = \gamma^0a_0 + \gamma^ia_i$; the Dirac equation is $(i\slashed\partial - m)\psi = 0$; in the chiral basis $\slashed p = \begin{pmatrix}0 & p\cdot\sigma\\ p\cdot\bar\sigma & 0\end{pmatrix}$, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Feynman Slash. *Source: Lecture 9, slide "Completeness for Dirac Spinors: the Result" ("Notation: $\gamma^\mu p_\mu \equiv \slashed p$")*
 
 ^nd-def-c5a-7-3
 
