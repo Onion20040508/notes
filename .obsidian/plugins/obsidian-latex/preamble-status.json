@@ -1,6 +1,6 @@
 {
   "loader": "v2 (2026-11-09)",
-  "started": "2026-11-15T05:42:49.539Z",
+  "started": "2026-11-18T18:00:57.465Z",
   "mathjaxVersion": "4.1.3",
   "tex2chtmlAtLoad": "function",
   "lookupApi": true,
@@ -9,10 +9,10 @@
   "mode": "define",
   "defines": 1,
   "defineFailures": 0,
-  "renders": 6520,
-  "rendersWithMacro": 19,
+  "renders": 116,
+  "rendersWithMacro": 0,
   "undefinedInOutput": 0,
   "rehooks": 0,
   "errors": [],
-  "updated": "2026-11-18T07:54:48.703Z"
+  "updated": "2026-11-18T18:00:58.989Z"
 }
