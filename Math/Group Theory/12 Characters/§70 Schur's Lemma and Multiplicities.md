@@ -7,7 +7,7 @@ tags: [group-theory, math493]
 ---
 ← [[§69 Dual Representations]] · ↑ [[· 12 Characters]] · [[§71 The Character Table]] →
 
-*Source: Lecture and Worksheet 17, *Dimensions of hom spaces, and Schur's lemma* (Mon Nov 16): WS 17.1–17.5. Reference: Axler, *Linear Algebra Done Right* (existence of eigenvalues).*
+*Source: Lecture and Worksheet 17, *Dimensions of hom spaces, and Schur's lemma* (Mon Nov 16): WS 17.1–17.5; Problem Set 10, Problem 10.3 (submitted), in the last subsection. Reference: Axler, *Linear Algebra Done Right* (existence of eigenvalues).*
 
 Throughout this section, unless something else is said, $G$ is a finite group, $k$ is a field containing $\mathbb{Q}$, and all representations are finite-dimensional representations of $G$ over $k$. Under these hypotheses there are two main results so far. The first is Maschke's theorem (Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]), by which every representation is a direct sum of simple representations (Corollary [[§65 Simple Representations#^cor-65-3|§65.3]]). The second is the formula
 
@@ -15,7 +15,7 @@ $$
 \dim\operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_{g \in G} \chi_V(g^{-1})\,\chi_W(g)
 $$
 
-(Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]]; for its forms over $\mathbb{R}$ and $\mathbb{C}$, which Worksheet 17 recalls, see Corollary [[§68 Homomorphisms Between Representations#^cor-68-11|§68.11]]). This section puts the two together: split $V$ and $W$ into simple representations and see what the formula says.
+(Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]]; for its forms over $\mathbb{R}$ and $\mathbb{C}$, which Worksheet 17 recalls, see Corollary [[§68 Homomorphisms Between Representations#^cor-68-12|§68.12]]). This section puts the two together: split $V$ and $W$ into simple representations and see what the formula says.
 
 The hypothesis $\mathbb{Q} \subseteq k$ says that $k$ has characteristic $0$: no sum $1 + 1 + \cdots + 1$ with a positive number of terms is $0$ in $k$. It is stronger than “$k$ is infinite”. *(Example not from class.)* The field $\mathbb{F}_p(t)$ of rational functions in one variable over $\mathbb{F}_p$ is infinite, and $p = 0$ in it.
 
@@ -387,9 +387,9 @@ Over the complex numbers the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ are al
 *(Not from lecture; figure added.)* Corollary [[§70 Schur's Lemma and Multiplicities#^cor-70-9|§70.9]] for three simple representations with multiplicities $a = (2, 1, 3)$ in the source and $b = (1, 2, 2)$ in the target. A homomorphism between the two direct sums is a “matrix” with one entry for each pair (copy in the source, copy in the target), by the second proof of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-4|§70.4]](1) applied one summand at a time. An entry between copies of different $S_i$ is zero (Corollary [[§70 Schur's Lemma and Multiplicities#^cor-70-6|§70.6]]). An entry between two copies of the same $S_i$ is an element of $\operatorname{Hom}_G(S_i, S_i)$, which over $\mathbb{C}$ is one complex number times the identity (Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]]). So the dimension is the number of cells in the coloured blocks, $2 \cdot 1 + 1 \cdot 2 + 3 \cdot 2 = 10$, the dot product of $a$ and $b$.
 
 > [!remark] Remark: Over Other Fields the Weights Stay
-> The proof of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]] needs an eigenvalue of $\alpha$ in the ground field. Over $\mathbb{R}$ a linear map need not have a real eigenvalue, and for a simple real representation $S$ the number $\dim\operatorname{Hom}_G(S, S)$ can be larger than $1$. The lecture of 11/18 gave an example, the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$, where the number is $2$ (Example [[§71 The Character Table#^ex-71-2|§71.2]]); the proofs belong to Problem Set 10 (Problem 10.4) and will be added after the problem set is submitted. So over $\mathbb{R}$, and over a general field containing $\mathbb{Q}$, the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-7|§70.7]] must be kept.
+> The proof of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]] needs an eigenvalue of $\alpha$ in the ground field. Over $\mathbb{R}$ a linear map need not have a real eigenvalue, and for a simple real representation $S$ the number $\dim\operatorname{Hom}_G(S, S)$ can be larger than $1$. The lecture of 11/18 gave an example, the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$, where the number is $2$ (Example [[§71 The Character Table#^ex-71-2|§71.2]]); the proofs are Problem 10.4 of Problem Set 10 (Example [[§71 The Character Table#^ex-71-3|§71.3]]). So over $\mathbb{R}$, and over a general field containing $\mathbb{Q}$, the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-7|§70.7]] must be kept.
 >
-> *Source: lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the example is from the lecture of 11/18*
+> *Source: lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the example is from the lecture of 11/18 and PS 10.4*
 
 ^rem-70-1
 
@@ -520,3 +520,190 @@ In Example [[§70 Schur's Lemma and Multiplicities#^ex-70-1|§70.1]] the argumen
 > *Source: not from class*
 
 ^ex-70-3
+
+## An Application: $\operatorname{Hom}(V, W)$ as a Representation of $G \times H$
+
+*Source: Problem Set 10, Problem 10.3 (submitted); the action was announced in the lecture of Fri Nov 13.*
+
+In this subsection $G$ and $H$ are finite groups, $V$ is a finite-dimensional representation of $G$ and $W$ a finite-dimensional representation of $H$, over the same field. As in the problem set, $X$ stands for $\operatorname{Hom}(V, W)$, the vector space of linear maps $V \to W$.
+
+> [!definition] Definition §70.3: The Action of $G \times H$ on $\operatorname{Hom}(V, W)$
+> Let $V$ be a representation of $G$ and $W$ a representation of $H$ over the same field. The **action of $G \times H$ on $\operatorname{Hom}(V, W)$**, for the direct product $G \times H$ (Definition [[§3 Basic Examples of Groups#^def-3-2|§3.2]]) and $X = \operatorname{Hom}(V, W)$, is
+>
+> $$
+> (g, h) \ast \alpha = \rho_W(h) \circ \alpha \circ \rho_V(g^{-1}).
+> $$
+>
+> *Source: PS 10.3; lecture 11/13 (announced)*
+
+^def-70-3
+
+For $H = G$, the elements $(g, g)$ act by $\rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$, which is the action of $G$ on $\operatorname{Hom}(V, W)$ of Definition [[§68 Homomorphisms Between Representations#^def-68-1|§68.1]].
+
+> [!theorem] Proposition §70.13: $\operatorname{Hom}(V, W)$ Is a Representation of $G \times H$
+> The rule of Definition [[§70 Schur's Lemma and Multiplicities#^def-70-3|§70.3]] is an action of $G \times H$ on $X = \operatorname{Hom}(V, W)$ by linear maps. So $X$ is a representation of $G \times H$.
+>
+> *Source: PS 10.3(1)*
+
+^prop-70-13
+
+> [!proof]+ Proof
+> *(Problem Set 10, Problem 10.3(1), as submitted.)* *Well-defined.* For $(g, h) \in G \times H$ and $\alpha \in X$, the map $(g, h) \ast \alpha = \rho_W(h) \circ \alpha \circ \rho_V(g^{-1})$ is a composition of linear maps $V \to V \to W \to W$, so it lies in $X$.
+>
+> *Linearity.* Since composition of linear maps is bilinear, for $\alpha, \beta \in X$ and a scalar $c$,
+>
+> $$
+> (g, h) \ast (\alpha + c\beta) = \rho_W(h) \circ (\alpha + c\beta) \circ \rho_V(g^{-1}) = (g, h) \ast \alpha + c\,(g, h) \ast \beta .
+> $$
+>
+> *Identity.* $(e, e) \ast \alpha = \rho_W(e) \circ \alpha \circ \rho_V(e) = \mathrm{id}_W \circ \alpha \circ \mathrm{id}_V = \alpha$.
+>
+> *Compatibility.* Let $(g_1, h_1), (g_2, h_2) \in G \times H$. The product in $G \times H$ is componentwise, $(g_1g_2)^{-1} = g_2^{-1}g_1^{-1}$, and $\rho_V$, $\rho_W$ are homomorphisms, so $\rho_V\big((g_1g_2)^{-1}\big) = \rho_V(g_2^{-1}) \circ \rho_V(g_1^{-1})$ and $\rho_W(h_1h_2) = \rho_W(h_1) \circ \rho_W(h_2)$. Hence, using associativity of composition,
+>
+> $$
+> \begin{aligned}\big((g_1, h_1)(g_2, h_2)\big) \ast \alpha &= (g_1g_2, h_1h_2) \ast \alpha = \rho_W(h_1h_2) \circ \alpha \circ \rho_V\big((g_1g_2)^{-1}\big) \\
+> &= \rho_W(h_1) \circ \big(\rho_W(h_2) \circ \alpha \circ \rho_V(g_2^{-1})\big) \circ \rho_V(g_1^{-1}) \\
+> &= \rho_W(h_1) \circ \big((g_2, h_2) \ast \alpha\big) \circ \rho_V(g_1^{-1}) = (g_1, h_1) \ast \big((g_2, h_2) \ast \alpha\big) .\end{aligned}
+> $$
+>
+> Therefore $\ast$ is a linear action of $G \times H$ on $X$, i.e. $X$ is a representation of $G \times H$.
+
+^pf-70-13
+
+> [!theorem] Proposition §70.14: The Character of $\operatorname{Hom}(V, W)$ as a Representation of $G \times H$
+> Let $V$ and $W$ be finite-dimensional, and let $X = \operatorname{Hom}(V, W)$ with the action of Definition [[§70 Schur's Lemma and Multiplicities#^def-70-3|§70.3]]. Then for all $(g, h) \in G \times H$
+>
+> $$
+> \chi_X(g, h) = \chi_V(g^{-1})\,\chi_W(h).
+> $$
+>
+> *Source: PS 10.3(2)*
+
+^prop-70-14
+
+> [!proof]+ Proof
+> *Idea:* in bases, $(g, h)$ acts on matrices by $Y \mapsto RYS$, whose trace is $\operatorname{Tr}(R)\operatorname{Tr}(S)$.
+>
+> *(Problem Set 10, Problem 10.3(2), as submitted.)* Let $m = \dim W$ and $n = \dim V$, and fix bases of $V$ and $W$. For a linear map $\beta$ between these spaces, write $[\beta]$ for its matrix in these bases. Then $\alpha \mapsto [\alpha]$ is a linear isomorphism from $X = \operatorname{Hom}(V, W)$ to the space of $m \times n$ matrices.
+>
+> Fix $(g, h) \in G \times H$. By definition, $\chi_X(g, h)$ is the trace of the linear operator
+>
+> $$
+> \rho_X(g, h) \colon X \to X, \qquad \alpha \mapsto \rho_W(h) \circ \alpha \circ \rho_V(g^{-1}),
+> $$
+>
+> on the $mn$-dimensional space $X$. Let $R = [\rho_W(h)]$, an $m \times m$ matrix, and $S = [\rho_V(g^{-1})]$, an $n \times n$ matrix. Since the matrix of a composition is the product of the matrices,
+>
+> $$
+> \big[\rho_X(g, h)\alpha\big] = R\,[\alpha]\,S \qquad (\alpha \in X).
+> $$
+>
+> Hence, under the isomorphism $\alpha \mapsto [\alpha]$, the operator $\rho_X(g, h)$ corresponds to $L \colon Y \mapsto RYS$ on $m \times n$ matrices, and the two have the same trace, since the trace of an operator does not depend on the basis. By the lemma on the trace of $Y \mapsto RYS$ (Lemma [[§68 Homomorphisms Between Representations#^lem-68-4|§68.4]], the computation of Worksheet 16.2), $\operatorname{Tr}(L) = \operatorname{Tr}(R)\operatorname{Tr}(S)$. Therefore
+>
+> $$
+> \chi_X(g, h) = \operatorname{Tr}(L) = \operatorname{Tr}\big(\rho_W(h)\big)\operatorname{Tr}\big(\rho_V(g^{-1})\big) = \chi_V(g^{-1})\,\chi_W(h) .
+> $$
+
+^pf-70-14
+
+*Uses:* [[§68 Homomorphisms Between Representations#^lem-68-4|§68.4]]
+
+> [!theorem] Proposition §70.15: $\dim\operatorname{Hom}_{G \times H}(X, X)$ Is a Product
+> Let the field contain $\mathbb{Q}$, and let $X = \operatorname{Hom}(V, W)$ with the action of Definition [[§70 Schur's Lemma and Multiplicities#^def-70-3|§70.3]]. Then
+>
+> $$
+> \dim\operatorname{Hom}_{G \times H}(X, X) = \Big(\dim\operatorname{Hom}_G(V, V)\Big)\Big(\dim\operatorname{Hom}_H(W, W)\Big).
+> $$
+>
+> *Source: PS 10.3(3)*
+
+^prop-70-15
+
+> [!proof]+ Proof
+> *Idea:* the character of $X$ is a product of a function of $g$ and a function of $h$, so the sum over $G \times H$ in the dimension formula factors.
+>
+> *(Problem Set 10, Problem 10.3(3), as submitted.)* We use the dimension formula for spaces of homomorphisms (Worksheet 16, Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]]): for a finite group $K$ and finite-dimensional representations $Y, Z$ of $K$ over a field containing $\mathbb{Q}$,
+>
+> $$
+> \dim \operatorname{Hom}_K(Y, Z) = \frac{1}{|K|}\sum_{k \in K} \chi_Y(k^{-1})\,\chi_Z(k) .
+> $$
+>
+> **The group $G \times H$.** The group $G \times H$ is finite, of order $|G|\,|H|$, and $X$ is a finite-dimensional representation of it by (1). Hence
+>
+> $$
+> \dim \operatorname{Hom}_{G \times H}(X, X) = \frac{1}{|G|\,|H|}\sum_{(g, h) \in G \times H} \chi_X\big((g, h)^{-1}\big)\,\chi_X(g, h) .
+> $$
+>
+> **Separating the characters.** In $G \times H$, $(g, h)^{-1} = (g^{-1}, h^{-1})$, so by (2),
+>
+> $$
+> \chi_X(g^{-1}, h^{-1}) = \chi_V(g)\,\chi_W(h^{-1}), \qquad \chi_X(g, h) = \chi_V(g^{-1})\,\chi_W(h) .
+> $$
+>
+> Hence
+>
+> $$
+> \chi_X\big((g, h)^{-1}\big)\,\chi_X(g, h) = \big(\chi_V(g^{-1})\,\chi_V(g)\big)\big(\chi_W(h^{-1})\,\chi_W(h)\big) .
+> $$
+>
+> **Splitting the sum.** A finite sum over $G \times H$ of a product $a(g)\,b(h)$ factors as the product $\big(\sum_g a(g)\big)\big(\sum_h b(h)\big)$ of the two sums. Therefore
+>
+> $$
+> \dim \operatorname{Hom}_{G \times H}(X, X) = \bigg(\frac{1}{|G|}\sum_{g \in G} \chi_V(g^{-1})\,\chi_V(g)\bigg)\bigg(\frac{1}{|H|}\sum_{h \in H} \chi_W(h^{-1})\,\chi_W(h)\bigg) .
+> $$
+>
+> By the dimension formula applied to the group $G$ with $Y = Z = V$, and to the group $H$ with $Y = Z = W$, the two factors are $\dim \operatorname{Hom}_G(V, V)$ and $\dim \operatorname{Hom}_H(W, W)$, respectively. Hence
+>
+> $$
+> \dim \operatorname{Hom}_{G \times H}(X, X) = \Big(\dim \operatorname{Hom}_G(V, V)\Big)\Big(\dim \operatorname{Hom}_H(W, W)\Big) .
+> $$
+
+^pf-70-15
+
+*Uses:* [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]]
+
+> [!theorem] Proposition §70.16: $\operatorname{Hom}(V, W)$ Is Simple over $\mathbb{C}$
+> Let the field be $\mathbb{C}$, and let $V$ and $W$ be simple representations of $G$ and of $H$ (Definition [[§65 Simple Representations#^def-65-1|§65.1]]). Then $X = \operatorname{Hom}(V, W)$, with the action of Definition [[§70 Schur's Lemma and Multiplicities#^def-70-3|§70.3]], is a simple representation of $G \times H$.
+>
+> *Source: PS 10.3(4)*
+
+^prop-70-16
+
+> [!proof]+ Proof
+> *Idea:* by Schur's Lemma over $\mathbb{C}$ and the product formula, $\dim\operatorname{Hom}_{G \times H}(X, X) = 1$; a proper nonzero subrepresentation would give a projection that commutes with the action and is not a multiple of the identity.
+>
+> *(Problem Set 10, Problem 10.3(4), as submitted; Schur's Lemma over $\mathbb{C}$ is Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]], the product formula is Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-15|§70.15]], and Maschke's theorem is Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]].)* **The dimension of $\operatorname{Hom}_{G \times H}(X, X)$.** By Schur's Lemma over $\mathbb{C}$ (Worksheet 17.4), a simple finite-dimensional representation $S$ of a group $K$ over $\mathbb{C}$ satisfies $\operatorname{Hom}_K(S, S) = \mathbb{C}\,\mathrm{Id}_S$, so $\dim \operatorname{Hom}_K(S, S) = 1$. Applying this to $V$ over $G$ and to $W$ over $H$,
+>
+> $$
+> \dim \operatorname{Hom}_G(V, V) = 1, \qquad \dim \operatorname{Hom}_H(W, W) = 1 .
+> $$
+>
+> Since $\mathbb{C}$ contains $\mathbb{Q}$, (3) applies and gives
+>
+> $$
+> \dim \operatorname{Hom}_{G \times H}(X, X) = 1 \cdot 1 = 1 .
+> $$
+>
+> **$X$ is simple.** First, $X \neq 0$, since otherwise $\operatorname{Hom}_{G \times H}(X, X) = 0$ would have dimension $0$. Suppose, for contradiction, that $X$ is not simple, and let $U \subseteq X$ be a subrepresentation with $U \neq 0$ and $U \neq X$.
+>
+> The group $G \times H$ is finite and $|G \times H| \neq 0$ in $\mathbb{C}$, so by Maschke's theorem there is a subrepresentation $U' \subseteq X$ with $X = U \oplus U'$. Here $U' \neq 0$, since $U \neq X$.
+>
+> Let $P \colon X \to X$ be the projection onto $U$ along $U'$: for $x = u + u'$ with $u \in U$ and $u' \in U'$, $P(x) = u$. It is linear.
+>
+> *$P$ is a homomorphism of representations.* Let $(g, h) \in G \times H$ and $x = u + u'$ as above. Since $U$ and $U'$ are subrepresentations, $(g, h) \ast u \in U$ and $(g, h) \ast u' \in U'$, so $(g, h) \ast x = (g, h) \ast u + (g, h) \ast u'$ is the decomposition of $(g, h) \ast x$ in $X = U \oplus U'$. Hence
+>
+> $$
+> P\big((g, h) \ast x\big) = (g, h) \ast u = (g, h) \ast P(x) ,
+> $$
+>
+> and $P \in \operatorname{Hom}_{G \times H}(X, X)$.
+>
+> *$P$ is not a multiple of $\mathrm{Id}_X$.* Suppose $P = c\,\mathrm{Id}_X$ for some $c \in \mathbb{C}$. Choose $u \in U$ and $u' \in U'$, both nonzero. Then $u = P(u) = c\,u$ gives $c = 1$, and $0 = P(u') = c\,u'$ gives $c = 0$, a contradiction.
+>
+> *Conclusion.* The identity $\mathrm{Id}_X$ is a nonzero element of $\operatorname{Hom}_{G \times H}(X, X)$, and $P$ is an element of the same space that is not a multiple of it. Hence $\mathrm{Id}_X$ and $P$ are linearly independent, and $\dim \operatorname{Hom}_{G \times H}(X, X) \geq 2$, contradicting $\dim \operatorname{Hom}_{G \times H}(X, X) = 1$. Therefore $X$ is a simple representation of $G \times H$.
+
+^pf-70-16
+
+*Uses:* [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]], [[§70 Schur's Lemma and Multiplicities#^prop-70-15|§70.15]], [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]
+
+The second half of this proof is a second proof of the Simplicity Test (Lemma [[§70 Schur's Lemma and Multiplicities#^lem-70-11|§70.11]]), which does not use multiplicities: if a representation $X$ is not simple and not zero, Maschke's theorem gives $X = U \oplus U'$ with both summands nonzero, and the projection onto $U$ along $U'$ is a homomorphism of representations that is not a multiple of the identity, so $\dim\operatorname{Hom}(X, X)$ over the group is at least $2$.

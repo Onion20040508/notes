@@ -22,6 +22,7 @@ tags: [linear-algebra, hub]
 
 ## Used in (Group Theory)
 - [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-1|Proposition §32.1: GL_3(ℝ) Acting on ℝ³]]
+- [[§69 Dual Representations#^prop-69-8|Proposition §69.8: The Dimension of the Annihilator]]
 
 ## Used in (Differentiable Manifolds)
 - [[§21 Linear Algebra Toolkit#^prop-21-3|Proposition §21.3: The Double Dual]]

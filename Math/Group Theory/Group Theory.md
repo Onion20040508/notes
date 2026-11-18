@@ -71,7 +71,7 @@ graph TD
   X1 -.->|5| C7
   X1 -.->|2| C9
   X1 -.->|8| C11
-  X1 -.->|2| C12
+  X1 -.->|11| C12
   X2 -.->|10| C1
   X2 -.->|5| C2
   X2 -.->|2| C4
@@ -152,7 +152,7 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Group Theory Toolkit]]: how to show $H \le G$, well-definedness, (non-)isomorphism, normality; standard examples; exam traps.
 - [[Group Theory Course Log]]: what was taught when, and where it is in these notes.
 - [[Group Theory Midterm Review]]: midterm plan and checklist (definitions, core proofs, strategies, the example library), with [[Group Theory HW Drill]] (every problem-set problem broken into small questions) and [[Group Theory Notes Drill]] (definitions, worksheet problems and core proofs as questions, by priority).
-- Problem sets: [[493 Problem Set 1|PS 1]], [[493 Problem Set 2|PS 2]], [[493 Problem Set 3|PS 3]], [[493 Problem Set 4|PS 4]], [[493 Problem Set 5|PS 5]], [[493 Problem Set 6|PS 6]], [[493 Problem Set 7|PS 7]], [[493 Problem Set 8|PS 8]], [[493 Problem Set 9|PS 9]].
+- Problem sets: [[493 Problem Set 1|PS 1]], [[493 Problem Set 2|PS 2]], [[493 Problem Set 3|PS 3]], [[493 Problem Set 4|PS 4]], [[493 Problem Set 5|PS 5]], [[493 Problem Set 6|PS 6]], [[493 Problem Set 7|PS 7]], [[493 Problem Set 8|PS 8]], [[493 Problem Set 9|PS 9]], [[493 Problem Set 10|PS 10]].
 
 ## Prerequisites from other subjects
 The results from other subjects that this course's proofs and definitions cite most, with the number of citing items. Each chapter note gives per-chapter counts; each hub note lists its own cross-subject dependencies. The group theory summarized in [[§26 Algebra Prerequisites꞉ Groups|Topology §26]] is developed here in full.
@@ -164,8 +164,8 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§37 Determinants#^ladr-9-57|Theorem 9.57: Helpful results in evaluating determinants]] (3)
 - [[§9 Matrices#^ladr-3-43|Theorem 3.43: Matrix of product of linear maps]] (2)
 - [[Gram–Schmidt procedure]] (2)
-- [[§9 Matrices#^ladr-3-31|Definition 3.31: Matrix of a linear map, M(T)]] (2)
-- [[§37 Determinants#^ladr-9-44|Example 9.44: Determinants of matrices (p. 355)]] (2)
+- [[§5 Bases#^ladr-2-32|Theorem 2.32: Every linearly independent list extends to a basis]] (2)
+- [[§12 Duality#^ladr-3-111|Theorem 3.111: Dim V′ = dim V]] (2)
 
 **[[Single Variable Analysis]]**
 - [[§1 The Set ℕ of Natural Numbers#^thm-1-1|Theorem §1.1: Principle of Mathematical Induction]] (10)

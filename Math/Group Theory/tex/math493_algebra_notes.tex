@@ -328,7 +328,7 @@ $V_1 \oplus \cdots \oplus V_r$ & Direct sum of several subspaces: every $v$ is u
 $M^\dagger = \bar M^T$ & Conjugate transpose (Definition~\ref{def:conjugate-transpose}); $M$ is Hermitian if $M = M^\dagger$, unitary if $M^\dagger M = I$ (\ref{sec:hermitian-forms}). \\
 $V^G$, \ $\chi_V$ & Invariant vectors of a representation; its character $\chi_V(g) = \operatorname{Tr}\rho_V(g)$, not a character in the sense of \ref{sec:characters} unless $\dim V = 1$ (\ref{sec:invariants}, \ref{sec:characters-of-representations}). \\
 $\operatorname{Hom}(V, W)$, \ $\operatorname{Hom}_G(V, W)$ & Linear maps $V \to W$, a representation by $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$; its invariant vectors, the homomorphisms of representations (\ref{sec:hom-representation}). \\
-$V^\vee$, \ $\varphi^\vee$, \ $e_j^\ast$ & Dual space $\operatorname{Hom}(V, k)$; dual map $w^\vee \mapsto w^\vee \circ \varphi$; dual basis. As a representation, $\rho_{V^\vee}(g) = \rho_V(g^{-1})^\vee$, in matrices the inverse transpose (\ref{sec:dual-representations}). \\
+$V^\vee$, \ $\varphi^\vee$, \ $e_j^\ast$ & Dual space $\operatorname{Hom}(V, k)$; dual map $w^\vee \mapsto w^\vee \circ \varphi$; dual basis. As a representation, $\rho_{V^\vee}(g) = \rho_V(g^{-1})^\vee$, in matrices the inverse transpose. $U^\perp \subseteq V^\vee$ is the annihilator of a subspace $U \subseteq V$ (\ref{sec:dual-representations}). \\
 $V_1 \oplus \cdots \oplus V_r$, \ $V^{\oplus a}$ & External direct sum of representations: tuples, with $G$ acting on each coordinate; $V^{\oplus a}$ is the sum of $a$ copies of $V$. The same sign $\oplus$ is used for the internal direct sum of subspaces (\ref{sec:maschke}); the two are isomorphic (\ref{sec:schur-multiplicities}). \\
 $\operatorname{Cl}(G)$, \ $\langle \alpha, \beta \rangle$ & Space of class functions on $G$ (functions constant on conjugacy classes), of dimension the number of conjugacy classes; the pairing $\frac{1}{|G|}\sum_i |\operatorname{Conj}(g_i)|\,\alpha(g_i^{-1})\beta(g_i)$, for which $\dim\operatorname{Hom}_G(V, W) = \langle \chi_V, \chi_W \rangle$ (\ref{sec:character-table}). \\
 $\operatorname{Tr}$ & Trace of a matrix or of a linear map (\ref{sec:invariants}). \\
@@ -10422,7 +10422,7 @@ Representation theory also proves theorems about groups. A first example: every 
 % ============================================================================
 \chapter{Characters}\label{ch:rep-characters}
 
-\textit{Source: Lecture and Worksheet 15 (Mon Nov 9); lecture and Worksheet 16 (Wed Nov 11); lecture (Fri Nov 13); lecture and Worksheet 17 (Mon Nov 16); lecture and Worksheet 18 (Wed Nov 18).}
+\textit{Source: Lecture and Worksheet 15 (Mon Nov 9); lecture and Worksheet 16 (Wed Nov 11); lecture (Fri Nov 13); lecture and Worksheet 17 (Mon Nov 16); lecture and Worksheet 18 (Wed Nov 18); Problem Set 10.}
 
 By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), finite-dimensional representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces, when the field contains $\mathbb{Q}$ (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}). The factor $\chi_V(g^{-1})$ in this count is the character of the dual representation $V^\vee$ (\ref{sec:dual-representations}). Combined with the decomposition into simple representations, the count becomes a dot product of multiplicities: by Schur's Lemma, non-isomorphic simple representations admit only the zero homomorphism, and over $\mathbb{C}$ the homomorphisms from a simple representation to itself are the multiples of the identity (\ref{sec:schur-multiplicities}). In the character table, with one column per conjugacy class and one row per simple representation, this says that the rows are orthogonal for a pairing of class functions; hence they are linearly independent, and there are at most as many simple representations as conjugacy classes (\ref{sec:character-table}).
 
@@ -10864,7 +10864,7 @@ permutation, $\mathbb{R}^3 = \mathbb{R}(1,1,1) \oplus U$ & $3$ & $1$ & $0$
 % ============================================================================
 \section{Homomorphisms Between Representations}\label{sec:hom-representation}
 
-\textit{Source: Lecture and Worksheet 16, \emph{Actions on matrix spaces} (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3--16.5 were not done in class: the lecture of Fri Nov 13 recalled the statements of WS 16.3 and WS 16.5 without proof, and Problem Set 10 (Problem 10.1) takes up the complex case, WS 16.4--16.5. They are stated in the last subsection of this section with proofs that are filled in. Reference: Axler, \emph{Linear Algebra Done Right} (matrices of linear maps, eigenvalues, trace).}
+\textit{Source: Lecture and Worksheet 16, \emph{Actions on matrix spaces} (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3--16.5 were not done in class: the lecture of Fri Nov 13 recalled the statements of WS 16.3 and WS 16.5 without proof, and Problem Set 10 (Problem 10.1, submitted) takes up the complex case, WS 16.4--16.5. They are stated in the last subsection of this section with proofs that are filled in, followed by Problem 10.1 with the submitted proof (Proposition~\ref{prop:finite-group-diagonalizable}). Reference: Axler, \emph{Linear Algebra Done Right} (matrices of linear maps, eigenvalues, trace).}
 
 Theorem~\ref{thm:dim-invariants-character} computes the dimension of the invariant vectors of any representation from its character. This section applies it to the representation $\operatorname{Hom}(V, W)$, whose invariant vectors are the homomorphisms of representations $V \to W$. The result is a formula for the number of independent homomorphisms between two representations in terms of their characters. Over $\mathbb{R}$ and $\mathbb{C}$ the formula simplifies, because there $\chi_V(g^{-1})$ is $\chi_V(g)$ or its complex conjugate.
 
@@ -10999,7 +10999,7 @@ Written as $(g \cdot A)(w) = g\,A(g^{-1}w)$, this is Proposition~\ref{prop:hom-i
 \begin{rembox}[{The Side of the Inverse}]\label{rem:side-of-inverse}
 In $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$ the factor without an inverse has to be the one on the left, for the rule to be a left action: in the computation of $(gh) \ast \alpha$ in the proof of Proposition~\ref{prop:hom-is-representation}(1), the factors on the left appear in the order $\rho_W(g)\,\rho_W(h)$, and the inverses restore this order on the right. That the factor on the left belongs to $W$ and not to $V$ is a consequence of the convention of writing a function to the left of its argument, $\alpha(v)$: the map that is applied last is written first.
 
-More generally, if $G$ acts on $V$ and a second group $H$ acts on $W$, then $G \times H$ acts on $\operatorname{Hom}(V, W)$. This was announced as a homework problem and is not written out here. The inverse on the side of $V$ is explained by the dual representation (\ref{sec:dual-representations}).
+More generally, if $G$ acts on $V$ and a second group $H$ acts on $W$, then $G \times H$ acts on $\operatorname{Hom}(V, W)$. This is Problem 10.3 of Problem Set 10; it is worked out in the last subsection of \ref{sec:schur-multiplicities} (Definition~\ref{def:hom-product-action}). The inverse on the side of $V$ is explained by the dual representation (\ref{sec:dual-representations}).
 \srcline{lecture 11/13}
 \end{rembox}
 
@@ -11180,7 +11180,7 @@ $\mathbb{R}^3$ & $1$ & $0$ & $1$ & $2$
 
 \subsection{\texorpdfstring{Characters at $g^{-1}$ over $\mathbb{R}$ and $\mathbb{C}$}{Characters at the Inverse over R and C}}\label{sub:characters-at-inverses}
 
-The formula of Theorem~\ref{thm:dim-hom-g} simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3--16.5 were not done in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof, and the complex case (WS 16.4--16.5) became Problem 10.1 of Problem Set 10. The proofs in this subsection are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary~\ref{cor:character-dual-real-complex}).
+The formula of Theorem~\ref{thm:dim-hom-g} simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3--16.5 were not done in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof, and the complex case (WS 16.4--16.5) became Problem 10.1 of Problem Set 10, which is Proposition~\ref{prop:finite-group-diagonalizable} with the submitted proof. The proofs of Proposition~\ref{prop:character-inverse-real}, Proposition~\ref{prop:finite-order-matrix} and Corollary~\ref{cor:character-inverse-complex} are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary~\ref{cor:character-dual-real-complex}).
 
 \begin{propbox}[{Real Characters Are Invariant under Inversion}]\label{prop:character-inverse-real}
 Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{R}$. Choose a basis of $V$ in which $G$ acts by orthogonal matrices (Corollary~\ref{cor:orthogonal-matrices}). In this basis, for every $g \in G$,
@@ -11256,6 +11256,62 @@ Let $G$ be a finite group and $V$ a finite-dimensional complex representation of
 \textit{(The route Worksheet 16 mentions for readers who know sesquilinear forms. It rests on the statement in the remark \emph{Why Not Bilinear, and Unitary Matrices} in \ref{sec:hermitian-forms}, whose averaging argument is not written out in these notes.)} A finite group acting on a finite-dimensional complex vector space preserves a positive definite Hermitian form, and in a basis that is orthonormal for it (Proposition~\ref{prop:gram-schmidt-hermitian}) every $M = \rho_V(g)$ is unitary, $M^\dagger M = I$ (Definition~\ref{def:conjugate-transpose}). As in the proof of Proposition~\ref{prop:character-inverse-real}, $\rho_V(g^{-1}) = M^{-1} = M^\dagger$. The diagonal entries of $M^\dagger = \bar M^T$ are the conjugates of those of $M$, so $\chi_V(g^{-1}) = \operatorname{Tr}(M^\dagger) = \overline{\operatorname{Tr}(M)} = \overline{\chi_V(g)}$.
 \end{proof}
 
+\begin{propbox}[{Elements of a Finite Group Act Diagonalizably over $\mathbb{C}$}]\label{prop:finite-group-diagonalizable}
+Let $G$ be a finite group, $V$ a finite-dimensional representation of $G$ over $\mathbb{C}$, and $g \in G$.
+\begin{enumerate}
+    \item There is a positive integer $N$ with $\rho_V(g)^N = \mathrm{id}_V$; the order of $g$ is such an $N$.
+    \item $\rho_V(g)$ is diagonalizable, and its eigenvalues are $N$-th roots of unity. In particular they are complex numbers of norm $1$.
+    \item In a basis of eigenvectors of $\rho_V(g)$, the matrix of $\rho_V(g^{-1})$ is the complex conjugate of the matrix of $\rho_V(g)$. Consequently $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
+\end{enumerate}
+\srcline{PS 10.1, which takes up WS 16.4--16.5 for the linear map $\rho_V(g)$}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} the minimal polynomial of $\rho_V(g)$ divides $z^N - 1$, which has $N$ distinct roots, all of norm $1$; and for a number of norm $1$ the inverse is the complex conjugate.\par
+\textit{(Problem Set 10, Problem 10.1, as submitted.)}
+
+\textbf{(1)} Since $G$ is finite, $g$ has finite order: the powers $g, g^2, g^3, \dots$ lie in the finite set $G$, so $g^a = g^b$ for some $1 \le a < b$, and then $g^{b-a} = e$. Let $N \ge 1$ be the order of $g$, so $g^N = e$. Since $\rho_V \colon G \to \mathrm{GL}(V)$ is a group homomorphism,
+\[
+\rho_V(g)^N = \rho_V(g^N) = \rho_V(e) = \mathrm{id}_V .
+\]
+
+\textbf{(2)} Let $T = \rho_V(g) \in \mathcal{L}(V)$ and let $N \ge 1$ be as in (1), so $T^N = \mathrm{id}_V$. Let $p$ be the minimal polynomial of $T$, the monic polynomial of smallest degree with $p(T) = 0$ (Axler 5.24).
+
+\textbf{$p$ has distinct roots.} The polynomial $q(z) = z^N - 1$ satisfies $q(T) = T^N - \mathrm{id}_V = 0$, so $p$ divides $q$ (Axler 5.29). The roots of $z^N - 1$ in $\mathbb{C}$ are the $N$-th roots of unity $\zeta_k = e^{2\pi i k/N}$, $k = 0, 1, \dots, N - 1$, which are $N$ distinct numbers; hence
+\[
+z^N - 1 = \prod_{k=0}^{N-1} (z - \zeta_k)
+\]
+with distinct $\zeta_k$. Since $p$ is a monic divisor of this product, by unique factorization of polynomials over $\mathbb{C}$, $p$ is a product of distinct factors $z - \zeta_k$:
+\[
+p(z) = (z - \lambda_1) \cdots (z - \lambda_m), \qquad \lambda_1, \dots, \lambda_m \in \{\zeta_0, \dots, \zeta_{N-1}\} \text{ distinct}.
+\]
+
+\textbf{$T$ is diagonalizable.} Since the minimal polynomial of $T$ is a product of distinct linear factors, $T$ is diagonalizable (Axler 5.62).
+
+\textbf{The eigenvalues have norm $1$.} The eigenvalues of $T$ are the zeros of its minimal polynomial (Axler 5.27), namely $\lambda_1, \dots, \lambda_m$. Each is an $N$-th root of unity $e^{2\pi i k/N}$, so $|\lambda_j| = 1$.
+
+\textbf{(3)} Let $n = \dim V$. By (2), $V$ has a basis $v_1, \dots, v_n$ of eigenvectors of $\rho_V(g)$, say $\rho_V(g) v_j = \mu_j v_j$, with $|\mu_j| = 1$ for each $j$.
+
+\textbf{$\rho_V(g^{-1})$ in this basis.} Since $\rho_V$ is a homomorphism, $\rho_V(g^{-1}) = \rho_V(g)^{-1}$. Applying $\rho_V(g)^{-1}$ to $\rho_V(g) v_j = \mu_j v_j$, and using $\mu_j \neq 0$, gives
+\[
+\rho_V(g^{-1}) v_j = \mu_j^{-1} v_j .
+\]
+Since $|\mu_j| = 1$, we have $\mu_j \overline{\mu_j} = |\mu_j|^2 = 1$, so $\mu_j^{-1} = \overline{\mu_j}$. Hence $v_1, \dots, v_n$ is also an eigenbasis of $\rho_V(g^{-1})$, with eigenvalues $\overline{\mu_1}, \dots, \overline{\mu_n}$.
+
+\textbf{The identity.} With respect to the basis $v_1, \dots, v_n$, the matrices of $\rho_V(g)$ and $\rho_V(g^{-1})$ are
+\[
+[\rho_V(g)] = \begin{pmatrix} \mu_1 & & \\ & \ddots & \\ & & \mu_n \end{pmatrix}, \qquad [\rho_V(g^{-1})] = \begin{pmatrix} \overline{\mu_1} & & \\ & \ddots & \\ & & \overline{\mu_n} \end{pmatrix} = \overline{[\rho_V(g)]} .
+\]
+Thus $\rho_V(g^{-1}) = \overline{\rho_V(g)}$, where matrices are taken with respect to an eigenbasis of $\rho_V(g)$. In particular, taking traces, which do not depend on the basis,
+\[
+\chi_V(g^{-1}) = \sum_{j=1}^n \overline{\mu_j} = \overline{\sum_{j=1}^n \mu_j} = \overline{\chi_V(g)} .
+\]
+\end{proof}
+
+\textbf{Transcription note (PS 10.1).} The problem set prints part (3) as $\rho_V(g^{-1}) = \overline{\rho_V(g)}$. The complex conjugate of a linear map is not defined without a basis, so the submitted solution proves the equation for the matrices in a basis of eigenvectors of $\rho_V(g)$ and deduces the statement about characters, which is WS 16.5 (Corollary~\ref{cor:character-inverse-complex}). The problem set adds that the corresponding result for real representations is the one of WS 16.3 (Proposition~\ref{prop:character-inverse-real}).
+
+For the matrix $A$ of $\rho_V(g)$, parts (2) and (3) are a second proof of Matrices of Finite Order (WS 16.4, Proposition~\ref{prop:finite-order-matrix}), through the minimal polynomial instead of Maschke's theorem, and of Corollary~\ref{cor:character-inverse-complex}.
+
 \begin{corbox}[{Dimension of $\operatorname{Hom}_G(V, W)$ over $\mathbb{R}$ and $\mathbb{C}$}]\label{cor:dim-hom-g-real-complex}
 Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations of $G$ over $k$.
 \begin{enumerate}
@@ -11274,7 +11330,7 @@ Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations
 % ============================================================================
 \section{Dual Representations}\label{sec:dual-representations}
 
-\textit{Source: Lecture (Fri Nov 13). Reference: Axler, \emph{Linear Algebra Done Right}, Section~3F (duality).}
+\textit{Source: Lecture (Fri Nov 13); Problem Set 10, Problem 10.2 (submitted). Reference: Axler, \emph{Linear Algebra Done Right}, Section~3F (duality).}
 
 The formula $\chi_{\operatorname{Hom}(V, W)}(g) = \chi_V(g^{-1})\,\chi_W(g)$ (Proposition~\ref{prop:character-hom}) has two parts: the inverse in $\chi_V(g^{-1})$, and the product. This section explains the inverse. The function $g \mapsto \chi_V(g^{-1})$ is itself a character, the character of the dual representation $V^\vee$ (Proposition~\ref{prop:character-dual}). The product comes from tensor products, which the lecture of 11/13 only described briefly (the last subsection of this section); the course will mostly use $\operatorname{Hom}$ instead.
 
@@ -11554,6 +11610,135 @@ So $g \ast e_1^\ast = e_2^\ast$ and $g \ast e_2^\ast = -e_1^\ast$.
 \srcline{not from class}
 \end{exbox}
 
+\subsection{Annihilators and the Simplicity of the Dual}\label{sub:annihilators}
+
+\textit{Source: Problem Set 10, Problem 10.2 (submitted). The proofs write $\lambda$ for an element of $V^\vee$ and $\varphi_1, \ldots, \varphi_n$ for a dual basis (written $e_1^\ast, \ldots, e_n^\ast$ in the first subsection of this section).}
+
+\begin{defbox}[{Annihilator}]\label{def:annihilator}
+Let $V$ be a finite-dimensional vector space and $U \subseteq V$ a subspace. The \textbf{annihilator} of $U$ is
+\[ U^\perp = \{\lambda \in V^\vee : \lambda(u) = 0 \text{ for all } u \in U\}, \]
+a subset of the dual space $V^\vee$ (Definition~\ref{def:dual-space}).
+\srcline{PS 10.2, which defines $U^\perp$ without giving it a name; Axler calls it the annihilator and writes $U^0$}
+\end{defbox}
+
+The same symbol $U^\perp$ denotes the orthogonal complement for an inner product (Definition~\ref{def:orthogonal-complement}). That is a subspace of the same space as $U$ and needs an inner product; the annihilator lies in the dual space and needs no extra structure.
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, scale=0.95]
+\begin{scope}
+\clip (-2.6,-2.1) rectangle (2.6,2.1);
+\foreach \c in {-3,-2,-1,1,2,3} { \draw[blue!70!black, thin] ({\c-6},-3) -- ({\c+6},3); }
+\draw[orange!85!black, very thick] (-6,-3) -- (6,3);
+\end{scope}
+\draw[->, black!55, thin] (-2.8,0) -- (2.55,0) node[below left] {$x$};
+\draw[->, black!55, thin] (0,-2.3) -- (0,2.5) node[above] {$y$};
+\node[orange!85!black, anchor=west] at (2.65,1.3) {$U$: $\lambda = 0$};
+\foreach \c/\y in {-1/1.8, 1/0.8, 2/0.3, 3/-0.2} { \node[blue!70!black, anchor=west] at (2.65,\y) {$\lambda = \c$}; }
+\node[anchor=west, align=left, orange!85!black] at (4.9,1.6) {$U = \mathbb{R}(2, 1)$, a subspace of $V = \mathbb{R}^2$};
+\node[anchor=west, align=left, blue!70!black] at (4.9,0.7) {$\lambda(x, y) = x - 2y$ vanishes on $U$:\\its level lines are parallel to $U$};
+\node[anchor=west, align=left] at (4.9,-0.4) {$U^\perp = \{\lambda \in V^\vee : \lambda(u) = 0 \text{ for all } u \in U\} = \mathbb{R}\lambda$};
+\node[anchor=west, align=left] at (4.9,-1.2) {$\dim U^\perp = \dim V - \dim U = 2 - 1 = 1$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The annihilator of the line $U = \mathbb{R}(2, 1)$ in $V = \mathbb{R}^2$. A linear function $\lambda$ on the plane vanishes on $U$ exactly when its level lines are parallel to $U$, and all such functions are multiples of $\lambda(x, y) = x - 2y$. So $U^\perp$ is one-dimensional, as in Proposition~\ref{prop:annihilator-dimension}.
+%% <<< END ADDED
+
+\begin{propbox}[{The Annihilator of a Subrepresentation Is a Subrepresentation}]\label{prop:annihilator-subrepresentation}
+Let $G$ be a group, $V$ a finite-dimensional representation of $G$, and $V^\vee$ the dual representation (Definition~\ref{def:dual-representation}). If $U$ is a subrepresentation of $V$, then $U^\perp$ (Definition~\ref{def:annihilator}) is a subrepresentation of $V^\vee$.
+\srcline{PS 10.2(1)}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $g$ acts on a functional by composing with $\rho_V(g^{-1})$, which maps $U$ into $U$.\par
+\textit{(Problem Set 10, Problem 10.2(1), as submitted.)} Recall that the dual representation is $\rho_{V^\vee}(g) = \rho_V(g^{-1})^\vee$, where for a linear map $T \colon V \to V$ the dual map $T^\vee \colon V^\vee \to V^\vee$ is $T^\vee(\lambda) = \lambda \circ T$. Thus
+\[
+\big(\rho_{V^\vee}(g)\lambda\big)(v) = \lambda\big(\rho_V(g^{-1})v\big) \qquad (g \in G,\ \lambda \in V^\vee,\ v \in V).
+\]
+
+\emph{$U^\perp$ is a subspace.} If $\lambda, \lambda' \in U^\perp$ and $c$ is a scalar, then $(\lambda + c\lambda')(u) = \lambda(u) + c\lambda'(u) = 0$ for all $u \in U$, so $\lambda + c\lambda' \in U^\perp$; and $0 \in U^\perp$.
+
+\emph{$U^\perp$ is $G$-stable.} Let $\lambda \in U^\perp$ and $g \in G$. For $u \in U$, since $U$ is a subrepresentation, $\rho_V(g)u \in U$, so $\lambda\big(\rho_V(g)u\big) = 0$. Since $\rho_V(g) = \rho_V\big((g^{-1})^{-1}\big)$,
+\[
+0 = \lambda\big(\rho_V(g)u\big) = \big(\rho_V(g)^\vee\lambda\big)(u) = \big(\rho_{V^\vee}(g^{-1})\lambda\big)(u) .
+\]
+Since $u \in U$ was arbitrary, $\rho_{V^\vee}(g^{-1})\lambda \in U^\perp$. As $g$ ranges over $G$, so does $g^{-1}$; hence $\rho_{V^\vee}(h)\lambda \in U^\perp$ for all $h \in G$. Therefore $U^\perp$ is a subrepresentation of $V^\vee$.
+\end{proof}
+
+\begin{propbox}[{The Dimension of the Annihilator}]\label{prop:annihilator-dimension}
+Let $V$ be a finite-dimensional vector space and $U \subseteq V$ a subspace, with annihilator $U^\perp$ (Definition~\ref{def:annihilator}). Then
+\[ \dim U^\perp = \dim V - \dim U. \]
+\srcline{PS 10.2(2)}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} extend a basis of $U$ to a basis of $V$; the dual basis vectors belonging to the added basis vectors form a basis of $U^\perp$.\par
+\textit{(Problem Set 10, Problem 10.2(2), as submitted.)} Let $m = \dim U$ and $n = \dim V$. Choose a basis $v_1, \dots, v_m$ of $U$ and extend it to a basis $v_1, \dots, v_n$ of $V$ (Axler 2.32). Let $\varphi_1, \dots, \varphi_n \in V^\vee$ be the dual basis, $\varphi_j(v_k) = \delta_{jk}$ (Axler 3.112); it is a basis of $V^\vee$ (Axler 3.116). We claim
+\[
+U^\perp = \operatorname{span}\{\varphi_{m+1}, \dots, \varphi_n\} .
+\]
+
+\emph{$\supseteq$.} For $j > m$ and $i \le m$, $\varphi_j(v_i) = 0$, so by linearity $\varphi_j$ vanishes on $U = \operatorname{span}\{v_1, \dots, v_m\}$, i.e.\ $\varphi_j \in U^\perp$. Since $U^\perp$ is a subspace by (1), $\operatorname{span}\{\varphi_{m+1}, \dots, \varphi_n\} \subseteq U^\perp$.
+
+\emph{$\subseteq$.} Let $\lambda \in U^\perp$ and write $\lambda = \sum_{j=1}^n c_j \varphi_j$. For $i \le m$, since $v_i \in U$,
+\[
+0 = \lambda(v_i) = \sum_{j=1}^n c_j \varphi_j(v_i) = c_i .
+\]
+Hence $c_1 = \cdots = c_m = 0$, and $\lambda = \sum_{j=m+1}^n c_j \varphi_j \in \operatorname{span}\{\varphi_{m+1}, \dots, \varphi_n\}$.
+
+Since $\varphi_{m+1}, \dots, \varphi_n$ are part of a basis of $V^\vee$, they are linearly independent, so they form a basis of $U^\perp$. Therefore
+\[
+\dim U^\perp = n - m = \dim V - \dim U .
+\]
+\end{proof}
+
+\begin{lembox}[{$V$ Is Isomorphic to Its Double Dual}]\label{lem:double-dual}
+Let $G$ be a group and $V$ a finite-dimensional representation of $G$. Let $V^{\vee\vee} = (V^\vee)^\vee$ be the dual representation (Definition~\ref{def:dual-representation}) of $V^\vee$. Then the evaluation map
+\[ \operatorname{ev} \colon V \to V^{\vee\vee}, \qquad \operatorname{ev}(v)(\lambda) = \lambda(v), \]
+is an isomorphism of $G$-representations (Definition~\ref{def:isomorphism-representations}).
+\srcline{PS 10.2(3), a step of the submitted proof}
+\end{lembox}
+
+\begin{proof}
+\textit{(Problem Set 10, Problem 10.2(3), as submitted: the paragraph on the evaluation map.)} \textbf{The evaluation map $V \to V^{\vee\vee}$.} Define
+\[
+\operatorname{ev} \colon V \to V^{\vee\vee}, \qquad \operatorname{ev}(v)(\lambda) = \lambda(v) .
+\]
+It is linear. It is injective: if $v \neq 0$, extend $v$ to a basis of $V$ and let $\lambda$ be the first element of the dual basis; then $\operatorname{ev}(v)(\lambda) = \lambda(v) = 1 \neq 0$. Since $\dim V^{\vee\vee} = \dim V^\vee = \dim V$ (Axler 3.111), $\operatorname{ev}$ is a linear isomorphism.
+
+It is a homomorphism of representations. By the definition of the dual representation, applied to $V^\vee$ and then to $V$,
+\[
+\rho_{V^{\vee\vee}}(g) = \rho_{V^\vee}(g^{-1})^\vee, \qquad \rho_{V^\vee}(g^{-1}) = \rho_V\big((g^{-1})^{-1}\big)^\vee = \rho_V(g)^\vee .
+\]
+Hence, for $g \in G$, $v \in V$ and $\lambda \in V^\vee$,
+\begin{align*}
+\big(\rho_{V^{\vee\vee}}(g)\operatorname{ev}(v)\big)(\lambda) &= \big(\operatorname{ev}(v) \circ \rho_{V^\vee}(g^{-1})\big)(\lambda) = \operatorname{ev}(v)\big(\rho_V(g)^\vee\lambda\big) \\
+&= \big(\lambda \circ \rho_V(g)\big)(v) = \lambda\big(\rho_V(g)v\big) = \operatorname{ev}\big(\rho_V(g)v\big)(\lambda) .
+\end{align*}
+Since $\lambda$ is arbitrary, $\rho_{V^{\vee\vee}}(g) \circ \operatorname{ev} = \operatorname{ev} \circ \rho_V(g)$ for all $g \in G$. Thus $\operatorname{ev}$ is an isomorphism of representations $V \cong V^{\vee\vee}$.
+\end{proof}
+
+\begin{propbox}[{$V$ Is Simple If and Only If $V^\vee$ Is Simple}]\label{prop:dual-simple}
+Let $G$ be a group and $V$ a finite-dimensional representation of $G$. Then $V$ is simple (Definition~\ref{def:simple-representation}) if and only if the dual representation $V^\vee$ (Definition~\ref{def:dual-representation}) is simple.
+\srcline{PS 10.2(3)}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} a subrepresentation $U$ of $V$ strictly between $\{0\}$ and $V$ gives the subrepresentation $U^\perp$ of $V^\vee$ strictly between $\{0\}$ and $V^\vee$; for the converse apply this to $V^\vee$ and use $V^{\vee\vee} \cong V$.\par
+\textit{(Problem Set 10, Problem 10.2(3), as submitted; parts (1) and (2) are Propositions~\ref{prop:annihilator-subrepresentation} and~\ref{prop:annihilator-dimension}, and the isomorphism $V \cong V^{\vee\vee}$ is Lemma~\ref{lem:double-dual}. That a representation isomorphic to a simple one is simple is Lemma~\ref{lem:isomorphism-representations-properties}(4).)}
+
+\textbf{If $V^\vee$ is simple, then $V$ is simple.} We prove the contrapositive. Suppose $U \subseteq V$ is a subrepresentation with $0 < \dim U < \dim V$. By (1), $U^\perp$ is a subrepresentation of $V^\vee$, and by (2) and $\dim V^\vee = \dim V$ (Axler 3.111),
+\[
+0 < \dim U^\perp = \dim V - \dim U < \dim V^\vee .
+\]
+Hence $U^\perp$ is a nonzero proper subrepresentation of $V^\vee$, and $V^\vee$ is not simple.
+
+\textbf{If $V$ is simple, then $V^\vee$ is simple.} Suppose $V$ is simple. An isomorphism of representations carries subrepresentations to subrepresentations of the same dimension, in both directions, so $V^{\vee\vee} \cong V$ is simple. Applying the first part to the representation $V^\vee$ (whose dual is $V^{\vee\vee}$), $V^\vee$ is simple.
+\end{proof}
+
+The submitted proof of the first direction assumes a subrepresentation $U$ with $0 < \dim U < \dim V$. The remaining way for $V$ not to be simple is $V = \{0\}$; then $V^\vee = \{0\}$ as well, and neither is simple.
+
 \subsection{A Word on Tensor Products}\label{sub:tensor-preview}
 
 \begin{rembox}[{Tensor Products (Overview)}]\label{rem:tensor-products-overview}
@@ -11576,7 +11761,7 @@ Tensor products are where the product in $\chi_{\operatorname{Hom}(V, W)}(g) = \
 % ============================================================================
 \section{Schur's Lemma and Multiplicities}\label{sec:schur-multiplicities}
 
-\textit{Source: Lecture and Worksheet 17, \emph{Dimensions of hom spaces, and Schur's lemma} (Mon Nov 16): WS 17.1--17.5. Reference: Axler, \emph{Linear Algebra Done Right} (existence of eigenvalues).}
+\textit{Source: Lecture and Worksheet 17, \emph{Dimensions of hom spaces, and Schur's lemma} (Mon Nov 16): WS 17.1--17.5; Problem Set 10, Problem 10.3 (submitted), in the last subsection. Reference: Axler, \emph{Linear Algebra Done Right} (existence of eigenvalues).}
 
 Throughout this section, unless something else is said, $G$ is a finite group, $k$ is a field containing $\mathbb{Q}$, and all representations are finite-dimensional representations of $G$ over $k$. Under these hypotheses there are two main results so far. The first is Maschke's theorem (Theorem~\ref{thm:maschke}), by which every representation is a direct sum of simple representations (Corollary~\ref{cor:direct-sum-of-simples-general}). The second is the formula
 \[ \dim\operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_{g \in G} \chi_V(g^{-1})\,\chi_W(g) \]
@@ -11875,8 +12060,8 @@ Let $G$ be a finite group. Let $S_1, \ldots, S_r$ be finite-dimensional simple r
 %% <<< END ADDED
 
 \begin{rembox}[{Over Other Fields the Weights Stay}]\label{rem:weights-stay}
-The proof of Proposition~\ref{prop:schur-complex} needs an eigenvalue of $\alpha$ in the ground field. Over $\mathbb{R}$ a linear map need not have a real eigenvalue, and for a simple real representation $S$ the number $\dim\operatorname{Hom}_G(S, S)$ can be larger than $1$. The lecture of 11/18 gave an example, the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$, where the number is $2$ (Example~\ref{ex:z4-real-complex}); the proofs belong to Problem Set 10 (Problem 10.4) and will be added after the problem set is submitted. So over $\mathbb{R}$, and over a general field containing $\mathbb{Q}$, the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ of Proposition~\ref{prop:dim-hom-sums-of-simples} must be kept.
-\srcline{lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the example is from the lecture of 11/18}
+The proof of Proposition~\ref{prop:schur-complex} needs an eigenvalue of $\alpha$ in the ground field. Over $\mathbb{R}$ a linear map need not have a real eigenvalue, and for a simple real representation $S$ the number $\dim\operatorname{Hom}_G(S, S)$ can be larger than $1$. The lecture of 11/18 gave an example, the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$, where the number is $2$ (Example~\ref{ex:z4-real-complex}); the proofs are Problem 10.4 of Problem Set 10 (Example~\ref{ex:z4-rotation-worked}). So over $\mathbb{R}$, and over a general field containing $\mathbb{Q}$, the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ of Proposition~\ref{prop:dim-hom-sums-of-simples} must be kept.
+\srcline{lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the example is from the lecture of 11/18 and PS 10.4}
 \end{rembox}
 
 \subsection{\texorpdfstring{The Characters of $S_3$ and a Simplicity Test}{The Characters of S₃ and a Simplicity Test}}\label{sub:s3-simplicity-test}
@@ -11998,12 +12183,146 @@ with multiplicities $a = (1, 0, 1)$ with respect to the three simple representat
 \srcline{not from class}
 \end{exbox}
 
+\subsection{\texorpdfstring{An Application: $\operatorname{Hom}(V, W)$ as a Representation of $G \times H$}{An Application: Hom(V, W) as a Representation of G × H}}\label{sub:hom-product-group}
+
+\textit{Source: Problem Set 10, Problem 10.3 (submitted); the action was announced in the lecture of Fri Nov 13.}
+
+In this subsection $G$ and $H$ are finite groups, $V$ is a finite-dimensional representation of $G$ and $W$ a finite-dimensional representation of $H$, over the same field. As in the problem set, $X$ stands for $\operatorname{Hom}(V, W)$, the vector space of linear maps $V \to W$.
+
+\begin{defbox}[{The Action of $G \times H$ on $\operatorname{Hom}(V, W)$}]\label{def:hom-product-action}
+Let $V$ be a representation of $G$ and $W$ a representation of $H$ over the same field. The \textbf{action of $G \times H$ on $\operatorname{Hom}(V, W)$}, for the direct product $G \times H$ (Definition~\ref{def:direct-products}) and $X = \operatorname{Hom}(V, W)$, is
+\[ (g, h) \ast \alpha = \rho_W(h) \circ \alpha \circ \rho_V(g^{-1}). \]
+\srcline{PS 10.3; lecture 11/13 (announced)}
+\end{defbox}
+
+For $H = G$, the elements $(g, g)$ act by $\rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$, which is the action of $G$ on $\operatorname{Hom}(V, W)$ of Definition~\ref{def:hom-representation}.
+
+\begin{propbox}[{$\operatorname{Hom}(V, W)$ Is a Representation of $G \times H$}]\label{prop:hom-product-representation}
+The rule of Definition~\ref{def:hom-product-action} is an action of $G \times H$ on $X = \operatorname{Hom}(V, W)$ by linear maps. So $X$ is a representation of $G \times H$.
+\srcline{PS 10.3(1)}
+\end{propbox}
+
+\begin{proof}
+\textit{(Problem Set 10, Problem 10.3(1), as submitted.)} \emph{Well-defined.} For $(g, h) \in G \times H$ and $\alpha \in X$, the map $(g, h) * \alpha = \rho_W(h) \circ \alpha \circ \rho_V(g^{-1})$ is a composition of linear maps $V \to V \to W \to W$, so it lies in $X$.
+
+\emph{Linearity.} Since composition of linear maps is bilinear, for $\alpha, \beta \in X$ and a scalar $c$,
+\[
+(g, h) * (\alpha + c\beta) = \rho_W(h) \circ (\alpha + c\beta) \circ \rho_V(g^{-1}) = (g, h) * \alpha + c\,(g, h) * \beta .
+\]
+
+\emph{Identity.} $(e, e) * \alpha = \rho_W(e) \circ \alpha \circ \rho_V(e) = \mathrm{id}_W \circ \alpha \circ \mathrm{id}_V = \alpha$.
+
+\emph{Compatibility.} Let $(g_1, h_1), (g_2, h_2) \in G \times H$. The product in $G \times H$ is componentwise, $(g_1g_2)^{-1} = g_2^{-1}g_1^{-1}$, and $\rho_V$, $\rho_W$ are homomorphisms, so $\rho_V\big((g_1g_2)^{-1}\big) = \rho_V(g_2^{-1}) \circ \rho_V(g_1^{-1})$ and $\rho_W(h_1h_2) = \rho_W(h_1) \circ \rho_W(h_2)$. Hence, using associativity of composition,
+\begin{align*}
+\big((g_1, h_1)(g_2, h_2)\big) * \alpha &= (g_1g_2, h_1h_2) * \alpha = \rho_W(h_1h_2) \circ \alpha \circ \rho_V\big((g_1g_2)^{-1}\big) \\
+&= \rho_W(h_1) \circ \big(\rho_W(h_2) \circ \alpha \circ \rho_V(g_2^{-1})\big) \circ \rho_V(g_1^{-1}) \\
+&= \rho_W(h_1) \circ \big((g_2, h_2) * \alpha\big) \circ \rho_V(g_1^{-1}) = (g_1, h_1) * \big((g_2, h_2) * \alpha\big) .
+\end{align*}
+Therefore $*$ is a linear action of $G \times H$ on $X$, i.e.\ $X$ is a representation of $G \times H$.
+\end{proof}
+
+\begin{propbox}[{The Character of $\operatorname{Hom}(V, W)$ as a Representation of $G \times H$}]\label{prop:hom-product-character}
+Let $V$ and $W$ be finite-dimensional, and let $X = \operatorname{Hom}(V, W)$ with the action of Definition~\ref{def:hom-product-action}. Then for all $(g, h) \in G \times H$
+\[ \chi_X(g, h) = \chi_V(g^{-1})\,\chi_W(h). \]
+\srcline{PS 10.3(2)}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} in bases, $(g, h)$ acts on matrices by $Y \mapsto RYS$, whose trace is $\operatorname{Tr}(R)\operatorname{Tr}(S)$.\par
+\textit{(Problem Set 10, Problem 10.3(2), as submitted.)} Let $m = \dim W$ and $n = \dim V$, and fix bases of $V$ and $W$. For a linear map $\beta$ between these spaces, write $[\beta]$ for its matrix in these bases. Then $\alpha \mapsto [\alpha]$ is a linear isomorphism from $X = \operatorname{Hom}(V, W)$ to the space of $m \times n$ matrices.
+
+Fix $(g, h) \in G \times H$. By definition, $\chi_X(g, h)$ is the trace of the linear operator
+\[
+\rho_X(g, h) \colon X \to X, \qquad \alpha \mapsto \rho_W(h) \circ \alpha \circ \rho_V(g^{-1}),
+\]
+on the $mn$-dimensional space $X$. Let $R = [\rho_W(h)]$, an $m \times m$ matrix, and $S = [\rho_V(g^{-1})]$, an $n \times n$ matrix. Since the matrix of a composition is the product of the matrices,
+\[
+\big[\rho_X(g, h)\alpha\big] = R\,[\alpha]\,S \qquad (\alpha \in X).
+\]
+Hence, under the isomorphism $\alpha \mapsto [\alpha]$, the operator $\rho_X(g, h)$ corresponds to $L \colon Y \mapsto RYS$ on $m \times n$ matrices, and the two have the same trace, since the trace of an operator does not depend on the basis. By the lemma on the trace of $Y \mapsto RYS$ (Lemma~\ref{lem:trace-sandwich}, the computation of Worksheet 16.2), $\operatorname{Tr}(L) = \operatorname{Tr}(R)\operatorname{Tr}(S)$. Therefore
+\[
+\chi_X(g, h) = \operatorname{Tr}(L) = \operatorname{Tr}\big(\rho_W(h)\big)\operatorname{Tr}\big(\rho_V(g^{-1})\big) = \chi_V(g^{-1})\,\chi_W(h) .
+\]
+\end{proof}
+
+\begin{propbox}[{$\dim\operatorname{Hom}_{G \times H}(X, X)$ Is a Product}]\label{prop:hom-product-dimension}
+Let the field contain $\mathbb{Q}$, and let $X = \operatorname{Hom}(V, W)$ with the action of Definition~\ref{def:hom-product-action}. Then
+\[ \dim\operatorname{Hom}_{G \times H}(X, X) = \Big(\dim\operatorname{Hom}_G(V, V)\Big)\Big(\dim\operatorname{Hom}_H(W, W)\Big). \]
+\srcline{PS 10.3(3)}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} the character of $X$ is a product of a function of $g$ and a function of $h$, so the sum over $G \times H$ in the dimension formula factors.\par
+\textit{(Problem Set 10, Problem 10.3(3), as submitted.)} We use the dimension formula for spaces of homomorphisms (Worksheet 16, Theorem~\ref{thm:dim-hom-g}): for a finite group $K$ and finite-dimensional representations $Y, Z$ of $K$ over a field containing $\mathbb{Q}$,
+\[
+\dim \operatorname{Hom}_K(Y, Z) = \frac{1}{|K|}\sum_{k \in K} \chi_Y(k^{-1})\,\chi_Z(k) .
+\]
+
+\textbf{The group $G \times H$.} The group $G \times H$ is finite, of order $|G|\,|H|$, and $X$ is a finite-dimensional representation of it by (1). Hence
+\[
+\dim \operatorname{Hom}_{G \times H}(X, X) = \frac{1}{|G|\,|H|}\sum_{(g, h) \in G \times H} \chi_X\big((g, h)^{-1}\big)\,\chi_X(g, h) .
+\]
+
+\textbf{Separating the characters.} In $G \times H$, $(g, h)^{-1} = (g^{-1}, h^{-1})$, so by (2),
+\[
+\chi_X(g^{-1}, h^{-1}) = \chi_V(g)\,\chi_W(h^{-1}), \qquad \chi_X(g, h) = \chi_V(g^{-1})\,\chi_W(h) .
+\]
+Hence
+\[
+\chi_X\big((g, h)^{-1}\big)\,\chi_X(g, h) = \big(\chi_V(g^{-1})\,\chi_V(g)\big)\big(\chi_W(h^{-1})\,\chi_W(h)\big) .
+\]
+
+\textbf{Splitting the sum.} A finite sum over $G \times H$ of a product $a(g)\,b(h)$ factors as the product $\big(\sum_g a(g)\big)\big(\sum_h b(h)\big)$ of the two sums. Therefore
+\[
+\dim \operatorname{Hom}_{G \times H}(X, X) = \bigg(\frac{1}{|G|}\sum_{g \in G} \chi_V(g^{-1})\,\chi_V(g)\bigg)\bigg(\frac{1}{|H|}\sum_{h \in H} \chi_W(h^{-1})\,\chi_W(h)\bigg) .
+\]
+By the dimension formula applied to the group $G$ with $Y = Z = V$, and to the group $H$ with $Y = Z = W$, the two factors are $\dim \operatorname{Hom}_G(V, V)$ and $\dim \operatorname{Hom}_H(W, W)$, respectively. Hence
+\[
+\dim \operatorname{Hom}_{G \times H}(X, X) = \Big(\dim \operatorname{Hom}_G(V, V)\Big)\Big(\dim \operatorname{Hom}_H(W, W)\Big) .
+\]
+\end{proof}
+
+\begin{propbox}[{$\operatorname{Hom}(V, W)$ Is Simple over $\mathbb{C}$}]\label{prop:hom-product-simple}
+Let the field be $\mathbb{C}$, and let $V$ and $W$ be simple representations of $G$ and of $H$ (Definition~\ref{def:simple-representation}). Then $X = \operatorname{Hom}(V, W)$, with the action of Definition~\ref{def:hom-product-action}, is a simple representation of $G \times H$.
+\srcline{PS 10.3(4)}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} by Schur's Lemma over $\mathbb{C}$ and the product formula, $\dim\operatorname{Hom}_{G \times H}(X, X) = 1$; a proper nonzero subrepresentation would give a projection that commutes with the action and is not a multiple of the identity.\par
+\textit{(Problem Set 10, Problem 10.3(4), as submitted; Schur's Lemma over $\mathbb{C}$ is Proposition~\ref{prop:schur-complex}, the product formula is Proposition~\ref{prop:hom-product-dimension}, and Maschke's theorem is Theorem~\ref{thm:maschke}.)} \textbf{The dimension of $\operatorname{Hom}_{G \times H}(X, X)$.} By Schur's Lemma over $\mathbb{C}$ (Worksheet 17.4), a simple finite-dimensional representation $S$ of a group $K$ over $\mathbb{C}$ satisfies $\operatorname{Hom}_K(S, S) = \mathbb{C}\,\mathrm{Id}_S$, so $\dim \operatorname{Hom}_K(S, S) = 1$. Applying this to $V$ over $G$ and to $W$ over $H$,
+\[
+\dim \operatorname{Hom}_G(V, V) = 1, \qquad \dim \operatorname{Hom}_H(W, W) = 1 .
+\]
+Since $\mathbb{C}$ contains $\mathbb{Q}$, (3) applies and gives
+\[
+\dim \operatorname{Hom}_{G \times H}(X, X) = 1 \cdot 1 = 1 .
+\]
+
+\textbf{$X$ is simple.} First, $X \neq 0$, since otherwise $\operatorname{Hom}_{G \times H}(X, X) = 0$ would have dimension $0$. Suppose, for contradiction, that $X$ is not simple, and let $U \subseteq X$ be a subrepresentation with $U \neq 0$ and $U \neq X$.
+
+The group $G \times H$ is finite and $|G \times H| \neq 0$ in $\mathbb{C}$, so by Maschke's theorem there is a subrepresentation $U' \subseteq X$ with $X = U \oplus U'$. Here $U' \neq 0$, since $U \neq X$.
+
+Let $P \colon X \to X$ be the projection onto $U$ along $U'$: for $x = u + u'$ with $u \in U$ and $u' \in U'$, $P(x) = u$. It is linear.
+
+\emph{$P$ is a homomorphism of representations.} Let $(g, h) \in G \times H$ and $x = u + u'$ as above. Since $U$ and $U'$ are subrepresentations, $(g, h) * u \in U$ and $(g, h) * u' \in U'$, so $(g, h) * x = (g, h) * u + (g, h) * u'$ is the decomposition of $(g, h) * x$ in $X = U \oplus U'$. Hence
+\[
+P\big((g, h) * x\big) = (g, h) * u = (g, h) * P(x) ,
+\]
+and $P \in \operatorname{Hom}_{G \times H}(X, X)$.
+
+\emph{$P$ is not a multiple of $\mathrm{Id}_X$.} Suppose $P = c\,\mathrm{Id}_X$ for some $c \in \mathbb{C}$. Choose $u \in U$ and $u' \in U'$, both nonzero. Then $u = P(u) = c\,u$ gives $c = 1$, and $0 = P(u') = c\,u'$ gives $c = 0$, a contradiction.
+
+\emph{Conclusion.} The identity $\mathrm{Id}_X$ is a nonzero element of $\operatorname{Hom}_{G \times H}(X, X)$, and $P$ is an element of the same space that is not a multiple of it. Hence $\mathrm{Id}_X$ and $P$ are linearly independent, and $\dim \operatorname{Hom}_{G \times H}(X, X) \geq 2$, contradicting $\dim \operatorname{Hom}_{G \times H}(X, X) = 1$. Therefore $X$ is a simple representation of $G \times H$.
+\end{proof}
+
+The second half of this proof is a second proof of the Simplicity Test (Lemma~\ref{lem:simplicity-test}), which does not use multiplicities: if a representation $X$ is not simple and not zero, Maschke's theorem gives $X = U \oplus U'$ with both summands nonzero, and the projection onto $U$ along $U'$ is a homomorphism of representations that is not a multiple of the identity, so $\dim\operatorname{Hom}(X, X)$ over the group is at least $2$.
+
 % ============================================================================
 % SECTION: THE CHARACTER TABLE (Worksheet 18; lecture Wed Nov 18)
 % ============================================================================
 \section{The Character Table}\label{sec:character-table}
 
-\textit{Source: Lecture and Worksheet 18, \emph{The character table} (Wed Nov 18): WS 18.1--18.4, from handwritten notes of the board.}
+\textit{Source: Lecture and Worksheet 18, \emph{The character table} (Wed Nov 18): WS 18.1--18.4, from handwritten notes of the board; Problem Set 10, Problem 10.4 (submitted).}
 
 Throughout this section $G$ is a finite group, $k$ is a field containing $\mathbb{Q}$, and all representations are finite-dimensional representations of $G$ over $k$. The first two problems of Worksheet 18 are results that are already proved, and each of them shortens the character table.
 \begin{enumerate}
@@ -12264,11 +12583,11 @@ $J^k$ & $2$ & $0$ & $-2$ & $0$
     \item \emph{The last row.} $\chi_R(k) = \operatorname{Tr}J^k$, and $J^0 = I$, $J$, $J^2 = -I$, $J^3 = -J$ have the traces $2$, $0$, $-2$, $0$.
     \item \emph{$\dim\operatorname{Hom}_G(R, R) = 2$} (board). The inverses of $0, 1, 2, 3$ are $0, 3, 2, 1$, and $\chi_R(3) = \chi_R(1)$, so by Corollary~\ref{cor:dim-hom-pairing}
     \[ \dim\operatorname{Hom}_G(R, R) = \langle \chi_R, \chi_R \rangle = \tfrac14\big(2^2 + 0^2 + (-2)^2 + 0^2\big) = 2. \]
-    \item \emph{Over $\mathbb{R}$} (board): $R$ is simple, and it will be shown on Friday that the three rows are the only simple representations of $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$. So in WS 18.3(1) (Proposition~\ref{prop:rows-orthogonal}(1)) the value for $U = V = R$ is $\dim\operatorname{Hom}_G(R, R) = 2$, not $1$: this is the example announced in the remark \emph{Over Other Fields the Weights Stay} in \ref{sec:schur-multiplicities}. There are then three simple representations and four conjugacy classes, so the inequality of WS 18.4(2) (Corollary~\ref{cor:simples-at-most-classes}) can be strict.
-    \item \emph{Over $\mathbb{C}$} (board): the same three rules define representations over $\mathbb{C}$, with the same table. There are more representations than these, and $J^k$ acting on $\mathbb{C}^2$ is not simple; this is homework.
+    \item \emph{Over $\mathbb{R}$} (board): $R$ is simple (PS 10.4(1), Example~\ref{ex:z4-rotation-worked}(1)), and it will be shown on Friday that the three rows are the only simple representations of $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$. So in WS 18.3(1) (Proposition~\ref{prop:rows-orthogonal}(1)) the value for $U = V = R$ is $\dim\operatorname{Hom}_G(R, R) = 2$, not $1$: this is the example announced in the remark \emph{Over Other Fields the Weights Stay} in \ref{sec:schur-multiplicities}. There are then three simple representations and four conjugacy classes, so the inequality of WS 18.4(2) (Corollary~\ref{cor:simples-at-most-classes}) can be strict.
+    \item \emph{Over $\mathbb{C}$} (board): the same three rules define representations over $\mathbb{C}$, with the same table. There are more representations than these, and $J^k$ acting on $\mathbb{C}^2$ is not simple; this is homework (PS 10.4(3), Example~\ref{ex:z4-rotation-worked}(3)).
     \item \emph{The rows are orthogonal} (check, not from class): $\langle \chi_{\mathrm{triv}}, \chi_{(-1)^k} \rangle = \frac14(1 - 1 + 1 - 1) = 0$, \ $\langle \chi_{\mathrm{triv}}, \chi_R \rangle = \frac14(2 + 0 - 2 + 0) = 0$, \ $\langle \chi_{(-1)^k}, \chi_R \rangle = \frac14(2 - 0 - 2 - 0) = 0$, and $\langle \chi_{\mathrm{triv}}, \chi_{\mathrm{triv}} \rangle = \langle \chi_{(-1)^k}, \chi_{(-1)^k} \rangle = \frac14 \cdot 4 = 1$.
 \end{enumerate}
-The simplicity of $R$ over $\mathbb{R}$, a basis of $\operatorname{Hom}_G(R, R)$, and a subrepresentation of $\mathbb{C}^2$ are Problem 10.4 of Problem Set 10; they will be added after the problem set is submitted.
+The simplicity of $R$ over $\mathbb{R}$, a basis of $\operatorname{Hom}_G(R, R)$, and a subrepresentation of $\mathbb{C}^2$ are Problem 10.4 of Problem Set 10, worked out in Example~\ref{ex:z4-rotation-worked}.
 \srcline{lecture 11/18; part (5) not from class}
 \end{exbox}
 
@@ -12293,6 +12612,113 @@ The simplicity of $R$ over $\mathbb{R}$, a basis of $\operatorname{Hom}_G(R, R)$
 
 \textit{(Not from lecture; figure added.)} The representation $R$ of Example~\ref{ex:z4-real-complex}: $k \in \mathbb{Z}/4\mathbb{Z}$ acts on the plane by $J^k$, the rotation by $k \cdot 90^\circ$. The picture shows the images of $e_1$. The trace of the rotation by an angle $\theta$ is $2\cos\theta$, which gives the row $2$, $0$, $-2$, $0$ of the table.
 %% <<< END ADDED
+
+\begin{exbox}[{The Rotation Representation of $\mathbb{Z}/4\mathbb{Z}$, Worked Out}]\label{ex:z4-rotation-worked}
+Let $\mathbb{Z}/4\mathbb{Z}$ act on $\mathbb{R}^2$, and by the same formula on $\mathbb{C}^2$, by $\rho(k) = J^k$ with $J = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$, as in Example~\ref{ex:z4-real-complex}.
+\begin{enumerate}
+    \item $\mathbb{R}^2$ is a simple representation of $\mathbb{Z}/4\mathbb{Z}$.
+    \item $\operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2) = \left\{ \left(\begin{smallmatrix} a & b \\ -b & a \end{smallmatrix}\right) : a, b \in \mathbb{R} \right\}$. It is $2$-dimensional, with basis $I$, $J$.
+    \item $\mathbb{C}^2$ is not simple: $L = \operatorname{span}_{\mathbb{C}}\left\{\left(\begin{smallmatrix} 1 \\ -i \end{smallmatrix}\right)\right\}$ is a subrepresentation with $L \neq \{0\}$ and $L \neq \mathbb{C}^2$.
+    \item $\mathbb{C}^2 = L \oplus L'$ with $L' = \operatorname{span}_{\mathbb{C}}\left\{\left(\begin{smallmatrix} 1 \\ i \end{smallmatrix}\right)\right\}$. On $L$ the element $k$ acts by the scalar $i^k$, and on $L'$ by $(-i)^k$.
+\end{enumerate}
+\srcline{PS 10.4(1)--(3); part (4) is not from class}
+\end{exbox}
+
+\begin{proof}
+\textit{(Problem Set 10, Problem 10.4, as submitted.)}
+
+\textbf{(1)} Write $J = \rho(1) = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$, so that $J(a, b) = (-b, a)$.
+
+\textbf{Candidates for subrepresentations.} First, $\mathbb{R}^2 \neq 0$. A subspace of $\mathbb{R}^2$ other than $0$ and $\mathbb{R}^2$ has dimension $1$, so it is a line $L = \operatorname{span}\{(a, b)\}$ with $(a, b) \neq (0, 0)$.
+
+\textbf{A stable line gives a real eigenvector.} Suppose such an $L$ is a subrepresentation. A subrepresentation is stable under every $\rho(k)$, in particular under $\rho(1) = J$. Hence $J(a, b) \in L$, i.e.\ $J(a, b) = \lambda\,(a, b)$ for some $\lambda \in \mathbb{R}$. Since $(a, b) \neq (0, 0)$, $\lambda$ is a real eigenvalue of $J$.
+
+\textbf{$J$ has no real eigenvalue.} A number $\lambda \in \mathbb{R}$ is an eigenvalue of $J$ if and only if $\lambda I - J$ is not injective, if and only if $\det(\lambda I - J) = 0$. The characteristic polynomial is
+\[
+\det(zI - J) = \det\begin{pmatrix} z & 1 \\ -1 & z \end{pmatrix} = z^2 + 1 ,
+\]
+and for $z \in \mathbb{R}$, $z^2 + 1 \geq 1 > 0$. So $J$ has no real eigenvalue, contradicting the previous step.
+
+Therefore $\mathbb{R}^2$ has no subrepresentation other than $0$ and $\mathbb{R}^2$, and $\mathbb{R}^2$ is a simple representation of $\mathbb{Z}/4\mathbb{Z}$.
+
+\textbf{(2)} \textbf{The condition.} Here both representations are $\mathbb{R}^2$ with $\rho(k) = J^k$, with $J$ as in (1). By the definition of $\operatorname{Hom}_G(V, W)$ (Definition~\ref{def:hom-g}), a linear map $\alpha \colon \mathbb{R}^2 \to \mathbb{R}^2$ lies in $\operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2)$ if and only if
+\[
+\alpha\big(J^k v\big) = J^k\big(\alpha(v)\big) \qquad \text{for all } k \in \mathbb{Z}/4\mathbb{Z},\ v \in \mathbb{R}^2 ,
+\]
+i.e.\ $\alpha J^k = J^k \alpha$ for $k = 0, 1, 2, 3$.
+
+\textbf{The powers of $J$.} We have
+\[
+J^0 = I, \qquad J^1 = J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} = -I, \qquad J^3 = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = -J .
+\]
+
+\textbf{Reducing to one condition.} For $k = 0, 2$, $\alpha(\pm I) = \pm\alpha = (\pm I)\alpha$ holds for every $\alpha$. For $k = 1, 3$, the condition $\alpha(-J) = (-J)\alpha$ is equivalent to $\alpha J = J\alpha$. Hence
+\[
+\alpha \in \operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2) \iff \alpha J = J\alpha .
+\]
+
+\textbf{Solving the condition.} Write $\alpha = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ with $a, b, c, d \in \mathbb{R}$. Then
+\[
+\alpha J = \begin{pmatrix} b & -a \\ d & -c \end{pmatrix}, \qquad J\alpha = \begin{pmatrix} -c & -d \\ a & b \end{pmatrix} .
+\]
+Comparing entries, $\alpha J = J\alpha$ if and only if $b = -c$, $-a = -d$, $d = a$ and $-c = b$, i.e.\ if and only if $a = d$ and $b = -c$. With $a$ and $b$ as free parameters,
+\[
+\operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2) = \left\{ \begin{pmatrix} a & b \\ -b & a \end{pmatrix} : a, b \in \mathbb{R} \right\}, \qquad \begin{pmatrix} a & b \\ -b & a \end{pmatrix} = a\,I - b\,J .
+\]
+
+\textbf{A basis.} We claim $\{I, J\}$ is a basis of $\operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2)$.
+\begin{itemize}
+\item \emph{Membership.} $I$ (with $a = 1$, $b = 0$) and $J$ (with $a = 0$, $b = -1$) are of the form above.
+\item \emph{Spanning.} Every element of $\operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2)$ equals $a\,I - b\,J$ for some $a, b \in \mathbb{R}$.
+\item \emph{Independence.} If $s\,I + t\,J = \begin{pmatrix} s & -t \\ t & s \end{pmatrix} = 0$ with $s, t \in \mathbb{R}$, then $s = t = 0$.
+\end{itemize}
+Therefore $\{I, J\}$ is a basis, and $\dim \operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2) = 2$.
+
+\textbf{(3)} Now $\mathbb{Z}/4\mathbb{Z}$ acts on $\mathbb{C}^2$ by $\rho(k) = J^k$, with $J(a, b) = (-b, a)$ for $a, b \in \mathbb{C}$.
+
+\textbf{Eigenvalues of $J$.} Over $\mathbb{C}$, the characteristic polynomial factors as
+\[
+\det(zI - J) = z^2 + 1 = (z - i)(z + i),
+\]
+so $J$ has the eigenvalues $i$ and $-i$.
+
+\textbf{An eigenvector for $i$.} For $(a, b) \in \mathbb{C}^2$, $J(a, b) = i\,(a, b)$ means $(-b, a) = (ia, ib)$, i.e.\ $b = -ia$ and $a = ib$; the second equation follows from the first, since $ib = -i^2 a = a$. Taking $a = 1$,
+\[
+v = \begin{pmatrix} 1 \\ -i \end{pmatrix}, \qquad Jv = \begin{pmatrix} i \\ 1 \end{pmatrix} = i \begin{pmatrix} 1 \\ -i \end{pmatrix} = i\,v .
+\]
+
+\textbf{The subrepresentation.} Let $L = \operatorname{span}_{\mathbb{C}}\{v\}$. For every $k \in \mathbb{Z}/4\mathbb{Z}$, $\rho(k)v = J^k v = i^k v \in L$, so $\rho(k)(cv) = c\,i^k v \in L$ for all $c \in \mathbb{C}$. Hence $L$ is stable under every $\rho(k)$, and $L$ is a subrepresentation of $\mathbb{C}^2$.
+
+\textbf{Nontrivial and proper.} Since $v \neq 0$, $\dim_\mathbb{C} L = 1$, so $L \neq 0$ and $L \neq \mathbb{C}^2$. Therefore
+\[
+L = \operatorname{span}_{\mathbb{C}}\left\{ \begin{pmatrix} 1 \\ -i \end{pmatrix} \right\}
+\]
+is a nontrivial proper subrepresentation of $\mathbb{C}^2$, and $\mathbb{C}^2$ is not simple.
+
+\textbf{(4)} \textit{(Not from class; filled in.)} With $J(a, b) = (-b, a)$, $J(1, i) = (-i, 1) = -i\,(1, i)$. So $v' = (1, i)$ is an eigenvector of $J$ for the eigenvalue $-i$, and $J^kv' = (-i)^kv'$: the line $L'$ is a subrepresentation on which $k$ acts by $(-i)^k$. By (3), $k$ acts on $L$ by $i^k$. The vectors $(1, -i)$ and $(1, i)$ are linearly independent, since $\det\left(\begin{smallmatrix} 1 & 1 \\ -i & i \end{smallmatrix}\right) = 2i \neq 0$, so they form a basis of $\mathbb{C}^2$ and $\mathbb{C}^2 = L \oplus L'$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+\draw[->, black!55, thin] (-2.3,0) -- (2.5,0) node[right] {$x$};
+\draw[->, black!55, thin] (0,-2.3) -- (0,2.5) node[above] {$y$};
+\draw[black!40] (0,0) circle (1.6);
+\draw[blue!70!black, very thick] (25:-2.2) -- (25:2.2) node[right] {$L = \mathbb{R}(a, b)$};
+\draw[red!70!black, very thick] (115:-2.2) -- (115:2.2) node[above] {$JL = \mathbb{R}(-b, a)$};
+\draw[->, thick, blue!70!black] (0,0) -- (25:1.6);
+\draw[->, thick, red!70!black] (0,0) -- (115:1.6);
+\draw[->, black!70] (25:0.7) arc (25:115:0.7) node[midway, above right=-2pt] {$90^\circ$};
+\node[anchor=west, align=left] at (4.3,1.2) {$J(a, b) = (-b, a)$ is perpendicular to $(a, b)$};
+\node[anchor=west, align=left] at (4.3,0.4) {so $J$ maps every line $L$ through $0$\\to the perpendicular line $JL \neq L$};
+\node[anchor=west, align=left] at (4.3,-0.6) {no line is a subrepresentation:\\$\mathbb{R}^2$ is simple over $\mathbb{R}$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Part (1) of Example~\ref{ex:z4-rotation-worked} as a picture. $J$ turns the plane by $90^\circ$, so it maps every line through $0$ to the perpendicular line. No line is mapped to itself, which is the geometric content of ``$J$ has no real eigenvalue''.
+%% <<< END ADDED
+
+Example~\ref{ex:z4-rotation-worked} fits the results of \ref{sec:schur-multiplicities}. Over $\mathbb{R}$ the representation is simple with $\dim\operatorname{Hom} = 2$, so the conclusion of Schur's Lemma over $\mathbb{C}$ (Proposition~\ref{prop:schur-complex}) fails over $\mathbb{R}$, and the converse of the Simplicity Test (Lemma~\ref{lem:simplicity-test}) fails over $\mathbb{R}$ as well. Over $\mathbb{C}$ the same matrices give a sum of two non-isomorphic one-dimensional representations, with characters $i^k$ and $(-i)^k$ whose sum is the row $2$, $0$, $-2$, $0$, and $\dim\operatorname{Hom} = 1^2 + 1^2 = 2$ (Corollary~\ref{cor:multiplicities-complex}). The homomorphisms $k \mapsto i^k$ and $k \mapsto (-i)^k$ are the further representations over $\mathbb{C}$ mentioned on the board. The problem set suggests, as an additional challenge, the same questions for $\mathbb{Z}/m\mathbb{Z}$ acting on $\mathbb{R}^2$ by rotations by $2\pi k/m$, $m \geq 3$; this is not worked out here.
 
 
 \appendix
@@ -12382,7 +12808,7 @@ Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the r
     \item A semidirect product is not determined by $N$ and $S$ alone: $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ and $S_3$ are both of the form $\mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$. The action $\varphi$ is part of the data, and in $N \rtimes S$ it is $N$, not $S$, that is normal (\ref{sec:semidirect-products}).
     \item The composition factors do not determine the group: $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ both have factors $\mathbb{Z}/2, \mathbb{Z}/2$, and $\mathbb{Z}/6\mathbb{Z}$ and $S_3$ both have $\mathbb{Z}/2, \mathbb{Z}/3$. Jordan--H\"older says the list is an invariant, not a complete one (\ref{sec:composition-series}).
     \item Decompositions of representations can depend on the field: $k\{1,2,3\} = k(1,1,1) \oplus \{x + y + z = 0\}$ exactly when $3 \neq 0$ in $k$; over $\mathbb{F}_3$ the first summand lies inside the second (Proposition~\ref{prop:k123-direct-sum}).
-    \item $\dim\operatorname{Hom}_G(S, S) = 1$ for a simple representation $S$ is Schur's Lemma over $\mathbb{C}$; its proof uses an eigenvalue (Proposition~\ref{prop:schur-complex}). Over $\mathbb{R}$ or a general field, keep the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ in the multiplicity formula (the remark \emph{Over Other Fields the Weights Stay} in \ref{sec:schur-multiplicities}): for the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$ the number is $2$ (Example~\ref{ex:z4-real-complex}). The parts of Schur's Lemma about injective, surjective and zero maps hold over every field (Proposition~\ref{prop:schur-lemma}).
+    \item $\dim\operatorname{Hom}_G(S, S) = 1$ for a simple representation $S$ is Schur's Lemma over $\mathbb{C}$; its proof uses an eigenvalue (Proposition~\ref{prop:schur-complex}). Over $\mathbb{R}$ or a general field, keep the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ in the multiplicity formula (the remark \emph{Over Other Fields the Weights Stay} in \ref{sec:schur-multiplicities}): for the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$, which is simple over $\mathbb{R}$, the number is $2$ (Examples~\ref{ex:z4-real-complex} and~\ref{ex:z4-rotation-worked}). The parts of Schur's Lemma about injective, surjective and zero maps hold over every field (Proposition~\ref{prop:schur-lemma}).
     \item $V \oplus V$ and $V^{\oplus a}$ are external direct sums (tuples). They are not internal direct sums, since $V \cap V = V$ (Definition~\ref{def:repeated-direct-sum}).
     \item The rows of a character table are orthogonal for the pairing with the class sizes as weights and with $\chi(g_i^{-1})$ in the first factor, not for the plain dot product of the listed entries: for $S_3$ the rows $(1, 1, 1)$ and $(2, 0, -1)$ have plain dot product $1$, and pairing $\frac16(1 \cdot 2 + 3 \cdot 0 + 2 \cdot (-1)) = 0$ (Proposition~\ref{prop:rows-orthogonal}).
 \end{enumerate}
@@ -12433,11 +12859,12 @@ Fri Nov 6 \newline lecture & WS 14.7--14.8 (the averaged inner product); finite 
 Wed Nov 4 \newline office hours & $GL_n(\mathbb{F}_p)$ acting on complete flags $G/B$; orbits of the unitriangular group of sizes $p^{\ell(w)}$ for $n = 2, 3$ & \ref{sub:flags-sylow-gln} \\
 Thu Nov 5 \newline Problem Set 8 (submitted) & The product formula $|AB| = |A|\,|B|/|A \cap B|$; subgroups of index $2$ are normal; groups of order $pq$ as semidirect products $\mathbb{Z}/q\mathbb{Z} \rtimes \mathbb{Z}/p\mathbb{Z}$, classified by the solutions of $a^p \equiv 1 \bmod q$; simple groups of order $60$ through the action on $A_6/G$; the trace, $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ & \ref{sub:product-formula} (8.1), \ref{sec:normal-sources} (8.2), \ref{sub:order-pq}, \ref{sec:order-pq-semidirect} (8.3), \ref{sub:order-60} (8.4), \ref{sec:invariants} (8.5) \\
 Mon Nov 9 \newline lecture; Worksheet 15 & Idempotents and their trace; invariant vectors and the averaging operator; $V = V^G \oplus \operatorname{Ker}\pi$; $\dim V^G$ as the average trace; characters, constant on conjugacy classes and additive over direct sums; the start of the character table of $S_3$ & \ref{sec:maschke}, \ref{sec:invariants}, \ref{sec:characters-of-representations} \\
-Wed Nov 11 \newline lecture; Worksheet 16 & Two more descriptions of the trace; the representation $\operatorname{Hom}(V, W)$ and $\operatorname{Hom}_G(V, W)$; the trace of $X \mapsto RXS$; $\dim\operatorname{Hom}_G(V, W)$ from characters & \ref{sec:hom-representation} (16.1--16.2; 16.3--16.5 not done in class, the complex case moved to PS 10.1) \\
+Wed Nov 11 \newline lecture; Worksheet 16 & Two more descriptions of the trace; the representation $\operatorname{Hom}(V, W)$ and $\operatorname{Hom}_G(V, W)$; the trace of $X \mapsto RXS$; $\dim\operatorname{Hom}_G(V, W)$ from characters & \ref{sec:hom-representation} (16.1--16.2; 16.3--16.5 not done in class, the complex case done in PS 10.1) \\
 Thu Nov 12 \newline Problem Set 9 (submitted) & Extensions of solvable groups; idempotents split $V = \operatorname{Ker} \oplus \operatorname{Im}$; the proof of Maschke's theorem; counterexamples for $\mathbb{Z}$ and for $\mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$; affine maps as semidirect products & \ref{sec:solvable} (9.1), \ref{sec:maschke} (9.2--9.4), \ref{sec:affine-maps} (9.5) \\
 Fri Nov 13 \newline lecture & Dual spaces, dual bases and dual maps; the transpose matrix; the dual representation (inverse transpose) and $\chi_{V^\vee}(g) = \chi_V(g^{-1})$; a word on tensor products & \ref{sec:dual-representations} \\
 Mon Nov 16 \newline lecture; Worksheet 17 & External direct sums $V^{\oplus a}$; kernels and images of homomorphisms of representations; $\dim\operatorname{Hom}_G$ is additive in direct sums; Schur's Lemma, and Schur's Lemma over $\mathbb{C}$; multiplicities; orthogonality of the rows of the character table of $S_3$; a simplicity test & \ref{sec:representations} (13.6), \ref{sec:schur-multiplicities} (17.1--17.5) \\
 Wed Nov 18 \newline lecture; Worksheet 18 & The character table: one column per conjugacy class, one row per simple representation; class functions and their pairing; the rows are orthogonal and linearly independent; at most as many simple representations as conjugacy classes; $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$ and over $\mathbb{C}$ & \ref{sec:character-table} (18.1--18.4) \\
+Thu Nov 19 \newline Problem Set 10 (submitted) & Elements of a finite group act diagonalizably over $\mathbb{C}$, and $\chi_V(g^{-1}) = \overline{\chi_V(g)}$; annihilators, $V$ simple iff $V^\vee$ simple; $\operatorname{Hom}(V, W)$ as a representation of $G \times H$, simple over $\mathbb{C}$; the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ & \ref{sec:hom-representation} (10.1), \ref{sec:dual-representations} (10.2), \ref{sec:schur-multiplicities} (10.3), \ref{sec:character-table} (10.4) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 
@@ -12883,6 +13310,62 @@ The problem set illustrates this on its second page with a tiling of the plane b
 \end{hwbox}
 \textit{Treated in \ref{sec:affine-maps} (Proposition~\ref{prop:affine-semidirect}; the lizard tiling's group in the form of Example~\ref{ex:affine-wallpaper-p3}).}
 
+\section*{Problem Set 10}
+\phantomsection
+\addcontentsline{toc}{section}{Problem Set 10}
+
+\textit{Due Thursday, November 19; submitted. Each problem is treated in the main text, at the location indicated.}
+
+\begin{hwbox}[{Diagonalizability and Characters at the Inverse}]{10.1}\label{hw:10.1}
+This problem is bumped from Worksheet 16, because we didn't have time to address it well in class. Let $G$ be a finite group and let $V$ be a finite dimensional representation of $G$ over the field $\mathbb{C}$. Let $g \in G$.
+\begin{enumerate}
+\item Show that there is a positive integer $N$ with $\rho_V(g)^N = 1$.
+\item Show that $\rho_V(g)$ is diagonalizable and that the eigenvalues of $g$ are complex numbers of norm $1$.
+\item Show that $\rho_V(g^{-1}) = \overline{\rho_V(g)}$, where the bar means complex conjugation.
+\end{enumerate}
+To keep this problem to a reasonable length, we won't do the real case. The corresponding result for real representations is that $\rho_V(g^{-1}) = \rho_V(g)$.
+\end{hwbox}
+\textit{Treated in \ref{sec:hom-representation} (Proposition~\ref{prop:finite-group-diagonalizable}; for matrices, WS 16.4--16.5: Proposition~\ref{prop:finite-order-matrix} and Corollary~\ref{cor:character-inverse-complex}).}
+
+\begin{hwbox}[{Annihilators and the Dual Representation}]{10.2}\label{hw:10.2}
+Let $G$ be a group, let $V$ be a finite dimensional representation of $G$ and let $V^\vee$ be the dual representation. If $U$ is a vector subspace of $V$, then we define $U^\perp = \{\lambda \in V^\vee : \lambda(u) = 0\ \forall u \in U\}$.
+\begin{enumerate}
+\item If $U$ is a subrepresentation of $V$, show that $U^\perp$ is a subrepresentation of $V^\vee$.
+\item Show that $\dim U^\perp = \dim V - \dim U$.
+\item Let $V$ be a representation of $G$. Show that $V$ is simple if and only if $V^\vee$ is simple.
+\end{enumerate}
+\end{hwbox}
+\textit{Treated in \ref{sec:dual-representations} (Definition~\ref{def:annihilator}, Propositions~\ref{prop:annihilator-subrepresentation} and~\ref{prop:annihilator-dimension}, Lemma~\ref{lem:double-dual}, Proposition~\ref{prop:dual-simple}).}
+
+\begin{hwbox}[{$\operatorname{Hom}(V, W)$ as a Representation of $G \times H$}]{10.3}\label{hw:10.3}
+Let $G$ and $H$ be finite groups. Let $V$ and $W$ be finite dimensional representations of $G$ and $H$ respectively (over the same field). Let $\operatorname{Hom}(V, W)$ be the set of linear maps $V \to W$. In this problem, we will investigate $\operatorname{Hom}(V, W)$ as a representation of $G \times H$. In this problem, we'll shorten $\operatorname{Hom}(V, W)$ to $X$.
+
+Let $G \times H$ act on $X$ by
+\[ (g, h) \ast \alpha = \rho_W(h) \circ \alpha \circ \rho_V(g^{-1}). \]
+\begin{enumerate}
+\item Check that this is an action.
+\item Show that $\chi_X(g, h) = \chi_V(g^{-1})\chi_W(h)$.
+\item Assume that our field contains $\mathbb{Q}$. Show that
+\[ \dim \operatorname{Hom}_{G \times H}(X, X) = \Big(\dim \operatorname{Hom}_G(V, V)\Big)\Big(\dim \operatorname{Hom}_H(W, W)\Big). \]
+\item Suppose that our field is $\mathbb{C}$ and that $V$ and $W$ are simple representations of $G$ and $H$. Show that $X$ is a simple representation of $G \times H$.
+\end{enumerate}
+\end{hwbox}
+\textit{Treated in \ref{sec:schur-multiplicities} (Definition~\ref{def:hom-product-action}, Propositions~\ref{prop:hom-product-representation}, \ref{prop:hom-product-character}, \ref{prop:hom-product-dimension} and~\ref{prop:hom-product-simple}).}
+
+\begin{hwbox}[{The Rotation Representation of $\mathbb{Z}/4\mathbb{Z}$}]{10.4}\label{hw:10.4}
+Let $\mathbb{Z}/4\mathbb{Z}$ act on $\mathbb{R}^2$ by $\rho(k) = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)^k$.
+\begin{enumerate}
+\item Show that $\mathbb{R}^2$ is a simple representation of $\mathbb{Z}/4\mathbb{Z}$.
+\item Show that $\operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2)$ is $2$-dimensional, and give a basis for $\operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2)$.
+\end{enumerate}
+Now, we switch from the ground field $\mathbb{R}$ to $\mathbb{C}$. Let $\mathbb{Z}/4\mathbb{Z}$ act on $\mathbb{C}^2$ by exactly the same formula: $\rho(k) = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)^k$.
+\begin{enumerate}[resume]
+\item Show that $\mathbb{C}^2$ is no longer simple, by explicitly writing down a nontrivial proper subrepresentation.
+\end{enumerate}
+If you want an additional challenge, generalize all of these results to $\mathbb{Z}/m\mathbb{Z}$ acting on $\mathbb{R}^2$ by $\rho(k) = \left(\begin{smallmatrix} \cos\frac{2\pi k}{m} & -\sin\frac{2\pi k}{m} \\ \sin\frac{2\pi k}{m} & \cos\frac{2\pi k}{m} \end{smallmatrix}\right)$, for any $m \geq 3$.
+\end{hwbox}
+\textit{Treated in \ref{sec:character-table} (Example~\ref{ex:z4-rotation-worked}; the lecture's table is Example~\ref{ex:z4-real-complex}). The additional challenge is not worked out.}
+
 \chapter{Index of Definitions and Results}\label{ch:index}
 
 Terms defined in the definition boxes, and named theorems, propositions, lemmas and corollaries, with the page where each appears.
@@ -12894,11 +13377,13 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em abelian\dotfill \pageref{def:abelian-group}\par
 \noindent\hangindent=1em abelianization\dotfill \pageref{def:abelianization}\par
 \noindent\hangindent=1em action\dotfill \pageref{def:action-right-action}\par
+\noindent\hangindent=1em action of $G \times H$ on $\operatorname{Hom}(V, W)$\dotfill \pageref{def:hom-product-action}\par
 \noindent\hangindent=1em action of $S_n$ on polynomials\dotfill \pageref{def:action-sn-k-x1-xn}\par
 \noindent\hangindent=1em additive groups $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$\dotfill \pageref{def:additive-groups-z-q-r}\par
 \noindent\hangindent=1em adjacent inversion\dotfill \pageref{def:inversions-permutation}\par
 \noindent\hangindent=1em alternating\dotfill \pageref{def:alternating-polynomial}\par
 \noindent\hangindent=1em alternating group\dotfill \pageref{def:alternating-group-an}\par
+\noindent\hangindent=1em annihilator\dotfill \pageref{def:annihilator}\par
 \noindent\hangindent=1em automorphism\dotfill \pageref{def:automorphisms-aut-g}\par
 \noindent\hangindent=1em averaged inner product\dotfill \pageref{def:averaged-inner-product}\par
 \noindent\hangindent=1em averaging operator\dotfill \pageref{def:averaging-map}\par
@@ -13160,6 +13645,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Dimension of the Invariants\dotfill \pageref{thm:dim-invariants-character}\par
 \noindent\hangindent=1em $\dim\operatorname{Hom}_G$ Between Sums of Simple Representations\dotfill \pageref{prop:dim-hom-sums-of-simples}\par
 \noindent\hangindent=1em $\dim\operatorname{Hom}_G$ Is Additive in Each Variable\dotfill \pageref{prop:dim-hom-additive}\par
+\noindent\hangindent=1em $\dim\operatorname{Hom}_{G \times H}(X, X)$ Is a Product\dotfill \pageref{prop:hom-product-dimension}\par
 \noindent\hangindent=1em Direct Products as a Special Case\dotfill \pageref{prop:semidirect-trivial-action-direct}\par
 \noindent\hangindent=1em Direct Sum of a Subspace and Its Orthogonal Complement\dotfill \pageref{prop:orthogonal-complement-direct-sum}\par
 \noindent\hangindent=1em Direct Sums Give Block Diagonal Matrices\dotfill \pageref{prop:direct-sum-block-diagonal}\par
@@ -13169,6 +13655,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Dual Characters over $\mathbb{R}$ and $\mathbb{C}$\dotfill \pageref{cor:character-dual-real-complex}\par
 \noindent\hangindent=1em Duals Reverse Composition\dotfill \pageref{prop:duals-reverse-composition}\par
 \noindent\hangindent=1em Each Group Element Acts Bijectively\dotfill \pageref{prop:each-group-element-acts-bijectively}\par
+\noindent\hangindent=1em Elements of a Finite Group Act Diagonalizably over $\mathbb{C}$\dotfill \pageref{prop:finite-group-diagonalizable}\par
 \noindent\hangindent=1em Equivalence Classes Partition a Set\dotfill \pageref{prop:equivalence-classes-partition-set}\par
 \noindent\hangindent=1em Equivalent Subgroup Criteria\dotfill \pageref{prop:equivalent-subgroup-criteria}\par
 \noindent\hangindent=1em Euclid's Lemma\dotfill \pageref{lem:euclids-lemma}\par
@@ -13229,6 +13716,8 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Homomorphisms That Leave $A_N$\dotfill \pageref{lem:leave-an}\par
 \noindent\hangindent=1em Homomorphisms $\mathbb{Z}/p\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/q\mathbb{Z})$\dotfill \pageref{prop:hom-zp-aut-zq}\par
 \noindent\hangindent=1em $\operatorname{Hom}(V, W)$ Is a Representation\dotfill \pageref{prop:hom-is-representation}\par
+\noindent\hangindent=1em $\operatorname{Hom}(V, W)$ Is a Representation of $G \times H$\dotfill \pageref{prop:hom-product-representation}\par
+\noindent\hangindent=1em $\operatorname{Hom}(V, W)$ Is Simple over $\mathbb{C}$\dotfill \pageref{prop:hom-product-simple}\par
 \noindent\hangindent=1em Horizontal Edges Propagate\dotfill \pageref{prop:jh-horizontal-edges}\par
 \noindent\hangindent=1em Image and Kernel Are Subgroups\dotfill \pageref{prop:image-kernel-subgroups}\par
 \noindent\hangindent=1em Images and Preimages of Subgroups\dotfill \pageref{prop:images-preimages-subgroups}\par
@@ -13349,11 +13838,13 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Sylow Subgroups of a Subgroup\dotfill \pageref{prop:sylow-of-subgroup}\par
 \noindent\hangindent=1em The Abelianization Is Abelian\dotfill \pageref{prop:abelianization-abelian}\par
 \noindent\hangindent=1em The Action of $G$ on $G/H$\dotfill \pageref{prop:action-g-g-h}\par
+\noindent\hangindent=1em The Annihilator of a Subrepresentation Is a Subrepresentation\dotfill \pageref{prop:annihilator-subrepresentation}\par
 \noindent\hangindent=1em The Average Is Idempotent\dotfill \pageref{prop:averaging-idempotent}\par
 \noindent\hangindent=1em The Bruhat Decomposition\dotfill \pageref{prop:bruhat-decomposition-gln}\par
 \noindent\hangindent=1em The Center Is a Subgroup\dotfill \pageref{prop:center-subgroup}\par
 \noindent\hangindent=1em The Character of an External Direct Sum\dotfill \pageref{prop:character-external-direct-sum}\par
 \noindent\hangindent=1em The Character of $\operatorname{Hom}(V, W)$\dotfill \pageref{prop:character-hom}\par
+\noindent\hangindent=1em The Character of $\operatorname{Hom}(V, W)$ as a Representation of $G \times H$\dotfill \pageref{prop:hom-product-character}\par
 \noindent\hangindent=1em The Character of the Dual Representation\dotfill \pageref{prop:character-dual}\par
 \noindent\hangindent=1em The Class Equation\dotfill \pageref{thm:class-equation}\par
 \noindent\hangindent=1em The Class Equation, Reciprocal Form\dotfill \pageref{cor:class-equation-reciprocal-form}\par
@@ -13367,6 +13858,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Cube Group Embeds in $S_6$\dotfill \pageref{prop:cube-group-embeds-s6}\par
 \noindent\hangindent=1em The Derived Series of a Finite Group Stabilizes\dotfill \pageref{prop:derived-series-finite-stabilizes}\par
 \noindent\hangindent=1em The Dimension Formula as a Pairing\dotfill \pageref{cor:dim-hom-pairing}\par
+\noindent\hangindent=1em The Dimension of the Annihilator\dotfill \pageref{prop:annihilator-dimension}\par
 \noindent\hangindent=1em The Dimension of the Space of Class Functions\dotfill \pageref{prop:dimension-class-functions}\par
 \noindent\hangindent=1em The Dual Basis Is a Basis\dotfill \pageref{prop:dual-basis-is-basis}\par
 \noindent\hangindent=1em The Dual Map Has the Transpose Matrix\dotfill \pageref{prop:dual-map-transpose}\par
@@ -13429,6 +13921,8 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Unique Solvability of Linear Equations\dotfill \pageref{prop:unique-solvability-linear-equations}\par
 \noindent\hangindent=1em Uniqueness of Inverses\dotfill \pageref{prop:uniqueness-inverses}\par
 \noindent\hangindent=1em Uniqueness of the Identity\dotfill \pageref{prop:uniqueness-identity}\par
+\noindent\hangindent=1em $V$ Is Isomorphic to Its Double Dual\dotfill \pageref{lem:double-dual}\par
+\noindent\hangindent=1em $V$ Is Simple If and Only If $V^\vee$ Is Simple\dotfill \pageref{prop:dual-simple}\par
 \noindent\hangindent=1em $V^G$ Is a Subrepresentation\dotfill \pageref{lem:invariants-subrepresentation}\par
 \noindent\hangindent=1em When Coset Multiplication Is Well Defined\dotfill \pageref{prop:when-coset-multiplication-well-defined}\par
 \noindent\hangindent=1em When $k\{1,2,3\} = U_1 \oplus U_2$\dotfill \pageref{prop:k123-direct-sum}\par

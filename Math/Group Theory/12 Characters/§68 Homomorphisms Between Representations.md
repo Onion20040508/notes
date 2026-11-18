@@ -7,7 +7,7 @@ tags: [group-theory, math493]
 ---
 ← [[§67 Characters of Representations]] · ↑ [[· 12 Characters]] · [[§69 Dual Representations]] →
 
-*Source: Lecture and Worksheet 16, *Actions on matrix spaces* (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3–16.5 were not done in class: the lecture of Fri Nov 13 recalled the statements of WS 16.3 and WS 16.5 without proof, and Problem Set 10 (Problem 10.1) takes up the complex case, WS 16.4–16.5. They are stated in the last subsection of this section with proofs that are filled in. Reference: Axler, *Linear Algebra Done Right* (matrices of linear maps, eigenvalues, trace).*
+*Source: Lecture and Worksheet 16, *Actions on matrix spaces* (Wed Nov 11): WS 16.1, WS 16.2 and the worksheet's theorem. WS 16.3–16.5 were not done in class: the lecture of Fri Nov 13 recalled the statements of WS 16.3 and WS 16.5 without proof, and Problem Set 10 (Problem 10.1, submitted) takes up the complex case, WS 16.4–16.5. They are stated in the last subsection of this section with proofs that are filled in, followed by Problem 10.1 with the submitted proof (Proposition [[§68 Homomorphisms Between Representations#^prop-68-11|§68.11]]). Reference: Axler, *Linear Algebra Done Right* (matrices of linear maps, eigenvalues, trace).*
 
 Theorem [[§66 Invariant Vectors#^thm-66-10|§66.10]] computes the dimension of the invariant vectors of any representation from its character. This section applies it to the representation $\operatorname{Hom}(V, W)$, whose invariant vectors are the homomorphisms of representations $V \to W$. The result is a formula for the number of independent homomorphisms between two representations in terms of their characters. Over $\mathbb{R}$ and $\mathbb{C}$ the formula simplifies, because there $\chi_V(g^{-1})$ is $\chi_V(g)$ or its complex conjugate.
 
@@ -173,7 +173,7 @@ Written as $(g \cdot A)(w) = g\,A(g^{-1}w)$, this is Proposition [[§66 Invarian
 > [!remark] Remark: The Side of the Inverse
 > In $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$ the factor without an inverse has to be the one on the left, for the rule to be a left action: in the computation of $(gh) \ast \alpha$ in the proof of Proposition [[§68 Homomorphisms Between Representations#^prop-68-3|§68.3]](1), the factors on the left appear in the order $\rho_W(g)\,\rho_W(h)$, and the inverses restore this order on the right. That the factor on the left belongs to $W$ and not to $V$ is a consequence of the convention of writing a function to the left of its argument, $\alpha(v)$: the map that is applied last is written first.
 >
-> More generally, if $G$ acts on $V$ and a second group $H$ acts on $W$, then $G \times H$ acts on $\operatorname{Hom}(V, W)$. This was announced as a homework problem and is not written out here. The inverse on the side of $V$ is explained by the dual representation ([[§69 Dual Representations|§69]]).
+> More generally, if $G$ acts on $V$ and a second group $H$ acts on $W$, then $G \times H$ acts on $\operatorname{Hom}(V, W)$. This is Problem 10.3 of Problem Set 10; it is worked out in the last subsection of [[§70 Schur's Lemma and Multiplicities|§70]] (Definition [[§70 Schur's Lemma and Multiplicities#^def-70-3|§70.3]]). The inverse on the side of $V$ is explained by the dual representation ([[§69 Dual Representations|§69]]).
 >
 > *Source: lecture 11/13*
 
@@ -356,7 +356,7 @@ Worksheet 16.2 prints $\operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = (\o
 
 ## Characters at $g^{-1}$ over $\mathbb{R}$ and $\mathbb{C}$
 
-The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3–16.5 were not done in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof, and the complex case (WS 16.4–16.5) became Problem 10.1 of Problem Set 10. The proofs in this subsection are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary [[§69 Dual Representations#^cor-69-6|§69.6]]).
+The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3–16.5 were not done in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof, and the complex case (WS 16.4–16.5) became Problem 10.1 of Problem Set 10, which is Proposition [[§68 Homomorphisms Between Representations#^prop-68-11|§68.11]] with the submitted proof. The proofs of Proposition [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]], Proposition [[§68 Homomorphisms Between Representations#^prop-68-9|§68.9]] and Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]] are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary [[§69 Dual Representations#^cor-69-6|§69.6]]).
 
 > [!theorem] Proposition §68.8: Real Characters Are Invariant under Inversion
 > Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{R}$. Choose a basis of $V$ in which $G$ acts by orthogonal matrices (Corollary [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-7|§63.7]]). In this basis, for every $g \in G$,
@@ -416,7 +416,7 @@ The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§
 *Uses:* [[§61 Representations and Subrepresentations#^prop-61-1|§61.1]], [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]], [[§62 Direct Sums and Maschke's Theorem#^prop-62-1|§62.1]], [[§66 Invariant Vectors#^prop-66-3|§66.3]]
 
 > [!remark]- Connections
-> - Linear Algebra: an operator on a nonzero finite-dimensional complex vector space has an eigenvalue (Axler, Ch. 5). A second route to (1): the [[§15 The Minimal Polynomial#^ladr-5-24|minimal polynomial]] of $A$ divides $x^m - 1$, which has $m$ distinct roots, and an operator whose minimal polynomial has distinct roots is diagonalizable.
+> - Linear Algebra: an operator on a nonzero finite-dimensional complex vector space has an eigenvalue (Axler, Ch. 5). A second route to (1) goes through the [[§15 The Minimal Polynomial#^ladr-5-24|minimal polynomial]] of $A$, which divides $x^m - 1$; it is carried out in [[§68 Homomorphisms Between Representations#^prop-68-11|Proposition §68.11]] (PS 10.1).
 
 ![[m493-66-1.svg]]
 
@@ -451,7 +451,78 @@ The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§
 
 *Uses:* [[§64 Sesquilinear and Hermitian Forms#^prop-64-4|§64.4]], [[§64 Sesquilinear and Hermitian Forms#^def-64-4|Def. §64.4]], [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]]
 
-> [!theorem] Corollary §68.11: Dimension of $\operatorname{Hom}_G(V, W)$ over $\mathbb{R}$ and $\mathbb{C}$
+> [!theorem] Proposition §68.11: Elements of a Finite Group Act Diagonalizably over $\mathbb{C}$
+> Let $G$ be a finite group, $V$ a finite-dimensional representation of $G$ over $\mathbb{C}$, and $g \in G$.
+>
+> 1. There is a positive integer $N$ with $\rho_V(g)^N = \mathrm{id}_V$; the order of $g$ is such an $N$.
+> 2. $\rho_V(g)$ is diagonalizable, and its eigenvalues are $N$-th roots of unity. In particular they are complex numbers of norm $1$.
+> 3. In a basis of eigenvectors of $\rho_V(g)$, the matrix of $\rho_V(g^{-1})$ is the complex conjugate of the matrix of $\rho_V(g)$. Consequently $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
+>
+> *Source: PS 10.1, which takes up WS 16.4–16.5 for the linear map $\rho_V(g)$*
+
+^prop-68-11
+
+> [!proof]+ Proof
+> *Idea:* the minimal polynomial of $\rho_V(g)$ divides $z^N - 1$, which has $N$ distinct roots, all of norm $1$; and for a number of norm $1$ the inverse is the complex conjugate.
+>
+> *(Problem Set 10, Problem 10.1, as submitted.)*
+>
+> **(1)** Since $G$ is finite, $g$ has finite order: the powers $g, g^2, g^3, \dots$ lie in the finite set $G$, so $g^a = g^b$ for some $1 \le a < b$, and then $g^{b-a} = e$. Let $N \ge 1$ be the order of $g$, so $g^N = e$. Since $\rho_V \colon G \to \mathrm{GL}(V)$ is a group homomorphism,
+>
+> $$
+> \rho_V(g)^N = \rho_V(g^N) = \rho_V(e) = \mathrm{id}_V .
+> $$
+>
+> **(2)** Let $T = \rho_V(g) \in \mathcal{L}(V)$ and let $N \ge 1$ be as in (1), so $T^N = \mathrm{id}_V$. Let $p$ be the minimal polynomial of $T$, the monic polynomial of smallest degree with $p(T) = 0$ ([[§15 The Minimal Polynomial#^ladr-5-24|Axler 5.24]]).
+>
+> **$p$ has distinct roots.** The polynomial $q(z) = z^N - 1$ satisfies $q(T) = T^N - \mathrm{id}_V = 0$, so $p$ divides $q$ ([[§15 The Minimal Polynomial#^ladr-5-29|Axler 5.29]]). The roots of $z^N - 1$ in $\mathbb{C}$ are the $N$-th roots of unity $\zeta_k = e^{2\pi i k/N}$, $k = 0, 1, \dots, N - 1$, which are $N$ distinct numbers; hence
+>
+> $$
+> z^N - 1 = \prod_{k=0}^{N-1} (z - \zeta_k)
+> $$
+>
+> with distinct $\zeta_k$. Since $p$ is a monic divisor of this product, by unique factorization of polynomials over $\mathbb{C}$, $p$ is a product of distinct factors $z - \zeta_k$:
+>
+> $$
+> p(z) = (z - \lambda_1) \cdots (z - \lambda_m), \qquad \lambda_1, \dots, \lambda_m \in \{\zeta_0, \dots, \zeta_{N-1}\} \text{ distinct}.
+> $$
+>
+> **$T$ is diagonalizable.** Since the minimal polynomial of $T$ is a product of distinct linear factors, $T$ is diagonalizable ([[§17 Diagonalizable Operators#^ladr-5-62|Axler 5.62]]).
+>
+> **The eigenvalues have norm $1$.** The eigenvalues of $T$ are the zeros of its minimal polynomial ([[§15 The Minimal Polynomial#^ladr-5-27|Axler 5.27]]), namely $\lambda_1, \dots, \lambda_m$. Each is an $N$-th root of unity $e^{2\pi i k/N}$, so $|\lambda_j| = 1$.
+>
+> **(3)** Let $n = \dim V$. By (2), $V$ has a basis $v_1, \dots, v_n$ of eigenvectors of $\rho_V(g)$, say $\rho_V(g) v_j = \mu_j v_j$, with $|\mu_j| = 1$ for each $j$.
+>
+> **$\rho_V(g^{-1})$ in this basis.** Since $\rho_V$ is a homomorphism, $\rho_V(g^{-1}) = \rho_V(g)^{-1}$. Applying $\rho_V(g)^{-1}$ to $\rho_V(g) v_j = \mu_j v_j$, and using $\mu_j \neq 0$, gives
+>
+> $$
+> \rho_V(g^{-1}) v_j = \mu_j^{-1} v_j .
+> $$
+>
+> Since $|\mu_j| = 1$, we have $\mu_j \overline{\mu_j} = |\mu_j|^2 = 1$, so $\mu_j^{-1} = \overline{\mu_j}$. Hence $v_1, \dots, v_n$ is also an eigenbasis of $\rho_V(g^{-1})$, with eigenvalues $\overline{\mu_1}, \dots, \overline{\mu_n}$.
+>
+> **The identity.** With respect to the basis $v_1, \dots, v_n$, the matrices of $\rho_V(g)$ and $\rho_V(g^{-1})$ are
+>
+> $$
+> [\rho_V(g)] = \begin{pmatrix} \mu_1 & & \\ & \ddots & \\ & & \mu_n \end{pmatrix}, \qquad [\rho_V(g^{-1})] = \begin{pmatrix} \overline{\mu_1} & & \\ & \ddots & \\ & & \overline{\mu_n} \end{pmatrix} = \overline{[\rho_V(g)]} .
+> $$
+>
+> Thus $\rho_V(g^{-1}) = \overline{\rho_V(g)}$, where matrices are taken with respect to an eigenbasis of $\rho_V(g)$. In particular, taking traces, which do not depend on the basis,
+>
+> $$
+> \chi_V(g^{-1}) = \sum_{j=1}^n \overline{\mu_j} = \overline{\sum_{j=1}^n \mu_j} = \overline{\chi_V(g)} .
+> $$
+
+^pf-68-11
+
+> [!remark]- Connections
+> - Linear Algebra: the minimal polynomial, [[§15 The Minimal Polynomial#^ladr-5-24|LADR 5.24]]; its zeros are the eigenvalues, [[§15 The Minimal Polynomial#^ladr-5-27|LADR 5.27]]; $q(T) = 0$ exactly when $q$ is a multiple of it, [[§15 The Minimal Polynomial#^ladr-5-29|LADR 5.29]]; diagonalizable exactly when it is a product of distinct linear factors, [[§17 Diagonalizable Operators#^ladr-5-62|LADR 5.62]].
+
+**Transcription note (PS 10.1).** The problem set prints part (3) as $\rho_V(g^{-1}) = \overline{\rho_V(g)}$. The complex conjugate of a linear map is not defined without a basis, so the submitted solution proves the equation for the matrices in a basis of eigenvectors of $\rho_V(g)$ and deduces the statement about characters, which is WS 16.5 (Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]]). The problem set adds that the corresponding result for real representations is the one of WS 16.3 (Proposition [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]]).
+
+For the matrix $A$ of $\rho_V(g)$, parts (2) and (3) are a second proof of Matrices of Finite Order (WS 16.4, Proposition [[§68 Homomorphisms Between Representations#^prop-68-9|§68.9]]), through the minimal polynomial instead of Maschke's theorem, and of Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]].
+
+> [!theorem] Corollary §68.12: Dimension of $\operatorname{Hom}_G(V, W)$ over $\mathbb{R}$ and $\mathbb{C}$
 > Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations of $G$ over $k$.
 >
 > 1. If $k = \mathbb{R}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\chi_W(g)$.
@@ -459,11 +530,11 @@ The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§
 >
 > *Source: WS 16: the simplification announced before WS 16.3; the formulas are printed in the recap at the top of Worksheet 17, over $\mathbb{C}$ in the second form*
 
-^cor-68-11
+^cor-68-12
 
 > [!proof]+ Proof
 > *(Filled in.)* Both fields contain $\mathbb{Q}$, so Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] applies. In the second form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g)\,\chi_W(g^{-1})$, substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]]) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]]). The second form over $\mathbb{C}$ comes in the same way from the first form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g^{-1})\,\chi_W(g)$, with $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
 
-^pf-68-11
+^pf-68-12
 
 *Uses:* [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]], [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]], [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]]

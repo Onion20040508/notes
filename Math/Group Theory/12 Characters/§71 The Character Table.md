@@ -7,7 +7,7 @@ tags: [group-theory, math493]
 ---
 ← [[§70 Schur's Lemma and Multiplicities]] · ↑ [[· 12 Characters]]
 
-*Source: Lecture and Worksheet 18, *The character table* (Wed Nov 18): WS 18.1–18.4, from handwritten notes of the board.*
+*Source: Lecture and Worksheet 18, *The character table* (Wed Nov 18): WS 18.1–18.4, from handwritten notes of the board; Problem Set 10, Problem 10.4 (submitted).*
 
 Throughout this section $G$ is a finite group, $k$ is a field containing $\mathbb{Q}$, and all representations are finite-dimensional representations of $G$ over $k$. The first two problems of Worksheet 18 are results that are already proved, and each of them shortens the character table.
 
@@ -316,11 +316,11 @@ Orthogonality limits, for the first time, the number of simple representations o
 > \dim\operatorname{Hom}_G(R, R) = \langle \chi_R, \chi_R \rangle = \tfrac14\big(2^2 + 0^2 + (-2)^2 + 0^2\big) = 2.
 > $$
 >
-> 3. *Over $\mathbb{R}$* (board): $R$ is simple, and it will be shown on Friday that the three rows are the only simple representations of $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$. So in WS 18.3(1) (Proposition [[§71 The Character Table#^prop-71-5|§71.5]](1)) the value for $U = V = R$ is $\dim\operatorname{Hom}_G(R, R) = 2$, not $1$: this is the example announced in the remark [[§70 Schur's Lemma and Multiplicities#^rem-70-1|Over Other Fields the Weights Stay]] in [[§70 Schur's Lemma and Multiplicities|§70]]. There are then three simple representations and four conjugacy classes, so the inequality of WS 18.4(2) (Corollary [[§71 The Character Table#^cor-71-7|§71.7]]) can be strict.
-> 4. *Over $\mathbb{C}$* (board): the same three rules define representations over $\mathbb{C}$, with the same table. There are more representations than these, and $J^k$ acting on $\mathbb{C}^2$ is not simple; this is homework.
+> 3. *Over $\mathbb{R}$* (board): $R$ is simple (PS 10.4(1), Example [[§71 The Character Table#^ex-71-3|§71.3]](1)), and it will be shown on Friday that the three rows are the only simple representations of $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$. So in WS 18.3(1) (Proposition [[§71 The Character Table#^prop-71-5|§71.5]](1)) the value for $U = V = R$ is $\dim\operatorname{Hom}_G(R, R) = 2$, not $1$: this is the example announced in the remark [[§70 Schur's Lemma and Multiplicities#^rem-70-1|Over Other Fields the Weights Stay]] in [[§70 Schur's Lemma and Multiplicities|§70]]. There are then three simple representations and four conjugacy classes, so the inequality of WS 18.4(2) (Corollary [[§71 The Character Table#^cor-71-7|§71.7]]) can be strict.
+> 4. *Over $\mathbb{C}$* (board): the same three rules define representations over $\mathbb{C}$, with the same table. There are more representations than these, and $J^k$ acting on $\mathbb{C}^2$ is not simple; this is homework (PS 10.4(3), Example [[§71 The Character Table#^ex-71-3|§71.3]](3)).
 > 5. *The rows are orthogonal* (check, not from class): $\langle \chi_{\mathrm{triv}}, \chi_{(-1)^k} \rangle = \frac14(1 - 1 + 1 - 1) = 0$,  $\langle \chi_{\mathrm{triv}}, \chi_R \rangle = \frac14(2 + 0 - 2 + 0) = 0$,  $\langle \chi_{(-1)^k}, \chi_R \rangle = \frac14(2 - 0 - 2 - 0) = 0$, and $\langle \chi_{\mathrm{triv}}, \chi_{\mathrm{triv}} \rangle = \langle \chi_{(-1)^k}, \chi_{(-1)^k} \rangle = \frac14 \cdot 4 = 1$.
 >
-> The simplicity of $R$ over $\mathbb{R}$, a basis of $\operatorname{Hom}_G(R, R)$, and a subrepresentation of $\mathbb{C}^2$ are Problem 10.4 of Problem Set 10; they will be added after the problem set is submitted.
+> The simplicity of $R$ over $\mathbb{R}$, a basis of $\operatorname{Hom}_G(R, R)$, and a subrepresentation of $\mathbb{C}^2$ are Problem 10.4 of Problem Set 10, worked out in Example [[§71 The Character Table#^ex-71-3|§71.3]].
 >
 > *Source: lecture 11/18; part (5) not from class*
 
@@ -329,3 +329,111 @@ Orthogonality limits, for the first time, the number of simple representations o
 ![[m493-71-4.svg]]
 
 *(Not from lecture; figure added.)* The representation $R$ of Example [[§71 The Character Table#^ex-71-2|§71.2]]: $k \in \mathbb{Z}/4\mathbb{Z}$ acts on the plane by $J^k$, the rotation by $k \cdot 90^\circ$. The picture shows the images of $e_1$. The trace of the rotation by an angle $\theta$ is $2\cos\theta$, which gives the row $2$, $0$, $-2$, $0$ of the table.
+
+> [!example] Example §71.3: The Rotation Representation of $\mathbb{Z}/4\mathbb{Z}$, Worked Out
+> Let $\mathbb{Z}/4\mathbb{Z}$ act on $\mathbb{R}^2$, and by the same formula on $\mathbb{C}^2$, by $\rho(k) = J^k$ with $J = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$, as in Example [[§71 The Character Table#^ex-71-2|§71.2]].
+>
+> 1. $\mathbb{R}^2$ is a simple representation of $\mathbb{Z}/4\mathbb{Z}$.
+> 2. $\operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2) = \left\{ \left(\begin{smallmatrix} a & b \\ -b & a \end{smallmatrix}\right) : a, b \in \mathbb{R} \right\}$. It is $2$-dimensional, with basis $I$, $J$.
+> 3. $\mathbb{C}^2$ is not simple: $L = \operatorname{span}_{\mathbb{C}}\left\{\left(\begin{smallmatrix} 1 \\ -i \end{smallmatrix}\right)\right\}$ is a subrepresentation with $L \neq \{0\}$ and $L \neq \mathbb{C}^2$.
+> 4. $\mathbb{C}^2 = L \oplus L'$ with $L' = \operatorname{span}_{\mathbb{C}}\left\{\left(\begin{smallmatrix} 1 \\ i \end{smallmatrix}\right)\right\}$. On $L$ the element $k$ acts by the scalar $i^k$, and on $L'$ by $(-i)^k$.
+>
+> *Source: PS 10.4(1)–(3); part (4) is not from class*
+
+^ex-71-3
+
+> [!proof]+ Proof
+> *(Problem Set 10, Problem 10.4, as submitted.)*
+>
+> **(1)** Write $J = \rho(1) = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$, so that $J(a, b) = (-b, a)$.
+>
+> **Candidates for subrepresentations.** First, $\mathbb{R}^2 \neq 0$. A subspace of $\mathbb{R}^2$ other than $0$ and $\mathbb{R}^2$ has dimension $1$, so it is a line $L = \operatorname{span}\{(a, b)\}$ with $(a, b) \neq (0, 0)$.
+>
+> **A stable line gives a real eigenvector.** Suppose such an $L$ is a subrepresentation. A subrepresentation is stable under every $\rho(k)$, in particular under $\rho(1) = J$. Hence $J(a, b) \in L$, i.e. $J(a, b) = \lambda\,(a, b)$ for some $\lambda \in \mathbb{R}$. Since $(a, b) \neq (0, 0)$, $\lambda$ is a real eigenvalue of $J$.
+>
+> **$J$ has no real eigenvalue.** A number $\lambda \in \mathbb{R}$ is an eigenvalue of $J$ if and only if $\lambda I - J$ is not injective, if and only if $\det(\lambda I - J) = 0$. The characteristic polynomial is
+>
+> $$
+> \det(zI - J) = \det\begin{pmatrix} z & 1 \\ -1 & z \end{pmatrix} = z^2 + 1 ,
+> $$
+>
+> and for $z \in \mathbb{R}$, $z^2 + 1 \geq 1 > 0$. So $J$ has no real eigenvalue, contradicting the previous step.
+>
+> Therefore $\mathbb{R}^2$ has no subrepresentation other than $0$ and $\mathbb{R}^2$, and $\mathbb{R}^2$ is a simple representation of $\mathbb{Z}/4\mathbb{Z}$.
+>
+> **(2)** **The condition.** Here both representations are $\mathbb{R}^2$ with $\rho(k) = J^k$, with $J$ as in (1). By the definition of $\operatorname{Hom}_G(V, W)$ (Definition [[§68 Homomorphisms Between Representations#^def-68-2|§68.2]]), a linear map $\alpha \colon \mathbb{R}^2 \to \mathbb{R}^2$ lies in $\operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2)$ if and only if
+>
+> $$
+> \alpha\big(J^k v\big) = J^k\big(\alpha(v)\big) \qquad \text{for all } k \in \mathbb{Z}/4\mathbb{Z},\ v \in \mathbb{R}^2 ,
+> $$
+>
+> i.e. $\alpha J^k = J^k \alpha$ for $k = 0, 1, 2, 3$.
+>
+> **The powers of $J$.** We have
+>
+> $$
+> J^0 = I, \qquad J^1 = J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} = -I, \qquad J^3 = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = -J .
+> $$
+>
+> **Reducing to one condition.** For $k = 0, 2$, $\alpha(\pm I) = \pm\alpha = (\pm I)\alpha$ holds for every $\alpha$. For $k = 1, 3$, the condition $\alpha(-J) = (-J)\alpha$ is equivalent to $\alpha J = J\alpha$. Hence
+>
+> $$
+> \alpha \in \operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2) \iff \alpha J = J\alpha .
+> $$
+>
+> **Solving the condition.** Write $\alpha = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ with $a, b, c, d \in \mathbb{R}$. Then
+>
+> $$
+> \alpha J = \begin{pmatrix} b & -a \\ d & -c \end{pmatrix}, \qquad J\alpha = \begin{pmatrix} -c & -d \\ a & b \end{pmatrix} .
+> $$
+>
+> Comparing entries, $\alpha J = J\alpha$ if and only if $b = -c$, $-a = -d$, $d = a$ and $-c = b$, i.e. if and only if $a = d$ and $b = -c$. With $a$ and $b$ as free parameters,
+>
+> $$
+> \operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2) = \left\{ \begin{pmatrix} a & b \\ -b & a \end{pmatrix} : a, b \in \mathbb{R} \right\}, \qquad \begin{pmatrix} a & b \\ -b & a \end{pmatrix} = a\,I - b\,J .
+> $$
+>
+> **A basis.** We claim $\{I, J\}$ is a basis of $\operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2)$.
+> - *Membership.* $I$ (with $a = 1$, $b = 0$) and $J$ (with $a = 0$, $b = -1$) are of the form above.
+> - *Spanning.* Every element of $\operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2)$ equals $a\,I - b\,J$ for some $a, b \in \mathbb{R}$.
+> - *Independence.* If $s\,I + t\,J = \begin{pmatrix} s & -t \\ t & s \end{pmatrix} = 0$ with $s, t \in \mathbb{R}$, then $s = t = 0$.
+>
+> Therefore $\{I, J\}$ is a basis, and $\dim \operatorname{Hom}_{\mathbb{Z}/4\mathbb{Z}}(\mathbb{R}^2, \mathbb{R}^2) = 2$.
+>
+> **(3)** Now $\mathbb{Z}/4\mathbb{Z}$ acts on $\mathbb{C}^2$ by $\rho(k) = J^k$, with $J(a, b) = (-b, a)$ for $a, b \in \mathbb{C}$.
+>
+> **Eigenvalues of $J$.** Over $\mathbb{C}$, the characteristic polynomial factors as
+>
+> $$
+> \det(zI - J) = z^2 + 1 = (z - i)(z + i),
+> $$
+>
+> so $J$ has the eigenvalues $i$ and $-i$.
+>
+> **An eigenvector for $i$.** For $(a, b) \in \mathbb{C}^2$, $J(a, b) = i\,(a, b)$ means $(-b, a) = (ia, ib)$, i.e. $b = -ia$ and $a = ib$; the second equation follows from the first, since $ib = -i^2 a = a$. Taking $a = 1$,
+>
+> $$
+> v = \begin{pmatrix} 1 \\ -i \end{pmatrix}, \qquad Jv = \begin{pmatrix} i \\ 1 \end{pmatrix} = i \begin{pmatrix} 1 \\ -i \end{pmatrix} = i\,v .
+> $$
+>
+> **The subrepresentation.** Let $L = \operatorname{span}_{\mathbb{C}}\{v\}$. For every $k \in \mathbb{Z}/4\mathbb{Z}$, $\rho(k)v = J^k v = i^k v \in L$, so $\rho(k)(cv) = c\,i^k v \in L$ for all $c \in \mathbb{C}$. Hence $L$ is stable under every $\rho(k)$, and $L$ is a subrepresentation of $\mathbb{C}^2$.
+>
+> **Nontrivial and proper.** Since $v \neq 0$, $\dim_\mathbb{C} L = 1$, so $L \neq 0$ and $L \neq \mathbb{C}^2$. Therefore
+>
+> $$
+> L = \operatorname{span}_{\mathbb{C}}\left\{ \begin{pmatrix} 1 \\ -i \end{pmatrix} \right\}
+> $$
+>
+> is a nontrivial proper subrepresentation of $\mathbb{C}^2$, and $\mathbb{C}^2$ is not simple.
+>
+> **(4)** *(Not from class; filled in.)* With $J(a, b) = (-b, a)$, $J(1, i) = (-i, 1) = -i\,(1, i)$. So $v' = (1, i)$ is an eigenvector of $J$ for the eigenvalue $-i$, and $J^kv' = (-i)^kv'$: the line $L'$ is a subrepresentation on which $k$ acts by $(-i)^k$. By (3), $k$ acts on $L$ by $i^k$. The vectors $(1, -i)$ and $(1, i)$ are linearly independent, since $\det\left(\begin{smallmatrix} 1 & 1 \\ -i & i \end{smallmatrix}\right) = 2i \neq 0$, so they form a basis of $\mathbb{C}^2$ and $\mathbb{C}^2 = L \oplus L'$.
+
+^pf-ex-71-3
+
+*Uses:* [[§68 Homomorphisms Between Representations#^def-68-2|Def. §68.2]]
+
+![[m493-71-5.svg]]
+
+*(Not from lecture; figure added.)* Part (1) of Example [[§71 The Character Table#^ex-71-3|§71.3]] as a picture. $J$ turns the plane by $90^\circ$, so it maps every line through $0$ to the perpendicular line. No line is mapped to itself, which is the geometric content of “$J$ has no real eigenvalue”.
+
+Example [[§71 The Character Table#^ex-71-3|§71.3]] fits the results of [[§70 Schur's Lemma and Multiplicities|§70]]. Over $\mathbb{R}$ the representation is simple with $\dim\operatorname{Hom} = 2$, so the conclusion of Schur's Lemma over $\mathbb{C}$ (Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]]) fails over $\mathbb{R}$, and the converse of the Simplicity Test (Lemma [[§70 Schur's Lemma and Multiplicities#^lem-70-11|§70.11]]) fails over $\mathbb{R}$ as well. Over $\mathbb{C}$ the same matrices give a sum of two non-isomorphic one-dimensional representations, with characters $i^k$ and $(-i)^k$ whose sum is the row $2$, $0$, $-2$, $0$, and $\dim\operatorname{Hom} = 1^2 + 1^2 = 2$ (Corollary [[§70 Schur's Lemma and Multiplicities#^cor-70-9|§70.9]]). The homomorphisms $k \mapsto i^k$ and $k \mapsto (-i)^k$ are the further representations over $\mathbb{C}$ mentioned on the board. The problem set suggests, as an additional challenge, the same questions for $\mathbb{Z}/m\mathbb{Z}$ acting on $\mathbb{R}^2$ by rotations by $2\pi k/m$, $m \geq 3$; this is not worked out here.
