@@ -393,7 +393,7 @@ An element of $\mathbb{R} \oplus \mathbb{R}^2$ is a pair $(a, (b, c))$ with $a \
 \begin{rembox}[Direct Sum vs.\ Sum; Comparison with Axler]\label{rem:direct-sum-vs-sum-comparison-axler}
 The direct sum $X \oplus Y$ is a set of \emph{pairs}; it is what other texts call the (external) direct sum or the product $X \times Y$. It is defined for any two linear spaces, which need not sit inside a common ambient space. By contrast, $S + T$ is a set of \emph{vectors} in a fixed ambient space $X$.
 
-This differs from the definition in Axler, where the direct sum $U_1 \oplus U_2$ is an \emph{internal} notion: it is the sum $U_1 + U_2$ of two subspaces of a common space, with the extra requirement that every element decomposes uniquely as $u_1 + u_2$. The convention here follows Lax. When the two internal summands are subspaces of a common $X$ with $U_1 \cap U_2 = \{0\}$, the two notions agree up to the isomorphism $(u_1, u_2) \mapsto u_1 + u_2$ (Proposition~\ref{prop:internal-external} below; isomorphisms are defined in \S\ref{sec:maps-convex}, Definition~\ref{def:isomorphism}), but the course uses the external definition throughout.
+This differs from the definition in Axler, where the direct sum $U_1 \oplus U_2$ is an \emph{internal} notion: it is the sum $U_1 + U_2$ of two subspaces of a common space, with the extra requirement that every element decomposes uniquely as $u_1 + u_2$. The convention here follows Lax. When the two internal summands are subspaces of a common $X$ with $U_1 \cap U_2 = \{0\}$, the two notions agree up to the isomorphism $(u_1, u_2) \mapsto u_1 + u_2$ (Proposition~\ref{prop:internal-external} below; isomorphisms are defined in \ref{sec:maps-convex}, Definition~\ref{def:isomorphism}), but the course uses the external definition throughout.
 \end{rembox}
 
 \begin{propbox}[Internal and External Direct Sums]\boxlabel{prop:internal-external}
@@ -401,7 +401,7 @@ Let $U$ and $V$ be linear subspaces of a linear space $X$, and define
 \[
 \Phi : U \oplus V \to U + V, \qquad \Phi(u, v) = u + v .
 \]
-Then $\Phi$ is linear and onto (linear maps and isomorphisms are defined in \S\ref{sec:maps-convex}, Definitions~\ref{def:linear-map} and~\ref{def:isomorphism}), and the following are equivalent:
+Then $\Phi$ is linear and onto (linear maps and isomorphisms are defined in \ref{sec:maps-convex}, Definitions~\ref{def:linear-map} and~\ref{def:isomorphism}), and the following are equivalent:
 \begin{enumerate}[label=(\roman*)]
     \item $\Phi$ is an isomorphism;
     \item $U \cap V = \{0\}$;
@@ -599,7 +599,7 @@ In $\mathbb{R}^n$, one may think of $X / Y$ as playing the role of the orthogona
 
 \subsection{Complements and the Isomorphism $X \cong X/Y \oplus Y$}\label{subsec:complements}
 
-Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material is from HW1. It uses linear maps and isomorphisms, which are defined in \S\ref{sec:maps-convex} (Definitions~\ref{def:linear-map} and~\ref{def:isomorphism}, Lemma~\ref{lem:inverse-iso}).
+Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material is from HW1. It uses linear maps and isomorphisms, which are defined in \ref{sec:maps-convex} (Definitions~\ref{def:linear-map} and~\ref{def:isomorphism}, Lemma~\ref{lem:inverse-iso}).
 
 \begin{defbox}[Complement]\boxlabel{def:complement}
 A linear subspace $W \subset X$ is a \textbf{complement} of $Y$ if
@@ -859,7 +859,7 @@ On $\mathbb{R}^n$ linear functionals are completely explicit because a basis is 
 
 \subsection{$\mathbb{R}^n$ and the Plane}
 
-Chapter~1 uses $\mathbb{R}^n$, mostly the plane, as the picture for each algebraic notion. Example~\ref{ex:rn} is the model linear space and Example~\ref{ex:r-oplus-r2-r3} the model direct sum. In $\mathbb{R}^2$ a span is a line (Example~\ref{ex:span-single-vector}), a quotient is the family of parallel translates of a line (Example~\ref{ex:geometry-equivalence-classes}, read as an orthogonal complement in the remark \emph{Quotients and Orthogonal Complements} in \S\ref{sec:quotients-complements}), a complement is any other line (Example~\ref{ex:complements-line-plane}), and a convex hull fills in a star (Example~\ref{ex:convex-hull-star}). Example~\ref{ex:functionals-rn} shows that every linear functional on $\mathbb{R}^n$ is a dot product; the remark \emph{Why Abstract Tools are Needed} in \S\ref{sec:maps-convex} says why a general space needs Hahn--Banach instead.
+Chapter~1 uses $\mathbb{R}^n$, mostly the plane, as the picture for each algebraic notion. Example~\ref{ex:rn} is the model linear space and Example~\ref{ex:r-oplus-r2-r3} the model direct sum. In $\mathbb{R}^2$ a span is a line (Example~\ref{ex:span-single-vector}), a quotient is the family of parallel translates of a line (Example~\ref{ex:geometry-equivalence-classes}, read as an orthogonal complement in the remark \emph{Quotients and Orthogonal Complements} in \ref{sec:quotients-complements}), a complement is any other line (Example~\ref{ex:complements-line-plane}), and a convex hull fills in a star (Example~\ref{ex:convex-hull-star}). Example~\ref{ex:functionals-rn} shows that every linear functional on $\mathbb{R}^n$ is a dot product; the remark \emph{Why Abstract Tools are Needed} in \ref{sec:maps-convex} says why a general space needs Hahn--Banach instead.
 
 \noindent\textit{Chain:} Chapter~2 (\ref{sec:rev-ch2}) $\rightarrow$
 
@@ -975,7 +975,7 @@ For each of the three examples, the set $\{x \in \mathbb{R}^2 : p(x) < 1\}$ is:
 \end{tikzpicture}
 \end{center}
 
-All three sets are convex. This is not a coincidence: there is a correspondence between convex sets and positive homogeneous subadditive functions, made precise in \S\ref{sec:gauge} (Corollary~\ref{cor:sublevel}). In finite dimensions the picture already suggests it.
+All three sets are convex. This is not a coincidence: there is a correspondence between convex sets and positive homogeneous subadditive functions, made precise in \ref{sec:gauge} (Corollary~\ref{cor:sublevel}). In finite dimensions the picture already suggests it.
 \end{exbox}
 
 \subsection{The Hahn--Banach Theorem (Real Version)}
@@ -1048,7 +1048,7 @@ A general linear space has no dot product. But it does have linear functionals, 
 \end{rembox}
 
 \begin{rembox}[Convergence Without Topology]\label{rem:convergence-without-topology}
-A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement ``$x_n \to x$'' has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This is developed in \S\ref{sec:weak} (weak convergence).
+A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement ``$x_n \to x$'' has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This is developed in \ref{sec:weak} (weak convergence).
 \end{rembox}
 
 \subsection{A First Application: One Functional per Vector}
@@ -2254,14 +2254,14 @@ Let $(M, d)$ be a metric space. For Cauchy sequences $\{x_n\}, \{y_n\}$ in $M$ p
 \]
 \begin{enumerate}[label=(\alph*)]
     \item The limit exists and depends only on the classes, and $\bar d$ is a metric on $\overline{M}$.
-    \item $\bar d(x, y) = d(x, y)$ for $x, y \in M$ (identified with constant sequences), so the identification of $M$ with a subset of $\overline{M}$ preserves distances (it is an isometry, defined in \S\ref{sec:completion-normed}, Definition~\ref{def:isometry}).
+    \item $\bar d(x, y) = d(x, y)$ for $x, y \in M$ (identified with constant sequences), so the identification of $M$ with a subset of $\overline{M}$ preserves distances (it is an isometry, defined in \ref{sec:completion-normed}, Definition~\ref{def:isometry}).
     \item $M$ is dense in $\overline{M}$: if $\xi = [\{x_n\}]$, then $x_k \to \xi$ in $\overline{M}$ as $k \to \infty$.
     \item $(\overline{M}, \bar d)$ is complete.
 \end{enumerate}
 \end{propbox}
 
 \begin{proof}
-(Not covered in lecture; added because Example~\ref{ex:completions-subsets-rn}, the remark \emph{How Do We Know We Have Not Added Too Much?} in \S\ref{sec:completion-normed} and the normed case (Theorem~\ref{thm:completion-normed}(e)) rely on these facts.)
+(Not covered in lecture; added because Example~\ref{ex:completions-subsets-rn}, the remark \emph{How Do We Know We Have Not Added Too Much?} in \ref{sec:completion-normed} and the normed case (Theorem~\ref{thm:completion-normed}(e)) rely on these facts.)
 
 (a) By the triangle inequality, applied twice, $|d(x_n, y_n) - d(x_m, y_m)| \le d(x_n, x_m) + d(y_n, y_m)$, so $\{d(x_n, y_n)\}$ is a Cauchy sequence of real numbers and converges. If $\{x_n\} \sim \{x_n'\}$ and $\{y_n\} \sim \{y_n'\}$, the same estimate gives $|d(x_n, y_n) - d(x_n', y_n')| \le d(x_n, x_n') + d(y_n, y_n') \to 0$, so the limit depends only on the classes. Symmetry and the triangle inequality hold termwise and pass to the limit, and $\bar d \ge 0$. Finally $\bar d([\{x_n\}], [\{y_n\}]) = 0$ iff $d(x_n, y_n) \to 0$ iff $\{x_n\} \sim \{y_n\}$ iff the two classes are equal.
 
@@ -2325,7 +2325,7 @@ so
 \end{proof}
 
 \begin{exbox}[Completions of Subsets of $\mathbb{R}^n$]\boxlabel{ex:completions-subsets-rn}
-For subsets $M$ of $\mathbb{R}^n$ with the usual metric, completion is closure: $\mathbb{R}^n$ is complete (Corollary~\ref{cor:findim-complete} in \S\ref{sec:new-from-old}), so by Proposition~\ref{prop:identify-completion-metric} with $Z = \mathbb{R}^n$ and $J$ the inclusion, the completion of $M$ is identified with the closure of $M$ in $\mathbb{R}^n$. In the two cases below $\overline{M}$ is written for that closure.
+For subsets $M$ of $\mathbb{R}^n$ with the usual metric, completion is closure: $\mathbb{R}^n$ is complete (Corollary~\ref{cor:findim-complete} in \ref{sec:new-from-old}), so by Proposition~\ref{prop:identify-completion-metric} with $Z = \mathbb{R}^n$ and $J$ the inclusion, the completion of $M$ is identified with the closure of $M$ in $\mathbb{R}^n$. In the two cases below $\overline{M}$ is written for that closure.
 \begin{itemize}
     \item $M = (0, 1)$ with $d(x,y) = |x - y|$: $\overline{M} = [0, 1]$. The missing limits are the endpoints, each the limit of Cauchy sequences such as $(1/n)$ and $(1 - 1/n)$.
     \item $M = B_1(0) = \{ x \in \mathbb{R}^2 : \|x\| < 1 \}$, the open unit disk: $\overline{M} = \{ \|x\| \le 1 \}$, the closed disk.
@@ -2812,7 +2812,7 @@ C_1\|x\|' \le C_1 \sum_{i=1}^n \|a_i e_i\|' \le \sum_{i=1}^n |a_i| = \|x\|_1 .
 \]
 Given $\varepsilon > 0$, take $\delta = C_1\varepsilon$: if $\|x - y\|_1 < \delta$ then $\bigl|\,\|x\|' - \|y\|'\,\bigr| < \varepsilon$. So $\|\cdot\|' : X \to \mathbb{R}$ is continuous when distances in $X$ are measured by $\|\cdot\|_1$.
 
-\textbf{Step 5: the unit sphere of $\|\cdot\|_1$ is sequentially compact.} Let $S = \{x \in X : \|x\|_1 = 1\}$ and let $\{x^{(k)}\} \subset S$, $x^{(k)} = \sum_i a^{(k)}_i e_i$. Each coordinate sequence is bounded, $|a^{(k)}_i| \le \|x^{(k)}\|_1 = 1$. By Bolzano--Weierstrass in $\mathbb{F}$ applied $n$ times --- extract a subsequence along which $a^{(k)}_1$ converges, then a further subsequence along which $a^{(k)}_2$ converges, and so on --- there is a subsequence $\{x^{(k_r)}\}$ with $a^{(k_r)}_i \to a_i$ for every $i = 1, \ldots, n$. Put $x = \sum_i a_i e_i$. Then $\|x^{(k_r)} - x\|_1 = \sum_i |a^{(k_r)}_i - a_i| \to 0$ (a finite sum of terms tending to $0$), and $\|x\|_1 = \sum_i |a_i| = \lim_r \sum_i |a^{(k_r)}_i| = 1$, so $x \in S$. Thus every sequence in $S$ has a subsequence converging in $\|\cdot\|_1$ to a point of $S$, which is what sequential compactness of $S$ means (defined in \S\ref{sec:noncompact}, Definition~\ref{def:sequentially-compact}).
+\textbf{Step 5: the unit sphere of $\|\cdot\|_1$ is sequentially compact.} Let $S = \{x \in X : \|x\|_1 = 1\}$ and let $\{x^{(k)}\} \subset S$, $x^{(k)} = \sum_i a^{(k)}_i e_i$. Each coordinate sequence is bounded, $|a^{(k)}_i| \le \|x^{(k)}\|_1 = 1$. By Bolzano--Weierstrass in $\mathbb{F}$ applied $n$ times --- extract a subsequence along which $a^{(k)}_1$ converges, then a further subsequence along which $a^{(k)}_2$ converges, and so on --- there is a subsequence $\{x^{(k_r)}\}$ with $a^{(k_r)}_i \to a_i$ for every $i = 1, \ldots, n$. Put $x = \sum_i a_i e_i$. Then $\|x^{(k_r)} - x\|_1 = \sum_i |a^{(k_r)}_i - a_i| \to 0$ (a finite sum of terms tending to $0$), and $\|x\|_1 = \sum_i |a_i| = \lim_r \sum_i |a^{(k_r)}_i| = 1$, so $x \in S$. Thus every sequence in $S$ has a subsequence converging in $\|\cdot\|_1$ to a point of $S$, which is what sequential compactness of $S$ means (defined in \ref{sec:noncompact}, Definition~\ref{def:sequentially-compact}).
 
 \textbf{Step 6: $\|\cdot\|'$ attains a positive minimum on $S$.} Let $c = \inf_{x \in S} \|x\|' \ge 0$. Choose $x^{(k)} \in S$ with $\|x^{(k)}\|' \to c$, and by Step 5 a subsequence $x^{(k_r)} \to x^* \in S$ in $\|\cdot\|_1$. By Step 4, $\|x^{(k_r)}\|' \to \|x^*\|'$, so $\|x^*\|' = c$. Since $x^* \in S$ we have $x^* \ne 0$, hence $c = \|x^*\|' > 0$ by positivity of $\|\cdot\|'$.
 
@@ -2828,7 +2828,7 @@ The two inequalities are of different depth. $C_1\|x\|' \le \|x\|_1$ is pure alg
 \end{rembox}
 
 \begin{exbox}[The Unit Sphere of $\ell^1$ is Not Sequentially Compact]\boxlabel{ex:r1-ell1-unit-sphere-not-compact}
-This example uses $\ell^1$ (Definition~\ref{def:lp}, Chapter~4) and sequential compactness (Definition~\ref{def:sequentially-compact}, \S\ref{sec:noncompact}) ahead of their definitions. The unit sphere $\{a \in \ell^1 : \|a\|_1 = 1\}$ contains the unit vectors $e_1, e_2, \ldots$ with $\|e_i - e_j\|_1 = 2$ for $i \neq j$, and $\{e_i\}$ has no convergent subsequence. So Step 5 of the proof of Theorem~\ref{prop:norms-equiv} has no infinite-dimensional analogue.
+This example uses $\ell^1$ (Definition~\ref{def:lp}, Chapter~4) and sequential compactness (Definition~\ref{def:sequentially-compact}, \ref{sec:noncompact}) ahead of their definitions. The unit sphere $\{a \in \ell^1 : \|a\|_1 = 1\}$ contains the unit vectors $e_1, e_2, \ldots$ with $\|e_i - e_j\|_1 = 2$ for $i \neq j$, and $\{e_i\}$ has no convergent subsequence. So Step 5 of the proof of Theorem~\ref{prop:norms-equiv} has no infinite-dimensional analogue.
 
 %% FILL-IN: the "no convergent subsequence" step is written out.
 \textit{(Justification filled in.)} $e_i$ has a single nonzero entry $1$, so $\|e_i\|_1 = 1$; for $i \neq j$, $e_i - e_j$ has exactly two nonzero entries, $1$ and $-1$, so $\|e_i - e_j\|_1 = 2$. A convergent subsequence $\{e_{i_r}\}$ would be Cauchy (Proposition~\ref{prop:conv-basic}(b)), so $\|e_{i_r} - e_{i_s}\|_1 < 1$ for all large $r \neq s$; but distinct terms are at distance $2$.
@@ -2984,19 +2984,19 @@ Well-definedness, homogeneity and subadditivity were proved in Theorem~\ref{thm:
 
 \subsection{$\mathbb{R}^n$}
 
-The functions $p_1, p_2, p_3$ of Chapter~2 become the norms $\|\cdot\|_2$, $\|\cdot\|_\infty$, $\|\cdot\|_1$, joined by $\|\cdot\|_p$ (Example~\ref{ex:norms-rn}); their unit balls are the pictures of the norms (the remark \emph{Relation to the Functions $p$ of Chapter 2} in \S\ref{sec:normed}). The plane separates algebraic from metric interior points (Example~\ref{ex:interior-point-not-metric-interior-point}) and shows completion as closure (Example~\ref{ex:completions-subsets-rn}). Theorem~\ref{prop:norms-equiv} makes all norms on $\mathbb{R}^n$ equivalent and Corollary~\ref{cor:findim-complete} makes $\mathbb{R}^n$ complete under each: the two facts that fail in infinite dimensions.
+The functions $p_1, p_2, p_3$ of Chapter~2 become the norms $\|\cdot\|_2$, $\|\cdot\|_\infty$, $\|\cdot\|_1$, joined by $\|\cdot\|_p$ (Example~\ref{ex:norms-rn}); their unit balls are the pictures of the norms (the remark \emph{Relation to the Functions $p$ of Chapter 2} in \ref{sec:normed}). The plane separates algebraic from metric interior points (Example~\ref{ex:interior-point-not-metric-interior-point}) and shows completion as closure (Example~\ref{ex:completions-subsets-rn}). Theorem~\ref{prop:norms-equiv} makes all norms on $\mathbb{R}^n$ equivalent and Corollary~\ref{cor:findim-complete} makes $\mathbb{R}^n$ complete under each: the two facts that fail in infinite dimensions.
 
 \noindent\textit{Chain:} $\leftarrow$ Chapter~2 (\ref{sec:rev-ch2}) $\cdot$ Chapter~4 (\ref{sec:rev-ch4}) $\rightarrow$
 
 \subsection{$C[a,b]$ and $C^k[a,b]$}
 
-$C[a,b]$ with the maximum norm is the first infinite-dimensional Banach space (Theorem~\ref{thm:Cab-banach}). The same set with an $L^p$ norm, $1 \le p < \infty$, is a different normed space, with completion $L^p[a,b]$ (the remark \emph{The Norm Decides, Not the Set} in \S\ref{sec:completion-normed}; proved in Chapter~4). Likewise $C^2[a,b]$ with a $C^1$ norm (Example~\ref{ex:c2-a-b-c1-norm}) is not complete, and its completion is $C^1[a,b]$ (Proposition~\ref{prop:C2-incomplete}). Corollary~\ref{cor:r1-complete-incomplete-norms-inequivalent} draws the consequence: $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ on $C[a,b]$ are not equivalent (Example~\ref{ex:r1-sup-l1-not-equivalent-on-cab}).
+$C[a,b]$ with the maximum norm is the first infinite-dimensional Banach space (Theorem~\ref{thm:Cab-banach}). The same set with an $L^p$ norm, $1 \le p < \infty$, is a different normed space, with completion $L^p[a,b]$ (the remark \emph{The Norm Decides, Not the Set} in \ref{sec:completion-normed}; proved in Chapter~4). Likewise $C^2[a,b]$ with a $C^1$ norm (Example~\ref{ex:c2-a-b-c1-norm}) is not complete, and its completion is $C^1[a,b]$ (Proposition~\ref{prop:C2-incomplete}). Corollary~\ref{cor:r1-complete-incomplete-norms-inequivalent} draws the consequence: $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ on $C[a,b]$ are not equivalent (Example~\ref{ex:r1-sup-l1-not-equivalent-on-cab}).
 
 \noindent\textit{Chain:} Chapter~4 (\ref{sec:rev-ch4}) $\rightarrow$
 
 \subsection{$\ell^p$}
 
-$\ell^p$ is defined only in Chapter~4, but Chapter~3 already uses it. The remark \emph{Comparison with the $\ell^p$ Proof} in \S\ref{sec:completion-normed} compares the completion proof with the completeness proof for $\ell^p$; on $\ell^1$ the norms $\|\cdot\|_1$ and $\|\cdot\|_2$ are not equivalent (the remark \emph{Finite Dimension is Necessary} in \S\ref{sec:new-from-old}); and the finitely supported sequences $c_{00}$ form a subspace of $\ell^p$ that is not closed (Example~\ref{ex:r1-c00-not-closed-in-ellp}).
+$\ell^p$ is defined only in Chapter~4, but Chapter~3 already uses it. The remark \emph{Comparison with the $\ell^p$ Proof} in \ref{sec:completion-normed} compares the completion proof with the completeness proof for $\ell^p$; on $\ell^1$ the norms $\|\cdot\|_1$ and $\|\cdot\|_2$ are not equivalent (the remark \emph{Finite Dimension is Necessary} in \ref{sec:new-from-old}); and the finitely supported sequences $c_{00}$ form a subspace of $\ell^p$ that is not closed (Example~\ref{ex:r1-c00-not-closed-in-ellp}).
 
 \noindent\textit{Chain:} $\leftarrow$ Chapter~1 (\ref{sec:rev-ch1}) $\cdot$ Chapter~4 (\ref{sec:rev-ch4}) $\rightarrow$
 
@@ -3021,11 +3021,11 @@ For $x, y \in \mathbb{R}^n$, with $\|x\| = \bigl(x_1^2 + \cdots + x_n^2\bigr)^{1
 \end{propbox}
 
 \begin{proof}
-Recalled without proof in lecture. The inequality is the case $p = q = 2$ of H\"older's inequality in $\mathbb{F}^n$ (Corollary~\ref{cor:r1-holder-finite-dim} in \S\ref{sec:holder}, whose proof uses Young's inequality and not this proposition): by the triangle inequality for finite sums and that corollary,
+Recalled without proof in lecture. The inequality is the case $p = q = 2$ of H\"older's inequality in $\mathbb{F}^n$ (Corollary~\ref{cor:r1-holder-finite-dim} in \ref{sec:holder}, whose proof uses Young's inequality and not this proposition): by the triangle inequality for finite sums and that corollary,
 \[
 |x \cdot y| = \Bigl| \sum_{i=1}^n x_i y_i \Bigr| \le \sum_{i=1}^n |x_i y_i| \le \|x\|_2\, \|y\|_2 = \|x\|\, \|y\|.
 \]
-It is also the case $X = \mathbb{R}^n$, $(x, y) = x \cdot y$, of the Cauchy--Schwarz inequality in an inner product space (Theorem~\ref{thm:cauchy-schwarz} in \S\ref{sec:cauchy-schwarz}). The standard direct arguments are via the elementary inequality below or the discriminant of $t \mapsto \|x + ty\|^2$.
+It is also the case $X = \mathbb{R}^n$, $(x, y) = x \cdot y$, of the Cauchy--Schwarz inequality in an inner product space (Theorem~\ref{thm:cauchy-schwarz} in \ref{sec:cauchy-schwarz}). The standard direct arguments are via the elementary inequality below or the discriminant of $t \mapsto \|x + ty\|^2$.
 \end{proof}
 
 \begin{lembox}[{{Arithmetic--Geometric Mean, Two Variables}}]\boxlabel{lem:arithmetic-geometric-mean-two-variables}
@@ -3904,7 +3904,7 @@ Here $C[a,b]$ is the space from which $L^p$ is built. Continuous functions are n
 
 \subsection{$L^p$}
 
-\ref{sec:completion-L1-sec} repeats the construction for functions, with the integral as a weighted sum (the remark \emph{The Integral as a Sum} in \S\ref{sec:completion-L1-sec}), and the results pair off:
+\ref{sec:completion-L1-sec} repeats the construction for functions, with the integral as a weighted sum (the remark \emph{The Integral as a Sum} in \ref{sec:completion-L1-sec}), and the results pair off:
 \begin{center}
 \begin{tabular}{lll}
  & sequences & functions \\ \hline
@@ -3914,7 +3914,7 @@ the space & Definition~\ref{def:lp} & Definition~\ref{def:Lp} \\
 Banach & Theorem~\ref{thm:lp-complete} & Theorem~\ref{thm:Lp-complete}
 \end{tabular}
 \end{center}
-What has no sequence counterpart is density (Theorem~\ref{thm:density}), and with it the first case of the pattern ``true for $p < \infty$, false for $p = \infty$'' (the remark \emph{$L^\infty$ is Different} in \S\ref{sec:completion-L1-sec}).
+What has no sequence counterpart is density (Theorem~\ref{thm:density}), and with it the first case of the pattern ``true for $p < \infty$, false for $p = \infty$'' (the remark \emph{$L^\infty$ is Different} in \ref{sec:completion-L1-sec}).
 
 \noindent\textit{Chain:} $\leftarrow$ Chapter~3 (\ref{sec:rev-ch3}) $\cdot$ Chapter~5 (\ref{sec:rev-ch5}) $\rightarrow$
 
@@ -3926,7 +3926,7 @@ What has no sequence counterpart is density (Theorem~\ref{thm:density}), and wit
 
 \chapter{Inner Product Spaces}
 
-A norm measures length. An inner product measures length \emph{and} angle, and in particular gives a meaning to perpendicularity --- the structure whose absence forced the quotient space to stand in for the orthogonal complement in \S\ref{subsec:quotient} and forced Riesz's lemma to stand in for an orthogonal unit vector in \S\ref{sec:noncompact}. Spaces carrying one are much closer to $\mathbb{R}^n$ than a general normed space is, and are the setting for the strongest results of the subject.
+A norm measures length. An inner product measures length \emph{and} angle, and in particular gives a meaning to perpendicularity --- the structure whose absence forced the quotient space to stand in for the orthogonal complement in \S\ref{subsec:quotient} and forced Riesz's lemma to stand in for an orthogonal unit vector in \ref{sec:noncompact}. Spaces carrying one are much closer to $\mathbb{R}^n$ than a general normed space is, and are the setting for the strongest results of the subject.
 
 \section{Definition and Examples}\label{sec:inner-def}
 
@@ -4118,7 +4118,7 @@ An inner product space that is complete in the induced norm $\|x\| = (x,x)^{1/2}
 \end{defbox}
 
 \begin{exbox}[Hilbert Spaces]\boxlabel{ex:hilbert-spaces}
-$\mathbb{R}^n$ and $\mathbb{C}^n$ with the dot product are Hilbert spaces, being finite-dimensional (Corollary~\ref{cor:findim-complete}); so are $\ell^2$ and $L^2(\Omega)$ with the inner products of \S\ref{sec:inner-def}, complete by Theorems~\ref{thm:lp-complete} and~\ref{thm:Lp-complete}.
+$\mathbb{R}^n$ and $\mathbb{C}^n$ with the dot product are Hilbert spaces, being finite-dimensional (Corollary~\ref{cor:findim-complete}); so are $\ell^2$ and $L^2(\Omega)$ with the inner products of \ref{sec:inner-def}, complete by Theorems~\ref{thm:lp-complete} and~\ref{thm:Lp-complete}.
 \end{exbox}
 
 % Lecture 7 (2026-09-22)
@@ -4140,7 +4140,7 @@ which makes sense for every $\alpha$ because $f$ is $C^\infty$, and is again in 
 \[
 (f, g) = \sum_{|\alpha| \le k} \int_\Omega \partial^\alpha f(x)\, \overline{\partial^\alpha g(x)}\,dx .
 \]
-Each summand is the $L^2$ inner product of two functions in $C_c^\infty$, so this is an inner product on $X$ (a finite sum of inner products with the same sesquilinearity and symmetry; positivity from the $\alpha = 0$ term). The induced norm is $\|f\|^2 = \sum_{|\alpha| \le k} \|\partial^\alpha f\|_{L^2}^2$, which controls $f$ and all its derivatives up to order $k$ in $L^2$. For $k = 0$ and $\Omega = \mathbb{R}^n$ this is the previous example with $C_c^\infty$ in place of $C_c$. $X$ is not complete; its completion is a \textbf{Sobolev space}, denoted $H^k_0(\Omega)$, the subscript recording that it comes from functions with compact support in $\Omega$. Lax (\S5.1, example (g)) instead completes the $C^\infty$ functions on $\Omega$ for which the norm is finite, with no support condition, and calls the result $W^{k,p}$; for $p = 2$ it is written $H^k(\Omega)$. Informally, elements of either completion are functions whose derivatives up to order $k$ lie in $L^2$; making this precise requires weak derivatives, which are developed in \S\ref{sec:sobolev} (Lecture 11).
+Each summand is the $L^2$ inner product of two functions in $C_c^\infty$, so this is an inner product on $X$ (a finite sum of inner products with the same sesquilinearity and symmetry; positivity from the $\alpha = 0$ term). The induced norm is $\|f\|^2 = \sum_{|\alpha| \le k} \|\partial^\alpha f\|_{L^2}^2$, which controls $f$ and all its derivatives up to order $k$ in $L^2$. For $k = 0$ and $\Omega = \mathbb{R}^n$ this is the previous example with $C_c^\infty$ in place of $C_c$. $X$ is not complete; its completion is a \textbf{Sobolev space}, denoted $H^k_0(\Omega)$, the subscript recording that it comes from functions with compact support in $\Omega$. Lax (\S5.1, example (g)) instead completes the $C^\infty$ functions on $\Omega$ for which the norm is finite, with no support condition, and calls the result $W^{k,p}$; for $p = 2$ it is written $H^k(\Omega)$. Informally, elements of either completion are functions whose derivatives up to order $k$ lie in $L^2$; making this precise requires weak derivatives, which are developed in \ref{sec:sobolev} (Lecture 11).
 
 Motivation: if $f$ is a velocity, $\int |f|^2$ is an energy, and a physical process with finite, conserved energy naturally lives in a space of this type; the completion is what makes limits of approximate solutions available. This is the setting of the modern theory of partial differential equations, but the course stays with functional analysis.
 \laxref{\S5.1, example (g)}
@@ -4734,7 +4734,7 @@ Squaring and rearranging,
 \end{proof}
 
 \begin{rembox}[Where $g$ Comes From]\label{rem:where-g-comes}
-The boundary conditions fix two inner products of $h = f''$ with fixed functions: $\int_a^b h = f'(b) - f'(a) = -1$, and, by Taylor's formula with integral remainder, $\int_a^b (b - x)\,h(x)\,dx = f(b) - f(a) - f'(a)L = -L$. Let $Y = \operatorname{span}\{1, x\}$, a closed (finite-dimensional) subspace of $L^2[a,b]$, and decompose $h = h_Y + h_\perp$ with $h_Y \in Y$, $h_\perp \perp Y$. The two constraints involve only $h_Y$, while $\|h\|^2 = \|h_Y\|^2 + \|h_\perp\|^2 \ge \|h_Y\|^2$ by Pythagoras, proved in \S\ref{sec:onb} (Lemma~\ref{lem:pythagoras}). So the minimum of $\|h\|$ under the constraints is attained by an element of $Y$ --- a linear function --- and that is why testing against a linear $g$ loses nothing. This is the projection theorem at work: the constraint set is a closed affine subspace, and its point closest to $0$ lies in the orthogonal complement of the directions along it. It is also a first example of the calculus of variations recast in a Hilbert space.
+The boundary conditions fix two inner products of $h = f''$ with fixed functions: $\int_a^b h = f'(b) - f'(a) = -1$, and, by Taylor's formula with integral remainder, $\int_a^b (b - x)\,h(x)\,dx = f(b) - f(a) - f'(a)L = -L$. Let $Y = \operatorname{span}\{1, x\}$, a closed (finite-dimensional) subspace of $L^2[a,b]$, and decompose $h = h_Y + h_\perp$ with $h_Y \in Y$, $h_\perp \perp Y$. The two constraints involve only $h_Y$, while $\|h\|^2 = \|h_Y\|^2 + \|h_\perp\|^2 \ge \|h_Y\|^2$ by Pythagoras, proved in \ref{sec:onb} (Lemma~\ref{lem:pythagoras}). So the minimum of $\|h\|$ under the constraints is attained by an element of $Y$ --- a linear function --- and that is why testing against a linear $g$ loses nothing. This is the projection theorem at work: the constraint set is a closed affine subspace, and its point closest to $0$ lies in the orthogonal complement of the directions along it. It is also a first example of the calculus of variations recast in a Hilbert space.
 \end{rembox}
 
 % ============================================================================
@@ -5301,7 +5301,7 @@ By Theorem~\ref{thm:fourier}, $\{e_n\}_{n \in \mathbb{Z}}$ is an orthonormal bas
 
 \roadmark{Stage: inner products}{Thread: dimension. Every Hilbert space has an orthonormal basis; the countable ones are exactly the bases of separable spaces.}
 
-Both examples of \S\ref{sec:onb} (Example~\ref{ex:standard-basis-l-2} and Theorem~\ref{thm:fourier}) have \emph{countable} orthonormal bases. The next results show that every Hilbert space has an orthonormal basis --- which by itself is of little use, because there are too many --- and, more usefully, that the countable ones are exactly the bases of separable spaces.
+Both examples of \ref{sec:onb} (Example~\ref{ex:standard-basis-l-2} and Theorem~\ref{thm:fourier}) have \emph{countable} orthonormal bases. The next results show that every Hilbert space has an orthonormal basis --- which by itself is of little use, because there are too many --- and, more usefully, that the countable ones are exactly the bases of separable spaces.
 
 % Lecture 9 (2026-09-29)
 
@@ -5499,15 +5499,15 @@ The theorem was stated in lecture for the real case: $H$ is isomorphic either to
 
 \subsection{$\mathbb{R}^n$ and $\mathbb{C}^n$}
 
-The dot product is the model inner product, with the conjugate on the second slot over $\mathbb{C}$ (Example~\ref{ex:euclidean-spaces}). Being finite-dimensional, $\mathbb{R}^n$ and $\mathbb{C}^n$ are Hilbert spaces (Example~\ref{ex:hilbert-spaces}), and for $n \ge 2$ the norm $\|\cdot\|_p$ comes from an inner product only for $p = 2$ (Corollary~\ref{cor:only-p2}). In $\mathbb{R}^n$ a complete orthonormal set is a basis (the remark \emph{Complete Sets and Complete Spaces} in \S\ref{sec:onb}); \S\ref{sec:onb} asks what replaces this in a Hilbert space.
+The dot product is the model inner product, with the conjugate on the second slot over $\mathbb{C}$ (Example~\ref{ex:euclidean-spaces}). Being finite-dimensional, $\mathbb{R}^n$ and $\mathbb{C}^n$ are Hilbert spaces (Example~\ref{ex:hilbert-spaces}), and for $n \ge 2$ the norm $\|\cdot\|_p$ comes from an inner product only for $p = 2$ (Corollary~\ref{cor:only-p2}). In $\mathbb{R}^n$ a complete orthonormal set is a basis (the remark \emph{Complete Sets and Complete Spaces} in \ref{sec:onb}); \ref{sec:onb} asks what replaces this in a Hilbert space.
 
-\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\S\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\S\ref{sec:rev-ch6}) $\rightarrow$
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
 
 \subsection{$C[a,b]$ and $C^2[a,b]$}
 
-The $L^2$ inner product restricted to $C[a,b]$ proves a sharp integral inequality for $C^2$ functions by Cauchy--Schwarz (Proposition~\ref{prop:sharp-integral}); the remark \emph{Where $g$ Comes From} in \S\ref{sec:projection} finds the test function by orthogonal projection onto $\operatorname{span}\{1, x\}$.
+The $L^2$ inner product restricted to $C[a,b]$ proves a sharp integral inequality for $C^2$ functions by Cauchy--Schwarz (Proposition~\ref{prop:sharp-integral}); the remark \emph{Where $g$ Comes From} in \ref{sec:projection} finds the test function by orthogonal projection onto $\operatorname{span}\{1, x\}$.
 
-\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\S\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\S\ref{sec:rev-ch6}) $\rightarrow$
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
 
 \subsection{$\ell^p$, $\ell^2$, $\ell^\infty$ and $c_0$}
 
@@ -5623,7 +5623,7 @@ $\ell^\infty$ is not separable.
 
 The shift on $\ell^2$ preserves the inner product without being onto (Example~\ref{ex:isometry-not-isomorphism}), and every infinite-dimensional separable Hilbert space is isomorphic to $\ell^2$ (Theorem~\ref{thm:sep-classification}).
 
-\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\S\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\S\ref{sec:rev-ch6}) $\rightarrow$
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
 
 \subsection{$L^p$ and $L^2$}
 
@@ -5734,7 +5734,7 @@ The hypothesis $m(E) > 0$ is added here; without it the proposition fails (Examp
 Let $E \subset \mathbb{R}^n$ be measurable with $m(E) = 0$, and identify functions equal almost everywhere, as in the proof of Proposition~\ref{prop:Linfty-nonsep}. Then $L^\infty(E) = \{0\}$, which is separable. Indeed, for every measurable $f$ on $E$ the set $\{x \in E : f(x) \neq 0\}$ is contained in $E$, a set of measure zero, so $f = 0$ almost everywhere and its class is $0$. The countable set $\{0\}$ is then dense in $L^\infty(E) = \{0\}$.
 \end{exbox}
 
-\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\S\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\S\ref{sec:rev-ch6}) $\rightarrow$
+\noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\ref{sec:rev-ch6}) $\rightarrow$
 
 \subsection{Even and Odd Functions}
 
@@ -5744,9 +5744,9 @@ In $L^2[-1,1]$ the even and the odd functions are closed subspaces, each the ort
 
 \subsection{The Fourier Basis}
 
-The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of $L^2[0,2\pi]$ (Theorem~\ref{thm:fourier}). Read through Theorem~\ref{thm:onbasis-equiv}, this is the $L^2$ theory of Fourier series (Corollary~\ref{cor:fourier-series-L2}), and taking coefficients identifies $L^2[0,2\pi]$ with $\ell^2(\mathbb{Z})$ (the remark \emph{The Isomorphism Takes Coordinates} in \S\ref{sec:onb-existence}).
+The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of $L^2[0,2\pi]$ (Theorem~\ref{thm:fourier}). Read through Theorem~\ref{thm:onbasis-equiv}, this is the $L^2$ theory of Fourier series (Corollary~\ref{cor:fourier-series-L2}), and taking coefficients identifies $L^2[0,2\pi]$ with $\ell^2(\mathbb{Z})$ (the remark \emph{The Isomorphism Takes Coordinates} in \ref{sec:onb-existence}).
 
-\noindent\textit{Chain:} Chapter~6, the Fourier transform (Example~\ref{ex:fourier-L1}, \S\ref{sec:rev-ch6}) $\cdot$ Chapter~\ref{ch:qm}, a particle on a ring (Example~\ref{ex:particle-ring}) $\rightarrow$
+\noindent\textit{Chain:} Chapter~6, the Fourier transform (Example~\ref{ex:fourier-L1}, \ref{sec:rev-ch6}) $\cdot$ Chapter~\ref{ch:qm}, a particle on a ring (Example~\ref{ex:particle-ring}) $\rightarrow$
 
 
 % ============================================================================
@@ -5872,7 +5872,7 @@ If $X = \{0\}$ both sides are $0$. Otherwise, by linearity $Tx - Tx' = T(x - x')
 \end{proof}
 
 \begin{rembox}\label{rem:bounded-maps}
-For $Y = \mathbb{F}$ this is Proposition~\ref{prop:bounded-continuous} on linear functionals, and $\|T\|$ is then the dual norm of Definition~\ref{def:dual}. The bounded operators on a Hilbert space $H$ of the companion chapter (\S\ref{sec:qm-completeness}) are the case $X = Y = H$. A bounded linear map is even Lipschitz continuous, uniformly on all of $X$ (Corollary~\ref{cor:bounded-linear-map-lipschitz}).
+For $Y = \mathbb{F}$ this is Proposition~\ref{prop:bounded-continuous} on linear functionals, and $\|T\|$ is then the dual norm of Definition~\ref{def:dual}. The bounded operators on a Hilbert space $H$ of the companion chapter (\ref{sec:qm-completeness}) are the case $X = Y = H$. A bounded linear map is even Lipschitz continuous, uniformly on all of $X$ (Corollary~\ref{cor:bounded-linear-map-lipschitz}).
 \end{rembox}
 
 % Lecture 10 (2026-10-01)
@@ -6396,7 +6396,7 @@ Let $X$ be a normed linear space over $\mathbb{F}$. A sesquilinear form $B : X \
 \end{defbox}
 
 \begin{rembox}[The Plan of the Proof]\label{rem:plan-proof}
-The theorem below says that a bounded coercive sesquilinear form $B$ on a Hilbert space $H$ represents every $\ell \in H'$ as $\ell(x) = B(x, y)$, with a unique $y \in H$. The plan of its proof: by Theorem~\ref{thm:form-operator}, sesquilinearity and boundedness (conditions (1)--(3) below) give $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$. By the Riesz representation theorem, $\ell \in H'$ if and only if $\ell(x) = (x, a)$ for some $a \in H$. So the theorem says: for every $a \in H$ there is a unique $y$ with $Ay = a$. That is, \emph{$A$ is one-to-one and onto}, and the coercivity (condition (4) below) is what is used to prove it. Lax--Milgram is a main tool for solving elliptic PDE (\S\ref{sec:dirichlet}).
+The theorem below says that a bounded coercive sesquilinear form $B$ on a Hilbert space $H$ represents every $\ell \in H'$ as $\ell(x) = B(x, y)$, with a unique $y \in H$. The plan of its proof: by Theorem~\ref{thm:form-operator}, sesquilinearity and boundedness (conditions (1)--(3) below) give $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$. By the Riesz representation theorem, $\ell \in H'$ if and only if $\ell(x) = (x, a)$ for some $a \in H$. So the theorem says: for every $a \in H$ there is a unique $y$ with $Ay = a$. That is, \emph{$A$ is one-to-one and onto}, and the coercivity (condition (4) below) is what is used to prove it. Lax--Milgram is a main tool for solving elliptic PDE (\ref{sec:dirichlet}).
 \end{rembox}
 
 \begin{thmbox}[Lax--Milgram]\boxlabel{thm:lax-milgram}
@@ -6516,7 +6516,7 @@ The \textbf{Sobolev space} $W^{k,p}(\Omega)$ is the completion (Definition~\ref{
 \end{defbox}
 
 \begin{rembox}\label{rem:sobolev}
-Every $\partial^\alpha f$ of a $C^\infty$ function is again $C^\infty$, and bounded on the compact set $\overline{\Omega}$, so every term is finite. The case $p = \infty$ can be treated as well. The two claims, that this is a norm and that $X$ is not complete, were left to the class; the first is proved after Definition~\ref{def:sobolev-norm}, and the example of \S\ref{sec:weak-examples} shows how completeness fails.
+Every $\partial^\alpha f$ of a $C^\infty$ function is again $C^\infty$, and bounded on the compact set $\overline{\Omega}$, so every term is finite. The case $p = \infty$ can be treated as well. The two claims, that this is a norm and that $X$ is not complete, were left to the class; the first is proved after Definition~\ref{def:sobolev-norm}, and the example of \ref{sec:weak-examples} shows how completeness fails.
 \end{rembox}
 
 \begin{exbox}[{{$k = 0$: the Completion is $L^p$}}]\boxlabel{ex:k-0-completion-lp}
@@ -7486,7 +7486,7 @@ Hence $\|L\| = \|\ell\|_Y$.
 \end{proof}
 
 \begin{rembox}[{{The Pairing $\langle x, \ell \rangle$ Again}}]\label{rem:pairing-again}
-One often writes $\ell(x) = \langle x, \ell \rangle$ for $x \in X$, $\ell \in X'$ (as in \S\ref{sec:dual}). The expression is linear in $x$, and also linear in $\ell$, since $(c_1 \ell_1 + c_2 \ell_2)(x) = c_1 \ell_1(x) + c_2 \ell_2(x)$; so it is like a bilinear form on $X \times X'$, and it is convenient to think of $X$ and $X'$ as being in a dual relation. The notation comes from Hilbert space, where the dual is the space itself in the following sense: by the Riesz representation theorem every $\ell \in H'$ is $\ell(x) = (x, a)$ for some $a \in H$, and $H'$ is identified with $H$ through $a \leftrightarrow \ell_a$ (Corollary~\ref{cor:riesz-map}).
+One often writes $\ell(x) = \langle x, \ell \rangle$ for $x \in X$, $\ell \in X'$ (as in \ref{sec:dual}). The expression is linear in $x$, and also linear in $\ell$, since $(c_1 \ell_1 + c_2 \ell_2)(x) = c_1 \ell_1(x) + c_2 \ell_2(x)$; so it is like a bilinear form on $X \times X'$, and it is convenient to think of $X$ and $X'$ as being in a dual relation. The notation comes from Hilbert space, where the dual is the space itself in the following sense: by the Riesz representation theorem every $\ell \in H'$ is $\ell(x) = (x, a)$ for some $a \in H$, and $H'$ is identified with $H$ through $a \leftrightarrow \ell_a$ (Corollary~\ref{cor:riesz-map}).
 %% ADDED: last sentence (not said in lecture).
 Over $\mathbb{C}$ the two pairings differ slightly: $\langle x, \ell \rangle$ is linear in $\ell$, while $(x, a)$ is conjugate-linear in $a$; correspondingly, the Riesz map $a \mapsto \ell_a$ is conjugate-linear.
 \end{rembox}
@@ -8703,7 +8703,7 @@ Differentiation is the test case for boundedness. With the $C^m$ norm on the dom
 
 \subsection{$L^p$, $L^2$ and $\ell^2$}
 
-The Fourier transform is a bounded map $L^1(\mathbb{R}^n) \to L^\infty(\mathbb{R}^n)$ with norm at most $1$ (Example~\ref{ex:fourier-L1}). By the Riesz representation theorem, $(L^2)' = L^2$ and $(\ell^2)' = \ell^2$ (Example~\ref{ex:L2-dual}); this is a Hilbert-space phenomenon (the remark \emph{Not Every Space is its Own Dual} in \S\ref{sec:dual}), and for $1 \le p < \infty$ the dual of $L^p$ is $L^{p'}$ (Theorem~\ref{thm:Lp-dual}).
+The Fourier transform is a bounded map $L^1(\mathbb{R}^n) \to L^\infty(\mathbb{R}^n)$ with norm at most $1$ (Example~\ref{ex:fourier-L1}). By the Riesz representation theorem, $(L^2)' = L^2$ and $(\ell^2)' = \ell^2$ (Example~\ref{ex:L2-dual}); this is a Hilbert-space phenomenon (the remark \emph{Not Every Space is its Own Dual} in \ref{sec:dual}), and for $1 \le p < \infty$ the dual of $L^p$ is $L^{p'}$ (Theorem~\ref{thm:Lp-dual}).
 
 Lecture~12 used $L^2$ twice more. The Dirichlet problem is solved in $H^1_0(\Omega)$, a completion inside $L^2$, where the source term $f \in L^2(\Omega)$ gives the bounded functional $v \mapsto \int_\Omega f v$ (Theorem~\ref{thm:dirichlet-weak}); and the Radon--Nikodym theorem applies the Riesz representation theorem in $L^2(\mu + \nu)$ for an abstract measure (Theorem~\ref{thm:radon-nikodym}).
 
@@ -9820,7 +9820,7 @@ In numerical analysis the three conditions have names. $M_n x \to Mx$ for every 
 \chapter{Weak Convergence}\label{ch:weak}
 %% >>> ADDED: chapter introduction (Claude)
 
-In finite dimensions every bounded sequence has a convergent subsequence; in infinite dimensions this fails (Theorem~\ref{thm:ball-noncompact}). This chapter weakens the notion of convergence, testing a sequence only against bounded linear functionals, to recover some of the compactness that is lost. The price is that weak limits are less well behaved: they need not respect norms or products. \S\ref{sec:weak-compact} collects the gain: bounded sequences have weak-$*$ convergent subsequences in the dual of a separable space and weakly convergent subsequences in a reflexive space, and closed convex sets in a reflexive space have closest points. \S\ref{sec:op-convergence} carries the modes of convergence over to sequences of operators, and \S\ref{sec:transpose} introduces the transpose of a bounded map, which respects weak convergence of operators but not strong convergence.
+In finite dimensions every bounded sequence has a convergent subsequence; in infinite dimensions this fails (Theorem~\ref{thm:ball-noncompact}). This chapter weakens the notion of convergence, testing a sequence only against bounded linear functionals, to recover some of the compactness that is lost. The price is that weak limits are less well behaved: they need not respect norms or products. \ref{sec:weak-compact} collects the gain: bounded sequences have weak-$*$ convergent subsequences in the dual of a separable space and weakly convergent subsequences in a reflexive space, and closed convex sets in a reflexive space have closest points. \ref{sec:op-convergence} carries the modes of convergence over to sequences of operators, and \ref{sec:transpose} introduces the transpose of a bounded map, which respects weak convergence of operators but not strong convergence. \ref{sec:analytic} tests analyticity in the same two ways, in the norm and through functionals, and there the two notions agree (Dunford's theorem). \ref{sec:spectrum} uses the language of the chapter for a new question: for which complex numbers $\lambda$ the map $\lambda I - M$ is invertible. The exceptional $\lambda$ form the spectrum of $M$, which replaces the eigenvalues of a matrix.
 
 %% <<< END ADDED
 
@@ -9882,6 +9882,31 @@ So $x_0 = z_0$.
 \end{proof}
 
 If a sequence could converge weakly to two different limits, the notion would make no sense.
+
+%% >>> ADDED: HW10, Problem 1 (statement from the homework sheet; proof by Claude)
+\begin{propbox}[Weak and Strong Convergence Agree in Finite Dimensions]\boxlabel{prop:weak-findim}
+Let $X$ be a finite-dimensional normed linear space over $\mathbb{F}$, $\{x_n\}_{n=1}^\infty \subset X$ and $x_0 \in X$. Then
+\[
+x_n \rightharpoonup x_0 \qquad \text{if and only if} \qquad \operatorname*{s-lim}_{n \to \infty} x_n = x_0 .
+\]
+\end{propbox}
+
+\begin{proof}
+\textit{(HW10, Problem 1. Not from lecture; filled in.)} ($\Leftarrow$) is Proposition~\ref{prop:weak-basic}(1), which holds in every normed linear space.
+
+($\Rightarrow$) If $X = \{0\}$ there is nothing to prove. Otherwise let $e_1, \ldots, e_d$ be a basis of $X$. Every $x \in X$ has a unique expansion
+\[
+x = c_1(x)\, e_1 + \cdots + c_d(x)\, e_d ,
+\]
+and each coordinate $c_j : X \to \mathbb{F}$ is a linear functional: the expansion of $ax + by$ is $\sum_j \bigl( a\, c_j(x) + b\, c_j(y) \bigr) e_j$, by uniqueness. A linear functional on a finite-dimensional normed space is bounded (Proposition~\ref{prop:findim-functionals-bounded}), so $c_j \in X'$ for $j = 1, \ldots, d$. Assume $x_n \rightharpoonup x_0$. Then $c_j(x_n) \to c_j(x_0)$ as $n \to \infty$, for each $j$. By the triangle inequality,
+\[
+\|x_n - x_0\| = \Bigl\| \sum_{j=1}^d \bigl( c_j(x_n) - c_j(x_0) \bigr) e_j \Bigr\| \le \sum_{j=1}^d |c_j(x_n) - c_j(x_0)|\, \|e_j\| \to 0 \qquad (n \to \infty) ,
+\]
+a finite sum of sequences that tend to $0$. So $x_n \to x_0$ in the norm.
+\end{proof}
+
+In a finite-dimensional space, testing with the $d$ coordinate functionals already controls the norm. In infinite dimensions no finite set of functionals does, and weak convergence is a new notion; the examples of the next subsection show sequences that converge weakly and not strongly.
+%% <<< END ADDED
 
 \subsection{Examples}
 
@@ -9961,6 +9986,33 @@ i.e.\ $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$; the factor $\frac{1}{\sq
 Why $\sin(mx) \rightharpoonup 0$: the product $g(x) \sin(mx)$ for the test function $g(x) = \frac{x}{2\pi}$ (dashed: $\pm g$), with the positive part blue and the negative part red. As $m$ grows, each blue lobe is followed by a red lobe of almost the same area, and the integral, here exactly $-\frac1m$, tends to $0$; meanwhile $\|\sin(mx)\|_{L^2} = \sqrt\pi$ for every $m$.
 %% <<< END ADDED
 
+%% >>> ADDED: HW10, Problem 3 (statement from the homework sheet; proof and the example after it by Claude)
+\begin{propbox}[{{Weak Convergence in $C[a,b]$ Implies Pointwise Convergence}}]\boxlabel{prop:weak-C-pointwise}
+Let $x_n, x \in C[a,b]$ for $n \in \mathbb{N}$, with the maximum norm, and assume $x_n \rightharpoonup x$ in $C[a,b]$. Then
+\[
+\lim_{n \to \infty} x_n(t) = x(t) \qquad \text{for every } t \in [a,b] .
+\]
+\end{propbox}
+
+\begin{proof}
+\textit{(HW10, Problem 3. Not from lecture; filled in.)} Fix $t \in [a,b]$ and let $\delta_t : C[a,b] \to \mathbb{F}$, $\delta_t(y) = y(t)$, be the evaluation at $t$. It is linear, since $(c_1 y_1 + c_2 y_2)(t) = c_1 y_1(t) + c_2 y_2(t)$, and bounded, since
+\[
+|\delta_t(y)| = |y(t)| \le \max_{s \in [a,b]} |y(s)| = \|y\| \qquad \text{for all } y \in C[a,b] .
+\]
+So $\delta_t \in (C[a,b])'$, with $\|\delta_t\| \le 1$. By the definition of weak convergence (Definition~\ref{def:weak-conv}), applied to $\ell = \delta_t$, $x_n(t) = \delta_t(x_n) \to \delta_t(x) = x(t)$.
+\end{proof}
+
+Strong convergence in $C[a,b]$ is uniform convergence. Weak convergence lies between uniform and pointwise convergence: it implies pointwise convergence, with the evaluations $\delta_t$ as test functionals. The proposition can be used to show that a sequence has no weak limit.
+
+\begin{exbox}[{{The Powers $t^n$ Have No Weak Limit in $C[0,1]$}}]\boxlabel{ex:tn-no-weak-limit}
+\textit{(Not from lecture; filled in.)} Let $x_n(t) = t^n$ in $C[0,1]$. Then $\|x_n\| = 1$ for all $n$, and
+\[
+\lim_{n \to \infty} x_n(t) = \begin{cases} 0, & 0 \le t < 1, \\ 1, & t = 1 . \end{cases}
+\]
+If $x_n \rightharpoonup x$ for some $x \in C[0,1]$, then by Proposition~\ref{prop:weak-C-pointwise} $x(t) = 0$ for $t < 1$ and $x(1) = 1$, which is not a continuous function. So $\{x_n\}$ does not converge weakly in $C[0,1]$. The same argument applies to every subsequence $\{t^{n_k}\}$, which has the same pointwise limit: the bounded sequence $\{t^n\}$ has no weakly convergent subsequence in $C[0,1]$.
+\end{exbox}
+%% <<< END ADDED
+
 \subsection{Criteria and the Norm of a Weak Limit}
 
 \begin{thmbox}[{{Criterion for Weak Convergence}}]\boxlabel{thm:weak-criterion}
@@ -10001,6 +10053,34 @@ Now take the supremum over all $\ell \in X'$ with $\|\ell\| \le 1$: by Theorem~\
 
 In Example~\ref{ex:en-weak}, $\|e_n\| = 1$ for all $n$ while the weak limit $0$ has norm $0$: the inequality can be strict. Norm can be lost in a weak limit, but not gained.
 
+%% >>> ADDED: HW10, Problem 5 (statement from the homework sheet; proof by Claude)
+\begin{propbox}[{{Weak Convergence and Convergence of the Norms in a Hilbert Space}}]\boxlabel{prop:weak-norm-strong}
+Let $H$ be a Hilbert space, $\{x_n\}_{n=1}^\infty \subset H$ and $x_0 \in H$. Then $x_n \to x_0$ strongly if and only if
+\[
+\|x_n\| \to \|x_0\| \qquad \text{and} \qquad x_n \rightharpoonup x_0 \quad \text{in } H .
+\]
+\end{propbox}
+
+\begin{proof}
+\textit{(HW10, Problem 5. Not from lecture; filled in.)} ($\Rightarrow$) Assume $\|x_n - x_0\| \to 0$. Then $x_n \rightharpoonup x_0$ by Proposition~\ref{prop:weak-basic}(1), and by the reverse triangle inequality $\bigl| \|x_n\| - \|x_0\| \bigr| \le \|x_n - x_0\| \to 0$.
+
+($\Leftarrow$) Assume $\|x_n\| \to \|x_0\|$ and $x_n \rightharpoonup x_0$. Expanding the square of the norm with the inner product,
+\[
+\|x_n - x_0\|^2 = (x_n - x_0, x_n - x_0) = \|x_n\|^2 - (x_n, x_0) - (x_0, x_n) + \|x_0\|^2 = \|x_n\|^2 - 2 \operatorname{Re} (x_n, x_0) + \|x_0\|^2 ,
+\]
+because $(x_0, x_n) = \overline{(x_n, x_0)}$. The map $\ell(x) = (x, x_0)$ is a bounded linear functional on $H$ (Theorem~\ref{thm:riesz-rep}(1)), so weak convergence gives
+\[
+(x_n, x_0) = \ell(x_n) \to \ell(x_0) = (x_0, x_0) = \|x_0\|^2 .
+\]
+Together with $\|x_n\|^2 \to \|x_0\|^2$,
+\[
+\|x_n - x_0\|^2 \to \|x_0\|^2 - 2 \|x_0\|^2 + \|x_0\|^2 = 0 . \qedhere
+\]
+\end{proof}
+
+So in a Hilbert space the only thing that separates weak from strong convergence is a loss of norm in the limit: by Theorem~\ref{thm:weak-lsc}, $\|x_0\| \le \liminf_n \|x_n\|$ always, and the convergence is strong exactly when no norm is lost, $\|x_n\| \to \|x_0\|$. For $e_n \rightharpoonup 0$ in $\ell^2$ the norms are $1$ and the norm of the limit is $0$. The proof does not use the completeness of $H$; it holds in every inner product space.
+%% <<< END ADDED
+
 \subsection{Mazur's Theorem}
 
 The norm bound says how large the weak limit can be; Mazur's theorem says where it is. Its proof uses the hyperplane separation theorem of Chapter~2, in a form adapted to normed spaces, which comes first.
@@ -10015,8 +10095,8 @@ Let $X$ be a normed linear space over $\mathbb{R}$, $K$ a closed convex set in $
 \end{thmbox}
 
 \begin{proof}
-%% FILL-IN: the proof along Wu's hint (left to the class).
-If $K = \varnothing$, take $\ell = 0$ and $a = -1$. Otherwise let $d = \inf_{y \in K} \|x_0 - y\|$; then $d > 0$, since otherwise there are $y_k \in K$ with $y_k \to x_0$, and $K$ closed would give $x_0 \in K$. Fix $0 < \varepsilon < d$ and let
+%% FILL-IN: the proof along Wu's hint (left to the class; later set as HW10, Problem 4).
+(The proof was left to the class and then set as HW10, Problem 4; it is filled in here.) If $K = \varnothing$, take $\ell = 0$ and $a = -1$. Otherwise let $d = \inf_{y \in K} \|x_0 - y\|$; then $d > 0$, since otherwise there are $y_k \in K$ with $y_k \to x_0$, and $K$ closed would give $x_0 \in K$. Fix $0 < \varepsilon < d$ and let
 \[
 K_\varepsilon = \{ x \in X : \text{there is } y \in K \text{ with } \|x - y\| < \varepsilon \} .
 \]
@@ -10170,7 +10250,7 @@ As $\ell \in (L^1([0, 2\pi]))'$ is arbitrary, $\sin(mx) \rightharpoonup 0$ in $L
 \end{exbox}
 
 \begin{exbox}[Weak Limits Do Not Respect Products]\boxlabel{ex:weak-product-fails}
-\textit{(Posed in lecture as a homework question. The example is not from lecture; filled in.)} If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, H\"older gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem~\ref{thm:holder-fn} to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$.
+\textit{(Posed in lecture as a homework question, then set as HW10, Problem 2. The example is not from lecture; filled in.)} If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, H\"older gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem~\ref{thm:holder-fn} to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$.
 
 \emph{The example.} Take $[a, b] = [0, 2\pi]$, $p_1 = p_2 = 2$, so $p = 1$, and $f_n(x) = g_n(x) = \sin(nx)$. By Example~\ref{ex:sin-weak}, $f_n \rightharpoonup 0$ and $g_n \rightharpoonup 0$ in $L^2([0, 2\pi])$, so $f_0 = g_0 = 0$ and $f_0 g_0 = 0$. The product is
 \[
@@ -10340,7 +10420,7 @@ Let $X$ be a Banach space, $\{\ell_n\}_{n=1}^\infty \subset X'$, $\ell_0 \in X'$
 For $\|x\| \le 1$, $|\ell_0(x)| = \lim_n |\ell_n(x)| = \liminf_n |\ell_n(x)| \le \liminf_n \|\ell_n\|\, \|x\| \le \liminf_n \|\ell_n\|$. Take the supremum over $\|x\| \le 1$.
 \end{proof}
 
-The remaining question is under what conditions a bounded sequence has a weak-$*$ convergent subsequence; it is taken up in \S\ref{sec:weak-compact}.
+The remaining question is under what conditions a bounded sequence has a weak-$*$ convergent subsequence; it is taken up in \ref{sec:weak-compact}.
 
 % ============================================================================
 % SECTION: WEAK SEQUENTIAL COMPACTNESS (Lecture 19)
@@ -10358,7 +10438,7 @@ The remaining question is under what conditions a bounded sequence has a weak-$*
 
 Three modes of convergence are now available, in decreasing strength. In a normed linear space $X$, strong convergence implies weak convergence (Proposition~\ref{prop:weak-basic}(1)). In a dual space $X'$, weak convergence implies weak-$*$ convergence (Proposition~\ref{prop:weak-implies-weak-star-dual}(1)), and the two coincide when $X$ is reflexive, $X = X''$ (part (2) of that proposition).
 
-The question left open at the end of \S\ref{sec:weak}: let $\{x_n\}_{n=1}^\infty$ be a bounded sequence in $X$. Is there a subsequence $\{x_{n_j}\}_{j=1}^\infty$ that converges weakly, or (when $X$ is a dual space) in the weak-$*$ sense, to some $x_0 \in X$? For strong convergence the answer is no as soon as $X$ is infinite-dimensional, since the closed unit ball is then not compact (Theorem~\ref{thm:ball-noncompact}). In $\ell^2$, for instance, the bounded sequence $\{e_n\}$ of Example~\ref{ex:en-weak} has $\|e_n - e_m\| = \sqrt{2}$ for $n \neq m$, so none of its subsequences is Cauchy.
+The question left open at the end of \ref{sec:weak}: let $\{x_n\}_{n=1}^\infty$ be a bounded sequence in $X$. Is there a subsequence $\{x_{n_j}\}_{j=1}^\infty$ that converges weakly, or (when $X$ is a dual space) in the weak-$*$ sense, to some $x_0 \in X$? For strong convergence the answer is no as soon as $X$ is infinite-dimensional, since the closed unit ball is then not compact (Theorem~\ref{thm:ball-noncompact}). In $\ell^2$, for instance, the bounded sequence $\{e_n\}$ of Example~\ref{ex:en-weak} has $\|e_n - e_m\| = \sqrt{2}$ for $n \neq m$, so none of its subsequences is Cauchy.
 
 \begin{defbox}[Weakly Sequentially Compact Set]\boxlabel{def:weakly-seq-compact}
 Let $X$ be a normed linear space and $C$ a subset of $X$. $C$ is \textbf{weakly sequentially compact} if every sequence $\{x_n\}_{n=1}^\infty \subset C$ has a subsequence $\{x_{n_j}\}_{j=1}^\infty$ and a point $x_0 \in C$ such that $x_{n_j} \rightharpoonup x_0$ as $j \to \infty$ (Definition~\ref{def:weak-conv}).
@@ -10983,7 +11063,7 @@ Let $X, Y$ be normed linear spaces and $M \in \mathcal{L}(X, Y)$. The \textbf{tr
 \[
 M'\ell = \ell M , \qquad \text{that is,} \qquad (M'\ell)(x) = \ell(Mx) \quad \text{for all } x \in X, \ \ell \in Y' .
 \]
-In the notation $\ell(x) = \langle x, \ell \rangle$ for the action of a functional (\S\ref{sec:duality}),
+In the notation $\ell(x) = \langle x, \ell \rangle$ for the action of a functional (\ref{sec:duality}),
 \[
 \langle Mx, \ell \rangle = \langle x, M'\ell \rangle \qquad \text{for all } x \in X, \ \ell \in Y' .
 \]
@@ -11015,7 +11095,7 @@ The transpose reverses the arrows. A vector $x$ is moved forward by $M$ and pair
 
 \subsection{Hilbert--Schmidt Operators}
 
-Measure-theoretic facts are used freely in this subsection, as in \S\ref{sec:radon-nikodym}; with $\Omega = \mathbb{R}^n$ and Lebesgue measure nothing beyond Fubini's theorem is needed.
+Measure-theoretic facts are used freely in this subsection, as in \ref{sec:radon-nikodym}; with $\Omega = \mathbb{R}^n$ and Lebesgue measure nothing beyond Fubini's theorem is needed.
 
 \begin{defbox}[Hilbert--Schmidt Operator]\boxlabel{def:hilbert-schmidt}
 Let $(\Omega, \mathcal{B}, \mu)$ be a $\sigma$-finite measure space (for instance $\Omega = \mathbb{R}^n$ with Lebesgue measure), and
@@ -11507,7 +11587,7 @@ Both parts come from the defining identity $\langle Mx, \ell \rangle = \langle x
 \end{proof}
 
 \begin{rembox}[{{The Solvability of $Mx = y$}}]\label{rem:closure-range-solvability}
-For a matrix $A$ this is the familiar criterion: $Ax = y$ has a solution if and only if $y$ is orthogonal to every solution $z$ of $A^T z = 0$; the range of a matrix is a finite-dimensional subspace, hence closed (Corollary~\ref{cor:findim-closed}). In infinite dimensions only the closure of the range is described by $N(M')$, and the criterion of (2) needs the range to be closed, which is the subject of the closed range criterion (Proposition~\ref{prop:closed-range}). This answers the question of existence in \S\ref{sec:solving} in terms of the transpose.
+For a matrix $A$ this is the familiar criterion: $Ax = y$ has a solution if and only if $y$ is orthogonal to every solution $z$ of $A^T z = 0$; the range of a matrix is a finite-dimensional subspace, hence closed (Corollary~\ref{cor:findim-closed}). In infinite dimensions only the closure of the range is described by $N(M')$, and the criterion of (2) needs the range to be closed, which is the subject of the closed range criterion (Proposition~\ref{prop:closed-range}). This answers the question of existence in \ref{sec:solving} in terms of the transpose.
 \end{rembox}
 
 %% >>> ADDED: figure (not from lecture)
@@ -11611,6 +11691,700 @@ Since this holds for all $x \in X$, $(NM)'\ell = M'(N'\ell)$; since it holds for
 \end{proof}
 
 % ============================================================================
+% SECTION: WEAK AND STRONG ANALYTICITY (Lecture 21, first part)
+% Lecture 21 (2026-11-17). Source: the handwritten notes of the lecture (five pages, dated 11/17); no recording.
+% Checked against Lax 11.4 (the two definitions, Theorem 4), read in the book.
+% ============================================================================
+
+\section{Weak and Strong Analyticity}\label{sec:analytic}
+
+\roadmark{Stage: maps}{Thread: functionals. A Banach-space-valued function of a complex variable is analytic as soon as every bounded linear functional of it is (Dunford): Cauchy's integral formula for each functional, then the uniform boundedness principle.}
+
+\textit{Lecture 21 (Tue Nov 17), first part. Source: the handwritten notes of the lecture; there is no recording. The steps that the notes leave out, and the items marked as such, are filled in. The section was checked against Lax \S11.4.}
+
+%% >>> ADDED: opening paragraph (Claude)
+The next section studies $(\lambda I - M)^{-1}$ as a function of the complex number $\lambda$; its values are bounded linear maps, elements of the Banach space $\mathcal{L}(X, X)$. To use complex analysis for such a function one has to say what ``analytic'' means when the values lie in a Banach space. As for convergence (\ref{sec:weak}), there are two candidates: one uses the norm, the other tests with bounded linear functionals. For convergence the two notions differ. For analyticity they agree, and this is the theorem of this section.
+%% <<< END ADDED
+
+\subsection{Analytic Functions with Values in a Banach Space}
+
+Let $D \subset \mathbb{C}$ be an open set. Recall that a function $f : D \to \mathbb{C}$ is \textbf{analytic} on $D$ if the limit
+\[
+\lim_{z \to z_0} \frac{f(z) - f(z_0)}{z - z_0}
+\]
+exists at every $z_0 \in D$.
+
+\begin{defbox}[Strongly Analytic Function]\boxlabel{def:strongly-analytic}
+Let $D \subset \mathbb{C}$ be open, let $X$ be a Banach space over $\mathbb{C}$, and let $f : D \to X$ be a Banach-space-valued function. $f$ is \textbf{analytic} on $D$, or \textbf{strongly analytic} on $D$, if for every fixed $z_0 \in D$ the limit
+\[
+\lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h} \qquad (h \in \mathbb{C},\ h \neq 0)
+\]
+exists in $X$; that is, there is $g(z_0) \in X$ such that
+\[
+\lim_{h \to 0} \Bigl\| \frac{f(z_0 + h) - f(z_0)}{h} - g(z_0) \Bigr\| = 0 .
+\]
+%% FILL-IN: the name and the notation f'(z_0) for the limit.
+The vector $g(z_0)$ is the \textbf{derivative} of $f$ at $z_0$, also written $f'(z_0)$.
+\laxref{\S11.4, first definition}
+\end{defbox}
+
+\begin{defbox}[Weakly Analytic Function]\boxlabel{def:weakly-analytic}
+Let $D \subset \mathbb{C}$ be open, let $X$ be a Banach space over $\mathbb{C}$, and let $f : D \to X$ be given. For every $\ell \in X' = \mathcal{L}(X, \mathbb{C})$ the composition $z \mapsto \ell(f(z))$ is a function from $D$ to $\mathbb{C}$. $f$ is \textbf{weakly analytic} on $D$ if for every $\ell \in X'$ the function $\ell(f(z))$ is analytic on $D$.
+\laxref{\S11.4, second definition}
+\end{defbox}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[Strong and Weak as for Convergence]\label{rem:analytic-strong-weak}
+The two definitions stand to each other as strong and weak convergence do (Definition~\ref{def:weak-conv}): the strong notion asks the difference quotients to converge in the norm of $X$, the weak notion only asks the numbers $\ell\bigl( \frac{f(z_0 + h) - f(z_0)}{h} \bigr)$ to converge, for each $\ell$ separately, and it does not ask the limits to come from one vector of $X$. For sequences the weak notion is strictly weaker in infinite dimensions (Example~\ref{ex:en-weak}). For analyticity there is no gap (Theorem~\ref{thm:dunford}); Lax calls this a surprising result.
+\end{rembox}
+%% <<< END ADDED
+
+%% >>> ADDED: example (not from lecture)
+\begin{exbox}[{{A Power Series with Values in $\ell^2$}}]\boxlabel{ex:analytic-l2}
+\textit{(Not from lecture; filled in.)} Let $D = \{ z \in \mathbb{C} : |z| < 1 \}$, $X = \ell^2$ over $\mathbb{C}$ with entries numbered from $0$, and
+\[
+f(z) = (1, z, z^2, z^3, \ldots) , \qquad \text{that is,} \quad f(z)_n = z^n \quad (n = 0, 1, 2, \ldots) .
+\]
+\begin{enumerate}[label=(\arabic*)]
+    \item \emph{$f(z) \in \ell^2$ for $|z| < 1$:} $\sum_{n=0}^\infty |z^n|^2 = \frac{1}{1 - |z|^2} < \infty$ (geometric series).
+    \item \emph{$f$ is weakly analytic on $D$.} By the Riesz representation theorem (Theorem~\ref{thm:riesz-rep}(2)), every $\ell \in (\ell^2)'$ is $\ell(x) = (x, b) = \sum_{n=0}^\infty x_n \overline{b_n}$ for some $b \in \ell^2$. Hence
+    \[
+    \ell(f(z)) = \sum_{n=0}^\infty \overline{b_n}\, z^n .
+    \]
+    Since $|b_n| \le \|b\|$ for all $n$, this power series converges for $|z| < 1$ (comparison with the geometric series), and a power series is analytic inside its circle of convergence. So $\ell(f(z))$ is analytic on $D$ for every $\ell$.
+    \item \emph{$f$ is strongly analytic on $D$, with $f'(z) = g(z) = (0, 1, 2z, 3z^2, \ldots)$, $g(z)_n = n z^{n-1}$.} Fix $z \in D$ and choose $r$ with $|z| < r < 1$. First, $g(z) \in \ell^2$, since $\sum_n n^2 |z|^{2(n-1)} < \infty$ by the ratio test. Let $0 < |h| < r - |z|$. For $n = 0$ and $n = 1$ the $n$-th entry of $\frac{f(z + h) - f(z)}{h} - g(z)$ is $0$. For $n \ge 2$, by the binomial theorem,
+    \[
+    (z + h)^n - z^n - n z^{n-1} h = \sum_{j=2}^n \binom{n}{j} z^{n-j} h^j ,
+    \]
+    and for $2 \le j \le n$ the binomial coefficients satisfy
+    \[
+    \binom{n}{j} = \frac{n(n-1)}{j(j-1)} \binom{n-2}{j-2} \le \frac{n(n-1)}{2} \binom{n-2}{j-2} .
+    \]
+    Dividing by $h$ and using the binomial theorem again, now for $(|z| + |h|)^{n-2}$,
+    \begin{align*}
+    \Bigl| \frac{(z + h)^n - z^n}{h} - n z^{n-1} \Bigr| &\le \frac{n(n-1)}{2}\, |h| \sum_{j=2}^n \binom{n-2}{j-2} |z|^{n-j} |h|^{j-2} \\
+    &= \frac{n(n-1)}{2}\, |h|\, (|z| + |h|)^{n-2} \le \frac{n(n-1)}{2}\, r^{n-2}\, |h| .
+    \end{align*}
+    Squaring and summing over $n$,
+    \[
+    \Bigl\| \frac{f(z + h) - f(z)}{h} - g(z) \Bigr\|^2 \le |h|^2 \sum_{n=2}^\infty \frac{n^2 (n-1)^2}{4}\, r^{2(n-2)} = C_r^2\, |h|^2 ,
+    \]
+    where the series converges by the ratio test, since $r < 1$. Hence the difference quotients converge to $g(z)$ in the norm of $\ell^2$ as $h \to 0$.
+\end{enumerate}
+The weak check (2) takes two lines, because it only uses the theory of scalar power series; the strong check (3) needs an estimate that is uniform in the entries. Dunford's theorem (Theorem~\ref{thm:dunford}) says that (2) alone already gives (3).
+\end{exbox}
+%% <<< END ADDED
+
+\subsection{Strong Analyticity Implies Weak Analyticity}
+
+\begin{propbox}[Strongly Analytic Functions are Weakly Analytic]\boxlabel{prop:strong-weak-analytic}
+Let $D \subset \mathbb{C}$ be open, $X$ a Banach space over $\mathbb{C}$, and $f : D \to X$ strongly analytic on $D$ (Definition~\ref{def:strongly-analytic}). Then $f$ is weakly analytic on $D$ (Definition~\ref{def:weakly-analytic}), and for every $\ell \in X'$ and every $z_0 \in D$ the derivative of the scalar function $\ell(f(z))$ at $z_0$ is $\ell(f'(z_0))$.
+\end{propbox}
+
+\begin{proof}
+Let $\ell \in X'$ and $z_0 \in D$, and let $g(z_0) = f'(z_0)$ be the limit in Definition~\ref{def:strongly-analytic}. Since $\ell$ is linear,
+\[
+\frac{\ell(f(z_0 + h)) - \ell(f(z_0))}{h} = \ell\Bigl( \frac{f(z_0 + h) - f(z_0)}{h} \Bigr) .
+\]
+Since $\ell \in X'$ is continuous (Proposition~\ref{prop:bounded-continuous}) and the argument on the right converges to $g(z_0)$ in $X$ as $h \to 0$, the right side converges to $\ell(g(z_0))$. %% FILL-IN: the estimate behind "since l is continuous".
+Explicitly, $\bigl| \ell\bigl( \frac{f(z_0 + h) - f(z_0)}{h} \bigr) - \ell(g(z_0)) \bigr| \le \|\ell\|\, \bigl\| \frac{f(z_0 + h) - f(z_0)}{h} - g(z_0) \bigr\| \to 0$. So the limit defining the derivative of $\ell(f(z))$ at $z_0$ exists and equals $\ell(g(z_0))$. As $z_0 \in D$ and $\ell \in X'$ were arbitrary, $f$ is weakly analytic.
+\end{proof}
+
+\subsection{Dunford's Theorem}
+
+%% >>> ADDED: the facts of complex analysis used in the proof (Claude)
+The proof of the converse uses three facts about an analytic function $\varphi : D \to \mathbb{C}$ on an open set $D \subset \mathbb{C}$; they are theorems of complex analysis and are not proved in this course.
+\begin{enumerate}[label=(\arabic*)]
+    \item \emph{Continuity.} $\varphi$ is continuous on $D$.
+    \item \emph{Cauchy's integral formula.} If the closed disk $\overline{B(z_0, r_0)} = \{ z : |z - z_0| \le r_0 \}$ lies in $D$ and $C = \{ \zeta : |\zeta - z_0| = r_0 \}$ is its boundary circle, traversed counterclockwise, then
+    \[
+    \varphi(z) = \frac{1}{2\pi i} \oint_C \frac{\varphi(\zeta)}{\zeta - z}\, d\zeta \qquad \text{for every } z \text{ with } |z - z_0| < r_0 .
+    \]
+    \item \emph{The bound for a contour integral.} If $F$ is continuous on $C$ and $L$ is the length of $C$, then $\bigl| \oint_C F(\zeta)\, d\zeta \bigr| \le L\, \max_{\zeta \in C} |F(\zeta)|$. The circle $C$ of radius $r_0$ has length $L = 2\pi r_0$.
+\end{enumerate}
+The proof also uses that a family of vectors whose mutual distances become small has a limit, in the following form.
+%% <<< END ADDED
+
+\begin{lembox}[{{A Cauchy Criterion for Limits as $h \to 0$}}]\boxlabel{lem:cauchy-limit}
+\textit{(Not from lecture; filled in.)} Let $X$ be a Banach space, $r > 0$, and let $q_h \in X$ be given for every $h \in \mathbb{C}$ with $0 < |h| < r$. Assume that for every $\varepsilon > 0$ there is $\delta \in (0, r]$ such that
+\[
+\|q_h - q_k\| < \varepsilon \qquad \text{whenever } 0 < |h| < \delta \text{ and } 0 < |k| < \delta .
+\]
+Then there is $g \in X$ with $\lim_{h \to 0} q_h = g$, that is, $\|q_h - g\| \to 0$ as $h \to 0$.
+\end{lembox}
+
+\begin{proof}
+Let $h_n = \frac{r}{n+1}$, so that $0 < h_n < r$ and $h_n \to 0$. \emph{The sequence $\{q_{h_n}\}$ is Cauchy:} given $\varepsilon > 0$, take $\delta$ as in the assumption and $N$ with $h_n < \delta$ for all $n > N$; then $\|q_{h_n} - q_{h_m}\| < \varepsilon$ for all $n, m > N$. Since $X$ is complete, there is $g \in X$ with $q_{h_n} \to g$.
+
+\emph{The whole family converges to $g$:} let $\varepsilon > 0$ and take $\delta$ as in the assumption. Choose $n$ so large that $h_n < \delta$ and $\|q_{h_n} - g\| < \varepsilon$. Then for every $h$ with $0 < |h| < \delta$,
+\[
+\|q_h - g\| \le \|q_h - q_{h_n}\| + \|q_{h_n} - g\| < 2\varepsilon .
+\]
+\end{proof}
+
+\begin{thmbox}[Dunford's Theorem]\boxlabel{thm:dunford}
+Let $D \subset \mathbb{C}$ be open and $X$ a Banach space over $\mathbb{C}$. If $f : D \to X$ is weakly analytic on $D$, then $f$ is strongly analytic on $D$. Together with Proposition~\ref{prop:strong-weak-analytic}: weak and strong analyticity are equivalent.
+\laxref{\S11.4, Thm~4}
+\end{thmbox}
+
+\begin{proof}
+Assume $f : D \to X$ is weakly analytic on $D$, and fix $z_0 \in D$. Since $D$ is open, there is $r_0 > 0$ such that $\overline{B(z_0, r_0)} \subset D$. For $h \in \mathbb{C}$ with $0 < |h| < r_0$ write
+\[
+q_h = \frac{f(z_0 + h) - f(z_0)}{h} \in X
+\]
+for the difference quotient. \emph{What has to be shown:} the family $\{q_h\}$ is Cauchy as $h \to 0$, that is, for every $\varepsilon > 0$ there is $\delta > 0$ such that for all $h, k$ with $0 < |h| < \delta$ and $0 < |k| < \delta$,
+\[
+\|q_h - q_k\| = \Bigl\| \frac{f(z_0 + h) - f(z_0)}{h} - \frac{f(z_0 + k) - f(z_0)}{k} \Bigr\| < \varepsilon .
+\]
+Then Lemma~\ref{lem:cauchy-limit} gives the limit $\lim_{h \to 0} q_h$ in $X$, which is what Definition~\ref{def:strongly-analytic} asks for at $z_0$.
+
+\textbf{Step 1: Cauchy's integral formula for $\ell(f)$.} Let $\ell \in X' = \mathcal{L}(X, \mathbb{C})$ be given. By assumption $\ell(f(z))$ is analytic on $D$. Let $C = \{ \zeta : |\zeta - z_0| = r_0 \}$, traversed counterclockwise. By Cauchy's integral formula (fact (2) above), for every $z \in B(z_0, r_0) = \{ |z - z_0| < r_0 \}$,
+\[
+\ell(f(z)) = \frac{1}{2\pi i} \oint_C \frac{\ell(f(\zeta))}{\zeta - z}\, d\zeta .
+\]
+Let $|h| < \frac{r_0}{2}$ and $|k| < \frac{r_0}{2}$. Then $z_0 + h$, $z_0 + k$ and $z_0$ all lie in $B(z_0, r_0)$, so
+\[
+\ell(f(z_0 + h)) = \frac{1}{2\pi i} \oint_C \frac{\ell(f(\zeta))}{\zeta - (z_0 + h)}\, d\zeta , \qquad \ell(f(z_0)) = \frac{1}{2\pi i} \oint_C \frac{\ell(f(\zeta))}{\zeta - z_0}\, d\zeta ,
+\]
+and likewise with $k$ in place of $h$.
+
+%% FIGURE (board): the domain D with the point z_0 and the circle C, redrawn from the notes
+\begin{center}
+\begin{tikzpicture}[scale=1.0, >=stealth]
+    \draw[thick] plot[smooth cycle, tension=0.8] coordinates {(-2,0) (-1.2,1.4) (0.6,1.6) (2.1,0.9) (2.2,-0.8) (0.5,-1.5) (-1.4,-1.2)};
+    \node at (-1.25,0.75) {$D$};
+    \fill (0.7,-0.1) circle (1.3pt) node[below] {$z_0$};
+    \draw[thick, red!75!black] (0.7,-0.1) circle (0.95);
+    \node[red!75!black] at (0.05,0.95) {$C$};
+\end{tikzpicture}
+\end{center}
+The circle $C$ of radius $r_0$ around $z_0$, with its inside, lies in $D$.
+
+\textbf{Step 2: the difference quotients.} Let $0 < |h| < \frac{r_0}{2}$. By the linearity of $\ell$ and Step 1,
+\begin{align*}
+\ell(q_h) = \frac1h \bigl( \ell(f(z_0 + h)) - \ell(f(z_0)) \bigr) &= \frac{1}{2\pi i} \oint_C \frac{\ell(f(\zeta))}{h} \Bigl( \frac{1}{\zeta - z_0 - h} - \frac{1}{\zeta - z_0} \Bigr) d\zeta \\
+&= \frac{1}{2\pi i} \oint_C \frac{\ell(f(\zeta))}{h} \cdot \frac{h}{(\zeta - z_0 - h)(\zeta - z_0)}\, d\zeta \\
+&= \frac{1}{2\pi i} \oint_C \frac{\ell(f(\zeta))}{(\zeta - z_0 - h)(\zeta - z_0)}\, d\zeta .
+\end{align*}
+The same holds with $k$ in place of $h$, for $0 < |k| < \frac{r_0}{2}$. Subtracting,
+\begin{align*}
+\ell(q_h - q_k) &= \frac{1}{2\pi i} \oint_C \ell(f(\zeta)) \Bigl( \frac{1}{(\zeta - z_0 - h)(\zeta - z_0)} - \frac{1}{(\zeta - z_0 - k)(\zeta - z_0)} \Bigr) d\zeta \\
+&= \frac{1}{2\pi i} \oint_C \ell(f(\zeta))\, \frac{h - k}{(\zeta - z_0 - h)(\zeta - z_0)(\zeta - z_0 - k)}\, d\zeta .
+\end{align*}
+%% FILL-IN: the partial-fraction step.
+(With $a = \zeta - z_0$: $\frac{1}{a - h} - \frac{1}{a - k} = \frac{(a - k) - (a - h)}{(a - h)(a - k)} = \frac{h - k}{(a - h)(a - k)}$.)
+
+\textbf{Step 3: a bound for each $\ell$.} For $0 < |h| < \frac{r_0}{2}$, $0 < |k| < \frac{r_0}{2}$ and $h \neq k$ put
+\[
+x_{h,k} = \frac{1}{h - k}\, (q_h - q_k) = \frac{1}{h - k} \Bigl( \frac{f(z_0 + h) - f(z_0)}{h} - \frac{f(z_0 + k) - f(z_0)}{k} \Bigr) \in X .
+\]
+Dividing the last formula of Step 2 by $h - k$,
+\[
+\ell(x_{h,k}) = \frac{1}{2\pi i} \oint_C \frac{\ell(f(\zeta))}{(\zeta - z_0 - h)(\zeta - z_0)(\zeta - z_0 - k)}\, d\zeta .
+\]
+For $\zeta \in C$, that is $|\zeta - z_0| = r_0$, and $|h| < \frac{r_0}{2}$, $|k| < \frac{r_0}{2}$,
+\[
+|\zeta - z_0 - h| \ge |\zeta - z_0| - |h| > \frac{r_0}{2} , \qquad |\zeta - z_0| = r_0 \ge \frac{r_0}{2} , \qquad |\zeta - z_0 - k| > \frac{r_0}{2} ,
+\]
+so each of the three factors in the denominator has absolute value at least $\frac{r_0}{2}$. %% FILL-IN: finiteness of the supremum.
+The function $\ell(f(\zeta))$ is analytic on $D$, hence continuous (fact (1)), so on the compact circle $C$ its absolute value has a finite supremum. By the bound for contour integrals (fact (3)), with the length $2\pi r_0$ of $C$,
+\[
+|\ell(x_{h,k})| \le \frac{1}{2\pi} \Bigl( \frac{2}{r_0} \Bigr)^3 \sup_{\zeta \in C} |\ell(f(\zeta))| \cdot 2\pi r_0 = \frac{8}{r_0^2}\, \sup_{\zeta \in C} |\ell(f(\zeta))| =: M(\ell) < \infty .
+\]
+The bound $M(\ell)$ depends on $\ell$ but not on $h$ and $k$:
+\[
+\sup \bigl\{ |\ell(x_{h,k})| : 0 < |h| < \tfrac{r_0}{2},\ 0 < |k| < \tfrac{r_0}{2},\ h \neq k \bigr\} \le M(\ell) < \infty \qquad \text{for every } \ell \in X' .
+\]
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[scale=1.15, >=stealth]
+    \fill[blue!8] (0,0) circle (1);
+    \draw[thick, red!75!black] (0,0) circle (2);
+    \draw[dashed, blue!60!black] (0,0) circle (1);
+    \fill (0,0) circle (1.3pt) node[below left, font=\scriptsize] {$z_0$};
+    \fill[blue!70!black] (0.55,0.35) circle (1.2pt) node[below, font=\scriptsize] {$z_0 + h$};
+    \fill[blue!70!black] (-0.45,0.5) circle (1.2pt) node[above, font=\scriptsize] {$z_0 + k$};
+    \fill[red!75!black] (1.638,1.147) circle (1.3pt) node[above right, font=\scriptsize] {$\zeta$};
+    \draw[<->, thin] (0.62,0.40) -- node[above left, font=\scriptsize, inner sep=1pt] {$> \frac{r_0}{2}$} (1.58,1.10);
+    \draw[thin] (0,0) -- node[right, font=\scriptsize, pos=0.8] {$r_0$} (-70:2);
+    \draw[thin, blue!60!black] (0,0) -- node[left, font=\scriptsize, pos=0.6] {$\frac{r_0}{2}$} (-115:1);
+    \node[red!75!black] at (-1.75,1.45) {$C$};
+\end{tikzpicture}
+\end{center}
+The estimate of Step 3: $z_0 + h$ and $z_0 + k$ stay in the disk of radius $\frac{r_0}{2}$ (shaded), so every point $\zeta$ of $C$ is at distance more than $\frac{r_0}{2}$ from each of them, and at distance $r_0$ from $z_0$. (Not from lecture; figure added.)
+%% <<< END ADDED
+
+\textbf{Step 4: uniform boundedness.} Recall the uniform boundedness principle (Theorem~\ref{thm:ubp}): if $\{A_\alpha\}$ is a family of bounded linear maps on a Banach space with $\sup_\alpha \|A_\alpha x\| < \infty$ for every $x$, then $\sup_\alpha \|A_\alpha\| < \infty$. %% FILL-IN: how the principle applies (the notes only quote it).
+It is applied on the space $X'$, which is a Banach space (Corollary~\ref{cor:dual-banach}). Each vector $x_{h,k} \in X$ defines the bounded linear functional $i(x_{h,k}) \in X'' = \mathcal{L}(X', \mathbb{C})$, $i(x_{h,k})(\ell) = \ell(x_{h,k})$, with $\|i(x_{h,k})\| = \|x_{h,k}\|$ (Proposition~\ref{prop:canonical-embedding}). By Step 3 the family $\{ i(x_{h,k}) \}$ is pointwise bounded on $X'$: for every $\ell \in X'$, $\sup_{h,k} |i(x_{h,k})(\ell)| \le M(\ell) < \infty$. Hence it is uniformly bounded:
+\[
+M := \sup \bigl\{ \|x_{h,k}\| : 0 < |h| < \tfrac{r_0}{2},\ 0 < |k| < \tfrac{r_0}{2},\ h \neq k \bigr\} < \infty ,
+\]
+where, as in Step 3,
+\[
+x_{h,k} = \frac{1}{h - k} \Bigl( \frac{f(z_0 + h) - f(z_0)}{h} - \frac{f(z_0 + k) - f(z_0)}{k} \Bigr) .
+\]
+
+\textbf{Step 5: the difference quotients are Cauchy.} By Step 4, for all $h, k$ with $0 < |h| < \frac{r_0}{2}$ and $0 < |k| < \frac{r_0}{2}$,
+\[
+\Bigl\| \frac{f(z_0 + h) - f(z_0)}{h} - \frac{f(z_0 + k) - f(z_0)}{k} \Bigr\| \le M\, |h - k| \le M\, (|h| + |k|)
+\]
+(for $h = k$ the left side is $0$). Let $\varepsilon > 0$. Enlarging $M$ if necessary, assume $M > 0$, and put
+\[
+\delta = \min\Bigl( \frac{r_0}{2},\ \frac{\varepsilon}{2M} \Bigr) .
+\]
+Then for all $h, k$ with $0 < |h| < \delta$ and $0 < |k| < \delta$: $|h| + |k| < \frac{\varepsilon}{M}$, so $\|q_h - q_k\| < \varepsilon$. This is the Cauchy property stated at the beginning, and Lemma~\ref{lem:cauchy-limit} (with $r = \frac{r_0}{2}$) gives $g(z_0) \in X$ with $\lim_{h \to 0} q_h = g(z_0)$. Since $z_0 \in D$ was arbitrary, $f$ is strongly analytic on $D$.
+\end{proof}
+
+\begin{rembox}[The Length of the Circle]\label{rem:dunford-length}
+In the notes of the lecture the bound of Step 3 is written with the factor $2\pi$ for the length of $C$, which gives $M(\ell) = \frac{8}{r_0^3} \sup_C |\ell(f)|$. The circle of radius $r_0$ has length $2\pi r_0$, which gives the value $\frac{8}{r_0^2} \sup_C |\ell(f)|$ used above. The proof only uses that $M(\ell)$ is finite and does not depend on $h$ and $k$, so nothing else changes.
+\end{rembox}
+
+%% >>> ADDED: figure and remarks (Claude commentary)
+\begin{center}
+\begin{tikzpicture}[>=stealth, every node/.style={font=\footnotesize}]
+    \node[draw, rounded corners, align=center, inner sep=4pt] (a) at (0,0) {$\ell(f(z))$ analytic\\for every $\ell \in X'$};
+    \node[draw, rounded corners, align=center, inner sep=4pt] (b) at (5.3,0) {$|\ell(x_{h,k})| \le M(\ell)$\\for every $\ell$, all $h, k$};
+    \node[draw, rounded corners, align=center, inner sep=4pt] (c) at (10.6,0) {$\|x_{h,k}\| \le M$\\for all $h, k$};
+    \node[draw, rounded corners, align=center, inner sep=4pt] (d) at (10.6,-2.1) {$\|q_h - q_k\| \le M|h - k|$};
+    \node[draw, rounded corners, align=center, inner sep=4pt] (e) at (4.6,-2.1) {$\lim_{h \to 0} q_h$ exists in $X$};
+    \draw[->, thick] (a) -- (b);
+    \draw[->, thick] (b) -- (c);
+    \draw[->, thick] (c) -- (d);
+    \draw[->, thick] (d) -- (e);
+    \node[blue!60!black, align=center] at (2.65,0.28) {Cauchy's formula};
+    \node[red!70!black, align=center] at (8.25,0.28) {uniform boundedness};
+    \node[blue!60!black] at (7.35,-1.82) {$X$ complete};
+    \node[align=left, gray] at (0.2,-2.1) {scalar statements,\\one $\ell$ at a time};
+\end{tikzpicture}
+\end{center}
+The proof of Dunford's theorem at a glance, with $q_h$ the difference quotient and $x_{h,k} = (q_h - q_k)/(h - k)$. Complex analysis is used only for the scalar functions $\ell(f(z))$; the uniform boundedness principle turns the bounds $M(\ell)$, one for each functional, into a single bound in the norm of $X$. (Not from lecture; figure added.)
+
+\begin{rembox}[Where Completeness Enters]\label{rem:dunford-completeness}
+The uniform boundedness principle is applied on $X'$, which is complete for every normed space $X$; so Steps 1--4 and the Lipschitz estimate $\|q_h - q_k\| \le M |h - k|$ of Step 5 hold for a weakly analytic function with values in any normed linear space. The completeness of $X$ is used only at the very end, in Lemma~\ref{lem:cauchy-limit}, to turn the Cauchy property into a limit. This is the method ``view vectors as functionals on the dual'' (Technique 29 in the Problem-Solving Techniques), as in the proof that weakly convergent sequences are bounded (Theorem~\ref{thm:weak-lsc}).
+\end{rembox}
+
+\begin{rembox}[Where the Theorem is Used]\label{rem:dunford-use}
+Dunford's theorem says that the analyticity of a vector-valued function can be checked one functional at a time, where all of scalar complex analysis is available. The main example is the resolvent $\lambda \mapsto (\lambda I - M)^{-1}$ of \ref{sec:spectrum}, a function with values in the Banach space $\mathcal{L}(X, X)$. Lax returns to the notion in his Chapter~17: there the resolvent is shown to be an analytic function on the resolvent set (\S17.1, Thm~3), and the Cauchy integral theorem for analytic functions with values in a Banach space is used to show that the spectrum is not empty (\S17.1, Thm~4).
+\end{rembox}
+%% <<< END ADDED
+
+% ============================================================================
+% SECTION: THE RESOLVENT AND THE SPECTRUM (Lecture 21, second part)
+% Lecture 21 (2026-11-17). Source: the handwritten notes of the lecture; no recording.
+% Checked against Lax 17.1 (definition after Thm 2, Thm 3, Thm 4), 20.1 (opening; eigenvectors after Thm 3), 32.1 (definition before Thm 5), 32.3,
+% read in the book. The names point / continuous / residual spectrum and the two multiplication examples were not found in Lax.
+% ============================================================================
+
+\section{The Resolvent and the Spectrum}\label{sec:spectrum}
+
+\roadmark{Stage: maps}{Thread: invertibility. $\lambda I - M$ can fail to be invertible by not being one-to-one, by having a dense range that is not everything, or by having a range that is not dense: point, continuous and residual spectrum.}
+
+\textit{Lecture 21 (Tue Nov 17), second part. Source: the handwritten notes of the lecture; there is no recording. The steps that the notes leave out, and the items marked as such, are filled in. The definitions were checked against Lax \S17.1, \S20.1 and \S32.1; the division of the spectrum into three parts and the two examples of \S\ref{subsec:mult} follow the lecture, and Lax does not use this division.}
+
+\subsection{Eigenvalues of Matrices}
+
+Recall: let $A$ be an $n \times n$ matrix, acting as $A : \mathbb{R}^n \to \mathbb{R}^n$ by $A(x) = Ax$ for $x = (x_1, \ldots, x_n)^T$. A number $\lambda$ is an \textbf{eigenvalue} of $A$ if there is $x_0 \in \mathbb{R}^n$, $x_0 \neq 0$, such that $A x_0 = \lambda x_0$. The following are equivalent:
+\begin{enumerate}[label=(\arabic*)]
+    \item $\lambda$ is an eigenvalue of $A$;
+    \item $\lambda I - A$ is not one-to-one;
+    \item $\lambda I - A$ is not onto.
+\end{enumerate}
+%% FILL-IN: the reasons for the two equivalences.
+(1) $\Leftrightarrow$ (2): $A x_0 = \lambda x_0$ means $(\lambda I - A) x_0 = 0$, and a linear map is one-to-one exactly when its null space is $\{0\}$. (2) $\Leftrightarrow$ (3): for a linear map of $\mathbb{R}^n$ to itself the dimensions of the null space and of the range add up to $n$, so the null space is $\{0\}$ exactly when the range is all of $\mathbb{R}^n$. In infinite dimensions (2) and (3) are no longer equivalent: on $\ell^2$ the right shift is one-to-one and not onto, and the left shift is onto and not one-to-one (Examples~\ref{ex:right-shift} and~\ref{ex:left-shift}). This is why the eigenvalues have to be replaced by a larger set.
+
+\begin{exbox}[{{Eigenvalues and Stability}}]\boxlabel{ex:eigen-stability}
+Let $A = (\lambda_0)$ be a $1 \times 1$ matrix, $\lambda_0 \in \mathbb{R}$, and consider the differential equation
+\[
+\frac{dx}{dt} = \lambda_0\, x , \qquad \text{with solution} \qquad x(t) = x(0)\, e^{\lambda_0 t} .
+\]
+The constant function $x \equiv 0$ is a solution: $0$ is an \textbf{equilibrium state}.
+\begin{itemize}
+    \item If $\lambda_0 < 0$: $x(t) \to 0$ as $t \to \infty$. The equilibrium state $0$ is \textbf{stable}.
+    \item If $\lambda_0 > 0$: $|x(t)| \to \infty$ as $t \to \infty$ (for $x(0) \neq 0$). The equilibrium state $0$ is \textbf{unstable}.
+    \item If $\lambda_0 = 0$: %% FILL-IN: the notes leave this case blank.
+    $x(t) = x(0)$ for all $t$. Solutions neither decay nor grow: a solution that starts near $0$ stays near $0$ but does not return to it, and every constant is an equilibrium state.
+\end{itemize}
+%% FILL-IN: the conclusion drawn from the example.
+So the sign of the eigenvalue decides the behaviour of the solutions for large times. For a system $\frac{dx}{dt} = Ax$ with an $n \times n$ matrix $A$ the eigenvalues of $A$ play the same role, and for equations in infinite-dimensional spaces the spectrum does.
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, xscale=1.5, yscale=1.25]
+    \draw[->] (0,0) -- (3.4,0) node[right] {$t$};
+    \draw[->] (0,0) -- (0,2.5) node[above] {$x(t)$};
+    \draw[thick, red!70!black, domain=0:1.6, samples=40, smooth] plot (\x, {0.7*exp(0.75*\x)});
+    \draw[thick, gray, domain=0:3.2, samples=2] plot (\x, {0.7});
+    \draw[thick, blue!65!black, domain=0:3.2, samples=40, smooth] plot (\x, {0.7*exp(-1.1*\x)});
+    \node[left, font=\scriptsize] at (0,0.7) {$x(0)$};
+    \node[red!70!black, font=\scriptsize, anchor=west] at (1.65,2.3) {$\lambda_0 > 0$};
+    \node[gray, font=\scriptsize, anchor=west] at (3.22,0.7) {$\lambda_0 = 0$};
+    \node[blue!65!black, font=\scriptsize, anchor=south west] at (2.3,0.1) {$\lambda_0 < 0$};
+\end{tikzpicture}
+\end{center}
+The solutions $x(0)\, e^{\lambda_0 t}$ for the three signs of $\lambda_0$. (Not from lecture; figure added.)
+%% <<< END ADDED
+\end{exbox}
+
+\subsection{Resolvent Set, Resolvent and Spectrum}
+
+%% FILL-IN: the standing assumptions, collected from the lecture's definition and its marginal note "bounded, or closed on a domain".
+Throughout this section $X$ is a Banach space over $\mathbb{C}$, and $M$ is one of the following:
+\begin{enumerate}[label=(\alph*)]
+    \item a bounded linear map $M \in \mathcal{L}(X, X)$; then its domain is $D(M) = X$;
+    \item more generally, a closed linear map $M : D(M) \to X$ whose domain $D(M)$ is a linear subspace of $X$ (Definition~\ref{def:closed-map}).
+\end{enumerate}
+Case (a) is contained in case (b), since continuous maps are closed (Example~\ref{ex:cont-closed}). The lecture states the definitions for (a) and notes that they apply to (b) as well. For $\lambda \in \mathbb{C}$, $\lambda I - M$ denotes the linear map $D(M) \to X$, $x \mapsto \lambda x - Mx$, where $I$ is the identity.
+
+\begin{defbox}[Resolvent Set]\boxlabel{def:resolvent-set}
+Let $X$ be a Banach space over $\mathbb{C}$ and $M \in \mathcal{L}(X, X)$ (or $M : D(M) \to X$ a closed linear map with $D(M) \subset X$). A number $\lambda \in \mathbb{C}$ belongs to $\rho(M)$ if $\lambda I - M$ is \textbf{invertible}, that is, if $\lambda I - M : X \to X$ (in the closed case, $\lambda I - M : D(M) \to X$) is one-to-one and onto:
+\[
+\rho(M) = \{ \lambda \in \mathbb{C} : \lambda I - M \text{ is invertible} \} .
+\]
+$\rho(M)$ is called the \textbf{resolvent set} of $M$.
+\laxref{\S17.1, definition after Thm~2 (for an element of a Banach algebra); \S20.1, opening paragraph; \S32.1, definition before Thm~5 (unbounded operators in a Hilbert space)}
+\end{defbox}
+
+For $\lambda \in \rho(M)$ the inverse map $(\lambda I - M)^{-1} : X \to X$ exists and is linear. The definition does not ask the inverse to be bounded. It is bounded automatically; for a closed map this is the check that the lecture asks for, and the next lemma prepares it.
+
+\begin{lembox}[{{Closed Maps: Shifts and Inverses}}]\boxlabel{lem:closed-shift-inverse}
+\textit{(Not from lecture; filled in.)} Let $X$ be a normed linear space over $\mathbb{C}$ and $T : D(T) \to X$ a closed linear map with $D(T) \subset X$.
+\begin{enumerate}[label=(\arabic*)]
+    \item For every $\lambda \in \mathbb{C}$ the map $\lambda I - T : D(T) \to X$ is closed.
+    \item If $T$ is one-to-one, then the inverse $T^{-1} : R(T) \to X$, with domain the range $R(T)$ of $T$, is a closed linear map.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+(1) Let $x_n \in D(T)$ with $x_n \to x$ in $X$ and $(\lambda I - T) x_n \to y$ in $X$. Then
+\[
+T x_n = \lambda x_n - (\lambda I - T) x_n \to \lambda x - y .
+\]
+Since $T$ is closed (Definition~\ref{def:closed-map}), $x \in D(T)$ and $Tx = \lambda x - y$, that is, $(\lambda I - T) x = y$. So $\lambda I - T$ is closed.
+
+(2) $T^{-1}$ is linear: if $y_1 = Tx_1$ and $y_2 = Tx_2$, then $T(c_1 x_1 + c_2 x_2) = c_1 y_1 + c_2 y_2$, so $T^{-1}(c_1 y_1 + c_2 y_2) = c_1 x_1 + c_2 x_2$. Let $y_n \in R(T)$ with $y_n \to y$ in $X$ and $T^{-1} y_n \to x$ in $X$. Put $x_n = T^{-1} y_n \in D(T)$. Then $x_n \to x$ and $T x_n = y_n \to y$. Since $T$ is closed, $x \in D(T)$ and $Tx = y$. Hence $y \in R(T)$ and $T^{-1} y = x$, which is what Definition~\ref{def:closed-map} asks of $T^{-1}$. (In terms of graphs: the graph of $T^{-1}$ is the graph of $T$ with the two components exchanged, and exchanging the components maps closed sets of $X \times X$ to closed sets.)
+\end{proof}
+
+\begin{propbox}[{{The Inverse of $\lambda I - M$ is Bounded}}]\boxlabel{prop:resolvent-bounded}
+Let $X$ be a Banach space over $\mathbb{C}$, let $M \in \mathcal{L}(X, X)$ or $M : D(M) \to X$ a closed linear map with $D(M) \subset X$, and let $\lambda \in \rho(M)$. Then
+\[
+(\lambda I - M)^{-1} \in \mathcal{L}(X, X) .
+\]
+\laxref{\S20.1, opening paragraph (for $M \in \mathcal{L}(X, X)$)}
+\end{propbox}
+
+\begin{proof}
+\emph{$M \in \mathcal{L}(X, X)$.} Then $\lambda I - M \in \mathcal{L}(X, X)$, since $\mathcal{L}(X, X)$ is a linear space (Theorem~\ref{thm:LXY}). By assumption $\lambda I - M : X \to X$ is one-to-one and onto, and $X$ is a Banach space. By Banach's inverse mapping theorem (Theorem~\ref{thm:banach-inverse}), which is a consequence of the open mapping theorem (Theorem~\ref{thm:open-mapping}), $(\lambda I - M)^{-1}$ is a bounded linear map.
+
+%% FILL-IN: the check for closed maps, which the notes leave as "check: it holds for closed maps as well".
+\emph{$M$ closed.} By Lemma~\ref{lem:closed-shift-inverse}(1), $\lambda I - M : D(M) \to X$ is a closed linear map. It is one-to-one, so by Lemma~\ref{lem:closed-shift-inverse}(2) its inverse $(\lambda I - M)^{-1}$ is a closed linear map with domain $R(\lambda I - M)$, and $R(\lambda I - M) = X$ because $\lambda I - M$ is onto. A closed linear map that is defined on all of the Banach space $X$, with values in the Banach space $X$, is bounded by the closed graph theorem (Theorem~\ref{thm:closed-graph}). So $(\lambda I - M)^{-1} \in \mathcal{L}(X, X)$; its values lie in $D(M)$.
+\end{proof}
+
+\begin{defbox}[Resolvent]\boxlabel{def:resolvent}
+Let $X$ and $M$ be as in Definition~\ref{def:resolvent-set}. For $\lambda \in \rho(M)$ put
+\[
+R(\lambda; M) = (\lambda I - M)^{-1} \in \mathcal{L}(X, X) .
+\]
+The map $R(\,\cdot\,; M) : \rho(M) \to \mathcal{L}(X, X)$, $\lambda \mapsto (\lambda I - M)^{-1}$, is called the \textbf{resolvent} of $M$.
+\laxref{\S17.1, Thm~3(ii)}
+\end{defbox}
+
+By Proposition~\ref{prop:resolvent-bounded} the resolvent indeed takes its values in $\mathcal{L}(X, X)$. (The letter $R$ also denotes ranges, as in $R(\lambda I - M)$; the resolvent is always written with the two arguments $\lambda; M$.)
+
+\begin{defbox}[Spectrum]\boxlabel{def:spectrum}
+Let $X$ and $M$ be as in Definition~\ref{def:resolvent-set}. The \textbf{spectrum} of $M$ is the complement of the resolvent set,
+\[
+\sigma(M) = \mathbb{C} \setminus \rho(M) = \{ \lambda \in \mathbb{C} : \lambda I - M \text{ is not invertible} \} .
+\]
+\laxref{\S17.1, definition after Thm~2; \S32.3 (unbounded operators)}
+\end{defbox}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[{{Invertible in $\mathcal{L}(X, X)$}}]\label{rem:invertible-two-meanings}
+Lax defines the resolvent set and the spectrum in his Chapter~17 for an element $M$ of a Banach algebra, where ``invertible'' means that there is an element $N$ of the algebra with $NM = MN = I$. For the algebra $\mathcal{L}(X, X)$ this agrees with the definition above. If such an $N \in \mathcal{L}(X, X)$ exists for $\lambda I - M$, then $\lambda I - M$ is one-to-one (apply $N$ to $(\lambda I - M)x = 0$) and onto ($y = (\lambda I - M)(Ny)$). Conversely, if $\lambda I - M$ is one-to-one and onto, then $N = (\lambda I - M)^{-1}$ belongs to $\mathcal{L}(X, X)$ by Proposition~\ref{prop:resolvent-bounded}. Lax makes the same point at the beginning of his \S20.1.
+\end{rembox}
+%% <<< END ADDED
+
+\subsection{Classifying the Spectrum}
+
+Let $\lambda \in \sigma(M)$, so that $\lambda I - M : D(M) \to X$ is not invertible. Either $\lambda I - M$ is not one-to-one; or it is one-to-one and not onto, and then its range may or may not be dense in $X$. The spectrum is divided accordingly.
+
+\begin{defbox}[Eigenvalue and Eigenvector]\boxlabel{def:eigenvalue}
+Let $X$ and $M$ be as in Definition~\ref{def:resolvent-set}, and $\lambda \in \mathbb{C}$. If there is $x_0 \in D(M)$, $x_0 \neq 0$, such that
+\[
+(\lambda I - M) x_0 = 0 , \qquad \text{that is,} \qquad M x_0 = \lambda x_0 ,
+\]
+then $\lambda$ is called an \textbf{eigenvalue} of $M$, and $x_0$ a corresponding \textbf{eigenvector}.
+\laxref{\S20.1, after Corollary~1 of Thm~3}
+\end{defbox}
+
+\begin{defbox}[Point Spectrum]\boxlabel{def:point-spectrum}
+Let $X$ and $M$ be as in Definition~\ref{def:resolvent-set}. The \textbf{point spectrum} of $M$ is the set of its eigenvalues (Definition~\ref{def:eigenvalue}),
+\[
+\sigma_p(M) = \{ \text{eigenvalues of } M \} .
+\]
+Equivalently, $\lambda \in \sigma_p(M)$ if and only if $\lambda I - M$ is not one-to-one.
+\end{defbox}
+
+%% FILL-IN: why the two descriptions of the point spectrum agree.
+(A linear map is one-to-one exactly when its null space is $\{0\}$, and the eigenvectors for $\lambda$ are the nonzero elements of the null space of $\lambda I - M$.)
+
+\begin{defbox}[Continuous Spectrum]\boxlabel{def:continuous-spectrum}
+Let $X$ and $M$ be as in Definition~\ref{def:resolvent-set}. A number $\lambda \in \mathbb{C}$ belongs to the \textbf{continuous spectrum} $\sigma_c(M)$ of $M$ if $\lambda I - M$ is one-to-one but not onto, and its range is dense in $X$:
+\[
+R(\lambda I - M) \neq X \qquad \text{but} \qquad \overline{R(\lambda I - M)} = X .
+\]
+\end{defbox}
+
+\begin{defbox}[Residual Spectrum]\boxlabel{def:residual-spectrum}
+Let $X$ and $M$ be as in Definition~\ref{def:resolvent-set}. A number $\lambda \in \mathbb{C}$ belongs to the \textbf{residual spectrum} $\sigma_r(M)$ of $M$ if $\lambda I - M$ is one-to-one and its range is not dense in $X$:
+\[
+\overline{R(\lambda I - M)} \subsetneq X .
+\]
+\end{defbox}
+
+\begin{propbox}[The Three Parts of the Spectrum]\boxlabel{prop:spectrum-parts}
+Let $X$ and $M$ be as in Definition~\ref{def:resolvent-set}. Then
+\[
+\sigma(M) = \sigma_p(M) \cup \sigma_c(M) \cup \sigma_r(M) ,
+\]
+and the three sets $\sigma_p(M)$, $\sigma_c(M)$, $\sigma_r(M)$ are pairwise disjoint.
+\end{propbox}
+
+\begin{proof}
+%% FILL-IN: the proof (the lecture states the decomposition).
+Let $\lambda \in \mathbb{C}$ and $T = \lambda I - M : D(M) \to X$. Exactly one of the following four cases holds:
+\begin{enumerate}[label=(\roman*)]
+    \item $T$ is not one-to-one;
+    \item $T$ is one-to-one and $R(T) = X$;
+    \item $T$ is one-to-one, $R(T) \neq X$ and $\overline{R(T)} = X$;
+    \item $T$ is one-to-one and $\overline{R(T)} \neq X$.
+\end{enumerate}
+Indeed, if $T$ is one-to-one, then either $\overline{R(T)} \neq X$, which is (iv), or $\overline{R(T)} = X$, and then either $R(T) = X$ or $R(T) \neq X$; in case (iv) also $R(T) \neq X$, because $R(T) \subset \overline{R(T)}$. By Definitions~\ref{def:resolvent-set}, \ref{def:point-spectrum}, \ref{def:continuous-spectrum} and~\ref{def:residual-spectrum}, the four cases are $\lambda \in \sigma_p(M)$, $\lambda \in \rho(M)$, $\lambda \in \sigma_c(M)$ and $\lambda \in \sigma_r(M)$, in this order. So $\mathbb{C}$ is the disjoint union of $\rho(M)$, $\sigma_p(M)$, $\sigma_c(M)$ and $\sigma_r(M)$, and $\sigma(M) = \mathbb{C} \setminus \rho(M)$ (Definition~\ref{def:spectrum}) is the disjoint union of the last three.
+\end{proof}
+
+%% >>> ADDED: figure, example and remark (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, every node/.style={font=\footnotesize}]
+    \node[draw, rounded corners, inner sep=4pt] (q1) at (0,0) {Is $\lambda I - M$ one-to-one?};
+    \node[draw, rounded corners, inner sep=4pt] (q2) at (0,-1.5) {Is $R(\lambda I - M) = X$?};
+    \node[draw, rounded corners, inner sep=4pt] (q3) at (0,-3.0) {Is $\overline{R(\lambda I - M)} = X$?};
+    \node[draw, thick, red!70!black, inner sep=4pt] (p) at (5.2,0) {$\lambda \in \sigma_p(M)$: an eigenvalue};
+    \node[draw, thick, blue!65!black, inner sep=4pt] (r) at (5.2,-1.5) {$\lambda \in \rho(M)$: $\lambda I - M$ invertible};
+    \node[draw, thick, red!70!black, inner sep=4pt] (c) at (5.2,-3.0) {$\lambda \in \sigma_c(M)$: dense range};
+    \node[draw, thick, red!70!black, inner sep=4pt] (s) at (0,-4.5) {$\lambda \in \sigma_r(M)$: range not dense};
+    \draw[->, thick] (q1) -- node[above] {no} (p);
+    \draw[->, thick] (q1) -- node[left] {yes} (q2);
+    \draw[->, thick] (q2) -- node[above] {yes} (r);
+    \draw[->, thick] (q2) -- node[left] {no} (q3);
+    \draw[->, thick] (q3) -- node[above] {yes} (c);
+    \draw[->, thick] (q3) -- node[left] {no} (s);
+\end{tikzpicture}
+\end{center}
+Where a number $\lambda \in \mathbb{C}$ falls: three questions about the map $\lambda I - M$ sort $\mathbb{C}$ into the resolvent set (blue) and the three parts of the spectrum (red). (Not from lecture; figure added.)
+
+\begin{exbox}[The Spectrum of a Matrix]\boxlabel{ex:spectrum-matrix}
+\textit{(Not from lecture; filled in.)} Let $X = \mathbb{C}^n$ and let $A$ be an $n \times n$ matrix with complex entries, acting by $x \mapsto Ax$. A linear map of $\mathbb{C}^n$ to itself is one-to-one if and only if it is onto (as for $\mathbb{R}^n$ at the beginning of this section). So if $\lambda I - A$ is one-to-one, then $\lambda \in \rho(A)$: the cases of $\sigma_c$ and $\sigma_r$ do not occur, and
+\[
+\sigma(A) = \sigma_p(A) = \{ \text{eigenvalues of } A \} = \{ \lambda \in \mathbb{C} : \det(\lambda I - A) = 0 \} , \qquad \sigma_c(A) = \sigma_r(A) = \varnothing .
+\]
+The spectrum of a matrix is a set of at most $n$ points, and it is not empty, since the polynomial $\det(\lambda I - A)$ of degree $n$ has a root in $\mathbb{C}$. The scalars have to be complex for this: the rotation $A = \bigl( \begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix} \bigr)$ has real entries and no real eigenvalue, and $\sigma(A) = \{ i, -i \}$.
+\end{exbox}
+
+\begin{rembox}[Other Uses of the Names]\label{rem:spectrum-names}
+Lax does not divide the spectrum in this way. At the beginning of \S20.1 he only distinguishes the two ways in which a map can fail to be invertible, (a) not one-to-one and (b) not onto, and he remarks that in an infinite-dimensional space (b) can hold without (a), so that a point of the spectrum need not be an eigenvalue. The ``absolutely continuous, singular and point spectra'' of his \S31.4 are a different division: there a symmetric operator on a Hilbert space is decomposed according to the Lebesgue decomposition of its spectral measures. The two uses of the words ``point'' and ``continuous'' should not be identified.
+\end{rembox}
+%% <<< END ADDED
+
+\subsection{Multiplication by \texorpdfstring{$t$}{t}: Two Examples}\label{subsec:mult}
+
+In finite dimensions only the point spectrum occurs (Example~\ref{ex:spectrum-matrix}). The next two examples show that the other two parts occur for one of the simplest operators, multiplication by the variable: on $C[0,1]$ its spectrum is purely residual, and on $L^2[0,1]$ it is purely continuous. In both examples the functions are complex-valued, and
+\[
+(Mf)(t) = t f(t) , \qquad \bigl( (\lambda I - M) f \bigr)(t) = \lambda f(t) - t f(t) = (\lambda - t) f(t) \qquad (t \in [0,1],\ \lambda \in \mathbb{C}) .
+\]
+
+\begin{exbox}[{{Multiplication by $t$ on $C[0,1]$}}]\boxlabel{ex:mult-C}
+Let $X = C[0,1]$ with the norm $\|f\| = \max_{t \in [0,1]} |f(t)|$, and let $M f(t) = t f(t)$. Then $M : C[0,1] \to C[0,1]$, $M \in \mathcal{L}(C[0,1], C[0,1])$ with $\|M\| \le 1$, and
+\[
+\rho(M) = \mathbb{C} \setminus [0,1] , \qquad \sigma(M) = [0,1] = \sigma_r(M) , \qquad \sigma_p(M) = \sigma_c(M) = \varnothing .
+\]
+\end{exbox}
+
+\begin{proof}
+\textbf{$M$ is bounded.} %% FILL-IN: the check of "|M| <= 1".
+For $f \in C[0,1]$ the function $t f(t)$ is continuous, and $|t f(t)| \le |f(t)| \le \|f\|$ for $t \in [0,1]$. So $\|Mf\| \le \|f\|$, and $\|M\| \le 1$ (Proposition~\ref{prop:op-norm}(c)). (In fact $\|M\| = 1$: for $f \equiv 1$, $\|Mf\| = \max_t t = 1$.)
+
+\textbf{$\mathbb{C} \setminus [0,1] \subset \rho(M)$.} Let $\lambda \in \mathbb{C} \setminus [0,1]$. \emph{One-to-one:} if $(\lambda I - M) f = 0$, then $(\lambda - t) f(t) = 0$ for all $t \in [0,1]$; since $\lambda - t \neq 0$ there, $f(t) \equiv 0$. \emph{Onto:} for every $g \in C[0,1]$,
+\[
+(\lambda I - M) f = g \quad \Longleftrightarrow \quad (\lambda - t) f(t) = g(t) \quad \Longleftrightarrow \quad f(t) = \frac{g(t)}{\lambda - t} ,
+\]
+and this $f$ belongs to $C[0,1]$, as a quotient of continuous functions whose denominator has no zero on $[0,1]$. So $\lambda I - M$ is one-to-one and onto.
+
+\textbf{$[0,1] \subset \sigma_r(M)$.} Let $\lambda_0 \in [0,1]$.
+
+\emph{$\lambda_0 I - M$ is one-to-one.} If $(\lambda_0 I - M) f(t) = (\lambda_0 - t) f(t) = 0$ for all $t$, then $f(t) = 0$ for all $t \neq \lambda_0$. Since $f$ is continuous, also $f(\lambda_0) = \lim_{t \to \lambda_0} f(t) = 0$. So $f(t) \equiv 0$ on $[0,1]$. In particular $\lambda_0 \notin \sigma_p(M)$.
+
+\emph{Claim: $R(\lambda_0 I - M) \neq C[0,1]$, and the range is not dense.} Let $g \in R(\lambda_0 I - M)$. Then there is $f \in C[0,1]$ with $(\lambda_0 - t) f(t) = g(t)$ for all $t$; at $t = \lambda_0$ this gives $g(\lambda_0) = 0$. Hence
+\[
+R(\lambda_0 I - M) \subset Z := \{ g \in C[0,1] : g(\lambda_0) = 0 \} \subsetneq C[0,1] ,
+\]
+where $Z \neq C[0,1]$ because the constant function $1$ is not in $Z$. %% FILL-IN: why the closure of the range stays inside Z.
+The set $Z$ is closed: if $g_n \in Z$ and $g_n \to g$ in the maximum norm, then $|g(\lambda_0)| = |g(\lambda_0) - g_n(\lambda_0)| \le \|g - g_n\| \to 0$, so $g \in Z$. A closed set that contains $R(\lambda_0 I - M)$ contains its closure (Definition~\ref{def:closure}), so
+\[
+\overline{R(\lambda_0 I - M)} \subset \{ g \in C[0,1] : g(\lambda_0) = 0 \} \subsetneq C[0,1] .
+\]
+By Definition~\ref{def:residual-spectrum}, $\lambda_0 \in \sigma_r(M)$.
+
+\textbf{Conclusion.} $\mathbb{C} \setminus [0,1] \subset \rho(M)$ and $[0,1] \subset \sigma_r(M) \subset \sigma(M) = \mathbb{C} \setminus \rho(M)$. Hence $\rho(M) = \mathbb{C} \setminus [0,1]$ and $\sigma_r(M) = [0,1] = \sigma(M)$; by Proposition~\ref{prop:spectrum-parts}, $\sigma_p(M)$ and $\sigma_c(M)$ are empty.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, xscale=6.2, yscale=1.9]
+    \draw[->] (0,0) -- (1.12,0) node[right] {$t$};
+    \draw[->] (0,0) -- (0,1.35);
+    \draw[thick, gray] (0,1) -- (1,1);
+    \draw[thick, blue!65!black, domain=0:1, samples=160, smooth] plot (\x, {1 - exp(-((\x-0.4)/0.07)^2)});
+    \draw[<->, thick, red!70!black] (0.4,0.03) -- (0.4,0.97);
+    \node[red!70!black, font=\scriptsize, anchor=west] at (0.47,0.42) {$|1 - g(\lambda_0)| = 1$};
+    \node[below, font=\scriptsize] at (0.4,0) {$\lambda_0$};
+    \node[below, font=\scriptsize] at (1,0) {$1$};
+    \node[below, font=\scriptsize] at (0,0) {$0$};
+    \node[left, font=\scriptsize] at (0,1) {$1$};
+    \node[gray, font=\scriptsize, anchor=south] at (0.85,1) {the constant $1$};
+    \node[blue!65!black, font=\scriptsize, anchor=north] at (0.82,0.93) {$g \in R(\lambda_0 I - M)$};
+\end{tikzpicture}
+\end{center}
+Why the range is not dense in $C[0,1]$: every $g$ in the range vanishes at $\lambda_0$, so $\|1 - g\| \ge |1 - g(\lambda_0)| = 1$, however narrow the notch of $g$ at $\lambda_0$ is. In the maximum norm the constant $1$ stays at distance $1$ from the range. (Not from lecture; figure added.)
+%% <<< END ADDED
+
+\begin{exbox}[{{Multiplication by $t$ on $L^2[0,1]$}}]\boxlabel{ex:mult-L2}
+Let $X = L^2[0,1]$ and $M f(t) = t f(t)$. Then $M : L^2[0,1] \to L^2[0,1]$, $M \in \mathcal{L}(L^2[0,1], L^2[0,1])$ with $\|M\| \le 1$, and
+\[
+\rho(M) = \mathbb{C} \setminus [0,1] , \qquad \sigma(M) = [0,1] = \sigma_c(M) , \qquad \sigma_p(M) = \sigma_r(M) = \varnothing .
+\]
+\end{exbox}
+
+\begin{proof}
+\textbf{$M$ is bounded.} %% FILL-IN: M is well defined and bounded on L^2 (not written in the notes).
+If $f = \tilde f$ almost everywhere, then $t f(t) = t \tilde f(t)$ almost everywhere, so $M$ is defined on the elements of $L^2[0,1]$. Since $|t f(t)| \le |f(t)|$ on $[0,1]$, $\|Mf\|_{L^2} \le \|f\|_{L^2}$, so $M \in \mathcal{L}(L^2[0,1], L^2[0,1])$ with $\|M\| \le 1$.
+
+\textbf{$\mathbb{C} \setminus [0,1] \subset \rho(M)$.} Let $\lambda \in \mathbb{C}$, $\lambda \notin [0,1]$. Then $(\lambda I - M) f(t) = (\lambda - t) f(t)$, and
+\[
+d := \operatorname{dist}(\lambda, [0,1]) = \min_{t \in [0,1]} |\lambda - t| > 0 ,
+\]
+so $\lambda I - M : L^2[0,1] \to L^2[0,1]$ is invertible. %% FILL-IN: the inverse and its bound.
+\emph{One-to-one:} if $(\lambda - t) f(t) = 0$ for almost every $t$, then $f(t) = 0$ for almost every $t$, because $\lambda - t \neq 0$. \emph{Onto:} for $g \in L^2[0,1]$ the function $f(t) = \frac{g(t)}{\lambda - t}$ is measurable with $|f(t)| \le \frac{1}{d} |g(t)|$, so $f \in L^2[0,1]$, and $(\lambda I - M) f = g$. The same bound shows $\|R(\lambda; M) g\|_{L^2} \le \frac{1}{d} \|g\|_{L^2}$, that is, $\|R(\lambda; M)\| \le \frac{1}{\operatorname{dist}(\lambda, [0,1])}$.
+
+\textbf{$[0,1] \subset \sigma_c(M)$.} Let $\lambda_0 \in [0,1]$. Then $(\lambda_0 I - M) f(t) = (\lambda_0 - t) f(t)$.
+
+\emph{$\lambda_0 I - M$ is one-to-one.} %% FILL-IN: one-to-one in L^2.
+If $(\lambda_0 - t) f(t) = 0$ for almost every $t$, then $f(t) = 0$ for almost every $t \neq \lambda_0$; the single point $\lambda_0$ has measure zero, so $f = 0$ in $L^2[0,1]$. In particular $\lambda_0 \notin \sigma_p(M)$.
+
+\emph{Claim: $\overline{R(\lambda_0 I - M)} = L^2[0,1]$.} Step 1. Let $g \in L^2[0,1]$, and for $\varepsilon > 0$ let
+\[
+g_\varepsilon(t) = \begin{cases} g(t), & |t - \lambda_0| > \varepsilon, \\ 0, & |t - \lambda_0| \le \varepsilon. \end{cases}
+\]
+Then
+\[
+\|g - g_\varepsilon\|_{L^2}^2 = \int_{[0,1] \cap [\lambda_0 - \varepsilon,\, \lambda_0 + \varepsilon]} |g(t)|^2\, dt \to 0 \qquad \text{as } \varepsilon \to 0 .
+\]
+%% FILL-IN: why the integral tends to 0.
+(By the dominated convergence theorem: the integrand $|g|^2 \chi_{\{ |t - \lambda_0| \le \varepsilon \}}$ tends to $0$ at every $t \neq \lambda_0$ as $\varepsilon \to 0$, and it is dominated by the integrable function $|g|^2$.)
+
+Step 2. $g_\varepsilon \in R(\lambda_0 I - M)$ for every $\varepsilon > 0$. Indeed,
+\[
+(\lambda_0 I - M) f = g_\varepsilon \quad \Longleftrightarrow \quad (\lambda_0 - t) f(t) = g_\varepsilon(t) \quad \Longleftrightarrow \quad f(t) = \frac{g_\varepsilon(t)}{\lambda_0 - t} = \begin{cases} \dfrac{g(t)}{\lambda_0 - t}, & |t - \lambda_0| > \varepsilon, \\[1ex] 0, & |t - \lambda_0| \le \varepsilon, \end{cases}
+\]
+(equalities for almost every $t$), %% FILL-IN: why this f is in L^2.
+and this $f$ belongs to $L^2[0,1]$: it is measurable, and $|f(t)| \le \frac{1}{\varepsilon} |g(t)|$, because $\frac{1}{|\lambda_0 - t|} < \frac{1}{\varepsilon}$ where $f(t) \neq 0$. So $g_\varepsilon \in R(\lambda_0 I - M)$. By Step 1 every $g \in L^2[0,1]$ is a limit of elements of the range, hence $\overline{R(\lambda_0 I - M)} = L^2[0,1]$.
+
+%% FIGURE (board): the two sketches next to the claim, redrawn from the notes: a constant with a notch at lambda_0, and g_epsilon for a general g
+\begin{center}
+\begin{tikzpicture}[>=stealth, xscale=5.2, yscale=1.5]
+    \begin{scope}[shift={(0,1.75)}]
+        \draw[->] (0,0) -- (1.12,0);
+        \draw[thick, blue!65!black] (0,0.95) -- (0.44,0.95);
+        \draw[thick, blue!65!black] (0.56,0.95) -- (1.05,0.95);
+        \draw[thick, blue!65!black] (0.44,0) -- (0.56,0);
+        \draw[densely dotted, blue!65!black] (0.44,0) -- (0.44,0.95);
+        \draw[densely dotted, blue!65!black] (0.56,0) -- (0.56,0.95);
+        \node[below, font=\scriptsize] at (0.5,0) {$\lambda_0$};
+    \end{scope}
+    \draw[->] (0,0) -- (1.12,0) node[right] {$t$};
+    \draw[thick, red!70!black, domain=0:0.4, samples=40, smooth] plot (\x, {0.25+1.9*\x-1.2*\x*\x});
+    \draw[thick, red!70!black, domain=0.6:1.05, samples=40, smooth] plot (\x, {0.25+1.9*\x-1.2*\x*\x});
+    \draw[thick, red!70!black] (0.4,0) -- (0.6,0);
+    \draw[gray, densely dotted, domain=0.4:0.6, samples=20] plot (\x, {0.25+1.9*\x-1.2*\x*\x});
+    \draw[dashed, gray] (0.4,0) -- (0.4,0.818);
+    \draw[dashed, gray] (0.6,0) -- (0.6,0.958);
+    \node[below, font=\scriptsize] at (0.37,0) {$\lambda_0 - \varepsilon$};
+    \node[below, font=\scriptsize] at (0.5,-0.02) {$\lambda_0$};
+    \node[below, font=\scriptsize] at (0.64,0) {$\lambda_0 + \varepsilon$};
+    \node[red!70!black, anchor=east] at (0.1,0.75) {$g_\varepsilon$};
+    \node[gray, font=\scriptsize] at (0.5,1.03) {$g$};
+\end{tikzpicture}
+\end{center}
+Top: the cut-off of a constant function. Bottom: $g_\varepsilon$ (red) equals $g$ outside $[\lambda_0 - \varepsilon, \lambda_0 + \varepsilon]$ and is $0$ inside. Cutting $g$ off near $\lambda_0$ changes it little in $L^2$, and the cut-off function is in the range.
+
+\emph{Claim: $R(\lambda_0 I - M) \neq L^2[0,1]$.} If $g \in R(\lambda_0 I - M)$, the solution $f$ of $(\lambda_0 I - M) f = g$ has to be $f(t) = \frac{g(t)}{\lambda_0 - t}$. Let $g \equiv 1$: then $f(t) = \frac{1}{\lambda_0 - t} \notin L^2[0,1]$. %% FILL-IN: why 1/(lambda_0 - t) is not square integrable, and the conclusion.
+In detail: if $(\lambda_0 - t) f(t) = 1$ for almost every $t$, then $f(t) = \frac{1}{\lambda_0 - t}$ for almost every $t$. The interval $[0,1]$ contains $[\lambda_0, \lambda_0 + \frac12]$ or $[\lambda_0 - \frac12, \lambda_0]$, and over either of them
+\[
+\int \frac{dt}{|\lambda_0 - t|^2} = \int_0^{1/2} \frac{ds}{s^2} = \lim_{a \to 0^+} \Bigl( \frac1a - 2 \Bigr) = \infty .
+\]
+So no $f \in L^2[0,1]$ solves $(\lambda_0 I - M) f = 1$: the constant $1$ is not in $R(\lambda_0 I - M)$. By Definition~\ref{def:continuous-spectrum}, $\lambda_0 \in \sigma_c(M)$.
+
+\textbf{Conclusion.} $\mathbb{C} \setminus [0,1] \subset \rho(M)$ and $[0,1] \subset \sigma_c(M) \subset \sigma(M)$. Hence $\rho(M) = \mathbb{C} \setminus [0,1]$ and $\sigma(M) = \sigma_c(M) = [0,1]$; by Proposition~\ref{prop:spectrum-parts}, $\sigma_p(M)$ and $\sigma_r(M)$ are empty.
+\end{proof}
+
+%% >>> ADDED: figure, proposition and remarks (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth, scale=2.6]
+    \draw[->] (-0.7,0) -- (1.9,0) node[right, font=\scriptsize] {$\operatorname{Re} \lambda$};
+    \draw[->] (0,-0.55) -- (0,1.0) node[above, font=\scriptsize] {$\operatorname{Im} \lambda$};
+    \draw[line width=2.2pt, red!70!black] (0,0) -- (1,0);
+    \node[below left, font=\scriptsize] at (0,0) {$0$};
+    \node[below, font=\scriptsize] at (1,0) {$1$};
+    \node[red!70!black, font=\scriptsize, anchor=north] at (0.5,-0.08) {$\sigma(M) = [0,1]$};
+    \fill[blue!65!black] (0.7,0.6) circle (0.6pt) node[above, font=\scriptsize] {$\lambda$};
+    \draw[dashed, blue!65!black] (0.7,0.6) -- node[right, font=\scriptsize] {$d$} (0.7,0);
+    \fill[blue!65!black] (1.5,0.35) circle (0.6pt) node[above, font=\scriptsize] {$\lambda$};
+    \draw[dashed, blue!65!black] (1.5,0.35) -- node[above, font=\scriptsize, pos=0.4] {$d$} (1,0);
+    \node[blue!65!black, font=\scriptsize, anchor=west] at (1.05,0.85) {$\rho(M) = \mathbb{C} \setminus [0,1]$};
+\end{tikzpicture}
+\end{center}
+The spectrum of multiplication by $t$ is the interval $[0,1]$ of the values of $t$, both on $C[0,1]$ and on $L^2[0,1]$. For $\lambda$ off the interval, $d = \operatorname{dist}(\lambda, [0,1])$ is the smallest value of $|\lambda - t|$, and the inverse is division by $\lambda - t$, of norm at most $\frac1d$. (Not from lecture; figure added.)
+
+\begin{propbox}[{{Approximate Eigenvectors of Multiplication by $t$}}]\boxlabel{prop:mult-approx-eigen}
+\textit{(Not from lecture; filled in.)} Let $M f(t) = t f(t)$ on $L^2[0,1]$ and $\lambda_0 \in [0,1]$. For $0 < \varepsilon \le \frac12$ let $J_\varepsilon = [0,1] \cap [\lambda_0 - \varepsilon, \lambda_0 + \varepsilon]$, an interval of length $|J_\varepsilon| \ge \varepsilon$, and
+\[
+\varphi_\varepsilon = \frac{1}{\sqrt{|J_\varepsilon|}}\, \chi_{J_\varepsilon} .
+\]
+Then $\|\varphi_\varepsilon\|_{L^2} = 1$ and $\|(\lambda_0 I - M) \varphi_\varepsilon\|_{L^2} \le \varepsilon$. Consequently there is no constant $c$ with $\|f\|_{L^2} \le c\, \|(\lambda_0 I - M) f\|_{L^2}$ for all $f \in L^2[0,1]$.
+\end{propbox}
+
+\begin{proof}
+$\|\varphi_\varepsilon\|_{L^2}^2 = \frac{1}{|J_\varepsilon|} \int_{J_\varepsilon} dt = 1$. On $J_\varepsilon$, $|\lambda_0 - t| \le \varepsilon$, so
+\[
+\|(\lambda_0 I - M) \varphi_\varepsilon\|_{L^2}^2 = \frac{1}{|J_\varepsilon|} \int_{J_\varepsilon} |\lambda_0 - t|^2\, dt \le \varepsilon^2 .
+\]
+If $\|f\|_{L^2} \le c\, \|(\lambda_0 I - M) f\|_{L^2}$ held for all $f$, then $f = \varphi_\varepsilon$ would give $1 \le c\, \varepsilon$ for every $\varepsilon \in (0, \frac12]$, which is false for $\varepsilon < \frac1c$.
+\end{proof}
+
+\begin{rembox}[Reading the Approximate Eigenvectors]\label{rem:mult-approx-eigen}
+The functions $\varphi_\varepsilon$ are unit vectors with $M \varphi_\varepsilon - \lambda_0 \varphi_\varepsilon \to 0$: they satisfy the eigenvalue equation up to an error that tends to $0$, although no eigenvector exists. The proposition gives a second reason why $\lambda_0 \in \sigma(M)$, without looking at the range. If $\lambda_0$ were in $\rho(M)$, then $R(\lambda_0; M)$ would be bounded (Proposition~\ref{prop:resolvent-bounded}), and $\|f\| = \|R(\lambda_0; M)(\lambda_0 I - M) f\| \le \|R(\lambda_0; M)\|\, \|(\lambda_0 I - M) f\|$ would be a bound of the excluded kind.
+\end{rembox}
+
+\begin{rembox}[What the Examples Show]\label{rem:mult-compare}
+In both examples $\sigma_p(M) = \varnothing$: multiplication by $t$ has no eigenvectors, yet its spectrum is the whole interval of the values of $t$. The spectrum, not the set of eigenvalues, is the right generalization of the eigenvalues of a matrix. Which part of the spectrum the interval $[0,1]$ is depends on the space. In $C[0,1]$ every function in the range vanishes at $\lambda_0$; this is a closed condition, and the range is far from dense. In $L^2[0,1]$ a single point does not matter, and the range is dense. In both cases $\sigma(M)$ is a nonempty, closed and bounded set, as it is for every bounded operator on a Banach space over $\mathbb{C}$ (Lax \S17.1, Thm~4(i)). Lax's Chapter~20 computes the spectra of further operators: shifts (\S20.2), Volterra integral operators (\S20.3) and the Fourier transform (\S20.4).
+\end{rembox}
+
+\begin{rembox}[The Position Operator]\label{rem:mult-position}
+In quantum mechanics multiplication by the coordinate on $L^2$ is the position operator (\ref{sec:qm-continuous}, there on $L^2(\mathbb{R})$). Proposition~\ref{prop:no-eigen} of that section is the statement $\sigma_p(M) = \varnothing$. Example~\ref{ex:mult-L2} says where the ``position eigenvalues'' of physics are: every $\lambda_0$ in the interval belongs to the spectrum, as a point of the continuous spectrum and not as an eigenvalue. The ``eigenfunction'' $\delta(t - \lambda_0)$ of the physics texts is not an element of $L^2$; what exists in $L^2$ are the approximate eigenvectors $\varphi_\varepsilon$ of Proposition~\ref{prop:mult-approx-eigen}, wave packets concentrated within $\varepsilon$ of $\lambda_0$.
+\end{rembox}
+%% <<< END ADDED
+
+% ============================================================================
 % CHAPTER 9: FUNCTIONAL ANALYSIS AND QUANTUM MECHANICS
 % ============================================================================
 % Companion chapter, not lecture material. Started after Lecture 8 (2026-09-24);
@@ -11662,7 +12436,7 @@ $R(a) \in H'$ is part (1) of the Riesz representation theorem (Theorem~\ref{thm:
 \end{proof}
 
 \begin{rembox}\label{rem:qm-riesz}
-The Riesz map needs no basis, only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast MATH 591: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis --- the inner product is exactly the extra structure that removes the choice. The price is that $R$ is conjugate-linear, so over $\mathbb{C}$ the identification is with the complex conjugate space $\overline{H}$; in finite dimensions this is the conjugate transpose (Example~\ref{ex:riesz-map-cn-conjugate-transpose}). For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object (\S\ref{sec:dual}, \S\ref{sec:duality}).
+The Riesz map needs no basis, only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast MATH 591: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis --- the inner product is exactly the extra structure that removes the choice. The price is that $R$ is conjugate-linear, so over $\mathbb{C}$ the identification is with the complex conjugate space $\overline{H}$; in finite dimensions this is the conjugate transpose (Example~\ref{ex:riesz-map-cn-conjugate-transpose}). For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object (\ref{sec:dual}, \ref{sec:duality}).
 \end{rembox}
 
 \begin{exbox}[The Riesz Map on $\mathbb{C}^n$ is the Conjugate Transpose]\boxlabel{ex:riesz-map-cn-conjugate-transpose}
@@ -11719,9 +12493,9 @@ The physicists' identity $\sum_n |e_n\rangle\langle e_n| = \Id$ is Theorem~\ref{
 
 \subsection{Operators and Projections}
 
-Recall (Definition~\ref{def:bounded-map}) that a linear map $T : X \to Y$ between normed linear spaces is bounded if there is $M \ge 0$ with $\|Tx\|_Y \le M\,\|x\|_X$ for all $x \in X$, and that its norm is $\|T\| = \sup_{x \neq 0} \|Tx\|_Y / \|x\|_X$ (Definition~\ref{def:operator-norm}). In this chapter $X = Y = H$ is a Hilbert space: a bounded linear map $T : H \to H$ is called a \emph{bounded operator} on $H$, and $\|T\|$ its \emph{operator norm}. The identity operator is written $\Id$. As for functionals (\S\ref{sec:qm-riesz}), a constant $c \ge 0$ is called \emph{admissible} for $T$ if $\|Tx\| \le c\,\|x\|$ for all $x \in H$; by Proposition~\ref{prop:op-norm}, parts (b) and (c), $\|T\|$ is admissible, that is, $\|Tx\| \le \|T\|\,\|x\|$ for all $x \in H$, and it is the smallest admissible constant.
+Recall (Definition~\ref{def:bounded-map}) that a linear map $T : X \to Y$ between normed linear spaces is bounded if there is $M \ge 0$ with $\|Tx\|_Y \le M\,\|x\|_X$ for all $x \in X$, and that its norm is $\|T\| = \sup_{x \neq 0} \|Tx\|_Y / \|x\|_X$ (Definition~\ref{def:operator-norm}). In this chapter $X = Y = H$ is a Hilbert space: a bounded linear map $T : H \to H$ is called a \emph{bounded operator} on $H$, and $\|T\|$ its \emph{operator norm}. The identity operator is written $\Id$. As for functionals (\ref{sec:qm-riesz}), a constant $c \ge 0$ is called \emph{admissible} for $T$ if $\|Tx\| \le c\,\|x\|$ for all $x \in H$; by Proposition~\ref{prop:op-norm}, parts (b) and (c), $\|T\|$ is admissible, that is, $\|Tx\| \le \|T\|\,\|x\|$ for all $x \in H$, and it is the smallest admissible constant.
 
-Recall the modes of convergence of \S\ref{sec:op-convergence}, for bounded operators $T_n$, $n = 1, 2, \ldots$, and $T$ on a Hilbert space $H$: $\{T_n\}$ converges \emph{strongly} to $T$ if $T_n x \to T x$ in $H$ for every $x \in H$ (Definition~\ref{def:op-strong}), and it converges to $T$ \emph{in norm}, or uniformly, if $\|T_n - T\| \to 0$ in the operator norm (Definition~\ref{def:op-uniform}). Norm convergence implies strong convergence, since $\|T_n x - Tx\| \le \|T_n - T\|\,\|x\|$ for every $x \in H$ (Proposition~\ref{prop:op-conv-chain}(1)).
+Recall the modes of convergence of \ref{sec:op-convergence}, for bounded operators $T_n$, $n = 1, 2, \ldots$, and $T$ on a Hilbert space $H$: $\{T_n\}$ converges \emph{strongly} to $T$ if $T_n x \to T x$ in $H$ for every $x \in H$ (Definition~\ref{def:op-strong}), and it converges to $T$ \emph{in norm}, or uniformly, if $\|T_n - T\| \to 0$ in the operator norm (Definition~\ref{def:op-uniform}). Norm convergence implies strong convergence, since $\|T_n x - Tx\| \le \|T_n - T\|\,\|x\|$ for every $x \in H$ (Proposition~\ref{prop:op-conv-chain}(1)).
 
 \begin{defbox}[Orthogonal Projection]\boxlabel{def:orth-proj}
 Let $Y$ be a closed subspace of a Hilbert space $H$. By Theorem~\ref{thm:orth-decomp} every $x \in H$ is uniquely $x = y + v$ with $y \in Y$, $v \in Y^\perp$. The \textbf{orthogonal projection} onto $Y$ is $P_Y x = y$.
@@ -11785,7 +12559,7 @@ In the notation of these notes the claim is $(x, y) = \sum_n (x, e_n)(e_n, y)$. 
 \end{proof}
 
 \begin{exbox}[A Particle on a Ring]\boxlabel{ex:particle-ring}
-The Fourier basis $e_n(\theta) = e^{in\theta}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, of $L^2[0,2\pi]$ (Theorem~\ref{thm:fourier}) consists of the momentum eigenstates of a particle on a circle: $-i\,\frac{d}{d\theta} e_n = n\,e_n$, and $e_n$ is an eigenfunction of the free Hamiltonian $-\frac12 \frac{d^2}{d\theta^2}$ with energy $n^2/2$. Its completeness relation $\sum_{n \in \mathbb{Z}} |e_n\rangle\langle e_n| = \Id$ is the $L^2$ convergence of Fourier series, and Corollary~\ref{cor:insert} is Parseval's identity $\int_0^{2\pi} f\,\bar{g} = \sum_n c_n(f)\,\overline{c_n(g)}$. The spectrum is discrete because the configuration space is compact; compare \S\ref{sec:qm-continuous}.
+The Fourier basis $e_n(\theta) = e^{in\theta}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, of $L^2[0,2\pi]$ (Theorem~\ref{thm:fourier}) consists of the momentum eigenstates of a particle on a circle: $-i\,\frac{d}{d\theta} e_n = n\,e_n$, and $e_n$ is an eigenfunction of the free Hamiltonian $-\frac12 \frac{d^2}{d\theta^2}$ with energy $n^2/2$. Its completeness relation $\sum_{n \in \mathbb{Z}} |e_n\rangle\langle e_n| = \Id$ is the $L^2$ convergence of Fourier series, and Corollary~\ref{cor:insert} is Parseval's identity $\int_0^{2\pi} f\,\bar{g} = \sum_n c_n(f)\,\overline{c_n(g)}$. The spectrum is discrete because the configuration space is compact; compare \ref{sec:qm-continuous}.
 \end{exbox}
 
 % ============================================================================
@@ -11859,7 +12633,7 @@ Suppose such $\psi$ exists. By Cauchy--Schwarz, $|\varphi(x_0)| = |(\varphi, \ps
 \end{proof}
 
 \begin{rembox}[What $|x_0\rangle$ Would Have to Be]\label{rem:what-x0-would-have}
-In Dirac notation a position eigenstate is characterized by $\langle x_0 | \varphi \rangle = \varphi(x_0)$, i.e.\ $(\varphi, |x_0\rangle) = \varphi(x_0)$. Proposition~\ref{prop:delta} says no element of $L^2$ does this: the functional $\varphi \mapsto \varphi(x_0)$ is unbounded in the $L^2$ norm, so by the Riesz theorem it is not a bra, and $|x_0\rangle$ is not a ket. (Point evaluation is not even well defined on $L^2$, whose elements are functions up to sets of measure zero.) The ``wavefunction'' of $|x_0\rangle$ would be $\delta(x - x_0)$, and the physicists' normalization $\langle x | x' \rangle = \delta(x - x')$ in place of $1$ is the symptom. Proposition~\ref{prop:no-eigen} says the same thing from the operator side: multiplication by $x$ has no eigenvalues at all.
+In Dirac notation a position eigenstate is characterized by $\langle x_0 | \varphi \rangle = \varphi(x_0)$, i.e.\ $(\varphi, |x_0\rangle) = \varphi(x_0)$. Proposition~\ref{prop:delta} says no element of $L^2$ does this: the functional $\varphi \mapsto \varphi(x_0)$ is unbounded in the $L^2$ norm, so by the Riesz theorem it is not a bra, and $|x_0\rangle$ is not a ket. (Point evaluation is not even well defined on $L^2$, whose elements are functions up to sets of measure zero.) The ``wavefunction'' of $|x_0\rangle$ would be $\delta(x - x_0)$, and the physicists' normalization $\langle x | x' \rangle = \delta(x - x')$ in place of $1$ is the symptom. Proposition~\ref{prop:no-eigen} says the same thing from the operator side: multiplication by $x$ has no eigenvalues at all. In the terms of \ref{sec:spectrum}: on $L^2[0,1]$ every $\lambda_0 \in [0,1]$ belongs to the continuous spectrum of multiplication by the variable, and none to the point spectrum (Example~\ref{ex:mult-L2}).
 \end{rembox}
 
 \subsection{The Position Resolution of the Identity}
@@ -12416,6 +13190,7 @@ An element $x \in X$ is also a bounded linear functional on $X'$, $\ell \mapsto 
 \item Criterion for weak convergence (Theorem~\ref{thm:weak-criterion}).
 \item Weakly convergent sequences are bounded (Theorem~\ref{thm:weak-lsc}).
 \item $X$ reflexive $\iff$ $X'$ reflexive (Theorem~\ref{thm:reflexive-dual}): $X$ is a closed subspace of $X''$.
+\item Dunford's theorem (Lecture 21, Theorem~\ref{thm:dunford}): the vectors $x_{h,k}$, the differences of difference quotients divided by $h - k$, are pointwise bounded on $X'$ by Cauchy's integral formula, hence bounded in norm.
 \end{itemize}
 \end{exbox}
 
@@ -12472,6 +13247,20 @@ Statements about transposes are proved by writing everything in the pairing $\la
 \item $(NM)' = M'N'$ (Proposition~\ref{prop:composition}(2)).
 \item Weak convergence passes to transposes when $X$ is reflexive (Proposition~\ref{prop:transpose-weak}): test with $\eta = i(x)$.
 \item The transpose of a Hilbert--Schmidt operator (Proposition~\ref{prop:hilbert-schmidt-transpose}): in $L^2$ the pairing is an integral, and moving the operator across is exchanging the order of integration.
+\end{itemize}
+\end{exbox}
+
+% --------------------------------------------------------------------------
+\subsection{Technique 34: Cut Off Near the Singularity}
+
+\begin{rembox}[Strategy]\label{rem:tech34}
+To show that the range of an operator such as $f \mapsto (\lambda_0 - t) f$ is dense, approximate a target $g$ by $g_\varepsilon$, equal to $g$ away from the bad set $\{ |t - \lambda_0| \le \varepsilon \}$ and $0$ on it. Removing a set of small measure costs little in $L^p$ for $p < \infty$, and away from the singularity the equation can be solved, with the bound $\frac{1}{\varepsilon}$. In the maximum norm this fails: a set of small measure is not small for $\max |\cdot|$. This is why the same operator has a dense range in $L^2[0,1]$ and not in $C[0,1]$.
+\end{rembox}
+
+\begin{exbox}[Applications (Lecture 21)]\boxlabel{ex:tech34}
+\begin{itemize}
+\item $\sigma(M) = \sigma_c(M)$ for multiplication by $t$ on $L^2[0,1]$ (Example~\ref{ex:mult-L2}); contrast Example~\ref{ex:mult-C}, where every function in the range vanishes at $\lambda_0$.
+\item The same cut-off, normalized, gives approximate eigenvectors (Proposition~\ref{prop:mult-approx-eigen}).
 \end{itemize}
 \end{exbox}
 
@@ -12549,7 +13338,7 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:noncompact} Compactness & \S5.2, Thm~6, Lemma~7 & Uniform convexity and Mazur--Ulam (\S5.2 and \S5.3) not covered. \\
 \ref{sec:inner-def}--\ref{sec:parallelogram-law} Inner products & \S6.1 & Jordan--von Neumann is Lax's Exercise~1 (HW3). \\
 \ref{sec:projection} Projection & \S6.2, Thms~2--3 & \\
-\ref{sec:riesz-rep} Riesz representation & \S6.3, Thm~4 & Lax--Milgram (Thm~6) is treated in \S\ref{sec:lax-milgram}. \\
+\ref{sec:riesz-rep} Riesz representation & \S6.3, Thm~4 & Lax--Milgram (Thm~6) is treated in \ref{sec:lax-milgram}. \\
 \ref{sec:onb}--\ref{sec:onb-existence} Orthonormal bases & \S6.4; \S5.1 (separability) & Isometries of $H$ (Thm~10) not covered. Separability of $\ell^p$, $L^p$ proved in the notes (Lax asserts). The classification of separable Hilbert spaces is Lax's Exercise~10 (HW5). \\
 \ref{sec:bounded-maps} Bounded linear maps & \S15.1, Thms~1--3 & Lax assumes Banach spaces throughout \S15.1; not needed for Thm~1. \\
 \ref{sec:dual} Dual spaces & \S8.1, Thm~3; \S8.3, Thm~11; \S6.3, Thm~4, Lemma~5 & The dual is always a Banach space (\S8.1, Thm~3); the Riesz representation theorem with $\|\ell\| = \|a\|$, which Lax's Thm~4 of \S6.3 does not state; $(L^p)' = L^{p'}$ stated (\S8.3, Thm~11). The null space of a functional has codimension one and is closed exactly when the functional is bounded: Lemma~5 of \S6.3 (HW5). The integral functional on $C[0,1]$ (HW8) is not in Lax. These Ch.~8 numbers are the ones on the reference lines of the boxes. \\
@@ -12565,6 +13354,8 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:weak-compact} Weak sequential compactness & \S10.2, Thms~7--10; \S10.3, Thm~12; Ch.~12, Thm~3 & Helly's theorem is \S10.3 Thm~12, there for the closed unit ball of the dual of a separable Banach space; the proof here is the lecture's diagonal process, written out. Eberlein's theorem is \S10.2 Thm~7: Lax runs the diagonal process on a dense subset of $Y'$, the lecture deduces it from Helly's theorem applied to $X'$. The converse is Thm~8 (no proof in Lax), bounded closed convex sets Thm~9, the closest point Thm~10. Alaoglu's theorem is Ch.~12 Thm~3, for the weak-$*$ topology. The examples showing which hypotheses the sequential statements need are not in Lax. \\
 \ref{sec:op-convergence} Convergence of operators & \S15.2; \S15.3, Cor~7$'$ & Lax defines the uniform, strong and weak topologies of $\mathcal{L}(X, U)$ and the corresponding sequential convergence; the boundedness of weakly convergent sequences is Cor~7$'$. The shift examples are not in Lax, whose example in \S15.2 is $M_n x = (a_n, 0, 0, \ldots)$. \\
 \ref{sec:transpose} The transpose & \S15.1, (7)--(8), Thm~5; \S15.2, Exercise~6 and the example after the definitions; \S15.4, Thm~8 & Lax defines the transpose for normed spaces by $\ell(Mx) = (M'\ell)(x)$ and proves Thm~5 (i)--(iv) as in Proposition~\ref{prop:transpose-props} and Theorem~\ref{thm:kernel-range}; ${}^\perp S$ and its closedness are stated before Thm~5. The weak convergence of transposes is his Exercise~6, for reflexive $X$; the converse, which needs no reflexivity, and the closure of the range, $\overline{R(M)} = {}^\perp N(M')$, are not stated there. The example $A_n a = (a_n, 0, 0, \ldots)$ is Lax's. Composition and $(NM)' = M'N'$: \S15.4, Thm~8. Hilbert--Schmidt operators are not in Lax's Chapter 15. \\
+\ref{sec:analytic} Weak and strong analyticity & \S11.4, Thm~4 & Lax's two definitions and Dunford's theorem, with the same proof: Cauchy's integral formula for $\ell(f)$, the second difference quotient $x_{h,k}$ (his (17)), the principle of uniform boundedness. Lax takes any rectifiable curve around the point and leaves the constant unnamed; the lecture takes a circle of radius $r_0$ and $|h|, |k| < \frac{r_0}{2}$. \\
+\ref{sec:spectrum} The resolvent and the spectrum & \S17.1 (definition after Thm~2, Thms~3--4); \S20.1; \S32.1, \S32.3 & Lax defines the resolvent set and the spectrum for an element of a Banach algebra (\S17.1), with $\lambda I - M$ as in the lecture; for maps, invertible means one-to-one and onto, and the inverse is bounded (\S20.1, opening). For unbounded operators the same definition appears in \S32.1 (before Thm~5) and \S32.3, for self-adjoint operators in a Hilbert space. Lax does not divide the spectrum into point, continuous and residual parts (\S20.1 only distinguishes ``not one-to-one'' from ``not onto''); his \S31.4 uses the words for a different decomposition. The two multiplication examples are the lecture's; Lax's examples are shifts, Volterra operators and the Fourier transform (\S20.2--20.4). Not yet covered in the lecture: the resolvent set is open, the resolvent is analytic, and the spectrum is closed, bounded and nonempty (\S17.1, Thms~3--4). \\
 Chapter~\ref{ch:qm} (companion) & --- & Dual spaces return in Lax Ch.~8. \\
 \end{longtable}
 }

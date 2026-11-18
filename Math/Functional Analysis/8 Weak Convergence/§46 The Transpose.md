@@ -5,7 +5,7 @@ chapter: 8
 section: 46
 tags: [functional-analysis, math556]
 ---
-← [[§45 Convergence of Operators]] · ↑ [[· 8 Weak Convergence]] · [[§47 Bras, Kets, and the Riesz Map]] →
+← [[§45 Convergence of Operators]] · ↑ [[· 8 Weak Convergence]] · [[§47 Weak and Strong Analyticity]] →
 
 *Stage: maps — Thread: functionals. $\langle Mx, \ell \rangle = \langle x, M'\ell \rangle$ defines $M' : Y' \to X'$, with $\|M'\| = \|M\|$, $N(M') = R(M)^\perp$ and $(NM)' = M'N'$; weak convergence passes to transposes, strong convergence does not.*
 
@@ -127,8 +127,7 @@ Measure-theoretic facts are used freely in this subsection, as in [[§35 Measure
 ^prop-46-2
 
 > [!proof]+ Proof
-> **Step 1: the integral exists for almost every $x$.**
-> By [[Tonelli's Theorem|Tonelli's theorem]], $x \mapsto k(x) = \bigl( \int_\Omega |K(x, y)|^2\, d\mu(y) \bigr)^{1/2}$ is measurable and $\int_\Omega k(x)^2\, d\mu(x) = \|K\|_{L^2(\mu \times \mu)}^2 < \infty$, so $k(x) < \infty$ for $\mu$-almost every $x$. For such $x$, the Cauchy–Schwarz inequality in $L^2(\mu)$, in the variable $y$ with $x$ fixed (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]), gives
+> **Step 1: the integral exists for almost every $x$.** By [[Tonelli's Theorem|Tonelli's theorem]], $x \mapsto k(x) = \bigl( \int_\Omega |K(x, y)|^2\, d\mu(y) \bigr)^{1/2}$ is measurable and $\int_\Omega k(x)^2\, d\mu(x) = \|K\|_{L^2(\mu \times \mu)}^2 < \infty$, so $k(x) < \infty$ for $\mu$-almost every $x$. For such $x$, the Cauchy–Schwarz inequality in $L^2(\mu)$, in the variable $y$ with $x$ fixed (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]), gives
 >
 > $$
 > \int_\Omega |K(x, y)|\, |f(y)|\, d\mu(y) \le \Bigl( \int_\Omega |K(x, y)|^2\, d\mu(y) \Bigr)^{1/2} \Bigl( \int_\Omega |f(y)|^2\, d\mu(y) \Bigr)^{1/2} = k(x)\, \|f\|_{L^2} < \infty .
@@ -172,8 +171,7 @@ Measure-theoretic facts are used freely in this subsection, as in [[§35 Measure
 ^prop-46-3
 
 > [!proof]+ Proof
-> (1)
-> For $g \in L^2(\mu)$, $\ell_g(f) = \int_\Omega f\, \overline{\overline{g}}\, d\mu = (f, \overline{g})$. By the Riesz representation theorem with norms (Theorem [[§31 Dual Spaces#^thm-31-2|§31.2]]), $\ell_g \in L^2(\mu)'$ and $\|\ell_g\| = \|\overline{g}\|_{L^2} = \|g\|_{L^2}$. The map $g \mapsto \ell_g$ is linear (no conjugation occurs), so it is an isometry (Lemma [[§13 The Completion of a Normed Space#^lem-13-2|§13.2]](1)) and in particular one-to-one. It is onto: by the same theorem every $\ell \in L^2(\mu)'$ is $\ell = (\,\cdot\,, h)$ for some $h \in L^2(\mu)$, and $(\,\cdot\,, h) = \ell_{\overline{h}}$.
+> (1) For $g \in L^2(\mu)$, $\ell_g(f) = \int_\Omega f\, \overline{\overline{g}}\, d\mu = (f, \overline{g})$. By the Riesz representation theorem with norms (Theorem [[§31 Dual Spaces#^thm-31-2|§31.2]]), $\ell_g \in L^2(\mu)'$ and $\|\ell_g\| = \|\overline{g}\|_{L^2} = \|g\|_{L^2}$. The map $g \mapsto \ell_g$ is linear (no conjugation occurs), so it is an isometry (Lemma [[§13 The Completion of a Normed Space#^lem-13-2|§13.2]](1)) and in particular one-to-one. It is onto: by the same theorem every $\ell \in L^2(\mu)'$ is $\ell = (\,\cdot\,, h)$ for some $h \in L^2(\mu)$, and $(\,\cdot\,, h) = \ell_{\overline{h}}$.
 >
 > (2) *$T^t$ is a Hilbert–Schmidt operator.* By Tonelli's theorem $\int_\Omega \int_\Omega |K(y, x)|^2\, d\mu(x)\, d\mu(y) = \|K\|_{L^2(\mu \times \mu)}^2$, so $K^t \in L^2(\mu \times \mu)$, and $T^t$ is bounded by Proposition [[§46 The Transpose#^prop-46-2|§46.2]].
 >
@@ -246,8 +244,7 @@ A kernel and its transpose, drawn like matrices: the value $K(x, y)$ is the colo
 > - In finite dimensions: [[§12 Duality#^ladr-3-120|LADR 3.120]] ((a) sums, (b) scalars, (c) products).
 
 > [!proof]+ Proof
-> (1)
-> If $X = \{0\}$ or $Y = \{0\}$, then $M = 0$ and $M' = 0$, and both norms are $0$. Assume $X \neq \{0\}$ and $Y \neq \{0\}$.
+> (1) If $X = \{0\}$ or $Y = \{0\}$, then $M = 0$ and $M' = 0$, and both norms are $0$. Assume $X \neq \{0\}$ and $Y \neq \{0\}$.
 >
 > *$M'$ is linear.* For $\ell_1, \ell_2 \in Y'$, $c_1, c_2 \in \mathbb{F}$ and $x \in X$, by the definition of the operations on $Y'$,
 >
@@ -273,8 +270,7 @@ A kernel and its transpose, drawn like matrices: the value $K(x, y)$ is the colo
 >
 > using $|(M'\ell)(x)| \le \|M'\ell\|\, \|x\|$, as $M'\ell \in X'$, and Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]](a) for $M'$ in the last step.
 >
-> (2)
-> For $\ell \in Y'$ and $x \in X$, $((M + N)'\ell)(x) = \ell((M + N)x) = \ell(Mx + Nx) = \ell(Mx) + \ell(Nx) = (M'\ell)(x) + (N'\ell)(x)$, by linearity of $\ell$. So $(M + N)'\ell = M'\ell + N'\ell$ for every $\ell$. In the same way $(cM)' = c\, M'$ for $c \in \mathbb{F}$, so $M \mapsto M'$ is a linear map $\mathcal{L}(X, Y) \to \mathcal{L}(Y', X')$, and by (1) it preserves norms.
+> (2) For $\ell \in Y'$ and $x \in X$, $((M + N)'\ell)(x) = \ell((M + N)x) = \ell(Mx + Nx) = \ell(Mx) + \ell(Nx) = (M'\ell)(x) + (N'\ell)(x)$, by linearity of $\ell$. So $(M + N)'\ell = M'\ell + N'\ell$ for every $\ell$. In the same way $(cM)' = c\, M'$ for $c \in \mathbb{F}$, so $M \mapsto M'$ is a linear map $\mathcal{L}(X, Y) \to \mathcal{L}(Y', X')$, and by (1) it preserves norms.
 
 ^pf-46-4
 
@@ -333,8 +329,7 @@ In the lecture the null space and range of $M \in \mathcal{L}(X, Y)$ are written
 >
 > *$R(M)^\perp \subset N(M')$.* Let $\ell \in R(M)^\perp$, i.e. $\ell(Mx) = 0$ for all $x \in X$. Then $(M'\ell)(x) = \ell(Mx) = 0$ for all $x \in X$, so $M'\ell$ is the zero functional: $\ell \in N(M')$.
 >
-> (1)
-> *$N(M) \subset {}^\perp R(M')$.* Let $Mx = 0$. Every element of $R(M')$ is $M'\ell$ for some $\ell \in Y'$, and $(M'\ell)(x) = \ell(Mx) = \ell(0) = 0$. So $x \in {}^\perp R(M')$.
+> (1) *$N(M) \subset {}^\perp R(M')$.* Let $Mx = 0$. Every element of $R(M')$ is $M'\ell$ for some $\ell \in Y'$, and $(M'\ell)(x) = \ell(Mx) = \ell(0) = 0$. So $x \in {}^\perp R(M')$.
 >
 > *${}^\perp R(M') \subset N(M)$.* Let $x \in {}^\perp R(M')$, i.e. $(M'\ell)(x) = 0$ for all $\ell \in Y'$. Then $\ell(Mx) = (M'\ell)(x) = 0$ for every $\ell \in Y'$, so $Mx = 0$, because bounded linear functionals separate points (Corollary [[§36 Duality in Normed Spaces#^cor-36-3|§36.3]], a consequence of Hahn–Banach). So $x \in N(M)$.
 
@@ -457,8 +452,7 @@ The same maps show once more that strong convergence does not imply uniform conv
 ^prop-46-9
 
 > [!proof]+ Proof
-> (1)
-> $NM$ is linear, as a composition of linear maps. By Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]](b), applied to $N$ and then to $M$,
+> (1) $NM$ is linear, as a composition of linear maps. By Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]](b), applied to $N$ and then to $M$,
 >
 > $$
 > \|NMx\| \le \|N\|\, \|Mx\| \le \|N\|\, \|M\|\, \|x\| \qquad \text{for all } x \in X ,

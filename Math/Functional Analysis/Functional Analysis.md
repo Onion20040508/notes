@@ -11,10 +11,10 @@ tags: [subject, functional-analysis]
 ---
 # Functional Analysis
 
-MATH 556, *Applied Functional Analysis* (Fall 2026, Sijue Wu); text Lax, *Functional Analysis* (Chapters 1, 3, 5, 6 and 15). Prerequisites: linear algebra, some complex analysis, advanced calculus; Lebesgue theory is not assumed. Section numbers §1–§50 are the notes' own; every box with a counterpart in Lax ends with it (*Lax: …*), and [[Functional Analysis Lax Concordance]] reads the two side by side. [[Functional Analysis Problem-Solving Techniques]] collects the recurring proof strategies; [[Functional Analysis Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math556_notes.tex`.
+MATH 556, *Applied Functional Analysis* (Fall 2026, Sijue Wu); text Lax, *Functional Analysis* (Chapters 1, 3, 5, 6 and 15). Prerequisites: linear algebra, some complex analysis, advanced calculus; Lebesgue theory is not assumed. Section numbers §1–§52 are the notes' own; every box with a counterpart in Lax ends with it (*Lax: …*), and [[Functional Analysis Lax Concordance]] reads the two side by side. [[Functional Analysis Problem-Solving Techniques]] collects the recurring proof strategies; [[Functional Analysis Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math556_notes.tex`.
 
 ## Roadmap
-The course moves through three stages of structure on a linear space: pure algebra, with no topology at all (Chapters 1–2); a norm, bringing distance, limits and completeness (Chapters 3–4); and an inner product, bringing angles and orthogonality (Chapter 5). Four threads run across the stages, and most theorems of the course are a step along one of them or a point where two of them meet: [[· 6 Bounded Linear Maps|Chapter 6]] begins the study of linear maps between normed spaces, and [[· 7 Inverses, Open Maps, and Baire Category|Chapter 7]] asks when $Mx = y$ can be solved stably (Banach's inverse mapping theorem, the Baire category theorem), and [[· 8 Weak Convergence|Chapter 8]] weakens convergence to recover some of the compactness lost in infinite dimensions (weak and weak-star convergence, Mazur's theorem; the theorems of Helly and Eberlein on convergent subsequences, closest points in reflexive spaces; the three modes of convergence of operators and the transpose of a bounded map).
+The course moves through three stages of structure on a linear space: pure algebra, with no topology at all (Chapters 1–2); a norm, bringing distance, limits and completeness (Chapters 3–4); and an inner product, bringing angles and orthogonality (Chapter 5). Four threads run across the stages, and most theorems of the course are a step along one of them or a point where two of them meet: [[· 6 Bounded Linear Maps|Chapter 6]] begins the study of linear maps between normed spaces, and [[· 7 Inverses, Open Maps, and Baire Category|Chapter 7]] asks when $Mx = y$ can be solved stably (Banach's inverse mapping theorem, the Baire category theorem), and [[· 8 Weak Convergence|Chapter 8]] weakens convergence to recover some of the compactness lost in infinite dimensions (weak and weak-star convergence, Mazur's theorem; the theorems of Helly and Eberlein on convergent subsequences, closest points in reflexive spaces; the three modes of convergence of operators and the transpose of a bounded map; Dunford's theorem on weakly analytic vector-valued functions; the resolvent and the spectrum of an operator, with its point, continuous and residual parts).
 - **Functionals**: linear functionals are constructed by Hahn–Banach in the algebraic stage and, on a Hilbert space, are all identified by the Riesz representation theorem.
 - **Convexity**: convex sets correspond to positive homogeneous subadditive functions through the gauge; a norm is the gauge of its unit ball; in a Hilbert space a closed convex set has closest points.
 - **Completeness**: limits must be produced, not assumed — the completion, the Banach spaces $\ell^p$ and $L^p$, and the convergence of orthonormal expansions.
@@ -65,7 +65,7 @@ graph TD
   X2 -.->|12| C4
   X2 -.->|13| C5
   X2 -.->|13| C6
-  X2 -.->|3| C8
+  X2 -.->|4| C8
   X2 -.->|3| C9
   X5 -.->|2| C6
   X4 -.->|2| C2
@@ -133,9 +133,9 @@ graph TD
 - [[Uniform Boundedness Principle]] (§42.6)
 - [[Banach–Steinhaus Theorem]] (§42.7)
 - [[Lax Equivalence Theorem]] (§42.9)
-- [[Criterion for Weak Convergence]] (§43.3)
-- [[Hyperplane Separation in a Normed Space]] (§43.5)
-- [[Mazur's Theorem]] (§43.7)
+- [[Criterion for Weak Convergence]] (§43.5)
+- [[Hyperplane Separation in a Normed Space]] (§43.8)
+- [[Mazur's Theorem]] (§43.10)
 - [[Helly's Theorem]] (§44.1)
 - [[Eberlein's Theorem]] (§44.4)
 - [[Alaoglu's Theorem]] (§44.9)
@@ -143,6 +143,7 @@ graph TD
 - [[Hilbert–Schmidt Operators Are Bounded]] (§46.2)
 - [[The Transpose Has the Same Norm]] (§46.4)
 - [[Null Spaces and Ranges of a Map and its Transpose]] (§46.6)
+- [[Dunford's Theorem]] (§47.3)
 
 ## Summaries
 - [[Functional Analysis Lax Concordance]]: notation, where the course's route differs from Lax's, the chapter map, and every Lax result cited in these notes with its counterpart here.
@@ -160,7 +161,7 @@ The results from other subjects that this course's proofs and definitions cite m
 
 **[[Measure Theory]]**
 - [[Countable Union of Countable Sets is Countable]] (5)
-- [[Dominated Convergence Theorem]] (3)
+- [[Dominated Convergence Theorem]] (4)
 - [[§35 Lᵖ as a Banach Space#^thm-35-12|Theorem §35.12: Density in Lᵖ]] (3)
 - [[Minkowski's Inequality]] (2)
 - [[Monotone Convergence Theorem (Lebesgue)]] (2)

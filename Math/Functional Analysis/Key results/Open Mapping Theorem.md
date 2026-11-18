@@ -15,6 +15,7 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§42 Uniform Boundedness and Approximation#^thm-42-2|Theorem §42.2: Open Mapping Theorem, General Form]]
+- [[§48 The Resolvent and the Spectrum#^prop-48-2|Proposition §48.2: The Inverse of lambda I − M is Bounded]]
 
 ## Connections
 - **How.** By [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]], $M(B(0,1))$ contains a ball $B(0,\delta)$. Translating and scaling, $M(B(x, r)) \supset B(Mx, r\delta)$, so the image of an open set contains a ball about each of its points. The work is in §41.1: the [[Baire Category Theorem]] gives a ball in the closure of the image, and successive approximation removes the closure ([[Functional Analysis Problem-Solving Techniques#^rem-t26|Technique 26]]).

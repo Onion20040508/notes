@@ -40,7 +40,7 @@ The modes of convergence for vectors (Definition [[§43 Weak and Weak-Star Conve
 ^def-45-2
 
 > [!remark]- Connections
-> - Used in the companion chapter for the completeness relation: [[§48 The Completeness Relation#^thm-48-2|§48.2]] (strong) against [[§48 The Completeness Relation#^prop-48-3|§48.3]] (not in norm).
+> - Used in the companion chapter for the completeness relation: [[§50 The Completeness Relation#^thm-50-2|§50.2]] (strong) against [[§50 The Completeness Relation#^prop-50-3|§50.3]] (not in norm).
 
 > [!definition] Definition §45.3: Weak Convergence of Operators
 > The sequence $\{A_n\}_{n=1}^\infty$ **converges weakly** to $A_0$, written $A_n \rightharpoonup A_0$ as $n \to \infty$ or $\mathop{\text{w-lim}}_{n \to \infty} A_n = A_0$, if for every $x \in X$ and every $\ell \in Y'$
@@ -102,7 +102,7 @@ Uniform convergence is convergence in the normed linear space $\mathcal{L}(X, Y)
 > [!proof]+ Proof
 > The notes say: by the uniform boundedness principle.
 >
-> **Step 1: pointwise bounded.** Fix $x \in X$. By hypothesis $A_n x \rightharpoonup A_0 x$ in $Y$. A weakly convergent sequence is bounded (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-4|§43.4]]), so
+> **Step 1: pointwise bounded.** Fix $x \in X$. By hypothesis $A_n x \rightharpoonup A_0 x$ in $Y$. A weakly convergent sequence is bounded (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-6|§43.6]]), so
 >
 > $$
 > \sup_n \|A_n x\|_Y < \infty \qquad \text{for every } x \in X .
@@ -112,10 +112,10 @@ Uniform convergence is convergence in the normed linear space $\mathcal{L}(X, Y)
 
 ^pf-45-2
 
-*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-4|§43.4]], [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]
+*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-6|§43.6]], [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]
 
 > [!remark] Remark: Completeness of the Domain
-> The notes state the theorem for normed linear spaces $X$ and $Y$. Step 2 uses the completeness of $X$, and without it the conclusion can fail: on $X = c_{00}$ the functionals $\ell_n(x) = n\, x_n$ converge to $0$ at every point, hence strongly and weakly as maps $c_{00} \to \mathbb{F}$, while $\|\ell_n\| = n$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-7|§43.7]]). Completeness of $Y$ is not needed: Step 1 uses the uniform boundedness principle on the dual $Y'$, which is always complete.
+> The notes state the theorem for normed linear spaces $X$ and $Y$. Step 2 uses the completeness of $X$, and without it the conclusion can fail: on $X = c_{00}$ the functionals $\ell_n(x) = n\, x_n$ converge to $0$ at every point, hence strongly and weakly as maps $c_{00} \to \mathbb{F}$, while $\|\ell_n\| = n$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-8|§43.8]]). Completeness of $Y$ is not needed: Step 1 uses the uniform boundedness principle on the dual $Y'$, which is always complete.
 
 ^rem-45-1
 
@@ -202,4 +202,4 @@ The two shifts applied to $x = (1, 0.8, 0.8^2, \ldots)$, entries drawn as bars. 
 
 *(Not from lecture; animation added, vault only.)* The powers $T^j$ and $S^j$ for $j = 0, 1, \ldots, 16$, applied to $x_i = 0.82^{\,i-1}$. Top left: $T^j x$ (blue) over $x$ (grey); the bars that remain are the tail of $x$. Bottom left: $S^j x$ (red) moving to the right over a fixed $y \in \ell^2$ (grey). Right: $\|T^j x\|$ decreases to $0$, $\|S^j x\|$ stays equal to $\|x\|$, and $|(S^j x, y)|$ decreases to $0$.
 
-A third instance is in the companion chapter: for a complete orthonormal set $\{e_n\}$ in a Hilbert space, the partial sums $P_N$ of the completeness relation converge to the identity strongly (Theorem [[§48 The Completeness Relation#^thm-48-2|§48.2]]) but not uniformly (Proposition [[§48 The Completeness Relation#^prop-48-3|§48.3]]).
+A third instance is in the companion chapter: for a complete orthonormal set $\{e_n\}$ in a Hilbert space, the partial sums $P_N$ of the completeness relation converge to the identity strongly (Theorem [[§50 The Completeness Relation#^thm-50-2|§50.2]]) but not uniformly (Proposition [[§50 The Completeness Relation#^prop-50-3|§50.3]]).

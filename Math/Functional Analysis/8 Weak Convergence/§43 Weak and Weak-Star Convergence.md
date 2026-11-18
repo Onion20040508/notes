@@ -72,6 +72,44 @@ Recall that the closed unit ball in $\mathbb{R}^n$ is compact, while the closed 
 
 If a sequence could converge weakly to two different limits, the notion would make no sense.
 
+> [!theorem] Proposition §43.2: Weak and Strong Convergence Agree in Finite Dimensions
+> Let $X$ be a finite-dimensional normed linear space over $\mathbb{F}$, $\{x_n\}_{n=1}^\infty \subset X$ and $x_0 \in X$. Then
+>
+> $$
+> x_n \rightharpoonup x_0 \qquad \text{if and only if} \qquad \mathop{\text{s-lim}}_{n \to \infty} x_n = x_0 .
+> $$
+>
+> *Source: HW10, Problem 1*
+
+^prop-43-2
+
+> [!proof]+ Proof
+> *(HW10, Problem 1. Not from lecture; filled in.)* ($\Leftarrow$) is Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]](1), which holds in every normed linear space.
+>
+> ($\Rightarrow$) If $X = \{0\}$ there is nothing to prove. Otherwise let $e_1, \ldots, e_d$ be a basis of $X$. Every $x \in X$ has a unique expansion
+>
+> $$
+> x = c_1(x)\, e_1 + \cdots + c_d(x)\, e_d ,
+> $$
+>
+> and each coordinate $c_j : X \to \mathbb{F}$ is a linear functional: the expansion of $ax + by$ is $\sum_j \bigl( a\, c_j(x) + b\, c_j(y) \bigr) e_j$, by uniqueness. A linear functional on a finite-dimensional normed space is bounded (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]]), so $c_j \in X'$ for $j = 1, \ldots, d$. Assume $x_n \rightharpoonup x_0$. Then $c_j(x_n) \to c_j(x_0)$ as $n \to \infty$, for each $j$. By the triangle inequality,
+>
+> $$
+> \|x_n - x_0\| = \Bigl\| \sum_{j=1}^d \bigl( c_j(x_n) - c_j(x_0) \bigr) e_j \Bigr\| \le \sum_{j=1}^d |c_j(x_n) - c_j(x_0)|\, \|e_j\| \to 0 \qquad (n \to \infty) ,
+> $$
+>
+> a finite sum of sequences that tend to $0$. So $x_n \to x_0$ in the norm.
+
+^pf-43-2
+
+*Uses:* [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]]
+
+> [!remark]- Connections
+> - Linear functionals on a finite-dimensional normed space are bounded: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|Prop. §26.1]]; all norms there are equivalent: [[All Norms on a Finite-Dimensional Space Are Equivalent]].
+> - In infinite dimensions the two notions differ: [[§43 Weak and Weak-Star Convergence#^ex-43-1|Ex. §43.1]].
+
+In a finite-dimensional space, testing with the $d$ coordinate functionals already controls the norm. In infinite dimensions no finite set of functionals does, and weak convergence is a new notion; the examples of the next subsection show sequences that converge weakly and not strongly.
+
 ## Examples
 
 > [!example] Example §43.1: Weak but Not Strong Convergence in $\ell^2$
@@ -85,12 +123,12 @@ If a sequence could converge weakly to two different limits, the notion would ma
 
 The same holds in any Hilbert space, by an abstract argument.
 
-> [!theorem] Proposition §43.2: Orthonormal Sequences Converge Weakly to $0$
+> [!theorem] Proposition §43.3: Orthonormal Sequences Converge Weakly to $0$
 > Let $H$ be a Hilbert space and $\{e_n\}_{n=1}^\infty$ an orthonormal sequence in $H$ (not necessarily a basis). Then $e_n \rightharpoonup 0$ as $n \to \infty$.
 >
 > *Lax: Ch. 10, Example 2*
 
-^prop-43-2
+^prop-43-3
 
 > [!proof]+ Proof
 > By Bessel's inequality (Theorem [[§27 Orthonormal Sets and Bases#^thm-27-5|§27.5]]), for every $x \in H$
@@ -101,13 +139,13 @@ The same holds in any Hilbert space, by an abstract argument.
 >
 > so $(x, e_n) \to 0$ as $n \to \infty$ for every $x \in H$. Since $H' = H$ (every $\ell \in H'$ is $\ell(y) = (y, x)$ for some $x \in H$, and $(e_n, x) = \overline{(x, e_n)}$), $\ell(e_n) \to 0$ for every $\ell \in H'$, i.e. $e_n \rightharpoonup 0$.
 
-^pf-43-2
+^pf-43-3
 
 *Uses:* [[§27 Orthonormal Sets and Bases#^thm-27-5|§27.5]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]
 
 > [!example] Example §43.2: $\sin(mx) \rightharpoonup 0$ in $L^2[0, 2\pi]$
 > In $L^2([0, 2\pi])$ the functions $f_m(x) = \frac{1}{\sqrt\pi} \sin(mx)$, $m = 1, 2, \ldots$, form an orthonormal set.
-> (For $m, k \ge 1$, $\int_0^{2\pi} \sin(mx) \sin(kx)\, dx = \frac12 \int_0^{2\pi} \bigl( \cos((m-k)x) - \cos((m+k)x) \bigr) dx$, which is $0$ for $m \neq k$ and $\pi$ for $m = k$.) By Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-2|§43.2]], for every $g \in L^2([0, 2\pi])$
+> (For $m, k \ge 1$, $\int_0^{2\pi} \sin(mx) \sin(kx)\, dx = \frac12 \int_0^{2\pi} \bigl( \cos((m-k)x) - \cos((m+k)x) \bigr) dx$, which is $0$ for $m \neq k$ and $\pi$ for $m = k$.) By Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-3|§43.3]], for every $g \in L^2([0, 2\pi])$
 >
 > $$
 > \lim_{m \to \infty} \int_0^{2\pi} \sin(mx)\, g(x)\, dx = 0 ,
@@ -129,9 +167,49 @@ Why $\sin(mx) \rightharpoonup 0$: the product $g(x) \sin(mx)$ for the test funct
 
 *(Not from lecture; animation added, vault only.)* The same test function $g(x) = \frac{x}{2\pi}$ against $\sin(mx)$ for $m = 1, 2, \ldots, 30$. Left: $g(x) \sin(mx)$ with its positive part blue and negative part red; right: the integral $\int_0^{2\pi} g(x) \sin(mx)\, dx = -\frac1m$, one dot per $m$. The oscillations do not shrink, but their net area does.
 
+> [!theorem] Proposition §43.4: Weak Convergence in $C[a,b]$ Implies Pointwise Convergence
+> Let $x_n, x \in C[a,b]$ for $n \in \mathbb{N}$, with the maximum norm, and assume $x_n \rightharpoonup x$ in $C[a,b]$. Then
+>
+> $$
+> \lim_{n \to \infty} x_n(t) = x(t) \qquad \text{for every } t \in [a,b] .
+> $$
+>
+> *Source: HW10, Problem 3*
+
+^prop-43-4
+
+> [!proof]+ Proof
+> *(HW10, Problem 3. Not from lecture; filled in.)* Fix $t \in [a,b]$ and let $\delta_t : C[a,b] \to \mathbb{F}$, $\delta_t(y) = y(t)$, be the evaluation at $t$. It is linear, since $(c_1 y_1 + c_2 y_2)(t) = c_1 y_1(t) + c_2 y_2(t)$, and bounded, since
+>
+> $$
+> |\delta_t(y)| = |y(t)| \le \max_{s \in [a,b]} |y(s)| = \|y\| \qquad \text{for all } y \in C[a,b] .
+> $$
+>
+> So $\delta_t \in (C[a,b])'$, with $\|\delta_t\| \le 1$. By the definition of weak convergence (Definition [[§43 Weak and Weak-Star Convergence#^def-43-1|§43.1]]), applied to $\ell = \delta_t$, $x_n(t) = \delta_t(x_n) \to \delta_t(x) = x(t)$.
+
+^pf-43-4
+
+*Uses:* [[§43 Weak and Weak-Star Convergence#^def-43-1|Def. §43.1]]
+
+Strong convergence in $C[a,b]$ is uniform convergence. Weak convergence lies between uniform and pointwise convergence: it implies pointwise convergence, with the evaluations $\delta_t$ as test functionals. The proposition can be used to show that a sequence has no weak limit.
+
+> [!example] Example §43.3: The Powers $t^n$ Have No Weak Limit in $C[0,1]$
+> *(Not from lecture; filled in.)* Let $x_n(t) = t^n$ in $C[0,1]$. Then $\|x_n\| = 1$ for all $n$, and
+>
+> $$
+> \lim_{n \to \infty} x_n(t) = \begin{cases} 0, & 0 \le t < 1, \\ 1, & t = 1 . \end{cases}
+> $$
+>
+> If $x_n \rightharpoonup x$ for some $x \in C[0,1]$, then by Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-4|§43.4]] $x(t) = 0$ for $t < 1$ and $x(1) = 1$, which is not a continuous function. So $\{x_n\}$ does not converge weakly in $C[0,1]$. The same argument applies to every subsequence $\{t^{n_k}\}$, which has the same pointwise limit: the bounded sequence $\{t^n\}$ has no weakly convergent subsequence in $C[0,1]$.
+
+^ex-43-3
+
+> [!remark]- Connections
+> - A bounded sequence without a weakly convergent subsequence: by [[Eberlein's Theorem]] this shows again that $C[0,1]$ is not reflexive, [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|Ex. §37.5]].
+
 ## Criteria and the Norm of a Weak Limit
 
-> [!theorem] Theorem §43.3: Criterion for Weak Convergence
+> [!theorem] Theorem §43.5: Criterion for Weak Convergence
 > Let $X$ be a normed linear space, $\{x_n\}_{n=1}^\infty \subset X$ and $x_0 \in X$. Then $x_n \rightharpoonup x_0$ in $X$ if and only if
 >
 > 1. $\sup_n \|x_n\| < \infty$, and
@@ -139,17 +217,17 @@ Why $\sin(mx) \rightharpoonup 0$: the product $g(x) \sin(mx)$ for the test funct
 >
 > *Lax: §10.1, Thm 1 (the direction $\Leftarrow$, Exercise 3) and Thm 4$'$ (weakly convergent sequences are bounded)*
 
-^thm-43-3
+^thm-43-5
 
 > [!proof]+ Proof
 > This is Banach–Steinhaus (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]]). Think of $x_n$ not as an element of $X$ but as an element of the dual of $X'$: $x_n \in (X')' = \mathcal{L}(X', \mathbb{F})$, via $x_n(\ell) = \langle x_n, \ell \rangle = \ell(x_n)$. So $\{x_n\}$ is a sequence of bounded linear maps from $X'$ to $\mathbb{F}$, and
 > $X'$ is a Banach space even if $X$ is not (Corollary [[§31 Dual Spaces#^cor-31-1|§31.1]]), while $\mathbb{F}$ is a normed space. The norm of $x_n$ as an element of $(X')'$ is $\|x_n\|$ (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]), and $x_0$ is the candidate limit map $A \in \mathcal{L}(X', \mathbb{F})$. Weak convergence says: for all $\ell \in X'$, $\ell(x_n) = \langle x_n, \ell \rangle \to \langle x_0, \ell \rangle$, i.e. the maps $x_n$ converge pointwise on $X'$ to $x_0$. Banach–Steinhaus says this happens if and only if (1) $\sup_n \|x_n\| < \infty$ and (2) the convergence holds for all $\ell$ in a dense subset $D \subset X'$.
 
-^pf-43-3
+^pf-43-5
 
 *Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]], [[§31 Dual Spaces#^cor-31-1|§31.1]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]
 
-> [!theorem] Theorem §43.4: The Norm of a Weak Limit
+> [!theorem] Theorem §43.6: The Norm of a Weak Limit
 > Let $X$ be a normed linear space, $\{x_n\}_{n=1}^\infty \subset X$, $x_0 \in X$, and $x_n \rightharpoonup x_0$ in $X$. Then $\{x_n\}$ is a bounded sequence, and
 >
 > $$
@@ -158,10 +236,10 @@ Why $\sin(mx) \rightharpoonup 0$: the product $g(x) \sin(mx)$ for the test funct
 >
 > *Lax: §10.1, Thms 4$'$ and 5*
 
-^thm-43-4
+^thm-43-6
 
 > [!proof]+ Proof
-> *Bounded:* this is part (1) of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]], i.e. the uniform boundedness principle applied to the $x_n \in \mathcal{L}(X', \mathbb{F})$, which are pointwise bounded because each $\{\ell(x_n)\}$ converges. Just as every convergent sequence is bounded, every weakly convergent sequence is bounded.
+> *Bounded:* this is part (1) of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]], i.e. the uniform boundedness principle applied to the $x_n \in \mathcal{L}(X', \mathbb{F})$, which are pointwise bounded because each $\{\ell(x_n)\}$ converges. Just as every convergent sequence is bounded, every weakly convergent sequence is bounded.
 >
 > *The norm bound.* Since $x_n \rightharpoonup x_0$, for every $\ell \in X'$ we have $\ell(x_0) = \lim_n \ell(x_n)$, hence $|\ell(x_0)| = \lim_n |\ell(x_n)|$. Also $|\ell(x_n)| \le \|\ell\|\, \|x_n\|$. Take the $\liminf$ on both sides: the left side has a limit, equal to $|\ell(x_0)|$; the right side may not have a limit, but the $\liminf$ always makes sense. So
 >
@@ -175,17 +253,59 @@ Why $\sin(mx) \rightharpoonup 0$: the product $g(x) \sin(mx)$ for the test funct
 > \|x_0\| = \sup_{\ell \in X',\ \|\ell\| \le 1} |\ell(x_0)| \le \liminf_{n \to \infty} \|x_n\| .
 > $$
 
-^pf-43-4
+^pf-43-6
 
-*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]], [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]
+*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]], [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]
 
 In Example [[§43 Weak and Weak-Star Convergence#^ex-43-1|§43.1]], $\|e_n\| = 1$ for all $n$ while the weak limit $0$ has norm $0$: the inequality can be strict. Norm can be lost in a weak limit, but not gained.
+
+> [!theorem] Proposition §43.7: Weak Convergence and Convergence of the Norms in a Hilbert Space
+> Let $H$ be a Hilbert space, $\{x_n\}_{n=1}^\infty \subset H$ and $x_0 \in H$. Then $x_n \to x_0$ strongly if and only if
+>
+> $$
+> \|x_n\| \to \|x_0\| \qquad \text{and} \qquad x_n \rightharpoonup x_0 \quad \text{in } H .
+> $$
+>
+> *Source: HW10, Problem 5*
+
+^prop-43-7
+
+> [!proof]+ Proof
+> *(HW10, Problem 5. Not from lecture; filled in.)* ($\Rightarrow$) Assume $\|x_n - x_0\| \to 0$. Then $x_n \rightharpoonup x_0$ by Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]](1), and by the reverse triangle inequality $\bigl| \|x_n\| - \|x_0\| \bigr| \le \|x_n - x_0\| \to 0$.
+>
+> ($\Leftarrow$) Assume $\|x_n\| \to \|x_0\|$ and $x_n \rightharpoonup x_0$. Expanding the square of the norm with the inner product,
+>
+> $$
+> \|x_n - x_0\|^2 = (x_n - x_0, x_n - x_0) = \|x_n\|^2 - (x_n, x_0) - (x_0, x_n) + \|x_0\|^2 = \|x_n\|^2 - 2 \operatorname{Re} (x_n, x_0) + \|x_0\|^2 ,
+> $$
+>
+> because $(x_0, x_n) = \overline{(x_n, x_0)}$. The map $\ell(x) = (x, x_0)$ is a bounded linear functional on $H$ (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]](1)), so weak convergence gives
+>
+> $$
+> (x_n, x_0) = \ell(x_n) \to \ell(x_0) = (x_0, x_0) = \|x_0\|^2 .
+> $$
+>
+> Together with $\|x_n\|^2 \to \|x_0\|^2$,
+>
+> $$
+> \|x_n - x_0\|^2 \to \|x_0\|^2 - 2 \|x_0\|^2 + \|x_0\|^2 = 0 .
+> $$
+
+^pf-43-7
+
+*Uses:* [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]
+
+> [!remark]- Connections
+> - The functional $x \mapsto (x, x_0)$: [[Riesz Representation Theorem (Hilbert spaces)]].
+> - The norm of a weak limit in general: [[§43 Weak and Weak-Star Convergence#^thm-43-6|Thm. §43.6]].
+
+So in a Hilbert space the only thing that separates weak from strong convergence is a loss of norm in the limit: by Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-6|§43.6]], $\|x_0\| \le \liminf_n \|x_n\|$ always, and the convergence is strong exactly when no norm is lost, $\|x_n\| \to \|x_0\|$. For $e_n \rightharpoonup 0$ in $\ell^2$ the norms are $1$ and the norm of the limit is $0$. The proof does not use the completeness of $H$; it holds in every inner product space.
 
 ## Mazur's Theorem
 
 The norm bound says how large the weak limit can be; Mazur's theorem says where it is. Its proof uses the hyperplane separation theorem of Chapter 2, in a form adapted to normed spaces, which comes first.
 
-> [!theorem] Theorem §43.5: Hyperplane Separation in a Normed Space
+> [!theorem] Theorem §43.8: Hyperplane Separation in a Normed Space
 > Let $X$ be a normed linear space over $\mathbb{R}$, $K$ a closed convex set in $X$, and $x_0 \notin K$. Then there exist $a \in \mathbb{R}$ and $\ell \in X'$ such that
 >
 > $$
@@ -194,10 +314,10 @@ The norm bound says how large the weak limit can be; Mazur's theorem says where 
 >
 > *Lax: §8.4, in the proof of Thm 17 (a ball about $x_0$ is separated from $K$ by the extended hyperplane separation theorem, Ch. 3 Thm 6)*
 
-^thm-43-5
+^thm-43-8
 
 > [!proof]+ Proof
-> If $K = \varnothing$, take $\ell = 0$ and $a = -1$. Otherwise let $d = \inf_{y \in K} \|x_0 - y\|$; then $d > 0$, since otherwise there are $y_k \in K$ with $y_k \to x_0$, and $K$ closed would give $x_0 \in K$. Fix $0 < \varepsilon < d$ and let
+> (The proof was left to the class and then set as HW10, Problem 4; it is filled in here.) If $K = \varnothing$, take $\ell = 0$ and $a = -1$. Otherwise let $d = \inf_{y \in K} \|x_0 - y\|$; then $d > 0$, since otherwise there are $y_k \in K$ with $y_k \to x_0$, and $K$ closed would give $x_0 \in K$. Fix $0 < \varepsilon < d$ and let
 >
 > $$
 > K_\varepsilon = \{ x \in X : \text{there is } y \in K \text{ with } \|x - y\| < \varepsilon \} .
@@ -215,7 +335,7 @@ The norm bound says how large the weak limit can be; Mazur's theorem says where 
 > \ell(y) \le c_0 - \varepsilon \|\ell\| < c_0 - \tfrac{\varepsilon}{2} \|\ell\| =: a < c_0 = \ell(x_0) \qquad \text{for all } y \in K .
 > $$
 
-^pf-43-5
+^pf-43-8
 
 *Uses:* [[§11 Normed Linear Spaces#^prop-11-9|§11.9]], [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]
 
@@ -225,17 +345,17 @@ It is important that $\ell$ is *bounded*, and that $K$ is *closed* and convex. T
 
 *The closed convex set $K$ (blue), its enlargement $K_\varepsilon$ (dashed red), which still misses $x_0$, and a separating hyperplane $\{\ell = a\}$ with $x_0$ strictly on one side and $K$ strictly on the other.*
 
-> [!theorem] Corollary §43.6: Hyperplane Separation over $\mathbb{C}$
+> [!theorem] Corollary §43.9: Hyperplane Separation over $\mathbb{C}$
 > *(Not from lecture.)* Let $X$ be a normed linear space over $\mathbb{C}$, $K$ a closed convex set in $X$, and $x_0 \notin K$. Then there exist $a \in \mathbb{R}$ and $\ell \in X'$ such that
 >
 > $$
 > \operatorname{Re} \ell(x_0) > a > \operatorname{Re} \ell(x) \qquad \text{for all } x \in K .
 > $$
 
-^cor-43-6
+^cor-43-9
 
 > [!proof]+ Proof
-> Regard $X$ as a real normed space $X_{\mathbb{R}}$ (the same vectors and norm, with scalars restricted to $\mathbb{R}$). $K$ is still closed (the norm is the same) and convex (convexity only uses real coefficients $t \in [0,1]$), and $x_0 \notin K$. Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]] gives $a \in \mathbb{R}$ and a real-linear bounded $\ell_r : X \to \mathbb{R}$ with $\ell_r(x_0) > a > \ell_r(x)$ for all $x \in K$. Define, as in the complex Hahn–Banach theorem (Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]),
+> Regard $X$ as a real normed space $X_{\mathbb{R}}$ (the same vectors and norm, with scalars restricted to $\mathbb{R}$). $K$ is still closed (the norm is the same) and convex (convexity only uses real coefficients $t \in [0,1]$), and $x_0 \notin K$. Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-8|§43.8]] gives $a \in \mathbb{R}$ and a real-linear bounded $\ell_r : X \to \mathbb{R}$ with $\ell_r(x_0) > a > \ell_r(x)$ for all $x \in K$. Define, as in the complex Hahn–Banach theorem (Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]),
 >
 > $$
 > \ell(x) = \ell_r(x) - i\, \ell_r(ix) .
@@ -249,13 +369,13 @@ It is important that $\ell$ is *bounded*, and that $K$ is *closed* and convex. T
 >
 > Finally $\operatorname{Re} \ell(x_0) = \ell_r(x_0) > a > \ell_r(x) = \operatorname{Re} \ell(x)$ for $x \in K$.
 
-^pf-43-6
+^pf-43-9
 
-*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]], [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]
+*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-8|§43.8]], [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]
 
-The proof of Mazur's theorem below goes through over $\mathbb{C}$ with $\operatorname{Re} \ell$ in place of $\ell$, using Corollary [[§43 Weak and Weak-Star Convergence#^cor-43-6|§43.6]]. Lecture 20 opened with this point: Mazur's theorem holds over $\mathbb{C}$ as well, so the hyperplane separation theorem has to be adapted to complex scalars; the adaptation was left to the class, and the corollary is that adaptation.
+The proof of Mazur's theorem below goes through over $\mathbb{C}$ with $\operatorname{Re} \ell$ in place of $\ell$, using Corollary [[§43 Weak and Weak-Star Convergence#^cor-43-9|§43.9]]. Lecture 20 opened with this point: Mazur's theorem holds over $\mathbb{C}$ as well, so the hyperplane separation theorem has to be adapted to complex scalars; the adaptation was left to the class, and the corollary is that adaptation.
 
-> [!theorem] Theorem §43.7: Mazur's Theorem
+> [!theorem] Theorem §43.10: Mazur's Theorem
 > Let $X$ be a normed linear space, $\{x_n\}_{n=1}^\infty \subset X$, $x_0 \in X$, and $x_n \rightharpoonup x_0$ in $X$. Then $x_0$ belongs to the closed convex hull of $\{x_n\}_{n=1}^\infty$. That is, for every $\varepsilon > 0$ there are finitely many terms $x_1, \ldots, x_j$ of the sequence and $\lambda_k \ge 0$, $k = 1, \ldots, j$, with $\sum_{k=1}^j \lambda_k = 1$, such that
 >
 > $$
@@ -264,11 +384,11 @@ The proof of Mazur's theorem below goes through over $\mathbb{C}$ with $\operato
 >
 > *Lax: §10.1, Thm 6 (for a closed convex $K$ containing the $x_n$; proved with support functions, §8.4 Thm 17)*
 
-^thm-43-7
+^thm-43-10
 
 > [!proof]+ Proof of Mazur's theorem
 > Assume $x_n \rightharpoonup x_0$, but $x_0$ is not in the closed convex hull of $\{x_n\}$; call the closed convex hull $K$.
-> ($K$ is closed by definition, and convex: if $z_k \to z$ and $w_k \to w$ with $z_k, w_k$ in the convex hull, then $t z_k + (1-t) w_k$ is in the convex hull and tends to $t z + (1-t) w$.) By the hyperplane separation theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]) there are $\ell \in X'$ and $a \in \mathbb{R}$ with
+> ($K$ is closed by definition, and convex: if $z_k \to z$ and $w_k \to w$ with $z_k, w_k$ in the convex hull, then $t z_k + (1-t) w_k$ is in the convex hull and tends to $t z + (1-t) w$.) By the hyperplane separation theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-8|§43.8]]) there are $\ell \in X'$ and $a \in \mathbb{R}$ with
 >
 > $$
 > \ell(x_0) > a \qquad \text{and} \qquad \ell(x_n) < a \quad \text{for all } n ,
@@ -276,33 +396,33 @@ The proof of Mazur's theorem below goes through over $\mathbb{C}$ with $\operato
 >
 > since every $x_n \in K$. But $x_n \rightharpoonup x_0$ implies $\ell(x_n) \to \ell(x_0)$, and a sequence of numbers all strictly less than $a$ cannot converge to something strictly bigger than $a$: the limit would satisfy $\ell(x_0) \le a$. This is a contradiction.
 
-^pf-43-7
+^pf-43-10
 
-*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]
+*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-8|§43.8]]
 
 In other words, the weak limit can be approximated in norm by convex combinations of the terms of the sequence.
 (The convex hull of $\{x_n\}$ (Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-4|§3.4]]) consists of the finite convex combinations $\sum_k \lambda_k x_{n_k}$, $\lambda_k \ge 0$, $\sum_k \lambda_k = 1$: they form a convex set containing every $x_n$, and every convex set containing the $x_n$ contains them, by induction on the number of terms. The closed convex hull is the closure of this set; $x_0$ lies in it exactly when every ball about $x_0$ contains such a combination. Taking the first $j$ terms, with some $\lambda_k = 0$ allowed, loses nothing.)
 
 ![[m556-43-4.svg]]
 
-Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-1|§43.1]]): no $e_n$ comes near $0$, since $\|e_n\| = 1$, but the convex combinations $\frac1N (e_1 + \cdots + e_N)$, with $N$ entries $\frac1N$, have norm $\bigl( N \cdot \frac{1}{N^2} \bigr)^{1/2} = \frac{1}{\sqrt N} \to 0$. Spreading the mass over many orthogonal directions is what the weak limit sees; it also shows the strict inequality $\|0\| < \liminf \|e_n\| = 1$ of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-4|§43.4]].
+Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-1|§43.1]]): no $e_n$ comes near $0$, since $\|e_n\| = 1$, but the convex combinations $\frac1N (e_1 + \cdots + e_N)$, with $N$ entries $\frac1N$, have norm $\bigl( N \cdot \frac{1}{N^2} \bigr)^{1/2} = \frac{1}{\sqrt N} \to 0$. Spreading the mass over many orthogonal directions is what the weak limit sees; it also shows the strict inequality $\|0\| < \liminf \|e_n\| = 1$ of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-6|§43.6]].
 
 ## $\sin(mx)$ in $L^p$
 
-> [!example] Example §43.3: $\sin(mx) \rightharpoonup 0$ in $L^p[0, 2\pi]$ for $1 < p < \infty$
-> We know $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]]). Since $|\sin(mx)| \le 1$, also $\sin(mx) \in L^p([0, 2\pi])$ for $1 \le p < \infty$. *Question:* does $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$ for all $1 < p < \infty$? Yes. (The case $p = 1$ needs a different argument and is Example [[§43 Weak and Weak-Star Convergence#^ex-43-4|§43.4]].)
+> [!example] Example §43.4: $\sin(mx) \rightharpoonup 0$ in $L^p[0, 2\pi]$ for $1 < p < \infty$
+> We know $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]]). Since $|\sin(mx)| \le 1$, also $\sin(mx) \in L^p([0, 2\pi])$ for $1 \le p < \infty$. *Question:* does $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$ for all $1 < p < \infty$? Yes. (The case $p = 1$ needs a different argument and is Example [[§43 Weak and Weak-Star Convergence#^ex-43-5|§43.5]].)
 >
-> Recall $(L^p)' = L^{p'}$ with $\frac1p + \frac1{p'} = 1$, so $1 < p' < \infty$ (Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]). We check the two conditions of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]].
+> Recall $(L^p)' = L^{p'}$ with $\frac1p + \frac1{p'} = 1$, so $1 < p' < \infty$ (Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]). We check the two conditions of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]].
 >
 > 1. *Bounded:* $\sup_m \|\sin(mx)\|_{L^p([0, 2\pi])} \le \bigl( \int_0^{2\pi} 1\, dx \bigr)^{1/p} = (2\pi)^{1/p} < \infty$.
 > 2. *Convergence on a dense set:* for every $g \in L^2([0, 2\pi])$, $\int_0^{2\pi} g(x) \sin(mx)\, dx \to 0$ as $m \to \infty$. Continuous functions are in $L^2$, so for all $g \in C[0, 2\pi]$, $\int_0^{2\pi} g(x) \sin(mx)\, dx \to 0$. And $C[0, 2\pi]$ is dense in $L^{p'}([0, 2\pi])$, because $p' < \infty$: it contains $C_c^\infty((0, 2\pi))$, which is dense by Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-4|§19.4]] (the endpoints have measure zero, so $L^{p'}([0, 2\pi]) = L^{p'}((0, 2\pi))$).
 >
-> By Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]], $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$.
+> By Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]], $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$.
 
-^ex-43-3
+^ex-43-4
 
-> [!example] Example §43.4: $\sin(mx) \rightharpoonup 0$ in $L^1[0, 2\pi]$
-> *(Posed in lecture as a homework question. The answer is not from lecture; filled in.)* Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|§19.5]]), so the argument of Example [[§43 Weak and Weak-Star Convergence#^ex-43-3|§43.3]] does not apply; one has to test against $L^\infty$ functions. The answer is yes.
+> [!example] Example §43.5: $\sin(mx) \rightharpoonup 0$ in $L^1[0, 2\pi]$
+> *(Posed in lecture as a homework question. The answer is not from lecture; filled in.)* Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|§19.5]]), so the argument of Example [[§43 Weak and Weak-Star Convergence#^ex-43-4|§43.4]] does not apply; one has to test against $L^\infty$ functions. The answer is yes.
 >
 > Let $\ell \in (L^1([0, 2\pi]))'$. By Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]] with $p = 1$ there is $g \in L^\infty([0, 2\pi])$ with $\ell(f) = \int_0^{2\pi} f(x)\, g(x)\, dx$ for all $f \in L^1([0, 2\pi])$. Since $|g(x)| \le \|g\|_{L^\infty}$ for almost every $x$ and the interval has finite length,
 >
@@ -318,10 +438,10 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 >
 > As $\ell \in (L^1([0, 2\pi]))'$ is arbitrary, $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$. No dense subset is needed: on a bounded interval every $L^\infty$ function already lies in $L^2$, where the convergence is known.
 
-^ex-43-4
+^ex-43-5
 
-> [!example] Example §43.5: Weak Limits Do Not Respect Products
-> *(Posed in lecture as a homework question. The example is not from lecture; filled in.)* If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, Hölder gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]] to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$.
+> [!example] Example §43.6: Weak Limits Do Not Respect Products
+> *(Posed in lecture as a homework question, then set as HW10, Problem 2. The example is not from lecture; filled in.)* If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, Hölder gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]] to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$.
 >
 > *The example.* Take $[a, b] = [0, 2\pi]$, $p_1 = p_2 = 2$, so $p = 1$, and $f_n(x) = g_n(x) = \sin(nx)$. By Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]], $f_n \rightharpoonup 0$ and $g_n \rightharpoonup 0$ in $L^2([0, 2\pi])$, so $f_0 = g_0 = 0$ and $f_0 g_0 = 0$. The product is
 >
@@ -329,7 +449,7 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 > f_n(x)\, g_n(x) = \sin^2(nx) = \tfrac12 - \tfrac12 \cos(2nx) .
 > $$
 >
-> *Claim: $\sin^2(nx) \rightharpoonup \frac12$ in $L^1([0, 2\pi])$,* where $\frac12$ is the constant function. Let $\ell \in (L^1([0, 2\pi]))'$. As in Example [[§43 Weak and Weak-Star Convergence#^ex-43-4|§43.4]], $\ell(f) = \int_0^{2\pi} f(x)\, g(x)\, dx$ for some $g \in L^\infty([0, 2\pi]) \subset L^2([0, 2\pi])$. The functions $\frac{1}{\sqrt\pi} \cos(kx)$, $k = 1, 2, \ldots$, form an orthonormal set in $L^2([0, 2\pi])$: for $k, j \ge 1$, $\int_0^{2\pi} \cos(kx) \cos(jx)\, dx = \frac12 \int_0^{2\pi} \bigl( \cos((k-j)x) + \cos((k+j)x) \bigr) dx$, which is $0$ for $k \neq j$ and $\pi$ for $k = j$. By Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-2|§43.2]], applied as in Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]], $\int_0^{2\pi} \cos(kx)\, g(x)\, dx \to 0$ as $k \to \infty$, in particular along $k = 2n$. Hence
+> *Claim: $\sin^2(nx) \rightharpoonup \frac12$ in $L^1([0, 2\pi])$,* where $\frac12$ is the constant function. Let $\ell \in (L^1([0, 2\pi]))'$. As in Example [[§43 Weak and Weak-Star Convergence#^ex-43-5|§43.5]], $\ell(f) = \int_0^{2\pi} f(x)\, g(x)\, dx$ for some $g \in L^\infty([0, 2\pi]) \subset L^2([0, 2\pi])$. The functions $\frac{1}{\sqrt\pi} \cos(kx)$, $k = 1, 2, \ldots$, form an orthonormal set in $L^2([0, 2\pi])$: for $k, j \ge 1$, $\int_0^{2\pi} \cos(kx) \cos(jx)\, dx = \frac12 \int_0^{2\pi} \bigl( \cos((k-j)x) + \cos((k+j)x) \bigr) dx$, which is $0$ for $k \neq j$ and $\pi$ for $k = j$. By Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-3|§43.3]], applied as in Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]], $\int_0^{2\pi} \cos(kx)\, g(x)\, dx \to 0$ as $k \to \infty$, in particular along $k = 2n$. Hence
 >
 > $$
 > \ell(\sin^2(nx)) = \tfrac12 \int_0^{2\pi} g(x)\, dx - \tfrac12 \int_0^{2\pi} \cos(2nx)\, g(x)\, dx \longrightarrow \tfrac12 \int_0^{2\pi} g(x)\, dx = \ell\bigl(\tfrac12\bigr) \qquad (n \to \infty) .
@@ -339,7 +459,7 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 >
 > *Conclusion.* The constant function $\frac12$ is not the zero element of $L^1([0, 2\pi])$, and weak limits are unique (Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]](2)). So $f_n g_n$ does not converge weakly to $f_0 g_0 = 0$ in $L^1([0, 2\pi])$, although $f_n \rightharpoonup f_0$ and $g_n \rightharpoonup g_0$ in $L^2([0, 2\pi])$. The same computation shows that $f_n \rightharpoonup 0$ does not imply $f_n^2 \rightharpoonup 0^2$.
 
-^ex-43-5
+^ex-43-6
 
 Weak limits are useful but limited. A bounded sequence in infinite dimensions need not have a convergent subsequence; under certain circumstances it will have a weakly convergent one, but weak convergence does not commute with nonlinear operations.
 
@@ -360,7 +480,7 @@ Does every bounded sequence have a weakly convergent subsequence? This is a diff
 
 On $X'$ two notions are available: weak convergence ($X'$ is a normed space, test against $(X')' = X''$) and weak-$\ast$ convergence (test against $X$).
 
-> [!theorem] Proposition §43.8: Weak Implies Weak-$\ast$
+> [!theorem] Proposition §43.11: Weak Implies Weak-$\ast$
 > Let $X$ be a normed linear space, and $\{\ell_n\}_{n=1}^\infty$, $\ell_0$ in $X'$.
 >
 > 1. If $\ell_n \rightharpoonup \ell_0$ in $X'$, then $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ in $X'$. So weak-$\ast$ is the weaker notion.
@@ -368,7 +488,7 @@ On $X'$ two notions are available: weak convergence ($X'$ is a normed space, tes
 >
 > *Lax: §10.3, Remark 1 (part (2))*
 
-^prop-43-8
+^prop-43-11
 
 > [!proof]+ Proof
 > (1) Since $X \subset X''$, isometrically embedded by $i(x)(\ell) = \ell(x)$ (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]), each $x \in X$ gives the test element $i(x) \in X''$, and weak convergence in $X'$ gives
@@ -381,20 +501,20 @@ On $X'$ two notions are available: weak convergence ($X'$ is a normed space, tes
 >
 > (2) If $X$ is reflexive, every element of $X''$ is in $X$: for $\eta \in X''$ there is $x \in X$ with $\eta = i(x)$. So if $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$, then $\eta(\ell_n) = \ell_n(x) \to \ell_0(x) = \eta(\ell_0)$ for every $\eta \in X''$, i.e. $\ell_n \rightharpoonup \ell_0$. With (1), the two notions coincide.
 
-^pf-43-8
+^pf-43-11
 
 *Uses:* [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]], [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Def. §37.1]]
 
-> [!example] Example §43.6: Weak-$\ast$ but Not Weak
+> [!example] Example §43.7: Weak-$\ast$ but Not Weak
 > $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ does not imply $\ell_n \rightharpoonup \ell_0$. Let $\ell^\infty_0 = c_0 = \{ (a_1, a_2, \ldots) : \lim_n a_n = 0 \}$ (Definition [[§29 Sequence and Function Spaces#^def-29-1|§29.1]]). Then $(c_0)' = \ell^1$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-8|§36.8]]) and $(\ell^1)' = \ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]). Consider $e_n = (0, \ldots, 0, 1, 0, \ldots) \in \ell^1$.
 > - $e_n \overset{\ast}{\rightharpoonup} 0$ in $\ell^1 = (c_0)'$: for every $a = (a_1, a_2, \ldots) \in c_0$, $\langle a, e_n \rangle = a_n \to 0$.
 > - $e_n \not\rightharpoonup 0$ in $\ell^1$: for $a = (a_1, a_2, \ldots) \in \ell^\infty = (\ell^1)'$, $\langle e_n, a \rangle = a_n$, which need not converge, since $a$ is only bounded.
 >
-> For instance $a = (1, 1, 1, \ldots)$ gives $\langle e_n, a \rangle = 1 \not\to 0$, and $a = (1, -1, 1, -1, \ldots)$ gives a sequence with no limit at all, so $\{e_n\}$ has no weak limit in $\ell^1$ (any weak limit would also be a weak-$\ast$ limit by Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-8|§43.8]], hence $0$, since a weak-$\ast$ limit is a pointwise limit and therefore unique). (The pairings are the bar-free ones, $\langle x, b \rangle = \sum_j x_j b_j$, of Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]].)
+> For instance $a = (1, 1, 1, \ldots)$ gives $\langle e_n, a \rangle = 1 \not\to 0$, and $a = (1, -1, 1, -1, \ldots)$ gives a sequence with no limit at all, so $\{e_n\}$ has no weak limit in $\ell^1$ (any weak limit would also be a weak-$\ast$ limit by Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-11|§43.11]], hence $0$, since a weak-$\ast$ limit is a pointwise limit and therefore unique). (The pairings are the bar-free ones, $\langle x, b \rangle = \sum_j x_j b_j$, of Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]].)
 >
 > *(Not from lecture.)* Lax's example (§10.3, Example 5) is of the same kind: the averages $m_n(h) = \frac{n}{2} \int_{-1/n}^{1/n} h(t)\, dt$ are functionals on $C[-1, 1]$ that converge weak-$\ast$ to the point evaluation $h \mapsto h(0)$, but not weakly, since against a bounded function with a jump at $0$ the averages do not converge to its value at $0$.
 
-^ex-43-6
+^ex-43-7
 
 ![[m556-43-5.svg]]
 
@@ -402,37 +522,37 @@ The same sequence $e_n \in \ell^1$ seen by two families of test vectors. Weak-$\
 
 As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of the limit is controlled.
 
-> [!theorem] Theorem §43.9: Criterion for Weak-$\ast$ Convergence
+> [!theorem] Theorem §43.12: Criterion for Weak-$\ast$ Convergence
 > Let $X$ be a Banach space, $\{\ell_n\}_{n=1}^\infty \subset X'$ and $\ell_0 \in X'$. Then $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ in $X'$ if and only if
 >
 > 1. $\sup_n \|\ell_n\| < \infty$, and
 > 2. $\lim_{n \to \infty} \ell_n(x) = \ell_0(x)$ for all $x \in D$, where $D$ is a dense subset of $X$.
 
-^thm-43-9
+^thm-43-12
 
 > [!proof]+ Proof
 > Banach–Steinhaus (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]]) for the bounded linear maps $\ell_n, \ell_0 : X \to \mathbb{F}$: pointwise convergence on $X$ holds if and only if the $\ell_n$ are uniformly bounded and converge on a dense subset.
 
-^pf-43-9
+^pf-43-12
 
 *Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]]
 
 > [!remark] Remark: The Weak-$\ast$ Criteria Need $X$ Complete
-> In the lecture the theorem above, and the next one, were stated for a normed linear space $X$; Lax (§10.3) assumes $X$ Banach from the start. Banach–Steinhaus, however, needs the domain of the maps to be complete, and here the domain is $X$ (in Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]] the domain was $X'$, which is always complete). The direction ($\Leftarrow$) holds for any normed $X$ (the $\varepsilon/2$ argument does not use completeness), but ($\Rightarrow$), weak-$\ast$ convergent implies bounded, can fail (Example [[§43 Weak and Weak-Star Convergence#^ex-43-7|§43.7]]). So in both theorems $X$ is assumed to be a Banach space; the bound $\|\ell_0\| \le \liminf \|\ell_n\|$ holds for any normed $X$.
+> In the lecture the theorem above, and the next one, were stated for a normed linear space $X$; Lax (§10.3) assumes $X$ Banach from the start. Banach–Steinhaus, however, needs the domain of the maps to be complete, and here the domain is $X$ (in Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]] the domain was $X'$, which is always complete). The direction ($\Leftarrow$) holds for any normed $X$ (the $\varepsilon/2$ argument does not use completeness), but ($\Rightarrow$), weak-$\ast$ convergent implies bounded, can fail (Example [[§43 Weak and Weak-Star Convergence#^ex-43-8|§43.8]]). So in both theorems $X$ is assumed to be a Banach space; the bound $\|\ell_0\| \le \liminf \|\ell_n\|$ holds for any normed $X$.
 
 ^rem-43-1
 
-> [!example] Example §43.7: An Unbounded Weak-$\ast$ Null Sequence on $c_{00}$
+> [!example] Example §43.8: An Unbounded Weak-$\ast$ Null Sequence on $c_{00}$
 > *(Not from lecture.)* Let $X = c_{00}$, the finitely supported sequences with the maximum norm (not complete, Example [[§42 Uniform Boundedness and Approximation#^ex-42-2|§42.2]]), and $\ell_n(x) = n\, x_n$. These are the functionals $A_n$ of Example [[§42 Uniform Boundedness and Approximation#^ex-42-2|§42.2]], so $\ell_n \in X'$ with $\|\ell_n\| = n$.
 >
 > 1. *$\ell_n \overset{\ast}{\rightharpoonup} 0$.* For each $x \in c_{00}$, $\ell_n(x) = 0$ once $n$ exceeds the support of $x$, so $\ell_n(x) \to 0$.
 > 2. *Not bounded.* $\sup_n \|\ell_n\| = \sup_n n = \infty$.
 >
-> So for the normed space $c_{00}$ the direction ($\Rightarrow$) of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-9|§43.9]] fails, and so does the boundedness in Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-10|§43.10]].
+> So for the normed space $c_{00}$ the direction ($\Rightarrow$) of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-12|§43.12]] fails, and so does the boundedness in Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-13|§43.13]].
 
-^ex-43-7
+^ex-43-8
 
-> [!theorem] Theorem §43.10: The Norm of a Weak-$\ast$ Limit
+> [!theorem] Theorem §43.13: The Norm of a Weak-$\ast$ Limit
 > Let $X$ be a Banach space, $\{\ell_n\}_{n=1}^\infty \subset X'$, $\ell_0 \in X'$, and assume $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ in $X'$. Then $\sup_n \|\ell_n\| < \infty$, and
 >
 > $$
@@ -441,7 +561,7 @@ As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of t
 >
 > *Lax: §10.3, Thm 11 (bounded) and Exercise 6 (the norm bound)*
 
-^thm-43-10
+^thm-43-13
 
 > [!proof]+ Proof
 > *Bounded:* to converge in the weak-$\ast$ sense, the sequence is pointwise bounded on $X$; this is the uniform boundedness principle (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]).
@@ -454,7 +574,7 @@ As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of t
 >
 > For $\|x\| \le 1$, $|\ell_0(x)| = \lim_n |\ell_n(x)| = \liminf_n |\ell_n(x)| \le \liminf_n \|\ell_n\|\, \|x\| \le \liminf_n \|\ell_n\|$. Take the supremum over $\|x\| \le 1$.
 
-^pf-43-10
+^pf-43-13
 
 *Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]
 

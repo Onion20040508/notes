@@ -27,6 +27,7 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§31 Dual Spaces#^cor-31-1|Corollary §31.1: The Dual is Always a Banach Space]]
+- [[§48 The Resolvent and the Spectrum#^prop-48-2|Proposition §48.2: The Inverse of lambda I − M is Bounded]]
 
 ## Connections
 - **How.** The proof follows the pattern of [[Continuous Functions with the Sup Norm Form a Banach Space]]. Evaluating a Cauchy sequence T_n at each x gives a Cauchy sequence in Y, which converges because Y is complete. The limit T is linear, and the bound ‖T_n x − T_k x‖ ≤ ε‖x‖ passes to the limit uniformly in x. The point of the [[§30 Boundedness and Continuity#^rem-30-3|Remark §30]] on ε is that N does not depend on x.

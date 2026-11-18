@@ -289,8 +289,8 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > - A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], Step 3); the same fails in $\ell^\infty$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
 > - The finite sequences are dense in $c_0$, so a bounded functional on $c_0$ is determined by its values on them (Proposition [[§36 Duality in Normed Spaces#^prop-36-8|§36.8]]); in the space of convergent sequences they are not dense, and the functional $\lim$ is the extra coordinate (HW6 P2, Proposition [[§36 Duality in Normed Spaces#^prop-36-9|§36.9]]).
 > - Banach–Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]]): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
-> - $\sin(mx) \rightharpoonup 0$ in $L^p$, $1 < p < \infty$ (Lecture 18, Example [[§43 Weak and Weak-Star Convergence#^ex-43-3|§43.3]]): test only against continuous $g$, dense in $L^{p'}$, plus a uniform bound.
-> - The criteria for weak and weak-$\ast$ convergence (Lecture 18, Theorems [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]] and [[§43 Weak and Weak-Star Convergence#^thm-43-9|§43.9]]): convergence on a dense subset of $X'$, respectively of $X$, plus a uniform bound on the norms, gives convergence on the whole space; both are Banach–Steinhaus, applied on $X'$, respectively on $X$.
+> - $\sin(mx) \rightharpoonup 0$ in $L^p$, $1 < p < \infty$ (Lecture 18, Example [[§43 Weak and Weak-Star Convergence#^ex-43-4|§43.4]]): test only against continuous $g$, dense in $L^{p'}$, plus a uniform bound.
+> - The criteria for weak and weak-$\ast$ convergence (Lecture 18, Theorems [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]] and [[§43 Weak and Weak-Star Convergence#^thm-43-12|§43.12]]): convergence on a dense subset of $X'$, respectively of $X$, plus a uniform bound on the norms, gives convergence on the whole space; both are Banach–Steinhaus, applied on $X'$, respectively on $X$.
 > - Helly's theorem, Step 2 (Lecture 19, Theorem [[§44 Weak Sequential Compactness#^thm-44-1|§44.1]]): a bounded sequence of functionals that converges at every point of a countable dense set converges at every point, by an $\varepsilon/2$ argument with the bound $2M\|x_0 - y\|$.
 
 ^ex-t19
@@ -431,9 +431,10 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 ^rem-t29
 
 > [!example] Example T29: Applications (Lecture 18)
-> - Criterion for weak convergence (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]]).
-> - Weakly convergent sequences are bounded (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-4|§43.4]]).
+> - Criterion for weak convergence (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]).
+> - Weakly convergent sequences are bounded (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-6|§43.6]]).
 > - $X$ reflexive $\iff$ $X'$ reflexive (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-9|§37.9]]): $X$ is a closed subspace of $X''$.
+> - Dunford's theorem (Lecture 21, Theorem [[§47 Weak and Strong Analyticity#^thm-47-3|§47.3]]): the vectors $x_{h,k}$, the differences of difference quotients divided by $h - k$, are pointwise bounded on $X'$ by Cauchy's integral formula, hence bounded in norm.
 
 ^ex-t29
 
@@ -445,7 +446,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 ^rem-t30
 
 > [!example] Example T30: Application (Lecture 18)
-> Hyperplane separation in a normed space (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]), from Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]; and through it Mazur's theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-7|§43.7]]).
+> Hyperplane separation in a normed space (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-8|§43.8]]), from Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]; and through it Mazur's theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-10|§43.10]]).
 
 ^ex-t30
 
@@ -490,3 +491,16 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > - The transpose of a Hilbert–Schmidt operator (Proposition [[§46 The Transpose#^prop-46-3|§46.3]]): in $L^2$ the pairing is an integral, and moving the operator across is exchanging the order of integration.
 
 ^ex-t33
+
+## Technique 34: Cut Off Near the Singularity
+
+> [!remark] Remark: Strategy
+> To show that the range of an operator such as $f \mapsto (\lambda_0 - t) f$ is dense, approximate a target $g$ by $g_\varepsilon$, equal to $g$ away from the bad set $\{ |t - \lambda_0| \le \varepsilon \}$ and $0$ on it. Removing a set of small measure costs little in $L^p$ for $p < \infty$, and away from the singularity the equation can be solved, with the bound $\frac{1}{\varepsilon}$. In the maximum norm this fails: a set of small measure is not small for $\max |\cdot|$. This is why the same operator has a dense range in $L^2[0,1]$ and not in $C[0,1]$.
+
+^rem-t34
+
+> [!example] Example T34: Applications (Lecture 21)
+> - $\sigma(M) = \sigma_c(M)$ for multiplication by $t$ on $L^2[0,1]$ (Example [[§48 The Resolvent and the Spectrum#^ex-48-4|§48.4]]); contrast Example [[§48 The Resolvent and the Spectrum#^ex-48-3|§48.3]], where every function in the range vanishes at $\lambda_0$.
+> - The same cut-off, normalized, gives approximate eigenvectors (Proposition [[§48 The Resolvent and the Spectrum#^prop-48-4|§48.4]]).
+
+^ex-t34

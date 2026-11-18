@@ -13,7 +13,7 @@ tags: [functional-analysis, math556]
 
 ## The Question
 
-Three modes of convergence are now available, in decreasing strength. In a normed linear space $X$, strong convergence implies weak convergence (Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]](1)). In a dual space $X'$, weak convergence implies weak-$\ast$ convergence (Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-8|§43.8]](1)), and the two coincide when $X$ is reflexive, $X = X''$ (part (2) of that proposition).
+Three modes of convergence are now available, in decreasing strength. In a normed linear space $X$, strong convergence implies weak convergence (Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]](1)). In a dual space $X'$, weak convergence implies weak-$\ast$ convergence (Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-11|§43.11]](1)), and the two coincide when $X$ is reflexive, $X = X''$ (part (2) of that proposition).
 
 The question left open at the end of [[§43 Weak and Weak-Star Convergence|§43]]: let $\{x_n\}_{n=1}^\infty$ be a bounded sequence in $X$. Is there a subsequence $\{x_{n_j}\}_{j=1}^\infty$ that converges weakly, or (when $X$ is a dual space) in the weak-$\ast$ sense, to some $x_0 \in X$? For strong convergence the answer is no as soon as $X$ is infinite-dimensional, since the closed unit ball is then not compact (Theorem [[§20 Compactness and the Unit Ball#^thm-20-5|§20.5]]). In $\ell^2$, for instance, the bounded sequence $\{e_n\}$ of Example [[§43 Weak and Weak-Star Convergence#^ex-43-1|§43.1]] has $\|e_n - e_m\| = \sqrt{2}$ for $n \neq m$, so none of its subsequences is Cauchy.
 
@@ -265,11 +265,11 @@ In a reflexive space, Helly's theorem applies to $X'' = X$ and gives weakly conv
 ^cor-44-5
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Let $\{x_n\}$ be a sequence with $\|x_n\| \le R$. By Theorem [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]] a subsequence $\{x_{n_j}\}$ converges weakly to some $x_0 \in X$, and by Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-4|§43.4]], $\|x_0\| \le \liminf_{j \to \infty} \|x_{n_j}\| \le R$. So $x_0$ lies in the ball.
+> *(Not from lecture; filled in.)* Let $\{x_n\}$ be a sequence with $\|x_n\| \le R$. By Theorem [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]] a subsequence $\{x_{n_j}\}$ converges weakly to some $x_0 \in X$, and by Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-6|§43.6]], $\|x_0\| \le \liminf_{j \to \infty} \|x_{n_j}\| \le R$. So $x_0$ lies in the ball.
 
 ^pf-44-5
 
-*Uses:* [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]], [[§43 Weak and Weak-Star Convergence#^thm-43-4|§43.4]]
+*Uses:* [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]], [[§43 Weak and Weak-Star Convergence#^thm-43-6|§43.6]]
 
 > [!theorem] Theorem §44.6: Weak Sequential Compactness of the Unit Ball Forces Reflexivity
 > Let $X$ be a normed linear space. If the closed unit ball $\{ x \in X : \|x\| \le 1 \}$ of $X$ is weakly sequentially compact, then $X$ is a reflexive Banach space.
@@ -293,11 +293,11 @@ In a reflexive space, Helly's theorem applies to $X'' = X$ and gives weakly conv
 > [!proof]+ Proof
 > *(Stated in lecture without proof; filled in, following Lax.)* Let $\{x_n\}$ be a sequence in $K$. It is bounded, since $K$ is. By Theorem [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]] there are a subsequence $\{x_{n_j}\}$ and $x_0 \in X$ with $x_{n_j} \rightharpoonup x_0$. It remains to show $x_0 \in K$.
 >
-> By Mazur's theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-7|§43.7]]), applied to the sequence $\{x_{n_j}\}_j$, for every $k \in \mathbb{N}$ there is a convex combination $u_k$ of finitely many terms of $\{x_{n_j}\}_j$ with $\|x_0 - u_k\| < \frac1k$. The terms $x_{n_j}$ lie in the convex set $K$, and a convex set contains the finite convex combinations of its points (by induction on the number of points, as in the paragraph after the proof of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-7|§43.7]]); so $u_k \in K$. Thus $u_k \to x_0$ with $u_k \in K$, and since $K$ is closed, $x_0 \in K$ (Definition [[§11 Normed Linear Spaces#^def-11-6|§11.6]]).
+> By Mazur's theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-10|§43.10]]), applied to the sequence $\{x_{n_j}\}_j$, for every $k \in \mathbb{N}$ there is a convex combination $u_k$ of finitely many terms of $\{x_{n_j}\}_j$ with $\|x_0 - u_k\| < \frac1k$. The terms $x_{n_j}$ lie in the convex set $K$, and a convex set contains the finite convex combinations of its points (by induction on the number of points, as in the paragraph after the proof of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-10|§43.10]]); so $u_k \in K$. Thus $u_k \to x_0$ with $u_k \in K$, and since $K$ is closed, $x_0 \in K$ (Definition [[§11 Normed Linear Spaces#^def-11-6|§11.6]]).
 
 ^pf-44-7
 
-*Uses:* [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]], [[§43 Weak and Weak-Star Convergence#^thm-43-7|§43.7]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]]
+*Uses:* [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]], [[§43 Weak and Weak-Star Convergence#^thm-43-10|§43.10]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]]
 
 > [!theorem] Corollary §44.8: Bounded Closed Convex Sets in the Dual of a Reflexive Space
 > *(Not from lecture.)* Let $X$ be a reflexive normed linear space. Then every bounded convex subset $C$ of $X'$ that is closed in the norm of $X'$ is weak-$\ast$ sequentially compact.
@@ -305,11 +305,11 @@ In a reflexive space, Helly's theorem applies to $X'' = X$ and gives weakly conv
 ^cor-44-8
 
 > [!proof]+ Proof
-> $X$ is a Banach space (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-6|§37.6]]), so $X'$ is reflexive (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-9|§37.9]]), and $X'$ is a Banach space (Corollary [[§31 Dual Spaces#^cor-31-1|§31.1]]). Let $\{\ell_n\}$ be a sequence in $C$. By Corollary [[§44 Weak Sequential Compactness#^cor-44-7|§44.7]], applied to the reflexive Banach space $X'$ and its bounded closed convex subset $C$, there are a subsequence $\{\ell_{n_j}\}$ and $\ell_0 \in C$ with $\ell_{n_j} \rightharpoonup \ell_0$ weakly in $X'$. Weak convergence in $X'$ implies weak-$\ast$ convergence (Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-8|§43.8]](1)), so $\ell_{n_j} \overset{\ast}{\rightharpoonup} \ell_0 \in C$.
+> $X$ is a Banach space (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-6|§37.6]]), so $X'$ is reflexive (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-9|§37.9]]), and $X'$ is a Banach space (Corollary [[§31 Dual Spaces#^cor-31-1|§31.1]]). Let $\{\ell_n\}$ be a sequence in $C$. By Corollary [[§44 Weak Sequential Compactness#^cor-44-7|§44.7]], applied to the reflexive Banach space $X'$ and its bounded closed convex subset $C$, there are a subsequence $\{\ell_{n_j}\}$ and $\ell_0 \in C$ with $\ell_{n_j} \rightharpoonup \ell_0$ weakly in $X'$. Weak convergence in $X'$ implies weak-$\ast$ convergence (Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-11|§43.11]](1)), so $\ell_{n_j} \overset{\ast}{\rightharpoonup} \ell_0 \in C$.
 
 ^pf-44-8
 
-*Uses:* [[§37 Separable Duals and Reflexive Spaces#^prop-37-6|§37.6]], [[§37 Separable Duals and Reflexive Spaces#^thm-37-9|§37.9]], [[§31 Dual Spaces#^cor-31-1|§31.1]], [[§44 Weak Sequential Compactness#^cor-44-7|§44.7]], [[§43 Weak and Weak-Star Convergence#^prop-43-8|§43.8]]
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^prop-37-6|§37.6]], [[§37 Separable Duals and Reflexive Spaces#^thm-37-9|§37.9]], [[§31 Dual Spaces#^cor-31-1|§31.1]], [[§44 Weak Sequential Compactness#^cor-44-7|§44.7]], [[§43 Weak and Weak-Star Convergence#^prop-43-11|§43.11]]
 
 ![[m556-44-2.svg]]
 
@@ -409,9 +409,9 @@ In a Hilbert space every nonempty closed convex set has a unique closest point t
 > Then also $y_{n_j} \rightharpoonup y_0$, since $\ell(y_{n_j}) = \ell(y_{n_j} - x_0) + \ell(x_0) \to \ell(y_0 - x_0) + \ell(x_0) = \ell(y_0)$ for every $\ell \in X'$.
 >
 > **Step 3: $y_0 \in K$.**
-> By Mazur's theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-7|§43.7]]), $y_0$ lies in the closed convex hull of $\{y_{n_j}\}_j$: for every $k$ there is a finite convex combination $u_k$ of the points $y_{n_j} \in K$ with $\|y_0 - u_k\| < \frac1k$. As in the proof of Corollary [[§44 Weak Sequential Compactness#^cor-44-7|§44.7]], $u_k \in K$ because $K$ is convex, and $y_0 = \lim_k u_k \in K$ because $K$ is closed.
+> By Mazur's theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-10|§43.10]]), $y_0$ lies in the closed convex hull of $\{y_{n_j}\}_j$: for every $k$ there is a finite convex combination $u_k$ of the points $y_{n_j} \in K$ with $\|y_0 - u_k\| < \frac1k$. As in the proof of Corollary [[§44 Weak Sequential Compactness#^cor-44-7|§44.7]], $u_k \in K$ because $K$ is convex, and $y_0 = \lim_k u_k \in K$ because $K$ is closed.
 >
-> **Step 4: $y_0$ is a closest point.** Since $y_0 \in K$, $d \le \|y_0 - x_0\|$. By the bound for the norm of a weak limit (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-4|§43.4]]), applied to $y_{n_j} - x_0 \rightharpoonup y_0 - x_0$, and by Step 1,
+> **Step 4: $y_0$ is a closest point.** Since $y_0 \in K$, $d \le \|y_0 - x_0\|$. By the bound for the norm of a weak limit (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-6|§43.6]]), applied to $y_{n_j} - x_0 \rightharpoonup y_0 - x_0$, and by Step 1,
 >
 > $$
 > d \le \|y_0 - x_0\| \le \liminf_{j \to \infty} \|y_{n_j} - x_0\| = d .
@@ -421,7 +421,7 @@ In a Hilbert space every nonempty closed convex set has a unique closest point t
 
 ^pf-44-10
 
-*Uses:* [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]], [[§43 Weak and Weak-Star Convergence#^thm-43-7|§43.7]], [[§44 Weak Sequential Compactness#^cor-44-7|§44.7]], [[§43 Weak and Weak-Star Convergence#^thm-43-4|§43.4]]
+*Uses:* [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]], [[§43 Weak and Weak-Star Convergence#^thm-43-10|§43.10]], [[§44 Weak Sequential Compactness#^cor-44-7|§44.7]], [[§43 Weak and Weak-Star Convergence#^thm-43-6|§43.6]]
 
 > [!remark]- Connections
 > - The Hilbert space case, with uniqueness: [[Closest Point in a Closed Convex Set]] ([[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]).

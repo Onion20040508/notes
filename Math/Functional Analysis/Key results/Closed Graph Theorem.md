@@ -17,6 +17,7 @@ tags: [functional-analysis, hub]
 ## Used in (Functional Analysis)
 - [[§41 The Open Mapping Theorem and Its Consequences#^prop-41-5|Proposition §41.5: Closed Range Criterion]]
 - [[§42 Uniform Boundedness and Approximation#^thm-42-5|Theorem §42.5: Equivalent Norm Theorem, Second Version]]
+- [[§48 The Resolvent and the Spectrum#^prop-48-2|Proposition §48.2: The Inverse of lambda I − M is Bounded]]
 
 ## Connections
 - **How.** Put the graph norm $\|x\|_G = \|x\| + \|Mx\|$ on $X$. It is complete because $M$ is closed ([[§39 Solving Mx = y#^prop-39-4|§39.4]]), and it dominates $\|\cdot\|$. Two comparable complete norms are equivalent ([[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]), so $\|Mx\| \le \|x\|_G \le C\|x\|$ ([[Functional Analysis Problem-Solving Techniques#^rem-t27|Technique 27]]).

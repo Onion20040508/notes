@@ -18,6 +18,7 @@ tags: [functional-analysis, hub]
 ## Used in (Functional Analysis)
 - [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|Theorem §41.3: Equivalent Norm Theorem]]
 - [[§42 Uniform Boundedness and Approximation#^thm-42-9|Theorem §42.9: Lax Equivalence Theorem]]
+- [[§48 The Resolvent and the Spectrum#^prop-48-2|Proposition §48.2: The Inverse of lambda I − M is Bounded]]
 
 ## Connections
 - **How.** It is the [[Open Mapping Theorem]] read for a bijection: $M$ open means $M^{-1}$ pulls open sets back to open sets, which is continuity ([[§39 Solving Mx = y#^lem-39-3|§39.3]]), and continuous means bounded ([[Bounded Linear Maps Are Continuous]]). The theorem is stated in Lecture 15 and proved in Lecture 16 ([[§41 The Open Mapping Theorem and Its Consequences#^pf-39-2|proof in §41]]).

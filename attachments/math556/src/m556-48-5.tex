@@ -1,0 +1,14 @@
+%% Figure from MATH 556 notes, section 48 (Lecture 21). ADDED (not from lecture).
+\begin{tikzpicture}[>=stealth, scale=2.6]
+    \draw[->] (-0.7,0) -- (1.9,0) node[right, font=\scriptsize] {$\operatorname{Re} \lambda$};
+    \draw[->] (0,-0.55) -- (0,1.0) node[above, font=\scriptsize] {$\operatorname{Im} \lambda$};
+    \draw[line width=2.2pt, red!70!black] (0,0) -- (1,0);
+    \node[below left, font=\scriptsize] at (0,0) {$0$};
+    \node[below, font=\scriptsize] at (1,0) {$1$};
+    \node[red!70!black, font=\scriptsize, anchor=north] at (0.5,-0.08) {$\sigma(M) = [0,1]$};
+    \fill[blue!65!black] (0.7,0.6) circle (0.6pt) node[above, font=\scriptsize] {$\lambda$};
+    \draw[dashed, blue!65!black] (0.7,0.6) -- node[right, font=\scriptsize] {$d$} (0.7,0);
+    \fill[blue!65!black] (1.5,0.35) circle (0.6pt) node[above, font=\scriptsize] {$\lambda$};
+    \draw[dashed, blue!65!black] (1.5,0.35) -- node[above, font=\scriptsize, pos=0.4] {$d$} (1,0);
+    \node[blue!65!black, font=\scriptsize, anchor=west] at (1.05,0.85) {$\rho(M) = \mathbb{C} \setminus [0,1]$};
+\end{tikzpicture}
