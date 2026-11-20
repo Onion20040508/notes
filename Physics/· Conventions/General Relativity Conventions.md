@@ -1,0 +1,20 @@
+---
+type: convention
+source: "Couzens, C7.5–C7.6 General Relativity 1–2 (Oxford); d'Inverno & Vickers; Hartle; Schutz; 't Hooft"
+---
+# General Relativity Conventions
+
+Conventions of [[Relativity]] level C (general relativity), compared with the sources and with level B. Level C works with the signature $-{+}{+}{+}$ and geometric units $G = c = 1$; Relativity B and [[Quantum Field Theory]] use $+{-}{-}{-}$ with $c$ (and, in QFT, $\hbar$) handled differently. The conversion rules are [[§C1.2 Signature, Units and the Dictionary to Level B#^thm-c1-2-2|Theorem §C1.2.2]]; restoring $G$ and $c$ is [[§C1.2 Signature, Units and the Dictionary to Level B#^thm-c1-2-1|Theorem §C1.2.1]]. Rows marked *(planned)* name homes in chapters not yet written.
+
+| Item | These notes (level C) | Couzens GR1/GR2 | d'Inverno & Vickers | Hartle | Schutz | 't Hooft | Relativity B |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Signature | $\eta = \mathrm{diag}(-1, 1, 1, 1)$ ([[§C1.2 Signature, Units and the Dictionary to Level B#^def-c1-2-2\|Def. §C1.2.2]]) | same | $+{-}{-}{-}$ ("signature $-2$") | same | same | same from ch. 4 | $\mathrm{diag}(+1, -1, -1, -1)$ ([[§B1.1 The Metric and Index Notation#^def-b1-1-3\|Def. §B1.1.3]]) |
+| Units | $G = c = 1$ ([[§C1.2 Signature, Units and the Dictionary to Level B#^def-c1-2-1\|Def. §C1.2.1]]); measurable results also restored | $c = 1$; $G$ kept in GR1 and GR2 §2, $G = 1$ from GR2 §3; $\hbar = k_B = 1$ in GR2 §7–§9 | $c = 1$, $G$ often kept | $c$, $G$ explicit in early chapters, $G = c = 1$ later | $G = c = 1$ | $c = 1$, $G$ kept | SI, $c$ explicit |
+| Coordinates, indices | $x^\mu = (t, x^i)$; Greek $0$–$3$, Latin $1$–$3$; Einstein summation | same | Latin $a, b, \dots$ for $0$–$3$ | same | Greek; $x^0 = t$ | same | $x^0 = ct$ |
+| Proper time | $d\tau^2 = -ds^2$; four-velocity $u\cdot u = -1$ | same | $d\tau^2 = ds^2$, $u\cdot u = +1$ | same as here | same as here | same as here | $u\cdot u = +c^2$ |
+| Newtonian potential | $\Phi < 0$ near masses; $\nabla^2\Phi = 4\pi\rho$; weak field $g_{00} = -(1 + 2\Phi)$ ([[§C1.5 Gravity as Geometry꞉ the Weak-Field Metric#^mod-c1-5-2\|Model §C1.5.2]]) | same | $g_{00} = 1 + 2\phi$ | same | $\phi$ | $V$ | — |
+| Connection | $\Gamma^\lambda_{\mu\nu}$, derivative index first: $\nabla_\mu e_\nu = \Gamma^\lambda_{\mu\nu}e_\lambda$ — §C3.4 *(planned)* | same | same index order | same | same | same | — |
+| Riemann tensor | $R^\rho{}_{\sigma\mu\nu} = \partial_\mu\Gamma^\rho_{\nu\sigma} - \partial_\nu\Gamma^\rho_{\mu\sigma} + \Gamma^\rho_{\mu\lambda}\Gamma^\lambda_{\nu\sigma} - \Gamma^\rho_{\nu\lambda}\Gamma^\lambda_{\mu\sigma}$ (MTW sign; the sphere has $R > 0$) — §C3.8 *(planned)* | same | same (6.40) | same (21.20) | same (6.63) | same (5.27) | — |
+| Ricci tensor | $R_{\mu\nu} = R^\rho{}_{\mu\rho\nu}$ — §C3.9 *(planned)* | same | same (6.84) | same (21.32) | same (6.91) | same (6.30) | — |
+| Einstein equations | $G_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi T_{\mu\nu}$ — §C5.1 *(planned)* | same ($8\pi G_N$); front matter writes the action with $R + \Lambda$, chapters with $R - 2\Lambda$ ([[§C1.2 Signature, Units and the Dictionary to Level B#^cau-c1-2-1\|§C1.2, Caution: Conventions of the sources]]) | $G_{ab} - \Lambda g_{ab} = 8\pi T_{ab}$ in $+{-}{-}{-}$, the same $\Lambda$ | same | same | $G_{\mu\nu} = -8\pi G T_{\mu\nu}$ with $T_{00} = -\rho$ | — |
+| Action | $S = \frac{1}{16\pi}\int d^4x\,\sqrt{-g}\,(R - 2\Lambda) + S_M$; $T_{\mu\nu} = -\frac{2}{\sqrt{-g}}\frac{\delta S_M}{\delta g^{\mu\nu}}$ — §C5.2–§C5.3 *(planned)* | same (with $G_N$) | — | — | — | — | $S = -mc^2\int d\tau$ for a particle |

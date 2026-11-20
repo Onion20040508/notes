@@ -1,0 +1,30 @@
+% Figure for Relativity §C1.5, Example §C1.5.1 (Hartle Prob. 6.13): three clocks in a uniform field g, all from (t, z) = (0, 0) to (T, 0).
+% Top: height z/h, h = gT^2/8 (thrown: 4s(1-s); carried at constant speed gT/4: 2s, 2(1-s); held: 0), s = t/T.
+% Bottom: proper-time rate excess (dtau/dt - 1) c^2/(g^2T^2) = gz - zdot^2/2 in units g^2T^2:
+% thrown 1/2 s(1-s) - 1/2 (1/2 - s)^2, carried s/4 - 1/32 (mirror for s > 1/2), held 0. Areas: 1/24, 1/32, 0.
+\begin{tikzpicture}
+\begin{axis}[nfig, name=top, width=8.4cm, height=4.0cm, xmin=0, xmax=1.08, ymin=0, ymax=1.25,
+  xlabel={}, ylabel={$z/h$}, xtick={0,0.5,1}, xticklabels={}, ytick={0,0.5,1},
+  ylabel style={rotate=-90}]
+  \addplot[figR, domain=0:1, samples=81] {4*x*(1-x)};
+  \addplot[figB, domain=0:0.5, samples=2] {2*x};
+  \addplot[figB, domain=0.5:1, samples=2] {2*(1-x)};
+  \addplot[black, domain=0:1, samples=2] {0.012};
+  \node[figR, font=\scriptsize, anchor=south] at (axis cs:0.5,1.02) {thrown (free fall)};
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.66,0.78) {carried};
+  \node[black, font=\scriptsize, anchor=south west] at (axis cs:0.80,0.03) {held};
+\end{axis}
+\begin{axis}[nfig, at={(top.south west)}, anchor=north west, yshift=-0.35cm, width=8.4cm, height=5.0cm,
+  xmin=0, xmax=1.08, ymin=-0.14, ymax=0.175, xlabel={$t/T$}, ylabel={$\dfrac{c^2}{g^2T^2}\Bigl(\dfrac{d\tau}{dt} - 1\Bigr)$},
+  xtick={0.5,1}, xticklabel style={fill=white, inner sep=1pt, yshift=-2pt}, ytick={-0.1,0,0.1}, yticklabel style={/pgf/number format/fixed},
+  axis x line=middle, x label style={at={(axis description cs:1.0,0.47)}, anchor=west}]
+  \addplot[draw=none, fill=figR, fill opacity=0.12, domain=0:1, samples=81] {0.5*x*(1-x) - 0.5*(0.5-x)^2} \closedcycle;
+  \addplot[draw=none, fill=figB, fill opacity=0.12, domain=0:1, samples=3] {min(x,1-x)/4 - 1/32} \closedcycle;
+  \addplot[figR, domain=0:1, samples=81] {0.5*x*(1-x) - 0.5*(0.5-x)^2};
+  \addplot[figB, domain=0:1, samples=3] {min(x,1-x)/4 - 1/32};
+  \addplot[black, domain=0:1, samples=2] {0};
+  \node[figR, font=\scriptsize, anchor=south] at (axis cs:0.5,0.13) {area $\tfrac{1}{24}$};
+  \node[figB, font=\scriptsize, anchor=center] at (axis cs:0.5,0.045) {area $\tfrac{1}{32}$};
+  \node[font=\scriptsize, anchor=west, align=left] at (axis cs:0.56,-0.095) {$gz$ (height) gains,\\ $-\tfrac12\dot z^2$ (speed) loses};
+\end{axis}
+\end{tikzpicture}
