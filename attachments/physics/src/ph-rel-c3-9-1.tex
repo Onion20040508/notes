@@ -1,0 +1,33 @@
+% Figure for Relativity §C3.9, Example §C3.9.3: torus a = 1, c = 3 coloured by Gaussian curvature K = cos(theta)/(a(c + a cos(theta))).
+% Colour = K normalized separately on each side (K/0.25 for K > 0, K/0.5 for K < 0): red K > 0, blue K < 0, white K = 0.
+% Left: cross-section of the tube (circle of radius 1 centred at distance 3 from the axis), colour along theta. Right: 3D surface.
+\begin{tikzpicture}[font=\small]
+\pgfplotsset{colormap={rwb}{rgb255(0cm)=(31,90,166); rgb255(1cm)=(255,255,255); rgb255(2cm)=(176,48,48)}}
+\begin{axis}[name=sec, axis equal image, width=6cm, xmin=-0.3, xmax=5.2, ymin=-1.7, ymax=1.7, clip=false,
+  axis lines=none, colormap name=rwb, point meta min=-1, point meta max=1]
+  \addplot[domain=0:360, samples=181, line width=4pt, mesh, variable=\t,
+    point meta={ifthenelse(cos(\t)>0, 4*cos(\t)/(3+cos(\t)), 2*cos(\t)/(3+cos(\t)))}]
+    ({3+cos(\t)},{sin(\t)});
+  \draw[black!55, dashed] (axis cs:0,-1.5) -- (axis cs:0,1.5);
+  \node[black!70, font=\scriptsize, anchor=west] at (axis cs:0.05,1.4) {axis};
+  \draw[black!55, ->] (axis cs:3,0) -- (axis cs:3.75,0);
+  \fill[black] (axis cs:3,0) circle (1pt);
+  \draw[black!70, ->] (axis cs:3.45,0) arc[start angle=0, end angle=55, radius=0.42cm];
+  \node[font=\scriptsize] at (axis cs:3.62,0.45) {$\theta$};
+  \node[font=\scriptsize, anchor=west] at (axis cs:4.15,0) {$\theta = 0$};
+  \node[font=\scriptsize, anchor=east] at (axis cs:1.85,0) {$\theta = \pi$};
+  \node[font=\scriptsize, figR, anchor=west] at (axis cs:4.0,-0.95) {$K = \tfrac14$};
+  \node[font=\scriptsize, figB, anchor=east] at (axis cs:2.0,-0.95) {$K = -\tfrac12$};
+  \node[font=\scriptsize] at (axis cs:3,1.4) {$K = 0$};
+  \node[font=\scriptsize] at (axis cs:3,-1.4) {$K = 0$};
+  \draw[black!40, <->] (axis cs:0,-1.65) -- node[below, font=\scriptsize] {$c = 3$} (axis cs:3,-1.65);
+\end{axis}
+\begin{axis}[at={(sec.east)}, anchor=west, xshift=0.9cm, width=7.6cm, height=6cm, view={25}{38}, axis lines=none,
+  axis equal image, colormap name=rwb, point meta min=-1, point meta max=1, z buffer=sort,
+  colorbar, colorbar style={width=0.18cm, ytick={-1,0,1}, yticklabels={$-\frac12$,$0$,$\frac14$}, ylabel={$K$}, font=\scriptsize}]
+  \addplot3[surf, shader=flat, faceted color=none, domain=0:360, y domain=0:360, samples=41, samples y=61,
+    variable=\t, variable y=\s,
+    point meta={ifthenelse(cos(\t)>0, 4*cos(\t)/(3+cos(\t)), 2*cos(\t)/(3+cos(\t)))}]
+    ({(3+cos(\t))*cos(\s)}, {(3+cos(\t))*sin(\s)}, {sin(\t)});
+\end{axis}
+\end{tikzpicture}

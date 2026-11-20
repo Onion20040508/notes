@@ -1,0 +1,14 @@
+% Relativity §C3.3, Example §C3.3.2: cross product as Hodge dual. a = (1.5,0.2,0.3), b = (0.3,1.2,0.2), a x b = (-0.32,-0.21,1.74), area 1.78 (checked by hand: |c|^2 = 0.1024+0.0441+3.0276 = 3.1741).
+\begin{tikzpicture}[x={(-0.6cm,-0.45cm)}, y={(1.15cm,0cm)}, z={(0cm,1.15cm)}, scale=1.6, >={Stealth[length=2.2mm]}, font=\small]
+  \draw[black!45, ->] (0,0,0) -- (2.0,0,0) node[below left] {$x$};
+  \draw[black!45, ->] (0,0,0) -- (0,1.9,0) node[right] {$y$};
+  \draw[black!45, ->] (0,0,0) -- (0,0,2.1) node[above] {$z$};
+  \fill[figB!18] (0,0,0) -- (1.5,0.2,0.3) -- (1.8,1.4,0.5) -- (0.3,1.2,0.2) -- cycle;
+  \draw[figB!60, dashed] (1.5,0.2,0.3) -- (1.8,1.4,0.5) -- (0.3,1.2,0.2);
+  \draw[figB, very thick, ->] (0,0,0) -- (1.5,0.2,0.3) node[below] {$\vec a$};
+  \draw[figB, very thick, ->] (0,0,0) -- (0.3,1.2,0.2) node[below right] {$\vec b$};
+  \draw[figR, very thick, ->] (0,0,0) -- (-0.32,-0.21,1.74) node[above left, align=right] {$\vec a\times\vec b = \bigl(\star(a^\flat\wedge b^\flat)\bigr)^\sharp$};
+  \draw[figB!70!black, ->, thick] (1.05,0.62,0.27) arc[start angle=200, end angle=480, x radius=0.18cm, y radius=0.09cm];
+  \node[figB!70!black, font=\scriptsize, align=center] at (1.0,1.25,-0.15) {$a^\flat\wedge b^\flat$\\ (area $1.78$)};
+  \node[figR, font=\scriptsize] at (-0.2,0.45,1.15) {length $1.78$};
+\end{tikzpicture}
