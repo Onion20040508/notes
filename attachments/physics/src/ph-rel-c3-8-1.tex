@@ -1,0 +1,27 @@
+% Figure for Relativity §C3.8 (Theorem §C3.8.4): parallel transport around a small loop p -> q -> r -> s -> p spanned by δs X and δt Y with [X, Y] = 0.
+% Schematic (angles exaggerated): Z_p transported p->q->r (red) and p->s->r (blue) arrives as two different vectors at r; their difference, and the
+% mismatch after the full loop at p, are -δs δt R(X,Y)Z to second order. Drawn by hand for the notes (not copied from a source).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small, x=1cm, y=1cm]
+  % the loop
+  \coordinate (p) at (0,0); \coordinate (q) at (4.2,0.35); \coordinate (r) at (4.6,3.0); \coordinate (s) at (0.35,2.7);
+  \fill[black!5] (p) to[bend right=6] (q) to[bend left=5] (r) to[bend left=6] (s) to[bend right=5] (p);
+  \draw[black!70, thick, postaction={decorate}, decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=2.6mm]}}}] (p) to[bend right=6] node[pos=0.5, below=2pt, black] {$\delta s\,X$} (q);
+  \draw[black!70, thick, postaction={decorate}, decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=2.6mm]}}}] (q) to[bend left=5] node[pos=0.45, right=2pt, black] {$\delta t\,Y$} (r);
+  \draw[black!70, thick, postaction={decorate}, decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=2.6mm]}}}] (r) to[bend left=6] node[pos=0.5, above=2pt, black] {$-\delta s\,X$} (s);
+  \draw[black!70, thick, postaction={decorate}, decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=2.6mm]}}}] (s) to[bend right=5] node[pos=0.5, left=2pt, black] {$-\delta t\,Y$} (p);
+  % Z at p, and after the loop
+  \draw[black, very thick, ->] (p) -- ++(0.55,1.15) node[above=1pt] {$Z_p$};
+  \draw[figR, very thick, dashed, ->] (p) -- ++(0.95,0.92) node[below right=0pt, font=\scriptsize, figR] {after the loop};
+  \draw[figG, thick, ->] ($(p)+(0.55,1.15)$) -- ($(p)+(0.95,0.92)$);
+  \node[figG, font=\scriptsize, align=left, anchor=west] at (1.1,1.75) {$\Delta Z \approx -\delta s\,\delta t\,R(X, Y)Z$\\(the mismatch at $p$)};
+  % Z at q (along X: red), at s (along Y: blue)
+  \draw[figR, very thick, ->] (q) -- ++(0.75,1.0) node[right=1pt] {$Z_q$};
+  \draw[figB, very thick, ->] (s) -- ++(0.35,1.2) node[left=1pt] {$Z_s$};
+  % two arrivals at r
+  \draw[figR, very thick, ->] (r) -- ++(0.95,0.85) node[below right=0pt] {$Z_r$ (via $q$)};
+  \draw[figB, very thick, ->] (r) -- ++(0.45,1.18) node[above=1pt] {$Z'_r$ (via $s$)};
+  \draw[figG, thick, ->] ($(r)+(0.45,1.18)$) -- ($(r)+(0.95,0.85)$);
+  \node[figG, font=\scriptsize, anchor=west] at ($(r)+(0.85,1.22)$) {$Z_r - Z'_r$};
+  % points
+  \foreach \P/\pos in {p/below left, q/below right, r/below right, s/above left} \fill (\P) circle (1.6pt) node[\pos] {$\P$};
+\end{tikzpicture}
