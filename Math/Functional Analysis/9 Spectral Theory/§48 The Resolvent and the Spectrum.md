@@ -5,7 +5,7 @@ chapter: 9
 section: 48
 tags: [functional-analysis, math556]
 ---
-← [[§47 Weak and Strong Analyticity]] · ↑ [[· 9 Spectral Theory]] · [[§49 Bras, Kets, and the Riesz Map]] →
+← [[§47 Weak and Strong Analyticity]] · ↑ [[· 9 Spectral Theory]] · [[§49 Elementary Spectral Theory]] →
 
 *Stage: maps — Thread: invertibility. $\lambda I - M$ can fail to be invertible by not being one-to-one, by having a dense range that is not everything, or by having a range that is not dense: point, continuous and residual spectrum.*
 
@@ -377,7 +377,7 @@ Why the range is not dense in $C[0,1]$: every $g$ in the range vanishes at $\lam
 
 > [!remark]- Connections
 > - Method: [[Functional Analysis Problem-Solving Techniques#^rem-t34|Technique 34]] (cut off near the singularity).
-> - The same operator on $L^2(\mathbb{R})$ has no eigenvectors: [[§51 Position Eigenstates and Continuous Resolutions#^prop-51-3|Prop. §51.3]].
+> - The same operator on $L^2(\mathbb{R})$ has no eigenvectors: [[§52 Position Eigenstates and Continuous Resolutions#^prop-52-3|Prop. §52.3]].
 
 ![[m556-48-5.svg]]
 
@@ -411,16 +411,16 @@ The spectrum of multiplication by $t$ is the interval $[0,1]$ of the values of $
 ^rem-48-3
 
 > [!remark] Remark: What the Examples Show
-> In both examples $\sigma_p(M) = \varnothing$: multiplication by $t$ has no eigenvectors, yet its spectrum is the whole interval of the values of $t$. The spectrum, not the set of eigenvalues, is the right generalization of the eigenvalues of a matrix. Which part of the spectrum the interval $[0,1]$ is depends on the space. In $C[0,1]$ every function in the range vanishes at $\lambda_0$; this is a closed condition, and the range is far from dense. In $L^2[0,1]$ a single point does not matter, and the range is dense. In both cases $\sigma(M)$ is a nonempty, closed and bounded set, as it is for every bounded operator on a Banach space over $\mathbb{C}$ (Lax §17.1, Thm 4(i)). Lax's Chapter 20 computes the spectra of further operators: shifts (§20.2), Volterra integral operators (§20.3) and the Fourier transform (§20.4).
+> In both examples $\sigma_p(M) = \varnothing$: multiplication by $t$ has no eigenvectors, yet its spectrum is the whole interval of the values of $t$. The spectrum, not the set of eigenvalues, is the right generalization of the eigenvalues of a matrix. Which part of the spectrum the interval $[0,1]$ is depends on the space. In $C[0,1]$ every function in the range vanishes at $\lambda_0$; this is a closed condition, and the range is far from dense. In $L^2[0,1]$ a single point does not matter, and the range is dense. In both cases $\sigma(M)$ is a nonempty, closed and bounded set, as it is for every bounded operator on a Banach space $X \neq \{0\}$ over $\mathbb{C}$ (Theorem [[§49 Elementary Spectral Theory#^thm-49-8|§49.8]]). Lax's Chapter 20 computes the spectra of further operators: shifts (§20.2), Volterra integral operators (§20.3) and the Fourier transform (§20.4).
 
 ^rem-48-4
 
 > [!remark] Remark: The Position Operator
-> In quantum mechanics multiplication by the coordinate on $L^2$ is the position operator ([[§51 Position Eigenstates and Continuous Resolutions|§51]], there on $L^2(\mathbb{R})$). Proposition [[§51 Position Eigenstates and Continuous Resolutions#^prop-51-3|§51.3]] of that section is the statement $\sigma_p(M) = \varnothing$. Example [[§48 The Resolvent and the Spectrum#^ex-48-4|§48.4]] says where the “position eigenvalues” of physics are: every $\lambda_0$ in the interval belongs to the spectrum, as a point of the continuous spectrum and not as an eigenvalue. The “eigenfunction” $\delta(t - \lambda_0)$ of the physics texts is not an element of $L^2$; what exists in $L^2$ are the approximate eigenvectors $\varphi_\varepsilon$ of Proposition [[§48 The Resolvent and the Spectrum#^prop-48-4|§48.4]], wave packets concentrated within $\varepsilon$ of $\lambda_0$.
+> In quantum mechanics multiplication by the coordinate on $L^2$ is the position operator ([[§52 Position Eigenstates and Continuous Resolutions|§52]], there on $L^2(\mathbb{R})$). Proposition [[§52 Position Eigenstates and Continuous Resolutions#^prop-52-3|§52.3]] of that section is the statement $\sigma_p(M) = \varnothing$. Example [[§48 The Resolvent and the Spectrum#^ex-48-4|§48.4]] says where the “position eigenvalues” of physics are: every $\lambda_0$ in the interval belongs to the spectrum, as a point of the continuous spectrum and not as an eigenvalue. The “eigenfunction” $\delta(t - \lambda_0)$ of the physics texts is not an element of $L^2$; what exists in $L^2$ are the approximate eigenvectors $\varphi_\varepsilon$ of Proposition [[§48 The Resolvent and the Spectrum#^prop-48-4|§48.4]], wave packets concentrated within $\varepsilon$ of $\lambda_0$.
 
 ^rem-48-5
 
 > [!remark]- Connections
-> - Companion chapter: [[§51 Position Eigenstates and Continuous Resolutions|§51]] (position has no eigenvectors; the spectral projections of position).
+> - Companion chapter: [[§52 Position Eigenstates and Continuous Resolutions|§52]] (position has no eigenvectors; the spectral projections of position).
 > - Physics: position eigenkets and continuous spectra, [[§C2.1 Continuous Spectra and Position Eigenkets]].
 

@@ -31,5 +31,5 @@ So far $X$ has had only linear structure, and the [[§5 Statement and Motivation
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§11 Normed Linear Spaces#^lem-11-3|Lemma §11.3: Reverse Triangle Inequality]]: 105 later results
 - [[§11 Normed Linear Spaces#^prop-11-4|Proposition §11.4: A Norm is Continuous]]: 88 later results
-- [[§11 Normed Linear Spaces#^prop-11-6|Proposition §11.6: Limits are Unique; Convergent Sequences are Cauchy]]: 62 later results
+- [[§11 Normed Linear Spaces#^prop-11-6|Proposition §11.6: Limits are Unique; Convergent Sequences are Cauchy]]: 67 later results
 - [[§11 Normed Linear Spaces#^prop-11-7|Proposition §11.7: Properties of the Closure]]: 46 later results

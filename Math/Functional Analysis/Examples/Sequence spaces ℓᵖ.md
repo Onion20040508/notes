@@ -34,6 +34,7 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 - Powers of the left shift on $\ell^2$ converge strongly but not uniformly ([[§45 Convergence of Operators#^ex-45-1|§45]])
 - Powers of the right shift on $\ell^2$ converge weakly but not strongly ([[§45 Convergence of Operators#^ex-45-2|§45]])
 - A power series with values in $\ell^2$ is analytic, weakly and strongly ([[§47 Weak and Strong Analyticity#^ex-47-1|§47]])
+- The shifts on $\ell^2$ have only one-sided inverses ([[§49 Elementary Spectral Theory#^ex-49-1|§49]])
 
 ## The completion is complete by the plan of the $\ell^p$ proof, with a diagonal candidate
 ![[§13 The Completion of a Normed Space#^rem-13-2]]
@@ -114,3 +115,6 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 
 ## A power series with values in $\ell^2$ is analytic, weakly and strongly
 ![[§47 Weak and Strong Analyticity#^ex-47-1]]
+
+## The shifts on $\ell^2$ have only one-sided inverses
+![[§49 Elementary Spectral Theory#^ex-49-1]]

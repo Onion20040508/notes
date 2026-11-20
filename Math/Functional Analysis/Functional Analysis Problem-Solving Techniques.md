@@ -504,3 +504,30 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > - The same cut-off, normalized, gives approximate eigenvectors (Proposition [[§48 The Resolvent and the Spectrum#^prop-48-4|§48.4]]).
 
 ^ex-t34
+
+## Technique 35: Perturb an Invertible Operator
+
+> [!remark] Remark: Strategy
+> To invert an operator close to an invertible one, factor out the invertible part and sum a geometric series: $K - A = K(I - K^{-1}A)$, and $(I - B)^{-1} = \sum_n B^n$ when $\|B\| < 1$. The series converges because $\mathcal{L}(X, X)$ is complete, and it comes with the bound $\|(K - A)^{-1}\| \le \|K^{-1}\| / (1 - \|K^{-1}\|\, \|A\|)$. Typical choices: $K = \lambda_0 I - M$ and $A = (\lambda_0 - \lambda) I$ for $\lambda$ near $\lambda_0$; $K = \lambda I$ and $A = M$ for large $|\lambda|$.
+
+^rem-t35
+
+> [!example] Example T35: Applications (Lecture 22)
+> - $\rho(M)$ is open and contains $|\lambda| > \|M\|$ (Proposition [[§49 Elementary Spectral Theory#^prop-49-5|§49.5]]).
+> - The local bound $\|(zI - M)^{-1}\| < 2\, \|(\lambda_0 I - M)^{-1}\|$ in the proof that the resolvent is analytic (Proposition [[§49 Elementary Spectral Theory#^prop-49-7|§49.7]]).
+> - The decay $\|(zI - M)^{-1}\| \le 1 / (|z| - \|M\|)$ used for Liouville's theorem (Theorem [[§49 Elementary Spectral Theory#^thm-49-8|§49.8]]).
+
+^ex-t35
+
+## Technique 36: Scalar Complex Analysis Through Functionals
+
+> [!remark] Remark: Strategy
+> To apply a theorem of complex analysis (Cauchy's formula, Liouville's theorem) to an analytic function $F(z)$ with values in a Banach space, apply an arbitrary $\ell$ in the dual, use the theorem for the scalar function $\ell(F(z))$, and return to $F$ with Hahn–Banach: if $\ell(x) = 0$ for all $\ell$, then $x = 0$.
+
+^rem-t36
+
+> [!example] Example T36: Applications (Lectures 21–22)
+> - $\sigma(M) \neq \varnothing$ (Lecture 22, Theorem [[§49 Elementary Spectral Theory#^thm-49-8|§49.8]]): Liouville's theorem for $\ell\bigl( (zI - M)^{-1} \bigr)$, then Corollary [[§36 Duality in Normed Spaces#^cor-36-3|§36.3]].
+> - Dunford's theorem (Lecture 21, Theorem [[§47 Weak and Strong Analyticity#^thm-47-3|§47.3]]): Cauchy's integral formula for $\ell(f(z))$; there the return to vectors is the uniform boundedness principle.
+
+^ex-t36

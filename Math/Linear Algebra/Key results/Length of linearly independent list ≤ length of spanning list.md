@@ -21,7 +21,7 @@ tags: [linear-algebra, hub]
 - [[§36 Alternating Multilinear Forms#^ladr-9-29|9.29 No nonzero alternating m-linear forms for m > dim V]]
 
 ## Used in (Functional Analysis)
-- [[§51 Position Eigenstates and Continuous Resolutions#^thm-51-2|Theorem §51.2: L²(ℝⁿ) is Separable]]
+- [[§52 Position Eigenstates and Continuous Resolutions#^thm-52-2|Theorem §52.2: L²(ℝⁿ) is Separable]]
 
 ## Used in (Group Theory)
 - [[§71 The Character Table#^cor-71-7|Corollary §71.7: At Most as Many Simple Representations as Conjugacy Classes]]
