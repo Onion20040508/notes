@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 9 §9.3 (Derivation "Example: the helicity basis (Problem Set 5, Problem 6)") and "Correspondence with Yu", Ch. 7 §7.7 · the user's write-up of PHY 513, Problem Set 5, Problem 6 (submitted) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.3, eqs. (3.52)–(3.54) and p. 47 · Yu Zhao-Huan, 量子场论讲义, §5.4.2, eqs. (5.158)–(5.199), (5.213) · the user's pre-course notes, §5.4 ("Helicity spinors in the Weyl representation"; note "Rest frame, and what ω_λω_{−λ} = m means") · PHY 513 Lecture 20 (Larsen, 16 Nov 2026), slides 24–25 ("Helicity Two-Spinors", "Helicity Four-Spinors") · Yu §8.2.4, eqs. (8.100)–(8.107); §8.3, eqs. (8.174)–(8.178). Moved here from §C5a.13 (2026-11-16, user decision: the helicity material next to Lecture 20); its course homes are Lecture 9 and Problem Set 5, Problem 6.*
 
-Which basis of two-spinors makes the spinors simplest, and what happens at $m = 0$? The spinors $u^s(p)$, $v^s(p)$ of [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]] and [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]] hold for any spin basis, with the same two-spinors in every frame ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^rem-c5a-11-1|§C5a.11, Remark: The same ξ in every frame]]). This section chooses the helicity basis, the eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol\sigma$, in which no matrix square root is needed (Problem Set 5, Problem 6), writes $u_\pm$ and $v$ in it, and takes the massless and high-energy limit, where helicity becomes chirality, the spinor form of the Lorentz invariance of massless helicity ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-5|Theorem §C8b.3.5]]). The normalizations and spin sums it uses are [[§C5a.12 Normalization and Spin Sums|§C5a.12]]. Lecture 20 uses these spinors in the ultrarelativistic limit, for the four momenta of $e^+e^- \to \mu^+\mu^-$ (Example §C8b.5.1; [[§C8b.7 Polarized Cross Sections for Muon Pair Production|§C8b.7]]).
+Which basis of two-spinors makes the spinors simplest, and what happens at $m = 0$? The spinors $u^s(p)$, $v^s(p)$ of [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]] and [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]] hold for any spin basis, with the same two-spinors in every frame ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^rem-c5a-11-1|§C5a.11, Remark: The same ξ in every frame]]). This section chooses the helicity basis, the eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol\sigma$, in which no matrix square root is needed (Problem Set 5, Problem 6), writes $u_\pm$ and $v$ in it, and takes the massless and high-energy limit, where helicity becomes chirality, the spinor form of the Lorentz invariance of massless helicity ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-5|Theorem §C8b.3.5]]). The normalizations and spin sums it uses are [[§C5a.12 Normalization and Spin Sums|§C5a.12]]. The section ends by comparing the helicity basis with the fixed-axis basis used until now: the two differ by a rotation, and spin sums do not notice the difference ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-5|Theorem §C8b.5.5]]; [[§C8b.5 Helicity Spinors and the Massless Limit#^rem-c8b-5-3|Remark: Fixed-axis basis versus helicity basis]]). Lecture 20 uses these spinors in the ultrarelativistic limit, for the four momenta of $e^+e^- \to \mu^+\mu^-$ (Example §C8b.5.1; [[§C8b.7 Polarized Cross Sections for Muon Pair Production|§C8b.7]]).
 
 **Setup.** As in [[§C5a.12 Normalization and Spin Sums|§C5a.12]], with the helicity basis fixed: the c-number spinors $u^s(p)$, $v^s(p)$ of the free Dirac field ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), on shell with $p^0 = E_{\mathbf p}$, normalized as in [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-4|Def. §C5a.10.4]]; every $m \ge 0$ unless a box says $m > 0$. The results are exact algebraic identities.
 
@@ -266,6 +266,118 @@ Which basis of two-spinors makes the spinors simplest, and what happens at $m = 
 > *Source: the user's pre-course notes, §5.4 (note "Rest frame, and what ω_λω_{−λ} = m means": "the mass, divided by the energy scale, is the amplitude with which the 'wrong' chirality is populated") · PS §3.3, p. 47*
 
 ^rem-c8b-5-2
+
+## The helicity basis and the fixed-axis basis compared
+
+Two spin bases are now in use: the standard one, $\xi^1, \xi^2$, with the spin along a fixed axis $\hat{\mathbf z}$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-3|Def. §C5a.10.3]]), and the helicity basis $\xi_\pm(\hat{\mathbf p})$, with the spin along the momentum ([[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-2|Def. §C8b.5.2]]). Both are orthonormal bases of the same space $\mathbb C^2$, so they differ by a unitary matrix. This part finds that matrix, shows what it does to the Dirac spinors and to amplitudes, and sets the two bases side by side.
+
+> [!theorem] Theorem §C8b.5.5: The Helicity Basis Is the Fixed-Axis Basis Rotated onto the Momentum
+> Let $\xi^1 = (1, 0)^{\mathsf T}$, $\xi^2 = (0, 1)^{\mathsf T}$ be the standard spin basis ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-3|Def. §C5a.10.3]]) and $\xi_\pm(\hat{\mathbf p})$ the helicity two-spinors of [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-1|Theorem §C8b.5.1]], for $\hat{\mathbf p}$ with angles $(\theta, \varphi)$, $0 \le \theta < \pi$. Write them as the columns of one matrix,
+>
+> $$
+> U(\hat{\mathbf p}) \equiv \bigl(\xi_+\ \ \xi_-\bigr) = \begin{pmatrix}\cos\frac\theta2 & -e^{-i\varphi}\sin\frac\theta2\\ e^{i\varphi}\sin\frac\theta2 & \cos\frac\theta2\end{pmatrix}, \qquad U_{s\lambda} = \xi^{s\dagger}\xi_\lambda \quad (s = 1, 2;\ \lambda = +, -) .
+> $$
+>
+> 1. **It is a rotation.** $U \in SU(2)$, and $U = \exp\bigl(-\tfrac i2\,\theta\,\hat{\mathbf n}\cdot\boldsymbol\sigma\bigr)$ with $\hat{\mathbf n} = (-\sin\varphi, \cos\varphi, 0)$, the unit vector along $\hat{\mathbf z}\times\hat{\mathbf p}$. This is the spin-$\frac12$ matrix of the rotation by $\theta$ about the axis perpendicular to $\hat{\mathbf z}$ and $\hat{\mathbf p}$, the rotation that turns $\hat{\mathbf z}$ into $\hat{\mathbf p}$: $U\sigma^3U^\dagger = \hat{\mathbf p}\cdot\boldsymbol\sigma$. So $\xi_+ = U\xi^1$ and $\xi_- = U\xi^2$.
+> 2. **Overlaps.** $|\xi^{1\dagger}\xi_+|^2 = |\xi^{2\dagger}\xi_-|^2 = \cos^2\frac\theta2$ and $|\xi^{2\dagger}\xi_+|^2 = |\xi^{1\dagger}\xi_-|^2 = \sin^2\frac\theta2$.
+> 3. **Dirac spinors.** At the same momentum $p$, with $u^s(p)$ of [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]] in the standard basis and $u_\lambda(p)$ of [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-2|Theorem §C8b.5.2]]: $u_\lambda(p) = \sum_{s=1,2}U_{s\lambda}\,u^s(p)$ and, inverted, $u^s(p) = \sum_{\lambda=\pm}U^{\ast}_{s\lambda}\,u_\lambda(p)$. For the $v$'s, with $\eta^s = \xi^{-s}$ in $v^s(p)$ ([[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-5|Def. §C9.6.5]]) and $v_\lambda(p)$ of [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-3|Theorem §C8b.5.3]]: $v_\lambda(p) = \sum_sU^{\ast}_{s\lambda}\,v^s(p)$.
+> 4. **Amplitudes.** An amplitude that contains the spinor $u(p)$ of one incoming fermion ([[§C8a.4 Feynman Rules for QED#^thm-c8a-4-4|Theorem §C8a.4.4]]) is linear in it, so $\mathcal M_\lambda = \sum_sU_{s\lambda}\mathcal M_s$, and $\sum_{\lambda=\pm}|\mathcal M_\lambda|^2 = \sum_{s=1,2}|\mathcal M_s|^2$. The same holds for $\bar u$, $v$ and $\bar v$ (with $U$ or $U^{\ast}$). A sum over the spins of a particle does not depend on the basis; an amplitude for one chosen spin state does.
+> 5. **Where the bases agree.** For $\hat{\mathbf p} = +\hat{\mathbf z}$: $U = \mathbb 1$, $\xi_+ = \xi^1$, $\xi_- = \xi^2$, $u_\pm(p) = u^{1,2}(p)$.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* every $m \ge 0$, $\mathbf p \ne 0$, $\hat{\mathbf p} \ne -\hat{\mathbf z}$, with the phases of Theorem §C8b.5.1; another phase choice multiplies each column of $U$ by a phase and changes none of the absolute values.
+>
+> *Source: PS §3.3, pp. 46–47 (any spin basis may be used; the helicity basis) · the user's PHY 513 notes, Ch. 9 §9.3 (paragraph "The same ξ in every frame"; Derivation "Example: the helicity basis") · the change-of-basis matrix is not written in the sources; derived for the user's question of 2026-11-20 and checked numerically (`qft-C/tools/c8b/verify_basis.py`)*
+
+^thm-c8b-5-5
+
+> [!derivation]- Derivation
+> **Step 1** ($U$ is unitary with determinant 1). The columns $\xi_+$, $\xi_-$ are orthonormal ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-1|Theorem §C8b.5.1]]), so $U^\dagger U = \mathbb 1$. The determinant is $\cos\frac\theta2\cos\frac\theta2 - \bigl(-e^{-i\varphi}\sin\frac\theta2\bigr)\bigl(e^{i\varphi}\sin\frac\theta2\bigr) = \cos^2\frac\theta2 + \sin^2\frac\theta2 = 1$. So $U \in SU(2)$.
+>
+> **Step 2** (the exponential form). With $\hat{\mathbf n} = (-\sin\varphi, \cos\varphi, 0)$,
+>
+> $$
+> \hat{\mathbf n}\cdot\boldsymbol\sigma = -\sin\varphi\,\sigma^1 + \cos\varphi\,\sigma^2 = \begin{pmatrix}0 & -\sin\varphi - i\cos\varphi\\ -\sin\varphi + i\cos\varphi & 0\end{pmatrix} = \begin{pmatrix}0 & -ie^{-i\varphi}\\ ie^{i\varphi} & 0\end{pmatrix},
+> $$
+>
+> using $-\sin\varphi - i\cos\varphi = -i(\cos\varphi - i\sin\varphi)$ and $-\sin\varphi + i\cos\varphi = i(\cos\varphi + i\sin\varphi)$. Since $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = \mathbb 1$, the exponential is $\exp(-\frac i2\theta\,\hat{\mathbf n}\cdot\boldsymbol\sigma) = \mathbb 1\cos\frac\theta2 - i\,\hat{\mathbf n}\cdot\boldsymbol\sigma\,\sin\frac\theta2$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-2|QM Theorem §C5.2.2]]). The second term is
+>
+> $$
+> -i\sin\tfrac\theta2\begin{pmatrix}0 & -ie^{-i\varphi}\\ ie^{i\varphi} & 0\end{pmatrix} = \begin{pmatrix}0 & -e^{-i\varphi}\sin\frac\theta2\\ e^{i\varphi}\sin\frac\theta2 & 0\end{pmatrix},
+> $$
+>
+> and adding $\mathbb 1\cos\frac\theta2$ gives the matrix $U$ of the statement. The axis: $\hat{\mathbf z}\times\hat{\mathbf p} = (0, 0, 1)\times(\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta) = (-\sin\theta\sin\varphi, \sin\theta\cos\varphi, 0) = \sin\theta\,\hat{\mathbf n}$.
+>
+> **Step 3** ($U$ turns $\sigma^3$ into $\hat{\mathbf p}\cdot\boldsymbol\sigma$). By [[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-2|Def. §C8b.5.2]], $(\hat{\mathbf p}\cdot\boldsymbol\sigma)\xi_\pm = \pm\xi_\pm$. Column by column this is $(\hat{\mathbf p}\cdot\boldsymbol\sigma)U = U\sigma^3$, because $\sigma^3 = \operatorname{diag}(1, -1)$ multiplies the first column by $+1$ and the second by $-1$. Multiplying by $U^\dagger$ from the right: $\hat{\mathbf p}\cdot\boldsymbol\sigma = U\sigma^3U^\dagger$. The spin along $\hat{\mathbf z}$ is carried into the spin along $\hat{\mathbf p}$: this $U$ is the two-spinor form of the rotation about $\hat{\mathbf z}\times\hat{\mathbf p}$ named in [[§C8b.3 Massless Particles and Helicity#^def-c8b-3-1|Def. §C8b.3.1]]. Part 1; $\xi_+ = U\xi^1$ and $\xi_- = U\xi^2$ are the first and second column of $U$.
+>
+> **Step 4** (overlaps). $U_{s\lambda} = \xi^{s\dagger}\xi_\lambda$ is the $s$-th component of $\xi_\lambda$. Reading the matrix: $|U_{1+}|^2 = |U_{2-}|^2 = \cos^2\frac\theta2$ and $|U_{2+}|^2 = |U_{1-}|^2 = \sin^2\frac\theta2$ (the phases $e^{\pm i\varphi}$ have absolute value 1). Part 2.
+>
+> **Step 5** ($u$ is linear in the two-spinor). In $u(p) = \bigl(\sqrt{p\cdot\sigma}\,\xi,\ \sqrt{p\cdot\bar\sigma}\,\xi\bigr)$ the two-spinor $\xi$ stands to the right of fixed matrices, so $u$ depends linearly on $\xi$. With $\xi_\lambda = \sum_sU_{s\lambda}\xi^s$:
+>
+> $$
+> u_\lambda(p) = \begin{pmatrix}\sqrt{p\cdot\sigma}\,\sum_sU_{s\lambda}\xi^s\\ \sqrt{p\cdot\bar\sigma}\,\sum_sU_{s\lambda}\xi^s\end{pmatrix} = \sum_sU_{s\lambda}\begin{pmatrix}\sqrt{p\cdot\sigma}\,\xi^s\\ \sqrt{p\cdot\bar\sigma}\,\xi^s\end{pmatrix} = \sum_sU_{s\lambda}\,u^s(p) .
+> $$
+>
+> The left side is the $u_\lambda$ of Theorem §C8b.5.2, where the roots were evaluated on $\xi_\lambda$ as numbers. The inverse: multiply by $U^{\ast}_{r\lambda}$ and sum over $\lambda$; unitarity, $\sum_\lambda U_{s\lambda}U^{\ast}_{r\lambda} = (UU^\dagger)_{sr} = \delta_{sr}$, leaves $u^r(p)$.
+>
+> **Step 6** (the $v$'s). The two-spinor in $v^s$ is $\eta^s = \xi^{-s} = -i\sigma^2(\xi^s)^{\ast}$, and the one in $v_\lambda$ is $\lambda\xi_{-\lambda} = -i\sigma^2\xi_\lambda^{\ast}$ ([[§C8b.5 Helicity Spinors and the Massless Limit#^der-c8b-5-3|Derivation §C8b.5.3]], last item). The complex conjugate turns $U_{s\lambda}$ into $U^{\ast}_{s\lambda}$: $-i\sigma^2\xi_\lambda^{\ast} = -i\sigma^2\sum_sU^{\ast}_{s\lambda}(\xi^s)^{\ast} = \sum_sU^{\ast}_{s\lambda}\,\eta^s$. Then $v$ is linear in its two-spinor as in Step 5. Part 3.
+>
+> **Step 7** (amplitudes). If $\mathcal M = (\dots)\,u(p)$, linearity gives $\mathcal M_\lambda = \sum_sU_{s\lambda}\mathcal M_s$. Then
+>
+> $$
+> \sum_\lambda|\mathcal M_\lambda|^2 = \sum_\lambda\sum_{s, r}U_{s\lambda}U^{\ast}_{r\lambda}\,\mathcal M_s\mathcal M_r^{\ast} = \sum_{s, r}\delta_{sr}\,\mathcal M_s\mathcal M_r^{\ast} = \sum_s|\mathcal M_s|^2 .
+> $$
+>
+> For $\bar u(p)$ the coefficients are $U^{\ast}_{s\lambda}$ (the Dirac conjugate is antilinear), for $v$ they are $U^{\ast}_{s\lambda}$ and for $\bar v$ they are $U_{s\lambda}$; the same unitarity step applies. Part 4. For $\theta = 0$ the matrix is $\mathbb 1$. Part 5.
+>
+> **What the derivation shows**
+> - The change of basis acts only on the two-spinor; the momentum, the roots $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ and everything else in the amplitude stay as they are.
+> - Part 4 is the statement behind the spin sums: $\sum_su^s\bar u^s = \slashed{p} + m$ holds for any orthonormal spin basis ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]]), so an unpolarized cross section can be computed in either basis, or with no basis at all, by traces ([[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-3|Theorem §C8a.7.3]]).
+> - Quantum Mechanics builds the same state by rotating spin up first about $y$ by $\theta$ and then about $z$ by $\varphi$, which gives $e^{-i\varphi/2}\xi_+$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]]): the same spinor with another phase.
+
+^der-c8b-5-5
+
+*Uses:* [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-1|Theorem §C8b.5.1]], [[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-2|Def. §C8b.5.2]], [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-2|Theorem §C8b.5.2]], [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-3|Theorem §C8b.5.3]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-3|Def. §C5a.10.3]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-5|Def. §C9.6.5]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-2|QM Theorem §C5.2.2]]
+
+> [!example] Example §C8b.5.2: The Muon of e⁺e⁻ → μ⁺μ⁻ in Both Bases
+> The $\mu^-$ of [[§C8b.5 Helicity Spinors and the Massless Limit#^ex-c8b-5-1|Example §C8b.5.1]] leaves at angle $\theta$ from the beam axis $\hat{\mathbf z}$, in the $xz$-plane ($\varphi = 0$). With $c \equiv \cos\frac\theta2$, $s \equiv \sin\frac\theta2$, [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-5|Theorem §C8b.5.5]] gives
+>
+> $$
+> U(\hat{\mathbf k}) = \begin{pmatrix}c & -s\\ s & c\end{pmatrix}, \qquad u_+(k) = c\,u^1(k) + s\,u^2(k), \qquad u_-(k) = -s\,u^1(k) + c\,u^2(k) .
+> $$
+>
+> 1. At $\theta = 0$ (muon along the beam): $u_+ = u^1$, $u_- = u^2$. Helicity and spin along $z$ are the same label.
+> 2. At $\theta = 90°$: $c = s = 1/\sqrt2$, and each helicity spinor is an equal mixture of $u^1$ and $u^2$.
+> 3. As $\theta \to 180°$: $c \to 0$, $s \to 1$, so $u_+ \to u^2$ and $u_- \to -u^1$: positive helicity is now spin *down* along $z$, because the momentum points along $-\hat{\mathbf z}$.
+>
+> A muon of positive helicity is found with spin up along the beam axis, in its rest frame, with probability $c^2 = \cos^2\frac\theta2$, and with spin down with probability $\sin^2\frac\theta2$.
+>
+> *Source: Theorem §C8b.5.5 applied to the kinematics of Yu §8.2.4, eqs. (8.100)–(8.103); written for the user's question of 2026-11-20*
+
+^ex-c8b-5-2
+
+> [!remark] Remark: Fixed-axis basis versus helicity basis
+> The two bases side by side ($\theta$ is the angle between $\mathbf p$ and $\hat{\mathbf z}$):
+>
+> | | fixed-axis basis $\xi^1, \xi^2$ | helicity basis $\xi_+, \xi_-$ |
+> |---|---|---|
+> | defined as | eigenvectors of $\sigma^3$: $(1, 0)^{\mathsf T}$ and $(0, 1)^{\mathsf T}$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-3\|Def. §C5a.10.3]]) | eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol\sigma$ ([[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-2\|Def. §C8b.5.2]], [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-1\|Theorem §C8b.5.1]]) |
+> | depends on the momentum? | no: the same two columns for every $\mathbf p$ | yes, on the direction $\hat{\mathbf p}$ (not on the magnitude); not defined at $\mathbf p = 0$ |
+> | what the label says | $s$: spin along $\pm\hat{\mathbf z}$ in the rest frame of the particle ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^rem-c5a-11-1\|§C5a.11, Remark: The same ξ in every frame]]; [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-4\|Theorem §C5a.10.4]]) | $\lambda$: spin along the direction of motion, in the frame where the momentum is $\mathbf p$ ([[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-1\|Def. §C8b.5.1]]) |
+> | the Dirac spinor | $u^s = (\sqrt{p\cdot\sigma}\,\xi^s, \sqrt{p\cdot\bar\sigma}\,\xi^s)$: matrix square roots ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1\|Theorem §C5a.11.1]]) | $u_\pm = (\sqrt{E \mp \lvert\mathbf p\rvert}\,\xi_\pm, \sqrt{E \pm \lvert\mathbf p\rvert}\,\xi_\pm)$: the roots are numbers ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-2\|Theorem §C8b.5.2]]) |
+> | eigenvector of the helicity $h$? | only when $\mathbf p$ is along $\pm\hat{\mathbf z}$; otherwise $u^s(p)$ is a mixture of both helicities with weights $\cos^2\frac\theta2$, $\sin^2\frac\theta2$ | always: $h\,u_\pm = \pm\frac12u_\pm$ |
+> | under a rotation of the frame | $s = 1, 2$ mix (by the $SU(2)$ matrix of the rotation), because the axis $\hat{\mathbf z}$ stays fixed while the particle is turned ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-10\|Theorem §C8b.2.10]]) | $\lambda$ is unchanged: $\hat{\mathbf p}\cdot\mathbf S$ is a scalar under rotations |
+> | under a boost | along $\hat{\mathbf p}$: $s$ is unchanged, even when the boost overtakes the particle; in another direction: $s = 1, 2$ mix by the Wigner rotation ([[§C8b.2 Particle States and the Little Group#^rem-c8b-2-3\|§C8b.2, Remark: The Wigner rotation and Thomas precession]]) | $\lambda$ flips for $m > 0$ when the boost overtakes the particle; it is invariant for $m = 0$ ([[§C8b.5 Helicity Spinors and the Massless Limit#^rem-c8b-5-1\|Remark: The helicity of a massive particle depends on the frame]]) |
+> | at rest, $\mathbf p \to 0$ | $u^s \to \sqrt m(\xi^s, \xi^s)$, the natural description ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-3\|Theorem §C5a.10.3]]) | no direction of motion is left to define it |
+> | at $m = 0$ | $u^s$ fills both Weyl halves: for $u^1$ the upper half has squared length $2E\sin^2\frac\theta2$ and the lower $2E\cos^2\frac\theta2$ (for $u^2$ exchanged) | one Weyl half each: helicity is chirality ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4\|Theorem §C8b.5.4]]) |
+> | two-spinor of the $v$'s | $\eta^s = \xi^{-s} = -i\sigma^2(\xi^s)^{\ast}$ ([[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-5\|Def. §C9.6.5]]) | $\lambda\xi_{-\lambda} = -i\sigma^2\xi_\lambda^{\ast}$: the same rule ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-3\|Theorem §C8b.5.3]]) |
+> | spin sums, unpolarized cross sections | the same in both ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7\|Theorem §C5a.12.7]]; [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-5\|Theorem §C8b.5.5]], part 4) | the same in both |
+> | where the notes use it | rest frame and slow particles: $\bar u'u \to 2m\,\xi'^\dagger\xi$ in the Yukawa and Coulomb potentials ([[§C6d.7 The Yukawa Potential\|§C6d.7]], [[§C8a.5 The Coulomb Potential, and Why Like Charges Repel\|§C8a.5]]); the mode operators and $C$, $P$, $T$ ([[§C9.8 Physical Spin versus Wave-Function Spin\|§C9.8]]) | fast particles and polarized amplitudes ([[§C8b.6 Helicity Conservation at the QED Vertex\|§C8b.6]], [[§C8b.7 Polarized Cross Sections for Muon Pair Production\|§C8b.7]], [[§C8b.8★ Polarized Amplitudes with Masses\|§C8b.8★]]) |
+>
+> The helicity basis is not a new kind of spinor: it is the same basis turned so that its axis is the momentum ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-5|Theorem §C8b.5.5]]), and for a momentum along $+\hat{\mathbf z}$ the two are identical. The fixed-axis basis suits a particle at rest or slow, where one axis serves all momenta. The helicity basis suits a fast particle, where each helicity spinor sits almost entirely in one Weyl half ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4|Theorem §C8b.5.4]]) and the QED vertex does not connect the two halves ([[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-3|Theorem §C8b.6.3]]).
+>
+> *Source: PS §3.3, pp. 46–47 · the user's PHY 513 notes, Ch. 9 §9.3 (paragraph "The same ξ in every frame"; Derivation "Example: the helicity basis") · Yu §5.4.2 · the table written for the user's question of 2026-11-20; entries at $m = 0$ and the mixing weights checked numerically (`qft-C/tools/c8b/verify_basis.py`)*
+
+^rem-c8b-5-3
 
 > [!abstract]- Mathematical background
 > Proved in CB; each line says what the physics above relies on.
