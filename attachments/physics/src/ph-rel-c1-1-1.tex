@@ -1,0 +1,28 @@
+% Figure for Relativity §C1.1 (compactness eps = GM/(r c^2) on a log scale; values from verify_c1_1.py:
+% GPS orbit 1.670e-10 (log -9.78), Earth surface 6.954e-10 (-9.16), 1 AU 9.871e-9 (-8.01), Mercury orbit 2.550e-8 (-7.59),
+% Sun surface 2.123e-6 (-5.67), white dwarf 0.6 Msun/7000 km 1.266e-4 (-3.90), neutron star 1.4 Msun/12 km 0.1723 (-0.76),
+% black-hole horizon r = 2M: 0.5 (-0.30). Bands (rough): eps < 1e-4 Newton fine, corrections ~eps; 1e-4..1e-1 sizeable; > 1e-1 GR essential.)
+\begin{tikzpicture}[x=1.22cm, y=1cm, font=\small]
+  % bands
+  \fill[figG!13] (-10.4,-0.55) rectangle (-4,0.55);
+  \fill[figO!16] (-4,-0.55) rectangle (-1,0.55);
+  \fill[figR!16] (-1,-0.55) rectangle (0.25,0.55);
+  \node[figG!60!black, font=\scriptsize, align=center] at (-7.2,-1.45) {Newtonian gravity fine:\\ corrections $\sim\epsilon$, measurable only\\ with clocks, ranging, long records};
+  \node[figO!70!black, font=\scriptsize, align=center] at (-2.5,-1.3) {corrections\\ sizeable};
+  \node[figR!70!black, font=\scriptsize, align=center] at (-0.38,-1.3) {GR\\ essential};
+  % axis
+  \draw[-{Stealth[length=2mm]}, black!70] (-10.4,0) -- (0.45,0) node[right] {$\log_{10}\epsilon$};
+  \foreach \k in {-10,-9,...,0} {
+    \draw[black!70] (\k,-0.08) -- (\k,0.08);
+    \node[black!60, font=\scriptsize, below] at (\k,-0.6) {$\k$};
+  }
+  % markers with vertical labels
+  \foreach \x/\lab in {-9.78/{GPS orbit}, -9.16/{Earth's surface}, -8.01/{Earth's orbit (1 AU)}, -7.59/{Mercury's orbit}, -5.67/{Sun's surface}, -3.90/{white dwarf}, -0.76/{neutron star}} {
+    \fill[figB] (\x,0) circle (2.4pt);
+    \draw[figB, thin] (\x,0.1) -- (\x,0.7);
+    \node[figB, font=\scriptsize, anchor=west, rotate=90, inner sep=1pt] at (\x,0.72) {\lab};
+  }
+  \fill[figR] (-0.30,0) circle (2.4pt);
+  \draw[figR, thin] (-0.30,0.1) -- (-0.30,0.7);
+  \node[figR, font=\scriptsize, anchor=west, rotate=90, inner sep=1pt] at (-0.30,0.72) {horizon, $\epsilon = \tfrac12$};
+\end{tikzpicture}

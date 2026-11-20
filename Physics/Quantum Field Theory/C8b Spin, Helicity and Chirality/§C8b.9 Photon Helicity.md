@@ -15,6 +15,8 @@ tags: [quantum-field-theory, level-c, draft]
 
 Which helicities do the quanta of a vector field carry? A massive spin-1 particle has the three helicities $+1, 0, -1$ of its $2s + 1$ states ([[§C8b.3 Massless Particles and Helicity#^rem-c8b-3-2|§C8b.3, Remark: Helicity of a massive particle]]); a massless one only $\pm1$, each Lorentz invariant ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-5|Theorem §C8b.3.5]], [[§C8b.3 Massless Particles and Helicity#^rem-c8b-3-3|§C8b.3, Remark: Parity pairs λ with −λ]]). This section finds both on the quantized fields: the helicity polarization vectors are eigenvectors of the spin matrix along $\hat{\mathbf p}$, the one-particle states inherit their eigenvalues through the covariance law, and the Noether spin confirms them, once for the Proca field (★, beyond the course) and once for the photon, whose physical states are those of the Gupta–Bleuler condition. Lecture 20 uses the result in its last step: the vertex current of $e^-_Re^+_L$ is the circular polarization vector of a $J_z = +1$ photon ([[§C8b.7 Polarized Cross Sections for Muon Pair Production#^thm-c8b-7-10|Theorem §C8b.7.10]]).
 
+The section is the vector counterpart of [[§C8b.5 Helicity Spinors and the Massless Limit|§C8b.5]]. The polarization vector plays the part of the two-spinor; its two bases, linear and helicity, are compared in [[§C8b.9 Photon Helicity#^thm-c8b-9-10|Theorem §C8b.9.10]]; and the closing remark sets the spinor and the vector field side by side ([[§C8b.9 Photon Helicity#^rem-c8b-9-1|Remark: Helicity and chirality for the spinor field and the vector field]]). Why a vector potential, whose index has no chirality, can describe helicity $\pm1$ at all is the general rule of [[§C8b.4 Chirality#^thm-c8b-4-3|★ Theorem §C8b.4.3]] with [[§C8b.4 Chirality#^thm-c8b-4-4|★ Theorem §C8b.4.4]].
+
 **The mathematical picture.** The four components of a vector field carry $(\frac12, \frac12)$, whose rotation content is spin $0 \oplus 1$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|Theorem §C3.2.9]]). The matrix $\hat{\mathbf p}\cdot\boldsymbol{\mathcal J}$ of the vector representation ([[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-1|Theorem §C4.1.1]]) has eigenvalues $\pm1$ on the plane transverse to $\hat{\mathbf p}$ and $0$ on the span of $(1, \mathbf 0)$ and $(0, \hat{\mathbf p})$; a polarization vector is an intertwiner between this index and the particle's spin label, so its eigenvalue becomes the helicity of the state it creates. The massive field keeps the three transverse-to-$p$ vectors; the massless one keeps the two transverse ones on the physical subspace.
 
 **Setup.** Two systems, each box names its own. *Massive:* the free Proca quantum field of [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^mod-c4-4-1|Model §C4.4.1]] ($m > 0$) on its positive-norm Fock space ([[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^pr-c4-5-1|Principle §C4.5.1]]), one-particle states $|\mathbf p, \lambda\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p,\lambda}|0\rangle$ in the helicity basis of [[§C4.3★ Massive Polarization Vectors and Plane Waves#^def-c4-3-5|Def. §C4.3.5]], $\mathbf p \ne \mathbf 0$. *Massless:* the free Feynman-gauge field of [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^mod-c4-8-4|Model §C4.8.4]] ($m = 0$, $\xi = 1$) on the indefinite-metric Fock space of [[§C4.9 Energy, Momentum and the Indefinite Fock Space#^pr-c4-9-5|Principle §C4.9.5]]; operator identities hold on the whole space, statements on norms, expectation values and null states on the physical subspace of the Gupta–Bleuler condition ([[§C4.10 The Gupta–Bleuler Condition and Physical Photons#^pr-c4-10-1|Principle §C4.10.1]]). The helicity from $\hat{\mathbf J}$ (★ Theorem §C8b.9.2, Theorem §C8b.9.5) assumes the covariance law of a vector field ([[§C4.1 The Vector Field and Its Lorentz Transformation#^rem-c4-1-1|§C4.1, Remark: The quantum vector field, recalled]]); the Noether route (★ Theorems §C8b.9.3, §C8b.9.7–§C8b.9.9) does not. Relativistic normalization, continuum normalization; all results exact for the free fields.
@@ -364,6 +366,91 @@ Which helicities do the quanta of a vector field carry? A massive spin-1 particl
 ^der-c8b-9-9
 
 *Uses:* [[§C8b.9 Photon Helicity#^thm-c8b-9-8|Theorem §C8b.9.8]], [[§C8b.9 Photon Helicity#^der-c8b-9-8|Derivation §C8b.9.8]], [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-11|Theorem §C4.8.11]], [[§C4.10 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-10-6|Theorem §C4.10.6]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]]
+
+## The linear basis and the helicity basis compared
+
+A polarization vector does for the vector field what the two-spinor does for the Dirac field: it carries the spin label of the plane wave. It also comes in two bases, a real one fixed by two directions in space and the helicity basis. This part is the vector counterpart of [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-5|Theorem §C8b.5.5]].
+
+> [!theorem] Theorem §C8b.9.10: The Helicity Vectors Are the Linear Vectors in Circular Combination
+> Let $\mathbf e_1 \equiv \mathbf e(p, 1)$ and $\mathbf e_2 \equiv \mathbf e(p, 2)$ be the real transverse unit vectors of [[§C4.3★ Massive Polarization Vectors and Plane Waves#^def-c4-3-5|Def. §C4.3.5]], the two **linear polarizations**, with $(\mathbf e_1, \mathbf e_2, \hat{\mathbf p})$ a right-handed orthonormal triad ([[§C4.3★ Massive Polarization Vectors and Plane Waves#^thm-c4-3-6|Theorem §C4.3.6]]), and $\boldsymbol\varepsilon(p, \pm) = (\mathbf e_1 \pm i\mathbf e_2)/\sqrt2$ the helicity vectors (all with time component zero).
+> 1. **Change of basis.** $\boldsymbol\varepsilon(p, \lambda) = \sum_{r=1,2}V_{r\lambda}\,\mathbf e_r$ with the unitary matrix $V = \frac1{\sqrt2}\begin{pmatrix}1 & 1\\ i & -i\end{pmatrix}$, the same for every momentum. Inverted: $\mathbf e_1 = \bigl(\boldsymbol\varepsilon(p, +) + \boldsymbol\varepsilon(p, -)\bigr)/\sqrt2$ and $\mathbf e_2 = -i\bigl(\boldsymbol\varepsilon(p, +) - \boldsymbol\varepsilon(p, -)\bigr)/\sqrt2$.
+> 2. **Rotation about the momentum.** A rotation by $\alpha$ about $\hat{\mathbf p}$ turns the linear vectors into each other, $\mathbf e_1 \to \cos\alpha\,\mathbf e_1 + \sin\alpha\,\mathbf e_2$ and $\mathbf e_2 \to -\sin\alpha\,\mathbf e_1 + \cos\alpha\,\mathbf e_2$, and multiplies each helicity vector by a phase, $\boldsymbol\varepsilon(p, \pm) \to e^{\mp i\alpha}\boldsymbol\varepsilon(p, \pm)$. So $\boldsymbol\varepsilon(p, \pm)$ are the eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol{\mathcal J}$ with eigenvalues $\pm1$, and a linear vector is an eigenvector of no helicity: it is an equal mixture, $|\boldsymbol\varepsilon(p, \pm)^{\ast}\cdot\mathbf e_r|^2 = \frac12$.
+> 3. **Complex conjugates.** $\boldsymbol\varepsilon(p, -) = \boldsymbol\varepsilon(p, +)^{\ast}$: the helicity vectors are complex and conjugate to each other, the linear ones are real.
+> 4. **Amplitudes.** An amplitude with one incoming photon is linear in its polarization vector ([[§C8a.4 Feynman Rules for QED#^thm-c8a-4-4|Theorem §C8a.4.4]]), so $\mathcal M_\lambda = \sum_rV_{r\lambda}\mathcal M_r$ and $\sum_{\lambda=\pm}|\mathcal M_\lambda|^2 = \sum_{r=1,2}|\mathcal M_r|^2$; for an outgoing photon, which enters through $\varepsilon^{\ast}$, the same holds with $V^{\ast}$. A sum over the two physical polarizations does not depend on the basis; an amplitude for one chosen polarization does.
+> 5. **No direction makes the bases agree.** For a spinor the two bases coincide when the momentum is along $+\hat{\mathbf z}$ ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-5|Theorem §C8b.5.5]], part 5). Here they never do: $V$ does not depend on $\mathbf p$ and is not the identity.
+>
+> *Course form (Lecture 18):* for $\mathbf p \parallel \hat{\mathbf z}$, $\mathbf e_1 = \hat{\mathbf x}$, $\mathbf e_2 = \hat{\mathbf y}$ and $\epsilon^\mu = (0, 1, \pm i, 0)/\sqrt2$, the right- and left-handed polarization vectors of [[§C8a.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator#^def-c8a-3-2|Def. §C8a.3.2]]; the linear ones are the course's $r = 1, 2$ ([[§C8a.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator#^def-c8a-3-1|Def. §C8a.3.1]]).
+>
+> *Model:* the transverse polarization vectors of a vector field at momentum $\mathbf p \ne 0$: the photon's physical polarizations (Def. §C8a.3.2) and the transverse two of the massive field (★, [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^mod-c4-4-1|Model §C4.4.1]]); *applies:* every $m \ge 0$; with Yu's explicit $\mathbf e(p, 1)$, $\mathbf e(p, 2)$ for $\mathbf p$ not along $\pm\hat{\mathbf z}$, and with any right-handed transverse pair otherwise.
+>
+> *Source: PS §4.8, p. 124 (transverse polarization vectors; for $\mathbf p$ along $z$ the right- and left-handed vectors $(0, 1, \pm i, 0)/\sqrt2$) · Yu §4.3.1 (the vectors $e(p, 1)$, $e(p, 2)$ and their circular combinations) · PHY 513 Lecture 18, slide 9 · the comparison written for the user's question of 2026-11-20 and checked numerically (`qft-C/tools/c8b-general/verify_general.py`)*
+
+^thm-c8b-9-10
+
+> [!derivation]- Derivation
+> **Step 1** (change of basis). Reading off the definition, $\boldsymbol\varepsilon(p, +) = \frac1{\sqrt2}\mathbf e_1 + \frac i{\sqrt2}\mathbf e_2$ and $\boldsymbol\varepsilon(p, -) = \frac1{\sqrt2}\mathbf e_1 - \frac i{\sqrt2}\mathbf e_2$: the columns of $V$. The columns are orthonormal, $\frac12(1\cdot1 + (-i)(i)) = 1$ for each and $\frac12(1\cdot1 + (-i)(-i)) = 0$ between them (the first factor conjugated), so $V$ is unitary. Adding and subtracting the two lines gives $\mathbf e_1$ and $\mathbf e_2$. Part 1.
+>
+> **Step 2** (rotation about $\hat{\mathbf p}$). Since $(\mathbf e_1, \mathbf e_2, \hat{\mathbf p})$ is right-handed, a rotation by $\alpha$ about $\hat{\mathbf p}$ acts on the pair $(\mathbf e_1, \mathbf e_2)$ as a rotation about $\hat{\mathbf z}$ acts on $(\hat{\mathbf x}, \hat{\mathbf y})$: the two rules of part 2. Then
+>
+> $$
+> \boldsymbol\varepsilon(p, +) \to \frac{(\cos\alpha\,\mathbf e_1 + \sin\alpha\,\mathbf e_2) + i(-\sin\alpha\,\mathbf e_1 + \cos\alpha\,\mathbf e_2)}{\sqrt2} = \frac{(\cos\alpha - i\sin\alpha)\,\mathbf e_1 + (\sin\alpha + i\cos\alpha)\,\mathbf e_2}{\sqrt2} = e^{-i\alpha}\,\frac{\mathbf e_1 + i\mathbf e_2}{\sqrt2},
+> $$
+>
+> using $\sin\alpha + i\cos\alpha = i(\cos\alpha - i\sin\alpha) = i\,e^{-i\alpha}$. The complex conjugate of this line is the rule for $\boldsymbol\varepsilon(p, -)$, with $e^{+i\alpha}$. The rotation is $e^{-i\alpha\,\hat{\mathbf p}\cdot\boldsymbol{\mathcal J}}$, so the phases $e^{\mp i\alpha}$ mean $\hat{\mathbf p}\cdot\boldsymbol{\mathcal J} = \pm1$ on $\boldsymbol\varepsilon(p, \pm)$ (for the massive field this is [[§C8b.9 Photon Helicity#^thm-c8b-9-1|★ Theorem §C8b.9.1]]). The overlaps: $\boldsymbol\varepsilon(p, \pm)^{\ast}\cdot\mathbf e_1 = \frac1{\sqrt2}$ and $\boldsymbol\varepsilon(p, \pm)^{\ast}\cdot\mathbf e_2 = \mp\frac i{\sqrt2}$, each of squared modulus $\frac12$. Part 2.
+>
+> **Step 3** (conjugates). $\mathbf e_1$, $\mathbf e_2$ are real, so $\bigl((\mathbf e_1 + i\mathbf e_2)/\sqrt2\bigr)^{\ast} = (\mathbf e_1 - i\mathbf e_2)/\sqrt2$. Part 3.
+>
+> **Step 4** (amplitudes). Linearity gives $\mathcal M_\lambda = \sum_rV_{r\lambda}\mathcal M_r$, and unitarity gives $\sum_\lambda|\mathcal M_\lambda|^2 = \sum_{r, r'}\bigl(\sum_\lambda V_{r\lambda}V^{\ast}_{r'\lambda}\bigr)\mathcal M_r\mathcal M_{r'}^{\ast} = \sum_r|\mathcal M_r|^2$, the same step as in [[§C8b.5 Helicity Spinors and the Massless Limit#^der-c8b-5-5|Derivation §C8b.5.5]], Step 7. Part 4. Part 5 is read off $V$.
+>
+> **What the derivation shows**
+> - The spinor matrix $U(\hat{\mathbf p})$ of Theorem §C8b.5.5 depends on the direction, because the fixed-axis basis ignores the momentum. The linear vectors already follow the momentum (they are transverse to it), so what is left is a fixed change from real to circular combinations.
+> - The phase under a rotation by $\alpha$ about the momentum is $e^{\mp i\alpha}$ here and $e^{\mp i\alpha/2}$ for $u_\pm$: helicity $\pm1$ against $\pm\frac12$.
+
+^der-c8b-9-10
+
+*Uses:* [[§C4.3★ Massive Polarization Vectors and Plane Waves#^def-c4-3-5|Def. §C4.3.5]], [[§C4.3★ Massive Polarization Vectors and Plane Waves#^thm-c4-3-6|Theorem §C4.3.6]], [[§C8a.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator#^def-c8a-3-2|Def. §C8a.3.2]], [[§C8a.4 Feynman Rules for QED#^thm-c8a-4-4|Theorem §C8a.4.4]], [[§C8b.5 Helicity Spinors and the Massless Limit#^der-c8b-5-5|Derivation §C8b.5.5]]
+
+> [!example] Example §C8b.9.1: A Photon along the Beam in Both Bases
+> For $\mathbf p$ along $+\hat{\mathbf z}$ the linear polarizations are $\hat{\mathbf x}$ and $\hat{\mathbf y}$, and the helicity vectors are $\boldsymbol\varepsilon(\pm) = (\hat{\mathbf x} \pm i\hat{\mathbf y})/\sqrt2$, in four-vector form $(0, 1, \pm i, 0)/\sqrt2$.
+> 1. The physical field of the wave is the real part: $\operatorname{Re}\bigl[(\hat{\mathbf x} + i\hat{\mathbf y})\,e^{-i\omega t}\bigr] = \hat{\mathbf x}\cos\omega t + \hat{\mathbf y}\sin\omega t$. For helicity $+1$ the field vector turns from $\hat{\mathbf x}$ towards $\hat{\mathbf y}$, counterclockwise about the direction of motion: the right-hand rule with the thumb along $\mathbf p$. For helicity $-1$ it turns the other way.
+> 2. A linear polarization keeps its direction and only changes size: $\operatorname{Re}\bigl[\hat{\mathbf x}\,e^{-i\omega t}\bigr] = \hat{\mathbf x}\cos\omega t$. It is the sum of the two circular motions, $\hat{\mathbf x} = \bigl(\boldsymbol\varepsilon(+) + \boldsymbol\varepsilon(-)\bigr)/\sqrt2$.
+> 3. In Lecture 20 the current of $e^-_Re^+_L$ along the beam is proportional to $(0, 1, i, 0)$ ([[§C8b.7 Polarized Cross Sections for Muon Pair Production#^thm-c8b-7-10|Theorem §C8b.7.10]]): the helicity $+1$ vector, an equal mixture of the two linear polarizations.
+>
+> *Source: Theorem §C8b.9.10 applied to PS §4.8, p. 124 · PHY 513 Lecture 20, slide 28 · the time dependence written for the user's question of 2026-11-20*
+
+^ex-c8b-9-1
+
+![[ph-qft-c8b-9-a1.gif|640]]
+*The field vector of a wave moving towards the viewer ($\mathbf p$ out of the page), for the three polarizations of [[§C8b.9 Photon Helicity#^ex-c8b-9-1|Example §C8b.9.1]]. Left: helicity $+1$, $(\hat{\mathbf x}\cos\omega t + \hat{\mathbf y}\sin\omega t)/\sqrt2$, turning counterclockwise, the right-hand rule about the motion. Middle: helicity $-1$, turning clockwise. Right: the two circular motions added tip to tail and divided by $\sqrt2$ (each arrow of length $\frac12$): the sum stays on the $x$ axis and is the linear polarization $\hat{\mathbf x}\cos\omega t$ ([[§C8b.9 Photon Helicity#^thm-c8b-9-10|Theorem §C8b.9.10]], part 1). (Not from the sources; animation added, vault only.)*
+
+## Spinor and vector side by side
+
+> [!remark] Remark: Helicity and chirality for the spinor field and the vector field
+> The same questions, asked of both fields:
+>
+> | | spinor field $\psi$ | vector field $A^\mu$ |
+> |---|---|---|
+> | the index carries | $(\frac12, 0)\oplus(0, \frac12)$ | $(\frac12, \frac12)$; its field strength $F^{\mu\nu}$ carries $(1, 0)\oplus(0, 1)$ |
+> | chirality | the eigenvalue $\mp1$ of $\gamma^5$: $\psi_L$, $\psi_R$ ([[§C8b.4 Chirality#^thm-c8b-4-1\|Theorem §C8b.4.1]]) | none for $A^\mu$; for $F^{\mu\nu}$ the pair $\mathbf E - i\mathbf B$, $\mathbf E + i\mathbf B$ ([[§C8b.4 Chirality#^thm-c8b-4-4\|★ Theorem §C8b.4.4]]) |
+> | what carries the spin label of a plane wave | the two-spinor $\xi$ inside $u(p)$, $v(p)$ | the polarization vector $\varepsilon^\mu(p)$ |
+> | basis fixed in space | $\xi^1, \xi^2$: spin along $\pm\hat{\mathbf z}$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-3\|Def. §C5a.10.3]]) | $\mathbf e_1, \mathbf e_2$: linear polarizations ([[§C4.3★ Massive Polarization Vectors and Plane Waves#^def-c4-3-5\|Def. §C4.3.5]]; course form [[§C8a.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator#^def-c8a-3-1\|Def. §C8a.3.1]]) |
+> | helicity basis | $\xi_\pm(\hat{\mathbf p})$ ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-1\|Theorem §C8b.5.1]]) | $\boldsymbol\varepsilon(p, \pm) = (\mathbf e_1 \pm i\mathbf e_2)/\sqrt2$ |
+> | change of basis | the rotation $U(\hat{\mathbf p})$, different for each direction, the identity for $\mathbf p$ along $+\hat{\mathbf z}$ ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-5\|Theorem §C8b.5.5]]) | one fixed matrix $V$ for every momentum ([[§C8b.9 Photon Helicity#^thm-c8b-9-10\|Theorem §C8b.9.10]]) |
+> | rotation by $\alpha$ about $\hat{\mathbf p}$ | $u_\pm \to e^{\mp i\alpha/2}u_\pm$ | $\boldsymbol\varepsilon(p, \pm) \to e^{\mp i\alpha}\boldsymbol\varepsilon(p, \pm)$ |
+> | helicities for $m > 0$ | $\pm\frac12$, two states | $+1, 0, -1$, three states ([[§C8b.9 Photon Helicity#^thm-c8b-9-2\|★ Theorem §C8b.9.2]]) |
+> | helicities for $m = 0$ | $\pm\frac12$, each the same in every frame | $\pm1$ only, no helicity $0$ ([[§C8b.9 Photon Helicity#^thm-c8b-9-5\|Theorem §C8b.9.5]]; [[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4\|Law §C8b.3.4]]) |
+> | what $m \to 0$ does to the rest | the other Weyl half of $u_\pm$ shrinks like $m/E$ ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4\|Theorem §C8b.5.4]]) | the longitudinal vector grows like $E/m$ and has no limit ([[§C4.3★ Massive Polarization Vectors and Plane Waves#^thm-c4-3-9\|Theorem §C4.3.9]]) |
+> | helicity and chirality at $m = 0$ | helicity $\pm\frac12$ is chirality $\pm1$ of the spinor ([[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4\|Theorem §C8b.5.4]]) | helicity $\pm1$ goes with $\mathbf E \pm i\mathbf B$; the potential carries no such label ([[§C8b.4 Chirality#^thm-c8b-4-3\|★ Theorem §C8b.4.3]]) |
+> | antiparticle | the spinor $v$ shows the opposite helicity ([[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-2\|Theorem §C8b.6.2]]) | the photon is its own antiparticle; an outgoing photon enters through $\varepsilon^{\ast}$ |
+> | is the field a true tensor or spinor? | yes | only up to a gauge shift $\varepsilon \to \varepsilon + c\,p$ ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-8\|Theorem §C8b.3.8]]; [[§C8b.4 Chirality#^rem-c8b-4-4\|§C8b.4, ★ Remark: Why photons of helicity ±1 do not contradict the rule]]) |
+> | sum over the spin states | the same in every basis: $\sum_su^s\bar u^s = \slashed{p} + m$ ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7\|Theorem §C5a.12.7]]) | the same in every basis ([[§C8b.9 Photon Helicity#^thm-c8b-9-10\|Theorem §C8b.9.10]], part 4) |
+> | at the QED vertex | chirality is kept along the fermion line ([[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-4\|Theorem §C8b.6.4]]) | the current of $e^-_Re^+_L$ is the helicity $+1$ vector along the beam ([[§C8b.7 Polarized Cross Sections for Muon Pair Production#^thm-c8b-7-10\|Theorem §C8b.7.10]]) |
+>
+> Helicity means the same thing for both fields, the spin along the motion, and both have a helicity basis. Chirality does not carry over to the potential: a vector index has one type only. What replaces it is the split of the field strength, and the reason the potential can still describe helicity $\pm1$ is gauge invariance.
+>
+> *Source: the homes linked in each row · the table written for the user's question of 2026-11-20*
+
+^rem-c8b-9-1
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
