@@ -5,7 +5,7 @@ chapter: 12
 section: 71
 tags: [group-theory, math493]
 ---
-← [[§70 Schur's Lemma and Multiplicities]] · ↑ [[· 12 Characters]]
+← [[§70 Schur's Lemma and Multiplicities]] · ↑ [[· 12 Characters]] · [[§72 Representations of Cyclic Groups]] →
 
 *Source: Lecture and Worksheet 18, *The character table* (Wed Nov 18): WS 18.1–18.4, from handwritten notes of the board; Problem Set 10, Problem 10.4 (submitted).*
 
