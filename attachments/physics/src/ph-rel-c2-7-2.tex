@@ -1,0 +1,29 @@
+% Figure for Relativity §C2.7, opening: the same region (the unit disk) in two charts. Polar grid r = 0.25, 0.5, 0.75, 1, theta every 30 deg.
+% Cells: A = [0, 0.25] x [0, pi/6] (plane area pi/192 = 0.0164), B = [0.75, 1] x [pi/3, pi/2] (plane area 7 pi/192 = 0.1145); both 0.25 x pi/6 = 0.1309 in the (r, theta) chart.
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small]
+  \begin{scope}[scale=1.7]
+    \fill[figO!35] (0,0) -- (0.25,0) arc[start angle=0, end angle=30, radius=0.25] -- cycle;
+    \fill[figR!35] (60:0.75) -- (60:1) arc[start angle=60, end angle=90, radius=1] -- (90:0.75) arc[start angle=90, end angle=60, radius=0.75] -- cycle;
+    \foreach \rr in {0.25,0.5,0.75,1} \draw[figB] (0,0) circle (\rr);
+    \foreach \a in {0,30,...,330} \draw[figB] (0,0) -- (\a:1);
+    \draw[black!55, ->] (-1.2,0) -- (1.25,0) node[right] {$x$};
+    \draw[black!55, ->] (0,-1.2) -- (0,1.25) node[above] {$y$};
+    \node[font=\scriptsize, align=center] at (0,-1.5) {chart $(x, y)$: $\displaystyle\int_D 1\,dx\,dy = \pi$};
+    \node[figO!70!black, font=\scriptsize] at (0.62,-0.12) {$A$};
+    \node[figR, font=\scriptsize] at (0.30,1.1) {$B$};
+  \end{scope}
+  \draw[->, black!60, thick] (2.4,0.3) to[bend left=15] node[above, font=\scriptsize] {$(r, \theta)$} (3.6,0.3);
+  \begin{scope}[xshift=4.3cm, yshift=-1.9cm, x=2.6cm, y=0.62cm]
+    \fill[figO!35] (0,0) rectangle (0.25,0.5236);
+    \fill[figR!35] (0.75,1.0472) rectangle (1,1.5708);
+    \foreach \rr in {0,0.25,0.5,0.75,1} \draw[figB] (\rr,0) -- (\rr,6.2832);
+    \foreach \k in {0,...,12} \draw[figB] (0,{\k*0.5236}) -- (1,{\k*0.5236});
+    \draw[black!55, ->] (0,0) -- (1.2,0) node[right] {$r$};
+    \draw[black!55, ->] (0,0) -- (0,6.9) node[above] {$\theta$};
+    \node[font=\scriptsize, left] at (0,6.2832) {$2\pi$};
+    \node[font=\scriptsize, below] at (1,0) {$1$};
+    \node[figO!70!black, font=\scriptsize] at (0.125,0.26) {$A$};
+    \node[figR, font=\scriptsize] at (0.875,1.31) {$B$};
+    \node[font=\scriptsize, align=left, anchor=west] at (1.15,3.6) {chart $(r, \theta)$:\\[1mm] $\displaystyle\int 1\,dr\,d\theta = 2\pi$ \quad (not $\pi$)\\[1mm] $\displaystyle\int r\,dr\,d\theta = \pi$\\[2mm] $A$, $B$: equal here,\\ area ratio $1 : 7$ in the plane};
+  \end{scope}
+\end{tikzpicture}
