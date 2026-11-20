@@ -36,7 +36,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]: 420 later results
-- [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3: Universal Property of the Subspace Topology]]: 415 later results
-- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 413 later results
-- [[§3 Subspaces and Products#^lem-3-2|Lemma §3.2: Open in Open is Open]]: 412 later results
+- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]: 426 later results
+- [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3: Universal Property of the Subspace Topology]]: 421 later results
+- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 419 later results
+- [[§3 Subspaces and Products#^lem-3-2|Lemma §3.2: Open in Open is Open]]: 418 later results

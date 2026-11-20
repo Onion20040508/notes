@@ -37042,21 +37042,29 @@ The basis $dy \wedge dz$, $dz \wedge dx$, $dx \wedge dy$ is used here (with $dz 
 \textit{(Lecture 32, last minutes.)} With $d$ in hand, the de Rham cohomology can be defined. By convention $\Omega^{-1}(M) = 0$, and $d : \Omega^{-1}(M) \to \Omega^0(M)$ is the zero map. Since each $d : \Omega^k(M) \to \Omega^{k+1}(M)$ is linear, its kernel is a linear subspace of $\Omega^k(M)$, possibly infinite-dimensional ($\Omega^k(M)$ is infinite-dimensional when $0 \le k \le m$ and $m \ge 1$), and so is the image of the previous $d$.
 
 \begin{defbox}[Closed Form]\deflabel{def:closed-form}
-\textit{(Not from lecture: Lee's terminology.)} A form $\omega \in \Omega^k(M)$ is \textbf{closed} if $d\omega = 0$. For one-forms this is the notion of Definition~\ref{def:closed-one-form} (see the end of \ref{sec:exterior-derivative}).
+\textit{(Lecture 33; Lee's terminology, used ahead of the lecture in Lecture~32.)} A form $\omega \in \Omega^k(M)$ is \textbf{closed} if $d\omega = 0$. The space of all closed $k$-forms is written
+\[
+Z^k(M) = \{ \text{all closed } k\text{-forms on } M \} = \ker\big(d : \Omega^k(M) \to \Omega^{k+1}(M)\big) .
+\]
+For one-forms this is the notion of Definition~\ref{def:closed-one-form} (see the end of \ref{sec:exterior-derivative}).
 \leeref{Ch.~17, \emph{The de Rham Cohomology Groups}}
 \end{defbox}
 
 \begin{defbox}[Exact Form]\deflabel{def:exact-form}
-\textit{(Not from lecture: Lee's terminology.)} A form $\omega \in \Omega^k(M)$, $k \ge 1$, is \textbf{exact} if $\omega = d\eta$ for some $\eta \in \Omega^{k-1}(M)$. For one-forms this is the notion of Definition~\ref{def:exact-one-form}.
+\textit{(Lecture 33; Lee's terminology.)} A form $\omega \in \Omega^k(M)$, $k \ge 1$, is \textbf{exact} if $\omega = d\alpha$ for some $\alpha \in \Omega^{k-1}(M)$. The space of all exact $k$-forms is written
+\[
+B^k(M) = \{ \text{all exact } k\text{-forms on } M \} = \operatorname{im}\big(d : \Omega^{k-1}(M) \to \Omega^k(M)\big) ,
+\]
+with $B^0(M) = 0$. For one-forms this is the notion of Definition~\ref{def:exact-one-form}.
 \leeref{Ch.~17, \emph{The de Rham Cohomology Groups}}
 \end{defbox}
 
 \begin{lembox}[Exact Forms Are Closed]\thmlabel{lem:exact-closed}
-\textit{(Not from lecture; filled in.)} $\operatorname{im}\big(d : \Omega^{k-1}(M) \to \Omega^k(M)\big) \subseteq \ker\big(d : \Omega^k(M) \to \Omega^{k+1}(M)\big)$.
+$B^k(M) \subseteq Z^k(M)$ for every $k$. More precisely, $d \circ d = 0$ on $\Omega^{k-1}(M)$ if and only if $B^k(M) \subseteq Z^k(M)$; so $d^2 = 0$ is equivalent to $B^k(M) \subseteq Z^k(M)$ for all $k$.
 \end{lembox}
 
 \begin{proof}
-If $\omega = d\eta$, then $d\omega = d(d\eta) = 0$ by Theorem~\ref{thm:exterior-derivative}(3). For $k = 0$ the image is $0$.
+\textit{(Lecture 33 stated the equivalence; the one-line proof is filled in.)} $B^k(M) \subseteq Z^k(M)$ says that $d(d\eta) = 0$ for every $\eta \in \Omega^{k-1}(M)$, which is $d \circ d = 0$ on $\Omega^{k-1}(M)$. By Theorem~\ref{thm:exterior-derivative}(3) it holds. For $k = 0$, $B^0(M) = 0$.
 \end{proof}
 
 So the image is a linear subspace of the kernel, and the quotient vector space makes sense.
@@ -37064,8 +37072,9 @@ So the image is a linear subspace of the kernel, and the quotient vector space m
 \begin{defbox}[De Rham Cohomology]\deflabel{def:de-rham}
 The \textbf{$k$-th de Rham cohomology space} of $M$ is the real vector space
 \[
-H^k(M) = \frac{\ker\big(d : \Omega^k(M) \to \Omega^{k+1}(M)\big)}{\operatorname{im}\big(d : \Omega^{k-1}(M) \to \Omega^k(M)\big)} = \frac{\{\text{closed } k\text{-forms on } M\}}{\{\text{exact } k\text{-forms on } M\}} .
+H^k(M) = \frac{\ker\big(d : \Omega^k(M) \to \Omega^{k+1}(M)\big)}{\operatorname{im}\big(d : \Omega^{k-1}(M) \to \Omega^k(M)\big)} = \frac{Z^k(M)}{B^k(M)} = \frac{\{\text{closed } k\text{-forms on } M\}}{\{\text{exact } k\text{-forms on } M\}} .
 \]
+The class of a closed form $\omega$ is written $[\omega] \in H^k(M)$.
 In particular, since there is nothing to divide by in degree $0$,
 \[
 H^0(M) = \ker\big(d : C^\infty(M) \to \Omega^1(M)\big) .
@@ -37075,7 +37084,7 @@ H^0(M) = \ker\big(d : C^\infty(M) \to \Omega^1(M)\big) .
 
 \textbf{Transcription note (Lecture 32).} The board wrote the denominator as $\operatorname{Im}\big(d : \Omega^{k+1} \to \Omega^k\big)$; the map into $\Omega^k$ is $d : \Omega^{k-1} \to \Omega^k$, from the previous term of the sequence.
 
-These are real vector spaces. (In MATH~592 a different type of homology and cohomology appears, with groups instead of vector spaces; Lee also says ``de Rham groups''.) A real vector space, at least a finite-dimensional one, has only one invariant, its dimension.
+$H^k(M)$ measures the failure of equality between exact and closed forms. \textit{(Lecture 33.)} The sequence $\cdots \to \Omega^k(M) \xrightarrow{d} \Omega^{k+1}(M) \xrightarrow{d} \cdots$ is a co-chain complex; in MATH~592 the same algebra appears with the arrows reversed, a boundary map from $k$-chains to $(k-1)$-chains, and that is a chain complex. These are real vector spaces. (In MATH~592 a different type of homology and cohomology appears, with groups instead of vector spaces; Lee also says ``de Rham groups''.) A real vector space, at least a finite-dimensional one, has only one invariant, its dimension.
 
 \begin{defbox}[Betti Numbers]\deflabel{def:betti}
 The \textbf{$k$-th Betti number} of $M$ is $b_k(M) = \dim H^k(M)$, a nonnegative integer or $\infty$.
@@ -37084,17 +37093,29 @@ The \textbf{$k$-th Betti number} of $M$ is $b_k(M) = \dim H^k(M)$, a nonnegative
 The board writes $\beta_k$ (see the remark \emph{Notation of Lecture 32} in \ref{sec:exterior-derivative}). The spaces $H^k(M)$, and so the Betti numbers, turn out to be topological invariants of $M$, and in fact homotopy invariants; this will be proved (Lee, Theorem~17.11 and Corollary~17.12). In general they can be hard to compute; for the unitary group, for instance, the cohomology is an interesting problem, with a beautiful answer. The first step towards invariance is naturality.
 
 \begin{propbox}[Smooth Maps Act on Cohomology]\thmlabel{prop:cohomology-maps}
-\textit{(Not from lecture; filled in.)} Let $F : M \to N$ be smooth. Then $F^*$ maps closed forms to closed forms and exact forms to exact forms, so it induces linear maps
+\textit{(Lecture 33.)} Let $F : M \to N$ be smooth. Then $F^*$ maps closed forms to closed forms and exact forms to exact forms, $F^* : Z^k(N) \to Z^k(M)$ and $F^* : B^k(N) \to B^k(M)$, so it induces linear maps, also denoted $F^*$,
 \[
-F^\# : H^k(N) \to H^k(M), \qquad F^\#[\omega] = [F^*\omega] .
+F^* : H^k(N) \to H^k(M), \qquad F^*[\omega] = [F^*\omega] .
 \]
-Moreover $(G \circ F)^\# = F^\# \circ G^\#$ and $\mathrm{id}^\# = \mathrm{id}$; hence a diffeomorphism $F$ induces isomorphisms $F^\#$, and diffeomorphic manifolds have isomorphic de Rham cohomology and the same Betti numbers.
+Moreover $(G \circ F)^* = F^* \circ G^*$ for smooth $G : N \to P$, and $\mathrm{id}^* = \mathrm{id}$; hence if $F$ is a diffeomorphism, then for every $k$, $F^* : H^k(N) \to H^k(M)$ is a linear bijection, and diffeomorphic manifolds have isomorphic de Rham cohomology and the same Betti numbers.
 \leeref{Proposition 17.2; Corollary 17.4}
 \end{propbox}
 
 \begin{proof}
-By naturality (Theorem~\ref{thm:exterior-derivative}(4)), if $d\omega = 0$ then $d(F^*\omega) = F^*(d\omega) = 0$, and if $\omega = d\eta$ then $F^*\omega = d(F^*\eta)$. So the linear map $F^*$ sends the kernel into the kernel and the image into the image, and therefore induces a linear map of the quotients; $F^\#[\omega]$ does not depend on the representative, because two representatives differ by an exact form. The composition rules follow from Lemma~\ref{lem:pullback-forms-functorial}(1), and for a diffeomorphism $(F^{-1})^\#$ is an inverse of $F^\#$.
+\textit{(Lecture 33; written out.)} By naturality (Theorem~\ref{thm:exterior-derivative}(4)), $d F^* = F^* d$: if $d\omega = 0$ then $d(F^*\omega) = F^*(d\omega) = 0$, and if $\omega = d\eta$ then $F^*\omega = d(F^*\eta)$. So the linear map $F^*$ sends $Z^k(N)$ into $Z^k(M)$ and $B^k(N)$ into $B^k(M)$, and therefore induces a linear map of the quotients, by pulling back representatives of classes; $[F^*\omega]$ does not depend on the representative $\omega$, because two representatives differ by an exact form, whose pullback is exact. The composition rules follow from Lemma~\ref{lem:pullback-forms-functorial}(1) on representatives. For a diffeomorphism, take $G = F^{-1}$: then $F^* \circ (F^{-1})^* = (F^{-1} \circ F)^* = \mathrm{id}$ and likewise in the other order, so $(F^{-1})^*$ is an inverse of $F^*$ on $H^k$.
 \end{proof}
+
+%% >>> ADDED: diagram (after the board, Lecture 33)
+\begin{center}
+\begin{tikzcd}[column sep=large]
+\cdots \arrow[r, "d"] & \Omega^{k-1}(N) \arrow[r, "d"] \arrow[d, "F^*"'] & \Omega^k(N) \arrow[r, "d"] \arrow[d, "F^*"'] & \Omega^{k+1}(N) \arrow[r, "d"] \arrow[d, "F^*"'] & \cdots \\
+\cdots \arrow[r, "d"] & \Omega^{k-1}(M) \arrow[r, "d"] & \Omega^k(M) \arrow[r, "d"] & \Omega^{k+1}(M) \arrow[r, "d"] & \cdots
+\end{tikzcd}
+\end{center}
+\textit{(Figure after the board.)} The co-chain complexes of $N$ and $M$, one above the other, with the differentials horizontal and the pullbacks vertical (the diagram after Definition~\ref{def:d-properties}, around degree $k$). Naturality says that every square commutes, and Proposition~\ref{prop:cohomology-maps} is the consequence for the quotients $Z^k/B^k$.
+%% <<< END ADDED
+
+The induced map is written with the same star as the pullback of forms, and the context says which is meant. (Before Lecture~33 these notes wrote it $F^\#$.) Note the order: $(G \circ F)^* = F^* \circ G^*$, pullbacks compose in reverse. A diffeomorphism therefore preserves Betti numbers; in fact the Betti numbers are homotopy invariants, which will be proved once Cartan's magic formula is available (announced for Lecture~34).
 
 \begin{propbox}[Cohomology in Degree Zero]\thmlabel{prop:h0}
 $H^0(M) = \{ f \in C^\infty(M) : df = 0 \}$ is the space of locally constant smooth functions on $M$, and $b_0(M)$ is the number of connected components of $M$.
@@ -37124,7 +37145,310 @@ So $b_0(M)$ is a topological invariant, by inspection. (The homework, Assignment
 \textit{(Not from lecture; figure added.)} A surface $M$ with three connected components (one of them an annulus). A smooth function with $df = 0$ is constant on each component, with independent values, here $2$, $-1$ and $0$; so $H^0(M) \cong \mathbb{R}^3$, by $f \mapsto$ its three values, and $b_0(M) = 3$. The hole of the annulus plays no role in $H^0$.
 %% <<< END ADDED
 
-Next: $H^1(S^1)$, announced for the beginning of the next lecture, as an exercise to think about beforehand.
+Next: $H^1(S^1)$ (\ref{sec:h1-circle}).
+
+% ============================================================================
+% Lecture 33 (Fri Nov 20, 2026): the first cohomology of the circle
+% ============================================================================
+
+\section{The First Cohomology of the Circle}\label{sec:h1-circle}
+
+\roadmark{Stage: forms}{The first nonzero cohomology class in positive degree: the angle form on the punctured plane is closed but not exact; on the circle, integration identifies $H^1(S^1)$ with $\mathbb{R}$.}
+
+\textit{(Lecture 33.)} After the terminology of \ref{sec:de-rham} (closed and exact forms, $Z^k$ and $B^k$, recalled at the start of the lecture) and the degree-zero example ($b_0$ is the number of connected components, Proposition~\ref{prop:h0}), the next examples are in degree one.
+
+\begin{rembox}[Notation of Lecture 33]\label{rem:notation-lecture-33}
+In addition to the remarks \emph{Notation of Lecture 31} and \emph{Notation of Lecture 32}:
+\begin{itemize}[nosep]
+\item \emph{Closed and exact forms.} $Z^k(M)$ and $B^k(M)$ are the spaces of closed and of exact $k$-forms (Definitions~\ref{def:closed-form} and~\ref{def:exact-form}); $H^k(M) = Z^k(M)/B^k(M)$, and $[\omega]$ is the class of $\omega$.
+\item \emph{Induced maps.} The map on cohomology induced by $F$ is written $F^*$, like the pullback of forms (Proposition~\ref{prop:cohomology-maps}).
+\item \emph{Calculus notation.} On an open subset of $\mathbb{R}^2$, a one-form is written $P\, dx + Q\, dy$, and subscripts are partial derivatives: $Q_x = \partial Q/\partial x$.
+\item \emph{The angle.} $\theta$ is the polar angle, which is not a function on $\mathbb{R}^2 \setminus \{0\}$; $d\theta$ is a one-form on $\mathbb{R}^2 \setminus \{0\}$ all the same (Example~\ref{ex:angle-form-cohomology}), and on $S^1$ it denotes the pullback $\iota^*\omega$. For a function $g$ on $S^1$, $g' = dg/d\theta$ is the derivative of $g$ regarded as a $2\pi$-periodic function of $\theta$ (Lemma~\ref{lem:circle-functions}).
+\item \emph{Contraction} (\ref{sec:contraction}). $\iota_\mathbf{X}\alpha$ is the contraction of $\alpha$ by the vector field $\mathbf{X}$; Lee also writes $\mathbf{X} \mathbin{\lrcorner} \alpha$, read ``$\mathbf{X}$ into $\alpha$''. (The handwritten notes have $\alpha \mathbin{\lrcorner} \mathbf{X}$; Lee's order puts the vector first.) The letter $\iota$ is also used for inclusions, $\iota : S^1 \hookrightarrow \mathbb{R}^2 \setminus \{0\}$; a subscript vector field marks the contraction. Vector fields are bold, $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, as elsewhere in these notes; $\mathbf{X}h$ is the function $D_\mathbf{X}h$ (Definition~\ref{def:vf-operator}), and $\alpha(\mathbf{X})$ is the function $p \mapsto \alpha_p(\mathbf{X}_p)$. Tangent vectors are $v^1, \ldots, v^{k-1}$ (the board: $v_1, \ldots, v_{k-1}$).
+\end{itemize}
+\end{rembox}
+
+\begin{exbox}[One-Forms on Open Subsets of the Plane]\exlabel{ex:d-plane-one-form}
+\textit{(Lecture 33.)} Let $M \subseteq \mathbb{R}^2$ be open and $\omega = P\, dx + Q\, dy$ with $P, Q \in C^\infty(M)$. Then
+\[
+d\omega = (Q_x - P_y)\; dx \wedge dy .
+\]
+So $\omega$ is closed exactly when $Q_x = P_y$, the condition of Definition~\ref{def:closed-one-form}.
+\end{exbox}
+
+\begin{proof}[Computation]
+\textit{(Filled in.)} By Definition~\ref{def:d-euclidean}, $d\omega = dP \wedge dx + dQ \wedge dy = (P_x\, dx + P_y\, dy) \wedge dx + (Q_x\, dx + Q_y\, dy) \wedge dy = P_y\, dy \wedge dx + Q_x\, dx \wedge dy$, since $dx \wedge dx = dy \wedge dy = 0$; and $dy \wedge dx = -\,dx \wedge dy$.
+\end{proof}
+
+The standard example, perhaps seen in Calculus~III, is the one of Example~\ref{ex:angle-form}, now in the language of cohomology. The form looks a little contrived, but it is a natural thing: it is $d\theta$.
+
+\begin{exbox}[The Angle Form Is Closed but Not Exact]\exlabel{ex:angle-form-cohomology}
+\textit{(Lecture 33.)} On $M = \mathbb{R}^2 \setminus \{(0, 0)\}$ let
+\[
+\omega = \frac{-y}{x^2 + y^2}\; dx + \frac{x}{x^2 + y^2}\; dy .
+\]
+\begin{enumerate}[nosep]
+\item $\omega$ is closed: $Q_x = P_y$ identically, so $d\omega = 0$.
+\item In fact $\omega = d\theta$, where $\theta$ is the polar angle: on each open set where a continuous branch of $\theta$ is chosen, that branch is smooth and its differential is $\omega$.
+\item $\omega$ is not exact: the Calculus~III line integral of $\omega$ over the unit circle is $\int_{S^1} \omega = \int_0^{2\pi} d\theta = 2\pi \neq 0$, while by the fundamental theorem of calculus for line integrals, $\int_A^B df = f(B) - f(A)$, which is $0$ around a closed curve.
+\end{enumerate}
+So $[\omega] = [d\theta]$ is a nonzero class in $H^1(\mathbb{R}^2 \setminus \{0\})$.
+\leeref{Example 11.36; Example 17.1}
+\end{exbox}
+
+\begin{proof}[Justification]
+(1) is step~3 of Example~\ref{ex:angle-form}, where both sides are computed to be $(y^2 - x^2)/(x^2 + y^2)^2$.
+
+(2) \textit{(Lecture 33 did the computation for $\theta = \tan^{-1}(y/x)$; the other branches are filled in.)} On the right half-plane $\{x > 0\}$, $\theta = \tan^{-1}(y/x)$ is a branch. With $(\tan^{-1})'(s) = 1/(1 + s^2)$ and the chain rule,
+\[
+d\Big(\tan^{-1}\frac{y}{x}\Big) = \frac{-y/x^2}{1 + y^2/x^2}\; dx + \frac{1/x}{1 + y^2/x^2}\; dy = \frac{-y}{x^2 + y^2}\; dx + \frac{x}{x^2 + y^2}\; dy = \omega ,
+\]
+multiplying numerators and denominators by $x^2$. On $\{y > 0\}$, $\{x < 0\}$ and $\{y < 0\}$ the functions $\frac{\pi}{2} - \tan^{-1}(x/y)$, $\pi + \tan^{-1}(y/x)$ and $-\frac{\pi}{2} - \tan^{-1}(x/y)$ are branches of $\theta$, and the same computation gives $\omega$ for each; for instance $d\big(-\tan^{-1}(x/y)\big) = -\frac{(1/y)\, dx - (x/y^2)\, dy}{1 + x^2/y^2} = \frac{-y\, dx + x\, dy}{x^2 + y^2}$. Since $d \circ d = 0$, $\omega = d\theta$ on each half-plane justifies again that $\omega$ is closed.
+
+(3) is steps~4--6 of Example~\ref{ex:angle-form}: along $c(t) = (\cos t, \sin t)$, $\omega$ takes the value $1$ on the velocity, so $\int_{S^1}\omega = \int_0^{2\pi} 1\, dt = 2\pi$; if $\omega = df$, then $(f \circ c)' = 1$ and $f(c(2\pi)) - f(c(0)) = 2\pi$, while $c(2\pi) = c(0)$.
+\end{proof}
+
+\emph{There is no contradiction in writing $\omega = d\theta$ with $\omega$ not exact.} The reason is that $\theta$ is not a smooth function on $\mathbb{R}^2 \setminus \{0\}$; it is not even a continuous one. It is the measure of an angle in radians, which is defined only up to an additive multiple of $2\pi$.
+
+\begin{lembox}[Branches of the Angle Differ by Constants]\thmlabel{lem:angle-branches}
+\textit{(Lecture 33, an observation.)} A \emph{branch of $\theta$} on an open set $W \subseteq \mathbb{R}^2 \setminus \{0\}$ is a continuous function $\vartheta : W \to \mathbb{R}$ with $(x, y) = r\,(\cos\vartheta, \sin\vartheta)$ on $W$, where $r = \sqrt{x^2 + y^2}$. Any two branches of $\theta$ on a connected open set differ by a constant. So $d\theta$ is well defined: every branch is smooth, and its differential is the form $\omega$ of Example~\ref{ex:angle-form-cohomology}, on its domain.
+\end{lembox}
+
+\begin{proof}
+\textit{(Filled in.)} If $\vartheta_1$ and $\vartheta_2$ are branches on a connected open set $W$, then $\cos$ and $\sin$ agree at $\vartheta_1$ and $\vartheta_2$, so $\vartheta_1 - \vartheta_2$ is continuous with values in $2\pi\mathbb{Z}$, hence constant on $W$. For the second statement, let $\vartheta$ be a branch on an open set $W$ and $q \in W$. The point $q$ lies in one of the four open half-planes $H$ of the justification above, on which there is a smooth branch $\vartheta_H$ with $d\vartheta_H = \omega$. On a connected open neighbourhood of $q$ in $W \cap H$, $\vartheta - \vartheta_H$ is constant, by the first statement; so $\vartheta$ is smooth near $q$, and $d\vartheta = d\vartheta_H = \omega$ there.
+\end{proof}
+
+\textit{Conclusion.} $[d\theta] \neq 0$ in $H^1(\mathbb{R}^2 \setminus \{0\})$: the first nontrivial cohomology class of positive degree seen in the course. In fact $H^1(\mathbb{R}^2 \setminus \{0\})$ is one-dimensional, with basis $[d\theta]$; there is a reason why the de Rham cohomology of the punctured plane is the same as that of the circle, which will be seen later (homotopy invariance). For now, the circle.
+
+%% >>> ADDED: figure (not from lecture; the board drew the circle with the field)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=1.35]
+\fill[gray!5] (-2.1,-1.7) rectangle (2.4,1.7);
+\draw[->, gray!70] (-2.0,0) -- (2.3,0) node[right, font=\scriptsize] {$x$};
+\draw[->, gray!70] (0,-1.6) -- (0,1.6) node[above, font=\scriptsize] {$y$};
+\draw[dashed, red!70!black, thick] (0.05,0) -- (2.2,0);
+\node[red!70!black, font=\scriptsize, align=left, anchor=north west] at (1.12,-0.04) {branch cut of\\ $\theta \in (0, 2\pi)$};
+\draw[thick, blue!70!black] (0,0) circle (1);
+\foreach \a in {0,60,120,180,240,300} {
+  \draw[->, blue!60!black] ({cos(\a)},{sin(\a)}) -- ({cos(\a)-0.42*sin(\a)},{sin(\a)+0.42*cos(\a)});
+}
+\fill[white] (0,0) circle (1.6pt); \draw (0,0) circle (1.6pt);
+\coordinate (q) at ({cos(40)},{sin(40)});
+\draw[gray!70!black] (0,0) -- (q);
+\fill (q) circle (1.2pt);
+\draw[->, gray!70!black] (0.35,0) arc (0:40:0.35);
+\node[font=\scriptsize] at (0.5,0.18) {$\theta$};
+\node[font=\scriptsize, blue!60!black] at (-1.5,0.98) {$\partial_\theta = (-y, x)$};
+\node[font=\scriptsize, blue!70!black] at (-0.75,-1.18) {$S^1$};
+\node[font=\scriptsize] at (1.95,1.45) {$\mathbb{R}^2 \setminus \{0\}$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} The angle $\theta$ on $\mathbb{R}^2 \setminus \{0\}$ (origin removed, hollow dot). A continuous branch of $\theta$ exists only after a cut is removed; across the cut drawn here, the branch with values in $(0, 2\pi)$ jumps by $2\pi$. The one-form $d\theta = \omega$ does not see the cut: on each side, branches differ by constants. On the unit circle, the rotation field $\partial_\theta$, with $\partial_\theta(x, y) = (-y, x)$, satisfies $d\theta(\partial_\theta) = 1$; going once around, $\theta$ increases by $\int_{S^1} d\theta = 2\pi$.
+%% <<< END ADDED
+
+\emph{The circle.} Let $\iota : S^1 \hookrightarrow \mathbb{R}^2 \setminus \{0\}$ be the inclusion. Abusing the notation, write
+\[
+d\theta = \iota^*\omega \in \Omega^1(S^1) .
+\]
+If $S^1$ is regarded as a Lie group (rotations), the generator of the circle action is the field $\partial_\theta$ given in Cartesian coordinates by $(-y, x)$, and $d\theta(\partial_\theta) = 1$. Every one-form on $S^1$ is closed, for dimensional reasons, and this holds for every form of top degree, that is, of degree equal to the dimension.
+
+\begin{lembox}[Top-Degree Forms Are Closed]\thmlabel{lem:top-forms-closed}
+\textit{(Lecture 33, in answer to a question.)} If $\dim M = m$, every $m$-form on $M$ is closed: $Z^m(M) = \Omega^m(M)$, and so $H^m(M) = \Omega^m(M)/B^m(M)$. In particular $\Omega^1(S^1) = Z^1(S^1)$.
+\end{lembox}
+
+\begin{proof}
+For $\omega \in \Omega^m(M)$, $d\omega$ is an $(m+1)$-form, and $\Lambda^{m+1}T_p^*M = 0$ at every $p$, since any $m + 1$ vectors of the $m$-dimensional space $T_pM$ are linearly dependent (Corollary~\ref{cor:forms-above-dimension}). So $d\omega = 0$. For $S^1$: $\Lambda^2$ of a one-dimensional space is zero.
+\end{proof}
+
+In particular $d\theta \in Z^1(S^1)$, and $H^1(S^1) = \Omega^1(S^1)/B^1(S^1)$: the question is which one-forms on the circle are exact.
+
+\begin{lembox}[Functions and One-Forms on the Circle]\thmlabel{lem:circle-functions}
+\textit{(Not from lecture; filled in. Lecture 33 used $C^\infty(S^1)$ as the space of $2\pi$-periodic functions of $\theta$; this lemma says what that means.)} Let $p : \mathbb{R} \to S^1$, $p(t) = (\cos t, \sin t)$.
+\begin{enumerate}[nosep]
+\item $g \mapsto g \circ p$ is a linear bijection from $C^\infty(S^1)$ onto the space of smooth $2\pi$-periodic functions on $\mathbb{R}$.
+\item $p^*(d\theta) = dt$, and $(d\theta)_q(\partial_\theta|_q) = 1$ for every $q \in S^1$. Every one-form on $S^1$ is $\alpha = f\, d\theta$ for a unique $f \in C^\infty(S^1)$, namely $f = \alpha(\partial_\theta)$.
+\item For $f, g \in C^\infty(S^1)$: $dg = f\, d\theta$ if and only if $(g \circ p)' = f \circ p$. Writing $g' = dg/d\theta$ for $(g \circ p)'$ read as a function on $S^1$, $dg = g'\, d\theta$.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+(1) $p$ is smooth into $\mathbb{R}^2$ with values in the regular submanifold $S^1$, hence smooth into $S^1$, so $g \circ p$ is smooth, and it is $2\pi$-periodic. Conversely, let $G$ be smooth and $2\pi$-periodic. Then $G = g \circ p$ for exactly one function $g$ on $S^1$, since $p(t) = p(t')$ if and only if $t - t' \in 2\pi\mathbb{Z}$. On the chart domains $U_a$ and $U_b$ of the angle atlas (Example~\ref{ex:circle-angle}), $p$ restricted to $(0, 2\pi)$, respectively $(\pi, 3\pi)$, is the inverse of the chart $\varphi_a$, respectively $\varphi_b$. So $g = G \circ \varphi_a$ on $U_a$ and $g = G \circ \varphi_b$ on $U_b$, both smooth (the angle atlas belongs to the smooth structure of $S^1$, Proposition~\ref{prop:circle-atlases-same}).
+
+(2) $p^*(d\theta) = (\iota \circ p)^*\omega$ (Lemma~\ref{lem:pullback-forms-functorial}), and with $x = \cos t$, $y = \sin t$, $x^2 + y^2 = 1$,
+\[
+(\iota \circ p)^*\omega = -\sin t\; d(\cos t) + \cos t\; d(\sin t) = (\sin^2 t + \cos^2 t)\, dt = dt .
+\]
+The velocity of $p$ at $t$ is $(-\sin t, \cos t) = \partial_\theta|_{p(t)}$, that is, $dp_t(\partial_t) = \partial_\theta|_{p(t)}$; hence $(d\theta)_{p(t)}(\partial_\theta) = (p^*d\theta)_t(\partial_t) = dt(\partial_t) = 1$. Since $T_q^*S^1$ is one-dimensional and $(d\theta)_q \neq 0$, $(d\theta)_q$ is a basis of it, and $\alpha_q = \alpha_q(\partial_\theta|_q)\, (d\theta)_q$; the function $f = \alpha(\partial_\theta)$ is smooth, because $\alpha$ and the field $\partial_\theta$ (the restriction to $S^1$ of the smooth field $(-y, x)$, which is tangent to $S^1$) are smooth.
+
+(3) $p^*(dg) = d(g \circ p) = (g \circ p)'\, dt$ (Proposition~\ref{prop:pullback-k-form-properties}(3)) and $p^*(f\, d\theta) = (f \circ p)\, dt$ by (2). For each $q \in S^1$ there is $t$ with $p(t) = q$ in $(0, 2\pi)$ or $(\pi, 3\pi)$, where $p$ is the inverse of a chart, so $dp_t$ is an isomorphism; hence a one-form $\beta$ on $S^1$ with $p^*\beta = 0$ is zero. Applied to $\beta = dg - f\, d\theta$, this gives the equivalence.
+\end{proof}
+
+\begin{propbox}[The First Cohomology of the Circle]\thmlabel{prop:h1-circle}
+Let $\mathcal{S} : \Omega^1(S^1) \to \mathbb{R}$ be the linear map
+\[
+\mathcal{S}(f\, d\theta) = \int_0^{2\pi} f(\theta)\, d\theta \qquad \Big( = \int_0^{2\pi} f(p(t))\, dt \Big) .
+\]
+Then $\ker \mathcal{S} = B^1(S^1)$, and $\mathcal{S}$ is surjective. Hence $\mathcal{S}$ induces an isomorphism
+\[
+H^1(S^1) = \Omega^1(S^1)/B^1(S^1) \cong \mathbb{R} ,
+\]
+and $[d\theta]$ is a basis of $H^1(S^1)$: for every $\alpha \in \Omega^1(S^1)$ there are $c \in \mathbb{R}$ and $g \in C^\infty(S^1)$ with $\alpha = c\, d\theta + dg$. So $b_1(S^1) = 1$.
+\leeref{Theorem 17.21 ($n = 1$)}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture 33, in outline; details filled in.)} \emph{What is to be shown.} The claim $[\alpha] = c\,[d\theta]$ means that $\alpha - c\, d\theta$ is exact, $\alpha = c\, d\theta + dg$. Put otherwise: what are the exact one-forms? By Lemma~\ref{lem:circle-functions}(2), any one-form on $S^1$ is $\alpha = f\, d\theta$ with $f \in C^\infty(S^1)$, because $d\theta$ is nowhere zero, so pointwise it generates $T^*S^1$: it is a global frame. For which $f$ is there $g \in C^\infty(S^1)$ with $f\, d\theta = dg = \frac{dg}{d\theta}\, d\theta$, that is, $f = g'$?
+
+\emph{The calculus~I answer, and why it is not enough.} Think of functions on $S^1$ as $2\pi$-periodic functions of $\theta$ (Lemma~\ref{lem:circle-functions}(1)) and write $F = f \circ p$. The solutions of $G' = F$ on $\mathbb{R}$ are
+\[
+G(\theta) = \int_0^\theta F(t)\, dt + C .
+\]
+Does this solve the problem? The derivative is right. But a function on the circle must be periodic, and this $G$ is periodic only if $\int_0^{2\pi} F = 0$. \textit{(Filled in.)} Since $F$ is $2\pi$-periodic, $G(\theta + 2\pi) - G(\theta) = \int_\theta^{\theta + 2\pi} F(t)\, dt = \int_0^{2\pi} F(t)\, dt$ for every $\theta$. So if $\int_0^{2\pi} F = 0$, $G$ is smooth and periodic, $G = g \circ p$ for some $g \in C^\infty(S^1)$, and $dg = f\, d\theta$ by Lemma~\ref{lem:circle-functions}(3). Conversely, if $f\, d\theta = dg$, then $G = g \circ p$ is periodic with $G' = F$, so $\int_0^{2\pi} F = G(2\pi) - G(0) = 0$. Hence
+\[
+f\, d\theta \in B^1(S^1) \iff \int_0^{2\pi} f(\theta)\, d\theta = 0 ,
+\]
+that is, $\ker \mathcal{S} = B^1(S^1)$.
+
+\emph{Conclusion.} $\mathcal{S}$ is well defined, since $f$ is determined by $\alpha$, and clearly linear. It is onto: $\mathcal{S}(d\theta) = 2\pi \neq 0$, so $\mathcal{S}(\tfrac{c}{2\pi}\, d\theta) = c$. A surjective linear map induces an isomorphism from the domain divided by its kernel onto its target, so $\Omega^1(S^1)/B^1(S^1) \cong \mathbb{R}$, and this quotient is precisely $H^1(S^1)$, because $Z^1(S^1) = \Omega^1(S^1)$. Under the isomorphism $[d\theta] \mapsto 2\pi \neq 0$, so $[d\theta]$ is a basis; explicitly, $\alpha - \frac{\mathcal{S}(\alpha)}{2\pi}\, d\theta \in \ker\mathcal{S} = B^1(S^1)$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, xscale=0.36, yscale=0.55]
+\draw[->, gray!70] (0,0) -- (13.3,0) node[right, font=\scriptsize] {$t$};
+\draw[->, gray!70] (0,-1.5) -- (0,4.4);
+\foreach \k/\lab in {6.2832/2\pi, 12.5664/4\pi} { \draw[gray!60] (\k,-0.12) -- (\k,0.12); \node[font=\scriptsize, below] at (\k,-0.12) {$\lab$}; }
+\draw[thick, orange!80!black, domain=0:12.5664, samples=120, smooth] plot (\x, {1 + cos(\x r)});
+\draw[thick, blue!70!black, domain=0:12.5664, samples=120, smooth] plot (\x, {0.3*(\x + sin(\x r))});
+\node[font=\scriptsize, orange!80!black, anchor=west] at (0.4,2.6) {$F = 1 + \cos t$};
+\node[font=\scriptsize, blue!70!black, anchor=west] at (8.6,4.1) {$G = \int_0^t F$ (scaled)};
+\node[font=\scriptsize, align=center] at (6.6,-2.6) {$\int_0^{2\pi} F = 2\pi$: $G$ gains $2\pi$ per turn,\\ not periodic};
+\begin{scope}[xshift=17cm]
+\draw[->, gray!70] (0,0) -- (13.3,0) node[right, font=\scriptsize] {$t$};
+\draw[->, gray!70] (0,-1.5) -- (0,4.4);
+\foreach \k/\lab in {6.2832/2\pi, 12.5664/4\pi} { \draw[gray!60] (\k,-0.12) -- (\k,0.12); \node[font=\scriptsize, below] at (\k,-0.12) {$\lab$}; }
+\draw[thick, orange!80!black, domain=0:12.5664, samples=120, smooth] plot (\x, {cos(\x r)});
+\draw[thick, blue!70!black, domain=0:12.5664, samples=120, smooth] plot (\x, {sin(\x r)});
+\node[font=\scriptsize, orange!80!black, anchor=west] at (0.4,1.75) {$F = \cos t$};
+\node[font=\scriptsize, blue!70!black, anchor=west] at (5.4,1.75) {$G = \sin t$};
+\node[font=\scriptsize, align=center] at (6.6,-2.6) {$\int_0^{2\pi} F = 0$: $G$ is periodic,\\ a function on $S^1$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} The calculus~I problem on the circle, Proposition~\ref{prop:h1-circle}. Left, $\alpha = (1 + \cos\theta)\, d\theta$: the antiderivative $G(t) = t + \sin t$ (drawn at a smaller scale) is not $2\pi$-periodic, so it is not a function on $S^1$, and $\alpha$ is not exact; $[\alpha] = [d\theta]$. Right, $\alpha = \cos\theta\, d\theta = d(\sin\theta)$ is exact.
+%% <<< END ADDED
+
+So the line integral identifies $H^1(S^1)$ with $\mathbb{R}$: $\mathcal{S}(\alpha)$ is the Calculus~III line integral $\int_{S^1}\alpha$ of Example~\ref{ex:angle-form-cohomology}(3). The computation is an instance of a general theorem, stated now and proved once orientations are defined and top-degree forms can be integrated over compact oriented manifolds.
+
+\begin{thmbox}[Top-Degree Cohomology]\thmlabel{thm:top-cohomology}
+\textit{(Stated in Lecture 33; to be proved.)} Let $M$ be a compact, oriented, connected smooth manifold of dimension $m$. Then integration induces an isomorphism
+\[
+\int_M : H^m(M) \xrightarrow{\ \cong\ } \mathbb{R} .
+\]
+In particular $b_m(M) = 1$.
+\leeref{Theorem 17.31}
+\end{thmbox}
+
+\begin{proof}[Proof (to be filled)]
+Stated in Lecture 33 without proof. It needs orientations and the integral of an $m$-form over a compact oriented manifold, which come later in the course (Lee, Theorem~17.31).
+\end{proof}
+
+For $S^1$ (compact, connected, and oriented by $d\theta$), this is Proposition~\ref{prop:h1-circle}, done by hand. The torus is more interesting, with both an $H^1$ and an $H^2$.
+
+% ============================================================================
+% Lecture 33 (Fri Nov 20, 2026): contraction by vector fields
+% ============================================================================
+
+\section{Contraction by Vector Fields}\label{sec:contraction}
+
+\roadmark{Stage: forms}{Inserting a vector field into the first slot of a form lowers the degree by one; full contraction evaluates the form on fields; the global formula for $d$ on one-forms.}
+
+\textit{(Lecture 33.)} Back to operations with forms, which will have consequences for de Rham theory. Forms and vector fields can now be combined, doing things with both at the same time. The first such operation is the contraction by a vector field.
+
+\begin{defbox}[Contraction by a Vector Field]\deflabel{def:contraction}
+Let $\alpha \in \Omega^k(M)$ and $\mathbf{X} \in \mathfrak{X}(M)$, with $k \ge 1$. The \textbf{contraction} of $\alpha$ by $\mathbf{X}$ is the $(k-1)$-form $\iota_\mathbf{X}\alpha \in \Omega^{k-1}(M)$ defined at each $p \in M$ by
+\[
+(\iota_\mathbf{X}\alpha)_p(v^1, \ldots, v^{k-1}) = \alpha_p\big(\mathbf{X}_p, v^1, \ldots, v^{k-1}\big) \qquad \text{for all } v^1, \ldots, v^{k-1} \in T_pM :
+\]
+the value $\mathbf{X}_p$ is inserted in the first slot. For $k = 0$, $\alpha = f \in C^\infty(M)$, define $\iota_\mathbf{X} f = 0$. Lee calls this interior multiplication and also writes $\mathbf{X} \mathbin{\lrcorner} \alpha = \iota_\mathbf{X}\alpha$.
+\leeref{Ch.~14, \emph{Interior Multiplication} (Lemma 14.13 for vector spaces)}
+\end{defbox}
+
+The first slot is a convention. There is a point-by-point version: for a vector $v \in T_pM$, $\iota_v : \Lambda^k T_p^*M \to \Lambda^{k-1} T_p^*M$ inserts $v$ in the first slot, and $(\iota_\mathbf{X}\alpha)_p = \iota_{\mathbf{X}_p}\alpha_p$. For $k = 0$ there is no slot for a vector field, so the expression makes no sense; it is very convenient to define it to be zero. The operators $\iota_\mathbf{X}$ go down by one in degree, $\Omega^k(M) \to \Omega^{k-1}(M)$, on a single manifold; the properties of the map $\alpha \mapsto \iota_\mathbf{X}\alpha$ will be studied later.
+
+\begin{lembox}[Contraction Gives a Smooth Form]\thmlabel{lem:contraction-smooth}
+\textit{(Not from lecture; filled in.)} For $\alpha \in \Omega^k(M)$ and $\mathbf{X} \in \mathfrak{X}(M)$, $\iota_\mathbf{X}\alpha$ is a smooth $(k-1)$-form, and $\iota_\mathbf{X}\alpha$ is linear in $\alpha$, and $C^\infty(M)$-linear in $\mathbf{X}$: $\iota_{f\mathbf{X} + \mathbf{Y}}\alpha = f\, \iota_\mathbf{X}\alpha + \iota_\mathbf{Y}\alpha$.
+\end{lembox}
+
+\begin{proof}
+At each $p$, $(v^1, \ldots, v^{k-1}) \mapsto \alpha_p(\mathbf{X}_p, v^1, \ldots, v^{k-1})$ is multilinear, because $\alpha_p$ is, and alternating, because exchanging two of the $v^i$ exchanges two entries of $\alpha_p$ (Definition~\ref{def:linear-k-form}); so $(\iota_\mathbf{X}\alpha)_p \in \Lambda^{k-1} T_p^*M$. The linearity statements hold pointwise, by the multilinearity of $\alpha_p$. For smoothness, let $(U, (x^i))$ be a chart, $\mathbf{X} = \sum_i \mathbf{X}^i \partial_i$ on $U$ with smooth $\mathbf{X}^i$ (Proposition~\ref{prop:vf-coords}), and $C = \{c_1 < \cdots < c_{k-1}\}$. The $dx^C$-component of $\iota_\mathbf{X}\alpha$ (Definition~\ref{def:k-form-components}) is
+\[
+(\iota_\mathbf{X}\alpha)(\partial_{c_1}, \ldots, \partial_{c_{k-1}}) = \sum_i \mathbf{X}^i\; \alpha(\partial_i, \partial_{c_1}, \ldots, \partial_{c_{k-1}}) ,
+\]
+and $\alpha(\partial_i, \partial_{c_1}, \ldots, \partial_{c_{k-1}})$ is $0$ if $i \in C$ and $\pm f_{C \cup \{i\}}$ otherwise (Lemma~\ref{lem:k-form-permutation}: sort the arguments). So the components are smooth on $U$, and $\iota_\mathbf{X}\alpha$ is smooth (Definition~\ref{def:smooth-k-form}).
+\end{proof}
+
+%% >>> ADDED: diagram (not from lecture; the board drew these arrows into the ladder of the induced maps)
+\begin{center}
+\begin{tikzcd}[column sep=huge]
+\cdots \arrow[r, shift left=1.2, "d"] & \Omega^{k-1}(M) \arrow[r, shift left=1.2, "d"] \arrow[l, shift left=1.2, "\iota_\mathbf{X}"] & \Omega^k(M) \arrow[r, shift left=1.2, "d"] \arrow[l, shift left=1.2, "\iota_\mathbf{X}"] & \Omega^{k+1}(M) \arrow[r, shift left=1.2, "d"] \arrow[l, shift left=1.2, "\iota_\mathbf{X}"] & \cdots \arrow[l, shift left=1.2, "\iota_\mathbf{X}"]
+\end{tikzcd}
+\end{center}
+\textit{(Not from lecture; diagram added.)} On one manifold $M$, $d$ raises the degree by one and $\iota_\mathbf{X}$ lowers it by one. The board drew the arrows $\iota_\mathbf{X}$ diagonally into the diagram of the induced maps (after Proposition~\ref{prop:cohomology-maps}), to be used for Cartan's magic formula, announced for the next lecture; since the contraction acts on a single manifold, they are drawn here on the de Rham complex of $M$ alone.
+%% <<< END ADDED
+
+\emph{Contracting all the way.} If $\mathbf{X}_1, \ldots, \mathbf{X}_k$ are $k$ vector fields, the contraction can be repeated: contract $\alpha$ once by $\mathbf{X}_1$, then the result by $\mathbf{X}_2$, and so on, all the way down to a $0$-form, a function.
+
+\begin{propbox}[Full Contraction Is Evaluation]\thmlabel{prop:full-contraction}
+For $\alpha \in \Omega^k(M)$ and $\mathbf{X}_1, \ldots, \mathbf{X}_k \in \mathfrak{X}(M)$,
+\[
+\iota_{\mathbf{X}_k} \cdots \iota_{\mathbf{X}_2}\, \iota_{\mathbf{X}_1}\alpha = \alpha(\mathbf{X}_1, \ldots, \mathbf{X}_k) \in C^\infty(M), \qquad \alpha(\mathbf{X}_1, \ldots, \mathbf{X}_k)(p) = \alpha_p\big(\mathbf{X}_1|_p, \ldots, \mathbf{X}_k|_p\big) ,
+\]
+the function obtained by pointwise evaluation of $\alpha$ on the fields: at each point, evaluate $\alpha$ and each of the fields $\mathbf{X}_j$ at that point; the scalar obtained is a function of the point.
+\end{propbox}
+
+\begin{proof}
+\textit{(Filled in.)} By induction on $j$,
+\[
+(\iota_{\mathbf{X}_j} \cdots \iota_{\mathbf{X}_1}\alpha)_p(v^{j+1}, \ldots, v^k) = \alpha_p(\mathbf{X}_1|_p, \ldots, \mathbf{X}_j|_p, v^{j+1}, \ldots, v^k) :
+\]
+contracting by $\mathbf{X}_{j+1}$ inserts $\mathbf{X}_{j+1}|_p$ in the first remaining slot, which is slot $j + 1$ of $\alpha_p$. For $j = k$ no slots remain. The function is smooth by Lemma~\ref{lem:contraction-smooth}, applied $k$ times.
+\end{proof}
+
+\textbf{Transcription note (Lecture 33).} The handwritten notes give the iterated contraction the target $\Omega^1(M)$, and write $(\iota_\mathbf{X}\alpha)_p(\ldots) = \alpha(\mathbf{X}_p, \ldots)$. After $k$ contractions a $k$-form has degree $0$: the target is $\Omega^0(M) = C^\infty(M)$; and the form evaluated at $p$ is $\alpha_p$.
+
+\begin{propbox}[A Form Is Determined by Its Values on Vector Fields]\thmlabel{prop:form-determined-by-fields}
+\textit{(Lecture 33, an observation.)} If $\alpha, \beta \in \Omega^k(M)$ satisfy $\alpha(\mathbf{X}_1, \ldots, \mathbf{X}_k) = \beta(\mathbf{X}_1, \ldots, \mathbf{X}_k)$ for all $\mathbf{X}_1, \ldots, \mathbf{X}_k \in \mathfrak{X}(M)$, then $\alpha = \beta$: the full contractions with all vector fields determine the form.
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture 33: every tangent vector can be extended to a vector field, as in the homework, Theorem~\ref{thm:vf-extension}; the extension of a single vector is filled in.)} Let $p \in M$ and $v^1, \ldots, v^k \in T_pM$. Each $v^j$ extends to a smooth field: in a chart $(U, (x^i))$ at $p$ write $v^j = \sum_i a^i \partial_i|_p$, take a bump function $\chi$ at $p$ supported in $U$ (Corollary~\ref{prop:bump-existence}), and let $\mathbf{X}_j = \chi \sum_i a^i \partial_i$ on $U$ and $0$ outside $U$; it is smooth, since $\chi$ vanishes near the boundary of $U$ in $M$, and $\mathbf{X}_j|_p = v^j$ because $\chi(p) = 1$. Then $\alpha_p(v^1, \ldots, v^k) = \alpha(\mathbf{X}_1, \ldots, \mathbf{X}_k)(p) = \beta(\mathbf{X}_1, \ldots, \mathbf{X}_k)(p) = \beta_p(v^1, \ldots, v^k)$.
+\end{proof}
+
+\emph{The global formula for $d$.} One reason to be interested in contractions is the \emph{global formula} for $d$. For a one-form $\alpha$, $d\alpha$ is a two-form, so it can be contracted twice: putting the fields $\mathbf{X}$ and $\mathbf{Y}$ inside gives a function, and that function has a formula in terms of $\alpha$ alone.
+
+\begin{thmbox}[Global Formula for $d$ on One-Forms]\thmlabel{thm:d-one-form-global}
+Let $\alpha \in \Omega^1(M)$ and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$. Then
+\[
+d\alpha(\mathbf{X}, \mathbf{Y}) = \mathbf{X}\big(\alpha(\mathbf{Y})\big) - \mathbf{Y}\big(\alpha(\mathbf{X})\big) - \alpha\big([\mathbf{X}, \mathbf{Y}]\big) .
+\]
+\leeref{Proposition 14.29}
+\end{thmbox}
+
+\begin{proof}[Proof (to be filled after the homework)]
+\textit{(Lecture 33 gave the following plan, without the computations.)} Denote the right-hand side by $\mathcal{R}(\mathbf{X}, \mathbf{Y})$; $\alpha$ is fixed and does not enter the notation.
+\begin{enumerate}[nosep]
+\item \emph{First,} show that $\mathcal{R}(f\mathbf{X}, g\mathbf{Y}) = fg\, \mathcal{R}(\mathbf{X}, \mathbf{Y})$ for all $f, g \in C^\infty(M)$. If the theorem is to be true, this must hold: $d\alpha$ is a form, pointwise linear, so the $f$ and the $g$ come out of the left-hand side. It is a computation with the Leibniz rule, in which all the derivatives of $f$ and $g$ cancel.
+\item \emph{Second,} check the identity for $\mathbf{X} = \partial/\partial x^a$ and $\mathbf{Y} = \partial/\partial x^b$ in a coordinate system $(x^1, \ldots, x^m)$. These fields commute, so the bracket term goes away.
+\end{enumerate}
+These two imply the general case, because in coordinates any $\mathbf{X}$ and $\mathbf{Y}$ are linear combinations of the coordinate fields with smooth coefficients, and the right-hand side is linear over $C^\infty$.
+
+The two computations were not done on the board. The formula for $k$-forms is the reading of the last problem of the current homework, so they are written out here after it is handed in.
+\end{proof}
+
+\emph{Reading the formula.} There are three terms, each a function. First, contract $\alpha$ with $\mathbf{Y}$, which gives the function $\alpha(\mathbf{Y})$, and apply $\mathbf{X}$ to it as an operator. Second, the same in the other order: contract with $\mathbf{X}$, then apply $\mathbf{Y}$. Third, the two fields have a commutator, the Lie bracket $[\mathbf{X}, \mathbf{Y}]$ (Definition~\ref{def:lie-bracket}), another field, and $\alpha$ can be contracted with it. The gain: there is no $d$ on the right-hand side, only $\alpha$ by itself. The price: $\mathbf{X}$ and $\mathbf{Y}$ must be fields, and the right-hand side is not a pointwise calculation, since it differentiates. For $k$-forms there is a formula of the same kind, with many more ways of contracting on the right (Lee, Proposition~14.32); it was assigned as reading, and is not written here.
+
+\emph{Convention.} The formula depends on the determinant convention for the wedge product (the remark \emph{Two Conventions for the Wedge Product} in \ref{sec:wedge-product}), which is also Lee's; with the Alt convention a factor $\frac12$ appears on the left.
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -37235,6 +37559,8 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:forms-manifolds}\ Differential forms on manifolds & Chapter 14, \emph{Differential Forms on Manifolds} (Exercise 14.14, Lemma 14.16, Examples 14.18 and 14.19, Proposition 14.20, Corollary 14.21); Chapter 10, Lemma 10.6 (the vector bundle chart lemma) \\
 \ref{sec:exterior-derivative}\ The exterior derivative & Chapter 14, \emph{The Exterior Derivative} (Proposition 14.23, Theorem 14.24, Proposition 14.26, Example 14.27); Chapter 12, Proposition 12.25 (pullbacks compose) \\
 \ref{sec:de-rham}\ De Rham cohomology & Chapter 17, \emph{The de Rham Cohomology Groups} (Proposition 17.2, Corollary 17.4, Propositions 17.5 and 17.6) \\
+\ref{sec:h1-circle}\ The first cohomology of the circle & Chapter 11, Example 11.36; Chapter 17, Example 17.1, Theorem 17.21 ($n = 1$), Theorem 17.31 (stated) \\
+\ref{sec:contraction}\ Contraction by vector fields & Chapter 14, \emph{Interior Multiplication} (Lemma 14.13), Proposition 14.29; Proposition 14.32 (the formula for $k$-forms, assigned as reading) \\
 \bottomrule
 \end{longtable}
 
@@ -37402,6 +37728,7 @@ Proposition 11.9 & Def.~\ref{def:ctb-trivialization}, Def.~\ref{def:ctb-chart}, 
 Proposition 11.11 & Prop.~\ref{prop:one-form-coords} \\
 Proposition 11.20 & Cor.~\ref{cor:df-properties} \\
 Proposition 11.25 & Prop.~\ref{prop:pullback-d}, Cor.~\ref{cor:pullback-d-forms} \\
+Example 11.36 & Ex.~\ref{ex:angle-form-cohomology} \\
 Problem 11-4 & Def.~\ref{def:Ip}, Def.~\ref{def:Ip-square}, Prop.~\ref{prop:second-order}, Prop.~\ref{prop:ideal-basis}, Thm.~\ref{thm:cotangent-ideal} \\
 Exercise 12.17 & Lem.~\ref{lem:k-form-permutation} \\
 Proposition 12.25 & Lem.~\ref{lem:pullback-forms-functorial} \\
@@ -37411,6 +37738,7 @@ Lemma 14.7 & Lem.~\ref{lem:epsilon-A-dual} \\
 Proposition 14.8 & Prop.~\ref{prop:dim-k-forms} \\
 Proposition 14.9 & Prop.~\ref{prop:top-degree-pullback} \\
 Proposition 14.11 & Lem.~\ref{lem:wedge-one-forms-det}, Prop.~\ref{prop:wedge-properties} \\
+Lemma 14.13 & Def.~\ref{def:contraction} \\
 Exercise 14.14 & Prop.~\ref{prop:lambda-k-bundle} \\
 Lemma 14.16 & Prop.~\ref{prop:linear-pullback-components}, Prop.~\ref{prop:linear-pullback-wedge}, Prop.~\ref{prop:pullback-k-form-properties} \\
 Example 14.18 & Ex.~\ref{ex:pullback-r2-r3} \\
@@ -37421,12 +37749,16 @@ Proposition 14.23 & Prop.~\ref{prop:d-euclidean-properties} \\
 Theorem 14.24 & Def.~\ref{def:d-properties}, Thm.~\ref{thm:exterior-derivative}, Def.~\ref{def:exterior-derivative}, Lem.~\ref{lem:d-chart-independent}, Cor.~\ref{cor:d-coordinates} \\
 Proposition 14.26 & Def.~\ref{def:d-properties}, Thm.~\ref{thm:exterior-derivative} \\
 Example 14.27 & Ex.~\ref{ex:d-r3} \\
+Proposition 14.29 & Thm.~\ref{thm:d-one-form-global} \\
 Theorem 16.34 & Thm.~\ref{thm:stokes-calc3} \\
+Example 17.1 & Ex.~\ref{ex:angle-form-cohomology} \\
 Proposition 17.2 & Prop.~\ref{prop:cohomology-maps} \\
 Corollary 17.4 & Prop.~\ref{prop:cohomology-maps} \\
 Proposition 17.5 & Prop.~\ref{prop:h0} \\
 Proposition 17.6 & Prop.~\ref{prop:h0} \\
+Theorem 17.21 & Prop.~\ref{prop:h1-circle} \\
 Theorem 17.26 & Thm.~\ref{thm:inv-dim} \\
+Theorem 17.31 & Thm.~\ref{thm:top-cohomology} \\
 Example 19.1 & Ex.~\ref{ex:no-integral-surface} \\
 Proposition 19.3 & Cor.~\ref{cor:integral-submanifold-necessary} \\
 Theorem 20.1 & Prop.~\ref{prop:one-parameter-subgroup}, Prop.~\ref{prop:one-parameter-converse} \\

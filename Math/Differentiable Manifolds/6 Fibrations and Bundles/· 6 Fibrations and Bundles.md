@@ -27,7 +27,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Tangent Bundle Is a Smooth Manifold|Proposition §51.3: The Transition Maps of TM]]: 139 later results
-- [[§51 The Tangent Bundle#^prop-51-1|Proposition §51.1: The Tangent Bundle Is a Manifold (Claim)]]: 138 later results
-- [[Smooth Manifold Chart Lemma|Lemma §51.2: Building a Manifold from Charts]]: 138 later results
-- [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4: The Topology and Smooth Structure of TM]]: 138 later results
+- [[Tangent Bundle Is a Smooth Manifold|Proposition §51.3: The Transition Maps of TM]]: 145 later results
+- [[§51 The Tangent Bundle#^prop-51-1|Proposition §51.1: The Tangent Bundle Is a Manifold (Claim)]]: 144 later results
+- [[Smooth Manifold Chart Lemma|Lemma §51.2: Building a Manifold from Charts]]: 144 later results
+- [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4: The Topology and Smooth Structure of TM]]: 144 later results

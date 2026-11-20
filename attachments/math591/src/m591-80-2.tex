@@ -1,0 +1,21 @@
+% Figure from MATH 591 notes §83 (Lecture 33, 2026-11-20; not from lecture, the board drew the circle with the field): from the user's delivery math591_lecture33_2026-11-20.tex
+\begin{tikzpicture}[>=Stealth, scale=1.35]
+\fill[gray!5] (-2.1,-1.7) rectangle (2.4,1.7);
+\draw[->, gray!70] (-2.0,0) -- (2.3,0) node[right, font=\scriptsize] {$x$};
+\draw[->, gray!70] (0,-1.6) -- (0,1.6) node[above, font=\scriptsize] {$y$};
+\draw[dashed, red!70!black, thick] (0.05,0) -- (2.2,0);
+\node[red!70!black, font=\scriptsize, align=left, anchor=north west] at (1.12,-0.04) {branch cut of\\ $\theta \in (0, 2\pi)$};
+\draw[thick, blue!70!black] (0,0) circle (1);
+\foreach \a in {0,60,120,180,240,300} {
+  \draw[->, blue!60!black] ({cos(\a)},{sin(\a)}) -- ({cos(\a)-0.42*sin(\a)},{sin(\a)+0.42*cos(\a)});
+}
+\fill[white] (0,0) circle (1.6pt); \draw (0,0) circle (1.6pt);
+\coordinate (q) at ({cos(40)},{sin(40)});
+\draw[gray!70!black] (0,0) -- (q);
+\fill (q) circle (1.2pt);
+\draw[->, gray!70!black] (0.35,0) arc (0:40:0.35);
+\node[font=\scriptsize] at (0.5,0.18) {$\theta$};
+\node[font=\scriptsize, blue!60!black] at (-1.5,0.98) {$\partial_\theta = (-y, x)$};
+\node[font=\scriptsize, blue!70!black] at (-0.75,-1.18) {$S^1$};
+\node[font=\scriptsize] at (1.95,1.45) {$\mathbb{R}^2 \setminus \{0\}$};
+\end{tikzpicture}

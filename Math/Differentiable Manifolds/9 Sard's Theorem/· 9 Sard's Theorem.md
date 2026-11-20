@@ -8,7 +8,7 @@ tags: [chapter, differentiable-manifolds]
 ↑ [[Differentiable Manifolds]]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (4), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (4), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (9), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (34), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (9), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (10), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (10)
-**Used by:** —
+**Used by:** [[· 11 Differential Forms|11 Differential Forms]] (1)
 **Builds on (other subjects):** —
 
 ## Sections
