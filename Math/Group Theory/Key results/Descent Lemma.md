@@ -24,6 +24,7 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§17 Cyclic Groups#^thm-17-1|Theorem §17.1: Classification of Cyclic Groups]]
 - [[§17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]
+- [[§72 Representations of Cyclic Groups#^prop-72-1|Proposition §72.1: A Representation of ℤ/Nℤ Is a Matrix g with g^N = Id]]
 
 ## Connections
 - **Used for.** Every well-definedness check for maps out of ℤ/nℤ ([[§7 The Group ℤ∕nℤ#^rem-7-1|Where This Is Used]]): ℤ/4ℤ → U₅, k ↦ 2ᵏ ([[§16 Isomorphisms#^prop-16-7|§16.7]]); the [[Classification of Cyclic Groups]]; ⟨g⟩ ≅ ℤ/Nℤ ([[§17 Cyclic Groups#^prop-17-3|§17.3]]).

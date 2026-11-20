@@ -356,7 +356,7 @@ Worksheet 16.2 prints $\operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = (\o
 
 ## Characters at $g^{-1}$ over $\mathbb{R}$ and $\mathbb{C}$
 
-The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3–16.5 were not done in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof, and the complex case (WS 16.4–16.5) became Problem 10.1 of Problem Set 10, which is Proposition [[§68 Homomorphisms Between Representations#^prop-68-11|§68.11]] with the submitted proof. The proofs of Proposition [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]], Proposition [[§68 Homomorphisms Between Representations#^prop-68-9|§68.9]] and Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]] are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary [[§69 Dual Representations#^cor-69-6|§69.6]]).
+The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3–16.5 were not done in the lecture of 11/11. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof, and the complex case (WS 16.4–16.5) became Problem 10.1 of Problem Set 10, which is Proposition [[§68 Homomorphisms Between Representations#^prop-68-11|§68.11]] with the submitted proof. The lecture of 11/20 then proved the complex case: a complex matrix with $A^m = I$ is diagonalizable because all simple complex representations of $\mathbb{Z}/m\mathbb{Z}$ are one-dimensional (Corollary [[§72 Representations of Cyclic Groups#^cor-72-8|§72.8]]), and the eigenvalues give $\operatorname{Tr}(A^{-1}) = \overline{\operatorname{Tr}(A)}$. The proof of Proposition [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]] and the proof of part (1) of Proposition [[§68 Homomorphisms Between Representations#^prop-68-9|§68.9]] are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary [[§69 Dual Representations#^cor-69-6|§69.6]]).
 
 > [!theorem] Proposition §68.8: Real Characters Are Invariant under Inversion
 > Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{R}$. Choose a basis of $V$ in which $G$ acts by orthogonal matrices (Corollary [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-7|§63.7]]). In this basis, for every $g \in G$,
@@ -386,20 +386,27 @@ The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§
 
 *Uses:* [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-7|§63.7]], [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-5|§63.5]], [[§61 Representations and Subrepresentations#^prop-61-1|§61.1]], [[§66 Invariant Vectors#^def-66-1|Def. §66.1]], [[§66 Invariant Vectors#^cor-66-2|§66.2]]
 
+> [!proof]+ Second proof of the equality of characters (from the complex case)
+> *(Not from class. It uses WS 16.5, Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]] below, whose proofs do not use this proposition.)* Choose any basis of $V$, and let $M_h$ be the real matrix of $\rho_V(h)$ for $h \in G$. A real invertible matrix is also a complex invertible matrix, so $h \mapsto M_h$ is a homomorphism $G \to GL_n(\mathbb{C})$, a complex representation of $G$ on $\mathbb{C}^n$ with the same traces: its character is $\chi_V$. By Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]], $\chi_V(g^{-1}) = \overline{\chi_V(g)}$. The number $\chi_V(g) = \operatorname{Tr}M_g$ is real, so $\overline{\chi_V(g)} = \chi_V(g)$. This proves $\chi_V(g^{-1}) = \chi_V(g)$, without the statement about orthogonal matrices.
+
+^pf-68-8-2
+
+*Uses:* [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]]
+
 > [!theorem] Proposition §68.9: Matrices of Finite Order
 > Let $A$ be an $n \times n$ complex matrix with $A^m = I$ for some positive integer $m$.
 >
 > 1. $A$ is diagonalizable, and every eigenvalue $\lambda$ of $A$ satisfies $\lambda^m = 1$; in particular $|\lambda| = 1$.
 > 2. $\operatorname{Tr}(A^{-1}) = \overline{\operatorname{Tr}(A)}$.
 >
-> *Source: WS 16.4*
+> *Source: WS 16.4; lecture 11/20*
 
 ^prop-68-9
 
 > [!proof]+ Proof
 > *Idea:* $A$ generates a representation of the finite group $\mathbb{Z}/m\mathbb{Z}$ on $\mathbb{C}^n$; Maschke's theorem splits off one eigenvector at a time. On the unit circle, $\lambda^{-1} = \bar\lambda$.
 >
-> *(Filled in; the worksheet's hint for (2) is to use the eigenvalues.)* $A$ is invertible, with inverse $A^{m-1}$.
+> *(Part (1) is filled in; the lecture of 11/20 proved it in another way, by counting the simple representations of $\mathbb{Z}/m\mathbb{Z}$: Corollary [[§72 Representations of Cyclic Groups#^cor-72-8|§72.8]]. Part (2) is the argument of the board of 11/20, with the steps written out; the worksheet's hint for (2) is to use the eigenvalues.)* $A$ is invertible, with inverse $A^{m-1}$.
 >
 > **(1) Eigenvalues.** Let $Av = \lambda v$ with $v \neq 0$. Then $v = A^mv = \lambda^m v$, so $\lambda^m = 1$. Taking absolute values, $|\lambda|^m = 1$, and $|\lambda|$ is a nonnegative real number, so $|\lambda| = 1$.
 >
@@ -413,10 +420,10 @@ The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§
 
 ^pf-68-9
 
-*Uses:* [[§61 Representations and Subrepresentations#^prop-61-1|§61.1]], [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]], [[§62 Direct Sums and Maschke's Theorem#^prop-62-1|§62.1]], [[§66 Invariant Vectors#^prop-66-3|§66.3]]
+*Uses:* [[§72 Representations of Cyclic Groups#^cor-72-8|§72.8]], [[§61 Representations and Subrepresentations#^prop-61-1|§61.1]], [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]], [[§62 Direct Sums and Maschke's Theorem#^prop-62-1|§62.1]], [[§66 Invariant Vectors#^prop-66-3|§66.3]]
 
 > [!remark]- Connections
-> - Linear Algebra: an operator on a nonzero finite-dimensional complex vector space has an eigenvalue (Axler, Ch. 5). A second route to (1) goes through the [[§15 The Minimal Polynomial#^ladr-5-24|minimal polynomial]] of $A$, which divides $x^m - 1$; it is carried out in [[§68 Homomorphisms Between Representations#^prop-68-11|Proposition §68.11]] (PS 10.1).
+> - Linear Algebra: an operator on a nonzero finite-dimensional complex vector space has an eigenvalue (Axler, Ch. 5). A second route to (1) goes through the [[§15 The Minimal Polynomial#^ladr-5-24|minimal polynomial]] of $A$, which divides $x^m - 1$; it is carried out in [[§68 Homomorphisms Between Representations#^prop-68-11|Proposition §68.11]] (PS 10.1). A third route is the lecture's: all simple complex representations of $\mathbb{Z}/m\mathbb{Z}$ are one-dimensional, [[§72 Representations of Cyclic Groups#^cor-72-8|Corollary §72.8]].
 
 ![[m493-66-1.svg]]
 
@@ -429,12 +436,12 @@ The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§
 > \chi_V(g^{-1}) = \overline{\chi_V(g)}.
 > $$
 >
-> *Source: WS 16.5*
+> *Source: WS 16.5; lecture 11/20*
 
 ^cor-68-10
 
 > [!proof]+ Proof
-> *(Filled in.)* Choose a basis of $V$ and let $A$ be the matrix of $\rho_V(g)$ in it. Let $m = |G|$. Then $g^m = e$ (Corollary [[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]]), so $A^m$ is the matrix of $\rho_V(g)^m = \rho_V(g^m) = \rho_V(e)$, the identity matrix. The matrix of $\rho_V(g^{-1}) = \rho_V(g)^{-1}$ is $A^{-1}$. By Proposition [[§68 Homomorphisms Between Representations#^prop-68-9|§68.9]](2),
+> *(Lecture 11/20: the trace identity for a matrix of finite order, applied to $\rho_V(g)$; the details are filled in.)* Choose a basis of $V$ and let $A$ be the matrix of $\rho_V(g)$ in it. Let $m = |G|$. Then $g^m = e$ (Corollary [[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]]), so $A^m$ is the matrix of $\rho_V(g)^m = \rho_V(g^m) = \rho_V(e)$, the identity matrix. The matrix of $\rho_V(g^{-1}) = \rho_V(g)^{-1}$ is $A^{-1}$. By Proposition [[§68 Homomorphisms Between Representations#^prop-68-9|§68.9]](2),
 >
 > $$
 > \chi_V(g^{-1}) = \operatorname{Tr}(A^{-1}) = \overline{\operatorname{Tr}(A)} = \overline{\chi_V(g)}.
@@ -520,7 +527,7 @@ The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§
 
 **Transcription note (PS 10.1).** The problem set prints part (3) as $\rho_V(g^{-1}) = \overline{\rho_V(g)}$. The complex conjugate of a linear map is not defined without a basis, so the submitted solution proves the equation for the matrices in a basis of eigenvectors of $\rho_V(g)$ and deduces the statement about characters, which is WS 16.5 (Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]]). The problem set adds that the corresponding result for real representations is the one of WS 16.3 (Proposition [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]]).
 
-For the matrix $A$ of $\rho_V(g)$, parts (2) and (3) are a second proof of Matrices of Finite Order (WS 16.4, Proposition [[§68 Homomorphisms Between Representations#^prop-68-9|§68.9]]), through the minimal polynomial instead of Maschke's theorem, and of Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]].
+For the matrix $A$ of $\rho_V(g)$, parts (2) and (3) are a second proof of Matrices of Finite Order (WS 16.4, Proposition [[§68 Homomorphisms Between Representations#^prop-68-9|§68.9]]), through the minimal polynomial instead of Maschke's theorem, and of Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]]. A third proof that $A$ is diagonalizable is the one of the lecture of 11/20 (Corollary [[§72 Representations of Cyclic Groups#^cor-72-8|§72.8]]).
 
 > [!theorem] Corollary §68.12: Dimension of $\operatorname{Hom}_G(V, W)$ over $\mathbb{R}$ and $\mathbb{C}$
 > Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations of $G$ over $k$.

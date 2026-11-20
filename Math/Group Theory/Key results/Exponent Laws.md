@@ -29,6 +29,7 @@ tags: [group-theory, hub]
 - [[§17 Cyclic Groups#^prop-17-5|Proposition §17.5: The Order of a Power]]
 - [[§29 The Index and Lagrange's Theorem#^cor-29-3|Corollary §29.3: Order of an Element Divides ∣G∣; g^(∣G∣) = e]]
 - [[§29 The Index and Lagrange's Theorem#^thm-29-7|Theorem §29.7: Groups of Prime Order]]
+- [[§72 Representations of Cyclic Groups#^prop-72-1|Proposition §72.1: A Representation of ℤ/Nℤ Is a Matrix g with g^N = Id]]
 
 ## Connections
 - **Used for.** ⟨g⟩ is a subgroup ([[§4 Subgroups#^prop-4-5|§4.5]]). Law (2), gᵐgⁿ = gᵐ⁺ⁿ, says exactly that k ↦ gᵏ is a homomorphism ℤ → G ([[§17 Cyclic Groups#^prop-17-3|§17.3]]). That drives the [[Classification of Cyclic Groups]], [[Subgroups of Cyclic Groups Are Cyclic]], the order of a power ([[§17 Cyclic Groups#^prop-17-5|§17.5]]), and ord(g) dividing |G| ([[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]]).

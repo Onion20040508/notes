@@ -331,6 +331,7 @@ $\operatorname{Hom}(V, W)$, \ $\operatorname{Hom}_G(V, W)$ & Linear maps $V \to 
 $V^\vee$, \ $\varphi^\vee$, \ $e_j^\ast$ & Dual space $\operatorname{Hom}(V, k)$; dual map $w^\vee \mapsto w^\vee \circ \varphi$; dual basis. As a representation, $\rho_{V^\vee}(g) = \rho_V(g^{-1})^\vee$, in matrices the inverse transpose. $U^\perp \subseteq V^\vee$ is the annihilator of a subspace $U \subseteq V$ (\ref{sec:dual-representations}). \\
 $V_1 \oplus \cdots \oplus V_r$, \ $V^{\oplus a}$ & External direct sum of representations: tuples, with $G$ acting on each coordinate; $V^{\oplus a}$ is the sum of $a$ copies of $V$. The same sign $\oplus$ is used for the internal direct sum of subspaces (\ref{sec:maschke}); the two are isomorphic (\ref{sec:schur-multiplicities}). \\
 $\operatorname{Cl}(G)$, \ $\langle \alpha, \beta \rangle$ & Space of class functions on $G$ (functions constant on conjugacy classes), of dimension the number of conjugacy classes; the pairing $\frac{1}{|G|}\sum_i |\operatorname{Conj}(g_i)|\,\alpha(g_i^{-1})\beta(g_i)$, for which $\dim\operatorname{Hom}_G(V, W) = \langle \chi_V, \chi_W \rangle$ (\ref{sec:character-table}). \\
+$\mathbb{C}_k$, \ $\chi_k$ & The vector space $\mathbb{C}$ on which $j \in \mathbb{Z}/N\mathbb{Z}$ acts by $e^{2\pi ijk/N}$, for $0 \leq k \leq N - 1$, and its character; these are all the simple complex representations of $\mathbb{Z}/N\mathbb{Z}$. In that section $k$ is an index, not the field (\ref{sec:cyclic-representations}). \\
 $\operatorname{Tr}$ & Trace of a matrix or of a linear map (\ref{sec:invariants}). \\
 $N \rtimes_\varphi S$, \ $S \ltimes_\varphi N$ & Semidirect product, $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$ (\ref{sec:semidirect-products}). \\
 $\sigma_{(g, \lambda)}$, \ $\operatorname{Aff}(V)$ & The affine map $x \mapsto gx + \lambda$; the group of all affine maps of $V$, $\cong V \rtimes GL(V)$ (\ref{sec:affine-maps}). \\
@@ -9770,7 +9771,7 @@ so $\rho(1)v \notin V$. Hence $V$ is not a subrepresentation, and no subrepresen
 
 \begin{exbox}[{Maschke Fails When $|G| = 0$ in $k$}]\label{ex:maschke-fails-char-p}
 Let $p$ be prime, $G = \mathbb{Z}/p\mathbb{Z}$ and $\mathbb{F} = \mathbb{Z}/p\mathbb{Z}$, and define $\rho: G \to GL_2(\mathbb{F})$ by the same matrices $\rho(x) = \left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)$, now with $x \in \mathbb{F}$; the product rule above shows again that $\rho$ is a homomorphism. Then $\mathbb{F}e_1$ is a subrepresentation of $\mathbb{F}^2$, but there is no subrepresentation $V$ with $\mathbb{F}^2 = \mathbb{F}e_1 \oplus V$. Here $G$ is finite, but $|G| = p = 0$ in $\mathbb{F}$.
-\srcline{PS 9.4(2)}
+\srcline{PS 9.4(2); recalled at the end of the lecture of 11/20 (\ref{sec:cyclic-representations})}
 \end{exbox}
 
 \begin{proof}
@@ -10422,9 +10423,9 @@ Representation theory also proves theorems about groups. A first example: every 
 % ============================================================================
 \chapter{Characters}\label{ch:rep-characters}
 
-\textit{Source: Lecture and Worksheet 15 (Mon Nov 9); lecture and Worksheet 16 (Wed Nov 11); lecture (Fri Nov 13); lecture and Worksheet 17 (Mon Nov 16); lecture and Worksheet 18 (Wed Nov 18); Problem Set 10.}
+\textit{Source: Lecture and Worksheet 15 (Mon Nov 9); lecture and Worksheet 16 (Wed Nov 11); lecture (Fri Nov 13); lecture and Worksheet 17 (Mon Nov 16); lecture and Worksheet 18 (Wed Nov 18); lecture (Fri Nov 20); Problem Set 10.}
 
-By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), finite-dimensional representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces, when the field contains $\mathbb{Q}$ (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}). The factor $\chi_V(g^{-1})$ in this count is the character of the dual representation $V^\vee$ (\ref{sec:dual-representations}). Combined with the decomposition into simple representations, the count becomes a dot product of multiplicities: by Schur's Lemma, non-isomorphic simple representations admit only the zero homomorphism, and over $\mathbb{C}$ the homomorphisms from a simple representation to itself are the multiples of the identity (\ref{sec:schur-multiplicities}). In the character table, with one column per conjugacy class and one row per simple representation, this says that the rows are orthogonal for a pairing of class functions; hence they are linearly independent, and there are at most as many simple representations as conjugacy classes (\ref{sec:character-table}).
+By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), finite-dimensional representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces, when the field contains $\mathbb{Q}$ (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}). The factor $\chi_V(g^{-1})$ in this count is the character of the dual representation $V^\vee$ (\ref{sec:dual-representations}). Combined with the decomposition into simple representations, the count becomes a dot product of multiplicities: by Schur's Lemma, non-isomorphic simple representations admit only the zero homomorphism, and over $\mathbb{C}$ the homomorphisms from a simple representation to itself are the multiples of the identity (\ref{sec:schur-multiplicities}). In the character table, with one column per conjugacy class and one row per simple representation, this says that the rows are orthogonal for a pairing of class functions; hence they are linearly independent, and there are at most as many simple representations as conjugacy classes (\ref{sec:character-table}). For the cyclic group $\mathbb{Z}/N\mathbb{Z}$ over $\mathbb{C}$ this bound is attained by $N$ one-dimensional representations, one for each $N$-th root of unity, so every complex representation of $\mathbb{Z}/N\mathbb{Z}$ is a direct sum of one-dimensional ones and every complex matrix with $g^N = \mathrm{Id}$ is diagonalizable (\ref{sec:cyclic-representations}).
 
 % ============================================================================
 % SECTION: INVARIANT VECTORS (Worksheet 15; lecture Mon Nov 9)
@@ -11180,7 +11181,7 @@ $\mathbb{R}^3$ & $1$ & $0$ & $1$ & $2$
 
 \subsection{\texorpdfstring{Characters at $g^{-1}$ over $\mathbb{R}$ and $\mathbb{C}$}{Characters at the Inverse over R and C}}\label{sub:characters-at-inverses}
 
-The formula of Theorem~\ref{thm:dim-hom-g} simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3--16.5 were not done in class. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof, and the complex case (WS 16.4--16.5) became Problem 10.1 of Problem Set 10, which is Proposition~\ref{prop:finite-group-diagonalizable} with the submitted proof. The proofs of Proposition~\ref{prop:character-inverse-real}, Proposition~\ref{prop:finite-order-matrix} and Corollary~\ref{cor:character-inverse-complex} are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary~\ref{cor:character-dual-real-complex}).
+The formula of Theorem~\ref{thm:dim-hom-g} simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$. Worksheet 16.3--16.5 were not done in the lecture of 11/11. The lecture of 11/13 recalled the statements of WS 16.3 and WS 16.5 (for a finite group, $\chi(g^{-1}) = \chi(g)$ over $\mathbb{R}$ and $\chi(g^{-1}) = \overline{\chi(g)}$ over $\mathbb{C}$) without proof, and the complex case (WS 16.4--16.5) became Problem 10.1 of Problem Set 10, which is Proposition~\ref{prop:finite-group-diagonalizable} with the submitted proof. The lecture of 11/20 then proved the complex case: a complex matrix with $A^m = I$ is diagonalizable because all simple complex representations of $\mathbb{Z}/m\mathbb{Z}$ are one-dimensional (Corollary~\ref{cor:finite-order-diagonalizable}), and the eigenvalues give $\operatorname{Tr}(A^{-1}) = \overline{\operatorname{Tr}(A)}$. The proof of Proposition~\ref{prop:character-inverse-real} and the proof of part (1) of Proposition~\ref{prop:finite-order-matrix} are filled in. In terms of the dual representation, the two statements say $\chi_{V^\vee} = \chi_V$ and $\chi_{V^\vee} = \overline{\chi_V}$ (Corollary~\ref{cor:character-dual-real-complex}).
 
 \begin{propbox}[{Real Characters Are Invariant under Inversion}]\label{prop:character-inverse-real}
 Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{R}$. Choose a basis of $V$ in which $G$ acts by orthogonal matrices (Corollary~\ref{cor:orthogonal-matrices}). In this basis, for every $g \in G$,
@@ -11198,18 +11199,22 @@ Consequently $\chi_V(g^{-1}) = \chi_V(g)$ for every $g \in G$.
 \[ \chi_V(g^{-1}) = \operatorname{Tr}\rho_V(g^{-1}) = \operatorname{Tr}(M^T) = \operatorname{Tr}(M) = \chi_V(g). \]
 \end{proof}
 
+\begin{proof}[Second proof of the equality of characters (from the complex case)]
+\textit{(Not from class. It uses WS 16.5, Corollary~\ref{cor:character-inverse-complex} below, whose proofs do not use this proposition.)} Choose any basis of $V$, and let $M_h$ be the real matrix of $\rho_V(h)$ for $h \in G$. A real invertible matrix is also a complex invertible matrix, so $h \mapsto M_h$ is a homomorphism $G \to GL_n(\mathbb{C})$, a complex representation of $G$ on $\mathbb{C}^n$ with the same traces: its character is $\chi_V$. By Corollary~\ref{cor:character-inverse-complex}, $\chi_V(g^{-1}) = \overline{\chi_V(g)}$. The number $\chi_V(g) = \operatorname{Tr}M_g$ is real, so $\overline{\chi_V(g)} = \chi_V(g)$. This proves $\chi_V(g^{-1}) = \chi_V(g)$, without the statement about orthogonal matrices.
+\end{proof}
+
 \begin{propbox}[{Matrices of Finite Order}]\label{prop:finite-order-matrix}
 Let $A$ be an $n \times n$ complex matrix with $A^m = I$ for some positive integer $m$.
 \begin{enumerate}
     \item $A$ is diagonalizable, and every eigenvalue $\lambda$ of $A$ satisfies $\lambda^m = 1$; in particular $|\lambda| = 1$.
     \item $\operatorname{Tr}(A^{-1}) = \overline{\operatorname{Tr}(A)}$.
 \end{enumerate}
-\srcline{WS 16.4}
+\srcline{WS 16.4; lecture 11/20}
 \end{propbox}
 
 \begin{proof}
 \textit{Idea:} $A$ generates a representation of the finite group $\mathbb{Z}/m\mathbb{Z}$ on $\mathbb{C}^n$; Maschke's theorem splits off one eigenvector at a time. On the unit circle, $\lambda^{-1} = \bar\lambda$.\par
-\textit{(Filled in; the worksheet's hint for (2) is to use the eigenvalues.)} $A$ is invertible, with inverse $A^{m-1}$.
+\textit{(Part (1) is filled in; the lecture of 11/20 proved it in another way, by counting the simple representations of $\mathbb{Z}/m\mathbb{Z}$: Corollary~\ref{cor:finite-order-diagonalizable}. Part (2) is the argument of the board of 11/20, with the steps written out; the worksheet's hint for (2) is to use the eigenvalues.)} $A$ is invertible, with inverse $A^{m-1}$.
 
 \textbf{(1) Eigenvalues.} Let $Av = \lambda v$ with $v \neq 0$. Then $v = A^mv = \lambda^m v$, so $\lambda^m = 1$. Taking absolute values, $|\lambda|^m = 1$, and $|\lambda|$ is a nonnegative real number, so $|\lambda| = 1$.
 
@@ -11244,11 +11249,11 @@ Let $A$ be an $n \times n$ complex matrix with $A^m = I$ for some positive integ
 \begin{corbox}[{Complex Characters under Inversion}]\label{cor:character-inverse-complex}
 Let $G$ be a finite group and $V$ a finite-dimensional complex representation of $G$. Then for every $g \in G$
 \[ \chi_V(g^{-1}) = \overline{\chi_V(g)}. \]
-\srcline{WS 16.5}
+\srcline{WS 16.5; lecture 11/20}
 \end{corbox}
 
 \begin{proof}
-\textit{(Filled in.)} Choose a basis of $V$ and let $A$ be the matrix of $\rho_V(g)$ in it. Let $m = |G|$. Then $g^m = e$ (Corollary~\ref{cor:order-element-divides-g-g-g-e}), so $A^m$ is the matrix of $\rho_V(g)^m = \rho_V(g^m) = \rho_V(e)$, the identity matrix. The matrix of $\rho_V(g^{-1}) = \rho_V(g)^{-1}$ is $A^{-1}$. By Proposition~\ref{prop:finite-order-matrix}(2),
+\textit{(Lecture 11/20: the trace identity for a matrix of finite order, applied to $\rho_V(g)$; the details are filled in.)} Choose a basis of $V$ and let $A$ be the matrix of $\rho_V(g)$ in it. Let $m = |G|$. Then $g^m = e$ (Corollary~\ref{cor:order-element-divides-g-g-g-e}), so $A^m$ is the matrix of $\rho_V(g)^m = \rho_V(g^m) = \rho_V(e)$, the identity matrix. The matrix of $\rho_V(g^{-1}) = \rho_V(g)^{-1}$ is $A^{-1}$. By Proposition~\ref{prop:finite-order-matrix}(2),
 \[ \chi_V(g^{-1}) = \operatorname{Tr}(A^{-1}) = \overline{\operatorname{Tr}(A)} = \overline{\chi_V(g)}. \]
 \end{proof}
 
@@ -11310,7 +11315,7 @@ Thus $\rho_V(g^{-1}) = \overline{\rho_V(g)}$, where matrices are taken with resp
 
 \textbf{Transcription note (PS 10.1).} The problem set prints part (3) as $\rho_V(g^{-1}) = \overline{\rho_V(g)}$. The complex conjugate of a linear map is not defined without a basis, so the submitted solution proves the equation for the matrices in a basis of eigenvectors of $\rho_V(g)$ and deduces the statement about characters, which is WS 16.5 (Corollary~\ref{cor:character-inverse-complex}). The problem set adds that the corresponding result for real representations is the one of WS 16.3 (Proposition~\ref{prop:character-inverse-real}).
 
-For the matrix $A$ of $\rho_V(g)$, parts (2) and (3) are a second proof of Matrices of Finite Order (WS 16.4, Proposition~\ref{prop:finite-order-matrix}), through the minimal polynomial instead of Maschke's theorem, and of Corollary~\ref{cor:character-inverse-complex}.
+For the matrix $A$ of $\rho_V(g)$, parts (2) and (3) are a second proof of Matrices of Finite Order (WS 16.4, Proposition~\ref{prop:finite-order-matrix}), through the minimal polynomial instead of Maschke's theorem, and of Corollary~\ref{cor:character-inverse-complex}. A third proof that $A$ is diagonalizable is the one of the lecture of 11/20 (Corollary~\ref{cor:finite-order-diagonalizable}).
 
 \begin{corbox}[{Dimension of $\operatorname{Hom}_G(V, W)$ over $\mathbb{R}$ and $\mathbb{C}$}]\label{cor:dim-hom-g-real-complex}
 Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations of $G$ over $k$.
@@ -12583,8 +12588,8 @@ $J^k$ & $2$ & $0$ & $-2$ & $0$
     \item \emph{The last row.} $\chi_R(k) = \operatorname{Tr}J^k$, and $J^0 = I$, $J$, $J^2 = -I$, $J^3 = -J$ have the traces $2$, $0$, $-2$, $0$.
     \item \emph{$\dim\operatorname{Hom}_G(R, R) = 2$} (board). The inverses of $0, 1, 2, 3$ are $0, 3, 2, 1$, and $\chi_R(3) = \chi_R(1)$, so by Corollary~\ref{cor:dim-hom-pairing}
     \[ \dim\operatorname{Hom}_G(R, R) = \langle \chi_R, \chi_R \rangle = \tfrac14\big(2^2 + 0^2 + (-2)^2 + 0^2\big) = 2. \]
-    \item \emph{Over $\mathbb{R}$} (board): $R$ is simple (PS 10.4(1), Example~\ref{ex:z4-rotation-worked}(1)), and it will be shown on Friday that the three rows are the only simple representations of $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$. So in WS 18.3(1) (Proposition~\ref{prop:rows-orthogonal}(1)) the value for $U = V = R$ is $\dim\operatorname{Hom}_G(R, R) = 2$, not $1$: this is the example announced in the remark \emph{Over Other Fields the Weights Stay} in \ref{sec:schur-multiplicities}. There are then three simple representations and four conjugacy classes, so the inequality of WS 18.4(2) (Corollary~\ref{cor:simples-at-most-classes}) can be strict.
-    \item \emph{Over $\mathbb{C}$} (board): the same three rules define representations over $\mathbb{C}$, with the same table. There are more representations than these, and $J^k$ acting on $\mathbb{C}^2$ is not simple; this is homework (PS 10.4(3), Example~\ref{ex:z4-rotation-worked}(3)).
+    \item \emph{Over $\mathbb{R}$} (board): $R$ is simple (PS 10.4(1), Example~\ref{ex:z4-rotation-worked}(1)), and the board announces for Friday that the three rows are the only simple representations of $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$; a proof is Proposition~\ref{prop:z4-real-simples}. So in WS 18.3(1) (Proposition~\ref{prop:rows-orthogonal}(1)) the value for $U = V = R$ is $\dim\operatorname{Hom}_G(R, R) = 2$, not $1$: this is the example announced in the remark \emph{Over Other Fields the Weights Stay} in \ref{sec:schur-multiplicities}. There are then three simple representations and four conjugacy classes, so the inequality of WS 18.4(2) (Corollary~\ref{cor:simples-at-most-classes}) can be strict.
+    \item \emph{Over $\mathbb{C}$} (board): the same three rules define representations over $\mathbb{C}$, with the same table. There are more representations than these, and $J^k$ acting on $\mathbb{C}^2$ is not simple; this is homework (PS 10.4(3), Example~\ref{ex:z4-rotation-worked}(3)). The complete table over $\mathbb{C}$, with four rows, is in Example~\ref{ex:cyclic-tables-5-4} (lecture 11/20).
     \item \emph{The rows are orthogonal} (check, not from class): $\langle \chi_{\mathrm{triv}}, \chi_{(-1)^k} \rangle = \frac14(1 - 1 + 1 - 1) = 0$, \ $\langle \chi_{\mathrm{triv}}, \chi_R \rangle = \frac14(2 + 0 - 2 + 0) = 0$, \ $\langle \chi_{(-1)^k}, \chi_R \rangle = \frac14(2 - 0 - 2 - 0) = 0$, and $\langle \chi_{\mathrm{triv}}, \chi_{\mathrm{triv}} \rangle = \langle \chi_{(-1)^k}, \chi_{(-1)^k} \rangle = \frac14 \cdot 4 = 1$.
 \end{enumerate}
 The simplicity of $R$ over $\mathbb{R}$, a basis of $\operatorname{Hom}_G(R, R)$, and a subrepresentation of $\mathbb{C}^2$ are Problem 10.4 of Problem Set 10, worked out in Example~\ref{ex:z4-rotation-worked}.
@@ -12621,7 +12626,7 @@ Let $\mathbb{Z}/4\mathbb{Z}$ act on $\mathbb{R}^2$, and by the same formula on $
     \item $\mathbb{C}^2$ is not simple: $L = \operatorname{span}_{\mathbb{C}}\left\{\left(\begin{smallmatrix} 1 \\ -i \end{smallmatrix}\right)\right\}$ is a subrepresentation with $L \neq \{0\}$ and $L \neq \mathbb{C}^2$.
     \item $\mathbb{C}^2 = L \oplus L'$ with $L' = \operatorname{span}_{\mathbb{C}}\left\{\left(\begin{smallmatrix} 1 \\ i \end{smallmatrix}\right)\right\}$. On $L$ the element $k$ acts by the scalar $i^k$, and on $L'$ by $(-i)^k$.
 \end{enumerate}
-\srcline{PS 10.4(1)--(3); part (4) is not from class}
+\srcline{PS 10.4(1)--(3); part (4) is from the lecture of 11/20 (Example~\ref{ex:z4-rotation-complexified})}
 \end{exbox}
 
 \begin{proof}
@@ -12695,7 +12700,7 @@ L = \operatorname{span}_{\mathbb{C}}\left\{ \begin{pmatrix} 1 \\ -i \end{pmatrix
 \]
 is a nontrivial proper subrepresentation of $\mathbb{C}^2$, and $\mathbb{C}^2$ is not simple.
 
-\textbf{(4)} \textit{(Not from class; filled in.)} With $J(a, b) = (-b, a)$, $J(1, i) = (-i, 1) = -i\,(1, i)$. So $v' = (1, i)$ is an eigenvector of $J$ for the eigenvalue $-i$, and $J^kv' = (-i)^kv'$: the line $L'$ is a subrepresentation on which $k$ acts by $(-i)^k$. By (3), $k$ acts on $L$ by $i^k$. The vectors $(1, -i)$ and $(1, i)$ are linearly independent, since $\det\left(\begin{smallmatrix} 1 & 1 \\ -i & i \end{smallmatrix}\right) = 2i \neq 0$, so they form a basis of $\mathbb{C}^2$ and $\mathbb{C}^2 = L \oplus L'$.
+\textbf{(4)} \textit{(Lecture 11/20, Example~\ref{ex:z4-rotation-complexified}; the details are filled in.)} With $J(a, b) = (-b, a)$, $J(1, i) = (-i, 1) = -i\,(1, i)$. So $v' = (1, i)$ is an eigenvector of $J$ for the eigenvalue $-i$, and $J^kv' = (-i)^kv'$: the line $L'$ is a subrepresentation on which $k$ acts by $(-i)^k$. By (3), $k$ acts on $L$ by $i^k$. The vectors $(1, -i)$ and $(1, i)$ are linearly independent, since $\det\left(\begin{smallmatrix} 1 & 1 \\ -i & i \end{smallmatrix}\right) = 2i \neq 0$, so they form a basis of $\mathbb{C}^2$ and $\mathbb{C}^2 = L \oplus L'$.
 \end{proof}
 
 %% >>> ADDED: figure (not from lecture)
@@ -12718,7 +12723,381 @@ is a nontrivial proper subrepresentation of $\mathbb{C}^2$, and $\mathbb{C}^2$ i
 \textit{(Not from lecture; figure added.)} Part (1) of Example~\ref{ex:z4-rotation-worked} as a picture. $J$ turns the plane by $90^\circ$, so it maps every line through $0$ to the perpendicular line. No line is mapped to itself, which is the geometric content of ``$J$ has no real eigenvalue''.
 %% <<< END ADDED
 
-Example~\ref{ex:z4-rotation-worked} fits the results of \ref{sec:schur-multiplicities}. Over $\mathbb{R}$ the representation is simple with $\dim\operatorname{Hom} = 2$, so the conclusion of Schur's Lemma over $\mathbb{C}$ (Proposition~\ref{prop:schur-complex}) fails over $\mathbb{R}$, and the converse of the Simplicity Test (Lemma~\ref{lem:simplicity-test}) fails over $\mathbb{R}$ as well. Over $\mathbb{C}$ the same matrices give a sum of two non-isomorphic one-dimensional representations, with characters $i^k$ and $(-i)^k$ whose sum is the row $2$, $0$, $-2$, $0$, and $\dim\operatorname{Hom} = 1^2 + 1^2 = 2$ (Corollary~\ref{cor:multiplicities-complex}). The homomorphisms $k \mapsto i^k$ and $k \mapsto (-i)^k$ are the further representations over $\mathbb{C}$ mentioned on the board. The problem set suggests, as an additional challenge, the same questions for $\mathbb{Z}/m\mathbb{Z}$ acting on $\mathbb{R}^2$ by rotations by $2\pi k/m$, $m \geq 3$; this is not worked out here.
+Example~\ref{ex:z4-rotation-worked} fits the results of \ref{sec:schur-multiplicities}. Over $\mathbb{R}$ the representation is simple with $\dim\operatorname{Hom} = 2$, so the conclusion of Schur's Lemma over $\mathbb{C}$ (Proposition~\ref{prop:schur-complex}) fails over $\mathbb{R}$, and the converse of the Simplicity Test (Lemma~\ref{lem:simplicity-test}) fails over $\mathbb{R}$ as well. Over $\mathbb{C}$ the same matrices give a sum of two non-isomorphic one-dimensional representations, with characters $i^k$ and $(-i)^k$ whose sum is the row $2$, $0$, $-2$, $0$, and $\dim\operatorname{Hom} = 1^2 + 1^2 = 2$ (Corollary~\ref{cor:multiplicities-complex}). The homomorphisms $k \mapsto i^k$ and $k \mapsto (-i)^k$ are the further representations over $\mathbb{C}$ mentioned on the board; the lecture of 11/20 lists all four one-dimensional complex representations of $\mathbb{Z}/4\mathbb{Z}$ and shows that there are no other simple ones (\ref{sec:cyclic-representations}). The problem set suggests, as an additional challenge, the same questions for $\mathbb{Z}/m\mathbb{Z}$ acting on $\mathbb{R}^2$ by rotations by $2\pi k/m$, $m \geq 3$; this is not worked out here.
+
+% ============================================================================
+% SECTION: REPRESENTATIONS OF CYCLIC GROUPS (lecture Fri Nov 20)
+% ============================================================================
+\section{Representations of Cyclic Groups}\label{sec:cyclic-representations}
+
+\textit{Source: Lecture (Fri Nov 20), from a handwritten page of the board; there was no worksheet.}
+
+The cyclic group $\mathbb{Z}/N\mathbb{Z}$ is the first group for which all simple complex representations are found. A representation of $\mathbb{Z}/N\mathbb{Z}$ is one matrix $g$ with $g^N = \mathrm{Id}$. Over $\mathbb{C}$ there are $N$ one-dimensional representations, one for each $N$-th root of unity, and $\mathbb{Z}/N\mathbb{Z}$ has $N$ conjugacy classes. So by WS 18.4(2) (Corollary~\ref{cor:simples-at-most-classes}) there are no further simple representations, and every complex representation is a direct sum of one-dimensional ones. In matrices: every complex matrix with $g^N = \mathrm{Id}$ is diagonalizable. This is WS 16.4, which Worksheet 16 left open (Proposition~\ref{prop:finite-order-matrix}), and it gives $\operatorname{Tr}(g^{-1}) = \overline{\operatorname{Tr}(g)}$. The section ends with two other fields: over $\mathbb{R}$ the group $\mathbb{Z}/4\mathbb{Z}$ has only three simple representations, and in characteristic $p$ a matrix with $g^p = \mathrm{Id}$ need not be diagonalizable.
+
+Throughout, $N \geq 1$ is an integer, and the elements of $\mathbb{Z}/N\mathbb{Z}$ are written $j = 0, 1, \ldots, N - 1$, with addition modulo $N$.
+
+\subsection{\texorpdfstring{A Representation of $\mathbb{Z}/N\mathbb{Z}$ Is One Matrix}{A Representation of Z/NZ Is One Matrix}}\label{sub:cyclic-one-matrix}
+
+\begin{propbox}[{A Representation of $\mathbb{Z}/N\mathbb{Z}$ Is a Matrix $g$ with $g^N = \mathrm{Id}$}]\label{prop:cyclic-representation-matrix}
+Let $k$ be a field and $n \geq 1$.
+\begin{enumerate}
+    \item If $\rho: \mathbb{Z}/N\mathbb{Z} \to GL_n(k)$ is a representation of $\mathbb{Z}/N\mathbb{Z}$ on $k^n$ (Proposition~\ref{prop:representations-homomorphisms-glv}) and $g = \rho(1)$, then $g^N = \mathrm{Id}$ and $\rho(j) = g^j$ for every $j$.
+    \item If $g$ is an $n \times n$ matrix over $k$ with $g^N = \mathrm{Id}$, then $g$ is invertible, and $\rho(j) = g^j$ is a well defined representation of $\mathbb{Z}/N\mathbb{Z}$ on $k^n$ with $\rho(1) = g$.
+\end{enumerate}
+So the representations of $\mathbb{Z}/N\mathbb{Z}$ on $k^n$ correspond one to one to the $n \times n$ matrices $g$ with $g^N = \mathrm{Id}$. The same holds for a representation on any vector space $V$, with a linear map $g: V \to V$ in place of the matrix.
+\srcline{lecture 11/20}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $1$ generates $\mathbb{Z}/N\mathbb{Z}$, so $\rho(1)$ determines $\rho$; and $N = 0$ in $\mathbb{Z}/N\mathbb{Z}$ forces $\rho(1)^N = \mathrm{Id}$.\par
+\textit{(Board 11/20.)} \textbf{(1)} A representation on $k^n$ is a homomorphism $\rho: \mathbb{Z}/N\mathbb{Z} \to GL_n(k)$ (Proposition~\ref{prop:representations-homomorphisms-glv}). So
+\[ \rho(2) = \rho(1 + 1) = \rho(1)^2 = g^2, \qquad \rho(3) = \rho(1 + 1 + 1) = \rho(1)^3 = g^3, \qquad \ldots, \qquad \rho(j) = g^j, \]
+by induction on $j$, with $\rho(j + 1) = \rho(j)\rho(1) = g^jg$. Since $N = 0$ in $\mathbb{Z}/N\mathbb{Z}$, $g^N = \rho(N) = \rho(0) = \mathrm{Id}$. The board also notes why every $\rho(h)$ must be invertible: $\rho(h)\rho(h^{-1}) = \rho(hh^{-1}) = \rho(e) = \mathrm{Id}$.
+
+\textbf{(2)} $g \cdot g^{N-1} = g^N = \mathrm{Id}$, so $g$ is invertible with inverse $g^{N-1}$, and $g \in GL_n(k)$. The map $\varphi: \mathbb{Z} \to GL_n(k)$, $\varphi(j) = g^j$, is a homomorphism by the Exponent Laws (Lemma~\ref{lem:exponent-laws}), and $\varphi(N) = g^N = \mathrm{Id}$. By Descending a Map to $\mathbb{Z}/n\mathbb{Z}$ (Lemma~\ref{lem:descending-map-z-nz}(2)) it descends to a homomorphism $\rho: \mathbb{Z}/N\mathbb{Z} \to GL_n(k)$ with $\rho(j) = g^j$. Explicitly, $g^{j + mN} = g^j(g^N)^m = g^j$, so $g^j$ depends only on $j$ modulo $N$. A homomorphism to $GL_n(k)$ is a representation on $k^n$ (Proposition~\ref{prop:representations-homomorphisms-glv}).
+
+\emph{One to one.} The two constructions are inverse to each other: starting from $g$, the representation $j \mapsto g^j$ has $\rho(1) = g$; starting from $\rho$, the matrix $g = \rho(1)$ gives back $j \mapsto g^j = \rho(j)$ by (1). The same proof works for linear maps $g: V \to V$ and homomorphisms to $GL(V)$.
+\end{proof}
+
+\begin{lembox}[{Subrepresentations and Homomorphisms for $\mathbb{Z}/N\mathbb{Z}$}]\label{lem:cyclic-subrepresentations-homomorphisms}
+Let $V$ and $W$ be representations of $\mathbb{Z}/N\mathbb{Z}$ over a field $k$, and let $g = \rho_V(1)$ and $h = \rho_W(1)$, so that $\rho_V(j) = g^j$ and $\rho_W(j) = h^j$ (Proposition~\ref{prop:cyclic-representation-matrix}).
+\begin{enumerate}
+    \item A subspace $U \subseteq V$ is a subrepresentation (Definition~\ref{def:subrepresentation}) if and only if $gU \subseteq U$. In particular, for $v \neq 0$ the line $kv$ is a subrepresentation if and only if $v$ is an eigenvector of $g$.
+    \item A linear map $\alpha: V \to W$ is a homomorphism of representations (Definition~\ref{def:homomorphism-representations}) if and only if $\alpha g = h\alpha$.
+    \item For $V = W = k^n$, with matrices $g$ and $h$: the two representations are isomorphic (Definition~\ref{def:isomorphism-representations}) if and only if $h = SgS^{-1}$ for an invertible matrix $S$.
+\end{enumerate}
+\srcline{not from class; the lecture of 11/20 uses it without comment}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from class.)} \textbf{(1)} If $U$ is a subrepresentation, then $\rho_V(1)U \subseteq U$, which is $gU \subseteq U$. Conversely, if $gU \subseteq U$, then $g^jU \subseteq U$ for all $j \geq 0$ by induction, since $g^{j+1}U = g(g^jU) \subseteq gU \subseteq U$; so $U$ is preserved by every $\rho_V(j) = g^j$. For a line: $g(kv) \subseteq kv$ if and only if $gv = \lambda v$ for some $\lambda \in k$.
+
+\textbf{(2)} $\alpha$ is a homomorphism of representations if and only if $\alpha g^j = h^j\alpha$ for all $j$. The case $j = 1$ is $\alpha g = h\alpha$. Conversely, if $\alpha g = h\alpha$, then by induction $\alpha g^{j+1} = (\alpha g^j)g = h^j\alpha g = h^jh\alpha = h^{j+1}\alpha$.
+
+\textbf{(3)} An isomorphism from the representation given by $g$ to the one given by $h$ is an invertible matrix $S$ that is a homomorphism of representations. By (2) this means $Sg = hS$, which for invertible $S$ is $h = SgS^{-1}$.
+\end{proof}
+
+\subsection{\texorpdfstring{Roots of Unity and the One-Dimensional Complex Representations}{Roots of Unity and the One-Dimensional Complex Representations}}\label{sub:cyclic-one-dimensional}
+
+From here on the field is $\mathbb{C}$, until the last subsection. The letter $k$ no longer denotes the field; as on the board, it is an index.
+
+\begin{defbox}[{Root of Unity}]\label{def:root-of-unity}
+Let $N \geq 1$. A complex number $\zeta$ is an \textbf{$N$-th root of unity} if $\zeta^N = 1$.
+\srcline{board 11/20}
+\end{defbox}
+
+\begin{lembox}[{The $N$-th Roots of Unity}]\label{lem:roots-of-unity}
+Let $N \geq 1$.
+\begin{enumerate}
+    \item The $N$-th roots of unity (Definition~\ref{def:root-of-unity}) are exactly the $N$ numbers $e^{2\pi ik/N} = \cos\frac{2\pi k}{N} + i\sin\frac{2\pi k}{N}$ with $0 \leq k \leq N - 1$, and these are pairwise distinct. They are the powers $1, \omega, \omega^2, \ldots, \omega^{N-1}$ of $\omega = e^{2\pi i/N}$.
+    \item Every $N$-th root of unity $\zeta$ satisfies $|\zeta| = 1$ and $\zeta^{-1} = \overline{\zeta}$.
+\end{enumerate}
+\srcline{board 11/20: part (1), stated, with the picture for $N = 5$; part (2) is used on the board for the trace of $g^{-1}$; the proofs are not from class}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from class.)} \textbf{(1)} Each of the numbers is an $N$-th root of unity: $\big(e^{2\pi ik/N}\big)^N = e^{2\pi ik} = 1$. They are pairwise distinct: $e^{i\theta} = \cos\theta + i\sin\theta$ is the point of the unit circle at the angle $\theta$, and the angles $2\pi k/N$ for $0 \leq k \leq N - 1$ are $N$ different angles in $[0, 2\pi)$. There are no others: the $N$-th roots of unity are the zeros of the polynomial $z^N - 1$ of degree $N$, which has at most $N$ zeros (Axler 4.8). Finally $e^{2\pi ik/N} = \big(e^{2\pi i/N}\big)^k = \omega^k$.
+
+\textbf{(2)} $|\zeta|^N = |\zeta^N| = 1$, and $|\zeta|$ is a nonnegative real number, so $|\zeta| = 1$. Then $\zeta\overline{\zeta} = |\zeta|^2 = 1$, so $\zeta^{-1} = \overline{\zeta}$.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+\draw[->] (-1.9,0) -- (2.3,0);
+\draw[->] (0,-1.7) -- (0,1.9);
+\draw (0,0) circle (1.2);
+\foreach \k in {0,...,4} { \fill ({72*\k}:1.2) circle (1.6pt); }
+\node[anchor=south west] at (1.2,0.02) {$1$};
+\node[anchor=north west] at (1.5,-0.25) {$N = 5$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Board 11/20.)} The five $5$-th roots of unity: five points equally spaced on the unit circle, starting at $1$.
+
+\begin{propbox}[{The One-Dimensional Complex Representations of $\mathbb{Z}/N\mathbb{Z}$}]\label{prop:cyclic-one-dimensional}
+For $0 \leq k \leq N - 1$ let
+\[ \rho_k: \mathbb{Z}/N\mathbb{Z} \to GL_1(\mathbb{C}), \qquad \rho_k(j) = \big[e^{2\pi ijk/N}\big]. \]
+Write $\mathbb{C}_k$ for the vector space $\mathbb{C}$ with this action, so that $j$ multiplies every vector of $\mathbb{C}_k$ by $e^{2\pi ijk/N}$.
+\begin{enumerate}
+    \item $\mathbb{C}_k$ is a representation of $\mathbb{Z}/N\mathbb{Z}$, with character (Definition~\ref{def:character-representation}) $\chi_k(j) = e^{2\pi ijk/N}$.
+    \item $\mathbb{C}_k$ is simple (Definition~\ref{def:simple-representation}).
+    \item $\mathbb{C}_k \not\cong \mathbb{C}_l$ for $k \neq l$.
+    \item Every representation of $\mathbb{Z}/N\mathbb{Z}$ on $\mathbb{C}^1$ is equal to exactly one of $\rho_0, \ldots, \rho_{N-1}$.
+\end{enumerate}
+\srcline{lecture 11/20: for each $N$-th root of unity $\zeta$ there is a one-dimensional representation $\rho(j) = [\zeta^j]$; parts (2)--(4) are spelled out}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture 11/20; details filled in.)} \textbf{(1)} The number $\zeta = e^{2\pi ik/N}$ is an $N$-th root of unity (Lemma~\ref{lem:roots-of-unity}(1)). So the $1 \times 1$ matrix $g = [\zeta]$ satisfies $g^N = [\zeta^N] = [1]$, and by Proposition~\ref{prop:cyclic-representation-matrix}(2) the rule
+\[ \rho(j) = g^j = [\zeta^j] = \big[e^{2\pi ijk/N}\big] \]
+is a representation. The trace of a $1 \times 1$ matrix is its entry.
+
+\textbf{(2)} $\mathbb{C}_k$ is one-dimensional, so its only subspaces are $\{0\}$ and $\mathbb{C}_k$, and these are different. So it has exactly two subrepresentations.
+
+\textbf{(3)} Isomorphic representations have the same character (Lemma~\ref{lem:isomorphic-same-character}). For $k \neq l$, $\chi_k(1) = e^{2\pi ik/N} \neq e^{2\pi il/N} = \chi_l(1)$ by Lemma~\ref{lem:roots-of-unity}(1).
+
+\textbf{(4)} By Proposition~\ref{prop:cyclic-representation-matrix}(1), a representation $\rho$ on $\mathbb{C}^1$ is $\rho(j) = g^j$ for a $1 \times 1$ matrix $g = [\zeta]$ with $\zeta^N = 1$. By Lemma~\ref{lem:roots-of-unity}(1), $\zeta = e^{2\pi ik/N}$ for exactly one $k$ with $0 \leq k \leq N - 1$, and then $\rho = \rho_k$.
+\end{proof}
+
+\begin{exbox}[{The Tables for $N = 5$ and $N = 4$}]\label{ex:cyclic-tables-5-4}
+$\mathbb{Z}/N\mathbb{Z}$ is abelian, so every element is central and every conjugacy class is a single element (Proposition~\ref{prop:central-iff-singleton-conjugacy-class}). The table of the characters $\chi_0, \ldots, \chi_{N-1}$ has one column for each $j \in \mathbb{Z}/N\mathbb{Z}$, and the entry in the row of $\chi_k$ is $e^{2\pi ijk/N}$.
+
+For $N = 5$ put $\alpha = e^{2\pi i/5}$, so that $\chi_k(j) = \alpha^{jk}$ and $\alpha^5 = 1$:
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{l|ccccc}
+$N = 5$ & $0$ & $1$ & $2$ & $3$ & $4$ \\ \hline
+$\chi_0(j) = 1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\
+$\chi_1(j) = \alpha^{j}$ & $1$ & $\alpha$ & $\alpha^2$ & $\alpha^3$ & $\alpha^4$ \\
+$\chi_2(j) = \alpha^{2j}$ & $1$ & $\alpha^2$ & $\alpha^4$ & $\alpha$ & $\alpha^3$ \\
+$\chi_3(j) = \alpha^{3j}$ & $1$ & $\alpha^3$ & $\alpha$ & $\alpha^4$ & $\alpha^2$ \\
+$\chi_4(j) = \alpha^{4j}$ & $1$ & $\alpha^4$ & $\alpha^3$ & $\alpha^2$ & $\alpha$
+\end{tabular}
+\end{center}
+For $N = 4$, $e^{2\pi i/4} = i$:
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{l|cccc}
+$N = 4$ & $0$ & $1$ & $2$ & $3$ \\ \hline
+$\chi_0(j) = 1$ (trivial) & $1$ & $1$ & $1$ & $1$ \\
+$\chi_1(j) = i^{j}$ & $1$ & $i$ & $-1$ & $-i$ \\
+$\chi_2(j) = (-1)^{j}$ & $1$ & $-1$ & $1$ & $-1$ \\
+$\chi_3(j) = (-i)^{j}$ & $1$ & $-i$ & $-1$ & $i$
+\end{tabular}
+\end{center}
+\begin{enumerate}
+    \item \emph{The entries for $N = 5$.} Exponents are reduced modulo $5$: for instance $\chi_2(3) = \alpha^6 = \alpha$ and $\chi_2(4) = \alpha^8 = \alpha^3$. The board fills in the first three rows; the last two are computed in the same way.
+    \item \emph{Compared with the lecture of 11/18.} The rows $\chi_0$ and $\chi_2$ for $N = 4$ are the trivial representation and the representation $(-1)^k$ of Example~\ref{ex:z4-real-complex}. The rows $\chi_1$ and $\chi_3$ are the further representations over $\mathbb{C}$ announced there. They are not defined over $\mathbb{R}$, since their values are not real.
+    \item \emph{These are complete character tables.} By Proposition~\ref{prop:cyclic-one-dimensional} the rows belong to $N$ pairwise non-isomorphic simple representations, and by Theorem~\ref{thm:cyclic-simple-complex} below there are no others. So each table is the character table of $\mathbb{Z}/N\mathbb{Z}$ over $\mathbb{C}$ in the sense of Definition~\ref{def:character-table}.
+\end{enumerate}
+\srcline{board 11/20}
+\end{exbox}
+
+\textbf{Transcription note (board 11/20).} The board labels the rows of the table for $N = 5$ by $1$, $\alpha^k$, $\alpha^{2k}$, $\alpha^{3k}$, $\alpha^{4k}$ and the rows of the table for $N = 4$ by $1$, $i^k$, $(-1)^k$, $(-i)^k$, with $k$ for the group element. These notes write $j$ for the group element and keep $k$ for the number of the row, as in the board's formula $e^{2\pi ik/N}$.
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+\begin{scope}
+\draw[->, black!55, thin] (-2.1,0) -- (2.6,0);
+\draw[->, black!55, thin] (0,-2.1) -- (0,2.3);
+\draw[black!40] (0,0) circle (1.6);
+\foreach \j in {0,...,4} { \draw[->, thick, blue!70!black, shorten <=3pt, shorten >=3pt] ({72*\j}:1.6) -- ({72*\j+72}:1.6); }
+\foreach \j in {0,...,4} { \fill[blue!70!black] ({72*\j}:1.6) circle (1.6pt); }
+\foreach \j in {1,...,4} { \node[blue!70!black] at ({72*\j}:1.95) {$j = \j$}; }
+\node[blue!70!black, anchor=south west] at (1.62,0.05) {$j = 0$};
+\node[anchor=north] at (0,-2.25) {$\chi_1(j) = \alpha^{j}$: one step of $72^\circ$ for each $j$};
+\end{scope}
+\begin{scope}[xshift=6.4cm]
+\draw[->, black!55, thin] (-2.1,0) -- (2.6,0);
+\draw[->, black!55, thin] (0,-2.1) -- (0,2.3);
+\draw[black!40] (0,0) circle (1.6);
+\foreach \j in {0,...,4} { \draw[->, thick, red!70!black, shorten <=3pt, shorten >=3pt] ({144*\j}:1.6) -- ({144*\j+144}:1.6); }
+\foreach \j in {0,...,4} { \fill[red!70!black] ({144*\j}:1.6) circle (1.6pt); }
+\foreach \j in {1,...,4} { \node[red!70!black] at ({144*\j}:1.95) {$j = \j$}; }
+\node[red!70!black, anchor=south west] at (1.62,0.05) {$j = 0$};
+\node[anchor=north] at (0,-2.25) {$\chi_2(j) = \alpha^{2j}$: one step of $144^\circ$ for each $j$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Two rows of the table for $N = 5$, with $\alpha = e^{2\pi i/5}$. The point marked $j$ is the value $\chi_k(j)$ on the unit circle. For $\chi_1$ each step from $j$ to $j + 1$ turns by $72^\circ$, for $\chi_2$ by $144^\circ$. Both walks visit the same five points, in different orders; this is why each row of the table is a rearrangement of $1, \alpha, \alpha^2, \alpha^3, \alpha^4$.
+%% <<< END ADDED
+
+\subsection{\texorpdfstring{All Simple Complex Representations of $\mathbb{Z}/N\mathbb{Z}$}{All Simple Complex Representations of Z/NZ}}\label{sub:cyclic-all-simple}
+
+\begin{thmbox}[{The Simple Complex Representations of $\mathbb{Z}/N\mathbb{Z}$}]\label{thm:cyclic-simple-complex}
+Every finite-dimensional simple (Definition~\ref{def:simple-representation}) complex representation of $\mathbb{Z}/N\mathbb{Z}$ is isomorphic to exactly one of $\mathbb{C}_0, \mathbb{C}_1, \ldots, \mathbb{C}_{N-1}$ (Proposition~\ref{prop:cyclic-one-dimensional}). So, up to isomorphism, $\mathbb{Z}/N\mathbb{Z}$ has exactly $N$ finite-dimensional simple complex representations, as many as conjugacy classes (Definition~\ref{def:conjugacy-class}), and all of them are one-dimensional.
+\srcline{lecture 11/20}
+\end{thmbox}
+
+\begin{proof}
+\textit{Idea:} there are at most as many simple representations as conjugacy classes, and $N$ have been found.\par
+\textit{(Board 11/20: ``we just found $N = \#\operatorname{Conj}(\mathbb{Z}/N\mathbb{Z})$ non-isomorphic simple representations of $\mathbb{Z}/N\mathbb{Z}$''.)} $\mathbb{Z}/N\mathbb{Z}$ is abelian, so each of its conjugacy classes is a single element (Proposition~\ref{prop:central-iff-singleton-conjugacy-class}), and it has $c = N$ conjugacy classes. By Proposition~\ref{prop:cyclic-one-dimensional}, $\mathbb{C}_0, \ldots, \mathbb{C}_{N-1}$ are $N$ pairwise non-isomorphic simple representations.
+
+Let $S$ be a finite-dimensional simple complex representation. If $S$ were isomorphic to none of the $\mathbb{C}_k$, then $\mathbb{C}_0, \ldots, \mathbb{C}_{N-1}, S$ would be $N + 1$ pairwise non-isomorphic simple representations over $\mathbb{C}$, a field containing $\mathbb{Q}$. This contradicts WS 18.4(2) (Corollary~\ref{cor:simples-at-most-classes}), which allows at most $c = N$. So $S \cong \mathbb{C}_k$ for some $k$. If also $S \cong \mathbb{C}_l$, then $\mathbb{C}_k \cong \mathbb{C}_l$ (Lemma~\ref{lem:isomorphism-representations-properties}(3)), so $k = l$ by Proposition~\ref{prop:cyclic-one-dimensional}(3).
+\end{proof}
+
+For $\mathbb{Z}/N\mathbb{Z}$ over $\mathbb{C}$ the inequality of Corollary~\ref{cor:simples-at-most-classes} is therefore an equality: the number of simple representations equals the number of conjugacy classes.
+
+\begin{corbox}[{Every Complex Representation of $\mathbb{Z}/N\mathbb{Z}$ Is a Direct Sum of One-Dimensional Representations}]\label{cor:cyclic-direct-sum-lines}
+Let $V$ be a finite-dimensional complex representation of $\mathbb{Z}/N\mathbb{Z}$. Then there are integers $a_0, a_1, \ldots, a_{N-1} \geq 0$ with
+\[ V \cong \mathbb{C}_0^{\oplus a_0} \oplus \mathbb{C}_1^{\oplus a_1} \oplus \cdots \oplus \mathbb{C}_{N-1}^{\oplus a_{N-1}} \]
+(external direct sum, Definitions~\ref{def:external-direct-sum-representations} and~\ref{def:repeated-direct-sum}). For these integers,
+\[ \chi_V = \sum_{k=0}^{N-1} a_k\,\chi_k, \qquad \dim V = \sum_{k=0}^{N-1} a_k. \]
+\srcline{lecture 11/20: ``so every representation must be a direct sum of these'', for complex finite-dimensional representations}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture 11/20; details filled in.)} $|\mathbb{Z}/N\mathbb{Z}| = N \neq 0$ in $\mathbb{C}$, so by Corollary~\ref{cor:decomposition-multiplicities} there are pairwise non-isomorphic simple representations $S_1, \ldots, S_r$ and positive integers $b_1, \ldots, b_r$ with $V \cong S_1^{\oplus b_1} \oplus \cdots \oplus S_r^{\oplus b_r}$. By Theorem~\ref{thm:cyclic-simple-complex}, each $S_i$ is isomorphic to $\mathbb{C}_{k(i)}$ for exactly one $k(i)$, and the numbers $k(1), \ldots, k(r)$ are different because the $S_i$ are pairwise non-isomorphic. Choose isomorphisms $\beta_i: \mathbb{C}_{k(i)} \to S_i$. Applying $\beta_i$ in every coordinate that belongs to $S_i$ gives a map $\bigoplus_i \mathbb{C}_{k(i)}^{\oplus b_i} \to \bigoplus_i S_i^{\oplus b_i}$ that is linear, bijective and commutes with the group, because all operations are coordinatewise; so the two sums are isomorphic. Put $a_{k(i)} = b_i$ and $a_k = 0$ for the other $k$. Then $V \cong \bigoplus_k \mathbb{C}_k^{\oplus a_k}$ (Lemma~\ref{lem:isomorphism-representations-properties}(3)).
+
+Isomorphic representations have the same character (Lemma~\ref{lem:isomorphic-same-character}), and the character of an external direct sum is the sum of the characters (Proposition~\ref{prop:character-external-direct-sum}); this gives $\chi_V = \sum_k a_k\chi_k$. At $j = 0$ this reads $\dim V = \chi_V(0) = \sum_k a_k\chi_k(0) = \sum_k a_k$.
+\end{proof}
+
+\begin{propbox}[{The Multiplicities $a_k$ from the Character}]\label{prop:cyclic-multiplicities}
+In Corollary~\ref{cor:cyclic-direct-sum-lines}, for $0 \leq k \leq N - 1$,
+\[ a_k = \langle \chi_V, \chi_k \rangle = \frac{1}{N}\sum_{j=0}^{N-1} \chi_V(j)\,e^{-2\pi ijk/N}, \]
+with the pairing of Definition~\ref{def:pairing-class-functions}. In particular the integers $a_k$ are determined by $V$, and two finite-dimensional complex representations of $\mathbb{Z}/N\mathbb{Z}$ with the same character are isomorphic.
+\srcline{not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from class.)} The pairing is linear in the first entry (Proposition~\ref{prop:pairing-symmetric}(1)), and the characters of the pairwise non-isomorphic simple complex representations $\mathbb{C}_l$ satisfy $\langle \chi_l, \chi_k \rangle = 1$ for $l = k$ and $0$ for $l \neq k$ (WS 18.3, Proposition~\ref{prop:rows-orthogonal}(2)). So
+\[ \langle \chi_V, \chi_k \rangle = \Big\langle \sum_{l=0}^{N-1} a_l\chi_l,\ \chi_k \Big\rangle = \sum_{l=0}^{N-1} a_l\,\langle \chi_l, \chi_k \rangle = a_k. \]
+\emph{The formula.} Every conjugacy class of $\mathbb{Z}/N\mathbb{Z}$ has one element, and the inverse of $j$ is $-j$. So the pairing is $\langle \chi_V, \chi_k \rangle = \frac{1}{N}\sum_j \chi_V(-j)\chi_k(j)$. Replacing $j$ by $-j$, which runs through $\mathbb{Z}/N\mathbb{Z}$ as $j$ does, this is $\frac{1}{N}\sum_j \chi_V(j)\chi_k(-j) = \frac{1}{N}\sum_j \chi_V(j)\,e^{-2\pi ijk/N}$.
+
+\emph{Same character.} If $\chi_V = \chi_W$, the formula gives the same integers $a_k$ for $V$ and for $W$, so both are isomorphic to $\bigoplus_k \mathbb{C}_k^{\oplus a_k}$, and $V \cong W$ (Lemma~\ref{lem:isomorphism-representations-properties}(3)).
+\end{proof}
+
+\begin{corbox}[{A Complex Matrix with $g^N = \mathrm{Id}$ Is Diagonalizable}]\label{cor:finite-order-diagonalizable}
+Let $g$ be an $n \times n$ complex matrix with $g^N = \mathrm{Id}_n$. Then there is an invertible matrix $S$ such that $SgS^{-1}$ is diagonal, and the diagonal entries are $N$-th roots of unity (Definition~\ref{def:root-of-unity}). The root $e^{2\pi ik/N}$ occurs $a_k$ times, where the $a_k$ are the integers of Corollary~\ref{cor:cyclic-direct-sum-lines} for the representation $j \mapsto g^j$ on $\mathbb{C}^n$.
+\srcline{lecture 11/20; this is WS 16.4(1), Proposition~\ref{prop:finite-order-matrix}(1)}
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} a decomposition of $\mathbb{C}^n$ into one-dimensional representations is a basis of eigenvectors of $g$.\par
+\textit{(Board 11/20: ``so if $g^N = \mathrm{Id}_n$ there is a change of basis matrix $S$'' with $SgS^{-1}$ diagonal, $N$-th roots of unity on the diagonal. The passage from the direct sum to $S$ is filled in.)} By Proposition~\ref{prop:cyclic-representation-matrix}(2), $\rho(j) = g^j$ is a representation of $\mathbb{Z}/N\mathbb{Z}$ on $\mathbb{C}^n$. By Corollary~\ref{cor:cyclic-direct-sum-lines} there is an isomorphism of representations
+\[ P: E = \mathbb{C}_0^{\oplus a_0} \oplus \cdots \oplus \mathbb{C}_{N-1}^{\oplus a_{N-1}} \to \mathbb{C}^n. \]
+The elements of $E$ are tuples of $\sum_k a_k = n$ complex numbers, so $E = \mathbb{C}^n$ as a vector space and $P$ is an invertible $n \times n$ matrix. The group acts on $E$ coordinate by coordinate (Definition~\ref{def:external-direct-sum-representations}): the element $1$ multiplies a coordinate that belongs to $\mathbb{C}_k$ by $e^{2\pi ik/N}$. So $1$ acts on $E$ by a diagonal matrix $D$, in which $e^{2\pi ik/N}$ occurs $a_k$ times. By Lemma~\ref{lem:cyclic-subrepresentations-homomorphisms}(3), applied to the isomorphism $P$ from the representation given by $D$ to the one given by $g$, $g = PDP^{-1}$. With $S = P^{-1}$, $SgS^{-1} = D$.
+\end{proof}
+
+\begin{proof}[Second proof (minimal polynomial)]
+\textit{(Not from class. This is the argument of Problem 10.1, written out in the proof of Proposition~\ref{prop:finite-group-diagonalizable}(2).)} The polynomial $x^N - 1$ annihilates $g$, and it has $N$ distinct roots in $\mathbb{C}$ (Lemma~\ref{lem:roots-of-unity}(1); alternatively, it has no root in common with its derivative $Nx^{N-1}$, whose only root $0$ is not a root of $x^N - 1$). The minimal polynomial of $g$ divides $x^N - 1$ (Axler 5.29), so it is a product of distinct linear factors, and $g$ is diagonalizable (Axler 5.62). The eigenvalues of $g$ are roots of its minimal polynomial (Axler 5.27), hence roots of $x^N - 1$.
+\end{proof}
+
+These notes now contain three proofs that a complex matrix with $g^N = \mathrm{Id}$ is diagonalizable: by splitting off one eigenvector at a time with Maschke's theorem (the filled-in proof of Proposition~\ref{prop:finite-order-matrix}(1)), by the minimal polynomial (Problem 10.1, Proposition~\ref{prop:finite-group-diagonalizable}(2)), and the lecture's, by counting the simple representations of $\mathbb{Z}/N\mathbb{Z}$. The lecture's proof does not use the other two: Corollary~\ref{cor:simples-at-most-classes} rests on the orthogonality of the rows (Proposition~\ref{prop:rows-orthogonal}(1)) and on Schur's Lemma, not on diagonalizing a matrix.
+
+\textbf{The trace of the inverse (board 11/20).} Let $g^N = \mathrm{Id}_n$, and let $\lambda_1, \ldots, \lambda_n$ be the eigenvalues of $g$, the diagonal entries of $SgS^{-1}$. They are roots of unity, so $\lambda_j^{-1} = \overline{\lambda_j}$ (Lemma~\ref{lem:roots-of-unity}(2)), and the board concludes
+\[ \operatorname{Tr}(g) = \sum_j \lambda_j, \qquad \operatorname{Tr}(g^{-1}) = \sum_j \lambda_j^{-1} = \sum_j \overline{\lambda_j} = \overline{\operatorname{Tr}(g)}. \]
+This is WS 16.4(2) (Proposition~\ref{prop:finite-order-matrix}(2), where the steps are written out). Applied to $g = \rho_V(x)$ for an element $x$ of a finite group $G$, for which $\rho_V(x)^{|G|} = \mathrm{Id}$, it gives $\chi_V(x^{-1}) = \overline{\chi_V(x)}$, which is WS 16.5 (Corollary~\ref{cor:character-inverse-complex}).
+
+\begin{exbox}[{Rotation by $90^\circ$, Complexified}]\label{ex:z4-rotation-complexified}
+Let $\mathbb{Z}/4\mathbb{Z}$ act on $\mathbb{R}^2$ by $j \mapsto J^j$ with $J = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$, the representation $R$ of Example~\ref{ex:z4-real-complex}, which is simple over $\mathbb{R}$ (Example~\ref{ex:z4-rotation-worked}(1)). The same matrices act on $\mathbb{C}^2$, and $J^4 = \mathrm{Id}$, so Corollaries~\ref{cor:cyclic-direct-sum-lines} and~\ref{cor:finite-order-diagonalizable} apply with $N = 4$.
+\begin{enumerate}
+    \item \emph{The decomposition} (board). The vectors $\left(\begin{smallmatrix} 1 \\ i \end{smallmatrix}\right)$ and $\left(\begin{smallmatrix} 1 \\ -i \end{smallmatrix}\right)$ are eigenvectors of $J$, for the eigenvalues $-i$ and $i$: the board computes the first, and in the same way $J\left(\begin{smallmatrix} 1 \\ -i \end{smallmatrix}\right) = \left(\begin{smallmatrix} i \\ 1 \end{smallmatrix}\right) = i\left(\begin{smallmatrix} 1 \\ -i \end{smallmatrix}\right)$. So the two lines they span are subrepresentations (Lemma~\ref{lem:cyclic-subrepresentations-homomorphisms}(1)); they are the lines $L'$ and $L$ of Example~\ref{ex:z4-rotation-worked}. On the board:
+    \[ \mathbb{C}^2 = \mathbb{C}\begin{pmatrix} 1 \\ i \end{pmatrix} \oplus \mathbb{C}\begin{pmatrix} 1 \\ -i \end{pmatrix}, \qquad \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 1 \\ i \end{pmatrix} = \begin{pmatrix} -i \\ 1 \end{pmatrix} = (-i)\begin{pmatrix} 1 \\ i \end{pmatrix}. \]
+    \item \emph{Which one-dimensional representations.} On $\mathbb{C}\left(\begin{smallmatrix} 1 \\ -i \end{smallmatrix}\right)$ the element $j$ acts by $i^j$, so this line is isomorphic to $\mathbb{C}_1$. On $\mathbb{C}\left(\begin{smallmatrix} 1 \\ i \end{smallmatrix}\right)$ it acts by $(-i)^j = i^{3j}$, so this line is isomorphic to $\mathbb{C}_3$. Hence $\mathbb{C}^2 \cong \mathbb{C}_1 \oplus \mathbb{C}_3$: the multiplicities are $a_0 = 0$, $a_1 = 1$, $a_2 = 0$, $a_3 = 1$.
+    \item \emph{The characters} (board). The character of $J^j$ is the sum of two rows of the table for $N = 4$ (Example~\ref{ex:cyclic-tables-5-4}):
+    \[ (2, 0, -2, 0) = (1, -i, -1, i) + (1, i, -1, -i), \qquad \text{that is,} \quad \chi_R = \chi_3 + \chi_1. \]
+    \item \emph{The multiplicities from the character} (check, not from class). By Proposition~\ref{prop:cyclic-multiplicities}, with $\chi_R = (2, 0, -2, 0)$,
+    \[ a_k = \tfrac14\big(2 \cdot 1 + 0 + (-2) \cdot i^{-2k} + 0\big) = \tfrac14\big(2 - 2(-1)^k\big) = \begin{cases} 0 & k = 0, 2, \\ 1 & k = 1, 3. \end{cases} \]
+    \item \emph{The diagonal form} (not from class). With $P = \left(\begin{smallmatrix} 1 & 1 \\ -i & i \end{smallmatrix}\right)$, whose columns are the two eigenvectors, $P^{-1}JP = \left(\begin{smallmatrix} i & 0 \\ 0 & -i \end{smallmatrix}\right)$. So $S = P^{-1}$ in Corollary~\ref{cor:finite-order-diagonalizable}.
+\end{enumerate}
+So a representation that is simple over $\mathbb{R}$ can split over $\mathbb{C}$.
+\srcline{lecture 11/20; parts (2), (4) and (5) not from class}
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, scale=0.62]
+\foreach \j/\bx/\by/\sx/\lab in {0/1/0/2/{2}, 1/0/1/0/{0}, 2/-1/0/-2/{-2}, 3/0/-1/0/{0}} {
+\begin{scope}[xshift=\j*6.3cm]
+\draw[->, black!55, thin] (-2.3,0) -- (2.5,0);
+\draw[->, black!55, thin] (0,-1.6) -- (0,1.7);
+\draw[black!40] (0,0) circle (1);
+\ifnum\j=0 \draw[->, very thick, blue!70!black] (0,0.07) -- (1,0.07); \draw[->, very thick, red!70!black] (1,-0.07) -- (2,-0.07); \fi
+\ifnum\j=2 \draw[->, very thick, blue!70!black] (0,0.07) -- (-1,0.07); \draw[->, very thick, red!70!black] (-1,-0.07) -- (-2,-0.07); \fi
+\ifnum\j=1 \draw[->, very thick, blue!70!black] (-0.07,0) -- (-0.07,1); \draw[->, very thick, red!70!black] (0.07,1) -- (0.07,0); \fi
+\ifnum\j=3 \draw[->, very thick, blue!70!black] (-0.07,0) -- (-0.07,-1); \draw[->, very thick, red!70!black] (0.07,-1) -- (0.07,0); \fi
+\fill[orange!85!black] (\sx,0) circle (2.6pt);
+\node[anchor=north] at (0,-1.75) {$j = \j$: \ $\textcolor{blue!70!black}{i^{\j}} + \textcolor{red!70!black}{(-i)^{\j}} = \textcolor{orange!85!black}{\lab}$};
+\end{scope}
+}
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Part (3) of Example~\ref{ex:z4-rotation-complexified}, value by value. For each $j$ the blue arrow is $\chi_1(j) = i^j$ and the red arrow, drawn from its tip, is $\chi_3(j) = (-i)^j$, the complex conjugate. Their sum (orange dot) is real: $2$, $0$, $-2$, $0$. This is the character of the rotation representation $R$.
+%% <<< END ADDED
+
+\begin{lembox}[{The Sum of the Powers of a Root of Unity}]\label{lem:sum-roots-of-unity}
+Let $\zeta$ be an $N$-th root of unity (Definition~\ref{def:root-of-unity}). Then
+\[ \sum_{j=0}^{N-1} \zeta^j = \begin{cases} N & \text{if } \zeta = 1, \\ 0 & \text{if } \zeta \neq 1. \end{cases} \]
+\srcline{not from class}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from class.)} If $\zeta = 1$, every term is $1$. In general
+\[ (\zeta - 1)\sum_{j=0}^{N-1} \zeta^j = \sum_{j=1}^{N} \zeta^j - \sum_{j=0}^{N-1} \zeta^j = \zeta^N - 1 = 0, \]
+so if $\zeta \neq 1$ the sum is $0$.
+\end{proof}
+
+\begin{exbox}[{The Rows of the Table of $\mathbb{Z}/N\mathbb{Z}$ Are Orthonormal: a Direct Check}]\label{ex:cyclic-rows-orthonormal}
+\textit{(Not from class.)} By WS 18.3 over $\mathbb{C}$ (Proposition~\ref{prop:rows-orthogonal}(2)), $\langle \chi_k, \chi_l \rangle$ is $1$ for $k = l$ and $0$ for $k \neq l$. For $\mathbb{Z}/N\mathbb{Z}$ this can be checked directly. The inverse of $j$ is $-j$, so
+\[ \langle \chi_k, \chi_l \rangle = \frac{1}{N}\sum_{j=0}^{N-1} \chi_k(-j)\,\chi_l(j) = \frac{1}{N}\sum_{j=0}^{N-1} e^{2\pi ij(l - k)/N} = \frac{1}{N}\sum_{j=0}^{N-1} \zeta^j, \qquad \zeta = e^{2\pi i(l - k)/N}. \]
+Here $\zeta$ is an $N$-th root of unity, and $\zeta = 1$ exactly when $N$ divides $l - k$, that is, when $k = l$, since $|l - k| < N$. By Lemma~\ref{lem:sum-roots-of-unity} the sum is $N$ for $k = l$ and $0$ for $k \neq l$. For $N = 5$, $k = 0$ and $l = 1$ this is $1 + \alpha + \alpha^2 + \alpha^3 + \alpha^4 = 0$: the entries of the row $\chi_1$ add up to zero, and so do the entries of every row except $\chi_0$.
+\srcline{not from class}
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+\begin{scope}
+\coordinate (P0) at (0,0);
+\foreach \j [count=\n from 1] in {0,...,4} { \coordinate (P\n) at ($(P\j)+({72*\j}:1.5)$); }
+\foreach \j/\c/\l/\pos in {0/blue!70!black/{$1$}/below, 1/red!70!black/{$\alpha$}/right, 2/orange!85!black/{$\alpha^2$}/above right, 3/black!65/{$\alpha^3$}/above left, 4/blue!45!black/{$\alpha^4$}/left} {
+  \pgfmathtruncatemacro{\n}{\j+1}
+  \draw[->, very thick, \c] (P\j) -- (P\n) node[midway, \pos=1pt] {\l}; }
+\fill (P0) circle (1.8pt) node[below left] {$0$};
+\node[anchor=north] at (0.75,-0.6) {$\zeta = \alpha$: \ $1 + \alpha + \alpha^2 + \alpha^3 + \alpha^4 = 0$};
+\end{scope}
+\begin{scope}[xshift=6.6cm, yshift=1.0cm]
+\coordinate (Q0) at (0,0);
+\foreach \j [count=\n from 1] in {0,...,4} { \coordinate (Q\n) at ($(Q\j)+({144*\j}:2.6)$); }
+\draw[->, very thick, blue!70!black] (Q0) -- (Q1) node[right] {$1$};
+\draw[->, very thick, red!70!black] (Q1) -- (Q2) node[above left=-1pt] {$\alpha^2$};
+\draw[->, very thick, orange!85!black] (Q2) -- (Q3) node[below] {$\alpha^4$};
+\draw[->, very thick, black!65] (Q3) -- (Q4) node[above right=-1pt] {$\alpha^6 = \alpha$};
+\draw[->, very thick, blue!45!black] (Q4) -- (Q5);
+\node[blue!45!black, anchor=east] at (-0.12,0.28) {$\alpha^8 = \alpha^3$};
+\fill (Q0) circle (1.8pt) node[below left] {$0$};
+\node[anchor=north] at (1.3,-1.6) {$\zeta = \alpha^2$: \ $1 + \alpha^2 + \alpha^4 + \alpha^6 + \alpha^8 = 0$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Lemma~\ref{lem:sum-roots-of-unity} for $N = 5$, with $\alpha = e^{2\pi i/5}$. The powers of $\zeta$ are drawn head to tail, starting at $0$. Each arrow has length $1$ and is turned against the previous one by the angle of $\zeta$ ($72^\circ$ on the left, $144^\circ$ on the right). After five steps the path closes, so the sum is $0$.
+%% <<< END ADDED
+
+\subsection{\texorpdfstring{Other Fields: $\mathbb{R}$ and Characteristic $p$}{Other Fields: R and Characteristic p}}\label{sub:cyclic-other-fields}
+
+Theorem~\ref{thm:cyclic-simple-complex} is a statement about $\mathbb{C}$. The board of 11/18 announced what happens for $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$ (Example~\ref{ex:z4-real-complex}(3)), and the lecture of 11/20 ended with an example in characteristic $p$.
+
+\begin{propbox}[{The Simple Real Representations of $\mathbb{Z}/4\mathbb{Z}$}]\label{prop:z4-real-simples}
+Every finite-dimensional simple (Definition~\ref{def:simple-representation}) real representation of $\mathbb{Z}/4\mathbb{Z}$ is isomorphic to exactly one of the following three:
+\begin{enumerate}
+    \item the trivial representation on $\mathbb{R}$ (Example~\ref{ex:trivial-representation});
+    \item $\mathbb{R}$ with $j$ acting by $(-1)^j$;
+    \item $R = \mathbb{R}^2$ with $j$ acting by $J^j$, $J = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$.
+\end{enumerate}
+\srcline{board 11/18 (announced: the three rows of Example~\ref{ex:z4-real-complex} are the only simple representations over $\mathbb{R}$); the proof is not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $g = \rho_V(1)$ satisfies $(g^2)^2 = \mathrm{id}$, so $V$ splits into the parts where $g^2 = 1$ and where $g^2 = -1$; a simple $V$ is one of the two.\par
+\textit{(Not from class.)} Let $V$ be a finite-dimensional simple real representation and $g = \rho_V(1): V \to V$, so $g^4 = \mathrm{id}_V$ and the subrepresentations of $V$ are the subspaces $U$ with $gU \subseteq U$ (Proposition~\ref{prop:cyclic-representation-matrix}, Lemma~\ref{lem:cyclic-subrepresentations-homomorphisms}(1)).
+
+\emph{Step 1: $g^2 = \mathrm{id}_V$ or $g^2 = -\mathrm{id}_V$.} Put $V_+ = \{v \in V : g^2v = v\}$ and $V_- = \{v \in V : g^2v = -v\}$. These are subspaces, and $g$ maps each of them into itself, because $g$ commutes with $g^2$: for $v \in V_\pm$, $g^2(gv) = g(g^2v) = \pm gv$. So both are subrepresentations. Every $v \in V$ is the sum
+\[ v = \tfrac12(v + g^2v) + \tfrac12(v - g^2v), \]
+where the first term lies in $V_+$ and the second in $V_-$, since $g^2(v \pm g^2v) = g^2v \pm g^4v = g^2v \pm v$. So $V = V_+ + V_-$. As $V$ is simple, $V_+$ is $\{0\}$ or $V$. If $V_+ = V$, then $g^2 = \mathrm{id}_V$. If $V_+ = \{0\}$, then $V = V_-$ and $g^2 = -\mathrm{id}_V$.
+
+\emph{Step 2: the case $g^2 = \mathrm{id}_V$.} The same argument with $g$ in place of $g^2$: the subspaces $\{v : gv = v\}$ and $\{v : gv = -v\}$ are subrepresentations, and every $v$ is $\frac12(v + gv) + \frac12(v - gv)$ with the first term in the first subspace and the second in the second. So $g = \mathrm{id}_V$ or $g = -\mathrm{id}_V$. In both cases every subspace of $V$ is mapped into itself by $g$, so every subspace is a subrepresentation. Choose $v \neq 0$ in $V$ (a simple representation is not $\{0\}$). The line $\mathbb{R}v$ is a nonzero subrepresentation, so $\mathbb{R}v = V$. The map $\mathbb{R} \to V$, $c \mapsto cv$, is linear and bijective, and it commutes with the action when $j$ acts on $\mathbb{R}$ by $1$ (if $g = \mathrm{id}_V$) or by $(-1)^j$ (if $g = -\mathrm{id}_V$). So $V$ is isomorphic to (1) or to (2).
+
+\emph{Step 3: the case $g^2 = -\mathrm{id}_V$.} Choose $v \neq 0$ in $V$ and let $U = \operatorname{span}(v, gv)$. Then $g(v) = gv \in U$ and $g(gv) = -v \in U$, so $gU \subseteq U$: $U$ is a nonzero subrepresentation, and $U = V$. The vectors $v$, $gv$ are linearly independent. Otherwise $gv = \lambda v$ for some $\lambda \in \mathbb{R}$, since $v \neq 0$; then $-v = g^2v = \lambda^2v$, so $\lambda^2 = -1$, which no real number satisfies. So $(v, gv)$ is a basis of $V$. The linear map
+\[ \beta: \mathbb{R}^2 \to V, \qquad \beta(x, y) = xv + y\,gv, \]
+is bijective, and it satisfies $\beta J = g\beta$: $\beta(J(x, y)) = \beta(-y, x) = -yv + x\,gv$ and $g\beta(x, y) = x\,gv + y\,g^2v = x\,gv - yv$. By Lemma~\ref{lem:cyclic-subrepresentations-homomorphisms}(2), $\beta$ is an isomorphism of representations $R \to V$. So $V$ is isomorphic to (3).
+
+\emph{Exactly one.} The three representations are simple: (1) and (2) are one-dimensional, and $R$ is simple by Problem 10.4(1) (Example~\ref{ex:z4-rotation-worked}(1)). Their characters are the three different rows $(1, 1, 1, 1)$, $(1, -1, 1, -1)$, $(2, 0, -2, 0)$ of Example~\ref{ex:z4-real-complex}, so no two of them are isomorphic (Lemma~\ref{lem:isomorphic-same-character}).
+\end{proof}
+
+\begin{rembox}[{$\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$ and over $\mathbb{C}$}]\label{rem:z4-real-versus-complex}
+$\mathbb{Z}/4\mathbb{Z}$ has four conjugacy classes. Over $\mathbb{C}$ it has four simple representations, $\mathbb{C}_0, \mathbb{C}_1, \mathbb{C}_2, \mathbb{C}_3$ (Theorem~\ref{thm:cyclic-simple-complex}); over $\mathbb{R}$ it has three (Proposition~\ref{prop:z4-real-simples}), so the inequality of WS 18.4(2) (Corollary~\ref{cor:simples-at-most-classes}) is strict over $\mathbb{R}$. The trivial representation and $(-1)^j$ are $\mathbb{C}_0$ and $\mathbb{C}_2$, whose characters are real. The characters $\chi_1$ and $\chi_3$ are not real, and they are complex conjugates of each other; neither $\mathbb{C}_1$ nor $\mathbb{C}_3$ is defined over $\mathbb{R}$, but their sum is, and it is the simple real representation $R$ (Example~\ref{ex:z4-rotation-complexified}). The weights in WS 18.3 (Proposition~\ref{prop:rows-orthogonal}(1)) record this: $\langle \chi_R, \chi_R \rangle = \dim\operatorname{Hom}_G(R, R) = 2 = 1^2 + 1^2$.
+\srcline{not from class}
+\end{rembox}
+
+\begin{rembox}[{In Characteristic $p$ a Matrix with $g^p = \mathrm{Id}$ Need Not Be Diagonalizable}]\label{rem:cyclic-characteristic-p}
+The lecture ended with $k = \mathbb{Z}/p\mathbb{Z}$ and $G = \mathbb{Z}/p\mathbb{Z}$, acting on $k^2$ by $j \mapsto \left(\begin{smallmatrix} 1 & j \\ 0 & 1 \end{smallmatrix}\right)$. Here $g = \left(\begin{smallmatrix} 1 & 1 \\ 0 & 1 \end{smallmatrix}\right)$ satisfies $g^p = \left(\begin{smallmatrix} 1 & p \\ 0 & 1 \end{smallmatrix}\right) = \mathrm{Id}$, because $p = 0$ in $k$; so this is a representation by Proposition~\ref{prop:cyclic-representation-matrix}(2). It is the representation of Problem 9.4(2) (Example~\ref{ex:maschke-fails-char-p}): the line $ke_1$ is a subrepresentation without a complementary subrepresentation. In the terms of this section, $g^p = \mathrm{Id}$ but $g$ is not diagonalizable over $k$: its only eigenvalue is $1$, its eigenvectors are the multiples of $e_1$, and a basis of eigenvectors would contain a second invariant line (Lemma~\ref{lem:cyclic-subrepresentations-homomorphisms}(1)). So Corollary~\ref{cor:finite-order-diagonalizable} does not hold over $\mathbb{Z}/p\mathbb{Z}$. The hypotheses that fail are $|G| \neq 0$ in $k$ in Maschke's theorem (Theorem~\ref{thm:maschke}) and $\mathbb{Q} \subseteq k$ in Corollary~\ref{cor:simples-at-most-classes}. The polynomial shows the difference: over $\mathbb{C}$, $x^N - 1$ has $N$ distinct roots, while over $\mathbb{Z}/p\mathbb{Z}$, $x^p - 1 = (x - 1)^p$ has the single root $1$.
+\srcline{lecture 11/20; the board page ends in the middle of this example, and the comparison with $\mathbb{C}$ is not from class}
+\end{rembox}
 
 
 \appendix
@@ -12758,6 +13137,7 @@ Example~\ref{ex:z4-rotation-worked} fits the results of \ref{sec:schur-multiplic
     \item \textbf{To find the character of a dual representation.} $V^\vee = \operatorname{Hom}(V, k)$ with $(g \ast f)(v) = f(g^{-1}v)$. In a basis and its dual basis, $g$ acts on $V^\vee$ by the inverse transpose of its matrix on $V$ (the transpose alone would give a right action), so $\chi_{V^\vee}(g) = \chi_V(g^{-1})$ (Proposition~\ref{prop:character-dual}); for a finite group this is $\chi_V(g)$ over $\mathbb{R}$ and $\overline{\chi_V(g)}$ over $\mathbb{C}$ (Corollary~\ref{cor:character-dual-real-complex}). Hence $\chi_{\operatorname{Hom}(V, W)} = \chi_{V^\vee}\chi_W$.
     \item \textbf{To count homomorphisms between direct sums of simple representations ($G$ finite, $\mathbb{Q} \subseteq k$).} $\dim\operatorname{Hom}_G$ is additive in each variable (Proposition~\ref{prop:dim-hom-additive}), and between non-isomorphic simple representations the only homomorphism is $0$ (Schur's Lemma, Proposition~\ref{prop:schur-lemma}, Corollary~\ref{cor:hom-nonisomorphic-simples}). So for pairwise non-isomorphic simple $S_i$, the dimension of $\operatorname{Hom}_G$ from $\bigoplus_i S_i^{\oplus a_i}$ to $\bigoplus_i S_i^{\oplus b_i}$ is $\sum_i a_ib_i\dim\operatorname{Hom}_G(S_i, S_i)$ (Proposition~\ref{prop:dim-hom-sums-of-simples}); over $\mathbb{C}$ every weight is $1$ and the dimension is $\sum_i a_ib_i$ (Proposition~\ref{prop:schur-complex}, Corollary~\ref{cor:multiplicities-complex}).
     \item \textbf{To find or check the simple representations of $G$ ($G$ finite, $\mathbb{Q} \subseteq k$).} There are at most as many as conjugacy classes (Corollary~\ref{cor:simples-at-most-classes}). The rows of the character table are orthogonal for the pairing $\langle \alpha, \beta \rangle = \frac{1}{|G|}\sum_i |\operatorname{Conj}(g_i)|\,\alpha(g_i^{-1})\beta(g_i)$, and $\langle \chi_S, \chi_S \rangle = \dim\operatorname{Hom}_G(S, S)$, which is $1$ over $\mathbb{C}$ (Proposition~\ref{prop:rows-orthogonal}). The multiplicity of a simple representation $S$ in $V$ is $\langle \chi_V, \chi_S \rangle / \langle \chi_S, \chi_S \rangle$ (Proposition~\ref{prop:dim-hom-sums-of-simples} and Corollary~\ref{cor:dim-hom-pairing}; for $S_3$, Example~\ref{ex:s3-all-simple}).
+    \item \textbf{To describe a representation of $\mathbb{Z}/N\mathbb{Z}$.} It is one matrix $g$ with $g^N = \mathrm{Id}$, with $j$ acting by $g^j$; the subrepresentations are the subspaces $U$ with $gU \subseteq U$, and the homomorphisms are the matrices $\alpha$ with $\alpha g = h\alpha$ (Proposition~\ref{prop:cyclic-representation-matrix}, Lemma~\ref{lem:cyclic-subrepresentations-homomorphisms}). Over $\mathbb{C}$, diagonalize $g$: the eigenvalues are $N$-th roots of unity, and the multiplicity $a_k$ of the simple representation on which $j$ acts by $e^{2\pi ijk/N}$ is the number of times $e^{2\pi ik/N}$ occurs on the diagonal, also $a_k = \frac{1}{N}\sum_j \chi_V(j)e^{-2\pi ijk/N}$ (Corollary~\ref{cor:finite-order-diagonalizable}, Proposition~\ref{prop:cyclic-multiplicities}).
     \item \textbf{To show a representation is simple.} Rule out subrepresentations other than $\{0\}$ and $V$; in dimension $2$ these are invariant lines, i.e.\ common eigenvectors of all $\rho(g)$ (a rotation by $120^\circ$ has no real eigenvector; Example~\ref{ex:s3-r3-simples}). Under Maschke's hypotheses, simple is the same as irreducible (not a direct sum of two nonzero subrepresentations; Proposition~\ref{prop:simple-iff-irreducible}), and every representation is a direct sum of simple ones (Corollary~\ref{cor:direct-sum-of-simples}). With characters ($G$ finite, $\mathbb{Q} \subseteq k$): compute $\dim\operatorname{Hom}_G(V, V) = \frac{1}{|G|}\sum_g \chi_V(g^{-1})\chi_V(g)$; if it is $1$, then $V$ is simple (Lemma~\ref{lem:simplicity-test}), and over $\mathbb{C}$ the converse holds (Corollary~\ref{cor:simple-iff-hom-one-complex}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
@@ -12811,6 +13191,7 @@ Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the r
     \item $\dim\operatorname{Hom}_G(S, S) = 1$ for a simple representation $S$ is Schur's Lemma over $\mathbb{C}$; its proof uses an eigenvalue (Proposition~\ref{prop:schur-complex}). Over $\mathbb{R}$ or a general field, keep the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ in the multiplicity formula (the remark \emph{Over Other Fields the Weights Stay} in \ref{sec:schur-multiplicities}): for the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$, which is simple over $\mathbb{R}$, the number is $2$ (Examples~\ref{ex:z4-real-complex} and~\ref{ex:z4-rotation-worked}). The parts of Schur's Lemma about injective, surjective and zero maps hold over every field (Proposition~\ref{prop:schur-lemma}).
     \item $V \oplus V$ and $V^{\oplus a}$ are external direct sums (tuples). They are not internal direct sums, since $V \cap V = V$ (Definition~\ref{def:repeated-direct-sum}).
     \item The rows of a character table are orthogonal for the pairing with the class sizes as weights and with $\chi(g_i^{-1})$ in the first factor, not for the plain dot product of the listed entries: for $S_3$ the rows $(1, 1, 1)$ and $(2, 0, -1)$ have plain dot product $1$, and pairing $\frac16(1 \cdot 2 + 3 \cdot 0 + 2 \cdot (-1)) = 0$ (Proposition~\ref{prop:rows-orthogonal}).
+    \item Maschke's theorem needs $|G| \neq 0$ in $k$, and ``$g^N = \mathrm{Id}$ implies diagonalizable'' needs the field $\mathbb{C}$. Over $\mathbb{Z}/p\mathbb{Z}$, $j \mapsto \left(\begin{smallmatrix} 1 & j \\ 0 & 1 \end{smallmatrix}\right)$ is a representation of $\mathbb{Z}/p\mathbb{Z}$ whose invariant line $ke_1$ has no invariant complement (Example~\ref{ex:maschke-fails-char-p}). Over $\mathbb{R}$, the rotation $J$ by $90^\circ$ has $J^4 = I$ and no real eigenvector (Example~\ref{ex:z4-rotation-worked}); it becomes diagonalizable over $\mathbb{C}$ (Example~\ref{ex:z4-rotation-complexified}).
 \end{enumerate}
 
 \chapter{Course Chronology}\label{ch:chronology}
@@ -12859,12 +13240,13 @@ Fri Nov 6 \newline lecture & WS 14.7--14.8 (the averaged inner product); finite 
 Wed Nov 4 \newline office hours & $GL_n(\mathbb{F}_p)$ acting on complete flags $G/B$; orbits of the unitriangular group of sizes $p^{\ell(w)}$ for $n = 2, 3$ & \ref{sub:flags-sylow-gln} \\
 Thu Nov 5 \newline Problem Set 8 (submitted) & The product formula $|AB| = |A|\,|B|/|A \cap B|$; subgroups of index $2$ are normal; groups of order $pq$ as semidirect products $\mathbb{Z}/q\mathbb{Z} \rtimes \mathbb{Z}/p\mathbb{Z}$, classified by the solutions of $a^p \equiv 1 \bmod q$; simple groups of order $60$ through the action on $A_6/G$; the trace, $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ & \ref{sub:product-formula} (8.1), \ref{sec:normal-sources} (8.2), \ref{sub:order-pq}, \ref{sec:order-pq-semidirect} (8.3), \ref{sub:order-60} (8.4), \ref{sec:invariants} (8.5) \\
 Mon Nov 9 \newline lecture; Worksheet 15 & Idempotents and their trace; invariant vectors and the averaging operator; $V = V^G \oplus \operatorname{Ker}\pi$; $\dim V^G$ as the average trace; characters, constant on conjugacy classes and additive over direct sums; the start of the character table of $S_3$ & \ref{sec:maschke}, \ref{sec:invariants}, \ref{sec:characters-of-representations} \\
-Wed Nov 11 \newline lecture; Worksheet 16 & Two more descriptions of the trace; the representation $\operatorname{Hom}(V, W)$ and $\operatorname{Hom}_G(V, W)$; the trace of $X \mapsto RXS$; $\dim\operatorname{Hom}_G(V, W)$ from characters & \ref{sec:hom-representation} (16.1--16.2; 16.3--16.5 not done in class, the complex case done in PS 10.1) \\
+Wed Nov 11 \newline lecture; Worksheet 16 & Two more descriptions of the trace; the representation $\operatorname{Hom}(V, W)$ and $\operatorname{Hom}_G(V, W)$; the trace of $X \mapsto RXS$; $\dim\operatorname{Hom}_G(V, W)$ from characters & \ref{sec:hom-representation} (16.1--16.2; 16.3--16.5 not done in class, the complex case done in PS 10.1 and in the lecture of Fri Nov 20) \\
 Thu Nov 12 \newline Problem Set 9 (submitted) & Extensions of solvable groups; idempotents split $V = \operatorname{Ker} \oplus \operatorname{Im}$; the proof of Maschke's theorem; counterexamples for $\mathbb{Z}$ and for $\mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$; affine maps as semidirect products & \ref{sec:solvable} (9.1), \ref{sec:maschke} (9.2--9.4), \ref{sec:affine-maps} (9.5) \\
 Fri Nov 13 \newline lecture & Dual spaces, dual bases and dual maps; the transpose matrix; the dual representation (inverse transpose) and $\chi_{V^\vee}(g) = \chi_V(g^{-1})$; a word on tensor products & \ref{sec:dual-representations} \\
 Mon Nov 16 \newline lecture; Worksheet 17 & External direct sums $V^{\oplus a}$; kernels and images of homomorphisms of representations; $\dim\operatorname{Hom}_G$ is additive in direct sums; Schur's Lemma, and Schur's Lemma over $\mathbb{C}$; multiplicities; orthogonality of the rows of the character table of $S_3$; a simplicity test & \ref{sec:representations} (13.6), \ref{sec:schur-multiplicities} (17.1--17.5) \\
 Wed Nov 18 \newline lecture; Worksheet 18 & The character table: one column per conjugacy class, one row per simple representation; class functions and their pairing; the rows are orthogonal and linearly independent; at most as many simple representations as conjugacy classes; $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$ and over $\mathbb{C}$ & \ref{sec:character-table} (18.1--18.4) \\
 Thu Nov 19 \newline Problem Set 10 (submitted) & Elements of a finite group act diagonalizably over $\mathbb{C}$, and $\chi_V(g^{-1}) = \overline{\chi_V(g)}$; annihilators, $V$ simple iff $V^\vee$ simple; $\operatorname{Hom}(V, W)$ as a representation of $G \times H$, simple over $\mathbb{C}$; the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ & \ref{sec:hom-representation} (10.1), \ref{sec:dual-representations} (10.2), \ref{sec:schur-multiplicities} (10.3), \ref{sec:character-table} (10.4) \\
+Fri Nov 20 \newline lecture & Representations of $\mathbb{Z}/N\mathbb{Z}$ as matrices with $g^N = \mathrm{Id}$; roots of unity, the $N$ one-dimensional complex representations and the character tables for $N = 5$ and $N = 4$; these are all the simple complex representations, so a complex matrix with $g^N = \mathrm{Id}$ is diagonalizable; $\operatorname{Tr}(g^{-1}) = \overline{\operatorname{Tr}(g)}$ (WS 16.4--16.5); rotation by $90^\circ$ over $\mathbb{C}$; a representation of $\mathbb{Z}/p\mathbb{Z}$ in characteristic $p$ & \ref{sec:cyclic-representations}; \ref{sec:hom-representation} (16.4--16.5) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 
@@ -13482,6 +13864,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em $n$ divides $m$\dotfill \pageref{def:divisibility}\par
 \noindent\hangindent=1em normal subgroup\dotfill \pageref{def:normal-subgroup}\par
 \noindent\hangindent=1em normalizer\dotfill \pageref{def:normalizer}\par
+\noindent\hangindent=1em $N$-th root of unity\dotfill \pageref{def:root-of-unity}\par
 \noindent\hangindent=1em odd\dotfill \pageref{def:sign-even-odd-permutations}\par
 \noindent\hangindent=1em orbit\dotfill \pageref{def:orbit-orbit-space}\par
 \noindent\hangindent=1em orbit space\dotfill \pageref{def:orbit-space}, \pageref{def:orbit-space-notation}\par
@@ -13560,12 +13943,14 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em $3$-Cycles Are Commutators in $A_n$\dotfill \pageref{lem:3-cycles-commutators-an}\par
 \noindent\hangindent=1em $3$-Cycles Are Conjugate in $A_n$ for $n \geq 5$\dotfill \pageref{lem:3-cycles-conjugate-an-n-ge-5}\par
 \noindent\hangindent=1em A Common Eigenvector Yields a Character\dotfill \pageref{thm:common-eigenvector-yields-character}\par
+\noindent\hangindent=1em A Complex Matrix with $g^N = \mathrm{Id}$ Is Diagonalizable\dotfill \pageref{cor:finite-order-diagonalizable}\par
 \noindent\hangindent=1em A Group of Order $4$ in Which Every Element Squares to $e$ Is Not Cyclic\dotfill \pageref{lem:order-4-squares-to-e-not-cyclic}\par
 \noindent\hangindent=1em A Left Action Gives a Right Action\dotfill \pageref{prop:left-action-gives-right-action}\par
 \noindent\hangindent=1em A Natural Bijection $G/H \to H\backslash G$\dotfill \pageref{prop:natural-bijection-g-h-to-h-g}\par
 \noindent\hangindent=1em A Normal Image in a Simple Group\dotfill \pageref{cor:normal-image-simple-group}\par
 \noindent\hangindent=1em A Normal Subgroup Inside a Subgroup of Finite Index\dotfill \pageref{thm:normal-subgroup-inside-subgroup-finite-index}\par
 \noindent\hangindent=1em A Normal Sylow Subgroup Is the Only One\dotfill \pageref{cor:sylow-normal-unique}\par
+\noindent\hangindent=1em A Representation of $\mathbb{Z}/N\mathbb{Z}$ Is a Matrix $g$ with $g^N = \mathrm{Id}$\dotfill \pageref{prop:cyclic-representation-matrix}\par
 \noindent\hangindent=1em A Simplicity Test\dotfill \pageref{lem:simplicity-test}\par
 \noindent\hangindent=1em A Subrepresentation Gives Block Triangular Matrices\dotfill \pageref{prop:subrepresentation-block-triangular}\par
 \noindent\hangindent=1em A Subset That Is a Group Is a Subgroup\dotfill \pageref{prop:subset-group-subgroup}\par
@@ -13660,6 +14045,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Equivalent Subgroup Criteria\dotfill \pageref{prop:equivalent-subgroup-criteria}\par
 \noindent\hangindent=1em Euclid's Lemma\dotfill \pageref{lem:euclids-lemma}\par
 \noindent\hangindent=1em Euler's Totient Formula\dotfill \pageref{cor:eulers-totient-formula}\par
+\noindent\hangindent=1em Every Complex Representation of $\mathbb{Z}/N\mathbb{Z}$ Is a Direct Sum of One-Dimensional Representations\dotfill \pageref{cor:cyclic-direct-sum-lines}\par
 \noindent\hangindent=1em Every Element of a Finite Group Has Finite Order\dotfill \pageref{prop:every-element-finite-group-has-finite-order}\par
 \noindent\hangindent=1em Every Finite Group Is a Matrix Group\dotfill \pageref{cor:every-finite-group-matrix-group}\par
 \noindent\hangindent=1em Every Normal Subgroup Is a Kernel\dotfill \pageref{prop:every-normal-subgroup-kernel}\par
@@ -13832,6 +14218,7 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Subgroups of Solvable Groups Are Solvable\dotfill \pageref{prop:subgroups-solvable}\par
 \noindent\hangindent=1em Subgroups of $\mathbb{Z}$\dotfill \pageref{prop:subgroups-z}\par
 \noindent\hangindent=1em Subquotients: An Injection and a Surjection\dotfill \pageref{prop:subquotient-maps}\par
+\noindent\hangindent=1em Subrepresentations and Homomorphisms for $\mathbb{Z}/N\mathbb{Z}$\dotfill \pageref{lem:cyclic-subrepresentations-homomorphisms}\par
 \noindent\hangindent=1em Sums of Class Functions over $G$\dotfill \pageref{lem:class-function-sums}\par
 \noindent\hangindent=1em Surjectivity and Injectivity via Image and Kernel\dotfill \pageref{prop:surjectivity-injectivity-via-image-kernel}\par
 \noindent\hangindent=1em Sylow $p$-Subgroups of $GL_n(\mathbb{F}_p)$ and Flags\dotfill \pageref{prop:sylow-gln-flags}\par
@@ -13869,8 +14256,11 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Index Is Multiplicative\dotfill \pageref{prop:index-multiplicative}\par
 \noindent\hangindent=1em The Inverse of an Isomorphism Is an Isomorphism\dotfill \pageref{prop:inverse-isomorphism-isomorphism}\par
 \noindent\hangindent=1em The Lower Right Block Is the Quotient Representation\dotfill \pageref{prop:lower-right-block-quotient-representation}\par
+\noindent\hangindent=1em The Multiplicities $a_k$ from the Character\dotfill \pageref{prop:cyclic-multiplicities}\par
 \noindent\hangindent=1em The Normal Core\dotfill \pageref{prop:normal-core}\par
+\noindent\hangindent=1em The $N$-th Roots of Unity\dotfill \pageref{lem:roots-of-unity}\par
 \noindent\hangindent=1em The Number of Sylow Subgroups Divides $|G|$\dotfill \pageref{cor:sylow-number-divides}\par
+\noindent\hangindent=1em The One-Dimensional Complex Representations of $\mathbb{Z}/N\mathbb{Z}$\dotfill \pageref{prop:cyclic-one-dimensional}\par
 \noindent\hangindent=1em The Orbit Bijection\dotfill \pageref{prop:orbit-bijection}\par
 \noindent\hangindent=1em The Orbit Relation\dotfill \pageref{prop:orbit-relation}\par
 \noindent\hangindent=1em The Order of a Power\dotfill \pageref{prop:order-power}\par
@@ -13890,9 +14280,12 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em The Second Sylow Theorem\dotfill \pageref{thm:sylow-second}\par
 \noindent\hangindent=1em The Sign Is a Homomorphism\dotfill \pageref{thm:sign-homomorphism}\par
 \noindent\hangindent=1em The Sign of Left Multiplication\dotfill \pageref{lem:sign-left-multiplication}\par
+\noindent\hangindent=1em The Simple Complex Representations of $\mathbb{Z}/N\mathbb{Z}$\dotfill \pageref{thm:cyclic-simple-complex}\par
 \noindent\hangindent=1em The Simple Groups of Order at Most $100$\dotfill \pageref{cor:simple-le-100-a5}\par
+\noindent\hangindent=1em The Simple Real Representations of $\mathbb{Z}/4\mathbb{Z}$\dotfill \pageref{prop:z4-real-simples}\par
 \noindent\hangindent=1em The Stabilizer Is a Subgroup\dotfill \pageref{prop:stabilizer-subgroup}\par
 \noindent\hangindent=1em The Subgroup of Index $2$ in $S_m$\dotfill \pageref{lem:index-two-sm}\par
+\noindent\hangindent=1em The Sum of the Powers of a Root of Unity\dotfill \pageref{lem:sum-roots-of-unity}\par
 \noindent\hangindent=1em The Sylow Test\dotfill \pageref{cor:sylow-test-simplicity}\par
 \noindent\hangindent=1em The Third Sylow Theorem\dotfill \pageref{thm:sylow-third}\par
 \noindent\hangindent=1em The Top-Down Characterization of $\langle g_1, \ldots, g_k \rangle$\dotfill \pageref{prop:top-down-characterization-gen-g1-gk}\par

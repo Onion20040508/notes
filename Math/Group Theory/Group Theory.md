@@ -11,7 +11,7 @@ tags: [subject, group-theory]
 ---
 # Group Theory
 
-MATH 493, *Honors Algebra I* (Fall 2026, David Speyer), taught about two-thirds inquiry-based: worksheets on Mondays and Wednesdays, a catch-up lecture and a quiz on Fridays. Classical group theory up to fall break, the representation theory of finite groups after it. Reference text: Pinter, *A Book of Abstract Algebra*. Section numbers §1–§71 are the notes' own; the notes are in logical order, and [[Group Theory Course Log]] records the order in which things were taught. Provenance tags on items: *WS k.m* = worksheet problem, *PS k.m* = problem set, *lecture*; items marked *not from class*, *cf. Pinter* or *cf. MATH 412* are supplementary. LaTeX source (still being extended during the term): `tex/math493_algebra_notes.tex`. **Pace (from Oct 5):** about one IBL worksheet per week; the switch to representation theory may come around fall break but is no longer a fixed deadline. Next topic: the Sylow theorems. **Schedule (from Oct 14):** Sylow II and III on Fri Oct 16, then fall break. No problem set over the break or in the week after it, because of the midterm; the topic list for the exam is on Canvas. After the break: representation theory or more finite group theory (undecided as of Oct 14).
+MATH 493, *Honors Algebra I* (Fall 2026, David Speyer), taught about two-thirds inquiry-based: worksheets on Mondays and Wednesdays, a catch-up lecture and a quiz on Fridays. Classical group theory up to fall break, the representation theory of finite groups after it. Reference text: Pinter, *A Book of Abstract Algebra*. Section numbers §1–§72 are the notes' own; the notes are in logical order, and [[Group Theory Course Log]] records the order in which things were taught. Provenance tags on items: *WS k.m* = worksheet problem, *PS k.m* = problem set, *lecture*; items marked *not from class*, *cf. Pinter* or *cf. MATH 412* are supplementary. LaTeX source (still being extended during the term): `tex/math493_algebra_notes.tex`. **Pace (from Oct 5):** about one IBL worksheet per week; the switch to representation theory may come around fall break but is no longer a fixed deadline. Next topic: the Sylow theorems. **Schedule (from Oct 14):** Sylow II and III on Fri Oct 16, then fall break. No problem set over the break or in the week after it, because of the midterm; the topic list for the exam is on Canvas. After the break: representation theory or more finite group theory (undecided as of Oct 14).
 
 ## Roadmap
 These notes follow the course, and the course studies groups through two families of examples and one organizing idea. Along the *numbers* thread live $\mathbb{Z}$, $\mathbb{Z}/n\mathbb{Z}$ and the unit groups $U_n$: abelian, mostly cyclic, and governed by the [[Division Algorithm|division algorithm]]. Along the *symmetries* thread live $S_n$ and $GL_n(k)$: non-abelian, and computed with cycles and matrices. Chapters 1–3 set up both families; Chapters 4–5 compare them through *homomorphisms*, which [[Classification of Cyclic Groups|classify the cyclic groups]] and produce [[The Sign Homomorphism|the sign]] and the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|permutation matrices]]. The organizing idea is the *group action* (Chapter 6): an action of $G$ on a set is the same thing as a homomorphism $G \to S_X$ ([[Actions Are Homomorphisms to S_X|§25.3]]). Cosets are the orbits of a subgroup acting by multiplication, which gives [[Lagrange's Theorem]]; conjugation is $G$ acting on itself, which gives conjugacy classes, the [[Class Equation|class equation]] and the [[§35 The Center#^def-35-2|center]] (Chapter 7); and the subgroups whose cosets can be multiplied are the normal ones, which gives [[Quotient Groups|quotient groups]] and the [[First Isomorphism Theorem for Groups|First Isomorphism Theorem]] (Chapter 8). The two threads meet again in the [[§46 Characters#^def-46-1|characters]] of Chapter 9: homomorphisms to abelian groups, of which the sign is the first example.
@@ -71,7 +71,7 @@ graph TD
   X1 -.->|5| C7
   X1 -.->|2| C9
   X1 -.->|8| C11
-  X1 -.->|11| C12
+  X1 -.->|15| C12
   X2 -.->|10| C1
   X2 -.->|5| C2
   X2 -.->|2| C4
@@ -92,7 +92,7 @@ graph TD
 - [[· 12 Characters]]
 
 ## Planned topics (syllabus)
-First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems ✓ (§54–§55); solvable groups ✓ (§48–§49); composition series and the Jordan–Hölder theorem ✓ (§50–§52); simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups ✓ (orders ≤ 100, §56; orders 30, 56, 90 and 60 on Problem Sets 7 and 8); solvable and nilpotent groups; direct and semidirect products ✓ (§57–§60); central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups (begun: §61–§71; Maschke's theorem ✓, Schur's Lemma ✓, characters and the character table begun).
+First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems ✓ (§54–§55); solvable groups ✓ (§48–§49); composition series and the Jordan–Hölder theorem ✓ (§50–§52); simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups ✓ (orders ≤ 100, §56; orders 30, 56, 90 and 60 on Problem Sets 7 and 8); solvable and nilpotent groups; direct and semidirect products ✓ (§57–§60); central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups (begun: §61–§72; Maschke's theorem ✓, Schur's Lemma ✓, characters and the character table begun; the character tables of the cyclic groups ✓).
 
 ## Central results
 - [[Cancellation Laws in Groups]] (§2.1)
@@ -164,8 +164,8 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§37 Determinants#^ladr-9-57|Theorem 9.57: Helpful results in evaluating determinants]] (3)
 - [[§9 Matrices#^ladr-3-43|Theorem 3.43: Matrix of product of linear maps]] (2)
 - [[Gram–Schmidt procedure]] (2)
-- [[§5 Bases#^ladr-2-32|Theorem 2.32: Every linearly independent list extends to a basis]] (2)
-- [[§12 Duality#^ladr-3-111|Theorem 3.111: Dim V′ = dim V]] (2)
+- [[§15 The Minimal Polynomial#^ladr-5-27|Theorem 5.27: Eigenvalues are the zeros of the minimal polynomial]] (2)
+- [[§15 The Minimal Polynomial#^ladr-5-29|Theorem 5.29: q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]] (2)
 
 **[[Single Variable Analysis]]**
 - [[§1 The Set ℕ of Natural Numbers#^thm-1-1|Theorem §1.1: Principle of Mathematical Induction]] (10)

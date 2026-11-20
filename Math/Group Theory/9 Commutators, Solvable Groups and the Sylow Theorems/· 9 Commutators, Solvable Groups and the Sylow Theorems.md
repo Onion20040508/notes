@@ -45,7 +45,7 @@ The last part of the chapter turns to the Sylow theorems. [[§29 The Index and L
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§46 Characters#^thm-46-3|Theorem §46.3: A Common Eigenvector Yields a Character]]: 26 later results
+- [[§46 Characters#^thm-46-3|Theorem §46.3: A Common Eigenvector Yields a Character]]: 36 later results
 - [[§55 The Sylow Theorems#^prop-55-3|Proposition §55.3: Sylow Subgroups of a Subgroup]]: 19 later results
 - [[Second Sylow Theorem|Theorem §55.6: The Second Sylow Theorem]]: 17 later results
 - [[§54 p-Groups and Sylow Subgroups#^lem-54-2|Lemma §54.2: Invertible Matrices Have Independent Columns]]: 16 later results
