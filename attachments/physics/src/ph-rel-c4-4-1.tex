@@ -1,0 +1,33 @@
+% Figure for Relativity §C4.4, Theorem §C4.4.3: the Killing charge on two spacelike slices.
+% Time up, one space dimension across. World tube of matter (where T ≠ 0) shaded orange; region D between Σ1 and Σ2 light blue;
+% future unit normals N (blue arrows); outward direction of ∂D marked on each face; J = 0 on the side walls.
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small]
+  % region D between the slices
+  \fill[figB!8] plot[smooth, domain=-3.2:3.2] (\x, {0.35*sin(50*\x) + 0.15*\x}) -- plot[smooth, domain=3.2:-3.2] (\x, {3.0 + 0.3*cos(60*\x) - 0.1*\x}) -- cycle;
+  % world tube of matter
+  \fill[figO!35] plot[smooth] coordinates {(-1.15,-0.9) (-0.95,0.5) (-0.55,1.8) (-0.35,3.0) (-0.2,3.9)} -- plot[smooth] coordinates {(0.85,3.9) (0.75,3.0) (0.85,1.8) (1.05,0.5) (1.05,-0.9)} -- cycle;
+  \draw[figO!80!black] plot[smooth] coordinates {(-1.15,-0.9) (-0.95,0.5) (-0.55,1.8) (-0.35,3.0) (-0.2,3.9)};
+  \draw[figO!80!black] plot[smooth] coordinates {(1.05,-0.9) (1.05,0.5) (0.85,1.8) (0.75,3.0) (0.85,3.9)};
+  % current lines inside the tube
+  \foreach \s in {-0.6,0,0.6} \draw[figO!70!black, ->, thin] ({0.05+\s*0.9}, -0.6) .. controls ({0.05+\s*0.8}, 1.2) .. ({0.25+\s*0.5}, 3.6);
+  \node[figO!70!black, font=\scriptsize, align=left, anchor=west] at (1.25,-0.75) {world tube of matter\\ ($T^{\mu\nu} \neq 0$), current $J^\mu$};
+  % the two slices
+  \draw[figB, thick] plot[smooth, domain=-3.2:3.2] (\x, {0.35*sin(50*\x) + 0.15*\x});
+  \draw[figB, thick] plot[smooth, domain=-3.2:3.2] (\x, {3.0 + 0.3*cos(60*\x) - 0.1*\x});
+  \node[figB, right] at (3.2, {0.35*sin(160) + 0.48}) {$\Sigma_1$};
+  \node[figB, right] at (3.2, {3.0 + 0.3*cos(192) - 0.32}) {$\Sigma_2$};
+  % side walls (J = 0 there)
+  \draw[black!45, dashed] (-2.6, {0.35*sin(-130) - 0.39}) -- (-2.6, {3.0 + 0.3*cos(-156) + 0.26});
+  \draw[black!45, dashed] (2.6, {0.35*sin(130) + 0.39}) -- (2.6, {3.0 + 0.3*cos(156) - 0.26});
+  \node[black!60, font=\scriptsize, align=center] at (-2.05,1.55) {side walls:\\ $J = 0$};
+  \node[figB!80!black] at (1.9,1.55) {$D$};
+  % unit normals N (future-pointing) and outward directions
+  \draw[figB, ->, thick] (1.9, {3.0 + 0.3*cos(114) - 0.19}) -- ++(0.12,0.75) node[above, font=\scriptsize] {$N$};
+  \node[font=\scriptsize, figB!80!black, align=left, anchor=west] at (-3.6,4.05) {on $\Sigma_2$ outward $=$ future:\ $n_\mu = -N_\mu$};
+  \draw[figB, ->, thick] (-1.9, {0.35*sin(-95) - 0.285}) -- ++(-0.06,0.75) node[right, font=\scriptsize] {$N$};
+  \node[font=\scriptsize, figB!80!black, align=left, anchor=west] at (-3.6,-1.45) {on $\Sigma_1$ outward $=$ past:\ $n_\mu = +N_\mu$};
+  % time arrow
+  \draw[black!55, ->] (4.2,-0.8) -- (4.2,0.8) node[midway, left, font=\scriptsize] {time};
+  % result
+  \node[font=\scriptsize, align=center] at (6.4,2.4) {$\displaystyle 0 = \int_D \nabla_\mu J^\mu\sqrt{-g}\,d^4x$\\[1.5mm] $= -E_K[\Sigma_2] + E_K[\Sigma_1]$};
+\end{tikzpicture}
