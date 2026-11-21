@@ -6,10 +6,10 @@ chapter: C3
 tags: [chapter, relativity]
 ---
 # C3 Metric, Connection and Curvature
-← [[· C2 Manifolds and Tensor Fields]] · ↑ [[Relativity]]
+← [[· C2 Manifolds and Tensor Fields]] · ↑ [[Relativity]] · [[· C4 Matter in Curved Spacetime]] →
 
-**Builds on:** [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (12), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (4), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (54), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (176)
-**Used by:** [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (6), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (7)
+**Builds on:** [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (12), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (4), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (54), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (176), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (3)
+**Used by:** [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (1), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (2), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (2), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (6), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (7), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (198)
 
 ★ *Self-study: general relativity beyond any course taken (spine: Couzens' Oxford GR notes; textbooks d'Inverno & Vickers, Hartle, Schutz).*
 

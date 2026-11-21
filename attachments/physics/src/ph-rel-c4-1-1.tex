@@ -1,0 +1,34 @@
+% Figure for Relativity §C4.1, Example §C4.1.2: length scales on a log10 axis (metres). Values from tools/verify_c4_1.py:
+% curvature length inside the Earth R^{-1/2} = 9.86e10 m (R = 8 pi G rho/c^2, rho = 5513 kg/m^3); tidal length at the surface 1.71e11 m;
+% AU 1.496e11 m; Earth radius 6.371e6 m; laboratory 1 m; optical wavelength 5e-7 m; electron reduced Compton wavelength 3.8616e-13 m.
+\begin{tikzpicture}[font=\small, x=0.52cm, y=1cm]
+  % axis from 10^-14 to 10^13
+  \draw[-{Stealth[length=2mm]}, black!70] (-14,0) -- (13.3,0) node[right] {\scriptsize length (m)};
+  \foreach \e in {-12,-9,-6,-3,0,3,6,9,12} {
+    \draw[black!70] (\e,-0.08) -- (\e,0.08);
+    \node[below, font=\scriptsize, black!70] at (\e,-0.1) {$10^{\e}$};
+  }
+  \foreach \e in {-14,...,12} \draw[black!35] (\e,-0.04) -- (\e,0.04);
+  % curvature scales (above, red)
+  \fill[figR] (10.994,0) circle (2.4pt);           % log10(9.86e10) = 10.994
+  \draw[figR, thin] (10.994,0) -- (10.994,1.55);
+  \node[figR, font=\scriptsize, anchor=south east, align=right] at (11.10,1.55) {$R^{-1/2}$ inside the Earth\\$9.86\times10^{10}$ m};
+  \fill[figR] (11.233,0) circle (2.4pt);           % log10(1.71e11) = 11.233
+  \draw[figR, thin] (11.233,0) -- (11.233,0.75);
+  \node[figR, font=\scriptsize, anchor=south west, align=left] at (11.10,0.80) {tidal length\\$1.71\times10^{11}$ m};
+  \fill[black] (11.175,0) circle (1.6pt);          % AU: log10(1.496e11) = 11.175
+  \node[font=\scriptsize, anchor=north] at (11.175,-0.5) {1 AU};
+  % local scales (below, blue)
+  \foreach \x/\lab/\yy in {6.804/{Earth radius}/-1.05, 0/{laboratory, 1 m}/-1.05, -6.301/{light, 500 nm}/-1.05, -12.413/{electron $\lambda_C$}/-1.05} {
+    \fill[figB] (\x,0) circle (2.4pt);
+    \draw[figB, thin] (\x,-0.45) -- (\x,\yy+0.25);
+    \node[figB, font=\scriptsize, anchor=north] at (\x,\yy+0.25) {\lab};
+  }
+  % ratios
+  \draw[{Stealth[length=1.6mm]}-{Stealth[length=1.6mm]}, black!60] (0,0.45) -- (10.994,0.45);
+  \node[font=\scriptsize, black!70, fill=white, inner sep=1pt] at (5.5,0.45) {$RL^2 = 1.0\times10^{-22}$};
+  \draw[{Stealth[length=1.6mm]}-{Stealth[length=1.6mm]}, black!60] (-6.301,0.95) -- (10.994,0.95);
+  \node[font=\scriptsize, black!70, fill=white, inner sep=1pt] at (2.3,0.95) {$R/k^2 = 6.5\times10^{-37}$};
+  \draw[{Stealth[length=1.6mm]}-{Stealth[length=1.6mm]}, black!60] (-12.413,1.45) -- (10.994,1.45);
+  \node[font=\scriptsize, black!70, fill=white, inner sep=1pt] at (-0.7,1.45) {$R\lambda_C^2 = 1.5\times10^{-47}$};
+\end{tikzpicture}
