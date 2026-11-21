@@ -23,7 +23,7 @@
 \addlegendentry{$e = 1.2M$}
 \addplot[figR, only marks, mark=o, mark size=1.6pt, forget plot] coordinates {(1.4400,0.3056)};
 \node[figB, font=\scriptsize, anchor=north west] at (axis cs:0.230,-0.05) {$r_-$};
-\node[figB, font=\scriptsize, anchor=south] at (axis cs:1.750,0.04) {$r_+$};
+\draw[figB, thin] (axis cs:1.800,0) -- (axis cs:1.55,-0.45) node[anchor=north, font=\scriptsize] {$r_+$};
 \node[figG, font=\scriptsize, anchor=south] at (axis cs:1,0.05) {$r = M$};
 \node[black!70, font=\scriptsize, anchor=north west] at (axis cs:2.03,-0.04) {$2M$};
 \node[figR, font=\scriptsize, anchor=south west, align=left] at (axis cs:1.55,0.42) {no zero:\\no horizon};
