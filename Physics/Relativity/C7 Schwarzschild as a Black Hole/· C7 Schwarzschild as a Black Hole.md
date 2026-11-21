@@ -6,10 +6,10 @@ chapter: C7
 tags: [chapter, relativity]
 ---
 # C7 Schwarzschild as a Black Hole
-← [[· C6 The Schwarzschild Solution and the Classical Tests]] · ↑ [[Relativity]]
+← [[· C6 The Schwarzschild Solution and the Classical Tests]] · ↑ [[Relativity]] · [[· C8 Linearised Gravity and Gravitational Waves]] →
 
-**Builds on:** [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (1), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (11), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (11), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (80), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (54)
-**Used by:** [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (1), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (1), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (6)
+**Builds on:** [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (1), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (11), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (11), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (80), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (54), [[· C8 Linearised Gravity and Gravitational Waves|C8 Linearised Gravity and Gravitational Waves]] (1)
+**Used by:** [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (2), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (1), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (1), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (6), [[· C8 Linearised Gravity and Gravitational Waves|C8 Linearised Gravity and Gravitational Waves]] (1)
 
 ★ *Self-study: general relativity beyond any course taken (spine: Couzens' Oxford GR notes; textbooks d'Inverno & Vickers, Hartle, Schutz).*
 
