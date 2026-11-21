@@ -31,6 +31,7 @@ Special relativity from Einstein's postulates, then its covariant (tensor) form,
 - [[· C6 The Schwarzschild Solution and the Classical Tests]]
 - [[· C7 Schwarzschild as a Black Hole]]
 - [[· C8 Linearised Gravity and Gravitational Waves]]
+- [[· C9 Relativistic Stars and Collapse]]
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -52,6 +53,7 @@ graph TD
   C6["C6 The Schwarzschild Solution and the Classical Tests"]
   C7["C7 Schwarzschild as a Black Hole"]
   C8["C8 Linearised Gravity and Gravitational Waves"]
+  C9["C9 Relativistic Stars and Collapse"]
   A1 -->|21| A2
   A1 -->|2| A3
   A2 -->|13| A3
@@ -119,6 +121,13 @@ graph TD
   C5 -->|36| C8
   C6 -->|6| C8
   C7 -->|1| C8
+  C1 -->|8| C9
+  C3 -->|13| C9
+  C4 -->|22| C9
+  C5 -->|3| C9
+  C6 -->|32| C9
+  C7 -->|15| C9
+  C8 -->|2| C9
   A2 -.->|6| A1
   B2 -.->|1| A1
   B1 -.->|2| A2
@@ -148,10 +157,13 @@ graph TD
   C7 -.->|1| C2
   C4 -.->|3| C3
   C5 -.->|3| C3
+  C9 -.->|3| C4
   C7 -.->|1| C5
   C8 -.->|4| C5
+  C9 -.->|1| C5
   C7 -.->|6| C6
   C8 -.->|1| C6
+  C9 -.->|1| C6
   C8 -.->|1| C7
 ```
 
@@ -159,4 +171,4 @@ graph TD
 Chapters without notes yet; sources in brackets. Planned: 14 chapters, 78 sections.
 
 **Level C★ — general relativity (self-study)**
-C9 Relativistic stars and collapse [GR2 §3; Schutz 10] · C10 Causal structure and Penrose diagrams [GR2 §4; d'Inverno 18] · C11 Charged black holes [GR2 §5; d'Inverno 19] · C12 Rotating black holes [GR2 §6; d'Inverno 20; Hartle 15] · C13 Black-hole thermodynamics [GR2 §7] · C14 Hawking radiation and quantum fields in curved spacetime [GR2 §8–9] · C15 Cosmology [Hartle 17–19; Schutz 13; d'Inverno 24–26; 't Hooft 14 — planned only, not yet scheduled]
+C10 Causal structure and Penrose diagrams [GR2 §4; d'Inverno 18] · C11 Charged black holes [GR2 §5; d'Inverno 19] · C12 Rotating black holes [GR2 §6; d'Inverno 20; Hartle 15] · C13 Black-hole thermodynamics [GR2 §7] · C14 Hawking radiation and quantum fields in curved spacetime [GR2 §8–9] · C15 Cosmology [Hartle 17–19; Schutz 13; d'Inverno 24–26; 't Hooft 14 — planned only, not yet scheduled]

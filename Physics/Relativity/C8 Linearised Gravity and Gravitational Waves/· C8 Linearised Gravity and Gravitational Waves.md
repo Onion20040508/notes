@@ -6,10 +6,10 @@ chapter: C8
 tags: [chapter, relativity]
 ---
 # C8 Linearised Gravity and Gravitational Waves
-← [[· C7 Schwarzschild as a Black Hole]] · ↑ [[Relativity]]
+← [[· C7 Schwarzschild as a Black Hole]] · ↑ [[Relativity]] · [[· C9 Relativistic Stars and Collapse]] →
 
 **Builds on:** [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (1), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (1), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (8), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (8), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (66), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (4), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (36), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (6), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (1)
-**Used by:** [[· C5 Einstein's Equations|C5 Einstein's Equations]] (4), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (1), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (1)
+**Used by:** [[· C5 Einstein's Equations|C5 Einstein's Equations]] (4), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (1), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (1), [[· C9 Relativistic Stars and Collapse|C9 Relativistic Stars and Collapse]] (2)
 
 ★ *Self-study: general relativity beyond any course taken (spine: Couzens' Oxford GR notes; textbooks d'Inverno & Vickers, Hartle, Schutz).*
 
