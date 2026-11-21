@@ -6,10 +6,10 @@ chapter: C11
 tags: [chapter, relativity]
 ---
 # C11 Charged Black Holes
-← [[· C10 Causal Structure and Penrose Diagrams]] · ↑ [[Relativity]]
+← [[· C10 Causal Structure and Penrose Diagrams]] · ↑ [[Relativity]] · [[· C12 Rotating Black Holes]] →
 
 **Builds on:** [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (3), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (32), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (49), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (23), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (16), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (30), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (29), [[· C9 Relativistic Stars and Collapse|C9 Relativistic Stars and Collapse]] (9), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (27)
-**Used by:** —
+**Used by:** [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (1), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (2), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (1), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (1), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (1), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (2), [[· C12 Rotating Black Holes|C12 Rotating Black Holes]] (38)
 
 ★ *Self-study: general relativity beyond any course taken (spine: Couzens' Oxford GR notes; textbooks d'Inverno & Vickers, Hartle, Schutz).*
 

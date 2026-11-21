@@ -34,6 +34,7 @@ Special relativity from Einstein's postulates, then its covariant (tensor) form,
 - [[· C9 Relativistic Stars and Collapse]]
 - [[· C10 Causal Structure and Penrose Diagrams]]
 - [[· C11 Charged Black Holes]]
+- [[· C12 Rotating Black Holes]]
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -58,6 +59,7 @@ graph TD
   C9["C9 Relativistic Stars and Collapse"]
   C10["C10 Causal Structure and Penrose Diagrams"]
   C11["C11 Charged Black Holes"]
+  C12["C12 Rotating Black Holes"]
   A1 -->|21| A2
   A1 -->|2| A3
   A2 -->|13| A3
@@ -90,7 +92,7 @@ graph TD
   C1 -->|9| C10
   C2 -->|8| C10
   C3 -->|153| C10
-  C4 -->|18| C10
+  C4 -->|20| C10
   C5 -->|12| C10
   C6 -->|21| C10
   C7 -->|99| C10
@@ -104,6 +106,18 @@ graph TD
   C6 -->|30| C11
   C7 -->|29| C11
   C9 -->|9| C11
+  B2 -->|4| C12
+  C1 -->|5| C12
+  C10 -->|31| C12
+  C11 -->|38| C12
+  C2 -->|14| C12
+  C3 -->|60| C12
+  C4 -->|2| C12
+  C5 -->|4| C12
+  C6 -->|8| C12
+  C7 -->|8| C12
+  C8 -->|6| C12
+  C9 -->|9| C12
   B1 -->|9| C2
   B2 -->|12| C2
   C1 -->|2| C2
@@ -129,6 +143,7 @@ graph TD
   C1 -->|42| C6
   C2 -->|5| C6
   C3 -->|92| C6
+  C4 -->|2| C6
   C5 -->|21| C6
   B3 -->|1| C7
   C1 -->|11| C7
@@ -177,28 +192,34 @@ graph TD
   C5 -.->|3| C1
   C6 -.->|6| C1
   C8 -.->|1| C1
+  C11 -.->|2| C10
   C10 -.->|2| C2
   C3 -.->|8| C2
   C5 -.->|2| C2
   C7 -.->|1| C2
-  C10 -.->|1| C3
+  C10 -.->|2| C3
+  C11 -.->|1| C3
   C4 -.->|7| C3
   C5 -.->|3| C3
   C8 -.->|1| C3
   C10 -.->|17| C4
+  C11 -.->|2| C4
   C5 -.->|7| C4
   C8 -.->|2| C4
   C9 -.->|5| C4
-  C10 -.->|1| C5
+  C10 -.->|2| C5
+  C11 -.->|1| C5
   C6 -.->|1| C5
   C7 -.->|1| C5
   C8 -.->|6| C5
   C9 -.->|3| C5
   C10 -.->|1| C6
+  C11 -.->|1| C6
   C7 -.->|6| C6
   C8 -.->|2| C6
   C9 -.->|2| C6
   C10 -.->|9| C7
+  C11 -.->|1| C7
   C8 -.->|1| C7
   C9 -.->|1| C7
   C9 -.->|2| C8
@@ -209,4 +230,4 @@ graph TD
 Chapters without notes yet; sources in brackets. Planned: 14 chapters, 78 sections.
 
 **Level C★ — general relativity (self-study)**
-C12 Rotating black holes [GR2 §6; d'Inverno 20; Hartle 15] · C13 Black-hole thermodynamics [GR2 §7] · C14 Hawking radiation and quantum fields in curved spacetime [GR2 §8–9] · C15 Cosmology [Hartle 17–19; Schutz 13; d'Inverno 24–26; 't Hooft 14 — planned only, not yet scheduled]
+C13 Black-hole thermodynamics [GR2 §7] · C14 Hawking radiation and quantum fields in curved spacetime [GR2 §8–9] · C15 Cosmology [Hartle 17–19; Schutz 13; d'Inverno 24–26; 't Hooft 14 — planned only, not yet scheduled]
