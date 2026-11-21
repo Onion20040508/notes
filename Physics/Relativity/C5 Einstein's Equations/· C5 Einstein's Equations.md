@@ -6,10 +6,10 @@ chapter: C5
 tags: [chapter, relativity]
 ---
 # C5 Einstein's Equations
-← [[· C4 Matter in Curved Spacetime]] · ↑ [[Relativity]]
+← [[· C4 Matter in Curved Spacetime]] · ↑ [[Relativity]] · [[· C6 The Schwarzschild Solution and the Classical Tests]] →
 
 **Builds on:** [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (2), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (1), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (50), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (40), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (207), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (111)
-**Used by:** [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (2), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (2), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (3)
+**Used by:** [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (2), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (2), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (3), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (21)
 
 ★ *Self-study: general relativity beyond any course taken (spine: Couzens' Oxford GR notes; textbooks d'Inverno & Vickers, Hartle, Schutz).*
 

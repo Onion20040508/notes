@@ -1,0 +1,26 @@
+% Figure for Relativity §C6.3, Theorem §C6.3.4: massive effective potential V(r) = (1 - 2M/r)(1 + L^2/r^2), M = 1,
+% for several L, with the locus of circular orbits E_c^2(r) = (1 - 2/r)^2/(1 - 3/r), the ISCO (6, 8/9) and the marginally bound orbit (4, 1).
+\begin{tikzpicture}
+\begin{axis}[nfig, width=12.5cm, height=7.6cm, xmin=2, xmax=26, ymin=0.62, ymax=1.17,
+  xlabel={$r/M$}, ylabel={$V(r)$}, xtick={2,3,4,6,10,15,20,25}, ytick={0.7,0.8,0.8889,1,1.1},
+  yticklabels={0.7,0.8,$8/9$,1,1.1}, clip=true, unbounded coords=jump,
+  legend pos=north east, legend style={font=\scriptsize, draw=black!30, cells={anchor=west}}, legend cell align=left]
+  \addplot[black!35, dashed, thin, domain=2:26, forget plot] {1};
+  \addplot[black!45, densely dotted, line width=1.1pt, domain=3.06:26, samples=300, forget plot] {(1-2/x)^2/(1-3/x)};
+  \addplot[figG, domain=2:26, samples=400] {(1-2/x)*(1+9/x^2)}; \addlegendentry{$L = 3M$}
+  \addplot[figB, line width=1.3pt, domain=2:26, samples=400] {(1-2/x)*(1+12/x^2)}; \addlegendentry{$L = 2\sqrt3\,M$}
+  \addplot[figO, domain=2:26, samples=400] {(1-2/x)*(1+3.75^2/x^2)}; \addlegendentry{$L = 3.75M$}
+  \addplot[figR, line width=1.3pt, domain=2:26, samples=400] {(1-2/x)*(1+16/x^2)}; \addlegendentry{$L = 4M$}
+  \addplot[black, domain=2:26, samples=400] {(1-2/x)*(1+4.5^2/x^2)}; \addlegendentry{$L = 4.5M$}
+  % markers
+  \addplot[only marks, mark=*, mark size=2.2pt, figB, forget plot] coordinates {(6,0.888889)};
+  \addplot[only marks, mark=*, mark size=2.2pt, figR, forget plot] coordinates {(4,1)};
+  \draw[black!35, thin] (axis cs:6,0.62) -- (axis cs:6,0.8889);
+  \draw[black!35, thin] (axis cs:4,0.62) -- (axis cs:4,1);
+  \draw[black!35, thin] (axis cs:3,0.62) -- (axis cs:3,0.70);
+  \draw[figB, thin] (axis cs:6,0.8889) -- (axis cs:6.9,0.785);
+  \node[figB, font=\scriptsize, anchor=north west, align=left] at (axis cs:6.6,0.79) {ISCO: $r = 6M$,\\ $L = 2\sqrt3\,M$, $V = 8/9$};
+  \node[figR, font=\scriptsize, anchor=south west, align=left] at (axis cs:4.15,1.005) {marginally bound: $r = 4M$, $L = 4M$, $V = 1$};
+  \node[black!60, font=\scriptsize, anchor=north west, align=left] at (axis cs:13.0,0.765) {dotted: height $E^2 = (1 - 2M/r)^2/(1 - 3M/r)$\\ of the circular orbit at each $r$: maxima\\ of $V$ for $3M < r < 6M$, minima for $r > 6M$};
+\end{axis}
+\end{tikzpicture}
