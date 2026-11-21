@@ -1,0 +1,29 @@
+% Figure for Relativity §C8.5, Model §C8.5.3: far-zone geometry. Source of size d about the origin O; source point y;
+% distant field point x = r n (here r = 10, n at 20 degrees, y = (0.4, 1.1), drawn to scale): the foot of the perpendicular
+% from y to the line O-x lies at distance n.y = 0.752 from O, and |x - y| = 9.294 differs from r - n.y = 9.248 by 0.046,
+% the O(d^2/r) term (|y|^2 - (n.y)^2)/2r = 0.040 plus higher orders.
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small, scale=0.8]
+  % source region
+  \fill[figO!25] (0,0) circle (1.45);
+  \draw[figO!80!black] (0,0) circle (1.45);
+  \node[figO!70!black, font=\scriptsize, align=center] at (-0.2,-2.05) {source, size $d$\\ ($T_{\mu\nu} \neq 0$)};
+  % origin, unit vector n
+  \fill (0,0) circle (1.6pt) node[below left] {$O$};
+  \draw[black, very thick, ->] (2.2,-0.35) -- ++(0.940*1.0, 0.342*1.0) node[above] {$\vec n$};
+  % line O -> x
+  \draw[black!70] (0,0) -- (9.40,3.42);
+  % source point y and lines
+  \fill[figR] (0.4,1.1) circle (1.8pt) node[above left] {$\vec y$};
+  \draw[figR, thick] (0.4,1.1) -- (9.40,3.42);
+  % foot of the perpendicular F = (n.y) n
+  \draw[black!55, dashed] (0.4,1.1) -- (0.707,0.257);
+  \fill[black!70] (0.707,0.257) circle (1.3pt);
+  \draw[figB, thick, decorate, decoration={brace, mirror, amplitude=4pt}] (0,-0.05) -- (0.707,0.207) node[midway, below right, xshift=-1pt, yshift=-1pt, font=\scriptsize] {$\vec n\cdot\vec y$};
+  % field point
+  \fill (9.40,3.42) circle (1.8pt) node[right] {$\vec x = r\vec n$};
+  % labels on the long lines
+  \node[black!70, font=\scriptsize, rotate=20] at (5.6,1.7) {$r = |\vec x|$};
+  \node[figR, font=\scriptsize, rotate=15.4] at (5.0,2.65) {$|\vec x - \vec y|$};
+  % result
+  \node[font=\scriptsize, align=left, anchor=west] at (3.2,-1.2) {$|\vec x - \vec y| = r - \vec n\cdot\vec y + \dfrac{|\vec y|^2 - (\vec n\cdot\vec y)^2}{2r} + \dots$\\[1mm] far zone $r \gg d$: the lines to $\vec x$ are almost parallel};
+\end{tikzpicture}

@@ -1,0 +1,31 @@
+% Figure for Relativity §C8.5, Example §C8.5.1: radiation of a rod (or circular binary) rotating in the xy-plane about z.
+% Left: time-averaged power per solid angle in a meridian plane, dP/dOmega proportional to g(theta) = (1/4)(1 + cos^2 theta)^2 + cos^2 theta
+% (g(0) = 2, g(pi/2) = 1/4: ratio 8), drawn as the polar curve radius = 0.9 g(theta) cm, computed from the formula by TikZ.
+% Right: amplitudes of the two polarisations relative to the on-axis value, h_+ ~ (1 + cos^2 theta)/2 and h_x ~ cos theta.
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small]
+  \begin{scope}
+    \draw[black!40, ->] (-2.3,0) -- (2.4,0) node[right] {$x$};
+    \draw[black!40, ->] (0,-2.2) -- (0,2.4) node[above] {$z$};
+    \fill[figB!12, domain=0:360, samples=181, variable=\t] plot ({0.9*(0.25*(1+cos(\t)^2)^2 + cos(\t)^2)*sin(\t)}, {0.9*(0.25*(1+cos(\t)^2)^2 + cos(\t)^2)*cos(\t)});
+    \draw[figB, thick, domain=0:360, samples=181, variable=\t] plot ({0.9*(0.25*(1+cos(\t)^2)^2 + cos(\t)^2)*sin(\t)}, {0.9*(0.25*(1+cos(\t)^2)^2 + cos(\t)^2)*cos(\t)});
+    % rod seen edge-on, rotation arrow
+    \draw[figO!80!black, line width=2.2pt] (-0.55,0) -- (0.55,0);
+    \draw[figO!80!black, ->] (0.25,0.32) arc[start angle=60, end angle=320, x radius=0.32, y radius=0.12];
+    \node[figO!70!black, font=\scriptsize] at (1.35,-0.35) {rod, $\Omega$};
+    % angle theta
+    \draw[black!60] (0,0.9) arc[start angle=90, end angle=55, radius=0.9];
+    \draw[black!60, dashed] (0,0) -- ({1.9*cos(55)}, {1.9*sin(55)});
+    \node[black!70, font=\scriptsize] at (0.3,1.12) {$\theta$};
+    \node[figB, font=\scriptsize, align=center] at (0,-2.75) {$\langle dP/d\Omega\rangle \propto \tfrac14(1 + \cos^2\theta)^2 + \cos^2\theta$\\ along the axis $8\times$ the equatorial value};
+  \end{scope}
+  \begin{scope}[xshift=3.6cm, yshift=-1.6cm]
+    \begin{axis}[nfig, width=6.4cm, height=4.6cm, xmin=0, xmax=180, ymin=-1.15, ymax=1.15, xtick={0,45,90,135,180},
+        xlabel={$\theta$ (degrees)}, ylabel={amplitude$/$on-axis}, axis lines=left, legend style={font=\scriptsize, draw=none, fill=none, at={(0.03,0.03)}, anchor=south west}]
+      \addplot[figB, domain=0:180, samples=91] {(1 + cos(x)^2)/2};
+      \addlegendentry{$h_+\colon (1 + \cos^2\theta)/2$}
+      \addplot[figR, domain=0:180, samples=91] {cos(x)};
+      \addlegendentry{$h_\times\colon \cos\theta$}
+      \addplot[black!35, dashed, domain=0:180] {0};
+    \end{axis}
+  \end{scope}
+\end{tikzpicture}
