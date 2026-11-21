@@ -6,10 +6,10 @@ chapter: C6
 tags: [chapter, relativity]
 ---
 # C6 The Schwarzschild Solution and the Classical Tests
-← [[· C5 Einstein's Equations]] · ↑ [[Relativity]]
+← [[· C5 Einstein's Equations]] · ↑ [[Relativity]] · [[· C7 Schwarzschild as a Black Hole]] →
 
-**Builds on:** [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (1), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (2), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (42), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (5), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (92), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (21)
-**Used by:** [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (3)
+**Builds on:** [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (1), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (2), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (42), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (5), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (92), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (21), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (6)
+**Used by:** [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (3), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (54)
 
 ★ *Self-study: general relativity beyond any course taken (spine: Couzens' Oxford GR notes; textbooks d'Inverno & Vickers, Hartle, Schutz).*
 
