@@ -5,7 +5,7 @@ chapter: 11
 section: 80
 tags: [differentiable-manifolds, math591]
 ---
-← [[§79 Pullbacks of Linear Forms]] · ↑ [[· 11 Differential Forms]]
+← [[§79 Pullbacks of Linear Forms]] · ↑ [[· 11 Differential Forms]] · [[§81 The Exterior Derivative]] →
 
 *Stage: forms — A $k$-form on a manifold is a linear $k$-form on each tangent space; smoothness through chart components; the bundle $\Lambda^k T^{\ast}M$; pullbacks by smooth maps, computed by substitution.*
 
@@ -33,7 +33,7 @@ tags: [differentiable-manifolds, math591]
 
 ^def-80-2
 
-No smoothness is required yet; smooth forms come next. The case $k = 1$ was seen in September: an assignment of a covector to each point is a section of $T^{\ast}M$, and a smooth one is a one-form (Definition [[§53 One-Forms#^def-53-1|§53.1]]); this is its version in arbitrary degree. For $k = 0$, $\Lambda^0 T_p^{\ast}M = \mathbb{R}$, and a $0$-form assigns a number to each point: it is a function on $M$. The notation $|\omega|$ for the degree is not Lee's, but it is used in other books. Notation, normalizations and sign conventions vary a lot from book to book in this subject (and more so in MATH 635), down to which index of a matrix labels the rows; so the conventions of the book at hand have to be checked before its formulas are used.
+No smoothness is required yet; smooth forms come next. The case $k = 1$ was seen in September: an assignment of a covector to each point is a rough section of $T^{\ast}M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]), and a smooth one is a one-form (Definition [[§53 One-Forms#^def-53-1|§53.1]]); this is its version in arbitrary degree. For $k = 0$, $\Lambda^0 T_p^{\ast}M = \mathbb{R}$, and a $0$-form assigns a number to each point: it is a function on $M$. The notation $|\omega|$ for the degree is not Lee's, but it is used in other books. Notation, normalizations and sign conventions vary a lot from book to book in this subject (and more so in MATH 635), down to which index of a matrix labels the rows; so the conventions of the book at hand have to be checked before its formulas are used.
 
 *Coordinates.* Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart and $q \in U$. The coordinate vectors $\partial/\partial x^1|_q, \ldots, \partial/\partial x^m|_q$ form a basis of $T_qM$, with dual basis $dx^1|_q, \ldots, dx^m|_q$ of $T_q^{\ast}M$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]). By Propositions [[§75 Multilinear Algebra#^prop-75-6|§75.6]] and [[§78 Properties of the Wedge Product#^prop-78-4|§78.4]](4), for $A = \{a_1 < \cdots < a_k\} \subseteq \{1, \ldots, m\}$ the forms
 
@@ -326,6 +326,25 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 
 **Transcription note (Lecture 31).** The board first wrote $dz = u\, du + 2v\, dv$, and the $2$ was then struck out. The correct $dz = u\, du + v\, dv$ is the one used in the computation.
 
+> [!remark] Remark: Putting $F^{\ast}$ Everywhere
+> *(Lecture 32 returned to Example [[§80 Differential Forms on Manifolds#^ex-80-1|§80.1]] to justify the practical computation.)* Regard $\omega = x\, y\, dy \wedge dz$ as a wedge product of four factors, the $0$-forms $x$ and $y$ (for which the wedge product is the ordinary product) and the one-forms $dy$ and $dz$. The pullback of a wedge product is the wedge product of the pullbacks (Proposition [[§80 Differential Forms on Manifolds#^prop-80-5|§80.5]](2)), a pointwise property, so
+>
+> $$
+> F^{\ast}\omega = F^{\ast}(x)\, F^{\ast}(y)\; F^{\ast}(dy) \wedge F^{\ast}(dz) ,
+> $$
+>
+> and since the pullback commutes with $d$ on functions (Proposition [[§80 Differential Forms on Manifolds#^prop-80-5|§80.5]](3), from September),
+>
+> $$
+> F^{\ast}\omega = F^{\ast}(x)\, F^{\ast}(y)\; d\big(F^{\ast}y\big) \wedge d\big(F^{\ast}z\big) .
+> $$
+>
+> Here $x$ is the function taking the first coordinate, so $F^{\ast}x = x \circ F = u + v$; likewise $F^{\ast}y = u - v$ and $F^{\ast}z = \frac12(u^2 + v^2)$. Compared with the practical computation, the only thing missing there is a number of $F^{\ast}$'s: “$x = u + v$” stands for $F^{\ast}x = u + v$, and “$dx = du + dv$” for $F^{\ast}(dx) = d(F^{\ast}x) = du + dv$. One puts $F^{\ast}$ in front of everything, and then stops writing it.
+
+^rem-80-1
+
+**Transcription note (Lecture 32).** The board wrote “$y = du - dv$” for $dy = du - dv$, and then $F^{\ast}\omega = (u + v)(u - v)(du + dv) \wedge (u\, du + v\, dv)$. Since $\omega$ contains $dy \wedge dz$, the first one-form is $F^{\ast}(dy) = du - dv$, as in Example [[§80 Differential Forms on Manifolds#^ex-80-1|§80.1]]; $du + dv = F^{\ast}(dx)$ does not occur.
+
 ![[m591-78-2.svg]]
 
 *(Not from lecture; figure added.)* Example [[§80 Differential Forms on Manifolds#^ex-80-1|§80.1]] at the point $p = (u, v) = (0.6, -0.3)$. $F$ maps the square $[-1, 1]^2$ onto a piece of the paraboloid $z = (x^2 + y^2)/4$ (since $x^2 + y^2 = 2(u^2 + v^2)$); the grid lines $u = \mathrm{const}$ (blue) and $v = \mathrm{const}$ (red) go to curves on it. The differential pushes the coordinate vectors to the tangent vectors $dF_p(\partial_u) = \partial F/\partial u = (1, 1, u)$ and $dF_p(\partial_v) = (1, -1, v)$ of the surface, and by Definition [[§80 Differential Forms on Manifolds#^def-80-9|§80.9]], $(F^{\ast}\omega)_p(\partial_u, \partial_v) = \omega_{F(p)}\big(dF_p \partial_u, dF_p \partial_v\big) = xy\, \big(1 \cdot v - u \cdot (-1)\big) = (u^2 - v^2)(u + v)$, the coefficient found above.
@@ -376,4 +395,4 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 > - The factor $r$ in polar coordinates, as a change of variables in a double integral: [[§22 Properties of the Integral#^thm-22-6|452 Thm. §22.6]].
 > - Polar coordinates as a chart, with $\partial_r$ and $\partial_\vartheta$: [[§30 The Differential in Coordinates#^ex-30-1|Ex. §30.1]].
 
-Still to come: the exterior derivative, which extends $d : \Omega^0(M) \to \Omega^1(M)$ to forms of every degree (Lee, Ch. 14, *The Exterior Derivative*).
+Next: the exterior derivative, which extends $d : \Omega^0(M) \to \Omega^1(M)$ to forms of every degree ([[§81 The Exterior Derivative|§81]]).

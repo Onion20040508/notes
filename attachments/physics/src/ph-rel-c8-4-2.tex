@@ -1,0 +1,32 @@
+% Figure for Relativity §C8.4, Theorem §C8.4.1: along the worldline x = y = z = 0 of a + wave h_xx = h+ cos(omega t) (units omega = h+ = 1),
+% the TT chart and the chart x' = x - xi adapted to the event p at omega t0 = 2.2 (xi of Theorem §C8.4.1, part 1).
+% In the new chart, on this worldline, h'_xx = -h'_yy = h(t) - h(t0) - hdot(t0)(t - t0), the other spatial components vanish (checked by script).
+% Candidate density (1/32pi) hdot_ij hdot_ij in units omega^2 h+^2/(16 pi): TT chart sin^2(t), new chart (sin t - sin t0)^2.
+\begin{tikzpicture}
+\pgfmathsetmacro{\tz}{2.2}
+\begin{axis}[nfig, name=top, width=11.5cm, height=4.6cm, xmin=0, xmax=6.2832, ymin=-2.2, ymax=2.2, axis x line=middle,
+  xtick={0,3.1416,6.2832}, xticklabels={$0$,$\pi$,$2\pi$}, ytick={-1,1}, yticklabels={$-h_+$,$h_+$}, xlabel={$\omega t$}, xlabel style={at={(ticklabel* cs:1.0)}, anchor=north, yshift=-8pt},
+  title={\small (a) the metric perturbation $h_{xx}$ along the worldline: TT chart and chart adapted to $p$}, title style={yshift=-2pt},
+  restrict y to domain=-2.4:2.4, clip mode=individual]
+  \addplot[figB, samples=300, domain=0:6.2832] {cos(deg(x))};
+  \addplot[figR, samples=300, domain=0:6.2832] {cos(deg(x)) - cos(deg(\tz)) + sin(deg(\tz))*(x - \tz)};
+  \addplot[black!50, densely dashed, samples=2, domain=1.0:3.4] {cos(deg(\tz)) - sin(deg(\tz))*(x - \tz)};
+  \addplot[only marks, mark=*, mark size=1.8pt] coordinates {(2.2,-0.5885) (2.2,0)};
+  \node[font=\scriptsize, anchor=south west] at (axis cs:2.25,0.05) {$p$};
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.15,1.35) {TT chart: $h_{xx} = h_+\cos\omega t$};
+  \node[figR, font=\scriptsize, anchor=west, align=left] at (axis cs:3.45,-1.6) {adapted chart: $h'_{xx}(p) = \dot h'_{xx}(p) = 0$,\\ but $\ddot h'_{xx}(p) = \ddot h_{xx}(p)$};
+  \node[black!60, font=\scriptsize, anchor=north east] at (axis cs:1.6,-1.35) {tangent at $p$};
+\end{axis}
+\begin{axis}[nfig, at={(top.below south west)}, anchor=north west, yshift=-1.0cm, width=11.5cm, height=4.0cm,
+  xmin=0, xmax=6.2832, ymin=0, ymax=1.6, xtick={0,3.1416,6.2832}, xticklabels={$0$,$\pi$,$2\pi$}, ytick={0,0.5,1},
+  yticklabels={$0$,$\tfrac12$,$1$}, xlabel={$\omega t$},
+  title={\small (b) the candidate density $\tfrac{1}{32\pi}\dot h_{ij}\dot h_{ij}$ in units of $\omega^2h_+^2/16\pi$}, title style={yshift=-2pt},
+  restrict y to domain=0:1.7]
+  \addplot[figB, samples=300, domain=0:6.2832] {sin(deg(x))^2};
+  \addplot[figR, samples=300, domain=0:6.2832] {(sin(deg(x)) - sin(deg(\tz)))^2};
+  \addplot[figB, densely dashed, samples=2, domain=0:6.2832] {0.5};
+  \addplot[only marks, mark=*, mark size=1.8pt] coordinates {(2.2,0)};
+  \node[font=\scriptsize, anchor=south east] at (axis cs:2.15,0.1) {at $p$: $0$};
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.1,1.45) {dashed: TT-chart average $\tfrac12$};
+\end{axis}
+\end{tikzpicture}

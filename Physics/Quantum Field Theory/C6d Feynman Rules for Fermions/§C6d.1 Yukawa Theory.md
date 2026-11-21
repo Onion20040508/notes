@@ -115,7 +115,7 @@ Lecture 17 does for a theory with fermions what Lectures 15–16 did for $\phi^4
 > **Step 3** (the factor per vertex). Each factor $-ig\int d^4x\,\hat{\bar\psi}_a\hat\psi_b\,\delta_{ab}\,\hat\phi$ offers one leg of each kind, $\hat{\bar\psi}_a$, $\hat\psi_b$, $\hat\phi$. In the language of [[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]] the vertex factor is $-i$ times the coefficient times $\prod_km_k!$, here $m_{\bar\psi} = m_\psi = m_\phi = 1$, so $\prod_km_k! = 1$: the factor is $-ig$, and the spinor indices of the two fermion legs are joined by $\delta_{ab}$. In momentum space the $\int d^4x$ of the three plane waves at the vertex becomes $(2\pi)^4\delta^4$ of the momenta flowing in ([[§CA.4 Fourier Transforms and Fourier Tricks#^thm-ca-4-3|Theorem §CA.4.3]]).
 >
 > **What the derivation shows.**
-> - The vertex factor is $i\mathcal L_{\rm int}$ with the fields stripped: $i\cdot(-g) = -ig$ (Yu p. 288); in QED the same stripping gives $-ie\gamma^\mu$, a matrix in place of $\delta_{ab}$ ([[§C8.4 Feynman Rules for QED#^thm-c8-4-3|Theorem §C8.4.3]]; PS §4.8). → [[§C6d.1 Yukawa Theory#^thm-c6d-1-4|Theorem §C6d.1.4]]
+> - The vertex factor is $i\mathcal L_{\rm int}$ with the fields stripped: $i\cdot(-g) = -ig$ (Yu p. 288); in QED the same stripping gives $-ie\gamma^\mu$, a matrix in place of $\delta_{ab}$ ([[§C8a.4 Feynman Rules for QED#^thm-c8a-4-3|Theorem §C8a.4.3]]; PS §4.8). → [[§C6d.1 Yukawa Theory#^thm-c6d-1-4|Theorem §C6d.1.4]]
 > - The $\frac{1}{n!}$ is still there; it cancels against relabelling the vertices ([[§C6d.4 First Order#^thm-c6d-4-7|Theorem §C6d.4.7]]).
 
 ^der-c6d-1-3
@@ -131,7 +131,7 @@ Lecture 17 does for a theory with fermions what Lectures 15–16 did for $\phi^4
 >
 > 1. Yukawa theory: $\mathcal L_{\rm int} = -g\,\bar\psi_a\psi_a\,\phi$; stripping $\bar\psi_a$, $\psi_b$, $\phi$ leaves $-g\,\delta_{ab}$, no two fields are identical, so the vertex is $i\cdot(-g)\,\delta_{ab} = -ig$ ([[§C6d.1 Yukawa Theory#^thm-c6d-1-3|Theorem §C6d.1.3]]); $\hat\phi$ gives the dashed leg, $\hat\psi$ the solid leg with the arrow into the vertex, $\hat{\bar\psi}$ the solid leg with the arrow out of it ([[§C6d.1 Yukawa Theory#^def-c6d-1-1|Def. §C6d.1.1]]).
 > 2. A monomial $\mathcal L_{\rm int} = -g\prod_k\phi_k^{m_k}$ of scalar fields: $i\cdot(-g)\cdot\prod_km_k! = -ig\prod_km_k!$ ([[§C6a.14 Feynman Rules for Polynomial Interactions#^thm-c6a-14-2|Theorem §C6a.14.2]]); for $\phi^4$, $i\cdot(-\frac{\lambda}{4!})\cdot4! = -i\lambda$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-4|Theorem §C6c.4.4]], 2).
-> 3. A matrix between the fermion fields stays as a matrix: $\mathcal L_{\rm int} = -e\,\bar\psi\gamma^\mu\psi A_\mu$ gives $-ie\gamma^\mu$ ([[§C8.4 Feynman Rules for QED#^thm-c8-4-3|Theorem §C8.4.3]]; PS §4.8).
+> 3. A matrix between the fermion fields stays as a matrix: $\mathcal L_{\rm int} = -e\,\bar\psi\gamma^\mu\psi A_\mu$ gives $-ie\gamma^\mu$ ([[§C8a.4 Feynman Rules for QED#^thm-c8a-4-3|Theorem §C8a.4.3]]; PS §4.8).
 >
 > Only the vertex depends on $\mathcal L_{\rm int}$; the lines come from the free fields ([[§C6d.6 Momentum-Space Feynman Rules#^thm-c6d-6-1|Theorem §C6d.6.1]]).
 >

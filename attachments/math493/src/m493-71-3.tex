@@ -1,0 +1,19 @@
+% Figure from MATH 493 notes, section 71. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, scale=3.0]
+\draw[->, black!55, thin] (0,0) -- (-0.6,-0.42) node[below left=-1pt] {$y_1$};
+\draw[->, black!55, thin] (0,0) -- (1.15,0) node[right] {$y_2$};
+\draw[->, black!55, thin] (0,0) -- (0,0.95) node[above] {$y_3$};
+\draw[black!35, densely dotted] (0.503,0.434) -- (0.503,-0.143) -- (-0.204,-0.143);
+\draw[black!35, densely dotted] (0.503,-0.143) -- (0.707,0);
+\draw[black!35, densely dotted] (-0.911,0.434) -- (-0.911,-0.143) -- (-0.204,-0.143);
+\draw[black!35, densely dotted] (-0.911,-0.143) -- (-0.707,0);
+\draw[black!35, densely dotted] (-0.408,-0.863) -- (-0.408,-0.286);
+\draw[->, very thick, blue!70!black] (0,0) -- (0.503,0.434) node[above right=-1pt] {$\chi_{\mathrm{triv}}$};
+\draw[->, very thick, orange!85!black] (0,0) -- (-0.911,0.434) node[above left=-1pt] {$\chi_{\mathrm{sign}}$};
+\draw[->, very thick, red!70!black] (0,0) -- (-0.408,-0.863) node[below=1pt] {$\chi_U$};
+\node[anchor=west, align=left] at (1.45,0.72) {coordinates of a class function $\alpha$ on $S_3$:\\$y_i = \sqrt{|\mathrm{Conj}(g_i)|/6}\;\alpha(g_i)$, \ $g_1 = e$, $g_2 = (1\,2)$, $g_3 = (1\,2\,3)$};
+\node[anchor=west, align=left, blue!70!black] at (1.45,0.33) {$\chi_{\mathrm{triv}} = \tfrac{1}{\sqrt6}\,(1,\ \sqrt3,\ \sqrt2)$};
+\node[anchor=west, align=left, orange!85!black] at (1.45,0.10) {$\chi_{\mathrm{sign}} = \tfrac{1}{\sqrt6}\,(1,\ -\sqrt3,\ \sqrt2)$};
+\node[anchor=west, align=left, red!70!black] at (1.45,-0.13) {$\chi_U = \tfrac{1}{\sqrt6}\,(2,\ 0,\ -\sqrt2)$};
+\node[anchor=west, align=left] at (1.45,-0.52) {three perpendicular unit vectors in a space\\of dimension $3$: no room for a fourth};
+\end{tikzpicture}

@@ -1,0 +1,21 @@
+% Figure for Relativity §C3.1 (Examples §C3.1.1, §C3.1.2, §C3.1.4): circumference of a circle against its radius
+% in the plane (2πρ), on the unit sphere (2π sin ρ) and on the hyperbolic plane (2π sinh ρ); curves evaluated by pgfplots from these formulas.
+\begin{tikzpicture}
+\begin{axis}[nfig, width=9.5cm, height=6.2cm, xmin=0, xmax=3.3, ymin=0, ymax=3.3,
+  xlabel={radius $\rho$ (length of a radial curve from the centre)}, ylabel={$C/2\pi$},
+  xtick={0,1,2}, ytick={0,1,2,3}, extra x ticks={3.14159}, extra x tick labels={$\pi$},
+  extra x tick style={tick label style={font=\scriptsize, yshift=-1pt}}]
+\addplot[figB, domain=0:3.14159, samples=120] {sin(deg(x))};
+\addplot[black, domain=0:3.2, samples=2] {x};
+\addplot[figR, domain=0:1.9, samples=120] {sinh(x)};
+\addplot[black!40, dotted, thin] coordinates {(1,0) (1,1.1752)};
+\addplot[only marks, mark=*, mark size=1.4pt, figB] coordinates {(1,0.8415)};
+\addplot[only marks, mark=*, mark size=1.4pt, black] coordinates {(1,1)};
+\addplot[only marks, mark=*, mark size=1.4pt, figR] coordinates {(1,1.1752)};
+\node[figR, anchor=east, font=\scriptsize] at (axis cs:1.55,2.75) {hyperbolic plane: $\sinh\rho$};
+\node[black, anchor=west, font=\scriptsize] at (axis cs:2.55,2.2) {plane: $\rho$};
+\node[figB, anchor=west, font=\scriptsize] at (axis cs:1.15,0.35) {unit sphere: $\sin\rho$};
+\node[font=\scriptsize, anchor=east] at (axis cs:0.96,1.27) {$1.175$};
+\node[font=\scriptsize, anchor=west] at (axis cs:1.04,0.74) {$0.841$};
+\end{axis}
+\end{tikzpicture}

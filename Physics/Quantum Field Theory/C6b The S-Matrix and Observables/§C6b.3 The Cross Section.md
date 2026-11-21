@@ -471,15 +471,15 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-6|P7, step 6]]
 
 > [!definition] Definition §C6b.3.5: Unpolarized Cross Section
-> For particles with spin, $\mathcal M$ depends on the spin projections $m = s, s - 1, \dots, -s$, the $2s + 1$ states of a massive particle of spin $s$ at each momentum ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]]). If the initial spins are not prepared and the final ones not measured, the **unpolarized** cross section averages over the initial projections and sums over the final ones: [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]] with $|\mathcal M|^2$ replaced by
+> For particles with spin, $\mathcal M$ depends on the spin projections $m = s, s - 1, \dots, -s$, the $2s + 1$ states of a massive particle of spin $s$ at each momentum ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-9|Theorem §C8b.2.9]]). If the initial spins are not prepared and the final ones not measured, the **unpolarized** cross section averages over the initial projections and sums over the final ones: [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]] with $|\mathcal M|^2$ replaced by
 >
 > $$
 > \overline{|\mathcal M|^2} \equiv \frac{1}{(2s_A + 1)(2s_B + 1)}\sum_{m_A, m_B}\;\sum_{m_1, \dots, m_n}|\mathcal M|^2 , \qquad d\sigma = \frac{1}{4E_AE_Bv_{\rm Møl}}\,\overline{|\mathcal M|^2}\,d\Pi_n .
 > $$
 >
-> A massless particle of spin $s \ge \frac12$ in a theory with parity symmetry (photon, graviton) has two helicity states, $\lambda = \pm s$, not $2s + 1$ ([[§C8.12 Helicity of Particle States#^rem-c8-12-2|§C8.12, Remark: Parity pairs λ with −λ: photon, graviton, neutrino]]): its average is $\frac12\sum_{\lambda = \pm s}$. A massless particle with a single helicity (the neutrino of the massless idealization, same remark) has one state and is not averaged.
+> A massless particle of spin $s \ge \frac12$ in a theory with parity symmetry (photon, graviton) has two helicity states, $\lambda = \pm s$, not $2s + 1$ ([[§C8b.3 Massless Particles and Helicity#^rem-c8b-3-3|§C8b.3, Remark: Parity pairs λ with −λ: photon, graviton, neutrino]]): its average is $\frac12\sum_{\lambda = \pm s}$. A massless particle with a single helicity (the neutrino of the massless idealization, same remark) has one state and is not averaged.
 >
-> Course form (Lecture 19), for two spin-$\frac12$ particles in and two out: $\overline{|\mathcal M|^2} = \frac14\sum_{\rm spins}|\mathcal M|^2$, the spin average ([[§C8.7 The Spin-Averaged Squared Amplitude#^def-c8-7-1|Def. §C8.7.1]]).
+> Course form (Lecture 19), for two spin-$\frac12$ particles in and two out: $\overline{|\mathcal M|^2} = \frac14\sum_{\rm spins}|\mathcal M|^2$, the spin average ([[§C8a.7 The Spin-Averaged Squared Amplitude#^def-c8a-7-1|Def. §C8a.7.1]]).
 >
 > *Model:* as in [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]; *applies:* as there, unpolarized beams and undetected final spins.
 >
@@ -493,7 +493,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 > 2. The average over initial projections of an operator $X$ on the spin space is $\frac{1}{2s + 1}\sum_{m_i}\langle m_i|X|m_i\rangle = \frac{1}{2s + 1}\operatorname{Tr}X$.
 > 3. Both are independent of the orthonormal basis: $\overline{|\mathcal M|^2}$ of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]] may be computed with each particle's spin quantized along any axis.
 >
-> For Dirac particles the two spin states are carried by the spinors $u^s$, $v^s$, the completeness relation is $\sum_su^s\bar u^s = \slashed p + m$, $\sum_sv^s\bar v^s = \slashed p - m$, and the sum over spins becomes a trace over spinor indices (Lecture 19: [[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-3|Theorem §C8.7.3]]; in general, with the average of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]: [[§C8.7 The Spin-Averaged Squared Amplitude#^thm-c8-7-7|Theorem §C8.7.7]]).
+> For Dirac particles the two spin states are carried by the spinors $u^s$, $v^s$, the completeness relation is $\sum_su^s\bar u^s = \slashed p + m$, $\sum_sv^s\bar v^s = \slashed p - m$, and the sum over spins becomes a trace over spinor indices (Lecture 19: [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-3|Theorem §C8a.7.3]]; in general, with the average of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]: [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-7|Theorem §C8a.7.7]]).
 >
 > *Model:* as in [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]; *applies:* any spins, any order; linear algebra on each particle's spin space.
 >
@@ -502,7 +502,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 ^thm-c6b-3-10
 
 > [!derivation]- Derivation
-> **Step 1** (part 1). $\sum_{m_f}|\langle m_f|\psi\rangle|^2 = \sum_{m_f}\langle\psi|m_f\rangle\langle m_f|\psi\rangle = \langle\psi|\bigl(\sum_{m_f}|m_f\rangle\langle m_f|\bigr)|\psi\rangle = \langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ (completeness of an orthonormal basis, [[§50 The Completeness Relation#^prop-50-1|556 Prop. §50.1]]).
+> **Step 1** (part 1). $\sum_{m_f}|\langle m_f|\psi\rangle|^2 = \sum_{m_f}\langle\psi|m_f\rangle\langle m_f|\psi\rangle = \langle\psi|\bigl(\sum_{m_f}|m_f\rangle\langle m_f|\bigr)|\psi\rangle = \langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ (completeness of an orthonormal basis, [[§51 The Completeness Relation#^prop-51-1|556 Prop. §51.1]]).
 >
 > **Step 2** (part 2). $\sum_{m_i}\langle m_i|X|m_i\rangle$ is the trace of $X$ in the basis $\{|m_i\rangle\}$.
 >
@@ -514,7 +514,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 
 ^der-c6b-3-10
 
-*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§50 The Completeness Relation#^prop-50-1|556 Prop. §50.1]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-2|QM Theorem §C1.4.2]]
+*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§51 The Completeness Relation#^prop-51-1|556 Prop. §51.1]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-2|QM Theorem §C1.4.2]]
 
 > [!theorem] Theorem §C6b.3.11: The Cross Section Is an Area for Every n
 > With $N = 2 + n$ external particles, $[d\sigma] = -2$ for every $n$: the dimension of an area.
@@ -625,7 +625,7 @@ The formula $d\sigma$ written once with every factor labelled by the box that pr
 >
 > - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1 — δ under a linear change of variables, $\delta^4(\Lambda q) = |\det\Lambda|^{-1}\delta^4(q) = \delta^4(q)$: the momentum-conserving delta function is Lorentz invariant, so the cross section (Derivation §C6b.3.5, Step 3) and the phase space $d\Pi_n$ (Derivation §C6b.3.8, Step 2) are.
 >
-> From the Math vault: [[§50 The Completeness Relation#^prop-50-1|556 Prop. §50.1]] — completeness of an orthonormal basis, which turns the sum over final spins into $\langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ (Theorem §C6b.3.10, 1).
+> From the Math vault: [[§51 The Completeness Relation#^prop-51-1|556 Prop. §51.1]] — completeness of an orthonormal basis, which turns the sum over final spins into $\langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ (Theorem §C6b.3.10, 1).
 
 > [!remark]- Connections
 > - The cross section as a universal event rate and its classical meaning as an area in the plane of impact parameters — [[§C6b.8 Wave Packets and the Cross Section#^rem-c6b-8-1|§C6b.8, Remark: The cross section as a universal event rate]], [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-1|Def. §C6b.8.1]], [[§B4.2 Scattering Cross-Sections and Rutherford Scattering#^def-b4-2-1|CM Def. §B4.2.1]].

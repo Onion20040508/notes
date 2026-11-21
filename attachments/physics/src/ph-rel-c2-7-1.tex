@@ -1,0 +1,38 @@
+% Figure for Relativity §C2.7 (Def. §C2.7.4–§C2.7.5, Theorem §C2.7.3): induced orientation of the boundary, "outward first".
+% Left: region M in the plane (outer ellipse 1.6 x 1.1, hole of radius 0.45 at (0.2, 0)); N outward, T induced tangent with (N, T) positively oriented.
+% Outer point t = 40 deg: (1.2257, 0.7071), N = (0.6337, 0.7735), T = (-0.7735, 0.6337). Inner point at 200 deg: (-0.2229, -0.1539), N = (0.9397, 0.3420), T = (-0.3420, 0.9397).
+% Right: boundary chart into H^2 = {x^2 >= 0}: outward vector -d_2, induced direction +d_1, since det(-e_2, e_1) = +1 = (-1)^m for m = 2.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+  % ---- left panel: region with a hole ----
+  \begin{scope}
+    \fill[figB!12, even odd rule] (0,0) ellipse (1.6 and 1.1) (0.2,0) circle (0.45);
+    \draw[figB, thick, postaction={decorate}, decoration={markings, mark=at position 0.30 with {\arrow{>}}, mark=at position 0.62 with {\arrow{>}}, mark=at position 0.90 with {\arrow{>}}}] (1.6,0) arc[start angle=0, end angle=360, x radius=1.6, y radius=1.1];
+    \draw[figB, thick, postaction={decorate}, decoration={markings, mark=at position 0.25 with {\arrow{>}}, mark=at position 0.75 with {\arrow{>}}}] (0.65,0) arc[start angle=0, end angle=-360, radius=0.45];
+    \node[figB] at (-0.85,0.15) {$M$};
+    \node[figB, font=\scriptsize] at (-1.25,-1.05) {$\partial M$ (outer)};
+    \node[figB!70!black, font=\tiny] at (0.32,0.22) {hole};
+    % outer point
+    \fill[black] (1.2257,0.7071) circle (1.3pt);
+    \draw[figR, very thick, ->] (1.2257,0.7071) -- ++(0.5070,0.6188) node[above right=-1pt] {$N$};
+    \draw[figG, very thick, ->] (1.2257,0.7071) -- ++(-0.6188,0.5070) node[above left=-2pt] {$T$};
+    % inner point
+    \fill[black] (-0.2229,-0.1539) circle (1.3pt);
+    \draw[figR, very thick, ->] (-0.2229,-0.1539) -- ++(0.3759,0.1368) node[right=-1pt, font=\scriptsize] {$N$};
+    \draw[figG, very thick, ->] (-0.2229,-0.1539) -- ++(-0.1368,0.3759) node[above=-1pt, font=\scriptsize] {$T$};
+    \node[font=\scriptsize, align=center] at (0,-1.55) {outer boundary counterclockwise, inner boundary clockwise:\\at every boundary point $(N, T)$ is positively oriented};
+  \end{scope}
+  % ---- chart arrow ----
+  \draw[->, black!60, thick] (2.0,0.1) to[bend left=20] node[below=2pt, font=\scriptsize, align=center] {boundary\\chart $x$} (3.5,0.1);
+  % ---- right panel: half-space chart ----
+  \begin{scope}[xshift=5.3cm, yshift=-0.5cm]
+    \fill[figB!12] (-1.5,0) rectangle (1.5,1.6);
+    \draw[black!55, ->] (0,0) -- (0,1.85) node[above] {$x^2$};
+    \draw[figB, very thick, postaction={decorate}, decoration={markings, mark=at position 0.25 with {\arrow{>}}, mark=at position 0.8 with {\arrow{>}}}] (-1.6,0) -- (1.6,0) node[right, black] {$x^1$};
+    \node[figB, font=\scriptsize] at (-0.8,0.8) {$H^2 = \{x^2 \ge 0\}$};
+    \node[figB, font=\scriptsize] at (-0.95,-0.25) {$\partial H^2 = \{x^2 = 0\}$};
+    \fill[black] (0.55,0) circle (1.3pt);
+    \draw[figR, very thick, ->] (0.55,0) -- (0.55,-0.75) node[left, font=\scriptsize] {$N = -\partial_2$};
+    \draw[figG, very thick, ->] (0.55,0) -- (1.25,0) node[above, font=\scriptsize] {$\partial_1$};
+    \node[font=\scriptsize, align=left, anchor=west] at (-1.55,-1.35) {$\det(-e_2, e_1) = +1$: $\partial_1$ is positive on $\partial H^2$;\\in dimension $m$: sign $(-1)^m$ for $(\partial_1, \dots, \partial_{m-1})$};
+  \end{scope}
+\end{tikzpicture}

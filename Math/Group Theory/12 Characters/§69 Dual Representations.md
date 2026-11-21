@@ -7,7 +7,7 @@ tags: [group-theory, math493]
 ---
 ← [[§68 Homomorphisms Between Representations]] · ↑ [[· 12 Characters]] · [[§70 Schur's Lemma and Multiplicities]] →
 
-*Source: Lecture (Fri Nov 13). Reference: Axler, *Linear Algebra Done Right*, Section 3F (duality).*
+*Source: Lecture (Fri Nov 13); Problem Set 10, Problem 10.2 (submitted). Reference: Axler, *Linear Algebra Done Right*, Section 3F (duality).*
 
 The formula $\chi_{\operatorname{Hom}(V, W)}(g) = \chi_V(g^{-1})\,\chi_W(g)$ (Proposition [[§68 Homomorphisms Between Representations#^prop-68-5|§68.5]]) has two parts: the inverse in $\chi_V(g^{-1})$, and the product. This section explains the inverse. The function $g \mapsto \chi_V(g^{-1})$ is itself a character, the character of the dual representation $V^\vee$ (Proposition [[§69 Dual Representations#^prop-69-5|§69.5]]). The product comes from tensor products, which the lecture of 11/13 only described briefly (the last subsection of this section); the course will mostly use $\operatorname{Hom}$ instead.
 
@@ -379,6 +379,162 @@ The same formula follows from Proposition [[§68 Homomorphisms Between Represent
 > *Source: not from class*
 
 ^ex-69-4
+
+## Annihilators and the Simplicity of the Dual
+
+*Source: Problem Set 10, Problem 10.2 (submitted). The proofs write $\lambda$ for an element of $V^\vee$ and $\varphi_1, \ldots, \varphi_n$ for a dual basis (written $e_1^\ast, \ldots, e_n^\ast$ in the first subsection of this section).*
+
+> [!definition] Definition §69.5: Annihilator
+> Let $V$ be a finite-dimensional vector space and $U \subseteq V$ a subspace. The **annihilator** of $U$ is
+>
+> $$
+> U^\perp = \{\lambda \in V^\vee : \lambda(u) = 0 \text{ for all } u \in U\},
+> $$
+>
+> a subset of the dual space $V^\vee$ (Definition [[§69 Dual Representations#^def-69-1|§69.1]]).
+>
+> *Source: PS 10.2, which defines $U^\perp$ without giving it a name; Axler calls it the annihilator and writes $U^0$*
+
+^def-69-5
+
+The same symbol $U^\perp$ denotes the orthogonal complement for an inner product (Definition [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-2|§63.2]]). That is a subspace of the same space as $U$ and needs an inner product; the annihilator lies in the dual space and needs no extra structure.
+
+![[m493-69-5.svg]]
+
+*(Not from lecture; figure added.)* The annihilator of the line $U = \mathbb{R}(2, 1)$ in $V = \mathbb{R}^2$. A linear function $\lambda$ on the plane vanishes on $U$ exactly when its level lines are parallel to $U$, and all such functions are multiples of $\lambda(x, y) = x - 2y$. So $U^\perp$ is one-dimensional, as in Proposition [[§69 Dual Representations#^prop-69-8|§69.8]].
+
+> [!theorem] Proposition §69.7: The Annihilator of a Subrepresentation Is a Subrepresentation
+> Let $G$ be a group, $V$ a finite-dimensional representation of $G$, and $V^\vee$ the dual representation (Definition [[§69 Dual Representations#^def-69-4|§69.4]]). If $U$ is a subrepresentation of $V$, then $U^\perp$ (Definition [[§69 Dual Representations#^def-69-5|§69.5]]) is a subrepresentation of $V^\vee$.
+>
+> *Source: PS 10.2(1)*
+
+^prop-69-7
+
+> [!proof]+ Proof
+> *Idea:* $g$ acts on a functional by composing with $\rho_V(g^{-1})$, which maps $U$ into $U$.
+>
+> *(Problem Set 10, Problem 10.2(1), as submitted.)* Recall that the dual representation is $\rho_{V^\vee}(g) = \rho_V(g^{-1})^\vee$, where for a linear map $T \colon V \to V$ the dual map $T^\vee \colon V^\vee \to V^\vee$ is $T^\vee(\lambda) = \lambda \circ T$. Thus
+>
+> $$
+> \big(\rho_{V^\vee}(g)\lambda\big)(v) = \lambda\big(\rho_V(g^{-1})v\big) \qquad (g \in G,\ \lambda \in V^\vee,\ v \in V).
+> $$
+>
+> *$U^\perp$ is a subspace.* If $\lambda, \lambda' \in U^\perp$ and $c$ is a scalar, then $(\lambda + c\lambda')(u) = \lambda(u) + c\lambda'(u) = 0$ for all $u \in U$, so $\lambda + c\lambda' \in U^\perp$; and $0 \in U^\perp$.
+>
+> *$U^\perp$ is $G$-stable.* Let $\lambda \in U^\perp$ and $g \in G$. For $u \in U$, since $U$ is a subrepresentation, $\rho_V(g)u \in U$, so $\lambda\big(\rho_V(g)u\big) = 0$. Since $\rho_V(g) = \rho_V\big((g^{-1})^{-1}\big)$,
+>
+> $$
+> 0 = \lambda\big(\rho_V(g)u\big) = \big(\rho_V(g)^\vee\lambda\big)(u) = \big(\rho_{V^\vee}(g^{-1})\lambda\big)(u) .
+> $$
+>
+> Since $u \in U$ was arbitrary, $\rho_{V^\vee}(g^{-1})\lambda \in U^\perp$. As $g$ ranges over $G$, so does $g^{-1}$; hence $\rho_{V^\vee}(h)\lambda \in U^\perp$ for all $h \in G$. Therefore $U^\perp$ is a subrepresentation of $V^\vee$.
+
+^pf-69-7
+
+> [!theorem] Proposition §69.8: The Dimension of the Annihilator
+> Let $V$ be a finite-dimensional vector space and $U \subseteq V$ a subspace, with annihilator $U^\perp$ (Definition [[§69 Dual Representations#^def-69-5|§69.5]]). Then
+>
+> $$
+> \dim U^\perp = \dim V - \dim U.
+> $$
+>
+> *Source: PS 10.2(2)*
+
+^prop-69-8
+
+> [!proof]+ Proof
+> *Idea:* extend a basis of $U$ to a basis of $V$; the dual basis vectors belonging to the added basis vectors form a basis of $U^\perp$.
+>
+> *(Problem Set 10, Problem 10.2(2), as submitted.)* Let $m = \dim U$ and $n = \dim V$. Choose a basis $v_1, \dots, v_m$ of $U$ and extend it to a basis $v_1, \dots, v_n$ of $V$ ([[§5 Bases#^ladr-2-32|Axler 2.32]]). Let $\varphi_1, \dots, \varphi_n \in V^\vee$ be the dual basis, $\varphi_j(v_k) = \delta_{jk}$ ([[§12 Duality#^ladr-3-112|Axler 3.112]]); it is a basis of $V^\vee$ ([[§12 Duality#^ladr-3-116|Axler 3.116]]). We claim
+>
+> $$
+> U^\perp = \operatorname{span}\{\varphi_{m+1}, \dots, \varphi_n\} .
+> $$
+>
+> *$\supseteq$.* For $j > m$ and $i \le m$, $\varphi_j(v_i) = 0$, so by linearity $\varphi_j$ vanishes on $U = \operatorname{span}\{v_1, \dots, v_m\}$, i.e. $\varphi_j \in U^\perp$. Since $U^\perp$ is a subspace by (1), $\operatorname{span}\{\varphi_{m+1}, \dots, \varphi_n\} \subseteq U^\perp$.
+>
+> *$\subseteq$.* Let $\lambda \in U^\perp$ and write $\lambda = \sum_{j=1}^n c_j \varphi_j$. For $i \le m$, since $v_i \in U$,
+>
+> $$
+> 0 = \lambda(v_i) = \sum_{j=1}^n c_j \varphi_j(v_i) = c_i .
+> $$
+>
+> Hence $c_1 = \cdots = c_m = 0$, and $\lambda = \sum_{j=m+1}^n c_j \varphi_j \in \operatorname{span}\{\varphi_{m+1}, \dots, \varphi_n\}$.
+>
+> Since $\varphi_{m+1}, \dots, \varphi_n$ are part of a basis of $V^\vee$, they are linearly independent, so they form a basis of $U^\perp$. Therefore
+>
+> $$
+> \dim U^\perp = n - m = \dim V - \dim U .
+> $$
+
+^pf-69-8
+
+> [!theorem] Lemma §69.9: $V$ Is Isomorphic to Its Double Dual
+> Let $G$ be a group and $V$ a finite-dimensional representation of $G$. Let $V^{\vee\vee} = (V^\vee)^\vee$ be the dual representation (Definition [[§69 Dual Representations#^def-69-4|§69.4]]) of $V^\vee$. Then the evaluation map
+>
+> $$
+> \operatorname{ev} \colon V \to V^{\vee\vee}, \qquad \operatorname{ev}(v)(\lambda) = \lambda(v),
+> $$
+>
+> is an isomorphism of $G$-representations (Definition [[§61 Representations and Subrepresentations#^def-61-5|§61.5]]).
+>
+> *Source: PS 10.2(3), a step of the submitted proof*
+
+^lem-69-9
+
+> [!proof]+ Proof
+> *(Problem Set 10, Problem 10.2(3), as submitted: the paragraph on the evaluation map.)* **The evaluation map $V \to V^{\vee\vee}$.** Define
+>
+> $$
+> \operatorname{ev} \colon V \to V^{\vee\vee}, \qquad \operatorname{ev}(v)(\lambda) = \lambda(v) .
+> $$
+>
+> It is linear. It is injective: if $v \neq 0$, extend $v$ to a basis of $V$ and let $\lambda$ be the first element of the dual basis; then $\operatorname{ev}(v)(\lambda) = \lambda(v) = 1 \neq 0$. Since $\dim V^{\vee\vee} = \dim V^\vee = \dim V$ ([[§12 Duality#^ladr-3-111|Axler 3.111]]), $\operatorname{ev}$ is a linear isomorphism.
+>
+> It is a homomorphism of representations. By the definition of the dual representation, applied to $V^\vee$ and then to $V$,
+>
+> $$
+> \rho_{V^{\vee\vee}}(g) = \rho_{V^\vee}(g^{-1})^\vee, \qquad \rho_{V^\vee}(g^{-1}) = \rho_V\big((g^{-1})^{-1}\big)^\vee = \rho_V(g)^\vee .
+> $$
+>
+> Hence, for $g \in G$, $v \in V$ and $\lambda \in V^\vee$,
+>
+> $$
+> \begin{aligned}\big(\rho_{V^{\vee\vee}}(g)\operatorname{ev}(v)\big)(\lambda) &= \big(\operatorname{ev}(v) \circ \rho_{V^\vee}(g^{-1})\big)(\lambda) = \operatorname{ev}(v)\big(\rho_V(g)^\vee\lambda\big) \\
+> &= \big(\lambda \circ \rho_V(g)\big)(v) = \lambda\big(\rho_V(g)v\big) = \operatorname{ev}\big(\rho_V(g)v\big)(\lambda) .\end{aligned}
+> $$
+>
+> Since $\lambda$ is arbitrary, $\rho_{V^{\vee\vee}}(g) \circ \operatorname{ev} = \operatorname{ev} \circ \rho_V(g)$ for all $g \in G$. Thus $\operatorname{ev}$ is an isomorphism of representations $V \cong V^{\vee\vee}$.
+
+^pf-69-9
+
+> [!theorem] Proposition §69.10: $V$ Is Simple If and Only If $V^\vee$ Is Simple
+> Let $G$ be a group and $V$ a finite-dimensional representation of $G$. Then $V$ is simple (Definition [[§65 Simple Representations#^def-65-1|§65.1]]) if and only if the dual representation $V^\vee$ (Definition [[§69 Dual Representations#^def-69-4|§69.4]]) is simple.
+>
+> *Source: PS 10.2(3)*
+
+^prop-69-10
+
+> [!proof]+ Proof
+> *Idea:* a subrepresentation $U$ of $V$ strictly between $\{0\}$ and $V$ gives the subrepresentation $U^\perp$ of $V^\vee$ strictly between $\{0\}$ and $V^\vee$; for the converse apply this to $V^\vee$ and use $V^{\vee\vee} \cong V$.
+>
+> *(Problem Set 10, Problem 10.2(3), as submitted; parts (1) and (2) are Propositions [[§69 Dual Representations#^prop-69-7|§69.7]] and [[§69 Dual Representations#^prop-69-8|§69.8]], and the isomorphism $V \cong V^{\vee\vee}$ is Lemma [[§69 Dual Representations#^lem-69-9|§69.9]]. That a representation isomorphic to a simple one is simple is Lemma [[§61 Representations and Subrepresentations#^lem-61-5|§61.5]](4).)*
+>
+> **If $V^\vee$ is simple, then $V$ is simple.** We prove the contrapositive. Suppose $U \subseteq V$ is a subrepresentation with $0 < \dim U < \dim V$. By (1), $U^\perp$ is a subrepresentation of $V^\vee$, and by (2) and $\dim V^\vee = \dim V$ ([[§12 Duality#^ladr-3-111|Axler 3.111]]),
+>
+> $$
+> 0 < \dim U^\perp = \dim V - \dim U < \dim V^\vee .
+> $$
+>
+> Hence $U^\perp$ is a nonzero proper subrepresentation of $V^\vee$, and $V^\vee$ is not simple.
+>
+> **If $V$ is simple, then $V^\vee$ is simple.** Suppose $V$ is simple. An isomorphism of representations carries subrepresentations to subrepresentations of the same dimension, in both directions, so $V^{\vee\vee} \cong V$ is simple. Applying the first part to the representation $V^\vee$ (whose dual is $V^{\vee\vee}$), $V^\vee$ is simple.
+
+^pf-69-10
+
+*Uses:* [[§69 Dual Representations#^prop-69-7|§69.7]], [[§69 Dual Representations#^prop-69-8|§69.8]], [[§69 Dual Representations#^lem-69-9|§69.9]], [[§61 Representations and Subrepresentations#^lem-61-5|§61.5]]
+
+The submitted proof of the first direction assumes a subrepresentation $U$ with $0 < \dim U < \dim V$. The remaining way for $V$ not to be simple is $V = \{0\}$; then $V^\vee = \{0\}$ as well, and neither is simple.
 
 ## A Word on Tensor Products
 

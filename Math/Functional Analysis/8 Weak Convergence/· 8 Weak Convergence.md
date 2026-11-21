@@ -10,7 +10,7 @@ tags: [chapter, functional-analysis]
 In finite dimensions every bounded sequence has a convergent subsequence; in infinite dimensions this fails ([[§20 Compactness and the Unit Ball#^thm-20-5|Theorem §20.5]]). This chapter weakens the notion of convergence, testing a sequence only against bounded linear functionals, to recover some of the compactness that is lost. The price is that weak limits are less well behaved: they need not respect norms or products. [[§44 Weak Sequential Compactness|§44]] collects the gain: bounded sequences have weak-$\ast$ convergent subsequences in the dual of a separable space and weakly convergent subsequences in a reflexive space, and closed convex sets in a reflexive space have closest points. [[§45 Convergence of Operators|§45]] carries the modes of convergence over to sequences of operators, and [[§46 The Transpose|§46]] introduces the transpose of a bounded map, which respects weak convergence of operators but not strong convergence.
 
 **Builds on:** [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (2), [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (9), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (4), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (11), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (47), [[· 7 Inverses, Open Maps, and Baire Category|7 Inverses, Open Maps, and Baire Category]] (6)
-**Used by:** [[· 10 Functional Analysis and Quantum Mechanics|10 Functional Analysis and Quantum Mechanics]] (2)
+**Used by:** [[· 9 Spectral Theory|9 Spectral Theory]] (3), [[· 10 Functional Analysis and Quantum Mechanics|10 Functional Analysis and Quantum Mechanics]] (2)
 **Builds on (other subjects):** [[Measure Theory]] (3), [[Single Variable Analysis]] (1)
 
 ## Sections
@@ -35,5 +35,5 @@ In finite dimensions every bounded sequence has a convergent subsequence; in inf
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[Helly's Theorem|Theorem §44.1: Helly's Theorem]]: 7 later results
 - [[§44 Weak Sequential Compactness#^lem-44-3|Lemma §44.3: The Closed Span of a Countable Set is Separable]]: 6 later results
+- [[§46 The Transpose#^prop-46-1|Proposition §46.1: Composing a Functional with a Bounded Map]]: 6 later results
 - [[Criterion for Weak Convergence|Theorem §43.5: Criterion for Weak Convergence]]: 5 later results
-- [[Hyperplane Separation in a Normed Space|Theorem §43.8: Hyperplane Separation in a Normed Space]]: 5 later results

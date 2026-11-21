@@ -1,0 +1,61 @@
+% Figure for Relativity §C1.3 (Einstein's four lifts, schematic): top row: lab pushed by a rocket at acceleration g far from masses | lab at rest on the Earth; a released ball falls to the floor with acceleration g in both (Theorem §C1.3.4, part 2). Bottom row: rocket coasting | lab falling freely toward the Earth; the released ball floats in both (part 1). Not to scale.
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small, x=1cm, y=1cm]
+  % ---------- helper macros ----------
+  \newcommand{\lab}[2]{% lower-left corner (#1,#2): lab 2.2 x 2.6 with an observer
+    \draw[very thick, black!80, fill=black!3] (#1,#2) rectangle ++(2.2,2.6);
+    % observer (stick figure) standing on the floor at the left
+    \draw[black!70, thick] ({#1+0.45},{#2+0.0}) -- ({#1+0.55},{#2+0.55}) -- ({#1+0.65},{#2+0.0});
+    \draw[black!70, thick] ({#1+0.55},{#2+0.55}) -- ({#1+0.55},{#2+1.15});
+    \draw[black!70, thick] ({#1+0.55},{#2+1.0}) -- ({#1+0.9},{#2+1.25});
+    \draw[black!70, thick, fill=white] ({#1+0.55},{#2+1.32}) circle (0.17);
+  }
+  \newcommand{\flame}[2]{% rocket nozzle and flame under a lab at (#1,#2)
+    \draw[black!70, fill=black!15] ({#1+0.75},{#2}) -- ({#1+0.6},{#2-0.35}) -- ({#1+1.6},{#2-0.35}) -- ({#1+1.45},{#2}) -- cycle;
+    \fill[figO!80] ({#1+0.75},{#2-0.35}) .. controls ({#1+0.85},{#2-0.9}) and ({#1+1.0},{#2-1.0}) .. ({#1+1.1},{#2-1.25}) .. controls ({#1+1.2},{#2-1.0}) and ({#1+1.35},{#2-0.9}) .. ({#1+1.45},{#2-0.35}) -- cycle;
+  }
+  \newcommand{\nozzle}[2]{% nozzle without flame
+    \draw[black!70, fill=black!15] ({#1+0.75},{#2}) -- ({#1+0.6},{#2-0.35}) -- ({#1+1.6},{#2-0.35}) -- ({#1+1.45},{#2}) -- cycle;
+  }
+  % ---------- (a) rocket, acceleration g ----------
+  \lab{0}{0}
+  \flame{0}{0}
+  \draw[->, figB, very thick] (2.55,0.6) -- (2.55,2.0) node[midway, right] {$a = g$};
+  \fill[figR] (1.55,1.9) circle (0.12);
+  \draw[->, figR, thick] (1.55,1.72) -- (1.55,0.95) node[midway, right, font=\scriptsize] {$g$};
+  \node[anchor=south, align=center, font=\small] at (1.1,2.75) {far from all masses,\\ pushed by a rocket};
+  % ---------- (b) at rest on Earth ----------
+  \begin{scope}[xshift=5.4cm]
+    \fill[black!12] (-0.5,-0.12) .. controls (1.1,0.12) .. (2.7,-0.12) -- (2.7,-0.8) -- (-0.5,-0.8) -- cycle;
+    \draw[black!60] (-0.5,-0.12) .. controls (1.1,0.12) .. (2.7,-0.12);
+    \node[black!60, font=\scriptsize] at (1.1,-0.5) {Earth};
+    \lab{0}{0}
+    \draw[->, figR, very thick] (2.55,2.0) -- (2.55,0.6) node[midway, right] {$g$};
+    \fill[figR] (1.55,1.9) circle (0.12);
+    \draw[->, figR, thick] (1.55,1.72) -- (1.55,0.95) node[midway, right, font=\scriptsize] {$g$};
+    \node[anchor=south, align=center, font=\small] at (1.1,2.75) {at rest\\ on the Earth};
+  \end{scope}
+  \node[font=\Large] at (4.3,1.3) {$\equiv$};
+  \node[anchor=west, align=left, font=\small, black!80] at (9.4,1.3) {released ball\\ falls with $g$};
+  % ---------- (c) rocket coasting ----------
+  \begin{scope}[yshift=-5.4cm]
+    \lab{0}{0}
+    \nozzle{0}{0}
+    \node[figB] at (2.75,1.3) {$a = 0$};
+    \fill[figR] (1.55,1.6) circle (0.12);
+    \foreach \a in {0,90,180,270} \draw[figR!60, thin] ({1.55+0.2*cos(\a)},{1.6+0.2*sin(\a)}) -- ({1.55+0.3*cos(\a)},{1.6+0.3*sin(\a)});
+    \node[anchor=south, align=center, font=\small] at (1.1,2.75) {far from all masses,\\ rocket off};
+  \end{scope}
+  % ---------- (d) falling freely ----------
+  \begin{scope}[xshift=5.4cm, yshift=-5.4cm]
+    \fill[black!12] (-0.4,-1.35) .. controls (1.1,-0.85) .. (2.6,-1.35) -- (2.6,-1.6) -- (-0.4,-1.6) -- cycle;
+    \draw[black!60] (-0.4,-1.35) .. controls (1.1,-0.85) .. (2.6,-1.35);
+    \node[black!60, font=\scriptsize] at (1.1,-1.47) {Earth};
+    \lab{0}{0}
+    \draw[->, figR, very thick] (2.55,2.0) -- (2.55,0.6) node[midway, right, align=left] {lab falls\\ with $g$};
+    \fill[figR] (1.55,1.6) circle (0.12);
+    \foreach \a in {0,90,180,270} \draw[figR!60, thin] ({1.55+0.2*cos(\a)},{1.6+0.2*sin(\a)}) -- ({1.55+0.3*cos(\a)},{1.6+0.3*sin(\a)});
+    \node[anchor=south, align=center, font=\small] at (1.1,2.75) {falling freely\\ toward the Earth};
+  \end{scope}
+  \node[font=\Large] at (4.3,-4.1) {$\equiv$};
+  \node[anchor=west, align=left, font=\small, black!80] at (9.4,-4.1) {released ball\\ floats};
+\end{tikzpicture}

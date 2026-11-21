@@ -1,0 +1,16 @@
+% Figure from MATH 493 notes, section 72. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, scale=0.62]
+\foreach \j/\bx/\by/\sx/\lab in {0/1/0/2/{2}, 1/0/1/0/{0}, 2/-1/0/-2/{-2}, 3/0/-1/0/{0}} {
+\begin{scope}[xshift=\j*6.3cm]
+\draw[->, black!55, thin] (-2.3,0) -- (2.5,0);
+\draw[->, black!55, thin] (0,-1.6) -- (0,1.7);
+\draw[black!40] (0,0) circle (1);
+\ifnum\j=0 \draw[->, very thick, blue!70!black] (0,0.07) -- (1,0.07); \draw[->, very thick, red!70!black] (1,-0.07) -- (2,-0.07); \fi
+\ifnum\j=2 \draw[->, very thick, blue!70!black] (0,0.07) -- (-1,0.07); \draw[->, very thick, red!70!black] (-1,-0.07) -- (-2,-0.07); \fi
+\ifnum\j=1 \draw[->, very thick, blue!70!black] (-0.07,0) -- (-0.07,1); \draw[->, very thick, red!70!black] (0.07,1) -- (0.07,0); \fi
+\ifnum\j=3 \draw[->, very thick, blue!70!black] (-0.07,0) -- (-0.07,-1); \draw[->, very thick, red!70!black] (0.07,-1) -- (0.07,0); \fi
+\fill[orange!85!black] (\sx,0) circle (2.6pt);
+\node[anchor=north] at (0,-1.75) {$j = \j$: \ $\textcolor{blue!70!black}{i^{\j}} + \textcolor{red!70!black}{(-i)^{\j}} = \textcolor{orange!85!black}{\lab}$};
+\end{scope}
+}
+\end{tikzpicture}

@@ -1,0 +1,21 @@
+% Figure for Relativity §C5.4 (opening and Example §C5.4.1): flat spacetime in two charts that agree for t <= 0. f(t) = 1.2 exp(-1/t) for t > 0, f = 0 for t <= 0 (smooth). Left: inertial chart (x, t); black: free worldlines x = const; blue: lines x' = const of the new chart, x = x' + f(t). Right: the new chart (x', t); blue: x' = const; black: the same free worldlines, x' = x - f(t). Grey band: t <= 0, where the two metrics coincide.
+\begin{tikzpicture}
+\begin{axis}[nfig, name=L, width=6.2cm, height=6.2cm, xmin=-1.8, xmax=3.2, ymin=-1.0, ymax=2.6, xlabel={$x$}, ylabel={$t$}, title={\small inertial chart $(t, x)$; \textcolor{figB}{blue}: $x' = \text{const}$}, axis lines=box, xtick={-1,0,1,2,3}, ytick={-1,0,1,2}]
+  \fill[black!7] (axis cs:-1.8,-1.0) rectangle (axis cs:3.2,0);
+  \foreach \c in {-1,0,1,2} {
+    \edef\temp{\noexpand\addplot[black, thick, domain=-1:2.6] ({\c}, {x});}\temp
+    \edef\temp{\noexpand\addplot[figB, thick, domain=-1:0] ({\c}, {x});}\temp
+    \edef\temp{\noexpand\addplot[figB, thick, domain=0.02:2.6, samples=90, variable=\noexpand\s] ({\c + 1.2*exp(-1/\noexpand\s)}, {\noexpand\s});}\temp
+  }
+  \node[font=\scriptsize, black!60] at (axis cs:0.7,-0.55) {charts agree};
+\end{axis}
+\begin{axis}[nfig, at={(L.east)}, anchor=west, xshift=1.2cm, width=6.2cm, height=6.2cm, xmin=-2.6, xmax=2.4, ymin=-1.0, ymax=2.6, xlabel={$x'$}, ylabel={$t$}, title={\small new chart $(t, x')$; black: free particles}, axis lines=box, xtick={-2,-1,0,1,2}, ytick={-1,0,1,2}]
+  \fill[black!7] (axis cs:-2.6,-1.0) rectangle (axis cs:2.4,0);
+  \foreach \c in {-1,0,1,2} {
+    \edef\temp{\noexpand\addplot[figB, thick, domain=-1:2.6] ({\c}, {x});}\temp
+    \edef\temp{\noexpand\addplot[black, thick, domain=-1:0] ({\c}, {x});}\temp
+    \edef\temp{\noexpand\addplot[black, thick, domain=0.02:2.6, samples=90, variable=\noexpand\s] ({\c - 1.2*exp(-1/\noexpand\s)}, {\noexpand\s});}\temp
+  }
+  \node[font=\scriptsize, black!60] at (axis cs:-0.3,-0.55) {same metric};
+\end{axis}
+\end{tikzpicture}

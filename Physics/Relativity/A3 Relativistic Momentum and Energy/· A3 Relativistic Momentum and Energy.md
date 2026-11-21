@@ -9,7 +9,7 @@ tags: [chapter, relativity]
 ← [[· A2 Relativistic Kinematics]] · ↑ [[Relativity]] · [[· B1 Minkowski Spacetime and the Lorentz Group]] →
 
 **Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (2), [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (13), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (1), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (1)
-**Used by:** [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (12), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (5), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (1)
+**Used by:** [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (12), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (5), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (1), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (5)
 
 ## Sections
 - [[§A3.1 Relativistic Momentum]] — UP Vol. 3 §5.8

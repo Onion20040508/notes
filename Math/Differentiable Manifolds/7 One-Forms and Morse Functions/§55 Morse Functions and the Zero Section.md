@@ -50,7 +50,7 @@ $$
 >
 > *(1)* This is Corollary [[§52 The Cotangent Bundle#^cor-52-3|§52.3]](3), in the present notation. Its proof: a point of $\mathcal{Z}$ is $(p, 0)$, and it lies in $T^{\ast}U$ for any chart $(U, \varphi)$ at $p$. For $(q, \alpha) \in T^{\ast}U$, $\alpha = \sum_j \xi_j(q, \alpha)\, dx^j|_q$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]), and the $dx^j|_q$ are a basis (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]), so $\alpha = 0$ exactly when $\xi_1(q, \alpha) = \cdots = \xi_m(q, \alpha) = 0$. Hence $\mathcal{Z} \cap T^{\ast}U$ is cut out by the vanishing of the last $m$ of the $2m$ coordinates of $\hat\varphi$, which says that $\hat\varphi$ is adapted to $\mathcal{Z}$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), and $\mathcal{Z}$ is a regular submanifold of codimension $m$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]], with $2m$ coordinates and $k = m$).
 >
-> *(2)* $\zeta$ is the zero one-form, $\zeta(q) = (q, 0)$: a section of $T^{\ast}M$ whose coefficient functions in every chart, $q \mapsto 0(\partial/\partial x^j|_q) = 0$, are constant, hence smooth, so $\zeta$ is smooth by Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3). By Proposition [[§53 One-Forms#^prop-53-1|§53.1]](2), with $\theta = \zeta$ and all $\theta_j = 0$, its coordinate representation in the charts $(U, \varphi)$ and $(T^{\ast}U, \hat\varphi)$ is
+> *(2)* $\zeta$ is the zero one-form, $\zeta(q) = (q, 0)$: a rough section of $T^{\ast}M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]) whose coefficient functions in every chart, $q \mapsto 0(\partial/\partial x^j|_q) = 0$, are constant, hence smooth, so $\zeta$ is smooth by Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3). By Proposition [[§53 One-Forms#^prop-53-1|§53.1]](2), with $\theta = \zeta$ and all $\theta_j = 0$, its coordinate representation in the charts $(U, \varphi)$ and $(T^{\ast}U, \hat\varphi)$ is
 >
 > $$
 > \hat\varphi \circ \zeta \circ \varphi^{-1}(r) = (r, 0, \ldots, 0), \qquad r \in \varphi(U) .
@@ -80,7 +80,7 @@ $$
 
 ^pf-55-1
 
-*Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]
+*Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§45 Fibrations#^def-45-5|Def. §45.5]]
 
 The zero section is the first of a family of submanifolds of $T^{\ast}M$, one for each regular submanifold $S$ of $M$: put all the conormal spaces of $S$ together, as the cotangent spaces are put together in $T^{\ast}M$. *(Not from the assignment; the conormal spaces are those of [[§37 Regular Submanifolds|§37]], see the remark [[§39 Transversality and Lagrange Multipliers#^rem-39-2|The Conormal Bundle]] in [[§39 Transversality and Lagrange Multipliers|§39]].)*
 
@@ -105,6 +105,7 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 > $$
 >
 > $k + (m - k) = m$ of the $2m$ coordinates of $\hat\varphi$ are set equal to $0$.
+>
 > 2. $N^{\ast}S$ is a regular submanifold of $T^{\ast}M$ of codimension $m$, hence of dimension $2m - m = m$, whatever $k$ is. The standard chart $\hat\varphi$ over an adapted chart, with its coordinates reordered so that these $m$ come last, is adapted to $N^{\ast}S$.
 
 ^prop-55-2
@@ -220,7 +221,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 > [!theorem] Proposition §55.6: The Vertical Space of $T^*M$ Along the Zero Section
 > Let $p \in M$, $(U, \varphi)$ a chart at $p$, and $(\bar x^i, \xi_j)$ the standard coordinates on $T^{\ast}U$.
 >
-> 1. $\pi_{\ast(p,0)}\big(\partial/\partial \bar x^i|_{(p,0)}\big) = \partial/\partial x^i|_p$ and $\pi_{\ast(p,0)}\big(\partial/\partial \xi_j|_{(p,0)}\big) = 0$. Hence the vertical space (Definition [[§45 Fibrations#^def-45-5|§45.5]]) is
+> 1. $\pi_{\ast(p,0)}\big(\partial/\partial \bar x^i|_{(p,0)}\big) = \partial/\partial x^i|_p$ and $\pi_{\ast(p,0)}\big(\partial/\partial \xi_j|_{(p,0)}\big) = 0$. Hence the vertical space (Definition [[§45 Fibrations#^def-45-6|§45.6]]) is
 >
 > $$
 > V_{(p,0)} = \ker \pi_{\ast(p,0)} = \operatorname{Span}\Big\{ \frac{\partial}{\partial \xi_1}\Big|_{(p,0)}, \ldots, \frac{\partial}{\partial \xi_m}\Big|_{(p,0)} \Big\}, \qquad \dim V_{(p,0)} = m .
@@ -330,6 +331,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 > H_{m1}(q) & \cdots & H_{mm}(q)
 > \end{array}\right) .
 > $$
+>
 > 3. If $p \in \operatorname{Crit}(f)$, then $s_f(p) = (p, 0)$, and for $v \in T_pM$, in the splitting of Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]](3),
 >
 > $$

@@ -1,0 +1,54 @@
+% Figure for Relativity §C4.2: T^{μν} as fluxes through the faces of a small box (signature −+++, c = 1).
+% (a) A cube of matter at rest in an observer's frame; on its face x = const the four components T^{μx} = flux of μ-momentum across it:
+%     T^{0x} energy flux (orange, dashed), T^{xx} normal stress (red), T^{yx}, T^{zx} shear stresses (blue). Inside: T^{00}, T^{i0}.
+% (b) The section z = 0 of a cube of side l centred at the origin, with the shear forces on the element from its neighbours:
+%     on x = ±l/2 the forces ∓T^{yx} l² (along y), on y = ±l/2 the forces ∓T^{xy} l² (along x); torque τ_z = l³(T^{xy} − T^{yx}).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small]
+\begin{scope}[x={(1cm,0cm)}, y={(0.55cm,0.38cm)}, z={(0cm,1cm)}]
+  % back edges
+  \draw[black!35] (0,2.4,0) -- (2.4,2.4,0);
+  \draw[black!35] (0,2.4,0) -- (0,2.4,2.4);
+  \draw[black!35] (0,0,0) -- (0,2.4,0);
+  % front faces
+  \fill[black!5] (0,0,0) -- (2.4,0,0) -- (2.4,0,2.4) -- (0,0,2.4) -- cycle;
+  \fill[black!5] (0,0,2.4) -- (2.4,0,2.4) -- (2.4,2.4,2.4) -- (0,2.4,2.4) -- cycle;
+  \fill[figB!12] (2.4,0,0) -- (2.4,2.4,0) -- (2.4,2.4,2.4) -- (2.4,0,2.4) -- cycle;
+  \draw[black!80] (0,0,0) -- (2.4,0,0) -- (2.4,0,2.4) -- (0,0,2.4) -- cycle;
+  \draw[black!80] (0,0,2.4) -- (0,2.4,2.4) -- (2.4,2.4,2.4) -- (2.4,0,2.4);
+  \draw[black!80] (2.4,0,0) -- (2.4,2.4,0) -- (2.4,2.4,2.4);
+  % arrows from the centre of the face x = const
+  \coordinate (c) at (2.4,1.2,1.2);
+  \fill[black] (c) circle (1.3pt);
+  \draw[->, figR, very thick] (c) -- ++(1.5,0,0) node[right] {$T^{xx}$};
+  \draw[->, figB, very thick] (c) -- ++(0,1.55,0) node[above right=-1pt] {$T^{yx}$};
+  \draw[->, figB, very thick] (c) -- ++(0,0,1.8) node[right] {$T^{zx}$};
+  \draw[->, figO, very thick, dashed] (c) ++(0,0,-0.35) -- ++(1.5,0,-0.45) node[right] {$T^{0x}$};
+  % inside labels
+  \node[align=center, font=\scriptsize] at (1.05,0,1.25) {$T^{00}$: energy\\density\\[2pt]$T^{i0}$: momentum\\density};
+  % axes
+  \draw[->, black!55] (-0.9,-0.3,0) -- (-0.15,-0.3,0) node[right, font=\scriptsize] {$x$};
+  \draw[->, black!55] (-0.9,-0.3,0) -- (-0.9,0.6,0) node[above, font=\scriptsize] {$y$};
+  \draw[->, black!55] (-0.9,-0.3,0) -- (-0.9,-0.3,0.75) node[above, font=\scriptsize] {$z$};
+  \node[font=\scriptsize, align=left, anchor=north west] at (-0.6,0,-0.35) {face $x = \mathrm{const}$ (shaded): flux of $\mu$-momentum $= T^{\mu x}$};
+  \node[font=\bfseries] at (-0.9,0,3.3) {(a)};
+\end{scope}
+\begin{scope}[xshift=9.2cm, yshift=1.3cm]
+  \def\h{1.1}
+  \fill[black!5] (-\h,-\h) rectangle (\h,\h);
+  \draw[black!80] (-\h,-\h) rectangle (\h,\h);
+  \fill[black] (0,0) circle (1.3pt);
+  % forces on the element (shear only)
+  \draw[->, figB, very thick] (\h,0.55) -- (\h,-0.55) node[right, pos=0.15] {$-T^{yx}l^2$};
+  \draw[->, figB, very thick] (-\h,-0.55) -- (-\h,0.55) node[left, pos=0.85] {$T^{yx}l^2$};
+  \draw[->, figR, very thick] (0.55,\h) -- (-0.55,\h) node[above, pos=0.2] {$-T^{xy}l^2$};
+  \draw[->, figR, very thick] (-0.55,-\h) -- (0.55,-\h) node[below, pos=0.8] {$T^{xy}l^2$};
+  % rotation senses
+  \draw[->, figB, thick] (60:0.62) arc[start angle=60, end angle=-60, radius=0.62];
+  \draw[->, figR, thick] (150:0.45) arc[start angle=150, end angle=270, radius=0.45];
+  \draw[black!55, |<->|] (-\h,-1.75) -- (\h,-1.75) node[midway, below] {$l$};
+  \draw[->, black!55] (1.75,-1.3) -- (2.35,-1.3) node[right, font=\scriptsize] {$x$};
+  \draw[->, black!55] (1.75,-1.3) -- (1.75,-0.7) node[above, font=\scriptsize] {$y$};
+  \node[align=center, font=\scriptsize] at (0,-2.45) {section $z = 0$:\ $\tau_z = l^3\,(T^{xy} - T^{yx})$,\ $I = \rho\,l^5/6$};
+  \node[font=\bfseries] at (-2.4,1.9) {(b)};
+\end{scope}
+\end{tikzpicture}

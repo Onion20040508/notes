@@ -1,0 +1,37 @@
+% Figure for Relativity §C2.3 (the constant field d/dx on the plane and the polar coordinate basis d/dr (unit, radial) and d/dtheta (tangential, length r) at three points A (r = 1.2, theta = 30 deg), B (r = 2.4, theta = 30 deg), C (r = 1.8, theta = 120 deg). At each point d/dx = cos(theta) d/dr - (sin(theta)/r) d/dtheta; the two component arrows (blue: V^r d/dr, red: V^theta d/dtheta) add up to the same black arrow. Components (V^r, V^theta): A (0.866, -0.417), B (0.866, -0.208), C (-0.5, -0.481), checked by script.)
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small, x=1.25cm, y=1.25cm]
+  \def\s{0.72}
+  % polar grid
+  \begin{scope}
+    \clip (-2.9,-0.6) rectangle (3.1,2.9);
+    \foreach \R in {0.6,1.2,1.8,2.4} \draw[black!12] (0,0) circle (\R);
+    \foreach \a in {0,30,...,330} \draw[black!12] (0,0) -- (\a:2.75);
+  \end{scope}
+  % axes
+  \draw[->, black!55] (-2.9,0) -- (3.1,0) node[right] {$x$};
+  \draw[->, black!55] (0,-0.6) -- (0,2.9) node[above] {$y$};
+  % one point: #1 = r, #2 = theta (deg), #3 = label, #4 = label anchor
+  \newcommand{\pt}[4]{%
+    \coordinate (P) at (#2:#1);
+    % basis vectors (dashed): d/dr unit radial, d/dtheta = r * unit tangential
+    \draw[->, figB, densely dashed, thin] (P) -- ++(#2:\s) node[pos=1.0, anchor=west, inner sep=1.5pt, font=\scriptsize] {$\partial_r$};
+    \draw[->, figR, densely dashed, thin] (P) -- ++({#2+90}:{#1*\s}) node[pos=1.0, anchor=south east, inner sep=1pt, font=\scriptsize] {$\partial_\theta$};
+    % components: V^r d/dr = cos * s * radial ; V^theta d/dtheta = s sin(theta) (sin, -cos)
+    \draw[->, figB, very thick] (P) -- ++({\s*cos(#2)*cos(#2)},{\s*cos(#2)*sin(#2)}) coordinate (Q);
+    \draw[->, figR, very thick] (Q) -- ++({\s*sin(#2)*sin(#2)},{-\s*sin(#2)*cos(#2)});
+    % the field itself
+    \draw[->, black, very thick] (P) -- ++(\s,0);
+    \fill[black] (P) circle (1.6pt) node[anchor=#4, inner sep=2pt] {#3};
+  }
+  \pt{1.2}{30}{$A$}{east}
+  \pt{2.4}{30}{$B$}{east}
+  \pt{1.8}{120}{$C$}{north east}
+  % legend
+  \node[anchor=west, font=\scriptsize] at (3.3,2.5) {\textbf{black}: $\partial_x$, the same arrow everywhere};
+  \node[anchor=west, font=\scriptsize, figB] at (3.3,2.1) {blue: $V^r\partial_r$ \quad (dashed: $\partial_r$)};
+  \node[anchor=west, font=\scriptsize, figR] at (3.3,1.7) {red: $V^\theta\partial_\theta$ \quad (dashed: $\partial_\theta$, length $r$)};
+  \node[anchor=west, font=\scriptsize] at (3.3,1.1) {$(V^r, V^\theta) = (\cos\theta,\ -\sin\theta/r)$:};
+  \node[anchor=west, font=\scriptsize] at (3.5,0.7) {$A$: $(0.87,\ -0.42)$};
+  \node[anchor=west, font=\scriptsize] at (3.5,0.35) {$B$: $(0.87,\ -0.21)$};
+  \node[anchor=west, font=\scriptsize] at (3.5,0.0) {$C$: $(-0.50,\ -0.48)$};
+\end{tikzpicture}

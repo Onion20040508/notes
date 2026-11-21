@@ -1,0 +1,40 @@
+% Relativity §C7.3, Figure ph-rel-c7-3-2: the equatorial slice of the Einstein–Rosen bridge (Kruskal T = 0, theta = pi/2)
+% embedded in Euclidean R^3 as the Flamm paraboloid r = 2M + z^2/(8M), both sheets (M = 1).
+% z(r) = sqrt(8M(r - 2M)): z(3M) = 2.8284, z(4M) = 4, z(6M) = 5.6569; proper radial distance from the throat
+% l(r) = sqrt(r(r - 2M)) + 2M ln((sqrt r + sqrt(r - 2M))/sqrt(2M)): l(3M) = 3.0490M, l(4M) = 4.5912M (checked by script).
+\begin{tikzpicture}[font=\small]
+\begin{axis}[view={20}{14}, axis lines=none, width=11cm, height=11cm,
+  xmin=-6.6, xmax=7.5, ymin=-6.6, ymax=6.6, zmin=-6, zmax=6, unit vector ratio=1 1 1, clip=false]
+% surface (z, phi) -> (r cos phi, r sin phi, z), r = 2 + z^2/8
+\addplot3[surf, shader=flat, draw=figB!35, fill=figB!8, fill opacity=0.55, line width=0.15pt,
+  domain=-5.6569:5.6569, y domain=0:360, samples=21, samples y=37]
+  ({(2 + x*x/8)*cos(y)}, {(2 + x*x/8)*sin(y)}, {x});
+% throat
+\addplot3[figR, line width=1.2pt, domain=0:360, samples=73, samples y=1] ({2*cos(x)}, {2*sin(x)}, {0});
+% circles r = 3M, 4M on both sheets
+\addplot3[figO, line width=0.9pt, domain=0:360, samples=73, samples y=1] ({3*cos(x)}, {3*sin(x)}, {2.8284});
+\addplot3[figO, line width=0.9pt, domain=0:360, samples=73, samples y=1] ({3*cos(x)}, {3*sin(x)}, {-2.8284});
+\addplot3[figG, line width=0.9pt, domain=0:360, samples=73, samples y=1] ({4*cos(x)}, {4*sin(x)}, {4});
+\addplot3[figG, line width=0.9pt, domain=0:360, samples=73, samples y=1] ({4*cos(x)}, {4*sin(x)}, {-4});
+% meridian phi = 180 deg (left silhouette) with points at the throat and at r = 3M on both sides
+\addplot3[black, line width=1.1pt, domain=-5.6569:5.6569, samples=41, samples y=1] ({-(2 + x*x/8)}, {0}, {x});
+\addplot3[black, only marks, mark=*, mark size=1.3pt] coordinates {(-2,0,0) (-3,0,2.8284) (-3,0,-2.8284)};
+\node[anchor=east, font=\scriptsize, align=right] at (axis cs:-3.15,0,2.8284) {$\ell = +3.05\,M$};
+\node[anchor=east, font=\scriptsize, align=right] at (axis cs:-3.15,0,-2.8284) {$\ell = -3.05\,M$};
+\node[anchor=east, font=\scriptsize] at (axis cs:-2.1,0,0) {$\ell = 0$};
+\node[anchor=east, font=\scriptsize, align=center] at (axis cs:-4.6,0,0.6) {meridian:\\ proper radial\\ distance $\ell$};
+% labels with leaders
+\draw[black!45, densely dotted] (axis cs:2,0,0) -- (axis cs:4.6,0,0);
+\draw[black!45, densely dotted] (axis cs:3,0,2.8284) -- (axis cs:4.6,0,2.8284);
+\draw[black!45, densely dotted] (axis cs:4,0,4) -- (axis cs:4.6,0,4);
+\draw[black!45, densely dotted] (axis cs:3,0,-2.8284) -- (axis cs:4.6,0,-2.8284);
+\draw[black!45, densely dotted] (axis cs:4,0,-4) -- (axis cs:4.6,0,-4);
+\node[figR, anchor=west, align=left] at (axis cs:4.6,0,0) {$r = 2M$: throat\\ (bifurcation sphere $U = V = 0$)};
+\node[figO, anchor=west] at (axis cs:4.6,0,2.8284) {$r = 3M$, $z = 2\sqrt2\,M$};
+\node[figG, anchor=west] at (axis cs:4.6,0,4) {$r = 4M$, $z = 4M$};
+\node[figO, anchor=west] at (axis cs:4.6,0,-2.8284) {$r = 3M$};
+\node[figG, anchor=west] at (axis cs:4.6,0,-4) {$r = 4M$};
+\node[anchor=south, align=center] at (axis cs:0,0,6.1) {upper sheet: $t = 0$ in region I ($X > 0$)};
+\node[anchor=north, align=center] at (axis cs:0,0,-6.1) {lower sheet: $t = 0$ in region III ($X < 0$)};
+\end{axis}
+\end{tikzpicture}

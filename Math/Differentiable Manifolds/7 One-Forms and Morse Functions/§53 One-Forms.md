@@ -42,6 +42,8 @@ In words: a one-form chooses one covector at every point of $M$, and the choice 
 
 The notation reflects that $\theta$ is really a function of two variables, a point and a vector: the point goes into the subscript, to make room for the vector variable in the parentheses. The definition describes *every* one-form; examples come next.
 
+A one-form is a section of $T^{\ast}M \to M$, so it is smooth. Without smoothness what is left is a rough section of $T^{\ast}M \to M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]), which Lee calls a *rough covector field*: a covector $\theta_p \in T_p^{\ast}M$ at every point $p$, and nothing more. Every one-form is a rough section of $T^{\ast}M$, but not conversely (Example [[§53 One-Forms#^ex-53-1|§53.1]]). The next two definitions and Proposition [[§53 One-Forms#^prop-53-1|§53.1]] are stated for rough sections, and the same letter $\theta$ is used for them. The reason is that Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3) is the test that decides whether a rough section is a one-form, so the sums $\sum_j \theta_j\, dx^j$ in it have to be defined before smoothness is known.
+
 > [!definition] Definition §53.2: The Space of One-Forms
 > The set of all one-forms on $M$ is written $C^\infty(M, T^{\ast}M)$ (the lecture's notation; also $\Omega^1(M)$).
 >
@@ -50,29 +52,29 @@ The notation reflects that $\theta$ is really a function of two variables, a poi
 ^def-53-2
 
 > [!definition] Definition §53.3: Sum and Scalar Multiple of One-Forms
-> *(Not from lecture; filled in.)* Let $\theta$ and $\sigma$ be sections of $T^{\ast}M \to M$ (not assumed smooth) and $c \in \mathbb{R}$. The sum and the scalar multiple are defined pointwise, in the vector space $T_p^{\ast}M$ (Definition [[§32 The Cotangent Space#^def-32-4|§32.4]]):
+> *(Not from lecture; filled in.)* Let $\theta$ and $\sigma$ be rough sections of $T^{\ast}M \to M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]) and $c \in \mathbb{R}$. The sum and the scalar multiple are defined pointwise, in the vector space $T_p^{\ast}M$ (Definition [[§32 The Cotangent Space#^def-32-4|§32.4]]):
 >
 > $$
 > (\theta + \sigma)_p = \theta_p + \sigma_p, \qquad (c\,\theta)_p = c\,\theta_p, \qquad p \in M .
 > $$
 >
-> So $(a\,\theta + b\,\sigma)_p = a\,\theta_p + b\,\sigma_p$ for $a, b \in \mathbb{R}$. Since $\theta_p + \sigma_p$ and $c\,\theta_p$ lie in $T_p^{\ast}M$, the sum and the scalar multiple are again sections of $T^{\ast}M$. The same formulas are used for sections given only on an open subset $U \subseteq M$, at the points $p \in U$. For one-forms the results are one-forms (Proposition [[§53 One-Forms#^prop-53-2|§53.2]]). Multiplying by a function rather than a constant is the next definition.
+> So $(a\,\theta + b\,\sigma)_p = a\,\theta_p + b\,\sigma_p$ for $a, b \in \mathbb{R}$. Since $\theta_p + \sigma_p$ and $c\,\theta_p$ lie in $T_p^{\ast}M$, the sum and the scalar multiple are again rough sections of $T^{\ast}M$. The same formulas are used for rough sections over an open subset $U \subseteq M$, at the points $p \in U$. For one-forms the results are one-forms (Proposition [[§53 One-Forms#^prop-53-2|§53.2]]). Multiplying by a function rather than a constant is the next definition.
 
 ^def-53-3
 
 > [!definition] Definition §53.4: Product of a Function and a One-Form
-> *(Not from lecture; filled in.)* Let $f : M \to \mathbb{R}$ be a function and $\theta$ a section of $T^{\ast}M \to M$ (neither assumed smooth). The product $f\theta$ is defined pointwise:
+> *(Not from lecture; filled in.)* Let $f : M \to \mathbb{R}$ be a function, not assumed smooth, and $\theta$ a rough section of $T^{\ast}M \to M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]). The product $f\theta$ is defined pointwise:
 >
 > $$
 > (f\theta)_p = f(p)\,\theta_p \qquad \text{for every } p \in M .
 > $$
 >
-> Since $f(p)\,\theta_p \in T_p^{\ast}M$, the product is again a section of $T^{\ast}M$. The same formula is used for a function and a section given only on an open subset $U \subseteq M$, at the points $p \in U$; this is the meaning of the terms $\theta_j\, dx^j$ in Proposition [[§53 One-Forms#^prop-53-1|§53.1]]. For $f \in C^\infty(M)$ and a one-form $\theta$ the product is a one-form (Proposition [[§53 One-Forms#^prop-53-2|§53.2]]).
+> Since $f(p)\,\theta_p \in T_p^{\ast}M$, the product is again a rough section of $T^{\ast}M$. The same formula is used for a function on, and a rough section over, an open subset $U \subseteq M$, at the points $p \in U$; this is the meaning of the terms $\theta_j\, dx^j$ in Proposition [[§53 One-Forms#^prop-53-1|§53.1]]. For $f \in C^\infty(M)$ and a one-form $\theta$ the product is a one-form (Proposition [[§53 One-Forms#^prop-53-2|§53.2]]).
 
 ^def-53-4
 
 > [!theorem] Proposition §53.1: One-Forms in Coordinates
-> Let $\theta$ be a section of $T^{\ast}M \to M$ (not assumed smooth) and $(U, \varphi = (x^i))$ a chart.
+> Let $\theta$ be a rough section of $T^{\ast}M \to M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]) and $(U, \varphi = (x^i))$ a chart.
 >
 > 1. On $U$,
 >
@@ -93,7 +95,7 @@ The notation reflects that $\theta$ is really a function of two variables, a poi
 ^prop-53-1
 
 > [!proof]+ Proof
-> *(Stated in Lecture 15; the proof is filled in.)* Three things are claimed: the expansion of $\theta$ on $U$ with the stated coefficients, (1); the coordinate representation, (2); and the smoothness criterion, (3). Since $\theta$ is a section, $\pi \circ \theta = \mathrm{id}_M$, so $\theta(p) = (p, \theta_p)$ with $\theta_p \in T_p^{\ast}M$ for every $p$.
+> *(Stated in Lecture 15; the proof is filled in.)* Three things are claimed: the expansion of $\theta$ on $U$ with the stated coefficients, (1); the coordinate representation, (2); and the smoothness criterion, (3). Since $\theta$ is a rough section, $\pi \circ \theta = \mathrm{id}_M$, so $\theta(p) = (p, \theta_p)$ with $\theta_p \in T_p^{\ast}M$ for every $p$.
 >
 > *(1) The expansion.* The equation $\theta = \sum_j \theta_j\, dx^j$ on $U$ means $\theta_p = \sum_j \theta_j(p)\, dx^j|_p$ for every $p \in U$ (Definitions [[§53 One-Forms#^def-53-3|§53.3]] and [[§53 One-Forms#^def-53-4|§53.4]], on $U$). At each $p \in U$ the $dx^j|_p$ form a basis of $T_p^{\ast}M$ dual to the $\partial/\partial x^j|_p$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]), and Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]] with $\alpha = \theta_p$ gives
 >
@@ -119,6 +121,34 @@ The notation reflects that $\theta$ is really a function of two variables, a poi
 
 *Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§53 One-Forms#^def-53-3|Def. §53.3]], [[§53 One-Forms#^def-53-4|Def. §53.4]]
 
+> [!example] Example §53.1: A Rough Section That Is Not a One-Form
+> *(Not from lecture; filled in.)* Let $M = \mathbb{R}$, with the chart $(\mathbb{R}, \mathrm{id})$ and its coordinate function $x$. Put
+>
+> $$
+> \theta_p = |p|\; dx|_p \in T_p^{\ast}\mathbb{R}, \qquad p \in \mathbb{R} .
+> $$
+>
+> Then $\theta : p \mapsto (p, \theta_p)$ is a rough section of $T^{\ast}\mathbb{R} \to \mathbb{R}$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]), and it is not a one-form (Definition [[§53 One-Forms#^def-53-1|§53.1]]), because it is not smooth.
+
+^ex-53-1
+
+> [!proof]+ Working out the example
+> *(Not from lecture; filled in.)* *A rough section.* For every $p$, $dx|_p$ is a covector at $p$ (Definition [[§32 The Cotangent Space#^def-32-5|§32.5]]), and so is its multiple $|p|\, dx|_p$, since $T_p^{\ast}\mathbb{R}$ is a vector space (Definition [[§32 The Cotangent Space#^def-32-4|§32.4]]). So $\pi(\theta(p)) = \pi(p, \theta_p) = p$ for every $p$, that is, $\pi \circ \theta = \mathrm{id}_{\mathbb{R}}$.
+>
+> *Not smooth.* By Proposition [[§53 One-Forms#^prop-53-1|§53.1]](1), $\theta = \theta_1\, dx$ on $\mathbb{R}$ with the coefficient function
+>
+> $$
+> \theta_1(p) = \theta_p\Big(\frac{\partial}{\partial x}\Big|_p\Big) = |p|\; dx|_p\Big(\frac{\partial}{\partial x}\Big|_p\Big) = |p| ,
+> $$
+>
+> because $dx|_p(\partial/\partial x|_p) = 1$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]). In the chart $\mathrm{id}$ the coordinate representation of $\theta_1$ is the function $r \mapsto |r|$ on $\mathbb{R}$, which is not differentiable at $0$: the difference quotient $(|h| - |0|)/h$ equals $1$ for $h > 0$ and $-1$ for $h < 0$, so it has no limit as $h \to 0$. Hence $\theta_1$ is not smooth on $\mathbb{R}$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]), and by Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3) $\theta$ is not smooth on $\mathbb{R}$.
+>
+> *Two comparisons.* The rough section $p \mapsto p\; dx|_p$ has the coefficient function $p \mapsto p$, which is smooth, so it is a one-form; it is written $x\, dx$. And a rough section need not be continuous: the one equal to $dx|_p$ for $p \ge 0$ and to $0 \in T_p^{\ast}\mathbb{R}$ for $p < 0$ has as coefficient function the indicator function of $[0, \infty)$, which is not continuous at $0$.
+
+^pf-ex-53-1
+
+*Uses:* [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]]
+
 > [!theorem] Proposition §53.2: Sums and Function Multiples of One-Forms
 > Let $\theta, \sigma \in C^\infty(M, T^{\ast}M)$, $c \in \mathbb{R}$ and $f \in C^\infty(M)$.
 >
@@ -129,9 +159,9 @@ The notation reflects that $\theta$ is really a function of two variables, a poi
 ^prop-53-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* By Definitions [[§53 One-Forms#^def-53-3|§53.3]] and [[§53 One-Forms#^def-53-4|§53.4]], $\theta + \sigma$, $c\,\theta$ and $f\theta$ are sections of $T^{\ast}M$. It remains to find their coefficient functions, (3), and to show that these sections are smooth, (1) and (2).
+> *(Not from lecture; filled in.)* By Definitions [[§53 One-Forms#^def-53-3|§53.3]] and [[§53 One-Forms#^def-53-4|§53.4]], $\theta + \sigma$, $c\,\theta$ and $f\theta$ are rough sections of $T^{\ast}M$. It remains to find their coefficient functions, (3), and to show that these rough sections are smooth, (1) and (2).
 >
-> *(3)* Let $(U, \varphi = (x^j))$ be a chart and $p \in U$. By Proposition [[§53 One-Forms#^prop-53-1|§53.1]](1), the $j$-th coefficient function of a section $\tau$ of $T^{\ast}M$ is $\tau_j(p) = \tau_p(\partial/\partial x^j|_p)$. Covectors are added and scaled pointwise (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]), so by Definitions [[§53 One-Forms#^def-53-3|§53.3]] and [[§53 One-Forms#^def-53-4|§53.4]]
+> *(3)* Let $(U, \varphi = (x^j))$ be a chart and $p \in U$. By Proposition [[§53 One-Forms#^prop-53-1|§53.1]](1), the $j$-th coefficient function of a rough section $\tau$ of $T^{\ast}M$ is $\tau_j(p) = \tau_p(\partial/\partial x^j|_p)$. Covectors are added and scaled pointwise (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]), so by Definitions [[§53 One-Forms#^def-53-3|§53.3]] and [[§53 One-Forms#^def-53-4|§53.4]]
 >
 > $$
 > (\theta + \sigma)_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) = \theta_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) + \sigma_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) = \theta_j(p) + \sigma_j(p),
@@ -147,7 +177,7 @@ The notation reflects that $\theta$ is really a function of two variables, a poi
 > (\theta_j + \sigma_j) \circ \varphi^{-1} = \theta_j \circ \varphi^{-1} + \sigma_j \circ \varphi^{-1}, \qquad (f\,\theta_j) \circ \varphi^{-1} = (f \circ \varphi^{-1})\,(\theta_j \circ \varphi^{-1}) ,
 > $$
 >
-> a sum and a product of smooth functions on $\varphi(U)$, hence smooth; so $\theta_j + \sigma_j$ and $f\,\theta_j$ are smooth on $U$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]], with the chart $(U, \varphi)$ at every point). By (3) these are the coefficient functions of $\theta + \sigma$ and $f\theta$, so by Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3) both sections are smooth on $U$. The chart domains cover $M$, and smoothness of a map is checked near each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so $\theta + \sigma$ and $f\theta$ are smooth on $M$: they are one-forms. Finally $c\,\theta = f\theta$ for the constant function $f \equiv c$, which is smooth (its coordinate representation in any chart is constant); so $c\,\theta$ is a one-form by (2).
+> a sum and a product of smooth functions on $\varphi(U)$, hence smooth; so $\theta_j + \sigma_j$ and $f\,\theta_j$ are smooth on $U$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]], with the chart $(U, \varphi)$ at every point). By (3) these are the coefficient functions of $\theta + \sigma$ and $f\theta$, so by Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3) both are smooth on $U$. The chart domains cover $M$, and smoothness of a map is checked near each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so $\theta + \sigma$ and $f\theta$ are smooth on $M$: they are one-forms. Finally $c\,\theta = f\theta$ for the constant function $f \equiv c$, which is smooth (its coordinate representation in any chart is constant); so $c\,\theta$ is a one-form by (2).
 
 ^pf-53-2
 
@@ -156,7 +186,7 @@ The notation reflects that $\theta$ is really a function of two variables, a poi
 ## The Operator $d$
 
 > [!theorem] Proposition §53.3: The Differential of a Function Is a One-Form
-> For $f \in C^\infty(M)$, the section $df : p \mapsto df_p$ is a one-form, given in a chart by
+> For $f \in C^\infty(M)$, the rough section $df : p \mapsto df_p$ of $T^{\ast}M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]) is smooth, so it is a one-form, given in a chart by
 >
 > $$
 > df = \sum_{j=1}^m \frac{\partial f}{\partial x^j}\, dx^j .
@@ -169,9 +199,9 @@ The notation reflects that $\theta$ is really a function of two variables, a poi
 ^prop-53-3
 
 > [!proof]+ Proof
-> *(The coordinate formula is Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], which Lecture 15 recalled; the rest is filled in.)* Four things are claimed: $df$ is a section of $T^{\ast}M$, it has the stated coordinate formula, it is smooth, and $d$ is linear and satisfies the product rule.
+> *(The coordinate formula is Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], which Lecture 15 recalled; the rest is filled in.)* Four things are claimed: $df$ is a rough section of $T^{\ast}M$, it has the stated coordinate formula, it is smooth, and $d$ is linear and satisfies the product rule.
 >
-> *A section, and the formula.* For each $p \in M$, $df_p \in T_p^{\ast}M$ (Definition [[§32 The Cotangent Space#^def-32-5|§32.5]]), so $df(p) = (p, df_p)$ satisfies $\pi \circ df = \mathrm{id}_M$. In a chart $(U, \varphi = (x^j))$, Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] at each $p \in U$ gives $df_p = \sum_j \partial f/\partial x^j(p)\, dx^j|_p$, which is the formula $df = \sum_j (\partial f/\partial x^j)\, dx^j$ on $U$; its coefficient functions are $\partial f/\partial x^j : U \to \mathbb{R}$, in agreement with Proposition [[§53 One-Forms#^prop-53-1|§53.1]], since $df_p(\partial/\partial x^j|_p) = \partial f/\partial x^j(p)$ (Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]).
+> *A rough section, and the formula.* For each $p \in M$, $df_p \in T_p^{\ast}M$ (Definition [[§32 The Cotangent Space#^def-32-5|§32.5]]), so $df(p) = (p, df_p)$ satisfies $\pi \circ df = \mathrm{id}_M$. In a chart $(U, \varphi = (x^j))$, Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] at each $p \in U$ gives $df_p = \sum_j \partial f/\partial x^j(p)\, dx^j|_p$, which is the formula $df = \sum_j (\partial f/\partial x^j)\, dx^j$ on $U$; its coefficient functions are $\partial f/\partial x^j : U \to \mathbb{R}$, in agreement with Proposition [[§53 One-Forms#^prop-53-1|§53.1]], since $df_p(\partial/\partial x^j|_p) = \partial f/\partial x^j(p)$ (Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]).
 >
 > *Smoothness.* The coefficients $\partial f/\partial x^j$ are smooth on $U$: Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]], applied to the restriction of $f$ to the chart domain $U$ (smooth, as $f \in C^\infty(M)$), gives $\partial f/\partial x^j \in C^\infty(U)$, with $(\partial f/\partial x^j) \circ \varphi^{-1} = \partial f_\varphi/\partial r^j$ on $\varphi(U)$. By Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3), $df$ is smooth on $U$. The chart domains cover $M$, and smoothness of a map is checked near each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so $df$ is smooth on $M$: a one-form, $df \in C^\infty(M, T^{\ast}M)$.
 >
@@ -197,7 +227,7 @@ The notation reflects that $\theta$ is really a function of two variables, a poi
 > - The same rules at a single point: [[§32 The Cotangent Space#^cor-32-3|§32.3]].
 > - On $\mathbb{R}^3$, $d$ on functions is the gradient: [[§38 The Exterior Derivative#^prop-38-1|452 §38.1]], [[§39 Closed and Exact Forms#^prop-39-1|452 §39.1]].
 
-> [!example] Example §53.1: Two One-Forms on the Plane
+> [!example] Example §53.2: Two One-Forms on the Plane
 > On $\mathbb{R}^2$ with coordinates $x, y$, any expression $a(x,y)\, dx + b(x,y)\, dy$ with smooth $a, b$ is a one-form. The lecture's two examples:
 >
 > $$
@@ -206,7 +236,7 @@ The notation reflects that $\theta$ is really a function of two variables, a poi
 >
 > $\sigma$ is the differential of a function: $\sigma = d\big(\tfrac14(x^2 + y^2)\big)$.
 
-^ex-53-1
+^ex-53-2
 
 $\theta$ is not the differential of any function, as the next proposition shows.
 
@@ -240,7 +270,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 
 ^pf-53-4
 
-*Uses:* [[§53 One-Forms#^prop-53-3|§53.3]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§53 One-Forms#^ex-53-1|Ex. §53.1]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]]
+*Uses:* [[§53 One-Forms#^prop-53-3|§53.3]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§53 One-Forms#^ex-53-2|Ex. §53.2]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]]
 
 > [!remark]- Connections
 > - In 452: exact forms are closed, [[§39 Closed and Exact Forms#^prop-39-5|452 §39.5]] (closed and exact: [[§39 Closed and Exact Forms#^def-39-2|452 Def. §39.2]]); in vector-field language, a gradient field is irrotational, [[§13 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-13-2|452 Def. §13.2]].
@@ -248,7 +278,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 This is familiar from multivariable calculus: not every vector field is a gradient field, and the condition is the vanishing of the curl.
 
 ![[m591-44-1.svg]]
-*The two forms of [[§53 One-Forms#^ex-53-1|Example §53.1]], drawn as arrows. A one-form is not an arrow — it eats arrows — so the picture uses the Euclidean dot product to turn $a\,dx + b\,dy$ into the vector $(a, b)$; this identification is available in $\mathbb{R}^2$, not on a general manifold, and it is how “$df$” becomes the “gradient” of calculus. Right: $\sigma = df$ for $f = \tfrac14(x^2+y^2)$, and its arrows cross the level circles of $f$ at right angles, as a gradient's must. Left: $\theta$'s arrows run along the circles. If $\theta$ were $df$, then $f$ would increase steadily all the way around a circle and return to its starting value — impossible.*
+*The two forms of [[§53 One-Forms#^ex-53-2|Example §53.2]], drawn as arrows. A one-form is not an arrow — it eats arrows — so the picture uses the Euclidean dot product to turn $a\,dx + b\,dy$ into the vector $(a, b)$; this identification is available in $\mathbb{R}^2$, not on a general manifold, and it is how “$df$” becomes the “gradient” of calculus. Right: $\sigma = df$ for $f = \tfrac14(x^2+y^2)$, and its arrows cross the level circles of $f$ at right angles, as a gradient's must. Left: $\theta$'s arrows run along the circles. If $\theta$ were $df$, then $f$ would increase steadily all the way around a circle and return to its starting value — impossible.*
 
 > [!definition] Definition §53.5: Closed One-Form
 > *(Not from lecture; filled in.)* A one-form $\omega$ on $M$ is **closed** if its coefficients satisfy the mixed-partials condition of Proposition [[§53 One-Forms#^prop-53-4|§53.4]] in every chart: for every smooth chart $(U, \varphi = (x^j))$ of $M$, with $\omega = \sum_j \omega_j\, dx^j$ on $U$ (Proposition [[§53 One-Forms#^prop-53-1|§53.1]]),
@@ -265,11 +295,11 @@ This is familiar from multivariable calculus: not every vector field is a gradie
 ^def-53-6
 
 > [!remark] Remark: The Condition Is Not Sufficient
-> The mixed-partials condition is necessary but not sufficient, and this is the beginning of de Rham theory: whether it suffices depends on the topology of the domain. In the words of Definitions [[§53 One-Forms#^def-53-5|§53.5]] and [[§53 One-Forms#^def-53-6|§53.6]]: an exact one-form is closed, but a closed one-form need not be exact. Example [[§53 One-Forms#^ex-53-2|§53.2]] below works out the standard example, the form $\omega = (x\,dy - y\,dx)/(x^2+y^2)$ on $\mathbb{R}^2 \setminus \{0\}$, and the role of the hole at the origin.
+> The mixed-partials condition is necessary but not sufficient, and this is the beginning of de Rham theory: whether it suffices depends on the topology of the domain. In the words of Definitions [[§53 One-Forms#^def-53-5|§53.5]] and [[§53 One-Forms#^def-53-6|§53.6]]: an exact one-form is closed, but a closed one-form need not be exact. Example [[§53 One-Forms#^ex-53-3|§53.3]] below works out the standard example, the form $\omega = (x\,dy - y\,dx)/(x^2+y^2)$ on $\mathbb{R}^2 \setminus \{0\}$, and the role of the hole at the origin.
 
 ^rem-53-1
 
-> [!example] Example §53.2: The Angle Form on the Punctured Plane
+> [!example] Example §53.3: The Angle Form on the Punctured Plane
 > *(Not from lecture; added on request: the standard example of the remark above (Lee, Example 11.36), written out.)* The form is $\omega = (x\,dy - y\,dx)/(x^2+y^2)$ on $\mathbb{R}^2 \setminus \{0\}$. The words *closed* and *exact* are those of Definitions [[§53 One-Forms#^def-53-5|§53.5]] and [[§53 One-Forms#^def-53-6|§53.6]]. Proposition [[§53 One-Forms#^prop-53-4|§53.4]] says exact $\Rightarrow$ closed. This example shows closed $\not\Rightarrow$ exact: both mixed partials of $\omega$ equal $(y^2 - x^2)/(x^2 + y^2)^2$ (step 3), while $\omega$ takes the value $1$ on the velocity of the unit circle ([[§31 Tangent Vectors as Velocities of Curves|§31]]) at every time (step 5), which a $df$ cannot do along a closed curve (step 6).
 >
 > 1. *The manifold.* $M = \mathbb{R}^2 \setminus \{0\}$, an open subset of $\mathbb{R}^2$, hence an open submanifold (Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]]), with the single chart $\mathrm{id}_M$ and coordinates $x, y$. Its coordinate derivations $\partial_x, \partial_y$ are the ordinary partial derivatives.
@@ -280,6 +310,7 @@ This is familiar from multivariable calculus: not every vector field is a gradie
 > $$
 >
 > They are smooth on $M$ because $x^2 + y^2 > 0$ there; so $\omega$ is a one-form on $M$ (Proposition [[§53 One-Forms#^prop-53-1|§53.1]]): at each $p \in M$ it is the covector $\omega_p = a(p)\, dx|_p + b(p)\, dy|_p \in T_p^{\ast}M$, a linear map $T_pM \to \mathbb{R}$. It is not defined at $0$.
+>
 > 3. *$\omega$ is closed.* By the quotient rule,
 >
 > $$
@@ -288,7 +319,8 @@ This is familiar from multivariable calculus: not every vector field is a gradie
 > \frac{\partial a}{\partial y} = -\frac{(x^2 + y^2) - y \cdot 2y}{(x^2 + y^2)^2} = \frac{y^2 - x^2}{(x^2 + y^2)^2} ,
 > $$
 >
-> so $\partial a/\partial y = \partial b/\partial x$ on $M$: the necessary condition of Proposition [[§53 One-Forms#^prop-53-4|§53.4]] holds. (Compare $\theta = \tfrac12(x\,dy - y\,dx)$ of Example [[§53 One-Forms#^ex-53-1|§53.1]], where the two sides are $\tfrac12$ and $-\tfrac12$.)
+> so $\partial a/\partial y = \partial b/\partial x$ on $M$: the necessary condition of Proposition [[§53 One-Forms#^prop-53-4|§53.4]] holds. (Compare $\theta = \tfrac12(x\,dy - y\,dx)$ of Example [[§53 One-Forms#^ex-53-2|§53.2]], where the two sides are $\tfrac12$ and $-\tfrac12$.)
+>
 > 4. *The test curve.* $c : \mathbb{R} \to M$, $c(t) = (\cos t, \sin t)$, the unit circle run once around in time $2\pi$. It is smooth and lands in $M$ ($|c(t)| = 1$). Its velocity at time $t$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]) is the tangent vector (Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], components $(x \circ c)'(t)$, $(y \circ c)'(t)$)
 >
 > $$
@@ -308,6 +340,7 @@ This is familiar from multivariable calculus: not every vector field is a gradie
 > $$
 >
 > By the fundamental theorem of calculus, $f(c(2\pi)) - f(c(0)) = \int_0^{2\pi} (f \circ c)'(t)\, dt = 2\pi$. But $c(2\pi) = (1, 0) = c(0)$, so the left side is $0$. Contradiction: no such $f$ exists on $M$.
+>
 > 7. *What $f$ would have to be: the angle.* Let $U = M \setminus \{(x, 0) : x < 0\}$, the plane slit along the negative $x$-axis, and $\vartheta : U \to (-\pi, \pi)$ the polar angle, so that $x = r\cos\vartheta$, $y = r\sin\vartheta$ with $r = \sqrt{x^2 + y^2}$ (the polar coordinates of Example [[§30 The Differential in Coordinates#^ex-30-1|§30.1]]; $(r, \vartheta)$ is a chart on $U$, so $\vartheta$ is smooth there). In that chart
 >
 > $$
@@ -319,9 +352,10 @@ This is familiar from multivariable calculus: not every vector field is a gradie
 > $$
 >
 > so $\omega = r^2\, d\vartheta / r^2 = d\vartheta$ on $U$: on the slit plane $\omega$ *is* exact, with $f = \vartheta$. The obstruction is global: going once around the hole, $\vartheta$ increases by $2\pi$ (step 6), so it cannot be continued continuously across the slit, where it jumps from near $\pi$ (just above) to near $-\pi$ (just below). Any $f$ with $df = \omega$ on all of $M$ would be such a continuation (two functions with the same differential on a connected open set differ by a constant: Proposition [[§30 The Differential in Coordinates#^prop-30-11|§30.11]], applied to their difference).
+>
 > 8. *Why the hole matters.* On $\mathbb{R}^2$ itself, or on any star-shaped open set (a disk, the slit plane $U$), a closed form is exact (Poincaré lemma; Lee, Theorem 11.49, not proved in these notes). $M$ is not star-shaped, and step 6 shows the lemma cannot extend to it: whether closed forms are exact depends on the topology of the domain, which is what de Rham cohomology measures.
 
-^ex-53-2
+^ex-53-3
 
 ![[m591-51-1.svg]]
 
@@ -342,7 +376,7 @@ This is familiar from multivariable calculus: not every vector field is a gradie
 ^def-53-7
 
 > [!definition] Definition §53.8: Pullback of One-Forms
-> Let $F : M \to N$ be smooth. For a one-form $\theta$ on $N$, the **pullback** $F^{\ast}\theta$ is the section of $T^{\ast}M$ whose value at $p$ is the pullback of the covector $\theta_{F(p)}$ ([[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]):
+> Let $F : M \to N$ be smooth. For a one-form $\theta$ on $N$, the **pullback** $F^{\ast}\theta$ is the rough section of $T^{\ast}M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]) whose value at $p$ is the pullback of the covector $\theta_{F(p)}$ ([[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]):
 >
 > $$
 > (F^*\theta)_p = F_p^*\big(\theta_{F(p)}\big), \qquad (F^*\theta)_p(v) = \theta_{F(p)}\big(F_{*p}v\big) .

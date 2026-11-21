@@ -281,6 +281,24 @@ The converse question: if all the fibres of a surjective submersion are diffeomo
 
 A section in the sense of [[§45 Fibrations#^def-45-3|Definition §45.3]] is a local section over $U = B$; to stress the difference, it is also called a *global* section.
 
+> [!definition] Definition §45.5: Rough Section
+> *(Not from lecture; filled in.)* Let $\pi : E \to B$ be smooth and $U \subseteq B$ open. A **rough section** of $\pi$ over $U$ is a map $s : U \to E$ with $\pi \circ s = \mathrm{id}_U$, with no continuity and no smoothness assumed: a choice of one point $s(b)$ of the fibre $\pi^{-1}(b)$ for every $b \in U$, and nothing more. For $U = B$ it is called a rough section of $\pi$.
+>
+> *Lee: Ch. 10, Local and Global Sections of Vector Bundles*
+
+^def-45-5
+
+> [!remark]- Connections
+> - Rough sections of $T^{\ast}M$ (Lee: rough covector fields) and the test that makes one a one-form: [[§53 One-Forms#^prop-53-1|Prop. §53.1]]; a rough section that fails the test: [[§53 One-Forms#^ex-53-1|Ex. §53.1]].
+> - Rough sections of $TM$ (Lee: rough vector fields) and their tests: [[§56 Vector Fields#^prop-56-1|Prop. §56.1]], [[§56 Vector Fields#^lem-56-11|Lem. §56.11]]; the left-invariant extension is a rough vector field before it is shown to be smooth: [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Def. §60.5]].
+> - In degree $k$ the same order is followed: a $k$-form is defined with no smoothness, [[§80 Differential Forms on Manifolds#^def-80-1|Def. §80.1]], and smooth forms come after.
+
+So a local section over $U$ (Definition [[§45 Fibrations#^def-45-4|§45.4]]) is a rough section over $U$ that is smooth, and a section of a fibration (Definition [[§45 Fibrations#^def-45-3|§45.3]]) is a rough section over $B$ that is smooth. The word *section* alone always includes smoothness. The rough notion is needed when a section is defined point by point and its smoothness has to be proved afterwards: the differential $df$ of a function is defined by its values $df_p$ and then shown to be smooth (Proposition [[§53 One-Forms#^prop-53-3|§53.3]]), and the smoothness criteria for one-forms and for vector fields (Propositions [[§53 One-Forms#^prop-53-1|§53.1]] and [[§56 Vector Fields#^prop-56-1|§56.1]], Lemma [[§56 Vector Fields#^lem-56-11|§56.11]]) are statements about rough sections, since a criterion for smoothness cannot assume it.
+
+![[m591-17-7.svg]]
+
+*(Not from lecture; figure added.)* Three rough sections, in the cartoon of a section above: each picks exactly one point in every fibre. Left: the choice is smooth, so this one is a section. Middle: the choice is continuous but has a corner, like $|p|\, dx|_p$ in Example [[§53 One-Forms#^ex-53-1|§53.1]]; it is not smooth, so it is not a section. Right: the choice jumps (the filled dot is the point chosen over the base point of the jump); it is not continuous.
+
 > [!theorem] Proposition §45.4: Local Trivializations Give Local Sections
 > Let $\pi : E \to B$ be a fibration with fibre $F$, and $\phi : \pi^{-1}(U) \to U \times F$ a local trivialization ([[§45 Fibrations#^def-45-1|Def. §45.1]]). For every $f_0 \in F$, the map $s(u) = \phi^{-1}(u, f_0)$ is a local section ([[§45 Fibrations#^def-45-4|Def. §45.4]]) over $U$.
 
@@ -305,7 +323,7 @@ A section in the sense of [[§45 Fibrations#^def-45-3|Definition §45.3]] is a l
 
 *(Not from lecture; animation added, vault only.)* [[§45 Fibrations#^prop-45-4|Proposition §45.4]] for the band of the previous animation: the slice $U \times \{f_0\}$ (red, bottom) slides as $f_0$ moves through $F$, and its preimage $s(U) = \phi^{-1}(U \times \{f_0\})$ (red, top) sweeps through $\pi^{-1}(U)$. Each one meets every fibre exactly once: a local section.
 
-> [!definition] Definition §45.5: Vertical Space
+> [!definition] Definition §45.6: Vertical Space
 > Let $\pi : E \to B$ be smooth and $y \in E$. The **vertical space** of $\pi$ at $y$ is
 >
 > $$
@@ -314,13 +332,13 @@ A section in the sense of [[§45 Fibrations#^def-45-3|Definition §45.3]] is a l
 >
 > the tangent vectors at $y$ that $\pi$ sends to $0$. If $\pi$ is a submersion — for instance a fibration (Proposition [[§45 Fibrations#^prop-45-1|§45.1]]) — the fibre $E_b = \pi^{-1}(b)$ through $y$, $b = \pi(y)$, is a regular submanifold (Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]), and $V_y = \iota_{\ast y}(T_yE_b)$ is its tangent space (Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]): the vertical vectors are the ones along the fibre.
 
-^def-45-5
+^def-45-6
 
 > [!theorem] Proposition §45.5: Splitting Along a Section
 > Let $\pi : E \to B$ and $s : B \to E$ be smooth with $\pi \circ s = \mathrm{id}_B$ (for a fibration, $s$ is a section, Definition [[§45 Fibrations#^def-45-3|§45.3]]). Let $p \in B$ and $y = s(p)$.
 >
 > 1. $\pi_{\ast y} \circ s_{\ast p} = \mathrm{id}_{T_pB}$; so $s_{\ast p}$ is injective and $\pi_{\ast y}$ is surjective.
-> 2. $T_yE = s_{\ast p}(T_pB) \oplus V_y$, with $V_y$ the vertical space (Definition [[§45 Fibrations#^def-45-5|§45.5]]).
+> 2. $T_yE = s_{\ast p}(T_pB) \oplus V_y$, with $V_y$ the vertical space (Definition [[§45 Fibrations#^def-45-6|§45.6]]).
 > 3. The projection of $T_yE$ onto $V_y$ along $s_{\ast p}(T_pB)$ is $P = \mathrm{id} - s_{\ast p} \circ \pi_{\ast y}$.
 >
 > In particular $\dim T_yE = \dim B + \dim V_y$.

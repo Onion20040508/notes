@@ -1,0 +1,35 @@
+% Figure for Relativity §C2.1 (Theorem §C2.1.3): the two stereographic charts of S^2. Left: the slice y = 0 through N, S and p = (0.8930, 0, 0.45); u = x_p/(1 - z_p) = 1.6237, w = x_p/(1 + z_p) = 0.6159, u w = 1. Right: the chart plane z = 0 seen from above, ray at 30 degrees: u = 1.6237 (cos30, sin30) = (1.4062, 0.8119), w = 0.6159 (cos30, sin30) = (0.5334, 0.3080). Values from verify_c2_1.py.
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, font=\small, x=1.7cm, y=1.7cm]
+  % ---------- (a) slice ----------
+  \node[font=\small\bfseries] at (-1.9,1.45) {(a)};
+  \fill[black!5] (0,0) circle (1);
+  \draw[thick] (0,0) circle (1);
+  \draw[black!55] (-2.4,0) -- (2.3,0); \node[font=\scriptsize, black!70, anchor=south west] at (-2.4,0.02) {chart plane $z = 0$};
+  \draw[black!35, dashed] (0,-1.25) -- (0,1.3) node[above, font=\scriptsize, black!60] {$z$};
+  % projection lines
+  \draw[figB, thick] (0,1) -- (1.6237,0);
+  \draw[figR, thick] (0,-1) -- (0.6159,0) -- (0.8930,0.45);
+  % points
+  \draw[figB, thick, fill=white] (0,1) circle (2.2pt) node[above left, font=\scriptsize, figB] {$N$};
+  \draw[figR, thick, fill=white] (0,-1) circle (2.2pt) node[below left, font=\scriptsize, figR] {$S$};
+  \fill[black] (0.8930,0.45) circle (1.8pt) node[above right, font=\scriptsize] {$p$};
+  \fill[figB] (1.6237,0) circle (1.8pt) node[above right, font=\scriptsize, figB] {$u = \varphi_N(p)$};
+  \fill[figR] (0.6159,0) circle (1.8pt) node[below right, font=\scriptsize, figR] {$w = \varphi_S(p)$};
+  \node[font=\scriptsize, align=center, black!70] at (0.1,-1.5) {$\varphi_N$: line from $N$ through $p$;\ \ $\varphi_S$: line from $S$ through $p$};
+  \node[font=\scriptsize, black!70] at (-0.55,0.42) {$S^2$};
+  % ---------- (b) the chart plane from above ----------
+  \begin{scope}[xshift=8.4cm]
+    \node[font=\small\bfseries] at (-1.9,1.45) {(b)};
+    \draw[black!55, ->] (-1.9,0) -- (2.0,0) node[right, font=\scriptsize] {$u^1$};
+    \draw[black!55, ->] (0,-1.3) -- (0,1.45) node[above, font=\scriptsize] {$u^2$};
+    \draw[black!60, dashed] (0,0) circle (1);
+    \node[font=\scriptsize, black!60, anchor=north east] at (-0.68,-0.75) {$|u| = 1$: equator};
+    \draw[black!30] (0,0) -- (1.85,1.0681);
+    \fill[figB] (1.4062,0.8119) circle (1.8pt) node[above left, font=\scriptsize, figB] {$u$};
+    \fill[figR] (0.5334,0.3080) circle (1.8pt) node[above left, font=\scriptsize, figR] {$w$};
+    \draw[->, thick, black!75] (1.40,0.74) to[bend left=25] node[below right, font=\scriptsize, black, align=left] {$\psi_{SN}(u) = u/|u|^2$} (0.58,0.25);
+    \draw[thick, fill=white] (0,0) circle (2.2pt);
+    \node[font=\scriptsize, anchor=north west, align=left] at (0.06,-0.08) {$\varphi_N(S) = 0$\\(excluded)};
+    \node[font=\scriptsize, align=center] at (0.1,-1.5) {$\varphi_N(S^2 \setminus \{N,S\}) = \mathbb R^2 \setminus \{0\}$ (chart plane seen from above)};
+  \end{scope}
+\end{tikzpicture}

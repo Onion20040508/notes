@@ -1,0 +1,9 @@
+% Figure from MATH 493 notes, section 72. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+\draw[->] (-1.9,0) -- (2.3,0);
+\draw[->] (0,-1.7) -- (0,1.9);
+\draw (0,0) circle (1.2);
+\foreach \k in {0,...,4} { \fill ({72*\k}:1.2) circle (1.6pt); }
+\node[anchor=south west] at (1.2,0.02) {$1$};
+\node[anchor=north west] at (1.5,-0.25) {$N = 5$};
+\end{tikzpicture}

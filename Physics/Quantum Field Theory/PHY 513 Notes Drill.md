@@ -5448,7 +5448,7 @@ $(i\gamma^\mu\partial_\mu - m)\psi(x) = 0$, four coupled first-order linear PDEs
 
 ### [B] Feynman slash
 
-$\slashed a \equiv \gamma^\mu a_\mu = \gamma^0a_0 + \gamma^ia_i$; the Dirac equation is $(i\slashed\partial - m)\psi = 0$; in the chiral basis $\slashed p = \begin{pmatrix}0 & p\cdot\sigma\\ p\cdot\bar\sigma & 0\end{pmatrix}$, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Feynman Slash. *Source: Lecture 9, slide "Completeness for Dirac Spinors: the Result" ("Notation: γ^μp_μ ≡ p̸")*
+$\slashed a \equiv \gamma^\mu a_\mu = \gamma^0a_0 + \gamma^ia_i$; the Dirac equation is $(i\slashed\partial - m)\psi = 0$; in the chiral basis $\slashed p = \begin{pmatrix}0 & p\cdot\sigma\\ p\cdot\bar\sigma & 0\end{pmatrix}$, see Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Feynman Slash. *Source: Lecture 9, slide "Completeness for Dirac Spinors: the Result" ("Notation: $\gamma^\mu p_\mu \equiv \slashed p$")*
 
 ^nd-def-c5a-7-3
 
@@ -5582,9 +5582,9 @@ The unique positive-semidefinite square roots, $\sqrt{p\cdot\sigma} = \sqrt{E - 
 
 ### [B] Helicity of a Dirac spinor
 
-For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname{diag}(\hat{\mathbf p}\cdot\boldsymbol\sigma, \hat{\mathbf p}\cdot\boldsymbol\sigma)$; $h = +\frac12$ is called right-handed, $-\frac12$ left-handed, see Definition [[§C8.14 Helicity Spinors and the Massless Limit#^def-c8-14-1|§C8.14.1]] Helicity of a Dirac Spinor. *Source: Problem Set 5, Problem 6 (statement) · the user's notes Ch. 9 §9.4*
+For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname{diag}(\hat{\mathbf p}\cdot\boldsymbol\sigma, \hat{\mathbf p}\cdot\boldsymbol\sigma)$; $h = +\frac12$ is called right-handed, $-\frac12$ left-handed, see Definition [[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-1|§C8b.5.1]] Helicity of a Dirac Spinor. *Source: Problem Set 5, Problem 6 (statement) · the user's notes Ch. 9 §9.4*
 
-^nd-def-c8-14-1
+^nd-def-c8b-5-1
 
 - [ ] Q1 **[def]** Define the helicity operator on Dirac spinors.
 - [ ] Q2 **[conv]** Both helicity and chirality use the words "left-handed" and "right-handed". Which operator defines each?
@@ -5592,13 +5592,13 @@ For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1
-> - Definition [[§C8.14 Helicity Spinors and the Massless Limit#^def-c8-14-1|§C8.14.1]] Helicity of a Dirac Spinor; frame dependence: [[§C8.14 Helicity Spinors and the Massless Limit#^rem-c8-14-1|§C8.14, Remark: The helicity of a massive particle depends on the frame]]; helicity becomes chirality: Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-4|§C8.14.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality.
+> - Definition [[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-1|§C8b.5.1]] Helicity of a Dirac Spinor; frame dependence: [[§C8b.5 Helicity Spinors and the Massless Limit#^rem-c8b-5-1|§C8b.5, Remark: The helicity of a massive particle depends on the frame]]; helicity becomes chirality: Theorem [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4|§C8b.5.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality.
 
 ### [B] Helicity two-spinors
 
-$\xi_\pm(\hat{\mathbf p})$: normalized eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol\sigma$ with eigenvalues $\pm1$, each fixed up to a phase, see Definition [[§C8.14 Helicity Spinors and the Massless Limit#^def-c8-14-2|§C8.14.2]] Helicity Two-Spinors. → their explicit form is drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
+$\xi_\pm(\hat{\mathbf p})$: normalized eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol\sigma$ with eigenvalues $\pm1$, each fixed up to a phase, see Definition [[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-2|§C8b.5.2]] Helicity Two-Spinors. → their explicit form is drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
 
-^nd-def-c8-14-2
+^nd-def-c8b-5-2
 
 - [ ] Q1 **[def]** Define $\xi_\pm(\hat{\mathbf p})$.
 - [ ] Q2 **[why]** Why can no phase convention make $\xi_\pm$ continuous on the whole sphere of directions?
@@ -5606,7 +5606,7 @@ $\xi_\pm(\hat{\mathbf p})$: normalized eigenvectors of $\hat{\mathbf p}\cdot\bol
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (projectors)
-> - Definition [[§C8.14 Helicity Spinors and the Massless Limit#^def-c8-14-2|§C8.14.2]] Helicity Two-Spinors; [[§C8.14 Helicity Spinors and the Massless Limit#^cau-c8-14-1|§C8.14, Caution: No phase convention is smooth on the whole sphere]]; numbers: step 2 of [[§C8.14 Helicity Spinors and the Massless Limit#^der-c8-14-2|Derivation §C8.14.2]].
+> - Definition [[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-2|§C8b.5.2]] Helicity Two-Spinors; [[§C8b.5 Helicity Spinors and the Massless Limit#^cau-c8b-5-1|§C8b.5, Caution: No phase convention is smooth on the whole sphere]]; numbers: step 2 of [[§C8b.5 Helicity Spinors and the Massless Limit#^der-c8b-5-2|Derivation §C8b.5.2]].
 
 ### [B] Three different transformations of a spinor
 
@@ -6127,7 +6127,7 @@ The positive-frequency solutions of the left-handed Weyl equation have spin agai
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1, K7
-> - [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]]; Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-4|§C5a.8.4]] Weyl Plane Waves Have Fixed Helicity; helicity becomes chirality: Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-4|§C8.14.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality; frame dependence: [[§C8.14 Helicity Spinors and the Massless Limit#^rem-c8-14-1|§C8.14, Remark: The helicity of a massive particle depends on the frame]]; the sign of K: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]].
+> - [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]]; Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-4|§C5a.8.4]] Weyl Plane Waves Have Fixed Helicity; helicity becomes chirality: Theorem [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4|§C8b.5.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality; frame dependence: [[§C8b.5 Helicity Spinors and the Massless Limit#^rem-c8b-5-1|§C8b.5, Remark: The helicity of a massive particle depends on the frame]]; the sign of K: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]].
 
 ### [B] The Dirac equation keeps its form when ψ and γ change together ★
 
@@ -6575,15 +6575,15 @@ For $m > 0$, $\frac1{2m}\sum_s(u^s\bar u^s - v^s\bar v^s) = \mathbb 1$; $\Lambda
 
 ### [PS] The helicity two-spinors
 
-$\xi_\pm(\hat{\mathbf p})$ in polar angles with the stated phase convention, see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-1|§C8.14.1]] The Helicity Two-Spinors. → drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
+$\xi_\pm(\hat{\mathbf p})$ in polar angles with the stated phase convention, see Theorem [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-1|§C8b.5.1]] The Helicity Two-Spinors. → drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
 
-^nd-thm-c8-14-1
+^nd-thm-c8b-5-1
 
 ### [B] Helicity spinors u± ★
 
-With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqrt{E \mp \lvert\mathbf p\rvert}\,\xi_\pm, \sqrt{E \pm \lvert\mathbf p\rvert}\,\xi_\pm)$, $hu_\pm = \pm\frac12u_\pm$; with $\omega_\lambda = \sqrt{E + \lambda\lvert\mathbf p\rvert}$, $u_\lambda = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$, see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-2|§C8.14.2]] Helicity Spinors u±. *Source: Problem Set 5, Problem 6 (context) · Yu (the helicity basis) · the user's notes Ch. 9 §9.4*
+With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqrt{E \mp \lvert\mathbf p\rvert}\,\xi_\pm, \sqrt{E \pm \lvert\mathbf p\rvert}\,\xi_\pm)$, $hu_\pm = \pm\frac12u_\pm$; with $\omega_\lambda = \sqrt{E + \lambda\lvert\mathbf p\rvert}$, $u_\lambda = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$, see Theorem [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-2|§C8b.5.2]] Helicity Spinors u±. *Source: Problem Set 5, Problem 6 (context) · Yu (the helicity basis) · the user's notes Ch. 9 §9.4*
 
-^nd-thm-c8-14-2
+^nd-thm-c8b-5-2
 
 - [ ] Q1 **[state]** Write $u_\pm$ in the helicity basis.
 - [ ] Q2 What are $p\cdot\sigma\,\xi_\pm$ and $p\cdot\bar\sigma\,\xi_\pm$?
@@ -6593,13 +6593,13 @@ With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqr
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (projectors)
-> - Steps 1–4 of [[§C8.14 Helicity Spinors and the Massless Limit#^der-c8-14-2|Derivation §C8.14.2]]; names: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^cau-c5a-11-2|§C5a.11, Caution: Names for the plane-wave spinors]].
+> - Steps 1–4 of [[§C8b.5 Helicity Spinors and the Massless Limit#^der-c8b-5-2|Derivation §C8b.5.2]]; names: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^cau-c5a-11-2|§C5a.11, Caution: Names for the plane-wave spinors]].
 
 ### [B] The v spinors in the helicity basis ★
 
-With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-\lambda}, -\lambda\omega_{-\lambda}\xi_{-\lambda})$ and $hv_\lambda = -\frac\lambda2v_\lambda$ (Yu's choice), see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-3|§C8.14.3]] The v Spinors in the Helicity Basis. *Source: Yu (the helicity basis) · the user's notes Ch. 9*
+With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-\lambda}, -\lambda\omega_{-\lambda}\xi_{-\lambda})$ and $hv_\lambda = -\frac\lambda2v_\lambda$ (Yu's choice), see Theorem [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-3|§C8b.5.3]] The v Spinors in the Helicity Basis. *Source: Yu (the helicity basis) · the user's notes Ch. 9*
 
-^nd-thm-c8-14-3
+^nd-thm-c8b-5-3
 
 - [ ] Q1 **[state]** Write $v_\lambda$ and its helicity.
 - [ ] Q2 Act with the roots on $\xi_{-\lambda}$ and insert.
@@ -6608,13 +6608,13 @@ With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4
-> - Steps 1–4 of [[§C8.14 Helicity Spinors and the Massless Limit#^der-c8-14-3|Derivation §C8.14.3]]; Lecture 12's choice: Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-5|§C9.6.5]] The Antiparticle Two-Spinors η^s = ξ^{−s}.
+> - Steps 1–4 of [[§C8b.5 Helicity Spinors and the Massless Limit#^der-c8b-5-3|Derivation §C8b.5.3]]; Lecture 12's choice: Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-5|§C9.6.5]] The Antiparticle Two-Spinors η^s = ξ^{−s}.
 
 ### [B] The massless and high-energy limit: helicity becomes chirality ★
 
-At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma^5u_\pm = \pm u_\pm$; for $E \gg m$ the other half is suppressed by $m/2E$, see Theorem [[§C8.14 Helicity Spinors and the Massless Limit#^thm-c8-14-4|§C8.14.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality. *Source: PS §3.3 · the user's notes Ch. 9*
+At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma^5u_\pm = \pm u_\pm$; for $E \gg m$ the other half is suppressed by $m/2E$, see Theorem [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4|§C8b.5.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality. *Source: PS §3.3 · the user's notes Ch. 9*
 
-^nd-thm-c8-14-4
+^nd-thm-c8b-5-4
 
 - [ ] Q1 **[state]** State the massless limit of $u_\pm$ and their chirality.
 - [ ] Q2 Which of $\sqrt{E \mp \lvert\mathbf p\rvert}$ vanishes at $m = 0$?
@@ -6623,7 +6623,7 @@ At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1
-> - Steps 1–4 of [[§C8.14 Helicity Spinors and the Massless Limit#^der-c8-14-4|Derivation §C8.14.4]]; [[§C8.14 Helicity Spinors and the Massless Limit#^rem-c8-14-2|§C8.14, Remark: The mass is what connects the two chiral blocks]]; why "left-handed": [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]].
+> - Steps 1–4 of [[§C8b.5 Helicity Spinors and the Massless Limit#^der-c8b-5-4|Derivation §C8b.5.4]]; [[§C8b.5 Helicity Spinors and the Massless Limit#^rem-c8b-5-2|§C8b.5, Remark: The mass is what connects the two chiral blocks]]; why "left-handed": [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]].
 
 ### [B] Slash algebra ★
 

@@ -7,8 +7,8 @@ tags: [chapter, differentiable-manifolds]
 # 8 Vector Fields and Lie Groups
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (6), [[· 3 Smooth Structures|3 Smooth Structures]] (44), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (78), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (22), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (7), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (7), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (1)
-**Used by:** [[· 9 Sard's Theorem|9 Sard's Theorem]] (10), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (48)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (6), [[· 3 Smooth Structures|3 Smooth Structures]] (44), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (78), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (22), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (12), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (7), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (1)
+**Used by:** [[· 9 Sard's Theorem|9 Sard's Theorem]] (10), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (48), [[· 11 Differential Forms|11 Differential Forms]] (2)
 **Builds on (other subjects):** [[Linear Algebra]] (2), [[Topology]] (2), [[Multivariable Analysis]] (2)
 
 ## Sections
@@ -24,7 +24,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§56 Vector Fields#^lem-56-5|Lemma §56.5: A Smooth Function Vanishing on a Half-Line]]: 105 later results
-- [[§56 Vector Fields#^lem-56-6|Lemma §56.6: Bump Function Equal to 1 on a Closed Coordinate Ball]]: 105 later results
-- [[§56 Vector Fields#^cor-56-7|Corollary §56.7: Bump Functions Exist]]: 102 later results
-- [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]: 93 later results
+- [[§56 Vector Fields#^lem-56-5|Lemma §56.5: A Smooth Function Vanishing on a Half-Line]]: 106 later results
+- [[§56 Vector Fields#^lem-56-6|Lemma §56.6: Bump Function Equal to 1 on a Closed Coordinate Ball]]: 106 later results
+- [[§56 Vector Fields#^cor-56-7|Corollary §56.7: Bump Functions Exist]]: 103 later results
+- [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]: 96 later results

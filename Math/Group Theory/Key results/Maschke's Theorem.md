@@ -23,6 +23,7 @@ tags: [group-theory, hub]
 - [[§65 Simple Representations#^prop-65-1|Proposition §65.1: Simple Equals Irreducible]]
 - [[§65 Simple Representations#^cor-65-3|Corollary §65.3: Every Representation Is a Direct Sum of Simples, over Any Field with ∣G∣ ≠ 0]]
 - [[§68 Homomorphisms Between Representations#^prop-68-9|Proposition §68.9: Matrices of Finite Order]]
+- [[§70 Schur's Lemma and Multiplicities#^prop-70-16|Proposition §70.16: Hom(V, W) Is Simple over ℂ]]
 
 ## Connections
 - TODO

@@ -1,0 +1,460 @@
+---
+type: section
+subject: "[[Quantum Field Theory]]"
+level: C
+chapter: C8b
+section: C8b.3
+conventions: "[[Larsen PHY 513]]"
+tags: [quantum-field-theory, level-c]
+---
+← [[§C8b.2 Particle States and the Little Group|§C8b.2]] · ↑ [[· C8b Spin, Helicity and Chirality]] · [[§C8b.4 Chirality|§C8b.4]] →
+
+*Provenance: the definition of helicity and its dependence on the frame are lectured (Lecture 20, slides 9, 11, 24). The little-group construction and the proofs are from Yu Zhao-Huan's lecture notes (§3.3.2), the supplement of the user's PHY 513 notes (Ch. 7 §7.7) and the user's pre-course notes; they are not lectured in PHY 513 and stand here because the spin-resolved processes of this chapter rest on them ([[§C8b.1 Why Spin Must Now Be Tracked|§C8b.1]]). One section again since 2026-11-18: it was the starred section §C3.7 of chapter C3, with its helicity boxes kept in C8 between 2026-11-16 and 2026-11-18.*
+
+*Sources: PHY 513 Lecture 20 (Larsen, 16 Nov 2026), slides 9, 11 and 24, and transcript · the user's PHY 513 notes, Lecture 20 update, §20.1, Definition "Helicity"; Ch. 7 §7.7 (Derivation "Massless particles: the little group is ISO(2), and the label is helicity"; table of orbits) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §5.2, p. 141 · Yu Zhao-Huan, 量子场论讲义, §3.3.1, eqs. (3.175)–(3.177), Exercise 3.6; §3.3.2, eqs. (3.178)–(3.218) · the user's pre-course notes, §2.3 ("Massless particles": the little group, generators, helicity, quantization; "Helicity and the Lorentz covering group"; "Photon, graviton, neutrino") · Weinberg, The Quantum Theory of Fields I, §2.5, as followed by Yu and the user's notes.*
+
+When is "right-handed" a property of a particle, and when only of the observer who looks at it? Why does a massless particle of spin $s$ have two polarization states, not $2s + 1$, and why is its helicity the same for every observer? [[§C8b.1 Why Spin Must Now Be Tracked|§C8b.1]] named the helicity of a massless particle as the spin label on which all observers agree; Lecture 20 uses it for every fermion of $e^+e^- \to \mu^+\mu^-$ ([[§C8b.6 Helicity Conservation at the QED Vertex|§C8b.6]]–[[§C8b.7 Polarized Cross Sections for Muon Pair Production|§C8b.7]]) and notes that "helicity is not Lorentz-invariant except in the UR limit" (slide 24). This section proves these statements. Wigner's construction ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]]) reduces them to the little group of a lightlike momentum, which is not the rotation group: a massless particle has no rest frame ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-7|Theorem §C8b.2.7]]). In order:
+1. the little group of a lightlike momentum is the Euclidean group of a plane, $ISO(2)$ ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorems §C8b.3.1]]–[[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-2|§C8b.3.2]]);
+2. its "translations" must act trivially on physical states: no continuous spin ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-3|Theorem §C8b.3.3]], [[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4|Law §C8b.3.4]]), which leaves the standard states labelled by one number ([[§C8b.3 Massless Particles and Helicity#^def-c8b-3-1|Def. §C8b.3.1]]);
+3. helicity is defined, in the course's form and as an operator ([[§C8b.3 Massless Particles and Helicity#^def-c8b-3-2|Def. §C8b.3.2]]);
+4. for $m = 0$ it is the same in every frame ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-5|Theorem §C8b.3.5]]), while a frame moving faster than a massive particle reverses it ([[§C8b.3 Massless Particles and Helicity#^rem-c8b-3-2|Remark: Helicity of a massive particle]]);
+5. it is quantized, by the topology of the Lorentz group ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-6|Theorem §C8b.3.6]]);
+6. it is the constant of proportionality between the Pauli–Lubanski vector and the momentum ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-7|Theorem §C8b.3.7]]);
+7. parity pairs $\lambda$ with $-\lambda$ ([[§C8b.3 Massless Particles and Helicity#^rem-c8b-3-3|Remark: Parity pairs λ with −λ: photon, graviton, neutrino]]);
+8. the same translations, acting on polarization vectors, are where gauge invariance of a massless vector field comes from ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-8|Theorem §C8b.3.8]]; [[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-3|Theorem §C4.1.3]], [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^rem-c4-6-3|§C4.6, Remark: Why a massless vector field must be a gauge field]]; null states, [[§C4.10 The Gupta–Bleuler Condition and Physical Photons#^thm-c4-10-6|Theorem §C4.10.6]]).
+
+The algebra used is that of [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]], on states [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]] ([[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] for the rotations). The facts about the Euclidean group, its cover in $SL(2, \mathbb C)$ and the topology of $SO(3)$ are proved in [[§CB.22★ The Poincaré Group and Induced Representations|§CB.22★]] and [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers|§CB.10]], linked where used and listed at the end. The photon's two helicities are [[§C8b.9 Photon Helicity|§C8b.9]]; the helicity of Dirac spinors, where helicity becomes chirality, is [[§C8b.5 Helicity Spinors and the Massless Limit|§C8b.5]]; chirality itself, the label of a field component, is [[§C8b.4 Chirality|§C8b.4]].
+
+**The mathematical picture.** The helicity operator $\hat{\mathbf J}\cdot\hat{\mathbf P}/|\hat{\mathbf P}|$ commutes with $\hat P^\mu$, so it acts within each momentum. On a massive particle the states at fixed $\mathbf p$ carry the spin-$s$ representation of the rotation group ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]]), and helicity is one more choice of $J_3$-axis, with $2s + 1$ values. On a massless particle the little group of the momentum is the Euclidean group $ISO(2)$ ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorem §C8b.3.1]]); with its translations acting trivially ([[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4|Law §C8b.3.4]]) only its rotation subgroup $SO(2)$ is left, whose irreducible representations are one-dimensional and labelled by the helicity itself. The construction of these representations, Wigner's method of induced representations, is [[§C8b.2 Particle States and the Little Group|§C8b.2]] and the first half of this section ([[§CB.22★ The Poincaré Group and Induced Representations|§CB.22★]]).
+
+**Setup.** As in [[§C8b.2 Particle States and the Little Group|§C8b.2]]: any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]), free or interacting, and the states of one particle species ([[§C8b.2 Particle States and the Little Group#^pr-c8b-2-1|Principle §C8b.2.1]]). The particle is massless, $p^2 = 0$, $p^0 > 0$, except in [[§C8b.3 Massless Particles and Helicity#^def-c8b-3-2|Def. §C8b.3.2]] and in the remark on massive particles, which hold for states of nonzero momentum of any mass. From [[§C8b.3 Massless Particles and Helicity#^def-c8b-3-1|Def. §C8b.3.1]] on, the particle obeys [[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4|Law §C8b.3.4]] (finitely many states per momentum), with the standard momentum $k = \kappa(1, 0, 0, 1)$ and the standard states $|p, \lambda\rangle = U(V(p))|k, \lambda\rangle$; for the free Maxwell field these are the physical photon states of [[§C4.10 The Gupta–Bleuler Condition and Physical Photons|§C4.10]] and [[§C8b.9 Photon Helicity|§C8b.9]]. Relativistic normalization, momentum eigenstates read as kernels; the results are exact. Theorems §C8b.3.1 and §C8b.3.8 are statements about the Lorentz group and its vector representation alone, independent of any theory. "*applies:* as in the opening" in the boxes below refers to this setup.
+
+*Conventions* ([[Larsen PHY 513]]): as in [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] and [[§C8b.2 Particle States and the Little Group|§C8b.2]]; rotations are active, $U(R_z(\theta)) = e^{-i\theta \hat J^3}$, $\hat K^i = \hat J^{0i}$. The standard momentum is $k = \kappa(1, 0, 0, 1)$, $\kappa > 0$, with $\tilde k \equiv k/\kappa = (1, 0, 0, 1)$ and $\tilde t \equiv (1, 0, 0, 0)$. Yu's angle is passive, so his phases $e^{+i\lambda\theta}$ ((3.208)–(3.214)) are $e^{-i\lambda\theta}$ here; his matrix $S(\alpha, \beta)$ and generators $\hat A$, $\hat B$ are the same. A subscript $R$ or $L$ on a particle is its physical helicity.
+
+| Helicity in these notes | Home |
+|---|---|
+| the little group $ISO(2)$ of a null momentum, continuous spin excluded, the standard states $\lvert p, \lambda\rangle$ | this section: [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1\|Theorem §C8b.3.1]]–[[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4\|Law §C8b.3.4]], [[§C8b.3 Massless Particles and Helicity#^def-c8b-3-1\|Def. §C8b.3.1]] |
+| polarization vectors of a helicity-$\pm1$ particle shift by a multiple of $k$ (origin of gauge invariance) | this section: [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-8\|Theorem §C8b.3.8]] |
+| the helicity matrix $\hat{\mathbf n}\cdot\boldsymbol{\mathcal J}$ of the vector representation | [[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-1\|Theorem §C4.1.1]] |
+| Yu's helicity polarization basis $\varepsilon(p, \pm), \varepsilon(p, 0)$ and its phase conventions | [[§C4.3★ Massive Polarization Vectors and Plane Waves#^def-c4-3-5\|Def. §C4.3.5]], [[§C4.3★ Massive Polarization Vectors and Plane Waves#^thm-c4-3-6\|Theorem §C4.3.6]], [[§C4.3★ Massive Polarization Vectors and Plane Waves#^cau-c4-3-1\|§C4.3★, Caution: Phase conventions and the z-axis]] |
+| the helicity of photons and of massive vector quanta | [[§C8b.9 Photon Helicity\|§C8b.9]] |
+| chirality, $\gamma^5$ and the Weyl halves; bilinears in Weyl components | [[§C5a.5 Chirality and Weyl Spinors\|§C5a.5]], [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-1\|Theorem §C5a.8.1]] |
+| Weyl plane waves have fixed helicity | [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-4\|Theorem §C5a.8.4]], [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1\|§C5a.8, Remark: Why "left-handed"]] |
+| the two labels, helicity and chirality, side by side | [[§C8b.4 Chirality#^rem-c8b-4-2\|§C8b.4, Remark: Helicity versus chirality]] |
+| helicity spinors and the massless limit | [[§C8b.5 Helicity Spinors and the Massless Limit\|§C8b.5]] |
+| helicity at the QED vertex; polarized cross sections; amplitudes with masses | [[§C8b.6 Helicity Conservation at the QED Vertex\|§C8b.6]], [[§C8b.7 Polarized Cross Sections for Muon Pair Production\|§C8b.7]], [[§C8b.8★ Polarized Amplitudes with Masses\|§C8b.8★]] |
+| charge conjugation of the helicity two-spinors | [[§C9.6 Charge Conjugation on Oscillators and Spinors#^ex-c9-6-1\|Example §C9.6.1]] |
+
+## The little group of a lightlike momentum
+
+> [!theorem] Theorem §C8b.3.1: The Massless Little Group Is ISO(2)
+> Every $W \in SO^+(1,3)$ with $Wk = k$ is, uniquely, $W = S(\alpha, \beta)\,R_z(\theta)$ with $\alpha, \beta \in \mathbb R$, $\theta \in [0, 2\pi)$, where $R_z(\theta)$ is the rotation by $\theta$ about the $z$-axis and
+>
+> $$
+> S(\alpha, \beta) = \begin{pmatrix} 1 + \zeta & \alpha & \beta & -\zeta \\ \alpha & 1 & 0 & -\alpha \\ \beta & 0 & 1 & -\beta \\ \zeta & \alpha & \beta & 1 - \zeta \end{pmatrix}, \qquad \zeta = \tfrac12(\alpha^2 + \beta^2) .
+> $$
+>
+> The $S$'s compose by adding parameters, $S(\alpha_1, \beta_1)S(\alpha_2, \beta_2) = S(\alpha_1 + \alpha_2, \beta_1 + \beta_2)$, and a rotation turns them like a vector of the plane, $R_z(\theta)\,S(\mathbf v)\,R_z(\theta)^{-1} = S(r_\theta\mathbf v)$ for $\mathbf v = (\alpha, \beta)$ and $r_\theta$ the rotation of $\mathbb R^2$ by $\theta$. So $G_k \cong ISO(2)$, the isometries $\mathbf x \mapsto r_\theta\mathbf x + \mathbf v$ of the Euclidean plane ([[§CB.22★ The Poincaré Group and Induced Representations#^def-cb-22-9|Def. §CB.22.9]]), with $(\alpha, \beta)$ as translations. In the cover $SL(2, \mathbb C)$ the stabilizer of $k$ is a double cover of $ISO(2)$, conjugate to the matrices $\begin{pmatrix} e^{i\theta/2} & z \\ 0 & e^{-i\theta/2}\end{pmatrix}$ with $\theta \in [0, 4\pi)$, $z \in \mathbb C$ ([[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-10|Theorem §CB.22.10]]): its rotation angle closes only after $4\pi$, which is what lets helicity be half-integer (Theorem §C8b.3.6).
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 (Step 1 of the massless derivation) · Yu §3.3.2, eqs. (3.178)–(3.190) · the user's pre-course notes, §2.3 ("The little group is ISO(2)"); the exponential form and the conjugation rule in the active convention written out here*
+
+^thm-c8b-3-1
+
+> [!derivation]- Derivation
+> **Step 1** (what $W$ does to a timelike reference vector). Let $t \equiv W\tilde t$. A Lorentz transformation preserves Minkowski products and $W\tilde k = \tilde k$, so $t\cdot\tilde k = (W\tilde t)\cdot(W\tilde k) = \tilde t\cdot\tilde k = 1$ and $t\cdot t = \tilde t\cdot\tilde t = 1$; $W$ is orthochronous, so $t^0 > 0$.
+>
+> **Step 2** (solve for $t$). $t\cdot\tilde k = t^0 - t^3 = 1$, so write $t^3 = \zeta$, $t^0 = 1 + \zeta$, $t^1 = \alpha$, $t^2 = \beta$. Then $t\cdot t = (1 + \zeta)^2 - \alpha^2 - \beta^2 - \zeta^2 = 1 + 2\zeta - \alpha^2 - \beta^2$, and $t\cdot t = 1$ gives $\zeta = \frac12(\alpha^2 + \beta^2)$, with $\alpha$, $\beta$ unrestricted: $t = (1 + \zeta, \alpha, \beta, \zeta)$.
+>
+> **Step 3** ($S(\alpha, \beta)$ is an exponential). Let $N(\alpha, \beta)$ be the matrix with rows $(0, \alpha, \beta, 0)$, $(\alpha, 0, 0, -\alpha)$, $(\beta, 0, 0, -\beta)$, $(0, \alpha, \beta, 0)$. Multiplying row by column, $N^2$ has rows $2\zeta(1, 0, 0, -1)$, $0$, $0$, $2\zeta(1, 0, 0, -1)$ (row 0 times column 0 is $\alpha^2 + \beta^2$, times column 3 is $-\alpha^2 - \beta^2$, all other entries cancel in pairs), and $N^3 = N^2N = 0$ because $(1, 0, 0, -1)N$ is row 0 minus row 3 of $N$, which is zero. So the exponential series stops:
+>
+> $$
+> e^{N} = \mathbb 1 + N + \tfrac12N^2 = S(\alpha, \beta) .
+> $$
+>
+> Lowering the first index, $\omega_{\mu\nu} = g_{\mu\rho}N^\rho{}_\nu$ has $\omega_{01} = \omega_{13} = \alpha$, $\omega_{02} = \omega_{23} = \beta$, all others fixed by antisymmetry or zero: it is antisymmetric, so $S(\alpha, \beta) \in SO^+(1,3)$ ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-4|Theorem §C1a.7.4]]).
+>
+> **Step 4** ($S$ fixes $k$ and carries $\tilde t$ to $t$). $N\tilde k$: row 0 gives $0$, rows 1 and 2 give $\alpha - \alpha = 0$ and $\beta - \beta = 0$, row 3 gives $0$; so $N\tilde k = 0$ and $S\tilde k = \tilde k$, $Sk = k$. $S\tilde t$ is the first column of $S$, $(1 + \zeta, \alpha, \beta, \zeta) = t$.
+>
+> **Step 5** (what is left is a rotation about $z$). $Q \equiv S(\alpha, \beta)^{-1}W$ satisfies $Q\tilde t = S^{-1}t = \tilde t$ and $Q\tilde k = \tilde k$. Fixing $\tilde t = (1, \mathbf 0)$ makes $Q = \operatorname{diag}(1, R)$ with $R \in SO(3)$ (Steps 1–3 of [[§C8b.2 Particle States and the Little Group#^der-c8b-2-8|Derivation §C8b.2.8]] with $m = 1$). Fixing $\tilde k$ then says $R\hat{\mathbf z} = \hat{\mathbf z}$, so $R$ maps the $xy$-plane to itself orthogonally with determinant 1: $R = R_z(\theta)$ for one $\theta \in [0, 2\pi)$. Hence $W = S(\alpha, \beta)R_z(\theta)$. Conversely every such product fixes $k$ ($R_z$ does, and $S$ by Step 4).
+>
+> **Step 6** (uniqueness). If $S(\alpha, \beta)R_z(\theta) = S(\alpha', \beta')R_z(\theta')$, apply both sides to $\tilde t$, which $R_z$ fixes: the first columns of $S$ agree, so $(\alpha, \beta) = (\alpha', \beta')$; cancelling $S$, $R_z(\theta) = R_z(\theta')$.
+>
+> **Step 7** (composition of the $S$'s). $N$ is linear in $(\alpha, \beta)$: $N = \alpha N_1 + \beta N_2$. The products $N_1N_2$ and $N_2N_1$ vanish (each row of $N_1$ is $0$, $\pm$ row 1 of $N_2$, or row 0 minus row 3 of $N_2$, all zero rows, and symmetrically), so $N_1$ and $N_2$ commute and exponents add: $S(\alpha_1, \beta_1)S(\alpha_2, \beta_2) = e^{N(\alpha_1 + \alpha_2,\, \beta_1 + \beta_2)} = S(\alpha_1 + \alpha_2, \beta_1 + \beta_2)$.
+>
+> **Step 8** (conjugation by a rotation). In block form for the coordinates $(t; x, y; z)$, $N(\mathbf v)$ has $\mathbf v^{\mathsf T}$ in the $t$- and $z$-rows, $\mathbf v$ in the $t$-column and $-\mathbf v$ in the $z$-column, and $R_z(\theta) = \operatorname{diag}(1, r_\theta, 1)$. Then $R_zN(\mathbf v)R_z^{-1}$ has $\mathbf v^{\mathsf T}r_\theta^{-1} = (r_\theta\mathbf v)^{\mathsf T}$ in those rows and $r_\theta\mathbf v$ in those columns: $R_zN(\mathbf v)R_z^{-1} = N(r_\theta\mathbf v)$, and conjugation passes through the exponential. So $R_z(\theta)S(\mathbf v)R_z(\theta)^{-1} = S(r_\theta\mathbf v)$; equivalently $R_z(\theta)^{-1}S(\alpha, \beta)R_z(\theta) = S(\alpha\cos\theta + \beta\sin\theta,\ -\alpha\sin\theta + \beta\cos\theta)$ (checked numerically).
+>
+> **Step 9** (the group law is that of ISO(2)). By Steps 7–8, $S(\mathbf v_1)R_z(\theta_1)\,S(\mathbf v_2)R_z(\theta_2) = S(\mathbf v_1)\bigl(R_z(\theta_1)S(\mathbf v_2)R_z(\theta_1)^{-1}\bigr)R_z(\theta_1)R_z(\theta_2) = S(\mathbf v_1 + r_{\theta_1}\mathbf v_2)\,R_z(\theta_1 + \theta_2)$, which is the composition $(\mathbf v_1, r_{\theta_1})(\mathbf v_2, r_{\theta_2}) = (\mathbf v_1 + r_{\theta_1}\mathbf v_2, r_{\theta_1}r_{\theta_2})$ of the plane isometries $\mathbf x \mapsto r_\theta\mathbf x + \mathbf v$. With Steps 5–6 the map $(\mathbf v, \theta) \mapsto S(\mathbf v)R_z(\theta)$ is an isomorphism $ISO(2) \to G_k$, and $\{S(\mathbf v)\}$ is a normal subgroup.
+>
+> ⚑ By-product: the "translations" $S(\alpha, \beta)$ are not translations of spacetime; each is a combination of a boost and a rotation that happens to fix one null direction ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-2|Theorem §C8b.3.2]] gives its generators). The little group is not compact, unlike $SO(3)$ → [[§C8b.3 Massless Particles and Helicity#^rem-c8b-3-1|Remark: No rest frame, a noncompact little group]].
+>
+> **What the derivation shows.**
+> - Only $W\tilde k = \tilde k$, the invariance of Minkowski products and orthochronicity were used; the massive argument of Theorem §C8b.2.8 reappears for the leftover rotation.
+> - Used next: the generators of $G_k$ (Theorem §C8b.3.2) and the action on polarization vectors ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-8|Theorem §C8b.3.8]]).
+
+^der-c8b-3-1
+
+*Uses:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-4|Theorem §C1a.7.4]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-8|Theorem §C8b.2.8]], [[§38 Normal Subgroups|493 §38]]
+
+> [!theorem] Theorem §C8b.3.2: Generators of the Massless Little Group
+> With $\hat J^i$ and $\hat K^i = \hat J^{0i}$ the Hilbert-space generators ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^def-c3-4-1|Def. §C3.4.1]]), let
+>
+> $$
+> \hat A \equiv \hat J^2 - \hat K^1, \qquad \hat B \equiv -\hat J^1 - \hat K^2 .
+> $$
+>
+> 1. $U(S(\alpha, \beta)) = e^{i(\alpha \hat A + \beta \hat B)}$ and $U(R_z(\theta)) = e^{-i\theta \hat J^3}$; in the vector representation the same formulas hold with the matrices $\mathcal J^i$, $\mathcal K^i$.
+> 2. $[\hat J^3, \hat A] = i\hat B$, $[\hat J^3, \hat B] = -i\hat A$, $[\hat A, \hat B] = 0$: the algebra of $ISO(2)$, the same as that of $(\hat J^3, \hat P^1, \hat P^2)$ in the Poincaré algebra ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]]).
+> 3. $U(R_z(\theta))^{-1}\,\hat A\,U(R_z(\theta)) = \hat A\cos\theta - \hat B\sin\theta$ and $U(R_z(\theta))^{-1}\,\hat B\,U(R_z(\theta)) = \hat A\sin\theta + \hat B\cos\theta$.
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 (Step 2 of the massless derivation; Weinberg's $A = J_2 + K_1$, $B = -J_1 + K_2$ with his $K = J^{i0}$) · Yu §3.3.2, eqs. (3.191)–(3.203) · the user's pre-course notes, §2.3 ("Generators"; Note "Checking")*
+
+^thm-c8b-3-2
+
+> [!derivation]- Derivation
+> **Step 1** (the parameters of $S$). From Step 3 of [[§C8b.3 Massless Particles and Helicity#^der-c8b-3-1|Derivation §C8b.3.1]], $S(\alpha, \beta) = e^{N}$ with lowered components $\omega_{01} = \omega_{13} = \alpha$, $\omega_{02} = \omega_{23} = \beta$, $\omega_{03} = \omega_{12} = 0$. Its generator, by [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-1|Def. §C1a.7.1]], is $-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu} = -i\sum_{\mu<\nu}\omega_{\mu\nu}\mathcal J^{\mu\nu}$ (the $\frac12$ removes the double count):
+>
+> $$
+> -i\bigl(\alpha\mathcal J^{01} + \beta\mathcal J^{02} + \alpha\mathcal J^{13} + \beta\mathcal J^{23}\bigr) = -i\bigl(\alpha\mathcal K^1 + \beta\mathcal K^2 - \alpha\mathcal J^2 + \beta\mathcal J^1\bigr) = i\alpha(\mathcal J^2 - \mathcal K^1) + i\beta(-\mathcal J^1 - \mathcal K^2),
+> $$
+>
+> using $\mathcal J^{13} = -\mathcal J^{31} = -\mathcal J^2$ and $\mathcal J^{23} = \mathcal J^1$ ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-2|Def. §C1a.7.2]]). So $S(\alpha, \beta) = e^{i(\alpha\mathcal A + \beta\mathcal B)}$ in the vector representation (checked numerically). The rotation $R_z(\theta)$ has $\omega_{12} = \theta$ and generator $-i\theta\mathcal J^3$. On the Hilbert space the same $\omega_{\mu\nu}$ give $U = \exp(-\frac i2\omega_{\mu\nu}\hat J^{\mu\nu})$ ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|Theorem §C3.4.6]], 4): part 1.
+>
+> **Step 2** (the commutators). From the Lorentz algebra in $\hat J$, $\hat K$ form, $[\hat J^i, \hat J^j] = i\varepsilon_{ijk}\hat J^k$, $[\hat J^i, \hat K^j] = i\varepsilon_{ijk}\hat K^k$, $[\hat K^i, \hat K^j] = -i\varepsilon_{ijk}\hat J^k$ ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]]; the $\hat J$, $\hat K$ form: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]):
+> - $[\hat J^3, \hat A] = [\hat J^3, \hat J^2] - [\hat J^3, \hat K^1] = i\varepsilon_{321}\hat J^1 - i\varepsilon_{312}\hat K^2 = -i\hat J^1 - i\hat K^2 = i\hat B$;
+> - $[\hat J^3, \hat B] = -[\hat J^3, \hat J^1] - [\hat J^3, \hat K^2] = -i\varepsilon_{312}\hat J^2 - i\varepsilon_{321}\hat K^1 = -i\hat J^2 + i\hat K^1 = -i\hat A$;
+> - $[\hat A, \hat B] = -[\hat J^2, \hat J^1] - [\hat J^2, \hat K^2] + [\hat K^1, \hat J^1] + [\hat K^1, \hat K^2]$. The four terms are $-(-i\hat J^3) = i\hat J^3$; $-i\varepsilon_{22k}\hat K^k = 0$; $-[\hat J^1, \hat K^1] = -i\varepsilon_{11k}\hat K^k = 0$; and $-i\varepsilon_{123}\hat J^3 = -i\hat J^3$. They sum to zero: the rotation–rotation and boost–boost terms cancel.
+>
+> Renaming $\hat A \to \hat P^1$, $\hat B \to \hat P^2$ gives $[\hat J^3, \hat P^1] = i\hat P^2$, $[\hat J^3, \hat P^2] = -i\hat P^1$, $[\hat P^1, \hat P^2] = 0$, which are $[\hat J^i, \hat P^j] = i\varepsilon_{ijk}\hat P^k$ and $[\hat P^i, \hat P^j] = 0$ of Theorem §C3.4.8 for $i, j \in \{1, 2\}$, $k = 3$.
+>
+> **Step 3** (conjugation by a finite rotation). Let $\hat F(\theta) = e^{i\theta \hat J^3}\hat Ae^{-i\theta \hat J^3}$ and $\hat G(\theta) = e^{i\theta \hat J^3}\hat Be^{-i\theta \hat J^3}$, i.e. $U(R_z(\theta))^{-1}\hat AU(R_z(\theta))$ and likewise for $\hat B$. Differentiating, $\hat F' = e^{i\theta \hat J^3}\,i[\hat J^3, \hat A]\,e^{-i\theta \hat J^3} = -\hat G$ and $\hat G' = e^{i\theta \hat J^3}\,i[\hat J^3, \hat B]\,e^{-i\theta \hat J^3} = \hat F$ by Step 2. So $\hat F'' = -\hat F$ with $\hat F(0) = \hat A$, $\hat F'(0) = -\hat B$: $\hat F = \hat A\cos\theta - \hat B\sin\theta$, and $\hat G = -\hat F' = \hat A\sin\theta + \hat B\cos\theta$: part 3. (The same relation follows from Step 8 of Derivation §C8b.3.1 expanded to first order in $(\alpha, \beta)$.)
+>
+> **What the derivation shows.**
+> - $\hat A$ and $\hat B$ mix a rotation with a boost; their commutator vanishes only because the minus sign of $[\hat K^i, \hat K^j]$ cancels the plus sign of $[\hat J^i, \hat J^j]$, the Lorentzian feature of the algebra ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-1|§C3.2, Remark: Two boosts make a rotation]]).
+> - Under rotations about $\hat{\mathbf k}$, $(\hat A, \hat B)$ turn like a vector in the plane, as $(\hat P^1, \hat P^2)$ do.
+> - Used next: Theorem §C8b.3.3.
+
+^der-c8b-3-2
+
+*Uses:* [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorem §C8b.3.1]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-1|Def. §C1a.7.1]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-2|Def. §C1a.7.2]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|Theorem §C3.4.6]]
+
+> [!remark] Remark: No rest frame, a noncompact little group
+> A massive particle's little group was the rotation group of its rest frame ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-8|Theorem §C8b.2.8]]), compact, with only finite-dimensional irreducible unitary representations. A massless particle has no rest frame, and the only transformations that keep its momentum fixed are the rotations about $\hat{\mathbf k}$ and the two-parameter family $S(\alpha, \beta)$: a boost transverse to $\hat{\mathbf k}$ tilts the momentum, and the compensating rotation brings it back. The resulting group $ISO(2)$ is noncompact, like the Poincaré group itself, and it has infinite-dimensional irreducible unitary representations as well as one-dimensional ones. Which of them nature uses is decided by Theorem §C8b.3.3 and Law §C8b.3.4.
+>
+> *Source: the user's pre-course notes, §2.3 ("there is no rest frame to standardize on — the technical novelty of this case") · Yu §3.3.2, after eq. (3.190)*
+
+^rem-c8b-3-1
+
+## Continuous spin, and why it is excluded
+
+> [!theorem] Theorem §C8b.3.3: Nonzero Translation Eigenvalues Come in Circles
+> $\hat A$ and $\hat B$ commute and are Hermitian, so the states at the standard momentum can be chosen as joint eigenstates, $\hat A|k; a, b\rangle = a|k; a, b\rangle$, $\hat B|k; a, b\rangle = b|k; a, b\rangle$.
+> 1. $U(R_z(\theta))|k; a, b\rangle$ is again a state at momentum $k$, with eigenvalues $(a\cos\theta - b\sin\theta,\ a\sin\theta + b\cos\theta)$.
+> 2. Hence if $(a, b) \neq 0$, the states at $k$ include one for every point of the circle of radius $\rho = \sqrt{a^2 + b^2}$, mutually orthogonal: infinitely many internal states ("continuous spin").
+> 3. If the little-group representation $D$ is finite-dimensional, then $\hat A = \hat B = 0$ on every state at $k$.
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 (Step 3 of the massless derivation) · Yu §3.3.2, eqs. (3.200)–(3.206) · the user's pre-course notes, §2.3 ("Helicity")*
+
+^thm-c8b-3-3
+
+> [!derivation]- Derivation
+> **Step 1** (the rotated state stays at $k$). $R_z(\theta) \in G_k$, so $U(R_z(\theta))$ maps momentum $k$ to $R_z(\theta)k = k$ ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-3|Theorem §C8b.2.3]], 2).
+>
+> **Step 2** (its eigenvalues). Write $U = U(R_z(\theta))$. By [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-2|Theorem §C8b.3.2]], 3,
+>
+> $$
+> \hat A\,U|k; a, b\rangle = U\,(U^{-1}\hat AU)|k; a, b\rangle = U(\hat A\cos\theta - \hat B\sin\theta)|k; a, b\rangle = (a\cos\theta - b\sin\theta)\,U|k; a, b\rangle ,
+> $$
+>
+> and likewise $\hat B\,U|k; a, b\rangle = (a\sin\theta + b\cos\theta)\,U|k; a, b\rangle$: part 1. The new pair is the old one rotated by $\theta$ in the plane.
+>
+> **Step 3** (a circle of orthogonal states). For $(a, b) \neq 0$, distinct $\theta \in [0, 2\pi)$ give distinct eigenvalue pairs on the circle of radius $\rho$. Eigenvectors of a Hermitian operator for different eigenvalues are orthogonal, so the states (kernels, as the eigenvalues form a continuum) are mutually orthogonal: part 2.
+>
+> **Step 4** (finite dimension forces zero). The states at $k$ carry the representation $D$ of $G_k$ ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]], 1). If $D$ is finite-dimensional, $\hat A$ and $\hat B$ restricted to it are commuting Hermitian matrices with finitely many joint eigenvalue pairs. By Step 3 any pair $(a, b) \neq 0$ would bring a whole circle of distinct pairs. So the only pair is $(0, 0)$; a Hermitian matrix with only the eigenvalue $0$ is zero: $\hat A = \hat B = 0$ there.
+>
+> **What the derivation shows.**
+> - The irreducible unitary representations of $ISO(2)$ split into the one-dimensional ones ($\hat A = \hat B = 0$, labelled by the $\hat J^3$ eigenvalue) and infinite-dimensional ones labelled by $\rho > 0$ (functions on the circle), as for the Euclidean group of the plane acting on a free particle in two dimensions, whose momenta of fixed magnitude form a circle.
+> - The Pauli–Lubanski Casimir distinguishes them: $\hat W^2 = -\kappa^2\rho^2$ ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-7|Theorem §C8b.3.7]]).
+
+^der-c8b-3-3
+
+*Uses:* [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-3|Theorem §C8b.2.3]], [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-2|Theorem §C8b.3.2]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]]
+
+![[ph-qft-c3-6-1.svg]]
+*Eigenvalues $(a, b)$ of the little-group "translation" generators $\hat A$, $\hat B$ at the standard momentum $k$. A rotation about $\hat{\mathbf k}$ by $\theta$ turns the pair by $\theta$, so a state with $(a, b) \neq 0$ brings a whole circle of states (continuous spin, $\hat W^2 = -\kappa^2\rho^2$). Physical massless particles sit at the origin ([[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4|Law §C8b.3.4]]), where only the helicity label $\lambda$ remains ($\hat W^2 = 0$).*
+
+> [!law] Law §C8b.3.4: Massless Particles Have No Continuous Spin
+> Every observed massless particle has finitely many states at each momentum. Hence $\hat A = \hat B = 0$ on its states at the standard momentum ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-3|Theorem §C8b.3.3]], 3), and its states at $k$ are labelled by the eigenvalue of $\hat J^3$ alone. With [[§C8b.2 Particle States and the Little Group#^law-c8b-2-2|Law §C8b.2.2]] (no tachyonic or negative-energy particles) it is one of the two exclusions of the classification, both experimental inputs.
+>
+> *Valid when:* for the photon and the gluons (massless, the latter confined), and for gravitons if they exist; the continuous-spin representations ($\rho > 0$) are mathematically consistent unitary representations of the Poincaré group, but no particle carrying one has been observed.
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening; an experimental input, not a consequence of the representation theory.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 ("one particle would carry a continuous family of internal states ('continuous spin'), which is not observed") · Yu §3.3.2, after eq. (3.205) · the user's pre-course notes, §2.3 ("[experimental input]")*
+
+^law-c8b-3-4
+
+## The standard massless states
+
+> [!definition] Definition §C8b.3.1: Standard Massless States
+> For a massless particle obeying Law §C8b.3.4, the states at $k$ are $|k, \lambda\rangle$ with $\hat J^3|k, \lambda\rangle = \lambda|k, \lambda\rangle$, and at a general $p$
+>
+> $$
+> |p, \lambda\rangle \equiv U\bigl(V(p)\bigr)|k, \lambda\rangle, \qquad V(p) = R(\hat{\mathbf p})\,L_z(\eta), \quad e^\eta = |\mathbf p|/\kappa ,
+> $$
+>
+> with $L_z(\eta) = e^{-i\eta\mathcal K^3}$ the boost along $z$ (it takes $k$ to $|\mathbf p|(1, 0, 0, 1)$) and $R(\hat{\mathbf p})$ a rotation with $R(\hat{\mathbf p})\hat{\mathbf z} = \hat{\mathbf p}$, chosen continuously away from $\hat{\mathbf p} = -\hat{\mathbf z}$ (e.g. the rotation about $\hat{\mathbf z}\times\hat{\mathbf p}$; no choice is continuous on the whole sphere).
+>
+> The label $\lambda$ is the helicity of the state ([[§C8b.3 Massless Particles and Helicity#^def-c8b-3-2|Def. §C8b.3.2]]); for a massless particle it is the same in every frame ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-5|Theorem §C8b.3.5]]).
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 ("the helicity — the angular momentum along the direction of motion, $\vec J\cdot\hat p$ for general p") · Yu §3.3.1, eq. (3.175); §3.3.2, eq. (3.206) · the user's pre-course notes, §2.3*
+
+^def-c8b-3-1
+
+## Helicity
+
+> [!definition] Definition §C8b.3.2: Helicity
+> A particle with momentum $\mathbf p \ne 0$ is **right-handed** ($R$, helicity $+\frac12$ for spin $\frac12$) if its physical spin points along its direction of motion $\hat{\mathbf p}$, and **left-handed** ($L$, helicity $-\frac12$) if it points against it: the right-hand rule with the thumb along the motion. A subscript on a particle, $e^-_R$, $e^+_L$, $\mu^-_L$, always means its physical helicity.
+>
+> *Operator form.* The **helicity** operator on states of nonzero momentum is $\hat h \equiv \hat{\mathbf J}\cdot\hat{\mathbf P}/|\hat{\mathbf P}|$, the angular momentum along the direction of motion.
+>
+> *Equivalently,* the helicity of a particle is the eigenvalue of $\hat h$ on its state, the physical spin being the eigenvalue of the spin operator ([[§C9.8 Physical Spin versus Wave-Function Spin#^def-c9-8-3|Def. §C9.8.3]]); for a particle (not an antiparticle) it is the eigenvalue of $h = \hat{\mathbf p}\cdot\mathbf S$ on its spinor $u$ ([[§C8b.5 Helicity Spinors and the Massless Limit#^def-c8b-5-1|Def. §C8b.5.1]]).
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* states of nonzero momentum.
+>
+> *Source: PHY 513 Lecture 20, slide 11 ("Helicity is spin along direction of motion. … R = right-handed = spin in direction of motion. L = left-handed = spin in against direction of motion"), slide 9 ("R/L-component $\equiv$ handedness $\equiv$ spin along direction of motion"), and transcript · the user's PHY 513 notes, Lecture 20 update, §20.1, Definition "Helicity" · PS §5.2, p. 141 ("quantize each spin along the direction of the particle's motion, that is, … states of definite helicity") · operator form: the user's PHY 513 notes, Ch. 7 §7.7 ("the helicity — the angular momentum along the direction of motion, $\vec J\cdot\hat p$ for general p") · Yu §3.3.1, eq. (3.175); §3.3.2, eq. (3.206) · the user's pre-course notes, §2.3*
+
+^def-c8b-3-2
+
+## Lorentz invariance for massless particles, frame dependence for massive ones
+
+> [!theorem] Theorem §C8b.3.5: Helicity Is Lorentz Invariant
+> For a massless particle obeying Law §C8b.3.4:
+> 1. the little group acts on $|k, \lambda\rangle$ by a phase: $U\bigl(S(\alpha, \beta)R_z(\theta)\bigr)|k, \lambda\rangle = e^{-i\lambda\theta}|k, \lambda\rangle$;
+> 2. for every $\Lambda$ and $p$, with $W(\Lambda, p) = S(\alpha, \beta)R_z(\theta(\Lambda, p))$,
+>
+> $$
+> U(\Lambda)\,|p, \lambda\rangle = e^{-i\lambda\theta(\Lambda, p)}\,|\Lambda p, \lambda\rangle ;
+> $$
+>
+> 3. $\hat h|p, \lambda\rangle = \lambda|p, \lambda\rangle$ for every $p$.
+>
+> So the label $\lambda$ is the helicity of the state in every frame, no Lorentz transformation changes it, and each $\lambda$ is a separate irreducible representation with a single state at each momentum.
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 (Step 3 of the massless derivation: "a Lorentz transformation only multiplies a massless state by a phase, $D(W) = e^{-i\lambda\theta(\Lambda, p)}$") · Yu §3.3.2, eqs. (3.206)–(3.214) (passive sign) · the user's pre-course notes, §2.3*
+
+^thm-c8b-3-5
+
+> [!derivation]- Derivation (little-group proof)
+> **Step 1** (the little group, factor by factor). By [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-2|Theorem §C8b.3.2]], 1, $U(S(\alpha, \beta)R_z(\theta)) = e^{i(\alpha \hat A + \beta \hat B)}e^{-i\theta \hat J^3}$. First $e^{-i\theta \hat J^3}|k, \lambda\rangle = e^{-i\lambda\theta}|k, \lambda\rangle$ (the exponential of an operator on its eigenvector). This is again a state at $k$ on which $\hat A = \hat B = 0$ (Law §C8b.3.4), so $e^{i(\alpha \hat A + \beta \hat B)}$ acts as $e^0 = 1$ on it. Part 1.
+>
+> **Step 2** (insert into Wigner's law). [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]], 2 with the one-dimensional $D(W) = e^{-i\lambda\theta}$ gives part 2. Each $\lambda$ alone is invariant, hence irreducible (one state per momentum; there is no smaller nonzero invariant subspace of labels).
+>
+> **Step 3** ($\hat J^3$ commutes with boosts along $z$). $[\hat J^3, \hat K^3] = i\varepsilon_{33k}\hat K^k = 0$ ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]]; the $\hat J$, $\hat K$ form: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]), so $U(L_z(\eta)) = e^{-i\eta \hat K^3}$ commutes with $\hat J^3$ and $\hat J^3U(L_z(\eta))|k, \lambda\rangle = \lambda\,U(L_z(\eta))|k, \lambda\rangle$: the boosted state, of momentum $|\mathbf p|(1, 0, 0, 1)$, still has $\hat J^3 = \lambda$, and $\hat J^3$ is its helicity since its momentum points along $z$.
+>
+> **Step 4** (rotate the axis). For a rotation $R$, $U(R)\,(\hat{\mathbf n}\cdot\hat{\mathbf J})\,U(R)^{-1} = (R\hat{\mathbf n})\cdot\hat{\mathbf J}$: this is the $\hat J$-law of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|Theorem §C3.4.7]] restricted to rotations, i.e. $\hat{\mathbf J}$ is a vector operator ([[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-5|QM Theorem §C5.1.5]]; used the same way in [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^der-c5-3-4|QM Derivation §C5.3.4]]). With $R = R(\hat{\mathbf p})$, $\hat{\mathbf n} = \hat{\mathbf z}$: $|\mathbf p|^{-1}(\mathbf p\cdot\hat{\mathbf J})\,U(R)\,U(L_z)|k, \lambda\rangle = U(R)\,\hat J^3\,U(L_z)|k, \lambda\rangle = \lambda\,|p, \lambda\rangle$ by Step 3.
+>
+> **Step 5** ($\hat h$ on a momentum eigenstate). $\hat{\mathbf J}\cdot\hat{\mathbf P} = \sum_i\hat J^i\hat P^i$ and $[\hat J^i, \hat P^i] = i\varepsilon_{iik}\hat P^k = 0$ for each $i$, so the order is immaterial; on $|p, \lambda\rangle$ the factor $\hat{\mathbf P}/|\hat{\mathbf P}|$ is the number $\mathbf p/|\mathbf p|$, and $\hat h|p, \lambda\rangle = |\mathbf p|^{-1}(\mathbf p\cdot\hat{\mathbf J})|p, \lambda\rangle = \lambda|p, \lambda\rangle$: part 3.
+>
+> **What the derivation shows.**
+> - The little-group "translations" act trivially and the rotation about $\hat{\mathbf k}$ by a phase, so nothing can mix different helicities: they are different particles as far as the Poincaré group is concerned.
+> - Contrast with a massive particle, whose helicity flips under a boost that overtakes it ([[§C8b.3 Massless Particles and Helicity#^rem-c8b-3-2|§C8b.3, Remark: Helicity of a massive particle]]); a massless particle cannot be overtaken.
+> - Used next: the quantization of $\lambda$ (Theorem §C8b.3.6) and the covariant form $\hat W^\mu = \lambda \hat P^\mu$ (Theorem §C8b.3.7).
+
+^der-c8b-3-5
+
+*Uses:* [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-2|Theorem §C8b.3.2]], [[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4|Law §C8b.3.4]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|Theorem §C3.4.7]], [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-5|QM Theorem §C5.1.5]]
+
+> [!remark] Remark: Helicity of a massive particle
+> For $\mathbf p \neq 0$ the projection $\mathbf p\cdot\hat{\mathbf S}/|\mathbf p|$ of the spin on the momentum, the **helicity**, commutes with $\hat{\mathbf S}^2$ and has the same $2s + 1$ eigenvalues $\lambda = s, \dots, -s$ as $\hat S^3$ (its components transverse to $\hat{\mathbf p}$ obey the same algebra, Yu Exercise 3.6), so a massive particle's states may be labelled by helicity instead of $\sigma$. It is invariant under rotations and under boosts along $\hat{\mathbf p}$ that do not reverse the momentum, but not under all boosts: an observer moving faster than the particle sees $\hat{\mathbf p}$ reversed and the spin unchanged, hence $\lambda \to -\lambda$. For a massless particle no observer can overtake it, and helicity becomes a Lorentz invariant ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-5|Theorem §C8b.3.5]]).
+>
+> *Source: Yu §3.3.1, eqs. (3.175)–(3.177), Exercise 3.6 · the user's pre-course notes, §2.3 (Note "Helicity and the Lorentz covering group")*
+
+^rem-c8b-3-2
+
+## Quantization
+
+> [!theorem] Theorem §C8b.3.6: Helicity Is Quantized
+> The helicity of a massless particle is an integer or a half-integer,
+>
+> $$
+> \lambda \in \{0, \pm\tfrac12, \pm1, \pm\tfrac32, \dots\} ,
+> $$
+>
+> integer when $U$ is a true representation of $SO^+(1,3)$ and half-odd when it is a representation of the cover only (a rotation by $2\pi$ about $\hat{\mathbf k}$ acting as $e^{-2\pi i\lambda} = -1$).
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 (Step 4 of the massless derivation: "Nothing in the algebra of ISO(2) quantizes λ. The topology does") · Yu §3.3.2, eqs. (3.215)–(3.217) · the user's pre-course notes, §2.3 ("Quantization of helicity")*
+
+^thm-c8b-3-6
+
+> [!derivation]- Derivation
+> **Step 1** (the algebra does not quantize λ). The rotation part of $G_k$ is the one-parameter group $\theta \mapsto R_z(\theta)$; on $|k, \lambda\rangle$ it is represented by $e^{-i\lambda\theta}$ (Theorem §C8b.3.5, 1), which is a representation of the additive group $\mathbb R$ for *every* real $\lambda$. Unlike the massive case, no Casimir of a compact algebra bounds or discretizes $\lambda$ ([[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-1|Theorem §C3.1.1]] does not apply to the abelian rotation subgroup alone, whose irreducible representations are one-dimensional, [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-6|Theorem §CB.7.6]]).
+>
+> **Step 2** (the $2\pi$ rotation is the identity of the group). $R_z(2\pi) = \mathbb 1$ in $SO^+(1,3)$. If $U$ represents $SO^+(1,3)$ itself, $U(R_z(2\pi)) = U(\mathbb 1) = \mathbb 1$, so $e^{-2\pi i\lambda} = 1$ and $\lambda \in \mathbb Z$.
+>
+> **Step 3** (the topology allows a sign, and only a sign). In general $U$ represents the covering group ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]]). Every $\Lambda \in SO^+(1,3)$ is a boost times a rotation ([[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]]) and the boosts can be shrunk continuously to $\mathbb 1$ (rapidity $\to 0$), so loops in $SO^+(1,3)$ deform into loops in $SO(3)$ and $\pi_1(SO^+(1,3)) = \pi_1(SO(3)) = \mathbb Z_2$ ([[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]], 4; [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^rem-cb-10-3|§CB.10, Remark: The same pattern for the Lorentz group]]). The loop $\theta \mapsto R_z(\theta)$, $\theta \in [0, 4\pi]$, is twice the generator and is contractible, so it lifts to a closed loop in the simply connected cover: the element of the cover reached at $\theta = 4\pi$ is the identity. Its representative is $e^{-4\pi i\hat J^3}$, the one-parameter group of the generator $\hat J^3$ at $\theta = 4\pi$. Hence $e^{-4\pi i\lambda} = 1$ and $2\lambda \in \mathbb Z$.
+>
+> **Step 4** (the sign of a 2π rotation). Then $e^{-2\pi i\lambda} = (-1)^{2\lambda}$: $+1$ for integer, $-1$ for half-odd $\lambda$, the same dichotomy as for massive spin ([[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-4|QM Theorem §C5.3.4]], [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]]).
+>
+> **What the derivation shows.**
+> - The quantization of helicity is topological, not algebraic: it comes from the double connectedness of the Lorentz group, the same fact that allows spin $\frac12$.
+> - The spin of a massless particle is $s = |\lambda|$; the values are those of massive spins, but $\lambda$ and $-\lambda$ are a priori different particles.
+
+^der-c8b-3-6
+
+*Uses:* [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-5|Theorem §C8b.3.5]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]], [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]], [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-4|QM Theorem §C5.3.4]]
+
+## The Pauli–Lubanski vector of a massless particle
+
+> [!theorem] Theorem §C8b.3.7: The Pauli–Lubanski Vector of a Massless Particle
+> On states of momentum $k = \kappa(1, 0, 0, 1)$ the Pauli–Lubanski vector ([[§C8b.2 Particle States and the Little Group#^def-c8b-2-3|Def. §C8b.2.3]]) acts as
+>
+> $$
+> \hat W^\mu = \kappa\,\bigl(\hat J^3,\ -\hat B,\ \hat A,\ \hat J^3\bigr), \qquad \hat W^2 = -\kappa^2\,(\hat A^2 + \hat B^2) .
+> $$
+>
+> So $\hat W^2 = -\kappa^2\rho^2 < 0$ on a continuous-spin representation and $\hat W^2 = 0$ on a helicity representation, where moreover
+>
+> $$
+> \hat W^\mu|p, \lambda\rangle = \lambda\,p^\mu|p, \lambda\rangle \quad\text{for every } p :
+> $$
+>
+> the helicity is the constant of proportionality between the two commuting four-vectors $\hat W$ and $\hat P$, a frame-independent definition.
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening.
+>
+> *Source: derived here from Theorems §C8b.2.11 and §C8b.3.5 (the user's pre-course notes, §2.3, state the Pauli–Lubanski Casimir without the massless evaluation)*
+
+^thm-c8b-3-7
+
+> [!derivation]- Derivation
+> **Step 1** (evaluate at $k$). By [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-11|Theorem §C8b.2.11]], 1, put $\hat P_\sigma$ to the right; on a state at $k$ it becomes $k_\sigma = \kappa(1, 0, 0, -1)$ (lower index). So $\hat W^\mu = -\frac\kappa2\bigl(\varepsilon^{\mu\nu\rho0} - \varepsilon^{\mu\nu\rho3}\bigr)\hat J_{\nu\rho}$ there.
+>
+> **Step 2** (the four components). With $\varepsilon^{0123} = +1$, $\hat J_{ij} = \hat J^{ij}$, $\hat J_{0i} = -\hat J^{0i} = -\hat K^i$, $\hat J^{12} = \hat J^3$, $\hat J^{23} = \hat J^1$, $\hat J^{31} = \hat J^2$:
+> - $\mu = 0$: only the $\sigma = 3$ term survives, $\varepsilon^{0ij3}\hat J_{ij} = \varepsilon^{0123}\hat J_{12} + \varepsilon^{0213}\hat J_{21} = 2\hat J^3$, so $\hat W^0 = -\frac\kappa2\cdot(-2\hat J^3) = \kappa \hat J^3$.
+> - $\mu = 3$: only the $\sigma = 0$ term survives, $\varepsilon^{3ij0}\hat J_{ij}$ with $\varepsilon^{3120} = -\varepsilon^{0123}$ (one transposition of the first and last places) $= -1$, so $\varepsilon^{3ij0}\hat J_{ij} = -2\hat J^3$ and $\hat W^3 = -\frac\kappa2(-2\hat J^3) = \kappa \hat J^3$.
+> - $\mu = 1$: the $\sigma = 0$ term has $\nu\rho \in \{2, 3\}$, $\varepsilon^{1230} = -1$ (a cyclic shift of four places, three transpositions), giving $-2\hat J_{23} = -2\hat J^1$; the $\sigma = 3$ term has $\nu\rho \in \{0, 2\}$, $\varepsilon^{1023} = -1$, giving $-2\hat J_{02} = 2\hat K^2$, which enters with the minus sign of Step 1 as $-2\hat K^2$. So $\hat W^1 = -\frac\kappa2(-2\hat J^1 - 2\hat K^2) = \kappa(\hat J^1 + \hat K^2) = -\kappa \hat B$.
+> - $\mu = 2$: the $\sigma = 0$ term has $\varepsilon^{2310} = -1$ times $2\hat J_{31} = 2\hat J^2$, i.e. $-2\hat J^2$; the $\sigma = 3$ term has $\varepsilon^{2013} = +1$ times $2\hat J_{01} = -2\hat K^1$, entering with the minus sign of Step 1 as $+2\hat K^1$. So $\hat W^2 = -\frac\kappa2(-2\hat J^2 + 2\hat K^1) = \kappa(\hat J^2 - \hat K^1) = \kappa \hat A$.
+>
+> (Checked symbolically.)
+>
+> **Step 3** ($\hat W^2$). $\hat J^3$, $\hat A$, $\hat B$ map states at $k$ to states at $k$ (they generate $G_k$), so the second factor of $\hat W_\mu \hat W^\mu$ is evaluated by the same rule: $\hat W_\mu \hat W^\mu = \kappa^2\bigl((\hat J^3)^2 - \hat B^2 - \hat A^2 - (\hat J^3)^2\bigr) = -\kappa^2(\hat A^2 + \hat B^2)$; the $(\hat J^3)^2$ terms cancel exactly because $\hat W^0 = \hat W^3$. On a joint eigenstate this is $-\kappa^2(a^2 + b^2) = -\kappa^2\rho^2$, constant on the circle of [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-3|Theorem §C8b.3.3]]; under Law §C8b.3.4 it is $0$.
+>
+> **Step 4** ($\hat W = \lambda \hat P$ at $k$). With $\hat A = \hat B = 0$ and $\hat J^3 = \lambda$: $\hat W^\mu|k, \lambda\rangle = \kappa(\lambda, 0, 0, \lambda)|k, \lambda\rangle = \lambda k^\mu|k, \lambda\rangle$.
+>
+> **Step 5** (transport). By Theorem §C8b.2.11, 3, $U(V)^{-1}\hat W^\mu U(V) = V^\mu{}_\nu \hat W^\nu$, so
+>
+> $$
+> \hat W^\mu|p, \lambda\rangle = U(V(p))\,V(p)^\mu{}_\nu \hat W^\nu|k, \lambda\rangle = \lambda\,V(p)^\mu{}_\nu k^\nu\;U(V(p))|k, \lambda\rangle = \lambda\,p^\mu|p, \lambda\rangle .
+> $$
+>
+> **What the derivation shows.**
+> - On a massless helicity state $\hat P^2 = 0$, $\hat W\cdot \hat P = 0$ and $\hat W^2 = 0$: two orthogonal null vectors are parallel, so $\hat W \propto \hat P$ was forced; $\lambda$ is the proportionality constant.
+> - The three Casimir classes of physical representations: $\hat P^2 = m^2 > 0$ with $\hat W^2 = -m^2s(s + 1)$ ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-12|Theorem §C8b.2.12]]); $\hat P^2 = 0$, $\hat W^2 = 0$, labelled by $\lambda$; $\hat P^2 = 0$, $\hat W^2 = -\kappa^2\rho^2$, continuous spin (excluded).
+
+^der-c8b-3-7
+
+*Uses:* [[§C8b.2 Particle States and the Little Group#^def-c8b-2-3|Def. §C8b.2.3]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-11|Theorem §C8b.2.11]], [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-3|Theorem §C8b.3.3]], [[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4|Law §C8b.3.4]]
+
+## Parity pairs
+
+> [!remark] Remark: Parity pairs λ with −λ: photon, graviton, neutrino
+> A parity transformation reverses $\mathbf p$ but not the axial vector $\hat{\mathbf J}$, so it reverses helicity and maps the representation $\lambda$ to $-\lambda$ (parity on states: [[§C9.3 Parity on States, Spinors and the Dirac Field#^rem-c9-3-1|§C9.3, Remark: Momentum flips, spin does not]]). A theory with parity symmetry must contain both, and the two one-dimensional representations become the two polarizations of one particle: a massless particle of spin $s \ge \frac12$ has **two** states, $\lambda = \pm s$, not $2s + 1$ (finitely many by [[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4|Law §C8b.3.4]]). The photon has $\lambda = \pm1$, the left and right circular polarizations of light; a graviton would have $\pm2$. A theory without parity need not pair them: in the massless idealization the neutrinos of the weak interaction (in which only left-handed fermions take part, [[§C9.4 Fermion Bilinears under Parity#^law-c9-4-8|Law §C9.4.8]], 2) have $\lambda = -\frac12$ and the antineutrinos $+\frac12$, which a single two-component Weyl field describes ([[§C5a.8 The Weyl Form and the Weyl Equations#^mod-c5a-8-3|Model §C5a.8.3]], [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-4|Theorem §C5a.8.4]], [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4|Theorem §C8b.5.4]]). A massless scalar, $\lambda = 0$, is its own partner.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 ("Consequence") · Yu §3.3.2, after eq. (3.218) · the user's pre-course notes, §2.3 ("Photon, graviton, neutrino")*
+
+^rem-c8b-3-3
+
+## Polarization vectors and gauge invariance
+
+> [!theorem] Theorem §C8b.3.8: Little-Group Translations Shift a Polarization Vector by the Momentum
+> Let $\varepsilon^\mu(k, \pm) = \frac1{\sqrt2}(0, 1, \pm i, 0)$, and transport them, $\varepsilon(p, \pm) \equiv V(p)\,\varepsilon(k, \pm)$ with $V(p)$ of [[§C8b.3 Massless Particles and Helicity#^def-c8b-3-1|Def. §C8b.3.1]]. Then $k\cdot\varepsilon(k, \pm) = 0$, $\varepsilon(k, \pm)\cdot\varepsilon(k, \pm)^* = -1$, and
+> 1. $R_z(\theta)\,\varepsilon(k, \pm) = e^{\mp i\theta}\,\varepsilon(k, \pm)$: these are the helicity $\pm1$ vectors of the vector representation;
+> 2. $S(\alpha, \beta)\,\varepsilon(k, \pm) = \varepsilon(k, \pm) + \dfrac{\alpha \pm i\beta}{\sqrt2\,\kappa}\,k$;
+> 3. for every $\Lambda$ and $p$, with $W(\Lambda, p) = S(\alpha, \beta)R_z(\theta)$,
+>
+> $$
+> \Lambda\,\varepsilon(p, \pm) = e^{\mp i\theta}\Bigl[\varepsilon(\Lambda p, \pm) + \frac{\alpha \pm i\beta}{\sqrt2\,\kappa}\,\Lambda p\Bigr] .
+> $$
+>
+> So the polarization vectors of a massless helicity-$\pm1$ particle transform as four-vectors only up to a multiple of the momentum.
+>
+> *Source: computed here with Yu's matrix $S(\alpha, \beta)$, eq. (3.182) (checked numerically for a random Λ and p); the reading as the origin of gauge invariance is stated in the user's pre-course notes, §2.3 ("the origin of gauge invariance for the photon"), and developed in their §4 (massless vector field)*
+
+^thm-c8b-3-8
+
+> [!derivation]- Derivation
+> **Step 1** (transversality and norm). $k\cdot\varepsilon = \kappa(1\cdot0 - 0\cdot1 - 0\cdot(\pm i) - 1\cdot0) = 0$. $\varepsilon\cdot\varepsilon^{\ast} = \frac12(0 - 1 - (\pm i)(\mp i) - 0) = \frac12(-1 - 1) = -1$.
+>
+> **Step 2** (rotation, part 1). The active rotation by $\theta$ about $z$ sends $\hat{\mathbf x} \mapsto \cos\theta\,\hat{\mathbf x} + \sin\theta\,\hat{\mathbf y}$ and $\hat{\mathbf y} \mapsto -\sin\theta\,\hat{\mathbf x} + \cos\theta\,\hat{\mathbf y}$. So $\hat{\mathbf x} \pm i\hat{\mathbf y} \mapsto (\cos\theta \mp i\sin\theta)\hat{\mathbf x} + (\sin\theta \pm i\cos\theta)\hat{\mathbf y} = e^{\mp i\theta}(\hat{\mathbf x} \pm i\hat{\mathbf y})$. Comparing with $e^{-i\theta\mathcal J^3}$ ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-2|Theorem §C8b.3.2]], 1): $\mathcal J^3\varepsilon(k, \pm) = \pm\varepsilon(k, \pm)$, helicity $\pm1$ along $\hat{\mathbf k} = \hat{\mathbf z}$.
+>
+> **Step 3** (translation, part 2). $S(\alpha, \beta)\varepsilon$ uses only the columns 1 and 2 of $S$ ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorem §C8b.3.1]]), $(\alpha, 1, 0, \alpha)$ and $(\beta, 0, 1, \beta)$:
+>
+> $$
+> S(\alpha, \beta)\,\varepsilon(k, \pm) = \tfrac1{\sqrt2}\bigl(\alpha \pm i\beta,\ 1,\ \pm i,\ \alpha \pm i\beta\bigr) = \varepsilon(k, \pm) + \tfrac{\alpha \pm i\beta}{\sqrt2}\,(1, 0, 0, 1) ,
+> $$
+>
+> and $(1, 0, 0, 1) = k/\kappa$.
+>
+> **Step 4** (any Λ, part 3). By the definition of the Wigner element, $\Lambda V(p) = V(\Lambda p)\,W(\Lambda, p)$, so
+>
+> $$
+> \Lambda\,\varepsilon(p, \pm) = \Lambda V(p)\,\varepsilon(k, \pm) = V(\Lambda p)\,S(\alpha, \beta)\,R_z(\theta)\,\varepsilon(k, \pm) = e^{\mp i\theta}\,V(\Lambda p)\Bigl[\varepsilon(k, \pm) + \frac{\alpha \pm i\beta}{\sqrt2\,\kappa}\,k\Bigr]
+> $$
+>
+> by Steps 2–3, and $V(\Lambda p)\varepsilon(k, \pm) = \varepsilon(\Lambda p, \pm)$, $V(\Lambda p)k = \Lambda p$.
+>
+> ⚑ By-product: the extra term is proportional to $p^\mu$. A vector field built from these modes, $\hat A^\mu(x) = \sum_\pm\int d\mu(p)\,\bigl(\varepsilon^\mu(p, \pm)\,\hat\alpha_{\mathbf p, \pm}e^{-ip\cdot x} + \text{h.c.}\bigr)$, therefore transforms under $U(\Lambda)$ as a four-vector *plus* a term $\partial^\mu\hat\Omega(x)$: a gauge transformation → [[§C8b.3 Massless Particles and Helicity#^rem-c8b-3-4|Remark: Two polarizations, and why a massless vector field needs gauge invariance]].
+>
+> **What the derivation shows.**
+> - The helicity states are covariant (Theorem §C8b.3.5); their polarization *vectors* are not, because the little-group translations act trivially on the states but not on the four-vector index.
+> - For a massive vector the little group $SO(3)$ acts on $\varepsilon(k, \sigma)$, $k = (m, \mathbf 0)$, by honest rotations and no inhomogeneous term arises.
+
+^der-c8b-3-8
+
+*Uses:* [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorem §C8b.3.1]], [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-2|Theorem §C8b.3.2]], [[§C8b.3 Massless Particles and Helicity#^def-c8b-3-1|Def. §C8b.3.1]], [[§C8b.2 Particle States and the Little Group#^def-c8b-2-1|Def. §C8b.2.1]], [[§C8b.2 Particle States and the Little Group#^def-c8b-2-2|Def. §C8b.2.2]]
+
+> [!remark] Remark: Two polarizations, and why a massless vector field needs gauge invariance
+> A four-vector field has four components, carrying $(\frac12, \frac12)$, whose rotation content is spin 0 plus spin 1 ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|Theorem §C3.2.9]]). A massive spin-1 particle uses three of them, and the constraint $\partial_\mu A^\mu = 0$ removes the fourth. A massless helicity-$\pm1$ particle has only two states, and Theorem §C8b.3.8 shows that no four-vector field can be built from them covariantly: the field must be allowed to change by $\partial_\mu\Omega$ under a Lorentz transformation. Either one uses a field that is not a four-vector, such as $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$, which is blind to the extra term and carries $(1, 0)\oplus(0, 1)$ ([[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|Theorem §C3.3.8]]), or one couples $A_\mu$ only in gauge-invariant ways. This is why the quantum theory of the photon is a gauge theory, and why the longitudinal polarization of a massive vector, $\varepsilon(p, 0) \sim p^\mu/m$, misbehaves as $m \to 0$ ([[§C4.3★ Massive Polarization Vectors and Plane Waves#^thm-c4-3-9|Theorem §C4.3.9]], [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-1|Theorem §C4.6.1]]; the two transverse polarizations, [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-1|Theorem §C4.8.1]]).
+>
+> *Source: the user's pre-course notes, §2.3 ("the origin of gauge invariance for the photon") and §4 (massive and massless vector fields) · the user's PHY 513 notes, Ch. 7 §7.7 ("why the photon has two polarizations, λ = ±1, and no longitudinal one")*
+
+^rem-c8b-3-4
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> The generators of the massless little group obey the Lorentz algebra:
+> - [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-7|Theorem §CB.5.7]] with [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7|Derivation (from the group law)]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7b|Derivation (vector representation, Problem Set 4)]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-7c|Derivation (J, K form, Problem Set 5)]] — the Lorentz algebra in every representation (physics form: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]; on states [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]]; Derivations §C8b.3.2, §C8b.3.5).
+>
+> The Euclidean group of the plane and the little groups in SL(2, ℂ) form (Theorem §C8b.3.1):
+> - [[§CB.22★ The Poincaré Group and Induced Representations#^def-cb-22-9|Def. §CB.22.9]], [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-10|Theorem §CB.22.10]] with [[§CB.22★ The Poincaré Group and Induced Representations#^pf-cb-22-10|its proof]] — $ISO(2)$, and the stabilizer of a lightlike momentum in $SL(2, \mathbb C)$, a double cover of it (Theorem §C8b.3.1, last sentence).
+>
+> Helicity is quantized (Theorem §C8b.3.6): the rotation part of the little group integrates only on its double cover:
+> - [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]] with [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^der-cb-10-3|Derivation §CB.10.3]] — the spin-$j$ catalogue of the compact rotation algebra, which does not apply to the abelian rotation subgroup alone (Derivation §C8b.3.6, step 1); physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-1|Theorem §C3.1.1]].
+> - [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]] with [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^der-cb-10-13|Derivation §CB.10.13]] — integer and half-integer spin, the sign $(-1)^{2j}$ of a $2\pi$ rotation (step 4); physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]].
+> - [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-11|Theorem §CB.10.11]] with [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^der-cb-10-11|Derivation §CB.10.11]] — $SU(2)$ simply connected, $SO(3)$ doubly connected: a $4\pi$ loop is contractible, a $2\pi$ loop is not (step 3); physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]].
+> - [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^rem-cb-10-3|§CB.10, Remark: The same pattern for the Lorentz group]] — $SO^+(1,3)$ is doubly connected like $SO(3)$, with the simply connected double cover $SL(2, \mathbb C)$ (step 3).
+
+> [!remark]- Connections
+> - The little group $ISO(2)$ has the same algebra as $(\hat J^3, \hat P^1, \hat P^2)$, the rotations and translations of the transverse plane inside the Poincaré algebra ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]]); its unitary representations mirror those of a free particle in two dimensions: momentum magnitude $\rho > 0$ gives a circle of states (continuous spin), $\rho = 0$ gives only the angular-momentum label (helicity).
+> - The orbit of $k$ is the forward null cone $C^+$ of [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], the homogeneous space $SO^+(1,3)/ISO(2)$; the invariant measure on it is the $m \to 0$ limit $d^3p/(2\pi)^3\,2|\mathbf p|$ of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]] ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]] for the cone).
+> - The quantization of helicity uses the same topological fact as half-integer spin, $\pi_1(SO(3)) = \mathbb Z_2$ ([[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-11|Theorem §CB.10.11]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^rem-c5-2-6|QM §C5.2, ★ Remark: Why the sign cannot be removed]]), now with no Casimir to help.
+> - $\hat W^\mu = \lambda \hat P^\mu$ (Theorem §C8b.3.7) and $-\hat W^2 = m^2s(s + 1)$ ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-12|Theorem §C8b.2.12]]) are the two Casimir characterizations of the physical particles; the three-way split by $(\hat P^2, \hat W^2)$ is the content of the orbit table in [[§C8b.2 Particle States and the Little Group#^rem-c8b-2-2|§C8b.2, Remark: The orbits at a glance]].
+> - The polarization vectors $\varepsilon(k, \pm)$ are the spherical basis vectors $\mp(\hat{\mathbf x} \pm i\hat{\mathbf y})/\sqrt2$ of the spin-1 representation of Quantum Mechanics up to the Condon–Shortley sign ([[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-3|QM Theorem §C5.3.3]]); for light they are the circular polarizations of electromagnetic waves.
+> - Helicity enters the course as a computational tool: helicity spinors of the Dirac field (PHY 513, Problem Set 5, Problem 6; [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-1|Theorem §C8b.5.1]], [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-2|Theorem §C8b.5.2]], [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4|Theorem §C8b.5.4]]) and the helicity structure of QED amplitudes (Lecture 20; [[§C8b.6 Helicity Conservation at the QED Vertex|§C8b.6]]–[[§C8b.7 Polarized Cross Sections for Muon Pair Production|§C8b.7]]); for massless fermions helicity equals chirality, a statement about the Weyl representations $(\frac12, 0)$ and $(0, \frac12)$ of [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|Theorem §C3.2.8]].
+> - Weinberg's form of the generators, $\hat A = \hat J_2 + \hat K_1$, $\hat B = -\hat J_1 + \hat K_2$, uses $\hat K_i = \hat J^{i0}$, the opposite boost convention ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^cau-c3-4-1|§C3.4, Caution: Signs and names across the sources]]); with the Noether boost charge of [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-2|Def. §C1b.8.2]] it is the same pair of operators.
+> - Math: $ISO(2)$ is the semidirect product $\mathbb R^2 \rtimes SO(2)$, the translations forming a normal subgroup ([[§38 Normal Subgroups|493 §38]]); $G_k$ is the stabilizer of a point on the null orbit ([[§26 Stabilizers and Fixed Points#^def-26-1|493 Def. §26.1]]); the exponential of a nilpotent matrix ($N^3 = 0$) terminates, which is why $S(\alpha, \beta)$ is polynomial in its parameters.
+> - Where the helicity theorems come from: Wigner's little-group construction of one-particle states, massive ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]]) and massless ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorem §C8b.3.1]]–[[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4|Law §C8b.3.4]]), with the Casimir characterization $-\hat W^2 = m^2s(s + 1)$ for massive particles ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-12|Theorem §C8b.2.12]]) beside $\hat W^\mu = \lambda\hat P^\mu$ (Theorem §C8b.3.7).
+> - Where helicity is used: the photon's two helicities and the helicity of massive vector quanta — [[§C8b.9 Photon Helicity|§C8b.9]]; helicity spinors and helicity = chirality at $m = 0$ — [[§C8b.5 Helicity Spinors and the Massless Limit|§C8b.5]]; helicity conservation at the QED vertex and the polarized cross sections of Lecture 20 — [[§C8b.6 Helicity Conservation at the QED Vertex|§C8b.6]], [[§C8b.7 Polarized Cross Sections for Muon Pair Production|§C8b.7]], with masses [[§C8b.8★ Polarized Amplitudes with Masses|§C8b.8★]].
+> - Frame dependence of massive helicity, three times: for states (Remark: Helicity of a massive particle), for Dirac spinors ([[§C8b.5 Helicity Spinors and the Massless Limit#^rem-c8b-5-1|§C8b.5, Remark: The helicity of a massive particle depends on the frame]]), and for the reading of Lecture 20's projections ([[§C8b.6 Helicity Conservation at the QED Vertex#^rem-c8b-6-3|§C8b.6, Remark: Frame and mass]]).
+> - The polarization vectors of a helicity-$\pm1$ particle transform as four-vectors only up to a multiple of the momentum, which is why a massless vector field must be a gauge field — [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-8|Theorem §C8b.3.8]], [[§C8b.3 Massless Particles and Helicity#^rem-c8b-3-4|§C8b.3, Remark: Two polarizations, and why a massless vector field needs gauge invariance]].

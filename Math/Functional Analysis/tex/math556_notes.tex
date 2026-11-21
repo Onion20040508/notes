@@ -11697,7 +11697,7 @@ Since this holds for all $x \in X$, $(NM)'\ell = M'(N'\ell)$; since it holds for
 \chapter{Spectral Theory}\label{ch:spectral}
 
 %% >>> ADDED: chapter introduction (Claude)
-The eigenvalues of a matrix $A$ are the numbers $\lambda$ for which $\lambda I - A$ fails to be invertible. In infinite dimensions $\lambda I - M$ can fail to be invertible in more than one way, and the set of such $\lambda$, the spectrum of $M$, takes over the role of the eigenvalues. The inverse $(\lambda I - M)^{-1}$, where it exists, is a function of the complex variable $\lambda$ with values in the Banach space $\mathcal{L}(X, X)$, and complex analysis for functions with values in a Banach space is the tool for studying it. \ref{sec:analytic} provides the tool: such a function can be tested for analyticity in the norm or through functionals, as convergence was in Chapter~\ref{ch:weak}, and here the two tests agree (Dunford's theorem). \ref{sec:spectrum} defines the resolvent set, the resolvent and the spectrum, divides the spectrum into its point, continuous and residual parts, and computes them for multiplication by $t$ on $C[0,1]$ and on $L^2[0,1]$.
+The eigenvalues of a matrix $A$ are the numbers $\lambda$ for which $\lambda I - A$ fails to be invertible. In infinite dimensions $\lambda I - M$ can fail to be invertible in more than one way, and the set of such $\lambda$, the spectrum of $M$, takes over the role of the eigenvalues. The inverse $(\lambda I - M)^{-1}$, where it exists, is a function of the complex variable $\lambda$ with values in the Banach space $\mathcal{L}(X, X)$, and complex analysis for functions with values in a Banach space is the tool for studying it. \ref{sec:analytic} provides the tool: such a function can be tested for analyticity in the norm or through functionals, as convergence was in Chapter~\ref{ch:weak}, and here the two tests agree (Dunford's theorem). \ref{sec:spectrum} defines the resolvent set, the resolvent and the spectrum, divides the spectrum into its point, continuous and residual parts, and computes them for multiplication by $t$ on $C[0,1]$ and on $L^2[0,1]$. \ref{sec:spectral-theory} proves the first general facts about the spectrum of a bounded operator: operators close to an invertible operator are invertible, so the resolvent set is open; the resolvent is an analytic function on it; and the spectrum is a nonempty, closed and bounded subset of $\mathbb{C}$.
 %% <<< END ADDED
 
 % ============================================================================
@@ -11975,7 +11975,7 @@ The uniform boundedness principle is applied on $X'$, which is complete for ever
 \end{rembox}
 
 \begin{rembox}[Where the Theorem is Used]\label{rem:dunford-use}
-Dunford's theorem says that the analyticity of a vector-valued function can be checked one functional at a time, where all of scalar complex analysis is available. The main example is the resolvent $\lambda \mapsto (\lambda I - M)^{-1}$ of \ref{sec:spectrum}, a function with values in the Banach space $\mathcal{L}(X, X)$. Lax returns to the notion in his Chapter~17: there the resolvent is shown to be an analytic function on the resolvent set (\S17.1, Thm~3), and the Cauchy integral theorem for analytic functions with values in a Banach space is used to show that the spectrum is not empty (\S17.1, Thm~4).
+Dunford's theorem says that the analyticity of a vector-valued function can be checked one functional at a time, where all of scalar complex analysis is available. The main example is the resolvent $\lambda \mapsto (\lambda I - M)^{-1}$ of \ref{sec:spectrum}, a function with values in the Banach space $\mathcal{L}(X, X)$. It is analytic on the resolvent set (Proposition~\ref{prop:resolvent-analytic}). In the other direction, a strongly analytic function can be studied through the scalar functions $\ell(f(z))$: this is how Liouville's theorem is applied to the resolvent to show that the spectrum is not empty (Theorem~\ref{thm:spectrum-compact}, Lecture 22). Lax returns to the notion in his Chapter~17: there the resolvent is shown to be analytic by its power series (\S17.1, Thm~3), and the Cauchy integral theorem for analytic functions with values in a Banach space is used to show that the spectrum is not empty (\S17.1, Thm~4).
 \end{rembox}
 %% <<< END ADDED
 
@@ -12386,11 +12386,452 @@ The functions $\varphi_\varepsilon$ are unit vectors with $M \varphi_\varepsilon
 \end{rembox}
 
 \begin{rembox}[What the Examples Show]\label{rem:mult-compare}
-In both examples $\sigma_p(M) = \varnothing$: multiplication by $t$ has no eigenvectors, yet its spectrum is the whole interval of the values of $t$. The spectrum, not the set of eigenvalues, is the right generalization of the eigenvalues of a matrix. Which part of the spectrum the interval $[0,1]$ is depends on the space. In $C[0,1]$ every function in the range vanishes at $\lambda_0$; this is a closed condition, and the range is far from dense. In $L^2[0,1]$ a single point does not matter, and the range is dense. In both cases $\sigma(M)$ is a nonempty, closed and bounded set, as it is for every bounded operator on a Banach space over $\mathbb{C}$ (Lax \S17.1, Thm~4(i)). Lax's Chapter~20 computes the spectra of further operators: shifts (\S20.2), Volterra integral operators (\S20.3) and the Fourier transform (\S20.4).
+In both examples $\sigma_p(M) = \varnothing$: multiplication by $t$ has no eigenvectors, yet its spectrum is the whole interval of the values of $t$. The spectrum, not the set of eigenvalues, is the right generalization of the eigenvalues of a matrix. Which part of the spectrum the interval $[0,1]$ is depends on the space. In $C[0,1]$ every function in the range vanishes at $\lambda_0$; this is a closed condition, and the range is far from dense. In $L^2[0,1]$ a single point does not matter, and the range is dense. In both cases $\sigma(M)$ is a nonempty, closed and bounded set, as it is for every bounded operator on a Banach space $X \neq \{0\}$ over $\mathbb{C}$ (Theorem~\ref{thm:spectrum-compact}). Lax's Chapter~20 computes the spectra of further operators: shifts (\S20.2), Volterra integral operators (\S20.3) and the Fourier transform (\S20.4).
 \end{rembox}
 
 \begin{rembox}[The Position Operator]\label{rem:mult-position}
 In quantum mechanics multiplication by the coordinate on $L^2$ is the position operator (\ref{sec:qm-continuous}, there on $L^2(\mathbb{R})$). Proposition~\ref{prop:no-eigen} of that section is the statement $\sigma_p(M) = \varnothing$. Example~\ref{ex:mult-L2} says where the ``position eigenvalues'' of physics are: every $\lambda_0$ in the interval belongs to the spectrum, as a point of the continuous spectrum and not as an eigenvalue. The ``eigenfunction'' $\delta(t - \lambda_0)$ of the physics texts is not an element of $L^2$; what exists in $L^2$ are the approximate eigenvectors $\varphi_\varepsilon$ of Proposition~\ref{prop:mult-approx-eigen}, wave packets concentrated within $\varepsilon$ of $\lambda_0$.
+\end{rembox}
+%% <<< END ADDED
+
+% ============================================================================
+% SECTION: ELEMENTARY SPECTRAL THEORY (Lecture 22)
+% Lecture 22 (2026-11-19). Source: the handwritten notes of the lecture (four pages, dated 11/19); no recording.
+% Checked against Lax 17.1 ((4)-(5), Thms 1-4, Cor 3'), 17.2 ((24), the resolvent identity) and 20.2 (shifts), read in the book.
+% ============================================================================
+
+\section{Elementary Spectral Theory}\label{sec:spectral-theory}
+
+\roadmark{Stage: maps}{Thread: invertibility. Operators near an invertible operator are invertible (geometric series); hence $\rho(M)$ is open, the resolvent is analytic on it, and Liouville's theorem shows that $\sigma(M)$ is not empty.}
+
+\textit{Lecture 22 (Thu Nov 19). Source: the handwritten notes of the lecture; there is no recording. The steps that the notes leave out, and the items marked as such, are filled in. The section was checked against Lax \S17.1, \S17.2 and \S20.2. In the lecture the two lemmas of \S\ref{subsec:neumann} are one lemma, proved in two cases.}
+
+%% FILL-IN: the standing assumptions; X \neq {0} is not written in the notes and is needed for the last theorem.
+Throughout this section $X \neq \{0\}$ is a Banach space over $\mathbb{C}$ and $M \in \mathcal{L}(X, X)$. Recall (Definitions~\ref{def:resolvent-set} and~\ref{def:spectrum}): a number $\lambda \in \mathbb{C}$ belongs to $\rho(M)$ if $\lambda I - M : X \to X$ is invertible, and
+\[
+\rho(M) = \{ \lambda \in \mathbb{C} : \lambda I - M \text{ is invertible} \} , \qquad \sigma(M) = \mathbb{C} \setminus \rho(M) .
+\]
+Here $A \in \mathcal{L}(X, X)$ is invertible if it is one-to-one and onto. Its inverse $A^{-1}$ then belongs to $\mathcal{L}(X, X)$ (Theorem~\ref{thm:banach-inverse}), and $A^{-1}A = AA^{-1} = I$. For $\lambda \in \rho(M)$ the resolvent is $R(\lambda; M) = (\lambda I - M)^{-1}$ (Definition~\ref{def:resolvent}).
+
+\subsection{Left and Right Inverses}
+
+\begin{defbox}[Left Inverse]\boxlabel{def:left-inverse}
+Let $A \in \mathcal{L}(X, X)$. $A$ has a \textbf{left inverse} if there is $B \in \mathcal{L}(X, X)$ such that $BA = I$.
+\laxref{\S17.1, (4)}
+\end{defbox}
+
+\begin{defbox}[Right Inverse]\boxlabel{def:right-inverse}
+Let $A \in \mathcal{L}(X, X)$. $A$ has a \textbf{right inverse} if there is $C \in \mathcal{L}(X, X)$ such that $AC = I$.
+\laxref{\S17.1, (4)}
+\end{defbox}
+
+\begin{lembox}[One-Sided Inverses]\boxlabel{lem:one-sided-inverse}
+Let $A \in \mathcal{L}(X, X)$.
+\begin{enumerate}[label=(\arabic*)]
+    \item If $A$ has a left inverse, then $A : X \to X$ is one-to-one.
+    \item If $A$ has a right inverse, then $A : X \to X$ is onto.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+(1) Let $BA = I$. If $Ax = 0$, then $x = BAx = B0 = 0$. So the null space of $A$ is $\{0\}$, and $A$ is one-to-one.
+
+(2) Let $AC = I$. For every $x \in X$, $A(Cx) = x$, so $x \in R(A)$. So $A$ is onto.
+\end{proof}
+
+\begin{lembox}[{{Inverses, Products and Commuting Factors}}]\boxlabel{lem:inverses}
+Let $X$ be a Banach space.
+\begin{enumerate}[label=(\arabic*)]
+    \item If $A \in \mathcal{L}(X, X)$ has both a left and a right inverse, then $A$ is invertible, and the left and the right inverse coincide; both are equal to $A^{-1}$.
+    \item If $M, N \in \mathcal{L}(X, X)$ and $M, N$ are invertible, then $MN$ is invertible and $(MN)^{-1} = N^{-1}M^{-1}$.
+    \item If $M, N \in \mathcal{L}(X, X)$ and $MN = NM$, and if $MN$ is invertible, then $M$ and $N$ are both invertible.
+\end{enumerate}
+\laxref{\S17.1, (5) and Thm~1}
+\end{lembox}
+
+\begin{proof}
+(1) Assume there are $B, C \in \mathcal{L}(X, X)$ with $BA = I$ and $AC = I$. Then
+\[
+BAC = (BA)C = C \qquad \text{and} \qquad BAC = B(AC) = B ,
+\]
+so $B = C$. %% FILL-IN: why A is then invertible, and why B = C is the inverse.
+By Lemma~\ref{lem:one-sided-inverse}, $A$ is one-to-one (it has a left inverse) and onto (it has a right inverse), so $A$ is invertible. Finally $B = B(AA^{-1}) = (BA)A^{-1} = A^{-1}$.
+
+(2) %% FILL-IN: the notes have only a check mark.
+By associativity,
+\begin{align*}
+(N^{-1}M^{-1})(MN) &= N^{-1}(M^{-1}M)N = N^{-1}N = I , \\
+(MN)(N^{-1}M^{-1}) &= M(NN^{-1})M^{-1} = MM^{-1} = I .
+\end{align*}
+So $N^{-1}M^{-1} \in \mathcal{L}(X, X)$ is a left and a right inverse of $MN$. By (1), $MN$ is invertible and $(MN)^{-1} = N^{-1}M^{-1}$.
+
+(3) \emph{$M$ is invertible.} Assume $MN = NM$ and $MN$ is invertible. Then $(MN)^{-1} \in \mathcal{L}(X, X)$ exists, and
+\[
+(MN)^{-1}MN = MN(MN)^{-1} = I .
+\]
+The second equality reads $M\bigl( N(MN)^{-1} \bigr) = I$: $M$ has the right inverse $N(MN)^{-1}$. In the first equality use $MN = NM$:
+\[
+(MN)^{-1}MN = (MN)^{-1}NM = \bigl( (MN)^{-1}N \bigr) M = I ,
+\]
+so $M$ has the left inverse $(MN)^{-1}N$. Thus $M$ has a left and a right inverse, and by (1) $M$ is invertible.
+
+%% FILL-IN: the same argument for N.
+\emph{$N$ is invertible.} The first equality reads $\bigl( (MN)^{-1}M \bigr) N = I$, a left inverse of $N$. In the second, $MN(MN)^{-1} = NM(MN)^{-1} = N\bigl( M(MN)^{-1} \bigr) = I$, a right inverse of $N$. By (1) $N$ is invertible.
+\end{proof}
+
+%% >>> ADDED: example (not from lecture)
+\begin{exbox}[{{The Shifts on $\ell^2$ Have Only One-Sided Inverses}}]\boxlabel{ex:shifts-one-sided}
+\textit{(Not from lecture; filled in.)} On $\ell^2$ let $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ be the right shift (Example~\ref{ex:right-shift}) and $T(a_1, a_2, \ldots) = (a_2, a_3, \ldots)$ the left shift (Example~\ref{ex:left-shift}). Then
+\begin{align*}
+TS(a_1, a_2, \ldots) &= T(0, a_1, a_2, \ldots) = (a_1, a_2, \ldots) , \\
+ST(a_1, a_2, \ldots) &= S(a_2, a_3, \ldots) = (0, a_2, a_3, \ldots) ,
+\end{align*}
+so $TS = I$ and $ST \neq I$.
+\begin{enumerate}[label=(\arabic*)]
+    \item $S$ has the left inverse $T$ and is one-to-one, but $S$ is not onto: $(1, 0, 0, \ldots) \notin R(S)$. So $S$ has no right inverse (Lemma~\ref{lem:one-sided-inverse}(2)) and is not invertible.
+    \item $T$ has the right inverse $S$ and is onto, but $T$ is not one-to-one: $T(1, 0, 0, \ldots) = 0$. So $T$ has no left inverse (Lemma~\ref{lem:one-sided-inverse}(1)) and is not invertible.
+    \item The product $TS = I$ is invertible although neither factor is. This does not contradict Lemma~\ref{lem:inverses}(3), because $TS \neq ST$: the hypothesis $MN = NM$ cannot be dropped there.
+\end{enumerate}
+For a linear map of $\mathbb{C}^n$ to itself this cannot happen: there one-to-one and onto are equivalent (Example~\ref{ex:spectrum-matrix}), so a one-sided inverse is a two-sided inverse.
+\laxref{\S20.2, (11) and the lines after it}
+\end{exbox}
+%% <<< END ADDED
+
+\subsection{The Geometric Series for Operators}\label{subsec:neumann}
+
+The model is the geometric series of numbers, $\frac{1}{1 - x} = \sum_{n=0}^\infty x^n$ for $|x| < 1$.
+
+\begin{lembox}[The Neumann Series]\boxlabel{lem:neumann-series}
+Let $X$ be a Banach space and $A \in \mathcal{L}(X, X)$ with $\|A\| < 1$. Then the series $\sum_{n=0}^\infty A^n$ converges in $\mathcal{L}(X, X)$, $I - A$ is invertible, and
+\[
+(I - A)^{-1} = \sum_{n=0}^\infty A^n , \qquad \|(I - A)^{-1}\| \le \frac{1}{1 - \|A\|} .
+\]
+\laxref{\S17.1, (9)--(9$'$), in the proof of Thm~2}
+\end{lembox}
+
+\begin{proof}
+\textbf{Step 1: $\lim_{m \to \infty} \sum_{n=0}^m A^n$ exists.} Put $S_m = \sum_{n=0}^m A^n \in \mathcal{L}(X, X)$, where $A^0 = I$. Since $X$ is complete, $\mathcal{L}(X, X)$ is a Banach space (Theorem~\ref{thm:LXY}(2)), so it suffices to show that $\{S_m\}_m$ is a Cauchy sequence. For $k > m$,
+\[
+\Bigl\| \sum_{n=0}^k A^n - \sum_{n=0}^m A^n \Bigr\| = \Bigl\| \sum_{n=m+1}^k A^n \Bigr\| \le \sum_{n=m+1}^k \|A^n\| \le \sum_{n=m+1}^k \|A\|^n \to 0 \qquad \text{as } m, k \to \infty .
+\]
+%% FILL-IN: the two facts used.
+Here $\|A^n\| \le \|A\|^n$ follows from $\|NM\| \le \|N\|\, \|M\|$ (Proposition~\ref{prop:composition}(1)) by induction on $n$, and the last sum is a piece of the convergent geometric series $\sum_n \|A\|^n$, $\|A\| < 1$. So $\{S_m\}$ is Cauchy, and
+\[
+S := \lim_{m \to \infty} \sum_{n=0}^m A^n = \sum_{n=0}^\infty A^n \qquad \text{exists in } \mathcal{L}(X, X) .
+\]
+
+\textbf{Step 2: $S\,(I - A) = (I - A)\, S = I$.} %% FILL-IN: carried out with partial sums; the notes compute with the infinite sums.
+For the partial sums the products telescope:
+\[
+(I - A)\, S_m = S_m\, (I - A) = \sum_{n=0}^m A^n - \sum_{n=0}^m A^{n+1} = I - A^{m+1} ,
+\]
+and $\|A^{m+1}\| \le \|A\|^{m+1} \to 0$ as $m \to \infty$. Multiplication by the fixed operator $I - A$ is continuous on $\mathcal{L}(X, X)$, since $\|(I - A)(S_m - S)\| \le \|I - A\|\, \|S_m - S\|$ and likewise on the other side. Letting $m \to \infty$ gives $(I - A) S = S (I - A) = I$.
+
+\textbf{Step 3: conclusion.} $S$ is a left and a right inverse of $I - A$. By Lemma~\ref{lem:inverses}(1), $I - A$ is invertible and $(I - A)^{-1} = S = \sum_{n=0}^\infty A^n$. %% FILL-IN: the bound.
+For the norm, $\|S_m\| \le \sum_{n=0}^m \|A\|^n \le \frac{1}{1 - \|A\|}$ for every $m$, and $\|S\| = \lim_m \|S_m\|$, so $\|(I - A)^{-1}\| \le \frac{1}{1 - \|A\|}$.
+\end{proof}
+
+\begin{lembox}[{{Perturbation of an Invertible Operator}}]\boxlabel{lem:perturb-invertible}
+Let $X$ be a Banach space and let $K \in \mathcal{L}(X, X)$ be invertible. Assume $A \in \mathcal{L}(X, X)$ satisfies
+\[
+\|A\| < \frac{1}{\|K^{-1}\|} .
+\]
+Then $K - A : X \to X$ is invertible, with
+\[
+(K - A)^{-1} = (I - K^{-1}A)^{-1} K^{-1} = \sum_{n=0}^\infty (K^{-1}A)^n K^{-1} , \qquad \|(K - A)^{-1}\| \le \frac{\|K^{-1}\|}{1 - \|K^{-1}\|\, \|A\|} .
+\]
+\laxref{\S17.1, Thm~2}
+\end{lembox}
+
+\begin{proof}
+Since
+\[
+\|K^{-1}A\| \le \|K^{-1}\|\, \|A\| < 1 ,
+\]
+$I - K^{-1}A$ is invertible by Lemma~\ref{lem:neumann-series}. Then, by Lemma~\ref{lem:inverses}(2), the product
+\[
+K\, (I - K^{-1}A) = K - A
+\]
+is invertible, and
+\[
+(K - A)^{-1} = (I - K^{-1}A)^{-1} K^{-1} .
+\]
+\emph{The bound.} By Lemma~\ref{lem:neumann-series} for $K^{-1}A$ in place of $A$,
+\begin{align*}
+\|(K - A)^{-1}\| \le \|K^{-1}\|\, \|(I - K^{-1}A)^{-1}\| &= \|K^{-1}\|\, \Bigl\| \sum_{n=0}^\infty (K^{-1}A)^n \Bigr\| \\
+&\le \|K^{-1}\| \sum_{n=0}^\infty \|K^{-1}\|^n\, \|A\|^n = \frac{\|K^{-1}\|}{1 - \|K^{-1}\|\, \|A\|} . \qedhere
+\end{align*}
+\end{proof}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[Invertible Operators Form an Open Set]\label{rem:invertible-open}
+Lemma~\ref{lem:perturb-invertible} says that the ball of radius $\frac{1}{\|K^{-1}\|}$ about an invertible $K$ in $\mathcal{L}(X, X)$ consists of invertible operators: the invertible operators form an open subset of $\mathcal{L}(X, X)$. The smaller $\|K^{-1}\|$ is, the larger the perturbation that $K$ tolerates. Only the completeness of $\mathcal{L}(X, X)$, the inequality $\|NM\| \le \|N\|\, \|M\|$ and the algebra of Lemma~\ref{lem:inverses} are used; this is why Lax proves these results for the elements of a Banach algebra.
+\end{rembox}
+%% <<< END ADDED
+
+\subsection{The Resolvent Set is Open}
+
+\begin{propbox}[{{The Resolvent Set is Open and Contains $|\lambda| > \|M\|$}}]\boxlabel{prop:resolvent-open}
+Let $X \neq \{0\}$ be a Banach space over $\mathbb{C}$ and $M \in \mathcal{L}(X, X)$.
+\begin{enumerate}[label=(\arabic*)]
+    \item Every $\lambda \in \mathbb{C}$ with $|\lambda| > \|M\|$ belongs to $\rho(M)$, and for these $\lambda$
+    \[
+    \|(\lambda I - M)^{-1}\| \le \frac{1}{|\lambda| - \|M\|} .
+    \]
+    \item $\rho(M)$ is an open set in $\mathbb{C}$. More precisely, if $\lambda_0 \in \rho(M)$, then every $\lambda \in \mathbb{C}$ with $|\lambda - \lambda_0| < \frac{1}{\|(\lambda_0 I - M)^{-1}\|}$ belongs to $\rho(M)$, and
+    \[
+    \|(\lambda I - M)^{-1}\| \le \frac{\|(\lambda_0 I - M)^{-1}\|}{1 - \|(\lambda_0 I - M)^{-1}\|\, |\lambda - \lambda_0|} .
+    \]
+    \item If $\lambda_0 \in \rho(M)$ and $\mu \in \sigma(M)$, then $|\mu - \lambda_0| \ge \frac{1}{\|(\lambda_0 I - M)^{-1}\|}$. Hence, if $\sigma(M) \neq \varnothing$,
+    \[
+    \|(\lambda_0 I - M)^{-1}\| \ge \frac{1}{\operatorname{dist}(\lambda_0, \sigma(M))} \qquad \text{for every } \lambda_0 \in \rho(M) .
+    \]
+\end{enumerate}
+\laxref{\S17.1, Thm~3(i) and Cor~3$'$; part (1) is in the proof of Thm~4}
+\end{propbox}
+
+\begin{proof}
+(1) Let $\lambda \in \mathbb{C}$ with $|\lambda| > \|M\|$. Then $\lambda \neq 0$, and
+\[
+\lambda I - M = \lambda \Bigl( I - \frac{1}{\lambda} M \Bigr) , \qquad \Bigl\| \frac{1}{\lambda} M \Bigr\| = \frac{1}{|\lambda|}\, \|M\| < 1 .
+\]
+By Lemma~\ref{lem:neumann-series}, $I - \frac1\lambda M$ is invertible; multiplying by the nonzero number $\lambda$ keeps it invertible, so $\lambda I - M$ is invertible, with $(\lambda I - M)^{-1} = \frac{1}{\lambda} \bigl( I - \frac{1}{\lambda} M \bigr)^{-1}$. %% FILL-IN: the bound, which the notes use in the last proof with the word "check".
+By the bound of Lemma~\ref{lem:neumann-series},
+\[
+\|(\lambda I - M)^{-1}\| = \frac{1}{|\lambda|}\, \Bigl\| \Bigl( I - \frac{1}{\lambda} M \Bigr)^{-1} \Bigr\| \le \frac{1}{|\lambda|} \cdot \frac{1}{1 - \|M\| / |\lambda|} = \frac{1}{|\lambda| - \|M\|} .
+\]
+
+(2) Let $\lambda_0 \in \rho(M)$, so that $\lambda_0 I - M$ is invertible. Let $\lambda \in \mathbb{C}$ with
+\[
+|\lambda - \lambda_0| < \frac{1}{\|(\lambda_0 I - M)^{-1}\|} .
+\]
+%% FILL-IN: the decomposition to which the lemma is applied.
+Write $\lambda I - M = (\lambda_0 I - M) - (\lambda_0 - \lambda) I = K - A$ with $K = \lambda_0 I - M$ and $A = (\lambda_0 - \lambda) I$, so that $\|A\| = |\lambda - \lambda_0| < \frac{1}{\|K^{-1}\|}$. By Lemma~\ref{lem:perturb-invertible}, $\lambda I - M$ is invertible, that is, $\lambda \in \rho(M)$, and the bound of that lemma is the stated one. So an open disk about each $\lambda_0 \in \rho(M)$ lies in $\rho(M)$: $\rho(M)$ is open.
+
+(3) By (2) the open disk of radius $\frac{1}{\|(\lambda_0 I - M)^{-1}\|}$ about $\lambda_0$ contains no point of $\sigma(M)$. So every $\mu \in \sigma(M)$ satisfies $|\mu - \lambda_0| \ge \frac{1}{\|(\lambda_0 I - M)^{-1}\|}$, and taking the infimum over $\mu \in \sigma(M)$,
+\[
+\operatorname{dist}(\lambda_0, \sigma(M)) \ge \frac{1}{\|(\lambda_0 I - M)^{-1}\|} ,
+\]
+which is the stated inequality.
+\end{proof}
+
+%% FIGURE (board): the sketch next to the proposition, redrawn from the notes
+\begin{center}
+\begin{tikzpicture}[scale=1.1, >=stealth]
+    \draw[dashed, red!60!black] plot[smooth cycle, tension=0.8] coordinates {(-2.1,0.1) (-1.2,1.35) (0.7,1.3) (1.75,0.2) (0.9,-1.25) (-1.3,-1.2)};
+    \draw[thick, blue!70!black, fill=blue!8] plot[smooth cycle, tension=0.8] coordinates {(-1.2,0.1) (-0.6,0.7) (0.5,0.6) (0.9,0.0) (0.3,-0.6) (-0.8,-0.5)};
+    \node[blue!70!black] at (-0.1,0.05) {$\sigma(M)$};
+    \node[red!60!black] at (1.3,1.55) {$\rho(M)$};
+    \fill (2.75,-0.45) circle (1.3pt) node[below] {$\lambda_0$};
+    \draw[dashed, red!60!black] (2.75,-0.45) circle (0.75);
+\end{tikzpicture}
+\end{center}
+The spectrum $\sigma(M)$ and, around a point $\lambda_0$ of the resolvent set, a disk that stays in the resolvent set.
+
+\begin{rembox}[The Sign in the Distance Bound]\label{rem:distance-sign}
+In the notes of the lecture the inequality of part (3) is stated with ``$>$'', $\|(\lambda I - M)^{-1}\| > \bigl( \operatorname{dist}(\lambda, \sigma(M)) \bigr)^{-1}$, and derived with ``$\ge$'', with the question whether a point outside the resolvent set must be at distance greater than or equal to the radius. The derivation is the correct one: a point of $\sigma(M)$ may lie on the boundary circle of the disk, and equality occurs (Example~\ref{ex:resolvent-distance}(1), (2)). The sketch in the notes also carries the word ``convex'' at $\sigma(M)$. The spectrum is closed and bounded (Theorem~\ref{thm:spectrum-compact}) but need not be convex: for the diagonal matrix with entries $0$ and $1$ on $\mathbb{C}^2$ it is the two-point set $\{0, 1\}$ (Example~\ref{ex:spectrum-matrix}).
+\end{rembox}
+
+%% >>> ADDED: example and figures (not from lecture)
+\begin{exbox}[{{Equality and Strict Inequality in the Distance Bound}}]\boxlabel{ex:resolvent-distance}
+\textit{(Not from lecture; filled in.)}
+\begin{enumerate}[label=(\arabic*)]
+    \item \emph{$M = 0$.} Here $\lambda I - M = \lambda I$ is invertible exactly for $\lambda \neq 0$, so $\sigma(M) = \{0\}$, and $\|(\lambda I)^{-1}\| = \frac{1}{|\lambda|} = \frac{1}{\operatorname{dist}(\lambda, \sigma(M))}$: equality for every $\lambda \in \rho(M)$.
+    \item \emph{Multiplication by $t$ on $L^2[0,1]$.} By Example~\ref{ex:mult-L2}, $\sigma(M) = [0,1]$ and $\|R(\lambda; M)\| \le \frac{1}{\operatorname{dist}(\lambda, [0,1])}$ for $\lambda \notin [0,1]$. With Proposition~\ref{prop:resolvent-open}(3), $\|R(\lambda; M)\| = \frac{1}{\operatorname{dist}(\lambda, [0,1])}$: equality again.
+    \item \emph{A nilpotent matrix.} Let $X = \mathbb{C}^2$ with the Euclidean norm and $M = \bigl( \begin{smallmatrix} 0 & a \\ 0 & 0 \end{smallmatrix} \bigr)$ with $a > 0$. Then $M^2 = 0$, $\sigma(M) = \{0\}$ (the only eigenvalue, Example~\ref{ex:spectrum-matrix}), and for $\lambda \neq 0$
+    \[
+    (\lambda I - M)^{-1} = \frac{1}{\lambda} I + \frac{1}{\lambda^2} M = \begin{pmatrix} \frac{1}{\lambda} & \frac{a}{\lambda^2} \\ 0 & \frac{1}{\lambda} \end{pmatrix} ,
+    \]
+    as one checks by multiplying with $\lambda I - M$ and using $M^2 = 0$. Applying this matrix to the unit vector $(0, 1)^T$ gives a vector of norm at least $\frac{a}{|\lambda|^2}$, so
+    \[
+    \|(\lambda I - M)^{-1}\| \ge \frac{a}{|\lambda|^2} > \frac{1}{|\lambda|} = \frac{1}{\operatorname{dist}(\lambda, \sigma(M))} \qquad \text{for } 0 < |\lambda| < a .
+    \]
+    The inequality is strict: the resolvent is much larger than the distance to the spectrum suggests, and the disk of Proposition~\ref{prop:resolvent-open}(2) is smaller than the largest disk about $\lambda$ free of spectrum.
+\end{enumerate}
+\end{exbox}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0, >=stealth]
+    \fill[gray!10] (0,0) circle (2.1);
+    \draw[thick, gray] (0,0) circle (2.1);
+    \draw[->] (-3.4,0) -- (4.9,0) node[right, font=\scriptsize] {$\operatorname{Re} \lambda$};
+    \draw[->] (0,-2.6) -- (0,2.7) node[above, font=\scriptsize] {$\operatorname{Im} \lambda$};
+    \draw[thick, blue!70!black, fill=blue!15] plot[smooth cycle, tension=0.8] coordinates {(-1.3,0.2) (-0.5,0.9) (0.7,0.6) (1.2,-0.1) (0.2,-0.8) (-0.9,-0.6)};
+    \node[blue!70!black] at (-0.15,0.1) {$\sigma(M)$};
+    \node[gray, font=\scriptsize, anchor=south west] at (1.5,1.5) {$|\lambda| = \|M\|$};
+    \fill[red!70!black] (3.4,1.2) circle (1.4pt) node[above right, font=\scriptsize] {$\lambda$};
+    \node[red!70!black, font=\scriptsize, align=left, anchor=west] at (3.0,2.1) {$|\lambda| > \|M\|$:\\series in $\frac{1}{\lambda} M$};
+    \fill[red!70!black] (1.75,-0.55) circle (1.4pt);
+    \draw[dashed, red!70!black] (1.75,-0.55) circle (0.5);
+    \draw[thin, red!70!black] (1.8,-0.6) -- (2.45,-1.0);
+    \node[red!70!black, font=\scriptsize, align=left, anchor=west] at (2.45,-1.25) {$\lambda_0 \in \rho(M)$:\\series around $\lambda_0$,\\radius $1 / \|(\lambda_0 I - M)^{-1}\|$};
+\end{tikzpicture}
+\end{center}
+The two uses of the geometric series in Proposition~\ref{prop:resolvent-open}. Outside the circle $|\lambda| = \|M\|$ every point is in $\rho(M)$, so the spectrum lies in the closed disk of radius $\|M\|$; and around each point $\lambda_0$ of $\rho(M)$, also inside that circle, a disk lies in $\rho(M)$. (Not from lecture; figure added.)
+
+\begin{center}
+\begin{tikzpicture}[>=stealth, xscale=2.3, yscale=0.42]
+    \draw[->] (-1.6,0) -- (2.75,0) node[right, font=\scriptsize] {$\lambda$ (real)};
+    \draw[->] (-1.6,0) -- (-1.6,8.8);
+    \draw[line width=2pt, blue!70!black] (0,0) -- (1,0);
+    \node[blue!70!black, font=\scriptsize, below] at (0.5,-0.15) {$\sigma(M) = [0,1]$};
+    \draw[thick, red!70!black, domain=-1.5:-0.125, samples=60, smooth] plot (\x, {-1/\x});
+    \draw[thick, red!70!black, domain=1.125:2.6, samples=60, smooth] plot (\x, {1/(\x-1)});
+    \draw[densely dotted, gray] (0,0) -- (0,8.6);
+    \draw[densely dotted, gray] (1,0) -- (1,8.6);
+    \node[font=\scriptsize, below] at (-1,0) {$-1$};
+    \draw (-1,0) -- (-1,0.25);
+    \node[font=\scriptsize, below] at (2,0) {$2$};
+    \draw (2,0) -- (2,0.25);
+    \node[font=\scriptsize, left] at (-1.6,1) {$1$};
+    \draw (-1.6,1) -- (-1.55,1);
+    \node[red!70!black, font=\scriptsize, anchor=west] at (1.45,5.2) {$\|R(\lambda; M)\| = \dfrac{1}{\operatorname{dist}(\lambda, [0,1])}$};
+\end{tikzpicture}
+\end{center}
+The norm of the resolvent of multiplication by $t$ on $L^2[0,1]$ along the real axis (Example~\ref{ex:resolvent-distance}(2)): it is finite on the resolvent set, tends to infinity as $\lambda$ approaches the spectrum, and for $\lambda > 1 = \|M\|$ it equals the bound $\frac{1}{|\lambda| - \|M\|}$ of Proposition~\ref{prop:resolvent-open}(1). (Not from lecture; figure added.)
+%% <<< END ADDED
+
+\subsection{The Resolvent is Analytic}
+
+\begin{lembox}[The First Resolvent Identity]\boxlabel{lem:resolvent-identity}
+Let $\lambda \in \rho(M)$ and $\mu \in \rho(M)$. Then
+\begin{enumerate}[label=(\arabic*)]
+    \item $(\lambda I - M)^{-1} - (\mu I - M)^{-1} = (\mu - \lambda)\, (\lambda I - M)^{-1} (\mu I - M)^{-1}$;
+    \item $(\lambda I - M)^{-1} (\mu I - M)^{-1} = (\mu I - M)^{-1} (\lambda I - M)^{-1}$: the resolvents commute.
+\end{enumerate}
+\laxref{\S17.2, (24)}
+\end{lembox}
+
+\begin{proof}
+(1) Multiply the difference by $\lambda I - M$ on the left and by $\mu I - M$ on the right:
+\[
+(\lambda I - M) \Bigl( (\lambda I - M)^{-1} - (\mu I - M)^{-1} \Bigr) (\mu I - M) = (\mu I - M) - (\lambda I - M) = (\mu - \lambda) I .
+\]
+%% FILL-IN: undoing the multiplication.
+Now multiply this equation by $(\lambda I - M)^{-1}$ on the left and by $(\mu I - M)^{-1}$ on the right; the left side becomes the difference of the resolvents, and the right side becomes $(\mu - \lambda) (\lambda I - M)^{-1} (\mu I - M)^{-1}$.
+
+(2) %% FILL-IN: the notes record only that the two factors commute.
+The operators $\lambda I - M$ and $\mu I - M$ commute, $(\lambda I - M)(\mu I - M) = (\mu I - M)(\lambda I - M)$, since both products equal $\lambda\mu I - (\lambda + \mu) M + M^2$. Both products are invertible, by Lemma~\ref{lem:inverses}(2), and taking inverses of the two sides with the formula $(MN)^{-1} = N^{-1}M^{-1}$ of that lemma gives $(\mu I - M)^{-1}(\lambda I - M)^{-1} = (\lambda I - M)^{-1}(\mu I - M)^{-1}$.
+\end{proof}
+
+\begin{propbox}[The Resolvent is Analytic]\boxlabel{prop:resolvent-analytic}
+Let $X \neq \{0\}$ be a Banach space over $\mathbb{C}$ and $M \in \mathcal{L}(X, X)$. The resolvent $R(z; M) = (zI - M)^{-1}$, $z \in \rho(M)$, is an analytic function on $\rho(M)$ with values in the Banach space $\mathcal{L}(X, X)$ (Definition~\ref{def:strongly-analytic}), and its derivative is
+\[
+\frac{d}{dz} R(z; M) = -(zI - M)^{-2} = -R(z; M)^2 .
+\]
+\laxref{\S17.1, Thm~3(ii)}
+\end{propbox}
+
+\begin{proof}
+The set $\rho(M)$ is open (Proposition~\ref{prop:resolvent-open}(2)), and $\mathcal{L}(X, X)$ is a Banach space over $\mathbb{C}$ (Theorem~\ref{thm:LXY}(2)), so Definition~\ref{def:strongly-analytic} applies. Let $\lambda_0 \in \rho(M)$. \emph{What has to be shown:} $R(z; M)$ is continuous at $\lambda_0$ and differentiable at $\lambda_0$. For $z \in \rho(M)$, by the first resolvent identity (Lemma~\ref{lem:resolvent-identity}(1)),
+\[
+R(z; M) - R(\lambda_0; M) = (zI - M)^{-1} - (\lambda_0 I - M)^{-1} = (\lambda_0 - z)\, (zI - M)^{-1} (\lambda_0 I - M)^{-1} .
+\]
+
+\textbf{A bound for $\|(zI - M)^{-1}\|$ near $\lambda_0$.} Write $zI - M = (z - \lambda_0) I + \lambda_0 I - M$. Take $z$ with
+\[
+|z - \lambda_0| < \frac{1}{2\, \|(\lambda_0 I - M)^{-1}\|} .
+\]
+By Proposition~\ref{prop:resolvent-open}(2), $z \in \rho(M)$ and
+\[
+\|(zI - M)^{-1}\| \le \|(\lambda_0 I - M)^{-1}\|\, \frac{1}{1 - \|(\lambda_0 I - M)^{-1}\|\, |z - \lambda_0|} < 2\, \|(\lambda_0 I - M)^{-1}\| ,
+\]
+because the denominator is larger than $\frac12$. (In the lecture the bound of Lemma~\ref{lem:perturb-invertible} is derived at this point, with $K = \lambda_0 I - M$ and $A = (\lambda_0 - z) I$: $K - A = K(I - K^{-1}A)$, $(K - A)^{-1} = (I - K^{-1}A)^{-1}K^{-1}$, hence $\|(K - A)^{-1}\| \le \|K^{-1}\| \sum_{n=0}^\infty \|K^{-1}\|^n \|A\|^n$.)
+
+\textbf{Continuous at $\lambda_0$.} Let $|z - \lambda_0| < \frac{1}{2 \|(\lambda_0 I - M)^{-1}\|}$. By the identity and the bound,
+\begin{align*}
+\|R(z; M) - R(\lambda_0; M)\| &\le |z - \lambda_0|\, \|(zI - M)^{-1}\|\, \|(\lambda_0 I - M)^{-1}\| \\
+&\le 2\, |z - \lambda_0|\, \|(\lambda_0 I - M)^{-1}\|^2 \to 0 \qquad \text{as } z \to \lambda_0 .
+\end{align*}
+
+\textbf{Differentiable at $\lambda_0$.} Dividing the identity by $z - \lambda_0$, for $z \neq \lambda_0$,
+\[
+\frac{R(z; M) - R(\lambda_0; M)}{z - \lambda_0} = -(zI - M)^{-1} (\lambda_0 I - M)^{-1} \longrightarrow -(\lambda_0 I - M)^{-2} \qquad \text{as } z \to \lambda_0 .
+\]
+%% FILL-IN: why the product converges.
+The limit holds in the norm of $\mathcal{L}(X, X)$ by the continuity just proved:
+\[
+\bigl\| (zI - M)^{-1} (\lambda_0 I - M)^{-1} - (\lambda_0 I - M)^{-2} \bigr\| \le \|R(z; M) - R(\lambda_0; M)\|\, \|(\lambda_0 I - M)^{-1}\| \to 0 .
+\]
+So the difference quotients converge in $\mathcal{L}(X, X)$ to $-(\lambda_0 I - M)^{-2}$, for every $\lambda_0 \in \rho(M)$.
+\end{proof}
+
+\subsection{The Spectrum is Not Empty}
+
+\begin{thmbox}[{{The Spectrum is Nonempty, Closed and Bounded}}]\boxlabel{thm:spectrum-compact}
+Let $X \neq \{0\}$ be a Banach space over $\mathbb{C}$ and $M \in \mathcal{L}(X, X)$. Then $\sigma(M)$ is not empty, and $\sigma(M)$ is a bounded and closed subset of $\mathbb{C}$, with
+\[
+\sigma(M) \subset \{ \lambda \in \mathbb{C} : |\lambda| \le \|M\| \} .
+\]
+\laxref{\S17.1, Thm~4(i) (there by the Laurent series of the resolvent at $\infty$ and the Cauchy integral theorem)}
+\end{thmbox}
+
+\begin{proof}
+\textbf{Bounded and closed.} %% FILL-IN: the notes state this part without proof.
+By Proposition~\ref{prop:resolvent-open}(1), every $\lambda$ with $|\lambda| > \|M\|$ is in $\rho(M)$, so $\sigma(M) \subset \{ |\lambda| \le \|M\| \}$ and $\sigma(M)$ is bounded. By Proposition~\ref{prop:resolvent-open}(2), $\rho(M)$ is open, so its complement $\sigma(M)$ is closed in $\mathbb{C}$.
+
+\textbf{Not empty.} If not, $\sigma(M) = \varnothing$. Then $\rho(M) = \mathbb{C}$, and $(zI - M)^{-1}$ is analytic in all of $\mathbb{C}$ (Proposition~\ref{prop:resolvent-analytic}). Hence for every $\ell \in \bigl( \mathcal{L}(X, X) \bigr)'$ the scalar function
+\[
+f(z) = \ell\bigl( (zI - M)^{-1} \bigr)
+\]
+is holomorphic on $\mathbb{C}$, since a strongly analytic function is weakly analytic (Proposition~\ref{prop:strong-weak-analytic}, applied in the Banach space $\mathcal{L}(X, X)$).
+
+\emph{$f$ is bounded.} Let $|z| > \|M\| + 1$. By Proposition~\ref{prop:resolvent-open}(1),
+\[
+\|(zI - M)^{-1}\| = |z|^{-1}\, \Bigl\| \Bigl( I - \frac{1}{z} M \Bigr)^{-1} \Bigr\| \le \frac{1}{|z| - \|M\|} ,
+\]
+and therefore
+\[
+\bigl| \ell\bigl( (zI - M)^{-1} \bigr) \bigr| \le \|\ell\|\, \frac{1}{|z| - \|M\|} < \|\ell\| \qquad \text{for all } |z| > \|M\| + 1 .
+\]
+%% FILL-IN: boundedness on the remaining disk.
+On the closed disk $|z| \le \|M\| + 1$, which is compact, $f$ is bounded because it is continuous. So $f$ is a bounded holomorphic function on $\mathbb{C}$. By Liouville's theorem, $f$ is a constant.
+
+\emph{The resolvent is constant.} Hence for all $z, \mu \in \mathbb{C}$
+\[
+f(z) - f(\mu) = \ell\bigl( (zI - M)^{-1} - (\mu I - M)^{-1} \bigr) = 0 \qquad \text{for all } \ell \in \bigl( \mathcal{L}(X, X) \bigr)' .
+\]
+In a normed linear space, an element on which every bounded linear functional vanishes is $0$ (Corollary~\ref{cor:separate-points}, applied in the normed space $\mathcal{L}(X, X)$). So
+\[
+(zI - M)^{-1} = (\mu I - M)^{-1} \qquad \text{for all } z, \mu \in \rho(M) = \mathbb{C} .
+\]
+
+\emph{The contradiction.} %% FILL-IN: the last step, which the notes indicate by a brace and the words "1st resolvent identity".
+By the first resolvent identity (Lemma~\ref{lem:resolvent-identity}(1)),
+\[
+0 = (zI - M)^{-1} - (\mu I - M)^{-1} = (\mu - z)\, (zI - M)^{-1} (\mu I - M)^{-1} .
+\]
+Take $z \neq \mu$. Then the product $(zI - M)^{-1} (\mu I - M)^{-1}$ is the zero operator. But it is a product of two invertible operators, hence invertible (Lemma~\ref{lem:inverses}(2)), and the zero operator is not one-to-one on $X \neq \{0\}$. This contradiction shows that $\sigma(M) \neq \varnothing$.
+\end{proof}
+
+%% >>> ADDED: figure and remarks (Claude commentary)
+\begin{center}
+\begin{tikzpicture}[>=stealth, every node/.style={font=\footnotesize}]
+    \node[draw, rounded corners, align=center, inner sep=4pt] (a) at (0,1.7) {geometric series\\$(I - A)^{-1} = \sum A^n$};
+    \node[draw, rounded corners, align=center, inner sep=4pt] (d) at (5.2,1.7) {$|\lambda| > \|M\|$ lies in $\rho(M)$:\\$\sigma(M)$ bounded};
+    \node[draw, rounded corners, align=center, inner sep=4pt] (b) at (0,0) {$K - A$ invertible\\for $\|A\| < 1/\|K^{-1}\|$};
+    \node[draw, rounded corners, align=center, inner sep=4pt] (c) at (5.2,0) {$\rho(M)$ open:\\$\sigma(M)$ closed};
+    \node[draw, rounded corners, align=center, inner sep=4pt] (g) at (0,-1.7) {first resolvent\\identity};
+    \node[draw, rounded corners, align=center, inner sep=4pt] (e) at (5.2,-1.7) {resolvent analytic\\on $\rho(M)$};
+    \node[draw, thick, rounded corners, align=center, inner sep=4pt] (f) at (10.6,0) {$\sigma(M)$ nonempty,\\closed and bounded};
+    \draw[->, thick] (a) -- (d);
+    \draw[->, thick] (a) -- (b);
+    \draw[->, thick] (b) -- (c);
+    \draw[->, thick] (c) -- (e);
+    \draw[->, thick] (g) -- (e);
+    \draw[->, thick] (c) -- (f);
+    \draw[->, thick] (d.east) -- (f);
+    \draw[->, thick] (e.east) -- node[below right, red!70!black] {Liouville} (f);
+\end{tikzpicture}
+\end{center}
+The results of this section and how they depend on one another. Everything rests on the geometric series; complex analysis enters only at the arrow marked Liouville, which also uses the bound from the top row. (Not from lecture; figure added.)
+
+\begin{rembox}[Where Each Hypothesis Enters]\label{rem:spectrum-hypotheses}
+\emph{Complex scalars} are essential: the proof rests on Liouville's theorem, and over $\mathbb{R}$ the statement is false. The rotation of $\mathbb{R}^2$ by a right angle has no real $\lambda$ for which $\lambda I - M$ fails to be invertible (Example~\ref{ex:spectrum-matrix}). \emph{$X \neq \{0\}$} is needed in the last step: on $X = \{0\}$ every $\lambda I - M$ is invertible, and the spectrum is empty. \emph{Completeness} enters through the geometric series, which converges because $\mathcal{L}(X, X)$ is complete. The theorem is the infinite-dimensional form of ``every complex square matrix has an eigenvalue'', with the difference that a point of the spectrum need not be an eigenvalue (Examples~\ref{ex:mult-C} and~\ref{ex:mult-L2}). In those two examples $\|M\| = 1$ and $\sigma(M) = [0,1]$, in agreement with $\sigma(M) \subset \{ |\lambda| \le \|M\| \}$.
+\end{rembox}
+
+\begin{rembox}[The Pattern of the Proof]\label{rem:spectrum-pattern}
+The proof that $\sigma(M) \neq \varnothing$ applies a theorem of scalar complex analysis to a function with values in a Banach space, in three moves: apply an arbitrary functional $\ell$; use the scalar theorem, here Liouville's, for $\ell\bigl( (zI - M)^{-1} \bigr)$; return to the operators with the Hahn--Banach theorem, in the form that functionals separate points. Dunford's theorem (Theorem~\ref{thm:dunford}) was proved in the same way, with Cauchy's integral formula as the scalar theorem. Lax argues differently: he expands the resolvent in the series $\sum_n M^n \zeta^{-n-1}$ for $|\zeta| > \|M\|$ and integrates it around a large circle; if the spectrum were empty, the integral would vanish by the Cauchy integral theorem for analytic functions with values in a Banach space, while the series gives the value $I$. He attributes the nonemptiness of the spectrum to A.~E.~Taylor, and the theorem as a whole to Gelfand.
 \end{rembox}
 %% <<< END ADDED
 
@@ -13274,6 +13715,35 @@ To show that the range of an operator such as $f \mapsto (\lambda_0 - t) f$ is d
 \end{itemize}
 \end{exbox}
 
+% --------------------------------------------------------------------------
+\subsection{Technique 35: Perturb an Invertible Operator}
+
+\begin{rembox}[Strategy]\label{rem:tech35}
+To invert an operator close to an invertible one, factor out the invertible part and sum a geometric series: $K - A = K(I - K^{-1}A)$, and $(I - B)^{-1} = \sum_n B^n$ when $\|B\| < 1$. The series converges because $\mathcal{L}(X, X)$ is complete, and it comes with the bound $\|(K - A)^{-1}\| \le \|K^{-1}\| / (1 - \|K^{-1}\|\, \|A\|)$. Typical choices: $K = \lambda_0 I - M$ and $A = (\lambda_0 - \lambda) I$ for $\lambda$ near $\lambda_0$; $K = \lambda I$ and $A = M$ for large $|\lambda|$.
+\end{rembox}
+
+\begin{exbox}[Applications (Lecture 22)]\boxlabel{ex:tech35}
+\begin{itemize}
+\item $\rho(M)$ is open and contains $|\lambda| > \|M\|$ (Proposition~\ref{prop:resolvent-open}).
+\item The local bound $\|(zI - M)^{-1}\| < 2\, \|(\lambda_0 I - M)^{-1}\|$ in the proof that the resolvent is analytic (Proposition~\ref{prop:resolvent-analytic}).
+\item The decay $\|(zI - M)^{-1}\| \le 1 / (|z| - \|M\|)$ used for Liouville's theorem (Theorem~\ref{thm:spectrum-compact}).
+\end{itemize}
+\end{exbox}
+
+% --------------------------------------------------------------------------
+\subsection{Technique 36: Scalar Complex Analysis Through Functionals}
+
+\begin{rembox}[Strategy]\label{rem:tech36}
+To apply a theorem of complex analysis (Cauchy's formula, Liouville's theorem) to an analytic function $F(z)$ with values in a Banach space, apply an arbitrary $\ell$ in the dual, use the theorem for the scalar function $\ell(F(z))$, and return to $F$ with Hahn--Banach: if $\ell(x) = 0$ for all $\ell$, then $x = 0$.
+\end{rembox}
+
+\begin{exbox}[Applications (Lectures 21--22)]\boxlabel{ex:tech36}
+\begin{itemize}
+\item $\sigma(M) \neq \varnothing$ (Lecture 22, Theorem~\ref{thm:spectrum-compact}): Liouville's theorem for $\ell\bigl( (zI - M)^{-1} \bigr)$, then Corollary~\ref{cor:separate-points}.
+\item Dunford's theorem (Lecture 21, Theorem~\ref{thm:dunford}): Cauchy's integral formula for $\ell(f(z))$; there the return to vectors is the uniform boundedness principle.
+\end{itemize}
+\end{exbox}
+
 
 % ============================================================================
 % CONCORDANCE WITH LAX
@@ -13365,7 +13835,8 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:op-convergence} Convergence of operators & \S15.2; \S15.3, Cor~7$'$ & Lax defines the uniform, strong and weak topologies of $\mathcal{L}(X, U)$ and the corresponding sequential convergence; the boundedness of weakly convergent sequences is Cor~7$'$. The shift examples are not in Lax, whose example in \S15.2 is $M_n x = (a_n, 0, 0, \ldots)$. \\
 \ref{sec:transpose} The transpose & \S15.1, (7)--(8), Thm~5; \S15.2, Exercise~6 and the example after the definitions; \S15.4, Thm~8 & Lax defines the transpose for normed spaces by $\ell(Mx) = (M'\ell)(x)$ and proves Thm~5 (i)--(iv) as in Proposition~\ref{prop:transpose-props} and Theorem~\ref{thm:kernel-range}; ${}^\perp S$ and its closedness are stated before Thm~5. The weak convergence of transposes is his Exercise~6, for reflexive $X$; the converse, which needs no reflexivity, and the closure of the range, $\overline{R(M)} = {}^\perp N(M')$, are not stated there. The example $A_n a = (a_n, 0, 0, \ldots)$ is Lax's. Composition and $(NM)' = M'N'$: \S15.4, Thm~8. Hilbert--Schmidt operators are not in Lax's Chapter 15. \\
 \ref{sec:analytic} Weak and strong analyticity & \S11.4, Thm~4 & Lax's two definitions and Dunford's theorem, with the same proof: Cauchy's integral formula for $\ell(f)$, the second difference quotient $x_{h,k}$ (his (17)), the principle of uniform boundedness. Lax takes any rectifiable curve around the point and leaves the constant unnamed; the lecture takes a circle of radius $r_0$ and $|h|, |k| < \frac{r_0}{2}$. \\
-\ref{sec:spectrum} The resolvent and the spectrum & \S17.1 (definition after Thm~2, Thms~3--4); \S20.1; \S32.1, \S32.3 & Lax defines the resolvent set and the spectrum for an element of a Banach algebra (\S17.1), with $\lambda I - M$ as in the lecture; for maps, invertible means one-to-one and onto, and the inverse is bounded (\S20.1, opening). For unbounded operators the same definition appears in \S32.1 (before Thm~5) and \S32.3, for self-adjoint operators in a Hilbert space. Lax does not divide the spectrum into point, continuous and residual parts (\S20.1 only distinguishes ``not one-to-one'' from ``not onto''); his \S31.4 uses the words for a different decomposition. The two multiplication examples are the lecture's; Lax's examples are shifts, Volterra operators and the Fourier transform (\S20.2--20.4). Not yet covered in the lecture: the resolvent set is open, the resolvent is analytic, and the spectrum is closed, bounded and nonempty (\S17.1, Thms~3--4). \\
+\ref{sec:spectrum} The resolvent and the spectrum & \S17.1 (definition after Thm~2, Thms~3--4); \S20.1; \S32.1, \S32.3 & Lax defines the resolvent set and the spectrum for an element of a Banach algebra (\S17.1), with $\lambda I - M$ as in the lecture; for maps, invertible means one-to-one and onto, and the inverse is bounded (\S20.1, opening). For unbounded operators the same definition appears in \S32.1 (before Thm~5) and \S32.3, for self-adjoint operators in a Hilbert space. Lax does not divide the spectrum into point, continuous and residual parts (\S20.1 only distinguishes ``not one-to-one'' from ``not onto''); his \S31.4 uses the words for a different decomposition. The two multiplication examples are the lecture's; Lax's examples are shifts, Volterra operators and the Fourier transform (\S20.2--20.4). \\
+\ref{sec:spectral-theory} Elementary spectral theory & \S17.1, (4)--(5), Thms~1--4, Cor~3$'$; \S17.2, (24); \S20.2 & Lax proves these results for the elements of a Banach algebra with unit, with ``invertible'' meaning a two-sided inverse in the algebra: left and right inverses and Thm~1 (products, commuting factors), Thm~2 (perturbation of an invertible element by the geometric series, the lecture's lemma), Thm~3 (the resolvent set is open, the resolvent is analytic, there by its power series), Cor~3$'$ (the resolvent is at least the reciprocal of the distance to the spectrum), Thm~4(i) (the spectrum is closed, bounded and nonempty). The lecture proves analyticity from the first resolvent identity (Lax \S17.2, (24)) and nonemptiness by Liouville's theorem applied to $\ell\bigl( (zI - M)^{-1} \bigr)$; Lax integrates the Laurent series at $\infty$. The shifts as one-sided inverses are Lax's \S20.2. Not covered: the spectral radius formula (Thm~4(ii)). \\
 Chapter~\ref{ch:qm} (companion) & --- & Dual spaces return in Lax Ch.~8. \\
 \end{longtable}
 }
@@ -13543,11 +14014,21 @@ Ch.~12, Thm~3 & Theorem~\ref{thm:alaoglu} & Alaoglu's Theorem \\
 \S15.5, end (sets of second category, Thm~16) & Definition~\ref{def:second-category} & Set of the Second Category \\
 \S15.5, Thm~16 and Exercise~13 (there $Y$ is a Banach space, and the conclusion is $R(M) = Y$) & Theorem~\ref{thm:open-mapping-general} & Open Mapping Theorem, General Form \\
 \S16.1, Thm~1(i); \S16.3.1 & Example~\ref{ex:fourier-L1} & The Fourier Transform from $L^1$ to $L^\infty$ \\
+\S17.1, (4) & Definition~\ref{def:left-inverse} & Left Inverse \\
+\S17.1, (4) & Definition~\ref{def:right-inverse} & Right Inverse \\
+\S17.1, (5) and Thm~1 & Lemma~\ref{lem:inverses} & Inverses, Products and Commuting Factors \\
 \S17.1, definition after Thm~2 (for an element of a Banach algebra); \S20.1, opening paragraph; \S32.1, definition before Thm~5 (unbounded operators in a Hilbert space) & Definition~\ref{def:resolvent-set} & Resolvent Set \\
 \S17.1, definition after Thm~2; \S32.3 (unbounded operators) & Definition~\ref{def:spectrum} & Spectrum \\
+\S17.1, (9)--(9$'$), in the proof of Thm~2 & Lemma~\ref{lem:neumann-series} & The Neumann Series \\
+\S17.1, Thm~2 & Lemma~\ref{lem:perturb-invertible} & Perturbation of an Invertible Operator \\
 \S17.1, Thm~3(ii) & Definition~\ref{def:resolvent} & Resolvent \\
+\S17.1, Thm~3(i) and Cor~3$'$; part (1) is in the proof of Thm~4 & Proposition~\ref{prop:resolvent-open} & The Resolvent Set is Open and Contains $|\lambda| > \|M\|$ \\
+\S17.1, Thm~3(ii) & Proposition~\ref{prop:resolvent-analytic} & The Resolvent is Analytic \\
+\S17.1, Thm~4(i) (there by the Laurent series of the resolvent at $\infty$ and the Cauchy integral theorem) & Theorem~\ref{thm:spectrum-compact} & The Spectrum is Nonempty, Closed and Bounded \\
+\S17.2, (24) & Lemma~\ref{lem:resolvent-identity} & The First Resolvent Identity \\
 \S20.1, opening paragraph (for $M \in \mathcal{L}(X, X)$) & Proposition~\ref{prop:resolvent-bounded} & The Inverse of $\lambda I - M$ is Bounded \\
 \S20.1, after Corollary~1 of Thm~3 & Definition~\ref{def:eigenvalue} & Eigenvalue and Eigenvector \\
+\S20.2, (11) and the lines after it & Example~\ref{ex:shifts-one-sided} & The Shifts on $\ell^2$ Have Only One-Sided Inverses \\
 \S34.3, Thm~8 (Lax's equivalence theorem, for difference approximations of a semigroup) & Theorem~\ref{thm:lax-equivalence} & Lax Equivalence Theorem \\
 cf.\ \S7.2, before (22) & Proposition~\ref{prop:sym-lax-milgram} & Symmetric Lax--Milgram is Riesz \\
 cf.\ Ch.~31, Thm~1 (symmetric forms); \S6.3, (20) & Theorem~\ref{thm:form-operator} & Bounded Sesquilinear Forms are Bounded Operators \\

@@ -326,7 +326,7 @@ So $\mathfrak{g}$ is a Lie subalgebra of the infinite-dimensional Lie algebra of
 > \mathbf{X}^v_g = d(L_g)_e(v) \in T_gG, \qquad g \in G :
 > $$
 >
-> the vector $v$ carried from $e$ to $g$ by the differential of the left translation $L_g$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|§60.2]]). It is a *rough* vector field (Lee's term), a tangent vector at every point, not yet known to be smooth.
+> the vector $v$ carried from $e$ to $g$ by the differential of the left translation $L_g$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|§60.2]]). It is a rough vector field, that is, a rough section of $TG$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]): a tangent vector at every point, not yet known to be smooth.
 >
 > *Lee: proof of Theorem 8.37*
 
@@ -378,7 +378,7 @@ As with vector fields on a vector space (Proposition [[§30 The Differential in 
 ^prop-60-8
 
 > [!proof]+ Proof
-> *(Lecture 18, completing the proof of Lecture 17.)* Lecture 17 stopped here: what was missing is that $\mathbf{X}^v$ is $C^\infty$, an important technical point for which the tools were not yet available. Lecture 18 finished it with the partial derivative construction (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]]). So far $\mathbf{X}^v$ is a left-invariant *rough* field (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](1) and (2)), Lee's term for a section not yet known to be smooth; the piece of the construction not yet justified is its smoothness.
+> *(Lecture 18, completing the proof of Lecture 17.)* Lecture 17 stopped here: what was missing is that $\mathbf{X}^v$ is $C^\infty$, an important technical point for which the tools were not yet available. Lecture 18 finished it with the partial derivative construction (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]]). So far $\mathbf{X}^v$ is a left-invariant *rough* field (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](1) and (2)), a rough section of $TG$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]), not yet known to be smooth; the piece of the construction not yet justified is its smoothness.
 >
 > *The claim.* It suffices to show that for every $f \in C^\infty(G)$ the function $\mathbf{X}^v f : g \mapsto \mathbf{X}^v_g[f]$ is smooth. This function is well defined whether or not $\mathbf{X}^v$ is smooth, because there is a vector at every point, and it can act on any function. The lecture's proof of the claim: in local coordinates $(x^1, \ldots, x^m)$, $m = \dim G$, there is still a pointwise expansion $\mathbf{X}^v = \sum_j a^j\, \partial/\partial x^j$, and $\mathbf{X}^v$ is smooth exactly when the $a^j$ are (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]); and $a^j$ is precisely the action of $\mathbf{X}^v$ on the coordinate $x^j$. This is Lemma [[§56 Vector Fields#^lem-56-11|§56.11]], whose proof also handles the point that $x^j$ is defined only on the chart, by extending it with a bump function.
 >
@@ -404,7 +404,7 @@ As with vector fields on a vector space (Proposition [[§30 The Differential in 
 
 ^pf-60-8
 
-*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|Def. §31.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-11|§56.11]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-10|§31.10]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|Def. §60.4]]
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|Def. §31.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-11|§56.11]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-10|§31.10]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|Def. §60.4]], [[§45 Fibrations#^def-45-5|Def. §45.5]]
 
 > [!theorem] Theorem §60.9: The Lie Algebra Is the Tangent Space at the Identity
 > Let $G$ be a [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]] with identity $e$. The evaluation map

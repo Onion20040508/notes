@@ -1,0 +1,37 @@
+% Figure for Relativity §C8.4, Def. §C8.4.1-§C8.4.2 and Theorem §C8.4.2: background and ripple, and what an average over l keeps.
+% Model curve (illustration, units arbitrary): g(z) = gbar(z) + h(z), gbar = 1 + 0.3 sin(z/LB), h = a cos(z/lb), a = 0.08,
+% lb (reduced wavelength) = 0.05, LB = 2, averaging window: box of width l = 1.5 centred at z.
+% Running box averages computed in closed form: <cos(z/lb)> = (2 lb/l) sin(l/(2 lb)) cos(z/lb),
+% <cos^2(z/lb)> = 1/2 + (lb/(2l)) sin(l/lb) cos(2z/lb); <gbar> = 1 + 0.3 (2 LB/l) sin(l/(2 LB)) sin(z/LB).
+\begin{tikzpicture}
+\pgfmathsetmacro{\lb}{0.05}\pgfmathsetmacro{\LB}{2}\pgfmathsetmacro{\ll}{1.5}\pgfmathsetmacro{\aa}{0.08}
+\begin{axis}[nfig, name=top, width=12cm, height=4.4cm, xmin=0, xmax=12, ymin=0.55, ymax=1.62, axis x line=bottom,
+  xtick=\empty, ytick=\empty, xlabel={}, ylabel={metric component}, ylabel style={font=\scriptsize},
+  title={\small (a) $g_{xx}(z) = \bar g_{xx}(z) + h_{xx}(z)$: a ripple on a slowly varying background}, title style={yshift=-4pt}]
+  \fill[figO!14] (axis cs:5.25,0.55) rectangle (axis cs:6.75,1.62);
+  \addplot[black!80, line width=0.5pt, samples=2400, domain=0:12] {1 + 0.3*sin(deg(x/\LB)) + \aa*cos(deg(x/\lb))};
+  \addplot[figB, line width=1.3pt, samples=200, domain=0:12] {1 + 0.3*sin(deg(x/\LB))};
+  \addplot[figR, densely dashed, line width=1.1pt, samples=200, domain=0.75:11.25] {1 + 0.3*(2*\LB/\ll)*sin(deg(\ll/(2*\LB)))*sin(deg(x/\LB))};
+  \draw[|-|, figO!80!black] (axis cs:5.25,1.5) -- node[above, font=\scriptsize] {$l$} (axis cs:6.75,1.5);
+  \draw[|-|, black] (axis cs:0.4,1.5) -- node[above, font=\scriptsize] {$2\pi\bar\lambda$} (axis cs:0.714,1.5);
+  \draw[|-|, figB] (axis cs:9.5,1.5) -- node[above, font=\scriptsize] {$L_B$} (axis cs:11.5,1.5);
+  \node[figB, font=\scriptsize, anchor=west] at (axis cs:0.3,0.78) {$\bar g_{xx}$};
+  \node[figR, font=\scriptsize, anchor=west] at (axis cs:0.3,0.62) {dashed: $\langle g_{xx}\rangle \approx \bar g_{xx}$};
+\end{axis}
+\begin{axis}[nfig, name=mid, at={(top.below south west)}, anchor=north west, yshift=-1.0cm, width=12cm, height=3.6cm,
+  xmin=0, xmax=12, ymin=-1.25, ymax=1.25, axis x line=middle, xtick=\empty, ytick={-1,1}, yticklabels={$-a$,$a$},
+  title={\small (b) a term linear in the ripple, $h_{xx} = a\cos(z/\bar\lambda)$, and its average}, title style={yshift=-4pt}]
+  \fill[figO!14] (axis cs:5.25,-1.25) rectangle (axis cs:6.75,1.25);
+  \addplot[black!80, line width=0.5pt, samples=2400, domain=0:12] {cos(deg(x/\lb))};
+  \addplot[figR, line width=1.2pt, samples=2400, domain=0.75:11.25] {(2*\lb/\ll)*sin(deg(\ll/(2*\lb)))*cos(deg(x/\lb))};
+  \node[figR, font=\scriptsize, fill=white, inner sep=1pt, anchor=west] at (axis cs:8.7,-0.9) {$\langle h_{xx}\rangle = O(\bar\lambda/l) \to 0$};
+\end{axis}
+\begin{axis}[nfig, at={(mid.below south west)}, anchor=north west, yshift=-1.0cm, width=12cm, height=3.6cm,
+  xmin=0, xmax=12, ymin=-0.1, ymax=1.25, axis x line=bottom, xtick=\empty, ytick={0,0.5,1}, yticklabels={$0$,$\tfrac12a^2$,$a^2$},
+  xlabel={$z$}, title={\small (c) a term quadratic in the ripple, $h_{xx}^2$, and its average}, title style={yshift=-4pt}]
+  \fill[figO!14] (axis cs:5.25,-0.1) rectangle (axis cs:6.75,1.25);
+  \addplot[black!80, line width=0.5pt, samples=2400, domain=0:12] {cos(deg(x/\lb))^2};
+  \addplot[figR, line width=1.2pt, samples=2400, domain=0.75:11.25] {0.5 + (\lb/(2*\ll))*sin(deg(\ll/\lb))*cos(deg(2*x/\lb))};
+  \node[figR, font=\scriptsize, fill=white, inner sep=1pt, anchor=west] at (axis cs:8.7,0.62) {$\langle h_{xx}^2\rangle = \tfrac12a^2 \neq 0$};
+\end{axis}
+\end{tikzpicture}

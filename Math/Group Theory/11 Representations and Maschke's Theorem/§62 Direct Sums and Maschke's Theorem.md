@@ -404,7 +404,7 @@ Neither hypothesis of Maschke's theorem can be dropped: one shear matrix gives a
 > [!example] Example §62.4: Maschke Fails When $|G| = 0$ in $k$
 > Let $p$ be prime, $G = \mathbb{Z}/p\mathbb{Z}$ and $\mathbb{F} = \mathbb{Z}/p\mathbb{Z}$, and define $\rho: G \to GL_2(\mathbb{F})$ by the same matrices $\rho(x) = \left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)$, now with $x \in \mathbb{F}$; the product rule above shows again that $\rho$ is a homomorphism. Then $\mathbb{F}e_1$ is a subrepresentation of $\mathbb{F}^2$, but there is no subrepresentation $V$ with $\mathbb{F}^2 = \mathbb{F}e_1 \oplus V$. Here $G$ is finite, but $|G| = p = 0$ in $\mathbb{F}$.
 >
-> *Source: PS 9.4(2)*
+> *Source: PS 9.4(2); recalled at the end of the lecture of 11/20 ([[§72 Representations of Cyclic Groups|§72]])*
 
 ^ex-62-4
 

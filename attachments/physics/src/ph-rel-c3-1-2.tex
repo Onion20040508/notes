@@ -1,0 +1,21 @@
+% Figure for Relativity §C3.1 (Def. §C3.1.6, Example §C3.1.1): the coordinate basis ∂r, ∂θ of polar coordinates
+% (|∂θ| = r by the metric dr² + r²dθ²) against the orthonormal frame r̂ = ∂r, θ̂ = ∂θ / r, at r = 1, 2, 3 on the ray θ = 40°.
+% All arrows drawn at 0.6 of their true length (same scale for every arrow).
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small, scale=1.15]
+\def\s{0.6}
+\draw[->, black!55] (-0.3,0) -- (3.9,0) node[right] {$x$};
+\draw[->, black!55] (0,-0.3) -- (0,3.6) node[above] {$y$};
+\foreach \r in {1,2,3} { \draw[black!25, dotted, thick] (0:\r) arc (0:95:\r); \node[black!55, font=\scriptsize, below] at (\r,0) {$r = \r$}; }
+\draw[black!35, dashed] (0,0) -- (40:3.55);
+\draw[black!45] (0.7,0) arc (0:40:0.7); \node[font=\scriptsize, black!60] at (20:0.95) {$\theta$};
+\foreach \r in {1,2,3} {
+  \coordinate (P) at (40:\r);
+  \draw[->, figB, thick] (P) -- ++(40:\s);
+  \draw[->, figR, very thick] (P) -- ++(130:{\r*\s});
+  \draw[->, figO, thick] ($(P)+(220:0.13)$) -- ++(130:\s);
+  \fill (P) circle (1.4pt);
+}
+\node[figB, font=\scriptsize, anchor=west] at ($(40:3)+(40:0.62)$) {$\partial_r = \hat r$, length $1$};
+\node[figR, font=\scriptsize, anchor=east] at ($(40:3)+(130:1.8)$) {$\partial_\theta$, length $r$};
+\node[figO, font=\scriptsize, anchor=north east] at ($(40:1)+(220:0.13)+(130:0.62)+(0,-0.05)$) {$\hat\theta = \partial_\theta/r$, length $1$};
+\end{tikzpicture}

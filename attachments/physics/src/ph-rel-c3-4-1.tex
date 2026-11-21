@@ -1,0 +1,43 @@
+% Figure for Relativity §C3.4 (the flat connection of the plane in polar coordinates: how the coordinate basis vectors turn along a circle r = 2. Points p (theta = 20 deg) and q (theta = 50 deg), delta theta = 30 deg exaggerated. Left: d/dr (unit) at p and q; d/dr at q carried back to p by parallel translation of the plane (dashed); the difference (green) has length 2 sin(15 deg) * 1 = 0.518 (in units of |d/dr|) against the first-order value delta theta = 0.524, and points along d/dtheta: nabla_theta d/dr = (1/r) d/dtheta. Right: d/dtheta (drawn at 0.3/0.35 of the scale of the left panel; length r = 2) at p and q, the translate of the one at q, the difference (green) points toward the centre, length 2 sin(15 deg) * |d/dtheta| = 0.518 |d/dtheta| against delta theta |d/dtheta| = 0.524 |d/dtheta|, i.e. delta theta * r in units of |d/dr|: nabla_theta d/dtheta = -r d/dr.)
+\begin{tikzpicture}[>={Stealth[length=2.2mm]}, font=\small, x=1.15cm, y=1.15cm]
+  \def\s{0.7}
+  % ---------- left panel: d/dr ----------
+  \begin{scope}
+    \draw[black!20] (-5:2) arc (-5:95:2);
+    \draw[black!15] (0,0) -- (20:3.0); \draw[black!15] (0,0) -- (50:3.0);
+    \draw[->, black!55] (-0.4,0) -- (3.4,0) node[right] {$x$};
+    \draw[->, black!55] (0,-0.4) -- (0,3.1) node[above] {$y$};
+    \fill (0,0) circle (1.2pt) node[below left, inner sep=1.5pt, font=\scriptsize] {$O$};
+    \draw[black!40] (0.9,0) arc (0:20:0.9); \node[font=\scriptsize, black!60] at (10:1.12) {$\theta$};
+    \coordinate (p) at (20:2); \coordinate (q) at (50:2);
+    \draw[->, figB, very thick] (p) -- ++(20:\s) coordinate (pr);
+    \draw[->, figB, very thick] (q) -- ++(50:\s) coordinate (qr);
+    \draw[->, figB, densely dashed, thick] (p) -- ++(50:\s) coordinate (tr);
+    \draw[->, figG, very thick] (pr) -- (tr);
+    \fill (p) circle (1.6pt) node[below right, inner sep=2pt] {$p$};
+    \fill (q) circle (1.6pt) node[left, inner sep=3pt] {$q$};
+    \node[figB, anchor=north west, font=\scriptsize, inner sep=1pt] at (pr) {$\partial_r|_p$};
+    \node[figB, anchor=south west, font=\scriptsize, inner sep=1pt] at (qr) {$\partial_r|_q$};
+    \node[figG, anchor=south west, font=\scriptsize, inner sep=1pt] at ($(pr)!0.5!(tr)+(0.08,0.02)$) {$\approx\delta\theta\,\tfrac1r\partial_\theta$};
+    \node[font=\small, align=center] at (1.5,-0.95) {$\nabla_{\partial_\theta}\partial_r = \tfrac1r\,\partial_\theta$:\ \ $\Gamma^\theta_{\theta r} = \tfrac1r$};
+  \end{scope}
+  % ---------- right panel: d/dtheta ----------
+  \begin{scope}[xshift=6.3cm]
+    \draw[black!20] (-5:2) arc (-5:95:2);
+    \draw[black!15] (0,0) -- (20:3.0); \draw[black!15] (0,0) -- (50:3.0);
+    \draw[->, black!55] (-0.4,0) -- (3.4,0) node[right] {$x$};
+    \draw[->, black!55] (0,-0.4) -- (0,3.1) node[above] {$y$};
+    \fill (0,0) circle (1.2pt) node[below left, inner sep=1.5pt, font=\scriptsize] {$O$};
+    \coordinate (p) at (20:2); \coordinate (q) at (50:2);
+    \draw[->, figR, very thick] (p) -- ++(110:{2*0.3}) coordinate (pt);
+    \draw[->, figR, very thick] (q) -- ++(140:{2*0.3}) coordinate (qt);
+    \draw[->, figR, densely dashed, thick] (p) -- ++(140:{2*0.3}) coordinate (tt);
+    \draw[->, figG, very thick] (pt) -- (tt);
+    \fill (p) circle (1.6pt) node[below right, inner sep=2pt] {$p$};
+    \fill (q) circle (1.6pt) node[above right, inner sep=2pt] {$q$};
+    \node[figR, anchor=west, font=\scriptsize, inner sep=2pt] at (pt) {$\partial_\theta|_p$};
+    \node[figR, anchor=south, font=\scriptsize, inner sep=2pt] at (qt) {$\partial_\theta|_q$};
+    \node[figG, anchor=north east, font=\scriptsize, inner sep=1pt] at ($(tt)+(0.05,-0.05)$) {$\approx\delta\theta\,(-r\,\partial_r)$};
+    \node[font=\small, align=center] at (1.5,-0.95) {$\nabla_{\partial_\theta}\partial_\theta = -r\,\partial_r$:\ \ $\Gamma^r_{\theta\theta} = -r$};
+  \end{scope}
+\end{tikzpicture}

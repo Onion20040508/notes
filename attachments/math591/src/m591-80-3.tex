@@ -1,0 +1,21 @@
+% Figure from MATH 591 notes §83 (Lecture 33, 2026-11-20; not from lecture): from the user's delivery math591_lecture33_2026-11-20.tex
+\begin{tikzpicture}[>=Stealth, xscale=0.36, yscale=0.55]
+\draw[->, gray!70] (0,0) -- (13.3,0) node[right, font=\scriptsize] {$t$};
+\draw[->, gray!70] (0,-1.5) -- (0,4.4);
+\foreach \k/\lab in {6.2832/2\pi, 12.5664/4\pi} { \draw[gray!60] (\k,-0.12) -- (\k,0.12); \node[font=\scriptsize, below] at (\k,-0.12) {$\lab$}; }
+\draw[thick, orange!80!black, domain=0:12.5664, samples=120, smooth] plot (\x, {1 + cos(\x r)});
+\draw[thick, blue!70!black, domain=0:12.5664, samples=120, smooth] plot (\x, {0.3*(\x + sin(\x r))});
+\node[font=\scriptsize, orange!80!black, anchor=west] at (0.4,2.6) {$F = 1 + \cos t$};
+\node[font=\scriptsize, blue!70!black, anchor=west] at (8.6,4.1) {$G = \int_0^t F$ (scaled)};
+\node[font=\scriptsize, align=center] at (6.6,-2.6) {$\int_0^{2\pi} F = 2\pi$: $G$ gains $2\pi$ per turn,\\ not periodic};
+\begin{scope}[xshift=17cm]
+\draw[->, gray!70] (0,0) -- (13.3,0) node[right, font=\scriptsize] {$t$};
+\draw[->, gray!70] (0,-1.5) -- (0,4.4);
+\foreach \k/\lab in {6.2832/2\pi, 12.5664/4\pi} { \draw[gray!60] (\k,-0.12) -- (\k,0.12); \node[font=\scriptsize, below] at (\k,-0.12) {$\lab$}; }
+\draw[thick, orange!80!black, domain=0:12.5664, samples=120, smooth] plot (\x, {cos(\x r)});
+\draw[thick, blue!70!black, domain=0:12.5664, samples=120, smooth] plot (\x, {sin(\x r)});
+\node[font=\scriptsize, orange!80!black, anchor=west] at (0.4,1.75) {$F = \cos t$};
+\node[font=\scriptsize, blue!70!black, anchor=west] at (5.4,1.75) {$G = \sin t$};
+\node[font=\scriptsize, align=center] at (6.6,-2.6) {$\int_0^{2\pi} F = 0$: $G$ is periodic,\\ a function on $S^1$};
+\end{scope}
+\end{tikzpicture}

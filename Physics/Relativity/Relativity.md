@@ -2,14 +2,14 @@
 type: subject
 discipline: physics
 courses: ["PHY 284 (UMass, S. Hertel, Spring 2024)", "PHY 505 (UMich, J. Wells, Fall 2025) — special-relativity part", "PHY 408 (Stony Brook, Spring 2025; audit)", "PHY 360 GR (Smith, Spring 2024; audit)"]
-textbooks: ["OpenStax, University Physics Vol. 3", "Tipler & Llewellyn, Modern Physics", "Morin, Special Relativity for the Enthusiastic Beginner", "Morin, Introduction to Classical Mechanics (ch. 11–14)", "Schutz, A First Course in General Relativity", "Griffiths, Introduction to Electrodynamics (ch. 12)", "Hartle, Gravity", "Couzens, GR lecture notes"]
+textbooks: ["OpenStax, University Physics Vol. 3", "Tipler & Llewellyn, Modern Physics", "Morin, Special Relativity for the Enthusiastic Beginner", "Morin, Introduction to Classical Mechanics (ch. 11–14)", "Schutz, A First Course in General Relativity", "Griffiths, Introduction to Electrodynamics (ch. 12)", "Hartle, Gravity", "Couzens, C7.5–C7.6 General Relativity 1–2 (Oxford lecture notes)", "d'Inverno & Vickers, Introducing Einstein's Relativity", "'t Hooft, Introduction to General Relativity"]
 conventions: "[[University Physics]]"
-status: levels A and B done
+status: "levels A and B done; level C (general relativity, self-study) in progress"
 tags: [subject, relativity]
 ---
 # Relativity
 
-Special relativity from Einstein's postulates, then its covariant (tensor) form, then general relativity, in three levels: **A** introductory (University Physics Vol. 3 ch. 5; Tipler & Llewellyn ch. 1–2; Morin; PHY 284), **B** upper-level: special relativity in covariant form (the user's own PHY 505 notes and lecture-notes series Part III; PHY 505; Morin, Schutz and Griffiths ch. 12 as supplements), **C** graduate: general relativity (not yet taken as a course; the PHY 408 and PHY 360 folders are audit material). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). Level B uses the signature η = diag(+1, −1, −1, −1) and keeps c explicit. Newtonian mechanics is in [[Classical Mechanics]], electromagnetism in [[Electromagnetism]]; the covariant formulation of electrodynamics proper (Maxwell from a Lagrangian, the field energy–momentum tensor) is Electromagnetism level C, and §B4.2 here applies the tensor machinery to the field tensor.
+Special relativity from Einstein's postulates, then its covariant (tensor) form, then general relativity, in three levels: **A** introductory (University Physics Vol. 3 ch. 5; Tipler & Llewellyn ch. 1–2; Morin; PHY 284), **B** upper-level: special relativity in covariant form (the user's own PHY 505 notes and lecture-notes series Part III; PHY 505; Morin, Schutz and Griffiths ch. 12 as supplements), **C★** graduate: general relativity, self-study (no GR course taken; spine Couzens' Oxford lecture notes GR1–GR2, textbooks d'Inverno & Vickers — the textbook of UMich PHYSICS 435/535, whose syllabus serves as a scope reference — Hartle, Schutz and 't Hooft; typed PHY 360 homework as examples). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). Level B uses the signature η = diag(+1, −1, −1, −1) and keeps c explicit; level C uses η = diag(−1, 1, 1, 1) and geometric units G = c = 1, with the dictionary in §C1.2 and the register [[General Relativity Conventions]]. Newtonian mechanics is in [[Classical Mechanics]], electromagnetism in [[Electromagnetism]]; the covariant formulation of electrodynamics proper (Maxwell from a Lagrangian, the field energy–momentum tensor) is Electromagnetism level C, and §B4.2 here applies the tensor machinery to the field tensor.
 
 ## Level A — introductory
 - [[· A1 Postulates and the Lorentz Transformation]]
@@ -21,6 +21,20 @@ Special relativity from Einstein's postulates, then its covariant (tensor) form,
 - [[· B2 Four-Vectors and Tensors]]
 - [[· B3 Relativistic Dynamics from an Action]]
 - [[· B4 Fields in Special Relativity]]
+
+## Level C★ — general relativity (self-study)
+- [[· C1 From Special Relativity to Gravity]]
+- [[· C2 Manifolds and Tensor Fields]]
+- [[· C3 Metric, Connection and Curvature]]
+- [[· C4 Matter in Curved Spacetime]]
+- [[· C5 Einstein's Equations]]
+- [[· C6 The Schwarzschild Solution and the Classical Tests]]
+- [[· C7 Schwarzschild as a Black Hole]]
+- [[· C8 Linearised Gravity and Gravitational Waves]]
+- [[· C9 Relativistic Stars and Collapse]]
+- [[· C10 Causal Structure and Penrose Diagrams]]
+- [[· C11 Charged Black Holes]]
+- [[· C12 Rotating Black Holes]]
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -34,6 +48,18 @@ graph TD
   B2["B2 Four-Vectors and Tensors"]
   B3["B3 Relativistic Dynamics from an Action"]
   B4["B4 Fields in Special Relativity"]
+  C1["C1 From Special Relativity to Gravity"]
+  C2["C2 Manifolds and Tensor Fields"]
+  C3["C3 Metric, Connection and Curvature"]
+  C4["C4 Matter in Curved Spacetime"]
+  C5["C5 Einstein's Equations"]
+  C6["C6 The Schwarzschild Solution and the Classical Tests"]
+  C7["C7 Schwarzschild as a Black Hole"]
+  C8["C8 Linearised Gravity and Gravitational Waves"]
+  C9["C9 Relativistic Stars and Collapse"]
+  C10["C10 Causal Structure and Penrose Diagrams"]
+  C11["C11 Charged Black Holes"]
+  C12["C12 Rotating Black Holes"]
   A1 -->|21| A2
   A1 -->|2| A3
   A2 -->|13| A3
@@ -54,18 +80,154 @@ graph TD
   B1 -->|5| B4
   B2 -->|18| B4
   B3 -->|2| B4
+  A1 -->|7| C1
+  A2 -->|12| C1
+  A3 -->|5| C1
+  B1 -->|15| C1
+  B2 -->|20| C1
+  B3 -->|11| C1
+  B4 -->|13| C1
+  B1 -->|1| C10
+  B3 -->|2| C10
+  C1 -->|9| C10
+  C2 -->|8| C10
+  C3 -->|153| C10
+  C4 -->|20| C10
+  C5 -->|12| C10
+  C6 -->|21| C10
+  C7 -->|99| C10
+  C9 -->|1| C10
+  C1 -->|3| C11
+  C10 -->|27| C11
+  C2 -->|32| C11
+  C3 -->|49| C11
+  C4 -->|23| C11
+  C5 -->|16| C11
+  C6 -->|30| C11
+  C7 -->|29| C11
+  C9 -->|9| C11
+  B2 -->|4| C12
+  C1 -->|5| C12
+  C10 -->|31| C12
+  C11 -->|38| C12
+  C2 -->|14| C12
+  C3 -->|60| C12
+  C4 -->|2| C12
+  C5 -->|4| C12
+  C6 -->|8| C12
+  C7 -->|8| C12
+  C8 -->|6| C12
+  C9 -->|9| C12
+  B1 -->|9| C2
+  B2 -->|12| C2
+  C1 -->|2| C2
+  B1 -->|12| C3
+  B3 -->|4| C3
+  C1 -->|54| C3
+  C2 -->|176| C3
+  A2 -->|4| C4
+  B2 -->|4| C4
+  B3 -->|10| C4
+  B4 -->|4| C4
+  C1 -->|38| C4
+  C2 -->|45| C4
+  C3 -->|226| C4
+  B2 -->|2| C5
+  B4 -->|1| C5
+  C1 -->|50| C5
+  C2 -->|40| C5
+  C3 -->|207| C5
+  C4 -->|111| C5
+  A2 -->|1| C6
+  B2 -->|2| C6
+  C1 -->|42| C6
+  C2 -->|5| C6
+  C3 -->|92| C6
+  C4 -->|2| C6
+  C5 -->|21| C6
+  B3 -->|1| C7
+  C1 -->|11| C7
+  C2 -->|11| C7
+  C3 -->|80| C7
+  C6 -->|54| C7
+  B1 -->|1| C8
+  B2 -->|1| C8
+  C1 -->|8| C8
+  C2 -->|8| C8
+  C3 -->|66| C8
+  C4 -->|4| C8
+  C5 -->|36| C8
+  C6 -->|6| C8
+  C7 -->|1| C8
+  C1 -->|8| C9
+  C3 -->|13| C9
+  C4 -->|22| C9
+  C5 -->|3| C9
+  C6 -->|32| C9
+  C7 -->|15| C9
+  C8 -->|2| C9
   A2 -.->|6| A1
   B2 -.->|1| A1
   B1 -.->|2| A2
   B2 -.->|2| A2
+  C1 -.->|3| A2
   B2 -.->|1| A3
   B3 -.->|1| A3
+  C1 -.->|1| B1
+  C10 -.->|2| B1
+  C2 -.->|2| B1
+  C3 -.->|1| B1
   B3 -.->|1| B2
+  C1 -.->|2| B2
+  C2 -.->|6| B2
+  C4 -.->|1| B2
   B4 -.->|3| B3
+  C2 -.->|1| B3
+  C3 -.->|2| B3
+  C7 -.->|2| B3
+  C2 -.->|1| B4
+  C3 -.->|2| B4
+  C3 -.->|6| C1
+  C4 -.->|3| C1
+  C5 -.->|3| C1
+  C6 -.->|6| C1
+  C8 -.->|1| C1
+  C11 -.->|2| C10
+  C10 -.->|2| C2
+  C3 -.->|8| C2
+  C5 -.->|2| C2
+  C7 -.->|1| C2
+  C10 -.->|2| C3
+  C11 -.->|1| C3
+  C4 -.->|7| C3
+  C5 -.->|3| C3
+  C8 -.->|1| C3
+  C10 -.->|17| C4
+  C11 -.->|2| C4
+  C5 -.->|7| C4
+  C8 -.->|2| C4
+  C9 -.->|5| C4
+  C10 -.->|2| C5
+  C11 -.->|1| C5
+  C6 -.->|1| C5
+  C7 -.->|1| C5
+  C8 -.->|6| C5
+  C9 -.->|3| C5
+  C10 -.->|1| C6
+  C11 -.->|1| C6
+  C7 -.->|6| C6
+  C8 -.->|2| C6
+  C9 -.->|2| C6
+  C10 -.->|9| C7
+  C11 -.->|1| C7
+  C8 -.->|1| C7
+  C9 -.->|1| C7
+  C9 -.->|2| C8
+  C10 -.->|4| C9
 ```
 
 ## Planned
-Chapters without notes yet; sources in brackets (∅ = no typed source).
+Chapters without notes yet; sources in brackets. Planned: 14 chapters, 78 sections.
 
-**Level C — graduate (general relativity)**
-C1 Relativistic continua: stress-energy, dust, perfect fluids [Schutz 4; PHY 408 L1 (handwritten, audit)] · C2 Equivalence principle and the weak-field metric [Schutz 5, 7; Hartle 6–7; PHY 360 slides (audit)] · C3 Geometry for GR [Couzens GR1 §3–4; Schutz 5–6; home in Differentiable Manifolds, linked] · C4 Einstein equations, Einstein–Hilbert action [GR1 §5] · C5 Schwarzschild and classical tests [GR1 §6] · C6 Linearised gravity and gravitational waves [GR2] · C7 Relativistic stars, TOV [GR2] · C8 Causal structure, Penrose diagrams, horizons, Rindler [GR2] · C9 Charged and rotating black holes [GR2] · C10 Black-hole thermodynamics, Hawking radiation [GR2; PHY 360 project] · C11 Cosmology [∅]
+**Level C★ — general relativity (self-study)**
+C13 Black-hole thermodynamics [GR2 §7] · C14 Hawking radiation and quantum fields in curved spacetime [GR2 §8–9] · C15 Cosmology [Hartle 17–19; Schutz 13; d'Inverno 24–26; 't Hooft 14 — planned only, not yet scheduled]

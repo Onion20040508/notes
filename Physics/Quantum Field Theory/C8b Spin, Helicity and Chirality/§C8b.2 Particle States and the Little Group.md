@@ -1,0 +1,579 @@
+---
+type: section
+subject: "[[Quantum Field Theory]]"
+level: C
+chapter: C8b
+section: C8b.2
+conventions: "[[Larsen PHY 513]]"
+tags: [quantum-field-theory, level-c]
+---
+← [[§C8b.1 Why Spin Must Now Be Tracked|§C8b.1]] · ↑ [[· C8b Spin, Helicity and Chirality]] · [[§C8b.3 Massless Particles and Helicity|§C8b.3]] →
+
+*Provenance: from Yu Zhao-Huan's lecture notes (§3.3–§3.3.1), the supplement of the user's PHY 513 notes (Ch. 7 §7.7) and the user's pre-course notes; not lectured in PHY 513. It is introduced here, as the foundation of the chapter, because the spin-resolved processes of Lecture 20 need it ([[§C8b.1 Why Spin Must Now Be Tracked|§C8b.1]]). Until 2026-11-18 this was the starred section §C3.6 of chapter C3.*
+
+*Sources: the user's PHY 513 notes, Ch. 7 §7.7 (Supplement "Particles as representations (Wigner's classification)": Derivations "Momentum, mass, and the little group", "Massive particles: the little group is SO(3), and the label is spin"; table of orbits; "States versus fields, once more") · Yu Zhao-Huan, 量子场论讲义, §3.3, eqs. (3.87)–(3.109); §3.3.1, eqs. (3.110)–(3.177); Exercise 3.6 · the user's pre-course notes, §2.3 (Particle states; Massive particles) · Weinberg, The Quantum Theory of Fields I, §2.5, as followed by Yu and the user's notes.*
+
+[[§C8b.1 Why Spin Must Now Be Tracked|§C8b.1]] left a question: what is the spin of a moving particle, and which label of it does every observer agree on ([[§C8b.1 Why Spin Must Now Be Tracked#^rem-c8b-1-2|§C8b.1, Remark: What is the spin of a moving particle?]])? The answer starts one step back. What is a particle, as a statement about the Poincaré group, and why does a massive particle of spin $s$ have exactly $2s + 1$ states at each momentum? (Labelling these states by helicity instead, and why that label depends on the frame: [[§C8b.3 Massless Particles and Helicity#^rem-c8b-3-2|§C8b.3, Remark: Helicity of a massive particle]].) [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]] gave the unitary operators $U(\Lambda, a)$, their generators and the Casimir $\hat P^2$ ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-9|Theorem §C3.4.9]]), and built the representation of the free scalar field explicitly ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]]); the orbits of momenta are [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], the invariant normalization [[§C2a.4 Particles and Relativistic Normalization|§C2a.4]], and the representation theory of rotations [[§C3.1 Index Slots, Rotations and Spin in Field Theory|§C3.1]] with Quantum Mechanics' rotation matrices ([[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices|QM §C5.3]]). This section adds Wigner's construction: an infinite-dimensional unitary representation is induced from a finite-dimensional one of the *little group* of a single momentum; for massive particles the little group is the rotation group and its label is the spin. In order, the section builds: the principle that one particle species is one irreducible unitary representation ([[§C8b.2 Particle States and the Little Group#^pr-c8b-2-1|Principle §C8b.2.1]]); the standard momentum $k$ and the standard transformations $V(p)$ ([[§C8b.2 Particle States and the Little Group#^def-c8b-2-1|Def. §C8b.2.1]]); the stabilizer of $k$, called the little group, and the Wigner element ([[§C8b.2 Particle States and the Little Group#^def-c8b-2-2|Def. §C8b.2.2]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-4|Theorem §C8b.2.4]]); the representation induced from the little group ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]]); the massive case, where the little group is $SO(3)$ and its label is the spin ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-8|Theorems §C8b.2.8]]–[[§C8b.2 Particle States and the Little Group#^thm-c8b-2-10|§C8b.2.10]]); and the Pauli–Lubanski vector, which states the spin covariantly ([[§C8b.2 Particle States and the Little Group#^def-c8b-2-3|Def. §C8b.2.3]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-12|Theorem §C8b.2.12]]). The elementary fact about the Lorentz group that the massive case rests on, that the transformations fixing a timelike vector are the rotations of its rest frame, is [[§C1a.4 The Lorentz Group#^thm-c1a-4-5|Theorem §C1a.4.5]]; earlier chapters use only that fact and point here for the rest. The massless case is [[§C8b.3 Massless Particles and Helicity|§C8b.3]]. The induction machinery and the facts about $SU(2)$ it uses are mathematics, proved in [[§CB.22★ The Poincaré Group and Induced Representations|§CB.22★]], [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers|§CB.10]] and [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries|§CB.21]]; they enter as one-line consequences with links (Theorems §C8b.2.5, §C8b.2.7, §C8b.2.9) and are listed at the end.
+
+**Setup.** Any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]), free or interacting. The states studied are those of one stable particle species, an irreducible subspace of the Hilbert space ([[§C8b.2 Particle States and the Little Group#^pr-c8b-2-1|Principle §C8b.2.1]]): for the free fields of C2–C5 the one-particle states $\hat a^\dagger|0\rangle$ of Fock space, with interactions the one-particle states of the full $\hat H$ ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]], assumption 2). Normalization: relativistic ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), momentum eigenstates read as kernels. The results are exact; the massive results need $m > 0$. Statements about the Lorentz group alone (the little groups) hold independently of any theory. [[§C8b.2 Particle States and the Little Group#^law-c8b-2-2|Law §C8b.2.2]] is an experimental input, with its scope in its *Valid when* line. "*applies:* as in the opening" in the boxes below refers to this setup.
+
+*Conventions* ([[Larsen PHY 513]]): as in [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra|§C3.4]]: active transformations, $U(\mathbb 1 + \omega, \varepsilon) = \mathbb 1 - \frac i2\omega_{\mu\nu}\hat J^{\mu\nu} + i\varepsilon_\mu \hat P^\mu$, $\hat K^i = \hat J^{0i}$, $\varepsilon^{0123} = +1$ (PS: $-1$); relativistic normalization. Momentum eigenstates $|p, \sigma\rangle$ are kernels, not vectors: every statement about them means the corresponding statement for wave packets $\int d\mu(p)\,g_\sigma(\mathbf p)|p, \sigma\rangle$ ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]]), with $d\mu(p) = \frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}$. Yu reads transformations passively and keeps a normalization factor $N(p)$; here $N = 1$ ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-6|Theorem §C8b.2.6]]).
+
+## Particles as representations
+
+> [!principle] Principle §C8b.2.1: Particles Are Irreducible Unitary Representations
+> The states of one free, stable particle species span a Hilbert space carrying an *irreducible* unitary representation of the (covering) Poincaré group ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|Principle §C3.4.1]]). The commuting $\hat P^\mu$ are diagonalized by a basis of kernels $|p, \sigma\rangle$,
+>
+> $$
+> \hat P^\mu|p, \sigma\rangle = p^\mu|p, \sigma\rangle ,
+> $$
+>
+> with $\sigma$ a discrete label taking finitely many values. Physical particles have $p^2 = m^2 \ge 0$ and $p^0 > 0$ ([[§C8b.2 Particle States and the Little Group#^law-c8b-2-2|Law §C8b.2.2]]); $m$ is the **mass**.
+>
+> *Domain: single free particles, and the asymptotic states of interacting theories ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]], its one-particle states; used by the amputation rule and LSZ, [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]]); many-particle states are built as in Fock space. Internal labels (charge, flavour) commute with $U(\Lambda, a)$ and are not part of this classification. Spacelike momenta ($p^2 < 0$), negative energy and the orbit $p = 0$ with a nontrivial action are excluded because no such particles are observed ([[§C8b.2 Particle States and the Little Group#^law-c8b-2-2|Law §C8b.2.2]]).*
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* any theory with a unitary Poincaré representation, interacting ones included: the one-particle states of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (used by LSZ, [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 (introduction: "particles are irreducible representations of the Poincaré group (Wigner, 1939)") · Yu §3.3, eqs. (3.87), (3.97) · the user's pre-course notes, §2.3 (Remark "Excluded classes")*
+
+^pr-c8b-2-1
+
+> [!law] Law §C8b.2.2: Physical Particles Have p² ≥ 0 and p⁰ > 0
+> Every observed particle has its momenta on an orbit of [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]] with
+>
+> $$
+> p^2 = m^2 \ge 0 , \qquad p^0 > 0 :
+> $$
+>
+> massive ($m > 0$) or massless ($m = 0$, $p \neq 0$), of positive energy. The orbit $p = 0$ carries the vacuum, with the trivial action of the Lorentz group ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-10|Theorem §C3.4.10]]), and no particle. Spacelike momenta ($p^2 < 0$, tachyonic) and the negative-energy sheets ($p^0 < 0$) carry no observed particle ([[§C8b.2 Particle States and the Little Group#^rem-c8b-2-2|Remark: The orbits at a glance]]). The two exclusions of the classification are experimental inputs: this one, and that massless particles have no continuous spin ([[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4|Law §C8b.3.4]]).
+>
+> *Valid when:* every particle observed so far. The excluded classes exist mathematically: spacelike ("tachyonic") representations and $p = 0$ with a nontrivial little-group action belong to the full Wigner analysis, and the negative-energy sheets carry the same little groups as the positive ones; none is realized by an observed particle. In field theory the role of negative energies is taken by antiparticles of positive energy ([[§C2a.5 The Complex Scalar Field and Its Charge|§C2a.5]]).
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening; an experimental input, not a consequence of the representation theory.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 ("Invariants": "Physical particles have $p^{2}=m^{2}\ge0$ and $p^{0}>0$"; table of orbits) · the user's pre-course notes, §2.3 (Remark "Excluded classes": "Neither is realized by observed particles [experimental input]") · Yu §3.3, after eq. (3.109), p. 89 (physically three cases occur: the vacuum, massive and massless particles)*
+
+^law-c8b-2-2
+
+> [!theorem] Theorem §C8b.2.3: One Particle, One Orbit
+> In the representation of Principle §C8b.2.1:
+> 1. a translation only multiplies a momentum eigenstate by a phase, $U(\mathbb 1, a)|p, \sigma\rangle = e^{ip\cdot a}|p, \sigma\rangle$;
+> 2. $U(\Lambda)|p, \sigma\rangle$ has momentum $\Lambda p$, so $U(\Lambda)|p, \sigma\rangle = \sum_{\sigma'}C_{\sigma'\sigma}(\Lambda, p)\,|\Lambda p, \sigma'\rangle$ for some coefficients $C$;
+> 3. all momenta of the representation lie on one orbit of $SO^+(1,3)$: $p^2 = m^2$ and $\operatorname{sgn}p^0$ are the same for every state.
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* any theory with a unitary Poincaré representation, interacting ones included: the one-particle states of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (used by LSZ, [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 ("Momentum eigenstates", "Invariants") · Yu §3.3, eqs. (3.90)–(3.97) · the user's pre-course notes, §2.3*
+
+^thm-c8b-2-3
+
+> [!derivation]- Derivation
+> **Step 1** (translations). $U(\mathbb 1, a) = e^{i\hat P\cdot a}$ ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|Theorem §C3.4.6]], 3), and on an eigenvector of the commuting $\hat P^\mu$ the exponential acts by the exponential of the eigenvalue: $e^{i\hat P\cdot a}|p, \sigma\rangle = e^{ip\cdot a}|p, \sigma\rangle$.
+>
+> **Step 2** (the transformed momentum). By [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|Theorem §C3.4.7]] with $a = 0$,
+>
+> $$
+> \hat P^\mu\,U(\Lambda)|p, \sigma\rangle = U(\Lambda)\,\bigl(U^{-1}(\Lambda)\hat P^\mu U(\Lambda)\bigr)|p, \sigma\rangle = U(\Lambda)\,\Lambda^\mu{}_\nu \hat P^\nu|p, \sigma\rangle = (\Lambda p)^\mu\;U(\Lambda)|p, \sigma\rangle .
+> $$
+>
+> So $U(\Lambda)|p, \sigma\rangle$ lies in the eigenspace of momentum $\Lambda p$, which the $|\Lambda p, \sigma'\rangle$ span: part 2.
+>
+> **Step 3** (an invariant subspace per invariant set of momenta). Let $\Sigma$ be a (Borel) set of momenta with $\Lambda\Sigma = \Sigma$ for every $\Lambda \in SO^+(1,3)$, i.e. a union of orbits ([[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]]), and $\mathcal H_\Sigma$ the closed span of the wave packets whose momenta lie in $\Sigma$ (the spectral subspace of the commuting $\hat P^\mu$ for the set $\Sigma$). By Step 1, translations keep each such packet in $\mathcal H_\Sigma$; by Step 2, $U(\Lambda)$ maps momentum $p \in \Sigma$ to $\Lambda p \in \Sigma$. So $\mathcal H_\Sigma$ is invariant under every $U(\Lambda, a)$.
+>
+> **Step 4** (irreducibility). The representation is irreducible ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-9|Def. §CB.3.9]]), so each $\mathcal H_\Sigma$ is $\{0\}$ or everything. Take $\Sigma_c = \{p : p^2 \le c\}$: $\mathcal H_{\Sigma_c}$ grows with $c$, is everything for large $c$ (every packet has momenta somewhere) and $\{0\}$ for very negative $c$, so it jumps from $\{0\}$ to everything at one value $c = m^2$; the spectral subspace of $\{p^2 = m^2\}$ is then everything, i.e. $\hat P^2 = m^2$ on every state. (A single orbit need not carry a nonzero subspace by itself, which is why the argument uses the sets $\Sigma_c$ rather than single orbits.) For $m^2 \ge 0$ (the case of every observed particle, [[§C8b.2 Particle States and the Little Group#^law-c8b-2-2|Law §C8b.2.2]]), the sets $\{p^2 = m^2,\ p^0 > 0\}$, $\{p^2 = m^2,\ p^0 < 0\}$ and $\{0\}$ are invariant ($\operatorname{sgn}p^0$ is unchanged by $SO^+(1,3)$ on non-spacelike $p \neq 0$), so exactly one of them carries everything: part 3.
+>
+> **What the derivation shows.**
+> - The mass is the value of the Casimir $\hat P^2$ ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-9|Theorem §C3.4.9]]); Steps 3–4 prove its constancy on an irreducible representation directly, without Schur's lemma ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-13|Theorem §CB.7.13]]).
+> - Positive energy is a property of a whole representation, because the two timelike sheets are separate orbits ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], 1).
+> - Used next: the coefficients $C$ are computed in [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]].
+
+^der-c8b-2-3
+
+*Uses:* [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|Theorem §C3.4.6]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|Theorem §C3.4.7]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-9|Def. §CB.3.9]], [[§C8b.2 Particle States and the Little Group#^law-c8b-2-2|Law §C8b.2.2]]
+
+## Standard momentum and the little group
+
+> [!definition] Definition §C8b.2.1: Standard Momentum and Standard Transformation
+> On the orbit $\mathcal O$ of a particle fix a **standard momentum** $k \in \mathcal O$ and, for each $p \in \mathcal O$, a **standard transformation** $V(p) \in SO^+(1,3)$ with $V(p)\,k = p$, depending continuously on $p$, with $V(k) = \mathbb 1$. The states at $p$ are *defined* from those at $k$,
+>
+> $$
+> |p, \sigma\rangle \equiv U\bigl(V(p)\bigr)\,|k, \sigma\rangle .
+> $$
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 ("standard momentum", "standard Lorentz transformation", "The Wigner rotation") · Yu §3.3, eqs. (3.98)–(3.101) · the user's pre-course notes, §2.3 ("Standard momentum and the little group")*
+
+^def-c8b-2-1
+
+> [!definition] Definition §C8b.2.2: Little Group; Wigner Element
+> The **little group** of the standard momentum $k$ ([[§C8b.2 Particle States and the Little Group#^def-c8b-2-1|Def. §C8b.2.1]]) is its stabilizer $G_k = \{W \in SO^+(1,3) : Wk = k\}$ ([[§26 Stabilizers and Fixed Points#^def-26-1|493 Def. §26.1]]). For $\Lambda \in SO^+(1,3)$ and $p \in \mathcal O$ the **Wigner element** is $W(\Lambda, p) \equiv V(\Lambda p)^{-1}\,\Lambda\,V(p)$, an element of $G_k$.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 ("standard momentum", "standard Lorentz transformation", "The Wigner rotation") · Yu §3.3, eqs. (3.98)–(3.101) · the user's pre-course notes, §2.3 ("Standard momentum and the little group")*
+
+^def-c8b-2-2
+
+> [!caution] Caution: Names for the standard momentum and the standard transformation
+> These notes write $k$ for the standard momentum (for a massive particle $k = (m, \mathbf 0)$), $V(p)$ for a general standard transformation and $L(p)$ for the pure boost along $\hat{\mathbf p}$, the choice made from [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-10|Theorem §C8b.2.10]] on; the rest-frame Dirac spinors keep a subscript, $u^s_0$, $v^s_0$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-3|Theorem §C5a.10.3]]). Yu, the user's pre-course notes and the user's PHY 513 notes (Ch. 7 §7.7) also write $k$; Lecture 9 writes the rest frame as "$p^\mu = (m, \vec 0)$". An earlier draft of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost|§C5a.10]] wrote $p_0$, which collides with the time component $p_0 = p^0$.
+>
+> *Source: Yu §3.3, eqs. (3.98)–(3.101) · the user's PHY 513 notes, Ch. 7 §7.7 · Lecture 9, Part A ("Find u(p) in the rest frame") · the user's pre-course notes, §2.3*
+
+^cau-c8b-2-1
+
+> [!remark] Remark: What the definition fixes, and what it leaves free
+> The definition says what the label $\sigma$ means at every momentum: "$\sigma$ at $p$" is the image of "$\sigma$ at $k$" under the chosen $V(p)$. Nothing physical depends on the choices. Another standard momentum $k' = \Lambda_0k$ on the same orbit has the conjugate little group $G_{k'} = \Lambda_0G_k\Lambda_0^{-1}$ ([[§26 Stabilizers and Fixed Points#^prop-26-2|493 Prop. §26.2]]), with the same representations. Another choice $V(p)\bar W(p)$, $\bar W(p) \in G_k$, re-mixes the basis at each $p$ by $D(\bar W(p))$. In the language of group actions, $V$ picks one element in each coset of $G_k$, and the orbit is the coset space $SO^+(1,3)/G_k$ ([[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]]; as manifolds, [[§14 Homogeneous Spaces#^lem-14-5|591 Lemma §14.5]]): the mass hyperboloid is $SO^+(1,3)/SO(3)$, as the sphere is $SO(3)/SO(2)$.
+>
+> *Source: the user's pre-course notes, §2.3 (Remark "Orbits and stabilizers")*
+
+^rem-c8b-2-1
+
+> [!theorem] Theorem §C8b.2.4: The Wigner Element Lies in the Little Group
+> For every $\Lambda \in SO^+(1,3)$ and $p \in \mathcal O$, $W(\Lambda, p) \in G_k$, and the Wigner elements compose as
+>
+> $$
+> W(\Lambda_2\Lambda_1, p) = W(\Lambda_2, \Lambda_1p)\;W(\Lambda_1, p) .
+> $$
+>
+> For $\Lambda \in G_k$ itself, $W(\Lambda, k) = \Lambda$.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 ("W takes k → p → Λp → k") · Yu §3.3, eq. (3.102); the composition rule written out here*
+
+^thm-c8b-2-4
+
+> [!derivation]- Derivation
+> **Step 1** (it fixes $k$). Apply the three factors in turn: $V(p)k = p$, then $\Lambda p$, then $V(\Lambda p)^{-1}(\Lambda p) = k$ because $V(\Lambda p)k = \Lambda p$. So $W(\Lambda, p)k = k$. It is a product of three elements of $SO^+(1,3)$, so it lies in $SO^+(1,3)$, hence in $G_k$.
+>
+> **Step 2** (composition). Insert $\mathbb 1 = V(\Lambda_1p)V(\Lambda_1p)^{-1}$ between $\Lambda_2$ and $\Lambda_1$:
+>
+> $$
+> W(\Lambda_2\Lambda_1, p) = V(\Lambda_2\Lambda_1p)^{-1}\Lambda_2\,V(\Lambda_1p)\,V(\Lambda_1p)^{-1}\Lambda_1V(p) = W(\Lambda_2, \Lambda_1p)\,W(\Lambda_1, p) .
+> $$
+>
+> **Step 3** (on the little group). For $\Lambda \in G_k$, $\Lambda k = k$ and $V(k) = \mathbb 1$: $W(\Lambda, k) = \mathbb 1\cdot\Lambda\cdot\mathbb 1 = \Lambda$.
+>
+> **What the derivation shows.**
+> - The loop $k \to p \to \Lambda p \to k$ of the figure below is all there is; the composition rule is what makes the matrices of Theorem §C8b.2.5 compose correctly.
+> - Used next: Theorem §C8b.2.5.
+
+^der-c8b-2-4
+
+*Uses:* [[§C8b.2 Particle States and the Little Group#^def-c8b-2-1|Def. §C8b.2.1]], [[§C8b.2 Particle States and the Little Group#^def-c8b-2-2|Def. §C8b.2.2]]
+
+![[ph-qft-c3-5-1.svg]]
+*Wigner's construction on the mass hyperboloid (one spatial momentum direction drawn). The standard transformation $V(p)$ carries the standard momentum $k$ to $p$, $\Lambda$ carries $p$ to $\Lambda p$, and $V(\Lambda p)^{-1}$ returns to $k$; the composite fixes $k$ and is an element of the little group $G_k$, which acts on the internal labels $\sigma$. For a massive particle $G_k$ is the rotation group, invisible in this two-dimensional slice.*
+
+> [!theorem] Theorem §C8b.2.5: The Induced Representation
+> 1. For $W \in G_k$, $U(W)|k, \sigma\rangle = \sum_{\sigma'}D_{\sigma'\sigma}(W)\,|k, \sigma'\rangle$, where $D$ is a unitary representation of (the cover of) the little group on the labels $\sigma$.
+> 2. For every $(\Lambda, a)$ and every $p$ on the orbit,
+>
+> $$
+> U(\Lambda, a)\,|p, \sigma\rangle = e^{i(\Lambda p)\cdot a}\sum_{\sigma'}D_{\sigma'\sigma}\bigl(W(\Lambda, p)\bigr)\,|\Lambda p, \sigma'\rangle .
+> $$
+>
+> 3. If $D$ is reducible, so is $U$. Hence a particle corresponds to an irreducible unitary representation $D$ of its little group.
+>
+> Conversely (proved in CB, Wigner–Mackey): for every unitary $D$ the law of part 2 (the induced representation of [[§CB.22★ The Poincaré Group and Induced Representations#^def-cb-22-11|Def. §CB.22.11]], written for wave-packet coefficients in [[§CB.22★ The Poincaré Group and Induced Representations#^rem-cb-22-1|§CB.22★, ★ Remark: The course's law as an induced representation]]) is a unitary representation ([[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-13|Theorem §CB.22.13]]), it is irreducible exactly when $D$ is, inequivalent $D$ or different orbits give inequivalent representations ([[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-14|Theorem §CB.22.14]]), and every irreducible unitary representation of the (covering) Poincaré group arises this way ([[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-15|Theorem §CB.22.15]]). So the particles with momenta on one orbit are classified by the irreducible unitary representations of its little group.
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* any theory with a unitary Poincaré representation, interacting ones included: the one-particle states of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (used by LSZ, [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7, eq. (wignerlaw) · Yu §3.3, eqs. (3.100)–(3.109) · the user's pre-course notes, §2.3, eq. (C-from-D) and Keypoint "Induced representations"*
+
+^thm-c8b-2-5
+
+> [!derivation]- Derivation
+> **Step 1** (the little group acts at $k$). For $W \in G_k$, $U(W)|k, \sigma\rangle$ has momentum $Wk = k$ ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-3|Theorem §C8b.2.3]], 2), so it is a combination of the $|k, \sigma'\rangle$; call the coefficients $D_{\sigma'\sigma}(W)$.
+>
+> **Step 2** ($D$ is a representation). For $W_1, W_2 \in G_k$, [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|Principle §C3.4.1]] gives $U(W_2W_1) = U(W_2)U(W_1)$. Apply both sides to $|k, \sigma\rangle$, using Step 1 twice on the right:
+>
+> $$
+> \sum_{\sigma'}D_{\sigma'\sigma}(W_2W_1)|k, \sigma'\rangle = U(W_2)\sum_{\sigma''}D_{\sigma''\sigma}(W_1)|k, \sigma''\rangle = \sum_{\sigma', \sigma''}D_{\sigma'\sigma''}(W_2)D_{\sigma''\sigma}(W_1)\,|k, \sigma'\rangle .
+> $$
+>
+> The $|k, \sigma'\rangle$ are linearly independent, so $D(W_2W_1) = D(W_2)D(W_1)$ as matrices ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-6|Def. §CB.3.6]]). For a projective $U$, the same computation gives a projective $D$, a representation of the cover ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-1|§C3.4, Remark: Why unitary, and why the covering group]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|Theorem §C3.4.3]]).
+>
+> **Step 3** (transport). Insert $\mathbb 1 = U(V(\Lambda p))\,U(V(\Lambda p))^{-1}$ and use the composition law and [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|Theorem §C3.4.6]], 1:
+>
+> $$
+> U(\Lambda)|p, \sigma\rangle = U(\Lambda)\,U(V(p))|k, \sigma\rangle = U(V(\Lambda p))\;U\bigl(V(\Lambda p)^{-1}\Lambda V(p)\bigr)|k, \sigma\rangle = U(V(\Lambda p))\;U\bigl(W(\Lambda, p)\bigr)|k, \sigma\rangle .
+> $$
+>
+> $W(\Lambda, p) \in G_k$ ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-4|Theorem §C8b.2.4]]), so Step 1 applies:
+>
+> $$
+> U(\Lambda)|p, \sigma\rangle = \sum_{\sigma'}D_{\sigma'\sigma}\bigl(W(\Lambda, p)\bigr)\,U(V(\Lambda p))|k, \sigma'\rangle = \sum_{\sigma'}D_{\sigma'\sigma}\bigl(W(\Lambda, p)\bigr)\,|\Lambda p, \sigma'\rangle ,
+> $$
+>
+> the last step by [[§C8b.2 Particle States and the Little Group#^def-c8b-2-1|Def. §C8b.2.1]] at the momentum $\Lambda p$.
+>
+> **Step 4** (translations). $U(\Lambda, a) = U(\mathbb 1, a)U(\Lambda)$ (Theorem §C3.4.6, 2), and $U(\mathbb 1, a)$ multiplies each $|\Lambda p, \sigma'\rangle$ by $e^{i(\Lambda p)\cdot a}$ (Theorem §C8b.2.3, 1). This is part 2. Steps 1–4 did not use the normalization of the states.
+>
+> **Step 5** ($D$ is unitary). Choose the labels orthonormal at the standard momentum, $\langle k', \tau|k, \sigma\rangle = \delta_{\tau\sigma}\,2k^0(2\pi)^3\delta^3(\mathbf k' - \mathbf k)$ for $k'$ on the orbit near $k$ (the normalization of [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-6|Theorem §C8b.2.6]]). For $W \in G_k$, unitarity of $U(W)$ and part 2 give
+>
+> $$
+> \langle k', \tau|k, \sigma\rangle = \langle U(W)k', \tau|U(W)k, \sigma\rangle = \sum_{\tau', \sigma'}\overline{D_{\tau'\tau}\bigl(W(W, k')\bigr)}\,D_{\sigma'\sigma}(W)\;\langle Wk', \tau'|k, \sigma'\rangle .
+> $$
+>
+> The last overlap is $\delta_{\tau'\sigma'}2k^0(2\pi)^3\delta^3(\mathbf W\mathbf k' - \mathbf k)$, supported at $Wk' = k$, i.e. $k' = W^{-1}k = k$, where $W(W, k) = W$ ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-4|Theorem §C8b.2.4]]); the coefficient, continuous in $\mathbf k'$, may be evaluated there, since a function $h$ times a delta acts as $(h\,\delta^3)[\varphi] = \delta^3[h\varphi] = h(\mathbf k)\varphi(\mathbf k)$, i.e. $h\,\delta^3(\cdot - \mathbf k) = h(\mathbf k)\,\delta^3(\cdot - \mathbf k)$ (the product of [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]], 1, for smooth $h$; for δ, a measure, continuity of $h$ suffices), and $2k^0\delta^3(\mathbf W\mathbf k' - \mathbf W\mathbf k) = 2k^0\delta^3(\mathbf k' - \mathbf k)$ by the invariance of $2E\,\delta^3$ ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]]). So the right side is $\bigl(D(W)^\dagger D(W)\bigr)_{\tau\sigma}\,2k^0(2\pi)^3\delta^3(\mathbf k' - \mathbf k)$; comparing with the left side, $D(W)^\dagger D(W) = \mathbb 1$.
+>
+> **Step 6** (reducible $D$, reducible $U$). If a subspace $S$ of the label space is invariant under every $D(W)$, the closed span of the wave packets $\int d\mu(p)\sum_{\sigma \in S}g_\sigma(\mathbf p)|p, \sigma\rangle$ (labels in $S$ at every $p$) is mapped into itself by part 2, since $D(W(\Lambda, p))$ maps $S$ to $S$. So $U$ is reducible unless $S$ is $\{0\}$ or everything: part 3.
+>
+> ⚑ By-product: for a particle without labels, $D = 1$ and part 2 is $U(\Lambda, a)|\mathbf p\rangle = e^{i(\Lambda p)\cdot a}|\Lambda\mathbf p\rangle$, the representation constructed for the free scalar field in [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]].
+>
+> **What the derivation shows.**
+> - The infinite-dimensional representation is *induced* from a finite-dimensional one of a subgroup: the momentum dependence is entirely in $\Lambda p$ and in the Wigner element, both fixed by the choice of $V$; only $D$ is a choice of physics.
+> - The converse of part 3 (irreducible $D$ gives irreducible $U$) is true and is the starting point of Mackey's theory of induced representations; it is stated, not proved, in the sources.
+> - Used next: the massive case ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-9|Theorem §C8b.2.9]]) and the massless case ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-5|Theorem §C8b.3.5]]).
+
+^der-c8b-2-5
+
+*Uses:* [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-3|Theorem §C8b.2.3]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-4|Theorem §C8b.2.4]], [[§C8b.2 Particle States and the Little Group#^def-c8b-2-1|Def. §C8b.2.1]], [[§C8b.2 Particle States and the Little Group#^def-c8b-2-2|Def. §C8b.2.2]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|Principle §C3.4.1]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|Theorem §C3.4.6]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-6|Def. §CB.3.6]]
+
+> [!theorem] Theorem §C8b.2.6: The Induced States Are Relativistically Normalized
+> If the states at the standard momentum are normalized as in Step 5 of Derivation §C8b.2.5, $\langle k', \tau|k, \sigma\rangle = \delta_{\tau\sigma}\,2k^0(2\pi)^3\delta^3(\mathbf k' - \mathbf k)$, then on the whole orbit
+>
+> $$
+> \langle p', \sigma'|p, \sigma\rangle = \delta_{\sigma'\sigma}\;2E_{\mathbf p}\,(2\pi)^3\,\delta^3(\mathbf p' - \mathbf p) ,
+> $$
+>
+> the relativistic normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]. So the law of Theorem §C8b.2.5 needs no normalization factor; Yu's factor $N(p)/N(\Lambda p)$ is $1$.
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* any theory with a unitary Poincaré representation, interacting ones included: the one-particle states of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (used by LSZ, [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 (parenthesis after eq. (wignerlaw)) · Yu §3.3, eqs. (3.99), (3.108)–(3.109) (with $N(p)$ kept general); the computation written out here*
+
+^thm-c8b-2-6
+
+> [!derivation]- Derivation
+> **Step 1** (move the transport to the bra). By Def. §C8b.2.1 and unitarity, $\langle p', \sigma'|p, \sigma\rangle = \langle p', \sigma'|U(V(p))|k, \sigma\rangle = \bigl(U(V(p))^{-1}|p', \sigma'\rangle\bigr)^\dagger|k, \sigma\rangle$.
+>
+> **Step 2** (apply Theorem §C8b.2.5 with Λ = V(p)⁻¹). $U(V(p)^{-1})|p', \sigma'\rangle = \sum_\tau D_{\tau\sigma'}(W_{\ast})\,|V(p)^{-1}p', \tau\rangle$ with $W_{\ast} = W(V(p)^{-1}, p')$. Hence
+>
+> $$
+> \langle p', \sigma'|p, \sigma\rangle = \sum_\tau\overline{D_{\tau\sigma'}(W_*)}\;\langle V(p)^{-1}p', \tau|k, \sigma\rangle = \overline{D_{\sigma\sigma'}(W_*)}\;2k^0(2\pi)^3\,\delta^3\bigl(\mathbf V(p)^{-1}p' - \mathbf k\bigr),
+> $$
+>
+> where $\mathbf V(p)^{-1}p'$ is the spatial part of $V(p)^{-1}p'$, and the normalization at $k$ has been used ($V(p)^{-1}p'$ is near $k$ when $p'$ is near $p$, which is where the delta is supported).
+>
+> **Step 3** (the coefficient on the support). The delta function forces $V(p)^{-1}p' = k$, i.e. $p' = p$. There $W_{\ast} = V(V(p)^{-1}p)^{-1}\,V(p)^{-1}\,V(p) = V(k)^{-1} = \mathbb 1$, so $D(W_{\ast}) = \mathbb 1$. Since $V$ is continuous, $D(W_{\ast})$ is a continuous function of $\mathbf p'$ multiplying a delta function, and only its value at the support counts, $h(\mathbf p')\,\delta^3(\mathbf p' - \mathbf p) = h(\mathbf p)\,\delta^3(\mathbf p' - \mathbf p)$ (as in Step 5 of Derivation §C8b.2.5; [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]], 1): the coefficient is $\delta_{\sigma\sigma'}$.
+>
+> **Step 4** (undo the transport inside the delta). $k = V(p)^{-1}p$, so the delta is $\delta^3(\mathbf V(p)^{-1}p' - \mathbf V(p)^{-1}p)$ with $k^0 = (V(p)^{-1}p)^0$. By the invariance of $2E\,\delta^3$ under the Lorentz transformation $V(p)^{-1}$ ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]]),
+>
+> $$
+> 2k^0\,\delta^3\bigl(\mathbf V(p)^{-1}p' - \mathbf V(p)^{-1}p\bigr) = 2E_{\mathbf p}\,\delta^3(\mathbf p' - \mathbf p) .
+> $$
+>
+> Combining with Step 3 gives the stated overlap.
+>
+> **Step 5** (no factor $N$). Had the states been defined as $N(p)U(V(p))|k, \sigma\rangle$, the same steps would give $\overline{N(p')}N(p)$ times the right side, and the law of Theorem §C8b.2.5 would carry $N(p)/N(\Lambda p)$ (Yu (3.108)). Relativistic normalization at every $p$ requires $|N| = 1$; the phase is conventionally $1$.
+>
+> **What the derivation shows.**
+> - The relativistic normalization is the one that transport by $U(V(p))$ preserves; this is why it was introduced ([[§C2a.4 Particles and Relativistic Normalization#^rem-c2a-4-3|§C2a.4, Remark: Sharp momentum or sharp position; why √(2E_p)]]).
+> - With the nonrelativistic normalization $\langle p'|p\rangle = \delta^3(\mathbf p' - \mathbf p)$, imposed also at the standard momentum ($\langle k', \tau|k, \sigma\rangle = \delta_{\tau\sigma}\delta^3(\mathbf k' - \mathbf k)$), Step 4 becomes $\delta^3(\mathbf V(p)^{-1}p' - \mathbf V(p)^{-1}p) = (p^0/k^0)\,\delta^3(\mathbf p' - \mathbf p)$, so $N(p) = \sqrt{k^0/p^0}$ (Weinberg's choice) and the law carries $\sqrt{(\Lambda p)^0/p^0}$, which is the factor of PS (2.38) for $\hat a^\dagger_{\mathbf p}$ ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]], 3).
+> - Assumption used: $V(p)$ continuous in $p$, so that Step 3 may evaluate the coefficient on the support.
+
+^der-c8b-2-6
+
+*Uses:* [[§C8b.2 Particle States and the Little Group#^def-c8b-2-1|Def. §C8b.2.1]], [[§C8b.2 Particle States and the Little Group#^def-c8b-2-2|Def. §C8b.2.2]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]]
+
+## The orbits and their little groups
+
+> [!theorem] Theorem §C8b.2.7: The Little Groups of the Physical Orbits
+> The orbits allowed by [[§C8b.2 Particle States and the Little Group#^law-c8b-2-2|Law §C8b.2.2]]:
+> 1. **Vacuum**, $p = 0$: $k = 0$ and $G_k = SO^+(1,3)$.
+> 2. **Massive**, $p^2 = m^2 > 0$, $p^0 > 0$: with $k = (m, \mathbf 0)$, $G_k \cong SO(3)$, the rotations in the rest frame ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-8|Theorem §C8b.2.8]]).
+> 3. **Massless**, $p^2 = 0$, $p^0 > 0$: with $k = \kappa(1, 0, 0, 1)$, $\kappa > 0$, $G_k \cong ISO(2)$, the Euclidean group of a plane ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorem §C8b.3.1]]).
+>
+> In the cover $SL(2, \mathbb C)$ the stabilizers of these $k$ are $SU(2)$ (massive) and a double cover of $ISO(2)$ (massless), each mapped two-to-one onto $G_k$ ([[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-10|Theorem §CB.22.10]]); their representations are the labels $\sigma$ of half-integer as well as integer spin. Little groups of points on one orbit are conjugate, so the choice of $k$ on the orbit does not matter.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 (table of orbits) · Yu §3.3, after eq. (3.109) · the user's pre-course notes, §2.3*
+
+^thm-c8b-2-7
+
+> [!derivation]- Derivation
+> **Step 1** (vacuum). $\Lambda 0 = 0$ for every $\Lambda$, so every element of $SO^+(1,3)$ fixes $k = 0$.
+>
+> **Step 2** (massive and massless). These are [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-8|Theorem §C8b.2.8]] and [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorem §C8b.3.1]].
+>
+> **Step 3** (independence of $k$). If $k' = \Lambda_0k$ lies on the same orbit, $W'k' = k'$ iff $(\Lambda_0^{-1}W'\Lambda_0)k = k$, so $G_{k'} = \Lambda_0G_k\Lambda_0^{-1}$ ([[§26 Stabilizers and Fixed Points#^prop-26-2|493 Prop. §26.2]]), an isomorphic group with the same representations.
+>
+> **What the derivation shows.**
+> - Each orbit type of [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]] has one little group up to isomorphism; the classification of particles is a classification of orbits and of the unitary representations of their little groups.
+
+^der-c8b-2-7
+
+*Uses:* [[§C8b.2 Particle States and the Little Group#^def-c8b-2-1|Def. §C8b.2.1]], [[§C8b.2 Particle States and the Little Group#^def-c8b-2-2|Def. §C8b.2.2]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-8|Theorem §C8b.2.8]], [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorem §C8b.3.1]], [[§26 Stabilizers and Fixed Points#^prop-26-2|493 Prop. §26.2]]
+
+> [!theorem] Theorem §C8b.2.8: The Massive Little Group Is SO(3)
+> Let $k = (m, \mathbf 0)$, $m > 0$. A Lorentz transformation $W \in SO^+(1,3)$ fixes $k$ if and only if $W = \operatorname{diag}(1, R)$ with $R \in SO(3)$: the little group of a massive particle is the rotation group of its rest frame.
+>
+> *Equivalently:* this is [[§C1a.4 The Lorentz Group#^thm-c1a-4-5|Theorem §C1a.4.5]], 1, the stabilizer of a timelike vector in the Lorentz group, stated there without particle states and together with the conjugacy of the stabilizers along an orbit (part 2 there); the derivation below is the same three steps.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 (Derivation "Massive particles: the little group is SO(3), and the label is spin", first paragraph) · Yu §3.3.1, first paragraph · the user's pre-course notes, §2.3 ("Massive particles")*
+
+^thm-c8b-2-8
+
+> [!derivation]- Derivation
+> **Step 1** (the first column). $Wk = k$ reads $W^\mu{}_0\,m = k^\mu$ component by component, so the first column of $W$ is $(1, 0, 0, 0)^{\mathsf T}$.
+>
+> **Step 2** (the first row). The $(0, i)$ entry of $W^{\mathsf T}gW = g$ is $\sum_\mu g_{\mu\mu}W^\mu{}_0W^\mu{}_i = g_{0i} = 0$. By Step 1 only $\mu = 0$ survives, with $g_{00}W^0{}_0 = 1$, so $W^0{}_i = 0$: the first row is $(1, 0, 0, 0)$.
+>
+> **Step 3** (the spatial block). So $W = \operatorname{diag}(1, R)$, and the $(i, j)$ entries of $W^{\mathsf T}gW = g$ give $-R^{\mathsf T}R = -\mathbb 1$: $R$ is orthogonal. $\det W = \det R = 1$ for proper $W$. Conversely every $\operatorname{diag}(1, R)$ with $R \in SO(3)$ is proper orthochronous and fixes $k$.
+>
+> **What the derivation shows.**
+> - A massive particle has a rest frame, and the transformations that keep it at rest are the rotations of that frame: its internal states are classified by rotations, as in nonrelativistic quantum mechanics.
+> - A massless particle has no rest frame; its little group is not compact, which is the source of everything special in [[§C8b.3 Massless Particles and Helicity|§C8b.3]].
+> - Used next: Theorem §C8b.2.9, and the leftover rotation in [[§C8b.3 Massless Particles and Helicity#^der-c8b-3-1|Derivation §C8b.3.1]].
+
+^der-c8b-2-8
+
+*Uses:* [[§C8b.2 Particle States and the Little Group#^def-c8b-2-1|Def. §C8b.2.1]], [[§C8b.2 Particle States and the Little Group#^def-c8b-2-2|Def. §C8b.2.2]]
+
+> [!remark] Remark: The orbits at a glance
+>
+> | orbit ([[§C1a.4 The Lorentz Group#^thm-c1a-4-3\|Theorem §C1a.4.3]]) | standard $k$ | little group | label | states at each momentum |
+> | --- | --- | --- | --- | --- |
+> | $p = 0$ | $0$ | $SO^+(1,3)$ | (trivial) | the vacuum, one state |
+> | $p^2 = m^2 > 0$, $p^0 > 0$ | $(m, \mathbf 0)$ | $SO(3)$, cover $SU(2)$ | spin $s$ | $2s + 1$ |
+> | $p^2 = 0$, $p^0 > 0$ | $\kappa(1, 0, 0, 1)$ | $ISO(2)$ | helicity $\lambda$ | $1$ (two, $\pm\lambda$, with parity) |
+> | $p^2 = -\mu^2 < 0$ (excluded) | $(0, 0, 0, \mu)$ | $SO^+(1,2)$ (stated) | — | no observed particle |
+>
+> The negative-energy sheets carry the same little groups and are excluded by $p^0 > 0$ ([[§C8b.2 Particle States and the Little Group#^law-c8b-2-2|Law §C8b.2.2]], as is the last row); in field theory their role is taken by antiparticles of positive energy ([[§C2a.5 The Complex Scalar Field and Its Charge|§C2a.5]]). The massless row assumes finitely many states at each momentum, an experimental input ([[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4|Law §C8b.3.4]]). The vacuum is the trivial representation of the whole Lorentz group; that its momentum must be zero is [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-10|Theorem §C3.4.10]].
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 (table) · Yu §3.3, after eq. (3.109) · the user's pre-course notes, §2.3 (Remark "Excluded classes")*
+
+^rem-c8b-2-2
+
+## Massive particles: spin
+
+> [!theorem] Theorem §C8b.2.9: Massive Particles Carry Spin
+> Let $m > 0$, $k = (m, \mathbf 0)$. The irreducible unitary representations $D$ with finitely many labels of the cover $SU(2)$ of the little group are the spin-$s$ representations $D^{(s)}$, $s = 0, \frac12, 1, \dots$, of dimension $2s + 1$ ([[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-1|Theorem §C3.1.1]]; the Wigner functions of [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^def-c5-3-1|QM Def. §C5.3.1]]; names: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^cau-c3-1-4|§C3.1, Caution: Names for the rotation matrices]]). A massive particle of **spin** $s$ has $2s + 1$ states at each momentum, $\sigma = s, s - 1, \dots, -s$, transforming as
+>
+> $$
+> U(\Lambda)\,|p, \sigma\rangle = \sum_{\sigma'}D^{(s)}_{\sigma'\sigma}\bigl(W(\Lambda, p)\bigr)\,|\Lambda p, \sigma'\rangle, \qquad D^{(s)}\bigl(R(\hat{\mathbf n}, \varphi)\bigr) = e^{-i\varphi\,\hat{\mathbf n}\cdot\mathbf S^{(s)}} ,
+> $$
+>
+> with $\mathbf S^{(s)}$ the spin-$s$ matrices. At rest the Hilbert-space angular momentum acts as spin: $\hat J^i|k, \sigma\rangle = \sum_{\sigma'}(S^{(s)i})_{\sigma'\sigma}|k, \sigma'\rangle$, so $\hat{\mathbf J}^2 = s(s + 1)$ and $\hat J^3 = \sigma$ there. A rotation by $2\pi$ multiplies every state by $(-1)^{2s}$.
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* any theory with a unitary Poincaré representation, interacting ones included: the one-particle states of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (used by LSZ, [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 (Derivation "Massive particles: the little group is SO(3), and the label is spin") · Yu §3.3.1, eqs. (3.110)–(3.174) · the user's pre-course notes, §2.3 ("Massive particles")*
+
+^thm-c8b-2-9
+
+> [!derivation]- Derivation
+> **Step 1** (the little group is compact). By [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-8|Theorem §C8b.2.8]], $G_k \cong SO(3)$; the representation $D$ of [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]] is unitary, and for a projective $U$ it is a representation of $SU(2)$ ([[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-3|Theorem §C3.1.3]]).
+>
+> **Step 2** ($D$ is irreducible). By [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]], 3, a reducible $D$ would make the particle's representation reducible, against [[§C8b.2 Particle States and the Little Group#^pr-c8b-2-1|Principle §C8b.2.1]].
+>
+> **Step 3** (the catalogue). The finite-dimensional irreducible representations of $SU(2)$ are the $D^{(s)}$, one for each $s \in \{0, \frac12, 1, \dots\}$, of dimension $2s + 1$, and they are unitary in the basis of $S^3$-eigenvectors ([[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-1|Theorem §C3.1.1]], [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]]; the spectrum as in [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^rem-c5-3-1|QM §C5.3, Remark: Eigenvalues and ladder matrix elements]]). So $D = D^{(s)}$ for one $s$, and $\sigma$ runs over $2s + 1$ values. Insert into Theorem §C8b.2.5, 2.
+>
+> **Step 4** (the generators at rest). For a rotation $R(\hat{\mathbf n}, \varphi) \in G_k$, $U(R)|k, \sigma\rangle = \sum_{\sigma'}D^{(s)}_{\sigma'\sigma}(R)|k, \sigma'\rangle$ (Theorem §C8b.2.5, 1). By [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|Theorem §C3.4.6]], 4, $U(R) = e^{-i\varphi\hat{\mathbf n}\cdot\hat{\mathbf J}}$, and $D^{(s)}(R) = e^{-i\varphi\hat{\mathbf n}\cdot\mathbf S^{(s)}}$. Differentiate both at $\varphi = 0$: $-i\hat{\mathbf n}\cdot\hat{\mathbf J}|k, \sigma\rangle = -i\sum_{\sigma'}(\hat{\mathbf n}\cdot\mathbf S^{(s)})_{\sigma'\sigma}|k, \sigma'\rangle$ for every $\hat{\mathbf n}$. Hence $\hat J^i$ acts on the rest states as $S^{(s)i}$, and $\hat{\mathbf J}^2 = s(s + 1)$, $\hat J^3 = \sigma$ in the $S^3$-diagonal basis.
+>
+> **Step 5** ($2\pi$). $D^{(s)}(R(\hat{\mathbf n}, 2\pi)) = (-1)^{2s}\mathbb 1$ ([[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-4|QM Theorem §C5.3.4]]). The Wigner element of a $2\pi$ rotation is that rotation for every $p$ ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-10|Theorem §C8b.2.10]]; in the cover: along the path $R(\hat{\mathbf n}, \varphi)$, $\varphi \in [0, 2\pi]$, the Wigner elements are $R(\hat{\mathbf n}, \varphi)$ at every point, so their lift ends at the same element $-\mathbb 1$ of $SU(2)$), so every $|p, \sigma\rangle$ acquires $(-1)^{2s}$.
+>
+> ⚑ By-product: at rest there is no orbital angular momentum, so the total angular momentum *is* the spin; for a scalar field's quanta $s = 0$, in agreement with [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-3|Theorem §C3.5.3]] (no spin part) and [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-4|Theorem §C3.3.4]].
+>
+> **What the derivation shows.**
+> - "Spin" is the label of the little-group representation: the response of the rest-frame states to rotations, defined for every momentum through $V(p)$.
+> - Half-integer spin enters through the cover, exactly as in Quantum Mechanics; it is allowed because states are rays.
+> - Assumption used: finitely many labels $\sigma$ (Principle §C8b.2.1); every irreducible unitary representation of a compact group is in fact finite-dimensional (Peter–Weyl, stated).
+
+^der-c8b-2-9
+
+*Uses:* [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-8|Theorem §C8b.2.8]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-5|Theorem §C8b.2.5]], [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-3|Theorem §C3.1.3]], [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-1|Theorem §C3.1.1]], [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|Theorem §C3.4.6]], [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-4|QM Theorem §C5.3.4]]
+
+> [!theorem] Theorem §C8b.2.10: Rotations Act by the Rotation Itself
+> Choose $V(p) = L(p)$, the pure boost along $\hat{\mathbf p}$ that takes $(m, \mathbf 0)$ to $p$. Then for every rotation $R$ and every $p$, $W(R, p) = R$, so
+>
+> $$
+> U(R)\,|p, \sigma\rangle = \sum_{\sigma'}D^{(s)}_{\sigma'\sigma}(R)\,|Rp, \sigma'\rangle :
+> $$
+>
+> the spin labels of a moving particle rotate rigidly, whatever its momentum. For a boost along $\hat{\mathbf p}$, $W = \mathbb 1$; for a boost in any other direction, $W(\Lambda, p)$ is in general a nontrivial rotation (the Wigner rotation).
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 ("Rotating a moving particle") · the user's pre-course notes, §2.3 (Note "The choice of V(p) and the resulting little-group element"; Example "Spin-½ under a z-rotation")*
+
+^thm-c8b-2-10
+
+> [!derivation]- Derivation
+> **Step 1** (the pure boost as an exponential). With rapidity $\eta = \operatorname{artanh}(|\mathbf p|/E_{\mathbf p})$, $L(p) = \exp(-i\eta\,\hat{\mathbf p}\cdot\boldsymbol{\mathcal K})$, where $\mathcal K^i = \mathcal J^{0i}$ are the vector-representation boost generators ([[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^def-c1a-7-2|Def. §C1a.7.2]], [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-3|Theorem §C1a.7.3]]).
+>
+> **Step 2** (a rotation turns the boost generators like a vector). The tensor law of the generators in the vector representation ([[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]] with $D(\Lambda) = \Lambda$), $\Lambda^{-1}\mathcal J^{\rho\sigma}\Lambda = \Lambda^\rho{}_\mu\Lambda^\sigma{}_\nu\mathcal J^{\mu\nu}$, applied with $\Lambda = R^{-1}$ and $(\rho, \sigma) = (0, i)$: $(R^{-1})^0{}_\mu$ is nonzero only for $\mu = 0$, where it is $1$, and $(R^{-1})^i{}_j = R^j{}_i$ for an orthogonal $R$, so
+>
+> $$
+> R\,\mathcal K^i R^{-1} = \sum_jR^j{}_i\,\mathcal K^j, \qquad R\,(\hat{\mathbf n}\cdot\boldsymbol{\mathcal K})\,R^{-1} = \sum_{i, j}n^iR^j{}_i\,\mathcal K^j = (R\hat{\mathbf n})\cdot\boldsymbol{\mathcal K} .
+> $$
+>
+> **Step 3** (conjugate the boost). Conjugation passes through the power series of the exponential, so $R\,L(p)\,R^{-1} = \exp(-i\eta\,(R\hat{\mathbf p})\cdot\boldsymbol{\mathcal K})$. A rotation does not change $|\mathbf p|$ or $E_{\mathbf p}$, so $\eta$ is the rapidity of $Rp$, and $R\hat{\mathbf p}$ its direction: $R\,L(p)\,R^{-1} = L(Rp)$.
+>
+> **Step 4** (the Wigner element). $W(R, p) = L(Rp)^{-1}\,R\,L(p) = L(Rp)^{-1}\,\bigl(R\,L(p)\,R^{-1}\bigr)\,R = L(Rp)^{-1}L(Rp)\,R = R$. Insert into [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-9|Theorem §C8b.2.9]].
+>
+> **Step 5** (collinear boosts). If $\Lambda$ is a boost along $\hat{\mathbf p}$, then $L(p)$, $\Lambda$ and $L(\Lambda p)$ all lie in the one-parameter group $\exp(-i\eta'\hat{\mathbf p}\cdot\boldsymbol{\mathcal K})$, $\eta' \in \mathbb R$ (signed rapidity, so that a boost reversing the momentum stays in it), whose elements commute and whose rapidities add ([[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-7|REL Theorem §B1.2.7]]): $W = L(\Lambda p)^{-1}\Lambda L(p)$ has total rapidity $-(\eta + \eta_\Lambda) + \eta_\Lambda + \eta = 0$, so $W = \mathbb 1$.
+>
+> **Step 6** (other boosts). For a boost not along $\hat{\mathbf p}$, $\Lambda L(p)$ is a product of two non-collinear boosts, which is a boost times a nontrivial rotation ([[§B1.2 Lorentz Transformations and the Lorentz Group#^ex-b1-2-2|REL Example §B1.2.2]]); $L(\Lambda p)^{-1}$ removes the boost and leaves the rotation. (Checked numerically for a sample $p$ and boost.)
+>
+> **What the derivation shows.**
+> - With pure boosts as standard transformations, the spin of a moving particle is defined in its own rest frame reached by a pure boost, and rotations act on it as on a particle at rest.
+> - A boost transverse to the motion rotates the spin: "spin along $z$" of a moving particle is not a boost-invariant notion → [[§C8b.2 Particle States and the Little Group#^rem-c8b-2-3|Remark: The Wigner rotation and Thomas precession]].
+
+^der-c8b-2-10
+
+*Uses:* [[§C1a.7 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-7-3|Theorem §C1a.7.3]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-9|Theorem §C8b.2.9]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-7|REL Theorem §B1.2.7]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^ex-b1-2-2|REL Example §B1.2.2]]
+
+> [!remark] Remark: The Wigner rotation and Thomas precession
+> The algebra fact behind Step 6 is $[K^i, K^j] = -i\varepsilon_{ijk}J^k$: two boosts in different directions, applied in opposite orders, differ by a rotation ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-1|§C3.2, Remark: Two boosts make a rotation]]). The Wigner element is where that rotation goes when the boosts act on a particle: $D^{(s)}(W)$ rotates its spin. Along an accelerated orbit the infinitesimal Wigner rotations accumulate into Thomas precession, which halves the naive spin–orbit coupling of the hydrogen atom (the Thomas factor ½ of [[§B8.3 The Fine Structure of Hydrogen|QM §B8.3]], taken there without derivation). For massless particles the corresponding element is a rotation about the momentum, and it only changes a phase ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-5|Theorem §C8b.3.5]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 ("which is why 'spin along z' of a moving particle is not a boost-invariant notion") · the user's pre-course notes, §2.3 (Note on the Thomas–Wigner rotation, stated)*
+
+^rem-c8b-2-3
+
+## The Pauli–Lubanski vector
+
+> [!definition] Definition §C8b.2.3: Pauli–Lubanski Vector
+> The **Pauli–Lubanski vector** is the operator
+>
+> $$
+> \hat W^\mu \equiv -\frac12\,\varepsilon^{\mu\nu\rho\sigma}\hat J_{\nu\rho}\hat P_\sigma, \qquad \varepsilon^{0123} = +1 ,
+> $$
+>
+> built from the generators of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^def-c3-4-1|Def. §C3.4.1]] with indices lowered by $g$. (With PS's $\varepsilon^{0123} = -1$ the same formula defines $-\hat W^\mu$; [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]].)
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening.
+>
+> *Source: the user's pre-course notes, §2.3 (Note "P² as a Casimir operator": "the Pauli–Lubanski vector $W^\mu = -\frac12\varepsilon^{\mu\nu\rho\sigma}J_{\nu\rho}P_\sigma$", stated there); the properties below derived here*
+
+^def-c8b-2-3
+
+> [!theorem] Theorem §C8b.2.11: The Pauli–Lubanski Vector and the Second Casimir
+> 1. The order of the factors in $\hat W^\mu$ does not matter.
+> 2. $\hat W_\mu \hat P^\mu = 0$ and $[\hat W^\mu, \hat P^\nu] = 0$.
+> 3. $\hat W^\mu$ is translation invariant and a Lorentz vector: $U^{-1}(\Lambda, a)\,\hat W^\mu\,U(\Lambda, a) = \Lambda^\mu{}_\nu \hat W^\nu$.
+> 4. $\hat W^2 \equiv \hat W_\mu \hat W^\mu$ commutes with all ten generators: it is a Casimir operator, as is $\hat P^2$.
+> 5. On a state of momentum $k = (m, \mathbf 0)$, $\hat W^\mu$ acts as $(0, m\hat{\mathbf J})$: $\hat W^0|k, \sigma\rangle = 0$, $\hat W^i|k, \sigma\rangle = m\hat J^i|k, \sigma\rangle$.
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening.
+>
+> *Source: the user's pre-course notes, §2.3 (Note "P² as a Casimir operator", stated: "the Poincaré algebra has exactly one more independent Casimir"); derived here from Theorems §C3.4.7–§C3.4.8*
+
+^thm-c8b-2-11
+
+> [!derivation]- Derivation
+> **Step 1** ($[\hat J, \hat P]$ with lower indices). Lowering all indices in [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]] with $g$ (numbers pass through commutators): $[\hat J_{\nu\rho}, \hat P_\sigma] = i(g_{\rho\sigma}\hat P_\nu - g_{\nu\sigma}\hat P_\rho)$.
+>
+> **Step 2** (part 1). $\varepsilon^{\mu\nu\rho\sigma}(\hat J_{\nu\rho}\hat P_\sigma - \hat P_\sigma \hat J_{\nu\rho}) = i\varepsilon^{\mu\nu\rho\sigma}(g_{\rho\sigma}\hat P_\nu - g_{\nu\sigma}\hat P_\rho)$. Each term contracts the totally antisymmetric $\varepsilon$ with the symmetric $g$ in a pair of indices ($\rho\sigma$, resp. $\nu\sigma$), and vanishes (the sym·antisym rule, [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]]).
+>
+> **Step 3** ($\hat W\cdot \hat P$). $\hat W_\mu \hat P^\mu = -\frac12\varepsilon^{\mu\nu\rho\sigma}\hat J_{\nu\rho}\hat P_\sigma \hat P_\mu$. The product $\hat P_\sigma \hat P_\mu$ is symmetric in $\sigma\mu$ ($[\hat P_\sigma, \hat P_\mu] = 0$), $\varepsilon$ is antisymmetric in $\mu\sigma$: zero.
+>
+> **Step 4** ($[\hat W, \hat P]$). $\hat P_\sigma$ commutes with $\hat P^\lambda$, so $[\hat W^\mu, \hat P^\lambda] = -\frac12\varepsilon^{\mu\nu\rho\sigma}[\hat J_{\nu\rho}, \hat P^\lambda]\hat P_\sigma$. With Step 1 raised in its last index, $[\hat J_{\nu\rho}, \hat P^\lambda] = i(\delta_\rho{}^\lambda \hat P_\nu - \delta_\nu{}^\lambda \hat P_\rho)$:
+>
+> $$
+> [\hat W^\mu, \hat P^\lambda] = -\frac i2\bigl(\varepsilon^{\mu\nu\lambda\sigma}\hat P_\nu \hat P_\sigma - \varepsilon^{\mu\lambda\rho\sigma}\hat P_\rho \hat P_\sigma\bigr) = 0 ,
+> $$
+>
+> each term again antisymmetric $\varepsilon$ against the symmetric $\hat P_\nu \hat P_\sigma$.
+>
+> **Step 5** (transformation, part 3). Conjugate each factor with [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|Theorem §C3.4.7]], indices lowered: $U^{-1}\hat P_\sigma U = (\Lambda^{-1})^\gamma{}_\sigma \hat P_\gamma$ and $U^{-1}\hat J_{\nu\rho}U = (\Lambda^{-1})^\alpha{}_\nu(\Lambda^{-1})^\beta{}_\rho \hat J_{\alpha\beta} + (\text{terms } a_\nu(\Lambda \hat P)_\rho - a_\rho(\Lambda \hat P)_\nu)$, where $g_{\nu\mu}\Lambda^\mu{}_\alpha g^{\alpha\beta} = (\Lambda^{-1})^\beta{}_\nu$ by $\Lambda^{\mathsf T}g\Lambda = g$, and $(\Lambda \hat P)_\rho \equiv (\Lambda^{-1})^\gamma{}_\rho \hat P_\gamma$ is $U^{-1}\hat P_\rho U$.
+> - *The translation terms drop:* $\varepsilon^{\mu\nu\rho\sigma}a_\nu(\Lambda \hat P)_\rho(\Lambda \hat P)_\sigma = 0$ because $(\Lambda \hat P)_\rho(\Lambda \hat P)_\sigma$ is symmetric in $\rho\sigma$ (the transformed momenta commute); likewise the other term.
+> - *The Lorentz part:* $-\frac12\varepsilon^{\mu\nu\rho\sigma}(\Lambda^{-1})^\alpha{}_\nu(\Lambda^{-1})^\beta{}_\rho(\Lambda^{-1})^\gamma{}_\sigma \hat J_{\alpha\beta}\hat P_\gamma$. By [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 1 (indices raised by $g$), $\varepsilon^{\kappa\nu\rho\sigma}(\Lambda^{-1})^\delta{}_\kappa(\Lambda^{-1})^\alpha{}_\nu(\Lambda^{-1})^\beta{}_\rho(\Lambda^{-1})^\gamma{}_\sigma = \det(\Lambda^{-1})\,\varepsilon^{\delta\alpha\beta\gamma} = \varepsilon^{\delta\alpha\beta\gamma}$ for proper $\Lambda$. Multiply by $\Lambda^\mu{}_\delta$ and sum over $\delta$: $\varepsilon^{\mu\nu\rho\sigma}(\Lambda^{-1})^\alpha{}_\nu(\Lambda^{-1})^\beta{}_\rho(\Lambda^{-1})^\gamma{}_\sigma = \Lambda^\mu{}_\delta\,\varepsilon^{\delta\alpha\beta\gamma}$.
+> - Hence $U^{-1}\hat W^\mu U = \Lambda^\mu{}_\delta\bigl(-\frac12\varepsilon^{\delta\alpha\beta\gamma}\hat J_{\alpha\beta}\hat P_\gamma\bigr) = \Lambda^\mu{}_\delta \hat W^\delta$.
+>
+> **Step 6** (part 4). By Step 5, $U^{-1}\hat W^2U = g_{\mu\nu}\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta \hat W^\alpha \hat W^\beta = g_{\alpha\beta}\hat W^\alpha \hat W^\beta = \hat W^2$ for every $(\Lambda, a)$; differentiating at the identity (Def. §C3.4.1) gives $[\hat W^2, \hat J^{\mu\nu}] = [\hat W^2, \hat P^\mu] = 0$.
+>
+> **Step 7** (at rest, part 5). By part 1 put $\hat P_\sigma$ to the right; on $|k, \sigma\rangle$ it becomes $k_\sigma = (m, 0, 0, 0)$, so only $\sigma = 0$ contributes: $\hat W^\mu|k\rangle = -\frac m2\varepsilon^{\mu\nu\rho0}\hat J_{\nu\rho}|k\rangle$. For $\mu = 0$ the symbol has a repeated index: $\hat W^0 = 0$. For $\mu = i$: moving the index $0$ from the last to the first place is three transpositions, $\varepsilon^{ijk0} = -\varepsilon^{0ijk} = -\varepsilon_{ijk}$ (the three-dimensional symbol), and $\hat J_{jk} = \hat J^{jk}$ (two spatial indices lowered). So $\hat W^i|k\rangle = \frac m2\varepsilon_{ijk}\hat J^{jk}|k\rangle = m\hat J^i|k\rangle$ ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^def-c3-4-1|Def. §C3.4.1]]). (Checked symbolically.)
+>
+> **What the derivation shows.**
+> - $\hat W$ removes the orbital part of $\hat J$: it commutes with $\hat P$, so it acts within each momentum eigenspace, and at rest it is the spin. It is the covariant form of "the angular momentum in the rest frame".
+> - $\hat W\cdot \hat P = 0$: of the four components only three are independent, matching the three rotation generators of the massive little group.
+> - Used next: the Casimir values ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-12|Theorem §C8b.2.12]], [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-7|Theorem §C8b.3.7]]).
+
+^der-c8b-2-11
+
+*Uses:* [[§C8b.2 Particle States and the Little Group#^def-c8b-2-3|Def. §C8b.2.3]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|Theorem §C3.4.7]], [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|Theorem §C3.4.8]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]]
+
+> [!theorem] Theorem §C8b.2.12: The Casimirs of a Massive Particle
+> On every state of a massive particle of spin $s$,
+>
+> $$
+> \hat P^2 = m^2, \qquad \hat W^2 = -m^2\,s(s + 1) .
+> $$
+>
+> So mass and spin are the eigenvalues of the two Casimir operators, $m^2 = \hat P^2$ and $s(s + 1) = -\hat W^2/\hat P^2$, defined without reference to a frame.
+>
+> *Model:* any relativistic quantum theory ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]]); *applies:* as in the opening, $m > 0$.
+>
+> *Source: derived here from Theorems §C8b.2.9 and §C8b.2.11; the statement that the Casimir eigenvalue "encodes the spin covariantly" is in the user's pre-course notes, §2.3 (stated)*
+
+^thm-c8b-2-12
+
+> [!derivation]- Derivation
+> **Step 1** ($\hat P^2$). On $|p, \sigma\rangle$, $\hat P^2 = p^2 = m^2$ (Theorem §C8b.2.3, 3).
+>
+> **Step 2** ($\hat W^2$ at rest). By [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-11|Theorem §C8b.2.11]], 5, $\hat W^\mu|k, \sigma\rangle = (0, m\hat{\mathbf J})|k, \sigma\rangle$, and $\hat{\mathbf J}|k, \sigma\rangle$ is again a combination of states at $k$ ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-9|Theorem §C8b.2.9]], Step 4), so the second $\hat W$ acts by the same rule:
+>
+> $$
+> \hat W_\mu \hat W^\mu|k, \sigma\rangle = \bigl((\hat W^0)^2 - \textstyle\sum_i\hat W^i\hat W^i\bigr)|k, \sigma\rangle = -m^2\,\hat{\mathbf J}^2|k, \sigma\rangle = -m^2s(s + 1)|k, \sigma\rangle ,
+> $$
+>
+> $\hat{\mathbf J}^2$ acting as the spin Casimir $s(s + 1)$ on the multiplet ([[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^rem-c5-3-1|QM §C5.3, Remark: Eigenvalues and ladder matrix elements]]).
+>
+> **Step 3** (every momentum). $\hat W^2$ commutes with every $U$ (Theorem §C8b.2.11, 4), so $\hat W^2|p, \sigma\rangle = \hat W^2U(V(p))|k, \sigma\rangle = U(V(p))\hat W^2|k, \sigma\rangle = -m^2s(s + 1)|p, \sigma\rangle$.
+>
+> **What the derivation shows.**
+> - Step 3 is the general fact that a Casimir is constant on an irreducible representation ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-13|Theorem §CB.7.13]]), proved here by transport.
+> - The sign: $\hat W$ is spacelike for massive particles ($\hat W\cdot \hat P = 0$ with $\hat P$ timelike), so $\hat W^2 \le 0$.
+
+^der-c8b-2-12
+
+*Uses:* [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-3|Theorem §C8b.2.3]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-11|Theorem §C8b.2.11]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-9|Theorem §C8b.2.9]]
+
+> [!remark] Remark: What a field must contain
+> A particle is an infinite-dimensional unitary representation labelled by $(m, s)$; a field carries a finite-dimensional non-unitary one labelled by $(j_+, j_-)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-2|Def. §C3.2.2]]). They are tied together by rotations: a field that creates the particle must contain the spin-$s$ representation of its little group among the rotation content of its components, which for $(j_+, j_-)$ is $|j_+ - j_-|, \dots, j_+ + j_-$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]). A scalar, $(0, 0)$, contains spin 0 only ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]] is that particle). A four-vector, $(\frac12, \frac12)$, contains spin 0 and spin 1, and a massive vector field must remove the spin-0 part by a constraint, $\partial_\mu A^\mu = 0$ ([[§C4.2★ The Proca Field#^thm-c4-2-4|Theorem §C4.2.4]]; the resulting spin-one quanta, [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-8|Theorem §C4.5.8]]). A Dirac field, $(\frac12, 0)\oplus(0, \frac12)$, contains spin $\frac12$ twice, and the Dirac equation decides how particle and antiparticle share them ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-2|Theorem §C5a.10.2]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^rem-c5a-10-2|§C5a.10, Remark: Two of each kind, and what they will describe]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]]). The mismatch between the $2s + 1$ states of a particle and the $(2j_+ + 1)(2j_- + 1)$ components of a field is the reason field equations carry constraints.
+>
+> *Source: the user's PHY 513 notes, Ch. 7 §7.7 ("States versus fields, once more")*
+
+^rem-c8b-2-5
+
+> [!abstract]- Mathematical background
+> Proved in CB and CA (and Group Theory); each line says what the physics above relies on.
+>
+> One particle species is one irreducible representation (Principle §C8b.2.1), and its Casimirs are numbers on it (Theorem §C8b.2.3):
+> - [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-6|Def. §CB.3.6]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-9|Def. §CB.3.9]] — representation; invariant subspace and irreducibility.
+> - [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-13|Theorem §CB.7.13]] with [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^der-cb-7-13|Derivation §CB.7.13]] — a Casimir is a number on an irreducible representation (Derivation §C8b.2.3 proves the case $\hat P^2$ directly; [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-9|Theorem §C3.4.9]]).
+>
+> The little group is a stabilizer in the sense of Group Theory:
+> - [[§26 Stabilizers and Fixed Points#^def-26-1|493 Def. §26.1]] — stabilizer (Def. §C8b.2.2).
+>
+> The characters of the translations, on which the Lorentz group acts by the dual action:
+> - [[§CB.22★ The Poincaré Group and Induced Representations#^def-cb-22-6|Def. §CB.22.6]], [[§CB.22★ The Poincaré Group and Induced Representations#^def-cb-22-8|Def. §CB.22.8]] — the characters $e^{ip\cdot a}$ and the action $p \mapsto \Lambda p$ (Theorem §C8b.2.3, 1).
+>
+> Theorem §C8b.2.5 is the physics form of the general induced representation:
+> - [[§CB.22★ The Poincaré Group and Induced Representations#^def-cb-22-11|Def. §CB.22.11]], [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-13|Theorem §CB.22.13]] with [[§CB.22★ The Poincaré Group and Induced Representations#^pf-cb-22-13|its proof]], [[§CB.22★ The Poincaré Group and Induced Representations#^rem-cb-22-1|§CB.22★, ★ Remark: The course's law as an induced representation]] — the induced representation is unitary, and the course's law is it, written for wave-packet coefficients.
+> - [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-14|Theorem §CB.22.14]] with [[§CB.22★ The Poincaré Group and Induced Representations#^pf-cb-22-14|its proof]], [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-15|Theorem §CB.22.15]] with [[§CB.22★ The Poincaré Group and Induced Representations#^pf-cb-22-15|its proof]] — irreducible exactly when $D$ is (Mackey), and every irreducible unitary representation is induced (Wigner–Mackey); the consequence paragraph of Theorem §C8b.2.5.
+>
+> The little groups of the orbits, in SL(2, ℂ) form (Theorem §C8b.2.7):
+> - [[§CB.22★ The Poincaré Group and Induced Representations#^thm-cb-22-10|Theorem §CB.22.10]] with [[§CB.22★ The Poincaré Group and Induced Representations#^pf-cb-22-10|its proof]] — the stabilizers $SU(2)$ and the double cover of $ISO(2)$.
+>
+> Massive particles carry spin $s$ (Theorem §C8b.2.9): the representations of the massive little group and their two-valued form on SO(3):
+> - [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]] with [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^der-cb-10-3|Derivation §CB.10.3]] — one irreducible representation $D^{(s)}$ for each $s$, dimension $2s + 1$ (physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-1|Theorems §C3.1.1]]–[[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-3|§C3.1.3]]).
+> - [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-13|Theorem §CB.10.13]] with [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^der-cb-10-13|Derivation §CB.10.13]] — integer $s$ on $SO(3)$, half-integer only on $SU(2)$, $D^{(s)}(-\mathbb 1) = (-1)^{2s}$; physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-2|Theorem §C3.1.2]].
+> - [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-21-11|Theorem §CB.21.11]] with [[§CB.21 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^der-cb-21-11|Derivation §CB.21.11]] — projective representations of $SO(3)$ are representations of $SU(2)$ (Derivation §C8b.2.9, step 1); physics form: [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^thm-c3-1-3|Theorem §C3.1.3]].
+>
+> Rotations act by the rotation itself (Theorem §C8b.2.10) because the generators transform as a tensor:
+> - [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]] with [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6|Derivation §CB.5.6]] — $D(\Lambda)^{-1}D(\mathcal J^{\rho\sigma})D(\Lambda) = \Lambda^\rho{}_\mu\Lambda^\sigma{}_\nu D(\mathcal J^{\mu\nu})$ (on states: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|Theorem §C3.4.7]]).
+>
+> The normalization of the induced states (Theorem §C8b.2.6) evaluates a continuous coefficient on the support of a delta function:
+> - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]] — the product of a smooth function with a distribution; for δ it gives $h\,\delta^3(\cdot - \mathbf k) = h(\mathbf k)\,\delta^3(\cdot - \mathbf k)$ (Derivation §C8b.2.5, Step 5; Derivation §C8b.2.6).
+
+> [!remark]- Connections
+> - Three inputs of the classification come from experiment, not from the representation theory: which orbits carry particles, that massless particles have finitely many states, and that the photon is massless — [[§C8b.2 Particle States and the Little Group#^law-c8b-2-2|Law §C8b.2.2]], [[§C8b.3 Massless Particles and Helicity#^law-c8b-3-4|Law §C8b.3.4]], [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^law-c4-6-4|Law §C4.6.4]].
+> - The scalar field's one-particle space ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]]) is the massive spin-0 case of Theorem §C8b.2.5: no labels, $D = 1$, $U(\Lambda)|\mathbf p\rangle = |\Lambda\mathbf p\rangle$ (PS (2.37)); the field's Fock space is built from that one irreducible representation by symmetric tensor products ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]).
+> - The orbits of [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]] are now the first label of a particle; [[§C1a.4 The Lorentz Group#^rem-c1a-4-2|§C1a.4, Remark: Why the orbits matter in field theory]] anticipated this, and the homogeneous-space statement $H^+_m \cong SO^+(1,3)/SO(3)$ is [[Homogeneous Spaces Are Coset Spaces]] applied to Def. §C8b.2.1.
+> - The relativistic normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] is exactly the one that the transport $U(V(p))$ preserves (Theorem §C8b.2.6), which explains after the fact why PS chose it.
+> - Spin in Quantum Mechanics was the response of states to rotations ([[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^pr-c5-1-2|QM Principle §C5.1.2]], [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-1|QM Theorem §C5.3.1]]); here it is the response of the rest-frame states, the only place where rotations are a symmetry of a single momentum, and the half-integer case is the double cover as in [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|QM Theorem §C5.2.8]].
+> - The Wigner rotation of Theorem §C8b.2.10 is the quantum version of the composition of non-collinear boosts ([[§B1.2 Lorentz Transformations and the Lorentz Group#^ex-b1-2-2|REL Example §B1.2.2]]) and of $[K^i, K^j] = -i\varepsilon_{ijk}J^k$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]).
+> - The Pauli–Lubanski vector is to the Poincaré group what the spin $\hat{\mathbf S} = \hat{\mathbf J} - \hat{\mathbf L}$ is to the Galilean description of a particle: the part of the angular momentum that does not depend on the origin; its Casimir $-\hat W^2/m^2 = s(s + 1)$ is the covariant version of $\hat{\mathbf S}^2$.
+> - The massive spin-$\frac12$ states with $\sigma = \pm\frac12$ are the two spin states of the electron used from Lecture 9 on ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-4|Theorem §C5a.10.4]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-8|Theorem §C5a.10.8]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]]), and the Wigner rotation is why Dirac spinors $u^s(p)$ are defined by boosting rest-frame spinors with $L(p)$.
+> - [[§CA.3 Products of Distributions and Operator-Valued Distributions#^thm-ca-3-1|Theorem §CA.3.1]] (the product of a smooth function and a distribution; for δ it gives $h\,\delta = h(\text{support})\,\delta$) is the step that makes the normalization of Theorem §C8b.2.6 independent of the Wigner element away from $p' = p$.
+> - Math: the little group is a stabilizer ([[§26 Stabilizers and Fixed Points#^def-26-1|493 Def. §26.1]]), conjugate along the orbit ([[§26 Stabilizers and Fixed Points#^prop-26-2|493 Prop. §26.2]]); the orbit is a coset space ([[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]], [[§14 Homogeneous Spaces#^lem-14-5|591 Lemma §14.5]]); the classification of unitary representations of $SU(2)$ is [[§CB.10 SU(2) and SO(3)꞉ Spin j, Topology and Symmetric Powers#^thm-cb-10-3|Theorem §CB.10.3]] with [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-16|Theorem §CB.7.16]].

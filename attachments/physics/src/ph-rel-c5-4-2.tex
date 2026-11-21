@@ -1,0 +1,19 @@
+% Figure for Relativity §C5.4 (Remark: the hole argument): a region of spacetime with matter (hatched) outside a hole H; a diffeomorphism phi equal to the identity outside H moves the point P inside H to P' = phi(P). The metric g and its pull-back phi^* g agree outside H and both solve the field equations with the same matter.
+\begin{tikzpicture}[font=\small, >={Stealth[length=2.2mm]}]
+  \draw[thick, black!70] plot[smooth cycle, tension=0.8] coordinates {(-4.2,-1.6) (-1.5,-2.3) (2.5,-2.0) (4.4,-0.6) (4.0,1.8) (0.8,2.5) (-2.8,2.2) (-4.6,0.6)};
+  \begin{scope}
+    \clip plot[smooth cycle, tension=0.8] coordinates {(-4.2,-1.6) (-1.5,-2.3) (2.5,-2.0) (4.4,-0.6) (4.0,1.8) (0.8,2.5) (-2.8,2.2) (-4.6,0.6)};
+    \fill[pattern=north east lines, pattern color=figO!80] (-5,-3) rectangle (5,3);
+    \fill[white] (0,0) ellipse (2.2 and 1.35);
+  \end{scope}
+  \draw[figB, thick, dashed] (0,0) ellipse (2.2 and 1.35);
+  \node[figB] at (1.55,1.25) {$H$};
+  \fill (-0.9,-0.2) circle (2.4pt) node[below left] {$P$};
+  \fill (0.9,0.35) circle (2.4pt) node[above] {$P' = \varphi(P)$};
+  \draw[->, thick] (-0.75,-0.1) to[bend left=25] node[below right, pos=0.5] {$\varphi$} (0.75,0.3);
+  \node[fill=white, inner sep=2pt, align=center, font=\scriptsize] at (-2.9,-1.05) {matter known;\\ $\varphi = \mathrm{id}$ here};
+  \node[align=left, font=\scriptsize, anchor=west] at (4.6,0.9) {$g$ and $\varphi^{\ast}g$:};
+  \node[align=left, font=\scriptsize, anchor=west] at (4.6,0.35) {equal outside $H$,};
+  \node[align=left, font=\scriptsize, anchor=west] at (4.6,-0.2) {both solutions,};
+  \node[align=left, font=\scriptsize, anchor=west] at (4.6,-0.75) {different inside $H$};
+\end{tikzpicture}

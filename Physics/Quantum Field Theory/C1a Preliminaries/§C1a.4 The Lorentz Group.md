@@ -178,13 +178,13 @@ The four components are a property of the group, a six-dimensional manifold. The
 >
 > So $B_z(-\eta)Rx = ae_3$: all of $S_a$ is the orbit of $ae_3$.
 >
-> **6. Null.** Let $x = \kappa(1, \hat{\mathbf n})$, $\kappa > 0$. Rotate $\hat{\mathbf n}$ to $\hat{\mathbf z}$: $\kappa(1, 0, 0, 1)$. Then $B_z(-\eta)$ gives $t' = \kappa(\cosh\eta - \sinh\eta) = \kappa e^{-\eta}$ and $z' = \kappa(-\sinh\eta + \cosh\eta) = \kappa e^{-\eta}$; with $\eta = \ln\kappa$ the result is $e_0 + e_3$. So $C^+$ is the orbit of $e_0 + e_3$, and, multiplying by $-1$ as in step 4, $C^-$ is the orbit of $-(e_0 + e_3)$. ⚑ By-product: a null vector can be rescaled by any positive factor but never brought to rest; the stabilizers of the normal forms (rotations for $me_0$; a three-parameter group for $e_0 + e_3$) are the little groups of massive and massless particles ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-8|Theorem §C3.6.8]], [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|Theorem §C3.7.1]]).
+> **6. Null.** Let $x = \kappa(1, \hat{\mathbf n})$, $\kappa > 0$. Rotate $\hat{\mathbf n}$ to $\hat{\mathbf z}$: $\kappa(1, 0, 0, 1)$. Then $B_z(-\eta)$ gives $t' = \kappa(\cosh\eta - \sinh\eta) = \kappa e^{-\eta}$ and $z' = \kappa(-\sinh\eta + \cosh\eta) = \kappa e^{-\eta}$; with $\eta = \ln\kappa$ the result is $e_0 + e_3$. So $C^+$ is the orbit of $e_0 + e_3$, and, multiplying by $-1$ as in step 4, $C^-$ is the orbit of $-(e_0 + e_3)$. ⚑ By-product: a null vector can be rescaled by any positive factor but never brought to rest; the stabilizers of the normal forms (rotations for $me_0$, [[§C1a.4 The Lorentz Group#^thm-c1a-4-5|Theorem §C1a.4.5]]; a three-parameter group for $e_0 + e_3$) are the little groups of massive and massless particles ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-8|Theorem §C8b.2.8]], [[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorem §C8b.3.1]]).
 >
 > **7. The origin** is fixed by every linear map. The sets listed are disjoint and cover $\mathbb R^4$, as orbits must ([[§27 Orbits#^prop-27-1|493 Prop. §27.1]]).
 >
 > **What the derivation shows**
 > - $x^2$ and, off the spacelike region, $\operatorname{sgn}x^0$ are complete invariants; on $S_a$ nothing but $x^2$ survives. ⚑ By-product: $S_a$ contains both $ae_3$ and $-ae_3$, so the sign of $x^0$ is not an invariant of spacelike vectors → [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]], 3.
-> - Transitivity used the boosts $B(u)$ of [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], 2, and the rotations; the orbit $H^+_m$ is the set of four-momenta of a particle of mass $m$, with stabilizer $SO(3)$ (the rest frame is unique up to rotation).
+> - Transitivity used the boosts $B(u)$ of [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], 2, and the rotations; the orbit $H^+_m$ is the set of four-momenta of a particle of mass $m$, with stabilizer $SO(3)$ (the rest frame is unique up to rotation; [[§C1a.4 The Lorentz Group#^thm-c1a-4-5|Theorem §C1a.4.5]]).
 > - Used next: Lorentz-invariant functions and distributions are constant on these orbits ([[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], step 4).
 
 ^der-c1a-4-3
@@ -234,11 +234,42 @@ The four components are a property of the group, a six-dimensional manifold. The
 > - **Positive energy.** A particle's momentum lies on $H^+_m$ (or $C^+$ for $m = 0$), an orbit: "the energy is positive" survives every orthochronous change of frame, and $\theta(p^0)\delta(p^2 - m^2)\,d^4p$ is the invariant measure on it ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]).
 > - **Invariant functions are functions of the orbit.** A Lorentz-invariant two-point function depends on $x^2$ and, inside the cone, on $\operatorname{sgn}x^0$ only; this is why the Wightman function needs one evaluation per orbit type ([[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]]).
 > - **Microcausality.** At spacelike separation $x$ and $-x$ are in one orbit, so an invariant function cannot tell them apart and the commutator $D_W(x) - D_W(-x)$ vanishes; inside the cone they are in different orbits and it need not ([[§C2b.5 Microcausality and the Commutator Function#^thm-c2b-5-5|Theorem §C2b.5.5]]).
-> - **Particles.** The orbits of momenta classify one-particle states: $H^+_m$ massive, $C^+$ massless, $S_a$ tachyonic (no stable vacuum), $p = 0$ the vacuum ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-3|Theorem §C3.6.3]], [[§C3.6★ Particle States and the Little Group#^thm-c3-6-7|Theorem §C3.6.7]], [[§C3.6★ Particle States and the Little Group#^rem-c3-6-2|§C3.6★, Remark: The orbits at a glance]]).
+> - **Particles.** The orbits of momenta classify one-particle states: $H^+_m$ massive, $C^+$ massless, $S_a$ tachyonic (no stable vacuum), $p = 0$ the vacuum ([[§C8b.2 Particle States and the Little Group#^thm-c8b-2-3|Theorem §C8b.2.3]], [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-7|Theorem §C8b.2.7]], [[§C8b.2 Particle States and the Little Group#^rem-c8b-2-2|§C8b.2, Remark: The orbits at a glance]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.3 ("the same structure recurs three times in the course")*
 
 ^rem-c1a-4-2
+
+## The stabilizer of a momentum
+
+> [!theorem] Theorem §C1a.4.5: The Stabilizer of a Timelike Vector Is the Rotation Group
+> Let $k = me_0 = (m, 0, 0, 0)$ with $m > 0$.
+> 1. A Lorentz transformation $\Lambda \in O(1,3)$ fixes $k$, $\Lambda k = k$, if and only if $\Lambda = \operatorname{diag}(1, R)$ with $R \in O(3)$. Inside $SO^+(1,3)$ these are exactly the $\operatorname{diag}(1, R)$ with $R \in SO(3)$: the stabilizer of $k$ in $SO^+(1,3)$ ([[§26 Stabilizers and Fixed Points#^def-26-1|493 Def. §26.1]]) is the rotation group.
+> 2. If $p = \Lambda_0k$ lies in the orbit of $k$ ([[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]]), then $\Lambda p = p$ if and only if $\Lambda = \Lambda_0\,\Lambda'\,\Lambda_0^{-1}$ with $\Lambda'k = k$: the stabilizers of two vectors on one orbit are conjugate, hence isomorphic. This part holds for every orbit, not only the timelike ones.
+>
+> *Source: the by-product of Derivation §C1a.4.3 (step 6 and "What the derivation shows"), stated and proved here as its own box (2026-11-18) · the user's PHY 513 notes, Ch. 7 §7.7 (Derivation "Massive particles: the little group is SO(3), and the label is spin", first paragraph) · Yu Zhao-Huan, 量子场论讲义, §3.3.1, first paragraph · conjugacy: Group Theory (493), Proposition §26.2*
+
+^thm-c1a-4-5
+
+> [!derivation]- Derivation
+> **1. The first column.** $\Lambda k = k$ reads $\Lambda^\mu{}_0\,m = k^\mu = m\,\delta^\mu{}_0$ component by component. Dividing by $m \ne 0$: $\Lambda^\mu{}_0 = \delta^\mu{}_0$, so the first column of $\Lambda$ is $(1, 0, 0, 0)^{\mathsf T}$.
+>
+> **2. The first row.** $\Lambda^{\mathsf T}g\Lambda = g$ ([[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). Its $(0, i)$ entry, $i = 1, 2, 3$, is $\sum_\mu g_{\mu\mu}\,\Lambda^\mu{}_0\,\Lambda^\mu{}_i = g_{0i} = 0$. By step 1 only $\mu = 0$ contributes, with $g_{00}\Lambda^0{}_0 = 1$, so $\Lambda^0{}_i = 0$: the first row is $(1, 0, 0, 0)$.
+>
+> **3. The spatial block.** By steps 1–2, $\Lambda = \operatorname{diag}(1, R)$ with a real $3\times3$ matrix $R$. The $(i, j)$ entries of $\Lambda^{\mathsf T}g\Lambda = g$ are $-(R^{\mathsf T}R)_{ij} = -\delta_{ij}$, so $R^{\mathsf T}R = \mathbb 1$: $R \in O(3)$. Conversely, for $R \in O(3)$ the matrix $\operatorname{diag}(1, R)$ satisfies $\Lambda^{\mathsf T}g\Lambda = \operatorname{diag}(1, -R^{\mathsf T}R) = g$ and its first column is $(1, 0, 0, 0)^{\mathsf T}$, so it is a Lorentz transformation that fixes $k$.
+>
+> **4. The components.** $\Lambda^0{}_0 = 1 > 0$, so every such $\Lambda$ is orthochronous, and $\det\Lambda = \det R = \pm1$. By the two signs of [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], 1, $\Lambda \in SO^+(1,3)$ exactly when $\det R = +1$, i.e. $R \in SO(3)$; for $\det R = -1$, $\Lambda$ lies in the component $\mathcal P\cdot SO^+(1,3)$. This is part 1.
+>
+> **5. Conjugacy.** Let $p = \Lambda_0k$. Then $\Lambda p = p$ reads $\Lambda\Lambda_0k = \Lambda_0k$; multiplying by $\Lambda_0^{-1}$, this holds if and only if $(\Lambda_0^{-1}\Lambda\Lambda_0)k = k$, i.e. $\Lambda' \equiv \Lambda_0^{-1}\Lambda\Lambda_0$ fixes $k$ and $\Lambda = \Lambda_0\Lambda'\Lambda_0^{-1}$. This is [[§26 Stabilizers and Fixed Points#^prop-26-2|493 Prop. §26.2]], $\operatorname{Stab}(g\star x) = g\operatorname{Stab}(x)g^{-1}$, for the action $x \mapsto \Lambda x$ of the Lorentz group on $\mathbb R^4$ ([[§25 Actions#^def-25-1|493 Def. §25.1]]). Conjugation by $\Lambda_0$ is a group isomorphism. Nothing in this step used that $k$ is timelike. This is part 2.
+>
+> **What the derivation shows**
+> - Only $\Lambda k = k$ and $\Lambda^{\mathsf T}g\Lambda = g$ were used: a frame in which a massive particle is at rest is unique up to a rotation, and the stabilizer of any timelike momentum $p \in H^+_m$ is the rotation group of its rest frame, carried to $p$ by the boost $B(p/m)$ of Theorem §C1a.4.2, 2.
+> - A null vector has no rest frame, and its stabilizer is a different, three-parameter group that is not compact ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorem §C8b.3.1]]).
+> - Used next: the split of a four-vector by a timelike momentum into spin 0 and spin 1 ([[§C4.1 The Vector Field and Its Lorentz Transformation#^thm-c4-1-2|Theorem §C4.1.2]]). In the theory of particle states the stabilizer of a momentum is called its *little group*; the same statement in that language, with the representations it leads to, is [[§C8b.2 Particle States and the Little Group#^thm-c8b-2-8|Theorem §C8b.2.8]] (chapter C8b).
+
+^der-c1a-4-5
+
+*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], [[§26 Stabilizers and Fixed Points#^def-26-1|493 Def. §26.1]], [[§26 Stabilizers and Fixed Points#^prop-26-2|493 Prop. §26.2]], [[§25 Actions#^def-25-1|493 Def. §25.1]]
 
 > [!abstract]- Mathematical background
 > Proved in CA and CB; each line says what the physics above relies on.
@@ -265,7 +296,7 @@ The four components are a property of the group, a six-dimensional manifold. The
 > - The template $M^{\mathsf T}GM = G$ gives $O(N)$ for $G = \mathbb 1$, $O(1,3)$ for $G = g$, and the symplectic group for an antisymmetric $G$; the transpose is the change-of-basis rule for bilinear forms — [[§B1.2 Lorentz Transformations and the Lorentz Group|REL §B1.2]] (Connections), [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-7|LADR Thm. 9.7]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|591 Def. §11.7]].
 > - The matrix groups of [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]] are matrix Lie groups, each with a Lie algebra of generators and its structure constants — [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-3|Def. §CB.1.3]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-13|Def. §CB.1.13]].
 > - The homomorphism $\Lambda \mapsto (\det\Lambda, \operatorname{sgn}\Lambda^0{}_0)$ plays for $O(1,3)$ the role that $\det$ plays for $O(3)$ and $GL(n, \mathbb R)$, whose two components are its fibres — [[§16 The Classical Groups#^thm-16-2|591 Thm. §16.2]]; the sign of a permutation is the same kind of map onto $\mathbb Z_2$ — [[§21 The Sign Homomorphism and the Alternating Group|493 §21]].
-> - Each future sheet is a homogeneous space, $H^+_m \cong SO^+(1,3)/SO(3)$, by orbit–stabilizer; the same construction with the stabilizer of a null vector gives the massless little group of Wigner's classification ([[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|Theorem §C3.7.1]]) — [[Homogeneous Spaces Are Coset Spaces]], [[§30 Orbit–Stabilizer|493 §30]].
+> - Each future sheet is a homogeneous space, $H^+_m \cong SO^+(1,3)/SO(3)$, by orbit–stabilizer (the stabilizer: [[§C1a.4 The Lorentz Group#^thm-c1a-4-5|Theorem §C1a.4.5]]); the same construction with the stabilizer of a null vector gives the massless little group of Wigner's classification ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-1|Theorem §C8b.3.1]]) — [[Homogeneous Spaces Are Coset Spaces]], [[§30 Orbit–Stabilizer|493 §30]].
 > - $\theta(p^0)$ is invariant on $H^+_m$ for the same reason that "future" is invariant for timelike displacements: both are the statement that the two timelike sheets are separate orbits — [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-1|§C1a.3, Remark: Why the future cannot be boosted into the past]].
 > - The invariant distributions $\theta(\pm p^0)\delta(p^2 - m^2)$ and $\theta(\pm x^0)\delta(x^2)$ are exactly the orbit measures on $H^\pm_m$ and $C^\pm$ — [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]].
 > - The six parameters of $SO^+(1,3)$ and the four translations are the ten conserved charges of a relativistic field theory — [[§B1.2 Lorentz Transformations and the Lorentz Group#^rem-b1-2-5|REL Remark: Ten parameters, ten conservation laws]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum|§C1b.7]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]].

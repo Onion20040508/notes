@@ -1,0 +1,413 @@
+---
+type: section
+subject: "[[Quantum Field Theory]]"
+level: C
+chapter: C8a
+section: C8a.7
+conventions: "[[Larsen PHY 513]]"
+tags: [quantum-field-theory, level-c]
+---
+← [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon]] · ↑ [[· C8a Quantum Electrodynamics]] · [[§C8a.8 The Unpolarized Cross Section for Muon Pair Production]] →
+
+*Sources: PHY 513 Lecture 19 (Larsen, 11 Nov 2026), slides 3, 11–15 (Part B), and transcript · the user's PHY 513 notes, Lecture 19 update, §19.2 "Squaring the amplitude" (Derivation "Complex conjugate of a bilinear", paragraph "The square", subsection "The spin average": Definition "Spin average", paragraph "Asked in the lecture: why can the last $v$ be brought around to the front?", Principle "The spin-averaged squared amplitude as traces", Cautions "$m_\mu$ is the muon mass", "The order inside the muon trace on the slide"), §19.3 "Traces of Dirac matrices" (paragraph "The electron trace", Derivation "Contracting the two traces", Principle "Spin-averaged $e^+e^- \to \mu^+\mu^-$" and the paragraph after it), paragraph "Correspondence with Yu" · Peskin & Schroeder, An Introduction to Quantum Field Theory, §5.1, pp. 132–135, eqs. (5.2)–(5.5), (5.10) · Yu Zhao-Huan, 量子场论讲义, §8.2.1, eqs. (8.40)–(8.43); §8.2.3, eqs. (8.78)–(8.80) (page images checked).*
+
+A cross section needs $|\mathcal M|^2$, and the amplitude of [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^thm-c8a-6-2|Theorem §C8a.6.2]] still carries four spinors and four spin labels. This section squares it and removes the spinors. The complex conjugate of a bilinear is the bilinear read backwards ([[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-1|Theorem §C8a.7.1]]), so $|\mathcal M|^2$ is a product of four brackets ([[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-2|Theorem §C8a.7.2]]). If the spins are not measured, one sums over the final and averages over the initial ones ([[§C8a.7 The Spin-Averaged Squared Amplitude#^def-c8a-7-1|Def. §C8a.7.1]]); the completeness relations then close each fermion line into a trace of Dirac matrices ([[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-3|Theorem §C8a.7.3]], [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-4|Theorem §C8a.7.4]]). The traces are evaluated with the trace theorems of [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|Theorem §C5a.13.3]], which Lecture 19 teaches and which are not restated here ([[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-5|Theorem §C8a.7.5]]), and contracting the two results leaves a function of the invariants $p\cdot k$, $p\cdot k'$, … and the masses only ([[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-6|Theorem §C8a.7.6]]). No frame is chosen in this section; that is [[§C8a.8 The Unpolarized Cross Section for Muon Pair Production|§C8a.8]].
+
+**Setup.** As in [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon|§C8a.6]]: [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^mod-c8a-6-1|Model §C8a.6.1]], order $e^2$, free relativistic states, on-shell external momenta, both masses kept. The spinors $u^s(p)$, $v^s(p)$ are c-number solutions of the free Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]) with any spin basis; nothing depends on the basis after the sum ([[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]]).
+
+*Conventions* ([[Larsen PHY 513]]): $\bar a = a^\dagger\gamma^0$; spinor indices $a, b, c, d = 1, \dots, 4$, summed when repeated; $\operatorname{tr}$ is the trace over spinor indices; $q^4 \equiv (q^2)^2$; $\frac14\sum_{\rm spins}$ as in [[§C8a.7 The Spin-Averaged Squared Amplitude#^def-c8a-7-1|Def. §C8a.7.1]] (Yu: $\overline{|\mathcal M|^2}$). The first derivation uses the chiral basis $\gamma^\mu = \bigl(\begin{smallmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{smallmatrix}\bigr)$, $\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]); every result is basis independent.
+
+## Squaring the amplitude
+
+> [!theorem] Theorem §C8a.7.1: The Complex Conjugate of a Vector Bilinear Reverses It
+> For the bilinears of [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^thm-c8a-6-2|Theorem §C8a.6.2]], with $u = u^s(p)$, $v = v^{s'}(p')$ in the first and $u = u^r(k)$, $v = v^{r'}(k')$ in the second,
+>
+> $$
+> \bigl(\bar v\gamma^\mu u\bigr)^\ast = \bar u\gamma^\mu v , \qquad \bigl(\bar u\gamma_\mu v\bigr)^\ast = \bar v\gamma_\mu u .
+> $$
+>
+> The conjugate of a bilinear exchanges the two spinors as a Hermitian conjugate would, $u \leftrightarrow v$, with the bar moving to the new left end. The derivation treats the spinors as columns of numbers and uses no other property of them. *Equivalently,* this is Step 1 of [[§C5a.6 The Dirac Conjugate and the Bilinears#^der-c5a-6-4|Derivation §C5a.6.4]] with two different spinors and $\Gamma = \gamma^\mu$, for which $\bar\Gamma = \gamma^0\gamma^{\mu\dagger}\gamma^0 = \gamma^\mu$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]).
+>
+> *Model:* none; *applies:* c-number spinors (no field equation used).
+>
+> *Source: PHY 513 Lecture 19, slide 11 ("Very simple! Example: $(\bar v\gamma^\nu u)^\ast = u^\dagger\gamma^{\nu\dagger}\gamma^{0\dagger}v = \bar u\gamma^\nu v$", with $\gamma^{\nu\dagger}\gamma^{0\dagger} = \gamma^0\gamma^\nu$ under the brace) · the user's PHY 513 notes, Lecture 19 update, §19.2, Derivation "Complex conjugate of a bilinear", eq. (bilinearconj), and the paragraph after it · PS §5.1, p. 132 ("This is another advantage of the 'bar' notation") · Yu §8.2.1, eq. (8.40) and its footnote*
+
+^thm-c8a-7-1
+
+> [!derivation]- Derivation
+> **Step 1** (a number is its own transpose). $\bar v\gamma^\mu u = v^\dagger\gamma^0\gamma^\mu u$ is a $1\times1$ matrix, so its complex conjugate equals its Hermitian conjugate, and the Hermitian conjugate of a product reverses the order:
+>
+> $$
+> \bigl(v^\dagger\gamma^0\gamma^\mu u\bigr)^\ast = \bigl(v^\dagger\gamma^0\gamma^\mu u\bigr)^\dagger = u^\dagger\,\gamma^{\mu\dagger}\,\gamma^{0\dagger}\,v .
+> $$
+>
+> **Step 2** (the matrices). $\gamma^{0\dagger} = \gamma^0$ and $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]), so $\gamma^{\mu\dagger}\gamma^0 = \gamma^0\gamma^\mu(\gamma^0)^2 = \gamma^0\gamma^\mu$ and
+>
+> $$
+> u^\dagger\gamma^{\mu\dagger}\gamma^0v = u^\dagger\gamma^0\gamma^\mu v = \bar u\gamma^\mu v .
+> $$
+>
+> Exchanging the names of the two spinors gives the second formula of the statement.
+>
+> **Step 3** (the same in the chiral basis, as the lecture sees it). Each block of $\gamma^\mu = \bigl(\begin{smallmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{smallmatrix}\bigr)$ is the identity or a Pauli matrix and is Hermitian, so the dagger exchanges the two blocks: $\gamma^{\mu\dagger} = \bigl(\begin{smallmatrix}0 & \bar\sigma^\mu\\ \sigma^\mu & 0\end{smallmatrix}\bigr)$. For $\mu = 0$ nothing changes. For $\mu = i$ the blocks differ by a sign, $\bar\sigma^i = -\sigma^i$, so $\gamma^{i\dagger} = -\gamma^i$: one minus sign. Moving the $\gamma^0$ to the other side, $\gamma^i\gamma^0 = -\gamma^0\gamma^i$, costs another: $\gamma^{i\dagger}\gamma^0 = -\gamma^i\gamma^0 = +\gamma^0\gamma^i$.
+>
+> **Step 4** (lower index). $g_{\mu\nu}$ is real, so the same holds for $\gamma_\mu = g_{\mu\nu}\gamma^\nu$.
+>
+> **What the derivation shows.**
+> - Done once, the rule is used for every bilinear of an amplitude. Nothing of the structure of the spinors is needed, unlike for the C, P and T operations ([[· C9 Discrete Symmetries and Majorana Fields|C9]]).
+> - Used next: the square of the amplitude → [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-2|Theorem §C8a.7.2]].
+
+^der-c8a-7-1
+
+*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]
+
+> [!theorem] Theorem §C8a.7.2: The Squared Amplitude for Fixed Spins
+> For the amplitude of [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^thm-c8a-6-2|Theorem §C8a.6.2]],
+>
+> $$
+> |\mathcal M|^2 = \frac{e^4}{q^4}\,\bigl[\bar v^{s'}(p')\gamma^\mu u^s(p)\bigr]\bigl[\bar u^s(p)\gamma^\nu v^{s'}(p')\bigr]\times\bigl[\bar u^r(k)\gamma_\mu v^{r'}(k')\bigr]\bigl[\bar v^{r'}(k')\gamma_\nu u^r(k)\bigr] .
+> $$
+>
+> 1. The first pair of brackets is the square of the $e^+e^-$ vertex, the second the square of the $\mu^+\mu^-$ vertex.
+> 2. $e^4$: each vertex carried one $e$. Two vertices gave four fermion wave functions, and squaring gives eight.
+> 3. In the conjugate factor the summed index is renamed $\mu \to \nu$, because $\mu$ is already summed in $\mathcal M$.
+> 4. $q^4$ means $(q^2)^2$; $q^2$ is the square of a four-vector, and a fourth power of a four-vector has no other meaning.
+>
+> *Model:* [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^mod-c8a-6-1|Model §C8a.6.1]]; *applies:* order $e^2$ in $\mathcal M$ (order $e^4$ in the square), fixed spins $s, s', r, r'$ (no sum over them).
+>
+> *Source: PHY 513 Lecture 19, slide 11 ("Complete result: $|\mathcal M|^2 = \frac{e^4}{q^4}\bigl(\bar v^{s'}(p')\gamma^\mu u^s(p)\bigr)\bigl(\bar u^s(p)\gamma^\nu v^{s'}(p')\bigr)\times\bigl(\bar u^r(k)\gamma_\mu v^{r'}(k')\bigr)\bigl(\bar v^{r'}(k')\gamma_\nu u^r(k)\bigr)$. 1st line: square of $e^+e^-$ vertex. 2nd line: square of $\mu^+\mu^-$ vertex. $q^2$ is the square of a 4-vector. We write $q^4 = (q^2)^2$ anyway") · the user's PHY 513 notes, Lecture 19 update, §19.2, paragraph "The square", eq. (eemumuM2spins) · PS §5.1, eq. (5.2) · Yu §8.2.1, eqs. (8.41)–(8.42)*
+
+^thm-c8a-7-2
+
+> [!derivation]- Derivation
+> **Step 1** (the amplitude). $\mathcal M = \frac{e^2}{q^2}\bigl[\bar v^{s'}(p')\gamma^\mu u^s(p)\bigr]\bigl[\bar u^r(k)\gamma_\mu v^{r'}(k')\bigr]$ ([[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^thm-c8a-6-2|Theorem §C8a.6.2]], divided by $i$).
+>
+> **Step 2** (its conjugate). $e$ and $q^2$ are real; write the summed index as $\nu$ and conjugate each bracket with [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-1|Theorem §C8a.7.1]]:
+>
+> $$
+> \mathcal M^\ast = \frac{e^2}{q^2}\bigl[\bar v^{s'}(p')\gamma^\nu u^s(p)\bigr]^\ast\bigl[\bar u^r(k)\gamma_\nu v^{r'}(k')\bigr]^\ast = \frac{e^2}{q^2}\bigl[\bar u^s(p)\gamma^\nu v^{s'}(p')\bigr]\bigl[\bar v^{r'}(k')\gamma_\nu u^r(k)\bigr] .
+> $$
+>
+> **Step 3** (the product). The brackets are numbers and commute; grouping the two with electron spinors and the two with muon spinors gives the statement.
+>
+> **What the derivation shows.**
+> - In each pair the same spinor appears twice with the same momentum and spin, as $u^s(p)$ and $\bar u^s(p)$, $v^{s'}(p')$ and $\bar v^{s'}(p')$: once the spin is summed, a completeness relation applies → [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-3|Theorem §C8a.7.3]].
+
+^der-c8a-7-2
+
+*Uses:* [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^thm-c8a-6-2|Theorem §C8a.6.2]], [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-1|Theorem §C8a.7.1]]
+
+*Procedure:* [[P8 Unpolarized Cross Section from Diagrams#^p8-3|P8, step 3]]
+
+## The spin average
+
+> [!definition] Definition §C8a.7.1: Spin Average
+> The **spin average** of $|\mathcal M|^2$ is the sum over all final spins and the average over all initial spins. For two spin-$\frac12$ particles in and two out,
+>
+> $$
+> \frac14\sum_{\rm spins}|\mathcal M|^2 \equiv \frac12\sum_s\,\frac12\sum_{s'}\,\sum_{r, r'}|\mathcal M|^2 :
+> $$
+>
+> sixteen terms, divided by 4 because each initial particle has two spin states. The final spins are summed because they are not measured; the initial ones are averaged because they are unknown but each particle was in some state. "Spin average" is short for "sum over final, average over initial". It is a simplification, not a necessity, and the usual first pass at any process; what the amplitude does spin by spin is the helicity structure (Lecture 20; [[§C8b.6 Helicity Conservation at the QED Vertex|§C8b.6]]–[[§C8b.7 Polarized Cross Sections for Muon Pair Production|§C8b.7]]).
+>
+> *Equivalently,* this is $\overline{|\mathcal M|^2}$ of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]] with $s_A = s_B = \frac12$, and the cross section built from it is the unpolarized cross section defined there.
+>
+> *Model:* as in [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]; *applies:* unpolarized beams and detectors blind to spin.
+>
+> *Source: PHY 513 Lecture 19, slide 12 ("Simplification: sum over all final spins $\sum_{rr'}$ and average over all initial spins $\frac14\sum_{ss'}$"), and transcript · the user's PHY 513 notes, Lecture 19 update, §19.2, Definition "Spin average" · PS §5.1, p. 132 ("In most experiments the electron and positron beams are unpolarized, so the measured cross section is an average over the electron and positron spins $s$ and $s'$. Muon detectors are normally blind to polarization, so the measured cross section is a sum over the muon spins $r$ and $r'$") · Yu §8.2.1, eq. (8.43), first line ($\overline{|\mathcal M|^2}$)*
+
+^def-c8a-7-1
+
+> [!theorem] Theorem §C8a.7.3: A Spin-Summed Fermion Line Is a Trace
+> Summed over the spins, the two pairs of brackets of [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-2|Theorem §C8a.7.2]] become
+>
+> $$
+> \sum_{s, s'}\bigl[\bar v^{s'}(p')\gamma^\mu u^s(p)\bigr]\bigl[\bar u^s(p)\gamma^\nu v^{s'}(p')\bigr] = \operatorname{tr}\bigl[(\slashed p' - m_e)\gamma^\mu(\slashed p + m_e)\gamma^\nu\bigr] ,
+> $$
+>
+> $$
+> \sum_{r, r'}\bigl[\bar u^r(k)\gamma_\mu v^{r'}(k')\bigr]\bigl[\bar v^{r'}(k')\gamma_\nu u^r(k)\bigr] = \operatorname{tr}\bigl[(\slashed k + m_\mu)\gamma_\mu(\slashed k' - m_\mu)\gamma_\nu\bigr] .
+> $$
+>
+> 1. Each sum over a spin replaces a column times a row by a matrix: $\sum_su^s(p)\bar u^s(p) = \slashed p + m$ for a particle, $\sum_sv^s(p)\bar v^s(p) = \slashed p - m$ for an antiparticle ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]]).
+> 2. The spinor at the far right of the product and the conjugate spinor at the far left belong to the same particle. Written with spinor indices every factor is a number and can be moved, so the two meet and are summed as well; the index contraction left over is a trace (**Casimir's trick**).
+> 3. One fermion line gives one trace. The spinors are gone: what remains are Dirac matrices, momenta and masses.
+>
+> The general form, for any matrix between the spinors and any combination of $u$ and $v$, is [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-7|Theorem §C8a.7.7]].
+>
+> *Equivalently,* this is [[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]] realized on Dirac spinors: there the sum over a spin basis is a completeness relation on the two-dimensional spin space; here the two spin states are carried by four-component spinors, and their completeness relation is $\slashed p \pm m$ in place of the identity.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] (the spinors); *applies:* on-shell momenta, any spin basis; the lines of [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^thm-c8a-6-2|Theorem §C8a.6.2]].
+>
+> *Source: PHY 513 Lecture 19, slide 12 ("Completeness (see cheat sheet): $\sum_{ss'}\bigl(\bar v^{s'}(p')\gamma^\mu u^s(p)\bigr)\bigl(\bar u^s(p)\gamma^\nu v^{s'}(p')\bigr) = \operatorname{tr}\bigl[(\slashed p' - m_e)\gamma^\mu(\slashed p + m_e)\gamma^\nu\bigr]$"), slide 3, and transcript · the user's PHY 513 notes, Lecture 19 update, §19.2, subsection "The spin average" (the paragraph after Definition "Spin average"; the name Casimir trick is filled in there), paragraph "Asked in the lecture: why can the last $v$ be brought around to the front?" · PS §5.1, p. 132, eq. (5.3) and the display after it ("writing in spinor indices so we can freely move the $v$ next to the $\bar v$") · Yu §8.2.1, eq. (8.42) and the paragraph after it ("运用 Casimir 技巧之后，Feynman 图中的一条费米子线通常对应于一个迹")*
+
+^thm-c8a-7-3
+
+> [!derivation]- Derivation
+> **Step 1** (indices). Write the spinor indices of the electron line; each symbol is then a number:
+>
+> $$
+> \sum_{s, s'}\bar v^{s'}_a(p')\,\gamma^\mu_{ab}\,u^s_b(p)\;\bar u^s_c(p)\,\gamma^\nu_{cd}\,v^{s'}_d(p') .
+> $$
+>
+> **Step 2** (the sum over $s$). $u^s_b(p)$ and $\bar u^s_c(p)$ stand next to each other; [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]] in components is $\sum_su^s_b(p)\bar u^s_c(p) = (\slashed p + m_e)_{bc}$.
+>
+> **Step 3** (the sum over $s'$). Move the number $v^{s'}_d(p')$ from the right end to the left end, next to $\bar v^{s'}_a(p')$; [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]] in components is $\sum_{s'}v^{s'}_d(p')\bar v^{s'}_a(p') = (\slashed p' - m_e)_{da}$. So
+>
+> $$
+> \sum_{s'}v^{s'}_d(p')\bar v^{s'}_a(p')\;\gamma^\mu_{ab}\,(\slashed p + m_e)_{bc}\,\gamma^\nu_{cd} = (\slashed p' - m_e)_{da}\,\gamma^\mu_{ab}\,(\slashed p + m_e)_{bc}\,\gamma^\nu_{cd} .
+> $$
+>
+> **Step 4** (the trace). The sums over $a$, $b$, $c$ are matrix products: $(\slashed p' - m_e)_{da}\bigl[\gamma^\mu(\slashed p + m_e)\gamma^\nu\bigr]_{ad} = \bigl[(\slashed p' - m_e)\gamma^\mu(\slashed p + m_e)\gamma^\nu\bigr]_{dd}$. The first index of the product is set equal to the last and summed: the trace.
+>
+> **Step 5** (the muon line). The same steps on $\sum_{r, r'}\bar u^r_a(k)(\gamma_\mu)_{ab}v^{r'}_b(k')\,\bar v^{r'}_c(k')(\gamma_\nu)_{cd}u^r_d(k)$: the sum over $r'$ gives $(\slashed k' - m_\mu)_{bc}$, the sum over $r$, after moving $u^r_d(k)$ to the front, $(\slashed k + m_\mu)_{da}$; the result is $\bigl[(\slashed k + m_\mu)\gamma_\mu(\slashed k' - m_\mu)\gamma_\nu\bigr]_{dd}$.
+>
+> **What the derivation shows.**
+> - ⚑ By-product: the signs of the masses come from the completeness relations: $+m_e$ from the electron's $u\bar u$ and $-m_e$ from the positron's $v\bar v$; $+m_\mu$ from the $\mu^-$ and $-m_\mu$ from the $\mu^+$.
+> - Only the completeness relations and the commutativity of numbers are used; the spin basis never enters.
+
+^der-c8a-7-3
+
+*Uses:* [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-2|Theorem §C8a.7.2]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]]
+
+*Procedure:* [[P8 Unpolarized Cross Section from Diagrams#^p8-3|P8, step 3]]
+
+> [!theorem] Theorem §C8a.7.4: The Spin-Averaged Squared Amplitude as Two Traces
+> With the spin average of [[§C8a.7 The Spin-Averaged Squared Amplitude#^def-c8a-7-1|Def. §C8a.7.1]],
+>
+> $$
+> \frac14\sum_{\rm spins}|\mathcal M|^2 = \frac{e^4}{4q^4}\,\operatorname{tr}\bigl[(\slashed p' - m_e)\gamma^\mu(\slashed p + m_e)\gamma^\nu\bigr]\;\operatorname{tr}\bigl[(\slashed k + m_\mu)\gamma_\mu(\slashed k' - m_\mu)\gamma_\nu\bigr] :
+> $$
+>
+> one trace per fermion line, the first from the $e^+e^-$ line with the electron mass, the second from the $\mu^+\mu^-$ line with the muon mass, the two contracted in $\mu$ and $\nu$.
+>
+> *Proof:* insert [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-3|Theorem §C8a.7.3]] into [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-2|Theorem §C8a.7.2]]; the factor $\frac14$ is that of [[§C8a.7 The Spin-Averaged Squared Amplitude#^def-c8a-7-1|Def. §C8a.7.1]].
+>
+> *Model:* [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^mod-c8a-6-1|Model §C8a.6.1]]; *applies:* order $e^2$, unpolarized, both masses kept, any frame.
+>
+> *Source: PHY 513 Lecture 19, slide 12 ("The spin averaged amplitude: $\frac14\sum_{\rm spin}|\mathcal M|^2 = \frac{e^4}{4q^4}\operatorname{tr}\bigl[(\slashed p' - m_e)\gamma^\mu(\slashed p + m_e)\gamma^\nu\bigr]\operatorname{tr}\bigl[(\slashed k' - m_\mu)\gamma_\mu(\slashed k + m_\mu)\gamma_\nu\bigr]$"; the order in the second trace: [[§C8a.7 The Spin-Averaged Squared Amplitude#^cau-c8a-7-2|Caution: The order inside the muon trace on the slide]]) · the user's PHY 513 notes, Lecture 19 update, §19.2, Principle "The spin-averaged squared amplitude as traces", eq. (eemumutraces) · PS §5.1, eq. (5.4) · Yu §8.2.1, eq. (8.43)*
+
+^thm-c8a-7-4
+
+> [!caution] Caution: The subscript of the muon mass is not an index
+> In $m_\mu$ the letter $\mu$ means muon. It is not a Lorentz index and is never summed, although the same formula contains $\gamma_\mu$ with a summed index $\mu$. The same holds for $m_e$, $\psi_\mu$ and $Q_\mu$.
+>
+> *Source: PHY 513 Lecture 19, slide 12 ("Caution: $m_\mu$ = muon mass, no reference to a Lorentz index") · the user's PHY 513 notes, Lecture 19 update, §19.2, Caution "$m_\mu$ is the muon mass"*
+
+^cau-c8a-7-1
+
+> [!caution] Caution: The order inside the muon trace on the slide
+> From the brackets $[\bar u(k)\gamma_\mu v(k')][\bar v(k')\gamma_\nu u(k)]$ the trace is $\operatorname{tr}[(\slashed k + m_\mu)\gamma_\mu(\slashed k' - m_\mu)\gamma_\nu]$, as in [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-3|Theorem §C8a.7.3]], PS (5.4) and Yu (8.43). Slides 12 and 15 write $\operatorname{tr}[(\slashed k' - m_\mu)\gamma_\mu(\slashed k + m_\mu)\gamma_\nu]$, the electron trace with $p \to k$, $p' \to k'$. The two are equal: both are $4[k_\mu k'_\nu + k_\nu k'_\mu - g_{\mu\nu}(k\cdot k' + m_\mu^2)]$ ([[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-5|Theorem §C8a.7.5]]), which is symmetric under $k \leftrightarrow k'$ (checked numerically).
+>
+> The update adds that for a general product of four $\gamma$'s the two orders would not agree. For plain $\gamma$ matrices they do agree: $\operatorname{tr}(\gamma^\alpha\gamma^\mu\gamma^\beta\gamma^\nu)$ is symmetric under $\alpha \leftrightarrow \beta$ by [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|Theorem §C5a.13.3]] (checked numerically for all index values). More generally a trace of $\gamma$ matrices is unchanged when the order of all its factors is reversed ([[§C5a.13 Gamma-Matrix Technology#^rem-c5a-13-7|§C5a.13, ★ Remark: Reversing the order inside a trace]]). The two orders differ when the trace contains further matrices, for example a $\gamma^5$, whose $\varepsilon$ term ([[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-4|Theorem §C5a.13.4]]) changes sign.
+>
+> *Source: the user's PHY 513 notes, Lecture 19 update, §19.2, Caution "The order inside the muon trace on the slide" · PHY 513 Lecture 19, slides 12, 15 · PS §5.1, eq. (5.4) · Yu §8.2.1, eq. (8.43) · the second paragraph checked here (`qft-C/tools/l19/verify.py`); recorded in `qft-C/ERRATA.md`*
+
+^cau-c8a-7-2
+
+## Evaluating the traces
+
+The strategy of the lecture: do not use the explicit form of the $\gamma$ matrices, use the algebra. The traces follow from $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ and the cyclicity of the trace; their statements and proofs are [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|Theorem §C5a.13.3]]. This process needs three of them: the trace of an odd number of $\gamma$'s vanishes, $\operatorname{tr}(\gamma^\mu\gamma^\nu) = 4g^{\mu\nu}$, and $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma) = 4(g^{\mu\nu}g^{\rho\sigma} - g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\nu\rho})$. For longer traces one consults tables (slide 14).
+
+> [!theorem] Theorem §C8a.7.5: The Electron Trace and the Muon Trace
+> $$
+> \operatorname{tr}\bigl[(\slashed p' - m_e)\gamma^\mu(\slashed p + m_e)\gamma^\nu\bigr] = 4\bigl[p'^\mu p^\nu + p'^\nu p^\mu - g^{\mu\nu}(p\cdot p' + m_e^2)\bigr] ,
+> $$
+>
+> $$
+> \operatorname{tr}\bigl[(\slashed k + m_\mu)\gamma_\mu(\slashed k' - m_\mu)\gamma_\nu\bigr] = 4\bigl[k_\mu k'_\nu + k_\nu k'_\mu - g_{\mu\nu}(k\cdot k' + m_\mu^2)\bigr] .
+> $$
+>
+> The second is the first with $p \to k$, $p' \to k'$, $m_e \to m_\mu$ and the indices lowered. Each is a symmetric two-index tensor, bilinear in the two momenta of its line or proportional to the squared mass.
+>
+> *Model:* none (Dirac algebra, [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|Theorem §C5a.13.3]]); *applies:* any four-vectors $p$, $p'$, $k$, $k'$ and any masses; the mass-shell conditions are not used.
+>
+> *Source: PHY 513 Lecture 19, slide 14 ("This gives: $\operatorname{tr}\bigl[(\slashed p' - m_e)\gamma^\mu(\slashed p + m_e)\gamma^\nu\bigr] = \operatorname{tr}\bigl[\slashed p'\gamma^\mu\slashed p\gamma^\nu\bigr] - m_e^2\operatorname{tr}[\gamma^\mu\gamma^\nu] = 4\bigl[p'^\mu p^\nu + p'^\nu p^\mu - g^{\mu\nu}(pp' + m_e^2)\bigr]$. The analogous result for muons has $p \to k$, $p' \to k'$, $m_e^2 \to m_\mu^2$") · the user's PHY 513 notes, Lecture 19 update, §19.3, paragraph "The electron trace", eq. (etrace) · PS §5.1, p. 135 (the two displays before eq. (5.10)) · Yu §8.2.3, eqs. (8.78)–(8.79)*
+
+^thm-c8a-7-5
+
+> [!derivation]- Derivation
+> **Step 1** (multiply out). $(\slashed p' - m_e)\gamma^\mu(\slashed p + m_e)\gamma^\nu = \slashed p'\gamma^\mu\slashed p\gamma^\nu + m_e\,\slashed p'\gamma^\mu\gamma^\nu - m_e\,\gamma^\mu\slashed p\gamma^\nu - m_e^2\,\gamma^\mu\gamma^\nu$.
+>
+> **Step 2** (the odd terms). The two terms with one power of $m_e$ contain three $\gamma$'s, $\slashed p'\gamma^\mu\gamma^\nu = p'_\alpha\gamma^\alpha\gamma^\mu\gamma^\nu$ and $\gamma^\mu\slashed p\gamma^\nu = p_\beta\gamma^\mu\gamma^\beta\gamma^\nu$: their traces vanish ([[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|Theorem §C5a.13.3]], odd number). ⚑ By-product: no term linear in a mass survives.
+>
+> **Step 3** (four $\gamma$'s). With $\slashed p' = p'_\alpha\gamma^\alpha$, $\slashed p = p_\beta\gamma^\beta$ and [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|Theorem §C5a.13.3]] for the indices $\alpha\mu\beta\nu$:
+>
+> $$
+> \operatorname{tr}\bigl[\slashed p'\gamma^\mu\slashed p\gamma^\nu\bigr] = p'_\alpha p_\beta\operatorname{tr}(\gamma^\alpha\gamma^\mu\gamma^\beta\gamma^\nu) = 4p'_\alpha p_\beta\bigl(g^{\alpha\mu}g^{\beta\nu} - g^{\alpha\beta}g^{\mu\nu} + g^{\alpha\nu}g^{\mu\beta}\bigr) = 4\bigl(p'^\mu p^\nu - (p\cdot p')\,g^{\mu\nu} + p'^\nu p^\mu\bigr) .
+> $$
+>
+> The first pairing joins each momentum to the index next to it; the second joins the two momenta to each other and $\mu$ to $\nu$, with the minus sign; the third joins them crosswise.
+>
+> **Step 4** (two $\gamma$'s). $-m_e^2\operatorname{tr}(\gamma^\mu\gamma^\nu) = -4m_e^2\,g^{\mu\nu}$.
+>
+> **Step 5** (add). The $-4m_e^2g^{\mu\nu}$ combines with the $-4(p\cdot p')g^{\mu\nu}$ of the middle pairing: $4\bigl[p'^\mu p^\nu + p'^\nu p^\mu - g^{\mu\nu}(p\cdot p' + m_e^2)\bigr]$.
+>
+> **Step 6** (the muon trace). $(\slashed k + m_\mu)\gamma_\mu(\slashed k' - m_\mu)\gamma_\nu = \slashed k\gamma_\mu\slashed k'\gamma_\nu - m_\mu\,\slashed k\gamma_\mu\gamma_\nu + m_\mu\,\gamma_\mu\slashed k'\gamma_\nu - m_\mu^2\,\gamma_\mu\gamma_\nu$. The middle terms are odd. $\operatorname{tr}[\slashed k\gamma_\mu\slashed k'\gamma_\nu] = k^\alpha k'^\beta\cdot4(g_{\alpha\mu}g_{\beta\nu} - g_{\alpha\beta}g_{\mu\nu} + g_{\alpha\nu}g_{\mu\beta}) = 4(k_\mu k'_\nu - (k\cdot k')g_{\mu\nu} + k_\nu k'_\mu)$ and $-m_\mu^2\operatorname{tr}(\gamma_\mu\gamma_\nu) = -4m_\mu^2g_{\mu\nu}$.
+>
+> **What the derivation shows.**
+> - The form of the result could be anticipated: two Lorentz indices, bilinear in $p$ and $p'$ or proportional to $m_e^2$; the computation only decides where the indices go and the coefficients.
+> - ⚑ By-product: the mass enters as $-m^2$ in both traces, the product of $+m$ from the particle and $-m$ from the antiparticle of the line.
+> - ⚑ By-product: each trace is symmetric under the exchange of its two momenta → [[§C8a.7 The Spin-Averaged Squared Amplitude#^cau-c8a-7-2|Caution: The order inside the muon trace on the slide]].
+
+^der-c8a-7-5
+
+*Uses:* [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|Theorem §C5a.13.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]]
+
+*Procedure:* [[P8 Unpolarized Cross Section from Diagrams#^p8-4|P8, step 4]]
+
+> [!theorem] Theorem §C8a.7.6: The Spin-Averaged Squared Amplitude in Invariants
+> For $e^-(p) + e^+(p') \to \mu^-(k) + \mu^+(k')$ at order $e^2$, with $q = p + p'$,
+>
+> $$
+> \frac14\sum_{\rm spins}|\mathcal M|^2 = \frac{8e^4}{q^4}\Bigl[(p\cdot k)(p'\cdot k') + (p\cdot k')(p'\cdot k) + m_e^2\,k\cdot k' + m_\mu^2\,p\cdot p' + 2m_e^2m_\mu^2\Bigr] .
+> $$
+>
+> 1. It depends only on the dot products of the four-momenta and on the masses: it is Lorentz invariant.
+> 2. The overall factor is $\frac14\cdot4\cdot4\cdot2 = 8$: the spin average, one $4$ from each trace, and the $2$ of the contraction.
+> 3. Terms $(p\cdot p')(k\cdot k')$ arise three times in the contraction, with total coefficient $4 - 2 - 2 = 0$.
+> 4. With both masses set to zero only the first two terms remain.
+>
+> Checked numerically against the explicit sum over all sixteen spin combinations of $u$ and $v$ spinors, with both masses nonzero and in a general frame.
+>
+> *Model:* [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^mod-c8a-6-1|Model §C8a.6.1]]; *applies:* order $e^2$, unpolarized, on-shell external momenta, both masses kept, any frame.
+>
+> *Source: PHY 513 Lecture 19, slide 15 ("$\frac14\sum_{\rm spin}|\mathcal M|^2 = \frac{8e^4}{q^4}\bigl[(pk)(p'k') + (pk')(p'k) + kk'm_e^2 + pp'm_\mu^2 + 2m_e^2m_\mu^2\bigr]$. Depends on contractions of 4-vectors (and particle masses)", and "Details of computation that contracts the Lorentz indices") · the user's PHY 513 notes, Lecture 19 update, §19.3, Derivation "Contracting the two traces", Principle "Spin-averaged $e^+e^- \to \mu^+\mu^-$", eq. (eemumuinv), and the paragraph after it · PS §5.1, eq. (5.10) (with $m_e = 0$) · Yu §8.2.3, eq. (8.80); the massless contraction with the coefficient $(-2 - 2 + 4)$: eq. (8.77) · numerical check: `qft-C/tools/l19/verify.py`*
+
+^thm-c8a-7-6
+
+> [!derivation]- Derivation
+> **Step 1** (the two tensors). By [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-4|Theorem §C8a.7.4]] and [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-5|Theorem §C8a.7.5]], $\frac14\sum|\mathcal M|^2 = \frac{e^4}{4q^4}\cdot4\cdot4\cdot A^{\mu\nu}B_{\mu\nu}$ with
+>
+> $$
+> A^{\mu\nu} = p'^\mu p^\nu + p'^\nu p^\mu - g^{\mu\nu}a , \quad a = p\cdot p' + m_e^2 ; \qquad B_{\mu\nu} = k'_\mu k_\nu + k'_\nu k_\mu - g_{\mu\nu}b , \quad b = k\cdot k' + m_\mu^2 .
+> $$
+>
+> **Step 2** (the nine products). Term by term:
+>
+> | | $k'_\mu k_\nu$ | $k'_\nu k_\mu$ | $-g_{\mu\nu}b$ |
+> |---|---|---|---|
+> | $p'^\mu p^\nu$ | $(p'\cdot k')(p\cdot k)$ | $(p'\cdot k)(p\cdot k')$ | $-(p\cdot p')\,b$ |
+> | $p'^\nu p^\mu$ | $(p\cdot k')(p'\cdot k)$ | $(p'\cdot k')(p\cdot k)$ | $-(p\cdot p')\,b$ |
+> | $-g^{\mu\nu}a$ | $-a\,(k\cdot k')$ | $-a\,(k\cdot k')$ | $+4ab$ |
+>
+> the last entry by $g^{\mu\nu}g_{\mu\nu} = 4$. The sum is
+>
+> $$
+> A^{\mu\nu}B_{\mu\nu} = 2(p'\cdot k')(p\cdot k) + 2(p'\cdot k)(p\cdot k') + 4ab - 2(p\cdot p')\,b - 2(k\cdot k')\,a .
+> $$
+>
+> **Step 3** (insert $a$ and $b$). $4ab = 4(p\cdot p')(k\cdot k') + 4m_\mu^2\,p\cdot p' + 4m_e^2\,k\cdot k' + 4m_e^2m_\mu^2$; $-2(p\cdot p')b = -2(p\cdot p')(k\cdot k') - 2m_\mu^2\,p\cdot p'$; $-2(k\cdot k')a = -2(p\cdot p')(k\cdot k') - 2m_e^2\,k\cdot k'$. Collecting:
+> - $(p\cdot p')(k\cdot k')$: $4 - 2 - 2 = 0$;
+> - $m_\mu^2\,p\cdot p'$: $4 - 2 = 2$;
+> - $m_e^2\,k\cdot k'$: $4 - 2 = 2$;
+> - $m_e^2m_\mu^2$: $4$.
+>
+> So $A^{\mu\nu}B_{\mu\nu} = 2\bigl[(p\cdot k)(p'\cdot k') + (p\cdot k')(p'\cdot k) + m_e^2\,k\cdot k' + m_\mu^2\,p\cdot p' + 2m_e^2m_\mu^2\bigr]$.
+>
+> **Step 4** (the prefactor). $\frac{e^4}{4q^4}\cdot16\cdot2 = \frac{8e^4}{q^4}$.
+>
+> **What the derivation shows.**
+> - ⚑ By-product: the terms $(p\cdot p')(k\cdot k')$, which the index structure allows, cancel.
+> - The expression was Lorentz invariant at every step: each trace is a two-index tensor built from the momenta of its line, and contracting two such tensors leaves invariants.
+
+^der-c8a-7-6
+
+*Uses:* [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-4|Theorem §C8a.7.4]], [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-5|Theorem §C8a.7.5]]
+
+*Procedure:* [[P8 Unpolarized Cross Section from Diagrams#^p8-4|P8, step 4]]
+
+> [!remark] Remark: Reading the invariant form
+> The terms $(p\cdot k)(p'\cdot k')$ and $(p\cdot k')(p'\cdot k)$ pair the momenta of the electron line with those of the muon line. No $p^2$ appears, because $p$ enters only multiplied by $p'$ or by a mass; the same holds for the other three momenta. The mass terms multiply the invariant of the other line, $m_e^2$ with $k\cdot k'$ and $m_\mu^2$ with $p\cdot p'$. Setting both masses to zero is a quick exercise that leaves the first two terms. The frame, the energies and the angle have not been chosen: [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-6|Theorem §C8a.7.6]] holds for all masses and is the starting point for any kinematics ([[§C8a.8 The Unpolarized Cross Section for Muon Pair Production|§C8a.8]]).
+>
+> *Source: the user's PHY 513 notes, Lecture 19 update, §19.3 (the paragraph after Principle "Spin-averaged $e^+e^- \to \mu^+\mu^-$"), §19.4, paragraph "Asked in the lecture: why is $m_e = 0$?" · PHY 513 Lecture 19, transcript*
+
+^rem-c8a-7-1
+
+## The general rule
+
+The trace of [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-3|Theorem §C8a.7.3]] did not use that the matrix between the spinors was $\gamma^\mu$, nor which of the spinors were $u$ and which $v$. The same four steps (conjugate, write the indices, sum each spin with its completeness relation, read the trace) work for every fermion line, and the average over the initial spins is the one of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]] for any spins.
+
+> [!theorem] Theorem §C8a.7.7: The Unpolarized Squared Amplitude in General (Casimir's Trick)
+> Let $w_1 = w_1^{s_1}(p_1)$ and $w_2 = w_2^{s_2}(p_2)$ each be a $u$ or a $v$ spinor, of on-shell momentum $p_i$ and mass $m_i$, with spin sum
+>
+> $$
+> \Pi_i \equiv \sum_{s_i}w_i^{s_i}(p_i)\,\bar w_i^{s_i}(p_i) = \begin{cases}\slashed p_i + m_i & (w_i = u)\\ \slashed p_i - m_i & (w_i = v)\end{cases}
+> $$
+>
+> ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]]). Let $\Gamma$, $\Gamma'$ be any $4\times4$ matrices and $\bar\Gamma \equiv \gamma^0\Gamma^\dagger\gamma^0$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]).
+> 1. **Conjugate.** $(\bar w_1\Gamma w_2)^\ast = \bar w_2\,\bar\Gamma\,w_1$. For $\Gamma = \mathbb 1$, $i\gamma^5$, $\gamma^\mu$, $\gamma^\mu\gamma^5$, $\sigma^{\mu\nu}$, $\bar\Gamma = \Gamma$; $\overline{\gamma^5} = -\gamma^5$; and $\overline{\Gamma\Gamma'} = \bar\Gamma'\,\bar\Gamma$, so a product of $\gamma$ matrices is reversed.
+> 2. **One fermion line.** Summed over both spins,
+>
+> $$
+> \sum_{s_1, s_2}\bigl(\bar w_1\Gamma w_2\bigr)\bigl(\bar w_1\Gamma'w_2\bigr)^\ast = \operatorname{tr}\bigl[\Gamma\,\Pi_2\,\bar\Gamma'\,\Pi_1\bigr] , \qquad \sum_{s_1, s_2}\bigl|\bar w_1\Gamma w_2\bigr|^2 = \operatorname{tr}\bigl[\Gamma\,\Pi_2\,\bar\Gamma\,\Pi_1\bigr] .
+> $$
+>
+> 3. **Several lines.** If $\mathcal M$ is a product of such chains, one for each fermion line, the lines have different spinors and different spin labels, so $\sum_{\rm spins}|\mathcal M|^2$ is the product of the traces of part 2, one trace for each fermion line, with the Lorentz indices that the boson lines join contracted between them. The same holds for a sum of terms that join the external fermions in the same way, with $\Gamma'$ the matrix of the second term.
+> 4. **The average.** With $s_A$, $s_B$ the spins of the two initial particles, the unpolarized squared amplitude of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]] is
+>
+> $$
+> \overline{|\mathcal M|^2} = \frac{1}{(2s_A + 1)(2s_B + 1)}\sum_{\rm spins}|\mathcal M|^2 :
+> $$
+>
+> a factor $\frac14$ for two initial Dirac particles, $\frac12$ for one Dirac particle and one spinless particle. No spinor and no choice of spin basis is left in the result ([[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]]).
+>
+> [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-3|Theorem §C8a.7.3]] is part 2 twice: the electron line with $w_1 = v(p')$, $w_2 = u(p)$, $\Gamma = \gamma^\mu$, $\Gamma' = \gamma^\nu$, and the muon line with $w_1 = u(k)$, $w_2 = v(k')$, $\Gamma = \gamma_\mu$, $\Gamma' = \gamma_\nu$ (the traces agree after a cyclic shift). [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-4|Theorem §C8a.7.4]] is parts 3 and 4. A line with two $u$ spinors in an external field: [[§C8a.11 Mott's Formula꞉ the Relativistic Electron in a Coulomb Field#^thm-c8a-11-2|Theorem §C8a.11.2]] is part 2 with $w_1 = u(p')$, $w_2 = u(p)$, $\Gamma = \gamma^0$, and part 4 with one initial Dirac particle, a factor $\frac12$ (PHY 513, Problem Set 10, Problem 3(b)). Two lines with two $u$ spinors each, in electron–muon scattering: [[§C8a.12 Electron–Muon Scattering and the Crossing Substitution#^thm-c8a-12-2|Theorem §C8a.12.2]] is part 2 with $w_1 = u(p_1')$, $w_2 = u(p_1)$ and with $w_1 = u(p_2')$, $w_2 = u(p_2)$, and parts 3 and 4; as in Lecture 21, its traces are left unevaluated and the result is taken from annihilation by crossing ([[§C8a.12 Electron–Muon Scattering and the Crossing Substitution#^thm-c8a-12-3|Theorem §C8a.12.3]]).
+>
+> *Model:* any theory with Dirac fermions ([[§C6d.1 Yukawa Theory#^mod-c6d-1-1|Model §C6d.1.1]], [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^mod-c8a-6-1|Model §C8a.6.1]]); *applies:* c-number on-shell spinors in any spin basis, massive or massless; initial spins not prepared, final spins not observed; part 3 for one diagram, or for diagrams that join the external fermions in the same way. Interference between diagrams that join the external fermions differently is not covered by part 3.
+>
+> *Source: PHY 513, Problem Set 9, Problem 5 (the user's solution, paragraphs "Unpolarized cross sections" and "Choice of spin axis": the average $\frac{1}{(2s_a + 1)(2s_b + 1)}\sum$ for any spins) · PHY 513 Lecture 19 (Larsen, 11 Nov 2026), slide 12 (the case $\bar v\gamma^\mu u$) · the user's PHY 513 notes, Lecture 19 update, §19.2 (the step with explicit spinor indices) · Yu §7.1, eqs. (7.46)–(7.47), §8.2.1, eq. (8.42) (Casimir's trick, as cited in [[§C5a.13 Gamma-Matrix Technology#^rem-c5a-13-3|§C5a.13, Remark: Why traces]]) · general statement and derivation written here; checked numerically for the four combinations of $u$ and $v$ with random $\Gamma$, $\Gamma'$ and two different masses*
+
+^thm-c8a-7-7
+
+> [!derivation]- Derivation
+> **Step 1** (the conjugate). A chain $\bar w_1\Gamma w_2 = w_1^\dagger\gamma^0\Gamma w_2$ is a number, so its complex conjugate is its Hermitian conjugate, which reverses the order of the factors:
+>
+> $$
+> (\bar w_1\Gamma w_2)^\ast = (w_1^\dagger\gamma^0\Gamma w_2)^\dagger = w_2^\dagger\,\Gamma^\dagger\,\gamma^{0\dagger}\,w_1 = w_2^\dagger\gamma^0\,\bigl(\gamma^0\Gamma^\dagger\gamma^0\bigr)\,w_1 = \bar w_2\,\bar\Gamma\,w_1 ,
+> $$
+>
+> with $\gamma^{0\dagger} = \gamma^0$ and $(\gamma^0)^2 = \mathbb 1$ inserted between $w_2^\dagger$ and $\Gamma^\dagger$. This is step 1 of the derivation of [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]] with two different spinors; no property of $w_1$, $w_2$ is used.
+>
+> **Step 2** (the list of $\bar\Gamma$). The five matrices with $\bar\Gamma = \Gamma$ and $\overline{\gamma^5} = -\gamma^5$ are [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]. For a product, $\overline{\Gamma\Gamma'} = \gamma^0(\Gamma\Gamma')^\dagger\gamma^0 = \gamma^0\Gamma'^\dagger\Gamma^\dagger\gamma^0 = (\gamma^0\Gamma'^\dagger\gamma^0)(\gamma^0\Gamma^\dagger\gamma^0) = \bar\Gamma'\,\bar\Gamma$, again with $(\gamma^0)^2 = \mathbb 1$ inserted.
+>
+> **Step 3** (indices). With spinor indices $a, b, c, d$ summed from 1 to 4 and Step 1 for the second factor,
+>
+> $$
+> \bigl(\bar w_1\Gamma w_2\bigr)\bigl(\bar w_1\Gamma'w_2\bigr)^\ast = (\bar w_1)_a\,\Gamma_{ab}\,(w_2)_b\;(\bar w_2)_c\,\bar\Gamma'_{cd}\,(w_1)_d = \Gamma_{ab}\,\bigl[(w_2)_b(\bar w_2)_c\bigr]\,\bar\Gamma'_{cd}\,\bigl[(w_1)_d(\bar w_1)_a\bigr] .
+> $$
+>
+> Every factor is a number, so $(\bar w_1)_a$ may be moved from the far left to the far right. Nothing is dropped.
+>
+> **Step 4** (the spin sums). The spin label $s_2$ occurs only in the first bracket and $s_1$ only in the second. Each sum is a completeness relation:
+>
+> $$
+> \sum_{s_2}(w_2)_b(\bar w_2)_c = (\Pi_2)_{bc} , \qquad \sum_{s_1}(w_1)_d(\bar w_1)_a = (\Pi_1)_{da} .
+> $$
+>
+> **Step 5** (the trace). $\Gamma_{ab}(\Pi_2)_{bc}\bar\Gamma'_{cd}(\Pi_1)_{da}$ is a product of four matrices whose last index equals its first: $\operatorname{tr}[\Gamma\,\Pi_2\,\bar\Gamma'\,\Pi_1]$. With $\Gamma' = \Gamma$ this is the second formula of part 2.
+>
+> **Step 6** (several lines). For $\mathcal M = \prod_\ell(\bar w_{1\ell}\Gamma_\ell w_{2\ell})$, $|\mathcal M|^2 = \prod_\ell(\bar w_{1\ell}\Gamma_\ell w_{2\ell})(\bar w_{1\ell}\Gamma_\ell w_{2\ell})^\ast$. Each spin label occurs in one factor $\ell$ only, so the sum over all spins is the product over $\ell$ of the sums of Steps 3–5. Lorentz indices carried by the $\Gamma_\ell$ and contracted between two lines stay contracted. For a sum of terms with the same pairs $(w_{1\ell}, w_{2\ell})$, the product of a term with the conjugate of another has $\Gamma'_\ell \ne \Gamma_\ell$ and is the first formula of part 2, line by line. If two terms pair the external spinors differently, a spin label occurs in chains of different lines and the sum does not factor line by line: that case is outside part 3.
+>
+> **Step 7** (the average). The sum over the final spins and the average over the $2s + 1$ projections of each initial particle is [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]: divide the sum over all spins by $(2s_A + 1)(2s_B + 1)$. A Dirac particle has two spin states at each momentum, a spinless one has one.
+>
+> **What the derivation shows.**
+> - The matrix between the spinors and the kind of spinor enter only through $\bar\Gamma$ and through the sign of the mass in $\Pi_i$: the rule is the same for every fermion line.
+> - The trace appears because the same spinor stands at the right end of one chain and, conjugated, at the left end of the other: the two chains close into one loop.
+> - One closed loop of spinors gives one trace. A line whose two chains close on each other gives one trace by itself.
+> - The momenta in $\Pi_i$ are on shell and the result holds in any spin basis, since only the completeness relations are used ([[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]]).
+
+^der-c8a-7-7
+
+*Uses:* [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]], [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]]
+
+*Procedure:* [[P8 Unpolarized Cross Section from Diagrams#^p8-3|P8, step 3]]
+
+> [!remark]- Connections
+> - The trace theorems used here are proved in the γ-matrix toolkit, where Lecture 19 is now their course source — [[§C5a.13 Gamma-Matrix Technology#^thm-c5a-13-3|Theorem §C5a.13.3]], with the reason traces appear at all in [[§C5a.13 Gamma-Matrix Technology#^rem-c5a-13-3|§C5a.13, Remark: Why traces]].
+> - The completeness relations that close the lines are the spin sums of the plane-wave solutions, the same matrices that appear in the numerator of the Dirac propagator — [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].
+> - The spin average is the unpolarized cross section's $\overline{|\mathcal M|^2}$, and its independence of the spin basis is linear algebra on the spin space — [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]].
+> - The conjugation rule is the reality of the vector bilinear, read for two different spinors — [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]].
+> - A closed fermion loop gives a trace for the same reason a spin-summed line does: the chain of matrices closes on itself — [[§C6d.4 First Order#^thm-c6d-4-6|Theorem §C6d.4.6]].
+> - The same rule on a single electron line in the Coulomb field of a nucleus gives the factor $1 - \beta^2\sin^2\frac\theta2$ of Mott's formula — [[§C8a.11 Mott's Formula꞉ the Relativistic Electron in a Coulomb Field#^thm-c8a-11-2|Theorem §C8a.11.2]], [[§C8a.11 Mott's Formula꞉ the Relativistic Electron in a Coulomb Field#^thm-c8a-11-3|Theorem §C8a.11.3]].
+> - Forward: the centre-of-mass frame and the cross section — [[§C8a.8 The Unpolarized Cross Section for Muon Pair Production|§C8a.8]]; the same square without the spin sum, the helicity structure (Lecture 20) — [[§C8b.6 Helicity Conservation at the QED Vertex|§C8b.6]], [[§C8b.7 Polarized Cross Sections for Muon Pair Production#^thm-c8b-7-5|Theorem §C8b.7.5]]; the invariant form reused for electron–muon scattering by the crossing substitution (Lecture 21) — [[§C8a.12 Electron–Muon Scattering and the Crossing Substitution#^thm-c8a-12-4|Theorem §C8a.12.4]].

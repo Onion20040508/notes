@@ -8,7 +8,7 @@ tags: [chapter, differentiable-manifolds]
 ↑ [[Differentiable Manifolds]]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (26), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (6), [[· 3 Smooth Structures|3 Smooth Structures]] (65), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (46), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (53), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (16), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (7), [[· 9 Sard's Theorem|9 Sard's Theorem]] (9), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (2), [[· 11 Differential Forms|11 Differential Forms]] (5)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (23), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (12), [[· 9 Sard's Theorem|9 Sard's Theorem]] (9), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (2), [[· 11 Differential Forms|11 Differential Forms]] (5)
 **Builds on (other subjects):** [[Topology]] (2)
 
 ## Sections
@@ -27,7 +27,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Tangent Bundle Is a Smooth Manifold|Proposition §51.3: The Transition Maps of TM]]: 133 later results
-- [[§51 The Tangent Bundle#^prop-51-1|Proposition §51.1: The Tangent Bundle Is a Manifold (Claim)]]: 132 later results
-- [[Smooth Manifold Chart Lemma|Lemma §51.2: Building a Manifold from Charts]]: 132 later results
-- [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4: The Topology and Smooth Structure of TM]]: 132 later results
+- [[Tangent Bundle Is a Smooth Manifold|Proposition §51.3: The Transition Maps of TM]]: 145 later results
+- [[§51 The Tangent Bundle#^prop-51-1|Proposition §51.1: The Tangent Bundle Is a Manifold (Claim)]]: 144 later results
+- [[Smooth Manifold Chart Lemma|Lemma §51.2: Building a Manifold from Charts]]: 144 later results
+- [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4: The Topology and Smooth Structure of TM]]: 144 later results
