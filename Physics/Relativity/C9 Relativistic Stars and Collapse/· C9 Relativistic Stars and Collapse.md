@@ -3,7 +3,7 @@ type: chapter
 subject: "[[Relativity]]"
 level: C
 chapter: C9
-tags: [chapter, relativity]
+tags: [chapter, relativity, level-c, extension]
 ---
 # C9 Relativistic Stars and Collapse
 ← [[· C8 Linearised Gravity and Gravitational Waves]] · ↑ [[Relativity]] · [[· C10 Causal Structure and Penrose Diagrams]] →

@@ -3,13 +3,13 @@ type: chapter
 subject: "[[Relativity]]"
 level: C
 chapter: C7
-tags: [chapter, relativity]
+tags: [chapter, relativity, level-c, extension]
 ---
 # C7 Schwarzschild as a Black Hole
 ← [[· C6 The Schwarzschild Solution and the Classical Tests]] · ↑ [[Relativity]] · [[· C8 Linearised Gravity and Gravitational Waves]] →
 
-**Builds on:** [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (1), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (11), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (11), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (80), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (54), [[· C8 Linearised Gravity and Gravitational Waves|C8 Linearised Gravity and Gravitational Waves]] (1), [[· C9 Relativistic Stars and Collapse|C9 Relativistic Stars and Collapse]] (1), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (9), [[· C11 Charged Black Holes|C11 Charged Black Holes]] (1)
-**Used by:** [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (2), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (1), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (1), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (6), [[· C8 Linearised Gravity and Gravitational Waves|C8 Linearised Gravity and Gravitational Waves]] (1), [[· C9 Relativistic Stars and Collapse|C9 Relativistic Stars and Collapse]] (15), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (99), [[· C11 Charged Black Holes|C11 Charged Black Holes]] (29), [[· C12 Rotating Black Holes|C12 Rotating Black Holes]] (8), [[· C13 Black-Hole Thermodynamics|C13 Black-Hole Thermodynamics]] (2), [[· C14 Hawking Radiation and Quantum Fields in Curved Spacetime|C14 Hawking Radiation and Quantum Fields in Curved Spacetime]] (5)
+**Builds on:** [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (1), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (11), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (11), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (80), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (55), [[· C8 Linearised Gravity and Gravitational Waves|C8 Linearised Gravity and Gravitational Waves]] (1), [[· C9 Relativistic Stars and Collapse|C9 Relativistic Stars and Collapse]] (1), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (9), [[· C11 Charged Black Holes|C11 Charged Black Holes]] (1)
+**Used by:** [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (2), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (1), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (1), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (6), [[· C8 Linearised Gravity and Gravitational Waves|C8 Linearised Gravity and Gravitational Waves]] (1), [[· C9 Relativistic Stars and Collapse|C9 Relativistic Stars and Collapse]] (15), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (99), [[· C11 Charged Black Holes|C11 Charged Black Holes]] (29), [[· C12 Rotating Black Holes|C12 Rotating Black Holes]] (8), [[· C13 Black-Hole Thermodynamics|C13 Black-Hole Thermodynamics]] (2), [[· C14 Hawking Radiation and Quantum Fields in Curved Spacetime|C14 Hawking Radiation and Quantum Fields in Curved Spacetime]] (6)
 
 ★ *Self-study: general relativity beyond any course taken (spine: Couzens' Oxford GR notes; textbooks d'Inverno & Vickers, Hartle, Schutz).*
 
@@ -18,7 +18,7 @@ tags: [chapter, relativity]
 ## Sections
 - [[§C7.1 Coordinate and Curvature Singularities]] — GR1 §6.3; d'Inverno 17.1–17.5; Schutz 11.2
 - [[§C7.2 Eddington–Finkelstein Coordinates and the Horizon]] — GR1 §6.3; d'Inverno 17.5–17.7; Hartle 12.1
-- [[§C7.3 The Kruskal Extension]] — GR1 §6.3.1; Schutz 11.2; Hartle 12.3; d'Inverno 17.6–17.8
+- [[§C7.3 The Kruskal Extension]] — GR1 §6.3.1; Schutz 11.2; Hartle 12.3; d'Inverno 18.1–18.3
 - [[§C7.4 Falling into a Black Hole]] — GR1 §6.3; d'Inverno 17.9–17.12; Hartle 12.1, 13
 
 ## Laws

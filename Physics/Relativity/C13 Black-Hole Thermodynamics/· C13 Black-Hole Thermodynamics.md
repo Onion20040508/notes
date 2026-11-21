@@ -3,12 +3,12 @@ type: chapter
 subject: "[[Relativity]]"
 level: C
 chapter: C13
-tags: [chapter, relativity]
+tags: [chapter, relativity, level-c, extension]
 ---
 # C13 Black-Hole Thermodynamics
 ← [[· C12 Rotating Black Holes]] · ↑ [[Relativity]] · [[· C14 Hawking Radiation and Quantum Fields in Curved Spacetime]] →
 
-**Builds on:** [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (12), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (27), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (11), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (5), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (5), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (2), [[· C8 Linearised Gravity and Gravitational Waves|C8 Linearised Gravity and Gravitational Waves]] (2), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (70), [[· C11 Charged Black Holes|C11 Charged Black Holes]] (30), [[· C12 Rotating Black Holes|C12 Rotating Black Holes]] (68), [[· C14 Hawking Radiation and Quantum Fields in Curved Spacetime|C14 Hawking Radiation and Quantum Fields in Curved Spacetime]] (2)
+**Builds on:** [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (12), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (27), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (11), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (5), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (5), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (2), [[· C8 Linearised Gravity and Gravitational Waves|C8 Linearised Gravity and Gravitational Waves]] (2), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (70), [[· C11 Charged Black Holes|C11 Charged Black Holes]] (30), [[· C12 Rotating Black Holes|C12 Rotating Black Holes]] (68), [[· C14 Hawking Radiation and Quantum Fields in Curved Spacetime|C14 Hawking Radiation and Quantum Fields in Curved Spacetime]] (4)
 **Used by:** [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (1), [[· C8 Linearised Gravity and Gravitational Waves|C8 Linearised Gravity and Gravitational Waves]] (2), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (3), [[· C11 Charged Black Holes|C11 Charged Black Holes]] (1), [[· C12 Rotating Black Holes|C12 Rotating Black Holes]] (6), [[· C14 Hawking Radiation and Quantum Fields in Curved Spacetime|C14 Hawking Radiation and Quantum Fields in Curved Spacetime]] (11)
 
 ★ *Self-study: general relativity beyond any course taken (spine: Couzens' Oxford GR notes; textbooks d'Inverno & Vickers, Hartle, Schutz).*

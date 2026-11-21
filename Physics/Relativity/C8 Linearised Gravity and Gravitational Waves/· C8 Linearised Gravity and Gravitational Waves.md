@@ -3,7 +3,7 @@ type: chapter
 subject: "[[Relativity]]"
 level: C
 chapter: C8
-tags: [chapter, relativity]
+tags: [chapter, relativity, level-c, extension]
 ---
 # C8 Linearised Gravity and Gravitational Waves
 ← [[· C7 Schwarzschild as a Black Hole]] · ↑ [[Relativity]] · [[· C9 Relativistic Stars and Collapse]] →

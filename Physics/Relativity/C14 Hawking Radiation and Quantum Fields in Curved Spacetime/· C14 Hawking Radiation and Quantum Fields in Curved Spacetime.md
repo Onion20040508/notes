@@ -3,13 +3,13 @@ type: chapter
 subject: "[[Relativity]]"
 level: C
 chapter: C14
-tags: [chapter, relativity]
+tags: [chapter, relativity, level-c, extension]
 ---
 # C14 Hawking Radiation and Quantum Fields in Curved Spacetime
 ← [[· C13 Black-Hole Thermodynamics]] · ↑ [[Relativity]]
 
-**Builds on:** [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (7), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (11), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (13), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (1), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (8), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (5), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (23), [[· C11 Charged Black Holes|C11 Charged Black Holes]] (6), [[· C12 Rotating Black Holes|C12 Rotating Black Holes]] (3), [[· C13 Black-Hole Thermodynamics|C13 Black-Hole Thermodynamics]] (11)
-**Used by:** [[· C13 Black-Hole Thermodynamics|C13 Black-Hole Thermodynamics]] (2)
+**Builds on:** [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (7), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (1), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (11), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (14), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (1), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (8), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (6), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (23), [[· C11 Charged Black Holes|C11 Charged Black Holes]] (6), [[· C12 Rotating Black Holes|C12 Rotating Black Holes]] (3), [[· C13 Black-Hole Thermodynamics|C13 Black-Hole Thermodynamics]] (11)
+**Used by:** [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (1), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (1), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (2), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (3), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (2), [[· C13 Black-Hole Thermodynamics|C13 Black-Hole Thermodynamics]] (4)
 
 ★ *Self-study: general relativity beyond any course taken (spine: Couzens' Oxford GR notes; textbooks d'Inverno & Vickers, Hartle, Schutz; QFT notes linked for the flat-space machinery).*
 
@@ -33,7 +33,7 @@ tags: [chapter, relativity]
 - [[§C14.3 The Hawking Temperature#^thm-c14-3-1|§C14.3.1]] Quick Derivation: Near-Horizon Unruh Temperature, Redshifted to Infinity, Is κ/2π
 - [[§C14.3 The Hawking Temperature#^thm-c14-3-3|§C14.3.3]] The Late-Time Outgoing Mode Traced Back Is e^{(iω/κ) ln(−v)}
 - [[§C14.3 The Hawking Temperature#^thm-c14-3-4|§C14.3.4]] Its Bogoliubov Coefficients Satisfy |β/α| = e^{−πω/κ}
-- [[§C14.3 The Hawking Temperature#^thm-c14-3-5|§C14.3.5]] Hawking's Result: a Thermal Flux at T_H = ħκ/(2πk_B) Reaches ℐ⁺
+- [[§C14.3 The Hawking Temperature#^thm-c14-3-5|§C14.3.5]] Hawking's Result: a Thermal Flux at T_H = κ/2π Reaches ℐ⁺
 - [[§C14.4 Evaporation and the Information Paradox#^thm-c14-4-1|§C14.4.1]] The Evaporation Rate dM/dt ∝ −1/M² and the Lifetime ∝ M³
 - [[§C14.4 Evaporation and the Information Paradox#^thm-c14-4-2|§C14.4.2]] When the Quasi-Static Description Holds
 - [[§C14.4 Evaporation and the Information Paradox#^thm-c14-4-3|§C14.4.3]] The Exterior State Is Mixed: the Reduced Density Matrix Is Thermal
