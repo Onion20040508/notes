@@ -6,10 +6,10 @@ chapter: C9
 tags: [chapter, relativity]
 ---
 # C9 Relativistic Stars and Collapse
-← [[· C8 Linearised Gravity and Gravitational Waves]] · ↑ [[Relativity]]
+← [[· C8 Linearised Gravity and Gravitational Waves]] · ↑ [[Relativity]] · [[· C10 Causal Structure and Penrose Diagrams]] →
 
 **Builds on:** [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (8), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (13), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (22), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (3), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (32), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (15), [[· C8 Linearised Gravity and Gravitational Waves|C8 Linearised Gravity and Gravitational Waves]] (2)
-**Used by:** [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (3), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (1), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (1)
+**Used by:** [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (5), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (3), [[· C6 The Schwarzschild Solution and the Classical Tests|C6 The Schwarzschild Solution and the Classical Tests]] (2), [[· C7 Schwarzschild as a Black Hole|C7 Schwarzschild as a Black Hole]] (1), [[· C8 Linearised Gravity and Gravitational Waves|C8 Linearised Gravity and Gravitational Waves]] (2), [[· C10 Causal Structure and Penrose Diagrams|C10 Causal Structure and Penrose Diagrams]] (1)
 
 ★ *Self-study: general relativity beyond any course taken (spine: Couzens' Oxford GR notes; textbooks d'Inverno & Vickers, Hartle, Schutz).*
 
