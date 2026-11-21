@@ -14367,6 +14367,41 @@ Let $\pi : E \to B$ be smooth and $U \subseteq B$ open. A \textbf{local section}
 
 A section in the sense of Definition~\ref{def:section} is a local section over $U = B$; to stress the difference, it is also called a \emph{global} section.
 
+\begin{defbox}[Rough Section]\deflabel{def:rough-section}
+\textit{(Not from lecture; filled in.)} Let $\pi : E \to B$ be smooth and $U \subseteq B$ open. A \textbf{rough section} of $\pi$ over $U$ is a map $s : U \to E$ with $\pi \circ s = \mathrm{id}_U$, with no continuity and no smoothness assumed: a choice of one point $s(b)$ of the fibre $\pi^{-1}(b)$ for every $b \in U$, and nothing more. For $U = B$ it is called a rough section of $\pi$.
+\leeref{Ch.~10, \emph{Local and Global Sections of Vector Bundles}}
+\end{defbox}
+
+So a local section over $U$ (Definition~\ref{def:local-section}) is a rough section over $U$ that is smooth, and a section of a fibration (Definition~\ref{def:section}) is a rough section over $B$ that is smooth. The word \emph{section} alone always includes smoothness. The rough notion is needed when a section is defined point by point and its smoothness has to be proved afterwards: the differential $df$ of a function is defined by its values $df_p$ and then shown to be smooth (Proposition~\ref{prop:d-operator}), and the smoothness criteria for one-forms and for vector fields (Propositions~\ref{prop:one-form-coords} and~\ref{prop:vf-coords}, Lemma~\ref{lem:vf-smooth-criterion}) are statements about rough sections, since a criterion for smoothness cannot assume it.
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\foreach \k/\ttl in {0/{smooth: a section}, 1/{continuous, with a corner}, 2/{with a jump}} {
+\begin{scope}[xshift={\k*5.1cm}]
+\draw[gray!60] (0,0) rectangle (4,2.4);
+\foreach \x in {0.5,1,1.5,2,2.5,3,3.5} \draw[gray!40] (\x,0) -- (\x,2.4);
+\draw[thick, gray!70] (0,-0.7) -- (4,-0.7);
+\node[font=\footnotesize] at (2,-1.15) {\ttl};
+\end{scope}
+}
+\node[font=\footnotesize, anchor=south west] at (4.05,2.0) {$E$};
+\node[font=\footnotesize, anchor=west] at (4.05,-0.7) {$B$};
+\draw[orange!85!black, very thick, domain=0:4, samples=60, smooth] plot (\x,{1.2+0.45*sin(\x*90)});
+\begin{scope}[xshift=5.1cm]
+\draw[orange!85!black, very thick] (0,2.0) -- (2,0.6) -- (4,2.0);
+\end{scope}
+\begin{scope}[xshift=10.2cm]
+\draw[orange!85!black, very thick] (0,0.7) -- (2,0.7);
+\draw[orange!85!black, very thick] (2,1.7) -- (4,1.7);
+\fill[orange!85!black] (2,1.7) circle (1.7pt);
+\draw[orange!85!black, fill=white] (2,0.7) circle (1.7pt);
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Three rough sections, in the cartoon of a section above: each picks exactly one point in every fibre. Left: the choice is smooth, so this one is a section. Middle: the choice is continuous but has a corner, like $|p|\, dx|_p$ in Example~\ref{ex:rough-not-one-form}; it is not smooth, so it is not a section. Right: the choice jumps (the filled dot is the point chosen over the base point of the jump); it is not continuous.
+%% <<< END ADDED
+
 \begin{propbox}[Local Trivializations Give Local Sections]\thmlabel{prop:trivialization-section}
 Let $\pi : E \to B$ be a fibration with fibre $F$, and $\phi : \pi^{-1}(U) \to U \times F$ a local trivialization. For every $f_0 \in F$, the map $s(u) = \phi^{-1}(u, f_0)$ is a local section over $U$.
 \end{propbox}
@@ -16314,29 +16349,31 @@ In words: a one-form chooses one covector at every point of $M$, and the choice 
 
 The notation reflects that $\theta$ is really a function of two variables, a point and a vector: the point goes into the subscript, to make room for the vector variable in the parentheses. The definition describes \emph{every} one-form; examples come next.
 
+A one-form is a section of $T^*M \to M$, so it is smooth. Without smoothness what is left is a rough section of $T^*M \to M$ (Definition~\ref{def:rough-section}), which Lee calls a \emph{rough covector field}: a covector $\theta_p \in T_p^*M$ at every point $p$, and nothing more. Every one-form is a rough section of $T^*M$, but not conversely (Example~\ref{ex:rough-not-one-form}). The next two definitions and Proposition~\ref{prop:one-form-coords} are stated for rough sections, and the same letter $\theta$ is used for them. The reason is that Proposition~\ref{prop:one-form-coords}(3) is the test that decides whether a rough section is a one-form, so the sums $\sum_j \theta_j\, dx^j$ in it have to be defined before smoothness is known.
+
 \begin{defbox}[The Space of One-Forms]\deflabel{def:one-forms-space}
 The set of all one-forms on $M$ is written $C^\infty(M, T^*M)$ (the lecture's notation; also $\Omega^1(M)$).
 \leeref{Ch.~11, \emph{Covector Fields}}
 \end{defbox}
 
 \begin{defbox}[Sum and Scalar Multiple of One-Forms]\deflabel{def:one-form-sum}
-\textit{(Not from lecture; filled in.)} Let $\theta$ and $\sigma$ be sections of $T^*M \to M$ (not assumed smooth) and $c \in \mathbb{R}$. The sum and the scalar multiple are defined pointwise, in the vector space $T_p^*M$ (Definition~\ref{def:cotangent}):
+\textit{(Not from lecture; filled in.)} Let $\theta$ and $\sigma$ be rough sections of $T^*M \to M$ (Definition~\ref{def:rough-section}) and $c \in \mathbb{R}$. The sum and the scalar multiple are defined pointwise, in the vector space $T_p^*M$ (Definition~\ref{def:cotangent}):
 \[
 (\theta + \sigma)_p = \theta_p + \sigma_p, \qquad (c\,\theta)_p = c\,\theta_p, \qquad p \in M .
 \]
-So $(a\,\theta + b\,\sigma)_p = a\,\theta_p + b\,\sigma_p$ for $a, b \in \mathbb{R}$. Since $\theta_p + \sigma_p$ and $c\,\theta_p$ lie in $T_p^*M$, the sum and the scalar multiple are again sections of $T^*M$. The same formulas are used for sections given only on an open subset $U \subseteq M$, at the points $p \in U$. For one-forms the results are one-forms (Proposition~\ref{prop:one-form-operations}). Multiplying by a function rather than a constant is the next definition.
+So $(a\,\theta + b\,\sigma)_p = a\,\theta_p + b\,\sigma_p$ for $a, b \in \mathbb{R}$. Since $\theta_p + \sigma_p$ and $c\,\theta_p$ lie in $T_p^*M$, the sum and the scalar multiple are again rough sections of $T^*M$. The same formulas are used for rough sections over an open subset $U \subseteq M$, at the points $p \in U$. For one-forms the results are one-forms (Proposition~\ref{prop:one-form-operations}). Multiplying by a function rather than a constant is the next definition.
 \end{defbox}
 
 \begin{defbox}[Product of a Function and a One-Form]\deflabel{def:function-times-one-form}
-\textit{(Not from lecture; filled in.)} Let $f : M \to \mathbb{R}$ be a function and $\theta$ a section of $T^*M \to M$ (neither assumed smooth). The product $f\theta$ is defined pointwise:
+\textit{(Not from lecture; filled in.)} Let $f : M \to \mathbb{R}$ be a function, not assumed smooth, and $\theta$ a rough section of $T^*M \to M$ (Definition~\ref{def:rough-section}). The product $f\theta$ is defined pointwise:
 \[
 (f\theta)_p = f(p)\,\theta_p \qquad \text{for every } p \in M .
 \]
-Since $f(p)\,\theta_p \in T_p^*M$, the product is again a section of $T^*M$. The same formula is used for a function and a section given only on an open subset $U \subseteq M$, at the points $p \in U$; this is the meaning of the terms $\theta_j\, dx^j$ in Proposition~\ref{prop:one-form-coords}. For $f \in C^\infty(M)$ and a one-form $\theta$ the product is a one-form (Proposition~\ref{prop:one-form-operations}).
+Since $f(p)\,\theta_p \in T_p^*M$, the product is again a rough section of $T^*M$. The same formula is used for a function on, and a rough section over, an open subset $U \subseteq M$, at the points $p \in U$; this is the meaning of the terms $\theta_j\, dx^j$ in Proposition~\ref{prop:one-form-coords}. For $f \in C^\infty(M)$ and a one-form $\theta$ the product is a one-form (Proposition~\ref{prop:one-form-operations}).
 \end{defbox}
 
 \begin{propbox}[One-Forms in Coordinates]\thmlabel{prop:one-form-coords}
-Let $\theta$ be a section of $T^*M \to M$ (not assumed smooth) and $(U, \varphi = (x^i))$ a chart.
+Let $\theta$ be a rough section of $T^*M \to M$ (Definition~\ref{def:rough-section}) and $(U, \varphi = (x^i))$ a chart.
 \begin{enumerate}
     \item On $U$,
     \[
@@ -16352,7 +16389,7 @@ Let $\theta$ be a section of $T^*M \to M$ (not assumed smooth) and $(U, \varphi 
 \end{propbox}
 
 \begin{proof}
-\textit{(Stated in Lecture~15; the proof is filled in.)} Three things are claimed: the expansion of $\theta$ on $U$ with the stated coefficients, (1); the coordinate representation, (2); and the smoothness criterion, (3). Since $\theta$ is a section, $\pi \circ \theta = \mathrm{id}_M$, so $\theta(p) = (p, \theta_p)$ with $\theta_p \in T_p^*M$ for every $p$.
+\textit{(Stated in Lecture~15; the proof is filled in.)} Three things are claimed: the expansion of $\theta$ on $U$ with the stated coefficients, (1); the coordinate representation, (2); and the smoothness criterion, (3). Since $\theta$ is a rough section, $\pi \circ \theta = \mathrm{id}_M$, so $\theta(p) = (p, \theta_p)$ with $\theta_p \in T_p^*M$ for every $p$.
 
 \emph{(1) The expansion.} The equation $\theta = \sum_j \theta_j\, dx^j$ on $U$ means $\theta_p = \sum_j \theta_j(p)\, dx^j|_p$ for every $p \in U$ (Definitions~\ref{def:one-form-sum} and~\ref{def:function-times-one-form}, on $U$). At each $p \in U$ the $dx^j|_p$ form a basis of $T_p^*M$ dual to the $\partial/\partial x^j|_p$ (Lemma~\ref{lem:df-coords}), and Corollary~\ref{cor:covector-components} with $\alpha = \theta_p$ gives
 \[
@@ -16371,6 +16408,26 @@ A map into $\mathbb{R}^{2m}$ is smooth exactly when all its components are; the 
 \emph{If every $\theta_j$ is smooth on $U$,} then each $\theta_j \circ \varphi^{-1}$ is smooth on $\varphi(U)$ (Proposition~\ref{prop:some-any-function}, applied on the manifold $U$ with its chart $(U, \varphi)$), so the coordinate representation above is smooth. Moreover $\theta|_U$ is continuous: it equals $\hat\varphi^{-1} \circ (\hat\varphi \circ \theta \circ \varphi^{-1}) \circ \varphi$, a composite of continuous maps ($\hat\varphi$ is a homeomorphism by Proposition~\ref{prop:ctb-topology}). So $\theta$ is smooth on $U$ by Definition~\ref{def:smooth-map}, using these two charts at every point of $U$.
 \end{proof}
 
+\begin{exbox}[A Rough Section That Is Not a One-Form]\exlabel{ex:rough-not-one-form}
+\textit{(Not from lecture; filled in.)} Let $M = \mathbb{R}$, with the chart $(\mathbb{R}, \mathrm{id})$ and its coordinate function $x$. Put
+\[
+\theta_p = |p|\; dx|_p \in T_p^*\mathbb{R}, \qquad p \in \mathbb{R} .
+\]
+Then $\theta : p \mapsto (p, \theta_p)$ is a rough section of $T^*\mathbb{R} \to \mathbb{R}$ (Definition~\ref{def:rough-section}), and it is not a one-form (Definition~\ref{def:one-form}), because it is not smooth.
+\end{exbox}
+
+\begin{proof}[Working out the example]
+\textit{(Not from lecture; filled in.)} \emph{A rough section.} For every $p$, $dx|_p$ is a covector at $p$ (Definition~\ref{def:differential-function}), and so is its multiple $|p|\, dx|_p$, since $T_p^*\mathbb{R}$ is a vector space (Definition~\ref{def:cotangent}). So $\pi(\theta(p)) = \pi(p, \theta_p) = p$ for every $p$, that is, $\pi \circ \theta = \mathrm{id}_{\mathbb{R}}$.
+
+\emph{Not smooth.} By Proposition~\ref{prop:one-form-coords}(1), $\theta = \theta_1\, dx$ on $\mathbb{R}$ with the coefficient function
+\[
+\theta_1(p) = \theta_p\Big(\frac{\partial}{\partial x}\Big|_p\Big) = |p|\; dx|_p\Big(\frac{\partial}{\partial x}\Big|_p\Big) = |p| ,
+\]
+because $dx|_p(\partial/\partial x|_p) = 1$ (Lemma~\ref{lem:df-coords}). In the chart $\mathrm{id}$ the coordinate representation of $\theta_1$ is the function $r \mapsto |r|$ on $\mathbb{R}$, which is not differentiable at $0$: the difference quotient $(|h| - |0|)/h$ equals $1$ for $h > 0$ and $-1$ for $h < 0$, so it has no limit as $h \to 0$. Hence $\theta_1$ is not smooth on $\mathbb{R}$ (Definition~\ref{def:smooth-function}), and by Proposition~\ref{prop:one-form-coords}(3) $\theta$ is not smooth on $\mathbb{R}$.
+
+\emph{Two comparisons.} The rough section $p \mapsto p\; dx|_p$ has the coefficient function $p \mapsto p$, which is smooth, so it is a one-form; it is written $x\, dx$. And a rough section need not be continuous: the one equal to $dx|_p$ for $p \ge 0$ and to $0 \in T_p^*\mathbb{R}$ for $p < 0$ has as coefficient function the indicator function of $[0, \infty)$, which is not continuous at $0$.
+\end{proof}
+
 \begin{propbox}[Sums and Function Multiples of One-Forms]\thmlabel{prop:one-form-operations}
 Let $\theta, \sigma \in C^\infty(M, T^*M)$, $c \in \mathbb{R}$ and $f \in C^\infty(M)$.
 \begin{enumerate}
@@ -16381,9 +16438,9 @@ Let $\theta, \sigma \in C^\infty(M, T^*M)$, $c \in \mathbb{R}$ and $f \in C^\inf
 \end{propbox}
 
 \begin{proof}
-\textit{(Not from lecture; filled in.)} By Definitions~\ref{def:one-form-sum} and~\ref{def:function-times-one-form}, $\theta + \sigma$, $c\,\theta$ and $f\theta$ are sections of $T^*M$. It remains to find their coefficient functions, (3), and to show that these sections are smooth, (1) and (2).
+\textit{(Not from lecture; filled in.)} By Definitions~\ref{def:one-form-sum} and~\ref{def:function-times-one-form}, $\theta + \sigma$, $c\,\theta$ and $f\theta$ are rough sections of $T^*M$. It remains to find their coefficient functions, (3), and to show that these rough sections are smooth, (1) and (2).
 
-\emph{(3)} Let $(U, \varphi = (x^j))$ be a chart and $p \in U$. By Proposition~\ref{prop:one-form-coords}(1), the $j$-th coefficient function of a section $\tau$ of $T^*M$ is $\tau_j(p) = \tau_p(\partial/\partial x^j|_p)$. Covectors are added and scaled pointwise (Definition~\ref{def:dual}), so by Definitions~\ref{def:one-form-sum} and~\ref{def:function-times-one-form}
+\emph{(3)} Let $(U, \varphi = (x^j))$ be a chart and $p \in U$. By Proposition~\ref{prop:one-form-coords}(1), the $j$-th coefficient function of a rough section $\tau$ of $T^*M$ is $\tau_j(p) = \tau_p(\partial/\partial x^j|_p)$. Covectors are added and scaled pointwise (Definition~\ref{def:dual}), so by Definitions~\ref{def:one-form-sum} and~\ref{def:function-times-one-form}
 \[
 (\theta + \sigma)_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) = \theta_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) + \sigma_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) = \theta_j(p) + \sigma_j(p),
 \qquad
@@ -16395,13 +16452,13 @@ So the coefficient functions of $\theta + \sigma$ and $f\theta$ on $U$ are $\the
 \[
 (\theta_j + \sigma_j) \circ \varphi^{-1} = \theta_j \circ \varphi^{-1} + \sigma_j \circ \varphi^{-1}, \qquad (f\,\theta_j) \circ \varphi^{-1} = (f \circ \varphi^{-1})\,(\theta_j \circ \varphi^{-1}) ,
 \]
-a sum and a product of smooth functions on $\varphi(U)$, hence smooth; so $\theta_j + \sigma_j$ and $f\,\theta_j$ are smooth on $U$ (Definition~\ref{def:smooth-function}, with the chart $(U, \varphi)$ at every point). By (3) these are the coefficient functions of $\theta + \sigma$ and $f\theta$, so by Proposition~\ref{prop:one-form-coords}(3) both sections are smooth on $U$. The chart domains cover $M$, and smoothness of a map is checked near each point (Definition~\ref{def:smooth-map}), so $\theta + \sigma$ and $f\theta$ are smooth on $M$: they are one-forms. Finally $c\,\theta = f\theta$ for the constant function $f \equiv c$, which is smooth (its coordinate representation in any chart is constant); so $c\,\theta$ is a one-form by (2).
+a sum and a product of smooth functions on $\varphi(U)$, hence smooth; so $\theta_j + \sigma_j$ and $f\,\theta_j$ are smooth on $U$ (Definition~\ref{def:smooth-function}, with the chart $(U, \varphi)$ at every point). By (3) these are the coefficient functions of $\theta + \sigma$ and $f\theta$, so by Proposition~\ref{prop:one-form-coords}(3) both are smooth on $U$. The chart domains cover $M$, and smoothness of a map is checked near each point (Definition~\ref{def:smooth-map}), so $\theta + \sigma$ and $f\theta$ are smooth on $M$: they are one-forms. Finally $c\,\theta = f\theta$ for the constant function $f \equiv c$, which is smooth (its coordinate representation in any chart is constant); so $c\,\theta$ is a one-form by (2).
 \end{proof}
 
 \subsection{The Operator $d$}\label{sub:d-operator}
 
 \begin{propbox}[The Differential of a Function Is a One-Form]\thmlabel{prop:d-operator}
-For $f \in C^\infty(M)$, the section $df : p \mapsto df_p$ is a one-form, given in a chart by
+For $f \in C^\infty(M)$, the rough section $df : p \mapsto df_p$ of $T^*M$ (Definition~\ref{def:rough-section}) is smooth, so it is a one-form, given in a chart by
 \[
 df = \sum_{j=1}^m \frac{\partial f}{\partial x^j}\, dx^j .
 \]
@@ -16410,9 +16467,9 @@ The resulting operator $d : C^\infty(M) \to C^\infty(M, T^*M)$, $f \mapsto df$, 
 \end{propbox}
 
 \begin{proof}
-\textit{(The coordinate formula is Lemma~\ref{lem:df-coords}, which Lecture~15 recalled; the rest is filled in.)} Four things are claimed: $df$ is a section of $T^*M$, it has the stated coordinate formula, it is smooth, and $d$ is linear and satisfies the product rule.
+\textit{(The coordinate formula is Lemma~\ref{lem:df-coords}, which Lecture~15 recalled; the rest is filled in.)} Four things are claimed: $df$ is a rough section of $T^*M$, it has the stated coordinate formula, it is smooth, and $d$ is linear and satisfies the product rule.
 
-\emph{A section, and the formula.} For each $p \in M$, $df_p \in T_p^*M$ (Definition~\ref{def:differential-function}), so $df(p) = (p, df_p)$ satisfies $\pi \circ df = \mathrm{id}_M$. In a chart $(U, \varphi = (x^j))$, Lemma~\ref{lem:df-coords} at each $p \in U$ gives $df_p = \sum_j \partial f/\partial x^j(p)\, dx^j|_p$, which is the formula $df = \sum_j (\partial f/\partial x^j)\, dx^j$ on $U$; its coefficient functions are $\partial f/\partial x^j : U \to \mathbb{R}$, in agreement with Proposition~\ref{prop:one-form-coords}, since $df_p(\partial/\partial x^j|_p) = \partial f/\partial x^j(p)$ (Proposition~\ref{prop:df-derivation}).
+\emph{A rough section, and the formula.} For each $p \in M$, $df_p \in T_p^*M$ (Definition~\ref{def:differential-function}), so $df(p) = (p, df_p)$ satisfies $\pi \circ df = \mathrm{id}_M$. In a chart $(U, \varphi = (x^j))$, Lemma~\ref{lem:df-coords} at each $p \in U$ gives $df_p = \sum_j \partial f/\partial x^j(p)\, dx^j|_p$, which is the formula $df = \sum_j (\partial f/\partial x^j)\, dx^j$ on $U$; its coefficient functions are $\partial f/\partial x^j : U \to \mathbb{R}$, in agreement with Proposition~\ref{prop:one-form-coords}, since $df_p(\partial/\partial x^j|_p) = \partial f/\partial x^j(p)$ (Proposition~\ref{prop:df-derivation}).
 
 \emph{Smoothness.} The coefficients $\partial f/\partial x^j$ are smooth on $U$: Lemma~\ref{lem:partials-smooth}, applied to the restriction of $f$ to the chart domain $U$ (smooth, as $f \in C^\infty(M)$), gives $\partial f/\partial x^j \in C^\infty(U)$, with $(\partial f/\partial x^j) \circ \varphi^{-1} = \partial f_\varphi/\partial r^j$ on $\varphi(U)$. By Proposition~\ref{prop:one-form-coords}(3), $df$ is smooth on $U$. The chart domains cover $M$, and smoothness of a map is checked near each point (Definition~\ref{def:smooth-map}), so $df$ is smooth on $M$: a one-form, $df \in C^\infty(M, T^*M)$.
 
@@ -16688,7 +16745,7 @@ Let $F : M \to N$ be smooth. The \textbf{pullback} of functions is $F^*f = f \ci
 \end{defbox}
 
 \begin{defbox}[Pullback of One-Forms]\deflabel{def:pullback-one-form}
-Let $F : M \to N$ be smooth. For a one-form $\theta$ on $N$, the \textbf{pullback} $F^*\theta$ is the section of $T^*M$ whose value at $p$ is the pullback of the covector $\theta_{F(p)}$ (Definition~\ref{def:pullback-covector}):
+Let $F : M \to N$ be smooth. For a one-form $\theta$ on $N$, the \textbf{pullback} $F^*\theta$ is the rough section of $T^*M$ (Definition~\ref{def:rough-section}) whose value at $p$ is the pullback of the covector $\theta_{F(p)}$ (Definition~\ref{def:pullback-covector}):
 \[
 (F^*\theta)_p = F_p^*\big(\theta_{F(p)}\big), \qquad (F^*\theta)_p(v) = \theta_{F(p)}\big(F_{*p}v\big) .
 \]
@@ -17099,7 +17156,7 @@ In this section covectors at a point are named $\alpha$ or $\eta$, keeping the l
 
 \emph{(1)} This is Corollary~\ref{cor:ctb-fibration}(3), in the present notation. Its proof: a point of $\mathcal{Z}$ is $(p, 0)$, and it lies in $T^*U$ for any chart $(U, \varphi)$ at $p$. For $(q, \alpha) \in T^*U$, $\alpha = \sum_j \xi_j(q, \alpha)\, dx^j|_q$ (Corollary~\ref{cor:covector-components}), and the $dx^j|_q$ are a basis (Lemma~\ref{lem:df-coords}), so $\alpha = 0$ exactly when $\xi_1(q, \alpha) = \cdots = \xi_m(q, \alpha) = 0$. Hence $\mathcal{Z} \cap T^*U$ is cut out by the vanishing of the last $m$ of the $2m$ coordinates of $\hat\varphi$, which says that $\hat\varphi$ is adapted to $\mathcal{Z}$ (Definition~\ref{def:adapted-chart}), and $\mathcal{Z}$ is a regular submanifold of codimension $m$ (Definition~\ref{def:submanifold}, with $2m$ coordinates and $k = m$).
 
-\emph{(2)} $\zeta$ is the zero one-form, $\zeta(q) = (q, 0)$: a section of $T^*M$ whose coefficient functions in every chart, $q \mapsto 0(\partial/\partial x^j|_q) = 0$, are constant, hence smooth, so $\zeta$ is smooth by Proposition~\ref{prop:one-form-coords}(3). By Proposition~\ref{prop:one-form-coords}(2), with $\theta = \zeta$ and all $\theta_j = 0$, its coordinate representation in the charts $(U, \varphi)$ and $(T^*U, \hat\varphi)$ is
+\emph{(2)} $\zeta$ is the zero one-form, $\zeta(q) = (q, 0)$: a rough section of $T^*M$ (Definition~\ref{def:rough-section}) whose coefficient functions in every chart, $q \mapsto 0(\partial/\partial x^j|_q) = 0$, are constant, hence smooth, so $\zeta$ is smooth by Proposition~\ref{prop:one-form-coords}(3). By Proposition~\ref{prop:one-form-coords}(2), with $\theta = \zeta$ and all $\theta_j = 0$, its coordinate representation in the charts $(U, \varphi)$ and $(T^*U, \hat\varphi)$ is
 \[
 \hat\varphi \circ \zeta \circ \varphi^{-1}(r) = (r, 0, \ldots, 0), \qquad r \in \varphi(U) .
 \]
@@ -17655,6 +17712,8 @@ Equivalently, $\pi \circ \mathbf{X} = \mathrm{id}_M$ for the projection $\pi : T
 
 In words: a vector field chooses one tangent vector at every point of $M$, and the choice varies smoothly.
 
+A vector field is a section of $TM \to M$, so it is smooth. Without smoothness what is left is a rough section of $TM \to M$ (Definition~\ref{def:rough-section}), which Lee calls a \emph{rough vector field}: a tangent vector $\mathbf{X}_p \in T_pM$ at every point $p$, and nothing more. The smoothness criteria of this section (Proposition~\ref{prop:vf-coords} and Lemma~\ref{lem:vf-smooth-criterion}) are stated for rough sections, with the same letter $\mathbf{X}$, because they are the tests that decide whether a rough section is a vector field.
+
 \begin{center}
 \begin{tikzpicture}[scale=0.95, >=stealth]
 % ---------- left: the arrows on M = S^1 ----------
@@ -17733,7 +17792,7 @@ For $f \in C^\infty(M)$ and $\mathbf{X} \in \mathfrak{X}(M)$, the product $f\mat
 \end{defbox}
 
 \begin{propbox}[Vector Fields in Coordinates]\thmlabel{prop:vf-coords}
-Let $\mathbf{X}$ be a section of $TM$ (not assumed smooth), $m = \dim M$, and $(U, \varphi = (x^1, \ldots, x^m))$ a chart \emph{of $M$}: $U \subseteq M$ open, with coordinate functions $x^j : U \to \mathbb{R}$. Then on $U$
+Let $\mathbf{X}$ be a rough section of $TM$ (Definition~\ref{def:rough-section}), $m = \dim M$, and $(U, \varphi = (x^1, \ldots, x^m))$ a chart \emph{of $M$}: $U \subseteq M$ open, with coordinate functions $x^j : U \to \mathbb{R}$. Then on $U$
 \[
 \mathbf{X} = \sum_{j=1}^m \mathbf{X}^j\, \frac{\partial}{\partial x^j}, \qquad \mathbf{X}^j(p) = \mathbf{X}_p[x^j] = dx^j|_p(\mathbf{X}_p),
 \]
@@ -17744,7 +17803,7 @@ where $\partial/\partial x^j$ is the coordinate vector field of the chart ($p \m
 \begin{proof}
 \textit{(Stated in Lecture~15, by analogy with one-forms; filled in.)} Three things are claimed: the expansion of $\mathbf{X}$ at each point of $U$, the two formulas for its coefficients, and the smoothness criterion.
 
-\emph{The expansion.} Fix $p \in U$. Since $\mathbf{X}$ is a section of $TM$, $\mathbf{X}_p \in T_pM$ is a derivation at $p$. The universal formula of Theorem~\ref{thm:tangent-basis}, applied to $D = \mathbf{X}_p$, gives
+\emph{The expansion.} Fix $p \in U$. Since $\mathbf{X}$ is a rough section of $TM$, $\mathbf{X}_p \in T_pM$ is a derivation at $p$. The universal formula of Theorem~\ref{thm:tangent-basis}, applied to $D = \mathbf{X}_p$, gives
 \[
 \mathbf{X}_p = \sum_{j=1}^m \mathbf{X}_p[x^j]\, \frac{\partial}{\partial x^j}\Big|_p = \sum_{j=1}^m \mathbf{X}^j(p)\, \frac{\partial}{\partial x^j}\Big|_p , \qquad \mathbf{X}^j(p) := \mathbf{X}_p[x^j] .
 \]
@@ -17776,13 +17835,13 @@ Let $M$ be a smooth manifold.
 \end{propbox}
 
 \begin{proof}
-\textit{(Not from lecture: the notes stated the vector-space structure without proof; filled in.)} \emph{The operations give sections.} At each $p$, $\mathbf{X}_p + \mathbf{Y}_p$, $c\,\mathbf{X}_p$, $f(p)\,\mathbf{X}_p$ and $0_p$ lie in $T_pM$, a real vector space (Definition~\ref{def:abstract-tangent}); so each of $\mathbf{X} + \mathbf{Y}$, $c\mathbf{X}$, $f\mathbf{X}$, $\mathbf{0}$ assigns to every $p$ a tangent vector at $p$, a section of $TM$.
+\textit{(Not from lecture: the notes stated the vector-space structure without proof; filled in.)} \emph{The operations give rough sections.} At each $p$, $\mathbf{X}_p + \mathbf{Y}_p$, $c\,\mathbf{X}_p$, $f(p)\,\mathbf{X}_p$ and $0_p$ lie in $T_pM$, a real vector space (Definition~\ref{def:abstract-tangent}); so each of $\mathbf{X} + \mathbf{Y}$, $c\mathbf{X}$, $f\mathbf{X}$, $\mathbf{0}$ assigns to every $p$ a tangent vector at $p$, a rough section of $TM$ (Definition~\ref{def:rough-section}).
 
 \emph{(1), (2), (4): smoothness.} Let $(U, (x^j))$ be a chart. By Proposition~\ref{prop:vf-coords}, $\mathbf{X} = \sum_j \mathbf{X}^j\, \partial/\partial x^j$ and $\mathbf{Y} = \sum_j \mathbf{Y}^j\, \partial/\partial x^j$ on $U$ with smooth coefficients. At each $p \in U$, by linearity in $T_pM$,
 \[
 (\mathbf{X} + \mathbf{Y})_p = \sum_j \big(\mathbf{X}^j(p) + \mathbf{Y}^j(p)\big) \frac{\partial}{\partial x^j}\Big|_p, \qquad (f\mathbf{X})_p = \sum_j f(p)\, \mathbf{X}^j(p)\, \frac{\partial}{\partial x^j}\Big|_p, \qquad \mathbf{0}_p = \sum_j 0 \cdot \frac{\partial}{\partial x^j}\Big|_p ,
 \]
-so the coefficients of $\mathbf{X} + \mathbf{Y}$, $f\mathbf{X}$ and $\mathbf{0}$ are $\mathbf{X}^j + \mathbf{Y}^j$, $f\mathbf{X}^j$ and $0$, smooth on $U$ as sums and products of smooth functions. By Proposition~\ref{prop:vf-coords} again these sections are smooth on $U$; the chart domains cover $M$, and smoothness is local, so they are smooth. The scalar multiple $c\mathbf{X}$ is the case $f \equiv c$ of (4).
+so the coefficients of $\mathbf{X} + \mathbf{Y}$, $f\mathbf{X}$ and $\mathbf{0}$ are $\mathbf{X}^j + \mathbf{Y}^j$, $f\mathbf{X}^j$ and $0$, smooth on $U$ as sums and products of smooth functions. By Proposition~\ref{prop:vf-coords} again these rough sections are smooth on $U$; the chart domains cover $M$, and smoothness is local, so they are smooth. The scalar multiple $c\mathbf{X}$ is the case $f \equiv c$ of (4).
 
 \emph{(3): the axioms.} Each axiom is an equality of vector fields, that is, of their values at every $p \in M$, and there it is the corresponding axiom of the vector space $T_pM$. Explicitly, for $\mathbf{X}, \mathbf{Y}, \mathbf{Z} \in \mathfrak{X}(M)$, $a, b \in \mathbb{R}$ and every $p \in M$:
 \begin{itemize}
@@ -18652,7 +18711,7 @@ By step 1, the product rule of $D$, and $\gamma(p) = f(p)$, $\delta(p) = g(p)$ (
 \[
 \mathbf{X}_p(\gamma\delta) = \big(D(fg)\big)(p) = f(p)\,(Dg)(p) + g(p)\,(Df)(p) = \gamma(p)\,\mathbf{X}_p(\delta) + \delta(p)\,\mathbf{X}_p(\gamma) .
 \]
-So $\mathbf{X}_p$ is a derivation at $p$, i.e.\ $\mathbf{X}_p \in T_pM$ (Definitions~\ref{def:derivation} and~\ref{def:abstract-tangent}). Thus $\mathbf{X} : p \mapsto \mathbf{X}_p$ is a section of $TM$, so far not known to be smooth.
+So $\mathbf{X}_p$ is a derivation at $p$, i.e.\ $\mathbf{X}_p \in T_pM$ (Definitions~\ref{def:derivation} and~\ref{def:abstract-tangent}). Thus $\mathbf{X} : p \mapsto \mathbf{X}_p$ is a rough section of $TM$ (Definition~\ref{def:rough-section}), so far not known to be smooth.
 
 \emph{4. $\mathbf{X}$ is smooth.} In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ (Theorem~\ref{thm:tangent-basis}), and $\mathbf{X}_p(x^j) = D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$. \textit{(Completion.)} Smoothness of a map is a condition at each point (Definition~\ref{def:smooth-map}), so it suffices to find an open $V \ni p$ on which $\mathbf{X}$ is smooth. Take one bump function $\chi$ at $p$ subordinate to $U$ (Corollary~\ref{prop:bump-existence}), equal to $1$ on an open $V \ni p$. Then $V \subseteq U$, since $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$, extended by $0$ outside $U$: the single extension of Corollary~\ref{cor:germ-extension}, smooth on $M$. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$ (because $\chi = 1$ there), so $\tilde x^j$ is a global representative of the germ of $x^j$ at $q$ (Definition~\ref{def:germ-relation}), and by step 1
 \[
@@ -18678,7 +18737,7 @@ So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto 
 \textbf{Transcription note.} Page~43 of the handwritten notes asks ``is $\mathbf{X}_p$ $C^\infty$?''; the question is whether the field $\mathbf{X}$ is smooth, $\mathbf{X}_p$ being a single tangent vector. The same line writes the coordinates as $(x^1, \ldots, x^n)$ and then sums to $m$; the dimension is $m$ throughout.
 
 \begin{lembox}[A Smoothness Criterion for Vector Fields]\thmlabel{lem:vf-smooth-criterion}
-Let $\mathbf{X}$ be a section of $TM$, not assumed smooth, and for $f \in C^\infty(M)$ let $\mathbf{X}f$ be the function $p \mapsto \mathbf{X}_p[f]$. Then $\mathbf{X}$ is smooth if and only if $\mathbf{X}f$ is smooth for every $f \in C^\infty(M)$.
+Let $\mathbf{X}$ be a rough section of $TM$ (Definition~\ref{def:rough-section}), and for $f \in C^\infty(M)$ let $\mathbf{X}f$ be the function $p \mapsto \mathbf{X}_p[f]$. Then $\mathbf{X}$ is smooth if and only if $\mathbf{X}f$ is smooth for every $f \in C^\infty(M)$.
 \leeref{Proposition 8.14}
 \end{lembox}
 
@@ -19328,7 +19387,7 @@ as in Lee. It agrees with the differential of a map between vector spaces (Defin
 \end{rembox}
 
 \begin{defbox}[Pushforward of a Vector Field by a Diffeomorphism]\deflabel{def:vf-pushforward}
-Let $F : M \to N$ be a diffeomorphism and $\mathbf{X} \in \mathfrak{X}(M)$. The \textbf{pushforward} of $\mathbf{X}$ is the section $F_*\mathbf{X}$ of $TN$ given by
+Let $F : M \to N$ be a diffeomorphism and $\mathbf{X} \in \mathfrak{X}(M)$. The \textbf{pushforward} of $\mathbf{X}$ is the rough section $F_*\mathbf{X}$ of $TN$ (Definition~\ref{def:rough-section}) given by
 \[
 (F_*\mathbf{X})_q = dF_{F^{-1}(q)}\big(\mathbf{X}_{F^{-1}(q)}\big), \qquad q \in N .
 \]
@@ -19381,7 +19440,7 @@ where $d/dx|_x$ is the coordinate derivation of $\mathbb{R}$ at $x$ (Definition~
 \[
 d\pi_{(x,y)}(\mathbf{X}_{(x,y)}) = a(x, y)\, d\pi\big(\partial_x|_{(x,y)}\big) + c(x, y)\, d\pi\big(\partial_y|_{(x,y)}\big) = a(x, y)\, \frac{d}{dx}\Big|_x .
 \]
-This equals $\mathbf{Y}_x = b(x)\, \frac{d}{dx}\big|_x$ if and only if $\big(a(x,y) - b(x)\big)\, \frac{d}{dx}\big|_x = 0$, that is, if and only if $a(x, y) = b(x)$, because $d/dx|_x \ne 0$ (it is a basis of $T_x\mathbb{R}$, Theorem~\ref{thm:tangent-basis}). So the fields $\pi$-related to $\mathbf{Y}$ are those with $a(x, y) = b(x)$ for all $(x, y)$, and $c$ is not constrained. Conversely, for every $c \in C^\infty(\mathbb{R}^2)$ the section $b(x)\,\partial_x + c\,\partial_y$ has smooth coefficients ($(x, y) \mapsto b(x)$ is $b \circ \pi$), so it is a vector field (Proposition~\ref{prop:vf-coords}), and by the computation it is $\pi$-related to $\mathbf{Y}$.
+This equals $\mathbf{Y}_x = b(x)\, \frac{d}{dx}\big|_x$ if and only if $\big(a(x,y) - b(x)\big)\, \frac{d}{dx}\big|_x = 0$, that is, if and only if $a(x, y) = b(x)$, because $d/dx|_x \ne 0$ (it is a basis of $T_x\mathbb{R}$, Theorem~\ref{thm:tangent-basis}). So the fields $\pi$-related to $\mathbf{Y}$ are those with $a(x, y) = b(x)$ for all $(x, y)$, and $c$ is not constrained. Conversely, for every $c \in C^\infty(\mathbb{R}^2)$ the rough section $b(x)\,\partial_x + c\,\partial_y$ of $T\mathbb{R}^2$ has smooth coefficients ($(x, y) \mapsto b(x)$ is $b \circ \pi$), so it is a vector field (Proposition~\ref{prop:vf-coords}), and by the computation it is $\pi$-related to $\mathbf{Y}$.
 \end{proof}
 
 Only the horizontal component matters, and it must be the same along each vertical line, the fibre $\pi^{-1}(x)$, equal to the value of $\mathbf{Y}$ at $x$ below.
@@ -19495,7 +19554,7 @@ Let $F : M \to N$ be a diffeomorphism and $\mathbf{X} \in \mathfrak{X}(M)$. Then
 \]
 which is the formula.
 
-\emph{Smoothness.} At each $q$, $(F_*\mathbf{X})_q = dF_p(\mathbf{X}_p)$ lies in $T_{F(p)}N = T_qN$, so $F_*\mathbf{X}$ is a section of $TN$. In the formula, $g \circ F \in C^\infty(M)$ (Lemma~\ref{lem:composition-smooth}), so $\mathbf{X}(g \circ F)$ is smooth (Lemma~\ref{lem:vf-derivation}); and $F^{-1}$ is smooth because $F$ is a diffeomorphism (Definition~\ref{def:diffeomorphism}), so the composite $\mathbf{X}(g \circ F) \circ F^{-1}$ is smooth (Lemma~\ref{lem:composition-smooth}). This holds for every $g \in C^\infty(N)$, so $F_*\mathbf{X}$ is smooth by Lemma~\ref{lem:vf-smooth-criterion}.
+\emph{Smoothness.} At each $q$, $(F_*\mathbf{X})_q = dF_p(\mathbf{X}_p)$ lies in $T_{F(p)}N = T_qN$, so $F_*\mathbf{X}$ is a rough section of $TN$. In the formula, $g \circ F \in C^\infty(M)$ (Lemma~\ref{lem:composition-smooth}), so $\mathbf{X}(g \circ F)$ is smooth (Lemma~\ref{lem:vf-derivation}); and $F^{-1}$ is smooth because $F$ is a diffeomorphism (Definition~\ref{def:diffeomorphism}), so the composite $\mathbf{X}(g \circ F) \circ F^{-1}$ is smooth (Lemma~\ref{lem:composition-smooth}). This holds for every $g \in C^\infty(N)$, so $F_*\mathbf{X}$ is smooth by Lemma~\ref{lem:vf-smooth-criterion}.
 
 \emph{$F$-related.} For $p \in M$, $F^{-1}(F(p)) = p$, so Definition~\ref{def:vf-pushforward} at $q = F(p)$ reads $(F_*\mathbf{X})_{F(p)} = dF_p(\mathbf{X}_p)$. This is Definition~\ref{def:F-related} with $\mathbf{Y} = F_*\mathbf{X}$.
 
@@ -20099,7 +20158,7 @@ Let $G$ be a Lie group with identity $e$, and $v \in T_eG$. The \textbf{left-inv
 \[
 \mathbf{X}^v_g = d(L_g)_e(v) \in T_gG, \qquad g \in G :
 \]
-the vector $v$ carried from $e$ to $g$ by the differential of the left translation $L_g$ (Definition~\ref{def:left-translation-lie}). It is a \emph{rough} vector field (Lee's term), a tangent vector at every point, not yet known to be smooth.
+the vector $v$ carried from $e$ to $g$ by the differential of the left translation $L_g$ (Definition~\ref{def:left-translation-lie}). It is a rough vector field, that is, a rough section of $TG$ (Definition~\ref{def:rough-section}): a tangent vector at every point, not yet known to be smooth.
 \leeref{proof of Theorem 8.37}
 \end{defbox}
 
@@ -20139,7 +20198,7 @@ the partial derivative of $\varphi$ in the second variable in the direction $v$ 
 \end{propbox}
 
 \begin{proof}
-\textit{(Lecture~18, completing the proof of Lecture~17.)} Lecture~17 stopped here: what was missing is that $\mathbf{X}^v$ is $C^\infty$, an important technical point for which the tools were not yet available. Lecture~18 finished it with the partial derivative construction (Definition~\ref{def:partial-derivative-factor}). So far $\mathbf{X}^v$ is a left-invariant \emph{rough} field (Lemma~\ref{lem:left-invariant-extension}(1) and (2)), Lee's term for a section not yet known to be smooth; the piece of the construction not yet justified is its smoothness.
+\textit{(Lecture~18, completing the proof of Lecture~17.)} Lecture~17 stopped here: what was missing is that $\mathbf{X}^v$ is $C^\infty$, an important technical point for which the tools were not yet available. Lecture~18 finished it with the partial derivative construction (Definition~\ref{def:partial-derivative-factor}). So far $\mathbf{X}^v$ is a left-invariant \emph{rough} field (Lemma~\ref{lem:left-invariant-extension}(1) and (2)), a rough section of $TG$ (Definition~\ref{def:rough-section}), not yet known to be smooth; the piece of the construction not yet justified is its smoothness.
 
 \emph{The claim.} It suffices to show that for every $f \in C^\infty(G)$ the function $\mathbf{X}^v f : g \mapsto \mathbf{X}^v_g[f]$ is smooth. This function is well defined whether or not $\mathbf{X}^v$ is smooth, because there is a vector at every point, and it can act on any function. The lecture's proof of the claim: in local coordinates $(x^1, \ldots, x^m)$, $m = \dim G$, there is still a pointwise expansion $\mathbf{X}^v = \sum_j a^j\, \partial/\partial x^j$, and $\mathbf{X}^v$ is smooth exactly when the $a^j$ are (Proposition~\ref{prop:vf-coords}); and $a^j$ is precisely the action of $\mathbf{X}^v$ on the coordinate $x^j$. This is Lemma~\ref{lem:vf-smooth-criterion}, whose proof also handles the point that $x^j$ is defined only on the chart, by extending it with a bump function.
 
@@ -36412,7 +36471,7 @@ of a linear $k$-form on $T_pM$ (Definition~\ref{def:lambda-k}, with $V = T_pM$ a
 The \textbf{degree} of a $k$-form $\omega$ on $M$ (Definition~\ref{def:k-form-manifold}) is the number $k$. It is written $|\omega| = k$.
 \end{defbox}
 
-No smoothness is required yet; smooth forms come next. The case $k = 1$ was seen in September: an assignment of a covector to each point is a section of $T^*M$, and a smooth one is a one-form (Definition~\ref{def:one-form}); this is its version in arbitrary degree. For $k = 0$, $\Lambda^0 T_p^*M = \mathbb{R}$, and a $0$-form assigns a number to each point: it is a function on $M$. The notation $|\omega|$ for the degree is not Lee's, but it is used in other books. Notation, normalizations and sign conventions vary a lot from book to book in this subject (and more so in MATH~635), down to which index of a matrix labels the rows; so the conventions of the book at hand have to be checked before its formulas are used.
+No smoothness is required yet; smooth forms come next. The case $k = 1$ was seen in September: an assignment of a covector to each point is a rough section of $T^*M$ (Definition~\ref{def:rough-section}), and a smooth one is a one-form (Definition~\ref{def:one-form}); this is its version in arbitrary degree. For $k = 0$, $\Lambda^0 T_p^*M = \mathbb{R}$, and a $0$-form assigns a number to each point: it is a function on $M$. The notation $|\omega|$ for the degree is not Lee's, but it is used in other books. Notation, normalizations and sign conventions vary a lot from book to book in this subject (and more so in MATH~635), down to which index of a matrix labels the rows; so the conventions of the book at hand have to be checked before its formulas are used.
 
 \emph{Coordinates.} Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart and $q \in U$. The coordinate vectors $\partial/\partial x^1|_q, \ldots, \partial/\partial x^m|_q$ form a basis of $T_qM$, with dual basis $dx^1|_q, \ldots, dx^m|_q$ of $T_q^*M$ (Lemma~\ref{lem:df-coords}). By Propositions~\ref{prop:dim-k-forms} and~\ref{prop:wedge-properties}(4), for $A = \{a_1 < \cdots < a_k\} \subseteq \{1, \ldots, m\}$ the forms
 \[

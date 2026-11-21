@@ -8,7 +8,7 @@ tags: [chapter, differentiable-manifolds]
 ↑ [[Differentiable Manifolds]]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (41), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (9), [[· 3 Smooth Structures|3 Smooth Structures]] (108)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (155), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (46), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (59), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (78), [[· 9 Sard's Theorem|9 Sard's Theorem]] (9), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (26), [[· 11 Differential Forms|11 Differential Forms]] (18)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (155), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (46), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (62), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (78), [[· 9 Sard's Theorem|9 Sard's Theorem]] (9), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (26), [[· 11 Differential Forms|11 Differential Forms]] (18)
 **Builds on (other subjects):** [[Linear Algebra]] (15), [[Topology]] (4), [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (10)
 
 ## Sections

@@ -34,6 +34,8 @@ tags: [differentiable-manifolds, math591]
 
 In words: a vector field chooses one tangent vector at every point of $M$, and the choice varies smoothly.
 
+A vector field is a section of $TM \to M$, so it is smooth. Without smoothness what is left is a rough section of $TM \to M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]), which Lee calls a *rough vector field*: a tangent vector $\mathbf{X}_p \in T_pM$ at every point $p$, and nothing more. The smoothness criteria of this section (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]] and Lemma [[§56 Vector Fields#^lem-56-11|§56.11]]) are stated for rough sections, with the same letter $\mathbf{X}$, because they are the tests that decide whether a rough section is a vector field.
+
 ![[m591-44-2.svg]]
 *A vector field in two pictures, on the circle $M = S^1$ with $\mathbf{X} = c(\theta)\,\partial/\partial\theta$, $c(\theta) = 0.55 + 0.35\sin\theta$. Left: the usual picture, an arrow $\mathbf{X}(p)$ at each point $p$. Right: the tangent bundle $TS^1$, with $S^1$ cut open at $(1,0)$; each fibre $T_pM$ is a vertical line over $p$, and the height of a point on it measures the vector $c\,\partial/\partial\theta$ (above the dashed zero section: counterclockwise). The vector field is the curve $\mathbf{X}(M)$, which meets every fibre exactly once — that is the condition $\mathbf{X}(p) \in T_pM$ — and $\pi \circ \mathbf{X} = \mathrm{id}_M$ says that the point of the curve above $p$ projects back to $p$. The points $p_1, p_2, p_3$ carry the same colour in both pictures.*
 
@@ -84,7 +86,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 ^def-56-3
 
 > [!theorem] Proposition §56.1: Vector Fields in Coordinates
-> Let $\mathbf{X}$ be a section of $TM$ (not assumed smooth), $m = \dim M$, and $(U, \varphi = (x^1, \ldots, x^m))$ a chart *of $M$*: $U \subseteq M$ open, with coordinate functions $x^j : U \to \mathbb{R}$. Then on $U$
+> Let $\mathbf{X}$ be a rough section of $TM$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]), $m = \dim M$, and $(U, \varphi = (x^1, \ldots, x^m))$ a chart *of $M$*: $U \subseteq M$ open, with coordinate functions $x^j : U \to \mathbb{R}$. Then on $U$
 >
 > $$
 > \mathbf{X} = \sum_{j=1}^m \mathbf{X}^j\, \frac{\partial}{\partial x^j}, \qquad \mathbf{X}^j(p) = \mathbf{X}_p[x^j] = dx^j|_p(\mathbf{X}_p),
@@ -99,7 +101,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 > [!proof]+ Proof
 > *(Stated in Lecture 15, by analogy with one-forms; filled in.)* Three things are claimed: the expansion of $\mathbf{X}$ at each point of $U$, the two formulas for its coefficients, and the smoothness criterion.
 >
-> *The expansion.* Fix $p \in U$. Since $\mathbf{X}$ is a section of $TM$, $\mathbf{X}_p \in T_pM$ is a derivation at $p$. The universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], applied to $D = \mathbf{X}_p$, gives
+> *The expansion.* Fix $p \in U$. Since $\mathbf{X}$ is a rough section of $TM$, $\mathbf{X}_p \in T_pM$ is a derivation at $p$. The universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], applied to $D = \mathbf{X}_p$, gives
 >
 > $$
 > \mathbf{X}_p = \sum_{j=1}^m \mathbf{X}_p[x^j]\, \frac{\partial}{\partial x^j}\Big|_p = \sum_{j=1}^m \mathbf{X}^j(p)\, \frac{\partial}{\partial x^j}\Big|_p , \qquad \mathbf{X}^j(p) := \mathbf{X}_p[x^j] .
@@ -139,7 +141,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 ^prop-56-2
 
 > [!proof]+ Proof
-> *(Not from lecture: the notes stated the vector-space structure without proof; filled in.)* *The operations give sections.* At each $p$, $\mathbf{X}_p + \mathbf{Y}_p$, $c\,\mathbf{X}_p$, $f(p)\,\mathbf{X}_p$ and $0_p$ lie in $T_pM$, a real vector space ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]); so each of $\mathbf{X} + \mathbf{Y}$, $c\mathbf{X}$, $f\mathbf{X}$, $\mathbf{0}$ assigns to every $p$ a tangent vector at $p$, a section of $TM$.
+> *(Not from lecture: the notes stated the vector-space structure without proof; filled in.)* *The operations give rough sections.* At each $p$, $\mathbf{X}_p + \mathbf{Y}_p$, $c\,\mathbf{X}_p$, $f(p)\,\mathbf{X}_p$ and $0_p$ lie in $T_pM$, a real vector space ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]); so each of $\mathbf{X} + \mathbf{Y}$, $c\mathbf{X}$, $f\mathbf{X}$, $\mathbf{0}$ assigns to every $p$ a tangent vector at $p$, a rough section of $TM$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]).
 >
 > *(1), (2), (4): smoothness.* Let $(U, (x^j))$ be a chart. By [[§56 Vector Fields#^prop-56-1|Proposition §56.1]], $\mathbf{X} = \sum_j \mathbf{X}^j\, \partial/\partial x^j$ and $\mathbf{Y} = \sum_j \mathbf{Y}^j\, \partial/\partial x^j$ on $U$ with smooth coefficients. At each $p \in U$, by linearity in $T_pM$,
 >
@@ -147,7 +149,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 > (\mathbf{X} + \mathbf{Y})_p = \sum_j \big(\mathbf{X}^j(p) + \mathbf{Y}^j(p)\big) \frac{\partial}{\partial x^j}\Big|_p, \qquad (f\mathbf{X})_p = \sum_j f(p)\, \mathbf{X}^j(p)\, \frac{\partial}{\partial x^j}\Big|_p, \qquad \mathbf{0}_p = \sum_j 0 \cdot \frac{\partial}{\partial x^j}\Big|_p ,
 > $$
 >
-> so the coefficients of $\mathbf{X} + \mathbf{Y}$, $f\mathbf{X}$ and $\mathbf{0}$ are $\mathbf{X}^j + \mathbf{Y}^j$, $f\mathbf{X}^j$ and $0$, smooth on $U$ as sums and products of smooth functions. By [[§56 Vector Fields#^prop-56-1|Proposition §56.1]] again these sections are smooth on $U$; the chart domains cover $M$, and smoothness is local, so they are smooth. The scalar multiple $c\mathbf{X}$ is the case $f \equiv c$ of (4).
+> so the coefficients of $\mathbf{X} + \mathbf{Y}$, $f\mathbf{X}$ and $\mathbf{0}$ are $\mathbf{X}^j + \mathbf{Y}^j$, $f\mathbf{X}^j$ and $0$, smooth on $U$ as sums and products of smooth functions. By [[§56 Vector Fields#^prop-56-1|Proposition §56.1]] again these rough sections are smooth on $U$; the chart domains cover $M$, and smoothness is local, so they are smooth. The scalar multiple $c\mathbf{X}$ is the case $f \equiv c$ of (4).
 >
 > *(3): the axioms.* Each axiom is an equality of vector fields, that is, of their values at every $p \in M$, and there it is the corresponding axiom of the vector space $T_pM$. Explicitly, for $\mathbf{X}, \mathbf{Y}, \mathbf{Z} \in \mathfrak{X}(M)$, $a, b \in \mathbb{R}$ and every $p \in M$:
 > - commutativity: $(\mathbf{X} + \mathbf{Y})_p = \mathbf{X}_p + \mathbf{Y}_p = \mathbf{Y}_p + \mathbf{X}_p = (\mathbf{Y} + \mathbf{X})_p$;
@@ -162,7 +164,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 ^pf-56-2
 
-*Uses:* [[§56 Vector Fields#^def-56-1|Def. §56.1]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§56 Vector Fields#^prop-56-1|§56.1]]
+*Uses:* [[§56 Vector Fields#^def-56-1|Def. §56.1]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§45 Fibrations#^def-45-5|Def. §45.5]]
 
 By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — the same pointwise check gives $(fg)\mathbf{X} = f(g\mathbf{X})$, $(f + g)\mathbf{X} = f\mathbf{X} + g\mathbf{X}$ and $f(\mathbf{X} + \mathbf{Y}) = f\mathbf{X} + f\mathbf{Y}$ — which is the sense in which Lecture 17 calls it an algebra over the smooth functions. It is infinite-dimensional as a real vector space (for $\dim M \ge 1$), but over $C^\infty(U)$ the fields on a chart domain $U$ have the basis $\partial/\partial x^1, \ldots, \partial/\partial x^m$ ([[§56 Vector Fields#^prop-56-1|Proposition §56.1]]).
 
@@ -528,7 +530,7 @@ Derivations are local, thanks to the product rule and the existence of bump func
 > \mathbf{X}_p(\gamma\delta) = \big(D(fg)\big)(p) = f(p)\,(Dg)(p) + g(p)\,(Df)(p) = \gamma(p)\,\mathbf{X}_p(\delta) + \delta(p)\,\mathbf{X}_p(\gamma) .
 > $$
 >
-> So $\mathbf{X}_p$ is a derivation at $p$, i.e. $\mathbf{X}_p \in T_pM$ (Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]] and [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]). Thus $\mathbf{X} : p \mapsto \mathbf{X}_p$ is a section of $TM$, so far not known to be smooth.
+> So $\mathbf{X}_p$ is a derivation at $p$, i.e. $\mathbf{X}_p \in T_pM$ (Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]] and [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]). Thus $\mathbf{X} : p \mapsto \mathbf{X}_p$ is a rough section of $TM$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]), so far not known to be smooth.
 >
 > *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), and $\mathbf{X}_p(x^j) = D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$. *(Completion.)* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to find an open $V \ni p$ on which $\mathbf{X}$ is smooth. Take one bump function $\chi$ at $p$ subordinate to $U$ (Corollary [[§56 Vector Fields#^cor-56-7|§56.7]]), equal to $1$ on an open $V \ni p$. Then $V \subseteq U$, since $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$, extended by $0$ outside $U$: the single extension of Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], smooth on $M$. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$ (because $\chi = 1$ there), so $\tilde x^j$ is a global representative of the germ of $x^j$ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and by step 1
 >
@@ -556,14 +558,14 @@ Derivations are local, thanks to the product rule and the existence of bump func
 
 ^pf-56-10
 
-*Uses:* [[§56 Vector Fields#^cor-56-8|§56.8]], [[§56 Vector Fields#^cor-56-7|§56.7]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§56 Vector Fields#^lem-56-9|§56.9]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§56 Vector Fields#^def-56-8|Def. §56.8]]
+*Uses:* [[§56 Vector Fields#^cor-56-8|§56.8]], [[§56 Vector Fields#^cor-56-7|§56.7]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§56 Vector Fields#^lem-56-9|§56.9]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§56 Vector Fields#^def-56-8|Def. §56.8]], [[§45 Fibrations#^def-45-5|Def. §45.5]]
 
 So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto the derivations of $C^\infty(M)$. *Notation (Lecture 16).* From now on $D_\mathbf{X}$ is written $\mathbf{X}$: writing $\mathbf{X}(f)$ signals that $\mathbf{X}$ is being thought of as an operator.
 
 **Transcription note.** Page 43 of the handwritten notes asks “is $\mathbf{X}_p$ $C^\infty$?”; the question is whether the field $\mathbf{X}$ is smooth, $\mathbf{X}_p$ being a single tangent vector. The same line writes the coordinates as $(x^1, \ldots, x^n)$ and then sums to $m$; the dimension is $m$ throughout.
 
 > [!theorem] Lemma §56.11: A Smoothness Criterion for Vector Fields
-> Let $\mathbf{X}$ be a [[§45 Fibrations#^def-45-3|section]] of $TM$, not assumed smooth, and for $f \in C^\infty(M)$ let $\mathbf{X}f$ be the function $p \mapsto \mathbf{X}_p[f]$. Then $\mathbf{X}$ is smooth if and only if $\mathbf{X}f$ is smooth for every $f \in C^\infty(M)$.
+> Let $\mathbf{X}$ be a rough section of $TM$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]), and for $f \in C^\infty(M)$ let $\mathbf{X}f$ be the function $p \mapsto \mathbf{X}_p[f]$. Then $\mathbf{X}$ is smooth if and only if $\mathbf{X}f$ is smooth for every $f \in C^\infty(M)$.
 >
 > *Lee: Proposition 8.14*
 

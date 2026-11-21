@@ -3270,7 +3270,7 @@ If $F:M\to N$ is a submersion, every fibre $F^{-1}(q)$ is a regular submanifold 
 - [ ] Q2 Why is every $q\in N$ a regular value of a submersion, including $q\notin F(M)$?
 - [ ] Q3 Which theorem finishes the proof?
 - [ ] Q4 **[why]** Are all the fibres of a surjective submersion diffeomorphic to one another? Use Example [[§45 Fibrations#^ex-45-1|§45.1]].
-- [ ] Q5 Where is the corollary used for fibrations and for the vertical space (Definition [[§45 Fibrations#^def-45-5|§45.5]])?
+- [ ] Q5 Where is the corollary used for fibrations and for the vertical space (Definition [[§45 Fibrations#^def-45-6|§45.6]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - A submersion is onto at every point, so every point of every fibre is regular; empty fibres are vacuous.
@@ -3487,7 +3487,7 @@ A smooth $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$, see Definition [[§45
 
 #### Vertical space · P2
 
-$V_y = \ker \pi_{\ast y} \subseteq T_yE$, see Definition [[§45 Fibrations#^def-45-5|§45.5]]. *Source: Lecture 13.*
+$V_y = \ker \pi_{\ast y} \subseteq T_yE$, see Definition [[§45 Fibrations#^def-45-6|§45.6]]. *Source: Lecture 13.*
 
 ^nd-def-38-5
 
@@ -3498,7 +3498,7 @@ $V_y = \ker \pi_{\ast y} \subseteq T_yE$, see Definition [[§45 Fibrations#^def-
 - [ ] Q5 **[example]** Compute the vertical space of $T^\ast M$ along the zero section.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§45 Fibrations#^def-45-5|§45.5]]; Q2: Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] ($\iota_{\ast}(T_yE_b) = \ker \pi_{\ast y}$).
+> - Definition [[§45 Fibrations#^def-45-6|§45.6]]; Q2: Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] ($\iota_{\ast}(T_yE_b) = \ker \pi_{\ast y}$).
 > - Q3: Proposition [[§45 Fibrations#^prop-45-5|§45.5]] ($P = \mathrm{id} - s_{\ast p} \circ \pi_{\ast y}$). Q4: no in general; along the image of a section, yes (Q3).
 > - Q5: Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]] (spanned by $\partial/\partial \xi_j$).
 
@@ -3549,7 +3549,7 @@ If $\pi\circ s=\mathrm{id}_M$, $y=s(p)$: $\pi_{\ast y}\circ s_{\ast p}=\mathrm{i
 ^nd-prop-38-5
 
 - [ ] Q1 **[state]** State the three parts and the dimension formula.
-- [ ] Q2 **[def]** Define the vertical space $V_y$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]). For a submersion, what is it the tangent space of?
+- [ ] Q2 **[def]** Define the vertical space $V_y$ (Definition [[§45 Fibrations#^def-45-6|§45.6]]). For a submersion, what is it the tangent space of?
 - [ ] Q3 (1) Which identity do you differentiate, and why does it give injectivity of $s_{\ast p}$ and surjectivity of $\pi_{\ast y}$?
 - [ ] Q4 (2) Write $w\in T_yE$ as a sum of a vector in $s_{\ast p}(T_pM)$ and a vertical vector.
 - [ ] Q5 (2) Why do the two subspaces meet only in $0$?
@@ -4319,7 +4319,7 @@ A smooth map $\theta : M \to T^\ast M$ with $\theta_p \in T^\ast_pM$, i.e. a sec
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§53 One-Forms#^def-53-1|§53.1]], Definition [[§53 One-Forms#^def-53-2|§53.2]]; Q2: Proposition [[§53 One-Forms#^prop-53-1|§53.1]]. Q3: Proposition [[§53 One-Forms#^prop-53-3|§53.3]].
-> - Q4: Proposition [[§53 One-Forms#^prop-53-4|§53.4]] (mixed partials), Example [[§53 One-Forms#^ex-53-1|§53.1]] ($\tfrac12(x\,dy - y\,dx)$).
+> - Q4: Proposition [[§53 One-Forms#^prop-53-4|§53.4]] (mixed partials), Example [[§53 One-Forms#^ex-53-2|§53.2]] ($\tfrac12(x\,dy - y\,dx)$).
 > - Q5: the remark *The Condition Is Not Sufficient* in [[§53 One-Forms|§53]] ($\frac{x\,dy - y\,dx}{x^2 + y^2}$ around the circle gives $2\pi$).
 
 #### Pullback of a one-form · P2

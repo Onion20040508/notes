@@ -7,7 +7,7 @@ tags: [chapter, differentiable-manifolds]
 # 8 Vector Fields and Lie Groups
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (6), [[· 3 Smooth Structures|3 Smooth Structures]] (44), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (78), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (22), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (7), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (7), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (1)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (6), [[· 3 Smooth Structures|3 Smooth Structures]] (44), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (78), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (22), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (12), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (7), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (1)
 **Used by:** [[· 9 Sard's Theorem|9 Sard's Theorem]] (10), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (48), [[· 11 Differential Forms|11 Differential Forms]] (2)
 **Builds on (other subjects):** [[Linear Algebra]] (2), [[Topology]] (2), [[Multivariable Analysis]] (2)
 

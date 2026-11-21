@@ -39,7 +39,7 @@ tags: [differentiable-manifolds, math591]
 
 *Uses:* [[§81 The Exterior Derivative#^def-81-2|Def. §81.2]]
 
-The standard example, perhaps seen in Calculus III, is the one of Example [[§53 One-Forms#^ex-53-2|§53.2]], now in the language of cohomology. The form looks a little contrived, but it is a natural thing: it is $d\theta$.
+The standard example, perhaps seen in Calculus III, is the one of Example [[§53 One-Forms#^ex-53-3|§53.3]], now in the language of cohomology. The form looks a little contrived, but it is a natural thing: it is $d\theta$.
 
 > [!example] Example §83.2: The Angle Form Is Closed but Not Exact
 > *(Lecture 33.)* On $M = \mathbb{R}^2 \setminus \{(0, 0)\}$ let
@@ -59,11 +59,11 @@ The standard example, perhaps seen in Calculus III, is the one of Example [[§53
 ^ex-83-2
 
 > [!remark]- Connections
-> - The same form, step by step, with the angle on the slit plane: [[§53 One-Forms#^ex-53-2|Ex. §53.2]]; closed and exact one-forms: [[§53 One-Forms#^def-53-5|Def. §53.5]], [[§53 One-Forms#^def-53-6|Def. §53.6]].
+> - The same form, step by step, with the angle on the slit plane: [[§53 One-Forms#^ex-53-3|Ex. §53.3]]; closed and exact one-forms: [[§53 One-Forms#^def-53-5|Def. §53.5]], [[§53 One-Forms#^def-53-6|Def. §53.6]].
 > - In MATH 452: [[§39 Closed and Exact Forms#^prop-39-6|452 Prop. §39.6]]. On star-shaped domains every closed form is exact, the [[Poincaré Lemma]]; the punctured plane is not star-shaped.
 
 > [!proof]+ Justification
-> (1) is step 3 of Example [[§53 One-Forms#^ex-53-2|§53.2]], where both sides are computed to be $(y^2 - x^2)/(x^2 + y^2)^2$.
+> (1) is step 3 of Example [[§53 One-Forms#^ex-53-3|§53.3]], where both sides are computed to be $(y^2 - x^2)/(x^2 + y^2)^2$.
 >
 > (2) *(Lecture 33 did the computation for $\theta = \tan^{-1}(y/x)$; the other branches are filled in.)* On the right half-plane $\{x > 0\}$, $\theta = \tan^{-1}(y/x)$ is a branch. With $(\tan^{-1})'(s) = 1/(1 + s^2)$ and the chain rule,
 >
@@ -73,11 +73,11 @@ The standard example, perhaps seen in Calculus III, is the one of Example [[§53
 >
 > multiplying numerators and denominators by $x^2$. On $\{y > 0\}$, $\{x < 0\}$ and $\{y < 0\}$ the functions $\frac{\pi}{2} - \tan^{-1}(x/y)$, $\pi + \tan^{-1}(y/x)$ and $-\frac{\pi}{2} - \tan^{-1}(x/y)$ are branches of $\theta$, and the same computation gives $\omega$ for each; for instance $d\big(-\tan^{-1}(x/y)\big) = -\frac{(1/y)\, dx - (x/y^2)\, dy}{1 + x^2/y^2} = \frac{-y\, dx + x\, dy}{x^2 + y^2}$. Since $d \circ d = 0$, $\omega = d\theta$ on each half-plane justifies again that $\omega$ is closed.
 >
-> (3) is steps 4–6 of Example [[§53 One-Forms#^ex-53-2|§53.2]]: along $c(t) = (\cos t, \sin t)$, $\omega$ takes the value $1$ on the velocity, so $\int_{S^1}\omega = \int_0^{2\pi} 1\, dt = 2\pi$; if $\omega = df$, then $(f \circ c)' = 1$ and $f(c(2\pi)) - f(c(0)) = 2\pi$, while $c(2\pi) = c(0)$.
+> (3) is steps 4–6 of Example [[§53 One-Forms#^ex-53-3|§53.3]]: along $c(t) = (\cos t, \sin t)$, $\omega$ takes the value $1$ on the velocity, so $\int_{S^1}\omega = \int_0^{2\pi} 1\, dt = 2\pi$; if $\omega = df$, then $(f \circ c)' = 1$ and $f(c(2\pi)) - f(c(0)) = 2\pi$, while $c(2\pi) = c(0)$.
 
 ^pf-ex-83-2
 
-*Uses:* [[§53 One-Forms#^ex-53-2|Ex. §53.2]]
+*Uses:* [[§53 One-Forms#^ex-53-3|Ex. §53.3]]
 
 *There is no contradiction in writing $\omega = d\theta$ with $\omega$ not exact.* The reason is that $\theta$ is not a smooth function on $\mathbb{R}^2 \setminus \{0\}$; it is not even a continuous one. It is the measure of an angle in radians, which is defined only up to an additive multiple of $2\pi$.
 

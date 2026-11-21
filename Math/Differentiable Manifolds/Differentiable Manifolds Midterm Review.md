@@ -229,7 +229,7 @@ The notes show the course building each object more than once and then proving t
 
 ## T8. Fibrations (§45–§48)
 **Language**
-- [ ] Definition [[§45 Fibrations#^def-45-1|§45.1]] Fibration, Definition [[§45 Fibrations#^def-45-2|§45.2]] Trivial Fibration, Definition [[§45 Fibrations#^def-45-3|§45.3]] Section, Definition [[§45 Fibrations#^def-45-4|§45.4]] Local Section, Definition [[§45 Fibrations#^def-45-5|§45.5]] Vertical Space
+- [ ] Definition [[§45 Fibrations#^def-45-1|§45.1]] Fibration, Definition [[§45 Fibrations#^def-45-2|§45.2]] Trivial Fibration, Definition [[§45 Fibrations#^def-45-3|§45.3]] Section, Definition [[§45 Fibrations#^def-45-4|§45.4]] Local Section, Definition [[§45 Fibrations#^def-45-6|§45.6]] Vertical Space
 - [ ] Vector bundle: your own box (see the gap above).
 
 **Proofs**

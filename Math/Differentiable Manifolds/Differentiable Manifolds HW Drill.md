@@ -773,7 +773,7 @@ Let $\pi : E \to M$ be a surjective submersion. Show any section $s : M \to E$ (
 - [ ] Q7 Show $T_{s(p)}E = \operatorname{im} s_{\ast p} \oplus \ker \pi_{\ast s(p)}$.
 
 > [!tip]- Hints: definitions, results, strategy
-> **Topic and definitions.** Section [[§45 Fibrations#^def-45-3|Def §45.3]]; immersion [[§36 Submersions#^def-36-2|Def §36.2]]; embedding [[§41 Embeddings#^def-41-1|Def §41.1]]; vertical space [[§45 Fibrations#^def-45-5|Def §45.5]].
+> **Topic and definitions.** Section [[§45 Fibrations#^def-45-3|Def §45.3]]; immersion [[§36 Submersions#^def-36-2|Def §36.2]]; embedding [[§41 Embeddings#^def-41-1|Def §41.1]]; vertical space [[§45 Fibrations#^def-45-6|Def §45.6]].
 >
 > **Key results.** [[§45 Fibrations#^prop-45-6|Prop §45.6]] (this problem: sections are closed embeddings); splitting along a section [[§45 Fibrations#^prop-45-5|Prop §45.5]]; chain rule [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|Thm §28.6]].
 >
