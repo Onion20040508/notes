@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 284 (UMass, S. Hertel, Spring 2024)", "PHY 505 (UMich, J. Wells, Fall 2025) — special-relativity part", "PHY 408 (Stony Brook, Spring 2025; audit)", "PHY 360 GR (Smith, Spring 2024; audit)"]
 textbooks: ["OpenStax, University Physics Vol. 3", "Tipler & Llewellyn, Modern Physics", "Morin, Special Relativity for the Enthusiastic Beginner", "Morin, Introduction to Classical Mechanics (ch. 11–14)", "Schutz, A First Course in General Relativity", "Griffiths, Introduction to Electrodynamics (ch. 12)", "Hartle, Gravity", "Couzens, C7.5–C7.6 General Relativity 1–2 (Oxford lecture notes)", "d'Inverno & Vickers, Introducing Einstein's Relativity", "'t Hooft, Introduction to General Relativity"]
 conventions: "[[University Physics]]"
-status: "levels A and B done; level C (general relativity, self-study) in progress"
+status: "levels A and B done; level C (general relativity, self-study) C1–C14 done, cosmology planned"
 tags: [subject, relativity]
 ---
 # Relativity
@@ -36,6 +36,7 @@ Special relativity from Einstein's postulates, then its covariant (tensor) form,
 - [[· C11 Charged Black Holes]]
 - [[· C12 Rotating Black Holes]]
 - [[· C13 Black-Hole Thermodynamics]]
+- [[· C14 Hawking Radiation and Quantum Fields in Curved Spacetime]]
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -62,6 +63,7 @@ graph TD
   C11["C11 Charged Black Holes"]
   C12["C12 Rotating Black Holes"]
   C13["C13 Black-Hole Thermodynamics"]
+  C14["C14 Hawking Radiation and Quantum Fields in Curved Spacetime"]
   A1 -->|21| A2
   A1 -->|2| A3
   A2 -->|13| A3
@@ -130,6 +132,16 @@ graph TD
   C6 -->|5| C13
   C7 -->|2| C13
   C8 -->|2| C13
+  B1 -->|7| C14
+  C10 -->|23| C14
+  C11 -->|6| C14
+  C12 -->|3| C14
+  C13 -->|11| C14
+  C3 -->|11| C14
+  C4 -->|13| C14
+  C5 -->|1| C14
+  C6 -->|8| C14
+  C7 -->|5| C14
   B1 -->|9| C2
   B2 -->|12| C2
   C1 -->|2| C2
@@ -206,7 +218,11 @@ graph TD
   C8 -.->|1| C1
   C11 -.->|2| C10
   C12 -.->|3| C10
+  C13 -.->|3| C10
   C12 -.->|2| C11
+  C13 -.->|1| C11
+  C13 -.->|6| C12
+  C14 -.->|2| C13
   C10 -.->|2| C2
   C3 -.->|8| C2
   C5 -.->|2| C2
@@ -214,6 +230,7 @@ graph TD
   C10 -.->|2| C3
   C11 -.->|1| C3
   C12 -.->|4| C3
+  C13 -.->|1| C3
   C4 -.->|7| C3
   C5 -.->|3| C3
   C8 -.->|1| C3
@@ -240,13 +257,14 @@ graph TD
   C11 -.->|1| C7
   C8 -.->|1| C7
   C9 -.->|1| C7
+  C13 -.->|2| C8
   C9 -.->|2| C8
   C10 -.->|4| C9
   C12 -.->|1| C9
 ```
 
 ## Planned
-Chapters without notes yet; sources in brackets. Planned: 14 chapters, 78 sections.
+Chapters without notes yet; sources in brackets. Level C chapters C1–C14 are written; one chapter is planned.
 
 **Level C★ — general relativity (self-study)**
-C14 Hawking radiation and quantum fields in curved spacetime [GR2 §8–9] · C15 Cosmology [Hartle 17–19; Schutz 13; d'Inverno 24–26; 't Hooft 14 — planned only, not yet scheduled]
+C15 Cosmology [Hartle 17–19; Schutz 13; d'Inverno 24–26; 't Hooft 14 — planned only, not yet scheduled]
