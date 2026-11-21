@@ -33,6 +33,7 @@ Special relativity from Einstein's postulates, then its covariant (tensor) form,
 - [[· C8 Linearised Gravity and Gravitational Waves]]
 - [[· C9 Relativistic Stars and Collapse]]
 - [[· C10 Causal Structure and Penrose Diagrams]]
+- [[· C11 Charged Black Holes]]
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -56,6 +57,7 @@ graph TD
   C8["C8 Linearised Gravity and Gravitational Waves"]
   C9["C9 Relativistic Stars and Collapse"]
   C10["C10 Causal Structure and Penrose Diagrams"]
+  C11["C11 Charged Black Holes"]
   A1 -->|21| A2
   A1 -->|2| A3
   A2 -->|13| A3
@@ -93,6 +95,15 @@ graph TD
   C6 -->|21| C10
   C7 -->|99| C10
   C9 -->|1| C10
+  C1 -->|3| C11
+  C10 -->|27| C11
+  C2 -->|32| C11
+  C3 -->|49| C11
+  C4 -->|23| C11
+  C5 -->|16| C11
+  C6 -->|30| C11
+  C7 -->|29| C11
+  C9 -->|9| C11
   B1 -->|9| C2
   B2 -->|12| C2
   C1 -->|2| C2
@@ -198,4 +209,4 @@ graph TD
 Chapters without notes yet; sources in brackets. Planned: 14 chapters, 78 sections.
 
 **Level C★ — general relativity (self-study)**
-C11 Charged black holes [GR2 §5; d'Inverno 19] · C12 Rotating black holes [GR2 §6; d'Inverno 20; Hartle 15] · C13 Black-hole thermodynamics [GR2 §7] · C14 Hawking radiation and quantum fields in curved spacetime [GR2 §8–9] · C15 Cosmology [Hartle 17–19; Schutz 13; d'Inverno 24–26; 't Hooft 14 — planned only, not yet scheduled]
+C12 Rotating black holes [GR2 §6; d'Inverno 20; Hartle 15] · C13 Black-hole thermodynamics [GR2 §7] · C14 Hawking radiation and quantum fields in curved spacetime [GR2 §8–9] · C15 Cosmology [Hartle 17–19; Schutz 13; d'Inverno 24–26; 't Hooft 14 — planned only, not yet scheduled]
