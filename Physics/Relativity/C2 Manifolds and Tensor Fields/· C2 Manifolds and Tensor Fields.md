@@ -8,8 +8,8 @@ tags: [chapter, relativity]
 # C2 Manifolds and Tensor Fields
 ← [[· C1 From Special Relativity to Gravity]] · ↑ [[Relativity]] · [[· C3 Metric, Connection and Curvature]] →
 
-**Builds on:** [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (9), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (12), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (2), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (7)
-**Used by:** [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (2), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (6), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (1), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (1), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (176), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (44)
+**Builds on:** [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (9), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (12), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (2), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (7), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (2)
+**Used by:** [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (2), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (6), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (1), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (1), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (176), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (44), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (40)
 
 ★ *Self-study: general relativity beyond any course taken (spine: Couzens' Oxford GR notes; textbooks d'Inverno & Vickers, Hartle, Schutz).*
 

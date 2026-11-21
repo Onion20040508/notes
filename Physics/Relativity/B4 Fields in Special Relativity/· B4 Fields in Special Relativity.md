@@ -9,7 +9,7 @@ tags: [chapter, relativity]
 ← [[· B3 Relativistic Dynamics from an Action]] · ↑ [[Relativity]] · [[· C1 From Special Relativity to Gravity]] →
 
 **Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (1), [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (4), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (1), [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (5), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (18), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (2), [[· C2 Manifolds and Tensor Fields|C2 Manifolds and Tensor Fields]] (1), [[· C3 Metric, Connection and Curvature|C3 Metric, Connection and Curvature]] (2)
-**Used by:** [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (3), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (13), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (4)
+**Used by:** [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (3), [[· C1 From Special Relativity to Gravity|C1 From Special Relativity to Gravity]] (13), [[· C4 Matter in Curved Spacetime|C4 Matter in Curved Spacetime]] (4), [[· C5 Einstein's Equations|C5 Einstein's Equations]] (1)
 
 ## Sections
 - [[§B4.1 The Klein–Gordon Equation]] — user's 505 notes §Klein-Gordon Equation, §Plane Wave Solutions; series Part III §8 (covariant EL, Klein–Gordon)

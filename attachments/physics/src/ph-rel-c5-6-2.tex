@@ -1,0 +1,20 @@
+% Figure for Relativity §C5.6 (Theorem §C5.6.4): f(r) = -g_tt for Schwarzschild 1-2M/r, de Sitter 1-r^2/l^2,
+% Schwarzschild-de Sitter 1-2M/r-Lambda r^2/3, units M = 1, Lambda = 0.03 (l = 10). SdS horizons: roots of r^3 - 100 r + 200 = 0: 2.0915, 8.7889.
+\begin{tikzpicture}[font=\small]
+\begin{axis}[nfig, width=11cm, height=7cm, xmin=0, xmax=12.5, ymin=-1.0, ymax=1.25,
+  xlabel={$r/M$}, ylabel={$f(r) = -g_{tt}$}, xtick={0,2,4,...,12}, ytick={-1,-0.5,0,0.5,1},
+  axis x line=middle, x label style={at={(axis description cs:1.0,0.52)}, anchor=west}, clip=true]
+\addplot[figB, domain=1.1:12.5, samples=200] {1 - 2/x};
+\addplot[figG, domain=0:12.5, samples=200] {1 - x^2/100};
+\addplot[figR, domain=1.1:12.5, samples=300] {1 - 2/x - x^2/100};
+\node[figB, font=\scriptsize, anchor=south] at (axis cs:11,0.82) {Schwarzschild};
+\node[figG, font=\scriptsize, anchor=south west] at (axis cs:3.2,0.92) {de Sitter};
+\node[figR, font=\scriptsize, anchor=north] at (axis cs:5.2,0.22) {Schwarzschild--de Sitter};
+\fill[figB] (axis cs:2,0) circle (1.8pt);
+\fill[figG] (axis cs:10,0) circle (1.8pt);
+\fill[figR] (axis cs:2.0915,0) circle (1.6pt);
+\fill[figR] (axis cs:8.7889,0) circle (1.8pt);
+\node[font=\scriptsize, anchor=south] at (axis cs:10.3,0.03) {$\ell$};
+\node[font=\scriptsize, figR, anchor=north] at (axis cs:8.79,-0.08) {$r_c$};
+\end{axis}
+\end{tikzpicture}

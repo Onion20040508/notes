@@ -1,0 +1,21 @@
+% Figure for Relativity §C5.3, Example §C5.3.2 (homogeneous massive scalar field phi = phi0 cos(mt) as a perfect fluid).
+% Curves from rho = (1/2) phidot^2 + V, p = (1/2) phidot^2 - V with V = m^2 phi^2/2, in units of m^2 phi0^2; checked in rel-C/tools/verify_c5_3.py
+\begin{tikzpicture}
+\begin{axis}[nfig, width=11cm, height=5.2cm, xmin=0, xmax=12.8, ymin=-0.98, ymax=1.05,
+  xlabel={$mt$}, ylabel={$\rho,\ p$ \ (units $m^2\phi_0^2$)},
+  xtick={0,3.14159,6.28319,9.42478,12.56637}, xticklabels={$0$,$\pi$,$2\pi$,$3\pi$,$4\pi$},
+  ytick={-0.5,0,0.5,1}, legend style={font=\scriptsize, draw=none, at={(0.5,-0.32)}, anchor=north}, legend columns=4]
+\addplot[black!35, thin, domain=0:12.8, samples=200] {0.9*cos(deg(x))};
+\addlegendentry{$\phi/\phi_0$ (scaled by $0.9$)}
+\addplot[figB, domain=0:12.8, samples=2] {0.5};
+\addlegendentry{$\rho = \tfrac12\dot\phi^2 + V$}
+\addplot[figR, domain=0:12.8, samples=300] {0.5*sin(deg(x))^2 - 0.5*cos(deg(x))^2};
+\addlegendentry{$p = \tfrac12\dot\phi^2 - V$}
+\addplot[figR, dashed, thin, domain=0:12.8, samples=2] {0};
+\addlegendentry{$\langle p\rangle = 0$}
+\node[font=\scriptsize, figR, anchor=south] at (axis cs:1.5708,0.52) {$w = +1$};
+\node[font=\scriptsize, figR, anchor=north] at (axis cs:3.14159,-0.52) {$w = -1$};
+\node[font=\scriptsize, figR, anchor=south] at (axis cs:7.854,0.52) {$\dot\phi$ largest};
+\node[font=\scriptsize, figR, anchor=north] at (axis cs:6.2832,-0.52) {turning point};
+\end{axis}
+\end{tikzpicture}

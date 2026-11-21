@@ -1,0 +1,21 @@
+% Figure for Relativity §C5.6 (Example §C5.6.1): |acceleration| from the Sun, GM/r^2 vs Lambda c^2 r/3 (log-log).
+% GM_sun = 1.32712e20 m^3/s^2, c = 2.99792458e8 m/s, Lambda = 1.09e-52 m^-2 (Law §C5.6.3); crossing (3M/Lambda)^(1/3) = 3.44e18 m.
+% Plotted in log10 variables: X = log10(r/m); log10(GM/r^2) = 20.1229 - 2X; log10(Lambda c^2 r/3) = log10(1.09e-52*8.98755e16/3) + X = -35.4861 + X.
+\begin{tikzpicture}[font=\small]
+\begin{axis}[nfig, width=11cm, height=7cm, xmin=10, xmax=21, ymin=-40, ymax=0,
+  xlabel={$\log_{10}(r/\mathrm{m})$}, ylabel={$\log_{10}(a/\mathrm{m\,s^{-2}})$},
+  xtick={10,12,...,20}, ytick={-40,-30,...,0}, clip=false]
+\addplot[figB, domain=10:21, samples=2] {20.1229 - 2*x} node[pos=0.38, above right, font=\scriptsize] {$GM_\odot/r^2$};
+\addplot[figR, domain=10:21, samples=2] {-35.4861 + x} node[pos=0.1, above, font=\scriptsize] {$\Lambda c^2 r/3$};
+% Earth orbit 1.496e11 m (X = 11.175), Pluto 5.9e12 m (X = 12.771)
+\draw[black!45, densely dotted] (axis cs:11.175,-40) -- (axis cs:11.175,0) node[above, black!70, font=\scriptsize] {Earth};
+\draw[black!45, densely dotted] (axis cs:12.771,-40) -- (axis cs:12.771,0) node[above, black!70, font=\scriptsize] {Pluto};
+\fill[figB] (axis cs:11.175,-2.227) circle (1.8pt); \fill[figR] (axis cs:11.175,-24.311) circle (1.8pt);
+\fill[figB] (axis cs:12.771,-5.419) circle (1.8pt); \fill[figR] (axis cs:12.771,-22.715) circle (1.8pt);
+\node[font=\scriptsize, anchor=west, black!70] at (axis cs:12.9,-14) {ratio $5\times10^{-18}$};
+\draw[black!45, -{Stealth[length=1.4mm]}] (axis cs:12.95,-14) -- (axis cs:12.82,-14);
+% crossing at X = 18.536, Y = -16.950
+\fill[black] (axis cs:18.536,-16.950) circle (2pt);
+\node[font=\scriptsize, anchor=north, align=center] at (axis cs:18.0,-20.2) {equal at\\ $r_\Lambda = 3.44\times10^{18}$ m\\ $= 111$ pc};
+\end{axis}
+\end{tikzpicture}
