@@ -317,8 +317,18 @@ A field that is nonzero at $p$ is nonzero on a neighbourhood of $p$, by continui
 
 ^cor-72-7
 
-> [!proof]+ Proof (to be filled after the homework)
-> From Theorem [[§72 Lie Derivatives#^thm-72-6|§72.6]]. For (2), the left-hand side is $[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]{]}$, and the tool is the Jacobi identity (Corollary [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]]). One of these entries is a problem on the next homework.
+> [!proof]+ Proof
+> *(Not from lecture; the lecture named the tools. Filled in after Assignments 8 and 9, which did not ask for it.)* By Theorem [[§72 Lie Derivatives#^thm-72-6|§72.6]], $\mathcal{L}_{\mathbf{X}}\mathbf{Y} = [\mathbf{X}, \mathbf{Y}]$ for all fields.
+>
+> *(1)* The bracket is antisymmetric (Corollary [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]]): $\mathcal{L}_{\mathbf{X}}\mathbf{Y} = [\mathbf{X}, \mathbf{Y}] = -[\mathbf{Y}, \mathbf{X}] = -\mathcal{L}_{\mathbf{Y}}\mathbf{X}$.
+>
+> *(2)* The left-hand side is $[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]{]}$. The Jacobi identity (Corollary [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]]) reads $[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]{]} + [\mathbf{Y}, [\mathbf{Z}, \mathbf{X}]{]} + [\mathbf{Z}, [\mathbf{X}, \mathbf{Y}]{]} = 0$. Solving for the first term and using antisymmetry twice,
+>
+> $$
+> [\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]{]} = -[\mathbf{Z}, [\mathbf{X}, \mathbf{Y}]{]} - [\mathbf{Y}, [\mathbf{Z}, \mathbf{X}]{]} = {[}[\mathbf{X}, \mathbf{Y}], \mathbf{Z}] + [\mathbf{Y}, [\mathbf{X}, \mathbf{Z}]{]} = [\mathcal{L}_{\mathbf{X}}\mathbf{Y}, \mathbf{Z}] + [\mathbf{Y}, \mathcal{L}_{\mathbf{X}}\mathbf{Z}] .
+> $$
+>
+> So (2) is the Jacobi identity, written as a product rule for $\mathcal{L}_{\mathbf{X}}$ with respect to the bracket.
 
 ^pf-72-7
 

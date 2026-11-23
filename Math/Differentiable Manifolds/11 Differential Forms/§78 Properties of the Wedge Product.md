@@ -236,4 +236,194 @@ For $\varepsilon = dx^i$ this is $dx^i \wedge dx^i = 0$, as in Lemma [[§74 The 
 
 ^ex-78-1
 
+## Assignment 9, Problem 1: Determinants and Minors
+
+*From Assignment 9, Problem 1 (submitted). The problem asks to prove the determinant formula of Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]] by induction on $k$, working directly from the definition of the wedge product by shuffles and assuming associativity; and then, for $k = 4$, to compare the shuffle sum for $(\alpha^1 \wedge \alpha^2) \wedge (\alpha^3 \wedge \alpha^4)$ with the expansion of the determinant by $2 \times 2$ minors. The steps of the submitted solution that are general statements are stated first, as lemmas.*
+
+> [!theorem] Lemma §78.6: A $k$-Form Wedge a One-Form
+> *(From the submitted solution of Assignment 9, Problem 1(a).)* For $\omega \in \Lambda^k V^{\ast}$ and $\alpha \in V^{\ast}$,
+>
+> $$
+> (\omega \wedge \alpha)(v^1, \ldots, v^{k+1}) = \sum_{j=1}^{k+1} (-1)^{k+1-j}\, \omega\big(v^1, \ldots, \widehat{v^j}, \ldots, v^{k+1}\big)\, \alpha(v^j) ,
+> $$
+>
+> where the hat means that $v^j$ is left out. More precisely:
+>
+> 1. $\mathrm{Sh}(k, 1) = \{\sigma_1, \ldots, \sigma_{k+1}\}$, where $\sigma_j$ is the permutation with $\sigma_j(k+1) = j$ and with $\sigma_j(1) < \cdots < \sigma_j(k)$ the elements of $\{1, \ldots, k+1\} \setminus \{j\}$ in increasing order;
+> 2. $\operatorname{sgn}(\sigma_j) = (-1)^{k+1-j}$.
+
+^lem-78-6
+
+> [!remark]- Connections
+> - The mirror image, with the one-form first: [[§78 Properties of the Wedge Product#^lem-78-1|Lem. §78.1]]; the determinant formula both lemmas lead to: [[§78 Properties of the Wedge Product#^lem-78-2|Lem. §78.2]].
+
+> [!proof]+ Proof
+> *(The submitted solution.)* *(1)* A permutation $\sigma$ of $\{1, \ldots, k+1\}$ is a $(k, 1)$-shuffle (Definition [[§76 Shuffles#^def-76-1|§76.1]]) if and only if $\sigma(1) < \cdots < \sigma(k)$; the condition on the second block, which has a single entry, is vacuous. Hence $\sigma$ is determined by $j = \sigma(k+1) \in \{1, \ldots, k+1\}$: the values $\sigma(1), \ldots, \sigma(k)$ are the elements of $\{1, \ldots, k+1\} \setminus \{j\}$ in increasing order. Conversely, each $j$ gives such a shuffle $\sigma_j$, and distinct $j$ give distinct $\sigma_j$.
+>
+> *(2)* In the list $\sigma_j(1), \ldots, \sigma_j(k+1)$ the entries other than $j$ appear in increasing order, and $j$ comes last. So the inversions of $\sigma_j$ are exactly the pairs formed by $j$ and an entry larger than $j$; there are $k + 1 - j$ of them, namely $j + 1, \ldots, k + 1$. Hence $\operatorname{sgn}(\sigma_j) = (-1)^{k+1-j}$.
+>
+> *The formula.* By Definition [[§77 The Wedge Product#^def-77-1|§77.1]] with the degrees $k$ and $1$,
+>
+> $$
+> (\omega \wedge \alpha)(v^1, \ldots, v^{k+1}) = \sum_{\sigma \in \mathrm{Sh}(k, 1)} \operatorname{sgn}(\sigma)\, \omega\big(v^{\sigma(1)}, \ldots, v^{\sigma(k)}\big)\, \alpha\big(v^{\sigma(k+1)}\big) .
+> $$
+>
+> For $\sigma = \sigma_j$, $\big(v^{\sigma_j(1)}, \ldots, v^{\sigma_j(k)}\big) = \big(v^1, \ldots, \widehat{v^j}, \ldots, v^{k+1}\big)$ and $v^{\sigma_j(k+1)} = v^j$; with (1) and (2) this is the formula.
+
+^pf-78-6
+
+*Uses:* [[§76 Shuffles#^def-76-1|Def. §76.1]], [[§77 The Wedge Product#^def-77-1|Def. §77.1]]
+
+Lemma [[§78 Properties of the Wedge Product#^lem-78-6|§78.6]] is the mirror image of Lemma [[§78 Properties of the Wedge Product#^lem-78-1|§78.1]]: there the one-form is the first factor, $\mathrm{Sh}(1, l)$ is used, and the sign is $(-1)^{j-1}$.
+
+> [!theorem] Lemma §78.7: The Sign of a Shuffle
+> *(Not from the assignment; the table of signs of Problem 1(b), for all $p$ and $q$.)* Let $p, q \ge 0$ and $k = p + q$.
+>
+> 1. The map $\sigma \mapsto \{\sigma(1), \ldots, \sigma(p)\}$ is a bijection from $\mathrm{Sh}(p, q)$ onto the set of subsets of $\{1, \ldots, k\}$ with $p$ elements. So $\mathrm{Sh}(p, q)$ has $\binom{k}{p}$ elements.
+> 2. If $\sigma \in \mathrm{Sh}(p, q)$ and $\sigma(i) = a_i$ for $i = 1, \ldots, p$, so that $a_1 < \cdots < a_p$, then $\sigma$ has $\sum_{i=1}^p (a_i - i)$ inversions, and
+>
+> $$
+> \operatorname{sgn}(\sigma) = (-1)^{a_1 + \cdots + a_p - p(p+1)/2} .
+> $$
+
+^lem-78-7
+
+> [!proof]+ Proof
+> *(Not from the assignment; filled in.)* *(1)* A $(p, q)$-shuffle $\sigma$ lists a set $A = \{\sigma(1), \ldots, \sigma(p)\}$ with $p$ elements in increasing order, and then its complement in increasing order (Definition [[§76 Shuffles#^def-76-1|§76.1]]). So $\sigma$ is determined by $A$, and every subset $A$ with $p$ elements arises in this way.
+>
+> *(2)* An inversion of $\sigma$ is a pair of positions $i < j$ with $\sigma(i) > \sigma(j)$. There is none inside the first block, nor inside the second, because $\sigma$ increases on each. So in an inversion $i \le p < j$, and for fixed $i$ the inversions correspond to the elements of the complement of $A$ that are smaller than $a_i$. Below $a_i$ there are $a_i - 1$ numbers, of which $i - 1$, namely $a_1, \ldots, a_{i-1}$, lie in $A$. So there are $a_i - 1 - (i - 1) = a_i - i$ such elements. Summing over $i$ gives $\sum_{i=1}^p (a_i - i) = \sum_i a_i - p(p+1)/2$ inversions, and the sign of a permutation is $(-1)$ to the number of its inversions.
+
+^pf-78-7
+
+*Uses:* [[§76 Shuffles#^def-76-1|Def. §76.1]]
+
+For $q = 1$ and $A = \{1, \ldots, k+1\} \setminus \{j\}$ the number of inversions is $\sum_{i \ge j} \big((i + 1) - i\big) = k + 1 - j$, as in Lemma [[§78 Properties of the Wedge Product#^lem-78-6|§78.6]](2).
+
+> [!example] Example §78.2: Assignment 9 Problem 1(a): The Determinant Formula through the Last Row
+> *(Assignment 9, Problem 1(a).)* Let $\alpha^1, \ldots, \alpha^k \in V^{\ast}$ and $v^1, \ldots, v^k \in V$, and let $D = \det\big(\alpha^i(v^j)\big)$. Then
+>
+> $$
+> (\alpha^1 \wedge \cdots \wedge \alpha^k)(v^1, \ldots, v^k) = D ,
+> $$
+>
+> by induction on $k$, from the definition of the wedge product by shuffles and associativity alone. This is Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]]. The proof there splits off the first factor and expands the determinant along its first row; the submitted solution splits off the last factor and expands along the last row.
+
+^ex-78-2
+
+> [!proof]+ The submitted solution
+> *(Assignment 9, Problem 1(a), as submitted, in the notation of these notes.)* Induction on $k$.
+>
+> *Base case $k = 1$.* The left-hand side is $\alpha^1(v^1)$, and $D$ is the determinant of the $1 \times 1$ matrix $\big(\alpha^1(v^1)\big)$, which is $\alpha^1(v^1)$.
+>
+> *Inductive step.* Let $k \ge 1$, suppose the formula holds for $k$ one-forms and $k$ vectors, and let $\alpha^1, \ldots, \alpha^{k+1} \in V^{\ast}$ and $v^1, \ldots, v^{k+1} \in V$. Put $\omega = \alpha^1 \wedge \cdots \wedge \alpha^k \in \Lambda^k V^{\ast}$. By associativity (Proposition [[§78 Properties of the Wedge Product#^prop-78-4|§78.4]](2)), $\alpha^1 \wedge \cdots \wedge \alpha^{k+1} = \omega \wedge \alpha^{k+1}$, and Lemma [[§78 Properties of the Wedge Product#^lem-78-6|§78.6]] gives
+>
+> $$
+> (\alpha^1 \wedge \cdots \wedge \alpha^{k+1})(v^1, \ldots, v^{k+1}) = \sum_{j=1}^{k+1} (-1)^{k+1-j}\, \omega\big(v^1, \ldots, \widehat{v^j}, \ldots, v^{k+1}\big)\, \alpha^{k+1}(v^j) . \tag{$\ast$}
+> $$
+>
+> *The determinant.* Let $A = (a_{il})$ be the $(k+1) \times (k+1)$ matrix with $a_{il} = \alpha^i(v^l)$, and let $A_{k+1, j}$ be the $k \times k$ matrix obtained from $A$ by deleting row $k + 1$ and column $j$. By the cofactor expansion along row $k + 1$,
+>
+> $$
+> \det A = \sum_{j=1}^{k+1} (-1)^{(k+1)+j}\, a_{k+1, j}\, \det A_{k+1, j} . \tag{$\ast\ast$}
+> $$
+>
+> *Comparing term by term.* Fix $j$.
+>
+> 1. *Entries.* $a_{k+1, j} = \alpha^{k+1}(v^j)$, by the definition of $A$.
+> 2. *Minors.* By the induction hypothesis, applied to $\alpha^1, \ldots, \alpha^k$ and the $k$ vectors $v^1, \ldots, \widehat{v^j}, \ldots, v^{k+1}$, the number $\omega\big(v^1, \ldots, \widehat{v^j}, \ldots, v^{k+1}\big)$ is the determinant of the matrix whose rows belong to $\alpha^1, \ldots, \alpha^k$ and whose columns belong to the vectors $v^l$ with $l \ne j$, in increasing order of $l$. That matrix is $A_{k+1, j}$.
+> 3. *Signs.* The exponents differ by $(k + 1 + j) - (k + 1 - j) = 2j$, which is even, so $(-1)^{(k+1)+j} = (-1)^{k+1-j}$.
+>
+> Hence the $j$-th terms of $(\ast)$ and $(\ast\ast)$ are equal for every $j$, and $(\alpha^1 \wedge \cdots \wedge \alpha^{k+1})(v^1, \ldots, v^{k+1}) = \det A$. This completes the induction.
+
+^pf-ex-78-2
+
+*Uses:* [[§78 Properties of the Wedge Product#^prop-78-4|§78.4]], [[§78 Properties of the Wedge Product#^lem-78-6|§78.6]]
+
+> [!example] Example §78.3: Assignment 9 Problem 1(b): A Determinant of Size Four by Minors of Size Two
+> *(Assignment 9, Problem 1(b).)* Let $k = 4$, $\alpha = \alpha^1 \wedge \alpha^2$ and $\beta = \alpha^3 \wedge \alpha^4$, and let $A = (a_{il})$ with $a_{il} = \alpha^i(v^l)$, so that $D = \det A$. For sets of indices $I, J \subseteq \{1, 2, 3, 4\}$ of equal size, let $A_{I, J}$ be the submatrix of $A$ with rows $I$ and columns $J$, each in increasing order. Then the definition of the wedge product by shuffles, applied to $(\alpha \wedge \beta)(v^1, v^2, v^3, v^4)$, is term by term the expansion of $D$ by $2 \times 2$ minors along the rows $1$ and $2$:
+>
+> $$
+> (\alpha \wedge \beta)(v^1, v^2, v^3, v^4) = \sum_{1 \le a < b \le 4} (-1)^{1 + 2 + a + b}\, \det A_{\{1, 2\}, \{a, b\}}\, \det A_{\{3, 4\}, \{c, d\}} = D ,
+> $$
+>
+> where $\{c, d\}$ is the complement of $\{a, b\}$, with $c < d$.
+
+^ex-78-3
+
+> [!proof]+ The submitted solution
+> *(Assignment 9, Problem 1(b), as submitted, in the notation of these notes.)* *The shuffles in $\mathrm{Sh}(2, 2)$.* A permutation $\sigma$ of $\{1, 2, 3, 4\}$ is a $(2, 2)$-shuffle if and only if $\sigma(1) < \sigma(2)$ and $\sigma(3) < \sigma(4)$. Hence $\sigma$ is determined by the set $\{\sigma(1), \sigma(2)\} = \{a, b\}$ with $a < b$: then $(\sigma(1), \sigma(2)) = (a, b)$ and $(\sigma(3), \sigma(4)) = (c, d)$. Conversely, each of the $\binom{4}{2} = 6$ choices of $\{a, b\}$ gives such a shuffle. Counting inversions gives the table, with $\sigma$ in one-line notation $\sigma(1)\sigma(2)\sigma(3)\sigma(4)$:
+>
+> | $\sigma$ | $\{a, b\}$ | $\{c, d\}$ | inversions | $\operatorname{sgn}(\sigma)$ | $(-1)^{3 + a + b}$ |
+> |---|---|---|---|---|---|
+> | $1234$ | $\{1, 2\}$ | $\{3, 4\}$ | $0$ | $+1$ | $+1$ |
+> | $1324$ | $\{1, 3\}$ | $\{2, 4\}$ | $1$ | $-1$ | $-1$ |
+> | $1423$ | $\{1, 4\}$ | $\{2, 3\}$ | $2$ | $+1$ | $+1$ |
+> | $2314$ | $\{2, 3\}$ | $\{1, 4\}$ | $2$ | $+1$ | $+1$ |
+> | $2413$ | $\{2, 4\}$ | $\{1, 3\}$ | $3$ | $-1$ | $-1$ |
+> | $3412$ | $\{3, 4\}$ | $\{1, 2\}$ | $4$ | $+1$ | $+1$ |
+>
+> In every row $\operatorname{sgn}(\sigma) = (-1)^{3 + a + b}$; this is Lemma [[§78 Properties of the Wedge Product#^lem-78-7|§78.7]](2) for $p = 2$, since $a + b - 3$ and $3 + a + b$ have the same parity.
+>
+> *The shuffle sum.* By Definition [[§77 The Wedge Product#^def-77-1|§77.1]] with the degrees $2$ and $2$,
+>
+> $$
+> \begin{aligned}(\alpha \wedge \beta)(v^1, v^2, v^3, v^4) ={}& \alpha(v^1, v^2)\,\beta(v^3, v^4) - \alpha(v^1, v^3)\,\beta(v^2, v^4) + \alpha(v^1, v^4)\,\beta(v^2, v^3) \\
+> &+ \alpha(v^2, v^3)\,\beta(v^1, v^4) - \alpha(v^2, v^4)\,\beta(v^1, v^3) + \alpha(v^3, v^4)\,\beta(v^1, v^2) ,\end{aligned}
+> $$
+>
+> that is, $(\alpha \wedge \beta)(v^1, v^2, v^3, v^4) = \sum_{a < b} \operatorname{sgn}(\sigma)\, \alpha(v^a, v^b)\, \beta(v^c, v^d)$, with $\sigma$ and $\{c, d\}$ as in the table. (This is the six-term formula of Example [[§77 The Wedge Product#^ex-77-3|§77.3]].)
+>
+> *The factors as $2 \times 2$ minors.* Let $a < b$ and $c < d$. By Example [[§78 Properties of the Wedge Product#^ex-78-2|§78.2]] with $k = 2$, applied to $\alpha^1, \alpha^2$ and to $\alpha^3, \alpha^4$,
+>
+> $$
+> \begin{aligned}\alpha(v^a, v^b) &= \det\begin{pmatrix} \alpha^1(v^a) & \alpha^1(v^b) \\ \alpha^2(v^a) & \alpha^2(v^b) \end{pmatrix} = \det A_{\{1, 2\}, \{a, b\}} , \\
+> \beta(v^c, v^d) &= \det\begin{pmatrix} \alpha^3(v^c) & \alpha^3(v^d) \\ \alpha^4(v^c) & \alpha^4(v^d) \end{pmatrix} = \det A_{\{3, 4\}, \{c, d\}} .\end{aligned}
+> $$
+>
+> The columns appear in increasing order, as in the definition of $A_{I, J}$, because $a < b$ and $c < d$.
+>
+> *The expansion of $D$ by $2 \times 2$ minors.* By the Laplace expansion of $\det A$ along the rows $1$ and $2$ (linear algebra; see also Proposition [[§78 Properties of the Wedge Product#^prop-78-8|§78.8]]),
+>
+> $$
+> D = \det A = \sum_{1 \le a < b \le 4} (-1)^{1 + 2 + a + b}\, \det A_{\{1, 2\}, \{a, b\}}\, \det A_{\{3, 4\}, \{c, d\}} .
+> $$
+>
+> *Comparison.* Both sums run over the six sets $\{a, b\}$. For each of them the factors agree by the previous step, and the signs agree by the last two columns of the table. Hence the shuffle sum is term by term the expansion of $D$ by $2 \times 2$ minors along the rows $1$ and $2$, and $(\alpha \wedge \beta)(v^1, v^2, v^3, v^4) = D$.
+
+^pf-ex-78-3
+
+*Uses:* [[§78 Properties of the Wedge Product#^lem-78-7|§78.7]], [[§77 The Wedge Product#^def-77-1|Def. §77.1]], [[§77 The Wedge Product#^ex-77-3|Ex. §77.3]], [[§78 Properties of the Wedge Product#^ex-78-2|Ex. §78.2]], [[§78 Properties of the Wedge Product#^prop-78-8|§78.8]]
+
+The comparison of Example [[§78 Properties of the Wedge Product#^ex-78-3|§78.3]] can be read in the other direction: since $(\alpha^1 \wedge \alpha^2) \wedge (\alpha^3 \wedge \alpha^4)$ is the product of the four one-forms by associativity, its value is $D$ by Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]], and the shuffle sum then *proves* the expansion by minors. In general:
+
+> [!theorem] Proposition §78.8: The Laplace Expansion from the Wedge Product
+> *(Not from the assignment; Problem 1(b) for all sizes.)* Let $M$ be a real $k \times k$ matrix and $k = p + q$. For $A \subseteq \{1, \ldots, k\}$ with $p$ elements $a_1 < \cdots < a_p$, let $M_{\mathrm{top}, A}$ be the $p \times p$ submatrix of $M$ with rows $1, \ldots, p$ and columns $A$, and $M_{\mathrm{bot}, A^c}$ the $q \times q$ submatrix with rows $p + 1, \ldots, k$ and the columns not in $A$. Then
+>
+> $$
+> \det M = \sum_{A} (-1)^{a_1 + \cdots + a_p - p(p+1)/2}\; \det M_{\mathrm{top}, A}\; \det M_{\mathrm{bot}, A^c} ,
+> $$
+>
+> the sum over all subsets $A$ with $p$ elements. This is the Laplace expansion of $\det M$ along its first $p$ rows, and it is the definition of the wedge product by shuffles applied to $(\alpha^1 \wedge \cdots \wedge \alpha^p) \wedge (\alpha^{p+1} \wedge \cdots \wedge \alpha^k)$.
+
+^prop-78-8
+
+> [!proof]+ Proof
+> *(Not from the assignment; filled in.)* Let $V = \mathbb{R}^k$ with its standard basis $v^1 = e_1, \ldots, v^k = e_k$, and let $\alpha^i \in V^{\ast}$ be the $i$-th row of $M$: $\alpha^i(v^j) = M_{ij}$. Put $\omega_1 = \alpha^1 \wedge \cdots \wedge \alpha^p$ and $\omega_2 = \alpha^{p+1} \wedge \cdots \wedge \alpha^k$. By associativity (Proposition [[§78 Properties of the Wedge Product#^prop-78-4|§78.4]](2)), $\omega_1 \wedge \omega_2 = \alpha^1 \wedge \cdots \wedge \alpha^k$, so by Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]]
+>
+> $$
+> (\omega_1 \wedge \omega_2)(v^1, \ldots, v^k) = \det\big(\alpha^i(v^j)\big) = \det M .
+> $$
+>
+> On the other hand, by Definition [[§77 The Wedge Product#^def-77-1|§77.1]],
+>
+> $$
+> (\omega_1 \wedge \omega_2)(v^1, \ldots, v^k) = \sum_{\sigma \in \mathrm{Sh}(p, q)} \operatorname{sgn}(\sigma)\; \omega_1\big(v^{\sigma(1)}, \ldots, v^{\sigma(p)}\big)\; \omega_2\big(v^{\sigma(p+1)}, \ldots, v^{\sigma(k)}\big) .
+> $$
+>
+> By Lemma [[§78 Properties of the Wedge Product#^lem-78-7|§78.7]], the shuffles correspond to the subsets $A = \{\sigma(1) < \cdots < \sigma(p)\}$, and $\operatorname{sgn}(\sigma) = (-1)^{a_1 + \cdots + a_p - p(p+1)/2}$. By Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]] for $\omega_1$ and the vectors $v^{a_1}, \ldots, v^{a_p}$, the first factor is $\det\big(\alpha^i(v^{a_j})\big)_{i, j \le p} = \det M_{\mathrm{top}, A}$; likewise the second factor is $\det M_{\mathrm{bot}, A^c}$, the columns being in increasing order because $\sigma$ increases on the second block. Comparing the two expressions gives the formula.
+
+^pf-78-8
+
+*Uses:* [[§78 Properties of the Wedge Product#^prop-78-4|§78.4]], [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]], [[§77 The Wedge Product#^def-77-1|Def. §77.1]], [[§78 Properties of the Wedge Product#^lem-78-7|§78.7]]
+
 Next: one more piece of linear algebra, the pullback of forms by a linear map ([[§79 Pullbacks of Linear Forms|§79]]); then $V$ becomes the tangent space $T_pM$ again, and the point $p$ varies over a manifold, so that the forms become functions of the point ([[§80 Differential Forms on Manifolds|§80]]). (Lecture 30 ended with the proof of Proposition [[§78 Properties of the Wedge Product#^prop-78-4|§78.4]](3).)

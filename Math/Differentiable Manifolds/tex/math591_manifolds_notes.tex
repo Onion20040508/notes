@@ -34224,8 +34224,16 @@ For $\mathbf{X}, \mathbf{Y}, \mathbf{Z} \in \mathfrak{X}(M)$:
 \leeref{Corollary 9.39}
 \end{corbox}
 
-\begin{proof}[Proof (to be filled after the homework)]
-From Theorem~\ref{thm:lie-derivative-bracket}. For (2), the left-hand side is $[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]]$, and the tool is the Jacobi identity (Corollary~\ref{cor:vf-lie-algebra}). One of these entries is a problem on the next homework.
+\begin{proof}
+\textit{(Not from lecture; the lecture named the tools. Filled in after Assignments~8 and 9, which did not ask for it.)} By Theorem~\ref{thm:lie-derivative-bracket}, $\mathcal{L}_{\mathbf{X}}\mathbf{Y} = [\mathbf{X}, \mathbf{Y}]$ for all fields.
+
+\emph{(1)} The bracket is antisymmetric (Corollary~\ref{cor:vf-lie-algebra}): $\mathcal{L}_{\mathbf{X}}\mathbf{Y} = [\mathbf{X}, \mathbf{Y}] = -[\mathbf{Y}, \mathbf{X}] = -\mathcal{L}_{\mathbf{Y}}\mathbf{X}$.
+
+\emph{(2)} The left-hand side is $[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]]$. The Jacobi identity (Corollary~\ref{cor:vf-lie-algebra}) reads $[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]] + [\mathbf{Y}, [\mathbf{Z}, \mathbf{X}]] + [\mathbf{Z}, [\mathbf{X}, \mathbf{Y}]] = 0$. Solving for the first term and using antisymmetry twice,
+\[
+[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]] = -[\mathbf{Z}, [\mathbf{X}, \mathbf{Y}]] - [\mathbf{Y}, [\mathbf{Z}, \mathbf{X}]] = [[\mathbf{X}, \mathbf{Y}], \mathbf{Z}] + [\mathbf{Y}, [\mathbf{X}, \mathbf{Z}]] = [\mathcal{L}_{\mathbf{X}}\mathbf{Y}, \mathbf{Z}] + [\mathbf{Y}, \mathcal{L}_{\mathbf{X}}\mathbf{Z}] .
+\]
+So (2) is the Jacobi identity, written as a product rule for $\mathcal{L}_{\mathbf{X}}$ with respect to the bracket.
 \end{proof}
 
 \textbf{Transcription note (board 11/6 and Lecture 27).} On the board, the definition of $(\mathcal{L}_{\mathbf{X}} f)(p)$ repeats the left-hand side of the motivating formula, ``$\frac{\partial f}{\partial x^1}(p) = \lim_{t \to 0} \ldots$''; the definition is the limit, as above. The board's single definition box of commuting fields and invariance is split here into Definitions~\ref{def:commuting-fields} and~\ref{def:invariant-under-flow}. Uribe cited this as Lee's Corollary~3.9, then 9.3, with a question mark; it is Lee's Corollary~9.39 (Lee's list also has $\mathcal{L}_{[\mathbf{X}, \mathbf{Y}]} = \mathcal{L}_{\mathbf{X}}\mathcal{L}_{\mathbf{Y}} - \mathcal{L}_{\mathbf{Y}}\mathcal{L}_{\mathbf{X}}$ and a product rule).
@@ -36258,6 +36266,155 @@ For $\varepsilon = dx^i$ this is $dx^i \wedge dx^i = 0$, as in Lemma~\ref{lem:dx
 So $\omega \wedge \omega \neq 0$. By Corollary~\ref{cor:top-degree-forms}, $\omega \wedge \omega = 2\, \varepsilon^{\{1, 2, 3, 4\}}$, twice the determinant; with Proposition~\ref{prop:wedge-properties}(4) this reads $\omega \wedge \omega = 2\, dx^1 \wedge dx^2 \wedge dx^3 \wedge dx^4$.
 \end{exbox}
 
+\subsection{Assignment 9, Problem 1: Determinants and Minors}\label{sub:hw9-p1}
+
+\textit{From Assignment~9, Problem~1 (submitted). The problem asks to prove the determinant formula of Lemma~\ref{lem:wedge-one-forms-det} by induction on $k$, working directly from the definition of the wedge product by shuffles and assuming associativity; and then, for $k = 4$, to compare the shuffle sum for $(\alpha^1 \wedge \alpha^2) \wedge (\alpha^3 \wedge \alpha^4)$ with the expansion of the determinant by $2 \times 2$ minors. The steps of the submitted solution that are general statements are stated first, as lemmas.}
+
+\begin{lembox}[A $k$-Form Wedge a One-Form]\thmlabel{lem:wedge-k-one}
+\textit{(From the submitted solution of Assignment~9, Problem~1(a).)} For $\omega \in \Lambda^k V^*$ and $\alpha \in V^*$,
+\[
+(\omega \wedge \alpha)(v^1, \ldots, v^{k+1}) = \sum_{j=1}^{k+1} (-1)^{k+1-j}\, \omega\big(v^1, \ldots, \widehat{v^j}, \ldots, v^{k+1}\big)\, \alpha(v^j) ,
+\]
+where the hat means that $v^j$ is left out. More precisely:
+\begin{enumerate}[nosep]
+\item $\mathrm{Sh}(k, 1) = \{\sigma_1, \ldots, \sigma_{k+1}\}$, where $\sigma_j$ is the permutation with $\sigma_j(k+1) = j$ and with $\sigma_j(1) < \cdots < \sigma_j(k)$ the elements of $\{1, \ldots, k+1\} \setminus \{j\}$ in increasing order;
+\item $\sgn(\sigma_j) = (-1)^{k+1-j}$.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(The submitted solution.)} \emph{(1)} A permutation $\sigma$ of $\{1, \ldots, k+1\}$ is a $(k, 1)$-shuffle (Definition~\ref{def:shuffle}) if and only if $\sigma(1) < \cdots < \sigma(k)$; the condition on the second block, which has a single entry, is vacuous. Hence $\sigma$ is determined by $j = \sigma(k+1) \in \{1, \ldots, k+1\}$: the values $\sigma(1), \ldots, \sigma(k)$ are the elements of $\{1, \ldots, k+1\} \setminus \{j\}$ in increasing order. Conversely, each $j$ gives such a shuffle $\sigma_j$, and distinct $j$ give distinct $\sigma_j$.
+
+\emph{(2)} In the list $\sigma_j(1), \ldots, \sigma_j(k+1)$ the entries other than $j$ appear in increasing order, and $j$ comes last. So the inversions of $\sigma_j$ are exactly the pairs formed by $j$ and an entry larger than $j$; there are $k + 1 - j$ of them, namely $j + 1, \ldots, k + 1$. Hence $\sgn(\sigma_j) = (-1)^{k+1-j}$.
+
+\emph{The formula.} By Definition~\ref{def:wedge-product} with the degrees $k$ and $1$,
+\[
+(\omega \wedge \alpha)(v^1, \ldots, v^{k+1}) = \sum_{\sigma \in \mathrm{Sh}(k, 1)} \sgn(\sigma)\, \omega\big(v^{\sigma(1)}, \ldots, v^{\sigma(k)}\big)\, \alpha\big(v^{\sigma(k+1)}\big) .
+\]
+For $\sigma = \sigma_j$, $\big(v^{\sigma_j(1)}, \ldots, v^{\sigma_j(k)}\big) = \big(v^1, \ldots, \widehat{v^j}, \ldots, v^{k+1}\big)$ and $v^{\sigma_j(k+1)} = v^j$; with (1) and (2) this is the formula.
+\end{proof}
+
+Lemma~\ref{lem:wedge-k-one} is the mirror image of Lemma~\ref{lem:wedge-one-l}: there the one-form is the first factor, $\mathrm{Sh}(1, l)$ is used, and the sign is $(-1)^{j-1}$.
+
+\begin{lembox}[The Sign of a Shuffle]\thmlabel{lem:shuffle-sign}
+\textit{(Not from the assignment; the table of signs of Problem~1(b), for all $p$ and $q$.)} Let $p, q \ge 0$ and $k = p + q$.
+\begin{enumerate}[nosep]
+\item The map $\sigma \mapsto \{\sigma(1), \ldots, \sigma(p)\}$ is a bijection from $\mathrm{Sh}(p, q)$ onto the set of subsets of $\{1, \ldots, k\}$ with $p$ elements. So $\mathrm{Sh}(p, q)$ has $\binom{k}{p}$ elements.
+\item If $\sigma \in \mathrm{Sh}(p, q)$ and $\sigma(i) = a_i$ for $i = 1, \ldots, p$, so that $a_1 < \cdots < a_p$, then $\sigma$ has $\sum_{i=1}^p (a_i - i)$ inversions, and
+\[
+\sgn(\sigma) = (-1)^{a_1 + \cdots + a_p - p(p+1)/2} .
+\]
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from the assignment; filled in.)} \emph{(1)} A $(p, q)$-shuffle $\sigma$ lists a set $A = \{\sigma(1), \ldots, \sigma(p)\}$ with $p$ elements in increasing order, and then its complement in increasing order (Definition~\ref{def:shuffle}). So $\sigma$ is determined by $A$, and every subset $A$ with $p$ elements arises in this way.
+
+\emph{(2)} An inversion of $\sigma$ is a pair of positions $i < j$ with $\sigma(i) > \sigma(j)$. There is none inside the first block, nor inside the second, because $\sigma$ increases on each. So in an inversion $i \le p < j$, and for fixed $i$ the inversions correspond to the elements of the complement of $A$ that are smaller than $a_i$. Below $a_i$ there are $a_i - 1$ numbers, of which $i - 1$, namely $a_1, \ldots, a_{i-1}$, lie in $A$. So there are $a_i - 1 - (i - 1) = a_i - i$ such elements. Summing over $i$ gives $\sum_{i=1}^p (a_i - i) = \sum_i a_i - p(p+1)/2$ inversions, and the sign of a permutation is $(-1)$ to the number of its inversions.
+\end{proof}
+
+For $q = 1$ and $A = \{1, \ldots, k+1\} \setminus \{j\}$ the number of inversions is $\sum_{i \ge j} \big((i + 1) - i\big) = k + 1 - j$, as in Lemma~\ref{lem:wedge-k-one}(2).
+
+\begin{exbox}[Assignment 9 Problem 1(a): The Determinant Formula through the Last Row]\exlabel{ex:hw9-det-last-row}
+\textit{(Assignment~9, Problem~1(a).)} Let $\alpha^1, \ldots, \alpha^k \in V^*$ and $v^1, \ldots, v^k \in V$, and let $D = \det\big(\alpha^i(v^j)\big)$. Then
+\[
+(\alpha^1 \wedge \cdots \wedge \alpha^k)(v^1, \ldots, v^k) = D ,
+\]
+by induction on $k$, from the definition of the wedge product by shuffles and associativity alone. This is Lemma~\ref{lem:wedge-one-forms-det}. The proof there splits off the first factor and expands the determinant along its first row; the submitted solution splits off the last factor and expands along the last row.
+\end{exbox}
+
+\begin{proof}[The submitted solution]
+\textit{(Assignment~9, Problem~1(a), as submitted, in the notation of these notes.)} Induction on $k$.
+
+\emph{Base case $k = 1$.} The left-hand side is $\alpha^1(v^1)$, and $D$ is the determinant of the $1 \times 1$ matrix $\big(\alpha^1(v^1)\big)$, which is $\alpha^1(v^1)$.
+
+\emph{Inductive step.} Let $k \ge 1$, suppose the formula holds for $k$ one-forms and $k$ vectors, and let $\alpha^1, \ldots, \alpha^{k+1} \in V^*$ and $v^1, \ldots, v^{k+1} \in V$. Put $\omega = \alpha^1 \wedge \cdots \wedge \alpha^k \in \Lambda^k V^*$. By associativity (Proposition~\ref{prop:wedge-properties}(2)), $\alpha^1 \wedge \cdots \wedge \alpha^{k+1} = \omega \wedge \alpha^{k+1}$, and Lemma~\ref{lem:wedge-k-one} gives
+\[
+(\alpha^1 \wedge \cdots \wedge \alpha^{k+1})(v^1, \ldots, v^{k+1}) = \sum_{j=1}^{k+1} (-1)^{k+1-j}\, \omega\big(v^1, \ldots, \widehat{v^j}, \ldots, v^{k+1}\big)\, \alpha^{k+1}(v^j) . \tag{$\ast$}
+\]
+\emph{The determinant.} Let $A = (a_{il})$ be the $(k+1) \times (k+1)$ matrix with $a_{il} = \alpha^i(v^l)$, and let $A_{k+1, j}$ be the $k \times k$ matrix obtained from $A$ by deleting row $k + 1$ and column $j$. By the cofactor expansion along row $k + 1$,
+\[
+\det A = \sum_{j=1}^{k+1} (-1)^{(k+1)+j}\, a_{k+1, j}\, \det A_{k+1, j} . \tag{$\ast\ast$}
+\]
+\emph{Comparing term by term.} Fix $j$.
+\begin{enumerate}[nosep]
+\item \emph{Entries.} $a_{k+1, j} = \alpha^{k+1}(v^j)$, by the definition of $A$.
+\item \emph{Minors.} By the induction hypothesis, applied to $\alpha^1, \ldots, \alpha^k$ and the $k$ vectors $v^1, \ldots, \widehat{v^j}, \ldots, v^{k+1}$, the number $\omega\big(v^1, \ldots, \widehat{v^j}, \ldots, v^{k+1}\big)$ is the determinant of the matrix whose rows belong to $\alpha^1, \ldots, \alpha^k$ and whose columns belong to the vectors $v^l$ with $l \ne j$, in increasing order of $l$. That matrix is $A_{k+1, j}$.
+\item \emph{Signs.} The exponents differ by $(k + 1 + j) - (k + 1 - j) = 2j$, which is even, so $(-1)^{(k+1)+j} = (-1)^{k+1-j}$.
+\end{enumerate}
+Hence the $j$-th terms of $(\ast)$ and $(\ast\ast)$ are equal for every $j$, and $(\alpha^1 \wedge \cdots \wedge \alpha^{k+1})(v^1, \ldots, v^{k+1}) = \det A$. This completes the induction.
+\end{proof}
+
+\begin{exbox}[Assignment 9 Problem 1(b): A Determinant of Size Four by Minors of Size Two]\exlabel{ex:hw9-minors}
+\textit{(Assignment~9, Problem~1(b).)} Let $k = 4$, $\alpha = \alpha^1 \wedge \alpha^2$ and $\beta = \alpha^3 \wedge \alpha^4$, and let $A = (a_{il})$ with $a_{il} = \alpha^i(v^l)$, so that $D = \det A$. For sets of indices $I, J \subseteq \{1, 2, 3, 4\}$ of equal size, let $A_{I, J}$ be the submatrix of $A$ with rows $I$ and columns $J$, each in increasing order. Then the definition of the wedge product by shuffles, applied to $(\alpha \wedge \beta)(v^1, v^2, v^3, v^4)$, is term by term the expansion of $D$ by $2 \times 2$ minors along the rows $1$ and $2$:
+\[
+(\alpha \wedge \beta)(v^1, v^2, v^3, v^4) = \sum_{1 \le a < b \le 4} (-1)^{1 + 2 + a + b}\, \det A_{\{1, 2\}, \{a, b\}}\, \det A_{\{3, 4\}, \{c, d\}} = D ,
+\]
+where $\{c, d\}$ is the complement of $\{a, b\}$, with $c < d$.
+\end{exbox}
+
+\begin{proof}[The submitted solution]
+\textit{(Assignment~9, Problem~1(b), as submitted, in the notation of these notes.)} \emph{The shuffles in $\mathrm{Sh}(2, 2)$.} A permutation $\sigma$ of $\{1, 2, 3, 4\}$ is a $(2, 2)$-shuffle if and only if $\sigma(1) < \sigma(2)$ and $\sigma(3) < \sigma(4)$. Hence $\sigma$ is determined by the set $\{\sigma(1), \sigma(2)\} = \{a, b\}$ with $a < b$: then $(\sigma(1), \sigma(2)) = (a, b)$ and $(\sigma(3), \sigma(4)) = (c, d)$. Conversely, each of the $\binom{4}{2} = 6$ choices of $\{a, b\}$ gives such a shuffle. Counting inversions gives the table, with $\sigma$ in one-line notation $\sigma(1)\sigma(2)\sigma(3)\sigma(4)$:
+
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+$\sigma$ & $\{a, b\}$ & $\{c, d\}$ & inversions & $\sgn(\sigma)$ & $(-1)^{3 + a + b}$ \\ \midrule
+$1234$ & $\{1, 2\}$ & $\{3, 4\}$ & $0$ & $+1$ & $+1$ \\
+$1324$ & $\{1, 3\}$ & $\{2, 4\}$ & $1$ & $-1$ & $-1$ \\
+$1423$ & $\{1, 4\}$ & $\{2, 3\}$ & $2$ & $+1$ & $+1$ \\
+$2314$ & $\{2, 3\}$ & $\{1, 4\}$ & $2$ & $+1$ & $+1$ \\
+$2413$ & $\{2, 4\}$ & $\{1, 3\}$ & $3$ & $-1$ & $-1$ \\
+$3412$ & $\{3, 4\}$ & $\{1, 2\}$ & $4$ & $+1$ & $+1$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+In every row $\sgn(\sigma) = (-1)^{3 + a + b}$; this is Lemma~\ref{lem:shuffle-sign}(2) for $p = 2$, since $a + b - 3$ and $3 + a + b$ have the same parity.
+
+\emph{The shuffle sum.} By Definition~\ref{def:wedge-product} with the degrees $2$ and $2$,
+\begin{align*}
+(\alpha \wedge \beta)(v^1, v^2, v^3, v^4) ={}& \alpha(v^1, v^2)\,\beta(v^3, v^4) - \alpha(v^1, v^3)\,\beta(v^2, v^4) + \alpha(v^1, v^4)\,\beta(v^2, v^3) \\
+&+ \alpha(v^2, v^3)\,\beta(v^1, v^4) - \alpha(v^2, v^4)\,\beta(v^1, v^3) + \alpha(v^3, v^4)\,\beta(v^1, v^2) ,
+\end{align*}
+that is, $(\alpha \wedge \beta)(v^1, v^2, v^3, v^4) = \sum_{a < b} \sgn(\sigma)\, \alpha(v^a, v^b)\, \beta(v^c, v^d)$, with $\sigma$ and $\{c, d\}$ as in the table. (This is the six-term formula of Example~\ref{ex:wedge-two-forms}.)
+
+\emph{The factors as $2 \times 2$ minors.} Let $a < b$ and $c < d$. By Example~\ref{ex:hw9-det-last-row} with $k = 2$, applied to $\alpha^1, \alpha^2$ and to $\alpha^3, \alpha^4$,
+\begin{align*}
+\alpha(v^a, v^b) &= \det\begin{pmatrix} \alpha^1(v^a) & \alpha^1(v^b) \\ \alpha^2(v^a) & \alpha^2(v^b) \end{pmatrix} = \det A_{\{1, 2\}, \{a, b\}} , \\
+\beta(v^c, v^d) &= \det\begin{pmatrix} \alpha^3(v^c) & \alpha^3(v^d) \\ \alpha^4(v^c) & \alpha^4(v^d) \end{pmatrix} = \det A_{\{3, 4\}, \{c, d\}} .
+\end{align*}
+The columns appear in increasing order, as in the definition of $A_{I, J}$, because $a < b$ and $c < d$.
+
+\emph{The expansion of $D$ by $2 \times 2$ minors.} By the Laplace expansion of $\det A$ along the rows $1$ and $2$ (linear algebra; see also Proposition~\ref{prop:laplace-from-wedge}),
+\[
+D = \det A = \sum_{1 \le a < b \le 4} (-1)^{1 + 2 + a + b}\, \det A_{\{1, 2\}, \{a, b\}}\, \det A_{\{3, 4\}, \{c, d\}} .
+\]
+\emph{Comparison.} Both sums run over the six sets $\{a, b\}$. For each of them the factors agree by the previous step, and the signs agree by the last two columns of the table. Hence the shuffle sum is term by term the expansion of $D$ by $2 \times 2$ minors along the rows $1$ and $2$, and $(\alpha \wedge \beta)(v^1, v^2, v^3, v^4) = D$.
+\end{proof}
+
+The comparison of Example~\ref{ex:hw9-minors} can be read in the other direction: since $(\alpha^1 \wedge \alpha^2) \wedge (\alpha^3 \wedge \alpha^4)$ is the product of the four one-forms by associativity, its value is $D$ by Lemma~\ref{lem:wedge-one-forms-det}, and the shuffle sum then \emph{proves} the expansion by minors. In general:
+
+\begin{propbox}[The Laplace Expansion from the Wedge Product]\thmlabel{prop:laplace-from-wedge}
+\textit{(Not from the assignment; Problem~1(b) for all sizes.)} Let $M$ be a real $k \times k$ matrix and $k = p + q$. For $A \subseteq \{1, \ldots, k\}$ with $p$ elements $a_1 < \cdots < a_p$, let $M_{\mathrm{top}, A}$ be the $p \times p$ submatrix of $M$ with rows $1, \ldots, p$ and columns $A$, and $M_{\mathrm{bot}, A^c}$ the $q \times q$ submatrix with rows $p + 1, \ldots, k$ and the columns not in $A$. Then
+\[
+\det M = \sum_{A} (-1)^{a_1 + \cdots + a_p - p(p+1)/2}\; \det M_{\mathrm{top}, A}\; \det M_{\mathrm{bot}, A^c} ,
+\]
+the sum over all subsets $A$ with $p$ elements. This is the Laplace expansion of $\det M$ along its first $p$ rows, and it is the definition of the wedge product by shuffles applied to $(\alpha^1 \wedge \cdots \wedge \alpha^p) \wedge (\alpha^{p+1} \wedge \cdots \wedge \alpha^k)$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from the assignment; filled in.)} Let $V = \mathbb{R}^k$ with its standard basis $v^1 = e_1, \ldots, v^k = e_k$, and let $\alpha^i \in V^*$ be the $i$-th row of $M$: $\alpha^i(v^j) = M_{ij}$. Put $\omega_1 = \alpha^1 \wedge \cdots \wedge \alpha^p$ and $\omega_2 = \alpha^{p+1} \wedge \cdots \wedge \alpha^k$. By associativity (Proposition~\ref{prop:wedge-properties}(2)), $\omega_1 \wedge \omega_2 = \alpha^1 \wedge \cdots \wedge \alpha^k$, so by Lemma~\ref{lem:wedge-one-forms-det}
+\[
+(\omega_1 \wedge \omega_2)(v^1, \ldots, v^k) = \det\big(\alpha^i(v^j)\big) = \det M .
+\]
+On the other hand, by Definition~\ref{def:wedge-product},
+\[
+(\omega_1 \wedge \omega_2)(v^1, \ldots, v^k) = \sum_{\sigma \in \mathrm{Sh}(p, q)} \sgn(\sigma)\; \omega_1\big(v^{\sigma(1)}, \ldots, v^{\sigma(p)}\big)\; \omega_2\big(v^{\sigma(p+1)}, \ldots, v^{\sigma(k)}\big) .
+\]
+By Lemma~\ref{lem:shuffle-sign}, the shuffles correspond to the subsets $A = \{\sigma(1) < \cdots < \sigma(p)\}$, and $\sgn(\sigma) = (-1)^{a_1 + \cdots + a_p - p(p+1)/2}$. By Lemma~\ref{lem:wedge-one-forms-det} for $\omega_1$ and the vectors $v^{a_1}, \ldots, v^{a_p}$, the first factor is $\det\big(\alpha^i(v^{a_j})\big)_{i, j \le p} = \det M_{\mathrm{top}, A}$; likewise the second factor is $\det M_{\mathrm{bot}, A^c}$, the columns being in increasing order because $\sigma$ increases on the second block. Comparing the two expressions gives the formula.
+\end{proof}
+
 Next: one more piece of linear algebra, the pullback of forms by a linear map (\ref{sec:linear-pullback}); then $V$ becomes the tangent space $T_pM$ again, and the point $p$ varies over a manifold, so that the forms become functions of the point (\ref{sec:forms-manifolds}). (Lecture~30 ended with the proof of Proposition~\ref{prop:wedge-properties}(3).)
 
 % ============================================================================
@@ -36766,6 +36923,224 @@ and $r = \det \begin{pmatrix} \cos\vartheta & -r\sin\vartheta \\ \sin\vartheta &
 \leeref{Example 14.19}
 \end{exbox}
 
+\subsection{Assignment 9, Problem 2: The Area Form of a Surface}\label{sub:hw9-p2}
+
+\textit{From Assignment~9, Problem~2 (submitted). A two-form on a surface in $\mathbb{R}^3$, defined with a unit normal; its pullback by a parametrization, by the formula of Definition~\ref{def:pullback-k-form}; and the sphere in the coordinates longitude and height. The steps of the submitted solution that are general statements are stated as a lemma and a proposition.}
+
+Throughout, $S \subseteq \mathbb{R}^3$ is a $2$-dimensional regular submanifold and $\mathbf{n} : S \to \mathbb{R}^3$ is a smooth unit normal field: $\mathbf{n}_p$ is a unit vector perpendicular to $T_pS$ for every $p \in S$ (an orientation of $S$, Definition~\ref{def:surface-orientation}; the assignment assumes that such an $\mathbf{n}$ exists). Tangent vectors to $S$ are vectors of $\mathbb{R}^3$, through the inclusion $\iota : S \hookrightarrow \mathbb{R}^3$ and the identification $T_p\mathbb{R}^3 \cong \mathbb{R}^3$, $\partial/\partial x|_p \leftrightarrow e_1$, $\partial/\partial y|_p \leftrightarrow e_2$, $\partial/\partial z|_p \leftrightarrow e_3$.
+
+\begin{defbox}[Area Form of a Surface]\deflabel{def:area-form}
+\textit{(Assignment~9, Problem~2.)} The \textbf{area form} of $S$ associated with $\mathbf{n}$ is the two-form $\alpha$ on $S$ given by
+\[
+\alpha_p(v, w) = \det(v, w, \mathbf{n}_p), \qquad v, w \in T_pS \subseteq \mathbb{R}^3 ,
+\]
+the determinant of the $3 \times 3$ matrix with columns $v$, $w$, $\mathbf{n}_p$.
+\end{defbox}
+
+Each $\alpha_p$ is bilinear and alternating, because the determinant is linear in each column and changes sign when two columns are exchanged; so $\alpha$ is a two-form on $S$ (Definition~\ref{def:k-form-manifold}). It is smooth by Proposition~\ref{prop:area-form-parametrization}(1).
+
+\begin{lembox}[The Area Form Is the Signed Area]\thmlabel{lem:area-form-signed-area}
+\textit{(Not stated in the assignment; it is the computation in the submitted solution of Problem~2(a), for two arbitrary tangent vectors.)} For $p \in S$ and $v, w \in T_pS$:
+\begin{enumerate}[nosep]
+\item $\alpha_p(v, w) = (v \times w) \cdot \mathbf{n}_p$;
+\item $v \times w = \alpha_p(v, w)\, \mathbf{n}_p$, and $|\alpha_p(v, w)| = |v \times w|$, the area of the parallelogram spanned by $v$ and $w$;
+\item $\alpha_p(v, w) \neq 0$ if and only if $v$ and $w$ are linearly independent, and then $\alpha_p(v, w) > 0$ exactly when $v \times w$ points in the direction of $\mathbf{n}_p$.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(From the submitted solution.)} \emph{(1)} Write $v = (v_1, v_2, v_3)$, $w = (w_1, w_2, w_3)$ and $\mathbf{n}_p = (n^1, n^2, n^3)$. Expanding the determinant along its third column,
+\begin{align*}
+\det(v, w, \mathbf{n}_p) = \det\begin{pmatrix} v_1 & w_1 & n^1 \\ v_2 & w_2 & n^2 \\ v_3 & w_3 & n^3 \end{pmatrix} &= n^1\,(v_2 w_3 - v_3 w_2) + n^2\,(v_3 w_1 - v_1 w_3) + n^3\,(v_1 w_2 - v_2 w_1) \\
+&= (v \times w) \cdot \mathbf{n}_p ,
+\end{align*}
+since the three brackets are the components of the cross product $v \times w$.
+
+\emph{(2), (3)} If $v$ and $w$ are linearly dependent, then $v \times w = 0$ and both sides of every statement are $0$. If they are linearly independent, they span the $2$-dimensional space $T_pS$, and $v \times w$ is nonzero and perpendicular to both, hence perpendicular to $T_pS$. The vectors perpendicular to $T_pS$ form a line, spanned by the unit vector $\mathbf{n}_p$, so $v \times w = \lambda\, \mathbf{n}_p$ with $\lambda \neq 0$. Taking the inner product with $\mathbf{n}_p$ and using (1), $\lambda = (v \times w) \cdot \mathbf{n}_p = \alpha_p(v, w)$; and $|\lambda| = |v \times w|$ because $|\mathbf{n}_p| = 1$. The sign of $\lambda$ is positive exactly when $v \times w$ and $\mathbf{n}_p$ point in the same direction. That $|v \times w|$ is the area of the parallelogram is the Calculus~III property of the cross product.
+\end{proof}
+
+%% >>> ADDED: figure (not from the assignment)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=1.15]
+\fill[gray!10] (-0.6,-0.5) -- (3.4,-0.5) -- (4.4,1.3) -- (0.4,1.3) -- cycle;
+\node[font=\scriptsize, gray!60!black] at (3.75,1.1) {$T_pS$};
+\fill[blue!18] (1,0) -- (2.6,0) -- (3.2,0.8) -- (1.6,0.8) -- cycle;
+\draw[->, thick, blue!70!black] (1,0) -- (2.6,0) node[below, font=\scriptsize] {$v$};
+\draw[->, thick, blue!70!black] (1,0) -- (1.6,0.8) node[above left=-2pt, font=\scriptsize] {$w$};
+\draw[->, thick, red!70!black] (1,0) -- (1,1.25) node[left, font=\scriptsize] {$\mathbf{n}_p$};
+\draw[->, thick, orange!85!black] (1.05,0) -- (1.05,2.1) node[right, font=\scriptsize] {$v \times w = \alpha_p(v, w)\, \mathbf{n}_p$};
+\fill (1,0) circle (1.4pt) node[below left, font=\scriptsize] {$p$};
+\node[blue!70!black, font=\scriptsize] at (2.15,0.38) {area $|\alpha_p(v, w)|$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from the assignment; figure added.)} Lemma~\ref{lem:area-form-signed-area}: for $v, w$ in the tangent plane, $v \times w$ lies on the normal line, and its coefficient with respect to the unit normal $\mathbf{n}_p$ is $\alpha_p(v, w)$. The absolute value is the area of the parallelogram; the sign says whether $(v, w)$ turns from $v$ to $w$ counterclockwise as seen from the tip of $\mathbf{n}_p$.
+%% <<< END ADDED
+
+\begin{propbox}[The Area Form in a Parametrization]\thmlabel{prop:area-form-parametrization}
+\textit{(Assignment~9, Problem~2(a), with the part of 2(b) that does not use the hypothesis on the direction.)} Let $F : V \to U \subseteq S$ be a parametrization, the inverse of a coordinate chart of $S$ (Definition~\ref{def:parametrization}), with $V \subseteq \mathbb{R}^2$ open and coordinates $(s, t)$ on $V$. Write $F = (x, y, z)$, $F_s = (x_s, y_s, z_s)$ and $F_t = (x_t, y_t, z_t)$.
+\begin{enumerate}[nosep]
+\item For every parametrization, $F^*\alpha = \varphi\; ds \wedge dt$ with
+\[
+\varphi = \det\big(F_s, F_t, \mathbf{n} \circ F\big) = (F_s \times F_t) \cdot (\mathbf{n} \circ F) .
+\]
+In particular $\varphi$ is smooth, and $\alpha \in \Omega^2(S)$.
+\item At every point of $V$, $F_s \times F_t \neq 0$ and $\varphi = \pm\, |F_s \times F_t|$, with the sign $+$ exactly where $F_s \times F_t$ points in the direction of $\mathbf{n}$. The sign is constant on each connected component of $V$.
+\item If $F_s \times F_t$ points in the direction of $\mathbf{n}$ at each point (a positive parametrization, Definition~\ref{def:positive-parametrization}), then
+\[
+F^*\alpha = |F_s \times F_t|\; ds \wedge dt .
+\]
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(The submitted solution of Problem~2(a); the smoothness statements are filled in.)} \emph{The component function.} $F^*\alpha$ is a two-form on $V \subseteq \mathbb{R}^2$. The only increasing multi-index of length $2$ in $\{1, 2\}$ is $\{1, 2\}$, so by Definition~\ref{def:k-form-components}, for $q \in V$,
+\[
+(F^*\alpha)_q = \varphi(q)\, (ds \wedge dt)_q, \qquad \varphi(q) = (F^*\alpha)_q\Big( \frac{\partial}{\partial s}\Big|_q, \frac{\partial}{\partial t}\Big|_q \Big) .
+\]
+\emph{The pullback.} By Definition~\ref{def:pullback-k-form}, for $q \in V$ and $v, w \in T_qV$,
+\[
+(F^*\alpha)_q(v, w) = \alpha_{F(q)}\big(dF_q(v), dF_q(w)\big) = \det\big(dF_q(v), dF_q(w), \mathbf{n}_{F(q)}\big) .
+\]
+\emph{The pushforwards of $\partial/\partial s$ and $\partial/\partial t$.} By the matrix of the differential (Theorem~\ref{lem:differential-matrix}), applied to $\iota \circ F : V \to \mathbb{R}^3$,
+\[
+dF_q\Big( \frac{\partial}{\partial s}\Big|_q \Big) = x_s(q)\, \frac{\partial}{\partial x}\Big|_{F(q)} + y_s(q)\, \frac{\partial}{\partial y}\Big|_{F(q)} + z_s(q)\, \frac{\partial}{\partial z}\Big|_{F(q)} ,
+\]
+which under the identification above is the vector $F_s(q)$. Likewise $dF_q(\partial/\partial t|_q) = F_t(q)$.
+
+\emph{(1)} Combining the three steps, $\varphi(q) = \det\big(F_s(q), F_t(q), \mathbf{n}_{F(q)}\big)$, and this is $(F_s \times F_t) \cdot \mathbf{n}$ by Lemma~\ref{lem:area-form-signed-area}(1). The entries of the determinant are smooth functions on $V$ ($F$ and $\mathbf{n}$ are smooth), so $\varphi$ is smooth. In the chart $(U, F^{-1})$ of $S$ the component function of $\alpha$ is $\varphi \circ F^{-1}$, which is smooth; the domains of such charts cover $S$, so $\alpha$ is smooth (Definition~\ref{def:smooth-k-form}).
+
+\emph{(2)} Since $F$ is a parametrization, $dF_q$ is injective, so $F_s(q)$ and $F_t(q)$ are linearly independent tangent vectors at $F(q)$. By Lemma~\ref{lem:area-form-signed-area}(2) and (3), $F_s \times F_t = \varphi\, (\mathbf{n} \circ F)$ with $\varphi \neq 0$ and $|\varphi| = |F_s \times F_t|$, and $\varphi > 0$ exactly where $F_s \times F_t$ points in the direction of $\mathbf{n}$. Since $\varphi$ is continuous and never zero, its sign is constant on each connected component of $V$, but it may differ between components.
+
+\emph{(3)} By (2) the hypothesis means $\varphi > 0$ everywhere, so $\varphi = |F_s \times F_t|$.
+\end{proof}
+
+\emph{What the hypotheses are used for.} Part (1) uses nothing about the direction of $F_s \times F_t$, and its formula $\varphi = \det(F_s, F_t, \mathbf{n} \circ F)$ holds for every smooth map $F : V \to S$. That $F$ is the inverse of a chart is used only through the injectivity of $dF_q$, in (2).
+
+\begin{exbox}[Assignment 9 Problem 2(b): Why the Direction of the Cross Product Matters]\exlabel{ex:hw9-area-sign}
+\textit{(Assignment~9, Problem~2(b), as submitted.)} The Calculus~III formula for the area of $U = F(V)$ is
+\[
+\operatorname{Area}(U) = \int_V |F_s \times F_t|\; ds\, dt ,
+\]
+whose integrand is positive on $V$. By Proposition~\ref{prop:area-form-parametrization}(2), for any parametrization $\varphi = \pm\,|F_s \times F_t|$ pointwise. With the condition that $F_s \times F_t$ points in the direction of $\mathbf{n}$, $\varphi = |F_s \times F_t|$ everywhere, which is exactly the integrand of the area formula, so $\int_V \varphi\, ds\, dt = \operatorname{Area}(U)$; for this reason $\alpha$ is called the area form associated with $\mathbf{n}$. Without the condition, $\varphi$ has the correct absolute value but possibly the wrong sign. If $F_s \times F_t$ points opposite to $\mathbf{n}$ everywhere, then $\varphi = -|F_s \times F_t|$ and
+\[
+\int_V \varphi\; ds\, dt = -\operatorname{Area}(U) < 0 ,
+\]
+which cannot be an area; if the sign differs between components of $V$, the integral is the difference of the areas of the corresponding pieces of $U$. So the condition on $F_s \times F_t$ with respect to $\mathbf{n}$ is what makes $\int_V \varphi\, ds\, dt$ equal to the area of $U$.
+\end{exbox}
+
+\begin{exbox}[Assignment 9 Problem 2(c): The Area Form of the Sphere in Longitude and Height]\exlabel{ex:hw9-sphere-area-form}
+\textit{(Assignment~9, Problem~2(c).)} Let $S = S^2$ be the unit sphere, with $\mathbf{n}$ pointing away from the origin, and $U = S^2 \setminus \mu$, where $\mu = \{(x, 0, z) \in S^2 : x \le 0\}$ is the meridian at longitude $\pm\pi$, including the poles $(0, 0, \pm 1)$. Let $\phi : U \to \mathbb{R}^2$, $\phi(p) = (\theta(p), z(p))$, where $z(p)$ is the third Cartesian coordinate of $p$ and $\theta(p) \in (-\pi, \pi)$ the polar angle of $(x(p), y(p))$, the longitude. With $F = \phi^{-1}$,
+\[
+F^*\alpha = d\theta \wedge dz :
+\]
+in the coordinates longitude and height, the area form of the sphere has the constant coefficient $1$.
+\end{exbox}
+
+\begin{proof}[The submitted solution]
+\textit{(Assignment~9, Problem~2(c), as submitted.)} \emph{The setup.} On $U$ the polar angle $\theta \in (-\pi, \pi)$ is single-valued, and $\phi(U) = (-\pi, \pi) \times (-1, 1)$; see the figure below.
+
+\emph{The parametrization $F = \phi^{-1}$.} A point $p = (x, y, z) \in U$ satisfies $x^2 + y^2 + z^2 = 1$. Writing $(x, y) = (r\cos\theta, r\sin\theta)$ with $r = |(x, y)| \ge 0$, the constraint gives $r^2 = 1 - z^2$, so $r = \sqrt{1 - z^2}$. Hence
+\[
+F(\theta, z) = \Big( \sqrt{1 - z^2}\,\cos\theta,\ \sqrt{1 - z^2}\,\sin\theta,\ z \Big), \qquad (\theta, z) \in (-\pi, \pi) \times (-1, 1) .
+\]
+Since $|z| < 1$, $r = \sqrt{1 - z^2} > 0$, and the square root is smooth on $(0, \infty)$, so $F$ is smooth. Moreover $F(\theta, z) \in S^2$ by the choice of $r$, its third coordinate is $z$, and its $(x, y)$-part has polar angle $\theta \neq \pm\pi$ and length $r > 0$, so $F(\theta, z) \notin \mu$ and $\phi\big(F(\theta, z)\big) = (\theta, z)$.
+
+\emph{The partial derivatives.} By the chain rule, $\partial r/\partial z = -z/\sqrt{1 - z^2} = -z/r$. Hence
+\[
+F_\theta = \big( -r\sin\theta,\ r\cos\theta,\ 0 \big), \qquad F_z = \Big( -\frac{z}{r}\cos\theta,\ -\frac{z}{r}\sin\theta,\ 1 \Big) .
+\]
+\emph{The cross product.} Componentwise,
+\begin{align*}
+(F_\theta \times F_z)^1 &= (r\cos\theta)(1) - (0)\Big( -\frac{z}{r}\sin\theta \Big) = r\cos\theta , \\
+(F_\theta \times F_z)^2 &= (0)\Big( -\frac{z}{r}\cos\theta \Big) - (-r\sin\theta)(1) = r\sin\theta , \\
+(F_\theta \times F_z)^3 &= (-r\sin\theta)\Big( -\frac{z}{r}\sin\theta \Big) - (r\cos\theta)\Big( -\frac{z}{r}\cos\theta \Big) = z\sin^2\theta + z\cos^2\theta = z .
+\end{align*}
+Therefore $F_\theta \times F_z = (r\cos\theta, r\sin\theta, z) = F(\theta, z)$.
+
+\emph{The outward normal.} For $p \in S^2$, $\mathbf{n}_p = p$: $T_pS^2 = p^\perp$ (Example~\ref{ex:tangent-sphere}), $|p| = 1$, and $p$ points away from the origin.
+
+\emph{The direction and the magnitude.} With $p = F(\theta, z)$, the two previous steps give $F_\theta \times F_z = p = 1 \cdot \mathbf{n}_p$, a positive multiple of $\mathbf{n}_p$. So $F$ satisfies the hypothesis of Proposition~\ref{prop:area-form-parametrization}(3), with $(s, t) = (\theta, z)$, and $\varphi = |F_\theta \times F_z| = |p| = 1$. Therefore $F^*\alpha = d\theta \wedge dz$.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[lat/.style={gray!55, very thin}, latback/.style={gray!30, very thin, densely dotted}, greenwich/.style={green!45!black, thick, dashed}, mu/.style={red!75!black, line width=1.5pt}, muback/.style={red!75!black, line width=1.1pt, densely dashed, opacity=0.6}]
+% the sphere (orthographic projection)
+\shade[inner color=white, outer color=blue!14] (0,0) circle (2.0cm);
+\draw[gray] (0,0) circle (2.0cm);
+\begin{scope}[x={(1.984cm,-0.078cm)}, y={(0.256cm,0.604cm)}, z={(-0.000cm,1.905cm)}]
+\draw[latback] plot[domain=-180.0:-162.0, samples=72, smooth, variable=\t] ({0.8660*cos(\t)}, {0.8660*sin(\t)}, -0.5);
+\draw[lat] plot[domain=-162.0:-3.2, samples=72, smooth, variable=\t] ({0.8660*cos(\t)}, {0.8660*sin(\t)}, -0.5);
+\draw[latback] plot[domain=-3.2:180.0, samples=72, smooth, variable=\t] ({0.8660*cos(\t)}, {0.8660*sin(\t)}, -0.5);
+\draw[latback] plot[domain=-180.0:-172.6, samples=72, smooth, variable=\t] ({1.0000*cos(\t)}, {1.0000*sin(\t)}, 0);
+\draw[lat] plot[domain=-172.6:7.4, samples=72, smooth, variable=\t] ({1.0000*cos(\t)}, {1.0000*sin(\t)}, 0);
+\draw[latback] plot[domain=7.4:180.0, samples=72, smooth, variable=\t] ({1.0000*cos(\t)}, {1.0000*sin(\t)}, 0);
+\draw[lat] plot[domain=-180.0:18.0, samples=72, smooth, variable=\t] ({0.8660*cos(\t)}, {0.8660*sin(\t)}, 0.5);
+\draw[latback] plot[domain=18.0:176.8, samples=72, smooth, variable=\t] ({0.8660*cos(\t)}, {0.8660*sin(\t)}, 0.5);
+\draw[lat] plot[domain=176.8:180.0, samples=72, smooth, variable=\t] ({0.8660*cos(\t)}, {0.8660*sin(\t)}, 0.5);
+\draw[latback] plot[domain=-90.0:-62.3, samples=36, smooth, variable=\t] ({cos(\t)*cos(-135)}, {cos(\t)*sin(-135)}, {sin(\t)});
+\draw[lat] plot[domain=-62.3:90.0, samples=36, smooth, variable=\t] ({cos(\t)*cos(-135)}, {cos(\t)*sin(-135)}, {sin(\t)});
+\draw[latback] plot[domain=-90.0:-72.1, samples=36, smooth, variable=\t] ({cos(\t)*cos(-90)}, {cos(\t)*sin(-90)}, {sin(\t)});
+\draw[lat] plot[domain=-72.1:90.0, samples=36, smooth, variable=\t] ({cos(\t)*cos(-90)}, {cos(\t)*sin(-90)}, {sin(\t)});
+\draw[latback] plot[domain=-90.0:-68.0, samples=36, smooth, variable=\t] ({cos(\t)*cos(-45)}, {cos(\t)*sin(-45)}, {sin(\t)});
+\draw[lat] plot[domain=-68.0:90.0, samples=36, smooth, variable=\t] ({cos(\t)*cos(-45)}, {cos(\t)*sin(-45)}, {sin(\t)});
+\draw[latback] plot[domain=-90.0:62.4, samples=36, smooth, variable=\t] ({cos(\t)*cos(45)}, {cos(\t)*sin(45)}, {sin(\t)});
+\draw[lat] plot[domain=62.4:90.0, samples=36, smooth, variable=\t] ({cos(\t)*cos(45)}, {cos(\t)*sin(45)}, {sin(\t)});
+\draw[latback] plot[domain=-90.0:72.2, samples=36, smooth, variable=\t] ({cos(\t)*cos(90)}, {cos(\t)*sin(90)}, {sin(\t)});
+\draw[lat] plot[domain=72.2:90.0, samples=36, smooth, variable=\t] ({cos(\t)*cos(90)}, {cos(\t)*sin(90)}, {sin(\t)});
+\draw[latback] plot[domain=-90.0:68.0, samples=36, smooth, variable=\t] ({cos(\t)*cos(135)}, {cos(\t)*sin(135)}, {sin(\t)});
+\draw[lat] plot[domain=68.0:90.0, samples=36, smooth, variable=\t] ({cos(\t)*cos(135)}, {cos(\t)*sin(135)}, {sin(\t)});
+\draw[greenwich, opacity=0.45] plot[domain=-90.0:-21.8, samples=36, smooth, variable=\t] ({cos(\t)}, 0, {sin(\t)});
+\draw[greenwich] plot[domain=-21.8:90.0, samples=36, smooth, variable=\t] ({cos(\t)}, 0, {sin(\t)});
+\draw[muback] plot[domain=-90.0:21.9, samples=36, smooth, variable=\t] ({-cos(\t)}, 0, {sin(\t)});
+\draw[mu] plot[domain=21.9:90.0, samples=36, smooth, variable=\t] ({-cos(\t)}, 0, {sin(\t)});
+% axes
+\draw[->] (1,0,0) -- (1.45,0,0) node[anchor=north east] {$x$};
+\draw[->] (0,0,1) -- (0,0,1.25) node[anchor=west] {$z$};
+% poles and labels
+\fill[red!75!black] (0,0,1) circle (1.6pt) node[anchor=south east] {$N$};
+\fill[red!75!black] (0,0,-1) circle (1.6pt) node[anchor=north] {$S$};
+\node[red!75!black, anchor=east] at ({-cos(-17)}, 0, {sin(-17)}) {$\mu$};
+\node[green!35!black, anchor=west, font=\small] at ({cos(-40)}, 0, {sin(-40)}) {$\theta = 0$};
+% the point p, its coordinates, and the normal
+\coordinate (p) at ({0.8000*cos(-74.5)}, {0.8000*sin(-74.5)}, 0.6);
+\draw[orange!85!black, dotted, thick] (0,0,0.6) -- (p);
+\draw[orange!85!black, dotted, thick] (0,0,0.6) -- (0.8000,0,0.6);
+\draw[orange!85!black, thick] plot[domain=0:-74.5, samples=30, smooth, variable=\t] ({0.8000*cos(\t)}, {0.8000*sin(\t)}, 0.6);
+\node[orange!85!black, anchor=north west, inner sep=1pt] at ({0.8000*cos(-37.2)}, {0.8000*sin(-37.2)}, 0.58) {$\theta$};
+\draw[violet, dotted, thick] ({0.8000*cos(-74.5)}, {0.8000*sin(-74.5)}, 0) -- node[anchor=west, font=\small] {$z$} (p);
+\draw[-stealth, thick] (p) -- ({2.0*0.8000*cos(-74.5)}, {2.0*0.8000*sin(-74.5)}, 1.2) node[anchor=north west] {$\mathbf{n}_p$};
+\fill (p) circle (1.5pt) node[anchor=north east] {$p$};
+\end{scope}
+\node at (0,3.05) {$U = S^2 \setminus \mu$};
+% the chart image
+\begin{scope}[xshift=7.6cm, x=0.95cm, y=1.6cm]
+\fill[blue!8] (-3.1416,-1) rectangle (3.1416,1);
+\draw[red!75!black, line width=1.3pt, densely dashed] (-3.1416,-1) -- (-3.1416,1);
+\draw[red!75!black, line width=1.3pt, densely dashed] (3.1416,-1) -- (3.1416,1);
+\draw[red!75!black, densely dotted] (-3.1416,1) -- node[above, font=\small] {$N$ (pole)} (3.1416,1);
+\draw[red!75!black, densely dotted] (-3.1416,-1) -- node[below, font=\small] {$S$ (pole)} (3.1416,-1);
+\draw[green!45!black, thick, dashed] (0,-1) -- (0,1);
+\node[red!75!black, anchor=west] at (-3.1416,0) {$\mu$};
+\node[red!75!black, anchor=east] at (3.1416,0) {$\mu$};
+\fill (-1.3,0.6) circle (1.5pt) node[anchor=north] {$\phi(p) = (\theta, z)$};
+\draw[->] (-3.6,-1.3) -- (3.7,-1.3) node[anchor=west] {$\theta$};
+\draw[->] (-3.6,-1.3) -- (-3.6,1.35) node[anchor=south] {$z$};
+\foreach \x/\l in {-3.1416/-\pi, 0/0, 3.1416/\pi} \draw (\x,-1.33) -- (\x,-1.27) node[below=2pt] {$\l$};
+\foreach \y in {-1, 0, 1} \draw (-3.63,\y) -- (-3.57,\y) node[left=2pt] {$\y$};
+\node at (0,1.55) {$\phi(U) = (-\pi, \pi) \times (-1, 1)$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\textit{(Figure from the submitted solution.)} Left: the sphere with the removed meridian $\mu$ (red), the meridian $\theta = 0$ (green), a point $p$ with its longitude $\theta$, its height $z$ and the outward normal $\mathbf{n}_p$. Right: the image $\phi(U) = (-\pi, \pi) \times (-1, 1)$ of the chart; the two vertical edges correspond to $\mu$ and the two horizontal edges to the poles, none of them in the image.
+
+\begin{exbox}[Zones of Equal Height Have Equal Area]\exlabel{ex:archimedes-zones}
+\textit{(Not from the assignment; a consequence of Example~\ref{ex:hw9-sphere-area-form} and the Calculus~III area formula quoted in Problem~2(b).)} For $-1 \le a < b \le 1$, the zone $U_{a, b} = \{p \in U : a < z(p) < b\}$ of the unit sphere is $F\big((-\pi, \pi) \times (a, b)\big)$, and since $\varphi = 1$,
+\[
+\operatorname{Area}(U_{a, b}) = \int_{(-\pi, \pi) \times (a, b)} 1\; d\theta\, dz = 2\pi\,(b - a) .
+\]
+The area depends only on the height $b - a$ of the zone, not on where it lies between the poles: a zone near the pole is narrow, but it is tilted, and the two effects cancel. For $a = -1$, $b = 1$ this gives $4\pi$, the area of the sphere (the meridian $\mu$, a curve, has area $0$). The parametrization $F$ projects the cylinder of radius $1$ around the sphere horizontally onto the sphere, and it preserves area; this is a theorem of Archimedes.
+\end{exbox}
+
 Next: the exterior derivative, which extends $d : \Omega^0(M) \to \Omega^1(M)$ to forms of every degree (\ref{sec:exterior-derivative}).
 
 % ============================================================================
@@ -37089,6 +37464,162 @@ whose coefficient is the divergence of $(A, B, C)$.
 \end{proof}
 
 The basis $dy \wedge dz$, $dz \wedge dx$, $dx \wedge dy$ is used here (with $dz \wedge dx = -\,dx \wedge dz$, out of increasing order) because it matches the components of a vector field, as in \ref{sec:two-form-integrand}. In this dictionary $d \circ d = 0$ becomes $\operatorname{curl} \operatorname{grad} = 0$ and $\operatorname{div} \operatorname{curl} = 0$. For one-forms, $d\theta = 0$ is the condition $\partial\theta_j/\partial x^k = \partial\theta_k/\partial x^j$ of Definition~\ref{def:closed-one-form}: by Corollary~\ref{cor:d-coordinates} and the computation in the proof of Proposition~\ref{prop:d-euclidean-properties}(3), $d\theta = \sum_{j < k} \big( \partial\theta_k/\partial x^j - \partial\theta_j/\partial x^k \big)\, dx^j \wedge dx^k$ in every chart.
+
+\subsection{Assignment 9, Problem 3: The Tautological One-Form}\label{sub:hw9-p3}
+
+\textit{From Assignment~9, Problem~3 (submitted). The cotangent bundle carries a one-form defined without any choice, the Liouville form; its exterior derivative makes $T^*M$ a symplectic manifold. The assignment's reading is Tu, \emph{An Introduction to Manifolds}, Example~17.4. The submitted solution is given in the notation of these notes: $(\bar x^1, \ldots, \bar x^m, \xi_1, \ldots, \xi_m)$ are the standard coordinates on $T^*U$ (Definition~\ref{def:ctb-chart}), with $\bar x^i = x^i \circ \pi$ and $\xi_i(p, \xi) = \xi(\partial/\partial x^i|_p)$. The steps that are general statements are stated as lemmas.}
+
+Throughout, $M$ is a smooth manifold of dimension $m$ and $\pi : T^*M \to M$, $\pi(p, \xi) = p$, is the projection.
+
+\begin{defbox}[The Tautological One-Form]\deflabel{def:tautological-form}
+\textit{(Assignment~9, Problem~3; Tu, Example~17.4.)} A point $(p, \xi)$ of $T^*M$ is itself a covector $\xi \in T_p^*M$. The \textbf{tautological one-form}, or \textbf{Liouville form}, $\lambda$ on $T^*M$ is defined at this point as the pullback of $\xi$ by the differential of $\pi$:
+\[
+\lambda_{(p, \xi)}(X) = \xi\big( \pi_{*(p, \xi)} X \big) \qquad \text{for } X \in T_{(p, \xi)}(T^*M) .
+\]
+\end{defbox}
+
+Each $\lambda_{(p, \xi)}$ is linear in $X$, so $\lambda$ is a rough section of $T^*(T^*M)$ (Definition~\ref{def:rough-section}); it is smooth by Proposition~\ref{prop:tautological-coords}. The definition uses no chart.
+
+\begin{lembox}[The Differential of the Projection in Standard Coordinates]\thmlabel{lem:dpi-standard}
+\textit{(From the submitted solution of Problem~3(a); Proposition~\ref{prop:zero-section-vertical}(1) is the case of the points $(p, 0)$.)} Let $(U, \varphi = (x^i))$ be a chart of $M$ and $(p, \xi) \in T^*U$. Then, for $j = 1, \ldots, m$,
+\[
+\pi_{*(p, \xi)}\Big( \frac{\partial}{\partial \bar x^j}\Big|_{(p, \xi)} \Big) = \frac{\partial}{\partial x^j}\Big|_p, \qquad \pi_{*(p, \xi)}\Big( \frac{\partial}{\partial \xi_j}\Big|_{(p, \xi)} \Big) = 0 .
+\]
+So the kernel of $\pi_{*(p, \xi)}$, the vertical space at $(p, \xi)$ (Definition~\ref{def:vertical-space}), is spanned by $\partial/\partial \xi_1, \ldots, \partial/\partial \xi_m$.
+\end{lembox}
+
+\begin{proof}
+\textit{(The submitted solution.)} In the standard coordinates on $T^*U$ and the coordinates $(x^i)$ on $U$, the projection is $(\bar x^1, \ldots, \bar x^m, \xi_1, \ldots, \xi_m) \mapsto (\bar x^1, \ldots, \bar x^m)$ (Corollary~\ref{cor:ctb-fibration}(1)), whose Jacobian is the $m \times 2m$ matrix $\begin{pmatrix} I_m & 0 \end{pmatrix}$. Reading off its columns (Theorem~\ref{lem:differential-matrix}) gives the two formulas. The kernel of a matrix $\begin{pmatrix} I_m & 0 \end{pmatrix}$ consists of the vectors whose first $m$ components vanish.
+\end{proof}
+
+\begin{propbox}[The Tautological One-Form in Coordinates]\thmlabel{prop:tautological-coords}
+\textit{(Assignment~9, Problem~3(a).)} Let $(U, (x^i))$ be a chart of $M$. In the standard coordinates on $T^*U$,
+\[
+\lambda = \sum_{i=1}^m \xi_i\, d\bar x^i .
+\]
+In particular:
+\begin{enumerate}[nosep]
+\item $\lambda$ is smooth, $\lambda \in \Omega^1(T^*M)$;
+\item $\lambda$ vanishes on vertical vectors: $\lambda_{(p, \xi)}(X) = 0$ if $\pi_{*(p, \xi)} X = 0$;
+\item the expression $\sum_i \xi_i\, d\bar x^i$ is the same one-form on $T^*(U \cap U')$ for any two charts $(U, (x^i))$ and $(U', (x'^i))$ of $M$.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(The submitted solution; the consequences (1)--(3) are filled in.)} Fix $(p, \xi) \in T^*U$.
+
+\emph{$\lambda$ on $\partial/\partial \bar x^j$.} For $j = 1, \ldots, m$, by Definition~\ref{def:tautological-form}, then Lemma~\ref{lem:dpi-standard}, then the definition of the coordinate $\xi_j$ (Definition~\ref{def:ctb-chart}),
+\[
+\lambda_{(p, \xi)}\Big( \frac{\partial}{\partial \bar x^j}\Big|_{(p, \xi)} \Big) = \xi\Big( \pi_{*(p, \xi)}\Big( \frac{\partial}{\partial \bar x^j}\Big|_{(p, \xi)} \Big) \Big) = \xi\Big( \frac{\partial}{\partial x^j}\Big|_p \Big) = \xi_j(p, \xi) .
+\]
+\emph{$\lambda$ on $\partial/\partial \xi_j$.} By Definition~\ref{def:tautological-form} and Lemma~\ref{lem:dpi-standard}, and since $\xi$ is linear,
+\[
+\lambda_{(p, \xi)}\Big( \frac{\partial}{\partial \xi_j}\Big|_{(p, \xi)} \Big) = \xi\Big( \pi_{*(p, \xi)}\Big( \frac{\partial}{\partial \xi_j}\Big|_{(p, \xi)} \Big) \Big) = \xi(0) = 0 .
+\]
+\emph{Conclusion.} A covector is the sum of its values on the coordinate vectors times the dual basis (Corollary~\ref{cor:covector-components}, on the manifold $T^*U$ with the coordinates $(\bar x^i, \xi_j)$), so
+\[
+\lambda_{(p, \xi)} = \sum_{j=1}^m \lambda_{(p, \xi)}\Big( \frac{\partial}{\partial \bar x^j} \Big)\, d\bar x^j\big|_{(p, \xi)} + \sum_{j=1}^m \lambda_{(p, \xi)}\Big( \frac{\partial}{\partial \xi_j} \Big)\, d\xi_j\big|_{(p, \xi)} = \sum_{j=1}^m \xi_j(p, \xi)\, d\bar x^j\big|_{(p, \xi)} .
+\]
+Since $(p, \xi) \in T^*U$ was arbitrary, $\lambda = \sum_i \xi_i\, d\bar x^i$ on $T^*U$.
+
+\emph{(1)} The coefficient functions of $\lambda$ in the chart are the coordinate functions $\xi_i$ and the constant $0$, which are smooth; the domains $T^*U$ cover $T^*M$, so $\lambda$ is smooth (Proposition~\ref{prop:one-form-coords}(3)). \emph{(2)} Immediate from Definition~\ref{def:tautological-form}: if $\pi_* X = 0$ then $\lambda(X) = \xi(0) = 0$. \emph{(3)} Both expressions equal $\lambda$, which was defined without a chart.
+\end{proof}
+
+\begin{propbox}[Every One-Form Is a Pullback of the Tautological One-Form]\thmlabel{prop:tautological-pullback}
+\textit{(Assignment~9, Problem~3(b).)} Let $\alpha \in \Omega^1(M)$, and let $s_\alpha : M \to T^*M$, $s_\alpha(p) = (p, \alpha_p)$, be the corresponding section: the one-form $\alpha$ regarded as a map (Definition~\ref{def:one-form}). Then
+\[
+s_\alpha^*\lambda = \alpha ,
+\]
+hence the name \emph{tautological}.
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~9, Problem~3(b), as submitted: the proof in coordinates.)} Both $s_\alpha^*\lambda$ and $\alpha$ are one-forms on $M$. Let $(U, (x^i))$ be a chart of $M$ and write $\alpha = \sum_i a_i\, dx^i$ on $U$, with $a_i = \alpha(\partial/\partial x^i) \in C^\infty(U)$. In the standard coordinates on $T^*U$,
+\[
+s_\alpha(x^1, \ldots, x^m) = \big( x^1, \ldots, x^m, a_1(x), \ldots, a_m(x) \big) ,
+\]
+since $\xi_i(p, \alpha_p) = \alpha_p(\partial/\partial x^i|_p) = a_i(p)$ (Proposition~\ref{prop:one-form-coords}(2)). Fix $p \in U$ and $v = \sum_j v^j\, \partial/\partial x^j|_p \in T_pM$.
+
+\emph{The pullback.} By Definition~\ref{def:pullback-one-form}, $(s_\alpha^*\lambda)_p(v) = \lambda_{s_\alpha(p)}\big( (s_\alpha)_{*p} v \big)$. Since $\pi(s_\alpha(p)) = p \in U$, the point $s_\alpha(p)$ lies in $T^*U$, and by Proposition~\ref{prop:tautological-coords}
+\[
+(s_\alpha^*\lambda)_p(v) = \sum_{i=1}^m \xi_i\big(s_\alpha(p)\big)\; d\bar x^i\big|_{s_\alpha(p)}\big( (s_\alpha)_{*p} v \big) .
+\]
+\emph{The coefficients.} $\xi_i(s_\alpha(p)) = \xi_i(p, \alpha_p) = a_i(p)$.
+
+\emph{The factors.} By the coordinate expression of $s_\alpha$ and the matrix of the differential (Theorem~\ref{lem:differential-matrix}),
+\[
+(s_\alpha)_{*p} v = \sum_{j=1}^m v^j\, \frac{\partial}{\partial \bar x^j}\Big|_{s_\alpha(p)} + \sum_{i=1}^m \Big( \sum_{j=1}^m \frac{\partial a_i}{\partial x^j}(p)\, v^j \Big) \frac{\partial}{\partial \xi_i}\Big|_{s_\alpha(p)} .
+\]
+The covector $d\bar x^i|_{s_\alpha(p)}$ returns the coefficient of $\partial/\partial \bar x^i$, so the $\xi$-part does not contribute, and $d\bar x^i|_{s_\alpha(p)}\big( (s_\alpha)_{*p} v \big) = v^i$.
+
+\emph{Conclusion.} Substituting, $(s_\alpha^*\lambda)_p(v) = \sum_i a_i(p)\, v^i = \sum_i a_i(p)\, dx^i|_p(v) = \alpha_p(v)$. Since $p \in U$ and $v \in T_pM$ were arbitrary, $s_\alpha^*\lambda = \alpha$ on $U$; the chart domains cover $M$.
+\end{proof}
+
+\begin{proof}[Second proof]
+\textit{(Assignment~9, Problem~3(b), as submitted: the alternative without coordinates.)} For $p \in M$ and $v \in T_pM$, since $s_\alpha(p) = (p, \alpha_p)$, Definition~\ref{def:tautological-form} at this point gives $\lambda_{s_\alpha(p)}(X) = \alpha_p(\pi_* X)$ for $X \in T_{s_\alpha(p)}(T^*M)$. Hence, by the chain rule (Theorem~\ref{prop:pushforward-functorial}) and $\pi \circ s_\alpha = \mathrm{id}_M$,
+\[
+(s_\alpha^*\lambda)_p(v) = \lambda_{s_\alpha(p)}\big( (s_\alpha)_{*p} v \big) = \alpha_p\big( \pi_* (s_\alpha)_{*p} v \big) = \alpha_p\big( (\pi \circ s_\alpha)_{*p} v \big) = \alpha_p(v) . \qedhere
+\]
+\end{proof}
+
+The second proof uses only two facts about $s_\alpha$: $\pi \circ s_\alpha = \mathrm{id}_M$, and that the point $s_\alpha(p)$, as a covector, is $\alpha_p$. The first proof shows in addition how the derivatives $\partial a_i/\partial x^j$ of the coefficients enter $(s_\alpha)_{*p}$ and drop out, because $\lambda$ vanishes on vertical vectors (Proposition~\ref{prop:tautological-coords}(2)). For $\alpha = df$ the matrix $(\partial a_i/\partial x^j)$ is the Hessian matrix of Proposition~\ref{prop:ddf-critical}(2).
+
+\begin{defbox}[Non-Degenerate Bilinear Form]\deflabel{def:nondegenerate-form}
+\textit{(Assignment~9, Problem~3(c), which refers to the Wikipedia definition.)} A bilinear form $B : W \times W \to \mathbb{R}$ on a finite-dimensional real vector space $W$ is \textbf{non-degenerate} if the only $X \in W$ with $B(X, Y) = 0$ for all $Y \in W$ is $X = 0$.
+\end{defbox}
+
+\begin{lembox}[Non-Degeneracy and the Matrix of a Bilinear Form]\thmlabel{lem:nondegenerate-matrix}
+\textit{(From the submitted solution of Problem~3(c), which uses the implication from right to left.)} Let $(e_1, \ldots, e_N)$ be a basis of $W$ and $J$ the matrix of $B$, $J_{ij} = B(e_i, e_j)$. Then $B$ is non-degenerate if and only if $J$ is invertible.
+\end{lembox}
+
+\begin{proof}
+\textit{(The submitted solution; the converse is filled in.)} Write $X = \sum_i X^i e_i$ and $Y = \sum_j Y^j e_j$, and let $X, Y$ also denote the column vectors of components. By bilinearity, $B(X, Y) = \sum_{i, j} X^i J_{ij} Y^j = X^{\mathsf T} J\, Y$. So $B(X, Y) = 0$ for all $Y$ means that the row vector $X^{\mathsf T} J$ is zero, that is, $J^{\mathsf T} X = 0$. Hence $B$ is non-degenerate if and only if $J^{\mathsf T}$ has trivial kernel, if and only if $J^{\mathsf T}$ is invertible, if and only if $J$ is invertible (a square matrix is invertible exactly when its transpose is).
+\end{proof}
+
+\begin{defbox}[Symplectic Form]\deflabel{def:symplectic-form}
+\textit{(Assignment~9, Problem~3(c).)} A \textbf{symplectic form} on a manifold $X$ is a two-form $\omega \in \Omega^2(X)$ such that
+\begin{enumerate}[nosep]
+\item at each $x \in X$, $\omega_x$ is a non-degenerate bilinear form on $T_xX$ (Definition~\ref{def:nondegenerate-form}), and
+\item $d\omega = 0$.
+\end{enumerate}
+A \emph{symplectic manifold} is a pair $(X, \omega)$ of a manifold and a symplectic form on it.
+\end{defbox}
+
+\begin{thmbox}[The Cotangent Bundle Is a Symplectic Manifold]\thmlabel{thm:cotangent-symplectic}
+\textit{(Assignment~9, Problem~3(c).)} Let $\omega = d\lambda \in \Omega^2(T^*M)$. In the standard coordinates on $T^*U$,
+\[
+\omega = \sum_{i=1}^m d\xi_i \wedge d\bar x^i ,
+\]
+and $\omega$ is a symplectic form on $T^*M$. In the basis $\partial/\partial \bar x^1, \ldots, \partial/\partial \bar x^m, \partial/\partial \xi_1, \ldots, \partial/\partial \xi_m$ of a tangent space of $T^*U$, the matrix of $\omega$ is $J = \begin{pmatrix} 0 & -I_m \\ I_m & 0 \end{pmatrix}$.
+\end{thmbox}
+
+\begin{proof}
+\textit{(Assignment~9, Problem~3(c), as submitted.)} \emph{$\omega$ in coordinates.} By Proposition~\ref{prop:tautological-coords}, $\lambda = \sum_i \xi_i\, d\bar x^i$ on $T^*U$, and by Corollary~\ref{cor:d-coordinates}, $d\big(\sum_i f_i\, d\bar x^i\big) = \sum_i df_i \wedge d\bar x^i$. Here $f_i = \xi_i$ is a coordinate function, so $df_i = d\xi_i$, and $\omega = d\lambda = \sum_i d\xi_i \wedge d\bar x^i$ on $T^*U$.
+
+\emph{Non-degeneracy.} Let $\mathbf{x} \in T^*M$, and choose a chart $(U, (x^i))$ of $M$ with $\pi(\mathbf{x}) \in U$, so that $\mathbf{x} \in T^*U$. By Lemma~\ref{lem:wedge-one-forms-det} with $k = 2$ (Problem~1(a)), $(d\xi_i \wedge d\bar x^i)(X, Y) = d\xi_i(X)\, d\bar x^i(Y) - d\xi_i(Y)\, d\bar x^i(X)$. Write $\partial_{\bar x^j}$ and $\partial_{\xi_j}$ for the coordinate vectors at $\mathbf{x}$. The coordinate covectors act by
+\[
+d\bar x^i(\partial_{\bar x^j}) = \delta^i_j, \qquad d\bar x^i(\partial_{\xi_j}) = 0, \qquad d\xi_i(\partial_{\bar x^j}) = 0, \qquad d\xi_i(\partial_{\xi_j}) = \delta_{ij} .
+\]
+Hence, for $j, k = 1, \ldots, m$,
+\begin{align*}
+\omega_{\mathbf{x}}(\partial_{\bar x^j}, \partial_{\bar x^k}) &= \sum_{i=1}^m \big[ d\xi_i(\partial_{\bar x^j})\, d\bar x^i(\partial_{\bar x^k}) - d\xi_i(\partial_{\bar x^k})\, d\bar x^i(\partial_{\bar x^j}) \big] = 0 , \\
+\omega_{\mathbf{x}}(\partial_{\xi_j}, \partial_{\xi_k}) &= \sum_{i=1}^m \big[ d\xi_i(\partial_{\xi_j})\, d\bar x^i(\partial_{\xi_k}) - d\xi_i(\partial_{\xi_k})\, d\bar x^i(\partial_{\xi_j}) \big] = 0 , \\
+\omega_{\mathbf{x}}(\partial_{\bar x^j}, \partial_{\xi_k}) &= \sum_{i=1}^m \big[ d\xi_i(\partial_{\bar x^j})\, d\bar x^i(\partial_{\xi_k}) - d\xi_i(\partial_{\xi_k})\, d\bar x^i(\partial_{\bar x^j}) \big] = -\sum_{i=1}^m \delta_{ik}\, \delta^i_j = -\delta_{jk} ,
+\end{align*}
+and, by antisymmetry, $\omega_{\mathbf{x}}(\partial_{\xi_j}, \partial_{\bar x^k}) = \delta_{jk}$. So the matrix of $\omega_{\mathbf{x}}$ in this basis is, in $m \times m$ blocks, $J = \begin{pmatrix} 0 & -I_m \\ I_m & 0 \end{pmatrix}$. By block multiplication $J^2 = -I_{2m}$, so $J$ is invertible, with $J^{-1} = -J$. By Lemma~\ref{lem:nondegenerate-matrix}, $\omega_{\mathbf{x}}$ is non-degenerate. Since $\mathbf{x}$ was arbitrary, this holds at every point of $T^*M$.
+
+\emph{$d\omega = 0$.} Since $\omega = d\lambda$ and $d \circ d = 0$ (Theorem~\ref{thm:exterior-derivative}(3)), $d\omega = d(d\lambda) = 0$.
+\end{proof}
+
+\begin{corbox}[The Symplectic Form Pulled Back by a One-Form]\thmlabel{cor:symplectic-pullback-section}
+\textit{(Not from the assignment; Problems~3(b) and 3(c) combined.)} For $\alpha \in \Omega^1(M)$, $s_\alpha^*\omega = d\alpha$. So $s_\alpha^*\omega = 0$ if and only if $\alpha$ is closed; in particular $s_{df}^*\omega = 0$ for every $f \in C^\infty(M)$.
+\end{corbox}
+
+\begin{proof}
+By naturality of $d$ (Theorem~\ref{thm:exterior-derivative}(4)) and Proposition~\ref{prop:tautological-pullback}, $s_\alpha^*\omega = s_\alpha^*(d\lambda) = d(s_\alpha^*\lambda) = d\alpha$. For $\alpha = df$, $d(df) = 0$.
+\end{proof}
+
+The section $s_{df}$ is the map $s_f$ of \ref{sec:morse-zero-section}, whose intersection with the zero section gives the critical points of $f$. The flows that preserve $\omega$ are the subject of the remark \emph{Hamiltonian Flows} in \ref{sec:lie-derivative-forms}.
 
 % ============================================================================
 % Lecture 32 (Wed Nov 18, 2026): de Rham cohomology
@@ -37486,6 +38017,36 @@ contracting by $\mathbf{X}_{j+1}$ inserts $\mathbf{X}_{j+1}|_p$ in the first rem
 
 \emph{The global formula for $d$.} One reason to be interested in contractions is the \emph{global formula} for $d$. For a one-form $\alpha$, $d\alpha$ is a two-form, so it can be contracted twice: putting the fields $\mathbf{X}$ and $\mathbf{Y}$ inside gives a function, and that function has a formula in terms of $\alpha$ alone.
 
+\begin{lembox}[The Right-Hand Side of the Global Formula Is Bilinear over Functions]\thmlabel{lem:global-rhs-tensorial}
+\textit{(Lecture 33 stated this as the first step of the proof of Theorem~\ref{thm:d-one-form-global}; the computation was not done on the board. Written out after Assignment~9.)} Let $\alpha \in \Omega^1(M)$, and for $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ put
+\[
+\mathcal{R}(\mathbf{X}, \mathbf{Y}) = \mathbf{X}\big(\alpha(\mathbf{Y})\big) - \mathbf{Y}\big(\alpha(\mathbf{X})\big) - \alpha\big([\mathbf{X}, \mathbf{Y}]\big) \in C^\infty(M) .
+\]
+\begin{enumerate}[nosep]
+\item $\mathcal{R}$ is additive in $\mathbf{X}$ and in $\mathbf{Y}$.
+\item $\mathcal{R}(f\mathbf{X}, g\mathbf{Y}) = fg\, \mathcal{R}(\mathbf{X}, \mathbf{Y})$ for all $f, g \in C^\infty(M)$.
+\item $[f\mathbf{X}, g\mathbf{Y}] = fg\, [\mathbf{X}, \mathbf{Y}] + f\, (\mathbf{X}g)\, \mathbf{Y} - g\, (\mathbf{Y}f)\, \mathbf{X}$.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(Written out after Assignment~9; the lecture gave the statement.)} \emph{(1)} Each term of $\mathcal{R}$ is additive in $\mathbf{X}$ and in $\mathbf{Y}$: $\alpha$ is pointwise linear, $\mathbf{X} \mapsto \mathbf{X}h$ is additive, and the bracket is bilinear.
+
+\emph{(3) and (2).} Since $\alpha$ is pointwise linear, $\alpha(g\mathbf{Y}) = g\, \alpha(\mathbf{Y})$. The Leibniz rule for the derivation $\mathbf{X}$ (Lemma~\ref{lem:vf-derivation}) gives
+\[
+f\mathbf{X}\big(g\, \alpha(\mathbf{Y})\big) = f\, (\mathbf{X}g)\, \alpha(\mathbf{Y}) + fg\, \mathbf{X}\big(\alpha(\mathbf{Y})\big), \qquad g\mathbf{Y}\big(f\, \alpha(\mathbf{X})\big) = g\, (\mathbf{Y}f)\, \alpha(\mathbf{X}) + gf\, \mathbf{Y}\big(\alpha(\mathbf{X})\big) .
+\]
+For the bracket, for every function $h$,
+\[
+[f\mathbf{X}, g\mathbf{Y}]h = f\mathbf{X}\big(g\, \mathbf{Y}h\big) - g\mathbf{Y}\big(f\, \mathbf{X}h\big) = f\, (\mathbf{X}g)\, \mathbf{Y}h + fg\, \mathbf{X}\mathbf{Y}h - g\, (\mathbf{Y}f)\, \mathbf{X}h - gf\, \mathbf{Y}\mathbf{X}h ,
+\]
+so $[f\mathbf{X}, g\mathbf{Y}] = fg\, [\mathbf{X}, \mathbf{Y}] + f\, (\mathbf{X}g)\, \mathbf{Y} - g\, (\mathbf{Y}f)\, \mathbf{X}$, and
+\[
+\alpha\big([f\mathbf{X}, g\mathbf{Y}]\big) = fg\, \alpha\big([\mathbf{X}, \mathbf{Y}]\big) + f\, (\mathbf{X}g)\, \alpha(\mathbf{Y}) - g\, (\mathbf{Y}f)\, \alpha(\mathbf{X}) .
+\]
+Subtracting, the terms $f\, (\mathbf{X}g)\, \alpha(\mathbf{Y})$ and $g\, (\mathbf{Y}f)\, \alpha(\mathbf{X})$ cancel, and $\mathcal{R}(f\mathbf{X}, g\mathbf{Y}) = fg\, \mathcal{R}(\mathbf{X}, \mathbf{Y})$.
+\end{proof}
+
 \begin{thmbox}[Global Formula for $d$ on One-Forms]\thmlabel{thm:d-one-form-global}
 Let $\alpha \in \Omega^1(M)$ and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$. Then
 \[
@@ -37494,20 +38055,217 @@ d\alpha(\mathbf{X}, \mathbf{Y}) = \mathbf{X}\big(\alpha(\mathbf{Y})\big) - \math
 \leeref{Proposition 14.29}
 \end{thmbox}
 
-\begin{proof}[Proof (to be filled after the homework)]
-\textit{(Lecture 33 gave the following plan, without the computations.)} Denote the right-hand side by $\mathcal{R}(\mathbf{X}, \mathbf{Y})$; $\alpha$ is fixed and does not enter the notation.
+\begin{proof}
+\textit{(Lecture 33 gave the following plan, without the computations; they are written out below, after Assignment~9.)} Denote the right-hand side by $\mathcal{R}(\mathbf{X}, \mathbf{Y})$; $\alpha$ is fixed and does not enter the notation.
 \begin{enumerate}[nosep]
 \item \emph{First,} show that $\mathcal{R}(f\mathbf{X}, g\mathbf{Y}) = fg\, \mathcal{R}(\mathbf{X}, \mathbf{Y})$ for all $f, g \in C^\infty(M)$. If the theorem is to be true, this must hold: $d\alpha$ is a form, pointwise linear, so the $f$ and the $g$ come out of the left-hand side. It is a computation with the Leibniz rule, in which all the derivatives of $f$ and $g$ cancel.
 \item \emph{Second,} check the identity for $\mathbf{X} = \partial/\partial x^a$ and $\mathbf{Y} = \partial/\partial x^b$ in a coordinate system $(x^1, \ldots, x^m)$. These fields commute, so the bracket term goes away.
 \end{enumerate}
 These two imply the general case, because in coordinates any $\mathbf{X}$ and $\mathbf{Y}$ are linear combinations of the coordinate fields with smooth coefficients, and the right-hand side is linear over $C^\infty$.
 
-The two computations were not done on the board. The formula for $k$-forms is the reading of the last problem of the current homework, so they are written out here after it is handed in.
+\emph{The first step} is Lemma~\ref{lem:global-rhs-tensorial}(2). The left-hand side has the same property, pointwise: $d\alpha(f\mathbf{X}, g\mathbf{Y})(p) = f(p)\, g(p)\, (d\alpha)_p(\mathbf{X}_p, \mathbf{Y}_p)$. Both sides are additive in $\mathbf{X}$ and in $\mathbf{Y}$ (Lemma~\ref{lem:global-rhs-tensorial}(1)).
+
+\emph{The second step.} Let $(U, (x^1, \ldots, x^m))$ be a chart, $\partial_a = \partial/\partial x^a$, and $\alpha = \sum_j \alpha_j\, dx^j$ on $U$. The coordinate fields commute, $[\partial_a, \partial_b] = 0$ (Proposition~\ref{prop:bracket-coords}, with constant components), and $\alpha(\partial_b) = \alpha_b$, so $\mathcal{R}(\partial_a, \partial_b) = \partial_a \alpha_b - \partial_b \alpha_a$. On the other side, $d\alpha = \sum_{i, j} \partial_i \alpha_j\; dx^i \wedge dx^j$ (Corollary~\ref{cor:d-coordinates}), and $(dx^i \wedge dx^j)(\partial_a, \partial_b) = \delta^i_a \delta^j_b - \delta^i_b \delta^j_a$ (Lemma~\ref{lem:wedge-one-forms-det}), so
+\[
+d\alpha(\partial_a, \partial_b) = \partial_a \alpha_b - \partial_b \alpha_a = \mathcal{R}(\partial_a, \partial_b) .
+\]
+
+\emph{Conclusion.} Both sides at a point $p$ depend only on $\alpha$, $\mathbf{X}$ and $\mathbf{Y}$ near $p$: the left side is pointwise, and on the right, $(\mathbf{X}h)(p) = \mathbf{X}_p[h]$ depends only on the germ of $h$, while the bracket commutes with restriction to open sets (Corollary~\ref{cor:restriction-bracket}). So both sides may be computed on a chart domain $U \ni p$, with $\alpha|_U$, $\mathbf{X}|_U$, $\mathbf{Y}|_U$, and the two steps hold on the manifold $U$. There $\mathbf{X} = \sum_a \mathbf{X}^a \partial_a$ and $\mathbf{Y} = \sum_b \mathbf{Y}^b \partial_b$ with smooth coefficients, and by Lemma~\ref{lem:global-rhs-tensorial}(1) and (2),
+\[
+\mathcal{R}(\mathbf{X}, \mathbf{Y}) = \sum_{a, b} \mathbf{X}^a \mathbf{Y}^b\, \mathcal{R}(\partial_a, \partial_b) = \sum_{a, b} \mathbf{X}^a \mathbf{Y}^b\, d\alpha(\partial_a, \partial_b) = d\alpha(\mathbf{X}, \mathbf{Y}) \quad \text{on } U . \qedhere
+\]
 \end{proof}
 
-\emph{Reading the formula.} There are three terms, each a function. First, contract $\alpha$ with $\mathbf{Y}$, which gives the function $\alpha(\mathbf{Y})$, and apply $\mathbf{X}$ to it as an operator. Second, the same in the other order: contract with $\mathbf{X}$, then apply $\mathbf{Y}$. Third, the two fields have a commutator, the Lie bracket $[\mathbf{X}, \mathbf{Y}]$ (Definition~\ref{def:lie-bracket}), another field, and $\alpha$ can be contracted with it. The gain: there is no $d$ on the right-hand side, only $\alpha$ by itself. The price: $\mathbf{X}$ and $\mathbf{Y}$ must be fields, and the right-hand side is not a pointwise calculation, since it differentiates. For $k$-forms there is a formula of the same kind, with many more ways of contracting on the right (Lee, Proposition~14.32); it was assigned as reading, and is not written here.
+\begin{exbox}[A Check of the Global Formula]\exlabel{ex:global-formula-check}
+\textit{(Not from lecture.)} For $\alpha = u\, dv$ with functions $u, v \in C^\infty(M)$, $d\alpha = du \wedge dv$, so by Lemma~\ref{lem:wedge-one-forms-det}
+\[
+d\alpha(\mathbf{X}, \mathbf{Y}) = (\mathbf{X}u)(\mathbf{Y}v) - (\mathbf{Y}u)(\mathbf{X}v) .
+\]
+The right-hand side of Theorem~\ref{thm:d-one-form-global} is $\mathbf{X}(u\, \mathbf{Y}v) - \mathbf{Y}(u\, \mathbf{X}v) - u\, [\mathbf{X}, \mathbf{Y}]v$. By the Leibniz rule this is $(\mathbf{X}u)(\mathbf{Y}v) + u\, \mathbf{X}\mathbf{Y}v - (\mathbf{Y}u)(\mathbf{X}v) - u\, \mathbf{Y}\mathbf{X}v - u\, (\mathbf{X}\mathbf{Y}v - \mathbf{Y}\mathbf{X}v)$, and the terms with $u$ undifferentiated cancel: the two sides agree. Every one-form is locally a sum of forms $u\, dv$, and Lee proves the theorem from this case.
+\end{exbox}
+
+\emph{Reading the formula.} There are three terms, each a function. First, contract $\alpha$ with $\mathbf{Y}$, which gives the function $\alpha(\mathbf{Y})$, and apply $\mathbf{X}$ to it as an operator. Second, the same in the other order: contract with $\mathbf{X}$, then apply $\mathbf{Y}$. Third, the two fields have a commutator, the Lie bracket $[\mathbf{X}, \mathbf{Y}]$ (Definition~\ref{def:lie-bracket}), another field, and $\alpha$ can be contracted with it. The gain: there is no $d$ on the right-hand side, only $\alpha$ by itself. The price: $\mathbf{X}$ and $\mathbf{Y}$ must be fields, and the right-hand side is not a pointwise calculation, since it differentiates. For $k$-forms there is a formula of the same kind, with many more ways of contracting on the right (Lee, Proposition~14.32); it was assigned as reading, and is stated as Theorem~\ref{thm:global-d-k} below.
 
 \emph{Convention.} The formula depends on the determinant convention for the wedge product (the remark \emph{Two Conventions for the Wedge Product} in \ref{sec:wedge-product}), which is also Lee's; with the Alt convention a factor $\frac12$ appears on the left.
+
+\subsection{The Global Formula for $k$-Forms}\label{sub:global-d-k}
+
+\begin{thmbox}[Global Formula for $d$ on $k$-Forms]\thmlabel{thm:global-d-k}
+\textit{(Assigned as reading in Lecture 33, and the hint of Assignment~9, Problem~4(c).)} Let $\omega \in \Omega^k(M)$ and $\mathbf{X}_0, \ldots, \mathbf{X}_k \in \mathfrak{X}(M)$. Then
+\begin{align*}
+d\omega(\mathbf{X}_0, \ldots, \mathbf{X}_k) ={}& \sum_{i=0}^{k} (-1)^{i}\; \mathbf{X}_i\Big( \omega\big(\mathbf{X}_0, \ldots, \widehat{\mathbf{X}_i}, \ldots, \mathbf{X}_k\big) \Big) \\
+&+ \sum_{0 \le i < j \le k} (-1)^{i+j}\; \omega\big( [\mathbf{X}_i, \mathbf{X}_j], \mathbf{X}_0, \ldots, \widehat{\mathbf{X}_i}, \ldots, \widehat{\mathbf{X}_j}, \ldots, \mathbf{X}_k \big) ,
+\end{align*}
+where the hats mean that the fields are left out.
+\leeref{Proposition 14.32}
+\end{thmbox}
+
+\begin{proof}[Proof (not given in this course)]
+The formula was assigned as reading (Lee, Proposition~14.32). Lee numbers the fields $\mathbf{X}_1, \ldots, \mathbf{X}_{k+1}$ and has the sign $(-1)^{i-1}$ in the first sum; numbering from $0$ turns it into $(-1)^i$ and leaves $(-1)^{i+j}$ unchanged, since $i + j$ changes by $2$. For $k = 1$ the formula is Theorem~\ref{thm:d-one-form-global}: $d\alpha(\mathbf{X}_0, \mathbf{X}_1) = \mathbf{X}_0\big(\alpha(\mathbf{X}_1)\big) - \mathbf{X}_1\big(\alpha(\mathbf{X}_0)\big) - \alpha\big([\mathbf{X}_0, \mathbf{X}_1]\big)$.
+\end{proof}
+
+\subsection{Assignment 9, Problem 4: Left-Invariant Forms}\label{sub:hw9-p4}
+
+\textit{From Assignment~9, Problem~4 (submitted). On a Lie group, the forms that are invariant under all left translations are determined by their value at the identity, the exterior derivative preserves them, and on them $d$ becomes an algebraic operator built from the Lie bracket. The steps of the submitted solution that are general statements are stated as lemmas.}
+
+Throughout, $G$ is a Lie group with identity $e$, $L_g$ is left translation by $g$ (Definition~\ref{def:left-translation-lie}), $\mathfrak{g} = T_eG$ with the bracket of Definition~\ref{def:bracket-TeG}, and for $v \in \mathfrak{g}$, $\mathbf{X}^v$ is the left-invariant extension, $\mathbf{X}^v_g = d(L_g)_e v$ (Definition~\ref{def:left-invariant-extension}). So $\Lambda^k\mathfrak{g}^* = \Lambda^k T_e^*G$ is the space of alternating $k$-linear maps on $T_eG$.
+
+\begin{defbox}[Left-Invariant Form]\deflabel{def:left-invariant-form}
+\textit{(Assignment~9, Problem~4.)} A $k$-form $\omega$ on $G$ is \textbf{left-invariant} if $L_g^*\omega = \omega$ for all $g \in G$. The set of all smooth left-invariant $k$-forms is denoted $\Omega^k_G$; it is a linear subspace of $\Omega^k(G)$, because each $L_g^*$ is linear (Proposition~\ref{prop:pullback-k-form-properties}(1)).
+\end{defbox}
+
+The definition makes sense for $k$-forms that are not assumed smooth (Definition~\ref{def:k-form-manifold}), since the pullback is defined pointwise (Definition~\ref{def:pullback-k-form}); this is used for the forms $\omega^\eta$ below before they are known to be smooth.
+
+\begin{lembox}[Left-Invariance at a Point]\thmlabel{lem:left-invariant-form-pointwise}
+\textit{(From the submitted solution of Problem~4(a).)} Let $\omega$ be a $k$-form on $G$, not assumed smooth.
+\begin{enumerate}[nosep]
+\item $\omega$ is left-invariant if and only if, for all $g, h \in G$ and $v^1, \ldots, v^k \in T_hG$,
+\[
+\omega_{gh}\big( d(L_g)_h v^1, \ldots, d(L_g)_h v^k \big) = \omega_h(v^1, \ldots, v^k) .
+\]
+\item For every $g \in G$, $d(L_g)_e : T_eG \to T_gG$ is a linear isomorphism, with inverse $d(L_{g^{-1}})_g$.
+\item If $\omega$ is left-invariant, then for all $g \in G$ and $w^1, \ldots, w^k \in T_gG$,
+\[
+\omega_g(w^1, \ldots, w^k) = \omega_e\big( d(L_{g^{-1}})_g w^1, \ldots, d(L_{g^{-1}})_g w^k \big) ,
+\]
+that is, $\omega_g = \big(d(L_{g^{-1}})_g\big)^*\omega_e$. So a left-invariant form is determined by its value at $e$.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(The submitted solution.)} \emph{(1)} $L_g(h) = gh$, so $d(L_g)_h : T_hG \to T_{gh}G$, and by Definition~\ref{def:pullback-k-form} the left-hand side of the displayed equation is $(L_g^*\omega)_h(v^1, \ldots, v^k)$. So the equation for all $h$ and all vectors is $L_g^*\omega = \omega$.
+
+\emph{(2)} Since $L_{g^{-1}} \circ L_g = \mathrm{id}_G$ and $L_g \circ L_{g^{-1}} = \mathrm{id}_G$, with $L_g(e) = g$ and $L_{g^{-1}}(g) = e$, the chain rule (Theorem~\ref{prop:pushforward-functorial}) gives
+\[
+d(L_{g^{-1}})_g \circ d(L_g)_e = \mathrm{id}_{T_eG}, \qquad d(L_g)_e \circ d(L_{g^{-1}})_g = \mathrm{id}_{T_gG} .
+\]
+\emph{(3)} Put $v^i = d(L_{g^{-1}})_g w^i \in T_eG$, so that $w^i = d(L_g)_e v^i$ by (2). By (1) with $h = e$, $\omega_g(w^1, \ldots, w^k) = \omega_g\big(d(L_g)_e v^1, \ldots, d(L_g)_e v^k\big) = \omega_e(v^1, \ldots, v^k)$.
+\end{proof}
+
+\begin{lembox}[A Left-Invariant Form on Left-Invariant Fields Is Constant]\thmlabel{lem:left-invariant-form-constant}
+\textit{(From the submitted solution of Problem~4(c), where it makes the first sum of the global formula vanish.)} Let $\omega$ be a left-invariant $k$-form on $G$, not assumed smooth, and $v_1, \ldots, v_k \in \mathfrak{g}$. Then the function $g \mapsto \omega_g\big(\mathbf{X}^{v_1}_g, \ldots, \mathbf{X}^{v_k}_g\big)$ on $G$ is constant, equal to $\omega_e(v_1, \ldots, v_k)$.
+\end{lembox}
+
+\begin{proof}
+\textit{(The submitted solution.)} By Lemma~\ref{lem:left-invariant-form-pointwise}(3) and $\mathbf{X}^{v_l}_g = d(L_g)_e v_l$,
+\[
+\omega_g\big(\mathbf{X}^{v_1}_g, \ldots, \mathbf{X}^{v_k}_g\big) = \omega_e\big( d(L_{g^{-1}})_g\, d(L_g)_e v_1, \ldots, d(L_{g^{-1}})_g\, d(L_g)_e v_k \big) = \omega_e(v_1, \ldots, v_k) ,
+\]
+since $d(L_{g^{-1}})_g \circ d(L_g)_e = \mathrm{id}_{T_eG}$ (Lemma~\ref{lem:left-invariant-form-pointwise}(2)). The value does not depend on $g$.
+\end{proof}
+
+\begin{propbox}[Left-Invariant Forms and Forms on the Lie Algebra]\thmlabel{prop:left-invariant-forms-iso}
+\textit{(Assignment~9, Problem~4(a). The assignment does not ask for the smoothness of $\omega^\eta$; it is filled in.)} The map
+\[
+\Phi : \Omega^k_G \longrightarrow \Lambda^k\mathfrak{g}^*, \qquad \Phi(\omega) = \omega_e ,
+\]
+is an isomorphism of vector spaces. Its inverse is $\Psi(\eta) = \omega^\eta$, where for $g \in G$ and $w^1, \ldots, w^k \in T_gG$
+\[
+\omega^\eta_g(w^1, \ldots, w^k) = \eta\big( d(L_{g^{-1}})_g w^1, \ldots, d(L_{g^{-1}})_g w^k \big) .
+\]
+In particular $\dim \Omega^k_G = \binom{n}{k}$ for $n = \dim G$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~9, Problem~4(a), as submitted; the smoothness of $\omega^\eta$ is filled in at the end.)} \emph{$\Phi$ is linear and injective.} $(a\omega + b\omega')_e = a\,\omega_e + b\,\omega'_e$. If $\omega_e = 0$, then $\omega_g = 0$ for every $g$ by Lemma~\ref{lem:left-invariant-form-pointwise}(3), so $\omega = 0$.
+
+\emph{The map back.} For $\eta \in \Lambda^k\mathfrak{g}^*$, the formula for $\omega^\eta_g$ reads Lemma~\ref{lem:left-invariant-form-pointwise}(3) as a definition. Since $\eta$ is alternating and $k$-linear and $d(L_{g^{-1}})_g$ is linear, $\omega^\eta_g \in \Lambda^k T_g^*G$: $\omega^\eta$ is a $k$-form on $G$. It depends linearly on $\eta$.
+
+\emph{$\omega^\eta$ is left-invariant.} Let $g, h \in G$ and $v^1, \ldots, v^k \in T_hG$. Since $L_{(gh)^{-1}} \circ L_g = L_{h^{-1}g^{-1}g} = L_{h^{-1}}$ and $L_g(h) = gh$, the chain rule gives $d(L_{(gh)^{-1}})_{gh} \circ d(L_g)_h = d(L_{h^{-1}})_h$. Hence
+\begin{align*}
+\omega^\eta_{gh}\big( d(L_g)_h v^1, \ldots, d(L_g)_h v^k \big) &= \eta\big( d(L_{(gh)^{-1}})_{gh}\, d(L_g)_h v^1, \ldots, d(L_{(gh)^{-1}})_{gh}\, d(L_g)_h v^k \big) \\
+&= \eta\big( d(L_{h^{-1}})_h v^1, \ldots, d(L_{h^{-1}})_h v^k \big) = \omega^\eta_h(v^1, \ldots, v^k) ,
+\end{align*}
+which is left-invariance by Lemma~\ref{lem:left-invariant-form-pointwise}(1).
+
+\emph{$\Phi \circ \Psi = \mathrm{id}$.} Since $L_{e^{-1}} = L_e = \mathrm{id}_G$, $d(L_{e^{-1}})_e = \mathrm{id}_{T_eG}$, so $\omega^\eta_e = \eta$. \emph{$\Psi \circ \Phi = \mathrm{id}$.} For $\omega \in \Omega^k_G$, the definition of $\omega^{\omega_e}$ and Lemma~\ref{lem:left-invariant-form-pointwise}(3) give $\omega^{\omega_e}_g = \omega_g$ for every $g$.
+
+\emph{$\omega^\eta$ is smooth} \textit{(not from the assignment; filled in)}. Let $(e_1, \ldots, e_n)$ be a basis of $\mathfrak{g}$ and $\mathbf{X}_i = \mathbf{X}^{e_i}$, smooth vector fields on $G$ (Proposition~\ref{prop:left-invariant-extension-smooth}); at each $g$ the vectors $\mathbf{X}_i|_g = d(L_g)_e e_i$ form a basis of $T_gG$ (Lemma~\ref{lem:left-invariant-form-pointwise}(2)). Let $(U, (x^j))$ be a chart of $G$. On $U$, $\mathbf{X}_i = \sum_j a^j_i\, \partial/\partial x^j$ with smooth $a^j_i$ (Proposition~\ref{prop:vf-coords}), and the matrix $a = (a^j_i)$ is invertible at each point. Its inverse $b = a^{-1}$ has smooth entries, by the cofactor formula: each entry is a polynomial in the $a^j_i$ divided by $\det a \neq 0$. So $\partial/\partial x^j = \sum_i b^i_j\, \mathbf{X}_i$ on $U$, and by multilinearity the component functions of $\omega^\eta$ in the chart (Definition~\ref{def:k-form-components}) are
+\[
+\omega^\eta\Big( \frac{\partial}{\partial x^{a_1}}, \ldots, \frac{\partial}{\partial x^{a_k}} \Big) = \sum_{i_1, \ldots, i_k} b^{i_1}_{a_1} \cdots b^{i_k}_{a_k}\; \omega^\eta\big( \mathbf{X}_{i_1}, \ldots, \mathbf{X}_{i_k} \big) = \sum_{i_1, \ldots, i_k} b^{i_1}_{a_1} \cdots b^{i_k}_{a_k}\; \eta(e_{i_1}, \ldots, e_{i_k}) ,
+\]
+by Lemma~\ref{lem:left-invariant-form-constant}. These are smooth, so $\omega^\eta \in \Omega^k(G)$ (Definition~\ref{def:smooth-k-form}), and $\omega^\eta \in \Omega^k_G$.
+
+\emph{The dimension.} $\dim \Lambda^k\mathfrak{g}^* = \binom{n}{k}$ (Proposition~\ref{prop:dim-k-forms}).
+\end{proof}
+
+\begin{propbox}[The Exterior Derivative Preserves Left-Invariant Forms]\thmlabel{prop:d-left-invariant}
+\textit{(Assignment~9, Problem~4(b).)} $d$ maps $\Omega^k_G$ into $\Omega^{k+1}_G$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~9, Problem~4(b), as submitted.)} Let $\omega \in \Omega^k_G$. For every $g \in G$, $L_g^*(d\omega) = d(L_g^*\omega) = d\omega$: the first equality is the naturality of $d$ (Theorem~\ref{thm:exterior-derivative}(4)) for the smooth map $L_g : G \to G$, and the second is $L_g^*\omega = \omega$.
+\end{proof}
+
+\begin{thmbox}[The Exterior Derivative on the Lie Algebra]\thmlabel{thm:chevalley-eilenberg}
+\textit{(Assignment~9, Problem~4(c).)} Under the isomorphisms $\Phi$ of Proposition~\ref{prop:left-invariant-forms-iso}, $d : \Omega^k_G \to \Omega^{k+1}_G$ corresponds to the operator
+\[
+D = \Phi \circ d \circ \Psi : \Lambda^k\mathfrak{g}^* \longrightarrow \Lambda^{k+1}\mathfrak{g}^*, \qquad D\eta = \big(d\omega^\eta\big)_e ,
+\]
+and for $v_0, \ldots, v_k \in \mathfrak{g}$
+\[
+(D\eta)(v_0, \ldots, v_k) = \sum_{0 \le i < j \le k} (-1)^{i+j}\; \eta\big( [v_i, v_j], v_0, \ldots, \widehat{v_i}, \ldots, \widehat{v_j}, \ldots, v_k \big) .
+\]
+\end{thmbox}
+
+\begin{proof}
+\textit{(Assignment~9, Problem~4(c), as submitted.)} By Proposition~\ref{prop:d-left-invariant}, $d\omega^\eta \in \Omega^{k+1}_G$, so $D$ is well defined and $d\omega^\eta = \Psi(D\eta)$. Let $v_0, \ldots, v_k \in \mathfrak{g}$ and $\mathbf{X}_i = \mathbf{X}^{v_i}$, so that $\mathbf{X}_i|_e = v_i$. Since the value of a form at $e$ depends only on the vectors at $e$,
+\[
+(D\eta)(v_0, \ldots, v_k) = (d\omega^\eta)_e(v_0, \ldots, v_k) = \big( d\omega^\eta(\mathbf{X}_0, \ldots, \mathbf{X}_k) \big)(e) .
+\]
+\emph{The global formula.} By Theorem~\ref{thm:global-d-k},
+\begin{align*}
+d\omega^\eta(\mathbf{X}_0, \ldots, \mathbf{X}_k) ={}& \sum_{i=0}^{k} (-1)^{i}\; \mathbf{X}_i\Big( \omega^\eta\big(\mathbf{X}_0, \ldots, \widehat{\mathbf{X}_i}, \ldots, \mathbf{X}_k\big) \Big) \\
+&+ \sum_{0 \le i < j \le k} (-1)^{i+j}\; \omega^\eta\big( [\mathbf{X}_i, \mathbf{X}_j], \mathbf{X}_0, \ldots, \widehat{\mathbf{X}_i}, \ldots, \widehat{\mathbf{X}_j}, \ldots, \mathbf{X}_k \big) .
+\end{align*}
+\emph{The first sum vanishes.} By Lemma~\ref{lem:left-invariant-form-constant}, for each $i$ the function
+\[
+\omega^\eta\big(\mathbf{X}_0, \ldots, \widehat{\mathbf{X}_i}, \ldots, \mathbf{X}_k\big) = \eta(v_0, \ldots, \widehat{v_i}, \ldots, v_k)
+\]
+is constant on $G$, and a vector field applied to a constant function gives $0$.
+
+\emph{The second sum at $e$.} Using $\omega^\eta_e = \eta$, $\mathbf{X}_l|_e = v_l$ and $[\mathbf{X}_i, \mathbf{X}_j]_e = [v_i, v_j]$ (Definition~\ref{def:bracket-TeG}),
+\[
+\omega^\eta\big( [\mathbf{X}_i, \mathbf{X}_j], \mathbf{X}_0, \ldots, \widehat{\mathbf{X}_i}, \ldots, \widehat{\mathbf{X}_j}, \ldots, \mathbf{X}_k \big)(e) = \eta\big( [v_i, v_j], v_0, \ldots, \widehat{v_i}, \ldots, \widehat{v_j}, \ldots, v_k \big) .
+\]
+Adding these terms with their signs gives the formula.
+\end{proof}
+
+\begin{corbox}[The Operator $D$ in Low Degrees]\thmlabel{cor:chevalley-eilenberg-low}
+\textit{(Not from the assignment; the formula of Theorem~\ref{thm:chevalley-eilenberg} read off for small $k$, and what $d \circ d = 0$ gives.)}
+\begin{enumerate}[nosep]
+\item For $k = 0$: $D = 0$ on $\Lambda^0\mathfrak{g}^* = \mathbb{R}$. The left-invariant functions are the constants.
+\item For $k = 1$: $(D\eta)(v, w) = -\eta([v, w])$ for $\eta \in \mathfrak{g}^*$. Equivalently, for a left-invariant one-form $\theta$ and left-invariant fields $\mathbf{X}, \mathbf{Y}$: $d\theta(\mathbf{X}, \mathbf{Y}) = -\theta([\mathbf{X}, \mathbf{Y}])$.
+\item $D \circ D = 0$.
+\item For $\eta \in \mathfrak{g}^*$: $\big(D(D\eta)\big)(u, v, w) = \eta\big( [[u, v], w] + [[v, w], u] + [[w, u], v] \big)$. So on $\mathfrak{g}^*$ the identity $D \circ D = 0$ is the Jacobi identity.
+\end{enumerate}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from the assignment; filled in.)} \emph{(1)} For $k = 0$ the sum over $i < j$ in $\{0\}$ is empty. A left-invariant function $f$ satisfies $f \circ L_g = f$, so $f(g) = f(L_g(e)) = f(e)$. \emph{(2)} For $k = 1$ the only pair is $(i, j) = (0, 1)$, with sign $(-1)^{0+1} = -1$: $(D\eta)(v_0, v_1) = -\eta([v_0, v_1])$. For $\theta = \omega^\eta$, $\mathbf{X} = \mathbf{X}^v$ and $\mathbf{Y} = \mathbf{X}^w$, both sides of the second formula are constant functions, by Lemma~\ref{lem:left-invariant-form-constant}: $d\theta$ is left-invariant (Proposition~\ref{prop:d-left-invariant}), and $[\mathbf{X}, \mathbf{Y}]$ is a left-invariant field (Corollary~\ref{cor:lie-subalgebra}). Their values at $e$ are $(D\eta)(v, w)$ and $-\eta([v, w])$. \emph{(3)} $D \circ D = \Phi \circ d \circ \Psi \circ \Phi \circ d \circ \Psi = \Phi \circ d \circ d \circ \Psi = 0$, by $\Psi \circ \Phi = \mathrm{id}$ and $d \circ d = 0$ (Theorem~\ref{thm:exterior-derivative}(3)). \emph{(4)} By the formula for $k = 2$ and then (2),
+\begin{align*}
+\big(D(D\eta)\big)(v_0, v_1, v_2) &= -(D\eta)([v_0, v_1], v_2) + (D\eta)([v_0, v_2], v_1) - (D\eta)([v_1, v_2], v_0) \\
+&= \eta\big([[v_0, v_1], v_2]\big) - \eta\big([[v_0, v_2], v_1]\big) + \eta\big([[v_1, v_2], v_0]\big) ,
+\end{align*}
+and $-[[v_0, v_2], v_1] = [[v_2, v_0], v_1]$. By (3) the left side is $0$ for every $\eta$, which says that the sum of the three double brackets is $0$: the Jacobi identity of $\mathfrak{g}$ (Corollary~\ref{cor:lie-subalgebra}).
+\end{proof}
+
+\begin{defbox}[Lie Algebra Cohomology]\deflabel{def:lie-algebra-cohomology}
+\textit{(The remark of Assignment~9, Problem~4(c).)} The formula of Theorem~\ref{thm:chevalley-eilenberg} uses only the bracket, so it defines operators $D : \Lambda^k\mathfrak{g}^* \to \Lambda^{k+1}\mathfrak{g}^*$ for any finite-dimensional Lie algebra $\mathfrak{g}$. The \textbf{cohomology of the Lie algebra} $\mathfrak{g}$ is
+\[
+H^k(\mathfrak{g}) = \frac{\ker\big( D : \Lambda^k\mathfrak{g}^* \to \Lambda^{k+1}\mathfrak{g}^* \big)}{\operatorname{im}\big( D : \Lambda^{k-1}\mathfrak{g}^* \to \Lambda^k\mathfrak{g}^* \big)} .
+\]
+\end{defbox}
+
+For the Lie algebra of a Lie group, $D \circ D = 0$ by Corollary~\ref{cor:chevalley-eilenberg-low}(3), so the image is contained in the kernel, as for de Rham cohomology (Lemma~\ref{lem:exact-closed}); for an abstract Lie algebra $D \circ D = 0$ follows from the Jacobi identity, a computation not done here. $H^k(\mathfrak{g})$ is the cohomology of the complex of left-invariant forms on $G$, a subcomplex of the de Rham complex of $G$.
+
+\begin{exbox}[Lie Algebra Cohomology in the Simplest Cases]\exlabel{ex:lie-algebra-cohomology-simple}
+\textit{(Not from the assignment.)}
+\begin{enumerate}[nosep]
+\item If $\mathfrak{g}$ is abelian, all brackets vanish, so $D = 0$ and $H^k(\mathfrak{g}) = \Lambda^k\mathfrak{g}^*$, of dimension $\binom{n}{k}$. On the group $\mathbb{R}^n$ the left-invariant forms are the forms $\sum_A c_A\, dx^A$ with constant coefficients, and they are all closed.
+\item For any $\mathfrak{g}$, $H^0(\mathfrak{g}) = \mathbb{R}$, and $H^1(\mathfrak{g}) = \{\eta \in \mathfrak{g}^* : \eta([v, w]) = 0 \text{ for all } v, w\}$, the linear functions that vanish on all brackets: by Corollary~\ref{cor:chevalley-eilenberg-low}, $D$ is zero in degree $0$, so nothing is divided out in degree $1$, and $D\eta = 0$ means $\eta([v, w]) = 0$.
+\end{enumerate}
+\end{exbox}
 
 \section{Lie Derivatives of Forms}\label{sec:lie-derivative-forms}
 
@@ -37840,7 +38598,7 @@ Since $\mathrm{dvol}_p \ne 0$ at every $p$, $\varphi_t^*\,\mathrm{dvol} = \mathr
 \end{proof}
 
 \begin{rembox}[Hamiltonian Flows]\label{rem:hamiltonian-flows}
-\textit{(Lecture 34.)} In classical mechanics, the flow of a Hamiltonian vector field preserves the symplectic form, for the same reason: the Lie derivative of the symplectic form along the field is zero, and Corollary~\ref{cor:lie-zero-invariant} applies. Symplectic forms are not developed in these notes; the one on a cotangent bundle is mentioned in \ref{sec:cotangent-bundle}. These are preliminary results; Cartan's formula comes next.
+\textit{(Lecture 34.)} In classical mechanics, the flow of a Hamiltonian vector field preserves the symplectic form, for the same reason: the Lie derivative of the symplectic form along the field is zero, and Corollary~\ref{cor:lie-zero-invariant} applies. The symplectic form of a cotangent bundle is Theorem~\ref{thm:cotangent-symplectic} (Assignment~9). These are preliminary results; Cartan's formula comes next.
 \end{rembox}
 
 \section{Cartan's Magic Formula}\label{sec:cartan}
@@ -38076,7 +38834,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:exterior-derivative}\ The exterior derivative & Chapter 14, \emph{The Exterior Derivative} (Proposition 14.23, Theorem 14.24, Proposition 14.26, Example 14.27); Chapter 12, Proposition 12.25 (pullbacks compose) \\
 \ref{sec:de-rham}\ De Rham cohomology & Chapter 17, \emph{The de Rham Cohomology Groups} (Proposition 17.2, Corollary 17.4, Propositions 17.5 and 17.6) \\
 \ref{sec:h1-circle}\ The first cohomology of the circle & Chapter 11, Example 11.36; Chapter 17, Example 17.1, Theorem 17.21 ($n = 1$), Theorem 17.31 (stated) \\
-\ref{sec:contraction}\ Contraction by vector fields & Chapter 14, \emph{Interior Multiplication} (Lemma 14.13), Proposition 14.29; Proposition 14.32 (the formula for $k$-forms, assigned as reading) \\
+\ref{sec:contraction}\ Contraction by vector fields & Chapter 14, \emph{Interior Multiplication} (Lemma 14.13), Proposition 14.29; Proposition 14.32 (the formula for $k$-forms, assigned as reading, stated) \\
 \ref{sec:lie-derivative-forms}\ Lie derivatives of forms & Chapter 12, \emph{Lie Derivatives of Tensor Fields} ((12.8), Lemma 12.30, Propositions 12.32 and 12.36, Theorem 12.37); Chapter 14, Proposition 14.33 \\
 \ref{sec:cartan}\ Cartan's magic formula & Chapter 14, \emph{Lie Derivatives of Differential Forms} (Lemma 14.13(b), Theorem 14.35, Corollary 14.36); Chapter 17, \emph{Homotopy Invariance} \\
 \bottomrule
@@ -38272,6 +39030,7 @@ Theorem 14.24 & Def.~\ref{def:d-properties}, Thm.~\ref{thm:exterior-derivative},
 Proposition 14.26 & Def.~\ref{def:d-properties}, Thm.~\ref{thm:exterior-derivative} \\
 Example 14.27 & Ex.~\ref{ex:d-r3} \\
 Proposition 14.29 & Thm.~\ref{thm:d-one-form-global} \\
+Proposition 14.32 & Thm.~\ref{thm:global-d-k} \\
 Proposition 14.33 & Thm.~\ref{thm:lie-derivative-form-properties} \\
 Theorem 14.35 & Thm.~\ref{thm:cartan} \\
 Corollary 14.36 & Thm.~\ref{thm:lie-derivative-form-properties}, Cor.~\ref{cor:lie-linear-in-X} \\

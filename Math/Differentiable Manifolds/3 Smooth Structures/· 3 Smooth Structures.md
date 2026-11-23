@@ -10,7 +10,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (74), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (23), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (4), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (108), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (135), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (65), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (41), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (44), [[· 9 Sard's Theorem|9 Sard's Theorem]] (4), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (2), [[· 11 Differential Forms|11 Differential Forms]] (15)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (4), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (108), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (135), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (65), [[· 7 One-Forms and Morse Functions|7 One-Forms and Morse Functions]] (41), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (44), [[· 9 Sard's Theorem|9 Sard's Theorem]] (4), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (2), [[· 11 Differential Forms|11 Differential Forms]] (16)
 **Builds on (other subjects):** [[Linear Algebra]] (10), [[Topology]] (17), [[Multivariable Analysis]] (12)
 
 ## Sections
@@ -31,7 +31,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]: 440 later results
-- [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|Lemma §22.1: Independence of Coordinates]]: 421 later results
-- [[§17 Differentiable Structures#^prop-17-3|Proposition §17.3: Compatibility Is Not an Equivalence Relation]]: 420 later results
-- [[Unique Maximal Atlas|Theorem §17.6: Every Atlas Lies in a Unique Maximal Atlas]]: 420 later results
+- [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]: 456 later results
+- [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|Lemma §22.1: Independence of Coordinates]]: 436 later results
+- [[§17 Differentiable Structures#^prop-17-3|Proposition §17.3: Compatibility Is Not an Equivalence Relation]]: 435 later results
+- [[Unique Maximal Atlas|Theorem §17.6: Every Atlas Lies in a Unique Maximal Atlas]]: 435 later results

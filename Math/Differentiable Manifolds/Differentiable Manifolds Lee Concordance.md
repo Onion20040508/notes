@@ -103,7 +103,7 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§81 The Exterior Derivative\|§81]] The exterior derivative | Chapter 14, *The Exterior Derivative* (Proposition 14.23, Theorem 14.24, Proposition 14.26, Example 14.27); Chapter 12, Proposition 12.25 (pullbacks compose) |
 | [[§82 De Rham Cohomology\|§82]] De Rham cohomology | Chapter 17, *The de Rham Cohomology Groups* (Proposition 17.2, Corollary 17.4, Propositions 17.5 and 17.6) |
 | [[§83 The First Cohomology of the Circle\|§83]] The first cohomology of the circle | Chapter 11, Example 11.36; Chapter 17, Example 17.1, Theorem 17.21 ($n = 1$), Theorem 17.31 (stated) |
-| [[§84 Contraction by Vector Fields\|§84]] Contraction by vector fields | Chapter 14, *Interior Multiplication* (Lemma 14.13), Proposition 14.29; Proposition 14.32 (the formula for $k$-forms, assigned as reading) |
+| [[§84 Contraction by Vector Fields\|§84]] Contraction by vector fields | Chapter 14, *Interior Multiplication* (Lemma 14.13), Proposition 14.29; Proposition 14.32 (the formula for $k$-forms, assigned as reading, stated) |
 | [[§85 Lie Derivatives of Forms\|§85]] Lie derivatives of forms | Chapter 12, *Lie Derivatives of Tensor Fields* ((12.8), Lemma 12.30, Propositions 12.32 and 12.36, Theorem 12.37); Chapter 14, Proposition 14.33 |
 | [[§86 Cartan's Magic Formula\|§86]] Cartan's magic formula | Chapter 14, *Lie Derivatives of Differential Forms* (Lemma 14.13(b), Theorem 14.35, Corollary 14.36); Chapter 17, *Homotopy Invariance* |
 
@@ -291,7 +291,8 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem 14.24 | [[§81 The Exterior Derivative#^def-81-1\|Def. §81.1]], [[§81 The Exterior Derivative#^thm-81-7\|Thm. §81.7]], [[§81 The Exterior Derivative#^def-81-3\|Def. §81.3]], [[§81 The Exterior Derivative#^lem-81-5\|Lem. §81.5]], [[§81 The Exterior Derivative#^cor-81-6\|Cor. §81.6]] |
 | Proposition 14.26 | [[§81 The Exterior Derivative#^def-81-1\|Def. §81.1]], [[§81 The Exterior Derivative#^thm-81-7\|Thm. §81.7]] |
 | Example 14.27 | [[§81 The Exterior Derivative#^ex-81-1\|Ex. §81.1]] |
-| Proposition 14.29 | [[§84 Contraction by Vector Fields#^thm-84-4\|Thm. §84.4]] |
+| Proposition 14.29 | [[§84 Contraction by Vector Fields#^thm-84-5\|Thm. §84.5]] |
+| Proposition 14.32 | [[§84 Contraction by Vector Fields#^thm-84-6\|Thm. §84.6]] |
 | Proposition 14.33 | [[§85 Lie Derivatives of Forms#^thm-85-4\|Thm. §85.4]] |
 | Theorem 14.35 | [[§86 Cartan's Magic Formula#^thm-86-2\|Thm. §86.2]] |
 | Corollary 14.36 | [[§85 Lie Derivatives of Forms#^thm-85-4\|Thm. §85.4]], [[§86 Cartan's Magic Formula#^cor-86-3\|Cor. §86.3]] |

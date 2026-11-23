@@ -54,6 +54,9 @@ tags: [differentiable-manifolds, hub]
 - [[§72 Lie Derivatives#^lem-72-4|Lemma §72.4: The Lie Derivative Exists and Is Smooth]]
 - [[§72 Lie Derivatives#^prop-72-14|Proposition §72.14: The Lie Derivative along a Linear Field]]
 - [[§80 Differential Forms on Manifolds#^prop-80-5|Proposition §80.5: Properties of the Pullback of Forms]]
+- [[§80 Differential Forms on Manifolds#^prop-80-8|Proposition §80.8: The Area Form in a Parametrization]]
+- [[§81 The Exterior Derivative#^lem-81-8|Lemma §81.8: The Differential of the Projection in Standard Coordinates]]
+- [[§81 The Exterior Derivative#^prop-81-10|Proposition §81.10: Every One-Form Is a Pullback of the Tautological One-Form]]
 
 ## Connections
 - **Used for.** Every local computation with differentials: the chain rule and change of coordinates in matrices ([[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), agreement with the Jacobian on ℝⁿ ([[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), regular values inside one chart ([[§30 The Differential in Coordinates#^prop-30-9|§30.9]]), the [[Local Diffeomorphism Criterion]], the [[Submersion Normal Form]] and the transition maps of TM ([[Tangent Bundle Is a Smooth Manifold]]).

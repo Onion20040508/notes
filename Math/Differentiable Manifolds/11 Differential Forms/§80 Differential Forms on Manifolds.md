@@ -395,4 +395,189 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 > - The factor $r$ in polar coordinates, as a change of variables in a double integral: [[§22 Properties of the Integral#^thm-22-6|452 Thm. §22.6]].
 > - Polar coordinates as a chart, with $\partial_r$ and $\partial_\vartheta$: [[§30 The Differential in Coordinates#^ex-30-1|Ex. §30.1]].
 
+## Assignment 9, Problem 2: The Area Form of a Surface
+
+*From Assignment 9, Problem 2 (submitted). A two-form on a surface in $\mathbb{R}^3$, defined with a unit normal; its pullback by a parametrization, by the formula of Definition [[§80 Differential Forms on Manifolds#^def-80-9|§80.9]]; and the sphere in the coordinates longitude and height. The steps of the submitted solution that are general statements are stated as a lemma and a proposition.*
+
+Throughout, $S \subseteq \mathbb{R}^3$ is a $2$-dimensional regular submanifold and $\mathbf{n} : S \to \mathbb{R}^3$ is a smooth unit normal field: $\mathbf{n}_p$ is a unit vector perpendicular to $T_pS$ for every $p \in S$ (an orientation of $S$, Definition [[§73 Stokes' Theorem in Calculus III#^def-73-3|§73.3]]; the assignment assumes that such an $\mathbf{n}$ exists). Tangent vectors to $S$ are vectors of $\mathbb{R}^3$, through the inclusion $\iota : S \hookrightarrow \mathbb{R}^3$ and the identification $T_p\mathbb{R}^3 \cong \mathbb{R}^3$, $\partial/\partial x|_p \leftrightarrow e_1$, $\partial/\partial y|_p \leftrightarrow e_2$, $\partial/\partial z|_p \leftrightarrow e_3$.
+
+> [!definition] Definition §80.10: Area Form of a Surface
+> *(Assignment 9, Problem 2.)* The **area form** of $S$ associated with $\mathbf{n}$ is the two-form $\alpha$ on $S$ given by
+>
+> $$
+> \alpha_p(v, w) = \det(v, w, \mathbf{n}_p), \qquad v, w \in T_pS \subseteq \mathbb{R}^3 ,
+> $$
+>
+> the determinant of the $3 \times 3$ matrix with columns $v$, $w$, $\mathbf{n}_p$.
+
+^def-80-10
+
+> [!remark]- Connections
+> - Surfaces with a unit normal, and parametrizations whose cross product points along it, in the Calculus III picture: [[§73 Stokes' Theorem in Calculus III#^def-73-3|Def. §73.3]], [[§73 Stokes' Theorem in Calculus III#^def-73-4|Def. §73.4]]; the surface integrand as a determinant: [[§73 Stokes' Theorem in Calculus III#^lem-73-3|Lem. §73.3]].
+> - The integrand of a surface integral as a two-form: [[§74 The Integrand Is a Two-Form|§74]].
+
+Each $\alpha_p$ is bilinear and alternating, because the determinant is linear in each column and changes sign when two columns are exchanged; so $\alpha$ is a two-form on $S$ (Definition [[§80 Differential Forms on Manifolds#^def-80-1|§80.1]]). It is smooth by Proposition [[§80 Differential Forms on Manifolds#^prop-80-8|§80.8]](1).
+
+> [!theorem] Lemma §80.7: The Area Form Is the Signed Area
+> *(Not stated in the assignment; it is the computation in the submitted solution of Problem 2(a), for two arbitrary tangent vectors.)* For $p \in S$ and $v, w \in T_pS$:
+>
+> 1. $\alpha_p(v, w) = (v \times w) \cdot \mathbf{n}_p$;
+> 2. $v \times w = \alpha_p(v, w)\, \mathbf{n}_p$, and $|\alpha_p(v, w)| = |v \times w|$, the area of the parallelogram spanned by $v$ and $w$;
+> 3. $\alpha_p(v, w) \neq 0$ if and only if $v$ and $w$ are linearly independent, and then $\alpha_p(v, w) > 0$ exactly when $v \times w$ points in the direction of $\mathbf{n}_p$.
+
+^lem-80-7
+
+> [!proof]+ Proof
+> *(From the submitted solution.)* *(1)* Write $v = (v_1, v_2, v_3)$, $w = (w_1, w_2, w_3)$ and $\mathbf{n}_p = (n^1, n^2, n^3)$. Expanding the determinant along its third column,
+>
+> $$
+> \begin{aligned}\det(v, w, \mathbf{n}_p) = \det\begin{pmatrix} v_1 & w_1 & n^1 \\ v_2 & w_2 & n^2 \\ v_3 & w_3 & n^3 \end{pmatrix} &= n^1\,(v_2 w_3 - v_3 w_2) + n^2\,(v_3 w_1 - v_1 w_3) + n^3\,(v_1 w_2 - v_2 w_1) \\
+> &= (v \times w) \cdot \mathbf{n}_p ,\end{aligned}
+> $$
+>
+> since the three brackets are the components of the cross product $v \times w$.
+>
+> *(2), (3)* If $v$ and $w$ are linearly dependent, then $v \times w = 0$ and both sides of every statement are $0$. If they are linearly independent, they span the $2$-dimensional space $T_pS$, and $v \times w$ is nonzero and perpendicular to both, hence perpendicular to $T_pS$. The vectors perpendicular to $T_pS$ form a line, spanned by the unit vector $\mathbf{n}_p$, so $v \times w = \lambda\, \mathbf{n}_p$ with $\lambda \neq 0$. Taking the inner product with $\mathbf{n}_p$ and using (1), $\lambda = (v \times w) \cdot \mathbf{n}_p = \alpha_p(v, w)$; and $|\lambda| = |v \times w|$ because $|\mathbf{n}_p| = 1$. The sign of $\lambda$ is positive exactly when $v \times w$ and $\mathbf{n}_p$ point in the same direction. That $|v \times w|$ is the area of the parallelogram is the Calculus III property of the cross product.
+
+^pf-80-7
+
+![[m591-82-1.svg]]
+
+*(Not from the assignment; figure added.)* Lemma [[§80 Differential Forms on Manifolds#^lem-80-7|§80.7]]: for $v, w$ in the tangent plane, $v \times w$ lies on the normal line, and its coefficient with respect to the unit normal $\mathbf{n}_p$ is $\alpha_p(v, w)$. The absolute value is the area of the parallelogram; the sign says whether $(v, w)$ turns from $v$ to $w$ counterclockwise as seen from the tip of $\mathbf{n}_p$.
+
+> [!theorem] Proposition §80.8: The Area Form in a Parametrization
+> *(Assignment 9, Problem 2(a), with the part of 2(b) that does not use the hypothesis on the direction.)* Let $F : V \to U \subseteq S$ be a parametrization, the inverse of a coordinate chart of $S$ (Definition [[§20 Manifolds in Euclidean Space#^def-20-3|§20.3]]), with $V \subseteq \mathbb{R}^2$ open and coordinates $(s, t)$ on $V$. Write $F = (x, y, z)$, $F_s = (x_s, y_s, z_s)$ and $F_t = (x_t, y_t, z_t)$.
+>
+> 1. For every parametrization, $F^{\ast}\alpha = \varphi\; ds \wedge dt$ with
+>
+> $$
+> \varphi = \det\big(F_s, F_t, \mathbf{n} \circ F\big) = (F_s \times F_t) \cdot (\mathbf{n} \circ F) .
+> $$
+>
+> In particular $\varphi$ is smooth, and $\alpha \in \Omega^2(S)$.
+>
+> 2. At every point of $V$, $F_s \times F_t \neq 0$ and $\varphi = \pm\, |F_s \times F_t|$, with the sign $+$ exactly where $F_s \times F_t$ points in the direction of $\mathbf{n}$. The sign is constant on each connected component of $V$.
+> 3. If $F_s \times F_t$ points in the direction of $\mathbf{n}$ at each point (a positive parametrization, Definition [[§73 Stokes' Theorem in Calculus III#^def-73-4|§73.4]]), then
+>
+> $$
+> F^{\ast}\alpha = |F_s \times F_t|\; ds \wedge dt .
+> $$
+
+^prop-80-8
+
+> [!proof]+ Proof
+> *(The submitted solution of Problem 2(a); the smoothness statements are filled in.)* *The component function.* $F^{\ast}\alpha$ is a two-form on $V \subseteq \mathbb{R}^2$. The only increasing multi-index of length $2$ in $\{1, 2\}$ is $\{1, 2\}$, so by Definition [[§80 Differential Forms on Manifolds#^def-80-3|§80.3]], for $q \in V$,
+>
+> $$
+> (F^{\ast}\alpha)_q = \varphi(q)\, (ds \wedge dt)_q, \qquad \varphi(q) = (F^{\ast}\alpha)_q\Big( \frac{\partial}{\partial s}\Big|_q, \frac{\partial}{\partial t}\Big|_q \Big) .
+> $$
+>
+> *The pullback.* By Definition [[§80 Differential Forms on Manifolds#^def-80-9|§80.9]], for $q \in V$ and $v, w \in T_qV$,
+>
+> $$
+> (F^{\ast}\alpha)_q(v, w) = \alpha_{F(q)}\big(dF_q(v), dF_q(w)\big) = \det\big(dF_q(v), dF_q(w), \mathbf{n}_{F(q)}\big) .
+> $$
+>
+> *The pushforwards of $\partial/\partial s$ and $\partial/\partial t$.* By the matrix of the differential (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), applied to $\iota \circ F : V \to \mathbb{R}^3$,
+>
+> $$
+> dF_q\Big( \frac{\partial}{\partial s}\Big|_q \Big) = x_s(q)\, \frac{\partial}{\partial x}\Big|_{F(q)} + y_s(q)\, \frac{\partial}{\partial y}\Big|_{F(q)} + z_s(q)\, \frac{\partial}{\partial z}\Big|_{F(q)} ,
+> $$
+>
+> which under the identification above is the vector $F_s(q)$. Likewise $dF_q(\partial/\partial t|_q) = F_t(q)$.
+>
+> *(1)* Combining the three steps, $\varphi(q) = \det\big(F_s(q), F_t(q), \mathbf{n}_{F(q)}\big)$, and this is $(F_s \times F_t) \cdot \mathbf{n}$ by Lemma [[§80 Differential Forms on Manifolds#^lem-80-7|§80.7]](1). The entries of the determinant are smooth functions on $V$ ($F$ and $\mathbf{n}$ are smooth), so $\varphi$ is smooth. In the chart $(U, F^{-1})$ of $S$ the component function of $\alpha$ is $\varphi \circ F^{-1}$, which is smooth; the domains of such charts cover $S$, so $\alpha$ is smooth (Definition [[§80 Differential Forms on Manifolds#^def-80-4|§80.4]]).
+>
+> *(2)* Since $F$ is a parametrization, $dF_q$ is injective, so $F_s(q)$ and $F_t(q)$ are linearly independent tangent vectors at $F(q)$. By Lemma [[§80 Differential Forms on Manifolds#^lem-80-7|§80.7]](2) and (3), $F_s \times F_t = \varphi\, (\mathbf{n} \circ F)$ with $\varphi \neq 0$ and $|\varphi| = |F_s \times F_t|$, and $\varphi > 0$ exactly where $F_s \times F_t$ points in the direction of $\mathbf{n}$. Since $\varphi$ is continuous and never zero, its sign is constant on each connected component of $V$, but it may differ between components.
+>
+> *(3)* By (2) the hypothesis means $\varphi > 0$ everywhere, so $\varphi = |F_s \times F_t|$.
+
+^pf-80-8
+
+*Uses:* [[§80 Differential Forms on Manifolds#^def-80-3|Def. §80.3]], [[§80 Differential Forms on Manifolds#^def-80-9|Def. §80.9]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§80 Differential Forms on Manifolds#^lem-80-7|§80.7]], [[§80 Differential Forms on Manifolds#^def-80-4|Def. §80.4]]
+
+*What the hypotheses are used for.* Part (1) uses nothing about the direction of $F_s \times F_t$, and its formula $\varphi = \det(F_s, F_t, \mathbf{n} \circ F)$ holds for every smooth map $F : V \to S$. That $F$ is the inverse of a chart is used only through the injectivity of $dF_q$, in (2).
+
+> [!example] Example §80.3: Assignment 9 Problem 2(b): Why the Direction of the Cross Product Matters
+> *(Assignment 9, Problem 2(b), as submitted.)* The Calculus III formula for the area of $U = F(V)$ is
+>
+> $$
+> \operatorname{Area}(U) = \int_V |F_s \times F_t|\; ds\, dt ,
+> $$
+>
+> whose integrand is positive on $V$. By Proposition [[§80 Differential Forms on Manifolds#^prop-80-8|§80.8]](2), for any parametrization $\varphi = \pm\,|F_s \times F_t|$ pointwise. With the condition that $F_s \times F_t$ points in the direction of $\mathbf{n}$, $\varphi = |F_s \times F_t|$ everywhere, which is exactly the integrand of the area formula, so $\int_V \varphi\, ds\, dt = \operatorname{Area}(U)$; for this reason $\alpha$ is called the area form associated with $\mathbf{n}$. Without the condition, $\varphi$ has the correct absolute value but possibly the wrong sign. If $F_s \times F_t$ points opposite to $\mathbf{n}$ everywhere, then $\varphi = -|F_s \times F_t|$ and
+>
+> $$
+> \int_V \varphi\; ds\, dt = -\operatorname{Area}(U) < 0 ,
+> $$
+>
+> which cannot be an area; if the sign differs between components of $V$, the integral is the difference of the areas of the corresponding pieces of $U$. So the condition on $F_s \times F_t$ with respect to $\mathbf{n}$ is what makes $\int_V \varphi\, ds\, dt$ equal to the area of $U$.
+
+^ex-80-3
+
+> [!example] Example §80.4: Assignment 9 Problem 2(c): The Area Form of the Sphere in Longitude and Height
+> *(Assignment 9, Problem 2(c).)* Let $S = S^2$ be the unit sphere, with $\mathbf{n}$ pointing away from the origin, and $U = S^2 \setminus \mu$, where $\mu = \{(x, 0, z) \in S^2 : x \le 0\}$ is the meridian at longitude $\pm\pi$, including the poles $(0, 0, \pm 1)$. Let $\phi : U \to \mathbb{R}^2$, $\phi(p) = (\theta(p), z(p))$, where $z(p)$ is the third Cartesian coordinate of $p$ and $\theta(p) \in (-\pi, \pi)$ the polar angle of $(x(p), y(p))$, the longitude. With $F = \phi^{-1}$,
+>
+> $$
+> F^{\ast}\alpha = d\theta \wedge dz :
+> $$
+>
+> in the coordinates longitude and height, the area form of the sphere has the constant coefficient $1$.
+
+^ex-80-4
+
+> [!proof]+ The submitted solution
+> *(Assignment 9, Problem 2(c), as submitted.)* *The setup.* On $U$ the polar angle $\theta \in (-\pi, \pi)$ is single-valued, and $\phi(U) = (-\pi, \pi) \times (-1, 1)$; see the figure below.
+>
+> *The parametrization $F = \phi^{-1}$.* A point $p = (x, y, z) \in U$ satisfies $x^2 + y^2 + z^2 = 1$. Writing $(x, y) = (r\cos\theta, r\sin\theta)$ with $r = |(x, y)| \ge 0$, the constraint gives $r^2 = 1 - z^2$, so $r = \sqrt{1 - z^2}$. Hence
+>
+> $$
+> F(\theta, z) = \Big( \sqrt{1 - z^2}\,\cos\theta,\ \sqrt{1 - z^2}\,\sin\theta,\ z \Big), \qquad (\theta, z) \in (-\pi, \pi) \times (-1, 1) .
+> $$
+>
+> Since $|z| < 1$, $r = \sqrt{1 - z^2} > 0$, and the square root is smooth on $(0, \infty)$, so $F$ is smooth. Moreover $F(\theta, z) \in S^2$ by the choice of $r$, its third coordinate is $z$, and its $(x, y)$-part has polar angle $\theta \neq \pm\pi$ and length $r > 0$, so $F(\theta, z) \notin \mu$ and $\phi\big(F(\theta, z)\big) = (\theta, z)$.
+>
+> *The partial derivatives.* By the chain rule, $\partial r/\partial z = -z/\sqrt{1 - z^2} = -z/r$. Hence
+>
+> $$
+> F_\theta = \big( -r\sin\theta,\ r\cos\theta,\ 0 \big), \qquad F_z = \Big( -\frac{z}{r}\cos\theta,\ -\frac{z}{r}\sin\theta,\ 1 \Big) .
+> $$
+>
+> *The cross product.* Componentwise,
+>
+> $$
+> \begin{aligned}(F_\theta \times F_z)^1 &= (r\cos\theta)(1) - (0)\Big( -\frac{z}{r}\sin\theta \Big) = r\cos\theta , \\
+> (F_\theta \times F_z)^2 &= (0)\Big( -\frac{z}{r}\cos\theta \Big) - (-r\sin\theta)(1) = r\sin\theta , \\
+> (F_\theta \times F_z)^3 &= (-r\sin\theta)\Big( -\frac{z}{r}\sin\theta \Big) - (r\cos\theta)\Big( -\frac{z}{r}\cos\theta \Big) = z\sin^2\theta + z\cos^2\theta = z .\end{aligned}
+> $$
+>
+> Therefore $F_\theta \times F_z = (r\cos\theta, r\sin\theta, z) = F(\theta, z)$.
+>
+> *The outward normal.* For $p \in S^2$, $\mathbf{n}_p = p$: $T_pS^2 = p^\perp$ (Example [[§25 The Geometric Tangent Space#^ex-25-1|§25.1]]), $|p| = 1$, and $p$ points away from the origin.
+>
+> *The direction and the magnitude.* With $p = F(\theta, z)$, the two previous steps give $F_\theta \times F_z = p = 1 \cdot \mathbf{n}_p$, a positive multiple of $\mathbf{n}_p$. So $F$ satisfies the hypothesis of Proposition [[§80 Differential Forms on Manifolds#^prop-80-8|§80.8]](3), with $(s, t) = (\theta, z)$, and $\varphi = |F_\theta \times F_z| = |p| = 1$. Therefore $F^{\ast}\alpha = d\theta \wedge dz$.
+
+^pf-ex-80-4
+
+*Uses:* [[§25 The Geometric Tangent Space#^ex-25-1|Ex. §25.1]], [[§80 Differential Forms on Manifolds#^prop-80-8|§80.8]]
+
+![[m591-82-2.svg]]
+
+*(Figure from the submitted solution.)* Left: the sphere with the removed meridian $\mu$ (red), the meridian $\theta = 0$ (green), a point $p$ with its longitude $\theta$, its height $z$ and the outward normal $\mathbf{n}_p$. Right: the image $\phi(U) = (-\pi, \pi) \times (-1, 1)$ of the chart; the two vertical edges correspond to $\mu$ and the two horizontal edges to the poles, none of them in the image.
+
+> [!example] Example §80.5: Zones of Equal Height Have Equal Area
+> *(Not from the assignment; a consequence of Example [[§80 Differential Forms on Manifolds#^ex-80-4|§80.4]] and the Calculus III area formula quoted in Problem 2(b).)* For $-1 \le a < b \le 1$, the zone $U_{a, b} = \{p \in U : a < z(p) < b\}$ of the unit sphere is $F\big((-\pi, \pi) \times (a, b)\big)$, and since $\varphi = 1$,
+>
+> $$
+> \operatorname{Area}(U_{a, b}) = \int_{(-\pi, \pi) \times (a, b)} 1\; d\theta\, dz = 2\pi\,(b - a) .
+> $$
+>
+> The area depends only on the height $b - a$ of the zone, not on where it lies between the poles: a zone near the pole is narrow, but it is tilted, and the two effects cancel. For $a = -1$, $b = 1$ this gives $4\pi$, the area of the sphere (the meridian $\mu$, a curve, has area $0$). The parametrization $F$ projects the cylinder of radius $1$ around the sphere horizontally onto the sphere, and it preserves area; this is a theorem of Archimedes.
+
+^ex-80-5
+
+![[m591-82-a1.gif|600]]
+
+*(Not from lecture; animation added, vault only.)* A zone $a < z < b$ of fixed height $b - a = 0.3$ slides from the equator towards the pole. On the sphere it becomes shorter around, with radius $\sqrt{1 - z^2}$, and wider along the meridian, and the two effects cancel: its area stays $2\pi(b - a)$, the area of the strip $(-\pi, \pi) \times (a, b)$ in the coordinates $(\theta, z)$, where the area form is $d\theta \wedge dz$.
+
 Next: the exterior derivative, which extends $d : \Omega^0(M) \to \Omega^1(M)$ to forms of every degree ([[§81 The Exterior Derivative|§81]]).
