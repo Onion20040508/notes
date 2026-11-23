@@ -7,7 +7,7 @@ section: C8b.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C8a.15★ Derivative Couplings and Scalar QED|§C8a.15★]] · ↑ [[· C8b Spin, Helicity and Chirality]] · [[§C8b.2 Particle States and the Little Group|§C8b.2]] →
+← [[§C8a.18★ Derivative Couplings and Scalar QED|§C8a.18★]] · ↑ [[· C8b Spin, Helicity and Chirality]] · [[§C8b.2 Particle States and the Little Group|§C8b.2]] →
 
 *Sources: PHY 513 Lecture 20 (Larsen, 16 Nov 2026), slides 9, 11 and 24, and transcript · the user's PHY 513 notes, Lecture 20 update (chapter opening, §20.1); Ch. 7 §7.7 (Supplement "Particles as representations (Wigner's classification)") · Peskin & Schroeder, An Introduction to Quantum Field Theory, §5.2, p. 141 · Yu Zhao-Huan, 量子场论讲义, §3.3 and §8.2.4–§8.3 (as the sources of the sections listed below) · PHY 513, Problem Set 5, Problem 6.*
 

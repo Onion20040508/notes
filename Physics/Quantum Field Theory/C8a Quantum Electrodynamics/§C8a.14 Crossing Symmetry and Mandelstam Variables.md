@@ -7,7 +7,7 @@ section: C8a.14
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C8a.13 The Cross Section for Electron–Muon Scattering|§C8a.13]] · ↑ [[· C8a Quantum Electrodynamics]] · [[§C8a.15★ Derivative Couplings and Scalar QED|§C8a.15★]] →
+← [[§C8a.13 The Cross Section for Electron–Muon Scattering|§C8a.13]] · ↑ [[· C8a Quantum Electrodynamics]] · [[§C8a.18★ Derivative Couplings and Scalar QED|§C8a.18★]] →
 
 *Sources: PHY 513 Lecture 21 (Larsen, 18 Nov 2026, "Crossing Symmetry"; a recorded lecture in three parts), slides 17–26 (Part C), and recording, part C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §5.4, pp. 155–158, eqs. (5.67)–(5.73) and the figures of pp. 155–157 · Yu Zhao-Huan, 量子场论讲义, §8.5, eqs. (8.288), (8.290)–(8.296), (8.302)–(8.303), (8.310)–(8.312), (8.315)–(8.318) (page images checked).*
 
