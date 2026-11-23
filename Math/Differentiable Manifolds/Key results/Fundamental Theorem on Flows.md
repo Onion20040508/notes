@@ -25,6 +25,7 @@ tags: [differentiable-manifolds, hub]
 - [[§72 Lie Derivatives#^lem-72-5|Lemma §72.5: Canonical Form Near a Regular Point]]
 - [[§72 Lie Derivatives#^thm-72-9|Theorem §72.9: Commuting Fields: Invariance and Commuting Flows]]
 - [[§72 Lie Derivatives#^lem-72-11|Lemma §72.11: The Mixed Derivative of Two Flows]]
+- [[§85 Lie Derivatives of Forms#^thm-85-4|Theorem §85.4: Properties of the Lie Derivative of Forms]]
 
 ## Connections
 - TODO

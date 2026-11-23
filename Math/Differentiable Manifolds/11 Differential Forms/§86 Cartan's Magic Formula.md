@@ -13,7 +13,7 @@ tags: [differentiable-manifolds, math591]
 
 ![[m591-81-3.svg]]
 
-*(Figure after the board.)* Here $\mathbf{X} \in \mathfrak{X}(M)$. Two copies of the de Rham complex of one manifold $M$. The vertical arrows are $\mathcal{L}_\mathbf{X}$ (green on the board), and they commute with $d$ (Theorem [[§85 Lie Derivatives of Forms#^thm-85-2|§85.2]](3)): the squares commute. The diagonal arrows are $\iota_\mathbf{X}$, which go down one degree. Cartan's formula says that the vertical arrow out of $\Omega^k(M)$ is the sum of the two paths made of one $d$ and one $\iota_\mathbf{X}$: first $\iota_\mathbf{X}$ (the diagonal) and then the bottom $d$, plus first the top $d$ and then the next diagonal $\iota_\mathbf{X}$. There are different $d$'s and different $\iota$'s, in different degrees, all written the same way.
+*(Figure after the board.)* Here $\mathbf{X} \in \mathfrak{X}(M)$. Two copies of the de Rham complex of one manifold $M$. The vertical arrows are $\mathcal{L}_\mathbf{X}$ (green on the board), and they commute with $d$ (Theorem [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]](3)): the squares commute. The diagonal arrows are $\iota_\mathbf{X}$, which go down one degree. Cartan's formula says that the vertical arrow out of $\Omega^k(M)$ is the sum of the two paths made of one $d$ and one $\iota_\mathbf{X}$: first $\iota_\mathbf{X}$ (the diagonal) and then the bottom $d$, plus first the top $d$ and then the next diagonal $\iota_\mathbf{X}$. There are different $d$'s and different $\iota$'s, in different degrees, all written the same way.
 
 The proof uses one more property of the contraction, which Lecture 34 stated in the middle of the proof.
 
@@ -50,7 +50,6 @@ For $k = 0$, $\alpha = f$, the formula reads $\iota_\mathbf{X}(f\beta) = f\, \io
 
 ^thm-86-2
 
-
 > [!remark]- Connections
 > - The proof has the same format as the proof that the Lie derivative of a vector field is the bracket, through straightening coordinates: [[§72 Lie Derivatives#^thm-72-6|Thm. §72.6]], with [[§72 Lie Derivatives#^lem-72-5|Lem. §72.5]].
 > - The contraction: [[§84 Contraction by Vector Fields#^def-84-1|Def. §84.1]]; the exterior derivative: [[§81 The Exterior Derivative#^thm-81-7|Thm. §81.7]].
@@ -60,7 +59,7 @@ The formula has several applications; the first is Corollary [[§86 Cartan's Mag
 > [!proof]+ Proof
 > *(Lecture 34; the details marked are filled in.)* Both sides are $k$-forms. Fix $p \in M$. *(Filled in.)* Both sides at $p$ depend only on $\alpha$ and $\mathbf{X}$ near $p$: the left side through the flow near $p$ for small $|t|$, the right side because $d$ and $\iota_\mathbf{X}$ are local (Corollary [[§81 The Exterior Derivative#^cor-81-6|§81.6]]; Definition [[§84 Contraction by Vector Fields#^def-84-1|§84.1]] is pointwise).
 >
-> *1st: $\mathbf{X}_p \neq 0$.* Work locally near $p$, in coordinates $(x^1, \ldots, x^m)$ where $\mathbf{X} = \partial/\partial x^1$ (Lemma [[§72 Lie Derivatives#^lem-72-5|§72.5]]). Both sides are linear in $\alpha$ (Theorem [[§85 Lie Derivatives of Forms#^thm-85-2|§85.2]](1) in $\alpha$; $d$ and $\iota_\mathbf{X}$ are linear), so without loss of generality $\alpha = f_A\, dx^A$ is a monomial. The left-hand side was computed in Example [[§85 Lie Derivatives of Forms#^ex-85-1|§85.1]]:
+> *1st: $\mathbf{X}_p \neq 0$.* Work locally near $p$, in coordinates $(x^1, \ldots, x^m)$ where $\mathbf{X} = \partial/\partial x^1$ (Lemma [[§72 Lie Derivatives#^lem-72-5|§72.5]]). Both sides are linear in $\alpha$ (Theorem [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]](1) in $\alpha$; $d$ and $\iota_\mathbf{X}$ are linear), so without loss of generality $\alpha = f_A\, dx^A$ is a monomial. The left-hand side was computed in Example [[§85 Lie Derivatives of Forms#^ex-85-1|§85.1]]:
 >
 > $$
 > \mathcal{L}_\mathbf{X}\alpha = \frac{\partial f_A}{\partial x^1}\, dx^A .
@@ -88,11 +87,11 @@ The formula has several applications; the first is Corollary [[§86 Cartan's Mag
 >
 > *2nd: $p \in M \setminus \operatorname{supp}\mathbf{X}$*, where $\operatorname{supp}\mathbf{X} = \overline{\{q \in M : \mathbf{X}_q \neq 0\}}$, as for functions (Definition [[§56 Vector Fields#^def-56-10|§56.10]]). Both sides are zero at $p$. *(Filled in.)* $\mathbf{X}$ vanishes on a neighbourhood $W$ of $p$, so the constant curves are its integral curves there, $\varphi_t = \mathrm{id}$ on $W$, $\alpha_p(t) = \alpha_p$ and $(\mathcal{L}_\mathbf{X}\alpha)_p = 0$; and $\iota_\mathbf{X}\alpha$ and $\iota_\mathbf{X}\,d\alpha$ vanish on $W$, so $d(\iota_\mathbf{X}\alpha)$ vanishes at $p$ as well.
 >
-> *The remaining points: $\mathbf{X}_p = 0$ and $p \in \operatorname{supp}\mathbf{X}$*, for instance $p$ on the boundary of the support. The formula follows by continuity. *(Filled in.)* Every neighbourhood of $p$ contains points $q$ with $\mathbf{X}_q \neq 0$, where the formula holds by the first case; both sides are smooth, in particular continuous, $k$-forms (Lemma [[§85 Lie Derivatives of Forms#^lem-85-1|§85.1]]), so in a chart at $p$ their components are continuous functions that agree at points accumulating at $p$, hence at $p$.
+> *The remaining points: $\mathbf{X}_p = 0$ and $p \in \operatorname{supp}\mathbf{X}$*, for instance $p$ on the boundary of the support. The formula follows by continuity. *(Filled in.)* Every neighbourhood of $p$ contains points $q$ with $\mathbf{X}_q \neq 0$, where the formula holds by the first case; both sides are smooth, in particular continuous, $k$-forms (Lemma [[§85 Lie Derivatives of Forms#^lem-85-2|§85.2]]), so in a chart at $p$ their components are continuous functions that agree at points accumulating at $p$, hence at $p$. This step, written out, is Lemma [[§85 Lie Derivatives of Forms#^lem-85-3|§85.3]], applied to the two sides of the formula.
 
 ^pf-86-2
 
-*Uses:* [[§81 The Exterior Derivative#^cor-81-6|§81.6]], [[§84 Contraction by Vector Fields#^def-84-1|Def. §84.1]], [[§72 Lie Derivatives#^lem-72-5|§72.5]], [[§85 Lie Derivatives of Forms#^thm-85-2|§85.2]], [[§85 Lie Derivatives of Forms#^ex-85-1|Ex. §85.1]], [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]], [[§81 The Exterior Derivative#^thm-81-7|§81.7]], [[§86 Cartan's Magic Formula#^lem-86-1|§86.1]], [[§56 Vector Fields#^def-56-10|Def. §56.10]], [[§85 Lie Derivatives of Forms#^lem-85-1|§85.1]]
+*Uses:* [[§81 The Exterior Derivative#^cor-81-6|§81.6]], [[§84 Contraction by Vector Fields#^def-84-1|Def. §84.1]], [[§72 Lie Derivatives#^lem-72-5|§72.5]], [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]], [[§85 Lie Derivatives of Forms#^ex-85-1|Ex. §85.1]], [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]], [[§81 The Exterior Derivative#^thm-81-7|§81.7]], [[§86 Cartan's Magic Formula#^lem-86-1|§86.1]], [[§56 Vector Fields#^def-56-10|Def. §56.10]], [[§85 Lie Derivatives of Forms#^lem-85-2|§85.2]], [[§85 Lie Derivatives of Forms#^lem-85-3|§85.3]]
 
 **Transcription notes (Lecture 34).** In the handwritten notes the first term appears as $d\,\iota_\mathbf{X}\alpha = df_A \wedge d\,\iota_\mathbf{X}(dx^A)$ and the second as $\iota_\mathbf{X} d\alpha = (\iota_\mathbf{X} df_A) \wedge dx^A - df_A \wedge d\big(\iota_\mathbf{X}(dx^A)\big)$; in both places the term is $df_A \wedge \iota_\mathbf{X}(dx^A)$, with no second $d$, as said in the lecture, and it cancels. In the second case the lecture first said the complement of the support of $\alpha$, and corrected it to the support of $\mathbf{X}$. The board's last case, “$p \in \partial\operatorname{supp}(\mathbf{X})$”, should include all zeros of $\mathbf{X}$ in its support, not only the boundary points: the three cases must cover $M$, and the continuity argument applies to all of them.
 
@@ -101,21 +100,21 @@ The formula has several applications; the first is Corollary [[§86 Cartan's Mag
 *(Not from lecture; figure added.)* The three kinds of points in the proof of Theorem [[§86 Cartan's Magic Formula#^thm-86-2|§86.2]]: at $p_1$, $\mathbf{X}_{p_1} \neq 0$ and there are straightening coordinates; $p_2 \notin \operatorname{supp}\mathbf{X}$, where both sides are $0$; at $p_3$, $\mathbf{X}_{p_3} = 0$ but $p_3$ is a limit of points of the first kind. The points of the third kind include the boundary of the support, and also zeros of $\mathbf{X}$ inside the support (such as the origin for $x\,\partial/\partial x$ on $\mathbb{R}$).
 
 > [!theorem] Corollary §86.3: The Lie Derivative Is Linear in the Field
-> *(Stated in Lecture 34 with Theorem [[§85 Lie Derivatives of Forms#^thm-85-2|§85.2]](1); the proof through Cartan's formula is filled in.)* Let $\alpha \in \Omega^k(M)$.
+> *(Stated in Lecture 34 with Theorem [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]](1); the proof through Cartan's formula is filled in.)* Let $\alpha \in \Omega^k(M)$.
 >
 > 1. $\mathcal{L}_{\mathbf{X} + c\mathbf{Y}}\alpha = \mathcal{L}_\mathbf{X}\alpha + c\,\mathcal{L}_\mathbf{Y}\alpha$ for $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ and $c \in \mathbb{R}$.
-> 2. $d\,\mathcal{L}_\mathbf{X}\alpha = d\,\iota_\mathbf{X}\, d\alpha = \mathcal{L}_\mathbf{X}\, d\alpha$: Cartan's formula gives Theorem [[§85 Lie Derivatives of Forms#^thm-85-2|§85.2]](3) again.
+> 2. $d\,\mathcal{L}_\mathbf{X}\alpha = d\,\iota_\mathbf{X}\, d\alpha = \mathcal{L}_\mathbf{X}\, d\alpha$: Cartan's formula gives Theorem [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]](3) again.
 >
 > *Lee: Corollary 14.36*
 
 ^cor-86-3
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* (1) The right-hand side of Cartan's formula is linear in $\mathbf{X}$, because $\iota_{\mathbf{X} + c\mathbf{Y}} = \iota_\mathbf{X} + c\,\iota_\mathbf{Y}$ (Lemma [[§84 Contraction by Vector Fields#^lem-84-1|§84.1]]) and $d$ is linear. (2) $d \circ d = 0$ kills one term on each side: $d\,\mathcal{L}_\mathbf{X} = d\,d\,\iota_\mathbf{X} + d\,\iota_\mathbf{X}\, d = d\,\iota_\mathbf{X}\, d$ and $\mathcal{L}_\mathbf{X}\, d = d\,\iota_\mathbf{X}\, d + \iota_\mathbf{X}\, d\, d = d\,\iota_\mathbf{X}\, d$. The proof of Theorem [[§86 Cartan's Magic Formula#^thm-86-2|§86.2]] used only linearity in $\alpha$ from Theorem [[§85 Lie Derivatives of Forms#^thm-85-2|§85.2]], so there is no circularity.
+> *(Not from lecture; filled in.)* (1) The right-hand side of Cartan's formula is linear in $\mathbf{X}$, because $\iota_{\mathbf{X} + c\mathbf{Y}} = \iota_\mathbf{X} + c\,\iota_\mathbf{Y}$ (Lemma [[§84 Contraction by Vector Fields#^lem-84-1|§84.1]]) and $d$ is linear. (2) $d \circ d = 0$ kills one term on each side: $d\,\mathcal{L}_\mathbf{X} = d\,d\,\iota_\mathbf{X} + d\,\iota_\mathbf{X}\, d = d\,\iota_\mathbf{X}\, d$ and $\mathcal{L}_\mathbf{X}\, d = d\,\iota_\mathbf{X}\, d + \iota_\mathbf{X}\, d\, d = d\,\iota_\mathbf{X}\, d$. The proof of Theorem [[§86 Cartan's Magic Formula#^thm-86-2|§86.2]] used only linearity in $\alpha$ from Theorem [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]], so there is no circularity.
 
 ^pf-86-3
 
-*Uses:* [[§84 Contraction by Vector Fields#^lem-84-1|§84.1]], [[§86 Cartan's Magic Formula#^thm-86-2|§86.2]], [[§85 Lie Derivatives of Forms#^thm-85-2|§85.2]]
+*Uses:* [[§84 Contraction by Vector Fields#^lem-84-1|§84.1]], [[§86 Cartan's Magic Formula#^thm-86-2|§86.2]], [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]]
 
 The first application concerns the maps induced on de Rham cohomology (Proposition [[§82 De Rham Cohomology#^prop-82-2|§82.2]]).
 
@@ -131,7 +130,6 @@ The first application concerns the maps induced on de Rham cohomology (Propositi
 > *Lee: Ch. 17, Homotopy Invariance*
 
 ^cor-86-4
-
 
 > [!remark]- Connections
 > - Diffeomorphisms induce isomorphisms on cohomology: [[§82 De Rham Cohomology#^prop-82-2|Prop. §82.2]]; the corollary says more for the time-$t$ map of a complete field, which is homotopic to the identity through the $\varphi_s$.

@@ -25,6 +25,7 @@ tags: [differentiable-manifolds, hub]
 - [[§71 The Exponential Map#^prop-71-2|Proposition §71.2: Exponentials of Multiples]]
 - [[§71 The Exponential Map#^prop-71-11|Proposition §71.11: Integral Curves of Left-Invariant Fields on a Linear Group]]
 - [[§72 Lie Derivatives#^thm-72-9|Theorem §72.9: Commuting Fields: Invariance and Commuting Flows]]
+- [[§85 Lie Derivatives of Forms#^thm-85-4|Theorem §85.4: Properties of the Lie Derivative of Forms]]
 
 ## Connections
 - TODO

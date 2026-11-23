@@ -270,10 +270,10 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4\|Def. §28.4]], [[§34 The Cotangent Space from Germs#^prop-34-1\|Prop. §34.1]], [[§34 The Cotangent Space from Germs#^prop-34-2\|Prop. §34.2]], [[§34 The Cotangent Space from Germs#^thm-34-4\|Thm. §34.4]] |
 | Exercise 12.17 | [[§75 Multilinear Algebra#^lem-75-1\|Lem. §75.1]] |
 | Proposition 12.25 | [[§81 The Exterior Derivative#^lem-81-4\|Lem. §81.4]] |
-| Lemma 12.30 | [[§85 Lie Derivatives of Forms#^lem-85-1\|Lem. §85.1]] |
-| Proposition 12.32 | [[§85 Lie Derivatives of Forms#^thm-85-2\|Thm. §85.2]] |
-| Proposition 12.36 | [[§85 Lie Derivatives of Forms#^thm-85-2\|Thm. §85.2]], [[§85 Lie Derivatives of Forms#^cor-85-3\|Cor. §85.3]] |
-| Theorem 12.37 | [[§85 Lie Derivatives of Forms#^cor-85-3\|Cor. §85.3]] |
+| Lemma 12.30 | [[§85 Lie Derivatives of Forms#^lem-85-2\|Lem. §85.2]] |
+| Proposition 12.32 | [[§85 Lie Derivatives of Forms#^thm-85-4\|Thm. §85.4]] |
+| Proposition 12.36 | [[§85 Lie Derivatives of Forms#^thm-85-4\|Thm. §85.4]], [[§85 Lie Derivatives of Forms#^cor-85-5\|Cor. §85.5]] |
+| Theorem 12.37 | [[§85 Lie Derivatives of Forms#^cor-85-5\|Cor. §85.5]] |
 | Lemma 14.1 | [[§75 Multilinear Algebra#^lem-75-2\|Lem. §75.2]] |
 | Proposition 14.3 | [[§77 The Wedge Product#^lem-77-1\|Lem. §77.1]] |
 | Lemma 14.7 | [[§75 Multilinear Algebra#^lem-75-5\|Lem. §75.5]] |
@@ -292,9 +292,9 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 14.26 | [[§81 The Exterior Derivative#^def-81-1\|Def. §81.1]], [[§81 The Exterior Derivative#^thm-81-7\|Thm. §81.7]] |
 | Example 14.27 | [[§81 The Exterior Derivative#^ex-81-1\|Ex. §81.1]] |
 | Proposition 14.29 | [[§84 Contraction by Vector Fields#^thm-84-4\|Thm. §84.4]] |
-| Proposition 14.33 | [[§85 Lie Derivatives of Forms#^thm-85-2\|Thm. §85.2]] |
+| Proposition 14.33 | [[§85 Lie Derivatives of Forms#^thm-85-4\|Thm. §85.4]] |
 | Theorem 14.35 | [[§86 Cartan's Magic Formula#^thm-86-2\|Thm. §86.2]] |
-| Corollary 14.36 | [[§85 Lie Derivatives of Forms#^thm-85-2\|Thm. §85.2]], [[§86 Cartan's Magic Formula#^cor-86-3\|Cor. §86.3]] |
+| Corollary 14.36 | [[§85 Lie Derivatives of Forms#^thm-85-4\|Thm. §85.4]], [[§86 Cartan's Magic Formula#^cor-86-3\|Cor. §86.3]] |
 | Theorem 16.34 | [[§73 Stokes' Theorem in Calculus III#^thm-73-2\|Thm. §73.2]] |
 | Example 17.1 | [[§83 The First Cohomology of the Circle#^ex-83-2\|Ex. §83.2]] |
 | Proposition 17.2 | [[§82 De Rham Cohomology#^prop-82-2\|Prop. §82.2]] |

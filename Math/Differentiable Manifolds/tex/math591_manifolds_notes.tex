@@ -37525,19 +37525,73 @@ In addition to the remark \emph{Notation of Lecture 33} (\ref{sec:h1-circle}):
 \end{itemize}
 \end{rembox}
 
+The Lie derivative of a form is the derivative of a curve in a vector space. That notion and its rules are fixed first.
+
+\begin{defbox}[Derivative of a Curve in a Vector Space]\deflabel{def:curve-derivative-vs}
+\textit{(Not from lecture; filled in.)} Let $W$ be a finite-dimensional real vector space with a basis $(w_1, \ldots, w_N)$, let $I \subseteq \mathbb{R}$ be an open interval, and let $c : I \to W$ be a map, a \emph{curve} in $W$. Write $c(t) = \sum_{i=1}^N c^i(t)\, w_i$, with component functions $c^i : I \to \mathbb{R}$. The curve $c$ is \textbf{differentiable at} $t_0 \in I$ if every $c^i$ is, and then its \textbf{derivative} at $t_0$ is the vector
+\[
+c'(t_0) = \frac{d}{dt}\Big|_{t = t_0} c(t) = \sum_{i=1}^N (c^i)'(t_0)\, w_i \in W .
+\]
+The curve is \emph{smooth} if every $c^i$ is smooth. Neither notion, nor the vector $c'(t_0)$, depends on the basis (Lemma~\ref{lem:curve-derivative-rules}(1)).
+\end{defbox}
+
+Since $(c^i)'(t_0) = \lim_{h \to 0} \big(c^i(t_0 + h) - c^i(t_0)\big)/h$, the vector $c'(t_0)$ is the limit of the difference quotients $\frac{1}{h}\big(c(t_0 + h) - c(t_0)\big)$, taken component by component. For $c(t) = f(t)\, w$ with a function $f$ and a fixed vector $w = \sum_i a^i w_i$, the components are $a^i f(t)$, so $c'(t_0) = f'(t_0)\, w$.
+
+\begin{lembox}[Derivatives of Curves under Linear and Bilinear Maps]\thmlabel{lem:curve-derivative-rules}
+\textit{(Not from lecture; filled in.)} Let $W$, $W_1$, $W_2$, $Z$ be finite-dimensional real vector spaces, $I \subseteq \mathbb{R}$ an open interval, and $t_0 \in I$.
+\begin{enumerate}[nosep]
+\item \emph{Independence of the basis.} If a curve $c : I \to W$ is differentiable at $t_0$ with respect to one basis of $W$, it is so with respect to every basis, with the same vector $c'(t_0)$. The same holds for smoothness.
+\item \emph{Linear maps.} If $c : I \to W$ is differentiable at $t_0$ and $L : W \to Z$ is linear, then $L \circ c$ is differentiable at $t_0$ and $(L \circ c)'(t_0) = L\big(c'(t_0)\big)$. Also $(a + \lambda b)'(t_0) = a'(t_0) + \lambda\, b'(t_0)$ for curves $a, b$ in $W$ differentiable at $t_0$ and $\lambda \in \mathbb{R}$.
+\item \emph{Bilinear maps.} If $a : I \to W_1$ and $b : I \to W_2$ are differentiable at $t_0$ and $B : W_1 \times W_2 \to Z$ is bilinear, then $t \mapsto B(a(t), b(t))$ is differentiable at $t_0$, and
+\[
+\frac{d}{dt}\Big|_{t = t_0} B\big(a(t), b(t)\big) = B\big(a'(t_0), b(t_0)\big) + B\big(a(t_0), b'(t_0)\big) .
+\]
+\item \emph{Zero derivative.} If $c : I \to W$ is differentiable at every point of $I$ and $c'(t) = 0$ for all $t \in I$, then $c$ is constant.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} \emph{A computation for linear maps.} Let $(w_1, \ldots, w_N)$ be a basis of $W$ and $(z_1, \ldots, z_K)$ a basis of $Z$, and let $L : W \to Z$ be linear, with $L(w_i) = \sum_{j=1}^K L^j_i\, z_j$. Let $c(t) = \sum_i c^i(t)\, w_i$ with every $c^i$ differentiable at $t_0$. By linearity of $L$,
+\[
+L\big(c(t)\big) = \sum_{i=1}^N c^i(t)\, L(w_i) = \sum_{j=1}^K \Big( \sum_{i=1}^N L^j_i\, c^i(t) \Big)\, z_j .
+\]
+So the $j$-th component of $L \circ c$ in the basis $(z_j)$ is $\sum_i L^j_i\, c^i(t)$, a linear combination with constant coefficients of functions differentiable at $t_0$; it is differentiable at $t_0$ with derivative $\sum_i L^j_i\, (c^i)'(t_0)$. Hence $L \circ c$ is differentiable at $t_0$ with respect to $(z_j)$, and the vector formed with these derivatives is
+\[
+\sum_{j=1}^K \Big( \sum_{i=1}^N L^j_i\, (c^i)'(t_0) \Big)\, z_j = \sum_{i=1}^N (c^i)'(t_0)\, L(w_i) = L\Big( \sum_{i=1}^N (c^i)'(t_0)\, w_i \Big) . \tag{$\ast$}
+\]
+
+\emph{(1)} Take $Z = W$, $L = \mathrm{id}_W$, and for $(z_j)$ a second basis of $W$. The computation shows that $c$ is differentiable at $t_0$ with respect to the second basis, and by $(\ast)$ the derivative formed with the second basis equals $\mathrm{id}_W$ of the derivative formed with the first: the two vectors agree. For smoothness, the components in the second basis are linear combinations with constant coefficients of the smooth components in the first, hence smooth.
+
+\emph{(2)} By (1), differentiability and the derivative do not depend on the bases, so $(\ast)$ reads $(L \circ c)'(t_0) = L(c'(t_0))$. For the sum: in a basis the components of $a + \lambda b$ are $a^i + \lambda b^i$, with derivatives $(a^i)'(t_0) + \lambda (b^i)'(t_0)$, the components of $a'(t_0) + \lambda\, b'(t_0)$.
+
+\emph{(3)} Let $(u_i)$ be a basis of $W_1$ and $(v_j)$ a basis of $W_2$, and write $a(t) = \sum_i a^i(t)\, u_i$ and $b(t) = \sum_j b^j(t)\, v_j$. By bilinearity of $B$,
+\[
+B\big(a(t), b(t)\big) = \sum_{i, j} a^i(t)\, b^j(t)\; B(u_i, v_j) .
+\]
+Each term is a real function times a fixed vector of $Z$. The function $a^i b^j$ is differentiable at $t_0$, with derivative $(a^i)'(t_0)\, b^j(t_0) + a^i(t_0)\, (b^j)'(t_0)$, by the product rule of calculus; so the term is differentiable at $t_0$ with derivative this number times $B(u_i, v_j)$ (the sentence after Definition~\ref{def:curve-derivative-vs}). By (2) the sum is differentiable at $t_0$, with derivative
+\begin{align*}
+&\sum_{i, j} \Big( (a^i)'(t_0)\, b^j(t_0) + a^i(t_0)\, (b^j)'(t_0) \Big)\, B(u_i, v_j) \\
+&\qquad= B\Big( \sum_i (a^i)'(t_0)\, u_i,\ \sum_j b^j(t_0)\, v_j \Big) + B\Big( \sum_i a^i(t_0)\, u_i,\ \sum_j (b^j)'(t_0)\, v_j \Big) \\
+&\qquad= B\big(a'(t_0), b(t_0)\big) + B\big(a(t_0), b'(t_0)\big) ,
+\end{align*}
+again by bilinearity.
+
+\emph{(4)} In a basis, $c'(t) = 0$ means $(c^i)'(t) = 0$ for every $i$ and every $t \in I$. A real function on an interval with zero derivative is constant, by the mean value theorem. So every $c^i$ is constant, and so is $c$.
+\end{proof}
+
 \begin{defbox}[Lie Derivative of a Form]\deflabel{def:lie-derivative-form}
 Let $\alpha \in \Omega^k(M)$ and $p \in M$. For $t$ with $p \in M_t$ (at least for $|t|$ small) define
 \[
 \alpha_p(t) = (\varphi_t^*\alpha)_p = (d\varphi_t)_p^*\big(\alpha_{\varphi_t(p)}\big) \in \Lambda^k T_p^*M ,
 \]
-a curve in the vector space $\Lambda^k T_p^*M$; the vector space is the same for every $t$ (the board's ``$t$-independent''), and only the point $\alpha_p(t)$ moves. The curve $t \mapsto \alpha_p(t)$ is smooth (Lemma~\ref{lem:lie-derivative-form-smooth}). The \textbf{Lie derivative} of $\alpha$ with respect to $\mathbf{X}$ is the $k$-form $\mathcal{L}_\mathbf{X}\alpha$ given at each $p$ by
+a curve in the vector space $\Lambda^k T_p^*M$; the vector space is the same for every $t$ (the board's ``$t$-independent''), and only the point $\alpha_p(t)$ moves. The curve $t \mapsto \alpha_p(t)$ is smooth (Lemma~\ref{lem:lie-derivative-form-smooth}). The \textbf{Lie derivative} of $\alpha$ with respect to $\mathbf{X}$ is the $k$-form $\mathcal{L}_\mathbf{X}\alpha$ given at each $p$ by the derivative of this curve at $t = 0$ (Definition~\ref{def:curve-derivative-vs}):
 \[
 (\mathcal{L}_\mathbf{X}\alpha)_p = \frac{d}{dt}\Big|_{t=0} \alpha_p(t) = \lim_{t \to 0} \frac{1}{t}\Big( (\varphi_t^*\alpha)_p - \alpha_p \Big) .
 \]
 \leeref{Ch.~12, \emph{Lie Derivatives of Tensor Fields} (12.8)}
 \end{defbox}
 
-The definition makes sense for every $p$, because $(t, p) \in \mathcal{D}$ for $|t|$ small, and the open set $M_t$ containing $p$ is where $\varphi_t$ is defined and smooth; $\mathbf{X}$ need not be complete. The curve lives in one fixed finite-dimensional vector space, so its derivative is taken componentwise in any basis.
+The definition makes sense for every $p$, because $(t, p) \in \mathcal{D}$ for $|t|$ small, and the open set $M_t$ containing $p$ is where $\varphi_t$ is defined and smooth; $\mathbf{X}$ need not be complete. The curve lives in one fixed finite-dimensional vector space, so its derivative is taken componentwise in any basis, as in Definition~\ref{def:curve-derivative-vs}.
 
 %% >>> ADDED: figure (not from lecture; the board drew the left half)
 \begin{center}
@@ -37599,6 +37653,21 @@ The coefficient $g_A(t, x)$ is a sum of products of smooth functions of $(t, x)$
 and the curve is just the coefficient function composed with the flow, $f_A(x^1 + t, x^2, \ldots, x^m)$ times the fixed $dx^A|_x$. Its derivative at $t = 0$ is $\frac{\partial f_A}{\partial x^1}\, dx^A$.
 \end{proof}
 
+Example~\ref{ex:lie-derivative-form-straight} computes $\mathcal{L}_\mathbf{X}$ near the points where $\mathbf{X}$ does not vanish. The next lemma is the step from those points to all of $M$. It is used in the second proof of Theorem~\ref{thm:lie-derivative-form-properties}(2) and in the proof of Cartan's formula (Theorem~\ref{thm:cartan}); the proof that the Lie derivative of a vector field is the bracket (Theorem~\ref{thm:lie-derivative-bracket}) has the same three cases.
+
+\begin{lembox}[Forms That Agree Where the Field Does Not Vanish]\thmlabel{lem:agree-off-zeros}
+\textit{(Not from lecture as a separate statement; it is the last step of the lecture's proof of Cartan's formula, and of Lee's proof of Proposition 12.32.)} Let $\mathbf{X} \in \mathfrak{X}(M)$, with $\operatorname{supp}\mathbf{X} = \overline{\{q \in M : \mathbf{X}_q \neq 0\}}$, and let $\omega, \eta \in \Omega^k(M)$. Suppose that
+\begin{enumerate}[nosep]
+\item $\omega_q = \eta_q$ at every $q$ with $\mathbf{X}_q \neq 0$, and
+\item $\omega_q = \eta_q$ at every $q \in M \setminus \operatorname{supp}\mathbf{X}$.
+\end{enumerate}
+Then $\omega = \eta$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Filled in.)} The points not covered by (1) and (2) are the $p$ with $\mathbf{X}_p = 0$ and $p \in \operatorname{supp}\mathbf{X}$. Let $p$ be one, and $(U, (x^i))$ a chart at $p$. On $U$ write $\omega - \eta = \sum_A h_A\, dx^A$; the $h_A$ are smooth (Definition~\ref{def:smooth-k-form}), in particular continuous. By (1), $h_A(q) = 0$ at every $q \in U$ with $\mathbf{X}_q \neq 0$. Suppose $h_A(p) \neq 0$ for some $A$. By continuity there is an open $N \subseteq U$ containing $p$ on which $h_A \neq 0$. Since $p$ lies in the closure of $\{q : \mathbf{X}_q \neq 0\}$, the neighbourhood $N$ contains a point $q$ with $\mathbf{X}_q \neq 0$, and there $h_A(q) = 0$: a contradiction. So $h_A(p) = 0$ for every $A$, that is, $\omega_p = \eta_p$.
+\end{proof}
+
 The Lie derivative of forms has properties analogous to those of the exterior derivative; the only question in the product rule is whether there is a sign.
 
 \begin{thmbox}[Properties of the Lie Derivative of Forms]\thmlabel{thm:lie-derivative-form-properties}
@@ -37617,26 +37686,88 @@ The symbol $\mathcal{L}$ has two entries, $\mathbf{X}$ and $\alpha$; in this sec
 Lecture~34 gave explanations of (2) and (3), close to proofs, and a proof of (4). Below, each explanation is kept and completed to a proof.
 
 \begin{proof}
-\textit{(Lecture 34: explanations of (2) and (3) and the proof of (4), each completed; (1) is filled in.)}
+\textit{(Lecture 34 gave explanations of (2) and (3) and a proof of (4). For (2) and (3) the lecture's explanation is given first and then a complete proof; (1) and the details of (4) are filled in. Lee's proof of (2) follows as a second proof, and Lee's proof of (3) is Corollary~\ref{cor:lie-linear-in-X}(2).)}
 
-(1) Pullback is linear (Proposition~\ref{prop:pullback-k-form-properties}(1)), so $(\varphi_t^*(\alpha + c\alpha'))_p = \alpha_p(t) + c\,\alpha'_p(t)$, and the derivative at $t = 0$ of a sum of curves in the vector space $\Lambda^k T_p^*M$ is the sum of the derivatives.
-
-(2) \emph{Explanation} (Lecture 34). Very schematically, $\mathcal{L}_\mathbf{X}(\alpha \wedge \beta) = \frac{d}{dt}\big|_{t=0} \varphi_t^*(\alpha \wedge \beta)$, and pullback fits well with wedge, $\varphi_t^*(\alpha \wedge \beta) = (\varphi_t^*\alpha) \wedge (\varphi_t^*\beta)$. Evaluated on $k + l$ vectors this is a sum over shuffles $\sigma \in \mathrm{Sh}(k, l)$ of $\sgn(\sigma)$ times an ordinary product of a value of $\varphi_t^*\alpha$ and a value of $\varphi_t^*\beta$. The ordinary product rule of calculus gives a plus sign, and reconstituting the whole thing gives no additional signs. \emph{Proof} \textit{(filled in)}. Fix $p$. By Proposition~\ref{prop:pullback-k-form-properties}(2), $(\alpha \wedge \beta)_p(t) = \alpha_p(t) \wedge \beta_p(t)$. The wedge product $\Lambda^k T_p^*M \times \Lambda^l T_p^*M \to \Lambda^{k+l} T_p^*M$ is bilinear on fixed finite-dimensional spaces, and for a bilinear map $B$ and smooth curves $a(t)$, $b(t)$, $\frac{d}{dt} B(a(t), b(t)) = B(\dot a(t), b(t)) + B(a(t), \dot b(t))$ (in bases, $B$ is a sum of products of components, and this is the product rule for each). At $t = 0$ this is (2) at $p$.
-
-(3) \emph{Explanation} (Lecture 34). $\mathcal{L}_\mathbf{X}(d\alpha) = \frac{d}{dt}\big|_{t=0} \varphi_t^*(d\alpha) = \frac{d}{dt}\big|_{t=0} d(\varphi_t^*\alpha)$, since $d$ commutes with pullbacks (Theorem~\ref{thm:exterior-derivative}(4)). It remains to commute $d$ with $\frac{d}{dt}$, and that is Clairaut: written in coordinates, $\varphi_t^*\alpha$ is a smooth function of $t$ and $x$; $d$ involves the partials $\partial/\partial x^i$, and $\frac{d}{dt}$ is the derivative in $t$, so this is exchanging the order of differentiation. \emph{Proof} \textit{(filled in)}. Fix $p$ and take $U'$, $\varepsilon$ and $\varphi_t^*\alpha = \sum_A g_A(t, x)\, dx^A$ on $U'$ as in Lemma~\ref{lem:lie-derivative-form-smooth}. For each fixed $t$, $\varphi_t^*(d\alpha) = d(\varphi_t^*\alpha)$ on $U'$ (naturality for $\varphi_t|_{U'}$, with Lemma~\ref{lem:pullback-forms-functorial}(3)), and by Corollary~\ref{cor:d-coordinates},
+\emph{(1)} Fix $p \in M$. For $|t|$ small, pullback by $\varphi_t$ is linear (Proposition~\ref{prop:pullback-k-form-properties}(1)), so
 \[
-\varphi_t^*(d\alpha) = \sum_A \sum_j \frac{\partial g_A}{\partial x^j}(t, x)\; dx^j \wedge dx^A \quad \text{on } U' .
+\big(\varphi_t^*(\alpha + c\,\alpha')\big)_p = (\varphi_t^*\alpha)_p + c\,(\varphi_t^*\alpha')_p = \alpha_p(t) + c\,\alpha'_p(t) .
 \]
-Differentiating in $t$ at $t = 0$, componentwise, gives $\mathcal{L}_\mathbf{X}(d\alpha) = \sum_A \sum_j \frac{\partial^2 g_A}{\partial t\, \partial x^j}(0, x)\, dx^j \wedge dx^A$ on $U'$. On the other hand $\mathcal{L}_\mathbf{X}\alpha = \sum_A \frac{\partial g_A}{\partial t}(0, x)\, dx^A$, so $d(\mathcal{L}_\mathbf{X}\alpha) = \sum_A \sum_j \frac{\partial^2 g_A}{\partial x^j\, \partial t}(0, x)\, dx^j \wedge dx^A$. The mixed partials of the smooth functions $g_A$ agree.
+The derivative of a linear combination of curves in $\Lambda^k T_p^*M$ is the linear combination of the derivatives (Lemma~\ref{lem:curve-derivative-rules}(2)); at $t = 0$ this gives $\big(\mathcal{L}_\mathbf{X}(\alpha + c\,\alpha')\big)_p = (\mathcal{L}_\mathbf{X}\alpha)_p + c\,(\mathcal{L}_\mathbf{X}\alpha')_p$.
 
-(4) \textit{(Lecture 34; it follows from the group law.)} Fix $t$ and $p \in M_t$, and let $q = \varphi_t(p)$. For $|s|$ small, the group law (Proposition~\ref{prop:group-law}) gives $\varphi_s \circ \varphi_t = \varphi_{t+s} = \varphi_t \circ \varphi_s$ near $p$ (these flows commute), and in particular $\varphi_{t+s}(p) = \varphi_s(q)$. By Definition~\ref{def:lie-derivative-form} and Lemma~\ref{lem:pullback-forms-functorial}(1),
+\emph{(2), the lecture's explanation.} Very schematically, $\mathcal{L}_\mathbf{X}(\alpha \wedge \beta) = \frac{d}{dt}\big|_{t=0} \varphi_t^*(\alpha \wedge \beta)$, and pullback fits well with wedge, $\varphi_t^*(\alpha \wedge \beta) = (\varphi_t^*\alpha) \wedge (\varphi_t^*\beta)$. Evaluated on $k + l$ vectors this is a sum over shuffles $\sigma \in \mathrm{Sh}(k, l)$ of $\sgn(\sigma)$ times an ordinary product of a value of $\varphi_t^*\alpha$ and a value of $\varphi_t^*\beta$. The ordinary product rule of calculus gives a plus sign, and reconstituting the whole thing gives no additional signs.
+
+\emph{(2), proof} \textit{(filled in; it makes the explanation precise)}. Fix $p \in M$. For $|t|$ small, $p \in M_t$, and Proposition~\ref{prop:pullback-k-form-properties}(2), applied to the smooth map $\varphi_t : M_t \to M$ at the point $p$, gives
+\[
+(\alpha \wedge \beta)_p(t) = \big(\varphi_t^*(\alpha \wedge \beta)\big)_p = (\varphi_t^*\alpha)_p \wedge (\varphi_t^*\beta)_p = \alpha_p(t) \wedge \beta_p(t) .
+\]
+The wedge product
+\[
+B : \Lambda^k T_p^*M \times \Lambda^l T_p^*M \longrightarrow \Lambda^{k+l} T_p^*M, \qquad B(a, b) = a \wedge b ,
+\]
+is bilinear (Proposition~\ref{prop:wedge-properties}(1)), and the three spaces do not depend on $t$. The curves $t \mapsto \alpha_p(t)$ and $t \mapsto \beta_p(t)$ are smooth (Lemma~\ref{lem:lie-derivative-form-smooth}). So Lemma~\ref{lem:curve-derivative-rules}(3), at $t_0 = 0$, applies:
+\begin{align*}
+\big(\mathcal{L}_\mathbf{X}(\alpha \wedge \beta)\big)_p = \frac{d}{dt}\Big|_{t=0} B\big(\alpha_p(t), \beta_p(t)\big)
+&= B\big(\alpha_p'(0), \beta_p(0)\big) + B\big(\alpha_p(0), \beta_p'(0)\big) \\
+&= (\mathcal{L}_\mathbf{X}\alpha)_p \wedge \beta_p + \alpha_p \wedge (\mathcal{L}_\mathbf{X}\beta)_p ,
+\end{align*}
+using $\alpha_p(0) = \alpha_p$, $\beta_p(0) = \beta_p$ and Definition~\ref{def:lie-derivative-form}. As $p$ was arbitrary, this is (2). No sign appears because the rule of Lemma~\ref{lem:curve-derivative-rules}(3) has none: $B$ is differentiated in each of its two arguments, and the two factors are never exchanged. For $d$ the sign $(-1)^{|\alpha|}$ comes from moving a one-form across $\alpha$ (Theorem~\ref{thm:exterior-derivative}(2)); here nothing is moved.
+
+\emph{(3), the lecture's explanation.} $\mathcal{L}_\mathbf{X}(d\alpha) = \frac{d}{dt}\big|_{t=0} \varphi_t^*(d\alpha) = \frac{d}{dt}\big|_{t=0} d(\varphi_t^*\alpha)$, since $d$ commutes with pullbacks (Theorem~\ref{thm:exterior-derivative}(4)). It remains to commute $d$ with $\frac{d}{dt}$, and that is Clairaut: written in coordinates, $\varphi_t^*\alpha$ is a smooth function of $t$ and $x$; $d$ involves the partials $\partial/\partial x^i$, and $\frac{d}{dt}$ is the derivative in $t$, so this is exchanging the order of differentiation.
+
+\emph{(3), proof} \textit{(filled in)}. Fix $p \in M$ and a chart $(U, (x^i))$ at $p$. By Lemma~\ref{lem:lie-derivative-form-smooth} there are an open $U' \subseteq U$ containing $p$ and $\varepsilon > 0$ with
+\[
+\varphi_t^*\alpha = \sum_A g_A(t, x)\, dx^A \quad \text{on } U' \text{ for } |t| < \varepsilon, \qquad \mathcal{L}_\mathbf{X}\alpha = \sum_A \frac{\partial g_A}{\partial t}(0, x)\, dx^A \quad \text{on } U' ,
+\]
+with every $g_A$ smooth on $(-\varepsilon, \varepsilon) \times U'$.
+
+\emph{The right-hand side of (3).} By Corollary~\ref{cor:d-coordinates}, applied to the form $\mathcal{L}_\mathbf{X}\alpha$ in the chart $(U', (x^i))$,
+\[
+d(\mathcal{L}_\mathbf{X}\alpha) = \sum_A \sum_{j=1}^m \frac{\partial^2 g_A}{\partial x^j\, \partial t}(0, x)\; dx^j \wedge dx^A \quad \text{on } U' .
+\]
+
+\emph{The left-hand side of (3).} Fix $t$ with $|t| < \varepsilon$. The restriction of $\varphi_t$ to $U'$ is a smooth map into $M$, so naturality of $d$ (Theorem~\ref{thm:exterior-derivative}(4), with Lemma~\ref{lem:pullback-forms-functorial}(3) for the restriction to $U'$) and then Corollary~\ref{cor:d-coordinates} give, on $U'$,
+\[
+\varphi_t^*(d\alpha) = d(\varphi_t^*\alpha) = d\Big( \sum_A g_A(t, x)\, dx^A \Big) = \sum_A \sum_{j=1}^m \frac{\partial g_A}{\partial x^j}(t, x)\; dx^j \wedge dx^A .
+\]
+Now fix $x \in U'$ and let $t$ vary. The curve $t \mapsto \big(\varphi_t^*(d\alpha)\big)_x$ in $\Lambda^{k+1} T_x^*M$ is a sum of terms, each a function of $t$, namely $\frac{\partial g_A}{\partial x^j}(t, x)$, times the fixed vector $(dx^j \wedge dx^A)|_x$. The derivative of such a term is the derivative of the function times the vector (the sentence after Definition~\ref{def:curve-derivative-vs}), and the derivative of a sum is the sum of the derivatives (Lemma~\ref{lem:curve-derivative-rules}(2)); the vectors $(dx^j \wedge dx^A)|_x$ need not be linearly independent for this. So, by Definition~\ref{def:lie-derivative-form},
+\[
+\big(\mathcal{L}_\mathbf{X}(d\alpha)\big)_x = \frac{d}{dt}\Big|_{t=0} \big(\varphi_t^*(d\alpha)\big)_x = \sum_A \sum_{j=1}^m \frac{\partial^2 g_A}{\partial t\, \partial x^j}(0, x)\; (dx^j \wedge dx^A)\big|_x .
+\]
+
+\emph{Comparison.} In the coordinates $(t, x^1, \ldots, x^m)$, each $g_A$ is a smooth function on an open subset of $\mathbb{R}^{1+m}$, so its mixed second partial derivatives agree (Clairaut's theorem): $\frac{\partial^2 g_A}{\partial t\, \partial x^j} = \frac{\partial^2 g_A}{\partial x^j\, \partial t}$. Hence the two sides of (3) agree at every $x \in U'$, in particular at $p$; and $p$ was arbitrary. This is the exchange of $d$ and $\frac{d}{dt}$ of the explanation. \emph{Lee's proof} of (3) is different: it follows from Cartan's formula and $d \circ d = 0$ (Lee, Corollary~14.36); in these notes that proof is Corollary~\ref{cor:lie-linear-in-X}(2), and the proof of Cartan's formula does not use (3).
+
+\emph{(4)} \textit{(Lecture 34; it follows from the group law. The domains are filled in.)} Fix $t$ and $p \in M_t$, and let $q = \varphi_t(p)$. \emph{The flows commute near $p$.} The domain $\mathcal{D}$ of the flow is open (Theorem~\ref{thm:maximal-flow}) and contains $(t, p)$ and $(0, p)$, so there are $\delta > 0$ and an open $N \subseteq M_t$ containing $p$ such that $(s, x)$ and $(t + s, x)$ lie in $\mathcal{D}$ for all $|s| < \delta$ and $x \in N$. For such $s$ and $x$ the group law (Proposition~\ref{prop:group-law}(2)) gives, applied at $x$ first with the time $t$ and then with the time $s$, and the other way around,
+\[
+\varphi_s\big(\varphi_t(x)\big) = \varphi_{t+s}(x) = \varphi_t\big(\varphi_s(x)\big) .
+\]
+So $\varphi_s \circ \varphi_t = \varphi_t \circ \varphi_s$ on $N$, and in particular $\varphi_{t+s}(p) = \varphi_s(q)$. \emph{The computation.} By Definition~\ref{def:lie-derivative-form} for the form $\varphi_t^*\alpha$ on $M_t$; then by Lemma~\ref{lem:pullback-forms-functorial}(1), which gives $\varphi_s^*\varphi_t^*\alpha = (\varphi_t \circ \varphi_s)^*\alpha = (\varphi_s \circ \varphi_t)^*\alpha = \varphi_t^*\varphi_s^*\alpha$ on $N$; then by Definition~\ref{def:pullback-k-form} at the point $p$:
 \[
 \mathcal{L}_\mathbf{X}(\varphi_t^*\alpha)_p = \frac{d}{ds}\Big|_{s=0} \big(\varphi_s^*\varphi_t^*\alpha\big)_p = \frac{d}{ds}\Big|_{s=0} \big(\varphi_t^*\varphi_s^*\alpha\big)_p = \frac{d}{ds}\Big|_{s=0} (d\varphi_t)_p^*\, \big(\varphi_s^*\alpha\big)_q = \frac{d}{ds}\Big|_{s=0} (d\varphi_t)_p^*\, \alpha_q(s) .
 \]
-Now $t$ is fixed, so the differential $(d\varphi_t)_p : T_pM \to T_qM$ induces a fixed linear map $(d\varphi_t)_p^* : \Lambda^k T_q^*M \to \Lambda^k T_p^*M$; and $s \mapsto \alpha_q(s)$ is a curve in $\Lambda^k T_q^*M$. The curve in $\Lambda^k T_p^*M$ being differentiated is the image of this curve under the linear map, and taking the derivative commutes with a linear map:
+Now $t$ is fixed, so the differential $(d\varphi_t)_p : T_pM \to T_qM$ induces a fixed linear map $(d\varphi_t)_p^* : \Lambda^k T_q^*M \to \Lambda^k T_p^*M$ (linear by its formula in Definition~\ref{def:linear-pullback}); and $s \mapsto \alpha_q(s)$ is a curve in $\Lambda^k T_q^*M$, smooth by Lemma~\ref{lem:lie-derivative-form-smooth}. The curve in $\Lambda^k T_p^*M$ being differentiated is the image of this curve under the linear map, and taking the derivative commutes with a linear map (Lemma~\ref{lem:curve-derivative-rules}(2)):
 \[
 \mathcal{L}_\mathbf{X}(\varphi_t^*\alpha)_p = (d\varphi_t)_p^*\, \frac{d}{ds}\Big|_{s=0} \alpha_q(s) = (d\varphi_t)_p^*\, (\mathcal{L}_\mathbf{X}\alpha)_q = \big(\varphi_t^*(\mathcal{L}_\mathbf{X}\alpha)\big)_p . \qedhere
 \]
+\end{proof}
+
+\begin{proof}[Second proof of (2)]
+\textit{(Lee's proof: Proposition 12.32, with the same technique for Proposition 14.33, whose details Lee leaves as Exercise 14.34. Written out here.)} Both sides of (2) are smooth $(k + l)$-forms (Lemma~\ref{lem:lie-derivative-form-smooth} and Proposition~\ref{prop:forms-operations-smooth}). By Lemma~\ref{lem:agree-off-zeros} it suffices to compare them at the points where $\mathbf{X}$ does not vanish and at the points outside $\operatorname{supp}\mathbf{X}$.
+
+\emph{Points $q$ with $\mathbf{X}_q \neq 0$.} Take coordinates $(x^1, \ldots, x^m)$ on a neighbourhood $U$ of $q$ with $\mathbf{X} = \partial/\partial x^1$ (Lemma~\ref{lem:straightening}). As in Example~\ref{ex:lie-derivative-form-straight}, for $x$ near $q$ and $|t|$ small the flow is $\varphi_t(x) = x + te_1$ and stays in $U$, so near $q$ the Lie derivative of a form is computed from its restriction to $U$. On $U$ write $\alpha = \sum_A f_A\, dx^A$ and $\beta = \sum_B h_B\, dx^B$. Both sides of (2) are linear in $\alpha$ and in $\beta$ (by (1) and Proposition~\ref{prop:wedge-properties}(1)), so it suffices to take one term of each: $\alpha = f\, dx^A$ and $\beta = h\, dx^B$, with $f, h$ smooth. Then $\alpha \wedge \beta = fh\; dx^A \wedge dx^B$. For a smooth function $g$, the computation of Example~\ref{ex:lie-derivative-form-straight} applies to $g\, dx^A \wedge dx^B$ word for word: $\varphi_t^*(dx^a) = dx^a$ for every $a$, so $\varphi_t^*(dx^A \wedge dx^B) = dx^A \wedge dx^B$ (Proposition~\ref{prop:pullback-k-form-properties}(2)), and $\varphi_t^*(g\, dx^A \wedge dx^B) = (g \circ \varphi_t)\, dx^A \wedge dx^B$, a function of $t$ times a fixed vector at each point; so
+\[
+\mathcal{L}_\mathbf{X}\big(g\; dx^A \wedge dx^B\big) = \frac{\partial g}{\partial x^1}\; dx^A \wedge dx^B .
+\]
+With $g = fh$ and the product rule of calculus,
+\begin{align*}
+\mathcal{L}_\mathbf{X}(\alpha \wedge \beta) = \frac{\partial (fh)}{\partial x^1}\; dx^A \wedge dx^B
+&= \Big( \frac{\partial f}{\partial x^1}\, dx^A \Big) \wedge \big( h\, dx^B \big) + \big( f\, dx^A \big) \wedge \Big( \frac{\partial h}{\partial x^1}\, dx^B \Big) \\
+&= (\mathcal{L}_\mathbf{X}\alpha) \wedge \beta + \alpha \wedge (\mathcal{L}_\mathbf{X}\beta) ,
+\end{align*}
+by Example~\ref{ex:lie-derivative-form-straight} for $\alpha$ and for $\beta$. The functions pass through the wedge product because it is bilinear at each point.
+
+\emph{Points $q \notin \operatorname{supp}\mathbf{X}$.} $\mathbf{X}$ vanishes on an open $W$ containing $q$. The constant curves in $W$ are integral curves of $\mathbf{X}$, so $\varphi_t(x) = x$ for $x \in W$ and all $t$, by uniqueness of integral curves (Proposition~\ref{prop:global-uniqueness}). Then $(\varphi_t^*\gamma)_q = \gamma_q$ for every form $\gamma$ and every $t$: the curve is constant and $(\mathcal{L}_\mathbf{X}\gamma)_q = 0$. So both sides of (2) are $0$ at $q$.
+
+By Lemma~\ref{lem:agree-off-zeros}, the two sides of (2) agree on $M$.
 \end{proof}
 
 %% >>> ADDED: diagram (after the board)
@@ -37662,7 +37793,7 @@ In particular, if $\mathcal{L}_\mathbf{X}\alpha = 0$, then $\varphi_t^*\alpha = 
 \end{corbox}
 
 \begin{proof}
-\textit{(Lecture 34: the curves $t \mapsto (\varphi_t^*\alpha)_p$ are constant; the derivative at every time is filled in.)} Fix $p$ and $t_0$ with $p \in M_{t_0}$. Then $(\varphi_{t_0 + s}^*\alpha)_p = (\varphi_s^*\varphi_{t_0}^*\alpha)_p$ for small $|s|$, by the group law, so the derivative at $t_0$ of $t \mapsto (\varphi_t^*\alpha)_p$ is the derivative at $s = 0$ of $s \mapsto (\varphi_s^*(\varphi_{t_0}^*\alpha))_p$, which is $\mathcal{L}_\mathbf{X}(\varphi_{t_0}^*\alpha)_p = (\varphi_{t_0}^*\mathcal{L}_\mathbf{X}\alpha)_p$ by (4). If $\mathcal{L}_\mathbf{X}\alpha = 0$, the curve $t \mapsto (\varphi_t^*\alpha)_p$, defined on the open interval of times of the maximal integral curve through $p$, an interval containing $0$, has zero derivative everywhere, so it is constant, equal to its value $\alpha_p$ at $t = 0$.
+\textit{(Lecture 34: the curves $t \mapsto (\varphi_t^*\alpha)_p$ are constant; the derivative at every time is filled in.)} Fix $p$ and $t_0$ with $p \in M_{t_0}$. Then $(\varphi_{t_0 + s}^*\alpha)_p = (\varphi_s^*\varphi_{t_0}^*\alpha)_p$ for small $|s|$, by the group law, so the derivative at $t_0$ of $t \mapsto (\varphi_t^*\alpha)_p$ is the derivative at $s = 0$ of $s \mapsto (\varphi_s^*(\varphi_{t_0}^*\alpha))_p$, which is $\mathcal{L}_\mathbf{X}(\varphi_{t_0}^*\alpha)_p = (\varphi_{t_0}^*\mathcal{L}_\mathbf{X}\alpha)_p$ by (4). If $\mathcal{L}_\mathbf{X}\alpha = 0$, the curve $t \mapsto (\varphi_t^*\alpha)_p$, defined on the open interval of times of the maximal integral curve through $p$, an interval containing $0$, has zero derivative everywhere, so it is constant (Lemma~\ref{lem:curve-derivative-rules}(4)), equal to its value $\alpha_p$ at $t = 0$.
 \end{proof}
 
 \emph{Divergence and volume.} Lecture~34 gave a first application of Corollary~\ref{cor:lie-zero-invariant}, on open subsets of $\mathbb{R}^m$ (or in local coordinates), through a problem on Homework~10.
@@ -37778,7 +37909,7 @@ So the right-hand side is $\frac{\partial f_A}{\partial x^1}\, dx^A$, the left-h
 
 \emph{2nd: $p \in M \setminus \operatorname{supp}\mathbf{X}$}, where $\operatorname{supp}\mathbf{X} = \overline{\{q \in M : \mathbf{X}_q \neq 0\}}$, as for functions (Definition~\ref{def:support}). Both sides are zero at $p$. \textit{(Filled in.)} $\mathbf{X}$ vanishes on a neighbourhood $W$ of $p$, so the constant curves are its integral curves there, $\varphi_t = \mathrm{id}$ on $W$, $\alpha_p(t) = \alpha_p$ and $(\mathcal{L}_\mathbf{X}\alpha)_p = 0$; and $\iota_\mathbf{X}\alpha$ and $\iota_\mathbf{X}\,d\alpha$ vanish on $W$, so $d(\iota_\mathbf{X}\alpha)$ vanishes at $p$ as well.
 
-\emph{The remaining points: $\mathbf{X}_p = 0$ and $p \in \operatorname{supp}\mathbf{X}$}, for instance $p$ on the boundary of the support. The formula follows by continuity. \textit{(Filled in.)} Every neighbourhood of $p$ contains points $q$ with $\mathbf{X}_q \neq 0$, where the formula holds by the first case; both sides are smooth, in particular continuous, $k$-forms (Lemma~\ref{lem:lie-derivative-form-smooth}), so in a chart at $p$ their components are continuous functions that agree at points accumulating at $p$, hence at $p$.
+\emph{The remaining points: $\mathbf{X}_p = 0$ and $p \in \operatorname{supp}\mathbf{X}$}, for instance $p$ on the boundary of the support. The formula follows by continuity. \textit{(Filled in.)} Every neighbourhood of $p$ contains points $q$ with $\mathbf{X}_q \neq 0$, where the formula holds by the first case; both sides are smooth, in particular continuous, $k$-forms (Lemma~\ref{lem:lie-derivative-form-smooth}), so in a chart at $p$ their components are continuous functions that agree at points accumulating at $p$, hence at $p$. This step, written out, is Lemma~\ref{lem:agree-off-zeros}, applied to the two sides of the formula.
 \end{proof}
 
 \textbf{Transcription notes (Lecture 34).} In the handwritten notes the first term appears as $d\,\iota_\mathbf{X}\alpha = df_A \wedge d\,\iota_\mathbf{X}(dx^A)$ and the second as $\iota_\mathbf{X} d\alpha = (\iota_\mathbf{X} df_A) \wedge dx^A - df_A \wedge d\big(\iota_\mathbf{X}(dx^A)\big)$; in both places the term is $df_A \wedge \iota_\mathbf{X}(dx^A)$, with no second $d$, as said in the lecture, and it cancels. In the second case the lecture first said the complement of the support of $\alpha$, and corrected it to the support of $\mathbf{X}$. The board's last case, ``$p \in \partial\operatorname{supp}(\mathbf{X})$'', should include all zeros of $\mathbf{X}$ in its support, not only the boundary points: the three cases must cover $M$, and the continuity argument applies to all of them.

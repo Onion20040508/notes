@@ -10,7 +10,7 @@ tags: [chapter, differentiable-manifolds]
 *Lecture 23. “We get a little bit disorganized, I'm sorry … It's actually a new chapter in Lee. We're in sync with Lee in a way. It's going to be Chapter 9.” The chapter on vector fields ([[§56 Vector Fields|§56]]–[[§61 Lie Group Morphisms and Linear Groups|§61]]) treated vector fields *as operators*: derivations, the commutator, the Lie algebra of a Lie group. “But now we have this other side of vector fields … as velocities”: vector fields as *generators of dynamics*. Think of $\mathbf{X} \in \mathfrak{X}(M)$ as a section of $TM \to M$ (Definition [[§56 Vector Fields#^def-56-1|§56.1]]), a velocity vector attached to each point.*
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (4), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (3), [[· 3 Smooth Structures|3 Smooth Structures]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (26), [[· 5 Submersions, Immersions and Submanifolds|5 Submersions, Immersions and Submanifolds]] (16), [[· 6 Fibrations and Bundles|6 Fibrations and Bundles]] (2), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (48)
-**Used by:** [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 11 Differential Forms|11 Differential Forms]] (6)
+**Used by:** [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 11 Differential Forms|11 Differential Forms]] (9)
 **Builds on (other subjects):** —
 
 ## Sections
