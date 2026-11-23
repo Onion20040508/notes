@@ -432,7 +432,7 @@ Orthogonality limits, for the first time, the number of simple representations o
 
 ^pf-ex-71-3
 
-*Uses:* [[§68 Homomorphisms Between Representations#^def-68-2|Def. §68.2]], [[§72 Representations of Cyclic Groups#^ex-72-2|Ex. §72.2]]
+*Uses:* [[§72 Representations of Cyclic Groups#^ex-72-2|Ex. §72.2]], [[§68 Homomorphisms Between Representations#^def-68-2|Def. §68.2]]
 
 ![[m493-71-5.svg]]
 

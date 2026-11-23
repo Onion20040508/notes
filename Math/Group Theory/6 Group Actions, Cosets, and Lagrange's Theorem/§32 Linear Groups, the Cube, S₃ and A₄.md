@@ -177,7 +177,7 @@ tags: [group-theory, math493]
 *(Not from lecture; animation added, vault only.)* One rotation of each kind, with the four body diagonals coloured and numbered: the identity; $90^\circ$ about a face axis, $(1\,2\,3\,4)$; $180^\circ$ about a face axis, $(1\,2)(3\,4)$; $120^\circ$ about a vertex axis, $(2\,4\,3)$; $180^\circ$ about an edge axis, $(1\,3)$. Each rotation permutes the diagonals, and the five kinds ($1 + 6 + 3 + 8 + 6 = 24$ rotations) are the five cycle types of $S_4$.
 
 > [!remark] Remark: The Cleanest Description
-> Since $|G| = 24 = |S_4|$, it is enough to show that the homomorphism $G \to S_4$ is injective, i.e. that the action on the diagonals is faithful. This identification is the cleanest description of the rotation group.
+> Since $|G| = 24 = |S_4|$, it is enough to show that the homomorphism $G \to S_4$ is injective, i.e. that the action on the diagonals is faithful. This identification is the cleanest description of the rotation group. In the other direction, the representation $V_3$ of $S_4$ lets $S_4$ act by the $24$ rotations of the cube, by explicit matrices (Example [[§73 The Character Table of S₄#^ex-73-3|§73.3]]).
 
 ^rem-32-3
 

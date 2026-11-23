@@ -22,6 +22,7 @@ tags: [group-theory, hub]
 - [[§12 Multiplying and Conjugating Cycles#^prop-12-2|Proposition §12.2: Every Permutation Is a Product of Transpositions]]
 - [[§12 Multiplying and Conjugating Cycles#^ex-12-3|Example §12.3: The Shift on ℤ: an Infinite Cycle]]
 - [[§33 Conjugacy Classes#^thm-33-3|Theorem §33.3: Conjugacy Classes in Sₙ Are Cycle Types]]
+- [[§73 The Character Table of S₄#^lem-73-1|Lemma §73.1: Every Permutation Is Conjugate to Its Inverse]]
 
 ## Connections
 - **Used for.** Computing with permutations: inverses, powers, and order = lcm of the cycle lengths ([[§11 Disjoint Cycle Decomposition#^prop-11-4|§11.4]]). Also every permutation is a product of transpositions ([[§12 Multiplying and Conjugating Cycles#^prop-12-2|§12.2]]), the input to [[The Sign Homomorphism]].

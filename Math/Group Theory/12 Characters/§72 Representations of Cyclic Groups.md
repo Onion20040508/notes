@@ -5,7 +5,7 @@ chapter: 12
 section: 72
 tags: [group-theory, math493]
 ---
-← [[§71 The Character Table]] · ↑ [[· 12 Characters]]
+← [[§71 The Character Table]] · ↑ [[· 12 Characters]] · [[§73 The Character Table of S₄]] →
 
 *Source: Lecture (Fri Nov 20), from a handwritten page of the board; there was no worksheet.*
 
@@ -270,7 +270,7 @@ For $\mathbb{Z}/N\mathbb{Z}$ over $\mathbb{C}$ the inequality of Corollary [[§7
 
 ^pf-72-8
 
-*Uses:* [[§72 Representations of Cyclic Groups#^prop-72-1|§72.1]], [[§72 Representations of Cyclic Groups#^cor-72-6|§72.6]], [[§70 Schur's Lemma and Multiplicities#^def-70-1|Def. §70.1]], [[§72 Representations of Cyclic Groups#^lem-72-2|§72.2]]
+*Uses:* [[§68 Homomorphisms Between Representations#^prop-68-9|§68.9]], [[§72 Representations of Cyclic Groups#^prop-72-1|§72.1]], [[§72 Representations of Cyclic Groups#^cor-72-6|§72.6]], [[§70 Schur's Lemma and Multiplicities#^def-70-1|Def. §70.1]], [[§72 Representations of Cyclic Groups#^lem-72-2|§72.2]]
 
 > [!remark]- Connections
 > - Linear Algebra: diagonalizable means a basis of eigenvectors, [[§17 Diagonalizable Operators#^ladr-5-55|LADR 5.55]]; the minimal-polynomial criterion used in the second proof, [[§17 Diagonalizable Operators#^ladr-5-62|LADR 5.62]].
@@ -411,7 +411,7 @@ Theorem [[§72 Representations of Cyclic Groups#^thm-72-5|§72.5]] is a statemen
 
 ^pf-72-10
 
-*Uses:* [[§72 Representations of Cyclic Groups#^prop-72-1|§72.1]], [[§72 Representations of Cyclic Groups#^lem-72-2|§72.2]], [[§71 The Character Table#^ex-71-3|Ex. §71.3]], [[§71 The Character Table#^ex-71-2|Ex. §71.2]], [[§67 Characters of Representations#^lem-67-3|§67.3]]
+*Uses:* [[§71 The Character Table#^ex-71-2|Ex. §71.2]], [[§72 Representations of Cyclic Groups#^prop-72-1|§72.1]], [[§72 Representations of Cyclic Groups#^lem-72-2|§72.2]], [[§71 The Character Table#^ex-71-3|Ex. §71.3]], [[§67 Characters of Representations#^lem-67-3|§67.3]]
 
 > [!remark] Remark: $\mathbb{Z}/4\mathbb{Z}$ over $\mathbb{R}$ and over $\mathbb{C}$
 > $\mathbb{Z}/4\mathbb{Z}$ has four conjugacy classes. Over $\mathbb{C}$ it has four simple representations, $\mathbb{C}_0, \mathbb{C}_1, \mathbb{C}_2, \mathbb{C}_3$ (Theorem [[§72 Representations of Cyclic Groups#^thm-72-5|§72.5]]); over $\mathbb{R}$ it has three (Proposition [[§72 Representations of Cyclic Groups#^prop-72-10|§72.10]]), so the inequality of WS 18.4(2) (Corollary [[§71 The Character Table#^cor-71-7|§71.7]]) is strict over $\mathbb{R}$. The trivial representation and $(-1)^j$ are $\mathbb{C}_0$ and $\mathbb{C}_2$, whose characters are real. The characters $\chi_1$ and $\chi_3$ are not real, and they are complex conjugates of each other; neither $\mathbb{C}_1$ nor $\mathbb{C}_3$ is defined over $\mathbb{R}$, but their sum is, and it is the simple real representation $R$ (Example [[§72 Representations of Cyclic Groups#^ex-72-2|§72.2]]). The weights in WS 18.3 (Proposition [[§71 The Character Table#^prop-71-5|§71.5]](1)) record this: $\langle \chi_R, \chi_R \rangle = \dim\operatorname{Hom}_G(R, R) = 2 = 1^2 + 1^2$.

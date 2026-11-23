@@ -32,6 +32,7 @@ tags: [group-theory, hub]
 - [[§56 Simple Groups of Small Order#^prop-56-7|Proposition §56.7: The Conjugation Homomorphism G → S_n_p]]
 - [[§56 Simple Groups of Small Order#^lem-56-8|Lemma §56.8: Homomorphisms That Leave A_N]]
 - [[§59 Groups of Affine Maps#^prop-59-2|Proposition §59.2: Translations Form the Normal Subgroup]]
+- [[§73 The Character Table of S₄#^prop-73-14|Proposition §73.14: The Two-Dimensional Representation Comes from S_3]]
 
 ## Used in (Topology)
 - [[§27 Free Groups and Presentations#^def-27-6|Definition §27.6: Group Presentation]]

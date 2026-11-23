@@ -16,7 +16,7 @@ tags: [group-theory, hub]
 - [[§33 Conjugacy Classes#^def-33-2|Definition §33.2: Cycle Type]]
 
 ## Used in (Group Theory)
-- (not cited later in the course)
+- [[§73 The Character Table of S₄#^lem-73-1|Lemma §73.1: Every Permutation Is Conjugate to Its Inverse]]
 
 ## Connections
 - **Used for.** The class sizes of S₃ and S₄ ([[§33 Conjugacy Classes#^ex-33-2|Ex. §33.2]]), hence their class equations ([[§34 Conjugation as an Action and the Class Equation#^ex-34-1|Ex. §34.1]]) and their normal subgroups, e.g. {e}, K, A₄, S₄ in S₄ ([[§39 Sources of Normal Subgroups#^ex-39-3|Ex. §39.3]]). Finding an explicit conjugating permutation: [[§33 Conjugacy Classes#^ex-33-1|Ex. §33.1]].

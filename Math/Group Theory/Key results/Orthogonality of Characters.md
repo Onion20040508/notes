@@ -19,6 +19,7 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§71 The Character Table#^prop-71-6|Proposition §71.6: Characters of Non-Isomorphic Simple Representations Are Linearly Independent]]
 - [[§72 Representations of Cyclic Groups#^prop-72-7|Proposition §72.7: The Multiplicities a_k from the Character]]
+- [[§73 The Character Table of S₄#^prop-73-2|Proposition §73.2: Multiplicities from the Character]]
 
 ## Connections
 - TODO

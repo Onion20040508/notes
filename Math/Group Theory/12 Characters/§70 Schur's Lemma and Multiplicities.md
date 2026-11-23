@@ -124,6 +124,8 @@ The underlying set of $V^{\oplus a}$ is the set $V^a$ of $a$-tuples. The notatio
 
 ^pf-70-2
 
+*Uses:* [[§67 Characters of Representations#^prop-67-2|§67.2]]
+
 > [!theorem] Corollary §70.3: Decomposition into Simple Representations with Multiplicities
 > Let $G$ be a finite group, $k$ a field in which $|G| \neq 0$, and $V$ a finite-dimensional representation of $G$ over $k$. Then there are [[§65 Simple Representations#^def-65-1|simple]] representations $S_1, \ldots, S_r$ of $G$ over $k$, with $S_i \not\cong S_j$ for $i \neq j$, and positive integers $a_1, \ldots, a_r$ such that
 >
@@ -154,7 +156,7 @@ The underlying set of $V^{\oplus a}$ is the set $V^a$ of $a$-tuples. The notatio
 
 ^pf-70-3
 
-*Uses:* [[§65 Simple Representations#^cor-65-3|§65.3]], [[§65 Simple Representations#^def-65-3|Def. §65.3]], [[§61 Representations and Subrepresentations#^lem-61-5|§61.5]], [[§70 Schur's Lemma and Multiplicities#^lem-70-1|§70.1]]
+*Uses:* [[§70 Schur's Lemma and Multiplicities#^lem-70-11|§70.11]], [[§65 Simple Representations#^cor-65-3|§65.3]], [[§65 Simple Representations#^def-65-3|Def. §65.3]], [[§61 Representations and Subrepresentations#^lem-61-5|§61.5]], [[§70 Schur's Lemma and Multiplicities#^lem-70-1|§70.1]]
 
 > [!remark]- Connections
 > - Quantum Field Theory: complete reducibility of unitary representations of compact groups, [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-16|QFT Thm. §CB.7.16]].
@@ -443,7 +445,7 @@ For simple representations these two phenomena are general:
 
 ^pf-70-10
 
-*Uses:* [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]], [[§70 Schur's Lemma and Multiplicities#^cor-70-6|§70.6]], [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]]
+*Uses:* [[§70 Schur's Lemma and Multiplicities#^ex-70-1|Ex. §70.1]], [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]], [[§70 Schur's Lemma and Multiplicities#^cor-70-6|§70.6]], [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]]
 
 When every element of $G$ is conjugate to its inverse, as in a symmetric group, the sums in Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-10|§70.10]] are dot products of rows of the element-by-element table: different simple representations give orthogonal rows, and a simple representation with $\dim\operatorname{Hom}_G(S, S) = 1$ gives a row of squared length $|G|$.
 

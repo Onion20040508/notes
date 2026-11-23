@@ -231,7 +231,7 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 
 ^pf-64-3
 
-*Uses:* [[§64 Sesquilinear and Hermitian Forms#^def-64-3|Def. §64.3]], [[§64 Sesquilinear and Hermitian Forms#^def-64-1|Def. §64.1]]
+*Uses:* [[§64 Sesquilinear and Hermitian Forms#^def-64-1|Def. §64.1]], [[§64 Sesquilinear and Hermitian Forms#^def-64-3|Def. §64.3]]
 
 > [!theorem] Proposition §64.4: Orthonormal Bases for a Positive Definite Hermitian Form
 > Let $V$ be a finite-dimensional complex vector space with a positive definite Hermitian form $\langle\ ,\ \rangle$. Then $V$ has an orthonormal basis, i.e. a basis $w_1, \ldots, w_n$ with $\langle w_i, w_j \rangle = 1$ if $i = j$ and $0$ otherwise. It is obtained from any basis by the Gram–Schmidt algorithm, exactly as over $\mathbb{R}$.
