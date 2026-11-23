@@ -31,7 +31,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§74 The Integrand Is a Two-Form#^lem-74-1|Lemma §74.1: Properties of dx^i wedge dx^j]]: 50 later results
-- [[§75 Multilinear Algebra#^lem-75-1|Lemma §75.1: Permuting the Entries of a k-Form]]: 49 later results
-- [[§75 Multilinear Algebra#^lem-75-2|Lemma §75.2: Alternating Forms Vanish on Dependent Vectors]]: 45 later results
-- [[§75 Multilinear Algebra#^cor-75-3|Corollary §75.3: No Nonzero k-Forms of Degree above the Dimension]]: 44 later results
+- [[§74 The Integrand Is a Two-Form#^lem-74-1|Lemma §74.1: Properties of dx^i wedge dx^j]]: 49 later results
+- [[§75 Multilinear Algebra#^lem-75-1|Lemma §75.1: Permuting the Entries of a k-Form]]: 48 later results
+- [[§75 Multilinear Algebra#^lem-75-2|Lemma §75.2: Alternating Forms Vanish on Dependent Vectors]]: 44 later results
+- [[§75 Multilinear Algebra#^cor-75-3|Corollary §75.3: No Nonzero k-Forms of Degree above the Dimension]]: 43 later results

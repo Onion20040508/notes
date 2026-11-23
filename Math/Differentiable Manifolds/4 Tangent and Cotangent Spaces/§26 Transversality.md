@@ -114,13 +114,15 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 ^pf-26-2
 
 > [!remark] Remark: The Surjectivity Step as an Image Computation
-> *(Not from lecture; the route of the official solution of Assignment 2, Problem 5.)* Apply Lemma [[§26 Transversality#^lem-26-2|§26.2]] with $B = G'(q)$ and $W = \operatorname{im} F'(p)$. Then $\ker G'(q) = T^{\mathrm{geo}}_qS$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), transversality says $\operatorname{im} F'(p) + T^{\mathrm{geo}}_qS = \mathbb{R}^k$, and
+> Apply Lemma [[§26 Transversality#^lem-26-2|§26.2]] with $B = G'(q)$ and $W = \operatorname{im} F'(p)$. Then $\ker G'(q) = T^{\mathrm{geo}}_qS$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), transversality says $\operatorname{im} F'(p) + T^{\mathrm{geo}}_qS = \mathbb{R}^k$, and
 >
 > $$
 > \operatorname{im}\,(G \circ F)'(p) = G'(q)\big(\operatorname{im} F'(p)\big) = G'(q)\big(\operatorname{im} F'(p) + \ker G'(q)\big) = G'(q)\big(\mathbb{R}^k\big) = \mathbb{R}^\ell ,
 > $$
 >
 > by the chain rule, the lemma, transversality, and surjectivity of $G'(q)$ ($0$ is a regular value of $G$ and $q \in G^{-1}(0)$). This is the lifting step of the proof in one line; it is used again in the second proof of Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]].
+>
+> *Source: not from lecture · official solution of Assignment 2, Problem 5*
 
 ^rem-26-2
 

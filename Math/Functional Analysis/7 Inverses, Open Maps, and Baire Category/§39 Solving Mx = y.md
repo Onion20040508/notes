@@ -193,13 +193,15 @@ Closedness of a graph, in a picture. Left: the points $(x_n, Mx_n)$ of the graph
 ^rem-39-3
 
 > [!example] Example §39.2: The Projection onto the First Coordinate
-> *(Not from lecture.)* The projection $P : \mathbb{R}^2 \to \mathbb{R}$, $P(x, y) = x$, is closed in the graph sense (Definition [[§39 Solving Mx = y#^def-39-5|§39.5]]), but it maps the closed set $H = \{ (x, y) : xy = 1 \}$ onto $\mathbb{R} \setminus \{0\}$, which is not closed.
+> The projection $P : \mathbb{R}^2 \to \mathbb{R}$, $P(x, y) = x$, is closed in the graph sense (Definition [[§39 Solving Mx = y#^def-39-5|§39.5]]), but it maps the closed set $H = \{ (x, y) : xy = 1 \}$ onto $\mathbb{R} \setminus \{0\}$, which is not closed.
 >
 > *Closed graph.* $P$ is linear and $|P(x, y)| = |x| \le \|(x, y)\|$ for the Euclidean norm, so $P$ is bounded, hence continuous, hence closed by Example [[§39 Solving Mx = y#^ex-39-1|§39.1]].
 >
 > *$H$ is closed.* If $(x_n, y_n) \in H$ and $(x_n, y_n) \to (x, y)$, then $x_n \to x$ and $y_n \to y$, so $xy = \lim_n x_n y_n = 1$ and $(x, y) \in H$.
 >
 > *$P(H) = \mathbb{R} \setminus \{0\}$, not closed.* If $xy = 1$ then $x \neq 0$; conversely, for $x \neq 0$, $(x, 1/x) \in H$ and $P(x, 1/x) = x$. The points $\frac1n \in P(H)$ converge to $0 \notin P(H)$, so $P(H)$ is not closed.
+>
+> *Source: not from lecture*
 
 ^ex-39-2
 

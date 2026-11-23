@@ -279,13 +279,15 @@ tags: [group-theory, math493]
 *Uses:* [[§48 Solvable Groups#^prop-48-3|§48.3]], [[§48 Solvable Groups#^prop-48-4|§48.4]], [[§48 Solvable Groups#^thm-48-7|§48.7]]
 
 > [!example] Example §48.2: $S_4$ from $K$ and $S_3$
-> *(Not from class.)* Theorem [[§48 Solvable Groups#^thm-48-7|§48.7]] rebuilds the chain of $S_4$ from two smaller pieces. The Pair-Partition Homomorphism $\alpha: S_4 \to S_3$ (Proposition [[§43 Simple Groups#^prop-43-10|§43.10]]) is surjective with kernel $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$, so $S_4/K \cong S_3$ by the First Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]). $K$ is abelian, hence solvable via $\{e\} \trianglelefteq K$ (Proposition [[§48 Solvable Groups#^prop-48-1|§48.1]]), and $S_3$ is solvable via $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ (Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]]). So $S_4$ is solvable. The chain the theorem produces consists of $\{e\} \trianglelefteq K$ followed by the preimages of $\{e\}$, $A_3$ and $S_3$ under $\alpha$. These are $K$, a subgroup $\alpha^{-1}(A_3)$ of index $[S_3 : A_3] = 2$ in $S_4$ (Indices Along the Correspondence, Corollary [[§42 The Correspondence and Third Isomorphism Theorems#^cor-42-5|§42.5]]), and $S_4$. A subgroup of index $2$ in $S_4$ is $A_4$ (The Subgroup of Index $2$ in $S_m$, Lemma [[§56 Simple Groups of Small Order#^lem-56-18|§56.18]]), so the chain is
+> Theorem [[§48 Solvable Groups#^thm-48-7|§48.7]] rebuilds the chain of $S_4$ from two smaller pieces. The Pair-Partition Homomorphism $\alpha: S_4 \to S_3$ (Proposition [[§43 Simple Groups#^prop-43-10|§43.10]]) is surjective with kernel $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$, so $S_4/K \cong S_3$ by the First Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]). $K$ is abelian, hence solvable via $\{e\} \trianglelefteq K$ (Proposition [[§48 Solvable Groups#^prop-48-1|§48.1]]), and $S_3$ is solvable via $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ (Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]]). So $S_4$ is solvable. The chain the theorem produces consists of $\{e\} \trianglelefteq K$ followed by the preimages of $\{e\}$, $A_3$ and $S_3$ under $\alpha$. These are $K$, a subgroup $\alpha^{-1}(A_3)$ of index $[S_3 : A_3] = 2$ in $S_4$ (Indices Along the Correspondence, Corollary [[§42 The Correspondence and Third Isomorphism Theorems#^cor-42-5|§42.5]]), and $S_4$. A subgroup of index $2$ in $S_4$ is $A_4$ (The Subgroup of Index $2$ in $S_m$, Lemma [[§56 Simple Groups of Small Order#^lem-56-18|§56.18]]), so the chain is
 >
 > $$
 > \{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4,
 > $$
 >
 > the chain of Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]], with quotients $K$, $A_4/K \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}$ and $S_4/A_4 \cong S_3/A_3 \cong \mathbb{Z}/2\mathbb{Z}$.
+>
+> *Source: not from class*
 
 ^ex-48-2
 

@@ -52,24 +52,28 @@ A one-form is a section of $T^{\ast}M \to M$, so it is smooth. Without smoothnes
 ^def-53-2
 
 > [!definition] Definition §53.3: Sum and Scalar Multiple of One-Forms
-> *(Not from lecture; filled in.)* Let $\theta$ and $\sigma$ be rough sections of $T^{\ast}M \to M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]) and $c \in \mathbb{R}$. The sum and the scalar multiple are defined pointwise, in the vector space $T_p^{\ast}M$ (Definition [[§32 The Cotangent Space#^def-32-4|§32.4]]):
+> Let $\theta$ and $\sigma$ be rough sections of $T^{\ast}M \to M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]) and $c \in \mathbb{R}$. The sum and the scalar multiple are defined pointwise, in the vector space $T_p^{\ast}M$ (Definition [[§32 The Cotangent Space#^def-32-4|§32.4]]):
 >
 > $$
 > (\theta + \sigma)_p = \theta_p + \sigma_p, \qquad (c\,\theta)_p = c\,\theta_p, \qquad p \in M .
 > $$
 >
 > So $(a\,\theta + b\,\sigma)_p = a\,\theta_p + b\,\sigma_p$ for $a, b \in \mathbb{R}$. Since $\theta_p + \sigma_p$ and $c\,\theta_p$ lie in $T_p^{\ast}M$, the sum and the scalar multiple are again rough sections of $T^{\ast}M$. The same formulas are used for rough sections over an open subset $U \subseteq M$, at the points $p \in U$. For one-forms the results are one-forms (Proposition [[§53 One-Forms#^prop-53-2|§53.2]]). Multiplying by a function rather than a constant is the next definition.
+>
+> *Source: not from lecture · filled in*
 
 ^def-53-3
 
 > [!definition] Definition §53.4: Product of a Function and a One-Form
-> *(Not from lecture; filled in.)* Let $f : M \to \mathbb{R}$ be a function, not assumed smooth, and $\theta$ a rough section of $T^{\ast}M \to M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]). The product $f\theta$ is defined pointwise:
+> Let $f : M \to \mathbb{R}$ be a function, not assumed smooth, and $\theta$ a rough section of $T^{\ast}M \to M$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]). The product $f\theta$ is defined pointwise:
 >
 > $$
 > (f\theta)_p = f(p)\,\theta_p \qquad \text{for every } p \in M .
 > $$
 >
 > Since $f(p)\,\theta_p \in T_p^{\ast}M$, the product is again a rough section of $T^{\ast}M$. The same formula is used for a function on, and a rough section over, an open subset $U \subseteq M$, at the points $p \in U$; this is the meaning of the terms $\theta_j\, dx^j$ in Proposition [[§53 One-Forms#^prop-53-1|§53.1]]. For $f \in C^\infty(M)$ and a one-form $\theta$ the product is a one-form (Proposition [[§53 One-Forms#^prop-53-2|§53.2]]).
+>
+> *Source: not from lecture · filled in*
 
 ^def-53-4
 
@@ -122,13 +126,15 @@ A one-form is a section of $T^{\ast}M \to M$, so it is smooth. Without smoothnes
 *Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§53 One-Forms#^def-53-3|Def. §53.3]], [[§53 One-Forms#^def-53-4|Def. §53.4]]
 
 > [!example] Example §53.1: A Rough Section That Is Not a One-Form
-> *(Not from lecture; filled in.)* Let $M = \mathbb{R}$, with the chart $(\mathbb{R}, \mathrm{id})$ and its coordinate function $x$. Put
+> Let $M = \mathbb{R}$, with the chart $(\mathbb{R}, \mathrm{id})$ and its coordinate function $x$. Put
 >
 > $$
 > \theta_p = |p|\; dx|_p \in T_p^{\ast}\mathbb{R}, \qquad p \in \mathbb{R} .
 > $$
 >
 > Then $\theta : p \mapsto (p, \theta_p)$ is a rough section of $T^{\ast}\mathbb{R} \to \mathbb{R}$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]), and it is not a one-form (Definition [[§53 One-Forms#^def-53-1|§53.1]]), because it is not smooth.
+>
+> *Source: not from lecture · filled in*
 
 ^ex-53-1
 
@@ -281,16 +287,20 @@ This is familiar from multivariable calculus: not every vector field is a gradie
 *The two forms of [[§53 One-Forms#^ex-53-2|Example §53.2]], drawn as arrows. A one-form is not an arrow — it eats arrows — so the picture uses the Euclidean dot product to turn $a\,dx + b\,dy$ into the vector $(a, b)$; this identification is available in $\mathbb{R}^2$, not on a general manifold, and it is how “$df$” becomes the “gradient” of calculus. Right: $\sigma = df$ for $f = \tfrac14(x^2+y^2)$, and its arrows cross the level circles of $f$ at right angles, as a gradient's must. Left: $\theta$'s arrows run along the circles. If $\theta$ were $df$, then $f$ would increase steadily all the way around a circle and return to its starting value — impossible.*
 
 > [!definition] Definition §53.5: Closed One-Form
-> *(Not from lecture; filled in.)* A one-form $\omega$ on $M$ is **closed** if its coefficients satisfy the mixed-partials condition of Proposition [[§53 One-Forms#^prop-53-4|§53.4]] in every chart: for every smooth chart $(U, \varphi = (x^j))$ of $M$, with $\omega = \sum_j \omega_j\, dx^j$ on $U$ (Proposition [[§53 One-Forms#^prop-53-1|§53.1]]),
+> A one-form $\omega$ on $M$ is **closed** if its coefficients satisfy the mixed-partials condition of Proposition [[§53 One-Forms#^prop-53-4|§53.4]] in every chart: for every smooth chart $(U, \varphi = (x^j))$ of $M$, with $\omega = \sum_j \omega_j\, dx^j$ on $U$ (Proposition [[§53 One-Forms#^prop-53-1|§53.1]]),
 >
 > $$
 > \frac{\partial \omega_j}{\partial x^k} = \frac{\partial \omega_k}{\partial x^j} \quad \text{on } U \qquad \text{for all } j, k .
 > $$
+>
+> *Source: not from lecture · filled in*
 
 ^def-53-5
 
 > [!definition] Definition §53.6: Exact One-Form
-> *(Not from lecture; filled in.)* A one-form $\omega$ on $M$ is **exact** if $\omega = df$ for some smooth function $f \in C^\infty(M)$ (Proposition [[§53 One-Forms#^prop-53-3|§53.3]]).
+> A one-form $\omega$ on $M$ is **exact** if $\omega = df$ for some smooth function $f \in C^\infty(M)$ (Proposition [[§53 One-Forms#^prop-53-3|§53.3]]).
+>
+> *Source: not from lecture · filled in*
 
 ^def-53-6
 
@@ -300,7 +310,7 @@ This is familiar from multivariable calculus: not every vector field is a gradie
 ^rem-53-1
 
 > [!example] Example §53.3: The Angle Form on the Punctured Plane
-> *(Not from lecture; added on request: the standard example of the remark above (Lee, Example 11.36), written out.)* The form is $\omega = (x\,dy - y\,dx)/(x^2+y^2)$ on $\mathbb{R}^2 \setminus \{0\}$. The words *closed* and *exact* are those of Definitions [[§53 One-Forms#^def-53-5|§53.5]] and [[§53 One-Forms#^def-53-6|§53.6]]. Proposition [[§53 One-Forms#^prop-53-4|§53.4]] says exact $\Rightarrow$ closed. This example shows closed $\not\Rightarrow$ exact: both mixed partials of $\omega$ equal $(y^2 - x^2)/(x^2 + y^2)^2$ (step 3), while $\omega$ takes the value $1$ on the velocity of the unit circle ([[§31 Tangent Vectors as Velocities of Curves|§31]]) at every time (step 5), which a $df$ cannot do along a closed curve (step 6).
+> This is the standard example of the remark above (Lee, Example 11.36), written out. The form is $\omega = (x\,dy - y\,dx)/(x^2+y^2)$ on $\mathbb{R}^2 \setminus \{0\}$. The words *closed* and *exact* are those of Definitions [[§53 One-Forms#^def-53-5|§53.5]] and [[§53 One-Forms#^def-53-6|§53.6]]. Proposition [[§53 One-Forms#^prop-53-4|§53.4]] says exact $\Rightarrow$ closed. This example shows closed $\not\Rightarrow$ exact: both mixed partials of $\omega$ equal $(y^2 - x^2)/(x^2 + y^2)^2$ (step 3), while $\omega$ takes the value $1$ on the velocity of the unit circle ([[§31 Tangent Vectors as Velocities of Curves|§31]]) at every time (step 5), which a $df$ cannot do along a closed curve (step 6).
 >
 > 1. *The manifold.* $M = \mathbb{R}^2 \setminus \{0\}$, an open subset of $\mathbb{R}^2$, hence an open submanifold (Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]]), with the single chart $\mathrm{id}_M$ and coordinates $x, y$. Its coordinate derivations $\partial_x, \partial_y$ are the ordinary partial derivatives.
 > 2. *The one-form.* $\omega = a\, dx + b\, dy$ with coefficient functions
@@ -354,6 +364,8 @@ This is familiar from multivariable calculus: not every vector field is a gradie
 > so $\omega = r^2\, d\vartheta / r^2 = d\vartheta$ on $U$: on the slit plane $\omega$ *is* exact, with $f = \vartheta$. The obstruction is global: going once around the hole, $\vartheta$ increases by $2\pi$ (step 6), so it cannot be continued continuously across the slit, where it jumps from near $\pi$ (just above) to near $-\pi$ (just below). Any $f$ with $df = \omega$ on all of $M$ would be such a continuation (two functions with the same differential on a connected open set differ by a constant: Proposition [[§30 The Differential in Coordinates#^prop-30-11|§30.11]], applied to their difference).
 >
 > 8. *Why the hole matters.* On $\mathbb{R}^2$ itself, or on any star-shaped open set (a disk, the slit plane $U$), a closed form is exact (Poincaré lemma; Lee, Theorem 11.49, not proved in these notes). $M$ is not star-shaped, and step 6 shows the lemma cannot extend to it: whether closed forms are exact depends on the topology of the domain, which is what de Rham cohomology measures.
+>
+> *Source: not from lecture · added on request*
 
 ^ex-53-3
 

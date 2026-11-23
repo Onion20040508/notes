@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *(Lecture 32, last minutes.)* With $d$ in hand, the de Rham cohomology can be defined. By convention $\Omega^{-1}(M) = 0$, and $d : \Omega^{-1}(M) \to \Omega^0(M)$ is the zero map. Since each $d : \Omega^k(M) \to \Omega^{k+1}(M)$ is linear, its kernel is a linear subspace of $\Omega^k(M)$, possibly infinite-dimensional ($\Omega^k(M)$ is infinite-dimensional when $0 \le k \le m$ and $m \ge 1$), and so is the image of the previous $d$.
 
 > [!definition] Definition §82.1: Closed Form
-> *(Lecture 33; Lee's terminology, used ahead of the lecture in Lecture 32.)* A form $\omega \in \Omega^k(M)$ is **closed** if $d\omega = 0$. The space of all closed $k$-forms is written
+> A form $\omega \in \Omega^k(M)$ is **closed** if $d\omega = 0$. The space of all closed $k$-forms is written
 >
 > $$
 > Z^k(M) = \{ \text{all closed } k\text{-forms on } M \} = \ker\big(d : \Omega^k(M) \to \Omega^{k+1}(M)\big) .
@@ -20,21 +20,27 @@ tags: [differentiable-manifolds, math591]
 >
 > For one-forms this is the notion of Definition [[§53 One-Forms#^def-53-5|§53.5]] (see the end of [[§81 The Exterior Derivative|§81]]).
 >
+> *Source: Lecture 33 · Lee's terminology*
+>
 > *Lee: Ch. 17, The de Rham Cohomology Groups*
 
 ^def-82-1
+
+These notes used the term *closed* before Lecture 33, in the material of Lecture 32.
 
 > [!remark]- Connections
 > - For one-forms: [[§53 One-Forms#^def-53-5|Def. §53.5]]. In MATH 452, on open subsets of $\mathbb{R}^n$: [[§39 Closed and Exact Forms#^def-39-2|452 Def. §39.2]].
 
 > [!definition] Definition §82.2: Exact Form
-> *(Lecture 33; Lee's terminology.)* A form $\omega \in \Omega^k(M)$, $k \ge 1$, is **exact** if $\omega = d\alpha$ for some $\alpha \in \Omega^{k-1}(M)$. The space of all exact $k$-forms is written
+> A form $\omega \in \Omega^k(M)$, $k \ge 1$, is **exact** if $\omega = d\alpha$ for some $\alpha \in \Omega^{k-1}(M)$. The space of all exact $k$-forms is written
 >
 > $$
 > B^k(M) = \{ \text{all exact } k\text{-forms on } M \} = \operatorname{im}\big(d : \Omega^{k-1}(M) \to \Omega^k(M)\big) ,
 > $$
 >
 > with $B^0(M) = 0$. For one-forms this is the notion of Definition [[§53 One-Forms#^def-53-6|§53.6]].
+>
+> *Source: Lecture 33 · Lee's terminology*
 >
 > *Lee: Ch. 17, The de Rham Cohomology Groups*
 
@@ -87,13 +93,15 @@ $H^k(M)$ measures the failure of equality between exact and closed forms. *(Lect
 The board writes $\beta_k$ (see the remark *Notation of Lecture 32* in [[§81 The Exterior Derivative|§81]]). The spaces $H^k(M)$, and so the Betti numbers, turn out to be topological invariants of $M$, and in fact homotopy invariants; this will be proved (Lee, Theorem 17.11 and Corollary 17.12). In general they can be hard to compute; for the unitary group, for instance, the cohomology is an interesting problem, with a beautiful answer. The first step towards invariance is naturality.
 
 > [!theorem] Proposition §82.2: Smooth Maps Act on Cohomology
-> *(Lecture 33.)* Let $F : M \to N$ be smooth. Then $F^{\ast}$ maps closed forms to closed forms and exact forms to exact forms, $F^{\ast} : Z^k(N) \to Z^k(M)$ and $F^{\ast} : B^k(N) \to B^k(M)$, so it induces linear maps, also denoted $F^{\ast}$,
+> Let $F : M \to N$ be smooth. Then $F^{\ast}$ maps closed forms to closed forms and exact forms to exact forms, $F^{\ast} : Z^k(N) \to Z^k(M)$ and $F^{\ast} : B^k(N) \to B^k(M)$, so it induces linear maps, also denoted $F^{\ast}$,
 >
 > $$
 > F^{\ast} : H^k(N) \to H^k(M), \qquad F^{\ast}[\omega] = [F^{\ast}\omega] .
 > $$
 >
 > Moreover $(G \circ F)^{\ast} = F^{\ast} \circ G^{\ast}$ for smooth $G : N \to P$, and $\mathrm{id}^{\ast} = \mathrm{id}$; hence if $F$ is a diffeomorphism, then for every $k$, $F^{\ast} : H^k(N) \to H^k(M)$ is a linear bijection, and diffeomorphic manifolds have isomorphic de Rham cohomology and the same Betti numbers.
+>
+> *Source: Lecture 33*
 >
 > *Lee: Proposition 17.2; Corollary 17.4*
 

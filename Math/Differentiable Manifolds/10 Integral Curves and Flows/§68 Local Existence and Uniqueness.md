@@ -188,12 +188,14 @@ In words: two integral curves that agree at some time $t_0$ agree wherever both 
 *(Figure after the board.)* The situation the claim rules out: the curves agree on $(0, \tau)$ and differ at $\tau$, with disjoint neighbourhoods $U_1, U_2$; as with any picture in a proof by contradiction, it shows a situation that cannot occur. The argument is very similar to the Euclidean one. The interval $J$ can be taken inside $I_1 \cap I_2$ because the domains are open intervals.
 
 > [!remark] Remark: Where the Hausdorff Property Is Used
-> *(Filled in.)* The claim $c_1(\tau) = c_2(\tau)$ is the one step of the proof that uses that $M$ is Hausdorff ($T_2$): it says that the set of times where the two curves agree is closed in $I_1 \cap I_2$. Without the Hausdorff property the proposition fails (Example [[§68 Local Existence and Uniqueness#^ex-68-2|§68.2]] below).
+> The claim $c_1(\tau) = c_2(\tau)$ is the one step of the proof that uses that $M$ is Hausdorff ($T_2$): it says that the set of times where the two curves agree is closed in $I_1 \cap I_2$. Without the Hausdorff property the proposition fails (Example [[§68 Local Existence and Uniqueness#^ex-68-2|§68.2]] below).
+>
+> *Source: filled in*
 
 ^rem-68-1
 
 > [!example] Example §68.2: Integral Curves on the Line with Two Origins
-> *(Filled in.)* The line with two origins $X$ ([[§10 The Line with Two Origins|§10]]), two copies $\mathbb{R} \times \{1\}$ and $\mathbb{R} \times \{2\}$ glued along $x \neq 0$, has smooth charts (each copy) but is not Hausdorff. The field $d/dx$, in either chart, is well defined, and $c_i(t) = (t, i)$, $t \in \mathbb{R}$, $i = 1, 2$, are integral curves of it. They agree at every $t \neq 0$ and differ at $t = 0$, where they pass through the two different origins. So the conclusion of Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]] fails on $X$.
+> The line with two origins $X$ ([[§10 The Line with Two Origins|§10]]), two copies $\mathbb{R} \times \{1\}$ and $\mathbb{R} \times \{2\}$ glued along $x \neq 0$, has smooth charts (each copy) but is not Hausdorff. The field $d/dx$, in either chart, is well defined, and $c_i(t) = (t, i)$, $t \in \mathbb{R}$, $i = 1, 2$, are integral curves of it. They agree at every $t \neq 0$ and differ at $t = 0$, where they pass through the two different origins. So the conclusion of Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]] fails on $X$.
 >
 > *The charts.* Write $[x, i]$ for the class of $(x, i)$, and $U_i = \{[x, i] : x \in \mathbb{R}\}$ for the image of the $i$-th copy. $U_i$ is open: its preimage in $\mathbb{R} \times \{1, 2\}$ is $\mathbb{R} \times \{i\}$ together with $(\mathbb{R} \setminus \{0\}) \times \{3 - i\}$. The map $\varphi_i : U_i \to \mathbb{R}$, $[x, i] \mapsto x$, is a bijection, continuous because its composite with the quotient map is the projection on $\mathbb{R} \times \{i\}$, and open because the quotient map is open (Example [[§10 The Line with Two Origins#^ex-10-1|§10.1]]); so it is a homeomorphism. On $U_1 \cap U_2 = \{[x, 1] : x \neq 0\}$ the transition map $\varphi_2 \circ \varphi_1^{-1}$ is the identity of $\mathbb{R} \setminus \{0\}$, which is smooth. The definitions of tangent vectors, vector fields and integral curves make sense for this atlas; the Hausdorff property is not used in them.
 >
@@ -202,6 +204,8 @@ In words: two integral curves that agree at some time $t_0$ agree wherever both 
 > *The curves.* In the chart $\varphi_i$, $c_i(t) = [t, i]$ reads $t \mapsto t$, with $\dot x = 1$, the coefficient of $\mathbf{X}$; so $c_i$ is an integral curve of $\mathbf{X}$ (Proposition [[§67 Integral Curves#^prop-67-2|§67.2]], in a chart).
 >
 > *Agreement and disagreement.* For $t \neq 0$, $(t, 1) \sim (t, 2)$, so $c_1(t) = c_2(t)$; but $c_1(0) = [0, 1] \neq [0, 2] = c_2(0)$. Thus $c_1(1) = c_2(1)$, while $c_1$ and $c_2$ differ on the common domain $\mathbb{R}$. In the proof of Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]], run backwards from $t_0 = 1$, the step that fails is the claim that the curves agree at the end time $\tau = 0$ of their agreement: the two origins have no disjoint neighbourhoods.
+>
+> *Source: filled in*
 
 ^ex-68-2
 
@@ -246,13 +250,15 @@ $T$ need not be the smallest period. For the rotation field (Example [[§68 Loca
 ^ex-68-3
 
 > [!example] Example §68.4: The Circles of the Rotation Field Return Every $2\pi$
-> *(Filled in.)* The circles of the rotation field $\mathbf{X} = -y\, \partial_x + x\, \partial_y$ (Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]]) are integral curves that return to the same point with the same velocity, every $2\pi$: they are neither injective nor constant.
+> The circles of the rotation field $\mathbf{X} = -y\, \partial_x + x\, \partial_y$ (Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]]) are integral curves that return to the same point with the same velocity, every $2\pi$: they are neither injective nor constant.
 >
 > *The curves.* For $(x_0, y_0) \neq 0$, $c(t) = \big(x_0\cos t - y_0\sin t,\ x_0\sin t + y_0\cos t\big)$ is the integral curve starting at $(x_0, y_0)$ (Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]]), running around the circle of radius $|(x_0, y_0)|$.
 >
 > *Return every $2\pi$.* $\cos$ and $\sin$ have period $2\pi$, so $c(t + 2\pi) = c(t)$; and then $\dot c(t + 2\pi) = \mathbf{X}_{c(t + 2\pi)} = \mathbf{X}_{c(t)} = \dot c(t)$, the same velocity.
 >
 > *Neither injective nor constant.* $c(0) = c(2\pi)$; and $c(\pi) = -(x_0, y_0) \neq (x_0, y_0)$.
+>
+> *Source: filled in*
 
 ^ex-68-4
 

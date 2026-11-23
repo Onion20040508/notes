@@ -100,17 +100,19 @@ The formula has several applications; the first is Corollary [[§86 Cartan's Mag
 *(Not from lecture; figure added.)* The three kinds of points in the proof of Theorem [[§86 Cartan's Magic Formula#^thm-86-2|§86.2]]: at $p_1$, $\mathbf{X}_{p_1} \neq 0$ and there are straightening coordinates; $p_2 \notin \operatorname{supp}\mathbf{X}$, where both sides are $0$; at $p_3$, $\mathbf{X}_{p_3} = 0$ but $p_3$ is a limit of points of the first kind. The points of the third kind include the boundary of the support, and also zeros of $\mathbf{X}$ inside the support (such as the origin for $x\,\partial/\partial x$ on $\mathbb{R}$).
 
 > [!theorem] Corollary §86.3: The Lie Derivative Is Linear in the Field
-> *(Stated in Lecture 34 with Theorem [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]](1); the proof through Cartan's formula is filled in.)* Let $\alpha \in \Omega^k(M)$.
+> Let $\alpha \in \Omega^k(M)$.
 >
 > 1. $\mathcal{L}_{\mathbf{X} + c\mathbf{Y}}\alpha = \mathcal{L}_\mathbf{X}\alpha + c\,\mathcal{L}_\mathbf{Y}\alpha$ for $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ and $c \in \mathbb{R}$.
 > 2. $d\,\mathcal{L}_\mathbf{X}\alpha = d\,\iota_\mathbf{X}\, d\alpha = \mathcal{L}_\mathbf{X}\, d\alpha$: Cartan's formula gives Theorem [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]](3) again.
+>
+> *Source: Lecture 34 · proof filled in*
 >
 > *Lee: Corollary 14.36*
 
 ^cor-86-3
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* (1) The right-hand side of Cartan's formula is linear in $\mathbf{X}$, because $\iota_{\mathbf{X} + c\mathbf{Y}} = \iota_\mathbf{X} + c\,\iota_\mathbf{Y}$ (Lemma [[§84 Contraction by Vector Fields#^lem-84-1|§84.1]]) and $d$ is linear. (2) $d \circ d = 0$ kills one term on each side: $d\,\mathcal{L}_\mathbf{X} = d\,d\,\iota_\mathbf{X} + d\,\iota_\mathbf{X}\, d = d\,\iota_\mathbf{X}\, d$ and $\mathcal{L}_\mathbf{X}\, d = d\,\iota_\mathbf{X}\, d + \iota_\mathbf{X}\, d\, d = d\,\iota_\mathbf{X}\, d$. The proof of Theorem [[§86 Cartan's Magic Formula#^thm-86-2|§86.2]] used only linearity in $\alpha$ from Theorem [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]], so there is no circularity.
+> *(Not from lecture; filled in. Lecture 34 stated (1) together with Theorem [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]](1).)* (1) The right-hand side of Cartan's formula is linear in $\mathbf{X}$, because $\iota_{\mathbf{X} + c\mathbf{Y}} = \iota_\mathbf{X} + c\,\iota_\mathbf{Y}$ (Lemma [[§84 Contraction by Vector Fields#^lem-84-1|§84.1]]) and $d$ is linear. (2) $d \circ d = 0$ kills one term on each side: $d\,\mathcal{L}_\mathbf{X} = d\,d\,\iota_\mathbf{X} + d\,\iota_\mathbf{X}\, d = d\,\iota_\mathbf{X}\, d$ and $\mathcal{L}_\mathbf{X}\, d = d\,\iota_\mathbf{X}\, d + \iota_\mathbf{X}\, d\, d = d\,\iota_\mathbf{X}\, d$. The proof of Theorem [[§86 Cartan's Magic Formula#^thm-86-2|§86.2]] used only linearity in $\alpha$ from Theorem [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]], so there is no circularity.
 
 ^pf-86-3
 

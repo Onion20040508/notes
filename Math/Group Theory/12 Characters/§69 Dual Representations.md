@@ -86,7 +86,7 @@ Axler writes $V'$ for the dual space and calls its elements linear functionals; 
 Dual spaces of infinite-dimensional vector spaces are left aside in this course.
 
 > [!example] Example §69.1: A Dual Basis in $\mathbb{R}^2$
-> *(Not from class.)* Let $e_1 = (1, 0)$ and $e_2 = (1, 1)$ in $\mathbb{R}^2$. Since $(x, y) = (x - y)\,e_1 + y\,e_2$, the dual basis is
+> Let $e_1 = (1, 0)$ and $e_2 = (1, 1)$ in $\mathbb{R}^2$. Since $(x, y) = (x - y)\,e_1 + y\,e_2$, the dual basis is
 >
 > $$
 > e_1^\ast(x, y) = x - y, \qquad e_2^\ast(x, y) = y.
@@ -214,7 +214,7 @@ Dual spaces of infinite-dimensional vector spaces are left aside in this course.
 **Transcription note.** The handwritten notes of 11/13 have $\varphi(w_j) = \sum_j A_{ji}w_i$, the first version on the board. Since $\varphi$ is defined on $V$, the board was corrected, after a question, to $\varphi(v_i) = \sum_j A_{ji}w_j$, the formula of the proposition. The board writes $v_i^\vee$ and $w_j^\vee$ for the dual basis vectors. These notes write $v_i^\ast$ and $w_j^\ast$, as in Definition [[§69 Dual Representations#^def-69-2|§69.2]], and keep $\vee$ for dual spaces, for dual maps, and for an arbitrary element $w^\vee$ of $W^\vee$.
 
 > [!example] Example §69.2: A Dual Map in Coordinates
-> *(Not from class.)* Let $\varphi: k^3 \to k^2$ be multiplication by $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{pmatrix}$, and let $w^\vee = a\,e_1^\ast + b\,e_2^\ast \in (k^2)^\vee$, the row $(a \ \ b)$ (the remark *Duals in Coordinates*). Then $\varphi^\vee(w^\vee) = w^\vee \circ \varphi$ is the map $v \mapsto (a \ \ b)\,Av$, that is, the row
+> Let $\varphi: k^3 \to k^2$ be multiplication by $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{pmatrix}$, and let $w^\vee = a\,e_1^\ast + b\,e_2^\ast \in (k^2)^\vee$, the row $(a \ \ b)$ (the remark *Duals in Coordinates*). Then $\varphi^\vee(w^\vee) = w^\vee \circ \varphi$ is the map $v \mapsto (a \ \ b)\,Av$, that is, the row
 >
 > $$
 > (a \ \ b)\,A = (a + 4b \quad 2a + 5b \quad 3a + 6b).
@@ -350,7 +350,7 @@ The same formula follows from Proposition [[§68 Homomorphisms Between Represent
 > - Quantum Field Theory: the product has the same explanation, $\operatorname{Hom}(V, W) \cong V^{\ast} \otimes W$ as representations, and its invariants are the homomorphisms of representations: [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-9|QFT Thm. §CB.8.9]].
 
 > [!example] Example §69.3: The Dual of a Rotation Representation
-> *(Not from class.)* Let $G = \mathbb{Z}/4\mathbb{Z}$ act on $V = \mathbb{R}^2$, the generator $g$ acting by the rotation by $90^\circ$, $M = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$, so that $g(x, y) = (-y, x)$ and $g^{-1}(x, y) = (y, -x)$. For the dual basis $e_1^\ast(x, y) = x$, $e_2^\ast(x, y) = y$ of the standard basis:
+> Let $G = \mathbb{Z}/4\mathbb{Z}$ act on $V = \mathbb{R}^2$, the generator $g$ acting by the rotation by $90^\circ$, $M = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$, so that $g(x, y) = (-y, x)$ and $g^{-1}(x, y) = (y, -x)$. For the dual basis $e_1^\ast(x, y) = x$, $e_2^\ast(x, y) = y$ of the standard basis:
 >
 > $$
 > (g \ast e_1^\ast)(x, y) = e_1^\ast(y, -x) = y, \qquad (g \ast e_2^\ast)(x, y) = e_2^\ast(y, -x) = -x.
@@ -371,7 +371,7 @@ The same formula follows from Proposition [[§68 Homomorphisms Between Represent
 *(Not from lecture; figure added.)* Example [[§69 Dual Representations#^ex-69-3|§69.3]]. Left: the level lines of $f = e_1^\ast$ and a vector $v$ with $f(v) = 2$. Right: the level lines of $g \ast f$. Since $(g \ast f)(gv) = f(g^{-1}gv) = f(v)$, the map $g \ast f$ takes at $gv$ the value that $f$ takes at $v$. So the level lines of $g \ast f$ are the level lines of $f$ moved by $g$. The inverse in the definition is what makes the picture of $f$ move with $g$.
 
 > [!example] Example §69.4: The Dual of a One-Dimensional Representation
-> *(Not from class.)* Let $V = k$ be the one-dimensional representation given by a character $\chi: G \to k^\times$, so $g$ acts as multiplication by $\chi(g)$ (Example [[§61 Representations and Subrepresentations#^ex-61-2|§61.2]]). The $1 \times 1$ matrix of $\rho_V(g)$ is $\chi(g)$, and its inverse transpose is $\chi(g)^{-1}$. So $V^\vee$ is the one-dimensional representation given by the character $g \mapsto \chi(g)^{-1}$.
+> Let $V = k$ be the one-dimensional representation given by a character $\chi: G \to k^\times$, so $g$ acts as multiplication by $\chi(g)$ (Example [[§61 Representations and Subrepresentations#^ex-61-2|§61.2]]). The $1 \times 1$ matrix of $\rho_V(g)$ is $\chi(g)$, and its inverse transpose is $\chi(g)^{-1}$. So $V^\vee$ is the one-dimensional representation given by the character $g \mapsto \chi(g)^{-1}$.
 >
 > 1. For the [[§61 Representations and Subrepresentations#^ex-61-1|trivial]] and the sign representation, $\chi(g) = \pm 1$ and $\chi(g)^{-1} = \chi(g)$: each of them has the same character as its dual.
 > 2. Let $G = \mathbb{Z}/3\mathbb{Z}$ and $k = \mathbb{C}$, with $\chi(j) = \omega^j$, $\omega = e^{2\pi i/3}$. The dual has the character $j \mapsto \omega^{-j} = \overline{\omega^j}$, the complex conjugate of $\chi$, as in Corollary [[§69 Dual Representations#^cor-69-6|§69.6]](2). Here $V^\vee$ is not isomorphic to $V$. An isomorphism of representations $\varphi: V \to V^\vee$ (Definition [[§61 Representations and Subrepresentations#^def-61-5|§61.5]]) would satisfy $\varphi(\omega v) = \omega^{-1}\varphi(v)$ for the generator, that is, $\omega\,\varphi(v) = \omega^{-1}\varphi(v)$; with $\varphi(v) \neq 0$ this gives $\omega^2 = 1$, which is false.
@@ -393,9 +393,11 @@ The same formula follows from Proposition [[§68 Homomorphisms Between Represent
 >
 > a subset of the dual space $V^\vee$ (Definition [[§69 Dual Representations#^def-69-1|§69.1]]).
 >
-> *Source: PS 10.2, which defines $U^\perp$ without giving it a name; Axler calls it the annihilator and writes $U^0$*
+> *Source: PS 10.2*
 
 ^def-69-5
+
+*Source note.* PS 10.2, which defines $U^\perp$ without giving it a name; Axler calls it the annihilator and writes $U^0$.
 
 The same symbol $U^\perp$ denotes the orthogonal complement for an inner product (Definition [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-2|§63.2]]). That is a subspace of the same space as $U$ and needs an inner product; the annihilator lies in the dual space and needs no extra structure.
 

@@ -175,7 +175,6 @@ $$
 *Uses:* [[§55 The Sylow Theorems#^prop-55-11|§55.11]], [[§60 Groups of Order pq as Semidirect Products#^prop-60-1|§60.1]], [[§60 Groups of Order pq as Semidirect Products#^prop-60-3|§60.3]], [[§58 Semidirect Products#^prop-58-7|§58.7]]
 
 > [!example] Example §60.1: The Orders $6$, $15$ and $21$
-> *(Not from class.)*
 >
 > 1. *Order $6$ ($p = 2$, $q = 3$, $3 \equiv 1 \pmod 2$).* The solutions of $a^2 \equiv 1 \pmod 3$ are $a = 1$ and $a = 2 = -1$: two solutions, as $p = 2$. They give $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$ and, for $\alpha_{-1}(x) = -x$, the group $\mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z} \cong S_3$ of Example [[§58 Semidirect Products#^ex-58-4|§58.4]].
 > 2. *Order $15$ ($p = 3$, $q = 5$, $5 \not\equiv 1 \pmod 3$).* Modulo $5$ the cubes of $1, 2, 3, 4$ are $1, 3, 2, 4$, so $a^3 \equiv 1 \pmod 5$ has the single solution $a = 1$. The only homomorphism $\mathbb{Z}/3\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/5\mathbb{Z})$ is the trivial one, in agreement with Example [[§55 The Sylow Theorems#^ex-55-3|§55.3]]: every group of order $15$ is cyclic.
@@ -186,6 +185,8 @@ $$
 > $$
 >
 > So the groups of order $21$ are $\mathbb{Z}/21\mathbb{Z}$ and one non-abelian group.
+>
+> *Source: not from class*
 
 ^ex-60-1
 

@@ -54,7 +54,7 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique 
 *Uses:* [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]]
 
 > [!example] Example §26.2: An Unbounded Linear Functional
-> *(Not from lecture; filled in.)* Let $X$ be an infinite-dimensional normed linear space over $\mathbb{F}$. We construct a linear functional on $X$ that is not bounded.
+> Let $X$ be an infinite-dimensional normed linear space over $\mathbb{F}$. We construct a linear functional on $X$ that is not bounded.
 >
 > *A Hamel basis.* Let $P$ be the set of linearly independent subsets of $X$, ordered by inclusion. $P \neq \varnothing$ since $\varnothing \in P$, and the union of a nonempty chain in $P$ lies in $P$, because each finite subset of the union lies in a single member of the chain and is therefore independent; the empty chain has the upper bound $\varnothing$. By Zorn's lemma (Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]]) $P$ has a maximal element $B$. $B$ spans $X$: if some $x \in X$ were not a finite linear combination of elements of $B$, then $B \cup \{x\}$ would be independent, contradicting maximality. So every $x \in X$ is, uniquely, a finite combination $x = \sum_{b \in B} x_b\, b$ with $x_b \in \mathbb{F}$, all but finitely many equal to $0$. (This is the argument of Example [[§24 The Parallelogram Law and Jordan–von Neumann#^ex-24-1|§24.1]], with $X$ over $\mathbb{F}$ in place of $\mathbb{R}$ over $\mathbb{Q}$.)
 >
@@ -69,6 +69,8 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique 
 > a finite sum, because only finitely many coefficients $x_b$ are nonzero. Adding the expansions of $x$ and $y$ gives an expansion of $x + y$, and multiplying the expansion of $x$ by $a \in \mathbb{F}$ gives an expansion of $ax$; by uniqueness, $(x + y)_b = x_b + y_b$ and $(ax)_b = a\,x_b$ for every $b \in B$. Hence $\ell$ is linear. The expansion of $b_k$ is $b_k$ itself, so $\ell(b_k) = k\,\|b_k\|$.
 >
 > *$\ell$ is not bounded.* If there were $c > 0$ with $|\ell(x)| \le c\,\|x\|$ for all $x \in X$, then $k\,\|b_k\| = |\ell(b_k)| \le c\,\|b_k\|$, so $k \le c$ for every $k \in \mathbb{N}$, which is impossible. So $\ell$ is not bounded (Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|§26.1]]).
+>
+> *Source: not from lecture · filled in*
 
 ^ex-26-2
 
@@ -291,7 +293,9 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 *Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Def. §23.1]]
 
 > [!theorem] Corollary §26.7: Variational Form of the Riesz Representation Theorem
-> *(Not from lecture.)* Let $H$ be a Hilbert space over $\mathbb{R}$ and $\ell \in H'$, with Riesz representer $u^{\ast}$: $\ell(v) = (v, u^{\ast})$ for all $v \in H$ (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]). Then $u^{\ast}$ is the unique minimizer over $H$ of $f(v) = \frac12\|v\|^2 - \ell(v)$.
+> Let $H$ be a Hilbert space over $\mathbb{R}$ and $\ell \in H'$, with Riesz representer $u^{\ast}$: $\ell(v) = (v, u^{\ast})$ for all $v \in H$ (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]). Then $u^{\ast}$ is the unique minimizer over $H$ of $f(v) = \frac12\|v\|^2 - \ell(v)$.
+>
+> *Source: not from lecture*
 
 ^cor-26-7
 

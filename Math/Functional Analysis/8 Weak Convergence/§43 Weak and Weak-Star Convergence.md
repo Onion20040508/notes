@@ -194,13 +194,15 @@ Why $\sin(mx) \rightharpoonup 0$: the product $g(x) \sin(mx)$ for the test funct
 Strong convergence in $C[a,b]$ is uniform convergence. Weak convergence lies between uniform and pointwise convergence: it implies pointwise convergence, with the evaluations $\delta_t$ as test functionals. The proposition can be used to show that a sequence has no weak limit.
 
 > [!example] Example §43.3: The Powers $t^n$ Have No Weak Limit in $C[0,1]$
-> *(Not from lecture; filled in.)* Let $x_n(t) = t^n$ in $C[0,1]$. Then $\|x_n\| = 1$ for all $n$, and
+> Let $x_n(t) = t^n$ in $C[0,1]$. Then $\|x_n\| = 1$ for all $n$, and
 >
 > $$
 > \lim_{n \to \infty} x_n(t) = \begin{cases} 0, & 0 \le t < 1, \\ 1, & t = 1 . \end{cases}
 > $$
 >
 > If $x_n \rightharpoonup x$ for some $x \in C[0,1]$, then by Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-4|§43.4]] $x(t) = 0$ for $t < 1$ and $x(1) = 1$, which is not a continuous function. So $\{x_n\}$ does not converge weakly in $C[0,1]$. The same argument applies to every subsequence $\{t^{n_k}\}$, which has the same pointwise limit: the bounded sequence $\{t^n\}$ has no weakly convergent subsequence in $C[0,1]$.
+>
+> *Source: not from lecture · filled in*
 
 ^ex-43-3
 
@@ -346,11 +348,13 @@ It is important that $\ell$ is *bounded*, and that $K$ is *closed* and convex. T
 *The closed convex set $K$ (blue), its enlargement $K_\varepsilon$ (dashed red), which still misses $x_0$, and a separating hyperplane $\{\ell = a\}$ with $x_0$ strictly on one side and $K$ strictly on the other.*
 
 > [!theorem] Corollary §43.9: Hyperplane Separation over $\mathbb{C}$
-> *(Not from lecture.)* Let $X$ be a normed linear space over $\mathbb{C}$, $K$ a closed convex set in $X$, and $x_0 \notin K$. Then there exist $a \in \mathbb{R}$ and $\ell \in X'$ such that
+> Let $X$ be a normed linear space over $\mathbb{C}$, $K$ a closed convex set in $X$, and $x_0 \notin K$. Then there exist $a \in \mathbb{R}$ and $\ell \in X'$ such that
 >
 > $$
 > \operatorname{Re} \ell(x_0) > a > \operatorname{Re} \ell(x) \qquad \text{for all } x \in K .
 > $$
+>
+> *Source: not from lecture*
 
 ^cor-43-9
 
@@ -422,7 +426,7 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 ^ex-43-4
 
 > [!example] Example §43.5: $\sin(mx) \rightharpoonup 0$ in $L^1[0, 2\pi]$
-> *(Posed in lecture as a homework question. The answer is not from lecture; filled in.)* Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|§19.5]]), so the argument of Example [[§43 Weak and Weak-Star Convergence#^ex-43-4|§43.4]] does not apply; one has to test against $L^\infty$ functions. The answer is yes.
+> Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|§19.5]]), so the argument of Example [[§43 Weak and Weak-Star Convergence#^ex-43-4|§43.4]] does not apply; one has to test against $L^\infty$ functions. The answer is yes.
 >
 > Let $\ell \in (L^1([0, 2\pi]))'$. By Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]] with $p = 1$ there is $g \in L^\infty([0, 2\pi])$ with $\ell(f) = \int_0^{2\pi} f(x)\, g(x)\, dx$ for all $f \in L^1([0, 2\pi])$. Since $|g(x)| \le \|g\|_{L^\infty}$ for almost every $x$ and the interval has finite length,
 >
@@ -437,11 +441,15 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 > $$
 >
 > As $\ell \in (L^1([0, 2\pi]))'$ is arbitrary, $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$. No dense subset is needed: on a bounded interval every $L^\infty$ function already lies in $L^2$, where the convergence is known.
+>
+> *Source: question in class · filled in*
 
 ^ex-43-5
 
+*Source note.* Posed in lecture as a homework question. The answer is not from lecture; filled in.
+
 > [!example] Example §43.6: Weak Limits Do Not Respect Products
-> *(Posed in lecture as a homework question, then set as HW10, Problem 2. The example is not from lecture; filled in.)* If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, Hölder gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]] to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$.
+> If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, Hölder gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]] to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$.
 >
 > *The example.* Take $[a, b] = [0, 2\pi]$, $p_1 = p_2 = 2$, so $p = 1$, and $f_n(x) = g_n(x) = \sin(nx)$. By Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]], $f_n \rightharpoonup 0$ and $g_n \rightharpoonup 0$ in $L^2([0, 2\pi])$, so $f_0 = g_0 = 0$ and $f_0 g_0 = 0$. The product is
 >
@@ -458,8 +466,12 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 > As $\ell$ is arbitrary, the claim follows.
 >
 > *Conclusion.* The constant function $\frac12$ is not the zero element of $L^1([0, 2\pi])$, and weak limits are unique (Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]](2)). So $f_n g_n$ does not converge weakly to $f_0 g_0 = 0$ in $L^1([0, 2\pi])$, although $f_n \rightharpoonup f_0$ and $g_n \rightharpoonup g_0$ in $L^2([0, 2\pi])$. The same computation shows that $f_n \rightharpoonup 0$ does not imply $f_n^2 \rightharpoonup 0^2$.
+>
+> *Source: HW10, Problem 2 · filled in*
 
 ^ex-43-6
+
+*Source note.* Posed in lecture as a homework question, then set as HW10, Problem 2. The example is not from lecture; filled in.
 
 Weak limits are useful but limited. A bounded sequence in infinite dimensions need not have a convergent subsequence; under certain circumstances it will have a weakly convergent one, but weak convergence does not commute with nonlinear operations.
 
@@ -543,12 +555,14 @@ As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of t
 ^rem-43-1
 
 > [!example] Example §43.8: An Unbounded Weak-$\ast$ Null Sequence on $c_{00}$
-> *(Not from lecture.)* Let $X = c_{00}$, the finitely supported sequences with the maximum norm (not complete, Example [[§42 Uniform Boundedness and Approximation#^ex-42-2|§42.2]]), and $\ell_n(x) = n\, x_n$. These are the functionals $A_n$ of Example [[§42 Uniform Boundedness and Approximation#^ex-42-2|§42.2]], so $\ell_n \in X'$ with $\|\ell_n\| = n$.
+> Let $X = c_{00}$, the finitely supported sequences with the maximum norm (not complete, Example [[§42 Uniform Boundedness and Approximation#^ex-42-2|§42.2]]), and $\ell_n(x) = n\, x_n$. These are the functionals $A_n$ of Example [[§42 Uniform Boundedness and Approximation#^ex-42-2|§42.2]], so $\ell_n \in X'$ with $\|\ell_n\| = n$.
 >
 > 1. *$\ell_n \overset{\ast}{\rightharpoonup} 0$.* For each $x \in c_{00}$, $\ell_n(x) = 0$ once $n$ exceeds the support of $x$, so $\ell_n(x) \to 0$.
 > 2. *Not bounded.* $\sup_n \|\ell_n\| = \sup_n n = \infty$.
 >
 > So for the normed space $c_{00}$ the direction ($\Rightarrow$) of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-12|§43.12]] fails, and so does the boundedness in Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-13|§43.13]].
+>
+> *Source: not from lecture*
 
 ^ex-43-8
 

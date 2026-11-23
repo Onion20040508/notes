@@ -272,7 +272,9 @@ Together with Theorem [[§58 Semidirect Products#^thm-58-6|§58.6]](1), this rec
 *(Not from lecture; figure added.)* The $21$ elements $(n, s)$ of $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$. The bottom row is the normal subgroup $\tilde N$, and the rows are its cosets, one for each $s$: this is $G/\tilde N \cong \mathbb{Z}/3\mathbb{Z}$ (Proposition [[§58 Semidirect Products#^prop-58-1|§58.1]]). The column $n = 0$ is $\tilde S$, which is not normal. The arrows are left multiplication by $(0, 1)$ on the bottom row, $(0, 1)(n, 0) = (2n, 1)$: moving up a row applies the action.
 
 > [!example] Example §58.4: $S_3$ as an External Semidirect Product
-> *(Not from class.)* Let $\varphi: \mathbb{Z}/2\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/3\mathbb{Z})$ send $1$ to $x \mapsto -x$. Then $\mathbb{Z}/3\mathbb{Z} \rtimes_\varphi \mathbb{Z}/2\mathbb{Z} \cong S_3$: in $S_3 = A_3 \rtimes \langle (1\,2) \rangle$ (Example [[§58 Semidirect Products#^ex-58-1|§58.1]]), conjugation by $(1\,2)$ sends $(1\,2\,3)$ to $(2\,1\,3) = (1\,3\,2) = (1\,2\,3)^{-1}$, which under $A_3 \cong \mathbb{Z}/3\mathbb{Z}$, $(1\,2\,3)^x \leftrightarrow x$, is $x \mapsto -x$. Apply part (1) of Theorem [[§58 Semidirect Products#^thm-58-6|§58.6]]. With $\varphi$ trivial instead, one gets $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$.
+> Let $\varphi: \mathbb{Z}/2\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/3\mathbb{Z})$ send $1$ to $x \mapsto -x$. Then $\mathbb{Z}/3\mathbb{Z} \rtimes_\varphi \mathbb{Z}/2\mathbb{Z} \cong S_3$: in $S_3 = A_3 \rtimes \langle (1\,2) \rangle$ (Example [[§58 Semidirect Products#^ex-58-1|§58.1]]), conjugation by $(1\,2)$ sends $(1\,2\,3)$ to $(2\,1\,3) = (1\,3\,2) = (1\,2\,3)^{-1}$, which under $A_3 \cong \mathbb{Z}/3\mathbb{Z}$, $(1\,2\,3)^x \leftrightarrow x$, is $x \mapsto -x$. Apply part (1) of Theorem [[§58 Semidirect Products#^thm-58-6|§58.6]]. With $\varphi$ trivial instead, one gets $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$.
+>
+> *Source: not from class*
 
 ^ex-58-4
 

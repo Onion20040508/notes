@@ -179,6 +179,7 @@
 % Example numbering; redefined in the Techniques appendix to T1, T2, ...
 \newcommand{\exboxnum}{\arabic{section}.\arabic{excounter}}
 % Reference line to Lax, Functional Analysis, at the foot of a box
+\newcommand{\srcline}[1]{\par\smallskip\hfill{\footnotesize\itshape Source: #1}}
 \newcommand{\laxref}[1]{\par\smallskip\hfill{\footnotesize\itshape Lax: #1}}
 % Roadmap marker: stage / thread line at the head of each section
 \newcommand{\roadmark}[2]{\par\noindent{\small\textsc{#1}\quad\textit{#2}}\par\medskip}
@@ -3967,7 +3968,8 @@ Third, positivity is a statement about a real number even though $(\cdot,\cdot)$
 
 \begin{lembox}[{{The Number $(x,x)$ is Real}}]\boxlabel{lem:complex-ip-xx-real}
 %% ADDED: the third point of the remark Reading the Complex Axioms (not made in lecture)
-\textit{(Not from lecture.)} Let $X$ be a complex linear space and $(\cdot,\cdot) : X \times X \to \mathbb{C}$ skew-symmetric, $(x,y) = \overline{(y,x)}$ for all $x, y$. Then $(x,x) \in \mathbb{R}$ for every $x \in X$.
+Let $X$ be a complex linear space and $(\cdot,\cdot) : X \times X \to \mathbb{C}$ skew-symmetric, $(x,y) = \overline{(y,x)}$ for all $x, y$. Then $(x,x) \in \mathbb{R}$ for every $x \in X$.
+\srcline{not from lecture}
 \end{lembox}
 
 \begin{proof}
@@ -3976,7 +3978,8 @@ Skew-symmetry with $y = x$ gives $(x,x) = \overline{(x,x)}$, and a complex numbe
 
 \begin{lembox}[A Complex Inner Product Cannot Be Bilinear]\boxlabel{lem:complex-ip-not-bilinear}
 %% ADDED: the second point of the remark Reading the Complex Axioms (not made in lecture)
-\textit{(Not from lecture.)} Let $X \neq \{0\}$ be a complex linear space. There is no function $(\cdot,\cdot) : X \times X \to \mathbb{C}$ that is linear in both arguments, skew-symmetric, and positive.
+Let $X \neq \{0\}$ be a complex linear space. There is no function $(\cdot,\cdot) : X \times X \to \mathbb{C}$ that is linear in both arguments, skew-symmetric, and positive.
+\srcline{not from lecture}
 \end{lembox}
 
 \begin{proof}
@@ -4284,13 +4287,14 @@ Two points about the proof. First, the only genuinely analytic step is real homo
 
 \begin{exbox}[An Additive Function That is Not Linear]\boxlabel{ex:additive-not-linear-hamel}
 %% FILL-IN: the remark only asserted existence; the construction is written out here.
-\textit{(Construction filled in.)} A function $f : \mathbb{R} \to \mathbb{R}$ is \emph{additive} if $f(s + t) = f(s) + f(t)$ for all $s, t \in \mathbb{R}$. We construct an additive $f$ that is not linear, i.e.\ not of the form $f(t) = ct$.
+A function $f : \mathbb{R} \to \mathbb{R}$ is \emph{additive} if $f(s + t) = f(s) + f(t)$ for all $s, t \in \mathbb{R}$. We construct an additive $f$ that is not linear, i.e.\ not of the form $f(t) = ct$.
 
 \emph{A Hamel basis.} Regard $\mathbb{R}$ as a linear space over $\mathbb{Q}$. Let $P$ be the set of $\mathbb{Q}$-linearly independent subsets of $\mathbb{R}$ that contain $1$, ordered by inclusion. $P \neq \varnothing$ since $\{1\} \in P$, and the union of a chain in $P$ lies in $P$, because each finite subset of the union lies in a single member of the chain and is therefore independent. By Zorn's lemma (Theorem~\ref{thm:zorn}) $P$ has a maximal element $B$. $B$ spans $\mathbb{R}$ over $\mathbb{Q}$: if some $t$ were not a finite $\mathbb{Q}$-combination of elements of $B$, then $B \cup \{t\}$ would be independent, contradicting maximality. So every $t \in \mathbb{R}$ is, uniquely, a finite combination $t = \sum_{b \in B} q_b(t)\, b$ with $q_b(t) \in \mathbb{Q}$, all but finitely many equal to $0$.
 
 \emph{$B$ contains an element other than $1$.} Otherwise every real number would be a rational multiple of $1$, i.e.\ $\mathbb{R} = \mathbb{Q}$, which is false since $\mathbb{R}$ is uncountable and $\mathbb{Q}$ is countable.
 
 \emph{The function.} Let $f(t) = q_1(t)$, the coefficient of $1$. Adding the expansions of $s$ and $t$ gives an expansion of $s + t$, so by uniqueness $q_1(s + t) = q_1(s) + q_1(t)$: $f$ is additive. If $f$ were linear, then $f(t) = t f(1) = t$ for all $t$, because $f(1) = 1$. But for $b \in B$ with $b \neq 1$, the expansion of $b$ is $b$ itself, so $f(b) = 0$, while $b \neq 0$ since $0$ lies in no linearly independent set. Hence $f(b) \neq b$, and $f$ is additive but not linear.
+\srcline{filled in}
 \end{exbox}
 
 \begin{corbox}[{{Only $p = 2$ Gives an Inner Product}}]\boxlabel{cor:only-p2}
@@ -4401,7 +4405,7 @@ Convexity puts the midpoint $\tfrac{y_m + y_n}{2}$ in $K$, which is what makes t
 
 \begin{exbox}[Closest Points in $\ell^1$ Need Not Be Unique]\boxlabel{ex:l1-closest-points-not-unique}
 %% FILL-IN: the remark only named the phenomenon; the example and its verification are written out here.
-\textit{(Details filled in.)} In the Banach space $\ell^1$ (Theorem~\ref{thm:lp-complete}) let
+In the Banach space $\ell^1$ (Theorem~\ref{thm:lp-complete}) let
 \[
 K = \{ t e_1 + (1 - t) e_2 : 0 \le t \le 1 \}, \qquad x_0 = 0 .
 \]
@@ -4414,11 +4418,12 @@ We show that $K$ is nonempty, closed and convex, and that every point of $K$ is 
 \emph{Every point is closest.} For $y = t e_1 + (1-t) e_2 \in K$, $\|x_0 - y\|_1 = |t| + |1 - t| = t + (1 - t) = 1$. So $\operatorname{dist}(x_0, K) = 1$, and it is attained at every one of the infinitely many points of $K$.
 
 Here $\ell^1$ is complete and $K$ is closed and convex; what is missing is the parallelogram law, which fails in $\ell^1$ (Corollary~\ref{cor:only-p2}).
+\srcline{filled in}
 \end{exbox}
 
 \begin{exbox}[No Closest Point in an Incomplete Inner Product Space]\boxlabel{ex:c00-no-closest-point}
 %% FILL-IN: the remark only named the phenomenon; the example and its verification are written out here.
-\textit{(Details filled in.)} Let $X = c_{00}$, the finitely supported sequences, with the inner product $(y, z) = \sum_i y_i \overline{z_i}$ of $\ell^2$ (Example~\ref{ex:box}); $X$ is an inner product space that is not complete. Let $a = (1, \tfrac12, \tfrac13, \ldots) \in \ell^2$, which is not in $c_{00}$, and
+Let $X = c_{00}$, the finitely supported sequences, with the inner product $(y, z) = \sum_i y_i \overline{z_i}$ of $\ell^2$ (Example~\ref{ex:box}); $X$ is an inner product space that is not complete. Let $a = (1, \tfrac12, \tfrac13, \ldots) \in \ell^2$, which is not in $c_{00}$, and
 \[
 K = \{ y \in c_{00} : (y, a) = 1 \} = \Bigl\{ y \in c_{00} : \sum_i \frac{y_i}{i} = 1 \Bigr\}, \qquad x_0 = 0 .
 \]
@@ -4437,11 +4442,12 @@ We show that $K$ is a nonempty closed convex subset of $X$, that $\operatorname{
 so $y = a / \|a\|^2$, which has every entry nonzero and is not in $c_{00}$: a contradiction.
 
 \emph{The minimizing sequence does not converge in $X$.} In $\ell^2$, $a^{(n)} \to a$ (the tail $\sum_{i > n} i^{-2} \to 0$) and $\|a^{(n)}\| \to \|a\|$, so $y^{(n)} \to a / \|a\|^2$; in particular $\{y^{(n)}\}$ is Cauchy in $X$. A limit in $X$ would be a limit in $\ell^2$, hence equal to $a / \|a\|^2 \notin c_{00}$ by uniqueness of limits. So the Cauchy minimizing sequence has no limit in $X$: exactly the step of Theorem~\ref{thm:projection} that uses completeness.
+\srcline{filled in}
 \end{exbox}
 
 \begin{exbox}[An Open Convex Set Without a Closest Point]\boxlabel{ex:open-ball-no-closest-point}
 %% FILL-IN: the remark only named the phenomenon; the example and its verification are written out here.
-\textit{(Details filled in.)} Let $H \neq \{0\}$ be a Hilbert space, $K = \{ y \in H : \|y\| < 1 \}$ the open unit ball, and $x_0 \in H$ with $\|x_0\| = 2$. We show that $K$ is nonempty and convex, that $\operatorname{dist}(x_0, K) = 1$, and that no point of $K$ attains it.
+Let $H \neq \{0\}$ be a Hilbert space, $K = \{ y \in H : \|y\| < 1 \}$ the open unit ball, and $x_0 \in H$ with $\|x_0\| = 2$. We show that $K$ is nonempty and convex, that $\operatorname{dist}(x_0, K) = 1$, and that no point of $K$ attains it.
 
 \emph{Convex.} If $\|y\|, \|z\| < 1$ and $\lambda \in [0,1]$, then $\|(1 - \lambda) y + \lambda z\| \le (1 - \lambda)\|y\| + \lambda\|z\| < 1$. And $0 \in K$.
 
@@ -4450,11 +4456,12 @@ so $y = a / \|a\|^2$, which has every entry nonzero and is not in $c_{00}$: a co
 \emph{The infimum is $1$.} For $0 < t < 1$, $y_t = \tfrac{t}{2} x_0$ has $\|y_t\| = t < 1$, so $y_t \in K$, and $\|x_0 - y_t\| = (1 - \tfrac t2)\,\|x_0\| = 2 - t \to 1$ as $t \to 1$.
 
 So $\operatorname{dist}(x_0, K) = 1$ is not attained. The points $y_t$ approach $x_0 / 2$, which has norm $1$ and lies outside $K$: $K$ is not closed.
+\srcline{filled in}
 \end{exbox}
 
 \begin{exbox}[Closest Points in a Non-Convex Set Need Not Be Unique]\boxlabel{ex:nonconvex-closest-points-not-unique}
 %% ADDED 2026-11-09 (QC, S25-b4): the remark Where Each Hypothesis Enters had no counterexample for convexity.
-\textit{(Not from lecture; filled in.)} Let $H \neq \{0\}$ be a Hilbert space, $K = \{ y \in H : \|y\| = 1 \}$ the unit sphere, and $x_0 = 0$. We show that $K$ is nonempty and closed but not convex, and that every point of $K$ is a closest point to $x_0$, so that the closest point is not unique.
+Let $H \neq \{0\}$ be a Hilbert space, $K = \{ y \in H : \|y\| = 1 \}$ the unit sphere, and $x_0 = 0$. We show that $K$ is nonempty and closed but not convex, and that every point of $K$ is a closest point to $x_0$, so that the closest point is not unique.
 
 \emph{Nonempty, with at least two points.} Since $H \neq \{0\}$ there is $w \in H$ with $w \neq 0$. Put $y = w / \|w\|$; then $\|y\| = 1$, so $y \in K$. Also $\|{-y}\| = \|y\| = 1$, so $-y \in K$, and $-y \neq y$ because $y \neq 0$.
 
@@ -4465,6 +4472,7 @@ So $\operatorname{dist}(x_0, K) = 1$ is not attained. The points $y_t$ approach 
 \emph{Every point is closest.} For every $u \in K$, $\|x_0 - u\| = \|u\| = 1$. So $\operatorname{dist}(x_0, K) = 1$, and it is attained at every point of $K$, in particular at the two different points $y$ and $-y$.
 
 Here $H$ is complete and $K$ is nonempty and closed; what is missing is convexity. Step 5 of the proof of Theorem~\ref{thm:projection} uses that the midpoint of two closest points lies in $K$; here that midpoint is $0 \notin K$.
+\srcline{not from lecture · filled in}
 \end{exbox}
 
 \begin{rembox}[Comparison with Lax]\label{rem:comparison-lax-5}
@@ -4584,11 +4592,11 @@ The proof of (1) is the first-variation argument of calculus, in the form ``at a
 \end{rembox}
 
 \begin{propbox}[Riesz's Lemma with Constant One in a Hilbert Space]\boxlabel{prop:riesz-constant-one-hilbert}
-\textit{(Not covered in lecture.)}
 \begin{enumerate}[label=(\arabic*)]
     \item Let $X$ be an inner product space, $Y \subset X$ a linear subspace, and $z \in Y^\perp$ with $\|z\| = 1$. Then $\|z - y\| \ge 1$ for every $y \in Y$, and $\operatorname{dist}(z, Y) = 1$.
     \item Let $H$ be a Hilbert space and $Y$ a closed proper subspace of $H$. Then there is $z \in Y^\perp$ with $\|z\| = 1$; hence $\operatorname{dist}(z, Y) = 1$, and Corollary~\ref{cor:riesz-theta} holds with $\theta = 1$, in contrast with Proposition~\ref{prop:riesz-sharp}.
 \end{enumerate}
+\srcline{not from lecture}
 \end{propbox}
 
 \begin{proof}
@@ -4778,7 +4786,7 @@ By Theorem~\ref{prop:norms-equiv}, $\|\cdot\|_1$ is equivalent to the given norm
 \end{proof}
 
 \begin{exbox}[An Unbounded Linear Functional]\boxlabel{ex:unbounded-functional-hamel}
-\textit{(Not from lecture; filled in.)} Let $X$ be an infinite-dimensional normed linear space over $\mathbb{F}$. We construct a linear functional on $X$ that is not bounded.
+Let $X$ be an infinite-dimensional normed linear space over $\mathbb{F}$. We construct a linear functional on $X$ that is not bounded.
 
 \emph{A Hamel basis.} Let $P$ be the set of linearly independent subsets of $X$, ordered by inclusion. $P \neq \varnothing$ since $\varnothing \in P$, and the union of a nonempty chain in $P$ lies in $P$, because each finite subset of the union lies in a single member of the chain and is therefore independent; the empty chain has the upper bound $\varnothing$. By Zorn's lemma (Theorem~\ref{thm:zorn}) $P$ has a maximal element $B$. $B$ spans $X$: if some $x \in X$ were not a finite linear combination of elements of $B$, then $B \cup \{x\}$ would be independent, contradicting maximality. So every $x \in X$ is, uniquely, a finite combination $x = \sum_{b \in B} x_b\, b$ with $x_b \in \mathbb{F}$, all but finitely many equal to $0$. (This is the argument of Example~\ref{ex:additive-not-linear-hamel}, with $X$ over $\mathbb{F}$ in place of $\mathbb{R}$ over $\mathbb{Q}$.)
 
@@ -4791,6 +4799,7 @@ By Theorem~\ref{prop:norms-equiv}, $\|\cdot\|_1$ is equivalent to the given norm
 a finite sum, because only finitely many coefficients $x_b$ are nonzero. Adding the expansions of $x$ and $y$ gives an expansion of $x + y$, and multiplying the expansion of $x$ by $a \in \mathbb{F}$ gives an expansion of $ax$; by uniqueness, $(x + y)_b = x_b + y_b$ and $(ax)_b = a\,x_b$ for every $b \in B$. Hence $\ell$ is linear. The expansion of $b_k$ is $b_k$ itself, so $\ell(b_k) = k\,\|b_k\|$.
 
 \emph{$\ell$ is not bounded.} If there were $c > 0$ with $|\ell(x)| \le c\,\|x\|$ for all $x \in X$, then $k\,\|b_k\| = |\ell(b_k)| \le c\,\|b_k\|$, so $k \le c$ for every $k \in \mathbb{N}$, which is impossible. So $\ell$ is not bounded (Definition~\ref{def:bounded-functional}).
+\srcline{not from lecture · filled in}
 \end{exbox}
 
 \begin{rembox}[Why Boundedness]\label{rem:why-boundedness}
@@ -4972,7 +4981,8 @@ Since $u_0 \in K$, $f(u_0) = \inf_{v \in K} f(v)$.
 \end{proof}
 
 \begin{corbox}[Variational Form of the Riesz Representation Theorem]\boxlabel{cor:riesz-variational-form-K-equals-H}
-\textit{(Not from lecture.)} Let $H$ be a Hilbert space over $\mathbb{R}$ and $\ell \in H'$, with Riesz representer $u^*$: $\ell(v) = (v, u^*)$ for all $v \in H$ (Theorem~\ref{thm:riesz-rep}). Then $u^*$ is the unique minimizer over $H$ of $f(v) = \frac12\|v\|^2 - \ell(v)$.
+Let $H$ be a Hilbert space over $\mathbb{R}$ and $\ell \in H'$, with Riesz representer $u^*$: $\ell(v) = (v, u^*)$ for all $v \in H$ (Theorem~\ref{thm:riesz-rep}). Then $u^*$ is the unique minimizer over $H$ of $f(v) = \frac12\|v\|^2 - \ell(v)$.
+\srcline{not from lecture}
 \end{corbox}
 
 \begin{proof}
@@ -5598,7 +5608,8 @@ Let $a \in c_0$ and $\varepsilon > 0$. Choose $J$ with $|a_n| < \varepsilon$ for
 \end{proof}
 
 \begin{corbox}[{{$c_0$ is a Closed Subspace of $\ell^\infty$}}]\boxlabel{cor:c0-closed-in-linfty}
-\textit{(Not from lecture.)} $c_0$ is a linear subspace of $\ell^\infty$, the norm $|\cdot|$ of Proposition~\ref{prop:c0} is the restriction of $\|\cdot\|_\infty$ (on $c_0$ the supremum is a maximum), and $c_0$ is closed in $\ell^\infty$.
+$c_0$ is a linear subspace of $\ell^\infty$, the norm $|\cdot|$ of Proposition~\ref{prop:c0} is the restriction of $\|\cdot\|_\infty$ (on $c_0$ the supremum is a maximum), and $c_0$ is closed in $\ell^\infty$.
+\srcline{not from lecture}
 \end{corbox}
 
 \begin{proof}
@@ -6217,7 +6228,8 @@ By Proposition~\ref{prop:op-norm}(b) with $Y = \mathbb{F}$ and $\|x_\varepsilon\
 \end{proof}
 
 \begin{exbox}[The Norm of the Integral Functional Need Not be Attained]\boxlabel{ex:integral-functional-not-attained}
-\textit{(Not from lecture.)} Let $f_0(t) = t - \frac12$ in Proposition~\ref{prop:integral-functional-norm}, so $\|\ell\| = \int_0^1 |t - \frac12|\, dt = \frac14$. There is no $x \in C[0,1]$ with $\|x\| \le 1$ and $|\ell(x)| = \|\ell\|$: the supremum defining $\|\ell\|$ is not a maximum.
+Let $f_0(t) = t - \frac12$ in Proposition~\ref{prop:integral-functional-norm}, so $\|\ell\| = \int_0^1 |t - \frac12|\, dt = \frac14$. There is no $x \in C[0,1]$ with $\|x\| \le 1$ and $|\ell(x)| = \|\ell\|$: the supremum defining $\|\ell\|$ is not a maximum.
+\srcline{not from lecture}
 \end{exbox}
 
 \begin{proof}
@@ -7183,8 +7195,9 @@ Let $\Omega \subset \mathbb{R}^n$ be a bounded domain, $A = (a_{ij})$ a uniforml
 
 \begin{rembox}[Where the Elliptic Equation Comes From]\label{rem:elliptic-origin}
 %% >>> ADDED: physical meaning of A (not from lecture)
-\textit{(Not from lecture.)} Heat flows from hot to cold. In a homogeneous, isotropic material the heat flux is $\vec q = -\mu\nabla u$ (Fourier's law), and at equilibrium the heat produced in any region flows out through its boundary, $\operatorname{div}\vec q = f$; this is $-\mu\Delta u = f$, the equation of the remark \emph{Where the Equation Comes From} above. In an inhomogeneous or anisotropic material --- a composite, a crystal, layered rock --- the conductivity depends on the position and on the direction, and Fourier's law becomes $\vec q = -A(x)\nabla u$ with a \emph{conductivity matrix} $A(x)$. Equilibrium is again $\operatorname{div}\vec q = f$, which is $(E)$. Uniform ellipticity says that heat never flows uphill: $\vec q \cdot \nabla u = -(A\nabla u)\cdot\nabla u \le -\alpha |\nabla u|^2$, so the flux always has a component towards lower temperature, and the bound $\Lambda$ says the conductivity is finite.
+Heat flows from hot to cold. In a homogeneous, isotropic material the heat flux is $\vec q = -\mu\nabla u$ (Fourier's law), and at equilibrium the heat produced in any region flows out through its boundary, $\operatorname{div}\vec q = f$; this is $-\mu\Delta u = f$, the equation of the remark \emph{Where the Equation Comes From} above. In an inhomogeneous or anisotropic material --- a composite, a crystal, layered rock --- the conductivity depends on the position and on the direction, and Fourier's law becomes $\vec q = -A(x)\nabla u$ with a \emph{conductivity matrix} $A(x)$. Equilibrium is again $\operatorname{div}\vec q = f$, which is $(E)$. Uniform ellipticity says that heat never flows uphill: $\vec q \cdot \nabla u = -(A\nabla u)\cdot\nabla u \le -\alpha |\nabla u|^2$, so the flux always has a component towards lower temperature, and the bound $\Lambda$ says the conductivity is finite.
 %% <<< END ADDED
+\srcline{not from lecture}
 \end{rembox}
 
 \begin{propbox}[Classical Solutions of $(E)$ Satisfy the Weak Equation]\boxlabel{prop:weak-form-elliptic}
@@ -7380,7 +7393,7 @@ so $\nu(F_2) = 0$.
 
 \begin{exbox}[A Point Mass Has No Density]\boxlabel{ex:rn-point-mass-no-density}
 %% ADDED: example from Claude's commentary (not from lecture).
-\textit{(Not from lecture.)} Let $X = [0,1]$ with its Lebesgue measurable sets, $\mu$ Lebesgue measure, and $\nu = \delta_0$ the unit point mass at $0$: $\nu(E) = 1$ if $0 \in E$ and $\nu(E) = 0$ otherwise. Both are finite measures, and $\nu \not\ll \mu$, since $\mu(\{0\}) = 0$ but $\nu(\{0\}) = 1$. We show that in the proof of Theorem~\ref{thm:radon-nikodym} the set $F_1 = \{ g_0 \le 0 \}$ has $\mu(F_1) = 0$ but $\nu(F_1) = 1$, so Step 4 fails, and that no density exists.
+Let $X = [0,1]$ with its Lebesgue measurable sets, $\mu$ Lebesgue measure, and $\nu = \delta_0$ the unit point mass at $0$: $\nu(E) = 1$ if $0 \in E$ and $\nu(E) = 0$ otherwise. Both are finite measures, and $\nu \not\ll \mu$, since $\mu(\{0\}) = 0$ but $\nu(\{0\}) = 1$. We show that in the proof of Theorem~\ref{thm:radon-nikodym} the set $F_1 = \{ g_0 \le 0 \}$ has $\mu(F_1) = 0$ but $\nu(F_1) = 1$, so Step 4 fails, and that no density exists.
 
 \emph{The representer.} Let $g_0 = \chi_{(0,1]}$, a bounded function, so $g_0 \in H = L^2(\mu + \nu)$. For $f \in H$,
 \[
@@ -7391,6 +7404,7 @@ since $g_0(0) = 0$ and $\mu(\{0\}) = 0$. By the uniqueness in Theorem~\ref{thm:r
 \emph{$F_1$.} For this representative $F_1 = \{0\}$; any other representative differs from it on a $(\mu + \nu)$-null set, which is null for $\mu$ and for $\nu$. Hence $\mu(F_1) = 0$ but $\nu(F_1) = 1$: the point mass hides exactly where $g_0 = 0$.
 
 \emph{No density.} If $\nu(E) = \int_E g\, d\mu$ for all $E$, then $E = \{0\}$ gives $1 = \nu(\{0\}) = \int_{\{0\}} g\, d\mu = 0$, a contradiction. So the hypothesis $\nu \ll \mu$ cannot be dropped from Theorem~\ref{thm:radon-nikodym}.
+\srcline{not from lecture}
 \end{exbox}
 %% <<< END ADDED
 
@@ -7401,7 +7415,7 @@ The truncation in Step 5 is necessary, not cosmetic (Example~\ref{ex:rn-truncati
 
 \begin{exbox}[{{An Unbounded Density: Truncation is Needed}}]\boxlabel{ex:rn-truncation-needed}
 %% ADDED: example from Claude's commentary (not from lecture).
-\textit{(Not from lecture.)} Let $X = [0,1]$, $\mu$ Lebesgue measure, and $\nu(E) = \int_E x^{-1/2}\, dx$, i.e.\ $d\nu = x^{-1/2}\, dx$. We show: $\nu$ is a finite measure with $\nu \ll \mu$; the proof of Theorem~\ref{thm:radon-nikodym} produces $g_0 = 1/(1 + x^{-1/2})$; and the untruncated test function $\chi_X/g_0$ of Step 5 is not in $H = L^2(\mu + \nu)$.
+Let $X = [0,1]$, $\mu$ Lebesgue measure, and $\nu(E) = \int_E x^{-1/2}\, dx$, i.e.\ $d\nu = x^{-1/2}\, dx$. We show: $\nu$ is a finite measure with $\nu \ll \mu$; the proof of Theorem~\ref{thm:radon-nikodym} produces $g_0 = 1/(1 + x^{-1/2})$; and the untruncated test function $\chi_X/g_0$ of Step 5 is not in $H = L^2(\mu + \nu)$.
 
 \emph{$\nu$.} $\nu(X) = \int_0^1 x^{-1/2}\, dx = 2 < \infty$, and if $\mu(E) = 0$ then $\nu(E)$, an integral over a null set, is $0$.
 
@@ -7416,6 +7430,7 @@ so by the uniqueness in Theorem~\ref{thm:riesz-rep} this is the $g_0$ of Step 2.
 \int_X (1 + x^{-1/2})^2\, d(\mu + \nu) = \int_0^1 (1 + x^{-1/2})^3\, dx \ge \int_0^1 x^{-3/2}\, dx = \infty .
 \]
 So $\chi_X/g_0 \notin H$, and Step 5 cannot use it for $E = X$; the truncation is needed. The density is $g = (1 - g_0)/g_0 = x^{-1/2}$, i.e.\ $d\nu/d\mu = x^{-1/2}$ (Definition~\ref{def:rn-derivative}), unbounded near $0$.
+\srcline{not from lecture}
 \end{exbox}
 
 \begin{propbox}[The Radon--Nikodym Derivative is Unique]\boxlabel{prop:rn-density-unique}
@@ -8174,7 +8189,8 @@ and taking the infimum over $y \in Y$ gives $|\lambda([x])| \le \|\ell\|\, \|[x]
 
 %% >>> ADDED: remark (Claude commentary)
 \begin{rembox}[No Hahn--Banach Needed Here]\label{rem:quotient-dual-no-hb}
-\textit{(Not from lecture.)} Every step of the proof is a direct computation with the quotient norm: Step 3 builds the functional on $X/Y$ from $\ell$ itself, so nothing has to be extended. The companion statement for a subspace, $Y' \cong X'/Y^\perp$ (Corollary~\ref{cor:subspace-dual-quotient}), is different: there a functional on $Y$ must be extended to $X$, and onto-ness needs Hahn--Banach (Theorem~\ref{thm:hb-normed}). Closedness of $Y$ is used only to make the quotient norm a norm; for a non-closed $Y$, the theorem applies to $\overline{Y}$ (Lemma~\ref{lem:annihilator-of-closure}).
+Every step of the proof is a direct computation with the quotient norm: Step 3 builds the functional on $X/Y$ from $\ell$ itself, so nothing has to be extended. The companion statement for a subspace, $Y' \cong X'/Y^\perp$ (Corollary~\ref{cor:subspace-dual-quotient}), is different: there a functional on $Y$ must be extended to $X$, and onto-ness needs Hahn--Banach (Theorem~\ref{thm:hb-normed}). Closedness of $Y$ is used only to make the quotient norm a norm; for a non-closed $Y$, the theorem applies to $\overline{Y}$ (Lemma~\ref{lem:annihilator-of-closure}).
+\srcline{not from lecture}
 \end{rembox}
 
 \begin{lembox}[{{The Annihilator of the Closure}}]\boxlabel{lem:annihilator-of-closure}
@@ -8934,13 +8950,14 @@ A closed map is not defined, by analogy with open maps, as one taking closed set
 
 \begin{exbox}[The Projection onto the First Coordinate]\boxlabel{ex:projection-closed-graph-not-closed-sets}
 %% ADDED: example (not from lecture).
-\textit{(Not from lecture.)} The projection $P : \mathbb{R}^2 \to \mathbb{R}$, $P(x, y) = x$, is closed in the graph sense (Definition~\ref{def:closed-map}), but it maps the closed set $H = \{ (x, y) : xy = 1 \}$ onto $\mathbb{R} \setminus \{0\}$, which is not closed.
+The projection $P : \mathbb{R}^2 \to \mathbb{R}$, $P(x, y) = x$, is closed in the graph sense (Definition~\ref{def:closed-map}), but it maps the closed set $H = \{ (x, y) : xy = 1 \}$ onto $\mathbb{R} \setminus \{0\}$, which is not closed.
 
 \emph{Closed graph.} $P$ is linear and $|P(x, y)| = |x| \le \|(x, y)\|$ for the Euclidean norm, so $P$ is bounded, hence continuous, hence closed by Example~\ref{ex:cont-closed}.
 
 \emph{$H$ is closed.} If $(x_n, y_n) \in H$ and $(x_n, y_n) \to (x, y)$, then $x_n \to x$ and $y_n \to y$, so $xy = \lim_n x_n y_n = 1$ and $(x, y) \in H$.
 
 \emph{$P(H) = \mathbb{R} \setminus \{0\}$, not closed.} If $xy = 1$ then $x \neq 0$; conversely, for $x \neq 0$, $(x, 1/x) \in H$ and $P(x, 1/x) = x$. The points $\frac1n \in P(H)$ converge to $0 \notin P(H)$, so $P(H)$ is not closed.
+\srcline{not from lecture}
 \end{exbox}
 
 A closed map need not be continuous. This is why one cares about such a weak notion --- differentiation, the most important operator in analysis, is not bounded, but it is closed.
@@ -9519,7 +9536,8 @@ so $\{z_k\}$ is Cauchy in $X$. Since $X$ is complete, $z_k \to z$ for some $z \i
 \end{proof}
 
 \begin{rembox}[What Each Direction of the Closed Range Criterion Uses]\label{rem:closed-range-uses}
-\textit{(Not from lecture.)} The direction ($\Leftarrow$) uses only that $M$ is closed and $X$ is complete: $Y$ may be any normed linear space, and the same argument works for a closed map with domain $D(M) \subset X$, since then $z_k \in D(M)$ and closedness gives $z \in D(M)$. The direction ($\Rightarrow$) uses the completeness of both spaces, through the open mapping principle. In terms of the induced map of Theorem~\ref{thm:induced-map}, the inequality says $\|[x]\| \le a\, \|M_0 [x]\|$: the inverse of $M_0 : X/N \to R(M)$ is bounded.
+The direction ($\Leftarrow$) uses only that $M$ is closed and $X$ is complete: $Y$ may be any normed linear space, and the same argument works for a closed map with domain $D(M) \subset X$, since then $z_k \in D(M)$ and closedness gives $z \in D(M)$. The direction ($\Rightarrow$) uses the completeness of both spaces, through the open mapping principle. In terms of the induced map of Theorem~\ref{thm:induced-map}, the inequality says $\|[x]\| \le a\, \|M_0 [x]\|$: the inverse of $M_0 : X/N \to R(M)$ is bounded.
+\srcline{not from lecture}
 \end{rembox}
 %% <<< END ADDED
 
@@ -9548,10 +9566,11 @@ The main results of \ref{sec:open-mapping} are the closed graph theorem (Theorem
 
 %% >>> ADDED: lemma (structural pass 2026-11-09): the by-product of the proof of the general form, used by the theorem, the corollary and the proposition below.
 \begin{lembox}[{{The Image of the Unit Ball Contains a Ball About $0$; General Form}}]\boxlabel{lem:ball-in-image-general}
-\textit{(Not from lecture; filled in.)} Let $X$ be a Banach space, $Y$ a normed linear space, and $M \in \mathcal{L}(X, Y)$. Assume $R(M)$ is of the second category in $Y$ (Definition~\ref{def:second-category}). Then there is $\delta > 0$ such that
+Let $X$ be a Banach space, $Y$ a normed linear space, and $M \in \mathcal{L}(X, Y)$. Assume $R(M)$ is of the second category in $Y$ (Definition~\ref{def:second-category}). Then there is $\delta > 0$ such that
 \[
 B(0, \delta) \subset M\bigl( B(0, 1) \bigr) .
 \]
+\srcline{not from lecture · filled in}
 \end{lembox}
 
 \begin{proof}
@@ -9589,11 +9608,12 @@ So every point $Mx_0$ of $M(O)$ has a ball about it inside $M(O)$, and $M(O)$ is
 %% >>> ADDED: corollary, proposition and remark (Claude)
 \begin{corbox}[The General Form Forces $M$ Onto]\boxlabel{cor:open-mapping-general-onto}
 %% ADDED: converted from a remark.
-\textit{(Not from lecture; the statement with $Y$ a Banach space is HW9, Problem 4.)} Let $X$ be a Banach space, $Y$ a normed linear space, and $M \in \mathcal{L}(X, Y)$ with $R(M)$ of the second category in $Y$. Then $M$ is onto. Together with Theorem~\ref{thm:open-mapping-general}: \emph{if $X$ is Banach and $R(M)$ is of the second category, then $M$ is onto and open.}
+Let $X$ be a Banach space, $Y$ a normed linear space, and $M \in \mathcal{L}(X, Y)$ with $R(M)$ of the second category in $Y$. Then $M$ is onto. Together with Theorem~\ref{thm:open-mapping-general}: \emph{if $X$ is Banach and $R(M)$ is of the second category, then $M$ is onto and open.}
+\srcline{not from lecture · HW9, Problem 4}
 \end{corbox}
 
 \begin{proof}
-%% ADDED: the argument of the former remark, written out.
+\textit{(The statement with $Y$ a Banach space is HW9, Problem 4.)} %% ADDED: the argument of the former remark, written out.
 $M(X)$ is a linear subspace of $Y$, since $M$ is linear. It contains a ball about $0$: Lemma~\ref{lem:ball-in-image-general} gives $\delta > 0$ with $B(0, \delta) \subset M(B(0, 1)) \subset M(X)$. A linear subspace $V \subset Y$ containing $B(0, \delta)$ is all of $Y$: $0 \in V$, and for $y \neq 0$ the vector $z = \frac{\delta\, y}{2\|y\|}$ has $\|z\| = \frac{\delta}{2} < \delta$, so $z \in V$, and then
 \[
 y = \frac{2\|y\|}{\delta} \cdot \frac{\delta\, y}{2\|y\|} = \frac{2\|y\|}{\delta}\, z \in V ,
@@ -9605,7 +9625,8 @@ When $Y$ is a Banach space and $M$ is onto, $R(M) = Y$ is of the second category
 
 \begin{propbox}[$Y$ Turns Out to Be Complete]\boxlabel{prop:open-mapping-general-Y-complete}
 %% FILL-IN: converted from a remark (not from lecture).
-\textit{(Not from lecture; filled in.)} Under the hypotheses of Theorem~\ref{thm:open-mapping-general} ($X$ a Banach space, $Y$ a normed linear space, $M \in \mathcal{L}(X, Y)$, $R(M)$ of the second category in $Y$), $Y$ is a Banach space.
+Under the hypotheses of Theorem~\ref{thm:open-mapping-general} ($X$ a Banach space, $Y$ a normed linear space, $M \in \mathcal{L}(X, Y)$, $R(M)$ of the second category in $Y$), $Y$ is a Banach space.
+\srcline{not from lecture · filled in}
 \end{propbox}
 
 \begin{proof}
@@ -9623,7 +9644,8 @@ so $y_K \to y_1 + Mx$. Hence every Cauchy sequence in $Y$ converges, and $Y$ is 
 \end{proof}
 
 \begin{rembox}[What the General Form Gains]\label{rem:open-mapping-general-gains}
-\textit{(Not from lecture.)} Lax states this theorem with $Y$ a Banach space. Allowing $Y$ to be only normed gains nothing in the end: under the hypothesis, $Y$ \emph{is} complete (Proposition~\ref{prop:open-mapping-general-Y-complete}). So the general form is the open mapping theorem for the Banach spaces $X$ and $Y$ with the hypothesis ``onto'' replaced by the weaker-looking ``range of the second category''. This is Lax's Theorem~16, and in Rudin's \emph{Functional Analysis} (Theorem~2.11) the same argument is carried out for complete metric linear spaces.
+Lax states this theorem with $Y$ a Banach space. Allowing $Y$ to be only normed gains nothing in the end: under the hypothesis, $Y$ \emph{is} complete (Proposition~\ref{prop:open-mapping-general-Y-complete}). So the general form is the open mapping theorem for the Banach spaces $X$ and $Y$ with the hypothesis ``onto'' replaced by the weaker-looking ``range of the second category''. This is Lax's Theorem~16, and in Rudin's \emph{Functional Analysis} (Theorem~2.11) the same argument is carried out for complete metric linear spaces.
+\srcline{not from lecture}
 \end{rembox}
 %% <<< END ADDED
 
@@ -9654,7 +9676,7 @@ By the equivalent norm theorem (Theorem~\ref{thm:equiv-norm}), $\|\cdot\|_1$ and
 
 %% >>> ADDED: example (Claude), converted from a remark
 \begin{exbox}[Two Complete Norms That Are Not Equivalent]\boxlabel{ex:two-complete-norms-not-equivalent}
-\textit{(Not from lecture.)} Completeness of both norms alone does not suffice in Theorem~\ref{thm:equiv-norm-2}; the compatibility condition is needed.
+Completeness of both norms alone does not suffice in Theorem~\ref{thm:equiv-norm-2}; the compatibility condition is needed.
 
 On an infinite-dimensional Banach space $(X, \|\cdot\|_1)$, choose a Hamel basis (a linearly independent set whose finite linear combinations give all of $X$; it exists by Zorn's lemma, by the argument of Example~\ref{ex:additive-not-linear-hamel}) normalized to $\|e\|_1 = 1$, pick countably many of its elements $e_1, e_2, \ldots$, and let $\varphi : X \to X$ be the linear map with $\varphi(e_k) = k\, e_k$ that fixes the other basis elements. Put $\|x\|_2 = \|\varphi x\|_1$.
 \begin{enumerate}[label=(\arabic*)]
@@ -9663,6 +9685,7 @@ On an infinite-dimensional Banach space $(X, \|\cdot\|_1)$, choose a Hamel basis
     \item \emph{The norms are not equivalent.} $\|e_k\|_2 = \|k\, e_k\|_1 = k$ while $\|e_k\|_1 = 1$, so there is no $c$ with $\|x\|_2 \le c\, \|x\|_1$ for all $x$.
     \item \emph{The compatibility condition fails.} Otherwise Theorem~\ref{thm:equiv-norm-2} would make the two complete norms equivalent, contradicting (3).
 \end{enumerate}
+\srcline{not from lecture}
 \end{exbox}
 %% <<< END ADDED
 
@@ -9709,7 +9732,7 @@ Hence $\|A_\alpha x\|_Y \le (C - 1)\|x\|_X$ for all $\alpha$ and $x$, i.e.\ $\su
 
 %% >>> ADDED: example and remark (Claude)
 \begin{exbox}[{Pointwise but Not Uniformly Bounded Functionals on $c_{00}$}]\boxlabel{ex:ubp-c00-pointwise-not-uniform}
-\textit{(Not from lecture.)} Completeness of $X$ is needed in Theorem~\ref{thm:ubp}. Let $c_{00}$ be the finitely supported sequences with $\|x\| = \max_n |x_n|$, and $A_n x = n\, x_n$.
+Completeness of $X$ is needed in Theorem~\ref{thm:ubp}. Let $c_{00}$ be the finitely supported sequences with $\|x\| = \max_n |x_n|$, and $A_n x = n\, x_n$.
 \begin{enumerate}[label=(\arabic*)]
     \item \emph{$c_{00}$ is not complete.} Let $x^{(N)} = (1, \frac12, \ldots, \frac1N, 0, 0, \ldots)$. For $M > N$, $\|x^{(M)} - x^{(N)}\| = \frac{1}{N+1}$, so $\{x^{(N)}\}$ is Cauchy. If $x^{(N)} \to x$ in $c_{00}$, then for each $j$, $|x^{(N)}_j - x_j| \le \|x^{(N)} - x\| \to 0$, so $x_j = \frac1j$ for every $j$, and $x$ is not finitely supported, a contradiction.
     \item \emph{Each $A_n$ is a bounded linear functional with $\|A_n\| = n$.} $A_n$ is linear, and $|A_n x| = n|x_n| \le n\|x\|$, so $\|A_n\| \le n$; the unit vector $e_n$ gives $A_n e_n = n$, so $\|A_n\| = n$.
@@ -9717,6 +9740,7 @@ Hence $\|A_\alpha x\|_Y \le (C - 1)\|x\|_X$ for all $\alpha$ and $x$, i.e.\ $\su
     \item \emph{Not uniformly bounded.} $\sup_n \|A_n\| = \sup_n n = \infty$.
 \end{enumerate}
 So the conclusion of Theorem~\ref{thm:ubp} fails on the normed space $c_{00}$. The proof breaks at the completeness step: neither $(c_{00}, \|\cdot\|)$ nor $(c_{00}, \|\cdot\|_2)$ is complete (for the second norm, $x^{(N)} = (1, \frac14, \ldots, \frac{1}{N^2}, 0, 0, \ldots)$ is Cauchy, since $\|x^{(M)} - x^{(N)}\|_2 = \frac{1}{(N+1)^2} + \frac{1}{N+1}$ for $M > N$, and has no limit in $c_{00}$, as in (1)), so Theorem~\ref{thm:equiv-norm} does not apply.
+\srcline{not from lecture}
 \end{exbox}
 
 \begin{rembox}[Other Proofs of the Principle]\label{rem:ubp-other-proofs}
@@ -9751,12 +9775,14 @@ Given $\varepsilon > 0$, first choose $y \in D$ with $C\|x - y\| < \varepsilon/2
 
 %% >>> ADDED: remark (Claude commentary)
 \begin{rembox}[Which Hypotheses Each Direction Uses]\label{rem:banach-steinhaus-hypotheses}
-\textit{(Not from lecture.)} Only ($\Rightarrow$) uses the completeness of $X$, through the uniform boundedness principle; ($\Leftarrow$) is an $\varepsilon/2$ argument valid in any normed spaces. Lax's Theorem~6 (\S15.2) is a variant of ($\Leftarrow$) in which no limit $A$ is given (Proposition~\ref{prop:banach-steinhaus-no-given-limit}); there $Y$ must be complete, since the limit has to be produced.
+Only ($\Rightarrow$) uses the completeness of $X$, through the uniform boundedness principle; ($\Leftarrow$) is an $\varepsilon/2$ argument valid in any normed spaces. Lax's Theorem~6 (\S15.2) is a variant of ($\Leftarrow$) in which no limit $A$ is given (Proposition~\ref{prop:banach-steinhaus-no-given-limit}); there $Y$ must be complete, since the limit has to be produced.
+\srcline{not from lecture}
 \end{rembox}
 
 \begin{propbox}[Banach--Steinhaus Without a Given Limit]\boxlabel{prop:banach-steinhaus-no-given-limit}
 %% ADDED: converted from the remark Which Hypotheses Each Direction Uses (not from lecture).
-\textit{(Not from lecture.)} Let $X$ be a normed linear space, $Y$ a Banach space, and $\{A_n\}$ a sequence of bounded linear maps $X \to Y$ with $\sup_n \|A_n\| \le C < \infty$. If $\lim_{n \to \infty} A_n y$ exists for every $y$ in a dense subset $D$ of $X$, then $\lim_{n \to \infty} A_n x$ exists for every $x \in X$.
+Let $X$ be a normed linear space, $Y$ a Banach space, and $\{A_n\}$ a sequence of bounded linear maps $X \to Y$ with $\sup_n \|A_n\| \le C < \infty$. If $\lim_{n \to \infty} A_n y$ exists for every $y$ in a dense subset $D$ of $X$, then $\lim_{n \to \infty} A_n x$ exists for every $x \in X$.
+\srcline{not from lecture}
 \laxref{\S15.2, Thm~6}
 \end{propbox}
 
@@ -10005,11 +10031,12 @@ So $\delta_t \in (C[a,b])'$, with $\|\delta_t\| \le 1$. By the definition of wea
 Strong convergence in $C[a,b]$ is uniform convergence. Weak convergence lies between uniform and pointwise convergence: it implies pointwise convergence, with the evaluations $\delta_t$ as test functionals. The proposition can be used to show that a sequence has no weak limit.
 
 \begin{exbox}[{{The Powers $t^n$ Have No Weak Limit in $C[0,1]$}}]\boxlabel{ex:tn-no-weak-limit}
-\textit{(Not from lecture; filled in.)} Let $x_n(t) = t^n$ in $C[0,1]$. Then $\|x_n\| = 1$ for all $n$, and
+Let $x_n(t) = t^n$ in $C[0,1]$. Then $\|x_n\| = 1$ for all $n$, and
 \[
 \lim_{n \to \infty} x_n(t) = \begin{cases} 0, & 0 \le t < 1, \\ 1, & t = 1 . \end{cases}
 \]
 If $x_n \rightharpoonup x$ for some $x \in C[0,1]$, then by Proposition~\ref{prop:weak-C-pointwise} $x(t) = 0$ for $t < 1$ and $x(1) = 1$, which is not a continuous function. So $\{x_n\}$ does not converge weakly in $C[0,1]$. The same argument applies to every subsequence $\{t^{n_k}\}$, which has the same pointwise limit: the bounded sequence $\{t^n\}$ has no weakly convergent subsequence in $C[0,1]$.
+\srcline{not from lecture · filled in}
 \end{exbox}
 %% <<< END ADDED
 
@@ -10129,10 +10156,11 @@ It is important that $\ell$ is \emph{bounded}, and that $K$ is \emph{closed} and
 
 %% >>> ADDED: corollary (Claude), converted from a remark
 \begin{corbox}[Hyperplane Separation over $\mathbb{C}$]\boxlabel{cor:separation-normed-complex}
-\textit{(Not from lecture.)} Let $X$ be a normed linear space over $\mathbb{C}$, $K$ a closed convex set in $X$, and $x_0 \notin K$. Then there exist $a \in \mathbb{R}$ and $\ell \in X'$ such that
+Let $X$ be a normed linear space over $\mathbb{C}$, $K$ a closed convex set in $X$, and $x_0 \notin K$. Then there exist $a \in \mathbb{R}$ and $\ell \in X'$ such that
 \[
 \operatorname{Re} \ell(x_0) > a > \operatorname{Re} \ell(x) \qquad \text{for all } x \in K .
 \]
+\srcline{not from lecture}
 \end{corbox}
 
 \begin{proof}
@@ -10236,7 +10264,7 @@ By Theorem~\ref{thm:weak-criterion}, $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\
 \end{exbox}
 
 \begin{exbox}[{{$\sin(mx) \rightharpoonup 0$ in $L^1[0, 2\pi]$}}]\boxlabel{ex:sin-weak-L1}
-\textit{(Posed in lecture as a homework question. The answer is not from lecture; filled in.)} Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition~\ref{prop:C-not-dense}), so the argument of Example~\ref{ex:sin-weak-Lp} does not apply; one has to test against $L^\infty$ functions. The answer is yes.
+Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition~\ref{prop:C-not-dense}), so the argument of Example~\ref{ex:sin-weak-Lp} does not apply; one has to test against $L^\infty$ functions. The answer is yes.
 
 Let $\ell \in (L^1([0, 2\pi]))'$. By Theorem~\ref{thm:Lp-dual} with $p = 1$ there is $g \in L^\infty([0, 2\pi])$ with $\ell(f) = \int_0^{2\pi} f(x)\, g(x)\, dx$ for all $f \in L^1([0, 2\pi])$. Since $|g(x)| \le \|g\|_{L^\infty}$ for almost every $x$ and the interval has finite length,
 \[
@@ -10247,10 +10275,13 @@ so $g \in L^2([0, 2\pi])$. By Example~\ref{ex:sin-weak},
 \ell(\sin(mx)) = \int_0^{2\pi} \sin(mx)\, g(x)\, dx \longrightarrow 0 = \ell(0) \qquad (m \to \infty) .
 \]
 As $\ell \in (L^1([0, 2\pi]))'$ is arbitrary, $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$. No dense subset is needed: on a bounded interval every $L^\infty$ function already lies in $L^2$, where the convergence is known.
+\srcline{question in class · filled in}
 \end{exbox}
 
+\textit{Source note.} Posed in lecture as a homework question. The answer is not from lecture; filled in.
+
 \begin{exbox}[Weak Limits Do Not Respect Products]\boxlabel{ex:weak-product-fails}
-\textit{(Posed in lecture as a homework question, then set as HW10, Problem 2. The example is not from lecture; filled in.)} If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, H\"older gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem~\ref{thm:holder-fn} to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$.
+If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, H\"older gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem~\ref{thm:holder-fn} to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$.
 
 \emph{The example.} Take $[a, b] = [0, 2\pi]$, $p_1 = p_2 = 2$, so $p = 1$, and $f_n(x) = g_n(x) = \sin(nx)$. By Example~\ref{ex:sin-weak}, $f_n \rightharpoonup 0$ and $g_n \rightharpoonup 0$ in $L^2([0, 2\pi])$, so $f_0 = g_0 = 0$ and $f_0 g_0 = 0$. The product is
 \[
@@ -10263,7 +10294,10 @@ f_n(x)\, g_n(x) = \sin^2(nx) = \tfrac12 - \tfrac12 \cos(2nx) .
 As $\ell$ is arbitrary, the claim follows.
 
 \emph{Conclusion.} The constant function $\frac12$ is not the zero element of $L^1([0, 2\pi])$, and weak limits are unique (Proposition~\ref{prop:weak-basic}(2)). So $f_n g_n$ does not converge weakly to $f_0 g_0 = 0$ in $L^1([0, 2\pi])$, although $f_n \rightharpoonup f_0$ and $g_n \rightharpoonup g_0$ in $L^2([0, 2\pi])$. The same computation shows that $f_n \rightharpoonup 0$ does not imply $f_n^2 \rightharpoonup 0^2$.
+\srcline{HW10, Problem 2 · filled in}
 \end{exbox}
+
+\textit{Source note.} Posed in lecture as a homework question, then set as HW10, Problem 2. The example is not from lecture; filled in.
 
 Weak limits are useful but limited. A bounded sequence in infinite dimensions need not have a convergent subsequence; under certain circumstances it will have a weakly convergent one, but weak convergence does not commute with nonlinear operations.
 
@@ -10392,12 +10426,13 @@ In the lecture the theorem above, and the next one, were stated for a normed lin
 
 \begin{exbox}[{An Unbounded Weak-$*$ Null Sequence on $c_{00}$}]\boxlabel{ex:weak-star-null-unbounded-c00}
 %% ADDED: converted from the remark The Weak-* Criteria Need X Complete.
-\textit{(Not from lecture.)} Let $X = c_{00}$, the finitely supported sequences with the maximum norm (not complete, Example~\ref{ex:ubp-c00-pointwise-not-uniform}), and $\ell_n(x) = n\, x_n$. These are the functionals $A_n$ of Example~\ref{ex:ubp-c00-pointwise-not-uniform}, so $\ell_n \in X'$ with $\|\ell_n\| = n$.
+Let $X = c_{00}$, the finitely supported sequences with the maximum norm (not complete, Example~\ref{ex:ubp-c00-pointwise-not-uniform}), and $\ell_n(x) = n\, x_n$. These are the functionals $A_n$ of Example~\ref{ex:ubp-c00-pointwise-not-uniform}, so $\ell_n \in X'$ with $\|\ell_n\| = n$.
 \begin{enumerate}[label=(\arabic*)]
     \item \emph{$\ell_n \overset{*}{\rightharpoonup} 0$.} For each $x \in c_{00}$, $\ell_n(x) = 0$ once $n$ exceeds the support of $x$, so $\ell_n(x) \to 0$.
     \item \emph{Not bounded.} $\sup_n \|\ell_n\| = \sup_n n = \infty$.
 \end{enumerate}
 So for the normed space $c_{00}$ the direction ($\Rightarrow$) of Theorem~\ref{thm:weak-star-criterion} fails, and so does the boundedness in Theorem~\ref{thm:weak-star-lsc}.
+\srcline{not from lecture}
 \end{exbox}
 %% <<< END ADDED
 
@@ -10558,11 +10593,12 @@ In the notes of the lecture the corollary reads: if $X$ is separable, any bounde
 \end{rembox}
 
 \begin{exbox}[{{A Bounded Closed Convex Set that is Not Weak-$*$ Sequentially Compact}}]\boxlabel{ex:weak-star-not-compact}
-\textit{(Not from lecture.)} Let $X = c_0$, which is separable (Proposition~\ref{prop:c0}), and identify $X'$ with $\ell^1$ by $a \mapsto \ell_a$, $\ell_a(x) = \sum_{j} x_j\, \overline{a_j}$ (Proposition~\ref{prop:c0-dual}). The set
+Let $X = c_0$, which is separable (Proposition~\ref{prop:c0}), and identify $X'$ with $\ell^1$ by $a \mapsto \ell_a$, $\ell_a(x) = \sum_{j} x_j\, \overline{a_j}$ (Proposition~\ref{prop:c0-dual}). The set
 \[
 C = \Bigl\{ \ell_a : a \in \ell^1,\ \|a\|_1 \le 1,\ \sum_{j=1}^\infty a_j = 1 \Bigr\} \subset X'
 \]
 is bounded, convex, and closed in the norm of $X'$, but it is not weak-$*$ sequentially compact.
+\srcline{not from lecture}
 \end{exbox}
 
 \begin{proof}
@@ -10582,7 +10618,8 @@ For $a \in \ell^1$ write $s(a) = \sum_{j=1}^\infty a_j$. The series converges ab
 In a reflexive space, Helly's theorem applies to $X'' = X$ and gives weakly convergent subsequences. Helly's theorem needs a separable space, and a reflexive space need not be separable; the proof therefore passes to the closed linear span of the given sequence. That this span is separable is the following lemma.
 
 \begin{lembox}[The Closed Span of a Countable Set is Separable]\boxlabel{lem:countable-span-separable}
-\textit{(Not from lecture; filled in.)} Let $X$ be a normed linear space over $\mathbb{F}$ and $\{z_j\}_{j=1}^\infty \subset X$. Then $X_0 = \overline{\operatorname{span}}\, \{z_j\}_{j=1}^\infty$ (Definition~\ref{def:closed-span}), with the norm of $X$, is a separable normed linear space.
+Let $X$ be a normed linear space over $\mathbb{F}$ and $\{z_j\}_{j=1}^\infty \subset X$. Then $X_0 = \overline{\operatorname{span}}\, \{z_j\}_{j=1}^\infty$ (Definition~\ref{def:closed-span}), with the norm of $X$, is a separable normed linear space.
+\srcline{not from lecture · filled in}
 \end{lembox}
 
 \begin{proof}
@@ -10658,7 +10695,8 @@ By Mazur's theorem (Theorem~\ref{thm:mazur}), applied to the sequence $\{x_{n_j}
 \end{proof}
 
 \begin{corbox}[{{Bounded Closed Convex Sets in the Dual of a Reflexive Space}}]\boxlabel{cor:reflexive-dual-convex-compact}
-\textit{(Not from lecture.)} Let $X$ be a reflexive normed linear space. Then every bounded convex subset $C$ of $X'$ that is closed in the norm of $X'$ is weak-$*$ sequentially compact.
+Let $X$ be a reflexive normed linear space. Then every bounded convex subset $C$ of $X'$ that is closed in the norm of $X'$ is weak-$*$ sequentially compact.
+\srcline{not from lecture}
 \end{corbox}
 
 \begin{proof}
@@ -10687,7 +10725,8 @@ How the results of this section depend on each other. Each arrow names what is a
 Helly's theorem asks for a separable $X$. For sequences this hypothesis cannot be dropped.
 
 \begin{exbox}[{{A Bounded Sequence in $(\ell^\infty)'$ with No Weak-$*$ Convergent Subsequence}}]\boxlabel{ex:linfty-no-weak-star-subsequence}
-\textit{(Not from lecture.)} Let $X = \ell^\infty$, which is not separable (Proposition~\ref{prop:linfty-nonsep}), and let $\delta_n(x) = x_n$ be the $n$-th coordinate of $x = (x_1, x_2, \ldots) \in \ell^\infty$. Then $\delta_n \in X'$ with $\|\delta_n\| = 1$, and no subsequence of $\{\delta_n\}_{n=1}^\infty$ converges in the weak-$*$ sense.
+Let $X = \ell^\infty$, which is not separable (Proposition~\ref{prop:linfty-nonsep}), and let $\delta_n(x) = x_n$ be the $n$-th coordinate of $x = (x_1, x_2, \ldots) \in \ell^\infty$. Then $\delta_n \in X'$ with $\|\delta_n\| = 1$, and no subsequence of $\{\delta_n\}_{n=1}^\infty$ converges in the weak-$*$ sense.
+\srcline{not from lecture}
 \end{exbox}
 
 \begin{proof}
@@ -10699,16 +10738,20 @@ Let $n_1 < n_2 < \cdots$ be any sequence of indices. Define $x \in \ell^\infty$ 
 What holds without separability is compactness in a topology on $X'$, not compactness for sequences.
 
 \begin{defbox}[{{Weak-$*$ Topology}}]\boxlabel{def:weak-star-topology}
-\textit{(Not from lecture; needed to state Alaoglu's theorem.)} Let $X$ be a normed linear space. A subset $U \subset X'$ is \textbf{weak-$*$ open} if for every $\ell_1 \in U$ there are finitely many points $x_1, \ldots, x_k \in X$ and $\varepsilon > 0$ such that
+Let $X$ be a normed linear space. A subset $U \subset X'$ is \textbf{weak-$*$ open} if for every $\ell_1 \in U$ there are finitely many points $x_1, \ldots, x_k \in X$ and $\varepsilon > 0$ such that
 \[
 \bigl\{ \ell \in X' : |\ell(x_i) - \ell_1(x_i)| < \varepsilon \text{ for } i = 1, \ldots, k \bigr\} \subset U .
 \]
 The collection of weak-$*$ open sets is the \textbf{weak-$*$ topology} of $X'$. It is the coarsest topology on $X'$ in which every function $\ell \mapsto \ell(x)$, $x \in X$, is continuous.
+\srcline{not from lecture}
 \laxref{Ch.~12, definition before Thm~3}
 \end{defbox}
 
+\textit{Source note.} Needed to state Alaoglu's theorem.
+
 \begin{defbox}[{{Weak-$*$ Compact Set}}]\boxlabel{def:weak-star-compact}
-\textit{(Not from lecture.)} Let $X$ be a normed linear space. A subset $K \subset X'$ is \textbf{weak-$*$ compact} if every collection of weak-$*$ open sets (Definition~\ref{def:weak-star-topology}) whose union contains $K$ has a finite subcollection whose union still contains $K$. This is Definition~\ref{def:compact} with weak-$*$ open sets in place of open sets.
+Let $X$ be a normed linear space. A subset $K \subset X'$ is \textbf{weak-$*$ compact} if every collection of weak-$*$ open sets (Definition~\ref{def:weak-star-topology}) whose union contains $K$ has a finite subcollection whose union still contains $K$. This is Definition~\ref{def:compact} with weak-$*$ open sets in place of open sets.
+\srcline{not from lecture}
 \end{defbox}
 
 \begin{thmbox}[Alaoglu's Theorem]\boxlabel{thm:alaoglu}
@@ -10777,7 +10820,8 @@ The closest point (the picture in the notes): $y_0 \in K$ with $\|x_0 - y_0\| = 
 The theorem gives existence only. Uniqueness, which holds in a Hilbert space, can fail; and existence can fail when $X$ is not reflexive. The next lemma supplies a reflexive space for the first example.
 
 \begin{lembox}[Finite-Dimensional Normed Spaces are Reflexive]\boxlabel{lem:findim-reflexive}
-\textit{(Not from lecture.)} Let $X$ be a finite-dimensional normed linear space. Then $X$ is reflexive.
+Let $X$ be a finite-dimensional normed linear space. Then $X$ is reflexive.
+\srcline{not from lecture}
 \end{lembox}
 
 \begin{proof}
@@ -10789,7 +10833,8 @@ If $X = \{0\}$, then $X' = \{0\}$ and $X'' = \{0\}$, and $i$ is onto. Let $n = \
 \end{proof}
 
 \begin{exbox}[The Closest Point Need Not be Unique]\boxlabel{ex:closest-not-unique}
-\textit{(Not from lecture.)} Let $X = \mathbb{R}^2$ with the maximum norm $\|x\|_\infty = \max\{|x_1|, |x_2|\}$, a reflexive Banach space (Lemma~\ref{lem:findim-reflexive}). Let $K = \{ x \in \mathbb{R}^2 : x_1 \ge 1 \}$ and $x_0 = 0$. Then $K$ is nonempty, closed and convex, $\operatorname{dist}(x_0, K) = 1$, and every point $(1, t)$ with $|t| \le 1$ is a closest point of $K$ to $x_0$.
+Let $X = \mathbb{R}^2$ with the maximum norm $\|x\|_\infty = \max\{|x_1|, |x_2|\}$, a reflexive Banach space (Lemma~\ref{lem:findim-reflexive}). Let $K = \{ x \in \mathbb{R}^2 : x_1 \ge 1 \}$ and $x_0 = 0$. Then $K$ is nonempty, closed and convex, $\operatorname{dist}(x_0, K) = 1$, and every point $(1, t)$ with $|t| \le 1$ is a closest point of $K$ to $x_0$.
+\srcline{not from lecture}
 \end{exbox}
 
 \begin{proof}
@@ -10827,11 +10872,12 @@ The closest points of the half-plane $K = \{x_1 \ge 1\}$ to $x_0 = 0$ are where 
 %% <<< END ADDED
 
 \begin{exbox}[{{No Closest Point in $C[0,1]$}}]\boxlabel{ex:closest-none-C01}
-\textit{(Not from lecture.)} Let $X = C[0,1]$ with the maximum norm, which is not reflexive (Example~\ref{ex:C-nonreflexive}). Let $\ell(x) = \int_0^1 \bigl( t - \frac12 \bigr)\, x(t)\, dt$, so $\ell \in X'$ with $\|\ell\| = \frac14$ (Proposition~\ref{prop:integral-functional-norm}), and
+Let $X = C[0,1]$ with the maximum norm, which is not reflexive (Example~\ref{ex:C-nonreflexive}). Let $\ell(x) = \int_0^1 \bigl( t - \frac12 \bigr)\, x(t)\, dt$, so $\ell \in X'$ with $\|\ell\| = \frac14$ (Proposition~\ref{prop:integral-functional-norm}), and
 \[
 K = \bigl\{ x \in C[0,1] : \ell(x) = \tfrac14 \bigr\} .
 \]
 Then $K$ is nonempty, closed and convex, $\operatorname{dist}(0, K) = 1$, and no point of $K$ has norm $1$: $K$ has no closest point to $0$. So in Theorem~\ref{thm:closest-reflexive} the reflexivity of $X$ cannot be dropped.
+\srcline{not from lecture}
 \end{exbox}
 
 \begin{proof}
@@ -10971,7 +11017,7 @@ So $T^j x \in \ell^2$ and $\|T^j x\| \le \|x\|$: each $T^j$ is bounded, with $\|
 \end{proof}
 
 \begin{exbox}[{{Weak but Not Strong Convergence: Powers of the Right Shift}}]\boxlabel{ex:right-shift}
-\textit{(Lecture 20.)} Let $S : \ell^2 \to \ell^2$ be the \textbf{right shift},
+Let $S : \ell^2 \to \ell^2$ be the \textbf{right shift},
 \[
 S(a_1, a_2, a_3, \ldots) = (0, a_1, a_2, \ldots) , \qquad \text{so} \qquad S^j(a_1, a_2, \ldots) = (\underbrace{0, \ldots, 0}_{j}, a_1, a_2, \ldots) .
 \]
@@ -10981,6 +11027,7 @@ Then $S \in \mathcal{L}(\ell^2, \ell^2)$, and:
     \item $\|S^j x\| = \|x\|$ for every $x \in \ell^2$ and every $j$, so $S^j \not\to 0$ strongly.
 \end{enumerate}
 Weak convergence does not imply strong convergence.
+\srcline{Lecture 20}
 \end{exbox}
 
 \begin{proof}
@@ -11473,11 +11520,12 @@ For a matrix, $A$ is called self-adjoint (symmetric) when $A^T = A$, i.e.\ $a_{i
 \end{rembox}
 
 \begin{exbox}[{{The Adjoint of a Hilbert--Schmidt Operator}}]\boxlabel{ex:hilbert-schmidt-adjoint}
-\textit{(Not from lecture.)} Let $K$ and $T$ be as in Definition~\ref{def:hilbert-schmidt}, and let $T^\ast$ be the Hilbert--Schmidt operator with kernel $\overline{K(y, x)}$,
+Let $K$ and $T$ be as in Definition~\ref{def:hilbert-schmidt}, and let $T^\ast$ be the Hilbert--Schmidt operator with kernel $\overline{K(y, x)}$,
 \[
 T^\ast g(x) = \int_\Omega \overline{K(y, x)}\, g(y)\, d\mu(y) .
 \]
 Then $(Tf, g) = (f, T^\ast g)$ for all $f, g \in L^2(\mu)$. So $T^\ast$ is the adjoint of $T$, and $T^\ast = T$ when $K(x, y) = \overline{K(y, x)}$ for almost every $(x, y)$.
+\srcline{not from lecture}
 \end{exbox}
 
 \begin{proof}
@@ -11540,7 +11588,8 @@ the set of vectors on which every functional in $S$ vanishes.
 \end{defbox}
 
 \begin{lembox}[{{${}^\perp S$ is a Closed Subspace}}]\boxlabel{lem:annihilator-dual-closed}
-\textit{(Not from lecture.)} Let $X$ be a normed linear space and $S \subset X'$. Then ${}^\perp S$ is a closed linear subspace of $X$.
+Let $X$ be a normed linear space and $S \subset X'$. Then ${}^\perp S$ is a closed linear subspace of $X$.
+\srcline{not from lecture}
 \laxref{\S15.1, before Thm~5 (``clearly'')}
 \end{lembox}
 
@@ -11573,11 +11622,12 @@ Both parts come from the defining identity $\langle Mx, \ell \rangle = \langle x
 \end{proof}
 
 \begin{corbox}[{{The Closure of the Range}}]\boxlabel{cor:closure-range}
-\textit{(Not from lecture.)} Let $X, Y$ be normed linear spaces and $M \in \mathcal{L}(X, Y)$.
+Let $X, Y$ be normed linear spaces and $M \in \mathcal{L}(X, Y)$.
 \begin{enumerate}[label=(\arabic*)]
     \item $\overline{R(M)} = {}^\perp N(M')$: a vector $y \in Y$ is a limit of vectors $Mx$ if and only if $\ell(y) = 0$ for every $\ell \in Y'$ with $M'\ell = 0$.
     \item If $R(M)$ is closed, then for $y \in Y$ the equation $Mx = y$ has a solution $x \in X$ if and only if $\ell(y) = 0$ for every $\ell \in N(M')$.
 \end{enumerate}
+\srcline{not from lecture}
 \end{corbox}
 
 \begin{proof}
@@ -11751,7 +11801,7 @@ The two definitions stand to each other as strong and weak convergence do (Defin
 
 %% >>> ADDED: example (not from lecture)
 \begin{exbox}[{{A Power Series with Values in $\ell^2$}}]\boxlabel{ex:analytic-l2}
-\textit{(Not from lecture; filled in.)} Let $D = \{ z \in \mathbb{C} : |z| < 1 \}$, $X = \ell^2$ over $\mathbb{C}$ with entries numbered from $0$, and
+Let $D = \{ z \in \mathbb{C} : |z| < 1 \}$, $X = \ell^2$ over $\mathbb{C}$ with entries numbered from $0$, and
 \[
 f(z) = (1, z, z^2, z^3, \ldots) , \qquad \text{that is,} \quad f(z)_n = z^n \quad (n = 0, 1, 2, \ldots) .
 \]
@@ -11782,6 +11832,7 @@ f(z) = (1, z, z^2, z^3, \ldots) , \qquad \text{that is,} \quad f(z)_n = z^n \qua
     where the series converges by the ratio test, since $r < 1$. Hence the difference quotients converge to $g(z)$ in the norm of $\ell^2$ as $h \to 0$.
 \end{enumerate}
 The weak check (2) takes two lines, because it only uses the theory of scalar power series; the strong check (3) needs an estimate that is uniform in the entries. Dunford's theorem (Theorem~\ref{thm:dunford}) says that (2) alone already gives (3).
+\srcline{not from lecture · filled in}
 \end{exbox}
 %% <<< END ADDED
 
@@ -11816,11 +11867,12 @@ The proof also uses that a family of vectors whose mutual distances become small
 %% <<< END ADDED
 
 \begin{lembox}[{{A Cauchy Criterion for Limits as $h \to 0$}}]\boxlabel{lem:cauchy-limit}
-\textit{(Not from lecture; filled in.)} Let $X$ be a Banach space, $r > 0$, and let $q_h \in X$ be given for every $h \in \mathbb{C}$ with $0 < |h| < r$. Assume that for every $\varepsilon > 0$ there is $\delta \in (0, r]$ such that
+Let $X$ be a Banach space, $r > 0$, and let $q_h \in X$ be given for every $h \in \mathbb{C}$ with $0 < |h| < r$. Assume that for every $\varepsilon > 0$ there is $\delta \in (0, r]$ such that
 \[
 \|q_h - q_k\| < \varepsilon \qquad \text{whenever } 0 < |h| < \delta \text{ and } 0 < |k| < \delta .
 \]
 Then there is $g \in X$ with $\lim_{h \to 0} q_h = g$, that is, $\|q_h - g\| \to 0$ as $h \to 0$.
+\srcline{not from lecture · filled in}
 \end{lembox}
 
 \begin{proof}
@@ -12058,11 +12110,12 @@ $\rho(M)$ is called the \textbf{resolvent set} of $M$.
 For $\lambda \in \rho(M)$ the inverse map $(\lambda I - M)^{-1} : X \to X$ exists and is linear. The definition does not ask the inverse to be bounded. It is bounded automatically; for a closed map this is the check that the lecture asks for, and the next lemma prepares it.
 
 \begin{lembox}[{{Closed Maps: Shifts and Inverses}}]\boxlabel{lem:closed-shift-inverse}
-\textit{(Not from lecture; filled in.)} Let $X$ be a normed linear space over $\mathbb{C}$ and $T : D(T) \to X$ a closed linear map with $D(T) \subset X$.
+Let $X$ be a normed linear space over $\mathbb{C}$ and $T : D(T) \to X$ a closed linear map with $D(T) \subset X$.
 \begin{enumerate}[label=(\arabic*)]
     \item For every $\lambda \in \mathbb{C}$ the map $\lambda I - T : D(T) \to X$ is closed.
     \item If $T$ is one-to-one, then the inverse $T^{-1} : R(T) \to X$, with domain the range $R(T)$ of $T$, is a closed linear map.
 \end{enumerate}
+\srcline{not from lecture · filled in}
 \end{lembox}
 
 \begin{proof}
@@ -12194,11 +12247,12 @@ Indeed, if $T$ is one-to-one, then either $\overline{R(T)} \neq X$, which is (iv
 Where a number $\lambda \in \mathbb{C}$ falls: three questions about the map $\lambda I - M$ sort $\mathbb{C}$ into the resolvent set (blue) and the three parts of the spectrum (red). (Not from lecture; figure added.)
 
 \begin{exbox}[The Spectrum of a Matrix]\boxlabel{ex:spectrum-matrix}
-\textit{(Not from lecture; filled in.)} Let $X = \mathbb{C}^n$ and let $A$ be an $n \times n$ matrix with complex entries, acting by $x \mapsto Ax$. A linear map of $\mathbb{C}^n$ to itself is one-to-one if and only if it is onto (as for $\mathbb{R}^n$ at the beginning of this section). So if $\lambda I - A$ is one-to-one, then $\lambda \in \rho(A)$: the cases of $\sigma_c$ and $\sigma_r$ do not occur, and
+Let $X = \mathbb{C}^n$ and let $A$ be an $n \times n$ matrix with complex entries, acting by $x \mapsto Ax$. A linear map of $\mathbb{C}^n$ to itself is one-to-one if and only if it is onto (as for $\mathbb{R}^n$ at the beginning of this section). So if $\lambda I - A$ is one-to-one, then $\lambda \in \rho(A)$: the cases of $\sigma_c$ and $\sigma_r$ do not occur, and
 \[
 \sigma(A) = \sigma_p(A) = \{ \text{eigenvalues of } A \} = \{ \lambda \in \mathbb{C} : \det(\lambda I - A) = 0 \} , \qquad \sigma_c(A) = \sigma_r(A) = \varnothing .
 \]
 The spectrum of a matrix is a set of at most $n$ points, and it is not empty, since the polynomial $\det(\lambda I - A)$ of degree $n$ has a root in $\mathbb{C}$. The scalars have to be complex for this: the rotation $A = \bigl( \begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix} \bigr)$ has real entries and no real eigenvalue, and $\sigma(A) = \{ i, -i \}$.
+\srcline{not from lecture · filled in}
 \end{exbox}
 
 \begin{rembox}[Other Uses of the Names]\label{rem:spectrum-names}
@@ -12366,11 +12420,12 @@ So no $f \in L^2[0,1]$ solves $(\lambda_0 I - M) f = 1$: the constant $1$ is not
 The spectrum of multiplication by $t$ is the interval $[0,1]$ of the values of $t$, both on $C[0,1]$ and on $L^2[0,1]$. For $\lambda$ off the interval, $d = \operatorname{dist}(\lambda, [0,1])$ is the smallest value of $|\lambda - t|$, and the inverse is division by $\lambda - t$, of norm at most $\frac1d$. (Not from lecture; figure added.)
 
 \begin{propbox}[{{Approximate Eigenvectors of Multiplication by $t$}}]\boxlabel{prop:mult-approx-eigen}
-\textit{(Not from lecture; filled in.)} Let $M f(t) = t f(t)$ on $L^2[0,1]$ and $\lambda_0 \in [0,1]$. For $0 < \varepsilon \le \frac12$ let $J_\varepsilon = [0,1] \cap [\lambda_0 - \varepsilon, \lambda_0 + \varepsilon]$, an interval of length $|J_\varepsilon| \ge \varepsilon$, and
+Let $M f(t) = t f(t)$ on $L^2[0,1]$ and $\lambda_0 \in [0,1]$. For $0 < \varepsilon \le \frac12$ let $J_\varepsilon = [0,1] \cap [\lambda_0 - \varepsilon, \lambda_0 + \varepsilon]$, an interval of length $|J_\varepsilon| \ge \varepsilon$, and
 \[
 \varphi_\varepsilon = \frac{1}{\sqrt{|J_\varepsilon|}}\, \chi_{J_\varepsilon} .
 \]
 Then $\|\varphi_\varepsilon\|_{L^2} = 1$ and $\|(\lambda_0 I - M) \varphi_\varepsilon\|_{L^2} \le \varepsilon$. Consequently there is no constant $c$ with $\|f\|_{L^2} \le c\, \|(\lambda_0 I - M) f\|_{L^2}$ for all $f \in L^2[0,1]$.
+\srcline{not from lecture · filled in}
 \end{propbox}
 
 \begin{proof}
@@ -12481,7 +12536,7 @@ so $M$ has the left inverse $(MN)^{-1}N$. Thus $M$ has a left and a right invers
 
 %% >>> ADDED: example (not from lecture)
 \begin{exbox}[{{The Shifts on $\ell^2$ Have Only One-Sided Inverses}}]\boxlabel{ex:shifts-one-sided}
-\textit{(Not from lecture; filled in.)} On $\ell^2$ let $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ be the right shift (Example~\ref{ex:right-shift}) and $T(a_1, a_2, \ldots) = (a_2, a_3, \ldots)$ the left shift (Example~\ref{ex:left-shift}). Then
+On $\ell^2$ let $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ be the right shift (Example~\ref{ex:right-shift}) and $T(a_1, a_2, \ldots) = (a_2, a_3, \ldots)$ the left shift (Example~\ref{ex:left-shift}). Then
 \begin{align*}
 TS(a_1, a_2, \ldots) &= T(0, a_1, a_2, \ldots) = (a_1, a_2, \ldots) , \\
 ST(a_1, a_2, \ldots) &= S(a_2, a_3, \ldots) = (0, a_2, a_3, \ldots) ,
@@ -12493,6 +12548,7 @@ so $TS = I$ and $ST \neq I$.
     \item The product $TS = I$ is invertible although neither factor is. This does not contradict Lemma~\ref{lem:inverses}(3), because $TS \neq ST$: the hypothesis $MN = NM$ cannot be dropped there.
 \end{enumerate}
 For a linear map of $\mathbb{C}^n$ to itself this cannot happen: there one-to-one and onto are equivalent (Example~\ref{ex:spectrum-matrix}), so a one-sided inverse is a two-sided inverse.
+\srcline{not from lecture · filled in}
 \laxref{\S20.2, (11) and the lines after it}
 \end{exbox}
 %% <<< END ADDED
@@ -12634,7 +12690,6 @@ In the notes of the lecture the inequality of part (3) is stated with ``$>$'', $
 
 %% >>> ADDED: example and figures (not from lecture)
 \begin{exbox}[{{Equality and Strict Inequality in the Distance Bound}}]\boxlabel{ex:resolvent-distance}
-\textit{(Not from lecture; filled in.)}
 \begin{enumerate}[label=(\arabic*)]
     \item \emph{$M = 0$.} Here $\lambda I - M = \lambda I$ is invertible exactly for $\lambda \neq 0$, so $\sigma(M) = \{0\}$, and $\|(\lambda I)^{-1}\| = \frac{1}{|\lambda|} = \frac{1}{\operatorname{dist}(\lambda, \sigma(M))}$: equality for every $\lambda \in \rho(M)$.
     \item \emph{Multiplication by $t$ on $L^2[0,1]$.} By Example~\ref{ex:mult-L2}, $\sigma(M) = [0,1]$ and $\|R(\lambda; M)\| \le \frac{1}{\operatorname{dist}(\lambda, [0,1])}$ for $\lambda \notin [0,1]$. With Proposition~\ref{prop:resolvent-open}(3), $\|R(\lambda; M)\| = \frac{1}{\operatorname{dist}(\lambda, [0,1])}$: equality again.
@@ -12648,6 +12703,7 @@ In the notes of the lecture the inequality of part (3) is stated with ``$>$'', $
     \]
     The inequality is strict: the resolvent is much larger than the distance to the spectrum suggests, and the disk of Proposition~\ref{prop:resolvent-open}(2) is smaller than the largest disk about $\lambda$ free of spectrum.
 \end{enumerate}
+\srcline{not from lecture · filled in}
 \end{exbox}
 
 \begin{center}

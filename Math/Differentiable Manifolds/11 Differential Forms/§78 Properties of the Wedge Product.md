@@ -220,7 +220,7 @@ With (2), the brackets in Lemma [[§78 Properties of the Wedge Product#^lem-78-2
 For $\varepsilon = dx^i$ this is $dx^i \wedge dx^i = 0$, as in Lemma [[§74 The Integrand Is a Two-Form#^lem-74-1|§74.1]](2).
 
 > [!example] Example §78.1: A Form of Even Degree with Nonzero Square
-> *(Not from lecture; filled in.)* For even degree the corollary fails. On $\mathbb{R}^4$ let
+> For even degree the corollary fails. On $\mathbb{R}^4$ let
 >
 > $$
 > \omega = dx^1 \wedge dx^2 + dx^3 \wedge dx^4 \in \Lambda^2 (\mathbb{R}^4)^{\ast} , \qquad \omega(u, v) = u^1 v^2 - u^2 v^1 + u^3 v^4 - u^4 v^3
@@ -233,6 +233,8 @@ For $\varepsilon = dx^i$ this is $dx^i \wedge dx^i = 0$, as in Lemma [[§74 The 
 > $$
 >
 > So $\omega \wedge \omega \neq 0$. By Corollary [[§75 Multilinear Algebra#^cor-75-7|§75.7]], $\omega \wedge \omega = 2\, \varepsilon^{\{1, 2, 3, 4\}}$, twice the determinant; with Proposition [[§78 Properties of the Wedge Product#^prop-78-4|§78.4]](4) this reads $\omega \wedge \omega = 2\, dx^1 \wedge dx^2 \wedge dx^3 \wedge dx^4$.
+>
+> *Source: not from lecture · filled in*
 
 ^ex-78-1
 
@@ -241,7 +243,7 @@ For $\varepsilon = dx^i$ this is $dx^i \wedge dx^i = 0$, as in Lemma [[§74 The 
 *From Assignment 9, Problem 1 (submitted). The problem asks to prove the determinant formula of Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]] by induction on $k$, working directly from the definition of the wedge product by shuffles and assuming associativity; and then, for $k = 4$, to compare the shuffle sum for $(\alpha^1 \wedge \alpha^2) \wedge (\alpha^3 \wedge \alpha^4)$ with the expansion of the determinant by $2 \times 2$ minors. The steps of the submitted solution that are general statements are stated first, as lemmas.*
 
 > [!theorem] Lemma §78.6: A $k$-Form Wedge a One-Form
-> *(From the submitted solution of Assignment 9, Problem 1(a).)* For $\omega \in \Lambda^k V^{\ast}$ and $\alpha \in V^{\ast}$,
+> For $\omega \in \Lambda^k V^{\ast}$ and $\alpha \in V^{\ast}$,
 >
 > $$
 > (\omega \wedge \alpha)(v^1, \ldots, v^{k+1}) = \sum_{j=1}^{k+1} (-1)^{k+1-j}\, \omega\big(v^1, \ldots, \widehat{v^j}, \ldots, v^{k+1}\big)\, \alpha(v^j) ,
@@ -251,6 +253,8 @@ For $\varepsilon = dx^i$ this is $dx^i \wedge dx^i = 0$, as in Lemma [[§74 The 
 >
 > 1. $\mathrm{Sh}(k, 1) = \{\sigma_1, \ldots, \sigma_{k+1}\}$, where $\sigma_j$ is the permutation with $\sigma_j(k+1) = j$ and with $\sigma_j(1) < \cdots < \sigma_j(k)$ the elements of $\{1, \ldots, k+1\} \setminus \{j\}$ in increasing order;
 > 2. $\operatorname{sgn}(\sigma_j) = (-1)^{k+1-j}$.
+>
+> *Source: Assignment 9, Problem 1(a) · submitted solution*
 
 ^lem-78-6
 
@@ -277,7 +281,7 @@ For $\varepsilon = dx^i$ this is $dx^i \wedge dx^i = 0$, as in Lemma [[§74 The 
 Lemma [[§78 Properties of the Wedge Product#^lem-78-6|§78.6]] is the mirror image of Lemma [[§78 Properties of the Wedge Product#^lem-78-1|§78.1]]: there the one-form is the first factor, $\mathrm{Sh}(1, l)$ is used, and the sign is $(-1)^{j-1}$.
 
 > [!theorem] Lemma §78.7: The Sign of a Shuffle
-> *(Not from the assignment; the table of signs of Problem 1(b), for all $p$ and $q$.)* Let $p, q \ge 0$ and $k = p + q$.
+> Let $p, q \ge 0$ and $k = p + q$.
 >
 > 1. The map $\sigma \mapsto \{\sigma(1), \ldots, \sigma(p)\}$ is a bijection from $\mathrm{Sh}(p, q)$ onto the set of subsets of $\{1, \ldots, k\}$ with $p$ elements. So $\mathrm{Sh}(p, q)$ has $\binom{k}{p}$ elements.
 > 2. If $\sigma \in \mathrm{Sh}(p, q)$ and $\sigma(i) = a_i$ for $i = 1, \ldots, p$, so that $a_1 < \cdots < a_p$, then $\sigma$ has $\sum_{i=1}^p (a_i - i)$ inversions, and
@@ -285,11 +289,13 @@ Lemma [[§78 Properties of the Wedge Product#^lem-78-6|§78.6]] is the mirror im
 > $$
 > \operatorname{sgn}(\sigma) = (-1)^{a_1 + \cdots + a_p - p(p+1)/2} .
 > $$
+>
+> *Source: not from the assignment*
 
 ^lem-78-7
 
 > [!proof]+ Proof
-> *(Not from the assignment; filled in.)* *(1)* A $(p, q)$-shuffle $\sigma$ lists a set $A = \{\sigma(1), \ldots, \sigma(p)\}$ with $p$ elements in increasing order, and then its complement in increasing order (Definition [[§76 Shuffles#^def-76-1|§76.1]]). So $\sigma$ is determined by $A$, and every subset $A$ with $p$ elements arises in this way.
+> *(Not from the assignment; filled in. This is the table of signs of Problem 1(b), for all $p$ and $q$.)* *(1)* A $(p, q)$-shuffle $\sigma$ lists a set $A = \{\sigma(1), \ldots, \sigma(p)\}$ with $p$ elements in increasing order, and then its complement in increasing order (Definition [[§76 Shuffles#^def-76-1|§76.1]]). So $\sigma$ is determined by $A$, and every subset $A$ with $p$ elements arises in this way.
 >
 > *(2)* An inversion of $\sigma$ is a pair of positions $i < j$ with $\sigma(i) > \sigma(j)$. There is none inside the first block, nor inside the second, because $\sigma$ increases on each. So in an inversion $i \le p < j$, and for fixed $i$ the inversions correspond to the elements of the complement of $A$ that are smaller than $a_i$. Below $a_i$ there are $a_i - 1$ numbers, of which $i - 1$, namely $a_1, \ldots, a_{i-1}$, lie in $A$. So there are $a_i - 1 - (i - 1) = a_i - i$ such elements. Summing over $i$ gives $\sum_{i=1}^p (a_i - i) = \sum_i a_i - p(p+1)/2$ inversions, and the sign of a permutation is $(-1)$ to the number of its inversions.
 
@@ -300,13 +306,15 @@ Lemma [[§78 Properties of the Wedge Product#^lem-78-6|§78.6]] is the mirror im
 For $q = 1$ and $A = \{1, \ldots, k+1\} \setminus \{j\}$ the number of inversions is $\sum_{i \ge j} \big((i + 1) - i\big) = k + 1 - j$, as in Lemma [[§78 Properties of the Wedge Product#^lem-78-6|§78.6]](2).
 
 > [!example] Example §78.2: Assignment 9 Problem 1(a): The Determinant Formula through the Last Row
-> *(Assignment 9, Problem 1(a).)* Let $\alpha^1, \ldots, \alpha^k \in V^{\ast}$ and $v^1, \ldots, v^k \in V$, and let $D = \det\big(\alpha^i(v^j)\big)$. Then
+> Let $\alpha^1, \ldots, \alpha^k \in V^{\ast}$ and $v^1, \ldots, v^k \in V$, and let $D = \det\big(\alpha^i(v^j)\big)$. Then
 >
 > $$
 > (\alpha^1 \wedge \cdots \wedge \alpha^k)(v^1, \ldots, v^k) = D ,
 > $$
 >
 > by induction on $k$, from the definition of the wedge product by shuffles and associativity alone. This is Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]]. The proof there splits off the first factor and expands the determinant along its first row; the submitted solution splits off the last factor and expands along the last row.
+>
+> *Source: Assignment 9, Problem 1(a)*
 
 ^ex-78-2
 
@@ -340,13 +348,15 @@ For $q = 1$ and $A = \{1, \ldots, k+1\} \setminus \{j\}$ the number of inversion
 *Uses:* [[§78 Properties of the Wedge Product#^prop-78-4|§78.4]], [[§78 Properties of the Wedge Product#^lem-78-6|§78.6]]
 
 > [!example] Example §78.3: Assignment 9 Problem 1(b): A Determinant of Size Four by Minors of Size Two
-> *(Assignment 9, Problem 1(b).)* Let $k = 4$, $\alpha = \alpha^1 \wedge \alpha^2$ and $\beta = \alpha^3 \wedge \alpha^4$, and let $A = (a_{il})$ with $a_{il} = \alpha^i(v^l)$, so that $D = \det A$. For sets of indices $I, J \subseteq \{1, 2, 3, 4\}$ of equal size, let $A_{I, J}$ be the submatrix of $A$ with rows $I$ and columns $J$, each in increasing order. Then the definition of the wedge product by shuffles, applied to $(\alpha \wedge \beta)(v^1, v^2, v^3, v^4)$, is term by term the expansion of $D$ by $2 \times 2$ minors along the rows $1$ and $2$:
+> Let $k = 4$, $\alpha = \alpha^1 \wedge \alpha^2$ and $\beta = \alpha^3 \wedge \alpha^4$, and let $A = (a_{il})$ with $a_{il} = \alpha^i(v^l)$, so that $D = \det A$. For sets of indices $I, J \subseteq \{1, 2, 3, 4\}$ of equal size, let $A_{I, J}$ be the submatrix of $A$ with rows $I$ and columns $J$, each in increasing order. Then the definition of the wedge product by shuffles, applied to $(\alpha \wedge \beta)(v^1, v^2, v^3, v^4)$, is term by term the expansion of $D$ by $2 \times 2$ minors along the rows $1$ and $2$:
 >
 > $$
 > (\alpha \wedge \beta)(v^1, v^2, v^3, v^4) = \sum_{1 \le a < b \le 4} (-1)^{1 + 2 + a + b}\, \det A_{\{1, 2\}, \{a, b\}}\, \det A_{\{3, 4\}, \{c, d\}} = D ,
 > $$
 >
 > where $\{c, d\}$ is the complement of $\{a, b\}$, with $c < d$.
+>
+> *Source: Assignment 9, Problem 1(b)*
 
 ^ex-78-3
 
@@ -397,18 +407,20 @@ For $q = 1$ and $A = \{1, \ldots, k+1\} \setminus \{j\}$ the number of inversion
 The comparison of Example [[§78 Properties of the Wedge Product#^ex-78-3|§78.3]] can be read in the other direction: since $(\alpha^1 \wedge \alpha^2) \wedge (\alpha^3 \wedge \alpha^4)$ is the product of the four one-forms by associativity, its value is $D$ by Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]], and the shuffle sum then *proves* the expansion by minors. In general:
 
 > [!theorem] Proposition §78.8: The Laplace Expansion from the Wedge Product
-> *(Not from the assignment; Problem 1(b) for all sizes.)* Let $M$ be a real $k \times k$ matrix and $k = p + q$. For $A \subseteq \{1, \ldots, k\}$ with $p$ elements $a_1 < \cdots < a_p$, let $M_{\mathrm{top}, A}$ be the $p \times p$ submatrix of $M$ with rows $1, \ldots, p$ and columns $A$, and $M_{\mathrm{bot}, A^c}$ the $q \times q$ submatrix with rows $p + 1, \ldots, k$ and the columns not in $A$. Then
+> Let $M$ be a real $k \times k$ matrix and $k = p + q$. For $A \subseteq \{1, \ldots, k\}$ with $p$ elements $a_1 < \cdots < a_p$, let $M_{\mathrm{top}, A}$ be the $p \times p$ submatrix of $M$ with rows $1, \ldots, p$ and columns $A$, and $M_{\mathrm{bot}, A^c}$ the $q \times q$ submatrix with rows $p + 1, \ldots, k$ and the columns not in $A$. Then
 >
 > $$
 > \det M = \sum_{A} (-1)^{a_1 + \cdots + a_p - p(p+1)/2}\; \det M_{\mathrm{top}, A}\; \det M_{\mathrm{bot}, A^c} ,
 > $$
 >
 > the sum over all subsets $A$ with $p$ elements. This is the Laplace expansion of $\det M$ along its first $p$ rows, and it is the definition of the wedge product by shuffles applied to $(\alpha^1 \wedge \cdots \wedge \alpha^p) \wedge (\alpha^{p+1} \wedge \cdots \wedge \alpha^k)$.
+>
+> *Source: not from the assignment*
 
 ^prop-78-8
 
 > [!proof]+ Proof
-> *(Not from the assignment; filled in.)* Let $V = \mathbb{R}^k$ with its standard basis $v^1 = e_1, \ldots, v^k = e_k$, and let $\alpha^i \in V^{\ast}$ be the $i$-th row of $M$: $\alpha^i(v^j) = M_{ij}$. Put $\omega_1 = \alpha^1 \wedge \cdots \wedge \alpha^p$ and $\omega_2 = \alpha^{p+1} \wedge \cdots \wedge \alpha^k$. By associativity (Proposition [[§78 Properties of the Wedge Product#^prop-78-4|§78.4]](2)), $\omega_1 \wedge \omega_2 = \alpha^1 \wedge \cdots \wedge \alpha^k$, so by Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]]
+> *(Not from the assignment; filled in. This is Problem 1(b) for all sizes.)* Let $V = \mathbb{R}^k$ with its standard basis $v^1 = e_1, \ldots, v^k = e_k$, and let $\alpha^i \in V^{\ast}$ be the $i$-th row of $M$: $\alpha^i(v^j) = M_{ij}$. Put $\omega_1 = \alpha^1 \wedge \cdots \wedge \alpha^p$ and $\omega_2 = \alpha^{p+1} \wedge \cdots \wedge \alpha^k$. By associativity (Proposition [[§78 Properties of the Wedge Product#^prop-78-4|§78.4]](2)), $\omega_1 \wedge \omega_2 = \alpha^1 \wedge \cdots \wedge \alpha^k$, so by Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]]
 >
 > $$
 > (\omega_1 \wedge \omega_2)(v^1, \ldots, v^k) = \det\big(\alpha^i(v^j)\big) = \det M .

@@ -313,7 +313,9 @@ For subgroups $A, B \leq G$ the product set $AB = \{ab : a \in A,\ b \in B\}$ is
 ^rem-30-5
 
 > [!example] Example §30.3: $AB$ Need Not Be a Subgroup
-> *(Not from class.)* In $S_3$ take $A = \{e, (1\,3)\}$ and $B = \{e, (1\,2)\}$, as in The Index Need Not Divide (Example [[§29 The Index and Lagrange's Theorem#^ex-29-6|§29.6]]). Then $A \cap B = \{e\}$, and the formula gives $|AB| = 2 \cdot 2 / 1 = 4$: indeed $AB = \{e, (1\,2), (1\,3), (1\,3)(1\,2)\}$ with $(1\,3)(1\,2) = (1\,2\,3)$. Since $4 \nmid 6$, $AB$ is not a subgroup of $S_3$. When $A$ or $B$ is normal, $AB$ is a subgroup, and the formula is the order count $|HN| = |H| \cdot |N| / |H \cap N|$ behind the Second Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], later).
+> In $S_3$ take $A = \{e, (1\,3)\}$ and $B = \{e, (1\,2)\}$, as in The Index Need Not Divide (Example [[§29 The Index and Lagrange's Theorem#^ex-29-6|§29.6]]). Then $A \cap B = \{e\}$, and the formula gives $|AB| = 2 \cdot 2 / 1 = 4$: indeed $AB = \{e, (1\,2), (1\,3), (1\,3)(1\,2)\}$ with $(1\,3)(1\,2) = (1\,2\,3)$. Since $4 \nmid 6$, $AB$ is not a subgroup of $S_3$. When $A$ or $B$ is normal, $AB$ is a subgroup, and the formula is the order count $|HN| = |H| \cdot |N| / |H \cap N|$ behind the Second Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], later).
+>
+> *Source: not from class*
 
 ^ex-30-3
 

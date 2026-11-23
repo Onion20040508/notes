@@ -16,11 +16,13 @@ tags: [functional-analysis, math556]
 The main results of [[§41 The Open Mapping Theorem and Its Consequences|§41]] are the closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]) and the equivalent norm theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]). The open mapping theorem has a more general form, announced there in the remark *[[§41 The Open Mapping Theorem and Its Consequences#^rem-41-1|Where Completeness is Used]]*, in which $Y$ need not be complete. Its core is the following lemma.
 
 > [!theorem] Lemma §42.1: The Image of the Unit Ball Contains a Ball About $0$; General Form
-> *(Not from lecture; filled in.)* Let $X$ be a Banach space, $Y$ a normed linear space, and $M \in \mathcal{L}(X, Y)$. Assume $R(M)$ is of the second category in $Y$ (Definition [[§40 The Baire Category Theorem#^def-40-3|§40.3]]). Then there is $\delta > 0$ such that
+> Let $X$ be a Banach space, $Y$ a normed linear space, and $M \in \mathcal{L}(X, Y)$. Assume $R(M)$ is of the second category in $Y$ (Definition [[§40 The Baire Category Theorem#^def-40-3|§40.3]]). Then there is $\delta > 0$ such that
 >
 > $$
 > B(0, \delta) \subset M\bigl( B(0, 1) \bigr) .
 > $$
+>
+> *Source: not from lecture · filled in*
 
 ^lem-42-1
 
@@ -68,14 +70,14 @@ The main results of [[§41 The Open Mapping Theorem and Its Consequences|§41]] 
 *Uses:* [[§42 Uniform Boundedness and Approximation#^lem-42-1|§42.1]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]]
 
 > [!theorem] Corollary §42.3: The General Form Forces $M$ Onto
-> *(Not from lecture; the statement with $Y$ a Banach space is HW9, Problem 4.)* Let $X$ be a Banach space, $Y$ a normed linear space, and $M \in \mathcal{L}(X, Y)$ with $R(M)$ of the second category in $Y$. Then $M$ is onto. Together with Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-2|§42.2]]: *if $X$ is Banach and $R(M)$ is of the second category, then $M$ is onto and open.*
+> Let $X$ be a Banach space, $Y$ a normed linear space, and $M \in \mathcal{L}(X, Y)$ with $R(M)$ of the second category in $Y$. Then $M$ is onto. Together with Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-2|§42.2]]: *if $X$ is Banach and $R(M)$ is of the second category, then $M$ is onto and open.*
 >
-> *Source: HW9, Problem 4 (for $Y$ a Banach space)*
+> *Source: not from lecture · HW9, Problem 4*
 
 ^cor-42-3
 
 > [!proof]+ Proof
-> $M(X)$ is a linear subspace of $Y$, since $M$ is linear. It contains a ball about $0$: Lemma [[§42 Uniform Boundedness and Approximation#^lem-42-1|§42.1]] gives $\delta > 0$ with $B(0, \delta) \subset M(B(0, 1)) \subset M(X)$. A linear subspace $V \subset Y$ containing $B(0, \delta)$ is all of $Y$: $0 \in V$, and for $y \neq 0$ the vector $z = \frac{\delta\, y}{2\|y\|}$ has $\|z\| = \frac{\delta}{2} < \delta$, so $z \in V$, and then
+> *(The statement with $Y$ a Banach space is HW9, Problem 4.)* $M(X)$ is a linear subspace of $Y$, since $M$ is linear. It contains a ball about $0$: Lemma [[§42 Uniform Boundedness and Approximation#^lem-42-1|§42.1]] gives $\delta > 0$ with $B(0, \delta) \subset M(B(0, 1)) \subset M(X)$. A linear subspace $V \subset Y$ containing $B(0, \delta)$ is all of $Y$: $0 \in V$, and for $y \neq 0$ the vector $z = \frac{\delta\, y}{2\|y\|}$ has $\|z\| = \frac{\delta}{2} < \delta$, so $z \in V$, and then
 >
 > $$
 > y = \frac{2\|y\|}{\delta} \cdot \frac{\delta\, y}{2\|y\|} = \frac{2\|y\|}{\delta}\, z \in V ,
@@ -90,7 +92,9 @@ The main results of [[§41 The Open Mapping Theorem and Its Consequences|§41]] 
 When $Y$ is a Banach space and $M$ is onto, $R(M) = Y$ is of the second category by Baire (Theorem [[§40 The Baire Category Theorem#^thm-40-4|§40.4]]), and Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]] is recovered from the general form.
 
 > [!theorem] Proposition §42.4: $Y$ Turns Out to Be Complete
-> *(Not from lecture; filled in.)* Under the hypotheses of Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-2|§42.2]] ($X$ a Banach space, $Y$ a normed linear space, $M \in \mathcal{L}(X, Y)$, $R(M)$ of the second category in $Y$), $Y$ is a Banach space.
+> Under the hypotheses of Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-2|§42.2]] ($X$ a Banach space, $Y$ a normed linear space, $M \in \mathcal{L}(X, Y)$, $R(M)$ of the second category in $Y$), $Y$ is a Banach space.
+>
+> *Source: not from lecture · filled in*
 
 ^prop-42-4
 
@@ -114,7 +118,9 @@ When $Y$ is a Banach space and $M$ is onto, $R(M) = Y$ is of the second category
 *Uses:* [[§42 Uniform Boundedness and Approximation#^lem-42-1|§42.1]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]]
 
 > [!remark] Remark: What the General Form Gains
-> *(Not from lecture.)* Lax states this theorem with $Y$ a Banach space. Allowing $Y$ to be only normed gains nothing in the end: under the hypothesis, $Y$ *is* complete (Proposition [[§42 Uniform Boundedness and Approximation#^prop-42-4|§42.4]]). So the general form is the open mapping theorem for the Banach spaces $X$ and $Y$ with the hypothesis “onto” replaced by the weaker-looking “range of the second category”. This is Lax's Theorem 16, and in Rudin's *Functional Analysis* (Theorem 2.11) the same argument is carried out for complete metric linear spaces.
+> Lax states this theorem with $Y$ a Banach space. Allowing $Y$ to be only normed gains nothing in the end: under the hypothesis, $Y$ *is* complete (Proposition [[§42 Uniform Boundedness and Approximation#^prop-42-4|§42.4]]). So the general form is the open mapping theorem for the Banach spaces $X$ and $Y$ with the hypothesis “onto” replaced by the weaker-looking “range of the second category”. This is Lax's Theorem 16, and in Rudin's *Functional Analysis* (Theorem 2.11) the same argument is carried out for complete metric linear spaces.
+>
+> *Source: not from lecture*
 
 ^rem-42-1
 
@@ -151,7 +157,7 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 *Uses:* [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]
 
 > [!example] Example §42.1: Two Complete Norms That Are Not Equivalent
-> *(Not from lecture.)* Completeness of both norms alone does not suffice in Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]; the compatibility condition is needed.
+> Completeness of both norms alone does not suffice in Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]; the compatibility condition is needed.
 >
 > On an infinite-dimensional Banach space $(X, \|\cdot\|_1)$, choose a Hamel basis (a linearly independent set whose finite linear combinations give all of $X$; it exists by Zorn's lemma, by the argument of Example [[§24 The Parallelogram Law and Jordan–von Neumann#^ex-24-1|§24.1]]) normalized to $\|e\|_1 = 1$, pick countably many of its elements $e_1, e_2, \ldots$, and let $\varphi : X \to X$ be the linear map with $\varphi(e_k) = k\, e_k$ that fixes the other basis elements. Put $\|x\|_2 = \|\varphi x\|_1$.
 >
@@ -159,6 +165,8 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 > 2. *$\|\cdot\|_2$ is a complete norm.* It is a norm: $\|x\|_2 \ge 0$, with $\|x\|_2 = 0$ iff $\varphi x = 0$ iff $x = 0$ ($\varphi$ is one-to-one); homogeneity and the triangle inequality follow from the linearity of $\varphi$ and the corresponding properties of $\|\cdot\|_1$. By definition $\varphi$ is an isometry of $(X, \|\cdot\|_2)$ onto $(X, \|\cdot\|_1)$. If $\{x_n\}$ is Cauchy in $\|\cdot\|_2$, then $\{\varphi x_n\}$ is Cauchy in $\|\cdot\|_1$, so $\varphi x_n \to z$ for some $z \in X$; with $x = \psi z$, $\|x_n - x\|_2 = \|\varphi x_n - z\|_1 \to 0$.
 > 3. *The norms are not equivalent.* $\|e_k\|_2 = \|k\, e_k\|_1 = k$ while $\|e_k\|_1 = 1$, so there is no $c$ with $\|x\|_2 \le c\, \|x\|_1$ for all $x$.
 > 4. *The compatibility condition fails.* Otherwise Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]] would make the two complete norms equivalent, contradicting (3).
+>
+> *Source: not from lecture*
 
 ^ex-42-1
 
@@ -219,7 +227,7 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 *Uses:* [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]
 
 > [!example] Example §42.2: Pointwise but Not Uniformly Bounded Functionals on $c_{00}$
-> *(Not from lecture.)* Completeness of $X$ is needed in Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]. Let $c_{00}$ be the finitely supported sequences with $\|x\| = \max_n |x_n|$, and $A_n x = n\, x_n$.
+> Completeness of $X$ is needed in Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]. Let $c_{00}$ be the finitely supported sequences with $\|x\| = \max_n |x_n|$, and $A_n x = n\, x_n$.
 >
 > 1. *$c_{00}$ is not complete.* Let $x^{(N)} = (1, \frac12, \ldots, \frac1N, 0, 0, \ldots)$. For $M > N$, $\|x^{(M)} - x^{(N)}\| = \frac{1}{N+1}$, so $\{x^{(N)}\}$ is Cauchy. If $x^{(N)} \to x$ in $c_{00}$, then for each $j$, $|x^{(N)}_j - x_j| \le \|x^{(N)} - x\| \to 0$, so $x_j = \frac1j$ for every $j$, and $x$ is not finitely supported, a contradiction.
 > 2. *Each $A_n$ is a bounded linear functional with $\|A_n\| = n$.* $A_n$ is linear, and $|A_n x| = n|x_n| \le n\|x\|$, so $\|A_n\| \le n$; the unit vector $e_n$ gives $A_n e_n = n$, so $\|A_n\| = n$.
@@ -227,6 +235,8 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 > 4. *Not uniformly bounded.* $\sup_n \|A_n\| = \sup_n n = \infty$.
 >
 > So the conclusion of Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]] fails on the normed space $c_{00}$. The proof breaks at the completeness step: neither $(c_{00}, \|\cdot\|)$ nor $(c_{00}, \|\cdot\|_2)$ is complete (for the second norm, $x^{(N)} = (1, \frac14, \ldots, \frac{1}{N^2}, 0, 0, \ldots)$ is Cauchy, since $\|x^{(M)} - x^{(N)}\|_2 = \frac{1}{(N+1)^2} + \frac{1}{N+1}$ for $M > N$, and has no limit in $c_{00}$, as in (1)), so Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]] does not apply.
+>
+> *Source: not from lecture*
 
 ^ex-42-2
 
@@ -265,12 +275,16 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 *Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]
 
 > [!remark] Remark: Which Hypotheses Each Direction Uses
-> *(Not from lecture.)* Only ($\Rightarrow$) uses the completeness of $X$, through the uniform boundedness principle; ($\Leftarrow$) is an $\varepsilon/2$ argument valid in any normed spaces. Lax's Theorem 6 (§15.2) is a variant of ($\Leftarrow$) in which no limit $A$ is given (Proposition [[§42 Uniform Boundedness and Approximation#^prop-42-8|§42.8]]); there $Y$ must be complete, since the limit has to be produced.
+> Only ($\Rightarrow$) uses the completeness of $X$, through the uniform boundedness principle; ($\Leftarrow$) is an $\varepsilon/2$ argument valid in any normed spaces. Lax's Theorem 6 (§15.2) is a variant of ($\Leftarrow$) in which no limit $A$ is given (Proposition [[§42 Uniform Boundedness and Approximation#^prop-42-8|§42.8]]); there $Y$ must be complete, since the limit has to be produced.
+>
+> *Source: not from lecture*
 
 ^rem-42-3
 
 > [!theorem] Proposition §42.8: Banach–Steinhaus Without a Given Limit
-> *(Not from lecture.)* Let $X$ be a normed linear space, $Y$ a Banach space, and $\{A_n\}$ a sequence of bounded linear maps $X \to Y$ with $\sup_n \|A_n\| \le C < \infty$. If $\lim_{n \to \infty} A_n y$ exists for every $y$ in a dense subset $D$ of $X$, then $\lim_{n \to \infty} A_n x$ exists for every $x \in X$.
+> Let $X$ be a normed linear space, $Y$ a Banach space, and $\{A_n\}$ a sequence of bounded linear maps $X \to Y$ with $\sup_n \|A_n\| \le C < \infty$. If $\lim_{n \to \infty} A_n y$ exists for every $y$ in a dense subset $D$ of $X$, then $\lim_{n \to \infty} A_n x$ exists for every $x \in X$.
+>
+> *Source: not from lecture*
 >
 > *Lax: §15.2, Thm 6*
 

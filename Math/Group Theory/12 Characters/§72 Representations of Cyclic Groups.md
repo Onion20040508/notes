@@ -83,12 +83,12 @@ From here on the field is $\mathbb{C}$, until the last subsection. The letter $k
 > 1. The $N$-th roots of unity (Definition [[§72 Representations of Cyclic Groups#^def-72-1|§72.1]]) are exactly the $N$ numbers $e^{2\pi ik/N} = \cos\frac{2\pi k}{N} + i\sin\frac{2\pi k}{N}$ with $0 \leq k \leq N - 1$, and these are pairwise distinct. They are the powers $1, \omega, \omega^2, \ldots, \omega^{N-1}$ of $\omega = e^{2\pi i/N}$.
 > 2. Every $N$-th root of unity $\zeta$ satisfies $|\zeta| = 1$ and $\zeta^{-1} = \overline{\zeta}$.
 >
-> *Source: board 11/20: part (1), stated, with the picture for $N = 5$; part (2) is used on the board for the trace of $g^{-1}$; the proofs are not from class*
+> *Source: board 11/20*
 
 ^lem-72-3
 
 > [!proof]+ Proof
-> *(Not from class.)* **(1)** Each of the numbers is an $N$-th root of unity: $\big(e^{2\pi ik/N}\big)^N = e^{2\pi ik} = 1$. They are pairwise distinct: $e^{i\theta} = \cos\theta + i\sin\theta$ is the point of the unit circle at the angle $\theta$, and the angles $2\pi k/N$ for $0 \leq k \leq N - 1$ are $N$ different angles in $[0, 2\pi)$. There are no others: the $N$-th roots of unity are the zeros of the polynomial $z^N - 1$ of degree $N$, which has at most $N$ zeros ([[§13 Polynomials#^ladr-4-8|Axler 4.8]]). Finally $e^{2\pi ik/N} = \big(e^{2\pi i/N}\big)^k = \omega^k$.
+> *(Board 11/20: part (1), stated, with the picture for $N = 5$; part (2) is used on the board for the trace of $g^{-1}$; the proofs are not from class.)* *(Not from class.)* **(1)** Each of the numbers is an $N$-th root of unity: $\big(e^{2\pi ik/N}\big)^N = e^{2\pi ik} = 1$. They are pairwise distinct: $e^{i\theta} = \cos\theta + i\sin\theta$ is the point of the unit circle at the angle $\theta$, and the angles $2\pi k/N$ for $0 \leq k \leq N - 1$ are $N$ different angles in $[0, 2\pi)$. There are no others: the $N$-th roots of unity are the zeros of the polynomial $z^N - 1$ of degree $N$, which has at most $N$ zeros ([[§13 Polynomials#^ladr-4-8|Axler 4.8]]). Finally $e^{2\pi ik/N} = \big(e^{2\pi i/N}\big)^k = \omega^k$.
 >
 > **(2)** $|\zeta|^N = |\zeta^N| = 1$, and $|\zeta|$ is a nonnegative real number, so $|\zeta| = 1$. Then $\zeta\overline{\zeta} = |\zeta|^2 = 1$, so $\zeta^{-1} = \overline{\zeta}$.
 
@@ -115,12 +115,12 @@ From here on the field is $\mathbb{C}$, until the last subsection. The letter $k
 > 3. $\mathbb{C}_k \not\cong \mathbb{C}_l$ for $k \neq l$.
 > 4. Every representation of $\mathbb{Z}/N\mathbb{Z}$ on $\mathbb{C}^1$ is equal to exactly one of $\rho_0, \ldots, \rho_{N-1}$.
 >
-> *Source: lecture 11/20: for each $N$-th root of unity $\zeta$ there is a one-dimensional representation $\rho(j) = [\zeta^j]$; parts (2)–(4) are spelled out*
+> *Source: lecture 11/20*
 
 ^prop-72-4
 
 > [!proof]+ Proof
-> *(Lecture 11/20; details filled in.)* **(1)** The number $\zeta = e^{2\pi ik/N}$ is an $N$-th root of unity (Lemma [[§72 Representations of Cyclic Groups#^lem-72-3|§72.3]](1)). So the $1 \times 1$ matrix $g = [\zeta]$ satisfies $g^N = [\zeta^N] = [1]$, and by Proposition [[§72 Representations of Cyclic Groups#^prop-72-1|§72.1]](2) the rule
+> *(Lecture 11/20: for each $N$-th root of unity $\zeta$ there is a one-dimensional representation $\rho(j) = [\zeta^j]$; parts (2)–(4) are spelled out.)* *(Lecture 11/20; details filled in.)* **(1)** The number $\zeta = e^{2\pi ik/N}$ is an $N$-th root of unity (Lemma [[§72 Representations of Cyclic Groups#^lem-72-3|§72.3]](1)). So the $1 \times 1$ matrix $g = [\zeta]$ satisfies $g^N = [\zeta^N] = [1]$, and by Proposition [[§72 Representations of Cyclic Groups#^prop-72-1|§72.1]](2) the rule
 >
 > $$
 > \rho(j) = g^j = [\zeta^j] = \big[e^{2\pi ijk/N}\big]
@@ -209,12 +209,12 @@ For $\mathbb{Z}/N\mathbb{Z}$ over $\mathbb{C}$ the inequality of Corollary [[§7
 > \chi_V = \sum_{k=0}^{N-1} a_k\,\chi_k, \qquad \dim V = \sum_{k=0}^{N-1} a_k.
 > $$
 >
-> *Source: lecture 11/20: “so every representation must be a direct sum of these”, for complex finite-dimensional representations*
+> *Source: lecture 11/20*
 
 ^cor-72-6
 
 > [!proof]+ Proof
-> *(Lecture 11/20; details filled in.)* $|\mathbb{Z}/N\mathbb{Z}| = N \neq 0$ in $\mathbb{C}$, so by Corollary [[§70 Schur's Lemma and Multiplicities#^cor-70-3|§70.3]] there are pairwise non-isomorphic simple representations $S_1, \ldots, S_r$ and positive integers $b_1, \ldots, b_r$ with $V \cong S_1^{\oplus b_1} \oplus \cdots \oplus S_r^{\oplus b_r}$. By Theorem [[§72 Representations of Cyclic Groups#^thm-72-5|§72.5]], each $S_i$ is isomorphic to $\mathbb{C}_{k(i)}$ for exactly one $k(i)$, and the numbers $k(1), \ldots, k(r)$ are different because the $S_i$ are pairwise non-isomorphic. Choose isomorphisms $\beta_i: \mathbb{C}_{k(i)} \to S_i$. Applying $\beta_i$ in every coordinate that belongs to $S_i$ gives a map $\bigoplus_i \mathbb{C}_{k(i)}^{\oplus b_i} \to \bigoplus_i S_i^{\oplus b_i}$ that is linear, bijective and commutes with the group, because all operations are coordinatewise; so the two sums are isomorphic. Put $a_{k(i)} = b_i$ and $a_k = 0$ for the other $k$. Then $V \cong \bigoplus_k \mathbb{C}_k^{\oplus a_k}$ (Lemma [[§61 Representations and Subrepresentations#^lem-61-5|§61.5]](3)).
+> *(Lecture 11/20: “so every representation must be a direct sum of these”, for complex finite-dimensional representations.)* *(Lecture 11/20; details filled in.)* $|\mathbb{Z}/N\mathbb{Z}| = N \neq 0$ in $\mathbb{C}$, so by Corollary [[§70 Schur's Lemma and Multiplicities#^cor-70-3|§70.3]] there are pairwise non-isomorphic simple representations $S_1, \ldots, S_r$ and positive integers $b_1, \ldots, b_r$ with $V \cong S_1^{\oplus b_1} \oplus \cdots \oplus S_r^{\oplus b_r}$. By Theorem [[§72 Representations of Cyclic Groups#^thm-72-5|§72.5]], each $S_i$ is isomorphic to $\mathbb{C}_{k(i)}$ for exactly one $k(i)$, and the numbers $k(1), \ldots, k(r)$ are different because the $S_i$ are pairwise non-isomorphic. Choose isomorphisms $\beta_i: \mathbb{C}_{k(i)} \to S_i$. Applying $\beta_i$ in every coordinate that belongs to $S_i$ gives a map $\bigoplus_i \mathbb{C}_{k(i)}^{\oplus b_i} \to \bigoplus_i S_i^{\oplus b_i}$ that is linear, bijective and commutes with the group, because all operations are coordinatewise; so the two sums are isomorphic. Put $a_{k(i)} = b_i$ and $a_k = 0$ for the other $k$. Then $V \cong \bigoplus_k \mathbb{C}_k^{\oplus a_k}$ (Lemma [[§61 Representations and Subrepresentations#^lem-61-5|§61.5]](3)).
 >
 > Isomorphic representations have the same character (Lemma [[§67 Characters of Representations#^lem-67-3|§67.3]]), and the character of an external direct sum is the sum of the characters (Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-2|§70.2]]); this gives $\chi_V = \sum_k a_k\chi_k$. At $j = 0$ this reads $\dim V = \chi_V(0) = \sum_k a_k\chi_k(0) = \sum_k a_k$.
 
@@ -253,12 +253,12 @@ For $\mathbb{Z}/N\mathbb{Z}$ over $\mathbb{C}$ the inequality of Corollary [[§7
 > [!theorem] Corollary §72.8: A Complex Matrix with $g^N = \mathrm{Id}$ Is Diagonalizable
 > Let $g$ be an $n \times n$ complex matrix with $g^N = \mathrm{Id}_n$. Then there is an invertible matrix $S$ such that $SgS^{-1}$ is diagonal, and the diagonal entries are $N$-th roots of unity (Definition [[§72 Representations of Cyclic Groups#^def-72-1|§72.1]]). The root $e^{2\pi ik/N}$ occurs $a_k$ times, where the $a_k$ are the integers of Corollary [[§72 Representations of Cyclic Groups#^cor-72-6|§72.6]] for the representation $j \mapsto g^j$ on $\mathbb{C}^n$.
 >
-> *Source: lecture 11/20; this is WS 16.4(1), Proposition [[§68 Homomorphisms Between Representations#^prop-68-9|§68.9]](1)*
+> *Source: lecture 11/20; WS 16.4(1)*
 
 ^cor-72-8
 
 > [!proof]+ Proof
-> *Idea:* a decomposition of $\mathbb{C}^n$ into one-dimensional representations is a basis of eigenvectors of $g$.
+> *(Lecture 11/20; this is WS 16.4(1), Proposition [[§68 Homomorphisms Between Representations#^prop-68-9|§68.9]](1).)* *Idea:* a decomposition of $\mathbb{C}^n$ into one-dimensional representations is a basis of eigenvectors of $g$.
 >
 > *(Board 11/20: “so if $g^N = \mathrm{Id}_n$ there is a change of basis matrix $S$” with $SgS^{-1}$ diagonal, $N$-th roots of unity on the diagonal. The passage from the direct sum to $S$ is filled in.)* By Proposition [[§72 Representations of Cyclic Groups#^prop-72-1|§72.1]](2), $\rho(j) = g^j$ is a representation of $\mathbb{Z}/N\mathbb{Z}$ on $\mathbb{C}^n$. By Corollary [[§72 Representations of Cyclic Groups#^cor-72-6|§72.6]] there is an isomorphism of representations
 >
@@ -353,7 +353,7 @@ This is WS 16.4(2) (Proposition [[§68 Homomorphisms Between Representations#^pr
 > - Complex Variables: the same sum, $1 + c + \cdots + c^{n-1} = 0$ for an $n$th root of unity $c \neq 1$, [[§11 Examples (Roots of Complex Numbers)#^ex-11-2|342 Example §11.2]].
 
 > [!example] Example §72.3: The Rows of the Table of $\mathbb{Z}/N\mathbb{Z}$ Are Orthonormal: a Direct Check
-> *(Not from class.)* By WS 18.3 over $\mathbb{C}$ (Proposition [[§71 The Character Table#^prop-71-5|§71.5]](2)), $\langle \chi_k, \chi_l \rangle$ is $1$ for $k = l$ and $0$ for $k \neq l$. For $\mathbb{Z}/N\mathbb{Z}$ this can be checked directly. The inverse of $j$ is $-j$, so
+> By WS 18.3 over $\mathbb{C}$ (Proposition [[§71 The Character Table#^prop-71-5|§71.5]](2)), $\langle \chi_k, \chi_l \rangle$ is $1$ for $k = l$ and $0$ for $k \neq l$. For $\mathbb{Z}/N\mathbb{Z}$ this can be checked directly. The inverse of $j$ is $-j$, so
 >
 > $$
 > \langle \chi_k, \chi_l \rangle = \frac{1}{N}\sum_{j=0}^{N-1} \chi_k(-j)\,\chi_l(j) = \frac{1}{N}\sum_{j=0}^{N-1} e^{2\pi ij(l - k)/N} = \frac{1}{N}\sum_{j=0}^{N-1} \zeta^j, \qquad \zeta = e^{2\pi i(l - k)/N}.
@@ -380,12 +380,12 @@ Theorem [[§72 Representations of Cyclic Groups#^thm-72-5|§72.5]] is a statemen
 > 2. $\mathbb{R}$ with $j$ acting by $(-1)^j$;
 > 3. $R = \mathbb{R}^2$ with $j$ acting by $J^j$, $J = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$.
 >
-> *Source: board 11/18 (announced: the three rows of Example [[§71 The Character Table#^ex-71-2|§71.2]] are the only simple representations over $\mathbb{R}$); the proof is not from class*
+> *Source: board 11/18*
 
 ^prop-72-10
 
 > [!proof]+ Proof
-> *Idea:* $g = \rho_V(1)$ satisfies $(g^2)^2 = \mathrm{id}$, so $V$ splits into the parts where $g^2 = 1$ and where $g^2 = -1$; a simple $V$ is one of the two.
+> *(Board 11/18 (announced: the three rows of Example [[§71 The Character Table#^ex-71-2|§71.2]] are the only simple representations over $\mathbb{R}$); the proof is not from class.)* *Idea:* $g = \rho_V(1)$ satisfies $(g^2)^2 = \mathrm{id}$, so $V$ splits into the parts where $g^2 = 1$ and where $g^2 = -1$; a simple $V$ is one of the two.
 >
 > *(Not from class.)* Let $V$ be a finite-dimensional simple real representation and $g = \rho_V(1): V \to V$, so $g^4 = \mathrm{id}_V$ and the subrepresentations of $V$ are the subspaces $U$ with $gU \subseteq U$ (Proposition [[§72 Representations of Cyclic Groups#^prop-72-1|§72.1]], Lemma [[§72 Representations of Cyclic Groups#^lem-72-2|§72.2]](1)).
 >
@@ -423,6 +423,8 @@ Theorem [[§72 Representations of Cyclic Groups#^thm-72-5|§72.5]] is a statemen
 > [!remark] Remark: In Characteristic $p$ a Matrix with $g^p = \mathrm{Id}$ Need Not Be Diagonalizable
 > The lecture ended with $k = \mathbb{Z}/p\mathbb{Z}$ and $G = \mathbb{Z}/p\mathbb{Z}$, acting on $k^2$ by $j \mapsto \left(\begin{smallmatrix} 1 & j \\ 0 & 1 \end{smallmatrix}\right)$. Here $g = \left(\begin{smallmatrix} 1 & 1 \\ 0 & 1 \end{smallmatrix}\right)$ satisfies $g^p = \left(\begin{smallmatrix} 1 & p \\ 0 & 1 \end{smallmatrix}\right) = \mathrm{Id}$, because $p = 0$ in $k$; so this is a representation by Proposition [[§72 Representations of Cyclic Groups#^prop-72-1|§72.1]](2). It is the representation of Problem 9.4(2) (Example [[§62 Direct Sums and Maschke's Theorem#^ex-62-4|§62.4]]): the line $ke_1$ is a subrepresentation without a complementary subrepresentation. In the terms of this section, $g^p = \mathrm{Id}$ but $g$ is not diagonalizable over $k$: its only eigenvalue is $1$, its eigenvectors are the multiples of $e_1$, and a basis of eigenvectors would contain a second invariant line (Lemma [[§72 Representations of Cyclic Groups#^lem-72-2|§72.2]](1)). So Corollary [[§72 Representations of Cyclic Groups#^cor-72-8|§72.8]] does not hold over $\mathbb{Z}/p\mathbb{Z}$. The hypotheses that fail are $|G| \neq 0$ in $k$ in Maschke's theorem (Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]) and $\mathbb{Q} \subseteq k$ in Corollary [[§71 The Character Table#^cor-71-7|§71.7]]. The polynomial shows the difference: over $\mathbb{C}$, $x^N - 1$ has $N$ distinct roots, while over $\mathbb{Z}/p\mathbb{Z}$, $x^p - 1 = (x - 1)^p$ has the single root $1$.
 >
-> *Source: lecture 11/20; the board page ends in the middle of this example, and the comparison with $\mathbb{C}$ is not from class*
+> *Source: lecture 11/20*
 
 ^rem-72-2
+
+*Source note.* Lecture 11/20; the board page ends in the middle of this example, and the comparison with $\mathbb{C}$ is not from class.

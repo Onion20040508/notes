@@ -243,7 +243,9 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: $Y$ moves to th
 ^def-58-3
 
 > [!definition] Definition §58.4: Lie Algebra Isomorphism
-> *(Not from lecture; filled in.)* A **Lie algebra isomorphism**, or **isomorphism of Lie algebras**, is a Lie algebra morphism $\phi : \mathfrak{h} \to \mathfrak{g}$ (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-3|§58.3]]) that is bijective.
+> A **Lie algebra isomorphism**, or **isomorphism of Lie algebras**, is a Lie algebra morphism $\phi : \mathfrak{h} \to \mathfrak{g}$ (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-3|§58.3]]) that is bijective.
+>
+> *Source: not from lecture · filled in*
 
 ^def-58-4
 

@@ -22,13 +22,15 @@ tags: [differentiable-manifolds, math591]
 ^rem-83-1
 
 > [!example] Example §83.1: One-Forms on Open Subsets of the Plane
-> *(Lecture 33.)* Let $M \subseteq \mathbb{R}^2$ be open and $\omega = P\, dx + Q\, dy$ with $P, Q \in C^\infty(M)$. Then
+> Let $M \subseteq \mathbb{R}^2$ be open and $\omega = P\, dx + Q\, dy$ with $P, Q \in C^\infty(M)$. Then
 >
 > $$
 > d\omega = (Q_x - P_y)\; dx \wedge dy .
 > $$
 >
 > So $\omega$ is closed exactly when $Q_x = P_y$, the condition of Definition [[§53 One-Forms#^def-53-5|§53.5]].
+>
+> *Source: Lecture 33*
 
 ^ex-83-1
 
@@ -42,7 +44,7 @@ tags: [differentiable-manifolds, math591]
 The standard example, perhaps seen in Calculus III, is the one of Example [[§53 One-Forms#^ex-53-3|§53.3]], now in the language of cohomology. The form looks a little contrived, but it is a natural thing: it is $d\theta$.
 
 > [!example] Example §83.2: The Angle Form Is Closed but Not Exact
-> *(Lecture 33.)* On $M = \mathbb{R}^2 \setminus \{(0, 0)\}$ let
+> On $M = \mathbb{R}^2 \setminus \{(0, 0)\}$ let
 >
 > $$
 > \omega = \frac{-y}{x^2 + y^2}\; dx + \frac{x}{x^2 + y^2}\; dy .
@@ -53,6 +55,8 @@ The standard example, perhaps seen in Calculus III, is the one of Example [[§53
 > 3. $\omega$ is not exact: the Calculus III line integral of $\omega$ over the unit circle is $\int_{S^1} \omega = \int_0^{2\pi} d\theta = 2\pi \neq 0$, while by the fundamental theorem of calculus for line integrals, $\int_A^B df = f(B) - f(A)$, which is $0$ around a closed curve.
 >
 > So $[\omega] = [d\theta]$ is a nonzero class in $H^1(\mathbb{R}^2 \setminus \{0\})$.
+>
+> *Source: Lecture 33*
 >
 > *Lee: Example 11.36; Example 17.1*
 
@@ -82,7 +86,9 @@ The standard example, perhaps seen in Calculus III, is the one of Example [[§53
 *There is no contradiction in writing $\omega = d\theta$ with $\omega$ not exact.* The reason is that $\theta$ is not a smooth function on $\mathbb{R}^2 \setminus \{0\}$; it is not even a continuous one. It is the measure of an angle in radians, which is defined only up to an additive multiple of $2\pi$.
 
 > [!theorem] Lemma §83.1: Branches of the Angle Differ by Constants
-> *(Lecture 33, an observation.)* A *branch of $\theta$* on an open set $W \subseteq \mathbb{R}^2 \setminus \{0\}$ is a continuous function $\vartheta : W \to \mathbb{R}$ with $(x, y) = r\,(\cos\vartheta, \sin\vartheta)$ on $W$, where $r = \sqrt{x^2 + y^2}$. Any two branches of $\theta$ on a connected open set differ by a constant. So $d\theta$ is well defined: every branch is smooth, and its differential is the form $\omega$ of Example [[§83 The First Cohomology of the Circle#^ex-83-2|§83.2]], on its domain.
+> A *branch of $\theta$* on an open set $W \subseteq \mathbb{R}^2 \setminus \{0\}$ is a continuous function $\vartheta : W \to \mathbb{R}$ with $(x, y) = r\,(\cos\vartheta, \sin\vartheta)$ on $W$, where $r = \sqrt{x^2 + y^2}$. Any two branches of $\theta$ on a connected open set differ by a constant. So $d\theta$ is well defined: every branch is smooth, and its differential is the form $\omega$ of Example [[§83 The First Cohomology of the Circle#^ex-83-2|§83.2]], on its domain.
+>
+> *Source: Lecture 33 · observation*
 
 ^lem-83-1
 
@@ -113,7 +119,9 @@ $$
 If $S^1$ is regarded as a Lie group (rotations), the generator of the circle action is the field $\partial_\theta$ given in Cartesian coordinates by $(-y, x)$, and $d\theta(\partial_\theta) = 1$. Every one-form on $S^1$ is closed, for dimensional reasons, and this holds for every form of top degree, that is, of degree equal to the dimension.
 
 > [!theorem] Lemma §83.2: Top-Degree Forms Are Closed
-> *(Lecture 33, in answer to a question.)* If $\dim M = m$, every $m$-form on $M$ is closed: $Z^m(M) = \Omega^m(M)$, and so $H^m(M) = \Omega^m(M)/B^m(M)$. In particular $\Omega^1(S^1) = Z^1(S^1)$.
+> If $\dim M = m$, every $m$-form on $M$ is closed: $Z^m(M) = \Omega^m(M)$, and so $H^m(M) = \Omega^m(M)/B^m(M)$. In particular $\Omega^1(S^1) = Z^1(S^1)$.
+>
+> *Source: Lecture 33 · question in class*
 
 ^lem-83-2
 
@@ -126,12 +134,16 @@ If $S^1$ is regarded as a Lie group (rotations), the generator of the circle act
 
 In particular $d\theta \in Z^1(S^1)$, and $H^1(S^1) = \Omega^1(S^1)/B^1(S^1)$: the question is which one-forms on the circle are exact.
 
+Lecture 33 used $C^\infty(S^1)$ as the space of $2\pi$-periodic functions of $\theta$; the next lemma says what that means.
+
 > [!theorem] Lemma §83.3: Functions and One-Forms on the Circle
-> *(Not from lecture; filled in. Lecture 33 used $C^\infty(S^1)$ as the space of $2\pi$-periodic functions of $\theta$; this lemma says what that means.)* Let $p : \mathbb{R} \to S^1$, $p(t) = (\cos t, \sin t)$.
+> Let $p : \mathbb{R} \to S^1$, $p(t) = (\cos t, \sin t)$.
 >
 > 1. $g \mapsto g \circ p$ is a linear bijection from $C^\infty(S^1)$ onto the space of smooth $2\pi$-periodic functions on $\mathbb{R}$.
 > 2. $p^{\ast}(d\theta) = dt$, and $(d\theta)_q(\partial_\theta|_q) = 1$ for every $q \in S^1$. Every one-form on $S^1$ is $\alpha = f\, d\theta$ for a unique $f \in C^\infty(S^1)$, namely $f = \alpha(\partial_\theta)$.
 > 3. For $f, g \in C^\infty(S^1)$: $dg = f\, d\theta$ if and only if $(g \circ p)' = f \circ p$. Writing $g' = dg/d\theta$ for $(g \circ p)'$ read as a function on $S^1$, $dg = g'\, d\theta$.
+>
+> *Source: not from lecture · filled in*
 
 ^lem-83-3
 
@@ -209,13 +221,15 @@ In particular $d\theta \in Z^1(S^1)$, and $H^1(S^1) = \Omega^1(S^1)/B^1(S^1)$: t
 So the line integral identifies $H^1(S^1)$ with $\mathbb{R}$: $\mathcal{S}(\alpha)$ is the Calculus III line integral $\int_{S^1}\alpha$ of Example [[§83 The First Cohomology of the Circle#^ex-83-2|§83.2]](3). The computation is an instance of a general theorem, stated now and proved once orientations are defined and top-degree forms can be integrated over compact oriented manifolds.
 
 > [!theorem] Theorem §83.5: Top-Degree Cohomology
-> *(Stated in Lecture 33; to be proved.)* Let $M$ be a compact, oriented, connected smooth manifold of dimension $m$. Then integration induces an isomorphism
+> Let $M$ be a compact, oriented, connected smooth manifold of dimension $m$. Then integration induces an isomorphism
 >
 > $$
 > \int_M : H^m(M) \xrightarrow{\ \cong\ } \mathbb{R} .
 > $$
 >
 > In particular $b_m(M) = 1$.
+>
+> *Source: Lecture 33 · to be proved*
 >
 > *Lee: Theorem 17.31*
 

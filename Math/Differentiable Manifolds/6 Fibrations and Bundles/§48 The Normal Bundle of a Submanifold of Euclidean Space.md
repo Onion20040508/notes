@@ -191,6 +191,7 @@ the $(n-m) \times n$ Jacobian of $G$ in the standard coordinates of $\mathbb{R}^
 > $$
 >
 > is a diffeomorphism, with inverse $(q, c) \mapsto \big(q, J(q)^{\mathsf T} c\big)$, and $\mathrm{pr}_1 \circ \Phi_U = \pi|_{\pi^{-1}(U \cap M)}$. On each fibre $\pi^{-1}(q) = \{q\} \times (T^{\mathrm{geo}}_qM)^\perp$ it is a linear isomorphism $(T^{\mathrm{geo}}_qM)^\perp \to \mathbb{R}^{n-m}$.
+>
 > 3. $\pi : \mathcal{N} \to M$ is a fibration with fibre $\mathbb{R}^{n-m}$ (Definition [[§45 Fibrations#^def-45-1|§45.1]]), the maps $\Phi_U$ of (2), over all adapted charts, being local trivializations.
 
 ^prop-48-2
@@ -410,7 +411,7 @@ $$
 *(Not from lecture; animation added, vault only.)* The endpoint map $E(p, v) = p + v$ on normal vectors $v = r\,n_p$ of fixed length $r$, for all $p$ on $y = x^2$ ($n_p$ the upward unit normal): the offset curves as $r$ grows to $1.6$. For $r < \frac12$, the radius of curvature at the vertex, they are smooth; beyond it two cusps (blue) appear and ride on the curve of focal points (dashed), the critical values of $E$.
 
 > [!example] Example §48.2: The Focal Points of the Parabola Are Its Centres of Curvature
-> *(Not from the assignment.)* For the parabola $y = x^2$ of Example [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-1|§48.1]], the focal point $\mathbf{r}(a) = \big(-4a^3, 3a^2 + \frac12\big)$ over $p = (a, a^2)$ is the *centre of curvature* of the parabola at $p$, the centre of the osculating circle at $p$. So the curve $\mathbf{r}$ of focal points is the *evolute* of the parabola.
+> For the parabola $y = x^2$ of Example [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-1|§48.1]], the focal point $\mathbf{r}(a) = \big(-4a^3, 3a^2 + \frac12\big)$ over $p = (a, a^2)$ is the *centre of curvature* of the parabola at $p$, the centre of the osculating circle at $p$. So the curve $\mathbf{r}$ of focal points is the *evolute* of the parabola.
 >
 > *What is to be shown.* The centre of curvature at $p$ is the point of the normal line at $p$ that lies on the concave side, at distance $R$ from $p$, where $R$ is the radius of curvature at $p$. The focal point over $p$ is $p + v$, for the critical point $(p, v)$ of $E$ over $p$; and $v$ is a normal vector. So it suffices to show that $|v| = R$ and that $v$ points to the concave side.
 >
@@ -429,11 +430,13 @@ $$
 > $$
 > \Big(a - \frac{2a(1 + 4a^2)}{2},\ a^2 + \frac{1 + 4a^2}{2}\Big) = \Big(-4a^3,\ 3a^2 + \tfrac12\Big) = \mathbf{r}(a).
 > $$
+>
+> *Source: not from the assignment*
 
 ^ex-48-2
 
 > [!example] Example §48.3: The Evolute of the Parabola Is a Semicubical Parabola
-> *(Not from the assignment.)* The image of the curve $\mathbf{r}(a) = \big(-4a^3, 3a^2 + \frac12\big)$ of focal points of the parabola $y = x^2$ (Example [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-1|§48.1]]), its evolute (Example [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-2|§48.2]]), is exactly the semicubical parabola
+> The image of the curve $\mathbf{r}(a) = \big(-4a^3, 3a^2 + \frac12\big)$ of focal points of the parabola $y = x^2$ (Example [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-1|§48.1]]), its evolute (Example [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-2|§48.2]]), is exactly the semicubical parabola
 >
 > $$
 > \Big(y - \tfrac12\Big)^3 = \tfrac{27}{16}\, x^2 ,
@@ -448,11 +451,15 @@ $$
 > *Conversely.* Given $(x, y)$ with $(y - \frac12)^3 = \frac{27}{16}x^2$, let $a$ be the real cube root of $-x/4$; then $-4a^3 = x$, and, taking real cube roots, $y - \frac12 = \big(\frac{27}{16}x^2\big)^{1/3} = 3\,(x/4)^{2/3} = 3a^2$. So $(x, y) = \mathbf{r}(a)$.
 >
 > *The cusp.* The cusp $\mathbf{r}(0) = (0, \frac12)$ is the focal point over the vertex $(0, 0)$, so by Example [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-2|§48.2]] it is the centre of curvature at the vertex, where the radius of curvature is $R = (1 + 0)^{3/2}/2 = \frac12$: the osculating circle there is $x^2 + (y - \frac12)^2 = \frac14$.
+>
+> *Source: not from the assignment*
 
 ^ex-48-3
 
 > [!remark] Remark: Focal Points in General
-> *(Not from the assignment; stated, not proved here.)* Examples [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-2|§48.2]] and [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-3|§48.3]] are an instance of a general fact. For a submanifold $M \subseteq \mathbb{R}^n$, $(p, v) \in \mathcal{N}$ is a critical point of $E$ if and only if $1$ is an eigenvalue of the shape operator (second fundamental form) of $M$ at $p$ in the normal direction $v$, and the dimension of $\ker E_{\ast(p,v)}$ is the multiplicity of that eigenvalue (Milnor, *Morse Theory*, §6). For a curve in the plane the shape operator in the direction of a normal $v$ is multiplication by $\kappa\, (v \cdot \mathbf{n})$, with $\kappa$ the curvature and $\mathbf{n}$ the unit normal toward the concave side; so the focal point on each normal line is at distance $|v| = 1/\kappa$ on the concave side, the centre of curvature, as found for the parabola in Example [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-2|§48.2]]. For the parabola, $\kappa = 2/(1 + 4a^2)^{3/2}$.
+> Examples [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-2|§48.2]] and [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-3|§48.3]] are an instance of a general fact. For a submanifold $M \subseteq \mathbb{R}^n$, $(p, v) \in \mathcal{N}$ is a critical point of $E$ if and only if $1$ is an eigenvalue of the shape operator (second fundamental form) of $M$ at $p$ in the normal direction $v$, and the dimension of $\ker E_{\ast(p,v)}$ is the multiplicity of that eigenvalue (Milnor, *Morse Theory*, §6). For a curve in the plane the shape operator in the direction of a normal $v$ is multiplication by $\kappa\, (v \cdot \mathbf{n})$, with $\kappa$ the curvature and $\mathbf{n}$ the unit normal toward the concave side; so the focal point on each normal line is at distance $|v| = 1/\kappa$ on the concave side, the centre of curvature, as found for the parabola in Example [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^ex-48-2|§48.2]]. For the parabola, $\kappa = 2/(1 + 4a^2)^{3/2}$.
+>
+> *Source: not from the assignment · stated, not proved*
 
 ^rem-48-1
 
@@ -468,6 +475,7 @@ $$
 > $$
 >
 > of the Euclidean normal space onto the conormal space of $M$ in $\mathbb{R}^n$ (Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]), both of dimension $n - m$.
+>
 > 2. In a chart $(U, \varphi)$ of $\mathbb{R}^n$ at $p$ adapted to $M$, with $G = (x^{m+1}, \ldots, x^n)$ as in the Setting of [[§48 The Normal Bundle of a Submanifold of Euclidean Space|§48]], it sends the gradient $\nabla G^s(p)$ to the differential $dG^s|_p = dx^{m+s}|_p$, for $s = 1, \ldots, n - m$: the basis of $(T^{\mathrm{geo}}_pM)^\perp$ of Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|§48.2]](1) to the basis of $N_pM$ of Proposition [[§37 Regular Submanifolds#^prop-37-13|§37.13]].
 > 3. Fibre by fibre, $(p, v) \mapsto (p, \xi_v)$ maps the normal bundle $\mathcal{N}$ bijectively onto the set $\{\, (p, \xi) : p \in M,\ \xi \in N_pM \,\}$, linearly on each fibre.
 
@@ -505,7 +513,9 @@ $$
 *Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§37 Regular Submanifolds#^lem-37-15|§37.15]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§33 Covectors in Coordinates#^prop-33-3|§33.3]], [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]], [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-2|§48.2]], [[§37 Regular Submanifolds#^prop-37-13|§37.13]], [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^def-48-2|Def. §48.2]]
 
 > [!remark] Remark: Normal Bundle and Conormal Bundle
-> *(Not from the assignment.)* The set $\{(p, \xi) : p \in M,\ \xi \in N_pM\}$ of Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-3|§48.3]](3) is the conormal bundle $N^{\ast}M$ of $M \subseteq \mathbb{R}^n$, announced in the remark *The Conormal Bundle* in [[§39 Transversality and Lagrange Multipliers|§39]] and defined later, in [[§55 Morse Functions and the Zero Section|§55]] (Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]]), once the cotangent bundle $T^{\ast}\mathbb{R}^n$ is available. So $\mathcal{N}$ is the conormal bundle read through the metric of $\mathbb{R}^n$. This is the observation that with an inner product the conormal space becomes the normal space (the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]), and it is why both bundles have dimension $n$: $m$ dimensions of base point, plus $n - m$ of normal vector or conormal covector.
+> The set $\{(p, \xi) : p \in M,\ \xi \in N_pM\}$ of Proposition [[§48 The Normal Bundle of a Submanifold of Euclidean Space#^prop-48-3|§48.3]](3) is the conormal bundle $N^{\ast}M$ of $M \subseteq \mathbb{R}^n$, announced in the remark *The Conormal Bundle* in [[§39 Transversality and Lagrange Multipliers|§39]] and defined later, in [[§55 Morse Functions and the Zero Section|§55]] (Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]]), once the cotangent bundle $T^{\ast}\mathbb{R}^n$ is available. So $\mathcal{N}$ is the conormal bundle read through the metric of $\mathbb{R}^n$. This is the observation that with an inner product the conormal space becomes the normal space (the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]), and it is why both bundles have dimension $n$: $m$ dimensions of base point, plus $n - m$ of normal vector or conormal covector.
+>
+> *Source: not from the assignment*
 
 ^rem-48-2
 

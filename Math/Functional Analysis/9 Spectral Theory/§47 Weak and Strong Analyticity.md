@@ -59,7 +59,7 @@ exists at every $z_0 \in D$.
 ^rem-47-1
 
 > [!example] Example §47.1: A Power Series with Values in $\ell^2$
-> *(Not from lecture; filled in.)* Let $D = \{ z \in \mathbb{C} : |z| < 1 \}$, $X = \ell^2$ over $\mathbb{C}$ with entries numbered from $0$, and
+> Let $D = \{ z \in \mathbb{C} : |z| < 1 \}$, $X = \ell^2$ over $\mathbb{C}$ with entries numbered from $0$, and
 >
 > $$
 > f(z) = (1, z, z^2, z^3, \ldots) , \qquad \text{that is,} \quad f(z)_n = z^n \quad (n = 0, 1, 2, \ldots) .
@@ -101,6 +101,8 @@ exists at every $z_0 \in D$.
 > where the series converges by the ratio test, since $r < 1$. Hence the difference quotients converge to $g(z)$ in the norm of $\ell^2$ as $h \to 0$.
 >
 > The weak check (2) takes two lines, because it only uses the theory of scalar power series; the strong check (3) needs an estimate that is uniform in the entries. Dunford's theorem (Theorem [[§47 Weak and Strong Analyticity#^thm-47-3|§47.3]]) says that (2) alone already gives (3).
+>
+> *Source: not from lecture · filled in*
 
 ^ex-47-1
 
@@ -144,13 +146,15 @@ $$
 The proof also uses that a family of vectors whose mutual distances become small has a limit, in the following form.
 
 > [!theorem] Lemma §47.2: A Cauchy Criterion for Limits as $h \to 0$
-> *(Not from lecture; filled in.)* Let $X$ be a Banach space, $r > 0$, and let $q_h \in X$ be given for every $h \in \mathbb{C}$ with $0 < |h| < r$. Assume that for every $\varepsilon > 0$ there is $\delta \in (0, r]$ such that
+> Let $X$ be a Banach space, $r > 0$, and let $q_h \in X$ be given for every $h \in \mathbb{C}$ with $0 < |h| < r$. Assume that for every $\varepsilon > 0$ there is $\delta \in (0, r]$ such that
 >
 > $$
 > \|q_h - q_k\| < \varepsilon \qquad \text{whenever } 0 < |h| < \delta \text{ and } 0 < |k| < \delta .
 > $$
 >
 > Then there is $g \in X$ with $\lim_{h \to 0} q_h = g$, that is, $\|q_h - g\| \to 0$ as $h \to 0$.
+>
+> *Source: not from lecture · filled in*
 
 ^lem-47-2
 

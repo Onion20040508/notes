@@ -73,10 +73,12 @@ Case (a) is contained in case (b), since continuous maps are closed (Example [[�
 For $\lambda \in \rho(M)$ the inverse map $(\lambda I - M)^{-1} : X \to X$ exists and is linear. The definition does not ask the inverse to be bounded. It is bounded automatically; for a closed map this is the check that the lecture asks for, and the next lemma prepares it.
 
 > [!theorem] Lemma §48.1: Closed Maps: Shifts and Inverses
-> *(Not from lecture; filled in.)* Let $X$ be a normed linear space over $\mathbb{C}$ and $T : D(T) \to X$ a closed linear map with $D(T) \subset X$.
+> Let $X$ be a normed linear space over $\mathbb{C}$ and $T : D(T) \to X$ a closed linear map with $D(T) \subset X$.
 >
 > 1. For every $\lambda \in \mathbb{C}$ the map $\lambda I - T : D(T) \to X$ is closed.
 > 2. If $T$ is one-to-one, then the inverse $T^{-1} : R(T) \to X$, with domain the range $R(T)$ of $T$, is a closed linear map.
+>
+> *Source: not from lecture · filled in*
 
 ^lem-48-1
 
@@ -233,13 +235,15 @@ Let $\lambda \in \sigma(M)$, so that $\lambda I - M : D(M) \to X$ is not inverti
 Where a number $\lambda \in \mathbb{C}$ falls: three questions about the map $\lambda I - M$ sort $\mathbb{C}$ into the resolvent set (blue) and the three parts of the spectrum (red). (Not from lecture; figure added.)
 
 > [!example] Example §48.2: The Spectrum of a Matrix
-> *(Not from lecture; filled in.)* Let $X = \mathbb{C}^n$ and let $A$ be an $n \times n$ matrix with complex entries, acting by $x \mapsto Ax$. A linear map of $\mathbb{C}^n$ to itself is one-to-one if and only if it is onto (as for $\mathbb{R}^n$ at the beginning of this section). So if $\lambda I - A$ is one-to-one, then $\lambda \in \rho(A)$: the cases of $\sigma_c$ and $\sigma_r$ do not occur, and
+> Let $X = \mathbb{C}^n$ and let $A$ be an $n \times n$ matrix with complex entries, acting by $x \mapsto Ax$. A linear map of $\mathbb{C}^n$ to itself is one-to-one if and only if it is onto (as for $\mathbb{R}^n$ at the beginning of this section). So if $\lambda I - A$ is one-to-one, then $\lambda \in \rho(A)$: the cases of $\sigma_c$ and $\sigma_r$ do not occur, and
 >
 > $$
 > \sigma(A) = \sigma_p(A) = \{ \text{eigenvalues of } A \} = \{ \lambda \in \mathbb{C} : \det(\lambda I - A) = 0 \} , \qquad \sigma_c(A) = \sigma_r(A) = \varnothing .
 > $$
 >
 > The spectrum of a matrix is a set of at most $n$ points, and it is not empty, since the polynomial $\det(\lambda I - A)$ of degree $n$ has a root in $\mathbb{C}$ ([[Fundamental Theorem of Algebra (Liouville proof)|fundamental theorem of algebra]]). The scalars have to be complex for this: the rotation $A = \bigl( \begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix} \bigr)$ has real entries and no real eigenvalue, and $\sigma(A) = \{ i, -i \}$.
+>
+> *Source: not from lecture · filled in*
 
 ^ex-48-2
 
@@ -384,13 +388,15 @@ Why the range is not dense in $C[0,1]$: every $g$ in the range vanishes at $\lam
 The spectrum of multiplication by $t$ is the interval $[0,1]$ of the values of $t$, both on $C[0,1]$ and on $L^2[0,1]$. For $\lambda$ off the interval, $d = \operatorname{dist}(\lambda, [0,1])$ is the smallest value of $|\lambda - t|$, and the inverse is division by $\lambda - t$, of norm at most $\frac1d$. (Not from lecture; figure added.)
 
 > [!theorem] Proposition §48.4: Approximate Eigenvectors of Multiplication by $t$
-> *(Not from lecture; filled in.)* Let $M f(t) = t f(t)$ on $L^2[0,1]$ and $\lambda_0 \in [0,1]$. For $0 < \varepsilon \le \frac12$ let $J_\varepsilon = [0,1] \cap [\lambda_0 - \varepsilon, \lambda_0 + \varepsilon]$, an interval of length $|J_\varepsilon| \ge \varepsilon$, and
+> Let $M f(t) = t f(t)$ on $L^2[0,1]$ and $\lambda_0 \in [0,1]$. For $0 < \varepsilon \le \frac12$ let $J_\varepsilon = [0,1] \cap [\lambda_0 - \varepsilon, \lambda_0 + \varepsilon]$, an interval of length $|J_\varepsilon| \ge \varepsilon$, and
 >
 > $$
 > \varphi_\varepsilon = \frac{1}{\sqrt{|J_\varepsilon|}}\, \chi_{J_\varepsilon} .
 > $$
 >
 > Then $\|\varphi_\varepsilon\|_{L^2} = 1$ and $\|(\lambda_0 I - M) \varphi_\varepsilon\|_{L^2} \le \varepsilon$. Consequently there is no constant $c$ with $\|f\|_{L^2} \le c\, \|(\lambda_0 I - M) f\|_{L^2}$ for all $f \in L^2[0,1]$.
+>
+> *Source: not from lecture · filled in*
 
 ^prop-48-4
 

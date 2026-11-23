@@ -142,7 +142,7 @@ The injectivity step shows that an element of $\Gamma$ determines its pair: $\la
 By (2), the conjugation action of $G_0$ on $T$ (Proposition [[§58 Semidirect Products#^prop-58-3|§58.3]]) is $\sigma_{(I, \mu)} \mapsto \sigma_{(I, g\mu)}$, which is the action $\varphi$ of Proposition [[§59 Groups of Affine Maps#^prop-59-1|§59.1]] under $\lambda \mapsto \sigma_{(I, \lambda)}$. So the internal description (3) and the external one agree, as Internal and External Semidirect Products Agree (Theorem [[§58 Semidirect Products#^thm-58-6|§58.6]]) predicts.
 
 > [!example] Example §59.1: The Affine Group
-> *(Not from class.)* Take $L = V$ and $G = GL(V)$; every invertible linear map maps $V$ onto $V$. Then $\Gamma$ is the group $\operatorname{Aff}(V)$ of all maps $x \mapsto gx + \lambda$ with $g \in GL(V)$ and $\lambda \in V$, and Proposition [[§59 Groups of Affine Maps#^prop-59-1|§59.1]] gives
+> Take $L = V$ and $G = GL(V)$; every invertible linear map maps $V$ onto $V$. Then $\Gamma$ is the group $\operatorname{Aff}(V)$ of all maps $x \mapsto gx + \lambda$ with $g \in GL(V)$ and $\lambda \in V$, and Proposition [[§59 Groups of Affine Maps#^prop-59-1|§59.1]] gives
 >
 > $$
 > \operatorname{Aff}(V) \cong V \rtimes GL(V).
@@ -155,16 +155,20 @@ By (2), the conjugation action of $G_0$ on $T$ (Proposition [[§58 Semidirect Pr
 > $$
 >
 > with $-1$ acting by $x \mapsto -x$, as in Example [[§58 Semidirect Products#^ex-58-4|§58.4]].
+>
+> *Source: not from class*
 
 ^ex-59-1
 
 > [!example] Example §59.2: The Symmetries of $\mathbb{Z}$ in $\mathbb{R}$
-> *(Not from class.)* Take $V = \mathbb{R}$, $G = \{\pm 1\} \subseteq GL_1(\mathbb{R})$ and $L = \mathbb{Z}$, so that $\pm\mathbb{Z} = \mathbb{Z}$. Then $\Gamma$ consists of the translations $x \mapsto x + n$ and the maps $x \mapsto -x + n$, $n \in \mathbb{Z}$. The map $x \mapsto -x + n$ is the reflection of $\mathbb{R}$ in the point $n/2$, since it fixes $n/2$ and sends $n/2 + t$ to $n/2 - t$. By Proposition [[§59 Groups of Affine Maps#^prop-59-1|§59.1]], $\Gamma \cong \mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$, with the generator of $\mathbb{Z}/2\mathbb{Z}$ acting by $n \mapsto -n$. This group is not abelian. By Proposition [[§59 Groups of Affine Maps#^prop-59-2|§59.2]](2), conjugating the translation $t(x) = x + 1$ by the reflection $s(x) = -x$ gives $sts^{-1} = t^{-1}$, the translation by $-1$. These are the symmetries of the integer points of the line, the infinite analogue of the symmetries of a regular polygon.
+> Take $V = \mathbb{R}$, $G = \{\pm 1\} \subseteq GL_1(\mathbb{R})$ and $L = \mathbb{Z}$, so that $\pm\mathbb{Z} = \mathbb{Z}$. Then $\Gamma$ consists of the translations $x \mapsto x + n$ and the maps $x \mapsto -x + n$, $n \in \mathbb{Z}$. The map $x \mapsto -x + n$ is the reflection of $\mathbb{R}$ in the point $n/2$, since it fixes $n/2$ and sends $n/2 + t$ to $n/2 - t$. By Proposition [[§59 Groups of Affine Maps#^prop-59-1|§59.1]], $\Gamma \cong \mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$, with the generator of $\mathbb{Z}/2\mathbb{Z}$ acting by $n \mapsto -n$. This group is not abelian. By Proposition [[§59 Groups of Affine Maps#^prop-59-2|§59.2]](2), conjugating the translation $t(x) = x + 1$ by the reflection $s(x) = -x$ gives $sts^{-1} = t^{-1}$, the translation by $-1$. These are the symmetries of the integer points of the line, the infinite analogue of the symmetries of a regular polygon.
+>
+> *Source: not from class*
 
 ^ex-59-2
 
 > [!example] Example §59.3: A Wallpaper Group with Rotations by $120^\circ$
-> *(Not from class; the problem set illustrates the case with a tiling by lizards.)* Let $V = \mathbb{R}^2$, let $r$ be the rotation by $120^\circ$ about $0$, $G = \{I, r, r^2\} \cong \mathbb{Z}/3\mathbb{Z}$, and let
+> Let $V = \mathbb{R}^2$, let $r$ be the rotation by $120^\circ$ about $0$, $G = \{I, r, r^2\} \cong \mathbb{Z}/3\mathbb{Z}$, and let
 >
 > $$
 > L = \mathbb{Z}\omega_1 + \mathbb{Z}\omega_2, \qquad \omega_1 = (1, 0), \quad \omega_2 = \big(\tfrac12, \tfrac{\sqrt3}{2}\big),
@@ -191,8 +195,12 @@ By (2), the conjugation action of $G_0$ on $T$ (Proposition [[§58 Semidirect Pr
 > $$
 >
 > the lattice points and the centres of the two kinds of triangles of the lattice, those pointing up and those pointing down.
+>
+> *Source: not from class*
 
 ^ex-59-3
+
+*Source note.* The problem set illustrates the case with a tiling by lizards.
 
 > [!remark]- Connections
 > - The problem set's own picture is a tiling by lizards with the same group; the figure below uses an abstract motif.
@@ -218,6 +226,8 @@ By (2), the conjugation action of $G_0$ on $T$ (Proposition [[§58 Semidirect Pr
 All the groups of affine maps above are solvable, since in each of them $L$ and $G$ are abelian: $\operatorname{Aff}(k) \cong k \rtimes k^\times$, $\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ and $\mathbb{Z}^2 \rtimes \mathbb{Z}/3\mathbb{Z}$.
 
 > [!example] Example §59.4: Groups of Order $pq$ Are Solvable
-> *(Not from class.)* Let $p < q$ be primes and $|G| = pq$. The number $n_q$ of Sylow $q$-subgroups divides $p$ and is $\equiv 1 \pmod q$ (The Number of Sylow Subgroups Divides $|G|$, Corollary [[§55 The Sylow Theorems#^cor-55-10|§55.10]]). Since $p < q$, the only divisor of $p$ that is $\equiv 1 \pmod q$ is $1$, so $n_q = 1$. The Sylow $q$-subgroup $Q$, which exists by the First Sylow Theorem (Theorem [[§55 The Sylow Theorems#^thm-55-4|§55.4]]), is therefore normal (A Normal Sylow Subgroup Is the Only One, Corollary [[§55 The Sylow Theorems#^cor-55-7|§55.7]](2)). $Q$ has prime order $q$ and $G/Q$ has prime order $p$. A group of prime order is cyclic, generated by any non-identity element by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange's theorem]], hence abelian and solvable. By Corollary [[§48 Solvable Groups#^cor-48-8|§48.8]], $G$ is solvable. This covers the case $q \equiv 1 \pmod p$ as well, where $G$ need not be cyclic (Example [[§55 The Sylow Theorems#^ex-55-4|§55.4]]).
+> Let $p < q$ be primes and $|G| = pq$. The number $n_q$ of Sylow $q$-subgroups divides $p$ and is $\equiv 1 \pmod q$ (The Number of Sylow Subgroups Divides $|G|$, Corollary [[§55 The Sylow Theorems#^cor-55-10|§55.10]]). Since $p < q$, the only divisor of $p$ that is $\equiv 1 \pmod q$ is $1$, so $n_q = 1$. The Sylow $q$-subgroup $Q$, which exists by the First Sylow Theorem (Theorem [[§55 The Sylow Theorems#^thm-55-4|§55.4]]), is therefore normal (A Normal Sylow Subgroup Is the Only One, Corollary [[§55 The Sylow Theorems#^cor-55-7|§55.7]](2)). $Q$ has prime order $q$ and $G/Q$ has prime order $p$. A group of prime order is cyclic, generated by any non-identity element by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange's theorem]], hence abelian and solvable. By Corollary [[§48 Solvable Groups#^cor-48-8|§48.8]], $G$ is solvable. This covers the case $q \equiv 1 \pmod p$ as well, where $G$ need not be cyclic (Example [[§55 The Sylow Theorems#^ex-55-4|§55.4]]).
+>
+> *Source: not from class*
 
 ^ex-59-4

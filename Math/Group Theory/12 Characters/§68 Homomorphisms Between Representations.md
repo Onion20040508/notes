@@ -280,12 +280,12 @@ Written as $(g \cdot A)(w) = g\,A(g^{-1}w)$, this is Proposition [[§66 Invarian
 > \chi_{\operatorname{Hom}(V, W)}(g) = \operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = \big(\operatorname{Tr}\rho_W(g)\big)\big(\operatorname{Tr}\rho_V(g^{-1})\big) = \chi_W(g)\,\chi_V(g^{-1}).
 > $$
 >
-> *Source: WS 16.2, with $V$ and $W$ exchanged (see the transcription note above); board 11/11*
+> *Source: WS 16.2; board 11/11*
 
 ^prop-68-5
 
 > [!proof]+ Proof
-> *(Board 11/11.)* Choose a basis of $V$ and a basis of $W$, and let $n = \dim V$, $m = \dim W$. Then a linear map $\alpha: V \to W$ is an $m \times n$ matrix $X$, and composition of maps is the product of matrices (the remark *Matrices of Compositions*). So $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$ is the matrix $RXS$, with $R$ the matrix of $\rho_W(g)$ and $S$ the matrix of $\rho_V(g^{-1})$. By Lemma [[§68 Homomorphisms Between Representations#^lem-68-4|§68.4]], the trace of $\alpha \mapsto g \ast \alpha$ is $\operatorname{Tr}(R)\operatorname{Tr}(S) = \chi_W(g)\,\chi_V(g^{-1})$ (Definition [[§67 Characters of Representations#^def-67-1|§67.1]]).
+> *(WS 16.2, with $V$ and $W$ exchanged (see the transcription note above); board 11/11.)* *(Board 11/11.)* Choose a basis of $V$ and a basis of $W$, and let $n = \dim V$, $m = \dim W$. Then a linear map $\alpha: V \to W$ is an $m \times n$ matrix $X$, and composition of maps is the product of matrices (the remark *Matrices of Compositions*). So $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$ is the matrix $RXS$, with $R$ the matrix of $\rho_W(g)$ and $S$ the matrix of $\rho_V(g^{-1})$. By Lemma [[§68 Homomorphisms Between Representations#^lem-68-4|§68.4]], the trace of $\alpha \mapsto g \ast \alpha$ is $\operatorname{Tr}(R)\operatorname{Tr}(S) = \chi_W(g)\,\chi_V(g^{-1})$ (Definition [[§67 Characters of Representations#^def-67-1|§67.1]]).
 
 ^pf-68-5
 
@@ -336,7 +336,7 @@ Worksheet 16.2 prints $\operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = (\o
 *Uses:* [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]]
 
 > [!example] Example §68.2: $\operatorname{Hom}_G$ for $S_3$
-> *(Not from class.)* Over $\mathbb{R}$, take the characters of $S_3$ from Example [[§67 Characters of Representations#^ex-67-1|§67.1]], as values on the classes of $e$, $(1\,2)$, $(1\,2\,3)$, of sizes $1$, $3$, $2$: trivial $(1, 1, 1)$, sign $(1, -1, 1)$, $U = (1,1,1)^\perp$ with $(2, 0, -1)$, and $\mathbb{R}^3$ with $(3, 1, 0)$. In $S_3$ the inverse $g^{-1}$ has the same [[§33 Conjugacy Classes#^def-33-2|cycle type]] as $g$, so it is conjugate to $g$ (Theorem [[§33 Conjugacy Classes#^thm-33-3|§33.3]]), and $\chi(g^{-1}) = \chi(g)$ for every character (Proposition [[§67 Characters of Representations#^prop-67-1|§67.1]](2)). A sum over $G$ of a function that is constant on [[§33 Conjugacy Classes#^def-33-1|conjugacy classes]] is the sum over the classes of (class size) $\times$ (value). So Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] gives $\dim\operatorname{Hom}_{S_3}(V, W) = \frac16\big(\chi_V(e)\chi_W(e) + 3\,\chi_V((1\,2))\chi_W((1\,2)) + 2\,\chi_V((1\,2\,3))\chi_W((1\,2\,3))\big)$:
+> Over $\mathbb{R}$, take the characters of $S_3$ from Example [[§67 Characters of Representations#^ex-67-1|§67.1]], as values on the classes of $e$, $(1\,2)$, $(1\,2\,3)$, of sizes $1$, $3$, $2$: trivial $(1, 1, 1)$, sign $(1, -1, 1)$, $U = (1,1,1)^\perp$ with $(2, 0, -1)$, and $\mathbb{R}^3$ with $(3, 1, 0)$. In $S_3$ the inverse $g^{-1}$ has the same [[§33 Conjugacy Classes#^def-33-2|cycle type]] as $g$, so it is conjugate to $g$ (Theorem [[§33 Conjugacy Classes#^thm-33-3|§33.3]]), and $\chi(g^{-1}) = \chi(g)$ for every character (Proposition [[§67 Characters of Representations#^prop-67-1|§67.1]](2)). A sum over $G$ of a function that is constant on [[§33 Conjugacy Classes#^def-33-1|conjugacy classes]] is the sum over the classes of (class size) $\times$ (value). So Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] gives $\dim\operatorname{Hom}_{S_3}(V, W) = \frac16\big(\chi_V(e)\chi_W(e) + 3\,\chi_V((1\,2))\chi_W((1\,2)) + 2\,\chi_V((1\,2\,3))\chi_W((1\,2\,3))\big)$:
 >
 > | $\dim\operatorname{Hom}_{S_3}(V, W)$ | triv | sign | $U$ | $\mathbb{R}^3$ |
 > |---|---|---|---|---|
@@ -465,12 +465,12 @@ The formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§
 > 2. $\rho_V(g)$ is diagonalizable, and its eigenvalues are $N$-th roots of unity. In particular they are complex numbers of norm $1$.
 > 3. In a basis of eigenvectors of $\rho_V(g)$, the matrix of $\rho_V(g^{-1})$ is the complex conjugate of the matrix of $\rho_V(g)$. Consequently $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
 >
-> *Source: PS 10.1, which takes up WS 16.4–16.5 for the linear map $\rho_V(g)$*
+> *Source: PS 10.1; WS 16.4–16.5*
 
 ^prop-68-11
 
 > [!proof]+ Proof
-> *Idea:* the minimal polynomial of $\rho_V(g)$ divides $z^N - 1$, which has $N$ distinct roots, all of norm $1$; and for a number of norm $1$ the inverse is the complex conjugate.
+> *(PS 10.1, which takes up WS 16.4–16.5 for the linear map $\rho_V(g)$.)* *Idea:* the minimal polynomial of $\rho_V(g)$ divides $z^N - 1$, which has $N$ distinct roots, all of norm $1$; and for a number of norm $1$ the inverse is the complex conjugate.
 >
 > *(Problem Set 10, Problem 10.1, as submitted.)*
 >
@@ -535,12 +535,12 @@ For the matrix $A$ of $\rho_V(g)$, parts (2) and (3) are a second proof of Matri
 > 1. If $k = \mathbb{R}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\chi_W(g)$.
 > 2. If $k = \mathbb{C}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\overline{\chi_W(g)} = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \overline{\chi_V(g)}\,\chi_W(g)$.
 >
-> *Source: WS 16: the simplification announced before WS 16.3; the formulas are printed in the recap at the top of Worksheet 17, over $\mathbb{C}$ in the second form*
+> *Source: WS 16; WS 17*
 
 ^cor-68-12
 
 > [!proof]+ Proof
-> *(Filled in.)* Both fields contain $\mathbb{Q}$, so Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] applies. In the second form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g)\,\chi_W(g^{-1})$, substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]]) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]]). The second form over $\mathbb{C}$ comes in the same way from the first form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g^{-1})\,\chi_W(g)$, with $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
+> *(WS 16: the simplification announced before WS 16.3; the formulas are printed in the recap at the top of Worksheet 17, over $\mathbb{C}$ in the second form.)* *(Filled in.)* Both fields contain $\mathbb{Q}$, so Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] applies. In the second form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g)\,\chi_W(g^{-1})$, substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition [[§68 Homomorphisms Between Representations#^prop-68-8|§68.8]]) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary [[§68 Homomorphisms Between Representations#^cor-68-10|§68.10]]). The second form over $\mathbb{C}$ comes in the same way from the first form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g^{-1})\,\chi_W(g)$, with $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
 
 ^pf-68-12
 

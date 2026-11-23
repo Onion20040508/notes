@@ -80,7 +80,7 @@ The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is Ex
 ^rem-35-2
 
 > [!example] Example §35.2: The Line Covering the Circle
-> *(Not from lecture.)* The local diffeomorphism $F : \mathbb{R} \to S^1$, $F(t) = (\cos t, \sin t)$, of Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]] is a covering map, in the sense of the remark *Covering Maps* above.
+> The local diffeomorphism $F : \mathbb{R} \to S^1$, $F(t) = (\cos t, \sin t)$, of Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]] is a covering map, in the sense of the remark *Covering Maps* above.
 >
 > $\mathbb{R}$ and $S^1$ are connected, and $F$ is smooth (Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]]) and surjective, every point of $S^1$ being $F(s)$ for some $s \in [0, 2\pi)$. It remains to find an evenly covered neighbourhood of each $q \in S^1$. Write $q = F(t_0)$ and let $V = S^1 \setminus \{F(t_0 + \pi)\}$, the open arc of the proof of Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]]; it contains $q$, and it is connected, being the image $F\big((t_0 - \pi, t_0 + \pi)\big)$ of an interval under a continuous map. Since $F(t) = F(t_0 + \pi)$ exactly when $t \in t_0 + \pi + 2\pi\mathbb{Z}$,
 >
@@ -89,14 +89,18 @@ The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is Ex
 > $$
 >
 > a disjoint union of open intervals, which are therefore the components of $F^{-1}(V)$. Each $U_k$ is the interval $U$ of that proof with $t_0$ replaced by $t_0 + 2\pi k$, and the corresponding arc is the same $V$, because $F(t_0 + 2\pi k + \pi) = F(t_0 + \pi)$; so that proof shows that $F$ maps $U_k$ diffeomorphically onto $V$. Hence $V$ is evenly covered.
+>
+> *Source: not from lecture*
 
 ^ex-35-2
 
 > [!example] Example §35.3: The Helix Interval Does Not Cover the Circle
-> *(Not from lecture.)* The restriction of $F(t) = (\cos t, \sin t)$ to $(0, 4\pi)$, a local diffeomorphism by Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]], is not a covering map: over the point $F(0) = (1,0)$ it has a single preimage, $2\pi$, where every other point of the circle has two.
+> The restriction of $F(t) = (\cos t, \sin t)$ to $(0, 4\pi)$, a local diffeomorphism by Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]], is not a covering map: over the point $F(0) = (1,0)$ it has a single preimage, $2\pi$, where every other point of the circle has two.
 > - *The preimages.* $F(t) = (1, 0)$ if and only if $t \in 2\pi\mathbb{Z}$, and $(0, 4\pi) \cap 2\pi\mathbb{Z} = \{2\pi\}$. A point $q \neq (1,0)$ is $F(s)$ for exactly one $s \in (0, 2\pi)$, and its preimages in $(0, 4\pi)$ are the points of $s + 2\pi\mathbb{Z}$ lying there, namely $s$ and $s + 2\pi$.
 > - *Fibres over an evenly covered set have constant size.* If $V$ is evenly covered, each component of the preimage of $V$ is mapped bijectively onto $V$, so it contains exactly one preimage of each point of $V$; hence all points of $V$ have the same number of preimages, the number of components.
 > - *No evenly covered neighbourhood of $(1,0)$.* Every open neighbourhood $V$ of $(1,0)$ in $S^1$ contains points other than $(1,0)$, which have two preimages, while $(1,0)$ has one. So no neighbourhood of $(1,0)$ is evenly covered.
+>
+> *Source: not from lecture*
 
 ^ex-35-3
 
@@ -287,4 +291,3 @@ The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through
 
 > [!remark]- Connections
 > - As a covering map of topological spaces, for $n = 2$: [[§38 Fundamental Group of Some Surfaces#^thm-38-1|590 §38.1]] ($S^2 \to P^2$ is a covering map).
-

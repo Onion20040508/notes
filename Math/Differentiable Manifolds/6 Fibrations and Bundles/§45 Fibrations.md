@@ -282,7 +282,9 @@ The converse question: if all the fibres of a surjective submersion are diffeomo
 A section in the sense of [[§45 Fibrations#^def-45-3|Definition §45.3]] is a local section over $U = B$; to stress the difference, it is also called a *global* section.
 
 > [!definition] Definition §45.5: Rough Section
-> *(Not from lecture; filled in.)* Let $\pi : E \to B$ be smooth and $U \subseteq B$ open. A **rough section** of $\pi$ over $U$ is a map $s : U \to E$ with $\pi \circ s = \mathrm{id}_U$, with no continuity and no smoothness assumed: a choice of one point $s(b)$ of the fibre $\pi^{-1}(b)$ for every $b \in U$, and nothing more. For $U = B$ it is called a rough section of $\pi$.
+> Let $\pi : E \to B$ be smooth and $U \subseteq B$ open. A **rough section** of $\pi$ over $U$ is a map $s : U \to E$ with $\pi \circ s = \mathrm{id}_U$, with no continuity and no smoothness assumed: a choice of one point $s(b)$ of the fibre $\pi^{-1}(b)$ for every $b \in U$, and nothing more. For $U = B$ it is called a rough section of $\pi$.
+>
+> *Source: not from lecture · filled in*
 >
 > *Lee: Ch. 10, Local and Global Sections of Vector Bundles*
 

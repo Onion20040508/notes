@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *The examples of [[§45 Fibrations|§45]], collected: the product fibrations, which every fibration imitates locally, and the Möbius band (Lecture 12), the first fibration that is not a product. The non-examples — a submersion that is not a fibration, and one whose fibres are all diffeomorphic but which is still not a fibration — stay with Ehresmann's theorem in [[§45 Fibrations|§45]], whose hypotheses they explain. The normal bundle of a submanifold of $\mathbb{R}^n$ (Assignment 5), a fibration with fibre $\mathbb{R}^{n-m}$, has a section to itself ([[§48 The Normal Bundle of a Submanifold of Euclidean Space|§48]]), with its endpoint map and focal points.*
 
 > [!remark] Remark: Where Explicit Trivializations Come From
-> *(Not from lecture.)* In Definition [[§45 Fibrations#^def-45-1|§45.1]] the local trivializations $\phi_\alpha$ are part of the data: a fibration has some, and nothing in the definition says how to find them — the charts of the base $B$ carry no information about the total space or the fibre. So a fibration is a map that is, over each $U_\alpha$, a product fibration (Example [[§46 Examples of Fibrations#^ex-46-1|§46.1]]), but there is no general formula for $\phi_\alpha$. Explicit trivializations come from extra structure:
+> In Definition [[§45 Fibrations#^def-45-1|§45.1]] the local trivializations $\phi_\alpha$ are part of the data: a fibration has some, and nothing in the definition says how to find them — the charts of the base $B$ carry no information about the total space or the fibre. So a fibration is a map that is, over each $U_\alpha$, a product fibration (Example [[§46 Examples of Fibrations#^ex-46-1|§46.1]]), but there is no general formula for $\phi_\alpha$. Explicit trivializations come from extra structure:
 > - *The tangent and cotangent bundles* ([[§51 The Tangent Bundle|§51]], [[§52 The Cotangent Bundle|§52]]) reverse the order: $TM$ and $T^{\ast}M$ start out as sets (Definitions [[§51 The Tangent Bundle#^def-51-1|§51.1]] and [[§52 The Cotangent Bundle#^def-52-1|§52.1]]), with no topology, and the trivializations are written down first. A chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives every fibre a basis, $\partial/\partial x^i|_p$ of $T_pM$ and $dx^i|_p$ of $T_p^{\ast}M$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]), and writing a tangent vector $v \in T_pM$ or a covector $\xi \in T_p^{\ast}M$ in that basis,
 >
 > $$
@@ -24,13 +24,17 @@ tags: [differentiable-manifolds, math591]
 > - *Local sections* (Definition [[§45 Fibrations#^def-45-4|§45.4]]) give them for the Hopf fibration (Proposition [[§47 The Hopf Fibration#^prop-47-1|§47.1]]), whose total space $S^{2n+1}$ is a manifold in advance.
 >
 > Ehresmann's theorem (Theorem [[§45 Fibrations#^thm-45-3|§45.3]]) produces trivializations for proper submersions, but not by a formula.
+>
+> *Source: not from lecture*
 
 ^rem-46-1
 
 ## Product Fibrations
 
 > [!example] Example §46.1: Product Fibrations
-> *(Not from lecture.)* For smooth manifolds $B$ and $F$, the projection $\mathrm{pr}_1 : B \times F \to B$, $\mathrm{pr}_1(b, y) = b$, is a trivial fibration with fibre $F$, with one open set $U = B$ and one local trivialization $\phi = \mathrm{id}_{B \times F}$. Every trivial fibration is this one up to the diffeomorphism $\phi$: if $\phi : M \to B \times F$ is a global trivialization of $\pi$, then $\pi = \mathrm{pr}_1 \circ \phi$.
+> For smooth manifolds $B$ and $F$, the projection $\mathrm{pr}_1 : B \times F \to B$, $\mathrm{pr}_1(b, y) = b$, is a trivial fibration with fibre $F$, with one open set $U = B$ and one local trivialization $\phi = \mathrm{id}_{B \times F}$. Every trivial fibration is this one up to the diffeomorphism $\phi$: if $\phi : M \to B \times F$ is a global trivialization of $\pi$, then $\pi = \mathrm{pr}_1 \circ \phi$.
+>
+> *Source: not from lecture*
 
 ^ex-46-1
 
@@ -78,6 +82,7 @@ tags: [differentiable-manifolds, math591]
 > $$
 >
 > are local trivializations. So $\pi$ is a fibration with fibre $(-1, 1)$.
+>
 > 3. On $U_0 \cap U_{1/2}$ the two trivializations differ by a sign on one arc:
 >
 > $$
@@ -124,13 +129,15 @@ tags: [differentiable-manifolds, math591]
 The sign in (3) is the half-twist: going once around the circle, the two trivializations agree on one arc and differ by $t \mapsto -t$ on the other. Over either arc alone the band is a product; the sign is what a global product would have to remove.
 
 > [!theorem] Corollary §46.2: Every Section of the Möbius Band Meets the Core Circle
-> *(Not from lecture; filled in.)* Let $\pi : E \to \mathbb{R}/\mathbb{Z}$ be the Möbius band, with the notation of Proposition [[§46 Examples of Fibrations#^prop-46-1|§46.1]], and let
+> Let $\pi : E \to \mathbb{R}/\mathbb{Z}$ be the Möbius band, with the notation of Proposition [[§46 Examples of Fibrations#^prop-46-1|§46.1]], and let
 >
 > $$
 > C = \{\, [s, 0] : s \in \mathbb{R} \,\} = q\big(\mathbb{R} \times \{0\}\big) \subseteq E
 > $$
 >
 > be its *core circle*. If $\sigma : \mathbb{R}/\mathbb{Z} \to E$ is continuous with $\pi \circ \sigma = \mathrm{id}$ — in particular if $\sigma$ is a section of $\pi$ (Definition [[§45 Fibrations#^def-45-3|§45.3]]) — then $\sigma(b) \in C$ for some $b \in \mathbb{R}/\mathbb{Z}$.
+>
+> *Source: not from lecture · filled in*
 
 ^cor-46-2
 

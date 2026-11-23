@@ -23,20 +23,22 @@ tags: [differentiable-manifolds, math591]
 The Lie derivative of a form is the derivative of a curve in a vector space. That notion and its rules are fixed first.
 
 > [!definition] Definition §85.1: Derivative of a Curve in a Vector Space
-> *(Not from lecture; filled in.)* Let $W$ be a finite-dimensional real vector space with a basis $(w_1, \ldots, w_N)$, let $I \subseteq \mathbb{R}$ be an open interval, and let $c : I \to W$ be a map, a *curve* in $W$. Write $c(t) = \sum_{i=1}^N c^i(t)\, w_i$, with component functions $c^i : I \to \mathbb{R}$. The curve $c$ is **differentiable at** $t_0 \in I$ if every $c^i$ is, and then its **derivative** at $t_0$ is the vector
+> Let $W$ be a finite-dimensional real vector space with a basis $(w_1, \ldots, w_N)$, let $I \subseteq \mathbb{R}$ be an open interval, and let $c : I \to W$ be a map, a *curve* in $W$. Write $c(t) = \sum_{i=1}^N c^i(t)\, w_i$, with component functions $c^i : I \to \mathbb{R}$. The curve $c$ is **differentiable at** $t_0 \in I$ if every $c^i$ is, and then its **derivative** at $t_0$ is the vector
 >
 > $$
 > c'(t_0) = \frac{d}{dt}\Big|_{t = t_0} c(t) = \sum_{i=1}^N (c^i)'(t_0)\, w_i \in W .
 > $$
 >
 > The curve is *smooth* if every $c^i$ is smooth. Neither notion, nor the vector $c'(t_0)$, depends on the basis (Lemma [[§85 Lie Derivatives of Forms#^lem-85-1|§85.1]](1)).
+>
+> *Source: not from lecture · filled in*
 
 ^def-85-1
 
 Since $(c^i)'(t_0) = \lim_{h \to 0} \big(c^i(t_0 + h) - c^i(t_0)\big)/h$, the vector $c'(t_0)$ is the limit of the difference quotients $\frac{1}{h}\big(c(t_0 + h) - c(t_0)\big)$, taken component by component. For $c(t) = f(t)\, w$ with a function $f$ and a fixed vector $w = \sum_i a^i w_i$, the components are $a^i f(t)$, so $c'(t_0) = f'(t_0)\, w$.
 
 > [!theorem] Lemma §85.1: Derivatives of Curves under Linear and Bilinear Maps
-> *(Not from lecture; filled in.)* Let $W$, $W_1$, $W_2$, $Z$ be finite-dimensional real vector spaces, $I \subseteq \mathbb{R}$ an open interval, and $t_0 \in I$.
+> Let $W$, $W_1$, $W_2$, $Z$ be finite-dimensional real vector spaces, $I \subseteq \mathbb{R}$ an open interval, and $t_0 \in I$.
 >
 > 1. *Independence of the basis.* If a curve $c : I \to W$ is differentiable at $t_0$ with respect to one basis of $W$, it is so with respect to every basis, with the same vector $c'(t_0)$. The same holds for smoothness.
 > 2. *Linear maps.* If $c : I \to W$ is differentiable at $t_0$ and $L : W \to Z$ is linear, then $L \circ c$ is differentiable at $t_0$ and $(L \circ c)'(t_0) = L\big(c'(t_0)\big)$. Also $(a + \lambda b)'(t_0) = a'(t_0) + \lambda\, b'(t_0)$ for curves $a, b$ in $W$ differentiable at $t_0$ and $\lambda \in \mathbb{R}$.
@@ -47,6 +49,8 @@ Since $(c^i)'(t_0) = \lim_{h \to 0} \big(c^i(t_0 + h) - c^i(t_0)\big)/h$, the ve
 > $$
 >
 > 4. *Zero derivative.* If $c : I \to W$ is differentiable at every point of $I$ and $c'(t) = 0$ for all $t \in I$, then $c$ is constant.
+>
+> *Source: not from lecture · filled in*
 
 ^lem-85-1
 
@@ -149,11 +153,13 @@ The definition makes sense for every $p$, because $(t, p) \in \mathcal{D}$ for $
 *Observation* (Lecture 34). If $k = 0$, $\alpha = f \in C^\infty(M)$, then $\mathcal{L}_\mathbf{X} f = \mathbf{X}(f)$. Indeed $\Lambda^0 T_p^{\ast}M = \mathbb{R}$, $\alpha_p(t) = (\varphi_t^{\ast}f)(p) = f(\varphi_t(p))$, and Definition [[§85 Lie Derivatives of Forms#^def-85-2|§85.2]] is Definition [[§72 Lie Derivatives#^def-72-1|§72.1]]; this is Proposition [[§72 Lie Derivatives#^prop-72-1|§72.1]]. This is the green vertical arrow $\mathcal{L}_\mathbf{X}$ of the diagram in [[§86 Cartan's Magic Formula|§86]], in degree $0$.
 
 > [!example] Example §85.1: The Lie Derivative in Straightening Coordinates
-> *(Lecture 34.)* Take $\mathbf{X} = \partial/\partial x^1$ in local coordinates $(x^1, \ldots, x^m)$, and $\alpha = f_A\, dx^A$, one of the monomials that generate forms in local coordinates, with $f_A$ smooth. By the canonical form near a regular point (Lemma [[§72 Lie Derivatives#^lem-72-5|§72.5]]) this is the normal form of a vector field near any point where it does not vanish. Then
+> Take $\mathbf{X} = \partial/\partial x^1$ in local coordinates $(x^1, \ldots, x^m)$, and $\alpha = f_A\, dx^A$, one of the monomials that generate forms in local coordinates, with $f_A$ smooth. By the canonical form near a regular point (Lemma [[§72 Lie Derivatives#^lem-72-5|§72.5]]) this is the normal form of a vector field near any point where it does not vanish. Then
 >
 > $$
 > \mathcal{L}_\mathbf{X}\alpha = \frac{\partial f_A}{\partial x^1}\, dx^A .
 > $$
+>
+> *Source: Lecture 34*
 
 ^ex-85-1
 
@@ -173,17 +179,19 @@ The definition makes sense for every $p$, because $(t, p) \in \mathcal{D}$ for $
 Example [[§85 Lie Derivatives of Forms#^ex-85-1|§85.1]] computes $\mathcal{L}_\mathbf{X}$ near the points where $\mathbf{X}$ does not vanish. The next lemma is the step from those points to all of $M$. It is used in the second proof of Theorem [[§85 Lie Derivatives of Forms#^thm-85-4|§85.4]](2) and in the proof of Cartan's formula (Theorem [[§86 Cartan's Magic Formula#^thm-86-2|§86.2]]); the proof that the Lie derivative of a vector field is the bracket (Theorem [[§72 Lie Derivatives#^thm-72-6|§72.6]]) has the same three cases.
 
 > [!theorem] Lemma §85.3: Forms That Agree Where the Field Does Not Vanish
-> *(Not from lecture as a separate statement; it is the last step of the lecture's proof of Cartan's formula, and of Lee's proof of Proposition 12.32.)* Let $\mathbf{X} \in \mathfrak{X}(M)$, with $\operatorname{supp}\mathbf{X} = \overline{\{q \in M : \mathbf{X}_q \neq 0\}}$, and let $\omega, \eta \in \Omega^k(M)$. Suppose that
+> Let $\mathbf{X} \in \mathfrak{X}(M)$, with $\operatorname{supp}\mathbf{X} = \overline{\{q \in M : \mathbf{X}_q \neq 0\}}$, and let $\omega, \eta \in \Omega^k(M)$. Suppose that
 >
 > 1. $\omega_q = \eta_q$ at every $q$ with $\mathbf{X}_q \neq 0$, and
 > 2. $\omega_q = \eta_q$ at every $q \in M \setminus \operatorname{supp}\mathbf{X}$.
 >
 > Then $\omega = \eta$.
+>
+> *Source: Lecture 34 · step of a proof*
 
 ^lem-85-3
 
 > [!proof]+ Proof
-> *(Filled in.)* The points not covered by (1) and (2) are the $p$ with $\mathbf{X}_p = 0$ and $p \in \operatorname{supp}\mathbf{X}$. Let $p$ be one, and $(U, (x^i))$ a chart at $p$. On $U$ write $\omega - \eta = \sum_A h_A\, dx^A$; the $h_A$ are smooth (Definition [[§80 Differential Forms on Manifolds#^def-80-4|§80.4]]), in particular continuous. By (1), $h_A(q) = 0$ at every $q \in U$ with $\mathbf{X}_q \neq 0$. Suppose $h_A(p) \neq 0$ for some $A$. By continuity there is an open $N \subseteq U$ containing $p$ on which $h_A \neq 0$. Since $p$ lies in the closure of $\{q : \mathbf{X}_q \neq 0\}$, the neighbourhood $N$ contains a point $q$ with $\mathbf{X}_q \neq 0$, and there $h_A(q) = 0$: a contradiction. So $h_A(p) = 0$ for every $A$, that is, $\omega_p = \eta_p$.
+> *(Filled in. This is the last step of the lecture's proof of Cartan's formula, and of Lee's proof of Proposition 12.32.)* The points not covered by (1) and (2) are the $p$ with $\mathbf{X}_p = 0$ and $p \in \operatorname{supp}\mathbf{X}$. Let $p$ be one, and $(U, (x^i))$ a chart at $p$. On $U$ write $\omega - \eta = \sum_A h_A\, dx^A$; the $h_A$ are smooth (Definition [[§80 Differential Forms on Manifolds#^def-80-4|§80.4]]), in particular continuous. By (1), $h_A(q) = 0$ at every $q \in U$ with $\mathbf{X}_q \neq 0$. Suppose $h_A(p) \neq 0$ for some $A$. By continuity there is an open $N \subseteq U$ containing $p$ on which $h_A \neq 0$. Since $p$ lies in the closure of $\{q : \mathbf{X}_q \neq 0\}$, the neighbourhood $N$ contains a point $q$ with $\mathbf{X}_q \neq 0$, and there $h_A(q) = 0$: a contradiction. So $h_A(p) = 0$ for every $A$, that is, $\omega_p = \eta_p$.
 
 ^pf-85-3
 
@@ -350,11 +358,13 @@ Lecture 34 gave explanations of (2) and (3), close to proofs, and a proof of (4)
 *Divergence and volume.* Lecture 34 gave a first application of Corollary [[§85 Lie Derivatives of Forms#^cor-85-5|§85.5]], on open subsets of $\mathbb{R}^m$ (or in local coordinates), through a problem on Homework 10.
 
 > [!definition] Definition §85.3: Divergence
-> *(Calculus III; recalled in Lecture 34.)* Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} = \sum_{i=1}^m f^i\, \partial/\partial x^i \in \mathfrak{X}(M)$. The **divergence** of $\mathbf{X}$ is the function
+> Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} = \sum_{i=1}^m f^i\, \partial/\partial x^i \in \mathfrak{X}(M)$. The **divergence** of $\mathbf{X}$ is the function
 >
 > $$
 > \operatorname{div}\mathbf{X} = \sum_{i=1}^m \frac{\partial f^i}{\partial x^i} \in C^\infty(M) .
 > $$
+>
+> *Source: Calculus III · Lecture 34*
 
 ^def-85-3
 
@@ -362,22 +372,26 @@ Lecture 34 gave explanations of (2) and (3), close to proofs, and a proof of (4)
 > - On $\mathbb{R}^3$ the divergence is $d$ on two-forms: [[§81 The Exterior Derivative#^ex-81-1|Ex. §81.1]]; in MATH 452, [[§38 The Exterior Derivative#^prop-38-3|452 Prop. §38.3]].
 
 > [!definition] Definition §85.4: Volume Form of an Open Subset of $\mathbb{R}^m$
-> *(Lecture 34.)* Let $M \subseteq \mathbb{R}^m$ be open. The **volume form** of $M$ is the $m$-form
+> Let $M \subseteq \mathbb{R}^m$ be open. The **volume form** of $M$ is the $m$-form
 >
 > $$
 > \mathrm{dvol} = dx^1 \wedge \cdots \wedge dx^m \in \Omega^m(M) .
 > $$
+>
+> *Source: Lecture 34*
 
 ^def-85-4
 
 The name: given $m$ vectors $v^1, \ldots, v^m$ at a point, $\mathrm{dvol}(v^1, \ldots, v^m)$ is the $m \times m$ determinant of their components, $\det\big(dx^i(v^j)\big)$ (Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]]), and its absolute value is the volume of the parallelepiped spanned by the vectors.
 
 > [!theorem] Proposition §85.6: The Lie Derivative of the Volume Form
-> *(Lecture 34; a problem on Homework 10.)* Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} \in \mathfrak{X}(M)$. Then
+> Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} \in \mathfrak{X}(M)$. Then
 >
 > $$
 > \mathcal{L}_\mathbf{X}\, \mathrm{dvol} = (\operatorname{div}\mathbf{X})\; \mathrm{dvol} .
 > $$
+>
+> *Source: Lecture 34 · Assignment 10*
 
 ^prop-85-6
 
@@ -389,7 +403,9 @@ The name: given $m$ vectors $v^1, \ldots, v^m$ at a point, $\mathrm{dvol}(v^1, \
 So the divergence is the rate at which the flow changes volume: by Corollary [[§85 Lie Derivatives of Forms#^cor-85-5|§85.5]], $\frac{d}{dt}(\varphi_t^{\ast}\mathrm{dvol})_p = \big(\varphi_t^{\ast}((\operatorname{div}\mathbf{X})\,\mathrm{dvol})\big)_p$.
 
 > [!theorem] Corollary §85.7: Divergence-Free Flows Preserve Volume
-> *(Lecture 34.)* Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} \in \mathfrak{X}(M)$ with $\operatorname{div}\mathbf{X} = 0$, with flow $\varphi$. Then $\varphi_t^{\ast}\,\mathrm{dvol} = \mathrm{dvol}$ on $M_t$, for every $t$. Equivalently, the Jacobian matrix of $\varphi_t$ has determinant $1$ at every point of $M_t$: the flow is *volume-preserving*.
+> Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} \in \mathfrak{X}(M)$ with $\operatorname{div}\mathbf{X} = 0$, with flow $\varphi$. Then $\varphi_t^{\ast}\,\mathrm{dvol} = \mathrm{dvol}$ on $M_t$, for every $t$. Equivalently, the Jacobian matrix of $\varphi_t$ has determinant $1$ at every point of $M_t$: the flow is *volume-preserving*.
+>
+> *Source: Lecture 34*
 
 ^cor-85-7
 
@@ -411,6 +427,8 @@ So the divergence is the rate at which the flow changes volume: by Corollary [[�
 *(Not from lecture; animation added, vault only.)* A unit square carried by two flows on $\mathbb{R}^2$. Left: the shear field $\mathbf{X} = y\,\partial_x$, with flow $\varphi_t(x, y) = (x + ty, y)$ and $\operatorname{div}\mathbf{X} = 0$: the square becomes a parallelogram of the same area, since the Jacobian of $\varphi_t$ has determinant $1$ ([[§85 Lie Derivatives of Forms#^cor-85-7|§85.7]]). Right: $\mathbf{X} = x\,\partial_x$, with flow $\varphi_t(x, y) = (e^t x, y)$ and $\operatorname{div}\mathbf{X} = 1$: the area is $e^t$, and its rate of change at $t = 0$ is $1 = \operatorname{div}\mathbf{X}$.
 
 > [!remark] Remark: Hamiltonian Flows
-> *(Lecture 34.)* In classical mechanics, the flow of a Hamiltonian vector field preserves the symplectic form, for the same reason: the Lie derivative of the symplectic form along the field is zero, and Corollary [[§85 Lie Derivatives of Forms#^cor-85-5|§85.5]] applies. The symplectic form of a cotangent bundle is Theorem [[§81 The Exterior Derivative#^thm-81-12|§81.12]] (Assignment 9). These are preliminary results; Cartan's formula comes next.
+> In classical mechanics, the flow of a Hamiltonian vector field preserves the symplectic form, for the same reason: the Lie derivative of the symplectic form along the field is zero, and Corollary [[§85 Lie Derivatives of Forms#^cor-85-5|§85.5]] applies. The symplectic form of a cotangent bundle is Theorem [[§81 The Exterior Derivative#^thm-81-12|§81.12]] (Assignment 9). These are preliminary results; Cartan's formula comes next.
+>
+> *Source: Lecture 34*
 
 ^rem-85-2

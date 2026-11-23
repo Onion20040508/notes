@@ -162,13 +162,15 @@ Both definitions copy Definition [[§20 Compactness and the Unit Ball#^def-20-1|
 ^rem-44-1
 
 > [!example] Example §44.1: A Bounded Closed Convex Set that is Not Weak-$\ast$ Sequentially Compact
-> *(Not from lecture.)* Let $X = c_0$, which is separable (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]), and identify $X'$ with $\ell^1$ by $a \mapsto \ell_a$, $\ell_a(x) = \sum_{j} x_j\, \overline{a_j}$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-8|§36.8]]). The set
+> Let $X = c_0$, which is separable (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]), and identify $X'$ with $\ell^1$ by $a \mapsto \ell_a$, $\ell_a(x) = \sum_{j} x_j\, \overline{a_j}$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-8|§36.8]]). The set
 >
 > $$
 > C = \Bigl\{ \ell_a : a \in \ell^1,\ \|a\|_1 \le 1,\ \sum_{j=1}^\infty a_j = 1 \Bigr\} \subset X'
 > $$
 >
 > is bounded, convex, and closed in the norm of $X'$, but it is not weak-$\ast$ sequentially compact.
+>
+> *Source: not from lecture*
 
 ^ex-44-1
 
@@ -192,7 +194,9 @@ Both definitions copy Definition [[§20 Compactness and the Unit Ball#^def-20-1|
 In a reflexive space, Helly's theorem applies to $X'' = X$ and gives weakly convergent subsequences. Helly's theorem needs a separable space, and a reflexive space need not be separable; the proof therefore passes to the closed linear span of the given sequence. That this span is separable is the following lemma.
 
 > [!theorem] Lemma §44.3: The Closed Span of a Countable Set is Separable
-> *(Not from lecture; filled in.)* Let $X$ be a normed linear space over $\mathbb{F}$ and $\{z_j\}_{j=1}^\infty \subset X$. Then $X_0 = \overline{\operatorname{span}}\, \{z_j\}_{j=1}^\infty$ (Definition [[§11 Normed Linear Spaces#^def-11-9|§11.9]]), with the norm of $X$, is a separable normed linear space.
+> Let $X$ be a normed linear space over $\mathbb{F}$ and $\{z_j\}_{j=1}^\infty \subset X$. Then $X_0 = \overline{\operatorname{span}}\, \{z_j\}_{j=1}^\infty$ (Definition [[§11 Normed Linear Spaces#^def-11-9|§11.9]]), with the norm of $X$, is a separable normed linear space.
+>
+> *Source: not from lecture · filled in*
 
 ^lem-44-3
 
@@ -300,7 +304,9 @@ In a reflexive space, Helly's theorem applies to $X'' = X$ and gives weakly conv
 *Uses:* [[§44 Weak Sequential Compactness#^thm-44-4|§44.4]], [[§43 Weak and Weak-Star Convergence#^thm-43-10|§43.10]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]]
 
 > [!theorem] Corollary §44.8: Bounded Closed Convex Sets in the Dual of a Reflexive Space
-> *(Not from lecture.)* Let $X$ be a reflexive normed linear space. Then every bounded convex subset $C$ of $X'$ that is closed in the norm of $X'$ is weak-$\ast$ sequentially compact.
+> Let $X$ be a reflexive normed linear space. Then every bounded convex subset $C$ of $X'$ that is closed in the norm of $X'$ is weak-$\ast$ sequentially compact.
+>
+> *Source: not from lecture*
 
 ^cor-44-8
 
@@ -320,7 +326,9 @@ How the results of this section depend on each other. Each arrow names what is a
 Helly's theorem asks for a separable $X$. For sequences this hypothesis cannot be dropped.
 
 > [!example] Example §44.2: A Bounded Sequence in $(\ell^\infty)'$ with No Weak-$\ast$ Convergent Subsequence
-> *(Not from lecture.)* Let $X = \ell^\infty$, which is not separable (Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]), and let $\delta_n(x) = x_n$ be the $n$-th coordinate of $x = (x_1, x_2, \ldots) \in \ell^\infty$. Then $\delta_n \in X'$ with $\|\delta_n\| = 1$, and no subsequence of $\{\delta_n\}_{n=1}^\infty$ converges in the weak-$\ast$ sense.
+> Let $X = \ell^\infty$, which is not separable (Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]), and let $\delta_n(x) = x_n$ be the $n$-th coordinate of $x = (x_1, x_2, \ldots) \in \ell^\infty$. Then $\delta_n \in X'$ with $\|\delta_n\| = 1$, and no subsequence of $\{\delta_n\}_{n=1}^\infty$ converges in the weak-$\ast$ sense.
+>
+> *Source: not from lecture*
 
 ^ex-44-2
 
@@ -336,7 +344,7 @@ Helly's theorem asks for a separable $X$. For sequences this hypothesis cannot b
 What holds without separability is compactness in a topology on $X'$, not compactness for sequences.
 
 > [!definition] Definition §44.3: Weak-$\ast$ Topology
-> *(Not from lecture; needed to state Alaoglu's theorem.)* Let $X$ be a normed linear space. A subset $U \subset X'$ is **weak-$\ast$ open** if for every $\ell_1 \in U$ there are finitely many points $x_1, \ldots, x_k \in X$ and $\varepsilon > 0$ such that
+> Let $X$ be a normed linear space. A subset $U \subset X'$ is **weak-$\ast$ open** if for every $\ell_1 \in U$ there are finitely many points $x_1, \ldots, x_k \in X$ and $\varepsilon > 0$ such that
 >
 > $$
 > \bigl\{ \ell \in X' : |\ell(x_i) - \ell_1(x_i)| < \varepsilon \text{ for } i = 1, \ldots, k \bigr\} \subset U .
@@ -344,12 +352,18 @@ What holds without separability is compactness in a topology on $X'$, not compac
 >
 > The collection of weak-$\ast$ open sets is the **weak-$\ast$ topology** of $X'$. It is the coarsest topology on $X'$ in which every function $\ell \mapsto \ell(x)$, $x \in X$, is continuous.
 >
+> *Source: not from lecture*
+>
 > *Lax: Ch. 12, definition before Thm 3*
 
 ^def-44-3
 
+*Source note.* Needed to state Alaoglu's theorem.
+
 > [!definition] Definition §44.4: Weak-$\ast$ Compact Set
-> *(Not from lecture.)* Let $X$ be a normed linear space. A subset $K \subset X'$ is **weak-$\ast$ compact** if every collection of weak-$\ast$ open sets (Definition [[§44 Weak Sequential Compactness#^def-44-3|§44.3]]) whose union contains $K$ has a finite subcollection whose union still contains $K$. This is Definition [[§20 Compactness and the Unit Ball#^def-20-4|§20.4]] with weak-$\ast$ open sets in place of open sets.
+> Let $X$ be a normed linear space. A subset $K \subset X'$ is **weak-$\ast$ compact** if every collection of weak-$\ast$ open sets (Definition [[§44 Weak Sequential Compactness#^def-44-3|§44.3]]) whose union contains $K$ has a finite subcollection whose union still contains $K$. This is Definition [[§20 Compactness and the Unit Ball#^def-20-4|§20.4]] with weak-$\ast$ open sets in place of open sets.
+>
+> *Source: not from lecture*
 
 ^def-44-4
 
@@ -434,7 +448,9 @@ The closest point (the picture in the notes): $y_0 \in K$ with $\|x_0 - y_0\| = 
 The theorem gives existence only. Uniqueness, which holds in a Hilbert space, can fail; and existence can fail when $X$ is not reflexive. The next lemma supplies a reflexive space for the first example.
 
 > [!theorem] Lemma §44.11: Finite-Dimensional Normed Spaces are Reflexive
-> *(Not from lecture.)* Let $X$ be a finite-dimensional normed linear space. Then $X$ is reflexive.
+> Let $X$ be a finite-dimensional normed linear space. Then $X$ is reflexive.
+>
+> *Source: not from lecture*
 
 ^lem-44-11
 
@@ -450,7 +466,9 @@ The theorem gives existence only. Uniqueness, which holds in a Hilbert space, ca
 *Uses:* [[§30 Boundedness and Continuity#^prop-30-7|§30.7]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]], [[§13 The Completion of a Normed Space#^lem-13-2|§13.2]], [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Def. §37.1]]
 
 > [!example] Example §44.3: The Closest Point Need Not be Unique
-> *(Not from lecture.)* Let $X = \mathbb{R}^2$ with the maximum norm $\|x\|_\infty = \max\{|x_1|, |x_2|\}$, a reflexive Banach space (Lemma [[§44 Weak Sequential Compactness#^lem-44-11|§44.11]]). Let $K = \{ x \in \mathbb{R}^2 : x_1 \ge 1 \}$ and $x_0 = 0$. Then $K$ is nonempty, closed and convex, $\operatorname{dist}(x_0, K) = 1$, and every point $(1, t)$ with $|t| \le 1$ is a closest point of $K$ to $x_0$.
+> Let $X = \mathbb{R}^2$ with the maximum norm $\|x\|_\infty = \max\{|x_1|, |x_2|\}$, a reflexive Banach space (Lemma [[§44 Weak Sequential Compactness#^lem-44-11|§44.11]]). Let $K = \{ x \in \mathbb{R}^2 : x_1 \ge 1 \}$ and $x_0 = 0$. Then $K$ is nonempty, closed and convex, $\operatorname{dist}(x_0, K) = 1$, and every point $(1, t)$ with $|t| \le 1$ is a closest point of $K$ to $x_0$.
+>
+> *Source: not from lecture*
 
 ^ex-44-3
 
@@ -464,13 +482,15 @@ The theorem gives existence only. Uniqueness, which holds in a Hilbert space, ca
 The closest points of the half-plane $K = \{x_1 \ge 1\}$ to $x_0 = 0$ are where the ball of radius $\operatorname{dist}(x_0, K) = 1$ about $x_0$ touches $K$ (red). The round ball of the Euclidean norm touches in one point; the square ball of the maximum norm (Example [[§44 Weak Sequential Compactness#^ex-44-3|§44.3]]) touches along a whole side.
 
 > [!example] Example §44.4: No Closest Point in $C[0,1]$
-> *(Not from lecture.)* Let $X = C[0,1]$ with the maximum norm, which is not reflexive (Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|§37.5]]). Let $\ell(x) = \int_0^1 \bigl( t - \frac12 \bigr)\, x(t)\, dt$, so $\ell \in X'$ with $\|\ell\| = \frac14$ (Proposition [[§31 Dual Spaces#^prop-31-5|§31.5]]), and
+> Let $X = C[0,1]$ with the maximum norm, which is not reflexive (Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|§37.5]]). Let $\ell(x) = \int_0^1 \bigl( t - \frac12 \bigr)\, x(t)\, dt$, so $\ell \in X'$ with $\|\ell\| = \frac14$ (Proposition [[§31 Dual Spaces#^prop-31-5|§31.5]]), and
 >
 > $$
 > K = \bigl\{ x \in C[0,1] : \ell(x) = \tfrac14 \bigr\} .
 > $$
 >
 > Then $K$ is nonempty, closed and convex, $\operatorname{dist}(0, K) = 1$, and no point of $K$ has norm $1$: $K$ has no closest point to $0$. So in Theorem [[§44 Weak Sequential Compactness#^thm-44-10|§44.10]] the reflexivity of $X$ cannot be dropped.
+>
+> *Source: not from lecture*
 
 ^ex-44-4
 

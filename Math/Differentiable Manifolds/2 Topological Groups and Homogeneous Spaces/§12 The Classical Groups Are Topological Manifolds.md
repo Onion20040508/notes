@@ -128,7 +128,7 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 ^rem-12-2
 
 > [!example] Example §12.1: The Gradient of $\det$ on $2 \times 2$ Matrices
-> *(Computed; not from lecture.)* For $n = 2$ the formula $\nabla\det(g) = \det(g)\,(g^{-1})^{\mathsf T}$ of Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-2|§12.2]] can be checked by differentiating entry by entry. For $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ with $ad - bc \neq 0$, $\det g = ad - bc$ and $g^{-1} = \dfrac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. Arranging the partial derivatives of $ad - bc$ with respect to the four entries in the positions of those entries,
+> For $n = 2$ the formula $\nabla\det(g) = \det(g)\,(g^{-1})^{\mathsf T}$ of Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-2|§12.2]] can be checked by differentiating entry by entry. For $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ with $ad - bc \neq 0$, $\det g = ad - bc$ and $g^{-1} = \dfrac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. Arranging the partial derivatives of $ad - bc$ with respect to the four entries in the positions of those entries,
 >
 > $$
 > \nabla\det(g) = \begin{pmatrix} \partial_a(ad - bc) & \partial_b(ad - bc) \\ \partial_c(ad - bc) & \partial_d(ad - bc) \end{pmatrix}
@@ -137,6 +137,8 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 > $$
 >
 > the last step because $(ad - bc)\,g^{-1} = \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$, whose transpose is $\begin{pmatrix} d & -c \\ -b & a \end{pmatrix}$.
+>
+> *Source: not from lecture · computed*
 
 ^ex-12-1
 

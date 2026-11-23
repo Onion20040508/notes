@@ -808,7 +808,9 @@ Motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem [[§25 Projectio
 *Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]
 
 > [!remark] Remark: No Hahn–Banach Needed Here
-> *(Not from lecture.)* Every step of the proof is a direct computation with the quotient norm: Step 3 builds the functional on $X/Y$ from $\ell$ itself, so nothing has to be extended. The companion statement for a subspace, $Y' \cong X'/Y^\perp$ (Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-11|§37.11]]), is different: there a functional on $Y$ must be extended to $X$, and onto-ness needs Hahn–Banach (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]). Closedness of $Y$ is used only to make the quotient norm a norm; for a non-closed $Y$, the theorem applies to $\overline{Y}$ (Lemma [[§36 Duality in Normed Spaces#^lem-36-14|§36.14]]).
+> Every step of the proof is a direct computation with the quotient norm: Step 3 builds the functional on $X/Y$ from $\ell$ itself, so nothing has to be extended. The companion statement for a subspace, $Y' \cong X'/Y^\perp$ (Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-11|§37.11]]), is different: there a functional on $Y$ must be extended to $X$, and onto-ness needs Hahn–Banach (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]). Closedness of $Y$ is used only to make the quotient norm a norm; for a non-closed $Y$, the theorem applies to $\overline{Y}$ (Lemma [[§36 Duality in Normed Spaces#^lem-36-14|§36.14]]).
+>
+> *Source: not from lecture*
 
 ^rem-36-8
 

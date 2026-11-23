@@ -42,7 +42,7 @@ The union is nonempty, since an integral curve starting at $p$ exists (Theorem [
 *Uses:* [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]
 
 > [!definition] Definition §69.2: Flow Domain and Flow
-> *(Lecture 23, inside the statement of Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2), and the recap of Lecture 25; stated here as a definition.)* Let $\mathbf{X} \in \mathfrak{X}(M)$, and for each $p \in M$ let $\varphi^p : (\alpha(p), \beta(p)) \to M$ be the maximal integral curve of $\mathbf{X}$ starting at $p$ (Definition [[§69 Maximal Integral Curves and Flows#^def-69-1|§69.1]], Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]). The **flow domain** of $\mathbf{X}$ and the **flow** of $\mathbf{X}$ are
+> Let $\mathbf{X} \in \mathfrak{X}(M)$, and for each $p \in M$ let $\varphi^p : (\alpha(p), \beta(p)) \to M$ be the maximal integral curve of $\mathbf{X}$ starting at $p$ (Definition [[§69 Maximal Integral Curves and Flows#^def-69-1|§69.1]], Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]). The **flow domain** of $\mathbf{X}$ and the **flow** of $\mathbf{X}$ are
 >
 > $$
 > \mathcal{D} = \bigcup_{p \in M} \big(\alpha(p), \beta(p)\big) \times \{p\} \ \subseteq\ \mathbb{R} \times M, \qquad \varphi : \mathcal{D} \longrightarrow M, \quad (t, p) \longmapsto \varphi^p(t).
@@ -50,9 +50,13 @@ The union is nonempty, since an integral curve starting at $p$ exists (Theorem [
 >
 > So $\mathcal{D} = \{ (t, p) \in \mathbb{R} \times M : t \in (\alpha(p), \beta(p)) \}$, and, in words, $\varphi(t, p)$ is the integral curve starting at $p$, evaluated at $t$. The notation of Definition [[§68 Local Existence and Uniqueness#^def-68-1|§68.1]] is kept: $\varphi_t(p) = \varphi(t, p) = \varphi^p(t)$.
 >
+> *Source: Lecture 23 · Lecture 25*
+>
 > *Lee: Theorem 9.12*
 
 ^def-69-2
+
+Lecture 23 gave this inside the statement of Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2), and Lecture 25 recalled it; it is stated here as a definition.
 
 The maximal domains of the examples: $\mathbb{R}$ for the rotation and Euler fields (Examples [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]] and [[§68 Local Existence and Uniqueness#^ex-68-5|§68.5]]); $(-\infty, 1/(x_0y_0))$ and $(-\infty, -x_0)$ for the two examples that follow.
 

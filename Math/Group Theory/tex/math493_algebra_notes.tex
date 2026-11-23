@@ -3679,7 +3679,8 @@ The submitted proof uses no group action, but it reproves, for the action $(a, b
 \end{rembox}
 
 \begin{exbox}[{$AB$ Need Not Be a Subgroup}]\label{ex:product-set-not-subgroup}
-\textit{(Not from class.)} In $S_3$ take $A = \{e, (1\,3)\}$ and $B = \{e, (1\,2)\}$, as in The Index Need Not Divide (Example~\ref{ex:index-need-not-divide}). Then $A \cap B = \{e\}$, and the formula gives $|AB| = 2 \cdot 2 / 1 = 4$: indeed $AB = \{e, (1\,2), (1\,3), (1\,3)(1\,2)\}$ with $(1\,3)(1\,2) = (1\,2\,3)$. Since $4 \nmid 6$, $AB$ is not a subgroup of $S_3$. When $A$ or $B$ is normal, $AB$ is a subgroup, and the formula is the order count $|HN| = |H| \cdot |N| / |H \cap N|$ behind the Second Isomorphism Theorem (Theorem~\ref{thm:second-isomorphism-theorem}, later).
+In $S_3$ take $A = \{e, (1\,3)\}$ and $B = \{e, (1\,2)\}$, as in The Index Need Not Divide (Example~\ref{ex:index-need-not-divide}). Then $A \cap B = \{e\}$, and the formula gives $|AB| = 2 \cdot 2 / 1 = 4$: indeed $AB = \{e, (1\,2), (1\,3), (1\,3)(1\,2)\}$ with $(1\,3)(1\,2) = (1\,2\,3)$. Since $4 \nmid 6$, $AB$ is not a subgroup of $S_3$. When $A$ or $B$ is normal, $AB$ is a subgroup, and the formula is the order count $|HN| = |H| \cdot |N| / |H \cap N|$ behind the Second Isomorphism Theorem (Theorem~\ref{thm:second-isomorphism-theorem}, later).
+\srcline{not from class}
 \end{exbox}
 
 \subsection{Counting Orbits: Burnside's Lemma}
@@ -5921,11 +5922,11 @@ So $[G, G] = \langle C \rangle$ is all of $\mathbb{R}^{pr}$. The set $C$ is clos
 In the group $G$ of Example~\ref{ex:products-commutators-not-commutators}, identify $T(0, 0, M)$ with $M \in \mathbb{R}^{p \times r}$. Then the commutators of $G$ correspond to the set
 \[ C = \{AY - XB : A, X \in \mathbb{R}^{p \times q},\ Y, B \in \mathbb{R}^{q \times r}\} = \{M \in \mathbb{R}^{p \times r} : \operatorname{rank} M \leq 2q\}. \]
 In particular, if $2q \geq \min(p, r)$, every element of $[G, G]$ is a commutator.
-\srcline{review session 10/21; the inclusion $\supseteq$ not from class}
+\srcline{review session 10/21}
 \end{propbox}
 
 \begin{proof}
-\textit{Idea:} a matrix of rank at most $2q$ factors through $\mathbb{R}^{2q}$; split the factorization into two blocks of size $q$.\par
+\textit{(Review session 10/21; the inclusion $\supseteq$ not from class.)} \textit{Idea:} a matrix of rank at most $2q$ factors through $\mathbb{R}^{2q}$; split the factorization into two blocks of size $q$.\par
 By part (1) of Example~\ref{ex:products-commutators-not-commutators}, the commutator of $T(A, B, C')$ and $T(X, Y, Z)$ is $T(0, 0, AY - XB)$, and $A, B, X, Y$ can be chosen freely; so the commutators correspond exactly to the elements of the set $\{AY - XB\}$.
 
 ($\subseteq$) As in part (3) of that example, $\operatorname{rank}(AY - XB) \leq \operatorname{rank}(AY) + \operatorname{rank}(XB) \leq q + q = 2q$, since $AY$ and $XB$ are products through $\mathbb{R}^q$.
@@ -6150,9 +6151,10 @@ Let $N \trianglelefteq G$. Then $G$ is solvable if and only if $N$ and $G/N$ are
 \end{proof}
 
 \begin{exbox}[{$S_4$ from $K$ and $S_3$}]\label{ex:s4-solvable-extension}
-\textit{(Not from class.)} Theorem~\ref{thm:extension-solvable} rebuilds the chain of $S_4$ from two smaller pieces. The Pair-Partition Homomorphism $\alpha: S_4 \to S_3$ (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}) is surjective with kernel $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$, so $S_4/K \cong S_3$ by the First Isomorphism Theorem (Theorem~\ref{thm:first-isomorphism-theorem}). $K$ is abelian, hence solvable via $\{e\} \trianglelefteq K$ (Proposition~\ref{prop:abelian-groups-solvable}), and $S_3$ is solvable via $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ (Proposition~\ref{prop:s3-s4-solvable}). So $S_4$ is solvable. The chain the theorem produces consists of $\{e\} \trianglelefteq K$ followed by the preimages of $\{e\}$, $A_3$ and $S_3$ under $\alpha$. These are $K$, a subgroup $\alpha^{-1}(A_3)$ of index $[S_3 : A_3] = 2$ in $S_4$ (Indices Along the Correspondence, Corollary~\ref{cor:correspondence-preserves-indices}), and $S_4$. A subgroup of index $2$ in $S_4$ is $A_4$ (The Subgroup of Index $2$ in $S_m$, Lemma~\ref{lem:index-two-sm}), so the chain is
+Theorem~\ref{thm:extension-solvable} rebuilds the chain of $S_4$ from two smaller pieces. The Pair-Partition Homomorphism $\alpha: S_4 \to S_3$ (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}) is surjective with kernel $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$, so $S_4/K \cong S_3$ by the First Isomorphism Theorem (Theorem~\ref{thm:first-isomorphism-theorem}). $K$ is abelian, hence solvable via $\{e\} \trianglelefteq K$ (Proposition~\ref{prop:abelian-groups-solvable}), and $S_3$ is solvable via $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ (Proposition~\ref{prop:s3-s4-solvable}). So $S_4$ is solvable. The chain the theorem produces consists of $\{e\} \trianglelefteq K$ followed by the preimages of $\{e\}$, $A_3$ and $S_3$ under $\alpha$. These are $K$, a subgroup $\alpha^{-1}(A_3)$ of index $[S_3 : A_3] = 2$ in $S_4$ (Indices Along the Correspondence, Corollary~\ref{cor:correspondence-preserves-indices}), and $S_4$. A subgroup of index $2$ in $S_4$ is $A_4$ (The Subgroup of Index $2$ in $S_m$, Lemma~\ref{lem:index-two-sm}), so the chain is
 \[ \{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4, \]
 the chain of Proposition~\ref{prop:s3-s4-solvable}, with quotients $K$, $A_4/K \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}$ and $S_4/A_4 \cong S_3/A_3 \cong \mathbb{Z}/2\mathbb{Z}$.
+\srcline{not from class}
 \end{exbox}
 
 \begin{corbox}[{$p$-Groups Are Solvable}]\label{cor:p-groups-solvable}
@@ -6281,7 +6283,8 @@ $G_j/G_{j-1}$ is trivial iff $xG_{j-1} = G_{j-1}$ for every $x \in G_j$, iff eve
 \end{proof}
 
 \begin{rembox}[{Relation to Solvable Groups}]\label{rem:composition-solvable}
-\textit{(Not from class.)} The chain in the definition of a solvable group (Definition~\ref{def:solvable-group}) is a subnormal series whose quotients are abelian; a composition series is one whose quotients are simple. Since the abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ (Theorem~\ref{thm:abelian-simple-groups}), the two notions meet: \emph{a finite group is solvable if and only if all of its composition factors are cyclic of prime order} (Proposition~\ref{prop:solvable-iff-prime-composition-factors}, after the Jordan--H\"older theorem, with the examples $S_4$ and $A_5$).
+The chain in the definition of a solvable group (Definition~\ref{def:solvable-group}) is a subnormal series whose quotients are abelian; a composition series is one whose quotients are simple. Since the abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ (Theorem~\ref{thm:abelian-simple-groups}), the two notions meet: \emph{a finite group is solvable if and only if all of its composition factors are cyclic of prime order} (Proposition~\ref{prop:solvable-iff-prime-composition-factors}, after the Jordan--H\"older theorem, with the examples $S_4$ and $A_5$).
+\srcline{not from class}
 \end{rembox}
 
 \begin{propbox}[{$\mathbb{Z}$ Has No Composition Series}]\label{prop:z-no-composition-series}
@@ -6797,11 +6800,11 @@ Read a composition series from the top: $G = G_N \trianglerighteq G_{N-1} \trian
 
 \begin{exbox}[{The Order of the Factors Is Not Arbitrary}]\label{ex:s3-composition-order}
 A student asked whether every ordering of the composition factors is realized by some composition series. On 10/30 the lecture gave a group in which every ordering occurs, $(\mathbb{Z}/p\mathbb{Z})^n$ (Example~\ref{ex:jh-flags}). In general the answer is no (not from class). $S_3$ has the composition series $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$, with factors $\mathbb{Z}/3, \mathbb{Z}/2$ in that order, and no composition series with the factors in the order $\mathbb{Z}/2, \mathbb{Z}/3$.
-\srcline{question from class 10/28; the example $(\mathbb{Z}/p\mathbb{Z})^n$ lecture 10/30; $S_3$ not from class}
+\srcline{class 10/28; lecture 10/30}
 \end{exbox}
 
 \begin{proof}
-\textit{(Not from class.)} A composition series with first factor $\mathbb{Z}/2$ and second $\mathbb{Z}/3$ would be $\{e\} \trianglelefteq G_1 \trianglelefteq S_3$ with $|G_1| = 2$ and $G_1$ normal in $S_3$. But the subgroups of order $2$ of $S_3$ are the $\langle (i\,j) \rangle$, and none is normal: $(1\,3)(1\,2)(1\,3) = (2\,3)$.
+\textit{(Question from class 10/28; the example $(\mathbb{Z}/p\mathbb{Z})^n$ lecture 10/30; $S_3$ not from class.)} \textit{(Not from class.)} A composition series with first factor $\mathbb{Z}/2$ and second $\mathbb{Z}/3$ would be $\{e\} \trianglelefteq G_1 \trianglelefteq S_3$ with $|G_1| = 2$ and $G_1$ normal in $S_3$. But the subgroups of order $2$ of $S_3$ are the $\langle (i\,j) \rangle$, and none is normal: $(1\,3)(1\,2)(1\,3) = (2\,3)$.
 \end{proof}
 
 \begin{exbox}[{Flags in $(\mathbb{Z}/p\mathbb{Z})^n$}]\label{ex:jh-flags}
@@ -7383,11 +7386,11 @@ So every group with $15$ elements is cyclic.
 
 \begin{propbox}[{Groups of Order $pq$}]\label{prop:groups-order-pq}
 Let $p < q$ be primes with $q \not\equiv 1 \pmod p$, and let $|G| = pq$. Then $G \cong \mathbb{Z}/pq\mathbb{Z}$.
-\srcline{lecture 10/16, stated after the case $|G| = 15$; second proof PS 8.3(1)}
+\srcline{lecture 10/16; PS 8.3(1)}
 \end{propbox}
 
 \begin{proof}
-\textit{Idea:} Sylow counting forces $n_p = n_q = 1$; the two normal cyclic Sylow subgroups split $G$.\par
+\textit{(Lecture 10/16, stated after the case $|G| = 15$; second proof PS 8.3(1).)} \textit{Idea:} Sylow counting forces $n_p = n_q = 1$; the two normal cyclic Sylow subgroups split $G$.\par
 \textit{(Filled in, following the case $|G| = 15$.)} The divisors of $pq$ are $1, p, q, pq$.
 
 \emph{$n_q = 1$.} $n_q$ divides $pq$ and $n_q \equiv 1 \pmod q$ (Corollary~\ref{cor:sylow-number-divides}, Theorem~\ref{thm:sylow-third}). Modulo $q$: $q \equiv pq \equiv 0$, and $p \not\equiv 1$ since $1 < p < q$. So $n_q = 1$.
@@ -7453,11 +7456,11 @@ The \textbf{standard flag} $\mathcal{F}_0$ has $V_i = \langle e_1, \ldots, e_i \
 \begin{propbox}[{Complete Flags Are $G/B$}]\label{prop:flags-g-mod-b}
 The action of $GL_n(k)$ on complete flags in $k^n$ is transitive, and the stabilizer of $\mathcal{F}_0$ is the group $B$ of invertible upper triangular matrices. Hence $gB \mapsto g\mathcal{F}_0$ is a bijection from $GL_n(k)/B$ to the set of complete flags, and for $k = \mathbb{F}_p$,
 \[ |G| = \prod_{j=0}^{n-1} (p^n - p^j), \qquad |B| = (p-1)^n p^{\binom{n}{2}}, \qquad \#\{\text{complete flags}\} = |G/B| = \frac{|G|}{|B|}. \]
-\srcline{office hours 11/4 (the orders); the flag picture not from class}
+\srcline{office hours 11/4}
 \end{propbox}
 
 \begin{proof}
-\textit{Idea:} A flag is the same as a basis up to upper triangular change; the columns of $g$ are such a basis.\par
+\textit{(Office hours 11/4 (the orders); the flag picture not from class.)} \textit{Idea:} A flag is the same as a basis up to upper triangular change; the columns of $g$ are such a basis.\par
 \textit{(Not from class.)} \emph{Transitive:} given a flag $(V_i)$, choose $v_i \in V_i \setminus V_{i-1}$ for $i = 1, \ldots, n$. By induction on $i$, $v_1, \ldots, v_i$ is a basis of $V_i$: it is independent because $v_i \notin V_{i-1} = \langle v_1, \ldots, v_{i-1} \rangle$, and $\dim V_i = i$. The matrix $g$ with columns $v_1, \ldots, v_n$ is invertible and $g\langle e_1, \ldots, e_i \rangle = \langle v_1, \ldots, v_i \rangle = V_i$, so $g\mathcal{F}_0 = (V_i)$.
 
 \emph{Stabilizer:} $g\langle e_1, \ldots, e_i \rangle = \langle e_1, \ldots, e_i \rangle$ for all $i$ holds iff $ge_i \in \langle e_1, \ldots, e_i \rangle$ for all $i$ (for ``if'': then $g\langle e_1, \ldots, e_i \rangle \subseteq \langle e_1, \ldots, e_i \rangle$, with equality since $g$ is injective), that is, iff column $i$ of $g$ has zeros below row $i$ for every $i$: iff $g$ is upper triangular.
@@ -8132,7 +8135,8 @@ Following $x$ under $\phi(g)$ gives $x \mapsto gx \mapsto g^2x \mapsto \cdots$, 
 \end{proof}
 
 \begin{rembox}[{Another Source for $t$}]\label{rem:order-2-mod-4-index-two}
-\textit{(Not from class.)} The element $t$ of part (1) also comes directly from Cauchy's theorem (Theorem~\ref{thm:cauchys-theorem}), and part (2) is the case $d = 2$ of Lemma~\ref{lem:sign-left-multiplication}.
+The element $t$ of part (1) also comes directly from Cauchy's theorem (Theorem~\ref{thm:cauchys-theorem}), and part (2) is the case $d = 2$ of Lemma~\ref{lem:sign-left-multiplication}.
+\srcline{not from class}
 \end{rembox}
 
 \begin{propbox}[{There Is No Simple Group of Order $56$}]\label{prop:no-simple-56}
@@ -8262,7 +8266,8 @@ contradicting $\frac{n!}{2} \leq k!$. Hence $k \geq n$, that is, $[A_n : H] \geq
 \end{proof}
 
 \begin{rembox}[{A Shortcut}]\label{rem:an-subgroup-index-shortcut}
-\textit{(Not from class.)} By Corollary~\ref{cor:simple-land-an}, the injective homomorphism $A_n \to S_k$ has image in $A_k$, so $n!/2$ divides $k!/2$ (Lagrange), i.e.\ $n!$ divides $k!$, which forces $k \geq n$; this replaces the counting step.
+By Corollary~\ref{cor:simple-land-an}, the injective homomorphism $A_n \to S_k$ has image in $A_k$, so $n!/2$ divides $k!/2$ (Lagrange), i.e.\ $n!$ divides $k!$, which forces $k \geq n$; this replaces the counting step.
+\srcline{not from class}
 \end{rembox}
 
 \begin{lembox}[{The Subgroup of Index $2$ in $S_m$}]\label{lem:index-two-sm}
@@ -8421,7 +8426,7 @@ The bound is attained by $A_5$: $|A_5| = 5!/2 = 60$; $A_5$ is simple (Propositio
 \end{proof}
 
 \begin{rembox}[{The Classification of Finite Simple Groups}]\label{rem:classification-finite-simple}
-\textit{(Overview only.)} The classification was an enormous 20th-century project, run in two streams in parallel: ruling out more and more orders, with computations like those above, and finding new ways to construct simple groups. The proof is spread over journal articles totalling about $10{,}000$ pages. There is an ongoing effort to collect it in one place and check that it has no gaps, and ultimately to verify it in a proof assistant such as Lean. Very roughly, every finite simple group is one of the following.
+The classification was an enormous 20th-century project, run in two streams in parallel: ruling out more and more orders, with computations like those above, and finding new ways to construct simple groups. The proof is spread over journal articles totalling about $10{,}000$ pages. There is an ongoing effort to collect it in one place and check that it has no gaps, and ultimately to verify it in a proof assistant such as Lean. Very roughly, every finite simple group is one of the following.
 \begin{enumerate}
     \item The cyclic groups $\mathbb{Z}/p\mathbb{Z}$, $p$ prime.
     \item The alternating groups $A_n$ for $n \neq 1, 2, 4$. ($A_1$ and $A_2$ are trivial and $A_4$ is not simple; $A_3 \cong \mathbb{Z}/3\mathbb{Z}$ is already in the first family, so one usually says $n \geq 5$.)
@@ -8431,18 +8436,18 @@ The bound is attained by $A_5$: $|A_5| = 5!/2 = 60$; $A_5$ is simple (Propositio
     For a long time this order was a number that passed every test without anyone being able to construct a group of that order, and no proof of the classification could be complete until the Monster was either constructed or ruled out. (It was first constructed by Robert Griess, around 1980--82; later constructions are due to Conway and others. Not from class.)
 \end{enumerate}
 As a working summary, the finite simple groups are the $\mathbb{Z}/p\mathbb{Z}$, the alternating groups, $PSL$ and groups like it, and the sporadic groups.
-\srcline{lecture 10/23}
+\srcline{lecture 10/23; overview only}
 \end{rembox}
 
 \begin{rembox}[{Where the Groups of Lie Type Come From}]\label{rem:lie-type-origin}
-\textit{(Overview only.)} A \textbf{Lie group} is a group that is also a manifold, with the group operations smooth. There is a much easier classification, due to Killing and Cartan (late 19th century), of the compact Lie groups. Roughly, they fall into three infinite families,
+A \textbf{Lie group} is a group that is also a manifold, with the group operations smooth. There is a much easier classification, due to Killing and Cartan (late 19th century), of the compact Lie groups. Roughly, they fall into three infinite families,
 \begin{align*}
 O_n(\mathbb{R}) &= \{ g \in GL_n(\mathbb{R}) : g g^{T} = I_n \} && \text{(orthogonal group)}, \\
 U_n(\mathbb{C}) &= \{ g \in GL_n(\mathbb{C}) : g \bar{g}^{T} = I_n \} && \text{(unitary group)}, \\
 Sp(n) &= \{ g \in GL_n(\mathbb{H}) : g \bar{g}^{T} = I_n \} && \text{(quaternionic unitary group)},
 \end{align*}
 where $\mathbb{H}$ denotes the quaternions (notation for the third family varies), together with five exceptional groups with the unbeautiful names $E_6$, $E_7$, $E_8$, $F_4$, $G_2$. The groups of Lie type arise by replacing $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ by finite fields and doing the analogous constructions with matrices over finite fields. For example, the $n \times n$ matrices over $\mathbb{F}_q$ with $gg^{T} = I_n$ form a finite orthogonal group, and passing to a suitable subgroup and quotient (in the spirit of $SL_n \to PSL_n$) gives simple groups. There are choices when making this replacement, so a single family on the Lie side can give several families of finite groups.
-\srcline{lecture 10/23}
+\srcline{lecture 10/23; overview only}
 \end{rembox}
 
 
@@ -8534,7 +8539,8 @@ By Internal Direct Products Are Direct Products (Theorem~\ref{thm:internal-direc
 \end{proof}
 
 \begin{rembox}[{Two Forms of the Criterion}]\label{rem:two-direct-product-criteria}
-\textit{(Not from class.)} Internal Direct Products (Lemma~\ref{lem:internal-direct-product}, from PS 6.3(5)) is the finite version: commuting subgroups $H, L$ with $H \cap L = \{e\}$ and $|H|\,|L| = |G|$. For finite $G$ and normal $N_1, N_2$ with $N_1 \cap N_2 = \{e\}$, its counting condition is equivalent to $G = N_1N_2$ (Lemma~\ref{lem:product-condition-versus-order-condition}). The theorem above needs no finiteness.
+Internal Direct Products (Lemma~\ref{lem:internal-direct-product}, from PS 6.3(5)) is the finite version: commuting subgroups $H, L$ with $H \cap L = \{e\}$ and $|H|\,|L| = |G|$. For finite $G$ and normal $N_1, N_2$ with $N_1 \cap N_2 = \{e\}$, its counting condition is equivalent to $G = N_1N_2$ (Lemma~\ref{lem:product-condition-versus-order-condition}). The theorem above needs no finiteness.
+\srcline{not from class}
 \end{rembox}
 
 \begin{lembox}[{$G = N_1N_2$ Versus $|N_1|\,|N_2| = |G|$}]\label{lem:product-condition-versus-order-condition}
@@ -8790,7 +8796,8 @@ No group of order $21$ had to be found first: the triple $(N, S, \varphi)$ is en
 %% <<< END ADDED
 
 \begin{exbox}[{$S_3$ as an External Semidirect Product}]\label{ex:s3-external-semidirect}
-\textit{(Not from class.)} Let $\varphi: \mathbb{Z}/2\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/3\mathbb{Z})$ send $1$ to $x \mapsto -x$. Then $\mathbb{Z}/3\mathbb{Z} \rtimes_\varphi \mathbb{Z}/2\mathbb{Z} \cong S_3$: in $S_3 = A_3 \rtimes \langle (1\,2) \rangle$ (Example~\ref{ex:s3-internal-semidirect}), conjugation by $(1\,2)$ sends $(1\,2\,3)$ to $(2\,1\,3) = (1\,3\,2) = (1\,2\,3)^{-1}$, which under $A_3 \cong \mathbb{Z}/3\mathbb{Z}$, $(1\,2\,3)^x \leftrightarrow x$, is $x \mapsto -x$. Apply part (1) of Theorem~\ref{thm:internal-external-semidirect}. With $\varphi$ trivial instead, one gets $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$.
+Let $\varphi: \mathbb{Z}/2\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/3\mathbb{Z})$ send $1$ to $x \mapsto -x$. Then $\mathbb{Z}/3\mathbb{Z} \rtimes_\varphi \mathbb{Z}/2\mathbb{Z} \cong S_3$: in $S_3 = A_3 \rtimes \langle (1\,2) \rangle$ (Example~\ref{ex:s3-internal-semidirect}), conjugation by $(1\,2)$ sends $(1\,2\,3)$ to $(2\,1\,3) = (1\,3\,2) = (1\,2\,3)^{-1}$, which under $A_3 \cong \mathbb{Z}/3\mathbb{Z}$, $(1\,2\,3)^x \leftrightarrow x$, is $x \mapsto -x$. Apply part (1) of Theorem~\ref{thm:internal-external-semidirect}. With $\varphi$ trivial instead, one gets $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$.
+\srcline{not from class}
 \end{exbox}
 
 \begin{rembox}[{Notation and Mnemonics}]\label{rem:semidirect-notation}
@@ -8880,19 +8887,21 @@ In the setting of Proposition~\ref{prop:affine-semidirect}, let $T = \{\sigma_{(
 By (2), the conjugation action of $G_0$ on $T$ (Proposition~\ref{prop:semidirect-action}) is $\sigma_{(I, \mu)} \mapsto \sigma_{(I, g\mu)}$, which is the action $\varphi$ of Proposition~\ref{prop:affine-semidirect} under $\lambda \mapsto \sigma_{(I, \lambda)}$. So the internal description (3) and the external one agree, as Internal and External Semidirect Products Agree (Theorem~\ref{thm:internal-external-semidirect}) predicts.
 
 \begin{exbox}[{The Affine Group}]\label{ex:affine-group}
-\textit{(Not from class.)} Take $L = V$ and $G = GL(V)$; every invertible linear map maps $V$ onto $V$. Then $\Gamma$ is the group $\operatorname{Aff}(V)$ of all maps $x \mapsto gx + \lambda$ with $g \in GL(V)$ and $\lambda \in V$, and Proposition~\ref{prop:affine-semidirect} gives
+Take $L = V$ and $G = GL(V)$; every invertible linear map maps $V$ onto $V$. Then $\Gamma$ is the group $\operatorname{Aff}(V)$ of all maps $x \mapsto gx + \lambda$ with $g \in GL(V)$ and $\lambda \in V$, and Proposition~\ref{prop:affine-semidirect} gives
 \[ \operatorname{Aff}(V) \cong V \rtimes GL(V). \]
 For $V = k$ these are the maps $x \mapsto ax + b$ with $a \in k^\times$ and $b \in k$, so $\operatorname{Aff}(k) \cong k \rtimes k^\times$, with $k^\times$ acting on the additive group $k$ by multiplication. For $k = \mathbb{F}_p$ this group has $p(p-1)$ elements. For $p = 3$ it has $6$ elements and permutes the three elements of $\mathbb{F}_3$. Only the identity map fixes all three: $ax + b = x$ at $x = 0$ gives $b = 0$, and then at $x = 1$ gives $a = 1$. So the permutation homomorphism $\operatorname{Aff}(\mathbb{F}_3) \to S_{\mathbb{F}_3} \cong S_3$ is injective between groups of order $6$, hence an isomorphism:
 \[ S_3 \cong \mathbb{F}_3 \rtimes \mathbb{F}_3^\times = \mathbb{Z}/3\mathbb{Z} \rtimes \{\pm 1\}, \]
 with $-1$ acting by $x \mapsto -x$, as in Example~\ref{ex:s3-external-semidirect}.
+\srcline{not from class}
 \end{exbox}
 
 \begin{exbox}[{The Symmetries of $\mathbb{Z}$ in $\mathbb{R}$}]\label{ex:affine-infinite-dihedral}
-\textit{(Not from class.)} Take $V = \mathbb{R}$, $G = \{\pm 1\} \subseteq GL_1(\mathbb{R})$ and $L = \mathbb{Z}$, so that $\pm\mathbb{Z} = \mathbb{Z}$. Then $\Gamma$ consists of the translations $x \mapsto x + n$ and the maps $x \mapsto -x + n$, $n \in \mathbb{Z}$. The map $x \mapsto -x + n$ is the reflection of $\mathbb{R}$ in the point $n/2$, since it fixes $n/2$ and sends $n/2 + t$ to $n/2 - t$. By Proposition~\ref{prop:affine-semidirect}, $\Gamma \cong \mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$, with the generator of $\mathbb{Z}/2\mathbb{Z}$ acting by $n \mapsto -n$. This group is not abelian. By Proposition~\ref{prop:affine-translations-normal}(2), conjugating the translation $t(x) = x + 1$ by the reflection $s(x) = -x$ gives $sts^{-1} = t^{-1}$, the translation by $-1$. These are the symmetries of the integer points of the line, the infinite analogue of the symmetries of a regular polygon.
+Take $V = \mathbb{R}$, $G = \{\pm 1\} \subseteq GL_1(\mathbb{R})$ and $L = \mathbb{Z}$, so that $\pm\mathbb{Z} = \mathbb{Z}$. Then $\Gamma$ consists of the translations $x \mapsto x + n$ and the maps $x \mapsto -x + n$, $n \in \mathbb{Z}$. The map $x \mapsto -x + n$ is the reflection of $\mathbb{R}$ in the point $n/2$, since it fixes $n/2$ and sends $n/2 + t$ to $n/2 - t$. By Proposition~\ref{prop:affine-semidirect}, $\Gamma \cong \mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$, with the generator of $\mathbb{Z}/2\mathbb{Z}$ acting by $n \mapsto -n$. This group is not abelian. By Proposition~\ref{prop:affine-translations-normal}(2), conjugating the translation $t(x) = x + 1$ by the reflection $s(x) = -x$ gives $sts^{-1} = t^{-1}$, the translation by $-1$. These are the symmetries of the integer points of the line, the infinite analogue of the symmetries of a regular polygon.
+\srcline{not from class}
 \end{exbox}
 
 \begin{exbox}[{A Wallpaper Group with Rotations by $120^\circ$}]\label{ex:affine-wallpaper-p3}
-\textit{(Not from class; the problem set illustrates the case with a tiling by lizards.)} Let $V = \mathbb{R}^2$, let $r$ be the rotation by $120^\circ$ about $0$, $G = \{I, r, r^2\} \cong \mathbb{Z}/3\mathbb{Z}$, and let
+Let $V = \mathbb{R}^2$, let $r$ be the rotation by $120^\circ$ about $0$, $G = \{I, r, r^2\} \cong \mathbb{Z}/3\mathbb{Z}$, and let
 \[ L = \mathbb{Z}\omega_1 + \mathbb{Z}\omega_2, \qquad \omega_1 = (1, 0), \quad \omega_2 = \big(\tfrac12, \tfrac{\sqrt3}{2}\big), \]
 the triangular lattice. Then $r\omega_1 = (-\frac12, \frac{\sqrt3}{2}) = \omega_2 - \omega_1$ and $r\omega_2 = (-1, 0) = -\omega_1$, so $rL \subseteq L$. Hence also $r^2L \subseteq rL \subseteq L$, and $L = r^3L = r(r^2L) \subseteq rL$; so $gL = L$ for every $g \in G$. By Proposition~\ref{prop:affine-semidirect}, $\Gamma \cong L \rtimes G \cong \mathbb{Z}^2 \rtimes \mathbb{Z}/3\mathbb{Z}$. It is the symmetry group of a pattern that has rotations by $120^\circ$ but no reflections, such as the figure below. In the classification of the seventeen wallpaper groups it is called $p3$.
 
@@ -8903,7 +8912,10 @@ So $\sigma_{(r, \lambda)}$ is the rotation by $120^\circ$ about $c$. These centr
 which lies in $L$ if and only if $2a + b$ and $b - a$ are integers. Then $3a = (2a + b) - (b - a) \in \mathbb{Z}$ and $b \in a + \mathbb{Z}$. So the centres of rotation are the points of
 \[ L, \qquad c_1 + L, \qquad 2c_1 + L, \qquad c_1 = \tfrac13(\omega_1 + \omega_2): \]
 the lattice points and the centres of the two kinds of triangles of the lattice, those pointing up and those pointing down.
+\srcline{not from class}
 \end{exbox}
+
+\textit{Source note.} The problem set illustrates the case with a tiling by lizards.
 
 %% >>> ADDED: figure (not from lecture)
 \begin{center}
@@ -9050,7 +9062,8 @@ Let $\varphi: S \to \operatorname{Aut}(N)$ be a homomorphism. Then $N \rtimes_\v
 
 All the groups of affine maps above are solvable, since in each of them $L$ and $G$ are abelian: $\operatorname{Aff}(k) \cong k \rtimes k^\times$, $\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ and $\mathbb{Z}^2 \rtimes \mathbb{Z}/3\mathbb{Z}$.
 \begin{exbox}[{Groups of Order $pq$ Are Solvable}]\label{ex:order-pq-solvable}
-\textit{(Not from class.)} Let $p < q$ be primes and $|G| = pq$. The number $n_q$ of Sylow $q$-subgroups divides $p$ and is $\equiv 1 \pmod q$ (The Number of Sylow Subgroups Divides $|G|$, Corollary~\ref{cor:sylow-number-divides}). Since $p < q$, the only divisor of $p$ that is $\equiv 1 \pmod q$ is $1$, so $n_q = 1$. The Sylow $q$-subgroup $Q$, which exists by the First Sylow Theorem (Theorem~\ref{thm:sylow-first}), is therefore normal (A Normal Sylow Subgroup Is the Only One, Corollary~\ref{cor:sylow-normal-unique}(2)). $Q$ has prime order $q$ and $G/Q$ has prime order $p$. A group of prime order is cyclic, generated by any non-identity element by Lagrange's theorem, hence abelian and solvable. By Corollary~\ref{cor:solvable-iff-normal-quotient}, $G$ is solvable. This covers the case $q \equiv 1 \pmod p$ as well, where $G$ need not be cyclic (Example~\ref{ex:order-pq-hypothesis-s3}).
+Let $p < q$ be primes and $|G| = pq$. The number $n_q$ of Sylow $q$-subgroups divides $p$ and is $\equiv 1 \pmod q$ (The Number of Sylow Subgroups Divides $|G|$, Corollary~\ref{cor:sylow-number-divides}). Since $p < q$, the only divisor of $p$ that is $\equiv 1 \pmod q$ is $1$, so $n_q = 1$. The Sylow $q$-subgroup $Q$, which exists by the First Sylow Theorem (Theorem~\ref{thm:sylow-first}), is therefore normal (A Normal Sylow Subgroup Is the Only One, Corollary~\ref{cor:sylow-normal-unique}(2)). $Q$ has prime order $q$ and $G/Q$ has prime order $p$. A group of prime order is cyclic, generated by any non-identity element by Lagrange's theorem, hence abelian and solvable. By Corollary~\ref{cor:solvable-iff-normal-quotient}, $G$ is solvable. This covers the case $q \equiv 1 \pmod p$ as well, where $G$ need not be cyclic (Example~\ref{ex:order-pq-hypothesis-s3}).
+\srcline{not from class}
 \end{exbox}
 
 % ============================================================================
@@ -9183,7 +9196,6 @@ Part (1) is Proposition~\ref{prop:groups-order-pq}. In part (2), every group of 
 \end{proof}
 
 \begin{exbox}[{The Orders $6$, $15$ and $21$}]\label{ex:order-pq-6-15-21}
-\textit{(Not from class.)}
 \begin{enumerate}
     \item \emph{Order $6$ ($p = 2$, $q = 3$, $3 \equiv 1 \pmod 2$).} The solutions of $a^2 \equiv 1 \pmod 3$ are $a = 1$ and $a = 2 = -1$: two solutions, as $p = 2$. They give $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$ and, for $\alpha_{-1}(x) = -x$, the group $\mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z} \cong S_3$ of Example~\ref{ex:s3-external-semidirect}.
     \item \emph{Order $15$ ($p = 3$, $q = 5$, $5 \not\equiv 1 \pmod 3$).} Modulo $5$ the cubes of $1, 2, 3, 4$ are $1, 3, 2, 4$, so $a^3 \equiv 1 \pmod 5$ has the single solution $a = 1$. The only homomorphism $\mathbb{Z}/3\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/5\mathbb{Z})$ is the trivial one, in agreement with Example~\ref{ex:groups-order-15}: every group of order $15$ is cyclic.
@@ -9191,6 +9203,7 @@ Part (1) is Proposition~\ref{prop:groups-order-pq}. In part (2), every group of 
     \[ (x_1, 2k_1)(x_2, 2k_2) = (x_1 + 2^{2k_1}x_2,\ 2k_1 + 2k_2) = (x_1 + 4^{k_1}x_2,\ 2(k_1 + k_2)). \]
     So the groups of order $21$ are $\mathbb{Z}/21\mathbb{Z}$ and one non-abelian group.
 \end{enumerate}
+\srcline{not from class}
 \end{exbox}
 
 % ============================================================================
@@ -9671,7 +9684,8 @@ So the decomposition of Proposition~\ref{prop:idempotent-kernel-image} is $v = (
 \end{proof}
 
 \begin{exbox}[{An Idempotent That Is Not an Orthogonal Projection}]\label{ex:oblique-idempotent}
-\textit{(Not from class.)} On $\mathbb{R}^2$ let $\pi(x, y) = (x - y, 0)$. Then $\pi(\pi(x, y)) = \pi(x - y, 0) = (x - y, 0)$, so $\pi$ is idempotent, with image the $x$-axis and kernel the line $y = x$. Proposition~\ref{prop:idempotent-kernel-image} splits $(x, y) = (y, y) + (x - y, 0)$. The kernel is not perpendicular to the image, so $\pi$ is not the orthogonal projection onto the $x$-axis for the dot product (\ref{sec:invariant-inner-products}). An idempotent is a projection onto its image \emph{along} its kernel, and the kernel can be any complement of the image.
+On $\mathbb{R}^2$ let $\pi(x, y) = (x - y, 0)$. Then $\pi(\pi(x, y)) = \pi(x - y, 0) = (x - y, 0)$, so $\pi$ is idempotent, with image the $x$-axis and kernel the line $y = x$. Proposition~\ref{prop:idempotent-kernel-image} splits $(x, y) = (y, y) + (x - y, 0)$. The kernel is not perpendicular to the image, so $\pi$ is not the orthogonal projection onto the $x$-axis for the dot product (\ref{sec:invariant-inner-products}). An idempotent is a projection onto its image \emph{along} its kernel, and the kernel can be any complement of the image.
+\srcline{not from class}
 \end{exbox}
 
 \begin{lembox}[{Every Subspace Is the Image of an Idempotent}]\label{lem:subspace-image-idempotent}
@@ -9771,11 +9785,11 @@ so $\rho(1)v \notin V$. Hence $V$ is not a subrepresentation, and no subrepresen
 
 \begin{exbox}[{Maschke Fails When $|G| = 0$ in $k$}]\label{ex:maschke-fails-char-p}
 Let $p$ be prime, $G = \mathbb{Z}/p\mathbb{Z}$ and $\mathbb{F} = \mathbb{Z}/p\mathbb{Z}$, and define $\rho: G \to GL_2(\mathbb{F})$ by the same matrices $\rho(x) = \left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)$, now with $x \in \mathbb{F}$; the product rule above shows again that $\rho$ is a homomorphism. Then $\mathbb{F}e_1$ is a subrepresentation of $\mathbb{F}^2$, but there is no subrepresentation $V$ with $\mathbb{F}^2 = \mathbb{F}e_1 \oplus V$. Here $G$ is finite, but $|G| = p = 0$ in $\mathbb{F}$.
-\srcline{PS 9.4(2); recalled at the end of the lecture of 11/20 (\ref{sec:cyclic-representations})}
+\srcline{PS 9.4(2); lecture 11/20}
 \end{exbox}
 
 \begin{proof}
-\textit{(Problem Set 9, Problem 9.4(2), as submitted.)} \emph{$\mathbb{F}e_1$ is a subrepresentation.} $\mathbb{F}e_1$ is a subspace of $\mathbb{F}^2$, and for $x \in \mathbb{Z}/p\mathbb{Z}$ and $a \in \mathbb{F}$,
+\textit{(PS 9.4(2); recalled at the end of the lecture of 11/20 (\ref{sec:cyclic-representations}).)} \textit{(Problem Set 9, Problem 9.4(2), as submitted.)} \emph{$\mathbb{F}e_1$ is a subrepresentation.} $\mathbb{F}e_1$ is a subspace of $\mathbb{F}^2$, and for $x \in \mathbb{Z}/p\mathbb{Z}$ and $a \in \mathbb{F}$,
 \[ \rho(x)\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} 1 & x \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} a \\ 0 \end{pmatrix} \in \mathbb{F}e_1. \]
 \emph{No complementary subrepresentation.} Suppose $V \subseteq \mathbb{F}^2$ is a subspace with $\mathbb{F}^2 = \mathbb{F}e_1 \oplus V$. Then $\dim V = 1$, so $V = \mathbb{F}v$ for some $v = (b, c) \neq 0$. Since $\mathbb{F}e_1 \cap V = \{0\}$, $c \neq 0$; since $\mathbb{F}$ is a field, $c$ is invertible, and replacing $v$ by $c^{-1}v$ we may take $v = (a, 1)$. As before, the only element of $V$ with second coordinate $1$ is $v$. Since $1 \neq 0$ in $\mathbb{Z}/p\mathbb{Z}$,
 \[ \rho(1)\, v = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a \\ 1 \end{pmatrix} = \begin{pmatrix} a + 1 \\ 1 \end{pmatrix} \neq v, \]
@@ -9846,7 +9860,8 @@ so $\rho(1)v \notin V$. Hence no subrepresentation $V$ satisfies $\mathbb{F}^2 =
 %% <<< END ADDED
 
 \begin{rembox}[{Where Each Hypothesis Is Used}]\label{rem:maschke-hypotheses-used}
-\textit{(Not from class.)} In the proof of Maschke's theorem, $G$ finite makes $\sum_{h \in G}$ a finite sum, and $|G| \neq 0$ in $k$ allows the division by $|G|$ that gives $\pi(u) = u$ in Step 2. For $G = \mathbb{Z}$ there is no finite average to take. For $G = \mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$ the sum $\sum_h h^{-1}P(hu) = p \cdot u$ is $0$ for every $u \in U$. In both cases the examples show that no other construction can help either.
+In the proof of Maschke's theorem, $G$ finite makes $\sum_{h \in G}$ a finite sum, and $|G| \neq 0$ in $k$ allows the division by $|G|$ that gives $\pi(u) = u$ in Step 2. For $G = \mathbb{Z}$ there is no finite average to take. For $G = \mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$ the sum $\sum_h h^{-1}P(hu) = p \cdot u$ is $0$ for every $u \in U$. In both cases the examples show that no other construction can help either.
+\srcline{not from class}
 \end{rembox}
 
 % ============================================================================
@@ -10163,11 +10178,11 @@ Write vectors of $\mathbb{C}^n$ as columns, and let $e_1, \ldots, e_n$ be the st
     \item For every complex $n \times n$ matrix $Q$, $\langle x, y \rangle = y^\dagger Q x$ is a sesquilinear form on $\mathbb{C}^n$ (Definition~\ref{def:sesquilinear-form}). Every sesquilinear form on $\mathbb{C}^n$ is of this form for exactly one $Q$, namely $Q_{ij} = \langle e_j, e_i \rangle$.
     \item The form $\langle x, y \rangle = y^\dagger Q x$ is Hermitian (Definition~\ref{def:hermitian-form}) if and only if $Q$ is a Hermitian matrix (Definition~\ref{def:hermitian-matrix}).
 \end{enumerate}
-\srcline{MATH 420 slides, in the convention of Definition~\ref{def:sesquilinear-form}}
+\srcline{MATH 420 slides}
 \end{propbox}
 
 \begin{proof}
-\textit{Idea:} expand both vectors in the standard basis; the form is determined by its values $\langle e_j, e_i \rangle$.\par
+\textit{(MATH 420 slides, in the convention of Definition~\ref{def:sesquilinear-form}.)} \textit{Idea:} expand both vectors in the standard basis; the form is determined by its values $\langle e_j, e_i \rangle$.\par
 \textit{(Not from the slides; filled in.)}
 
 (1) \emph{$y^\dagger Q x$ is sesquilinear.} Written out, $y^\dagger Q x = \sum_{i,j} \bar y_i Q_{ij} x_j$. Each term is additive in $x$ and in $y$, and for $\lambda \in \mathbb{C}$
@@ -10204,8 +10219,10 @@ the form of Proposition~\ref{prop:sesquilinear-matrix} with $Q = I$; it is Hermi
 with equality only if every $x_k$ and $y_k$ is $0$, i.e.\ $p = 0$. So the form is positive definite, and $\langle p, p \rangle$ is the squared Euclidean length of $p$ read as the vector $(x_1, y_1, \ldots, x_n, y_n) \in \mathbb{R}^{2n}$. The standard basis is orthonormal. The vector $(1, i)$ of Example~\ref{ex:complex-dot-product}, of length $0$ for the dot product, has
 \[ \langle (1, i), (1, i) \rangle = 1 \cdot \bar 1 + i \cdot \bar i = 1 + i(-i) = 2, \]
 so $\tfrac{1}{\sqrt2}(1, i)$ is an orthonormal basis of the line $\mathbb{C}(1, i)$.
-\srcline{MATH 420 slides, there written $\bar p_1 q_1 + \cdots + \bar p_n q_n$ (see the remark \emph{Which Variable Is Conjugate-Linear} below)}
+\srcline{MATH 420 slides}
 \end{exbox}
+
+\textit{Source note.} MATH 420 slides, there written $\bar p_1 q_1 + \cdots + \bar p_n q_n$ (see the remark \emph{Which Variable Is Conjugate-Linear} below).
 
 \begin{propbox}[{Orthogonal Projection for a Positive Definite Hermitian Form}]\label{prop:orthogonal-projection-hermitian}
 Let $V$ be a complex vector space with a positive definite Hermitian form $\langle\ ,\ \rangle$, and let $u_1, \ldots, u_k$ be an orthogonal basis of a subspace $L$: the $u_i$ are nonzero and $\langle u_i, u_j \rangle = 0$ for $i \neq j$. Define
@@ -10215,11 +10232,11 @@ Let $V$ be a complex vector space with a positive definite Hermitian form $\lang
     \item $v - P_L(v)$ is orthogonal to $L$: $\langle v - P_L(v), u \rangle = 0$ for every $u \in L$.
 \end{enumerate}
 This is the formula of the real case (proof of Proposition~\ref{prop:orthogonal-complement-direct-sum}), written for an orthogonal rather than an orthonormal basis.
-\srcline{MATH 420 slides, in the convention of Definition~\ref{def:sesquilinear-form}}
+\srcline{MATH 420 slides}
 \end{propbox}
 
 \begin{proof}
-\textit{Idea:} the coefficient of $u_i$ is chosen so that $v - P_L(v)$ has no $u_i$-component; the other $u_j$ do not interfere, being orthogonal to $u_i$.\par
+\textit{(MATH 420 slides, in the convention of Definition~\ref{def:sesquilinear-form}.)} \textit{Idea:} the coefficient of $u_i$ is chosen so that $v - P_L(v)$ has no $u_i$-component; the other $u_j$ do not interfere, being orthogonal to $u_i$.\par
 \textit{(Not from the slides; filled in.)} The denominators $\langle u_i, u_i \rangle$ are positive real numbers, since $u_i \neq 0$ and the form is positive definite (Definition~\ref{def:positive-definite-hermitian}).
 
 (1) Each coefficient $v \mapsto \langle v, u_i \rangle / \langle u_i, u_i \rangle$ is linear in $v$, because the form is linear in its first variable (Definition~\ref{def:sesquilinear-form}); hence $P_L$ is linear, and $P_L(v)$, a linear combination of $u_1, \ldots, u_k$, lies in $L$. If $v = \sum_j a_j u_j \in L$, then by orthogonality $\langle v, u_i \rangle = \sum_j a_j \langle u_j, u_i \rangle = a_i \langle u_i, u_i \rangle$, so the coefficient of $u_i$ in $P_L(v)$ is $a_i$, and $P_L(v) = v$.
@@ -10314,8 +10331,10 @@ Only the second direction uses Maschke's theorem. Over a field in which $|G| \ne
 Let $V$ be a vector space and $V_1, \ldots, V_r$ subspaces of $V$. $V$ is the \textbf{direct sum} of $V_1, \ldots, V_r$, written $V = V_1 \oplus \cdots \oplus V_r$, if every $v \in V$ can be written in exactly one way as
 \[ v = v_1 + \cdots + v_r \qquad (v_i \in V_i). \]
 For $r = 0$ the empty sum is $0$, so $V = \{0\}$.
-\srcline{not from class; used in Corollary~\ref{cor:direct-sum-of-simples}}
+\srcline{not from class}
 \end{defbox}
+
+\textit{Source note.} Not from class; used in Corollary~\ref{cor:direct-sum-of-simples}.
 
 For $r = 2$ this is Definition~\ref{def:internal-direct-sum-subspaces}. The existence of the sums says $V_1 + V_2 = V$. Uniqueness implies $V_1 \cap V_2 = \{0\}$: for $x \in V_1 \cap V_2$, $0 = 0 + 0 = x + (-x)$ are two ways of writing $0$, so $x = 0$; conversely, $V_1 \cap V_2 = \{0\}$ gives uniqueness by the paragraph after Definition~\ref{def:internal-direct-sum-subspaces}.
 
@@ -10369,11 +10388,11 @@ with every $V_i$ a simple subrepresentation of $U$ or of $U'$, hence a $G$-stabl
 
 \begin{corbox}[{Every Representation Is a Direct Sum of Simples, over Any Field with $|G| \neq 0$}]\label{cor:direct-sum-of-simples-general}
 Let $G$ be finite, $k$ a field in which $|G| \neq 0$, and $V$ a finite-dimensional representation of $G$ over $k$. Then $V = V_1 \oplus \cdots \oplus V_r$ (Definition~\ref{def:direct-sum-several}) for simple subrepresentations $V_1, \ldots, V_r$ of $V$, with $r = 0$ when $V = \{0\}$.
-\srcline{not from class; available since PS 9.3 proves Maschke's theorem}
+\srcline{not from class}
 \end{corbox}
 
 \begin{proof}
-\textit{(Not from class.)} The proof of Corollary~\ref{cor:direct-sum-of-simples} applies word for word after one renaming: ``real representation'' becomes ``representation over $k$'', and Maschke's theorem over $\mathbb{R}$ (Corollary~\ref{cor:maschke-real}) becomes Maschke's theorem (Theorem~\ref{thm:maschke}), proved in \ref{sec:maschke} for every field in which $|G| \neq 0$. That citation is the only place where the field enters. Every other step uses only dimensions and direct sums, which work over any field.
+\textit{(Not from class; available since PS 9.3 proves Maschke's theorem.)} \textit{(Not from class.)} The proof of Corollary~\ref{cor:direct-sum-of-simples} applies word for word after one renaming: ``real representation'' becomes ``representation over $k$'', and Maschke's theorem over $\mathbb{R}$ (Corollary~\ref{cor:maschke-real}) becomes Maschke's theorem (Theorem~\ref{thm:maschke}), proved in \ref{sec:maschke} for every field in which $|G| \neq 0$. That citation is the only place where the field enters. Every other step uses only dimensions and direct sums, which work over any field.
 \end{proof}
 
 \begin{exbox}[{$S_3$ on $\mathbb{R}^3$ as a Sum of Simples}]\label{ex:s3-r3-simples}
@@ -10456,9 +10475,10 @@ Let $A$ be an $m \times n$ matrix and let $B$ be an $n \times m$ matrix. Then $\
 \end{proof}
 
 \begin{exbox}[{Products of Different Sizes with the Same Trace}]\label{ex:trace-rectangular}
-\textit{(Not from class.)} Take $m = 1$ and $n = 2$, with
+Take $m = 1$ and $n = 2$, with
 \[ A = \begin{pmatrix} 1 & 2 \end{pmatrix}, \qquad B = \begin{pmatrix} 3 \\ 4 \end{pmatrix}, \qquad AB = \begin{pmatrix} 11 \end{pmatrix}, \qquad BA = \begin{pmatrix} 3 & 6 \\ 4 & 8 \end{pmatrix}. \]
 The matrices $AB$ and $BA$ have different sizes, but $\operatorname{Tr}(AB) = 11 = 3 + 8 = \operatorname{Tr}(BA)$, as Proposition~\ref{prop:trace-ab-ba} says.
+\srcline{not from class}
 \end{exbox}
 
 \begin{corbox}[{Conjugate Matrices Have the Same Trace}]\label{cor:trace-conjugation}
@@ -10513,7 +10533,8 @@ The trace does not depend on the basis (the paragraph after Definition~\ref{def:
 \end{proof}
 
 \begin{exbox}[{The Trace Sees the Dimension Only Modulo $p$}]\label{ex:trace-idempotent-char-p}
-\textit{(Not from class.)} Over $\mathbb{F}_2$, the identity map of $\mathbb{F}_2^2$ is idempotent with image of dimension $2$, but its trace is $1 + 1 = 0$. In general, over a field in which $p = 0$, Proposition~\ref{prop:trace-idempotent} determines $\dim \operatorname{Im}\pi$ only modulo $p$. This is why Worksheet 15 assumes $\mathbb{Q} \subseteq k$: then $r \cdot 1_k = r$, and the trace recovers the dimension (the remark \emph{Why the Field Should Contain $\mathbb{Q}$} below).
+Over $\mathbb{F}_2$, the identity map of $\mathbb{F}_2^2$ is idempotent with image of dimension $2$, but its trace is $1 + 1 = 0$. In general, over a field in which $p = 0$, Proposition~\ref{prop:trace-idempotent} determines $\dim \operatorname{Im}\pi$ only modulo $p$. This is why Worksheet 15 assumes $\mathbb{Q} \subseteq k$: then $r \cdot 1_k = r$, and the trace recovers the dimension (the remark \emph{Why the Field Should Contain $\mathbb{Q}$} below).
+\srcline{not from class}
 \end{exbox}
 
 \begin{defbox}[{Invariant Vectors}]\label{def:invariant-vectors}
@@ -10592,8 +10613,10 @@ On the other hand $g\pi(v) = \pi(v)$, since $\pi(v) \in V^G$. So $\pi(gv) = g\pi
 
 \begin{rembox}[{Only $|G|$ Was Inverted}]\label{rem:averaging-is-maschke}
 So far the only integer divided by is $|G|$, so WS 15.3--15.5 hold whenever $|G| \neq 0$ in the field, exactly Maschke's hypothesis. Since $\operatorname{Ker}(\pi)$ is also a subrepresentation (Corollary~\ref{cor:invariants-split-off}), this is Maschke's theorem for the particular subrepresentation $V^G$, with an explicit complement and no choice of an auxiliary idempotent. The problem set shows how to use the same idea to split off any subrepresentation: the proof of Maschke's theorem (Theorem~\ref{thm:maschke}) averages an arbitrary idempotent onto $U$, and Proposition~\ref{prop:hom-invariants} below shows that this is the averaging operator of another representation.
-\srcline{lecture 11/9; the subrepresentation $\operatorname{Ker}\pi$ and the last sentence not from class}
+\srcline{lecture 11/9}
 \end{rembox}
+
+\textit{Source note.} Lecture 11/9; the subrepresentation $\operatorname{Ker}\pi$ and the last sentence not from class.
 
 \begin{propbox}[{Homomorphisms Are the Invariant Vectors of $\operatorname{Hom}(W, W')$}]\label{prop:hom-invariants}
 Let $W$ and $W'$ be representations of $G$ over $k$, and let $\operatorname{Hom}(W, W')$ be the vector space of linear maps $W \to W'$.
@@ -10643,11 +10666,11 @@ Let a finite group $G$ act on a finite set $X$, let $\mathbb{Q} \subseteq k$, an
     \item The orbit sums $s_O = \sum_{x \in O} e_x$, one for each orbit $O$, form a basis of $(kX)^G$. So $\dim (kX)^G = |G \backslash X|$, the number of orbits.
     \item Hence $|G \backslash X| = \frac{1}{|G|}\sum_{g \in G} |\operatorname{Fix}(g)|$, which is Burnside's Lemma (Theorem~\ref{thm:burnsides-lemma}).
 \end{enumerate}
-\srcline{the connection raised in lecture 11/9; the proof not from class}
+\srcline{lecture 11/9}
 \end{corbox}
 
 \begin{proof}
-\textit{Idea:} Counting orbits is counting invariant vectors of a permutation representation.\par
+\textit{(The connection raised in lecture 11/9; the proof not from class.)} \textit{Idea:} Counting orbits is counting invariant vectors of a permutation representation.\par
 \textit{(Not from class; filled in.)} \textbf{(1)} In the basis $(e_x)_{x \in X}$, $g e_x = e_{gx}$, so the matrix of $\rho(g)$ has the entry $1$ in position $(gx, x)$ and $0$ elsewhere in column $x$. Its diagonal entry in position $(x, x)$ is $1$ if $gx = x$ and $0$ otherwise, so $\operatorname{Tr}\rho_{kX}(g) = |\operatorname{Fix}(g)| \cdot 1_k = |\operatorname{Fix}(g)|$.
 
 \textbf{(2)} Let $v = \sum_{x} a_x e_x$. Then, substituting $y = gx$,
@@ -10664,15 +10687,16 @@ Worksheet 15's formula therefore generalizes Burnside's Lemma from permutation r
 \subsection{Examples}\label{sub:invariants-examples}
 
 \begin{exbox}[{The Trivial and the Sign Representation}]\label{ex:invariants-trivial-sign}
-\textit{(Not from class.)} Let $\mathbb{Q} \subseteq k$.
+Let $\mathbb{Q} \subseteq k$.
 \begin{enumerate}
     \item If $G$ acts trivially on $V$ (Example~\ref{ex:trivial-representation}), then $V^G = V$ and $\operatorname{Tr}\rho_V(g) = \operatorname{Tr}(\mathrm{id}_V) = \dim V$ for every $g$, so Theorem~\ref{thm:dim-invariants-character} reads $\dim V = \frac{1}{|G|} \cdot |G| \dim V$.
     \item Let $n \geq 2$ and let $S_n$ act on $k$ by $\sigma \cdot c = \sgn(\sigma)\,c$, the sign representation (Example~\ref{ex:one-dimensional-representations}). An invariant $c$ satisfies $-c = (1\,2) \cdot c = c$, so $2c = 0$ and $c = 0$: $k^{S_n} = \{0\}$. On the other side $\operatorname{Tr}\rho(\sigma) = \sgn(\sigma)$, and $\sum_{\sigma \in S_n} \sgn(\sigma) = 0$, since the even permutations $A_n$ and the odd permutations, the other coset of $A_n$, have $n!/2$ elements each. So both sides of the theorem are $0$.
 \end{enumerate}
+\srcline{not from class}
 \end{exbox}
 
 \begin{exbox}[{$S_3$ on $k^3$ and on the Plane $x + y + z = 0$}]\label{ex:invariants-s3}
-\textit{(Not from class.)} Let $\mathbb{Q} \subseteq k$, let $S_3$ permute the coordinates of $k^3 = k\{1,2,3\}$, and let $U_1 = k(1,1,1)$ and $U_2 = \{x + y + z = 0\}$ be the subrepresentations of Example~\ref{ex:subrepresentations-k123}.
+Let $\mathbb{Q} \subseteq k$, let $S_3$ permute the coordinates of $k^3 = k\{1,2,3\}$, and let $U_1 = k(1,1,1)$ and $U_2 = \{x + y + z = 0\}$ be the subrepresentations of Example~\ref{ex:subrepresentations-k123}.
 \begin{enumerate}
     \item \emph{Invariant vectors.} If $(x, y, z)$ is invariant, then $(1\,2)$ gives $x = y$ and $(2\,3)$ gives $y = z$; conversely the constant vectors are fixed by every permutation. So $(k^3)^{S_3} = U_1$.
     \item \emph{The averaging operator.} As $\sigma$ runs over $S_3$, $\sigma(i)$ takes each value $j$ exactly twice: the $\sigma$ with $\sigma(i) = j$ form a coset of the stabilizer of $i$, which has $2$ elements. So
@@ -10684,6 +10708,7 @@ Worksheet 15's formula therefore generalizes Burnside's Lemma from permutation r
     \[ \frac16\big(2 + 3 \cdot 0 + 2 \cdot (-1)\big) = 0 = \dim U_2^{S_3}, \]
     as it must be: $U_2^{S_3} = U_2 \cap U_1 = \{0\}$, since $3 \neq 0$ in $k$.
 \end{enumerate}
+\srcline{not from class}
 \end{exbox}
 
 %% >>> ADDED: figure (not from lecture)
@@ -10750,11 +10775,11 @@ Let $V$ be a finite-dimensional representation of $G$. Then
     \item $\chi_V(e) = (\dim V) \cdot 1_k$;
     \item $\chi_V(hgh^{-1}) = \chi_V(g)$ for all $g, h \in G$: the character is constant on each conjugacy class.
 \end{enumerate}
-\srcline{lecture 11/9; part (2) is also WS 18.1; part (1) not from class}
+\srcline{lecture 11/9; WS 18.1}
 \end{propbox}
 
 \begin{proof}
-\textbf{(1)} \textit{(Not from class; filled in.)} $e$ acts as the identity (action axiom), whose matrix in any basis is the identity matrix, of trace $(\dim V) \cdot 1_k$.
+\textit{(Lecture 11/9; part (2) is also WS 18.1; part (1) not from class.)} \textbf{(1)} \textit{(Not from class; filled in.)} $e$ acts as the identity (action axiom), whose matrix in any basis is the identity matrix, of trace $(\dim V) \cdot 1_k$.
 
 \textbf{(2)} \textit{(Board 11/9.)} Since $\rho_V$ is a homomorphism (Representations Are Homomorphisms to $GL(V)$, Proposition~\ref{prop:representations-homomorphisms-glv}),
 \[ \rho_V(hgh^{-1}) = \rho_V(h)\,\rho_V(g)\,\rho_V(h)^{-1}, \]
@@ -10767,11 +10792,11 @@ So a character is determined by one value per conjugacy class, which is much les
 Let $W = U \oplus V$ (Definition~\ref{def:internal-direct-sum-subspaces}) be finite-dimensional, let $A: U \to U$ and $B: V \to V$ be linear, and let $A \oplus B: W \to W$, $u + v \mapsto Au + Bv$. Then
 \[ \operatorname{Tr}(A \oplus B) = \operatorname{Tr}(A) + \operatorname{Tr}(B). \]
 Consequently, if $W = U \oplus V$ is a representation of $G$ and $U$, $V$ are subrepresentations, then $\chi_W = \chi_U + \chi_V$.
-\srcline{lecture 11/9; also WS 18.2, with the block matrix on the board 11/18}
+\srcline{lecture 11/9; WS 18.2; board 11/18}
 \end{propbox}
 
 \begin{proof}
-\textit{(Board 11/9; the statement was proposed in class and then proved.)} By Bases of a Direct Sum (Proposition~\ref{prop:bases-direct-sum}), a basis $u_1, \ldots, u_m$ of $U$ and a basis $v_1, \ldots, v_n$ of $V$ together form a basis of $W$. In it the matrix of $A \oplus B$ is block diagonal, $\left(\begin{smallmatrix} A & 0 \\ 0 & B \end{smallmatrix}\right)$: $A$ uses nothing from $V$, and $B$ nothing from $U$. Its diagonal is that of $A$ followed by that of $B$, so the traces add. For representations, $\rho_W(g) = \rho_U(g) \oplus \rho_V(g)$, since $g(u + v) = gu + gv$ with $gu \in U$ and $gv \in V$ (WS 14.2, Proposition~\ref{prop:direct-sum-block-diagonal}). Taking traces gives $\chi_W(g) = \chi_U(g) + \chi_V(g)$.
+\textit{(Lecture 11/9; also WS 18.2, with the block matrix on the board 11/18.)} \textit{(Board 11/9; the statement was proposed in class and then proved.)} By Bases of a Direct Sum (Proposition~\ref{prop:bases-direct-sum}), a basis $u_1, \ldots, u_m$ of $U$ and a basis $v_1, \ldots, v_n$ of $V$ together form a basis of $W$. In it the matrix of $A \oplus B$ is block diagonal, $\left(\begin{smallmatrix} A & 0 \\ 0 & B \end{smallmatrix}\right)$: $A$ uses nothing from $V$, and $B$ nothing from $U$. Its diagonal is that of $A$ followed by that of $B$, so the traces add. For representations, $\rho_W(g) = \rho_U(g) \oplus \rho_V(g)$, since $g(u + v) = gu + gv$ with $gu \in U$ and $gv \in V$ (WS 14.2, Proposition~\ref{prop:direct-sum-block-diagonal}). Taking traces gives $\chi_W(g) = \chi_U(g) + \chi_V(g)$.
 \end{proof}
 
 \begin{lembox}[{Isomorphic Representations Have the Same Character}]\label{lem:isomorphic-same-character}
@@ -10787,8 +10812,10 @@ so $M$ is also the matrix of $\rho_{V'}(g)$ in the basis $\beta(v_1), \ldots, \b
 
 \begin{defbox}[{Character Table}]\label{def:character-table}
 The \textbf{character table} of $G$ has one column for each conjugacy class of $G$, headed by a representative of the class, and one row for each simple representation (Definition~\ref{def:simple-representation}) of $G$, up to isomorphism. The entry is the value of the character $\chi_S$ on the class. Characters of other representations are sometimes listed in further rows below a line, as in Example~\ref{ex:characters-s3}.
-\srcline{lecture 11/9; WS 18, which fixes that only simple representations are listed, each isomorphism class once}
+\srcline{lecture 11/9; WS 18}
 \end{defbox}
+
+\textit{Source note.} Lecture 11/9; WS 18, which fixes that only simple representations are listed, each isomorphism class once.
 
 \begin{exbox}[{Characters of $S_3$ over $\mathbb{R}$}]\label{ex:characters-s3}
 The conjugacy classes of $S_3$ are the cycle types (Conjugacy Classes in $S_n$ Are Cycle Types, Theorem~\ref{thm:conjugacy-classes-sn-cycle-types}), with representatives $e$, $(1\,2)$, $(1\,2\,3)$ and sizes $1$, $3$, $2$.
@@ -10857,7 +10884,8 @@ permutation, $\mathbb{R}^3 = \mathbb{R}(1,1,1) \oplus U$ & $3$ & $1$ & $0$
 %% <<< END ADDED
 
 \begin{exbox}[{The Character of $k\{1,2,3\}$ Is Not a Homomorphism}]\label{ex:character-not-homomorphism}
-\textit{(Not from class.)} The character of the permutation representation $k\{1,2,3\} = k^3$ of $S_3$ takes the values $3$, $1$, $0$ on the three conjugacy classes (Example~\ref{ex:characters-s3}). The value $0$ at $(1\,2\,3)$ does not lie in $k^\times$, so $\chi$ is not a homomorphism $S_3 \to k^\times$. And $\chi(e) = 3 \neq 1$ whenever $2 \neq 0$ in $k$, while a homomorphism sends $e$ to $1$.
+The character of the permutation representation $k\{1,2,3\} = k^3$ of $S_3$ takes the values $3$, $1$, $0$ on the three conjugacy classes (Example~\ref{ex:characters-s3}). The value $0$ at $(1\,2\,3)$ does not lie in $k^\times$, so $\chi$ is not a homomorphism $S_3 \to k^\times$. And $\chi(e) = 3 \neq 1$ whenever $2 \neq 0$ in $k$, while a homomorphism sends $e$ to $1$.
+\srcline{not from class}
 \end{exbox}
 
 % ============================================================================
@@ -11126,11 +11154,11 @@ The notation gives a check of index computations: every index that is summed occ
 \begin{propbox}[{The Character of $\operatorname{Hom}(V, W)$}]\label{prop:character-hom}
 Let $V$ and $W$ be finite-dimensional representations of $G$ over $k$. Then for every $g \in G$
 \[ \chi_{\operatorname{Hom}(V, W)}(g) = \operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = \big(\operatorname{Tr}\rho_W(g)\big)\big(\operatorname{Tr}\rho_V(g^{-1})\big) = \chi_W(g)\,\chi_V(g^{-1}). \]
-\srcline{WS 16.2, with $V$ and $W$ exchanged (see the transcription note above); board 11/11}
+\srcline{WS 16.2; board 11/11}
 \end{propbox}
 
 \begin{proof}
-\textit{(Board 11/11.)} Choose a basis of $V$ and a basis of $W$, and let $n = \dim V$, $m = \dim W$. Then a linear map $\alpha: V \to W$ is an $m \times n$ matrix $X$, and composition of maps is the product of matrices (the remark \emph{Matrices of Compositions}). So $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$ is the matrix $RXS$, with $R$ the matrix of $\rho_W(g)$ and $S$ the matrix of $\rho_V(g^{-1})$. By Lemma~\ref{lem:trace-sandwich}, the trace of $\alpha \mapsto g \ast \alpha$ is $\operatorname{Tr}(R)\operatorname{Tr}(S) = \chi_W(g)\,\chi_V(g^{-1})$ (Definition~\ref{def:character-representation}).
+\textit{(WS 16.2, with $V$ and $W$ exchanged (see the transcription note above); board 11/11.)} \textit{(Board 11/11.)} Choose a basis of $V$ and a basis of $W$, and let $n = \dim V$, $m = \dim W$. Then a linear map $\alpha: V \to W$ is an $m \times n$ matrix $X$, and composition of maps is the product of matrices (the remark \emph{Matrices of Compositions}). So $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$ is the matrix $RXS$, with $R$ the matrix of $\rho_W(g)$ and $S$ the matrix of $\rho_V(g^{-1})$. By Lemma~\ref{lem:trace-sandwich}, the trace of $\alpha \mapsto g \ast \alpha$ is $\operatorname{Tr}(R)\operatorname{Tr}(S) = \chi_W(g)\,\chi_V(g^{-1})$ (Definition~\ref{def:character-representation}).
 \end{proof}
 
 Worksheet 16.2 prints $\operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = (\operatorname{Tr}\rho_V(g))(\operatorname{Tr}\rho_W(g^{-1}))$, which is the formula for the action as the worksheet prints it. The two versions differ by replacing $g$ with $g^{-1}$, and they have the same sum over $G$. So the theorem holds as printed.
@@ -11159,7 +11187,7 @@ In the setting of Theorem~\ref{thm:dim-hom-g}, $\dim \operatorname{Hom}_G(V, W) 
 \end{proof}
 
 \begin{exbox}[{$\operatorname{Hom}_G$ for $S_3$}]\label{ex:hom-g-s3}
-\textit{(Not from class.)} Over $\mathbb{R}$, take the characters of $S_3$ from Example~\ref{ex:characters-s3}, as values on the classes of $e$, $(1\,2)$, $(1\,2\,3)$, of sizes $1$, $3$, $2$: trivial $(1, 1, 1)$, sign $(1, -1, 1)$, $U = (1,1,1)^\perp$ with $(2, 0, -1)$, and $\mathbb{R}^3$ with $(3, 1, 0)$. In $S_3$ the inverse $g^{-1}$ has the same cycle type as $g$, so it is conjugate to $g$ (Theorem~\ref{thm:conjugacy-classes-sn-cycle-types}), and $\chi(g^{-1}) = \chi(g)$ for every character (Proposition~\ref{prop:character-class-function}(2)). A sum over $G$ of a function that is constant on conjugacy classes is the sum over the classes of (class size) $\times$ (value). So Theorem~\ref{thm:dim-hom-g} gives $\dim\operatorname{Hom}_{S_3}(V, W) = \frac16\big(\chi_V(e)\chi_W(e) + 3\,\chi_V((1\,2))\chi_W((1\,2)) + 2\,\chi_V((1\,2\,3))\chi_W((1\,2\,3))\big)$:
+Over $\mathbb{R}$, take the characters of $S_3$ from Example~\ref{ex:characters-s3}, as values on the classes of $e$, $(1\,2)$, $(1\,2\,3)$, of sizes $1$, $3$, $2$: trivial $(1, 1, 1)$, sign $(1, -1, 1)$, $U = (1,1,1)^\perp$ with $(2, 0, -1)$, and $\mathbb{R}^3$ with $(3, 1, 0)$. In $S_3$ the inverse $g^{-1}$ has the same cycle type as $g$, so it is conjugate to $g$ (Theorem~\ref{thm:conjugacy-classes-sn-cycle-types}), and $\chi(g^{-1}) = \chi(g)$ for every character (Proposition~\ref{prop:character-class-function}(2)). A sum over $G$ of a function that is constant on conjugacy classes is the sum over the classes of (class size) $\times$ (value). So Theorem~\ref{thm:dim-hom-g} gives $\dim\operatorname{Hom}_{S_3}(V, W) = \frac16\big(\chi_V(e)\chi_W(e) + 3\,\chi_V((1\,2))\chi_W((1\,2)) + 2\,\chi_V((1\,2\,3))\chi_W((1\,2\,3))\big)$:
 \begin{center}
 \renewcommand{\arraystretch}{1.25}
 \begin{tabular}{l|cccc}
@@ -11268,11 +11296,11 @@ Let $G$ be a finite group, $V$ a finite-dimensional representation of $G$ over $
     \item $\rho_V(g)$ is diagonalizable, and its eigenvalues are $N$-th roots of unity. In particular they are complex numbers of norm $1$.
     \item In a basis of eigenvectors of $\rho_V(g)$, the matrix of $\rho_V(g^{-1})$ is the complex conjugate of the matrix of $\rho_V(g)$. Consequently $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
 \end{enumerate}
-\srcline{PS 10.1, which takes up WS 16.4--16.5 for the linear map $\rho_V(g)$}
+\srcline{PS 10.1; WS 16.4--16.5}
 \end{propbox}
 
 \begin{proof}
-\textit{Idea:} the minimal polynomial of $\rho_V(g)$ divides $z^N - 1$, which has $N$ distinct roots, all of norm $1$; and for a number of norm $1$ the inverse is the complex conjugate.\par
+\textit{(PS 10.1, which takes up WS 16.4--16.5 for the linear map $\rho_V(g)$.)} \textit{Idea:} the minimal polynomial of $\rho_V(g)$ divides $z^N - 1$, which has $N$ distinct roots, all of norm $1$; and for a number of norm $1$ the inverse is the complex conjugate.\par
 \textit{(Problem Set 10, Problem 10.1, as submitted.)}
 
 \textbf{(1)} Since $G$ is finite, $g$ has finite order: the powers $g, g^2, g^3, \dots$ lie in the finite set $G$, so $g^a = g^b$ for some $1 \le a < b$, and then $g^{b-a} = e$. Let $N \ge 1$ be the order of $g$, so $g^N = e$. Since $\rho_V \colon G \to \mathrm{GL}(V)$ is a group homomorphism,
@@ -11323,11 +11351,11 @@ Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations
     \item If $k = \mathbb{R}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\chi_W(g)$.
     \item If $k = \mathbb{C}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\overline{\chi_W(g)} = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \overline{\chi_V(g)}\,\chi_W(g)$.
 \end{enumerate}
-\srcline{WS 16: the simplification announced before WS 16.3; the formulas are printed in the recap at the top of Worksheet 17, over $\mathbb{C}$ in the second form}
+\srcline{WS 16; WS 17}
 \end{corbox}
 
 \begin{proof}
-\textit{(Filled in.)} Both fields contain $\mathbb{Q}$, so Theorem~\ref{thm:dim-hom-g} applies. In the second form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g)\,\chi_W(g^{-1})$, substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition~\ref{prop:character-inverse-real}) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary~\ref{cor:character-inverse-complex}). The second form over $\mathbb{C}$ comes in the same way from the first form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g^{-1})\,\chi_W(g)$, with $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
+\textit{(WS 16: the simplification announced before WS 16.3; the formulas are printed in the recap at the top of Worksheet 17, over $\mathbb{C}$ in the second form.)} \textit{(Filled in.)} Both fields contain $\mathbb{Q}$, so Theorem~\ref{thm:dim-hom-g} applies. In the second form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g)\,\chi_W(g^{-1})$, substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition~\ref{prop:character-inverse-real}) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary~\ref{cor:character-inverse-complex}). The second form over $\mathbb{C}$ comes in the same way from the first form of the theorem, $\frac{1}{|G|}\sum_g \chi_V(g^{-1})\,\chi_W(g)$, with $\chi_V(g^{-1}) = \overline{\chi_V(g)}$.
 \end{proof}
 
 % ============================================================================
@@ -11381,7 +11409,7 @@ Let $V$ be finite-dimensional with basis $e_1, \ldots, e_n$, and let $e_1^\ast, 
 Dual spaces of infinite-dimensional vector spaces are left aside in this course.
 
 \begin{exbox}[{A Dual Basis in $\mathbb{R}^2$}]\label{ex:dual-basis-r2}
-\textit{(Not from class.)} Let $e_1 = (1, 0)$ and $e_2 = (1, 1)$ in $\mathbb{R}^2$. Since $(x, y) = (x - y)\,e_1 + y\,e_2$, the dual basis is
+Let $e_1 = (1, 0)$ and $e_2 = (1, 1)$ in $\mathbb{R}^2$. Since $(x, y) = (x - y)\,e_1 + y\,e_2$, the dual basis is
 \[ e_1^\ast(x, y) = x - y, \qquad e_2^\ast(x, y) = y. \]
 \begin{enumerate}
     \item For the standard basis $(1, 0)$, $(0, 1)$ the first dual basis vector is $(x, y) \mapsto x$. So $e_1^\ast$ changes when $e_2$ is changed and $e_1$ is kept: the map $e_j^\ast$ depends on the whole basis, not only on $e_j$.
@@ -11492,7 +11520,7 @@ The map $f = \varphi^\vee(w_j^\ast)$ lies in $V^\vee$, so $f = \sum_i f(v_i)\,v_
 \textbf{Transcription note.} The handwritten notes of 11/13 have $\varphi(w_j) = \sum_j A_{ji}w_i$, the first version on the board. Since $\varphi$ is defined on $V$, the board was corrected, after a question, to $\varphi(v_i) = \sum_j A_{ji}w_j$, the formula of the proposition. The board writes $v_i^\vee$ and $w_j^\vee$ for the dual basis vectors. These notes write $v_i^\ast$ and $w_j^\ast$, as in Definition~\ref{def:dual-basis}, and keep $\vee$ for dual spaces, for dual maps, and for an arbitrary element $w^\vee$ of $W^\vee$.
 
 \begin{exbox}[{A Dual Map in Coordinates}]\label{ex:dual-map-coordinates}
-\textit{(Not from class.)} Let $\varphi: k^3 \to k^2$ be multiplication by $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{pmatrix}$, and let $w^\vee = a\,e_1^\ast + b\,e_2^\ast \in (k^2)^\vee$, the row $(a \ \ b)$ (the remark \emph{Duals in Coordinates}). Then $\varphi^\vee(w^\vee) = w^\vee \circ \varphi$ is the map $v \mapsto (a \ \ b)\,Av$, that is, the row
+Let $\varphi: k^3 \to k^2$ be multiplication by $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{pmatrix}$, and let $w^\vee = a\,e_1^\ast + b\,e_2^\ast \in (k^2)^\vee$, the row $(a \ \ b)$ (the remark \emph{Duals in Coordinates}). Then $\varphi^\vee(w^\vee) = w^\vee \circ \varphi$ is the map $v \mapsto (a \ \ b)\,Av$, that is, the row
 \[ (a \ \ b)\,A = (a + 4b \quad 2a + 5b \quad 3a + 6b). \]
 So on rows the dual map is multiplication by $A$ from the right. Its coordinates in the dual basis of $(k^3)^\vee$, written as a column, are
 \[ \begin{pmatrix} a + 4b \\ 2a + 5b \\ 3a + 6b \end{pmatrix} = \begin{pmatrix} 1 & 4 \\ 2 & 5 \\ 3 & 6 \end{pmatrix}\begin{pmatrix} a \\ b \end{pmatrix} = A^T\begin{pmatrix} a \\ b \end{pmatrix}, \]
@@ -11568,7 +11596,7 @@ The inverse belongs to $V^\vee$ alone and appears without $W$. It is forced by t
 \end{rembox}
 
 \begin{exbox}[{The Dual of a Rotation Representation}]\label{ex:dual-rotation}
-\textit{(Not from class.)} Let $G = \mathbb{Z}/4\mathbb{Z}$ act on $V = \mathbb{R}^2$, the generator $g$ acting by the rotation by $90^\circ$, $M = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$, so that $g(x, y) = (-y, x)$ and $g^{-1}(x, y) = (y, -x)$. For the dual basis $e_1^\ast(x, y) = x$, $e_2^\ast(x, y) = y$ of the standard basis:
+Let $G = \mathbb{Z}/4\mathbb{Z}$ act on $V = \mathbb{R}^2$, the generator $g$ acting by the rotation by $90^\circ$, $M = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$, so that $g(x, y) = (-y, x)$ and $g^{-1}(x, y) = (y, -x)$. For the dual basis $e_1^\ast(x, y) = x$, $e_2^\ast(x, y) = y$ of the standard basis:
 \[ (g \ast e_1^\ast)(x, y) = e_1^\ast(y, -x) = y, \qquad (g \ast e_2^\ast)(x, y) = e_2^\ast(y, -x) = -x. \]
 So $g \ast e_1^\ast = e_2^\ast$ and $g \ast e_2^\ast = -e_1^\ast$.
 \begin{enumerate}
@@ -11607,7 +11635,7 @@ So $g \ast e_1^\ast = e_2^\ast$ and $g \ast e_2^\ast = -e_1^\ast$.
 %% <<< END ADDED
 
 \begin{exbox}[{The Dual of a One-Dimensional Representation}]\label{ex:dual-one-dimensional}
-\textit{(Not from class.)} Let $V = k$ be the one-dimensional representation given by a character $\chi: G \to k^\times$, so $g$ acts as multiplication by $\chi(g)$ (Example~\ref{ex:one-dimensional-representations}). The $1 \times 1$ matrix of $\rho_V(g)$ is $\chi(g)$, and its inverse transpose is $\chi(g)^{-1}$. So $V^\vee$ is the one-dimensional representation given by the character $g \mapsto \chi(g)^{-1}$.
+Let $V = k$ be the one-dimensional representation given by a character $\chi: G \to k^\times$, so $g$ acts as multiplication by $\chi(g)$ (Example~\ref{ex:one-dimensional-representations}). The $1 \times 1$ matrix of $\rho_V(g)$ is $\chi(g)$, and its inverse transpose is $\chi(g)^{-1}$. So $V^\vee$ is the one-dimensional representation given by the character $g \mapsto \chi(g)^{-1}$.
 \begin{enumerate}
     \item For the trivial and the sign representation, $\chi(g) = \pm 1$ and $\chi(g)^{-1} = \chi(g)$: each of them has the same character as its dual.
     \item Let $G = \mathbb{Z}/3\mathbb{Z}$ and $k = \mathbb{C}$, with $\chi(j) = \omega^j$, $\omega = e^{2\pi i/3}$. The dual has the character $j \mapsto \omega^{-j} = \overline{\omega^j}$, the complex conjugate of $\chi$, as in Corollary~\ref{cor:character-dual-real-complex}(2). Here $V^\vee$ is not isomorphic to $V$. An isomorphism of representations $\varphi: V \to V^\vee$ (Definition~\ref{def:isomorphism-representations}) would satisfy $\varphi(\omega v) = \omega^{-1}\varphi(v)$ for the generator, that is, $\omega\,\varphi(v) = \omega^{-1}\varphi(v)$; with $\varphi(v) \neq 0$ this gives $\omega^2 = 1$, which is false.
@@ -11623,8 +11651,10 @@ So $g \ast e_1^\ast = e_2^\ast$ and $g \ast e_2^\ast = -e_1^\ast$.
 Let $V$ be a finite-dimensional vector space and $U \subseteq V$ a subspace. The \textbf{annihilator} of $U$ is
 \[ U^\perp = \{\lambda \in V^\vee : \lambda(u) = 0 \text{ for all } u \in U\}, \]
 a subset of the dual space $V^\vee$ (Definition~\ref{def:dual-space}).
-\srcline{PS 10.2, which defines $U^\perp$ without giving it a name; Axler calls it the annihilator and writes $U^0$}
+\srcline{PS 10.2}
 \end{defbox}
+
+\textit{Source note.} PS 10.2, which defines $U^\perp$ without giving it a name; Axler calls it the annihilator and writes $U^0$.
 
 The same symbol $U^\perp$ denotes the orthogonal complement for an inner product (Definition~\ref{def:orthogonal-complement}). That is a subspace of the same space as $U$ and needs an inner product; the annihilator lies in the dual space and needs no extra structure.
 
@@ -11784,8 +11814,10 @@ Let $V_1, \ldots, V_r$ be representations of a group $G$ over a field $k$. Their
 and with $G$ acting on each coordinate:
 \[ g\,(v_1, \ldots, v_r) = (gv_1, \ldots, gv_r). \]
 For $r = 0$ it is the zero space $\{0\}$.
-\srcline{lecture 11/16, for $r$ copies of one representation; the general case is not from class}
+\srcline{lecture 11/16}
 \end{defbox}
+
+\textit{Source note.} Lecture 11/16, for $r$ copies of one representation; the general case is not from class.
 
 The external direct sum is a representation of $G$: the vector space axioms, the linearity of each $g$ and the two action axioms hold for tuples because they hold in every coordinate.
 
@@ -11820,11 +11852,11 @@ Let $V_1, \ldots, V_r$ be finite-dimensional representations of a group $G$ over
     \item $\chi_E = \chi_{V_1} + \cdots + \chi_{V_r}$ for the characters (Definition~\ref{def:character-representation}).
 \end{enumerate}
 In particular $\dim V^{\oplus a} = a\dim V$ and $\chi_{V^{\oplus a}} = a\,\chi_V$.
-\srcline{not from class; the lecture of 11/9 proved the case of an internal direct sum of two subrepresentations (Proposition~\ref{prop:characters-add}); for two summands this is WS 18.2}
+\srcline{not from class; WS 18.2}
 \end{propbox}
 
 \begin{proof}
-\textit{Idea:} in a basis of $E$ made from bases of the $V_i$, every $g$ acts by a block diagonal matrix.\par
+\textit{(Not from class; the lecture of 11/9 proved the case of an internal direct sum of two subrepresentations (Proposition~\ref{prop:characters-add}); for two summands this is WS 18.2.)} \textit{Idea:} in a basis of $E$ made from bases of the $V_i$, every $g$ acts by a block diagonal matrix.\par
 \textit{(Not from class; filled in.)} For $v \in V_i$ let $\iota_i(v) \in E$ be the tuple with $v$ in position $i$ and $0$ in all other positions. Then $(v_1, \ldots, v_r) = \iota_1(v_1) + \cdots + \iota_r(v_r)$.
 
 \textbf{(1)} Choose a basis $B_i$ of $V_i$ for every $i$. The tuples $\iota_i(b)$ with $1 \leq i \leq r$ and $b \in B_i$ form a basis of $E$: writing each $v_i$ as a combination of $B_i$ expresses $(v_1, \ldots, v_r) = \sum_i \iota_i(v_i)$ as a combination of them, and the coefficients are unique because the $i$-th coordinate of the combination determines the coefficients of the $\iota_i(b)$, $b \in B_i$. The number of these tuples is $\sum_i \dim V_i$.
@@ -11840,11 +11872,11 @@ The last sentence of the statement is the case $V_1 = \cdots = V_a = V$.
 Let $G$ be a finite group, $k$ a field in which $|G| \neq 0$, and $V$ a finite-dimensional representation of $G$ over $k$. Then there are simple representations $S_1, \ldots, S_r$ of $G$ over $k$, with $S_i \not\cong S_j$ for $i \neq j$, and positive integers $a_1, \ldots, a_r$ such that
 \[ V \cong S_1^{\oplus a_1} \oplus \cdots \oplus S_r^{\oplus a_r}, \]
 with $r = 0$ when $V = \{0\}$.
-\srcline{lecture 11/16, used in the proof of Lemma~\ref{lem:simplicity-test}; the proof is not from class}
+\srcline{lecture 11/16}
 \end{corbox}
 
 \begin{proof}
-\textit{Idea:} decompose $V$ into simple subrepresentations and collect the summands that are isomorphic to each other.\par
+\textit{(Lecture 11/16, used in the proof of Lemma~\ref{lem:simplicity-test}; the proof is not from class.)} \textit{Idea:} decompose $V$ into simple subrepresentations and collect the summands that are isomorphic to each other.\par
 \textit{(Not from class; filled in.)} By Corollary~\ref{cor:direct-sum-of-simples-general}, $V = V_1 \oplus \cdots \oplus V_n$ (internal direct sum, Definition~\ref{def:direct-sum-several}) with simple subrepresentations $V_1, \ldots, V_n$.
 
 \emph{Choosing the $S_i$.} Being isomorphic is an equivalence relation on representations (Lemma~\ref{lem:isomorphism-representations-properties}(3)). It divides $V_1, \ldots, V_n$ into classes of mutually isomorphic summands. Choose one summand from each class and call the chosen ones $S_1, \ldots, S_r$. They are simple and pairwise non-isomorphic, and every $V_j$ is isomorphic to exactly one of them, say to $S_{i(j)}$. Let $a_i \geq 1$ be the number of $j$ with $i(j) = i$.
@@ -12066,8 +12098,10 @@ Let $G$ be a finite group. Let $S_1, \ldots, S_r$ be finite-dimensional simple r
 
 \begin{rembox}[{Over Other Fields the Weights Stay}]\label{rem:weights-stay}
 The proof of Proposition~\ref{prop:schur-complex} needs an eigenvalue of $\alpha$ in the ground field. Over $\mathbb{R}$ a linear map need not have a real eigenvalue, and for a simple real representation $S$ the number $\dim\operatorname{Hom}_G(S, S)$ can be larger than $1$. The lecture of 11/18 gave an example, the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$, where the number is $2$ (Example~\ref{ex:z4-real-complex}); the proofs are Problem 10.4 of Problem Set 10 (Example~\ref{ex:z4-rotation-worked}). So over $\mathbb{R}$, and over a general field containing $\mathbb{Q}$, the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ of Proposition~\ref{prop:dim-hom-sums-of-simples} must be kept.
-\srcline{lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the example is from the lecture of 11/18 and PS 10.4}
+\srcline{lecture 11/16; lecture 11/18; PS 10.4}
 \end{rembox}
+
+\textit{Source note.} Lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the example is from the lecture of 11/18 and PS 10.4.
 
 \subsection{\texorpdfstring{The Characters of $S_3$ and a Simplicity Test}{The Characters of S₃ and a Simplicity Test}}\label{sub:s3-simplicity-test}
 
@@ -12101,11 +12135,11 @@ Let $G$ be a finite group, $k$ a field containing $\mathbb{Q}$, and $S$, $T$ fin
     \item If $S \not\cong T$, then $\displaystyle\sum_{g \in G} \chi_S(g^{-1})\,\chi_T(g) = 0$.
     \item $\displaystyle\sum_{g \in G} \chi_S(g^{-1})\,\chi_S(g) = |G| \cdot \dim\operatorname{Hom}_G(S, S)$. If $k = \mathbb{C}$, this is $|G|$.
 \end{enumerate}
-\srcline{lecture 11/16, as the explanation of the numbers $0$ and $6$ in Example~\ref{ex:s3-characters-elementwise}}
+\srcline{lecture 11/16}
 \end{propbox}
 
 \begin{proof}
-\textit{(Lecture 11/16.)} Multiplying the formula of Theorem~\ref{thm:dim-hom-g} by $|G|$ gives $\sum_{g} \chi_V(g^{-1})\,\chi_W(g) = |G| \cdot \dim\operatorname{Hom}_G(V, W)$ for all $V$, $W$.
+\textit{(Lecture 11/16, as the explanation of the numbers $0$ and $6$ in Example~\ref{ex:s3-characters-elementwise}.)} \textit{(Lecture 11/16.)} Multiplying the formula of Theorem~\ref{thm:dim-hom-g} by $|G|$ gives $\sum_{g} \chi_V(g^{-1})\,\chi_W(g) = |G| \cdot \dim\operatorname{Hom}_G(V, W)$ for all $V$, $W$.
 
 \textbf{(1)} For $V = S$ and $W = T$ with $S \not\cong T$, $\operatorname{Hom}_G(S, T) = \{0\}$ (Corollary~\ref{cor:hom-nonisomorphic-simples}).
 
@@ -12132,11 +12166,11 @@ Each term is at least $1$: $a_i^2 \geq 1$ is the square of a positive integer, a
 
 \begin{corbox}[{Simplicity over $\mathbb{C}$}]\label{cor:simple-iff-hom-one-complex}
 Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{C}$. Then $V$ is simple if and only if $\dim\operatorname{Hom}_G(V, V) = 1$.
-\srcline{not from class; the two directions are WS 17.4 and the lemma of the board 11/16}
+\srcline{not from class; WS 17.4; board 11/16}
 \end{corbox}
 
 \begin{proof}
-\textit{(Not from class.)} If $V$ is simple, then $\dim\operatorname{Hom}_G(V, V) = 1$ by Schur's Lemma over $\mathbb{C}$ (Proposition~\ref{prop:schur-complex}). The converse is Lemma~\ref{lem:simplicity-test} for $k = \mathbb{C}$.
+\textit{(Not from class; the two directions are WS 17.4 and the lemma of the board 11/16.)} \textit{(Not from class.)} If $V$ is simple, then $\dim\operatorname{Hom}_G(V, V) = 1$ by Schur's Lemma over $\mathbb{C}$ (Proposition~\ref{prop:schur-complex}). The converse is Lemma~\ref{lem:simplicity-test} for $k = \mathbb{C}$.
 \end{proof}
 
 %% >>> ADDED: figure (not from lecture)
@@ -12177,7 +12211,7 @@ The lecture of 11/16 ended here. That these three are all the simple representat
 \end{exbox}
 
 \begin{exbox}[{The Permutation Representation of $S_3$ by Multiplicities}]\label{ex:s3-permutation-multiplicities}
-\textit{(Not from class.)} The permutation representation $\mathbb{R}^3$ of $S_3$ is the internal direct sum $\mathbb{R}(1,1,1) \oplus U$ (Example~\ref{ex:s3-r3-simples}), and $S_3$ acts trivially on $\mathbb{R}(1,1,1)$. So by Lemma~\ref{lem:internal-external-direct-sum}
+The permutation representation $\mathbb{R}^3$ of $S_3$ is the internal direct sum $\mathbb{R}(1,1,1) \oplus U$ (Example~\ref{ex:s3-r3-simples}), and $S_3$ acts trivially on $\mathbb{R}(1,1,1)$. So by Lemma~\ref{lem:internal-external-direct-sum}
 \[ \mathbb{R}^3 \cong \mathrm{triv}^{\oplus 1} \oplus \mathrm{sign}^{\oplus 0} \oplus U^{\oplus 1}, \]
 with multiplicities $a = (1, 0, 1)$ with respect to the three simple representations of Example~\ref{ex:s3-three-simple}, each of which has $\dim\operatorname{Hom}_{S_3}(S, S) = 1$. WS 17.3 (Proposition~\ref{prop:dim-hom-sums-of-simples}) gives:
 \begin{enumerate}
@@ -12360,8 +12394,10 @@ Worksheet 18 prints the character table of $S_3$ as an example. It consists of t
 Let $G$ be a group and $k$ a field. A function $\alpha: G \to k$ is a \textbf{class function} if it is constant on every conjugacy class:
 \[ \alpha(hgh^{-1}) = \alpha(g) \qquad \text{for all } g, h \in G. \]
 The class functions form a vector space over $k$ with pointwise addition and scalar multiplication, written $\operatorname{Cl}(G)$.
-\srcline{board 11/18, as the space $X$ of functions from the set of conjugacy classes of $G$ to $k$}
+\srcline{board 11/18}
 \end{defbox}
+
+\textit{Source note.} Board 11/18, as the space $X$ of functions from the set of conjugacy classes of $G$ to $k$.
 
 A class function is the same thing as a function on the set of conjugacy classes: its value on a class is its common value on the elements of the class. This is how the board describes the space. By WS 18.1 (Proposition~\ref{prop:character-class-function}(2)), the character $\chi_V$ of every representation is a class function.
 
@@ -12371,11 +12407,11 @@ A class function is the same thing as a function on the set of conjugacy classes
 Let $G$ be a finite group with conjugacy classes $\operatorname{Conj}(g_1), \ldots, \operatorname{Conj}(g_c)$. For $1 \leq i \leq c$ let $\delta_i: G \to k$ be the function with $\delta_i(g) = 1$ for $g \in \operatorname{Conj}(g_i)$ and $\delta_i(g) = 0$ otherwise. Then $\delta_1, \ldots, \delta_c$ is a basis of $\operatorname{Cl}(G)$ (Definition~\ref{def:class-function}). In particular
 \[ \dim\operatorname{Cl}(G) = c, \]
 the number of conjugacy classes of $G$.
-\srcline{board 11/18 (stated: the dimension is the number of conjugacy classes); the proof is not from class}
+\srcline{board 11/18}
 \end{propbox}
 
 \begin{proof}
-\textit{(Not from class; filled in.)} The conjugacy classes are the orbits of $G$ acting on itself by conjugation, so every element of $G$ lies in exactly one of them (Orbits Partition $X$, Proposition~\ref{prop:orbits-partition-x}).
+\textit{(Board 11/18 (stated: the dimension is the number of conjugacy classes); the proof is not from class.)} \textit{(Not from class; filled in.)} The conjugacy classes are the orbits of $G$ acting on itself by conjugation, so every element of $G$ lies in exactly one of them (Orbits Partition $X$, Proposition~\ref{prop:orbits-partition-x}).
 
 \emph{Each $\delta_i$ is a class function.} $hgh^{-1}$ lies in the same conjugacy class as $g$, so $\delta_i(hgh^{-1}) = \delta_i(g)$.
 
@@ -12390,11 +12426,11 @@ Let $G$ be a finite group with representatives $g_1, \ldots, g_c$ of its conjuga
     \item If $f: G \to k$ is a class function, then $\displaystyle\sum_{g \in G} f(g) = \sum_{i=1}^c |\operatorname{Conj}(g_i)|\,f(g_i)$.
     \item If $\alpha$ and $\beta$ are class functions, then so is $g \mapsto \alpha(g^{-1})\,\beta(g)$.
 \end{enumerate}
-\srcline{used on the board 11/18 in WS 18.3; the proof is not from class}
+\srcline{board 11/18; WS 18.3}
 \end{lembox}
 
 \begin{proof}
-\textit{(Not from class; filled in.)} \textbf{(1)} $G$ is the disjoint union of the classes $\operatorname{Conj}(g_i)$ (Proposition~\ref{prop:orbits-partition-x}), and $f$ takes the value $f(g_i)$ at each of the $|\operatorname{Conj}(g_i)|$ elements of $\operatorname{Conj}(g_i)$.
+\textit{(Used on the board 11/18 in WS 18.3; the proof is not from class.)} \textit{(Not from class; filled in.)} \textbf{(1)} $G$ is the disjoint union of the classes $\operatorname{Conj}(g_i)$ (Proposition~\ref{prop:orbits-partition-x}), and $f$ takes the value $f(g_i)$ at each of the $|\operatorname{Conj}(g_i)|$ elements of $\operatorname{Conj}(g_i)$.
 
 \textbf{(2)} Since $(hgh^{-1})^{-1} = hg^{-1}h^{-1}$,
 \[ \alpha\big((hgh^{-1})^{-1}\big)\,\beta(hgh^{-1}) = \alpha(hg^{-1}h^{-1})\,\beta(hgh^{-1}) = \alpha(g^{-1})\,\beta(g). \]
@@ -12416,11 +12452,11 @@ Let $G$ be a finite group and $k$ a field in which $|G| \neq 0$. For class funct
     \item $\langle c\alpha + c'\alpha', \beta \rangle = c\,\langle \alpha, \beta \rangle + c'\,\langle \alpha', \beta \rangle$ and $\langle \beta, c\alpha + c'\alpha' \rangle = c\,\langle \beta, \alpha \rangle + c'\,\langle \beta, \alpha' \rangle$;
     \item $\langle \alpha, \beta \rangle = \langle \beta, \alpha \rangle$.
 \end{enumerate}
-\srcline{board 11/18 (the symmetry, as a claim); part (1) is not from class}
+\srcline{board 11/18}
 \end{propbox}
 
 \begin{proof}
-\textbf{(1)} \textit{(Not from class; filled in.)} Each term $\alpha(g^{-1})\beta(g)$ of the sum is a product of one value of the first function and one value of the second.
+\textit{(Board 11/18 (the symmetry, as a claim); part (1) is not from class.)} \textbf{(1)} \textit{(Not from class; filled in.)} Each term $\alpha(g^{-1})\beta(g)$ of the sum is a product of one value of the first function and one value of the second.
 
 \textbf{(2)} \textit{(Board 11/18.)} Inversion $g \mapsto g^{-1}$ is a bijection of $G$. Substituting $h = g^{-1}$,
 \[ \langle \alpha, \beta \rangle = \frac{1}{|G|}\sum_{g \in G} \alpha(g^{-1})\,\beta(g) = \frac{1}{|G|}\sum_{h \in G} \alpha(h)\,\beta(h^{-1}) = \langle \beta, \alpha \rangle. \]
@@ -12556,7 +12592,7 @@ So, up to isomorphism, $G$ has at most $c$ finite-dimensional simple representat
 %% <<< END ADDED
 
 \begin{exbox}[{$S_3$ Has Exactly Three Simple Representations}]\label{ex:s3-all-simple}
-\textit{(Not from class.)} $S_3$ has $c = 3$ conjugacy classes, the cycle types (Theorem~\ref{thm:conjugacy-classes-sn-cycle-types}). The trivial representation, the sign representation and $U$ are three pairwise non-isomorphic simple representations, over every field $k$ containing $\mathbb{Q}$ (Example~\ref{ex:s3-three-simple}). By WS 18.4(2) (Corollary~\ref{cor:simples-at-most-classes}) there cannot be a fourth. This settles the question left open in Example~\ref{ex:s3-three-simple}.
+$S_3$ has $c = 3$ conjugacy classes, the cycle types (Theorem~\ref{thm:conjugacy-classes-sn-cycle-types}). The trivial representation, the sign representation and $U$ are three pairwise non-isomorphic simple representations, over every field $k$ containing $\mathbb{Q}$ (Example~\ref{ex:s3-three-simple}). By WS 18.4(2) (Corollary~\ref{cor:simples-at-most-classes}) there cannot be a fourth. This settles the question left open in Example~\ref{ex:s3-three-simple}.
 \begin{enumerate}
     \item \emph{Every simple representation of $S_3$ over $k$ is isomorphic to exactly one of $\mathrm{triv}$, $\mathrm{sign}$, $U$.} Otherwise it would be a fourth simple representation, not isomorphic to these three.
     \item \emph{Every finite-dimensional representation $V$ of $S_3$ over $k$ is isomorphic to $\mathrm{triv}^{\oplus a} \oplus \mathrm{sign}^{\oplus b} \oplus U^{\oplus m}$} for integers $a, b, m \geq 0$, by Corollary~\ref{cor:decomposition-multiplicities} and (1). Then $\chi_V = a\,\chi_{\mathrm{triv}} + b\,\chi_{\mathrm{sign}} + m\,\chi_U$ (Proposition~\ref{prop:character-external-direct-sum}). Each of the three has $\langle \chi_S, \chi_S \rangle = 1$ (Example~\ref{ex:s3-characters-elementwise}), so by orthogonality (Proposition~\ref{prop:rows-orthogonal})
@@ -12626,11 +12662,11 @@ Let $\mathbb{Z}/4\mathbb{Z}$ act on $\mathbb{R}^2$, and by the same formula on $
     \item $\mathbb{C}^2$ is not simple: $L = \operatorname{span}_{\mathbb{C}}\left\{\left(\begin{smallmatrix} 1 \\ -i \end{smallmatrix}\right)\right\}$ is a subrepresentation with $L \neq \{0\}$ and $L \neq \mathbb{C}^2$.
     \item $\mathbb{C}^2 = L \oplus L'$ with $L' = \operatorname{span}_{\mathbb{C}}\left\{\left(\begin{smallmatrix} 1 \\ i \end{smallmatrix}\right)\right\}$. On $L$ the element $k$ acts by the scalar $i^k$, and on $L'$ by $(-i)^k$.
 \end{enumerate}
-\srcline{PS 10.4(1)--(3); part (4) is from the lecture of 11/20 (Example~\ref{ex:z4-rotation-complexified})}
+\srcline{PS 10.4(1)--(3); lecture 11/20}
 \end{exbox}
 
 \begin{proof}
-\textit{(Problem Set 10, Problem 10.4, as submitted.)}
+\textit{(PS 10.4(1)--(3); part (4) is from the lecture of 11/20 (Example~\ref{ex:z4-rotation-complexified}).)} \textit{(Problem Set 10, Problem 10.4, as submitted.)}
 
 \textbf{(1)} Write $J = \rho(1) = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$, so that $J(a, b) = (-b, a)$.
 
@@ -12792,11 +12828,11 @@ Let $N \geq 1$.
     \item The $N$-th roots of unity (Definition~\ref{def:root-of-unity}) are exactly the $N$ numbers $e^{2\pi ik/N} = \cos\frac{2\pi k}{N} + i\sin\frac{2\pi k}{N}$ with $0 \leq k \leq N - 1$, and these are pairwise distinct. They are the powers $1, \omega, \omega^2, \ldots, \omega^{N-1}$ of $\omega = e^{2\pi i/N}$.
     \item Every $N$-th root of unity $\zeta$ satisfies $|\zeta| = 1$ and $\zeta^{-1} = \overline{\zeta}$.
 \end{enumerate}
-\srcline{board 11/20: part (1), stated, with the picture for $N = 5$; part (2) is used on the board for the trace of $g^{-1}$; the proofs are not from class}
+\srcline{board 11/20}
 \end{lembox}
 
 \begin{proof}
-\textit{(Not from class.)} \textbf{(1)} Each of the numbers is an $N$-th root of unity: $\big(e^{2\pi ik/N}\big)^N = e^{2\pi ik} = 1$. They are pairwise distinct: $e^{i\theta} = \cos\theta + i\sin\theta$ is the point of the unit circle at the angle $\theta$, and the angles $2\pi k/N$ for $0 \leq k \leq N - 1$ are $N$ different angles in $[0, 2\pi)$. There are no others: the $N$-th roots of unity are the zeros of the polynomial $z^N - 1$ of degree $N$, which has at most $N$ zeros (Axler 4.8). Finally $e^{2\pi ik/N} = \big(e^{2\pi i/N}\big)^k = \omega^k$.
+\textit{(Board 11/20: part (1), stated, with the picture for $N = 5$; part (2) is used on the board for the trace of $g^{-1}$; the proofs are not from class.)} \textit{(Not from class.)} \textbf{(1)} Each of the numbers is an $N$-th root of unity: $\big(e^{2\pi ik/N}\big)^N = e^{2\pi ik} = 1$. They are pairwise distinct: $e^{i\theta} = \cos\theta + i\sin\theta$ is the point of the unit circle at the angle $\theta$, and the angles $2\pi k/N$ for $0 \leq k \leq N - 1$ are $N$ different angles in $[0, 2\pi)$. There are no others: the $N$-th roots of unity are the zeros of the polynomial $z^N - 1$ of degree $N$, which has at most $N$ zeros (Axler 4.8). Finally $e^{2\pi ik/N} = \big(e^{2\pi i/N}\big)^k = \omega^k$.
 
 \textbf{(2)} $|\zeta|^N = |\zeta^N| = 1$, and $|\zeta|$ is a nonnegative real number, so $|\zeta| = 1$. Then $\zeta\overline{\zeta} = |\zeta|^2 = 1$, so $\zeta^{-1} = \overline{\zeta}$.
 \end{proof}
@@ -12824,11 +12860,11 @@ Write $\mathbb{C}_k$ for the vector space $\mathbb{C}$ with this action, so that
     \item $\mathbb{C}_k \not\cong \mathbb{C}_l$ for $k \neq l$.
     \item Every representation of $\mathbb{Z}/N\mathbb{Z}$ on $\mathbb{C}^1$ is equal to exactly one of $\rho_0, \ldots, \rho_{N-1}$.
 \end{enumerate}
-\srcline{lecture 11/20: for each $N$-th root of unity $\zeta$ there is a one-dimensional representation $\rho(j) = [\zeta^j]$; parts (2)--(4) are spelled out}
+\srcline{lecture 11/20}
 \end{propbox}
 
 \begin{proof}
-\textit{(Lecture 11/20; details filled in.)} \textbf{(1)} The number $\zeta = e^{2\pi ik/N}$ is an $N$-th root of unity (Lemma~\ref{lem:roots-of-unity}(1)). So the $1 \times 1$ matrix $g = [\zeta]$ satisfies $g^N = [\zeta^N] = [1]$, and by Proposition~\ref{prop:cyclic-representation-matrix}(2) the rule
+\textit{(Lecture 11/20: for each $N$-th root of unity $\zeta$ there is a one-dimensional representation $\rho(j) = [\zeta^j]$; parts (2)--(4) are spelled out.)} \textit{(Lecture 11/20; details filled in.)} \textbf{(1)} The number $\zeta = e^{2\pi ik/N}$ is an $N$-th root of unity (Lemma~\ref{lem:roots-of-unity}(1)). So the $1 \times 1$ matrix $g = [\zeta]$ satisfies $g^N = [\zeta^N] = [1]$, and by Proposition~\ref{prop:cyclic-representation-matrix}(2) the rule
 \[ \rho(j) = g^j = [\zeta^j] = \big[e^{2\pi ijk/N}\big] \]
 is a representation. The trace of a $1 \times 1$ matrix is its entry.
 
@@ -12925,11 +12961,11 @@ Let $V$ be a finite-dimensional complex representation of $\mathbb{Z}/N\mathbb{Z
 \[ V \cong \mathbb{C}_0^{\oplus a_0} \oplus \mathbb{C}_1^{\oplus a_1} \oplus \cdots \oplus \mathbb{C}_{N-1}^{\oplus a_{N-1}} \]
 (external direct sum, Definitions~\ref{def:external-direct-sum-representations} and~\ref{def:repeated-direct-sum}). For these integers,
 \[ \chi_V = \sum_{k=0}^{N-1} a_k\,\chi_k, \qquad \dim V = \sum_{k=0}^{N-1} a_k. \]
-\srcline{lecture 11/20: ``so every representation must be a direct sum of these'', for complex finite-dimensional representations}
+\srcline{lecture 11/20}
 \end{corbox}
 
 \begin{proof}
-\textit{(Lecture 11/20; details filled in.)} $|\mathbb{Z}/N\mathbb{Z}| = N \neq 0$ in $\mathbb{C}$, so by Corollary~\ref{cor:decomposition-multiplicities} there are pairwise non-isomorphic simple representations $S_1, \ldots, S_r$ and positive integers $b_1, \ldots, b_r$ with $V \cong S_1^{\oplus b_1} \oplus \cdots \oplus S_r^{\oplus b_r}$. By Theorem~\ref{thm:cyclic-simple-complex}, each $S_i$ is isomorphic to $\mathbb{C}_{k(i)}$ for exactly one $k(i)$, and the numbers $k(1), \ldots, k(r)$ are different because the $S_i$ are pairwise non-isomorphic. Choose isomorphisms $\beta_i: \mathbb{C}_{k(i)} \to S_i$. Applying $\beta_i$ in every coordinate that belongs to $S_i$ gives a map $\bigoplus_i \mathbb{C}_{k(i)}^{\oplus b_i} \to \bigoplus_i S_i^{\oplus b_i}$ that is linear, bijective and commutes with the group, because all operations are coordinatewise; so the two sums are isomorphic. Put $a_{k(i)} = b_i$ and $a_k = 0$ for the other $k$. Then $V \cong \bigoplus_k \mathbb{C}_k^{\oplus a_k}$ (Lemma~\ref{lem:isomorphism-representations-properties}(3)).
+\textit{(Lecture 11/20: ``so every representation must be a direct sum of these'', for complex finite-dimensional representations.)} \textit{(Lecture 11/20; details filled in.)} $|\mathbb{Z}/N\mathbb{Z}| = N \neq 0$ in $\mathbb{C}$, so by Corollary~\ref{cor:decomposition-multiplicities} there are pairwise non-isomorphic simple representations $S_1, \ldots, S_r$ and positive integers $b_1, \ldots, b_r$ with $V \cong S_1^{\oplus b_1} \oplus \cdots \oplus S_r^{\oplus b_r}$. By Theorem~\ref{thm:cyclic-simple-complex}, each $S_i$ is isomorphic to $\mathbb{C}_{k(i)}$ for exactly one $k(i)$, and the numbers $k(1), \ldots, k(r)$ are different because the $S_i$ are pairwise non-isomorphic. Choose isomorphisms $\beta_i: \mathbb{C}_{k(i)} \to S_i$. Applying $\beta_i$ in every coordinate that belongs to $S_i$ gives a map $\bigoplus_i \mathbb{C}_{k(i)}^{\oplus b_i} \to \bigoplus_i S_i^{\oplus b_i}$ that is linear, bijective and commutes with the group, because all operations are coordinatewise; so the two sums are isomorphic. Put $a_{k(i)} = b_i$ and $a_k = 0$ for the other $k$. Then $V \cong \bigoplus_k \mathbb{C}_k^{\oplus a_k}$ (Lemma~\ref{lem:isomorphism-representations-properties}(3)).
 
 Isomorphic representations have the same character (Lemma~\ref{lem:isomorphic-same-character}), and the character of an external direct sum is the sum of the characters (Proposition~\ref{prop:character-external-direct-sum}); this gives $\chi_V = \sum_k a_k\chi_k$. At $j = 0$ this reads $\dim V = \chi_V(0) = \sum_k a_k\chi_k(0) = \sum_k a_k$.
 \end{proof}
@@ -12951,11 +12987,11 @@ with the pairing of Definition~\ref{def:pairing-class-functions}. In particular 
 
 \begin{corbox}[{A Complex Matrix with $g^N = \mathrm{Id}$ Is Diagonalizable}]\label{cor:finite-order-diagonalizable}
 Let $g$ be an $n \times n$ complex matrix with $g^N = \mathrm{Id}_n$. Then there is an invertible matrix $S$ such that $SgS^{-1}$ is diagonal, and the diagonal entries are $N$-th roots of unity (Definition~\ref{def:root-of-unity}). The root $e^{2\pi ik/N}$ occurs $a_k$ times, where the $a_k$ are the integers of Corollary~\ref{cor:cyclic-direct-sum-lines} for the representation $j \mapsto g^j$ on $\mathbb{C}^n$.
-\srcline{lecture 11/20; this is WS 16.4(1), Proposition~\ref{prop:finite-order-matrix}(1)}
+\srcline{lecture 11/20; WS 16.4(1)}
 \end{corbox}
 
 \begin{proof}
-\textit{Idea:} a decomposition of $\mathbb{C}^n$ into one-dimensional representations is a basis of eigenvectors of $g$.\par
+\textit{(Lecture 11/20; this is WS 16.4(1), Proposition~\ref{prop:finite-order-matrix}(1).)} \textit{Idea:} a decomposition of $\mathbb{C}^n$ into one-dimensional representations is a basis of eigenvectors of $g$.\par
 \textit{(Board 11/20: ``so if $g^N = \mathrm{Id}_n$ there is a change of basis matrix $S$'' with $SgS^{-1}$ diagonal, $N$-th roots of unity on the diagonal. The passage from the direct sum to $S$ is filled in.)} By Proposition~\ref{prop:cyclic-representation-matrix}(2), $\rho(j) = g^j$ is a representation of $\mathbb{Z}/N\mathbb{Z}$ on $\mathbb{C}^n$. By Corollary~\ref{cor:cyclic-direct-sum-lines} there is an isomorphism of representations
 \[ P: E = \mathbb{C}_0^{\oplus a_0} \oplus \cdots \oplus \mathbb{C}_{N-1}^{\oplus a_{N-1}} \to \mathbb{C}^n. \]
 The elements of $E$ are tuples of $\sum_k a_k = n$ complex numbers, so $E = \mathbb{C}^n$ as a vector space and $P$ is an invertible $n \times n$ matrix. The group acts on $E$ coordinate by coordinate (Definition~\ref{def:external-direct-sum-representations}): the element $1$ multiplies a coordinate that belongs to $\mathbb{C}_k$ by $e^{2\pi ik/N}$. So $1$ acts on $E$ by a diagonal matrix $D$, in which $e^{2\pi ik/N}$ occurs $a_k$ times. By Lemma~\ref{lem:cyclic-subrepresentations-homomorphisms}(3), applied to the isomorphism $P$ from the representation given by $D$ to the one given by $g$, $g = PDP^{-1}$. With $S = P^{-1}$, $SgS^{-1} = D$.
@@ -13022,7 +13058,7 @@ so if $\zeta \neq 1$ the sum is $0$.
 \end{proof}
 
 \begin{exbox}[{The Rows of the Table of $\mathbb{Z}/N\mathbb{Z}$ Are Orthonormal: a Direct Check}]\label{ex:cyclic-rows-orthonormal}
-\textit{(Not from class.)} By WS 18.3 over $\mathbb{C}$ (Proposition~\ref{prop:rows-orthogonal}(2)), $\langle \chi_k, \chi_l \rangle$ is $1$ for $k = l$ and $0$ for $k \neq l$. For $\mathbb{Z}/N\mathbb{Z}$ this can be checked directly. The inverse of $j$ is $-j$, so
+By WS 18.3 over $\mathbb{C}$ (Proposition~\ref{prop:rows-orthogonal}(2)), $\langle \chi_k, \chi_l \rangle$ is $1$ for $k = l$ and $0$ for $k \neq l$. For $\mathbb{Z}/N\mathbb{Z}$ this can be checked directly. The inverse of $j$ is $-j$, so
 \[ \langle \chi_k, \chi_l \rangle = \frac{1}{N}\sum_{j=0}^{N-1} \chi_k(-j)\,\chi_l(j) = \frac{1}{N}\sum_{j=0}^{N-1} e^{2\pi ij(l - k)/N} = \frac{1}{N}\sum_{j=0}^{N-1} \zeta^j, \qquad \zeta = e^{2\pi i(l - k)/N}. \]
 Here $\zeta$ is an $N$-th root of unity, and $\zeta = 1$ exactly when $N$ divides $l - k$, that is, when $k = l$, since $|l - k| < N$. By Lemma~\ref{lem:sum-roots-of-unity} the sum is $N$ for $k = l$ and $0$ for $k \neq l$. For $N = 5$, $k = 0$ and $l = 1$ this is $1 + \alpha + \alpha^2 + \alpha^3 + \alpha^4 = 0$: the entries of the row $\chi_1$ add up to zero, and so do the entries of every row except $\chi_0$.
 \srcline{not from class}
@@ -13069,11 +13105,11 @@ Every finite-dimensional simple (Definition~\ref{def:simple-representation}) rea
     \item $\mathbb{R}$ with $j$ acting by $(-1)^j$;
     \item $R = \mathbb{R}^2$ with $j$ acting by $J^j$, $J = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$.
 \end{enumerate}
-\srcline{board 11/18 (announced: the three rows of Example~\ref{ex:z4-real-complex} are the only simple representations over $\mathbb{R}$); the proof is not from class}
+\srcline{board 11/18}
 \end{propbox}
 
 \begin{proof}
-\textit{Idea:} $g = \rho_V(1)$ satisfies $(g^2)^2 = \mathrm{id}$, so $V$ splits into the parts where $g^2 = 1$ and where $g^2 = -1$; a simple $V$ is one of the two.\par
+\textit{(Board 11/18 (announced: the three rows of Example~\ref{ex:z4-real-complex} are the only simple representations over $\mathbb{R}$); the proof is not from class.)} \textit{Idea:} $g = \rho_V(1)$ satisfies $(g^2)^2 = \mathrm{id}$, so $V$ splits into the parts where $g^2 = 1$ and where $g^2 = -1$; a simple $V$ is one of the two.\par
 \textit{(Not from class.)} Let $V$ be a finite-dimensional simple real representation and $g = \rho_V(1): V \to V$, so $g^4 = \mathrm{id}_V$ and the subrepresentations of $V$ are the subspaces $U$ with $gU \subseteq U$ (Proposition~\ref{prop:cyclic-representation-matrix}, Lemma~\ref{lem:cyclic-subrepresentations-homomorphisms}(1)).
 
 \emph{Step 1: $g^2 = \mathrm{id}_V$ or $g^2 = -\mathrm{id}_V$.} Put $V_+ = \{v \in V : g^2v = v\}$ and $V_- = \{v \in V : g^2v = -v\}$. These are subspaces, and $g$ maps each of them into itself, because $g$ commutes with $g^2$: for $v \in V_\pm$, $g^2(gv) = g(g^2v) = \pm gv$. So both are subrepresentations. Every $v \in V$ is the sum
@@ -13096,8 +13132,10 @@ $\mathbb{Z}/4\mathbb{Z}$ has four conjugacy classes. Over $\mathbb{C}$ it has fo
 
 \begin{rembox}[{In Characteristic $p$ a Matrix with $g^p = \mathrm{Id}$ Need Not Be Diagonalizable}]\label{rem:cyclic-characteristic-p}
 The lecture ended with $k = \mathbb{Z}/p\mathbb{Z}$ and $G = \mathbb{Z}/p\mathbb{Z}$, acting on $k^2$ by $j \mapsto \left(\begin{smallmatrix} 1 & j \\ 0 & 1 \end{smallmatrix}\right)$. Here $g = \left(\begin{smallmatrix} 1 & 1 \\ 0 & 1 \end{smallmatrix}\right)$ satisfies $g^p = \left(\begin{smallmatrix} 1 & p \\ 0 & 1 \end{smallmatrix}\right) = \mathrm{Id}$, because $p = 0$ in $k$; so this is a representation by Proposition~\ref{prop:cyclic-representation-matrix}(2). It is the representation of Problem 9.4(2) (Example~\ref{ex:maschke-fails-char-p}): the line $ke_1$ is a subrepresentation without a complementary subrepresentation. In the terms of this section, $g^p = \mathrm{Id}$ but $g$ is not diagonalizable over $k$: its only eigenvalue is $1$, its eigenvectors are the multiples of $e_1$, and a basis of eigenvectors would contain a second invariant line (Lemma~\ref{lem:cyclic-subrepresentations-homomorphisms}(1)). So Corollary~\ref{cor:finite-order-diagonalizable} does not hold over $\mathbb{Z}/p\mathbb{Z}$. The hypotheses that fail are $|G| \neq 0$ in $k$ in Maschke's theorem (Theorem~\ref{thm:maschke}) and $\mathbb{Q} \subseteq k$ in Corollary~\ref{cor:simples-at-most-classes}. The polynomial shows the difference: over $\mathbb{C}$, $x^N - 1$ has $N$ distinct roots, while over $\mathbb{Z}/p\mathbb{Z}$, $x^p - 1 = (x - 1)^p$ has the single root $1$.
-\srcline{lecture 11/20; the board page ends in the middle of this example, and the comparison with $\mathbb{C}$ is not from class}
+\srcline{lecture 11/20}
 \end{rembox}
+
+\textit{Source note.} Lecture 11/20; the board page ends in the middle of this example, and the comparison with $\mathbb{C}$ is not from class.
 
 
 \appendix

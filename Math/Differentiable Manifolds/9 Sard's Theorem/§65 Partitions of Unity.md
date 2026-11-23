@@ -21,20 +21,26 @@ tags: [differentiable-manifolds, math591]
 ^def-65-1
 
 > [!example] Example §65.1: Intervals Centred at the Integers
-> *(Not from lecture.)* The intervals $S_n = (n - 1, n + 1)$, $n \in \mathbb{Z}$, form a locally finite family in $\mathbb{R}$, although there are infinitely many of them and they cover $\mathbb{R}$. For $p \in \mathbb{R}$ take the neighbourhood $U = (p - 1, p + 1)$. If $U \cap S_n \neq \varnothing$, some $x$ has $|x - p| < 1$ and $|x - n| < 1$, so $|n - p| < 2$; at most four integers $n$ satisfy this. So $U$ meets at most four of the $S_n$.
+> The intervals $S_n = (n - 1, n + 1)$, $n \in \mathbb{Z}$, form a locally finite family in $\mathbb{R}$, although there are infinitely many of them and they cover $\mathbb{R}$. For $p \in \mathbb{R}$ take the neighbourhood $U = (p - 1, p + 1)$. If $U \cap S_n \neq \varnothing$, some $x$ has $|x - p| < 1$ and $|x - n| < 1$, so $|n - p| < 2$; at most four integers $n$ satisfy this. So $U$ meets at most four of the $S_n$.
+>
+> *Source: not from lecture*
 
 ^ex-65-1
 
 > [!example] Example §65.2: Nested Intervals
-> *(Not from lecture.)* The intervals $S_n = (-n, n)$, $n \ge 1$, do not form a locally finite family in $\mathbb{R}$, and the condition of Definition [[§65 Partitions of Unity#^def-65-1|§65.1]] fails at every point. Let $p \in \mathbb{R}$ and $U$ any neighbourhood of $p$. For every integer $n > |p|$ we have $p \in S_n$, so $p \in U \cap S_n$; hence $U$ meets the infinitely many $S_n$ with $n > |p|$.
+> The intervals $S_n = (-n, n)$, $n \ge 1$, do not form a locally finite family in $\mathbb{R}$, and the condition of Definition [[§65 Partitions of Unity#^def-65-1|§65.1]] fails at every point. Let $p \in \mathbb{R}$ and $U$ any neighbourhood of $p$. For every integer $n > |p|$ we have $p \in S_n$, so $p \in U \cap S_n$; hence $U$ meets the infinitely many $S_n$ with $n > |p|$.
+>
+> *Source: not from lecture*
 
 ^ex-65-2
 
 > [!example] Example §65.3: Intervals Accumulating at $0$
-> *(Not from lecture.)* The intervals $S_n = \big(\tfrac{1}{n+1}, \tfrac{1}{n}\big)$, $n \ge 1$, satisfy the condition of Definition [[§65 Partitions of Unity#^def-65-1|§65.1]] at every $p \neq 0$ but not at $p = 0$; so the family is not locally finite, since the condition must hold at every point.
+> The intervals $S_n = \big(\tfrac{1}{n+1}, \tfrac{1}{n}\big)$, $n \ge 1$, satisfy the condition of Definition [[§65 Partitions of Unity#^def-65-1|§65.1]] at every $p \neq 0$ but not at $p = 0$; so the family is not locally finite, since the condition must hold at every point.
 > - $p < 0$: the neighbourhood $(-\infty, 0)$ meets no $S_n$.
 > - $p > 0$: the neighbourhood $U = (p/2, \infty)$ meets $S_n$ only if $\tfrac1n > \tfrac p2$, i.e. $n < \tfrac2p$; finitely many $n$.
 > - $p = 0$: a neighbourhood $U$ of $0$ contains some $(-\varepsilon, \varepsilon)$, which contains $S_n$ for every $n$ with $\tfrac1n < \varepsilon$; infinitely many $n$.
+>
+> *Source: not from lecture*
 
 ^ex-65-3
 
@@ -76,10 +82,12 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§65 Partitions of Unity#^def-65-1|Def. §65.1]]
 
 > [!example] Example §65.4: Pointwise Finiteness Is Not Enough
-> *(Not from lecture.)* Lemma [[§65 Partitions of Unity#^lem-65-2|§65.2]] needs the supports to be locally finite; it is not enough that each point lies in only finitely many supports. On $M = \mathbb{R}$ let $a_n = \tfrac{1}{n+1}$, $b_n = \tfrac1n$ ($n \ge 1$), and let $f_n$ be the smooth function equal to $c_n\, e^{-1/((x - a_n)(b_n - x))}$ on $(a_n, b_n)$ and $0$ elsewhere, with $c_n > 0$ chosen so that $\max f_n = 1$, attained at the midpoint $m_n$ of $[a_n, b_n]$ (the exponent is largest there). Then $\operatorname{supp} f_n = [a_n, b_n]$.
+> Lemma [[§65 Partitions of Unity#^lem-65-2|§65.2]] needs the supports to be locally finite; it is not enough that each point lies in only finitely many supports. On $M = \mathbb{R}$ let $a_n = \tfrac{1}{n+1}$, $b_n = \tfrac1n$ ($n \ge 1$), and let $f_n$ be the smooth function equal to $c_n\, e^{-1/((x - a_n)(b_n - x))}$ on $(a_n, b_n)$ and $0$ elsewhere, with $c_n > 0$ chosen so that $\max f_n = 1$, attained at the midpoint $m_n$ of $[a_n, b_n]$ (the exponent is largest there). Then $\operatorname{supp} f_n = [a_n, b_n]$.
 > - *Pointwise finite.* A point lies in at most two of the supports (the endpoints $\tfrac1n$, $n \ge 2$, lie in two), and $0$ in none, so $f = \sum_n f_n$ is defined everywhere.
 > - *Not continuous.* $f(m_n) = f_n(m_n) = 1$, since $m_n$ lies in no other support, and $m_n \to 0$; but $f(0) = 0$. So $f$ is not even continuous at $0$.
 > - *Not locally finite.* The supports accumulate at $0$, as in Example [[§65 Partitions of Unity#^ex-65-3|§65.3]]: every neighbourhood of $0$ meets infinitely many of them.
+>
+> *Source: not from lecture*
 
 ^ex-65-4
 
@@ -141,12 +149,14 @@ The main result of this section is that every open cover has a subordinate parti
 ^def-65-4
 
 > [!example] Example §65.5: A Locally Finite Refinement That Is Not a Subcover
-> *(Not from lecture.)* On $\mathbb{R}$, the open cover $\{(-n, n)\}_{n \ge 1}$ is not locally finite (Example [[§65 Partitions of Unity#^ex-65-2|§65.2]]). The intervals $V_k = (k - 1, k + 1)$, $k \in \mathbb{Z}$, form a locally finite open refinement of it (Definition [[§65 Partitions of Unity#^def-65-4|§65.4]]):
+> On $\mathbb{R}$, the open cover $\{(-n, n)\}_{n \ge 1}$ is not locally finite (Example [[§65 Partitions of Unity#^ex-65-2|§65.2]]). The intervals $V_k = (k - 1, k + 1)$, $k \in \mathbb{Z}$, form a locally finite open refinement of it (Definition [[§65 Partitions of Unity#^def-65-4|§65.4]]):
 > - *A cover.* Every $x \in \mathbb{R}$ lies in $V_k$ for $k = \lfloor x \rfloor$, since $k \le x < k + 1$.
 > - *A refinement.* If $|x - k| < 1$ then $|x| < |k| + 1$, so $V_k \subseteq (-n, n)$ with $n = |k| + 1$.
 > - *Locally finite.* This is Example [[§65 Partitions of Unity#^ex-65-1|§65.1]].
 >
 > It is not a subcover: $V_1 = (0, 2)$ is not one of the intervals $(-n, n)$. Refining, not only passing to a subcover, is needed here: a subcover of $\{(-n, n)\}$ must contain infinitely many of the intervals (finitely many have bounded union), and all of them contain $0$, so no subcover is locally finite at $0$.
+>
+> *Source: not from lecture*
 
 ^ex-65-5
 
@@ -201,12 +211,14 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 *(Not from lecture; figure added.)* The proof of Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]] for $j = 2$. The compact ring $A_2 = K_3 \setminus \operatorname{Int}K_2$ (teal) is covered by finitely many basis sets $B_x$ (blue), each inside some $U_\alpha$ and inside the open ring $W_2 = \operatorname{Int}K_4 \setminus K_1$ (between the dashed circles). Rings $W_j$ and $W_k$ with $|j - k| \ge 3$ are disjoint, so a point of $A_j$ has the neighbourhood $W_j$, which meets only the sets chosen for $j - 2, \ldots, j + 2$: the refinement is locally finite.
 
 > [!remark] Remark: Is Local Compactness Needed?
-> *(Transcription note, Lecture 22.)* Page 58 of the handwritten notes states the theorem as “if $X$ is $T_2$ and 2nd countable, then it is paracompact (need locally compact?)”, leaving open whether local compactness is needed. Local compactness is needed: as stated the theorem is false in general, and local compactness, which manifolds have, is the missing hypothesis; Hausdorff, second countable and locally compact imply paracompact, and Lee proves directly what is needed for manifolds in Theorem 1.15 (p. 9). So the theorem is stated with local compactness, as above. *(Filled in.)* Some hypothesis beyond Hausdorff and second countable is needed: the $K$-topology on $\mathbb{R}$ is Hausdorff and second countable but not paracompact (Example [[§65 Partitions of Unity#^ex-65-6|§65.6]] below). Local compactness, as above, suffices; so does regularity. For manifolds nothing changes: they are locally compact. Second countability is essential here; it was used once before, for countable subcovers in measure zero (Lemma [[§62 Sets of Measure Zero#^lem-62-3|§62.3]]).
+> Page 58 of the handwritten notes states the theorem as “if $X$ is $T_2$ and 2nd countable, then it is paracompact (need locally compact?)”, leaving open whether local compactness is needed. Local compactness is needed: as stated the theorem is false in general, and local compactness, which manifolds have, is the missing hypothesis; Hausdorff, second countable and locally compact imply paracompact, and Lee proves directly what is needed for manifolds in Theorem 1.15 (p. 9). So the theorem is stated with local compactness, as above. *(Filled in.)* Some hypothesis beyond Hausdorff and second countable is needed: the $K$-topology on $\mathbb{R}$ is Hausdorff and second countable but not paracompact (Example [[§65 Partitions of Unity#^ex-65-6|§65.6]] below). Local compactness, as above, suffices; so does regularity. For manifolds nothing changes: they are locally compact. Second countability is essential here; it was used once before, for countable subcovers in measure zero (Lemma [[§62 Sets of Measure Zero#^lem-62-3|§62.3]]).
+>
+> *Source: Lecture 22 · transcription note*
 
 ^rem-65-1
 
 > [!example] Example §65.6: The K-Topology on the Real Line
-> *(Filled in; not from lecture.)* Let $K = \{1/n : n \ge 1\}$. The *$K$-topology* on $\mathbb{R}$ is generated by the open intervals $(a, b)$ and the sets $(a, b) \setminus K$. It is Hausdorff and second countable but not regular (Munkres, §31), so not paracompact.
+> Let $K = \{1/n : n \ge 1\}$. The *$K$-topology* on $\mathbb{R}$ is generated by the open intervals $(a, b)$ and the sets $(a, b) \setminus K$. It is Hausdorff and second countable but not regular (Munkres, §31), so not paracompact.
 >
 > *Basis.* The open intervals and the sets $(a, b) \setminus K$ cover $\mathbb{R}$, and the intersection of two of them is empty or again of one of the two forms, since $\big((a, b) \setminus K\big) \cap (c, d) = \big((a, b) \cap (c, d)\big) \setminus K$. So they form a basis, and the open sets are their unions.
 >
@@ -217,6 +229,8 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 > *Not regular.* $K$ is closed: $K \cup \{0\}$ is closed in the standard topology, so $\mathbb{R} \setminus (K \cup \{0\})$ is open, and $\mathbb{R} \setminus K$ is its union with the basic set $(-1, 1) \setminus K$. Suppose $U \ni 0$ and $V \supseteq K$ are disjoint open sets. $U$ contains a basic set $B \ni 0$. $B$ is not an interval: an interval around $0$ contains some $1/n \in K \subseteq V$, while $B \subseteq U$ and $U \cap V = \varnothing$. So $B = (a, b) \setminus K$ with $a < 0 < b$. Choose $n$ with $1/n < b$. $V$ contains a basic set $C \ni 1/n$, which is an interval $(c, d)$, since the sets $(c, d) \setminus K$ do not contain $1/n$; replacing it by $(\max(c, 0), \min(d, b))$, which still contains $1/n$, we may assume $(c, d) \subseteq (0, b)$. The interval $(c, d)$ is uncountable and $K$ is countable, so there is $z \in (c, d) \setminus K$. Then $z \in (a, b) \setminus K = B \subseteq U$ and $z \in (c, d) \subseteq V$, contradicting $U \cap V = \varnothing$. So the point $0$ and the closed set $K$ cannot be separated by open sets.
 >
 > *Not paracompact.* A paracompact Hausdorff space is normal, in particular regular (Munkres, Theorem 41.1). Munkres's paracompactness asks only for a locally finite open refinement, not a countable one, so it follows from Definition [[§65 Partitions of Unity#^def-65-5|§65.5]]. As the $K$-topology is Hausdorff but not regular, it is not paracompact.
+>
+> *Source: not from lecture · filled in*
 
 ^ex-65-6
 
@@ -386,7 +400,9 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 *Uses:* [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§59 Related Vector Fields#^lem-59-10|§59.10]], [[§65 Partitions of Unity#^lem-65-9|§65.9]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§37 Regular Submanifolds#^def-37-1|Def. §37.1]]
 
 > [!example] Example §65.7: A Vector Field on a Non-Closed Submanifold That Does Not Extend
-> *(Not from the assignment.)* In $M = \mathbb{R}^2$ let $S = \{(x, 0) : x > 0\}$, and on $S$ let $\mathbf{X} = \frac{1}{x}\, \frac{\partial}{\partial x}\big|^S$. There is no $\widetilde{\mathbf{X}} \in \mathfrak{X}(\mathbb{R}^2)$ with $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $p \in S$. So the hypothesis “$S$ closed” in Theorem [[§65 Partitions of Unity#^thm-65-11|§65.11]](2) cannot be dropped; by part (1), $\mathbf{X}$ does extend to the open set $W = \{(x, y) : x > 0\}$, for instance by $\frac{1}{x}\, \partial/\partial x$.
+> In $M = \mathbb{R}^2$ let $S = \{(x, 0) : x > 0\}$, and on $S$ let $\mathbf{X} = \frac{1}{x}\, \frac{\partial}{\partial x}\big|^S$. There is no $\widetilde{\mathbf{X}} \in \mathfrak{X}(\mathbb{R}^2)$ with $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $p \in S$. So the hypothesis “$S$ closed” in Theorem [[§65 Partitions of Unity#^thm-65-11|§65.11]](2) cannot be dropped; by part (1), $\mathbf{X}$ does extend to the open set $W = \{(x, y) : x > 0\}$, for instance by $\frac{1}{x}\, \partial/\partial x$.
+>
+> *Source: not from the assignment*
 
 ^ex-65-7
 

@@ -53,7 +53,9 @@ tags: [functional-analysis, math556]
 > - The physicists' convention, used in the quantum mechanics chapter: [[§50 Bras, Kets, and the Riesz Map#^rem-50-1|Remark: Conventions]].
 
 > [!theorem] Lemma §22.1: The Number $(x,x)$ is Real
-> *(Not from lecture.)* Let $X$ be a complex linear space and $(\cdot,\cdot) : X \times X \to \mathbb{C}$ skew-symmetric, $(x,y) = \overline{(y,x)}$ for all $x, y$. Then $(x,x) \in \mathbb{R}$ for every $x \in X$.
+> Let $X$ be a complex linear space and $(\cdot,\cdot) : X \times X \to \mathbb{C}$ skew-symmetric, $(x,y) = \overline{(y,x)}$ for all $x, y$. Then $(x,x) \in \mathbb{R}$ for every $x \in X$.
+>
+> *Source: not from lecture*
 
 ^lem-22-1
 
@@ -63,7 +65,9 @@ tags: [functional-analysis, math556]
 ^pf-22-1
 
 > [!theorem] Lemma §22.2: A Complex Inner Product Cannot Be Bilinear
-> *(Not from lecture.)* Let $X \neq \{0\}$ be a complex linear space. There is no function $(\cdot,\cdot) : X \times X \to \mathbb{C}$ that is linear in both arguments, skew-symmetric, and positive.
+> Let $X \neq \{0\}$ be a complex linear space. There is no function $(\cdot,\cdot) : X \times X \to \mathbb{C}$ that is linear in both arguments, skew-symmetric, and positive.
+>
+> *Source: not from lecture*
 
 ^lem-22-2
 

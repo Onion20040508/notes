@@ -125,7 +125,7 @@ Everything from here on uses completeness, and the results are the ones for whic
 ^rem-25-2
 
 > [!example] Example §25.1: Closest Points in $\ell^1$ Need Not Be Unique
-> *(Details filled in.)* In the Banach space $\ell^1$ (Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]) let
+> In the Banach space $\ell^1$ (Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]) let
 >
 > $$
 > K = \{ t e_1 + (1 - t) e_2 : 0 \le t \le 1 \}, \qquad x_0 = 0 .
@@ -140,11 +140,13 @@ Everything from here on uses completeness, and the results are the ones for whic
 > *Every point is closest.* For $y = t e_1 + (1-t) e_2 \in K$, $\|x_0 - y\|_1 = |t| + |1 - t| = t + (1 - t) = 1$. So $\operatorname{dist}(x_0, K) = 1$, and it is attained at every one of the infinitely many points of $K$.
 >
 > Here $\ell^1$ is complete and $K$ is closed and convex; what is missing is the parallelogram law, which fails in $\ell^1$ (Corollary [[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|§24.3]]).
+>
+> *Source: filled in*
 
 ^ex-25-1
 
 > [!example] Example §25.2: No Closest Point in an Incomplete Inner Product Space
-> *(Details filled in.)* Let $X = c_{00}$, the finitely supported sequences, with the inner product $(y, z) = \sum_i y_i \overline{z_i}$ of $\ell^2$ (Example [[§22 Definition and Examples#^ex-22-2|§22.2]]); $X$ is an inner product space that is not complete. Let $a = (1, \tfrac12, \tfrac13, \ldots) \in \ell^2$, which is not in $c_{00}$, and
+> Let $X = c_{00}$, the finitely supported sequences, with the inner product $(y, z) = \sum_i y_i \overline{z_i}$ of $\ell^2$ (Example [[§22 Definition and Examples#^ex-22-2|§22.2]]); $X$ is an inner product space that is not complete. Let $a = (1, \tfrac12, \tfrac13, \ldots) \in \ell^2$, which is not in $c_{00}$, and
 >
 > $$
 > K = \{ y \in c_{00} : (y, a) = 1 \} = \Bigl\{ y \in c_{00} : \sum_i \frac{y_i}{i} = 1 \Bigr\}, \qquad x_0 = 0 .
@@ -167,11 +169,13 @@ Everything from here on uses completeness, and the results are the ones for whic
 > so $y = a / \|a\|^2$, which has every entry nonzero and is not in $c_{00}$: a contradiction.
 >
 > *The minimizing sequence does not converge in $X$.* In $\ell^2$, $a^{(n)} \to a$ (the tail $\sum_{i > n} i^{-2} \to 0$) and $\|a^{(n)}\| \to \|a\|$, so $y^{(n)} \to a / \|a\|^2$; in particular $\{y^{(n)}\}$ is Cauchy in $X$. A limit in $X$ would be a limit in $\ell^2$, hence equal to $a / \|a\|^2 \notin c_{00}$ by uniqueness of limits. So the Cauchy minimizing sequence has no limit in $X$: exactly the step of Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]] that uses completeness.
+>
+> *Source: filled in*
 
 ^ex-25-2
 
 > [!example] Example §25.3: An Open Convex Set Without a Closest Point
-> *(Details filled in.)* Let $H \neq \{0\}$ be a Hilbert space, $K = \{ y \in H : \|y\| < 1 \}$ the open unit ball, and $x_0 \in H$ with $\|x_0\| = 2$. We show that $K$ is nonempty and convex, that $\operatorname{dist}(x_0, K) = 1$, and that no point of $K$ attains it.
+> Let $H \neq \{0\}$ be a Hilbert space, $K = \{ y \in H : \|y\| < 1 \}$ the open unit ball, and $x_0 \in H$ with $\|x_0\| = 2$. We show that $K$ is nonempty and convex, that $\operatorname{dist}(x_0, K) = 1$, and that no point of $K$ attains it.
 >
 > *Convex.* If $\|y\|, \|z\| < 1$ and $\lambda \in [0,1]$, then $\|(1 - \lambda) y + \lambda z\| \le (1 - \lambda)\|y\| + \lambda\|z\| < 1$. And $0 \in K$.
 >
@@ -180,11 +184,13 @@ Everything from here on uses completeness, and the results are the ones for whic
 > *The infimum is $1$.* For $0 < t < 1$, $y_t = \tfrac{t}{2} x_0$ has $\|y_t\| = t < 1$, so $y_t \in K$, and $\|x_0 - y_t\| = (1 - \tfrac t2)\,\|x_0\| = 2 - t \to 1$ as $t \to 1$.
 >
 > So $\operatorname{dist}(x_0, K) = 1$ is not attained. The points $y_t$ approach $x_0 / 2$, which has norm $1$ and lies outside $K$: $K$ is not closed.
+>
+> *Source: filled in*
 
 ^ex-25-3
 
 > [!example] Example §25.4: Closest Points in a Non-Convex Set Need Not Be Unique
-> *(Not from lecture; filled in.)* Let $H \neq \{0\}$ be a Hilbert space, $K = \{ y \in H : \|y\| = 1 \}$ the unit sphere, and $x_0 = 0$. We show that $K$ is nonempty and closed but not convex, and that every point of $K$ is a closest point to $x_0$, so that the closest point is not unique.
+> Let $H \neq \{0\}$ be a Hilbert space, $K = \{ y \in H : \|y\| = 1 \}$ the unit sphere, and $x_0 = 0$. We show that $K$ is nonempty and closed but not convex, and that every point of $K$ is a closest point to $x_0$, so that the closest point is not unique.
 >
 > *Nonempty, with at least two points.* Since $H \neq \{0\}$ there is $w \in H$ with $w \neq 0$. Put $y = w / \|w\|$; then $\|y\| = 1$, so $y \in K$. Also $\|{-y}\| = \|y\| = 1$, so $-y \in K$, and $-y \neq y$ because $y \neq 0$.
 >
@@ -195,6 +201,8 @@ Everything from here on uses completeness, and the results are the ones for whic
 > *Every point is closest.* For every $u \in K$, $\|x_0 - u\| = \|u\| = 1$. So $\operatorname{dist}(x_0, K) = 1$, and it is attained at every point of $K$, in particular at the two different points $y$ and $-y$.
 >
 > Here $H$ is complete and $K$ is nonempty and closed; what is missing is convexity. Step 5 of the proof of Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]] uses that the midpoint of two closest points lies in $K$; here that midpoint is $0 \notin K$.
+>
+> *Source: not from lecture · filled in*
 
 ^ex-25-4
 
@@ -349,10 +357,11 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 ^rem-25-6
 
 > [!theorem] Proposition §25.5: Riesz's Lemma with Constant One in a Hilbert Space
-> *(Not covered in lecture.)*
 >
 > - (1) Let $X$ be an inner product space, $Y \subset X$ a linear subspace, and $z \in Y^\perp$ with $\|z\| = 1$. Then $\|z - y\| \ge 1$ for every $y \in Y$, and $\operatorname{dist}(z, Y) = 1$.
 > - (2) Let $H$ be a Hilbert space and $Y$ a closed proper subspace of $H$. Then there is $z \in Y^\perp$ with $\|z\| = 1$; hence $\operatorname{dist}(z, Y) = 1$, and Corollary [[§20 Compactness and the Unit Ball#^cor-20-3|§20.3]] holds with $\theta = 1$, in contrast with Proposition [[§20 Compactness and the Unit Ball#^prop-20-4|§20.4]].
+>
+> *Source: not from lecture*
 
 ^prop-25-5
 

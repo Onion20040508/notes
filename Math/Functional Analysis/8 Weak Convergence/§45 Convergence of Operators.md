@@ -164,7 +164,7 @@ Neither implication of Proposition [[§45 Convergence of Operators#^prop-45-1|§
 > - On a finite-dimensional space a linear operator is injective if and only if it is surjective: [[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]]. The left shift is surjective but not injective, and the right shift injective but not surjective, so this fails on $\ell^2$.
 
 > [!example] Example §45.2: Weak but Not Strong Convergence: Powers of the Right Shift
-> *(Lecture 20.)* Let $S : \ell^2 \to \ell^2$ be the **right shift**,
+> Let $S : \ell^2 \to \ell^2$ be the **right shift**,
 >
 > $$
 > S(a_1, a_2, a_3, \ldots) = (0, a_1, a_2, \ldots) , \qquad \text{so} \qquad S^j(a_1, a_2, \ldots) = (\underbrace{0, \ldots, 0}_{j}, a_1, a_2, \ldots) .
@@ -176,6 +176,8 @@ Neither implication of Proposition [[§45 Convergence of Operators#^prop-45-1|§
 > 2. $\|S^j x\| = \|x\|$ for every $x \in \ell^2$ and every $j$, so $S^j \not\to 0$ strongly.
 >
 > Weak convergence does not imply strong convergence.
+>
+> *Source: Lecture 20*
 
 ^ex-45-2
 

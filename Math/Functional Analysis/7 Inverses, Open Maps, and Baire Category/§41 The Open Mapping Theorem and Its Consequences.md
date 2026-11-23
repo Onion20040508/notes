@@ -371,7 +371,9 @@ The closed graph theorem and the open mapping principle together decide when a r
 *Uses:* [[§39 Solving Mx = y#^def-39-2|Def. §39.2]], [[§39 Solving Mx = y#^def-39-1|Def. §39.1]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]], [[§39 Solving Mx = y#^def-39-5|Def. §39.5]]
 
 > [!remark] Remark: What Each Direction of the Closed Range Criterion Uses
-> *(Not from lecture.)* The direction ($\Leftarrow$) uses only that $M$ is closed and $X$ is complete: $Y$ may be any normed linear space, and the same argument works for a closed map with domain $D(M) \subset X$, since then $z_k \in D(M)$ and closedness gives $z \in D(M)$. The direction ($\Rightarrow$) uses the completeness of both spaces, through the open mapping principle. In terms of the induced map of Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]], the inequality says $\|[x]\| \le a\, \|M_0 [x]\|$: the inverse of $M_0 : X/N \to R(M)$ is bounded.
+> The direction ($\Leftarrow$) uses only that $M$ is closed and $X$ is complete: $Y$ may be any normed linear space, and the same argument works for a closed map with domain $D(M) \subset X$, since then $z_k \in D(M)$ and closedness gives $z \in D(M)$. The direction ($\Rightarrow$) uses the completeness of both spaces, through the open mapping principle. In terms of the induced map of Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]], the inequality says $\|[x]\| \le a\, \|M_0 [x]\|$: the inverse of $M_0 : X/N \to R(M)$ is bounded.
+>
+> *Source: not from lecture*
 
 ^rem-41-2
 

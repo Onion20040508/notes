@@ -374,7 +374,9 @@ The proof gives more:
 ^pf-56-12
 
 > [!remark] Remark: Another Source for $t$
-> *(Not from class.)* The element $t$ of part (1) also comes directly from Cauchy's theorem (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-6|§29.6]]), and part (2) is the case $d = 2$ of Lemma [[§56 Simple Groups of Small Order#^lem-56-12|§56.12]].
+> The element $t$ of part (1) also comes directly from Cauchy's theorem (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-6|§29.6]]), and part (2) is the case $d = 2$ of Lemma [[§56 Simple Groups of Small Order#^lem-56-12|§56.12]].
+>
+> *Source: not from class*
 
 ^rem-56-4
 
@@ -550,7 +552,9 @@ The count shows more. First, the general tool:
 *Uses:* [[§25 Actions#^def-25-1|Def. §25.1]]
 
 > [!remark] Remark: A Shortcut
-> *(Not from class.)* By Corollary [[§56 Simple Groups of Small Order#^cor-56-9|§56.9]], the injective homomorphism $A_n \to S_k$ has image in $A_k$, so $n!/2$ divides $k!/2$ (Lagrange), i.e. $n!$ divides $k!$, which forces $k \geq n$; this replaces the counting step.
+> By Corollary [[§56 Simple Groups of Small Order#^cor-56-9|§56.9]], the injective homomorphism $A_n \to S_k$ has image in $A_k$, so $n!/2$ divides $k!/2$ (Lagrange), i.e. $n!$ divides $k!$, which forces $k \geq n$; this replaces the counting step.
+>
+> *Source: not from class*
 
 ^rem-56-6
 
@@ -761,7 +765,7 @@ Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6
 *Uses:* [[§56 Simple Groups of Small Order#^thm-56-16|§56.16]], [[§43 Simple Groups#^prop-43-6|§43.6]], [[§43 Simple Groups#^thm-43-1|§43.1]], [[§56 Simple Groups of Small Order#^thm-56-20|§56.20]]
 
 > [!remark] Remark: The Classification of Finite Simple Groups
-> *(Overview only.)* The classification was an enormous 20th-century project, run in two streams in parallel: ruling out more and more orders, with computations like those above, and finding new ways to construct simple groups. The proof is spread over journal articles totalling about $10{,}000$ pages. There is an ongoing effort to collect it in one place and check that it has no gaps, and ultimately to verify it in a proof assistant such as Lean. Very roughly, every finite simple group is one of the following.
+> The classification was an enormous 20th-century project, run in two streams in parallel: ruling out more and more orders, with computations like those above, and finding new ways to construct simple groups. The proof is spread over journal articles totalling about $10{,}000$ pages. There is an ongoing effort to collect it in one place and check that it has no gaps, and ultimately to verify it in a proof assistant such as Lean. Very roughly, every finite simple group is one of the following.
 >
 > 1. The cyclic groups $\mathbb{Z}/p\mathbb{Z}$, $p$ prime.
 > 2. The alternating groups $A_n$ for $n \neq 1, 2, 4$. ($A_1$ and $A_2$ are trivial and $A_4$ is not simple; $A_3 \cong \mathbb{Z}/3\mathbb{Z}$ is already in the first family, so one usually says $n \geq 5$.)
@@ -776,12 +780,12 @@ Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6
 >
 > As a working summary, the finite simple groups are the $\mathbb{Z}/p\mathbb{Z}$, the alternating groups, $PSL$ and groups like it, and the sporadic groups.
 >
-> *Source: lecture 10/23*
+> *Source: lecture 10/23; overview only*
 
 ^rem-56-8
 
 > [!remark] Remark: Where the Groups of Lie Type Come From
-> *(Overview only.)* A **[[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]]** is a group that is also a manifold, with the group operations smooth. There is a much easier classification, due to Killing and Cartan (late 19th century), of the compact Lie groups. Roughly, they fall into three infinite families,
+> A **[[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]]** is a group that is also a manifold, with the group operations smooth. There is a much easier classification, due to Killing and Cartan (late 19th century), of the compact Lie groups. Roughly, they fall into three infinite families,
 >
 > $$
 > \begin{aligned}O_n(\mathbb{R}) &= \{ g \in GL_n(\mathbb{R}) : g g^{T} = I_n \} && \text{(orthogonal group)}, \\
@@ -791,6 +795,6 @@ Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6
 >
 > where $\mathbb{H}$ denotes the quaternions (notation for the third family varies), together with five exceptional groups with the unbeautiful names $E_6$, $E_7$, $E_8$, $F_4$, $G_2$. The groups of Lie type arise by replacing $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ by finite fields and doing the analogous constructions with matrices over finite fields. For example, the $n \times n$ matrices over $\mathbb{F}_q$ with $gg^{T} = I_n$ form a finite orthogonal group, and passing to a suitable subgroup and quotient (in the spirit of $SL_n \to PSL_n$) gives simple groups. There are choices when making this replacement, so a single family on the Lie side can give several families of finite groups.
 >
-> *Source: lecture 10/23*
+> *Source: lecture 10/23; overview only*
 
 ^rem-56-9

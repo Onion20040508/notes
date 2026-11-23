@@ -59,7 +59,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]]
 
 > [!example] Example §7.1: The Derivative of $A \mapsto A^{\mathsf T}A$
-> *(Not from lecture; added on request.)* Let $F : \operatorname{Mat}_{n \times n}(\mathbb{R}) \to \operatorname{Mat}_{n \times n}(\mathbb{R})$, $F(A) = A^{\mathsf T}A$, with $\operatorname{Mat}_{n \times n}(\mathbb{R}) \cong \mathbb{R}^{n^2}$. Then
+> Let $F : \operatorname{Mat}_{n \times n}(\mathbb{R}) \to \operatorname{Mat}_{n \times n}(\mathbb{R})$, $F(A) = A^{\mathsf T}A$, with $\operatorname{Mat}_{n \times n}(\mathbb{R}) \cong \mathbb{R}^{n^2}$. Then
 >
 > $$
 > DF_A\, H = H^{\mathsf T}A + A^{\mathsf T}H \qquad \text{for all } A, H.
@@ -72,16 +72,20 @@ tags: [differentiable-manifolds, math591]
 > $$
 >
 > whose derivative at $t = 0$ is $H^{\mathsf T}A + A^{\mathsf T}H$. This gives the whole linear map $DF_A$ without computing any of its partial derivatives.
+>
+> *Source: not from lecture · added on request*
 
 ^ex-7-1
 
 > [!remark] Remark: Computing the Jacobian by Directional Derivatives
-> *(Not from lecture; added on request.)* Two points about the formula of Lemma [[§7 The Regular Value Theorem#^lem-7-1|§7.1]].
+> Two points about the formula of Lemma [[§7 The Regular Value Theorem#^lem-7-1|§7.1]].
 >
 > 1. For an arbitrary $v$ the right side is the whole linear map $v \mapsto DF_p\, v$ at once, and a linear map is determined by its values on all $v$. This is how derivatives of maps on matrix spaces are computed without writing out the $N$ partial derivatives (Example [[§7 The Regular Value Theorem#^ex-7-1|§7.1]]).
 > 2. The hypothesis that $F$ is $C^1$ (so differentiable) comes first: the formula computes a derivative that is known to exist. Directional derivatives alone do not show that $F$ is differentiable (the example after Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]]).
 >
 > The same formula without coordinates is Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], and with arbitrary curves in place of lines it is Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], the form that makes sense on a manifold.
+>
+> *Source: not from lecture · added on request*
 
 ^rem-7-2
 
@@ -288,7 +292,7 @@ $$
 where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free variables and $\partial\Phi/\partial y$ the $k \times k$ block of the theorem; each example checks this against the derivative of its explicit $F$.
 
 > [!example] Example §7.4: The Circle: One Free Variable and One Equation
-> *(Not from lecture; added on request.)* $n = k = 1$: free variable $x$, solved-for variable $y$.
+> $n = k = 1$: free variable $x$, solved-for variable $y$.
 >
 > 1. *The equation.* $\Phi : \mathbb{R}^2 \to \mathbb{R}$, $\Phi(x, y) = x^2 + y^2$, $c = 1$; $\Phi^{-1}(1)$ is the unit circle.
 > 2. *Full Jacobian* ($1 \times 2$): $D\Phi_{(x,y)} = \begin{pmatrix} 2x & 2y \end{pmatrix}$, so $\dfrac{\partial\Phi}{\partial x} = 2x$ and the block to invert is $\dfrac{\partial\Phi}{\partial y} = (2y)$.
@@ -296,11 +300,13 @@ where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free
 > 4. *$V_0$, $W_0$, $F$* at a point $(a, b)$ with $b > 0$: $V_0 = (-1, 1)$, $W_0 = (0, 2)$, $F(x) = \sqrt{1 - x^2}$. *Check:* for $x \in V_0$, $1 - x^2 > 0$, so $F$ is smooth with values in $(0, 1] \subseteq W_0$; and for $(x, y) \in V_0 \times W_0$, $x^2 + y^2 = 1 \iff y^2 = 1 - x^2 \iff y = \sqrt{1 - x^2}$, the last step because $y > 0$ on $W_0$. (At $b < 0$: $W_0 = (-2, 0)$ and $F(x) = -\sqrt{1 - x^2}$.)
 > 5. *Derivative.* Directly, $F'(x) = \dfrac{-x}{\sqrt{1 - x^2}}$. From Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], $-(2y)^{-1}(2x) = -x/y = -x/\sqrt{1 - x^2}$ at $y = F(x)$: the same.
 > 6. *At $(1, 0)$* the block $(2y) = (0)$ is singular, but $\partial\Phi/\partial x = (2x) = (2)$ is not: the theorem applies with the roles of $x$ and $y$ exchanged, and near $(1, 0)$ the circle is $x = G(y) = \sqrt{1 - y^2}$, $y \in (-1, 1)$, $x \in (0, 2)$.
+>
+> *Source: not from lecture · added on request*
 
 ^ex-7-4
 
 > [!example] Example §7.5: The Sphere as a Graph over a Disk: Two Free Variables and One Equation
-> *(Not from lecture; added on request.)* $n = 2$, $k = 1$: free variables $(x, y)$, solved-for variable $z$.
+> $n = 2$, $k = 1$: free variables $(x, y)$, solved-for variable $z$.
 >
 > 1. *The equation.* $\Phi : \mathbb{R}^3 \to \mathbb{R}$, $\Phi(x, y, z) = x^2 + y^2 + z^2$, $c = 1$; $\Phi^{-1}(1) = S^2$.
 > 2. *Full Jacobian* ($1 \times 3$): $D\Phi_{(x,y,z)} = \begin{pmatrix} 2x & 2y & 2z \end{pmatrix}$, so $\dfrac{\partial\Phi}{\partial(x, y)} = \begin{pmatrix} 2x & 2y \end{pmatrix}$ and the block to invert is $\dfrac{\partial\Phi}{\partial z} = (2z)$.
@@ -308,11 +314,13 @@ where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free
 > 4. *$V_0$, $W_0$, $F$* at a point with $z > 0$: $V_0 = \{(x, y) : x^2 + y^2 < 1\}$, the open unit disk, $W_0 = (0, 2)$, $F(x, y) = \sqrt{1 - x^2 - y^2}$. *Check:* on $V_0$, $1 - x^2 - y^2 > 0$, so $F$ is smooth with values in $(0, 1] \subseteq W_0$; and on $V_0 \times W_0$, $x^2 + y^2 + z^2 = 1 \iff z = \sqrt{1 - x^2 - y^2}$, since $z > 0$.
 > 5. *Derivative* ($1 \times 2$). Directly, $DF_{(x,y)} = \begin{pmatrix} \dfrac{-x}{F} & \dfrac{-y}{F} \end{pmatrix}$. From Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], $-(2z)^{-1}\begin{pmatrix} 2x & 2y \end{pmatrix} = \begin{pmatrix} -x/z & -y/z \end{pmatrix}$ at $z = F(x, y)$: the same.
 > 6. *On the equator* ($z = 0$, say at $(1, 0, 0)$) the block $(2z)$ is singular, but $\partial\Phi/\partial x = (2)$ is not, and there the sphere is a graph $x = \sqrt{1 - y^2 - z^2}$ over the disk in the $(y, z)$-plane.
+>
+> *Source: not from lecture · added on request*
 
 ^ex-7-5
 
 > [!example] Example §7.6: A Circle of Latitude as a Graph over an Interval: One Free Variable and Two Equations
-> *(Not from lecture; added on request.)* $n = 1$, $k = 2$: free variable $x$, solved-for variables $(y, z)$. Fix $h$ with $|h| < 1$ and put $r = \sqrt{1 - h^2} > 0$.
+> $n = 1$, $k = 2$: free variable $x$, solved-for variables $(y, z)$. Fix $h$ with $|h| < 1$ and put $r = \sqrt{1 - h^2} > 0$.
 >
 > 1. *The equations.* $\Phi : \mathbb{R}^3 \to \mathbb{R}^2$, $\Phi(x, y, z) = (x^2 + y^2 + z^2,\ z)$, $c = (1, h)$. $\Phi^{-1}(c)$ is the circle $x^2 + y^2 = r^2$ in the plane $z = h$, the sphere cut by the plane.
 > 2. *Full Jacobian* ($2 \times 3$):
@@ -333,6 +341,7 @@ where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free
 > $$
 >
 > *Check:* on $V_0$, $r^2 - x^2 > 0$, so $F$ is smooth, with $F(x) \in (0, r] \times \{h\} \subseteq W_0$. For $(x, y, z) \in V_0 \times W_0$: $\Phi(x, y, z) = (1, h)$ iff $z = h$ and $x^2 + y^2 = 1 - h^2 = r^2$, iff $z = h$ and $y = \sqrt{r^2 - x^2}$ (as $y > 0$), iff $(y, z) = F(x)$.
+>
 > 5. *Derivative* ($2 \times 1$). Directly, $DF(x) = \begin{pmatrix} -x/\sqrt{r^2 - x^2} \\ 0 \end{pmatrix}$. From Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], with
 >
 > $$
@@ -342,7 +351,10 @@ where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free
 > $$
 >
 > the same at $y = \sqrt{r^2 - x^2}$. The second component is $0$: along the circle $z$ stays equal to $h$.
+>
 > 6. *Other choices of variables.* The block in $(x, z)$ is $\begin{pmatrix} 2x & 2z \\ 0 & 1 \end{pmatrix}$, with determinant $2x$: at $(\pm r, 0, h)$, where the first choice fails, the circle is a graph $(x, z) = (\pm\sqrt{r^2 - y^2},\ h)$ over $y$. The block in $(x, y)$ is $\begin{pmatrix} 2x & 2y \\ 0 & 0 \end{pmatrix}$, singular everywhere: $z$ can never be the free variable, as it is constant on the circle.
+>
+> *Source: not from lecture · added on request*
 
 ^ex-7-6
 
@@ -469,7 +481,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 *Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^cor-7-7|§7.7]], [[§2 Topological Manifolds#^prop-2-5|§2.5]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
 
 > [!example] Example §7.7: A Level Set in $\mathbb{R}^4$
-> *(Qualifying Review, August 2013; Assignment 2, Problem 3.)* Define
+> Define
 >
 > $$
 > F : \mathbb{R}^4 \to \mathbb{R}^2, \qquad F(x,y,u,v) = \big(x^2 - y^2 - u^2 + v^2 + 2u,\ \ 2xy - 2uv + 2v\big),
@@ -480,6 +492,8 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 > $$
 > \ker F'(x_0) = \operatorname{span}\{(1,0,0,-1),\ (0,1,1,0)\}.
 > $$
+>
+> *Source: Assignment 2, Problem 3 · Qualifying Review, August 2013*
 
 ^ex-7-7
 
@@ -647,6 +661,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 > $$
 >
 > (expand $(a + ib)(h_1 + ih_2) + (c - id)(k_1 + ik_2)$ and collect the coefficients of $h_1, h_2, k_1, k_2$) — exactly the two rows computed in Step 1 of that example.
+>
 > 2. *The rank.* A $1 \times 2$ complex matrix has complex rank $1$ if it is nonzero and $0$ if it is zero; by Lemma [[§7 The Regular Value Theorem#^lem-7-11|§7.11]] the real rank is $2$ or $0$. So the case analysis of Step 2 was that lemma in disguise: the real rank is $2$ precisely when the complex gradient $(2z, 2-2w)$ is nonzero, i.e. away from $(z,w) = (0,1)$, and $0$ there, never $1$.
 > 3. *The kernel is complex.* At $x_0$, i.e. $(z,w) = (i, 0)$, the complex gradient is $(2i, 2)$, and its kernel is the complex line $\{2i\,h + 2k = 0\} = \{k = -i h\}$. Writing $h = h_1 + i h_2$ and $k = k_1 + i k_2$, the condition $k = -ih = h_2 - i h_1$ reads $k_1 = h_2$, $k_2 = -h_1$ — which is $\{(x,y,y,-x)\}$ from Step 5. As Corollary [[§7 The Regular Value Theorem#^cor-7-12|§7.12]] predicts, it is a complex subspace.
 
@@ -662,6 +677,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 > $$
 >
 > and by Lemma [[§7 The Regular Value Theorem#^lem-7-1|§7.1]], $DF_g(h) = hg^{\ast} + gh^{\ast}$.
+>
 > 2. *Not $\mathbb{C}$-linear.* Since $(ih)^{\ast} = \bar{i}\, h^{\ast} = -i\,h^{\ast}$,
 >
 > $$

@@ -205,13 +205,15 @@ A kernel and its transpose, drawn like matrices: the value $K(x, y)$ is the colo
 ^rem-46-3
 
 > [!example] Example §46.1: The Adjoint of a Hilbert–Schmidt Operator
-> *(Not from lecture.)* Let $K$ and $T$ be as in Definition [[§46 The Transpose#^def-46-2|§46.2]], and let $T^\ast$ be the Hilbert–Schmidt operator with kernel $\overline{K(y, x)}$,
+> Let $K$ and $T$ be as in Definition [[§46 The Transpose#^def-46-2|§46.2]], and let $T^\ast$ be the Hilbert–Schmidt operator with kernel $\overline{K(y, x)}$,
 >
 > $$
 > T^\ast g(x) = \int_\Omega \overline{K(y, x)}\, g(y)\, d\mu(y) .
 > $$
 >
 > Then $(Tf, g) = (f, T^\ast g)$ for all $f, g \in L^2(\mu)$. So $T^\ast$ is the adjoint of $T$, and $T^\ast = T$ when $K(x, y) = \overline{K(y, x)}$ for almost every $(x, y)$.
+>
+> *Source: not from lecture*
 
 ^ex-46-1
 
@@ -294,7 +296,9 @@ The annihilator $Y^\perp \subset X'$ was defined for a linear subspace $Y$ of $X
 ^def-46-3
 
 > [!theorem] Lemma §46.5: ${}^\perp S$ is a Closed Subspace
-> *(Not from lecture.)* Let $X$ be a normed linear space and $S \subset X'$. Then ${}^\perp S$ is a closed linear subspace of $X$.
+> Let $X$ be a normed linear space and $S \subset X'$. Then ${}^\perp S$ is a closed linear subspace of $X$.
+>
+> *Source: not from lecture*
 >
 > *Lax: §15.1, before Thm 5 (``clearly'')*
 
@@ -338,10 +342,12 @@ In the lecture the null space and range of $M \in \mathcal{L}(X, Y)$ are written
 *Uses:* [[§36 Duality in Normed Spaces#^cor-36-3|§36.3]]
 
 > [!theorem] Corollary §46.7: The Closure of the Range
-> *(Not from lecture.)* Let $X, Y$ be normed linear spaces and $M \in \mathcal{L}(X, Y)$.
+> Let $X, Y$ be normed linear spaces and $M \in \mathcal{L}(X, Y)$.
 >
 > 1. $\overline{R(M)} = {}^\perp N(M')$: a vector $y \in Y$ is a limit of vectors $Mx$ if and only if $\ell(y) = 0$ for every $\ell \in Y'$ with $M'\ell = 0$.
 > 2. If $R(M)$ is closed, then for $y \in Y$ the equation $Mx = y$ has a solution $x \in X$ if and only if $\ell(y) = 0$ for every $\ell \in N(M')$.
+>
+> *Source: not from lecture*
 
 ^cor-46-7
 

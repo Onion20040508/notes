@@ -330,12 +330,12 @@ The bound $n \geq 5$ in Theorem [[§47 Commutators#^thm-47-11|§47.11]] is sharp
 >
 > In particular, if $2q \geq \min(p, r)$, every element of $[G, G]$ is a commutator.
 >
-> *Source: review session 10/21; the inclusion $\supseteq$ not from class*
+> *Source: review session 10/21*
 
 ^prop-47-12
 
 > [!proof]+ Proof
-> *Idea:* a matrix of rank at most $2q$ factors through $\mathbb{R}^{2q}$; split the factorization into two blocks of size $q$.
+> *(Review session 10/21; the inclusion $\supseteq$ not from class.)* *Idea:* a matrix of rank at most $2q$ factors through $\mathbb{R}^{2q}$; split the factorization into two blocks of size $q$.
 >
 > By part (1) of Example [[§47 Commutators#^ex-47-5|§47.5]], the commutator of $T(A, B, C')$ and $T(X, Y, Z)$ is $T(0, 0, AY - XB)$, and $A, B, X, Y$ can be chosen freely; so the commutators correspond exactly to the elements of the set $\{AY - XB\}$.
 >

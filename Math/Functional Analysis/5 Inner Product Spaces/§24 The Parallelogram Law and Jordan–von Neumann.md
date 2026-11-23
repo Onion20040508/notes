@@ -222,13 +222,15 @@ The next theorem says it is the *only* obstruction.
 ^rem-24-1
 
 > [!example] Example §24.1: An Additive Function That is Not Linear
-> *(Construction filled in.)* A function $f : \mathbb{R} \to \mathbb{R}$ is *additive* if $f(s + t) = f(s) + f(t)$ for all $s, t \in \mathbb{R}$. We construct an additive $f$ that is not linear, i.e. not of the form $f(t) = ct$.
+> A function $f : \mathbb{R} \to \mathbb{R}$ is *additive* if $f(s + t) = f(s) + f(t)$ for all $s, t \in \mathbb{R}$. We construct an additive $f$ that is not linear, i.e. not of the form $f(t) = ct$.
 >
 > *A Hamel basis.* Regard $\mathbb{R}$ as a linear space over $\mathbb{Q}$. Let $P$ be the set of $\mathbb{Q}$-linearly independent subsets of $\mathbb{R}$ that contain $1$, ordered by inclusion. $P \neq \varnothing$ since $\{1\} \in P$, and the union of a chain in $P$ lies in $P$, because each finite subset of the union lies in a single member of the chain and is therefore independent. By Zorn's lemma (Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]]) $P$ has a maximal element $B$. $B$ spans $\mathbb{R}$ over $\mathbb{Q}$: if some $t$ were not a finite $\mathbb{Q}$-combination of elements of $B$, then $B \cup \{t\}$ would be independent, contradicting maximality. So every $t \in \mathbb{R}$ is, uniquely, a finite combination $t = \sum_{b \in B} q_b(t)\, b$ with $q_b(t) \in \mathbb{Q}$, all but finitely many equal to $0$.
 >
 > *$B$ contains an element other than $1$.* Otherwise every real number would be a rational multiple of $1$, i.e. $\mathbb{R} = \mathbb{Q}$, which is false since $\mathbb{R}$ is uncountable and $\mathbb{Q}$ is countable.
 >
 > *The function.* Let $f(t) = q_1(t)$, the coefficient of $1$. Adding the expansions of $s$ and $t$ gives an expansion of $s + t$, so by uniqueness $q_1(s + t) = q_1(s) + q_1(t)$: $f$ is additive. If $f$ were linear, then $f(t) = t f(1) = t$ for all $t$, because $f(1) = 1$. But for $b \in B$ with $b \neq 1$, the expansion of $b$ is $b$ itself, so $f(b) = 0$, while $b \neq 0$ since $0$ lies in no linearly independent set. Hence $f(b) \neq b$, and $f$ is additive but not linear.
+>
+> *Source: filled in*
 
 ^ex-24-1
 

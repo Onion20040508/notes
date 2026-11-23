@@ -39,9 +39,11 @@ Worksheet 18 prints the character table of $S_3$ as an example. It consists of t
 >
 > The class functions form a vector space over $k$ with pointwise addition and scalar multiplication, written $\operatorname{Cl}(G)$.
 >
-> *Source: board 11/18, as the space $X$ of functions from the set of conjugacy classes of $G$ to $k$*
+> *Source: board 11/18*
 
 ^def-71-1
+
+*Source note.* Board 11/18, as the space $X$ of functions from the set of conjugacy classes of $G$ to $k$.
 
 A class function is the same thing as a function on the set of conjugacy classes: its value on a class is its common value on the elements of the class. This is how the board describes the space. By WS 18.1 (Proposition [[§67 Characters of Representations#^prop-67-1|§67.1]](2)), the [[§67 Characters of Representations#^def-67-1|character]] $\chi_V$ of every representation is a class function.
 
@@ -56,12 +58,12 @@ A class function is the same thing as a function on the set of conjugacy classes
 >
 > the number of conjugacy classes of $G$.
 >
-> *Source: board 11/18 (stated: the dimension is the number of conjugacy classes); the proof is not from class*
+> *Source: board 11/18*
 
 ^prop-71-1
 
 > [!proof]+ Proof
-> *(Not from class; filled in.)* The conjugacy classes are the orbits of $G$ acting on itself by conjugation, so every element of $G$ lies in exactly one of them (Orbits Partition $X$, Proposition [[§27 Orbits#^prop-27-1|§27.1]]).
+> *(Board 11/18 (stated: the dimension is the number of conjugacy classes); the proof is not from class.)* *(Not from class; filled in.)* The conjugacy classes are the orbits of $G$ acting on itself by conjugation, so every element of $G$ lies in exactly one of them (Orbits Partition $X$, Proposition [[§27 Orbits#^prop-27-1|§27.1]]).
 >
 > *Each $\delta_i$ is a class function.* $hgh^{-1}$ lies in the same conjugacy class as $g$, so $\delta_i(hgh^{-1}) = \delta_i(g)$.
 >
@@ -79,12 +81,12 @@ A class function is the same thing as a function on the set of conjugacy classes
 > 1. If $f: G \to k$ is a [[§71 The Character Table#^def-71-1|class function]], then $\displaystyle\sum_{g \in G} f(g) = \sum_{i=1}^c |\operatorname{Conj}(g_i)|\,f(g_i)$.
 > 2. If $\alpha$ and $\beta$ are class functions, then so is $g \mapsto \alpha(g^{-1})\,\beta(g)$.
 >
-> *Source: used on the board 11/18 in WS 18.3; the proof is not from class*
+> *Source: board 11/18; WS 18.3*
 
 ^lem-71-2
 
 > [!proof]+ Proof
-> *(Not from class; filled in.)* **(1)** $G$ is the disjoint union of the classes $\operatorname{Conj}(g_i)$ (Proposition [[§27 Orbits#^prop-27-1|§27.1]]), and $f$ takes the value $f(g_i)$ at each of the $|\operatorname{Conj}(g_i)|$ elements of $\operatorname{Conj}(g_i)$.
+> *(Used on the board 11/18 in WS 18.3; the proof is not from class.)* *(Not from class; filled in.)* **(1)** $G$ is the disjoint union of the classes $\operatorname{Conj}(g_i)$ (Proposition [[§27 Orbits#^prop-27-1|§27.1]]), and $f$ takes the value $f(g_i)$ at each of the $|\operatorname{Conj}(g_i)|$ elements of $\operatorname{Conj}(g_i)$.
 >
 > **(2)** Since $(hgh^{-1})^{-1} = hg^{-1}h^{-1}$,
 >
@@ -121,12 +123,12 @@ So the pairing does not depend on the choice of the representatives $g_i$. Works
 > 1. $\langle c\alpha + c'\alpha', \beta \rangle = c\,\langle \alpha, \beta \rangle + c'\,\langle \alpha', \beta \rangle$ and $\langle \beta, c\alpha + c'\alpha' \rangle = c\,\langle \beta, \alpha \rangle + c'\,\langle \beta, \alpha' \rangle$;
 > 2. $\langle \alpha, \beta \rangle = \langle \beta, \alpha \rangle$.
 >
-> *Source: board 11/18 (the symmetry, as a claim); part (1) is not from class*
+> *Source: board 11/18*
 
 ^prop-71-3
 
 > [!proof]+ Proof
-> **(1)** *(Not from class; filled in.)* Each term $\alpha(g^{-1})\beta(g)$ of the sum is a product of one value of the first function and one value of the second.
+> *(Board 11/18 (the symmetry, as a claim); part (1) is not from class.)* **(1)** *(Not from class; filled in.)* Each term $\alpha(g^{-1})\beta(g)$ of the sum is a product of one value of the first function and one value of the second.
 >
 > **(2)** *(Board 11/18.)* Inversion $g \mapsto g^{-1}$ is a bijection of $G$. Substituting $h = g^{-1}$,
 >
@@ -270,7 +272,7 @@ Orthogonality limits, for the first time, the number of simple representations o
 *(Not from lecture; figure added.)* Corollary [[§71 The Character Table#^cor-71-7|§71.7]] for $S_3$ over $\mathbb{R}$. A class function $\alpha$ on $S_3$ has three values, and in the coordinates $y_i = \sqrt{|\operatorname{Conj}(g_i)|/6}\,\alpha(g_i)$ the pairing of two characters is the ordinary dot product in $\mathbb{R}^3$ (the remark [[§71 The Character Table#^rem-71-1|In What Sense the Pairing Is an Inner Product]], part (1)). The three characters $\chi_{\mathrm{triv}}$, $\chi_{\mathrm{sign}}$, $\chi_U$ become three perpendicular unit vectors. Three perpendicular nonzero vectors in $\mathbb{R}^3$ are linearly independent, and a fourth vector perpendicular to all three would be zero. So there is no fourth simple representation.
 
 > [!example] Example §71.1: $S_3$ Has Exactly Three Simple Representations
-> *(Not from class.)* $S_3$ has $c = 3$ conjugacy classes, the [[§33 Conjugacy Classes#^def-33-2|cycle types]] (Theorem [[§33 Conjugacy Classes#^thm-33-3|§33.3]]). The [[§61 Representations and Subrepresentations#^ex-61-1|trivial representation]], the [[§66 Invariant Vectors#^ex-66-3|sign representation]] and $U$ are three pairwise non-isomorphic [[§65 Simple Representations#^def-65-1|simple]] representations, over every field $k$ containing $\mathbb{Q}$ (Example [[§70 Schur's Lemma and Multiplicities#^ex-70-2|§70.2]]). By WS 18.4(2) (Corollary [[§71 The Character Table#^cor-71-7|§71.7]]) there cannot be a fourth. This settles the question left open in Example [[§70 Schur's Lemma and Multiplicities#^ex-70-2|§70.2]].
+> $S_3$ has $c = 3$ conjugacy classes, the [[§33 Conjugacy Classes#^def-33-2|cycle types]] (Theorem [[§33 Conjugacy Classes#^thm-33-3|§33.3]]). The [[§61 Representations and Subrepresentations#^ex-61-1|trivial representation]], the [[§66 Invariant Vectors#^ex-66-3|sign representation]] and $U$ are three pairwise non-isomorphic [[§65 Simple Representations#^def-65-1|simple]] representations, over every field $k$ containing $\mathbb{Q}$ (Example [[§70 Schur's Lemma and Multiplicities#^ex-70-2|§70.2]]). By WS 18.4(2) (Corollary [[§71 The Character Table#^cor-71-7|§71.7]]) there cannot be a fourth. This settles the question left open in Example [[§70 Schur's Lemma and Multiplicities#^ex-70-2|§70.2]].
 >
 > 1. *Every simple representation of $S_3$ over $k$ is isomorphic to exactly one of $\mathrm{triv}$, $\mathrm{sign}$, $U$.* Otherwise it would be a fourth simple representation, not isomorphic to these three.
 > 2. *Every finite-dimensional representation $V$ of $S_3$ over $k$ is isomorphic to $\mathrm{triv}^{\oplus a} \oplus \mathrm{sign}^{\oplus b} \oplus U^{\oplus m}$* for integers $a, b, m \geq 0$, by Corollary [[§70 Schur's Lemma and Multiplicities#^cor-70-3|§70.3]] and (1). Then $\chi_V = a\,\chi_{\mathrm{triv}} + b\,\chi_{\mathrm{sign}} + m\,\chi_U$ (Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-2|§70.2]]). Each of the three has $\langle \chi_S, \chi_S \rangle = 1$ (Example [[§70 Schur's Lemma and Multiplicities#^ex-70-1|§70.1]]), so by orthogonality (Proposition [[§71 The Character Table#^prop-71-5|§71.5]])
@@ -338,12 +340,12 @@ Orthogonality limits, for the first time, the number of simple representations o
 > 3. $\mathbb{C}^2$ is not simple: $L = \operatorname{span}_{\mathbb{C}}\left\{\left(\begin{smallmatrix} 1 \\ -i \end{smallmatrix}\right)\right\}$ is a subrepresentation with $L \neq \{0\}$ and $L \neq \mathbb{C}^2$.
 > 4. $\mathbb{C}^2 = L \oplus L'$ with $L' = \operatorname{span}_{\mathbb{C}}\left\{\left(\begin{smallmatrix} 1 \\ i \end{smallmatrix}\right)\right\}$. On $L$ the element $k$ acts by the scalar $i^k$, and on $L'$ by $(-i)^k$.
 >
-> *Source: PS 10.4(1)–(3); part (4) is from the lecture of 11/20 (Example [[§72 Representations of Cyclic Groups#^ex-72-2|§72.2]])*
+> *Source: PS 10.4(1)–(3); lecture 11/20*
 
 ^ex-71-3
 
 > [!proof]+ Proof
-> *(Problem Set 10, Problem 10.4, as submitted.)*
+> *(PS 10.4(1)–(3); part (4) is from the lecture of 11/20 (Example [[§72 Representations of Cyclic Groups#^ex-72-2|§72.2]]).)* *(Problem Set 10, Problem 10.4, as submitted.)*
 >
 > **(1)** Write $J = \rho(1) = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$, so that $J(a, b) = (-b, a)$.
 >

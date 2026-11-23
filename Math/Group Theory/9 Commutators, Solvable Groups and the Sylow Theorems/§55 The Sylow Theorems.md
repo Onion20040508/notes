@@ -188,12 +188,12 @@ tags: [group-theory, math493]
 >
 > $$ |HL| = \frac{|H|\,|L|}{|H \cap L|}. $$
 >
-> *Source: not from lecture; the lecture uses it in the proof of the Third Sylow Theorem*
+> *Source: not from lecture*
 
 ^lem-55-8
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Consider the surjective map $\mu : H \times L \to HL$, $\mu(h, l) = hl$. We show that every element of $HL$ has exactly $|H \cap L|$ preimages; then $|H \times L| = |HL| \cdot |H \cap L|$, which is the formula.
+> *(The lecture uses it in the proof of the Third Sylow Theorem.)* *(Not from lecture; filled in.)* Consider the surjective map $\mu : H \times L \to HL$, $\mu(h, l) = hl$. We show that every element of $HL$ has exactly $|H \cap L|$ preimages; then $|H \times L| = |HL| \cdot |H \cap L|$, which is the formula.
 >
 > Fix $hl \in HL$. For $d \in H \cap L$, $(hd, d^{-1}l) \in H \times L$ and $\mu(hd, d^{-1}l) = hdd^{-1}l = hl$; distinct $d$ give distinct pairs. Conversely, if $\mu(h', l') = hl$, put $d = h^{-1}h'$. Then $d \in H$, and $d = h^{-1}h' = l\,l'^{-1}$ (from $h'l' = hl$), so $d \in L$; and $h' = hd$, $l' = d^{-1}l$. So the preimages of $hl$ are exactly the $|H \cap L|$ pairs $(hd, d^{-1}l)$, $d \in H \cap L$.
 
@@ -248,12 +248,12 @@ tags: [group-theory, math493]
 > [!theorem] Corollary §55.10: The Number of Sylow Subgroups Divides $|G|$
 > Let $G$ be finite, $|G| = p^k m$ with $p \nmid m$, and let $n_p$ be the number of Sylow $p$-subgroups of $G$. Then $n_p$ divides $|G|$; in fact $n_p$ divides $m$. Together with the Third Sylow Theorem: $n_p \mid m$ and $n_p \equiv 1 \pmod p$.
 >
-> *Source: lecture 10/16 ($n_p$ divides $|G|$); $n_p \mid m$ not from lecture*
+> *Source: lecture 10/16*
 
 ^cor-55-10
 
 > [!proof]+ Proof
-> *Idea:* Orbit–stabilizer for the single conjugation orbit; the stabilizer of $P$ contains $P$.
+> *(The lecture of 10/16 gave that $n_p$ divides $|G|$; that $n_p \mid m$ is not from lecture.)* *Idea:* Orbit–stabilizer for the single conjugation orbit; the stabilizer of $P$ contains $P$.
 >
 > By the Second Sylow Theorem, the conjugation action of $G$ on the set $X$ of Sylow $p$-subgroups (proof of Theorem [[§55 The Sylow Theorems#^thm-55-9|§55.9]]) has one orbit, $X = G \star P$ for any $P \in X$. By Orbit–Stabilizer (Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]]), $|G| = n_p \cdot |\operatorname{Stab}_G(P)|$, so $n_p$ divides $|G|$ (lecture). *(Not from lecture:)* $P \subseteq \operatorname{Stab}_G(P)$, since $xPx^{-1} = P$ for $x \in P$; so $p^k$ divides $|\operatorname{Stab}_G(P)|$ (Lagrange), and $n_p = p^k m / |\operatorname{Stab}_G(P)|$ divides $m$.
 
@@ -300,12 +300,12 @@ tags: [group-theory, math493]
 > [!theorem] Proposition §55.11: Groups of Order $pq$
 > Let $p < q$ be primes with $q \not\equiv 1 \pmod p$, and let $|G| = pq$. Then $G \cong \mathbb{Z}/pq\mathbb{Z}$.
 >
-> *Source: lecture 10/16, stated after the case $|G| = 15$ (proof filled in); second proof PS 8.3(1)*
+> *Source: lecture 10/16; PS 8.3(1)*
 
 ^prop-55-11
 
 > [!proof]+ Proof
-> *Idea:* Sylow counting forces $n_p = n_q = 1$; the two normal cyclic Sylow subgroups split $G$.
+> *(Lecture 10/16, stated after the case $|G| = 15$ (proof filled in); second proof PS 8.3(1).)* *Idea:* Sylow counting forces $n_p = n_q = 1$; the two normal cyclic Sylow subgroups split $G$.
 >
 > *(Filled in, following the case $|G| = 15$.)* The divisors of $pq$ are $1, p, q, pq$.
 >
@@ -395,12 +395,12 @@ The **standard flag** $\mathcal{F}_0$ has $V_i = \langle e_1, \ldots, e_i \rangl
 > |G| = \prod_{j=0}^{n-1} (p^n - p^j), \qquad |B| = (p-1)^n p^{\binom{n}{2}}, \qquad \#\{\text{complete flags}\} = |G/B| = \frac{|G|}{|B|}.
 > $$
 >
-> *Source: office hours 11/4 (the orders); the flag picture not from class*
+> *Source: office hours 11/4*
 
 ^prop-55-12
 
 > [!proof]+ Proof
-> *Idea:* A flag is the same as a basis up to upper triangular change; the columns of $g$ are such a basis.
+> *(Office hours 11/4 (the orders); the flag picture not from class.)* *Idea:* A flag is the same as a basis up to upper triangular change; the columns of $g$ are such a basis.
 >
 > *(Not from class.)* *Transitive:* given a flag $(V_i)$, choose $v_i \in V_i \setminus V_{i-1}$ for $i = 1, \ldots, n$. By induction on $i$, $v_1, \ldots, v_i$ is a basis of $V_i$: it is independent because $v_i \notin V_{i-1} = \langle v_1, \ldots, v_{i-1} \rangle$, and $\dim V_i = i$. The matrix $g$ with columns $v_1, \ldots, v_n$ is invertible and $g\langle e_1, \ldots, e_i \rangle = \langle v_1, \ldots, v_i \rangle = V_i$, so $g\mathcal{F}_0 = (V_i)$.
 >

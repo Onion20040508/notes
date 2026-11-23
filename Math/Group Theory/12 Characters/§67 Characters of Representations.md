@@ -46,12 +46,12 @@ Many things in representation theory can be computed from characters, starting w
 > 1. $\chi_V(e) = (\dim V) \cdot 1_k$;
 > 2. $\chi_V(hgh^{-1}) = \chi_V(g)$ for all $g, h \in G$: the character is constant on each conjugacy class.
 >
-> *Source: lecture 11/9; part (2) is also WS 18.1; part (1) not from class*
+> *Source: lecture 11/9; WS 18.1*
 
 ^prop-67-1
 
 > [!proof]+ Proof
-> **(1)** *(Not from class; filled in.)* $e$ acts as the identity (action axiom), whose matrix in any basis is the identity matrix, of trace $(\dim V) \cdot 1_k$.
+> *(Lecture 11/9; part (2) is also WS 18.1; part (1) not from class.)* **(1)** *(Not from class; filled in.)* $e$ acts as the identity (action axiom), whose matrix in any basis is the identity matrix, of trace $(\dim V) \cdot 1_k$.
 >
 > **(2)** *(Board 11/9.)* Since $\rho_V$ is a homomorphism (Representations Are Homomorphisms to $GL(V)$, Proposition [[§61 Representations and Subrepresentations#^prop-61-1|§61.1]]),
 >
@@ -76,12 +76,12 @@ So a character is determined by one value per conjugacy class, which is much les
 >
 > Consequently, if $W = U \oplus V$ is a representation of $G$ and $U$, $V$ are subrepresentations, then $\chi_W = \chi_U + \chi_V$.
 >
-> *Source: lecture 11/9; also WS 18.2, with the block matrix on the board 11/18*
+> *Source: lecture 11/9; WS 18.2; board 11/18*
 
 ^prop-67-2
 
 > [!proof]+ Proof
-> *(Board 11/9; the statement was proposed in class and then proved.)* By Bases of a Direct Sum (Proposition [[§62 Direct Sums and Maschke's Theorem#^prop-62-1|§62.1]]), a basis $u_1, \ldots, u_m$ of $U$ and a basis $v_1, \ldots, v_n$ of $V$ together form a basis of $W$. In it the matrix of $A \oplus B$ is block diagonal, $\left(\begin{smallmatrix} A & 0 \\ 0 & B \end{smallmatrix}\right)$: $A$ uses nothing from $V$, and $B$ nothing from $U$. Its diagonal is that of $A$ followed by that of $B$, so the traces add. For representations, $\rho_W(g) = \rho_U(g) \oplus \rho_V(g)$, since $g(u + v) = gu + gv$ with $gu \in U$ and $gv \in V$ (WS 14.2, Proposition [[§62 Direct Sums and Maschke's Theorem#^prop-62-2|§62.2]]). Taking traces gives $\chi_W(g) = \chi_U(g) + \chi_V(g)$.
+> *(Lecture 11/9; also WS 18.2, with the block matrix on the board 11/18.)* *(Board 11/9; the statement was proposed in class and then proved.)* By Bases of a Direct Sum (Proposition [[§62 Direct Sums and Maschke's Theorem#^prop-62-1|§62.1]]), a basis $u_1, \ldots, u_m$ of $U$ and a basis $v_1, \ldots, v_n$ of $V$ together form a basis of $W$. In it the matrix of $A \oplus B$ is block diagonal, $\left(\begin{smallmatrix} A & 0 \\ 0 & B \end{smallmatrix}\right)$: $A$ uses nothing from $V$, and $B$ nothing from $U$. Its diagonal is that of $A$ followed by that of $B$, so the traces add. For representations, $\rho_W(g) = \rho_U(g) \oplus \rho_V(g)$, since $g(u + v) = gu + gv$ with $gu \in U$ and $gv \in V$ (WS 14.2, Proposition [[§62 Direct Sums and Maschke's Theorem#^prop-62-2|§62.2]]). Taking traces gives $\chi_W(g) = \chi_U(g) + \chi_V(g)$.
 
 ^pf-67-2
 
@@ -108,9 +108,11 @@ So a character is determined by one value per conjugacy class, which is much les
 > [!definition] Definition §67.2: Character Table
 > The **character table** of $G$ has one column for each [[§33 Conjugacy Classes#^def-33-1|conjugacy class]] of $G$, headed by a representative of the class, and one row for each simple representation (Definition [[§65 Simple Representations#^def-65-1|§65.1]]) of $G$, up to [[§61 Representations and Subrepresentations#^def-61-5|isomorphism]]. The entry is the value of the character $\chi_S$ on the class. Characters of other representations are sometimes listed in further rows below a line, as in Example [[§67 Characters of Representations#^ex-67-1|§67.1]].
 >
-> *Source: lecture 11/9; WS 18, which fixes that only simple representations are listed, each isomorphism class once*
+> *Source: lecture 11/9; WS 18*
 
 ^def-67-2
+
+*Source note.* Lecture 11/9; WS 18, which fixes that only simple representations are listed, each isomorphism class once.
 
 > [!example] Example §67.1: Characters of $S_3$ over $\mathbb{R}$
 > The conjugacy classes of $S_3$ are the cycle types (Conjugacy Classes in $S_n$ Are Cycle Types, Theorem [[§33 Conjugacy Classes#^thm-33-3|§33.3]]), with representatives $e$, $(1\,2)$, $(1\,2\,3)$ and sizes $1$, $3$, $2$.
@@ -138,6 +140,8 @@ So a character is determined by one value per conjugacy class, which is much les
 *(Not from lecture; figure added.)* Where the rows of the table come from. Left: $S_3$ permutes the basis vectors $e_1, e_2, e_3$, drawn as the corners of a triangle. The trace of a permutation matrix is the number of fixed corners: $3$ for $e$, $1$ for $(1\,2)$, which reflects in the dashed mirror and fixes only $e_3$ (circled), and $0$ for $(1\,2\,3)$, which turns the triangle by $120^\circ$. Right: on the plane $U = (1,1,1)^\perp$, with $\bar e_i$ the projections of the $e_i$, $(1\,2)$ is the reflection in the dashed line. It fixes the red vector on the mirror (eigenvalue $+1$) and reverses the perpendicular vector $x$ (eigenvalue $-1$), so its trace is $1 + (-1) = 0$. The $3$-cycle is the rotation by $120^\circ$, with matrix $\left(\begin{smallmatrix} \cos 120^\circ & -\sin 120^\circ \\ \sin 120^\circ & \cos 120^\circ \end{smallmatrix}\right)$ in an orthonormal basis and trace $2\cos 120^\circ = -1$.
 
 > [!example] Example §67.2: The Character of $k\{1,2,3\}$ Is Not a Homomorphism
-> *(Not from class.)* The character of the permutation representation $k\{1,2,3\} = k^3$ of $S_3$ takes the values $3$, $1$, $0$ on the three conjugacy classes (Example [[§67 Characters of Representations#^ex-67-1|§67.1]]). The value $0$ at $(1\,2\,3)$ does not lie in $k^\times$, so $\chi$ is not a homomorphism $S_3 \to k^\times$. And $\chi(e) = 3 \neq 1$ whenever $2 \neq 0$ in $k$, while a homomorphism sends $e$ to $1$.
+> The character of the permutation representation $k\{1,2,3\} = k^3$ of $S_3$ takes the values $3$, $1$, $0$ on the three conjugacy classes (Example [[§67 Characters of Representations#^ex-67-1|§67.1]]). The value $0$ at $(1\,2\,3)$ does not lie in $k^\times$, so $\chi$ is not a homomorphism $S_3 \to k^\times$. And $\chi(e) = 3 \neq 1$ whenever $2 \neq 0$ in $k$, while a homomorphism sends $e$ to $1$.
+>
+> *Source: not from class*
 
 ^ex-67-2

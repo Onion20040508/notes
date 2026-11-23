@@ -56,9 +56,11 @@ tags: [group-theory, math493]
 >
 > For $r = 0$ the empty sum is $0$, so $V = \{0\}$.
 >
-> *Source: not from class; used in Corollary [[§65 Simple Representations#^cor-65-2|§65.2]]*
+> *Source: not from class*
 
 ^def-65-3
+
+*Source note.* Not from class; used in Corollary [[§65 Simple Representations#^cor-65-2|§65.2]].
 
 > [!remark]- Connections
 > - Linear Algebra: this is Axler's definition of a direct sum, [[§3 Subspaces#^ladr-1-41|LADR 1.41]]; for two subspaces, [[§3 Subspaces#^ladr-1-46|LADR 1.46]].
@@ -100,12 +102,12 @@ For $r = 2$ this is Definition [[§62 Direct Sums and Maschke's Theorem#^def-62-
 > [!theorem] Corollary §65.3: Every Representation Is a Direct Sum of Simples, over Any Field with $|G| \neq 0$
 > Let $G$ be finite, $k$ a field in which $|G| \neq 0$, and $V$ a finite-dimensional representation of $G$ over $k$. Then $V = V_1 \oplus \cdots \oplus V_r$ (Definition [[§65 Simple Representations#^def-65-3|§65.3]]) for simple subrepresentations $V_1, \ldots, V_r$ of $V$, with $r = 0$ when $V = \{0\}$.
 >
-> *Source: not from class; available since PS 9.3 proves Maschke's theorem*
+> *Source: not from class*
 
 ^cor-65-3
 
 > [!proof]+ Proof
-> *(Not from class.)* The proof of Corollary [[§65 Simple Representations#^cor-65-2|§65.2]] applies word for word after one renaming: “real representation” becomes “representation over $k$”, and Maschke's theorem over $\mathbb{R}$ (Corollary [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-6|§63.6]]) becomes Maschke's theorem (Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]), proved in [[§62 Direct Sums and Maschke's Theorem|§62]] for every field in which $|G| \neq 0$. That citation is the only place where the field enters. Every other step uses only dimensions and direct sums, which work over any field.
+> *(Not from class; available since PS 9.3 proves Maschke's theorem.)* *(Not from class.)* The proof of Corollary [[§65 Simple Representations#^cor-65-2|§65.2]] applies word for word after one renaming: “real representation” becomes “representation over $k$”, and Maschke's theorem over $\mathbb{R}$ (Corollary [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-6|§63.6]]) becomes Maschke's theorem (Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]), proved in [[§62 Direct Sums and Maschke's Theorem|§62]] for every field in which $|G| \neq 0$. That citation is the only place where the field enters. Every other step uses only dimensions and direct sums, which work over any field.
 
 ^pf-65-3
 

@@ -60,7 +60,9 @@ The course has used the analogy that simple groups are atoms and other groups ar
 ^pf-50-1
 
 > [!remark] Remark: Relation to Solvable Groups
-> *(Not from class.)* The chain in the definition of a solvable group (Definition [[§48 Solvable Groups#^def-48-1|§48.1]]) is a subnormal series whose quotients are abelian; a composition series is one whose quotients are simple. Since the abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ (Theorem [[§43 Simple Groups#^thm-43-1|§43.1]]), the two notions meet: *a finite group is solvable if and only if all of its composition factors are cyclic of prime order* (Proposition [[§52 The Jordan–Hölder Theorem#^prop-52-2|§52.2]], after the Jordan–Hölder theorem, with the examples $S_4$ and $A_5$).
+> The chain in the definition of a solvable group (Definition [[§48 Solvable Groups#^def-48-1|§48.1]]) is a subnormal series whose quotients are abelian; a composition series is one whose quotients are simple. Since the abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ (Theorem [[§43 Simple Groups#^thm-43-1|§43.1]]), the two notions meet: *a finite group is solvable if and only if all of its composition factors are cyclic of prime order* (Proposition [[§52 The Jordan–Hölder Theorem#^prop-52-2|§52.2]], after the Jordan–Hölder theorem, with the examples $S_4$ and $A_5$).
+>
+> *Source: not from class*
 
 ^rem-50-2
 

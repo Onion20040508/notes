@@ -407,7 +407,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 *Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^def-71-1|Def. §71.1]], [[§71 The Exponential Map#^prop-71-11|§71.11]], [[§71 The Exponential Map#^lem-71-6|§71.6]], [[§71 The Exponential Map#^lem-71-5|§71.5]]
 
 > [!example] Example §71.1: $\exp(A + B) \neq \exp(A)\exp(B)$ for Two Nilpotent Matrices
-> *(Not from lecture.)* In $\mathrm{GL}(2, \mathbb{R})$, for $A = \begin{psmallmatrix} 0 & 1 \\ 0 & 0 \end{psmallmatrix}$ and $B = \begin{psmallmatrix} 0 & 0 \\ 1 & 0 \end{psmallmatrix}$,
+> In $\mathrm{GL}(2, \mathbb{R})$, for $A = \begin{psmallmatrix} 0 & 1 \\ 0 & 0 \end{psmallmatrix}$ and $B = \begin{psmallmatrix} 0 & 0 \\ 1 & 0 \end{psmallmatrix}$,
 >
 > $$
 > \exp(A)\exp(B) = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix} \neq \begin{pmatrix} \cosh 1 & \sinh 1 \\ \sinh 1 & \cosh 1 \end{pmatrix} = \exp(A + B) ,
@@ -432,6 +432,8 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 > *They differ.* The top-left entries are $2$ and $\cosh 1 = (e + e^{-1})/2 < (3 + 1)/2 = 2$.
 >
 > *The bracket.* $AB = \begin{psmallmatrix} 1 & 0 \\ 0 & 0 \end{psmallmatrix}$ and $BA = \begin{psmallmatrix} 0 & 0 \\ 0 & 1 \end{psmallmatrix}$, so $[A, B] = \begin{psmallmatrix} 1 & 0 \\ 0 & -1 \end{psmallmatrix} \neq 0$: $A$ and $B$ do not commute.
+>
+> *Source: not from lecture*
 
 ^ex-71-1
 
@@ -445,8 +447,6 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 *(Not from lecture; figure added.)* Wrapping the tangent space around the group, for $G = \mathrm{U}(1)$: $\mathfrak{u}(1) = i\mathbb{R}$, and $\exp(ti) = e^{it}$ (Theorem [[§71 The Exponential Map#^thm-71-12|§71.12]] with $n = 1$, complex). The segment $[0, 2\pi i]$ (blue) goes once around the circle and $[-\pi i, 0]$ (red) covers the lower half again: $\exp$ is onto but not one-to-one, while near $0$ it is one-to-one, as Proposition [[§71 The Exponential Map#^prop-71-13|§71.13]] guarantees in general.
 
 > [!example] Example §71.2: Two Groups Where $\exp$ Is Not Surjective
-> *(Not from lecture; filled in.)*
->
 > 1. For $G = \mathrm{O}(n)$, $\exp(A) \in \mathrm{SO}(n)$ for every $A \in T_I\mathrm{O}(n)$; so no element of $\mathrm{O}(n) \setminus \mathrm{SO}(n)$, for instance $\mathrm{diag}(-1, 1, \ldots, 1)$, is an exponential.
 > 2. For $G = \mathrm{SL}(2, \mathbb{R})$, the matrix $B = \begin{psmallmatrix} -1 & 1 \\ 0 & -1 \end{psmallmatrix}$, which has $\det B = 1$, is not $\exp(A)$ for any $A \in \mathfrak{sl}(2, \mathbb{R})$. ($\mathrm{SL}(2, \mathbb{R})$ is connected, by Corollary [[§71 The Exponential Map#^cor-71-16|§71.16]] below; so here the failure is not a matter of components.)
 >
@@ -469,6 +469,8 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 > and $\operatorname{tr} \exp(A) = 2\alpha$, because $\operatorname{tr} I = 2$ and $\operatorname{tr} A = 0$.
 >
 > *(2), $\exp(A) \neq B$.* Suppose $\exp(A) = B$. Then $2\alpha = \operatorname{tr} B = -2$, so $\alpha = -1$. If $d = 0$, then $\alpha = 1$. If $d < 0$, put $\omega = \sqrt{-d}$; then $\alpha = \sum_k \omega^{2k}/(2k)! = \cosh\omega \ge 1$. So $d > 0$; put $\omega = \sqrt{d} > 0$. Then $\alpha = \sum_k (-1)^k \omega^{2k}/(2k)! = \cos\omega$ and $\beta = \sum_k (-1)^k \omega^{2k}/(2k+1)! = \sin\omega/\omega$. From $\cos\omega = -1$ and $\cos^2\omega + \sin^2\omega = 1$, $\sin\omega = 0$, so $\beta = 0$ and $\exp(A) = -I$. But $-I \neq B$: their upper right entries are $0$ and $1$. So $B$ is not an exponential.
+>
+> *Source: not from lecture · filled in*
 
 ^ex-71-2
 
@@ -696,7 +698,7 @@ For the Heisenberg group the exponential map is a diffeomorphism; for $\mathrm{S
 This is the correction to the false rule $\exp(A + B) = \exp(A)\exp(B)$ of the remark *Warning: $\exp(A + B) \neq \exp(A)\exp(B)$ in General*: in the Heisenberg group the first correction term $\tfrac12 [A, B]$ is the only one.
 
 > [!example] Example §71.4: Left-Invariant Fields on the Heisenberg Group
-> *(Not from the assignment; it connects Problems 2 and 5.)* On $H_3$ use the global chart $(a, b, c)$, the inverse of the diffeomorphism $(a, b, c) \mapsto e^{A(a, b, c)}$ of Example [[§71 The Exponential Map#^ex-71-3|§71.3]](4) (*exponential coordinates*). In this chart the identity is $(0, 0, 0)$, the product is
+> This example connects Problems 2 and 5 of Assignment 8. On $H_3$ use the global chart $(a, b, c)$, the inverse of the diffeomorphism $(a, b, c) \mapsto e^{A(a, b, c)}$ of Example [[§71 The Exponential Map#^ex-71-3|§71.3]](4) (*exponential coordinates*). In this chart the identity is $(0, 0, 0)$, the product is
 >
 > $$
 > (a, b, c) \cdot (a', b', c') = \big( a + a',\ b + b',\ c + c' + \tfrac12 (ab' - a'b) \big) ,
@@ -709,6 +711,8 @@ This is the correction to the false rule $\exp(A + B) = \exp(A)\exp(B)$ of the r
 > $$
 >
 > They satisfy $[\mathbf{X}, \mathbf{Y}] = \mathbf{Z}$ and $[\mathbf{X}, \mathbf{Z}] = [\mathbf{Y}, \mathbf{Z}] = 0$, the relations of the matrices $m_X$, $m_Y$, $m_Z$, as Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-7|§61.7]] requires. With $(a, b, c)$ renamed $(x, y, z)$, $\mathbf{X}$ and $\mathbf{Y}$ are the two fields of Example [[§59 Related Vector Fields#^ex-59-2|§59.2]].
+>
+> *Source: not from the assignment*
 
 ^ex-71-4
 

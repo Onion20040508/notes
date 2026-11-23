@@ -228,6 +228,7 @@ $$
 > \end{pmatrix}
 > = \big(\varphi \circ \tilde\varphi^{-1}\big)'\big(\tilde\varphi(p)\big) .
 > $$
+>
 > 2. The components of a tangent vector transform by
 >
 > $$
@@ -536,13 +537,15 @@ For fixed $v$, the field $p \mapsto D_v|_p$ is a left-invariant vector field: it
 > - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]; restated with critical values in [[§36 Submersions#^def-36-4|Def. §36.4]].
 
 > [!theorem] Lemma §30.8: How the Jacobian of a Coordinate Representation Changes with the Charts
-> *(Computed; not from lecture.)* Let $F : M \to N$ be smooth, $\dim M = m$, $\dim N = n$, and $p \in M$. Let $(U, \varphi)$ and $(U', \varphi')$ be smooth charts at $p$, and $(V, \psi)$ and $(V', \psi')$ smooth charts at $F(p)$, with $F(U) \subseteq V$ and $F(U') \subseteq V'$; let $\tilde F = \psi \circ F \circ \varphi^{-1}$ and $\hat F = \psi' \circ F \circ \varphi'^{-1}$ be the coordinate representations. Then near $\varphi'(p)$, $\hat F = (\psi' \circ \psi^{-1}) \circ \tilde F \circ (\varphi \circ \varphi'^{-1})$, and
+> Let $F : M \to N$ be smooth, $\dim M = m$, $\dim N = n$, and $p \in M$. Let $(U, \varphi)$ and $(U', \varphi')$ be smooth charts at $p$, and $(V, \psi)$ and $(V', \psi')$ smooth charts at $F(p)$, with $F(U) \subseteq V$ and $F(U') \subseteq V'$; let $\tilde F = \psi \circ F \circ \varphi^{-1}$ and $\hat F = \psi' \circ F \circ \varphi'^{-1}$ be the coordinate representations. Then near $\varphi'(p)$, $\hat F = (\psi' \circ \psi^{-1}) \circ \tilde F \circ (\varphi \circ \varphi'^{-1})$, and
 >
 > $$
 > \hat F'\big(\varphi'(p)\big) = \big(\psi' \circ \psi^{-1}\big)'\big(\psi(F(p))\big)\; \tilde F'\big(\varphi(p)\big)\; \big(\varphi \circ \varphi'^{-1}\big)'\big(\varphi'(p)\big),
 > $$
 >
 > the product of an $n \times n$, an $n \times m$ and an $m \times m$ matrix, the outer two factors being invertible. In particular $\hat F'(\varphi'(p))$ and $\tilde F'(\varphi(p))$ have the same rank.
+>
+> *Source: not from lecture · computed*
 
 ^lem-30-8
 

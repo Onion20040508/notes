@@ -179,7 +179,9 @@ Whether every abstract manifold has an embedding into some $\mathbb{R}^N$ is ans
 ![[§66 The Whitney Embedding Theorem#^thm-66-11]]
 
 > [!remark] Remark: Abstract Manifolds Embed in Euclidean Space
-> *(Not from lecture at this point; the theorem is stated here ahead of its proof, which is given with Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]].)* By Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], every smooth $m$-manifold — Hausdorff and second countable, as in Definition [[§17 Differentiable Structures#^def-17-11|§17.11]] — admits a smooth embedding into $\mathbb{R}^{2m+1}$ (Lee, Theorem 6.15), and Whitney improved the dimension to $2m$. So no manifold is out of reach of the geometric picture: every abstract manifold is diffeomorphic to a submanifold of some Euclidean space. The abstract definition is still the right one, because the embedding is not part of the manifold: the same manifold has many embeddings, none of them preferred, and quotients such as $\mathbb{CP}^n$ come with none.
+> The theorem is stated here ahead of its proof, which is given with Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]]. By Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], every smooth $m$-manifold — Hausdorff and second countable, as in Definition [[§17 Differentiable Structures#^def-17-11|§17.11]] — admits a smooth embedding into $\mathbb{R}^{2m+1}$ (Lee, Theorem 6.15), and Whitney improved the dimension to $2m$. So no manifold is out of reach of the geometric picture: every abstract manifold is diffeomorphic to a submanifold of some Euclidean space. The abstract definition is still the right one, because the embedding is not part of the manifold: the same manifold has many embeddings, none of them preferred, and quotients such as $\mathbb{CP}^n$ come with none.
+>
+> *Source: stated ahead of its proof*
 
 ^rem-42-1
 

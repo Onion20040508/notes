@@ -217,7 +217,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 *Uses:* [[§5 Quotient Maps#^prop-5-5|§5.5]], [[§5 Quotient Maps#^cor-5-3|§5.3]]
 
 > [!example] Example §5.2: The Circle Parametrized by a Half-Open Interval
-> *(Not from lecture.)* Let $f : [0, 2\pi) \to S^1$, $f(t) = (\cos t, \sin t)$, with $[0, 2\pi) \subseteq \mathbb{R}$ and $S^1 \subseteq \mathbb{R}^2$ carrying the subspace topologies. Then $f$ is a continuous bijection, $\overline{f} = f$ in Lemma [[§5 Quotient Maps#^lem-5-6|§5.6]], and $f$ is not a homeomorphism.
+> Let $f : [0, 2\pi) \to S^1$, $f(t) = (\cos t, \sin t)$, with $[0, 2\pi) \subseteq \mathbb{R}$ and $S^1 \subseteq \mathbb{R}^2$ carrying the subspace topologies. Then $f$ is a continuous bijection, $\overline{f} = f$ in Lemma [[§5 Quotient Maps#^lem-5-6|§5.6]], and $f$ is not a homeomorphism.
 >
 > 1. *$f$ is a continuous bijection.* Its components $\cos$ and $\sin$ are continuous. Every point of $S^1$ is $(\cos t, \sin t)$ for some $t \in [0, 2\pi)$, so $f$ is onto. If $f(t) = f(s)$ with $t, s \in [0, 2\pi)$, then $t - s \in 2\pi\mathbb{Z}$ and $|t - s| < 2\pi$, so $t = s$.
 > 2. *$\overline{f} = f$.* The fibres of $f$ are single points, so $\sim$ is equality, $[0, 2\pi)/{\sim} = [0, 2\pi)$, and $\overline{f} = f$.
@@ -228,8 +228,11 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > $$
 >
 > so $f(t) \in S^1 \cap B((1,0), r)$; and $f(t) \notin f(U)$, since $t \notin U$ and $f$ is injective. So the set $f(U)$, whose preimage $U$ is open, is not open.
+>
 > 4. *$f^{-1}$ is not continuous at $(1, 0)$.* With $t_k = 2\pi - \tfrac1k$ ($k \ge 1$), the points $f(t_k)$ converge to $(1,0)$ by the estimate in (3), but $f^{-1}(f(t_k)) = t_k \to 2\pi$, not to $f^{-1}(1, 0) = 0$.
 > 5. *No homeomorphism exists at all.* $S^1$ is closed and bounded in $\mathbb{R}^2$, hence compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1)). $[0, 2\pi)$ is not compact: the open sets $[0, 2\pi - \tfrac1k)$, $k \ge 1$, cover it, but finitely many of them have union $[0, 2\pi - \tfrac1K)$ for the largest index $K$ used, which misses $2\pi - \tfrac1{2K}$. A homeomorphism $S^1 \to [0, 2\pi)$ would carry the compact $S^1$ onto $[0, 2\pi)$ (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](2)).
+>
+> *Source: not from lecture*
 
 ^ex-5-2
 

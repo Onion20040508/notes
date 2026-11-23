@@ -76,7 +76,7 @@ By (3) the shuffles are a set of representatives for the left cosets $\sigma \ci
 ^rem-76-1
 
 > [!example] Example §76.1: Factoring a Permutation
-> *(Lecture 30, as an example of Lemma [[§76 Shuffles#^lem-76-1|§76.1]](3); in the letters of these notes.)* Take $k = 2$, $l = 3$ and
+> An example of Lemma [[§76 Shuffles#^lem-76-1|§76.1]](3), in the letters of these notes. Take $k = 2$, $l = 3$ and
 >
 > $$
 > \pi = (4, 2 \mid 1, 5, 3), \qquad \text{that is,} \quad \pi(1) = 4,\ \pi(2) = 2,\ \pi(3) = 1,\ \pi(4) = 5,\ \pi(5) = 3 ,
@@ -99,6 +99,8 @@ By (3) the shuffles are a set of representatives for the left cosets $\sigma \ci
 > which permutes $\{1, 2\}$ by $\tau = (2, 1) \in S_2$ and $\{3, 4, 5\}$ by $\rho(2 + j) = 2 + \tau'(j)$ with $\tau' = (1, 3, 2) \in S_3$. That $\rho$ preserves the two blocks is forced: $\sigma$ and $\pi$ send the first block to the same set $\{2, 4\}$.
 >
 > *The signs.* $\sigma$ is the shuffle of the figure after Definition [[§76 Shuffles#^def-76-1|§76.1]], with three inversions, so $\operatorname{sgn}(\sigma) = -1$; and $\operatorname{sgn}(\rho) = \operatorname{sgn}(\tau)\,\operatorname{sgn}(\tau') = (-1)(-1) = 1$ (Lemma [[§76 Shuffles#^lem-76-1|§76.1]](1)). Hence $\operatorname{sgn}(\pi) = -1$, in agreement with the five inversions of $\pi$: the pairs of positions $(1, 2)$, $(1, 3)$, $(1, 5)$, $(2, 3)$ and $(4, 5)$.
+>
+> *Source: Lecture 30*
 
 ^ex-76-1
 
@@ -107,7 +109,7 @@ By (3) the shuffles are a set of representatives for the left cosets $\sigma \ci
 *(Not from lecture; figure added.)* Example [[§76 Shuffles#^ex-76-1|§76.1]] as two layers of arrows: first $\rho$, which stays on its side of the dashed line, then the shuffle $\sigma$. Following the arrows from the top row to the bottom row gives $\pi$.
 
 > [!example] Example §76.2: Shuffles Do Not Form a Subgroup
-> *(Lecture 29: a student asked whether $\mathrm{Sh}(k, l)$ is a subgroup of $S_{k+l}$ isomorphic to $S_k \times S_l$. It is not; the example is filled in.)* Take $k = 1$ and $l = 2$. The only condition on a $(1, 2)$-shuffle is $\sigma(2) < \sigma(3)$, and in one-line notation $(\sigma(1), \sigma(2), \sigma(3))$,
+> Is $\mathrm{Sh}(k, l)$ a subgroup of $S_{k+l}$ isomorphic to $S_k \times S_l$? It is not. Take $k = 1$ and $l = 2$. The only condition on a $(1, 2)$-shuffle is $\sigma(2) < \sigma(3)$, and in one-line notation $(\sigma(1), \sigma(2), \sigma(3))$,
 >
 > $$
 > \mathrm{Sh}(1, 2) = \{ (1, 2, 3),\ (2, 1, 3),\ (3, 1, 2) \} ,
@@ -120,5 +122,7 @@ By (3) the shuffles are a set of representatives for the left cosets $\sigma \ci
 > $$
 >
 > so $\sigma' \circ \sigma = (1, 3, 2)$, which is not a shuffle: its values at $2$ and $3$ are $3 > 2$. So $\mathrm{Sh}(1, 2)$ is not closed under composition. The subgroup in the picture is $S_1 \times S_2 = \{(1, 2, 3), (1, 3, 2)\}$, with two elements, and the three shuffles represent its three left cosets (Lemma [[§76 Shuffles#^lem-76-1|§76.1]](3)).
+>
+> *Source: Lecture 29 · question in class · filled in*
 
 ^ex-76-2

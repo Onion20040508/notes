@@ -226,7 +226,9 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 ^def-34-6
 
 > [!remark] Remark: Where the Elliptic Equation Comes From
-> *(Not from lecture.)* Heat flows from hot to cold. In a homogeneous, isotropic material the heat flux is $\vec q = -\mu\nabla u$ (Fourier's law), and at equilibrium the heat produced in any region flows out through its boundary, $\operatorname{div}\vec q = f$; this is $-\mu\Delta u = f$, the equation of the remark [[§34 Weak Solutions of the Dirichlet Problem#^rem-34-1|Where the Equation Comes From]] above. In an inhomogeneous or anisotropic material — a composite, a crystal, layered rock — the conductivity depends on the position and on the direction, and Fourier's law becomes $\vec q = -A(x)\nabla u$ with a *conductivity matrix* $A(x)$. Equilibrium is again $\operatorname{div}\vec q = f$, which is $(E)$. Uniform ellipticity says that heat never flows uphill: $\vec q \cdot \nabla u = -(A\nabla u)\cdot\nabla u \le -\alpha |\nabla u|^2$, so the flux always has a component towards lower temperature, and the bound $\Lambda$ says the conductivity is finite.
+> Heat flows from hot to cold. In a homogeneous, isotropic material the heat flux is $\vec q = -\mu\nabla u$ (Fourier's law), and at equilibrium the heat produced in any region flows out through its boundary, $\operatorname{div}\vec q = f$; this is $-\mu\Delta u = f$, the equation of the remark [[§34 Weak Solutions of the Dirichlet Problem#^rem-34-1|Where the Equation Comes From]] above. In an inhomogeneous or anisotropic material — a composite, a crystal, layered rock — the conductivity depends on the position and on the direction, and Fourier's law becomes $\vec q = -A(x)\nabla u$ with a *conductivity matrix* $A(x)$. Equilibrium is again $\operatorname{div}\vec q = f$, which is $(E)$. Uniform ellipticity says that heat never flows uphill: $\vec q \cdot \nabla u = -(A\nabla u)\cdot\nabla u \le -\alpha |\nabla u|^2$, so the flux always has a component towards lower temperature, and the bound $\Lambda$ says the conductivity is finite.
+>
+> *Source: not from lecture*
 
 ^rem-34-7
 

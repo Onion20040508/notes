@@ -176,7 +176,7 @@ The case $k = 0$ has to be included: by definition $\Lambda^0$ is $\mathbb{R}$, 
 *Not from lecture: the operations on forms.* The example at the end of the lecture adds forms, multiplies them by functions and wedges them; these are pointwise operations, recorded here.
 
 > [!definition] Definition §80.7: Sums and Function Multiples of Forms
-> *(Not from lecture; filled in.)* Let $\omega, \omega'$ be $k$-forms on $M$, $f : M \to \mathbb{R}$ a function and $c \in \mathbb{R}$. The $k$-forms $\omega + c\,\omega'$ and $f\omega$ are defined at every $p \in M$ with the operations of $\Lambda^k T_p^{\ast}M$ (Definition [[§75 Multilinear Algebra#^def-75-2|§75.2]]):
+> Let $\omega, \omega'$ be $k$-forms on $M$, $f : M \to \mathbb{R}$ a function and $c \in \mathbb{R}$. The $k$-forms $\omega + c\,\omega'$ and $f\omega$ are defined at every $p \in M$ with the operations of $\Lambda^k T_p^{\ast}M$ (Definition [[§75 Multilinear Algebra#^def-75-2|§75.2]]):
 >
 > $$
 > (\omega + c\,\omega')_p = \omega_p + c\,\omega'_p, \qquad (f\omega)_p = f(p)\,\omega_p .
@@ -184,18 +184,22 @@ The case $k = 0$ has to be included: by definition $\Lambda^0$ is $\mathbb{R}$, 
 >
 > The same formulas are used for forms given on an open subset $U \subseteq M$; so $\omega = \sum_A f_A\, dx^A$ on $U$ in Definition [[§80 Differential Forms on Manifolds#^def-80-3|§80.3]].
 >
+> *Source: not from lecture · filled in*
+>
 > *Lee: Ch. 14, Differential Forms on Manifolds*
 
 ^def-80-7
 
 > [!definition] Definition §80.8: Wedge Product of Forms on a Manifold
-> *(Not from lecture; filled in.)* Let $\omega$ be a $k$-form and $\eta$ an $l$-form on $M$. Their **wedge product** is the $(k + l)$-form $\omega \wedge \eta$ given at every $p \in M$ by the wedge product of Definition [[§77 The Wedge Product#^def-77-1|§77.1]]:
+> Let $\omega$ be a $k$-form and $\eta$ an $l$-form on $M$. Their **wedge product** is the $(k + l)$-form $\omega \wedge \eta$ given at every $p \in M$ by the wedge product of Definition [[§77 The Wedge Product#^def-77-1|§77.1]]:
 >
 > $$
 > (\omega \wedge \eta)_p = \omega_p \wedge \eta_p .
 > $$
 >
 > For a $0$-form $f$, $f \wedge \eta = f\eta$. The same formula is used on an open subset $U \subseteq M$; so $dx^A = dx^{a_1} \wedge \cdots \wedge dx^{a_k}$ as $k$-forms on $U$.
+>
+> *Source: not from lecture · filled in*
 >
 > *Lee: Ch. 14, Differential Forms on Manifolds*
 
@@ -283,7 +287,7 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 *Uses:* [[§79 Pullbacks of Linear Forms#^lem-79-1|§79.1]], [[§79 Pullbacks of Linear Forms#^prop-79-4|§79.4]], [[§53 One-Forms#^cor-53-5|§53.5]], [[§79 Pullbacks of Linear Forms#^prop-79-2|§79.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§34 The Cotangent Space from Germs#^prop-34-7|§34.7]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§80 Differential Forms on Manifolds#^lem-80-2|§80.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]], [[§80 Differential Forms on Manifolds#^def-80-4|Def. §80.4]]
 
 > [!example] Example §80.1: A Pullback from $\mathbb{R}^2$ to $\mathbb{R}^3$
-> *(Lecture 31.)* Let $F : \mathbb{R}^2 \to \mathbb{R}^3$,
+> Let $F : \mathbb{R}^2 \to \mathbb{R}^3$,
 >
 > $$
 > F(u, v) = \Big( u + v,\ u - v,\ \frac{u^2 + v^2}{2} \Big) , \qquad \omega = xy\; dy \wedge dz \in \Omega^2(\mathbb{R}^3) .
@@ -304,6 +308,8 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 > &= (u^2 - v^2)(u + v)\; du \wedge dv .
 > \end{aligned}
 > $$
+>
+> *Source: Lecture 31*
 >
 > *Lee: cf. Example 14.18*
 
@@ -327,7 +333,7 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 **Transcription note (Lecture 31).** The board first wrote $dz = u\, du + 2v\, dv$, and the $2$ was then struck out. The correct $dz = u\, du + v\, dv$ is the one used in the computation.
 
 > [!remark] Remark: Putting $F^{\ast}$ Everywhere
-> *(Lecture 32 returned to Example [[§80 Differential Forms on Manifolds#^ex-80-1|§80.1]] to justify the practical computation.)* Regard $\omega = x\, y\, dy \wedge dz$ as a wedge product of four factors, the $0$-forms $x$ and $y$ (for which the wedge product is the ordinary product) and the one-forms $dy$ and $dz$. The pullback of a wedge product is the wedge product of the pullbacks (Proposition [[§80 Differential Forms on Manifolds#^prop-80-5|§80.5]](2)), a pointwise property, so
+> This returns to Example [[§80 Differential Forms on Manifolds#^ex-80-1|§80.1]] to justify the practical computation. Regard $\omega = x\, y\, dy \wedge dz$ as a wedge product of four factors, the $0$-forms $x$ and $y$ (for which the wedge product is the ordinary product) and the one-forms $dy$ and $dz$. The pullback of a wedge product is the wedge product of the pullbacks (Proposition [[§80 Differential Forms on Manifolds#^prop-80-5|§80.5]](2)), a pointwise property, so
 >
 > $$
 > F^{\ast}\omega = F^{\ast}(x)\, F^{\ast}(y)\; F^{\ast}(dy) \wedge F^{\ast}(dz) ,
@@ -340,6 +346,8 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 > $$
 >
 > Here $x$ is the function taking the first coordinate, so $F^{\ast}x = x \circ F = u + v$; likewise $F^{\ast}y = u - v$ and $F^{\ast}z = \frac12(u^2 + v^2)$. Compared with the practical computation, the only thing missing there is a number of $F^{\ast}$'s: “$x = u + v$” stands for $F^{\ast}x = u + v$, and “$dx = du + dv$” for $F^{\ast}(dx) = d(F^{\ast}x) = du + dv$. One puts $F^{\ast}$ in front of everything, and then stops writing it.
+>
+> *Source: Lecture 32*
 
 ^rem-80-1
 
@@ -356,13 +364,15 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 *Not from lecture: top degree on manifolds.* For a map between manifolds of the same dimension, part (4) has one term, the boxed formula of Proposition [[§79 Pullbacks of Linear Forms#^prop-79-3|§79.3]] at every point; this is the formula that will make integrals of top-degree forms independent of the chart.
 
 > [!theorem] Corollary §80.6: Pullback of Top-Degree Forms
-> *(Not from lecture.)* Let $F : M \to N$ be smooth with $\dim M = \dim N = m$, and let $(U, (x^i))$, $(V, (y^j))$ be smooth charts with $F(U) \subseteq V$. For a function $g$ on $V$, on $U$
+> Let $F : M \to N$ be smooth with $\dim M = \dim N = m$, and let $(U, (x^i))$, $(V, (y^j))$ be smooth charts with $F(U) \subseteq V$. For a function $g$ on $V$, on $U$
 >
 > $$
 > F^{\ast}\big( g\; dy^1 \wedge \cdots \wedge dy^m \big) = (g \circ F)\, \det\Big( \frac{\partial F^j}{\partial x^i} \Big)\; dx^1 \wedge \cdots \wedge dx^m ,
 > $$
 >
 > with the Jacobian of $F$ in these charts. In particular, for two charts at the same points, $dy^1 \wedge \cdots \wedge dy^m = \det\big(\partial y^j/\partial x^i\big)\, dx^1 \wedge \cdots \wedge dx^m$ on $U \cap V$.
+>
+> *Source: not from lecture*
 >
 > *Lee: Proposition 14.20; Corollary 14.21*
 
@@ -376,7 +386,7 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 *Uses:* [[§80 Differential Forms on Manifolds#^prop-80-5|§80.5]], [[§80 Differential Forms on Manifolds#^lem-80-1|§80.1]]
 
 > [!example] Example §80.2: Polar Coordinates
-> *(Not from lecture.)* On $\mathbb{R}^2$ minus a closed ray from the origin, use the polar coordinates $(r, \vartheta)$ in the domain and $(x, y)$ in the target of the identity map, $x = r\cos\vartheta$, $y = r\sin\vartheta$. Substituting as in Example [[§80 Differential Forms on Manifolds#^ex-80-1|§80.1]],
+> On $\mathbb{R}^2$ minus a closed ray from the origin, use the polar coordinates $(r, \vartheta)$ in the domain and $(x, y)$ in the target of the identity map, $x = r\cos\vartheta$, $y = r\sin\vartheta$. Substituting as in Example [[§80 Differential Forms on Manifolds#^ex-80-1|§80.1]],
 >
 > $$
 > \begin{aligned}
@@ -386,6 +396,8 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 > $$
 >
 > and $r = \det \begin{pmatrix} \cos\vartheta & -r\sin\vartheta \\ \sin\vartheta & r\cos\vartheta \end{pmatrix}$ is the Jacobian determinant of Corollary [[§80 Differential Forms on Manifolds#^cor-80-6|§80.6]]: the factor $r$ of $dx\, dy = r\, dr\, d\vartheta$ in the change of variables formula for double integrals.
+>
+> *Source: not from lecture*
 >
 > *Lee: Example 14.19*
 
@@ -402,13 +414,15 @@ The lecture stated the definition for smooth forms, as a map $F^{\ast} : \Omega^
 Throughout, $S \subseteq \mathbb{R}^3$ is a $2$-dimensional regular submanifold and $\mathbf{n} : S \to \mathbb{R}^3$ is a smooth unit normal field: $\mathbf{n}_p$ is a unit vector perpendicular to $T_pS$ for every $p \in S$ (an orientation of $S$, Definition [[§73 Stokes' Theorem in Calculus III#^def-73-3|§73.3]]; the assignment assumes that such an $\mathbf{n}$ exists). Tangent vectors to $S$ are vectors of $\mathbb{R}^3$, through the inclusion $\iota : S \hookrightarrow \mathbb{R}^3$ and the identification $T_p\mathbb{R}^3 \cong \mathbb{R}^3$, $\partial/\partial x|_p \leftrightarrow e_1$, $\partial/\partial y|_p \leftrightarrow e_2$, $\partial/\partial z|_p \leftrightarrow e_3$.
 
 > [!definition] Definition §80.10: Area Form of a Surface
-> *(Assignment 9, Problem 2.)* The **area form** of $S$ associated with $\mathbf{n}$ is the two-form $\alpha$ on $S$ given by
+> The **area form** of $S$ associated with $\mathbf{n}$ is the two-form $\alpha$ on $S$ given by
 >
 > $$
 > \alpha_p(v, w) = \det(v, w, \mathbf{n}_p), \qquad v, w \in T_pS \subseteq \mathbb{R}^3 ,
 > $$
 >
 > the determinant of the $3 \times 3$ matrix with columns $v$, $w$, $\mathbf{n}_p$.
+>
+> *Source: Assignment 9, Problem 2*
 
 ^def-80-10
 
@@ -419,16 +433,18 @@ Throughout, $S \subseteq \mathbb{R}^3$ is a $2$-dimensional regular submanifold 
 Each $\alpha_p$ is bilinear and alternating, because the determinant is linear in each column and changes sign when two columns are exchanged; so $\alpha$ is a two-form on $S$ (Definition [[§80 Differential Forms on Manifolds#^def-80-1|§80.1]]). It is smooth by Proposition [[§80 Differential Forms on Manifolds#^prop-80-8|§80.8]](1).
 
 > [!theorem] Lemma §80.7: The Area Form Is the Signed Area
-> *(Not stated in the assignment; it is the computation in the submitted solution of Problem 2(a), for two arbitrary tangent vectors.)* For $p \in S$ and $v, w \in T_pS$:
+> For $p \in S$ and $v, w \in T_pS$:
 >
 > 1. $\alpha_p(v, w) = (v \times w) \cdot \mathbf{n}_p$;
 > 2. $v \times w = \alpha_p(v, w)\, \mathbf{n}_p$, and $|\alpha_p(v, w)| = |v \times w|$, the area of the parallelogram spanned by $v$ and $w$;
 > 3. $\alpha_p(v, w) \neq 0$ if and only if $v$ and $w$ are linearly independent, and then $\alpha_p(v, w) > 0$ exactly when $v \times w$ points in the direction of $\mathbf{n}_p$.
+>
+> *Source: Assignment 9, Problem 2(a) · submitted solution*
 
 ^lem-80-7
 
 > [!proof]+ Proof
-> *(From the submitted solution.)* *(1)* Write $v = (v_1, v_2, v_3)$, $w = (w_1, w_2, w_3)$ and $\mathbf{n}_p = (n^1, n^2, n^3)$. Expanding the determinant along its third column,
+> *(From the submitted solution of Problem 2(a), where the computation is done for $F_s$ and $F_t$; here it is done for two arbitrary tangent vectors. The statement is not in the assignment.)* *(1)* Write $v = (v_1, v_2, v_3)$, $w = (w_1, w_2, w_3)$ and $\mathbf{n}_p = (n^1, n^2, n^3)$. Expanding the determinant along its third column,
 >
 > $$
 > \begin{aligned}\det(v, w, \mathbf{n}_p) = \det\begin{pmatrix} v_1 & w_1 & n^1 \\ v_2 & w_2 & n^2 \\ v_3 & w_3 & n^3 \end{pmatrix} &= n^1\,(v_2 w_3 - v_3 w_2) + n^2\,(v_3 w_1 - v_1 w_3) + n^3\,(v_1 w_2 - v_2 w_1) \\
@@ -446,7 +462,7 @@ Each $\alpha_p$ is bilinear and alternating, because the determinant is linear i
 *(Not from the assignment; figure added.)* Lemma [[§80 Differential Forms on Manifolds#^lem-80-7|§80.7]]: for $v, w$ in the tangent plane, $v \times w$ lies on the normal line, and its coefficient with respect to the unit normal $\mathbf{n}_p$ is $\alpha_p(v, w)$. The absolute value is the area of the parallelogram; the sign says whether $(v, w)$ turns from $v$ to $w$ counterclockwise as seen from the tip of $\mathbf{n}_p$.
 
 > [!theorem] Proposition §80.8: The Area Form in a Parametrization
-> *(Assignment 9, Problem 2(a), with the part of 2(b) that does not use the hypothesis on the direction.)* Let $F : V \to U \subseteq S$ be a parametrization, the inverse of a coordinate chart of $S$ (Definition [[§20 Manifolds in Euclidean Space#^def-20-3|§20.3]]), with $V \subseteq \mathbb{R}^2$ open and coordinates $(s, t)$ on $V$. Write $F = (x, y, z)$, $F_s = (x_s, y_s, z_s)$ and $F_t = (x_t, y_t, z_t)$.
+> Let $F : V \to U \subseteq S$ be a parametrization, the inverse of a coordinate chart of $S$ (Definition [[§20 Manifolds in Euclidean Space#^def-20-3|§20.3]]), with $V \subseteq \mathbb{R}^2$ open and coordinates $(s, t)$ on $V$. Write $F = (x, y, z)$, $F_s = (x_s, y_s, z_s)$ and $F_t = (x_t, y_t, z_t)$.
 >
 > 1. For every parametrization, $F^{\ast}\alpha = \varphi\; ds \wedge dt$ with
 >
@@ -462,11 +478,13 @@ Each $\alpha_p$ is bilinear and alternating, because the determinant is linear i
 > $$
 > F^{\ast}\alpha = |F_s \times F_t|\; ds \wedge dt .
 > $$
+>
+> *Source: Assignment 9, Problem 2(a) · Assignment 9, Problem 2(b)*
 
 ^prop-80-8
 
 > [!proof]+ Proof
-> *(The submitted solution of Problem 2(a); the smoothness statements are filled in.)* *The component function.* $F^{\ast}\alpha$ is a two-form on $V \subseteq \mathbb{R}^2$. The only increasing multi-index of length $2$ in $\{1, 2\}$ is $\{1, 2\}$, so by Definition [[§80 Differential Forms on Manifolds#^def-80-3|§80.3]], for $q \in V$,
+> *(The submitted solution of Problem 2(a), with the part of 2(b) that does not use the hypothesis on the direction; the smoothness statements are filled in.)* *The component function.* $F^{\ast}\alpha$ is a two-form on $V \subseteq \mathbb{R}^2$. The only increasing multi-index of length $2$ in $\{1, 2\}$ is $\{1, 2\}$, so by Definition [[§80 Differential Forms on Manifolds#^def-80-3|§80.3]], for $q \in V$,
 >
 > $$
 > (F^{\ast}\alpha)_q = \varphi(q)\, (ds \wedge dt)_q, \qquad \varphi(q) = (F^{\ast}\alpha)_q\Big( \frac{\partial}{\partial s}\Big|_q, \frac{\partial}{\partial t}\Big|_q \Big) .
@@ -499,7 +517,7 @@ Each $\alpha_p$ is bilinear and alternating, because the determinant is linear i
 *What the hypotheses are used for.* Part (1) uses nothing about the direction of $F_s \times F_t$, and its formula $\varphi = \det(F_s, F_t, \mathbf{n} \circ F)$ holds for every smooth map $F : V \to S$. That $F$ is the inverse of a chart is used only through the injectivity of $dF_q$, in (2).
 
 > [!example] Example §80.3: Assignment 9 Problem 2(b): Why the Direction of the Cross Product Matters
-> *(Assignment 9, Problem 2(b), as submitted.)* The Calculus III formula for the area of $U = F(V)$ is
+> The Calculus III formula for the area of $U = F(V)$ is
 >
 > $$
 > \operatorname{Area}(U) = \int_V |F_s \times F_t|\; ds\, dt ,
@@ -512,17 +530,21 @@ Each $\alpha_p$ is bilinear and alternating, because the determinant is linear i
 > $$
 >
 > which cannot be an area; if the sign differs between components of $V$, the integral is the difference of the areas of the corresponding pieces of $U$. So the condition on $F_s \times F_t$ with respect to $\mathbf{n}$ is what makes $\int_V \varphi\, ds\, dt$ equal to the area of $U$.
+>
+> *Source: Assignment 9, Problem 2(b) · submitted solution*
 
 ^ex-80-3
 
 > [!example] Example §80.4: Assignment 9 Problem 2(c): The Area Form of the Sphere in Longitude and Height
-> *(Assignment 9, Problem 2(c).)* Let $S = S^2$ be the unit sphere, with $\mathbf{n}$ pointing away from the origin, and $U = S^2 \setminus \mu$, where $\mu = \{(x, 0, z) \in S^2 : x \le 0\}$ is the meridian at longitude $\pm\pi$, including the poles $(0, 0, \pm 1)$. Let $\phi : U \to \mathbb{R}^2$, $\phi(p) = (\theta(p), z(p))$, where $z(p)$ is the third Cartesian coordinate of $p$ and $\theta(p) \in (-\pi, \pi)$ the polar angle of $(x(p), y(p))$, the longitude. With $F = \phi^{-1}$,
+> Let $S = S^2$ be the unit sphere, with $\mathbf{n}$ pointing away from the origin, and $U = S^2 \setminus \mu$, where $\mu = \{(x, 0, z) \in S^2 : x \le 0\}$ is the meridian at longitude $\pm\pi$, including the poles $(0, 0, \pm 1)$. Let $\phi : U \to \mathbb{R}^2$, $\phi(p) = (\theta(p), z(p))$, where $z(p)$ is the third Cartesian coordinate of $p$ and $\theta(p) \in (-\pi, \pi)$ the polar angle of $(x(p), y(p))$, the longitude. With $F = \phi^{-1}$,
 >
 > $$
 > F^{\ast}\alpha = d\theta \wedge dz :
 > $$
 >
 > in the coordinates longitude and height, the area form of the sphere has the constant coefficient $1$.
+>
+> *Source: Assignment 9, Problem 2(c)*
 
 ^ex-80-4
 
@@ -566,13 +588,15 @@ Each $\alpha_p$ is bilinear and alternating, because the determinant is linear i
 *(Figure from the submitted solution.)* Left: the sphere with the removed meridian $\mu$ (red), the meridian $\theta = 0$ (green), a point $p$ with its longitude $\theta$, its height $z$ and the outward normal $\mathbf{n}_p$. Right: the image $\phi(U) = (-\pi, \pi) \times (-1, 1)$ of the chart; the two vertical edges correspond to $\mu$ and the two horizontal edges to the poles, none of them in the image.
 
 > [!example] Example §80.5: Zones of Equal Height Have Equal Area
-> *(Not from the assignment; a consequence of Example [[§80 Differential Forms on Manifolds#^ex-80-4|§80.4]] and the Calculus III area formula quoted in Problem 2(b).)* For $-1 \le a < b \le 1$, the zone $U_{a, b} = \{p \in U : a < z(p) < b\}$ of the unit sphere is $F\big((-\pi, \pi) \times (a, b)\big)$, and since $\varphi = 1$,
+> A consequence of Example [[§80 Differential Forms on Manifolds#^ex-80-4|§80.4]] and the Calculus III area formula quoted in Problem 2(b). For $-1 \le a < b \le 1$, the zone $U_{a, b} = \{p \in U : a < z(p) < b\}$ of the unit sphere is $F\big((-\pi, \pi) \times (a, b)\big)$, and since $\varphi = 1$,
 >
 > $$
 > \operatorname{Area}(U_{a, b}) = \int_{(-\pi, \pi) \times (a, b)} 1\; d\theta\, dz = 2\pi\,(b - a) .
 > $$
 >
 > The area depends only on the height $b - a$ of the zone, not on where it lies between the poles: a zone near the pole is narrow, but it is tilted, and the two effects cancel. For $a = -1$, $b = 1$ this gives $4\pi$, the area of the sphere (the meridian $\mu$, a curve, has area $0$). The parametrization $F$ projects the cylinder of radius $1$ around the sphere horizontally onto the sphere, and it preserves area; this is a theorem of Archimedes.
+>
+> *Source: not from the assignment*
 
 ^ex-80-5
 

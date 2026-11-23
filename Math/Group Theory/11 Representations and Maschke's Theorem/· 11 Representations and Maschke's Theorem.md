@@ -33,7 +33,7 @@ What the simple representations are is the subject of the next chapter, [[· 12 
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§62 Direct Sums and Maschke's Theorem#^lem-62-5|Lemma §62.5: An Idempotent Fixes Its Image]]: 37 later results
-- [[§62 Direct Sums and Maschke's Theorem#^prop-62-1|Proposition §62.1: Bases of a Direct Sum]]: 36 later results
-- [[§62 Direct Sums and Maschke's Theorem#^prop-62-6|Proposition §62.6: An Idempotent Splits the Space]]: 36 later results
-- [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-5|Proposition §63.5: G Preserves the Averaged Inner Product]]: 36 later results
+- [[§62 Direct Sums and Maschke's Theorem#^lem-62-5|Lemma §62.5: An Idempotent Fixes Its Image]]: 36 later results
+- [[§62 Direct Sums and Maschke's Theorem#^prop-62-1|Proposition §62.1: Bases of a Direct Sum]]: 35 later results
+- [[§62 Direct Sums and Maschke's Theorem#^prop-62-6|Proposition §62.6: An Idempotent Splits the Space]]: 35 later results
+- [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-5|Proposition §63.5: G Preserves the Averaged Inner Product]]: 35 later results

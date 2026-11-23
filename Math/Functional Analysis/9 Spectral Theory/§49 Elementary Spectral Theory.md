@@ -103,7 +103,7 @@ Here $A \in \mathcal{L}(X, X)$ is invertible if it is one-to-one and onto. Its i
 *Uses:* [[§49 Elementary Spectral Theory#^lem-49-1|§49.1]]
 
 > [!example] Example §49.1: The Shifts on $\ell^2$ Have Only One-Sided Inverses
-> *(Not from lecture; filled in.)* On $\ell^2$ let $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ be the right shift (Example [[§45 Convergence of Operators#^ex-45-2|§45.2]]) and $T(a_1, a_2, \ldots) = (a_2, a_3, \ldots)$ the left shift (Example [[§45 Convergence of Operators#^ex-45-1|§45.1]]). Then
+> On $\ell^2$ let $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ be the right shift (Example [[§45 Convergence of Operators#^ex-45-2|§45.2]]) and $T(a_1, a_2, \ldots) = (a_2, a_3, \ldots)$ the left shift (Example [[§45 Convergence of Operators#^ex-45-1|§45.1]]). Then
 >
 > $$
 > \begin{aligned}TS(a_1, a_2, \ldots) &= T(0, a_1, a_2, \ldots) = (a_1, a_2, \ldots) , \\
@@ -117,6 +117,8 @@ Here $A \in \mathcal{L}(X, X)$ is invertible if it is one-to-one and onto. Its i
 > 3. The product $TS = I$ is invertible although neither factor is. This does not contradict Lemma [[§49 Elementary Spectral Theory#^lem-49-2|§49.2]](3), because $TS \neq ST$: the hypothesis $MN = NM$ cannot be dropped there.
 >
 > For a linear map of $\mathbb{C}^n$ to itself this cannot happen: there one-to-one and onto are equivalent (Example [[§48 The Resolvent and the Spectrum#^ex-48-2|§48.2]]), so a one-sided inverse is a two-sided inverse.
+>
+> *Source: not from lecture · filled in*
 >
 > *Lax: §20.2, (11) and the lines after it*
 
@@ -299,7 +301,6 @@ The spectrum $\sigma(M)$ and, around a point $\lambda_0$ of the resolvent set, a
 ^rem-49-2
 
 > [!example] Example §49.2: Equality and Strict Inequality in the Distance Bound
-> *(Not from lecture; filled in.)*
 >
 > 1. *$M = 0$.* Here $\lambda I - M = \lambda I$ is invertible exactly for $\lambda \neq 0$, so $\sigma(M) = \{0\}$, and $\|(\lambda I)^{-1}\| = \frac{1}{|\lambda|} = \frac{1}{\operatorname{dist}(\lambda, \sigma(M))}$: equality for every $\lambda \in \rho(M)$.
 > 2. *Multiplication by $t$ on $L^2[0,1]$.* By Example [[§48 The Resolvent and the Spectrum#^ex-48-4|§48.4]], $\sigma(M) = [0,1]$ and $\|R(\lambda; M)\| \le \frac{1}{\operatorname{dist}(\lambda, [0,1])}$ for $\lambda \notin [0,1]$. With Proposition [[§49 Elementary Spectral Theory#^prop-49-5|§49.5]](3), $\|R(\lambda; M)\| = \frac{1}{\operatorname{dist}(\lambda, [0,1])}$: equality again.
@@ -316,6 +317,8 @@ The spectrum $\sigma(M)$ and, around a point $\lambda_0$ of the resolvent set, a
 > $$
 >
 > The inequality is strict: the resolvent is much larger than the distance to the spectrum suggests, and the disk of Proposition [[§49 Elementary Spectral Theory#^prop-49-5|§49.5]](2) is smaller than the largest disk about $\lambda$ free of spectrum.
+>
+> *Source: not from lecture · filled in*
 
 ^ex-49-2
 

@@ -193,7 +193,7 @@ $$
 > - A witness for the first point, with every directional derivative at the origin but no derivative: [[§7 Differentiability#^rem-7-4|452 §7, Warning: The Converse Is False]]. There the directional derivatives $a^2/b$ are not even linear in the direction; [[§22 The Differential of a Map Between Vector Spaces#^ex-22-2|Example §22.2]] below is a stronger witness, whose directional derivatives are all $0$.
 
 > [!example] Example §22.1: Directional Derivatives That Are Not Linear in the Direction
-> *(Example supplied; not from lecture.)* Let $f : \mathbb{R}^2 \to \mathbb{R}$,
+> Let $f : \mathbb{R}^2 \to \mathbb{R}$,
 >
 > $$
 > f(x, y) = \frac{x^2 y}{x^2 + y^2} \quad \text{for } (x, y) \neq (0, 0), \qquad f(0, 0) = 0.
@@ -209,11 +209,13 @@ $$
 > independent of $t$; so $D(v) = \dfrac{v_1^2 v_2}{v_1^2 + v_2^2}$.
 > - *Not linear.* $D(1,0) = 0$ and $D(0,1) = 0$, but $D(1,1) = \tfrac12 \neq D(1,0) + D(0,1)$.
 > - *Not differentiable.* If $f$ were differentiable at $0$, the chain rule along the line $t \mapsto tv$ would give $D(v) = Df_0\, v$, which is linear in $v$.
+>
+> *Source: not from lecture · example supplied*
 
 ^ex-22-1
 
 > [!example] Example §22.2: All Directional Derivatives but Not Differentiable
-> *(Not from lecture; added on request.)* Let $f : \mathbb{R}^2 \to \mathbb{R}$,
+> Let $f : \mathbb{R}^2 \to \mathbb{R}$,
 >
 > $$
 > f(x, y) = \frac{x^3 y}{x^6 + y^2} \quad \text{for } (x, y) \neq (0, 0), \qquad f(0, 0) = 0.
@@ -226,14 +228,19 @@ $$
 > $$
 >
 > if $v_2 = 0$, then $f(tv) = 0$ for all $t$. So $\frac{d}{dt}\big|_0 f(tv) = 0$ for every $v$, which is even linear in $v$: the candidate derivative would be the zero map.
+>
 > 2. *$f$ is not differentiable at $0$; it is not even continuous there.* Along the curve $y = x^3$, $x \neq 0$: $f(x, x^3) = \dfrac{x^6}{x^6 + x^6} = \dfrac12$, while $f(0, 0) = 0$. A map differentiable at a point is continuous there, since $f(p + v) - f(p) = Df_p\, v + o(|v|) \to 0$.
 >
 > So the formula $Df_p(v) = \frac{d}{dt}\big|_0 f(p + tv)$ cannot be used to *prove* differentiability. The lines miss the problem: a line $y = mx$ meets the curve $y = x^3$ only at $0$ and at $x = \pm\sqrt{m}$ (when $m > 0$), a fixed distance away, and the axes meet it only at $0$; so near $0$ no line sees the value $\tfrac12$.
+>
+> *Source: not from lecture · added on request*
 
 ^ex-22-2
 
 > [!definition] Definition §22.6: Regular Value of a Map Between Vector Spaces
-> *(Not from lecture; filled in.)* Suppose $\dim X \ge \dim Y$ and $F : X \to Y$ is smooth (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|§22.3]]). A point $c \in Y$ is a **regular value** of $F$ if, for a choice of linear coordinates $L$ on $X$ and $K$ on $Y$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|§22.1]]), the point $K(c)$ is a regular value (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]) of the coordinate representation $\widetilde F = K \circ F \circ L^{-1} : \mathbb{R}^m \to \mathbb{R}^n$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-2|§22.2]]). By Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]], this holds for one choice of linear coordinates if and only if it holds for every choice.
+> Suppose $\dim X \ge \dim Y$ and $F : X \to Y$ is smooth (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|§22.3]]). A point $c \in Y$ is a **regular value** of $F$ if, for a choice of linear coordinates $L$ on $X$ and $K$ on $Y$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|§22.1]]), the point $K(c)$ is a regular value (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]) of the coordinate representation $\widetilde F = K \circ F \circ L^{-1} : \mathbb{R}^m \to \mathbb{R}^n$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-2|§22.2]]). By Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]], this holds for one choice of linear coordinates if and only if it holds for every choice.
+>
+> *Source: not from lecture · filled in*
 
 ^def-22-6
 

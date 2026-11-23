@@ -198,10 +198,12 @@ The same piece of $S$ seen in two charts. The transition map carries one picture
 *(Not from lecture.)* The proof of Lemma [[§62 Sets of Measure Zero#^lem-62-5|§62.5]] for a compact $A$ in the plane ($n = 2$). The slice of $A$ at $c$ (teal) has measure zero, so it is covered by finitely many small intervals, $U_c$. By compactness the same intervals still cover the slices at all $c'$ near $c$, in an interval $J_c$, so $A \cap (J_c \times \mathbb{R})$ lies in the thin boxes $J_c \times U_c$ (orange). Finitely many $J_c$ cover the first coordinate's range, overlapping at most twice, and the total area is at most $2 \times$ (length) $\times$ (the slices' cover size).
 
 > [!remark] Remark: Measure Zero and Lebesgue Measure
-> *(Not from lecture.)* The course uses only the notion of a set of measure zero, not measure theory. For readers who know Lebesgue measure the dictionary is short.
+> The course uses only the notion of a set of measure zero, not measure theory. For readers who know Lebesgue measure the dictionary is short.
 >
 > 1. $S \subseteq \mathbb{R}^n$ has measure zero in the sense of Definition [[§62 Sets of Measure Zero#^def-62-1|§62.1]] exactly when its Lebesgue outer measure is $m^{\ast}(S) = 0$ (outer measure is defined with countable covers by rectangles, open or closed, as in Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](3)); such sets are Lebesgue measurable.
 > 2. Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](1)–(2) are monotonicity and countable subadditivity of $m^{\ast}$; item (4) is $m^{\ast}(\text{closed rectangle}) =$ its volume.
 > 3. Lemma [[§62 Sets of Measure Zero#^lem-62-5|§62.5]] is the cross-section theorem (a consequence of Tonelli's theorem) for a compact, hence measurable, set: $m(A) = \int_{\mathbb{R}} m(A_c)\, dc = 0$. The proof above avoids measurability and integration and uses only compactness.
+>
+> *Source: not from lecture*
 
 ^rem-62-1

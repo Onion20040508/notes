@@ -195,7 +195,7 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 *Uses:* [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]]
 
 > [!example] Example §35.3: A Point Mass Has No Density
-> *(Not from lecture.)* Let $X = [0,1]$ with its Lebesgue measurable sets, $\mu$ Lebesgue measure, and $\nu = \delta_0$ the unit point mass at $0$: $\nu(E) = 1$ if $0 \in E$ and $\nu(E) = 0$ otherwise. Both are finite measures, and $\nu \not\ll \mu$, since $\mu(\{0\}) = 0$ but $\nu(\{0\}) = 1$. We show that in the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]] the set $F_1 = \{ g_0 \le 0 \}$ has $\mu(F_1) = 0$ but $\nu(F_1) = 1$, so Step 4 fails, and that no density exists.
+> Let $X = [0,1]$ with its Lebesgue measurable sets, $\mu$ Lebesgue measure, and $\nu = \delta_0$ the unit point mass at $0$: $\nu(E) = 1$ if $0 \in E$ and $\nu(E) = 0$ otherwise. Both are finite measures, and $\nu \not\ll \mu$, since $\mu(\{0\}) = 0$ but $\nu(\{0\}) = 1$. We show that in the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]] the set $F_1 = \{ g_0 \le 0 \}$ has $\mu(F_1) = 0$ but $\nu(F_1) = 1$, so Step 4 fails, and that no density exists.
 >
 > *The representer.* Let $g_0 = \chi_{(0,1]}$, a bounded function, so $g_0 \in H = L^2(\mu + \nu)$. For $f \in H$,
 >
@@ -208,6 +208,8 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 > *$F_1$.* For this representative $F_1 = \{0\}$; any other representative differs from it on a $(\mu + \nu)$-null set, which is null for $\mu$ and for $\nu$. Hence $\mu(F_1) = 0$ but $\nu(F_1) = 1$: the point mass hides exactly where $g_0 = 0$.
 >
 > *No density.* If $\nu(E) = \int_E g\, d\mu$ for all $E$, then $E = \{0\}$ gives $1 = \nu(\{0\}) = \int_{\{0\}} g\, d\mu = 0$, a contradiction. So the hypothesis $\nu \ll \mu$ cannot be dropped from Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]].
+>
+> *Source: not from lecture*
 
 ^ex-35-3
 
@@ -217,7 +219,7 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 ^rem-35-3
 
 > [!example] Example §35.4: An Unbounded Density: Truncation is Needed
-> *(Not from lecture.)* Let $X = [0,1]$, $\mu$ Lebesgue measure, and $\nu(E) = \int_E x^{-1/2}\, dx$, i.e. $d\nu = x^{-1/2}\, dx$. We show: $\nu$ is a finite measure with $\nu \ll \mu$; the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]] produces $g_0 = 1/(1 + x^{-1/2})$; and the untruncated test function $\chi_X/g_0$ of Step 5 is not in $H = L^2(\mu + \nu)$.
+> Let $X = [0,1]$, $\mu$ Lebesgue measure, and $\nu(E) = \int_E x^{-1/2}\, dx$, i.e. $d\nu = x^{-1/2}\, dx$. We show: $\nu$ is a finite measure with $\nu \ll \mu$; the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]] produces $g_0 = 1/(1 + x^{-1/2})$; and the untruncated test function $\chi_X/g_0$ of Step 5 is not in $H = L^2(\mu + \nu)$.
 >
 > *$\nu$.* $\nu(X) = \int_0^1 x^{-1/2}\, dx = 2 < \infty$, and if $\mu(E) = 0$ then $\nu(E)$, an integral over a null set, is $0$.
 >
@@ -236,6 +238,8 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 > $$
 >
 > So $\chi_X/g_0 \notin H$, and Step 5 cannot use it for $E = X$; the truncation is needed. The density is $g = (1 - g_0)/g_0 = x^{-1/2}$, i.e. $d\nu/d\mu = x^{-1/2}$ (Definition [[§35 Measures and the Radon–Nikodym Theorem#^def-35-6|§35.6]]), unbounded near $0$.
+>
+> *Source: not from lecture*
 
 ^ex-35-4
 

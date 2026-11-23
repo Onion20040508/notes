@@ -332,7 +332,7 @@ The theorem says more: left-translating by $g$ the integral curve through the id
 *(Not from lecture; animation added, vault only.)* The same example moving: the blue point runs along $\varphi^e(t)$, forwards to $t = 1.4$ and back to $t = -2.5$; each red point is $g\,\varphi^e(t)$ for one of three elements $g$, joined to the blue point by the dotted $L_g$. Each red point stays on its own line, the integral curve through $g$: left translation carries the curve through $e$ to the curve through $g$, at the same times.
 
 > [!example] Example §70.1: Left-Invariant Fields on the Affine Group of the Line
-> *(Not from lecture.)* A worked example: the group $G = \{(a, b) : a > 0\}$ of affine maps $x \mapsto ax + b$, an open subset of $\mathbb{R}^2$, with product $(a, b)(a', b') = (aa', ab' + b)$ and identity $e = (1, 0)$. Since $L_{(a,b)}(a', b') = (aa', ab' + b)$ has differential $a \cdot \mathrm{id}$, the left-invariant field with $\mathbf{X}_e = (u, v)$ is $\mathbf{X}_{(a,b)} = a(u, v)$. Its integral curve through $e$ is
+> A worked example: the group $G = \{(a, b) : a > 0\}$ of affine maps $x \mapsto ax + b$, an open subset of $\mathbb{R}^2$, with product $(a, b)(a', b') = (aa', ab' + b)$ and identity $e = (1, 0)$. Since $L_{(a,b)}(a', b') = (aa', ab' + b)$ has differential $a \cdot \mathrm{id}$, the left-invariant field with $\mathbf{X}_e = (u, v)$ is $\mathbf{X}_{(a,b)} = a(u, v)$. Its integral curve through $e$ is
 >
 > $$
 > \varphi^e(t) = \big(e^{ut}, \tfrac{v}{u}(e^{ut} - 1)\big) \quad \text{if } u \neq 0, \qquad \varphi^e(t) = (1, vt) \quad \text{if } u = 0,
@@ -347,6 +347,8 @@ The theorem says more: left-translating by $g$ the integral curve through the id
 > *The integral curve through $e$.* By Proposition [[§67 Integral Curves#^prop-67-2|§67.2]], a curve $t \mapsto (a(t), b(t))$ in $G$ is an integral curve of $\mathbf{X}$ if and only if $\dot a = ua$ and $\dot b = va$. With $a(0) = 1$ the first equation gives $a(t) = e^{ut}$ (the uniqueness argument of Example [[§67 Integral Curves#^ex-67-1|§67.1]], applied to $e^{-ut}a(t)$). Then $\dot b = v e^{ut}$ and $b(0) = 0$ give $b(t) = \int_0^t v e^{us}\, ds$, which is $\tfrac{v}{u}(e^{ut} - 1)$ if $u \neq 0$ and $vt$ if $u = 0$. Since $a(t) = e^{ut} > 0$, the curve stays in $G$ for all $t \in \mathbb{R}$.
 >
 > *The curve through $g$.* For $g = (a_0, b_0)$, the product gives $g\,\varphi^e(t) = \big(a_0 a(t),\ a_0 b(t) + b_0\big)$, which is $\varphi^g(t)$ by Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]]. Directly: its velocity is $\big(a_0 \dot a(t), a_0 \dot b(t)\big) = a_0 a(t)\,(u, v)$, the value of $\mathbf{X}$ at the point $g\,\varphi^e(t)$, whose first coordinate is $a_0 a(t)$; and at $t = 0$ it is $(a_0, b_0) = g$.
+>
+> *Source: not from lecture*
 
 ^ex-70-1
 

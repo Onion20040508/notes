@@ -130,7 +130,9 @@ The two moves of the proof: cut off the tail, which is small because the series 
 *Uses:* [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§3 Countability of Rationals and Unions#^cor-3-2|551 §3.2]]
 
 > [!theorem] Corollary §29.3: $c_0$ is a Closed Subspace of $\ell^\infty$
-> *(Not from lecture.)* $c_0$ is a linear subspace of $\ell^\infty$, the norm $|\cdot|$ of Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]] is the restriction of $\|\cdot\|_\infty$ (on $c_0$ the supremum is a maximum), and $c_0$ is closed in $\ell^\infty$.
+> $c_0$ is a linear subspace of $\ell^\infty$, the norm $|\cdot|$ of Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]] is the restriction of $\|\cdot\|_\infty$ (on $c_0$ the supremum is a maximum), and $c_0$ is closed in $\ell^\infty$.
+>
+> *Source: not from lecture*
 
 ^cor-29-3
 

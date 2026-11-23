@@ -47,13 +47,15 @@ A representation always contains the vectors that no element of $G$ moves. For a
 > - Linear Algebra: [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]].
 
 > [!example] Example §66.1: Products of Different Sizes with the Same Trace
-> *(Not from class.)* Take $m = 1$ and $n = 2$, with
+> Take $m = 1$ and $n = 2$, with
 >
 > $$
 > A = \begin{pmatrix} 1 & 2 \end{pmatrix}, \qquad B = \begin{pmatrix} 3 \\ 4 \end{pmatrix}, \qquad AB = \begin{pmatrix} 11 \end{pmatrix}, \qquad BA = \begin{pmatrix} 3 & 6 \\ 4 & 8 \end{pmatrix}.
 > $$
 >
 > The matrices $AB$ and $BA$ have different sizes, but $\operatorname{Tr}(AB) = 11 = 3 + 8 = \operatorname{Tr}(BA)$, as Proposition [[§66 Invariant Vectors#^prop-66-1|§66.1]] says.
+>
+> *Source: not from class*
 
 ^ex-66-1
 
@@ -152,7 +154,9 @@ The trace does not depend on the basis. The matrices $M$, $M'$ of $T$ in two bas
 *Uses:* [[§62 Direct Sums and Maschke's Theorem#^lem-62-5|§62.5]], [[§62 Direct Sums and Maschke's Theorem#^prop-62-6|§62.6]], [[§62 Direct Sums and Maschke's Theorem#^prop-62-1|§62.1]], [[§66 Invariant Vectors#^def-66-2|Def. §66.2]]
 
 > [!example] Example §66.2: The Trace Sees the Dimension Only Modulo $p$
-> *(Not from class.)* Over $\mathbb{F}_2$, the identity map of $\mathbb{F}_2^2$ is idempotent with image of dimension $2$, but its trace is $1 + 1 = 0$. In general, over a field in which $p = 0$, Proposition [[§66 Invariant Vectors#^prop-66-4|§66.4]] determines $\dim \operatorname{Im}\pi$ only modulo $p$. This is why Worksheet 15 assumes $\mathbb{Q} \subseteq k$: then $r \cdot 1_k = r$, and the trace recovers the dimension (the remark *Why the Field Should Contain $\mathbb{Q}$* below).
+> Over $\mathbb{F}_2$, the identity map of $\mathbb{F}_2^2$ is idempotent with image of dimension $2$, but its trace is $1 + 1 = 0$. In general, over a field in which $p = 0$, Proposition [[§66 Invariant Vectors#^prop-66-4|§66.4]] determines $\dim \operatorname{Im}\pi$ only modulo $p$. This is why Worksheet 15 assumes $\mathbb{Q} \subseteq k$: then $r \cdot 1_k = r$, and the trace recovers the dimension (the remark *Why the Field Should Contain $\mathbb{Q}$* below).
+>
+> *Source: not from class*
 
 ^ex-66-2
 
@@ -285,9 +289,11 @@ $\pi$ is linear, being an average of linear maps. Worksheet 15 and the lecture a
 > [!remark] Remark: Only $|G|$ Was Inverted
 > So far the only integer divided by is $|G|$, so WS 15.3–15.5 hold whenever $|G| \neq 0$ in the field, exactly Maschke's hypothesis. Since $\operatorname{Ker}(\pi)$ is also a subrepresentation (Corollary [[§66 Invariant Vectors#^cor-66-8|§66.8]]), this is Maschke's theorem for the particular subrepresentation $V^G$, with an explicit complement and no choice of an auxiliary idempotent. The problem set shows how to use the same idea to split off any subrepresentation: the proof of Maschke's theorem (Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]) averages an arbitrary idempotent onto $U$, and Proposition [[§66 Invariant Vectors#^prop-66-9|§66.9]] below shows that this is the averaging operator of another representation.
 >
-> *Source: lecture 11/9; the subrepresentation $\operatorname{Ker}\pi$ and the last sentence not from class*
+> *Source: lecture 11/9*
 
 ^rem-66-1
+
+*Source note.* Lecture 11/9; the subrepresentation $\operatorname{Ker}\pi$ and the last sentence not from class.
 
 > [!theorem] Proposition §66.9: Homomorphisms Are the Invariant Vectors of $\operatorname{Hom}(W, W')$
 > Let $W$ and $W'$ be representations of $G$ over $k$, and let $\operatorname{Hom}(W, W')$ be the vector space of linear maps $W \to W'$.
@@ -363,12 +369,12 @@ The lecture remarked that the formula resembles Burnside's Lemma (Theorem [[§30
 > 2. The orbit sums $s_O = \sum_{x \in O} e_x$, one for each orbit $O$, form a basis of $(kX)^G$. So $\dim (kX)^G = |G \backslash X|$, the number of orbits.
 > 3. Hence $|G \backslash X| = \frac{1}{|G|}\sum_{g \in G} |\operatorname{Fix}(g)|$, which is Burnside's Lemma (Theorem [[§30 Orbit–Stabilizer#^thm-30-7|§30.7]]).
 >
-> *Source: the connection raised in lecture 11/9; the proof not from class*
+> *Source: lecture 11/9*
 
 ^cor-66-11
 
 > [!proof]+ Proof
-> *Idea:* Counting orbits is counting invariant vectors of a permutation representation.
+> *(The connection raised in lecture 11/9; the proof not from class.)* *Idea:* Counting orbits is counting invariant vectors of a permutation representation.
 >
 > *(Not from class; filled in.)* **(1)** In the basis $(e_x)_{x \in X}$, $g e_x = e_{gx}$, so the matrix of $\rho(g)$ has the entry $1$ in position $(gx, x)$ and $0$ elsewhere in column $x$. Its diagonal entry in position $(x, x)$ is $1$ if $gx = x$ and $0$ otherwise, so $\operatorname{Tr}\rho_{kX}(g) = |\operatorname{Fix}(g)| \cdot 1_k = |\operatorname{Fix}(g)|$.
 >
@@ -400,15 +406,17 @@ Worksheet 15's formula therefore generalizes Burnside's Lemma from permutation r
 ## Examples
 
 > [!example] Example §66.3: The Trivial and the Sign Representation
-> *(Not from class.)* Let $\mathbb{Q} \subseteq k$.
+> Let $\mathbb{Q} \subseteq k$.
 >
 > 1. If $G$ acts trivially on $V$ (Example [[§61 Representations and Subrepresentations#^ex-61-1|§61.1]]), then $V^G = V$ and $\operatorname{Tr}\rho_V(g) = \operatorname{Tr}(\mathrm{id}_V) = \dim V$ for every $g$, so Theorem [[§66 Invariant Vectors#^thm-66-10|§66.10]] reads $\dim V = \frac{1}{|G|} \cdot |G| \dim V$.
 > 2. Let $n \geq 2$ and let $S_n$ act on $k$ by $\sigma \cdot c = \operatorname{sgn}(\sigma)\,c$, the sign representation (Example [[§61 Representations and Subrepresentations#^ex-61-2|§61.2]]). An invariant $c$ satisfies $-c = (1\,2) \cdot c = c$, so $2c = 0$ and $c = 0$: $k^{S_n} = \{0\}$. On the other side $\operatorname{Tr}\rho(\sigma) = \operatorname{sgn}(\sigma)$, and $\sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) = 0$, since the even permutations $A_n$ and the [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|odd permutations]], the other coset of $A_n$, have $n!/2$ elements each. So both sides of the theorem are $0$.
+>
+> *Source: not from class*
 
 ^ex-66-3
 
 > [!example] Example §66.4: $S_3$ on $k^3$ and on the Plane $x + y + z = 0$
-> *(Not from class.)* Let $\mathbb{Q} \subseteq k$, let $S_3$ permute the coordinates of $k^3 = k\{1,2,3\}$, and let $U_1 = k(1,1,1)$ and $U_2 = \{x + y + z = 0\}$ be the subrepresentations of Example [[§61 Representations and Subrepresentations#^ex-61-3|§61.3]].
+> Let $\mathbb{Q} \subseteq k$, let $S_3$ permute the coordinates of $k^3 = k\{1,2,3\}$, and let $U_1 = k(1,1,1)$ and $U_2 = \{x + y + z = 0\}$ be the subrepresentations of Example [[§61 Representations and Subrepresentations#^ex-61-3|§61.3]].
 >
 > 1. *Invariant vectors.* If $(x, y, z)$ is invariant, then $(1\,2)$ gives $x = y$ and $(2\,3)$ gives $y = z$; conversely the constant vectors are fixed by every permutation. So $(k^3)^{S_3} = U_1$.
 > 2. *The averaging operator.* As $\sigma$ runs over $S_3$, $\sigma(i)$ takes each value $j$ exactly twice: the $\sigma$ with $\sigma(i) = j$ form a coset of the stabilizer of $i$, which has $2$ elements. So
@@ -431,6 +439,8 @@ Worksheet 15's formula therefore generalizes Burnside's Lemma from permutation r
 > $$
 >
 > as it must be: $U_2^{S_3} = U_2 \cap U_1 = \{0\}$, since $3 \neq 0$ in $k$.
+>
+> *Source: not from class*
 
 ^ex-66-4
 

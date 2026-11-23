@@ -109,12 +109,12 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 > 1. For every complex $n \times n$ matrix $Q$, $\langle x, y \rangle = y^\dagger Q x$ is a sesquilinear form on $\mathbb{C}^n$ (Definition [[§64 Sesquilinear and Hermitian Forms#^def-64-1|§64.1]]). Every sesquilinear form on $\mathbb{C}^n$ is of this form for exactly one $Q$, namely $Q_{ij} = \langle e_j, e_i \rangle$.
 > 2. The form $\langle x, y \rangle = y^\dagger Q x$ is Hermitian (Definition [[§64 Sesquilinear and Hermitian Forms#^def-64-2|§64.2]]) if and only if $Q$ is a Hermitian matrix (Definition [[§64 Sesquilinear and Hermitian Forms#^def-64-5|§64.5]]).
 >
-> *Source: MATH 420 slides, in the convention of Definition [[§64 Sesquilinear and Hermitian Forms#^def-64-1|§64.1]]*
+> *Source: MATH 420 slides*
 
 ^prop-64-2
 
 > [!proof]+ Proof
-> *Idea:* expand both vectors in the standard basis; the form is determined by its values $\langle e_j, e_i \rangle$.
+> *(MATH 420 slides, in the convention of Definition [[§64 Sesquilinear and Hermitian Forms#^def-64-1|§64.1]].)* *Idea:* expand both vectors in the standard basis; the form is determined by its values $\langle e_j, e_i \rangle$.
 >
 > *(Not from the slides; filled in.)*
 >
@@ -192,9 +192,11 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 >
 > so $\tfrac{1}{\sqrt2}(1, i)$ is an orthonormal basis of the line $\mathbb{C}(1, i)$.
 >
-> *Source: MATH 420 slides, there written $\bar p_1 q_1 + \cdots + \bar p_n q_n$ (see the remark *Which Variable Is Conjugate-Linear* below)*
+> *Source: MATH 420 slides*
 
 ^ex-64-3
+
+*Source note.* MATH 420 slides, there written $\bar p_1 q_1 + \cdots + \bar p_n q_n$ (see the remark *Which Variable Is Conjugate-Linear* below).
 
 > [!theorem] Proposition §64.3: Orthogonal Projection for a Positive Definite Hermitian Form
 > Let $V$ be a complex vector space with a positive definite Hermitian form $\langle\ ,\ \rangle$, and let $u_1, \ldots, u_k$ be an orthogonal basis of a subspace $L$: the $u_i$ are nonzero and $\langle u_i, u_j \rangle = 0$ for $i \neq j$. Define
@@ -208,12 +210,12 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 >
 > This is the formula of the real case (proof of Proposition [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-1|§63.1]]), written for an orthogonal rather than an orthonormal basis.
 >
-> *Source: MATH 420 slides, in the convention of Definition [[§64 Sesquilinear and Hermitian Forms#^def-64-1|§64.1]]*
+> *Source: MATH 420 slides*
 
 ^prop-64-3
 
 > [!proof]+ Proof
-> *Idea:* the coefficient of $u_i$ is chosen so that $v - P_L(v)$ has no $u_i$-component; the other $u_j$ do not interfere, being orthogonal to $u_i$.
+> *(MATH 420 slides, in the convention of Definition [[§64 Sesquilinear and Hermitian Forms#^def-64-1|§64.1]].)* *Idea:* the coefficient of $u_i$ is chosen so that $v - P_L(v)$ has no $u_i$-component; the other $u_j$ do not interfere, being orthogonal to $u_i$.
 >
 > *(Not from the slides; filled in.)* The denominators $\langle u_i, u_i \rangle$ are positive real numbers, since $u_i \neq 0$ and the form is positive definite (Definition [[§64 Sesquilinear and Hermitian Forms#^def-64-3|§64.3]]).
 >

@@ -23,7 +23,7 @@ tags: [differentiable-manifolds, math591]
 ^rem-81-1
 
 > [!definition] Definition §81.1: The Four Properties of an Exterior Derivative
-> *(Lecture 32 stated a theorem at this point: there exists a unique sequence of linear operators with the four properties below. It is Theorem [[§81 The Exterior Derivative#^thm-81-7|§81.7]], after the construction; the properties are recorded first, because the construction uses them.)* Suppose that on every smooth manifold $M$, of any dimension $m$, a sequence of linear operators
+> Suppose that on every smooth manifold $M$, of any dimension $m$, a sequence of linear operators
 >
 > $$
 > \Omega^0(M) = C^\infty(M) \xrightarrow{\ d\ } \Omega^1(M) \xrightarrow{\ d\ } \Omega^2(M) \xrightarrow{\ d\ } \cdots \xrightarrow{\ d\ } \Omega^m(M) \xrightarrow{\ d\ } 0
@@ -36,9 +36,13 @@ tags: [differentiable-manifolds, math591]
 > 3. $d \circ d = 0$, wherever the composition is defined;
 > 4. *(naturality)* if $F : M \to N$ is a smooth map, then $F^{\ast}(d\beta) = d(F^{\ast}\beta)$ for every $\beta \in \Omega^k(N)$.
 >
+> *Source: Lecture 32*
+>
 > *Lee: Theorem 14.24; Proposition 14.26*
 
 ^def-81-1
+
+Lecture 32 stated a theorem at this point: there exists a unique sequence of linear operators with the four properties. It is Theorem [[§81 The Exterior Derivative#^thm-81-7|§81.7]], after the construction; the properties are recorded first, because the construction uses them.
 
 > [!remark]- Connections
 > - The same operator on open subsets of $\mathbb{R}^n$ in MATH 452, defined by the coordinate formula: [[§38 The Exterior Derivative#^def-38-1|452 Def. §38.1]], with $d^2 = 0$ as [[§38 The Exterior Derivative#^thm-38-4|452 Thm. §38.4]].
@@ -220,11 +224,13 @@ So the exterior derivative exists on open sets of $\mathbb{R}^m$.
 The definition on a manifold transports the Euclidean $d$ through a chart. Its consistency rests on how pullbacks compose, which has been used implicitly so far and is recorded here.
 
 > [!theorem] Lemma §81.4: Pullbacks Compose
-> *(Not from lecture; filled in.)* Let $F : M \to N$ and $G : N \to P$ be smooth, and $\omega$ a $k$-form on $P$.
+> Let $F : M \to N$ and $G : N \to P$ be smooth, and $\omega$ a $k$-form on $P$.
 >
 > 1. $(G \circ F)^{\ast}\omega = F^{\ast}(G^{\ast}\omega)$, and $\mathrm{id}_P^{\ast}\, \omega = \omega$.
 > 2. If $F$ is a diffeomorphism, then $F^{\ast} : \Omega^k(N) \to \Omega^k(M)$ is bijective, with inverse $(F^{-1})^{\ast}$.
 > 3. If $U \subseteq M$ is open and $\iota : U \hookrightarrow M$ is the inclusion, then $\iota^{\ast}\eta = \eta|_U$ for a form $\eta$ on $M$; and if $F(U) \subseteq V$ with $V \subseteq N$ open, then $(F^{\ast}\eta')|_U = (F|_U)^{\ast}(\eta'|_V)$ for a form $\eta'$ on $N$, where $F|_U : U \to V$.
+>
+> *Source: not from lecture · filled in*
 >
 > *Lee: Proposition 12.25(e),(f) (for covariant tensors)*
 
@@ -287,13 +293,15 @@ The argument is not circular: the $d$ in the middle is the Euclidean one, constr
 *(Not from lecture; diagram added.)* Definition [[§81 The Exterior Derivative#^def-81-3|§81.3]]. Above, the chart, as drawn on the board. Below, the dashed arrow $d$ on $U$ is defined to make the square commute: across to Euclidean space by $(\varphi^{-1})^{\ast}$, down by the Euclidean $d$, and back by $\varphi^{\ast}$. Since $\varphi^{\ast}$ and $(\varphi^{-1})^{\ast}$ are inverse bijections (Lemma [[§81 The Exterior Derivative#^lem-81-4|§81.4]](2)), the square then commutes in both directions, $(\varphi^{-1})^{\ast}\, d\alpha|_U = d\, (\varphi^{-1})^{\ast}\alpha$: naturality for the diffeomorphism $\varphi^{-1}$ holds by construction.
 
 > [!theorem] Corollary §81.6: The Exterior Derivative in Coordinates
-> *(Not from lecture; filled in.)* Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart and $\alpha = \sum_A f_A\, dx^A$ on $U$. Then, on $U$,
+> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart and $\alpha = \sum_A f_A\, dx^A$ on $U$. Then, on $U$,
 >
 > $$
 > d\alpha = \sum_A df_A \wedge dx^A = \sum_A \sum_{j=1}^m \frac{\partial f_A}{\partial x^j}\; dx^j \wedge dx^A ,
 > $$
 >
 > the same formula as in Definition [[§81 The Exterior Derivative#^def-81-2|§81.2]], now with the coordinates of the chart.
+>
+> *Source: not from lecture · filled in*
 >
 > *Lee: Theorem 14.24 and (14.19)*
 
@@ -355,7 +363,7 @@ The argument is not circular: the $d$ in the middle is the Euclidean one, constr
 *Not from lecture: the exterior derivative on $\mathbb{R}^3$.* The lecture announced that on $\mathbb{R}^3$ the second and third arrows of the sequence are the curl and the divergence; with Corollary [[§81 The Exterior Derivative#^cor-81-6|§81.6]] this is a computation. Subscripts denote partial derivatives, $P_y = \partial P/\partial y$.
 
 > [!example] Example §81.1: The Exterior Derivative on $\mathbb{R}^3$
-> *(Not from lecture; filled in.)* On an open set of $\mathbb{R}^3$ with coordinates $x, y, z$:
+> On an open set of $\mathbb{R}^3$ with coordinates $x, y, z$:
 >
 > 1. $df = f_x\, dx + f_y\, dy + f_z\, dz$: the components are those of the gradient of $f$.
 > 2. For $\theta = P\, dx + Q\, dy + R\, dz$,
@@ -373,6 +381,8 @@ The argument is not circular: the $d$ in the middle is the Euclidean one, constr
 > $$
 >
 > whose coefficient is the divergence of $(A, B, C)$.
+>
+> *Source: not from lecture · filled in*
 >
 > *Lee: Example 14.27*
 
@@ -399,11 +409,13 @@ The basis $dy \wedge dz$, $dz \wedge dx$, $dx \wedge dy$ is used here (with $dz 
 Throughout, $M$ is a smooth manifold of dimension $m$ and $\pi : T^{\ast}M \to M$, $\pi(p, \xi) = p$, is the projection.
 
 > [!definition] Definition §81.4: The Tautological One-Form
-> *(Assignment 9, Problem 3; Tu, Example 17.4.)* A point $(p, \xi)$ of $T^{\ast}M$ is itself a covector $\xi \in T_p^{\ast}M$. The **tautological one-form**, or **Liouville form**, $\lambda$ on $T^{\ast}M$ is defined at this point as the pullback of $\xi$ by the differential of $\pi$:
+> A point $(p, \xi)$ of $T^{\ast}M$ is itself a covector $\xi \in T_p^{\ast}M$. The **tautological one-form**, or **Liouville form**, $\lambda$ on $T^{\ast}M$ is defined at this point as the pullback of $\xi$ by the differential of $\pi$:
 >
 > $$
 > \lambda_{(p, \xi)}(X) = \xi\big( \pi_{\ast(p, \xi)} X \big) \qquad \text{for } X \in T_{(p, \xi)}(T^{\ast}M) .
 > $$
+>
+> *Source: Assignment 9, Problem 3 · Tu, Example 17.4*
 
 ^def-81-4
 
@@ -414,13 +426,16 @@ Throughout, $M$ is a smooth manifold of dimension $m$ and $\pi : T^{\ast}M \to M
 Each $\lambda_{(p, \xi)}$ is linear in $X$, so $\lambda$ is a rough section of $T^{\ast}(T^{\ast}M)$ (Definition [[§45 Fibrations#^def-45-5|§45.5]]); it is smooth by Proposition [[§81 The Exterior Derivative#^prop-81-9|§81.9]]. The definition uses no chart.
 
 > [!theorem] Lemma §81.8: The Differential of the Projection in Standard Coordinates
-> *(From the submitted solution of Problem 3(a); Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]](1) is the case of the points $(p, 0)$.)* Let $(U, \varphi = (x^i))$ be a chart of $M$ and $(p, \xi) \in T^{\ast}U$. Then, for $j = 1, \ldots, m$,
+> Let $(U, \varphi = (x^i))$ be a chart of $M$ and $(p, \xi) \in T^{\ast}U$. Then, for $j = 1, \ldots, m$,
 >
 > $$
 > \pi_{\ast(p, \xi)}\Big( \frac{\partial}{\partial \bar x^j}\Big|_{(p, \xi)} \Big) = \frac{\partial}{\partial x^j}\Big|_p, \qquad \pi_{\ast(p, \xi)}\Big( \frac{\partial}{\partial \xi_j}\Big|_{(p, \xi)} \Big) = 0 .
 > $$
 >
 > So the kernel of $\pi_{\ast(p, \xi)}$, the vertical space at $(p, \xi)$ (Definition [[§45 Fibrations#^def-45-6|§45.6]]), is spanned by $\partial/\partial \xi_1, \ldots, \partial/\partial \xi_m$.
+> Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]](1) is the case of the points $(p, 0)$.
+>
+> *Source: Assignment 9, Problem 3(a) · submitted solution*
 
 ^lem-81-8
 
@@ -432,7 +447,7 @@ Each $\lambda_{(p, \xi)}$ is linear in $X$, so $\lambda$ is a rough section of $
 *Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]
 
 > [!theorem] Proposition §81.9: The Tautological One-Form in Coordinates
-> *(Assignment 9, Problem 3(a).)* Let $(U, (x^i))$ be a chart of $M$. In the standard coordinates on $T^{\ast}U$,
+> Let $(U, (x^i))$ be a chart of $M$. In the standard coordinates on $T^{\ast}U$,
 >
 > $$
 > \lambda = \sum_{i=1}^m \xi_i\, d\bar x^i .
@@ -443,6 +458,8 @@ Each $\lambda_{(p, \xi)}$ is linear in $X$, so $\lambda$ is a rough section of $
 > 1. $\lambda$ is smooth, $\lambda \in \Omega^1(T^{\ast}M)$;
 > 2. $\lambda$ vanishes on vertical vectors: $\lambda_{(p, \xi)}(X) = 0$ if $\pi_{\ast(p, \xi)} X = 0$;
 > 3. the expression $\sum_i \xi_i\, d\bar x^i$ is the same one-form on $T^{\ast}(U \cap U')$ for any two charts $(U, (x^i))$ and $(U', (x'^i))$ of $M$.
+>
+> *Source: Assignment 9, Problem 3(a)*
 
 ^prop-81-9
 
@@ -476,13 +493,15 @@ Each $\lambda_{(p, \xi)}$ is linear in $X$, so $\lambda$ is a rough section of $
 *Uses:* [[§81 The Exterior Derivative#^def-81-4|Def. §81.4]], [[§81 The Exterior Derivative#^lem-81-8|§81.8]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§53 One-Forms#^prop-53-1|§53.1]]
 
 > [!theorem] Proposition §81.10: Every One-Form Is a Pullback of the Tautological One-Form
-> *(Assignment 9, Problem 3(b).)* Let $\alpha \in \Omega^1(M)$, and let $s_\alpha : M \to T^{\ast}M$, $s_\alpha(p) = (p, \alpha_p)$, be the corresponding section: the one-form $\alpha$ regarded as a map (Definition [[§53 One-Forms#^def-53-1|§53.1]]). Then
+> Let $\alpha \in \Omega^1(M)$, and let $s_\alpha : M \to T^{\ast}M$, $s_\alpha(p) = (p, \alpha_p)$, be the corresponding section: the one-form $\alpha$ regarded as a map (Definition [[§53 One-Forms#^def-53-1|§53.1]]). Then
 >
 > $$
 > s_\alpha^{\ast}\lambda = \alpha ,
 > $$
 >
 > hence the name *tautological*.
+>
+> *Source: Assignment 9, Problem 3(b)*
 
 ^prop-81-10
 
@@ -531,38 +550,46 @@ Each $\lambda_{(p, \xi)}$ is linear in $X$, so $\lambda$ is a rough section of $
 The second proof uses only two facts about $s_\alpha$: $\pi \circ s_\alpha = \mathrm{id}_M$, and that the point $s_\alpha(p)$, as a covector, is $\alpha_p$. The first proof shows in addition how the derivatives $\partial a_i/\partial x^j$ of the coefficients enter $(s_\alpha)_{\ast p}$ and drop out, because $\lambda$ vanishes on vertical vectors (Proposition [[§81 The Exterior Derivative#^prop-81-9|§81.9]](2)). For $\alpha = df$ the matrix $(\partial a_i/\partial x^j)$ is the Hessian matrix of Proposition [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]](2).
 
 > [!definition] Definition §81.5: Non-Degenerate Bilinear Form
-> *(Assignment 9, Problem 3(c), which refers to the Wikipedia definition.)* A bilinear form $B : W \times W \to \mathbb{R}$ on a finite-dimensional real vector space $W$ is **non-degenerate** if the only $X \in W$ with $B(X, Y) = 0$ for all $Y \in W$ is $X = 0$.
+> A bilinear form $B : W \times W \to \mathbb{R}$ on a finite-dimensional real vector space $W$ is **non-degenerate** if the only $X \in W$ with $B(X, Y) = 0$ for all $Y \in W$ is $X = 0$.
+>
+> *Source: Assignment 9, Problem 3(c) · Wikipedia*
 
 ^def-81-5
 
 > [!theorem] Lemma §81.11: Non-Degeneracy and the Matrix of a Bilinear Form
-> *(From the submitted solution of Problem 3(c), which uses the implication from right to left.)* Let $(e_1, \ldots, e_N)$ be a basis of $W$ and $J$ the matrix of $B$, $J_{ij} = B(e_i, e_j)$. Then $B$ is non-degenerate if and only if $J$ is invertible.
+> Let $(e_1, \ldots, e_N)$ be a basis of $W$ and $J$ the matrix of $B$, $J_{ij} = B(e_i, e_j)$. Then $B$ is non-degenerate if and only if $J$ is invertible.
+>
+> *Source: Assignment 9, Problem 3(c) · submitted solution*
 
 ^lem-81-11
 
 > [!proof]+ Proof
-> *(The submitted solution; the converse is filled in.)* Write $X = \sum_i X^i e_i$ and $Y = \sum_j Y^j e_j$, and let $X, Y$ also denote the column vectors of components. By bilinearity, $B(X, Y) = \sum_{i, j} X^i J_{ij} Y^j = X^{\mathsf T} J\, Y$. So $B(X, Y) = 0$ for all $Y$ means that the row vector $X^{\mathsf T} J$ is zero, that is, $J^{\mathsf T} X = 0$. Hence $B$ is non-degenerate if and only if $J^{\mathsf T}$ has trivial kernel, if and only if $J^{\mathsf T}$ is invertible, if and only if $J$ is invertible (a square matrix is invertible exactly when its transpose is).
+> *(The submitted solution, which uses the implication from right to left; the converse is filled in.)* Write $X = \sum_i X^i e_i$ and $Y = \sum_j Y^j e_j$, and let $X, Y$ also denote the column vectors of components. By bilinearity, $B(X, Y) = \sum_{i, j} X^i J_{ij} Y^j = X^{\mathsf T} J\, Y$. So $B(X, Y) = 0$ for all $Y$ means that the row vector $X^{\mathsf T} J$ is zero, that is, $J^{\mathsf T} X = 0$. Hence $B$ is non-degenerate if and only if $J^{\mathsf T}$ has trivial kernel, if and only if $J^{\mathsf T}$ is invertible, if and only if $J$ is invertible (a square matrix is invertible exactly when its transpose is).
 
 ^pf-81-11
 
 > [!definition] Definition §81.6: Symplectic Form
-> *(Assignment 9, Problem 3(c).)* A **symplectic form** on a manifold $X$ is a two-form $\omega \in \Omega^2(X)$ such that
+> A **symplectic form** on a manifold $X$ is a two-form $\omega \in \Omega^2(X)$ such that
 >
 > 1. at each $x \in X$, $\omega_x$ is a non-degenerate bilinear form on $T_xX$ (Definition [[§81 The Exterior Derivative#^def-81-5|§81.5]]), and
 > 2. $d\omega = 0$.
 >
 > A *symplectic manifold* is a pair $(X, \omega)$ of a manifold and a symplectic form on it.
+>
+> *Source: Assignment 9, Problem 3(c)*
 
 ^def-81-6
 
 > [!theorem] Theorem §81.12: The Cotangent Bundle Is a Symplectic Manifold
-> *(Assignment 9, Problem 3(c).)* Let $\omega = d\lambda \in \Omega^2(T^{\ast}M)$. In the standard coordinates on $T^{\ast}U$,
+> Let $\omega = d\lambda \in \Omega^2(T^{\ast}M)$. In the standard coordinates on $T^{\ast}U$,
 >
 > $$
 > \omega = \sum_{i=1}^m d\xi_i \wedge d\bar x^i ,
 > $$
 >
 > and $\omega$ is a symplectic form on $T^{\ast}M$. In the basis $\partial/\partial \bar x^1, \ldots, \partial/\partial \bar x^m, \partial/\partial \xi_1, \ldots, \partial/\partial \xi_m$ of a tangent space of $T^{\ast}U$, the matrix of $\omega$ is $J = \begin{pmatrix} 0 & -I_m \\ I_m & 0 \end{pmatrix}$.
+>
+> *Source: Assignment 9, Problem 3(c)*
 
 ^thm-81-12
 
@@ -595,12 +622,14 @@ The second proof uses only two facts about $s_\alpha$: $\pi \circ s_\alpha = \ma
 *Uses:* [[§81 The Exterior Derivative#^prop-81-9|§81.9]], [[§81 The Exterior Derivative#^cor-81-6|§81.6]], [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]], [[§81 The Exterior Derivative#^lem-81-11|§81.11]], [[§81 The Exterior Derivative#^thm-81-7|§81.7]]
 
 > [!theorem] Corollary §81.13: The Symplectic Form Pulled Back by a One-Form
-> *(Not from the assignment; Problems 3(b) and 3(c) combined.)* For $\alpha \in \Omega^1(M)$, $s_\alpha^{\ast}\omega = d\alpha$. So $s_\alpha^{\ast}\omega = 0$ if and only if $\alpha$ is closed; in particular $s_{df}^{\ast}\omega = 0$ for every $f \in C^\infty(M)$.
+> For $\alpha \in \Omega^1(M)$, $s_\alpha^{\ast}\omega = d\alpha$. So $s_\alpha^{\ast}\omega = 0$ if and only if $\alpha$ is closed; in particular $s_{df}^{\ast}\omega = 0$ for every $f \in C^\infty(M)$.
+>
+> *Source: not from the assignment*
 
 ^cor-81-13
 
 > [!proof]+ Proof
-> By naturality of $d$ (Theorem [[§81 The Exterior Derivative#^thm-81-7|§81.7]](4)) and Proposition [[§81 The Exterior Derivative#^prop-81-10|§81.10]], $s_\alpha^{\ast}\omega = s_\alpha^{\ast}(d\lambda) = d(s_\alpha^{\ast}\lambda) = d\alpha$. For $\alpha = df$, $d(df) = 0$.
+> *(Not from the assignment; Problems 3(b) and 3(c) combined.)* By naturality of $d$ (Theorem [[§81 The Exterior Derivative#^thm-81-7|§81.7]](4)) and Proposition [[§81 The Exterior Derivative#^prop-81-10|§81.10]], $s_\alpha^{\ast}\omega = s_\alpha^{\ast}(d\lambda) = d(s_\alpha^{\ast}\lambda) = d\alpha$. For $\alpha = df$, $d(df) = 0$.
 
 ^pf-81-13
 

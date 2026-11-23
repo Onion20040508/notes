@@ -897,7 +897,9 @@ This agrees with Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-
 ^ex-60-3
 
 > [!example] Example §60.4: $\mathrm{O}(2)$: Zero Bracket but Not Abelian
-> *(Not from the assignment.)* The converse of Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-20|§60.20]] needs connectedness: $\mathrm{O}(2)$ is not abelian, but its tangent space at $I$ is that of $\mathrm{SO}(2) \cong S^1$, one-dimensional, so its bracket vanishes by antisymmetry.
+> The converse of Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-20|§60.20]] needs connectedness: $\mathrm{O}(2)$ is not abelian, but its tangent space at $I$ is that of $\mathrm{SO}(2) \cong S^1$, one-dimensional, so its bracket vanishes by antisymmetry.
+>
+> *Source: not from the assignment*
 
 ^ex-60-4
 

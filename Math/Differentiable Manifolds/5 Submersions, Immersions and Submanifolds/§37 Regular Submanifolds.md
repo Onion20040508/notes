@@ -579,7 +579,7 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 *Uses:* [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-14|§37.14]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]]
 
 > [!theorem] Lemma §37.15: An Adapted Chart of a Submanifold of $\mathbb{R}^n$
-> *(Letters as in [[§48 The Normal Bundle of a Submanifold of Euclidean Space|§48]], where this lemma is used: here $M$ is the submanifold and $\mathbb{R}^n$ the ambient space, while above $M$ was the ambient manifold.)* Let $M \subseteq \mathbb{R}^n$ be a regular submanifold of dimension $m$, that is, of codimension $n - m$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), and let $(U, \varphi = (x^1, \ldots, x^n))$ be a smooth chart of $\mathbb{R}^n$ adapted to $M$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), so that
+> The letters are as in [[§48 The Normal Bundle of a Submanifold of Euclidean Space|§48]], where this lemma is used: here $M$ is the submanifold and $\mathbb{R}^n$ the ambient space, while above $M$ was the ambient manifold. Let $M \subseteq \mathbb{R}^n$ be a regular submanifold of dimension $m$, that is, of codimension $n - m$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), and let $(U, \varphi = (x^1, \ldots, x^n))$ be a smooth chart of $\mathbb{R}^n$ adapted to $M$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), so that
 >
 > $$
 > U \cap M = \{\, q \in U : x^{m+1}(q) = \cdots = x^n(q) = 0 \,\}.
@@ -655,6 +655,8 @@ A regular submanifold is a subset, not a map; what is an immersion is its inclus
 *Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§37 Regular Submanifolds#^prop-37-14|§37.14]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark] Remark: The Tangent Spaces Match
-> *(Not from lecture.)* The two tangent spaces of the geometric and the abstract stage correspond as well. Externally, $T^{\mathrm{geo}}_pX = \ker F'(p)$ ([[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]]). In the slice chart of [[§37 Regular Submanifolds#^prop-37-14|Proposition §37.14]], with $F = x_b$, this kernel is the set of vectors on which the differentials of the last $k$ coordinates vanish, the span of the first $n$ coordinate directions; and that span is $\iota_{\ast p}(T_pX)$ ([[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9]]). [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4]] below makes the identification precise, together with the agreement of the two smooth structures.
+> The two tangent spaces of the geometric and the abstract stage correspond as well. Externally, $T^{\mathrm{geo}}_pX = \ker F'(p)$ ([[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]]). In the slice chart of [[§37 Regular Submanifolds#^prop-37-14|Proposition §37.14]], with $F = x_b$, this kernel is the set of vectors on which the differentials of the last $k$ coordinates vanish, the span of the first $n$ coordinate directions; and that span is $\iota_{\ast p}(T_pX)$ ([[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9]]). [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4]] below makes the identification precise, together with the agreement of the two smooth structures.
+>
+> *Source: not from lecture*
 
 ^rem-37-2

@@ -290,6 +290,7 @@ The next proposition makes the condition concrete. Since $\operatorname{Hess}_p 
 > $$
 >
 > The matrix of $B^\flat : T_pM \to T_p^{\ast}M$ in the bases $\partial/\partial x^i|_p$ and $dx^j|_p$ is $H_p$.
+>
 > 2. The following are equivalent:
 >   - (a) $p$ is nondegenerate;
 >   - (b) $B^\flat$ is injective;
@@ -356,13 +357,15 @@ The next proposition makes the condition concrete. Since $\operatorname{Hess}_p 
 ^def-54-5
 
 > [!example] Example §54.2: The Saddle $x^2 - y^2$
-> *(Not from lecture.)* The function $f = x^2 - y^2$ on $\mathbb{R}^2$ has the single critical point $0$, with Hessian matrix $H_0 = \mathrm{diag}(2, -2)$: it is nondegenerate (Definition [[§54 Critical Points and the Hessian#^def-54-3|§54.3]]), of index $1$ (Definition [[§54 Critical Points and the Hessian#^def-54-5|§54.5]]).
+> The function $f = x^2 - y^2$ on $\mathbb{R}^2$ has the single critical point $0$, with Hessian matrix $H_0 = \mathrm{diag}(2, -2)$: it is nondegenerate (Definition [[§54 Critical Points and the Hessian#^def-54-3|§54.3]]), of index $1$ (Definition [[§54 Critical Points and the Hessian#^def-54-5|§54.5]]).
 >
 > *Critical points.* In the identity chart, $\partial f/\partial x = 2x$ and $\partial f/\partial y = -2y$, so $df_{(x,y)} = 2x\, dx - 2y\, dy$ vanishes exactly at $(x, y) = (0, 0)$.
 >
 > *The Hessian matrix.* $\partial^2 f/\partial x^2 = 2$, $\partial^2 f/\partial y^2 = -2$ and $\partial^2 f/\partial x \partial y = 0$, so $H_0 = \mathrm{diag}(2, -2)$ (Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]).
 >
 > *Nondegenerate, of index $1$.* $\det H_0 = -4 \neq 0$, so $0$ is nondegenerate (Proposition [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]](2), (a) $\Leftrightarrow$ (d)). The eigenvalues of the diagonal matrix $H_0$ are its diagonal entries $2$ and $-2$, exactly one of them negative: the index is $1$.
+>
+> *Source: not from lecture*
 
 ^ex-54-2
 

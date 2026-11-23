@@ -124,27 +124,33 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-2|§55.2]](2)). The two extreme values of $k$ are the following two examples.
 
 > [!example] Example §55.1: The Conormal Bundle of the Whole Manifold Is the Zero Section
-> *(Not from the assignment.)* For $S = M$, of codimension $0$ (Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]]), $N_pM = 0$ for every $p$, and $N^{\ast}M = \mathcal{Z}$ is the zero section (Definition [[§52 The Cotangent Bundle#^def-52-3|§52.3]]), cut out by $\xi_1 = \cdots = \xi_m = 0$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]](1)).
+> For $S = M$, of codimension $0$ (Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]]), $N_pM = 0$ for every $p$, and $N^{\ast}M = \mathcal{Z}$ is the zero section (Definition [[§52 The Cotangent Bundle#^def-52-3|§52.3]]), cut out by $\xi_1 = \cdots = \xi_m = 0$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]](1)).
 >
 > *The conormal spaces.* $N_pM$ consists of the covectors $\alpha \in T_p^{\ast}M$ vanishing on $T_pM$ (Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]); a covector vanishing on all of $T_pM$ is the zero map. So $N_pM = 0$.
 >
 > *The bundle.* By Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]], $N^{\ast}M = \{(p, \alpha) : p \in M,\ \alpha \in N_pM\} = \{(p, 0) : p \in M\} = \mathcal{Z}$. In a standard chart, Proposition [[§55 Morse Functions and the Zero Section#^prop-55-2|§55.2]](1) with $k = 0$ sets no base coordinate and all $m$ fibre coordinates equal to $0$: $\xi_1 = \cdots = \xi_m = 0$, the description of $\mathcal{Z}$ in Proposition [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]](1).
+>
+> *Source: not from the assignment*
 
 ^ex-55-1
 
 > [!example] Example §55.2: The Conormal Bundle of a Point Is the Fibre
-> *(Not from the assignment.)* For $S = \{p\}$, of codimension $m$, $N_p\{p\} = T_p^{\ast}M$, and $N^{\ast}\{p\} = \pi^{-1}(p)$ is the fibre of $T^{\ast}M$ over $p$, cut out by $\bar x^1 = \cdots = \bar x^m = 0$ in a chart with $\varphi(p) = 0$.
+> For $S = \{p\}$, of codimension $m$, $N_p\{p\} = T_p^{\ast}M$, and $N^{\ast}\{p\} = \pi^{-1}(p)$ is the fibre of $T^{\ast}M$ over $p$, cut out by $\bar x^1 = \cdots = \bar x^m = 0$ in a chart with $\varphi(p) = 0$.
 >
 > *$\{p\}$ is a regular submanifold of codimension $m$.* A chart $(U, \varphi)$ at $p$ with $\varphi(p) = 0$ has $U \cap \{p\} = \{q \in U : x^1(q) = \cdots = x^m(q) = 0\}$, since $\varphi$ is injective; so it is adapted to $\{p\}$ with all $m$ coordinates vanishing (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]).
 >
 > *The conormal space.* $T_p\{p\} = 0$, the tangent space of a $0$-dimensional manifold, and every covector vanishes on $0$; so $N_p\{p\} = T_p^{\ast}M$ (Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]).
 >
 > *The bundle.* By Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]], $N^{\ast}\{p\} = \{(p, \alpha) : \alpha \in T_p^{\ast}M\} = \pi^{-1}(p)$. In the standard chart over the adapted chart above, Proposition [[§55 Morse Functions and the Zero Section#^prop-55-2|§55.2]](1) with $k = m$ sets all $m$ base coordinates and no fibre coordinate equal to $0$: $\bar x^1 = \cdots = \bar x^m = 0$.
+>
+> *Source: not from the assignment*
 
 ^ex-55-2
 
 > [!remark] Remark: The Conormal Bundle Is Lagrangian
-> *(Not from the assignment.)* In the language of symplectic geometry, not developed in these notes, $N^{\ast}S$ is a Lagrangian submanifold of $T^{\ast}M$ — the cotangent side where, as the remark [[§37 Regular Submanifolds#^rem-37-1|No Normal Vectors Without a Metric]] notes, Hamiltonian mechanics takes place.
+> In the language of symplectic geometry, not developed in these notes, $N^{\ast}S$ is a Lagrangian submanifold of $T^{\ast}M$ — the cotangent side where, as the remark [[§37 Regular Submanifolds#^rem-37-1|No Normal Vectors Without a Metric]] notes, Hamiltonian mechanics takes place.
+>
+> *Source: not from the assignment*
 
 ^rem-55-1
 
@@ -173,7 +179,9 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 *Uses:* [[§36 Submersions#^def-36-5|Def. §36.5]], [[§55 Morse Functions and the Zero Section#^def-55-1|Def. §55.1]], [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]]
 
 > [!remark] Remark: Critical Points and the Zero Section
-> *(Not from the assignment.)* For $S = M$ the conormal bundle is the zero section (Example [[§55 Morse Functions and the Zero Section#^ex-55-1|§55.1]]), and Corollary [[§55 Morse Functions and the Zero Section#^cor-55-3|§55.3]] reads $\operatorname{Crit}(\Phi) = s_\Phi^{-1}(\mathcal{Z})$: this is the starting point of the next subsection, Proposition [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]](1) later in this section, where $s_\Phi$ is transverse to the zero section exactly when $\Phi$ is a Morse function (Theorem [[§55 Morse Functions and the Zero Section#^thm-55-8|§55.8]]). For $S = G^{-1}(0)$ the corollary is the theorem on Lagrange multipliers, read in $N^{\ast}S$ (Corollary [[§55 Morse Functions and the Zero Section#^cor-55-4|§55.4]]).
+> For $S = M$ the conormal bundle is the zero section (Example [[§55 Morse Functions and the Zero Section#^ex-55-1|§55.1]]), and Corollary [[§55 Morse Functions and the Zero Section#^cor-55-3|§55.3]] reads $\operatorname{Crit}(\Phi) = s_\Phi^{-1}(\mathcal{Z})$: this is the starting point of the next subsection, Proposition [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]](1) later in this section, where $s_\Phi$ is transverse to the zero section exactly when $\Phi$ is a Morse function (Theorem [[§55 Morse Functions and the Zero Section#^thm-55-8|§55.8]]). For $S = G^{-1}(0)$ the corollary is the theorem on Lagrange multipliers, read in $N^{\ast}S$ (Corollary [[§55 Morse Functions and the Zero Section#^cor-55-4|§55.4]]).
+>
+> *Source: not from the assignment*
 
 ^rem-55-2
 

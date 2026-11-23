@@ -24,7 +24,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§56 Vector Fields#^lem-56-5|Lemma §56.5: A Smooth Function Vanishing on a Half-Line]]: 116 later results
-- [[§56 Vector Fields#^lem-56-6|Lemma §56.6: Bump Function Equal to 1 on a Closed Coordinate Ball]]: 116 later results
-- [[§56 Vector Fields#^cor-56-7|Corollary §56.7: Bump Functions Exist]]: 113 later results
+- [[§56 Vector Fields#^lem-56-5|Lemma §56.5: A Smooth Function Vanishing on a Half-Line]]: 115 later results
+- [[§56 Vector Fields#^lem-56-6|Lemma §56.6: Bump Function Equal to 1 on a Closed Coordinate Ball]]: 115 later results
+- [[§56 Vector Fields#^cor-56-7|Corollary §56.7: Bump Functions Exist]]: 112 later results
 - [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]: 106 later results

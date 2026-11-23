@@ -269,7 +269,7 @@ Equal dimension is what makes the isomorphisms of Theorem [[§34 The Cotangent S
 Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functions and covectors move *backward*, from $N$ to $M$, because they are things that eat — to evaluate one on $M$, push the input to $N$ and evaluate there.
 
 > [!theorem] Proposition §34.6: Pullback of Covectors in Coordinates
-> *(Computed; not from lecture.)* Let $F : M \to N$ be smooth and $p \in M$, with $m = \dim M$, $n = \dim N$ and charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$, $F^j = y^j \circ F$ and $\tilde F = \psi \circ F \circ \varphi^{-1}$ as in Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]].
+> Let $F : M \to N$ be smooth and $p \in M$, with $m = \dim M$, $n = \dim N$ and charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$, $F^j = y^j \circ F$ and $\tilde F = \psi \circ F \circ \varphi^{-1}$ as in Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]].
 >
 > 1. For each $j = 1, \ldots, n$, the pullback (Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]]) of the coordinate covector $dy^j|_{F(p)}$ is
 >
@@ -289,6 +289,8 @@ Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functi
 > $$
 >
 > its $j$-th column holding the components of $F_p^{\ast}\,dy^j|_{F(p)}$.
+>
+> *Source: not from lecture · computed*
 
 ^prop-34-6
 

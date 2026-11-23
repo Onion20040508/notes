@@ -246,7 +246,9 @@ Maschke's theorem is proved by building a projection onto $U$ that commutes with
 *Uses:* [[§62 Direct Sums and Maschke's Theorem#^lem-62-5|§62.5]]
 
 > [!example] Example §62.2: An Idempotent That Is Not an Orthogonal Projection
-> *(Not from class.)* On $\mathbb{R}^2$ let $\pi(x, y) = (x - y, 0)$. Then $\pi(\pi(x, y)) = \pi(x - y, 0) = (x - y, 0)$, so $\pi$ is idempotent, with image the $x$-axis and kernel the line $y = x$. Proposition [[§62 Direct Sums and Maschke's Theorem#^prop-62-6|§62.6]] splits $(x, y) = (y, y) + (x - y, 0)$. The kernel is not perpendicular to the image, so $\pi$ is not the orthogonal projection onto the $x$-axis for the dot product ([[§63 Invariant Inner Products and Maschke over ℝ|§63]]). An idempotent is a projection onto its image *along* its kernel, and the kernel can be any complement of the image.
+> On $\mathbb{R}^2$ let $\pi(x, y) = (x - y, 0)$. Then $\pi(\pi(x, y)) = \pi(x - y, 0) = (x - y, 0)$, so $\pi$ is idempotent, with image the $x$-axis and kernel the line $y = x$. Proposition [[§62 Direct Sums and Maschke's Theorem#^prop-62-6|§62.6]] splits $(x, y) = (y, y) + (x - y, 0)$. The kernel is not perpendicular to the image, so $\pi$ is not the orthogonal projection onto the $x$-axis for the dot product ([[§63 Invariant Inner Products and Maschke over ℝ|§63]]). An idempotent is a projection onto its image *along* its kernel, and the kernel can be any complement of the image.
+>
+> *Source: not from class*
 
 ^ex-62-2
 
@@ -404,12 +406,12 @@ Neither hypothesis of Maschke's theorem can be dropped: one shear matrix gives a
 > [!example] Example §62.4: Maschke Fails When $|G| = 0$ in $k$
 > Let $p$ be prime, $G = \mathbb{Z}/p\mathbb{Z}$ and $\mathbb{F} = \mathbb{Z}/p\mathbb{Z}$, and define $\rho: G \to GL_2(\mathbb{F})$ by the same matrices $\rho(x) = \left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)$, now with $x \in \mathbb{F}$; the product rule above shows again that $\rho$ is a homomorphism. Then $\mathbb{F}e_1$ is a subrepresentation of $\mathbb{F}^2$, but there is no subrepresentation $V$ with $\mathbb{F}^2 = \mathbb{F}e_1 \oplus V$. Here $G$ is finite, but $|G| = p = 0$ in $\mathbb{F}$.
 >
-> *Source: PS 9.4(2); recalled at the end of the lecture of 11/20 ([[§72 Representations of Cyclic Groups|§72]])*
+> *Source: PS 9.4(2); lecture 11/20*
 
 ^ex-62-4
 
 > [!proof]+ Proof
-> *(Problem Set 9, Problem 9.4(2), as submitted.)* *$\mathbb{F}e_1$ is a subrepresentation.* $\mathbb{F}e_1$ is a subspace of $\mathbb{F}^2$, and for $x \in \mathbb{Z}/p\mathbb{Z}$ and $a \in \mathbb{F}$,
+> *(PS 9.4(2); recalled at the end of the lecture of 11/20 ([[§72 Representations of Cyclic Groups|§72]]).)* *(Problem Set 9, Problem 9.4(2), as submitted.)* *$\mathbb{F}e_1$ is a subrepresentation.* $\mathbb{F}e_1$ is a subspace of $\mathbb{F}^2$, and for $x \in \mathbb{Z}/p\mathbb{Z}$ and $a \in \mathbb{F}$,
 >
 > $$
 > \rho(x)\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} 1 & x \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} a \\ 0 \end{pmatrix} \in \mathbb{F}e_1.
@@ -437,6 +439,8 @@ Neither hypothesis of Maschke's theorem can be dropped: one shear matrix gives a
 *(Not from lecture; figure added.)* The shear $\rho(1)$ of Examples [[§62 Direct Sums and Maschke's Theorem#^ex-62-3|§62.3]] and [[§62 Direct Sums and Maschke's Theorem#^ex-62-4|§62.4]]. A line through $0$ other than the $x$-axis meets the line $y = 1$ in one point $v = (a, 1)$, and $\rho(1)$ slides that point to $(a + 1, 1)$, which lies on a different line (left: $v = (-1, 1)$, $\rho(1)v = (0, 1)$, $\rho(1)^2v = (1, 1)$). So the red $x$-axis $\mathbb{R}e_1$ is the only line that $\rho(1)$ maps to itself, and no line can serve as a complement. Over $\mathbb{F}_3$ (right) the plane has nine points and four lines through $0$. The red points form $\mathbb{F}e_1$, and the row $y = 1$ contains one point of each other line. $\rho(1)$ slides that row by $e_1$, cyclically mod $3$, so it permutes the lines $L_0 \to L_1 \to L_2 \to L_0$ and fixes none of them.
 
 > [!remark] Remark: Where Each Hypothesis Is Used
-> *(Not from class.)* In the proof of Maschke's theorem, $G$ finite makes $\sum_{h \in G}$ a finite sum, and $|G| \neq 0$ in $k$ allows the division by $|G|$ that gives $\pi(u) = u$ in Step 2. For $G = \mathbb{Z}$ there is no finite average to take. For $G = \mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$ the sum $\sum_h h^{-1}P(hu) = p \cdot u$ is $0$ for every $u \in U$. In both cases the examples show that no other construction can help either.
+> In the proof of Maschke's theorem, $G$ finite makes $\sum_{h \in G}$ a finite sum, and $|G| \neq 0$ in $k$ allows the division by $|G|$ that gives $\pi(u) = u$ in Step 2. For $G = \mathbb{Z}$ there is no finite average to take. For $G = \mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$ the sum $\sum_h h^{-1}P(hu) = p \cdot u$ is $0$ for every $u \in U$. In both cases the examples show that no other construction can help either.
+>
+> *Source: not from class*
 
 ^rem-62-3

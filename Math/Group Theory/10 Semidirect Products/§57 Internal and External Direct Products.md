@@ -90,7 +90,9 @@ tags: [group-theory, math493]
 *Uses:* [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§50 Composition Series#^lem-50-4|§50.4]], [[§57 Internal and External Direct Products#^thm-57-1|§57.1]]
 
 > [!remark] Remark: Two Forms of the Criterion
-> *(Not from class.)* Internal Direct Products (Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-6|§54.6]], from PS 6.3(5)) is the finite version: commuting subgroups $H, L$ with $H \cap L = \{e\}$ and $|H|\,|L| = |G|$. For finite $G$ and normal $N_1, N_2$ with $N_1 \cap N_2 = \{e\}$, its counting condition is equivalent to $G = N_1N_2$ (Lemma [[§57 Internal and External Direct Products#^lem-57-3|§57.3]]). The theorem above needs no finiteness.
+> Internal Direct Products (Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-6|§54.6]], from PS 6.3(5)) is the finite version: commuting subgroups $H, L$ with $H \cap L = \{e\}$ and $|H|\,|L| = |G|$. For finite $G$ and normal $N_1, N_2$ with $N_1 \cap N_2 = \{e\}$, its counting condition is equivalent to $G = N_1N_2$ (Lemma [[§57 Internal and External Direct Products#^lem-57-3|§57.3]]). The theorem above needs no finiteness.
+>
+> *Source: not from class*
 
 ^rem-57-2
 

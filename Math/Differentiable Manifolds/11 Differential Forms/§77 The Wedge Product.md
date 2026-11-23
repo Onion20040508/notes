@@ -186,7 +186,7 @@ This is the formula of Lecture 28: for $\alpha = dx^i$ and $\beta = dx^j$ on $\m
 *(Not from lecture; figure added.)* Example [[§77 The Wedge Product#^ex-77-1|§77.1]] as an area, for the covectors $\alpha(x) = 0.9\, x^1 + 0.3\, x^2$ and $\beta(x) = -0.35\, x^1 + 0.85\, x^2$ on $V = \mathbb{R}^2$. Left: the level lines $\alpha = 0, 1, 2, \ldots$ (blue) and $\beta = 0, 1, 2, \ldots$ (red) cut $V$ into cells; the cell $0 \le \alpha \le 1$, $0 \le \beta \le 1$ is shaded grey. Right: the linear map $v \mapsto (\alpha(v), \beta(v))$ sends the cells to the unit squares of the $(\alpha, \beta)$-plane, and the vectors $v^1, v^2$ to $(\alpha(v^1), \beta(v^1)) = (2, 0.5)$ and $(\alpha(v^2), \beta(v^2)) = (0.5, 1.5)$. The determinant $(\alpha \wedge \beta)(v^1, v^2) = 2 \cdot 1.5 - 0.5 \cdot 0.5 = 2.75$ is the signed area of the parallelogram on the right, which is the area of the parallelogram spanned by $v^1$ and $v^2$ on the left measured in cells of the grid (orange). Exchanging $v^1$ and $v^2$ reverses the orientation and the sign.
 
 > [!example] Example §77.2: The Wedge of a One-Form and a Two-Form
-> *(Lecture 30.)* Let $\alpha \in V^{\ast}$ ($k = 1$) and $\beta \in \Lambda^2 V^{\ast}$ ($l = 2$). A $(1, 2)$-shuffle is determined by $\sigma(1)$, which can be any of $1, 2, 3$; the other two values then follow in increasing order. With their signs, the $(1, 2)$-shuffles are
+> Let $\alpha \in V^{\ast}$ ($k = 1$) and $\beta \in \Lambda^2 V^{\ast}$ ($l = 2$). A $(1, 2)$-shuffle is determined by $\sigma(1)$, which can be any of $1, 2, 3$; the other two values then follow in increasing order. With their signs, the $(1, 2)$-shuffles are
 >
 > $$
 > (1 \mid 2, 3)\ {+}, \qquad (2 \mid 1, 3)\ {-}, \qquad (3 \mid 1, 2)\ {+}
@@ -205,6 +205,8 @@ This is the formula of Lecture 28: for $\alpha = dx^i$ and $\beta = dx^j$ on $\m
 > $$
 >
 > Indeed, in that expansion the entry $\alpha(v^j)$ of the top row is multiplied by $(-1)^{1+j}$ and by the $2 \times 2$ minor left after deleting the top row and the $j$-th column, which is $\beta$ evaluated on the two vectors other than $v^j$. The general statement is Lemma [[§78 Properties of the Wedge Product#^lem-78-2|§78.2]].
+>
+> *Source: Lecture 30*
 
 ^ex-77-2
 
@@ -215,7 +217,7 @@ This is the formula of Lecture 28: for $\alpha = dx^i$ and $\beta = dx^j$ on $\m
 **Transcription note (Lecture 30).** The $3 \times 3$ determinant was first written with $\beta$ in the second and third rows, and corrected in class to the rows $\gamma$ and $\delta$.
 
 > [!example] Example §77.3: The Wedge of Two Two-Forms
-> *(Not from lecture; filled in.)* Let $k = l = 2$. A $(2, 2)$-shuffle is determined by the two places $\sigma(1) < \sigma(2)$, so there are $\binom{4}{2} = 6$ of them (Lemma [[§76 Shuffles#^lem-76-1|§76.1]](2)); in one-line notation, with their signs, they are
+> Let $k = l = 2$. A $(2, 2)$-shuffle is determined by the two places $\sigma(1) < \sigma(2)$, so there are $\binom{4}{2} = 6$ of them (Lemma [[§76 Shuffles#^lem-76-1|§76.1]](2)); in one-line notation, with their signs, they are
 >
 > $$
 > (1, 2, 3, 4)\ {+}, \quad (1, 3, 2, 4)\ {-}, \quad (1, 4, 2, 3)\ {+}, \quad (2, 3, 1, 4)\ {+}, \quad (2, 4, 1, 3)\ {-}, \quad (3, 4, 1, 2)\ {+} ,
@@ -229,6 +231,8 @@ This is the formula of Lecture 28: for $\alpha = dx^i$ and $\beta = dx^j$ on $\m
 > &+ \alpha(v^2, v^3)\beta(v^1, v^4) - \alpha(v^2, v^4)\beta(v^1, v^3) + \alpha(v^3, v^4)\beta(v^1, v^2) .
 > \end{aligned}
 > $$
+>
+> *Source: not from lecture · filled in*
 
 ^ex-77-3
 

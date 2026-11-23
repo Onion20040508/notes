@@ -38,9 +38,11 @@ The formulas of Worksheet 17 contain sums such as $V \oplus V$. The direct sum o
 >
 > For $r = 0$ it is the zero space $\{0\}$.
 >
-> *Source: lecture 11/16, for $r$ copies of one representation; the general case is not from class*
+> *Source: lecture 11/16*
 
 ^def-70-1
+
+*Source note.* Lecture 11/16, for $r$ copies of one representation; the general case is not from class.
 
 > [!remark]- Connections
 > - Linear Algebra: as a vector space this is the product $V_1 \times \cdots \times V_r$ of [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|LADR 3.87]]; here $G$ acts on it as well.
@@ -95,12 +97,12 @@ The underlying set of $V^{\oplus a}$ is the set $V^a$ of $a$-tuples. The notatio
 >
 > In particular $\dim V^{\oplus a} = a\dim V$ and $\chi_{V^{\oplus a}} = a\,\chi_V$.
 >
-> *Source: not from class; the lecture of 11/9 proved the case of an internal direct sum of two subrepresentations (Proposition [[§67 Characters of Representations#^prop-67-2|§67.2]]); for two summands this is WS 18.2*
+> *Source: not from class; WS 18.2*
 
 ^prop-70-2
 
 > [!proof]+ Proof
-> *Idea:* in a basis of $E$ made from bases of the $V_i$, every $g$ acts by a block diagonal matrix.
+> *(Not from class; the lecture of 11/9 proved the case of an internal direct sum of two subrepresentations (Proposition [[§67 Characters of Representations#^prop-67-2|§67.2]]); for two summands this is WS 18.2.)* *Idea:* in a basis of $E$ made from bases of the $V_i$, every $g$ acts by a block diagonal matrix.
 >
 > *(Not from class; filled in.)* For $v \in V_i$ let $\iota_i(v) \in E$ be the tuple with $v$ in position $i$ and $0$ in all other positions. Then $(v_1, \ldots, v_r) = \iota_1(v_1) + \cdots + \iota_r(v_r)$.
 >
@@ -131,12 +133,12 @@ The underlying set of $V^{\oplus a}$ is the set $V^a$ of $a$-tuples. The notatio
 >
 > with $r = 0$ when $V = \{0\}$.
 >
-> *Source: lecture 11/16, used in the proof of Lemma [[§70 Schur's Lemma and Multiplicities#^lem-70-11|§70.11]]; the proof is not from class*
+> *Source: lecture 11/16*
 
 ^cor-70-3
 
 > [!proof]+ Proof
-> *Idea:* decompose $V$ into simple subrepresentations and collect the summands that are isomorphic to each other.
+> *(Lecture 11/16, used in the proof of Lemma [[§70 Schur's Lemma and Multiplicities#^lem-70-11|§70.11]]; the proof is not from class.)* *Idea:* decompose $V$ into simple subrepresentations and collect the summands that are isomorphic to each other.
 >
 > *(Not from class; filled in.)* By Corollary [[§65 Simple Representations#^cor-65-3|§65.3]], $V = V_1 \oplus \cdots \oplus V_n$ (internal direct sum, Definition [[§65 Simple Representations#^def-65-3|§65.3]]) with simple subrepresentations $V_1, \ldots, V_n$.
 >
@@ -389,9 +391,11 @@ Over the complex numbers the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ are al
 > [!remark] Remark: Over Other Fields the Weights Stay
 > The proof of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]] needs an eigenvalue of $\alpha$ in the ground field. Over $\mathbb{R}$ a linear map need not have a real eigenvalue, and for a simple real representation $S$ the number $\dim\operatorname{Hom}_G(S, S)$ can be larger than $1$. The lecture of 11/18 gave an example, the rotation representation of $\mathbb{Z}/4\mathbb{Z}$ on $\mathbb{R}^2$, where the number is $2$ (Example [[§71 The Character Table#^ex-71-2|§71.2]]); the proofs are Problem 10.4 of Problem Set 10 (Example [[§71 The Character Table#^ex-71-3|§71.3]]). So over $\mathbb{R}$, and over a general field containing $\mathbb{Q}$, the weights $\dim\operatorname{Hom}_G(S_i, S_i)$ of Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-7|§70.7]] must be kept.
 >
-> *Source: lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the example is from the lecture of 11/18 and PS 10.4*
+> *Source: lecture 11/16; lecture 11/18; PS 10.4*
 
 ^rem-70-1
+
+*Source note.* Lecture 11/16: over $\mathbb{C}$ the weights need not be tracked; the example is from the lecture of 11/18 and PS 10.4.
 
 ## The Characters of $S_3$ and a Simplicity Test
 
@@ -426,12 +430,12 @@ For simple representations these two phenomena are general:
 > 1. If $S \not\cong T$, then $\displaystyle\sum_{g \in G} \chi_S(g^{-1})\,\chi_T(g) = 0$.
 > 2. $\displaystyle\sum_{g \in G} \chi_S(g^{-1})\,\chi_S(g) = |G| \cdot \dim\operatorname{Hom}_G(S, S)$. If $k = \mathbb{C}$, this is $|G|$.
 >
-> *Source: lecture 11/16, as the explanation of the numbers $0$ and $6$ in Example [[§70 Schur's Lemma and Multiplicities#^ex-70-1|§70.1]]*
+> *Source: lecture 11/16*
 
 ^prop-70-10
 
 > [!proof]+ Proof
-> *(Lecture 11/16.)* Multiplying the formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] by $|G|$ gives $\sum_{g} \chi_V(g^{-1})\,\chi_W(g) = |G| \cdot \dim\operatorname{Hom}_G(V, W)$ for all $V$, $W$.
+> *(Lecture 11/16, as the explanation of the numbers $0$ and $6$ in Example [[§70 Schur's Lemma and Multiplicities#^ex-70-1|§70.1]].)* *(Lecture 11/16.)* Multiplying the formula of Theorem [[§68 Homomorphisms Between Representations#^thm-68-6|§68.6]] by $|G|$ gives $\sum_{g} \chi_V(g^{-1})\,\chi_W(g) = |G| \cdot \dim\operatorname{Hom}_G(V, W)$ for all $V$, $W$.
 >
 > **(1)** For $V = S$ and $W = T$ with $S \not\cong T$, $\operatorname{Hom}_G(S, T) = \{0\}$ (Corollary [[§70 Schur's Lemma and Multiplicities#^cor-70-6|§70.6]]).
 >
@@ -476,12 +480,12 @@ In Example [[§70 Schur's Lemma and Multiplicities#^ex-70-1|§70.1]] the argumen
 > [!theorem] Corollary §70.12: Simplicity over $\mathbb{C}$
 > Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{C}$. Then $V$ is [[§65 Simple Representations#^def-65-1|simple]] if and only if $\dim\operatorname{Hom}_G(V, V) = 1$.
 >
-> *Source: not from class; the two directions are WS 17.4 and the lemma of the board 11/16*
+> *Source: not from class; WS 17.4; board 11/16*
 
 ^cor-70-12
 
 > [!proof]+ Proof
-> *(Not from class.)* If $V$ is simple, then $\dim\operatorname{Hom}_G(V, V) = 1$ by Schur's Lemma over $\mathbb{C}$ (Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]]). The converse is Lemma [[§70 Schur's Lemma and Multiplicities#^lem-70-11|§70.11]] for $k = \mathbb{C}$.
+> *(Not from class; the two directions are WS 17.4 and the lemma of the board 11/16.)* *(Not from class.)* If $V$ is simple, then $\dim\operatorname{Hom}_G(V, V) = 1$ by Schur's Lemma over $\mathbb{C}$ (Proposition [[§70 Schur's Lemma and Multiplicities#^prop-70-8|§70.8]]). The converse is Lemma [[§70 Schur's Lemma and Multiplicities#^lem-70-11|§70.11]] for $k = \mathbb{C}$.
 
 ^pf-70-12
 
@@ -505,7 +509,7 @@ In Example [[§70 Schur's Lemma and Multiplicities#^ex-70-1|§70.1]] the argumen
 ^ex-70-2
 
 > [!example] Example §70.3: The Permutation Representation of $S_3$ by Multiplicities
-> *(Not from class.)* The permutation representation $\mathbb{R}^3$ of $S_3$ is the internal direct sum $\mathbb{R}(1,1,1) \oplus U$ (Example [[§65 Simple Representations#^ex-65-1|§65.1]]), and $S_3$ acts trivially on $\mathbb{R}(1,1,1)$. So by Lemma [[§70 Schur's Lemma and Multiplicities#^lem-70-1|§70.1]]
+> The permutation representation $\mathbb{R}^3$ of $S_3$ is the internal direct sum $\mathbb{R}(1,1,1) \oplus U$ (Example [[§65 Simple Representations#^ex-65-1|§65.1]]), and $S_3$ acts trivially on $\mathbb{R}(1,1,1)$. So by Lemma [[§70 Schur's Lemma and Multiplicities#^lem-70-1|§70.1]]
 >
 > $$
 > \mathbb{R}^3 \cong \mathrm{triv}^{\oplus 1} \oplus \mathrm{sign}^{\oplus 0} \oplus U^{\oplus 1},
