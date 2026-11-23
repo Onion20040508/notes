@@ -20,7 +20,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§53 One-Forms#^prop-53-1|Proposition §53.1: One-Forms in Coordinates]]: 39 later results
-- [[§53 One-Forms#^prop-53-2|Proposition §53.2: Sums and Function Multiples of One-Forms]]: 39 later results
-- [[§53 One-Forms#^prop-53-3|Proposition §53.3: The Differential of a Function Is a One-Form]]: 33 later results
-- [[§54 Critical Points and the Hessian#^prop-54-1|Proposition §54.1: Forms of the Hessian Matrix]]: 17 later results
+- [[§53 One-Forms#^prop-53-1|Proposition §53.1: One-Forms in Coordinates]]: 45 later results
+- [[§53 One-Forms#^prop-53-2|Proposition §53.2: Sums and Function Multiples of One-Forms]]: 45 later results
+- [[§53 One-Forms#^prop-53-3|Proposition §53.3: The Differential of a Function Is a One-Form]]: 39 later results
+- [[§53 One-Forms#^prop-53-6|Proposition §53.6: Pullbacks in Coordinates]]: 18 later results

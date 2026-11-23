@@ -37509,6 +37509,332 @@ The two computations were not done on the board. The formula for $k$-forms is th
 
 \emph{Convention.} The formula depends on the determinant convention for the wedge product (the remark \emph{Two Conventions for the Wedge Product} in \ref{sec:wedge-product}), which is also Lee's; with the Alt convention a factor $\frac12$ appears on the left.
 
+\section{Lie Derivatives of Forms}\label{sec:lie-derivative-forms}
+
+\roadmark{Stage: forms}{Differentiating a form along the flow of a vector field: the definition, the model computation in straightening coordinates, and four properties; a form with zero Lie derivative is invariant under the flow.}
+
+\textit{(Lecture 34.)} The Lie derivative of functions and of vector fields (\ref{sec:lie-derivative}) is now defined for differential forms, by the same recipe: pull back along the flow, then differentiate in time. Forms pull back under any smooth map (Definition~\ref{def:pullback-k-form}), so this is simpler than for vector fields. Throughout, $\mathbf{X} \in \mathfrak{X}(M)$ is fixed, and $\varphi : \mathcal{D} \to M$ is its flow (Theorem~\ref{thm:maximal-flow}); for $t \in \mathbb{R}$, $M_t = \{p : (t, p) \in \mathcal{D}\}$ is open and $\varphi_t$ is smooth on it (Lemma~\ref{lem:flow-diffeo-Mt}).
+
+\begin{rembox}[Notation of Lecture 34]\label{rem:notation-lecture-34}
+In addition to the remark \emph{Notation of Lecture 33} (\ref{sec:h1-circle}):
+\begin{itemize}[nosep]
+\item \emph{Contraction.} The board writes $i_\mathbf{X}$ for the contraction; these notes write $\iota_\mathbf{X}$, as in Definition~\ref{def:contraction}.
+\item \emph{Lie derivative.} The board's definition box writes $(\mathcal{L}\alpha)_p$; the field is fixed, and the notes write $(\mathcal{L}_\mathbf{X}\alpha)_p$.
+\item \emph{The curve $\alpha_p(t)$.} $\alpha_p(t) = (\varphi_t^*\alpha)_p$ is a point of $\Lambda^k T_p^*M$ for each $t$; it is not $\alpha$ evaluated at a moving point. In particular $\alpha_p(0) = \alpha_p$. The board's ``$(\varphi_t)^*(\alpha_{\varphi_t(p)})$'' is $(d\varphi_t)_p^*\big(\alpha_{\varphi_t(p)}\big)$, the pullback of Definition~\ref{def:pullback-k-form} at the point $p$.
+\item \emph{Two letters $d$.} $\frac{d}{dt}$ differentiates curves in a fixed vector space; $d$ alone is the exterior derivative.
+\end{itemize}
+\end{rembox}
+
+\begin{defbox}[Lie Derivative of a Form]\deflabel{def:lie-derivative-form}
+Let $\alpha \in \Omega^k(M)$ and $p \in M$. For $t$ with $p \in M_t$ (at least for $|t|$ small) define
+\[
+\alpha_p(t) = (\varphi_t^*\alpha)_p = (d\varphi_t)_p^*\big(\alpha_{\varphi_t(p)}\big) \in \Lambda^k T_p^*M ,
+\]
+a curve in the vector space $\Lambda^k T_p^*M$; the vector space is the same for every $t$ (the board's ``$t$-independent''), and only the point $\alpha_p(t)$ moves. The curve $t \mapsto \alpha_p(t)$ is smooth (Lemma~\ref{lem:lie-derivative-form-smooth}). The \textbf{Lie derivative} of $\alpha$ with respect to $\mathbf{X}$ is the $k$-form $\mathcal{L}_\mathbf{X}\alpha$ given at each $p$ by
+\[
+(\mathcal{L}_\mathbf{X}\alpha)_p = \frac{d}{dt}\Big|_{t=0} \alpha_p(t) = \lim_{t \to 0} \frac{1}{t}\Big( (\varphi_t^*\alpha)_p - \alpha_p \Big) .
+\]
+\leeref{Ch.~12, \emph{Lie Derivatives of Tensor Fields} (12.8)}
+\end{defbox}
+
+The definition makes sense for every $p$, because $(t, p) \in \mathcal{D}$ for $|t|$ small, and the open set $M_t$ containing $p$ is where $\varphi_t$ is defined and smooth; $\mathbf{X}$ need not be complete. The curve lives in one fixed finite-dimensional vector space, so its derivative is taken componentwise in any basis.
+
+%% >>> ADDED: figure (not from lecture; the board drew the left half)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\draw[thick, fill=gray!6] plot[smooth cycle] coordinates {(-0.3,-0.9) (1.6,-1.2) (3.8,-0.8) (4.7,0.7) (3.6,1.75) (0.8,1.5) (-0.4,0.6)};
+\node[font=\small] at (3.95,-1.0) {$M$};
+\draw[thick, red!70!black, ->] plot[smooth] coordinates {(0.4,-0.3) (1.3,0.1) (2.4,0.42) (3.4,0.25)};
+\node[red!70!black, font=\scriptsize] at (1.45,-0.45) {$t \mapsto \varphi_t(p)$};
+\fill (0.4,-0.3) circle (1.5pt) node[left, font=\scriptsize] {$p$};
+\fill (2.4,0.42) circle (1.5pt) node[below=2pt, font=\scriptsize] {$\varphi_t(p)$};
+\foreach \d in {-0.14,0,0.14} { \draw[blue!70!black, thick] ({2.55+\d},{0.72+\d*0.3}) -- ({2.8+\d},{1.08+\d*0.3}); }
+\node[blue!70!black, font=\scriptsize, anchor=west] at (3.0,1.15) {$\alpha_{\varphi_t(p)}$};
+\draw[->, dashed, blue!70!black] (2.35,1.0) to[bend right=35] node[pos=0.45, above left=-1pt, font=\scriptsize] {$(d\varphi_t)_p^*$} (0.45,-0.12);
+\begin{scope}[xshift=6.4cm]
+\fill[gray!12] (-0.3,-1.0) -- (3.2,-1.0) -- (3.8,1.4) -- (0.3,1.4) -- cycle;
+\node[font=\scriptsize, gray!60!black, anchor=west] at (2.4,1.65) {$\Lambda^k T_p^*M$ (fixed)};
+\draw[thick, orange!85!black] plot[smooth] coordinates {(0.2,-0.75) (0.6,-0.45) (1.6,0.2) (2.7,0.32) (3.2,0.75)};
+\fill (0.6,-0.45) circle (1.2pt) node[left=1pt, font=\scriptsize] {$\alpha_p(-t)$};
+\fill (1.6,0.2) circle (1.5pt) node[below=3pt, font=\scriptsize] {$\alpha_p(0) = \alpha_p$};
+\fill (2.7,0.32) circle (1.2pt) node[below right=-1pt, font=\scriptsize] {$\alpha_p(t)$};
+\draw[->, very thick, red!70!black] (1.6,0.2) -- (2.45,0.55) node[above, font=\scriptsize] {$(\mathcal{L}_\mathbf{X}\alpha)_p$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Definition~\ref{def:lie-derivative-form}. Left, as on the board: the value of $\alpha$ at $\varphi_t(p)$ is carried back to $p$ by the pullback $(d\varphi_t)_p^*$. Right: for each $t$ this gives a point $\alpha_p(t)$ of the one vector space $\Lambda^k T_p^*M$, which does not depend on $t$; the curve passes through $\alpha_p$ at $t = 0$, and its velocity there is $(\mathcal{L}_\mathbf{X}\alpha)_p$. For forms no inverse $\varphi_{-t}$ is needed, unlike for vector fields (Definition~\ref{def:lie-derivative-field}): forms pull back.
+%% <<< END ADDED
+
+\begin{lembox}[The Lie Derivative of a Form Is a Smooth Form]\thmlabel{lem:lie-derivative-form-smooth}
+For $\alpha \in \Omega^k(M)$ and $p \in M$, the curve $t \mapsto \alpha_p(t)$ is smooth. More precisely, for every chart $(U, (x^i))$ at $p$ there are a neighbourhood $U' \subseteq U$ of $p$ and $\varepsilon > 0$ such that, on $U'$ and for $|t| < \varepsilon$,
+\[
+\varphi_t^*\alpha = \sum_A g_A(t, x)\, dx^A
+\]
+with $g_A$ smooth on $(-\varepsilon, \varepsilon) \times U'$. Consequently $\mathcal{L}_\mathbf{X}\alpha = \sum_A \frac{\partial g_A}{\partial t}(0, x)\, dx^A$ on $U'$, and $\mathcal{L}_\mathbf{X}\alpha \in \Omega^k(M)$.
+\leeref{Lemma 12.30}
+\end{lembox}
+
+\begin{proof}
+\textit{(Stated in Lecture 34, ``$t \mapsto \alpha_p(t)$ is a $C^\infty$ curve''; filled in, as for vector fields in Lemma~\ref{lem:lie-derivative-smooth}.)} Since $\mathcal{D}$ is open and $\varphi$ is continuous with $\varphi(0, p) = p$, there are $\varepsilon > 0$ and an open $U' \subseteq U$ containing $p$ with $(-\varepsilon, \varepsilon) \times U' \subseteq \mathcal{D}$ and $\varphi\big((-\varepsilon, \varepsilon) \times U'\big) \subseteq U$. Write $\alpha = \sum_B f_B\, dx^B$ on $U$, and $\varphi^i(t, x)$ for the components of $\varphi$ in the chart, smooth on $(-\varepsilon, \varepsilon) \times U'$. For fixed $t$, $\varphi_t$ maps $U'$ into $U$, and Proposition~\ref{prop:pullback-k-form-properties}(4) gives, on $U'$,
+\[
+\varphi_t^*\alpha = \sum_A \Big( \sum_B f_B\big(\varphi(t, x)\big)\, \det\Big( \frac{\partial \varphi^{b_i}}{\partial x^{a_j}}(t, x) \Big)_{i, j} \Big)\, dx^A .
+\]
+The coefficient $g_A(t, x)$ is a sum of products of smooth functions of $(t, x)$. At $x = p$, the components of $t \mapsto \alpha_p(t)$ in the basis $dx^A|_p$ are the smooth functions $g_A(t, p)$, so the curve is smooth and its derivative at $0$ has components $\partial_t g_A(0, p)$. These are smooth functions of $x \in U'$, so $\mathcal{L}_\mathbf{X}\alpha$ is smooth near $p$, for every $p$ (Definition~\ref{def:smooth-k-form}).
+\end{proof}
+
+\textit{Observation} (Lecture 34). If $k = 0$, $\alpha = f \in C^\infty(M)$, then $\mathcal{L}_\mathbf{X} f = \mathbf{X}(f)$. Indeed $\Lambda^0 T_p^*M = \mathbb{R}$, $\alpha_p(t) = (\varphi_t^*f)(p) = f(\varphi_t(p))$, and Definition~\ref{def:lie-derivative-form} is Definition~\ref{def:lie-derivative-function}; this is Proposition~\ref{prop:lie-derivative-function}. This is the green vertical arrow $\mathcal{L}_\mathbf{X}$ of the diagram in \ref{sec:cartan}, in degree $0$.
+
+\begin{exbox}[The Lie Derivative in Straightening Coordinates]\exlabel{ex:lie-derivative-form-straight}
+\textit{(Lecture 34.)} Take $\mathbf{X} = \partial/\partial x^1$ in local coordinates $(x^1, \ldots, x^m)$, and $\alpha = f_A\, dx^A$, one of the monomials that generate forms in local coordinates, with $f_A$ smooth. By the canonical form near a regular point (Lemma~\ref{lem:straightening}) this is the normal form of a vector field near any point where it does not vanish. Then
+\[
+\mathcal{L}_\mathbf{X}\alpha = \frac{\partial f_A}{\partial x^1}\, dx^A .
+\]
+\end{exbox}
+
+\begin{proof}[Computation]
+\textit{(Lecture 34; the locality is filled in as in Case~2 of Theorem~\ref{thm:lie-derivative-bracket}.)} The flow is translation in the $x^1$-coordinate, $\varphi_t(x^1, \ldots, x^m) = (x^1 + t, x^2, \ldots, x^m)$, for $x$ near a given point and $|t|$ small (Example~\ref{ex:lie-derivative-d1}). So the Jacobian of $\varphi_t$ in these coordinates is the identity matrix, and $\varphi_t^*(dx^A) = dx^A$: indeed $\varphi_t^*(dx^a) = d(x^a \circ \varphi_t) = d(x^a + t\,\delta^a_1) = dx^a$ (Proposition~\ref{prop:pullback-k-form-properties}(3)), and pullback preserves wedge products. Hence
+\[
+\varphi_t^*\alpha = (f_A \circ \varphi_t)\, dx^A = (\varphi_t^* f_A)\, dx^A ,
+\]
+and the curve is just the coefficient function composed with the flow, $f_A(x^1 + t, x^2, \ldots, x^m)$ times the fixed $dx^A|_x$. Its derivative at $t = 0$ is $\frac{\partial f_A}{\partial x^1}\, dx^A$.
+\end{proof}
+
+The Lie derivative of forms has properties analogous to those of the exterior derivative; the only question in the product rule is whether there is a sign.
+
+\begin{thmbox}[Properties of the Lie Derivative of Forms]\thmlabel{thm:lie-derivative-form-properties}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi$, and let $\alpha \in \Omega^k(M)$, $\beta \in \Omega^l(M)$.
+\begin{enumerate}[nosep]
+\item $\mathcal{L}_\mathbf{X}$ is $\mathbb{R}$-linear: $\mathcal{L}_\mathbf{X}(\alpha + c\,\alpha') = \mathcal{L}_\mathbf{X}\alpha + c\,\mathcal{L}_\mathbf{X}\alpha'$ for $\alpha, \alpha' \in \Omega^k(M)$ and $c \in \mathbb{R}$.
+\item $\mathcal{L}_\mathbf{X}(\alpha \wedge \beta) = (\mathcal{L}_\mathbf{X}\alpha) \wedge \beta + \alpha \wedge (\mathcal{L}_\mathbf{X}\beta)$, with no sign.
+\item $\mathcal{L}_\mathbf{X}(d\alpha) = d(\mathcal{L}_\mathbf{X}\alpha)$.
+\item $\mathcal{L}_\mathbf{X}(\varphi_t^*\alpha) = \varphi_t^*(\mathcal{L}_\mathbf{X}\alpha)$, for every $t$, on the open set $M_t$ where $\varphi_t$ is defined.
+\end{enumerate}
+\leeref{Proposition 14.33; Corollary 14.36; Proposition 12.36; for tensor fields, Proposition 12.32}
+\end{thmbox}
+
+The symbol $\mathcal{L}$ has two entries, $\mathbf{X}$ and $\alpha$; in this section $\mathbf{X}$ is fixed. Lecture~34 stated (1) also with respect to $\mathbf{X}$: $\mathcal{L}_{\mathbf{X} + c\mathbf{Y}}\alpha = \mathcal{L}_\mathbf{X}\alpha + c\,\mathcal{L}_\mathbf{Y}\alpha$. This is not visible from the definition, since the flow of $\mathbf{X} + c\mathbf{Y}$ is not built simply from those of $\mathbf{X}$ and $\mathbf{Y}$; it is Corollary~\ref{cor:lie-linear-in-X}, proved with Cartan's formula. In (4), the left-hand side is the Lie derivative of the form $\varphi_t^*\alpha$ on the open submanifold $M_t$, with respect to the restriction of $\mathbf{X}$, whose flow near each point is again $\varphi_s$ for small $|s|$.
+
+Lecture~34 gave explanations of (2) and (3), close to proofs, and a proof of (4). Below, each explanation is kept and completed to a proof.
+
+\begin{proof}
+\textit{(Lecture 34: explanations of (2) and (3) and the proof of (4), each completed; (1) is filled in.)}
+
+(1) Pullback is linear (Proposition~\ref{prop:pullback-k-form-properties}(1)), so $(\varphi_t^*(\alpha + c\alpha'))_p = \alpha_p(t) + c\,\alpha'_p(t)$, and the derivative at $t = 0$ of a sum of curves in the vector space $\Lambda^k T_p^*M$ is the sum of the derivatives.
+
+(2) \emph{Explanation} (Lecture 34). Very schematically, $\mathcal{L}_\mathbf{X}(\alpha \wedge \beta) = \frac{d}{dt}\big|_{t=0} \varphi_t^*(\alpha \wedge \beta)$, and pullback fits well with wedge, $\varphi_t^*(\alpha \wedge \beta) = (\varphi_t^*\alpha) \wedge (\varphi_t^*\beta)$. Evaluated on $k + l$ vectors this is a sum over shuffles $\sigma \in \mathrm{Sh}(k, l)$ of $\sgn(\sigma)$ times an ordinary product of a value of $\varphi_t^*\alpha$ and a value of $\varphi_t^*\beta$. The ordinary product rule of calculus gives a plus sign, and reconstituting the whole thing gives no additional signs. \emph{Proof} \textit{(filled in)}. Fix $p$. By Proposition~\ref{prop:pullback-k-form-properties}(2), $(\alpha \wedge \beta)_p(t) = \alpha_p(t) \wedge \beta_p(t)$. The wedge product $\Lambda^k T_p^*M \times \Lambda^l T_p^*M \to \Lambda^{k+l} T_p^*M$ is bilinear on fixed finite-dimensional spaces, and for a bilinear map $B$ and smooth curves $a(t)$, $b(t)$, $\frac{d}{dt} B(a(t), b(t)) = B(\dot a(t), b(t)) + B(a(t), \dot b(t))$ (in bases, $B$ is a sum of products of components, and this is the product rule for each). At $t = 0$ this is (2) at $p$.
+
+(3) \emph{Explanation} (Lecture 34). $\mathcal{L}_\mathbf{X}(d\alpha) = \frac{d}{dt}\big|_{t=0} \varphi_t^*(d\alpha) = \frac{d}{dt}\big|_{t=0} d(\varphi_t^*\alpha)$, since $d$ commutes with pullbacks (Theorem~\ref{thm:exterior-derivative}(4)). It remains to commute $d$ with $\frac{d}{dt}$, and that is Clairaut: written in coordinates, $\varphi_t^*\alpha$ is a smooth function of $t$ and $x$; $d$ involves the partials $\partial/\partial x^i$, and $\frac{d}{dt}$ is the derivative in $t$, so this is exchanging the order of differentiation. \emph{Proof} \textit{(filled in)}. Fix $p$ and take $U'$, $\varepsilon$ and $\varphi_t^*\alpha = \sum_A g_A(t, x)\, dx^A$ on $U'$ as in Lemma~\ref{lem:lie-derivative-form-smooth}. For each fixed $t$, $\varphi_t^*(d\alpha) = d(\varphi_t^*\alpha)$ on $U'$ (naturality for $\varphi_t|_{U'}$, with Lemma~\ref{lem:pullback-forms-functorial}(3)), and by Corollary~\ref{cor:d-coordinates},
+\[
+\varphi_t^*(d\alpha) = \sum_A \sum_j \frac{\partial g_A}{\partial x^j}(t, x)\; dx^j \wedge dx^A \quad \text{on } U' .
+\]
+Differentiating in $t$ at $t = 0$, componentwise, gives $\mathcal{L}_\mathbf{X}(d\alpha) = \sum_A \sum_j \frac{\partial^2 g_A}{\partial t\, \partial x^j}(0, x)\, dx^j \wedge dx^A$ on $U'$. On the other hand $\mathcal{L}_\mathbf{X}\alpha = \sum_A \frac{\partial g_A}{\partial t}(0, x)\, dx^A$, so $d(\mathcal{L}_\mathbf{X}\alpha) = \sum_A \sum_j \frac{\partial^2 g_A}{\partial x^j\, \partial t}(0, x)\, dx^j \wedge dx^A$. The mixed partials of the smooth functions $g_A$ agree.
+
+(4) \textit{(Lecture 34; it follows from the group law.)} Fix $t$ and $p \in M_t$, and let $q = \varphi_t(p)$. For $|s|$ small, the group law (Proposition~\ref{prop:group-law}) gives $\varphi_s \circ \varphi_t = \varphi_{t+s} = \varphi_t \circ \varphi_s$ near $p$ (these flows commute), and in particular $\varphi_{t+s}(p) = \varphi_s(q)$. By Definition~\ref{def:lie-derivative-form} and Lemma~\ref{lem:pullback-forms-functorial}(1),
+\[
+\mathcal{L}_\mathbf{X}(\varphi_t^*\alpha)_p = \frac{d}{ds}\Big|_{s=0} \big(\varphi_s^*\varphi_t^*\alpha\big)_p = \frac{d}{ds}\Big|_{s=0} \big(\varphi_t^*\varphi_s^*\alpha\big)_p = \frac{d}{ds}\Big|_{s=0} (d\varphi_t)_p^*\, \big(\varphi_s^*\alpha\big)_q = \frac{d}{ds}\Big|_{s=0} (d\varphi_t)_p^*\, \alpha_q(s) .
+\]
+Now $t$ is fixed, so the differential $(d\varphi_t)_p : T_pM \to T_qM$ induces a fixed linear map $(d\varphi_t)_p^* : \Lambda^k T_q^*M \to \Lambda^k T_p^*M$; and $s \mapsto \alpha_q(s)$ is a curve in $\Lambda^k T_q^*M$. The curve in $\Lambda^k T_p^*M$ being differentiated is the image of this curve under the linear map, and taking the derivative commutes with a linear map:
+\[
+\mathcal{L}_\mathbf{X}(\varphi_t^*\alpha)_p = (d\varphi_t)_p^*\, \frac{d}{ds}\Big|_{s=0} \alpha_q(s) = (d\varphi_t)_p^*\, (\mathcal{L}_\mathbf{X}\alpha)_q = \big(\varphi_t^*(\mathcal{L}_\mathbf{X}\alpha)\big)_p . \qedhere
+\]
+\end{proof}
+
+%% >>> ADDED: diagram (after the board)
+\begin{center}
+\begin{tikzcd}[column sep=huge, row sep=normal]
+T_pM \arrow[r, "(d\varphi_t)_p"] & T_qM \\
+\Lambda^k T_p^*M & \Lambda^k T_q^*M \arrow[l, "(d\varphi_t)_p^*"'] \\
+(\varphi_t^*\varphi_s^*\alpha)_p & \alpha_q(s) = (\varphi_s^*\alpha)_q \arrow[l, mapsto, "(d\varphi_t)_p^*"']
+\end{tikzcd}
+\end{center}
+\textit{(Figure after the board.)} The proof of (4), with $t$ fixed and $q = \varphi_t(p)$. Top: the differential of the time-$t$ map. Middle: the linear map it induces on $k$-covectors, in the opposite direction. Bottom: a point of the curve $s \mapsto \alpha_q(s)$ in the fixed space $\Lambda^k T_q^*M$ and its image in $\Lambda^k T_p^*M$. The image of the curve is the curve $s \mapsto (\varphi_t^*\varphi_s^*\alpha)_p$, and the derivative of the image is the image of the derivative.
+%% <<< END ADDED
+
+\textbf{Transcription notes (Lecture 34).} In the proof of (4) the board first wrote $T_q M$ where $\Lambda^k T_q^*M$ is meant (corrected in class to $T_q^*M$, and then to $\Lambda^k T_q^*M$), and $\alpha_{\varphi_s(q)}$ for the point of $\Lambda^k T_q^*M$; that is a covector at the moving point $\varphi_s(q)$, not a point of $\Lambda^k T_q^*M$, and the object is $\alpha_q(s) = (\varphi_s^*\alpha)_q$, a curve at the fixed point $q$. In the handwritten notes the same object appears as $\alpha_{q(s)}$.
+
+\begin{corbox}[Zero Lie Derivative Means Invariance]\thmlabel{cor:lie-zero-invariant}
+Let $\alpha \in \Omega^k(M)$. For every $p$ and every $t$ with $p \in M_t$,
+\[
+\frac{d}{dt}\, (\varphi_t^*\alpha)_p = \big(\varphi_t^*(\mathcal{L}_\mathbf{X}\alpha)\big)_p .
+\]
+In particular, if $\mathcal{L}_\mathbf{X}\alpha = 0$, then $\varphi_t^*\alpha = \alpha$ wherever defined.
+\leeref{Proposition 12.36; Theorem 12.37}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture 34: the curves $t \mapsto (\varphi_t^*\alpha)_p$ are constant; the derivative at every time is filled in.)} Fix $p$ and $t_0$ with $p \in M_{t_0}$. Then $(\varphi_{t_0 + s}^*\alpha)_p = (\varphi_s^*\varphi_{t_0}^*\alpha)_p$ for small $|s|$, by the group law, so the derivative at $t_0$ of $t \mapsto (\varphi_t^*\alpha)_p$ is the derivative at $s = 0$ of $s \mapsto (\varphi_s^*(\varphi_{t_0}^*\alpha))_p$, which is $\mathcal{L}_\mathbf{X}(\varphi_{t_0}^*\alpha)_p = (\varphi_{t_0}^*\mathcal{L}_\mathbf{X}\alpha)_p$ by (4). If $\mathcal{L}_\mathbf{X}\alpha = 0$, the curve $t \mapsto (\varphi_t^*\alpha)_p$, defined on the open interval of times of the maximal integral curve through $p$, an interval containing $0$, has zero derivative everywhere, so it is constant, equal to its value $\alpha_p$ at $t = 0$.
+\end{proof}
+
+\emph{Divergence and volume.} Lecture~34 gave a first application of Corollary~\ref{cor:lie-zero-invariant}, on open subsets of $\mathbb{R}^m$ (or in local coordinates), through a problem on Homework~10.
+
+\begin{defbox}[Divergence]\deflabel{def:divergence}
+\textit{(Calculus III; recalled in Lecture 34.)} Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} = \sum_{i=1}^m f^i\, \partial/\partial x^i \in \mathfrak{X}(M)$. The \textbf{divergence} of $\mathbf{X}$ is the function
+\[
+\operatorname{div}\mathbf{X} = \sum_{i=1}^m \frac{\partial f^i}{\partial x^i} \in C^\infty(M) .
+\]
+\end{defbox}
+
+\begin{defbox}[Volume Form of an Open Subset of $\mathbb{R}^m$]\deflabel{def:volume-form-rm}
+\textit{(Lecture 34.)} Let $M \subseteq \mathbb{R}^m$ be open. The \textbf{volume form} of $M$ is the $m$-form
+\[
+\mathrm{dvol} = dx^1 \wedge \cdots \wedge dx^m \in \Omega^m(M) .
+\]
+\end{defbox}
+
+The name: given $m$ vectors $v^1, \ldots, v^m$ at a point, $\mathrm{dvol}(v^1, \ldots, v^m)$ is the $m \times m$ determinant of their components, $\det\big(dx^i(v^j)\big)$ (Lemma~\ref{lem:wedge-one-forms-det}), and its absolute value is the volume of the parallelepiped spanned by the vectors.
+
+\begin{propbox}[The Lie Derivative of the Volume Form]\thmlabel{prop:lie-derivative-dvol}
+\textit{(Lecture 34; a problem on Homework 10.)} Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} \in \mathfrak{X}(M)$. Then
+\[
+\mathcal{L}_\mathbf{X}\, \mathrm{dvol} = (\operatorname{div}\mathbf{X})\; \mathrm{dvol} .
+\]
+\end{propbox}
+
+\begin{proof}[Proof (to be filled after the homework)]
+Lecture~34 stated this as a problem on Homework~10, so the proof is written here after the homework is handed in.
+\end{proof}
+
+So the divergence is the rate at which the flow changes volume: by Corollary~\ref{cor:lie-zero-invariant}, $\frac{d}{dt}(\varphi_t^*\mathrm{dvol})_p = \big(\varphi_t^*((\operatorname{div}\mathbf{X})\,\mathrm{dvol})\big)_p$.
+
+\begin{corbox}[Divergence-Free Flows Preserve Volume]\thmlabel{cor:div-free-volume}
+\textit{(Lecture 34.)} Let $M \subseteq \mathbb{R}^m$ be open and $\mathbf{X} \in \mathfrak{X}(M)$ with $\operatorname{div}\mathbf{X} = 0$, with flow $\varphi$. Then $\varphi_t^*\,\mathrm{dvol} = \mathrm{dvol}$ on $M_t$, for every $t$. Equivalently, the Jacobian matrix of $\varphi_t$ has determinant $1$ at every point of $M_t$: the flow is \emph{volume-preserving}.
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture 34; the Jacobian is filled in.)} By Proposition~\ref{prop:lie-derivative-dvol}, $\mathcal{L}_\mathbf{X}\,\mathrm{dvol} = 0 \cdot \mathrm{dvol} = 0$, so $\varphi_t^*\,\mathrm{dvol} = \mathrm{dvol}$ wherever defined, by Corollary~\ref{cor:lie-zero-invariant}. \emph{The Jacobian.} Write $\varphi_t = (\varphi_t^1, \ldots, \varphi_t^m)$ on $M_t$. Proposition~\ref{prop:pullback-k-form-properties}(4), with the identity charts, $F = \varphi_t$, $\omega = \mathrm{dvol}$ and $k = m$ (so $A = B = \{1, \ldots, m\}$ is the only index set), gives
+\[
+\varphi_t^*\,\mathrm{dvol} = \det\Big( \frac{\partial \varphi_t^i}{\partial x^j} \Big)_{i, j = 1, \ldots, m}\; \mathrm{dvol} \qquad \text{on } M_t .
+\]
+Since $\mathrm{dvol}_p \ne 0$ at every $p$, $\varphi_t^*\,\mathrm{dvol} = \mathrm{dvol}$ holds exactly when this determinant is $1$ at every point of $M_t$.
+\end{proof}
+
+\begin{rembox}[Hamiltonian Flows]\label{rem:hamiltonian-flows}
+\textit{(Lecture 34.)} In classical mechanics, the flow of a Hamiltonian vector field preserves the symplectic form, for the same reason: the Lie derivative of the symplectic form along the field is zero, and Corollary~\ref{cor:lie-zero-invariant} applies. Symplectic forms are not developed in these notes; the one on a cotangent bundle is mentioned in \ref{sec:cotangent-bundle}. These are preliminary results; Cartan's formula comes next.
+\end{rembox}
+
+\section{Cartan's Magic Formula}\label{sec:cartan}
+
+\roadmark{Stage: forms}{The Lie derivative of forms written with $d$ and the contraction alone: $\mathcal{L}_\mathbf{X} = d\,\iota_\mathbf{X} + \iota_\mathbf{X}\, d$. A chain homotopy, and the first step to homotopy invariance of de Rham cohomology.}
+
+\textit{(Lecture 34.)} Cartan's magic formula writes the Lie derivative of forms with the exterior derivative and the contraction $\iota_\mathbf{X}$ (\ref{sec:contraction}) alone. Contract the form by $\mathbf{X}$, which gives degree $k - 1$, and apply $d$, which returns to degree $k$; or do it in the opposite order, $d$ first, to degree $k + 1$, then $\iota_\mathbf{X}$, back to degree $k$. The sum of those two is the Lie derivative.
+
+%% >>> ADDED: diagram (after the whiteboard)
+\begin{center}
+\begin{tikzcd}[column sep=large, row sep=huge]
+\cdots \arrow[r, "d"] & \Omega^{k-1}(M) \arrow[r, "d"] \arrow[d, "\mathcal{L}_\mathbf{X}"'] & \Omega^k(M) \arrow[r, "d"] \arrow[d, "\mathcal{L}_\mathbf{X}"', green!50!black] \arrow[dl, "\iota_\mathbf{X}"'] & \Omega^{k+1}(M) \arrow[r, "d"] \arrow[d, "\mathcal{L}_\mathbf{X}"] \arrow[dl, "\iota_\mathbf{X}"'] & \cdots \\
+\cdots \arrow[r, "d"] & \Omega^{k-1}(M) \arrow[r, "d"] & \Omega^k(M) \arrow[r, "d"] & \Omega^{k+1}(M) \arrow[r, "d"] & \cdots
+\end{tikzcd}
+\end{center}
+\textit{(Figure after the board.)} Here $\mathbf{X} \in \mathfrak{X}(M)$. Two copies of the de Rham complex of one manifold $M$. The vertical arrows are $\mathcal{L}_\mathbf{X}$ (green on the board), and they commute with $d$ (Theorem~\ref{thm:lie-derivative-form-properties}(3)): the squares commute. The diagonal arrows are $\iota_\mathbf{X}$, which go down one degree. Cartan's formula says that the vertical arrow out of $\Omega^k(M)$ is the sum of the two paths made of one $d$ and one $\iota_\mathbf{X}$: first $\iota_\mathbf{X}$ (the diagonal) and then the bottom $d$, plus first the top $d$ and then the next diagonal $\iota_\mathbf{X}$. There are different $d$'s and different $\iota$'s, in different degrees, all written the same way.
+%% <<< END ADDED
+
+The proof uses one more property of the contraction, which Lecture~34 stated in the middle of the proof.
+
+\begin{lembox}[Contraction Is an Antiderivation]\thmlabel{lem:contraction-antiderivation}
+For $\mathbf{X} \in \mathfrak{X}(M)$, $\alpha \in \Omega^k(M)$ and $\beta \in \Omega^l(M)$,
+\[
+\iota_\mathbf{X}(\alpha \wedge \beta) = (\iota_\mathbf{X}\alpha) \wedge \beta + (-1)^{|\alpha|}\, \alpha \wedge (\iota_\mathbf{X}\beta) .
+\]
+\leeref{Lemma 14.13(b)}
+\end{lembox}
+
+\begin{proof}[Proof (to be filled after the homework)]
+\textit{(Stated in Lecture 34.)} The proof is a computation with shuffles, pointwise, from Definition~\ref{def:wedge-product}. The contraction is on the current homework, so the proof is written here after it is handed in.
+\end{proof}
+
+For $k = 0$, $\alpha = f$, the formula reads $\iota_\mathbf{X}(f\beta) = f\, \iota_\mathbf{X}\beta$, consistent with $\iota_\mathbf{X} f = 0$ (Definition~\ref{def:contraction}) and with Lemma~\ref{lem:contraction-smooth}.
+
+\begin{thmbox}[Cartan's Magic Formula]\thmlabel{thm:cartan}
+For $\mathbf{X} \in \mathfrak{X}(M)$ and $\alpha \in \Omega^k(M)$,
+\[
+\mathcal{L}_\mathbf{X}\alpha = d\big(\iota_\mathbf{X}\alpha\big) + \iota_\mathbf{X}\big(d\alpha\big) ,
+\]
+where $\iota_\mathbf{X}\alpha$ has degree $k - 1$ and $d\alpha$ has degree $k + 1$. In short, $\mathcal{L}_\mathbf{X} = d \circ \iota_\mathbf{X} + \iota_\mathbf{X} \circ d$ on $\Omega^k(M)$.
+\leeref{Theorem 14.35}
+\end{thmbox}
+
+The formula has several applications; the first is Corollary~\ref{cor:flow-identity-cohomology} below. In algebraic topology (MATH~592) an identity of this shape is called a \emph{chain homotopy}: $\iota_\mathbf{X}$ is a chain homotopy between $\mathcal{L}_\mathbf{X}$ and the zero map. The proof below is different from Lee's (which uses induction on the degree, with the product rules); it has exactly the same format as the proof that the Lie derivative of a vector field is the bracket (Theorem~\ref{thm:lie-derivative-bracket}), through the normal form of a non-vanishing field.
+
+\begin{proof}
+\textit{(Lecture 34; the details marked are filled in.)} Both sides are $k$-forms. Fix $p \in M$. \textit{(Filled in.)} Both sides at $p$ depend only on $\alpha$ and $\mathbf{X}$ near $p$: the left side through the flow near $p$ for small $|t|$, the right side because $d$ and $\iota_\mathbf{X}$ are local (Corollary~\ref{cor:d-coordinates}; Definition~\ref{def:contraction} is pointwise).
+
+\emph{1st: $\mathbf{X}_p \neq 0$.} Work locally near $p$, in coordinates $(x^1, \ldots, x^m)$ where $\mathbf{X} = \partial/\partial x^1$ (Lemma~\ref{lem:straightening}). Both sides are linear in $\alpha$ (Theorem~\ref{thm:lie-derivative-form-properties}(1) in $\alpha$; $d$ and $\iota_\mathbf{X}$ are linear), so without loss of generality $\alpha = f_A\, dx^A$ is a monomial. The left-hand side was computed in Example~\ref{ex:lie-derivative-form-straight}:
+\[
+\mathcal{L}_\mathbf{X}\alpha = \frac{\partial f_A}{\partial x^1}\, dx^A .
+\]
+For the right-hand side there are two terms. Recall that $\iota_\mathbf{X}$ inserts $\mathbf{X}$ in the first slot, so it does nothing to the function $f_A$: $\iota_\mathbf{X}\alpha = f_A\, \iota_\mathbf{X}(dx^A)$. \textit{(Filled in.)} The form $\iota_\mathbf{X}(dx^A) = \iota_{\partial/\partial x^1}(dx^A)$ has constant coefficients: by Definition~\ref{def:contraction} and Lemma~\ref{lem:wedge-one-forms-det}, $(\iota_{\partial_1} dx^A)(v^1, \ldots, v^{k-1}) = \det$ of the $k \times k$ matrix whose first column is $\big(dx^{a_i}(\partial_1)\big)_i = (\delta^{a_i}_1)_i$; if $1 \notin A$ this column is zero, and if $1 \in A$ then $a_1 = 1$, the column is $e_1$, and expanding along it gives $dx^{a_2} \wedge \cdots \wedge dx^{a_k}$. Either way $d\big(\iota_\mathbf{X}(dx^A)\big) = 0$, and by the product rule (Theorem~\ref{thm:exterior-derivative}(2)),
+\[
+d\,\iota_\mathbf{X}\alpha = d\big(f_A\, \iota_\mathbf{X}(dx^A)\big) = df_A \wedge \iota_\mathbf{X}(dx^A) .
+\]
+The other term uses $d\alpha = df_A \wedge dx^A$ and Lemma~\ref{lem:contraction-antiderivation}, with $|df_A| = 1$:
+\[
+\iota_\mathbf{X}\, d\alpha = \iota_\mathbf{X}\big(df_A \wedge dx^A\big) = \big(\iota_\mathbf{X}\, df_A\big)\, dx^A - df_A \wedge \iota_\mathbf{X}(dx^A) .
+\]
+When the two are added, which is the right-hand side of Cartan's formula, the term $df_A \wedge \iota_\mathbf{X}(dx^A)$ cancels, so it never has to be computed. What remains is $(\iota_\mathbf{X}\, df_A)\, dx^A$, and since $\mathbf{X} = \partial/\partial x^1$,
+\[
+\iota_\mathbf{X}\, df_A = df_A\Big( \frac{\partial}{\partial x^1} \Big) = \sum_{j=1}^m \frac{\partial f_A}{\partial x^j}\, dx^j\Big( \frac{\partial}{\partial x^1} \Big) = \sum_{j=1}^m \frac{\partial f_A}{\partial x^j}\, \delta^j_1 = \frac{\partial f_A}{\partial x^1} .
+\]
+So the right-hand side is $\frac{\partial f_A}{\partial x^1}\, dx^A$, the left-hand side. This proves the formula on a neighbourhood of every point where $\mathbf{X}$ does not vanish.
+
+\emph{2nd: $p \in M \setminus \operatorname{supp}\mathbf{X}$}, where $\operatorname{supp}\mathbf{X} = \overline{\{q \in M : \mathbf{X}_q \neq 0\}}$, as for functions (Definition~\ref{def:support}). Both sides are zero at $p$. \textit{(Filled in.)} $\mathbf{X}$ vanishes on a neighbourhood $W$ of $p$, so the constant curves are its integral curves there, $\varphi_t = \mathrm{id}$ on $W$, $\alpha_p(t) = \alpha_p$ and $(\mathcal{L}_\mathbf{X}\alpha)_p = 0$; and $\iota_\mathbf{X}\alpha$ and $\iota_\mathbf{X}\,d\alpha$ vanish on $W$, so $d(\iota_\mathbf{X}\alpha)$ vanishes at $p$ as well.
+
+\emph{The remaining points: $\mathbf{X}_p = 0$ and $p \in \operatorname{supp}\mathbf{X}$}, for instance $p$ on the boundary of the support. The formula follows by continuity. \textit{(Filled in.)} Every neighbourhood of $p$ contains points $q$ with $\mathbf{X}_q \neq 0$, where the formula holds by the first case; both sides are smooth, in particular continuous, $k$-forms (Lemma~\ref{lem:lie-derivative-form-smooth}), so in a chart at $p$ their components are continuous functions that agree at points accumulating at $p$, hence at $p$.
+\end{proof}
+
+\textbf{Transcription notes (Lecture 34).} In the handwritten notes the first term appears as $d\,\iota_\mathbf{X}\alpha = df_A \wedge d\,\iota_\mathbf{X}(dx^A)$ and the second as $\iota_\mathbf{X} d\alpha = (\iota_\mathbf{X} df_A) \wedge dx^A - df_A \wedge d\big(\iota_\mathbf{X}(dx^A)\big)$; in both places the term is $df_A \wedge \iota_\mathbf{X}(dx^A)$, with no second $d$, as said in the lecture, and it cancels. In the second case the lecture first said the complement of the support of $\alpha$, and corrected it to the support of $\mathbf{X}$. The board's last case, ``$p \in \partial\operatorname{supp}(\mathbf{X})$'', should include all zeros of $\mathbf{X}$ in its support, not only the boundary points: the three cases must cover $M$, and the continuity argument applies to all of them.
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=1.2]
+\draw[thick, fill=gray!5] (-0.4,-1.3) rectangle (7.6,1.5);
+\node[font=\small] at (7.25,1.2) {$M$};
+\fill[blue!12] plot[smooth cycle] coordinates {(0.6,-0.6) (2.4,-0.9) (4.4,-0.5) (4.8,0.6) (3.0,1.1) (1.0,0.9)};
+\draw[blue!60!black] plot[smooth cycle] coordinates {(0.6,-0.6) (2.4,-0.9) (4.4,-0.5) (4.8,0.6) (3.0,1.1) (1.0,0.9)};
+\node[blue!60!black, font=\scriptsize] at (1.35,0.45) {$\operatorname{supp}\mathbf{X}$};
+\foreach \x/\y in {2.0/0.0, 2.6/0.4, 3.3/-0.2, 3.9/0.3} { \draw[->, blue!60!black] (\x,\y) -- ++(0.35,0.12); }
+\fill (2.6,-0.35) circle (1.4pt) node[below, font=\scriptsize] {$p_1$};
+\draw[->, thick, red!70!black] (2.6,-0.35) -- ++(0.45,0.15);
+\fill (6.2,0.2) circle (1.4pt) node[below, font=\scriptsize] {$p_2$};
+\fill (4.79,0.55) circle (1.4pt) node[right, font=\scriptsize] {$p_3$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} The three kinds of points in the proof of Theorem~\ref{thm:cartan}: at $p_1$, $\mathbf{X}_{p_1} \neq 0$ and there are straightening coordinates; $p_2 \notin \operatorname{supp}\mathbf{X}$, where both sides are $0$; at $p_3$, $\mathbf{X}_{p_3} = 0$ but $p_3$ is a limit of points of the first kind. The points of the third kind include the boundary of the support, and also zeros of $\mathbf{X}$ inside the support (such as the origin for $x\,\partial/\partial x$ on $\mathbb{R}$).
+%% <<< END ADDED
+
+\begin{corbox}[The Lie Derivative Is Linear in the Field]\thmlabel{cor:lie-linear-in-X}
+\textit{(Stated in Lecture 34 with Theorem~\ref{thm:lie-derivative-form-properties}(1); the proof through Cartan's formula is filled in.)} Let $\alpha \in \Omega^k(M)$.
+\begin{enumerate}[nosep]
+\item $\mathcal{L}_{\mathbf{X} + c\mathbf{Y}}\alpha = \mathcal{L}_\mathbf{X}\alpha + c\,\mathcal{L}_\mathbf{Y}\alpha$ for $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ and $c \in \mathbb{R}$.
+\item $d\,\mathcal{L}_\mathbf{X}\alpha = d\,\iota_\mathbf{X}\, d\alpha = \mathcal{L}_\mathbf{X}\, d\alpha$: Cartan's formula gives Theorem~\ref{thm:lie-derivative-form-properties}(3) again.
+\end{enumerate}
+\leeref{Corollary 14.36}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} (1) The right-hand side of Cartan's formula is linear in $\mathbf{X}$, because $\iota_{\mathbf{X} + c\mathbf{Y}} = \iota_\mathbf{X} + c\,\iota_\mathbf{Y}$ (Lemma~\ref{lem:contraction-smooth}) and $d$ is linear. (2) $d \circ d = 0$ kills one term on each side: $d\,\mathcal{L}_\mathbf{X} = d\,d\,\iota_\mathbf{X} + d\,\iota_\mathbf{X}\, d = d\,\iota_\mathbf{X}\, d$ and $\mathcal{L}_\mathbf{X}\, d = d\,\iota_\mathbf{X}\, d + \iota_\mathbf{X}\, d\, d = d\,\iota_\mathbf{X}\, d$. The proof of Theorem~\ref{thm:cartan} used only linearity in $\alpha$ from Theorem~\ref{thm:lie-derivative-form-properties}, so there is no circularity.
+\end{proof}
+
+The first application concerns the maps induced on de Rham cohomology (Proposition~\ref{prop:cohomology-maps}).
+
+\begin{corbox}[A Flow Acts Trivially on Cohomology]\thmlabel{cor:flow-identity-cohomology}
+Suppose $\mathbf{X}$ is complete, with flow $\varphi$. Fix $t \in \mathbb{R}$ and $k$. Then the map
+\[
+\varphi_t^* : H^k(M) \longrightarrow H^k(M)
+\]
+induced by the time-$t$ map $\varphi_t : M \to M$ (Proposition~\ref{prop:cohomology-maps}) is the identity.
+\leeref{Ch.~17, \emph{Homotopy Invariance}}
+\end{corbox}
+
+\begin{proof}[Proof (to be filled)]
+\textit{(Not proved in Lecture 34.)} The proof was announced for the next lecture: it uses Cartan's formula, and the form $\eta$ below is given by an integral involving $\iota_\mathbf{X}$.
+\end{proof}
+
+\emph{What this is saying.} Not just that $\varphi_t^*$ is invertible on cohomology (which holds for any diffeomorphism), but that it is the identity. If $\alpha \in \Omega^k(M)$ with $d\alpha = 0$, so that $[\alpha] \in H^k(M)$, then there exists $\eta \in \Omega^{k-1}(M)$ such that
+\[
+\varphi_t^*\alpha - \alpha = d\eta \qquad \Longleftrightarrow \qquad [\varphi_t^*\alpha] = [\alpha] .
+\]
+At the level of forms, $\varphi_t^*\alpha - \alpha$ is exact, so its class is zero. Any $(k-1)$-form $\eta$ with this property will do, and the proof has to produce one. This is the beginning of the homotopy invariance property of de Rham cohomology: the time-$t$ map depends smoothly on $t$, and as $t$ changes back to $0$ it is deformed continuously, through the maps $\varphi_s$, to $\varphi_0 = \mathrm{id}_M$, which induces the identity on cohomology (in fact on forms). Because $\varphi_t$ can be connected smoothly to the identity, it also induces the identity in cohomology.
+
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
 
@@ -37620,6 +37946,8 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:de-rham}\ De Rham cohomology & Chapter 17, \emph{The de Rham Cohomology Groups} (Proposition 17.2, Corollary 17.4, Propositions 17.5 and 17.6) \\
 \ref{sec:h1-circle}\ The first cohomology of the circle & Chapter 11, Example 11.36; Chapter 17, Example 17.1, Theorem 17.21 ($n = 1$), Theorem 17.31 (stated) \\
 \ref{sec:contraction}\ Contraction by vector fields & Chapter 14, \emph{Interior Multiplication} (Lemma 14.13), Proposition 14.29; Proposition 14.32 (the formula for $k$-forms, assigned as reading) \\
+\ref{sec:lie-derivative-forms}\ Lie derivatives of forms & Chapter 12, \emph{Lie Derivatives of Tensor Fields} ((12.8), Lemma 12.30, Propositions 12.32 and 12.36, Theorem 12.37); Chapter 14, Proposition 14.33 \\
+\ref{sec:cartan}\ Cartan's magic formula & Chapter 14, \emph{Lie Derivatives of Differential Forms} (Lemma 14.13(b), Theorem 14.35, Corollary 14.36); Chapter 17, \emph{Homotopy Invariance} \\
 \bottomrule
 \end{longtable}
 
@@ -37791,13 +38119,17 @@ Example 11.36 & Ex.~\ref{ex:angle-form-cohomology} \\
 Problem 11-4 & Def.~\ref{def:Ip}, Def.~\ref{def:Ip-square}, Prop.~\ref{prop:second-order}, Prop.~\ref{prop:ideal-basis}, Thm.~\ref{thm:cotangent-ideal} \\
 Exercise 12.17 & Lem.~\ref{lem:k-form-permutation} \\
 Proposition 12.25 & Lem.~\ref{lem:pullback-forms-functorial} \\
+Lemma 12.30 & Lem.~\ref{lem:lie-derivative-form-smooth} \\
+Proposition 12.32 & Thm.~\ref{thm:lie-derivative-form-properties} \\
+Proposition 12.36 & Thm.~\ref{thm:lie-derivative-form-properties}, Cor.~\ref{cor:lie-zero-invariant} \\
+Theorem 12.37 & Cor.~\ref{cor:lie-zero-invariant} \\
 Lemma 14.1 & Lem.~\ref{lem:alternating-dependent} \\
 Proposition 14.3 & Lem.~\ref{lem:skew-symmetrizer} \\
 Lemma 14.7 & Lem.~\ref{lem:epsilon-A-dual} \\
 Proposition 14.8 & Prop.~\ref{prop:dim-k-forms} \\
 Proposition 14.9 & Prop.~\ref{prop:top-degree-pullback} \\
 Proposition 14.11 & Lem.~\ref{lem:wedge-one-forms-det}, Prop.~\ref{prop:wedge-properties} \\
-Lemma 14.13 & Def.~\ref{def:contraction} \\
+Lemma 14.13 & Def.~\ref{def:contraction}, Lem.~\ref{lem:contraction-antiderivation} \\
 Exercise 14.14 & Prop.~\ref{prop:lambda-k-bundle} \\
 Lemma 14.16 & Prop.~\ref{prop:linear-pullback-components}, Prop.~\ref{prop:linear-pullback-wedge}, Prop.~\ref{prop:pullback-k-form-properties} \\
 Example 14.18 & Ex.~\ref{ex:pullback-r2-r3} \\
@@ -37809,6 +38141,9 @@ Theorem 14.24 & Def.~\ref{def:d-properties}, Thm.~\ref{thm:exterior-derivative},
 Proposition 14.26 & Def.~\ref{def:d-properties}, Thm.~\ref{thm:exterior-derivative} \\
 Example 14.27 & Ex.~\ref{ex:d-r3} \\
 Proposition 14.29 & Thm.~\ref{thm:d-one-form-global} \\
+Proposition 14.33 & Thm.~\ref{thm:lie-derivative-form-properties} \\
+Theorem 14.35 & Thm.~\ref{thm:cartan} \\
+Corollary 14.36 & Thm.~\ref{thm:lie-derivative-form-properties}, Cor.~\ref{cor:lie-linear-in-X} \\
 Theorem 16.34 & Thm.~\ref{thm:stokes-calc3} \\
 Example 17.1 & Ex.~\ref{ex:angle-form-cohomology} \\
 Proposition 17.2 & Prop.~\ref{prop:cohomology-maps} \\

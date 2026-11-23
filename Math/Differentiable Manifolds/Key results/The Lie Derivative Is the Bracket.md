@@ -21,6 +21,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§72 Lie Derivatives#^cor-72-7|Corollary §72.7: Properties of the Lie Derivative]]
 - [[§72 Lie Derivatives#^thm-72-9|Theorem §72.9: Commuting Fields: Invariance and Commuting Flows]]
+- [[§85 Lie Derivatives of Forms#^ex-85-1|Example §85.1: The Lie Derivative in Straightening Coordinates]]
 
 ## Connections
 - TODO

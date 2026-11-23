@@ -5,7 +5,7 @@ chapter: 11
 section: 84
 tags: [differentiable-manifolds, math591]
 ---
-← [[§83 The First Cohomology of the Circle]] · ↑ [[· 11 Differential Forms]]
+← [[§83 The First Cohomology of the Circle]] · ↑ [[· 11 Differential Forms]] · [[§85 Lie Derivatives of Forms]] →
 
 *Stage: forms — Inserting a vector field into the first slot of a form lowers the degree by one; full contraction evaluates the form on fields; the global formula for $d$ on one-forms.*
 
@@ -26,7 +26,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The slots of a linear $k$-form: [[§75 Multilinear Algebra#^def-75-1|Def. §75.1]].
-> - The Lie derivative along $\mathbf{X}$, the operation that $d$ and $\iota_\mathbf{X}$ combine to give in Cartan's magic formula (announced for Lecture 34): [[§72 Lie Derivatives#^def-72-2|Def. §72.2]].
+> - The Lie derivative along $\mathbf{X}$, the operation that $d$ and $\iota_\mathbf{X}$ combine to give in Cartan's magic formula: [[§72 Lie Derivatives#^def-72-2|Def. §72.2]]; for forms, [[§85 Lie Derivatives of Forms#^def-85-1|Def. §85.1]], and the formula, [[§86 Cartan's Magic Formula#^thm-86-2|Thm. §86.2]].
 
 The first slot is a convention. There is a point-by-point version: for a vector $v \in T_pM$, $\iota_v : \Lambda^k T_p^{\ast}M \to \Lambda^{k-1} T_p^{\ast}M$ inserts $v$ in the first slot, and $(\iota_\mathbf{X}\alpha)_p = \iota_{\mathbf{X}_p}\alpha_p$. For $k = 0$ there is no slot for a vector field, so the expression makes no sense; it is very convenient to define it to be zero. The operators $\iota_\mathbf{X}$ go down by one in degree, $\Omega^k(M) \to \Omega^{k-1}(M)$, on a single manifold; the properties of the map $\alpha \mapsto \iota_\mathbf{X}\alpha$ will be studied later.
 

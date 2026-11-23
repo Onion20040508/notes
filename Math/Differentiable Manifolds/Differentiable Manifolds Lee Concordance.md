@@ -104,6 +104,8 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§82 De Rham Cohomology\|§82]] De Rham cohomology | Chapter 17, *The de Rham Cohomology Groups* (Proposition 17.2, Corollary 17.4, Propositions 17.5 and 17.6) |
 | [[§83 The First Cohomology of the Circle\|§83]] The first cohomology of the circle | Chapter 11, Example 11.36; Chapter 17, Example 17.1, Theorem 17.21 ($n = 1$), Theorem 17.31 (stated) |
 | [[§84 Contraction by Vector Fields\|§84]] Contraction by vector fields | Chapter 14, *Interior Multiplication* (Lemma 14.13), Proposition 14.29; Proposition 14.32 (the formula for $k$-forms, assigned as reading) |
+| [[§85 Lie Derivatives of Forms\|§85]] Lie derivatives of forms | Chapter 12, *Lie Derivatives of Tensor Fields* ((12.8), Lemma 12.30, Propositions 12.32 and 12.36, Theorem 12.37); Chapter 14, Proposition 14.33 |
+| [[§86 Cartan's Magic Formula\|§86]] Cartan's magic formula | Chapter 14, *Lie Derivatives of Differential Forms* (Lemma 14.13(b), Theorem 14.35, Corollary 14.36); Chapter 17, *Homotopy Invariance* |
 
 ## A.4 Index from Lee to these notes
 
@@ -268,13 +270,17 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4\|Def. §28.4]], [[§34 The Cotangent Space from Germs#^prop-34-1\|Prop. §34.1]], [[§34 The Cotangent Space from Germs#^prop-34-2\|Prop. §34.2]], [[§34 The Cotangent Space from Germs#^thm-34-4\|Thm. §34.4]] |
 | Exercise 12.17 | [[§75 Multilinear Algebra#^lem-75-1\|Lem. §75.1]] |
 | Proposition 12.25 | [[§81 The Exterior Derivative#^lem-81-4\|Lem. §81.4]] |
+| Lemma 12.30 | [[§85 Lie Derivatives of Forms#^lem-85-1\|Lem. §85.1]] |
+| Proposition 12.32 | [[§85 Lie Derivatives of Forms#^thm-85-2\|Thm. §85.2]] |
+| Proposition 12.36 | [[§85 Lie Derivatives of Forms#^thm-85-2\|Thm. §85.2]], [[§85 Lie Derivatives of Forms#^cor-85-3\|Cor. §85.3]] |
+| Theorem 12.37 | [[§85 Lie Derivatives of Forms#^cor-85-3\|Cor. §85.3]] |
 | Lemma 14.1 | [[§75 Multilinear Algebra#^lem-75-2\|Lem. §75.2]] |
 | Proposition 14.3 | [[§77 The Wedge Product#^lem-77-1\|Lem. §77.1]] |
 | Lemma 14.7 | [[§75 Multilinear Algebra#^lem-75-5\|Lem. §75.5]] |
 | Proposition 14.8 | [[§75 Multilinear Algebra#^prop-75-6\|Prop. §75.6]] |
 | Proposition 14.9 | [[§79 Pullbacks of Linear Forms#^prop-79-3\|Prop. §79.3]] |
 | Proposition 14.11 | [[§78 Properties of the Wedge Product#^lem-78-2\|Lem. §78.2]], [[§78 Properties of the Wedge Product#^prop-78-4\|Prop. §78.4]] |
-| Lemma 14.13 | [[§84 Contraction by Vector Fields#^def-84-1\|Def. §84.1]] |
+| Lemma 14.13 | [[§84 Contraction by Vector Fields#^def-84-1\|Def. §84.1]], [[§86 Cartan's Magic Formula#^lem-86-1\|Lem. §86.1]] |
 | Exercise 14.14 | [[§80 Differential Forms on Manifolds#^prop-80-3\|Prop. §80.3]] |
 | Lemma 14.16 | [[§79 Pullbacks of Linear Forms#^prop-79-2\|Prop. §79.2]], [[§79 Pullbacks of Linear Forms#^prop-79-4\|Prop. §79.4]], [[§80 Differential Forms on Manifolds#^prop-80-5\|Prop. §80.5]] |
 | Example 14.18 | [[§80 Differential Forms on Manifolds#^ex-80-1\|Ex. §80.1]] |
@@ -286,6 +292,9 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 14.26 | [[§81 The Exterior Derivative#^def-81-1\|Def. §81.1]], [[§81 The Exterior Derivative#^thm-81-7\|Thm. §81.7]] |
 | Example 14.27 | [[§81 The Exterior Derivative#^ex-81-1\|Ex. §81.1]] |
 | Proposition 14.29 | [[§84 Contraction by Vector Fields#^thm-84-4\|Thm. §84.4]] |
+| Proposition 14.33 | [[§85 Lie Derivatives of Forms#^thm-85-2\|Thm. §85.2]] |
+| Theorem 14.35 | [[§86 Cartan's Magic Formula#^thm-86-2\|Thm. §86.2]] |
+| Corollary 14.36 | [[§85 Lie Derivatives of Forms#^thm-85-2\|Thm. §85.2]], [[§86 Cartan's Magic Formula#^cor-86-3\|Cor. §86.3]] |
 | Theorem 16.34 | [[§73 Stokes' Theorem in Calculus III#^thm-73-2\|Thm. §73.2]] |
 | Example 17.1 | [[§83 The First Cohomology of the Circle#^ex-83-2\|Ex. §83.2]] |
 | Proposition 17.2 | [[§82 De Rham Cohomology#^prop-82-2\|Prop. §82.2]] |

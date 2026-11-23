@@ -23,6 +23,7 @@ tags: [differentiable-manifolds, hub]
 - [[§72 Lie Derivatives#^lem-72-2|Lemma §72.2: φ_t Is a Diffeomorphism from M_t onto M_-t]]
 - [[§72 Lie Derivatives#^lem-72-5|Lemma §72.5: Canonical Form Near a Regular Point]]
 - [[§72 Lie Derivatives#^prop-72-8|Proposition §72.8: The Derivative of the Pulled-Back Field at Any Time]]
+- [[§85 Lie Derivatives of Forms#^thm-85-2|Theorem §85.2: Properties of the Lie Derivative of Forms]]
 
 ## Connections
 - TODO

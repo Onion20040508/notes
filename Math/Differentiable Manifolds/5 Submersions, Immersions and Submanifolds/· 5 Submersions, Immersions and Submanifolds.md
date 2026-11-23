@@ -35,7 +35,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]: 418 later results
-- [[§37 Regular Submanifolds#^prop-37-1|Proposition §37.1: Open Subsets of a Product]]: 414 later results
+- [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]: 424 later results
+- [[§37 Regular Submanifolds#^prop-37-1|Proposition §37.1: Open Subsets of a Product]]: 420 later results
 - [[§37 Regular Submanifolds#^prop-37-3|Proposition §37.3: The Induced Smooth Structure]]: 111 later results
 - [[§37 Regular Submanifolds#^lem-37-5|Lemma §37.5: Smooth Maps and Regular Submanifolds]]: 107 later results
