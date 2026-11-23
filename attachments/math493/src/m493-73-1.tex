@@ -1,0 +1,9 @@
+% Figure from MATH 493 notes, section 73. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth, font=\small]
+\node (A) at (0,0) {$S_4$};
+\node (B) at (4.2,0) {$GL_2(k)$};
+\node (C) at (2.1,-1.7) {$S_4/K \cong S_3$};
+\draw[->] (A) -- node[above] {$\rho_{V_4}$} (B);
+\draw[->] (A) -- (C);
+\draw[->] (C) -- node[below right=-1pt] {$\rho_U$} (B);
+\end{tikzpicture}
