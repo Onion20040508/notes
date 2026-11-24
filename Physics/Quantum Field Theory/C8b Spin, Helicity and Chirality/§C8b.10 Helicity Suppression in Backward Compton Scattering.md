@@ -7,7 +7,7 @@ section: C8b.10
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C8b.9 Photon Helicity|§C8b.9]] · ↑ [[· C8b Spin, Helicity and Chirality]] · [[§C9.1 Discrete Lorentz Transformations|§C9.1]] →
+← [[§C8b.9 Photon Helicity|§C8b.9]] · ↑ [[· C8b Spin, Helicity and Chirality]] · [[§C8b.11 Helicity Amplitudes in Yukawa Theory|§C8b.11]] →
 
 *Sources: PHY 513 Lecture 22 (Larsen, 23 Nov 2026, "Compton Scattering"), slides 28–31 (end of Part C), and transcript · the user's PHY 513 notes, Lecture 22 update, §22.3, subsection "Helicity suppression" (Derivation "Exactly backward, the helicity-conserving amplitude vanishes", paragraph "The way out", Principle "Inverse Compton scattering"), Caution "Slips in the slides" (items 5–7), paragraph "Correspondence with Yu" · Peskin & Schroeder, An Introduction to Quantum Field Theory, §5.5, pp. 165–167, eqs. (5.97)–(5.104), Figure 5.6 (page images checked) · Yu Zhao-Huan, 量子场论讲义, §8.6.3, eqs. (8.412)–(8.415), (8.439)–(8.457) (page images of the current build checked).*
 
@@ -83,7 +83,7 @@ Why is the backward peak of Compton scattering not even larger? At high energy t
 > the mass in the numerator of the propagator flips the helicity of the electron. Helicity conservation fails by terms proportional to $m$;
 > 3. for a left-handed incoming electron the same holds with $\sigma$ and $\bar\sigma$ exchanged.
 >
-> Item 1 is helicity conservation at the two vertices ([[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-4|Theorem §C8b.6.4]]) carried through the propagator; item 2 is the mass connecting the two chiral blocks ([[§C8b.5 Helicity Spinors and the Massless Limit#^rem-c8b-5-2|§C8b.5, Remark: The mass is what connects the two chiral blocks]]).
+> Item 1 is helicity conservation at the two vertices ([[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-4|Theorem §C8b.6.4]]) carried through the propagator; item 2 is the mass connecting the two chiral blocks ([[§C8b.5 Helicity Spinors and the Massless Limit#^rem-c8b-5-2|§C8b.5, Remark: The mass is what connects the two chiral blocks]]). Both are instances of the general rule: between two $u$ spinors at high energy three $\gamma$'s join equal helicities and two $\gamma$'s opposite ones ([[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-11|Theorem §C8b.6.11]], from [[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-7|Theorem §C8b.6.7]]); the sentences of PS pp. 165–166 on the two terms and Yu's (8.451) are in [[§C8b.6 Helicity Conservation at the QED Vertex#^ex-c8b-6-1|Example §C8b.6.1]].
 >
 > *Model:* [[§C8a.1 The QED Lagrangian and the Covariant Derivative#^mod-c8a-1-1|Model §C8a.1.1]]; *applies:* the string of diagram (b) with high-energy spinors, corrections of relative order $m/E$; any polarization vectors.
 >
@@ -342,3 +342,4 @@ Why is the backward peak of Compton scattering not even larger? At high energy t
 > - The photon factors $\sigma^1 \pm i\sigma^2$ are the helicity vectors contracted with $\sigma^\mu$; in Lecture 20 the same circular vector appeared as the current of an $e^-_Re^+_L$ pair — [[§C8b.7 Polarized Cross Sections for Muon Pair Production#^thm-c8b-7-10|Theorem §C8b.7.10]], [[§C8b.9 Photon Helicity#^ex-c8b-9-1|Example §C8b.9.1]].
 > - A nearly on-shell exchanged photon gives the full $1/\theta^4$ in $e^-\mu^-$ scattering: no selection rule protects the forward direction there — [[§C8a.13 The Cross Section for Electron–Muon Scattering#^thm-c8a-13-6|Theorem §C8a.13.6]].
 > - The recipe for helicity amplitudes — [[P9 Helicity Amplitudes|P9]].
+> - The general rule behind the two terms of the propagator numerator, an odd number of $\gamma$'s joining equal chiralities and an even number opposite ones, and helicity suppression as the name of the effect — [[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-7|Theorem §C8b.6.7]], [[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-11|Theorem §C8b.6.11]], [[§C8b.6 Helicity Conservation at the QED Vertex#^ex-c8b-6-1|Example §C8b.6.1]], [[§C8b.6 Helicity Conservation at the QED Vertex#^rem-c8b-6-5|§C8b.6, Remark: Helicity suppression]].

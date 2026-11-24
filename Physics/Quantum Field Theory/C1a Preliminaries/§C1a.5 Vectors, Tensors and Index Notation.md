@@ -96,7 +96,7 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 >
 > *Model:* any; *applies:* as for [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]]; parts 2 and 3 in the frames named; exact.
 >
-> *Source: the user's PHY 513 notes, Ch. 1 §1.4 (Definition "Mandelstam variables (Problem Set 1)") · PHY 513, Problem Set 1, Problem 5(e)–(f) · PHY 513, Problem Set 10, statement, eq. (2) (equal masses: $s + t + u = 4m^2$) and Problem 1(c) (the user's solution: part 1 with the squares $p_n^2$ kept, $s + t + u = p_1^2 + p_2^2 + p_3^2 + p_4^2$, used for massless pions in [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^thm-c6c-9-8|Theorem §C6c.9.8]])*
+> *Source: the user's PHY 513 notes, Ch. 1 §1.4 (Definition "Mandelstam variables (Problem Set 1)") · PHY 513, Problem Set 1, Problem 5(e)–(f) · PHY 513, Problem Set 10, statement, eq. (2) (equal masses: $s + t + u = 4m^2$) and Problem 1(c) (the user's solution: part 1 with the squares $p_n^2$ kept, $s + t + u = p_1^2 + p_2^2 + p_3^2 + p_4^2$, used for massless pions in [[§C6c.9 The Linear Sigma Model꞉ the Broken Phase#^thm-c6c-9-8|Theorem §C6c.9.8]]) · PHY 513, Problem Set 11, Problem 3(b) (the user's solution: part 1 by the two steps of the derivation below, $s + t + u = 3p_1^2 + 2\,p_1\cdot(p_2 - p_3 - p_4) + p_2^2 + p_3^2 + p_4^2$ and $p_2 - p_3 - p_4 = -p_1$; every scalar product in terms of $s$, $t$, $u$: [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-8|Theorem §C8a.14.8]]; the relation for five massless particles: [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-10|Theorem §C8a.14.10]])*
 
 ^thm-c1a-5-1
 

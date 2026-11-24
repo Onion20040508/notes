@@ -446,7 +446,7 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 >
 > *Model:* any (kinematics); *applies:* on-shell momenta of any $2 \to 2$ process, independent of the dynamics.
 >
-> *Source: the user's PHY 513 notes, Ch. 15 §15.1, Derivation "Three properties of $\mathcal M$ (filled in)", third paragraph ("a function of the invariants $p_i\cdot p_j$") · written here from [[§C1a.5 Vectors, Tensors and Index Notation|§C1a.5]]*
+> *Source: the user's PHY 513 notes, Ch. 15 §15.1, Derivation "Three properties of $\mathcal M$ (filled in)", third paragraph ("a function of the invariants $p_i\cdot p_j$") · written here from [[§C1a.5 Vectors, Tensors and Index Notation|§C1a.5]] · part 1 is also PHY 513, Problem Set 11, Problem 3(a) (the user's solution, counting all ten products $p_i\cdot p_j$, $i \le j$): [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-8|Theorem §C8a.14.8]]*
 
 ^thm-c6b-1-7
 

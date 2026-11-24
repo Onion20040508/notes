@@ -9,9 +9,9 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C8a.13 The Cross Section for Electron–Muon Scattering|§C8a.13]] · ↑ [[· C8a Quantum Electrodynamics]] · [[§C8a.15 Compton Scattering꞉ the Amplitude and Its Square|§C8a.15]] →
 
-*Sources: PHY 513 Lecture 21 (Larsen, 18 Nov 2026, "Crossing Symmetry"; a recorded lecture in three parts), slides 17–26 (Part C), and recording, part C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §5.4, pp. 155–158, eqs. (5.67)–(5.73) and the figures of pp. 155–157 · Yu Zhao-Huan, 量子场论讲义, §8.5, eqs. (8.288), (8.290)–(8.296), (8.302)–(8.303), (8.310)–(8.312), (8.315)–(8.318) (page images checked).*
+*Sources: PHY 513 Lecture 21 (Larsen, 18 Nov 2026, "Crossing Symmetry"; a recorded lecture in three parts), slides 17–26 (Part C), and recording, part C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §5.4, pp. 155–158, eqs. (5.67)–(5.73) and the figures of pp. 155–157 · Yu Zhao-Huan, 量子场论讲义, §8.5, eqs. (8.288), (8.290)–(8.296), (8.302)–(8.303), (8.310)–(8.312), (8.315)–(8.318) (page images checked) · closing part, added 2026-11-23 after Problem Set 11 was submitted: PHY 513, Problem Set 11, Problem 3 "Mandelstam variables" (statement, and the user's solution, used as written); Yu §8.5, eqs. (8.297)–(8.301).*
 
-Why could the scattering result be read off from the annihilation result? [[§C8a.12 Electron–Muon Scattering and the Crossing Substitution#^thm-c8a-12-3|Theorem §C8a.12.3]] found a substitution of momenta that turns one spin-averaged square into the other. This section states the general fact behind it, **crossing symmetry** ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^pr-c8a-14-1|Principle §C8a.14.1]]): a particle in the initial state and its antiparticle in the final state, with the opposite four-momentum, have the same amplitude. Two qualifications come with it. The opposite four-momentum is not physical, so the statement is about the amplitude as an analytic function ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^pr-c8a-14-2|Principle §C8a.14.2]]); and for fermions there is a sign ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-3|Theorem §C8a.14.3]]). The **Mandelstam variables** $s$, $t$, $u$ ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-1|Def. §C8a.14.1]]) are the variables in which crossing is simple: the two processes of this chapter are $\frac{2e^4}{s^2}(t^2 + u^2)$ and $\frac{2e^4}{t^2}(s^2 + u^2)$ ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-4|Theorem §C8a.14.4]], [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-5|Theorem §C8a.14.5]]), one function with $s$ and $t$ exchanged ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-6|Theorem §C8a.14.6]]). They also name the **channels** of a diagram ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-2|Def. §C8a.14.2]]), each with its own angular dependence ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-7|Theorem §C8a.14.7]], [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^ex-c8a-14-1|Example §C8a.14.1]]). The variables themselves are not new: they are [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]], with the sum rule of [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], and the channels of the scalar theories are [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]]; this section states them in the form of the lecture and links those homes.
+Why could the scattering result be read off from the annihilation result? [[§C8a.12 Electron–Muon Scattering and the Crossing Substitution#^thm-c8a-12-3|Theorem §C8a.12.3]] found a substitution of momenta that turns one spin-averaged square into the other. This section states the general fact behind it, **crossing symmetry** ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^pr-c8a-14-1|Principle §C8a.14.1]]): a particle in the initial state and its antiparticle in the final state, with the opposite four-momentum, have the same amplitude. Two qualifications come with it. The opposite four-momentum is not physical, so the statement is about the amplitude as an analytic function ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^pr-c8a-14-2|Principle §C8a.14.2]]); and for fermions there is a sign ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-3|Theorem §C8a.14.3]]). The **Mandelstam variables** $s$, $t$, $u$ ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-1|Def. §C8a.14.1]]) are the variables in which crossing is simple: the two processes of this chapter are $\frac{2e^4}{s^2}(t^2 + u^2)$ and $\frac{2e^4}{t^2}(s^2 + u^2)$ ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-4|Theorem §C8a.14.4]], [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-5|Theorem §C8a.14.5]]), one function with $s$ and $t$ exchanged ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-6|Theorem §C8a.14.6]]). They also name the **channels** of a diagram ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-2|Def. §C8a.14.2]]), each with its own angular dependence ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-7|Theorem §C8a.14.7]], [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^ex-c8a-14-1|Example §C8a.14.1]]). The variables themselves are not new: they are [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]], with the sum rule of [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], and the channels of the scalar theories are [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]]; this section states them in the form of the lecture and links those homes. A closing part (Problem Set 11, Problem 3) expresses every scalar product of the four momenta through $s$, $t$, $u$ and the masses ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-8|Theorem §C8a.14.8]]) and extends the variables to more than four particles: for five massless particles ten two-particle invariants with $\sum s_{ij} = 0$, five of them independent ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-3|Def. §C8a.14.3]], [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-9|Theorem §C8a.14.9]]–[[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-11|Theorem §C8a.14.11]]).
 
 **Setup.** The general statements ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^pr-c8a-14-1|Principle §C8a.14.1]], [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^pr-c8a-14-2|Principle §C8a.14.2]]) concern amplitudes computed from Feynman diagrams in any of the theories of the course ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]); they are stated as the lecture states them, with the proof idea for a charged scalar field and without a complete proof. The QED statements are for [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^mod-c8a-6-1|Model §C8a.6.1]] at order $e^2$, unpolarized, with **all masses neglected** ("the massless limit"). The kinematic statements hold for any $2 \to 2$ process with on-shell momenta.
 
@@ -69,6 +69,22 @@ Why could the scattering result be read off from the annihilation result? [[§C8
 ^der-c8a-14-1
 
 *Uses:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-2|Theorem §C6c.6.2]]
+
+> [!remark] Remark: Yu's picture of crossing, and the sign for fermions
+> Yu states the principle in the same form (his $\Phi$ with $p^\mu$ in the initial state, $\bar\Phi$ with $k^\mu = -p^\mu$ in the final state) and adds a way to picture it: a particle moving forward in time is equivalent to its antiparticle moving backward in time, and such an antiparticle has negative energy and the opposite momentum. This is a picture of the substitution $k = -p$, not a physical state: a real antiparticle has $k^0 > 0$, which is why the amplitude has to be continued analytically ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^pr-c8a-14-2|Principle §C8a.14.2]]).
+>
+> For a fermion the crossing brings one sign per crossed line ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-3|Theorem §C8a.14.3]]). It is bookkeeping of the same kind as the relative sign between diagrams, which also comes only from the order of fermion operators ([[§C6d.5 Second Order#^thm-c6d-5-4|Theorem §C6d.5.4]]; [[§C8a.15 Compton Scattering꞉ the Amplitude and Its Square#^rem-c8a-15-3|§C8a.15, Remark: Yu's picture: the same electron line, deformed]]).
+>
+> *Source: Yu §8.5, eq. (8.288), Figure 8.11 and the two sentences after it · written for the user's question of 2026-11-24*
+
+^rem-c8a-14-3
+
+> [!remark] ★ Remark: Where the general proof of crossing comes from
+> The derivation above compares Feynman diagrams and leaves the exact amplitude open. The general argument uses the reduction formula of Lehmann, Symanzik and Zimmermann (LSZ), which writes an $n \to m$ amplitude as the $(n + m)$-point correlation function with one operation per external particle: a Klein–Gordon operator acting on the field of that particle, and a Fourier transform, with $e^{-ip\cdot x}$ for an incoming particle and $e^{+iq\cdot y}$ for an outgoing one. Incoming and outgoing particles are told apart only by the sign in the exponent. Moving a particle of momentum $p$ from the initial state to the final state, as an antiparticle of momentum $k$, is therefore the substitution $p \to -k$ in the same expression, which is the principle. The course does not derive the LSZ formula (second semester; [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]]), so this is recorded here as where the proof lives, not as a proof.
+>
+> *Source: Yu §10.3, eq. (10.107) (the LSZ reduction formula for a real scalar field) and the paragraph after it, which ends "这就是由 (8.288) 式描述的交叉对称性"; beyond PHY 513*
+
+^rem-c8a-14-4
 
 > [!principle] Principle §C8a.14.2: The Amplitude Is an Analytic Function of the External Momenta
 > As lectured, and stated without proof:
@@ -131,7 +147,7 @@ Why could the scattering result be read off from the annihilation result? [[§C8
 >
 > 1. $s$ is the square of the centre-of-mass energy: in the frame where $\mathbf p + \mathbf p' = \mathbf 0$, $p + p'$ is the total energy. Being an invariant, it measures in every frame how hard the particles hit each other.
 > 2. $t$ is the square of the momentum transfer between $p$ and $k$. In a frame where the two energies are equal it is minus the square of the change of three-momentum, and it can be very small.
-> 3. $u$ is the third variable: $t$ with the two outgoing momenta exchanged, $k \leftrightarrow k'$.
+> 3. $u$ is the third variable: $t$ with the two outgoing momenta exchanged, $k \leftrightarrow k'$. What it means when the two particles are identical: [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^rem-c8a-14-2|Remark: The variable u for identical particles]].
 > 4. The second form of each follows from momentum conservation, $p + p' = k + k'$.
 >
 > *Equivalently,* this is [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]] with $p_1 = p$, $p_2 = p'$, $p_3 = k$, $p_4 = k'$: the same assignment of $t$ and $u$. Which outgoing momentum is called $k$ is a choice; by convention $t$ is formed from the initial and final momenta of the most similar particles (PS p. 156). The sum rule $s + t + u = \sum_im_i^2$ is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], part 1: only two of the three are independent.
@@ -335,6 +351,263 @@ Why could the scattering result be read off from the annihilation result? [[§C8
 
 ^rem-c8a-14-1
 
+## Scalar products in Mandelstam variables, and more than four particles
+
+Two questions about the variables themselves, from Problem Set 11, Problem 3, as the user solved it. First: are $s$, $t$, $u$ enough? Every scalar product of the four momenta of a $2 \to 2$ process is a combination of them and of the masses ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-8|Theorem §C8a.14.8]]), which is why a spin-summed squared amplitude can always be written in them, as in Theorems §C8a.14.4–§C8a.14.5. Second: what replaces them when more particles take part? For five massless particles there are ten two-particle invariants $s_{ij}$ ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-3|Def. §C8a.14.3]], [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-9|Theorem §C8a.14.9]]), with the one relation $\sum s_{ij} = 0$ in place of $s + t + u = \sum m^2$ ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-10|Theorem §C8a.14.10]]), and five of them are independent ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-11|Theorem §C8a.14.11]]). In this part the momenta are labelled $p_1, p_2$ (incoming) and $p_3, p_4$ (outgoing), as in the problem set and in [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]]; in the course labels of [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-1|Def. §C8a.14.1]] these are $p, p', k, k'$.
+
+> [!theorem] Theorem §C8a.14.8: Every Scalar Product of the Four Momenta in Terms of the Masses and s, t, u
+> For a $2 \to 2$ process with incoming momenta $p_1, p_2$ and outgoing momenta $p_3, p_4$, on shell, $p_i^2 = m_i^2$, with $p_1 + p_2 = p_3 + p_4$, and with $s = (p_1 + p_2)^2$, $t = (p_1 - p_3)^2$, $u = (p_1 - p_4)^2$, there are 10 scalar products $p_i\cdot p_j$ with $i \le j$:
+> 1. the four with $i = j$ are fixed by the mass shell, $p_i^2 = m_i^2$;
+> 2. the six others are
+>
+> $$
+> \begin{aligned}
+> p_1\cdot p_2 &= \tfrac12\bigl(s - m_1^2 - m_2^2\bigr) , & p_1\cdot p_3 &= \tfrac12\bigl(m_1^2 + m_3^2 - t\bigr) , & p_1\cdot p_4 &= \tfrac12\bigl(m_1^2 + m_4^2 - u\bigr) ,\\
+> p_3\cdot p_4 &= \tfrac12\bigl(s - m_3^2 - m_4^2\bigr) , & p_2\cdot p_4 &= \tfrac12\bigl(m_2^2 + m_4^2 - t\bigr) , & p_2\cdot p_3 &= \tfrac12\bigl(m_2^2 + m_3^2 - u\bigr) .
+> \end{aligned}
+> $$
+>
+> So any Lorentz-invariant scalar product of the four momenta is expressed in terms of the four masses and the three Mandelstam invariants: $s$, $t$, $u$ form a complete set of relativistic invariants of the process, and since an unpolarized squared amplitude $\overline{|\mathcal M|^2}$ is a function of these scalar products only, the three variables suffice to express it for any $2 \to 2$ process. By the sum rule ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], 1) two of the three are independent.
+>
+> *Equivalently,* part 2 is [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-7|Theorem §C6b.1.7]], item 1, with $A, B, 1, 2 \to 1, 2, 3, 4$ (the same six relations, written there with the factor 2 on the left; that theorem adds the $\varepsilon$-contraction of the four momenta). In the massless limit they are $t = -2p\cdot k$, $u = -2p\cdot k'$, $s = 2p\cdot p'$ of Step 2 of [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^der-c8a-14-4|Derivation §C8a.14.4]].
+>
+> *Model:* any (kinematics); *applies:* on-shell momenta of any $2 \to 2$ process with momentum conservation, independent of the dynamics.
+>
+> *Source: PHY 513, Problem Set 11, Problem 3(a) (statement: "Show that any possible Lorentz-invariant scalar product of these four momenta can be expressed in terms of the four masses and the three Mandelstam invariants"; the user's solution) · Yu §8.5, eqs. (8.297)–(8.300) and the sentence after them ("因为非极化振幅模方 $\overline{|\mathcal M|^2}$ 只是这些四维动量内积的函数，所以用 3 个 Mandelstam 变量就足以表达任意 $2 \to 2$ 散射过程的 $\overline{|\mathcal M|^2}$"; his labels $k_1, k_2$ in, $p_1, p_2$ out) · PHY 513 Lecture 21, recording, part C (the third variable $u$ completes the set of relativistic invariants) · checked numerically for random masses and momenta (`qft-C/tools/hw11/verify.py`)*
+
+^thm-c8a-14-8
+
+> [!derivation]- Derivation
+> This is the user's submitted solution of PHY 513, Problem Set 11, Problem 3(a).
+>
+> **Step 1** (count). There are 10 scalar products $p_i\cdot p_j$ with $i \le j$. The four with $i = j$ are fixed by the mass shell, $p_i^2 = m_i^2$.
+>
+> **Step 2** (expand the definitions).
+>
+> $$
+> \begin{aligned}
+> s &= p_1^2 + p_2^2 + 2\,p_1\cdot p_2 &&\Rightarrow\quad p_1\cdot p_2 = \tfrac12\bigl(s - m_1^2 - m_2^2\bigr) ,\\
+> t &= p_1^2 + p_3^2 - 2\,p_1\cdot p_3 &&\Rightarrow\quad p_1\cdot p_3 = \tfrac12\bigl(m_1^2 + m_3^2 - t\bigr) ,\\
+> u &= p_1^2 + p_4^2 - 2\,p_1\cdot p_4 &&\Rightarrow\quad p_1\cdot p_4 = \tfrac12\bigl(m_1^2 + m_4^2 - u\bigr) .
+> \end{aligned}
+> $$
+>
+> **Step 3** (momentum conservation). By $p_1 + p_2 = p_3 + p_4$, equivalently $p_1 - p_3 = p_4 - p_2$ and $p_1 - p_4 = p_3 - p_2$. Hence
+>
+> $$
+> \begin{aligned}
+> s &= (p_3 + p_4)^2 = p_3^2 + p_4^2 + 2\,p_3\cdot p_4 &&\Rightarrow\quad p_3\cdot p_4 = \tfrac12\bigl(s - m_3^2 - m_4^2\bigr) ,\\
+> t &= (p_4 - p_2)^2 = p_2^2 + p_4^2 - 2\,p_2\cdot p_4 &&\Rightarrow\quad p_2\cdot p_4 = \tfrac12\bigl(m_2^2 + m_4^2 - t\bigr) ,\\
+> u &= (p_3 - p_2)^2 = p_2^2 + p_3^2 - 2\,p_2\cdot p_3 &&\Rightarrow\quad p_2\cdot p_3 = \tfrac12\bigl(m_2^2 + m_3^2 - u\bigr) .
+> \end{aligned}
+> $$
+>
+> **Step 4.** All 10 scalar products are thus expressed in terms of the four masses and $s$, $t$, $u$. (End of the user's solution of part (a).)
+>
+> **What the derivation shows**
+> - Each Mandelstam variable gives two of the products: one from its definition and one from its second form, which uses momentum conservation (the second forms of [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-1|Def. §C8a.14.1]]).
+> - The sum rule, part (b) of the problem, is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], 1; the user's derivation (expand the three squares, then $p_2 - p_3 - p_4 = -p_1$) is the one given there, and Yu's (8.301)–(8.302).
+
+^der-c8a-14-8
+
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-1|Def. §C8a.14.1]]
+
+> [!remark] Remark: The variable u for identical particles
+> $u$ is the third variable of the set; physically it is the momentum transfer with $k$ and $k'$ exchanged in the final state ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-1|Def. §C8a.14.1]], 3). If the particles that come in with $p$ and $p'$ are truly different, it is natural to regard the outgoing momentum $k$ as belonging to the particle that came in with $p$, and $t$ is the momentum transfer. If the two are the same kind of particle, there is no way of telling which is which, and $u$ is as natural as $t$: a shifted momentum transfer, in which the two particles of the final state have exchanged their identity. For two identical fermions both assignments occur as diagrams, the $t$-channel and the $u$-channel one, with a relative minus sign: [[§C8b.11 Helicity Amplitudes in Yukawa Theory#^thm-c8b-11-1|Theorem §C8b.11.1]] (Yukawa theory) and [[§C8b.12 Helicity Amplitudes for Electron–Electron Scattering#^thm-c8b-12-1|Theorem §C8b.12.1]] (two electrons); for the distinguishable $e^-$ and $\mu^-$ there is one diagram only ([[§C8a.12 Electron–Muon Scattering and the Crossing Substitution#^thm-c8a-12-1|Theorem §C8a.12.1]]).
+>
+> *Source: PHY 513 Lecture 21, recording, part C · the diagrams: PHY 513, Problem Set 11, Problems 1(b) and 2(a) (the user's solutions)*
+
+^rem-c8a-14-2
+
+> [!definition] Definition §C8a.14.3: k-Particle Mandelstam Variables
+> For a scattering process with $n$ external particles, label the momenta of the incoming particles as $-p_1$ and $-p_2$, so that all momenta are on an equal footing and momentum conservation reads $\sum_{i=1}^np_i = 0$. The **$k$-particle Mandelstam variables** are
+>
+> $$
+> s_{i_1\dots i_k} \equiv \bigl(p_{i_1} + \dots + p_{i_k}\bigr)^2 ,
+> $$
+>
+> where the $i_1, \dots, i_k$ are distinct.
+>
+> *Equivalently,* for $n = 4$ in this labelling $s_{12} = s$, $s_{13} = t$, $s_{14} = u$ of [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]]: with $p_1 \to -p_1$, $p_2 \to -p_2$ they are $(p_1 + p_2)^2$, $(p_3 - p_1)^2$, $(p_4 - p_1)^2$. Counting an incoming momentum $p$ as an outgoing momentum $-p$ is the bookkeeping of crossing ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^pr-c8a-14-1|Principle §C8a.14.1]]).
+>
+> *Model:* any (kinematics); *applies:* any process with momentum conservation; all momenta counted as outgoing.
+>
+> *Source: PHY 513, Problem Set 11, Problem 3, statement, eq. (5) and the paragraph before it*
+
+^def-c8a-14-3
+
+> [!theorem] Theorem §C8a.14.9: Five Massless Momenta: Every Invariant Is Zero or a Two-Particle Invariant
+> Let five massless particles have momenta $p_1, \dots, p_5$, all counted as outgoing: $\sum_{i=1}^5p_i = 0$, $p_i^2 = 0$ (for example two gluons scattering into three gluons). Let $G_{ij} \equiv p_i\cdot p_j$, a symmetric $5\times5$ matrix with $G_{ii} = 0$. Then:
+> 1. for a subset $I \subseteq \{1, \dots, 5\}$, $s_I = \bigl(\sum_{i \in I}p_i\bigr)^2 = \sum_{i, j \in I}G_{ij}$, the sum of the entries of the block $I \times I$;
+> 2. every row of $G$ sums to zero, $\sum_{j=1}^5G_{ij} = 0$;
+> 3. complementary subsets have equal invariants: $s_I = s_J$ for $J$ the complement of $I$;
+> 4. hence $s_{12345} = 0$; $s_{ijkl} = s_m = p_m^2 = 0$, with $m$ the remaining index; and $s_{ijk} = s_{lm}$, with $\{l, m\}$ the remaining pair. Every invariant is $0$ or one of the two-particle invariants
+>
+> $$
+> s_{ij} = (p_i + p_j)^2 = 2\,p_i\cdot p_j , \qquad 1 \le i < j \le 5 ,
+> $$
+>
+> of which there are $\binom52 = 10$.
+>
+> *Model:* any (kinematics); *applies:* five on-shell massless momenta with $\sum p_i = 0$; parts 1–3 for any number of momenta and any masses, with $G_{ii} = m_i^2$.
+>
+> *Source: PHY 513, Problem Set 11, Problem 3(c) (statement: "What are the Mandelstam invariants in this case? How many are there?"; the user's solution, opening and paragraph "Reduction to two-particle invariants") · checked numerically for all subsets (`qft-C/tools/hw11/verify.py`)*
+
+^thm-c8a-14-9
+
+> [!derivation]- Derivation
+> This is the user's submitted solution of PHY 513, Problem Set 11, Problem 3(c), up to the paragraph "Reduction to two-particle invariants".
+>
+> **Step 1** (the matrix of products). With all momenta counted as outgoing, $\sum_{i=1}^5p_i = 0$, and all particles are massless, $p_i^2 = 0$. Let $G_{ij} \equiv p_i\cdot p_j$, a symmetric $5\times5$ matrix with $G_{ii} = 0$. For a subset $I \subseteq \{1, \dots, 5\}$,
+>
+> $$
+> s_I = \Bigl(\sum_{i \in I}p_i\Bigr)^2 = \sum_{i, j \in I}G_{ij} ,
+> $$
+>
+> the sum of the entries of the block $I \times I$.
+>
+> **Step 2** (row sums). By momentum conservation every row of $G$ sums to zero,
+>
+> $$
+> \sum_{j=1}^5G_{ij} = p_i\cdot\sum_{j=1}^5p_j = 0 .
+> $$
+>
+> **Step 3** (complements). Let $J$ be the complement of $I$. Splitting the sum of all entries of $G$ into blocks,
+>
+> $$
+> 0 = \sum_{i, j=1}^5G_{ij} = s_I + s_J + 2\sum_{i \in J}\sum_{j \in I}G_{ij} .
+> $$
+>
+> For $i \in J$ the row sum gives $\sum_{j \in I}G_{ij} = -\sum_{j \in J}G_{ij}$, so the last term is $-2s_J$, and
+>
+> $$
+> s_I = s_J .
+> $$
+>
+> **Step 4** (the list). Hence $s_{12345} = 0$; $s_{ijkl} = s_m = p_m^2 = 0$, with $m$ the remaining index; and $s_{ijk} = s_{lm}$, with $\{l, m\}$ the remaining pair. Every invariant is therefore $0$ or one of the two-particle invariants $s_{ij} = (p_i + p_j)^2 = 2\,p_i\cdot p_j$, $1 \le i < j \le 5$, of which there are $\binom52 = 10$.
+>
+> **What the derivation shows**
+> - $s_I = s_J$ is momentum conservation: $\sum_{i \in I}p_i = -\sum_{i \in J}p_i$, and the two squares are equal. For four particles it is the equality of the two forms of each of $s$, $t$, $u$ ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-1|Def. §C8a.14.1]], 4).
+
+^der-c8a-14-9
+
+*Uses:* [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^def-c8a-14-3|Def. §C8a.14.3]]
+
+> [!theorem] Theorem §C8a.14.10: The Relation among the Two-Particle Invariants of Five Massless Particles
+> In the setting of [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-9|Theorem §C8a.14.9]], with $s_{ji} \equiv s_{ij}$:
+> 1. the row sums of $G$ are the five relations
+>
+> $$
+> R_i:\quad \sum_{j \ne i}s_{ij} = 0 , \qquad i = 1, \dots, 5 ;
+> $$
+>
+> 2. each $s_{ij}$ appears in exactly $R_i$ and $R_j$, so adding the five relations gives the analogue of $s + t + u = \sum_im_i^2$,
+>
+> $$
+> \sum_{1 \le i < j \le 5}s_{ij} = 0 .
+> $$
+>
+> *Equivalently,* for four massless particles the same steps give $R_1$: $s_{12} + s_{13} + s_{14} = 0$, which is $s + t + u = 0$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], 1; [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-7|Theorem §C8a.14.7]], 2, at $m = 0$).
+>
+> *Model:* any (kinematics); *applies:* five on-shell massless momenta with $\sum p_i = 0$.
+>
+> *Source: PHY 513, Problem Set 11, Problem 3(c) (statement: "Write down a relation similar to (4) that they have to satisfy"; the user's solution, paragraph "Relations") · checked numerically (`qft-C/tools/hw11/verify.py`)*
+
+^thm-c8a-14-10
+
+> [!derivation]- Derivation
+> This is the user's submitted solution of PHY 513, Problem Set 11, Problem 3(c), paragraph "Relations".
+>
+> **Step 1.** With $G_{ii} = 0$ and $s_{ij} = 2G_{ij}$, the row sums of $G$ ([[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-9|Theorem §C8a.14.9]], 2) become the five relations $R_i$: $\sum_{j \ne i}s_{ij} = 0$, $i = 1, \dots, 5$, with $s_{ji} \equiv s_{ij}$.
+>
+> **Step 2.** Each $s_{ij}$ appears in exactly $R_i$ and $R_j$, so adding the five relations gives $2\sum_{1 \le i < j \le 5}s_{ij} = 0$, the relation of part 2.
+
+^der-c8a-14-10
+
+*Uses:* [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-9|Theorem §C8a.14.9]]
+
+> [!theorem] Theorem §C8a.14.11: Five of the Ten Two-Particle Invariants Are Independent
+> ![[ph-qft-c8a-14-1.svg]]
+> *ADDED figure: the ten invariants $s_{ij}$ as the edges and the diagonals of a pentagon whose corners are the five momenta. The five edges may be chosen freely; each diagonal is then fixed.*
+>
+> In the setting of [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-9|Theorem §C8a.14.9]], order the invariants as $\vec s = (s_{12}, s_{13}, s_{14}, s_{15}, s_{23}, s_{24}, s_{25}, s_{34}, s_{35}, s_{45})^{\mathsf T} \in \mathbb R^{10}$. Then:
+> 1. the five relations $R_1, \dots, R_5$ of [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-10|Theorem §C8a.14.10]] together read $M\vec s = 0$, where row $i$ of $M$ has a $1$ in each column whose pair contains $i$,
+>
+> $$
+> M = \begin{pmatrix}
+> 1&1&1&1&0&0&0&0&0&0\\
+> 1&0&0&0&1&1&1&0&0&0\\
+> 0&1&0&0&1&0&0&1&1&0\\
+> 0&0&1&0&0&1&0&1&0&1\\
+> 0&0&0&1&0&0&1&0&1&1
+> \end{pmatrix} ,
+> $$
+>
+> and the invariants of any physical configuration lie in $\ker M$;
+> 2. with $s_{12}$, $s_{23}$, $s_{34}$, $s_{45}$, $s_{15}$ taken as free, the others are
+>
+> $$
+> \begin{aligned}
+> s_{13} &= s_{45} - s_{12} - s_{23} , & s_{14} &= s_{23} - s_{45} - s_{15} , & s_{24} &= s_{15} - s_{23} - s_{34} ,\\
+> s_{25} &= s_{34} - s_{15} - s_{12} , & s_{35} &= s_{12} - s_{34} - s_{45} ,
+> \end{aligned}
+> $$
+>
+> so $\dim\ker M = 5$;
+> 3. there are no further constraints: the physical invariants fill a five-dimensional region of $\ker M$, restricted only by inequalities such as $s_{12} = E_{\rm cm}^2 > 0$.
+>
+> **5 of the ten $s_{ij}$ are independent, for example $s_{12}$, $s_{23}$, $s_{34}$, $s_{45}$, $s_{15}$.**
+>
+> *Model:* any (kinematics); *applies:* five on-shell massless momenta in four space-time dimensions with $\sum p_i = 0$.
+>
+> *Source: PHY 513, Problem Set 11, Problem 3(c) (the user's solution, paragraphs "Number of independent invariants", "Basis of the kernel", "No further constraints") · the rank of $M$, the kernel vectors, the five solved invariants on random configurations, and the rank 5 of the Jacobian of the $s_{ij}$ with respect to the parameters of a configuration checked numerically (`qft-C/tools/hw11/verify.py`)*
+
+^thm-c8a-14-11
+
+> [!derivation]- Derivation
+> This is the user's submitted solution of PHY 513, Problem Set 11, Problem 3(c), paragraphs "Number of independent invariants", "Basis of the kernel" and "No further constraints".
+>
+> **Step 1** (the linear system). Order the invariants as $\vec s = (s_{12}, s_{13}, s_{14}, s_{15}, s_{23}, s_{24}, s_{25}, s_{34}, s_{35}, s_{45})^{\mathsf T} \in \mathbb R^{10}$. The five relations $R_1, \dots, R_5$ together read $M\vec s = 0$, where row $i$ of $M$ has a $1$ in each column whose pair contains $i$: the matrix of the statement. The invariants of any physical configuration therefore lie in $\ker M$.
+>
+> **Step 2** (free invariants). Take $s_{12}$, $s_{23}$, $s_{34}$, $s_{45}$, $s_{15}$ as free. The relations become
+>
+> $$
+> \begin{aligned}
+> R_1:&\quad s_{13} + s_{14} = -s_{12} - s_{15} , & R_4:&\quad s_{14} + s_{24} = -s_{34} - s_{45} ,\\
+> R_2:&\quad s_{24} + s_{25} = -s_{12} - s_{23} , & R_5:&\quad s_{25} + s_{35} = -s_{15} - s_{45} ,\\
+> R_3:&\quad s_{13} + s_{35} = -s_{23} - s_{34} .
+> \end{aligned}
+> $$
+>
+> **Step 3** (solve). The combination $R_1 - R_4 + R_2 - R_5 + R_3$ leaves only $2s_{13}$ on the left, so
+>
+> $$
+> 2s_{13} = (-s_{12} - s_{15}) - (-s_{34} - s_{45}) + (-s_{12} - s_{23}) - (-s_{15} - s_{45}) + (-s_{23} - s_{34}) = 2\bigl(s_{45} - s_{12} - s_{23}\bigr) ,
+> $$
+>
+> and then $R_1$, $R_4$, $R_2$, $R_3$ give the rest: the five expressions of part 2.
+>
+> **Step 4** (the kernel). Every solution is thus fixed uniquely by the five free invariants, so $\dim\ker M = 5$. Setting one of them to $1$ and the others to $0$ gives a basis of $\ker M$, in the ordering of $\vec s$:
+>
+> $$
+> \begin{aligned}
+> s_{12}&:\ (1, -1, 0, 0, 0, 0, -1, 0, 1, 0) , & s_{23}&:\ (0, -1, 1, 0, 1, -1, 0, 0, 0, 0) ,\\
+> s_{34}&:\ (0, 0, 0, 0, 0, -1, 1, 1, -1, 0) , & s_{45}&:\ (0, 1, -1, 0, 0, 0, 0, 0, -1, 1) ,\\
+> s_{15}&:\ (0, 0, -1, 1, 0, 1, -1, 0, 0, 0) . &&
+> \end{aligned}
+> $$
+>
+> **Step 5** (no further constraints). Five massless momenta have $5 \times 3 = 15$ components; momentum conservation removes $4$ and Lorentz transformations, which leave every $s_{ij}$ unchanged, remove $6$, leaving $15 - 4 - 6 = 5$ parameters. The physical invariants therefore fill a five-dimensional region of $\ker M$, restricted only by inequalities such as $s_{12} = E_{\rm cm}^2 > 0$, and 5 of the ten $s_{ij}$ are independent, e.g. $s_{12}$, $s_{23}$, $s_{34}$, $s_{45}$, $s_{15}$. (End of the user's solution of Problem 3.)
+>
+> **What the derivation shows**
+> - The free set is the five neighbouring pairs of the cyclic order $1, 2, 3, 4, 5$, and each solved invariant is a three-particle invariant written out: by [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-9|Theorem §C8a.14.9]], 4, $s_{45} = s_{123} = s_{12} + s_{13} + s_{23}$, which is the first expression of part 2; the others follow by $i \to i + 1$ (the figure).
+> - The counting $15 - 4 - 6$ is for four space-time dimensions. For four massless particles it gives $4\times3 - 4 - 6 = 2$, the two independent variables among $s$, $t$, $u$.
+> - $\dim\ker M = 10 - \operatorname{rank}M$ with $\operatorname{rank}M = 5$ is the rank–nullity relation ([[Fundamental theorem of linear maps|LADR 3.21]]).
+
+^der-c8a-14-11
+
+*Uses:* [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-9|Theorem §C8a.14.9]], [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-10|Theorem §C8a.14.10]]
+
 > [!remark]- Connections
 > - The Mandelstam variables were introduced as notation in the first problem set, with the sum rule and the elastic form of $t$ — [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]]; this lecture gives them their use.
 > - The channels of the scalar theories, with all three propagators in one amplitude — [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]].
@@ -343,3 +616,5 @@ Why could the scattering result be read off from the annihilation result? [[§C8
 > - The two completeness relations behind the fermion sign — [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]].
 > - Poles of propagators and the $i\varepsilon$ that defines them on the real axis — [[§C2b.7 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-7-10|Theorem §C2b.7.10]].
 > - Back: the substitution that this section explains — [[§C8a.12 Electron–Muon Scattering and the Crossing Substitution#^thm-c8a-12-3|Theorem §C8a.12.3]]; the forward peak that the pole at $t = 0$ produces — [[§C8a.13 The Cross Section for Electron–Muon Scattering#^thm-c8a-13-6|Theorem §C8a.13.6]]. Forward: Compton scattering (Lecture 22; PS §5.5; planned).
+> - The six scalar products of a $2 \to 2$ process in terms of $s$, $t$, $u$ were first written for spinless amplitudes, together with the vanishing $\varepsilon$-contraction — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-7|Theorem §C6b.1.7]]; here as Problem Set 11, Problem 3(a) — [[§C8a.14 Crossing Symmetry and Mandelstam Variables#^thm-c8a-14-8|Theorem §C8a.14.8]].
+> - Two identical fermions: both the $t$- and the $u$-channel diagram occur, with a relative minus sign; their helicity amplitudes with a scalar and with a photon exchanged — [[§C8b.11 Helicity Amplitudes in Yukawa Theory|§C8b.11]], [[§C8b.12 Helicity Amplitudes for Electron–Electron Scattering|§C8b.12]].

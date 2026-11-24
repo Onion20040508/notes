@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c, extension]
 
 *Sources: Yu Zhao-Huan, 量子场论讲义, §8.2.4, eqs. (8.99), (8.108)–(8.158) and Figures 8.4–8.6 (page images of the current build checked); §8.2.3, eq. (8.92) · PHY 513 Lecture 20 (Larsen, 16 Nov 2026), slides 26–28 (the massless currents) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §5.2, pp. 145–146 (massless). Added 2026-11-16 with the helicity move (user decision: "Yu gives a really good lecture on this topic").*
 
-What happens to the sixteen helicity amplitudes of $e^+e^- \to \mu^+\mu^-$ when the masses are kept? At $m = 0$ only the four with opposite helicities in each pair survive, $\mathcal M = \mp e^2(1 \pm \cos\theta)$ ([[§C8b.7 Polarized Cross Sections for Muon Pair Production#^thm-c8b-7-6|Theorem §C8b.7.6]]), and the other twelve vanish ([[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-5|Theorem §C8b.6.5]]). With masses Yu computes all sixteen from the explicit helicity spinors: the four survivors keep their values exactly, the other twelve become nonzero but carry a factor $m_e/E_{\rm cm}$, $m_\mu/E_{\rm cm}$ or both, and every amplitude has the angular zeros that angular momentum requires. Their sum reproduces the unpolarized trace result with both masses. The masses are what [[§C8b.6 Helicity Conservation at the QED Vertex#^rem-c8b-6-3|§C8b.6, Remark: Frame and mass]], item 4, announced; here are the values.
+What happens to the sixteen helicity amplitudes of $e^+e^- \to \mu^+\mu^-$ when the masses are kept? At $m = 0$ only the four with opposite helicities in each pair survive, $\mathcal M = \mp e^2(1 \pm \cos\theta)$ ([[§C8b.7 Polarized Cross Sections for Muon Pair Production#^thm-c8b-7-6|Theorem §C8b.7.6]]), and the other twelve vanish ([[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-5|Theorem §C8b.6.5]]). With masses Yu computes all sixteen from the explicit helicity spinors: the four survivors keep their values exactly, the other twelve become nonzero but carry a factor $m_e/E_{\rm cm}$, $m_\mu/E_{\rm cm}$ or both, and every amplitude has the angular zeros that angular momentum requires. Their sum reproduces the unpolarized trace result with both masses. The masses are what [[§C8b.6 Helicity Conservation at the QED Vertex#^rem-c8b-6-3|§C8b.6, Remark: Frame and mass]], item 4, announced; here are the values. Why each suppressed amplitude carries a mass, one factor for each helicity that has to be flipped, is [[§C8b.8★ Polarized Amplitudes with Masses#^rem-c8b-8-1|★ Remark: A mass flips a helicity]], with the mass term of the Lagrangian as the coupling that does it ([[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-8|Theorem §C8b.6.8]]).
 
 **The mathematical picture.** The amplitude is the contraction of two currents, $\mathcal M = \frac{e^2}{E_{\rm cm}^2}J_e^\mu J_{\mu\,\mu}$, each a four-vector built from one pair of helicity spinors. In the chiral basis $\gamma^0\gamma^\mu$ is block diagonal ([[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-3|Theorem §C8b.6.3]]), so each current is a sum of two two-spinor bilinears $\xi^\dagger\sigma^\mu\xi$, $\xi^\dagger\bar\sigma^\mu\xi$ weighted by products of the factors $\omega_\pm = \sqrt{E \pm |\mathbf p|}$; the products of two $\omega$'s are either of order $E$ or exactly a mass. The angular dependence is that of a spin-one object carried from the beam axis to the muon axis: each amplitude is proportional to a rotation matrix element $d^1_{J_z J_n}(\theta)$.
 
@@ -172,6 +172,27 @@ The amplitudes follow by contracting a beam current with a muon current, $\mathc
 
 *Uses:* [[§C8b.8★ Polarized Amplitudes with Masses#^thm-c8b-8-2|Theorem §C8b.8.2]], [[§C8b.8★ Polarized Amplitudes with Masses#^thm-c8b-8-3|Theorem §C8b.8.3]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]]
 
+> [!remark] ★ Remark: A mass flips a helicity
+> Yu explains the factors of mass in the twelve suppressed amplitudes as follows.
+> 1. *A timelike virtual particle behaves like a real one.* The square root $\sqrt{p^2}$ of its momentum squared plays the role of an effective mass, and its spin is that of the corresponding real particle. The intermediate state of $e^+e^- \to \mu^+\mu^-$ is a timelike virtual photon, of spin one, with angular momentum quantum number $j = 1$. A fermion–antifermion pair of equal helicities has, in Yu's words, angular momentum $j = 0$ in the centre-of-mass frame; the helicity of one of the two particles has to be flipped to reach a state of $j = 1$.
+> 2. *The mass of a particle can flip its helicity.* For a massless free particle the helicity is the same in every inertial frame ([[§C8b.3 Massless Particles and Helicity#^thm-c8b-3-5|Theorem §C8b.3.5]]); for a massive free particle it can take different values in different frames, and in the rest frame the momentum vanishes and the helicity is undefined ([[§C8b.5 Helicity Spinors and the Massless Limit#^rem-c8b-5-1|§C8b.5, Remark: The helicity of a massive particle depends on the frame]]). The mass may be regarded as a coupling: it couples the two states of opposite helicity, and its effect is to flip the helicity of the particle. In the Lagrangian this coupling is the mass term $-m(\overline{\psi_R}\psi_L + \overline{\psi_L}\psi_R)$ ([[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-8|Theorem §C8b.6.8]]).
+> 3. *Equal helicities in both pairs* (★ Theorem §C8b.8.5). The mass $m_e$ must flip the helicity of the $e^-$ or the $e^+$, which gives a factor $2m_e/E_{\rm cm}$ in the amplitude, and the mass $m_\mu$ that of the $\mu^-$ or the $\mu^+$, a factor $2m_\mu/E_{\rm cm}$; their product is the $4m_em_\mu/E_{\rm cm}^2$ of the theorem. In the figure of that theorem the helicity of the $e^+$ is flipped by the mass coupling (the cross), the pair turns into the virtual photon, the photon into a muon pair, and the mass coupling flips the helicity of the $\mu^+$. Yu reads the zero at $\theta = \pi/2$ from the same figure: the virtual photon made from the $e^+e^-$ pair has its angular momentum along the $z$-axis and at $\theta = \pi/2$ cannot turn into a $\mu^+\mu^-$ system with angular momentum along the $x$-axis; for $\theta \ne \pi/2$ the amplitude for this shows as the factor $\cos\theta$.
+> 4. *Equal helicities in the electron pair only* (★ Theorem §C8b.8.6). One flip, by $m_e$: a factor $2m_e/E_{\rm cm}$. At $\theta = 0$ or $\pi$ the final $\mu^+\mu^-$ system has $J^3 = +1$ or $-1$ while the initial pair has $J^3 = 0$; angular momentum would not be conserved, so the amplitude vanishes. For other angles the muon pair is a superposition of the three eigenstates of $J^3$, which shows as the factor $\sin\theta$.
+> 5. *Equal helicities in the muon pair only* (★ Theorem §C8b.8.7). One flip, by $m_\mu$: a factor $2m_\mu/E_{\rm cm}$, negligible if $E_{\rm cm}/2 \gg m_\mu$; the zeros at $\theta = 0$ and $\pi$ for the reason of item 4.
+>
+> The effect is called **helicity suppression**. Kinematics requires $E_{\rm cm}/2 > m_\mu \gg m_e$, so the eight amplitudes that carry a factor $m_e$ are strongly suppressed and their contribution can be neglected. The general statement, for any bilinear, is [[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-11|Theorem §C8b.6.11]] with [[§C8b.6 Helicity Conservation at the QED Vertex#^rem-c8b-6-5|§C8b.6, Remark: Helicity suppression]].
+>
+> *Source: Yu §8.2.4, p. 328 (the last two paragraphs: "粒子的质量可以翻转螺旋度 … 可以将质量看作一种耦合，它耦合螺旋度相反的两种状态，效果是翻转粒子的螺旋度"), p. 329 (the two paragraphs after Figure 8.5: "这种效应称为螺旋度压低 (helicity suppression)"), p. 330 (the paragraph after Figure 8.6 and the paragraph after (8.157)); Figures 8.5–8.6 (the red crosses labelled $m_e$, $m_\mu$). Added 2026-11-23, after Problem Set 11 was submitted.*
+
+^rem-c8b-8-1
+
+> [!caution] ★ Caution: Yu's picture and the exact currents
+> The picture of a flipped helicity accounts for the factors $2m_e/E_{\rm cm}$ and $2m_\mu/E_{\rm cm}$ and for the vanishing of the twelve amplitudes at $m = 0$. The angular factors are read more safely from the currents themselves. The current of an equal-helicity pair is $2m_e(0, 0, 0, \mp1)$, a vector along the axis of the pair (★ [[§C8b.8★ Polarized Amplitudes with Masses#^thm-c8b-8-2|Theorem §C8b.8.2]]): it is the component $0$ of spin one along that axis, not the component $\pm1$. The amplitudes are the rotation matrix elements between such components (★ [[§C8b.8★ Polarized Amplitudes with Masses#^thm-c8b-8-8|Theorem §C8b.8.8]]): $d^1_{00}(\theta) = \cos\theta$ for equal helicities in both pairs, which vanishes at $\theta = \pi/2$, and $d^1_{0,\pm1}(\theta) \propto \sin\theta$ when one pair has opposite helicities. A spin-one state with component $+1$ along $\hat{\mathbf z}$ has the amplitude $d^1_{11}(\pi/2) = \frac12$, not zero, to have component $+1$ along $\hat{\mathbf x}$.
+>
+> *Source: Yu §8.2.4, pp. 328–330, compared with ★ Theorems §C8b.8.2, §C8b.8.3 and §C8b.8.8 · recorded in `qft-C/ERRATA.md`*
+
+^cau-c8b-8-1
+
 > [!theorem] ★ Theorem §C8b.8.5: Equal Helicities in Both Pairs
 > $$
 > \mathcal M(+, +, +, +) = \mathcal M(-, -, -, -) = -\frac{4e^2m_em_\mu\cos\theta}{E_{\rm cm}^2}, \qquad \mathcal M(+, +, -, -) = \mathcal M(-, -, +, +) = \frac{4e^2m_em_\mu\cos\theta}{E_{\rm cm}^2},
@@ -181,14 +202,14 @@ The amplitudes follow by contracting a beam current with a muon current, $\mathc
 > \frac{d\sigma}{d\Omega}\Big|_{\lambda_1 = \lambda_2,\ \lambda_1' = \lambda_2'} = \frac{4\alpha^2m_e^2m_\mu^2\beta_\mu\cos^2\theta}{E_{\rm cm}^6\beta_e} .
 > $$
 >
-> They are suppressed by $m_em_\mu/E_{\rm cm}^2$ and vanish at $\theta = \pi/2$ for any masses.
+> They are suppressed by $m_em_\mu/E_{\rm cm}^2$ and vanish at $\theta = \pi/2$ for any masses. Each mass enters once: a factor $2m_e/E_{\rm cm}$ for the helicity that the electron mass has to flip in the equal-helicity $e^+e^-$ pair, and a factor $2m_\mu/E_{\rm cm}$ for the muon pair ([[§C8b.8★ Polarized Amplitudes with Masses#^rem-c8b-8-1|★ Remark: A mass flips a helicity]]). Since $E_{\rm cm}/2 > m_\mu \gg m_e$, these four amplitudes are strongly suppressed.
 >
 > ![[ph-qft-c8-17-1.svg]]
-> *Yu's Figure 8.5 redrawn: $(+, +, +, +)$ at $\theta = \pi/2$, spins (thick) and momenta (thin). The equal-helicity $e^+e^-$ pair has $J_z = 0$ along the beam, the equal-helicity muon pair $J_x = 0$ along its own axis; a single spin-one photon connects them with the factor $d^1_{00}(\theta) = \cos\theta$, which is zero at $\theta = \pi/2$ (★ Theorem §C8b.8.8).*
+> *Yu's Figure 8.5 redrawn: $(+, +, +, +)$ at $\theta = \pi/2$, spins (thick) and momenta (thin). A red cross marks where a mass flips a helicity; the faint arrow is the spin on the side of the collision. The equal-helicity $e^+e^-$ pair has $J_z = 0$ along the beam, the equal-helicity muon pair $J_x = 0$ along its own axis; a single spin-one photon connects them with the factor $d^1_{00}(\theta) = \cos\theta$, which is zero at $\theta = \pi/2$ (★ Theorem §C8b.8.8).*
 >
 > *Model:* [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^mod-c8a-6-1|Model §C8a.6.1]]; *applies:* as in the opening.
 >
-> *Source: Yu §8.2.4, eqs. (8.143)–(8.147), Figure 8.5 (redrawn without its marks on the lines); the proportionality $m_em_\mu\cos\theta/E_{\rm cm}^2$ as on Yu's pages (`qft-C/ERRATA.md`, "Lecture 20 update")*
+> *Source: Yu §8.2.4, eqs. (8.143)–(8.147), Figure 8.5 (redrawn; drawn without its marks on the lines until Problem Set 11 was submitted, the red crosses added 2026-11-23) and the two paragraphs after it, p. 329; the proportionality $m_em_\mu\cos\theta/E_{\rm cm}^2$ as on Yu's pages (`qft-C/ERRATA.md`, "Lecture 20 update")*
 
 ^thm-c8b-8-5
 
@@ -215,14 +236,14 @@ The amplitudes follow by contracting a beam current with a muon current, $\mathc
 > \frac{d\sigma}{d\Omega}\Big|_{\lambda_1 = \lambda_2,\ \lambda_1' = -\lambda_2'} = \frac{\alpha^2m_e^2\beta_\mu\sin^2\theta}{E_{\rm cm}^4\beta_e} .
 > $$
 >
-> They are suppressed by $m_e/E_{\rm cm}$ and vanish at $\theta = 0$ and $\theta = \pi$.
+> They are suppressed by $m_e/E_{\rm cm}$ and vanish at $\theta = 0$ and $\theta = \pi$. The factor is $2m_e/E_{\rm cm}$: the electron mass has to flip one helicity of the equal-helicity $e^+e^-$ pair ([[§C8b.8★ Polarized Amplitudes with Masses#^rem-c8b-8-1|★ Remark: A mass flips a helicity]]); with $E_{\rm cm}/2 > m_\mu \gg m_e$ their contribution is negligible.
 >
 > ![[ph-qft-c8-17-2.svg]]
-> *Yu's Figure 8.6 redrawn: $(+, +, +, -)$, spins (thick) and momenta (thin). The equal-helicity $e^+e^-$ pair has $J_z = 0$; an opposite-helicity muon pair has $J = \pm1$ along its axis, which at $\theta = 0$ or $\pi$ is $J_z = \pm1 \ne 0$: the amplitude vanishes there, $\propto d^1_{0,\pm1}(\theta) \propto \sin\theta$ (★ Theorem §C8b.8.8).*
+> *Yu's Figure 8.6 redrawn: $(+, +, +, -)$, spins (thick) and momenta (thin). A red cross marks where the electron mass flips a helicity; the faint arrow is the spin on the side of the collision. The equal-helicity $e^+e^-$ pair has $J_z = 0$; an opposite-helicity muon pair has $J = \pm1$ along its axis, which at $\theta = 0$ or $\pi$ is $J_z = \pm1 \ne 0$: the amplitude vanishes there, $\propto d^1_{0,\pm1}(\theta) \propto \sin\theta$ (★ Theorem §C8b.8.8).*
 >
 > *Model:* [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^mod-c8a-6-1|Model §C8a.6.1]]; *applies:* as in the opening.
 >
-> *Source: Yu §8.2.4, eqs. (8.148)–(8.152), Figure 8.6 (redrawn without its marks on the lines)*
+> *Source: Yu §8.2.4, eqs. (8.148)–(8.152), Figure 8.6 (redrawn; drawn without its marks on the lines until Problem Set 11 was submitted, the red cross added 2026-11-23) and the paragraph after it, p. 330*
 
 ^thm-c8b-8-6
 
@@ -246,7 +267,7 @@ The amplitudes follow by contracting a beam current with a muon current, $\mathc
 > \frac{d\sigma}{d\Omega}\Big|_{\lambda_1 = -\lambda_2,\ \lambda_1' = \lambda_2'} = \frac{\alpha^2m_\mu^2\beta_\mu\sin^2\theta}{E_{\rm cm}^4\beta_e} .
 > $$
 >
-> They are suppressed by $m_\mu/E_{\rm cm}$, negligible when $E_{\rm cm}/2 \gg m_\mu$, and vanish at $\theta = 0$ and $\theta = \pi$ (the mirror image of the figure of ★ Theorem §C8b.8.6: here $J_z = \pm1$ initially and $J = 0$ along the muon axis).
+> They are suppressed by $m_\mu/E_{\rm cm}$, negligible when $E_{\rm cm}/2 \gg m_\mu$, and vanish at $\theta = 0$ and $\theta = \pi$ (the mirror image of the figure of ★ Theorem §C8b.8.6: here $J_z = \pm1$ initially and $J = 0$ along the muon axis). The factor is $2m_\mu/E_{\rm cm}$: here the muon mass has to flip one helicity of the equal-helicity $\mu^+\mu^-$ pair ([[§C8b.8★ Polarized Amplitudes with Masses#^rem-c8b-8-1|★ Remark: A mass flips a helicity]]).
 >
 > *Model:* [[§C8a.6 Electron–Positron Annihilation꞉ the Amplitude and the Virtual Photon#^mod-c8a-6-1|Model §C8a.6.1]]; *applies:* as in the opening.
 >
@@ -358,3 +379,4 @@ The amplitudes follow by contracting a beam current with a muon current, $\mathc
 > - The size $m/E$ of the suppressed amplitudes is the size of the small Weyl block of a fast helicity spinor — [[§C8b.5 Helicity Spinors and the Massless Limit#^thm-c8b-5-4|Theorem §C8b.5.4]], 2.
 > - Yu's angular-momentum pictures, Figures 8.4–8.6: Figure 8.4 is [[§C8b.7 Polarized Cross Sections for Muon Pair Production#^thm-c8b-7-8|Theorem §C8b.7.8]]'s figure; Figures 8.5–8.6 are redrawn above.
 > - The polarized amplitudes add up to the trace computation of Lecture 19 — [[§C8a.7 The Spin-Averaged Squared Amplitude#^thm-c8a-7-6|Theorem §C8a.7.6]], [[§C8a.8 The Unpolarized Cross Section for Muon Pair Production|§C8a.8]].
+> - The rule that decides which bilinears vanish at high energy, and the mass term as the coupling between the two chiralities — [[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-7|Theorem §C8b.6.7]], [[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-8|Theorem §C8b.6.8]], [[§C8b.6 Helicity Conservation at the QED Vertex#^thm-c8b-6-11|Theorem §C8b.6.11]]; helicity suppression in another process, backward Compton scattering — [[§C8b.10 Helicity Suppression in Backward Compton Scattering#^thm-c8b-10-4|Theorem §C8b.10.4]].

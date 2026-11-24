@@ -128,6 +128,20 @@ The lecture has three parts, and the notes follow them:
 
 *Uses:* [[§C8a.15 Compton Scattering꞉ the Amplitude and Its Square#^thm-c8a-15-1|Theorem §C8a.15.1]], [[§C8a.4 Feynman Rules for QED#^thm-c8a-4-2|Theorem §C8a.4.2]], [[§C8a.4 Feynman Rules for QED#^thm-c8a-4-3|Theorem §C8a.4.3]], [[§C8a.4 Feynman Rules for QED#^def-c8a-4-2|Def. §C8a.4.2]], [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4|Theorem §C6d.3.4]], [[§C6d.5 Second Order#^thm-c6d-5-2|Theorem §C6d.5.2]], [[§C6d.5 Second Order#^thm-c6d-5-4|Theorem §C6d.5.4]]
 
+> [!remark] Remark: Yu's picture: the same electron line, deformed
+> Yu states the relative sign with a picture: the electron lines of the two diagrams have the same topological structure and can be turned into each other by a continuous deformation, so the relative sign is positive. His next sentence gives the reason behind the picture: in the contributions of the two diagrams to the $T$-matrix element the spinor field operators that take part in the contractions stand in the same order. That is Step 2 of the derivation above.
+>
+> Read as a rule:
+> 1. a relative sign between diagrams can only come from reordering fermion operators, since only they anticommute;
+> 2. in the two Compton diagrams the electron line is the same: it joins the incoming electron to the outgoing one through one propagator. Hold it fixed and slide the two photon attachment points past each other along it: diagram (a) becomes diagram (b) without the electron line being cut. This is the deformation, and moving photon fields costs no sign ([[§C8a.4 Feynman Rules for QED#^thm-c8a-4-2|Theorem §C8a.4.2]]);
+> 3. in $e^-e^- \to e^-e^-$ the two diagrams differ in which outgoing electron is joined to which incoming one. No deformation takes one into the other: the electron lines must be cut and reconnected, which exchanges two fermion operators and gives the relative minus ([[§C6d.5 Second Order#^thm-c6d-5-3|Theorem §C6d.5.3]]; [[§C8b.12 Helicity Amplitudes for Electron–Electron Scattering#^thm-c8b-12-1|Theorem §C8b.12.1]]).
+>
+> The phrase is about the electron line only. As whole diagrams (a) and (b) are different contributions, and both are counted. A check from statistics: the two photons are bosons, so the amplitude must be symmetric under exchanging them ($k \leftrightarrow -k'$ together with $\epsilon_\nu(k) \leftrightarrow \epsilon^\ast_\mu(k')$); the exchange maps one diagram onto the other, so a relative minus would make the amplitude antisymmetric ([[§C6d.5 Second Order#^thm-c6d-5-4|Theorem §C6d.5.4]], item 3).
+>
+> *Source: Yu §8.6, the paragraph after eq. (8.321) (the picture and the sentence on the order of the spinor operators); the rule is built in Yu §7.1.2–§7.1.3: the definition of topologically equivalent diagrams at his Figures 7.4–7.5, the negative sign for $\psi\bar\psi \to \psi\bar\psi$ and $\psi\psi \to \psi\psi$ at (7.105)–(7.108), and "the fermion-line structure is the same, hence the relative sign is positive" for $\psi\bar\psi \to \phi\phi$ after (7.109) · written for the user's question of 2026-11-24*
+
+^rem-c8a-15-3
+
 > [!remark] Remark: Checks on an amplitude before computing with it
 > An expression of this size has a fair amount of redundancy to check against, before any algebra:
 > 1. every Lorentz index is contracted, and each index appears exactly twice: here $\mu$ joins $\epsilon^\ast_\mu(k')$ to one $\gamma^\mu$ and $\nu$ joins $\epsilon_\nu(k)$ to one $\gamma^\nu$ in each term;
