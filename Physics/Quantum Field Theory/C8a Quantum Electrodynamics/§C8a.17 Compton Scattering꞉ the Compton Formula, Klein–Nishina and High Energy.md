@@ -239,7 +239,7 @@ How much light comes out at each angle? The kinematics of a photon bouncing off 
 ![[ph-qft-c8a-17-2.svg]]
 *ADDED figure (after the figure of the user's notes, §22.3, and Yu's Figure 8.14): the Klein–Nishina distribution of [[§C8a.17 Compton Scattering꞉ the Compton Formula, Klein–Nishina and High Energy#^thm-c8a-17-4|Theorem §C8a.17.4]] in the lab frame for four photon energies. At low energy it is the symmetric Thomson distribution $1 + \cos^2\theta$. All curves start at the same forward value; as $\omega/m$ grows, scattering at large angles is suppressed by the factor $(\omega'/\omega)^2$.*
 
-![[ph-qft-c8a-17-a1.gif]]
+![[ph-qft-c8a-17-a1.gif|520]]
 *Animation: the Klein–Nishina distribution (blue) leaving the Thomson one (black) as $\omega/m$ grows from 0 to 5. Lower panel: the Compton formula $\omega'/\omega$ against $\theta$; the red dot marks the backward value $1/(1 + 2\omega/m)$. The suppression at large angles follows the energy loss of the photon. (Not from the sources; animation added, vault only.)*
 
 ## High energy in the centre-of-mass frame
@@ -422,6 +422,11 @@ One point remains puzzling. The propagator of diagram (b) is of order $1/(1 + \c
 > *Source: the user's PHY 513 notes, Lecture 22 update, paragraph "Correspondence with Yu" · PS and Yu pages as listed in the Sources line (equation numbers checked on the page images of the current build)*
 
 ^rem-c8a-17-4
+
+> [!abstract]- Mathematical background
+> Proved in CA; the line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]] — a delta function of a function with a simple zero, $\delta(f(x)) = \delta(x - x_0)/|f'(x_0)|$: the factor $1/|f'|$ of the energy delta function in the lab-frame phase space ([[§C8a.17 Compton Scattering꞉ the Compton Formula, Klein–Nishina and High Energy#^thm-c8a-17-2|Theorem §C8a.17.2]], Step 4 of its derivation).
 
 > [!remark]- Connections
 > - The other QED cross sections of the course, built with the same three factors: $e^+e^- \to \mu^+\mu^-$ ([[§C8a.8 The Unpolarized Cross Section for Muon Pair Production#^thm-c8a-8-4|Theorem §C8a.8.4]]) and $e^-\mu^- \to e^-\mu^-$ ([[§C8a.13 The Cross Section for Electron–Muon Scattering#^thm-c8a-13-4|Theorem §C8a.13.4]]), both in the centre-of-mass frame; Klein–Nishina is the first in the rest frame of a target that recoils. The formulas of [[§C6b.10 Scattering off a Fixed Target꞉ the Cross Section in an External Potential|§C6b.10]] are for a fixed target described by an external potential, which does not recoil, and do not apply here.
