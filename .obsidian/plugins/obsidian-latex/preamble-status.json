@@ -9,10 +9,10 @@
   "mode": "define",
   "defines": 1,
   "defineFailures": 0,
-  "renders": 502,
-  "rendersWithMacro": 0,
+  "renders": 6754,
+  "rendersWithMacro": 1,
   "undefinedInOutput": 0,
   "rehooks": 0,
   "errors": [],
-  "updated": "2026-11-23T16:34:45.820Z"
+  "updated": "2026-11-23T23:57:10.325Z"
 }

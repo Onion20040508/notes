@@ -7,7 +7,7 @@ section: C8b.9
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c, draft]
 ---
-← [[§C8b.8★ Polarized Amplitudes with Masses|§C8b.8★]] · ↑ [[· C8b Spin, Helicity and Chirality]] · [[§C9.1 Discrete Lorentz Transformations|§C9.1]] →
+← [[§C8b.8★ Polarized Amplitudes with Masses|§C8b.8★]] · ↑ [[· C8b Spin, Helicity and Chirality]] · [[§C8b.10 Helicity Suppression in Backward Compton Scattering|§C8b.10]] →
 
 *Sources: Yu Zhao-Huan, 量子场论讲义, §4.3.1, eqs. (4.103)–(4.121); §4.2.2, eqs. (4.41)–(4.43); §4.4.4, eqs. (4.267)–(4.280) · the user's pre-course notes, §4.3 ("a helicity eigenstate"; Note "Checking the helicity eigenvalue equation"), §4.4 ("Physical helicity states") · Peskin & Schroeder, An Introduction to Quantum Field Theory, §9.4, p. 298 · PHY 513 Lecture 18 (Larsen, 9 Nov 2026), slides 9, 13 (course forms: [[§C8a.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator|§C8a.3]]); Lecture 20, slide 28 (the "+" polarization of the virtual photon). Moved here from §C4.3★, §C4.5★ and §C4.10 (2026-11-16, user decision: the helicity material next to Lecture 20).*
 
@@ -469,4 +469,5 @@ A polarization vector does for the vector field what the two-spinor does for the
 > - Transverse photons have a conserved spin and no zero-point spin; the massive vector field's spin is not conserved alone, through its longitudinal mode — [[§C8b.9 Photon Helicity#^thm-c8b-9-7|Theorem §C8b.9.7]], [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field#^thm-c4-5-10|Theorem §C4.5.10]].
 > - The vectors whose helicities are found here are defined with the massive polarization basis and its phase conventions, which stay in C4 — [[§C4.3★ Massive Polarization Vectors and Plane Waves#^def-c4-3-5|Def. §C4.3.5]], [[§C4.3★ Massive Polarization Vectors and Plane Waves#^cau-c4-3-1|§C4.3★, Caution: Phase conventions and the z-axis]], and the massless basis [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^def-c4-8-1|Def. §C4.8.1]]; the course writes the same field with a circular transverse pair — [[§C8a.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator#^thm-c8a-3-1|Theorem §C8a.3.1]].
 > - In Lecture 20 the current of $e^-_Re^+_L$ is $\propto(0, 1, i, 0)$, the polarization vector of a helicity $+1$ photon along the beam — [[§C8b.7 Polarized Cross Sections for Muon Pair Production#^thm-c8b-7-10|Theorem §C8b.7.10]], [[§C8b.7 Polarized Cross Sections for Muon Pair Production#^rem-c8b-7-4|§C8b.7, Remark: The spin-one part is rotated, the spin-zero part does nothing]].
+> - The helicity vectors at work in an amplitude: contracted with $\sigma^\mu$ they are the matrices that raise and lower the spin of the electron in backward Compton scattering — [[§C8b.10 Helicity Suppression in Backward Compton Scattering#^thm-c8b-10-3|Theorem §C8b.10.3]].
 
